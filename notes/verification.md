@@ -23,11 +23,12 @@
 
 ## 远程发布
 
-- GitHub 集成识别账户为 `zhajiahui`。
-- 创建公开仓库 `cmi-wiki-cn` 的请求返回 `403 Resource not accessible by integration`。
-- 本机 Git 未取得 GitHub 凭据，浏览器 GitHub 页面显示未登录。
-- 因此仓库创建、推送、GitHub Actions 运行及公开站点访问均未完成。
-- 本地仓库已初始化 main 分支并设置计划 remote；Pages 工作流与发布入口已准备好。
+- 2026-10-18：公开仓库 [zhajiahui/cmi-wiki-cn](https://github.com/zhajiahui/cmi-wiki-cn) 已建立，`main` 分支已推送。
+- GitHub Pages 已启用，发布来源为 GitHub Actions（`build_type: workflow`）。
+- [首轮工作流](https://github.com/zhajiahui/cmi-wiki-cn/actions/runs/39051287978) 的内容校验、严格构建、产物上传和部署均成功；对应提交为 `838a4fb7230f30e134b88f6611a909ef501cce39`。
+- 公开地址：https://zhajiahui.github.io/cmi-wiki-cn/ 。首页、首次运行页、指令列表和搜索索引均实际返回 HTTP 200。
+- 线上搜索索引含 620 个页面/章节记录；浏览器中检索“随机传送”可找到对应页面，点击后正常跳转。检索 `cmi.command.heal.others` 可找到 `heal` 指令相关内容。
+- 项目已设置 `main` 跟踪 `origin/main`，后续修改可通过 `发布.bat` 推送并自动部署。
 
 ## 未做的验证
 
