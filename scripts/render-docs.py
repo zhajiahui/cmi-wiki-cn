@@ -111,7 +111,7 @@ def render():
   out=rewrite_links(out,row,dest)
   content=f'---\ntitle: {TITLES[slug]}\n---\n\n# {TITLES[slug]}\n\n'+out+'\n---\n\n[查看原文]('+row['link']+')\n'
   path=DOCS/dest;path.parent.mkdir(parents=True,exist_ok=True);path.write_text(content,encoding='utf-8')
-  manifest.append({'title':TITLES[slug],'source':row['link'],'source_id':row['id'],'source_modified':row['modified'],'file':dest,'source_sha256':hashlib.sha256((BASE/'sources/html'/f"{row['id']}.html").read_bytes()).hexdigest(),'translation_review':'reviewed'})
+  manifest.append({'title':TITLES[slug],'source':row['link'],'source_id':row['id'],'source_modified':row['modified'],'file':dest,'source_sha256':hashlib.sha256((BASE/'sources/html'/f"{row['id']}.html").read_text(encoding='utf-8').encode('utf-8')).hexdigest(),'translation_review':'reviewed'})
  (BASE/'sources/manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
  print('RENDERED',len(manifest),'PAGES',flush=True)
 

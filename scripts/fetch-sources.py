@@ -93,7 +93,7 @@ def main():
     for p in inventory:
         original = BASE / 'sources/html' / f"{p['id']}.html"
         incoming = dest / 'html' / f"{p['id']}.html"
-        if not original.exists() or original.read_bytes() != incoming.read_bytes():
+        if not original.exists() or original.read_text(encoding='utf-8') != incoming.read_text(encoding='utf-8'):
             changes.append({'id': p['id'], 'source': p['link'], 'change': 'new' if not original.exists() else 'changed'})
     report = {'pages': len(inventory), 'changes': changes, 'empty_pages': [p['link'] for p in inventory if not (dest / 'en' / f"{p['id']}.md").read_text(encoding='utf-8').strip()]}
     (dest / 'refresh-report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')

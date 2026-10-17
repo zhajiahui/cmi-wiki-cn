@@ -44,7 +44,7 @@ for page in manifest:
     if page.get('translation_review') != 'reviewed':
         errors.append('Unreviewed translation: ' + page['file'])
     source_path = BASE / 'sources/html' / f"{page['source_id']}.html"
-    if hashlib.sha256(source_path.read_bytes()).hexdigest() != page['source_sha256']:
+    if hashlib.sha256(source_path.read_text(encoding='utf-8').encode('utf-8')).hexdigest() != page['source_sha256']:
         errors.append('Source hash changed: ' + page['file'])
     source = BeautifulSoup(source_path.read_text(encoding='utf-8'), 'html.parser')
     source_blocks = []

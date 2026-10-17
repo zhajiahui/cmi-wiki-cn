@@ -6,7 +6,7 @@
 - `html/`：WordPress 正文原始 HTML，包含代码和页面资源引用。
 - `en/`：供翻译对照的英文 Markdown。恢复了 HTML `<br>` 代码换行。
 - `reviewed/`：45 页经原文核对的中文译稿。
-- `manifest.json`：中文文件、来源和 HTML SHA-256 对应表。
+- `manifest.json`：中文文件、来源和 HTML 在换行统一为 LF 后的 SHA-256 对应表。
 - `assets.json`：162 个本地资源的来源、大小和 SHA-256。
 - `command-translations.json`：从 Zrips/CMI 官方仓库的 `Translations/Locale_CN.yml` 提取的命令中文释义，仅用于术语参考；对应基线提交 `95cec1af672b051593117b11b26498ea57e251e1`。英文页面与语言文件不一致时，以该页原文为准并记入 notes。
 

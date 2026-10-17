@@ -5,7 +5,7 @@
     "source_id": 4998,
     "source_modified": "2026-09-12T13:39:41",
     "file": "hologram-api.md",
-    "source_sha256": "8cb46452edd47c1156b8085bf9800668c2b91e6af9144bf378c5d384d8842953",
+    "source_sha256": "1dfd5fa3a844e59f85e75059ca02190d99409e8976b50066fd165706745c43f6",
     "translation_review": "reviewed"
   },
   {
@@ -14,7 +14,7 @@
     "source_id": 2243,
     "source_modified": "2023-10-27T17:23:10",
     "file": "bungeecord.md",
-    "source_sha256": "f34e5f80767f1beefb2db38b0fab6c8c72e636f2a1d4ede12593a9c8487498e6",
+    "source_sha256": "a413053ca0970a7cc6a7fadd1ba7e7c451d477a644cd26c7689ba288689dc809",
     "translation_review": "reviewed"
   },
   {
@@ -23,7 +23,7 @@
     "source_id": 1437,
     "source_modified": "2025-05-08T09:55:02",
     "file": "hex-colors.md",
-    "source_sha256": "77cda9f7aac45ca03e37b7e130fbc1408c6285f1a7096c005701e1c061a7eeb7",
+    "source_sha256": "a1feda08b3e94212e153ffb9a11f16e5f2bcb97163c5a8a94dffc9da981e071e",
     "translation_review": "reviewed"
   },
   {
@@ -32,7 +32,7 @@
     "source_id": 855,
     "source_modified": "2026-04-09T14:12:43",
     "file": "api.md",
-    "source_sha256": "e08ceb3e462c008ca122f12a008f8827f061130f05485cdcf3748330b7506b6f",
+    "source_sha256": "35ab0b929b117046027da75d7ecdbabd06ac35091d1f2862c772f83f2785f02f",
     "translation_review": "reviewed"
   },
   {
@@ -41,7 +41,7 @@
     "source_id": 730,
     "source_modified": "2022-11-19T15:04:17",
     "file": "faq.md",
-    "source_sha256": "28365dfc8fa69107ad01f0a3da77e6a724a4fea4ff0b5b675fa6a73c1cc63607",
+    "source_sha256": "0ffc8ac9f402e88d65c7e8237dc90e1d7824852b4b17d4c9fa0ba8816657efad",
     "translation_review": "reviewed"
   },
   {
@@ -50,7 +50,7 @@
     "source_id": 316,
     "source_modified": "2025-05-22T13:01:45",
     "file": "first-run.md",
-    "source_sha256": "f9643e14a5f7ecf2445a13524c2f682c94974c2ddd86701b1f88bf562029a485",
+    "source_sha256": "90449b90e6b52145476ab04b37c1aa4082587243cdbacf67ccaf17b0c00a9899",
     "translation_review": "reviewed"
   },
   {
@@ -59,7 +59,7 @@
     "source_id": 226,
     "source_modified": "2022-10-16T08:20:47",
     "file": "jail.md",
-    "source_sha256": "c014758affed8abf0a9454695aeb185506d07af4f41a7f83ff5e0089cfc24d18",
+    "source_sha256": "77a9f3e61c5574cd6338a59f0dec2b6b676e7ce89bdfc74f77f7c182c9cc0aed",
     "translation_review": "reviewed"
   },
   {
@@ -68,7 +68,7 @@
     "source_id": 214,
     "source_modified": "2025-12-06T11:20:47",
     "file": "dynamic-signs.md",
-    "source_sha256": "86b981799eb461c7db5e677949bbdb06bc3a6b3db3c513c1d909acad777f0be3",
+    "source_sha256": "92ab0ad3763e4e76d3ec921a4cb6d2e4149be28955efd23b98f525cb6f1bbf73",
     "translation_review": "reviewed"
   },
   {
@@ -77,7 +77,7 @@
     "source_id": 159,
     "source_modified": "2024-04-30T11:47:27",
     "file": "playtime-rewards.md",
-    "source_sha256": "bae9f5bb2d00afcd9a554db07bec556677bdafb663c63dda8b229750243f8165",
+    "source_sha256": "a9acb712f4f6ecb526ccf40ac76dee5d6d930296ac24fb47ff2ec0f2277e44fc",
     "translation_review": "reviewed"
   },
   {
@@ -86,7 +86,7 @@
     "source_id": 153,
     "source_modified": "2026-09-29T11:09:20",
     "file": "holograms.md",
-    "source_sha256": "be7a8bbc4700ff8a94aaeeb5107b08b99ec8731b0f407e35a2a78822ede469a5",
+    "source_sha256": "e644e4fb4527592f95b03029c3bce62d7da2fe8e21f44d5cef8269bf918d867b",
     "translation_review": "reviewed"
   },
   {
@@ -95,7 +95,7 @@
     "source_id": 141,
     "source_modified": "2026-05-22T11:05:02",
     "file": "kits.md",
-    "source_sha256": "38926bc3c776adc0004f255c6d73eb1025272d18cdbb990a85f52eb5c0078a79",
+    "source_sha256": "4060c65eb13dbe2caa1cc673f0b1d335e28a52bb97e635fc87e901f7a4d1a805",
     "translation_review": "reviewed"
   },
   {
@@ -104,7 +104,7 @@
     "source_id": 105,
     "source_modified": "2026-06-12T10:15:39",
     "file": "rankup-system.md",
-    "source_sha256": "e6efc8b5bc093584ebce7d273db7d427343e0a3c37b918effe1c0d78e0771052",
+    "source_sha256": "f763280a728835e698303c6bf54a1f1372ee5da5687250566b0e8098e448a240",
     "translation_review": "reviewed"
   },
   {
@@ -113,7 +113,7 @@
     "source_id": 103,
     "source_modified": "2025-11-28T11:24:29",
     "file": "placeholders.md",
-    "source_sha256": "bce6b4301c2da91f15b11e0f7fe29bc31427c0c9f3fb2434e1d9cf7643b7fc91",
+    "source_sha256": "0c44636ef95c9d9c683746f1d070676d4eeffe4f5c3420a234473cfa8dce8b7f",
     "translation_review": "reviewed"
   },
   {
@@ -122,7 +122,7 @@
     "source_id": 101,
     "source_modified": "2025-12-06T11:20:41",
     "file": "armor-stand-editor.md",
-    "source_sha256": "d9134e0a4f83c5d5a252b23f6ead49487bc87658bd1006c5020fdc7a401a3d62",
+    "source_sha256": "a6f94171a187670158d66cf171d0e49ab54ddc3753d757090bc50be0830f16dc",
     "translation_review": "reviewed"
   },
   {
@@ -131,7 +131,7 @@
     "source_id": 97,
     "source_modified": "2023-03-26T15:30:49",
     "file": "portals.md",
-    "source_sha256": "81b18b05d2b94d4448db20d4348812c5516f697973c4eb303cf59eef2afd03ed",
+    "source_sha256": "dde71f9f2121f0a3449f35ad41ca4b80cfe926dc733bfa2d10c37306d767cb73",
     "translation_review": "reviewed"
   },
   {
@@ -140,7 +140,7 @@
     "source_id": 91,
     "source_modified": "2024-09-23T12:39:33",
     "file": "custom-text.md",
-    "source_sha256": "3047f01ff0394426e100a8da6dac915db757e9386df09e9d488d11b726ada7e1",
+    "source_sha256": "b7e3731031bc37b0c3ad0281407cb8ef8a1509000195c01346ddeb0bd47b1edd",
     "translation_review": "reviewed"
   },
   {
@@ -149,7 +149,7 @@
     "source_id": 80,
     "source_modified": "2026-05-15T14:29:26",
     "file": "commands.md",
-    "source_sha256": "134263cedbfa9a7d50fc3540ea5406bbd34202baefba838b42f458eb4f80f485",
+    "source_sha256": "4b134675dae7388c1bf9805a90de86e893b6708c2786d7059f27f508fc815861",
     "translation_review": "reviewed"
   },
   {
@@ -158,7 +158,7 @@
     "source_id": 75,
     "source_modified": "2025-11-22T11:00:31",
     "file": "permissions.md",
-    "source_sha256": "990a3973ad84b4bbe7e2d53c82412d1e94c6dc7da13de0888beaa6833e511ddf",
+    "source_sha256": "058cb959cc92c236f093febc7b916f7ad29a97cb80e16408fe1b9f339e2ed6c1",
     "translation_review": "reviewed"
   },
   {
@@ -167,7 +167,7 @@
     "source_id": 4235,
     "source_modified": "2025-05-02T11:06:50",
     "file": "extra/chat-rooms.md",
-    "source_sha256": "ca4059116723cc810fbf39f625e5e5870b6c7748eef79e6a3a6b4465d262a3e1",
+    "source_sha256": "5a1848c4c0f1ce2afd824385e112090cd94457a43bd9146a362ecbd8e8ed8e22",
     "translation_review": "reviewed"
   },
   {
@@ -176,7 +176,7 @@
     "source_id": 1854,
     "source_modified": "2023-03-26T15:49:44",
     "file": "extra/chat-filter.md",
-    "source_sha256": "96c7b4238410e9c7787e4fe70c1eedbce8f7b3136c68894877f3840b596849a2",
+    "source_sha256": "9d8bd01559d73e2ccb7b90c96ab7c73db6192216f1d18750c67da4efeb8d1937",
     "translation_review": "reviewed"
   },
   {
@@ -185,7 +185,7 @@
     "source_id": 1199,
     "source_modified": "2025-12-06T11:21:01",
     "file": "extra/scavenge.md",
-    "source_sha256": "d132e42aa42991f5a77d392c870af518def7b3eea6884ec4ddc57d9156db18a9",
+    "source_sha256": "f773b1925727f022b93db269514b3cc55159bdae05b082ca008de1ec585ed392",
     "translation_review": "reviewed"
   },
   {
@@ -194,7 +194,7 @@
     "source_id": 1045,
     "source_modified": "2023-03-26T15:56:12",
     "file": "extra/custom-mob-heads.md",
-    "source_sha256": "eda3b0193db52ad36a771f3a7f1e0231c767ee6a4409f621f0d885076822799c",
+    "source_sha256": "04e2a9a091fa7a6969af762ce6a26901dd36e2ed93deed5a7e8cc783ae70d6d1",
     "translation_review": "reviewed"
   },
   {
@@ -203,7 +203,7 @@
     "source_id": 1014,
     "source_modified": "2025-12-06T11:20:54",
     "file": "extra/particles.md",
-    "source_sha256": "1302dfb98ac5fe779a7db820d225cd5576ea64b2837ef8da97c716bf2aadc03a",
+    "source_sha256": "f458f48e5eeaad7d02ed1026a09ea17b13af483a05c495fb3978bdcdafb33a14",
     "translation_review": "reviewed"
   },
   {
@@ -212,7 +212,7 @@
     "source_id": 381,
     "source_modified": "2023-12-06T10:14:09",
     "file": "extra/custom-recipes.md",
-    "source_sha256": "3248c23821ec295fe4bd807dd595ad4de96718225af45dff9bf82751928eccf0",
+    "source_sha256": "d9c4995cb3bc82c64ce1d3b5c2af5a0cc84593a4f2bf81c4254b6b5dbfa70f1c",
     "translation_review": "reviewed"
   },
   {
@@ -221,7 +221,7 @@
     "source_id": 309,
     "source_modified": "2025-12-06T11:20:48",
     "file": "extra/elevator.md",
-    "source_sha256": "f9d3e29b6eb34d4fc5bdd97f67d79b76b1e133d14557f20364c6f13d563d2ab5",
+    "source_sha256": "01206471bbc805cda1765ffd3246b0efa6681ad29543058e3effaaf7589e6eb5",
     "translation_review": "reviewed"
   },
   {
@@ -230,7 +230,7 @@
     "source_id": 157,
     "source_modified": "2025-06-18T10:55:39",
     "file": "extra/tablist.md",
-    "source_sha256": "843e34aa41c7aaf130d5e02d90cd4d116c91837fe68ac01249b5fab74f73570e",
+    "source_sha256": "282512bc4ed512beca640bee817132e9d8c1bd8cc3d418722751f18a4ad68721",
     "translation_review": "reviewed"
   },
   {
@@ -239,7 +239,7 @@
     "source_id": 148,
     "source_modified": "2025-10-09T13:01:16",
     "file": "extra/search.md",
-    "source_sha256": "71bff27b086b403c7ac9c322a3a3bf78f52b252239688096f38249867e395f35",
+    "source_sha256": "1843e8fe73867746244c28c1e848d7737b1445218dd2b9fb4f3aef76ea868f18",
     "translation_review": "reviewed"
   },
   {
@@ -248,7 +248,7 @@
     "source_id": 146,
     "source_modified": "2025-05-01T09:13:31",
     "file": "extra/scan.md",
-    "source_sha256": "14bd262a56d7e6cc30905a9f15a83696764ea31f606731f06f3ba38a9e7d91ab",
+    "source_sha256": "de1c906912bbafdeee790ca373997262497c390dd633c202081c5c1c8217f91a",
     "translation_review": "reviewed"
   },
   {
@@ -257,7 +257,7 @@
     "source_id": 139,
     "source_modified": "2025-12-06T11:20:42",
     "file": "extra/totems.md",
-    "source_sha256": "c1e0f3506ea8373070419993233a15aed387e050447871b924c0d45e87c0422e",
+    "source_sha256": "386db02d9c3ba9298dc01a46ca2bd9420e957a53eb9c20e86df776db8ef9d2b0",
     "translation_review": "reviewed"
   },
   {
@@ -266,7 +266,7 @@
     "source_id": 136,
     "source_modified": "2022-10-22T10:04:44",
     "file": "extra/flight-charge.md",
-    "source_sha256": "e938d574a18e1e02a9c7a846c8cd4a4ff871b6a3f6ef7884adc9a2e2df1946d1",
+    "source_sha256": "c247496d2af0b9d046a1262fff860c2de926a6932f5cdb6ed7c5d2f97457c375",
     "translation_review": "reviewed"
   },
   {
@@ -275,7 +275,7 @@
     "source_id": 4344,
     "source_modified": "2025-11-19T09:32:24",
     "file": "commands/dialogs.md",
-    "source_sha256": "59ddbded7dfa336bba173f6ccf1ccf4a26ef27ebcccf48b331a1ec42918209d1",
+    "source_sha256": "b06c6403be9f005b5a370e2ca76e9cda252f0e81dc472f187d44996fdda3746e",
     "translation_review": "reviewed"
   },
   {
@@ -284,7 +284,7 @@
     "source_id": 3498,
     "source_modified": "2023-11-10T17:31:33",
     "file": "commands/icwol.md",
-    "source_sha256": "2b1760d4e95145271dbc6bc6e17251b79f745a53ca180021d2dac2699e1eb254",
+    "source_sha256": "913baad27c258751b11582c3663188872890060609f7f05b5fbc80e98f2a676e",
     "translation_review": "reviewed"
   },
   {
@@ -293,7 +293,7 @@
     "source_id": 3318,
     "source_modified": "2025-12-21T13:36:02",
     "file": "commands/spawnmob.md",
-    "source_sha256": "096c87729837108b930d6912357d5694be1653908e01d23601a8828cc55ef738",
+    "source_sha256": "cd5d7fd6ab9ff30201bb4de1e9fbed109ee700cfa9e968bdf6a8f8b720612ea2",
     "translation_review": "reviewed"
   },
   {
@@ -302,7 +302,7 @@
     "source_id": 2404,
     "source_modified": "2022-10-14T13:28:53",
     "file": "commands/rtp.md",
-    "source_sha256": "aedd45524164795d74a9b059da8defe46cd4e654687cec68280c2ae17d03e0e2",
+    "source_sha256": "3979e6e51b0b37573a03744d130df74e293859bedd1507d0a3f783e7e203dbe3",
     "translation_review": "reviewed"
   },
   {
@@ -311,7 +311,7 @@
     "source_id": 977,
     "source_modified": "2025-12-06T11:20:50",
     "file": "commands/warmups.md",
-    "source_sha256": "465c54f1f71cfaf87a4f1138aded176226c5ea7bef633cefa7f41069b1144fa5",
+    "source_sha256": "1edcd824fe652e18c946b27ec5449ba7be41a0b0457d6ef5f22b5ffcc9a40cef",
     "translation_review": "reviewed"
   },
   {
@@ -320,7 +320,7 @@
     "source_id": 253,
     "source_modified": "2022-10-15T09:39:32",
     "file": "commands/user-meta.md",
-    "source_sha256": "49cf9d289f545addf537b6d3b658bbda1b2959bd9587475321c5c7a111a350ce",
+    "source_sha256": "2bf2aa794244ce29939544475236d003300c7926d9517ad991b252aef77c39ed",
     "translation_review": "reviewed"
   },
   {
@@ -329,7 +329,7 @@
     "source_id": 246,
     "source_modified": "2025-12-06T11:20:47",
     "file": "commands/warps.md",
-    "source_sha256": "173c42c4370b56d7c2029a250602cd764bffe31cbc9af4a75e9aa21aee1a1519",
+    "source_sha256": "12909bbaaff88e37fec7f11ff56acc081ec21ae274f5c6f3d7bbd9c0b9779d7f",
     "translation_review": "reviewed"
   },
   {
@@ -338,7 +338,7 @@
     "source_id": 241,
     "source_modified": "2022-09-26T17:52:39",
     "file": "commands/spawn.md",
-    "source_sha256": "4cacf607cf6df563343d680a0d3e71153947e52ae008fb99a6aceca63e5d61ff",
+    "source_sha256": "9d5a900ec6550db07b078c392e6daf8eac8f665ea7775c24e5466812c4f2fb68",
     "translation_review": "reviewed"
   },
   {
@@ -347,7 +347,7 @@
     "source_id": 169,
     "source_modified": "2024-01-24T16:11:38",
     "file": "commands/bossbarmsg-handling.md",
-    "source_sha256": "0804152faff626c78901db306908525ef087049c2cd68d1336bb9d5fe3d537f4",
+    "source_sha256": "9f4b25b4a9ddd87b7d2c07cbed104cb35734296cb99e76a5462d290fa7796466",
     "translation_review": "reviewed"
   },
   {
@@ -356,7 +356,7 @@
     "source_id": 155,
     "source_modified": "2022-09-24T17:11:19",
     "file": "commands/kill-all.md",
-    "source_sha256": "9abaefb25a3c657b0bd334f2ca6321b16eabbe5137d031091378a7523a050562",
+    "source_sha256": "16a943018d67255b39a6b8a3068bd40209a0d835038f33d499abdfd6a698b2b2",
     "translation_review": "reviewed"
   },
   {
@@ -365,7 +365,7 @@
     "source_id": 107,
     "source_modified": "2024-04-24T13:42:37",
     "file": "commands/attached-commands.md",
-    "source_sha256": "faf64fe6bedab3e9df0a45ebe3d74be0bb136d6fc831669c746397810e14e3b5",
+    "source_sha256": "a8b9074c78c52573f5e8ff71eaf431202a8347adeb234d47c64e9c9fea509dde",
     "translation_review": "reviewed"
   },
   {
@@ -374,7 +374,7 @@
     "source_id": 89,
     "source_modified": "2026-05-06T13:01:34",
     "file": "commands/custom-alias.md",
-    "source_sha256": "d468614e16a97dd708de8b611af9430fdd7835e6d17468687e117430755e1bb6",
+    "source_sha256": "e354f41daace27e7ff08568a7322b34f12507262514d3919c6e2b759963e4bb1",
     "translation_review": "reviewed"
   },
   {
@@ -383,7 +383,7 @@
     "source_id": 86,
     "source_modified": "2025-12-06T11:20:39",
     "file": "commands/interactive-commands.md",
-    "source_sha256": "6798ac8dc8d082475d195c5eec532e50597dbe5debfaa0b072b3a07d221252b7",
+    "source_sha256": "9d5803faa425cc3b0f5c47861a220c08fb1ce504e8a5dd7d9f5ce9ec73cabcdd",
     "translation_review": "reviewed"
   },
   {
@@ -392,7 +392,7 @@
     "source_id": 83,
     "source_modified": "2026-05-15T14:04:01",
     "file": "commands/specialized.md",
-    "source_sha256": "6d9caf1cb325422ad894e5f1c9f78576031a36b491d37f97195ffd36f8f56ff7",
+    "source_sha256": "8e33091431663309b21a4446dbac9dbcf3197c966c4ef4926d9cdf27960b815a",
     "translation_review": "reviewed"
   },
   {
@@ -401,7 +401,7 @@
     "source_id": 65,
     "source_modified": "2025-12-06T11:20:39",
     "file": "index.md",
-    "source_sha256": "ed77ea34b6c1ad7ef8acb4f144650cd9a09b6544fc8407097bb203c5fe0d8cb3",
+    "source_sha256": "32235728abd7e752d39d8c638336cfeb415238ff59d422ea176baa797f4435f4",
     "translation_review": "reviewed"
   }
 ]
