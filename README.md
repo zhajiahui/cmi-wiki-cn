@@ -59,7 +59,7 @@ py -3.12 -m venv .venv
 
 主分支提交会触发 `.github/workflows/pages.yml`：检查内容、严格构建、上传静态文件并部署到 GitHub Pages。仓库 **Settings → Pages → Source** 选择 **GitHub Actions**。
 
-本地已经准备好仓库后，可双击 **发布.bat** 提交并推送更改。Git 首次访问 GitHub 时可能会打开登录页面，完成登录后重新运行即可。发布前先确认暂存范围内只有本项目资料。
+当前 GitHub 集成在创建仓库时返回 403，远程仓库与公开站点尚未建立。本地 Git 仓库和远程地址已经准备好。先在 GitHub 创建公开仓库 `zhajiahui/cmi-wiki-cn`（不添加自动 README），再双击 **发布.bat** 提交并推送更改。Git 首次访问 GitHub 时可能会打开登录页面，完成登录后重新运行即可。如需在后续修改后提交，请先在本仓库配置自己的 Git 提交姓名和邮箱。发布前先确认暂存范围内只有本项目资料。
 
 ## 来源与版本
 
