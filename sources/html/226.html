@@ -1,0 +1,386 @@
+		<div data-elementor-type="wp-post" data-elementor-id="226" class="elementor elementor-226">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-73733a5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="73733a5" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-571417d" data-id="571417d" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-0b07925 elementor-widget elementor-widget-text-editor" data-id="0b07925" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>You have 4 commands for the <strong>CMI Jail Feature</strong>:</p><p><strong><code>/cmi jail [playerName] (time) (jailName) (cellId) (-s) (r:jail_reasson)</code> <br /></strong>This will jail a player where time is optional and will use the default one if not defined. jailName is optional and if not defined then the nearest will be picked. cellid, again, is optional and if not defined free cell will be used. Jail reason can be anything you want and will be displayed in placeholders.</p><p><code><strong>/cmi jailedit</strong></code> <br />The main command to manage all of your jails.</p><p><code><strong>/cmi jaillist</strong></code> <br />This will list all the jails with cell count and how many you have prisoners in each jail. Which can be clicked to get more detailed information.</p><p><code><strong>/cmi unjail [playerName]</strong></code> <br />The last and not least, will unjail player.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-350242a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="350242a" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-737e6ab" data-id="737e6ab" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-a190b5c elementor-widget elementor-widget-text-editor" data-id="a190b5c" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Before we start with jail creation we have to check out the config.yml file.</p><pre>Jail:
+  # Defines in milliseconds how often to check if the player leaves the jail area
+  # Bigger numbers can help slightly lower server load
+  CheckInterval: 500
+  # Defines default jail time when time is not provided with a command
+  DefaultTime: 300
+  # Chat range in blocks while the player is in jail
+  # Set to 0 to allow talking
+  # set to -1 to prevent talking in general while jailed
+  ChatRange: 20
+  # When set to true jail time will decrease while the player is offline
+  # When set to false jail time will only be counted while the player is online
+  CountWhileOffline: false
+  # When set to true jail time will not decrease if player gets into afk mode while being jailed
+  # When set to false, time will pass normally
+  NoAfk: false
+  # Do you want to prevent players damage while he is in jail
+  PreventDamage: true
+  # Do you want to prevent players hunger while he is in jail
+  PreventHunger: true
+  Commands:
+    # Commands to be performed when the player gets jailed
+    OnJail:
+    - ''
+    # Commands to be performed when the player gets unjailed
+    OnUnJail:
+    - ''
+  WhiteListedCmds:
+  - cmi msg
+  - cmi reply
+</pre><p>Set config settings to your own liking and your own needs. For example, default jail time could be something we would want to change depending on your server type. By default it&#8217;s only 5 minutes.</p><p>Chat range can be useful in case you want to prevent jailed players from spamming chat, as what else would they be doing. So you can limit that to a particular range in blocks to allow them to talk but only to nearby players, maybe with someone who is already in jail</p><p>By default, jail time will not go down if the player logs out. This will help out to force players to sit down the entire time they have been jailed and not simply log out and return when time runs out.</p><p>Preventing the player from going AFK can help out too in case the player simply leaves the account logged in while he is doing other things, like homework (Yes, that can happen&#8230;)</p><p>In case you will want to still allow some basic commands for jailed players you can define them in the white list.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-44a6d4b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="44a6d4b" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-91b828a" data-id="91b828a" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-b83252d elementor-widget elementor-widget-text-editor" data-id="b83252d" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Now the fun part.</p><p>First of all, <b>get some basic jail</b> set up. Something like:</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-70ea82d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="70ea82d" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-191355c" data-id="191355c" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2771a2a elementor-widget elementor-widget-image" data-id="2771a2a" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="500" height="267" src="https://www.zrips.net/wp-content/uploads/2019/06/jail1.jpg" class="attachment-large size-large wp-image-1140" alt="" srcset="https://www.zrips.net/wp-content/uploads/2019/06/jail1.jpg 500w, https://www.zrips.net/wp-content/uploads/2019/06/jail1-300x160.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-0679754" data-id="0679754" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-63021d8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="63021d8" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9b1116b" data-id="9b1116b" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-441f437 elementor-widget elementor-widget-text-editor" data-id="441f437" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>No need to be fancy here.</p><p>Next, let&#8217;s use the CMI selection tool (the default is a <strong>wooden shovel</strong>) and select an area. Your selection will be marked with particle effects.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-f04fcca elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f04fcca" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-1e11e84" data-id="1e11e84" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5fb4f22 elementor-widget elementor-widget-image" data-id="5fb4f22" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="500" height="262" src="https://www.zrips.net/wp-content/uploads/2019/06/jail2.jpg" class="attachment-large size-large wp-image-1141" alt="" srcset="https://www.zrips.net/wp-content/uploads/2019/06/jail2.jpg 500w, https://www.zrips.net/wp-content/uploads/2019/06/jail2-300x157.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b854dd3" data-id="b854dd3" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-d2a2e48 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d2a2e48" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2cbe4f3" data-id="2cbe4f3" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-83f4fef elementor-widget elementor-widget-text-editor" data-id="83f4fef" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span>Next lets create new jail with </span><code><strong>/cmi jailedit addjail [jailName]</strong></code><span> so let&#8217;s pick some extremely original jail name and lets name it <strong>myJail</strong>, so the command will look like this </span><strong>/cmi jailedit addjail myJail</strong></p><p>After this, you will get the list of existing jails and you should see your newly created one like:</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-99868b0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="99868b0" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-de46b96" data-id="de46b96" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-04dc94b elementor-widget elementor-widget-image" data-id="04dc94b" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="500" height="47" src="https://www.zrips.net/wp-content/uploads/2019/06/jail3.jpg" class="attachment-large size-large wp-image-1142" alt="" srcset="https://www.zrips.net/wp-content/uploads/2019/06/jail3.jpg 500w, https://www.zrips.net/wp-content/uploads/2019/06/jail3-300x28.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-c62b873" data-id="c62b873" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-f7054fe elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f7054fe" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f8bc359" data-id="f8bc359" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3576247 elementor-widget elementor-widget-text-editor" data-id="3576247" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>And now for the easy part (yes, that one was the hardest part, who knows how to build jails anyways&#8230;) click in chat on your new and awesome jail to create new cells. For newly created jail you will only see<strong> [+]</strong> sign. So go to the first cell and press that<strong> [+]</strong> button. you will get the list of existing cells which should include your new one, like:</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-59cdbf0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="59cdbf0" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b2ecf2e" data-id="b2ecf2e" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-dfd05fd elementor-widget elementor-widget-image" data-id="dfd05fd" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="500" height="43" src="https://www.zrips.net/wp-content/uploads/2019/06/jail4.jpg" class="attachment-large size-large wp-image-1143" alt="" srcset="https://www.zrips.net/wp-content/uploads/2019/06/jail4.jpg 500w, https://www.zrips.net/wp-content/uploads/2019/06/jail4-300x26.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-6c3cf7d" data-id="6c3cf7d" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4768cbb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4768cbb" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7ac3b63" data-id="7ac3b63" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ce7e25e elementor-widget elementor-widget-text-editor" data-id="ce7e25e" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Repeat this step as many times as you want. There is no limit to how many cells you can have. But in general, they should be separate from each other, not limited by that, but the general rule of thumb. After all, we don&#8217;t want inmates to plan an escape!</p><p>At this point, you have working in jail. Though, small inconveniences can be noticed. Players who survived throw 5 min jail time will remain in jail, even tho they are no longer officially jailed, but someone forgot to give out a memo or something. So let us get rid of players who are no longer jailed, so lets set outside the teleport location. As you can see 2 pictures back, there is a grey out <strong>[tp] </strong>button. Let&#8217;s travel to a location outside the jail and simply click it. You will get a confirmation message like &#8220;<strong>Set new outside location</strong>&#8221; Fancy! After that, you can change this location to whatever you want. </p><p>So now you are done. You have a jail with cells and an outside location where players will go after they got released. </p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-a9c2625 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a9c2625" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2cd7829" data-id="2cd7829" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2b1d575 elementor-widget elementor-widget-heading" data-id="2b1d575" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Bonus Stuff</h2>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-d84f736 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d84f736" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a77c545" data-id="a77c545" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-58bfda4 elementor-widget elementor-widget-text-editor" data-id="58bfda4" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Jailed players will get a bossbar message showing how long they are jailed. So that&#8217;s fancy too!</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-15dcd96 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="15dcd96" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a912765" data-id="a912765" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-a7b3757 elementor-widget elementor-widget-image" data-id="a7b3757" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="500" height="61" src="https://www.zrips.net/wp-content/uploads/2019/06/jail5.jpg" class="attachment-large size-large wp-image-1144" alt="" srcset="https://www.zrips.net/wp-content/uploads/2019/06/jail5.jpg 500w, https://www.zrips.net/wp-content/uploads/2019/06/jail5-300x37.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-0d887ff" data-id="0d887ff" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4ac3482 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4ac3482" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f9dde00" data-id="f9dde00" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-361d670 elementor-widget elementor-widget-heading" data-id="361d670" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Jail Signs</h2>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-bcf681c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="bcf681c" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-771097e" data-id="771097e" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-93ffd2b elementor-widget elementor-widget-text-editor" data-id="93ffd2b" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>In case you want to show to others who are jailed here and for how long then you have 2 options: Use dynamic signs or use holograms.</p><p>So let&#8217;s set signs. Place a sign, location doesn&#8217;t matter. And let&#8217;s create new dynamic sign with <strong>/cmi dsign new</strong> after this you will get something like:</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8908132 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8908132" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-4a4c84c" data-id="4a4c84c" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-0d49c7a elementor-widget elementor-widget-image" data-id="0d49c7a" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="231" height="42" src="https://www.zrips.net/wp-content/uploads/2019/06/jail6.jpg" class="attachment-large size-large wp-image-1145" alt="" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-55b1671" data-id="55b1671" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-487defb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="487defb" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1698349" data-id="1698349" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3a0f8cc elementor-widget elementor-widget-text-editor" data-id="3a0f8cc" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>I know, it&#8217;s not so fancy, but it does what it should.</p><p>Let&#8217;s add new lines like</p><pre>%cmi_jail_time_myJail_1%<br />%cmi_jail_username_myJail_1%<br />%cmi_jail_reason_myJail_1%</pre><p>This will show jailed time, who is jailed, and for what reason, if the reason was defined while jailing the player.  So end setup should look like:</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-46b7204 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="46b7204" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b666513" data-id="b666513" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-a91b547 elementor-widget elementor-widget-image" data-id="a91b547" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="500" height="108" src="https://www.zrips.net/wp-content/uploads/2019/06/jail7.jpg" class="attachment-large size-large wp-image-1146" alt="" srcset="https://www.zrips.net/wp-content/uploads/2019/06/jail7.jpg 500w, https://www.zrips.net/wp-content/uploads/2019/06/jail7-300x65.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-d11d317" data-id="d11d317" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-ade0cee elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ade0cee" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1170ed5" data-id="1170ed5" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e0bd7cb elementor-widget elementor-widget-text-editor" data-id="e0bd7cb" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>You can open dynamic sign GUI (Open GUI) and lower down default refresh rate if you want it to be faster, but in general, for jail cells default time is fine.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-c873e38 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c873e38" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7b21706" data-id="7b21706" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ff14e68 elementor-widget elementor-widget-image" data-id="ff14e68" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="500" height="236" src="https://www.zrips.net/wp-content/uploads/2019/06/jail8.jpg" class="attachment-large size-large wp-image-1147" alt="" srcset="https://www.zrips.net/wp-content/uploads/2019/06/jail8.jpg 500w, https://www.zrips.net/wp-content/uploads/2019/06/jail8-300x142.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-737a8bd" data-id="737a8bd" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-58c7897 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="58c7897" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2ae1185" data-id="2ae1185" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-a2cf81a elementor-widget elementor-widget-heading" data-id="a2cf81a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Jail Holograms
+</h2>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-0e14495 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0e14495" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-63c4155" data-id="63c4155" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-78656e2 elementor-widget elementor-widget-text-editor" data-id="78656e2" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>For those who like fancy things, let&#8217;s make <b>holograms</b>. Stand where you want to place the hologram and perform something like <strong>/cmi hologram new myJailCell1 </strong>where myJailCell1 is just some random hologram name. You will get something like:</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4119294 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4119294" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-4992e25" data-id="4992e25" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-27e4e59 elementor-widget elementor-widget-image" data-id="27e4e59" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="643" height="36" src="https://www.zrips.net/wp-content/uploads/2019/06/jail9.jpg" class="attachment-large size-large wp-image-1148" alt="" srcset="https://www.zrips.net/wp-content/uploads/2019/06/jail9.jpg 643w, https://www.zrips.net/wp-content/uploads/2019/06/jail9-300x17.jpg 300w" sizes="(max-width: 643px) 100vw, 643px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-af50bf8" data-id="af50bf8" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-2c07492 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2c07492" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8c163de" data-id="8c163de" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-b36a9c2 elementor-widget elementor-widget-text-editor" data-id="b36a9c2" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Does it look familiar? Yes, indeed it does. So let&#8217;s add lines</p><pre>%cmi_jail_time_myJail_1%<br />%cmi_jail_username_myJail_1%<br />%cmi_jail_reason_myJail_1%</pre><p>This will add jailed players&#8217; information in the same way as it was added for dynamic signs. Keep in mind that the default hologram update interval can be not enough to have smooth updates, so open GUI (open settings GUI) and set the update interval to something like 1 second. </p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-25a78bd elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="25a78bd" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-153373a" data-id="153373a" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-8495d6f elementor-widget elementor-widget-image" data-id="8495d6f" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="500" height="342" src="https://www.zrips.net/wp-content/uploads/2019/06/jail10.jpg" class="attachment-large size-large wp-image-1149" alt="" srcset="https://www.zrips.net/wp-content/uploads/2019/06/jail10.jpg 500w, https://www.zrips.net/wp-content/uploads/2019/06/jail10-300x205.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-d96d228" data-id="d96d228" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		

@@ -1,0 +1,360 @@
+		<div data-elementor-type="wp-post" data-elementor-id="105" class="elementor elementor-105">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-ba4599c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ba4599c" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-801afad" data-id="801afad" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-c8e323e elementor-widget elementor-widget-text-editor" data-id="c8e323e" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span>Main server folder </span><b>spigot.yml</b><span> and check that stats saving prevention is set to false </span><b>stats-&gt;disable-saving: false</b><br /><span>Players will get the default rank group depending on the set permission node </span><b>cmi.rank.[rankName]</b><br /><span></span></p><p><span>Not enabled ranks will be ignored.</span><br /><b></b></p><p>Do check the available commands for rank <a href="https://www.zrips.net/cmi/commands/">here</a>.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-c973c0c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c973c0c" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3de9995" data-id="3de9995" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1ffde7d elementor-widget elementor-widget-heading" data-id="1ffde7d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Base options</h2>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b2fe46d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b2fe46d" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1374238" data-id="1374238" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-b83e843 elementor-widget elementor-widget-text-editor" data-id="b83e843" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">DisplayName&nbsp;</b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif; font-weight: var( --e-global-typography-text-font-weight );">section is optional and it will be used to represent rank ingame. This is NOT defining the required permission node and you still need to use the node name to rankup to this rank</span><br></p>
+<p><b>DefaultRank<span>&nbsp;</span></b><span>section defines if the player can be assigned to this rank if he doesn&#8217;t have any. There can be more than one default rank, and depending on the permission node, the first rank will be assigned to that player when needed</span></p>
+<p><b>AutoRankup<span>&nbsp;</span></b><span>section defines if the player will be auto-ranked to this rank if possible. Keep in mind that if there is more than one legit rankup&#8217;s, the player will have to confirm to which rank he wants to rankup</span></p>
+<p><b>RankupConfirmation<span>&nbsp;</span></b><span>section defines if you want to add additional confirmation for this rankup. Useful to avoid unintentional rankups. Keep in mind that&nbsp;</span><b>autorankup<span>&nbsp;</span></b><span>will request confirmation for rankup to this rank even if there is only one legit rankup option</span></p>
+<p><b>NextRanks<span>&nbsp;</span></b><span>is the list of possible next ranks from this rank. Can be one or can be dozens. Keep in mind that each rank requirement will be shown in chat and it can clutter quite a lot if there is a bunch of them at once</span></p>
+<p><b>MoneyCost<span>&nbsp;</span></b><span>defines how much the player will have to pay to rankup to this rank</span></p>
+<p><b>ExpCost<span>&nbsp;</span></b><span>defines how much the player will have to pay in exp to rankup to this rank</span></p>
+<p><strong>Votes</strong> defines amount of Votes player needs to have. This will be taken from CMI vote recording based on Votifier plugin</p>
+<p><span></span><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">Commands&nbsp;</b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif; font-weight: var( --e-global-typography-text-font-weight );">are a list that will be performed on rankup. Can be additional actions, like message broadcast or anything else</span><span><br></span></p>
+<p><b>CommandsOnRankDown<span>&nbsp;</span></b><span>is a list of commands which will be performed on rankdown action. Commands will be performed when you are ranking down </span><b>from this</b><span>&nbsp;rank.</span></p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-2dcef99 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2dcef99" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fbe7b61" data-id="fbe7b61" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-b809f6d elementor-widget elementor-widget-heading" data-id="b809f6d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default"><b>StatsRequirements&nbsp;</b></h2>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-122fa8f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="122fa8f" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f1b10df" data-id="f1b10df" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-01480ac elementor-widget elementor-widget-text-editor" data-id="01480ac" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span>The main section is </span><b>StatsRequirements<span> </span></b><span>and it can have a lot of different values in it:</span><br /><span>In general, format goes like this </span><b>[mainStat]( : optionalSubStat):amount</b><br /><span>For example, </span><b>MonsterKills:100</b><span> will require from player to have 100 monster kills while </span><b>MonsterKills:Zombie:100</b><span> will require to have </span><b>100 zombie</b><span> kills. Both of them can be used if needed.</span></p><div><p>List of possible requirements and basic explanations:</p><div><p>Distance in blocks:</p><ul><li><b>Travel</b>&#8211; Travel in total</li><li><b>Walk</b>&#8211; has to walk</li><li><b>Sneak</b>&#8211; has to sneak</li><li><b>Sprint</b>&#8211; has to sprint</li><li><b>Swim</b>&#8211; has to swim</li><li><b>Fall</b>&#8211; has to fall</li><li><b>Climb</b>&#8211; has to climb</li><li><b>Fly</b>&#8211; has to fly</li><li><strong>WalkUnderWater </strong>&#8211; has to walk underwater</li><li><strong>WalkOnWater</strong>&#8211; has to walk on water</li><li><b>MinecartTravel</b>&#8211; has to travel with a minecart</li><li><b>BoatTravel</b>&#8211; has to travel by boat</li><li><b>PigTravel</b>&#8211; has to ride a pig</li><li><b>HorseTravel</b>&#8211; has to ride a horse</li><li><b>ElytraTravel</b>&#8211; has to fly with elytra</li><li><strong>GhastTravel</strong>&#8211; has to travel on ghast</li><li><strong>NautilusTravel</strong>&#8211; has to travel on nautilus</li><li><strong>Strider travel</strong>&#8211; has to travel on strider</li></ul><p>Time in sec:</p><ul><li><b>PlayTime</b>&#8211; total playtime</li><li><b>AccountAge</b>&#8211; the time from the first player login into the server</li><li><b>FromLastDeath</b>&#8211; from last death</li><li><b>SneakTime</b>&#8211; sneak time</li><li><strong>TotalWorldTime</strong></li></ul><p>Amounts:</p><ul><li><b>GameQuit</b>&#8211; how many times player left the game</li><li><b>Jump</b>&#8211; jump count</li><li><b>DamageDealt</b>&#8211; total damage made</li><li><b>DamageTaken</b>&#8211; total damage taken</li><li><b>Deaths</b>&#8211; count of deaths</li><li><b>MobKills</b>&#8211; the total amount of mobs killed by the player</li><li><b>PlayerKills</b>&#8211; the total amount of players killed. Indirect kills don&#8217;t count</li><li><b>ItemEnchanted</b>&#8211; the number of enchanted items</li><li><b>AnimalsBred</b>&#8211; animals bred</li><li><b>FishCaught</b>&#8211; fish caught</li><li><b>TalkedToVillager</b>&#8211; times talked to a villager</li><li><b>TradedWithVillager</b>&#8211; traded with villagers</li><li><b>CakeSlicesEaten</b>&#8211; cake slices eaten</li><li><b>CauldronFilled</b>&#8211; cauldron filled</li><li><b>CouldronUsed</b>&#8211; cauldron used</li><li><b>ArmorCleaned</b>&#8211; times armor cleaned (leather armor)</li><li><b>BannerCleaned</b>&#8211; times banner cleaned</li><li><b>BrewingstandInteractions</b>&#8211; brewing stand interactions</li><li><b>BeaconInteractions</b>&#8211; beacon interactions</li><li><b>CraftingTableInteractions</b>&#8211; crafting table interactions</li><li><b>FurnaceInteractions</b>&#8211; furnace interactions</li><li><b>DispenserInspected</b>&#8211; dispenser inspected</li><li><b>DropperInspected</b>&#8211; dropper inspected</li><li><b>HopperInspected</b>&#8211; hopper inspected</li><li><b>ChestOpen</b>&#8211; chest open</li><li><b>TrappedChestTriggered</b>&#8211; trapped chest triggered</li><li><b>EnderchestOpened</b>&#8211; enderchest opened</li><li><b>NoteblockPlayed</b>&#8211; noteblock played</li><li><b>NoteblockTuned</b>&#8211; noteblock tuned</li><li><b>FlowerPotted</b>&#8211; flower potted</li><li><b>RecordPlayed</b>&#8211; record played</li><li><b>SleeptInBed</b>&#8211; sleept in bed</li><li><b>ShulkerBoxOpened</b>&#8211; shulker box opened</li><li><strong>ShulkerBoxCleaned</strong> &#8211; cleaned shulker boxes</li><li><b>ItemDropped</b>&#8211; defines the amount of dropped items. If a specific item is not defined, then the total amount is used</li><li><b>ItemPickups</b>&#8211; defines the amount of picked-up items. If a specific item is not defined, then the total amount is used</li><li><b>BlocksMined</b>&#8211; defines the number of blocks mined. If a specific block is not defined, then the total amount is used</li><li><b>ItemBreaks</b>&#8211; defines the number of broken items. If a specific item is not defined, then the total amount is used</li><li><b>ItemCrafts</b>&#8211; defines the number of crafted items. If a specific item is not defined, then the total amount is used</li><li><b>ItemsUsed</b>&#8211; defines the amount of item usage. like mining with a pickaxe. If a specific item is not defined, then the total amount is used</li><li><b>MonsterKills</b>&#8211; defines the number of monster kills. If a specific monster is not defined, then the total amount is used</li><li><b>KilledBy</b>&#8211; defines the number of deaths by a monster. If a specific monster is not defined, then the total amount is used</li><li><strong>InteractionWithBlastFurnace</strong></li><li><strong>InteractionWithSmoker</strong></li><li><strong>InteractionWithLectern</strong></li><li><strong>InteractionWithCampfire</strong></li><li><strong>InteractionWithCartographyTable</strong></li><li><strong>InteractionWithLoom</strong></li><li><strong>InteractionWithStonecutter</strong></li><li><strong>InteractionWithAnvil</strong></li><li><strong>InteractionWithGrindstone</strong></li><li><strong>InteractionWithSmithingTable</strong></li><li><strong>BellRing</strong></li><li><strong>RaidTrigger</strong></li><li><strong>RaidWin</strong></li><li><strong>TargetHit</strong></li><li><strong>OpenBarrel</strong></li><li><strong>DropCount</strong></li></ul></div></div><pre>  StatsRequirements:
+  - "PlayTime:3600"
+  - "travel:1000"
+  - "MonsterKills:zombie:10"
+  - "MonsterKills:slime:5"
+  - "MonsterKills:wolf:5"
+  - "AccountAge:1209600"</pre>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-dd03176 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dd03176" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-595678e" data-id="595678e" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d57d4f6 elementor-widget elementor-widget-heading" data-id="d57d4f6" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">ItemRequirement</h2>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3c77abc elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3c77abc" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-be16bec" data-id="be16bec" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-baf9863 elementor-widget elementor-widget-text-editor" data-id="baf9863" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>List of items player needs to have in their inventory. Defined as material followed with amount.</p>
+<pre>  ItemRequirement:
+  - "stone:10"
+  - "stone:1:20"
+  - "book:20"<br></pre>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-9deec39 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9deec39" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ff26e94" data-id="ff26e94" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-aa3da99 elementor-widget elementor-widget-heading" data-id="aa3da99" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">JobsRequirement</h2>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-e110d8d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e110d8d" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-889834b" data-id="889834b" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-95d5e1f elementor-widget elementor-widget-text-editor" data-id="95d5e1f" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>List of jobs player needs to be in and their minimal level. Additionally you can use <strong>totallevel </strong>to ask for total level amount across all active players jobs</p><pre>  JobsRequirement:
+  - "miner:10"
+  - "totallevel:20"</pre>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-deb2d21 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="deb2d21" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ec50de5" data-id="ec50de5" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f2e1e38 elementor-widget elementor-widget-heading" data-id="f2e1e38" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">McMMORequirement</h2>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-dfd08bd elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dfd08bd" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-79b4124" data-id="79b4124" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-cdacb8d elementor-widget elementor-widget-text-editor" data-id="cdacb8d" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>List of mcmmo skills and their minimal levels. Additionally you can use <b>power </b>to require specific total skill level</p><pre>  McMMORequirement:
+  - "woodcutting:10"
+  - "power:20"</pre>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-274b6f8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="274b6f8" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-529aae7" data-id="529aae7" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-6153f82 elementor-widget elementor-widget-heading" data-id="6153f82" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">PermissionRequirement</h2>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-a11f723 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a11f723" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b437af4" data-id="b437af4" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ac9cbd7 elementor-widget elementor-widget-text-editor" data-id="ac9cbd7" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>List of permission requirements. It needs to have actual permission node and followed with its short display name which will be used while showing rank information in game</p><pre>  PermissionRequirement:
+  - "cmi.command.fly:Fly"</pre>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-04e3d61 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="04e3d61" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fb48ed6" data-id="fb48ed6" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-284ba9a elementor-widget elementor-widget-heading" data-id="284ba9a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">PlaceholderRequirements</h2>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-f434144 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f434144" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bbc8c36" data-id="bbc8c36" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-889b918 elementor-widget elementor-widget-text-editor" data-id="889b918" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>List of placeholder requirements. This can check by numeric placeholder or text based. For numeric placeholders use <b>&gt;=</b> or <b>==</b> to check for equal or higher than or exact value. For text based placeholders always use <b>== </b>to check for exact match, tho we will ignore capitalization. This will need to include short description which will be used as display name for rank information in game</p><pre>  PlaceholderRequirements:
+  - '%cmi_user_level%&gt;=10;Get to level 10'
+  - '%cmi_user_homeamount%&gt;=3;Get 3 homes'
+  - '%cmi_user_weather%==rainy;We like rain'</pre>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-726ff26 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="726ff26" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-324f568" data-id="324f568" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f32e508 elementor-widget elementor-widget-heading" data-id="f32e508" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Default file example</h2>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-a756401 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a756401" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0776ff2" data-id="0776ff2" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-103b0d6 elementor-widget elementor-widget-text-editor" data-id="103b0d6" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<pre>Newbie:
+  Enabled: true
+  DisplayName: "&amp;2Newbie"
+  DefaultRank: true
+  AutoRankup: true
+  NextRanks:
+  - Branch1
+  - Branch2
+Branch1:
+  Enabled: true
+  DisplayName: "&amp;2Branch1"
+  AutoRankup: true
+  RankupConfirmation: true
+  Votes: 5
+  PermissionRequirement:
+  - "cmi.command.fly:Fly"
+  McMMORequirement:
+  - "woodcutting:10"
+  - "power:20"
+  JobsRequirement:
+  - "miner:10"
+  - "totallevel:20"
+  ItemRequirement:
+  - "stone:10"
+  - "stone:1:20"
+  - "book:20"
+  NextRanks:
+  - Branch1Rank1
+  MoneyCost: 100
+  Commands:
+  - "broadcast! &amp;6[playerDisplayName] &amp;eleveled up to Branch1 rank!"
+  StatsRequirements:
+  - "PlayTime:3600"
+  - "travel:1000"
+  - "MonsterKills:zombie:10"
+  - "MonsterKills:slime:5"
+  - "MonsterKills:wolf:5"
+  - "AccountAge:1209600"
+  PlaceholderRequirements:
+  - '%cmi_user_level%&gt;=10;Get to level 10'
+  - '%cmi_user_homeamount%&gt;=3;Get 3 homes'
+  - '%cmi_user_weather%==rainy;We like rain'
+Branch1Rank1:
+  Enabled: true
+  DisplayName: "&amp;2Branch1Rank1"
+  DefaultRank: false
+  AutoRankup: true
+  RankupConfirmation: false
+  PermissionRequirement:
+  - "cmi.command.heal:Heal"
+  NextRanks:
+  - Last
+  MoneyCost: 300
+  ExpCost: 350
+  Commands:
+  - "broadcast! &amp;6[playerDisplayName] &amp;eleveled up to Branch1Rank1 rank!"
+  StatsRequirements:
+  - "travel:10000"
+  - "blocksmined:3000"
+  - "blocksmined:diamond_ore:30"
+  - "MonsterKills:1000"
+  - "AccountAge:1209600"
+  McMMORequirement:
+  - "taming:10"
+  - "unarmed:30"
+Branch2:
+  Enabled: true
+  DisplayName: "&amp;2Branch2"
+  AutoRankup: true
+  RankupConfirmation: true
+  MoneyCost: 150
+  NextRanks:
+  - Branch2Rank1
+  Commands:
+  - "broadcast! &amp;6[playerDisplayName] &amp;eleveled up to Branch2 rank!"
+  PermissionRequirement:
+  - "cmi.command.tp:Teleport"
+  StatsRequirements:
+  - "PlayTime:3600"
+  - "travel:2000"
+  - "MonsterKills:zombie:15"
+  - "MonsterKills:slime:10"
+Branch2Rank1:
+  Enabled: true
+  DisplayName: "&amp;2Branch2Rank1"
+  AutoRankup: true
+  RankupConfirmation: false
+  MoneyCost: 100
+  ExpCost: 150
+  NextRanks:
+  - Branch2Rank2
+  Commands:
+  - "broadcast! &amp;6[playerDisplayName] &amp;eleveled up to Branch1Rank1 rank!"
+  StatsRequirements:
+  - "PlayTime:4600"
+  - "Swim:1000"
+  - "SneakTime:180"
+  - "MonsterKills:100"
+Branch2Rank2:
+  Enabled: true
+  DisplayName: "&amp;2Branch2Rank2"
+  AutoRankup: true
+  RankupConfirmation: false
+  MoneyCost: 100
+  ExpCost: 150
+  NextRanks:
+  - Last
+  Commands:
+  - "broadcast! &amp;6[playerDisplayName] &amp;eleveled up to Branch2Rank2 rank!"
+  StatsRequirements:
+  - "walk:15000"
+  - "HorseTravel:1000"
+  - "ItemsUsed:10000"
+  - "PlayerKills:10"
+Last:
+  Enabled: true
+  DisplayName: "&amp;2Last"
+  AutoRankup: true
+  StatsRequirements:
+  - "PlayTime:21600"
+  - "walk:30000"
+  - "MonsterKills:1000"
+  - "blocksmined:30000"
+  Commands:
+  - "broadcast! &amp;6[playerDisplayName] &amp;eleveled up to Last rank!"
+  - "cmi heal [playerName]"
+  - "money give [playerName] 100"</pre>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		

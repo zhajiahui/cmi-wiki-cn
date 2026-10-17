@@ -1,0 +1,588 @@
+		<div data-elementor-type="wp-post" data-elementor-id="1045" class="elementor elementor-1045">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-d5edb34 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d5edb34" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4e952f0" data-id="4e952f0" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d56d6fd elementor-widget elementor-widget-image" data-id="d56d6fd" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="750" height="280" src="https://www.zrips.net/wp-content/uploads/2019/03/customheads.png" class="attachment-large size-large wp-image-1047" alt="" srcset="https://www.zrips.net/wp-content/uploads/2019/03/customheads.png 880w, https://www.zrips.net/wp-content/uploads/2019/03/customheads-300x112.png 300w, https://www.zrips.net/wp-content/uploads/2019/03/customheads-768x286.png 768w" sizes="(max-width: 750px) 100vw, 750px" />															</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-36d66e3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="36d66e3" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c7a80c5" data-id="c7a80c5" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e3350e2 elementor-widget elementor-widget-text-editor" data-id="e3350e2" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>CMI provides the option to drop custom monster heads when you kill an entity. To customize dropped heads check out <code>~/plugins/CMI/Settings/CustomHeads.yml</code>.</p><p>This is defined by percentage amount in general. Like for example, you can have<strong> 5%</strong> to drop a<strong> sheep&#8217;s head</strong> but only <strong>1%</strong> to drop a <strong>creeper&#8217;s head</strong> when killing one. </p><pre>  creeper:<br />    DropChance: 1.0<br />  sheep:<br />    DropChance: 5.0</pre><p>In addition to this, you can define by how much you want to lower the chance for each player after they got the head for this type of mob. This is helpful in preventing exploitation while killing hundreds of mobs to farm heads. Keep in mind that this limitation will reset to the original state after each server restart.</p><p>In this example player has 5% to getting a sheep head and after each instance, they got one, the chance to get the next one will go down by 50% from the previous one, so if the initial chance was 5%, the second one will be 2.5%, next 1.25%, then 0.625% and so on.</p><pre>  sheep:<br />    DropChance: 5.0<br />    LowerWithEachDrop: 50.0</pre><p>You can have as many custom heads as you want. There is no hard limit on this one, though the recommendation would be to keep it in reasonable numbers. To add a new head simply add new text line which would contain a texture string.  You can find custom head texture string at any site which has database set for it. As an example of one: https://minecraft-heads.com/.</p><p>Custom head texture line should start with numbers which will define the chance of dropping that head in particular. So you can have some more rare heads than others for the same entity type. Example</p><pre>    - 100:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzI2NTIwODNmMjhlZDFiNjFmOWI5NjVkZjFhYmYwMTBmMjM0NjgxYzIxNDM1OTUxYzY3ZDg4MzY0NzQ5ODIyIn19fQ==</pre><p>In this case, head has 100% chance to be picked if the random algorithm checks it before others. In case it would have less than 100%, lets say it&#8217;s only 10%. Then the algorithm will try to roll &#8220;dice&#8221; and check if we can pick this head. If not, then it will move to another random head in the list and will try to pick it. So to avoid not dropping a head at all even though the player should, keep at least one head in the list for a particular mob type with 100% chance.</p><p>Optionally you can add a custom head custom name by inserting it into texture string. Example:</p><pre>    - 100:&amp;2Custom Head Name:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjZhNDExMmRmMWU0YmNlMmE1ZTI4NDE3ZjNhYWZmNzljZDY2ZTg4NWMzNzI0NTU0MTAyY2VmOGViOCJ9fX0=</pre><p>In this case, you will have a head with <strong><span style="color: #008000">Custom Head Name</span></strong> as an item name. It&#8217;s completely optional and if not defined then the default name will be used.</p><p>And last option is to define criteria for the particular head. Format should be like <strong>c-[criteria1],[criteria2],[criteria3]</strong> This can range from simple check if the creature was tamed or not, if the creature is in a particular color or particular villager type. Example:</p><pre>  creeper:<br />    DropChance: 2.0<br />    LowerWithEachDrop: 50.0<br />    Heads:<br />    - 100:c-unpowered:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjQyNTQ4MzhjMzNlYTIyN2ZmY2EyMjNkZGRhYWJmZTBiMDIxNWY3MGRhNjQ5ZTk0NDQ3N2Y0NDM3MGNhNjk1MiJ9fX0=<br />    - 100:c-powered:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTNmMTcyZDI5Y2Y5NGJjODk1NjA4YjdhNWRjMmFmMGRlNDljNzg4ZDViZWNiMTYwNWYxZjUzNDg4YTAxNzBiOCJ9fX0=</pre>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-1a55a26 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1a55a26" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c1d87c6" data-id="c1d87c6" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-9907e68 elementor-widget elementor-widget-heading" data-id="9907e68" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Head lore
+</h2>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-fbb38cf elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fbb38cf" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c3a1b6c" data-id="c3a1b6c" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ebc377a elementor-widget elementor-widget-text-editor" data-id="ebc377a" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>In case we need custom lore to be added to the dropped head we can do that by adding lore:{&#8220;Some text in here&#8221;} while extra lines can be added with &#8220;,&#8221; so full basic example would</p><pre>     - '100:{#edward&gt;}DjCreeper{#cancan&lt;}:lore{"{#red&gt;}||||||||||||||||||||||||||||||||{#purple&lt;&gt;}||||||||||||||||||||||||||||||||{#cancan&lt;}","{#cancan&gt;}Got<br />      with [chance]% chance{#edward&lt;}","&amp;2Lucky guy: %cmi_user_name%","{#red&gt;}||||||||||||||||||||||||||||||||{#purple&lt;&gt;}||||||||||||||||||||||||||||||||{#cancan&lt;}"}:YTNmMTcyZDI5Y2Y5NGJjODk1NjA4YjdhNWRjMmFmMGRlNDljNzg4ZDViZWNiMTYwNWYxZjUzNDg4YTAxNzBiOCJ9fX0='</pre><p>This will result into head with lore like</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-ea73367 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ea73367" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a567761" data-id="a567761" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-625a50b elementor-widget elementor-widget-image" data-id="625a50b" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="267" height="112" src="https://www.zrips.net/wp-content/uploads/2020/08/customheadlore.jpg" class="attachment-large size-large wp-image-1484" alt="" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-9ad885a" data-id="9ad885a" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-a0b6be5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a0b6be5" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9d587e9" data-id="9d587e9" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1df6ca4 elementor-widget elementor-widget-heading" data-id="1df6ca4" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Example
+</h2>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-552a8b2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="552a8b2" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5680cbc" data-id="5680cbc" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-eb132c1 elementor-widget elementor-widget-image" data-id="eb132c1" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="750" height="603" src="https://www.zrips.net/wp-content/uploads/2019/03/customheads2.png" class="attachment-large size-large wp-image-1048" alt="" srcset="https://www.zrips.net/wp-content/uploads/2019/03/customheads2.png 864w, https://www.zrips.net/wp-content/uploads/2019/03/customheads2-300x241.png 300w, https://www.zrips.net/wp-content/uploads/2019/03/customheads2-768x618.png 768w" sizes="(max-width: 750px) 100vw, 750px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-92614ff" data-id="92614ff" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7265664 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7265664" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-908d027" data-id="908d027" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f062fa9 elementor-widget elementor-widget-text-editor" data-id="f062fa9" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>This will have 2% chance to drop creeper head. But depending on creeper type, if its powered or not, it will drop one or another head. </p><p>Multiple criteria can be used. In example</p><pre>    - 100:c-baby,tamed,angry:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTk1Y2JiNGY3NWVhODc2MTdmMmY3MTNjNmQ0OWRhYzMyMDliYTFiZDRiOTM2OTY1NGIxNDU5ZWExNTMxNyJ9fX0=</pre><p>Which will only drop head if entity was baby wolf which was in angry mode. !?!Who would kill a killer baby wolf!?!</p><p>All possible criteria options:</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-e791f28 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e791f28" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fb62bbc" data-id="fb62bbc" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-18cb38e elementor-widget elementor-widget-toggle" data-id="18cb38e" data-element_type="widget" data-e-type="widget" data-widget_type="toggle.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-toggle">
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-2591" class="elementor-tab-title" data-tab="1" role="button" aria-controls="elementor-tab-content-2591" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Tamed</a>
+					</div>
+
+					<div id="elementor-tab-content-2591" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-2591"><p>Only drops head if killed entity was tamed.</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-2592" class="elementor-tab-title" data-tab="2" role="button" aria-controls="elementor-tab-content-2592" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Untamed</a>
+					</div>
+
+					<div id="elementor-tab-content-2592" class="elementor-tab-content elementor-clearfix" data-tab="2" role="region" aria-labelledby="elementor-tab-title-2592"><p>Will only drop head if creature can be tamed but was not at moment it died</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-2593" class="elementor-tab-title" data-tab="3" role="button" aria-controls="elementor-tab-content-2593" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Baby</a>
+					</div>
+
+					<div id="elementor-tab-content-2593" class="elementor-tab-content elementor-clearfix" data-tab="3" role="region" aria-labelledby="elementor-tab-title-2593"><p>Only drops head if creature was in baby state. This doesn&#8217;t apply for slime or magma cubes. They have different criteria.</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-2594" class="elementor-tab-title" data-tab="4" role="button" aria-controls="elementor-tab-content-2594" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Adult</a>
+					</div>
+
+					<div id="elementor-tab-content-2594" class="elementor-tab-content elementor-clearfix" data-tab="4" role="region" aria-labelledby="elementor-tab-title-2594"><p>Will only drop head if entity can have age states and is in adult one. This will not work for creatures like creepers which doesn&#8217;t have age states. </p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-2595" class="elementor-tab-title" data-tab="5" role="button" aria-controls="elementor-tab-content-2595" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Angry</a>
+					</div>
+
+					<div id="elementor-tab-content-2595" class="elementor-tab-content elementor-clearfix" data-tab="5" role="region" aria-labelledby="elementor-tab-title-2595"><p>Drops head if wolf was in angry mode when it was killed</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-2596" class="elementor-tab-title" data-tab="6" role="button" aria-controls="elementor-tab-content-2596" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Pasive</a>
+					</div>
+
+					<div id="elementor-tab-content-2596" class="elementor-tab-content elementor-clearfix" data-tab="6" role="region" aria-labelledby="elementor-tab-title-2596"><p>Drops head when wolf was in passive mode</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-2597" class="elementor-tab-title" data-tab="7" role="button" aria-controls="elementor-tab-content-2597" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Red_cat</a>
+					</div>
+
+					<div id="elementor-tab-content-2597" class="elementor-tab-content elementor-clearfix" data-tab="7" role="region" aria-labelledby="elementor-tab-title-2597"><p>Used to drop head only if entity is red cat. Use only for ocelots. </p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-2598" class="elementor-tab-title" data-tab="8" role="button" aria-controls="elementor-tab-content-2598" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Siamese_cat</a>
+					</div>
+
+					<div id="elementor-tab-content-2598" class="elementor-tab-content elementor-clearfix" data-tab="8" role="region" aria-labelledby="elementor-tab-title-2598"><p>Used to drop head only if entity is siamese cat. Use only for ocelots. </p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-2599" class="elementor-tab-title" data-tab="9" role="button" aria-controls="elementor-tab-content-2599" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Wild_ocelot</a>
+					</div>
+
+					<div id="elementor-tab-content-2599" class="elementor-tab-content elementor-clearfix" data-tab="9" role="region" aria-labelledby="elementor-tab-title-2599"><p>Used to drop head only if entity is wild cat. Use only for ocelots. </p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25910" class="elementor-tab-title" data-tab="10" role="button" aria-controls="elementor-tab-content-25910" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Black_cat</a>
+					</div>
+
+					<div id="elementor-tab-content-25910" class="elementor-tab-content elementor-clearfix" data-tab="10" role="region" aria-labelledby="elementor-tab-title-25910"><p>Used to drop head only if entity is black cat. Use only for ocelots. </p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25911" class="elementor-tab-title" data-tab="11" role="button" aria-controls="elementor-tab-content-25911" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">White</a>
+					</div>
+
+					<div id="elementor-tab-content-25911" class="elementor-tab-content elementor-clearfix" data-tab="11" role="region" aria-labelledby="elementor-tab-title-25911"><p>Color indication of entities like Sheep, shulker boxes or similar entities which has this color indicator.</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25912" class="elementor-tab-title" data-tab="12" role="button" aria-controls="elementor-tab-content-25912" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Orange</a>
+					</div>
+
+					<div id="elementor-tab-content-25912" class="elementor-tab-content elementor-clearfix" data-tab="12" role="region" aria-labelledby="elementor-tab-title-25912"><p>Color indication of entities like Sheep, shulker boxes or similar entities which has this color indicator.</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25913" class="elementor-tab-title" data-tab="13" role="button" aria-controls="elementor-tab-content-25913" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Magenta</a>
+					</div>
+
+					<div id="elementor-tab-content-25913" class="elementor-tab-content elementor-clearfix" data-tab="13" role="region" aria-labelledby="elementor-tab-title-25913"><p>Color indication of entities like Sheep, shulker boxes or similar entities which has this color indicator.</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25914" class="elementor-tab-title" data-tab="14" role="button" aria-controls="elementor-tab-content-25914" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Light_Blue</a>
+					</div>
+
+					<div id="elementor-tab-content-25914" class="elementor-tab-content elementor-clearfix" data-tab="14" role="region" aria-labelledby="elementor-tab-title-25914"><p>Color indication of entities like Sheep, shulker boxes or similar entities which has this color indicator.</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25915" class="elementor-tab-title" data-tab="15" role="button" aria-controls="elementor-tab-content-25915" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Yellow</a>
+					</div>
+
+					<div id="elementor-tab-content-25915" class="elementor-tab-content elementor-clearfix" data-tab="15" role="region" aria-labelledby="elementor-tab-title-25915"><p>Color indication of entities like Sheep, shulker boxes or similar entities which has this color indicator.</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25916" class="elementor-tab-title" data-tab="16" role="button" aria-controls="elementor-tab-content-25916" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Lime</a>
+					</div>
+
+					<div id="elementor-tab-content-25916" class="elementor-tab-content elementor-clearfix" data-tab="16" role="region" aria-labelledby="elementor-tab-title-25916"><p>Color indication of entities like Sheep, shulker boxes or similar entities which has this color indicator.</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25917" class="elementor-tab-title" data-tab="17" role="button" aria-controls="elementor-tab-content-25917" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Pink</a>
+					</div>
+
+					<div id="elementor-tab-content-25917" class="elementor-tab-content elementor-clearfix" data-tab="17" role="region" aria-labelledby="elementor-tab-title-25917"><p>Color indication of entities like Sheep, shulker boxes or similar entities which has this color indicator.</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25918" class="elementor-tab-title" data-tab="18" role="button" aria-controls="elementor-tab-content-25918" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Gray</a>
+					</div>
+
+					<div id="elementor-tab-content-25918" class="elementor-tab-content elementor-clearfix" data-tab="18" role="region" aria-labelledby="elementor-tab-title-25918"><p>Color indication of entities like Sheep, shulker boxes or similar entities which has this color indicator.</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25919" class="elementor-tab-title" data-tab="19" role="button" aria-controls="elementor-tab-content-25919" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Light_Gray</a>
+					</div>
+
+					<div id="elementor-tab-content-25919" class="elementor-tab-content elementor-clearfix" data-tab="19" role="region" aria-labelledby="elementor-tab-title-25919"><p>Color indication of entities like Sheep, shulker boxes or similar entities which has this color indicator.</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25920" class="elementor-tab-title" data-tab="20" role="button" aria-controls="elementor-tab-content-25920" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Cyan</a>
+					</div>
+
+					<div id="elementor-tab-content-25920" class="elementor-tab-content elementor-clearfix" data-tab="20" role="region" aria-labelledby="elementor-tab-title-25920"><p>Color indication of entities like Sheep, shulker boxes or similar entities which has this color indicator.</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25921" class="elementor-tab-title" data-tab="21" role="button" aria-controls="elementor-tab-content-25921" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Cyan</a>
+					</div>
+
+					<div id="elementor-tab-content-25921" class="elementor-tab-content elementor-clearfix" data-tab="21" role="region" aria-labelledby="elementor-tab-title-25921"><p>Color indication of entities like Sheep, shulker boxes or similar entities which has this color indicator.</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25922" class="elementor-tab-title" data-tab="22" role="button" aria-controls="elementor-tab-content-25922" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Blue</a>
+					</div>
+
+					<div id="elementor-tab-content-25922" class="elementor-tab-content elementor-clearfix" data-tab="22" role="region" aria-labelledby="elementor-tab-title-25922"><p>Color indication of entities like Sheep, shulker boxes or similar entities which has this color indicator.</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25923" class="elementor-tab-title" data-tab="23" role="button" aria-controls="elementor-tab-content-25923" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Brown</a>
+					</div>
+
+					<div id="elementor-tab-content-25923" class="elementor-tab-content elementor-clearfix" data-tab="23" role="region" aria-labelledby="elementor-tab-title-25923"><p>Color indication of entities like Sheep, shulker boxes or similar entities which has this color indicator.</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25924" class="elementor-tab-title" data-tab="24" role="button" aria-controls="elementor-tab-content-25924" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Green</a>
+					</div>
+
+					<div id="elementor-tab-content-25924" class="elementor-tab-content elementor-clearfix" data-tab="24" role="region" aria-labelledby="elementor-tab-title-25924"><p>Color indication of entities like Sheep, shulker boxes or similar entities which has this color indicator.</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25925" class="elementor-tab-title" data-tab="25" role="button" aria-controls="elementor-tab-content-25925" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Red</a>
+					</div>
+
+					<div id="elementor-tab-content-25925" class="elementor-tab-content elementor-clearfix" data-tab="25" role="region" aria-labelledby="elementor-tab-title-25925"><p>Color indication of entities like Sheep, shulker boxes or similar entities which has this color indicator.</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25926" class="elementor-tab-title" data-tab="26" role="button" aria-controls="elementor-tab-content-25926" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Black</a>
+					</div>
+
+					<div id="elementor-tab-content-25926" class="elementor-tab-content elementor-clearfix" data-tab="26" role="region" aria-labelledby="elementor-tab-title-25926"><p>Color indication of entities like Sheep, shulker boxes or similar entities which has this color indicator.</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25927" class="elementor-tab-title" data-tab="27" role="button" aria-controls="elementor-tab-content-25927" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Rainbow</a>
+					</div>
+
+					<div id="elementor-tab-content-25927" class="elementor-tab-content elementor-clearfix" data-tab="27" role="region" aria-labelledby="elementor-tab-title-25927"><p>Only applies for sheep which has name as jeb_ which creates rainbow sheep</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25928" class="elementor-tab-title" data-tab="28" role="button" aria-controls="elementor-tab-content-25928" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Chestnut</a>
+					</div>
+
+					<div id="elementor-tab-content-25928" class="elementor-tab-content elementor-clearfix" data-tab="28" role="region" aria-labelledby="elementor-tab-title-25928"><p>Horse type indicator</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25929" class="elementor-tab-title" data-tab="29" role="button" aria-controls="elementor-tab-content-25929" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Creamy</a>
+					</div>
+
+					<div id="elementor-tab-content-25929" class="elementor-tab-content elementor-clearfix" data-tab="29" role="region" aria-labelledby="elementor-tab-title-25929"><p>Horse type indicator</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25930" class="elementor-tab-title" data-tab="30" role="button" aria-controls="elementor-tab-content-25930" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Dark_brown</a>
+					</div>
+
+					<div id="elementor-tab-content-25930" class="elementor-tab-content elementor-clearfix" data-tab="30" role="region" aria-labelledby="elementor-tab-title-25930"><p>Horse type indicator</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25931" class="elementor-tab-title" data-tab="31" role="button" aria-controls="elementor-tab-content-25931" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Size1 - Size10</a>
+					</div>
+
+					<div id="elementor-tab-content-25931" class="elementor-tab-content elementor-clearfix" data-tab="31" role="region" aria-labelledby="elementor-tab-title-25931"><p>Size1 Size2 Size3 Size4 &#8230;. Size10</p><p>Can be used to identify slime and magma cube sizes. </p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25932" class="elementor-tab-title" data-tab="32" role="button" aria-controls="elementor-tab-content-25932" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Powered</a>
+					</div>
+
+					<div id="elementor-tab-content-25932" class="elementor-tab-content elementor-clearfix" data-tab="32" role="region" aria-labelledby="elementor-tab-title-25932"><p>Only drops head if creeper was powered</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25933" class="elementor-tab-title" data-tab="33" role="button" aria-controls="elementor-tab-content-25933" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Unpowered</a>
+					</div>
+
+					<div id="elementor-tab-content-25933" class="elementor-tab-content elementor-clearfix" data-tab="33" role="region" aria-labelledby="elementor-tab-title-25933"><p>Only drops for regular creeper</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25934" class="elementor-tab-title" data-tab="34" role="button" aria-controls="elementor-tab-content-25934" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Normal</a>
+					</div>
+
+					<div id="elementor-tab-content-25934" class="elementor-tab-content elementor-clearfix" data-tab="34" role="region" aria-labelledby="elementor-tab-title-25934"><p>Villager type</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25935" class="elementor-tab-title" data-tab="35" role="button" aria-controls="elementor-tab-content-25935" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Farmer</a>
+					</div>
+
+					<div id="elementor-tab-content-25935" class="elementor-tab-content elementor-clearfix" data-tab="35" role="region" aria-labelledby="elementor-tab-title-25935"><p>Villager type</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25936" class="elementor-tab-title" data-tab="36" role="button" aria-controls="elementor-tab-content-25936" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Librarian</a>
+					</div>
+
+					<div id="elementor-tab-content-25936" class="elementor-tab-content elementor-clearfix" data-tab="36" role="region" aria-labelledby="elementor-tab-title-25936"><p>Villager type</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25937" class="elementor-tab-title" data-tab="37" role="button" aria-controls="elementor-tab-content-25937" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Priest</a>
+					</div>
+
+					<div id="elementor-tab-content-25937" class="elementor-tab-content elementor-clearfix" data-tab="37" role="region" aria-labelledby="elementor-tab-title-25937"><p>Villager type</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25938" class="elementor-tab-title" data-tab="38" role="button" aria-controls="elementor-tab-content-25938" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Blacksmith</a>
+					</div>
+
+					<div id="elementor-tab-content-25938" class="elementor-tab-content elementor-clearfix" data-tab="38" role="region" aria-labelledby="elementor-tab-title-25938"><p>Villager type</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25939" class="elementor-tab-title" data-tab="39" role="button" aria-controls="elementor-tab-content-25939" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Butcher</a>
+					</div>
+
+					<div id="elementor-tab-content-25939" class="elementor-tab-content elementor-clearfix" data-tab="39" role="region" aria-labelledby="elementor-tab-title-25939"><p>Villager type</p></div>
+				</div>
+							<div class="elementor-toggle-item">
+					<div id="elementor-tab-title-25940" class="elementor-tab-title" data-tab="40" role="button" aria-controls="elementor-tab-content-25940" aria-expanded="false">
+												<span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+															<span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+								<span class="elementor-toggle-icon-opened"><i class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+													</span>
+												<a class="elementor-toggle-title" tabindex="0">Nitwit</a>
+					</div>
+
+					<div id="elementor-tab-content-25940" class="elementor-tab-content elementor-clearfix" data-tab="40" role="region" aria-labelledby="elementor-tab-title-25940"><p>Villager type</p></div>
+				</div>
+								</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-cc404c5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cc404c5" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c5af540" data-id="c5af540" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-961e173 elementor-widget elementor-widget-heading" data-id="961e173" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Loot bonus
+</h2>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-e7b7bb9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e7b7bb9" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5653cfb" data-id="5653cfb" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-253fb72 elementor-widget elementor-widget-text-editor" data-id="253fb72" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Optionally you can have extra chance when using weapon with looting enchantment on it. This can add extra variation and will increase worth of weapons with this enchantment. <br />By default only 3 levels will be checked as vanilla enchantment can only have 3 levels. If you need more then this add extra lines in customHeads.yml file which should look something like</p><pre>LootMobBonus:<br />  Enabled: true<br />  Lvl1: 5.0<br />  Lvl2: 15.0<br />  Lvl3: 30.0<br />  Lvl4: 35.0<br />  Lvl5: 40.0  <br />  Lvl6: 45.0</pre><p>Keep in mind that this value doesn&#8217;t add raw drop chance, but increases current one by particular amount. So if you have head drop chance at 1% and you have looting 3 enchantment, then final chance will be 1.3%</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		

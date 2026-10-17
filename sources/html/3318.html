@@ -1,0 +1,419 @@
+		<div data-elementor-type="wp-post" data-elementor-id="3318" class="elementor elementor-3318">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-502503d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="502503d" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6fd54e4" data-id="6fd54e4" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5b7ac29 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="5b7ac29" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Base variables</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-69e0a49 elementor-widget elementor-widget-text-editor" data-id="69e0a49" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><code><strong>/cmi spawnmob [type] ([amount]) ([location]) (sp:[range]) (ps:[data]) (ps2:[data])</strong></code></p><p><strong>[type]</strong> &#8211; defines entity type with possible additional variables, which are explained below.</p><p><strong>[amount]</strong> &#8211; amount of entities you want to spawn in. Additionally, format as<strong> q:[amount]</strong> can be used.</p><p><strong>[location]</strong> &#8211; where you want to spawn in the entity. Defined in regular location format like <strong>LT_Craft;46.62;-59.7;-1.7;-67.49;25.49, </strong>which can be retrieved from <strong>/cmi pos</strong> command as an example, last two numbers defining pitch and yaw are optional. Additionally, in case you want to spawn a mob at a specific player&#8217;s location, you can use <strong>l:</strong> variable. For example, <strong>l:Zrips,</strong> which will spawn mob at <strong>Zrips</strong> location if he is online.</p><p><strong>sp:[range]</strong> &#8211; defines the spread of entities in range. If you are spawning in multiple entities, you might want to set a defined spread range to distribute those more evenly and not bunch them all in one single block. For example, <strong>sp:5.</strong></p><p><strong>ps:[data] </strong>&#8211; defines passenger of the original entity. This on itself can contain the same type of data as the base entity.</p><p><strong>ps2:[data] </strong>&#8211; same as the previous one, except that this one will try to add the entity to the second vehicle slot if possible. The most common use case would be with boats.</p><p>Simple command example: <strong>/cmi spawnmob skeleton_horse 5 LT_Craft;46;-59;-1 ps:skeleton sp:10</strong> which will spawn in 5 skeleton horses with 5 skeletons as their riders at the defined location and spread out in a range of 10 blocks.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-829 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="829" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-27ae" data-id="27ae" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2dec0cd elementor-widget elementor-widget-heading" data-id="2dec0cd" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Common entity data</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-194f elementor-widget elementor-widget-text-editor" data-id="194f" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Command example: <strong>/cmi spawnmob skeleton_horse;baby;hp{50};n{{#brown}Death_Bringer};s{3}</strong></p><p><strong>glow</strong> &#8211; enables entities to glow.</p><p><strong>n{[name]}</strong> &#8211; defines entities visible name. For example, <strong>n{{#pink}My_Little_Ponny}, </strong>if you want to insert spaces in the name then use single <code>_</code> and in case you want to use actual underscore in the name, then use double like __</p><p><strong>hidename</strong> &#8211; will hide entities name. Use this after setting its name, otherwise it will be shown. This can be useful in case you want to have named entity which could be more easily excluded from mob killing commands and plugins</p><p><strong>effect{[data]}</strong> &#8211; potion effects to be applied to the entity. <strong>[name]/[InSeconds]/[level]</strong> for example <strong>effect{speed/6666/2} </strong>multiple effects can be defined like this <strong>effect{speed/6666/2,fire_resistance/6669/1}</strong></p><p><strong>scale{number}</strong> &#8211; defines entities scale. Additionally range of scales can be provided to randomize between those values, for example <strong>sheep;scale{0.5-2.5} </strong>which will spawn sheep with randomized size</p><p><strong>s{[amount]}</strong> &#8211; entities speed, this is an alternative option for effect command if you want to increase entities speed in a simpler way.</p><p><strong>hp{[amount]}</strong> &#8211; entities hp between 1 and 2048, if not defined, then the default entities hp will be used.</p><p><strong>pickup</strong> &#8211; defines entities as able to pick up items from the ground.</p><p><strong>nopickup</strong> &#8211; defines entities as unable to pick up items from the ground.</p><p><strong>immortal</strong> &#8211; makes entity immortal.</p><p><strong>invisible</strong> &#8211; makes entity invisible.</p><p><strong>nograv</strong> &#8211; disables gravity for entity. This will make entities floating, but at the same time, unable to move. Has no effect on entities that can fly.</p><p><strong>baby</strong> &#8211; spawns in the baby version of the entity, if possible. This will soft lock the entity in a baby stage which then technically will never grow up.</p><p><strong>adult</strong> &#8211; spawns in the adult version of the entity, if possible. Keep in mind that not defining <b>adult </b>or <strong>baby</strong> might result in a random outcome</p><p><strong>dumb </strong>&#8211; spawns the entity without AI. This will disable the entity&#8217;s movement or interactions with other entities or players.</p><p><strong>expire{[time]}</strong> &#8211; defines the time (in seconds) before the entity gets automatically removed. This is limited to 20 minutes max (1200 seconds). Entities spawned with this command will be removed on server restart even if the timer has not run out yet.</p><p><strong>notpersistent</strong> &#8211; spawned entities will be removed on server restart or chunk unload</p><p><strong>t{[playerName]}</strong> &#8211; sets entities target to the defined online player. This will make entities attack the defined player at the moment they spawn in.</p><p><b>upwards </b>&#8211; spawns in an upside-down entity. This option isn&#8217;t compatible with a custom entity name.</p><p><span style="font-weight: bold;">onfire </span>&#8211; for 1.17+ servers . Spawns entity with fire effect.{{</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-acabd5d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="acabd5d" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-00072a2" data-id="00072a2" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1501457 elementor-widget elementor-widget-heading" data-id="1501457" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Armor items</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-fb0fa7d elementor-widget elementor-widget-text-editor" data-id="fb0fa7d" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><strong>helmet{[material]}</strong> &#8211; item in helmet slot. This can be either any material or a player&#8217;s head defined as <strong>head:[name].</strong> For example, <strong>helmet{head:Zrips}</strong></p><p><strong>chest{[material]}</strong> &#8211; item in the chest plate slot.</p><p><strong>legs{[material]}</strong> &#8211; item in the legs slot.</p><p><strong>boots{[material]}</strong> &#8211; item in the boots slot.</p><p><strong>mhand{[material]}</strong> &#8211; item in the main hand.</p><p><strong>ohand{[material]}</strong> &#8211; item in the off-hand.{</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-5415842 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5415842" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b36acb9" data-id="b36acb9" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-afcbb49 elementor-widget elementor-widget-heading" data-id="afcbb49" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Class dependent entity data</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1b61140 elementor-widget elementor-widget-text-editor" data-id="1b61140" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><strong style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">tamed</strong><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif; font-weight: var( --e-global-typography-text-font-weight );"> &#8211; spawn in the entity which is tamed if the entity is tamable.</span></p><p><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif; font-weight: var( --e-global-typography-text-font-weight );"><strong>saddle</strong> &#8211; adds a saddle to the entity if they can have one (like horses, pigs, llama and so on).</span></p><p><strong>chest</strong> &#8211; adds a chest to the entity if they can have one. This is for mule-, and donkey-type entities.</p><p><strong>angry</strong> &#8211; spawns in an aggravated entity. Mainly for wolves and bees.</p><p><b>bounce </b>&#8211; defines if a projectile should bounce off when it hits something.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-9ba4a62 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9ba4a62" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b176ca8" data-id="b176ca8" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-66382e9 elementor-widget elementor-widget-heading" data-id="66382e9" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Entity type dependent data</h2>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-750fd81 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="750fd81" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9e85ad2" data-id="9e85ad2" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5069b13 elementor-widget elementor-widget-text-editor" data-id="5069b13" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;"><b>Goat</b></p><p><strong>screaming</strong> &#8211; sets the goat to the screaming state.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-a991595 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a991595" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d68a9a1" data-id="d68a9a1" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-855a5df elementor-widget elementor-widget-text-editor" data-id="855a5df" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;"><b>Primed TNT</b></p><p><span style="font-weight: bold;">incendiary </span>&#8211; sets the primedtnt to the incendiary type.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-70a62e6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="70a62e6" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f9d14e3" data-id="f9d14e3" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-761db9f elementor-widget elementor-widget-text-editor" data-id="761db9f" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;"><b>Creeper</b></p><p><strong>charge</strong><span> &#8211; sets the creeper&#8217;s charged state.</span></p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-1a3d9e8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1a3d9e8" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-595bf18" data-id="595bf18" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d52c1f2 elementor-widget elementor-widget-text-editor" data-id="d52c1f2" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;"><b>Armor stand</b></p><p><strong>noplate</strong> &#8211; removes the plate from the armor stand.<br /><strong>arms</strong> &#8211; enables the arms for the armor stand.<br /><strong>noarms</strong> &#8211; disables the arms for the armor stand.<br /><strong>small</strong> &#8211; sets the armor stand to the small size.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-110f80c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="110f80c" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b38c8ab" data-id="b38c8ab" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-df1a56f elementor-widget elementor-widget-text-editor" data-id="df1a56f" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;"><b>Mushroom cow</b></p><p><strong>brown</strong><span> &#8211; sets the mushroom cow to the brown state.</span></p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-c6211a4 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c6211a4" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5e933cd" data-id="5e933cd" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-6bb60d2 elementor-widget elementor-widget-text-editor" data-id="6bb60d2" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;"><strong>Villagers</strong></p><p><strong>Professions</strong>: armorer,  butcher, cartographer, cleric, farmer, fisherman, fletcher, leatherworker, librarian, mason, nitwit, shepherd, toolsmith, weaponsmith.<br /><strong>Type</strong>: desert, jungle, plains, savanna, snow, swamp, taiga<br />Example: <strong>villager;butcher;jungle;3 </strong>which will spawn butcher villager with jungle type and level 3.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-67d5dfb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="67d5dfb" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-aa758c2" data-id="aa758c2" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2cc4e3c elementor-widget elementor-widget-text-editor" data-id="2cc4e3c" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;"><strong>Experience orbs</strong></p><p>Providing integer number will set how much exp the player gets by picking it up. For example, <b>experience_orb;50</b></p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-227ca6e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="227ca6e" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5059f52" data-id="5059f52" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7c3f2bf elementor-widget elementor-widget-text-editor" data-id="7c3f2bf" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;"><b>TNTPrimed</b></p><p>Providing an integer number will set the timer when the TNT explodes. The time is in seconds and can be fractional. For example, <b>primed_tnt;5 </b>which will spawn tnt, which will explode after 5 seconds.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7ed637a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7ed637a" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-00b1b73" data-id="00b1b73" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-eceb012 elementor-widget elementor-widget-text-editor" data-id="eceb012" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;"><strong>Ocelot</strong></p><p><strong>Types</strong>: red, siamese, wild, or black.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-1709098 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1709098" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f86b15a" data-id="f86b15a" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1f90c9e elementor-widget elementor-widget-text-editor" data-id="1f90c9e" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;"><strong>Sheep</strong></p><p><strong>Types</strong>: which can be: black, blue, brown, cyan, gray, green, light_blue, light_gray, lime, magenta, orange, pink, purple, red, white, yellow, or rainbow.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-c44ce1a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c44ce1a" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-dee567d" data-id="dee567d" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-b7349d5 elementor-widget elementor-widget-text-editor" data-id="b7349d5" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;"><strong>Horse</strong></p><p><strong>Types</strong>: white, black, chestnut, creamy, darkbrown, or gray.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b4ef55c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b4ef55c" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e504816" data-id="e504816" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-8a19ebb elementor-widget elementor-widget-text-editor" data-id="8a19ebb" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;"><strong>Slime</strong></p><p>Providing a number will define the slime&#8217;s size. The default is: 3. For example, <strong>slime;5</strong></p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8ac97ce elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8ac97ce" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-705f3f1" data-id="705f3f1" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-528a655 elementor-widget elementor-widget-text-editor" data-id="528a655" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;"><strong>Magma cube</strong></p><p>Providing a number will define the magma cube&#8217;s size. The default is: 3. For example, <strong>magma_cube;5</strong></p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b7d80c8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b7d80c8" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1080032" data-id="1080032" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-8771ee4 elementor-widget elementor-widget-text-editor" data-id="8771ee4" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;"><strong>Llama</strong></p><p><strong>Types</strong>: brown, creamy, gray, or white.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-df72f70 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="df72f70" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2b50545" data-id="2b50545" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-60e4152 elementor-widget elementor-widget-text-editor" data-id="60e4152" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;"><strong>Parrot</strong></p><p><strong>Types</strong>: blue, cyan, gray, green, or red.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-9b2d352 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9b2d352" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3fda61c" data-id="3fda61c" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f3d3d4a elementor-widget elementor-widget-text-editor" data-id="f3d3d4a" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;"><strong>Snowgolem</strong></p><p><strong>Types</strong>: derp</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-748ca08 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="748ca08" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ffa7bf7" data-id="ffa7bf7" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-b779d67 elementor-widget elementor-widget-text-editor" data-id="b779d67" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;"><strong>Panda</strong></p><p><strong>Types</strong>: aggressive, brown, lazy, normal, playful, weak, or worried.</p><p>This entity can take two variables at the same time. For example, <strong>panda;lazy,worried </strong>which defines the main gene and hidden one, respectively.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-374ddd2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="374ddd2" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2aa9f24" data-id="2aa9f24" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-8cf1752 elementor-widget elementor-widget-text-editor" data-id="8cf1752" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;"><strong>Cat</strong></p><p><strong>Types</strong>: all_black, black, british_shorthair, calico, jellie, persian, ragdoll, red, siamese, tabby, or white.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3e0acfd elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3e0acfd" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-81598b9" data-id="81598b9" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e7a836b elementor-widget elementor-widget-text-editor" data-id="e7a836b" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;"><strong>Fox</strong></p><p><strong>Types</strong>: snow.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7f51553 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7f51553" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7490ba1" data-id="7490ba1" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d59a4bb elementor-widget elementor-widget-text-editor" data-id="d59a4bb" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;"><strong>Axolotl</strong></p><p><strong>Types</strong>: blue, cyan, gold, lucy, or wild.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-bca4c49 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="bca4c49" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-24b0b3a" data-id="24b0b3a" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-18bcf6b elementor-widget elementor-widget-text-editor" data-id="18bcf6b" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;"><strong>Wolf</strong></p><p><strong>Types</strong>: ashen, black, chestnut, pale, rusty, snowy, spotted, striped, woods</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-9dca015 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9dca015" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9bbcc69" data-id="9bbcc69" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f61421e elementor-widget elementor-widget-text-editor" data-id="f61421e" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;"><strong>Salmon</strong></p><p><strong>Types</strong>: small, medium, large</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-c510b4a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c510b4a" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9810fdc" data-id="9810fdc" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f41390a elementor-widget elementor-widget-text-editor" data-id="f41390a" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;"><strong>Boat</strong></p><p>As of 1.21.2+ servers boat types have their own dedicated type names</p><p><strong>Types</strong>: acacia, bamboo, birch, cherry, dark_oak, jungle, mangrove, oak, or spruce.</p><p>Bamboo has no boat type, it will spawn as a raft.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-9e99198 elementor-widget elementor-widget-text-editor" data-id="9e99198" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;"><strong>Happy Ghast</strong></p><p><strong>Types</strong>: white, orange, magenta, lightblue, yellow, lime, pink, gray, lightgray, cyan, purple, blue, brown, green, red, black</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-6f430bb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6f430bb" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-07329ff" data-id="07329ff" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-c756b15 elementor-widget elementor-widget-text-editor" data-id="c756b15" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: center;"><strong>Area Effect Cloud</strong></p><p><strong>color</strong>: any color, either color name or hex color code like <strong>#662266</strong> keep in mind that this could be overridden/ignored by having custom particles<strong><br />potion: </strong>name of potion to be used as effect of this cloud<br /><strong>particle</strong>: effect to be used<br /><strong>radius</strong>: initial effect radius in blocks. Max 32<br /><strong>radiustick</strong>: radius change every tick. Can be negative value, when effects radius reaches 0 it will be removed automatically. <br /><strong>duration</strong>: how long to keep this effect active. By default it will be show indefinitely.<br /><strong>Examples</strong>:<br /><strong>/spawnmob area_effect_cloud;radius{32};potion{healing};radiustick{-0.1};particle{dust:green} </strong>this will show effect with initial radius of 32 which will have healing effect and will shrink by 0.1 blocks every tick, so 2 blocks per second until it reaches 0 and disappears. Effect will be shown and green dust</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-d7829f8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d7829f8" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9a38197" data-id="9a38197" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d188bcb elementor-widget elementor-widget-heading" data-id="d188bcb" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Commands:</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-62e150d elementor-widget elementor-widget-text-editor" data-id="62e150d" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><code><strong>/cmi spawnmob [type] ([amount]) ([location]) (sp:[range]) (ps:[data]) (ps2:[data])</strong></code></p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-72e4e00 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="72e4e00" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8f2be0b" data-id="8f2be0b" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ab51e44 elementor-widget elementor-widget-heading" data-id="ab51e44" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Permissions:</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-fe6e62b elementor-widget elementor-widget-text-editor" data-id="fe6e62b" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><strong>cmi.command.spawnmob</strong> &#8211; Spawns entity at your location</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4f40d59 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4f40d59" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f8b9f38" data-id="f8b9f38" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2eaa291 elementor-widget elementor-widget-heading" data-id="2eaa291" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Placeholders:</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-a9a0c49 elementor-widget elementor-widget-text-editor" data-id="a9a0c49" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>This feature has no placeholders.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		

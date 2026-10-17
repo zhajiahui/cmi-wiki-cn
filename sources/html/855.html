@@ -1,0 +1,146 @@
+		<div data-elementor-type="wp-post" data-elementor-id="855" class="elementor elementor-855">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-b121ee3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b121ee3" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-18a99e9" data-id="18a99e9" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3d6aee1 elementor-widget elementor-widget-text-editor" data-id="3d6aee1" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>You can find the source code for CMI-API, and download it as a .jar file from <a href="https://github.com/Zrips/CMI-API">github.com/Zrips/CMI-API</a></p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8ec29b4 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8ec29b4" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7bfa2c7" data-id="7bfa2c7" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7d30141 elementor-widget elementor-widget-text-editor" data-id="7d30141" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Add to pom.yml</p><pre>&lt;dependency&gt;<br />  &lt;groupId&gt;com.github.Zrips&lt;/groupId&gt;<br />  &lt;artifactId&gt;CMI-API&lt;/artifactId&gt;<br />  &lt;version&gt;9.8.6.4&lt;/version&gt;<br />  &lt;scope&gt;provided&lt;/scope&gt;<br />&lt;/dependency&gt;</pre><pre>&lt;repository&gt;<br />  &lt;id&gt;jitpack.io&lt;/id&gt;<br />  &lt;url&gt;https://jitpack.io&lt;/url&gt;<br />&lt;/repository&gt;</pre>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-e39a13d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e39a13d" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8158afc" data-id="8158afc" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e784790 elementor-widget elementor-widget-heading" data-id="e784790" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Player/User Object </h2>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3d9f9aa elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3d9f9aa" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ffb2265" data-id="ffb2265" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-85963e8 elementor-widget elementor-widget-text-editor" data-id="85963e8" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Most things related to the player can be accessed through users object</p><pre>CMIUser user = CMIUser.getUser(player);</pre><p>This can return NULL in some rare situations, so perform NPE check.</p><p>You can get the offline player object from this one by using</p><pre>Player player = user.getPlayer();</pre><p>This can be used to access some of the player&#8217;s data information even if he is offline. Keep in mind that this actually loads players&#8217; information and is<strong> highly not recommended</strong> to be used to load hundreds or even thousands of players with this method as this will undoubtedly cause some strain on the server. You can tho update some of the player data but you will need to save it by (<strong>ONLY if the player is offline</strong>) using</p><pre> player.saveData();</pre><p>or by using</p><pre>CMI.getInstance().save(player);</pre><p>This is more safe approach as the player object will be checked for appropriate save.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-1b38c45 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1b38c45" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2915c09" data-id="2915c09" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-cc0413f elementor-widget elementor-widget-heading" data-id="cc0413f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Managers</h2>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3f38b2c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3f38b2c" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5303a3f" data-id="5303a3f" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-fb34572 elementor-widget elementor-widget-text-editor" data-id="fb34572" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Quite a few things can be accessed through appropriate managers. They all can be accessed through the basic method</p><pre>CMI.getInstance().get[managerName]();</pre><p>For example, to access the portal manager use</p><pre>CMI.getInstance().getPortalManager();
+</pre>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-a6f77dc elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a6f77dc" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-68d4542" data-id="68d4542" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-27a18bd elementor-widget elementor-widget-heading" data-id="27a18bd" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Worth</h2>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7aaec99 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7aaec99" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-554014a" data-id="554014a" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2960240 elementor-widget elementor-widget-accordion" data-id="2960240" data-element_type="widget" data-e-type="widget" data-widget_type="accordion.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-accordion">
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-4331" class="elementor-tab-title" data-tab="1" role="button" aria-controls="elementor-tab-content-4331" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-left" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><i class="fas fa-plus"></i></span>
+								<span class="elementor-accordion-icon-opened"><i class="fas fa-minus"></i></span>
+														</span>
+												<a class="elementor-accordion-title" tabindex="0">Get Items worth</a>
+					</div>
+					<div id="elementor-tab-content-4331" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-4331"><pre>// Item stack used to get worth<br />ItemStack item;<br />WorthItem worth = CMI.getInstance().getWorthManager().getWorth(item);<br />if (worth == null){<br />  // Worthless item so we can return null or 0D, whatever is needed in your case<br />  return null;<br />}<br />// Buy price used in exploit detection<br />Double buyPrice  = worth.getBuyPrice();<br />// Sell price defines actual worth of the file<br />Double sellPrice = worth.getSellPrice();</pre></div>
+				</div>
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-4332" class="elementor-tab-title" data-tab="2" role="button" aria-controls="elementor-tab-content-4332" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-left" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><i class="fas fa-plus"></i></span>
+								<span class="elementor-accordion-icon-opened"><i class="fas fa-minus"></i></span>
+														</span>
+												<a class="elementor-accordion-title" tabindex="0">Set items worth</a>
+					</div>
+					<div id="elementor-tab-content-4332" class="elementor-tab-content elementor-clearfix" data-tab="2" role="region" aria-labelledby="elementor-tab-title-4332"><pre>// Item of which worth value we are getting<br />ItemStack item;<br /><br />// Worth object<br />WorthItem worth = CMI.getInstance().getWorthManager().getWorth(item);<br />if (worth == null){<br />  // If its null then lets create new one<br />  worth = new WorthItem(item);<br />  // Adding worth to cache<br />  CMI.getInstance().getWorthManager().addWorth(worth);<br />}<br /><br />// Changing prices<br />worth.setBuyPrice(2D);<br />worth.setSellPrice(1D);<br /><br />// Lets update values in save file <br />CMI.getInstance().getWorthManager().updatePriceInFile(worth);</pre></div>
+				</div>
+								</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-512371b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="512371b" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-302015f" data-id="302015f" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5043046 elementor-widget elementor-widget-heading" data-id="5043046" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Custom Events</h2>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-0a8ca82 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0a8ca82" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6bc8f40" data-id="6bc8f40" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-66fb2c0 elementor-widget elementor-widget-text-editor" data-id="66fb2c0" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span><b>CMIAfkEnterEvent </b>&#8211; Fired when player enters AFK mode.</span></p><p><span><b>CMIAfkKickEvent</b> &#8211; Fired when player should be kicked from server after being AFK.</span></p><p><span><b>CMIAfkLeaveEvent </b>&#8211; Fired when players leaves AFK mode.</span></p><p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMIAnvilItemRenameEvent </b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );">&#8211; Fired on item rename in anvil.</span></span></p><p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMIAnvilItemRepairEvent </b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );">&#8211; Fired on item repair action with anvil.</span></span></p><p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMIArmorChangeEvent </b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );">&#8211; Fired when player changes items in armor slots.</span></span></p><p><b>CMIAsyncPlayerTeleportEvent </b>&#8211; Fired when player is being teleported in Async mode. Can be canceled.</p><p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMIBackpackOpenEvent &#8211; </b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );">Fired on backpack open</span></span></p><p><b>CMIChequeCreationEvent </b>&#8211; Fired before cheque is created</p><p><b>CMIChequeUsageEvent </b>&#8211; Fired on cheque usage</p><p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMIChunkChangeEvent &#8211;</b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );"> Fired when player changes chunk.</span></span></p><p><strong>CMIConfigReloadEvent</strong> &#8211; Fired on config reload</p><p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMIEventCommandEvent </b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );">&#8211; Fired on event command</span></span></p><p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMIIpBanEvent </b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );">&#8211; Fired when IP gets ban.</span></span></p><p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMIIpUnBanEvent </b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );">&#8211; Fired when IP gets unban.</span></span></p><p><strong>CMIHologramClickEvent</strong> &#8211; Fired on interaction with interactable hologram.</p><p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMIPlayerBanEvent </b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );">&#8211; Fired when player gets ban.</span></span></p><p><strong style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMIPlayerFakeEntityInteractEvent</strong><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );"> &#8211; Fired when player interacts with fake entity, in most cases this will be hologram button interaction.</span></span></p><p><strong style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMIPlayerItemsSellEvent</strong><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif; font-weight: var( --e-global-typography-text-font-weight );"> &#8211; Fired on sell item action with command directly or when closing sell GUI</span></p><p><b>CMIPlayerItemsSellEvent </b>&#8211; Fired on player item selling with worth command</p><p><span style="font-weight: bold; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif; font-size: inherit;">CMIPlayerJailEvent </span><span style="color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif; font-size: inherit;">&#8211; Fired on player jail</span></p><p><strong>CMIPlayerKickEvent</strong> &#8211; Fired on player kick</p><p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMIPlayerNickNameChangeEvent </b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );">&#8211; Fired on player nickname change</span></span></p><p><strong>CMIPlayerOpenArmorStandEditorEvent</strong> &#8211; Fired on player opening armor stand editor</p><p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMIPlayerSitEvent</b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );"> &#8211; Fired on player sit action</span></span></p><p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMIPlayerTeleportRequestEvent &#8211; </b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );">Fired after player teleportation.</span></span></p><p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMIPlayerUnBanEvent </b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );">&#8211; Fired when player gets unban.</span></span></p><p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMIPlayerUnjailEvent </b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif; font-weight: var( --e-global-typography-text-font-weight );">&#8211;</span><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif; font-weight: var( --e-global-typography-text-font-weight );"> </span><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );">Fired on player unjail</span></span></p><p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMIPlayerUnVanishEvent </b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );">&#8211; Fired when player exits vanish event.</span></span></p><p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMIPlayerVanishEvent </b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );">&#8211; Fired when player enters vanish event.</span></span></p><p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMIPlayerWarnEvent &#8211; </b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );">Fired when player gets a warning</span></span></p><p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMIPlayerWarpEvent &#8211;</b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );"> Fired before warping player to target location</span></span></p><p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMIPortalCreateEvent </b><span style="font-size: inherit; color: var( --e-global-color-text );"><span style="font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );">&#8211; Fired on nether portal creation event.</span></span></span></p><p><b style="font-size: inherit; color: inherit; font-family: Roboto, Helvetica, Arial, sans-serif;">CMIPortalUseEvent </b><span style="font-size: inherit; color: inherit;"><span style="font-family: Roboto, Helvetica, Arial, sans-serif;"><span style="font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );">&#8211; Fired on CMI portal use event.</span></span></span></span></p><p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMIPvEStartEventAsync &#8211; </b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );">Fired on pve start</span></span></p><p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMIPvEEndEventAsync &#8211; </b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );">Fired on pve end</span></span></p><p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMIPvPStartEventAsync </b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );">&#8211; Fired on pvpstart event.</span></span></p><p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMIPvPEndEventAsync</b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif; font-weight: var( --e-global-typography-text-font-weight );">&#8211; Fired on pvpend event.</span></p><p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMISelectionEvent &#8211; </b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );">Fired on selection</span></span></p><p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMISelectionVisualizationEvent </b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );">&#8211; Fired before selection visualization starts showing. Can be canceled.</span></span></p><p><strong>CMIStaffMessageEvent</strong> &#8211; Fired on staff message being sent</p><p><b style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">CMIUserBalanceChangeEvent </b><span style="font-size: inherit; color: var( --e-global-color-text ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span style="font-weight: var( --e-global-typography-text-font-weight );">&#8211; Fired on user balance change, if CMI Economy is used. Change types include: setBalance, Withdraw, Deposit.</span></span></p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		

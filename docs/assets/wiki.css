@@ -1,0 +1,23 @@
+/* Compact document tree and a neutral reading surface. */
+:root { --md-text-font: "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif; --md-code-font: Consolas, "Cascadia Code", monospace; }
+[data-md-color-scheme="default"] { --md-default-bg-color:#fff; --md-primary-fg-color:#fff; --md-primary-bg-color:#182230; --md-typeset-a-color:#2563eb; }
+.md-header { box-shadow:none; border-bottom:1px solid rgba(128,128,128,.16); }
+.md-header__title { font-size:.85rem; font-weight:600; }
+.md-grid { max-width:1500px; }
+.md-sidebar--primary { width:13rem; }
+.md-nav { font-size:.69rem; line-height:1.55; }
+.md-nav__link { margin-top:.42em; padding:.18em .35em; border-radius:4px; }
+.md-nav__link--active { background:rgba(37,99,235,.07); color:var(--md-typeset-a-color); }
+.md-nav__item .md-nav__list { padding-left:.55rem; }
+.md-typeset { font-size:.8rem; line-height:1.9; }
+.md-typeset h1 { font-size:1.8rem; color:var(--md-default-fg-color); font-weight:650; margin-bottom:1rem; }
+.md-typeset h2 { font-size:1.3rem; font-weight:600; padding-top:.5rem; }
+.md-typeset h3 { font-size:1rem; font-weight:600; }
+.md-typeset pre { line-height:1.55; }
+.md-typeset code { border-radius:3px; }
+.md-typeset img { max-width:100%; height:auto; border-radius:5px; }
+.md-typeset table:not([class]) { font-size:.72rem; }
+.md-typeset table:not([class]) td { vertical-align:top; }
+.md-footer-meta { background:var(--md-default-bg-color); color:var(--md-default-fg-color--light); }
+.md-copyright { color:inherit; }
+@media(min-width:1220px){ .md-main__inner { margin-top:1.5rem; } .md-content { max-width:900px; } }

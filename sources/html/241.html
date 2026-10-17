@@ -1,0 +1,104 @@
+		<div data-elementor-type="wp-post" data-elementor-id="241" class="elementor elementor-241">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-502503d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="502503d" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6fd54e4" data-id="6fd54e4" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-69e0a49 elementor-widget elementor-widget-text-editor" data-id="69e0a49" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="font-size: 14px"><strong>cmi setspawn (playerName) (true/false) (-g:[groupName]) (-rng:[range]) (-w:world,world_nether)</strong><br />Permission needed to use it: <span style="font-weight: bold">cmi.command.setspawn</span></p>
+<p style="font-size: 14px">Defines players spawn point for <span style="font-weight: bold">/cmi spawn</span> command or location where player resurrects.<br />To set the spawn, you need <span style="font-weight: bold">cmi.command.setspawn</span> permission.</p>
+<div><code style="font-size: 12.6px">cmi setspawn</code></div>
+<p style="font-size: 14px"><span style="font-weight: bold">(true/false)</span> &#8211; Defines players spawn point after death, if set to true, for <span style="font-weight: bold">/cmi spawn</span> command. This command also includes the previous example.</p>
+<div><code style="font-size: 12.6px">cmi setspawn true</code></div>
+<p style="font-size: 14px"><span style="font-weight: bold">(-g:[groupName]) </span>&#8211; Defines players spawn point after death, if set to true, for <span style="font-weight: bold">/cmi spawn</span> command for a specific group. In this case it’s necessary to associate these to permissions to the relative group.<br />&#8211; <span style="font-weight: bold">cmi.spawngroup.[groupName]</span><br />&#8211; <span style="font-weight: bold">cmi.respawngroup.[groupName]</span> (Indicate in which spawn to go after death. If it’s missing, the reference spawn is the main one).</p>
+<div><code style="font-size: 12.6px">cmi setspawn true -g:Moderator</code></div>
+<p style="font-size: 14px"><span style="font-weight: bold">(-rng:[range]) </span>&#8211; Defines players spawn point to be randomized depending by provided range. This allows to spread players in area and avoid placing them in each other. This command also includes the previous example.</p>
+<div><code style="font-size: 12.6px">cmi setspawn true -g:Moderator -rng:5</code></div>
+<p style="font-size: 14px"><span style="font-weight: bold">(-w:world,world_nether) </span>&#8211; Defines players spawn point depending where player is located. In this example, this spawn point will only be used when player is in <span style="font-weight: bold">world </span>or <span style="font-weight: bold">world_nether</span> worlds. This can be combined with groups.</p>
+<div><code style="font-size: 12.6px">cmi setspawn true -rng:5 -w:world,world_nether</code></div>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-829 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="829" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-27ae" data-id="27ae" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2dec0cd elementor-widget elementor-widget-heading" data-id="2dec0cd" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Extra and Respawning</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-194f elementor-widget elementor-widget-text-editor" data-id="194f" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p></p>
+<p></p>
+<div></div>
+<div></div>
+<ul>
+<li>Auto-respawn; No need to click the respawn button on death-screen.<br />This permission allows you to return to the spawn immediately:<span> </span><b>cmi.autorespawn</b>.</li>
+<li>To send another player to the spawn, you need<span> </span><b>cmi.command.spawn.others</b><span> </span>permission.</li>
+<li>You can activate BlackListedItems (Option to prevent player teleportation when they have blacklisted items in their inventory. Can be bypassed with<span> </span><b>cmi.teleport.bypassblacklist</b>) for the spawn in config file.</li>
+<li>You can define the respawn order if defined world is not present in Specific list.</li>
+<li>Possible respawn locations: </li>
+</ul>
+<p><code>   PriorityOrder:</code><br /><code>   - anchor</code><br /><code>   - spawn</code><br /><code>   - bedLocation</code><br /><code>   - homeLocation</code><br /><code>   - worldSpawn</code></p>
+<p># <strong>Spawn</strong> is preset spawnlocation with /cmi setspawn command, that location should have RespawnLocation set to true <br /># <strong>bedLocation</strong> is a location set by interacting with bed, BedInteraction should be set to false and players requires cmi.bedhome to set bed location <br /># <strong>homeLocation</strong> is the location set by the player which is with the default (Home) name, if that one doesn&#8217;t exist then first in the list will be used if possible <br /># <strong>worldSpawn</strong> is a location preset to this world, this is not CMI location but the default world spawn location <br /># <strong>anchor</strong> is a location defined by interacting with respawn anchor. This, in general, will only apply when you die in nether world, otherwise, bed location is used <br /># <strong>warp! [warpName]</strong> can be any valid warp you set for players to be teleported, they will bypass any requirements for that warp</p>
+<p>You can define players&#8217; first spawn point with <strong>/cmi setfirstspawn (playerName)</strong> command. This is for when they log into the server for the first time.</p>
+<p><em>Don&#8217;t forget to set the <a href="https://minecraft.fandom.com/wiki/Commands/spawnpoint">vanilla</a> spawnpoint, and if you use a world manager like Multiverse-Core, you should probably also do /mvsetspawn</em></p>
+<p></p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-591c4d6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="591c4d6" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-145b46f" data-id="145b46f" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d616c73 elementor-widget elementor-widget-heading" data-id="d616c73" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Commands, Permissions &amp; Placeholders</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-03205ca elementor-widget elementor-widget-text-editor" data-id="03205ca" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>
+Commands:
+<pre>
+&gt; cmi checkcommand spawn
+ --------------------------------------------------
+/cmi setfirstspawn (playerName)
+/cmi spawn (playerName) (-s)
+/cmi setspawn (playerName) (true/false) (-g:[groupName]) (-rng:[range]) (-w:world,world_nether) (loc:[world;x;y;z;yaw;pitch])
+&gt;
+</pre>
+
+Permissions:
+<pre>
+&gt; cmi checkperm spawn
+ --------------------------------------------------
+cmi.respawngroup.[respawngroup] - Defines player individual respawn point
+cmi.spawngroup.[spawngroup] - Defines player individual spawn point
+cmi.command.setwarp - Sets warp location
+cmi.command.spawn.others - Teleports back to spawn location
+cmi.command.spawn - Teleports back to spawn location
+cmi.autorespawn - Allows to respawn automatically
+cmi.spawnonjoin.bypass - Allows to bypass spawnOnJoin option
+cmi.command.setspawn - Sets spawn command teleport point
+cmi.command.setfirstspawn - Sets first spawn point
+&gt;
+</pre>
+
+Placeholders:
+<pre>
+There are no placeholders for this feature.
+</pre>
+
+</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		

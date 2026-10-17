@@ -1,0 +1,119 @@
+site_name: CMI 中文 Wiki
+site_description: CMI 插件中文文档：指令、权限、占位符和功能说明。
+site_url: https://zhajiahui.github.io/cmi-wiki-cn/
+repo_url: https://github.com/zhajiahui/cmi-wiki-cn
+repo_name: zhajiahui/cmi-wiki-cn
+edit_uri: edit/main/docs/
+use_directory_urls: true
+exclude_docs: ''
+copyright: CMI 原文与资源归原作者所有。
+dev_addr: 127.0.0.1:8000
+watch:
+- docs
+theme:
+  name: material
+  language: zh
+  font: false
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  palette:
+  - scheme: default
+    primary: white
+    accent: blue
+    toggle:
+      icon: material/weather-night
+      name: 切换到深色模式
+  - scheme: slate
+    primary: black
+    accent: blue
+    toggle:
+      icon: material/weather-sunny
+      name: 切换到浅色模式
+  features:
+  - navigation.tracking
+  - navigation.top
+  - navigation.footer
+  - search.suggest
+  - search.highlight
+  - content.code.copy
+  - content.action.edit
+plugins:
+- search:
+    lang:
+    - zh
+    - en
+    jieba_dict_user: scripts/search-dictionary.txt
+    separator: '[\s\u200b\u3000\-、。，．？！；.]+'
+markdown_extensions:
+- admonition
+- attr_list
+- md_in_html
+- tables
+- toc:
+    permalink: true
+    toc_depth: 3
+- pymdownx.details
+- pymdownx.superfences
+- pymdownx.highlight:
+    anchor_linenums: true
+- pymdownx.betterem:
+    punctuation: false
+extra_css:
+- assets/wiki.css
+nav:
+- 前言: index.md
+- 开始使用:
+  - 首次运行: first-run.md
+- 指令:
+  - 指令列表: commands.md
+  - 自定义别名: commands/custom-alias.md
+  - 特殊指令: commands/specialized.md
+  - 物品附加指令: commands/attached-commands.md
+  - 交互指令: commands/interactive-commands.md
+  - 指令预热: commands/warmups.md
+  - 玩家元数据: commands/user-meta.md
+- 权限: permissions.md
+- 文本与占位符:
+  - 占位符: placeholders.md
+  - 十六进制颜色: hex-colors.md
+  - 自定义文本: custom-text.md
+- 传送与地点:
+  - 出生点: commands/spawn.md
+  - 传送点: commands/warps.md
+  - 随机传送: commands/rtp.md
+  - 传送门: portals.md
+  - 电梯: extra/elevator.md
+- 聊天与显示:
+  - 全息图: holograms.md
+  - Boss 栏消息: commands/bossbarmsg-handling.md
+  - 动态告示牌: dynamic-signs.md
+  - Tab 列表: extra/tablist.md
+  - 聊天过滤: extra/chat-filter.md
+  - 聊天室: extra/chat-rooms.md
+  - 对话框: commands/dialogs.md
+- 物品与实体:
+  - 礼包: kits.md
+  - 一行创建物品: commands/icwol.md
+  - 盔甲架编辑器: armor-stand-editor.md
+  - 生成生物: commands/spawnmob.md
+  - 清理实体: commands/kill-all.md
+  - 自定义生物头颅: extra/custom-mob-heads.md
+  - 自定义合成配方: extra/custom-recipes.md
+  - 物品分解: extra/scavenge.md
+  - 不死图腾: extra/totems.md
+  - 粒子效果: extra/particles.md
+- 玩家与服务器管理:
+  - 监狱: jail.md
+  - 自动晋级: rankup-system.md
+  - 在线时长奖励: playtime-rewards.md
+  - 飞行能量: extra/flight-charge.md
+  - 查找玩家物品: extra/search.md
+  - 扫描容器物品: extra/scan.md
+- 跨服:
+  - BungeeCord 跨服: bungeecord.md
+- 开发接口:
+  - 自定义事件 API: api.md
+  - 全息图 API: hologram-api.md
+- 常见问题: faq.md
+extra:
+  generator: false

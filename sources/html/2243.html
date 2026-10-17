@@ -1,0 +1,112 @@
+		<div data-elementor-type="wp-page" data-elementor-id="2243" class="elementor elementor-2243">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-3be5f31a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3be5f31a" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1422458d" data-id="1422458d" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-24747032 elementor-widget elementor-widget-text-editor" data-id="24747032" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<h1>BUNGEECORD &amp; VELOCITY</h1>
+<p>CMI has support for Bungeecord and Velocity. This page will explain what is and isn&#8217;t supported. Over time, we will hopefully improve the support for Bungeecord and Velocity (no promise).</p>
+<p>More information about Bungeecord (the proxy of your Minecraft server network) can be found here: https://www.spigotmc.org/wiki/bungeecord/ and more information about Velocity (also a proxy for your network) can be found here: https://docs.papermc.io/velocity</p>
+<p>Since the mechanics are the same for either, the existing commands, permissions, and placeholders listed below apply to both.&nbsp;&nbsp;</p>
+<h2>Commands and Permissions:</h2>
+<pre>/cmi bbroadcast (!) [message] (-s:[serverName,serverName])
+-&gt; cmi.command.bbroadcast - Sends special message to all players on all servers
+
+/cmi msg [playerName] [message]
+-&gt; cmi.command.msg.togglebypass - Allows to send private messages even if player has pm toggled off
+-&gt; cmi.command.msg - Sends message to player
+-&gt; cmi.command.msg.[maingroupname].send - Allows to send private messages to specific player groups
+-&gt; cmi.command.msg.clean - Allows to send clean messages to player using ! at beginning
+-&gt; cmi.command.msg.noreply - Allows to send clean messages to player by using !- at beginning without option to reply
+-&gt; cmi.command.msg.vanish - Allows to send private messages to vanished players
+
+/cmi reply [message]
+-&gt; cmi.command.reply - Reply to last message sender
+
+/cmi sendall [serverName]
+-&gt; cmi.command.sendall.bypass - Prevents player from being sent to target server
+-&gt; cmi.command.sendall - Send all online players to target server
+
+/cmi server [serverName] (playerName) (-f)
+-&gt; cmi.command.server.others - Connect to bungeecord server
+-&gt; cmi.command.server - Connect to bungeecord server
+
+/cmi serverlist
+-&gt; cmi.command.serverlist - Show server list
+-&gt; cmi.command.serverlist.others - Show server list
+
+/cmi staffmsg [message/toggle/on/off]
+-&gt; cmi.command.staffmsg - Sends message to staff channel
+
+-&gt; cmi.bungee.publicmessages.[servername] - Allows to send public messages to target server
+</pre>
+<h2>Placeholders</h2>
+<pre>%cmi_user_bungeeserver%
+%cmi_bungee_total_[serverName]%
+%cmi_bungee_current_[serverName]%
+%cmi_bungee_motd_[serverName]%
+%cmi_bungee_onlinestatus_[serverName]%
+</pre>
+<h2>Configuration in CMI&#8217;s Settings/Chat.yml:</h2>
+<pre>BungeeCord:
+  # You can disable bungeecord support entirely if you are exrperiencing issues with it
+  # When setting this to false some features like public messages over bungee cord, private messages over bungeecord, portals over bungecoord and other features will stop working
+  # Keep in mind that regular behavior of those features will remain intacted
+  Enabled: true
+  # When set to true player names from entire bungee network will be included into tab complete
+  NamesInTabComplete: true
+</pre>
+<p>and also:</p>
+<pre>  Bungee:
+    # Attention! This will require you to have CMI Bungee plugin which can be found at zrips.net
+    # Or direct download https://www.zrips.net/cmi/
+    # Do you want to enable private messaging over bungeecord
+    Messages: true
+    # Do you want to enable public messaging over bungeecord
+    # Player needs to have cmi.bungee.publicmessages.[servername] permission node to be able to send messages to target server
+    PublicMessages: true
+    # Do you want to enable staff messaging over bungeecord
+    StaffMessages: true
+</pre>
+<h2>Installation Instructions:</h2>
+<ul>
+<li><a href="https://www.spigotmc.org/resources/3742/">Buy a CMI license</a> to use on your network if you don&#8217;t already have one.</li>
+<li>Install CMI (and CMILib) on <em>each individual</em> server, <em><b>except</b></em> for the proxy.</li>
+<li>Configure CMI, enable the CMI Chat, and enable BungeeCord using the instructions from this article. (it&#8217;s the same for Velocity)</li>
+<li>Get the <a href="https://www.zrips.net/cmib/">CMI Bungee file</a>&nbsp;or the <a href="https://www.zrips.net/cmiv/">CMI Velocity file</a> and put it <b>on the proxy only.</b></li>
+<li><i>Done</i>, start up your network, and keep an eye on the console (or latest.log) to catch any potential issues.</li>
+</ul>
+<h2>Will the CMI&#8217;s BungeeCord / Velocity File Help Synchronize x y z?</h2>
+<p>At the moment, the answer is probably no. It won&#8217;t sync inventories, money, or things like warps and homes. Is there an interest by Zrips to add more support for this? Yes, from what I gathered, there is. I have no ETA on this.</p>
+<p>Currently, it&#8217;s mainly for syncing public and private chats and staff messages, and to better support /cmi server, /cmi serverlist, and jumping through portals, and custom messages changing between servers.</p>
+<h2>CMI Chat and BungeeCord / Velocity Chat</h2>
+<p>You have to enable CMI&#8217;s Chat Manager feature to use the BungeeCord chat features of CMI. You can do so by editing the CMI Settings/Chat.yml file:</p>
+<pre>Chat:
+  # Will try to modify chat to display it in a defined format
+  ModifyChatFormat: true
+</pre>
+<p>Then, walk through all the other options related to chat.</p>
+<p>Don&#8217;t forget to set up appropriate permissions, such as: <code>cmi.bungee.publicmessages.[servername]</code></p>
+<h2>FAQ:</h2>
+<p><strong>If I run 3 servers and they&#8217;re all on the same network, do I need three licenses?</strong><br>No, a single license covers the entire network.</p>
+<p><strong>Is the chat global?</strong><br>Yes, the chat will show on all servers across your network.</p>
+<p><strong>Can I synchronize money on all of my servers?</strong><br>This is not currently possible. However, using a third-party plugin called MySQL Player Data Bridge (we do not give support for this setup).</p>
+<p><strong>Can all of the warps synchronize across each of the servers?</strong><br>No, this is unfortunately not possible using CMI.</p>
+<p><strong>Can homes synchronize across each of the servers?</strong><br>No. Like warps, this is unfortunately not possible using CMI.</p>
+<p><strong>Can I use portals to teleport players to another server on the network?</strong><br>Yes, this can be achieved using the <a href="https://www.zrips.net/cmi/portals/">Portals feature</a> of CMI.</p>
+<p><strong>Can I use /server and /serverlist instead of /cmi server and /cmi serverlist?</strong><br>Navigate to the Alias.yml file of CMI, and enable these commands there.</p>
+<p><strong>If a command cannot be run on a server, can I still send it?</strong><br>No, this is not possible with CMI currently.</p>
+<p><strong>If a command doesn&#8217;t move a player to another server, can I still do it?</strong><br>Yes, you can use /cmi aliaseditor that uses /cmi server and/or placeholders.</p>
+<p><strong>Can I share inventories between servers?</strong><br>This is not currently possible. However, using a third-party plugin called MySQL Player Data Bridge (we do not give support for this setup).</p>
+<p><strong>Can I use a single database for all my CMI instances?</strong><br>No, the default is SQLite. You can optionally use MySQL, but make sure that the tablePrefix option is unique for each of your servers to avoid issues.</p>
+<p><strong>Why isn&#8217;t the CMI BungeeCord / Velocity file generating any folders?</strong><br>This is completely normal. CMI&#8217;s BungeeCord file does not currently generate any additional files or folders. You can verify that CMI is hooked with BungeeCord / Velocity and checking /cmi version on any of your backend servers. It should show that BungeeCord is hooked.</p>
+<p><strong>Is there Velocity support?</strong><br>Yes, support has been added, and requires the latest CMI, CMILib jars, and the free-to-download <a href="https://www.zrips.net/cmiv/">CMIV (velocity) jar</a> file.&nbsp;</p>
+<p><b>Can I show a custom switched server message, so it doesn&#8217;t show joined or left the server?</b><br>Yes, you can find&nbsp;<code>ServerSwitch:</code> in config.yml and set it to true. When enabled and you have bungee server with CMIB on it (or Velocity with the CMIV), we will try to detect where the player went, and we will show a switch server message instead of logout if possible.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		

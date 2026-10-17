@@ -1,0 +1,80 @@
+		<div data-elementor-type="wp-post" data-elementor-id="155" class="elementor elementor-155">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-8c4cb2a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8c4cb2a" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e0e3c90" data-id="e0e3c90" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-9c07b1e elementor-widget elementor-widget-text-editor" data-id="9c07b1e" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>The <b>/cmi kill</b><b>all</b> feature provides an option to clean up currently loaded entities by your provided criteria.</p><p>&#8211; By default entities which has custom name will <i>not</i> get removed.<br />&#8211; Entities in boats or minecarts will be ignored.<br /><span style="font-size: inherit">&#8211; The range can be provided to help remove entities in close range only.</span></p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-67e10e4 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="67e10e4" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ffae179" data-id="ffae179" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-632d167 elementor-widget elementor-widget-heading" data-id="632d167" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Command arguments explained</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-be8637f elementor-widget elementor-widget-text-editor" data-id="be8637f" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="font-weight: bold">-monsters</span> will remove all monster-type entities. This in general includes zombie, skeletons, wither, and so on.<br /><span style="font-weight: bold">-pets</span> will include any entity which can be tamed, like a horse or wolf<br /><span style="font-weight: bold">-npc</span> will include entities with metadata of NPC usually results of plugin like Citizens<br /><span style="font-weight: bold">-animals</span> removes animal-type entities, like pigs or cows<br /><span style="font-weight: bold">-ambient </span>entities like a bat<br /><span style="font-weight: bold">-named</span> any entity with a custom name (angry and friendly mobs) (you currently cannot provide a name)<br /><span style="font-weight: bold">[mobType] </span>any mob type can be defined to only remove that type of entity (or with <b>-m:[mobType]</b>)<br /><span style="font-weight: bold">-f</span> will combine monsters, pets, npc, golems, animals, ambient, and vehicles into one<br /><span style="font-weight: bold">-lightning</span> strikes lightning where the entity got removed<br /><b>[range]</b> a number in blocks, to help remove entities in close range. (or with <b>-r:[range]</b>)<br /><span style="font-weight: bold">-list</span> print-out entities in the appropriate categories.<br /><b>-w:[world]</b> to remove all entities from specified worldname<br /><b>-s</b> will silence the output of the command to the player.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b6da7a8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b6da7a8" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6f5cc62" data-id="6f5cc62" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-9040cc8 elementor-widget elementor-widget-heading" data-id="9040cc8" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Examples</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-114dcc5 elementor-widget elementor-widget-text-editor" data-id="114dcc5" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="font-weight: bold">/cmi killall</span> &#8211; will remove all (unnamed) monsters.<br /><span style="font-weight: bold">/cmi killall -list</span> will list entities.<br /><span style="font-weight: bold">/cmi killall 60</span> will remove monsters in 60 block range from you.<br /><b>/cmi killall -r:5</b> will remove monsters in a range of 5 blocks from you.<br /><span style="font-weight: bold">/cmi killall zombie</span> will remove all zombies.<br /><span style="font-weight: bold">/cmi killall zombie skeleton</span> will remove all zombies and skeletons.<br /><b>/cmi killall -m:sheep</b> will remove all (unnamed) sheep.<br /><span style="font-weight: bold">/cmi killall -monsters -lightning</span> will remove all monsters, and strikes them with lightning at their location.<br /><b>/cmi killall -named</b> will remove all mobs with a name (monster &amp; friendly). It won&#8217;t remove unnamed monsters.<br /><b>/cmi killall -monsters -named</b> will remove all monsters, and all named mobs (monsters and friendly).<br /><b>/cmi killall -w:world_nether</b> will remove all monsters from the world &#8216;world_nether&#8217;.<br />/<b>cmi killall -f -named</b> will forcefully remove all friendly mobs, monsters, and named ones.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-68b56e1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="68b56e1" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a1a2437" data-id="a1a2437" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f582c9a elementor-widget elementor-widget-heading" data-id="f582c9a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Commands, Permissions &amp; Placeholders</h2>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-16523db elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="16523db" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-df0e20f" data-id="df0e20f" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1358423 elementor-widget elementor-widget-text-editor" data-id="1358423" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Commands:</p><pre>&gt; cmi checkcommand killall
+ --------------------------------------------------
+ /cmi killall (-monsters/-pets/-npc/-animals/-ambient/-named/-f/-lightning/-list/-m:[mobType]) (-r:range) (-s) (-w:[worldName])
+&gt; 
+<br />To kill a player, use /cmi kill instead</pre><p>Permissions:</p><pre>&gt; cmi checkperm killall
+ --------------------------------------------------
+ cmi.command.killall - Kill mobs around you
+&gt;
+</pre><p>Placeholders:</p><pre>There are no placeholders for this feature
+</pre>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		

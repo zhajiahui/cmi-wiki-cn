@@ -1,0 +1,1100 @@
+---
+title: 权限节点
+---
+
+# 权限节点
+
+**可在游戏中使用 `/cmi checkperm (keyWord)` 命令查看权限节点。该命令显示的权限始终与插件实际使用的权限节点保持同步。**
+
+大多数情况下，将鼠标悬停在游戏聊天栏中的错误消息上，就能看到缺少的权限节点。需要拥有 `cmi.permisiononerror` 权限。
+
+所有命令都有权限节点。如果下方没有列出某个命令的权限（为避免列表杂乱，基础命令权限不在这里列出），可以按 `cmi.command.[commandName]` 的格式，对应 `/cmi [command]`。
+
+**权限的基本规则**是：拥有 `cmi.command.[commandName]` 即可使用对应命令，例如 `cmi.command.heal`。部分命令在对其他玩家使用时，还需要额外的权限 `cmi.command.[commandName].others`，例如 `cmi.command.heal.others`。
+
+`cmi.command` – 允许玩家使用命令的基本功能。可作为权限配置的起点。
+
+## 功能与附加权限
+
+### 通用功能
+
+- `cmi.security.admin` – 设置玩家的安全等级。
+- `cmi.buttonteleport` – 允许点击背包编辑界面中的位置图标，传送到目标位置。
+- `cmi.enderedit` – 允许编辑其他玩家的末影箱。
+- `cmi.bedhome` – 允许通过交互设置家的位置。
+- `cmi.actionbar.colors` – 允许在 `actionbarmsg` 命令中使用颜色。
+- `cmi.totem.frominventory` – 允许消耗背包中的不死图腾。
+- `cmi.elevator.use` – 允许使用告示牌电梯。
+- `cmi.elevator.create` – 允许创建电梯告示牌。
+- `cmi.bossbar.colors` – 允许在 `bossbarmsg` 命令中使用颜色。
+- `cmi.bossbar.hpbar` – 允许在对实体造成伤害时看到显示生命值的 Boss 血条。每分钟重新检查一次。
+- `cmi.dynmap.hidden` – 在 Dynmap 地图上隐藏玩家。
+- `cmi.prewards.notification` – 允许查看游戏时间奖励通知。
+- `cmi.prewards.[preward]` – 允许领取指定的游戏时间奖励。
+- `cmi.anvil.colors` – 允许在重命名物品时使用颜色。
+- `cmi.anvil.bypassitalic` – 允许在重命名物品时取消斜体。
+- `cmi.title.colors` – 允许在 `titlemsg` 命令中使用颜色。
+- `cmi.tag.color` – 为被提及的玩家名称着色。
+- `cmi.colors.[type].*` – 允许在指定场景中使用所有颜色。
+- `cmi.colors.[type].[colorname/hex]` – 允许在指定场景中使用颜色。类型包括：`publicmessage`、`privatemessage`、`nickname`、`signs`、`books`、`me`。
+- `cmi.seevanished` – 允许看见隐身玩家。
+- `cmi.vanishlevel.[1-10]` – 指定玩家可使用的最高隐身等级。
+- `cmi.messages.disablelogin` – 禁用登录消息。
+- `cmi.messages.disablequit` – 禁用退出消息。
+- `cmi.scrollpainting` – 允许修改画。
+- `cmi.autorespawn` – 允许自动重生。
+- `cmi.elytralaunch` – 允许使用鞘翅起飞功能。
+- `cmi.permisiononerror` – 允许在错误消息中查看缺少的权限。
+- `cmi.invedit` – 允许编辑玩家背包。
+- `cmi.book.colors` – 允许为书籍内容着色。
+- `cmi.book.pages.[20to100]` – 指定书籍最多可写的页数。
+- `cmi.damagecontrol.[groupname]` – 按组指定伤害倍率。
+- `cmi.chorusteleport` – 允许使用紫颂果传送。
+- `cmi.teleport.with.[entitytype]` – 允许带着指定类型的坐骑传送。
+- `cmi.randomteleport.[worldname]` – 允许在指定世界内随机传送。
+- `cmi.randomteleport.cooldownbypass` – 允许绕过随机传送的冷却时间。
+- `cmi.fullserver.bypass` – 允许在服务器满员时加入。
+- `cmi.signs.shiftedit` – 允许按住 Shift 右键点击来编辑告示牌。
+- `cmi.signs.shifteditbypass` – 允许编辑受保护领地内的告示牌。
+- `cmi.netherportalbypass` – 允许在配置文件禁用下界传送门创建时创建下界传送门。
+- `cmi.silentchest.editing` – 允许在静默开箱模式下编辑箱子。
+- `cmi.interactivesign.[icname]` – 允许在告示牌第一行使用 `[ic:[icName]]` 来创建交互式告示牌。
+- `cmi.versioncheck` – 允许在登录时查看新版本提示。
+- `cmi.worldlimit.gamemode.bypass` – 允许绕过按世界设置的游戏模式限制。
+- `cmi.worldlimit.fly.bypass` – 允许绕过按世界设置的飞行模式限制。
+- `cmi.worldlimit.elytra.bypass` – 允许绕过按世界设置的鞘翅模式限制。
+- `cmi.worldlimit.fly.aboveroof` – 允许飞到世界建筑高度上限以上。需要在配置文件中启用此功能。
+- `cmi.worldlimit.god.bypass` – 允许绕过按世界设置的无敌模式限制。
+- `cmi.spawners.charge.bypass` – 允许绕过刷怪笼使用次数限制。
+- `cmi.inventoryhat` – 允许将背包中的方块戴在头上。
+- `cmi.inventoryhat.bypass` – 允许绕过物品限制。
+- `cmi.minecart.change.[minecarttype]` – 允许手持对应物品右键点击矿车，更改矿车类型。
+- `cmi.hologram.[hologramname]` – 允许查看指定的全息图。
+- `cmi.kit.[kitname]` – 允许使用指定的礼包。
+- `cmi.kit.[kitname].preview` – 允许在没有礼包使用权限时预览礼包。
+- `cmi.kit.bypass.money` – 允许绕过礼包的金钱要求。
+- `cmi.kit.bypass.exp` – 允许绕过礼包的经验要求。
+- `cmi.kit.bypass.time` – 允许绕过礼包的时间限制。
+- `cmi.kit.bypass.onetimeuse` – 允许绕过礼包的 `onetimeuse` 限制。
+- `cmi.pvp.cmdBypass` – 允许在战斗模式下使用命令。
+- `cmi.pvp.godBypass` – 允许在无敌模式下对玩家造成伤害。
+- `cmi.pve.godBypass` – 允许在无敌模式下对生物造成伤害。
+- `cmi.pvp.PFlyBypass` – 允许因玩家触发战斗模式时继续飞行。
+- `cmi.pvp.MFlyBypass` – 允许因怪物触发战斗模式时继续飞行。
+- `cmi.spawnonjoin.bypass` – 允许绕过 `spawnOnJoin` 选项。
+- `cmi.spawngroup.[spawngroup]` – 指定玩家的个人出生点。
+- `cmi.respawngroup.[respawngroup]` – 指定玩家的个人重生点。
+- `cmi.rank.[rankname]` – 指定玩家的默认等级。
+- `cmi.select` – 允许使用选择工具选择区域。
+- `cmi.chatgroup.[groupnumber]` – 指定玩家用于公共消息格式的自定义聊天组。
+- `cmi.chatmessagegroup.[groupnumber]` – 指定玩家用于公共消息格式的自定义聊天消息组。
+- `cmi.chat.shout` – 允许向更远的距离发送消息。
+- `cmi.chat.rangebypass` – 允许向更远的距离发送消息。
+- `cmi.chat.rangespy` – 允许查看更远距离的所有消息。
+- `cmi.tablist.[groupnumber]` – 指定玩家的自定义 Tab 列表组。
+- `cmi.elytra` – 允许装备鞘翅。
+- `cmi.elytra.boost` – 允许右键点击使用鞘翅的基础加速。
+- `cmi.elytra.superboost` – 允许配合 Shift 点击使用鞘翅的超级加速。
+- `cmi.elytra.speedometer` – 允许在使用鞘翅飞行时查看速度计。
+- `cmi.elytra.freeflight` – 允许免费使用鞘翅加速。
+- `cmi.hunger.keepafterdeath` – 防止死亡后恢复饱食度。
+- `cmi.anvil.itemrename.bypass` – 允许将物品重命名为黑名单中的名称。适用于 `/itemanem` 和实体铁砧。
+- `cmi.sleepignore` – 统计世界中有多少玩家正在睡觉以加快时间流逝时，忽略拥有此权限的玩家。
+- `cmi.chatfilter.inform` – 有人违反聊天过滤规则时通知玩家。
+- `cmi.chatfilter.bypass.[groupname]` – 允许绕过指定的聊天过滤组。
+- `cmi.commandfilter.bypass` – 允许绕过命令刷屏过滤。
+- `cmi.chatfilter.spambypass` – 允许绕过聊天刷屏过滤。
+- `cmi.chatfilter.capbypass` – 允许绕过聊天大写字母过滤。
+- `cmi.deathlocation` – 允许在死亡后查看死亡位置。
+- `cmi.saveinv` – 在玩家死亡时保存背包，以便日后需要时恢复。
+- `cmi.scheduler.exclude` – 将玩家排除在计划任务的随机玩家列表之外。
+- `cmi.openshulker` – 允许将潜影盒当作背包使用。
+- `cmi.openshulker.edit` – 允许编辑潜影盒。
+- `cmi.openshulker.free` – 允许免费使用潜影盒。
+- `cmi.openshulker.shift` – 允许按住 Shift 右键点击，将潜影盒当作背包使用。
+- `cmi.safeteleport` – 防止传送到不安全的位置。
+- `cmi.safeteleport.bypass.[badfloor/void/suffocation/fall/unknown/plugin/unsafeteleportation/nopermission/missingworld]` – 允许无需确认就传送到不安全的位置。
+- `cmi.viewrange` – 允许使用自定义视距。
+- `cmi.viewrange.[range(1-15)]` – 指定自定义视距。
+- `cmi.dropspawner` – 允许刷怪笼在被破坏后掉落。
+- `cmi.dropspawner.[entitytype]` – 允许指定类型的刷怪笼在被破坏后掉落。
+- `cmi.dropspawner.nosilk` – 允许不使用精准采集也能使刷怪笼掉落。
+- `cmi.dropspawner.basedropchance.[positivevalue]` – 指定基础掉落概率。当该值高于配置文件中的值时使用。
+- `cmi.dropspawner.stopafter.[positivevalue]` – 指定挖掘多少个刷怪笼后停止掉落。
+- `cmi.spawners.proximity.bypass` – 绕过刷怪笼的放置距离限制。
+- `cmi.spawners.charge.[groupname]` – 指定刷怪笼使用次数组。
+- `cmi.keepinventory` – 允许死亡后保留背包物品。
+- `cmi.keepexp` – 允许死亡后保留经验。
+- `cmi.informDurability` – 耐久度达到阈值时通知玩家。
+- `cmi.egginteract.[entitytype]` – 允许使用刷怪蛋与刷怪笼交互，更改其类型。
+- `cmi.trialegginteract.[entitytype]` – 允许使用刷怪蛋与试炼刷怪笼交互，更改其类型。
+- `cmi.placespawner` – 允许放置刷怪笼并保留其类型。
+- `cmi.placespawner.[entitytype]` – 允许放置指定类型的刷怪笼，并保留其类型。
+- `cmi.teleport.bypassblacklist` – 允许绕过携带黑名单物品传送的保护限制。
+- `cmi.teleport.currentlocation` – 允许发起传送到玩家当前位置的操作。
+- `cmi.armorstand.hands` – 允许生成带有手臂的盔甲架。
+- `cmi.armorstand.offhand` – 允许操作盔甲架的副手物品。
+- `cmi.bungee.publicmessages.[servername]` – 允许向目标服务器发送公共消息。
+- `cmi.warmupbypass.[commandname]` – 允许绕过指定 CMI 命令的执行前等待时间。
+- `cmi.warmuptime.[commandname].[timeinseconds]` – 允许设置执行前等待时间，优先采用较小的值。
+
+### 命令附加权限
+
+- `cmi.command` – 允许使用命令的基本功能。
+- `cmi.command.options.[visibleholograms/shiftsignedit/totembossbar/bossbarcompass/tagsound/chatspy/cmdspy/signspy/acceptingpm/acceptingtpa/acceptingmoney/chatbubble/pmsound/rideme/pvedamagenumbers/pvpdamagenumbers/informdurability/receivepets/deathmessages]` – 允许修改指定的选项。
+- `cmi.command.jump.[distance]` – 指定最大跳跃距离。
+- `cmi.costbypass.[commandname]` – 允许免除命令使用费用。
+- `cmi.cooldownbypass.[commandname]` – 允许绕过命令冷却时间。
+- `cmi.cooldown.[some_command].[timer]` – 指定玩家的命令冷却时间。空格需要用 `_` 分隔。
+- `cmi.command.armorstand.[updateitems/plate/size/visible/arms/gravity/glow/invulnerable/name/interactable/head/body/leftarm/rightarm/leftleg/rightleg/pos/torso/scale]` – 允许使用盔甲架编辑器中的指定功能。
+- `cmi.command.armorstand.renaming` – 允许在盔甲架编辑器中重命名盔甲架。
+- `cmi.command.armorstand.movebypass` – 允许将盔甲架移动到没有建造权限的位置。可帮助绕过反作弊插件的限制。
+- `cmi.command.armorstand.admin` – 允许保存、加载或删除已保存的盔甲架。
+- `cmi.command.armorstand.template.[templatename]` – 允许放置已保存的盔甲架。
+- `cmi.command.armorstand.scalemax.[value]` – 指定盔甲架的最大缩放比例。
+- `cmi.command.armorstand.scalemin.[value]` – 指定盔甲架的最小缩放比例。
+- `cmi.command.giftpet.bypass` – 允许在自己不是宠物原主人的情况下更改宠物主人。
+- `cmi.command.releasepet.bypass` – 允许在自己不是宠物原主人的情况下释放宠物。
+- `cmi.command.donate.bypass` – 防止通过 `donate` 命令收到物品。
+- `cmi.command.donate.accept` – 允许接收通过 `donate` 命令发送的物品。
+- `cmi.command.donate.send` – 允许通过 `donate` 命令发送物品。
+- `cmi.command.portal.[portalname]` – 允许使用指定的传送门。
+- `cmi.command.kill.byforce` – 允许无视保护插件击杀玩家。
+- `cmi.command.kiteditor.admin` – 允许设置礼包中风险较高的内容，例如命令。
+- `cmi.command.itemframe.[invisible/fixed/invulnerable/all]` – 允许执行指定的操作。
+- `cmi.command.world.[worldname]` – 允许通过命令传送到指定世界。
+- `cmi.command.skin.perm.[skinname]` – 允许将皮肤更换为指定玩家的皮肤。
+- `cmi.command.point.[particletype]` – 允许更改粒子类型。
+- `cmi.command.ender.preventmodify` – 防止他人修改末影箱。
+- `cmi.command.ender.preventmodify.bypass` – 绕过末影箱的修改保护。
+- `cmi.command.inv.preventmodify` – 防止他人修改背包。
+- `cmi.command.inv.location` – 在界面中显示目标玩家的位置。
+- `cmi.command.inv.information` – 在界面中显示目标玩家的信息。
+- `cmi.command.inv.preventmodify.bypass` – 绕过普通背包的修改保护。
+- `cmi.command.give.max.[number]` – 指定玩家可使用的最大物品堆叠数量。
+- `cmi.command.tfly.admin` – 允许管理玩家的 `tfly`。
+- `cmi.command.tfly.maxtime.[seconds]` – 指定玩家使用 `tfly` 命令可获得的最长时间。
+- `cmi.command.spawner.shiftclick` – 允许按住 Shift 点击刷怪笼，打开刷怪笼设置界面。
+- `cmi.command.spawner.[entitytype]` – 允许通过命令将刷怪笼更改为指定类型。
+- `cmi.command.repair.[hand/armor/all]` – 允许修复指定范围的物品。
+- `cmi.command.head.othersource` – 允许获取其他玩家的头颅。
+- `cmi.command.note.add` – 允许添加备注。
+- `cmi.command.note.remove` – 允许删除或清空备注。
+- `cmi.command.gm.[gametype]` – 允许切换到指定的游戏模式。
+- `cmi.command.replaceblock.speed` – 允许调整 `replaceblock` 的速度。
+- `cmi.command.scan.speed` – 允许调整扫描速度。
+- `cmi.command.fixchunk.speed` – 允许调整区块修复速度。
+- `cmi.command.enchant.bypasslimit` – 允许绕过附魔限制。
+- `cmi.command.enchant.bypassinvalid` – 允许为物品添加通常无法用于该物品的附魔。
+- `cmi.enchantments.` – 允许为物品添加指定附魔。
+- `cmi.enchantments..$2` – 允许为物品添加指定附魔，并指定其最高等级。
+- `cmi.command.attachcommand.cc` – 允许将控制台命令附加到物品上。
+- `cmi.command.attachcommand.silent` – 允许附加静默命令。
+- `cmi.command.sendall.bypass` – 防止玩家被转移到目标服务器。
+- `cmi.command.heal.all` – 允许治疗所有在线玩家。
+- `cmi.command.feed.all` – 允许为所有在线玩家补充饱食度。
+- `cmi.command.[commandname].others` – 允许对其他玩家执行命令。
+- `cmi.command.prewards.others.claim` – 允许代其他玩家领取奖励。
+- `cmi.command.[commandname].others.[extra]` – 允许对其他玩家执行命令。
+- `cmi.command.msg.vanish` – 允许向隐身玩家发送私聊消息。
+- `cmi.command.msg.togglebypass` – 允许在玩家关闭私聊后仍向其发送私聊消息。
+- `cmi.command.msg.[maingroupname].send` – 允许向指定玩家组发送私聊消息。
+- `cmi.command.bossbarmsg.admin` – 允许在自动 Boss 血条消息中使用命令。
+- `cmi.command.sell.[blocks/all]` – 允许出售手持物品之外的物品。
+- `cmi.command.patrol.bypass` – 拥有此权限的玩家不会被列入巡逻列表。
+- `cmi.command.afk.auto` – 自动将玩家设为 AFK 状态。
+- `cmi.command.afk.staffinform` – 使用不同的 AFK 自动回复消息。
+- `cmi.command.afk.kickbypass` – 防止玩家因 AFK 状态触发的事件而被踢出服务器。
+- `cmi.command.afk.kickOutIn.[[seconds]]` – 指定玩家进入 AFK 状态后多少秒被踢出。
+- `cmi.command.cheque.admin` – 允许直接向目标玩家发放指定金额的支票，无需纸张。
+- `cmi.command.cheque.withdraw` – 在配置文件中启用相应选项时，允许提取支票余额。
+- `cmi.command.invcheck.edit` – 允许编辑已保存的背包。
+- `cmi.command.warp.[warpname]` – 当传送点需要权限时，允许使用指定的传送点。
+- `cmi.command.warp.showlist` – 允许在聊天栏或界面中查看传送点列表。
+- `cmi.command.warp.redefine` – 允许重新定义传送点。
+- `cmi.command.warp.specificlocation` – 允许指定传送点的具体位置。
+- `cmi.command.warp.diffdisplayname` – 允许为传送点设置不同的显示名称。
+- `cmi.command.setwarp.multiloc` – 允许为一个传送点设置多个位置。
+- `cmi.command.setwarp.unlimited` – 允许拥有不限数量的传送点。
+- `cmi.command.setwarp.[anypositivenumber]` – 允许拥有指定数量的传送点。
+- `cmi.command.removewarp.bypass` – 允许删除其他玩家的传送点。
+- `cmi.command.counter.autojoin` – 玩家加入服务器时自动加入倒计时组。
+- `cmi.command.tpa.warmupbypass` – 允许跳过 `tpa` 命令的执行前等待时间。
+- `cmi.command.tpahere.warmupbypass` – 允许跳过 `tpahere` 命令的执行前等待时间。
+- `cmi.command.home.bypassprivate` – 允许传送到其他玩家的私人家位置。
+- `cmi.command.homes.range` – 允许按与你的距离查看家。
+- `cmi.command.sethome.unlimited` – 允许拥有不限数量的家。
+- `cmi.command.sethome.[anypositivenumber]` – 允许拥有指定数量的家。
+- `cmi.command.sethome.customloc` – 允许为新家指定自定义位置。
+- `cmi.command.sethome.iconpicker` – 允许在执行命令后查看图标选择器。
+- `cmi.command.sethome.iconpickeroncreation` – 创建家时自动打开图标选择器。
+- `cmi.command.sethome.overwrite` – 允许覆盖已有家的位置。
+- `cmi.command.sethome.bypass` – 允许绕过方块破坏保护。
+- `cmi.command.sethome.bypasslimit` – 允许绕过按世界设置的限制。
+- `cmi.command.mail.read` – 允许阅读邮件。
+- `cmi.command.mail.clear` – 允许清空邮件。
+- `cmi.command.mail.send` – 允许发送邮件。
+- `cmi.command.mail.sendtemp` – 允许发送限时邮件。
+- `cmi.command.itemlore.modification` – 允许修改已有的物品描述。
+- `cmi.command.glow.color.[colorname]` – 允许更改发光颜色。
+- `cmi.command.walkspeed.[range0-10]` – 指定玩家可设置的最大行走速度。
+- `cmi.command.tptoggle.bypass` – 允许传送到已关闭传送功能的玩家处。
+- `cmi.command.sudo.bypass` – 防止他人对拥有此权限的玩家使用 `sudo`。
+- `cmi.command.repair.repairshare.bypass` – 允许跳过对物品应用 `repair share` 的操作。
+- `cmi.command.repair.bypass` – 允许免除物品修复费用。
+- `cmi.command.nick.bypassblacklist` – 允许绕过昵称黑名单。
+- `cmi.command.nick.bypassrealname` – 允许绕过已有真实名称的检查。
+- `cmi.command.nick.bypass.length` – 允许绕过昵称长度限制。
+- `cmi.command.nick.bypassinuse` – 允许使用已被占用的名称。
+- `cmi.command.nick.different` – 允许将昵称设为与原名不同的名称。
+- `cmi.command.msg.clean` – 允许在开头使用 `!` 向玩家发送不带格式的消息。
+- `cmi.command.msg.noreply` – 允许在开头使用 `!-` 向玩家发送不带格式且无法回复的消息。
+- `cmi.command.ignore.bypass` – 允许对忽略你的玩家执行命令。
+- `cmi.command.silence.bypass` – 允许向处于静默模式的玩家发送消息。
+- `cmi.command.more.oversize` – 允许获得超过正常堆叠上限的物品堆叠。
+- `cmi.command.recipe.admin` – 允许启用或禁用配方。
+- `cmi.command.recipe.custom` – 允许查看自定义配方。
+- `cmi.command.list.admin` – 将玩家放入玩家列表中的 `admin` 组。
+- `cmi.command.list.staff` – 将玩家放入玩家列表中的 `staff` 组。
+- `cmi.command.list.hidden` – 允许在玩家列表中查看隐藏的玩家。
+- `cmi.command.list.group.[groupnumber]` – 将玩家分配到指定组。
+- `cmi.command.checkban.seereason` – 允许查看玩家的封禁原因。
+- `cmi.command.checkban.modify` – 允许修改玩家的封禁。
+- `cmi.command.mirror.nodeduct` – 在生存模式下使用镜像模式放置方块时，不消耗方块。
+- `cmi.command.lfix.admin` – 允许修复超出视野范围区域的光照。
+- `cmi.command.commandspy.hide` – 使执行的命令不被 `commandspy` 显示。
+- `cmi.command.commandspy.bypass` – 绕过命令监听的命令黑名单。
+- `cmi.command.signspy.hide` – 使创建的告示牌不被 `signspy` 显示。
+- `cmi.command.socialspy.hide` – 向社交监听隐藏社交消息。
+- `cmi.command.mute.max.[anypositivenumber]` – 允许临时禁言，最长不超过指定时间。
+- `cmi.command.mute.bypass` – 绕过针对个人的公共聊天禁言。
+- `cmi.command.mutechat.bypass` – 绕过公共聊天禁言。
+- `cmi.command.money.admin` – 允许调整玩家余额。
+- `cmi.command.money.betweenworldgroups` – 允许在世界之间转账。
+- `cmi.command.time.[freeze/unfreeze/day/morning/night/dusk/add/take/realtime/autorealtime]` – 允许调整时间。
+- `cmi.command.weather.[sun/rain/storm/lock]` – 允许将天气更改为指定状态。
+- `cmi.command.weather.[sun/rain].[maxvalue]` – 允许指定玩家可设置的天气最长持续时间。
+- `cmi.command.pweather.[sun/rain/reset]` – 允许将个人天气更改为指定状态。
+- `cmi.command.back.ondeath` – 允许在死亡后使用 `back` 命令返回死亡位置。
+- `cmi.command.back.worldbypass` – 允许返回黑名单中的世界。
+- `cmi.command.flightcharge.admin` – 允许编辑玩家的飞行能量。
+- `cmi.command.kick.bypass` – 防止玩家被踢出服务器。
+- `cmi.command.ride.[entitytype]` – 允许骑乘实体。
+- `cmi.command.sit.stairs` – 允许自动坐在楼梯上。
+- `cmi.command.sit.persistent` – 允许使用持久模式坐下。
+- `cmi.command.sit.location` – 允许在指定位置坐下。
+- `cmi.command.maintenance.bypass` – 允许绕过维护模式。
+- `cmi.command.alert.inform` – 设有登录提醒的玩家加入时，拥有此权限的玩家会收到通知。
+- `cmi.command.helpop.inform` – 拥有此权限的玩家会收到 `helpop` 消息。
+- `cmi.command.fly.safelogin` – 如果玩家重新登录时位于空中，使其安全落地。
+- `cmi.command.cuff.bypass` – 允许在被铐住时使用命令。
+- `cmi.command.jail.bypasscmd` – 允许在被关入监狱时使用命令。
+- `cmi.command.jail.bypass` – 防止玩家被关入监狱。
+- `cmi.command.jail.maxtime.[seconds]` – 指定玩家可将他人关入监狱的最长时间。
+- `cmi.command.near.hide` – 使玩家不出现在 `near` 命令的结果中。
+- `cmi.command.near.max.[blocks]` – 指定 `near` 命令的最大距离，覆盖默认值。
+- `cmi.command.tpa.max.[blocks]` – 指定 `tpa` 命令的最大距离，覆盖默认值。
+- `cmi.command.tpahere.max.[blocks]` – 指定 `tpahere` 命令的最大距离，覆盖默认值。
+- `cmi.command.silent` – 允许在命令中使用 `-s` 参数，避免向目标玩家发送反馈消息。
+- `cmi.command.warn.bypass` – 防止玩家被警告。
+- `cmi.command.ban.bypass` – 防止玩家被封禁。
+- `cmi.command.banip.bypass` – 防止玩家被按 IP 封禁。
+- `cmi.command.tempban.bypass` – 防止玩家被临时封禁。
+- `cmi.command.tempban.max.unlimited` – 允许临时封禁时间超过配置文件允许的上限。
+- `cmi.command.tempban.max.[anypositivenumber]` – 允许临时封禁，最长不超过指定时间。
+- `cmi.command.broadcast.colors` – 允许在广播消息中使用颜色。
+- `cmi.command.broadcast.clean` – 允许使用 `!` 发送不带格式的广播消息。
+- `cmi.command.charges.edit` – 允许编辑玩家的刷怪笼使用次数。
+- `cmi.command.checkaccount.showip` – 允许在账号检查中查看玩家 IP。
+- `cmi.command.info.ip` – 允许在信息页面中查看玩家 IP。
+- `cmi.command.info.pos` – 允许在信息页面中查看位置（`pos`）。
+- `cmi.command.info.bed` – 允许在信息页面中查看床的位置。
+- `cmi.command.info.back` – 允许在信息页面中查看返回位置（`back`）。
+- `cmi.command.info.deathlocation` – 允许在信息页面中查看死亡位置。
+- `cmi.command.clearchat.bypass` – 拥有此权限的玩家的聊天记录不会被清除。
+- `cmi.command.counter.force` – 允许向周围玩家强制显示倒计时消息。
+- `cmi.command.counter.time` – 允许更改倒计时的默认时间。
+- `cmi.command.counter.range` – 允许更改倒计时的默认范围。
+- `cmi.command.counter.center` – 允许为倒计时使用自定义位置。
+- `cmi.command.counter.msg` – 允许更改倒计时的默认消息。
+- `cmi.command.ctext.[ctextname]` – 允许查看指定的自定义消息。
+- `cmi.command.flyspeed.[range1-10]` – 指定玩家可设置的最大飞行速度。
+- `cmi.command.shoot.[type]` – 允许发射指定类型的实体。
+- `cmi.command.dialog.disabled` – 允许查看已禁用的对话框。
+- `cmi.command.chat.kick` – 允许将玩家踢出聊天室。
+- `cmi.command.chat.see` – 允许查看聊天室中的消息。
+- `cmi.command.chat.force` – 允许强制玩家加入聊天室。
+- `cmi.command.chat.create` – 允许创建聊天室。
+- `cmi.command.chat.create.private` – 允许创建私人聊天室。
+- `cmi.command.chat.create.locked` – 允许创建锁定的聊天室。
+- `cmi.command.chat.leave.locked` – 允许离开锁定的聊天室。
+- `cmi.command.chat.create.persistent` – 允许创建持久聊天室。
+- `cmi.command.chat.invite` – 允许邀请玩家加入聊天室。
+- `cmi.command.chat.joinbypass` – 允许在未获邀请的情况下加入私人聊天室。
+- `cmi.command.chat.seebypass` – 允许查看私人聊天室。
+- `cmi.command.chat.list` – 允许列出聊天室中的玩家。
+- `cmi.command.chat.listrooms` – 允许列出所有聊天室。
+- `cmi.customalias.[alias]` – 当指定别名需要权限时，允许使用该别名。
+
+## 基础命令权限节点
+
+### A–C
+
+- `actionbarmsg` – 向玩家发送操作栏消息。
+  - `cmi.command.actionbarmsg` – 默认：`op`
+- `afk` – 切换 AFK 状态，可以提供原因。
+  - `cmi.command.afk` – 默认：`op`
+  - `cmi.command.afk.others`
+- `afkcheck` – 检查玩家的 AFK 状态。
+  - `cmi.command.afkcheck` – 默认：`op`
+  - `cmi.command.afkcheck.others`
+- `air` – 设置玩家的氧气值。
+  - `cmi.command.air` – 默认：`op`
+  - `cmi.command.air.others`
+- `alert` – 在玩家登录时通知管理员。
+  - `cmi.command.alert` – 默认：`op`
+- `alertlist` – 列出所有已记录的提醒。
+  - `cmi.command.alertlist` – 默认：`op`
+- `aliaseditor` – 别名编辑器。
+  - `cmi.command.aliaseditor` – 默认：`op`
+- `anvil` – 打开铁砧。
+  - `cmi.command.anvil` – 默认：`op`
+  - `cmi.command.anvil.others`
+- `anvilrepaircost` – 设置物品修复费用。
+  - `cmi.command.anvilrepaircost` – 默认：`op`
+  - `cmi.command.anvilrepaircost.others`
+- `armorstand` – 打开盔甲架编辑器。
+  - `cmi.command.armorstand` – 默认：`op`
+- `attachcommand` – 将命令附加到物品上。
+  - `cmi.command.attachcommand` – 默认：`op`
+- `autorecharge` – 切换飞行能量自动补充。
+  - `cmi.command.autorecharge` – 默认：`op`
+  - `cmi.command.autorecharge.others`
+- `back` – 传送回上次保存的位置。
+  - `cmi.command.back` – 默认：`op`
+  - `cmi.command.back.others`
+- `balance` – 查看余额。
+  - `cmi.command.balance` – 默认：`op`
+  - `cmi.command.balance.others`
+- `baltop` – 查看财富排行榜。
+  - `cmi.command.baltop` – 默认：`op`
+  - `cmi.command.baltop.others`
+- `ban` – 封禁玩家。
+  - `cmi.command.ban` – 默认：`op`
+- `banlist` – 封禁列表。
+  - `cmi.command.banlist` – 默认：`op`
+- `bbroadcast` – 向所有服务器上的所有玩家发送特殊消息。
+  - `cmi.command.bbroadcast` – 默认：`op`
+- `blockcycling` – 循环切换方块状态。
+  - `cmi.command.blockcycling` – 默认：`op`
+- `blockinfo` – 查看方块信息。
+  - `cmi.command.blockinfo` – 默认：`op`
+- `blocknbt` – 显示方块的 NBT 信息。
+  - `cmi.command.blocknbt` – 默认：`op`
+- `book` – 编辑书籍。
+  - `cmi.command.book` – 默认：`op`
+- `bossbarmsg` – 向玩家发送 Boss 血条消息。
+  - `cmi.command.bossbarmsg` – 默认：`op`
+- `broadcast` – 向所有玩家发送特殊消息。
+  - `cmi.command.broadcast` – 默认：`op`
+- `burn` – 点燃玩家。
+  - `cmi.command.burn` – 默认：`op`
+  - `cmi.command.burn.others`
+- `cartographytable` – 打开制图台。
+  - `cmi.command.cartographytable` – 默认：`op`
+  - `cmi.command.cartographytable.others`
+- `charges` – 显示剩余的刷怪笼使用次数。
+  - `cmi.command.charges` – 默认：`op`
+  - `cmi.command.charges.others`
+- `chat` – 创建和加入聊天室。
+  - `cmi.command.chat` – 默认：`op`
+- `checkaccount` – 查找玩家的其他账号。
+  - `cmi.command.checkaccount` – 默认：`op`
+- `checkban` – 检查玩家的封禁状态。
+  - `cmi.command.checkban` – 默认：`op`
+- `checkcommand` – 按关键词搜索可用命令。
+  - `cmi.command.checkcommand` – 默认：`op`
+- `checkexp` – 查看玩家经验。
+  - `cmi.command.checkexp` – 默认：`op`
+  - `cmi.command.checkexp.others`
+- `checkperm` – 查看可用的权限节点。
+  - `cmi.command.checkperm` – 默认：`op`
+- `cheque` – 将金钱转换为支票。
+  - `cmi.command.cheque` – 默认：`op`
+- `clear` – 清空玩家背包。
+  - `cmi.command.clear` – 默认：`op`
+  - `cmi.command.clear.others`
+- `clearchat` – 清除聊天记录。
+  - `cmi.command.clearchat` – 默认：`op`
+- `clearender` – 清空玩家的末影箱。
+  - `cmi.command.clearender` – 默认：`op`
+  - `cmi.command.clearender.others`
+- `colorlimits` – 显示所有可用颜色。
+  - `cmi.command.colorlimits` – 默认：`op`
+  - `cmi.command.colorlimits.others`
+- `colorpicker` – 选择十六进制颜色。
+  - `cmi.command.colorpicker` – 默认：`op`
+  - `cmi.command.colorpicker.others`
+- `colors` – 显示所有可用颜色。
+  - `cmi.command.colors` – 默认：`op`
+  - `cmi.command.colors.others`
+- `compass` – 将玩家的指南针指向你的位置。
+  - `cmi.command.compass` – 默认：`op`
+  - `cmi.command.compass.others`
+- `condense` – 将物品压缩成方块。
+  - `cmi.command.condense` – 默认：`op`
+  - `cmi.command.condense.others`
+- `counter` – 为周围玩家启动倒计时。
+  - `cmi.command.counter` – 默认：`op`
+- `cplaytime` – 查看详细游戏时间。
+  - `cmi.command.cplaytime` – 默认：`op`
+  - `cmi.command.cplaytime.others`
+- `ctellraw` – 发送 `tellraw` 类型的消息。
+  - `cmi.command.ctellraw` – 默认：`op`
+- `ctext` – 显示自定义文本。
+  - `cmi.command.ctext` – 默认：`true`
+  - `cmi.command.ctext.others`
+- `cuff` – 限制玩家的行动。
+  - `cmi.command.cuff` – 默认：`op`
+- `customrecipe` – 管理物品的自定义配方。
+  - `cmi.command.customrecipe` – 默认：`op`
+
+### D–H
+
+- `dback` – 返回死亡位置。
+  - `cmi.command.dback` – 默认：`op`
+  - `cmi.command.dback.others`
+- `disableenchant` – 禁用附魔。
+  - `cmi.command.disableenchant` – 默认：`op`
+- `dispose` – 丢弃不需要的物品。
+  - `cmi.command.dispose` – 默认：`op`
+  - `cmi.command.dispose.others`
+- `distance` – 检查 2 个点之间的距离。
+  - `cmi.command.distance` – 默认：`op`
+  - `cmi.command.distance.others`
+- `donate` – 捐赠手中的物品。
+  - `cmi.command.donate` – 默认：`op`
+- `down` – 向下传送一层。
+  - `cmi.command.down` – 默认：`op`
+  - `cmi.command.down.others`
+- `dsign` – 管理动态告示牌。
+  - `cmi.command.dsign` – 默认：`op`
+- `dye` – 为皮革盔甲染色。
+  - `cmi.command.dye` – 默认：`op`
+  - `cmi.command.dye.others`
+- `editctext` – 自定义文本编辑器。
+  - `cmi.command.editctext` – 默认：`op`
+- `editlocale` – 编辑语言文件。
+  - `cmi.command.editlocale` – 默认：`op`
+- `editplaytime` – 编辑玩家的游戏时间。
+  - `cmi.command.editplaytime` – 默认：`op`
+  - `cmi.command.editplaytime.others`
+- `editwarnings` – 查看玩家的警告记录。
+  - `cmi.command.editwarnings` – 默认：`op`
+  - `cmi.command.editwarnings.others`
+- `editwarp` – 编辑传送点。
+  - `cmi.command.editwarp` – 默认：`op`
+  - `cmi.command.editwarp.others`
+- `effect` – 为玩家添加药水效果。使用 `clear` 移除所有效果。
+  - `cmi.command.effect` – 默认：`op`
+  - `cmi.command.effect.others`
+- `enchant` – 为物品附魔。
+  - `cmi.command.enchant` – 默认：`op`
+  - `cmi.command.enchant.others`
+- `ender` – 打开玩家的末影箱。
+  - `cmi.command.ender` – 默认：`op`
+  - `cmi.command.ender.others`
+- `endgateway` – 切换末地折跃门的光束。
+  - `cmi.command.endgateway` – 默认：`op`
+- `entityinfo` – 查看实体信息。
+  - `cmi.command.entityinfo` – 默认：`op`
+- `entitynbt` – 查看实体的 NBT 信息。
+  - `cmi.command.entitynbt` – 默认：`op`
+- `exp` – 设置玩家经验。使用 `L` 设置等级。
+  - `cmi.command.exp` – 默认：`op`
+  - `cmi.command.exp.others`
+- `ext` – 熄灭玩家身上的火焰。
+  - `cmi.command.ext` – 默认：`op`
+  - `cmi.command.ext.others`
+- `falldistance` – 设置玩家的下落距离。
+  - `cmi.command.falldistance` – 默认：`op`
+  - `cmi.command.falldistance.others`
+- `feed` – 为玩家补充饱食度。
+  - `cmi.command.feed` – 默认：`op`
+  - `cmi.command.feed.others`
+- `findbiome` – 按名称查找最近的生物群系。
+  - `cmi.command.findbiome` – 默认：`op`
+- `fixchunk` – 扫描损坏的区块。
+  - `cmi.command.fixchunk` – 默认：`op`
+- `flightcharge` – 管理和查看飞行能量。
+  - `cmi.command.flightcharge` – 默认：`op`
+  - `cmi.command.flightcharge.others`
+- `fly` – 将玩家的飞行模式设为 `true` 或 `false`。
+  - `cmi.command.fly` – 默认：`op`
+  - `cmi.command.fly.others`
+- `flyc` – 切换飞行能量模式。
+  - `cmi.command.flyc` – 默认：`op`
+  - `cmi.command.flyc.others`
+- `flyspeed` – 将玩家的飞行速度设为 0 到 10。
+  - `cmi.command.flyspeed` – 默认：`op`
+  - `cmi.command.flyspeed.others`
+- `gamerule` – 管理游戏规则。
+  - `cmi.command.gamerule` – 默认：`op`
+- `generateworth` – 自动生成可能的物品价值。
+  - `cmi.command.generateworth` – 默认：`op`
+- `getbook` – 获取书本。
+  - `cmi.command.getbook` – 默认：`op`
+  - `cmi.command.getbook.others`
+- `give` – 给予玩家物品。
+  - `cmi.command.give` – 默认：`op`
+  - `cmi.command.give.others`
+- `giveall` – 给予所有玩家物品。
+  - `cmi.command.giveall` – 默认：`op`
+- `glow` – 设置玩家的发光模式。
+  - `cmi.command.glow` – 默认：`op`
+  - `cmi.command.glow.others`
+- `gm` – 设置玩家的游戏模式。
+  - `cmi.command.gm` – 默认：`op`
+- `god` – 将玩家的无敌模式设为 `true` 或 `false`。
+  - `cmi.command.god` – 默认：`op`
+  - `cmi.command.god.others`
+- `grindstone` – 打开砂轮。
+  - `cmi.command.grindstone` – 默认：`op`
+  - `cmi.command.grindstone.others`
+- `groundclean` – 清除服务器中不需要的物品。
+  - `cmi.command.groundclean` – 默认：`op`
+- `haspermission` – 检查玩家是否拥有指定权限。
+  - `cmi.command.haspermission` – 默认：`op`
+  - `cmi.command.haspermission.others`
+- `hat` – 将物品戴在头上。
+  - `cmi.command.hat` – 默认：`op`
+  - `cmi.command.hat.others`
+- `head` – 获取玩家头颅。
+  - `cmi.command.head` – 默认：`op`
+  - `cmi.command.head.others`
+- `heal` – 治疗玩家。
+  - `cmi.command.heal` – 默认：`op`
+  - `cmi.command.heal.others`
+- `helpop` – 向工作人员发送求助消息。
+  - `cmi.command.helpop` – 默认：`op`
+- `hideflags` – 隐藏物品标志。
+  - `cmi.command.hideflags` – 默认：`op`
+  - `cmi.command.hideflags.others`
+- `hologram` – 管理全息图。
+  - `cmi.command.hologram` – 默认：`op`
+- `hologrampages` – 切换全息图页面。
+  - `cmi.command.hologrampages` – 默认：`op`
+  - `cmi.command.hologrampages.others`
+- `home` – 传送到家的位置。
+  - `cmi.command.home` – 默认：`op`
+  - `cmi.command.home.others`
+- `homes` – 列出家，点击即可传送。
+  - `cmi.command.homes` – 默认：`op`
+  - `cmi.command.homes.others`
+- `hunger` – 设置玩家的饱食度。
+  - `cmi.command.hunger` – 默认：`op`
+  - `cmi.command.hunger.others`
+- `ic` – 创建交互式命令。
+  - `cmi.command.ic` – 默认：`op`
+
+### I–M
+
+- `ifoffline` – 仅在玩家离线时执行命令。
+  - `cmi.command.ifoffline` – 默认：`op`
+- `ifonline` – 仅在玩家在线时执行命令。
+  - `cmi.command.ifonline` – 默认：`op`
+- `ignore` – 忽略玩家。
+  - `cmi.command.ignore` – 默认：`op`
+  - `cmi.command.ignore.others`
+- `importfrom` – 从其他插件导入数据。
+  - `cmi.command.importfrom` – 默认：`op`
+- `importoldusers` – 从主世界目录的 `playerdata` 文件夹导入用户。导入期间服务器可能出现短暂卡顿。
+  - `cmi.command.importoldusers` – 默认：`op`
+- `info` – 显示玩家信息。
+  - `cmi.command.info` – 默认：`op`
+  - `cmi.command.info.others`
+- `inv` – 打开玩家背包。
+  - `cmi.command.inv` – 默认：`op`
+- `invcheck` – 以预览模式打开已保存的背包。
+  - `cmi.command.invcheck` – 默认：`op`
+  - `cmi.command.invcheck.others`
+- `invlist` – 显示已保存的背包列表。
+  - `cmi.command.invlist` – 默认：`op`
+  - `cmi.command.invlist.others`
+- `invload` – 加载已保存的背包。
+  - `cmi.command.invload` – 默认：`op`
+  - `cmi.command.invload.others`
+- `invremove` – 移除指定玩家已保存的背包。
+  - `cmi.command.invremove` – 默认：`op`
+  - `cmi.command.invremove.others`
+- `invremoveall` – 移除所有已保存的背包。
+  - `cmi.command.invremoveall` – 默认：`op`
+- `invsave` – 保存背包。
+  - `cmi.command.invsave` – 默认：`op`
+  - `cmi.command.invsave.others`
+- `ipban` – 封禁 IP。
+  - `cmi.command.ipban` – 默认：`op`
+- `ipbanlist` – IP 封禁列表。
+  - `cmi.command.ipbanlist` – 默认：`op`
+- `item` – 给予自己物品。
+  - `cmi.command.item` – 默认：`op`
+- `itemcmdata` – 查看或修改物品的自定义模型数据。
+  - `cmi.command.itemcmdata` – 默认：`op`
+  - `cmi.command.itemcmdata.others`
+- `itemframe` – 管理物品展示框。
+  - `cmi.command.itemframe` – 默认：`op`
+- `iteminfo` – 显示物品信息。
+  - `cmi.command.iteminfo` – 默认：`op`
+  - `cmi.command.iteminfo.others`
+- `itemlore` – 更改物品描述。
+  - `cmi.command.itemlore` – 默认：`op`
+  - `cmi.command.itemlore.others`
+- `itemname` – 重命名物品。
+  - `cmi.command.itemname` – 默认：`op`
+  - `cmi.command.itemname.others`
+- `itemnbt` – 显示物品的 NBT 信息。
+  - `cmi.command.itemnbt` – 默认：`op`
+  - `cmi.command.itemnbt.others`
+- `jail` – 将玩家关入监狱一段时间。
+  - `cmi.command.jail` – 默认：`op`
+- `jailedit` – 编辑监狱。
+  - `cmi.command.jailedit` – 默认：`op`
+- `jaillist` – 列出监狱。
+  - `cmi.command.jaillist` – 默认：`op`
+- `jump` – 跳跃到目标方块。
+  - `cmi.command.jump` – 默认：`op`
+- `kick` – 踢出玩家，并显示自定义消息。
+  - `cmi.command.kick` – 默认：`op`
+- `kill` – 击杀玩家。
+  - `cmi.command.kill` – 默认：`op`
+- `killall` – 击杀周围的生物。
+  - `cmi.command.killall` – 默认：`op`
+- `kit` – 给予预设的礼包。
+  - `cmi.command.kit` – 默认：`true`
+  - `cmi.command.kit.others`
+- `kitcdreset` – 重置礼包计时器。
+  - `cmi.command.kitcdreset` – 默认：`op`
+  - `cmi.command.kitcdreset.others`
+- `kiteditor` – 礼包编辑器。
+  - `cmi.command.kiteditor` – 默认：`op`
+- `kitusagereset` – 重置礼包使用次数。
+  - `cmi.command.kitusagereset` – 默认：`op`
+  - `cmi.command.kitusagereset.others`
+- `lastonline` – 显示过去 `x` 分钟内游玩过的玩家。
+  - `cmi.command.lastonline` – 默认：`op`
+- `launch` – 朝视线方向或指定角度弹射。
+  - `cmi.command.launch` – 默认：`op`
+  - `cmi.command.launch.others`
+- `lfix` – 修复周围区块的光照。
+  - `cmi.command.lfix` – 默认：`op`
+- `list` – 显示在线玩家列表。
+  - `cmi.command.list` – 默认：`op`
+- `lockip` – 防止从不同 IP 登录账号。
+  - `cmi.command.lockip` – 默认：`op`
+  - `cmi.command.lockip.others`
+- `loom` – 打开织布机。
+  - `cmi.command.loom` – 默认：`op`
+  - `cmi.command.loom.others`
+- `mail` – 发送和接收邮件。
+  - `cmi.command.mail` – 默认：`op`
+  - `cmi.command.mail.others`
+- `mailall` – 查看邮件，或向所有玩家发送邮件。
+  - `cmi.command.mailall` – 默认：`op`
+- `maintenance` – 将服务器设为维护模式。
+  - `cmi.command.maintenance` – 默认：`op`
+- `maxhp` – 设置玩家的最大生命值。
+  - `cmi.command.maxhp` – 默认：`op`
+  - `cmi.command.maxhp.others`
+- `maxplayers` – 更改可连接到服务器的最大玩家数。
+  - `cmi.command.maxplayers` – 默认：`op`
+- `me` – 向所有玩家发送特殊消息。
+  - `cmi.command.me` – 默认：`op`
+- `merchant` – 打开商人交易界面。
+  - `cmi.command.merchant` – 默认：`op`
+  - `cmi.command.merchant.others`
+- `migratedatabase` – 更换数据库系统并迁移所有数据。
+  - `cmi.command.migratedatabase` – 默认：`op`
+- `mirror` – 开始镜像放置或破坏方块。
+  - `cmi.command.mirror` – 默认：`op`
+- `mobhead` – 获取生物头颅。
+  - `cmi.command.mobhead` – 默认：`op`
+  - `cmi.command.mobhead.others`
+- `money` – 管理余额。
+  - `cmi.command.money` – 默认：`op`
+- `more` – 将物品堆叠补至最大数量。
+  - `cmi.command.more` – 默认：`op`
+  - `cmi.command.more.others`
+- `msg` – 向玩家发送消息。
+  - `cmi.command.msg` – 默认：`op`
+- `mute` – 禁言玩家。
+  - `cmi.command.mute` – 默认：`op`
+- `mutechat` – 禁止发送公共消息。
+  - `cmi.command.mutechat` – 默认：`op`
+- `nameplate` – 设置玩家名称标签的前缀、后缀或颜色。
+  - `cmi.command.nameplate` – 默认：`op`
+  - `cmi.command.nameplate.others`
+
+### N–R
+
+- `near` – 查看附近的玩家。
+  - `cmi.command.near` – 默认：`op`
+- `nick` – 更改玩家名称。
+  - `cmi.command.nick` – 默认：`op`
+  - `cmi.command.nick.others`
+- `notarget` – 切换不被生物选为目标的模式。
+  - `cmi.command.notarget` – 默认：`op`
+  - `cmi.command.notarget.others`
+- `note` – 管理玩家备注。
+  - `cmi.command.note` – 默认：`op`
+  - `cmi.command.note.others`
+- `openbook` – 打开书籍界面。
+  - `cmi.command.openbook` – 默认：`true`
+  - `cmi.command.openbook.others`
+- `oplist` – 查看 OP 玩家列表。
+  - `cmi.command.oplist` – 默认：`op`
+- `options` – 修改个人选项。
+  - `cmi.command.options` – 默认：`op`
+  - `cmi.command.options.others`
+- `panimation` – 播放自定义粒子动画。
+  - `cmi.command.panimation` – 默认：`op`
+  - `cmi.command.panimation.others`
+- `patrol` – 巡逻。
+  - `cmi.command.patrol` – 默认：`op`
+- `pay` – 进行金钱交易。
+  - `cmi.command.pay` – 默认：`op`
+- `ping` – 显示玩家延迟。
+  - `cmi.command.ping` – 默认：`op`
+  - `cmi.command.ping.others`
+- `placeholders` – 列出所有占位符。
+  - `cmi.command.placeholders` – 默认：`op`
+- `playercollision` – 设置玩家的碰撞模式。
+  - `cmi.command.playercollision` – 默认：`op`
+  - `cmi.command.playercollision.others`
+- `playtime` – 显示玩家的总游戏时间。
+  - `cmi.command.playtime` – 默认：`op`
+  - `cmi.command.playtime.others`
+- `playtimetop` – 显示玩家总游戏时间排行榜。
+  - `cmi.command.playtimetop` – 默认：`op`
+- `point` – 指向方块。
+  - `cmi.command.point` – 默认：`op`
+- `portals` – 设置传送门。
+  - `cmi.command.portals` – 默认：`op`
+- `pos` – 显示玩家的当前位置。
+  - `cmi.command.pos` – 默认：`op`
+  - `cmi.command.pos.others`
+- `preview` – 加载指定范围内的区块。
+  - `cmi.command.preview` – 默认：`op`
+- `prewards` – 查看游戏时间奖励。
+  - `cmi.command.prewards` – 默认：`op`
+  - `cmi.command.prewards.others`
+- `ptime` – 控制玩家的个人时间。
+  - `cmi.command.ptime` – 默认：`op`
+  - `cmi.command.ptime.others`
+- `purge` – 根据未活动天数，清理世界目录中的玩家数据。
+  - `cmi.command.purge` – 默认：`op`
+- `pweather` – 控制玩家的个人天气。
+  - `cmi.command.pweather` – 默认：`op`
+  - `cmi.command.pweather.others`
+- `rankdown` – 降低自己的等级。
+  - `cmi.command.rankdown` – 默认：`op`
+  - `cmi.command.rankdown.others`
+- `rankinfo` – 查看自己的等级信息。
+  - `cmi.command.rankinfo` – 默认：`op`
+  - `cmi.command.rankinfo.others`
+- `ranklist` – 列出可用等级。
+  - `cmi.command.ranklist` – 默认：`op`
+- `rankset` – 设置玩家等级。
+  - `cmi.command.rankset` – 默认：`op`
+  - `cmi.command.rankset.others`
+- `rankup` – 提升自己的等级。
+  - `cmi.command.rankup` – 默认：`op`
+  - `cmi.command.rankup.others`
+- `realname` – 查看玩家的真实名称。
+  - `cmi.command.realname` – 默认：`op`
+- `recipe` – 查看物品配方。
+  - `cmi.command.recipe` – 默认：`op`
+- `reload` – 重新加载插件配置和语言文件。
+  - `cmi.command.reload` – 默认：`op`
+- `removehome` – 删除家。
+  - `cmi.command.removehome` – 默认：`op`
+  - `cmi.command.removehome.others`
+- `removeuser` – 删除用户及其数据。
+  - `cmi.command.removeuser` – 默认：`op`
+- `removewarp` – 删除传送点。
+  - `cmi.command.removewarp` – 默认：`op`
+- `repair` – 修复物品。
+  - `cmi.command.repair` – 默认：`op`
+  - `cmi.command.repair.others`
+- `repaircost` – 查看物品修复费用。
+  - `cmi.command.repaircost` – 默认：`op`
+  - `cmi.command.repaircost.others`
+- `replaceblock` – 替换当前世界中你周围的方块。
+  - `cmi.command.replaceblock` – 默认：`op`
+- `reply` – 回复上一条消息的发送者。
+  - `cmi.command.reply` – 默认：`op`
+- `resetback` – 重置玩家的返回位置。
+  - `cmi.command.resetback` – 默认：`op`
+  - `cmi.command.resetback.others`
+- `resetdbfields` – 将指定的数据库列重置为默认值。
+  - `cmi.command.resetdbfields` – 默认：`op`
+- `ride` – 骑乘目标实体。
+  - `cmi.command.ride` – 默认：`op`
+- `rt` – 随机传送到一个位置。
+  - `cmi.command.rt` – 默认：`op`
+  - `cmi.command.rt.others`
+- `sameip` – 列出从同一 IP 登录的玩家。
+  - `cmi.command.sameip` – 默认：`op`
+- `saturation` – 设置玩家的饱和度。
+  - `cmi.command.saturation` – 默认：`op`
+  - `cmi.command.saturation.others`
+- `saveall` – 保存每位玩家的背包。
+  - `cmi.command.saveall` – 默认：`op`
+- `saveditems` – 保存物品，或管理已保存的物品。
+  - `cmi.command.saveditems` – 默认：`op`
+  - `cmi.command.saveditems.others`
+
+### S
+
+- `sc` – 开始复制告示牌。
+  - `cmi.command.sc` – 默认：`op`
+- `scan` – 扫描当前世界中的物品。
+  - `cmi.command.scan` – 默认：`op`
+- `scavenge` – 回收物品及其附魔。
+  - `cmi.command.scavenge` – 默认：`op`
+  - `cmi.command.scavenge.others`
+- `schedule` – 触发计划任务。
+  - `cmi.command.schedule` – 默认：`op`
+- `se` – 更改告示牌某一行的文字。
+  - `cmi.command.se` – 默认：`op`
+- `search` – 在所有用户中搜索物品、附魔、飞行（`fly`）、最大生命值（`maxhp`）、游戏模式（`gm`）、超量堆叠（`oversize`）模式及其他内容。
+  - `cmi.command.search` – 默认：`op`
+  - `cmi.command.search.others`
+- `seen` – 查看玩家最后一次在线的时间。
+  - `cmi.command.seen` – 默认：`op`
+- `select` – 管理选择区域。
+  - `cmi.command.select` – 默认：`op`
+  - `cmi.command.select.others`
+- `sell` – 出售背包中的物品。
+  - `cmi.command.sell` – 默认：`op`
+- `sendall` – 将所有在线玩家转移到目标服务器。
+  - `cmi.command.sendall` – 默认：`op`
+- `server` – 连接到 BungeeCord 服务器。
+  - `cmi.command.server` – 默认：`op`
+  - `cmi.command.server.others`
+- `serverlist` – 显示服务器列表。
+  - `cmi.command.serverlist` – 默认：`op`
+  - `cmi.command.serverlist.others`
+- `servertime` – 显示服务器时间。
+  - `cmi.command.servertime` – 默认：`op`
+- `setenchantworth` – 更改附魔价值。
+  - `cmi.command.setenchantworth` – 默认：`op`
+- `setfirstspawn` – 设置首次出生点。
+  - `cmi.command.setfirstspawn` – 默认：`op`
+- `sethome` – 设置家的位置。
+  - `cmi.command.sethome` – 默认：`op`
+  - `cmi.command.sethome.others`
+- `setmotd` – 设置服务器 `motd`。
+  - `cmi.command.setmotd` – 默认：`op`
+- `setrt` – 设置随机传送边界。
+  - `cmi.command.setrt` – 默认：`op`
+- `setspawn` – 设置 `spawn` 命令的传送位置。
+  - `cmi.command.setspawn` – 默认：`op`
+- `setwarp` – 设置传送点位置。
+  - `cmi.command.setwarp` – 默认：`op`
+- `setworth` – 更改物品价值。
+  - `cmi.command.setworth` – 默认：`op`
+- `shadowmute` – 禁言玩家，但不告知其已被禁言。
+  - `cmi.command.shadowmute` – 默认：`op`
+- `shakeitoff` – 让骑乘在你身上的所有实体下来。
+  - `cmi.command.shakeitoff` – 默认：`op`
+- `shoot` – 发射投射物。
+  - `cmi.command.shoot` – 默认：`op`
+  - `cmi.command.shoot.others`
+- `silence` – 屏蔽公共消息。
+  - `cmi.command.silence` – 默认：`op`
+- `silentchest` – 切换静默开箱模式。
+  - `cmi.command.silentchest` – 默认：`op`
+- `sit` – 在当前位置坐下。
+  - `cmi.command.sit` – 默认：`op`
+  - `cmi.command.sit.others`
+- `skin` – 更改玩家皮肤。
+  - `cmi.command.skin` – 默认：`op`
+  - `cmi.command.skin.others`
+- `smite` – 用闪电击中地面或玩家。
+  - `cmi.command.smite` – 默认：`op`
+  - `cmi.command.smite.others`
+- `smithingtable` – 打开锻造台。
+  - `cmi.command.smithingtable` – 默认：`op`
+  - `cmi.command.smithingtable.others`
+- `solve` – 解方程。
+  - `cmi.command.solve` – 默认：`op`
+- `sound` – 在目标位置播放声音。
+  - `cmi.command.sound` – 默认：`op`
+  - `cmi.command.sound.others`
+- `spawn` – 传送回出生点。
+  - `cmi.command.spawn` – 默认：`op`
+  - `cmi.command.spawn.others`
+- `spawner` – 设置刷怪笼。
+  - `cmi.command.spawner` – 默认：`op`
+- `spawnereditor` – 编辑刷怪笼。
+  - `cmi.command.spawnereditor` – 默认：`op`
+- `spawnmob` – 在你的位置生成实体。
+  - `cmi.command.spawnmob` – 默认：`op`
+- `speed` – 设置玩家的行走或飞行速度。
+  - `cmi.command.speed` – 默认：`op`
+  - `cmi.command.speed.others`
+- `staffmsg` – 向工作人员频道发送消息。
+  - `cmi.command.staffmsg` – 默认：`op`
+- `stats` – 查看玩家的统计信息。
+  - `cmi.command.stats` – 默认：`op`
+  - `cmi.command.stats.others`
+- `statsedit` – 编辑玩家的统计数据。
+  - `cmi.command.statsedit` – 默认：`op`
+- `status` – 显示服务器状态。
+  - `cmi.command.status` – 默认：`op`
+- `stonecutter` – 打开切石机。
+  - `cmi.command.stonecutter` – 默认：`op`
+  - `cmi.command.stonecutter.others`
+- `sudo` – 强制其他玩家执行命令。
+  - `cmi.command.sudo` – 默认：`op`
+- `suicide` – 自杀。
+  - `cmi.command.suicide` – 默认：`op`
+  - `cmi.command.suicide.others`
+- `switchplayerdata` – 将一名玩家的所有数据转移给另一名玩家。
+  - `cmi.command.switchplayerdata` – 默认：`op`
+
+### T–W
+
+- `tablistupdate` – 强制更新所有玩家或指定玩家的 Tab 列表。
+  - `cmi.command.tablistupdate` – 默认：`op`
+- `tempban` – 临时封禁玩家。
+  - `cmi.command.tempban` – 默认：`op`
+- `tempipban` – 临时封禁 IP。
+  - `cmi.command.tempipban` – 默认：`op`
+- `tfly` – 为玩家设置临时飞行模式，持续到重新登录或时间结束。
+  - `cmi.command.tfly` – 默认：`op`
+  - `cmi.command.tfly.others`
+- `tgod` – 为玩家设置临时无敌模式，持续到重新登录或时间结束。
+  - `cmi.command.tgod` – 默认：`op`
+  - `cmi.command.tgod.others`
+- `time` – 控制服务器时间。
+  - `cmi.command.time` – 默认：`op`
+- `titlemsg` – 向玩家发送标题消息。
+  - `cmi.command.titlemsg` – 默认：`op`
+- `toast` – 向玩家发送 Toast 消息。
+  - `cmi.command.toast` – 默认：`op`
+- `top` – 传送到当前位置的最高点。
+  - `cmi.command.top` – 默认：`op`
+  - `cmi.command.top.others`
+- `tp` – 传送到玩家的位置。
+  - `cmi.command.tp` – 默认：`op`
+  - `cmi.command.tp.others`
+- `tpa` – 请求传送到玩家的位置。
+  - `cmi.command.tpa` – 默认：`op`
+- `tpaall` – 请求所有在线玩家传送到你的位置。
+  - `cmi.command.tpaall` – 默认：`op`
+- `tpaccept` – 接受传送请求。
+  - `cmi.command.tpaccept` – 默认：`op`
+- `tpahere` – 请求玩家接受传送到你的位置。
+  - `cmi.command.tpahere` – 默认：`op`
+- `tpall` – 将所有在线玩家传送到指定位置。
+  - `cmi.command.tpall` – 默认：`op`
+- `tpallworld` – 将指定世界中的所有玩家传送走。
+  - `cmi.command.tpallworld` – 默认：`op`
+- `tpbypass` – 绕过对传送到不安全位置的限制。
+  - `cmi.command.tpbypass` – 默认：`op`
+  - `cmi.command.tpbypass.others`
+- `tpdeny` – 拒绝传送请求。
+  - `cmi.command.tpdeny` – 默认：`op`
+- `tphere` – 将玩家传送到你的位置。
+  - `cmi.command.tphere` – 默认：`op`
+  - `cmi.command.tphere.others`
+- `tpo` – 强制传送到玩家的位置。
+  - `cmi.command.tpo` – 默认：`op`
+  - `cmi.command.tpo.others`
+- `tpohere` – 将玩家强制传送到你的位置。
+  - `cmi.command.tpohere` – 默认：`op`
+  - `cmi.command.tpohere.others`
+- `tpopos` – 强制传送到指定位置。
+  - `cmi.command.tpopos` – 默认：`op`
+  - `cmi.command.tpopos.others`
+- `tppos` – 传送到指定位置。
+  - `cmi.command.tppos` – 默认：`op`
+  - `cmi.command.tppos.others`
+- `tps` – 检查服务器的 TPS 状态。
+  - `cmi.command.tps` – 默认：`op`
+- `tree` – 在视线所指的位置生成树木。
+  - `cmi.command.tree` – 默认：`op`
+  - `cmi.command.tree.others`
+- `unban` – 解除玩家或 IP 的封禁。
+  - `cmi.command.unban` – 默认：`op`
+- `unbreakable` – 使物品无法损坏。
+  - `cmi.command.unbreakable` – 默认：`op`
+  - `cmi.command.unbreakable.others`
+- `uncondense` – 将物品解压缩为较小的组成物品。
+  - `cmi.command.uncondense` – 默认：`op`
+  - `cmi.command.uncondense.others`
+- `unjail` – 将玩家从监狱中释放。
+  - `cmi.command.unjail` – 默认：`op`
+- `unloadchunks` – 从服务器内存中卸载区块。
+  - `cmi.command.unloadchunks` – 默认：`op`
+- `unmute` – 解除玩家禁言。
+  - `cmi.command.unmute` – 默认：`op`
+- `unmutechat` – 解除公共聊天禁言。
+  - `cmi.command.unmutechat` – 默认：`op`
+- `usermeta` – 管理玩家元数据。
+  - `cmi.command.usermeta` – 默认：`op`
+- `util` – 管理工具。
+  - `cmi.command.util` – 默认：`op`
+- `vanish` – 使玩家隐身。
+  - `cmi.command.vanish` – 默认：`op`
+  - `cmi.command.vanish.others`
+- `vanishedit` – 编辑玩家的隐身模式。
+  - `cmi.command.vanishedit` – 默认：`op`
+  - `cmi.command.vanishedit.others`
+- `version` – 显示插件版本。
+  - `cmi.command.version` – 默认：`op`
+- `viewrange` – 更改视距。
+  - `cmi.command.viewrange` – 默认：`op`
+  - `cmi.command.viewrange.others`
+- `voteedit` – 管理玩家的投票。
+  - `cmi.command.voteedit` – 默认：`op`
+  - `cmi.command.voteedit.others`
+- `votes` – 查看玩家投票数。
+  - `cmi.command.votes` – 默认：`op`
+  - `cmi.command.votes.others`
+- `votetop` – 查看投票排行榜。
+  - `cmi.command.votetop` – 默认：`op`
+  - `cmi.command.votetop.others`
+- `walkspeed` – 将玩家的行走速度设为 0 到 10。
+  - `cmi.command.walkspeed` – 默认：`op`
+  - `cmi.command.walkspeed.others`
+- `warn` – 警告玩家。
+  - `cmi.command.warn` – 默认：`op`
+- `warnings` – 查看玩家的警告记录。
+  - `cmi.command.warnings` – 默认：`op`
+  - `cmi.command.warnings.others`
+- `warp` – 传送到传送点。
+  - `cmi.command.warp` – 默认：`op`
+  - `cmi.command.warp.others`
+- `warpgroups` – 列出传送点组。
+  - `cmi.command.warpgroups` – 默认：`op`
+- `weather` – 控制服务器天气。
+  - `cmi.command.weather` – 默认：`op`
+- `whowas` – 显示玩家曾用名。
+  - `cmi.command.whowas` – 默认：`op`
+- `workbench` – 打开工作台。
+  - `cmi.command.workbench` – 默认：`op`
+  - `cmi.command.workbench.others`
+- `world` – 传送到其他世界。
+  - `cmi.command.world` – 默认：`op`
+  - `cmi.command.world.others`
+- `worth` – 查看物品价值。
+  - `cmi.command.worth` – 默认：`op`
+- `worthlist` – 查看已设置出售价格的物品列表。
+  - `cmi.command.worthlist` – 默认：`op`
+  - `cmi.command.worthlist.others`
+
+---
+
+[查看原文](https://www.zrips.net/cmi/permissions/)

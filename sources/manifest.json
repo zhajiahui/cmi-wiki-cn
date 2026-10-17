@@ -1,0 +1,407 @@
+[
+  {
+    "title": "全息图 API",
+    "source": "https://www.zrips.net/cmi/hologram-api/",
+    "source_id": 4998,
+    "source_modified": "2026-09-12T13:39:41",
+    "file": "hologram-api.md",
+    "source_sha256": "8cb46452edd47c1156b8085bf9800668c2b91e6af9144bf378c5d384d8842953",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "BungeeCord 跨服",
+    "source": "https://www.zrips.net/cmi/bungeecord/",
+    "source_id": 2243,
+    "source_modified": "2023-10-27T17:23:10",
+    "file": "bungeecord.md",
+    "source_sha256": "f34e5f80767f1beefb2db38b0fab6c8c72e636f2a1d4ede12593a9c8487498e6",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "十六进制颜色",
+    "source": "https://www.zrips.net/cmi/hex-colors/",
+    "source_id": 1437,
+    "source_modified": "2025-05-08T09:55:02",
+    "file": "hex-colors.md",
+    "source_sha256": "77cda9f7aac45ca03e37b7e130fbc1408c6285f1a7096c005701e1c061a7eeb7",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "自定义事件 API",
+    "source": "https://www.zrips.net/cmi/api/",
+    "source_id": 855,
+    "source_modified": "2026-04-09T14:12:43",
+    "file": "api.md",
+    "source_sha256": "e08ceb3e462c008ca122f12a008f8827f061130f05485cdcf3748330b7506b6f",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "常见问题",
+    "source": "https://www.zrips.net/cmi/faq/",
+    "source_id": 730,
+    "source_modified": "2022-11-19T15:04:17",
+    "file": "faq.md",
+    "source_sha256": "28365dfc8fa69107ad01f0a3da77e6a724a4fea4ff0b5b675fa6a73c1cc63607",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "首次运行",
+    "source": "https://www.zrips.net/cmi/first-run/",
+    "source_id": 316,
+    "source_modified": "2025-05-22T13:01:45",
+    "file": "first-run.md",
+    "source_sha256": "f9643e14a5f7ecf2445a13524c2f682c94974c2ddd86701b1f88bf562029a485",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "监狱",
+    "source": "https://www.zrips.net/cmi/jail/",
+    "source_id": 226,
+    "source_modified": "2022-10-16T08:20:47",
+    "file": "jail.md",
+    "source_sha256": "c014758affed8abf0a9454695aeb185506d07af4f41a7f83ff5e0089cfc24d18",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "动态告示牌",
+    "source": "https://www.zrips.net/cmi/dynamic-signs/",
+    "source_id": 214,
+    "source_modified": "2025-12-06T11:20:47",
+    "file": "dynamic-signs.md",
+    "source_sha256": "86b981799eb461c7db5e677949bbdb06bc3a6b3db3c513c1d909acad777f0be3",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "在线时长奖励",
+    "source": "https://www.zrips.net/cmi/playtime-rewards/",
+    "source_id": 159,
+    "source_modified": "2024-04-30T11:47:27",
+    "file": "playtime-rewards.md",
+    "source_sha256": "bae9f5bb2d00afcd9a554db07bec556677bdafb663c63dda8b229750243f8165",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "全息图",
+    "source": "https://www.zrips.net/cmi/holograms/",
+    "source_id": 153,
+    "source_modified": "2026-09-29T11:09:20",
+    "file": "holograms.md",
+    "source_sha256": "be7a8bbc4700ff8a94aaeeb5107b08b99ec8731b0f407e35a2a78822ede469a5",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "礼包",
+    "source": "https://www.zrips.net/cmi/kits/",
+    "source_id": 141,
+    "source_modified": "2026-05-22T11:05:02",
+    "file": "kits.md",
+    "source_sha256": "38926bc3c776adc0004f255c6d73eb1025272d18cdbb990a85f52eb5c0078a79",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "自动晋级",
+    "source": "https://www.zrips.net/cmi/rankup-system/",
+    "source_id": 105,
+    "source_modified": "2026-06-12T10:15:39",
+    "file": "rankup-system.md",
+    "source_sha256": "e6efc8b5bc093584ebce7d273db7d427343e0a3c37b918effe1c0d78e0771052",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "占位符",
+    "source": "https://www.zrips.net/cmi/placeholders/",
+    "source_id": 103,
+    "source_modified": "2025-11-28T11:24:29",
+    "file": "placeholders.md",
+    "source_sha256": "bce6b4301c2da91f15b11e0f7fe29bc31427c0c9f3fb2434e1d9cf7643b7fc91",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "盔甲架编辑器",
+    "source": "https://www.zrips.net/cmi/armor-stand-editor/",
+    "source_id": 101,
+    "source_modified": "2025-12-06T11:20:41",
+    "file": "armor-stand-editor.md",
+    "source_sha256": "d9134e0a4f83c5d5a252b23f6ead49487bc87658bd1006c5020fdc7a401a3d62",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "传送门",
+    "source": "https://www.zrips.net/cmi/portals/",
+    "source_id": 97,
+    "source_modified": "2023-03-26T15:30:49",
+    "file": "portals.md",
+    "source_sha256": "81b18b05d2b94d4448db20d4348812c5516f697973c4eb303cf59eef2afd03ed",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "自定义文本",
+    "source": "https://www.zrips.net/cmi/custom-text/",
+    "source_id": 91,
+    "source_modified": "2024-09-23T12:39:33",
+    "file": "custom-text.md",
+    "source_sha256": "3047f01ff0394426e100a8da6dac915db757e9386df09e9d488d11b726ada7e1",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "指令列表",
+    "source": "https://www.zrips.net/cmi/commands/",
+    "source_id": 80,
+    "source_modified": "2026-05-15T14:29:26",
+    "file": "commands.md",
+    "source_sha256": "134263cedbfa9a7d50fc3540ea5406bbd34202baefba838b42f458eb4f80f485",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "权限节点",
+    "source": "https://www.zrips.net/cmi/permissions/",
+    "source_id": 75,
+    "source_modified": "2025-11-22T11:00:31",
+    "file": "permissions.md",
+    "source_sha256": "990a3973ad84b4bbe7e2d53c82412d1e94c6dc7da13de0888beaa6833e511ddf",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "聊天室",
+    "source": "https://www.zrips.net/cmi/extra/chat-rooms/",
+    "source_id": 4235,
+    "source_modified": "2025-05-02T11:06:50",
+    "file": "extra/chat-rooms.md",
+    "source_sha256": "ca4059116723cc810fbf39f625e5e5870b6c7748eef79e6a3a6b4465d262a3e1",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "聊天过滤",
+    "source": "https://www.zrips.net/cmi/extra/chat-filter/",
+    "source_id": 1854,
+    "source_modified": "2023-03-26T15:49:44",
+    "file": "extra/chat-filter.md",
+    "source_sha256": "96c7b4238410e9c7787e4fe70c1eedbce8f7b3136c68894877f3840b596849a2",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "物品分解",
+    "source": "https://www.zrips.net/cmi/extra/scavenge/",
+    "source_id": 1199,
+    "source_modified": "2025-12-06T11:21:01",
+    "file": "extra/scavenge.md",
+    "source_sha256": "d132e42aa42991f5a77d392c870af518def7b3eea6884ec4ddc57d9156db18a9",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "自定义生物头颅",
+    "source": "https://www.zrips.net/cmi/extra/custom-mob-heads/",
+    "source_id": 1045,
+    "source_modified": "2023-03-26T15:56:12",
+    "file": "extra/custom-mob-heads.md",
+    "source_sha256": "eda3b0193db52ad36a771f3a7f1e0231c767ee6a4409f621f0d885076822799c",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "粒子效果",
+    "source": "https://www.zrips.net/cmi/extra/particles/",
+    "source_id": 1014,
+    "source_modified": "2025-12-06T11:20:54",
+    "file": "extra/particles.md",
+    "source_sha256": "1302dfb98ac5fe779a7db820d225cd5576ea64b2837ef8da97c716bf2aadc03a",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "自定义合成配方",
+    "source": "https://www.zrips.net/cmi/extra/custom-recipes/",
+    "source_id": 381,
+    "source_modified": "2023-12-06T10:14:09",
+    "file": "extra/custom-recipes.md",
+    "source_sha256": "3248c23821ec295fe4bd807dd595ad4de96718225af45dff9bf82751928eccf0",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "电梯",
+    "source": "https://www.zrips.net/cmi/extra/elevator/",
+    "source_id": 309,
+    "source_modified": "2025-12-06T11:20:48",
+    "file": "extra/elevator.md",
+    "source_sha256": "f9d3e29b6eb34d4fc5bdd97f67d79b76b1e133d14557f20364c6f13d563d2ab5",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "Tab 列表",
+    "source": "https://www.zrips.net/cmi/extra/tablist/",
+    "source_id": 157,
+    "source_modified": "2025-06-18T10:55:39",
+    "file": "extra/tablist.md",
+    "source_sha256": "843e34aa41c7aaf130d5e02d90cd4d116c91837fe68ac01249b5fab74f73570e",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "查找玩家物品",
+    "source": "https://www.zrips.net/cmi/extra/search/",
+    "source_id": 148,
+    "source_modified": "2025-10-09T13:01:16",
+    "file": "extra/search.md",
+    "source_sha256": "71bff27b086b403c7ac9c322a3a3bf78f52b252239688096f38249867e395f35",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "扫描容器物品",
+    "source": "https://www.zrips.net/cmi/extra/scan/",
+    "source_id": 146,
+    "source_modified": "2025-05-01T09:13:31",
+    "file": "extra/scan.md",
+    "source_sha256": "14bd262a56d7e6cc30905a9f15a83696764ea31f606731f06f3ba38a9e7d91ab",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "不死图腾",
+    "source": "https://www.zrips.net/cmi/extra/totems/",
+    "source_id": 139,
+    "source_modified": "2025-12-06T11:20:42",
+    "file": "extra/totems.md",
+    "source_sha256": "c1e0f3506ea8373070419993233a15aed387e050447871b924c0d45e87c0422e",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "飞行能量",
+    "source": "https://www.zrips.net/cmi/extra/flight-charge/",
+    "source_id": 136,
+    "source_modified": "2022-10-22T10:04:44",
+    "file": "extra/flight-charge.md",
+    "source_sha256": "e938d574a18e1e02a9c7a846c8cd4a4ff871b6a3f6ef7884adc9a2e2df1946d1",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "对话框",
+    "source": "https://www.zrips.net/cmi/commands/dialogs/",
+    "source_id": 4344,
+    "source_modified": "2025-11-19T09:32:24",
+    "file": "commands/dialogs.md",
+    "source_sha256": "59ddbded7dfa336bba173f6ccf1ccf4a26ef27ebcccf48b331a1ec42918209d1",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "一行创建物品",
+    "source": "https://www.zrips.net/cmi/commands/icwol/",
+    "source_id": 3498,
+    "source_modified": "2023-11-10T17:31:33",
+    "file": "commands/icwol.md",
+    "source_sha256": "2b1760d4e95145271dbc6bc6e17251b79f745a53ca180021d2dac2699e1eb254",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "生成生物",
+    "source": "https://www.zrips.net/cmi/commands/spawnmob/",
+    "source_id": 3318,
+    "source_modified": "2025-12-21T13:36:02",
+    "file": "commands/spawnmob.md",
+    "source_sha256": "096c87729837108b930d6912357d5694be1653908e01d23601a8828cc55ef738",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "随机传送",
+    "source": "https://www.zrips.net/cmi/commands/rtp/",
+    "source_id": 2404,
+    "source_modified": "2022-10-14T13:28:53",
+    "file": "commands/rtp.md",
+    "source_sha256": "aedd45524164795d74a9b059da8defe46cd4e654687cec68280c2ae17d03e0e2",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "指令预热",
+    "source": "https://www.zrips.net/cmi/commands/warmups/",
+    "source_id": 977,
+    "source_modified": "2025-12-06T11:20:50",
+    "file": "commands/warmups.md",
+    "source_sha256": "465c54f1f71cfaf87a4f1138aded176226c5ea7bef633cefa7f41069b1144fa5",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "玩家元数据",
+    "source": "https://www.zrips.net/cmi/commands/user-meta/",
+    "source_id": 253,
+    "source_modified": "2022-10-15T09:39:32",
+    "file": "commands/user-meta.md",
+    "source_sha256": "49cf9d289f545addf537b6d3b658bbda1b2959bd9587475321c5c7a111a350ce",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "传送点",
+    "source": "https://www.zrips.net/cmi/commands/warps/",
+    "source_id": 246,
+    "source_modified": "2025-12-06T11:20:47",
+    "file": "commands/warps.md",
+    "source_sha256": "173c42c4370b56d7c2029a250602cd764bffe31cbc9af4a75e9aa21aee1a1519",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "出生点",
+    "source": "https://www.zrips.net/cmi/commands/spawn/",
+    "source_id": 241,
+    "source_modified": "2022-09-26T17:52:39",
+    "file": "commands/spawn.md",
+    "source_sha256": "4cacf607cf6df563343d680a0d3e71153947e52ae008fb99a6aceca63e5d61ff",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "Boss 栏消息",
+    "source": "https://www.zrips.net/cmi/commands/bossbarmsg-handling/",
+    "source_id": 169,
+    "source_modified": "2024-01-24T16:11:38",
+    "file": "commands/bossbarmsg-handling.md",
+    "source_sha256": "0804152faff626c78901db306908525ef087049c2cd68d1336bb9d5fe3d537f4",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "清理实体",
+    "source": "https://www.zrips.net/cmi/commands/kill-all/",
+    "source_id": 155,
+    "source_modified": "2022-09-24T17:11:19",
+    "file": "commands/kill-all.md",
+    "source_sha256": "9abaefb25a3c657b0bd334f2ca6321b16eabbe5137d031091378a7523a050562",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "物品附加指令",
+    "source": "https://www.zrips.net/cmi/commands/attached-commands/",
+    "source_id": 107,
+    "source_modified": "2024-04-24T13:42:37",
+    "file": "commands/attached-commands.md",
+    "source_sha256": "faf64fe6bedab3e9df0a45ebe3d74be0bb136d6fc831669c746397810e14e3b5",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "自定义别名",
+    "source": "https://www.zrips.net/cmi/commands/custom-alias/",
+    "source_id": 89,
+    "source_modified": "2026-05-06T13:01:34",
+    "file": "commands/custom-alias.md",
+    "source_sha256": "d468614e16a97dd708de8b611af9430fdd7835e6d17468687e117430755e1bb6",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "交互指令",
+    "source": "https://www.zrips.net/cmi/commands/interactive-commands/",
+    "source_id": 86,
+    "source_modified": "2025-12-06T11:20:39",
+    "file": "commands/interactive-commands.md",
+    "source_sha256": "6798ac8dc8d082475d195c5eec532e50597dbe5debfaa0b072b3a07d221252b7",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "特殊指令",
+    "source": "https://www.zrips.net/cmi/commands/specialized/",
+    "source_id": 83,
+    "source_modified": "2026-05-15T14:04:01",
+    "file": "commands/specialized.md",
+    "source_sha256": "6d9caf1cb325422ad894e5f1c9f78576031a36b491d37f97195ffd36f8f56ff7",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "前言",
+    "source": "https://www.zrips.net/cmi/",
+    "source_id": 65,
+    "source_modified": "2025-12-06T11:20:39",
+    "file": "index.md",
+    "source_sha256": "ed77ea34b6c1ad7ef8acb4f144650cd9a09b6544fc8407097bb203c5fe0d8cb3",
+    "translation_review": "reviewed"
+  }
+]

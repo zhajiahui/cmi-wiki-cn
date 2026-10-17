@@ -1,0 +1,470 @@
+[
+  {
+    "id": 4998,
+    "parent": 65,
+    "slug": "hologram-api",
+    "link": "https://www.zrips.net/cmi/hologram-api/",
+    "title": "Hologram API",
+    "modified": "2026-09-12T13:39:41",
+    "chars": 114155,
+    "text_chars": 13405
+  },
+  {
+    "id": 2243,
+    "parent": 65,
+    "slug": "bungeecord",
+    "link": "https://www.zrips.net/cmi/bungeecord/",
+    "title": "BungeeCord Information",
+    "modified": "2023-10-27T17:23:10",
+    "chars": 9232,
+    "text_chars": 7056
+  },
+  {
+    "id": 1437,
+    "parent": 65,
+    "slug": "hex-colors",
+    "link": "https://www.zrips.net/cmi/hex-colors/",
+    "title": "Hex colors",
+    "modified": "2025-05-08T09:55:02",
+    "chars": 419766,
+    "text_chars": 36265
+  },
+  {
+    "id": 855,
+    "parent": 65,
+    "slug": "api",
+    "link": "https://www.zrips.net/cmi/api/",
+    "title": "API",
+    "modified": "2026-04-09T14:12:43",
+    "chars": 29001,
+    "text_chars": 4981
+  },
+  {
+    "id": 730,
+    "parent": 65,
+    "slug": "faq",
+    "link": "https://www.zrips.net/cmi/faq/",
+    "title": "FAQ",
+    "modified": "2022-11-19T15:04:17",
+    "chars": 17475,
+    "text_chars": 5447
+  },
+  {
+    "id": 316,
+    "parent": 65,
+    "slug": "first-run",
+    "link": "https://www.zrips.net/cmi/first-run/",
+    "title": "First Run",
+    "modified": "2025-05-22T13:01:45",
+    "chars": 3198,
+    "text_chars": 1926
+  },
+  {
+    "id": 226,
+    "parent": 65,
+    "slug": "jail",
+    "link": "https://www.zrips.net/cmi/jail/",
+    "title": "Jail",
+    "modified": "2022-10-16T08:20:47",
+    "chars": 37364,
+    "text_chars": 6262
+  },
+  {
+    "id": 214,
+    "parent": 65,
+    "slug": "dynamic-signs",
+    "link": "https://www.zrips.net/cmi/dynamic-signs/",
+    "title": "Dynamic Signs",
+    "modified": "2025-12-06T11:20:47",
+    "chars": 22122,
+    "text_chars": 2299
+  },
+  {
+    "id": 161,
+    "parent": 65,
+    "slug": "extra",
+    "link": "https://www.zrips.net/cmi/extra/",
+    "title": "Extra Features",
+    "modified": "2021-09-19T10:18:12",
+    "chars": 0,
+    "text_chars": 0
+  },
+  {
+    "id": 159,
+    "parent": 65,
+    "slug": "playtime-rewards",
+    "link": "https://www.zrips.net/cmi/playtime-rewards/",
+    "title": "PlayTime Rewards",
+    "modified": "2024-04-30T11:47:27",
+    "chars": 10705,
+    "text_chars": 4487
+  },
+  {
+    "id": 153,
+    "parent": 65,
+    "slug": "holograms",
+    "link": "https://www.zrips.net/cmi/holograms/",
+    "title": "Holograms",
+    "modified": "2026-09-29T11:09:20",
+    "chars": 119089,
+    "text_chars": 29755
+  },
+  {
+    "id": 141,
+    "parent": 65,
+    "slug": "kits",
+    "link": "https://www.zrips.net/cmi/kits/",
+    "title": "Kits",
+    "modified": "2026-05-22T11:05:02",
+    "chars": 17073,
+    "text_chars": 4003
+  },
+  {
+    "id": 105,
+    "parent": 65,
+    "slug": "rankup-system",
+    "link": "https://www.zrips.net/cmi/rankup-system/",
+    "title": "Rankup System",
+    "modified": "2026-06-12T10:15:39",
+    "chars": 30019,
+    "text_chars": 9907
+  },
+  {
+    "id": 103,
+    "parent": 65,
+    "slug": "placeholders",
+    "link": "https://www.zrips.net/cmi/placeholders/",
+    "title": "CMI PlaceHolders",
+    "modified": "2025-11-28T11:24:29",
+    "chars": 51416,
+    "text_chars": 18468
+  },
+  {
+    "id": 101,
+    "parent": 65,
+    "slug": "armor-stand-editor",
+    "link": "https://www.zrips.net/cmi/armor-stand-editor/",
+    "title": "Armor Stand Editor",
+    "modified": "2025-12-06T11:20:41",
+    "chars": 9600,
+    "text_chars": 2186
+  },
+  {
+    "id": 97,
+    "parent": 65,
+    "slug": "portals",
+    "link": "https://www.zrips.net/cmi/portals/",
+    "title": "Portals",
+    "modified": "2023-03-26T15:30:49",
+    "chars": 28956,
+    "text_chars": 5948
+  },
+  {
+    "id": 91,
+    "parent": 65,
+    "slug": "custom-text",
+    "link": "https://www.zrips.net/cmi/custom-text/",
+    "title": "Custom Text",
+    "modified": "2024-09-23T12:39:33",
+    "chars": 23373,
+    "text_chars": 8446
+  },
+  {
+    "id": 80,
+    "parent": 65,
+    "slug": "commands",
+    "link": "https://www.zrips.net/cmi/commands/",
+    "title": "CMI Commands",
+    "modified": "2026-05-15T14:29:26",
+    "chars": 321471,
+    "text_chars": 42851
+  },
+  {
+    "id": 75,
+    "parent": 65,
+    "slug": "permissions",
+    "link": "https://www.zrips.net/cmi/permissions/",
+    "title": "CMI Permissions",
+    "modified": "2025-11-22T11:00:31",
+    "chars": 94861,
+    "text_chars": 50148
+  },
+  {
+    "id": 727,
+    "parent": 730,
+    "slug": "import-from-essentials",
+    "link": "https://www.zrips.net/cmi/faq/import-from-essentials/",
+    "title": "Import From Essentials",
+    "modified": "2019-02-15T15:16:05",
+    "chars": 0,
+    "text_chars": 0
+  },
+  {
+    "id": 4235,
+    "parent": 161,
+    "slug": "chat-rooms",
+    "link": "https://www.zrips.net/cmi/extra/chat-rooms/",
+    "title": "Chat Rooms",
+    "modified": "2025-05-02T11:06:50",
+    "chars": 15741,
+    "text_chars": 2988
+  },
+  {
+    "id": 1854,
+    "parent": 161,
+    "slug": "chat-filter",
+    "link": "https://www.zrips.net/cmi/extra/chat-filter/",
+    "title": "Chat filter",
+    "modified": "2023-03-26T15:49:44",
+    "chars": 32475,
+    "text_chars": 10401
+  },
+  {
+    "id": 1199,
+    "parent": 161,
+    "slug": "scavenge",
+    "link": "https://www.zrips.net/cmi/extra/scavenge/",
+    "title": "Scavenge",
+    "modified": "2025-12-06T11:21:01",
+    "chars": 4889,
+    "text_chars": 2685
+  },
+  {
+    "id": 1045,
+    "parent": 161,
+    "slug": "custom-mob-heads",
+    "link": "https://www.zrips.net/cmi/extra/custom-mob-heads/",
+    "title": "Custom Mob Heads",
+    "modified": "2023-03-26T15:56:12",
+    "chars": 53331,
+    "text_chars": 8413
+  },
+  {
+    "id": 1014,
+    "parent": 161,
+    "slug": "particles",
+    "link": "https://www.zrips.net/cmi/extra/particles/",
+    "title": "Particles",
+    "modified": "2025-12-06T11:20:54",
+    "chars": 41910,
+    "text_chars": 6726
+  },
+  {
+    "id": 381,
+    "parent": 161,
+    "slug": "custom-recipes",
+    "link": "https://www.zrips.net/cmi/extra/custom-recipes/",
+    "title": "Custom Recipes",
+    "modified": "2023-12-06T10:14:09",
+    "chars": 22808,
+    "text_chars": 1352
+  },
+  {
+    "id": 309,
+    "parent": 161,
+    "slug": "elevator",
+    "link": "https://www.zrips.net/cmi/extra/elevator/",
+    "title": "Elevator",
+    "modified": "2025-12-06T11:20:48",
+    "chars": 6231,
+    "text_chars": 743
+  },
+  {
+    "id": 157,
+    "parent": 161,
+    "slug": "tablist",
+    "link": "https://www.zrips.net/cmi/extra/tablist/",
+    "title": "TabList",
+    "modified": "2025-06-18T10:55:39",
+    "chars": 13094,
+    "text_chars": 4999
+  },
+  {
+    "id": 148,
+    "parent": 161,
+    "slug": "search",
+    "link": "https://www.zrips.net/cmi/extra/search/",
+    "title": "Search",
+    "modified": "2025-10-09T13:01:16",
+    "chars": 27536,
+    "text_chars": 4542
+  },
+  {
+    "id": 146,
+    "parent": 161,
+    "slug": "scan",
+    "link": "https://www.zrips.net/cmi/extra/scan/",
+    "title": "Scan",
+    "modified": "2025-05-01T09:13:31",
+    "chars": 28256,
+    "text_chars": 5637
+  },
+  {
+    "id": 139,
+    "parent": 161,
+    "slug": "totems",
+    "link": "https://www.zrips.net/cmi/extra/totems/",
+    "title": "Totems",
+    "modified": "2025-12-06T11:20:42",
+    "chars": 3533,
+    "text_chars": 1223
+  },
+  {
+    "id": 136,
+    "parent": 161,
+    "slug": "flight-charge",
+    "link": "https://www.zrips.net/cmi/extra/flight-charge/",
+    "title": "Flight Charge",
+    "modified": "2022-10-22T10:04:44",
+    "chars": 5178,
+    "text_chars": 2485
+  },
+  {
+    "id": 4344,
+    "parent": 80,
+    "slug": "dialogs",
+    "link": "https://www.zrips.net/cmi/commands/dialogs/",
+    "title": "Dialogs",
+    "modified": "2025-11-19T09:32:24",
+    "chars": 72012,
+    "text_chars": 24344
+  },
+  {
+    "id": 3498,
+    "parent": 80,
+    "slug": "icwol",
+    "link": "https://www.zrips.net/cmi/commands/icwol/",
+    "title": "Item creation with one liner",
+    "modified": "2023-11-10T17:31:33",
+    "chars": 45092,
+    "text_chars": 5422
+  },
+  {
+    "id": 3318,
+    "parent": 80,
+    "slug": "spawnmob",
+    "link": "https://www.zrips.net/cmi/commands/spawnmob/",
+    "title": "Spawn Mob",
+    "modified": "2025-12-21T13:36:02",
+    "chars": 45324,
+    "text_chars": 8582
+  },
+  {
+    "id": 2404,
+    "parent": 80,
+    "slug": "rtp",
+    "link": "https://www.zrips.net/cmi/commands/rtp/",
+    "title": "Random Teleport",
+    "modified": "2022-10-14T13:28:53",
+    "chars": 17028,
+    "text_chars": 7227
+  },
+  {
+    "id": 977,
+    "parent": 80,
+    "slug": "warmups",
+    "link": "https://www.zrips.net/cmi/commands/warmups/",
+    "title": "Warmups",
+    "modified": "2025-12-06T11:20:50",
+    "chars": 5578,
+    "text_chars": 1388
+  },
+  {
+    "id": 253,
+    "parent": 80,
+    "slug": "user-meta",
+    "link": "https://www.zrips.net/cmi/commands/user-meta/",
+    "title": "User Meta",
+    "modified": "2022-10-15T09:39:32",
+    "chars": 3667,
+    "text_chars": 2117
+  },
+  {
+    "id": 246,
+    "parent": 80,
+    "slug": "warps",
+    "link": "https://www.zrips.net/cmi/commands/warps/",
+    "title": "Warps",
+    "modified": "2025-12-06T11:20:47",
+    "chars": 28235,
+    "text_chars": 6024
+  },
+  {
+    "id": 241,
+    "parent": 80,
+    "slug": "spawn",
+    "link": "https://www.zrips.net/cmi/commands/spawn/",
+    "title": "Spawn",
+    "modified": "2022-09-26T17:52:39",
+    "chars": 9323,
+    "text_chars": 4119
+  },
+  {
+    "id": 169,
+    "parent": 80,
+    "slug": "bossbarmsg-handling",
+    "link": "https://www.zrips.net/cmi/commands/bossbarmsg-handling/",
+    "title": "Bossbarmsg Handling",
+    "modified": "2024-01-24T16:11:38",
+    "chars": 13473,
+    "text_chars": 4764
+  },
+  {
+    "id": 155,
+    "parent": 80,
+    "slug": "kill-all",
+    "link": "https://www.zrips.net/cmi/commands/kill-all/",
+    "title": "Kill All",
+    "modified": "2022-09-24T17:11:19",
+    "chars": 9168,
+    "text_chars": 2671
+  },
+  {
+    "id": 107,
+    "parent": 80,
+    "slug": "attached-commands",
+    "link": "https://www.zrips.net/cmi/commands/attached-commands/",
+    "title": "Attached Commands",
+    "modified": "2024-04-24T13:42:37",
+    "chars": 23515,
+    "text_chars": 4104
+  },
+  {
+    "id": 89,
+    "parent": 80,
+    "slug": "custom-alias",
+    "link": "https://www.zrips.net/cmi/commands/custom-alias/",
+    "title": "Custom Alias",
+    "modified": "2026-05-06T13:01:34",
+    "chars": 16933,
+    "text_chars": 6185
+  },
+  {
+    "id": 86,
+    "parent": 80,
+    "slug": "interactive-commands",
+    "link": "https://www.zrips.net/cmi/commands/interactive-commands/",
+    "title": "Interactive Commands",
+    "modified": "2025-12-06T11:20:39",
+    "chars": 13074,
+    "text_chars": 2384
+  },
+  {
+    "id": 83,
+    "parent": 80,
+    "slug": "specialized",
+    "link": "https://www.zrips.net/cmi/commands/specialized/",
+    "title": "Specialized Commands",
+    "modified": "2026-05-15T14:04:01",
+    "chars": 51010,
+    "text_chars": 14655
+  },
+  {
+    "id": 65,
+    "parent": 0,
+    "slug": "cmi",
+    "link": "https://www.zrips.net/cmi/",
+    "title": "CMI",
+    "modified": "2025-12-06T11:20:39"
+  }
+]

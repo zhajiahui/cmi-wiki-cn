@@ -1,0 +1,159 @@
+		<div data-elementor-type="wp-page" data-elementor-id="4235" class="elementor elementor-4235">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-fb55fad elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fb55fad" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4cc375e" data-id="4cc375e" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-a8ecdc3 elementor-widget elementor-widget-heading" data-id="a8ecdc3" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Introduction</h2>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-fe59ac5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fe59ac5" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-41ed985" data-id="41ed985" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ae12202 elementor-widget elementor-widget-text-editor" data-id="ae12202" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Chat rooms allows you to create temporary or persistent places where players can talk in bigger groups. This is separate from general chat and provides more customization. Player can join only one chat room at the time, but he can see more than that</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-d0b4113 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d0b4113" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-cfee101" data-id="cfee101" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-bd58194 elementor-widget elementor-widget-heading" data-id="bd58194" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Commands</h2>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-0a4c5cf elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0a4c5cf" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-599c21d" data-id="599c21d" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ecf3777 elementor-widget elementor-widget-text-editor" data-id="ecf3777" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<pre>/cmi chat create [chatRoomName] (-private) (-locked) (-persistent)</pre><p>Creating chat rooms will require unique name of it, this doesn&#8217;t have any specific limitations on what it can be, only defines ID of this particular chat room</p><p><strong>-private</strong> will make chat room only accessible with invitation, this will require you to have  <strong>cmi.command.chat.create.private </strong>permission node to create. Without this variable all chat rooms will be public and anyone will be able to join it</p><p><strong>-locked</strong> Mainly used when you have to force players to remain in this chat room without them being able to leave it. Can be useful when you want to have staff &#8220;interrogation&#8221; room. You will need to have <strong>cmi.command.chat.create.locked </strong>permission node for it</p><p><strong>-persistent</strong> Creates chat room which persists after server restart. By default chat rooms are temporary and will disappear either after server restart or after certain amount of time is passed when last user left that chat room. Requires <strong>cmi.command.chat.create.persistent </strong>permission node</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-54d4408 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="54d4408" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fb66a6f" data-id="fb66a6f" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5c6647e elementor-widget elementor-widget-text-editor" data-id="5c6647e" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<pre>/cmi chat join [chatRoomName]</pre><p>Joins defined chat room. This is limited to chat rooms which are public, or you have invite, or you are owner of it. Limitations of joining can be bypassed with <strong>cmi.command.chat.joinbypass</strong> permission node</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-e07ed48 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e07ed48" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7238060" data-id="7238060" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-8cb4a63 elementor-widget elementor-widget-text-editor" data-id="8cb4a63" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<pre>/cmi chat invite [playerName]</pre><p>Sends invite to the player to join your current chat room. Player needs to have <strong>cmi.command.chat.invite</strong> permission node</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-0874474 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0874474" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3d40962" data-id="3d40962" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4e1196f elementor-widget elementor-widget-text-editor" data-id="4e1196f" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<pre>/cmi chat leave</pre><p>Leaves current chat room if you are in one. Player can&#8217;t leave <strong>-locked</strong> chat rooms unless they have <strong>cmi.command.chat.leave.locked</strong> permission node</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-fadc96a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fadc96a" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-859f311" data-id="859f311" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-cc35576 elementor-widget elementor-widget-text-editor" data-id="cc35576" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<pre>/cmi chat kick [playerName]</pre><p>Can kick players out of chat rooms. This can only be done by chat room owner and needs to have <strong>cmi.command.chat.kick</strong> permission node</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3aa9a38 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3aa9a38" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a5c0015" data-id="a5c0015" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5e27d38 elementor-widget elementor-widget-text-editor" data-id="5e27d38" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<pre>/cmi chat force [playerName] (chatRoomName)</pre><p>Can force player to join specific chat room. This will bypass players limitations to join chat room, but command sender needs to have <strong>cmi.command.chat.force </strong>or command needs to be sent from console.<br />Chat room name is optional if command sender is player who is already in a chat room</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-9e052b2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9e052b2" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1944376" data-id="1944376" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-48aef59 elementor-widget elementor-widget-text-editor" data-id="48aef59" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<pre>/cmi chat see (chatRoomName)</pre><p>Allows to see messages from defined chat room without joining it. You can&#8217;t see chat rooms you are not allowed to join. This command requires <strong>cmi.command.chat.see</strong> permission node, while <strong>cmi.command.chat.seebypass </strong>can allow you to see chat rooms you are not allowed to join.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-406c019 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="406c019" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b3e1986" data-id="b3e1986" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-30cefd8 elementor-widget elementor-widget-text-editor" data-id="30cefd8" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<pre>/cmi chat unsee (chatRoomName)</pre><p>Allows to unsee messages from defined chat room. This command requires <strong>cmi.command.chat.see</strong> permission node.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-ba0dca9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ba0dca9" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a191734" data-id="a191734" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-c893cba elementor-widget elementor-widget-text-editor" data-id="c893cba" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<pre>/cmi chat list</pre><p>Lists all players in your current chat room. This requires <strong>cmi.command.chat.list</strong> permission node</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-0f6951b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0f6951b" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d120a20" data-id="d120a20" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e58bb47 elementor-widget elementor-widget-text-editor" data-id="e58bb47" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<pre>/cmi chat listrooms</pre><p>Lists all active chat rooms you can join. This requires <strong>cmi.command.chat.listrooms</strong> permission node</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		

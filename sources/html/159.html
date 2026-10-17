@@ -1,0 +1,72 @@
+		<div data-elementor-type="wp-post" data-elementor-id="159" class="elementor elementor-159">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-aa75325 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="aa75325" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6310910" data-id="6310910" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-b12d92f elementor-widget elementor-widget-text-editor" data-id="b12d92f" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span><strong>Playtime rewards</strong> is a system where you can perform commands when a player accumulates a particular amount of playtime on the server. </span></p><p><span>You can perform the command every X seconds or for X seconds in total. So you can make regular payments for each 1-hour playtime and give a bigger reward for 6 hours in total or even for 24 hours.</span></p><p><span>The default command </span><code><b>/cmi prewards</b></code><span> alias is enabled by default and its </span><b>/prewards</b><span> will show a playtime reward list where you can check upcoming rewards and claim some.</span></p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-475533b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="475533b" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-6c38aee" data-id="6c38aee" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2d3a893 elementor-widget elementor-widget-image" data-id="2d3a893" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="500" height="97" src="https://www.zrips.net/wp-content/uploads/2019/02/playtimerewards-1.jpg" class="attachment-large size-large wp-image-844" alt="" srcset="https://www.zrips.net/wp-content/uploads/2019/02/playtimerewards-1.jpg 500w, https://www.zrips.net/wp-content/uploads/2019/02/playtimerewards-1-300x58.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-f508325" data-id="f508325" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-a300a29 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a300a29" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ef8315f" data-id="ef8315f" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-a02fe5d elementor-widget elementor-widget-text-editor" data-id="a02fe5d" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span>Default example:</span></p><div class="bbCodeBlock bbCodeCode"><pre class="code">hourly1:<br />  DisplayName: "&amp;7Hourly reward"<br />  AutoClaim: true<br />  Description:<br />  - "&amp;2Get reward for every hour you are online"<br />  - "&amp;2Free heal and 20 bucks into your pocket"<br />  PayEvery: 3600<br />  Commands:<br />  - asConsole! cmi heal [playerName] -s<br />  - asConsole! cmi money give [playerName] 20<br />daily1:<br />  DisplayName: "&amp;7Daily reward"<br />  AutoClaim: true<br />  Description:<br />  - "&amp;2Get reward for every 24 hours of playtime"<br />  - "&amp;22000 bucks into your pocket!"<br />  PayEvery: 86400<br />  Commands:<br />  - asConsole! cmi money give [playerName] 2000<br />1hour:<br />  DisplayName: "&amp;fOne hour reward"<br />  AutoClaim: false<br />  Description:<br />  - "&amp;2Get reward for 1 hour you have been online"<br />  - "&amp;2500 bucks into your pocket!"<br />  PayFor: 3600<br />  Commands:<br />  - asConsole! cmi money give [playerName] 500<br />6hour:<br />  DisplayName: "&amp;f6 hour reward"<br />  AutoClaim: false<br />  Description:<br />  - "&amp;2Get reward for 6 hour's you have been online"<br />  - "&amp;22 000 bucks into your pocket!"<br />  PayFor: 21600<br />  Commands:<br />  - asConsole! cmi money give [playerName] 2000<br />12hour:<br />  DisplayName: "&amp;f12 hour reward"<br />  AutoClaim: false<br />  Description:<br />  - "&amp;2Get reward for 12 hour's you have been online"<br />  - "&amp;25 000 bucks into your pocket!"<br />  PayFor: 43200<br />  Commands:<br />  - asConsole! cmi money give [playerName] 5000<br />24hour:<br />  DisplayName: "&amp;f24 hour reward"<br />  AutoClaim: false<br />  Description:<br />  - "&amp;2Get reward for 24 hour's you have been online"<br />  - "&amp;215 000 bucks into your pocket!"<br />  PayFor: 86400<br />  Commands:<br />  - asConsole! cmi money give [playerName] 15000<br />7days:<br />  DisplayName: "&amp;f7 day reward"<br />  AutoClaim: false<br />  Description:<br />  - "&amp;2Get reward for 7 days you have been online"<br />  - "&amp;250 000 bucks into your pocket!"<br />  PayFor: 604800<br />  Commands:<br />  - asConsole! cmi money give [playerName] 50000<br />30days:<br />  DisplayName: "&amp;f30 day reward"<br />  AutoClaim: false<br />  Description:<br />  - "&amp;2Get reward for 30 days you have been online"<br />  - "&amp;2500 000 bucks into your pocket!"<br />  PayFor: 2592000<br />  Commands:<br />  - asConsole! cmi money give [playerName] 500000</pre></div><p><span>In the above example &#8220;</span><b>hourly1</b><span>&#8221; is the unique identification for that playtime reward (further known as PTR). You can make anything you want, but it should be different for each PTR. Avoid using extended characters, spaces, or underscores. Keep it short and simple for the unique identifier. </span></p><p><b>DisplayName<span> </span></b><span>&#8211; will define the name which will be shown in the reward list. You can use color codes to separate you from others. Can be anything you want.</span></p><p><b>AutoClaim<span> </span></b><span>&#8211; This will define if the reward will be given out automatically to the player when he reaches a target, or if they will have to claim it manually. If it&#8217;s manual, then the player gets a reminder every X minutes (configurable in the config file) that he has some awaiting rewards. To see messages he has to have </span><b>cmi.prewards.notification<span> </span></b><span>permission node.</span></p><p><b>Description<span> </span></b><span>&#8211; Will define the description for that reward which will be shown when hovering over the reward list. You can add as many lines as you want and use color codes if needed.</span></p><p><b>PayFor<span> </span></b><span>&#8211; will define time in seconds when to give out a reward. This, in particular, will pay only once and when the player reaches a certain amount of playtime in total.</span></p><p><b>PayEvery<span> </span></b><span>&#8211; is a repeating reward for each x seconds played on the server.</span></p><p><b>StackRewards</b><span> &#8211; True or False. Defaults to True if not provided. Defines if you want to stack rewards and allow for the player to get more than one reward at a time if he stacked them.</span></p><p><b>Commands<span> </span></b><span>&#8211; List of commands to perform when the reward is being claimed. Supports </span><a href="https://www.zrips.net/cmi/commands/specialized/" class="internalLink"><b>specialized commands</b></a><span>.</span></p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-5c813a7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5c813a7" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d449505" data-id="d449505" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f51cf10 elementor-widget elementor-widget-heading" data-id="f51cf10" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Commands, Permissions, &amp; Placeholders</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e30ea9b elementor-widget elementor-widget-text-editor" data-id="e30ea9b" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><strong>Commands</strong>:</p><pre>&gt; cmi checkcommand reward
+ --------------------------------------------------
+ /cmi prewards (playerName)
+&gt;
+</pre><p><strong>Permissions</strong>:</p><pre>&gt; cmi checkperm reward
+ --------------------------------------------------
+ cmi.command.prewards.others.claim - Allows to claim rewards for others
+ cmi.command.prewards - Check playtime rewards
+ cmi.command.prewards.others - Check playtime rewards
+ cmi.prewards.[preward] - Allows to get particular playtime reward
+ cmi.prewards.notification - Allows to see playtime rewards notifications
+&gt;
+</pre><p><strong>Placeholders</strong>:</p><pre>%cmi_user_prewards_count%
+</pre>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		
