@@ -50,9 +50,9 @@ source_version: 0.8.0
 
 ## 添加交互边界 {#adding-the-interaction-bound}
 
-要添加交互绑定，请右键单击`On Entity Interact Event`条目并选择`Link with ...`，搜索`Lock Interaction Bound`并将其添加到序列中。
+要添加交互边界，请右键单击`On Entity Interact Event`条目并选择`Link with ...`，搜索`Lock Interaction Bound`并将其添加到序列中。
 
-添加锁交互绑定
+添加锁交互边界
 
 锁定玩家镜头的交互边界
 

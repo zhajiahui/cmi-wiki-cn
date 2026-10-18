@@ -23,7 +23,7 @@ InteractionBounds 在三种状态下运行：
 
 ## 实现 {#implementation}
 
-以下是创建交互绑定的方法：
+以下是创建交互边界的方法：
 
 ExampleInteractionBound.kt
 

@@ -10,7 +10,7 @@ source_version: 0.8.0
 
 最好先阅读[任务系统](../questing.md)的理论和[与 NPC 对话目标](talk-objective.md)的实践！
 
-在本教程中，你将学习如何使用Typewriter的任务跟踪系统和占位符向玩家显示任务信息。
+在本教程中，你将学习如何使用Typewriter的任务追踪系统和占位符向玩家显示任务信息。
 
 ## 理解任务追踪 {#understanding-quest-tracking}
 
@@ -18,11 +18,11 @@ Typewriter 在后台通过**事实**记录任务进度。这些事实决定任�
 
 **大图**
 
-将任务跟踪视为聚光灯。虽然许多任务可能处于活动状态，但跟踪会将一个任务置于聚光灯下，供玩家关注。
+将任务追踪视为聚光灯。虽然许多任务可能处于活动状态，但跟踪会将一个任务置于聚光灯下，供玩家关注。
 
 ### 追踪如何工作 {#how-tracking-works}
 
-当任务被跟踪时，它会成为玩家在任务显示中看到的“突出显示”任务。此跟踪任务成为记分板、侧边栏和自定义 UI 等所有显示系统的焦点，让玩家专注于当前目标。
+当任务被跟踪时，它会成为玩家在任务显示中看到的“突出显示”任务。此追踪任务成为记分板、侧边栏和自定义 UI 等所有显示系统的焦点，让玩家专注于当前目标。
 
 **一次一个任务**
 
@@ -32,10 +32,10 @@ Typewriter 在后台通过**事实**记录任务进度。这些事实决定任�
 
 ### 自动追踪 {#automatic-tracking}
 
-Typewriter在以下情况下自动跟踪任务：
+Typewriter在以下情况下自动追踪任务：
 
 - 当任务激活时
-- 当目标变得活跃并且优先级高于当前跟踪的目标时
+- 当目标变得活跃并且优先级高于当前追踪的目标时
 
 因此，大多数情况下无需手动管理任务追踪，Typewriter 会自动处理。
 
@@ -43,13 +43,13 @@ Typewriter在以下情况下自动跟踪任务：
 
 有时你想要完全控制跟踪哪个任务。
 
-你可以使用以下命令手动跟踪任务：
+你可以使用以下命令手动追踪任务：
 
 ```text
 /tw quest track <quest_id>
 ```
 
-或者通过在任务流程中使用**跟踪任务操作**条目。
+或者通过在任务流程中使用**追踪任务操作**条目。
 
 添加追踪任务
 
@@ -59,19 +59,19 @@ Typewriter在以下情况下自动跟踪任务：
 
 ## 用占位符显示任务信息 {#displaying-quest-information-with-placeholders}
 
-现在你已经了解了跟踪，让我们看看如何实际向玩家显示任务信息。Typewriter提供了几个占位符，可以动态显示有关当前跟踪的任务的信息。
+现在你已经了解了跟踪，让我们看看如何实际向玩家显示任务信息。Typewriter提供了几个占位符，可以动态显示有关当前追踪的任务的信息。
 
 ### 可用的占位符 {#available-placeholders}
 
 |占位符 |描述 |示例输出 |
 | --- | --- | --- |
-|`%typewriter_tracked_quest%`|跟踪任务的显示名称 |`Kill Zombie Quest`|
+|`%typewriter_tracked_quest%`|追踪任务的显示名称 |`Kill Zombie Quest`|
 |`%typewriter_tracked_objectives%`|以逗号分隔的任务活动目标列表 |`Kill 2 Zombies, Return to Oliver`|
 |`%typewriter_tracked_objectives_locations%`|跟踪的可定位目标的位置 |`X: 100, Y: 64, Z: -200`|
 
 ## 侧边栏显示 {#sidebar-display}
 
-如果Typewriter正在管理你的侧边栏，你可以使用[目标文本行](../../../adapters/BasicAdapter/entries/quest/objective_lines.md)来显示跟踪任务的目标。
+如果Typewriter正在管理你的侧边栏，你可以使用[目标文本行](../../../adapters/BasicAdapter/entries/quest/objective_lines.md)来显示追踪任务的目标。
 
 侧边栏的可能设置可以是：
 

@@ -159,7 +159,7 @@ Basic Adapter 包含 Typewriter 所需的基础条目。
 |[简单目标](BasicAdapter/entries/quest/objective.md)|客观的定义|
 |[简单任务](BasicAdapter/entries/quest.md)|任务定义|
 |[已追踪目标受众](BasicAdapter/entries/quest/tracked_objective_audience.md)|根据受众是否有跟踪目标来过滤受众 |
-|[已追踪任务受众](BasicAdapter/entries/quest/tracked_quest_audience.md)|根据受众是否有跟踪任务来过滤受众 |
+|[已追踪任务受众](BasicAdapter/entries/quest/tracked_quest_audience.md)|根据受众是否有追踪任务来过滤受众 |
 
 ### 声音 {#sounds}
 

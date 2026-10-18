@@ -6,13 +6,13 @@ source_version: 0.8.0
 
 # 已追踪任务受众（Tracked Quest Audience）
 
-`Tracked Quest Audience`条目根据受众是否跟踪任务来过滤受众。
+`Tracked Quest Audience`条目根据受众是否追踪任务来过滤受众。
 
 如果没有引用任何任务，它将根据是否跟踪任何任务进行过滤。
 
 ## 用途示例 {#how-could-this-be-used}
 
-这可用于根据玩家是否跟踪任务来显示Boss 栏或侧栏。
+这可用于根据玩家是否追踪任务来显示Boss 栏或侧栏。
 
 ## 字段 {#fields}
 

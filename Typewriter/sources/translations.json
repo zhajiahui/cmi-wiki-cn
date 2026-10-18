@@ -632,7 +632,7 @@
   {
     "id": 126,
     "source": "| [Tracked Quest Audience](https://docs.typewritermc.com/adapters/BasicAdapter/entries/quest/tracked_quest_audience) | Filters an audience based on if they have a quest tracked |",
-    "zh": "|[已追踪任务受众](https://docs.typewritermc.com/adapters/BasicAdapter/entries/quest/tracked_quest_audience)|根据受众是否有跟踪任务来过滤受众 |"
+    "zh": "|[已追踪任务受众](https://docs.typewritermc.com/adapters/BasicAdapter/entries/quest/tracked_quest_audience)|根据受众是否有追踪任务来过滤受众 |"
   },
   {
     "id": 127,
@@ -1572,17 +1572,17 @@
   {
     "id": 314,
     "source": "The `Track Quest Action` is an action that tracks a quest when triggered.",
-    "zh": "`Track Quest Action`是一个在触发时跟踪任务的操作。"
+    "zh": "`Track Quest Action`是一个在触发时追踪任务的操作。"
   },
   {
     "id": 315,
     "source": "Though quests are tracked automatically, this action can force a quest to be tracked.",
-    "zh": "尽管任务是自动跟踪的，但此操作可以强制跟踪任务。"
+    "zh": "尽管任务是自动跟踪的，但此操作可以强制追踪任务。"
   },
   {
     "id": 316,
     "source": "Start tacking a quest, so it displays in the player's quest tracker.",
-    "zh": "开始追踪任务，使其显示在玩家的任务跟踪器中。"
+    "zh": "开始追踪任务，使其显示在玩家的任务追踪器中。"
   },
   {
     "id": 317,
@@ -3972,7 +3972,7 @@
   {
     "id": 794,
     "source": "It looks if the player has an objective showing from the quest that is being tracked.",
-    "zh": "它会检查玩家是否从正在跟踪的任务中显示出目标。"
+    "zh": "它会检查玩家是否从正在追踪的任务中显示出目标。"
   },
   {
     "id": 795,
@@ -3987,7 +3987,7 @@
   {
     "id": 797,
     "source": "The `Tracked Quest Audience` entry filters an audience based on if they have a quest tracked.",
-    "zh": "`Tracked Quest Audience`条目根据受众是否跟踪任务来过滤受众。"
+    "zh": "`Tracked Quest Audience`条目根据受众是否追踪任务来过滤受众。"
   },
   {
     "id": 798,
@@ -3997,7 +3997,7 @@
   {
     "id": 799,
     "source": "This could be used to show a boss bar or sidebar based on if a player has a quest tracked.",
-    "zh": "这可用于根据玩家是否跟踪任务来显示Boss 栏或侧栏。"
+    "zh": "这可用于根据玩家是否追踪任务来显示Boss 栏或侧栏。"
   },
   {
     "id": 800,
@@ -9742,7 +9742,7 @@
   {
     "id": 1952,
     "source": "Here's how to create a interaction bound:",
-    "zh": "以下是创建交互绑定的方法："
+    "zh": "以下是创建交互边界的方法："
   },
   {
     "id": 1953,
@@ -10777,12 +10777,12 @@
   {
     "id": 2172,
     "source": "To add an interaction bound, right-click on the `On Entity Interact Event` entry and select `Link with ...`, search for `Lock Interaction Bound` and add it to your sequence.",
-    "zh": "要添加交互绑定，请右键单击`On Entity Interact Event`条目并选择`Link with ...`，搜索`Lock Interaction Bound`并将其添加到序列中。"
+    "zh": "要添加交互边界，请右键单击`On Entity Interact Event`条目并选择`Link with ...`，搜索`Lock Interaction Bound`并将其添加到序列中。"
   },
   {
     "id": 2173,
     "source": "Add Lock Interaction Bound",
-    "zh": "添加锁交互绑定"
+    "zh": "添加锁交互边界"
   },
   {
     "id": 2174,
@@ -13757,7 +13757,7 @@
   {
     "id": 2797,
     "source": "In this tutorial, you will learn how to display quest information to players using Typewriter's quest tracking system and placeholders.",
-    "zh": "在本教程中，你将学习如何使用Typewriter的任务跟踪系统和占位符向玩家显示任务信息。"
+    "zh": "在本教程中，你将学习如何使用Typewriter的任务追踪系统和占位符向玩家显示任务信息。"
   },
   {
     "id": 2798,
@@ -13777,7 +13777,7 @@
   {
     "id": 2801,
     "source": "Think of quest tracking as a spotlight. While many quests might be active, tracking puts one quest in the spotlight for the player to focus on.",
-    "zh": "将任务跟踪视为聚光灯。虽然许多任务可能处于活动状态，但跟踪会将一个任务置于聚光灯下，供玩家关注。"
+    "zh": "将任务追踪视为聚光灯。虽然许多任务可能处于活动状态，但跟踪会将一个任务置于聚光灯下，供玩家关注。"
   },
   {
     "id": 2802,
@@ -13787,7 +13787,7 @@
   {
     "id": 2803,
     "source": "When a quest is tracked, it becomes the \"highlighted\" quest that players see in their quest displays. This tracked quest becomes the focus for all display systems like scoreboards, sidebars, and custom UIs, keeping players focused on their current objective.",
-    "zh": "当任务被跟踪时，它会成为玩家在任务显示中看到的“突出显示”任务。此跟踪任务成为记分板、侧边栏和自定义 UI 等所有显示系统的焦点，让玩家专注于当前目标。"
+    "zh": "当任务被跟踪时，它会成为玩家在任务显示中看到的“突出显示”任务。此追踪任务成为记分板、侧边栏和自定义 UI 等所有显示系统的焦点，让玩家专注于当前目标。"
   },
   {
     "id": 2804,
@@ -13812,7 +13812,7 @@
   {
     "id": 2808,
     "source": "Typewriter automatically tracks quests in these situations:",
-    "zh": "Typewriter在以下情况下自动跟踪任务："
+    "zh": "Typewriter在以下情况下自动追踪任务："
   },
   {
     "id": 2809,
@@ -13822,7 +13822,7 @@
   {
     "id": 2810,
     "source": "When an objective becomes active and has a higher priority than the currently tracked objectives",
-    "zh": "当目标变得活跃并且优先级高于当前跟踪的目标时"
+    "zh": "当目标变得活跃并且优先级高于当前追踪的目标时"
   },
   {
     "id": 2811,
@@ -13842,12 +13842,12 @@
   {
     "id": 2814,
     "source": "You can manually track a quest using the command:",
-    "zh": "你可以使用以下命令手动跟踪任务："
+    "zh": "你可以使用以下命令手动追踪任务："
   },
   {
     "id": 2815,
     "source": "Or by using the **Track Quest Action** entry in your quest flow.",
-    "zh": "或者通过在任务流程中使用**跟踪任务操作**条目。"
+    "zh": "或者通过在任务流程中使用**追踪任务操作**条目。"
   },
   {
     "id": 2816,
@@ -13867,7 +13867,7 @@
   {
     "id": 2819,
     "source": "Now that you understand tracking, let's look at how to actually display quest information to players. Typewriter provides several placeholders that dynamically show information about the currently tracked quest.",
-    "zh": "现在你已经了解了跟踪，让我们看看如何实际向玩家显示任务信息。Typewriter提供了几个占位符，可以动态显示有关当前跟踪的任务的信息。"
+    "zh": "现在你已经了解了跟踪，让我们看看如何实际向玩家显示任务信息。Typewriter提供了几个占位符，可以动态显示有关当前追踪的任务的信息。"
   },
   {
     "id": 2820,
@@ -13882,7 +13882,7 @@
   {
     "id": 2822,
     "source": "| `%typewriter_tracked_quest%` | The display name of the tracked quest | `Kill Zombie Quest` |",
-    "zh": "|`%typewriter_tracked_quest%`|跟踪任务的显示名称 |`Kill Zombie Quest`|"
+    "zh": "|`%typewriter_tracked_quest%`|追踪任务的显示名称 |`Kill Zombie Quest`|"
   },
   {
     "id": 2823,
@@ -13902,7 +13902,7 @@
   {
     "id": 2826,
     "source": "If Typewriter is managing your sidebar, you can use the [Objective Lines Entry](https://docs.typewritermc.com/adapters/BasicAdapter/entries/quest/objective_lines) to display the objectives of the tracked quest.",
-    "zh": "如果Typewriter正在管理你的侧边栏，你可以使用[目标文本行](https://docs.typewritermc.com/adapters/BasicAdapter/entries/quest/objective_lines)来显示跟踪任务的目标。"
+    "zh": "如果Typewriter正在管理你的侧边栏，你可以使用[目标文本行](https://docs.typewritermc.com/adapters/BasicAdapter/entries/quest/objective_lines)来显示追踪任务的目标。"
   },
   {
     "id": 2827,
@@ -15592,12 +15592,12 @@
   {
     "id": 3191,
     "source": "`%typewriter_tracked_quest%`: Shows the displayName of the currently tracked quest.",
-    "zh": "`%typewriter_tracked_quest%`：显示当前跟踪的任务的显示名称。"
+    "zh": "`%typewriter_tracked_quest%`：显示当前追踪的任务的显示名称。"
   },
   {
     "id": 3192,
     "source": "`%typewriter_tracked_objectives%`: Shows the objectives displayNames for the active objectives of the tracked quest.",
-    "zh": "`%typewriter_tracked_objectives%`：显示跟踪任务的活动目标的目标显示名称。"
+    "zh": "`%typewriter_tracked_objectives%`：显示追踪任务的活动目标的目标显示名称。"
   },
   {
     "id": 3193,

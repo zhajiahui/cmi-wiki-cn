@@ -66,8 +66,8 @@ Typewriter的占位符类似于`%typewriter_W2X2ZbG0pzXGsS6%`。
 
 Typewriter还有 3 个自定义占位符，它们是：
 
-- `%typewriter_tracked_quest%`：显示当前跟踪的任务的显示名称。
-- `%typewriter_tracked_objectives%`：显示跟踪任务的活动目标的目标显示名称。
+- `%typewriter_tracked_quest%`：显示当前追踪的任务的显示名称。
+- `%typewriter_tracked_objectives%`：显示追踪任务的活动目标的目标显示名称。
 - `%typewriter_in_cinematic%`：如果不在过场动画模式下，则返回`0`；如果在过场动画模式下，则返回`1`。
 
 ---

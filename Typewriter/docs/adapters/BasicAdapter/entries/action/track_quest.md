@@ -6,13 +6,13 @@ source_version: 0.8.0
 
 # 追踪任务（Track Quest Action）
 
-`Track Quest Action`是一个在触发时跟踪任务的操作。
+`Track Quest Action`是一个在触发时追踪任务的操作。
 
-尽管任务是自动跟踪的，但此操作可以强制跟踪任务。
+尽管任务是自动跟踪的，但此操作可以强制追踪任务。
 
 ## 用途示例 {#how-could-this-be-used}
 
-开始追踪任务，使其显示在玩家的任务跟踪器中。
+开始追踪任务，使其显示在玩家的任务追踪器中。
 
 ## 字段 {#fields}
 
