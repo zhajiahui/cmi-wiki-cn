@@ -1,0 +1,9 @@
+.venv/
+site/
+__pycache__/
+*.pyc
+.cache/
+*.log
+notes/browser/
+sources/incoming/
+*.zip

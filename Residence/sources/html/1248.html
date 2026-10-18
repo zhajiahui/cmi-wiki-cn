@@ -1,0 +1,107 @@
+		<div data-elementor-type="wp-post" data-elementor-id="1248" class="elementor elementor-1248">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-cf6c4be elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cf6c4be" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-97c9cf3" data-id="97c9cf3" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f7e2015 elementor-widget elementor-widget-text-editor" data-id="f7e2015" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><strong>Developer API</strong></p><p>The latest development release of Residence includes a Developer API in the form of the ability to add and act upon your own flags, as well as support for some custom Bukkit events. I will try to provide additional help in the forum thread to anyone making a Residence addon. Also, if you need a API function for your plugin that Residence doesn&#8217;t currently provide, post it in the main Residence forum thread and I will try to add it. You can locate the download files on the Download page.</p><p><strong>Adding your own flags</strong></p><p>I am going to assume you are familiar with Bukkit, and are familier with how to add .jar files as libraries in your programming projects. I am also going to assume you know how to use Bukkit&#8217;s Listener classes.</p><p>For this step by step instructions, I am going to pretend I am adding the &#8220;build&#8221; flag to Residence.</p><p><strong>Step 1:</strong><span> </span>First, add the Residence.jar as a library to your plugin.</p><p><strong>Step 2:</strong><span> </span>Now we need to tell residences that &#8220;build&#8221; is a valid flag. We can do this through the FlagPermissions class like this:</p><blockquote><pre><code>FlagPermissions.addFlag("build");
+</code></pre></blockquote><p><strong>Step 3:</strong><span> </span>Now we need to actually act upon this flag. Since we are adding a &#8220;build&#8221; flag, we need to add code to the onBlockPlace() Bukkit listener event. First we need to find out if the block being placed is within a Residence. We can do that by trying to get a valid ClaimedResidence object at the location of the block placement. We can do that like this:</p><blockquote><pre><code>Location loc = event.getBlock().getLocation();
+ClaimedResidence res = Residence.getResidenceManager().getByLoc(loc);
+</code></pre></blockquote><p>Now we need to check if we actually got a residence back, by doing a null check:</p><blockquote><pre><code>if(res!=null)
+</code></pre></blockquote><p>If res is null, then there is no residence at that location, otherwise we got a residence and now we need to check and see if the &#8220;build&#8221; flag is allowed or not. First we need to get the Residences permissions like this:</p><blockquote><pre><code>ResidencePermissions perms = res.getPermisssions();
+</code></pre></blockquote><p>Now, we can do a check to see if build is allowed, and if not cancel the event:</p><blockquote><pre><code>String playerName = event.getPlayer().getName();
+</code></pre></blockquote><blockquote><pre><code>boolean defaultValue = true;
+
+boolean hasPermission = perms.playerHas(playerName, "build", defaultValue);
+
+if(!hasPermission)
+ event.setCancelled(true);
+</code></pre></blockquote><p><strong>Step 4 (optional):</strong><span> </span>If you want to make your flag a valid world permission too (can be set for a whole world, for when not within a residence), we can then do a different check for when res == null. First we need to get the World permissions list:</p><blockquote><pre><code>String worldName = event.getBlock().getWorld().getName();
+FlagPermissions perms = Residence.getWorldPermisssions(worldName);
+</code></pre></blockquote><p>Then, simply use the same playerHas() function we used in step 3 to check the flag:</p><blockquote><pre><code>boolean hasPermission = perms.playerHas(playerName, "build", defaultValue);
+
+if(!hasPermission)
+  event.setCancelled(true);
+</code></pre></blockquote><p><strong>Step 5 (combines Step 3 and 4 into one):</strong><span> </span>If you dont care about determining if there is a Residence at a location or not, and simply want to check if a player is allowed to do something at a specific location, you can also use a simplified function to get a FlagPermissions object that you can do checks on:</p><blockquote><pre><code>Location loc = event.getBlock().getLocation();
+FlagPermissions = Residence.getPermsByLoc(loc);
+</code></pre></blockquote><p>If there is no residence at this spot, it will instead automatically pull the World permissions thereby combining both checks into one.</p><p><strong>Custom Bukkit Events</strong></p><p>There are a number of custom Bukkit events you can hook into. To use them, you need to create a class that extends Bukkit&#8217;s CustomEventListener class. Then, Override the onCustomEvent() method like this:</p><blockquote><pre><code>public class MyListener extends CustomEventListener {
+  @Override
+  public void onCustomEvent(Event event) {
+    //do stuff
+  }
+}
+</code></pre></blockquote><p>Create a instance of this class, and then register it with bukkit in your plugin&#8217;s main class:</p><blockquote><p>getServer().getPluginManager().registerEvent(Event.Type.CUSTOM_EVENT, myListener, Priority.Normal, this);</p></blockquote><p>Now you can catch Residence events, which are listed in the next section.</p><p><strong>Residence Bukkit Events</strong></p><p>This is a list of current Residence events you can catch.</p><ul><li><strong>ResidenceCommandEvent</strong><span> </span>&#8211; called whenever a player uses a command registered with Residence.</li><li><strong>ResidenceFlagChangeEvent</strong><span> </span>&#8211; called whenever a flag on a residence is changed. (Cancellable)</li><li><strong>ResidenceFlagCheckEvent</strong><span> </span>&#8211; called whenever a check is done on a residence flag. (Return value can be overridden)</li><li><strong>ResidenceOwnerChangeEvent</strong><span> </span>&#8211; called whenever the owner of a residence changes.</li><li><strong>ResidenceCreationEvent</strong><span> </span>&#8211; called upon creating a new residence (Cancellable)</li><li><strong>ResidenceSubzoneCreationEvent</strong> &#8211; called upon creating a new residence subzone (Cancellable)</li><li><strong>ResidenceRenameEvent</strong> &#8211; called on residence rename</li><li><strong>ResidenceSizeChangeEvent</strong> &#8211; called on residence resize action</li><li><strong>ResidenceChatEvent</strong> &#8211; called on player sending residence chat message</li><li><strong>ResidenceTPEvent</strong> &#8211; called on player teleport to residence</li><li><strong>ResidenceAreaAddEvent</strong> &#8211; called on adding new area to residence</li><li><strong>ResidenceAreaDeleteEvent</strong> &#8211; called on removing residence area</li><li><strong>ResidenceDeleteEvent</strong><span> </span>&#8211; called upon the deletion of a residence with a query-able cause. (Cancellable)</li><li><strong>ResidenceRentEvent</strong><span> </span>&#8211; called upon all rent related events, with a query-able cause. (Cancellable) More to come over time.</li><li><strong>ResidenceChangedEvent</strong> &#8211; called upon player changing residence, this includes sub zone changes</li><li><strong>ResidenceRaidEndEvent</strong> &#8211; called upon raid event end</li><li><strong>ResidenceRaidPreStartEvent </strong>&#8211; called before starting actual raid event</li><li><strong>ResidenceRaidStartEvent </strong>&#8211; called upon raid start</li></ul><p>To determine which of these events has been called in your CustomEventListener class, you need to use Java&#8217;s &#8220;instanceof&#8221; operator and cast each event to its proper class like this:</p><blockquote><pre><code>if(event instanceof ResidenceCommandEvent)
+{
+  ResidenceCommandEvent e = (ResidenceCommandEvent) event;
+  //do stuff
+}
+else if(event instanceof ResidenceFlagChangeEvent)
+{
+  ResidenceFlagChangeEvent e = (ResidenceFlagChangeEvent) event;
+  //do stuff
+}
+</code></pre></blockquote><p>etc&#8230; All residence events allow access to the corresponding ClaimedResidence object using tge getResidence() method.</p><p><strong>Other Useful API Calls</strong></p><p>There are many other things you can do with the Residence API. There is a sort of &#8220;manager&#8221; for each Residence subsystem. Each manager can be accessed through static methods from the main Residence class: //ResidenceManager &#8211; places and controls all residences.</p><blockquote><pre><code>ResidenceManager rmanager = Residence.getResidenceManager();
+</code></pre></blockquote><p>//SelectionManager &#8211; controls selection points for creating residences</p><blockquote><pre><code>SelectionManager smanager = Residence.getSelectionManager();
+</code></pre></blockquote><p>//EconomyManager &#8211; returns a interface to the economy plugin residence has hooked into.</p><blockquote><pre><code>EconomyInterface econ = Residence.getEconomyManager();
+</code></pre></blockquote><p>//ConfigManager &#8211; holds the configuration settings from the config file.</p><blockquote><pre><code>ConfigManager cmanager = Residence.getConfigManager();
+</code></pre></blockquote><p>//PermissionManager &#8211; holds the permission groups from the config as well as links into any Permissions plugin that you may be using.</p><blockquote><pre><code>PermissionManager pmanager = Residence.getPermissionManager();
+</code></pre></blockquote><p>//WorldFlagManager &#8211; holds flags that apply to the whole world</p><blockquote><pre><code>WorldFlagManager wmanager = Residence.getWorldFlags();
+</code></pre></blockquote><p>There are more then that, but those are the more important ones.</p><p><strong>Manually Enabling Residence</strong></p><p>If your plugin name starts with a letter before &#8220;R&#8221;, it may be that your plugin enables before Residence. This could be bad if you need immediate access to Residence functions, since Residence won&#8217;t be fully initialized yet. To be safe, you may want to include code to check if Residence exists and is enabled. You can do that with this code snippet:</p><blockquote><pre><code>PluginManager pm = getServer().getPluginManager();
+Plugin p = pm.getPlugin("Residence");
+if(p!=null)
+{
+  if(!p.isEnabled())
+  {
+    System.out.println("<your plugin="" name=""> - Manually Enabling Residence!");
+    pm.enablePlugin(p);
+  }
+}
+else
+{
+  System.out.println("<your plugin="" name=""> - Residence NOT Installed, DISABLED!");
+  this.setEnabled(false);
+}</your></your></code></pre></blockquote>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b52489e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b52489e" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-12c9eba" data-id="12c9eba" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d40c64e elementor-widget elementor-widget-text-editor" data-id="d40c64e" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>To check if player can place block</p><pre><span>ResidencePlayer rPlayer = Residence.getInstance().getPlayerManager().getResidencePlayer(attacker); <br /></span><span class="hljs-keyword">boolean</span><span> canPlace = rPlayer.canPlaceBlock(Block block, </span><span class="hljs-keyword">boolean</span><span> inform);</span></pre>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-fa50f2d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fa50f2d" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d491ace" data-id="d491ace" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-a1a4231 elementor-widget elementor-widget-text-editor" data-id="a1a4231" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>To check if player can breakblock</p><pre><span>ResidencePlayer rPlayer = Residence.getInstance().getPlayerManager().getResidencePlayer(attacker); <br /></span><span class="hljs-keyword">boolean</span><span> canBreak = rPlayer.canBreakBlock(Block block, </span><span class="hljs-keyword">boolean</span><span> inform);</span></pre>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-88d58c8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="88d58c8" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6012d30" data-id="6012d30" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-76c4eb3 elementor-widget elementor-widget-text-editor" data-id="76c4eb3" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>To check if player can damage entity</p><pre><span>ResidencePlayer rPlayer = Residence.getInstance().getPlayerManager().getResidencePlayer(attacker); <br /></span><span class="hljs-keyword">boolean</span><span> canDamage = rPlayer.canDamageEntity(Entity entity, </span><span class="hljs-keyword">boolean</span><span> inform);</span></pre>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		

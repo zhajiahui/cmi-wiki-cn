@@ -1,0 +1,47 @@
+{
+  "https://www.zrips.net/wp-content/uploads/2019/02/about.jpg": {
+    "file": "assets/images/34b9da79be-about.jpg",
+    "bytes": 14566,
+    "sha256": "c32caa30765a12582cae90e080fe4faaa6bf13ea215ef6e3029e59f3a6d61b71"
+  },
+  "https://www.zrips.net/wp-content/uploads/2019/02/features.jpg": {
+    "file": "assets/images/dcaf37dc76-features.jpg",
+    "bytes": 16740,
+    "sha256": "4903a3f7bd8cdd7c07d192e09ad342746f8fdd4b408ef1bc3cd2b276edc86b4e"
+  },
+  "https://www.zrips.net/wp-content/uploads/2019/02/newlogo-1.jpg": {
+    "file": "assets/images/5955e9d8c6-newlogo-1.jpg",
+    "bytes": 26177,
+    "sha256": "9fd60fc99226f908c8f9d17197c3dc652c5df411aaa093d5f352939af66ae728"
+  },
+  "https://www.zrips.net/wp-content/uploads/2019/02/resources.jpg": {
+    "file": "assets/images/7f06484a64-resources.jpg",
+    "bytes": 18841,
+    "sha256": "4d745a09937ec78b59079bd69d739db727b448d8a5798ee21a1095eed82dda2a"
+  },
+  "https://www.zrips.net/wp-content/uploads/2019/08/createdResidence.jpg": {
+    "file": "assets/images/b5ce5d80cd-createdResidence.jpg",
+    "bytes": 12595,
+    "sha256": "78bab5abbc0f1f0ecc0ad5d7248becd40008a2a69e448575617f0ab0488e8ebf"
+  },
+  "https://www.zrips.net/wp-content/uploads/2019/08/selectedArea.jpg": {
+    "file": "assets/images/1e6b6e8757-selectedArea.jpg",
+    "bytes": 34302,
+    "sha256": "b716a8c016886d6df768a986950dab9a16fe460c45a2df2e1ba0de1f53f3a511"
+  },
+  "https://www.zrips.net/wp-content/uploads/2019/08/selectionCost.jpg": {
+    "file": "assets/images/af6486fd06-selectionCost.jpg",
+    "bytes": 4840,
+    "sha256": "9b402e42f5edbfc0dc7a7e81fc6cf4bb2f6ad23d9c5d64623fced34e5be47196"
+  },
+  "https://www.zrips.net/wp-content/uploads/2019/08/slectedPrimary.jpg": {
+    "file": "assets/images/ea46b2ef44-slectedPrimary.jpg",
+    "bytes": 5536,
+    "sha256": "fee16fcda04e7553766773d372609ece4b5d9173a914e82967c90ddb964cb183"
+  },
+  "https://www.zrips.net/wp-content/uploads/2019/08/slectedSecondary.jpg": {
+    "file": "assets/images/30cd66cd42-slectedSecondary.jpg",
+    "bytes": 5959,
+    "sha256": "30e94bf8210bf25b3da646119611d95a9b2934380e385255d9bf9aa1b4377275"
+  }
+}

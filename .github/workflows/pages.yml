@@ -18,13 +18,17 @@ jobs:
         with:
           python-version: '3.12'
           cache: pip
-      - run: python -m pip install -r requirements-tools.txt
-      - run: python scripts/verify-docs.py
-      - run: python -m mkdocs build --strict
+          cache-dependency-path: |
+            Site/requirements.txt
+            Site/requirements-tools.txt
+      - run: python -m pip install -r Site/requirements-tools.txt
+      - run: python Site/verify.py
+      - run: python -m mkdocs build --strict -f Site/mkdocs.yml
+      - run: python Site/verify-site.py
       - uses: actions/upload-pages-artifact@v5.0.0
         if: github.event_name != 'pull_request'
         with:
-          path: site
+          path: .cache/site
   deploy:
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     needs: build

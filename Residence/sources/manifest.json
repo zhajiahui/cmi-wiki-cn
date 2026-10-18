@@ -1,0 +1,92 @@
+[
+  {
+    "title": "前言",
+    "source": "https://www.zrips.net/residence/",
+    "source_id": 122,
+    "source_modified": "2025-12-06T11:20:42",
+    "file": "index.md",
+    "source_sha256": "99cd3ddc27a18cf4c1806d06abb9caf8c94a75365fc350d05cc9dd603e6aab51",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "占位符",
+    "source": "https://www.zrips.net/residence/placeholders/",
+    "source_id": 1222,
+    "source_modified": "2022-12-01T15:25:27",
+    "file": "placeholders.md",
+    "source_sha256": "7cde8b83e3ceb9d043eb72195b961a0ce82632357cb1f6d9a07ea0fab07c1ce8",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "领地市场",
+    "source": "https://www.zrips.net/residence/market/",
+    "source_id": 1231,
+    "source_modified": "2022-12-15T10:15:34",
+    "file": "market.md",
+    "source_sha256": "5dc607f65f910411c2fee09dc13ae33878bb28aae3ad167c1030a7cfcccf9699",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "领地标志（Flags）",
+    "source": "https://www.zrips.net/residence/flags/",
+    "source_id": 1236,
+    "source_modified": "2019-08-05T11:01:03",
+    "file": "flags.md",
+    "source_sha256": "7985c86d4d129b4d04040472c0f51ff5659e369d9211becab5539a962838e448",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "防熊保护（AntiGrief）",
+    "source": "https://www.zrips.net/residence/antigrief/",
+    "source_id": 1238,
+    "source_modified": "2021-09-19T10:20:16",
+    "file": "antigrief.md",
+    "source_sha256": "4b9866accc1532201ddce639eb583ad92581bcea701bccdbe91f739a396ba181",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "开发者 API",
+    "source": "https://www.zrips.net/residence/api/",
+    "source_id": 1248,
+    "source_modified": "2021-09-19T10:20:21",
+    "file": "api.md",
+    "source_sha256": "8fec64fdf9cb601732cb1fddba7b7d4767c6912e108d094d118295cb84ef1d2f",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "权限节点",
+    "source": "https://www.zrips.net/residence/permissions/",
+    "source_id": 1258,
+    "source_modified": "2019-08-05T10:44:33",
+    "file": "permissions.md",
+    "source_sha256": "8d2955a4c1880de277f4c96ce4209d31ab3d86db5fedb01f5c925bb4735c534f",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "指令列表",
+    "source": "https://www.zrips.net/residence/commands/",
+    "source_id": 1263,
+    "source_modified": "2019-08-05T10:46:36",
+    "file": "commands.md",
+    "source_sha256": "a99d5e0a84194705c390896a3d898e78f0f9f0dce59575255b634ec5a9ec1470",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "创建与管理领地",
+    "source": "https://www.zrips.net/residence/creating-residence/",
+    "source_id": 1272,
+    "source_modified": "2025-12-06T11:21:02",
+    "file": "creating-residence.md",
+    "source_sha256": "071edeb756e9087fcb3d70ff0b1f8360ce350b9cbe8375d48a492322d2f85cf9",
+    "translation_review": "reviewed"
+  },
+  {
+    "title": "领地战争（Raid）",
+    "source": "https://www.zrips.net/residence/raid/",
+    "source_id": 1526,
+    "source_modified": "2020-11-18T12:56:06",
+    "file": "raid.md",
+    "source_sha256": "ed9f171896949802236687612b7d305fc713254781eba56d84867d41dd559f1d",
+    "translation_review": "reviewed"
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "id": 122,
+    "parent": 0,
+    "slug": "residence",
+    "link": "https://www.zrips.net/residence/",
+    "title": "Residence",
+    "modified": "2025-12-06T11:20:42",
+    "characters": 5543,
+    "pre_blocks": 0,
+    "images": 4
+  },
+  {
+    "id": 1222,
+    "parent": 122,
+    "slug": "placeholders",
+    "link": "https://www.zrips.net/residence/placeholders/",
+    "title": "Placeholders",
+    "modified": "2022-12-01T15:25:27",
+    "characters": 1987,
+    "pre_blocks": 0,
+    "images": 0
+  },
+  {
+    "id": 1231,
+    "parent": 122,
+    "slug": "market",
+    "link": "https://www.zrips.net/residence/market/",
+    "title": "Market",
+    "modified": "2022-12-15T10:15:34",
+    "characters": 1299,
+    "pre_blocks": 0,
+    "images": 0
+  },
+  {
+    "id": 1236,
+    "parent": 122,
+    "slug": "flags",
+    "link": "https://www.zrips.net/residence/flags/",
+    "title": "Flags",
+    "modified": "2019-08-05T11:01:03",
+    "characters": 10918,
+    "pre_blocks": 0,
+    "images": 0
+  },
+  {
+    "id": 1238,
+    "parent": 122,
+    "slug": "antigrief",
+    "link": "https://www.zrips.net/residence/antigrief/",
+    "title": "AntiGrief",
+    "modified": "2021-09-19T10:20:16",
+    "characters": 2253,
+    "pre_blocks": 1,
+    "images": 0
+  },
+  {
+    "id": 1248,
+    "parent": 122,
+    "slug": "api",
+    "link": "https://www.zrips.net/residence/api/",
+    "title": "API",
+    "modified": "2021-09-19T10:20:21",
+    "characters": 8974,
+    "pre_blocks": 21,
+    "images": 0
+  },
+  {
+    "id": 1258,
+    "parent": 122,
+    "slug": "permissions",
+    "link": "https://www.zrips.net/residence/permissions/",
+    "title": "Permissions",
+    "modified": "2019-08-05T10:44:33",
+    "characters": 4744,
+    "pre_blocks": 0,
+    "images": 0
+  },
+  {
+    "id": 1263,
+    "parent": 122,
+    "slug": "commands",
+    "link": "https://www.zrips.net/residence/commands/",
+    "title": "Commands",
+    "modified": "2019-08-05T10:46:36",
+    "characters": 8702,
+    "pre_blocks": 0,
+    "images": 0
+  },
+  {
+    "id": 1272,
+    "parent": 122,
+    "slug": "creating-residence",
+    "link": "https://www.zrips.net/residence/creating-residence/",
+    "title": "Creating residence",
+    "modified": "2025-12-06T11:21:02",
+    "characters": 6012,
+    "pre_blocks": 0,
+    "images": 5
+  },
+  {
+    "id": 1526,
+    "parent": 122,
+    "slug": "raid",
+    "link": "https://www.zrips.net/residence/raid/",
+    "title": "Raid",
+    "modified": "2020-11-18T12:56:06",
+    "characters": 5825,
+    "pre_blocks": 1,
+    "images": 0
+  }
+]
