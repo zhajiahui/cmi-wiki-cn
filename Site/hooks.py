@@ -13,7 +13,8 @@ BASE=Path(__file__).resolve().parent
 ROOT=BASE.parent
 DOCS=BASE/'docs'
 TRACKING=BASE/'.cache/assembled-files.json'
-PROJECTS=[('CMI',''),('Residence','residence/'),('Typewriter','typewriter/')]
+PHOENIX_PROJECTS=[('Phoenix','phoenix/'),('MMOItems','mmoitems/'),('MMOCore','mmocore/'),('MMOInventory','mmoinventory/'),('MMOProfiles','mmoprofiles/'),('MythicLib','mythiclib/'),('BountyHunters','bounty-hunters/'),('Contracts','contracts/')]
+PROJECTS=[('CMI',''),('Residence','residence/'),('Typewriter','typewriter/')]+PHOENIX_PROJECTS
 SHARED={'assets/wiki.css','assets/logo.svg'}
 
 def prefix_nav(items,prefix):
@@ -24,11 +25,14 @@ def on_config(config):
     source_dirs=[ROOT/project for project,_ in PROJECTS]+[BASE]
     if output==ROOT or any(output.is_relative_to(source.resolve()) for source in source_dirs):
         raise ValueError('Build output overlaps a source project directory.')
-    expected=set();nav=[]
+    expected=set();nav=[];phoenix_nav=[];phoenix_notes=[]
     for project,prefix in PROJECTS:
         source_root=ROOT/project/'docs'
         project_config=yaml.safe_load((ROOT/project/'mkdocs.yml').read_text(encoding='utf-8'))
-        nav.append({project:prefix_nav(project_config['nav'],prefix)})
+        project_nav=prefix_nav(project_config['nav'],prefix)
+        if project=='Phoenix':phoenix_nav.extend(project_nav[:1]);phoenix_notes.extend(project_nav[1:])
+        elif (project,prefix) in PHOENIX_PROJECTS:phoenix_nav.append({project:project_nav})
+        else:nav.append({project:project_nav})
         for source in source_root.rglob('*'):
             if not source.is_file():continue
             relative=source.relative_to(source_root).as_posix()
@@ -53,10 +57,12 @@ def on_config(config):
             if stale.is_file():stale.unlink()
     TRACKING.parent.mkdir(exist_ok=True)
     TRACKING.write_text(json.dumps(sorted(expected),ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    nav.append({'Phoenix':phoenix_nav+[{'站点说明':phoenix_notes}]})
     config.nav=nav
     return config
 
 TABLE_PAGES={'residence/permissions.md':'permission-','residence/flags.md':'flag-'}
+TABLE_PAGES.update({prefix+'general/permissions.md':'permission-' for project,prefix in PHOENIX_PROJECTS if project in {'MMOItems','MMOCore','MMOInventory','MMOProfiles','BountyHunters'}})
 
 def on_page_content(html,*,page,config,files):
     prefix=TABLE_PAGES.get(page.file.src_uri)
@@ -73,6 +79,8 @@ def on_page_content(html,*,page,config,files):
     for row in soup.select('table tbody tr'):
         first=row.find('td')
         code=first.find('code') if first else None
+        if not code and first and '.' in first.get_text():
+            name=first.get_text();first.clear();code=soup.new_tag('code');code.string=name;first.append(code)
         if code:row['id']=prefix+code.get_text()
     return str(soup)
 
@@ -91,6 +99,7 @@ def on_post_build(config):
             if not item['title'].startswith(label):item['title']=label+item['title']
     # Give every permission and flag its own result and a matching table-row anchor.
     for source in TABLE_PAGES:
+        project=next(project for project,prefix in PROJECTS if prefix and source.startswith(prefix))
         relative=source.removesuffix('.md')+'/'
         page_html=Path(config.site_dir)/relative/'index.html'
         soup=BeautifulSoup(page_html.read_text(encoding='utf-8'),'html.parser')
@@ -100,7 +109,7 @@ def on_post_build(config):
             name=code.get_text()
             description=cells[1].get_text(' ',strip=True)
             segmented='\u200b'.join(jieba.cut(description))
-            index['docs'].append({'location':relative+'#'+row['id'],'title':'Residence · '+name,'text':'<p><code>'+escape(name)+'</code> '+escape(segmented)+'</p>','tags':['Residence']})
+            index['docs'].append({'location':relative+'#'+row['id'],'title':project+' · '+name,'text':'<p><code>'+escape(name)+'</code> '+escape(segmented)+'</p>','tags':[project]})
     path.write_text(json.dumps(index,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
     fix_chinese_search(config.site_dir)
 

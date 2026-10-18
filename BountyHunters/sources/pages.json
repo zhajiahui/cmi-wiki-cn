@@ -1,0 +1,793 @@
+[
+  {
+    "key": "bounty-hunters_api_events.md",
+    "project": "BountyHunters",
+    "path": "/bounty-hunters/api/events",
+    "url": "https://docs.phoenixdevt.fr/bounty-hunters/api/events",
+    "file": "api/events.md",
+    "html": "sources/live/bounty-hunters_api_events.html",
+    "title": "📮 Events",
+    "hash": "DoRZ-tvL",
+    "sha256": "5ee03ee25297ac9c1b6cac67067e0a5aef696a4d72873a3c861504dfac1ec47e",
+    "main_chars": 1688,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/api/events.md",
+    "code_blocks": [],
+    "inline_code": [
+      "/bounty",
+      "event#getCause()",
+      "PLUGIN",
+      "/bounty",
+      "event#getCause()",
+      "event#setAdded(double)",
+      "/bounty remove",
+      "/bounty remove",
+      "event#getCause()"
+    ],
+    "units": [
+      189,
+      190,
+      191,
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202
+    ]
+  },
+  {
+    "key": "bounty-hunters_api_index.md",
+    "project": "BountyHunters",
+    "path": "/bounty-hunters/api/",
+    "url": "https://docs.phoenixdevt.fr/bounty-hunters/api/",
+    "file": "api.md",
+    "html": "sources/live/bounty-hunters_api_index.html",
+    "title": "API",
+    "hash": "CuEJI-9f",
+    "sha256": "736f7008df11258983b533fcfdf07952e9d514c1e1238df292f662934bc74b56",
+    "main_chars": 5,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/api.md",
+    "code_blocks": [],
+    "inline_code": [],
+    "units": [
+      203
+    ]
+  },
+  {
+    "key": "bounty-hunters_api_managing-bounties.md",
+    "project": "BountyHunters",
+    "path": "/bounty-hunters/api/managing-bounties",
+    "url": "https://docs.phoenixdevt.fr/bounty-hunters/api/managing-bounties",
+    "file": "api/managing-bounties.md",
+    "html": "sources/live/bounty-hunters_api_managing-bounties.html",
+    "title": "📜 Bounties",
+    "hash": "MmZYKyEe",
+    "sha256": "03cd4a03f900c113a8a37bd513e7ed4271800ed55c77248a08c773a080eab9f4",
+    "main_chars": 1341,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/api/managing-bounties.md",
+    "code_blocks": [
+      {
+        "content": "BountyManager manager = BountyHunters.getInstance().getBountyManager();",
+        "sha256": "4205b080084191d3a430f26c2edf7650f7cb71c735b189914deda9fc45135d98"
+      },
+      {
+        "content": "Bounty bounty = new Bounty(creator, target, reward);",
+        "sha256": "e516d2ae2744613cd947c637e59949a9f7c9a6405bacaef21a9bb7a5424693c5"
+      }
+    ],
+    "inline_code": [
+      "BountyManager",
+      "Bounty",
+      "bountyManager.registerBounty(bounty)",
+      "BountyCreateEvent",
+      "bountyManager.unregisterBounty(bounty)",
+      "Bounty",
+      "bountyManager.getBounties()",
+      "bountyManager.getBounty(OfflinePlayer)",
+      "bountyManager.hasBounty(OfflinePlayer)",
+      "getBounty(OfflinePlayer)"
+    ],
+    "units": [
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217
+    ]
+  },
+  {
+    "key": "bounty-hunters_api_players.md",
+    "project": "BountyHunters",
+    "path": "/bounty-hunters/api/players",
+    "url": "https://docs.phoenixdevt.fr/bounty-hunters/api/players",
+    "file": "api/players.md",
+    "html": "sources/live/bounty-hunters_api_players.html",
+    "title": "👨‍🚀 Player Data",
+    "hash": "lLtmqul1",
+    "sha256": "6fa19f26a856e4c6cbe12e593f28003a453b5797c09aac7b9719918284e1eade",
+    "main_chars": 2407,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/api/players.md",
+    "code_blocks": [
+      {
+        "content": "PlayerData playerData = BountyHunters.getInstance().getPlayerDataManager().getPlayerData(/* player UUID */);\nPlayerGUI.BOUNTY_LIST.build(playerData).open();",
+        "sha256": "e637217503d4fa07d6f04451b12a655ee4d540866e52ac23634be3a9cc558074"
+      }
+    ],
+    "inline_code": [
+      "PlayerDataManager",
+      "BountyHunters.getInstance().getPlayerDataManager()",
+      "PlayerData",
+      "getLevel()",
+      "setLevel(int)",
+      "getClaimedBounties()",
+      "setClaimed..(int)",
+      "getSuccessfulBounties()",
+      "setSuccessful(int)",
+      "getTitle()",
+      "setTitle(Title)",
+      "getAnimation()",
+      "setAnimation(Quote)",
+      "getIllegalKills()",
+      "setIllegalKills(int)",
+      "getIllegalKillStreak()",
+      "setIllegalKillStreak(int)",
+      "getRedeemableHeads()",
+      "add/remove...(UUID)",
+      "data.getProfileItem()",
+      "data.getProgressBar()",
+      "data.getBountiesNeededToLevelUp()",
+      "addLevels(int)",
+      "addClaimedBounties(int)",
+      "addSuccessfulBounties(int)",
+      "addIllegalKills(int)",
+      "hasUnlocked(LevelUpItem)",
+      "setHunting(Bounty)",
+      "isHunting()",
+      "stopHunting()",
+      "PlayerData",
+      "hasUnlocked(LevelUpItem)",
+      "LevelUpItem",
+      "Quote",
+      "Title",
+      "BOUNTY_LIST",
+      "HUNTER_LEADERBOARD",
+      "REDEEMABLE_HEADS"
+    ],
+    "units": [
+      218,
+      219,
+      220,
+      221,
+      222,
+      223,
+      224,
+      225,
+      226,
+      227,
+      228,
+      229,
+      230,
+      231,
+      232,
+      233,
+      234,
+      235,
+      236,
+      237,
+      238,
+      239,
+      240,
+      233,
+      241,
+      242,
+      243,
+      244,
+      245,
+      246,
+      247,
+      248
+    ]
+  },
+  {
+    "key": "bounty-hunters_features_auto-bounties.md",
+    "project": "BountyHunters",
+    "path": "/bounty-hunters/features/auto-bounties",
+    "url": "https://docs.phoenixdevt.fr/bounty-hunters/features/auto-bounties",
+    "file": "features/auto-bounties.md",
+    "html": "sources/live/bounty-hunters_features_auto-bounties.html",
+    "title": "⛓️‍💥 Automatic Bounties",
+    "hash": "DT2fb1Tn",
+    "sha256": "66a686ec84c83d956b560dbf6bcc1ddf1de744049185572223d50440c4044bcb",
+    "main_chars": 993,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/features/auto-bounties.md",
+    "code_blocks": [
+      {
+        "content": "# When enabled, it will automatically place a bounty onto any\n# player who kills a player with no bounty on them (illegal kill).\nauto-bounty:\n  enabled: false\n\n  # Bounty reward\n  reward: 100\n\n  # Chance of applying\n  chance: 100\n\n  # If the auto bounty should keep increasing a bounty if it's already set\n  increment: true",
+        "sha256": "b95a8e67754f209a0044cb3c651c05be8d772ca43abd812719e74deac695c38f"
+      }
+    ],
+    "inline_code": [
+      "enabled",
+      "false",
+      "reward",
+      "chance"
+    ],
+    "units": [
+      249,
+      250,
+      251,
+      252,
+      253,
+      254,
+      255
+    ]
+  },
+  {
+    "key": "bounty-hunters_features_bounties.md",
+    "project": "BountyHunters",
+    "path": "/bounty-hunters/features/bounties",
+    "url": "https://docs.phoenixdevt.fr/bounty-hunters/features/bounties",
+    "file": "features/bounties.md",
+    "html": "sources/live/bounty-hunters_features_bounties.html",
+    "title": "📜 Bounties",
+    "hash": "MeB_Ufhl",
+    "sha256": "c5215dd46a31b7182c5d2adb9c37a161e6f52edc88f6a2b674ad9a81bce63c3a",
+    "main_chars": 5085,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/features/bounties.md",
+    "code_blocks": [
+      {
+        "content": "# GUI display name\nname: 'Bounties ({page}/{max_page})'\n\n# Number of slots in your inventory. Must be\n# between 9 and 54 and must be a multiple of 9.\nslots: 54\n\nitems:\n\n  display_bounty:\n    slots: [ 10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34 ]\n    function: bounty\n\n    # When there is no bounty in the given slot\n    no_bounty:\n      item: GRAY_STAINED_GLASS_PANE\n      name: '&cNo Bounty'\n      hide_tooltip: true\n\n    # General language options\n    last_update_date_format: 'dd/M/yyyy' # Date format used for date placeholders\n    no_creator_placeholder: '&cServer'\n    creator_line:\n      self: '&7You created this bounty.'\n      other: '&7{creator} created this bounty.'\n      none: '&cThis player is a criminal!'\n    action_line:\n      target: '&cPeople are looking for you.'\n      contributor: '&eRight click to take away your contribution.'\n      none: '&eKill them to claim the bounty.'\n    hunter_line:\n      target: null # Hide line for target of bounty\n      hunter: '&7▸ Click to stop &ctracking &7them.'\n      none: '&7▸ Click to &ctrack &7them for ${target_tax}.'\n\n    item: PLAYER_HEAD\n    name: '&6{target}'\n    # You can set custom model data int and string here\n    #custom_model_data_string: 'something'\n    #custom_model_data: 1234\n    lore:\n      - ''\n      #- '{creator_line}'\n      - '&f 💵&7 Reward of &f${reward}' # claim tax can be accessed {claim_tax}\n      - '&f ⚔&7 Contributors: &f{contributors}'\n      - '&f ☠ &7Hunters: &f{hunters}'\n      - '&f ⏳ &7Last Update: &f{last_update}'\n      - ''\n      - '{action_line}'\n      - '{hunter_line}'\n\n  buy_bounty_compass:\n    function: bounty_compass\n    slots: [ 51 ]\n\n    item: COMPASS\n    name: '&6Bounty Compass'\n    lore:\n      - ''\n      - '&eClick to buy the bounty compass for &6${price}'\n\n  how_to_create_bounty:\n    slots: [ 49 ]\n\n    name: '&6How to create a bounty?'\n    item: WRITABLE_BOOK\n    lore:\n      - 'Use /bounty <player> <reward>'\n      - 'to create a bounty on a player.'\n      - ''\n      - '&6How to increase a bounty?'\n      - 'Use /bounty <player> <amount>'\n      - 'to increase an existing bounty.'\n      - ''\n      - '&6How to remove a bounty?'\n      - 'Take off your contribution by right'\n      - 'clicking the bounty item in this menu.'\n\n  player_profile_item:\n    function: player_profile\n    slots: [ 47 ]\n\n    no_title_placeholder: '&cNo Title'\n\n    item: PLAYER_HEAD\n    name: '&6[{level}] {name}'\n    lore:\n      - ''\n      - 'Claimed Bounties: &f{claimed_bounties}'\n      - 'Head Collection: &f{successful_bounties}'\n      - 'Level: &f{level}'\n      - 'Level Progress: {level_progress}'\n      - ''\n      - 'Current Title: &f{current_title}'\n      - ''\n      - 'Use /bounties titles to check your hunter titles.'\n      - 'Use /bounties animations to check your death animations.'\n\n\n  next_page_item:\n    function: next_page\n    slots: [ 26 ]\n\n    item: PLAYER_HEAD\n    texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTliZjMyOTJlMTI2YTEwNWI1NGViYTcxM2FhMWIxNTJkNTQxYTFkODkzODgyOWM1NjM2NGQxNzhlZDIyYmYifX19\n    name: '&6Next Page'\n    lore: { }\n\n  prev_page_item:\n    function: previous_page\n    slots: [ 18 ]\n\n    item: PLAYER_HEAD\n    texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ==\n    name: '&6Previous Page'\n    lore: { }",
+        "sha256": "182ef1133b592d1539cdce5c4f5ba5fd017761d86886728615b099e8ef03a6cc"
+      }
+    ],
+    "inline_code": [
+      "bountyhunters.add",
+      "/addbounty <target> <reward>",
+      "bountyhunters.immunity",
+      "bountyhunters.immunity.bypass",
+      "/bounties",
+      "gui/bounty-list.yml"
+    ],
+    "units": [
+      204,
+      256,
+      257,
+      258,
+      259,
+      260,
+      261,
+      262,
+      263,
+      264,
+      265,
+      266,
+      267,
+      268,
+      269
+    ]
+  },
+  {
+    "key": "bounty-hunters_features_bounty-expiration.md",
+    "project": "BountyHunters",
+    "path": "/bounty-hunters/features/bounty-expiration",
+    "url": "https://docs.phoenixdevt.fr/bounty-hunters/features/bounty-expiration",
+    "file": "features/bounty-expiration.md",
+    "html": "sources/live/bounty-hunters_features_bounty-expiration.html",
+    "title": "⌛ Bounty Expiration",
+    "hash": "YK_laqft",
+    "sha256": "48c623c44196dbaf3b8e0ce8ec0d25cfdee4eff67e5f4752515080ff3f5561f1",
+    "main_chars": 705,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/features/bounty-expiration.md",
+    "code_blocks": [
+      {
+        "content": "# Automatically remove bounties if they have been inactive for a long time.\n# Time is the amount of time in hours before a bounty is considered\n# inactive if it is not updated (either claimed or someone increases it).\n# 720 hours = 30 days, 360 hours = 15 days are good values\n# \n# Bounties are checked every 1min.\n# Changing this option requires a reload.\ninactive-bounty-removal:\n  enabled: true\n  time: 720",
+        "sha256": "3f3d1cab9c08cd2f9b06c730f78c694e3a89793f4b1251c24d19cbfcca56dedf"
+      }
+    ],
+    "inline_code": [
+      "config.yml"
+    ],
+    "units": [
+      270,
+      271,
+      272
+    ]
+  },
+  {
+    "key": "bounty-hunters_features_claim-restrictions.md",
+    "project": "BountyHunters",
+    "path": "/bounty-hunters/features/claim-restrictions",
+    "url": "https://docs.phoenixdevt.fr/bounty-hunters/features/claim-restrictions",
+    "file": "features/claim-restrictions.md",
+    "html": "sources/live/bounty-hunters_features_claim-restrictions.html",
+    "title": "🛑 Bounty Restrictions",
+    "hash": "BMTPMJyL",
+    "sha256": "d910a989f314ddad06e721886424eb0cac14d45235db54a3f74c3eaa8464abab",
+    "main_chars": 2199,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/features/claim-restrictions.md",
+    "code_blocks": [
+      {
+        "content": "# Setting any parameter to 'true' means a new restriction applies.\n# Make sure you restart your server when changing one of these options.\nclaim-restrictions:\n\n  # Players may not claim their own bounties.\n  # Disabled by default due to the bounty claim tax. If players\n  # claim their own bounties, they will lose tax money.\n  own-bounties: false\n\n  # Players cannot claim bounties on players who\n  # have close bed spawn points (most likely friends).\n  bed-spawn-point:\n    enabled: false\n\n    # Blocks threshold\n    radius: 100\n\n  # Players may not claim bounties if they are in the same team.\n  scoreboard-teams: false\n\n  # Players may ONLY claim bounties if\n  # they are tracking the bounty target.\n  targets-only: false\n\n  # Compatibility with PartyAndFriends and BungeeFriends\n  # Players may not kill their friends to claim bounties.\n  friends: true\n\n  # Compatibility with Towny\n  # Players may not kill members of the same town to claim bounties.\n  town-members: true\n\n  # Compatibility with Lands\n  # A player cannot interact with a target bounty\n  # if the player's land trusts the target\n  lands: true\n\n  # Compatibility with SimpleClans\n  simple-clans: true\n\n  # Compatibility with UltimateClans\n  ultimate-clans: true\n\n  # Compatibility with FactionsUUID/SaberFactions etc.\n  factions: true\n\n  # Compatibility with Guilds\n  guilds: true\n\n  # Compatibility with KingdomsX\n  kingdoms: true",
+        "sha256": "face6a108d8e7bf3b414619240b4ef53ff43b294a43de6d86c547f30bb28de2d"
+      }
+    ],
+    "inline_code": [],
+    "units": [
+      273,
+      274,
+      275,
+      276,
+      277,
+      278
+    ]
+  },
+  {
+    "key": "bounty-hunters_features_economy.md",
+    "project": "BountyHunters",
+    "path": "/bounty-hunters/features/economy",
+    "url": "https://docs.phoenixdevt.fr/bounty-hunters/features/economy",
+    "file": "features/economy.md",
+    "html": "sources/live/bounty-hunters_features_economy.html",
+    "title": "💸 Economy & Taxes",
+    "hash": "DG_CJhQw",
+    "sha256": "2c966d70fdf4a581e6456967bfa08bfdb58122933104fcdc5725ed8ac8cef3a1",
+    "main_chars": 2005,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/features/economy.md",
+    "code_blocks": [
+      {
+        "content": "bounty-tax:\n\n  # Tax taken when claiming a bounty.\n  # Most important tax, basically VAT\n  bounty-claim:\n    flat: 0\n    scale: 5\n    #min: 10       # Absolute minimum of tax taken\n    #max: 1000     # Absolute maximum of tax taken\n    #min-scale: 3  # Minimum % of the bounty amount taken as tax\n    #max-scale: 50 # maximum % of the bounty amount taken as tax. Can't be more than half\n\n  # Tax taken when creating a bounty (to fight abuse).\n  # By default, no discouragement from creating bounties.\n  bounty-creation:\n    flat: 0\n    scale: 0\n    #...\n\n  # Tax taken when a player removes the bounty he set.\n  # Discourages players from creating fake or useless bounties.\n  bounty-removal:\n    flat: 0\n    scale: 3\n    #...\n\n  # Tax when targeting a player\n  # Avoids players spamming the chat with target messages\n  # (You can also remove those messages instead of using a tax)\n  target-set:\n    flat: 100\n    scale: 1\n    #...",
+        "sha256": "56a91b6b6cd8603feed3addb4e933597f0532a0fda2d4afb58fc0bfe778a06ef"
+      },
+      {
+        "content": "# Min and max bounty rewards.\n# Set max to 0 to remove the max restriction.\nmin-reward: 0\nmax-reward: 0",
+        "sha256": "9fc7f712ed4edbb4c3a9c73ea4a50f2491bfbab48b3e5f2f579284e706290519"
+      }
+    ],
+    "inline_code": [],
+    "units": [
+      279,
+      280,
+      281,
+      282,
+      283,
+      117,
+      284,
+      117,
+      285,
+      286,
+      287
+    ]
+  },
+  {
+    "key": "bounty-hunters_features_head-hunting.md",
+    "project": "BountyHunters",
+    "path": "/bounty-hunters/features/head-hunting",
+    "url": "https://docs.phoenixdevt.fr/bounty-hunters/features/head-hunting",
+    "file": "features/head-hunting.md",
+    "html": "sources/live/bounty-hunters_features_head-hunting.html",
+    "title": "💀 Head Hunting",
+    "hash": "Tt0iJJa4",
+    "sha256": "37bffbe3e4c0d38a0c8ad060de749bfcdbe6678159b4d30b44104629df829834",
+    "main_chars": 2634,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/features/head-hunting.md",
+    "code_blocks": [
+      {
+        "content": "# When enabled, players have to bring the target's head back to the\n# bounty creator and right click it in order to claim the bounty.\n# Make sure you both disable 'drop-head.killer' and 'drop-head.creator'\n# Reload your server when changing this option.\nhead-hunting:\n  enabled: false",
+        "sha256": "406d409a7cf8e6457e09d0bb93b24c83b7e9d353195bf1ae7aedfb039deb503d"
+      },
+      {
+        "content": "# When disabled, using /bounty will NOT increase the player's\n# current bounty but will rather create one new bounty with the\n# very same target.\nbounty-stacking: true",
+        "sha256": "c30cb35e4aa95722d72af2ec79e9c891fdedcda74aee2988e216ac90e024eb2f"
+      },
+      {
+        "content": "# Drops the player head when claiming a bounty or give the head to\n# the bounty creator. Make sure you disable the 'drop-head.killer'\n# option when toggling on.\ndrop-head:\n\n  # Drops the head on the ground.\n  killer:\n    enabled: false\n    chance: 100\n\n  # Give the head to the bounty creator or save it in the bounty head\n  # GUI that can be opened using /redeembountyheads. This option can also\n  # be used with Head Hunting to give the head to the right clicked player.\n  creator:\n    enabled: false\n    chance: 100",
+        "sha256": "03215aa442edf6e09b90e7b66fabadcc10c282c814a7f417cf2d4f9e360ad562"
+      }
+    ],
+    "inline_code": [],
+    "units": [
+      288,
+      289,
+      290,
+      291,
+      292,
+      293,
+      294,
+      295,
+      296
+    ]
+  },
+  {
+    "key": "bounty-hunters_features_index.md",
+    "project": "BountyHunters",
+    "path": "/bounty-hunters/features/",
+    "url": "https://docs.phoenixdevt.fr/bounty-hunters/features/",
+    "file": "features.md",
+    "html": "sources/live/bounty-hunters_features_index.html",
+    "title": "Features",
+    "hash": "ClTRmF5L",
+    "sha256": "a323800f42fe749c870c7b9d1d8d447d4b6c25b8f852e79539e018d8945c5839",
+    "main_chars": 10,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/features.md",
+    "code_blocks": [],
+    "inline_code": [],
+    "units": [
+      297
+    ]
+  },
+  {
+    "key": "bounty-hunters_features_levels.md",
+    "project": "BountyHunters",
+    "path": "/bounty-hunters/features/levels",
+    "url": "https://docs.phoenixdevt.fr/bounty-hunters/features/levels",
+    "file": "features/levels.md",
+    "html": "sources/live/bounty-hunters_features_levels.html",
+    "title": "🏅 Levels & Rewards",
+    "hash": "0nj5s52A",
+    "sha256": "838c3beb74a73096b8a46c7af09f5d2620052e00a89cca7fc3e694804be8e64e",
+    "main_chars": 3683,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/features/levels.md",
+    "code_blocks": [
+      {
+        "content": "reward:\n    # The player title is displayed in the bounty\n    # leaderboard as well as when the player claims a bounty.\n    # It can also be obtained using a placeholder.\n    title:\n        HEAD_HUNTER:\n            format: 'Head Hunter'\n            unlock: 1\n        HEAD_COLLECTOR:\n            format: 'Head Collector'\n            unlock: 2\n        EXPERIENCED_HUNTER:\n            format: 'Experienced Hunter'\n            unlock: 3\n        # ....",
+        "sha256": "18d226be58702c1830180c5a251fa1aa5a9a0210009a4e7b049dd255537a4c0d"
+      },
+      {
+        "content": "reward:\n    # 'Bounty Animations' display a message in the chat\n    # and play a particle effect around the killed player\n    # when claiming a bounty.\n    #\n    # For no particle effect, remove the\n    # 'effect: ..' line or leave it to NONE.\n    #\n    # For head hunting, the animation plays when killing\n    # the player and collecting the head.\n    #\n    # You can access the bounty quote using a PAPI placeholder.\n    animation:\n        # ....\n        SHEEP:\n            format: 'Watch as I turn him into a sheep!'\n            unlock: 12\n            effect: METAMORPHOSE\n        GIT_GUD:\n            format: 'Git gud'\n            unlock: 15\n            effect: FLAME_VORTEX\n        CENA:\n            format: 'You can''t see me!!'\n            unlock: 20\n            effect: METEOR",
+        "sha256": "892876cf4ea7f27bfd4d728fa4f0338ca22947e8406db2b6de8e47846b3f14e8"
+      },
+      {
+        "content": "    # ....\n\n    # Commands sent when leveling up.\n    commands:\n        '1':\n        - \"say %player% reached level 1!\"\n        \n    # Currency earned when leveling up.\n    # cash earned = <base> + ( <per-level> * <player level> )\n    money:\n        base: 50\n        per-level: 6\n        \n# Bounties players need to claim to level up.\nbounties-per-level: 5",
+        "sha256": "9df72eac5161718a4c3597f6b80a20fef0683241f2a01a02f043963a7072771e"
+      }
+    ],
+    "inline_code": [
+      "HEAD_HUNTER",
+      "format",
+      "bounties-per-level",
+      "commands",
+      "money",
+      "levels.yml"
+    ],
+    "units": [
+      298,
+      299,
+      300,
+      301,
+      302,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308,
+      309,
+      310,
+      311,
+      312,
+      313,
+      314,
+      315,
+      316,
+      317,
+      318,
+      319
+    ]
+  },
+  {
+    "key": "bounty-hunters_features_misc.md",
+    "project": "BountyHunters",
+    "path": "/bounty-hunters/features/misc",
+    "url": "https://docs.phoenixdevt.fr/bounty-hunters/features/misc",
+    "file": "features/misc.md",
+    "html": "sources/live/bounty-hunters_features_misc.html",
+    "title": "🔧 Miscellaneous",
+    "hash": "NYI8UCoY",
+    "sha256": "658eb479358b25e03f51908e599fb0a81035a04b86ee911a0c1e43f08873564c",
+    "main_chars": 2615,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/features/misc.md",
+    "code_blocks": [
+      {
+        "content": "# Time to wait before using /bounty again. In seconds.\nbounty-set-restriction: 120",
+        "sha256": "0d9744133f1539619bea521e1dd83347ef134de2131a6c98c06cf3fadb8d21be"
+      },
+      {
+        "content": "# Player tracking lets players use a tracking compass to hunt\n# down their bounty target. On the one hand, it gives an\n# advantage to the hunters because they can find the player, but\n# it also lets the target know how many players are tracking him.\nplayer-tracking:\n  # ...\n  \n  # Cooldowns players need to wait before tracking a player.\n  cooldown: 240",
+        "sha256": "de127187838cfec9c3bca94e11b2e1065c979bbaa19f6a8a085bce96709ef5ea"
+      },
+      {
+        "content": "# Commands sent by the console when a player claims a bounty.\n# {target} returns the target's name and {player} the claimer's\n# name. Commands support PlaceholderAPI placeholders.\nbounty-commands:\n\n  # When a player claims a bounty.\n  claim: [ ]\n  # - '/give {player} minecraft:diamond 10'\n  # - '/tell {target} Someone claimed your bounty.'\n\n  # When a bounty is placed. {reward}\n  place:\n    player: [ ]\n    console: [ ]\n    # When a player kills another player illegally.\n    auto-bounty: [ ]\n\n  # When a bounty is increased by {amount}\n  increase:\n    player: [ ]\n    console: [ ]\n    # When a player kills another player illegally.\n    auto-bounty: [ ]",
+        "sha256": "cfe1c069491a91bd7ea1e473c69f4f67849f8ae6888f9706797340be14683491"
+      }
+    ],
+    "inline_code": [
+      "/bounties edit <player>",
+      "%player%"
+    ],
+    "units": [
+      320,
+      321,
+      322,
+      323,
+      324,
+      325,
+      326,
+      327,
+      328,
+      329,
+      330,
+      331,
+      332
+    ]
+  },
+  {
+    "key": "bounty-hunters_features_player-hunting.md",
+    "project": "BountyHunters",
+    "path": "/bounty-hunters/features/player-hunting",
+    "url": "https://docs.phoenixdevt.fr/bounty-hunters/features/player-hunting",
+    "file": "features/player-hunting.md",
+    "html": "sources/live/bounty-hunters_features_player-hunting.html",
+    "title": "🏃‍♀️ Player Hunting",
+    "hash": "Dz082TZF",
+    "sha256": "f42b1ca2d74ee2e9245cbb4388964dd1e173bfb598bb49ba49080a30bb0360e7",
+    "main_chars": 1721,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/features/player-hunting.md",
+    "code_blocks": [
+      {
+        "content": "# Player tracking lets players use a tracking compass to hunt\n# down their bounty target. On the one hand, it gives an\n# advantage to the hunters because they can find the player, but\n# it also lets the target know how many players are tracking them.\nplayer-tracking:\n  enabled: true\n\n  # Set to true if you want players able to\n  # target bounties which they contributed to\n  can-track-own-bounties: true\n\n  # Should the compass show the distance to\n  # the target player\n  show-distance: true\n\n  # Price of the tracking compass.\n  price: 1000\n\n  # Time players need to wait when tracking some\n  # player before tracking another player.\n  cooldown: 240",
+        "sha256": "647fdb60a47177a899392a2d46c1cbf22de932a0771714c514c77be6312f1bcc"
+      }
+    ],
+    "inline_code": [
+      "bountyhunters.untargetable",
+      "bountyhunters.untargetable.bypass"
+    ],
+    "units": [
+      333,
+      334,
+      335,
+      336,
+      254,
+      337
+    ]
+  },
+  {
+    "key": "bounty-hunters_general_commands.md",
+    "project": "BountyHunters",
+    "path": "/bounty-hunters/general/commands",
+    "url": "https://docs.phoenixdevt.fr/bounty-hunters/general/commands",
+    "file": "general/commands.md",
+    "html": "sources/live/bounty-hunters_general_commands.html",
+    "title": "💾 Commands",
+    "hash": "CqsIcho-",
+    "sha256": "a76e57ee16b7b369911caea4b6c5f8bcac9391ccc14df0a2e336912ba89dcac1",
+    "main_chars": 786,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/general/commands.md",
+    "code_blocks": [],
+    "inline_code": [
+      "/addbounty <player> <amount>",
+      "/bounties",
+      "/hunterlb",
+      "/bounties titles",
+      "/bounties animations",
+      "/redeembountyheads",
+      "/bounties help",
+      "/bounties remove <player>",
+      "/bounties edit <player>",
+      "/bounties reload",
+      "/addbounty",
+      "-bmm",
+      "-nt"
+    ],
+    "units": [
+      338,
+      339,
+      340,
+      341,
+      342,
+      343,
+      344,
+      345,
+      346,
+      347,
+      340,
+      348,
+      349,
+      350,
+      351,
+      352
+    ]
+  },
+  {
+    "key": "bounty-hunters_general_index.md",
+    "project": "BountyHunters",
+    "path": "/bounty-hunters/general/",
+    "url": "https://docs.phoenixdevt.fr/bounty-hunters/general/",
+    "file": "general.md",
+    "html": "sources/live/bounty-hunters_general_index.html",
+    "title": "General",
+    "hash": "sX6linjQ",
+    "sha256": "cb469bd3214b6412be9ef8844580f6f0a527fa82a683abcf0174fe05083550d0",
+    "main_chars": 9,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/general.md",
+    "code_blocks": [],
+    "inline_code": [],
+    "units": [
+      353
+    ]
+  },
+  {
+    "key": "bounty-hunters_general_permissions.md",
+    "project": "BountyHunters",
+    "path": "/bounty-hunters/general/permissions",
+    "url": "https://docs.phoenixdevt.fr/bounty-hunters/general/permissions",
+    "file": "general/permissions.md",
+    "html": "sources/live/bounty-hunters_general_permissions.html",
+    "title": "🧑‍⚖️ Permissions",
+    "hash": "MJzbVF2k",
+    "sha256": "290156823c5763bb7f154f67f23012bbbe1af3527474fecb63842bd3d7f78833",
+    "main_chars": 883,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/general/permissions.md",
+    "code_blocks": [],
+    "inline_code": [
+      "bountyhunters.list",
+      "/bounties",
+      "bountyhunters.add",
+      "bountyhunters.claim",
+      "bountyhunters.remove",
+      "bountyhunters.leaderboard",
+      "bountyhunters.title",
+      "bountyhunters.animation",
+      "bountyhunters.redeem-heads",
+      "/redeembountyheads",
+      "bountyhunters.admin",
+      "bountyhunters.update-notify",
+      "bountyhunters.immunity",
+      "bountyhunters.immunity.bypass",
+      "bountyhunters.untargetable",
+      "bountyhunters.untargetable.bypass"
+    ],
+    "units": [
+      354,
+      355,
+      356,
+      357,
+      358,
+      359,
+      360,
+      361,
+      362,
+      363,
+      364,
+      365,
+      356,
+      366,
+      367,
+      368,
+      369,
+      370,
+      371
+    ]
+  },
+  {
+    "key": "bounty-hunters_general_placeholders.md",
+    "project": "BountyHunters",
+    "path": "/bounty-hunters/general/placeholders",
+    "url": "https://docs.phoenixdevt.fr/bounty-hunters/general/placeholders",
+    "file": "general/placeholders.md",
+    "html": "sources/live/bounty-hunters_general_placeholders.html",
+    "title": "🏷️ Placeholders",
+    "hash": "BuOPOi3S",
+    "sha256": "2c9a50f9add2cfb1d5f4e3bcb5a71fabcd9d89e6e4e2381a7c036f37ff8fbcc7",
+    "main_chars": 1038,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/general/placeholders.md",
+    "code_blocks": [],
+    "inline_code": [
+      "%bountyhunters_top_name_<rank>%",
+      "%bountyhunters_top_bounties_<rank>%",
+      "%bountyhunters_top_heads_<rank>%",
+      "%bountyhunters_top_level_<rank>%",
+      "%bountyhunters_level%",
+      "%bountyhunters_successful_bounties%",
+      "%bountyhunters_illegal_streak%",
+      "%bountyhunters_illegal_kills%",
+      "%bountyhunters_current_bounty%",
+      "%bountyhunters_title%",
+      "%bountyhunters_progress%",
+      "%bountyhunters_before_level_up%"
+    ],
+    "units": [
+      372,
+      373,
+      374,
+      375,
+      376,
+      377,
+      378,
+      379,
+      380,
+      381,
+      382,
+      383,
+      384,
+      385
+    ]
+  },
+  {
+    "key": "bounty-hunters_index.md",
+    "project": "BountyHunters",
+    "path": "/bounty-hunters/",
+    "url": "https://docs.phoenixdevt.fr/bounty-hunters/",
+    "file": "index.md",
+    "html": "sources/live/bounty-hunters_index.html",
+    "title": "🏠 Home",
+    "hash": "DkEfI0X6",
+    "sha256": "2be24476dd6d517450a5ea789316de72ac32e5f7050f4ba43e44eba63ab47f6e",
+    "main_chars": 666,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/index.md",
+    "code_blocks": [],
+    "inline_code": [],
+    "units": [
+      386,
+      387,
+      388,
+      389,
+      116,
+      117,
+      390,
+      391
+    ]
+  }
+]

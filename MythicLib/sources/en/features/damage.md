@@ -1,0 +1,102 @@
+# 💔 Damage {#💔-damage}
+
+MMOItems and MMOCore share the same damage system. Any attack, from melee sword hits to MMOCore abilities, has a specific set of damage types which can be any of the following:
+
+- **physical**, **magic** or **unarmed** damage
+- **projectile** damage
+- **weapon** or **skill** damage
+- **on-hit** damage (on-hit damage doesn't trigger on-hit effects)
+- **dot** or damage over time
+- **minion** damage
+
+**e.g:** a bow deals weapon-physical-projectile damage. An ice crystal spell deals projectile-magic-skill damage.
+
+## Stats increasing damage dealt {#stats-increasing-damage-dealt}
+
+Attack damage can be increased by several stats including Physical/Magical/Projectile/Weapon/Skill damage, but also other damage stats including **PvE/PvP/Undead Damage** which rather depend on the entity you are attacking.
+
+Since MythicLib 1.3 these stats all add up "linearly" and don't stack up geometrically. For instance, +50% skill damage and +50% magical damage will increase magical-skill damage by `50% + 50% = 100%` rather than `150% * 150% - 100% = 125%`. This 25% difference gets super huge when multiple stats are taken into account at the same time, like when adding PvE damage or Undead damage on top of it.
+
+## Stats reducing incoming damage {#stats-reducing-incoming-damage}
+
+These are stats like `Magic Damage Reduction` or `Damage Reduction`. Unlike damage-increasing stats, these stats do stack up geometrically. Combining *10% Dmg Red* and *10% Fall Dmg Red* will **NOT** result in `10% + 10% = 20%` damage reduction for fall damage, but rather `100% - 90% * 90% = 19%`. This 1% difference gets bigger the higher the player stats are.
+
+This calculation makes these statistics less op when they get bigger, and also make sure the damage never reaches 0 and always stays positive. In a nutshell, when considering damage-increasing stats or damage reduction stats, MythicLib always considers what's worse for the attacker.
+
+## Defense {#defense}
+
+Defense is a player stat which you can use in both MMOItems and MMOCore. It was introduced to bypass the 30 armor points vanilla limit which prevents users from having high armor values. The defense formula can be edited in the main MythicLib plugin config.
+
+```yml
+# Defines how defense behaves. The formula should return the
+# final amount of damage dealt, given the following inputs:
+# - damage dealt #damage#
+# - current player defense #defense#
+#
+# The default formula is inspired from Path of Exile, you can
+# learn more about it on their wiki: https://pathofexile.fandom.com/wiki/Armour
+#
+# natural   <-> non-elemental damage
+# elemental <-> fire/water/.. damage
+defense-application:
+  natural: '#damage# - #defense#'
+  elemental: '#damage# * (1 - (#defense# / (5 * #damage# + #defense#)))'
+```
+
+Here's a table indicating how much damage is dealt given an amount of elemental defense and initial attack points, using the default elemental defense formula which is the one used in Path of Exile. ![poe_armor](https://docs.phoenixdevt.fr/assets/poe_armor.C-2kRLIh.png)
+
+This formula was changed in MythicLib 1.4 if you'd like to use the previous one, here it is. It has the downside of not taking into account the incoming amount of damage, making adjusting this formula for both high and low levels harder.
+
+```yml
+defense-application: '#damage# * (1 - (#defense# / (#defense# + 100)))'
+```
+
+The most important math functions are supported by the formula interpreter. For instance, you can use `sqrt(16)` (returns 4), `pow(2, 3)` will return 8, `atan2`, `min(10, 5)` will return 5, etc. If you're unsure what methods are supported, just give them a try.
+
+## Critical Strikes {#critical-strikes}
+
+Weapons and skills can deal critical strikes, increasing the damage dealt. Please refer to the [On-Hit Effects](https://docs.phoenixdevt.fr/mythiclib/features/on-hit-effects) page for more information about critical strikes.
+
+## Damage Mitigation {#damage-mitigation}
+
+Please refer to the [Damage Mitigation](https://docs.phoenixdevt.fr/mythiclib/features/mitigation-types) page for more information about damage mitigation.
+
+## Damage Indicators {#damage-indicators}
+
+Please refer to [this page](https://docs.phoenixdevt.fr/mythiclib/features/damage-indicators) for more information about damage indicators.
+
+## MythicMobs Compatibility {#mythicmobs-compatibility}
+
+You can have mobs and skills from MythicMobs deal damage marked with MythicLib damage types. This way, player stats like *Magic Damage Reduction* or *Fire Defense* will apply to the damage dealt by MythicMobs.
+
+To have a MythicMobs skill deal damage with MMO damage types, use the [mmodamage mechanic](https://docs.phoenixdevt.fr/mythiclib/skills/custom/mythic.html#dealing-damage). This mechanics works whether the skill caster is a player or a mob.
+
+To have MythicMobs deal MMO-typed damage with their melee attacks, use the `setmmodamagesplits` mechanic. The following mob deals 10 Magic-Projectile damage on each melee hit:
+
+```yml
+ZombieWarrior:
+  Type: ZOMBIE
+  Damage: 10
+  Skills:
+    - 'setmmodamagesplits{splits=MAGIC,PROJECTILE} @self ~onSpawn'
+```
+
+> **INFO**
+>
+> The mob above casts `setmmodamagesplits` when it spawns. However, you can use this mechanic at any time! You can replace a mob's damage splits mid-fight, during a specific skill, etc. For instance, you can have a boss deal Physical damage during its first phase, then switch to Magic damage during its second phase.
+
+In the following example, a third of the damage is dealt as Physical/Weapon, while the remaining two thirds are dealt as Skill-Magic damage.
+
+```yml
+ZombieWarrior:
+  Type: ZOMBIE
+  Damage: 10
+  Skills:
+    - 'setmmodamagesplits{splits=[PHYSICAL,WEAPON]:1,[SKILL,MAGIC]:2} @self ~onSpawn'
+```
+
+The format for `splits` is `[TYPE1,TYPE2,...]:amount1,[TYPE3,TYPE4,...]:amount2` where each split is separated by a comma. The amount is optional and defaults to 1.
+
+## Change damage types of skills {#change-damage-types-of-skills}
+
+Skills that deal damage can have their damage types changed. For more information, please refer to [this wiki page](https://docs.phoenixdevt.fr/mythiclib/skills/builtin#edit-damage-types-of-built-in-skills).

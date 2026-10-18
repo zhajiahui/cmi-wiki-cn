@@ -31,7 +31,13 @@ vm.runInContext(fs.readFileSync(path.join(workers, worker), 'utf8'), context, {f
     ['过场动画', 'typewriter/'],
     ['residence.randomtp', 'residence/permissions/#permission-residence.randomtp'],
     ['cmi.command.heal.others', 'commands/'],
-    ['随机传送', 'commands/rtp/']
+    ['随机传送', 'commands/rtp/'],
+    ['mmoitems.admin', 'mmoitems/general/permissions/#permission-mmoitems.admin'],
+    ['mmocore.admin', 'mmocore/general/permissions/#permission-mmocore.admin'],
+    ['mmoprofiles.admin', 'mmoprofiles/general/permissions/#permission-mmoprofiles.admin'],
+    ['bountyhunters.add', 'bounty-hunters/general/permissions/#permission-bountyhunters.add'],
+    ['灵魂绑定', 'mmoitems/features/soulbound/'],
+    ['代理端档案', 'mmoprofiles/features/proxy-based/']
   ];
   const results = [];
   for (const [query, expected] of queries) {

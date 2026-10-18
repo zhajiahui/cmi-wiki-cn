@@ -1,0 +1,89 @@
+site_name: MMOItems 中文文档
+site_url: https://zhajiahui.github.io/cmi-wiki-cn/mmoitems/
+theme:
+  name: material
+  language: zh
+  font: false
+plugins:
+- search:
+    lang:
+    - zh
+    - en
+markdown_extensions:
+- admonition
+- attr_list
+- md_in_html
+- tables
+- toc:
+    permalink: true
+- pymdownx.details
+- pymdownx.superfences
+nav:
+- 首页: index.md
+- 安装指南: install.md
+- 基本设置:
+  - 命令: general/commands.md
+  - 权限: general/permissions.md
+  - 占位符: general/placeholders.md
+  - 默认配置: general/default-config.md
+- 物品:
+  - 创建物品: items/creation.md
+  - 物品模板: items/templates.md
+  - 物品修饰器: items/modifiers.md
+  - 物品更新与修订版本: items/revision-id.md
+  - 获取物品: items/obtain-item.md
+  - 掉落表: items/drop-tables.md
+- 功能:
+  - 技能与能力: features/skills.md
+  - 合成配方: features/custom-recipes.md
+  - 掉落喷散效果: features/lootsplosion.md
+  - 生成自定义方块: features/world-gen-templates.md
+  - 物品贴图: features/item-textures.md
+  - 物品品质: features/tiers.md
+  - 宝石: features/gem-stones.md
+  - 属性:
+    - 物品属性: features/stats/stats.md
+    - 数值属性: features/stats/numerical-stats.md
+    - 高级属性: features/stats/stats-advanced.md
+  - 物品描述:
+    - 名称占位符: features/item-lore/name-placeholders.md
+    - 描述格式: features/item-lore/lore-format.md
+    - 物品提示框: features/item-lore/tooltips.md
+  - 自定义方块: features/custom-blocks.md
+  - 自定义耐久度: features/custom-durability.md
+  - 物品升级: features/upgrading.md
+  - 物品鉴定: features/identification.md
+  - 灵魂绑定: features/soulbound.md
+  - 物品类型: features/types.md
+  - 物品套装: features/sets.md
+- 合成站:
+  - 合成站: stations/intro.md
+  - 合成配方: stations/crafting-recipes.md
+  - 升级配方: stations/upgrading-recipes.md
+  - 合成材料: stations/ingredients.md
+  - 触发器: stations/triggers.md
+  - 条件: stations/conditions.md
+  - 合成站界面布局: stations/layout.md
+- 兼容性:
+  - 内置兼容: compatibility/plugins.md
+  - MythicMobs: compatibility/mythic.md
+  - 附魔插件: compatibility/enchant-plugins.md
+  - Denizen: compatibility/denizen.md
+- 开发接口:
+  - Maven: api/maven.md
+  - 新增属性: api/new-stats.md
+  - 插件 API: api/main.md
+- 分类目录:
+  - 开发接口: api.md
+  - 兼容性: compatibility.md
+  - 功能: features.md
+  - 物品描述: features/item-lore.md
+  - 属性: features/stats.md
+  - 基本设置: general.md
+  - 物品: items.md
+  - 合成站: stations.md
+- 归档文档:
+  - 剑与武器属性示例: archive/mi-stat-config-fmt.md
+  - 自定义方块（归档）: archive/new-custom-blocks.md
+docs_dir: docs
+site_dir: .cache/site

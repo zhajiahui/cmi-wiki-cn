@@ -1,0 +1,26 @@
+site_name: Phoenix 中文文档
+site_url: https://zhajiahui.github.io/cmi-wiki-cn/phoenix/
+theme:
+  name: material
+  language: zh
+  font: false
+plugins:
+- search:
+    lang:
+    - zh
+    - en
+markdown_extensions:
+- admonition
+- attr_list
+- md_in_html
+- tables
+- toc:
+    permalink: true
+- pymdownx.details
+- pymdownx.superfences
+nav:
+- 前言: index.md
+- 官方文档维护说明: site-maintenance.md
+- 失效链接归档页: archive/dead-link.md
+docs_dir: docs
+site_dir: .cache/site

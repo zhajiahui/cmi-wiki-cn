@@ -1,0 +1,431 @@
+[
+  {
+    "title": "事件",
+    "file": "api/events.md",
+    "source": "https://docs.phoenixdevt.fr/mmoinventory/api/events",
+    "source_key": "mmoinventory_api_events.md",
+    "source_sha256": "13677b981e4c1f9236382d17c1e0c507996ee2a318ebb5ae31df610b3cf4bd53",
+    "translation_units": [
+      189,
+      1713,
+      1714,
+      1715,
+      1716,
+      1717,
+      1718,
+      1719,
+      1720,
+      1721
+    ]
+  },
+  {
+    "title": "开发接口",
+    "file": "api.md",
+    "source": "https://docs.phoenixdevt.fr/mmoinventory/api/",
+    "source_key": "mmoinventory_api_index.md",
+    "source_sha256": "23504a95206ba7dcf8b09dbf524a34fb7ca5966fbecde1604183e68bb898efc9",
+    "translation_units": [
+      203
+    ]
+  },
+  {
+    "title": "Maven",
+    "file": "api/maven.md",
+    "source": "https://docs.phoenixdevt.fr/mmoinventory/api/maven",
+    "source_key": "mmoinventory_api_maven.md",
+    "source_sha256": "9f2bc60fd77f88abf1f2d79db400b72acb520a2232ba40d7a0b157981ec6bad6",
+    "translation_units": [
+      430,
+      431,
+      432,
+      433,
+      434
+    ]
+  },
+  {
+    "title": "概览",
+    "file": "api/overview.md",
+    "source": "https://docs.phoenixdevt.fr/mmoinventory/api/overview",
+    "source_key": "mmoinventory_api_overview.md",
+    "source_sha256": "33cd32a28d974d2b5f7038655a1ea8ad3531b8a5ae5d1adf1beede7fc6fe735c",
+    "translation_units": [
+      1722,
+      1723,
+      1724,
+      1725,
+      1726,
+      1727,
+      1728,
+      1729,
+      1730,
+      1731,
+      1732,
+      1733,
+      1734,
+      1735,
+      538,
+      117,
+      1736,
+      1737,
+      1738,
+      1739,
+      1740,
+      1741,
+      1742,
+      1743,
+      1744
+    ]
+  },
+  {
+    "title": "兼容性",
+    "file": "compatibility.md",
+    "source": "https://docs.phoenixdevt.fr/mmoinventory/compatibility/",
+    "source_key": "mmoinventory_compatibility_index.md",
+    "source_sha256": "522ec89665387d382bed78f32473fe1bac025bb0c593035494e6911484077ddf",
+    "translation_units": [
+      435
+    ]
+  },
+  {
+    "title": "MMOItems",
+    "file": "compatibility/mmoitems.md",
+    "source": "https://docs.phoenixdevt.fr/mmoinventory/compatibility/mmoitems",
+    "source_key": "mmoinventory_compatibility_mmoitems.md",
+    "source_sha256": "a52c058965ee659e5a7facc2baf3f3bb63f8b54ade8b232c6f15ec482be7083f",
+    "translation_units": [
+      1745,
+      1746,
+      1747,
+      1748,
+      1749,
+      1750,
+      1751,
+      538,
+      117,
+      1752,
+      1753,
+      1754
+    ]
+  },
+  {
+    "title": "Oraxen",
+    "file": "compatibility/oraxen.md",
+    "source": "https://docs.phoenixdevt.fr/mmoinventory/compatibility/oraxen",
+    "source_key": "mmoinventory_compatibility_oraxen.md",
+    "source_sha256": "c4bbc37a22788520bf048d98fd55a2e66a2951c93a692efa1227fd837733d8b4",
+    "translation_units": [
+      1755,
+      1756,
+      1757,
+      1758,
+      1759,
+      1760,
+      496,
+      1761,
+      1762,
+      1763,
+      1764
+    ]
+  },
+  {
+    "title": "其他插件",
+    "file": "compatibility/other.md",
+    "source": "https://docs.phoenixdevt.fr/mmoinventory/compatibility/other",
+    "source_key": "mmoinventory_compatibility_other.md",
+    "source_sha256": "59a72be2774242a80cf9c9c5d4bf1de125388fe4cc4884159329c31801fbed4a",
+    "translation_units": [
+      473,
+      1765,
+      1766,
+      1767,
+      1768,
+      1769,
+      1770,
+      1771
+    ]
+  },
+  {
+    "title": "RPG 插件",
+    "file": "compatibility/rpg.md",
+    "source": "https://docs.phoenixdevt.fr/mmoinventory/compatibility/rpg",
+    "source_key": "mmoinventory_compatibility_rpg.md",
+    "source_sha256": "532cfb50f88bb7cea157f9b1adfabef46a2e49d9eada61d75e87e8aceb050027",
+    "translation_units": [
+      1772,
+      1773
+    ]
+  },
+  {
+    "title": "常见问题",
+    "file": "faq.md",
+    "source": "https://docs.phoenixdevt.fr/mmoinventory/faq",
+    "source_key": "mmoinventory_faq.md",
+    "source_sha256": "cec14bef8df2589e658c21a46f96637c7ebbe1991a4908d23f6dcc9d54f4d176",
+    "translation_units": [
+      1774,
+      1775,
+      1776,
+      1777,
+      1778,
+      1779,
+      1780,
+      1781,
+      1782,
+      1783,
+      1784,
+      1785,
+      1786,
+      1787,
+      1788,
+      1789,
+      1790,
+      1791,
+      1787,
+      1792,
+      1793,
+      1794,
+      1795,
+      1796,
+      1797,
+      1798,
+      1799,
+      1800
+    ]
+  },
+  {
+    "title": "物品栏贴图",
+    "file": "features/custom-inventory-texture.md",
+    "source": "https://docs.phoenixdevt.fr/mmoinventory/features/custom-inventory-texture",
+    "source_key": "mmoinventory_features_custom-inventory-texture.md",
+    "source_sha256": "d71afd13b9e89b6c78a2824325a2e68b02c4522e41e93bbf6e91ef19dc23f91c",
+    "translation_units": [
+      1801,
+      1802,
+      1803,
+      1804,
+      1805,
+      1806,
+      1807,
+      1808,
+      1809,
+      1810,
+      1811,
+      1812,
+      1813,
+      4654,
+      4655,
+      4656,
+      4657,
+      1818,
+      1819,
+      1820,
+      1821,
+      1822
+    ]
+  },
+  {
+    "title": "自定义物品栏",
+    "file": "features/custom-inventory.md",
+    "source": "https://docs.phoenixdevt.fr/mmoinventory/features/custom-inventory",
+    "source_key": "mmoinventory_features_custom-inventory.md",
+    "source_sha256": "9491fd1071f057cb1cf22844b7b79bdcbdf20b1aae480fb6d323d844a2819ce3",
+    "translation_units": [
+      1823,
+      1824,
+      1825,
+      1493,
+      1826,
+      1827,
+      1828,
+      1829,
+      1830,
+      1831,
+      1832,
+      1833,
+      1834,
+      1835,
+      1836,
+      1837,
+      1838,
+      1835,
+      1839,
+      1840,
+      1841,
+      1842,
+      1843,
+      1844,
+      1845,
+      1846,
+      1847,
+      1848,
+      1849,
+      1850,
+      1851,
+      1852,
+      1853,
+      1854,
+      1855,
+      1856,
+      1857,
+      1858,
+      1859,
+      1860,
+      1861,
+      1862,
+      1863,
+      1864,
+      1865,
+      1866,
+      1867,
+      1868,
+      1869
+    ]
+  },
+  {
+    "title": "鞘翅槽位",
+    "file": "features/elytra-slot.md",
+    "source": "https://docs.phoenixdevt.fr/mmoinventory/features/elytra-slot",
+    "source_key": "mmoinventory_features_elytra-slot.md",
+    "source_sha256": "e03053a944d8347f5925a83a23aa55cbaab2cf2c807dd1496209065fc2b369d7",
+    "translation_units": [
+      1870,
+      1871,
+      1608,
+      1872,
+      1873,
+      1874,
+      1875,
+      1876,
+      1877,
+      1878
+    ]
+  },
+  {
+    "title": "功能",
+    "file": "features.md",
+    "source": "https://docs.phoenixdevt.fr/mmoinventory/features/",
+    "source_key": "mmoinventory_features_index.md",
+    "source_sha256": "a696f3c3e50fb068ecf0bf82bdd23e1142d5dd67ca861033d667d87c9a548f10",
+    "translation_units": [
+      297
+    ]
+  },
+  {
+    "title": "原版物品栏",
+    "file": "features/vanilla-inventory.md",
+    "source": "https://docs.phoenixdevt.fr/mmoinventory/features/vanilla-inventory",
+    "source_key": "mmoinventory_features_vanilla-inventory.md",
+    "source_sha256": "21d100435c3d1e9f7bde94bb2f90b52b2d2af643e7b7058abde4ab6c770d5704",
+    "translation_units": [
+      1879,
+      1880,
+      1881,
+      254,
+      1882,
+      538,
+      117,
+      1883,
+      1884,
+      1885,
+      116,
+      117,
+      1886,
+      1887
+    ]
+  },
+  {
+    "title": "命令",
+    "file": "general/commands.md",
+    "source": "https://docs.phoenixdevt.fr/mmoinventory/general/commands",
+    "source_key": "mmoinventory_general_commands.md",
+    "source_sha256": "2704c1b4dc4a6f2bedc655f78aaa4f374673a306ccc5e9f6bfec6f71a9abe58c",
+    "translation_units": [
+      338,
+      1888,
+      1889,
+      1890,
+      1891,
+      1892,
+      1893,
+      1894
+    ]
+  },
+  {
+    "title": "默认配置",
+    "file": "general/default-config.md",
+    "source": "https://docs.phoenixdevt.fr/mmoinventory/general/default-config",
+    "source_key": "mmoinventory_general_default-config.md",
+    "source_sha256": "4e63a41511733aa281f1a8dd077216a201e13358113eecbcbcf47ed39cf6a48e",
+    "translation_units": [
+      1895
+    ]
+  },
+  {
+    "title": "基本设置",
+    "file": "general.md",
+    "source": "https://docs.phoenixdevt.fr/mmoinventory/general/",
+    "source_key": "mmoinventory_general_index.md",
+    "source_sha256": "186cc41389bc77002f24da477a3311d1e827ed5974d870758ad507e9533140f0",
+    "translation_units": [
+      353
+    ]
+  },
+  {
+    "title": "权限",
+    "file": "general/permissions.md",
+    "source": "https://docs.phoenixdevt.fr/mmoinventory/general/permissions",
+    "source_key": "mmoinventory_general_permissions.md",
+    "source_sha256": "151dd21db7d9506456c71553303d7521ff4e6ffa1df8e25f1f95438140c8e74d",
+    "translation_units": [
+      354,
+      1167,
+      1896
+    ]
+  },
+  {
+    "title": "占位符",
+    "file": "general/placeholders.md",
+    "source": "https://docs.phoenixdevt.fr/mmoinventory/general/placeholders",
+    "source_key": "mmoinventory_general_placeholders.md",
+    "source_sha256": "f74a2cd219a19c20aa7f311e3ff8c88470563a48c7982aa585476c24d12fc23d",
+    "translation_units": [
+      372,
+      1897
+    ]
+  },
+  {
+    "title": "首页",
+    "file": "index.md",
+    "source": "https://docs.phoenixdevt.fr/mmoinventory/",
+    "source_key": "mmoinventory_index.md",
+    "source_sha256": "1d015115f4e457cc4cd88e33c0b32b29814af1be714ee0028c43600f67a24733",
+    "translation_units": [
+      386,
+      1898,
+      1899,
+      283,
+      117,
+      1900,
+      1247,
+      1901
+    ]
+  },
+  {
+    "title": "安装指南",
+    "file": "install.md",
+    "source": "https://docs.phoenixdevt.fr/mmoinventory/install",
+    "source_key": "mmoinventory_install.md",
+    "source_sha256": "8af279e2b2a7fbeb8cd35df41a9c061dbe103d7ff9e3f6673097c57da310bc1d",
+    "translation_units": [
+      1250,
+      1902,
+      1903,
+      1904,
+      1905,
+      1906,
+      1907,
+      1908,
+      1909
+    ]
+  }
+]

@@ -22,7 +22,7 @@
 .md-copyright { color:inherit; }
 @media(min-width:1220px){ .md-main__inner { margin-top:1.5rem; } .md-content { max-width:900px; } }
 
-/* Two top-level plugin sections. */
+/* Top-level plugin sections. */
 .md-tabs { border-bottom:1px solid rgba(128,128,128,.16); }
 .md-tabs__link { font-size:.8rem; font-weight:600; }
 .md-tabs__item--active .md-tabs__link { color:var(--md-typeset-a-color); }

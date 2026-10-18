@@ -1,0 +1,1027 @@
+[
+  {
+    "id": 116,
+    "source": "> **INFO**",
+    "zh": "> **信息**"
+  },
+  {
+    "id": 117,
+    "source": ">",
+    "zh": ">"
+  },
+  {
+    "id": 189,
+    "source": "📮 Events",
+    "zh": "📮 活动"
+  },
+  {
+    "id": 190,
+    "source": "BountyCreateEvent cancelable",
+    "zh": "赏金创建事件可取消"
+  },
+  {
+    "id": 191,
+    "source": "This event is called when a bounty is about to be registered. A bounty can be created by a player using the `/bounty` command, by a command block or the console using the same command, or by the [auto bounty feature](https://docs.phoenixdevt.fr/bounty-hunters/features/auto-bounties) which sets a bounty onto whoever kills a player illegally. `event#getCause()` returns the cause of the creation. Other plugins can use the `PLUGIN` event cause.",
+    "zh": "当悬赏即将注册时调用此事件。悬赏可以由玩家使用`/bounty`命令创建，也可以通过命令块或控制台使用相同的命令创建，或者通过 [auto悬赏功能](https://docs.phoenixdevt.fr/bounty-hunters/features/auto-bounties)来创建，该功能将悬赏设置为非法杀死玩家的人。`event#getCause()`返回创建原因。其他插件可以使用`PLUGIN`事件原因。"
+  },
+  {
+    "id": 192,
+    "source": "BountyIncreaseEvent cancelable",
+    "zh": "赏金增加活动可取消"
+  },
+  {
+    "id": 193,
+    "source": "This event is called when a bounty's reward increases, either because a player increased it manually using `/bounty` or because the auto-bounty increased a player's bounty. `event#getCause()` returns the cause of the increase. The amount of money added to the bounty can be edited using `event#setAdded(double)`.",
+    "zh": "当悬赏的奖励增加时，会调用此事件，因为玩家使用`/bounty`手动增加奖励，或者因为auto-bounty增加了玩家的悬赏。`event#getCause()`返回增加的原因。添加到悬赏的金额可以使用`event#setAdded(double)`进行编辑。"
+  },
+  {
+    "id": 194,
+    "source": "BountyExpireEvent cancelable",
+    "zh": "赏金到期事件可取消"
+  },
+  {
+    "id": 195,
+    "source": "This event is called either when a bounty fully expires or if the total amount of the bounty drops. A bounty can decrease for several reasons: an admin running `/bounty remove`, a player removing the bounty they created by right clicking the bounty item in the bounties list, or due to the bounty expiration system (if enabled).",
+    "zh": "当悬赏完全到期或悬赏总量下降时，会调用此事件。悬赏可能会因多种原因而减少：管理员运行`/bounty remove`、玩家删除了他们通过右键单击悬赏列表中的悬赏物品创建的悬赏，或者由于悬赏过期系统（如果启用）。"
+  },
+  {
+    "id": 196,
+    "source": "This event is called when a bounty expires, either because of an admin running `/bounty remove` or due to a player removing the bounty he created by right clicking the bounty item in the bounties list. `event#getCause()` returns the cause of the expiration.",
+    "zh": "当悬赏过期时，会调用此事件，原因可能是管理员运行`/bounty remove`，也可能是由于玩家删除了他通过右键单击悬赏列表中的悬赏物品创建的悬赏。`event#getCause()`返回过期原因。"
+  },
+  {
+    "id": 197,
+    "source": "BountyClaimEvent cancelable",
+    "zh": "赏金领取活动可取消"
+  },
+  {
+    "id": 198,
+    "source": "This event is called when a player claims a bounty after killing the bounty target.",
+    "zh": "当玩家在杀死悬赏目标后声明悬赏时，将调用此事件。"
+  },
+  {
+    "id": 199,
+    "source": "HunterLevelUpEvent",
+    "zh": "猎人升级活动"
+  },
+  {
+    "id": 200,
+    "source": "Called when a player levels up by claiming a bounty (this event is always called after the claim event).",
+    "zh": "当玩家通过声明悬赏升级时调用（此事件始终在声明事件之后调用）。"
+  },
+  {
+    "id": 201,
+    "source": "HunterTargetEvent cancelable",
+    "zh": "HunterTarget活动可取消"
+  },
+  {
+    "id": 202,
+    "source": "Called when a player targets another player using the bounty list.",
+    "zh": "当玩家使用悬赏列表瞄准另一个玩家时调用。"
+  },
+  {
+    "id": 203,
+    "source": "API",
+    "zh": "API"
+  },
+  {
+    "id": 204,
+    "source": "📜 Bounties",
+    "zh": "📜悬赏"
+  },
+  {
+    "id": 205,
+    "source": "You may use the `BountyManager` class to register/unregister bounties or to simply check existing bounties. You can access the class instance using the following code snippet:",
+    "zh": "你可以使用`BountyManager`类来注册/取消注册悬赏或简单地检查现有的悬赏。你可以使用以下代码片段访问类实例："
+  },
+  {
+    "id": 206,
+    "source": "Creating & registering a bounty",
+    "zh": "创建并注册悬赏"
+  },
+  {
+    "id": 207,
+    "source": "To create a bounty, you have to use the `Bounty` constructor.",
+    "zh": "要创建悬赏，你必须使用`Bounty`构造函数。"
+  },
+  {
+    "id": 208,
+    "source": "creator - OfflinePlayer",
+    "zh": "创建者 - OfflinePlayer"
+  },
+  {
+    "id": 209,
+    "source": "target - OfflinePlayer",
+    "zh": "目标 - OfflinePlayer"
+  },
+  {
+    "id": 210,
+    "source": "reward - Double",
+    "zh": "奖励 - 双倍"
+  },
+  {
+    "id": 211,
+    "source": "To register the bounty, use `bountyManager.registerBounty(bounty)`, which calls the `BountyCreateEvent` event. To unregister a bounty, you need to use `bountyManager.unregisterBounty(bounty)`. The `Bounty` class no longer has any register or unregister methods to reduce confusion and potential data glitches.",
+    "zh": "要注册悬赏，请使用`bountyManager.registerBounty(bounty)`，它调用`BountyCreateEvent`事件。要注销悬赏，你需要使用`bountyManager.unregisterBounty(bounty)`。`Bounty`类不再具有任何注册或取消注册方法，以减少混乱和潜在的数据故障。"
+  },
+  {
+    "id": 212,
+    "source": "These methods both reset the bounty hunters. That means players hunting the bounty target will stop their hunt.",
+    "zh": "这些方法都重置了悬赏猎人。这意味着玩家狩猎悬赏目标将停止狩猎。"
+  },
+  {
+    "id": 213,
+    "source": "Getting the list of active bounties",
+    "zh": "获取活跃的悬赏列表"
+  },
+  {
+    "id": 214,
+    "source": "Use `bountyManager.getBounties()` to get a collection of all active bounties, sorted in order of creation.",
+    "zh": "使用`bountyManager.getBounties()`获取所有活动悬赏的集合，按创建顺序排序。"
+  },
+  {
+    "id": 215,
+    "source": "Getting a bounty",
+    "zh": "获取悬赏"
+  },
+  {
+    "id": 216,
+    "source": "You can use `bountyManager.getBounty(OfflinePlayer)` to get the bounty on a player.",
+    "zh": "你可以使用`bountyManager.getBounty(OfflinePlayer)`在玩家上获取悬赏。"
+  },
+  {
+    "id": 217,
+    "source": "You will first have to check if there is any bounty on the player using `bountyManager.hasBounty(OfflinePlayer)` as the `getBounty(OfflinePlayer)` method will throw an NPE error if the player does not have any bounty on them.",
+    "zh": "先用 `bountyManager.hasBounty(OfflinePlayer)` 检查玩家是否有悬赏。若玩家没有悬赏，直接调用 `getBounty(OfflinePlayer)` 会抛出 NPE 错误。"
+  },
+  {
+    "id": 218,
+    "source": "👨‍🚀 Player Data",
+    "zh": "👨‍🚀玩家数据"
+  },
+  {
+    "id": 219,
+    "source": "Obtaining player data",
+    "zh": "获取玩家数据"
+  },
+  {
+    "id": 220,
+    "source": "Since 2.3, player data is now mapped inside a `PlayerDataManager` instance that you can access using `BountyHunters.getInstance().getPlayerDataManager()`. Using the right method you can retrieve the corresponding `PlayerData` instance.",
+    "zh": "自2.3以来，玩家数据现在映射到`PlayerDataManager`实例内，你可以使用`BountyHunters.getInstance().getPlayerDataManager()`访问该实例。使用正确的方法，你可以检索相应的`PlayerData`实例。"
+  },
+  {
+    "id": 221,
+    "source": "Methods",
+    "zh": "方法"
+  },
+  {
+    "id": 222,
+    "source": "| Getter | Setter | Description |",
+    "zh": "|吸气剂|二传手|描述 |"
+  },
+  {
+    "id": 223,
+    "source": "| `getLevel()` | `setLevel(int)` | The hunter's [[level |",
+    "zh": "|`getLevel()`|`setLevel(int)`|猎人的[[等级|"
+  },
+  {
+    "id": 224,
+    "source": "| `getClaimedBounties()` | `setClaimed..(int)` | How many bounties the player claimed. |",
+    "zh": "|`getClaimedBounties()`|`setClaimed..(int)`|玩家声称了多少悬赏。 |"
+  },
+  {
+    "id": 225,
+    "source": "| `getSuccessfulBounties()` | `setSuccessful(int)` | How many successful bounties the player created. |",
+    "zh": "|`getSuccessfulBounties()`|`setSuccessful(int)`|玩家创造了多少成功的悬赏。 |"
+  },
+  {
+    "id": 226,
+    "source": "| `getTitle()` | `setTitle(Title)` | The player's [[current title |",
+    "zh": "|`getTitle()`|`setTitle(Title)`|玩家的 [[当前标题 |"
+  },
+  {
+    "id": 227,
+    "source": "| `getAnimation()` | `setAnimation(Quote)` | The player's current [[bounty animation |",
+    "zh": "|`getAnimation()`|`setAnimation(Quote)`|玩家的当前 [[悬赏动画 |"
+  },
+  {
+    "id": 228,
+    "source": "| `getIllegalKills()` | `setIllegalKills(int)` | Amount of illegal kills he performed. |",
+    "zh": "|`getIllegalKills()`|`setIllegalKills(int)`|他非法杀人的数量。 |"
+  },
+  {
+    "id": 229,
+    "source": "| `getIllegalKillStreak()` | `setIllegalKillStreak(int)` | Amount of illegal kills made since last respawn. |",
+    "zh": "|`getIllegalKillStreak()`|`setIllegalKillStreak(int)`|自上次重生以来非法击杀的数量。 |"
+  },
+  {
+    "id": 230,
+    "source": "| `getRedeemableHeads()` | `add/remove...(UUID)` | UUIDs of players whose heads the player may redeem. |",
+    "zh": "|`getRedeemableHeads()`|`add/remove...(UUID)`|玩家的UUID，玩家可以兑换其头。 |"
+  },
+  {
+    "id": 231,
+    "source": "You can also access the player profile item using `data.getProfileItem()` (be careful, that skull item does **NOT** have any skull texture), the level progress bar using `data.getProgressBar()` and the number of bounties needed to level up using `data.getBountiesNeededToLevelUp()`.",
+    "zh": "还可以用 `data.getProfileItem()` 获取玩家档案物品（注意，这个头颅物品**没有**头颅贴图），用 `data.getProgressBar()` 获取等级进度条，用 `data.getBountiesNeededToLevelUp()` 获取升级所需的悬赏数量。"
+  },
+  {
+    "id": 232,
+    "source": "Extra",
+    "zh": "额外的"
+  },
+  {
+    "id": 233,
+    "source": "| Method | Usage |",
+    "zh": "|方法|用途 |"
+  },
+  {
+    "id": 234,
+    "source": "| `addLevels(int)` | Give extra levels to the player with no level up message |",
+    "zh": "|`addLevels(int)`|为玩家提供额外等级，但没有升级消息 |"
+  },
+  {
+    "id": 235,
+    "source": "| `addClaimedBounties(int)` | Give extra claimed bounties |",
+    "zh": "|`addClaimedBounties(int)`|给予额外索赔悬赏|"
+  },
+  {
+    "id": 236,
+    "source": "| `addSuccessfulBounties(int)` | Increases count of bounties created by the player, and claimed by others. |",
+    "zh": "|`addSuccessfulBounties(int)`|增加由玩家创建并由其他人声明的悬赏的计数。 |"
+  },
+  {
+    "id": 237,
+    "source": "| `addIllegalKills(int)` | Add kills to the illegal kill streak & total counter |",
+    "zh": "|`addIllegalKills(int)`|将击杀数添加到非法击杀数和总计数中 |"
+  },
+  {
+    "id": 238,
+    "source": "| `hasUnlocked(LevelUpItem)` | Checks if a player has unlocked an item |",
+    "zh": "|`hasUnlocked(LevelUpItem)`|检查玩家是否已解锁物品|"
+  },
+  {
+    "id": 239,
+    "source": "Player Hunting",
+    "zh": "玩家狩猎"
+  },
+  {
+    "id": 240,
+    "source": "Learn about player hunting on this [wiki page](https://docs.phoenixdevt.fr/bounty-hunters/features/player-hunting).",
+    "zh": "在此 [wiki 页面](https://docs.phoenixdevt.fr/bounty-hunters/features/player-hunting)上了解玩家狩猎。"
+  },
+  {
+    "id": 241,
+    "source": "| `setHunting(Bounty)` | Forces the player to hunt a player |",
+    "zh": "|`setHunting(Bounty)`|强制玩家搜寻玩家|"
+  },
+  {
+    "id": 242,
+    "source": "| `isHunting()` | True if the player is on a hunt |",
+    "zh": "|`isHunting()`|如果玩家正在狩猎，则为 True |"
+  },
+  {
+    "id": 243,
+    "source": "| `stopHunting()` | Quits player hunting |",
+    "zh": "|`stopHunting()`|退出玩家狩猎 |"
+  },
+  {
+    "id": 244,
+    "source": "Manipulating the player level",
+    "zh": "操纵玩家电平"
+  },
+  {
+    "id": 245,
+    "source": "Keep in mind the `PlayerData` instance does **NOT** store what items (quotes/titles) the player unlocked. These are recalculated every time the player is prompted the item list. You may check if a player has unlocked an item using `hasUnlocked(LevelUpItem)` where `LevelUpItem` is an abstract class which `Quote` and `Title` both extend.",
+    "zh": "请记住，`PlayerData`实例**不**存储玩家解锁的物品（引用/标题）。每次在物品列表中提示玩家时，都会重新计算这些值。你可以使用`hasUnlocked(LevelUpItem)`检查玩家是否解锁了物品，其中`LevelUpItem`是`Quote`和`Title`都扩展的抽象类。"
+  },
+  {
+    "id": 246,
+    "source": "Plugin Inventories",
+    "zh": "插件物品栏"
+  },
+  {
+    "id": 247,
+    "source": "The following code can be used to open the bounty list to a player.",
+    "zh": "以下代码可用于打开悬赏列表到玩家。"
+  },
+  {
+    "id": 248,
+    "source": "Available GUIs are `BOUNTY_LIST`, `HUNTER_LEADERBOARD` and `REDEEMABLE_HEADS`.",
+    "zh": "可用的 GUI 包括`BOUNTY_LIST`、`HUNTER_LEADERBOARD`和`REDEEMABLE_HEADS`。"
+  },
+  {
+    "id": 249,
+    "source": "⛓️‍💥 Automatic Bounties",
+    "zh": "⛓️‍💥 自动悬赏"
+  },
+  {
+    "id": 250,
+    "source": "Auto bounties allow you to punish players for killing people *illegally*. An illegal kill is a kill done on a player who does not have any bounty placed on them. This feature is useful to avoid random killing and to encourage players to only kill those who have bounties on them.",
+    "zh": "Auto悬赏允许你惩罚玩家*非法*杀人。非法击杀是对没有放置任何悬赏的玩家进行的击杀。此功能对于避免随机杀戮很有用，并鼓励玩家只杀掉身上有悬赏的人。"
+  },
+  {
+    "id": 251,
+    "source": "If the player already has a bounty on them, the auto-bounty system will simply increase the current bounty instead of creating a new one.",
+    "zh": "如果玩家上已经有悬赏，则auto-bounty系统将简单地增加当前的悬赏，而不是创建一个新的。"
+  },
+  {
+    "id": 252,
+    "source": "![](https://docs.phoenixdevt.fr/assets/auto_bounty_1.BFpNj-RU.png)",
+    "zh": "![](https://docs.phoenixdevt.fr/assets/auto_bounty_1.BFpNj-RU.png)"
+  },
+  {
+    "id": 253,
+    "source": "![](https://docs.phoenixdevt.fr/assets/auto_bounty_2.Cah5O6XY.png)",
+    "zh": "![](https://docs.phoenixdevt.fr/assets/auto_bounty_2.Cah5O6XY.png)"
+  },
+  {
+    "id": 254,
+    "source": "Configuration",
+    "zh": "配置"
+  },
+  {
+    "id": 255,
+    "source": "Set `enabled` to `false` to completely disable the auto-bounty. `reward` defines the default bounty reward. `chance` defines the chance (in %) for a player to trigger the auto-bounty system when killing someone illegally.",
+    "zh": "将`enabled`设置为`false`以完全禁用auto-bounty。`reward`定义默认的悬赏奖励。`chance`定义了玩家在非法杀人时触发auto-bounty系统的几率（以%为单位）。"
+  },
+  {
+    "id": 256,
+    "source": "Creating a bounty",
+    "zh": "创建悬赏"
+  },
+  {
+    "id": 257,
+    "source": "Any player with the permission `bountyhunters.add` can use the /bounty command to set a bounty onto someone's head. The sender has to specify the target name: `/addbounty <target> <reward>`.",
+    "zh": "拥有 `bountyhunters.add` 权限的玩家可以使用 /bounty 命令，对其他玩家发布悬赏。发送者需要指定目标名称：`/addbounty <target> <reward>`。"
+  },
+  {
+    "id": 258,
+    "source": "You can also do the exact same command even if the player already has a bounty on him, it will just increase the bounty by a certain amount and display a message in the chat again. This can be used by players to get someone else killed faster by other bounty hunters.",
+    "zh": "即使玩家身上已经有悬赏，你也可以执行完全相同的命令，它只会将悬赏增加一定数量并再次在聊天中显示消息。玩家可以利用这一点让其他悬赏猎人更快地杀死其他人。"
+  },
+  {
+    "id": 259,
+    "source": "If you have the `bountyhunters.immunity` permission node, players who do not have the `bountyhunters.immunity.bypass` perm node will not be able to set a bounty on you. This feature may be used by admins to prevent other players from setting bounties onto them.",
+    "zh": "如果你有`bountyhunters.immunity`权限节点，则没有`bountyhunters.immunity.bypass`永久节点的玩家将无法为你设置悬赏。管理员可以使用此功能来防止其他玩家在其上设置悬赏。"
+  },
+  {
+    "id": 260,
+    "source": "The bounty list can be accessed using `/bounties`.",
+    "zh": "可以使用`/bounties`访问悬赏列表。"
+  },
+  {
+    "id": 261,
+    "source": "![](https://docs.phoenixdevt.fr/assets/menu_0.NlMeIaxF.png)",
+    "zh": "![](https://docs.phoenixdevt.fr/assets/menu_0.NlMeIaxF.png)"
+  },
+  {
+    "id": 262,
+    "source": "Bounty List UI",
+    "zh": "悬赏列表界面"
+  },
+  {
+    "id": 263,
+    "source": "By hovering the different player heads in the GUI, you can see information about all the current bounties. You can see what the current reward is, how many players are currently **tracking** the bounty target. You can also determine by reading the first line, the creator of the bounty, if the bounty was created by a player or if the bounty was generated automatically due to an illegal kill.",
+    "zh": "通过将不同的玩家头悬停在GUI中，你可以看到当前所有悬赏的信息。你可以看到当前的奖励是多少，目前有多少个玩家正在**跟踪**悬赏目标。你还可以通过阅读第一行来确定悬赏的创建者，悬赏是由玩家创建的，还是悬赏是由于非法杀死而自动生成的。"
+  },
+  {
+    "id": 264,
+    "source": "![](https://docs.phoenixdevt.fr/assets/menu_1.a2AzJVFU.png)",
+    "zh": "![](https://docs.phoenixdevt.fr/assets/menu_1.a2AzJVFU.png)"
+  },
+  {
+    "id": 265,
+    "source": "This menu will also display some of your statistics, like your level, claimed/successful bounties, level progress, etc. You can see these stats by hovering the player head on the bottom left corner of the GUI. All the stats that are displayed there can also be accessed using placeholders.",
+    "zh": "此菜单还会显示你的一些属性，例如你的等级、已领取/成功的悬赏、等级进度等。你可以通过将玩家头悬停在GUI左下角来查看这些属性。那里显示的所有属性也可以使用占位符进行访问。"
+  },
+  {
+    "id": 266,
+    "source": "![](https://docs.phoenixdevt.fr/assets/menu_2.D9tiGzXj.png)",
+    "zh": "![](https://docs.phoenixdevt.fr/assets/menu_2.D9tiGzXj.png)"
+  },
+  {
+    "id": 267,
+    "source": "Editing this menu",
+    "zh": "编辑本段菜单"
+  },
+  {
+    "id": 268,
+    "source": "Item names, lores, materials, slots... are completely editable in the `gui/bounty-list.yml` config file.",
+    "zh": "物品名称、故事、材料、插槽...在`gui/bounty-list.yml`配置文件中完全可编辑。"
+  },
+  {
+    "id": 269,
+    "source": "<summary>Default Config (might be outdated)</summary>",
+    "zh": "<summary>默认配置（可能已过时）</summary>"
+  },
+  {
+    "id": 270,
+    "source": "⌛ Bounty Expiration",
+    "zh": "⌛悬赏到期"
+  },
+  {
+    "id": 271,
+    "source": "You can choose to have bounties automatically removed if they have been inactive for a certain amount of time. An inactive bounty is a bounty that hasn't been updated (either claimed or increased) for a certain amount of time.",
+    "zh": "如果悬赏在一段时间内处于非活动状态，你可以选择自动删除它们。不活动的悬赏是指在一定时间内未更新（声明或增加）的悬赏。"
+  },
+  {
+    "id": 272,
+    "source": "This can be toggled on in the `config.yml` file:",
+    "zh": "可以在`config.yml`文件中打开此功能："
+  },
+  {
+    "id": 273,
+    "source": "🛑 Bounty Restrictions",
+    "zh": "🛑悬赏限制"
+  },
+  {
+    "id": 274,
+    "source": "A common problem with bounty systems is players abusing bounties on friends or alts in order to farm stats or rewards. BountyHunters provides several ways to restrict how players can create and claim bounties in order to prevent such abuses.",
+    "zh": "悬赏系统的一个常见问题是玩家在朋友或 alt 上滥用悬赏，以获取属性或奖励。BountyHunters提供了多种方法来限制玩家创建和声明悬赏的方式，以防止此类滥用。"
+  },
+  {
+    "id": 275,
+    "source": "<summary>Config Options</summary>",
+    "zh": "<summary>配置选项</summary>"
+  },
+  {
+    "id": 276,
+    "source": "For instance, you can prevent players from claiming bounties on their friends, guild members, faction members... All supported plugins are listed in the config file above.",
+    "zh": "例如，你可以阻止玩家向他们的朋友、公会成员、派系成员索取悬赏...所有支持的插件都列在上面的配置文件中。"
+  },
+  {
+    "id": 277,
+    "source": "You can also prevent players from claiming their own bounties, which may be useful if you disable the bounty claim/creation tax.",
+    "zh": "你还可以阻止玩家声明自己的悬赏，如果你禁用悬赏声明/创建税，这可能会很有用。"
+  },
+  {
+    "id": 278,
+    "source": "BountyHunters can also detect if players have their bed spawn point close to the bounty target player's bed spawn point. If so, they won't be able to claim the bounty. You can configure the detection radius in blocks.",
+    "zh": "BountyHunters还可以检测玩家的床生成点是否接近悬赏目标玩家的床生成点。如果是这样，他们将无法领取悬赏。你可以以块为单位配置检测半径。"
+  },
+  {
+    "id": 279,
+    "source": "💸 Economy & Taxes",
+    "zh": "💸 经济与税收"
+  },
+  {
+    "id": 280,
+    "source": "What would a bounty plugin be without a proper economy and tax system? 🤑",
+    "zh": "如果没有适当的经济和税收系统，悬赏插件会是什么样子？ 🤑"
+  },
+  {
+    "id": 281,
+    "source": "Taxes",
+    "zh": "税收"
+  },
+  {
+    "id": 282,
+    "source": "In order to prevent your players from abusing bounties, you may use taxes to make them think twice before creating/removing a bounty. Using the config, you may configure a set percentage of the reward that will be taken whenever a player either creates a bounty, adds money to someone's bounty or takes off the money he had put on someone's head.",
+    "zh": "为了防止你的玩家滥用悬赏，你可以使用税收让他们在创建/删除悬赏之前三思而后行。使用该配置，你可以配置每当玩家创建悬赏、向某人的悬赏添加资金或拿走他放在某人头上的钱时将获得的奖励百分比。"
+  },
+  {
+    "id": 283,
+    "source": "> **TIP**",
+    "zh": "> **提示**"
+  },
+  {
+    "id": 284,
+    "source": "> We recommend using a big tax, say 10%, on bounty claims to stabilize your economy, as that would be the equivalent of VAT.",
+    "zh": "> 我们建议对悬赏索赔征收高额税，例如10%，以稳定你的经济，因为这相当于增值税。"
+  },
+  {
+    "id": 285,
+    "source": "> You can also then use a smaller tax, like 1-3%, on bounty removal to discourage players from creating fake or useless bounties. If you tax bounty removal instead of creation, players will be encouraged to create bounties, which is good for your server's activity!",
+    "zh": "> 然后，你还可以在悬赏移除时使用较小的税，例如1-3%，以阻止玩家创建虚假或无用的悬赏。如果你对悬赏删除而不是创建征税，则将鼓励玩家创建悬赏，这对你的服务器活动有好处！"
+  },
+  {
+    "id": 286,
+    "source": "Minimum/maximum reward",
+    "zh": "最低/最高奖励"
+  },
+  {
+    "id": 287,
+    "source": "Using this config option, you can decide the minimum and maximum amount of money a player can add to a bounty.",
+    "zh": "使用此配置选项，你可以决定玩家可以添加到悬赏的最小和最大金额。"
+  },
+  {
+    "id": 288,
+    "source": "💀 Head Hunting",
+    "zh": "💀 猎头"
+  },
+  {
+    "id": 289,
+    "source": "The *Head Hunting* feature, when enabled, requires bounty hunters to collect the head of the bounty target in order to claim the bounty. Hunters need to bring the head to the bounty creator by right clicking them with the head in their hand. Doing so will claim the bounty and give the reward to the hunter.",
+    "zh": "启用 *Head Hunting* 功能后，赏金猎人需要收集悬赏目标的头颅，才能领取赏金。猎人要手持头颅，右键点击发布悬赏的玩家。完成后即可领取悬赏，奖励会发给猎人。"
+  },
+  {
+    "id": 290,
+    "source": "Make sure you enable [head drops](https://docs.phoenixdevt.fr/bounty-hunters/features/head-hunting#head-drops) when using head hunting so that hunters can actually get the head of their target when killing them.",
+    "zh": "确保在使用猎头时启用[头部掉落](https://docs.phoenixdevt.fr/bounty-hunters/features/head-hunting#head-drops)，以便猎人在杀死目标时能够真正获得目标的头部。"
+  },
+  {
+    "id": 291,
+    "source": "We also recommend toggling off the following option to avoid bounties from stacking. When toggled off, two different players placing a bounty on the same target will result in two different bounties, instead of one larger bounty.",
+    "zh": "我们还建议关闭以下选项以避免悬赏堆叠。关闭时，两个不同的玩家将悬赏放在同一目标上将导致两个不同的悬赏，而不是一个较大的悬赏。"
+  },
+  {
+    "id": 292,
+    "source": "If this option is toggled off, two heads will drop and the hunter will have to bring both heads to the respective bounty creators in order to claim both bounties, as if it were two different bounties. It's up to you to decide whether you want this option enabled or not!",
+    "zh": "如果关闭此选项，则会掉落两个头，猎人必须将两个头带到各自的悬赏创造者处，才能获得两个悬赏，就好像它是两个不同的悬赏一样。由你决定是否启用此选项！"
+  },
+  {
+    "id": 293,
+    "source": "Head Drops",
+    "zh": "头滴"
+  },
+  {
+    "id": 294,
+    "source": "When claiming a bounty, the head of the bounty target may drop. You can configure this feature in the main config file. You may also choose the chance for a player head to drop whenever a bounty is claimed.",
+    "zh": "当领取悬赏时，悬赏目标的头部可能会掉落。你可以在主配置文件中配置此功能。你还可以选择在认领悬赏时有机会掉落玩家头。"
+  },
+  {
+    "id": 295,
+    "source": "Notice there are two different options there. The first one is to make one head drop on the floor whenever the bounty target is killed.",
+    "zh": "请注意，那里有两个不同的选项。第一个是每当悬赏目标被杀死时，使一个头掉在地板上。"
+  },
+  {
+    "id": 296,
+    "source": "The *creator* option can be used to **give a player head to the bounty creator**. If the bounty creator is offline, or else if his inventory is full the moment the bounty is claimed, the head is saved and can be redeemed for free using */redeembountyheads* whenever he wants. He will receive the player head instantly in his inventory if he has one free slot.",
+    "zh": "*creator* 选项可用于**将玩家头赋予悬赏创建者**。如果悬赏的创建者离线，或者如果他的物品栏在悬赏被认领时已满，则该头将被保存，并且可以随时使用 */redeembountyheads* 免费兑换。如果他有一个空闲插槽，他将立即在他的物品栏中收到玩家头。"
+  },
+  {
+    "id": 297,
+    "source": "Features",
+    "zh": "特点"
+  },
+  {
+    "id": 298,
+    "source": "🏅 Levels & Rewards",
+    "zh": "🏅 等级和奖励"
+  },
+  {
+    "id": 299,
+    "source": "Players can level up by claiming a specific amount of bounties. When leveling up, players earn money and may unlock new perks like hunter titles, which will be displayed on the hunter leaderboard, and bounty animations.",
+    "zh": "玩家可以通过领取特定数量的悬赏来升级。升级时，玩家赚钱并可能解锁新的福利，例如猎人头衔（​​将显示在猎人排行榜上）和悬赏动画。"
+  },
+  {
+    "id": 300,
+    "source": "![](https://docs.phoenixdevt.fr/assets/level_rewards.B2xtYyh3.png)",
+    "zh": "![](https://docs.phoenixdevt.fr/assets/level_rewards.B2xtYyh3.png)"
+  },
+  {
+    "id": 301,
+    "source": "Titles",
+    "zh": "标题"
+  },
+  {
+    "id": 302,
+    "source": "In order to create a hunter title, you will have to specify the title format (how it looks in game) and the level at which it will be unlocked. The string like `HEAD_HUNTER` is the title ID, it's not displayed anywhere in game and is just used internally by BountyHunters to differentiate all the titles. Just make sure two titles don't share the same ID.",
+    "zh": "为了创建猎人标题，你必须指定标题格式（它在游戏中的外观）以及解锁的等级。像`HEAD_HUNTER`这样的字符串是标题ID，它不会显示在游戏中的任何地方，只是由BountyHunters在内部使用来区分所有标题。只需确保两个标题不共享相同的ID即可。"
+  },
+  {
+    "id": 303,
+    "source": "Bounty Animations",
+    "zh": "悬赏动画"
+  },
+  {
+    "id": 304,
+    "source": "Bounty animations are composed of two things: one **death quote**, which is a message displayed in the chat whenever you claim a bounty, and a **particle effect** which is summoned around the killed player.",
+    "zh": "悬赏动画由两部分组成：一个 **死亡引语**，这是每当你领取悬赏时在聊天中显示的一条消息，以及一个 **粒子效果**，它在被杀死的玩家周围召唤。"
+  },
+  {
+    "id": 305,
+    "source": "In order to setup a bounty animation, you will have to specify the death quote (which is the `format` section), the level at which it will be unlocked, and the particle effect which must be one element of the following list.",
+    "zh": "为了设置悬赏动画，你必须指定死亡引用（即`format`部分）、解锁的等级以及粒子效果（必须是以下列表中的一个元素）。"
+  },
+  {
+    "id": 306,
+    "source": "| Particle Effect | Description |",
+    "zh": "|粒子效果|描述 |"
+  },
+  {
+    "id": 307,
+    "source": "| TOTEM | Summons two interwoven bright jets of particles |",
+    "zh": "|图腾 |召唤两股交织在一起的明亮粒子射流 |"
+  },
+  {
+    "id": 308,
+    "source": "| FLAME_VORTEX | Summons two interwoven flame jets |",
+    "zh": "|FLAME_VORTEX|召唤两股交织的火焰喷射 |"
+  },
+  {
+    "id": 309,
+    "source": "| GOLD | Spawns many gold nuggets flying out of the player's corpse |",
+    "zh": "|黄金|从玩家的尸体中飞出许多金块 |"
+  },
+  {
+    "id": 310,
+    "source": "| SMOKE | Summons a sphere of smoke around target player |",
+    "zh": "|烟雾|在目标玩家周围召唤一个烟雾球 |"
+  },
+  {
+    "id": 311,
+    "source": "| BLOODBATH | Summons blood marks on the ground |",
+    "zh": "|血战|召唤地上血迹 |"
+  },
+  {
+    "id": 312,
+    "source": "| WITCHCRAFT | Summons three waves of dark energy spreading across the ground |",
+    "zh": "|巫术 |召唤三波黑暗能量席卷地面|"
+  },
+  {
+    "id": 313,
+    "source": "| METAMORPHOSE | Summons a baby sheep with the target player's name |",
+    "zh": "|变态 |召唤一只小羊，目标名称为玩家|"
+  },
+  {
+    "id": 314,
+    "source": "| METEOR | Summons three meteors dashing at the target location |",
+    "zh": "|流星|召唤三颗流星飞向目标地点|"
+  },
+  {
+    "id": 315,
+    "source": "| NONE | No particle effect. |",
+    "zh": "|无 |无粒子效果。 |"
+  },
+  {
+    "id": 316,
+    "source": "Rest of Config",
+    "zh": "其余配置"
+  },
+  {
+    "id": 317,
+    "source": "The `bounties-per-level` option corresponds to the amount of bounties players must claim in order to level up. The `commands` section lets you setup commands which will be performed by the console whenever a player levels up. These commands support PlaceholderAPI placeholders. The `money` section lets you configure the money earned by hunters when leveling up.",
+    "zh": "`bounties-per-level`选项对应于悬赏玩家升级所需的金额。`commands`部分允许你设置每当玩家升级时控制台将执行的命令。这些命令支持PlaceholderAPI占位符。`money`部分可让你配置猎人升级时赚取的金钱。"
+  },
+  {
+    "id": 318,
+    "source": "Disabling Leveling Rewards",
+    "zh": "禁用升级奖励"
+  },
+  {
+    "id": 319,
+    "source": "To disable leveling rewards, delete the content of the `levels.yml` config file. Do not delete the file itself, otherwise it will restore its default content.",
+    "zh": "要禁用升级奖励，请删除`levels.yml`配置文件的内容。不要删除文件本身，否则会恢复其默认内容。"
+  },
+  {
+    "id": 320,
+    "source": "🔧 Miscellaneous",
+    "zh": "🔧 杂项"
+  },
+  {
+    "id": 321,
+    "source": "Bounty Editor",
+    "zh": "悬赏编辑"
+  },
+  {
+    "id": 322,
+    "source": "This GUI can be used to edit a current bounty. It can be used to visualize both the players who put money into that bounty and the portion of the bounty that is due to [automatic bounties](https://docs.phoenixdevt.fr/bounty-hunters/features/auto-bounties). Use `/bounties edit <player>` to open up that edition GUI.",
+    "zh": "该GUI可用于编辑当前的悬赏。它可用于可视化将资金投入悬赏的玩家以及由于 [自动悬赏](https://docs.phoenixdevt.fr/bounty-hunters/features/auto-bounties)] 而产生的悬赏部分。使用`/bounties edit <player>`打开该版本GUI。"
+  },
+  {
+    "id": 323,
+    "source": "![](https://docs.phoenixdevt.fr/assets/editor.BFxklcBM.gif)",
+    "zh": "![](https://docs.phoenixdevt.fr/assets/editor.BFxklcBM.gif)"
+  },
+  {
+    "id": 324,
+    "source": "\"Contributors\" are all the players who put extra money in that bounty. Using that menu you may change how much money every player has added. Editing this value is done via chat input (everything is explained in-game when using the GUI).",
+    "zh": "“贡献者”是所有在悬赏中投入额外资金的玩家。使用该菜单，你可以更改每个玩家添加的金额。编辑此值是通过聊天输入完成的（使用GUI时，所有内容均已解释为in-game）。"
+  },
+  {
+    "id": 325,
+    "source": "Coupled with bounty logs, this menu lets you completely manipulate current bounties on your server.",
+    "zh": "与悬赏日志相结合，此菜单可让你完全操纵服务器上当前的悬赏。"
+  },
+  {
+    "id": 326,
+    "source": "Cooldowns",
+    "zh": "冷却时间"
+  },
+  {
+    "id": 327,
+    "source": "You can choose the amount of time players need to wait before either creating a bounty or adding extra money to an existing bounty.",
+    "zh": "你可以选择在创建悬赏或向现有悬赏添加额外资金之前玩家需要等待的时间。"
+  },
+  {
+    "id": 328,
+    "source": "You can also choose the amount of time players need to wait before targeting again another player using the bounty menu.",
+    "zh": "你还可以使用悬赏菜单选择玩家在再次瞄准另一个玩家之前需要等待的时间。"
+  },
+  {
+    "id": 329,
+    "source": "Bounty Commands",
+    "zh": "悬赏命令"
+  },
+  {
+    "id": 330,
+    "source": "You can configure BountyHunters to perform commands whenever a player claims a bounty and whenever a player receives an automatic bounty. These commands can be configured in the config.yml config file.",
+    "zh": "你可以将BountyHunters配置为在玩家声明悬赏以及玩家收到自动悬赏时执行命令。这些命令可以在config.yml配置文件中配置。"
+  },
+  {
+    "id": 331,
+    "source": "These commands support placeholders from **PlaceholderAPI**, however you may also use `%player%` which returns the player/sender (the one who claimed/created/increased the bounty) name or %target% which returns the bounty target name.",
+    "zh": "这些命令支持来自 **PlaceholderAPI** 的占位符，但是你也可以使用`%player%`返回玩家/sender （声明/创建/增加悬赏的人）名称或%target%返回悬赏目标名称。"
+  },
+  {
+    "id": 332,
+    "source": "Bounties can be created either by players, or by the console (or by the [auto bounty](https://docs.phoenixdevt.fr/bounty-hunters/features/auto-bounties) feature). Different sets of commands can be performed when the bounty creation/increase reason isn't the same.",
+    "zh": "悬赏可以通过玩家或控制台（或通过 [auto悬赏](https://docs.phoenixdevt.fr/bounty-hunters/features/auto-bounties)功能）创建。当悬赏创建/增加原因不同时，可以执行不同的命令集。"
+  },
+  {
+    "id": 333,
+    "source": "🏃‍♀️ Player Hunting",
+    "zh": "🏃‍♀️玩家狩猎"
+  },
+  {
+    "id": 334,
+    "source": "To create more incentive for players to hunt each other down for bounties, players can track players with bounties set on them, using a **Tracking Compass**. This compass can be bought in the bounty menu and will stay in the player's inventory.",
+    "zh": "为了激励玩家互相追捕悬赏，玩家可以使用 **跟踪罗盘** 来跟踪设置了悬赏的玩家。该指南针可以在悬赏菜单中购买，并将保留在玩家的物品栏中。"
+  },
+  {
+    "id": 335,
+    "source": "![](https://docs.phoenixdevt.fr/assets/compass.BoPi9Ne1.png)",
+    "zh": "![](https://docs.phoenixdevt.fr/assets/compass.BoPi9Ne1.png)"
+  },
+  {
+    "id": 336,
+    "source": "This compass will indicate if you are in the same world as your target, and if you are, it will indicate the distance to your target, as well as the direction to follow to find him. Players with the `bountyhunters.untargetable` perm node can't be tracked down by other players except if they have the `bountyhunters.untargetable.bypass` perm node.",
+    "zh": "该指南针将指示你是否与目标位于同一个世界，如果是，它将指示到目标的距离，以及找到他的方向。  具有`bountyhunters.untargetable`永久节点的玩家无法被其他玩家跟踪，除非它们具有`bountyhunters.untargetable.bypass`永久节点。"
+  },
+  {
+    "id": 337,
+    "source": "You may configure the tracking compass in the main plugin config file. You can disable it and change its price and the format that is used to display the distance number decimals when used by players. Last but not least you can also change the delay players need to wait before targeting a new player. Setting this cooldown to 0 can be dangerous since the alert sent to the player being targeted can spam his chat & headphones if sent many times.",
+    "zh": "你可以在主插件配置文件中配置跟踪罗盘。你可以禁用它并更改其价格以及玩家使用时用于显示距离数字小数的格式。最后但并非最不重要的一点是，你还可以更改玩家在定位新的玩家之前需要等待的延迟。将此冷却时间设置为0可能很危险，因为发送到目标玩家的警报如果发送多次，可能会向他的聊天和耳机发送垃圾邮件。"
+  },
+  {
+    "id": 338,
+    "source": "💾 Commands",
+    "zh": "💾 命令"
+  },
+  {
+    "id": 339,
+    "source": "Player Commands",
+    "zh": "玩家命令"
+  },
+  {
+    "id": 340,
+    "source": "| Usage | Description |",
+    "zh": "|用途 |描述 |"
+  },
+  {
+    "id": 341,
+    "source": "| `/addbounty <player> <amount>` | Creates a bounty/adds money to current bounty. |",
+    "zh": "|`/addbounty <player> <amount>`|创建一个悬赏/向当前的悬赏添加资金。 |"
+  },
+  {
+    "id": 342,
+    "source": "| `/bounties` | Displays current bounties. |",
+    "zh": "|`/bounties`|显示当前悬赏。 |"
+  },
+  {
+    "id": 343,
+    "source": "| `/hunterlb` | Displays the bounty hunter leaderboard. |",
+    "zh": "|`/hunterlb`|显示悬赏猎人排行榜。 |"
+  },
+  {
+    "id": 344,
+    "source": "| `/bounties titles` | Displays owned titles. |",
+    "zh": "|`/bounties titles`|显示拥有的标题。 |"
+  },
+  {
+    "id": 345,
+    "source": "| `/bounties animations` | Displays owned bounty animations. |",
+    "zh": "|`/bounties animations`|显示拥有的悬赏动画。 |"
+  },
+  {
+    "id": 346,
+    "source": "| `/redeembountyheads` | Redeem heads from your victims. |",
+    "zh": "|`/redeembountyheads`|从受害者身上赎回人头。 |"
+  },
+  {
+    "id": 347,
+    "source": "Admin Commands",
+    "zh": "管理命令"
+  },
+  {
+    "id": 348,
+    "source": "| `/bounties help` | Displays the help page. |",
+    "zh": "|`/bounties help`|显示帮助页面。 |"
+  },
+  {
+    "id": 349,
+    "source": "| `/bounties remove <player>` | Removes a bounty on a player. |",
+    "zh": "|`/bounties remove <player>`|删除玩家上的悬赏。 |"
+  },
+  {
+    "id": 350,
+    "source": "| `/bounties edit <player>` | Edit a bounty (edit reward & contributors). |",
+    "zh": "|`/bounties edit <player>`|编辑悬赏（编辑奖励和贡献者）。 |"
+  },
+  {
+    "id": 351,
+    "source": "| `/bounties reload` | Reloads the plugin config files. |",
+    "zh": "|`/bounties reload`|重新加载插件配置文件。 |"
+  },
+  {
+    "id": 352,
+    "source": "When performing `/addbounty` as an admin, you may add `-bmm` at the end of your syntax to entirely bypass the minimum/maximum bounty reward limit. You may also use `-nt` to entirely negate the bounty creation tax.",
+    "zh": "当以管理员身份执行`/addbounty`时，你可以在语法末尾添加`-bmm`以完全绕过最小/最大悬赏奖励限制。你还可以使用`-nt`完全抵消悬赏创建税。"
+  },
+  {
+    "id": 353,
+    "source": "General",
+    "zh": "一般"
+  },
+  {
+    "id": 354,
+    "source": "🧑‍⚖️ Permissions",
+    "zh": "🧑‍⚖️权限"
+  },
+  {
+    "id": 355,
+    "source": "Player Permissions",
+    "zh": "玩家权限"
+  },
+  {
+    "id": 356,
+    "source": "| Format | Description |",
+    "zh": "|格式|描述 |"
+  },
+  {
+    "id": 357,
+    "source": "| `bountyhunters.list` | Access to `/bounties` |",
+    "zh": "|`bountyhunters.list`|访问`/bounties`|"
+  },
+  {
+    "id": 358,
+    "source": "| `bountyhunters.add` | Permission to create or increase a bounty. |",
+    "zh": "|`bountyhunters.add`|权限创建或增加一个悬赏。 |"
+  },
+  {
+    "id": 359,
+    "source": "| `bountyhunters.claim` | Permission to **claim a bounty**. |",
+    "zh": "|`bountyhunters.claim`|权限**领取悬赏**。 |"
+  },
+  {
+    "id": 360,
+    "source": "| `bountyhunters.remove` | Lets you remove your own bounties. |",
+    "zh": "|`bountyhunters.remove`|允许你删除自己的悬赏。 |"
+  },
+  {
+    "id": 361,
+    "source": "| `bountyhunters.leaderboard` | Access to the bounty hunter leaderboard GUI. |",
+    "zh": "|`bountyhunters.leaderboard`|进入悬赏猎人排行榜GUI。 |"
+  },
+  {
+    "id": 362,
+    "source": "| `bountyhunters.title` | Access to hunter titles. |",
+    "zh": "|`bountyhunters.title`|获得猎人头衔。 |"
+  },
+  {
+    "id": 363,
+    "source": "| `bountyhunters.animation` | Access to bounty animations. |",
+    "zh": "|`bountyhunters.animation`|访问悬赏动画。 |"
+  },
+  {
+    "id": 364,
+    "source": "| `bountyhunters.redeem-heads` | Access to `/redeembountyheads` |",
+    "zh": "|`bountyhunters.redeem-heads`|访问`/redeembountyheads`|"
+  },
+  {
+    "id": 365,
+    "source": "Admin Permissions",
+    "zh": "管理员权限"
+  },
+  {
+    "id": 366,
+    "source": "| `bountyhunters.admin` | Access to admin commands. |",
+    "zh": "|`bountyhunters.admin`|访问管理命令。 |"
+  },
+  {
+    "id": 367,
+    "source": "| `bountyhunters.update-notify` | Be notified when joining the server when a new update is available. |",
+    "zh": "|`bountyhunters.update-notify`|当有新更新可用时，加入服务器时会收到通知。 |"
+  },
+  {
+    "id": 368,
+    "source": "| `bountyhunters.immunity` | No player shall place a bounty on you. |",
+    "zh": "|`bountyhunters.immunity`|玩家不得将悬赏置于你身上。 |"
+  },
+  {
+    "id": 369,
+    "source": "| `bountyhunters.immunity.bypass` | Bypass previous bounty immunity. |",
+    "zh": "|`bountyhunters.immunity.bypass`|绕过之前的悬赏免疫力。 |"
+  },
+  {
+    "id": 370,
+    "source": "| `bountyhunters.untargetable` | No player shall target you. |",
+    "zh": "|`bountyhunters.untargetable`|玩家不得针对你。 |"
+  },
+  {
+    "id": 371,
+    "source": "| `bountyhunters.untargetable.bypass` | Bypass previous target immunity. |",
+    "zh": "|`bountyhunters.untargetable.bypass`|绕过先前的目标免疫。 |"
+  },
+  {
+    "id": 372,
+    "source": "🏷️ Placeholders",
+    "zh": "🏷️占位符"
+  },
+  {
+    "id": 373,
+    "source": "| Format | Usage |",
+    "zh": "|格式|用途 |"
+  },
+  {
+    "id": 374,
+    "source": "| `%bountyhunters_top_name_<rank>%` | Rank must be between 1 and 16. Returns the n-th player on the hunter leaderboard |",
+    "zh": "|`%bountyhunters_top_name_<rank>%`|排名必须介于1和16之间。返回猎人排行榜上的n-th玩家|"
+  },
+  {
+    "id": 375,
+    "source": "| `%bountyhunters_top_bounties_<rank>%` | Claimed bounties of some player in the leaderboard |",
+    "zh": "|`%bountyhunters_top_bounties_<rank>%`|在排行榜中声称了一些玩家的悬赏|"
+  },
+  {
+    "id": 376,
+    "source": "| `%bountyhunters_top_heads_<rank>%` | Amount of successful bounties of some player in the leaderboard |",
+    "zh": "|`%bountyhunters_top_heads_<rank>%`|部分玩家成功进入排行榜的悬赏数量|"
+  },
+  {
+    "id": 377,
+    "source": "| `%bountyhunters_top_level_<rank>%` | Player level from the leaderboard |",
+    "zh": "|`%bountyhunters_top_level_<rank>%`|  排行榜中的玩家等级 |"
+  },
+  {
+    "id": 378,
+    "source": "| `%bountyhunters_level%` | Displays the personal hunter level |",
+    "zh": "|`%bountyhunters_level%`|显示个人猎人等级|"
+  },
+  {
+    "id": 379,
+    "source": "| `%bountyhunters_successful_bounties%` | The amount of bounties the player successfully claimed |",
+    "zh": "|`%bountyhunters_successful_bounties%`|玩家金额悬赏成功领取 |"
+  },
+  {
+    "id": 380,
+    "source": "| `%bountyhunters_illegal_streak%` | The amount of illegal kills the player got since last respawn |",
+    "zh": "|`%bountyhunters_illegal_streak%`|自上次重生以来玩家的非法击杀数量 |"
+  },
+  {
+    "id": 381,
+    "source": "| `%bountyhunters_illegal_kills%` | Total amount of players killed illegally (ie no bounty on target) |",
+    "zh": "|`%bountyhunters_illegal_kills%`|非法杀害的玩家总数（即目标上没有悬赏）|"
+  },
+  {
+    "id": 382,
+    "source": "| `%bountyhunters_current_bounty%` | Current bounty on the player's head |",
+    "zh": "|`%bountyhunters_current_bounty%`|当前悬赏在玩家的头上|"
+  },
+  {
+    "id": 383,
+    "source": "| `%bountyhunters_title%` | The current hunter title (or 'No Title' if none) |",
+    "zh": "|`%bountyhunters_title%`|当前猎人头衔（​​如果没有，则为“无头衔”）|"
+  },
+  {
+    "id": 384,
+    "source": "| `%bountyhunters_progress%` | The hunter progress bar (amount of bounties he must claim before leveling up) |",
+    "zh": "|`%bountyhunters_progress%`|猎人进度条（升级前必须领取的悬赏数量）|"
+  },
+  {
+    "id": 385,
+    "source": "| `%bountyhunters_before_level_up%` | Amount of bounties the player must claim before leveling up |",
+    "zh": "|`%bountyhunters_before_level_up%`|玩家升级前必须领取悬赏的金额 |"
+  },
+  {
+    "id": 386,
+    "source": "🏠 Home",
+    "zh": "🏠 首页"
+  },
+  {
+    "id": 387,
+    "source": "![](https://docs.phoenixdevt.fr/assets/banner.Bhx_rwBZ.png)",
+    "zh": "![](https://docs.phoenixdevt.fr/assets/banner.Bhx_rwBZ.png)"
+  },
+  {
+    "id": 388,
+    "source": "Use the [Gitlab issue tracker](https://gitlab.com/phoenix-dvpmt/bounty-hunters/-/issues) for general bugs and issues! You can purchase the resource over [SpigotMC](https://www.spigotmc.org/resources/72142/) or download an older build for free [here](https://www.spigotmc.org/resources/bountyhunters-legacy.40610/) compatible with 1.8 to 1.14.",
+    "zh": "一般问题和 Bug 请提交到 [GitLab 问题跟踪器](https://gitlab.com/phoenix-dvpmt/bounty-hunters/-/issues)。可以在 [SpigotMC](https://www.spigotmc.org/resources/72142/) 购买插件，也可以[免费下载旧版](https://www.spigotmc.org/resources/bountyhunters-legacy.40610/)，旧版兼容 1.8 至 1.14。"
+  },
+  {
+    "id": 389,
+    "source": "If you are still running a 1.8 server, download the latest version of [BountyHunters Legacy over Spigot](https://www.spigotmc.org/resources/bountyhunters-legacy.40610/). This is an outdated version of the plugin, and updating from Legacy to Premium is not possible without a config and data reset.",
+    "zh": "如果仍在使用 1.8 服务器，请从 [Spigot 下载最新版 BountyHunters Legacy](https://www.spigotmc.org/resources/bountyhunters-legacy.40610/)。Legacy 是已过时的插件版本；从 Legacy 升级到 Premium，必须重置配置和数据。"
+  },
+  {
+    "id": 390,
+    "source": "> We do our best to keep this wiki up to date with the latest Premium build! There is no available wiki for the Legacy version of BountyHunters.",
+    "zh": "> 此 Wiki 尽量跟进最新 Premium 构建。BountyHunters Legacy 没有对应的 Wiki。"
+  },
+  {
+    "id": 391,
+    "source": "BountyHunters is *plug n' play*. Simply drag & drop the jar file in your plugins folder and restart your server!",
+    "zh": "BountyHunters 可以直接安装使用。将 JAR 放入 plugins 文件夹，再重启服务器即可。"
+  }
+]

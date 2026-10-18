@@ -1,0 +1,74 @@
+[
+  {
+    "project": "MMOProfiles",
+    "url": "https://docs.phoenixdevt.fr/assets/banner.BsL7S4In.png",
+    "file": "assets/5fffde94ad7c-banner.BsL7S4In.png",
+    "sha256": "8cef6d216ad2e48d6ffbc6025e8f79188ff512a04c25af63ae5911f4b678bb29",
+    "bytes": 236030,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOProfiles",
+    "url": "https://docs.phoenixdevt.fr/assets/placeholders.Ju2RzU_3.png",
+    "file": "assets/425096dac50b-placeholders.Ju2RzU_3.png",
+    "sha256": "f3e9af3740aa58dd081c554a40ac893d75a3563b95c211980e697b0df8d37efd",
+    "bytes": 24189,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOProfiles",
+    "url": "https://docs.phoenixdevt.fr/assets/profile_indiv.BvTb022d.png",
+    "file": "assets/57b9b4971065-profile_indiv.BvTb022d.png",
+    "sha256": "d55e85d7603193e295a28e31d513d77d62a7771ef09dc8091ae89b8e72b70a57",
+    "bytes": 20266,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOProfiles",
+    "url": "https://docs.phoenixdevt.fr/assets/profile_new_char.BgOzBlZV.png",
+    "file": "assets/96bfe230ca0d-profile_new_char.BgOzBlZV.png",
+    "sha256": "c39a0d7a2cc47ef720d57ac34c4bf210c74d4e4451681bc15f798303c68b9780",
+    "bytes": 36547,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOProfiles",
+    "url": "https://docs.phoenixdevt.fr/assets/profile_select.D1QJE14M.png",
+    "file": "assets/5fb1320b10e8-profile_select.D1QJE14M.png",
+    "sha256": "3cf7a6fc55c5b2553d1f1335926185c9f0eb5a326ebe55fa699ceeb9524d527d",
+    "bytes": 23060,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOProfiles",
+    "url": "https://docs.phoenixdevt.fr/assets/proxy_setup_a1.CGuA2qdl.png",
+    "file": "assets/45b2ac135f63-proxy_setup_a1.CGuA2qdl.png",
+    "sha256": "9644733abeb148dbac165de309b68d88e83b0bd7953d265311af400269e62df5",
+    "bytes": 615496,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOProfiles",
+    "url": "https://docs.phoenixdevt.fr/assets/proxy_setup_b1.DmXj1bFv.png",
+    "file": "assets/88e38f514b25-proxy_setup_b1.DmXj1bFv.png",
+    "sha256": "4c53383f141395ed4ed5a1594ff76dad909689a8ea91ce68033ecb79e6b7c29f",
+    "bytes": 618823,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOProfiles",
+    "url": "https://docs.phoenixdevt.fr/assets/proxy_setup_c1.D7Os-NzP.png",
+    "file": "assets/17ea768b8603-proxy_setup_c1.D7Os-NzP.png",
+    "sha256": "0e64f4ab9dfbbb4a2a07ba47a45252fe75ca4002253714883ce612273c76e0f9",
+    "bytes": 490835,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOProfiles",
+    "url": "https://docs.phoenixdevt.fr/assets/proxy_setup_d1.F8m7MQ2T.png",
+    "file": "assets/d00b9f463d78-proxy_setup_d1.F8m7MQ2T.png",
+    "sha256": "006ee241df48693b850b2f76766d1330b1f8c6f21e407e9a7bce2db34be57aa9",
+    "bytes": 571586,
+    "content_type": "image/png"
+  }
+]

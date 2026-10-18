@@ -1,0 +1,17 @@
+{
+  "source": "https://docs.phoenixdevt.fr",
+  "snapshot_date": "2026-10-19",
+  "pages": 243,
+  "site_data_sha256": "af4f1e6a4aa8125fb9e30cfadc31260474952302b2a5a22378a4df6caeabb260",
+  "projects": {
+    "Phoenix": 3,
+    "MMOItems": 56,
+    "MMOCore": 58,
+    "BountyHunters": 19,
+    "Contracts": 1,
+    "MMOInventory": 22,
+    "MMOProfiles": 19,
+    "MythicLib": 65
+  },
+  "errors": []
+}

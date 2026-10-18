@@ -1,0 +1,163 @@
+API	开发接口
+API Usage	API 用法
+Adding Placeholders	添加占位符
+Advanced Stats	高级属性
+Alchemy	炼金
+Anticheat Support	反作弊兼容
+Attributes	基础属性
+Automatic Bounties	自动悬赏
+Basic Projectile	基础投射物
+Binding Skills	绑定技能
+Block Types	方块类型
+Bounties	悬赏
+Bounty Expiration	悬赏有效期
+Bounty Restrictions	悬赏限制
+Buffs & Stats	增益与属性
+Built-in Compatibility	内置兼容
+Built-in Skills	内置技能
+Classes	职业
+Combat	战斗
+Commands	命令
+Compatibility	兼容性
+Conditions	条件
+Config Options	配置选项
+Configuration	配置
+Crafting Recipes	合成配方
+Crafting Stations	合成站
+Create An Item	创建物品
+Creating Custom Skills	创建自定义技能
+Custom Blocks	自定义方块
+Custom Data Modules	自定义数据模块
+Custom Durability	自定义耐久度
+Custom Inventories	自定义物品栏
+Custom Mining	自定义挖矿
+Damage	伤害
+Damage Indicators	伤害显示
+Damage Mitigation	伤害减免
+Default Configuration	默认配置
+Delays and Timers	延迟与计时器
+Denizen	Denizen
+Drop Tables	掉落表
+Economy	经济
+Economy & Taxes	经济与税费
+Elements	元素
+Elytra Slot	鞘翅槽位
+Enchant Plugins	附魔插件
+Enchanting	附魔
+Entity Targeters	实体目标选择器
+Events	事件
+Experience & Levels	经验与等级
+Experience Boosters	经验加成
+Experience Curves	经验曲线
+Experience Sources	经验来源
+Experience Tables	经验表
+External	外部插件
+FAQ	常见问题
+Features	功能
+Fishing	钓鱼
+Frequent Issues	常见问题
+Friends	好友
+GUI Syntax	界面语法
+Gem Stones	宝石
+General	基本设置
+Generic	通用条件
+Guilds	公会
+Head Hunting	收集悬赏头颅
+Healing, Helix Particles	治疗与螺旋粒子
+Home	首页
+Identification	物品鉴定
+Index	目录
+Ingredients	合成材料
+Installation Guide	安装指南
+Introduction	介绍
+Inventory	物品栏
+Inventory Textures	物品栏贴图
+Item Lore	物品描述
+Item Modifiers	物品修饰器
+Item Sets	物品套装
+Item Stats	物品属性
+Item Templates	物品模板
+Item Textures	物品贴图
+Item Tiers	物品品质
+Item Tooltips	物品提示框
+Item Types	物品类型
+Item Updates (Revision)	物品更新与修订版本
+Item Upgrades	物品升级
+Items	物品
+Levels & Rewards	等级与奖励
+Location	位置条件
+Location Targeters	位置目标选择器
+Loot Chests	战利品箱
+Lootsplosion	掉落喷散效果
+Lore Format	描述格式
+MMOItems	MMOItems
+Mana & Stamina	魔力与耐力
+Maven	Maven
+Mechanics	机制
+Mining	挖矿
+Miscellaneous	其他功能
+Modularity	模块化
+Movement	移动
+MythicMobs	MythicMobs
+Name Placeholders	名称占位符
+New Stats	新增属性
+Numerical Stats	数值属性
+Obtain Items	获取物品
+Offense	攻击
+On-Hit Effects	命中效果
+Oraxen	Oraxen
+Other	其他
+Other Plugins	其他插件
+Overview	概览
+Parties	队伍
+Permissions	权限
+Phoenix Plugin Documentation	Phoenix 文档维护说明
+Phoenix Wiki	Phoenix 文档
+Placeholders	占位符
+Player Data	玩家数据
+Player Hunting	追踪玩家
+Player Messages	玩家消息
+Player Modifiers	玩家修正器
+Player Resources	玩家资源值
+Player Stats	玩家属性
+Plugin API	插件 API
+Plugin Compatibility	插件兼容性
+Professions	副职业
+Profile Selection	选择档案
+Projectiles	投射物
+Proxy-Based Profiles	代理端档案
+Quests	任务
+RPG Plugins	RPG 插件
+Rainbow Skill	彩虹技能
+Reporting a bug	反馈问题
+Resource Pack Plugins	资源包插件
+Scripts	脚本
+Shapes	形状
+Skill Casting	施放技能
+Skill Trees	技能树
+Skills	技能
+Skills & Abilities	技能与能力
+Smithing	锻造
+Soulbound	灵魂绑定
+Spawning Custom Blocks	生成自定义方块
+Station UI Layouts	合成站界面布局
+Stats	属性
+Sword / Weapon Stat Examples	剑与武器属性示例
+Sword Slash	挥剑斩击
+Targeters	目标选择器
+Tool Restrictions	工具限制
+Triggers	触发器
+Tutorials	教程
+Unlocking Skills	解锁技能
+Upgrading Recipes	升级配方
+Using CoreTools	使用 CoreTools
+Using Fabled	使用 Fabled
+Using MythicLib	使用 MythicLib
+Using MythicMobs	使用 MythicMobs
+Vanilla Exp	原版经验
+Vanilla Inventory	原版物品栏
+Variables	变量
+Visual	视觉效果
+Waypoints	传送点
+What is MythicLib?	MythicLib 是什么
+When Logging In	登录时的处理

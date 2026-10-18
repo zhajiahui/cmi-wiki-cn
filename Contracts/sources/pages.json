@@ -1,0 +1,22 @@
+[
+  {
+    "key": "contracts_index.md",
+    "project": "Contracts",
+    "path": "/contracts/",
+    "url": "https://docs.phoenixdevt.fr/contracts/",
+    "file": "index.md",
+    "html": "sources/live/contracts_index.html",
+    "title": "Phoenix Wiki",
+    "hash": "BT6kW9bo",
+    "sha256": "2ef96e175c51d4764ad6a86d0a6bbd1c72bc4e6c316c4be2ab69f29bd22b8c47",
+    "main_chars": 21,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/index.md",
+    "code_blocks": [],
+    "inline_code": [],
+    "units": [
+      392
+    ]
+  }
+]

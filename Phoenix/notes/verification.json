@@ -1,0 +1,20 @@
+{
+  "source_snapshot": "2026-10-19",
+  "source_pages": 243,
+  "translated_pages": 243,
+  "project_pages": {
+    "BountyHunters": 19,
+    "Contracts": 1,
+    "MMOCore": 58,
+    "MMOInventory": 22,
+    "MMOItems": 56,
+    "MMOProfiles": 19,
+    "MythicLib": 65,
+    "Phoenix": 3
+  },
+  "verbatim_code_blocks": 729,
+  "protected_inline_tokens": 2551,
+  "source_heading_anchors": 1151,
+  "native_assets": 153,
+  "errors": []
+}

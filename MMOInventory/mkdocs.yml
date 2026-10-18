@@ -1,0 +1,50 @@
+site_name: MMOInventory 中文文档
+site_url: https://zhajiahui.github.io/cmi-wiki-cn/mmoinventory/
+theme:
+  name: material
+  language: zh
+  font: false
+plugins:
+- search:
+    lang:
+    - zh
+    - en
+markdown_extensions:
+- admonition
+- attr_list
+- md_in_html
+- tables
+- toc:
+    permalink: true
+- pymdownx.details
+- pymdownx.superfences
+nav:
+- 首页: index.md
+- 安装指南: install.md
+- 常见问题: faq.md
+- 基本设置:
+  - 命令: general/commands.md
+  - 权限: general/permissions.md
+  - 占位符: general/placeholders.md
+  - 默认配置: general/default-config.md
+- 功能:
+  - 自定义物品栏: features/custom-inventory.md
+  - 原版物品栏: features/vanilla-inventory.md
+  - 物品栏贴图: features/custom-inventory-texture.md
+  - 鞘翅槽位: features/elytra-slot.md
+- 兼容性:
+  - MMOItems: compatibility/mmoitems.md
+  - Oraxen: compatibility/oraxen.md
+  - RPG 插件: compatibility/rpg.md
+  - 其他插件: compatibility/other.md
+- 开发接口:
+  - Maven: api/maven.md
+  - 概览: api/overview.md
+  - 事件: api/events.md
+- 分类目录:
+  - 开发接口: api.md
+  - 兼容性: compatibility.md
+  - 功能: features.md
+  - 基本设置: general.md
+docs_dir: docs
+site_dir: .cache/site

@@ -1,0 +1,46 @@
+site_name: BountyHunters 中文文档
+site_url: https://zhajiahui.github.io/cmi-wiki-cn/bounty-hunters/
+theme:
+  name: material
+  language: zh
+  font: false
+plugins:
+- search:
+    lang:
+    - zh
+    - en
+markdown_extensions:
+- admonition
+- attr_list
+- md_in_html
+- tables
+- toc:
+    permalink: true
+- pymdownx.details
+- pymdownx.superfences
+nav:
+- 首页: index.md
+- 基本设置:
+  - 命令: general/commands.md
+  - 权限: general/permissions.md
+  - 占位符: general/placeholders.md
+- 功能:
+  - 悬赏: features/bounties.md
+  - 经济与税费: features/economy.md
+  - 自动悬赏: features/auto-bounties.md
+  - 悬赏限制: features/claim-restrictions.md
+  - 等级与奖励: features/levels.md
+  - 追踪玩家: features/player-hunting.md
+  - 收集悬赏头颅: features/head-hunting.md
+  - 悬赏有效期: features/bounty-expiration.md
+  - 其他功能: features/misc.md
+- 开发接口:
+  - 事件: api/events.md
+  - 玩家数据: api/players.md
+  - 悬赏: api/managing-bounties.md
+- 分类目录:
+  - 开发接口: api.md
+  - 功能: features.md
+  - 基本设置: general.md
+docs_dir: docs
+site_dir: .cache/site

@@ -1,0 +1,371 @@
+# Using MythicMobs {#using-mythicmobs}
+
+This page will help you register custom skills in MythicLib/MMOItems/MMOCore using the Mythic/MythicMobs scripting language. Here are the main steps:
+
+1. Code a Mythic script
+2. Register that script as a custom MythicLib skill,
+3. Reload the plugins.
+
+## 1/ Code a MythicMobs skill {#_1-code-a-mythicmobs-skill}
+
+The first step is to code what your skill does using the MythicMobs scripting language. In this tutorial, we'll consider a skill example that we found in the MythicMobs manual. It is a simple fire projectile that deals 10 damage and slows the first enemy it hits for 2 sec.
+
+```yml
+FireBolt: # The main skill
+  Skills:
+  - 'projectile{onTick=FireBolt-Tick;onHit=FireBolt-Hit;v=8;i=1;hR=1;vR=1;hnp=true} @targetLocation'
+FireBolt-Tick:
+  Skills:
+  - 'effect:particles{p=flame;amount=20;speed=0;hS=0.2;vS=0.2} @origin'
+FireBolt-Hit:
+  Skills:
+  - 'damage{a=10}'
+  - 'potion{type=SLOW;duration=40;lvl=2}'
+```
+
+## 2/ Declare it as a MythicLib skill {#_2-declare-it-as-a-mythiclib-skill}
+
+Go to the `MythicLib/skill` folder and create a YAML configuration file, whose name can be whatever you want - let's say you name it `tutorial.yml`. Just like in MythicMobs, you can:
+
+- have multiple skills within the same config file
+- organize your files into subfolders
+- file and folder names can be whatever you want
+
+You will find below a template MythicLib skill definition that you can copy and paste into your config file. We will go through each of the config options in the following sections.
+
+```yml
+FIRE_BOLT:
+  source: mythicmobs:FireBolt
+  # trigger: RIGHT_CLICK # Not needed here as we are making an active skill
+
+  name: Firebolt
+  lore:
+    - 'You conjure a flaming ball and'
+    - 'ball and hurl it at your target.'
+    - ''
+    - '&e{cooldown}s Cooldown'
+    - '&9Costs {mana} {mana_name}'
+  icon: BLAZE_POWDER
+
+  # Edit default values of the ability parameters
+  parameters:
+    damage:
+      name: Damage
+      player:
+        base: 2
+        per-level: 1
+      item: 5.0
+    duration:
+      name: Duration
+      player: '2 + {level} * 1'
+      item: 5.0
+  
+  extra-skills:
+    FireBolt: # The main skill
+      Skills:
+      - 'projectile{onTick=FireBolt-Tick;onHit=FireBolt-Hit;v=8;i=1;hR=1;vR=1;hnp=true} @targetLocation'
+    FireBolt-Tick:
+      Skills:
+      - 'effect:particles{p=flame;amount=20;speed=0;hS=0.2;vS=0.2} @origin'
+    FireBolt-Hit:
+      Skills:
+      - 'damage{a=10}'
+      - 'potion{type=SLOW;duration=40;lvl=2}'
+
+# You can have multiple skills in one config file
+#ANOTHER_SKILL:
+  #source: ...
+  #....
+```
+
+### Config Options {#config-options}
+
+#### Skill Identifier {#skill-identifier}
+
+Let's go through the `FIRE_BOLT` configuration section. First, nicely format the config section name so that it matches that `UPPERCASE_ID_FORMAT` because it's the one used for skills in MMOItems/MMOCore.
+
+#### Skill Source {#skill-source}
+
+Then, provide the "source" of your skill. Since we are implementing a MythicLib skill using MythicMobs, the source must be `mythicmobs:FireBolt`, where `FireBolt` is the name of the MythicMobs skill that we defined earlier. The table below indicates all skill sources that you can actually use with MythicLib:
+
+| Source | Format |
+| --- | --- |
+| [MythicMobs](https://www.spigotmc.org/resources/5702/) | `mythicmobs:<MythicMobsSkillname>` |
+| [MythicLib](https://www.spigotmc.org/resources/90306/) | `mythiclib:<mythiclib_script_name>` |
+| [Fabled](https://www.spigotmc.org/resources/91913/) | `fabled:<FabledAbilityName>` |
+| [CoreTools](https://www.spigotmc.org/resources/125126/) | `coretools:<CoreToolsScriptName>` |
+
+#### Skill Icon, Name and Lore {#skill-icon-name-and-lore}
+
+The `icon` options lets you modify the item that MMOCore will use inside the skill UI to display that skill. You can use any valid Minecraft material name.
+
+In order to add custom model data, item model... use the following syntax. Note that all of these parameters are optional.
+
+```yml
+FIRE_BOLT:
+  #...
+  icon:
+    item: DIAMOND_SWORD
+    custom_model_data: 1234
+    item_model: 'minecraft:dirt'
+    item_flags: [HIDE_ATTRIBUTES, HIDE_ENCHANTS]
+```
+
+The `lore` option lets you customize the skill description that players will see in the MMOCore skill UI. Note the use of placeholders such as `{cooldown}`, `{mana}`, `{mana_name}` that will be dynamically replaced when the skill is displayed.
+
+```yml
+FIRE_BOLT:
+  #...
+  lore:
+    - 'You conjure a flaming ball and'
+    - 'ball and hurl it at your target.'
+    - ''
+    - '&e{cooldown}s Cooldown'
+    - '&9Costs {mana} {mana_name}'
+```
+
+The `name` option lets you customize the skill name. Note that this is the only field used by MMOItems, as the icon and lore are only being used by MMOCore.
+
+```yml
+FIRE_BOLT:
+  #...
+  name: Firebolt
+```
+
+#### Trigger {#trigger}
+
+The `trigger` option defines the default trigger type/casting method for that skill. The list of available trigger types is available on [this wiki page](https://docs.phoenixdevt.fr/mythiclib/skills/triggers).
+
+Skills that have a trigger are called *passive skills* as they trigger automatically. Use the following syntax to create a passive skill that triggers when the player shift right clicks:
+
+```yml
+FIRE_BOLT:
+  # ...
+  trigger: SHIFT_RIGHT_CLICK # Triggers when the player shift right clicks
+```
+
+Skills with no trigger are called *active skills* and need to be manually [cast by players](https://docs.phoenixdevt.fr/mmocore/skills/casting). Do not provide a trigger if you want to make an active skill.
+
+> **INFO**
+>
+> Note that if you specify a trigger in the MMOCore class skill config, it can either modify the trigger of a skill, or turn an active skill into a passive skill.
+
+#### Skill Categories {#skill-categories}
+
+Each skill can be assigned to a list of categories through the field `categories`. By default, each skill is associated with two categories: its skill ID (`FIREBALL` for instance, not to be mistaken with the skill name), and either `ACTIVE` or `PASSIVE` depending on if it is an active or passive skill. These categories can be used inside [skill slot formulas](https://docs.phoenixdevt.fr/mmocore/skills/binding#skill-slots).
+
+```yml
+FIREBOLT:
+  # ...
+  categories: [ fire, projectile ]
+```
+
+#### Skill Parameters {#skill-parameters}
+
+The `parameters` section lets you define the skill modifiers that your skill will use. In our example, we defined two skill modifiers: `damage` and `duration`. Each modifier has a `name` (displayed in the skill UI), a `player` section (which defines how the modifier scales with player level) and an `item` section (which defines how the modifier scales with item level).
+
+The `player` section dictates the scaling of the skill modifier when the skill is cast through MMOCore classes. The `item` section dictates the default skill parameter value when the skill is placed onto an MMOItems item. The `name` field is used by both MMOCore UIs and MMOItems for the item lore.
+
+Note that you have two possibilities to provide the `player` section. You can either provide a `base` and `per-level` value, which will result in a linear scaling:
+
+```yml
+FIRE_BOLT:
+  #...
+  parameters:
+    #...
+    damage:
+      name: Damage
+      player:
+        base: 2
+        per-level: 1
+      item: 5.0
+```
+
+You can also provide a fully custom formula using the `{level}` placeholder, which represents the player skill level:
+
+```yml
+FIRE_BOLT:
+  #...
+  parameters:
+    #...
+    duration:
+      name: Duration
+      player: '2 + {level} * 1'
+      item: 5.0
+```
+
+The `item` field, however, is always a flat decimal number.
+
+### `extra-skills` {#extra-skills}
+
+As you can see, you can put Mythic scripts inside of the MythicLib config file. That is what the `extra-skills` config section is all about - any Mythic script that you place inside this configuration section will be passed to Mythic. In order to register MythicLib custom skills, you can either put your Mythic scripts inside of the ML config file, or simply pass a reference (the script name i.e `FireBolt`) to an existing Mythic script. Either way, the Mythic script names must match:
+
+```yml
+FIRE_BOLT:
+  #...
+
+  extra-skills:
+    FireBolt: # These two must match
+      #...
+```
+
+## 3/ Reload the plugins {#_3-reload-the-plugins}
+
+1. Reload MythicMobs using `/mm reload`. By now, you should be able to use `/mm debug cast FireBolt` to test your MythicMobs skill.
+2. Reload MythicLib using `/ml reload`. By now, your skill should be registered in MythicLib, and you should be able to use `/ml debug cast FIRE_BOLT` to test your MMO skill.
+
+That's it! You do not need additional config files for MMOItems or MMOCore, as both of these plugins directly use the MythicLib skill registry.
+
+## Skill Conditions {#skill-conditions}
+
+Custom MM skills also support skill conditions. If any of the skill conditions is not met, the skill won't cast and no mana will be consumed.
+
+## Retrieving MMO skill modifiers inside MythicMobs skills {#retrieving-mmo-skill-modifiers-inside-mythicmobs-skills}
+
+> **WARNING**
+>
+> Some of the features described below are not available in the free version of MythicMobs.
+
+Let's consider the `Fire-Bolt` skill again.
+
+As seen before, the following skill currently deals a flat 10 damage. We would like this value to scale with the MMOCore skill level or MMOItems item power.
+
+```yml
+SomeSkill:
+  Mechanics:
+  - damage{a=10}
+```
+
+The following skill deals damage equivalent to the `damage` MythicLib skill modifier. The `<modifier.xxx>` allows to forward MythicLib skill parameter values to MythicMobs math formulas used inside mechanics, conditions...
+
+```yml
+SomeSkill:
+  Mechanics:
+  - damage{a="<modifier.damage>"}
+```
+
+These placeholders can be combined with math formulas. In the following example, the `duration` modifier is multiplied by 20 to convert seconds into ticks.
+
+```yml
+SomeSkill:
+  Mechanics:
+  - potion{type=SLOW;duration="<modifier.duration> * 20";lvl=2}
+```
+
+Here is the full list of placeholders implemented by MythicLib, available inside MythicMobs skills.
+
+| Placeholder | Description |
+| --- | --- |
+| `<modifier.(mod_name)>` | Skill modifier, as decimal number |
+| `<modifier.int.(mod_name)>` | Skill modifier, as integer |
+| `<cooldown.skill_(name)>` | Remaining cooldown for a skill |
+| `<mmostat.(stat_name)>` | Player stat value, as decimal number. Ex: `<mmostat.attack_damage>` |
+| `<mana>` | The player's current mana (MMOCore) |
+| `<stamina>` | The player's current stamina (MMOCore) |
+| `<stellium>` | The player's current stellium (MMOCore) |
+
+## Dealing Damage {#dealing-damage}
+
+> **INFO**
+>
+> This is subject to change for better support of the MythicLib damage system in the future.
+
+Use the `mmodamage` mechanic instead of the native `damage` mechanic to deal damage with MMO damage types.
+
+```yml
+SomeSkill:
+  Mechanics:
+  - mmodamage{amount="<modifier.damage> + 10";types=SKILL,MAGIC,PROJECTILE;element=FIRE}
+```
+
+You can specify the ability damage using `amount` or `a` as well as the damage types using `types` or `t`. The list of available damage types can be found [here](https://docs.phoenixdevt.fr/mythiclib/features/damage).
+
+It works just like the default `damage` MythicMobs skill mechanic, except that it completely supports the MythicLib damage system, which means that it will apply damage buff stats (additional skill damage, etc), damage reduction stats, on-hit effects (on-hit abilities from MMOItems when using the WEAPON damage type), skills from MMOCore that trigger when dealing damage to entities....
+
+For instance, the following mob deals 10 *Physical*-*Weapon* damage every 2 seconds to all nearby entities.
+
+```yml
+ZombieWarrior:
+  Type: ZOMBIE
+  Damage: 10
+  Skills:
+    - 'mmodamage{amount=10;type=PHYSICAL,WEAPON} @NearbyEntities{r=5} ~onTimer:40'
+```
+
+### Critical strikes {#critical-strikes}
+
+By default, weapon and skill critical strikes apply to damage types `WEAPON` and `SKILL` respectively. If the damage instance dealt has at least type *Weapon*, it will be able to deal *Weapon* damage. If it has at least type *Skill*, it will be able to deal *Skill* damage.
+
+If a damage instance deals damage with neither *Weapon* nor *Skill* type, it won't be able to deal critical strikes. This can be useful for DoT (*damage over time*), bleeding, or poison damage.
+
+Note that this is the default behavior of critical strikes, and that it can be fully modified through the use of custom [on-hit effects](https://docs.phoenixdevt.fr/mythiclib/features/on-hit-effects).
+
+## Increase/Decrease Damage Dealt {#increase-decrease-damage-dealt}
+
+You may also want to use the following skill mechanic:
+
+```yml
+SomeSkill:
+  Mechanics:
+  - multiplydamage{type=SKILL;amount="1 + <modifier.extra> / 100"}
+```
+
+This has the effect of multiplying *Skill* damage by a specific factor. Currently this factor is `1 + <modifier.extra> / 100` so if the `extra` skill modifier is set to 50, *Skill* damage will be increased by 50%. You can use this mechanic to increase incoming damage dealt by entities or players by a certain factor (e.g increase damage when low on health).
+
+If you want to increase damage from any source (with no damage type), use:
+
+```yml
+SomeSkill:
+  Mechanics:
+  - multiplydamage{amount="1 + <modifier.extra> / 100"}
+```
+
+## Checking if the skill caster can target another entity {#checking-if-the-skill-caster-can-target-another-entity}
+
+Using the `mmoCanTarget{..}` MythicMobs condition, you can check if any player can target another entity. Here is the format:
+
+```yml
+SomeSkill:
+  Conditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION}
+```
+
+There are two different interaction types: `OFFENSE_ACTION`, `SUPPORT_ACTION`. For instance, a player will be able to target another player when using a buffing skill (like a heal or a speed boost) but the same target won't be valid if that skill becomes offensive (deals damage or inflicts debuffs). It is therefore very important to specify what type of interaction you are talking about. The PvP/PvE Interaction Rules user guide is available [here](https://docs.phoenixdevt.fr/mmocore/features/combat).
+
+Here are some examples:
+
+```yml
+COMBAT_ONE:
+  mythicmobs-skill-id: combat_one_run
+  modifiers:
+  - damage
+  - duration
+  extra-skills:
+    combat_one_run:
+      TargetConditions:
+      - mmoCanTarget{interaction=SUPPORT_ACTION} true
+      Skills:
+      - jsonmessage{m="[{'text':'SUPPORT_ACTION','color':'red'}]"} @self
+
+COMBAT_TWO:
+  mythicmobs-skill-id: combat_two_run
+  modifiers:
+  - damage
+  - duration
+  extra-skills:
+    combat_two_run:
+      TargetConditions:
+      - mmoCanTarget{interaction=OFFENSE_ACTION} true
+      Skills:
+      - jsonmessage{m="[{'text':'OFFENSE_ACTION','color':'red'}]"} @self
+
+COMBAT_THREE:
+  mythicmobs-skill-id: combat_three_run
+  modifiers:
+  - damage
+  - duration
+  extra-skills:
+    combat_three_run:
+      Skills:
+      - mmodamage{amount=10;types=SKILL,MAGIC,PROJECTILE} @Target{conditions=[ - mmoCanTarget{interaction=OFFENSE_ACTION} true ]}
+```

@@ -3,23 +3,43 @@ from pathlib import Path
 from urllib.parse import unquote,urlsplit
 import json
 import sys
-from bs4 import BeautifulSoup
+from html.parser import HTMLParser
+import os
+from hooks import PROJECTS, PHOENIX_PROJECTS, TABLE_PAGES
 ROOT=Path(__file__).resolve().parent.parent
 SITE=ROOT/'.cache/site'
+SITE_ROOT=SITE.resolve()
 errors=[]
-# Keep compact facts about each document, rather than hundreds of full DOMs.
+tab_addresses={base+'index.html':('Phoenix' if (project,base) in PHOENIX_PROJECTS else project) for project,base in PROJECTS}
+class DocumentFacts(HTMLParser):
+    """Read links, anchors and tab labels without constructing a full page DOM."""
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.anchors=set();self.references=[];self.tabs=[];self.active=None
+        self.active_item=False;self.tab_text=None;self.tab_active=False
+    def handle_starttag(self,tag,attributes):
+        attrs=dict(attributes);classes=attrs.get('class','').split()
+        if attrs.get('id') or (tag=='a' and attrs.get('name')):self.anchors.add(attrs.get('id') or attrs['name'])
+        if tag in {'a','img','script','link','video','source'}:self.references.append(attrs.get('src') if tag in {'img','script','video','source'} else attrs.get('href'))
+        if tag=='li' and 'md-tabs__item--active' in classes:self.active_item=True
+        if tag=='a' and 'md-tabs__link' in classes:self.tab_text=[];self.tab_active=self.active_item
+    def handle_data(self,data):
+        if self.tab_text is not None:self.tab_text.append(data)
+    def handle_endtag(self,tag):
+        if tag=='a' and self.tab_text is not None:
+            text=''.join(self.tab_text).strip();self.tabs.append(text)
+            if self.tab_active:self.active=text
+            self.tab_text=None
+        if tag=='li':self.active_item=False
+
 html_paths=sorted(SITE.rglob('*.html'))
-html_files={path.resolve():None for path in html_paths}
+html_files={path.absolute():None for path in html_paths}
+existing_files={path.absolute() for path in SITE.rglob('*') if path.is_file()}
 anchors={};references={};page_tabs={}
 for path in html_paths:
-    resolved=path.resolve()
-    soup=BeautifulSoup(path.read_text(encoding='utf-8'),'html.parser')
-    anchors[resolved]={str(n.get('id') or n.get('name')) for n in soup.find_all(lambda n:n.has_attr('id') or (n.name=='a' and n.has_attr('name')))}
-    references[resolved]=[n.get('src') if n.name in {'img','script','video','source'} else n.get('href') for n in soup.find_all(['a','img','script','link','video','source'])]
-    if path.relative_to(SITE).as_posix() in {'index.html','residence/index.html','typewriter/index.html'}:
-        active=soup.select_one('.md-tabs__item--active')
-        page_tabs[resolved]=([n.get_text(strip=True) for n in soup.select('.md-tabs__link')],active.get_text(strip=True) if active else None)
-    soup.decompose()
+    resolved=path.absolute();facts=DocumentFacts();facts.feed(path.read_text(encoding='utf-8'));facts.close()
+    anchors[resolved]=facts.anchors;references[resolved]=facts.references
+    if path.relative_to(SITE).as_posix() in tab_addresses:page_tabs[resolved]=(facts.tabs,facts.active)
 checked=0
 prefix='/cmi-wiki-cn/'
 for path,urls in references.items():
@@ -33,14 +53,14 @@ for path,urls in references.items():
             target=SITE/ref.removeprefix(prefix)
         elif ref:target=path.parent/ref
         else:target=path
-        if target.is_dir():target=target/'index.html'
-        target=target.resolve()
+        target=Path(os.path.abspath(target))
+        if target not in existing_files and target/'index.html' in existing_files:target=target/'index.html'
         checked+=1
-        if not target.is_relative_to(SITE.resolve()) or not target.is_file():errors.append(f'Broken file: {path.relative_to(SITE)}: {url}');continue
+        if not target.is_relative_to(SITE_ROOT) or target not in existing_files:errors.append(f'Broken file: {path.relative_to(SITE)}: {url}');continue
         if parts.fragment and target in html_files:
             fragment=unquote(parts.fragment)
             if fragment not in anchors[target]:errors.append(f'Broken anchor: {path.relative_to(SITE)}: {url}')
-for project,base in [('CMI',''),('Residence','residence/'),('Typewriter','typewriter/')]:
+for project,base in PROJECTS:
     manifest=json.loads((ROOT/project/'sources/manifest.json').read_text(encoding='utf-8'))
     for row in manifest:
         file=Path(base+row['file'])
@@ -51,21 +71,22 @@ for project,base in [('CMI',''),('Residence','residence/'),('Typewriter','typewr
             if edit_url not in references[output.resolve()]:errors.append('Wrong source edit link: '+str(file))
 search=json.loads((SITE/'search/search_index.json').read_text(encoding='utf-8'))
 project_pages={}
-for name,base in [('CMI',''),('Residence','residence/'),('Typewriter','typewriter/')]:
-    items=[row for row in search['docs'] if '#' not in row['location'] and (row['location'].startswith(base) if base else not row['location'].startswith(('residence/','typewriter/')))]
+for name,base in PROJECTS:
+    items=[row for row in search['docs'] if '#' not in row['location'] and (row['location'].startswith(base) if base else not row['location'].startswith(tuple(prefix for _,prefix in PROJECTS if prefix)))]
     expected=json.loads((ROOT/name/'sources/manifest.json').read_text(encoding='utf-8'))
     if len(items)!=len(expected):errors.append('Search page coverage mismatch: '+name)
     if any(not item['title'].startswith(name+' · ') or name not in item.get('tags',[]) for item in items):errors.append('Search project labels missing: '+name)
     project_pages[name]=len(items)
-table_entries=[row for row in search['docs'] if row['location'].startswith(('residence/permissions/#permission-','residence/flags/#flag-'))]
-if len(table_entries)!=172:errors.append('Permission or flag search rows missing')
+table_entries=[row for row in search['docs'] if row['location'].startswith(tuple(source.removesuffix('.md')+'/#'+anchor for source,anchor in TABLE_PAGES.items()))]
+residence_entries=[row for row in table_entries if row['location'].startswith('residence/')]
+if len(residence_entries)!=172:errors.append('Residence permission or flag search rows missing')
 for item in table_entries:
     parts=urlsplit(item['location'])
     target=(SITE/parts.path/'index.html').resolve()
     if unquote(parts.fragment) not in anchors[target]:errors.append('Search table-row anchor missing: '+item['location'])
-for address,project in [('index.html','CMI'),('residence/index.html','Residence'),('typewriter/index.html','Typewriter')]:
+for address,project in tab_addresses.items():
     tabs,active=page_tabs[(SITE/address).resolve()]
-    if tabs!=['CMI','Residence','Typewriter']:errors.append('Expected exactly three top-level tabs: '+address)
+    if tabs!=['CMI','Residence','Typewriter','Phoenix']:errors.append('Expected four top-level tabs: '+address)
     if active!=project:errors.append('Wrong active project tab: '+address)
 print(json.dumps({'html_pages':len(html_files),'local_references':checked,'search_entries':len(search['docs']),'table_row_entries':len(table_entries),'project_pages':project_pages,'errors':errors},ensure_ascii=False,indent=2))
 if errors:sys.exit(1)

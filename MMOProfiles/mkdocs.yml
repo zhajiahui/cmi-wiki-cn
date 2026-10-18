@@ -1,0 +1,46 @@
+site_name: MMOProfiles 中文文档
+site_url: https://zhajiahui.github.io/cmi-wiki-cn/mmoprofiles/
+theme:
+  name: material
+  language: zh
+  font: false
+plugins:
+- search:
+    lang:
+    - zh
+    - en
+markdown_extensions:
+- admonition
+- attr_list
+- md_in_html
+- tables
+- toc:
+    permalink: true
+- pymdownx.details
+- pymdownx.superfences
+nav:
+- 首页: index.md
+- 安装指南: install.md
+- 基本设置:
+  - 命令: general/commands.md
+  - 权限: general/permissions.md
+  - 占位符: general/placeholders.md
+- 功能:
+  - 登录时的处理: features/on-login.md
+  - 选择档案: features/profile-select.md
+  - 配置选项: features/config.md
+  - 代理端档案: features/proxy-based.md
+  - 兼容性: features/compatibility.md
+- 开发接口:
+  - Maven: api/maven.md
+  - API 用法: api/usage.md
+  - 玩家数据: api/player-data.md
+  - 自定义数据模块: api/custom-module.md
+  - 添加占位符: api/placeholders.md
+  - 事件: api/events.md
+- 分类目录:
+  - 开发接口: api.md
+  - 功能: features.md
+  - 基本设置: general.md
+docs_dir: docs
+site_dir: .cache/site

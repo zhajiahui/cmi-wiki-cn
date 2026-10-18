@@ -1,0 +1,24 @@
+site_name: Contracts 中文文档
+site_url: https://zhajiahui.github.io/cmi-wiki-cn/contracts/
+theme:
+  name: material
+  language: zh
+  font: false
+plugins:
+- search:
+    lang:
+    - zh
+    - en
+markdown_extensions:
+- admonition
+- attr_list
+- md_in_html
+- tables
+- toc:
+    permalink: true
+- pymdownx.details
+- pymdownx.superfences
+nav:
+- 目录: index.md
+docs_dir: docs
+site_dir: .cache/site

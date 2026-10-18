@@ -1,0 +1,614 @@
+[
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/custom_block_1.BQJNAcUB.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/custom_block_2.dRADRAwJ.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/require_pickaxe_power1.DnNdwe4D.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/min_max_xp.DjhcyaFh.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/block_id_1.DKzWMBj7.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/block_id_3.C89bFqK3.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/block_id_2.apA7N6FI.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/world_gen_block.C1Gs6_aA.png"
+  },
+  {
+    "project": "BountyHunters",
+    "url": "https://docs.phoenixdevt.fr/assets/auto_bounty_1.BFpNj-RU.png"
+  },
+  {
+    "project": "BountyHunters",
+    "url": "https://docs.phoenixdevt.fr/assets/auto_bounty_2.Cah5O6XY.png"
+  },
+  {
+    "project": "BountyHunters",
+    "url": "https://docs.phoenixdevt.fr/assets/menu_0.NlMeIaxF.png"
+  },
+  {
+    "project": "BountyHunters",
+    "url": "https://docs.phoenixdevt.fr/assets/menu_1.a2AzJVFU.png"
+  },
+  {
+    "project": "BountyHunters",
+    "url": "https://docs.phoenixdevt.fr/assets/menu_2.D9tiGzXj.png"
+  },
+  {
+    "project": "BountyHunters",
+    "url": "https://docs.phoenixdevt.fr/assets/level_rewards.B2xtYyh3.png"
+  },
+  {
+    "project": "BountyHunters",
+    "url": "https://docs.phoenixdevt.fr/assets/editor.BFxklcBM.gif"
+  },
+  {
+    "project": "BountyHunters",
+    "url": "https://docs.phoenixdevt.fr/assets/compass.BoPi9Ne1.png"
+  },
+  {
+    "project": "BountyHunters",
+    "url": "https://docs.phoenixdevt.fr/assets/banner.Bhx_rwBZ.png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/gold_pouch.BYKMWIZW.gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/oraxen_ui.DI-xskYP.gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/attribute_ui.wIHIIgQM.gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/attribuite_ui_2.K-5i_koz.png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/class_select.BewFLyl3.gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/class_pts.DDGqB46e.png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/combat_enter.DrFTWXNH.png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/friend_ui.Dr6xWEWe.gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/friend_online.BLJ02EFr.png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/custom_mining.B3iqu2mm.gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/party_ui.HXPtgxen.png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/party_chat.GJ2XiZcZ.png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/party_morale.BinBfJgm.png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/quest_start.BRpjfvKv.png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/quest_ui.Bl7Almx9.gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/skill_tree_ui_grid.CJcoAizS.jpeg"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/skill_tree_ui_scheme.CBu188Oo.png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/waypoint_0.C5QX9ILv.png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/banner.DGZx1d5z.png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/boost_new.D_QFWXoS.png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/boost_ui.Bm71TL2L.png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/curve_excel_0.R7O7bzFU.png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/curve_excel_1.B-2NSFSC.png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/deposit.CxVkBWvo.gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/withdraw.DBBKbVhJ.gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/vanilla_exp.CW9qSvtl.png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/exp_progress.BKg6SjB0.png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/main_gui.DlPQMKdI.gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/bind_active.DOWAcMwn.gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/bind_passive.BimutQw8.gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/combos.D-UXtaQ4.gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/combos.BYsPp-zr.png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/skill_bar.BpGkdVfw.png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/skill_ui_item.C1NBhUEq.png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/upgrade1.Cr3v1DRG.gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/item_skill.CJXgT6sZ.png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "data:image/png;base64,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"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/item_slot.DWnJakgS.png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/item_level.BPUwfCvz.png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/item_upgrade.CauTLTdJ.png"
+  },
+  {
+    "project": "MMOInventory",
+    "url": "https://docs.phoenixdevt.fr/assets/oraxen_folder.cjdfbYhQ.png"
+  },
+  {
+    "project": "MMOInventory",
+    "url": "https://docs.phoenixdevt.fr/assets/oraxen_inv.DV4VHorx.png"
+  },
+  {
+    "project": "MMOInventory",
+    "url": "https://docs.phoenixdevt.fr/assets/item1.D7tECfWH.png"
+  },
+  {
+    "project": "MMOInventory",
+    "url": "https://docs.phoenixdevt.fr/assets/item2.CyapwR1H.png"
+  },
+  {
+    "project": "MMOInventory",
+    "url": "data:image/png;base64,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"
+  },
+  {
+    "project": "MMOInventory",
+    "url": "https://docs.phoenixdevt.fr/assets/vanilla_grid_pattern.D1rJFJwp.png"
+  },
+  {
+    "project": "MMOInventory",
+    "url": "https://docs.phoenixdevt.fr/assets/classic_inv_texture.BsztvsGt.png"
+  },
+  {
+    "project": "MMOInventory",
+    "url": "https://docs.phoenixdevt.fr/assets/classic_6_inv_texture.D3O80WGb.png"
+  },
+  {
+    "project": "MMOInventory",
+    "url": "https://docs.phoenixdevt.fr/assets/enhanced_inv_texture.BivGD2Bs.png"
+  },
+  {
+    "project": "MMOInventory",
+    "url": "https://docs.phoenixdevt.fr/assets/oraxen_inv_texture.BXPbFtRh.png"
+  },
+  {
+    "project": "MMOInventory",
+    "url": "https://docs.phoenixdevt.fr/assets/hover_inventory.Ahd4wIGy.gif"
+  },
+  {
+    "project": "MMOInventory",
+    "url": "https://docs.phoenixdevt.fr/assets/vanilla_inventory.COYiXQnH.png"
+  },
+  {
+    "project": "MMOInventory",
+    "url": "https://docs.phoenixdevt.fr/assets/banner.yiJDCYXp.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "data:image/png;base64,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"
+  },
+  {
+    "project": "MMOItems",
+    "url": "data:image/png;base64,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"
+  },
+  {
+    "project": "MMOItems",
+    "url": "data:image/png;base64,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"
+  },
+  {
+    "project": "MMOItems",
+    "url": "data:image/png;base64,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"
+  },
+  {
+    "project": "MMOItems",
+    "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAAUCAYAAABWOyJDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAWDSURBVHhe7ZjNbhxVFIT9EhOCYJEtQ4jtmBCQIg0LELwACxQFEEIsCMmCDWzCA7DiOfySJnfkD52UT/WZ2z0/rdFc9Empe+r0OG1XCefs95dvbhqPL97bC1eX47k8v7dTVs8+nC2PHi5myzdfPRjF0yfvT2a5XA5y/slitjz99P58Sd51DxePFmv2WjBZaQyRlcCuyEI9F7JQz4WsOBzZD+JUslKJZMGeA2mo50LynisoFMUWzPX1dYr6hriKJAUSyUK/L7JQV/A+stkQ8V1mqD8L9SHh62x/zkok0n7w8PODqHrsfUUW6h6+u/1v15pQ71tzUv32/XF4nxzVFAknlktjawXzTpkoMyuUiAZ6U3gf2WyI+C4zolfDPQf4OrMyycDv9Nj7CoI8FgK5C91CjCbg+9acO/r2/XFUUxwcp+FOwfANRev/cjJPiyRjRmWixDD3wnvgvWSeDN1TmDdvFvBDo18/P4AV+vdz+3o/5vMIdYTnZLMMArlYLdYcm+asVqs1nG3pnRbMZ1f312Shngsa/F54D7yXzJOhewrzLNyHhPDq1x+DPYT+/dy+3vd+XlYWDZ6TzTI0kMemOa4gOGN1WTB8Q7MCaTDHT6louTCvtN7rXLXeK+oD5hp4RyyHIb/6HPh5f9UcnYW+oXOn9V5RH2iAudevD5xfNfuVT3F+oCCYq+ZzuXdoII9Nc1xBcMbqdwrm1VsoDv1GxFJpUCDM8WflEoNeab3XuWq9V9QHbZYF2hG9Q371OfDz/qo5OiuFhs6d1vtIDKyiAeZevz5wftXsVz7F+RuxIJir5nOjN0MDeWya4wqCM1b/XzCtXIYKJhZHRubPgs4cDfh0rvt6X/nVp34XaEX91Z76FN2LsxZ2navWcnB+wKfzGMwIPudH633l1zna+dw96L0WhJs7v4NATtX8Y+q+9LdfP1hTaS2EbeutFwzBBp2jAZ/OdV/vK7/61O8Cr6i/2lOfontxNlQYaAoDnB+apwVV5wRYwef8aL2v/DpHO5+7B70n0ODmzu8gkFN1VQhTtSuQSlcFMVWfvX71903DFUYskwz1E2zQuWrQPe7H+ivUj46Bb7h5tedwe1VhoPFt6gcCC3rPngO/atDncF9pt9d7T6ChmlfwK8VUTRFsU7diQFMUvZpDEXC2peFUMKJjGTTcvNpzZHs9hRG9m/iBYILes+fArxr0OdxX2u313hNsqOYVBHKq3qQwKr1JYfRqDkXA2ZaG7oJhrhq/Bl/nlV+Z6q9Q/yaFMHRfoXu9hUHAXNAqv4IfzR7o81THZzUqv2q3V903WpCZO9hDUwAVBJJfKY5Nc/iVhrMtfSqYW9RfFUJ1X6F7p4LJ96r7RisC5g720FokDg3ksWmOKwjOWG0LRotDYc43ToPt0G+07jt6/cCewwU+lkHPXO8d+B2Eh89DZ94IftXsV8RnZejzHTxP/Wj9PNXq0zlaC4E90Oep1n1FA3lsmuMKgjNWnwpGAs/zYxn0zPXegd9BgPg8dOaN4FfNfkV8VoY+38Hz1I/Wz1OtPp23P2eFwB7o81Rnz4hoII9Nc1xBcMbqsmCAb4iShbqReSPqi7tD9PhjoNlzqC/uRqbOG48v7q1pIcHviOGKZN6I+uLuJsRnZfT61F/dOx8wpzAcFAV+pysIZK/mH1PnqikALYRt61PBiC/uRsbMKZSIBsURQxXJvBH1xd1NiM/K6PWpv7p3PmCelUqEwON3uoJAVvrZFx90BfwQugUe7Qph2/rs5a/nNz38/MPHs+bNX58fjF9+ejjI698uT0zgxfcf3YHCcGQ7U/jzjyeWf//5ctb8+Hy5d7oKJgv0nMhCvyuyAqnIQnNiM7KwN7JSiWQ7PWRFkpEFek5k4d89y5v/AMn/eyjCOwwQAAAAAElFTkSuQmCC"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/custom_dur_in_lore.CWIZbsZJ.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/custom_workbenches.BMnVBj58.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/apply_gem.BVyhd85d.gif"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/gem_stone_color.mDxowzo-.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/item_socket_color.EcLxv1jv.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/uncolored_socket.CVKR3dp6.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/random_unsocket.BbSVcRZL.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/identify_item.CLyz8sHP.gif"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/tt_ex_1.nBTXNtJu.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/tt_ex_2.DGpmT2QG.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/tt_ex_3.vtnaJwDX.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP8AAAAUCAYAAAE1jNsdAAAACXBIWXMAAAsSAAALEgHS3X78AAAC6UlEQVR42u2b2W7TUBCGS67Y24JKs7pp0iQNCUmzNyGhG1URqgAJVQgJoQoQqKIEXoEH4RV4D96Ba56Bux+P6USnVhRKvMTLXHxyemyPT2fm9/EZH88BmJslYxuXLy/DbvzVgcCF4Ne3r7MNwXD3vvUQLF5aAEEGtXntv6Hzfv/8MfII8f340Gij31bsct8medqyA5wQht183us754CgcqGDKLWsSEC9GVDKU+qzDFga06S/WQKOOsAPEnDMAaStUDuAhpFQOyAI0H2G5czDJbfJIGATXrtX0iBBA47adtKuGkw6Rh24ZsU0z3QzTwC/jBVBfaadeQL4Zaz0A5Omr55NgNPtrgTPJj7t9PyXAH56GBRCOAOghz1JApuDT87kUozKtKWdaeASlVpuUquu4yqx3KbOXNzsM/fbjBvJaZshL4yVavB5mmee1pmnp7RfnQr6vZgT2uAHDQm+BF+CL8GX4EvwJfgSfE8F3wsvR4IE+VOKPILl+gvXPMQfgog/AIIeJ2YWurqOhZdeqL+ZMxu4iG1BxO8KZ8k6WgvN2y/7g9DCfohEIucWyZqhfaqvVF+qtv5lg64jfh+cyz/VlyJ+h+A3LzL3E7wG56WIX8QviPhF/HaLX1aIC15dbS/id1j88nWA4NUvLUT8DoufvmaQZBNE/CEUv3wWJngRzksRv0PQ6iY/ij92NYrktRi0G3GkbyaQXUgidyuFwm0NxaUVlO+kUYmuYiOWQSORRSu1ho6WQ3+1gN18CVvZ9dF2f72Eg2IZj0v3cFiu4EmlimfVKp7XNnBUr+FFs46XrQZedZp43W3huNfG234H7x908WGri5PtHk71UWr4sG+8shrqc9WP+t/UTvvfDTbxRj+ezqPzyQ7ZI7tHDaKBp5W/16XrUz8e6f2hfu3l72InVzT6OcgU0EvnsbmSQ1v/f5rJLOrxDGo6vC0tacjrPlhbTCEznzR8k7oeR0L3VexK1Hff17qx+s4N/gBCU9hkp6/ClAAAAABJRU5ErkJggg=="
+  },
+  {
+    "project": "MMOItems",
+    "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP8AAAAKCAYAAAEMULj2AAAACXBIWXMAAAsSAAALEgHS3X78AAAAj0lEQVR42u3XMRJAMBRF0ZQ6pc4aFFZk/3v4aI3CRISMU9yW793/MpIiIh0ZuiFKc/aenfSLAZZ5amyAWlpqfuitAPYHtxDA2I9JAAJ4IICrtBJUK+dZjlALYAHeWYBtWOLKHudBPvnkk08++eST/7k//pKL5PaAD9/EqtzGlB9QfuUHlF/5AeVXfkD5c1gB2UD0vgDaxeEAAAAASUVORK5CYII="
+  },
+  {
+    "project": "MMOItems",
+    "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP8AAAASCAYAAAHj1TgAAAAACXBIWXMAAAsSAAALEgHS3X78AAABgUlEQVR42u2bTUoDQRCFWyQoiASyyS6bbDQadeUpXLryD7c5hucQr+A9vINrbxDIbpwHtmTCiArV6eqZ78EHyYRAT7163TPpSQgtGu+PK2vCf5R9AH/RwWDvG3NZn/3DxTyvBbcnx/YWvD5eVcks2FZjZre6awVQVyQ5+evptCqhAMni0PsCaBbrdQGUrV4XIMXVg0g2aeVSKXNFKUu6+47e1P3ZKeYZoVoW1wClrBWlXNMW1wBVLQ1caDnIjcbx8fLUYKceptg87mnMQiqqASbDCck1RPXEfMzHfMzHfMzHfMzHfMzHfMzPrPX7Zg/3zCKOR8WMr1fvb437fq9jFgHZbKxEVNT198vnw7DVZwfQ70sIm0bgdQNO/clkQfiB8CPr8KvINBsQ/h6G/24+o9nAHepLwp84/DezI5oN3KG+JPyJwx9/ogfwhPqS8BN+IPzIWnEj3vsTGJ5YXJ631kzHpJ8+0/fazm20O+pUfayID4p0Ivx1X0DH+fp3ELWABp8g52NuMWWjuQAAAABJRU5ErkJggg=="
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/tt_align_1.C9I6lAkh.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/tt_align_2.CXSL4J8O.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/tt_align_3.BQbHCz3N.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/tt_display_tier_type.BJ3tjGVj.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/tt_center_top.FIUUbkbL.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP8AAAAqCAYAAAEL/L3AAAAACXBIWXMAAAsSAAALEgHS3X78AAAD4UlEQVR42u1da0sUURj2YyRhRLWX2Z3LVmhWpmZhSVJeKEw0r1laiyKa9CEJuktp90AqgsJ+Rt/7Cf2Ngv5D8TTv6onBlqVkZ2fOnmfgYXZ2z+y88z7vs+ecd86eUwOgJkoUfTOxLYFygwbQgP8yoOpU8HmlO1oKVi650RqwmveiNeDBsBOtAa+vetGr4Of3xa+B1yUDM3IVVuq3qZKxboQD7l50zHbAs8uu2Q54Mx2iBKoVkV1YaoFfP5YRqBnaYusAMVYHCYTmAKlejHaANGaNdoDUr5SAyQ54OWm4BKQ7Z7QDpIVltAOkP220A6oJkosQmN4FCCsACokewaeFXMWhrv3tywwStYnCXkHZpI5V+WAZdU4c7mFj0ysAdOky6YBKZUzL+mW6NBd1gPhSuwBYGmUAlAviS+0CQJeciQ4o9TCVVQCrgHgGwONxBkC5IL7ULgB0yRpX6xPuyANAl5RhtT7gZibwHzOBzAAaSn5chqOR/AopXF5Latff1wT3m0ajgORvEcE8ehR5c5XbVzn9zbl9lc+XrVjuf/N5Ud6Dgjbk23U2G2tlhPiT5JN8kk/yST7JJ/kkn+STfJJP8kk+ySf5JJ/kk3yST/JJPskn+SSf5JN8kk/yST7JJ/kkn6hCVGJUEMExnEQMRqCrz9XYVdk2xq4W3g+OXeUId4o/dsEtwSpNH9OhRKuOi/lGTUwTHP+ryqjzg8dBqHOLXVM1QcnH376h+EOCcjL7fqWxdqPlz4Q/pcqIL2Vfaq4YQakyxDrUjyDFT/ETFD/FX27x8+//RFynUqD4Qxa/LrPlEmZB4pLiD1n8nPuNiOsySRR/yOLnvH9EXOdQpPhDFr8uy6QQZkHikuIPWfyc85uI6/zpFD+z/QSz/RQ/s/0Es/0UP7P9BLP9FD/7/AT7/BT/FsTPVR6JuK6YSfGHLH7dlndL+rBqE7B3JOHtTGL/riQa9iRxKJFCcyqFViuFtmwa7W4aHfvS6DyQRleDhd5GC+ePWOg/amGwJYPhtgzGTmQwcTKLqY4s8p1ZzJzJYq7bxnx3Bjf7PB82bvU7uDPo4P6Qg6URF8vjLp5OuHjhd5ekX7qa9/BuxsPH+RzWFnL4MJfD+1kPb6fXP3s15eH5FRdP/HMejbl4OOLgnu/z2wNO4bsXL3hY6M3geo+N2S4b074N105nMenbNNGewahv49CxDAZ8m/uaLJw7bKHnoIWz9Vbh3k7l0jjupNHq33Ozf+9Nvg8a96ZQv3vdN25dElnfV+nt+i2VR/Gz2U+w2U/xU/wExU/xl0380jRlsBFxg8Qlxc9HfYSBkLisFvH/Br8M91HCSN6rAAAAAElFTkSuQmCC"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/tt_use_big_top.B-iPN54U.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/lootsplosion.D_nh5FoG.gif"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/lootsplosion_trails.C7rFnSWy.gif"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/item_abilities.DOHp8Z8q.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/soulbound_on_item.BjrOux5u.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/try_use_soulbound.uGHomkZm.gif"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/break_soulbound.Cm1fNktP.gif"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/defense_curve.DdNq92v0.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/defense_table.C4WlQwAT.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/head_database.B-G0axjv.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/mc_sounds.RmKs8pUs.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/item_deconstruction.BplPIRXg.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/deconstruct_item.BHjGS6v0.gif"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/item_glow_hint.CQb_RIGZ.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/unidentified_item.DG_2gdTI.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/slash_weapons.DAua-dsH.gif"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/piercing_weapons.CtCBiXzE.gif"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/blunt_weapons.CjnzwdC3.gif"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/item_upgrade_nb.DG3D9zxd.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/banner.BaJpyifr.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/edition_gui.9FGRG2Fx.gif"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/long_sword_no_mod.CTR3gi81.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/long_sword_sharp.D-ne3qmG.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/item_update.Bf8s69bK.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/rev_id_in_ui.dDmqmx25.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/example_1a.TPcZOHMK.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/example_1b.DjgNdhf0.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/example_2b.UTv87RmT.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/example_3.B4EpXDWE.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/conditions.lMtUOuvy.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/ingredients.ChAJogcR.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/folder.CL10KY51.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/station_example.BWNtofOX.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/recipe_example.CQtI97sZ.png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/upgrade_recipe_example.CvjzoJoN.png"
+  },
+  {
+    "project": "MMOProfiles",
+    "url": "https://docs.phoenixdevt.fr/assets/placeholders.Ju2RzU_3.png"
+  },
+  {
+    "project": "MMOProfiles",
+    "url": "https://docs.phoenixdevt.fr/assets/profile_select.D1QJE14M.png"
+  },
+  {
+    "project": "MMOProfiles",
+    "url": "https://docs.phoenixdevt.fr/assets/profile_indiv.BvTb022d.png"
+  },
+  {
+    "project": "MMOProfiles",
+    "url": "https://docs.phoenixdevt.fr/assets/profile_new_char.BgOzBlZV.png"
+  },
+  {
+    "project": "MMOProfiles",
+    "url": "https://docs.phoenixdevt.fr/assets/proxy_setup_a1.CGuA2qdl.png"
+  },
+  {
+    "project": "MMOProfiles",
+    "url": "https://docs.phoenixdevt.fr/assets/proxy_setup_b1.DmXj1bFv.png"
+  },
+  {
+    "project": "MMOProfiles",
+    "url": "https://docs.phoenixdevt.fr/assets/proxy_setup_c1.D7Os-NzP.png"
+  },
+  {
+    "project": "MMOProfiles",
+    "url": "https://docs.phoenixdevt.fr/assets/proxy_setup_d1.F8m7MQ2T.png"
+  },
+  {
+    "project": "MMOProfiles",
+    "url": "https://docs.phoenixdevt.fr/assets/banner.BsL7S4In.png"
+  },
+  {
+    "project": "MythicLib",
+    "url": "https://docs.phoenixdevt.fr/assets/color_grad_vertical.BVZeuvAl.png"
+  },
+  {
+    "project": "MythicLib",
+    "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKsAAAAiCAYAAAAgVykJAAAC8UlEQVR4nO2cPWgUURDHX8Tz0KhRRDkJtzn1yBaGgG1qD9Ja2NmpaGewCxILg9iJdgmSIiGdha2wVwZbJUTk5IKXCyeCSPw4CSoYK/fNygz73uaUm/X/q16G2bl3Ydg3X+8GgqFgxxhjut2u+U2hUDCaKRaL8Rrfq/9x/V57/tmOANglcFagBjgrUAOcFahhLyfcaPE+PFL5ycpd9DdW+SRgZPwHb9NTv/1sPys35jArDSa2eTtPDwp2eIJJmxC0Hw95PSvavPjJ2lw4Kmgd8LN5eStebz44zuqUp96zcm/9OyWvvVXvbqUrGbxZgSLgrEANA1yd9W2nKD7gQ+3Ch3gdLZ7ojc1L9uipz53kda6+Y+XRI/548g0Jajc6rLzRsGFAWP1sP/dembczvcnKEzabNoyRQoLabDvVDqU+ddpLX+L8/TfW5pUqrzO/zu/h2hlWXiL/E9RZgVrgrEANbDUgT6y9SM+aw7M2+2689Mvo6dGfkDf5KoRoR9CXqwGWaCZg5bQC0A80OoPxunzbhmrh8Nd4PVah+ggDgFLgrEANXmEAze4p0ZNjmTdAs/uEzWW+EO3C3Ez2/fQb9Cj3rQaE9EhtHUr9LJrdU+o3T6U+S4912hSQsn4KbQokp66SenizAjXAWYEaMlcDXj9Pz1K9ba4e6Ymd67M2XNn+thOvV5b4JkKecDnuney0/WYkKFKmT6HhQfOW9aXSdJdTN8bgzQoUAWcFash9U2D91WC6Uo6QKgZ/u0EgjQXSkMCFscr3eI2mAFALnBWoQXUYQEf76E0BaRSQIo0RutwUiB4O2z1MytlrL9jNbAAlrHwhf2VvuEhITQGXWwPSGOGf4M0K1ABnBWpgbwrQCe3Rc3wWKTUFXPRHxz/yOkJTwFefjvy5II0FhqGnHWFcMGGT3CBIPOswUpg8yrNDGwdhwIcxUlPAW19oCkistfbFa9wUAGqBswI1pIYBGvnff8BMG/hhNpA74KxADXBWoAY4K1DDL9/H6p+EOCwcAAAAAElFTkSuQmCC"
+  },
+  {
+    "project": "MythicLib",
+    "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKgAAAAgCAYAAACGqDMBAAAEfElEQVR4nO1cTZbTMAyWUlhDhylcYgp3mMNwKA7DlgN0dlyAN/yvWPR1xGKSVHYsW7KdJm3z8XjjOrYsO58tyz/B25e3BB72+30fbhr0HwNAKK7DQFwij5S+FLXKQ5ZHIxMD8aG4kLzYMytSOuWWUVPHNF7UFWd5+aG0UkOeArU7EAXCvAxrx7dCktXFE6Q7Xml+v+3s9csgqLaQU4+YUjka0ltHRimNJo+m/XKIY0WpbE1+v+3t9ao0gpb3lDIixfLUADfzFuQSrSvvFEQ9FYx1aJsgg6AlRNDmtZp6DaFjciQioPdcixqEugRSCghVjTzL0/4MEvQn/D3+eDoGN83rYHnfn/4E45/TY5vmdzKNK1NKvzbpIEGuS7hcjRyrDrLMYx2t+pTIlNu2TnpRt9UaAFsOeDwtMPHWOUgtUEDulCNWrvlf0ENqvjwTD1CfeHOYay0kmyMwtA76bf+jivB7Fv5cRaJO5r0QL6V3zf2xk0imSpK/YyZvy/Ja9ZRkWvWRMO934U4bGqNOC6JYRuFiIPsP1RfqLwEl040L9rxPBa+PXzxBd9x8C172lsXvBO8+Ln9ITG6aQeHV7go8Yq25tOgzBngdNyyeT4d4eNesFxMvQ2euabHq46FsmWkBQLd8F1r6mgGmPNqggaLJTAS1emRTyfzEf1RaPJ8KmgV2qQ23B9dcAkCUFCXvQtLTySst+K/Wbl/qOhMtXvz1YY4jKblTJcTjxtJCUAH695i7X68QO8NZwxjodzkJANt/AAiImD8H1XjHU8n8yML/WPhLtsQUKjCJ87yA89JqQJEc8/mE8IYFBzf9j2wq8m51AwDHJlicpAAmdXlCZ5rnaJYTqNF+BAtBg5iEnJbz1RbEbpVUhN+XSu8hdDOciyfoV2TTBjoDj95/QzxOAfFo3CrtxZfgUSj3bWuyHRCJ04a7w68+/LC6uXyCng1qDUECmrYA9ZFxRKCxdiFQ30uuxos3tAkATLBD1N3wGMl778hmuh6Hz570VCCi8x5BpdPszuJwZ9Y9wkmL0ppT8Vz+RkyVAWQEagPcw9XoI+Fu5P13bsofmZnmYQmx44JXM4KeA65k2VMNhJkR9NwPXnhHGc0gb0flnNpjlPmqtFD/Bl714Q/8Ap0Abmq30Qt08TSnTM/BNwj4/YL3Cq/fPx4GMHTANQvXHPxdd3kR0fFwS7BhempMPzffMR06kmrTh/Dgef2zmoNONR9HbFiYPTjkyRtj4Ks5Qvm37mvKBMhzyCTMiqBToW/QCT1WxKFJ5+pUtaCIafIQmUeMMVbKgpfm0h8Pk6FRKvV5LUeed8olnrocA8mRl1RrVPOLCNd5+CwpN6fQVE9JgeWNfm9GKdM0glKATdadueC5P+eB20BONTI3yS0bMoMq8hdXIDdaplBE6Qjq14UgYiV4PD9eFFMwJodIHFGRy5Tkts/VBFU1UCKN3zhiff0G6uN5QehG9T+EyrI1Rk1dgkQVFLZ+ukHaHvf14kVKTdLL1JCHyDad6UbTnKmPgqhcr0H29u9/XDCeD+StUg8AAAAASUVORK5CYII="
+  },
+  {
+    "project": "MythicLib",
+    "url": "https://docs.phoenixdevt.fr/assets/damage_indicators.CqYqRaSc.png"
+  },
+  {
+    "project": "MythicLib",
+    "url": "https://docs.phoenixdevt.fr/assets/regen_indicator.CagtvlJ1.png"
+  },
+  {
+    "project": "MythicLib",
+    "url": "https://docs.phoenixdevt.fr/assets/poe_armor.C-2kRLIh.png"
+  },
+  {
+    "project": "MythicLib",
+    "url": "https://docs.phoenixdevt.fr/assets/fire_damage.ByW9dfuk.png"
+  },
+  {
+    "project": "MythicLib",
+    "url": "https://docs.phoenixdevt.fr/assets/fire_damage_percent.BSutR8Vw.png"
+  },
+  {
+    "project": "MythicLib",
+    "url": "https://docs.phoenixdevt.fr/assets/fire_defense.Cx8AyGgo.png"
+  },
+  {
+    "project": "MythicLib",
+    "url": "https://docs.phoenixdevt.fr/assets/fire_weakness.Z7RBpFyk.png"
+  },
+  {
+    "project": "MythicLib",
+    "url": "https://docs.phoenixdevt.fr/assets/damage_indicators_element.YN0Vppdx.png"
+  },
+  {
+    "project": "MythicLib",
+    "url": "https://docs.phoenixdevt.fr/assets/health_scale_off.Dk5VFWbO.png"
+  },
+  {
+    "project": "MythicLib",
+    "url": "https://docs.phoenixdevt.fr/assets/health_scale_on.C3N5nAEt.png"
+  },
+  {
+    "project": "MythicLib",
+    "url": "https://docs.phoenixdevt.fr/assets/spigot_changelog.UYEhkzg0.png"
+  }
+]

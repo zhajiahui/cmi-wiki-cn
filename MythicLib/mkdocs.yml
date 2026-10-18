@@ -1,0 +1,100 @@
+site_name: MythicLib 中文文档
+site_url: https://zhajiahui.github.io/cmi-wiki-cn/mythiclib/
+theme:
+  name: material
+  language: zh
+  font: false
+plugins:
+- search:
+    lang:
+    - zh
+    - en
+markdown_extensions:
+- admonition
+- attr_list
+- md_in_html
+- tables
+- toc:
+    permalink: true
+- pymdownx.details
+- pymdownx.superfences
+nav:
+- 首页: index.md
+- MythicLib 是什么: wth.md
+- 常见问题: faq.md
+- 反馈问题: report.md
+- 基本设置:
+  - 命令: general/commands.md
+  - 占位符: general/placeholders.md
+  - 配置选项: general/config.md
+- 功能:
+  - 伤害: features/damage.md
+  - 命中效果: features/on-hit-effects.md
+  - 伤害显示: features/damage-indicators.md
+  - 伤害减免: features/mitigation-types.md
+  - 玩家属性: features/stats.md
+  - 插件兼容性: features/compatibility.md
+  - 元素: features/elements.md
+- 其他:
+  - 界面语法: misc/ui-syntax.md
+  - 玩家修正器: misc/player-modifiers.md
+  - 玩家消息: misc/player-messages.md
+  - 魔力与耐力: misc/mana-stamina.md
+- 技能:
+  - 介绍: skills/intro.md
+  - 触发器: skills/triggers.md
+  - 内置技能: skills/builtin.md
+  - 延迟与计时器: skills/delay-timer.md
+  - 创建自定义技能:
+    - 使用 MythicMobs: skills/custom/mythic.md
+    - 使用 MythicLib: skills/custom/mythiclib.md
+    - 使用 CoreTools: skills/custom/coretools.md
+    - 使用 Fabled: skills/custom/fabled.md
+- 脚本:
+  - 介绍: scripts/intro.md
+  - 变量: scripts/variables.md
+  - 机制:
+    - 介绍: scripts/mechanics/intro.md
+    - 增益与属性: scripts/mechanics/buffs.md
+    - 投射物: scripts/mechanics/projectiles.md
+    - 其他功能: scripts/mechanics/misc.md
+    - 移动: scripts/mechanics/movement.md
+    - 攻击: scripts/mechanics/offense.md
+    - 形状: scripts/mechanics/shapes.md
+    - 变量: scripts/mechanics/variables.md
+    - 视觉效果: scripts/mechanics/visual.md
+    - 物品栏: scripts/mechanics/inventory.md
+    - 外部插件: scripts/mechanics/external.md
+  - 条件:
+    - 介绍: scripts/conditions/intro.md
+    - 通用条件: scripts/conditions/generic.md
+    - 位置条件: scripts/conditions/location.md
+    - 其他功能: scripts/conditions/misc.md
+  - 目标选择器:
+    - 介绍: scripts/targeters/intro.md
+    - 实体目标选择器: scripts/targeters/entity.md
+    - 位置目标选择器: scripts/targeters/location.md
+  - 教程:
+    - 介绍: scripts/tutorials/intro.md
+    - 彩虹技能: scripts/tutorials/parabola.md
+    - 治疗与螺旋粒子: scripts/tutorials/helix.md
+    - 挥剑斩击: scripts/tutorials/slash-skill.md
+    - 基础投射物: scripts/tutorials/projectile.md
+- 开发接口:
+  - Maven: api/maven.md
+  - 伤害: api/damage.md
+  - 玩家属性: api/stats.md
+- 分类目录:
+  - 开发接口: api.md
+  - 功能: features.md
+  - 基本设置: general.md
+  - 其他: misc.md
+  - 条件: scripts/conditions.md
+  - 脚本: scripts.md
+  - 机制: scripts/mechanics.md
+  - 目标选择器: scripts/targeters.md
+  - 教程: scripts/tutorials.md
+  - 创建自定义技能: skills/custom.md
+  - 技能: skills.md
+docs_dir: docs
+site_dir: .cache/site

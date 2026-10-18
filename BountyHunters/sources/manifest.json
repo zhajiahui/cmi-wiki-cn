@@ -1,0 +1,385 @@
+[
+  {
+    "title": "事件",
+    "file": "api/events.md",
+    "source": "https://docs.phoenixdevt.fr/bounty-hunters/api/events",
+    "source_key": "bounty-hunters_api_events.md",
+    "source_sha256": "5ee03ee25297ac9c1b6cac67067e0a5aef696a4d72873a3c861504dfac1ec47e",
+    "translation_units": [
+      189,
+      190,
+      191,
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202
+    ]
+  },
+  {
+    "title": "开发接口",
+    "file": "api.md",
+    "source": "https://docs.phoenixdevt.fr/bounty-hunters/api/",
+    "source_key": "bounty-hunters_api_index.md",
+    "source_sha256": "736f7008df11258983b533fcfdf07952e9d514c1e1238df292f662934bc74b56",
+    "translation_units": [
+      203
+    ]
+  },
+  {
+    "title": "悬赏",
+    "file": "api/managing-bounties.md",
+    "source": "https://docs.phoenixdevt.fr/bounty-hunters/api/managing-bounties",
+    "source_key": "bounty-hunters_api_managing-bounties.md",
+    "source_sha256": "03cd4a03f900c113a8a37bd513e7ed4271800ed55c77248a08c773a080eab9f4",
+    "translation_units": [
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217
+    ]
+  },
+  {
+    "title": "玩家数据",
+    "file": "api/players.md",
+    "source": "https://docs.phoenixdevt.fr/bounty-hunters/api/players",
+    "source_key": "bounty-hunters_api_players.md",
+    "source_sha256": "6fa19f26a856e4c6cbe12e593f28003a453b5797c09aac7b9719918284e1eade",
+    "translation_units": [
+      218,
+      219,
+      220,
+      221,
+      222,
+      223,
+      224,
+      225,
+      226,
+      227,
+      228,
+      229,
+      230,
+      231,
+      232,
+      233,
+      234,
+      235,
+      236,
+      237,
+      238,
+      239,
+      240,
+      233,
+      241,
+      242,
+      243,
+      244,
+      245,
+      246,
+      247,
+      248
+    ]
+  },
+  {
+    "title": "自动悬赏",
+    "file": "features/auto-bounties.md",
+    "source": "https://docs.phoenixdevt.fr/bounty-hunters/features/auto-bounties",
+    "source_key": "bounty-hunters_features_auto-bounties.md",
+    "source_sha256": "66a686ec84c83d956b560dbf6bcc1ddf1de744049185572223d50440c4044bcb",
+    "translation_units": [
+      249,
+      250,
+      251,
+      252,
+      253,
+      254,
+      255
+    ]
+  },
+  {
+    "title": "悬赏",
+    "file": "features/bounties.md",
+    "source": "https://docs.phoenixdevt.fr/bounty-hunters/features/bounties",
+    "source_key": "bounty-hunters_features_bounties.md",
+    "source_sha256": "c5215dd46a31b7182c5d2adb9c37a161e6f52edc88f6a2b674ad9a81bce63c3a",
+    "translation_units": [
+      204,
+      256,
+      257,
+      258,
+      259,
+      260,
+      261,
+      262,
+      263,
+      264,
+      265,
+      266,
+      267,
+      268,
+      269
+    ]
+  },
+  {
+    "title": "悬赏有效期",
+    "file": "features/bounty-expiration.md",
+    "source": "https://docs.phoenixdevt.fr/bounty-hunters/features/bounty-expiration",
+    "source_key": "bounty-hunters_features_bounty-expiration.md",
+    "source_sha256": "48c623c44196dbaf3b8e0ce8ec0d25cfdee4eff67e5f4752515080ff3f5561f1",
+    "translation_units": [
+      270,
+      271,
+      272
+    ]
+  },
+  {
+    "title": "悬赏限制",
+    "file": "features/claim-restrictions.md",
+    "source": "https://docs.phoenixdevt.fr/bounty-hunters/features/claim-restrictions",
+    "source_key": "bounty-hunters_features_claim-restrictions.md",
+    "source_sha256": "d910a989f314ddad06e721886424eb0cac14d45235db54a3f74c3eaa8464abab",
+    "translation_units": [
+      273,
+      274,
+      275,
+      276,
+      277,
+      278
+    ]
+  },
+  {
+    "title": "经济与税费",
+    "file": "features/economy.md",
+    "source": "https://docs.phoenixdevt.fr/bounty-hunters/features/economy",
+    "source_key": "bounty-hunters_features_economy.md",
+    "source_sha256": "2c966d70fdf4a581e6456967bfa08bfdb58122933104fcdc5725ed8ac8cef3a1",
+    "translation_units": [
+      279,
+      280,
+      281,
+      282,
+      283,
+      117,
+      284,
+      117,
+      285,
+      286,
+      287
+    ]
+  },
+  {
+    "title": "收集悬赏头颅",
+    "file": "features/head-hunting.md",
+    "source": "https://docs.phoenixdevt.fr/bounty-hunters/features/head-hunting",
+    "source_key": "bounty-hunters_features_head-hunting.md",
+    "source_sha256": "37bffbe3e4c0d38a0c8ad060de749bfcdbe6678159b4d30b44104629df829834",
+    "translation_units": [
+      288,
+      289,
+      290,
+      291,
+      292,
+      293,
+      294,
+      295,
+      296
+    ]
+  },
+  {
+    "title": "功能",
+    "file": "features.md",
+    "source": "https://docs.phoenixdevt.fr/bounty-hunters/features/",
+    "source_key": "bounty-hunters_features_index.md",
+    "source_sha256": "a323800f42fe749c870c7b9d1d8d447d4b6c25b8f852e79539e018d8945c5839",
+    "translation_units": [
+      297
+    ]
+  },
+  {
+    "title": "等级与奖励",
+    "file": "features/levels.md",
+    "source": "https://docs.phoenixdevt.fr/bounty-hunters/features/levels",
+    "source_key": "bounty-hunters_features_levels.md",
+    "source_sha256": "838c3beb74a73096b8a46c7af09f5d2620052e00a89cca7fc3e694804be8e64e",
+    "translation_units": [
+      298,
+      299,
+      300,
+      301,
+      302,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308,
+      309,
+      310,
+      311,
+      312,
+      313,
+      314,
+      315,
+      316,
+      317,
+      318,
+      319
+    ]
+  },
+  {
+    "title": "其他功能",
+    "file": "features/misc.md",
+    "source": "https://docs.phoenixdevt.fr/bounty-hunters/features/misc",
+    "source_key": "bounty-hunters_features_misc.md",
+    "source_sha256": "658eb479358b25e03f51908e599fb0a81035a04b86ee911a0c1e43f08873564c",
+    "translation_units": [
+      320,
+      321,
+      322,
+      323,
+      324,
+      325,
+      326,
+      327,
+      328,
+      329,
+      330,
+      331,
+      332
+    ]
+  },
+  {
+    "title": "追踪玩家",
+    "file": "features/player-hunting.md",
+    "source": "https://docs.phoenixdevt.fr/bounty-hunters/features/player-hunting",
+    "source_key": "bounty-hunters_features_player-hunting.md",
+    "source_sha256": "f42b1ca2d74ee2e9245cbb4388964dd1e173bfb598bb49ba49080a30bb0360e7",
+    "translation_units": [
+      333,
+      334,
+      335,
+      336,
+      254,
+      337
+    ]
+  },
+  {
+    "title": "命令",
+    "file": "general/commands.md",
+    "source": "https://docs.phoenixdevt.fr/bounty-hunters/general/commands",
+    "source_key": "bounty-hunters_general_commands.md",
+    "source_sha256": "a76e57ee16b7b369911caea4b6c5f8bcac9391ccc14df0a2e336912ba89dcac1",
+    "translation_units": [
+      338,
+      339,
+      340,
+      341,
+      342,
+      343,
+      344,
+      345,
+      346,
+      347,
+      340,
+      348,
+      349,
+      350,
+      351,
+      352
+    ]
+  },
+  {
+    "title": "基本设置",
+    "file": "general.md",
+    "source": "https://docs.phoenixdevt.fr/bounty-hunters/general/",
+    "source_key": "bounty-hunters_general_index.md",
+    "source_sha256": "cb469bd3214b6412be9ef8844580f6f0a527fa82a683abcf0174fe05083550d0",
+    "translation_units": [
+      353
+    ]
+  },
+  {
+    "title": "权限",
+    "file": "general/permissions.md",
+    "source": "https://docs.phoenixdevt.fr/bounty-hunters/general/permissions",
+    "source_key": "bounty-hunters_general_permissions.md",
+    "source_sha256": "290156823c5763bb7f154f67f23012bbbe1af3527474fecb63842bd3d7f78833",
+    "translation_units": [
+      354,
+      355,
+      356,
+      357,
+      358,
+      359,
+      360,
+      361,
+      362,
+      363,
+      364,
+      365,
+      356,
+      366,
+      367,
+      368,
+      369,
+      370,
+      371
+    ]
+  },
+  {
+    "title": "占位符",
+    "file": "general/placeholders.md",
+    "source": "https://docs.phoenixdevt.fr/bounty-hunters/general/placeholders",
+    "source_key": "bounty-hunters_general_placeholders.md",
+    "source_sha256": "2c9a50f9add2cfb1d5f4e3bcb5a71fabcd9d89e6e4e2381a7c036f37ff8fbcc7",
+    "translation_units": [
+      372,
+      373,
+      374,
+      375,
+      376,
+      377,
+      378,
+      379,
+      380,
+      381,
+      382,
+      383,
+      384,
+      385
+    ]
+  },
+  {
+    "title": "首页",
+    "file": "index.md",
+    "source": "https://docs.phoenixdevt.fr/bounty-hunters/",
+    "source_key": "bounty-hunters_index.md",
+    "source_sha256": "2be24476dd6d517450a5ea789316de72ac32e5f7050f4ba43e44eba63ab47f6e",
+    "translation_units": [
+      386,
+      387,
+      388,
+      389,
+      116,
+      117,
+      390,
+      391
+    ]
+  }
+]

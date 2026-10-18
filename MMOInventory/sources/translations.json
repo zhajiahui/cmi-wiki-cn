@@ -1,0 +1,1117 @@
+[
+  {
+    "id": 116,
+    "source": "> **INFO**",
+    "zh": "> **信息**"
+  },
+  {
+    "id": 117,
+    "source": ">",
+    "zh": ">"
+  },
+  {
+    "id": 189,
+    "source": "📮 Events",
+    "zh": "📮 活动"
+  },
+  {
+    "id": 203,
+    "source": "API",
+    "zh": "API"
+  },
+  {
+    "id": 254,
+    "source": "Configuration",
+    "zh": "配置"
+  },
+  {
+    "id": 283,
+    "source": "> **TIP**",
+    "zh": "> **提示**"
+  },
+  {
+    "id": 297,
+    "source": "Features",
+    "zh": "特点"
+  },
+  {
+    "id": 338,
+    "source": "💾 Commands",
+    "zh": "💾 命令"
+  },
+  {
+    "id": 353,
+    "source": "General",
+    "zh": "一般"
+  },
+  {
+    "id": 354,
+    "source": "🧑‍⚖️ Permissions",
+    "zh": "🧑‍⚖️权限"
+  },
+  {
+    "id": 372,
+    "source": "🏷️ Placeholders",
+    "zh": "🏷️占位符"
+  },
+  {
+    "id": 386,
+    "source": "🏠 Home",
+    "zh": "🏠 首页"
+  },
+  {
+    "id": 430,
+    "source": "📦 Maven",
+    "zh": "📦Maven"
+  },
+  {
+    "id": 431,
+    "source": "Repository",
+    "zh": "存储库"
+  },
+  {
+    "id": 432,
+    "source": "We provide a Maven repository with API builds for all MMO plugins. Add our repository to your repository list:",
+    "zh": "我们为所有 MMO 插件提供了一个Maven存储库，其中包含API版本。将我们的存储库添加到你的存储库列表中："
+  },
+  {
+    "id": 433,
+    "source": "Dependency",
+    "zh": "依赖性"
+  },
+  {
+    "id": 434,
+    "source": "Include the following dependency in your Maven `pom.xml`",
+    "zh": "在你的Maven`pom.xml`中包含以下依赖项"
+  },
+  {
+    "id": 435,
+    "source": "Compatibility",
+    "zh": "兼容性"
+  },
+  {
+    "id": 473,
+    "source": "🔌 Other Plugins",
+    "zh": "🔌 其他插件"
+  },
+  {
+    "id": 496,
+    "source": "Custom GUI Textures",
+    "zh": "自定义GUI纹理"
+  },
+  {
+    "id": 538,
+    "source": "> **WARNING**",
+    "zh": "> **警告**"
+  },
+  {
+    "id": 1167,
+    "source": "| Permission | Description | Default |",
+    "zh": "|权限|描述 |默认 |"
+  },
+  {
+    "id": 1247,
+    "source": "If something is not quite clear, please join our [Discord](https://phoenixdevt.fr/discord) server to get help from staff or community! We do our best to keep this wiki up to date. Let us know if you see a typo or anything outdated!",
+    "zh": "有疑问时，可以加入 [Discord](https://phoenixdevt.fr/discord)，向工作人员或社区求助。Wiki 会尽量保持更新；发现错字或过时内容时，也欢迎反馈。"
+  },
+  {
+    "id": 1250,
+    "source": "🔌 Installation Guide",
+    "zh": "🔌 安装指南"
+  },
+  {
+    "id": 1493,
+    "source": "Introduction",
+    "zh": "介绍"
+  },
+  {
+    "id": 1608,
+    "source": "How to use",
+    "zh": "如何使用"
+  },
+  {
+    "id": 1713,
+    "source": "This page describes the Bukkit events fired by MMOInventory.",
+    "zh": "本页介绍了MMOInventory触发的Bukkit事件。"
+  },
+  {
+    "id": 1714,
+    "source": "`InventoryUpdateEvent`",
+    "zh": "`InventoryUpdateEvent`"
+  },
+  {
+    "id": 1715,
+    "source": "This event is called every time inventory content is changed. `#getPreviousItem` returns the previous item, or `null` if there wasn't one. `#getNewItem` returns the item being \"equipped\", or `null` if it is being removed. `#getInventoryData` returns the player's inventory data. `#getSlot` returns the clicked slot.",
+    "zh": "每次物品栏内容更改时都会调用此事件。`#getPreviousItem`返回前一个物品，如果没有，则返回`null`。`#getNewItem`返回正在“装备”的物品，如果正在移除，则返回`null`。`#getInventoryData`返回玩家的物品栏数据。`#getSlot`返回单击的插槽。"
+  },
+  {
+    "id": 1716,
+    "source": "This event cannot be canceled. It is notably used for broadcasting inventory updates to MMOItems.",
+    "zh": "此活动无法取消。它特别用于将物品栏更新广播到MMOItems。"
+  },
+  {
+    "id": 1717,
+    "source": "`ItemEquipEvent`",
+    "zh": "`ItemEquipEvent`"
+  },
+  {
+    "id": 1718,
+    "source": "This is the cancelable counterpart of `InventoryUpdateEvent`. It is only called when players click from inside the chest inventory. Note that this event is also called when players interact with custom slots inside their vanilla inventory.",
+    "zh": "这是`InventoryUpdateEvent`的可取消对应项。仅当玩家从箱子物品栏内部点击时才会调用。请注意，当玩家与其原版物品栏内的自定义插槽交互时也会调用此事件。"
+  },
+  {
+    "id": 1719,
+    "source": "Note that editing items on clicks is not trivial, as it can lead to inconsistent behaviors with MMOItems inventory updates. Here are some solutions:",
+    "zh": "请注意，在单击时编辑物品并非易事，因为它可能会导致与MMOItems物品栏更新不一致的行为。以下是一些解决方案："
+  },
+  {
+    "id": 1720,
+    "source": "either listen to one of the previous events, and schedule a task to edit it on the next tick using `InventoryData#setItem`,",
+    "zh": "要么侦听之前的事件之一，然后安排一个任务以使用`InventoryData#setItem`在下一个刻上编辑它，"
+  },
+  {
+    "id": 1721,
+    "source": "or edit the equipped item *in place*, by setting its item type and item meta. Note that MMOItems sometimes does that for features like *in place* durability losses and item downgrades. You will need to resolve MMOItems modifiers from the inventory again afterward.",
+    "zh": "或者通过设置物品类型和物品元来*就地*编辑装备的物品。请注意，MMOItems有时会针对“就地”耐久度损失和物品降级等功能执行此操作。之后你需要再次从物品栏解析MMOItems修饰符。"
+  },
+  {
+    "id": 1722,
+    "source": "🔌 Overview",
+    "zh": "🔌 概述"
+  },
+  {
+    "id": 1723,
+    "source": "Access the `MMOInventory` plugin singleton instance using Bukkit's plugin manager after making sure the plugin is installed.",
+    "zh": "确保安装了插件后，使用Bukkit的插件管理器访问`MMOInventory`插件单例实例。"
+  },
+  {
+    "id": 1724,
+    "source": "Inventories",
+    "zh": "物品栏"
+  },
+  {
+    "id": 1725,
+    "source": "Every inventory has an instance of `Inventory` stored in memory. This abstract interface has two implementations, `CustomInventory` for custom inventories, and `VanillaInventory` for the vanilla inventory. Recall that there can be at most one vanilla inventory registered.",
+    "zh": "每个物品栏都有一个`Inventory`实例存储在内存中。该抽象接口有两个实现，用于自定义物品栏的`CustomInventory`和用于原版物品栏的`VanillaInventory`。回想一下，最多可以注册一个原版物品栏。"
+  },
+  {
+    "id": 1726,
+    "source": "The `Inventory` instances contain configuration information about the inventory: items and slots inside it, commands bound to them, scripts when opening or closing the inventory...",
+    "zh": "`Inventory`实例包含有关物品栏的配置信息：物品及其内部的插槽、绑定到它们的命令、打开或关闭物品栏时的脚本..."
+  },
+  {
+    "id": 1727,
+    "source": "First, access MMOInventory's inventory manager using the following syntax:",
+    "zh": "首先，使用以下语法访问MMOInventory的物品栏管理器："
+  },
+  {
+    "id": 1728,
+    "source": "Then access instances of `Inventory` using the following methods:",
+    "zh": "然后使用以下方法访问`Inventory`的实例："
+  },
+  {
+    "id": 1729,
+    "source": "Slots",
+    "zh": "老虎机"
+  },
+  {
+    "id": 1730,
+    "source": "The `Inventory#getSlots` method returns a collection of instances of class `CustomSlot`. A custom slot corresponds to a slot in chest UIs where players can place items.",
+    "zh": "`Inventory#getSlots`方法返回类`CustomSlot`实例的集合。自定义插槽对应于箱子 UI 中的插槽，其中玩家可以放置物品。"
+  },
+  {
+    "id": 1731,
+    "source": "The key feature of these custom slots is their list of restrictions (one `SlotRestriction` object per restriction use). There are multiple implementations of the `SlotRestriction` abstract interface, like `LevelRestriction` or `TypeRestriction` when MMOItems is installed.",
+    "zh": "这些自定义插槽的主要功能是它们的限制列表（每个限制使用一个`SlotRestriction`对象）。`SlotRestriction`抽象接口有多种实现，例如安装MMOItems时的`LevelRestriction`或`TypeRestriction`。"
+  },
+  {
+    "id": 1732,
+    "source": "Registering new restriction types",
+    "zh": "注册新的限制类型"
+  },
+  {
+    "id": 1733,
+    "source": "Say you have a custom plugin with player data, and you want to restrict certain slots to players who have a specific boolean flag toggled on in their player data object, `SomePlayerData`.",
+    "zh": "假设你有一个包含玩家数据的自定义插件，并且你希望将某些插槽限制为玩家，这些插槽在其玩家数据对象`SomePlayerData`中打开了特定的布尔标志。"
+  },
+  {
+    "id": 1734,
+    "source": "First, provide an implementation of `SlotRestriction`:",
+    "zh": "首先，提供`SlotRestriction`的实现："
+  },
+  {
+    "id": 1735,
+    "source": "Then register this slot restriction type with MMOInventory's slot manager. Let's call this restriction `my_restriction`.",
+    "zh": "然后向MMOInventory的槽管理器注册此槽限制类型。我们将此限制称为`my_restriction`。"
+  },
+  {
+    "id": 1736,
+    "source": "> Make sure you call this code after MMOInventory loads, but before it enables. You can either put this in your `#onLoad` if you make MMOInventory a *(soft)depend*, or in `#onEnable` if you make MMOInventory a *loadbefore*.",
+    "zh": "> 确保在MMOInventory加载之后、启用之前调用此代码。如果你将MMOInventory设为*（软）依赖*，则可以将其放入`#onLoad`中；如果将MMOInventory设为*loadbefore*，则可以将其放入`#onEnable`中。"
+  },
+  {
+    "id": 1737,
+    "source": "You can then use this restriction inside inventory configs to create slots that are only usable when a certain condition is met. This can be combined with other existing restrictions to create interesting perks for players.",
+    "zh": "然后，你可以在物品栏配置中使用此限制来创建仅在满足特定条件时才可用的插槽。这可以与其他现有限制相结合，为玩家创造有趣的福利。"
+  },
+  {
+    "id": 1738,
+    "source": "Player Data",
+    "zh": "玩家数据"
+  },
+  {
+    "id": 1739,
+    "source": "First, access player data objects using the following syntax:",
+    "zh": "首先，使用以下语法访问玩家数据对象："
+  },
+  {
+    "id": 1740,
+    "source": "Each player has a `PlayerData` object stored in memory, and an `InventoryData` object for each registered inventory. The `InventoryData` abstract interface is implemented for both custom inventories (`CustomInventoryData`) and vanilla inventories (`VanillaInventoryData`).",
+    "zh": "每个玩家都有一个存储在内存中的`PlayerData`对象，并且每个注册的物品栏都有一个`InventoryData`对象。`InventoryData`抽象接口针对自定义物品栏(`CustomInventoryData`) 和原版物品栏(`VanillaInventoryData`) 实现。"
+  },
+  {
+    "id": 1741,
+    "source": "You can obtain instances of `InventoryData` using the following methods:",
+    "zh": "你可以通过以下方式获取`InventoryData`的实例："
+  },
+  {
+    "id": 1742,
+    "source": "You can obtain the current list of equipped items of a player using the following method. Using lookup mode `NORMAL` will ignore items that have been placed in an invalid inventory slot. Using lookup mode `IGNORE_RESTRICTIONS` will return all items, including the items present in the player's vanilla inventory.",
+    "zh": "你可以通过以下方法获取玩家当前的物品装备列表。使用查找模式`NORMAL`将忽略已放置在无效物品栏插槽中的物品。使用查找模式`IGNORE_RESTRICTIONS`将返回所有物品，包括玩家的原版物品栏中存在的物品。"
+  },
+  {
+    "id": 1743,
+    "source": "The `InventoryData` abstract interface exposes mainly two important methods for getting and updating inventory content. Note that calls to `#setItem` trigger an `InventoryUpdateEvent`.",
+    "zh": "`InventoryData`抽象接口主要公开了两个用于获取和更新物品栏内容的重要方法。请注意，对`#setItem`的调用会触发`InventoryUpdateEvent`。"
+  },
+  {
+    "id": 1744,
+    "source": "The class `InventoryItem` stores information about the item and its position in the inventory.",
+    "zh": "类`InventoryItem`存储有关物品及其在物品栏中的位置的信息。"
+  },
+  {
+    "id": 1745,
+    "source": "⚔️ MMOItems",
+    "zh": "⚔️MMOItems"
+  },
+  {
+    "id": 1746,
+    "source": "This page explains how to configure MMOInventory to work with [MMOItems](https://www.spigotmc.org/resources/39267/).",
+    "zh": "本页介绍如何配置MMOInventory以与 [MMOItems](https://www.spigotmc.org/resources/39267/)一起使用。"
+  },
+  {
+    "id": 1747,
+    "source": "Configuring MMOInventory",
+    "zh": "配置MMOInventory"
+  },
+  {
+    "id": 1748,
+    "source": "The default custom inventory that comes with MMOInventory contains vanilla armor and hand slots as well as extra accessory slots such as rings, amulet, bracelet, gloves and artifact slots. These *accessory slots* are configured to only accept MMOItems items of specific types.",
+    "zh": "MMOInventory附带的默认定制物品栏包含原版、护甲和手槽以及额外的配件槽，例如戒指、护身符、手镯、手套和神器槽。这些*配件插槽*配置为仅接受特定类型的MMOItems物品。"
+  },
+  {
+    "id": 1749,
+    "source": "For instance, the following code snippet shows how to configure the *Left Ring* and *Right Ring* slots to only accept MMOItems items of type `RING`.",
+    "zh": "例如，以下代码片段显示如何将 *Left Ring* 和 *Right Ring* 插槽配置为仅接受MMOItems物品类型的`RING`。"
+  },
+  {
+    "id": 1750,
+    "source": "Configuring MMOItems",
+    "zh": "配置MMOItems"
+  },
+  {
+    "id": 1751,
+    "source": "The code snippet from previous section only registers custom slots inside the custom inventory of MMOInventory. For that code to work, you will also need to register the corresponding item types in the MMOItems registry. MMOItems comes with the corresponding *accessory item types* already registered, so you do not need to create them from scratch.",
+    "zh": "上一节中的代码片段仅在MMOInventory的自定义物品栏内注册自定义插槽。为了使该代码正常工作，你还需要在MMOItems注册表中注册相应的物品类型。MMOItems附带已注册的相应*配件物品类型*，因此你无需从头开始创建它们。"
+  },
+  {
+    "id": 1752,
+    "source": "> All MMOItems item types that correspond to custom accessory slots (rings, bracelets, amulets...) in MMOInventory **MUST** have their parent type set to `ACCESSORY`. This is mandatory for MMOItems to properly register stats of items placed inside the custom inventory GUI.",
+    "zh": "> 与MMOInventory中的自定义配件槽（戒指、手镯、护身符...）相对应的所有MMOItems物品类型 **必须** 将其父类型设置为`ACCESSORY`。这对于MMOItems正确注册放置在自定义物品栏GUI内的物品的属性是必需的。"
+  },
+  {
+    "id": 1753,
+    "source": "For example, the following code snippet registers the `RING` item type for the two *Left Ring* and *Right Ring* slots we configured in the previous section.",
+    "zh": "例如，以下代码片段为我们在上一节中配置的两个 *Left Ring* 和 *Right Ring* 插槽注册`RING`物品类型。"
+  },
+  {
+    "id": 1754,
+    "source": "Important Note",
+    "zh": "重要提示"
+  },
+  {
+    "id": 1755,
+    "source": "💎 Oraxen",
+    "zh": "💎Oraxen"
+  },
+  {
+    "id": 1756,
+    "source": "This pages describes the built-in compatibility features between MMOInventory and [Oraxen](https://oraxen.com/). Note that it does not mean that other item plugins are not supported, it just means that Oraxen has some exclusive features.",
+    "zh": "本页介绍了MMOInventory和 [Oraxen](https://oraxen.com/)之间的built-in兼容性功能。请注意，这并不意味着不支持其他物品插件，它只是意味着Oraxen有一些独有的功能。"
+  },
+  {
+    "id": 1757,
+    "source": "Custom Textures",
+    "zh": "自定义纹理"
+  },
+  {
+    "id": 1758,
+    "source": "MMOInventory 1.6.5 introduces native Oraxen support. Since MMOInventory requires the use of a custom resource pack, MMOInventory will detect Oraxen on startup and inject the required items into its registry. The only thing you **MUST** do is to place all of your item textures into one specific folder, that is `Oraxen/pack/textures/items/mmoinventory`. Your textures must be .PNG files, and the name must follow the `lower_case_format`. There must be a perfect ONE-TO-ONE matching between your `slots.yml` configuration and your Oraxen texture folder! If there is any error, Oraxen will probably output a texture error. Example with the default MMOInventory `slots.yml` config:",
+    "zh": "MMOInventory1.6.5引入本机Oraxen支持。由于MMOInventory需要使用自定义资源包，因此MMOInventory将在启动时检测Oraxen并将所需的物品注入其注册表中。你**必须**做的唯一一件事是将所有物品纹理放入一个特定文件夹中，即`Oraxen/pack/textures/items/mmoinventory`。你的纹理必须是 .PNG 文件，并且名称必须遵循`lower_case_format`。你的`slots.yml`配置和Oraxen纹理文件夹之间必须有完美的ONE-TO-ONE匹配！如果有任何错误，Oraxen可能会输出纹理错误。默认MMOInventory`slots.yml`配置的示例："
+  },
+  {
+    "id": 1759,
+    "source": "![image](https://docs.phoenixdevt.fr/assets/oraxen_folder.cjdfbYhQ.png)",
+    "zh": "![图片](https://docs.phoenixdevt.fr/assets/oraxen_folder.cjdfbYhQ.png)"
+  },
+  {
+    "id": 1760,
+    "source": "If you see a file named `mmoinventory-hook.yml` located in the `Oraxen/items/` folder, do **NOT** touch it! It's generated automatically by MMOInventory and handles all the Oraxen compatibility stuff by registering the items in your resource pack.",
+    "zh": "如果你在`Oraxen/items/`文件夹中看到名为`mmoinventory-hook.yml`的文件，请**不要**触摸它！它由MMOInventory自动生成，并通过在资源包中注册物品来处理所有Oraxen兼容性内容。"
+  },
+  {
+    "id": 1761,
+    "source": "Using Oraxen you can also setup glyphs which let you add a custom texture to your inventory. To use a glyph, remember you can use the PAPI placeholder `%oraxen_<glyph_id>%`. Also make sure you remove the filler item config section from the `items.yml` config section when using a custom GUI texture.",
+    "zh": "使用Oraxen你还可以设置字形，让你向物品栏添加自定义纹理。要使用字形，请记住你可以使用 PAPI占位符`%oraxen_<glyph_id>%`。使用自定义GUI纹理时，还要确保从`items.yml`配置部分中删除填充物品配置部分。"
+  },
+  {
+    "id": 1762,
+    "source": "![oraxen_inv](https://docs.phoenixdevt.fr/assets/oraxen_inv.DV4VHorx.png)",
+    "zh": "![oraxen_inv](https://docs.phoenixdevt.fr/assets/oraxen_inv.DV4VHorx.png)"
+  },
+  {
+    "id": 1763,
+    "source": "It's super easy to use Oraxen glyphs inside the inventory name. Head to the `language.yml` config file:",
+    "zh": "在物品栏名称中使用Oraxen字形非常容易。前往`language.yml`配置文件："
+  },
+  {
+    "id": 1764,
+    "source": "If you have never heard about custom emojis/GUI textures/icons before but are hyped by the previous screenshot, you should definitely learn more about it. Oraxen basically automates the use of custom item/GUI/emoji textures.",
+    "zh": "如果你以前从未听说过自定义表情符号/GUI纹理/图标，但对之前的屏幕截图感到兴奋，那么你绝对应该了解更多相关信息。Oraxen基本上自动使用自定义物品/GUI/emoji 纹理。"
+  },
+  {
+    "id": 1765,
+    "source": "MMOInventory features native support for other item plugins. It can detect specific item from other plugins like *LoreAttributesRecoded*, *Oraxen* or *Nexo*, but **only using the item lore** by detecting specific patterns inside of it. For instance, if your Sword items all have `&cSword` in their item lore, MMOInventory is able to detect it and consequently apply slot restrictions to these items.",
+    "zh": "MMOInventory具有对其他物品插件的本机支持。它可以从其他插件（如 *LoreAttributesRecoded*、*Oraxen* 或 *Nexo*）检测特定的物品，但**仅通过检测其中的特定模式来使用物品描述**。例如，如果你的 Sword物品的物品描述中都有`&cSword`，则MMOInventory能够检测到它，从而对这些物品应用插槽限制。"
+  },
+  {
+    "id": 1766,
+    "source": "This has the effect of creating \"fictive item types\", these are not real item types like with MMOItems but are still categories of items which share one property (that specific lore pattern).",
+    "zh": "这具有创建“虚构的物品类型”的效果，这些类型不是像MMOItems那样的真实物品类型，但仍然是共享一个属性（特定的描述模式）的物品类别。"
+  },
+  {
+    "id": 1767,
+    "source": "`loretag{tag=\"&cRing\"}` will only accept items which have a lore line that exactly matches `&cRing`. Basic color codes are fully supported by this slot restriction. `loretag{tag=\"&cSword\";check=EQUALS}` will have the very same behaviour. The following item matches the slot restriction, as it has a lore line that exactly matches `&cRing`.",
+    "zh": "`loretag{tag=\"&cRing\"}`将仅接受物品，其描述行与`&cRing`完全匹配。此插槽限制完全支持基本颜色代码。`loretag{tag=\"&cSword\";check=EQUALS}`将具有完全相同的行为。以下物品匹配槽限制，因为它有一个描述行与`&cRing`完全匹配。"
+  },
+  {
+    "id": 1768,
+    "source": "![image](https://docs.phoenixdevt.fr/assets/item1.D7tECfWH.png)",
+    "zh": "![图片](https://docs.phoenixdevt.fr/assets/item1.D7tECfWH.png)"
+  },
+  {
+    "id": 1769,
+    "source": "`loretag{tag=\"&cRing\";check=CONTAINS}` will accept items which have a lore line that contains `&cRing`. The following item matches the slot restriction, even if the line where `&cRing` appears also contains other text.",
+    "zh": "`loretag{tag=\"&cRing\";check=CONTAINS}`将接受物品，其描述行包含`&cRing`。以下物品匹配插槽限制，即使`&cRing`出现的行还包含其他文本。"
+  },
+  {
+    "id": 1770,
+    "source": "![image](https://docs.phoenixdevt.fr/assets/item2.CyapwR1H.png)",
+    "zh": "![图片](https://docs.phoenixdevt.fr/assets/item2.CyapwR1H.png)"
+  },
+  {
+    "id": 1771,
+    "source": "Other possible checks are `STARTS_WITH` and `ENDS_WITH` which check if any of the item lore lines starts/ends with the given string.",
+    "zh": "其他可能的检查是`STARTS_WITH`和`ENDS_WITH`，它们检查物品描述行中是否有任何以给定字符串开头/结尾。"
+  },
+  {
+    "id": 1772,
+    "source": "🧙‍♂️ RPG Plugins",
+    "zh": "🧙‍♂️RPG插件"
+  },
+  {
+    "id": 1773,
+    "source": "MMOInventory hooks onto classes and levels provided by RPG plugins for slot restrictions. See the full list of plugins supported by MMOInventory on [this wiki page](https://docs.phoenixdevt.fr/mythiclib/features/compatibility#rpg-plugins).",
+    "zh": "MMOInventory挂钩到RPG插件提供的职业和等级以进行插槽限制。请在 [此 wiki 页面](https://docs.phoenixdevt.fr/mythiclib/features/compatibility#rpg-plugins)上查看MMOInventory支持的插件的完整列表。"
+  },
+  {
+    "id": 1774,
+    "source": "🤔 FAQ",
+    "zh": "🤔 常见问题解答"
+  },
+  {
+    "id": 1775,
+    "source": "More frequent bugs and issues are documented on **[this MythicLib wiki page](https://docs.phoenixdevt.fr/mythiclib/faq)**, please consider checking it as well.",
+    "zh": "**[此MythicLibwiki 页面](https://docs.phoenixdevt.fr/mythiclib/faq)** 上记录了更常见的错误和问题，也请考虑检查它。"
+  },
+  {
+    "id": 1776,
+    "source": "Is there an installation guide",
+    "zh": "有安装指南吗"
+  },
+  {
+    "id": 1777,
+    "source": "An installation guide is available [here](https://docs.phoenixdevt.fr/mmoinventory/install).",
+    "zh": "提供了安装指南 [此处](https://docs.phoenixdevt.fr/mmoinventory/install)。"
+  },
+  {
+    "id": 1778,
+    "source": "Is MySQL supported?",
+    "zh": "支持MySQL吗？"
+  },
+  {
+    "id": 1779,
+    "source": "Yes, you can enable MySQL in the main plugin config file. Look for the following lines:",
+    "zh": "是的，你可以在主插件配置文件中启用MySQL。查找以下几行："
+  },
+  {
+    "id": 1780,
+    "source": "How do I make it open when I press E?",
+    "zh": "怎样才能在按E键时打开它？"
+  },
+  {
+    "id": 1781,
+    "source": "You can do this using [MythicKeys](https://www.spigotmc.org/resources/mythickeysplugin-custom-keybinds-api.98893/) which requires a client mod. You cannot do this without a client mod as there are **NO** ways (in vanilla Spigot) of checking if a player has his crafting inventory open, as it is all client side. A client mod allows you to send the right packets for the server to detect when a player opens his inventory.",
+    "zh": "你可以使用 [MythicKeys](https://www.spigotmc.org/resources/mythickeysplugin-custom-keybinds-api.98893/)来完成此操作，这需要客户端 mod。如果没有客户端模组，你就无法做到这一点，因为没有**方法（在原版Spigot中）检查玩家是否打开了他的制作物品栏，因为它都是客户端。客户端 mod 允许你发送正确的数据包，以便服务器检测玩家何时打开他的物品栏。"
+  },
+  {
+    "id": 1782,
+    "source": "This used to be possible under Spigot 1.12 using advancement packets but these were removed in non legacy builds.",
+    "zh": "这曾经可以在Spigot1.12下使用高级数据包实现，但这些在非传统版本中已被删除。"
+  },
+  {
+    "id": 1783,
+    "source": "What you can do is use another plugin to make the 2x2 crafting grid perform the `/mmoinventory` command when clicked which can be a nice vanilla alternative. Some other alternative is using an item you'd place in some static slot of your inventory that opens the inventory when right clicked (there's an option to do that in the main config file).",
+    "zh": "你可以做的是使用另一个插件，使 2x2 制作网格在单击时执行`/mmoinventory`命令，这可能是一个不错的原版替代方案。其他一些替代方法是使用物品，你可以将其放置在物品栏的某个静态插槽中，右键单击时打开物品栏（主配置文件中有一个选项可以执行此操作）。"
+  },
+  {
+    "id": 1784,
+    "source": "Does MMOInventory have auto-elytra equip?",
+    "zh": "MMOInventory有auto-elytra装备吗？"
+  },
+  {
+    "id": 1785,
+    "source": "In recent dev builds, yes!",
+    "zh": "在最近的开发版本中，是的！"
+  },
+  {
+    "id": 1786,
+    "source": "Does MMOInventory auto use totems?",
+    "zh": "MMOInventory自动使用图腾吗？"
+  },
+  {
+    "id": 1787,
+    "source": "No.",
+    "zh": "不。"
+  },
+  {
+    "id": 1788,
+    "source": "MMOItems placed in their respective slots don't apply their stats.",
+    "zh": "放置在各自插槽中的MMOItems不应用其属性。"
+  },
+  {
+    "id": 1789,
+    "source": "Make sure the corresponding item type from `MMOItems/item-types.yml` has its subtype/parent set to `ACCESSORY`, which is **mandatory** to have MMOItems register stats from items placed in the custom inventory GUI. If you try equipping a catalyst item in a catalyst slot, you'll succeed but won't get ANY stat because catalysts don't apply their stats when equipping in custom inventory slots! This is a limitation with how MMOItems is made.",
+    "zh": "确保`MMOItems/item-types.yml`中相应的物品类型的子类型/父类型设置为`ACCESSORY`，这是**强制**让MMOItems注册物品中的属性放置在自定义物品栏GUI中。如果你尝试在催化剂插槽中装备催化剂物品，你会成功，但不会获得任何属性，因为在自定义物品栏插槽中装备催化剂时不会应用其属性！这是MMOItems制作方式的限制。"
+  },
+  {
+    "id": 1790,
+    "source": "Similarly items with non met level restrictions can be equipped but won't apply their stats (unless you are using the `milevel{}` slot restriction).",
+    "zh": "同样，可以装备未满足等级限制的物品，但不会应用其属性（除非你使用`milevel{}`插槽限制）。"
+  },
+  {
+    "id": 1791,
+    "source": "Is there a backpack slot, or a mount slot?",
+    "zh": "有背包槽或安装槽吗？"
+  },
+  {
+    "id": 1792,
+    "source": "Is there a weapon slot?",
+    "zh": "有武器插槽吗？"
+  },
+  {
+    "id": 1793,
+    "source": "No, because this feature gets glitchy really fast with other plugins like MMOItems. It used to be a thing in old inventory plugins such as RPGInventory but we decided not to implement it.",
+    "zh": "不，因为这个功能与其他插件（如MMOItems）一起出现问题的速度非常快。它曾经是旧的物品栏插件（例如 RPGInventory）中的一个东西，但我们决定不实现它。"
+  },
+  {
+    "id": 1794,
+    "source": "My GUI looks weird",
+    "zh": "我的GUI看起来很奇怪"
+  },
+  {
+    "id": 1795,
+    "source": "This issue is no longer relevant as of 1.21.8 as the *scale* parameter can no longer be used to cover up the vanilla inventory grid pattern. Please refer to [this wiki page](https://docs.phoenixdevt.fr/mmoinventory/features/custom-inventory-texture) for more details.",
+    "zh": "从1.21.8开始，此问题不再相关，因为 *scale* 参数不能再用于掩盖原版物品栏网格图案。请参阅[此维基页面](https://docs.phoenixdevt.fr/mmoinventory/features/custom-inventory-texture)了解更多详细信息。"
+  },
+  {
+    "id": 1796,
+    "source": "![](data:image/png;base64,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)",
+    "zh": "![](data:image/png;base64,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)"
+  },
+  {
+    "id": 1797,
+    "source": "As explained on the main plugin resource page, the default MMOInventory resource pack uses custom textured diamond hoes to display gray filler items to fill in the Minecraft default inventory grid pattern. In order to hide that grid pattern you have to resize your items to approximately 110% but the required percentage can vary sometimes. Edit your resource pack and find the corresponding model which is (by default) located in `/assets/minecraft/models/item/slots/fill.json`.",
+    "zh": "正如主插件资源页面上所解释的，默认的MMOInventory资源包使用自定义纹理钻石锄头来显示灰色填充物物品，以填充Minecraft默认的物品栏网格图案。为了隐藏该网格图案，你必须将物品的大小调整为大约110%，但所需的百分比有时可能会有所不同。编辑你的资源包并找到（默认情况下）位于`/assets/minecraft/models/item/slots/fill.json`的相应模型。"
+  },
+  {
+    "id": 1798,
+    "source": "Using the `scale` json section you can change it to something higher to hide that tiny 1-pixel-wide frame from the inventory grid pattern. Then tweak the `1.1` value so that the grid pattern fully hides. Be careful, if you set it too high the filler items will get past the item slot square.",
+    "zh": "使用`scale`json 部分，你可以将其更改为更高的值，以隐藏物品栏网格图案中的微小1-pixel-wide框架。然后调整`1.1`值，使网格图案完全隐藏。请小心，如果将其设置得太高，填充物物品将穿过物品方形插槽。"
+  },
+  {
+    "id": 1799,
+    "source": "Is it compatible with Oraxen, ItemsAdder, Nexo?",
+    "zh": "是否与Oraxen、ItemsAdder、Nexo兼容？"
+  },
+  {
+    "id": 1800,
+    "source": "**MMOInventory is fully compatible with Oraxen, ItemsAdder and Nexo.** MMOInventory features a few additional built-in compatibility features [with Oraxen](https://docs.phoenixdevt.fr/mmoinventory/compatibility/oraxen).",
+    "zh": "**MMOInventory与Oraxen、ItemsAdder和Nexo完全兼容。**MMOInventory具有一些额外的built-in兼容性功能 [与Oraxen](https://docs.phoenixdevt.fr/mmoinventory/compatibility/oraxen)。"
+  },
+  {
+    "id": 1801,
+    "source": "🎨 Inventory Textures",
+    "zh": "🎨物品栏纹理"
+  },
+  {
+    "id": 1802,
+    "source": "This page explains how to apply a custom texture to any player inventory in MMOInventory.",
+    "zh": "本页介绍如何将自定义纹理应用到MMOInventory中的任何玩家物品栏。"
+  },
+  {
+    "id": 1803,
+    "source": "The Problem",
+    "zh": "问题"
+  },
+  {
+    "id": 1804,
+    "source": "Below is a screenshot that shows a very barebones setup of a custom inventory. As you can see, the vanilla grid pattern is very ugly and we would like to hide it.",
+    "zh": "下面的屏幕截图显示了自定义物品栏的非常简单的设置。正如你所看到的，原版网格图案非常难看，我们想隐藏它。"
+  },
+  {
+    "id": 1805,
+    "source": "![](https://docs.phoenixdevt.fr/assets/vanilla_grid_pattern.D1rJFJwp.png)",
+    "zh": "![](https://docs.phoenixdevt.fr/assets/vanilla_grid_pattern.D1rJFJwp.png)"
+  },
+  {
+    "id": 1806,
+    "source": "Using custom fonts",
+    "zh": "使用自定义字体"
+  },
+  {
+    "id": 1807,
+    "source": "By default, MMOInventory now makes use of custom fonts to handle inventory textures. For this tutorial, we consider the inventory which config is stored in `MMOInventory/inventory/default_mmoinventory.yml`.",
+    "zh": "默认情况下，MMOInventory现在使用自定义字体来处理物品栏纹理。在本教程中，我们考虑物品栏，其配置存储在`MMOInventory/inventory/default_mmoinventory.yml`中。"
+  },
+  {
+    "id": 1808,
+    "source": "Note that there are two names, one for opening your own inventory, and another one when opening the inventory of another player. Also note that:",
+    "zh": "注意，有两个名称，一个用于打开自己的物品栏，另一个用于打开另一个玩家的物品栏。另请注意："
+  },
+  {
+    "id": 1809,
+    "source": "`\\u40E0` is a custom font character introduced by the default MMOInventory resource pack.",
+    "zh": "`\\u40E0`是默认MMOInventory资源包引入的自定义字体字符。"
+  },
+  {
+    "id": 1810,
+    "source": "`%mythiclib_space_-17%` is a placeholder introduced by MythicLib which inserts 17 negative spaces.",
+    "zh": "`%mythiclib_space_-17%`是由MythicLib引入的占位符，它插入了17负空格。"
+  },
+  {
+    "id": 1811,
+    "source": "`<#3F3F3F>` is the default Minecraft font color for inventory names (as of 1.21.8).",
+    "zh": "`<#3F3F3F>`是物品栏名称的默认Minecraft字体颜色（从1.21.8开始）。"
+  },
+  {
+    "id": 1812,
+    "source": "MMOInventory comes with **four ready-to-use inventory textures**. Choose the one you prefer the most! You'll find below a table with all built-in inventory textures.",
+    "zh": "MMOInventory配有**四个ready-to-use物品栏纹理**。选择你最喜欢的一个！你将在下面找到包含所有built-in物品栏纹理的表格。"
+  },
+  {
+    "id": 1813,
+    "source": "| Texture | Row Count | Code | Screenshot |",
+    "zh": "|纹理|行数|代码|截图|"
+  },
+  {
+    "id": 1818,
+    "source": "1.20.x and below",
+    "zh": "1.20.x 及以下版本"
+  },
+  {
+    "id": 1819,
+    "source": "In 1.20.x and below, there used to be a workaround using the *display.gui.scale* parameter of item models. When using a gray uniform texture as a \"filler\" texture, you could set the *scale* parameter to something like 1.1 (110% apparent texture size), which would cause the item texture to overflow and cover up the vanilla inventory grid pattern.",
+    "zh": "在1.20.x 及以下版本中，曾经有一种使用物品型号的 *display.gui.scale* 参数的解决方法。当使用灰色均匀纹理作为“填充”纹理时，你可以将*scale*参数设置为类似1.1（110%表观纹理大小）的值，这将导致物品纹理溢出并覆盖原版物品栏网格图案。"
+  },
+  {
+    "id": 1820,
+    "source": "<summary>Old Model File</summary>",
+    "zh": "<summary>旧型号文件</summary>"
+  },
+  {
+    "id": 1821,
+    "source": "For reference, this is the model file that was used for the filler texture. Note that the `item/fill` texture is a gray uniform texture with color code `#C6C6C6` (vanilla inventory background color, as of 1.21.8).",
+    "zh": "作为参考，这是用于填充纹理的模型文件。请注意，`item/fill`纹理是灰色均匀纹理，颜色代码为`#C6C6C6`（原版物品栏背景颜色，从1.21.8开始）。"
+  },
+  {
+    "id": 1822,
+    "source": "This no longer works in recent versions (1.21 and above). While the scale parameter still exists, the texture overflow mechanism was patched. In recent versions, we recommend using a custom font to completely override the vanilla inventory texture. Good news, this is super easy to do, and you can also use this to fully customize the appearance of your inventory GUI.",
+    "zh": "这在最近的版本（1.21及更高版本）中不再有效。虽然比例参数仍然存在，但纹理溢出机制已修补。在最近的版本中，我们建议使用自定义字体来完全覆盖原版物品栏纹理。好消息，这非常容易做到，你还可以使用它来完全自定义物品栏GUI的外观。"
+  },
+  {
+    "id": 1823,
+    "source": "🎒 Custom Inventories",
+    "zh": "🎒 定制物品栏"
+  },
+  {
+    "id": 1824,
+    "source": "MMOInventory allows you to create an unlimited number of custom inventories with specific item slots.",
+    "zh": "MMOInventory允许你使用特定的物品插槽创建无限数量的自定义物品栏。"
+  },
+  {
+    "id": 1825,
+    "source": "![](https://docs.phoenixdevt.fr/assets/hover_inventory.Ahd4wIGy.gif)",
+    "zh": "![](https://docs.phoenixdevt.fr/assets/hover_inventory.Ahd4wIGy.gif)"
+  },
+  {
+    "id": 1826,
+    "source": "Inside these inventories, players can drag and drop their items to the corresponding slots. If the item is a ring, it should be placed inside one of the *Ring* slots. **Any item from MMOItems placed in a custom inventory will provide its stats to the player.**",
+    "zh": "在这些物品栏、玩家中可以将其物品拖放到相应的插槽中。如果物品是一个环，则应将其放置在*环*插槽之一内。 **来自MMOItems的任何物品放置在定制物品栏中都将向玩家提供其属性。**"
+  },
+  {
+    "id": 1827,
+    "source": "Notice how these custom inventories also have armor slots. These slots are directly connected to the player armor slots, so placing a new chestplate there for instance will instantly have the player equip that chestplate.",
+    "zh": "请注意这些定制物品栏也有护甲插槽。这些插槽直接连接到玩家护甲插槽，因此在那里放置一个新的胸甲将立即让玩家装备该胸甲。"
+  },
+  {
+    "id": 1828,
+    "source": "Basic Configuration",
+    "zh": "基本配置"
+  },
+  {
+    "id": 1829,
+    "source": "Every inventory has its own config file inside the `MMOInventory/inventory` folder. Below you will find the beginning of the config file of the default MMOInventory inventory.",
+    "zh": "每个物品栏在`MMOInventory/inventory`文件夹内都有自己的配置文件。下面你将找到默认MMOInventory物品栏的配置文件的开头。"
+  },
+  {
+    "id": 1830,
+    "source": "You can easily enable/disable custom inventories by toggling on or off the `enabled` parameter in this config file. The `id` is a small piece of text used by MMOInventory to save player data, so you need to choose one and never change it again.",
+    "zh": "你可以通过打开或关闭此配置文件中的`enabled`参数来轻松启用/禁用自定义物品栏。`id`是MMOInventory用来保存玩家数据的一小段文本，因此你需要选择一个并且不再更改它。"
+  },
+  {
+    "id": 1831,
+    "source": "`drop_on_death` defines if items from inside this custom inventory should drop when the player dies.",
+    "zh": "`drop_on_death`定义当玩家死亡时，此自定义物品栏内部的物品是否应该掉落。"
+  },
+  {
+    "id": 1832,
+    "source": "`type` must be set to either `vanilla` or `custom`. Leave it to `custom` for now. If you'd like to learn how to use the vanilla player's inventory as a MMOInventory inventory, please refer to [this wiki page](https://docs.phoenixdevt.fr/mmoinventory/features/vanilla-inventory).",
+    "zh": "`type`必须设置为`vanilla`或`custom`。暂时留给`custom`。如果你想了解如何将原版玩家的物品栏用作MMOInventory物品栏，请参阅[此 wiki 页面](https://docs.phoenixdevt.fr/mmoinventory/features/vanilla-inventory)。"
+  },
+  {
+    "id": 1833,
+    "source": "Open Command",
+    "zh": "打开命令"
+  },
+  {
+    "id": 1834,
+    "source": "For every custom inventory, you can define a command that players can use to open this inventory. You can edit the command name, permission and aliases. You can also translate the messages sent to the player in case of any error when performing the command.",
+    "zh": "对于每个自定义物品栏，你可以定义玩家可用于打开此物品栏的命令。你可以编辑命令名称、权限和别名。如果执行命令时出现任何错误，你还可以翻译发送到玩家的消息。"
+  },
+  {
+    "id": 1835,
+    "source": "Set `enabled` to `false` to disable this feature.",
+    "zh": "将`enabled`设置为`false`以禁用此功能。"
+  },
+  {
+    "id": 1836,
+    "source": "Make sure you **restart** (or reload) your server when editing these, as a plugin reload using `/mmoprofiles reload` is usually not sufficient and you might experience ghost commands (once registered, it is very hard to unregister commands from the Bukkit command registry).",
+    "zh": "确保在编辑这些命令时**重新启动**（或重新加载）服务器，因为使用`/mmoprofiles reload`重新加载插件通常是不够的，并且你可能会遇到幽灵命令（一旦注册，就很难从Bukkit命令注册表中取消注册命令）。"
+  },
+  {
+    "id": 1837,
+    "source": "Inventory Button",
+    "zh": "物品栏按钮"
+  },
+  {
+    "id": 1838,
+    "source": "You may also place a permanent button/icon in your players' inventories which can be clicked to open the inventory. You may edit the slot of this button, its material, etc.",
+    "zh": "你还可以在玩家'物品栏中放置一个永久按钮/图标，单击该按钮/图标可以打开物品栏。你可以编辑该按钮的槽位、材质等。"
+  },
+  {
+    "id": 1839,
+    "source": "Inventory Slots",
+    "zh": "物品栏插槽"
+  },
+  {
+    "id": 1840,
+    "source": "This is where you get to define what slots the players will interact with: ring slots, amulet slots, armor slots, etc.... Note that there are no limitations for slot types, as you can always create one specific slot for a MMOItems item type, and you can create as many custom MMOItems item types as you like.",
+    "zh": "你可以在此处定义玩家将与哪些插槽交互：戒指插槽、护身符插槽、护甲插槽等...请注意，插槽类型没有限制，因为你始终可以为MMOItems物品类型创建一个特定插槽，并且可以创建任意数量的自定义MMOItems物品类型如你所愿。"
+  },
+  {
+    "id": 1841,
+    "source": "<summary>Some examples</summary>",
+    "zh": "<summary>一些示例</summary>"
+  },
+  {
+    "id": 1842,
+    "source": "There are various types of slots available for use.",
+    "zh": "有多种类型的插槽可供使用。"
+  },
+  {
+    "id": 1843,
+    "source": "| Slot Type | Description |",
+    "zh": "|插槽类型 |描述 |"
+  },
+  {
+    "id": 1844,
+    "source": "| `helmet` | Vanilla helmet armor slot |",
+    "zh": "|`helmet`|原版头盔护甲插槽 |"
+  },
+  {
+    "id": 1845,
+    "source": "| `chestplate` | Vanilla chestplate armor slot |",
+    "zh": "|`chestplate`|原版胸甲护甲插槽 |"
+  },
+  {
+    "id": 1846,
+    "source": "| `leggings` | Vanilla leggings armor slot |",
+    "zh": "|`leggings`|原版打底裤护甲槽 |"
+  },
+  {
+    "id": 1847,
+    "source": "| `boots` | Vanilla boots armor slot |",
+    "zh": "|`boots`|原版靴子护甲插槽 |"
+  },
+  {
+    "id": 1848,
+    "source": "| `off_hand` | Vanilla off/left hand slot |",
+    "zh": "|`off_hand`|原版关闭/左手插槽 |"
+  },
+  {
+    "id": 1849,
+    "source": "| `accessory` | **Any custom slot uses this** |",
+    "zh": "|`accessory`| **任何自定义插槽都使用此** |"
+  },
+  {
+    "id": 1850,
+    "source": "| `elytra` | Elytra slot. Learn more on [this wiki page](https://docs.phoenixdevt.fr/mmoinventory/features/elytra-slot) |",
+    "zh": "|`elytra`|鞘翅槽。了解更多信息 [此 wiki 页面](https://docs.phoenixdevt.fr/mmoinventory/features/elytra-slot)|"
+  },
+  {
+    "id": 1851,
+    "source": "| `fill` | Filler items |",
+    "zh": "|`fill`|填料物品|"
+  },
+  {
+    "id": 1852,
+    "source": "By \"custom\" slots we mean slots introduced by MMOInventory that have no correspondence with any vanilla player inventory slot. Rings, amulets, artifacts.... are all custom slots and therefore should use the `accessory` slot type.",
+    "zh": "“自定义”插槽是指MMOInventory引入的插槽，与任何原版玩家物品栏插槽没有对应关系。戒指、护身符、神器......都是自定义插槽，因此应使用`accessory`插槽类型。"
+  },
+  {
+    "id": 1853,
+    "source": "Slot Restrictions",
+    "zh": "时段限制"
+  },
+  {
+    "id": 1854,
+    "source": "Slot restrictions are conditions you can add to any custom slot, which players must meet in order to place an item on a specific slot.",
+    "zh": "插槽限制是你可以添加到任何自定义插槽的条件，玩家必须满足这些条件才能将物品放置在特定插槽上。"
+  },
+  {
+    "id": 1855,
+    "source": "| Restriction | Usage |",
+    "zh": "|限制|用途 |"
+  },
+  {
+    "id": 1856,
+    "source": "| `milevel{}` | When used, players can't place an item which they can't use in a custom slot (MMOItems) |",
+    "zh": "|`milevel{}`|使用时，玩家无法放置无法在自定义插槽 (MMOItems) 中使用的物品|"
+  },
+  {
+    "id": 1857,
+    "source": "| `mitype{type=RING}` | Restrain a slot to a specific MMOItems item type |",
+    "zh": "|`mitype{type=RING}`|将插槽限制为特定的MMOItems物品类型 |"
+  },
+  {
+    "id": 1858,
+    "source": "| `unique` | Cannot put twice the same MMOItem in two different slots |",
+    "zh": "|`unique`|无法将两次相同的 MMOItem 放入两个不同的插槽中 |"
+  },
+  {
+    "id": 1859,
+    "source": "| `class{name=\"Warrior,Mage,...\"}` | Restrain a slot to a certain class |",
+    "zh": "|`class{name=\"Warrior,Mage,...\"}`|将插槽限制为某个职业|"
+  },
+  {
+    "id": 1860,
+    "source": "| `level{min=10}` | Low level players cannot use this slot |",
+    "zh": "|`level{min=10}`|低等级玩家不能使用此插槽|"
+  },
+  {
+    "id": 1861,
+    "source": "| `perm{perm=some.perm.node}` | Players cannot use this slot unless they have one permission |",
+    "zh": "|`perm{perm=some.perm.node}`|玩家不能使用此插槽，除非他们有一个权限|"
+  },
+  {
+    "id": 1862,
+    "source": "A list of all the RPG plugins supported by the class and level slot restrictions above is available on [this wiki page](https://docs.phoenixdevt.fr/mmoinventory/compatibility/rpg).",
+    "zh": "上述职业和等级插槽限制支持的所有RPG插件的列表可在 [此 wiki 页面](https://docs.phoenixdevt.fr/mmoinventory/compatibility/rpg)上找到。"
+  },
+  {
+    "id": 1863,
+    "source": "The most important slot restriction is `mitype`, as it is the one you should use to restrict a slot to a certain MMOItems item type. In order to create a *Ring* slot, you can simply use the `mitype` slot restriction with `type` parameter set to `RING` (`RING` is the ID of the default Ring MMOItems item type).",
+    "zh": "最重要的插槽限制是`mitype`，因为你应该使用它来将插槽限制为某种MMOItems物品类型。为了创建*Ring*插槽，你可以简单地使用`mitype`插槽限制，并将`type`参数设置为`RING`（`RING`是默认RingMMOItems物品类型的ID）。"
+  },
+  {
+    "id": 1864,
+    "source": "Inventory Items",
+    "zh": "物品栏物品"
+  },
+  {
+    "id": 1865,
+    "source": "This new feature allows you to add items which execute [MythicLib scripts](https://docs.phoenixdevt.fr/mythiclib/scripts/intro) when clicked. These items do not correspond to any slot, players can't drag and drop any item onto them.",
+    "zh": "这项新功能允许你添加物品，单击时执行 [MythicLib脚本](https://docs.phoenixdevt.fr/mythiclib/scripts/intro)。这些物品不对应于任何插槽，玩家不能将任何物品拖放到它们上面。"
+  },
+  {
+    "id": 1866,
+    "source": "Player Info Item",
+    "zh": "玩家信息物品"
+  },
+  {
+    "id": 1867,
+    "source": "The following syntax snippet can be used to create an item which displays basic player information. When clicked, it opens up the MMOCore player information page through `/p`.",
+    "zh": "以下语法片段可用于创建显示基本玩家信息的物品。点击后，通过`/p`打开MMOCore玩家信息页面。"
+  },
+  {
+    "id": 1868,
+    "source": "Close Inventory",
+    "zh": "关闭物品栏"
+  },
+  {
+    "id": 1869,
+    "source": "The following config snippet can be used to create an item which closes the inventory when clicked.",
+    "zh": "以下配置片段可用于创建物品，单击时会关闭物品栏。"
+  },
+  {
+    "id": 1870,
+    "source": "🪽 Elytra Slot",
+    "zh": "🪽 鞘翅槽"
+  },
+  {
+    "id": 1871,
+    "source": "This is a special type of slot. Players can only equip elytras inside such slots. When elytras are equipped in this slot, players gain the ability to switch to elytras when falling from high enough.",
+    "zh": "这是一种特殊类型的老虎机。玩家只能在此类插槽内装备鞘翅。当此插槽配备鞘翅时，玩家从足够高的地方掉落时能够切换到鞘翅。"
+  },
+  {
+    "id": 1872,
+    "source": "Equip an Elytra in one of these slots. If the player is falling for more than 4 blocks, and if they do not have the *Slow Falling* potion effect, elytras will automatically be equipped to the player's chestplate slot. The player can then use their elytra for the remainder of the flight. When the player finally touches the ground, elytras are placed back in the custom inventory and the previous chestplate item is restored.",
+    "zh": "在这些插槽之一中装备鞘翅。如果玩家的坠落时间超过4格，并且它们没有“缓慢坠落”药水效果，则鞘翅将自动装备到玩家的胸甲槽位。然后，玩家可以在剩余的飞行中使用鞘翅。当玩家最终接触地面时，鞘翅被放回定制物品栏中，并且之前的胸甲物品被恢复。"
+  },
+  {
+    "id": 1873,
+    "source": "Slot Example",
+    "zh": "插槽示例"
+  },
+  {
+    "id": 1874,
+    "source": "You will find the following syntax snippet in the default `inventory/default_mmoinventory.yml` config file.",
+    "zh": "你将在默认的`inventory/default_mmoinventory.yml`配置文件中找到以下语法片段。"
+  },
+  {
+    "id": 1875,
+    "source": "How to disable",
+    "zh": "如何禁用"
+  },
+  {
+    "id": 1876,
+    "source": "Remove or uncomment any slot which uses the slot type `elytra` in all inventories.",
+    "zh": "删除或取消注释所有物品栏中使用插槽类型`elytra`的任何插槽。"
+  },
+  {
+    "id": 1877,
+    "source": "Main Config",
+    "zh": "主要配置"
+  },
+  {
+    "id": 1878,
+    "source": "Inside `config.yml`, you can change the minimum fall distance required to automatically equip elytras.",
+    "zh": "在`config.yml`中，你可以更改自动装备鞘翅所需的最小下落距离。"
+  },
+  {
+    "id": 1879,
+    "source": "🎒 Vanilla Inventory",
+    "zh": "🎒原版物品栏"
+  },
+  {
+    "id": 1880,
+    "source": "The player's vanilla inventory can be directly used to place accessory slots and buttons. This feature is fully compatible with the use of zero, one or more [custom inventories](https://docs.phoenixdevt.fr/mmoinventory/features/custom-inventory).",
+    "zh": "玩家的原版物品栏可以直接用来放置配件槽和按钮。此功能完全兼容使用零个、一个或多个[定制物品栏](https://docs.phoenixdevt.fr/mmoinventory/features/custom-inventory)。"
+  },
+  {
+    "id": 1881,
+    "source": "![](https://docs.phoenixdevt.fr/assets/vanilla_inventory.COYiXQnH.png)",
+    "zh": "![](https://docs.phoenixdevt.fr/assets/vanilla_inventory.COYiXQnH.png)"
+  },
+  {
+    "id": 1882,
+    "source": "Toggle off the `enabled` option, or remove the `vanilla_inventory.yml` config file altogether to disable the use of the player's vanilla inventory. It is disabled by default so you don't actually need to do anything if you don't plan on using it.",
+    "zh": "关闭`enabled`选项，或完全删除`vanilla_inventory.yml`配置文件以禁用玩家的原版物品栏。默认情况下它是禁用的，因此如果你不打算使用它，实际上不需要执行任何操作。"
+  },
+  {
+    "id": 1883,
+    "source": "> Make sure you set the `type` option to `vanilla`. Also make sure that you only have one inventory config with the `type` option set to `vanilla`.",
+    "zh": "> 确保将`type`选项设置为`vanilla`。另请确保你只有一个物品栏配置，并将`type`选项设置为`vanilla`。"
+  },
+  {
+    "id": 1884,
+    "source": "Item Slots",
+    "zh": "物品插槽"
+  },
+  {
+    "id": 1885,
+    "source": "Any slot that you configure in the `slots` config section file will appear in the vanilla player's inventory. It works just like with the inventory GUI: players can drag & drop items onto custom slots to equip items. Slot items appear on player login, so make sure you restart your server after editing the slots configuration.",
+    "zh": "你在`slots`配置节文件中配置的任何插槽都将出现在原版玩家的物品栏中。它的工作原理与物品栏GUI相同：玩家可以将物品拖放到自定义插槽上以装备物品。插槽物品出现在玩家登录时，因此请确保在编辑插槽配置后重新启动服务器。"
+  },
+  {
+    "id": 1886,
+    "source": "> Note that you cannot use vanilla slot types such as `helmet` or `off_hand` in the vanilla inventory, as they are already there.",
+    "zh": "> 请注意，你不能在原版物品栏中使用原版插槽类型，例如`helmet`或`off_hand`，因为它们已经存在。"
+  },
+  {
+    "id": 1887,
+    "source": "If a player connects and they already happen to have items placed in their vanilla inventory and MMOInventory tries to put a slot item there, it will first try to move the item somewhere else. The player's items will not be lost.",
+    "zh": "如果玩家连接并且它们已经碰巧将物品放置在原版物品栏中，并且MMOInventory尝试将插槽物品放在那里，它会首先尝试将物品移动到其他地方。玩家的物品不会丢失。"
+  },
+  {
+    "id": 1888,
+    "source": "| Command | Description |",
+    "zh": "|命令 |描述 |"
+  },
+  {
+    "id": 1889,
+    "source": "| `/mmoinv reload` | Reload the plugin |",
+    "zh": "|`/mmoinv reload`|重新加载插件 |"
+  },
+  {
+    "id": 1890,
+    "source": "| `/mmoinv export-data` | Export player data from YAML flat storage to SQL database |",
+    "zh": "|`/mmoinv export-data`|将玩家数据从YAML平面存储导出到SQL数据库 |"
+  },
+  {
+    "id": 1891,
+    "source": "| `/mmoinv open <inventory> <owner>` | Open a custom inventory to a player |",
+    "zh": "|`/mmoinv open <inventory> <owner>`|打开自定义物品栏到玩家|"
+  },
+  {
+    "id": 1892,
+    "source": "| `/mmoinv open <inventory> <owner> <player> <can_edit>` | Open `owner`'s custom inventory to player `player`. `can_edit` can be set to `true` (permission to equip/unequip items) or `false` (cannot equip/unequip items) |",
+    "zh": "|`/mmoinv open <inventory> <owner> <player> <can_edit>`|打开`owner`的自定义物品栏到玩家`player`。`can_edit`可以设置为`true`（权限可以装备/取消装备物品）或`false`（不能装备/取消装备物品）|"
+  },
+  {
+    "id": 1893,
+    "source": "| `/mmoinv inspect <inventory> <owner>` | Inspect a player's custom inventory |",
+    "zh": "|`/mmoinv inspect <inventory> <owner>`|检查玩家的定制物品栏|"
+  },
+  {
+    "id": 1894,
+    "source": "The following command aliases also work: `/mmoinv`, `/rpginv`, `/rpginventory`.",
+    "zh": "以下命令别名也有效：`/mmoinv`、`/rpginv`、`/rpginventory`。"
+  },
+  {
+    "id": 1895,
+    "source": "🗒️ Default Configuration",
+    "zh": "🗒️默认配置"
+  },
+  {
+    "id": 1896,
+    "source": "| `mmoinventory.admin` | Access to all admin commands | OP |",
+    "zh": "|`mmoinventory.admin`|访问所有管理命令 | OP |"
+  },
+  {
+    "id": 1897,
+    "source": "None! 😎",
+    "zh": "没有任何！ 😎"
+  },
+  {
+    "id": 1898,
+    "source": "![](https://docs.phoenixdevt.fr/assets/banner.yiJDCYXp.png)",
+    "zh": "![](https://docs.phoenixdevt.fr/assets/banner.yiJDCYXp.png)"
+  },
+  {
+    "id": 1899,
+    "source": "MMOInventory is a powerful plugin that allows server administrators to create and manage custom inventories for players, while being 100% compatible with the rest of the MMO suite.",
+    "zh": "MMOInventory 让服主能够为玩家创建和管理自定义物品栏，并与 MMO 系列的其他插件 100% 兼容。"
+  },
+  {
+    "id": 1900,
+    "source": "> Get MMOInventory on [Polymart](https://polymart.org/resource/mmoinventory.3414) or [SpigotMC](https://www.spigotmc.org/resources/mmoinventory.99445/)",
+    "zh": "> 在 [Polymart](https://polymart.org/resource/mmoinventory.3414)或 [SpigotMC](https://www.spigotmc.org/resources/mmoinventory.99445/)] 上获取MMOInventory"
+  },
+  {
+    "id": 1901,
+    "source": "Navigate to the next page when you are ready to install MMOInventory!",
+    "zh": "当你准备好安装MMOInventory时，导航到下一页！"
+  },
+  {
+    "id": 1902,
+    "source": "Download and install [MythicLib](https://www.spigotmc.org/resources/mmolib-mythiclib.90306/). It is the only hard dependency for MMOInventory.",
+    "zh": "下载并安装[MythicLib](https://www.spigotmc.org/resources/mmolib-mythiclib.90306/)。它是MMOInventory的唯一硬依赖项。"
+  },
+  {
+    "id": 1903,
+    "source": "Download and install the MMOInventory JAR file in the `/plugins` folder.",
+    "zh": "下载MMOInventoryJAR 文件并将其安装在`/plugins`文件夹中。"
+  },
+  {
+    "id": 1904,
+    "source": "We recommend reading [this wiki page](https://docs.phoenixdevt.fr/mmoinventory/compatibility/mmoitems) if you are running MMOItems on your server.",
+    "zh": "如果你在服务器上运行MMOItems，我们建议你阅读[此 wiki 页面](https://docs.phoenixdevt.fr/mmoinventory/compatibility/mmoitems)。"
+  },
+  {
+    "id": 1905,
+    "source": "Download the default MMOInventory server resource pack and install it (or merge it with your existing server pack).",
+    "zh": "下载默认的MMOInventory服务器资源包并安装它（或将其与现有服务器包合并）。"
+  },
+  {
+    "id": 1906,
+    "source": "Resource pack versions",
+    "zh": "资源包版本"
+  },
+  {
+    "id": 1907,
+    "source": "| Version | Link |",
+    "zh": "|版本 |链接 |"
+  },
+  {
+    "id": 1908,
+    "source": "| 1.14 to 1.21.2 | [Dropbox](https://www.dropbox.com/s/1lftxmzh0q4b5yu/mmoinv_rp_3.zip?dl=1) |",
+    "zh": "|1.14至1.21.2| [Dropbox](https://www.dropbox.com/s/1lftxmzh0q4b5yu/mmoinv_rp_3.zip?dl=1)|"
+  },
+  {
+    "id": 1909,
+    "source": "| 1.21.4+ | [Gitlab](https://gitlab.com/phoenix-dvpmt/mmoinventory-default-resource-pack) |",
+    "zh": "|1.21.4+ | [Gitlab](https://gitlab.com/phoenix-dvpmt/mmoinventory-default-resource-pack)|"
+  },
+  {
+    "id": 4654,
+    "source": "| Classic | 4 | `\\u40E0` | ![](https://docs.phoenixdevt.fr/assets/classic_inv_texture.BsztvsGt.png) |",
+    "zh": "| 经典（Classic） | 4 | `\\u40E0` | ![](https://docs.phoenixdevt.fr/assets/classic_inv_texture.BsztvsGt.png) |"
+  },
+  {
+    "id": 4655,
+    "source": "| Classic | 6 | `\\u40E1` | ![](https://docs.phoenixdevt.fr/assets/classic_6_inv_texture.D3O80WGb.png) |",
+    "zh": "| 经典（Classic） | 6 | `\\u40E1` | ![](https://docs.phoenixdevt.fr/assets/classic_6_inv_texture.D3O80WGb.png) |"
+  },
+  {
+    "id": 4656,
+    "source": "| Enhanced | 6 | `\\u40E2` | ![](https://docs.phoenixdevt.fr/assets/enhanced_inv_texture.BivGD2Bs.png) |",
+    "zh": "| 增强（Enhanced） | 6 | `\\u40E2` | ![](https://docs.phoenixdevt.fr/assets/enhanced_inv_texture.BivGD2Bs.png) |"
+  },
+  {
+    "id": 4657,
+    "source": "| Oraxen | 5 | `\\u40E3` | ![](https://docs.phoenixdevt.fr/assets/oraxen_inv_texture.BXPbFtRh.png) |",
+    "zh": "| Oraxen | 5 | `\\u40E3` | ![](https://docs.phoenixdevt.fr/assets/oraxen_inv_texture.BXPbFtRh.png) |"
+  }
+]

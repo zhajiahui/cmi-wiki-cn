@@ -1,12 +1,12 @@
 site_name: Minecraft 插件中文 Wiki
-site_description: CMI、Residence 与 Typewriter 中文文档：指令、权限、领地、对话、任务与过场动画。
+site_description: Minecraft 插件中文文档：CMI、Residence、Typewriter 与 Phoenix 系列。
 site_url: https://zhajiahui.github.io/cmi-wiki-cn/
 repo_url: https://github.com/zhajiahui/cmi-wiki-cn
 repo_name: zhajiahui/cmi-wiki-cn
 edit_uri: edit/main/
 use_directory_urls: true
 exclude_docs: ''
-copyright: CMI、Residence、Typewriter 原文与资源归原作者所有。
+copyright: CMI、Residence、Typewriter 与 Phoenix 系列原文与资源归原作者所有。
 dev_addr: 127.0.0.1:8000
 watch:
 - ../CMI/docs
@@ -15,6 +15,22 @@ watch:
 - ../CMI/mkdocs.yml
 - ../Residence/mkdocs.yml
 - ../Typewriter/mkdocs.yml
+- ../Phoenix/docs
+- ../Phoenix/mkdocs.yml
+- ../MMOItems/docs
+- ../MMOItems/mkdocs.yml
+- ../MMOCore/docs
+- ../MMOCore/mkdocs.yml
+- ../MMOInventory/docs
+- ../MMOInventory/mkdocs.yml
+- ../MMOProfiles/docs
+- ../MMOProfiles/mkdocs.yml
+- ../MythicLib/docs
+- ../MythicLib/mkdocs.yml
+- ../BountyHunters/docs
+- ../BountyHunters/mkdocs.yml
+- ../Contracts/docs
+- ../Contracts/mkdocs.yml
 theme:
   name: material
   language: zh
@@ -146,6 +162,8 @@ nav:
   - 开发者 API: api.md
 - Typewriter:
   - 前言: typewriter/index.md
+- Phoenix:
+  - 前言: phoenix/index.md
 extra:
   generator: false
 docs_dir: docs

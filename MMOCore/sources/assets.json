@@ -1,0 +1,322 @@
+[
+  {
+    "project": "MMOCore",
+    "url": "data:image/png;base64,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",
+    "file": "assets/dcdcc645d2c9-embedded.png",
+    "sha256": "69a006ac7311e8a0d0ddb52094b114835ff4e085be8f6205eaf817712db9e37c",
+    "bytes": 2185,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/attribuite_ui_2.K-5i_koz.png",
+    "file": "assets/6be20496a22e-attribuite_ui_2.K-5i_koz.png",
+    "sha256": "be25cefe56df97e2d11a86dc67b4183de21211b95f89acd2576e50b290c4f0af",
+    "bytes": 28779,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/attribute_ui.wIHIIgQM.gif",
+    "file": "assets/71291484bcec-attribute_ui.wIHIIgQM.gif",
+    "sha256": "5f69f57b85d70aef55d3059ebb16dd125a9fb48843db7cf833d83e88a461575f",
+    "bytes": 334054,
+    "content_type": "image/gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/banner.DGZx1d5z.png",
+    "file": "assets/3ab30c1d9edd-banner.DGZx1d5z.png",
+    "sha256": "a08acd8b0ec02a580ba108bce5f7f021962e5cf73e4602cec0f830ce5d7f95b3",
+    "bytes": 285516,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/bind_active.DOWAcMwn.gif",
+    "file": "assets/1b356e5560b8-bind_active.DOWAcMwn.gif",
+    "sha256": "638d62c7e485faca03d2917381636bb46388a5fb051e6b14be2a03bb756609bf",
+    "bytes": 864261,
+    "content_type": "image/gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/bind_passive.BimutQw8.gif",
+    "file": "assets/f6fa0fa82b33-bind_passive.BimutQw8.gif",
+    "sha256": "e7b3134533d4de898557b8d085b76bcb447ccb66adef9694d03af8c18da3e958",
+    "bytes": 820552,
+    "content_type": "image/gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/boost_new.D_QFWXoS.png",
+    "file": "assets/d53d4c55fb80-boost_new.D_QFWXoS.png",
+    "sha256": "0b9a1826ad483b8d1021cd296dba12bebf16e65fa17fe3a94b084e36ceb2e9e0",
+    "bytes": 5185,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/boost_ui.Bm71TL2L.png",
+    "file": "assets/04e3072e484b-boost_ui.Bm71TL2L.png",
+    "sha256": "3452aeae76e736d1b07854061d0221dfa14ba373f7b32235409674ee5d1f79dd",
+    "bytes": 24492,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/class_pts.DDGqB46e.png",
+    "file": "assets/efbc70013cfd-class_pts.DDGqB46e.png",
+    "sha256": "59332f3642689d13280379feab0cf3f307fb52882edf772da48e827c3d6184e1",
+    "bytes": 5478,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/class_select.BewFLyl3.gif",
+    "file": "assets/17f9ff2f0386-class_select.BewFLyl3.gif",
+    "sha256": "bed2963433e9511b034dc60f87f00ce814e6508c32ac006a0b041e629c0adfd4",
+    "bytes": 950245,
+    "content_type": "image/gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/combat_enter.DrFTWXNH.png",
+    "file": "assets/56d2264afb80-combat_enter.DrFTWXNH.png",
+    "sha256": "96604173914b85747c8ffaa6c29a442eeed5bbd72fd8f8235739db9f943255e5",
+    "bytes": 16782,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/combos.BYsPp-zr.png",
+    "file": "assets/dccb239f47c7-combos.BYsPp-zr.png",
+    "sha256": "2c9a8bf0a4d775d894c147c7230fa72a9def4e0c46fff9c6b3e8782dd903aa60",
+    "bytes": 21645,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/combos.D-UXtaQ4.gif",
+    "file": "assets/3398abd2ed63-combos.D-UXtaQ4.gif",
+    "sha256": "cf1f0d59941064478ee00ada09b052aa9f60defae1c89aebda8658032499247e",
+    "bytes": 5435948,
+    "content_type": "image/gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/curve_excel_0.R7O7bzFU.png",
+    "file": "assets/d339981bc50c-curve_excel_0.R7O7bzFU.png",
+    "sha256": "4f4baf601ec22e4e9666aeaf114da5b13e963b88cde411e1ef3dfb5baffec1ea",
+    "bytes": 12601,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/curve_excel_1.B-2NSFSC.png",
+    "file": "assets/28ee5bcdd942-curve_excel_1.B-2NSFSC.png",
+    "sha256": "ea7cda69a4c4eeee41c4da83554859d202d7b7ef9ee5236ea10a877bd5c32efa",
+    "bytes": 12292,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/custom_mining.B3iqu2mm.gif",
+    "file": "assets/4f65b5860ca3-custom_mining.B3iqu2mm.gif",
+    "sha256": "4d0ea16cab6f29663406094e1b6f2d4330b2c54febef832850556809659010a7",
+    "bytes": 4087688,
+    "content_type": "image/gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/deposit.CxVkBWvo.gif",
+    "file": "assets/4bbc9e8338ac-deposit.CxVkBWvo.gif",
+    "sha256": "6c350e9037c45b1413ccf38e14d17faf97ed8c81460197022d5ded71a5d34b68",
+    "bytes": 669780,
+    "content_type": "image/gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/exp_progress.BKg6SjB0.png",
+    "file": "assets/b195c1aca21b-exp_progress.BKg6SjB0.png",
+    "sha256": "5039cff4edeae1f8b561c401d352be4a918f23e15ce1c92f0e1423c41a47bbc4",
+    "bytes": 7197,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/friend_online.BLJ02EFr.png",
+    "file": "assets/13070c7dae5e-friend_online.BLJ02EFr.png",
+    "sha256": "edbd77778aa2cbef91d398c21e2da90de6f33168bd6d0a98e362db9b372513a9",
+    "bytes": 14640,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/friend_ui.Dr6xWEWe.gif",
+    "file": "assets/bd9824f82c9e-friend_ui.Dr6xWEWe.gif",
+    "sha256": "f468e5908002880655b0b0394a3f3b3860d49dcf6018ef8e8f658eb025de6845",
+    "bytes": 64987,
+    "content_type": "image/gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/gold_pouch.BYKMWIZW.gif",
+    "file": "assets/08bbfdc95afa-gold_pouch.BYKMWIZW.gif",
+    "sha256": "624b63fc4d2b4e439b50fdcb2889cf90b0bb213e8ffabbabbc66943b3260f860",
+    "bytes": 587437,
+    "content_type": "image/gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/item_level.BPUwfCvz.png",
+    "file": "assets/149c79ef66dd-item_level.BPUwfCvz.png",
+    "sha256": "0b44c2005c32ff59afc25e5ccc0d840d01c5e9cbe99ee6ce9724c351936cefa5",
+    "bytes": 19769,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/item_skill.CJXgT6sZ.png",
+    "file": "assets/0a9972a98f36-item_skill.CJXgT6sZ.png",
+    "sha256": "054c14a6b4b3fe451f0d696a05de4acc8630cd49217a471c09e2faa7ccbc368c",
+    "bytes": 28152,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/item_slot.DWnJakgS.png",
+    "file": "assets/772b9451c915-item_slot.DWnJakgS.png",
+    "sha256": "48fa01ef9a030fbb897588be6148e06bd2569f42f35af857ef3414e2b938af95",
+    "bytes": 15597,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/item_upgrade.CauTLTdJ.png",
+    "file": "assets/d237a5b17b72-item_upgrade.CauTLTdJ.png",
+    "sha256": "f1cb6f4e6079967671cf259c9a3a8aee6272e743dc4ed4d3c8ad741c1a378645",
+    "bytes": 9027,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/main_gui.DlPQMKdI.gif",
+    "file": "assets/eae7ccab6d60-main_gui.DlPQMKdI.gif",
+    "sha256": "266fb40a464b44714177d9d66dee4c93eb5be1233997fcbf55a0a4475c2e50e0",
+    "bytes": 1037783,
+    "content_type": "image/gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/oraxen_ui.DI-xskYP.gif",
+    "file": "assets/e4d2b3e993c3-oraxen_ui.DI-xskYP.gif",
+    "sha256": "f731e034357a037671ec70bc2903fa7730415b3ac64dee4f62389942b5f936f2",
+    "bytes": 470788,
+    "content_type": "image/gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/party_chat.GJ2XiZcZ.png",
+    "file": "assets/ddb476df0eed-party_chat.GJ2XiZcZ.png",
+    "sha256": "eda1412fa1aa2e6bf0d90e29425a04388fab1ec1bd315e74cdaaf6ac72132492",
+    "bytes": 5566,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/party_morale.BinBfJgm.png",
+    "file": "assets/37e5642df593-party_morale.BinBfJgm.png",
+    "sha256": "5e573560feb59d299831dcdbf6fe5db244d60133fad570fe1f52033f212a20a2",
+    "bytes": 29010,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/party_ui.HXPtgxen.png",
+    "file": "assets/fa2378eb27d9-party_ui.HXPtgxen.png",
+    "sha256": "5106ddadccbba795fbb3d036915de3fb04deb94faf8bed8dde8cffb719bc537a",
+    "bytes": 18234,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/quest_start.BRpjfvKv.png",
+    "file": "assets/054cfd23f4cd-quest_start.BRpjfvKv.png",
+    "sha256": "c824cd68652e7529643edad36b0a58dac5a7563fa4af2dc1d48f91d97e7c99af",
+    "bytes": 108180,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/quest_ui.Bl7Almx9.gif",
+    "file": "assets/1fb4449cebbe-quest_ui.Bl7Almx9.gif",
+    "sha256": "04177d4de80ed49cc8459fc91f7ecb8e6b3b82afbb0aa3635d6c4d20935156ff",
+    "bytes": 79817,
+    "content_type": "image/gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/skill_bar.BpGkdVfw.png",
+    "file": "assets/1778f91f45d0-skill_bar.BpGkdVfw.png",
+    "sha256": "5dacd65c5afa4af9f0df31b08c546662e002a94fefcffaabc7cf30b1ec3df16a",
+    "bytes": 36934,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/skill_tree_ui_grid.CJcoAizS.jpeg",
+    "file": "assets/fc6ce218cd06-skill_tree_ui_grid.CJcoAizS.jpeg",
+    "sha256": "51b0f8083692ffb27a3459a8917dc814a746eee69fbb82f3ac4611edb8d03c1d",
+    "bytes": 108719,
+    "content_type": "image/jpeg"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/skill_tree_ui_scheme.CBu188Oo.png",
+    "file": "assets/2a925822e26d-skill_tree_ui_scheme.CBu188Oo.png",
+    "sha256": "8bbbeaa0cfa3a3e1e662115a8c380d7640d01fa6e7f2c6744252e6d52f2f90fc",
+    "bytes": 350793,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/skill_ui_item.C1NBhUEq.png",
+    "file": "assets/7c86aa1cdc72-skill_ui_item.C1NBhUEq.png",
+    "sha256": "80602312d2faaaa560370c89cd9af3afc81d76debca778e63c2e7096342fa9c8",
+    "bytes": 25146,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/upgrade1.Cr3v1DRG.gif",
+    "file": "assets/a8c7a481c4e4-upgrade1.Cr3v1DRG.gif",
+    "sha256": "0d81b70b64e5f36a4bf6d449e1b6eec8bc8c6b401169bfba4e47a8ae7f26ab4a",
+    "bytes": 1125582,
+    "content_type": "image/gif"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/vanilla_exp.CW9qSvtl.png",
+    "file": "assets/f405dd8c2c99-vanilla_exp.CW9qSvtl.png",
+    "sha256": "c09847189c5bce26c4343fee47435413251e373d462c19d1646e7858619ae5d4",
+    "bytes": 12217,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/waypoint_0.C5QX9ILv.png",
+    "file": "assets/3a45b0307683-waypoint_0.C5QX9ILv.png",
+    "sha256": "a5c0b4e7d7c2e5b01b5f6a8597ee00a0c005313da06c4e57a4407f36cb32c303",
+    "bytes": 36531,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOCore",
+    "url": "https://docs.phoenixdevt.fr/assets/withdraw.DBBKbVhJ.gif",
+    "file": "assets/c3539b67a198-withdraw.DBBKbVhJ.gif",
+    "sha256": "17da45a55fdd4b5a4e9d13a4f8230be28cb882acda74fb48809fea4aed6f9ee7",
+    "bytes": 233002,
+    "content_type": "image/gif"
+  }
+]

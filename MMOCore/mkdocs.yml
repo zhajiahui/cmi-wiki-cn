@@ -1,0 +1,91 @@
+site_name: MMOCore 中文文档
+site_url: https://zhajiahui.github.io/cmi-wiki-cn/mmocore/
+theme:
+  name: material
+  language: zh
+  font: false
+plugins:
+- search:
+    lang:
+    - zh
+    - en
+markdown_extensions:
+- admonition
+- attr_list
+- md_in_html
+- tables
+- toc:
+    permalink: true
+- pymdownx.details
+- pymdownx.superfences
+nav:
+- 首页: index.md
+- 安装指南: install.md
+- 基本设置:
+  - 命令: general/commands.md
+  - 权限: general/permissions.md
+  - 占位符: general/placeholders.md
+  - 模块化: general/modularity.md
+- 功能:
+  - 职业: features/classes.md
+  - 基础属性: features/attributes.md
+  - 技能树: features/skill-trees.md
+  - 玩家属性: features/stats.md
+  - 传送点: features/waypoints.md
+  - 自定义挖矿: features/mining.md
+  - 战斗: features/combat.md
+  - 掉落表: features/drop-tables.md
+  - 战利品箱: features/loot-chests.md
+  - 任务: features/quests.md
+  - 队伍: features/parties.md
+  - 公会: features/guilds.md
+  - 好友: features/friends.md
+- 技能:
+  - 技能: skills/intro.md
+  - 配置: skills/config.md
+  - 解锁技能: skills/unlocking.md
+  - 绑定技能: skills/binding.md
+  - 施放技能: skills/casting.md
+- 副职业:
+  - 介绍: profession/intro.md
+  - 挖矿: profession/mining.md
+  - 炼金: profession/alchemy.md
+  - 钓鱼: profession/fishing.md
+  - 附魔: profession/enchanting.md
+  - 锻造: profession/smithing.md
+- 经验与等级:
+  - 经验加成: level/boosters.md
+  - 经验曲线: level/curves.md
+  - 经验表: level/tables.md
+  - 经验来源: level/sources.md
+- 其他功能:
+  - 工具限制: misc/tool-restrictions.md
+  - 条件: misc/conditions.md
+  - 原版经验: misc/vanilla-exp.md
+  - 玩家资源值: misc/resources.md
+  - 经济: misc/economy.md
+  - 方块类型: misc/block-types.md
+  - 触发器: misc/triggers.md
+- 兼容性:
+  - MMOItems: compatibility/mmoitems.md
+  - MythicMobs: compatibility/mythic.md
+  - 资源包插件: compatibility/rp-plugins.md
+  - 其他插件: compatibility/other-plugins.md
+- 开发接口:
+  - Maven: api/maven.md
+  - 插件 API: api/api.md
+- 分类目录:
+  - 开发接口: api.md
+  - 兼容性: compatibility.md
+  - 功能: features.md
+  - 基本设置: general.md
+  - 经验与等级: level.md
+  - 其他功能: misc.md
+  - 副职业: profession.md
+  - 技能: skills.md
+- 归档文档:
+  - 反作弊兼容: archive/mmocore-anticheats.md
+  - 迁移到 SQL（归档）: archive/mmocore-convert-to-sql.md
+  - 默认属性值（归档）: archive/mmocore-def-stat-values.md
+docs_dir: docs
+site_dir: .cache/site

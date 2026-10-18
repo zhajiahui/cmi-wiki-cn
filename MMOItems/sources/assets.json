@@ -1,0 +1,546 @@
+[
+  {
+    "project": "MMOItems",
+    "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP8AAAAKCAYAAAEMULj2AAAACXBIWXMAAAsSAAALEgHS3X78AAAAj0lEQVR42u3XMRJAMBRF0ZQ6pc4aFFZk/3v4aI3CRISMU9yW793/MpIiIh0ZuiFKc/aenfSLAZZ5amyAWlpqfuitAPYHtxDA2I9JAAJ4IICrtBJUK+dZjlALYAHeWYBtWOLKHudBPvnkk08++eST/7k//pKL5PaAD9/EqtzGlB9QfuUHlF/5AeVXfkD5c1gB2UD0vgDaxeEAAAAASUVORK5CYII=",
+    "file": "assets/a38a619eb652-embedded.png",
+    "sha256": "5cdb3a45c02525a9c638c3c9846c759549df6c9a12760912d07fd1b84d557593",
+    "bytes": 221,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP8AAAASCAYAAAHj1TgAAAAACXBIWXMAAAsSAAALEgHS3X78AAABgUlEQVR42u2bTUoDQRCFWyQoiASyyS6bbDQadeUpXLryD7c5hucQr+A9vINrbxDIbpwHtmTCiArV6eqZ78EHyYRAT7163TPpSQgtGu+PK2vCf5R9AH/RwWDvG3NZn/3DxTyvBbcnx/YWvD5eVcks2FZjZre6awVQVyQ5+evptCqhAMni0PsCaBbrdQGUrV4XIMXVg0g2aeVSKXNFKUu6+47e1P3ZKeYZoVoW1wClrBWlXNMW1wBVLQ1caDnIjcbx8fLUYKceptg87mnMQiqqASbDCck1RPXEfMzHfMzHfMzHfMzHfMzHfMzPrPX7Zg/3zCKOR8WMr1fvb437fq9jFgHZbKxEVNT198vnw7DVZwfQ70sIm0bgdQNO/clkQfiB8CPr8KvINBsQ/h6G/24+o9nAHepLwp84/DezI5oN3KG+JPyJwx9/ogfwhPqS8BN+IPzIWnEj3vsTGJ5YXJ631kzHpJ8+0/fazm20O+pUfayID4p0Ivx1X0DH+fp3ELWABp8g52NuMWWjuQAAAABJRU5ErkJggg==",
+    "file": "assets/321d44d7129e-embedded.png",
+    "sha256": "0d988c71255196c97238879478b739c21c681c0441ffaa496f7e0dafa300f8bf",
+    "bytes": 463,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP8AAAAUCAYAAAE1jNsdAAAACXBIWXMAAAsSAAALEgHS3X78AAAC6UlEQVR42u2b2W7TUBCGS67Y24JKs7pp0iQNCUmzNyGhG1URqgAJVQgJoQoQqKIEXoEH4RV4D96Ba56Bux+P6USnVhRKvMTLXHxyemyPT2fm9/EZH88BmJslYxuXLy/DbvzVgcCF4Ne3r7MNwXD3vvUQLF5aAEEGtXntv6Hzfv/8MfII8f340Gij31bsct8medqyA5wQht183us754CgcqGDKLWsSEC9GVDKU+qzDFga06S/WQKOOsAPEnDMAaStUDuAhpFQOyAI0H2G5czDJbfJIGATXrtX0iBBA47adtKuGkw6Rh24ZsU0z3QzTwC/jBVBfaadeQL4Zaz0A5Omr55NgNPtrgTPJj7t9PyXAH56GBRCOAOghz1JApuDT87kUozKtKWdaeASlVpuUquu4yqx3KbOXNzsM/fbjBvJaZshL4yVavB5mmee1pmnp7RfnQr6vZgT2uAHDQm+BF+CL8GX4EvwJfgSfE8F3wsvR4IE+VOKPILl+gvXPMQfgog/AIIeJ2YWurqOhZdeqL+ZMxu4iG1BxO8KZ8k6WgvN2y/7g9DCfohEIucWyZqhfaqvVF+qtv5lg64jfh+cyz/VlyJ+h+A3LzL3E7wG56WIX8QviPhF/HaLX1aIC15dbS/id1j88nWA4NUvLUT8DoufvmaQZBNE/CEUv3wWJngRzksRv0PQ6iY/ij92NYrktRi0G3GkbyaQXUgidyuFwm0NxaUVlO+kUYmuYiOWQSORRSu1ho6WQ3+1gN18CVvZ9dF2f72Eg2IZj0v3cFiu4EmlimfVKp7XNnBUr+FFs46XrQZedZp43W3huNfG234H7x908WGri5PtHk71UWr4sG+8shrqc9WP+t/UTvvfDTbxRj+ezqPzyQ7ZI7tHDaKBp5W/16XrUz8e6f2hfu3l72InVzT6OcgU0EvnsbmSQ1v/f5rJLOrxDGo6vC0tacjrPlhbTCEznzR8k7oeR0L3VexK1Hff17qx+s4N/gBCU9hkp6/ClAAAAABJRU5ErkJggg==",
+    "file": "assets/10be8af2772d-embedded.png",
+    "sha256": "1ba3e6db8da483e73048812d31d8422375e7b70e79f81c1155dfdd19db2227ed",
+    "bytes": 823,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP8AAAAqCAYAAAEL/L3AAAAACXBIWXMAAAsSAAALEgHS3X78AAAD4UlEQVR42u1da0sUURj2YyRhRLWX2Z3LVmhWpmZhSVJeKEw0r1laiyKa9CEJuktp90AqgsJ+Rt/7Cf2Ngv5D8TTv6onBlqVkZ2fOnmfgYXZ2z+y88z7vs+ecd86eUwOgJkoUfTOxLYFygwbQgP8yoOpU8HmlO1oKVi650RqwmveiNeDBsBOtAa+vetGr4Of3xa+B1yUDM3IVVuq3qZKxboQD7l50zHbAs8uu2Q54Mx2iBKoVkV1YaoFfP5YRqBnaYusAMVYHCYTmAKlejHaANGaNdoDUr5SAyQ54OWm4BKQ7Z7QDpIVltAOkP220A6oJkosQmN4FCCsACokewaeFXMWhrv3tywwStYnCXkHZpI5V+WAZdU4c7mFj0ysAdOky6YBKZUzL+mW6NBd1gPhSuwBYGmUAlAviS+0CQJeciQ4o9TCVVQCrgHgGwONxBkC5IL7ULgB0yRpX6xPuyANAl5RhtT7gZibwHzOBzAAaSn5chqOR/AopXF5Latff1wT3m0ajgORvEcE8ehR5c5XbVzn9zbl9lc+XrVjuf/N5Ud6Dgjbk23U2G2tlhPiT5JN8kk/yST7JJ/kkn+STfJJP8kk+ySf5JJ/kk3yST/JJPskn+SSf5JN8kk/yST7JJ/kkn6hCVGJUEMExnEQMRqCrz9XYVdk2xq4W3g+OXeUId4o/dsEtwSpNH9OhRKuOi/lGTUwTHP+ryqjzg8dBqHOLXVM1QcnH376h+EOCcjL7fqWxdqPlz4Q/pcqIL2Vfaq4YQakyxDrUjyDFT/ETFD/FX27x8+//RFynUqD4Qxa/LrPlEmZB4pLiD1n8nPuNiOsySRR/yOLnvH9EXOdQpPhDFr8uy6QQZkHikuIPWfyc85uI6/zpFD+z/QSz/RQ/s/0Es/0UP7P9BLP9FD/7/AT7/BT/FsTPVR6JuK6YSfGHLH7dlndL+rBqE7B3JOHtTGL/riQa9iRxKJFCcyqFViuFtmwa7W4aHfvS6DyQRleDhd5GC+ePWOg/amGwJYPhtgzGTmQwcTKLqY4s8p1ZzJzJYq7bxnx3Bjf7PB82bvU7uDPo4P6Qg6URF8vjLp5OuHjhd5ekX7qa9/BuxsPH+RzWFnL4MJfD+1kPb6fXP3s15eH5FRdP/HMejbl4OOLgnu/z2wNO4bsXL3hY6M3geo+N2S4b074N105nMenbNNGewahv49CxDAZ8m/uaLJw7bKHnoIWz9Vbh3k7l0jjupNHq33Ozf+9Nvg8a96ZQv3vdN25dElnfV+nt+i2VR/Gz2U+w2U/xU/wExU/xl0380jRlsBFxg8Qlxc9HfYSBkLisFvH/Br8M91HCSN6rAAAAAElFTkSuQmCC",
+    "file": "assets/fe40adf181e9-embedded.png",
+    "sha256": "f366356d34923f8cd1bc8f8ae67167a26a39d66e10e6b38ebde8209c74ec55cb",
+    "bytes": 1071,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAAUCAYAAABWOyJDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAWDSURBVHhe7ZjNbhxVFIT9EhOCYJEtQ4jtmBCQIg0LELwACxQFEEIsCMmCDWzCA7DiOfySJnfkD52UT/WZ2z0/rdFc9Empe+r0OG1XCefs95dvbhqPL97bC1eX47k8v7dTVs8+nC2PHi5myzdfPRjF0yfvT2a5XA5y/slitjz99P58Sd51DxePFmv2WjBZaQyRlcCuyEI9F7JQz4WsOBzZD+JUslKJZMGeA2mo50LynisoFMUWzPX1dYr6hriKJAUSyUK/L7JQV/A+stkQ8V1mqD8L9SHh62x/zkok0n7w8PODqHrsfUUW6h6+u/1v15pQ71tzUv32/XF4nxzVFAknlktjawXzTpkoMyuUiAZ6U3gf2WyI+C4zolfDPQf4OrMyycDv9Nj7CoI8FgK5C91CjCbg+9acO/r2/XFUUxwcp+FOwfANRev/cjJPiyRjRmWixDD3wnvgvWSeDN1TmDdvFvBDo18/P4AV+vdz+3o/5vMIdYTnZLMMArlYLdYcm+asVqs1nG3pnRbMZ1f312Shngsa/F54D7yXzJOhewrzLNyHhPDq1x+DPYT+/dy+3vd+XlYWDZ6TzTI0kMemOa4gOGN1WTB8Q7MCaTDHT6louTCvtN7rXLXeK+oD5hp4RyyHIb/6HPh5f9UcnYW+oXOn9V5RH2iAudevD5xfNfuVT3F+oCCYq+ZzuXdoII9Nc1xBcMbqdwrm1VsoDv1GxFJpUCDM8WflEoNeab3XuWq9V9QHbZYF2hG9Q371OfDz/qo5OiuFhs6d1vtIDKyiAeZevz5wftXsVz7F+RuxIJir5nOjN0MDeWya4wqCM1b/XzCtXIYKJhZHRubPgs4cDfh0rvt6X/nVp34XaEX91Z76FN2LsxZ2navWcnB+wKfzGMwIPudH633l1zna+dw96L0WhJs7v4NATtX8Y+q+9LdfP1hTaS2EbeutFwzBBp2jAZ/OdV/vK7/61O8Cr6i/2lOfontxNlQYaAoDnB+apwVV5wRYwef8aL2v/DpHO5+7B70n0ODmzu8gkFN1VQhTtSuQSlcFMVWfvX71903DFUYskwz1E2zQuWrQPe7H+ivUj46Bb7h5tedwe1VhoPFt6gcCC3rPngO/atDncF9pt9d7T6ChmlfwK8VUTRFsU7diQFMUvZpDEXC2peFUMKJjGTTcvNpzZHs9hRG9m/iBYILes+fArxr0OdxX2u313hNsqOYVBHKq3qQwKr1JYfRqDkXA2ZaG7oJhrhq/Bl/nlV+Z6q9Q/yaFMHRfoXu9hUHAXNAqv4IfzR7o81THZzUqv2q3V903WpCZO9hDUwAVBJJfKY5Nc/iVhrMtfSqYW9RfFUJ1X6F7p4LJ96r7RisC5g720FokDg3ksWmOKwjOWG0LRotDYc43ToPt0G+07jt6/cCewwU+lkHPXO8d+B2Eh89DZ94IftXsV8RnZejzHTxP/Wj9PNXq0zlaC4E90Oep1n1FA3lsmuMKgjNWnwpGAs/zYxn0zPXegd9BgPg8dOaN4FfNfkV8VoY+38Hz1I/Wz1OtPp23P2eFwB7o81Rnz4hoII9Nc1xBcMbqsmCAb4iShbqReSPqi7tD9PhjoNlzqC/uRqbOG48v7q1pIcHviOGKZN6I+uLuJsRnZfT61F/dOx8wpzAcFAV+pysIZK/mH1PnqikALYRt61PBiC/uRsbMKZSIBsURQxXJvBH1xd1NiM/K6PWpv7p3PmCelUqEwON3uoJAVvrZFx90BfwQugUe7Qph2/rs5a/nNz38/MPHs+bNX58fjF9+ejjI698uT0zgxfcf3YHCcGQ7U/jzjyeWf//5ctb8+Hy5d7oKJgv0nMhCvyuyAqnIQnNiM7KwN7JSiWQ7PWRFkpEFek5k4d89y5v/AMn/eyjCOwwQAAAAAElFTkSuQmCC",
+    "file": "assets/bef257e6439b-embedded.png",
+    "sha256": "57c97e6d2c85077ea1d685b0a73d80a8aded52d376d32fffe87f7b3c15121403",
+    "bytes": 1497,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "data:image/png;base64,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",
+    "file": "assets/9cd339fe87c4-embedded.png",
+    "sha256": "57329d0f7fdc744de98e94d911a8982869b9c64920e83c222df559aa54d7b52d",
+    "bytes": 1906,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "data:image/png;base64,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",
+    "file": "assets/036104567ec4-embedded.png",
+    "sha256": "7414222796685642f4b310d3c05b68b51c17eb2e9190cccd2846b7e660352940",
+    "bytes": 2203,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "data:image/png;base64,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",
+    "file": "assets/f908074162d2-embedded.png",
+    "sha256": "4bd510a6d464a024782af6073065e217805722eb4866d4530a3b49e73bac4462",
+    "bytes": 1831,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "data:image/png;base64,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",
+    "file": "assets/14d216e3470a-embedded.png",
+    "sha256": "f087617523e9d102147418fd2d81436bac6bbf8bf23bbce740a1d7756a3176ee",
+    "bytes": 1896,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/apply_gem.BVyhd85d.gif",
+    "file": "assets/0c26ed5f9dc9-apply_gem.BVyhd85d.gif",
+    "sha256": "8372cfaa01eb19abbae895aee84172726c57cc28bd8347e4684436cd84994428",
+    "bytes": 224314,
+    "content_type": "image/gif"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/banner.BaJpyifr.png",
+    "file": "assets/a8d682214ae2-banner.BaJpyifr.png",
+    "sha256": "847145cef40ca3182450de6addef435173cab600b3ab5c62bc0a492e86f6b761",
+    "bytes": 161798,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/block_id_1.DKzWMBj7.png",
+    "file": "assets/f139805eb2cc-block_id_1.DKzWMBj7.png",
+    "sha256": "b62ca4d9d8e2a9f45c46f20c26cb829d826f2e1fa64466b3b7383d16bc956436",
+    "bytes": 664903,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/block_id_2.apA7N6FI.png",
+    "file": "assets/f016174b5782-block_id_2.apA7N6FI.png",
+    "sha256": "fec29ec9998d87729b9daa6e7e6d6f703c907ddc782e35cf49157210448a1143",
+    "bytes": 692086,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/block_id_3.C89bFqK3.png",
+    "file": "assets/bf6e8e008268-block_id_3.C89bFqK3.png",
+    "sha256": "a7081479dfb441f511d226f0b8b95d440a101a44ad4d3be611c5e538a9487c12",
+    "bytes": 1119459,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/blunt_weapons.CjnzwdC3.gif",
+    "file": "assets/03f42342d871-blunt_weapons.CjnzwdC3.gif",
+    "sha256": "f069ce25c6e3b1091e1f25421c5852c17ea94a2ba22d831abc9ed04f8f613a23",
+    "bytes": 2241889,
+    "content_type": "image/gif"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/break_soulbound.Cm1fNktP.gif",
+    "file": "assets/2d34b6dd668c-break_soulbound.Cm1fNktP.gif",
+    "sha256": "37cde7f1b3d1b2b16ecffbd75a2340067bf4a6971e30f9c957017fe72e11419a",
+    "bytes": 148260,
+    "content_type": "image/gif"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/conditions.lMtUOuvy.png",
+    "file": "assets/3d9ede3d9a0f-conditions.lMtUOuvy.png",
+    "sha256": "2a332b4447b73e614d54af06b76b6c836415dcfb8d5cfae88b394436892f21df",
+    "bytes": 7541,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/custom_block_1.BQJNAcUB.png",
+    "file": "assets/7b9f33c1323d-custom_block_1.BQJNAcUB.png",
+    "sha256": "d68c9a9aa7ce8a5206d74aa62e41d7cc15115846fd5012ba0dfc4e808fb06789",
+    "bytes": 576054,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/custom_block_2.dRADRAwJ.png",
+    "file": "assets/3b09ca603164-custom_block_2.dRADRAwJ.png",
+    "sha256": "9cf955670f2e3acec91da93e08340acbafabf29a151498345b389866e361c2b9",
+    "bytes": 568881,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/custom_dur_in_lore.CWIZbsZJ.png",
+    "file": "assets/b26a2e753d8d-custom_dur_in_lore.CWIZbsZJ.png",
+    "sha256": "c39a7c3db592776e22ab4e5b86cfd019a8c07b27716fb1b74c95f0de3665a1e9",
+    "bytes": 14276,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/custom_workbenches.BMnVBj58.png",
+    "file": "assets/9096ac48f493-custom_workbenches.BMnVBj58.png",
+    "sha256": "392d1d2be7b5740a9eb0137d1382ffd31fc7c7b04a85a197464350c0177e1d49",
+    "bytes": 14379,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/deconstruct_item.BHjGS6v0.gif",
+    "file": "assets/2bea619d309b-deconstruct_item.BHjGS6v0.gif",
+    "sha256": "88134d04360d979dba6912284bf2282f3c616cca313003bcd96311236f66de5b",
+    "bytes": 526106,
+    "content_type": "image/gif"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/defense_curve.DdNq92v0.png",
+    "file": "assets/c4fd3fa5de71-defense_curve.DdNq92v0.png",
+    "sha256": "c386acc5f2bc83b1ee986c167e18cec010bbe99f84445a04bc9e548707f6e638",
+    "bytes": 15773,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/defense_table.C4WlQwAT.png",
+    "file": "assets/393c3448d6f8-defense_table.C4WlQwAT.png",
+    "sha256": "a2f1d0d0c89c3b6536459531e729a7ee832b60bd756b424752228e44dd54b220",
+    "bytes": 17624,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/edition_gui.9FGRG2Fx.gif",
+    "file": "assets/6de1fb2eb4a5-edition_gui.9FGRG2Fx.gif",
+    "sha256": "f18a93160c5104a6711149fab9389579f6b32303f045589f3a990ad3b5e2da92",
+    "bytes": 860916,
+    "content_type": "image/gif"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/example_1a.TPcZOHMK.png",
+    "file": "assets/ce5955b77590-example_1a.TPcZOHMK.png",
+    "sha256": "16c02a9eadc4eaac5392faf73c5b1ad8ca41ab67b10a1e76dc400696af0a296a",
+    "bytes": 10257,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/example_1b.DjgNdhf0.png",
+    "file": "assets/856db67a91ad-example_1b.DjgNdhf0.png",
+    "sha256": "cf762aa0bf1f5cb5c8a3a29c4211ce72a688269b0ca0395af3d8b8853c1643e1",
+    "bytes": 11873,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/example_2b.UTv87RmT.png",
+    "file": "assets/4d9dd09fca96-example_2b.UTv87RmT.png",
+    "sha256": "815a060f0cb992441257bae3508e15259039a337130f684c08cefe0c62591b09",
+    "bytes": 20743,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/example_3.B4EpXDWE.png",
+    "file": "assets/f626904db21c-example_3.B4EpXDWE.png",
+    "sha256": "159da4f483bc35f6cd56c92ec54e38e0354b941598fd698fe1cea4e61f3e0459",
+    "bytes": 28218,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/folder.CL10KY51.png",
+    "file": "assets/160625778ba8-folder.CL10KY51.png",
+    "sha256": "6eb83c09a85f2b99fccdeb6634e57bb3a6cca0af3b3a03e66d2ae7680366fb18",
+    "bytes": 21030,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/gem_stone_color.mDxowzo-.png",
+    "file": "assets/d40af88f5a42-gem_stone_color.mDxowzo-.png",
+    "sha256": "c437c7350d4a1a1e844feeac9840641ccfb8ae6227a943bb337a1c8ed089a545",
+    "bytes": 9730,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/head_database.B-G0axjv.png",
+    "file": "assets/57fc0a226ccd-head_database.B-G0axjv.png",
+    "sha256": "b0cd6237bb50c0f7a2fc1fbaf7e81c665182e4025a237143aa33d462070a2122",
+    "bytes": 11686,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/identify_item.CLyz8sHP.gif",
+    "file": "assets/5281521e0373-identify_item.CLyz8sHP.gif",
+    "sha256": "f347ab29eb72f726728371930dc9442d266a4f0b6837a918d6abd9c50b92e6b0",
+    "bytes": 174728,
+    "content_type": "image/gif"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/ingredients.ChAJogcR.png",
+    "file": "assets/6eac59fd4ec7-ingredients.ChAJogcR.png",
+    "sha256": "0a8ca77f16e1fee90b3effa879d258b638ffa8b0651db92bb4a5ae3bcd5a3a03",
+    "bytes": 7630,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/item_abilities.DOHp8Z8q.png",
+    "file": "assets/f0ec20c64bff-item_abilities.DOHp8Z8q.png",
+    "sha256": "a24953245fdcd0f0f2bf256f42ee7d1123ace62a01de50c7c2af6d3bb1a07c40",
+    "bytes": 99629,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/item_deconstruction.BplPIRXg.png",
+    "file": "assets/70b126d43e91-item_deconstruction.BplPIRXg.png",
+    "sha256": "cdf170a1952613cd6188d39154d25c2d333df173b2933f5b9355d13d3f85fbab",
+    "bytes": 19620,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/item_glow_hint.CQb_RIGZ.png",
+    "file": "assets/7178436c5a30-item_glow_hint.CQb_RIGZ.png",
+    "sha256": "368bf2b68b53985c0318bdc6cbb0d9d904beed24f66f7f429afd94ac76b766f1",
+    "bytes": 756619,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/item_socket_color.EcLxv1jv.png",
+    "file": "assets/108504413dbc-item_socket_color.EcLxv1jv.png",
+    "sha256": "35ebe769bd1b8ca1f6b5fdba33c11f024eb5d7b245cb19e95d3a8ea32034a56f",
+    "bytes": 13566,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/item_update.Bf8s69bK.png",
+    "file": "assets/a2ea12000f42-item_update.Bf8s69bK.png",
+    "sha256": "11398251a8dcb75734eec72b0739ffd7ecbe1c13c8e8c2c919fd64ba4f0d82ae",
+    "bytes": 27244,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/item_upgrade_nb.DG3D9zxd.png",
+    "file": "assets/34cdffa05bb5-item_upgrade_nb.DG3D9zxd.png",
+    "sha256": "07035b615014c7049d18e6205f3bfc6dea1be6a405a39a035ac43dabc3f2c76f",
+    "bytes": 5144,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/long_sword_no_mod.CTR3gi81.png",
+    "file": "assets/e0dbaeeaa1c3-long_sword_no_mod.CTR3gi81.png",
+    "sha256": "8054c3ecb3ee4d75cd4924f0879bbaee1d50f14f65f844f33cae142a20a89280",
+    "bytes": 6675,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/long_sword_sharp.D-ne3qmG.png",
+    "file": "assets/dd590beb5bd3-long_sword_sharp.D-ne3qmG.png",
+    "sha256": "184941c811c1160cdb2c7cd6f20987155ed6cfdce1c758427d7bc5740efa43f9",
+    "bytes": 6694,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/lootsplosion.D_nh5FoG.gif",
+    "file": "assets/77a080f43351-lootsplosion.D_nh5FoG.gif",
+    "sha256": "b71d461ed5177ea491403cbf9bb8f2de45dc39cb0aed8c311bf2ef81cdb78089",
+    "bytes": 3506606,
+    "content_type": "image/gif"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/lootsplosion_trails.C7rFnSWy.gif",
+    "file": "assets/950e3acebf46-lootsplosion_trails.C7rFnSWy.gif",
+    "sha256": "85c0dbc86f6ff5c58c699c4b096549fcd97c9bd54d7b30b46316f768a3a8d2cb",
+    "bytes": 3347789,
+    "content_type": "image/gif"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/mc_sounds.RmKs8pUs.png",
+    "file": "assets/9d8cdd21de27-mc_sounds.RmKs8pUs.png",
+    "sha256": "8de54e29126d867a4d78fbdac98e8f00c180981a0a4e46583566dc3ff82a95c9",
+    "bytes": 84008,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/min_max_xp.DjhcyaFh.png",
+    "file": "assets/885ae7095117-min_max_xp.DjhcyaFh.png",
+    "sha256": "420cc278f3c18ffa6a000f6145c98ee53c58869d7885cbaef8717fee637fd33e",
+    "bytes": 653869,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/piercing_weapons.CtCBiXzE.gif",
+    "file": "assets/35ae49c89f15-piercing_weapons.CtCBiXzE.gif",
+    "sha256": "8850c42bb18295c0ba152de60468a3f202c74b6168ec75577848a12ef04e0063",
+    "bytes": 2567717,
+    "content_type": "image/gif"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/random_unsocket.BbSVcRZL.png",
+    "file": "assets/e0c12f77499f-random_unsocket.BbSVcRZL.png",
+    "sha256": "5c806943c4b45bef69cef4ae946d4332949bfae281d5ec830ae3c2918aab3feb",
+    "bytes": 59349,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/recipe_example.CQtI97sZ.png",
+    "file": "assets/ebf4090914e9-recipe_example.CQtI97sZ.png",
+    "sha256": "ac5fc1e4f14935200b2df6ba3b1e7b8b1993f5a4c6f2717cf90c273afc8270be",
+    "bytes": 19743,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/require_pickaxe_power1.DnNdwe4D.png",
+    "file": "assets/3f1b206221e8-require_pickaxe_power1.DnNdwe4D.png",
+    "sha256": "2a717e64bc42b32b911571ab01a588fdceca6b60a7676d8fa9cb322d95678609",
+    "bytes": 661850,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/rev_id_in_ui.dDmqmx25.png",
+    "file": "assets/d4429aa56752-rev_id_in_ui.dDmqmx25.png",
+    "sha256": "d0349ee10eed4de444253ecf461248f753db835431c2c4487a5bac6be9a9045a",
+    "bytes": 111400,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/slash_weapons.DAua-dsH.gif",
+    "file": "assets/dac828354a7b-slash_weapons.DAua-dsH.gif",
+    "sha256": "60accfb89af99f0c2d029cf0490f108adda7a61fdb7970aae1a7c6ed5eaee6c9",
+    "bytes": 2262955,
+    "content_type": "image/gif"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/soulbound_on_item.BjrOux5u.png",
+    "file": "assets/8438634164d4-soulbound_on_item.BjrOux5u.png",
+    "sha256": "21d42ffedeb270679a211c225696a2a388ccf33c3150539ce9e2a24b2f98f5b8",
+    "bytes": 16619,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/station_example.BWNtofOX.png",
+    "file": "assets/5fb7870bdc11-station_example.BWNtofOX.png",
+    "sha256": "7f9470cd534ccce50e453a232b2ba0abef624102e1380a8859bd40934066372a",
+    "bytes": 10076,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/try_use_soulbound.uGHomkZm.gif",
+    "file": "assets/748ce5167aaa-try_use_soulbound.uGHomkZm.gif",
+    "sha256": "942987a1baf4b08a13b541ea049e46c3cfbc48ec645a16f3701c7cacbc83344e",
+    "bytes": 3121141,
+    "content_type": "image/gif"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/tt_align_1.C9I6lAkh.png",
+    "file": "assets/256e5699a438-tt_align_1.C9I6lAkh.png",
+    "sha256": "d14f5bb19922cb0397e0db0a7af2530c1e1b7c9bdc670f37186c231d22fc40b1",
+    "bytes": 66420,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/tt_align_2.CXSL4J8O.png",
+    "file": "assets/6fd645fd7bb1-tt_align_2.CXSL4J8O.png",
+    "sha256": "8f13c338b6a35fcc38fdbf247403967ad1e4907872b27772f171e10df3664797",
+    "bytes": 62833,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/tt_align_3.BQbHCz3N.png",
+    "file": "assets/212031ad591f-tt_align_3.BQbHCz3N.png",
+    "sha256": "57ead51dfe23f5913f09631c50bea4abebcc6767010ff57afa9f736462e6f57e",
+    "bytes": 19154,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/tt_center_top.FIUUbkbL.png",
+    "file": "assets/77f1c9d10bc8-tt_center_top.FIUUbkbL.png",
+    "sha256": "5164d0392b22d29c4e5d864560618e396a7350e747adf46959ecd915bafbc0ef",
+    "bytes": 14369,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/tt_display_tier_type.BJ3tjGVj.png",
+    "file": "assets/2865c21fbc74-tt_display_tier_type.BJ3tjGVj.png",
+    "sha256": "d1890247f63262371c32a3d6441e91df29efc4fb9a2b1d9e676e41ea80e89ffb",
+    "bytes": 17226,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/tt_ex_1.nBTXNtJu.png",
+    "file": "assets/27b8b1bb5279-tt_ex_1.nBTXNtJu.png",
+    "sha256": "5188b2330c6914677570e9e6f3032685a0ceda9f11a00320b20f01ddfd195b6a",
+    "bytes": 16442,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/tt_ex_2.DGpmT2QG.png",
+    "file": "assets/6bf4e230e3ba-tt_ex_2.DGpmT2QG.png",
+    "sha256": "97bf553436038d9e2183e2605802dcf537885b72a5a4d2dd8de173f764da12ee",
+    "bytes": 12612,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/tt_ex_3.vtnaJwDX.png",
+    "file": "assets/d4f09add5234-tt_ex_3.vtnaJwDX.png",
+    "sha256": "cc44cbca8e1cda846fe5ad20c803f11c551975dccba9fe48a520f1c9eb05d089",
+    "bytes": 15292,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/tt_use_big_top.B-iPN54U.png",
+    "file": "assets/fe9f03c554b3-tt_use_big_top.B-iPN54U.png",
+    "sha256": "4fada96042d8a3619766f7344f381c467b91e8fc5c22435f79bb332c598a2496",
+    "bytes": 19364,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/uncolored_socket.CVKR3dp6.png",
+    "file": "assets/9b31d7411d51-uncolored_socket.CVKR3dp6.png",
+    "sha256": "73bd03be57980c0f0baa3d1b3fcaa244f335e3e5227d17666a24dc880fd63539",
+    "bytes": 13572,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/unidentified_item.DG_2gdTI.png",
+    "file": "assets/06460517d9c2-unidentified_item.DG_2gdTI.png",
+    "sha256": "85ab728728c8ddbd87dd8b469b20c5b63feee752882d1ab1145edbf0156958eb",
+    "bytes": 14136,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/upgrade_recipe_example.CvjzoJoN.png",
+    "file": "assets/35da407d2be7-upgrade_recipe_example.CvjzoJoN.png",
+    "sha256": "67a6489170987de60ba907e2546ee0e5570889e2aa8e6b1003581d5845a02948",
+    "bytes": 13833,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MMOItems",
+    "url": "https://docs.phoenixdevt.fr/assets/world_gen_block.C1Gs6_aA.png",
+    "file": "assets/57b095872cd5-world_gen_block.C1Gs6_aA.png",
+    "sha256": "de39deeb178497b8e9d5733f2bd19efe7e5d8de18e103cef44fc4ffa75c35fed",
+    "bytes": 508296,
+    "content_type": "image/png"
+  }
+]

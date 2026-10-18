@@ -1,0 +1,935 @@
+[
+  {
+    "key": "mmoinventory_api_events.md",
+    "project": "MMOInventory",
+    "path": "/mmoinventory/api/events",
+    "url": "https://docs.phoenixdevt.fr/mmoinventory/api/events",
+    "file": "api/events.md",
+    "html": "sources/live/mmoinventory_api_events.html",
+    "title": "📮 Events",
+    "hash": "BGGlJsXF",
+    "sha256": "13677b981e4c1f9236382d17c1e0c507996ee2a318ebb5ae31df610b3cf4bd53",
+    "main_chars": 1274,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/api/events.md",
+    "code_blocks": [],
+    "inline_code": [
+      "InventoryUpdateEvent",
+      "#getPreviousItem",
+      "null",
+      "#getNewItem",
+      "null",
+      "#getInventoryData",
+      "#getSlot",
+      "ItemEquipEvent",
+      "InventoryUpdateEvent",
+      "InventoryData#setItem"
+    ],
+    "units": [
+      189,
+      1713,
+      1714,
+      1715,
+      1716,
+      1717,
+      1718,
+      1719,
+      1720,
+      1721
+    ]
+  },
+  {
+    "key": "mmoinventory_api_index.md",
+    "project": "MMOInventory",
+    "path": "/mmoinventory/api/",
+    "url": "https://docs.phoenixdevt.fr/mmoinventory/api/",
+    "file": "api.md",
+    "html": "sources/live/mmoinventory_api_index.html",
+    "title": "API",
+    "hash": "CFVZnGl1",
+    "sha256": "23504a95206ba7dcf8b09dbf524a34fb7ca5966fbecde1604183e68bb898efc9",
+    "main_chars": 5,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/api.md",
+    "code_blocks": [],
+    "inline_code": [],
+    "units": [
+      203
+    ]
+  },
+  {
+    "key": "mmoinventory_api_maven.md",
+    "project": "MMOInventory",
+    "path": "/mmoinventory/api/maven",
+    "url": "https://docs.phoenixdevt.fr/mmoinventory/api/maven",
+    "file": "api/maven.md",
+    "html": "sources/live/mmoinventory_api_maven.html",
+    "title": "📦 Maven",
+    "hash": "DmGwCWfQ",
+    "sha256": "9f2bc60fd77f88abf1f2d79db400b72acb520a2232ba40d7a0b157981ec6bad6",
+    "main_chars": 490,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/api/maven.md",
+    "code_blocks": [
+      {
+        "content": "<repository>\n    <id>phoenix</id>\n    <url>https://nexus.phoenixdevt.fr/repository/maven-public/</url>\n</repository>",
+        "sha256": "89f28a19397305d0ff0f0a320310457bff586cb84c6db0656bd7f2a4b03e59f1"
+      },
+      {
+        "content": "<dependency>\n    <groupId>net.Indyuce</groupId>\n    <artifactId>MMOInventory-API</artifactId>\n    <version>2.0-SNAPSHOT</version>\n    <scope>provided</scope>\n</dependency>",
+        "sha256": "ef15f009831b42bf772ffd55db23cee84ce4ebc727afb5fc42eb84d8bef59018"
+      }
+    ],
+    "inline_code": [
+      "pom.xml"
+    ],
+    "units": [
+      430,
+      431,
+      432,
+      433,
+      434
+    ]
+  },
+  {
+    "key": "mmoinventory_api_overview.md",
+    "project": "MMOInventory",
+    "path": "/mmoinventory/api/overview",
+    "url": "https://docs.phoenixdevt.fr/mmoinventory/api/overview",
+    "file": "api/overview.md",
+    "html": "sources/live/mmoinventory_api_overview.html",
+    "title": "🔌 Overview",
+    "hash": "Dr77-MAF",
+    "sha256": "33cd32a28d974d2b5f7038655a1ea8ad3531b8a5ae5d1adf1beede7fc6fe735c",
+    "main_chars": 5269,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/api/overview.md",
+    "code_blocks": [
+      {
+        "content": "MMOInventory plugin = (MMOInventory) Bukkit.getPluginManager().getPlugin(\"MMOInventory\");",
+        "sha256": "0ec21f91688cf0842e999f1904eea9e48b53aad5b1d0f2aea620ef1c68e3a771"
+      },
+      {
+        "content": "MMOInventory plugin = /* see above */\nInventoryManager inventories = plugin.getInventoryManager();",
+        "sha256": "3e58e47909fcfee7bd8415f6e2f06dfba2caa1738b443782f1d063f8685460c3"
+      },
+      {
+        "content": "CustomInventory someCustomInv = inventories.getCustom(\"custom_inventory_id\");\nVanillaInventory theVanillaInv = inventories.getVanilla();\n\nCollection<Inventory> all = inventories.getAll();\nCollection<Inventory> customInvs = inventories.getAllCustom();",
+        "sha256": "052f43bf06d249fa482abeb52397e90e6fcc1bd7bac9c6fb6819aa4b6d4d0ec9"
+      },
+      {
+        "content": "public class MyRestriction extends SlotRestriction {\n  public MyRestriction(MMOLineConfig config) {\n    // No config options needed?\n  }\n\n  @Override\n  public boolean isVerified(InventoryData player, CustomSlot ignore2, ItemStack ignore1) {\n    // does not depend on the custom slot in which item is placed.\n    // does not depend on the item placed either.\n\n    SomePlayerData yourPlayerData = SomePlayerData.get(player.getPlayer());\n    return yourPlayerData.canUseThisSlot();\n  }\n}",
+        "sha256": "805037fa53b69347ed10fce290ed6d82f8155c568a3d2d9b4214a47fd69f765e"
+      },
+      {
+        "content": "MMOInventory plugin = /* see above */\nInventoryManager inventories = plugin.getInventoryManager();",
+        "sha256": "3e58e47909fcfee7bd8415f6e2f06dfba2caa1738b443782f1d063f8685460c3"
+      },
+      {
+        "content": "slots:\n  ...\n  SPECIAL_RING_SLOT:\n    type: accessory\n    material: GOLD_NUGGET\n    custom_model_data_string: \"ring1\"\n    name: \"&6Special Ring Slot\"\n    slot: 34\n    restrictions:\n      - \"mmoitemstype{type=RING}\"\n      - \"my_restriction{}\" # <<==== HERE!\n    lore:\n      - 'Drag & drop an item to equip it.'\n      - ''\n      - 'This slot is only available after'\n      - 'completing the quest XXXXX.'",
+        "sha256": "2e31699289bca21c0a9853137ce2beb2dd65d57db7dee6e9694f9878d12e06da"
+      },
+      {
+        "content": "Player yourPlayer = /* see above */\nMMOInventory plugin = /* see above */\nPlayerDataManager manager = plugin.getDataManager();\n\nPlayerData playerData = manager.get(yourPlayer);",
+        "sha256": "565da01eae862855feb628d6193cffae4002a86ec2c41f406c3a1c0ace670c25"
+      },
+      {
+        "content": "PlayerData playerData = /* see above */\nCustomInventory customInv = /* see above */\nInventory someInv = /* see above */\n\nVanillaInventoryData vanillaInvData = playerData.getVanilla();\nCustomInventoryData customInvData = playerData.getCustom(customInv);\nInventoryData invData = playerData.get(someInv); // either custom or vanilla",
+        "sha256": "9486dbc2e4f5a42a258dff0ad509b097ac04fc0264497b7349ae047c828894be"
+      },
+      {
+        "content": "List<InventoryItem> items = playerData.getItems(InventoryLookupMode.NORMAL);",
+        "sha256": "4a4b75a6ec2172a3d9e73df623218031698a374ae9f29c7df4196e4040059af0"
+      },
+      {
+        "content": "InventoryData invData = /* see above */\nCustomSlot someSlot = /* ... */\n\ninvData.setItem(someSlot, new ItemStack(Material.DIAMOND_SWORD));\ninvData.setItem(someSlot, null); // remove item\n\nCollection<InventoryItem> content = invData.retrieveItems();",
+        "sha256": "5589d3df7b0e0bfe90825b782ce498ac611a04bd216d8d919b9bfff3d37052aa"
+      }
+    ],
+    "inline_code": [
+      "MMOInventory",
+      "Inventory",
+      "CustomInventory",
+      "VanillaInventory",
+      "Inventory",
+      "Inventory",
+      "Inventory#getSlots",
+      "CustomSlot",
+      "SlotRestriction",
+      "SlotRestriction",
+      "LevelRestriction",
+      "TypeRestriction",
+      "SomePlayerData",
+      "SlotRestriction",
+      "my_restriction",
+      "#onLoad",
+      "#onEnable",
+      "PlayerData",
+      "InventoryData",
+      "InventoryData",
+      "CustomInventoryData",
+      "VanillaInventoryData",
+      "InventoryData",
+      "NORMAL",
+      "IGNORE_RESTRICTIONS",
+      "InventoryData",
+      "#setItem",
+      "InventoryUpdateEvent",
+      "InventoryItem"
+    ],
+    "units": [
+      1722,
+      1723,
+      1724,
+      1725,
+      1726,
+      1727,
+      1728,
+      1729,
+      1730,
+      1731,
+      1732,
+      1733,
+      1734,
+      1735,
+      538,
+      117,
+      1736,
+      1737,
+      1738,
+      1739,
+      1740,
+      1741,
+      1742,
+      1743,
+      1744
+    ]
+  },
+  {
+    "key": "mmoinventory_compatibility_index.md",
+    "project": "MMOInventory",
+    "path": "/mmoinventory/compatibility/",
+    "url": "https://docs.phoenixdevt.fr/mmoinventory/compatibility/",
+    "file": "compatibility.md",
+    "html": "sources/live/mmoinventory_compatibility_index.html",
+    "title": "Compatibility",
+    "hash": "BZ_kR8I4",
+    "sha256": "522ec89665387d382bed78f32473fe1bac025bb0c593035494e6911484077ddf",
+    "main_chars": 15,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/compatibility.md",
+    "code_blocks": [],
+    "inline_code": [],
+    "units": [
+      435
+    ]
+  },
+  {
+    "key": "mmoinventory_compatibility_mmoitems.md",
+    "project": "MMOInventory",
+    "path": "/mmoinventory/compatibility/mmoitems",
+    "url": "https://docs.phoenixdevt.fr/mmoinventory/compatibility/mmoitems",
+    "file": "compatibility/mmoitems.md",
+    "html": "sources/live/mmoinventory_compatibility_mmoitems.html",
+    "title": "⚔️ MMOItems",
+    "hash": "CMeqW5Zd",
+    "sha256": "a52c058965ee659e5a7facc2baf3f3bb63f8b54ade8b232c6f15ec482be7083f",
+    "main_chars": 2198,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/compatibility/mmoitems.md",
+    "code_blocks": [
+      {
+        "content": "# Ring slots\nRIGHT_RING:\n    type: accessory\n    material: DIAMOND_HOE\n    durability: 7\n    name: '&6Right Ring Slot'\n    slot: 25\n    restrictions:\n    - 'mmoitemstype{type=RING}'\n    lore:\n    - Drag & drop an item to equip it.\nLEFT_RING:\n    type: accessory\n    material: DIAMOND_HOE\n    durability: 8\n    name: '&6Left Ring Slot'\n    slot: 34\n    restrictions:\n    - 'mmoitemstype{type=RING}'\n    lore:\n    - Drag & drop an item to equip it.",
+        "sha256": "f21a404c822706e54d2648038acef80fdefb266b9dcf20376bafa2f0220eacfc"
+      },
+      {
+        "content": "RING:\n    display: EMERALD\n    name: 'Artifact'\n    parent: 'ACCESSORY' # Parent type set to ACCESSORY\n    unident-item:\n        name: '&f#prefix#Unidentified Ring'\n        lore:\n        - '&7This item is unidentified. I must'\n        - '&7find a way to identify it!'\n        - '{tier}'\n        - '{tier}&8Item Info:'\n        - '{range}&8- &7Lvl Range: &e#range#'\n        - '{tier}&8- &7Item Tier: #prefix##tier#'",
+        "sha256": "917a82de6f20eac63824f2328414f0cc698959e4a5cf9686306b8921106339fa"
+      }
+    ],
+    "inline_code": [
+      "RING",
+      "ACCESSORY",
+      "RING"
+    ],
+    "units": [
+      1745,
+      1746,
+      1747,
+      1748,
+      1749,
+      1750,
+      1751,
+      538,
+      117,
+      1752,
+      1753,
+      1754
+    ]
+  },
+  {
+    "key": "mmoinventory_compatibility_oraxen.md",
+    "project": "MMOInventory",
+    "path": "/mmoinventory/compatibility/oraxen",
+    "url": "https://docs.phoenixdevt.fr/mmoinventory/compatibility/oraxen",
+    "file": "compatibility/oraxen.md",
+    "html": "sources/live/mmoinventory_compatibility_oraxen.html",
+    "title": "💎 Oraxen",
+    "hash": "DG0VXT_b",
+    "sha256": "c4bbc37a22788520bf048d98fd55a2e66a2951c93a692efa1227fd837733d8b4",
+    "main_chars": 1876,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/compatibility/oraxen.md",
+    "code_blocks": [
+      {
+        "content": "inventory-name:\n    self: '&f%oraxen_shift_16%%oraxen_shift_2%%oraxen_mmoinv_default%'",
+        "sha256": "ff3a6c08a7b9cb59ebc616920d3349380e5acb11696498b46993b3e538049c38"
+      }
+    ],
+    "inline_code": [
+      "Oraxen/pack/textures/items/mmoinventory",
+      "lower_case_format",
+      "slots.yml",
+      "slots.yml",
+      "mmoinventory-hook.yml",
+      "Oraxen/items/",
+      "%oraxen_<glyph_id>%",
+      "items.yml",
+      "language.yml"
+    ],
+    "units": [
+      1755,
+      1756,
+      1757,
+      1758,
+      1759,
+      1760,
+      496,
+      1761,
+      1762,
+      1763,
+      1764
+    ]
+  },
+  {
+    "key": "mmoinventory_compatibility_other.md",
+    "project": "MMOInventory",
+    "path": "/mmoinventory/compatibility/other",
+    "url": "https://docs.phoenixdevt.fr/mmoinventory/compatibility/other",
+    "file": "compatibility/other.md",
+    "html": "sources/live/mmoinventory_compatibility_other.html",
+    "title": "🔌 Other Plugins",
+    "hash": "DaJPuxb-",
+    "sha256": "59a72be2774242a80cf9c9c5d4bf1de125388fe4cc4884159329c31801fbed4a",
+    "main_chars": 1266,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/compatibility/other.md",
+    "code_blocks": [],
+    "inline_code": [
+      "&cSword",
+      "loretag{tag=\"&cRing\"}",
+      "&cRing",
+      "loretag{tag=\"&cSword\";check=EQUALS}",
+      "&cRing",
+      "loretag{tag=\"&cRing\";check=CONTAINS}",
+      "&cRing",
+      "&cRing",
+      "STARTS_WITH",
+      "ENDS_WITH"
+    ],
+    "units": [
+      473,
+      1765,
+      1766,
+      1767,
+      1768,
+      1769,
+      1770,
+      1771
+    ]
+  },
+  {
+    "key": "mmoinventory_compatibility_rpg.md",
+    "project": "MMOInventory",
+    "path": "/mmoinventory/compatibility/rpg",
+    "url": "https://docs.phoenixdevt.fr/mmoinventory/compatibility/rpg",
+    "file": "compatibility/rpg.md",
+    "html": "sources/live/mmoinventory_compatibility_rpg.html",
+    "title": "🧙‍♂️ RPG Plugins",
+    "hash": "DtE0ZqDr",
+    "sha256": "532cfb50f88bb7cea157f9b1adfabef46a2e49d9eada61d75e87e8aceb050027",
+    "main_chars": 181,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/compatibility/rpg.md",
+    "code_blocks": [],
+    "inline_code": [],
+    "units": [
+      1772,
+      1773
+    ]
+  },
+  {
+    "key": "mmoinventory_faq.md",
+    "project": "MMOInventory",
+    "path": "/mmoinventory/faq",
+    "url": "https://docs.phoenixdevt.fr/mmoinventory/faq",
+    "file": "faq.md",
+    "html": "sources/live/mmoinventory_faq.html",
+    "title": "🤔 FAQ",
+    "hash": "JZG05F0S",
+    "sha256": "cec14bef8df2589e658c21a46f96637c7ebbe1991a4908d23f6dcc9d54f4d176",
+    "main_chars": 3659,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/faq.md",
+    "code_blocks": [
+      {
+        "content": "mysql:\n  enabled: false\n  host: localhost\n  port: 3306\n  database: minecraft\n  user: mmolover\n  pass: ILoveAria\n  ....",
+        "sha256": "76470e59e594314ed850a13d9529a7ccb66c43ebfc48aa9a7b81c13249053c92"
+      },
+      {
+        "content": "{\n  \"parent\": \"item/handheld\",\n  \"textures\": {\n    \"layer0\": \"items/slots/fill\"\n  },\n  \"display\": {\n    \"gui\": {\n      \"rotation\": [ 0, 0, 0 ],\n      \"translation\": [ 0, 0, 0 ],\n      \"scale\": [ 1.1, 1.1, 1.1 ]\n    }\n  }\n}",
+        "sha256": "4948f2209e7f4ec76cde2c59dabc28f10dccd0e80e1455b1b5e59621cb30d068"
+      }
+    ],
+    "inline_code": [
+      "/mmoinventory",
+      "MMOItems/item-types.yml",
+      "ACCESSORY",
+      "milevel{}",
+      "/assets/minecraft/models/item/slots/fill.json",
+      "scale",
+      "1.1"
+    ],
+    "units": [
+      1774,
+      1775,
+      1776,
+      1777,
+      1778,
+      1779,
+      1780,
+      1781,
+      1782,
+      1783,
+      1784,
+      1785,
+      1786,
+      1787,
+      1788,
+      1789,
+      1790,
+      1791,
+      1787,
+      1792,
+      1793,
+      1794,
+      1795,
+      1796,
+      1797,
+      1798,
+      1799,
+      1800
+    ]
+  },
+  {
+    "key": "mmoinventory_features_custom-inventory-texture.md",
+    "project": "MMOInventory",
+    "path": "/mmoinventory/features/custom-inventory-texture",
+    "url": "https://docs.phoenixdevt.fr/mmoinventory/features/custom-inventory-texture",
+    "file": "features/custom-inventory-texture.md",
+    "html": "sources/live/mmoinventory_features_custom-inventory-texture.html",
+    "title": "🎨 Inventory Textures",
+    "hash": "Cf06-lBA",
+    "sha256": "d71afd13b9e89b6c78a2824325a2e68b02c4522e41e93bbf6e91ef19dc23f91c",
+    "main_chars": 2560,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/features/custom-inventory-texture.md",
+    "code_blocks": [
+      {
+        "content": "ui_layout:\n  # .....\n  name:\n    self: \"&f%mythiclib_space_-17%\\u40E0%mythiclib_space_-169%<#3F3F3F>Equipment\"\n    other: \"&f%mythiclib_space_-17%\\u40E0%mythiclib_space_-169%<#3F3F3F>Equipment of {name}\"",
+        "sha256": "66ab9a9f0a57680ac4b5d07854f9c5cdf9b35b4499bdf3ad8aaef7efa1791b44"
+      },
+      {
+        "content": "{\n  \"parent\": \"item/handheld\",\n  \"textures\": {\n    \"layer0\": \"mmoinventory:item/fill\"\n  },\n  \"display\":{\n    \"gui\": {\n        \"rotation\": [ 0, 0, 0 ],\n        \"translation\": [ 0, 0, 0 ],\n        \"scale\": [ 1.1, 1.1, 1.1 ]\n    }\n  }\n}",
+        "sha256": "7332abe8f424cde6ed136467aea87f31f935a0bec166baf4655451ca24735224"
+      }
+    ],
+    "inline_code": [
+      "MMOInventory/inventory/default_mmoinventory.yml",
+      "\\u40E0",
+      "%mythiclib_space_-17%",
+      "<#3F3F3F>",
+      "\\u40E0",
+      "\\u40E1",
+      "\\u40E2",
+      "\\u40E3",
+      "item/fill",
+      "#C6C6C6"
+    ],
+    "units": [
+      1801,
+      1802,
+      1803,
+      1804,
+      1805,
+      1806,
+      1807,
+      1808,
+      1809,
+      1810,
+      1811,
+      1812,
+      1813,
+      4654,
+      4655,
+      4656,
+      4657,
+      1818,
+      1819,
+      1820,
+      1821,
+      1822
+    ]
+  },
+  {
+    "key": "mmoinventory_features_custom-inventory.md",
+    "project": "MMOInventory",
+    "path": "/mmoinventory/features/custom-inventory",
+    "url": "https://docs.phoenixdevt.fr/mmoinventory/features/custom-inventory",
+    "file": "features/custom-inventory.md",
+    "html": "sources/live/mmoinventory_features_custom-inventory.html",
+    "title": "🎒 Custom Inventories",
+    "hash": "sQC29Bo-",
+    "sha256": "9491fd1071f057cb1cf22844b7b79bdcbdf20b1aae480fb6d323d844a2819ce3",
+    "main_chars": 8402,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/features/custom-inventory.md",
+    "code_blocks": [
+      {
+        "content": "# Do NOT change this! Choose one and stick to it.\n#.........\nid: mmoinventory1_legacy\n\n# Toggle on/off for temporary disabling this inventory.\nenabled: true\n\n# Either 'custom' for custom inventories or 'vanilla' for the vanilla inventory.\n# There can be only one vanilla inventory at a time!\ntype: custom\n\n# Should items from this custom inventory be dropped on death.\n# This option is only for custom inventories, as vanilla inventory\n# is already supported by the keepInventory world flag.\ndrop_on_death: false\n\n#........",
+        "sha256": "9d71e880b18dda7ec1207183c3048eda95e51a60844978dcc59f22483273b527"
+      },
+      {
+        "content": "# Command to be used in order to open the custom inventory.\n# This option is only for custom inventories.\nopen_command:\n  enabled: true\n  name: 'custominv'\n  permission: 'custom_inv.open.mmoinventory_default'\n  aliases: [ mmoinv, rpginv, rpginventory ]\n\n  output:\n    player-command: '&cThis command is only for players.'\n    specify-player: '&cPlease specify a player.'\n    wrong-player: '&cCould not find the player called {arg}.'\n    not-enough-perms: '&cYou don''t have enough permissions.'",
+        "sha256": "cc718ee8aa1f57d9f50b0dc5bdf5f931c23040af8d46e60c82745c406ddf8086"
+      },
+      {
+        "content": "# Adds a static item to players' inventories to open this custom inventory.\n# Requires a server reload when changed.\ninventory_button:\n  enabled: false\n  slot: 9\n  item:\n    material: CHEST\n    name: '&6Custom Inventory'\n    lore:\n      - ''\n      - '&eClick to open.'\n    # custom_model_data: 1\n    # skull_texture: eyJ0ZXh0dXJlcyI6e...",
+        "sha256": "fb49c331acd19a2cf146db08ab52c74667b8a21602ded2c767037483bd1a41c9"
+      },
+      {
+        "content": "slots:\n\n  # Vanilla slot type\n  OFF_HAND:\n    type: off_hand\n    material: GOLD_NUGGET\n    custom_model_data_string: 'off_hand'\n    name: \"&6Off Hand Slot\"\n    slot: 12\n    lore:\n      - Drag & drop an item to equip it.\n\n  # Ring slot (custom slot)\n  LEFT_RING:\n    type: accessory\n    material: GOLD_NUGGET\n    custom_model_data_string: \"ring1\"\n    name: \"&6Left Ring Slot\"\n    slot: 34\n    restrictions:\n      - \"mmoitemstype{type=RING}\"\n    lore:\n      - Drag & drop an item to equip it.\n\n  # Amulet slot (custom slot)\n  AMULET:\n    type: accessory\n    material: DIAMOND_HOE\n    durability: 5\n    name: '&6Amulet Slot'\n    slot: 10\n    restrictions:\n    - 'mmoitemstype{type=AMULET}'\n    lore:\n    - Drag & drop an item to equip it.\n\n  # Artifact slot (custom slot)\n  ARTIFACT:\n    type: accessory\n    material: DIAMOND_HOE\n    durability: 10\n    name: '&6Artifact Slot'\n    slot: 11\n    restrictions:\n    - 'mmoitemstype{type=ARTIFACT}'\n    - 'unique{enabled=true}'\n    lore:\n    - Drag & drop an item to equip it.",
+        "sha256": "8a2d1a364b739b6d47176eeffad62f204264b5dfcfdfa02f08dbe29e0c217976"
+      },
+      {
+        "content": "items:\n\n  INFO:\n    material: SPRUCE_HANGING_SIGN\n    name: \"&6Information\"\n    slot: 5\n    lore:\n      - ''\n      - '&f ⌛ &7Level &f%mmocore_level%'\n      - '&f %mythiclib_space_1%❣%mythiclib_space_1% &7Class: &f%mmocore_class%'\n      - '&f ☄ &7Gold: &f%vault_eco_balance%'\n      - ''\n      - '&7Health: &f%mythiclib_stat_max_health%'\n      - '&7Defense: &f%mythiclib_stat_defense%'\n      - '&7Attack: &f%mythiclib_stat_attack_damage%'\n    on_click:\n      - 'command{format=\"p\";from_console=false}'\n  \n  CLOSE:\n    item: BARRIER\n    name: \"&cClose\"\n    slot: 35\n    lore:\n      - \"&7Click to close this inventory.\"\n    on_click:\n      - 'close_inventory{}'",
+        "sha256": "95938674057fadaaf4860edcfc5f07c958e6a0e973b08d91d5271b6d957826b5"
+      },
+      {
+        "content": "# Static items, not slots. Players can click\n# on them but not move them around.\nitems:\n  INFO:\n    #item: GOLD_NUGGET\n    #custom_model_data_string: \"info\"\n    material: SPRUCE_HANGING_SIGN\n    name: \"&6Information\"\n    slot: 5\n    lore:\n      - ''\n      - '&f ⌛ &7Level &f%mmocore_level%'\n      - '&f %mythiclib_space_1%❣%mythiclib_space_1% &7Class: &f%mmocore_class%'\n      - '&f ☄ &7Coins: &f%vault_eco_balance%'\n      - ''\n      - '&7Health: &f%mythiclib_stat_max_health%'\n      - '&7Defense: &f%mythiclib_stat_defense%'\n      - '&7Attack: &f%mythiclib_stat_attack_damage%'\n    on_click:\n      - 'sudo{format=\"p\"}'",
+        "sha256": "a28ddf5a03ac234e5ab1e8d7982d98e0dff55de8ed025fe8708f3c80c6b73636"
+      },
+      {
+        "content": "items:\n  CLOSE:\n    item: BARRIER\n    name: \"&cClose\"\n    slot: 35\n    lore:\n      - \"&7Click to close this inventory.\"\n    on_click:\n      - 'close_inventory{}'",
+        "sha256": "b5104e79b7e4453bac7a0cd0fea89931f063143cc1e9e43a56115ec7634421b4"
+      }
+    ],
+    "inline_code": [
+      "MMOInventory/inventory",
+      "enabled",
+      "id",
+      "drop_on_death",
+      "type",
+      "vanilla",
+      "custom",
+      "custom",
+      "enabled",
+      "false",
+      "/mmoprofiles reload",
+      "enabled",
+      "false",
+      "helmet",
+      "chestplate",
+      "leggings",
+      "boots",
+      "off_hand",
+      "accessory",
+      "elytra",
+      "fill",
+      "accessory",
+      "milevel{}",
+      "mitype{type=RING}",
+      "unique",
+      "class{name=\"Warrior,Mage,...\"}",
+      "level{min=10}",
+      "perm{perm=some.perm.node}",
+      "mitype",
+      "mitype",
+      "type",
+      "RING",
+      "RING",
+      "/p"
+    ],
+    "units": [
+      1823,
+      1824,
+      1825,
+      1493,
+      1826,
+      1827,
+      1828,
+      1829,
+      1830,
+      1831,
+      1832,
+      1833,
+      1834,
+      1835,
+      1836,
+      1837,
+      1838,
+      1835,
+      1839,
+      1840,
+      1841,
+      1842,
+      1843,
+      1844,
+      1845,
+      1846,
+      1847,
+      1848,
+      1849,
+      1850,
+      1851,
+      1852,
+      1853,
+      1854,
+      1855,
+      1856,
+      1857,
+      1858,
+      1859,
+      1860,
+      1861,
+      1862,
+      1863,
+      1864,
+      1865,
+      1866,
+      1867,
+      1868,
+      1869
+    ]
+  },
+  {
+    "key": "mmoinventory_features_elytra-slot.md",
+    "project": "MMOInventory",
+    "path": "/mmoinventory/features/elytra-slot",
+    "url": "https://docs.phoenixdevt.fr/mmoinventory/features/elytra-slot",
+    "file": "features/elytra-slot.md",
+    "html": "sources/live/mmoinventory_features_elytra-slot.html",
+    "title": "🪽 Elytra Slot",
+    "hash": "CUltXka1",
+    "sha256": "e03053a944d8347f5925a83a23aa55cbaab2cf2c807dd1496209065fc2b369d7",
+    "main_chars": 1656,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/features/elytra-slot.md",
+    "code_blocks": [
+      {
+        "content": "slots:\n  #.....\n  ELYTRA:\n  type: elytra\n  material: GOLD_NUGGET\n  custom_model_data_string: \"elytra\"\n  name: \"&6Elytra Slot\"\n  restrictions:\n    - 'material{materials=\"ELYTRA\"}'\n  slot: 14\n  lore:\n    - 'Only &bElytras&7 are allowed here.'\n    - '&bDeploy automatically&7 when falling.'\n    - 'Drag & drop an item to equip it.'",
+        "sha256": "fc5e3d843e9b53ef07a7fc0c154c292601e883fa73124edb8ff00d8c3c898ed9"
+      },
+      {
+        "content": "elytra_deployment:\n\n  # If \"Slow falling\" is detected on the player, fall time\n  # is reset, temporarily preventing elytras from deploying\n  # until the player hits the ground, or the effect wears off.\n  skip_if_slow_falling: true\n\n  # Fall distance threshold (in blocks) after which\n  # elytras automatically deploy.\n  fall_distance_threshold: 4",
+        "sha256": "bc7dcab6b1bd26f709c2f5650e44f0dd037b807bb6c77bb101b4ce9d013ddbad"
+      }
+    ],
+    "inline_code": [
+      "inventory/default_mmoinventory.yml",
+      "elytra",
+      "config.yml"
+    ],
+    "units": [
+      1870,
+      1871,
+      1608,
+      1872,
+      1873,
+      1874,
+      1875,
+      1876,
+      1877,
+      1878
+    ]
+  },
+  {
+    "key": "mmoinventory_features_index.md",
+    "project": "MMOInventory",
+    "path": "/mmoinventory/features/",
+    "url": "https://docs.phoenixdevt.fr/mmoinventory/features/",
+    "file": "features.md",
+    "html": "sources/live/mmoinventory_features_index.html",
+    "title": "Features",
+    "hash": "CVctaaMC",
+    "sha256": "a696f3c3e50fb068ecf0bf82bdd23e1142d5dd67ca861033d667d87c9a548f10",
+    "main_chars": 10,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/features.md",
+    "code_blocks": [],
+    "inline_code": [],
+    "units": [
+      297
+    ]
+  },
+  {
+    "key": "mmoinventory_features_vanilla-inventory.md",
+    "project": "MMOInventory",
+    "path": "/mmoinventory/features/vanilla-inventory",
+    "url": "https://docs.phoenixdevt.fr/mmoinventory/features/vanilla-inventory",
+    "file": "features/vanilla-inventory.md",
+    "html": "sources/live/mmoinventory_features_vanilla-inventory.html",
+    "title": "🎒 Vanilla Inventory",
+    "hash": "CWysqkE7",
+    "sha256": "21d100435c3d1e9f7bde94bb2f90b52b2d2af643e7b7058abde4ab6c770d5704",
+    "main_chars": 1656,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/features/vanilla-inventory.md",
+    "code_blocks": [
+      {
+        "content": "# For the vanilla inventory, this option is not very important,\n# it only has to be different from other inventories\nid: vanilla_inventory\n\n# Will place items in the player's vanilla 3x9 inventory grid\n# Either 'vanilla' or 'custom'\ntype: vanilla\n\n# Toggle on/off for temporary disabling this inventory.\n# Vanilla inventory is disabled by default.\nenabled: false",
+        "sha256": "b817708061fa3de9242e5576dfb1c7f990028df7b1ef4dec2e0bce03263a936a"
+      }
+    ],
+    "inline_code": [
+      "enabled",
+      "vanilla_inventory.yml",
+      "type",
+      "vanilla",
+      "type",
+      "vanilla",
+      "slots",
+      "helmet",
+      "off_hand"
+    ],
+    "units": [
+      1879,
+      1880,
+      1881,
+      254,
+      1882,
+      538,
+      117,
+      1883,
+      1884,
+      1885,
+      116,
+      117,
+      1886,
+      1887
+    ]
+  },
+  {
+    "key": "mmoinventory_general_commands.md",
+    "project": "MMOInventory",
+    "path": "/mmoinventory/general/commands",
+    "url": "https://docs.phoenixdevt.fr/mmoinventory/general/commands",
+    "file": "general/commands.md",
+    "html": "sources/live/mmoinventory_general_commands.html",
+    "title": "💾 Commands",
+    "hash": "BCHj5m5j",
+    "sha256": "2704c1b4dc4a6f2bedc655f78aaa4f374673a306ccc5e9f6bfec6f71a9abe58c",
+    "main_chars": 548,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/general/commands.md",
+    "code_blocks": [],
+    "inline_code": [
+      "/mmoinv reload",
+      "/mmoinv export-data",
+      "/mmoinv open <inventory> <owner>",
+      "/mmoinv open <inventory> <owner> <player> <can_edit>",
+      "owner",
+      "player",
+      "can_edit",
+      "true",
+      "false",
+      "/mmoinv inspect <inventory> <owner>",
+      "/mmoinv",
+      "/rpginv",
+      "/rpginventory"
+    ],
+    "units": [
+      338,
+      1888,
+      1889,
+      1890,
+      1891,
+      1892,
+      1893,
+      1894
+    ]
+  },
+  {
+    "key": "mmoinventory_general_default-config.md",
+    "project": "MMOInventory",
+    "path": "/mmoinventory/general/default-config",
+    "url": "https://docs.phoenixdevt.fr/mmoinventory/general/default-config",
+    "file": "general/default-config.md",
+    "html": "sources/live/mmoinventory_general_default-config.html",
+    "title": "🗒️ Default Configuration",
+    "hash": "CvuGjqvG",
+    "sha256": "4e63a41511733aa281f1a8dd077216a201e13358113eecbcbcf47ed39cf6a48e",
+    "main_chars": 2968,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/general/default-config.md",
+    "code_blocks": [
+      {
+        "content": "# Update notification on login\n# Can be disabled when no internet connection is available\nupdate-notify: true\n\n# Automatically saves player data at a set interval.\n# Reload required when edited\nauto-save:\n  enabled: true\n  interval: 1800 # In seconds (1800 = 30 minutes)\n  log: true\n\n# Will verbose to the console whenever\n# data is saved/loaded from the SQL database.\ndebug: false\n\n# MySQL Support\nmysql:\n  enabled: false\n  host: localhost\n  port: 3306\n  database: minecraft\n  user: root\n  pass: ''\n  maxPoolSize: 10\n  maxLifeTime: 300000\n  connectionTimeOut: 10000\n  leakDetectionThreshold: 150000\n  properties:\n    cachePrepStmts: true\n    prepStmtCacheSize: 250\n    prepStmtCacheSqlLimit: 2048\n\n# Amount of slots in the inventory - has to be a multiple of 9.\n# Remember to update the slot numbers in items.yml after changing this option.\ninventory-slots: 36\n\n# Enable this option to move the accessory slots to the player\n# inventory. A tutorial is available on the resource page.\n# Requires a server reload when changed.\nno-custom-inventory: false\n\n# This prevents a known dupe bug so it is strongly\n# recommended to keep this set to true.\ndisable-equiping-stacked-items: true\n\n# Items will drop (when keep-inventory is disabled) on death.\n# Requires a server reload when changed.\ndrop-on-death: true\n\n# Available modules:\n# - aureliumskills (level only)\n# - battlelevels (level only)\n# - default (uses player's exp bar, level only)\n# - heroes\n# - mcmmo (level only)\n# - mcrpg (level only)\n# - mmocore\n# - proskillapi\n# - racesandclasses\n# - rpgplayerleveling (level only)\n# - skillapi\n# - fabled\n# - skills\n# - skillspro\nlevel-module: default\nclass-module: default\n\n# When enabled, MMOInventory with automatically generate the\n# necessary files for Oraxen inside of the following file:\n#     ~/plugins/Oraxen/items/mmoinventory-hook.yml\n#\n# Files are generated on server startup, so make sure you\n# restart your server when editing this option.\ngenerate-oraxen-files: false\n\n# Adds a static item to the player's inventory.\n# Opens up the custom inventory when clicked.\n# Requires a server reload when changed.\ninventory-button:\n  enabled: false\n  slot: 9\n  item:\n    material: CHEST\n    name: '&6Custom Inventory'\n    lore:\n      - ''\n      - '&eClick to open.'\n    # custom-model-data: 1\n    # skull-texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg5Yjk4ZjA0YzMyMjdkMzdkMzE5YmJjZmZjNTFmNTJlNzhkOTZhMDViMTI4NTJkMWI0NjRiYjc0MDhhNzgxMCJ9fX0=\n\n# Enable/disable auto resource pack download. Requires a server reload when changed.\n# Default RP: https://www.dropbox.com/s/1lftxmzh0q4b5yu/mmoinv_rp_4.zip?dl=1\nresource-pack:\n  enabled: true\n  url: resource_pack_url\n  delay: 20\n\n  # Kick player if he does not accept the server resource pack or\n  # if the download failed. Requires a server reload when changed.\n  kick:\n    enabled: false\n    message: 'Please accept server resource pack!'",
+        "sha256": "c36a6b0d20378a44b59424ca39e5e7f728a2572a1b9cd7f1d5e2f8515e43b4bf"
+      }
+    ],
+    "inline_code": [],
+    "units": [
+      1895
+    ]
+  },
+  {
+    "key": "mmoinventory_general_index.md",
+    "project": "MMOInventory",
+    "path": "/mmoinventory/general/",
+    "url": "https://docs.phoenixdevt.fr/mmoinventory/general/",
+    "file": "general.md",
+    "html": "sources/live/mmoinventory_general_index.html",
+    "title": "General",
+    "hash": "tO4nMSb8",
+    "sha256": "186cc41389bc77002f24da477a3311d1e827ed5974d870758ad507e9533140f0",
+    "main_chars": 9,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/general.md",
+    "code_blocks": [],
+    "inline_code": [],
+    "units": [
+      353
+    ]
+  },
+  {
+    "key": "mmoinventory_general_permissions.md",
+    "project": "MMOInventory",
+    "path": "/mmoinventory/general/permissions",
+    "url": "https://docs.phoenixdevt.fr/mmoinventory/general/permissions",
+    "file": "general/permissions.md",
+    "html": "sources/live/mmoinventory_general_permissions.html",
+    "title": "🧑‍⚖️ Permissions",
+    "hash": "CZbyLVJ3",
+    "sha256": "151dd21db7d9506456c71553303d7521ff4e6ffa1df8e25f1f95438140c8e74d",
+    "main_chars": 94,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/general/permissions.md",
+    "code_blocks": [],
+    "inline_code": [
+      "mmoinventory.admin"
+    ],
+    "units": [
+      354,
+      1167,
+      1896
+    ]
+  },
+  {
+    "key": "mmoinventory_general_placeholders.md",
+    "project": "MMOInventory",
+    "path": "/mmoinventory/general/placeholders",
+    "url": "https://docs.phoenixdevt.fr/mmoinventory/general/placeholders",
+    "file": "general/placeholders.md",
+    "html": "sources/live/mmoinventory_general_placeholders.html",
+    "title": "🏷️ Placeholders",
+    "hash": "CARouPvp",
+    "sha256": "f74a2cd219a19c20aa7f311e3ff8c88470563a48c7982aa585476c24d12fc23d",
+    "main_chars": 24,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/general/placeholders.md",
+    "code_blocks": [],
+    "inline_code": [],
+    "units": [
+      372,
+      1897
+    ]
+  },
+  {
+    "key": "mmoinventory_index.md",
+    "project": "MMOInventory",
+    "path": "/mmoinventory/",
+    "url": "https://docs.phoenixdevt.fr/mmoinventory/",
+    "file": "index.md",
+    "html": "sources/live/mmoinventory_index.html",
+    "title": "🏠 Home",
+    "hash": "B_k3oEoO",
+    "sha256": "1d015115f4e457cc4cd88e33c0b32b29814af1be714ee0028c43600f67a24733",
+    "main_chars": 497,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/index.md",
+    "code_blocks": [],
+    "inline_code": [],
+    "units": [
+      386,
+      1898,
+      1899,
+      283,
+      117,
+      1900,
+      1247,
+      1901
+    ]
+  },
+  {
+    "key": "mmoinventory_install.md",
+    "project": "MMOInventory",
+    "path": "/mmoinventory/install",
+    "url": "https://docs.phoenixdevt.fr/mmoinventory/install",
+    "file": "install.md",
+    "html": "sources/live/mmoinventory_install.html",
+    "title": "🔌 Installation Guide",
+    "hash": "CXDfNyDS",
+    "sha256": "8af279e2b2a7fbeb8cd35df41a9c061dbe103d7ff9e3f6673097c57da310bc1d",
+    "main_chars": 435,
+    "etag": null,
+    "last_modified": null,
+    "english": "sources/en/install.md",
+    "code_blocks": [],
+    "inline_code": [
+      "/plugins"
+    ],
+    "units": [
+      1250,
+      1902,
+      1903,
+      1904,
+      1905,
+      1906,
+      1907,
+      1908,
+      1909
+    ]
+  }
+]

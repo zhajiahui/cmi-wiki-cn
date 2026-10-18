@@ -1,0 +1,17 @@
+[
+  {
+    "page": "https://docs.phoenixdevt.fr/mmocore/general/commands",
+    "target": "https://docs.phoenixdevt.fr/mmocore/skills/intro#unlocking-skills",
+    "reason": "anchor absent in source"
+  },
+  {
+    "page": "https://docs.phoenixdevt.fr/mythiclib/scripts/mechanics/shapes",
+    "target": "https://docs.phoenixdevt.fr/mythiclib/scripts/conditions/misc#if-script-caster-can-damagetarget-entity",
+    "reason": "anchor absent in source"
+  },
+  {
+    "page": "https://docs.phoenixdevt.fr/mythiclib/skills/custom/fabled",
+    "target": "https://docs.phoenixdevt.fr/mythiclib/skills/custom/mythic#custom-skill-registration",
+    "reason": "anchor absent in source"
+  }
+]

@@ -1,0 +1,1697 @@
+[
+  {
+    "id": 116,
+    "source": "> **INFO**",
+    "zh": "> **信息**"
+  },
+  {
+    "id": 117,
+    "source": ">",
+    "zh": ">"
+  },
+  {
+    "id": 189,
+    "source": "📮 Events",
+    "zh": "📮 活动"
+  },
+  {
+    "id": 203,
+    "source": "API",
+    "zh": "API"
+  },
+  {
+    "id": 283,
+    "source": "> **TIP**",
+    "zh": "> **提示**"
+  },
+  {
+    "id": 297,
+    "source": "Features",
+    "zh": "特点"
+  },
+  {
+    "id": 338,
+    "source": "💾 Commands",
+    "zh": "💾 命令"
+  },
+  {
+    "id": 353,
+    "source": "General",
+    "zh": "一般"
+  },
+  {
+    "id": 354,
+    "source": "🧑‍⚖️ Permissions",
+    "zh": "🧑‍⚖️权限"
+  },
+  {
+    "id": 372,
+    "source": "🏷️ Placeholders",
+    "zh": "🏷️占位符"
+  },
+  {
+    "id": 386,
+    "source": "🏠 Home",
+    "zh": "🏠 首页"
+  },
+  {
+    "id": 430,
+    "source": "📦 Maven",
+    "zh": "📦Maven"
+  },
+  {
+    "id": 431,
+    "source": "Repository",
+    "zh": "存储库"
+  },
+  {
+    "id": 432,
+    "source": "We provide a Maven repository with API builds for all MMO plugins. Add our repository to your repository list:",
+    "zh": "我们为所有 MMO 插件提供了一个Maven存储库，其中包含API版本。将我们的存储库添加到你的存储库列表中："
+  },
+  {
+    "id": 433,
+    "source": "Dependency",
+    "zh": "依赖性"
+  },
+  {
+    "id": 434,
+    "source": "Include the following dependency in your Maven `pom.xml`",
+    "zh": "在你的Maven`pom.xml`中包含以下依赖项"
+  },
+  {
+    "id": 538,
+    "source": "> **WARNING**",
+    "zh": "> **警告**"
+  },
+  {
+    "id": 632,
+    "source": "Placeholders",
+    "zh": "占位符"
+  },
+  {
+    "id": 846,
+    "source": "[BeautyQuests](https://www.spigotmc.org/resources/beautyquests.39255/)",
+    "zh": "[BeautyQuests](https://www.spigotmc.org/resources/beautyquests.39255/)"
+  },
+  {
+    "id": 847,
+    "source": "[Quests](https://www.spigotmc.org/resources/quests.3711/)",
+    "zh": "[任务](https://www.spigotmc.org/resources/quests.3711/)"
+  },
+  {
+    "id": 848,
+    "source": "[QuestCreator](https://www.spigotmc.org/resources/questcreator-new-sqlite-support-and-data-conversion.38734/)",
+    "zh": "[任务创造者](https://www.spigotmc.org/resources/questcreator-new-sqlite-support-and-data-conversion.38734/)"
+  },
+  {
+    "id": 1184,
+    "source": "Main Placeholders",
+    "zh": "主机占位符"
+  },
+  {
+    "id": 1185,
+    "source": "| **Placeholder** | **Description** |",
+    "zh": "| **占位符** | **描述** |"
+  },
+  {
+    "id": 1247,
+    "source": "If something is not quite clear, please join our [Discord](https://phoenixdevt.fr/discord) server to get help from staff or community! We do our best to keep this wiki up to date. Let us know if you see a typo or anything outdated!",
+    "zh": "有疑问时，可以加入 [Discord](https://phoenixdevt.fr/discord)，向工作人员或社区求助。Wiki 会尽量保持更新；发现错字或过时内容时，也欢迎反馈。"
+  },
+  {
+    "id": 1250,
+    "source": "🔌 Installation Guide",
+    "zh": "🔌 安装指南"
+  },
+  {
+    "id": 1888,
+    "source": "| Command | Description |",
+    "zh": "|命令 |描述 |"
+  },
+  {
+    "id": 2304,
+    "source": "Permissions",
+    "zh": "权限"
+  },
+  {
+    "id": 2624,
+    "source": "| Permission | Description |",
+    "zh": "|权限|描述 |"
+  },
+  {
+    "id": 3010,
+    "source": "📦 Custom Data Modules",
+    "zh": "📦 自定义数据模块"
+  },
+  {
+    "id": 3011,
+    "source": "A profile data module corresponds to a plugin that owns profile-dependant data. All MMO plugins have their own profile data module. When a player selects a profile, MMOProfiles asks to all profile data modules to load the profile data of the selected player profile, for the given player. MMOProfiles does not let the user play (nor quit the profile selection area) before ALL profile data modules have successfully loaded their profile-dependant data.",
+    "zh": "档案数据模块对应于拥有profile-dependant数据的插件。所有 MMO 插件都有自己的档案数据模块。当玩家选择档案时，MMOProfiles要求所有档案数据模块加载所选玩家档案的档案数据，对于给定的玩家。  在所有档案数据模块成功加载其profile-dependant数据之前，MMOProfiles不会让用户玩（也不会退出档案选择区域）。"
+  },
+  {
+    "id": 3012,
+    "source": "If you have a plugin that owns profile-dependant data (quest progress, custom inventories, player leveling, professions, etc...) you will have to implement your own `ProfileDataModule` and register it in MMOProfiles.",
+    "zh": "如果你有一个拥有profile-dependant数据的插件（任务进度、自定义物品栏、玩家升级、职业等...），你将必须实现自己的`ProfileDataModule`并将其注册到MMOProfiles中。"
+  },
+  {
+    "id": 3013,
+    "source": "Implement `ProfileDataModule`",
+    "zh": "实施`ProfileDataModule`"
+  },
+  {
+    "id": 3014,
+    "source": "The `ProfileDataModule` interface has two methods:",
+    "zh": "`ProfileDataModule`接口有两种方法："
+  },
+  {
+    "id": 3015,
+    "source": "`#getOwningPlugin()` which should return the main instance of your plugin",
+    "zh": "`#getOwningPlugin()`应该返回插件的主实例"
+  },
+  {
+    "id": 3016,
+    "source": "`#getId()` which should return a unique name-spaced key. It will be used by MMOProfiles to parse profile placeholders (see below).",
+    "zh": "`#getId()`应该返回唯一的name-spaced密钥。MMOProfiles将使用它来解析档案占位符（见下文）。"
+  },
+  {
+    "id": 3017,
+    "source": "Events to listen to",
+    "zh": "值得聆听的活动"
+  },
+  {
+    "id": 3018,
+    "source": "MMOProfiles expects EVERY profile data module to listen to the following events. You will find more information about these events in the [following Wiki page](https://docs.phoenixdevt.fr/mmoprofiles/api/events).",
+    "zh": "MMOProfiles期望每个档案数据模块侦听以下事件。你将在[以下 Wiki 页面](https://docs.phoenixdevt.fr/mmoprofiles/api/events)中找到有关这些事件的更多信息。"
+  },
+  {
+    "id": 3019,
+    "source": "`ProfileSelectEvent` called when a player selects a profile.",
+    "zh": "`ProfileSelectEvent`在玩家选择档案时调用。"
+  },
+  {
+    "id": 3020,
+    "source": "`ProfileUnloadEvent` called when a player unselects a profile.",
+    "zh": "当玩家取消选择档案时调用`ProfileUnloadEvent`。"
+  },
+  {
+    "id": 3021,
+    "source": "`ProfileCreateEvent` called when a player creates a new profile.",
+    "zh": "`ProfileCreateEvent`在玩家创建新档案时调用。"
+  },
+  {
+    "id": 3022,
+    "source": "`ProfileRemoveEvent` called when a player deletes a profile.",
+    "zh": "`ProfileRemoveEvent`在玩家删除档案时调用。"
+  },
+  {
+    "id": 3023,
+    "source": "These events have a method called `#validate(ProfileDataModule)` which needs to be called (passing your profile data module instance as argument) when your plugin is done loading/unloading profile-specific data.",
+    "zh": "这些事件有一个名为`#validate(ProfileDataModule)`的方法，当你的插件完成加载/卸载profile-specific数据时需要调用该方法（将你的档案数据模块实例作为参数传递）。"
+  },
+  {
+    "id": 3024,
+    "source": "> A reference implementation of the `ProfileDataModule` interface can be found in MythicLib, in the `DefaultProfileDataModule` class.",
+    "zh": ">`ProfileDataModule`接口的参考实现可以在`DefaultProfileDataModule`类的MythicLib中找到。"
+  },
+  {
+    "id": 3025,
+    "source": "The following code snippet provides a pseudo-code for what is supposed to happen on `ProfileSelectEvent` and `ProfileUnloadEvent`. When a profile is selected, profile data is loaded asynchronously, and the `#validate` method is called afterwards. MMOProfiles only lets the player join the server when all registered profile data modules have called this method. When a profile is unselected, profile data is unloaded and saved asynchronously, after which the `#validate` method is called.",
+    "zh": "以下代码片段为`ProfileSelectEvent`和`ProfileUnloadEvent`上应该发生的情况提供了pseudo-code。选择档案后，将异步加载档案数据，然后调用`#validate`方法。  当所有已注册的档案数据模块都调用此方法时，MMOProfiles仅允许玩家加入服务器。取消选择档案时，将异步卸载并保存档案数据，然后调用`#validate`方法。"
+  },
+  {
+    "id": 3026,
+    "source": "Why and when to validate player sessions",
+    "zh": "为何以及何时验证玩家会话"
+  },
+  {
+    "id": 3027,
+    "source": "When the player joins the server and selects a profile, MMOProfiles waits until all plugins have loaded their player data before teleporting the player. In the mean time, they are usually left in a \"profile selection black box\" in order to avoid unwanted interactions during inconsistent player data states.",
+    "zh": "当玩家加入服务器并选择档案时，MMOProfiles会等待所有插件加载其玩家数据，然后再传送玩家。同时，它们通常被留在“档案选择黑匣子”中，以避免在不一致的玩家数据状态期间发生不必要的交互。"
+  },
+  {
+    "id": 3028,
+    "source": "You don't actually need to call the `#validate` method right away. In fact, you are encouraged to defer calling it until the player data has been loaded from the database.",
+    "zh": "你实际上不需要立即调用`#validate`方法。事实上，我们建议你推迟调用它，直到从数据库加载玩家数据为止。"
+  },
+  {
+    "id": 3029,
+    "source": "> The `#validate` method must be called from the main server thread, or it will raise an exception.",
+    "zh": ">`#validate`方法必须从主服务器线程调用，否则会引发异常。"
+  },
+  {
+    "id": 3030,
+    "source": "Failure to call the `#validate` (due to a previously unhandled exception, for instance) will result in the player's session freezing, and the player being stuck in the profile selection limbo. After a few seconds of session inactivity, MythicLib will start raising \"ghost session\" warnings in the console.",
+    "zh": "未能调用`#validate`（例如，由于之前未处理的异常）将导致玩家的会话冻结，并且玩家陷入档案选择困境。会话不活动几秒钟后，MythicLib将开始在控制台中引发“幽灵会话”警告。"
+  },
+  {
+    "id": 3031,
+    "source": "Register your instance of `ProfileDataModule`",
+    "zh": "注册你的`ProfileDataModule`实例"
+  },
+  {
+    "id": 3032,
+    "source": "Use the following method in the `#onEnable` of your plugin to register your instance of `ProfileDataModule`. If your module is an instance of `Listener`, MMOProfiles will register its events for you.",
+    "zh": "在插件的`#onEnable`中使用以下方法来注册`ProfileDataModule`的实例。如果你的模块是`Listener`的实例，则MMOProfiles将为你注册其事件。"
+  },
+  {
+    "id": 3033,
+    "source": "Profile Creation and Removal",
+    "zh": "档案创建和删除"
+  },
+  {
+    "id": 3034,
+    "source": "When a profile is created, `ProfileCreateEvent` is called. This event contains the player UUID and the profile UUID of the newly created profile. You can listen to this event to perform actions when a new profile is created. This event stores a `CompletableFuture<Void>` which is completed once all data modules have validated this event.",
+    "zh": "创建档案时，将调用`ProfileCreateEvent`。此事件包含玩家UUID和新创建的档案的档案UUID。你可以侦听此事件以在创建新档案时执行操作。该事件存储`CompletableFuture<Void>`，一旦所有数据模块验证该事件，该事件就完成。"
+  },
+  {
+    "id": 3035,
+    "source": "`ProfileRemoveEvent` is called when a user permanently deletes one of their profile. You can use this event to remove the record corresponding to the deleted profile in your plugin's database. This event stores a `CompletableFuture<Void>` which is completed once all data modules have validated this event.",
+    "zh": "当用户永久删除其个人资料之一时，将调用`ProfileRemoveEvent`。你可以使用此事件删除插件数据库中与已删除档案相对应的记录。该事件存储`CompletableFuture<Void>`，一旦所有数据模块验证该事件，该事件就完成。"
+  },
+  {
+    "id": 3036,
+    "source": "Profile Selection and Unselection",
+    "zh": "档案选择和取消选择"
+  },
+  {
+    "id": 3037,
+    "source": "When a player selects a profile, `ProfileSelectEvent` is called. When all data modules have validated this event, the profile is applied to the player, that is, the player is teleported to its previous location, its inventory is restored, etc...",
+    "zh": "当玩家选择档案时，会调用`ProfileSelectEvent`。当所有数据模块都验证了此事件后，档案将应用于玩家，即玩家被传送到其先前的位置，其物品栏被恢复，等等..."
+  },
+  {
+    "id": 3038,
+    "source": "When a player unselects a profile by either logging out, quitting their profile or switching to another profile, `ProfileUnloadEvent` is called.",
+    "zh": "当玩家通过注销、退出其档案或切换到另一个档案来取消选择档案时，将调用`ProfileUnloadEvent`。"
+  },
+  {
+    "id": 3039,
+    "source": "In case of a profile switch, `ProfileUnloadEvent` is guaranteed to be called before the `ProfileSelectEvent` of the new profile. In case of a logout or upon quiting the current profile with no switch, only `ProfileUnloadEvent` is called. On logouts, `ProfileUnloadEvent` is guaranteed to be called after `PlayerQuitEvent`.",
+    "zh": "在档案切换的情况下，保证在新档案的`ProfileSelectEvent`之前调用`ProfileUnloadEvent`。如果注销或在没有切换的情况下退出当前档案，则仅调用`ProfileUnloadEvent`。注销时，保证在`PlayerQuitEvent`之后调用`ProfileUnloadEvent`。"
+  },
+  {
+    "id": 3040,
+    "source": "Proxy-Mode Events",
+    "zh": "Proxy-Mode活动"
+  },
+  {
+    "id": 3041,
+    "source": "When proxy-mode profiles are enabled, `PlayerIdDispatchEvent` is called at least one tick after the player joins (after `PlayerJoinEvent`) when the proxy finally provides the backend server with the player's real UUID and profile UUID.",
+    "zh": "当启用proxy-mode档案时，当代理最终向后端服务器提供玩家的真实UUID和档案UUID时，在玩家加入后（在`PlayerJoinEvent`之后）至少调用`PlayerIdDispatchEvent`。"
+  },
+  {
+    "id": 3042,
+    "source": "> When the player joins the server, the player already has its spoofed UUID, as spoofing happens at the proxy-level. Therefore, the player's official UUID (as well as other generic player information) need to be forwarded from the proxy to the backend server, via plugin messages. `PlayerIdDispatchEvent` is called when the backend server receives this information from the proxy.",
+    "zh": "> 当玩家加入服务器时，玩家已经有了其欺骗的UUID，因为欺骗发生在proxy-level。因此，玩家的官方UUID（以及其他通用玩家信息）需要通过插件消息从代理转发到后端服务器。  当后端服务器从代理接收到此信息时，将调用`PlayerIdDispatchEvent`。"
+  },
+  {
+    "id": 3043,
+    "source": "🏷️ Adding Placeholders",
+    "zh": "🏷️添加占位符"
+  },
+  {
+    "id": 3044,
+    "source": "Plugins like MMOCore implement custom profile placeholders like profile class, level and experience. Such placeholders depend on the player profile, so a little bit of extra work is required compared to regular PAPI placeholders.",
+    "zh": "像MMOCore这样的插件实现了自定义档案占位符，例如档案类别、等级和经验。此类占位符依赖于玩家档案，因此与常规PAPI占位符相比需要一点额外的工作。"
+  },
+  {
+    "id": 3045,
+    "source": "![image](https://docs.phoenixdevt.fr/assets/placeholders.Ju2RzU_3.png)",
+    "zh": "![图片](https://docs.phoenixdevt.fr/assets/placeholders.Ju2RzU_3.png)"
+  },
+  {
+    "id": 3046,
+    "source": "Implement `PlaceholderProcessor`",
+    "zh": "实施`PlaceholderProcessor`"
+  },
+  {
+    "id": 3047,
+    "source": "The `PlaceholderProcessor` interface has two methods:",
+    "zh": "`PlaceholderProcessor`接口有两种方法："
+  },
+  {
+    "id": 3048,
+    "source": "`#getDataModule()` which should return your profile data module.",
+    "zh": "`#getDataModule()`应该返回你的档案数据模块。"
+  },
+  {
+    "id": 3049,
+    "source": "`#processPlaceholderRequest(PlaceholderRequest)` which is the most important method of the interface. This should asynchronously fetch profile data, extract information from it and register its placeholders, and eventually call the `#validate()` method on the `PlaceholderRequest` instance.",
+    "zh": "`#processPlaceholderRequest(PlaceholderRequest)`这是该接口最重要的方法。这应该异步获取档案数据，从中提取信息并注册其占位符，并最终在`PlaceholderRequest`实例上调用`#validate()`方法。"
+  },
+  {
+    "id": 3050,
+    "source": "For example, here is the MMOCore implementation of the `#processPlaceholderRequest` method.",
+    "zh": "例如，以下是`#processPlaceholderRequest`方法的MMOCore实现。"
+  },
+  {
+    "id": 3051,
+    "source": "Here is how your `#processPlaceholderRequest` should look like:",
+    "zh": "你的`#processPlaceholderRequest`应该如下所示："
+  },
+  {
+    "id": 3052,
+    "source": "Use `phRequest.getProfile().getUniqueId()` to access the UUID of the profile,",
+    "zh": "使用`phRequest.getProfile().getUniqueId()`访问档案的UUID，"
+  },
+  {
+    "id": 3053,
+    "source": "Load your profile data asynchronously (using async Bukkit tasks!),",
+    "zh": "异步加载你的档案数据（使用异步Bukkit任务！），"
+  },
+  {
+    "id": 3054,
+    "source": "Once data is loaded, register as many placeholders as needed using `phRequest.addPlaceholder(String, String)`. The first argument should be the placeholder key, like `class` or `level`, the second argument should be the placeholder string value. If your profile data module identifier is `mmocore`, and the placeholder key is `class` then the final placeholder would be `mmocore_class`,",
+    "zh": "加载数据后，使用`phRequest.addPlaceholder(String, String)`根据需要注册尽可能多的占位符。第一个参数应该是占位符键，例如`class`或`level`，第二个参数应该是占位符字符串值。如果你的档案数据模块标识符是`mmocore`，并且占位符密钥是`class`那么最终的占位符将是`mmocore_class`，"
+  },
+  {
+    "id": 3055,
+    "source": "Inform MMOProfiles you are done registering placeholders using `phRequest.validate()`.",
+    "zh": "通知MMOProfiles你已完成使用`phRequest.validate()`注册占位符。"
+  },
+  {
+    "id": 3056,
+    "source": "Register your instance of `PlaceholderProcessor`",
+    "zh": "注册你的`PlaceholderProcessor`实例"
+  },
+  {
+    "id": 3057,
+    "source": "Use the following method to register your placeholder processor, this must be done when registering your profile data module.",
+    "zh": "使用以下方法注册你的占位符处理器，必须在注册你的档案数据模块时完成此操作。"
+  },
+  {
+    "id": 3058,
+    "source": "🫅 Player Data",
+    "zh": "🫅玩家数据"
+  },
+  {
+    "id": 3059,
+    "source": "Once you have retrieved an instance of `ProfileProvider`, you can access data of online players using the following method. The player data class is `ProfileList`.",
+    "zh": "检索到`ProfileProvider`的实例后，你可以使用以下方法访问在线玩家的数据。玩家数据类是`ProfileList`。"
+  },
+  {
+    "id": 3060,
+    "source": "You can also access the profile list and current profile of a player using the following methods. The profile class is `PlayerProfile`.",
+    "zh": "你还可以使用以下方法访问玩家的档案列表和当前档案。档案类别为`PlayerProfile`。"
+  },
+  {
+    "id": 3061,
+    "source": "Once you have an instance of `PlayerProfile`, you can retrieve information about that profile, including its health, attribute data, inventories... Most methods are pretty straight-forward and close to their Bukkit equivalent.",
+    "zh": "一旦你拥有`PlayerProfile`的实例，你就可以检索有关该档案的信息，包括其运行状况、属性数据、物品栏...大多数方法都非常漂亮straight-forward并且接近其Bukkit等效项。"
+  },
+  {
+    "id": 3062,
+    "source": "Location maps",
+    "zh": "位置图"
+  },
+  {
+    "id": 3063,
+    "source": "> Using MMOProfiles on proxied servers comes with a few challenges, including correctly handling player locations. Players can log out in a server with a specific map, and log back in a server where this map does not exist. In other words, there is no one-to-one correspondence between maps across backend servers.",
+    "zh": "> 在代理服务器上使用MMOProfiles会带来一些挑战，包括正确处理玩家位置。玩家可以在具有特定地图的服务器中注销，并在不存在该地图的服务器中重新登录。换句话说，跨后端服务器的地图之间不存在one-to-one对应关系。"
+  },
+  {
+    "id": 3064,
+    "source": "Where you'd need to store a Bukkit `Location`, MMOProfiles now stores a `LocationMap` instead. Location maps simply bind locations to *servers groups* (see [below](https://docs.phoenixdevt.fr/mmoprofiles/api/player-data#server-groups)). If two servers are in the same group, MMOProfiles will use the same locations for these two servers. It is the responsibility of the admin to correctly setup server groups.",
+    "zh": "在你需要存储Bukkit`Location`的地方，MMOProfiles现在改为存储`LocationMap`。位置映射只是将位置绑定到*服务器组*（参见[下面的](https://docs.phoenixdevt.fr/mmoprofiles/api/player-data#server-groups)）。如果两台服务器位于同一组中，MMOProfiles将为这两台服务器使用相同的位置。管理员有责任正确设置服务器组。"
+  },
+  {
+    "id": 3065,
+    "source": "`PlayerProfile#getLocation()` returns the last location of the profile, in the server group of the running server. Note that if server groups have not been setup correctly, and MMOProfiles finds a non existing world, this method will fallback to the profile selection location.",
+    "zh": "`PlayerProfile#getLocation()`返回档案在运行服务器的服务器组中的最后位置。请注意，如果服务器组尚未正确设置，并且MMOProfiles发现不存在的世界，则此方法将回退到档案选择位置。"
+  },
+  {
+    "id": 3066,
+    "source": "`PlayerProfile#getLocationMap()` returns an instance of `LocationMap`. Location maps are also used for the player's last location, bed spawn point and compass target location.",
+    "zh": "`PlayerProfile#getLocationMap()`返回`LocationMap`的实例。位置图还用于玩家的最后位置、床生成点和罗盘目标位置。"
+  },
+  {
+    "id": 3067,
+    "source": "Note that MMOProfiles uses a custom object `WrappedLocation` to store players' locations inside location maps. The only difference with the Bukkit counterpart `Location` is that the `World` object is not parsed (world name is saved as a string), to avoid MMOProfiles running into an exception.",
+    "zh": "请注意，MMOProfiles使用自定义对象`WrappedLocation`来存储玩家位置图中的位置。与Bukkit对应的`Location`的唯一区别是`World`对象没有被解析（世界名称保存为字符串），以避免MMOProfiles遇到异常。"
+  },
+  {
+    "id": 3068,
+    "source": "Server Groups",
+    "zh": "服务器组"
+  },
+  {
+    "id": 3069,
+    "source": "By \"server group\" we refer to all servers on a proxy which share the same **server identifier**. The server identifier is a small piece of text that you can configure inside your MMOProfiles `config.yml`. Since this config file is server-specific, multiple servers may have different server identifiers.",
+    "zh": "通过“服务器组”，我们指的是代理上共享相同**服务器标识符**的所有服务器。服务器标识符是一小段文本，你可以在MMOProfiles`config.yml`中配置它。由于此配置文件是server-specific，因此多个服务器可能具有不同的服务器标识符。"
+  },
+  {
+    "id": 3070,
+    "source": "Two servers with the same identifier are in the same group. By default, all servers are within the same group with identifier `default`.",
+    "zh": "具有相同标识符的两台服务器属于同一组。默认情况下，所有服务器都位于标识符为`default`的同一组中。"
+  },
+  {
+    "id": 3071,
+    "source": "🪣 API Usage",
+    "zh": "🪣API用法"
+  },
+  {
+    "id": 3072,
+    "source": "The main API class is `ProfileProvider`. You can access the MMOProfiles implementation of this interface using Bukkit's service provider.",
+    "zh": "主要的API类是`ProfileProvider`。你可以使用Bukkit的服务提供者访问此接口的MMOProfiles实现。"
+  },
+  {
+    "id": 3073,
+    "source": "This service is provided by MMOProfiles when the plugin enables. If you want to access this service from inside your plugin's `onEnable`, you need to declare MMOProfiles as a soft (or hard) dependency in your plugin `plugin.yml`.",
+    "zh": "当插件启用时，该服务由MMOProfiles提供。如果你想从插件的`onEnable`内部访问此服务，你需要在插件`plugin.yml`中将MMOProfiles声明为软（或硬）依赖项。"
+  },
+  {
+    "id": 3074,
+    "source": "Check if Proxy-mode profiles is on",
+    "zh": "检查Proxy-mode档案是否打开"
+  },
+  {
+    "id": 3075,
+    "source": "The following code snippet can be used to check if MMOProfiles is currently running proxy-mode profiles.",
+    "zh": "以下代码片段可用于检查MMOProfiles当前是否正在运行proxy-mode档案。"
+  },
+  {
+    "id": 3076,
+    "source": "🦾 Compatibility",
+    "zh": "🦾 兼容性"
+  },
+  {
+    "id": 3077,
+    "source": "The main feature of this plugin is to enable other plugins to use its API and also have profile-based data. A plugin that supports MMOProfiles will have its data saved for the profile and not for the player, and changing profile will be as if you logged in with a different account.",
+    "zh": "插件的主要用途是让其他插件通过 API，按档案分别保存数据。支持 MMOProfiles 的插件会将数据保存到档案下，而不是直接保存到玩家名下，因此切换档案就像换了一个账号登录。"
+  },
+  {
+    "id": 3078,
+    "source": "MMO Plugins",
+    "zh": "大型多人在线游戏插件"
+  },
+  {
+    "id": 3079,
+    "source": "The full MMO plugin suite ([MMOCore](https://docs.phoenixdevt.fr/mmocore/), [MMOInventory](https://docs.phoenixdevt.fr/mmoinventory/), [MMOItems](https://docs.phoenixdevt.fr/mmoitems/), [MythicLib](https://docs.phoenixdevt.fr/mythiclib/)) **FULLY SUPPORTS** profile-based data storage.",
+    "zh": "整个 MMO 插件系列（[MMOCore](https://docs.phoenixdevt.fr/mmocore/)、[MMOInventory](https://docs.phoenixdevt.fr/mmoinventory/)、[MMOItems](https://docs.phoenixdevt.fr/mmoitems/)、[MythicLib](https://docs.phoenixdevt.fr/mythiclib/)）**完整支持**按档案保存数据。"
+  },
+  {
+    "id": 3080,
+    "source": "Vault Economy",
+    "zh": "Vault经济型"
+  },
+  {
+    "id": 3081,
+    "source": "MMOProfiles saves the player's Vault balance. This way, any Vault-based economy plugin is supported by MMOProfiles.",
+    "zh": "MMOProfiles 会保存玩家的 Vault 余额，因此支持所有通过 Vault 接入的经济插件。"
+  },
+  {
+    "id": 3082,
+    "source": "CoreTools",
+    "zh": "CoreTools"
+  },
+  {
+    "id": 3083,
+    "source": "CoreTools ([SpigotMC](https://www.spigotmc.org/resources/coretools.125126) - [Polymart](https://polymart.org/product/7372/coretools) - [Wiki](https://gitlab.com/ranetdev/CoreTools/-/wikis/home)) fully supports profile-based data storage.",
+    "zh": "CoreTools（[SpigotMC](https://www.spigotmc.org/resources/coretools.125126) - [Polymart](https://polymart.org/product/7372/coretools) - [Wiki](https://gitlab.com/ranetdev/CoreTools/-/wikis/home)）完整支持按档案保存数据。"
+  },
+  {
+    "id": 3084,
+    "source": "BeautyQuests new",
+    "zh": "美丽探索 新"
+  },
+  {
+    "id": 3085,
+    "source": "[BeautyQuests](https://www.spigotmc.org/resources/beautyquests.39255) supports MMOProfiles, enabling profile-specific quest progression. To enable compatibility with BeautyQuests, download and install [AccountsHook](https://www.spigotmc.org/resources/accountshook.59491/), which exposes the MMOProfiles profile API to BeautyQuests.",
+    "zh": "[BeautyQuests](https://www.spigotmc.org/resources/beautyquests.39255) 支持 MMOProfiles，可以为各个档案分别记录任务进度。要启用兼容，请下载安装 [AccountsHook](https://www.spigotmc.org/resources/accountshook.59491/)，将 MMOProfiles 的档案 API 提供给 BeautyQuests。"
+  },
+  {
+    "id": 3086,
+    "source": "> You no longer need to install the addon called *AccountsHook-MMOProfiles*.",
+    "zh": "> 已不再需要安装名为 *AccountsHook-MMOProfiles* 的附加插件。"
+  },
+  {
+    "id": 3087,
+    "source": "BetonQuest",
+    "zh": "贝顿探索"
+  },
+  {
+    "id": 3088,
+    "source": "BetonQuest is on its way to supporting MMOProfiles natively. The plugin already has a profile system ready for players to have multiple profiles, so MMOProfiles integration is on its way!",
+    "zh": "BetonQuest 正在开发对 MMOProfiles 的原生支持。它已有支持玩家使用多个档案的档案系统，相关兼容仍在推进。"
+  },
+  {
+    "id": 3089,
+    "source": "⚙️ Config Options",
+    "zh": "⚙️ 配置选项"
+  },
+  {
+    "id": 3090,
+    "source": "Different map servers",
+    "zh": "不同的地图服务器"
+  },
+  {
+    "id": 3091,
+    "source": "This is a useful option when connecting multiple servers which do not share the same maps. Imagine a player quits a server and joins another one: should they be teleported to their last location with no direct correspondence with the server they just joined, as the maps are not the same?",
+    "zh": "当多台服务器使用不同地图时，此选项很有用。例如，玩家退出一台服务器后进入另一台，是否还应传送到上次的位置？两台服务器的地图不同，坐标可能无法直接对应。"
+  },
+  {
+    "id": 3092,
+    "source": "This is only an issue with survival servers as most full-RPG server proxies use a shared ungriefable map.",
+    "zh": "这主要是生存服务器的问题，因为大多数纯 RPG 群组服务器使用共享且不允许玩家破坏的地图。"
+  },
+  {
+    "id": 3093,
+    "source": "This issue applies to the following location-based data types:",
+    "zh": "受影响的是以下与位置有关的数据："
+  },
+  {
+    "id": 3094,
+    "source": "last location",
+    "zh": "上次所在位置"
+  },
+  {
+    "id": 3095,
+    "source": "bed spawn point",
+    "zh": "床的重生点"
+  },
+  {
+    "id": 3096,
+    "source": "compass target",
+    "zh": "指南针目标"
+  },
+  {
+    "id": 3097,
+    "source": "This issue can be fixed by giving servers a different server identifier. Servers with the same identifier will share saved locations, but servers with two different IDs will NOT share location-based player data.",
+    "zh": "为使用不同地图的服务器设置不同的服务器标识符，可以解决此问题。标识符相同的服务器会共享已保存的位置；标识符不同的服务器**不会**共享与位置有关的玩家数据。"
+  },
+  {
+    "id": 3098,
+    "source": "Synced data",
+    "zh": "同步数据"
+  },
+  {
+    "id": 3099,
+    "source": "This field enables you to enable or disable sync for all the vanilla features. If a field is set to false then changing profile won't change the corresponding data.",
+    "zh": "这些字段用于分别开启或关闭原版数据的同步。某项设为 false 后，切换档案时就不会改变对应数据。"
+  },
+  {
+    "id": 3100,
+    "source": "Spawn Locations",
+    "zh": "出生位置"
+  },
+  {
+    "id": 3101,
+    "source": "`profile-selection-location` is where the players are teleported when joining the server, in order to choose their profile. It should be a closed or confined area where they can't see much as they might be able to move while the profile selection UI is closed.",
+    "zh": "`profile-selection-location` 是玩家加入服务器后选择档案时被传送到的位置。这里应当是封闭或受限区域，让玩家看不到太多内容，因为档案选择界面关闭时，玩家可能仍能移动。"
+  },
+  {
+    "id": 3102,
+    "source": "`new-profile-spawn-point` is where players are teleported when starting playing with a profile they just created. It could be some location telling command blocks/another plugin to just random-teleport them somewhere else.",
+    "zh": "`new-profile-spawn-point` 是玩家开始使用新建档案时被传送到的位置。也可以将它设置在某个位置，再让命令方块或其他插件将玩家随机传送到别处。"
+  },
+  {
+    "id": 3103,
+    "source": "Profile Names",
+    "zh": "档案名称"
+  },
+  {
+    "id": 3104,
+    "source": "When enabled, profiles have names and users are asked to provide a name when creating a new profile. When disabled, MMOProfiles will just use \"Profile nX\" where X is the profile number.",
+    "zh": "启用后，档案有各自的名称，创建时会要求玩家输入名称。关闭后，MMOProfiles 使用“Profile nX”，其中 X 为档案编号。"
+  },
+  {
+    "id": 3105,
+    "source": "Default Profile",
+    "zh": "默认档案"
+  },
+  {
+    "id": 3106,
+    "source": "> Risk of data loss! Toggling off this option will make existing players lose data if it is not associated with any profile! This is why it is toggled ON by default.",
+    "zh": "> 存在数据丢失风险！关闭此选项后，现有玩家未关联任何档案的数据会丢失。这也是默认启用此选项的原因。"
+  },
+  {
+    "id": 3107,
+    "source": "When enabled, players who are not joining the server for the first time will have a default profile containing their previous player data. This is a mandatory option for existing production servers willing to install MMOProfiles while a player base has already built.",
+    "zh": "启用后，之前已在服务器游玩过的玩家会获得一个默认档案，其中保留其原有数据。已有玩家基础的正式服务器安装 MMOProfiles 时，必须启用此项。"
+  },
+  {
+    "id": 3108,
+    "source": "How to handle deleted worlds",
+    "zh": "处理已删除的世界"
+  },
+  {
+    "id": 3109,
+    "source": "This option fixes players respawning in deleted worlds.",
+    "zh": "此选项用于解决玩家在已删除世界中重新出现的问题。"
+  },
+  {
+    "id": 3110,
+    "source": "Profile plugins have issues with Dungeons plugins as players sometimes respawn in a temporary dungeon world which no longer exists. To fix this, MMOProfiles stores the last player's location outside of these temporary worlds, in case a player logs out while still being in one of them.",
+    "zh": "档案插件与地牢插件配合时，玩家有时会在已不存在的临时地牢世界中重新出现。为此，MMOProfiles 会保存玩家最近一次位于临时世界以外的位置，以处理玩家仍在临时世界中就退出的情况。"
+  },
+  {
+    "id": 3111,
+    "source": "Permanent worlds are not temporary, which means MMOProfiles is allowed to have players respawn in these worlds instead. If MMOProfiles finds no recent permanent world in which the player was, it will simply bring the player back to the profile spawn point which is sometimes unwanted behaviour. If the world still exists however, the player will respawn normally.",
+    "zh": "永久世界不会被临时删除，因此 MMOProfiles 允许玩家在这些世界中重新出现。如果找不到玩家最近所在的永久世界，MMOProfiles 就会将玩家送回档案出生点，这有时并不符合预期。如果该世界仍然存在，玩家就会正常出现在原处。"
+  },
+  {
+    "id": 3112,
+    "source": "Blacklist for inventory slot",
+    "zh": "物品栏槽位黑名单"
+  },
+  {
+    "id": 3113,
+    "source": "This option can be used to prevent MMOProfiles to interact with specific slots used as buttons for other plugins like MMOInventory or ItemJoin. Leave to [] to disable. Example: `[ 9, 10, 11, 12 ]`",
+    "zh": "可用此项禁止 MMOProfiles 处理某些槽位，例如 MMOInventory 或 ItemJoin 用作按钮的槽位。设为 [] 即关闭。示例：`[ 9, 10, 11, 12 ]`"
+  },
+  {
+    "id": 3114,
+    "source": "Reopen GUI",
+    "zh": "重新打开界面"
+  },
+  {
+    "id": 3115,
+    "source": "Amount of ticks MMOProfiles will wait before opening the profile selection GUI again, in case the player hasn't chosen a profile yet.",
+    "zh": "玩家尚未选择档案时，MMOProfiles 再次打开档案选择界面前等待的时间，单位为刻（tick）。"
+  },
+  {
+    "id": 3116,
+    "source": "Force gamemode",
+    "zh": "强制游戏模式"
+  },
+  {
+    "id": 3117,
+    "source": "When enabled, sets the player's game mode on profile selection.",
+    "zh": "启用后，会在选择档案时设置玩家的游戏模式。"
+  },
+  {
+    "id": 3118,
+    "source": "Unique Profile",
+    "zh": "单一档案"
+  },
+  {
+    "id": 3119,
+    "source": "This plugin can also be used in a totally different way to synchronize all the player data between multiple proxy-connected (BungeeCord/Velocity) servers. This can be achieved by setting the field `unique-profile` to true.",
+    "zh": "也可以用此插件在通过 BungeeCord/Velocity 代理连接的多台服务器之间，同步玩家的全部数据。将 `unique-profile` 设为 true 即可。"
+  },
+  {
+    "id": 3120,
+    "source": "In this mode, the profile selection UI never shows up, and the plugin is totally invisible for the players. It only synchronizes all the vanilla & plugin data of a player between multiple servers.",
+    "zh": "此模式下不会显示档案选择界面，玩家看不到插件的操作界面。插件只负责在多台服务器之间同步玩家的全部原版数据和插件数据。"
+  },
+  {
+    "id": 3121,
+    "source": "How to handle resource packs",
+    "zh": "处理资源包"
+  },
+  {
+    "id": 3122,
+    "source": "If you have a server resource pack, toggle on this option. MMOProfiles will wait for your resource pack to fully load before opening the profile selection UI for the first time.",
+    "zh": "如果服务器使用资源包，请启用此项。MMOProfiles 会等待资源包完全加载后，再首次打开档案选择界面。"
+  },
+  {
+    "id": 3123,
+    "source": "Disable opening profile select GUI",
+    "zh": "关闭自动打开档案选择界面"
+  },
+  {
+    "id": 3124,
+    "source": "This option is compatible with proxy-based profile selection. When enabled, MMOProfiles will NOT automatically open the profile selection GUI on login. You can then manually open it using `/mmoprofiles open <player_name>`. There are no safeguards when using this option!",
+    "zh": "此选项兼容代理端档案选择。启用后，MMOProfiles **不会**在登录时自动打开档案选择界面，可以用 `/mmoprofiles open <player_name>` 手动打开。使用此选项时，没有额外的保护措施！"
+  },
+  {
+    "id": 3125,
+    "source": "This option can be used for login cinematics and events. This option is not compatible with the `wait-for-resource-pack` option.",
+    "zh": "可将此项用于登录过场动画和事件。它与 `wait-for-resource-pack` 选项不兼容。"
+  },
+  {
+    "id": 3126,
+    "source": "> Risk of player data loss! If no plugin/command opens up the profile selection UI, any progress made before choosing a profile will be lost.",
+    "zh": "> 存在玩家数据丢失风险！如果没有插件或命令打开档案选择界面，玩家在选择档案前产生的任何进度都会丢失。"
+  },
+  {
+    "id": 3127,
+    "source": "Amount of profile/character slots available",
+    "zh": "可用档案或角色栏位数量"
+  },
+  {
+    "id": 3128,
+    "source": "This option dictates how many profile slots any player has by default. However, if you want your server to have ranks, you can use the following option.",
+    "zh": "此项决定所有玩家默认拥有的档案栏位数。如果服务器设置了不同等级的会员组，可以使用下一个选项。"
+  },
+  {
+    "id": 3129,
+    "source": "You can specify as many ranks as you'd like (the `vip` or `vip_plus` keys do not matter, they are only used internally but have to differ). You need to provide a rank name, that will display in the profile UI on locked profile slots using the placeholder `{rank}`. You also need to provide the amount of profile slots every rank has. Ranks don't have to be ordered in the config, MMOProfiles will do it for you.",
+    "zh": "可以添加任意数量的组。`vip` 和 `vip_plus` 只是内部使用的键名，具体名称不限，但必须互不相同。每组都需要填写显示名称和档案栏位数量；显示名称通过 `{rank}` 占位符显示在档案界面中尚未解锁的栏位上。无需手动按顺序排列各组，MMOProfiles 会自动排序。"
+  },
+  {
+    "id": 3130,
+    "source": "Scripts",
+    "zh": "脚本"
+  },
+  {
+    "id": 3131,
+    "source": "You can specify certain scripts that are ran when specific actions get done. These scripts have to be in the [MythicLib format](https://docs.phoenixdevt.fr/mythiclib/scripts/intro). The `login` script is performed right after player login, when his MMOProfiles player data is successfully loaded (it might take a few ticks). The `profile-select` script is ran after the player chooses a profile, when all of the data from supported plugins is loaded (it might take a few ticks as well).",
+    "zh": "可以为特定操作指定脚本，脚本必须采用 [MythicLib 格式](https://docs.phoenixdevt.fr/mythiclib/scripts/intro)。`login` 脚本在玩家登录后、MMOProfiles 玩家数据成功加载时运行，可能需要等待几刻。`profile-select` 脚本在玩家选择档案后、所有兼容插件的数据加载完成时运行，也可能需要等待几刻。"
+  },
+  {
+    "id": 3132,
+    "source": "Proxy-Based Profiles",
+    "zh": "Proxy-Based型材"
+  },
+  {
+    "id": 3133,
+    "source": "When enabled, MMOProfiles switches to a proxy-based behaviour, enabling players to switch/spoof UUIDs. This tricks other plugins into thinking another player is joining the server, enabling profile-specific progress with literally ANY plugin. Prox-based profiles have their own dedicated [wiki page](https://docs.phoenixdevt.fr/mmoprofiles/features/proxy-based).",
+    "zh": "启用后，MMOProfiles 会改用代理端模式，让玩家能够切换或伪装 UUID。其他插件会将其视为另一名玩家加入服务器，从而让任意插件都能按档案记录进度。代理端档案有[单独的说明页](https://docs.phoenixdevt.fr/mmoprofiles/features/proxy-based)。"
+  },
+  {
+    "id": 3134,
+    "source": "😉 When Logging In",
+    "zh": "😉 登录时"
+  },
+  {
+    "id": 3135,
+    "source": "When a player logs in, they become invincible and are forced to select a profile in the Profiles GUI (see next page). Once they have chosen their profile, all the data from that profile will be loaded and applied to the player. The player can create or remove profiles in the GUI, but they are limited to a certain amount of simultaneous profiles. This can be fully customized using the rank system (more here).",
+    "zh": "玩家登录后会进入无敌状态，并被要求在档案界面中选择档案，见下一页。选择后，该档案的全部数据会加载并应用到玩家身上。玩家可以在界面中创建或删除档案，但同时拥有的档案数量有上限，可通过组别系统完整自定义，详见后文。"
+  },
+  {
+    "id": 3136,
+    "source": "Here is an extensive list of all the vanilla features that are saved and applied between profiles:",
+    "zh": "以下列出了在档案之间保存和切换的全部原版数据："
+  },
+  {
+    "id": 3137,
+    "source": "Health, Food level and saturation",
+    "zh": "生命值、饥饿值与饱和度"
+  },
+  {
+    "id": 3138,
+    "source": "Air Level",
+    "zh": "氧气值"
+  },
+  {
+    "id": 3139,
+    "source": "Level & Experience",
+    "zh": "等级与经验"
+  },
+  {
+    "id": 3140,
+    "source": "Last Location & Bed Spawn Location",
+    "zh": "上次所在位置与床的重生位置"
+  },
+  {
+    "id": 3141,
+    "source": "Inventory, Equipment & Ender chest",
+    "zh": "物品栏、装备与末影箱"
+  },
+  {
+    "id": 3142,
+    "source": "Gamemode",
+    "zh": "游戏模式"
+  },
+  {
+    "id": 3143,
+    "source": "Potion Effects",
+    "zh": "药水效果"
+  },
+  {
+    "id": 3144,
+    "source": "Vanilla Attributes",
+    "zh": "原版属性"
+  },
+  {
+    "id": 3145,
+    "source": "🦾 Profile Selection",
+    "zh": "🦾 个人资料选择"
+  },
+  {
+    "id": 3146,
+    "source": "The profile selection GUI is the first thing players will see when logging into the server. This UI shows all the profiles the player has registered and basic information about each one of these profiles. Players can create or remove profiles, or choose one. They won't be able to quit this UI until they choose a profile.",
+    "zh": "玩家登录后首先看到的是档案选择界面，其中列出已创建的全部档案及各自的基本信息。玩家可以创建、删除或选择档案；选定一个档案之前，无法退出该界面。"
+  },
+  {
+    "id": 3147,
+    "source": "![](https://docs.phoenixdevt.fr/assets/profile_select.D1QJE14M.png)",
+    "zh": "![](https://docs.phoenixdevt.fr/assets/profile_select.D1QJE14M.png)"
+  },
+  {
+    "id": 3148,
+    "source": "You can fully customize this GUI by modifying the file `gui/profile-list.yml`. Below, you can find the complete list of all the placeholders you can use to show all the profile information you find relevant. We recommend using a server resource pack to improve the look of your GUI, all of this is possible with MMOProfiles GUIs.",
+    "zh": "修改 `gui/profile-list.yml` 可完整自定义此界面。下方列出了可用于显示档案信息的全部占位符。建议使用服务器资源包改善界面外观，MMOProfiles 的界面支持这种做法。"
+  },
+  {
+    "id": 3149,
+    "source": "![image](https://docs.phoenixdevt.fr/assets/profile_indiv.BvTb022d.png)",
+    "zh": "![图片](https://docs.phoenixdevt.fr/assets/profile_indiv.BvTb022d.png)"
+  },
+  {
+    "id": 3150,
+    "source": "Creating a new profile",
+    "zh": "创建新档案"
+  },
+  {
+    "id": 3151,
+    "source": "If the player has enough profile slots, they can create a new profile by clicking the emerald. MMOProfiles will ask the profile name, and then the new profile will pop up in the list.",
+    "zh": "有空余档案栏位时，玩家可以点击绿宝石创建新档案。MMOProfiles 会要求输入名称，随后将新档案加入列表。"
+  },
+  {
+    "id": 3152,
+    "source": "![image](https://docs.phoenixdevt.fr/assets/profile_new_char.BgOzBlZV.png)",
+    "zh": "![图片](https://docs.phoenixdevt.fr/assets/profile_new_char.BgOzBlZV.png)"
+  },
+  {
+    "id": 3153,
+    "source": "These are the placeholders you can use in the `items.profile.lore` config option located inside of the `/MMOCore/language/gui/profile-list.yml` config file. This corresponds to what will be displayed in the profile item lore, for every profile in the inventory.",
+    "zh": "以下占位符可用于 `/MMOCore/language/gui/profile-list.yml` 中的 `items.profile.lore` 选项，对应档案列表内每个档案物品的描述。"
+  },
+  {
+    "id": 3154,
+    "source": "Vanilla placeholders",
+    "zh": "原版占位符"
+  },
+  {
+    "id": 3155,
+    "source": "| Placeholder | Value |",
+    "zh": "|占位符|价值|"
+  },
+  {
+    "id": 3156,
+    "source": "| `{profile_name}` | The profile name |",
+    "zh": "| `{profile_name}` | 档案名称 |"
+  },
+  {
+    "id": 3157,
+    "source": "| `{last_time_played}` | Last time the player played with this profile. |",
+    "zh": "| `{last_time_played}` | 玩家上次使用此档案游玩的时间。 |"
+  },
+  {
+    "id": 3158,
+    "source": "| `{slot}` | The slot corresponding to the profile |",
+    "zh": "| `{slot}` | 档案对应的栏位 |"
+  },
+  {
+    "id": 3159,
+    "source": "| `{health}` | Profile's health. |",
+    "zh": "| `{health}` | 档案的生命值。 |"
+  },
+  {
+    "id": 3160,
+    "source": "| `{level}` | Profile's level. |",
+    "zh": "| `{level}` | 档案的等级。 |"
+  },
+  {
+    "id": 3161,
+    "source": "| `{exp}` | Profile's exp. |",
+    "zh": "| `{exp}` | 档案的经验。 |"
+  },
+  {
+    "id": 3162,
+    "source": "| `{balance}` | Profile's balance. |",
+    "zh": "| `{balance}` | 档案的余额。 |"
+  },
+  {
+    "id": 3163,
+    "source": "| `{food}` | Profile's food level. |",
+    "zh": "| `{food}` | 档案的饥饿值。 |"
+  },
+  {
+    "id": 3164,
+    "source": "| `{saturation}` | Profile's saturation. |",
+    "zh": "| `{saturation}` | 档案的饱和度。 |"
+  },
+  {
+    "id": 3165,
+    "source": "| `{air_level}` | Profile's air level. |",
+    "zh": "| `{air_level}` | 档案的氧气值。 |"
+  },
+  {
+    "id": 3166,
+    "source": "| `{world}` | The world the player will be in if he chooses the profile. |",
+    "zh": "| `{world}` | 选择该档案后玩家将进入的世界。 |"
+  },
+  {
+    "id": 3167,
+    "source": "| `{spawn_world}` | World of player's bed spawn point. |",
+    "zh": "| `{spawn_world}` | 玩家床的重生点所在世界。 |"
+  },
+  {
+    "id": 3168,
+    "source": "| `{attribute_<name>}` | Profile's vanilla attribute value. For example, `{attribute_max_health}` |",
+    "zh": "| `{attribute_<name>}` | 档案的原版属性值，例如 `{attribute_max_health}`。 |"
+  },
+  {
+    "id": 3169,
+    "source": "MMOCore Placeholders",
+    "zh": "MMOCore占位符"
+  },
+  {
+    "id": 3170,
+    "source": "| `{mmocore_class}` | MMOCore class name |",
+    "zh": "| `{mmocore_class}` | MMOCore 职业名称 |"
+  },
+  {
+    "id": 3171,
+    "source": "| `{mmocore_level}` | MMOCore main player level |",
+    "zh": "| `{mmocore_level}` | MMOCore 主职业等级 |"
+  },
+  {
+    "id": 3172,
+    "source": "| `{mmocore_attribute_<name>}` | Points spent in a certain attribute. Not to be mistaken for the player's vanilla attributes. |",
+    "zh": "| `{mmocore_attribute_<name>}` | 投入指定基础属性的点数，与玩家的原版属性不同。 |"
+  },
+  {
+    "id": 3173,
+    "source": "| `{mmocore_profession_<name>}` | Level in a certain profession |",
+    "zh": "| `{mmocore_profession_<name>}` | 指定副职业的等级 |"
+  },
+  {
+    "id": 3174,
+    "source": "| `{mmocore_exp}` | Current player exp |",
+    "zh": "| `{mmocore_exp}` | 玩家当前经验 |"
+  },
+  {
+    "id": 3175,
+    "source": "| `{mmocore_exp_next_level}` | Amount of exp to reach next level |",
+    "zh": "| `{mmocore_exp_next_level}` | 升到下一级所需的经验 |"
+  },
+  {
+    "id": 3176,
+    "source": "🫅 Proxy-Based Profiles",
+    "zh": "🫅Proxy-Based档案"
+  },
+  {
+    "id": 3177,
+    "source": "This feature allows for profile-specific progress for any type of player data, of any plugin. Some proxy-level workarounds allow you to switch the player's UUID when switching servers, effectively tricking all plugins into thinking that another player joined the server.",
+    "zh": "此功能可让任意插件的任意玩家数据都按档案分别记录进度。通过代理端的处理，可以在切换服务器时切换玩家 UUID，让所有插件都将其视为另一名玩家加入服务器。"
+  },
+  {
+    "id": 3178,
+    "source": "This feature has a huge advantage: **this makes literally any plugin storing player data compatible with MMOProfiles without the need of having profile-specific code**, which is known to be a very tedious task. More on that later.",
+    "zh": "这项功能的优势是：**任何保存玩家数据的插件都能兼容 MMOProfiles，无需专门编写档案支持代码**。编写这类兼容代码通常很费工夫，详见后文。"
+  },
+  {
+    "id": 3179,
+    "source": "> *UUID Spoofing* has already been implemented in some plugins in the past, most of them being outdated now. MMOProfiles provides an up-to-date solution, packed with all of the other most important MMOProfiles features, namely configurable GUI-based profile selection and compatibility with the MMO plugin suite.",
+    "zh": "> 过去已有一些插件实现过 *UUID Spoofing*，但其中多数现已过时。MMOProfiles 提供仍在更新的方案，并保留可配置的档案选择界面和 MMO 插件系列兼容等主要功能。"
+  },
+  {
+    "id": 3180,
+    "source": "**You'll need at least one proxy and two backend servers in order to use this feature.**",
+    "zh": "**使用此功能至少需要一台代理服务器和两台后端服务器。**"
+  },
+  {
+    "id": 3181,
+    "source": "Why such a feature?",
+    "zh": "为什么有这样的功能呢？"
+  },
+  {
+    "id": 3182,
+    "source": "As you might know, it is hard for MMOProfiles to be compatible with literally every plugin out there. Supporting profile-based player data requires some heavy modifications to any plugin codebase - it requires the plugin to wait for MMOProfiles to provide a UUID, before making a database request based on that UUID.",
+    "zh": "要让 MMOProfiles 兼容所有插件并不容易。按档案保存数据通常要求大幅修改插件代码：插件必须先等待 MMOProfiles 提供 UUID，再使用该 UUID 查询数据库。"
+  },
+  {
+    "id": 3183,
+    "source": "This is quite hard to do for plugins outside of the MMO plugin suite. Although we have provided a well structured and open-source profile API for other developers to build against MMOProfiles, we of course cannot expect other developers to natively support it - which is why we've been working on a solution which requires no effort from any other developer.",
+    "zh": "对 MMO 系列以外的插件来说，这很难实现。虽然已经提供了结构清楚、开放源码的档案 API，方便其他开发者接入 MMOProfiles，但无法要求所有插件都原生支持。因此，这里提供一种无需其他开发者修改代码的方案。"
+  },
+  {
+    "id": 3184,
+    "source": "How do I enable it?",
+    "zh": "我该如何启用它？"
+  },
+  {
+    "id": 3185,
+    "source": "The following tutorial works on the assumption that you already know about proxies and MySQL databases. If that's not the case, you won't be able to understand it.",
+    "zh": "以下教程默认你已了解代理服务器和 MySQL 数据库；如果没有这些基础，将难以理解后续内容。"
+  },
+  {
+    "id": 3186,
+    "source": "On your Velocity proxy server",
+    "zh": "在你的Velocity代理服务器上"
+  },
+  {
+    "id": 3187,
+    "source": "Install the latest version of [MMOProfiles](https://www.spigotmc.org/resources/mmoprofiles.109942/). The main JAR file contains both a Spigot plugin and a Velocity plugin.",
+    "zh": "安装最新版 [MMOProfiles](https://www.spigotmc.org/resources/mmoprofiles.109942/)。主 JAR 同时包含 Spigot 插件和 Velocity 插件。"
+  },
+  {
+    "id": 3188,
+    "source": "Install the latest version of [PacketEvents](https://modrinth.com/plugin/packetevents). It is a hard dependency for proxy-based profile selection.",
+    "zh": "安装最新版 [PacketEvents](https://modrinth.com/plugin/packetevents)，它是代理端档案选择的必需依赖。"
+  },
+  {
+    "id": 3189,
+    "source": "In your Velocity config, set the `force-key-authentication` option to `false`.",
+    "zh": "在 Velocity 配置中，将 `force-key-authentication` 设为 `false`。"
+  },
+  {
+    "id": 3190,
+    "source": "On your backend servers",
+    "zh": "在你的后端服务器上"
+  },
+  {
+    "id": 3191,
+    "source": "Follow these steps on all of your backend servers where you want to enable proxy-based profile selection.",
+    "zh": "在所有需要启用代理端档案选择的后端服务器上，执行以下步骤。"
+  },
+  {
+    "id": 3192,
+    "source": "Install the latest version of MMOProfiles and [MythicLib](https://www.spigotmc.org/resources/mmolib-mythiclib.90306/). If you have other MMO plugins installed, make sure they're up to date.",
+    "zh": "安装最新版 MMOProfiles 和 [MythicLib](https://www.spigotmc.org/resources/mmolib-mythiclib.90306/)。如果还安装了其他 MMO 插件，也要保持它们为最新版。"
+  },
+  {
+    "id": 3193,
+    "source": "Make sure SQL data storage is enabled in your MMOProfiles config, and that all of your backend servers point to the same SQL database.",
+    "zh": "在 MMOProfiles 配置中启用 SQL 数据存储，并让所有后端服务器连接同一个 SQL 数据库。"
+  },
+  {
+    "id": 3194,
+    "source": "On 1.19+, you will also need to install [FreedomChat](https://modrinth.com/plugin/freedomchat). These plugins fix an issue with signed chat, preventing players from being kicked the moment they send a message in the chat.",
+    "zh": "在 1.19+ 上还需要安装 [FreedomChat](https://modrinth.com/plugin/freedomchat)，用于解决聊天签名问题，避免玩家发送聊天消息时被踢出。"
+  },
+  {
+    "id": 3195,
+    "source": "Set `enforce-secure-profile` to `false` in `server.properties`.",
+    "zh": "在 `server.properties` 中，将 `enforce-secure-profile` 设为 `false`。"
+  },
+  {
+    "id": 3196,
+    "source": "> You do not need MythicLib installed on your proxy server. You do not need PacketEvents installed on any of your backend servers.",
+    "zh": "> 代理服务器无需安装 MythicLib，后端服务器也无需安装 PacketEvents。"
+  },
+  {
+    "id": 3197,
+    "source": "This **currently only works on Velocity** (BungeeCord support is planned) and the only supported backend server version is 1.20.2+ (1.16-1.19 support is also planned but requires adapting the code to older versions of the Minecraft protocol).",
+    "zh": "此功能**目前只支持 Velocity**，BungeeCord 支持仍在计划中。后端服务器仅支持 1.20.2+；1.16-1.19 的支持也在计划中，但需要适配旧版 Minecraft 协议。"
+  },
+  {
+    "id": 3198,
+    "source": "Config Files",
+    "zh": "配置文件"
+  },
+  {
+    "id": 3199,
+    "source": "The MMOProfiles JAR file contains the source codes of two different plugins: one for the Velocity proxy server and one for the Spigot/Paper backend servers. Therefore, there are now two types of config to setup: one for the proxy servers, and one per backend server.",
+    "zh": "MMOProfiles JAR 包含两个插件：一个用于 Velocity 代理端，另一个用于 Spigot/Paper 后端。因此需要配置两类文件：代理端配置，以及每个后端服务器各自的配置。"
+  },
+  {
+    "id": 3200,
+    "source": "Proxy Server Config",
+    "zh": "代理服务器配置"
+  },
+  {
+    "id": 3201,
+    "source": "This config file is located under `<velocity_root>/plugins/mmoprofiles_velocity`.",
+    "zh": "此配置文件位于 `<velocity_root>/plugins/mmoprofiles_velocity` 下。"
+  },
+  {
+    "id": 3202,
+    "source": "<summary>Full config snippet</summary>",
+    "zh": "<summary>完整配置片段</summary>"
+  },
+  {
+    "id": 3203,
+    "source": "`kick_if_no_profile` is useful to prevent players from joining a server without selecting a profile. It is a list of server IDs.",
+    "zh": "`kick_if_no_profile` 用于阻止玩家未选择档案就进入服务器，其值是服务器 ID 列表。"
+  },
+  {
+    "id": 3204,
+    "source": "`unselect_profile_on_login` is useful to have players return to their official UUID when joining a lobby server. This way, they are forced to unselect their profile and temporarily not use their inventory, profile-specific progress, etc...",
+    "zh": "`unselect_profile_on_login` 可以让玩家进入大厅服务器时恢复原始 UUID，从而退出当前档案，暂时不使用该档案的物品栏、进度等数据。"
+  },
+  {
+    "id": 3205,
+    "source": "Backend Server Config",
+    "zh": "后端服务器配置"
+  },
+  {
+    "id": 3206,
+    "source": "This config file is located under `<spigot_root>/plugins/MMOProfiles`.",
+    "zh": "此配置文件位于 `<spigot_root>/plugins/MMOProfiles` 下。"
+  },
+  {
+    "id": 3207,
+    "source": "We will go over this config file in the following section.",
+    "zh": "下文会介绍此配置文件。"
+  },
+  {
+    "id": 3208,
+    "source": "Specifications",
+    "zh": "规格"
+  },
+  {
+    "id": 3209,
+    "source": "In most proxy configs, you'll have lobby servers, where players connect when joining your Minecraft proxy, and \"play\" servers where players will play once they choose their profile.",
+    "zh": "大多数群组服有两类服务器：玩家连接代理后进入的大厅服，以及选好档案后实际游玩的游戏服。"
+  },
+  {
+    "id": 3210,
+    "source": "For play servers",
+    "zh": "对于游戏服务器"
+  },
+  {
+    "id": 3211,
+    "source": "Make sure to include the ID of the server in the `kick_if_no_profile` list. This way, if a player tries to join this server without selecting a profile, they will be kicked from the server and redirected to the lobby.",
+    "zh": "将游戏服的 ID 加入 `kick_if_no_profile` 列表。玩家未选择档案就尝试进入时，会被踢出该服并转回大厅。"
+  },
+  {
+    "id": 3212,
+    "source": "This should be used on full RPG servers where players are required to select a profile before playing.",
+    "zh": "纯 RPG 服务器通常要求玩家先选择档案再游玩，应使用此项。"
+  },
+  {
+    "id": 3213,
+    "source": "This option should be disabled on lobby servers and enabled on all of your play servers (it's up to you).",
+    "zh": "大厅服应关闭此项，各游戏服则应启用，具体按需求决定。"
+  },
+  {
+    "id": 3214,
+    "source": "For lobby servers",
+    "zh": "对于大堂服务员"
+  },
+  {
+    "id": 3215,
+    "source": "Include the ID of the server in the `unselect_profile_on_login` list. This way, players will return to their official UUID every time they enter this server. This is great for lobby servers which players should join with no profile selected.",
+    "zh": "将大厅服的 ID 加入 `unselect_profile_on_login` 列表。这样玩家每次进入大厅都会恢复原始 UUID，适合要求玩家不选档案进入的大厅。"
+  },
+  {
+    "id": 3216,
+    "source": "You may specify your play servers using the config option `target_servers`. These are the servers the players will be teleported to, from the lobby server, right after profile selection.",
+    "zh": "可以通过 `target_servers` 指定游戏服。玩家在大厅选择档案后，会被传送到这些服务器。"
+  },
+  {
+    "id": 3217,
+    "source": "This is also the option you need to use if you want to toggle on `back_to_initial_server` (see below), in which case it will be the list of the temporary servers MMOProfiles will be using to perform that in-and-out UUID switch.",
+    "zh": "启用下文的 `back_to_initial_server` 时，也需要此项。此时，列表中的服务器会作为临时中转服，供 MMOProfiles 通过一次往返切服完成 UUID 切换。"
+  },
+  {
+    "id": 3218,
+    "source": "By switching on `back_to_initial_server`, players will stay on the profile selection server.",
+    "zh": "启用 `back_to_initial_server` 后，玩家最终会留在档案选择服务器。"
+  },
+  {
+    "id": 3219,
+    "source": "Proxies need at least one server switch in order to properly switch the player's UUID, MMOProfiles will first send the player to such \"temporary\" server, and instantly send them back to the initial server. The UUID switch will be performed on the second server switch.",
+    "zh": "代理端至少需要发生一次切服，才能正确切换玩家 UUID。MMOProfiles 会先将玩家送到临时中转服，再立即送回原服务器；UUID 在第二次切服时完成切换。"
+  },
+  {
+    "id": 3220,
+    "source": "If you want your players to only play on one specific server (where they can both select their profile AND play), you can use this temporary server option to have all the players stay on one specific server. You don't need a very performant server backend for such temporary servers, as players will only be joining for a few seconds at most.",
+    "zh": "如果希望玩家始终在同一台服务器上选择档案并游玩，可以使用临时中转服方案。玩家最多只停留几秒，因此中转服无需很高的性能。"
+  },
+  {
+    "id": 3221,
+    "source": "Also, you don't need MMOProfiles installed on these temporary UUID-switch servers.",
+    "zh": "这些仅用于切换 UUID 的临时中转服无需安装 MMOProfiles。"
+  },
+  {
+    "id": 3222,
+    "source": "Be sure to use a different `server-identifier` on lobby servers. You need to set a different identifier name for all your servers that do not have the same map.",
+    "zh": "大厅服应使用不同的 `server-identifier`。所有地图不同的服务器都需要设置不同的标识符。"
+  },
+  {
+    "id": 3223,
+    "source": "The spawn point for new profiles is specified using the `new-profile-spawn-point` option. Notice that while this option is to be specified in the MMOProfiles config file of the lobby server, this location has to have meaning in the play server. It is the location where players with a new profile will be teleported to.",
+    "zh": "新档案出生点通过 `new-profile-spawn-point` 设置。虽然此项填写在大厅服的 MMOProfiles 配置中，但坐标必须对应游戏服中的实际位置；新档案玩家会被传送到那里。"
+  },
+  {
+    "id": 3224,
+    "source": "Supported/Tested Plugins",
+    "zh": "支持/测试的插件"
+  },
+  {
+    "id": 3225,
+    "source": "We tested LuckPerms, GroupManager, CorePerms.",
+    "zh": "已测试过 LuckPerms、GroupManager 和 CorePerms。"
+  },
+  {
+    "id": 3226,
+    "source": "[CorePerms](https://gitlab.com/ranetdev/CoreTools/-/wikis/features/coreperms) recommended",
+    "zh": "[CorePerms](https://gitlab.com/ranetdev/CoreTools/-/wikis/features/coreperms)推荐"
+  },
+  {
+    "id": 3227,
+    "source": "CorePerms natively supports MMOProfiles and is the recommended plugin.** Without any additional setup, you can add permissions and groups that will be active both on the selected profile or across all of the player's profiles.",
+    "zh": "CorePerms 原生支持 MMOProfiles，是推荐的权限插件。无需额外设置，就能添加仅对当前档案生效或对玩家全部档案生效的权限和权限组。"
+  },
+  {
+    "id": 3228,
+    "source": "[LuckPerms](https://www.spigotmc.org/resources/luckperms.28140/)",
+    "zh": "[LuckPerms](https://www.spigotmc.org/resources/luckperms.28140/)"
+  },
+  {
+    "id": 3229,
+    "source": "Official UUID group permissions always apply to all Profile UUIDs. All profile permissions are ignored when using LuckPerms. **But this may not work for some plugins. When this happens, you need to add the permissions directly to the profile uuid.**",
+    "zh": "原始 UUID 的权限组权限始终会应用到所有档案 UUID。使用 LuckPerms 时，各档案自身的权限会被忽略。**但这种方式对某些插件可能无效；出现这种情况时，需要直接给对应档案 UUID 添加权限。**"
+  },
+  {
+    "id": 3230,
+    "source": "If you want Official UUID group permissions and Profile UUID permissions to work at the same time, you can use the [`MMOProfilesExtraPerms`](https://github.com/CKATEPTb-minecraft/MMOProfilesExtraPerms) plugin made by [**CKATEPTb**](https://github.com/CKATEPTb-minecraft).",
+    "zh": "如果希望原始 UUID 的权限组权限与档案 UUID 的权限同时生效，可以使用 [**CKATEPTb**](https://github.com/CKATEPTb-minecraft) 制作的 [`MMOProfilesExtraPerms`](https://github.com/CKATEPTb-minecraft/MMOProfilesExtraPerms)。"
+  },
+  {
+    "id": 3231,
+    "source": "If you want the permissions added to profiles to take effect immediately, you need to use the [`MMOProfilePerms`](https://modrinth.com/plugin/mmoprofileperms). Plugin made by [**call911nowplz**](https://github.com/call911nowplz).",
+    "zh": "如果希望给档案添加的权限立即生效，需要使用 [**call911nowplz**](https://github.com/call911nowplz) 制作的 [`MMOProfilePerms`](https://modrinth.com/plugin/mmoprofileperms)。"
+  },
+  {
+    "id": 3232,
+    "source": "**Important LuckPerms note:** Since we changed the UUIDs of the players, LuckPerms shows very long errors in the console, thinking that we pulled the offline player's data from the database. To avoid seeing these errors, simply set `vault-unsafe-lookups` to `true` in `config.yml`.",
+    "zh": "**LuckPerms 注意事项：**由于玩家 UUID 被切换，LuckPerms 会认为插件从数据库查询了离线玩家数据，并在控制台输出很长的错误。要关闭这些错误提示，在 `config.yml` 中将 `vault-unsafe-lookups` 设为 `true`。"
+  },
+  {
+    "id": 3233,
+    "source": "Problematic plugins",
+    "zh": "有问题的插件"
+  },
+  {
+    "id": 3234,
+    "source": "**GroupManager:** If deleted permission exists in another profile, it is added again when the server is restarted. **We do not recommend using GroupManager**.",
+    "zh": "**GroupManager：**如果另一份档案中仍有某项已删除的权限，服务器重启后它会再次出现。**不推荐使用 GroupManager。**"
+  },
+  {
+    "id": 3235,
+    "source": "Money (Vault)",
+    "zh": "钱 (Vault)"
+  },
+  {
+    "id": 3236,
+    "source": "Vault has to be installed in order to support most economy plugins. We tested CoreTools, PlayerPoints, Economy and XConomy.",
+    "zh": "大多数经济插件需要安装 Vault 才能兼容。已测试过 CoreTools、PlayerPoints、Economy 和 XConomy。"
+  },
+  {
+    "id": 3237,
+    "source": "> `synced-data.balance` must be set to `false` if you want all profiles to have only one shared balance, leaving it to `true` will make each profile have its own balance.",
+    "zh": "> 如果希望全部档案共用一个余额，必须将 `synced-data.balance` 设为 `false`；保持 `true` 则每份档案都有独立余额。"
+  },
+  {
+    "id": 3238,
+    "source": "[CoreTools](https://gitlab.com/ranetdev/CoreTools/-/wikis/features/economy) recommended",
+    "zh": "[CoreTools](https://gitlab.com/ranetdev/CoreTools/-/wikis/features/economy)推荐"
+  },
+  {
+    "id": 3239,
+    "source": "CoreTools does not require any special configuration and **supports MMOProfiles natively**.",
+    "zh": "CoreTools 无需特殊配置，**原生支持 MMOProfiles**。"
+  },
+  {
+    "id": 3240,
+    "source": "[PlayerPoints](https://www.spigotmc.org/resources/playerpoints.80745/)",
+    "zh": "[玩家积分](https://www.spigotmc.org/resources/playerpoints.80745/)"
+  },
+  {
+    "id": 3241,
+    "source": "The `Vault` config option must be enabled",
+    "zh": "必须启用 `Vault` 配置选项。"
+  },
+  {
+    "id": 3242,
+    "source": "MySQL must be enabled and all servers must be connected to the same database",
+    "zh": "必须启用 MySQL，并让所有服务器连接同一个数据库。"
+  },
+  {
+    "id": 3243,
+    "source": "[Economy](https://www.spigotmc.org/resources/economy.87053/)",
+    "zh": "[经济型](https://www.spigotmc.org/resources/economy.87053/)"
+  },
+  {
+    "id": 3244,
+    "source": "Set `StartingBalance` to `0`",
+    "zh": "将 `StartingBalance` 设为 `0`。"
+  },
+  {
+    "id": 3245,
+    "source": "[XConomy](https://www.spigotmc.org/resources/xconomy.75669/)",
+    "zh": "[XConomy](https://www.spigotmc.org/resources/xconomy.75669/)"
+  },
+  {
+    "id": 3246,
+    "source": "Only works with `synced-data.balance` set to `true`",
+    "zh": "仅在 `synced-data.balance` 为 `true` 时有效。"
+  },
+  {
+    "id": 3247,
+    "source": "Set `UUID-mode` to `SemiOnline`",
+    "zh": "将 `UUID-mode` 设为 `SemiOnline`。"
+  },
+  {
+    "id": 3248,
+    "source": "Set `disable-cache` to `true`",
+    "zh": "将 `disable-cache` 设为 `true`。"
+  },
+  {
+    "id": 3249,
+    "source": "MySQL must be enabled and all servers must be connected to the same MySQL database",
+    "zh": "必须启用 MySQL，并让所有服务器连接同一个 MySQL 数据库。"
+  },
+  {
+    "id": 3250,
+    "source": "Quest Plugins",
+    "zh": "任务插件"
+  },
+  {
+    "id": 3251,
+    "source": "Below you can see the list of quest plugins that we have tested and confirmed to work smoothly. You need to activate MySQL and connect all your servers to the same database.",
+    "zh": "以下是已测试并确认可正常配合使用的任务插件。需要启用 MySQL，并让所有服务器连接同一个数据库。"
+  },
+  {
+    "id": 3252,
+    "source": "[BetonQuest](https://www.spigotmc.org/resources/betonquest-all-your-adventure-supplies-versatile-quests-in-depth-conversations.2117/)",
+    "zh": "[BetonQuest](https://www.spigotmc.org/resources/betonquest-all-your-adventure-supplies-versatile-quests-in-depth-conversations.2117/)"
+  },
+  {
+    "id": 3253,
+    "source": "Storing Items, Backpacks",
+    "zh": "存放物品、背包"
+  },
+  {
+    "id": 3254,
+    "source": "Make sure that all servers are connected to the same MySQL server.",
+    "zh": "所有服务器都要连接同一台 MySQL 服务器。"
+  },
+  {
+    "id": 3255,
+    "source": "[MMOInventory](https://www.spigotmc.org/resources/99445/) recommended",
+    "zh": "[MMOInventory](https://www.spigotmc.org/resources/99445/)推荐"
+  },
+  {
+    "id": 3256,
+    "source": "[CoreTools PlayerVaults](https://gitlab.com/ranetdev/CoreTools/-/wikis/features/playervaults) recommended CoreTools does not require any special configuration and supports **MMOProfiles natively**.",
+    "zh": "推荐 [CoreTools PlayerVaults](https://gitlab.com/ranetdev/CoreTools/-/wikis/features/playervaults)。CoreTools 无需特殊配置，**原生支持 MMOProfiles**。"
+  },
+  {
+    "id": 3257,
+    "source": "[Minepacks](https://www.spigotmc.org/resources/minepacks-backpack-plugin-mc-1-7-1-20.19286/)",
+    "zh": "[矿包](https://www.spigotmc.org/resources/minepacks-backpack-plugin-mc-1-7-1-20.19286/)"
+  },
+  {
+    "id": 3258,
+    "source": "[EPIC BackPacks](https://www.spigotmc.org/resources/%E2%9C%85-epic-backpacks.28981/)",
+    "zh": "[EPIC 背包](https://www.spigotmc.org/resources/%E2%9C%85-epic-backpacks.28981/)"
+  },
+  {
+    "id": 3259,
+    "source": "[Bank](https://www.spigotmc.org/resources/bank-1-20-sale-20-off.3556/)",
+    "zh": "[银行](https://www.spigotmc.org/resources/bank-1-20-sale-20-off.3556/)"
+  },
+  {
+    "id": 3260,
+    "source": "Skyblock",
+    "zh": "空中封锁"
+  },
+  {
+    "id": 3261,
+    "source": "[BentoBox](https://www.spigotmc.org/resources/bentobox-bskyblock-acidisland-skygrid-caveblock-aoneblock-boxed.73261/) **Working properly.** All profiles have separate islands. <https://www.youtube.com/watch?v=N2xzzcDeTyU>",
+    "zh": "[BentoBox](https://www.spigotmc.org/resources/bentobox-bskyblock-acidisland-skygrid-caveblock-aoneblock-boxed.73261/) **可正常使用。**各档案有独立岛屿。<https://www.youtube.com/watch?v=N2xzzcDeTyU>"
+  },
+  {
+    "id": 3262,
+    "source": "[Iridium Skyblock](https://www.spigotmc.org/resources/iridium-skyblock-1-13-1-20.62480/) **Working properly.** All profiles have separate islands. <https://www.youtube.com/watch?v=iht7P-ac-rI>",
+    "zh": "[Iridium Skyblock](https://www.spigotmc.org/resources/iridium-skyblock-1-13-1-20.62480/) **可正常使用。**各档案有独立岛屿。<https://www.youtube.com/watch?v=iht7P-ac-rI>"
+  },
+  {
+    "id": 3263,
+    "source": "[SuperiorSkyblock2](https://www.spigotmc.org/resources/87411/) **Not working properly.** All profiles only see you as the same player.",
+    "zh": "[SuperiorSkyblock2](https://www.spigotmc.org/resources/87411/) **无法正常使用。**所有档案都会被视为同一名玩家。"
+  },
+  {
+    "id": 3264,
+    "source": "Others",
+    "zh": "其他"
+  },
+  {
+    "id": 3265,
+    "source": "[Races of Thana](https://www.spigotmc.org/resources/1-13-1-20-races-of-thana%E3%83%BBcustom-gui-attributes-day-night-effects-and-more.59110/)",
+    "zh": "[塔纳种族](https://www.spigotmc.org/resources/1-13-1-20-races-of-thana%E3%83%BBcustom-gui-attributes-day-night-effects-and-more.59110/)"
+  },
+  {
+    "id": 3266,
+    "source": "[CoreTools](https://gitlab.com/phoenix-dvpmt/CoreTools/-/wikis/home) [PlayerVaults](https://gitlab.com/phoenix-dvpmt/CoreTools/-/wikis/features/playervaults), [Variables](https://gitlab.com/phoenix-dvpmt/CoreTools/-/wikis/features/variables) and [AuctionHouse](https://gitlab.com/phoenix-dvpmt/CoreTools/-/wikis/features/auctionhouse) features natively support MMOProfiles.",
+    "zh": "[CoreTools](https://gitlab.com/phoenix-dvpmt/CoreTools/-/wikis/home) 的 [PlayerVaults](https://gitlab.com/phoenix-dvpmt/CoreTools/-/wikis/features/playervaults)、[Variables](https://gitlab.com/phoenix-dvpmt/CoreTools/-/wikis/features/variables) 和 [AuctionHouse](https://gitlab.com/phoenix-dvpmt/CoreTools/-/wikis/features/auctionhouse) 功能原生支持 MMOProfiles。"
+  },
+  {
+    "id": 3267,
+    "source": "Recommendations",
+    "zh": "建议"
+  },
+  {
+    "id": 3268,
+    "source": "Make sure your lobby server is in `unselect_profile_on_login`. In this way, players return to the official UUID every time they enter this server. The permissions or money you add while the player is not online will be updated when the player is online.",
+    "zh": "将大厅服加入 `unselect_profile_on_login`，让玩家每次进入大厅都恢复原始 UUID。玩家离线时添加的权限或金钱，会在其上线后更新。"
+  },
+  {
+    "id": 3269,
+    "source": "If you want players to select profiles on the lobby server but turn off teleporting automatically, simply set `target_servers: []`",
+    "zh": "如果希望玩家在大厅选择档案，但不自动传送，设置 `target_servers: []` 即可。"
+  },
+  {
+    "id": 3270,
+    "source": "If you want to not show the character selection in your lobby server, you can activate `no-gui-on-login`",
+    "zh": "如果不希望大厅服显示角色选择界面，可以启用 `no-gui-on-login`。"
+  },
+  {
+    "id": 3271,
+    "source": "Since the player official UUID has returned, sharing the money and permissions you sell in in-game stores with other profiles will be seamless.",
+    "zh": "玩家恢复原始 UUID 后，游戏内商店出售的金钱和权限即可顺畅地与其他档案共享。"
+  },
+  {
+    "id": 3272,
+    "source": "SharedPermissions you added to any profile other than the official UUID will be lost. Always add SharedPermissions to official UUID only.",
+    "zh": "给原始 UUID 以外的档案添加 SharedPermissions 会丢失。SharedPermissions 始终只应添加到原始 UUID 上。"
+  },
+  {
+    "id": 3273,
+    "source": "When the player is not online, the vault money you add outside of the official UUID will not be shared with other profiles until the profile is selected.",
+    "zh": "玩家离线时，给原始 UUID 以外的 UUID 添加的 Vault 余额，必须等到对应档案被选中后，才会与其他档案共享。"
+  },
+  {
+    "id": 3274,
+    "source": "Usage examples",
+    "zh": "使用示例"
+  },
+  {
+    "id": 3275,
+    "source": "**A)** Multifunctional Lobby. With this installation, there is no need for an extra server. The server undertakes both the lobby and Profile selection work. In this setup, as in every lobby, it is the server owner's responsibility to set up the player teleportation system.",
+    "zh": "**A）**多功能大厅。此方案无需额外服务器，由同一台服务器承担大厅和档案选择功能。与其他大厅方案相同，玩家传送系统需要由服主自行配置。"
+  },
+  {
+    "id": 3276,
+    "source": "**Lobby:**",
+    "zh": "**大堂：**"
+  },
+  {
+    "id": 3277,
+    "source": "Set target servers to `target_servers: []` (Cancels the player from auto-teleporting after profile select)",
+    "zh": "设置 `target_servers: []`，取消玩家选好档案后的自动传送。"
+  },
+  {
+    "id": 3278,
+    "source": "Include lobby server ID in `unselect_profile_on_login` (It forces the player to use real UUID every time they enter this server.)",
+    "zh": "将大厅服务器 ID 加入 `unselect_profile_on_login`，强制玩家每次进入该服都使用真实 UUID。"
+  },
+  {
+    "id": 3279,
+    "source": "**All other servers:**",
+    "zh": "**所有其他服务器：**"
+  },
+  {
+    "id": 3280,
+    "source": "Include this server ID in `kick_if_no_profile` (If the player is teleported to this server without selecting a profile due to an error, it will not allow entry.)",
+    "zh": "将该服务器 ID 加入 `kick_if_no_profile`，避免玩家因异常在未选择档案时进入。"
+  },
+  {
+    "id": 3281,
+    "source": "Do not include server ID in `unselect_profile_on_login`.",
+    "zh": "不要将服务器 ID 加入 `unselect_profile_on_login`。"
+  },
+  {
+    "id": 3282,
+    "source": "Set target servers to your lobby in all other servers. ![mmoprofile_proxy_setup-04](https://docs.phoenixdevt.fr/assets/proxy_setup_a1.CGuA2qdl.png)",
+    "zh": "将其余服务器的目标服务器设为大厅。![mmoprofile_proxy_setup-04](https://docs.phoenixdevt.fr/assets/proxy_setup_a1.CGuA2qdl.png)"
+  },
+  {
+    "id": 3283,
+    "source": "**B)** Force profile selection on all or selected servers. `back_to_initial_server` set to `true` for every profile except lobby.",
+    "zh": "**B）**在全部或指定服务器上强制选择档案。除大厅外，每个档案的 `back_to_initial_server` 都设为 `true`。"
+  },
+  {
+    "id": 3284,
+    "source": "`No need to install MMOProfiles on Profile Select Server.`",
+    "zh": "`No need to install MMOProfiles on Profile Select Server.`"
+  },
+  {
+    "id": 3285,
+    "source": "To control Vault money and SharedPermissions in profiles, it is recommended to install MMOProfiles in the lobby and turn off forced profile selection. `no-gui-on-login` to `true`",
+    "zh": "如需管理档案中的 Vault 余额和 SharedPermissions，建议在大厅安装 MMOProfiles，并关闭强制档案选择，将 `no-gui-on-login` 设为 `true`。"
+  },
+  {
+    "id": 3286,
+    "source": "![mmoprofile_proxy_setup-01](https://docs.phoenixdevt.fr/assets/proxy_setup_b1.DmXj1bFv.png)",
+    "zh": "![mmoprofile_proxy_setup-01](https://docs.phoenixdevt.fr/assets/proxy_setup_b1.DmXj1bFv.png)"
+  },
+  {
+    "id": 3287,
+    "source": "**C)** Forcing a profile on a particular server with profile selection before join.",
+    "zh": "**C）**在进入特定服务器前选择档案，并在该服强制使用档案。"
+  },
+  {
+    "id": 3288,
+    "source": "`back_to_initial_server` set to `true` for every RPG servers.",
+    "zh": "所有 RPG 服务器的 `back_to_initial_server` 都设为 `true`。"
+  },
+  {
+    "id": 3289,
+    "source": "No need to install MMOProfiles on other servers.",
+    "zh": "其他服务器无需安装 MMOProfiles。"
+  },
+  {
+    "id": 3290,
+    "source": "![mmoprofile_proxy_setup-02](https://docs.phoenixdevt.fr/assets/proxy_setup_c1.D7Os-NzP.png)",
+    "zh": "![mmoprofile_proxy_setup-02](https://docs.phoenixdevt.fr/assets/proxy_setup_c1.D7Os-NzP.png)"
+  },
+  {
+    "id": 3291,
+    "source": "**D)** Forcing a profile on the whole network when a player enters the server.",
+    "zh": "**D）**玩家进入服务器时，要求整个群组服都使用档案。"
+  },
+  {
+    "id": 3292,
+    "source": "Include server ID in `kick_if_no_profile` to make sure players always have a profile.",
+    "zh": "将服务器 ID 加入 `kick_if_no_profile`，确保玩家始终选有档案。"
+  },
+  {
+    "id": 3293,
+    "source": "It is mandatory to install MMOProfiles on all servers.",
+    "zh": "必须在全部服务器上安装 MMOProfiles。"
+  },
+  {
+    "id": 3294,
+    "source": "![mmoprofile_proxy_setup-03](https://docs.phoenixdevt.fr/assets/proxy_setup_d1.F8m7MQ2T.png)",
+    "zh": "![mmoprofile_proxy_setup-03](https://docs.phoenixdevt.fr/assets/proxy_setup_d1.F8m7MQ2T.png)"
+  },
+  {
+    "id": 3295,
+    "source": "| `/mmoprofiles reload` | Reloads the plugin and config files. Watch out, some options require a server RESTART. |",
+    "zh": "| `/mmoprofiles reload` | 重载插件和配置文件。注意，部分选项需要重启服务器后才会生效。 |"
+  },
+  {
+    "id": 3296,
+    "source": "| `/mmoprofiles open <player-name>` | Opens profile selection for a player. This should only be used when the `no-gui-on-login` option is toggled on. |",
+    "zh": "| `/mmoprofiles open <player-name>` | 为指定玩家打开档案选择界面。仅应在启用 `no-gui-on-login` 时使用。 |"
+  },
+  {
+    "id": 3297,
+    "source": "| `/mmoprofiles export-data` | Exports player data from flat storage to SQL |",
+    "zh": "| `/mmoprofiles export-data` | 将玩家数据从文件存储导出到 SQL。 |"
+  },
+  {
+    "id": 3298,
+    "source": "| `mmoprofiles.admin` | Ability to use `/mmoprofiles` |",
+    "zh": "| `mmoprofiles.admin` | 使用 `/mmoprofiles` 的权限。 |"
+  },
+  {
+    "id": 3299,
+    "source": "All placeholders automatically register on plugin load, also requiring **PlaceholderAPI** to work. You do not need to run any commands and/or download anything else to initialize the placeholders.",
+    "zh": "全部占位符会在插件加载时自动注册，并依赖 **PlaceholderAPI**。无需额外执行命令或下载其他内容来初始化占位符。"
+  },
+  {
+    "id": 3300,
+    "source": "Note: You can access the PAPI placeholders from MVdWPlaceholderAPI using `{placeholderapi_mmoprofiles_...}`",
+    "zh": "注意：可以通过 MVdWPlaceholderAPI 的 `{placeholderapi_mmoprofiles_...}` 调用这些 PAPI 占位符。"
+  },
+  {
+    "id": 3301,
+    "source": "| `%mmoprofiles_real_uuid%` | The official player's UUID (only has sense if proxy-based profiles are enabled) |",
+    "zh": "| `%mmoprofiles_real_uuid%` | 玩家的原始 UUID，仅在启用代理端档案时有意义。 |"
+  },
+  {
+    "id": 3302,
+    "source": "| `%mmoprofiles_current_profile_uuid%` | The UUID of the player's current profile. |",
+    "zh": "| `%mmoprofiles_current_profile_uuid%` | 玩家当前档案的 UUID。 |"
+  },
+  {
+    "id": 3303,
+    "source": "| `%mmoprofiles_current_profile_name%` | Returns the profile name of the player's current profile |",
+    "zh": "| `%mmoprofiles_current_profile_name%` | 玩家当前档案的名称。 |"
+  },
+  {
+    "id": 3304,
+    "source": "| `%mmoprofiles_current_profile_slot%` | Returns the slot (integer) corresponding to the current profile. |",
+    "zh": "| `%mmoprofiles_current_profile_slot%` | 当前档案对应的栏位编号，为整数。 |"
+  },
+  {
+    "id": 3305,
+    "source": "| `%mmoprofiles_amount_profiles%` | The number of profiles the player registered. |",
+    "zh": "| `%mmoprofiles_amount_profiles%` | 玩家已创建的档案数量。 |"
+  },
+  {
+    "id": 3306,
+    "source": "| `%mmoprofiles_profile_slots%` | The total number of profiles the player can register. |",
+    "zh": "| `%mmoprofiles_profile_slots%` | 玩家最多可创建的档案数量。 |"
+  },
+  {
+    "id": 3307,
+    "source": "| `%mmoprofiles_remaining_profile_slots%` | The remaining amount of profiles the player can register. |",
+    "zh": "| `%mmoprofiles_remaining_profile_slots%` | 玩家还可以创建的档案数量。 |"
+  },
+  {
+    "id": 3308,
+    "source": "| `%mmoprofiles_profile_name_{slot}%` | The name of the profile at slot {slot}. |",
+    "zh": "| `%mmoprofiles_profile_name_{slot}%` | 第 {slot} 个栏位中的档案名称。 |"
+  },
+  {
+    "id": 3309,
+    "source": "![](https://docs.phoenixdevt.fr/assets/banner.BsL7S4In.png)",
+    "zh": "![](https://docs.phoenixdevt.fr/assets/banner.BsL7S4In.png)"
+  },
+  {
+    "id": 3310,
+    "source": "MMOProfiles is a modern plugin that enables players to have multiple character slots/user profiles, each having its own progress. MMOProfiles supports player resources, inventories, location, bed spawn point, permissions, ender-chest and much more...",
+    "zh": "MMOProfiles 可让玩家拥有多个角色栏位或用户档案，各自保留独立进度。它支持玩家资源值、物品栏、位置、床的重生点、权限和末影箱等数据。"
+  },
+  {
+    "id": 3311,
+    "source": "It was designed to function seamlessly with other plugins including MMOCore, MMOInventory and MMOItems by supporting data storage for multiple profiles.",
+    "zh": "通过支持多档案数据存储，它可以与 MMOCore、MMOInventory、MMOItems 等插件配合使用。"
+  },
+  {
+    "id": 3312,
+    "source": "> Get MMOProfiles on [Polymart](https://polymart.org/product/4121/mmoprofiles) or [SpigotMC](https://www.spigotmc.org/resources/mmoprofiles.109942/)",
+    "zh": "> 在 [Polymart](https://polymart.org/product/4121/mmoprofiles)或 [SpigotMC](https://www.spigotmc.org/resources/mmoprofiles.109942/)] 上获取MMOProfiles"
+  },
+  {
+    "id": 3313,
+    "source": "Navigate to the next page when you are ready to install MMOProfiles!",
+    "zh": "当你准备好安装MMOProfiles时，导航到下一页！"
+  },
+  {
+    "id": 3314,
+    "source": "Installation",
+    "zh": "安装"
+  },
+  {
+    "id": 3315,
+    "source": "MMOProfiles is pretty much usable right of the bat after installation with default configuration. When logging in for the first time, players who have already played on the server before will see a profile with their old data saved inside of it. This is an optional feature and can be disabled in the main plugin configuration file.",
+    "zh": "安装后即可使用默认配置。已有玩家首次在安装插件后登录时，会看到一份保留其原有数据的档案。此功能可在插件主配置文件中关闭。"
+  },
+  {
+    "id": 3316,
+    "source": "Disable Spigot player data saving",
+    "zh": "禁用Spigot玩家数据保存"
+  },
+  {
+    "id": 3317,
+    "source": "Enable this option in your `spigot.yml` config file for the best MMOProfiles experience possible. This option tells Spigot to **stop saving player data** inside of your world data folder. MMOProfiles already handles all the player data saving stuff, so this basically reduces data duplication. It's still a dangerous option to play with, so bear that in mind!",
+    "zh": "在 `spigot.yml` 中启用此项，可以减少 MMOProfiles 使用时的重复数据。它会让 Spigot **停止向世界数据文件夹保存玩家数据**，因为 MMOProfiles 已负责保存这些数据。此选项仍有风险，修改时需要留意！"
+  },
+  {
+    "id": 3318,
+    "source": "If you're fine with losing your previous player data, you may also clear the `/world/playerdata` folder right away after enabling this option. If you enable this option and do not clear the `playerdata` folder, MMOProfiles will transfer this data to a new profile the first time the player joins.",
+    "zh": "如果接受丢弃原有玩家数据，可以在启用此项后直接清空 `/world/playerdata`。如果保留 `playerdata` 文件夹，MMOProfiles 会在玩家首次加入时将这些数据迁入新档案。"
+  },
+  {
+    "id": 3319,
+    "source": "Note for Multiverse-Core users",
+    "zh": "Multiverse-Core用户注意事项"
+  },
+  {
+    "id": 3320,
+    "source": "If you happen to use Multiverse-Core, you have to disable this option as well in `Multiverse/config.yml` as this option interferes with the MMOProfiles profile selection feature. When toggled on, this option teleports players when joining for the first time, overriding MMOProfiles teleportation.",
+    "zh": "使用 Multiverse-Core 时，还需要关闭 `Multiverse/config.yml` 中的此项。该选项会在玩家首次加入时执行传送，覆盖 MMOProfiles 的传送，干扰档案选择。"
+  }
+]

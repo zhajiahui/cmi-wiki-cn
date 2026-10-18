@@ -1,0 +1,114 @@
+[
+  {
+    "project": "MythicLib",
+    "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKgAAAAgCAYAAACGqDMBAAAEfElEQVR4nO1cTZbTMAyWUlhDhylcYgp3mMNwKA7DlgN0dlyAN/yvWPR1xGKSVHYsW7KdJm3z8XjjOrYsO58tyz/B25e3BB72+30fbhr0HwNAKK7DQFwij5S+FLXKQ5ZHIxMD8aG4kLzYMytSOuWWUVPHNF7UFWd5+aG0UkOeArU7EAXCvAxrx7dCktXFE6Q7Xml+v+3s9csgqLaQU4+YUjka0ltHRimNJo+m/XKIY0WpbE1+v+3t9ao0gpb3lDIixfLUADfzFuQSrSvvFEQ9FYx1aJsgg6AlRNDmtZp6DaFjciQioPdcixqEugRSCghVjTzL0/4MEvQn/D3+eDoGN83rYHnfn/4E45/TY5vmdzKNK1NKvzbpIEGuS7hcjRyrDrLMYx2t+pTIlNu2TnpRt9UaAFsOeDwtMPHWOUgtUEDulCNWrvlf0ENqvjwTD1CfeHOYay0kmyMwtA76bf+jivB7Fv5cRaJO5r0QL6V3zf2xk0imSpK/YyZvy/Ja9ZRkWvWRMO934U4bGqNOC6JYRuFiIPsP1RfqLwEl040L9rxPBa+PXzxBd9x8C172lsXvBO8+Ln9ITG6aQeHV7go8Yq25tOgzBngdNyyeT4d4eNesFxMvQ2euabHq46FsmWkBQLd8F1r6mgGmPNqggaLJTAS1emRTyfzEf1RaPJ8KmgV2qQ23B9dcAkCUFCXvQtLTySst+K/Wbl/qOhMtXvz1YY4jKblTJcTjxtJCUAH695i7X68QO8NZwxjodzkJANt/AAiImD8H1XjHU8n8yML/WPhLtsQUKjCJ87yA89JqQJEc8/mE8IYFBzf9j2wq8m51AwDHJlicpAAmdXlCZ5rnaJYTqNF+BAtBg5iEnJbz1RbEbpVUhN+XSu8hdDOciyfoV2TTBjoDj95/QzxOAfFo3CrtxZfgUSj3bWuyHRCJ04a7w68+/LC6uXyCng1qDUECmrYA9ZFxRKCxdiFQ30uuxos3tAkATLBD1N3wGMl778hmuh6Hz570VCCi8x5BpdPszuJwZ9Y9wkmL0ppT8Vz+RkyVAWQEagPcw9XoI+Fu5P13bsofmZnmYQmx44JXM4KeA65k2VMNhJkR9NwPXnhHGc0gb0flnNpjlPmqtFD/Bl714Q/8Ap0Abmq30Qt08TSnTM/BNwj4/YL3Cq/fPx4GMHTANQvXHPxdd3kR0fFwS7BhempMPzffMR06kmrTh/Dgef2zmoNONR9HbFiYPTjkyRtj4Ks5Qvm37mvKBMhzyCTMiqBToW/QCT1WxKFJ5+pUtaCIafIQmUeMMVbKgpfm0h8Pk6FRKvV5LUeed8olnrocA8mRl1RrVPOLCNd5+CwpN6fQVE9JgeWNfm9GKdM0glKATdadueC5P+eB20BONTI3yS0bMoMq8hdXIDdaplBE6Qjq14UgYiV4PD9eFFMwJodIHFGRy5Tkts/VBFU1UCKN3zhiff0G6uN5QehG9T+EyrI1Rk1dgkQVFLZ+ukHaHvf14kVKTdLL1JCHyDad6UbTnKmPgqhcr0H29u9/XDCeD+StUg8AAAAASUVORK5CYII=",
+    "file": "assets/15388a5be75a-embedded.png",
+    "sha256": "00a845be9971d0852b466bfbea260a4db6bc097bee217602a778a51b7f54f2c7",
+    "bytes": 1205,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MythicLib",
+    "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKsAAAAiCAYAAAAgVykJAAAC8UlEQVR4nO2cPWgUURDHX8Tz0KhRRDkJtzn1yBaGgG1qD9Ja2NmpaGewCxILg9iJdgmSIiGdha2wVwZbJUTk5IKXCyeCSPw4CSoYK/fNygz73uaUm/X/q16G2bl3Ydg3X+8GgqFgxxhjut2u+U2hUDCaKRaL8Rrfq/9x/V57/tmOANglcFagBjgrUAOcFahhLyfcaPE+PFL5ycpd9DdW+SRgZPwHb9NTv/1sPys35jArDSa2eTtPDwp2eIJJmxC0Hw95PSvavPjJ2lw4Kmgd8LN5eStebz44zuqUp96zcm/9OyWvvVXvbqUrGbxZgSLgrEANA1yd9W2nKD7gQ+3Ch3gdLZ7ojc1L9uipz53kda6+Y+XRI/548g0Jajc6rLzRsGFAWP1sP/dembczvcnKEzabNoyRQoLabDvVDqU+ddpLX+L8/TfW5pUqrzO/zu/h2hlWXiL/E9RZgVrgrEANbDUgT6y9SM+aw7M2+2689Mvo6dGfkDf5KoRoR9CXqwGWaCZg5bQC0A80OoPxunzbhmrh8Nd4PVah+ggDgFLgrEANXmEAze4p0ZNjmTdAs/uEzWW+EO3C3Ez2/fQb9Cj3rQaE9EhtHUr9LJrdU+o3T6U+S4912hSQsn4KbQokp66SenizAjXAWYEaMlcDXj9Pz1K9ba4e6Ymd67M2XNn+thOvV5b4JkKecDnuney0/WYkKFKmT6HhQfOW9aXSdJdTN8bgzQoUAWcFash9U2D91WC6Uo6QKgZ/u0EgjQXSkMCFscr3eI2mAFALnBWoQXUYQEf76E0BaRSQIo0RutwUiB4O2z1MytlrL9jNbAAlrHwhf2VvuEhITQGXWwPSGOGf4M0K1ABnBWpgbwrQCe3Rc3wWKTUFXPRHxz/yOkJTwFefjvy5II0FhqGnHWFcMGGT3CBIPOswUpg8yrNDGwdhwIcxUlPAW19oCkistfbFa9wUAGqBswI1pIYBGvnff8BMG/hhNpA74KxADXBWoAY4K1DDL9/H6p+EOCwcAAAAAElFTkSuQmCC",
+    "file": "assets/c4afc14d3150-embedded.png",
+    "sha256": "20ffeca4c4361d9345e8896c27950e8dc758f9218976ed009969cd11e30fa0d8",
+    "bytes": 810,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MythicLib",
+    "url": "https://docs.phoenixdevt.fr/assets/color_grad_vertical.BVZeuvAl.png",
+    "file": "assets/9a584d9099ad-color_grad_vertical.BVZeuvAl.png",
+    "sha256": "74caffd82c38e3ac9db785b721ea993e863746d6da6d785404c0004f86f07db8",
+    "bytes": 4717,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MythicLib",
+    "url": "https://docs.phoenixdevt.fr/assets/damage_indicators.CqYqRaSc.png",
+    "file": "assets/8eec030d0582-damage_indicators.CqYqRaSc.png",
+    "sha256": "ec6e8fa6f3ce48bcb14426462a2faf7c3b916cd764da47accdf873f6caa68a4d",
+    "bytes": 266285,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MythicLib",
+    "url": "https://docs.phoenixdevt.fr/assets/damage_indicators_element.YN0Vppdx.png",
+    "file": "assets/0163c1693917-damage_indicators_element.YN0Vppdx.png",
+    "sha256": "9f92eb75590cff4de623711a6c461634c99ab4316933f32b3669e4d881c5fd4f",
+    "bytes": 1040796,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MythicLib",
+    "url": "https://docs.phoenixdevt.fr/assets/fire_damage.ByW9dfuk.png",
+    "file": "assets/575b067d53c2-fire_damage.ByW9dfuk.png",
+    "sha256": "be4f027851be5149a27799d11e828a8a0a5d1b1d0d317baa8f2fecc52493dcb1",
+    "bytes": 11100,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MythicLib",
+    "url": "https://docs.phoenixdevt.fr/assets/fire_damage_percent.BSutR8Vw.png",
+    "file": "assets/edc3f72f4d76-fire_damage_percent.BSutR8Vw.png",
+    "sha256": "7a7d4d1062062c7b8ffc5f42932d202439d60a6b028c1ba17c5a1d9d862d8865",
+    "bytes": 9340,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MythicLib",
+    "url": "https://docs.phoenixdevt.fr/assets/fire_defense.Cx8AyGgo.png",
+    "file": "assets/b6b34edb9dee-fire_defense.Cx8AyGgo.png",
+    "sha256": "0faf5530705c1d803d00549f83c067b3f83b2b143f0b7ac36fcc9775249fcc01",
+    "bytes": 8576,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MythicLib",
+    "url": "https://docs.phoenixdevt.fr/assets/fire_weakness.Z7RBpFyk.png",
+    "file": "assets/eade8b822c54-fire_weakness.Z7RBpFyk.png",
+    "sha256": "884a9db4214a45623973a2a251acd4c15924648eccf6233935c332dd13b138e3",
+    "bytes": 7595,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MythicLib",
+    "url": "https://docs.phoenixdevt.fr/assets/health_scale_off.Dk5VFWbO.png",
+    "file": "assets/18c7f96069e5-health_scale_off.Dk5VFWbO.png",
+    "sha256": "1e35958f7a3662d032183b5938706f50b1ef7432e6b4c7cfae83c40ee1ebc14a",
+    "bytes": 8160,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MythicLib",
+    "url": "https://docs.phoenixdevt.fr/assets/health_scale_on.C3N5nAEt.png",
+    "file": "assets/3df5a68b7345-health_scale_on.C3N5nAEt.png",
+    "sha256": "6253c17e1dad88ee62afed23afe953055b80fd331140615ad5ff09cdb2e2a342",
+    "bytes": 6343,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MythicLib",
+    "url": "https://docs.phoenixdevt.fr/assets/poe_armor.C-2kRLIh.png",
+    "file": "assets/fcde0fe9c1e4-poe_armor.C-2kRLIh.png",
+    "sha256": "e2de7a9ae5ebca418547ce121f2a43f18635c14b6049ab7581f1219fa2f28fcc",
+    "bytes": 392132,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MythicLib",
+    "url": "https://docs.phoenixdevt.fr/assets/regen_indicator.CagtvlJ1.png",
+    "file": "assets/f4e9f033f43c-regen_indicator.CagtvlJ1.png",
+    "sha256": "9e1a5cb287398a04dd904a4d4e50ee95e0ddf284411fa795be778171d8d2d8da",
+    "bytes": 177783,
+    "content_type": "image/png"
+  },
+  {
+    "project": "MythicLib",
+    "url": "https://docs.phoenixdevt.fr/assets/spigot_changelog.UYEhkzg0.png",
+    "file": "assets/15511e9b417c-spigot_changelog.UYEhkzg0.png",
+    "sha256": "3aee4225f7eabc30317cdb535fba4b95650543e3d323beaf1194a67ce5d704b8",
+    "bytes": 9564,
+    "content_type": "image/png"
+  }
+]

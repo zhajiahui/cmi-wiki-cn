@@ -1,0 +1,74 @@
+[
+  {
+    "project": "BountyHunters",
+    "url": "https://docs.phoenixdevt.fr/assets/auto_bounty_1.BFpNj-RU.png",
+    "file": "assets/8e7c10adfa5c-auto_bounty_1.BFpNj-RU.png",
+    "sha256": "913b41aacd0078826ee049052a9890032a0fdc34fa0cb7e4d23102e73235bdbd",
+    "bytes": 17859,
+    "content_type": "image/png"
+  },
+  {
+    "project": "BountyHunters",
+    "url": "https://docs.phoenixdevt.fr/assets/auto_bounty_2.Cah5O6XY.png",
+    "file": "assets/4699ed6091bf-auto_bounty_2.Cah5O6XY.png",
+    "sha256": "4052c39ff12f36ff5795a1f03b7955ce3cc1630e5995f62a036a87aedfa40d43",
+    "bytes": 31787,
+    "content_type": "image/png"
+  },
+  {
+    "project": "BountyHunters",
+    "url": "https://docs.phoenixdevt.fr/assets/banner.Bhx_rwBZ.png",
+    "file": "assets/2d5b6e805112-banner.Bhx_rwBZ.png",
+    "sha256": "1d8032815da0571109aedce46baf76dd1a29cc960b214ae1dfb2769cd8d03ead",
+    "bytes": 512358,
+    "content_type": "image/png"
+  },
+  {
+    "project": "BountyHunters",
+    "url": "https://docs.phoenixdevt.fr/assets/compass.BoPi9Ne1.png",
+    "file": "assets/43f4c82442f3-compass.BoPi9Ne1.png",
+    "sha256": "589268517c87811cf6dc280dfb328c36801158b021eb192ac982b428844dbe1f",
+    "bytes": 14243,
+    "content_type": "image/png"
+  },
+  {
+    "project": "BountyHunters",
+    "url": "https://docs.phoenixdevt.fr/assets/editor.BFxklcBM.gif",
+    "file": "assets/b469d0a5bf7e-editor.BFxklcBM.gif",
+    "sha256": "21b20dd5130358ac6de277a26c4edd572fb1eeadbe90f847df23ecad62ebd88a",
+    "bytes": 373641,
+    "content_type": "image/gif"
+  },
+  {
+    "project": "BountyHunters",
+    "url": "https://docs.phoenixdevt.fr/assets/level_rewards.B2xtYyh3.png",
+    "file": "assets/ad5fca70bf5e-level_rewards.B2xtYyh3.png",
+    "sha256": "729a559f1a7abbf359d4b2cdc1bed2a7c1e6e563431417cd19eb152e806ecf74",
+    "bytes": 12935,
+    "content_type": "image/png"
+  },
+  {
+    "project": "BountyHunters",
+    "url": "https://docs.phoenixdevt.fr/assets/menu_0.NlMeIaxF.png",
+    "file": "assets/d0da0cb6adb6-menu_0.NlMeIaxF.png",
+    "sha256": "35d4288fe7a7cddbc8886fddac433f16cd35d50ceca0c887a698eaec2488e36d",
+    "bytes": 23893,
+    "content_type": "image/png"
+  },
+  {
+    "project": "BountyHunters",
+    "url": "https://docs.phoenixdevt.fr/assets/menu_1.a2AzJVFU.png",
+    "file": "assets/87319a7e6213-menu_1.a2AzJVFU.png",
+    "sha256": "5d93b89f4f6c872bfe12f4a6451324a59985c61598196a7e536e9a7f399a8209",
+    "bytes": 18122,
+    "content_type": "image/png"
+  },
+  {
+    "project": "BountyHunters",
+    "url": "https://docs.phoenixdevt.fr/assets/menu_2.D9tiGzXj.png",
+    "file": "assets/608f94880756-menu_2.D9tiGzXj.png",
+    "sha256": "5a5b79a665a8814be4ae48af2e6fe472c90619e55a155f2d866b041f7d603b3d",
+    "bytes": 28236,
+    "content_type": "image/png"
+  }
+]

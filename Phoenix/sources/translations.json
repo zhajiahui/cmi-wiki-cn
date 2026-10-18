@@ -1,0 +1,197 @@
+[
+  {
+    "id": 393,
+    "source": "Phoenix Wiki",
+    "zh": "Phoenix维基"
+  },
+  {
+    "id": 394,
+    "source": "Official plugin documentation for the MMO plugin suite and other Phoenix plugins.",
+    "zh": "MMO 插件套件和其他Phoenix插件的官方插件文档。"
+  },
+  {
+    "id": 395,
+    "source": "[Website](https://phoenixdevt.fr)",
+    "zh": "[网站](https://phoenixdevt.fr)"
+  },
+  {
+    "id": 396,
+    "source": "[Discord](https://phoenixdevt.fr/discord)",
+    "zh": "[Discord](https://phoenixdevt.fr/discord)"
+  },
+  {
+    "id": 397,
+    "source": "[SpigotMC](https://www.spigotmc.org/members/indyuce.253965/)",
+    "zh": "[SpigotMC](https://www.spigotmc.org/members/indyuce.253965/)"
+  },
+  {
+    "id": 398,
+    "source": "[Polymart](https://polymart.org/user/5861/indyuce)",
+    "zh": "[Polymart](https://polymart.org/user/5861/indyuce)"
+  },
+  {
+    "id": 399,
+    "source": "⚔️",
+    "zh": "⚔️"
+  },
+  {
+    "id": 400,
+    "source": "MMOItems",
+    "zh": "MMOItems"
+  },
+  {
+    "id": 401,
+    "source": "A great item solution for your RPG/survival server. Over 200 unique item options!",
+    "zh": "适合你的RPG/生存服务器的出色物品解决方案。超过200独特的物品选项！"
+  },
+  {
+    "id": 402,
+    "source": "⭐",
+    "zh": "⭐"
+  },
+  {
+    "id": 403,
+    "source": "MMOCore",
+    "zh": "MMOCore"
+  },
+  {
+    "id": 404,
+    "source": "Offer your players a brand new RPG/survival experience.",
+    "zh": "为你的玩家提供全新的RPG/生存体验。"
+  },
+  {
+    "id": 405,
+    "source": "🎒",
+    "zh": "🎒"
+  },
+  {
+    "id": 406,
+    "source": "MMOInventory",
+    "zh": "MMOInventory"
+  },
+  {
+    "id": 407,
+    "source": "An easy-to-use, lightweight, RPG-style custom inventory solution",
+    "zh": "easy-to-use轻量级RPG式定制物品栏解决方案"
+  },
+  {
+    "id": 408,
+    "source": "🥷",
+    "zh": "🥷"
+  },
+  {
+    "id": 409,
+    "source": "MMOProfiles",
+    "zh": "MMOProfiles"
+  },
+  {
+    "id": 410,
+    "source": "Multiple profile/character slots per player and cross-server player data bridge/sync",
+    "zh": "多个档案/角色栏位每个玩家和cross-server玩家数据桥接/同步"
+  },
+  {
+    "id": 411,
+    "source": "📚",
+    "zh": "📚"
+  },
+  {
+    "id": 412,
+    "source": "MythicLib",
+    "zh": "MythicLib"
+  },
+  {
+    "id": 413,
+    "source": "Dependency for the MMO plugin suite.",
+    "zh": "MMO 插件套件的依赖项。"
+  },
+  {
+    "id": 414,
+    "source": "💰",
+    "zh": "💰"
+  },
+  {
+    "id": 415,
+    "source": "BountyHunters",
+    "zh": "BountyHunters"
+  },
+  {
+    "id": 416,
+    "source": "Kill players, claim bounties! Ready-to-use full bounty system.",
+    "zh": "杀死玩家，夺取悬赏！Ready-to-use完整的悬赏系统。"
+  },
+  {
+    "id": 417,
+    "source": "📝",
+    "zh": "📝"
+  },
+  {
+    "id": 418,
+    "source": "Contracts",
+    "zh": "Contracts"
+  },
+  {
+    "id": 419,
+    "source": "Incentivize players to boost your economy with a contract system.",
+    "zh": "通过委托系统激励玩家来促进你的经济发展。"
+  },
+  {
+    "id": 4632,
+    "source": "Phoenix Plugin Documentation",
+    "zh": "Phoenix插件文档"
+  },
+  {
+    "id": 4633,
+    "source": "Plugin documentation is implemented using [VitePress](https://vitepress.dev). This wonderful Vue-based framework allows to generate static websites from Markdown files.",
+    "zh": "插件文档是使用 [VitePress](https://vitepress.dev)实现的。这个基于Vue的精彩框架允许从 Markdown 文件生成静态网站。"
+  },
+  {
+    "id": 4634,
+    "source": "This website is hosted on the [PhoenixDevt website](https://docs.phoenixdevt.fr) and is continously deployed using [TeamCity](https://teamcity.phoenixdevt.fr) whenever changes are pushed to the `main` branch.",
+    "zh": "该网站托管在 [PhoenixDevt 网站](https://docs.phoenixdevt.fr)上，并且每当更改推送到`main`分支时，都会使用 [TeamCity](https://teamcity.phoenixdevt.fr)持续部署。"
+  },
+  {
+    "id": 4635,
+    "source": "Development",
+    "zh": "发展"
+  },
+  {
+    "id": 4636,
+    "source": "Install dependencies",
+    "zh": "安装依赖项"
+  },
+  {
+    "id": 4637,
+    "source": "Run the development server",
+    "zh": "运行开发服务器"
+  },
+  {
+    "id": 4638,
+    "source": "Build Website",
+    "zh": "建立网站"
+  },
+  {
+    "id": 4639,
+    "source": "The static site will be built in the `.vitepress/dist` folder. It can be built using the following command",
+    "zh": "静态站点将构建在`.vitepress/dist`文件夹中。可以使用以下命令构建它"
+  },
+  {
+    "id": 4640,
+    "source": "Building the website will reveal dead links and references to non-existing images. This is useful for checking the validity of the documentation before pushing changes to the `main` branch. TeamCity will fail the build if such errors are detected.",
+    "zh": "构建网站将显示死链接和对non-existing图像的引用。这对于在将更改推送到`main`分支之前检查文档的有效性非常有用。  如果检测到此类错误，TeamCity将使构建失败。"
+  },
+  {
+    "id": 4641,
+    "source": "File Systems & Casing",
+    "zh": "文件系统和外壳"
+  },
+  {
+    "id": 4642,
+    "source": "When working on a Windows machine, keep in mind that the Windows file system is case insensitive, while most deployment targets (Linux based) are case sensitive. The TeamCity agent that builds the website is running on a Linux based system, so file name casing issues could show up even if the server builds locally on Windows.",
+    "zh": "在 Windows 计算机上工作时，请记住 Windows 文件系统不区分大小写，而大多数部署目标（基于 Linux）则区分大小写。构建网站的TeamCity代理在基于 Linux 的系统上运行，因此即使服务器在 Windows 上本地构建，也可能会出现文件名大小写问题。"
+  },
+  {
+    "id": 4643,
+    "source": "For file names, follow the `lowercase-kebab-case` convention to avoid problems with file name casing. You can use the Python script `scripts/check_file_casing.py` to check for files that feature uppercase characters in their file names.",
+    "zh": "对于文件名，请遵循`lowercase-kebab-case`约定，以避免文件名大小写问题。你可以使用 Python 脚本`scripts/check_file_casing.py`检查文件名中包含大写字符的文件。"
+  }
+]
