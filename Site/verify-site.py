@@ -45,10 +45,16 @@ respages=[row for row in search['docs'] if '#' not in row['location'] and row['l
 if len(cmipages)!=45 or len(respages)!=10:errors.append('Search page coverage mismatch')
 for name,items in [('CMI',cmipages),('Residence',respages)]:
     if any(not item['title'].startswith(name+' · ') or name not in item.get('tags',[]) for item in items):errors.append('Search project labels missing: '+name)
+table_entries=[row for row in search['docs'] if row['location'].startswith(('residence/permissions/#permission-','residence/flags/#flag-'))]
+if len(table_entries)!=172:errors.append('Permission or flag search rows missing')
+for item in table_entries:
+    parts=urlsplit(item['location'])
+    target=(SITE/parts.path/'index.html').resolve()
+    if unquote(parts.fragment) not in anchors[target]:errors.append('Search table-row anchor missing: '+item['location'])
 for address,project in [('index.html','CMI'),('residence/index.html','Residence')]:
     soup=html_files[(SITE/address).resolve()]
     if [node.get_text(strip=True) for node in soup.select('.md-tabs__link')]!=['CMI','Residence']:errors.append('Expected exactly two top-level tabs: '+address)
     active=soup.select_one('.md-tabs__item--active')
     if not active or active.get_text(strip=True)!=project:errors.append('Wrong active project tab: '+address)
-print(json.dumps({'html_pages':len(html_files),'local_references':checked,'search_entries':len(search['docs']),'cmi_pages':len(cmipages),'residence_pages':len(respages),'errors':errors},ensure_ascii=False,indent=2))
+print(json.dumps({'html_pages':len(html_files),'local_references':checked,'search_entries':len(search['docs']),'table_row_entries':len(table_entries),'cmi_pages':len(cmipages),'residence_pages':len(respages),'errors':errors},ensure_ascii=False,indent=2))
 if errors:sys.exit(1)

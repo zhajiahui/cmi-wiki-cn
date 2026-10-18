@@ -48,7 +48,15 @@ plugins:
     - zh
     - en
     jieba_dict_user: Site/search-dictionary.txt
-    separator: '[\s\u200b\u3000\-、。，．？！；.]+'
+    separator: '[\s\u200b\u3000\-、。，．？！；]+'
+    fields:
+      title:
+        boost: 1000
+      text:
+        boost: 1
+      tags:
+        boost: 1
+    pipeline: []
 markdown_extensions:
 - admonition
 - attr_list

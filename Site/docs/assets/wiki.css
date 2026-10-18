@@ -26,3 +26,6 @@
 .md-tabs { border-bottom:1px solid rgba(128,128,128,.16); }
 .md-tabs__link { font-size:.8rem; font-weight:600; }
 .md-tabs__item--active .md-tabs__link { color:var(--md-typeset-a-color); }
+
+.md-typeset tr[id] { scroll-margin-top:7rem; }
+.md-typeset tr:target { background:rgba(37,99,235,.09); }

@@ -3,6 +3,9 @@ from pathlib import Path
 from urllib.parse import urlsplit
 import json
 import yaml
+import jieba
+from bs4 import BeautifulSoup
+from html import escape
 from mkdocs.plugins import event_priority
 BASE=Path(__file__).resolve().parent
 ROOT=BASE.parent
@@ -51,6 +54,18 @@ def on_config(config):
     config.nav=nav
     return config
 
+TABLE_PAGES={'residence/permissions.md':'permission-','residence/flags.md':'flag-'}
+
+def on_page_content(html,*,page,config,files):
+    prefix=TABLE_PAGES.get(page.file.src_uri)
+    if not prefix:return html
+    soup=BeautifulSoup(html,'html.parser')
+    for row in soup.select('table tbody tr'):
+        first=row.find('td')
+        code=first.find('code') if first else None
+        if code:row['id']=prefix+code.get_text()
+    return str(soup)
+
 def on_page_markdown(markdown,*,page,config,files):
     page.edit_url=page.meta['edit_url']
     return markdown
@@ -64,4 +79,16 @@ def on_post_build(config):
             project='Residence' if urlsplit(item['location']).path.startswith('residence/') else 'CMI'
             label=project+' · '
             if not item['title'].startswith(label):item['title']=label+item['title']
+    # Give every permission and flag its own result and a matching table-row anchor.
+    for source in TABLE_PAGES:
+        relative=source.removesuffix('.md')+'/'
+        page_html=Path(config.site_dir)/relative/'index.html'
+        soup=BeautifulSoup(page_html.read_text(encoding='utf-8'),'html.parser')
+        for row in soup.select('table tbody tr[id]'):
+            cells=row.find_all('td')
+            code=cells[0].find('code')
+            name=code.get_text()
+            description=cells[1].get_text(' ',strip=True)
+            segmented='\u200b'.join(jieba.cut(description))
+            index['docs'].append({'location':relative+'#'+row['id'],'title':'Residence · '+name,'text':'<p><code>'+escape(name)+'</code> '+escape(segmented)+'</p>','tags':['Residence']})
     path.write_text(json.dumps(index,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
