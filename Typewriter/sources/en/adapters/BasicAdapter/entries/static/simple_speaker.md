@@ -1,0 +1,17 @@
+# Simple Speaker
+
+The `Spoken Dialogue Action` is an action that displays an animated message to the player. This action provides you with the ability to display a message with a specified speaker, text, and duration.
+
+## How could this be used? {#how-could-this-be-used}
+
+This action can be useful in a variety of situations. You can use it to create storylines, provide instructions to players, or create immersive roleplay experiences. The possibilities are endless!
+
+## Fields {#fields}
+
+## Display Name
+
+Required
+
+## Sound
+
+Required

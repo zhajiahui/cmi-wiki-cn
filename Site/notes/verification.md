@@ -39,3 +39,16 @@ Windows 不区分 `Site` 与 `site`。本轮首次尝试使用 `site/` 输出，
 - 关闭英文词干处理，保留技术名称内的英文点号；避免 `residence.randomtp`、`cmi.command.heal.others` 被当作多个普通英文词处理。
 - 调整插件标签的搜索权重，避免分类名盖过具体命令和权限的匹配。
 - 使用构建产物内实际的 Material 搜索 Worker，在 Node VM 中执行查询。`residence.randomtp`、`cmi.command.heal.others`、`随机传送`、`anvilbreak` 均优先命中相应页面或列表行。
+
+
+## Typewriter 分类（2026-10-18）
+
+- 新增独立 `Typewriter/` 项目，翻译官方默认 0.8.0 文档 316 页：使用文档 43 页、扩展及条目 245 页、开发文档 28 页。CMI、Residence 原文与正文文件未改动。
+- 顶部为 CMI、Residence、Typewriter 三个分类；Typewriter 使用 `typewriter/`，旧项目路径继续沿用。
+- Typewriter 校验覆盖 93 个完整代码块、819 处原有行内代码、命令表的权限节点及占位符；108 个资源按 SHA-256 核对，其中包含 41 段视频。
+- 全站严格构建通过。372 个 HTML 文件、155,640 处站内引用、2,790 条搜索记录均已核对；Residence 的 172 个逐行搜索入口继续保留。
+- 修正原始 HTML 视频的路径，使其相对于生成后的页面 URL 解析。
+- 内容与站点检查分开执行；站点验证逐页提取锚点和链接，避免同时保留全部页面 DOM。
+- 使用构建产物内实际的 Material 搜索 Worker 执行查询。新增 `typewriter.connect`、`Give Item Action`、`交互边界`、`过场动画`，并回归 `residence.randomtp`、`cmi.command.heal.others`、`随机传送`。
+- 发现 Material 9.7.7 的中文查询分词循环未包含字符串末尾，导致“随机传送”仅以“随机”检索。构建钩子修正两个边界条件，7 个查询的首组结果均与主题相符；CI 增加实际 Worker 查询检查。
+- 原文疑点和交互组件的展示差异另记于 `Typewriter/notes/source-issues.md`。未在 Minecraft 服务端测试插件或示例。

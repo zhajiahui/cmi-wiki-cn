@@ -1,0 +1,1266 @@
+{
+  "/adapters": {
+    "en": "Extensions",
+    "zh": "扩展"
+  },
+  "/adapters/BasicAdapter": {
+    "en": "Basic Adapter",
+    "zh": "基础适配器"
+  },
+  "/adapters/BasicAdapter/entries/action/add_potion_effect": {
+    "en": "Add Potion Effect Action",
+    "zh": "添加药水效果"
+  },
+  "/adapters/BasicAdapter/entries/action/apply_velocity": {
+    "en": "Apply Velocity Action",
+    "zh": "施加速度"
+  },
+  "/adapters/BasicAdapter/entries/action/cinematic": {
+    "en": "Cinematic",
+    "zh": "启动过场动画"
+  },
+  "/adapters/BasicAdapter/entries/action/console_run_command": {
+    "en": "Console Command Action",
+    "zh": "执行控制台命令"
+  },
+  "/adapters/BasicAdapter/entries/action/delayed_action": {
+    "en": "Delayed Action",
+    "zh": "延迟动作"
+  },
+  "/adapters/BasicAdapter/entries/action/drop_item": {
+    "en": "Drop Item Action",
+    "zh": "掉落物品"
+  },
+  "/adapters/BasicAdapter/entries/action/firework": {
+    "en": "Firework Action",
+    "zh": "生成烟花"
+  },
+  "/adapters/BasicAdapter/entries/action/give_item": {
+    "en": "Give Item Action",
+    "zh": "给予物品"
+  },
+  "/adapters/BasicAdapter/entries/action/group_trigger_action": {
+    "en": "Group Trigger Action",
+    "zh": "组内触发"
+  },
+  "/adapters/BasicAdapter/entries/action/play_sound": {
+    "en": "Play Sound Action",
+    "zh": "播放声音"
+  },
+  "/adapters/BasicAdapter/entries/action/player_run_command": {
+    "en": "Player Command Action",
+    "zh": "执行玩家命令"
+  },
+  "/adapters/BasicAdapter/entries/action/random_trigger": {
+    "en": "Random Trigger Gate",
+    "zh": "随机触发门"
+  },
+  "/adapters/BasicAdapter/entries/action/remove_item": {
+    "en": "Remove Item Action",
+    "zh": "移除物品"
+  },
+  "/adapters/BasicAdapter/entries/action/send_message": {
+    "en": "Message Action",
+    "zh": "发送消息"
+  },
+  "/adapters/BasicAdapter/entries/action/set_block": {
+    "en": "Set Block Action",
+    "zh": "设置方块"
+  },
+  "/adapters/BasicAdapter/entries/action/set_item": {
+    "en": "Set Item Action",
+    "zh": "设置物品"
+  },
+  "/adapters/BasicAdapter/entries/action/show_title": {
+    "en": "Show Title Action",
+    "zh": "显示标题"
+  },
+  "/adapters/BasicAdapter/entries/action/simple_action": {
+    "en": "Simple Action",
+    "zh": "简单动作"
+  },
+  "/adapters/BasicAdapter/entries/action/spawn_particles": {
+    "en": "Spawn Particle Action",
+    "zh": "生成粒子"
+  },
+  "/adapters/BasicAdapter/entries/action/stop_sound": {
+    "en": "Stop Sound Action",
+    "zh": "停止声音"
+  },
+  "/adapters/BasicAdapter/entries/action/switch_server_action": {
+    "en": "Switch Server Action",
+    "zh": "切换服务器"
+  },
+  "/adapters/BasicAdapter/entries/action/teleport": {
+    "en": "Teleport Action",
+    "zh": "传送"
+  },
+  "/adapters/BasicAdapter/entries/action/track_quest": {
+    "en": "Track Quest Action",
+    "zh": "追踪任务"
+  },
+  "/adapters/BasicAdapter/entries/audience/boss_bar": {
+    "en": "Boss Bar",
+    "zh": "Boss 栏"
+  },
+  "/adapters/BasicAdapter/entries/audience/cinematic_audience": {
+    "en": "Cinematic Audience",
+    "zh": "过场动画受众"
+  },
+  "/adapters/BasicAdapter/entries/audience/closest_group_member_path_stream": {
+    "en": "Closest Group Member Path Stream",
+    "zh": "最近组员路径流"
+  },
+  "/adapters/BasicAdapter/entries/audience/criteria_audience": {
+    "en": "Criteria Audience",
+    "zh": "条件受众"
+  },
+  "/adapters/BasicAdapter/entries/audience/cron_audience": {
+    "en": "Cron Audience",
+    "zh": "Cron 受众"
+  },
+  "/adapters/BasicAdapter/entries/audience/direct_location_path_stream": {
+    "en": "Direct Location Path Stream",
+    "zh": "直达位置路径流"
+  },
+  "/adapters/BasicAdapter/entries/audience/game_time_audience": {
+    "en": "Game Time Audience",
+    "zh": "游戏时间受众"
+  },
+  "/adapters/BasicAdapter/entries/audience/group_members_path_stream": {
+    "en": "Group Members Path Stream",
+    "zh": "组员路径流"
+  },
+  "/adapters/BasicAdapter/entries/audience/holding_item_audience": {
+    "en": "Holding Item Audience",
+    "zh": "手持物品受众"
+  },
+  "/adapters/BasicAdapter/entries/audience/item_in_inventory_audience": {
+    "en": "Item In Inventory Audience",
+    "zh": "背包物品受众"
+  },
+  "/adapters/BasicAdapter/entries/audience/item_in_slot_audience": {
+    "en": "Item In Slot Audience",
+    "zh": "槽位物品受众"
+  },
+  "/adapters/BasicAdapter/entries/audience/location_objectives_path_stream": {
+    "en": "Location Objectives Path Stream",
+    "zh": "位置目标路径流"
+  },
+  "/adapters/BasicAdapter/entries/audience/looping_cinematic_audience": {
+    "en": "Looping Cinematic Audience",
+    "zh": "循环过场动画受众"
+  },
+  "/adapters/BasicAdapter/entries/audience/sidebar": {
+    "en": "Simple Sidebar",
+    "zh": "简单侧边栏"
+  },
+  "/adapters/BasicAdapter/entries/audience/simple_lines": {
+    "en": "Simple Lines",
+    "zh": "简单文本行"
+  },
+  "/adapters/BasicAdapter/entries/audience/tab_list_header_footer": {
+    "en": "Tab List Header Footer",
+    "zh": "玩家列表页眉与页脚"
+  },
+  "/adapters/BasicAdapter/entries/audience/timer_audience": {
+    "en": "Timer Audience",
+    "zh": "计时器受众"
+  },
+  "/adapters/BasicAdapter/entries/audience/trigger_audience": {
+    "en": "Trigger Audience",
+    "zh": "触发受众"
+  },
+  "/adapters/BasicAdapter/entries/cinematic/actionbar_dialogue_cinematic": {
+    "en": "Action Bar Dialogue Cinematic",
+    "zh": "动作栏对话过场动画"
+  },
+  "/adapters/BasicAdapter/entries/cinematic/blinding_cinematic": {
+    "en": "Blinding Cinematic",
+    "zh": "致盲过场动画"
+  },
+  "/adapters/BasicAdapter/entries/cinematic/camera_cinematic": {
+    "en": "Camera Cinematic",
+    "zh": "镜头过场动画"
+  },
+  "/adapters/BasicAdapter/entries/cinematic/cinematic_console_command": {
+    "en": "Cinematic Console Command",
+    "zh": "过场动画控制台命令"
+  },
+  "/adapters/BasicAdapter/entries/cinematic/cinematic_player_command": {
+    "en": "Cinematic Player Command",
+    "zh": "过场动画玩家命令"
+  },
+  "/adapters/BasicAdapter/entries/cinematic/particle_cinematic": {
+    "en": "Particle Cinematic",
+    "zh": "粒子过场动画"
+  },
+  "/adapters/BasicAdapter/entries/cinematic/potion_effect_cinematic": {
+    "en": "Potion Effect Cinematic",
+    "zh": "药水效果过场动画"
+  },
+  "/adapters/BasicAdapter/entries/cinematic/pumpkin_hat_cinematic": {
+    "en": "Pumpkin Hat Cinematic",
+    "zh": "南瓜头盔过场动画"
+  },
+  "/adapters/BasicAdapter/entries/cinematic/random_actionbar_dialogue_cinematic": {
+    "en": "Random Action Bar Dialogue Cinematic",
+    "zh": "随机动作栏对话过场动画"
+  },
+  "/adapters/BasicAdapter/entries/cinematic/random_spoken_dialogue_cinematic": {
+    "en": "Random Spoken Dialogue Cinematic",
+    "zh": "随机逐字对话过场动画"
+  },
+  "/adapters/BasicAdapter/entries/cinematic/random_subtitle_dialogue_cinematic": {
+    "en": "Random Subtitle Dialogue Cinematic",
+    "zh": "随机副标题对话过场动画"
+  },
+  "/adapters/BasicAdapter/entries/cinematic/screen_shake_cinematic": {
+    "en": "Screen Shake Cinematic",
+    "zh": "屏幕震动过场动画"
+  },
+  "/adapters/BasicAdapter/entries/cinematic/set_fake_block_cinematic": {
+    "en": "Set Fake Block Cinematic",
+    "zh": "虚拟方块过场动画"
+  },
+  "/adapters/BasicAdapter/entries/cinematic/sound_cinematic": {
+    "en": "Sound Cinematic",
+    "zh": "声音过场动画"
+  },
+  "/adapters/BasicAdapter/entries/cinematic/spoken_dialogue_cinematic": {
+    "en": "Spoken Dialogue Cinematic",
+    "zh": "逐字对话过场动画"
+  },
+  "/adapters/BasicAdapter/entries/cinematic/subtitle_dialogue_cinematic": {
+    "en": "Subtitle Dialogue Cinematic",
+    "zh": "副标题对话过场动画"
+  },
+  "/adapters/BasicAdapter/entries/cinematic/title_cinematic": {
+    "en": "Title Cinematic",
+    "zh": "标题过场动画"
+  },
+  "/adapters/BasicAdapter/entries/cinematic/trigger_sequence_cinematic": {
+    "en": "Trigger Sequence Cinematic",
+    "zh": "触发序列过场动画"
+  },
+  "/adapters/BasicAdapter/entries/dialogue/message": {
+    "en": "Message Dialogue",
+    "zh": "消息对话"
+  },
+  "/adapters/BasicAdapter/entries/dialogue/option": {
+    "en": "Option Dialogue",
+    "zh": "选项对话"
+  },
+  "/adapters/BasicAdapter/entries/dialogue/random_message": {
+    "en": "Random Message Dialogue",
+    "zh": "随机消息对话"
+  },
+  "/adapters/BasicAdapter/entries/dialogue/random_spoken": {
+    "en": "Random Spoken Dialogue",
+    "zh": "随机逐字对话"
+  },
+  "/adapters/BasicAdapter/entries/dialogue/spoken": {
+    "en": "Spoken Dialogue",
+    "zh": "逐字对话"
+  },
+  "/adapters/BasicAdapter/entries/event/craft_item_event": {
+    "en": "Craft Item Event",
+    "zh": "合成物品事件"
+  },
+  "/adapters/BasicAdapter/entries/event/fire_trigger_event": {
+    "en": "Fire Trigger Event",
+    "zh": "手动触发事件"
+  },
+  "/adapters/BasicAdapter/entries/event/on_block_break": {
+    "en": "Block Break Event",
+    "zh": "破坏方块事件"
+  },
+  "/adapters/BasicAdapter/entries/event/on_detect_command_ran": {
+    "en": "Detect Command Ran Event",
+    "zh": "检测命令执行事件"
+  },
+  "/adapters/BasicAdapter/entries/event/on_fish": {
+    "en": "Fish Event",
+    "zh": "钓鱼事件"
+  },
+  "/adapters/BasicAdapter/entries/event/on_interact_with_block": {
+    "en": "Interact Block Event",
+    "zh": "方块交互事件"
+  },
+  "/adapters/BasicAdapter/entries/event/on_item_pickup": {
+    "en": "Pickup Item Event",
+    "zh": "拾取物品事件"
+  },
+  "/adapters/BasicAdapter/entries/event/on_message_contains_text": {
+    "en": "Chat Contains Text Event",
+    "zh": "聊天包含文本事件"
+  },
+  "/adapters/BasicAdapter/entries/event/on_place_block": {
+    "en": "Block Place Event",
+    "zh": "放置方块事件"
+  },
+  "/adapters/BasicAdapter/entries/event/on_player_death": {
+    "en": "Player Death Event",
+    "zh": "玩家死亡事件"
+  },
+  "/adapters/BasicAdapter/entries/event/on_player_hit_entity": {
+    "en": "Player Hit Entity Event",
+    "zh": "玩家攻击实体事件"
+  },
+  "/adapters/BasicAdapter/entries/event/on_player_join": {
+    "en": "Player Join Event",
+    "zh": "玩家加入事件"
+  },
+  "/adapters/BasicAdapter/entries/event/on_player_kill_entity": {
+    "en": "Player Kill Entity Event",
+    "zh": "玩家击杀实体事件"
+  },
+  "/adapters/BasicAdapter/entries/event/on_player_kill_player": {
+    "en": "Player Kill Player Event",
+    "zh": "玩家击杀玩家事件"
+  },
+  "/adapters/BasicAdapter/entries/event/on_player_near_location": {
+    "en": "Player Near Location Event",
+    "zh": "玩家接近位置事件"
+  },
+  "/adapters/BasicAdapter/entries/event/on_player_quit": {
+    "en": "Player Quit Event",
+    "zh": "玩家退出事件"
+  },
+  "/adapters/BasicAdapter/entries/event/on_run_command": {
+    "en": "Run Command Event",
+    "zh": "运行命令事件"
+  },
+  "/adapters/BasicAdapter/entries/fact/countdown_fact": {
+    "en": "Countdown Fact",
+    "zh": "倒计时事实"
+  },
+  "/adapters/BasicAdapter/entries/fact/cron_fact": {
+    "en": "Cron Fact",
+    "zh": "Cron 事实"
+  },
+  "/adapters/BasicAdapter/entries/fact/in_audience_fact": {
+    "en": "In Audience Fact",
+    "zh": "处于受众中事实"
+  },
+  "/adapters/BasicAdapter/entries/fact/in_cinematic_fact": {
+    "en": "In Cinematic Fact",
+    "zh": "处于过场动画中事实"
+  },
+  "/adapters/BasicAdapter/entries/fact/inventory_item_count_fact": {
+    "en": "Inventory Item Count Fact",
+    "zh": "背包物品数量事实"
+  },
+  "/adapters/BasicAdapter/entries/fact/item_holding_fact": {
+    "en": "Item Holding Fact",
+    "zh": "手持物品事实"
+  },
+  "/adapters/BasicAdapter/entries/fact/item_in_slot_fact": {
+    "en": "Item In Slot Fact",
+    "zh": "槽位物品事实"
+  },
+  "/adapters/BasicAdapter/entries/fact/number_placeholder": {
+    "en": "Number Placeholder Fact",
+    "zh": "数字占位符事实"
+  },
+  "/adapters/BasicAdapter/entries/fact/permanent_fact": {
+    "en": "Permanent Fact",
+    "zh": "永久事实"
+  },
+  "/adapters/BasicAdapter/entries/fact/quest_status_fact": {
+    "en": "Quest Status Fact",
+    "zh": "任务状态事实"
+  },
+  "/adapters/BasicAdapter/entries/fact/session_fact": {
+    "en": "Session Fact",
+    "zh": "会话事实"
+  },
+  "/adapters/BasicAdapter/entries/fact/timed_fact": {
+    "en": "Timed Fact",
+    "zh": "限时事实"
+  },
+  "/adapters/BasicAdapter/entries/fact/value_placeholder": {
+    "en": "Value Placeholder Fact",
+    "zh": "数值占位符事实"
+  },
+  "/adapters/BasicAdapter/entries/group/global_group": {
+    "en": "Global Group",
+    "zh": "全局组"
+  },
+  "/adapters/BasicAdapter/entries/group/player_group": {
+    "en": "Player Group",
+    "zh": "玩家组"
+  },
+  "/adapters/BasicAdapter/entries/group/world_group": {
+    "en": "World Group",
+    "zh": "世界组"
+  },
+  "/adapters/BasicAdapter/entries/quest": {
+    "en": "Simple Quest",
+    "zh": "简单任务"
+  },
+  "/adapters/BasicAdapter/entries/quest/completable_objective": {
+    "en": "Completable Objective",
+    "zh": "可完成目标"
+  },
+  "/adapters/BasicAdapter/entries/quest/location_objective": {
+    "en": "Location Objective",
+    "zh": "位置目标"
+  },
+  "/adapters/BasicAdapter/entries/quest/objective": {
+    "en": "Simple Objective",
+    "zh": "简单目标"
+  },
+  "/adapters/BasicAdapter/entries/quest/objective_lines": {
+    "en": "Objective Lines",
+    "zh": "目标文本行"
+  },
+  "/adapters/BasicAdapter/entries/quest/quest_complete_event": {
+    "en": "Quest Complete Event",
+    "zh": "任务完成事件"
+  },
+  "/adapters/BasicAdapter/entries/quest/quest_start_event": {
+    "en": "Quest Start Event",
+    "zh": "任务开始事件"
+  },
+  "/adapters/BasicAdapter/entries/quest/quest_status_update_event": {
+    "en": "Quest Status Update Event",
+    "zh": "任务状态更新事件"
+  },
+  "/adapters/BasicAdapter/entries/quest/tracked_objective_audience": {
+    "en": "Tracked Objective Audience",
+    "zh": "已追踪目标受众"
+  },
+  "/adapters/BasicAdapter/entries/quest/tracked_quest_audience": {
+    "en": "Tracked Quest Audience",
+    "zh": "已追踪任务受众"
+  },
+  "/adapters/BasicAdapter/entries/sound/custom_sound": {
+    "en": "Custom Sound",
+    "zh": "自定义声音"
+  },
+  "/adapters/BasicAdapter/entries/static/base_road_network": {
+    "en": "Base Road Network",
+    "zh": "基础道路网络"
+  },
+  "/adapters/BasicAdapter/entries/static/self_speaker": {
+    "en": "Self Speaker",
+    "zh": "玩家自身说话者"
+  },
+  "/adapters/BasicAdapter/entries/static/simple_speaker": {
+    "en": "Simple Speaker",
+    "zh": "简单说话者"
+  },
+  "/adapters/CitizensAdapter": {
+    "en": "Citizens Adapter",
+    "zh": "Citizens 适配器"
+  },
+  "/adapters/CitizensAdapter/entries/cinematic/reference_npc_cinematic": {
+    "en": "Reference Npc Cinematic",
+    "zh": "引用 NPC 过场动画"
+  },
+  "/adapters/CitizensAdapter/entries/cinematic/self_npc_cinematic": {
+    "en": "Self Npc Cinematic",
+    "zh": "玩家自身 NPC 过场动画"
+  },
+  "/adapters/CitizensAdapter/entries/entity/reference_npc": {
+    "en": "Reference Npc",
+    "zh": "引用 NPC"
+  },
+  "/adapters/CitizensAdapter/entries/event/on_npc_interact": {
+    "en": "Npc Interact Event",
+    "zh": "NPC 交互事件"
+  },
+  "/adapters/CombatLogXAdapter": {
+    "en": "Combat Log X Adapter",
+    "zh": "CombatLogX 适配器"
+  },
+  "/adapters/CombatLogXAdapter/entries/event/on_player_enter_combat": {
+    "en": "Player Enter Combat Event",
+    "zh": "玩家进入战斗事件"
+  },
+  "/adapters/CombatLogXAdapter/entries/event/on_player_exit_combat": {
+    "en": "Player Exit Combat Event",
+    "zh": "玩家退出战斗事件"
+  },
+  "/adapters/CombatLogXAdapter/entries/fact/combat_fact": {
+    "en": "Combat Fact",
+    "zh": "战斗事实"
+  },
+  "/adapters/EntityAdapter": {
+    "en": "Entity Adapter",
+    "zh": "实体适配器"
+  },
+  "/adapters/EntityAdapter/entries/activity/audience_activity": {
+    "en": "Audience Activity",
+    "zh": "受众活动"
+  },
+  "/adapters/EntityAdapter/entries/activity/game_time_activity": {
+    "en": "Game Time Activity",
+    "zh": "游戏时间活动"
+  },
+  "/adapters/EntityAdapter/entries/activity/in_dialogue_activity": {
+    "en": "In Dialogue Activity",
+    "zh": "对话中活动"
+  },
+  "/adapters/EntityAdapter/entries/activity/look_close_activity": {
+    "en": "Look Close Activity",
+    "zh": "近距离注视活动"
+  },
+  "/adapters/EntityAdapter/entries/activity/path_activity": {
+    "en": "Path Activity",
+    "zh": "路径活动"
+  },
+  "/adapters/EntityAdapter/entries/activity/patrol_activity": {
+    "en": "Patrol Activity",
+    "zh": "巡逻活动"
+  },
+  "/adapters/EntityAdapter/entries/activity/player_close_by_activity": {
+    "en": "Player Close By Activity",
+    "zh": "玩家在附近活动"
+  },
+  "/adapters/EntityAdapter/entries/activity/random_look_activity": {
+    "en": "Random Look Activity",
+    "zh": "随机环顾活动"
+  },
+  "/adapters/EntityAdapter/entries/activity/target_location_activity": {
+    "en": "Target Location Activity",
+    "zh": "目标位置活动"
+  },
+  "/adapters/EntityAdapter/entries/activity/timed_activity": {
+    "en": "Timed Activity",
+    "zh": "定时活动"
+  },
+  "/adapters/EntityAdapter/entries/activity/trigger_activity": {
+    "en": "Trigger Activity",
+    "zh": "触发活动"
+  },
+  "/adapters/EntityAdapter/entries/audience/direct_entity_instance_path_stream": {
+    "en": "Direct Entity Instance Path Stream",
+    "zh": "直达实体实例路径流"
+  },
+  "/adapters/EntityAdapter/entries/cinematic/entity_cinematic": {
+    "en": "Entity Cinematic",
+    "zh": "实体过场动画"
+  },
+  "/adapters/EntityAdapter/entries/data/ageable_data": {
+    "en": "Ageable Data",
+    "zh": "年龄数据"
+  },
+  "/adapters/EntityAdapter/entries/data/arrow_count_data": {
+    "en": "Arrow Count Data",
+    "zh": "身上箭矢数量数据"
+  },
+  "/adapters/EntityAdapter/entries/data/cat_variant_data": {
+    "en": "Cat Variant Data",
+    "zh": "猫变种数据"
+  },
+  "/adapters/EntityAdapter/entries/data/chested_horse_chest_meta": {
+    "en": "Chested Horse Chest Data",
+    "zh": "驮箱马类箱子数据"
+  },
+  "/adapters/EntityAdapter/entries/data/collar_color_data": {
+    "en": "Collar Color Data",
+    "zh": "项圈颜色数据"
+  },
+  "/adapters/EntityAdapter/entries/data/custom_name_data": {
+    "en": "Custom Name Data",
+    "zh": "自定义名称数据"
+  },
+  "/adapters/EntityAdapter/entries/data/dancing_data": {
+    "en": "Dancing Data",
+    "zh": "跳舞数据"
+  },
+  "/adapters/EntityAdapter/entries/data/glowing_effect_data": {
+    "en": "Glowing Effect Data",
+    "zh": "发光效果数据"
+  },
+  "/adapters/EntityAdapter/entries/data/horse_variant_dat": {
+    "en": "Horse Variant Data",
+    "zh": "马变种数据"
+  },
+  "/adapters/EntityAdapter/entries/data/llama_carpet_color_data": {
+    "en": "Llama Carpet Color Data",
+    "zh": "羊驼地毯颜色数据"
+  },
+  "/adapters/EntityAdapter/entries/data/llama_variant_data": {
+    "en": "Llama Variant Data",
+    "zh": "羊驼变种数据"
+  },
+  "/adapters/EntityAdapter/entries/data/marker_data": {
+    "en": "Marker Data",
+    "zh": "标记数据"
+  },
+  "/adapters/EntityAdapter/entries/data/on_fire_data": {
+    "en": "On Fire Data",
+    "zh": "着火数据"
+  },
+  "/adapters/EntityAdapter/entries/data/parrot_color_data": {
+    "en": "Parrot Color Data",
+    "zh": "鹦鹉颜色数据"
+  },
+  "/adapters/EntityAdapter/entries/data/pose_data": {
+    "en": "Pose Data",
+    "zh": "姿势数据"
+  },
+  "/adapters/EntityAdapter/entries/data/potion_effect_color_data": {
+    "en": "Potion Effect Color Data",
+    "zh": "药水效果颜色数据"
+  },
+  "/adapters/EntityAdapter/entries/data/puff_state_data": {
+    "en": "Puff State Data",
+    "zh": "河豚膨胀状态数据"
+  },
+  "/adapters/EntityAdapter/entries/data/rabbit_type_data": {
+    "en": "Rabbit Type Data",
+    "zh": "兔子类型数据"
+  },
+  "/adapters/EntityAdapter/entries/data/saddled_data": {
+    "en": "Saddled Data",
+    "zh": "鞍具数据"
+  },
+  "/adapters/EntityAdapter/entries/data/size_data": {
+    "en": "Size Data",
+    "zh": "大小数据"
+  },
+  "/adapters/EntityAdapter/entries/data/skin_data": {
+    "en": "Skin Data",
+    "zh": "皮肤数据"
+  },
+  "/adapters/EntityAdapter/entries/data/small_data": {
+    "en": "Small Data",
+    "zh": "小型数据"
+  },
+  "/adapters/EntityAdapter/entries/data/villager_data": {
+    "en": "Villager Data",
+    "zh": "村民数据"
+  },
+  "/adapters/EntityAdapter/entries/entity/allay_instance": {
+    "en": "Allay Instance",
+    "zh": "悦灵实例"
+  },
+  "/adapters/EntityAdapter/entries/entity/cat_instance": {
+    "en": "Cat Instance",
+    "zh": "猫实例"
+  },
+  "/adapters/EntityAdapter/entries/entity/chicken_instance": {
+    "en": "Chicken Instance",
+    "zh": "鸡实例"
+  },
+  "/adapters/EntityAdapter/entries/entity/cow_instance": {
+    "en": "Cow Instance",
+    "zh": "牛实例"
+  },
+  "/adapters/EntityAdapter/entries/entity/enderman_instance": {
+    "en": "Enderman Instance",
+    "zh": "末影人实例"
+  },
+  "/adapters/EntityAdapter/entries/entity/frog_instance": {
+    "en": "Frog Instance",
+    "zh": "青蛙实例"
+  },
+  "/adapters/EntityAdapter/entries/entity/hit_box_definition": {
+    "en": "Hit Box Definition",
+    "zh": "碰撞箱定义"
+  },
+  "/adapters/EntityAdapter/entries/entity/hoglin_instance": {
+    "en": "Hoglin Instance",
+    "zh": "疣猪兽实例"
+  },
+  "/adapters/EntityAdapter/entries/entity/husk_instance": {
+    "en": "Husk Instance",
+    "zh": "尸壳实例"
+  },
+  "/adapters/EntityAdapter/entries/entity/interaction_indicator_definition": {
+    "en": "Interaction Indicator Definition",
+    "zh": "交互指示器定义"
+  },
+  "/adapters/EntityAdapter/entries/entity/iron_golem_instance": {
+    "en": "Iron Golem Instance",
+    "zh": "铁傀儡实例"
+  },
+  "/adapters/EntityAdapter/entries/entity/item_display_instance": {
+    "en": "Item Display Instance",
+    "zh": "物品展示实体实例"
+  },
+  "/adapters/EntityAdapter/entries/entity/magma_cube_instance": {
+    "en": "Magma Cube Instance",
+    "zh": "岩浆怪实例"
+  },
+  "/adapters/EntityAdapter/entries/entity/named_entity_definition": {
+    "en": "Named Entity Definition",
+    "zh": "具名实体定义"
+  },
+  "/adapters/EntityAdapter/entries/entity/npc_instance": {
+    "en": "Npc Instance",
+    "zh": "NPC 实例"
+  },
+  "/adapters/EntityAdapter/entries/entity/piglin_brute_instance": {
+    "en": "Piglin Brute Instance",
+    "zh": "猪灵蛮兵实例"
+  },
+  "/adapters/EntityAdapter/entries/entity/piglin_instance": {
+    "en": "Piglin Instance",
+    "zh": "猪灵实例"
+  },
+  "/adapters/EntityAdapter/entries/entity/player_instance": {
+    "en": "Player Instance",
+    "zh": "玩家实例"
+  },
+  "/adapters/EntityAdapter/entries/entity/self_npc_definition": {
+    "en": "Self Npc Definition",
+    "zh": "玩家自身 NPC 定义"
+  },
+  "/adapters/EntityAdapter/entries/entity/skeleton_instance": {
+    "en": "Skeleton Instance",
+    "zh": "骷髅实例"
+  },
+  "/adapters/EntityAdapter/entries/entity/slime_instance": {
+    "en": "Slime Instance",
+    "zh": "史莱姆实例"
+  },
+  "/adapters/EntityAdapter/entries/entity/stacked_entity_definition": {
+    "en": "Stacked Entity Definition",
+    "zh": "堆叠实体定义"
+  },
+  "/adapters/EntityAdapter/entries/entity/text_display_instance": {
+    "en": "Text Display Instance",
+    "zh": "文本展示实体实例"
+  },
+  "/adapters/EntityAdapter/entries/entity/villager_instance": {
+    "en": "Villager Instance",
+    "zh": "村民实例"
+  },
+  "/adapters/EntityAdapter/entries/entity/warden_instance": {
+    "en": "Warden Instance",
+    "zh": "监守者实例"
+  },
+  "/adapters/EntityAdapter/entries/entity/witch_instance": {
+    "en": "Witch Instance",
+    "zh": "女巫实例"
+  },
+  "/adapters/EntityAdapter/entries/entity/zombie_instance": {
+    "en": "Zombie Instance",
+    "zh": "僵尸实例"
+  },
+  "/adapters/EntityAdapter/entries/event/entity_interact_event": {
+    "en": "Entity Interact Event",
+    "zh": "实体交互事件"
+  },
+  "/adapters/EntityAdapter/entries/instance/group_advanced_entity_instance": {
+    "en": "Group Advanced Entity Instance",
+    "zh": "分组高级实体实例"
+  },
+  "/adapters/EntityAdapter/entries/instance/individual_advanced_entity_instance": {
+    "en": "Individual Advanced Entity Instance",
+    "zh": "个人高级实体实例"
+  },
+  "/adapters/EntityAdapter/entries/instance/shared_advanced_entity_instance": {
+    "en": "Shared Advanced Entity Instance",
+    "zh": "共享高级实体实例"
+  },
+  "/adapters/EntityAdapter/entries/quest/interact_entity_objective": {
+    "en": "Interact Entity Objective",
+    "zh": "实体交互目标"
+  },
+  "/adapters/EntityAdapter/entries/quest/interact_entity_objectives_path_stream": {
+    "en": "Interact Entity Objectives Path Stream",
+    "zh": "实体交互目标路径流"
+  },
+  "/adapters/FancyNpcsAdapter": {
+    "en": "Fancy Npcs Adapter",
+    "zh": "FancyNpcs 适配器"
+  },
+  "/adapters/FancyNpcsAdapter/entries/cinematic/fancy_reference_npc_cinematic": {
+    "en": "Reference Npc Cinematic",
+    "zh": "引用 NPC 过场动画"
+  },
+  "/adapters/FancyNpcsAdapter/entries/cinematic/fancy_self_npc_cinematic": {
+    "en": "Self Npc Cinematic",
+    "zh": "玩家自身 NPC 过场动画"
+  },
+  "/adapters/FancyNpcsAdapter/entries/entity/fancy_reference_npc": {
+    "en": "Reference Npc",
+    "zh": "引用 NPC"
+  },
+  "/adapters/FancyNpcsAdapter/entries/event/fancy_on_npc_interact": {
+    "en": "Npc Interact Event",
+    "zh": "NPC 交互事件"
+  },
+  "/adapters/MythicMobsAdapter": {
+    "en": "Mythic Mobs Adapter",
+    "zh": "MythicMobs 适配器"
+  },
+  "/adapters/MythicMobsAdapter/entries/action/despawn_mythicmobs_mob": {
+    "en": "Despawn Mob Action",
+    "zh": "移除生物"
+  },
+  "/adapters/MythicMobsAdapter/entries/action/execute_mythicmob_skill": {
+    "en": "Execute Skill Action",
+    "zh": "执行技能"
+  },
+  "/adapters/MythicMobsAdapter/entries/action/spawn_mythicmobs_mob": {
+    "en": "Spawn Mob Action",
+    "zh": "生成生物"
+  },
+  "/adapters/MythicMobsAdapter/entries/cinematic/mythicmob_cinematic": {
+    "en": "Mythic Mob Cinematic",
+    "zh": "Mythic 生物过场动画"
+  },
+  "/adapters/MythicMobsAdapter/entries/cinematic/mythicskill_cinematic": {
+    "en": "Mythic Skill Cinematic",
+    "zh": "Mythic 技能过场动画"
+  },
+  "/adapters/MythicMobsAdapter/entries/event/mythicmobs_interact_event": {
+    "en": "Mythic Mob Interact Event",
+    "zh": "Mythic 生物交互事件"
+  },
+  "/adapters/MythicMobsAdapter/entries/event/on_mythic_mob_die": {
+    "en": "Mythic Mob Death Event",
+    "zh": "Mythic 生物死亡事件"
+  },
+  "/adapters/MythicMobsAdapter/entries/fact/mythic_mob_count_fact": {
+    "en": "Mob Count Fact",
+    "zh": "生物数量事实"
+  },
+  "/adapters/RPGRegionsAdapter": {
+    "en": "Rpg Regions Adapter",
+    "zh": "RPGRegions 适配器"
+  },
+  "/adapters/RPGRegionsAdapter/entries/action/discover_rpg_region": {
+    "en": "Discover Region Action",
+    "zh": "发现区域"
+  },
+  "/adapters/RPGRegionsAdapter/entries/event/on_discover_rpg_region": {
+    "en": "Discover Region Event",
+    "zh": "发现区域事件"
+  },
+  "/adapters/RPGRegionsAdapter/entries/event/on_enter_rpg_region": {
+    "en": "Enter Region Event",
+    "zh": "进入区域事件"
+  },
+  "/adapters/RPGRegionsAdapter/entries/fact/in_rpg_region_fact": {
+    "en": "In Region Fact",
+    "zh": "处于区域内事实"
+  },
+  "/adapters/SuperiorSkyblockAdapter": {
+    "en": "Superior Skyblock Adapter",
+    "zh": "SuperiorSkyblock 适配器"
+  },
+  "/adapters/SuperiorSkyblockAdapter/entries/action/island_bank_deposit": {
+    "en": "Island Bank Deposit Action",
+    "zh": "岛屿银行存款"
+  },
+  "/adapters/SuperiorSkyblockAdapter/entries/action/island_bank_withdraw": {
+    "en": "Island Bank Withdraw Action",
+    "zh": "岛屿银行取款"
+  },
+  "/adapters/SuperiorSkyblockAdapter/entries/action/island_disband": {
+    "en": "Island Disband Action",
+    "zh": "解散岛屿"
+  },
+  "/adapters/SuperiorSkyblockAdapter/entries/action/island_set_biome": {
+    "en": "Island Set Biome Action",
+    "zh": "设置岛屿生物群系"
+  },
+  "/adapters/SuperiorSkyblockAdapter/entries/action/island_set_border_size": {
+    "en": "Island Set Border Size Action",
+    "zh": "设置岛屿边界大小"
+  },
+  "/adapters/SuperiorSkyblockAdapter/entries/action/island_set_member_limit": {
+    "en": "Island Set Member Limit Action",
+    "zh": "设置岛屿成员上限"
+  },
+  "/adapters/SuperiorSkyblockAdapter/entries/event/on_island_create": {
+    "en": "Island Create Event",
+    "zh": "岛屿创建事件"
+  },
+  "/adapters/SuperiorSkyblockAdapter/entries/event/on_island_disband": {
+    "en": "Island Disband Event",
+    "zh": "岛屿解散事件"
+  },
+  "/adapters/SuperiorSkyblockAdapter/entries/event/on_island_invite": {
+    "en": "Island Invite Event",
+    "zh": "岛屿邀请事件"
+  },
+  "/adapters/SuperiorSkyblockAdapter/entries/event/on_island_join": {
+    "en": "Island Join Event",
+    "zh": "加入岛屿事件"
+  },
+  "/adapters/SuperiorSkyblockAdapter/entries/event/on_island_upgrade": {
+    "en": "Island Upgrade Event",
+    "zh": "岛屿升级事件"
+  },
+  "/adapters/SuperiorSkyblockAdapter/entries/event/on_mission_complete": {
+    "en": "Mission Complete Event",
+    "zh": "岛屿任务完成事件"
+  },
+  "/adapters/SuperiorSkyblockAdapter/entries/fact/island_fact": {
+    "en": "Island Fact",
+    "zh": "岛屿事实"
+  },
+  "/adapters/SuperiorSkyblockAdapter/entries/group/island_group": {
+    "en": "Island Group",
+    "zh": "岛屿组"
+  },
+  "/adapters/VaultAdapter": {
+    "en": "Vault Adapter",
+    "zh": "Vault 适配器"
+  },
+  "/adapters/VaultAdapter/entries/action/deposit_balance": {
+    "en": "Deposit Balance Action",
+    "zh": "增加余额"
+  },
+  "/adapters/VaultAdapter/entries/action/set_prefix": {
+    "en": "Set Prefix Action",
+    "zh": "设置前缀"
+  },
+  "/adapters/VaultAdapter/entries/action/withdraw_balance": {
+    "en": "Withdraw Balance Action",
+    "zh": "扣除余额"
+  },
+  "/adapters/VaultAdapter/entries/fact/balance_fact": {
+    "en": "Balance Fact",
+    "zh": "余额事实"
+  },
+  "/adapters/VaultAdapter/entries/fact/permission_fact": {
+    "en": "Permission Fact",
+    "zh": "权限事实"
+  },
+  "/adapters/VaultAdapter/entries/group/balance_audience": {
+    "en": "Balance Group",
+    "zh": "余额组"
+  },
+  "/adapters/VaultAdapter/entries/group/permission_group": {
+    "en": "Permission Group",
+    "zh": "权限组"
+  },
+  "/adapters/WorldGuardAdapter": {
+    "en": "World Guard Adapter",
+    "zh": "WorldGuard 适配器"
+  },
+  "/adapters/WorldGuardAdapter/entries/audience/region_audience": {
+    "en": "Region Audience",
+    "zh": "区域受众"
+  },
+  "/adapters/WorldGuardAdapter/entries/event/on_enter_region": {
+    "en": "Enter Region Event",
+    "zh": "进入区域事件"
+  },
+  "/adapters/WorldGuardAdapter/entries/event/on_exit_region": {
+    "en": "Exit Region Event",
+    "zh": "离开区域事件"
+  },
+  "/adapters/WorldGuardAdapter/entries/fact/in_region_fact": {
+    "en": "In Region Fact",
+    "zh": "处于区域内事实"
+  },
+  "/adapters/WorldGuardAdapter/entries/group/region_group": {
+    "en": "Region Group",
+    "zh": "区域组"
+  },
+  "/adapters/ZNPCsPlusAdapter": {
+    "en": "Znp Cs Plus Adapter",
+    "zh": "ZNPCsPlus 适配器"
+  },
+  "/adapters/ZNPCsPlusAdapter/entries/cinematic/znpc_reference_npc_cinematic": {
+    "en": "Reference Npc Cinematic",
+    "zh": "引用 NPC 过场动画"
+  },
+  "/adapters/ZNPCsPlusAdapter/entries/cinematic/znpc_self_npc_cinematic": {
+    "en": "Self Npc Cinematic",
+    "zh": "玩家自身 NPC 过场动画"
+  },
+  "/adapters/ZNPCsPlusAdapter/entries/entity/znpc_reference_npc": {
+    "en": "Reference Npc",
+    "zh": "引用 NPC"
+  },
+  "/adapters/ZNPCsPlusAdapter/entries/event/znpc_on_npc_interact": {
+    "en": "Npc Interact Event",
+    "zh": "NPC 交互事件"
+  },
+  "/develop": {
+    "en": "Development",
+    "zh": "开发文档"
+  },
+  "/develop/extensions": {
+    "en": "Extensions",
+    "zh": "扩展开发"
+  },
+  "/develop/extensions/api-changes": {
+    "en": "API Changes",
+    "zh": "API 变更"
+  },
+  "/develop/extensions/api-changes/0.5": {
+    "en": "All API changes to 0.5.X",
+    "zh": "0.5.X 的 API 变更"
+  },
+  "/develop/extensions/api-changes/0.6": {
+    "en": "All API changes to 0.6.X",
+    "zh": "0.6.X 的 API 变更"
+  },
+  "/develop/extensions/api-changes/0.7": {
+    "en": "All API changes to 0.7.X",
+    "zh": "0.7.X 的 API 变更"
+  },
+  "/develop/extensions/api-changes/0.8": {
+    "en": "All API changes to 0.8.X",
+    "zh": "0.8.X 的 API 变更"
+  },
+  "/develop/extensions/entries": {
+    "en": "Create Entries",
+    "zh": "创建条目"
+  },
+  "/develop/extensions/entries/cinematic": {
+    "en": "CinematicEntry",
+    "zh": "过场动画条目"
+  },
+  "/develop/extensions/entries/manifest/audience": {
+    "en": "AudienceEntry",
+    "zh": "受众条目"
+  },
+  "/develop/extensions/entries/manifest/audience_filter": {
+    "en": "AudienceFilter",
+    "zh": "受众过滤器"
+  },
+  "/develop/extensions/entries/manifest/audience_single_filter": {
+    "en": "SingleFilter",
+    "zh": "单一受众过滤器"
+  },
+  "/develop/extensions/entries/placeholder": {
+    "en": "Placeholder",
+    "zh": "占位符"
+  },
+  "/develop/extensions/entries/static/artifact": {
+    "en": "ArtifactEntry",
+    "zh": "文件产物条目"
+  },
+  "/develop/extensions/entries/static/asset": {
+    "en": "AssetEntry",
+    "zh": "资源条目"
+  },
+  "/develop/extensions/entries/static/sound_id": {
+    "en": "SoundIdEntry",
+    "zh": "声音 ID 条目"
+  },
+  "/develop/extensions/entries/static/sound_source": {
+    "en": "SoundSourceEntry",
+    "zh": "声音来源条目"
+  },
+  "/develop/extensions/entries/static/speaker": {
+    "en": "SpeakerEntry",
+    "zh": "说话者条目"
+  },
+  "/develop/extensions/entries/static/variable": {
+    "en": "VariableEntry",
+    "zh": "变量条目"
+  },
+  "/develop/extensions/entries/trigger/action": {
+    "en": "ActionEntry",
+    "zh": "动作条目"
+  },
+  "/develop/extensions/entries/trigger/dialogue": {
+    "en": "DialogueEntry",
+    "zh": "对话条目"
+  },
+  "/develop/extensions/entries/trigger/event": {
+    "en": "EventEntry",
+    "zh": "事件条目"
+  },
+  "/develop/extensions/getting_started": {
+    "en": "Creating an Extension",
+    "zh": "创建扩展"
+  },
+  "/develop/extensions/initializers": {
+    "en": "Initializers",
+    "zh": "初始化器"
+  },
+  "/develop/extensions/interactions": {
+    "en": "Interaction System",
+    "zh": "交互系统"
+  },
+  "/develop/extensions/interactions/bound": {
+    "en": "Interaction Bound",
+    "zh": "交互边界"
+  },
+  "/develop/extensions/querying": {
+    "en": "Query Entries",
+    "zh": "查询条目"
+  },
+  "/develop/extensions/triggering": {
+    "en": "Triggering Entries",
+    "zh": "触发条目"
+  },
+  "/docs/concepts": {
+    "en": "Concepts",
+    "zh": "概念"
+  },
+  "/docs/concepts/Audience": {
+    "en": "Audience Entries",
+    "zh": "受众条目"
+  },
+  "/docs/concepts/Manifest": {
+    "en": "Manifest Entries",
+    "zh": "呈现条目"
+  },
+  "/docs/creating-stories/advanced-interactions": {
+    "en": "Advanced Interactions",
+    "zh": "进阶交互"
+  },
+  "/docs/creating-stories/advanced-interactions/custom-commands": {
+    "en": "Custom Commands",
+    "zh": "自定义命令"
+  },
+  "/docs/creating-stories/advanced-interactions/interaction-bounds": {
+    "en": "Interaction Bounds",
+    "zh": "交互边界"
+  },
+  "/docs/creating-stories/advanced-interactions/interaction-bounds/option-bound": {
+    "en": "Option Bound",
+    "zh": "选项边界"
+  },
+  "/docs/creating-stories/advanced-interactions/interaction-context": {
+    "en": "Interaction Context",
+    "zh": "交互上下文"
+  },
+  "/docs/creating-stories/cinematics": {
+    "en": "Cinematics",
+    "zh": "过场动画"
+  },
+  "/docs/creating-stories/cinematics/dialogue": {
+    "en": "Adding dialogues",
+    "zh": "添加对话"
+  },
+  "/docs/creating-stories/cinematics/entities": {
+    "en": "Adding entities",
+    "zh": "添加实体"
+  },
+  "/docs/creating-stories/cinematics/first-join": {
+    "en": "First Join Cinematic",
+    "zh": "首次加入时播放过场动画"
+  },
+  "/docs/creating-stories/cinematics/skippable-cinematics": {
+    "en": "Skippable Cinematics",
+    "zh": "可跳过的过场动画"
+  },
+  "/docs/creating-stories/cinematics/world-specific": {
+    "en": "World Specific Cinematics",
+    "zh": "指定世界的过场动画"
+  },
+  "/docs/creating-stories/entity-extension": {
+    "en": "Entities & NPC's",
+    "zh": "实体与 NPC"
+  },
+  "/docs/creating-stories/entity-extension/activities": {
+    "en": "Entity Activities",
+    "zh": "实体活动"
+  },
+  "/docs/creating-stories/entity-extension/conditional-showing": {
+    "en": "Conditional NPC showing",
+    "zh": "按条件显示 NPC"
+  },
+  "/docs/creating-stories/entity-extension/interacting": {
+    "en": "Interacting with an entity",
+    "zh": "与实体交互"
+  },
+  "/docs/creating-stories/facts": {
+    "en": "Facts",
+    "zh": "事实"
+  },
+  "/docs/creating-stories/interactions": {
+    "en": "First Interaction",
+    "zh": "第一个交互"
+  },
+  "/docs/creating-stories/interactions/conditional-dialogue": {
+    "en": "Conditional dialogue",
+    "zh": "条件对话"
+  },
+  "/docs/creating-stories/interactions/dynamic-variables": {
+    "en": "Random Dialogue",
+    "zh": "随机对话"
+  },
+  "/docs/creating-stories/interactions/items": {
+    "en": "Giving items",
+    "zh": "给予物品"
+  },
+  "/docs/creating-stories/interactions/options": {
+    "en": "Adding Options",
+    "zh": "添加选项"
+  },
+  "/docs/creating-stories/questing": {
+    "en": "Questing",
+    "zh": "任务系统"
+  },
+  "/docs/creating-stories/questing/displaying_quests": {
+    "en": "Displaying Quests",
+    "zh": "显示任务"
+  },
+  "/docs/creating-stories/questing/kill-zombie-objective": {
+    "en": "Kill Zombie Objective",
+    "zh": "击杀僵尸目标"
+  },
+  "/docs/creating-stories/questing/talk-objective": {
+    "en": "Talk To NPC Objective",
+    "zh": "与 NPC 对话目标"
+  },
+  "/docs/creating-stories/road-network": {
+    "en": "Road Network",
+    "zh": "道路网络"
+  },
+  "/docs/getting-started": {
+    "en": "Getting Started",
+    "zh": "入门"
+  },
+  "/docs/getting-started/installation": {
+    "en": "Installation Guide",
+    "zh": "安装指南"
+  },
+  "/docs/getting-started/layout": {
+    "en": "Layout",
+    "zh": "界面布局"
+  },
+  "/docs/helpful-features/chapters": {
+    "en": "Chapters",
+    "zh": "章节"
+  },
+  "/docs/helpful-features/commands": {
+    "en": "Commands",
+    "zh": "命令"
+  },
+  "/docs/helpful-features/placeholderapi": {
+    "en": "PlaceHolderAPI",
+    "zh": "PlaceholderAPI"
+  },
+  "/docs/helpful-features/shortcuts": {
+    "en": "Shortcuts",
+    "zh": "快捷键"
+  },
+  "/docs/helpful-features/snippets": {
+    "en": "What are Snippets?",
+    "zh": "片段（Snippets）"
+  },
+  "/docs/home": {
+    "en": "What is Typewriter?",
+    "zh": "Typewriter 是什么？"
+  },
+  "/docs/troubleshooting": {
+    "en": "Troubleshooting Guide",
+    "zh": "疑难解答"
+  },
+  "/docs/troubleshooting/extensions": {
+    "en": "Extensions Troubleshooting",
+    "zh": "扩展问题排查"
+  },
+  "/docs/troubleshooting/packetevent": {
+    "en": "PacketEvents Troubleshooting",
+    "zh": "PacketEvents 问题排查"
+  },
+  "/docs/troubleshooting/playitgg": {
+    "en": "Playit.gg",
+    "zh": "Playit.gg"
+  },
+  "/docs/troubleshooting/ports": {
+    "en": "Panel Loading Issues Troubleshooting Guide",
+    "zh": "网页面板加载问题排查"
+  }
+}

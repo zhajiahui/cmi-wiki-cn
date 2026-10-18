@@ -1,0 +1,10 @@
+# Global Group
+
+The `Global Group` is a group that includes all the online players.
+
+## How could this be used? {#how-could-this-be-used}
+
+This could be used to have facts that are the same for all the players,
+like a global objective that all the players have to work together to achieve.
+
+## Fields {#fields}

@@ -1,0 +1,22 @@
+# Self Speaker
+
+The `Self Speaker` is a speaker that represents the player themselves.
+This speaker is used to display messages from the player's perspective.
+
+## How could this be used? {#how-could-this-be-used}
+
+This speaker could be used to display messages from the player's perspective,
+such as thoughts or internal dialogue.
+It can also be used as a sound source for the player's voice.
+
+## Fields {#fields}
+
+## Sound
+
+Required
+
+## Override Name
+
+Optional
+
+Overrides the display name of the speaker

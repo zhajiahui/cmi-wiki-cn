@@ -1,18 +1,20 @@
 site_name: Minecraft 插件中文 Wiki
-site_description: CMI 与 Residence 中文文档：指令、权限、领地和功能说明。
+site_description: CMI、Residence 与 Typewriter 中文文档：指令、权限、领地、对话、任务与过场动画。
 site_url: https://zhajiahui.github.io/cmi-wiki-cn/
 repo_url: https://github.com/zhajiahui/cmi-wiki-cn
 repo_name: zhajiahui/cmi-wiki-cn
 edit_uri: edit/main/
 use_directory_urls: true
 exclude_docs: ''
-copyright: CMI、Residence 原文与资源归原作者所有。
+copyright: CMI、Residence、Typewriter 原文与资源归原作者所有。
 dev_addr: 127.0.0.1:8000
 watch:
 - ../CMI/docs
 - ../Residence/docs
+- ../Typewriter/docs
 - ../CMI/mkdocs.yml
 - ../Residence/mkdocs.yml
+- ../Typewriter/mkdocs.yml
 theme:
   name: material
   language: zh
@@ -71,6 +73,8 @@ markdown_extensions:
     anchor_linenums: true
 - pymdownx.betterem:
     punctuation: false
+extra_javascript:
+- typewriter/assets/typewriter.js
 extra_css:
 - assets/wiki.css
 nav:
@@ -140,6 +144,8 @@ nav:
   - 防熊保护（AntiGrief）: antigrief.md
   - 领地战争（Raid）: raid.md
   - 开发者 API: api.md
+- Typewriter:
+  - 前言: typewriter/index.md
 extra:
   generator: false
 docs_dir: docs

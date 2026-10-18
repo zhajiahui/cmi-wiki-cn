@@ -1,0 +1,31 @@
+# Random Trigger Gate
+
+The `Random Trigger Gate` is a gate that triggers a specified number of entries randomly. This gate provides you with the ability to randomly select and trigger a set number of entries in response to a specific event.
+
+## How could this be used? {#how-could-this-be-used}
+
+This gate can be useful in a variety of situations. You can use it to create a mini-game that randomly selects events to occur, or to trigger a set number of actions randomly in response to a specific event. The possibilities are endless!
+
+## Fields {#fields}
+
+## Triggers
+
+Required List
+
+## Criteria
+
+Inherited List
+
+A list of facts that must be met by the player before this entry can be triggered.
+
+## Modifiers
+
+Inherited List
+
+A list of facts that will be modified for the player when this entry is triggered.
+
+## Amount
+
+Required
+
+The amount of triggers to fire.

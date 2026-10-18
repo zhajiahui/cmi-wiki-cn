@@ -1,0 +1,13 @@
+3365	| 状态 | 事实 | 说明 | 状态转换 |
+3366	| 未开始 | `Quest Fact = 0` | 玩家尚未开始任务 | 与 NPC 对话 → 搜索中 |
+3367	| 搜索中 | `Quest Fact = 1` `Item Fact = 0` | 玩家正在寻找所需物品 | 找到物品 → 已找到物品；放弃任务 → 未开始 |
+3368	| 已找到物品 | `Quest Fact = 1` `Item Fact >= 1` | 玩家已找到所需物品 | 返回 NPC 处 → 已完成；丢失物品 → 搜索中 |
+3369	| 已完成 | `Quest Fact = 2` | 任务已完成 | 重置任务 → 未开始 |
+3370	TW_STATUS_EDITOR_PLACEHOLDER
+3371	| 未开始 | `Zombie Quest Fact = 0` | 玩家尚未开始任务 | 与 NPC 对话 → 已接受任务 |
+3372	| 已接受任务 | `Zombie Quest Fact = 1` `Kill Zombie Fact = 0` | 玩家已从 NPC 处接受任务 | 击杀僵尸 → 击杀僵尸中 |
+3373	| 击杀僵尸中 | `Zombie Quest Fact = 1` `Kill Zombie Fact >= 2` | 玩家正在击杀僵尸 | 返回 NPC 处 → 已完成 |
+3374	| 已完成 | `Zombie Quest Fact = 2` | 玩家已击杀 2 只僵尸，完成任务 | 重置任务 → 未开始 |
+3375	| 未开始 | `Talk Quest Fact = 0` | 玩家尚未开始任务 | 与第一个 NPC 对话 → 已接受任务 |
+3376	| 已接受任务 | `Talk Quest Fact = 1` | 玩家已从第一个 NPC 处接受任务 | 与第二个 NPC 对话 → 已完成 |
+3377	| 已完成 | `Talk Quest Fact = 2` | 玩家与第二个 NPC 对话后完成任务 | 重置任务 → 未开始 |

@@ -1,0 +1,14 @@
+# Location Objectives Path Stream
+
+The `Location Objectives Path Stream` entry is a path stream that shows the path to each tracked location objective.
+When the player has a location objective, and the quest for the objective is tracked, a path stream will be displayed.
+
+## How could this be used? {#how-could-this-be-used}
+
+This could be used to show a path to each location objective in a quest.
+
+## Fields {#fields}
+
+## Road
+
+Required

@@ -1,0 +1,46 @@
+2350	在属性面板的操作菜单中点击 `Add Segment`，向轨道添加片段。
+2355	点击书后，Typewriter 开始录制你的动作，并采用进入内容模式前手持的物品。
+2404	在片段内某 1 条路径旁，点击动态变量图标。
+2405	搜索 `Player World Position Variable`，点击后将其添加到片段中。
+2456	将 Oliver 的皮肤换成 [NameMC](https://s.namemc.com/i/b2319359e305d7a2.png) 上的这一款。
+2457	点击 `Skin` 字段右侧的链条图标，选择 `Fetch from url`。
+2471	第一位玩家开始看到 NPC 时，NPC 总会出现在这个位置。
+2496	如果还没有创建道路网络，先阅读[道路网络](https://docs.typewritermc.com/docs/creating-stories/road-network)教程，再点击采集按钮添加所需节点。
+2529	在 `New Entity Interact Event` 的属性面板中，通过 definition 字段选择要交互的实体定义。这里使用 Oliver。
+2616	在属性面板中，将方块设为 `Red Tulip`（1），名称设为 `on flower click`（2）。
+2630	开始前，建议先阅读[第一个交互](https://docs.typewritermc.com/docs/creating-stories/interactions)和[事实](https://docs.typewritermc.com/docs/creating-stories/facts)。
+2638	在逐字对话的属性面板中，点击 criteria 字段旁的 + 图标，选择要使用的事实。这里使用名为 `Flower Clicked` 的永久事实，组设为玩家组。
+2640	接下来修改事实，使再次点击花朵时显示不同的对话。点击 modifier 字段旁的 + 图标，选择与条件相同的事实，将运算符设为 `=`，值设为 `1`。
+2643	右键点击 `On Interact Block Event`，选择 `+ Link with ...`，搜索 `Add Spoken`，点击 + 图标，将第二段逐字对话添加到序列中。
+2648	在第二段逐字对话中，点击 criteria 字段旁的 + 图标，再次选择 `Flower Clicked` 事实，将运算符设为 `==`，值设为 `1`。
+2651	第一次点击花朵时，会显示第一段对话；再次点击时，显示第二段对话。
+2656	打开[第一个交互](https://docs.typewritermc.com/docs/creating-stories/interactions)中创建的逐字对话的属性面板，点击 Text 字段上方的动态变量图标，选择 `Add random Variable`。
+2691	**数量（Amount）**：要给予玩家的物品数量。
+2705	为选项选择合适的[说话者](https://docs.typewritermc.com/docs/creating-stories/interactions#configuring-the-speaker)。
+2711	点击 `Select a triggerable`，在搜索菜单中创建玩家选择此选项后要触发的条目。例如，添加内容为 `Yay thank you!` 的逐字对话。
+2719	原文的任务部分正在重写。完整的旧版文档见：[**旧任务文档**](https://docs.typewritermc.com/0.7.0/docs/creating-stories/questing)。
+2722	在 Typewriter 中，任务是游戏状态的**直观呈现**。真正的进度由永久事实记录，任务负责向玩家显示这些进度。
+2724	传统任务插件通常在完成任务时直接推进进度，Typewriter 则将两部分分开：
+2725	**游戏状态**：实际推动进度的事实。
+2805	多个任务可以同时**处于激活状态**，但**同一时间只能追踪一个任务**，以便玩家集中注意力，避免界面混乱。
+2811	因此，大多数情况下无需手动管理任务追踪，Typewriter 会自动处理。
+2828	注意，Objective Lines 本身没有使用占位符。
+3135	Typewriter 提供以下命令：
+3136	**参数说明**
+3137	`[]` 中的参数可选，`<>` 中的参数必填。
+3138	条目参数支持填写条目 ID 或条目名称。
+3139	| 命令 | 说明 | 权限 |
+3140	| `/tw connect` | 连接 Typewriter 面板。 | `typewriter.connect` |
+3141	| `/tw clearChat` | 按 Typewriter 的方式清除自己的聊天内容。 | `typewriter.clearChat` |
+3142	| `/tw cinematic <start/stop> <pageName> [player]` | 为指定玩家播放选定的过场动画。 | `typewriter.cinematic.start/stop` |
+3143	| `/tw reload` | 重载插件。 | `typewriter.reload` |
+3144	| `/tw facts [player]` | 获取指定玩家的全部事实。 | `typewriter.facts` |
+3145	| `/tw facts set <factEntry> <value> [player]` | 设置指定玩家的事实。 | `typewriter.facts.set` |
+3146	| `/tw facts reset` | 重置指定玩家的全部事实。 | `typewriter.facts.reset` |
+3147	| `/tw trigger <entry> [player]` | 为指定玩家触发条目。 | `typewriter.trigger` |
+3148	| `/tw assets clean` | 清理所有未使用的资源。 | `typewriter.assets.clean` |
+3149	| `/tw fire <entry> [player]` | 触发 Fire Trigger Event 条目。 | `typewriter.fire` |
+3150	| `/tw manifest inspect [player]` | 检查玩家当前激活的呈现条目。 | `typewriter.manifest.inspect` |
+3151	| `/tw quest track <questEntry> [player]` | 为指定玩家开始追踪任务。 | `typewriter.quest.track` |
+3152	| `/tw untrack [player]` | 取消追踪指定玩家的任务。 | `typewriter.quest.untrack` |
+3153	| `/tw roadNetwork edit <roadNetworkEntry>` | 编辑道路网络。 | `typewriter.roadNetwork.edit` |

@@ -1,0 +1,2846 @@
+[
+  {
+    "title": "扩展（Extensions）",
+    "source": "https://docs.typewritermc.com/adapters",
+    "source_path": "/adapters",
+    "file": "adapters.md",
+    "source_sha256": "b1943cca4cb52089bbbc5f8d7a758281e2bc86fd5426925a0a110615d348b956",
+    "english_sha256": "03f4c1b367e83f3c067167826ec4f2a1976d331b25d168796dc0d018c4a89f1b",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "基础适配器（Basic Adapter）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter",
+    "source_path": "/adapters/BasicAdapter",
+    "file": "adapters/BasicAdapter.md",
+    "source_sha256": "9d70eec9926f37218a11cdb76a4405103e19c0ffc0cafb824326f1e3024e85f1",
+    "english_sha256": "83f90f94cb5b940f821a09d703d47774a3beddcb8db2a29815eb5f993b6cfe49",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "添加药水效果（Add Potion Effect Action）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/add_potion_effect",
+    "source_path": "/adapters/BasicAdapter/entries/action/add_potion_effect",
+    "file": "adapters/BasicAdapter/entries/action/add_potion_effect.md",
+    "source_sha256": "118f78d58746017eb2691189ed4ba755623ece6c2945585dff99e14f2b30fa29",
+    "english_sha256": "d5ec0f3187756d18a33dbc663b7843aa7fbaadfa6ddacd9e88c54dc8ad07789e",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "施加速度（Apply Velocity Action）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/apply_velocity",
+    "source_path": "/adapters/BasicAdapter/entries/action/apply_velocity",
+    "file": "adapters/BasicAdapter/entries/action/apply_velocity.md",
+    "source_sha256": "f703727c6bd1bdb60daeca0cdab2abf6d79a7592ee2c2d043ef31c963b1d4de4",
+    "english_sha256": "58b52f1521ea0fc1c16d2c1b00eaa9d030dc27b2ddec4dd7366f6dfffb5bf9bd",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "启动过场动画（Cinematic）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/cinematic",
+    "source_path": "/adapters/BasicAdapter/entries/action/cinematic",
+    "file": "adapters/BasicAdapter/entries/action/cinematic.md",
+    "source_sha256": "4edcec2623ff9319c0d2278f6bf2c4ed177bf85c2dfa6771b07cb9d09b7bfd78",
+    "english_sha256": "05ac0b535af10064bee6088c95eaba6ca76144c66733e4b966824c1d814be40c",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "执行控制台命令（Console Command Action）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/console_run_command",
+    "source_path": "/adapters/BasicAdapter/entries/action/console_run_command",
+    "file": "adapters/BasicAdapter/entries/action/console_run_command.md",
+    "source_sha256": "e2684932e8d1f57e5925c0ac1fb18f90266dddc7c83d649005347b5e7c75ac1f",
+    "english_sha256": "c84be0ef3037fd9d682ac09ace053659775d5a4cc5bd192858a5ce4d65784868",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "延迟动作（Delayed Action）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/delayed_action",
+    "source_path": "/adapters/BasicAdapter/entries/action/delayed_action",
+    "file": "adapters/BasicAdapter/entries/action/delayed_action.md",
+    "source_sha256": "fd391d9441f0b9365f9527e225ce27985309a01e6ed4ea62a9f2f51a99c1cf10",
+    "english_sha256": "1c74cf2effc13082f95022af1610ddbf16b352f44dc0b70fc02529ea68c74666",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "掉落物品（Drop Item Action）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/drop_item",
+    "source_path": "/adapters/BasicAdapter/entries/action/drop_item",
+    "file": "adapters/BasicAdapter/entries/action/drop_item.md",
+    "source_sha256": "531e6188d77250bedd3cc5d59be824acea4da3791431d81dbf1b1ef2cdec8842",
+    "english_sha256": "50130fa7cb3d47a07728788105037d2e6d143be7990ff895052727e48570c2dc",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "生成烟花（Firework Action）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/firework",
+    "source_path": "/adapters/BasicAdapter/entries/action/firework",
+    "file": "adapters/BasicAdapter/entries/action/firework.md",
+    "source_sha256": "824cb8741ffdfd63fef4a6619c7f3319869b1334c2b47a0a94a115d8e04bf433",
+    "english_sha256": "6f3d2aa97526c09bf4f26da0f5f7ab9d2ff572e522a5bd95e1d08b3986aae819",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "给予物品（Give Item Action）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/give_item",
+    "source_path": "/adapters/BasicAdapter/entries/action/give_item",
+    "file": "adapters/BasicAdapter/entries/action/give_item.md",
+    "source_sha256": "ff78bf6178f9323f3267226e75f7058cd3bf0397459c8000a73dec41498e6394",
+    "english_sha256": "f46fb8db857441c7c6b7e52d232e18a0d7d2bf72b6241f2cf3ddb0ab8a2763dd",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "组内触发（Group Trigger Action）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/group_trigger_action",
+    "source_path": "/adapters/BasicAdapter/entries/action/group_trigger_action",
+    "file": "adapters/BasicAdapter/entries/action/group_trigger_action.md",
+    "source_sha256": "93ae1ec91a3763791bf629f6b412ff697abbbfcd48fc4e31e796ebadd2690116",
+    "english_sha256": "4d8a48b67f5a8525ff58556119fd37e026e307f63cdc8a8c3992f9d08689201d",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "播放声音（Play Sound Action）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/play_sound",
+    "source_path": "/adapters/BasicAdapter/entries/action/play_sound",
+    "file": "adapters/BasicAdapter/entries/action/play_sound.md",
+    "source_sha256": "3b7c858949261461882777f5aece949f527f5b4a90ce2f77fb7c5978745d50d2",
+    "english_sha256": "dddedcfd7ffe7db3335e59cf8d9740d0a03a4344f5c26848506a82655678bf49",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "执行玩家命令（Player Command Action）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/player_run_command",
+    "source_path": "/adapters/BasicAdapter/entries/action/player_run_command",
+    "file": "adapters/BasicAdapter/entries/action/player_run_command.md",
+    "source_sha256": "bccaa4a348c71d98c8076829d63714ab1763af856b306b72785a93f17c96ca88",
+    "english_sha256": "b0ba53cf5b9956c4e459aa01ef33a7e967ca3993e6709bf12a5f1058c5e8fedb",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "随机触发门（Random Trigger Gate）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/random_trigger",
+    "source_path": "/adapters/BasicAdapter/entries/action/random_trigger",
+    "file": "adapters/BasicAdapter/entries/action/random_trigger.md",
+    "source_sha256": "dae729c8c1f967c226ab352223d565af4507e38f36a2ebd8110e7e1f8dc86dda",
+    "english_sha256": "fa4cc4f34d244d2751bd9c2380de8e13ae33b63321a23dfc86262d8c76474e41",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "移除物品（Remove Item Action）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/remove_item",
+    "source_path": "/adapters/BasicAdapter/entries/action/remove_item",
+    "file": "adapters/BasicAdapter/entries/action/remove_item.md",
+    "source_sha256": "02bbe8759307c400ab77175bd4f51a6e891be776cb3490c64f439c4693ce5e96",
+    "english_sha256": "1aa0fbd8f6e92a32d179ea47a6584d463d080f28ecf85d682847f5960338f29a",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "发送消息（Message Action）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/send_message",
+    "source_path": "/adapters/BasicAdapter/entries/action/send_message",
+    "file": "adapters/BasicAdapter/entries/action/send_message.md",
+    "source_sha256": "5efd96678cea196e1327c020a385bbdc1de321bae8bcc4f370fce562cefb83dc",
+    "english_sha256": "c4cf064d407288f8c3fe5385fdb08a244c0baebd6865f37c41816014ab9dcd37",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "设置方块（Set Block Action）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/set_block",
+    "source_path": "/adapters/BasicAdapter/entries/action/set_block",
+    "file": "adapters/BasicAdapter/entries/action/set_block.md",
+    "source_sha256": "f5aded9d76e1ee3c0bfd5056af2bbb1d4314e2329cd752044696e8e47ee4634f",
+    "english_sha256": "e50b0ae096a71c4b67f3810f2117dd736722296eb072c295065f45ae161efcba",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "设置物品（Set Item Action）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/set_item",
+    "source_path": "/adapters/BasicAdapter/entries/action/set_item",
+    "file": "adapters/BasicAdapter/entries/action/set_item.md",
+    "source_sha256": "811d548a75c974375528a6603cce208ba7c43d676a3304acd9c03d634a362965",
+    "english_sha256": "0c23f2a041c0ada28ddcd1bd6f68ddc00d492bf9e660492c06847bc8480c364e",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "显示标题（Show Title Action）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/show_title",
+    "source_path": "/adapters/BasicAdapter/entries/action/show_title",
+    "file": "adapters/BasicAdapter/entries/action/show_title.md",
+    "source_sha256": "d2244dc56a6d729f8a70cfae47d9008a051d1efb6cdcc788010c549853fac50a",
+    "english_sha256": "96ffc19891af6a3e4a3ae79343c3a4ce68429071e15e72867b531507484b1ced",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "简单动作（Simple Action）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/simple_action",
+    "source_path": "/adapters/BasicAdapter/entries/action/simple_action",
+    "file": "adapters/BasicAdapter/entries/action/simple_action.md",
+    "source_sha256": "a40f18e768d0a7f649147dbb3d772b9a7bc9218e6c6aee2d5009485e24a32555",
+    "english_sha256": "7665f3986537470623d379b486558bb369e6788ad739b5658bdb8f1216c4689e",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "生成粒子（Spawn Particle Action）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/spawn_particles",
+    "source_path": "/adapters/BasicAdapter/entries/action/spawn_particles",
+    "file": "adapters/BasicAdapter/entries/action/spawn_particles.md",
+    "source_sha256": "a08b20265e2b8b688f2032f57efb8dc6e8ac42d34c86c89ef86d0b8aea1f2e09",
+    "english_sha256": "8e255cc28ecd154e9237b2152c4816c197840ee1234cba3377988288074ff973",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "停止声音（Stop Sound Action）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/stop_sound",
+    "source_path": "/adapters/BasicAdapter/entries/action/stop_sound",
+    "file": "adapters/BasicAdapter/entries/action/stop_sound.md",
+    "source_sha256": "f15edca8817802e538582000d6a435fe036265e8d7aa898240ccc8a396b72c4f",
+    "english_sha256": "c28e1c6903dcce55c677f11e7e8973417340b884111aa9f15e6f8a8bcf639382",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "切换服务器（Switch Server Action）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/switch_server_action",
+    "source_path": "/adapters/BasicAdapter/entries/action/switch_server_action",
+    "file": "adapters/BasicAdapter/entries/action/switch_server_action.md",
+    "source_sha256": "158affaaa1fdb4bc62d814e0f2996924533eac1cbdd02d751130f5aa6c0d9bf5",
+    "english_sha256": "6ab899f42b1b28b0e0168178234c6098776672d39f22dbf1677954d3a3ac3264",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "传送（Teleport Action）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/teleport",
+    "source_path": "/adapters/BasicAdapter/entries/action/teleport",
+    "file": "adapters/BasicAdapter/entries/action/teleport.md",
+    "source_sha256": "258a6cc38831bccd448cc1f63d0a7ae590696485064eb83f824ccf108ab2e17f",
+    "english_sha256": "a4bafe78d8eb22e0652378e233bbf32be1fb1ac0f8732fa949ee5ba324e62b7d",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "追踪任务（Track Quest Action）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/track_quest",
+    "source_path": "/adapters/BasicAdapter/entries/action/track_quest",
+    "file": "adapters/BasicAdapter/entries/action/track_quest.md",
+    "source_sha256": "41d9df88972f21f883e2d88426a4ab1e289eb5f3cfff4d5ed875df1ed87adfe4",
+    "english_sha256": "78d4924563569ef5440647c4af94e58ad630d9f6c9f64b6edbcc87a59f566d8a",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "Boss 栏（Boss Bar）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/boss_bar",
+    "source_path": "/adapters/BasicAdapter/entries/audience/boss_bar",
+    "file": "adapters/BasicAdapter/entries/audience/boss_bar.md",
+    "source_sha256": "48ee5a576e8bee734a0685b397fd20dc54710e3f5baf8b17908d64c7457c905c",
+    "english_sha256": "e19da7beb500388e215a6164f75deea5e5cae67f3f3958fa38d43091b2718f41",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "过场动画受众（Cinematic Audience）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/cinematic_audience",
+    "source_path": "/adapters/BasicAdapter/entries/audience/cinematic_audience",
+    "file": "adapters/BasicAdapter/entries/audience/cinematic_audience.md",
+    "source_sha256": "0330a76e4fb1d8b8cfeb8fdc7232184f4bceeb9d47c4e9be1f549767ed36c787",
+    "english_sha256": "cf9db902fbb1ca57293d6f8781a71dd1c5fe2cfa04342c4aee56413f8aef7a6f",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "最近组员路径流（Closest Group Member Path Stream）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/closest_group_member_path_stream",
+    "source_path": "/adapters/BasicAdapter/entries/audience/closest_group_member_path_stream",
+    "file": "adapters/BasicAdapter/entries/audience/closest_group_member_path_stream.md",
+    "source_sha256": "b47084d7220034ed623830fc288522f0c1e4a021f597a728b13df8d33a0647d4",
+    "english_sha256": "22de3636e021e7df2a1456afccd2353cf1d9da64af1921401fec56122cfba40a",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "条件受众（Criteria Audience）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/criteria_audience",
+    "source_path": "/adapters/BasicAdapter/entries/audience/criteria_audience",
+    "file": "adapters/BasicAdapter/entries/audience/criteria_audience.md",
+    "source_sha256": "0ddae1927e51e3df015abb26a535811d6312f1d6f207d8a1d4e92e30d4a8cba3",
+    "english_sha256": "839c1603a1ac29bb7238e20d743bc155fda97ebf08ce53512270703ff620e2f2",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "Cron 受众（Cron Audience）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/cron_audience",
+    "source_path": "/adapters/BasicAdapter/entries/audience/cron_audience",
+    "file": "adapters/BasicAdapter/entries/audience/cron_audience.md",
+    "source_sha256": "520d7de3170aaee117a42d8feab9a30fbe9b4b396c77d6d7e7a114fa3714aa4f",
+    "english_sha256": "21af986a2cafa07ce4cc53a750434f0c6e1b67510d3861e8cadcf13105a9991b",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "直达位置路径流（Direct Location Path Stream）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/direct_location_path_stream",
+    "source_path": "/adapters/BasicAdapter/entries/audience/direct_location_path_stream",
+    "file": "adapters/BasicAdapter/entries/audience/direct_location_path_stream.md",
+    "source_sha256": "c77ce369c3b0d6d707d8d1c9db4111a7c2bc8ef37e4466b14824fb323ebf60e4",
+    "english_sha256": "fbf9fc8bfd4ba1c4763dac2fd99e2450c59c97917882a5ee2b4a3b90107ed1d6",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "游戏时间受众（Game Time Audience）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/game_time_audience",
+    "source_path": "/adapters/BasicAdapter/entries/audience/game_time_audience",
+    "file": "adapters/BasicAdapter/entries/audience/game_time_audience.md",
+    "source_sha256": "dfdf507a8cae4229291ea24a46c65a5c705195036c0497f67e6b2fa0fbc8d53e",
+    "english_sha256": "a4519858499d175d80f458fa58341f938ff4ac93cbe3bf7384e1f10516c5212e",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "组员路径流（Group Members Path Stream）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/group_members_path_stream",
+    "source_path": "/adapters/BasicAdapter/entries/audience/group_members_path_stream",
+    "file": "adapters/BasicAdapter/entries/audience/group_members_path_stream.md",
+    "source_sha256": "12dee7be93d3b0643c0a8b1aa6209dad1e8cc084d0144f23a571f4b73acf8604",
+    "english_sha256": "7d1dba5c50d45e63427f0788b3c2e4f14caca87729474c770a400c613b05b2ed",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "手持物品受众（Holding Item Audience）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/holding_item_audience",
+    "source_path": "/adapters/BasicAdapter/entries/audience/holding_item_audience",
+    "file": "adapters/BasicAdapter/entries/audience/holding_item_audience.md",
+    "source_sha256": "6ae6b69f74d23b41644f963d5ca549d2d7695d9c70ba0da00ae47082af00f0ae",
+    "english_sha256": "437977f7ae92287a05139ca27e36261cd1645831a046e1d6c33dfd84bb8b94b3",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "背包物品受众（Item In Inventory Audience）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/item_in_inventory_audience",
+    "source_path": "/adapters/BasicAdapter/entries/audience/item_in_inventory_audience",
+    "file": "adapters/BasicAdapter/entries/audience/item_in_inventory_audience.md",
+    "source_sha256": "8901bd4f069d51cec22c85302940b0595589f49b66fdf36bd022c8a597888f1d",
+    "english_sha256": "196a48268e6152a7cfa3c8e66d460fa83f3e15b24c78efc9225f2cfe1df48ebb",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "槽位物品受众（Item In Slot Audience）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/item_in_slot_audience",
+    "source_path": "/adapters/BasicAdapter/entries/audience/item_in_slot_audience",
+    "file": "adapters/BasicAdapter/entries/audience/item_in_slot_audience.md",
+    "source_sha256": "7331534aac0ed55da5b98e6bae855c42c255ff70be6035f59cf2e229761fefba",
+    "english_sha256": "f24425aaaecf3126785c38ae24be05504a925234cc4a6cfd9277f3def7a99c62",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "位置目标路径流（Location Objectives Path Stream）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/location_objectives_path_stream",
+    "source_path": "/adapters/BasicAdapter/entries/audience/location_objectives_path_stream",
+    "file": "adapters/BasicAdapter/entries/audience/location_objectives_path_stream.md",
+    "source_sha256": "267b5d4915b76878dba1825b2fbaef95661f7b8a8fbacb0dde817907e03d771a",
+    "english_sha256": "7913d4e6ab0505184603b57c05f0928b8145fdff26f2765b8367e41e805536a1",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "循环过场动画受众（Looping Cinematic Audience）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/looping_cinematic_audience",
+    "source_path": "/adapters/BasicAdapter/entries/audience/looping_cinematic_audience",
+    "file": "adapters/BasicAdapter/entries/audience/looping_cinematic_audience.md",
+    "source_sha256": "9e04e2c942a588028dd0aad3d6e94184c91f133c4b492ad985c47b693ed26006",
+    "english_sha256": "218f1f7b46888e0daa8571832eb139fd910cb83a96bbd27e02c29e048dd983ea",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "简单侧边栏（Simple Sidebar）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/sidebar",
+    "source_path": "/adapters/BasicAdapter/entries/audience/sidebar",
+    "file": "adapters/BasicAdapter/entries/audience/sidebar.md",
+    "source_sha256": "f38fc2cf315102b68098718d94785d33733b28aaf25f48bff62d8165839d73d8",
+    "english_sha256": "0d6719d917bb90a5d88f87f3ccd77d6453af64b5d2f23c0a4f89edc290c873bb",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "简单文本行（Simple Lines）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/simple_lines",
+    "source_path": "/adapters/BasicAdapter/entries/audience/simple_lines",
+    "file": "adapters/BasicAdapter/entries/audience/simple_lines.md",
+    "source_sha256": "78638d3a0bbfca9a14ef486401f509407065701fcba613fbf90332b778813ce7",
+    "english_sha256": "35503ba6b5dbc1191bb2a313bc6461a9bcd45949d052f48b19727baecdf94623",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "玩家列表页眉与页脚（Tab List Header Footer）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/tab_list_header_footer",
+    "source_path": "/adapters/BasicAdapter/entries/audience/tab_list_header_footer",
+    "file": "adapters/BasicAdapter/entries/audience/tab_list_header_footer.md",
+    "source_sha256": "968c96c0946e4b716b1ddaf46d7bce203e229c7612dcfab68fbfccc4f5c21842",
+    "english_sha256": "3415502de547ed52d15b0cfa19f3ceed1ffed53d1d8e6ef14aad065e4b10cfdc",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "计时器受众（Timer Audience）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/timer_audience",
+    "source_path": "/adapters/BasicAdapter/entries/audience/timer_audience",
+    "file": "adapters/BasicAdapter/entries/audience/timer_audience.md",
+    "source_sha256": "7401711e963075921d9b19314f75283e5747c2f76d070eaf4cf4e58544ceca81",
+    "english_sha256": "db8a71a0069850187de04f157eef84524f9486dc124a127556f6e9f049bbbdc9",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "触发受众（Trigger Audience）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/trigger_audience",
+    "source_path": "/adapters/BasicAdapter/entries/audience/trigger_audience",
+    "file": "adapters/BasicAdapter/entries/audience/trigger_audience.md",
+    "source_sha256": "aece4a75817ae94002debe81aafb93e6d347f7bb64fd125640c0d00786f0f0df",
+    "english_sha256": "41357ed6ef184c52e062af745d602433497c723b8e67d46d3efa8d8b1217cfd1",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "动作栏对话过场动画（Action Bar Dialogue Cinematic）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/actionbar_dialogue_cinematic",
+    "source_path": "/adapters/BasicAdapter/entries/cinematic/actionbar_dialogue_cinematic",
+    "file": "adapters/BasicAdapter/entries/cinematic/actionbar_dialogue_cinematic.md",
+    "source_sha256": "b91a66561b5337efb7d5cc979a8571539669ec371762a0548c8584f3a54fed85",
+    "english_sha256": "beef3c2ba97446edeb35c581c30c3acb0f354e5375b4b861c65f3f8ee28e7bc3",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "致盲过场动画（Blinding Cinematic）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/blinding_cinematic",
+    "source_path": "/adapters/BasicAdapter/entries/cinematic/blinding_cinematic",
+    "file": "adapters/BasicAdapter/entries/cinematic/blinding_cinematic.md",
+    "source_sha256": "a9af5622cdfb657ad0a1287c37d6ddbd4c64ff3ee1538b9f829705c16d3d46a8",
+    "english_sha256": "29d3762bd8df563f4067dd260137f222329f520f2626cbe7e81f08d9fced13b0",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "镜头过场动画（Camera Cinematic）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/camera_cinematic",
+    "source_path": "/adapters/BasicAdapter/entries/cinematic/camera_cinematic",
+    "file": "adapters/BasicAdapter/entries/cinematic/camera_cinematic.md",
+    "source_sha256": "45030568a4059f9939e7cac4d190f4d05961ebed60a3314a29c4add3bcc9c375",
+    "english_sha256": "3f743e0b6d3f45dc53e709082c8501d013579b4f6e65313fc1aa648d807eccc5",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "过场动画控制台命令（Cinematic Console Command）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/cinematic_console_command",
+    "source_path": "/adapters/BasicAdapter/entries/cinematic/cinematic_console_command",
+    "file": "adapters/BasicAdapter/entries/cinematic/cinematic_console_command.md",
+    "source_sha256": "33733f958d133e575939c93b63f5bfcdc0cc6c6507aa7c2f1a1cf3bc386ab3f6",
+    "english_sha256": "4df80fd3ea85c2ebbc7c2e3a51022c3da228f95ee258fa9d7ee3408d658fbbc2",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "过场动画玩家命令（Cinematic Player Command）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/cinematic_player_command",
+    "source_path": "/adapters/BasicAdapter/entries/cinematic/cinematic_player_command",
+    "file": "adapters/BasicAdapter/entries/cinematic/cinematic_player_command.md",
+    "source_sha256": "a6c31429fd4bff53b5340fbb747ce42c491aeb039c5ac65325ec66a178ca2c52",
+    "english_sha256": "c04cd861af3a17831560ccad9a723589ee297ce76dbfbb54de3f5bada5917b8d",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "粒子过场动画（Particle Cinematic）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/particle_cinematic",
+    "source_path": "/adapters/BasicAdapter/entries/cinematic/particle_cinematic",
+    "file": "adapters/BasicAdapter/entries/cinematic/particle_cinematic.md",
+    "source_sha256": "505351b8a97e19db93180e3430cd3ceae6eddd21851dced5f742a247aa0b6d46",
+    "english_sha256": "5027293db8103b248cc5c9e464fd438f3b80fef92f1c06c9e599407d986ae3f8",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "药水效果过场动画（Potion Effect Cinematic）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/potion_effect_cinematic",
+    "source_path": "/adapters/BasicAdapter/entries/cinematic/potion_effect_cinematic",
+    "file": "adapters/BasicAdapter/entries/cinematic/potion_effect_cinematic.md",
+    "source_sha256": "3218118ed591e17da10e5d42c471508edf4e05e387975b9061288bf64b3d4806",
+    "english_sha256": "6c01c876b48e64f37a2b1682751709a4f0426c09b5e60fa94c20f4b7a57fc798",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "南瓜头盔过场动画（Pumpkin Hat Cinematic）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/pumpkin_hat_cinematic",
+    "source_path": "/adapters/BasicAdapter/entries/cinematic/pumpkin_hat_cinematic",
+    "file": "adapters/BasicAdapter/entries/cinematic/pumpkin_hat_cinematic.md",
+    "source_sha256": "5175a6627b1bde30d487c0af84621df9de7434ac9997b59913e73ba091f35752",
+    "english_sha256": "2145f2e7a05066c5794e0cf734ea5d08f419ef9600fc0ba4eb0689c2bf323a7b",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "随机动作栏对话过场动画（Random Action Bar Dialogue Cinematic）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/random_actionbar_dialogue_cinematic",
+    "source_path": "/adapters/BasicAdapter/entries/cinematic/random_actionbar_dialogue_cinematic",
+    "file": "adapters/BasicAdapter/entries/cinematic/random_actionbar_dialogue_cinematic.md",
+    "source_sha256": "a9f45e71f7d0bf36cf227cdbe443cff9f841ac4961a96899433e5ba8a135cb46",
+    "english_sha256": "1bf523b3ae10201a886c9c96dea07993289cf80733aeee8c5c0175123e10dd23",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "随机逐字对话过场动画（Random Spoken Dialogue Cinematic）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/random_spoken_dialogue_cinematic",
+    "source_path": "/adapters/BasicAdapter/entries/cinematic/random_spoken_dialogue_cinematic",
+    "file": "adapters/BasicAdapter/entries/cinematic/random_spoken_dialogue_cinematic.md",
+    "source_sha256": "876385bee639f9fc6ef8a8047a4a7fc37388142254794a4ab70bfaf135a7c3fe",
+    "english_sha256": "d78a994aa662fd4c876578f5347fa6afa31b390e3317675c1d62fb30c0b8992e",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "随机副标题对话过场动画（Random Subtitle Dialogue Cinematic）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/random_subtitle_dialogue_cinematic",
+    "source_path": "/adapters/BasicAdapter/entries/cinematic/random_subtitle_dialogue_cinematic",
+    "file": "adapters/BasicAdapter/entries/cinematic/random_subtitle_dialogue_cinematic.md",
+    "source_sha256": "0ef9a413e4d1f546d666788f374bb2bc2b708657f6fdc0f09f79f51edfcec157",
+    "english_sha256": "ff6ba11454746384e0361d29391bc53494c5e82ff4b2c22fbf8929fac38f67cf",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "屏幕震动过场动画（Screen Shake Cinematic）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/screen_shake_cinematic",
+    "source_path": "/adapters/BasicAdapter/entries/cinematic/screen_shake_cinematic",
+    "file": "adapters/BasicAdapter/entries/cinematic/screen_shake_cinematic.md",
+    "source_sha256": "00de85eb973e577075296db665fd76dc1070c0a938c5ea4d1293b56bb66ee166",
+    "english_sha256": "3afd232df81e137678215583523931a5f464d0a8bc96b86d38d28ea2a89e69b7",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "虚拟方块过场动画（Set Fake Block Cinematic）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/set_fake_block_cinematic",
+    "source_path": "/adapters/BasicAdapter/entries/cinematic/set_fake_block_cinematic",
+    "file": "adapters/BasicAdapter/entries/cinematic/set_fake_block_cinematic.md",
+    "source_sha256": "553c4706cb6f4fadf7274a388c6c7865a865570affe5c89e615aa0329964034c",
+    "english_sha256": "8ea7d9349eac8ae36ca5c2aa90173e714ec655d45660d4610f5265d52f5402d6",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "声音过场动画（Sound Cinematic）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/sound_cinematic",
+    "source_path": "/adapters/BasicAdapter/entries/cinematic/sound_cinematic",
+    "file": "adapters/BasicAdapter/entries/cinematic/sound_cinematic.md",
+    "source_sha256": "e6c01fcb35e3c69d60971d2c18ce6f6aff03acf3c866520960c41c82c5d5ca70",
+    "english_sha256": "e9427a1e133f450931eeda8650a44098f381d18f24aca375d122c61ab5afc9f2",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "逐字对话过场动画（Spoken Dialogue Cinematic）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/spoken_dialogue_cinematic",
+    "source_path": "/adapters/BasicAdapter/entries/cinematic/spoken_dialogue_cinematic",
+    "file": "adapters/BasicAdapter/entries/cinematic/spoken_dialogue_cinematic.md",
+    "source_sha256": "bf8352c547ad0a8941f2130280e0f3ab9fc9dd7b4de88f7d0955cf06a5c819ae",
+    "english_sha256": "270cc66e6882f08b10b46eb1203cee76de8f839b1aa59c099f7ed9a625137f61",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "副标题对话过场动画（Subtitle Dialogue Cinematic）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/subtitle_dialogue_cinematic",
+    "source_path": "/adapters/BasicAdapter/entries/cinematic/subtitle_dialogue_cinematic",
+    "file": "adapters/BasicAdapter/entries/cinematic/subtitle_dialogue_cinematic.md",
+    "source_sha256": "948cfc14343f632d74b1cff7858fcd9346d4bdee90bffa8a252268d08e76974f",
+    "english_sha256": "7c53f07bcd35497087a4cd2356ec8c78ee52c74954c74b459e52cfeb7b99565c",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "标题过场动画（Title Cinematic）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/title_cinematic",
+    "source_path": "/adapters/BasicAdapter/entries/cinematic/title_cinematic",
+    "file": "adapters/BasicAdapter/entries/cinematic/title_cinematic.md",
+    "source_sha256": "417561e71c8d6acbb83193382d4a05209a1971a42f54b1ff764bfa3c544751be",
+    "english_sha256": "de43560f4d2beec7dfa7535e01a07afce9de01fe12f2df966add652204c60488",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "触发序列过场动画（Trigger Sequence Cinematic）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/trigger_sequence_cinematic",
+    "source_path": "/adapters/BasicAdapter/entries/cinematic/trigger_sequence_cinematic",
+    "file": "adapters/BasicAdapter/entries/cinematic/trigger_sequence_cinematic.md",
+    "source_sha256": "f1b566f28d03314bb8d4c2840fef9e3cce8acfdbf3cfc6922de0994b4b4b016f",
+    "english_sha256": "b08efe4f99c33d9171b3f5652987a748bb73eaf22545b897c4b7a0ae3f0eb5e5",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "消息对话（Message Dialogue）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/dialogue/message",
+    "source_path": "/adapters/BasicAdapter/entries/dialogue/message",
+    "file": "adapters/BasicAdapter/entries/dialogue/message.md",
+    "source_sha256": "8c8f69b16a7f53df85c51e5777f83f19b49d18949ca25e7e78bcf320eb03cfa3",
+    "english_sha256": "329fb0e39f20b2c247c0bab2c7eba3e7836bd5c51278db8fbf4192e9a69d87d5",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "选项对话（Option Dialogue）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/dialogue/option",
+    "source_path": "/adapters/BasicAdapter/entries/dialogue/option",
+    "file": "adapters/BasicAdapter/entries/dialogue/option.md",
+    "source_sha256": "74177f6e052e755711c88c3ac0dfb9167409b5c5b6f8f66cf851523e94466b06",
+    "english_sha256": "baf2dc3711b7741e50393b421783be198a2eeb8d533b9494f407053fcf547eeb",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "随机消息对话（Random Message Dialogue）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/dialogue/random_message",
+    "source_path": "/adapters/BasicAdapter/entries/dialogue/random_message",
+    "file": "adapters/BasicAdapter/entries/dialogue/random_message.md",
+    "source_sha256": "f467c1c21e9deb991e9b307d08dcf6669e33e575b0213d184ac9f663c643ff3f",
+    "english_sha256": "e6773276f62b8a86e9bce190edac8d742af8e6655d57624916dc27459afd9283",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "随机逐字对话（Random Spoken Dialogue）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/dialogue/random_spoken",
+    "source_path": "/adapters/BasicAdapter/entries/dialogue/random_spoken",
+    "file": "adapters/BasicAdapter/entries/dialogue/random_spoken.md",
+    "source_sha256": "b7e5c05c4307a5f3d556453ee2f2b3266ff390eca6f63c058d6ae831f8ab86e9",
+    "english_sha256": "28401ca679e5be61fb49072ca3e94f555a30fee05e1a4a2e42cf15b9e146da9b",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "逐字对话（Spoken Dialogue）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/dialogue/spoken",
+    "source_path": "/adapters/BasicAdapter/entries/dialogue/spoken",
+    "file": "adapters/BasicAdapter/entries/dialogue/spoken.md",
+    "source_sha256": "d83f98887fa4117830124507c9fc94c2dc002b13f2f608dd071eb01801c959a4",
+    "english_sha256": "66293b76bbd2656f7f2dcc204e911dc3f47d5e441f69fa7de0b7fe865727771e",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "合成物品事件（Craft Item Event）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/craft_item_event",
+    "source_path": "/adapters/BasicAdapter/entries/event/craft_item_event",
+    "file": "adapters/BasicAdapter/entries/event/craft_item_event.md",
+    "source_sha256": "ab7535ab7cd3eb7d906edd4152daec9bf787de5f2bad408065e52a7e23cbce2c",
+    "english_sha256": "7b938b89f6645b40ca71537211822799ec87359b8bee83a5f3860712755fdfd9",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "手动触发事件（Fire Trigger Event）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/fire_trigger_event",
+    "source_path": "/adapters/BasicAdapter/entries/event/fire_trigger_event",
+    "file": "adapters/BasicAdapter/entries/event/fire_trigger_event.md",
+    "source_sha256": "2e1c73e9c4dffdcb5f59f756b39a973d46563b318f74d3234a6809d391997197",
+    "english_sha256": "af69c88538a5599426cc38de636e1313bf336eaeafb9fcfe80dff398bd19e78d",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "破坏方块事件（Block Break Event）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_block_break",
+    "source_path": "/adapters/BasicAdapter/entries/event/on_block_break",
+    "file": "adapters/BasicAdapter/entries/event/on_block_break.md",
+    "source_sha256": "2084c30fd3cbed9347b48462273c405cca468bb2adc3009608e3dca63a4863ad",
+    "english_sha256": "afc2db6108e1daf815705b6909ed5285181cea3e13cfbd0733b36edff0532340",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "检测命令执行事件（Detect Command Ran Event）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_detect_command_ran",
+    "source_path": "/adapters/BasicAdapter/entries/event/on_detect_command_ran",
+    "file": "adapters/BasicAdapter/entries/event/on_detect_command_ran.md",
+    "source_sha256": "10082b078ce6305eeafa791336514d3bc524c0c888b867dee319327f6f079f89",
+    "english_sha256": "28580c34a2e9df81568886f3cd3c9cc26f0722730f3b1b9c90ea0c9171379d43",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "钓鱼事件（Fish Event）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_fish",
+    "source_path": "/adapters/BasicAdapter/entries/event/on_fish",
+    "file": "adapters/BasicAdapter/entries/event/on_fish.md",
+    "source_sha256": "ef70cb1885159b7a2241f67bb449430e027fd2b11c9ed6f4f0d1c827fa8d2c5a",
+    "english_sha256": "cf8d6271789b61d4973691b4be1df8fb5aab552833195a22d3259f0e52ab4bb7",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "方块交互事件（Interact Block Event）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_interact_with_block",
+    "source_path": "/adapters/BasicAdapter/entries/event/on_interact_with_block",
+    "file": "adapters/BasicAdapter/entries/event/on_interact_with_block.md",
+    "source_sha256": "16ea48bab446071f409e3d3d4f93062d707b2cf2578357b53dd0528961e107c0",
+    "english_sha256": "42d2ac163aa83ae7fdf30654209a8a04e13f0151ecf17481ce43bdcd06b50108",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "拾取物品事件（Pickup Item Event）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_item_pickup",
+    "source_path": "/adapters/BasicAdapter/entries/event/on_item_pickup",
+    "file": "adapters/BasicAdapter/entries/event/on_item_pickup.md",
+    "source_sha256": "850c71fdc2c207fd3cf58a83b60e231fccef24c1ea873f5d37fc2782c4575c70",
+    "english_sha256": "b581344be5afa5da0ef0f3bb3a8689c837e3001689392e22745e732e1003828e",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "聊天包含文本事件（Chat Contains Text Event）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_message_contains_text",
+    "source_path": "/adapters/BasicAdapter/entries/event/on_message_contains_text",
+    "file": "adapters/BasicAdapter/entries/event/on_message_contains_text.md",
+    "source_sha256": "0cb094807d12a05a886d81c0f87e3256fd3adf12def692524fa02d386659da9f",
+    "english_sha256": "d8593b3d0016d8098ce0ed56a4cd393b36d8879b7990a03f8fca141daaf97f78",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "放置方块事件（Block Place Event）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_place_block",
+    "source_path": "/adapters/BasicAdapter/entries/event/on_place_block",
+    "file": "adapters/BasicAdapter/entries/event/on_place_block.md",
+    "source_sha256": "860ef8b705b6c1e2228d6e85d202b48fd75d32ef1f785867f65ba8a5e0ea387a",
+    "english_sha256": "7b44866ec89e7786ae83ca72ff81769fe3ec8710a2db328ee442d7978b903654",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "玩家死亡事件（Player Death Event）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_player_death",
+    "source_path": "/adapters/BasicAdapter/entries/event/on_player_death",
+    "file": "adapters/BasicAdapter/entries/event/on_player_death.md",
+    "source_sha256": "a140a816396011081c68ef83f108b1cb9ff095a63d5a916b33a4f348d2977ee5",
+    "english_sha256": "833244aeab6395889a40a58b3239e47bb1f884b6ec225f57de722daefedd585a",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "玩家攻击实体事件（Player Hit Entity Event）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_player_hit_entity",
+    "source_path": "/adapters/BasicAdapter/entries/event/on_player_hit_entity",
+    "file": "adapters/BasicAdapter/entries/event/on_player_hit_entity.md",
+    "source_sha256": "2eb80eda326bc337353f7706db50ebe656168e8866339f6694e63c193b834c70",
+    "english_sha256": "5cf9c7f5a9d8ffc1d7be5833620313ecb3b15e341fd708f15fc8a76df4ae0446",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "玩家加入事件（Player Join Event）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_player_join",
+    "source_path": "/adapters/BasicAdapter/entries/event/on_player_join",
+    "file": "adapters/BasicAdapter/entries/event/on_player_join.md",
+    "source_sha256": "4646268589a073078860702a68873fe24802b7afedf33d9457e6562cfc7554bd",
+    "english_sha256": "aa42e3b8168cbc352e59093b446d2365cd16ebd2a76f9561271730e6346ca4f8",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "玩家击杀实体事件（Player Kill Entity Event）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_player_kill_entity",
+    "source_path": "/adapters/BasicAdapter/entries/event/on_player_kill_entity",
+    "file": "adapters/BasicAdapter/entries/event/on_player_kill_entity.md",
+    "source_sha256": "369128a114696820ccdc3a49eecf19b1ff1c35e900be6670a923fcbfee2d40dd",
+    "english_sha256": "1af3a5ad0245ed8cf9d8a13521ee3ffdd1a9da142aadfd4366614123a90c5b9c",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "玩家击杀玩家事件（Player Kill Player Event）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_player_kill_player",
+    "source_path": "/adapters/BasicAdapter/entries/event/on_player_kill_player",
+    "file": "adapters/BasicAdapter/entries/event/on_player_kill_player.md",
+    "source_sha256": "68d8be0fdea8dc5d4b8bb4295b30165be5b08d5862ff82a9523e1fbcf87ff481",
+    "english_sha256": "309d770671f8ad8ac5ca59dbad226e99a49d09088a20dafa4ae6f026a5138c3f",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "玩家接近位置事件（Player Near Location Event）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_player_near_location",
+    "source_path": "/adapters/BasicAdapter/entries/event/on_player_near_location",
+    "file": "adapters/BasicAdapter/entries/event/on_player_near_location.md",
+    "source_sha256": "1a562cd0bf7343df0bda8bed0707f7053a72dd406ad559d35dc12c96036deb79",
+    "english_sha256": "adb08e5f52e14aeeafdbc74a921b76ad8343f2cfe423c0cb89ee99950534aef2",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "玩家退出事件（Player Quit Event）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_player_quit",
+    "source_path": "/adapters/BasicAdapter/entries/event/on_player_quit",
+    "file": "adapters/BasicAdapter/entries/event/on_player_quit.md",
+    "source_sha256": "4a3ac24d1e814fd191c9ab65eb8f7022f4379de6600228d435d8daadb94540c1",
+    "english_sha256": "700589750869a7adb0d77788d1f848a3674e8744270089da78e83036a600608a",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "运行命令事件（Run Command Event）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_run_command",
+    "source_path": "/adapters/BasicAdapter/entries/event/on_run_command",
+    "file": "adapters/BasicAdapter/entries/event/on_run_command.md",
+    "source_sha256": "9f2e76c42e02820bf5dfa7cb5718e3bf4385e2ed2d24271c3e97d3a093bfd2c0",
+    "english_sha256": "7fc0d352a9e04fc079b240188e98dd6c0f10a4adea1fe8cbdb32184506833cf2",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "倒计时事实（Countdown Fact）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/countdown_fact",
+    "source_path": "/adapters/BasicAdapter/entries/fact/countdown_fact",
+    "file": "adapters/BasicAdapter/entries/fact/countdown_fact.md",
+    "source_sha256": "b7b6cfab4c6b9fa2e2bb89a273993f75c7315a1649e96437f523d728cb94e895",
+    "english_sha256": "df442ec0640e57d02a7d7d5635b33ed4ceb5998b914b65e0d74e181ff8c30cbf",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "Cron 事实（Cron Fact）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/cron_fact",
+    "source_path": "/adapters/BasicAdapter/entries/fact/cron_fact",
+    "file": "adapters/BasicAdapter/entries/fact/cron_fact.md",
+    "source_sha256": "66a28c545b8df51f5d1101e55c9fba06e69d6e0dc6e8c3de3f277a454b021ef9",
+    "english_sha256": "eccf2993f38e4583abe19e9a9f136c22994f5bd1bebf6dd30f77b08a6a4d0f2d",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "处于受众中事实（In Audience Fact）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/in_audience_fact",
+    "source_path": "/adapters/BasicAdapter/entries/fact/in_audience_fact",
+    "file": "adapters/BasicAdapter/entries/fact/in_audience_fact.md",
+    "source_sha256": "cb17ccef1dca48552ad30e0304d5e02c81c72fabebb9221c2831e6634421e054",
+    "english_sha256": "15d260b574d6f12b82e6ee45c6aa5d0c14532f2c09322e2589fb91fbe0ab229b",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "处于过场动画中事实（In Cinematic Fact）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/in_cinematic_fact",
+    "source_path": "/adapters/BasicAdapter/entries/fact/in_cinematic_fact",
+    "file": "adapters/BasicAdapter/entries/fact/in_cinematic_fact.md",
+    "source_sha256": "7865db1fbc728d431f97ccf1bae035157d0c9e312582e9ea3ee22493a4e85ddd",
+    "english_sha256": "0f834f92c79da94e66e4664a56f6d2c483c834f75d9d3100336e22f26daf4d40",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "背包物品数量事实（Inventory Item Count Fact）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/inventory_item_count_fact",
+    "source_path": "/adapters/BasicAdapter/entries/fact/inventory_item_count_fact",
+    "file": "adapters/BasicAdapter/entries/fact/inventory_item_count_fact.md",
+    "source_sha256": "0d459d3454a49bb94415e5defe92cc20a8b19d346507924c1edb770ab371ce0e",
+    "english_sha256": "de1e3ccd5fa076e5988e25b9f4da1cc25fbe18279be2a7ead2356df243391abe",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "手持物品事实（Item Holding Fact）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/item_holding_fact",
+    "source_path": "/adapters/BasicAdapter/entries/fact/item_holding_fact",
+    "file": "adapters/BasicAdapter/entries/fact/item_holding_fact.md",
+    "source_sha256": "5f8a19fcafd899199931caf7ad078fbcbb503f0d24947e1a8cf32801314712b8",
+    "english_sha256": "c54dc9654bf85b0bf9071c4b45a413c0ece2e3a18b9d26b7a9ff8e689769f81d",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "槽位物品事实（Item In Slot Fact）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/item_in_slot_fact",
+    "source_path": "/adapters/BasicAdapter/entries/fact/item_in_slot_fact",
+    "file": "adapters/BasicAdapter/entries/fact/item_in_slot_fact.md",
+    "source_sha256": "2269e339727daabba09b58ee5495c6bb3f829ab5c1b172ab3e7300bdd5eb142d",
+    "english_sha256": "8890ac36a105ef818af022e85e362f4b05327fdf541b219c70135b2fd18dd316",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "数字占位符事实（Number Placeholder Fact）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/number_placeholder",
+    "source_path": "/adapters/BasicAdapter/entries/fact/number_placeholder",
+    "file": "adapters/BasicAdapter/entries/fact/number_placeholder.md",
+    "source_sha256": "3bb66c54a2cf0f28e78c278d054225fce92da0a3b286cfb4a0a12d2f7d429f53",
+    "english_sha256": "93a1a289ad52a2b9cc64e42402afd043767ce2ff0d989937bab961c83b46127d",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "永久事实（Permanent Fact）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/permanent_fact",
+    "source_path": "/adapters/BasicAdapter/entries/fact/permanent_fact",
+    "file": "adapters/BasicAdapter/entries/fact/permanent_fact.md",
+    "source_sha256": "426e053ce8efc8cdf8835c73c05a728449fabb463582354987a293ba5332c863",
+    "english_sha256": "a103ddabca68d8e6d2dc535d841f0c2e9f18a772d17d60e17803bbe5d443fe28",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "任务状态事实（Quest Status Fact）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/quest_status_fact",
+    "source_path": "/adapters/BasicAdapter/entries/fact/quest_status_fact",
+    "file": "adapters/BasicAdapter/entries/fact/quest_status_fact.md",
+    "source_sha256": "755a9e8ec08b5bc983449b12cdad1dca64289b869c1b5b1e3d9772b4f348d977",
+    "english_sha256": "0e183c14707b70e5def77517a3bb91a6e0a7a47a45a1d98090a558f61ca01ae4",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "会话事实（Session Fact）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/session_fact",
+    "source_path": "/adapters/BasicAdapter/entries/fact/session_fact",
+    "file": "adapters/BasicAdapter/entries/fact/session_fact.md",
+    "source_sha256": "e172637d96226c9aa0448585e2f4cd3ca33272e23f2cf53ba1ac5f7731ad0dbe",
+    "english_sha256": "0b059e5572203492e36e2a342f1ba54ded11f706251f9ab788daeb7c56b9cea3",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "限时事实（Timed Fact）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/timed_fact",
+    "source_path": "/adapters/BasicAdapter/entries/fact/timed_fact",
+    "file": "adapters/BasicAdapter/entries/fact/timed_fact.md",
+    "source_sha256": "9bec296b5ab953025f8ff6c3e569810caabaa8c4715e000a3ec681273f0c4550",
+    "english_sha256": "f3be4a4e2d7bbdb45bb0a6767401dca5d13f31864047ae37e35084945a6054ec",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "数值占位符事实（Value Placeholder Fact）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/value_placeholder",
+    "source_path": "/adapters/BasicAdapter/entries/fact/value_placeholder",
+    "file": "adapters/BasicAdapter/entries/fact/value_placeholder.md",
+    "source_sha256": "2437b6479d5c9086f478d724e669965208d7a325969fbea3314059b53ba6d7b5",
+    "english_sha256": "a779d806da7da3f127b7b5b2f7bfff788163db495c9a02032cb7c3256446b898",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "全局组（Global Group）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/group/global_group",
+    "source_path": "/adapters/BasicAdapter/entries/group/global_group",
+    "file": "adapters/BasicAdapter/entries/group/global_group.md",
+    "source_sha256": "934db5e29ce483f43b2fa078d6771c0e1ea42c3ec1757dd82ba8c5578811eec0",
+    "english_sha256": "2ddf6938ee3ddba6a4ff37230c06ff7311a38a54fd6fd5a3176f1b8963855149",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "玩家组（Player Group）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/group/player_group",
+    "source_path": "/adapters/BasicAdapter/entries/group/player_group",
+    "file": "adapters/BasicAdapter/entries/group/player_group.md",
+    "source_sha256": "5be8e82abe2d57ea33a5b08a65903041b8cf8583c13c60747fe3827769483979",
+    "english_sha256": "6619469e4ddbb6ae5cf91b2fbc1c73aef06feac749034e32fb28aa21d8a19583",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "世界组（World Group）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/group/world_group",
+    "source_path": "/adapters/BasicAdapter/entries/group/world_group",
+    "file": "adapters/BasicAdapter/entries/group/world_group.md",
+    "source_sha256": "155c74047a925b18eff7e9b4c66ba396e97d53a0f0adb0b6995df068e097ad49",
+    "english_sha256": "c0d9493fb6c1575f4d372f9c95bf340ced6794148a164c73b47485a476dca741",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "简单任务（Simple Quest）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/quest",
+    "source_path": "/adapters/BasicAdapter/entries/quest",
+    "file": "adapters/BasicAdapter/entries/quest.md",
+    "source_sha256": "aa81d95fb8ec2137dd10824b789ac7f24894ad232cafad6d4a655a60e8424ada",
+    "english_sha256": "209135ec9effd1d3870bf2a8d4f2cc96d0610d29982ab2d36ae10e8dbb01f7f6",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "可完成目标（Completable Objective）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/quest/completable_objective",
+    "source_path": "/adapters/BasicAdapter/entries/quest/completable_objective",
+    "file": "adapters/BasicAdapter/entries/quest/completable_objective.md",
+    "source_sha256": "a27f21924dd64f8f330bf14ea20cdc687f2818264ba9382976ef1efe7795f206",
+    "english_sha256": "b622365583ac3a1ed8d5ceb2f0ecddb4b68fbe6f2a388d4569529849dab8ec13",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "位置目标（Location Objective）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/quest/location_objective",
+    "source_path": "/adapters/BasicAdapter/entries/quest/location_objective",
+    "file": "adapters/BasicAdapter/entries/quest/location_objective.md",
+    "source_sha256": "d281cf607ed328067f1dfc4e4dedae3d08b709cc1a2707ecfba3fc0da3b78b98",
+    "english_sha256": "b8cc958351bf9d46de598cb5810d8e11bb5cc0ef5ea73959202a50afa434eb6d",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "简单目标（Simple Objective）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/quest/objective",
+    "source_path": "/adapters/BasicAdapter/entries/quest/objective",
+    "file": "adapters/BasicAdapter/entries/quest/objective.md",
+    "source_sha256": "08f4b6a7a7ab19ecf0b54902b4f4498b7ae59f4d13cee9be5bb0c39e6195b3aa",
+    "english_sha256": "d2c30b332ed0cbf4208705683e11f91a3d8eca982123e7fad106f80d9ec700ee",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "目标文本行（Objective Lines）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/quest/objective_lines",
+    "source_path": "/adapters/BasicAdapter/entries/quest/objective_lines",
+    "file": "adapters/BasicAdapter/entries/quest/objective_lines.md",
+    "source_sha256": "9baffa63772ff33351002a14dbd66074c8edb08c1d9988aecca4fa05497904b9",
+    "english_sha256": "d9212c7c02023c43ace6237748bc969bec3072daf5b3223e11784553222619cf",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "任务完成事件（Quest Complete Event）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/quest/quest_complete_event",
+    "source_path": "/adapters/BasicAdapter/entries/quest/quest_complete_event",
+    "file": "adapters/BasicAdapter/entries/quest/quest_complete_event.md",
+    "source_sha256": "24ea7dcd855e937adf0b155cb2d56da2521c3fa8b683660deaa178f901282016",
+    "english_sha256": "2427b730e84a5da2472e80f71769f6382859dc54bcaf535dade55e2d0fb9eb68",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "任务开始事件（Quest Start Event）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/quest/quest_start_event",
+    "source_path": "/adapters/BasicAdapter/entries/quest/quest_start_event",
+    "file": "adapters/BasicAdapter/entries/quest/quest_start_event.md",
+    "source_sha256": "bf55d5f089d6b472080f5a56d4a6685f5e62facc6cf8a5f68d5e93777384c4f9",
+    "english_sha256": "e99ff3911828f97589afb93540726a3bb3c174b563f08db84a61832fc9eb3280",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "任务状态更新事件（Quest Status Update Event）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/quest/quest_status_update_event",
+    "source_path": "/adapters/BasicAdapter/entries/quest/quest_status_update_event",
+    "file": "adapters/BasicAdapter/entries/quest/quest_status_update_event.md",
+    "source_sha256": "3e5801e61e467dc6da1bb06b3fdf25a1da2fcd13c878107373ea79d3d36dbd4f",
+    "english_sha256": "3e9f27fd600f3a8d10ad0ebc9979fa7a07ac18bfc49d67c83d747f8b764aac28",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "已追踪目标受众（Tracked Objective Audience）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/quest/tracked_objective_audience",
+    "source_path": "/adapters/BasicAdapter/entries/quest/tracked_objective_audience",
+    "file": "adapters/BasicAdapter/entries/quest/tracked_objective_audience.md",
+    "source_sha256": "deae7b73f57273f11aac55e0fb662e8f6a757f90e49a6da38d6e09c6b6b8775c",
+    "english_sha256": "28269dde1f46e3f8749f62dfbe33401143d3a4007d574f576ab76f65316559ee",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "已追踪任务受众（Tracked Quest Audience）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/quest/tracked_quest_audience",
+    "source_path": "/adapters/BasicAdapter/entries/quest/tracked_quest_audience",
+    "file": "adapters/BasicAdapter/entries/quest/tracked_quest_audience.md",
+    "source_sha256": "e80e870e6614c88c68617d1e1ccde0ba7e6da7c456275780bcc7336e96deca91",
+    "english_sha256": "9c48785ab81bf0dc3dee856b66a593dadf59c7180c25a0f7fafee280edddf4d8",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "自定义声音（Custom Sound）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/sound/custom_sound",
+    "source_path": "/adapters/BasicAdapter/entries/sound/custom_sound",
+    "file": "adapters/BasicAdapter/entries/sound/custom_sound.md",
+    "source_sha256": "8464a2069e6840014cdceca62ae25f78a7c8ce6a0bcda78020439384859ab721",
+    "english_sha256": "e44d5a31864160f6fd6b7f61e94ff3889444334b7a4cd627f721e04cd9bcfd62",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "基础道路网络（Base Road Network）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/static/base_road_network",
+    "source_path": "/adapters/BasicAdapter/entries/static/base_road_network",
+    "file": "adapters/BasicAdapter/entries/static/base_road_network.md",
+    "source_sha256": "d18877c075f20146deb97d27490486736ae302186fbe592c27fe70903f05bc83",
+    "english_sha256": "ff5f5943548837460aa1e577a3e207633ae73fc6d5cd2656c0471e8267bf9246",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "玩家自身说话者（Self Speaker）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/static/self_speaker",
+    "source_path": "/adapters/BasicAdapter/entries/static/self_speaker",
+    "file": "adapters/BasicAdapter/entries/static/self_speaker.md",
+    "source_sha256": "d9d0b1423b75c6cea5dbcbe5138c2087227538d365a41476cb061cd717c126e1",
+    "english_sha256": "1ba81476b073b912fd046a57eb6e39712a7225544a72ef02945881681d996d80",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "简单说话者（Simple Speaker）",
+    "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/static/simple_speaker",
+    "source_path": "/adapters/BasicAdapter/entries/static/simple_speaker",
+    "file": "adapters/BasicAdapter/entries/static/simple_speaker.md",
+    "source_sha256": "1097f3e203c09a8880068dfbad0cf64b08b0659e677a353a738329c8b4ba52d1",
+    "english_sha256": "e32c525fe8e944fa68cc13c624150924709743ed393c222f2be27761b31c568e",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "Citizens 适配器（Citizens Adapter）",
+    "source": "https://docs.typewritermc.com/adapters/CitizensAdapter",
+    "source_path": "/adapters/CitizensAdapter",
+    "file": "adapters/CitizensAdapter.md",
+    "source_sha256": "145e51b64675d407bb2747894a234e0b59225e324a205b1dfbbcaab5b36046fb",
+    "english_sha256": "ed43b4cf9bb32ad453b66a112ee65e6662087240fb4ff478d7b79b674e394647",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "引用 NPC 过场动画（Reference Npc Cinematic）",
+    "source": "https://docs.typewritermc.com/adapters/CitizensAdapter/entries/cinematic/reference_npc_cinematic",
+    "source_path": "/adapters/CitizensAdapter/entries/cinematic/reference_npc_cinematic",
+    "file": "adapters/CitizensAdapter/entries/cinematic/reference_npc_cinematic.md",
+    "source_sha256": "791c0382c33d896bac575bda4f04c90e848f077373eeeda1938c61ead205bf54",
+    "english_sha256": "b7b082af76fc40c31e987184c533d1d3f7d5e23ee9464c6a12e9b0ccaf461ca9",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "玩家自身 NPC 过场动画（Self Npc Cinematic）",
+    "source": "https://docs.typewritermc.com/adapters/CitizensAdapter/entries/cinematic/self_npc_cinematic",
+    "source_path": "/adapters/CitizensAdapter/entries/cinematic/self_npc_cinematic",
+    "file": "adapters/CitizensAdapter/entries/cinematic/self_npc_cinematic.md",
+    "source_sha256": "571e2fb845627a489359e5754c34149af49bb2c0b901baa6dc88a7c179c0b556",
+    "english_sha256": "685395b7703227da874e9b4825cf757a231677f1497236dbd6e13dc8da71b2eb",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "引用 NPC（Reference Npc）",
+    "source": "https://docs.typewritermc.com/adapters/CitizensAdapter/entries/entity/reference_npc",
+    "source_path": "/adapters/CitizensAdapter/entries/entity/reference_npc",
+    "file": "adapters/CitizensAdapter/entries/entity/reference_npc.md",
+    "source_sha256": "fb9e1cce4468b3ecb48bf8d923406ae0b8bfe8cde373a918b33599e44a7e2aba",
+    "english_sha256": "da29a24b42ce810a30091c326c9cc7bf05313099626e91d061367407abbc39cf",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "NPC 交互事件（Npc Interact Event）",
+    "source": "https://docs.typewritermc.com/adapters/CitizensAdapter/entries/event/on_npc_interact",
+    "source_path": "/adapters/CitizensAdapter/entries/event/on_npc_interact",
+    "file": "adapters/CitizensAdapter/entries/event/on_npc_interact.md",
+    "source_sha256": "cf92ad826cc38b23f66ec619b1acf23dfa7b40f7d856cad938dc1a65376fcafb",
+    "english_sha256": "8f0c69a63fc0f08be8c966668048056b99a406d09a05f2d1403e12d3885402fc",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "CombatLogX 适配器（Combat Log X Adapter）",
+    "source": "https://docs.typewritermc.com/adapters/CombatLogXAdapter",
+    "source_path": "/adapters/CombatLogXAdapter",
+    "file": "adapters/CombatLogXAdapter.md",
+    "source_sha256": "b00956eca1bce5536793f85683fd0ad08b454a4075ed90a002c13d68aff33e51",
+    "english_sha256": "36eb4c96d53585f866d103241231b5056c17b28f6b9781c8e5cd2875f316c2ff",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "玩家进入战斗事件（Player Enter Combat Event）",
+    "source": "https://docs.typewritermc.com/adapters/CombatLogXAdapter/entries/event/on_player_enter_combat",
+    "source_path": "/adapters/CombatLogXAdapter/entries/event/on_player_enter_combat",
+    "file": "adapters/CombatLogXAdapter/entries/event/on_player_enter_combat.md",
+    "source_sha256": "56f84bb0a4207f2b960d6c8e45c8ecf8afc1d1415ea48ffe7f243a9ab7ea4d64",
+    "english_sha256": "33f486297d9023430035d0c05661240a195e674653f750eb37da6030561480ce",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "玩家退出战斗事件（Player Exit Combat Event）",
+    "source": "https://docs.typewritermc.com/adapters/CombatLogXAdapter/entries/event/on_player_exit_combat",
+    "source_path": "/adapters/CombatLogXAdapter/entries/event/on_player_exit_combat",
+    "file": "adapters/CombatLogXAdapter/entries/event/on_player_exit_combat.md",
+    "source_sha256": "20dedb9c080af512f5d14a215969332954661122f4a9621762f33fedc3641011",
+    "english_sha256": "12f8a700d56bd639fb960f96ea597b61b531a04de7adc46146910f22eadb54ff",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "战斗事实（Combat Fact）",
+    "source": "https://docs.typewritermc.com/adapters/CombatLogXAdapter/entries/fact/combat_fact",
+    "source_path": "/adapters/CombatLogXAdapter/entries/fact/combat_fact",
+    "file": "adapters/CombatLogXAdapter/entries/fact/combat_fact.md",
+    "source_sha256": "2b5efe32d7555b7585be813a832456aa00cf0367fcfd3679e631e6ffce12cdfa",
+    "english_sha256": "10980ec70d3a9e71a9a357c3a11f0da08c5b5d04d36eed58227e0e0ad99e7b5c",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "实体适配器（Entity Adapter）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter",
+    "source_path": "/adapters/EntityAdapter",
+    "file": "adapters/EntityAdapter.md",
+    "source_sha256": "644878da2831fbd642b6d44f15a56e573a95ed6d84098ec12d8fb1b71d323f9d",
+    "english_sha256": "dabc2b74097e1addee462cd006d07d07f8bad667171861f8315291accfd61b1f",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "受众活动（Audience Activity）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/activity/audience_activity",
+    "source_path": "/adapters/EntityAdapter/entries/activity/audience_activity",
+    "file": "adapters/EntityAdapter/entries/activity/audience_activity.md",
+    "source_sha256": "1055eecb1470f5258cefd832a69d76fcc7b0071462f167f7b6bbbeba725be4ad",
+    "english_sha256": "2d68d11b683adcc2867aa2ff0f315d9f2a2c2a616f43f66a871979c4b6994f73",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "游戏时间活动（Game Time Activity）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/activity/game_time_activity",
+    "source_path": "/adapters/EntityAdapter/entries/activity/game_time_activity",
+    "file": "adapters/EntityAdapter/entries/activity/game_time_activity.md",
+    "source_sha256": "43ea39522926d4c66d2686111b137e4ea4452c728a736622d091b30edb74fc1d",
+    "english_sha256": "0933260411f4da421a6d4815a5032157939b2aa77ac7ad58a8272dfe6998a7b2",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "对话中活动（In Dialogue Activity）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/activity/in_dialogue_activity",
+    "source_path": "/adapters/EntityAdapter/entries/activity/in_dialogue_activity",
+    "file": "adapters/EntityAdapter/entries/activity/in_dialogue_activity.md",
+    "source_sha256": "235c127db0ad0f0665f7603f758921faac0328fa4204c14bc2081cbc6a4dd269",
+    "english_sha256": "c73938821ed9bb26b0418a6144a67059276668f75d04b93ea5ef1974f2e1e64f",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "近距离注视活动（Look Close Activity）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/activity/look_close_activity",
+    "source_path": "/adapters/EntityAdapter/entries/activity/look_close_activity",
+    "file": "adapters/EntityAdapter/entries/activity/look_close_activity.md",
+    "source_sha256": "deb1fb6eb3ccf86b2e2ee6f91049af05615966728e3c91a11a976b5478f2d5b9",
+    "english_sha256": "b924b48599183ef64c0e9987d807c8d1b851a09de4fd3a1f72eff2a79424b928",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "路径活动（Path Activity）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/activity/path_activity",
+    "source_path": "/adapters/EntityAdapter/entries/activity/path_activity",
+    "file": "adapters/EntityAdapter/entries/activity/path_activity.md",
+    "source_sha256": "102b90d1c4d7fb4370b6a6f2df9965f52e4b9acb0ded397900c3dedba0f63fae",
+    "english_sha256": "f6a900c0f2baac5a8fe793bb7a0fc90ad2133d9269cfd8a47c542fd564d82128",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "巡逻活动（Patrol Activity）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/activity/patrol_activity",
+    "source_path": "/adapters/EntityAdapter/entries/activity/patrol_activity",
+    "file": "adapters/EntityAdapter/entries/activity/patrol_activity.md",
+    "source_sha256": "4a3708feda791c7bb2f1a1fcf7f1277631d4824d2c17b7815a179aa79b5d56fb",
+    "english_sha256": "4ebbb5857c62d43ee38d6a48ee7551f3440a96a364354b456fe28905afa2b019",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "玩家在附近活动（Player Close By Activity）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/activity/player_close_by_activity",
+    "source_path": "/adapters/EntityAdapter/entries/activity/player_close_by_activity",
+    "file": "adapters/EntityAdapter/entries/activity/player_close_by_activity.md",
+    "source_sha256": "ec90b4d4e840c3610dc37dc959b6f4a32249b0b4d47fb350f84117e4e4e67e79",
+    "english_sha256": "aa77b257fb3b0e4782c9abd9d0c41270f04b83f63a772cfd19de0531023683d1",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "随机环顾活动（Random Look Activity）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/activity/random_look_activity",
+    "source_path": "/adapters/EntityAdapter/entries/activity/random_look_activity",
+    "file": "adapters/EntityAdapter/entries/activity/random_look_activity.md",
+    "source_sha256": "f27579245ecf376645b670bba9cf51d58ecc3a0854e5e6f59793f94b3b759f61",
+    "english_sha256": "f176be6af21970b3c8e7f999a471410f20102bd2be289b2a0631d71b7b2fb22e",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "目标位置活动（Target Location Activity）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/activity/target_location_activity",
+    "source_path": "/adapters/EntityAdapter/entries/activity/target_location_activity",
+    "file": "adapters/EntityAdapter/entries/activity/target_location_activity.md",
+    "source_sha256": "cadc2c94b8475d310bd27bbdefbc58a9e8e0d82e9ce9c12ee46ff453cb1af54f",
+    "english_sha256": "e215e284dbca4775e6f9e4e2f39dc8d0967f7b73519a3d1f5be8e99d28e45b22",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "定时活动（Timed Activity）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/activity/timed_activity",
+    "source_path": "/adapters/EntityAdapter/entries/activity/timed_activity",
+    "file": "adapters/EntityAdapter/entries/activity/timed_activity.md",
+    "source_sha256": "8e41b6e153a1dc968d6200b2f79cc22ceb8b0840c20b8c176df971b5276d3529",
+    "english_sha256": "c43153db54114532df622ada5709dc06807a434582f8a198209c54e56209f232",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "触发活动（Trigger Activity）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/activity/trigger_activity",
+    "source_path": "/adapters/EntityAdapter/entries/activity/trigger_activity",
+    "file": "adapters/EntityAdapter/entries/activity/trigger_activity.md",
+    "source_sha256": "fae5f030047d10c53719a9bdd4bea8f80d287a6b815ec958fa2cd8ce321eafc6",
+    "english_sha256": "a6d4da59996555661e3532e6fd4cfc8022f85b08acc010a5ae158f6cb6bc0b7f",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "直达实体实例路径流（Direct Entity Instance Path Stream）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/audience/direct_entity_instance_path_stream",
+    "source_path": "/adapters/EntityAdapter/entries/audience/direct_entity_instance_path_stream",
+    "file": "adapters/EntityAdapter/entries/audience/direct_entity_instance_path_stream.md",
+    "source_sha256": "217bc97e5d9d247ad6765ae5f98f62832d9b32ba38dc85f65bec3f253e81bba2",
+    "english_sha256": "d1560d5622afce8601df7acd467cd2386fede8fea70bf69c00d5ec59155ad599",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "实体过场动画（Entity Cinematic）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/cinematic/entity_cinematic",
+    "source_path": "/adapters/EntityAdapter/entries/cinematic/entity_cinematic",
+    "file": "adapters/EntityAdapter/entries/cinematic/entity_cinematic.md",
+    "source_sha256": "e1c4b5d0401b9ef305b468439d5fa4ab64cda5ff799c0e5f45010076eb496676",
+    "english_sha256": "fb23b1090b814f62785fa15cf7041d2f294ffd4fd5d0b9334c1442ff860a25f1",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "年龄数据（Ageable Data）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/ageable_data",
+    "source_path": "/adapters/EntityAdapter/entries/data/ageable_data",
+    "file": "adapters/EntityAdapter/entries/data/ageable_data.md",
+    "source_sha256": "7b0c74e0b9f8af499b79db7c50e9b4ee7e9f92a3711b69aec5e0b056a76268e5",
+    "english_sha256": "08e837a12dd42eb6e31ab0d10d4c68e18eb18958b33d0d3af397a47c64b79cb9",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "身上箭矢数量数据（Arrow Count Data）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/arrow_count_data",
+    "source_path": "/adapters/EntityAdapter/entries/data/arrow_count_data",
+    "file": "adapters/EntityAdapter/entries/data/arrow_count_data.md",
+    "source_sha256": "90dfb0bff8a40cc33f7fc5d2f0ce70625aa60e9489a2b00b666be5eb2eda3c0f",
+    "english_sha256": "45b7311d9ec6af8b62ff611d9ce1606bb45ca63e9001d92bd3ff3d9ad1a1d16c",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "猫变种数据（Cat Variant Data）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/cat_variant_data",
+    "source_path": "/adapters/EntityAdapter/entries/data/cat_variant_data",
+    "file": "adapters/EntityAdapter/entries/data/cat_variant_data.md",
+    "source_sha256": "21c0e44b72a0e224263f310d374c924f22e8689eab2af26ecc133ff3694c48a5",
+    "english_sha256": "560c455643cb726d3dd21a9e85a35ddbaf05f3909554b29f6c3a9fe8f404d6c4",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "驮箱马类箱子数据（Chested Horse Chest Data）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/chested_horse_chest_meta",
+    "source_path": "/adapters/EntityAdapter/entries/data/chested_horse_chest_meta",
+    "file": "adapters/EntityAdapter/entries/data/chested_horse_chest_meta.md",
+    "source_sha256": "411c6f5f2c083dfa0e0fb35cef199b55d16d62a114212bfc3b974a62ce6c0812",
+    "english_sha256": "128ffd4695b5d48259a3b2564465548594d11fac1cdb18158e7305cd1be75d96",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "项圈颜色数据（Collar Color Data）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/collar_color_data",
+    "source_path": "/adapters/EntityAdapter/entries/data/collar_color_data",
+    "file": "adapters/EntityAdapter/entries/data/collar_color_data.md",
+    "source_sha256": "d2c123fb32f87d409ae5a23566e1dc3e0bad4513754d45b73b04806e9ff8ebc5",
+    "english_sha256": "952d92c5bc5ce53a96fbf630f1924c43435f76f2717f9afbba94060ac3b38d00",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "自定义名称数据（Custom Name Data）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/custom_name_data",
+    "source_path": "/adapters/EntityAdapter/entries/data/custom_name_data",
+    "file": "adapters/EntityAdapter/entries/data/custom_name_data.md",
+    "source_sha256": "5b6dcad9783c5b3c9a409f1ecd79268f873c111242aa38e9477a3cfbbd0c30d9",
+    "english_sha256": "cf6e8af33aee20a0af02ed846e28e515d8619494c09715dc9c809fd782924436",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "跳舞数据（Dancing Data）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/dancing_data",
+    "source_path": "/adapters/EntityAdapter/entries/data/dancing_data",
+    "file": "adapters/EntityAdapter/entries/data/dancing_data.md",
+    "source_sha256": "75e89ece71f4957379ff8671fa97d50ff6bfba3e3c636c38bdd61c23069b8483",
+    "english_sha256": "0e4b4f004863e08ab06cf284ba0be892b82a6c3785bc1992f4ebc0709e8acac0",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "发光效果数据（Glowing Effect Data）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/glowing_effect_data",
+    "source_path": "/adapters/EntityAdapter/entries/data/glowing_effect_data",
+    "file": "adapters/EntityAdapter/entries/data/glowing_effect_data.md",
+    "source_sha256": "8ad545c677716f325c2e8ab535a874909ff6ee13310f6e6d3055dcf31e0832a3",
+    "english_sha256": "4c195f5114e387b360db33508dcf79d4543ed8a1762abba15d869c6ed6219059",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "马变种数据（Horse Variant Data）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/horse_variant_dat",
+    "source_path": "/adapters/EntityAdapter/entries/data/horse_variant_dat",
+    "file": "adapters/EntityAdapter/entries/data/horse_variant_dat.md",
+    "source_sha256": "d743b6623411e01b6518ef8556e73ffdc8a2145eef41bfef5e3944947a5271b2",
+    "english_sha256": "eff9c7f0e7fcd985fc948492ed03037fed5c776585f2275fe13ba7cb5be56087",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "羊驼地毯颜色数据（Llama Carpet Color Data）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/llama_carpet_color_data",
+    "source_path": "/adapters/EntityAdapter/entries/data/llama_carpet_color_data",
+    "file": "adapters/EntityAdapter/entries/data/llama_carpet_color_data.md",
+    "source_sha256": "be993b1dd11d95a8ddc76cb56a72f28ef8fb6daa4b8c01a488f7df8c81f8c74b",
+    "english_sha256": "d1e7e0b8c7e011b2421a07fc816e187c3a7eff2324bdfedcd6afacbc60478d70",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "羊驼变种数据（Llama Variant Data）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/llama_variant_data",
+    "source_path": "/adapters/EntityAdapter/entries/data/llama_variant_data",
+    "file": "adapters/EntityAdapter/entries/data/llama_variant_data.md",
+    "source_sha256": "b10d8bf01cffdeb022934332a797dac028743a535fc6ac5bc44665876174c21e",
+    "english_sha256": "5580659cd4b40e68abd3e3264c9565759cbad23e64d716f678161084b8f8832d",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "标记数据（Marker Data）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/marker_data",
+    "source_path": "/adapters/EntityAdapter/entries/data/marker_data",
+    "file": "adapters/EntityAdapter/entries/data/marker_data.md",
+    "source_sha256": "a11c511998c4cdbe74401ff58328229a3509ea7448478e24c965e716866c34d4",
+    "english_sha256": "84f816531c44b5814baa8d67623278d76c627d84891d680405bfb95d8cd4c7cb",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "着火数据（On Fire Data）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/on_fire_data",
+    "source_path": "/adapters/EntityAdapter/entries/data/on_fire_data",
+    "file": "adapters/EntityAdapter/entries/data/on_fire_data.md",
+    "source_sha256": "fa96fd71d957726c981572baf3ad77e735b0961b3b2ce8cfe09cb30172ea31b6",
+    "english_sha256": "b82bdaa1023feacd403a5bc75122ed3bcd7dd2de461966b8b3157de5e8e85517",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "鹦鹉颜色数据（Parrot Color Data）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/parrot_color_data",
+    "source_path": "/adapters/EntityAdapter/entries/data/parrot_color_data",
+    "file": "adapters/EntityAdapter/entries/data/parrot_color_data.md",
+    "source_sha256": "a1a5385f819fbb6ef34dc1b50fa6b84a485841ccacbbc76988e001230e46ecfd",
+    "english_sha256": "5d13e3c5cf194d1b932bcd8d095780c826ce765c21a3575c78d5c992de06f3c2",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "姿势数据（Pose Data）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/pose_data",
+    "source_path": "/adapters/EntityAdapter/entries/data/pose_data",
+    "file": "adapters/EntityAdapter/entries/data/pose_data.md",
+    "source_sha256": "a96935a37253e1a9e7fb18c3bebdaee5b857ac29674744eb75802e634411ad02",
+    "english_sha256": "42e3afd15587374e07509ee5dffc436d3795279516985274e69185346fcbadb6",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "药水效果颜色数据（Potion Effect Color Data）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/potion_effect_color_data",
+    "source_path": "/adapters/EntityAdapter/entries/data/potion_effect_color_data",
+    "file": "adapters/EntityAdapter/entries/data/potion_effect_color_data.md",
+    "source_sha256": "ab50aa693f219fbce20673d66215a2bb8ad4ff5df6312ff9a33b7bf4bebe061d",
+    "english_sha256": "2a905b59688ebfe10b210126e5223fdd3a077ed2309eedc2a83689de7b947e60",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "河豚膨胀状态数据（Puff State Data）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/puff_state_data",
+    "source_path": "/adapters/EntityAdapter/entries/data/puff_state_data",
+    "file": "adapters/EntityAdapter/entries/data/puff_state_data.md",
+    "source_sha256": "bd3ea5f94375b8c0b5327de715a8b836c054480ded5383275e92c97155191ce8",
+    "english_sha256": "bfe7966e53c08ae2678a2bb3dc9565173a830045cdc013d429e00319b51b2498",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "兔子类型数据（Rabbit Type Data）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/rabbit_type_data",
+    "source_path": "/adapters/EntityAdapter/entries/data/rabbit_type_data",
+    "file": "adapters/EntityAdapter/entries/data/rabbit_type_data.md",
+    "source_sha256": "d8ff47a6b3c63417610a6a9720e4eca86a5d5338d2472114bbb73ab9b1798cad",
+    "english_sha256": "badf96bb6ead41965a9ab3db420eb04f49b1dd4d40060eb71225cf1519f2d27d",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "鞍具数据（Saddled Data）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/saddled_data",
+    "source_path": "/adapters/EntityAdapter/entries/data/saddled_data",
+    "file": "adapters/EntityAdapter/entries/data/saddled_data.md",
+    "source_sha256": "f7b1a044a218cebeb05624b43e1decd1d2bcce2d4a1a2dfa2b2621671159c86b",
+    "english_sha256": "463f23f8649381f24d51476b8bba66a6923726466b39c3152f55c26e5940c10c",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "大小数据（Size Data）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/size_data",
+    "source_path": "/adapters/EntityAdapter/entries/data/size_data",
+    "file": "adapters/EntityAdapter/entries/data/size_data.md",
+    "source_sha256": "457635d961156919580c683ae8023b9084037acabbf3aa74b2e5c2c954e5e9ec",
+    "english_sha256": "335bcb232adbabb5bcc9bc9d6428a78527dae055d1e89f6c78fa6e1cb811cd77",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "皮肤数据（Skin Data）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/skin_data",
+    "source_path": "/adapters/EntityAdapter/entries/data/skin_data",
+    "file": "adapters/EntityAdapter/entries/data/skin_data.md",
+    "source_sha256": "09be6387ef092bf629e48b0c6097ac0c575a6b8d249be62f8122950002dd8ad5",
+    "english_sha256": "c9bc63bec34517a4e7d7fa9e7d7ed17e3d5136b1c3f77e495dd5f151ef320bff",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "小型数据（Small Data）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/small_data",
+    "source_path": "/adapters/EntityAdapter/entries/data/small_data",
+    "file": "adapters/EntityAdapter/entries/data/small_data.md",
+    "source_sha256": "ace5aa8a7f51176091c2e8db89e2cabdd50cc1251796d0ab00527735bb0de140",
+    "english_sha256": "194be5e06bddf3aa6eca998266b817da1e2aca74d3801ac9d0feb7dde34ee308",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "村民数据（Villager Data）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/villager_data",
+    "source_path": "/adapters/EntityAdapter/entries/data/villager_data",
+    "file": "adapters/EntityAdapter/entries/data/villager_data.md",
+    "source_sha256": "a5406d56b78d34c0e23e0bd119cf191ba9308033e57d5c308fe6109c7c5d849c",
+    "english_sha256": "dc43c3820e67cd1c54b62a899749718af4ee341869164a765ca43341accc31ce",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "悦灵实例（Allay Instance）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/allay_instance",
+    "source_path": "/adapters/EntityAdapter/entries/entity/allay_instance",
+    "file": "adapters/EntityAdapter/entries/entity/allay_instance.md",
+    "source_sha256": "36891037b79bff7167cdf4f162b2c8d14a9bce490952f4fd5c372051f478a153",
+    "english_sha256": "5117c319665a10aff28cf203a6cdddff6a97300b9cbed056476e2da3881abdfc",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "猫实例（Cat Instance）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/cat_instance",
+    "source_path": "/adapters/EntityAdapter/entries/entity/cat_instance",
+    "file": "adapters/EntityAdapter/entries/entity/cat_instance.md",
+    "source_sha256": "fba8ad2781edc399f59d2eebbffb5125612559e9277360d9935a5fa4309fbf88",
+    "english_sha256": "a215949f626f3fbf2fef45e39199ac342d8a08a0bc08ac6f6084224c654b7e89",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "鸡实例（Chicken Instance）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/chicken_instance",
+    "source_path": "/adapters/EntityAdapter/entries/entity/chicken_instance",
+    "file": "adapters/EntityAdapter/entries/entity/chicken_instance.md",
+    "source_sha256": "1a9010054bec505290aab2b186aafbe26e7a1867988039d7bf38506f84d70866",
+    "english_sha256": "6f95d27a3543fc278707a8360c8533933811dab05fb4d172d9b2a852e6c1b3ed",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "牛实例（Cow Instance）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/cow_instance",
+    "source_path": "/adapters/EntityAdapter/entries/entity/cow_instance",
+    "file": "adapters/EntityAdapter/entries/entity/cow_instance.md",
+    "source_sha256": "c3d5a1ecdb67c5d38b3f0bc70445185c543806203eb8267ceae6d758ddd2c114",
+    "english_sha256": "a7a0e47cf2e8429c93c65eeea72b396fcfa7d51e26a5e10ab48d84ae601f5890",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "末影人实例（Enderman Instance）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/enderman_instance",
+    "source_path": "/adapters/EntityAdapter/entries/entity/enderman_instance",
+    "file": "adapters/EntityAdapter/entries/entity/enderman_instance.md",
+    "source_sha256": "78be10f7789995ae09589d475a4bda166750de9110f69291a06584b937a2db95",
+    "english_sha256": "c89df51438172fc257195df8e7322e1d00e5aeb43eedd4447263ea6a2cdf1773",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "青蛙实例（Frog Instance）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/frog_instance",
+    "source_path": "/adapters/EntityAdapter/entries/entity/frog_instance",
+    "file": "adapters/EntityAdapter/entries/entity/frog_instance.md",
+    "source_sha256": "97228ab94fe8ffb3dbdd8aace764947a7ed3a9c4d91f6214809d4fd13cfb4b10",
+    "english_sha256": "29a3de095519303c1f3b34eded4fb45f34df419391e1e0963c10cbacf190c883",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "碰撞箱定义（Hit Box Definition）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/hit_box_definition",
+    "source_path": "/adapters/EntityAdapter/entries/entity/hit_box_definition",
+    "file": "adapters/EntityAdapter/entries/entity/hit_box_definition.md",
+    "source_sha256": "77df921d089a669f636e04b454ef4ddf571a163ef81a8055bbdbf6b0ba0f0b71",
+    "english_sha256": "b51a9f2cd09bbad8a8f7fb63bbc67b3f8dd369bc09a84f206b7b124f05df2a1c",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "疣猪兽实例（Hoglin Instance）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/hoglin_instance",
+    "source_path": "/adapters/EntityAdapter/entries/entity/hoglin_instance",
+    "file": "adapters/EntityAdapter/entries/entity/hoglin_instance.md",
+    "source_sha256": "770bf05cc7c137f6bdcb15c6ee0431c74cfb17341091244c2c9451fbfb64e6f0",
+    "english_sha256": "64d3aa50f9134549d89a09b7dd867f25534212f8bd4aca452ec60104f9d3b666",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "尸壳实例（Husk Instance）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/husk_instance",
+    "source_path": "/adapters/EntityAdapter/entries/entity/husk_instance",
+    "file": "adapters/EntityAdapter/entries/entity/husk_instance.md",
+    "source_sha256": "f6db18d899efc414b4c732c5b24d0506e242aa737990c518f4d0520be7e0bc71",
+    "english_sha256": "90b5bcc5e5d284a85aa8e9b3a3edb6bf54f11b618034227c1094e09b902984b6",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "交互指示器定义（Interaction Indicator Definition）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/interaction_indicator_definition",
+    "source_path": "/adapters/EntityAdapter/entries/entity/interaction_indicator_definition",
+    "file": "adapters/EntityAdapter/entries/entity/interaction_indicator_definition.md",
+    "source_sha256": "fa55635d4df3c75c7ed5df70739356ef608dd428a0647a84aaf3398360a94f07",
+    "english_sha256": "2c38b86e47a2f2f14ffb8e30ae60b35abfedf0bf42ed5299d6d68495b2d39671",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "铁傀儡实例（Iron Golem Instance）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/iron_golem_instance",
+    "source_path": "/adapters/EntityAdapter/entries/entity/iron_golem_instance",
+    "file": "adapters/EntityAdapter/entries/entity/iron_golem_instance.md",
+    "source_sha256": "510d847769630287b202a14dedef2e15b146dcd32574ce1c55f9893165e10614",
+    "english_sha256": "bba98616636a258d01ff1cb5d02c9f713db9d3f828f1dcc094c800b0cd5a44dc",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "物品展示实体实例（Item Display Instance）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/item_display_instance",
+    "source_path": "/adapters/EntityAdapter/entries/entity/item_display_instance",
+    "file": "adapters/EntityAdapter/entries/entity/item_display_instance.md",
+    "source_sha256": "35e5567052c7cec1343efd8cbd42e2cda76e2c85602dd68d6a6dd52d9807131e",
+    "english_sha256": "1e95268ed0e7cec4e64ed5c62fd5866417bcea629e9d9c14eb0f494fe96705b0",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "岩浆怪实例（Magma Cube Instance）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/magma_cube_instance",
+    "source_path": "/adapters/EntityAdapter/entries/entity/magma_cube_instance",
+    "file": "adapters/EntityAdapter/entries/entity/magma_cube_instance.md",
+    "source_sha256": "83c4a31e1979bdd057d076df9eff757a4121996953d3a107f9a39a10f9e6a892",
+    "english_sha256": "7704f7f722d23267a029218c5974ed0a28bd2e33bbb28beb51b1313007f0c3cb",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "具名实体定义（Named Entity Definition）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/named_entity_definition",
+    "source_path": "/adapters/EntityAdapter/entries/entity/named_entity_definition",
+    "file": "adapters/EntityAdapter/entries/entity/named_entity_definition.md",
+    "source_sha256": "f73159b6c181d6fbcc5d43c049b78e1c37e67999f1de33a4d79ef6358cc4e665",
+    "english_sha256": "257e7cef55e273e8f283cc21aa8cba5f70843808688df43bb20dc9548d15bfb0",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "NPC 实例（Npc Instance）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/npc_instance",
+    "source_path": "/adapters/EntityAdapter/entries/entity/npc_instance",
+    "file": "adapters/EntityAdapter/entries/entity/npc_instance.md",
+    "source_sha256": "593b15a2a9426d2f781659068d0578c8be0b66845bfe5e327ff9f68d7b436cc9",
+    "english_sha256": "19e378a82feb3e8c847885d20582cd7c52791521470e69704d00c50e57fc6424",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "猪灵蛮兵实例（Piglin Brute Instance）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/piglin_brute_instance",
+    "source_path": "/adapters/EntityAdapter/entries/entity/piglin_brute_instance",
+    "file": "adapters/EntityAdapter/entries/entity/piglin_brute_instance.md",
+    "source_sha256": "126cd4d03d0c2edeae18dba6e856071f9d2a4befa1f79f6b73f28460228bf244",
+    "english_sha256": "cbf4bd3e88fa4e803db529a9fb15092ad44f74035276cd7daf08dd55c59ae271",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "猪灵实例（Piglin Instance）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/piglin_instance",
+    "source_path": "/adapters/EntityAdapter/entries/entity/piglin_instance",
+    "file": "adapters/EntityAdapter/entries/entity/piglin_instance.md",
+    "source_sha256": "251d7eacdc26c4a191010c4988bed4bac9ef448c7ecc330aa6dffc14e107b2d4",
+    "english_sha256": "1948e4839d2664f2d56d2ab94bd8987009ec22369c4d2601c4d7c1affe53df54",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "玩家实例（Player Instance）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/player_instance",
+    "source_path": "/adapters/EntityAdapter/entries/entity/player_instance",
+    "file": "adapters/EntityAdapter/entries/entity/player_instance.md",
+    "source_sha256": "246cff1afd851dc33287f330f4b02700987eb10bf3f3cc25119d5d0596c19127",
+    "english_sha256": "ae9c79eacbc85fabb149c8f9305cd73f6d0818aff64eb04f028eb1e7527a06d7",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "玩家自身 NPC 定义（Self Npc Definition）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/self_npc_definition",
+    "source_path": "/adapters/EntityAdapter/entries/entity/self_npc_definition",
+    "file": "adapters/EntityAdapter/entries/entity/self_npc_definition.md",
+    "source_sha256": "f903ad81deaeed9d44cc3b153c494047ef2aa38807f7e654fc6a540a5744752b",
+    "english_sha256": "38c7a8c9394e3140eaa267f6bee4c2b5ab8d315a80053738a45042f257e996e7",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "骷髅实例（Skeleton Instance）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/skeleton_instance",
+    "source_path": "/adapters/EntityAdapter/entries/entity/skeleton_instance",
+    "file": "adapters/EntityAdapter/entries/entity/skeleton_instance.md",
+    "source_sha256": "47066cb31baf481ea84a8a93cc9f3a72903dea81b3a6e511aa6855c1c9a53229",
+    "english_sha256": "ba93f1f1bc89d66b09276ac88a595d22e7934e7312e21d32e8438e4e93048740",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "史莱姆实例（Slime Instance）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/slime_instance",
+    "source_path": "/adapters/EntityAdapter/entries/entity/slime_instance",
+    "file": "adapters/EntityAdapter/entries/entity/slime_instance.md",
+    "source_sha256": "ae649d4b2ba85257821218bb3235b6bb5a494c4851a3f4c3edb5561ca1a1147d",
+    "english_sha256": "809bc07d9fc012ec0e76eee6cb44de1d303ddf7fa289cd8cba69753551a6c615",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "堆叠实体定义（Stacked Entity Definition）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/stacked_entity_definition",
+    "source_path": "/adapters/EntityAdapter/entries/entity/stacked_entity_definition",
+    "file": "adapters/EntityAdapter/entries/entity/stacked_entity_definition.md",
+    "source_sha256": "57ad1e290b29602601bc1c52f5352040834e2b3e116599cbefa4e2698e2fecd5",
+    "english_sha256": "e80fa4dc0015f29f133500d19479c574fcc9123e9deed0bbd1b6e84eb5aee532",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "文本展示实体实例（Text Display Instance）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/text_display_instance",
+    "source_path": "/adapters/EntityAdapter/entries/entity/text_display_instance",
+    "file": "adapters/EntityAdapter/entries/entity/text_display_instance.md",
+    "source_sha256": "5f5c9c30458e73a084a6a6c59d0a56982ba3984881c8243195c7f7a97d241f2d",
+    "english_sha256": "637d55ce2b77d3ef394421fb289b64bda3deb939e057ce9d2a3cebba4ed87a79",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "村民实例（Villager Instance）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/villager_instance",
+    "source_path": "/adapters/EntityAdapter/entries/entity/villager_instance",
+    "file": "adapters/EntityAdapter/entries/entity/villager_instance.md",
+    "source_sha256": "3cb33dcd66baeacc7e320c13da1527eea5d82d262104fe5195ab6c773098a26e",
+    "english_sha256": "9797a31953f918b984814d1d62a12cf1b9a9cbbb5fc0d65306a647282ca8107a",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "监守者实例（Warden Instance）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/warden_instance",
+    "source_path": "/adapters/EntityAdapter/entries/entity/warden_instance",
+    "file": "adapters/EntityAdapter/entries/entity/warden_instance.md",
+    "source_sha256": "ec119a4dd10f22c79325866b254048147613e8d83fb273b02cae9b42c25521fc",
+    "english_sha256": "a29062917945b68d9fd7a3325247278271c11b954ee3ec8321e3dd5b534661a2",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "女巫实例（Witch Instance）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/witch_instance",
+    "source_path": "/adapters/EntityAdapter/entries/entity/witch_instance",
+    "file": "adapters/EntityAdapter/entries/entity/witch_instance.md",
+    "source_sha256": "c1979691f7d003c167dea733ce47e0abcdb6b335810808b87eee79b0b3677f5b",
+    "english_sha256": "08d69256ff1e3a1d45d49c4fc06637ab0afa13c31a306534f1c95c401ebfee30",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "僵尸实例（Zombie Instance）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/zombie_instance",
+    "source_path": "/adapters/EntityAdapter/entries/entity/zombie_instance",
+    "file": "adapters/EntityAdapter/entries/entity/zombie_instance.md",
+    "source_sha256": "d82c4d1f1ed1809cfcc990d38545128718188bcf0850bd4d7dd19f2b57f46744",
+    "english_sha256": "49010f1c4de320a282f02da67e41cebd81685280b53d291abd284d55c4e4ad4a",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "实体交互事件（Entity Interact Event）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/event/entity_interact_event",
+    "source_path": "/adapters/EntityAdapter/entries/event/entity_interact_event",
+    "file": "adapters/EntityAdapter/entries/event/entity_interact_event.md",
+    "source_sha256": "871c7a368c01b95e43814c8ca56cd198760eaed3da92f5b296ad80f508aeaf47",
+    "english_sha256": "dd0ecb6e62d9ae0b87d7ecc858c3e5a9fcc8ff15d5a3ee2d8c60f40d3c630a89",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "分组高级实体实例（Group Advanced Entity Instance）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/instance/group_advanced_entity_instance",
+    "source_path": "/adapters/EntityAdapter/entries/instance/group_advanced_entity_instance",
+    "file": "adapters/EntityAdapter/entries/instance/group_advanced_entity_instance.md",
+    "source_sha256": "b00c102fd5c64bbbb23da6edfa8faf86a94abc3c743edb04988e75526aafdc0c",
+    "english_sha256": "2b708d8d53d5b4e53b893c660ecb31c327cf21fec420eb441c09e5fa6aecc5aa",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "个人高级实体实例（Individual Advanced Entity Instance）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/instance/individual_advanced_entity_instance",
+    "source_path": "/adapters/EntityAdapter/entries/instance/individual_advanced_entity_instance",
+    "file": "adapters/EntityAdapter/entries/instance/individual_advanced_entity_instance.md",
+    "source_sha256": "d2113288398e48236ffd10f08099dac962a5d0d104e10851dd8daa152b570896",
+    "english_sha256": "86aa1e6d2ca839be59d6de495f807cb0c7d6e37ed0a6867f8a9f866c21be42d3",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "共享高级实体实例（Shared Advanced Entity Instance）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/instance/shared_advanced_entity_instance",
+    "source_path": "/adapters/EntityAdapter/entries/instance/shared_advanced_entity_instance",
+    "file": "adapters/EntityAdapter/entries/instance/shared_advanced_entity_instance.md",
+    "source_sha256": "980f5a85b73b62fb29936cd8f3269ba4337e0d9494111762878b0fc7df699121",
+    "english_sha256": "4de11fbf643899241279177ea6b1a826f462d401df39157793676eda28c36e31",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "实体交互目标（Interact Entity Objective）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/quest/interact_entity_objective",
+    "source_path": "/adapters/EntityAdapter/entries/quest/interact_entity_objective",
+    "file": "adapters/EntityAdapter/entries/quest/interact_entity_objective.md",
+    "source_sha256": "4d9ad05c7abd71f7732e9c6287e761414e3464038b0521f39a7727e21270ea59",
+    "english_sha256": "f9491661392e869014fc9f69a686b7ed9792865f2b56a0fe044d810ca91a65dc",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "实体交互目标路径流（Interact Entity Objectives Path Stream）",
+    "source": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/quest/interact_entity_objectives_path_stream",
+    "source_path": "/adapters/EntityAdapter/entries/quest/interact_entity_objectives_path_stream",
+    "file": "adapters/EntityAdapter/entries/quest/interact_entity_objectives_path_stream.md",
+    "source_sha256": "bdc475644a5a1f5b1434e7e277e7ed41e08ed6d3dffacf353b1eb7ee7ffcb4c5",
+    "english_sha256": "cddf5cc332ec16845b3f2630e8179d912d398755bc4bb95d8bfda91b3895a7f5",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "FancyNpcs 适配器（Fancy Npcs Adapter）",
+    "source": "https://docs.typewritermc.com/adapters/FancyNpcsAdapter",
+    "source_path": "/adapters/FancyNpcsAdapter",
+    "file": "adapters/FancyNpcsAdapter.md",
+    "source_sha256": "93c0e28c085da7d8a051fd6b69944c2ae9b012ef5b48e323c2ba644ed7b059a8",
+    "english_sha256": "0aa41dd8a93342a2e7d8d4a0643a905c071948f00baf9a313b23823ea1cb980a",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "引用 NPC 过场动画（Reference Npc Cinematic）",
+    "source": "https://docs.typewritermc.com/adapters/FancyNpcsAdapter/entries/cinematic/fancy_reference_npc_cinematic",
+    "source_path": "/adapters/FancyNpcsAdapter/entries/cinematic/fancy_reference_npc_cinematic",
+    "file": "adapters/FancyNpcsAdapter/entries/cinematic/fancy_reference_npc_cinematic.md",
+    "source_sha256": "e968ab5f6a8920c411b644904f0d5aab714ed41a3bc911b5c7a1c325ea6a5e87",
+    "english_sha256": "b7b082af76fc40c31e987184c533d1d3f7d5e23ee9464c6a12e9b0ccaf461ca9",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "玩家自身 NPC 过场动画（Self Npc Cinematic）",
+    "source": "https://docs.typewritermc.com/adapters/FancyNpcsAdapter/entries/cinematic/fancy_self_npc_cinematic",
+    "source_path": "/adapters/FancyNpcsAdapter/entries/cinematic/fancy_self_npc_cinematic",
+    "file": "adapters/FancyNpcsAdapter/entries/cinematic/fancy_self_npc_cinematic.md",
+    "source_sha256": "1a18d4967978885dea4c5f33669ed58257bd4166b4f051fc6b6bcb2ea74dc9db",
+    "english_sha256": "685395b7703227da874e9b4825cf757a231677f1497236dbd6e13dc8da71b2eb",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "引用 NPC（Reference Npc）",
+    "source": "https://docs.typewritermc.com/adapters/FancyNpcsAdapter/entries/entity/fancy_reference_npc",
+    "source_path": "/adapters/FancyNpcsAdapter/entries/entity/fancy_reference_npc",
+    "file": "adapters/FancyNpcsAdapter/entries/entity/fancy_reference_npc.md",
+    "source_sha256": "0aa321baaa072f6fc1fb4a0dc376d81cc49787cb17b01a9a8f1346138b8c72e0",
+    "english_sha256": "584395643f11d7804680f0190097fed765f92d6596f729ae48fedbbad41b4f46",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "NPC 交互事件（Npc Interact Event）",
+    "source": "https://docs.typewritermc.com/adapters/FancyNpcsAdapter/entries/event/fancy_on_npc_interact",
+    "source_path": "/adapters/FancyNpcsAdapter/entries/event/fancy_on_npc_interact",
+    "file": "adapters/FancyNpcsAdapter/entries/event/fancy_on_npc_interact.md",
+    "source_sha256": "1bd99481c14e6a31bd1780bee6feb983d5923e045d43cf739ca7cf10dda600b6",
+    "english_sha256": "3161a678cad46d1ef59d747c5cf98da21a25ae9a4f6cb44f608798549022301d",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "MythicMobs 适配器（Mythic Mobs Adapter）",
+    "source": "https://docs.typewritermc.com/adapters/MythicMobsAdapter",
+    "source_path": "/adapters/MythicMobsAdapter",
+    "file": "adapters/MythicMobsAdapter.md",
+    "source_sha256": "23223196a83cd6ef6903acf71703160da8f24512728a772b22fb598846efbbcc",
+    "english_sha256": "7226da2a07ec4729bef4332fca962019d5d08ce7753ee9aba3cb33db60974084",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "移除生物（Despawn Mob Action）",
+    "source": "https://docs.typewritermc.com/adapters/MythicMobsAdapter/entries/action/despawn_mythicmobs_mob",
+    "source_path": "/adapters/MythicMobsAdapter/entries/action/despawn_mythicmobs_mob",
+    "file": "adapters/MythicMobsAdapter/entries/action/despawn_mythicmobs_mob.md",
+    "source_sha256": "93bedcdbaff8a91ab3c849c147b53b65d502161b2d314895f70ba50882241883",
+    "english_sha256": "e9a9b67c81d02aeed690db5669f3300297987f9dd5418aa28b41f1c3574b8be8",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "执行技能（Execute Skill Action）",
+    "source": "https://docs.typewritermc.com/adapters/MythicMobsAdapter/entries/action/execute_mythicmob_skill",
+    "source_path": "/adapters/MythicMobsAdapter/entries/action/execute_mythicmob_skill",
+    "file": "adapters/MythicMobsAdapter/entries/action/execute_mythicmob_skill.md",
+    "source_sha256": "9d42abb085ef3dc8d1668cc5067604fa9413850f912c2017626ad4115d1ae25b",
+    "english_sha256": "922e66e72c2e4dc8aa0c05d33aaeedc39c91ba1734f7cd510aa5ff04170e1507",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "生成生物（Spawn Mob Action）",
+    "source": "https://docs.typewritermc.com/adapters/MythicMobsAdapter/entries/action/spawn_mythicmobs_mob",
+    "source_path": "/adapters/MythicMobsAdapter/entries/action/spawn_mythicmobs_mob",
+    "file": "adapters/MythicMobsAdapter/entries/action/spawn_mythicmobs_mob.md",
+    "source_sha256": "d06a0f5d0c9be7be700d3adde640e500286d7a8ff82530cd265a1480056341bc",
+    "english_sha256": "9adfc0d23b140d5634d53797814962c949c866a6db16672e9e323c296202a9a1",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "Mythic 生物过场动画（Mythic Mob Cinematic）",
+    "source": "https://docs.typewritermc.com/adapters/MythicMobsAdapter/entries/cinematic/mythicmob_cinematic",
+    "source_path": "/adapters/MythicMobsAdapter/entries/cinematic/mythicmob_cinematic",
+    "file": "adapters/MythicMobsAdapter/entries/cinematic/mythicmob_cinematic.md",
+    "source_sha256": "ae6ebf263e6e23d0cb666d99525fbfd7f5a2428f5fd3e7029e4aa2496719aca7",
+    "english_sha256": "aa7c9ec2bac8ea68c75b414f2d9c8b7300782001efac4e597e097066d16bd698",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "Mythic 技能过场动画（Mythic Skill Cinematic）",
+    "source": "https://docs.typewritermc.com/adapters/MythicMobsAdapter/entries/cinematic/mythicskill_cinematic",
+    "source_path": "/adapters/MythicMobsAdapter/entries/cinematic/mythicskill_cinematic",
+    "file": "adapters/MythicMobsAdapter/entries/cinematic/mythicskill_cinematic.md",
+    "source_sha256": "9d1171bf4ebb0ba1a9a9c2a97ce37f25680d99ef2b044a66ba8b0c80fdb7496e",
+    "english_sha256": "59420e40e20bde83b16313f412052da95ab5821f27cf2128049c2ca9865b88fb",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "Mythic 生物交互事件（Mythic Mob Interact Event）",
+    "source": "https://docs.typewritermc.com/adapters/MythicMobsAdapter/entries/event/mythicmobs_interact_event",
+    "source_path": "/adapters/MythicMobsAdapter/entries/event/mythicmobs_interact_event",
+    "file": "adapters/MythicMobsAdapter/entries/event/mythicmobs_interact_event.md",
+    "source_sha256": "5a19a3a7378afb8423f372987dd4f4e06538d0473d376637c43143ce34d4d510",
+    "english_sha256": "d2f6398a083e9c2c60cedfde97392492f756a3f39e9602c20d83c04467c976a7",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "Mythic 生物死亡事件（Mythic Mob Death Event）",
+    "source": "https://docs.typewritermc.com/adapters/MythicMobsAdapter/entries/event/on_mythic_mob_die",
+    "source_path": "/adapters/MythicMobsAdapter/entries/event/on_mythic_mob_die",
+    "file": "adapters/MythicMobsAdapter/entries/event/on_mythic_mob_die.md",
+    "source_sha256": "34ee395d8048db0ffd8ed4a28dd6ef843ef30cd2aaf09e37fc025fd8d8c5f0a6",
+    "english_sha256": "840a268a5d4f270418e926f54c418611fd4e0c48dc5d9179411f7f4e832243c2",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "生物数量事实（Mob Count Fact）",
+    "source": "https://docs.typewritermc.com/adapters/MythicMobsAdapter/entries/fact/mythic_mob_count_fact",
+    "source_path": "/adapters/MythicMobsAdapter/entries/fact/mythic_mob_count_fact",
+    "file": "adapters/MythicMobsAdapter/entries/fact/mythic_mob_count_fact.md",
+    "source_sha256": "55b89b78c3fc49c7d5da04f9fdff4efde9ded70aeed2a4512040beca318596fd",
+    "english_sha256": "6936d7d0b9ce9c909978d85a9c929cdd1a57319720b24c15a2071c4b9ebd3b03",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "RPGRegions 适配器（Rpg Regions Adapter）",
+    "source": "https://docs.typewritermc.com/adapters/RPGRegionsAdapter",
+    "source_path": "/adapters/RPGRegionsAdapter",
+    "file": "adapters/RPGRegionsAdapter.md",
+    "source_sha256": "79712c96f5c9a582345677a741d2eb9ddb819a99c44fafb420364aa92f47935c",
+    "english_sha256": "5e39b23196aa18659c506407523ec79b011a95d2d3450aa3a00150181cbaae8b",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "发现区域（Discover Region Action）",
+    "source": "https://docs.typewritermc.com/adapters/RPGRegionsAdapter/entries/action/discover_rpg_region",
+    "source_path": "/adapters/RPGRegionsAdapter/entries/action/discover_rpg_region",
+    "file": "adapters/RPGRegionsAdapter/entries/action/discover_rpg_region.md",
+    "source_sha256": "a72b59f7b81ea5ef2b70025ceadc925a6f35f1aba6cf1c09978f6ac6a01f7b0d",
+    "english_sha256": "69c3d49c53e0a31af3832333948a406d206fdb2eff2e46c4bbe140c9f6dd8e65",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "发现区域事件（Discover Region Event）",
+    "source": "https://docs.typewritermc.com/adapters/RPGRegionsAdapter/entries/event/on_discover_rpg_region",
+    "source_path": "/adapters/RPGRegionsAdapter/entries/event/on_discover_rpg_region",
+    "file": "adapters/RPGRegionsAdapter/entries/event/on_discover_rpg_region.md",
+    "source_sha256": "8340ea079376ef265ee041cc07fdc55569b43dc445f63c2c3e685dc73fe1ebbc",
+    "english_sha256": "bae9b9b26b9a4c126aefb7813393b08f17ef3e8b0395a0a6c60b1fdd3bd6a9ee",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "进入区域事件（Enter Region Event）",
+    "source": "https://docs.typewritermc.com/adapters/RPGRegionsAdapter/entries/event/on_enter_rpg_region",
+    "source_path": "/adapters/RPGRegionsAdapter/entries/event/on_enter_rpg_region",
+    "file": "adapters/RPGRegionsAdapter/entries/event/on_enter_rpg_region.md",
+    "source_sha256": "6f855e96c85d748bb3e1f890281f53c50a017f3c02cbe77dc3cb3de62a07e457",
+    "english_sha256": "43e202ef49cb69fab4e7f8392acda75ab0921095425a7bb0cb589693e3ab8aa3",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "处于区域内事实（In Region Fact）",
+    "source": "https://docs.typewritermc.com/adapters/RPGRegionsAdapter/entries/fact/in_rpg_region_fact",
+    "source_path": "/adapters/RPGRegionsAdapter/entries/fact/in_rpg_region_fact",
+    "file": "adapters/RPGRegionsAdapter/entries/fact/in_rpg_region_fact.md",
+    "source_sha256": "e80dab2284e2edfef0c670a74de5ca0ebdf5f2553bb7deedbed4d682357297c1",
+    "english_sha256": "f8958567bd5e9a7b875ce21541f245f21e9ec9a2cf822d7adb87600f5326e9e8",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "SuperiorSkyblock 适配器（Superior Skyblock Adapter）",
+    "source": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter",
+    "source_path": "/adapters/SuperiorSkyblockAdapter",
+    "file": "adapters/SuperiorSkyblockAdapter.md",
+    "source_sha256": "e06233cf0812a66abed92ecc8ab80e1910ba0e68266d10bf17080ea6d6a69d13",
+    "english_sha256": "1bfa99daeaff885f62b78ae80a52cb97b3bb68ee6720301e17f4780e97b6cb3a",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "岛屿银行存款（Island Bank Deposit Action）",
+    "source": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/action/island_bank_deposit",
+    "source_path": "/adapters/SuperiorSkyblockAdapter/entries/action/island_bank_deposit",
+    "file": "adapters/SuperiorSkyblockAdapter/entries/action/island_bank_deposit.md",
+    "source_sha256": "2efc70a097b4dc06b01cf21a8575187bf216b19244df28727b085a83e4094c46",
+    "english_sha256": "46c03b6cbef6ee065eae916dd08593c07f35e6f54cdcc64ef32c819283e595fc",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "岛屿银行取款（Island Bank Withdraw Action）",
+    "source": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/action/island_bank_withdraw",
+    "source_path": "/adapters/SuperiorSkyblockAdapter/entries/action/island_bank_withdraw",
+    "file": "adapters/SuperiorSkyblockAdapter/entries/action/island_bank_withdraw.md",
+    "source_sha256": "a2528bf2a32b5439d71163c0fb4ee3f02cf9b62e4e209ed231aade4e59b8e202",
+    "english_sha256": "a21d3b03eceb26193d2f03cb45fec9c485d8d61d1c6e5a575eeeef76010cdb4c",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "解散岛屿（Island Disband Action）",
+    "source": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/action/island_disband",
+    "source_path": "/adapters/SuperiorSkyblockAdapter/entries/action/island_disband",
+    "file": "adapters/SuperiorSkyblockAdapter/entries/action/island_disband.md",
+    "source_sha256": "e6d043dce1c8d9033c614d82958335d15177921edf75128b54bca3e5d95683b3",
+    "english_sha256": "81cf87f1a2d0a231bc9ade26038376ea65c807c8e6a228c8a1cc469fb53273df",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "设置岛屿生物群系（Island Set Biome Action）",
+    "source": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/action/island_set_biome",
+    "source_path": "/adapters/SuperiorSkyblockAdapter/entries/action/island_set_biome",
+    "file": "adapters/SuperiorSkyblockAdapter/entries/action/island_set_biome.md",
+    "source_sha256": "4b839e732edaa2a6941ee9b4953234618b00bc5f39887508827555a221f438c8",
+    "english_sha256": "4644e9c790469f4434bf590212122d05e137f4871ded4e1d222111e828c1cead",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "设置岛屿边界大小（Island Set Border Size Action）",
+    "source": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/action/island_set_border_size",
+    "source_path": "/adapters/SuperiorSkyblockAdapter/entries/action/island_set_border_size",
+    "file": "adapters/SuperiorSkyblockAdapter/entries/action/island_set_border_size.md",
+    "source_sha256": "8fffd71f18e05c0c9dfffac4f178b41fb50fb7453ef7c23f0befaa380a6711b9",
+    "english_sha256": "d5659323ec0a887805cbfe1a0b39b6c35d82decdbc88131769b9801f5a2ae9cf",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "设置岛屿成员上限（Island Set Member Limit Action）",
+    "source": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/action/island_set_member_limit",
+    "source_path": "/adapters/SuperiorSkyblockAdapter/entries/action/island_set_member_limit",
+    "file": "adapters/SuperiorSkyblockAdapter/entries/action/island_set_member_limit.md",
+    "source_sha256": "c74fa2aac5473b6f93f0c6a98e829d9868d00ecbfddf3654b445d666b4f1aa12",
+    "english_sha256": "763698bffdccb1507096f877cdcb70e0daef65f50ca340859ca8f13dfd320d39",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "岛屿创建事件（Island Create Event）",
+    "source": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/event/on_island_create",
+    "source_path": "/adapters/SuperiorSkyblockAdapter/entries/event/on_island_create",
+    "file": "adapters/SuperiorSkyblockAdapter/entries/event/on_island_create.md",
+    "source_sha256": "0e0709f96b197e703c85fcb6247df738321abc3e47f4c51d7f2f118904f30448",
+    "english_sha256": "f27f6b2346a5a38d5005860267bd62da4260f33e3d7d0cb738131b993600bab2",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "岛屿解散事件（Island Disband Event）",
+    "source": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/event/on_island_disband",
+    "source_path": "/adapters/SuperiorSkyblockAdapter/entries/event/on_island_disband",
+    "file": "adapters/SuperiorSkyblockAdapter/entries/event/on_island_disband.md",
+    "source_sha256": "c6c84f6505af84868a9b8fe008a5e3b208b7cc77afb3559079a114b0bff9fb88",
+    "english_sha256": "61a33bff4413305b17d600077723a1e28254c99684f705a5329e9679571c18fe",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "岛屿邀请事件（Island Invite Event）",
+    "source": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/event/on_island_invite",
+    "source_path": "/adapters/SuperiorSkyblockAdapter/entries/event/on_island_invite",
+    "file": "adapters/SuperiorSkyblockAdapter/entries/event/on_island_invite.md",
+    "source_sha256": "fd22333fab8a36dca8cbe6d914db033b236f8e581a951dc29d4e0febd9d91f1e",
+    "english_sha256": "cdbdfa7c9ad6d2bc2b01d008da0d43fa5619c48c98796ecfef853da940647c6b",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "加入岛屿事件（Island Join Event）",
+    "source": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/event/on_island_join",
+    "source_path": "/adapters/SuperiorSkyblockAdapter/entries/event/on_island_join",
+    "file": "adapters/SuperiorSkyblockAdapter/entries/event/on_island_join.md",
+    "source_sha256": "22a3929c9639ffb8a29f2f781677bccc9bb7fc3f03a0b5f2581f88de4bccba76",
+    "english_sha256": "d929be4f5df35bb1d5a3a41424bf0a96158ab89dc88bd0635bd016fbe5f30da9",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "岛屿升级事件（Island Upgrade Event）",
+    "source": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/event/on_island_upgrade",
+    "source_path": "/adapters/SuperiorSkyblockAdapter/entries/event/on_island_upgrade",
+    "file": "adapters/SuperiorSkyblockAdapter/entries/event/on_island_upgrade.md",
+    "source_sha256": "3a23793aad59de2e1d1abc003e046923fceb5dfaa43fe2542cb5503a32438883",
+    "english_sha256": "123cd24a80c235e20e612647e675d08e87f8894f4228ecb285f20bbb42008201",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "岛屿任务完成事件（Mission Complete Event）",
+    "source": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/event/on_mission_complete",
+    "source_path": "/adapters/SuperiorSkyblockAdapter/entries/event/on_mission_complete",
+    "file": "adapters/SuperiorSkyblockAdapter/entries/event/on_mission_complete.md",
+    "source_sha256": "9ac51730b84cdef7a78946d1fe22a0825e6bcb93fec115dbad549e5861261442",
+    "english_sha256": "37f139131a867d2d16ed8fac2891f272dec211f06f914c7fa1663bad2bbdc7c2",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "岛屿事实（Island Fact）",
+    "source": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/fact/island_fact",
+    "source_path": "/adapters/SuperiorSkyblockAdapter/entries/fact/island_fact",
+    "file": "adapters/SuperiorSkyblockAdapter/entries/fact/island_fact.md",
+    "source_sha256": "a76fb4ae002df87fe0c68e4605b41d95498e16a62c52268636b086ca59a94e54",
+    "english_sha256": "8aefc4780276abd2500070f9b5bf8eda49b414610c07bb00e1a8f15c7055254a",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "岛屿组（Island Group）",
+    "source": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/group/island_group",
+    "source_path": "/adapters/SuperiorSkyblockAdapter/entries/group/island_group",
+    "file": "adapters/SuperiorSkyblockAdapter/entries/group/island_group.md",
+    "source_sha256": "15fd21a3e55a0727b2344f1e5d68de5df9e839e2fcb58e847db63558fa24d7a6",
+    "english_sha256": "5870d9a41c992c6320ad6e548f88de90e507a8bf204f702170035c520ad165c7",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "Vault 适配器（Vault Adapter）",
+    "source": "https://docs.typewritermc.com/adapters/VaultAdapter",
+    "source_path": "/adapters/VaultAdapter",
+    "file": "adapters/VaultAdapter.md",
+    "source_sha256": "7dad6a589d9da34c3a3b7df16fa0f3752cec7d8975c864d1b006ab1499353ccf",
+    "english_sha256": "41f72f2137ef55084683b541f976a79880e9d597b8cc7fbb504bc6901a900713",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "增加余额（Deposit Balance Action）",
+    "source": "https://docs.typewritermc.com/adapters/VaultAdapter/entries/action/deposit_balance",
+    "source_path": "/adapters/VaultAdapter/entries/action/deposit_balance",
+    "file": "adapters/VaultAdapter/entries/action/deposit_balance.md",
+    "source_sha256": "8d8d9793cb9db45b2382b585f0ee4b5bf8107c243b4676b4f326a2091c95e4f9",
+    "english_sha256": "2558d8569527479f5b97b078f6ed305e7e92feb40ac83ad8a8af1e242f64c66b",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "设置前缀（Set Prefix Action）",
+    "source": "https://docs.typewritermc.com/adapters/VaultAdapter/entries/action/set_prefix",
+    "source_path": "/adapters/VaultAdapter/entries/action/set_prefix",
+    "file": "adapters/VaultAdapter/entries/action/set_prefix.md",
+    "source_sha256": "eceea70bece2305874d0658eaa9beb8509d956e628bc41be8f377142b5434d99",
+    "english_sha256": "6e6eaacb0fe9075086e5963172ee1912aa1e4a08c30d44b286bb2674edae4e79",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "扣除余额（Withdraw Balance Action）",
+    "source": "https://docs.typewritermc.com/adapters/VaultAdapter/entries/action/withdraw_balance",
+    "source_path": "/adapters/VaultAdapter/entries/action/withdraw_balance",
+    "file": "adapters/VaultAdapter/entries/action/withdraw_balance.md",
+    "source_sha256": "e4c2a1691c03fc0cdb4ee87b5039da312a39747bda95452309aa7b9b5480613b",
+    "english_sha256": "1fabe6ea74c07bd36aa56a497e37b50e1910c2a771e6f54612028f05ca794899",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "余额事实（Balance Fact）",
+    "source": "https://docs.typewritermc.com/adapters/VaultAdapter/entries/fact/balance_fact",
+    "source_path": "/adapters/VaultAdapter/entries/fact/balance_fact",
+    "file": "adapters/VaultAdapter/entries/fact/balance_fact.md",
+    "source_sha256": "ce266ef267d7f8a18ed5e4da799b6d673ea1e103b81f60217e3ad70f91980ebd",
+    "english_sha256": "0dc80871bf3a494074696fd8fff8733c89db8b756fa0ba2c72f7073629192ce9",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "权限事实（Permission Fact）",
+    "source": "https://docs.typewritermc.com/adapters/VaultAdapter/entries/fact/permission_fact",
+    "source_path": "/adapters/VaultAdapter/entries/fact/permission_fact",
+    "file": "adapters/VaultAdapter/entries/fact/permission_fact.md",
+    "source_sha256": "7b0401d135249ef6add38ed036db1c06266f74dfd1cb3ad144496a83b3eb50be",
+    "english_sha256": "9ce5fb5facc047bdce3c2aca9f1fa73be6ea0b59cdf575c184fa8eadf0c23f85",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "余额组（Balance Group）",
+    "source": "https://docs.typewritermc.com/adapters/VaultAdapter/entries/group/balance_audience",
+    "source_path": "/adapters/VaultAdapter/entries/group/balance_audience",
+    "file": "adapters/VaultAdapter/entries/group/balance_audience.md",
+    "source_sha256": "558af721af447c6132189c2bfe5d5372a944142abb80e3779a796b0d90c859aa",
+    "english_sha256": "a5874b8b32d9f7160b813c46ea31ce442c817b66c49463742dcb6445796e01e7",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "权限组（Permission Group）",
+    "source": "https://docs.typewritermc.com/adapters/VaultAdapter/entries/group/permission_group",
+    "source_path": "/adapters/VaultAdapter/entries/group/permission_group",
+    "file": "adapters/VaultAdapter/entries/group/permission_group.md",
+    "source_sha256": "d320f6dbe02c09cd20f39503ae549d8f1f904318d7f4175a6305716d8bf3ba67",
+    "english_sha256": "cbc8e44de536bc1af764848441d3361bd4385131b0bdd7a92ec5c2ad7ba9ae88",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "WorldGuard 适配器（World Guard Adapter）",
+    "source": "https://docs.typewritermc.com/adapters/WorldGuardAdapter",
+    "source_path": "/adapters/WorldGuardAdapter",
+    "file": "adapters/WorldGuardAdapter.md",
+    "source_sha256": "08d5854c5ac17a301c51d9f79b8d5aeee8cbebb914c7c66870d602434965a8a7",
+    "english_sha256": "dc1c7cb5418149c69f3bfe58497a8aceef94d057675c25dc48673734da9af8c6",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "区域受众（Region Audience）",
+    "source": "https://docs.typewritermc.com/adapters/WorldGuardAdapter/entries/audience/region_audience",
+    "source_path": "/adapters/WorldGuardAdapter/entries/audience/region_audience",
+    "file": "adapters/WorldGuardAdapter/entries/audience/region_audience.md",
+    "source_sha256": "778aa406bef8bfeb98e4a3962cf2ccc18519dedca7690d93fb29449add9f6569",
+    "english_sha256": "34c88ee53ee640707a149fd269e0fcd18ba4b5e9c84e0a5405696c05cf18eedf",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "进入区域事件（Enter Region Event）",
+    "source": "https://docs.typewritermc.com/adapters/WorldGuardAdapter/entries/event/on_enter_region",
+    "source_path": "/adapters/WorldGuardAdapter/entries/event/on_enter_region",
+    "file": "adapters/WorldGuardAdapter/entries/event/on_enter_region.md",
+    "source_sha256": "2bd1eb8ed8117aa31d72797795b6a9fcd08c3ad99db8b423612efa730e85f003",
+    "english_sha256": "11c33329e619f6f81e297c69d1abfcd263023402f57c9b0a81cf549be345cda4",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "离开区域事件（Exit Region Event）",
+    "source": "https://docs.typewritermc.com/adapters/WorldGuardAdapter/entries/event/on_exit_region",
+    "source_path": "/adapters/WorldGuardAdapter/entries/event/on_exit_region",
+    "file": "adapters/WorldGuardAdapter/entries/event/on_exit_region.md",
+    "source_sha256": "41a468748dcf57fce3e89e12fee9c49f4a0a254335f480d9ef23e9b36745aa90",
+    "english_sha256": "7c4496e0ea40c5ea9f9e3e47cacc35e45dccdac0d5c892798a9ad346a0cc73d1",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "处于区域内事实（In Region Fact）",
+    "source": "https://docs.typewritermc.com/adapters/WorldGuardAdapter/entries/fact/in_region_fact",
+    "source_path": "/adapters/WorldGuardAdapter/entries/fact/in_region_fact",
+    "file": "adapters/WorldGuardAdapter/entries/fact/in_region_fact.md",
+    "source_sha256": "885645959eb8c1f3acb2d830625eda19ca5062cdf9baf5f11f87e57ef5c385fa",
+    "english_sha256": "5ab646f8ec26d921725ffad1028bbbc82241a4a24022fe7fc146c488b2d8365a",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "区域组（Region Group）",
+    "source": "https://docs.typewritermc.com/adapters/WorldGuardAdapter/entries/group/region_group",
+    "source_path": "/adapters/WorldGuardAdapter/entries/group/region_group",
+    "file": "adapters/WorldGuardAdapter/entries/group/region_group.md",
+    "source_sha256": "17784ba0e327140d352edeee68f6ae2aea085ebc556c2138b9d1fd5c90aae296",
+    "english_sha256": "9d2fa428d75cf13c29089e8c44f6965f5babf06e4f79f83ff87e1e1d73964eaf",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "ZNPCsPlus 适配器（Znp Cs Plus Adapter）",
+    "source": "https://docs.typewritermc.com/adapters/ZNPCsPlusAdapter",
+    "source_path": "/adapters/ZNPCsPlusAdapter",
+    "file": "adapters/ZNPCsPlusAdapter.md",
+    "source_sha256": "a609e33e4a5e64394ce84bc57bb47b0ef9ee762a9bdb5e95d651e698534c6c5a",
+    "english_sha256": "935cd86ef07dc452254299ac9406941d7f47c94643f8540b20be9f67d92f4ab1",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "引用 NPC 过场动画（Reference Npc Cinematic）",
+    "source": "https://docs.typewritermc.com/adapters/ZNPCsPlusAdapter/entries/cinematic/znpc_reference_npc_cinematic",
+    "source_path": "/adapters/ZNPCsPlusAdapter/entries/cinematic/znpc_reference_npc_cinematic",
+    "file": "adapters/ZNPCsPlusAdapter/entries/cinematic/znpc_reference_npc_cinematic.md",
+    "source_sha256": "6accff256f7349d33e818796c250a4416617ef5ffc925c429836c3bc91760b36",
+    "english_sha256": "b7b082af76fc40c31e987184c533d1d3f7d5e23ee9464c6a12e9b0ccaf461ca9",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "玩家自身 NPC 过场动画（Self Npc Cinematic）",
+    "source": "https://docs.typewritermc.com/adapters/ZNPCsPlusAdapter/entries/cinematic/znpc_self_npc_cinematic",
+    "source_path": "/adapters/ZNPCsPlusAdapter/entries/cinematic/znpc_self_npc_cinematic",
+    "file": "adapters/ZNPCsPlusAdapter/entries/cinematic/znpc_self_npc_cinematic.md",
+    "source_sha256": "689b081bbd5372b42a031029b2800b6f207af82f4e1242f1acb634a57d467c2d",
+    "english_sha256": "685395b7703227da874e9b4825cf757a231677f1497236dbd6e13dc8da71b2eb",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "引用 NPC（Reference Npc）",
+    "source": "https://docs.typewritermc.com/adapters/ZNPCsPlusAdapter/entries/entity/znpc_reference_npc",
+    "source_path": "/adapters/ZNPCsPlusAdapter/entries/entity/znpc_reference_npc",
+    "file": "adapters/ZNPCsPlusAdapter/entries/entity/znpc_reference_npc.md",
+    "source_sha256": "d6f307e7860d2ba41d74b25c29bc93412311f94c47dd5fb618d1cbdab3ade716",
+    "english_sha256": "e38d7fc30ee4207146346b4bc1ccde14bbc7e024259494da0e8126a31e012505",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "NPC 交互事件（Npc Interact Event）",
+    "source": "https://docs.typewritermc.com/adapters/ZNPCsPlusAdapter/entries/event/znpc_on_npc_interact",
+    "source_path": "/adapters/ZNPCsPlusAdapter/entries/event/znpc_on_npc_interact",
+    "file": "adapters/ZNPCsPlusAdapter/entries/event/znpc_on_npc_interact.md",
+    "source_sha256": "c606205f505294aa9bb542579cb4b4b0aa43ad17e3fe96ceea5eef9878b6f402",
+    "english_sha256": "3161a678cad46d1ef59d747c5cf98da21a25ae9a4f6cb44f608798549022301d",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "开发文档（Development）",
+    "source": "https://docs.typewritermc.com/develop",
+    "source_path": "/develop",
+    "file": "develop.md",
+    "source_sha256": "61d5d9af721846ad0a2e1074375f40f6d022e0fb97d590903eec35307099569d",
+    "english_sha256": "382800ae5d9c42c42813939707ff13841c971b99e169a435140a60d20816520d",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "扩展开发（Extensions）",
+    "source": "https://docs.typewritermc.com/develop/extensions",
+    "source_path": "/develop/extensions",
+    "file": "develop/extensions.md",
+    "source_sha256": "b7b9c43139a33016ed754a504ce935646cc894d4525a9581fe9c42fcc33102ad",
+    "english_sha256": "cbe3bbe6dead92207d67186bdbe14cdcc4e8dd02428e24b02002d79382045935",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "API 变更（API Changes）",
+    "source": "https://docs.typewritermc.com/develop/extensions/api-changes",
+    "source_path": "/develop/extensions/api-changes",
+    "file": "develop/extensions/api-changes.md",
+    "source_sha256": "e9f2b4f65aa6b2daae5905cc9face7831dff53e26b535b7e4540928626e7f965",
+    "english_sha256": "f6c2b292155d5b56eaa553179f3a36360f1d613330fecf3181bdabc29db634fc",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "0.5.X 的 API 变更（All API changes to 0.5.X）",
+    "source": "https://docs.typewritermc.com/develop/extensions/api-changes/0.5",
+    "source_path": "/develop/extensions/api-changes/0.5",
+    "file": "develop/extensions/api-changes/0.5.md",
+    "source_sha256": "9d44bde9d17fa84b7bf9f78dff3d6e1630b6d6f073303fe0453e3c9e3c05f08e",
+    "english_sha256": "74c95cc626c3d073e1836d7b60ecabe3d34780d32a2e232ddfc91a7ced279070",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "0.6.X 的 API 变更（All API changes to 0.6.X）",
+    "source": "https://docs.typewritermc.com/develop/extensions/api-changes/0.6",
+    "source_path": "/develop/extensions/api-changes/0.6",
+    "file": "develop/extensions/api-changes/0.6.md",
+    "source_sha256": "6d979a84c17c0926593d8a15ff26c57284dba758524aa5a25db17898c987e8fc",
+    "english_sha256": "600e5edd351a29f266c317fcc7b4972de52bd4142cd5858ef5f8fc3dc9702116",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "0.7.X 的 API 变更（All API changes to 0.7.X）",
+    "source": "https://docs.typewritermc.com/develop/extensions/api-changes/0.7",
+    "source_path": "/develop/extensions/api-changes/0.7",
+    "file": "develop/extensions/api-changes/0.7.md",
+    "source_sha256": "2d611f281fc4f744dbf702b6d97e8fa55067a62951f624e6d69aa4ffa9f21088",
+    "english_sha256": "59488cf9d872c83a9cba0db206666ab47deaad0ca01850a0776dac3cb75d4d1f",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "0.8.X 的 API 变更（All API changes to 0.8.X）",
+    "source": "https://docs.typewritermc.com/develop/extensions/api-changes/0.8",
+    "source_path": "/develop/extensions/api-changes/0.8",
+    "file": "develop/extensions/api-changes/0.8.md",
+    "source_sha256": "25d41980bc48517d146440bcf3b4b16163fd438b853b2539119cd1c3d1dc2004",
+    "english_sha256": "e5dc01e1c830133f281ce2e2a0c677e0eb3477c53b5c23fb58eff022c79176d2",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "创建条目（Create Entries）",
+    "source": "https://docs.typewritermc.com/develop/extensions/entries",
+    "source_path": "/develop/extensions/entries",
+    "file": "develop/extensions/entries.md",
+    "source_sha256": "1355252afc4f0236b7e72b9eda335a2106448f68285a2db9cea91e4bc996584d",
+    "english_sha256": "e9c0d3d5c8be7cc6771cd19af1da4ebd070abb5b554ea3d0d3a87d869f608574",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "过场动画条目（CinematicEntry）",
+    "source": "https://docs.typewritermc.com/develop/extensions/entries/cinematic",
+    "source_path": "/develop/extensions/entries/cinematic",
+    "file": "develop/extensions/entries/cinematic.md",
+    "source_sha256": "5f0d3391b5eb2a05f0fa0db97446ddc65f8caff7f4503e2afb57ffde0c166dbd",
+    "english_sha256": "cb4409b001204d4b17eba30bf4e81810a94a534b5f5660b29de97a8cbf11af78",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "受众条目（AudienceEntry）",
+    "source": "https://docs.typewritermc.com/develop/extensions/entries/manifest/audience",
+    "source_path": "/develop/extensions/entries/manifest/audience",
+    "file": "develop/extensions/entries/manifest/audience.md",
+    "source_sha256": "5af575c2e3d26122ed09a92bcf6e51678d7f56b094748a132362f42558ed26df",
+    "english_sha256": "95e75614ff0ec0f8ddd4d8d206d9bca10df37a06fae47f2c406360dcf7145625",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "受众过滤器（AudienceFilter）",
+    "source": "https://docs.typewritermc.com/develop/extensions/entries/manifest/audience_filter",
+    "source_path": "/develop/extensions/entries/manifest/audience_filter",
+    "file": "develop/extensions/entries/manifest/audience_filter.md",
+    "source_sha256": "6f0a04633fc04b107c4802150653e053325d887473d6fbf387af633cf912be9d",
+    "english_sha256": "700fced07a39790db0fc48e5afa52b7c93e204dbeddb69c11417b05c900d2001",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "单一受众过滤器（SingleFilter）",
+    "source": "https://docs.typewritermc.com/develop/extensions/entries/manifest/audience_single_filter",
+    "source_path": "/develop/extensions/entries/manifest/audience_single_filter",
+    "file": "develop/extensions/entries/manifest/audience_single_filter.md",
+    "source_sha256": "80aa731cbaaaaca612c272687d6909d2423d15164b46ddc8977abd5b1f781051",
+    "english_sha256": "e3d3950e4fed9a28e16a1951a77bd498d3301cc5b8b796a8e7f4da086be949e0",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "占位符（Placeholder）",
+    "source": "https://docs.typewritermc.com/develop/extensions/entries/placeholder",
+    "source_path": "/develop/extensions/entries/placeholder",
+    "file": "develop/extensions/entries/placeholder.md",
+    "source_sha256": "4f853297eadbb36d4547d0ac4129f5e66f4f7dc768bcc70b22f533c893a5d5d9",
+    "english_sha256": "15acdc8840e415e409f451d84d7b7ea09b8e70a73890a06c7088967c96a9c4d3",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "文件产物条目（ArtifactEntry）",
+    "source": "https://docs.typewritermc.com/develop/extensions/entries/static/artifact",
+    "source_path": "/develop/extensions/entries/static/artifact",
+    "file": "develop/extensions/entries/static/artifact.md",
+    "source_sha256": "82752b7b9860756ad1006b7f1bf4734d292ad10a74c94a73bb034a8ce3b29917",
+    "english_sha256": "5ff957c71a3c8439f43a8c65940316d4b872ebe830f061694959ccecd36655cc",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "资源条目（AssetEntry）",
+    "source": "https://docs.typewritermc.com/develop/extensions/entries/static/asset",
+    "source_path": "/develop/extensions/entries/static/asset",
+    "file": "develop/extensions/entries/static/asset.md",
+    "source_sha256": "15d4b94756ccd681fc7c32488a82ffeff184c777e9fe01dfb77e43e1301eea97",
+    "english_sha256": "8c4c3beada85d6d88cb198f0fad9734abfdf34eea529afaa7b64211b4f6b57b8",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "声音 ID 条目（SoundIdEntry）",
+    "source": "https://docs.typewritermc.com/develop/extensions/entries/static/sound_id",
+    "source_path": "/develop/extensions/entries/static/sound_id",
+    "file": "develop/extensions/entries/static/sound_id.md",
+    "source_sha256": "a375c49ab2723b615b2adb1593b9684b8e5279986845cc25a4a5c790685445dd",
+    "english_sha256": "abc9f68bd23c1d73cdd99598fa03896d2c7a06b5dccc00ff2fb81b568eb484a0",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "声音来源条目（SoundSourceEntry）",
+    "source": "https://docs.typewritermc.com/develop/extensions/entries/static/sound_source",
+    "source_path": "/develop/extensions/entries/static/sound_source",
+    "file": "develop/extensions/entries/static/sound_source.md",
+    "source_sha256": "3107b330ab93950d464db818193aff07280b06037ecf6992e70ed7ecfaf40e75",
+    "english_sha256": "2f85bfafb46b9c235ac877a797f77b32c8e0d08645f38ed93fb830abc5f8b4ee",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "说话者条目（SpeakerEntry）",
+    "source": "https://docs.typewritermc.com/develop/extensions/entries/static/speaker",
+    "source_path": "/develop/extensions/entries/static/speaker",
+    "file": "develop/extensions/entries/static/speaker.md",
+    "source_sha256": "52a17edc387684dd3a8b00401c2b52807c4c6d47d3fd58659d5ac812db1ebc0d",
+    "english_sha256": "57aab372a1afa8c339dd6d99046c252a49d08130d721f05f5d502b44f56af57c",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "变量条目（VariableEntry）",
+    "source": "https://docs.typewritermc.com/develop/extensions/entries/static/variable",
+    "source_path": "/develop/extensions/entries/static/variable",
+    "file": "develop/extensions/entries/static/variable.md",
+    "source_sha256": "b616b71e3ff52839c7e3da764197418b21954a7b1ce7922e75d9de6daba3412d",
+    "english_sha256": "d9ba2e1536d2764c56af1c84aa94a5c8f72cab48e0026b073ec10893397bcef0",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "动作条目（ActionEntry）",
+    "source": "https://docs.typewritermc.com/develop/extensions/entries/trigger/action",
+    "source_path": "/develop/extensions/entries/trigger/action",
+    "file": "develop/extensions/entries/trigger/action.md",
+    "source_sha256": "fb0a8bb29bb6b021631f1ec55b3824f40d2ef338bd40d73dd889da8b0752e651",
+    "english_sha256": "4084ae302c42be8e3bd96884fdb9aa3aee7056f27e1427c25e07b84ff38d2257",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "对话条目（DialogueEntry）",
+    "source": "https://docs.typewritermc.com/develop/extensions/entries/trigger/dialogue",
+    "source_path": "/develop/extensions/entries/trigger/dialogue",
+    "file": "develop/extensions/entries/trigger/dialogue.md",
+    "source_sha256": "212b4d0a6e74209b3fe46bd1b7dc5173dc9d10de946a719b980c5fc97cd06159",
+    "english_sha256": "bf8758fd1c95ee787ee67f1fb16dae4e47aa139d7632c06ba01b6542f01d24e7",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "事件条目（EventEntry）",
+    "source": "https://docs.typewritermc.com/develop/extensions/entries/trigger/event",
+    "source_path": "/develop/extensions/entries/trigger/event",
+    "file": "develop/extensions/entries/trigger/event.md",
+    "source_sha256": "79c047e76e79999e927236042f1dab87027e408704dadf9f555a8e8fc8a5e10f",
+    "english_sha256": "ef6c22a73ac57c4421a96d9ffc02f740c5c739aa8fd995e88d1d05e88ed8f167",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "创建扩展（Creating an Extension）",
+    "source": "https://docs.typewritermc.com/develop/extensions/getting_started",
+    "source_path": "/develop/extensions/getting_started",
+    "file": "develop/extensions/getting_started.md",
+    "source_sha256": "97e320f9988889191398c9d23936219c309417af0c0f05eb16797ee75d1a1259",
+    "english_sha256": "3d33b0dab643abc2e1d7a65f14ec64bd1c4a2a701c0f11cfcb21ac9b8c876d49",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "初始化器（Initializers）",
+    "source": "https://docs.typewritermc.com/develop/extensions/initializers",
+    "source_path": "/develop/extensions/initializers",
+    "file": "develop/extensions/initializers.md",
+    "source_sha256": "d6acf32a6415af89263eccf7db2c978a18cd5f82855182342233d9432e2cdd8c",
+    "english_sha256": "e2aaa0b472574c83fc5683336e9e775b3f59aed5291aee1b3e598567dbfe44e6",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "交互系统（Interaction System）",
+    "source": "https://docs.typewritermc.com/develop/extensions/interactions",
+    "source_path": "/develop/extensions/interactions",
+    "file": "develop/extensions/interactions.md",
+    "source_sha256": "315f578455a5fedd5863797efa1388425add277e44f5bd93f3857bb3b4b307a7",
+    "english_sha256": "58c4f7ddfda19ea314404e4685954d36597dd1ad25633cb5272413f41d35a2ad",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "交互边界（Interaction Bound）",
+    "source": "https://docs.typewritermc.com/develop/extensions/interactions/bound",
+    "source_path": "/develop/extensions/interactions/bound",
+    "file": "develop/extensions/interactions/bound.md",
+    "source_sha256": "6c6a70b43bf1f4852fa53df6a6c30b956593b9f1b35d6402a3d69a069981ee08",
+    "english_sha256": "ae314f51cbc9aae9c86ed851a1f1adcbcd3089fdd172695cbb021092c0984144",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "查询条目（Query Entries）",
+    "source": "https://docs.typewritermc.com/develop/extensions/querying",
+    "source_path": "/develop/extensions/querying",
+    "file": "develop/extensions/querying.md",
+    "source_sha256": "90c092fede8bbf40f2ecf8e735b64244f14768abbdcb28df2a208c7f80b82a53",
+    "english_sha256": "2450380ca23d89047c4bbd717eebc0fb32c8268bd50347cdcc9f2226d9a25608",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "触发条目（Triggering Entries）",
+    "source": "https://docs.typewritermc.com/develop/extensions/triggering",
+    "source_path": "/develop/extensions/triggering",
+    "file": "develop/extensions/triggering.md",
+    "source_sha256": "d51437c5f02299cfae9baef30d42b9934fdbc9bb694fd3c6d61bcad36f50e75a",
+    "english_sha256": "092248771085a86ab2de90db541cb451d42679755246394ce0a1987fcd13fe5a",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "概念（Concepts）",
+    "source": "https://docs.typewritermc.com/docs/concepts",
+    "source_path": "/docs/concepts",
+    "file": "docs/concepts.md",
+    "source_sha256": "3e23e40277c67d7f970953844607258ebee0920175323cb9e182ec429d5d1af2",
+    "english_sha256": "7e3d85c01284734d94bfacecf5e579282658bf63baebf8bc6dfa6921f84c077c",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "受众条目（Audience Entries）",
+    "source": "https://docs.typewritermc.com/docs/concepts/Audience",
+    "source_path": "/docs/concepts/Audience",
+    "file": "docs/concepts/Audience.md",
+    "source_sha256": "37651520544a709ae717ab85843650ff0eb0203bf5c3df3fc83805c8fdddc65b",
+    "english_sha256": "640dd87cbf505292dec0cb65664a0d8b1585c9165e5cf50309350311f179cf60",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "呈现条目（Manifest Entries）",
+    "source": "https://docs.typewritermc.com/docs/concepts/Manifest",
+    "source_path": "/docs/concepts/Manifest",
+    "file": "docs/concepts/Manifest.md",
+    "source_sha256": "681976893f35ed1b8742b0fa8e8a7ec9e46294982fcff013d2113182414f05d4",
+    "english_sha256": "1c012336a46816e427525b19b1629d97073d47104aef66d4f968ca0b988f9643",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "进阶交互（Advanced Interactions）",
+    "source": "https://docs.typewritermc.com/docs/creating-stories/advanced-interactions",
+    "source_path": "/docs/creating-stories/advanced-interactions",
+    "file": "docs/creating-stories/advanced-interactions.md",
+    "source_sha256": "b49d756fa110a8e41b5e049fb8c6c9bc72e5d1667b0e85565f640eddb3932649",
+    "english_sha256": "e0f2b38c942b55426c1bde054dc4a087d12701c66c9837892734e6a120aa6983",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "自定义命令（Custom Commands）",
+    "source": "https://docs.typewritermc.com/docs/creating-stories/advanced-interactions/custom-commands",
+    "source_path": "/docs/creating-stories/advanced-interactions/custom-commands",
+    "file": "docs/creating-stories/advanced-interactions/custom-commands.md",
+    "source_sha256": "6b311d94c7885cba4e9d15b2b403cd486019e094ab5ae4ad64ae844e7fb9ad45",
+    "english_sha256": "24a740a227f601baffe719ef1cd1d28ff95bbc91d1dc37d4a1a30702d698dbe7",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "交互边界（Interaction Bounds）",
+    "source": "https://docs.typewritermc.com/docs/creating-stories/advanced-interactions/interaction-bounds",
+    "source_path": "/docs/creating-stories/advanced-interactions/interaction-bounds",
+    "file": "docs/creating-stories/advanced-interactions/interaction-bounds.md",
+    "source_sha256": "05f778c5534ffe23fe2f7fd3958fc5214df6246985477c2bd65085108afbb276",
+    "english_sha256": "3868be7dc2ad5cba5d946784e8c31e671511ea93d141f230c743b745f3d9db62",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "选项边界（Option Bound）",
+    "source": "https://docs.typewritermc.com/docs/creating-stories/advanced-interactions/interaction-bounds/option-bound",
+    "source_path": "/docs/creating-stories/advanced-interactions/interaction-bounds/option-bound",
+    "file": "docs/creating-stories/advanced-interactions/interaction-bounds/option-bound.md",
+    "source_sha256": "3d4bb3f881e34b2accfb4d9b590d83cd6425c5930a41695d283fdc2224a8e0eb",
+    "english_sha256": "71f2f20cf0ca3629ba3f26413ee4e4f686b4e68aafac2151e49c457b11e84cfe",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "交互上下文（Interaction Context）",
+    "source": "https://docs.typewritermc.com/docs/creating-stories/advanced-interactions/interaction-context",
+    "source_path": "/docs/creating-stories/advanced-interactions/interaction-context",
+    "file": "docs/creating-stories/advanced-interactions/interaction-context.md",
+    "source_sha256": "2da8dfa5804c443659c68d16aec4590f66f18b9434d52d5b7a8b6e74dc08b5f3",
+    "english_sha256": "04ed7f2c6a09b7b24c60e3f80a79f2a5c16d2cc0a4a3ee3d4f31a612fc1904e9",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "过场动画（Cinematics）",
+    "source": "https://docs.typewritermc.com/docs/creating-stories/cinematics",
+    "source_path": "/docs/creating-stories/cinematics",
+    "file": "docs/creating-stories/cinematics.md",
+    "source_sha256": "9d8373f59e425656dec2a76a584610c08ba5aa142d755feb07ac66276ee2b0a5",
+    "english_sha256": "950f5576c3a8c79de47a53111e784e51f00f2c02a6317b5d70103c1cd77d0b18",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "添加对话（Adding dialogues）",
+    "source": "https://docs.typewritermc.com/docs/creating-stories/cinematics/dialogue",
+    "source_path": "/docs/creating-stories/cinematics/dialogue",
+    "file": "docs/creating-stories/cinematics/dialogue.md",
+    "source_sha256": "b4a9951dbeb1bfe54eb78a5367a0205b906070f5bcad17aeb3398431e81bac79",
+    "english_sha256": "cd3f407ab814b21e25f9f75aa4bb3d5f66c0c8bc40ef1d99afe1d36e5de08e6d",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "添加实体（Adding entities）",
+    "source": "https://docs.typewritermc.com/docs/creating-stories/cinematics/entities",
+    "source_path": "/docs/creating-stories/cinematics/entities",
+    "file": "docs/creating-stories/cinematics/entities.md",
+    "source_sha256": "53a3d972dcd5536a077a457bdf71cd70dd5fcd4a82129ab3ff8756789ece9669",
+    "english_sha256": "986fed987c1c71bdca7290847c96c729164abc382a18c3866b8cd2aa12e66242",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "首次加入时播放过场动画（First Join Cinematic）",
+    "source": "https://docs.typewritermc.com/docs/creating-stories/cinematics/first-join",
+    "source_path": "/docs/creating-stories/cinematics/first-join",
+    "file": "docs/creating-stories/cinematics/first-join.md",
+    "source_sha256": "a9ee9695f1b1bf1bc7ccd0f9b0c9cc3fa52205c55e96aa87a9e78567a4f2845f",
+    "english_sha256": "5f6925f5e7a5f370676ff52a783283805c9068c2f820b9665ed637ca2c19ab7e",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "可跳过的过场动画（Skippable Cinematics）",
+    "source": "https://docs.typewritermc.com/docs/creating-stories/cinematics/skippable-cinematics",
+    "source_path": "/docs/creating-stories/cinematics/skippable-cinematics",
+    "file": "docs/creating-stories/cinematics/skippable-cinematics.md",
+    "source_sha256": "4fc6a9315401211d2c69d8c81a66936398c7486c8778cc95ef0c305ed1a0bb4a",
+    "english_sha256": "a5c315ecd87f58c510ba621ecdc4574fdf147da41399c7441bea03c89bd7942b",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "指定世界的过场动画（World Specific Cinematics）",
+    "source": "https://docs.typewritermc.com/docs/creating-stories/cinematics/world-specific",
+    "source_path": "/docs/creating-stories/cinematics/world-specific",
+    "file": "docs/creating-stories/cinematics/world-specific.md",
+    "source_sha256": "a86220cdd6746169fb146de6dc2f220b00133cd7f9ce4100991238a2b88d2499",
+    "english_sha256": "c01aaf4025f1c30719ea704d7e9fb02cac9ce19a2c5a49256b7cd77b0bb5fe48",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "实体与 NPC（Entities & NPC's）",
+    "source": "https://docs.typewritermc.com/docs/creating-stories/entity-extension",
+    "source_path": "/docs/creating-stories/entity-extension",
+    "file": "docs/creating-stories/entity-extension.md",
+    "source_sha256": "96d5e1b2dbb18e172702a7cfa84dfae5a4a213635383a150be8ca044a5a2d079",
+    "english_sha256": "6af5368aede867872838a5d9ea7f6d698e83a4242aa98679d2405106d6e4658a",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "实体活动（Entity Activities）",
+    "source": "https://docs.typewritermc.com/docs/creating-stories/entity-extension/activities",
+    "source_path": "/docs/creating-stories/entity-extension/activities",
+    "file": "docs/creating-stories/entity-extension/activities.md",
+    "source_sha256": "a3260b92a5c5c8790c76a3a819437630489b626272a7d6d3aac7daf56b07d5b8",
+    "english_sha256": "70b71158804d0281c578e7e7164386c2ccaee52cb6e45a71a188211c9d6b841f",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "按条件显示 NPC（Conditional NPC showing）",
+    "source": "https://docs.typewritermc.com/docs/creating-stories/entity-extension/conditional-showing",
+    "source_path": "/docs/creating-stories/entity-extension/conditional-showing",
+    "file": "docs/creating-stories/entity-extension/conditional-showing.md",
+    "source_sha256": "094948c723e1e1da8b0850b20baa95accdb9b3b34cce75dd18675059704b14a7",
+    "english_sha256": "75c52736def38bc6649ba0e38bb15af24b44f08781537258e23a6aa5091ea8ec",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "与实体交互（Interacting with an entity）",
+    "source": "https://docs.typewritermc.com/docs/creating-stories/entity-extension/interacting",
+    "source_path": "/docs/creating-stories/entity-extension/interacting",
+    "file": "docs/creating-stories/entity-extension/interacting.md",
+    "source_sha256": "7c3581e6bc8909819c16912598c880cbe58bfb6d6cf12edd43a1ac18d1090108",
+    "english_sha256": "82cd758950e4f93416600975db2a17749cf704a6dfc138eb79091c1a7ead7ff1",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "事实（Facts）",
+    "source": "https://docs.typewritermc.com/docs/creating-stories/facts",
+    "source_path": "/docs/creating-stories/facts",
+    "file": "docs/creating-stories/facts.md",
+    "source_sha256": "4145e37a26e3fea98748433d23a1211b3ee0bb5e6622b02e6edab03149d0645e",
+    "english_sha256": "000a2e71a5eb0196aec069e7a7984edfe46cc24e5e6415bf2beb671582ba2165",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "第一个交互（First Interaction）",
+    "source": "https://docs.typewritermc.com/docs/creating-stories/interactions",
+    "source_path": "/docs/creating-stories/interactions",
+    "file": "docs/creating-stories/interactions.md",
+    "source_sha256": "20f37bb8af2b45ce4e41ec879a72573446447ecb64bc4b76bab9e8eb1ab46c5d",
+    "english_sha256": "2c05a4d6f1b7910df8e8d2bc702300f6707194fc49ba1d3ac0c94346f9f899c8",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "条件对话（Conditional dialogue）",
+    "source": "https://docs.typewritermc.com/docs/creating-stories/interactions/conditional-dialogue",
+    "source_path": "/docs/creating-stories/interactions/conditional-dialogue",
+    "file": "docs/creating-stories/interactions/conditional-dialogue.md",
+    "source_sha256": "25b4d85b58ffdace57badf8cfc62730c2179d7d4d0369885368c04c95419dfb2",
+    "english_sha256": "3b5dd50c91c6b32174f997d70c574fa34e21f2450bae3c39c99254273cdc5e09",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "随机对话（Random Dialogue）",
+    "source": "https://docs.typewritermc.com/docs/creating-stories/interactions/dynamic-variables",
+    "source_path": "/docs/creating-stories/interactions/dynamic-variables",
+    "file": "docs/creating-stories/interactions/dynamic-variables.md",
+    "source_sha256": "b03101a59c89cef841910a021417725133841a481c4e90709a6e03ba70fb57dd",
+    "english_sha256": "dc80edf3089f5f4637d892d099f11ffa32da3623086f31d0ede27902ebffe91f",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "给予物品（Giving items）",
+    "source": "https://docs.typewritermc.com/docs/creating-stories/interactions/items",
+    "source_path": "/docs/creating-stories/interactions/items",
+    "file": "docs/creating-stories/interactions/items.md",
+    "source_sha256": "f6c13f69912ac31a9513693f53dc43d927f0440a708503208feaec38d60312b0",
+    "english_sha256": "f01d6430ae1807a7614504a3adc891f80790a99316d70dfbacd2e9d64e820264",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "添加选项（Adding Options）",
+    "source": "https://docs.typewritermc.com/docs/creating-stories/interactions/options",
+    "source_path": "/docs/creating-stories/interactions/options",
+    "file": "docs/creating-stories/interactions/options.md",
+    "source_sha256": "38d2091265eb71fc19aa9fcfa64a69aeaa4269072a641b18c9c7c1b3527280b8",
+    "english_sha256": "6d5a92cd3d35361f14fe1563df4819e184d398e4062f26a3ff3a7af8cb5b1f74",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "任务系统（Questing）",
+    "source": "https://docs.typewritermc.com/docs/creating-stories/questing",
+    "source_path": "/docs/creating-stories/questing",
+    "file": "docs/creating-stories/questing.md",
+    "source_sha256": "aade90a93d71659767879579f56d59d898af176ef259f38ac417beec819f2a82",
+    "english_sha256": "784ba8df92bdbc6ab8686154a90d7d22f7335d16e05e4c7003384d31fcef725f",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "显示任务（Displaying Quests）",
+    "source": "https://docs.typewritermc.com/docs/creating-stories/questing/displaying_quests",
+    "source_path": "/docs/creating-stories/questing/displaying_quests",
+    "file": "docs/creating-stories/questing/displaying_quests.md",
+    "source_sha256": "f52119ea7b620267c9389e2405ad09347da734253848988ecb49b02fb48a7ca9",
+    "english_sha256": "3d688b6d8a9cc5bff941b5e61384cb125990c0681aaa2c47610461f4916ea5ba",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "击杀僵尸目标（Kill Zombie Objective）",
+    "source": "https://docs.typewritermc.com/docs/creating-stories/questing/kill-zombie-objective",
+    "source_path": "/docs/creating-stories/questing/kill-zombie-objective",
+    "file": "docs/creating-stories/questing/kill-zombie-objective.md",
+    "source_sha256": "fbb29388366dd54df336be4f9fc0c33ee2a01f84457f1e93355618c16b8c72a7",
+    "english_sha256": "b50b99102cc65bd0034a39fb4b7845dc12f0e5fb579a77a360ae375e593a5c48",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "与 NPC 对话目标（Talk To NPC Objective）",
+    "source": "https://docs.typewritermc.com/docs/creating-stories/questing/talk-objective",
+    "source_path": "/docs/creating-stories/questing/talk-objective",
+    "file": "docs/creating-stories/questing/talk-objective.md",
+    "source_sha256": "78c5b5fa6b8329123cbccbd7559b38006cbcd56a8b68c6ab9f7ddb0d17638eb5",
+    "english_sha256": "88c1038f4c6af7792194421a9fc95ba9edff756179baea0bce2a9da8bfd52621",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "道路网络（Road Network）",
+    "source": "https://docs.typewritermc.com/docs/creating-stories/road-network",
+    "source_path": "/docs/creating-stories/road-network",
+    "file": "docs/creating-stories/road-network.md",
+    "source_sha256": "1294649fb3c648ab27a4f7f290ffc426e09e0dc5498aded63a8f432abade48af",
+    "english_sha256": "19fa7cb4546eeadb55865819ce6cd27b5b6b78c1bd950fca0bf5b12949106370",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "入门（Getting Started）",
+    "source": "https://docs.typewritermc.com/docs/getting-started",
+    "source_path": "/docs/getting-started",
+    "file": "docs/getting-started.md",
+    "source_sha256": "c30cfa165dc31c58fd57cf8d9feee9749026457ba5e6e946945976edb0a7fbca",
+    "english_sha256": "803d66e0a3ddc0be91e70c06126895a5bbc8d5e9dd232cc4d9e0521246165bc0",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "安装指南（Installation Guide）",
+    "source": "https://docs.typewritermc.com/docs/getting-started/installation",
+    "source_path": "/docs/getting-started/installation",
+    "file": "docs/getting-started/installation.md",
+    "source_sha256": "30ccd9e204593f62b6a21ff873ee3bcdc8a9ba0ce75e204a53f53e51af0e175c",
+    "english_sha256": "25bc4f27c437766d26b4aac7838c645e07f0b8f9bcb8a75118f8c72fe18e6577",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "界面布局（Layout）",
+    "source": "https://docs.typewritermc.com/docs/getting-started/layout",
+    "source_path": "/docs/getting-started/layout",
+    "file": "docs/getting-started/layout.md",
+    "source_sha256": "35b89482766b5007f7dca8641dc983e896d5b2c4d25689ea33a3e7976148e4b2",
+    "english_sha256": "9b8f188a5624982439f4b04d45f5e36c9e6f4e5a35b75bb66e42593c36de1968",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "章节（Chapters）",
+    "source": "https://docs.typewritermc.com/docs/helpful-features/chapters",
+    "source_path": "/docs/helpful-features/chapters",
+    "file": "docs/helpful-features/chapters.md",
+    "source_sha256": "9cec8027e0a90ffca0efbd3a7bc1d43f81a3402c7deb89c22280ff73bb959bf6",
+    "english_sha256": "e6c48c51e16660b9fca3f2f5576861af89effdeecc9c81087d9a0a61d4feec9e",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "命令（Commands）",
+    "source": "https://docs.typewritermc.com/docs/helpful-features/commands",
+    "source_path": "/docs/helpful-features/commands",
+    "file": "docs/helpful-features/commands.md",
+    "source_sha256": "49805740985ff187c4bb375239577f3326a7db228858d6cf5871ac873a43e68d",
+    "english_sha256": "492dbd85c736bb0a6fec685566717ad15047d7ae65bcffc8b16578aa4d277528",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "PlaceholderAPI（PlaceHolderAPI）",
+    "source": "https://docs.typewritermc.com/docs/helpful-features/placeholderapi",
+    "source_path": "/docs/helpful-features/placeholderapi",
+    "file": "docs/helpful-features/placeholderapi.md",
+    "source_sha256": "9791584467d3d6957112fe82ab3df6ec280314fe39c09b438023d59dd8586853",
+    "english_sha256": "9623cc84cf467c7c31897673bd74e5c110e700d30affc7ff4bb771bd8d94908c",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "快捷键（Shortcuts）",
+    "source": "https://docs.typewritermc.com/docs/helpful-features/shortcuts",
+    "source_path": "/docs/helpful-features/shortcuts",
+    "file": "docs/helpful-features/shortcuts.md",
+    "source_sha256": "3aa8b64ed7d9087e203c1127c2acb4273c7c458d1df31fb4639fa5e6c2abd97d",
+    "english_sha256": "2c94536fb7876c78f5adc35236896b46870061d6e7793717ece1dda00217d0e8",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "片段（Snippets）（What are Snippets?）",
+    "source": "https://docs.typewritermc.com/docs/helpful-features/snippets",
+    "source_path": "/docs/helpful-features/snippets",
+    "file": "docs/helpful-features/snippets.md",
+    "source_sha256": "16f8a977f8b58a99ae5de70d3cfee6ba930a2794b9eb4537a1824fc30431a651",
+    "english_sha256": "f2492dc16165a7251ada649da466a7d0c15a4725bb71204bc4d0a1f94b7780ce",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "Typewriter 是什么？（What is Typewriter?）",
+    "source": "https://docs.typewritermc.com/docs/home",
+    "source_path": "/docs/home",
+    "file": "index.md",
+    "source_sha256": "abfddeb0a94e2de8e2e8d82d75cdce65c0cab039311f44e73784f147a79b8070",
+    "english_sha256": "0504738bb3de7993e46ce08482ae21f4af0850945f090fdf89f9af222899af7c",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "疑难解答（Troubleshooting Guide）",
+    "source": "https://docs.typewritermc.com/docs/troubleshooting",
+    "source_path": "/docs/troubleshooting",
+    "file": "docs/troubleshooting.md",
+    "source_sha256": "d71d5db14755659789e77594969bf35775b8fd0b85ebbd29abb3f733a8876fda",
+    "english_sha256": "cb1c3e41a4582d2bc19d4821524907ac0de3f1eff3e3b53806e8eb17b6f74ffe",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "扩展问题排查（Extensions Troubleshooting）",
+    "source": "https://docs.typewritermc.com/docs/troubleshooting/extensions",
+    "source_path": "/docs/troubleshooting/extensions",
+    "file": "docs/troubleshooting/extensions.md",
+    "source_sha256": "bad7aef43d2952340d172c02525916bf389c2e0045f061c5ff5a229d823f9894",
+    "english_sha256": "1b34dd4946d7c7eb61fe3ab1abbacb9512a043fd36f3e78748345baad1b25a9d",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "PacketEvents 问题排查（PacketEvents Troubleshooting）",
+    "source": "https://docs.typewritermc.com/docs/troubleshooting/packetevent",
+    "source_path": "/docs/troubleshooting/packetevent",
+    "file": "docs/troubleshooting/packetevent.md",
+    "source_sha256": "240e32b219707eb1d88382880146617effea0b888d9429c0f1d259ef28ea39bd",
+    "english_sha256": "e3e0c75c783dc0a75d03789b94d30449186b08d6280f7f37578b51ba2f7afc46",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "Playit.gg",
+    "source": "https://docs.typewritermc.com/docs/troubleshooting/playitgg",
+    "source_path": "/docs/troubleshooting/playitgg",
+    "file": "docs/troubleshooting/playitgg.md",
+    "source_sha256": "d57d87ee4b54eb8e2a01c5467cd8a78ad64c72ca08726a59eead6545aa12e472",
+    "english_sha256": "d260de43642c56b548d5f09d1d09a81e10ad6005571bbcd7e6897ba1f6b26ab4",
+    "translation_review": "terminology-and-technical-content-checked"
+  },
+  {
+    "title": "网页面板加载问题排查（Panel Loading Issues Troubleshooting Guide）",
+    "source": "https://docs.typewritermc.com/docs/troubleshooting/ports",
+    "source_path": "/docs/troubleshooting/ports",
+    "file": "docs/troubleshooting/ports.md",
+    "source_sha256": "ee9845f14832e3e8cbaafef847a28c3756c9b9919eb464a1db8eca2fe26403f7",
+    "english_sha256": "0b0b3028d1934756392e5faae63747131d0b942337c055523092921618d5c5fc",
+    "translation_review": "terminology-and-technical-content-checked"
+  }
+]

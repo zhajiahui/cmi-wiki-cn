@@ -1,0 +1,20 @@
+# Interact Entity Objectives Path Stream
+
+The `Interact Entity Objectives Path Stream` entry is a path stream that shows the path to each interact entity objective.
+When the player has an interact entity objective, and the quest for the objective is tracked, a path stream will be displayed.
+
+The `Ignore Instances` field is a list of entity instances that should be ignored when showing the path.
+
+## How could this be used? {#how-could-this-be-used}
+
+This could be used to show a path to each interacting entity objective in a quest.
+
+## Fields {#fields}
+
+## Road
+
+Required
+
+## Ignore Instances
+
+Required List

@@ -1,0 +1,28 @@
+47	| [槽位物品受众](https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/item_in_slot_audience) | 根据玩家是否在指定槽位中持有指定物品筛选受众 |
+648	此事件用于创建**尚不存在**的命令。如果要检测玩家执行已有命令，请使用 [`Detect Command Ran Event`](https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_detect_command_ran)。
+665	此事实仅供**读取**，无法写入，因此只适合用于条件判断。
+2487	这里使用 **In Dialogue Activity**，分别设置玩家正在与实体对话和未与实体对话时的两种行为。
+2799	Typewriter 在后台通过**事实**记录任务进度。这些事实决定任务的状态；要向玩家**显示**任务信息，还需要追踪一个具体任务。
+3060	检查是否安装了 [InteractiveChat](https://www.spigotmc.org/resources/interactivechat-show-items-inventory-in-chat-custom-chat-keywords-bungee-velocity-support.75870/) 或 [CustomNamePlates](https://polymart.org/resource/customnameplates.2543)（3.0.15 或更低版本）；这些插件可能与 Typewriter 冲突。
+3067	更新插件时，**每次都要**安装与该版本对应的扩展。扩展与插件版本不匹配，可能导致插件无法正常工作！
+3326	**旧版**
+3327	**新版**
+3328	**正式版**
+3329	**测试版**
+3336	**中断模式**
+3337	**阻止模式**
+3338	**中断模式（Entity Extension）**
+3339	**序列页面**
+3340	**静态页面**
+3345	**收集物品任务**
+3346	**进度记录**
+3347	**余额检查**
+3348	**序列化物品**
+3357	**更改半径**
+3358	**移除边**
+3359	**添加快速旅行连接**
+3360	**移除节点**
+3361	**使用负节点**
+3362	**不使用负节点**
+3363	**Windows**
+3364	**macOS**

@@ -1,0 +1,23 @@
+# Closest Group Member Path Stream
+
+The `Closest Group Member Path Stream` entry is a path stream that shows the path to the closest group member.
+The 'Closest Group Member' is determined by the group member that is closest to the player geographically,
+**Not based on the path distance.**
+
+When the group is not set, the path stream will not display anything.
+Players must be in the same world for the path stream to consider them.
+
+## How could this be used? {#how-could-this-be-used}
+
+This could be used to show a path to the closest group member in a group of players.
+When a player is lost, they can follow the path to the closest group member.
+
+## Fields {#fields}
+
+## Road
+
+Required
+
+## Group
+
+Required

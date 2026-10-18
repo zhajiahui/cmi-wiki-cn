@@ -1,0 +1,13 @@
+# Island Create Event
+
+The `Island Create Event` is triggered when an island is created.
+
+## How could this be used? {#how-could-this-be-used}
+
+This event could be used to give the player starting items when they create an island.
+
+## Fields {#fields}
+
+## Triggers
+
+Required List

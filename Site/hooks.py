@@ -1,17 +1,19 @@
-"""Assemble the independent CMI and Residence projects for one MkDocs site."""
+"""Assemble the independent plugin documentation projects for one MkDocs site."""
 from pathlib import Path
 from urllib.parse import urlsplit
 import json
+import posixpath
 import yaml
 import jieba
 from bs4 import BeautifulSoup
 from html import escape
 from mkdocs.plugins import event_priority
+from mkdocs.utils import get_relative_url
 BASE=Path(__file__).resolve().parent
 ROOT=BASE.parent
 DOCS=BASE/'docs'
 TRACKING=BASE/'.cache/assembled-files.json'
-PROJECTS=[('CMI',''),('Residence','residence/')]
+PROJECTS=[('CMI',''),('Residence','residence/'),('Typewriter','typewriter/')]
 SHARED={'assets/wiki.css','assets/logo.svg'}
 
 def prefix_nav(items,prefix):
@@ -19,7 +21,7 @@ def prefix_nav(items,prefix):
 
 def on_config(config):
     output=Path(config.site_dir).resolve()
-    source_dirs=[ROOT/'CMI',ROOT/'Residence',BASE]
+    source_dirs=[ROOT/project for project,_ in PROJECTS]+[BASE]
     if output==ROOT or any(output.is_relative_to(source.resolve()) for source in source_dirs):
         raise ValueError('Build output overlaps a source project directory.')
     expected=set();nav=[]
@@ -58,8 +60,16 @@ TABLE_PAGES={'residence/permissions.md':'permission-','residence/flags.md':'flag
 
 def on_page_content(html,*,page,config,files):
     prefix=TABLE_PAGES.get(page.file.src_uri)
-    if not prefix:return html
+    if not prefix and '<video ' not in html:return html
     soup=BeautifulSoup(html,'html.parser')
+    # MkDocs rewrites Markdown image URLs, but leaves raw video attributes alone.
+    for media in soup.find_all(['video','source']):
+        for attr in ['src','poster']:
+            value=media.get(attr)
+            if not value or urlsplit(value).scheme or value.startswith('/'):continue
+            target=posixpath.normpath(posixpath.join(posixpath.dirname(page.file.src_uri),value))
+            media[attr]=get_relative_url(target,page.url)
+    if not prefix:return str(soup)
     for row in soup.select('table tbody tr'):
         first=row.find('td')
         code=first.find('code') if first else None
@@ -76,7 +86,7 @@ def on_post_build(config):
     index=json.loads(path.read_text(encoding='utf-8'))
     for item in index['docs']:
         if '#' not in item['location']:
-            project='Residence' if urlsplit(item['location']).path.startswith('residence/') else 'CMI'
+            project=next((project for project,prefix in PROJECTS if prefix and urlsplit(item['location']).path.startswith(prefix)),'CMI')
             label=project+' · '
             if not item['title'].startswith(label):item['title']=label+item['title']
     # Give every permission and flag its own result and a matching table-row anchor.
@@ -92,3 +102,25 @@ def on_post_build(config):
             segmented='\u200b'.join(jieba.cut(description))
             index['docs'].append({'location':relative+'#'+row['id'],'title':'Residence · '+name,'text':'<p><code>'+escape(name)+'</code> '+escape(segmented)+'</p>','tags':['Residence']})
     path.write_text(json.dumps(index,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
+    fix_chinese_search(config.site_dir)
+
+
+def fix_chinese_search(site_dir):
+    """Include the final word/character in Material 9.7.7's Han query segmenter."""
+    workers=Path(site_dir)/'assets/javascripts/workers'
+    worker=next(workers.glob('search.*.min.js'))
+    code=worker.read_text(encoding='utf-8')
+    changes={
+        'for(let o=s+1;o<t.length;o++)t.slice(s,o)in e':'for(let o=s+1;o<=t.length;o++)t.slice(s,o)in e',
+        'n[a]&&a<t.length-1&&(i[s++]=a)':'n[a]&&a<t.length&&(i[s++]=a)',
+    }
+    for old,new in changes.items():
+        if code.count(old)!=1:raise ValueError('Search worker changed; review the Han segmenter fix against the pinned Material version.')
+        code=code.replace(old,new)
+    worker.write_text(code,encoding='utf-8')
+    source_map=worker.with_suffix(worker.suffix+'.map')
+    data=json.loads(source_map.read_text(encoding='utf-8'))
+    for i,name in enumerate(data['sources']):
+        if name.endswith('/query/segment/index.ts'):
+            data['sourcesContent'][i]=data['sourcesContent'][i].replace('j < query.length','j <= query.length').replace('q < query.length - 1','q < query.length')
+    source_map.write_text(json.dumps(data,ensure_ascii=False,separators=(',',':')),encoding='utf-8')

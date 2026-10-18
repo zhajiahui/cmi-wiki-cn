@@ -1,0 +1,542 @@
+{
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/questing/talk-objective/static.json": {
+    "file": "assets/eba0f36e2739-static.json",
+    "bytes": 361,
+    "sha256": "baeb011264170063c2b88dc0005ea2d613f4fafac2a2795b9794bdfb7dbe1c02"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/04-entity-extension/assets/activities/pages/manifest.json": {
+    "file": "assets/57d659a2984d-manifest.json",
+    "bytes": 2314,
+    "sha256": "fa1a835bfe446662c7b293bf13c240999e3d765759cc17229fa98dd9c7138994"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/cinematics/cinematic-npc-result.webm": {
+    "file": "assets/ab8e06d46355-cinematic-npc-result.webm",
+    "bytes": 6569461,
+    "sha256": "512bde7ec76c9044e81c9bfb80795c29a5201ec540c317082167a1da08be7ada"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/entity-extension/entity_location.webm": {
+    "file": "assets/e090ae60fe6d-entity_location.webm",
+    "bytes": 14277658,
+    "sha256": "cdc353fe41e77dddb5d6f59378b4e03858365bc5e226d323e56842de60007a6d"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/entity-extension/fetch_skin.webm": {
+    "file": "assets/65e606d1fbb7-fetch_skin.webm",
+    "bytes": 286393,
+    "sha256": "9ca8643a1214a00b3363ee5c37dcf0a837120192f6f6d12c8cfb637060834c21"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/static-page.2b9bf54.1789.avif": {
+    "file": "assets/da49f96ebb45-static-page.2b9bf54.1789.avif",
+    "bytes": 1862,
+    "sha256": "7e34ad060e9e91269ad842d6430bacded7db42e156de21709035a0e0ccaf580f"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/world-specific-player-variable.47acd57.517.avif": {
+    "file": "assets/a77607690aaf-world-specific-player-variable.47acd57.517.avif",
+    "bytes": 9583,
+    "sha256": "11b72b527606a5a9603196f39187d7dd1c95e3438f66b437b8d4970493bc5401"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/road-network/non-negative-nodes-example.webm": {
+    "file": "assets/8fb362ab10d2-non-negative-nodes-example.webm",
+    "bytes": 436656,
+    "sha256": "6395fd97a5f7885e352f928733b66830b57abe3bcfabba143108a82b7f5e8a25"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/option-bound-case-variables.4ee1eef.522.avif": {
+    "file": "assets/eeb8e8d1b935-option-bound-case-variables.4ee1eef.522.avif",
+    "bytes": 9591,
+    "sha256": "e9ace6fc262d7798e0d50be08c8a943647567c83a0c6b3de89edb6e7098d61df"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/random-variable.38f29c4.552.avif": {
+    "file": "assets/926c27910b95-random-variable.38f29c4.552.avif",
+    "bytes": 10607,
+    "sha256": "14c20fb3c9515bd378a73352bc70e5d86c27c761cbb4234289f0766aecaaf5db"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/patrol_activity.412a105.532.avif": {
+    "file": "assets/0239ed4a2916-patrol_activity.412a105.532.avif",
+    "bytes": 8731,
+    "sha256": "aad3f11b4699eb494365eec4203be594a5350d6067754827bf622641aacd3da2"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/add-spoken-fields.2df9135.528.avif": {
+    "file": "assets/103f8ff25826-add-spoken-fields.2df9135.528.avif",
+    "bytes": 8814,
+    "sha256": "5bacfe22b24a89a67ddc5fa3a6b1cd790b0683b04d7f02858b5b4d890e49f86b"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/interaction-bound-player-radius-interupting.9abd31a.1585.avif": {
+    "file": "assets/7f36bc956fcb-interaction-bound-player-radius-interupting.9abd31a.1585.avif",
+    "bytes": 15066,
+    "sha256": "ea208428a1fd79bb8561d588b1a739fa78002ca942570b9ea155227e951f88c1"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/interactions/interaction-bound-interupting-result.webm": {
+    "file": "assets/9f4467866530-interaction-bound-interupting-result.webm",
+    "bytes": 448971,
+    "sha256": "ddd94c52b4ab88da40be45fe7e461327f6e3e96685835f5392b0942bbb432f88"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/create-tunnel.e6136dc.743.avif": {
+    "file": "assets/e70e423243e9-create-tunnel.e6136dc.743.avif",
+    "bytes": 23419,
+    "sha256": "6004612deff3cdac2c5d5e4106d22dcc00807c67a7d049747d3d9c7df7e22a44"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/questing/display/quest_display_manifest.json": {
+    "file": "assets/b0560b746971-quest_display_manifest.json",
+    "bytes": 878,
+    "sha256": "ba7f39f0efde7dd903102ca397e68facd937e2798f1ed25f9b3c70ee8a4293c8"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/first-join-fact.2803121.524.avif": {
+    "file": "assets/f848be250f05-first-join-fact.2803121.524.avif",
+    "bytes": 6027,
+    "sha256": "da103b55e9a8f959fc744400c9ca5edd2948d1d9270866a816ba07439927615e"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/interactions/simple-speaker.webm": {
+    "file": "assets/529c5ab2ac2c-simple-speaker.webm",
+    "bytes": 785629,
+    "sha256": "02517c9c7baa93ed41ad285c18938b7a9b3b29fcdb0ea9fa313daffa78235de1"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/04-entity-extension/assets/activities/pages/sequence.json": {
+    "file": "assets/8f6751545705-sequence.json",
+    "bytes": 556,
+    "sha256": "2d612334d61f0f98879d997d9b5206929091a34080705165affefbc42d7583ea"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/arguments-children.5d45883.528.avif": {
+    "file": "assets/db8388a835e5-arguments-children.5d45883.528.avif",
+    "bytes": 5308,
+    "sha256": "ce935846e37dacf3d7d8c6c10fad136e72c05b0e220234cd8259b1f7263e7ce9"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/flower-clicked-fact.dfda5a1.539.avif": {
+    "file": "assets/974ed87c1b44-flower-clicked-fact.dfda5a1.539.avif",
+    "bytes": 7292,
+    "sha256": "d657dfdaa5cd162a04d8896b612a459a14a20640237a11b206aa572211c37592"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/connect-book.1adde74.445.avif": {
+    "file": "assets/45067219a5da-connect-book.1adde74.445.avif",
+    "bytes": 11097,
+    "sha256": "f8d2ba20eddb8b5daf64967e2708cef2757690f941300e7d772e78cdd46e5cb2"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/quest-configuration.c3d537d.521.avif": {
+    "file": "assets/04083c9e7751-quest-configuration.c3d537d.521.avif",
+    "bytes": 12835,
+    "sha256": "ce418b7d2d848df47f327f3f58fd7813c5c8f7a07c8315ac0cc4eae8eba0f375"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/questing/talk-objective/sequence.json": {
+    "file": "assets/e702de34915e-sequence.json",
+    "bytes": 2176,
+    "sha256": "e104bc20f650e68dae279ea4869c0e9a9768a0734bea334ce768510f91602937"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/road-network/negative-nodes-preview.webm": {
+    "file": "assets/a0f6bfc232f3-negative-nodes-preview.webm",
+    "bytes": 432492,
+    "sha256": "7c95ab7a7a68fe85f7beecd8fad27014fafd71abae44fd625c24bf9747f0b5f6"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/questing/kill-zombie-objective/sequence.json": {
+    "file": "assets/a2ee9d640b78-sequence.json",
+    "bytes": 2003,
+    "sha256": "51202889903ed7993b04940f4629ea0382e61012d6926811d385bae080634f2e"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/generic_string.2691b33.424.avif": {
+    "file": "assets/8351cbec2dea-generic_string.2691b33.424.avif",
+    "bytes": 4843,
+    "sha256": "4602572ffddf893ef447d85b9e18fade4a065ed3cdcf414e403e8401d050dd34"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/generic_duration.ba7762c.421.avif": {
+    "file": "assets/2c63a5a78aa5-generic_duration.ba7762c.421.avif",
+    "bytes": 5010,
+    "sha256": "4ca30e71cbd874f9b417fe2fdab444517b1a885c2c3698ed64de7606fcd90813"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/generic_used.f73c1ea.399.avif": {
+    "file": "assets/a78ef30b27b3-generic_used.f73c1ea.399.avif",
+    "bytes": 4657,
+    "sha256": "5624c12482eee6ebc265f460be1f2ec85d0c528c9fcdf7b1ae3ad94523677352"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/cinematics/final-camera-cinematic.webm": {
+    "file": "assets/63db6955fc5f-final-camera-cinematic.webm",
+    "bytes": 12035891,
+    "sha256": "73232274dfeaedab800378c354adfe9898de3bcecf0e5b8cdb018d709e1f76a0"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/layout.6f3aedd.1920.avif": {
+    "file": "assets/20130e6c9f73-layout.6f3aedd.1920.avif",
+    "bytes": 19687,
+    "sha256": "540322308b5ae5e96070218c60566a72ede7e3ae86e0da23e9bae2b2166742d1"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/option-bound-static.6a7809d.892.avif": {
+    "file": "assets/568154ee58f9-option-bound-static.6a7809d.892.avif",
+    "bytes": 3239,
+    "sha256": "032666d786049b45fc34e4d0b2d05291e43d2d56a2734329301df554880c0146"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/cinematics/first-join-result.webm": {
+    "file": "assets/f07013ba313f-first-join-result.webm",
+    "bytes": 4322442,
+    "sha256": "ef2c0e6dd83d3170852ca1bebc318983a3c5a7b5081660256bb5668e6cbd9dc2"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/04-concepts/03-Manifest/assets/manifest.riv": {
+    "file": "assets/e5923f7c53e1-manifest.riv",
+    "bytes": 413109,
+    "sha256": "af15092485b392579dec174d6e9d29ad8b832e6b81bc09d3f87fda058a498dfe"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/ip.22d12cd.1232.avif": {
+    "file": "assets/11b38d01cf1e-ip.22d12cd.1232.avif",
+    "bytes": 10019,
+    "sha256": "0198a791fb4750205023108beb7446a26df6a9836caaa7bb67831e4b00802720"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/conditional-dialogue-sequence.6fa3c22.863.avif": {
+    "file": "assets/38a06cec9999-conditional-dialogue-sequence.6fa3c22.863.avif",
+    "bytes": 4922,
+    "sha256": "f062bc7281d8ab44033521eb930a63601c6ae7b7518051e379146412338e76a6"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/option-bound-sequence.3d15527.1294.avif": {
+    "file": "assets/ae3b31bc9673-option-bound-sequence.3d15527.1294.avif",
+    "bytes": 16205,
+    "sha256": "57236ec32016283eeb79cd6bc9180cff941fecee81633bbad067179cafdcd8ca"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/layout/add-page.webm": {
+    "file": "assets/f450773f8ae2-add-page.webm",
+    "bytes": 243175,
+    "sha256": "7ad5389dde014a42b2a19190ea55d3f68702f968f3f73f8c84d24cdc4c2b777f"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/interaction-bound-player-radius-blocking.8643896.1027.avif": {
+    "file": "assets/784f0b17d166-interaction-bound-player-radius-blocking.8643896.1027.avif",
+    "bytes": 6444,
+    "sha256": "cd6c50ee91419a061c35b2c6db64cd184346da4818dfeb60b605992635b4029f"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/chapters/chapters.webm": {
+    "file": "assets/f0dc424fce88-chapters.webm",
+    "bytes": 124542,
+    "sha256": "df6ff6a5bc1976074f0737b9e0a9eec108ffa9a1dbdfe4d624f63bba5d1c56c7"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/road-network/radius.webm": {
+    "file": "assets/2657a128a6eb-radius.webm",
+    "bytes": 720693,
+    "sha256": "c10c4349a6dec7e56948f1e7d31d9287bc9844524a307e7129b1e4cb7b96d4ad"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/interactions/interaction-context-result.webm": {
+    "file": "assets/09e6cf1228a5-interaction-context-result.webm",
+    "bytes": 777763,
+    "sha256": "34a8644315cf209ba0706681c5b885d10f3249a826d701371af0d5f1df42c172"
+  },
+  "https://docs.typewritermc.com/assets/images/connect-command-00f3ad6eb18bd0022adde6278b4cfab7.gif": {
+    "file": "assets/d1e40a02ae79-connect-command-00f3ad6eb18bd0022adde6278b4cfab7.gif",
+    "bytes": 62354,
+    "sha256": "a936bc6acd0b579491d00450b7ec95ed20977d5e12be4e742e8e4669790febce"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/segments.e1effa5.597.avif": {
+    "file": "assets/fb11c39cdd30-segments.e1effa5.597.avif",
+    "bytes": 4522,
+    "sha256": "15676862099050cebc0422fa56d242838307c9dd6f57d6b58a6e31dee78b0c1a"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/adding-options.479007b.542.avif": {
+    "file": "assets/70b1d5480e83-adding-options.479007b.542.avif",
+    "bytes": 6308,
+    "sha256": "bd1b88770ac1570f7339a46b72820a9836df32fc1fbe1b7775395b734beac1f7"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/definition_select.d48ad0b.431.avif": {
+    "file": "assets/a1aa0c062e1a-definition_select.d48ad0b.431.avif",
+    "bytes": 5261,
+    "sha256": "52bd94042efd4fe5b26562823c36b097ff498aea7695e38aa60f0fd34e67c581"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/custom-commands/result.webm": {
+    "file": "assets/243f6f7fc444-result.webm",
+    "bytes": 2787713,
+    "sha256": "b2c41743e638e86bf2aa60c1032f22911f43dfd7ac064630a38ca20066d726c0"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/road-network/path.webm": {
+    "file": "assets/c22d36104097-path.webm",
+    "bytes": 479758,
+    "sha256": "3ad3d0e075a5df63dc8d053ccd09a57a8a194f95821da619c5fbd6d9581a131d"
+  },
+  "https://s.namemc.com/i/b2319359e305d7a2.png": {
+    "file": "assets/c9c214f0f86a-b2319359e305d7a2.png",
+    "bytes": 1159,
+    "sha256": "c95032b916b87672444cd6c2589403c002a503f2b0973edf8843892df8f830de"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/example_variable_with_data.6ed163c.422.avif": {
+    "file": "assets/7b73edf06ce3-example_variable_with_data.6ed163c.422.avif",
+    "bytes": 5365,
+    "sha256": "dd9a226313ae9c26871e3bdb783e8ce81149d9ab1776f38ee7567d2b0e8b1480"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/entity-extension/conditional-npc-result.webm": {
+    "file": "assets/1ccbdcf635ce-conditional-npc-result.webm",
+    "bytes": 799010,
+    "sha256": "d3800c60efcee73ec500b271e52225d8631737c12b068ef9ba330fa5a7f540da"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/interactions/final-result-conditional-dialogue.webm": {
+    "file": "assets/cf8fc87b0a91-final-result-conditional-dialogue.webm",
+    "bytes": 982510,
+    "sha256": "62954a5ac89004564318bdd5c50dfa9935451e099569ebfa7e3955ba85d69e27"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/layout-cinematic.566ba42.1920.avif": {
+    "file": "assets/cb9ef78927d4-layout-cinematic.566ba42.1920.avif",
+    "bytes": 15187,
+    "sha256": "9dff6b29bb5b873c64043c402c5f22593f8c36b04d3748fd3dd22e9413deb951"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/interactions/option-bound-result.webm": {
+    "file": "assets/0af4855ec8ca-option-bound-result.webm",
+    "bytes": 1934541,
+    "sha256": "f4b468baf4256e3ce74be3f637131b667067be18ee8696585fecd82ce12bc93a"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/interactions/final-result-option.webm": {
+    "file": "assets/07d62c759cf1-final-result-option.webm",
+    "bytes": 1815503,
+    "sha256": "63d516404925f9cbc7eb969ae23de6a04a4efa197a4032f5aa290127e56a406a"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/04-concepts/04-Audience/assets/audience_entries.riv": {
+    "file": "assets/03f5a8cfa036-audience_entries.riv",
+    "bytes": 198405,
+    "sha256": "82c8987d8b76f2572535e22dd8b91311f68687256dcf9a35e77f02e006745e4f"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/interactions/add-spoken.webm": {
+    "file": "assets/14b6c7acec41-add-spoken.webm",
+    "bytes": 393176,
+    "sha256": "30b5da108e928b418aff76a780b8f51b7c971968e961912d13fd19ead6bd76bd"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/entity-extension/interact-entity-result.webm": {
+    "file": "assets/b90d19c13481-interact-entity-result.webm",
+    "bytes": 270726,
+    "sha256": "b234536e19b855080e6ddaa4516dc3eb847cf39270f37f1b0efd3ca1a6934d38"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/interactions/interaction-bound-blocking-result.webm": {
+    "file": "assets/72de15819de1-interaction-bound-blocking-result.webm",
+    "bytes": 1279685,
+    "sha256": "bee7369290464eb5271dbd5b57c203030b2c8e735ea236c316467b10bc5f90c6"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/04-entity-extension/assets/conditional/manifest.json": {
+    "file": "assets/aa208561c585-manifest.json",
+    "bytes": 2529,
+    "sha256": "c90329ba3be37f84868cf60dbd654c52ccbeee3cbcc6f73f20b4bef599f5fe98"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/questing/kill-zombie-objective/static.json": {
+    "file": "assets/ff26a7705109-static.json",
+    "bytes": 505,
+    "sha256": "5e17b3b66217b23fb1682043d4ee9a9a16e5a91b79739ef8e23cd3538998f2ff"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/road-network/add-node.webm": {
+    "file": "assets/bda8202b350a-add-node.webm",
+    "bytes": 744446,
+    "sha256": "b92674bb653434a090e6c66eb556497d1a3e787caf900faf14cd8b7aa9b2c885"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/road-network/remove-edges.webm": {
+    "file": "assets/35a05959d7e8-remove-edges.webm",
+    "bytes": 1482015,
+    "sha256": "d7fdd1fdacfd43f2d7595048395e5de4679ed90005b0b03b3d2878b27c960cea"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/interactions/configure-spoken-interaction-context.webm": {
+    "file": "assets/75777b94ea6e-configure-spoken-interaction-context.webm",
+    "bytes": 1184538,
+    "sha256": "2c0b785348e4a2e9311a26d5c09ef1822d804c5fb74f5b8dcdf45410be7200f8"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/cinematics/world-specific.webm": {
+    "file": "assets/ab8a3a9ef594-world-specific.webm",
+    "bytes": 2643993,
+    "sha256": "62d1fca600efbf3b6f647214fda42e13229356e50a66351381366f1f61431904"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/cinematics/adding-dialogue-cinematic.webm": {
+    "file": "assets/5899180c5fc3-adding-dialogue-cinematic.webm",
+    "bytes": 11221040,
+    "sha256": "b530080ab0a4941a9e097caa5f0d9f3dbde9c22f85d81f6ea90f27caf7bc0d02"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/interactions/final-result-give-item.webm": {
+    "file": "assets/bb1ee550198f-final-result-give-item.webm",
+    "bytes": 1177560,
+    "sha256": "7b5447e6f45f458360fb149b35abfc7808b8782fa175c2437923eb593590a0f1"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/interactions/random-dialogue-result.webm": {
+    "file": "assets/b2fec116cd99-random-dialogue-result.webm",
+    "bytes": 589478,
+    "sha256": "1b791be06e648b0f6860fdc2a0f57566fa1862727a48c331b167d38da1e6486e"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/criteria_and_modifier.7444206.432.avif": {
+    "file": "assets/2f85a9ee6ff8-criteria_and_modifier.7444206.432.avif",
+    "bytes": 4139,
+    "sha256": "5ff95e78b4f5a128ffec27ccb5741449b0e1698c9fe77de116f5d10f2ed85271"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/road-network/remove-edge.webm": {
+    "file": "assets/92fc32825d2e-remove-edge.webm",
+    "bytes": 1449588,
+    "sha256": "af994e60e8b1e2adeb2ea28437c992242a1ef03723e94ad3accbeb90844065ca"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/road-network/fast-travel.webm": {
+    "file": "assets/7aa3ba23d048-fast-travel.webm",
+    "bytes": 1494728,
+    "sha256": "bab24e451a77ac779b91345c3e9fa99a7ac199e4a1a39ba65ce2d8bda3cc2d81"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/adding-dialogue-segment.fa49beb.587.avif": {
+    "file": "assets/2f9d2b10cc7b-adding-dialogue-segment.fa49beb.587.avif",
+    "bytes": 10825,
+    "sha256": "be6f1450be4a39da97a07042b4e08bd6af210b671b7a45185c7df98193947e79"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/07-advanced-interactions/assets/commands/manifest.json": {
+    "file": "assets/059f8b0f9f49-manifest.json",
+    "bytes": 1058,
+    "sha256": "b2a1b2af71018953d2054ba98fb7186859984aa8d5ec1dcc4967a8508319ff5f"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/questing/talk-objective/talk-objective-result.webm": {
+    "file": "assets/ded8e1935082-talk-objective-result.webm",
+    "bytes": 2122961,
+    "sha256": "71d4ee103a367b873e6fa2cbe75427489c2b7168fbcbd869117062a24ffe9147"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/04-entity-extension/assets/activities/result.webm": {
+    "file": "assets/dd6284ab7abf-result.webm",
+    "bytes": 8082447,
+    "sha256": "b03f5215a740882d23f1d2c86bc7354b78b7e4a90ff62edda79ebb7ca3165464"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/questing/kill-zombie-objective/manifest.json": {
+    "file": "assets/c88a89851e02-manifest.json",
+    "bytes": 2698,
+    "sha256": "37999653d373318403ec2d5c47b105d634159c62d35f8e3632b2a3604e85190c"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/04-entity-extension/assets/activities/pages/static.json": {
+    "file": "assets/1f470fc885f9-static.json",
+    "bytes": 285,
+    "sha256": "25a4d4859b94cbc7c383423f8d55c30e5d56357d6cd7f56c33967b149969ac38"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/questing/display/quest_display_sequence.json": {
+    "file": "assets/e256b269638e-quest_display_sequence.json",
+    "bytes": 1578,
+    "sha256": "6c226e4ecdfd61d5aaff049da87ff3955034c5ace41624fe6c8679bab090c189"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/cinematics/content-mode.webm": {
+    "file": "assets/dc2ec22a75b7-content-mode.webm",
+    "bytes": 1687812,
+    "sha256": "8b5e9e52f9d84ceab01d2bd57bcb79bbb5d6b0643552a065d2efb2ca14346d33"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/context-text-variable.aa02770.528.avif": {
+    "file": "assets/18708cff90a3-context-text-variable.aa02770.528.avif",
+    "bytes": 12589,
+    "sha256": "169f87e3af223eb4374ba49ca7b6533bf4da322c26c8e99d4127f000cf43d894"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/cinematics/skip_cinematic_result.webm": {
+    "file": "assets/b51236f3fad4-skip_cinematic_result.webm",
+    "bytes": 756029,
+    "sha256": "2c3153c06e259f03b559e2fe35e80be6126f7b08fd3bd73a440d8ffa721a239d"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/07-advanced-interactions/assets/commands/sequence.json": {
+    "file": "assets/814d9dcd77ee-sequence.json",
+    "bytes": 424,
+    "sha256": "5574f5447f8696542ae2d4bd7e9737b04394c3c6cb842605edb7d615bd945482"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/interactions/final-result-default.webm": {
+    "file": "assets/37fdfc276168-final-result-default.webm",
+    "bytes": 533392,
+    "sha256": "93e9b744cc9323de7e9f00e80d6906a80531ef21fe24ce1cfe5bb38f0a209dde"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/on_flower_click.60a7569.269.avif": {
+    "file": "assets/ff2f92a436d5-on_flower_click.60a7569.269.avif",
+    "bytes": 8674,
+    "sha256": "b2a0693655aa9111130d3730158efce8f8f1d58f7956948ed4680e39f0e684ff"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/cinematics/playback.webm": {
+    "file": "assets/5ec128fbe50b-playback.webm",
+    "bytes": 7449864,
+    "sha256": "2a556cfc160510d00d1cdea9cab45ded789b9f0425c5ccf25a69ceb1431ffb6c"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/papi-icon.a3eb2bd.565.avif": {
+    "file": "assets/e5053950a9b4-papi-icon.a3eb2bd.565.avif",
+    "bytes": 1741,
+    "sha256": "348392ea15d1ce073a741a29753b92250b013a757ad0b80e10cefb18ca3eef6b"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/in_dialogue_activity.fea2a9f.648.avif": {
+    "file": "assets/2c8889550822-in_dialogue_activity.fea2a9f.648.avif",
+    "bytes": 10954,
+    "sha256": "0338c692d47d2a67dbd3c90d372cd23289881c71aaceef0e3bd3ce12140dd9de"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/option-bound-target-position.daa5430.521.avif": {
+    "file": "assets/a4e55a41cc17-option-bound-target-position.daa5430.521.avif",
+    "bytes": 12528,
+    "sha256": "a26fb1f086dc8275dc5e39e119c01263f35abbeee221b8a08109f00f72d73113"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/tunnels.323af52.1201.avif": {
+    "file": "assets/e80f0c001946-tunnels.323af52.1201.avif",
+    "bytes": 15742,
+    "sha256": "f90fd77e4fe45bf210d0c618d58d1614fa06787268f45357e00e6bfd9c92ad85"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/questing/talk-objective/manifest.json": {
+    "file": "assets/2df87e26c603-manifest.json",
+    "bytes": 4416,
+    "sha256": "aa879e7dd0643dc5e38aff848b8fed92936486cce314909201472f86ff312f7b"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/interactions/item-capturer.webm": {
+    "file": "assets/a61136307f2d-item-capturer.webm",
+    "bytes": 1361088,
+    "sha256": "abf90eed38097b9dcaca6052733a42129d64ff95343020f8a67226c09a215c7b"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/add-cinematic.9e15988.735.avif": {
+    "file": "assets/7f11e17cc0c8-add-cinematic.9e15988.735.avif",
+    "bytes": 2756,
+    "sha256": "ba7aad744edd709806b7fb6c4ae876e6609576a24954d7322c7f9da30932f2e5"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/entity_name_change.e412283.432.avif": {
+    "file": "assets/2317b98c5b8f-entity_name_change.e412283.432.avif",
+    "bytes": 3988,
+    "sha256": "55ab8c62eec920e012e171e6bee9b265ec71a0719334cb8a780e4e116faa28b6"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/radius.04ce433.1920.avif": {
+    "file": "assets/d1ab50b104c7-radius.04ce433.1920.avif",
+    "bytes": 313140,
+    "sha256": "de695c49081f0a15dabf6a5a97c8cb061ac46accc04185f8f7d633d2315d4af5"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/sub-chapters.54301bd.266.avif": {
+    "file": "assets/89402a80945e-sub-chapters.54301bd.266.avif",
+    "bytes": 1622,
+    "sha256": "91168917bf9c02e3599bcbb3bf40251ba91ed6e1ad6d9f74737824081daa09e4"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/questing/kill-zombie-objective/kill-zombie-objective-result.webm": {
+    "file": "assets/02002ef03e5a-kill-zombie-objective-result.webm",
+    "bytes": 1735006,
+    "sha256": "2b5733f09d7b96a7cec7c73631ac6e5ceb4ce94cd797c99ccf06f3bc01ca3357"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/criteria.aedf976.428.avif": {
+    "file": "assets/cc2d6e7acb81-criteria.aedf976.428.avif",
+    "bytes": 3351,
+    "sha256": "0cced870ce407c7940d6beb09d0384f18d74b67b8e171a8a4fe0f61d81cd9164"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/papi-factid.0f87150.518.avif": {
+    "file": "assets/3d63c2739603-papi-factid.0f87150.518.avif",
+    "bytes": 2958,
+    "sha256": "c450fc7c177e2274dbc9ce7b4abd54cc96c8858c06b6db80eec157a3c14d0909"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/cinematics/select-entity-definition.webm": {
+    "file": "assets/8e1884d5f813-select-entity-definition.webm",
+    "bytes": 814974,
+    "sha256": "fcb99c7fe994942056f07b89d452f7b5ebe40c964214337069df7e8eb3db86e3"
+  },
+  "https://raw.githubusercontent.com/gabber235/Typewriter/9b0a087150c594120d6b89b158f3402bb9d85142/documentation/versioned_docs/version-0.8.0/docs/assets/cinematics/recording.webm": {
+    "file": "assets/7e4ede08a51e-recording.webm",
+    "bytes": 5648797,
+    "sha256": "71e3c8fc1ef6468e705efad7f97f54cb28cf62a8209c55eb654445ea3eef6518"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/npc-example.0bc9ff5.821.avif": {
+    "file": "assets/2e8f18bf01d3-npc-example.0bc9ff5.821.avif",
+    "bytes": 5818,
+    "sha256": "e6fdea6c0b0b67520009d5ff78d7dc4cb1885b91a318c64f700a9227affa9000"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/custom-command-arguments.e8e529a.528.avif": {
+    "file": "assets/a3549dbd8813-custom-command-arguments.e8e529a.528.avif",
+    "bytes": 4922,
+    "sha256": "aa7b122add008daa59768711c685780cf0c1c6c24b3f1d87f1d893572cb83cde"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/configure-option.1c862f6.539.avif": {
+    "file": "assets/69e3dc334078-configure-option.1c862f6.539.avif",
+    "bytes": 8952,
+    "sha256": "63073a74c1a0e19dcae8866249908cb4fbddd9d46f982ad20d8331e6d4e7cf0a"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/modifier.914e01c.431.avif": {
+    "file": "assets/264d1702e913-modifier.914e01c.431.avif",
+    "bytes": 3326,
+    "sha256": "798bd6713aa93ffc7e49d86afa330b8c628db06cb37706bc26e5914f4cd8e8fc"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/entity-interact-event-fields.f2ab662.540.avif": {
+    "file": "assets/3a7f7589f256-entity-interact-event-fields.f2ab662.540.avif",
+    "bytes": 7514,
+    "sha256": "51ac3ef85edc533442bf8f189d156fc1df8e4bedb9dbc2d644637c8ea301754d"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/add-cinematic-fields.b15ef7e.535.avif": {
+    "file": "assets/94898bbdbc8d-add-cinematic-fields.b15ef7e.535.avif",
+    "bytes": 10295,
+    "sha256": "fc228e6590effcd8bd35d5f0fd76a9b9612dfc132282fabe79e14f4be41690fa"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/example_var_with_data_used.3958591.419.avif": {
+    "file": "assets/18ce148b6a8d-example_var_with_data_used.3958591.419.avif",
+    "bytes": 3361,
+    "sha256": "20c0deb6b544b03ddbca91930bc2cace87d5c0a8b17bbabcda18d3b1026fe776"
+  },
+  "https://docs.typewritermc.com/assets/optimized-img/no-entries.ddaef64.1877.avif": {
+    "file": "assets/e21678a2ead7-no-entries.ddaef64.1877.avif",
+    "bytes": 12753,
+    "sha256": "5318bd8cff6deda065ca44b82405c01d2d2745e309edbc4e0356f6fd4a9a9ce6"
+  }
+}

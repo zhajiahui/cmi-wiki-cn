@@ -1,0 +1,23 @@
+# Simple Sidebar
+
+The `SidebarEntry` is a display that shows a sidebar to players.
+
+To display lines on the sidebar, use the `SidebarLinesEntry` as its descendants.
+
+## How could this be used? {#how-could-this-be-used}
+
+This could be used to show a list of objectives, or the region a player is in.
+
+## Fields {#fields}
+
+## Children
+
+Required List
+
+## Title
+
+Required
+
+## Priority Override
+
+Optional

@@ -1,0 +1,475 @@
+Entries	条目
+Actions	动作
+Audiences	受众
+Dialogues	对话
+Events	事件
+Groups	组
+Quests	任务
+Sounds	声音
+Statics	静态条目
+Entitys	实体
+Activitys	活动
+Datas	数据
+Instances	实例
+Introduction	介绍
+Pages already written:	已完成的页面：
+To get started, follow these pages:	入门可按顺序阅读：
+Key Features	主要功能
+Why Choose Typewriter?	为什么选择 Typewriter？
+How could this be used?	用途示例
+Fields	字段
+Children	子条目（Children）
+Display Name	显示名称（Display Name）
+Active Criteria	激活条件（Active Criteria）
+Completed Criteria	完成条件（Completed Criteria）
+Criteria	条件（Criteria）
+Modifiers	修改器（Modifiers）
+Triggers	后续触发（Triggers）
+Potion Effect	药水效果（Potion Effect）
+Duration	持续时间（Duration）
+Amplifier	效果等级（Amplifier）
+Ambient	环境效果（Ambient）
+Particles	粒子（Particles）
+Icon	图标（Icon）
+Force	力（Force）
+Page	页面（Page）
+Command	命令（Command）
+Item	物品（Item）
+Location	位置（Location）
+Effects	效果（Effects）
+Power	强度（Power）
+Group	组（Group）
+Force Group	强制分组（Force Group）
+Sound	声音（Sound）
+Amount	数量（Amount）
+Speaker	说话者（Speaker）
+Message	消息（Message）
+Material	材质（Material）
+Slot	槽位（Slot）
+Title	标题（Title）
+Subtitle	副标题（Subtitle）
+Durations	各阶段时长（Durations）
+Particle	粒子（Particle）
+Count	数量（Count）
+Offset X	X 轴偏移（Offset X）
+Offset Y	Y 轴偏移（Offset Y）
+Offset Z	Z 轴偏移（Offset Z）
+Speed	速度（Speed）
+Server	服务器（Server）
+Quest	任务（Quest）
+Progress	进度（Progress）
+Color	颜色（Color）
+Style	样式（Style）
+Flags	标志（Flags）
+Inverted	反转（Inverted）
+Road	道路（Road）
+Cron	Cron 表达式
+Target Location	目标位置（Target Location）
+World	世界（World）
+Active Times	生效时段（Active Times）
+Cinematic Id	过场动画 ID（Cinematic Id）
+Priority Override	优先级覆盖（Priority Override）
+Lines	文本行（Lines）
+Header	页眉（Header）
+Footer	页脚（Footer）
+On Timer	计时结束时（On Timer）
+On Enter	进入时（On Enter）
+On Exit	离开时（On Exit）
+Segments	片段（Segments）
+Text	文本（Text）
+Options	选项（Options）
+Messages	消息（Messages）
+Crafted Item	合成的物品（Crafted Item）
+Block	方块（Block）
+Item In Hand	手中物品（Item In Hand）
+Cancel	取消（Cancel）
+Caught	钓获对象（Caught）
+Interaction Type	交互类型（Interaction Type）
+Shift Type	潜行类型（Shift Type）
+Exact Same	完全一致（Exact Same）
+Death Cause	死亡原因（Death Cause）
+Entity Type	实体类型（Entity Type）
+Killed Triggers	被击杀者触发项（Killed Triggers）
+Range	范围（Range）
+Comment	备注（Comment）
+Values	值列表（Values）
+Show Criteria	显示条件（Show Criteria）
+Display	显示（Display）
+Format	格式（Format）
+From	起始值（From）
+To	结束值（To）
+Sound Id	声音 ID（Sound Id）
+Artifact Id	文件产物 ID（Artifact Id）
+Override Name	覆盖名称（Override Name）
+Recorded Segments	已录制片段（Recorded Segments）
+Npc Id	NPC ID（Npc Id）
+Identifier	标识符（Identifier）
+Aggressor Triggers	攻击者触发项（Aggressor Triggers）
+Activities	活动（Activities）
+Default Activity	默认活动（Default Activity）
+Dialogue Idle Duration	对话后待机时长（Dialogue Idle Duration）
+Talking Activity	对话活动（Talking Activity）
+Idle Activity	待机活动（Idle Activity）
+Nodes	节点（Nodes）
+Max Idle Duration	最长待机时长（Max Idle Duration）
+Close By Activity	附近活动（Close By Activity）
+Pitch Range	俯仰角范围（Pitch Range）
+Yaw Range	偏航角范围（Yaw Range）
+Cooldown	冷却时间（Cooldown）
+Active Activity	生效时活动（Active Activity）
+Cooldown Activity	冷却时活动（Cooldown Activity）
+Activity	活动（Activity）
+On Start	开始时（On Start）
+On Stop	停止时（On Stop）
+Target	目标（Target）
+Definition	定义（Definition）
+Baby	幼年（Baby）
+Arrow Count	箭矢数量（Arrow Count）
+Cat Variant	猫变种（Cat Variant）
+Chested Horse	驮箱马类（Chested Horse）
+Cat Collar Color	猫项圈颜色（Cat Collar Color）
+Custom Name	自定义名称（Custom Name）
+Dancing	跳舞（Dancing）
+Glowing	发光（Glowing）
+Marking	斑纹（Marking）
+Variant	变种（Variant）
+Marker	标记（Marker）
+On Fire	着火（On Fire）
+Parrot Color	鹦鹉颜色（Parrot Color）
+Pose	姿势（Pose）
+State	状态（State）
+Rabbit Type	兔子类型（Rabbit Type）
+Saddled	装备鞍（Saddled）
+Size	大小（Size）
+Skin	皮肤（Skin）
+Small	小型（Small）
+Villager Type	村民类型（Villager Type）
+Profession	职业（Profession）
+Level	等级（Level）
+Spawn Location	生成位置（Spawn Location）
+Data	数据（Data）
+Base Entity	基础实体（Base Entity）
+Offset	偏移（Offset）
+Width	宽度（Width）
+Height	高度（Height）
+Definitions	定义列表（Definitions）
+Entity	实体（Entity）
+Override Display	覆盖显示（Override Display）
+Ignore Instances	忽略实例（Ignore Instances）
+Mob Name	生物名称（Mob Name）
+Skill Name	技能名称（Skill Name）
+Only Visible For Player	仅对该玩家可见（Only Visible For Player）
+Example:	示例：
+Region	区域（Region）
+Biome	生物群系（Biome）
+Invitee Triggers	被邀请者触发项（Invitee Triggers）
+Mission Name	岛屿任务名称（Mission Name）
+Fact	事实（Fact）
+Prefix	前缀（Prefix）
+Permission	权限（Permission）
+Regions	区域列表（Regions）
+Required	必填
+Inherited	继承
+Optional	可选
+List	列表
+Deprecated	已弃用
+Colored	支持颜色
+Multi-Line	多行
+Regex	正则表达式
+Placeholders	占位符
+Reference	引用
+Segment	片段
+Required List	必填 · 列表
+Inherited List	继承 · 列表
+Required Multi-Line Placeholders	必填 · 多行 · 支持占位符
+Required Colored Placeholders	必填 · 支持颜色 · 支持占位符
+Required Colored Multi-Line Placeholders	必填 · 支持颜色 · 多行 · 支持占位符
+Required List Segment	必填 · 列表 · 片段
+**caution**	**注意**
+**warning**	**警告**
+**info**	**说明**
+**tip**	**提示**
+**Outdated**	**内容已过时**
+Base Entry Interfaces	基础条目接口
+Implementation and Usage	实现与使用
+Defining a Entry	定义条目
+Prerequisites	前置条件
+Setting Up a Gradle Project	创建 Gradle 项目
+Building the Extension	构建扩展
+What's Next?	下一步
+Declaring an Initializer	声明初始化器
+Core Concepts	核心概念
+Basic Implementation	基本实现
+Trigger System	触发系统
+Trigger Handlers	触发处理器
+Activating the interaction	激活交互
+Flow Example	流程示例
+Priority System	优先级系统
+Custom triggers	自定义触发器
+System Triggers	系统触发器
+Dialogue Interaction	对话交互
+Temporal Interaction	时间交互
+New type: Ref	新增类型：Ref
+Change to facts interface	事实接口变更
+Entry Icon Changes	条目图标变更
+Messager Tick Parameter	Messager 的 tick 参数
+PlaceholderEntry Changes	PlaceholderEntry 变更
+`build.gradle.kts` Changes	`build.gradle.kts` 变更
+`Initializable` Changes	`Initializable` 变更
+Triggering Entries Changes	条目触发方式变更
+ActionEntry Changes	ActionEntry 变更
+Removal of `CustomTriggeringActionEntry`	移除 `CustomTriggeringActionEntry`
+Dialogue Messenger Changes	对话 Messenger 变更
+Suspendable `AudienceEntry#display`	可挂起的 `AudienceEntry#display`
+Usage	用法
+Ticking	逐 tick 执行
+Simulation & Recording	模拟与录制
+Basic Usage	基本用法
+Sub Placeholders	子占位符
+States and Behavior	状态与行为
+Implementation	实现
+Implementation Tips	实现提示
+Example Flow	流程示例
+Key Concepts	关键概念
+Basic AudienceEntry	基本 AudienceEntry
+Tickable Audience Display	可逐 tick 更新的受众显示
+Event Handling	事件处理
+Check if a player is in the audience of an entry	判断玩家是否属于条目的受众
+Best Practices	实践建议
+Static Filtering	静态筛选
+Dynamic Filtering	动态筛选
+Invertible Filters	可反转的过滤器
+Display Lifecycle	显示生命周期
+Scenario 1: Player Joins Server	场景 1：玩家加入服务器
+Scenario 2: Higher Priority Entry Becomes Active	场景 2：更高优先级的条目生效
+Scenario 3: Player Leaves Entry's Audience	场景 3：玩家离开条目的受众
+Priority Behavior	优先级行为
+Defining an ArtifactEntry	定义 ArtifactEntry
+Accessing the Artifact's Content	读取文件产物内容
+Defining an AssetEntry	定义 AssetEntry
+Understanding Variables	理解变量
+Adding Variable Data	添加变量数据
+Working with Generic Types	使用泛型
+Type Constraints	类型约束
+Variable Entry Usage	变量条目的用法
+Lifecycle	生命周期
+Entry Context Variables	条目上下文变量
+Audience Display Entry	受众显示条目
+Audience Filter Entry	受众过滤条目
+Filter Players	筛选玩家
+Display Content	显示内容
+How does filtering work?	筛选如何工作？
+Root Entries	根条目
+Chaining	链式连接
+Multiple Parents	多个父条目
+Then vs When	“然后”与“当……时”
+Then (`Sequence entries`)	“然后”（`Sequence entries`）
+When (`Manifest Entries`)	“当……时”（`Manifest Entries`）
+Interactive Visualization	交互图示
+What are cinematics?	什么是过场动画？
+Creating a cinematic	创建过场动画
+Adding a camera cinematic	添加镜头过场动画
+Creating a segment	创建片段
+Modifying the camera segment	修改镜头片段
+Using the content mode	使用内容模式
+Configuring it yourself	手动配置
+Understanding Duration	理解持续时间
+Example: 4 Points, 100 Frame Segment	示例：4 个点、100 帧片段
+result	结果
+What is the Entity Extension?	Entity Extension 是什么？
+Creating an NPC	创建 NPC
+Creating a new NPC definition	新建 NPC 定义
+Customizing the entity	自定义实体
+Setting the entity's name	设置实体名称
+Setting the NPC's skin	设置 NPC 皮肤
+Creating an npc instance	创建 NPC 实例
+Why Use Facts?	为什么使用事实？
+Types of facts	事实的类型
+Tutorial	教程
+Examples	示例
+What are interactions?	什么是交互？
+Creating an interaction	创建交互
+Configuring the interaction	配置交互
+Creating an event	创建事件
+Configuring the event	配置事件
+Configuring the speaker	配置说话者
+Result	结果
+Typewriter's Unique Approach to Quests	Typewriter 的任务实现方式
+🔑 Key Concept	🔑 关键概念
+⚙️ How Quests Work	⚙️ 任务如何工作
+💪 Why This Is Powerful	💪 这种方式的作用
+Visual Guide: How Facts Drive Quests	图示：事实如何驱动任务
+Quest Progression Flow	任务推进流程
+Not Started	未开始
+Searching	搜索中
+Item Found	已找到物品
+Completed	已完成
+Creating a Quest	创建任务
+Adding the Quest Entry	添加任务条目
+Configuring the Quest Entry	配置任务条目
+Visualizing the Quest Entry	任务条目预览
+Inactive Quest	未激活的任务
+Adding objectives	添加目标
+Displaying the Quest	显示任务
+What is the road network	什么是道路网络？
+Creating a road network	创建道路网络
+Opening the content mode	打开内容模式
+Adding a node	添加节点
+Creating the path	创建路径
+Editing a node	编辑节点
+Why is their radius?	半径有什么作用？
+How to use?	如何使用？
+Why remove an edge?	为什么要移除边？
+One way path	单向路径
+Why add a fast travel connection?	为什么添加快速旅行连接？
+One way fast travel	单向快速旅行
+Negative Nodes	负节点
+How to add a negative node?	如何添加负节点？
+Highlighting nodes	高亮节点
+Ending	结束
+Installing the Typewriter Plugin	安装 Typewriter 插件
+Plugin Installation	安装插件
+Handling Dependencies	安装依赖
+Basic Extension	基础扩展（Basic Extension）
+Configuring the Web Panel	配置网页面板
+Enabling the Web Panel	启用网页面板
+Connecting to the Web Panel	连接网页面板
+Troubleshooting	疑难解答
+Creating a page	创建页面
+Base Layout	基本布局
+Sequence, static and manifest layout	序列、静态和呈现页面的布局
+Cinematic layout	过场动画页面布局
+Setting Chapters	设置章节
+Setting Sub-Chapters	设置子章节
+Use PlaceHolderAPI's Placeholders	使用 PlaceholderAPI 占位符
+Use Typewriter's Placeholders	使用 Typewriter 占位符
+Placeholder Parameters	占位符参数
+Fact Entries	事实条目
+Expirable Facts	会过期的事实
+Custom placeholders	自定义占位符
+Search	搜索
+How do I customize Snippets?	如何自定义片段？
+Correct Extension Placement	扩展的正确位置
+Extension and Plugin Version Compatibility	扩展与插件的版本兼容性
+Error Message	错误消息
+Cause of the Issue	问题原因
+Steps to Fix	处理步骤
+Verifying the Fix	验证结果
+What is Playit.gg	Playit.gg 是什么？
+How to make typewriter work with playit.gg	如何让 Typewriter 配合 Playit.gg 使用
+Creating a new tunnel	创建隧道
+Connecting to the tw panel	连接 Typewriter 面板
+Assigning Ports Correctly	正确分配端口
+Using the Correct URL	使用正确的地址
+Avoiding Duplicate Ports in Config	避免配置中使用重复端口
+Creating a Custom Command	创建自定义命令
+Creating the arguments	创建参数
+Do something with your command	为命令添加行为
+Sequence result	序列结果
+In Game result	游戏内结果
+What are interaction bounds?	什么是交互边界？
+Two Modes of Bounds	边界的两种模式
+Interruption Mode	中断模式
+Blocking Mode	阻止模式
+How Modes Are Determined	如何决定模式
+How to use interaction bounds	使用交互边界
+Adding the Interaction Bound	添加交互边界
+Configuring the Interaction Bound	配置交互边界
+Making it a blocking interaction	设置为阻止模式
+What is an interaction context?	什么是交互上下文？
+Creating an input dialogue	创建输入对话
+Configuring the integer input dialogue	配置整数输入对话
+Adding the give flowers	添加给予花朵的动作
+Configuring the give flowers	配置给予花朵的动作
+Creating the interaction context variable	创建交互上下文变量
+Video Tutorial	视频教程
+Adding a dialogue	添加对话
+Configuring the dialogue	配置对话
+Configuring the dialogue segment	配置对话片段
+Adding an entity	添加实体
+Selecting the definition	选择定义
+Adding segments	添加片段
+Configuring the segment	配置片段
+Requesting the content mode.	请求内容模式
+Recording the NPC	录制 NPC
+Using the playback items	使用回放物品
+Adding the Join Entry	添加加入事件条目
+Waiting for Interaction	等待交互
+Configuring the Criteria	配置条件
+Configuring the Modifier	配置修改器
+Adding the `Add Cinematic` Entry	添加 `Add Cinematic` 条目
+Adding a skippable cinematic	添加可跳过的过场动画
+Configuring the skippable cinematic	配置可跳过的过场动画
+Adding a skippable part	添加可跳过片段
+Creating the dynamic variable	创建动态变量
+Configuring the dynamic variable	配置动态变量
+Where is the world value?	世界值在哪里？
+What are activities?	什么是活动？
+Assigning an activity to an entity	为实体指定活动
+Configuring the activity	配置活动
+Final result	最终结果
+Page Preview	页面预览
+In-Game Preview	游戏内预览
+Adding an audience entry	添加受众条目
+Adding it onto your entity instance.	添加到实体实例
+Configuring the audience	配置受众
+Adding the entity interact event	添加实体交互事件
+Adding the event.	添加事件
+Adding a spoken	添加逐字对话
+Configuring the spoken	配置逐字对话
+Setting the Criteria	设置条件
+Adding the second spoken	添加第二段逐字对话
+Configuring the second spoken Criteria	配置第二段逐字对话的条件
+Additional dialogue	补充对话
+Creating random dialogue	创建随机对话
+Configuring the random variable	配置随机变量
+Removing the random variable	移除随机变量
+Adding the give item	添加给予物品的动作
+Configuring the give item	配置给予物品的动作
+Differences	区别
+Using the Item Capturer(Serialized Item)	使用物品采集器（Serialized Item）
+Configuring it yourself(Custom Item)	手动配置（Custom Item）
+Creating an Option	创建选项
+Configuring a Option	配置选项
+Adding options	添加选项
+Understanding Quest Tracking	理解任务追踪
+How Tracking Works	追踪如何工作
+Setting Up Quest Tracking	设置任务追踪
+Automatic Tracking	自动追踪
+Manual Tracking	手动追踪
+Displaying Quest Information with Placeholders	用占位符显示任务信息
+Available Placeholders	可用的占位符
+Sidebar Display	侧边栏显示
+Quest Status Changes	任务状态变化
+Quest Flow	任务流程
+Quest Received	已接受任务
+Killing Zombies	击杀僵尸
+Quest Setup	任务设置
+Manifest Section	呈现部分
+Creating the Quest	创建任务
+Adding the Objective	添加目标
+Configuring the Objective Entry	配置目标条目
+Manifest Result	呈现结果
+Sequence Section	序列部分
+Interaction with Oliver	与 Oliver 交互
+Adding dialogue to Oliver	为 Oliver 添加对话
+On kill increase fact	击杀时增加事实值
+Increasing the fact	增加事实值
+Sequence Result	序列结果
+Final Result	最终结果
+Interaction with the First NPC	与第一个 NPC 交互
+Adding dialogue to the First NPC	为第一个 NPC 添加对话
+Interaction with the Second NPC	与第二个 NPC 交互
+Configuring the Second NPC Interaction	配置第二个 NPC 的交互
+Creating the option	创建选项
+Creating the Option Dialogue	创建选项对话
+Configuring the option	配置选项
+Adding a Case Variable	添加条件分支变量
+Configuring the Case Variable	配置条件分支变量
+Adding a Interaction Context Variable	添加交互上下文变量
+Configuring the Context Variable	配置上下文变量
+How it Works	工作方式
+Panel Not Loading	面板无法加载
+No Entries Showing	未显示条目
+Error: "plugin.yml not found" When Installing an Extension	安装扩展时提示“plugin.yml not found”
+Placeholders Not Parsing Correctly	占位符未正确解析

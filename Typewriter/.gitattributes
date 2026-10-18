@@ -1,0 +1,4 @@
+sources/live/** -text
+sources/html/** -text
+sources/repository/** -text
+docs/assets/** -text

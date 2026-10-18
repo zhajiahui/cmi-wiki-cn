@@ -1,0 +1,13 @@
+# Island Join Event
+
+The `Island Join Event` is fired when a player joins an island.
+
+## How could this be used? {#how-could-this-be-used}
+
+This event could be used for a "better together" system, where players can join islands and get rewards for doing so.
+
+## Fields {#fields}
+
+## Triggers
+
+Required List

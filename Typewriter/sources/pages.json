@@ -1,0 +1,2846 @@
+[
+  {
+    "url": "https://docs.typewritermc.com/adapters",
+    "path": "/adapters",
+    "title": "Extensions",
+    "html": "sources/live/60ebe71f6a23a227.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/README.mdx",
+    "text_characters": 336,
+    "english": "sources/en/adapters.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter",
+    "path": "/adapters/BasicAdapter",
+    "title": "Basic Adapter",
+    "html": "sources/live/79ac2c494990728b.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/BasicAdapter.mdx",
+    "text_characters": 7055,
+    "english": "sources/en/adapters/BasicAdapter.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/add_potion_effect",
+    "path": "/adapters/BasicAdapter/entries/action/add_potion_effect",
+    "title": "Add Potion Effect Action",
+    "html": "sources/live/f76cebebe79ec45a.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/action/add_potion_effect.mdx",
+    "text_characters": 1075,
+    "english": "sources/en/adapters/BasicAdapter/entries/action/add_potion_effect.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/apply_velocity",
+    "path": "/adapters/BasicAdapter/entries/action/apply_velocity",
+    "title": "Apply Velocity Action",
+    "html": "sources/live/8d9e2fcf6bdece42.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/action/apply_velocity.mdx",
+    "text_characters": 570,
+    "english": "sources/en/adapters/BasicAdapter/entries/action/apply_velocity.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/cinematic",
+    "path": "/adapters/BasicAdapter/entries/action/cinematic",
+    "title": "Cinematic",
+    "html": "sources/live/8f07c6c7d38c2a0e.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/action/cinematic.mdx",
+    "text_characters": 625,
+    "english": "sources/en/adapters/BasicAdapter/entries/action/cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/console_run_command",
+    "path": "/adapters/BasicAdapter/entries/action/console_run_command",
+    "title": "Console Command Action",
+    "html": "sources/live/118fb30b2f585d5c.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/action/console_run_command.mdx",
+    "text_characters": 998,
+    "english": "sources/en/adapters/BasicAdapter/entries/action/console_run_command.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/delayed_action",
+    "path": "/adapters/BasicAdapter/entries/action/delayed_action",
+    "title": "Delayed Action",
+    "html": "sources/live/2fc46ce97a3f0d75.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/action/delayed_action.mdx",
+    "text_characters": 923,
+    "english": "sources/en/adapters/BasicAdapter/entries/action/delayed_action.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/drop_item",
+    "path": "/adapters/BasicAdapter/entries/action/drop_item",
+    "title": "Drop Item Action",
+    "html": "sources/live/d137dd5967489be9.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/action/drop_item.mdx",
+    "text_characters": 902,
+    "english": "sources/en/adapters/BasicAdapter/entries/action/drop_item.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/firework",
+    "path": "/adapters/BasicAdapter/entries/action/firework",
+    "title": "Firework Action",
+    "html": "sources/live/c24e9896cb6b1d1d.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/action/firework.mdx",
+    "text_characters": 582,
+    "english": "sources/en/adapters/BasicAdapter/entries/action/firework.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/give_item",
+    "path": "/adapters/BasicAdapter/entries/action/give_item",
+    "title": "Give Item Action",
+    "html": "sources/live/58c9779eaa0a89a5.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/action/give_item.mdx",
+    "text_characters": 755,
+    "english": "sources/en/adapters/BasicAdapter/entries/action/give_item.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/group_trigger_action",
+    "path": "/adapters/BasicAdapter/entries/action/group_trigger_action",
+    "title": "Group Trigger Action",
+    "html": "sources/live/1a59a59c8f9359ee.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/action/group_trigger_action.mdx",
+    "text_characters": 932,
+    "english": "sources/en/adapters/BasicAdapter/entries/action/group_trigger_action.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/play_sound",
+    "path": "/adapters/BasicAdapter/entries/action/play_sound",
+    "title": "Play Sound Action",
+    "html": "sources/live/8f98344d23eb75f4.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/action/play_sound.mdx",
+    "text_characters": 803,
+    "english": "sources/en/adapters/BasicAdapter/entries/action/play_sound.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/player_run_command",
+    "path": "/adapters/BasicAdapter/entries/action/player_run_command",
+    "title": "Player Command Action",
+    "html": "sources/live/1f9d81615d3bc13f.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/action/player_run_command.mdx",
+    "text_characters": 1115,
+    "english": "sources/en/adapters/BasicAdapter/entries/action/player_run_command.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/random_trigger",
+    "path": "/adapters/BasicAdapter/entries/action/random_trigger",
+    "title": "Random Trigger Gate",
+    "html": "sources/live/c08ebf953304778a.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/action/random_trigger.mdx",
+    "text_characters": 795,
+    "english": "sources/en/adapters/BasicAdapter/entries/action/random_trigger.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/remove_item",
+    "path": "/adapters/BasicAdapter/entries/action/remove_item",
+    "title": "Remove Item Action",
+    "html": "sources/live/ef61d11982b95c96.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/action/remove_item.mdx",
+    "text_characters": 992,
+    "english": "sources/en/adapters/BasicAdapter/entries/action/remove_item.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/send_message",
+    "path": "/adapters/BasicAdapter/entries/action/send_message",
+    "title": "Message Action",
+    "html": "sources/live/f2861d1b6b8f7ab1.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/action/send_message.mdx",
+    "text_characters": 1028,
+    "english": "sources/en/adapters/BasicAdapter/entries/action/send_message.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/set_block",
+    "path": "/adapters/BasicAdapter/entries/action/set_block",
+    "title": "Set Block Action",
+    "html": "sources/live/a6e417b2d868b13a.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/action/set_block.mdx",
+    "text_characters": 837,
+    "english": "sources/en/adapters/BasicAdapter/entries/action/set_block.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/set_item",
+    "path": "/adapters/BasicAdapter/entries/action/set_item",
+    "title": "Set Item Action",
+    "html": "sources/live/cb7c465a857d4f7d.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/action/set_item.mdx",
+    "text_characters": 533,
+    "english": "sources/en/adapters/BasicAdapter/entries/action/set_item.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/show_title",
+    "path": "/adapters/BasicAdapter/entries/action/show_title",
+    "title": "Show Title Action",
+    "html": "sources/live/add78e9abe09092c.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/action/show_title.mdx",
+    "text_characters": 1312,
+    "english": "sources/en/adapters/BasicAdapter/entries/action/show_title.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/simple_action",
+    "path": "/adapters/BasicAdapter/entries/action/simple_action",
+    "title": "Simple Action",
+    "html": "sources/live/4a9c81a76eff70e8.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/action/simple_action.mdx",
+    "text_characters": 539,
+    "english": "sources/en/adapters/BasicAdapter/entries/action/simple_action.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/spawn_particles",
+    "path": "/adapters/BasicAdapter/entries/action/spawn_particles",
+    "title": "Spawn Particle Action",
+    "html": "sources/live/f2d4e88178f09a97.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/action/spawn_particles.mdx",
+    "text_characters": 1175,
+    "english": "sources/en/adapters/BasicAdapter/entries/action/spawn_particles.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/stop_sound",
+    "path": "/adapters/BasicAdapter/entries/action/stop_sound",
+    "title": "Stop Sound Action",
+    "html": "sources/live/4cfbf2525e836b5b.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/action/stop_sound.mdx",
+    "text_characters": 627,
+    "english": "sources/en/adapters/BasicAdapter/entries/action/stop_sound.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/switch_server_action",
+    "path": "/adapters/BasicAdapter/entries/action/switch_server_action",
+    "title": "Switch Server Action",
+    "html": "sources/live/9b38b8471e9136ab.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/action/switch_server_action.mdx",
+    "text_characters": 552,
+    "english": "sources/en/adapters/BasicAdapter/entries/action/switch_server_action.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/teleport",
+    "path": "/adapters/BasicAdapter/entries/action/teleport",
+    "title": "Teleport Action",
+    "html": "sources/live/ec03fbdeb0b671ca.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/action/teleport.mdx",
+    "text_characters": 604,
+    "english": "sources/en/adapters/BasicAdapter/entries/action/teleport.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/action/track_quest",
+    "path": "/adapters/BasicAdapter/entries/action/track_quest",
+    "title": "Track Quest Action",
+    "html": "sources/live/e09326caf29c0bfa.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/action/track_quest.mdx",
+    "text_characters": 533,
+    "english": "sources/en/adapters/BasicAdapter/entries/action/track_quest.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/boss_bar",
+    "path": "/adapters/BasicAdapter/entries/audience/boss_bar",
+    "title": "Boss Bar",
+    "html": "sources/live/ea384721e9e784cd.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/audience/boss_bar.mdx",
+    "text_characters": 718,
+    "english": "sources/en/adapters/BasicAdapter/entries/audience/boss_bar.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/cinematic_audience",
+    "path": "/adapters/BasicAdapter/entries/audience/cinematic_audience",
+    "title": "Cinematic Audience",
+    "html": "sources/live/ba30a4a6ccf2523c.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/audience/cinematic_audience.mdx",
+    "text_characters": 427,
+    "english": "sources/en/adapters/BasicAdapter/entries/audience/cinematic_audience.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/closest_group_member_path_stream",
+    "path": "/adapters/BasicAdapter/entries/audience/closest_group_member_path_stream",
+    "title": "Closest Group Member Path Stream",
+    "html": "sources/live/9eeaaa963a8c645f.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/audience/closest_group_member_path_stream.mdx",
+    "text_characters": 648,
+    "english": "sources/en/adapters/BasicAdapter/entries/audience/closest_group_member_path_stream.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/criteria_audience",
+    "path": "/adapters/BasicAdapter/entries/audience/criteria_audience",
+    "title": "Criteria Audience",
+    "html": "sources/live/e61526fa9a4299c6.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/audience/criteria_audience.mdx",
+    "text_characters": 357,
+    "english": "sources/en/adapters/BasicAdapter/entries/audience/criteria_audience.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/cron_audience",
+    "path": "/adapters/BasicAdapter/entries/audience/cron_audience",
+    "title": "Cron Audience",
+    "html": "sources/live/15c1a9a281a40c4a.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/audience/cron_audience.mdx",
+    "text_characters": 347,
+    "english": "sources/en/adapters/BasicAdapter/entries/audience/cron_audience.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/direct_location_path_stream",
+    "path": "/adapters/BasicAdapter/entries/audience/direct_location_path_stream",
+    "title": "Direct Location Path Stream",
+    "html": "sources/live/512aaf5784d20e6b.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/audience/direct_location_path_stream.mdx",
+    "text_characters": 362,
+    "english": "sources/en/adapters/BasicAdapter/entries/audience/direct_location_path_stream.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/game_time_audience",
+    "path": "/adapters/BasicAdapter/entries/audience/game_time_audience",
+    "title": "Game Time Audience",
+    "html": "sources/live/22f4168603d59ce6.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/audience/game_time_audience.mdx",
+    "text_characters": 524,
+    "english": "sources/en/adapters/BasicAdapter/entries/audience/game_time_audience.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/group_members_path_stream",
+    "path": "/adapters/BasicAdapter/entries/audience/group_members_path_stream",
+    "title": "Group Members Path Stream",
+    "html": "sources/live/508dc67d95d495fb.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/audience/group_members_path_stream.mdx",
+    "text_characters": 519,
+    "english": "sources/en/adapters/BasicAdapter/entries/audience/group_members_path_stream.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/holding_item_audience",
+    "path": "/adapters/BasicAdapter/entries/audience/holding_item_audience",
+    "title": "Holding Item Audience",
+    "html": "sources/live/886a320a2354ee13.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/audience/holding_item_audience.mdx",
+    "text_characters": 408,
+    "english": "sources/en/adapters/BasicAdapter/entries/audience/holding_item_audience.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/item_in_inventory_audience",
+    "path": "/adapters/BasicAdapter/entries/audience/item_in_inventory_audience",
+    "title": "Item In Inventory Audience",
+    "html": "sources/live/2ee94620c9c78f27.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/audience/item_in_inventory_audience.mdx",
+    "text_characters": 370,
+    "english": "sources/en/adapters/BasicAdapter/entries/audience/item_in_inventory_audience.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/item_in_slot_audience",
+    "path": "/adapters/BasicAdapter/entries/audience/item_in_slot_audience",
+    "title": "Item In Slot Audience",
+    "html": "sources/live/d5785ba2a8c39490.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/audience/item_in_slot_audience.mdx",
+    "text_characters": 359,
+    "english": "sources/en/adapters/BasicAdapter/entries/audience/item_in_slot_audience.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/location_objectives_path_stream",
+    "path": "/adapters/BasicAdapter/entries/audience/location_objectives_path_stream",
+    "title": "Location Objectives Path Stream",
+    "html": "sources/live/873b1be5969090fb.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/audience/location_objectives_path_stream.mdx",
+    "text_characters": 387,
+    "english": "sources/en/adapters/BasicAdapter/entries/audience/location_objectives_path_stream.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/looping_cinematic_audience",
+    "path": "/adapters/BasicAdapter/entries/audience/looping_cinematic_audience",
+    "title": "Looping Cinematic Audience",
+    "html": "sources/live/8b5c0ed7f576b2db.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/audience/looping_cinematic_audience.mdx",
+    "text_characters": 593,
+    "english": "sources/en/adapters/BasicAdapter/entries/audience/looping_cinematic_audience.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/sidebar",
+    "path": "/adapters/BasicAdapter/entries/audience/sidebar",
+    "title": "Simple Sidebar",
+    "html": "sources/live/cb4e6d8c974c3f68.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/audience/sidebar.mdx",
+    "text_characters": 335,
+    "english": "sources/en/adapters/BasicAdapter/entries/audience/sidebar.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/simple_lines",
+    "path": "/adapters/BasicAdapter/entries/audience/simple_lines",
+    "title": "Simple Lines",
+    "html": "sources/live/6a2f30c2c3eefe74.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/audience/simple_lines.mdx",
+    "text_characters": 662,
+    "english": "sources/en/adapters/BasicAdapter/entries/audience/simple_lines.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/tab_list_header_footer",
+    "path": "/adapters/BasicAdapter/entries/audience/tab_list_header_footer",
+    "title": "Tab List Header Footer",
+    "html": "sources/live/839a4e3bf9e7bccd.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/audience/tab_list_header_footer.mdx",
+    "text_characters": 384,
+    "english": "sources/en/adapters/BasicAdapter/entries/audience/tab_list_header_footer.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/timer_audience",
+    "path": "/adapters/BasicAdapter/entries/audience/timer_audience",
+    "title": "Timer Audience",
+    "html": "sources/live/af074020f74a7e26.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/audience/timer_audience.mdx",
+    "text_characters": 516,
+    "english": "sources/en/adapters/BasicAdapter/entries/audience/timer_audience.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/audience/trigger_audience",
+    "path": "/adapters/BasicAdapter/entries/audience/trigger_audience",
+    "title": "Trigger Audience",
+    "html": "sources/live/19bbcf0b62458f15.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/audience/trigger_audience.mdx",
+    "text_characters": 400,
+    "english": "sources/en/adapters/BasicAdapter/entries/audience/trigger_audience.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/actionbar_dialogue_cinematic",
+    "path": "/adapters/BasicAdapter/entries/cinematic/actionbar_dialogue_cinematic",
+    "title": "Action Bar Dialogue Cinematic",
+    "html": "sources/live/a35e719b3498bb0b.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/cinematic/actionbar_dialogue_cinematic.mdx",
+    "text_characters": 756,
+    "english": "sources/en/adapters/BasicAdapter/entries/cinematic/actionbar_dialogue_cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/blinding_cinematic",
+    "path": "/adapters/BasicAdapter/entries/cinematic/blinding_cinematic",
+    "title": "Blinding Cinematic",
+    "html": "sources/live/f3dbd898e1309f5c.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/cinematic/blinding_cinematic.mdx",
+    "text_characters": 520,
+    "english": "sources/en/adapters/BasicAdapter/entries/cinematic/blinding_cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/camera_cinematic",
+    "path": "/adapters/BasicAdapter/entries/cinematic/camera_cinematic",
+    "title": "Camera Cinematic",
+    "html": "sources/live/927e63b51e818f48.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/cinematic/camera_cinematic.mdx",
+    "text_characters": 1130,
+    "english": "sources/en/adapters/BasicAdapter/entries/cinematic/camera_cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/cinematic_console_command",
+    "path": "/adapters/BasicAdapter/entries/cinematic/cinematic_console_command",
+    "title": "Cinematic Console Command",
+    "html": "sources/live/c72a773bb1589090.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/cinematic/cinematic_console_command.mdx",
+    "text_characters": 612,
+    "english": "sources/en/adapters/BasicAdapter/entries/cinematic/cinematic_console_command.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/cinematic_player_command",
+    "path": "/adapters/BasicAdapter/entries/cinematic/cinematic_player_command",
+    "title": "Cinematic Player Command",
+    "html": "sources/live/0273f312aaae0066.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/cinematic/cinematic_player_command.mdx",
+    "text_characters": 609,
+    "english": "sources/en/adapters/BasicAdapter/entries/cinematic/cinematic_player_command.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/particle_cinematic",
+    "path": "/adapters/BasicAdapter/entries/cinematic/particle_cinematic",
+    "title": "Particle Cinematic",
+    "html": "sources/live/8ba39bfb15bcb34f.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/cinematic/particle_cinematic.mdx",
+    "text_characters": 1093,
+    "english": "sources/en/adapters/BasicAdapter/entries/cinematic/particle_cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/potion_effect_cinematic",
+    "path": "/adapters/BasicAdapter/entries/cinematic/potion_effect_cinematic",
+    "title": "Potion Effect Cinematic",
+    "html": "sources/live/b07e14d43cbcd428.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/cinematic/potion_effect_cinematic.mdx",
+    "text_characters": 654,
+    "english": "sources/en/adapters/BasicAdapter/entries/cinematic/potion_effect_cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/pumpkin_hat_cinematic",
+    "path": "/adapters/BasicAdapter/entries/cinematic/pumpkin_hat_cinematic",
+    "title": "Pumpkin Hat Cinematic",
+    "html": "sources/live/8999548a50edb2df.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/cinematic/pumpkin_hat_cinematic.mdx",
+    "text_characters": 578,
+    "english": "sources/en/adapters/BasicAdapter/entries/cinematic/pumpkin_hat_cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/random_actionbar_dialogue_cinematic",
+    "path": "/adapters/BasicAdapter/entries/cinematic/random_actionbar_dialogue_cinematic",
+    "title": "Random Action Bar Dialogue Cinematic",
+    "html": "sources/live/3b74db8fb0ab15f2.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/cinematic/random_actionbar_dialogue_cinematic.mdx",
+    "text_characters": 451,
+    "english": "sources/en/adapters/BasicAdapter/entries/cinematic/random_actionbar_dialogue_cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/random_spoken_dialogue_cinematic",
+    "path": "/adapters/BasicAdapter/entries/cinematic/random_spoken_dialogue_cinematic",
+    "title": "Random Spoken Dialogue Cinematic",
+    "html": "sources/live/3978c936c50a51bc.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/cinematic/random_spoken_dialogue_cinematic.mdx",
+    "text_characters": 447,
+    "english": "sources/en/adapters/BasicAdapter/entries/cinematic/random_spoken_dialogue_cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/random_subtitle_dialogue_cinematic",
+    "path": "/adapters/BasicAdapter/entries/cinematic/random_subtitle_dialogue_cinematic",
+    "title": "Random Subtitle Dialogue Cinematic",
+    "html": "sources/live/d3d97dcdb5f6a40c.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/cinematic/random_subtitle_dialogue_cinematic.mdx",
+    "text_characters": 442,
+    "english": "sources/en/adapters/BasicAdapter/entries/cinematic/random_subtitle_dialogue_cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/screen_shake_cinematic",
+    "path": "/adapters/BasicAdapter/entries/cinematic/screen_shake_cinematic",
+    "title": "Screen Shake Cinematic",
+    "html": "sources/live/d1675a69bccd8a8c.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/cinematic/screen_shake_cinematic.mdx",
+    "text_characters": 503,
+    "english": "sources/en/adapters/BasicAdapter/entries/cinematic/screen_shake_cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/set_fake_block_cinematic",
+    "path": "/adapters/BasicAdapter/entries/cinematic/set_fake_block_cinematic",
+    "title": "Set Fake Block Cinematic",
+    "html": "sources/live/d0b94a3316ad46c6.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/cinematic/set_fake_block_cinematic.mdx",
+    "text_characters": 424,
+    "english": "sources/en/adapters/BasicAdapter/entries/cinematic/set_fake_block_cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/sound_cinematic",
+    "path": "/adapters/BasicAdapter/entries/cinematic/sound_cinematic",
+    "title": "Sound Cinematic",
+    "html": "sources/live/e25e901027524a28.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/cinematic/sound_cinematic.mdx",
+    "text_characters": 531,
+    "english": "sources/en/adapters/BasicAdapter/entries/cinematic/sound_cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/spoken_dialogue_cinematic",
+    "path": "/adapters/BasicAdapter/entries/cinematic/spoken_dialogue_cinematic",
+    "title": "Spoken Dialogue Cinematic",
+    "html": "sources/live/89f7d1c4019b2e7f.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/cinematic/spoken_dialogue_cinematic.mdx",
+    "text_characters": 599,
+    "english": "sources/en/adapters/BasicAdapter/entries/cinematic/spoken_dialogue_cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/subtitle_dialogue_cinematic",
+    "path": "/adapters/BasicAdapter/entries/cinematic/subtitle_dialogue_cinematic",
+    "title": "Subtitle Dialogue Cinematic",
+    "html": "sources/live/477da7316cf36255.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/cinematic/subtitle_dialogue_cinematic.mdx",
+    "text_characters": 784,
+    "english": "sources/en/adapters/BasicAdapter/entries/cinematic/subtitle_dialogue_cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/title_cinematic",
+    "path": "/adapters/BasicAdapter/entries/cinematic/title_cinematic",
+    "title": "Title Cinematic",
+    "html": "sources/live/f8a01483cbc1f207.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/cinematic/title_cinematic.mdx",
+    "text_characters": 524,
+    "english": "sources/en/adapters/BasicAdapter/entries/cinematic/title_cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/cinematic/trigger_sequence_cinematic",
+    "path": "/adapters/BasicAdapter/entries/cinematic/trigger_sequence_cinematic",
+    "title": "Trigger Sequence Cinematic",
+    "html": "sources/live/54864a679c3e12a7.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/cinematic/trigger_sequence_cinematic.mdx",
+    "text_characters": 927,
+    "english": "sources/en/adapters/BasicAdapter/entries/cinematic/trigger_sequence_cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/dialogue/message",
+    "path": "/adapters/BasicAdapter/entries/dialogue/message",
+    "title": "Message Dialogue",
+    "html": "sources/live/e740673ad7c2a1f2.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/dialogue/message.mdx",
+    "text_characters": 1040,
+    "english": "sources/en/adapters/BasicAdapter/entries/dialogue/message.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/dialogue/option",
+    "path": "/adapters/BasicAdapter/entries/dialogue/option",
+    "title": "Option Dialogue",
+    "html": "sources/live/798065dfbfd19dc1.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/dialogue/option.mdx",
+    "text_characters": 1373,
+    "english": "sources/en/adapters/BasicAdapter/entries/dialogue/option.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/dialogue/random_message",
+    "path": "/adapters/BasicAdapter/entries/dialogue/random_message",
+    "title": "Random Message Dialogue",
+    "html": "sources/live/f1eabfc3a11b9a47.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/dialogue/random_message.mdx",
+    "text_characters": 1097,
+    "english": "sources/en/adapters/BasicAdapter/entries/dialogue/random_message.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/dialogue/random_spoken",
+    "path": "/adapters/BasicAdapter/entries/dialogue/random_spoken",
+    "title": "Random Spoken Dialogue",
+    "html": "sources/live/084d1540a674697e.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/dialogue/random_spoken.mdx",
+    "text_characters": 1294,
+    "english": "sources/en/adapters/BasicAdapter/entries/dialogue/random_spoken.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/dialogue/spoken",
+    "path": "/adapters/BasicAdapter/entries/dialogue/spoken",
+    "title": "Spoken Dialogue",
+    "html": "sources/live/d8ab0f267d85d418.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/dialogue/spoken.mdx",
+    "text_characters": 1251,
+    "english": "sources/en/adapters/BasicAdapter/entries/dialogue/spoken.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/craft_item_event",
+    "path": "/adapters/BasicAdapter/entries/event/craft_item_event",
+    "title": "Craft Item Event",
+    "html": "sources/live/15b8239600e72fd5.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/event/craft_item_event.mdx",
+    "text_characters": 436,
+    "english": "sources/en/adapters/BasicAdapter/entries/event/craft_item_event.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/fire_trigger_event",
+    "path": "/adapters/BasicAdapter/entries/event/fire_trigger_event",
+    "title": "Fire Trigger Event",
+    "html": "sources/live/84feb4fda3a08096.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/event/fire_trigger_event.mdx",
+    "text_characters": 285,
+    "english": "sources/en/adapters/BasicAdapter/entries/event/fire_trigger_event.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_block_break",
+    "path": "/adapters/BasicAdapter/entries/event/on_block_break",
+    "title": "Block Break Event",
+    "html": "sources/live/7a2f1fa711df00b1.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/event/on_block_break.mdx",
+    "text_characters": 455,
+    "english": "sources/en/adapters/BasicAdapter/entries/event/on_block_break.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_detect_command_ran",
+    "path": "/adapters/BasicAdapter/entries/event/on_detect_command_ran",
+    "title": "Detect Command Ran Event",
+    "html": "sources/live/4d50054f9e9f1058.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/event/on_detect_command_ran.mdx",
+    "text_characters": 1104,
+    "english": "sources/en/adapters/BasicAdapter/entries/event/on_detect_command_ran.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_fish",
+    "path": "/adapters/BasicAdapter/entries/event/on_fish",
+    "title": "Fish Event",
+    "html": "sources/live/e93f356eae8f1498.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/event/on_fish.mdx",
+    "text_characters": 395,
+    "english": "sources/en/adapters/BasicAdapter/entries/event/on_fish.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_interact_with_block",
+    "path": "/adapters/BasicAdapter/entries/event/on_interact_with_block",
+    "title": "Interact Block Event",
+    "html": "sources/live/0c6fa96de6e7232e.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/event/on_interact_with_block.mdx",
+    "text_characters": 865,
+    "english": "sources/en/adapters/BasicAdapter/entries/event/on_interact_with_block.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_item_pickup",
+    "path": "/adapters/BasicAdapter/entries/event/on_item_pickup",
+    "title": "Pickup Item Event",
+    "html": "sources/live/575a2bb8f2b06e65.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/event/on_item_pickup.mdx",
+    "text_characters": 294,
+    "english": "sources/en/adapters/BasicAdapter/entries/event/on_item_pickup.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_message_contains_text",
+    "path": "/adapters/BasicAdapter/entries/event/on_message_contains_text",
+    "title": "Chat Contains Text Event",
+    "html": "sources/live/c1b7dee1666f9d86.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/event/on_message_contains_text.mdx",
+    "text_characters": 467,
+    "english": "sources/en/adapters/BasicAdapter/entries/event/on_message_contains_text.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_place_block",
+    "path": "/adapters/BasicAdapter/entries/event/on_place_block",
+    "title": "Block Place Event",
+    "html": "sources/live/a24a4615e44570dc.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/event/on_place_block.mdx",
+    "text_characters": 483,
+    "english": "sources/en/adapters/BasicAdapter/entries/event/on_place_block.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_player_death",
+    "path": "/adapters/BasicAdapter/entries/event/on_player_death",
+    "title": "Player Death Event",
+    "html": "sources/live/8f662d0706c8d5bb.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/event/on_player_death.mdx",
+    "text_characters": 531,
+    "english": "sources/en/adapters/BasicAdapter/entries/event/on_player_death.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_player_hit_entity",
+    "path": "/adapters/BasicAdapter/entries/event/on_player_hit_entity",
+    "title": "Player Hit Entity Event",
+    "html": "sources/live/7aeeafce2963dfde.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/event/on_player_hit_entity.mdx",
+    "text_characters": 591,
+    "english": "sources/en/adapters/BasicAdapter/entries/event/on_player_hit_entity.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_player_join",
+    "path": "/adapters/BasicAdapter/entries/event/on_player_join",
+    "title": "Player Join Event",
+    "html": "sources/live/fdc618465540a3f7.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/event/on_player_join.mdx",
+    "text_characters": 369,
+    "english": "sources/en/adapters/BasicAdapter/entries/event/on_player_join.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_player_kill_entity",
+    "path": "/adapters/BasicAdapter/entries/event/on_player_kill_entity",
+    "title": "Player Kill Entity Event",
+    "html": "sources/live/d559a6f8bbf1f91e.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/event/on_player_kill_entity.mdx",
+    "text_characters": 558,
+    "english": "sources/en/adapters/BasicAdapter/entries/event/on_player_kill_entity.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_player_kill_player",
+    "path": "/adapters/BasicAdapter/entries/event/on_player_kill_player",
+    "title": "Player Kill Player Event",
+    "html": "sources/live/c979519dc6edc379.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/event/on_player_kill_player.mdx",
+    "text_characters": 557,
+    "english": "sources/en/adapters/BasicAdapter/entries/event/on_player_kill_player.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_player_near_location",
+    "path": "/adapters/BasicAdapter/entries/event/on_player_near_location",
+    "title": "Player Near Location Event",
+    "html": "sources/live/38d058411a5884a3.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/event/on_player_near_location.mdx",
+    "text_characters": 603,
+    "english": "sources/en/adapters/BasicAdapter/entries/event/on_player_near_location.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_player_quit",
+    "path": "/adapters/BasicAdapter/entries/event/on_player_quit",
+    "title": "Player Quit Event",
+    "html": "sources/live/1a7d7a4f3eafb1ce.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/event/on_player_quit.mdx",
+    "text_characters": 235,
+    "english": "sources/en/adapters/BasicAdapter/entries/event/on_player_quit.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/event/on_run_command",
+    "path": "/adapters/BasicAdapter/entries/event/on_run_command",
+    "title": "Run Command Event",
+    "html": "sources/live/6301948489b35c4c.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/event/on_run_command.mdx",
+    "text_characters": 376,
+    "english": "sources/en/adapters/BasicAdapter/entries/event/on_run_command.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/countdown_fact",
+    "path": "/adapters/BasicAdapter/entries/fact/countdown_fact",
+    "title": "Countdown Fact",
+    "html": "sources/live/36a01978c2256939.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/fact/countdown_fact.mdx",
+    "text_characters": 603,
+    "english": "sources/en/adapters/BasicAdapter/entries/fact/countdown_fact.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/cron_fact",
+    "path": "/adapters/BasicAdapter/entries/fact/cron_fact",
+    "title": "Cron Fact",
+    "html": "sources/live/bfcf979fde9f3441.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/fact/cron_fact.mdx",
+    "text_characters": 383,
+    "english": "sources/en/adapters/BasicAdapter/entries/fact/cron_fact.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/in_audience_fact",
+    "path": "/adapters/BasicAdapter/entries/fact/in_audience_fact",
+    "title": "In Audience Fact",
+    "html": "sources/live/a110833d6c0446a9.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/fact/in_audience_fact.mdx",
+    "text_characters": 412,
+    "english": "sources/en/adapters/BasicAdapter/entries/fact/in_audience_fact.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/in_cinematic_fact",
+    "path": "/adapters/BasicAdapter/entries/fact/in_cinematic_fact",
+    "title": "In Cinematic Fact",
+    "html": "sources/live/9b6e22d5af9c182a.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/fact/in_cinematic_fact.mdx",
+    "text_characters": 618,
+    "english": "sources/en/adapters/BasicAdapter/entries/fact/in_cinematic_fact.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/inventory_item_count_fact",
+    "path": "/adapters/BasicAdapter/entries/fact/inventory_item_count_fact",
+    "title": "Inventory Item Count Fact",
+    "html": "sources/live/b4e922d5d1914c10.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/fact/inventory_item_count_fact.mdx",
+    "text_characters": 641,
+    "english": "sources/en/adapters/BasicAdapter/entries/fact/inventory_item_count_fact.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/item_holding_fact",
+    "path": "/adapters/BasicAdapter/entries/fact/item_holding_fact",
+    "title": "Item Holding Fact",
+    "html": "sources/live/eff8ddb6bc8a888c.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/fact/item_holding_fact.mdx",
+    "text_characters": 617,
+    "english": "sources/en/adapters/BasicAdapter/entries/fact/item_holding_fact.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/item_in_slot_fact",
+    "path": "/adapters/BasicAdapter/entries/fact/item_in_slot_fact",
+    "title": "Item In Slot Fact",
+    "html": "sources/live/912754883c58caf6.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/fact/item_in_slot_fact.mdx",
+    "text_characters": 470,
+    "english": "sources/en/adapters/BasicAdapter/entries/fact/item_in_slot_fact.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/number_placeholder",
+    "path": "/adapters/BasicAdapter/entries/fact/number_placeholder",
+    "title": "Number Placeholder Fact",
+    "html": "sources/live/a78994340c6287f5.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/fact/number_placeholder.mdx",
+    "text_characters": 846,
+    "english": "sources/en/adapters/BasicAdapter/entries/fact/number_placeholder.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/permanent_fact",
+    "path": "/adapters/BasicAdapter/entries/fact/permanent_fact",
+    "title": "Permanent Fact",
+    "html": "sources/live/ae930ad9793d5690.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/fact/permanent_fact.mdx",
+    "text_characters": 382,
+    "english": "sources/en/adapters/BasicAdapter/entries/fact/permanent_fact.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/quest_status_fact",
+    "path": "/adapters/BasicAdapter/entries/fact/quest_status_fact",
+    "title": "Quest Status Fact",
+    "html": "sources/live/1f02cd72d484515f.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/fact/quest_status_fact.mdx",
+    "text_characters": 661,
+    "english": "sources/en/adapters/BasicAdapter/entries/fact/quest_status_fact.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/session_fact",
+    "path": "/adapters/BasicAdapter/entries/fact/session_fact",
+    "title": "Session Fact",
+    "html": "sources/live/3d421a75a8bb2ab4.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/fact/session_fact.mdx",
+    "text_characters": 344,
+    "english": "sources/en/adapters/BasicAdapter/entries/fact/session_fact.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/timed_fact",
+    "path": "/adapters/BasicAdapter/entries/fact/timed_fact",
+    "title": "Timed Fact",
+    "html": "sources/live/45852898e5a191c5.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/fact/timed_fact.mdx",
+    "text_characters": 543,
+    "english": "sources/en/adapters/BasicAdapter/entries/fact/timed_fact.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/value_placeholder",
+    "path": "/adapters/BasicAdapter/entries/fact/value_placeholder",
+    "title": "Value Placeholder Fact",
+    "html": "sources/live/44b1daf5aea8bc61.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/fact/value_placeholder.mdx",
+    "text_characters": 1178,
+    "english": "sources/en/adapters/BasicAdapter/entries/fact/value_placeholder.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/group/global_group",
+    "path": "/adapters/BasicAdapter/entries/group/global_group",
+    "title": "Global Group",
+    "html": "sources/live/7097fea7acee2d51.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/group/global_group.mdx",
+    "text_characters": 264,
+    "english": "sources/en/adapters/BasicAdapter/entries/group/global_group.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/group/player_group",
+    "path": "/adapters/BasicAdapter/entries/group/player_group",
+    "title": "Player Group",
+    "html": "sources/live/36e942dba2c7427d.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/group/player_group.mdx",
+    "text_characters": 253,
+    "english": "sources/en/adapters/BasicAdapter/entries/group/player_group.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/group/world_group",
+    "path": "/adapters/BasicAdapter/entries/group/world_group",
+    "title": "World Group",
+    "html": "sources/live/7d7469822279e6da.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/group/world_group.mdx",
+    "text_characters": 240,
+    "english": "sources/en/adapters/BasicAdapter/entries/group/world_group.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/quest",
+    "path": "/adapters/BasicAdapter/entries/quest",
+    "title": "Simple Quest",
+    "html": "sources/live/39c05594bcfb167c.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/quest/quest.mdx",
+    "text_characters": 687,
+    "english": "sources/en/adapters/BasicAdapter/entries/quest.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/quest/completable_objective",
+    "path": "/adapters/BasicAdapter/entries/quest/completable_objective",
+    "title": "Completable Objective",
+    "html": "sources/live/6562724a6974dd66.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/quest/completable_objective.mdx",
+    "text_characters": 816,
+    "english": "sources/en/adapters/BasicAdapter/entries/quest/completable_objective.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/quest/location_objective",
+    "path": "/adapters/BasicAdapter/entries/quest/location_objective",
+    "title": "Location Objective",
+    "html": "sources/live/c355dc19ee8cb5d9.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/quest/location_objective.mdx",
+    "text_characters": 827,
+    "english": "sources/en/adapters/BasicAdapter/entries/quest/location_objective.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/quest/objective",
+    "path": "/adapters/BasicAdapter/entries/quest/objective",
+    "title": "Simple Objective",
+    "html": "sources/live/1a9218c245a187aa.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/quest/objective.mdx",
+    "text_characters": 633,
+    "english": "sources/en/adapters/BasicAdapter/entries/quest/objective.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/quest/objective_lines",
+    "path": "/adapters/BasicAdapter/entries/quest/objective_lines",
+    "title": "Objective Lines",
+    "html": "sources/live/4febce9e996d5325.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/quest/objective_lines.mdx",
+    "text_characters": 580,
+    "english": "sources/en/adapters/BasicAdapter/entries/quest/objective_lines.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/quest/quest_complete_event",
+    "path": "/adapters/BasicAdapter/entries/quest/quest_complete_event",
+    "title": "Quest Complete Event",
+    "html": "sources/live/60bb600b6cbcd778.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/quest/quest_complete_event.mdx",
+    "text_characters": 373,
+    "english": "sources/en/adapters/BasicAdapter/entries/quest/quest_complete_event.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/quest/quest_start_event",
+    "path": "/adapters/BasicAdapter/entries/quest/quest_start_event",
+    "title": "Quest Start Event",
+    "html": "sources/live/2100d1230b593706.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/quest/quest_start_event.mdx",
+    "text_characters": 363,
+    "english": "sources/en/adapters/BasicAdapter/entries/quest/quest_start_event.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/quest/quest_status_update_event",
+    "path": "/adapters/BasicAdapter/entries/quest/quest_status_update_event",
+    "title": "Quest Status Update Event",
+    "html": "sources/live/243929998bb3666c.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/quest/quest_status_update_event.mdx",
+    "text_characters": 502,
+    "english": "sources/en/adapters/BasicAdapter/entries/quest/quest_status_update_event.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/quest/tracked_objective_audience",
+    "path": "/adapters/BasicAdapter/entries/quest/tracked_objective_audience",
+    "title": "Tracked Objective Audience",
+    "html": "sources/live/6cb4d3fca36aa0c3.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/quest/tracked_objective_audience.mdx",
+    "text_characters": 384,
+    "english": "sources/en/adapters/BasicAdapter/entries/quest/tracked_objective_audience.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/quest/tracked_quest_audience",
+    "path": "/adapters/BasicAdapter/entries/quest/tracked_quest_audience",
+    "title": "Tracked Quest Audience",
+    "html": "sources/live/bf4d4da8f3ee39f6.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/quest/tracked_quest_audience.mdx",
+    "text_characters": 434,
+    "english": "sources/en/adapters/BasicAdapter/entries/quest/tracked_quest_audience.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/sound/custom_sound",
+    "path": "/adapters/BasicAdapter/entries/sound/custom_sound",
+    "title": "Custom Sound",
+    "html": "sources/live/5168bfe892812ac4.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/sound/custom_sound.mdx",
+    "text_characters": 345,
+    "english": "sources/en/adapters/BasicAdapter/entries/sound/custom_sound.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/static/base_road_network",
+    "path": "/adapters/BasicAdapter/entries/static/base_road_network",
+    "title": "Base Road Network",
+    "html": "sources/live/f1e78265134117d2.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/static/base_road_network.mdx",
+    "text_characters": 336,
+    "english": "sources/en/adapters/BasicAdapter/entries/static/base_road_network.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/static/self_speaker",
+    "path": "/adapters/BasicAdapter/entries/static/self_speaker",
+    "title": "Self Speaker",
+    "html": "sources/live/00dd1eb70a34872a.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/static/self_speaker.mdx",
+    "text_characters": 447,
+    "english": "sources/en/adapters/BasicAdapter/entries/static/self_speaker.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/static/simple_speaker",
+    "path": "/adapters/BasicAdapter/entries/static/simple_speaker",
+    "title": "Simple Speaker",
+    "html": "sources/live/954c9846fa136ede.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/BasicAdapter/entries/static/simple_speaker.mdx",
+    "text_characters": 481,
+    "english": "sources/en/adapters/BasicAdapter/entries/static/simple_speaker.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/CitizensAdapter",
+    "path": "/adapters/CitizensAdapter",
+    "title": "Citizens Adapter",
+    "html": "sources/live/0e88baed5a5c7316.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/CitizensAdapter/CitizensAdapter.mdx",
+    "text_characters": 627,
+    "english": "sources/en/adapters/CitizensAdapter.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/CitizensAdapter/entries/cinematic/reference_npc_cinematic",
+    "path": "/adapters/CitizensAdapter/entries/cinematic/reference_npc_cinematic",
+    "title": "Reference Npc Cinematic",
+    "html": "sources/live/3044312f912d0a5b.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/CitizensAdapter/entries/cinematic/reference_npc_cinematic.mdx",
+    "text_characters": 709,
+    "english": "sources/en/adapters/CitizensAdapter/entries/cinematic/reference_npc_cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/CitizensAdapter/entries/cinematic/self_npc_cinematic",
+    "path": "/adapters/CitizensAdapter/entries/cinematic/self_npc_cinematic",
+    "title": "Self Npc Cinematic",
+    "html": "sources/live/62af1c26f023ccca.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/CitizensAdapter/entries/cinematic/self_npc_cinematic.mdx",
+    "text_characters": 703,
+    "english": "sources/en/adapters/CitizensAdapter/entries/cinematic/self_npc_cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/CitizensAdapter/entries/entity/reference_npc",
+    "path": "/adapters/CitizensAdapter/entries/entity/reference_npc",
+    "title": "Reference Npc",
+    "html": "sources/live/4739982a13083e48.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/CitizensAdapter/entries/entity/reference_npc.mdx",
+    "text_characters": 382,
+    "english": "sources/en/adapters/CitizensAdapter/entries/entity/reference_npc.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/CitizensAdapter/entries/event/on_npc_interact",
+    "path": "/adapters/CitizensAdapter/entries/event/on_npc_interact",
+    "title": "Npc Interact Event",
+    "html": "sources/live/1452353834ec6540.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/CitizensAdapter/entries/event/on_npc_interact.mdx",
+    "text_characters": 399,
+    "english": "sources/en/adapters/CitizensAdapter/entries/event/on_npc_interact.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/CombatLogXAdapter",
+    "path": "/adapters/CombatLogXAdapter",
+    "title": "Combat Log X Adapter",
+    "html": "sources/live/cb4d73dd636e5e28.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/CombatLogXAdapter/CombatLogXAdapter.mdx",
+    "text_characters": 445,
+    "english": "sources/en/adapters/CombatLogXAdapter.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/CombatLogXAdapter/entries/event/on_player_enter_combat",
+    "path": "/adapters/CombatLogXAdapter/entries/event/on_player_enter_combat",
+    "title": "Player Enter Combat Event",
+    "html": "sources/live/57d0ebdfa111874f.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/CombatLogXAdapter/entries/event/on_player_enter_combat.mdx",
+    "text_characters": 355,
+    "english": "sources/en/adapters/CombatLogXAdapter/entries/event/on_player_enter_combat.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/CombatLogXAdapter/entries/event/on_player_exit_combat",
+    "path": "/adapters/CombatLogXAdapter/entries/event/on_player_exit_combat",
+    "title": "Player Exit Combat Event",
+    "html": "sources/live/31c46043db3aeb4d.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/CombatLogXAdapter/entries/event/on_player_exit_combat.mdx",
+    "text_characters": 318,
+    "english": "sources/en/adapters/CombatLogXAdapter/entries/event/on_player_exit_combat.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/CombatLogXAdapter/entries/fact/combat_fact",
+    "path": "/adapters/CombatLogXAdapter/entries/fact/combat_fact",
+    "title": "Combat Fact",
+    "html": "sources/live/65fc18a53682e679.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/CombatLogXAdapter/entries/fact/combat_fact.mdx",
+    "text_characters": 354,
+    "english": "sources/en/adapters/CombatLogXAdapter/entries/fact/combat_fact.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter",
+    "path": "/adapters/EntityAdapter",
+    "title": "Entity Adapter",
+    "html": "sources/live/1c82bdaf30038162.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/EntityAdapter.mdx",
+    "text_characters": 4030,
+    "english": "sources/en/adapters/EntityAdapter.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/activity/audience_activity",
+    "path": "/adapters/EntityAdapter/entries/activity/audience_activity",
+    "title": "Audience Activity",
+    "html": "sources/live/4344d094b32d403f.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/activity/audience_activity.mdx",
+    "text_characters": 572,
+    "english": "sources/en/adapters/EntityAdapter/entries/activity/audience_activity.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/activity/game_time_activity",
+    "path": "/adapters/EntityAdapter/entries/activity/game_time_activity",
+    "title": "Game Time Activity",
+    "html": "sources/live/a9674c1ea65259f5.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/activity/game_time_activity.mdx",
+    "text_characters": 501,
+    "english": "sources/en/adapters/EntityAdapter/entries/activity/game_time_activity.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/activity/in_dialogue_activity",
+    "path": "/adapters/EntityAdapter/entries/activity/in_dialogue_activity",
+    "title": "In Dialogue Activity",
+    "html": "sources/live/b8250b328001298c.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/activity/in_dialogue_activity.mdx",
+    "text_characters": 981,
+    "english": "sources/en/adapters/EntityAdapter/entries/activity/in_dialogue_activity.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/activity/look_close_activity",
+    "path": "/adapters/EntityAdapter/entries/activity/look_close_activity",
+    "title": "Look Close Activity",
+    "html": "sources/live/f01fada31aa671e7.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/activity/look_close_activity.mdx",
+    "text_characters": 305,
+    "english": "sources/en/adapters/EntityAdapter/entries/activity/look_close_activity.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/activity/path_activity",
+    "path": "/adapters/EntityAdapter/entries/activity/path_activity",
+    "title": "Path Activity",
+    "html": "sources/live/3f432b2f25f721a1.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/activity/path_activity.mdx",
+    "text_characters": 470,
+    "english": "sources/en/adapters/EntityAdapter/entries/activity/path_activity.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/activity/patrol_activity",
+    "path": "/adapters/EntityAdapter/entries/activity/patrol_activity",
+    "title": "Patrol Activity",
+    "html": "sources/live/0220b574a5d8f98e.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/activity/patrol_activity.mdx",
+    "text_characters": 392,
+    "english": "sources/en/adapters/EntityAdapter/entries/activity/patrol_activity.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/activity/player_close_by_activity",
+    "path": "/adapters/EntityAdapter/entries/activity/player_close_by_activity",
+    "title": "Player Close By Activity",
+    "html": "sources/live/ce6351d2e3e2566f.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/activity/player_close_by_activity.mdx",
+    "text_characters": 1179,
+    "english": "sources/en/adapters/EntityAdapter/entries/activity/player_close_by_activity.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/activity/random_look_activity",
+    "path": "/adapters/EntityAdapter/entries/activity/random_look_activity",
+    "title": "Random Look Activity",
+    "html": "sources/live/f8473c10ab328013.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/activity/random_look_activity.mdx",
+    "text_characters": 437,
+    "english": "sources/en/adapters/EntityAdapter/entries/activity/random_look_activity.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/activity/target_location_activity",
+    "path": "/adapters/EntityAdapter/entries/activity/target_location_activity",
+    "title": "Target Location Activity",
+    "html": "sources/live/1b9087aa4541c70d.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/activity/target_location_activity.mdx",
+    "text_characters": 451,
+    "english": "sources/en/adapters/EntityAdapter/entries/activity/target_location_activity.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/activity/timed_activity",
+    "path": "/adapters/EntityAdapter/entries/activity/timed_activity",
+    "title": "Timed Activity",
+    "html": "sources/live/fb7b931966ee21ea.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/activity/timed_activity.mdx",
+    "text_characters": 1011,
+    "english": "sources/en/adapters/EntityAdapter/entries/activity/timed_activity.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/activity/trigger_activity",
+    "path": "/adapters/EntityAdapter/entries/activity/trigger_activity",
+    "title": "Trigger Activity",
+    "html": "sources/live/59917bb5e70d47e0.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/activity/trigger_activity.mdx",
+    "text_characters": 521,
+    "english": "sources/en/adapters/EntityAdapter/entries/activity/trigger_activity.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/audience/direct_entity_instance_path_stream",
+    "path": "/adapters/EntityAdapter/entries/audience/direct_entity_instance_path_stream",
+    "title": "Direct Entity Instance Path Stream",
+    "html": "sources/live/2864a7e6b0e9311f.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/audience/direct_entity_instance_path_stream.mdx",
+    "text_characters": 388,
+    "english": "sources/en/adapters/EntityAdapter/entries/audience/direct_entity_instance_path_stream.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/cinematic/entity_cinematic",
+    "path": "/adapters/EntityAdapter/entries/cinematic/entity_cinematic",
+    "title": "Entity Cinematic",
+    "html": "sources/live/e6248e8cba99bbe8.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/cinematic/entity_cinematic.mdx",
+    "text_characters": 599,
+    "english": "sources/en/adapters/EntityAdapter/entries/cinematic/entity_cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/ageable_data",
+    "path": "/adapters/EntityAdapter/entries/data/ageable_data",
+    "title": "Ageable Data",
+    "html": "sources/live/26091234b9fa8328.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/data/ageable_data.mdx",
+    "text_characters": 108,
+    "english": "sources/en/adapters/EntityAdapter/entries/data/ageable_data.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/arrow_count_data",
+    "path": "/adapters/EntityAdapter/entries/data/arrow_count_data",
+    "title": "Arrow Count Data",
+    "html": "sources/live/0a7fe3f8e681d774.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/data/arrow_count_data.mdx",
+    "text_characters": 140,
+    "english": "sources/en/adapters/EntityAdapter/entries/data/arrow_count_data.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/cat_variant_data",
+    "path": "/adapters/EntityAdapter/entries/data/cat_variant_data",
+    "title": "Cat Variant Data",
+    "html": "sources/live/88584bb6c58284ce.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/data/cat_variant_data.mdx",
+    "text_characters": 119,
+    "english": "sources/en/adapters/EntityAdapter/entries/data/cat_variant_data.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/chested_horse_chest_meta",
+    "path": "/adapters/EntityAdapter/entries/data/chested_horse_chest_meta",
+    "title": "Chested Horse Chest Data",
+    "html": "sources/live/d533fcee9d2b7149.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/data/chested_horse_chest_meta.mdx",
+    "text_characters": 135,
+    "english": "sources/en/adapters/EntityAdapter/entries/data/chested_horse_chest_meta.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/collar_color_data",
+    "path": "/adapters/EntityAdapter/entries/data/collar_color_data",
+    "title": "Collar Color Data",
+    "html": "sources/live/4d73a9b5793a7b77.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/data/collar_color_data.mdx",
+    "text_characters": 149,
+    "english": "sources/en/adapters/EntityAdapter/entries/data/collar_color_data.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/custom_name_data",
+    "path": "/adapters/EntityAdapter/entries/data/custom_name_data",
+    "title": "Custom Name Data",
+    "html": "sources/live/e1f2638d730e5c87.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/data/custom_name_data.mdx",
+    "text_characters": 134,
+    "english": "sources/en/adapters/EntityAdapter/entries/data/custom_name_data.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/dancing_data",
+    "path": "/adapters/EntityAdapter/entries/data/dancing_data",
+    "title": "Dancing Data",
+    "html": "sources/live/2b69891a68fa63bd.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/data/dancing_data.mdx",
+    "text_characters": 125,
+    "english": "sources/en/adapters/EntityAdapter/entries/data/dancing_data.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/glowing_effect_data",
+    "path": "/adapters/EntityAdapter/entries/data/glowing_effect_data",
+    "title": "Glowing Effect Data",
+    "html": "sources/live/45603b5eabb833f0.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/data/glowing_effect_data.mdx",
+    "text_characters": 128,
+    "english": "sources/en/adapters/EntityAdapter/entries/data/glowing_effect_data.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/horse_variant_dat",
+    "path": "/adapters/EntityAdapter/entries/data/horse_variant_dat",
+    "title": "Horse Variant Data",
+    "html": "sources/live/c569f06185cd2a3f.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/data/horse_variant_dat.mdx",
+    "text_characters": 138,
+    "english": "sources/en/adapters/EntityAdapter/entries/data/horse_variant_dat.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/llama_carpet_color_data",
+    "path": "/adapters/EntityAdapter/entries/data/llama_carpet_color_data",
+    "title": "Llama Carpet Color Data",
+    "html": "sources/live/51b15c0ef3233421.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/data/llama_carpet_color_data.mdx",
+    "text_characters": 140,
+    "english": "sources/en/adapters/EntityAdapter/entries/data/llama_carpet_color_data.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/llama_variant_data",
+    "path": "/adapters/EntityAdapter/entries/data/llama_variant_data",
+    "title": "Llama Variant Data",
+    "html": "sources/live/1153e1bf3736e466.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/data/llama_variant_data.mdx",
+    "text_characters": 123,
+    "english": "sources/en/adapters/EntityAdapter/entries/data/llama_variant_data.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/marker_data",
+    "path": "/adapters/EntityAdapter/entries/data/marker_data",
+    "title": "Marker Data",
+    "html": "sources/live/a5463b15041dca2c.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/data/marker_data.mdx",
+    "text_characters": 126,
+    "english": "sources/en/adapters/EntityAdapter/entries/data/marker_data.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/on_fire_data",
+    "path": "/adapters/EntityAdapter/entries/data/on_fire_data",
+    "title": "On Fire Data",
+    "html": "sources/live/89f148b4844d4951.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/data/on_fire_data.mdx",
+    "text_characters": 121,
+    "english": "sources/en/adapters/EntityAdapter/entries/data/on_fire_data.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/parrot_color_data",
+    "path": "/adapters/EntityAdapter/entries/data/parrot_color_data",
+    "title": "Parrot Color Data",
+    "html": "sources/live/de82c6ed78a3525a.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/data/parrot_color_data.mdx",
+    "text_characters": 124,
+    "english": "sources/en/adapters/EntityAdapter/entries/data/parrot_color_data.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/pose_data",
+    "path": "/adapters/EntityAdapter/entries/data/pose_data",
+    "title": "Pose Data",
+    "html": "sources/live/f6be25b68b61ad87.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/data/pose_data.mdx",
+    "text_characters": 106,
+    "english": "sources/en/adapters/EntityAdapter/entries/data/pose_data.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/potion_effect_color_data",
+    "path": "/adapters/EntityAdapter/entries/data/potion_effect_color_data",
+    "title": "Potion Effect Color Data",
+    "html": "sources/live/a7abc07b2bb1dcfd.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/data/potion_effect_color_data.mdx",
+    "text_characters": 158,
+    "english": "sources/en/adapters/EntityAdapter/entries/data/potion_effect_color_data.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/puff_state_data",
+    "path": "/adapters/EntityAdapter/entries/data/puff_state_data",
+    "title": "Puff State Data",
+    "html": "sources/live/93c3ab42a6f90865.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/data/puff_state_data.mdx",
+    "text_characters": 119,
+    "english": "sources/en/adapters/EntityAdapter/entries/data/puff_state_data.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/rabbit_type_data",
+    "path": "/adapters/EntityAdapter/entries/data/rabbit_type_data",
+    "title": "Rabbit Type Data",
+    "html": "sources/live/d5ea5f7aad4ea96e.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/data/rabbit_type_data.mdx",
+    "text_characters": 120,
+    "english": "sources/en/adapters/EntityAdapter/entries/data/rabbit_type_data.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/saddled_data",
+    "path": "/adapters/EntityAdapter/entries/data/saddled_data",
+    "title": "Saddled Data",
+    "html": "sources/live/bb922e4a5b07fab4.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/data/saddled_data.mdx",
+    "text_characters": 121,
+    "english": "sources/en/adapters/EntityAdapter/entries/data/saddled_data.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/size_data",
+    "path": "/adapters/EntityAdapter/entries/data/size_data",
+    "title": "Size Data",
+    "html": "sources/live/bdfd08910082b894.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/data/size_data.mdx",
+    "text_characters": 102,
+    "english": "sources/en/adapters/EntityAdapter/entries/data/size_data.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/skin_data",
+    "path": "/adapters/EntityAdapter/entries/data/skin_data",
+    "title": "Skin Data",
+    "html": "sources/live/28706e1996423fb6.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/data/skin_data.mdx",
+    "text_characters": 81,
+    "english": "sources/en/adapters/EntityAdapter/entries/data/skin_data.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/small_data",
+    "path": "/adapters/EntityAdapter/entries/data/small_data",
+    "title": "Small Data",
+    "html": "sources/live/3e8462e3aaecdb87.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/data/small_data.mdx",
+    "text_characters": 118,
+    "english": "sources/en/adapters/EntityAdapter/entries/data/small_data.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/data/villager_data",
+    "path": "/adapters/EntityAdapter/entries/data/villager_data",
+    "title": "Villager Data",
+    "html": "sources/live/6fdd9bec53468440.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/data/villager_data.mdx",
+    "text_characters": 197,
+    "english": "sources/en/adapters/EntityAdapter/entries/data/villager_data.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/allay_instance",
+    "path": "/adapters/EntityAdapter/entries/entity/allay_instance",
+    "title": "Allay Instance",
+    "html": "sources/live/727b1a2e1894c255.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/allay_instance.mdx",
+    "text_characters": 261,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/allay_instance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/cat_instance",
+    "path": "/adapters/EntityAdapter/entries/entity/cat_instance",
+    "title": "Cat Instance",
+    "html": "sources/live/ca79d7441d9fa511.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/cat_instance.mdx",
+    "text_characters": 251,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/cat_instance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/chicken_instance",
+    "path": "/adapters/EntityAdapter/entries/entity/chicken_instance",
+    "title": "Chicken Instance",
+    "html": "sources/live/b2922e356ff93b38.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/chicken_instance.mdx",
+    "text_characters": 266,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/chicken_instance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/cow_instance",
+    "path": "/adapters/EntityAdapter/entries/entity/cow_instance",
+    "title": "Cow Instance",
+    "html": "sources/live/71a9cfd8db0a18fa.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/cow_instance.mdx",
+    "text_characters": 130,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/cow_instance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/enderman_instance",
+    "path": "/adapters/EntityAdapter/entries/entity/enderman_instance",
+    "title": "Enderman Instance",
+    "html": "sources/live/30b6b55d361aecbf.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/enderman_instance.mdx",
+    "text_characters": 140,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/enderman_instance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/frog_instance",
+    "path": "/adapters/EntityAdapter/entries/entity/frog_instance",
+    "title": "Frog Instance",
+    "html": "sources/live/d23f18a14f887b04.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/frog_instance.mdx",
+    "text_characters": 254,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/frog_instance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/hit_box_definition",
+    "path": "/adapters/EntityAdapter/entries/entity/hit_box_definition",
+    "title": "Hit Box Definition",
+    "html": "sources/live/9d85ed97501117ff.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/hit_box_definition.mdx",
+    "text_characters": 455,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/hit_box_definition.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/hoglin_instance",
+    "path": "/adapters/EntityAdapter/entries/entity/hoglin_instance",
+    "title": "Hoglin Instance",
+    "html": "sources/live/5e06154e3f06d40a.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/hoglin_instance.mdx",
+    "text_characters": 136,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/hoglin_instance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/husk_instance",
+    "path": "/adapters/EntityAdapter/entries/entity/husk_instance",
+    "title": "Husk Instance",
+    "html": "sources/live/448df8ca0ce2ebe5.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/husk_instance.mdx",
+    "text_characters": 132,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/husk_instance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/interaction_indicator_definition",
+    "path": "/adapters/EntityAdapter/entries/entity/interaction_indicator_definition",
+    "title": "Interaction Indicator Definition",
+    "html": "sources/live/f6db65683a5f545a.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/interaction_indicator_definition.mdx",
+    "text_characters": 272,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/interaction_indicator_definition.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/iron_golem_instance",
+    "path": "/adapters/EntityAdapter/entries/entity/iron_golem_instance",
+    "title": "Iron Golem Instance",
+    "html": "sources/live/f29aedb7e2a09035.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/iron_golem_instance.mdx",
+    "text_characters": 145,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/iron_golem_instance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/item_display_instance",
+    "path": "/adapters/EntityAdapter/entries/entity/item_display_instance",
+    "title": "Item Display Instance",
+    "html": "sources/live/c156f9bfb707c028.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/item_display_instance.mdx",
+    "text_characters": 149,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/item_display_instance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/magma_cube_instance",
+    "path": "/adapters/EntityAdapter/entries/entity/magma_cube_instance",
+    "title": "Magma Cube Instance",
+    "html": "sources/live/94c19a9410787022.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/magma_cube_instance.mdx",
+    "text_characters": 277,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/magma_cube_instance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/named_entity_definition",
+    "path": "/adapters/EntityAdapter/entries/entity/named_entity_definition",
+    "title": "Named Entity Definition",
+    "html": "sources/live/b7839311d7e7284b.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/named_entity_definition.mdx",
+    "text_characters": 290,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/named_entity_definition.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/npc_instance",
+    "path": "/adapters/EntityAdapter/entries/entity/npc_instance",
+    "title": "Npc Instance",
+    "html": "sources/live/cffa32948f1eed89.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/npc_instance.mdx",
+    "text_characters": 193,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/npc_instance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/piglin_brute_instance",
+    "path": "/adapters/EntityAdapter/entries/entity/piglin_brute_instance",
+    "title": "Piglin Brute Instance",
+    "html": "sources/live/912368f4d2f00bc7.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/piglin_brute_instance.mdx",
+    "text_characters": 148,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/piglin_brute_instance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/piglin_instance",
+    "path": "/adapters/EntityAdapter/entries/entity/piglin_instance",
+    "title": "Piglin Instance",
+    "html": "sources/live/c3b9857184fc0d82.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/piglin_instance.mdx",
+    "text_characters": 136,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/piglin_instance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/player_instance",
+    "path": "/adapters/EntityAdapter/entries/entity/player_instance",
+    "title": "Player Instance",
+    "html": "sources/live/484217012f70cc8b.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/player_instance.mdx",
+    "text_characters": 190,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/player_instance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/self_npc_definition",
+    "path": "/adapters/EntityAdapter/entries/entity/self_npc_definition",
+    "title": "Self Npc Definition",
+    "html": "sources/live/3956f9ff3266173c.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/self_npc_definition.mdx",
+    "text_characters": 291,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/self_npc_definition.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/skeleton_instance",
+    "path": "/adapters/EntityAdapter/entries/entity/skeleton_instance",
+    "title": "Skeleton Instance",
+    "html": "sources/live/05cfd586077a3d2f.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/skeleton_instance.mdx",
+    "text_characters": 140,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/skeleton_instance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/slime_instance",
+    "path": "/adapters/EntityAdapter/entries/entity/slime_instance",
+    "title": "Slime Instance",
+    "html": "sources/live/f08bd041d1cb985e.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/slime_instance.mdx",
+    "text_characters": 258,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/slime_instance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/stacked_entity_definition",
+    "path": "/adapters/EntityAdapter/entries/entity/stacked_entity_definition",
+    "title": "Stacked Entity Definition",
+    "html": "sources/live/299479e4286dc358.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/stacked_entity_definition.mdx",
+    "text_characters": 542,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/stacked_entity_definition.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/text_display_instance",
+    "path": "/adapters/EntityAdapter/entries/entity/text_display_instance",
+    "title": "Text Display Instance",
+    "html": "sources/live/50e64faf2b19570d.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/text_display_instance.mdx",
+    "text_characters": 148,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/text_display_instance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/villager_instance",
+    "path": "/adapters/EntityAdapter/entries/entity/villager_instance",
+    "title": "Villager Instance",
+    "html": "sources/live/1729e60914c69d79.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/villager_instance.mdx",
+    "text_characters": 140,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/villager_instance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/warden_instance",
+    "path": "/adapters/EntityAdapter/entries/entity/warden_instance",
+    "title": "Warden Instance",
+    "html": "sources/live/2f2130f72cbe67ed.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/warden_instance.mdx",
+    "text_characters": 136,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/warden_instance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/witch_instance",
+    "path": "/adapters/EntityAdapter/entries/entity/witch_instance",
+    "title": "Witch Instance",
+    "html": "sources/live/a0aba5fb0716b006.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/witch_instance.mdx",
+    "text_characters": 134,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/witch_instance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/entity/zombie_instance",
+    "path": "/adapters/EntityAdapter/entries/entity/zombie_instance",
+    "title": "Zombie Instance",
+    "html": "sources/live/904d64c718d36c1d.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/entity/zombie_instance.mdx",
+    "text_characters": 136,
+    "english": "sources/en/adapters/EntityAdapter/entries/entity/zombie_instance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/event/entity_interact_event",
+    "path": "/adapters/EntityAdapter/entries/event/entity_interact_event",
+    "title": "Entity Interact Event",
+    "html": "sources/live/1ba9361b920a6e14.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/event/entity_interact_event.mdx",
+    "text_characters": 284,
+    "english": "sources/en/adapters/EntityAdapter/entries/event/entity_interact_event.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/instance/group_advanced_entity_instance",
+    "path": "/adapters/EntityAdapter/entries/instance/group_advanced_entity_instance",
+    "title": "Group Advanced Entity Instance",
+    "html": "sources/live/191a4357abebcc34.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/instance/group_advanced_entity_instance.mdx",
+    "text_characters": 366,
+    "english": "sources/en/adapters/EntityAdapter/entries/instance/group_advanced_entity_instance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/instance/individual_advanced_entity_instance",
+    "path": "/adapters/EntityAdapter/entries/instance/individual_advanced_entity_instance",
+    "title": "Individual Advanced Entity Instance",
+    "html": "sources/live/3c815f0f92317469.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/instance/individual_advanced_entity_instance.mdx",
+    "text_characters": 438,
+    "english": "sources/en/adapters/EntityAdapter/entries/instance/individual_advanced_entity_instance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/instance/shared_advanced_entity_instance",
+    "path": "/adapters/EntityAdapter/entries/instance/shared_advanced_entity_instance",
+    "title": "Shared Advanced Entity Instance",
+    "html": "sources/live/c2b8066e03bead27.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/instance/shared_advanced_entity_instance.mdx",
+    "text_characters": 341,
+    "english": "sources/en/adapters/EntityAdapter/entries/instance/shared_advanced_entity_instance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/quest/interact_entity_objective",
+    "path": "/adapters/EntityAdapter/entries/quest/interact_entity_objective",
+    "title": "Interact Entity Objective",
+    "html": "sources/live/f7f1bcb07fcd0388.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/quest/interact_entity_objective.mdx",
+    "text_characters": 569,
+    "english": "sources/en/adapters/EntityAdapter/entries/quest/interact_entity_objective.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/EntityAdapter/entries/quest/interact_entity_objectives_path_stream",
+    "path": "/adapters/EntityAdapter/entries/quest/interact_entity_objectives_path_stream",
+    "title": "Interact Entity Objectives Path Stream",
+    "html": "sources/live/2b18c232ee133603.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/EntityAdapter/entries/quest/interact_entity_objectives_path_stream.mdx",
+    "text_characters": 552,
+    "english": "sources/en/adapters/EntityAdapter/entries/quest/interact_entity_objectives_path_stream.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/FancyNpcsAdapter",
+    "path": "/adapters/FancyNpcsAdapter",
+    "title": "Fancy Npcs Adapter",
+    "html": "sources/live/3eba7f844eb63177.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/FancyNpcsAdapter/FancyNpcsAdapter.mdx",
+    "text_characters": 683,
+    "english": "sources/en/adapters/FancyNpcsAdapter.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/FancyNpcsAdapter/entries/cinematic/fancy_reference_npc_cinematic",
+    "path": "/adapters/FancyNpcsAdapter/entries/cinematic/fancy_reference_npc_cinematic",
+    "title": "Reference Npc Cinematic",
+    "html": "sources/live/9b71fa6bdcf7f64f.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/FancyNpcsAdapter/entries/cinematic/fancy_reference_npc_cinematic.mdx",
+    "text_characters": 709,
+    "english": "sources/en/adapters/FancyNpcsAdapter/entries/cinematic/fancy_reference_npc_cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/FancyNpcsAdapter/entries/cinematic/fancy_self_npc_cinematic",
+    "path": "/adapters/FancyNpcsAdapter/entries/cinematic/fancy_self_npc_cinematic",
+    "title": "Self Npc Cinematic",
+    "html": "sources/live/0aea42ab465634ea.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/FancyNpcsAdapter/entries/cinematic/fancy_self_npc_cinematic.mdx",
+    "text_characters": 703,
+    "english": "sources/en/adapters/FancyNpcsAdapter/entries/cinematic/fancy_self_npc_cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/FancyNpcsAdapter/entries/entity/fancy_reference_npc",
+    "path": "/adapters/FancyNpcsAdapter/entries/entity/fancy_reference_npc",
+    "title": "Reference Npc",
+    "html": "sources/live/ca3aa019902a2ab4.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/FancyNpcsAdapter/entries/entity/fancy_reference_npc.mdx",
+    "text_characters": 536,
+    "english": "sources/en/adapters/FancyNpcsAdapter/entries/entity/fancy_reference_npc.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/FancyNpcsAdapter/entries/event/fancy_on_npc_interact",
+    "path": "/adapters/FancyNpcsAdapter/entries/event/fancy_on_npc_interact",
+    "title": "Npc Interact Event",
+    "html": "sources/live/f13f7f0122d925e4.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/FancyNpcsAdapter/entries/event/fancy_on_npc_interact.mdx",
+    "text_characters": 551,
+    "english": "sources/en/adapters/FancyNpcsAdapter/entries/event/fancy_on_npc_interact.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/MythicMobsAdapter",
+    "path": "/adapters/MythicMobsAdapter",
+    "title": "Mythic Mobs Adapter",
+    "html": "sources/live/34feb7994f887a6e.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/MythicMobsAdapter/MythicMobsAdapter.mdx",
+    "text_characters": 807,
+    "english": "sources/en/adapters/MythicMobsAdapter.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/MythicMobsAdapter/entries/action/despawn_mythicmobs_mob",
+    "path": "/adapters/MythicMobsAdapter/entries/action/despawn_mythicmobs_mob",
+    "title": "Despawn Mob Action",
+    "html": "sources/live/f4f1ea83d0c4878e.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/MythicMobsAdapter/entries/action/despawn_mythicmobs_mob.mdx",
+    "text_characters": 823,
+    "english": "sources/en/adapters/MythicMobsAdapter/entries/action/despawn_mythicmobs_mob.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/MythicMobsAdapter/entries/action/execute_mythicmob_skill",
+    "path": "/adapters/MythicMobsAdapter/entries/action/execute_mythicmob_skill",
+    "title": "Execute Skill Action",
+    "html": "sources/live/15d5beec2cb08d72.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/MythicMobsAdapter/entries/action/execute_mythicmob_skill.mdx",
+    "text_characters": 516,
+    "english": "sources/en/adapters/MythicMobsAdapter/entries/action/execute_mythicmob_skill.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/MythicMobsAdapter/entries/action/spawn_mythicmobs_mob",
+    "path": "/adapters/MythicMobsAdapter/entries/action/spawn_mythicmobs_mob",
+    "title": "Spawn Mob Action",
+    "html": "sources/live/6b18f8c41ad416f4.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/MythicMobsAdapter/entries/action/spawn_mythicmobs_mob.mdx",
+    "text_characters": 870,
+    "english": "sources/en/adapters/MythicMobsAdapter/entries/action/spawn_mythicmobs_mob.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/MythicMobsAdapter/entries/cinematic/mythicmob_cinematic",
+    "path": "/adapters/MythicMobsAdapter/entries/cinematic/mythicmob_cinematic",
+    "title": "Mythic Mob Cinematic",
+    "html": "sources/live/568ec4bdaa0fe08e.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/MythicMobsAdapter/entries/cinematic/mythicmob_cinematic.mdx",
+    "text_characters": 530,
+    "english": "sources/en/adapters/MythicMobsAdapter/entries/cinematic/mythicmob_cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/MythicMobsAdapter/entries/cinematic/mythicskill_cinematic",
+    "path": "/adapters/MythicMobsAdapter/entries/cinematic/mythicskill_cinematic",
+    "title": "Mythic Skill Cinematic",
+    "html": "sources/live/8b2765e6334e1991.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/MythicMobsAdapter/entries/cinematic/mythicskill_cinematic.mdx",
+    "text_characters": 694,
+    "english": "sources/en/adapters/MythicMobsAdapter/entries/cinematic/mythicskill_cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/MythicMobsAdapter/entries/event/mythicmobs_interact_event",
+    "path": "/adapters/MythicMobsAdapter/entries/event/mythicmobs_interact_event",
+    "title": "Mythic Mob Interact Event",
+    "html": "sources/live/feec088b3fed04ef.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/MythicMobsAdapter/entries/event/mythicmobs_interact_event.mdx",
+    "text_characters": 524,
+    "english": "sources/en/adapters/MythicMobsAdapter/entries/event/mythicmobs_interact_event.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/MythicMobsAdapter/entries/event/on_mythic_mob_die",
+    "path": "/adapters/MythicMobsAdapter/entries/event/on_mythic_mob_die",
+    "title": "Mythic Mob Death Event",
+    "html": "sources/live/a4ba099c0a9f4c20.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/MythicMobsAdapter/entries/event/on_mythic_mob_die.mdx",
+    "text_characters": 456,
+    "english": "sources/en/adapters/MythicMobsAdapter/entries/event/on_mythic_mob_die.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/MythicMobsAdapter/entries/fact/mythic_mob_count_fact",
+    "path": "/adapters/MythicMobsAdapter/entries/fact/mythic_mob_count_fact",
+    "title": "Mob Count Fact",
+    "html": "sources/live/05d5e5e3cfd04f08.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/MythicMobsAdapter/entries/fact/mythic_mob_count_fact.mdx",
+    "text_characters": 563,
+    "english": "sources/en/adapters/MythicMobsAdapter/entries/fact/mythic_mob_count_fact.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/RPGRegionsAdapter",
+    "path": "/adapters/RPGRegionsAdapter",
+    "title": "Rpg Regions Adapter",
+    "html": "sources/live/e2ad743047c321ba.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/RPGRegionsAdapter/RPGRegionsAdapter.mdx",
+    "text_characters": 587,
+    "english": "sources/en/adapters/RPGRegionsAdapter.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/RPGRegionsAdapter/entries/action/discover_rpg_region",
+    "path": "/adapters/RPGRegionsAdapter/entries/action/discover_rpg_region",
+    "title": "Discover Region Action",
+    "html": "sources/live/c68cbe600e4ad615.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/RPGRegionsAdapter/entries/action/discover_rpg_region.mdx",
+    "text_characters": 787,
+    "english": "sources/en/adapters/RPGRegionsAdapter/entries/action/discover_rpg_region.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/RPGRegionsAdapter/entries/event/on_discover_rpg_region",
+    "path": "/adapters/RPGRegionsAdapter/entries/event/on_discover_rpg_region",
+    "title": "Discover Region Event",
+    "html": "sources/live/c6cd89447bc27784.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/RPGRegionsAdapter/entries/event/on_discover_rpg_region.mdx",
+    "text_characters": 468,
+    "english": "sources/en/adapters/RPGRegionsAdapter/entries/event/on_discover_rpg_region.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/RPGRegionsAdapter/entries/event/on_enter_rpg_region",
+    "path": "/adapters/RPGRegionsAdapter/entries/event/on_enter_rpg_region",
+    "title": "Enter Region Event",
+    "html": "sources/live/ac5d772e90518664.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/RPGRegionsAdapter/entries/event/on_enter_rpg_region.mdx",
+    "text_characters": 453,
+    "english": "sources/en/adapters/RPGRegionsAdapter/entries/event/on_enter_rpg_region.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/RPGRegionsAdapter/entries/fact/in_rpg_region_fact",
+    "path": "/adapters/RPGRegionsAdapter/entries/fact/in_rpg_region_fact",
+    "title": "In Region Fact",
+    "html": "sources/live/5f5d644875f5bb1a.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/RPGRegionsAdapter/entries/fact/in_rpg_region_fact.mdx",
+    "text_characters": 690,
+    "english": "sources/en/adapters/RPGRegionsAdapter/entries/fact/in_rpg_region_fact.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter",
+    "path": "/adapters/SuperiorSkyblockAdapter",
+    "title": "Superior Skyblock Adapter",
+    "html": "sources/live/9fa2eaa70306f381.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/SuperiorSkyblockAdapter/SuperiorSkyblockAdapter.mdx",
+    "text_characters": 1234,
+    "english": "sources/en/adapters/SuperiorSkyblockAdapter.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/action/island_bank_deposit",
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/action/island_bank_deposit",
+    "title": "Island Bank Deposit Action",
+    "html": "sources/live/43a535ffd94ca5c6.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/SuperiorSkyblockAdapter/entries/action/island_bank_deposit.mdx",
+    "text_characters": 528,
+    "english": "sources/en/adapters/SuperiorSkyblockAdapter/entries/action/island_bank_deposit.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/action/island_bank_withdraw",
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/action/island_bank_withdraw",
+    "title": "Island Bank Withdraw Action",
+    "html": "sources/live/eb204cf9ffa7d6f2.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/SuperiorSkyblockAdapter/entries/action/island_bank_withdraw.mdx",
+    "text_characters": 523,
+    "english": "sources/en/adapters/SuperiorSkyblockAdapter/entries/action/island_bank_withdraw.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/action/island_disband",
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/action/island_disband",
+    "title": "Island Disband Action",
+    "html": "sources/live/46c7fefb183b9343.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/SuperiorSkyblockAdapter/entries/action/island_disband.mdx",
+    "text_characters": 472,
+    "english": "sources/en/adapters/SuperiorSkyblockAdapter/entries/action/island_disband.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/action/island_set_biome",
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/action/island_set_biome",
+    "title": "Island Set Biome Action",
+    "html": "sources/live/062e1f3f88b32306.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/SuperiorSkyblockAdapter/entries/action/island_set_biome.mdx",
+    "text_characters": 539,
+    "english": "sources/en/adapters/SuperiorSkyblockAdapter/entries/action/island_set_biome.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/action/island_set_border_size",
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/action/island_set_border_size",
+    "title": "Island Set Border Size Action",
+    "html": "sources/live/993d99dbd761b78d.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/SuperiorSkyblockAdapter/entries/action/island_set_border_size.mdx",
+    "text_characters": 533,
+    "english": "sources/en/adapters/SuperiorSkyblockAdapter/entries/action/island_set_border_size.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/action/island_set_member_limit",
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/action/island_set_member_limit",
+    "title": "Island Set Member Limit Action",
+    "html": "sources/live/e02ae1ce6d02a402.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/SuperiorSkyblockAdapter/entries/action/island_set_member_limit.mdx",
+    "text_characters": 536,
+    "english": "sources/en/adapters/SuperiorSkyblockAdapter/entries/action/island_set_member_limit.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/event/on_island_create",
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/event/on_island_create",
+    "title": "Island Create Event",
+    "html": "sources/live/9d86052bad69930d.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/SuperiorSkyblockAdapter/entries/event/on_island_create.mdx",
+    "text_characters": 228,
+    "english": "sources/en/adapters/SuperiorSkyblockAdapter/entries/event/on_island_create.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/event/on_island_disband",
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/event/on_island_disband",
+    "title": "Island Disband Event",
+    "html": "sources/live/65db0fb1c5651780.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/SuperiorSkyblockAdapter/entries/event/on_island_disband.mdx",
+    "text_characters": 258,
+    "english": "sources/en/adapters/SuperiorSkyblockAdapter/entries/event/on_island_disband.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/event/on_island_invite",
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/event/on_island_invite",
+    "title": "Island Invite Event",
+    "html": "sources/live/60ba35429f018e3e.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/SuperiorSkyblockAdapter/entries/event/on_island_invite.mdx",
+    "text_characters": 315,
+    "english": "sources/en/adapters/SuperiorSkyblockAdapter/entries/event/on_island_invite.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/event/on_island_join",
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/event/on_island_join",
+    "title": "Island Join Event",
+    "html": "sources/live/8cb065817e99c5eb.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/SuperiorSkyblockAdapter/entries/event/on_island_join.mdx",
+    "text_characters": 255,
+    "english": "sources/en/adapters/SuperiorSkyblockAdapter/entries/event/on_island_join.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/event/on_island_upgrade",
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/event/on_island_upgrade",
+    "title": "Island Upgrade Event",
+    "html": "sources/live/20e7e579a50faba0.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/SuperiorSkyblockAdapter/entries/event/on_island_upgrade.mdx",
+    "text_characters": 231,
+    "english": "sources/en/adapters/SuperiorSkyblockAdapter/entries/event/on_island_upgrade.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/event/on_mission_complete",
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/event/on_mission_complete",
+    "title": "Mission Complete Event",
+    "html": "sources/live/972ee547c718bad6.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/SuperiorSkyblockAdapter/entries/event/on_mission_complete.mdx",
+    "text_characters": 296,
+    "english": "sources/en/adapters/SuperiorSkyblockAdapter/entries/event/on_mission_complete.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/fact/island_fact",
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/fact/island_fact",
+    "title": "Island Fact",
+    "html": "sources/live/7b749272a0441310.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/SuperiorSkyblockAdapter/entries/fact/island_fact.mdx",
+    "text_characters": 555,
+    "english": "sources/en/adapters/SuperiorSkyblockAdapter/entries/fact/island_fact.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/SuperiorSkyblockAdapter/entries/group/island_group",
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/group/island_group",
+    "title": "Island Group",
+    "html": "sources/live/d34bf9e8b413d7e7.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/SuperiorSkyblockAdapter/entries/group/island_group.mdx",
+    "text_characters": 215,
+    "english": "sources/en/adapters/SuperiorSkyblockAdapter/entries/group/island_group.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/VaultAdapter",
+    "path": "/adapters/VaultAdapter",
+    "title": "Vault Adapter",
+    "html": "sources/live/86126ee228852517.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/VaultAdapter/VaultAdapter.mdx",
+    "text_characters": 509,
+    "english": "sources/en/adapters/VaultAdapter.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/VaultAdapter/entries/action/deposit_balance",
+    "path": "/adapters/VaultAdapter/entries/action/deposit_balance",
+    "title": "Deposit Balance Action",
+    "html": "sources/live/77c7e275a09f7f31.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/VaultAdapter/entries/action/deposit_balance.mdx",
+    "text_characters": 494,
+    "english": "sources/en/adapters/VaultAdapter/entries/action/deposit_balance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/VaultAdapter/entries/action/set_prefix",
+    "path": "/adapters/VaultAdapter/entries/action/set_prefix",
+    "title": "Set Prefix Action",
+    "html": "sources/live/0ddade47fff338e8.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/VaultAdapter/entries/action/set_prefix.mdx",
+    "text_characters": 565,
+    "english": "sources/en/adapters/VaultAdapter/entries/action/set_prefix.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/VaultAdapter/entries/action/withdraw_balance",
+    "path": "/adapters/VaultAdapter/entries/action/withdraw_balance",
+    "title": "Withdraw Balance Action",
+    "html": "sources/live/121dd3cb893f9f42.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/VaultAdapter/entries/action/withdraw_balance.mdx",
+    "text_characters": 523,
+    "english": "sources/en/adapters/VaultAdapter/entries/action/withdraw_balance.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/VaultAdapter/entries/fact/balance_fact",
+    "path": "/adapters/VaultAdapter/entries/fact/balance_fact",
+    "title": "Balance Fact",
+    "html": "sources/live/8725b681f291251d.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/VaultAdapter/entries/fact/balance_fact.mdx",
+    "text_characters": 459,
+    "english": "sources/en/adapters/VaultAdapter/entries/fact/balance_fact.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/VaultAdapter/entries/fact/permission_fact",
+    "path": "/adapters/VaultAdapter/entries/fact/permission_fact",
+    "title": "Permission Fact",
+    "html": "sources/live/4126fdecb518c2ee.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/VaultAdapter/entries/fact/permission_fact.mdx",
+    "text_characters": 375,
+    "english": "sources/en/adapters/VaultAdapter/entries/fact/permission_fact.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/VaultAdapter/entries/group/balance_audience",
+    "path": "/adapters/VaultAdapter/entries/group/balance_audience",
+    "title": "Balance Group",
+    "html": "sources/live/c96745a19e16c0ba.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/VaultAdapter/entries/group/balance_audience.mdx",
+    "text_characters": 464,
+    "english": "sources/en/adapters/VaultAdapter/entries/group/balance_audience.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/VaultAdapter/entries/group/permission_group",
+    "path": "/adapters/VaultAdapter/entries/group/permission_group",
+    "title": "Permission Group",
+    "html": "sources/live/03159c8c8cbbe771.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/VaultAdapter/entries/group/permission_group.mdx",
+    "text_characters": 346,
+    "english": "sources/en/adapters/VaultAdapter/entries/group/permission_group.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/WorldGuardAdapter",
+    "path": "/adapters/WorldGuardAdapter",
+    "title": "World Guard Adapter",
+    "html": "sources/live/e3c2130e799555c8.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/WorldGuardAdapter/WorldGuardAdapter.mdx",
+    "text_characters": 521,
+    "english": "sources/en/adapters/WorldGuardAdapter.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/WorldGuardAdapter/entries/audience/region_audience",
+    "path": "/adapters/WorldGuardAdapter/entries/audience/region_audience",
+    "title": "Region Audience",
+    "html": "sources/live/6d0560058fb69c19.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/WorldGuardAdapter/entries/audience/region_audience.mdx",
+    "text_characters": 398,
+    "english": "sources/en/adapters/WorldGuardAdapter/entries/audience/region_audience.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/WorldGuardAdapter/entries/event/on_enter_region",
+    "path": "/adapters/WorldGuardAdapter/entries/event/on_enter_region",
+    "title": "Enter Region Event",
+    "html": "sources/live/0478df77aa4d1e37.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/WorldGuardAdapter/entries/event/on_enter_region.mdx",
+    "text_characters": 419,
+    "english": "sources/en/adapters/WorldGuardAdapter/entries/event/on_enter_region.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/WorldGuardAdapter/entries/event/on_exit_region",
+    "path": "/adapters/WorldGuardAdapter/entries/event/on_exit_region",
+    "title": "Exit Region Event",
+    "html": "sources/live/024e5f6e041b52b9.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/WorldGuardAdapter/entries/event/on_exit_region.mdx",
+    "text_characters": 491,
+    "english": "sources/en/adapters/WorldGuardAdapter/entries/event/on_exit_region.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/WorldGuardAdapter/entries/fact/in_region_fact",
+    "path": "/adapters/WorldGuardAdapter/entries/fact/in_region_fact",
+    "title": "In Region Fact",
+    "html": "sources/live/e6404fc65f823664.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/WorldGuardAdapter/entries/fact/in_region_fact.mdx",
+    "text_characters": 529,
+    "english": "sources/en/adapters/WorldGuardAdapter/entries/fact/in_region_fact.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/WorldGuardAdapter/entries/group/region_group",
+    "path": "/adapters/WorldGuardAdapter/entries/group/region_group",
+    "title": "Region Group",
+    "html": "sources/live/97dfadcfe1d25065.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/WorldGuardAdapter/entries/group/region_group.mdx",
+    "text_characters": 440,
+    "english": "sources/en/adapters/WorldGuardAdapter/entries/group/region_group.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/ZNPCsPlusAdapter",
+    "path": "/adapters/ZNPCsPlusAdapter",
+    "title": "Znp Cs Plus Adapter",
+    "html": "sources/live/01e595adea952995.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/ZNPCsPlusAdapter/ZNPCsPlusAdapter.mdx",
+    "text_characters": 684,
+    "english": "sources/en/adapters/ZNPCsPlusAdapter.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/ZNPCsPlusAdapter/entries/cinematic/znpc_reference_npc_cinematic",
+    "path": "/adapters/ZNPCsPlusAdapter/entries/cinematic/znpc_reference_npc_cinematic",
+    "title": "Reference Npc Cinematic",
+    "html": "sources/live/ca5dcaa133c32817.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/ZNPCsPlusAdapter/entries/cinematic/znpc_reference_npc_cinematic.mdx",
+    "text_characters": 709,
+    "english": "sources/en/adapters/ZNPCsPlusAdapter/entries/cinematic/znpc_reference_npc_cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/ZNPCsPlusAdapter/entries/cinematic/znpc_self_npc_cinematic",
+    "path": "/adapters/ZNPCsPlusAdapter/entries/cinematic/znpc_self_npc_cinematic",
+    "title": "Self Npc Cinematic",
+    "html": "sources/live/fec3d1473c0c6585.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/ZNPCsPlusAdapter/entries/cinematic/znpc_self_npc_cinematic.mdx",
+    "text_characters": 703,
+    "english": "sources/en/adapters/ZNPCsPlusAdapter/entries/cinematic/znpc_self_npc_cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/ZNPCsPlusAdapter/entries/entity/znpc_reference_npc",
+    "path": "/adapters/ZNPCsPlusAdapter/entries/entity/znpc_reference_npc",
+    "title": "Reference Npc",
+    "html": "sources/live/790522cd8157ae45.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/ZNPCsPlusAdapter/entries/entity/znpc_reference_npc.mdx",
+    "text_characters": 536,
+    "english": "sources/en/adapters/ZNPCsPlusAdapter/entries/entity/znpc_reference_npc.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/adapters/ZNPCsPlusAdapter/entries/event/znpc_on_npc_interact",
+    "path": "/adapters/ZNPCsPlusAdapter/entries/event/znpc_on_npc_interact",
+    "title": "Npc Interact Event",
+    "html": "sources/live/d7997d701decc55e.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/adapters/ZNPCsPlusAdapter/entries/event/znpc_on_npc_interact.mdx",
+    "text_characters": 551,
+    "english": "sources/en/adapters/ZNPCsPlusAdapter/entries/event/znpc_on_npc_interact.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop",
+    "path": "/develop",
+    "title": "Development",
+    "html": "sources/live/46f4f7da9305384d.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/README.mdx",
+    "text_characters": 618,
+    "english": "sources/en/develop.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions",
+    "path": "/develop/extensions",
+    "title": "Extensions",
+    "html": "sources/live/8f201ce52d072bf1.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/index.mdx",
+    "text_characters": 644,
+    "english": "sources/en/develop/extensions.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions/api-changes",
+    "path": "/develop/extensions/api-changes",
+    "title": "API Changes",
+    "html": "sources/live/86839cd016689c9a.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/08-api-changes/index.mdx",
+    "text_characters": 275,
+    "english": "sources/en/develop/extensions/api-changes.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions/api-changes/0.5",
+    "path": "/develop/extensions/api-changes/0.5",
+    "title": "All API changes to 0.5.X",
+    "html": "sources/live/74c3df2f6f39d8ef.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/08-api-changes/0.5.mdx",
+    "text_characters": 2598,
+    "english": "sources/en/develop/extensions/api-changes/0.5.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions/api-changes/0.6",
+    "path": "/develop/extensions/api-changes/0.6",
+    "title": "All API changes to 0.6.X",
+    "html": "sources/live/ff163d86efe70993.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/08-api-changes/0.6.mdx",
+    "text_characters": 581,
+    "english": "sources/en/develop/extensions/api-changes/0.6.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions/api-changes/0.7",
+    "path": "/develop/extensions/api-changes/0.7",
+    "title": "All API changes to 0.7.X",
+    "html": "sources/live/084334f1c834d68d.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/08-api-changes/0.7.mdx",
+    "text_characters": 821,
+    "english": "sources/en/develop/extensions/api-changes/0.7.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions/api-changes/0.8",
+    "path": "/develop/extensions/api-changes/0.8",
+    "title": "All API changes to 0.8.X",
+    "html": "sources/live/5e50ea427d0c66e7.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/08-api-changes/0.8.mdx",
+    "text_characters": 7663,
+    "english": "sources/en/develop/extensions/api-changes/0.8.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions/entries",
+    "path": "/develop/extensions/entries",
+    "title": "Create Entries",
+    "html": "sources/live/e4b93a9f6b101a77.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/04-entries/index.mdx",
+    "text_characters": 5545,
+    "english": "sources/en/develop/extensions/entries.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions/entries/cinematic",
+    "path": "/develop/extensions/entries/cinematic",
+    "title": "CinematicEntry",
+    "html": "sources/live/9c90ad906faeac22.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/04-entries/cinematic/index.mdx",
+    "text_characters": 6420,
+    "english": "sources/en/develop/extensions/entries/cinematic.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions/entries/manifest/audience",
+    "path": "/develop/extensions/entries/manifest/audience",
+    "title": "AudienceEntry",
+    "html": "sources/live/cec0835859708b39.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/04-entries/manifest/audience.mdx",
+    "text_characters": 5741,
+    "english": "sources/en/develop/extensions/entries/manifest/audience.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions/entries/manifest/audience_filter",
+    "path": "/develop/extensions/entries/manifest/audience_filter",
+    "title": "AudienceFilter",
+    "html": "sources/live/1a2dde40abac432e.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/04-entries/manifest/audience_filter.mdx",
+    "text_characters": 2740,
+    "english": "sources/en/develop/extensions/entries/manifest/audience_filter.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions/entries/manifest/audience_single_filter",
+    "path": "/develop/extensions/entries/manifest/audience_single_filter",
+    "title": "SingleFilter",
+    "html": "sources/live/fccde557bb8cfd20.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/04-entries/manifest/audience_single_filter.mdx",
+    "text_characters": 5268,
+    "english": "sources/en/develop/extensions/entries/manifest/audience_single_filter.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions/entries/placeholder",
+    "path": "/develop/extensions/entries/placeholder",
+    "title": "Placeholder",
+    "html": "sources/live/73506af84a33e582.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/04-entries/placeholder.mdx",
+    "text_characters": 1913,
+    "english": "sources/en/develop/extensions/entries/placeholder.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions/entries/static/artifact",
+    "path": "/develop/extensions/entries/static/artifact",
+    "title": "ArtifactEntry",
+    "html": "sources/live/bc5a58b5fe20238e.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/04-entries/static/artifact.mdx",
+    "text_characters": 1513,
+    "english": "sources/en/develop/extensions/entries/static/artifact.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions/entries/static/asset",
+    "path": "/develop/extensions/entries/static/asset",
+    "title": "AssetEntry",
+    "html": "sources/live/cf36f6d1d07e4dc3.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/04-entries/static/asset.mdx",
+    "text_characters": 1203,
+    "english": "sources/en/develop/extensions/entries/static/asset.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions/entries/static/sound_id",
+    "path": "/develop/extensions/entries/static/sound_id",
+    "title": "SoundIdEntry",
+    "html": "sources/live/c55f9d58ff2fc50c.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/04-entries/static/sound_id.mdx",
+    "text_characters": 644,
+    "english": "sources/en/develop/extensions/entries/static/sound_id.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions/entries/static/sound_source",
+    "path": "/develop/extensions/entries/static/sound_source",
+    "title": "SoundSourceEntry",
+    "html": "sources/live/869b98cd911b759d.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/04-entries/static/sound_source.mdx",
+    "text_characters": 816,
+    "english": "sources/en/develop/extensions/entries/static/sound_source.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions/entries/static/speaker",
+    "path": "/develop/extensions/entries/static/speaker",
+    "title": "SpeakerEntry",
+    "html": "sources/live/ebf78e8c83835544.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/04-entries/static/speaker.mdx",
+    "text_characters": 896,
+    "english": "sources/en/develop/extensions/entries/static/speaker.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions/entries/static/variable",
+    "path": "/develop/extensions/entries/static/variable",
+    "title": "VariableEntry",
+    "html": "sources/live/8021354798360372.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/04-entries/static/variable.mdx",
+    "text_characters": 6779,
+    "english": "sources/en/develop/extensions/entries/static/variable.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions/entries/trigger/action",
+    "path": "/develop/extensions/entries/trigger/action",
+    "title": "ActionEntry",
+    "html": "sources/live/5d795b88fa10e42b.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/04-entries/trigger/action.mdx",
+    "text_characters": 1578,
+    "english": "sources/en/develop/extensions/entries/trigger/action.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions/entries/trigger/dialogue",
+    "path": "/develop/extensions/entries/trigger/dialogue",
+    "title": "DialogueEntry",
+    "html": "sources/live/b0259b43777bc2ee.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/04-entries/trigger/dialogue.mdx",
+    "text_characters": 3297,
+    "english": "sources/en/develop/extensions/entries/trigger/dialogue.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions/entries/trigger/event",
+    "path": "/develop/extensions/entries/trigger/event",
+    "title": "EventEntry",
+    "html": "sources/live/6bbeac56f93894e2.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/04-entries/trigger/event.mdx",
+    "text_characters": 2493,
+    "english": "sources/en/develop/extensions/entries/trigger/event.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions/getting_started",
+    "path": "/develop/extensions/getting_started",
+    "title": "Creating an Extension",
+    "html": "sources/live/e4c7f1d1826c2b17.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/02-getting_started.mdx",
+    "text_characters": 3613,
+    "english": "sources/en/develop/extensions/getting_started.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions/initializers",
+    "path": "/develop/extensions/initializers",
+    "title": "Initializers",
+    "html": "sources/live/d50519c43645c391.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/03-initializers.mdx",
+    "text_characters": 1021,
+    "english": "sources/en/develop/extensions/initializers.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions/interactions",
+    "path": "/develop/extensions/interactions",
+    "title": "Interaction System",
+    "html": "sources/live/c5b8f88603d3b7ce.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/05-interactions/index.mdx",
+    "text_characters": 6040,
+    "english": "sources/en/develop/extensions/interactions.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions/interactions/bound",
+    "path": "/develop/extensions/interactions/bound",
+    "title": "Interaction Bound",
+    "html": "sources/live/382300b59308e316.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/05-interactions/bound.mdx",
+    "text_characters": 3408,
+    "english": "sources/en/develop/extensions/interactions/bound.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions/querying",
+    "path": "/develop/extensions/querying",
+    "title": "Query Entries",
+    "html": "sources/live/796656568879fd6c.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/06-querying.mdx",
+    "text_characters": 697,
+    "english": "sources/en/develop/extensions/querying.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/develop/extensions/triggering",
+    "path": "/develop/extensions/triggering",
+    "title": "Triggering Entries",
+    "html": "sources/live/16e52f388f204bf5.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/develop/02-extensions/07-triggering.mdx",
+    "text_characters": 3502,
+    "english": "sources/en/develop/extensions/triggering.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/concepts",
+    "path": "/docs/concepts",
+    "title": "Concepts",
+    "html": "sources/live/55a64df034befafc.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/04-concepts/index.mdx",
+    "text_characters": 883,
+    "english": "sources/en/docs/concepts.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/concepts/Audience",
+    "path": "/docs/concepts/Audience",
+    "title": "Audience Entries",
+    "html": "sources/live/faa365c7e49b8683.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/04-concepts/04-Audience/index.mdx",
+    "text_characters": 1903,
+    "english": "sources/en/docs/concepts/Audience.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/concepts/Manifest",
+    "path": "/docs/concepts/Manifest",
+    "title": "Manifest Entries",
+    "html": "sources/live/97e0f76c5d720c15.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/04-concepts/03-Manifest/index.mdx",
+    "text_characters": 2612,
+    "english": "sources/en/docs/concepts/Manifest.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/creating-stories/advanced-interactions",
+    "path": "/docs/creating-stories/advanced-interactions",
+    "title": "Advanced Interactions",
+    "html": "sources/live/d76a1ef62184d184.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/07-advanced-interactions/index.mdx",
+    "text_characters": 358,
+    "english": "sources/en/docs/creating-stories/advanced-interactions.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/creating-stories/advanced-interactions/custom-commands",
+    "path": "/docs/creating-stories/advanced-interactions/custom-commands",
+    "title": "Custom Commands",
+    "html": "sources/live/e8aa57deb3d6581f.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/07-advanced-interactions/02-custom-commands.mdx",
+    "text_characters": 2495,
+    "english": "sources/en/docs/creating-stories/advanced-interactions/custom-commands.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/creating-stories/advanced-interactions/interaction-bounds",
+    "path": "/docs/creating-stories/advanced-interactions/interaction-bounds",
+    "title": "Interaction Bounds",
+    "html": "sources/live/c6bb8ad843059d8c.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/07-advanced-interactions/03-interaction-bounds/index.mdx",
+    "text_characters": 5038,
+    "english": "sources/en/docs/creating-stories/advanced-interactions/interaction-bounds.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/creating-stories/advanced-interactions/interaction-bounds/option-bound",
+    "path": "/docs/creating-stories/advanced-interactions/interaction-bounds/option-bound",
+    "title": "Option Bound",
+    "html": "sources/live/05906e2661c486b2.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/07-advanced-interactions/03-interaction-bounds/02-option-bound.mdx",
+    "text_characters": 5085,
+    "english": "sources/en/docs/creating-stories/advanced-interactions/interaction-bounds/option-bound.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/creating-stories/advanced-interactions/interaction-context",
+    "path": "/docs/creating-stories/advanced-interactions/interaction-context",
+    "title": "Interaction Context",
+    "html": "sources/live/f10dfc96859cff3f.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/07-advanced-interactions/01-interaction-context.mdx",
+    "text_characters": 2884,
+    "english": "sources/en/docs/creating-stories/advanced-interactions/interaction-context.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/creating-stories/cinematics",
+    "path": "/docs/creating-stories/cinematics",
+    "title": "Cinematics",
+    "html": "sources/live/459d74383065b439.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/02-cinematics/index.mdx",
+    "text_characters": 3370,
+    "english": "sources/en/docs/creating-stories/cinematics.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/creating-stories/cinematics/dialogue",
+    "path": "/docs/creating-stories/cinematics/dialogue",
+    "title": "Adding dialogues",
+    "html": "sources/live/a229134fb0aa8431.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/02-cinematics/01-dialogue.mdx",
+    "text_characters": 1095,
+    "english": "sources/en/docs/creating-stories/cinematics/dialogue.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/creating-stories/cinematics/entities",
+    "path": "/docs/creating-stories/cinematics/entities",
+    "title": "Adding entities",
+    "html": "sources/live/992676b9760d4c6c.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/02-cinematics/03-entities.mdx",
+    "text_characters": 2087,
+    "english": "sources/en/docs/creating-stories/cinematics/entities.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/creating-stories/cinematics/first-join",
+    "path": "/docs/creating-stories/cinematics/first-join",
+    "title": "First Join Cinematic",
+    "html": "sources/live/29aa20fcdd760c28.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/02-cinematics/04-first-join.mdx",
+    "text_characters": 2928,
+    "english": "sources/en/docs/creating-stories/cinematics/first-join.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/creating-stories/cinematics/skippable-cinematics",
+    "path": "/docs/creating-stories/cinematics/skippable-cinematics",
+    "title": "Skippable Cinematics",
+    "html": "sources/live/c35c0448e33b4b22.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/02-cinematics/05-skippable-cinematics.mdx",
+    "text_characters": 1222,
+    "english": "sources/en/docs/creating-stories/cinematics/skippable-cinematics.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/creating-stories/cinematics/world-specific",
+    "path": "/docs/creating-stories/cinematics/world-specific",
+    "title": "World Specific Cinematics",
+    "html": "sources/live/abb17bc683982121.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/02-cinematics/05-world-specific.mdx",
+    "text_characters": 1327,
+    "english": "sources/en/docs/creating-stories/cinematics/world-specific.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/creating-stories/entity-extension",
+    "path": "/docs/creating-stories/entity-extension",
+    "title": "Entities & NPC's",
+    "html": "sources/live/1ee1bdf469094846.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/04-entity-extension/index.mdx",
+    "text_characters": 4112,
+    "english": "sources/en/docs/creating-stories/entity-extension.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/creating-stories/entity-extension/activities",
+    "path": "/docs/creating-stories/entity-extension/activities",
+    "title": "Entity Activities",
+    "html": "sources/live/6b3410b1afdd8ad8.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/04-entity-extension/04-activities.mdx",
+    "text_characters": 2279,
+    "english": "sources/en/docs/creating-stories/entity-extension/activities.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/creating-stories/entity-extension/conditional-showing",
+    "path": "/docs/creating-stories/entity-extension/conditional-showing",
+    "title": "Conditional NPC showing",
+    "html": "sources/live/4661c3e2957d2a72.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/04-entity-extension/03-conditional-showing.mdx",
+    "text_characters": 1776,
+    "english": "sources/en/docs/creating-stories/entity-extension/conditional-showing.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/creating-stories/entity-extension/interacting",
+    "path": "/docs/creating-stories/entity-extension/interacting",
+    "title": "Interacting with an entity",
+    "html": "sources/live/a450f65f7ce68b11.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/04-entity-extension/02-interacting.mdx",
+    "text_characters": 1333,
+    "english": "sources/en/docs/creating-stories/entity-extension/interacting.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/creating-stories/facts",
+    "path": "/docs/creating-stories/facts",
+    "title": "Facts",
+    "html": "sources/live/04d14d56877d7559.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/03-facts/index.mdx",
+    "text_characters": 4156,
+    "english": "sources/en/docs/creating-stories/facts.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/creating-stories/interactions",
+    "path": "/docs/creating-stories/interactions",
+    "title": "First Interaction",
+    "html": "sources/live/a2c190cce071aa12.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/01-interactions/index.mdx",
+    "text_characters": 1853,
+    "english": "sources/en/docs/creating-stories/interactions.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/creating-stories/interactions/conditional-dialogue",
+    "path": "/docs/creating-stories/interactions/conditional-dialogue",
+    "title": "Conditional dialogue",
+    "html": "sources/live/3134ebdebff533ed.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/01-interactions/03-conditional-dialogue.mdx",
+    "text_characters": 2408,
+    "english": "sources/en/docs/creating-stories/interactions/conditional-dialogue.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/creating-stories/interactions/dynamic-variables",
+    "path": "/docs/creating-stories/interactions/dynamic-variables",
+    "title": "Random Dialogue",
+    "html": "sources/live/fa52756de79b77ff.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/01-interactions/04-dynamic-variables.mdx",
+    "text_characters": 1300,
+    "english": "sources/en/docs/creating-stories/interactions/dynamic-variables.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/creating-stories/interactions/items",
+    "path": "/docs/creating-stories/interactions/items",
+    "title": "Giving items",
+    "html": "sources/live/91ae9629fb02769b.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/01-interactions/02-items.mdx",
+    "text_characters": 1700,
+    "english": "sources/en/docs/creating-stories/interactions/items.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/creating-stories/interactions/options",
+    "path": "/docs/creating-stories/interactions/options",
+    "title": "Adding Options",
+    "html": "sources/live/fc0b03fefca734d5.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/01-interactions/01-options.mdx",
+    "text_characters": 1286,
+    "english": "sources/en/docs/creating-stories/interactions/options.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/creating-stories/questing",
+    "path": "/docs/creating-stories/questing",
+    "title": "Questing",
+    "html": "sources/live/c3931ecb1e2568f9.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/05-questing/index.mdx",
+    "text_characters": 4048,
+    "english": "sources/en/docs/creating-stories/questing.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/creating-stories/questing/displaying_quests",
+    "path": "/docs/creating-stories/questing/displaying_quests",
+    "title": "Displaying Quests",
+    "html": "sources/live/d1203f291109030e.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/05-questing/05-displaying_quests.mdx",
+    "text_characters": 4239,
+    "english": "sources/en/docs/creating-stories/questing/displaying_quests.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/creating-stories/questing/kill-zombie-objective",
+    "path": "/docs/creating-stories/questing/kill-zombie-objective",
+    "title": "Kill Zombie Objective",
+    "html": "sources/live/5cfb20ab7c160139.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/05-questing/02-kill-zombie-objective.mdx",
+    "text_characters": 6137,
+    "english": "sources/en/docs/creating-stories/questing/kill-zombie-objective.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/creating-stories/questing/talk-objective",
+    "path": "/docs/creating-stories/questing/talk-objective",
+    "title": "Talk To NPC Objective",
+    "html": "sources/live/78c1b48240f211eb.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/05-questing/01-talk-objective.mdx",
+    "text_characters": 6077,
+    "english": "sources/en/docs/creating-stories/questing/talk-objective.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/creating-stories/road-network",
+    "path": "/docs/creating-stories/road-network",
+    "title": "Road Network",
+    "html": "sources/live/bd8e05fffcc3331e.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/03-creating-stories/06-road-network/index.mdx",
+    "text_characters": 4733,
+    "english": "sources/en/docs/creating-stories/road-network.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/getting-started",
+    "path": "/docs/getting-started",
+    "title": "Getting Started",
+    "html": "sources/live/12a7c0529934f3aa.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/02-getting-started/index.mdx",
+    "text_characters": 695,
+    "english": "sources/en/docs/getting-started.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/getting-started/installation",
+    "path": "/docs/getting-started/installation",
+    "title": "Installation Guide",
+    "html": "sources/live/a4c49a3f5c6a78b0.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/02-getting-started/01-installation.mdx",
+    "text_characters": 4307,
+    "english": "sources/en/docs/getting-started/installation.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/getting-started/layout",
+    "path": "/docs/getting-started/layout",
+    "title": "Layout",
+    "html": "sources/live/6e6ee1909cc8c8d4.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/02-getting-started/02-layout.mdx",
+    "text_characters": 2205,
+    "english": "sources/en/docs/getting-started/layout.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/helpful-features/chapters",
+    "path": "/docs/helpful-features/chapters",
+    "title": "Chapters",
+    "html": "sources/live/686655603407ea1d.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/05-helpful-features/01-chapters.mdx",
+    "text_characters": 767,
+    "english": "sources/en/docs/helpful-features/chapters.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/helpful-features/commands",
+    "path": "/docs/helpful-features/commands",
+    "title": "Commands",
+    "html": "sources/live/83c5aebf0bc17097.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/05-helpful-features/02-commands.md",
+    "text_characters": 1458,
+    "english": "sources/en/docs/helpful-features/commands.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/helpful-features/placeholderapi",
+    "path": "/docs/helpful-features/placeholderapi",
+    "title": "PlaceHolderAPI",
+    "html": "sources/live/77eb61224a7b5e32.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/05-helpful-features/03-placeholderapi.mdx",
+    "text_characters": 2957,
+    "english": "sources/en/docs/helpful-features/placeholderapi.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/helpful-features/shortcuts",
+    "path": "/docs/helpful-features/shortcuts",
+    "title": "Shortcuts",
+    "html": "sources/live/74e75849b8ef8c3f.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/05-helpful-features/04-shortcuts.mdx",
+    "text_characters": 756,
+    "english": "sources/en/docs/helpful-features/shortcuts.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/helpful-features/snippets",
+    "path": "/docs/helpful-features/snippets",
+    "title": "What are Snippets?",
+    "html": "sources/live/03d5db6011ce9fee.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/05-helpful-features/05-snippets.mdx",
+    "text_characters": 1477,
+    "english": "sources/en/docs/helpful-features/snippets.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/home",
+    "path": "/docs/home",
+    "title": "What is Typewriter?",
+    "html": "sources/live/f703c7f40dd41c16.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/01-home.md",
+    "text_characters": 1955,
+    "english": "sources/en/docs/home.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/troubleshooting",
+    "path": "/docs/troubleshooting",
+    "title": "Troubleshooting Guide",
+    "html": "sources/live/a7a8eca101a104da.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/06-troubleshooting/index.mdx",
+    "text_characters": 2531,
+    "english": "sources/en/docs/troubleshooting.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/troubleshooting/extensions",
+    "path": "/docs/troubleshooting/extensions",
+    "title": "Extensions Troubleshooting",
+    "html": "sources/live/b2593d4b9c7e0dfc.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/06-troubleshooting/extensions.mdx",
+    "text_characters": 1565,
+    "english": "sources/en/docs/troubleshooting/extensions.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/troubleshooting/packetevent",
+    "path": "/docs/troubleshooting/packetevent",
+    "title": "PacketEvents Troubleshooting",
+    "html": "sources/live/9c7e34f50b5a3c75.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/06-troubleshooting/packetevent.mdx",
+    "text_characters": 1461,
+    "english": "sources/en/docs/troubleshooting/packetevent.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/troubleshooting/playitgg",
+    "path": "/docs/troubleshooting/playitgg",
+    "title": "Playit.gg",
+    "html": "sources/live/03fd2c03007c0efb.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/06-troubleshooting/playitgg.mdx",
+    "text_characters": 1238,
+    "english": "sources/en/docs/troubleshooting/playitgg.md"
+  },
+  {
+    "url": "https://docs.typewritermc.com/docs/troubleshooting/ports",
+    "path": "/docs/troubleshooting/ports",
+    "title": "Panel Loading Issues Troubleshooting Guide",
+    "html": "sources/live/3ac68d850219de9c.html",
+    "source": "https://github.com/gabber235/Typewriter/tree/develop/documentation/versioned_docs/version-0.8.0/docs/06-troubleshooting/ports.mdx",
+    "text_characters": 1458,
+    "english": "sources/en/docs/troubleshooting/ports.md"
+  }
+]

@@ -1,0 +1,44 @@
+1551	**ManifestEntry**：用于创建呈现页面，向玩家显示有状态的内容。
+1594	必须是实现某个基础条目接口的类。
+1603	条目中不允许保存状态，因此所有字段都必须是 final 字段。
+1608	`CinematicEntry` 没有派生类型，但可自定义的部分很多。要在过场动画页面中提供条目，需要实现这个接口。
+1609	`CinematicEntry` 至少包含 1 个 `Segment` 列表。片段代表动画中的一部分，可定义子属性；至少要有整数类型的 `startFrame` 和 `endFrame`，表示起止帧。
+1611	用 `@Segments` 注解标记条目中的片段字段，字段类型必须是 `Segment` 列表。
+1612	`CinematicEntry` 可以包含多条不同的片段轨道。
+1634	tick 方法应根据给定帧，呈现动作在该帧应有的状态。
+1641	例如，镜头动作在模拟时显示世界中的镜头位置，而不是切换玩家视角。
+1650	`AudienceDisplay` 管理受众显示的生命周期，包括初始化、玩家加入与移除，以及销毁。
+1665	`dispose()`：受众被销毁时调用，用于通用的清理工作。系统会对所有玩家调用 `onPlayerRemove`，因此这里无需再做针对单个玩家的清理。
+1668	`tick()` 在异步线程中每个 Minecraft tick 调用一次，即每秒 20 次，或每 50 毫秒一次。
+1672	受众中至少有一位玩家时，事件监听器才会启用。
+1680	可以使用 `player.inAudience` 方法；玩家属于条目受众时，它返回 `true`。
+1684	**状态管理**：`AudienceDisplay` 中允许保存状态，但这些状态应局限于该显示对象内部，避免泄漏到外部。
+1696	玩家是否通过这个静态过滤器，在一开始就决定。
+1699	这个示例根据玩家的生命值筛选玩家，生命值条件通过条目参数提供。
+1710	条目类：定义配置，并创建过滤器。
+1719	显示生命周期在不同条目间切换时，保持单一显示状态并平稳过渡，适合需要避免闪烁或中断的独占显示。
+1722	优先级较高的显示可以暂时覆盖较低的显示；玩家不再属于高优先级条目的受众后，会恢复其他符合条件的显示。
+1742	注意，默认占位符已不再生效，因为没有为它提供对应的提供器。
+1769	需要声音的条目会通过该接口处理 `SoundIdEntry`。
+1793	变量可以在不同使用处分别配置，这是通过变量数据实现的：
+1808	有时变量需要处理不同类型的值，`VariableEntry` 的泛型机制支持这种用法：
+1813	这样，泛型的类型信息就能从使用处经变量数据正确传递给条目。
+1894	声明初始化器时，需要创建一个实现 `Initializable` 接口的 **object 对象**。
+1911	交互初始化，并开始逐 tick 更新。
+1924	也可以发出相应的停止触发器，让交互平稳结束。
+1929	它也可以修改当前交互的状态或行为。
+1948	**中断**：违反边界条件时结束交互，例如玩家走得太远。
+1949	**阻止（BLOCKING）**：阻止违反边界条件，例如取消超出允许范围的移动。
+1950	**忽略**：不执行边界约束，例如允许玩家自由移动。
+1951	边界本身不决定状态，只响应系统提供的当前状态。
+1970	关键是为条目触发提供 `player`。
+3378	[呈现条目](https://docs.typewritermc.com/docs/concepts/Manifest)
+3379	Typewriter 的主要条目类型包括序列条目和呈现条目。序列条目包含对话、事件和动作条目，使用命令式逻辑；呈现条目使用声明式逻辑。本页说明两种方式的区别及其工作原理。
+3380	[受众条目](https://docs.typewritermc.com/docs/concepts/Audience)
+3381	受众条目是呈现条目的一种，用于按条件向一组玩家显示内容。
+3382	[查看原文交互图](https://docs.typewritermc.com/docs/concepts/Audience#root-entries)
+3383	[查看原文交互图](https://docs.typewritermc.com/docs/concepts/Audience#chaining)
+3384	[查看原文交互图](https://docs.typewritermc.com/docs/concepts/Audience#multiple-parents)
+3385	[安装指南](https://docs.typewritermc.com/docs/getting-started/installation)
+3386	Typewriter 仅适用于 Paper 服务端，不支持 Spigot 或 Bukkit 服务端。
+3387	[界面布局](https://docs.typewritermc.com/docs/getting-started/layout)

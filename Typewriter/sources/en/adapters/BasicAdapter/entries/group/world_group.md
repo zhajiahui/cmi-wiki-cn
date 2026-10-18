@@ -1,0 +1,9 @@
+# World Group
+
+The `World Group` is a group that includes all the players in a world.
+
+## How could this be used? {#how-could-this-be-used}
+
+This could be used to have facts that are specific to a world, like the state of a world event or the state of a world boss.
+
+## Fields {#fields}

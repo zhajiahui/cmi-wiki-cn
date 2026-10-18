@@ -7,13 +7,23 @@ from bs4 import BeautifulSoup
 ROOT=Path(__file__).resolve().parent.parent
 SITE=ROOT/'.cache/site'
 errors=[]
-html_files={file.resolve():BeautifulSoup(file.read_text(encoding='utf-8'),'html.parser') for file in SITE.rglob('*.html')}
-anchors={path:{str(node.get('id') or node.get('name')) for node in soup.find_all(lambda node:node.has_attr('id') or (node.name=='a' and node.has_attr('name')))} for path,soup in html_files.items()}
+# Keep compact facts about each document, rather than hundreds of full DOMs.
+html_paths=sorted(SITE.rglob('*.html'))
+html_files={path.resolve():None for path in html_paths}
+anchors={};references={};page_tabs={}
+for path in html_paths:
+    resolved=path.resolve()
+    soup=BeautifulSoup(path.read_text(encoding='utf-8'),'html.parser')
+    anchors[resolved]={str(n.get('id') or n.get('name')) for n in soup.find_all(lambda n:n.has_attr('id') or (n.name=='a' and n.has_attr('name')))}
+    references[resolved]=[n.get('src') if n.name in {'img','script','video','source'} else n.get('href') for n in soup.find_all(['a','img','script','link','video','source'])]
+    if path.relative_to(SITE).as_posix() in {'index.html','residence/index.html','typewriter/index.html'}:
+        active=soup.select_one('.md-tabs__item--active')
+        page_tabs[resolved]=([n.get_text(strip=True) for n in soup.select('.md-tabs__link')],active.get_text(strip=True) if active else None)
+    soup.decompose()
 checked=0
 prefix='/cmi-wiki-cn/'
-for path,soup in html_files.items():
-    for node in soup.find_all(['a','img','script','link']):
-        url=node.get('src') if node.name in {'img','script'} else node.get('href')
+for path,urls in references.items():
+    for url in urls:
         if not url:continue
         parts=urlsplit(url)
         if parts.scheme or parts.netloc:continue
@@ -30,7 +40,7 @@ for path,soup in html_files.items():
         if parts.fragment and target in html_files:
             fragment=unquote(parts.fragment)
             if fragment not in anchors[target]:errors.append(f'Broken anchor: {path.relative_to(SITE)}: {url}')
-for project,base in [('CMI',''),('Residence','residence/')]:
+for project,base in [('CMI',''),('Residence','residence/'),('Typewriter','typewriter/')]:
     manifest=json.loads((ROOT/project/'sources/manifest.json').read_text(encoding='utf-8'))
     for row in manifest:
         file=Path(base+row['file'])
@@ -38,23 +48,24 @@ for project,base in [('CMI',''),('Residence','residence/')]:
         if not output.is_file():errors.append('Translated page not built: '+str(file))
         else:
             edit_url=f'https://github.com/zhajiahui/cmi-wiki-cn/edit/main/{project}/docs/{row["file"]}'
-            if not html_files[output.resolve()].find('a',href=edit_url):errors.append('Wrong source edit link: '+str(file))
+            if edit_url not in references[output.resolve()]:errors.append('Wrong source edit link: '+str(file))
 search=json.loads((SITE/'search/search_index.json').read_text(encoding='utf-8'))
-cmipages=[row for row in search['docs'] if '#' not in row['location'] and not row['location'].startswith('residence/')]
-respages=[row for row in search['docs'] if '#' not in row['location'] and row['location'].startswith('residence/')]
-if len(cmipages)!=45 or len(respages)!=10:errors.append('Search page coverage mismatch')
-for name,items in [('CMI',cmipages),('Residence',respages)]:
+project_pages={}
+for name,base in [('CMI',''),('Residence','residence/'),('Typewriter','typewriter/')]:
+    items=[row for row in search['docs'] if '#' not in row['location'] and (row['location'].startswith(base) if base else not row['location'].startswith(('residence/','typewriter/')))]
+    expected=json.loads((ROOT/name/'sources/manifest.json').read_text(encoding='utf-8'))
+    if len(items)!=len(expected):errors.append('Search page coverage mismatch: '+name)
     if any(not item['title'].startswith(name+' · ') or name not in item.get('tags',[]) for item in items):errors.append('Search project labels missing: '+name)
+    project_pages[name]=len(items)
 table_entries=[row for row in search['docs'] if row['location'].startswith(('residence/permissions/#permission-','residence/flags/#flag-'))]
 if len(table_entries)!=172:errors.append('Permission or flag search rows missing')
 for item in table_entries:
     parts=urlsplit(item['location'])
     target=(SITE/parts.path/'index.html').resolve()
     if unquote(parts.fragment) not in anchors[target]:errors.append('Search table-row anchor missing: '+item['location'])
-for address,project in [('index.html','CMI'),('residence/index.html','Residence')]:
-    soup=html_files[(SITE/address).resolve()]
-    if [node.get_text(strip=True) for node in soup.select('.md-tabs__link')]!=['CMI','Residence']:errors.append('Expected exactly two top-level tabs: '+address)
-    active=soup.select_one('.md-tabs__item--active')
-    if not active or active.get_text(strip=True)!=project:errors.append('Wrong active project tab: '+address)
-print(json.dumps({'html_pages':len(html_files),'local_references':checked,'search_entries':len(search['docs']),'table_row_entries':len(table_entries),'cmi_pages':len(cmipages),'residence_pages':len(respages),'errors':errors},ensure_ascii=False,indent=2))
+for address,project in [('index.html','CMI'),('residence/index.html','Residence'),('typewriter/index.html','Typewriter')]:
+    tabs,active=page_tabs[(SITE/address).resolve()]
+    if tabs!=['CMI','Residence','Typewriter']:errors.append('Expected exactly three top-level tabs: '+address)
+    if active!=project:errors.append('Wrong active project tab: '+address)
+print(json.dumps({'html_pages':len(html_files),'local_references':checked,'search_entries':len(search['docs']),'table_row_entries':len(table_entries),'project_pages':project_pages,'errors':errors},ensure_ascii=False,indent=2))
 if errors:sys.exit(1)

@@ -1,0 +1,433 @@
+site_name: Typewriter 中文 Wiki
+site_url: https://zhajiahui.github.io/cmi-wiki-cn/typewriter/
+theme:
+  name: material
+  language: zh
+  font: false
+plugins:
+- search:
+    lang:
+    - zh
+    - en
+markdown_extensions:
+- admonition
+- attr_list
+- md_in_html
+- tables
+- toc:
+    permalink: true
+- pymdownx.details
+- pymdownx.superfences
+nav:
+- 前言: index.md
+- 使用文档:
+  - 入门:
+    - 概览: docs/getting-started.md
+    - 安装指南: docs/getting-started/installation.md
+    - 界面布局: docs/getting-started/layout.md
+  - 编写故事:
+    - 第一个交互:
+      - 概览: docs/creating-stories/interactions.md
+      - 添加选项: docs/creating-stories/interactions/options.md
+      - 给予物品: docs/creating-stories/interactions/items.md
+      - 条件对话: docs/creating-stories/interactions/conditional-dialogue.md
+      - 随机对话: docs/creating-stories/interactions/dynamic-variables.md
+    - 过场动画:
+      - 概览: docs/creating-stories/cinematics.md
+      - 添加对话: docs/creating-stories/cinematics/dialogue.md
+      - 添加实体: docs/creating-stories/cinematics/entities.md
+      - 首次加入时播放过场动画: docs/creating-stories/cinematics/first-join.md
+      - 可跳过的过场动画: docs/creating-stories/cinematics/skippable-cinematics.md
+      - 指定世界的过场动画: docs/creating-stories/cinematics/world-specific.md
+    - 事实: docs/creating-stories/facts.md
+    - 实体与 NPC:
+      - 概览: docs/creating-stories/entity-extension.md
+      - 与实体交互: docs/creating-stories/entity-extension/interacting.md
+      - 按条件显示 NPC: docs/creating-stories/entity-extension/conditional-showing.md
+      - 实体活动: docs/creating-stories/entity-extension/activities.md
+    - 任务系统:
+      - 概览: docs/creating-stories/questing.md
+      - 与 NPC 对话目标: docs/creating-stories/questing/talk-objective.md
+      - 击杀僵尸目标: docs/creating-stories/questing/kill-zombie-objective.md
+      - 显示任务: docs/creating-stories/questing/displaying_quests.md
+    - 道路网络: docs/creating-stories/road-network.md
+    - 进阶交互:
+      - 概览: docs/creating-stories/advanced-interactions.md
+      - 交互上下文: docs/creating-stories/advanced-interactions/interaction-context.md
+      - 自定义命令: docs/creating-stories/advanced-interactions/custom-commands.md
+      - 交互边界:
+        - 概览: docs/creating-stories/advanced-interactions/interaction-bounds.md
+        - 选项边界: docs/creating-stories/advanced-interactions/interaction-bounds/option-bound.md
+  - 概念:
+    - 概览: docs/concepts.md
+    - 呈现条目: docs/concepts/Manifest.md
+    - 受众条目: docs/concepts/Audience.md
+  - 辅助功能:
+    - 章节: docs/helpful-features/chapters.md
+    - 命令: docs/helpful-features/commands.md
+    - PlaceholderAPI: docs/helpful-features/placeholderapi.md
+    - 快捷键: docs/helpful-features/shortcuts.md
+    - 片段（Snippets）: docs/helpful-features/snippets.md
+  - 疑难解答:
+    - 概览: docs/troubleshooting.md
+    - 扩展问题排查: docs/troubleshooting/extensions.md
+    - PacketEvents 问题排查: docs/troubleshooting/packetevent.md
+    - Playit.gg: docs/troubleshooting/playitgg.md
+    - 网页面板加载问题排查: docs/troubleshooting/ports.md
+- 扩展条目:
+  - 概览: adapters.md
+  - BasicAdapter:
+    - 概览: adapters/BasicAdapter.md
+    - 条目:
+      - 动作:
+        - 添加药水效果: adapters/BasicAdapter/entries/action/add_potion_effect.md
+        - 施加速度: adapters/BasicAdapter/entries/action/apply_velocity.md
+        - 启动过场动画: adapters/BasicAdapter/entries/action/cinematic.md
+        - 执行控制台命令: adapters/BasicAdapter/entries/action/console_run_command.md
+        - 延迟动作: adapters/BasicAdapter/entries/action/delayed_action.md
+        - 掉落物品: adapters/BasicAdapter/entries/action/drop_item.md
+        - 生成烟花: adapters/BasicAdapter/entries/action/firework.md
+        - 给予物品: adapters/BasicAdapter/entries/action/give_item.md
+        - 组内触发: adapters/BasicAdapter/entries/action/group_trigger_action.md
+        - 播放声音: adapters/BasicAdapter/entries/action/play_sound.md
+        - 执行玩家命令: adapters/BasicAdapter/entries/action/player_run_command.md
+        - 随机触发门: adapters/BasicAdapter/entries/action/random_trigger.md
+        - 移除物品: adapters/BasicAdapter/entries/action/remove_item.md
+        - 发送消息: adapters/BasicAdapter/entries/action/send_message.md
+        - 设置方块: adapters/BasicAdapter/entries/action/set_block.md
+        - 设置物品: adapters/BasicAdapter/entries/action/set_item.md
+        - 显示标题: adapters/BasicAdapter/entries/action/show_title.md
+        - 简单动作: adapters/BasicAdapter/entries/action/simple_action.md
+        - 生成粒子: adapters/BasicAdapter/entries/action/spawn_particles.md
+        - 停止声音: adapters/BasicAdapter/entries/action/stop_sound.md
+        - 切换服务器: adapters/BasicAdapter/entries/action/switch_server_action.md
+        - 传送: adapters/BasicAdapter/entries/action/teleport.md
+        - 追踪任务: adapters/BasicAdapter/entries/action/track_quest.md
+      - 受众:
+        - Boss 栏: adapters/BasicAdapter/entries/audience/boss_bar.md
+        - 过场动画受众: adapters/BasicAdapter/entries/audience/cinematic_audience.md
+        - 最近组员路径流: adapters/BasicAdapter/entries/audience/closest_group_member_path_stream.md
+        - 条件受众: adapters/BasicAdapter/entries/audience/criteria_audience.md
+        - Cron 受众: adapters/BasicAdapter/entries/audience/cron_audience.md
+        - 直达位置路径流: adapters/BasicAdapter/entries/audience/direct_location_path_stream.md
+        - 游戏时间受众: adapters/BasicAdapter/entries/audience/game_time_audience.md
+        - 组员路径流: adapters/BasicAdapter/entries/audience/group_members_path_stream.md
+        - 手持物品受众: adapters/BasicAdapter/entries/audience/holding_item_audience.md
+        - 背包物品受众: adapters/BasicAdapter/entries/audience/item_in_inventory_audience.md
+        - 槽位物品受众: adapters/BasicAdapter/entries/audience/item_in_slot_audience.md
+        - 位置目标路径流: adapters/BasicAdapter/entries/audience/location_objectives_path_stream.md
+        - 循环过场动画受众: adapters/BasicAdapter/entries/audience/looping_cinematic_audience.md
+        - 简单侧边栏: adapters/BasicAdapter/entries/audience/sidebar.md
+        - 简单文本行: adapters/BasicAdapter/entries/audience/simple_lines.md
+        - 玩家列表页眉与页脚: adapters/BasicAdapter/entries/audience/tab_list_header_footer.md
+        - 计时器受众: adapters/BasicAdapter/entries/audience/timer_audience.md
+        - 触发受众: adapters/BasicAdapter/entries/audience/trigger_audience.md
+      - 过场动画:
+        - 动作栏对话过场动画: adapters/BasicAdapter/entries/cinematic/actionbar_dialogue_cinematic.md
+        - 致盲过场动画: adapters/BasicAdapter/entries/cinematic/blinding_cinematic.md
+        - 镜头过场动画: adapters/BasicAdapter/entries/cinematic/camera_cinematic.md
+        - 过场动画控制台命令: adapters/BasicAdapter/entries/cinematic/cinematic_console_command.md
+        - 过场动画玩家命令: adapters/BasicAdapter/entries/cinematic/cinematic_player_command.md
+        - 粒子过场动画: adapters/BasicAdapter/entries/cinematic/particle_cinematic.md
+        - 药水效果过场动画: adapters/BasicAdapter/entries/cinematic/potion_effect_cinematic.md
+        - 南瓜头盔过场动画: adapters/BasicAdapter/entries/cinematic/pumpkin_hat_cinematic.md
+        - 随机动作栏对话过场动画: adapters/BasicAdapter/entries/cinematic/random_actionbar_dialogue_cinematic.md
+        - 随机逐字对话过场动画: adapters/BasicAdapter/entries/cinematic/random_spoken_dialogue_cinematic.md
+        - 随机副标题对话过场动画: adapters/BasicAdapter/entries/cinematic/random_subtitle_dialogue_cinematic.md
+        - 屏幕震动过场动画: adapters/BasicAdapter/entries/cinematic/screen_shake_cinematic.md
+        - 虚拟方块过场动画: adapters/BasicAdapter/entries/cinematic/set_fake_block_cinematic.md
+        - 声音过场动画: adapters/BasicAdapter/entries/cinematic/sound_cinematic.md
+        - 逐字对话过场动画: adapters/BasicAdapter/entries/cinematic/spoken_dialogue_cinematic.md
+        - 副标题对话过场动画: adapters/BasicAdapter/entries/cinematic/subtitle_dialogue_cinematic.md
+        - 标题过场动画: adapters/BasicAdapter/entries/cinematic/title_cinematic.md
+        - 触发序列过场动画: adapters/BasicAdapter/entries/cinematic/trigger_sequence_cinematic.md
+      - 对话:
+        - 消息对话: adapters/BasicAdapter/entries/dialogue/message.md
+        - 选项对话: adapters/BasicAdapter/entries/dialogue/option.md
+        - 随机消息对话: adapters/BasicAdapter/entries/dialogue/random_message.md
+        - 随机逐字对话: adapters/BasicAdapter/entries/dialogue/random_spoken.md
+        - 逐字对话: adapters/BasicAdapter/entries/dialogue/spoken.md
+      - 事件:
+        - 合成物品事件: adapters/BasicAdapter/entries/event/craft_item_event.md
+        - 手动触发事件: adapters/BasicAdapter/entries/event/fire_trigger_event.md
+        - 破坏方块事件: adapters/BasicAdapter/entries/event/on_block_break.md
+        - 检测命令执行事件: adapters/BasicAdapter/entries/event/on_detect_command_ran.md
+        - 钓鱼事件: adapters/BasicAdapter/entries/event/on_fish.md
+        - 方块交互事件: adapters/BasicAdapter/entries/event/on_interact_with_block.md
+        - 拾取物品事件: adapters/BasicAdapter/entries/event/on_item_pickup.md
+        - 聊天包含文本事件: adapters/BasicAdapter/entries/event/on_message_contains_text.md
+        - 放置方块事件: adapters/BasicAdapter/entries/event/on_place_block.md
+        - 玩家死亡事件: adapters/BasicAdapter/entries/event/on_player_death.md
+        - 玩家攻击实体事件: adapters/BasicAdapter/entries/event/on_player_hit_entity.md
+        - 玩家加入事件: adapters/BasicAdapter/entries/event/on_player_join.md
+        - 玩家击杀实体事件: adapters/BasicAdapter/entries/event/on_player_kill_entity.md
+        - 玩家击杀玩家事件: adapters/BasicAdapter/entries/event/on_player_kill_player.md
+        - 玩家接近位置事件: adapters/BasicAdapter/entries/event/on_player_near_location.md
+        - 玩家退出事件: adapters/BasicAdapter/entries/event/on_player_quit.md
+        - 运行命令事件: adapters/BasicAdapter/entries/event/on_run_command.md
+      - 事实:
+        - 倒计时事实: adapters/BasicAdapter/entries/fact/countdown_fact.md
+        - Cron 事实: adapters/BasicAdapter/entries/fact/cron_fact.md
+        - 处于受众中事实: adapters/BasicAdapter/entries/fact/in_audience_fact.md
+        - 处于过场动画中事实: adapters/BasicAdapter/entries/fact/in_cinematic_fact.md
+        - 背包物品数量事实: adapters/BasicAdapter/entries/fact/inventory_item_count_fact.md
+        - 手持物品事实: adapters/BasicAdapter/entries/fact/item_holding_fact.md
+        - 槽位物品事实: adapters/BasicAdapter/entries/fact/item_in_slot_fact.md
+        - 数字占位符事实: adapters/BasicAdapter/entries/fact/number_placeholder.md
+        - 永久事实: adapters/BasicAdapter/entries/fact/permanent_fact.md
+        - 任务状态事实: adapters/BasicAdapter/entries/fact/quest_status_fact.md
+        - 会话事实: adapters/BasicAdapter/entries/fact/session_fact.md
+        - 限时事实: adapters/BasicAdapter/entries/fact/timed_fact.md
+        - 数值占位符事实: adapters/BasicAdapter/entries/fact/value_placeholder.md
+      - 组:
+        - 全局组: adapters/BasicAdapter/entries/group/global_group.md
+        - 玩家组: adapters/BasicAdapter/entries/group/player_group.md
+        - 世界组: adapters/BasicAdapter/entries/group/world_group.md
+      - 简单任务:
+        - 概览: adapters/BasicAdapter/entries/quest.md
+        - 可完成目标: adapters/BasicAdapter/entries/quest/completable_objective.md
+        - 位置目标: adapters/BasicAdapter/entries/quest/location_objective.md
+        - 简单目标: adapters/BasicAdapter/entries/quest/objective.md
+        - 目标文本行: adapters/BasicAdapter/entries/quest/objective_lines.md
+        - 任务完成事件: adapters/BasicAdapter/entries/quest/quest_complete_event.md
+        - 任务开始事件: adapters/BasicAdapter/entries/quest/quest_start_event.md
+        - 任务状态更新事件: adapters/BasicAdapter/entries/quest/quest_status_update_event.md
+        - 已追踪目标受众: adapters/BasicAdapter/entries/quest/tracked_objective_audience.md
+        - 已追踪任务受众: adapters/BasicAdapter/entries/quest/tracked_quest_audience.md
+      - 声音:
+        - 自定义声音: adapters/BasicAdapter/entries/sound/custom_sound.md
+      - 静态条目:
+        - 基础道路网络: adapters/BasicAdapter/entries/static/base_road_network.md
+        - 玩家自身说话者: adapters/BasicAdapter/entries/static/self_speaker.md
+        - 简单说话者: adapters/BasicAdapter/entries/static/simple_speaker.md
+  - CitizensAdapter:
+    - 概览: adapters/CitizensAdapter.md
+    - 条目:
+      - 过场动画:
+        - 引用 NPC 过场动画: adapters/CitizensAdapter/entries/cinematic/reference_npc_cinematic.md
+        - 玩家自身 NPC 过场动画: adapters/CitizensAdapter/entries/cinematic/self_npc_cinematic.md
+      - 实体:
+        - 引用 NPC: adapters/CitizensAdapter/entries/entity/reference_npc.md
+      - 事件:
+        - NPC 交互事件: adapters/CitizensAdapter/entries/event/on_npc_interact.md
+  - CombatLogXAdapter:
+    - 概览: adapters/CombatLogXAdapter.md
+    - 条目:
+      - 事件:
+        - 玩家进入战斗事件: adapters/CombatLogXAdapter/entries/event/on_player_enter_combat.md
+        - 玩家退出战斗事件: adapters/CombatLogXAdapter/entries/event/on_player_exit_combat.md
+      - 事实:
+        - 战斗事实: adapters/CombatLogXAdapter/entries/fact/combat_fact.md
+  - EntityAdapter:
+    - 概览: adapters/EntityAdapter.md
+    - 条目:
+      - 活动:
+        - 受众活动: adapters/EntityAdapter/entries/activity/audience_activity.md
+        - 游戏时间活动: adapters/EntityAdapter/entries/activity/game_time_activity.md
+        - 对话中活动: adapters/EntityAdapter/entries/activity/in_dialogue_activity.md
+        - 近距离注视活动: adapters/EntityAdapter/entries/activity/look_close_activity.md
+        - 路径活动: adapters/EntityAdapter/entries/activity/path_activity.md
+        - 巡逻活动: adapters/EntityAdapter/entries/activity/patrol_activity.md
+        - 玩家在附近活动: adapters/EntityAdapter/entries/activity/player_close_by_activity.md
+        - 随机环顾活动: adapters/EntityAdapter/entries/activity/random_look_activity.md
+        - 目标位置活动: adapters/EntityAdapter/entries/activity/target_location_activity.md
+        - 定时活动: adapters/EntityAdapter/entries/activity/timed_activity.md
+        - 触发活动: adapters/EntityAdapter/entries/activity/trigger_activity.md
+      - 受众:
+        - 直达实体实例路径流: adapters/EntityAdapter/entries/audience/direct_entity_instance_path_stream.md
+      - 过场动画:
+        - 实体过场动画: adapters/EntityAdapter/entries/cinematic/entity_cinematic.md
+      - 实体数据:
+        - 年龄数据: adapters/EntityAdapter/entries/data/ageable_data.md
+        - 身上箭矢数量数据: adapters/EntityAdapter/entries/data/arrow_count_data.md
+        - 猫变种数据: adapters/EntityAdapter/entries/data/cat_variant_data.md
+        - 驮箱马类箱子数据: adapters/EntityAdapter/entries/data/chested_horse_chest_meta.md
+        - 项圈颜色数据: adapters/EntityAdapter/entries/data/collar_color_data.md
+        - 自定义名称数据: adapters/EntityAdapter/entries/data/custom_name_data.md
+        - 跳舞数据: adapters/EntityAdapter/entries/data/dancing_data.md
+        - 发光效果数据: adapters/EntityAdapter/entries/data/glowing_effect_data.md
+        - 马变种数据: adapters/EntityAdapter/entries/data/horse_variant_dat.md
+        - 羊驼地毯颜色数据: adapters/EntityAdapter/entries/data/llama_carpet_color_data.md
+        - 羊驼变种数据: adapters/EntityAdapter/entries/data/llama_variant_data.md
+        - 标记数据: adapters/EntityAdapter/entries/data/marker_data.md
+        - 着火数据: adapters/EntityAdapter/entries/data/on_fire_data.md
+        - 鹦鹉颜色数据: adapters/EntityAdapter/entries/data/parrot_color_data.md
+        - 姿势数据: adapters/EntityAdapter/entries/data/pose_data.md
+        - 药水效果颜色数据: adapters/EntityAdapter/entries/data/potion_effect_color_data.md
+        - 河豚膨胀状态数据: adapters/EntityAdapter/entries/data/puff_state_data.md
+        - 兔子类型数据: adapters/EntityAdapter/entries/data/rabbit_type_data.md
+        - 鞍具数据: adapters/EntityAdapter/entries/data/saddled_data.md
+        - 大小数据: adapters/EntityAdapter/entries/data/size_data.md
+        - 皮肤数据: adapters/EntityAdapter/entries/data/skin_data.md
+        - 小型数据: adapters/EntityAdapter/entries/data/small_data.md
+        - 村民数据: adapters/EntityAdapter/entries/data/villager_data.md
+      - 实体:
+        - 悦灵实例: adapters/EntityAdapter/entries/entity/allay_instance.md
+        - 猫实例: adapters/EntityAdapter/entries/entity/cat_instance.md
+        - 鸡实例: adapters/EntityAdapter/entries/entity/chicken_instance.md
+        - 牛实例: adapters/EntityAdapter/entries/entity/cow_instance.md
+        - 末影人实例: adapters/EntityAdapter/entries/entity/enderman_instance.md
+        - 青蛙实例: adapters/EntityAdapter/entries/entity/frog_instance.md
+        - 碰撞箱定义: adapters/EntityAdapter/entries/entity/hit_box_definition.md
+        - 疣猪兽实例: adapters/EntityAdapter/entries/entity/hoglin_instance.md
+        - 尸壳实例: adapters/EntityAdapter/entries/entity/husk_instance.md
+        - 交互指示器定义: adapters/EntityAdapter/entries/entity/interaction_indicator_definition.md
+        - 铁傀儡实例: adapters/EntityAdapter/entries/entity/iron_golem_instance.md
+        - 物品展示实体实例: adapters/EntityAdapter/entries/entity/item_display_instance.md
+        - 岩浆怪实例: adapters/EntityAdapter/entries/entity/magma_cube_instance.md
+        - 具名实体定义: adapters/EntityAdapter/entries/entity/named_entity_definition.md
+        - NPC 实例: adapters/EntityAdapter/entries/entity/npc_instance.md
+        - 猪灵蛮兵实例: adapters/EntityAdapter/entries/entity/piglin_brute_instance.md
+        - 猪灵实例: adapters/EntityAdapter/entries/entity/piglin_instance.md
+        - 玩家实例: adapters/EntityAdapter/entries/entity/player_instance.md
+        - 玩家自身 NPC 定义: adapters/EntityAdapter/entries/entity/self_npc_definition.md
+        - 骷髅实例: adapters/EntityAdapter/entries/entity/skeleton_instance.md
+        - 史莱姆实例: adapters/EntityAdapter/entries/entity/slime_instance.md
+        - 堆叠实体定义: adapters/EntityAdapter/entries/entity/stacked_entity_definition.md
+        - 文本展示实体实例: adapters/EntityAdapter/entries/entity/text_display_instance.md
+        - 村民实例: adapters/EntityAdapter/entries/entity/villager_instance.md
+        - 监守者实例: adapters/EntityAdapter/entries/entity/warden_instance.md
+        - 女巫实例: adapters/EntityAdapter/entries/entity/witch_instance.md
+        - 僵尸实例: adapters/EntityAdapter/entries/entity/zombie_instance.md
+      - 事件:
+        - 实体交互事件: adapters/EntityAdapter/entries/event/entity_interact_event.md
+      - 实例:
+        - 分组高级实体实例: adapters/EntityAdapter/entries/instance/group_advanced_entity_instance.md
+        - 个人高级实体实例: adapters/EntityAdapter/entries/instance/individual_advanced_entity_instance.md
+        - 共享高级实体实例: adapters/EntityAdapter/entries/instance/shared_advanced_entity_instance.md
+      - 任务:
+        - 实体交互目标: adapters/EntityAdapter/entries/quest/interact_entity_objective.md
+        - 实体交互目标路径流: adapters/EntityAdapter/entries/quest/interact_entity_objectives_path_stream.md
+  - FancyNpcsAdapter:
+    - 概览: adapters/FancyNpcsAdapter.md
+    - 条目:
+      - 过场动画:
+        - 引用 NPC 过场动画: adapters/FancyNpcsAdapter/entries/cinematic/fancy_reference_npc_cinematic.md
+        - 玩家自身 NPC 过场动画: adapters/FancyNpcsAdapter/entries/cinematic/fancy_self_npc_cinematic.md
+      - 实体:
+        - 引用 NPC: adapters/FancyNpcsAdapter/entries/entity/fancy_reference_npc.md
+      - 事件:
+        - NPC 交互事件: adapters/FancyNpcsAdapter/entries/event/fancy_on_npc_interact.md
+  - MythicMobsAdapter:
+    - 概览: adapters/MythicMobsAdapter.md
+    - 条目:
+      - 动作:
+        - 移除生物: adapters/MythicMobsAdapter/entries/action/despawn_mythicmobs_mob.md
+        - 执行技能: adapters/MythicMobsAdapter/entries/action/execute_mythicmob_skill.md
+        - 生成生物: adapters/MythicMobsAdapter/entries/action/spawn_mythicmobs_mob.md
+      - 过场动画:
+        - Mythic 生物过场动画: adapters/MythicMobsAdapter/entries/cinematic/mythicmob_cinematic.md
+        - Mythic 技能过场动画: adapters/MythicMobsAdapter/entries/cinematic/mythicskill_cinematic.md
+      - 事件:
+        - Mythic 生物交互事件: adapters/MythicMobsAdapter/entries/event/mythicmobs_interact_event.md
+        - Mythic 生物死亡事件: adapters/MythicMobsAdapter/entries/event/on_mythic_mob_die.md
+      - 事实:
+        - 生物数量事实: adapters/MythicMobsAdapter/entries/fact/mythic_mob_count_fact.md
+  - RPGRegionsAdapter:
+    - 概览: adapters/RPGRegionsAdapter.md
+    - 条目:
+      - 动作:
+        - 发现区域: adapters/RPGRegionsAdapter/entries/action/discover_rpg_region.md
+      - 事件:
+        - 发现区域事件: adapters/RPGRegionsAdapter/entries/event/on_discover_rpg_region.md
+        - 进入区域事件: adapters/RPGRegionsAdapter/entries/event/on_enter_rpg_region.md
+      - 事实:
+        - 处于区域内事实: adapters/RPGRegionsAdapter/entries/fact/in_rpg_region_fact.md
+  - SuperiorSkyblockAdapter:
+    - 概览: adapters/SuperiorSkyblockAdapter.md
+    - 条目:
+      - 动作:
+        - 岛屿银行存款: adapters/SuperiorSkyblockAdapter/entries/action/island_bank_deposit.md
+        - 岛屿银行取款: adapters/SuperiorSkyblockAdapter/entries/action/island_bank_withdraw.md
+        - 解散岛屿: adapters/SuperiorSkyblockAdapter/entries/action/island_disband.md
+        - 设置岛屿生物群系: adapters/SuperiorSkyblockAdapter/entries/action/island_set_biome.md
+        - 设置岛屿边界大小: adapters/SuperiorSkyblockAdapter/entries/action/island_set_border_size.md
+        - 设置岛屿成员上限: adapters/SuperiorSkyblockAdapter/entries/action/island_set_member_limit.md
+      - 事件:
+        - 岛屿创建事件: adapters/SuperiorSkyblockAdapter/entries/event/on_island_create.md
+        - 岛屿解散事件: adapters/SuperiorSkyblockAdapter/entries/event/on_island_disband.md
+        - 岛屿邀请事件: adapters/SuperiorSkyblockAdapter/entries/event/on_island_invite.md
+        - 加入岛屿事件: adapters/SuperiorSkyblockAdapter/entries/event/on_island_join.md
+        - 岛屿升级事件: adapters/SuperiorSkyblockAdapter/entries/event/on_island_upgrade.md
+        - 岛屿任务完成事件: adapters/SuperiorSkyblockAdapter/entries/event/on_mission_complete.md
+      - 事实:
+        - 岛屿事实: adapters/SuperiorSkyblockAdapter/entries/fact/island_fact.md
+      - 组:
+        - 岛屿组: adapters/SuperiorSkyblockAdapter/entries/group/island_group.md
+  - VaultAdapter:
+    - 概览: adapters/VaultAdapter.md
+    - 条目:
+      - 动作:
+        - 增加余额: adapters/VaultAdapter/entries/action/deposit_balance.md
+        - 设置前缀: adapters/VaultAdapter/entries/action/set_prefix.md
+        - 扣除余额: adapters/VaultAdapter/entries/action/withdraw_balance.md
+      - 事实:
+        - 余额事实: adapters/VaultAdapter/entries/fact/balance_fact.md
+        - 权限事实: adapters/VaultAdapter/entries/fact/permission_fact.md
+      - 组:
+        - 余额组: adapters/VaultAdapter/entries/group/balance_audience.md
+        - 权限组: adapters/VaultAdapter/entries/group/permission_group.md
+  - WorldGuardAdapter:
+    - 概览: adapters/WorldGuardAdapter.md
+    - 条目:
+      - 受众:
+        - 区域受众: adapters/WorldGuardAdapter/entries/audience/region_audience.md
+      - 事件:
+        - 进入区域事件: adapters/WorldGuardAdapter/entries/event/on_enter_region.md
+        - 离开区域事件: adapters/WorldGuardAdapter/entries/event/on_exit_region.md
+      - 事实:
+        - 处于区域内事实: adapters/WorldGuardAdapter/entries/fact/in_region_fact.md
+      - 组:
+        - 区域组: adapters/WorldGuardAdapter/entries/group/region_group.md
+  - ZNPCsPlusAdapter:
+    - 概览: adapters/ZNPCsPlusAdapter.md
+    - 条目:
+      - 过场动画:
+        - 引用 NPC 过场动画: adapters/ZNPCsPlusAdapter/entries/cinematic/znpc_reference_npc_cinematic.md
+        - 玩家自身 NPC 过场动画: adapters/ZNPCsPlusAdapter/entries/cinematic/znpc_self_npc_cinematic.md
+      - 实体:
+        - 引用 NPC: adapters/ZNPCsPlusAdapter/entries/entity/znpc_reference_npc.md
+      - 事件:
+        - NPC 交互事件: adapters/ZNPCsPlusAdapter/entries/event/znpc_on_npc_interact.md
+- 开发文档:
+  - 概览: develop.md
+  - 扩展开发:
+    - 概览: develop/extensions.md
+    - 创建扩展: develop/extensions/getting_started.md
+    - 初始化器: develop/extensions/initializers.md
+    - 创建条目:
+      - 概览: develop/extensions/entries.md
+      - 过场动画条目: develop/extensions/entries/cinematic.md
+      - 呈现条目:
+        - 受众条目: develop/extensions/entries/manifest/audience.md
+        - 受众过滤器: develop/extensions/entries/manifest/audience_filter.md
+        - 单一受众过滤器: develop/extensions/entries/manifest/audience_single_filter.md
+      - 占位符: develop/extensions/entries/placeholder.md
+      - 静态条目:
+        - 文件产物条目: develop/extensions/entries/static/artifact.md
+        - 资源条目: develop/extensions/entries/static/asset.md
+        - 声音 ID 条目: develop/extensions/entries/static/sound_id.md
+        - 声音来源条目: develop/extensions/entries/static/sound_source.md
+        - 说话者条目: develop/extensions/entries/static/speaker.md
+        - 变量条目: develop/extensions/entries/static/variable.md
+      - 触发条目:
+        - 动作条目: develop/extensions/entries/trigger/action.md
+        - 对话条目: develop/extensions/entries/trigger/dialogue.md
+        - 事件条目: develop/extensions/entries/trigger/event.md
+    - 交互系统:
+      - 概览: develop/extensions/interactions.md
+      - 交互边界: develop/extensions/interactions/bound.md
+    - 查询条目: develop/extensions/querying.md
+    - 触发条目: develop/extensions/triggering.md
+    - API 变更:
+      - 概览: develop/extensions/api-changes.md
+      - 0.5.X 的 API 变更: develop/extensions/api-changes/0.5.md
+      - 0.6.X 的 API 变更: develop/extensions/api-changes/0.6.md
+      - 0.7.X 的 API 变更: develop/extensions/api-changes/0.7.md
+      - 0.8.X 的 API 变更: develop/extensions/api-changes/0.8.md
+hooks:
+- scripts/media-hook.py
+extra_javascript:
+- assets/typewriter.js
+docs_dir: docs
+site_dir: .cache/site

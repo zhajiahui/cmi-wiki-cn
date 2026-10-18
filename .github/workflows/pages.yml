@@ -25,6 +25,7 @@ jobs:
       - run: python Site/verify.py
       - run: python -m mkdocs build --strict -f Site/mkdocs.yml
       - run: python Site/verify-site.py
+      - run: node Site/verify-search.cjs
       - uses: actions/upload-pages-artifact@v5.0.0
         if: github.event_name != 'pull_request'
         with:

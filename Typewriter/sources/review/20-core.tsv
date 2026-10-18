@@ -1,0 +1,83 @@
+1610	帧与游戏 tick 对应，每秒有 20 帧。过场动画的总时长取决于所有条目片段中最晚的 `endFrame`。
+1942	例如，玩家正在观看优先级为 1 的过场动画时，如果触发了优先级为 0 的闲置对话，该对话不会打断过场动画。
+2056	**开始前**
+2057	本教程假定你已按[安装指南](https://docs.typewritermc.com/docs/getting-started/installation#basic-extension)安装 Basic Extension。
+2092	**开始前**
+2093	本教程面向进阶用户，建议先了解[交互](https://docs.typewritermc.com/docs/creating-stories/interactions)的工作方式。
+2094	在故事中使用交互边界前，先了解以下概念。
+2096	交互边界通过条件，将交互限制在特定操作或空间内，控制交互何时发生、何时被打断。例如，玩家远离 NPC 时取消对话。
+2098	交互边界有两种模式：
+2100	在中断模式下，玩家一旦违反边界条件（例如走出指定区域），交互就会立即取消。适合允许玩家随时走开的日常对话。
+2102	在阻止模式下，玩家会被阻止违反边界条件。例如，重要对话进行时，玩家无法走开，需完整经历这段剧情后再继续。
+2107	模式由交互与边界的**优先级**比较决定：
+2108	交互的优先级**高于**边界 → **阻止模式**
+2109	交互的优先级**等于或低于**边界 → **中断模式**
+2111	条目继承所属页面的优先级。可以在页面属性面板中设置页面优先级。
+2113	下面介绍如何在故事中使用交互边界。
+2114	本教程用 3 个示例说明不同情境下的用法：
+2116	**教程**
+2117	这个示例在玩家远离花朵时中断交互。
+2118	**初始设置**
+2119	本教程接续[交互教程](https://docs.typewritermc.com/docs/creating-stories/interactions)，编辑器中至少需要有一个
+2120	`On Interact With Block` 条目。
+2122	右键点击 `On Interact With Block` 条目，选择 `Link with ...`，搜索 `Player Radius Interaction Bound`，并将其添加到序列中。
+2123	添加 Player Radius Interaction Bound
+2124	以玩家为中心的交互边界
+2126	添加交互边界后，继续配置。
+2127	选中 `Player Radius Interaction Bound` 条目，打开属性面板。
+2128	这里有 2 个设置项：
+2129	**Radius**：交互边界的半径。玩家超出这个距离时，交互会被取消。
+2130	**zoom**：玩家靠近时镜头是否拉近、走远时是否拉远。
+2131	此时序列应与下图类似：
+2133	交互效果如下：
+2134	这个示例在玩家试图远离花朵时，阻止玩家离开交互范围。
+2136	前面的设置创建了中断模式的边界。要改为阻止模式，需要让 `Spoken` 条目的优先级高于 `Player Radius Interaction Bound` 条目。
+2137	操作如下：
+2138	新建一个序列页面，例如命名为 `Blocking Bounds`。
+2139	选中并长按 `Player Radius Interaction Bound` 条目几秒钟。
+2140	将它拖到新页面中。
+2141	右键点击包含 `Spoken` 条目的页面。
+2142	**选择 `Change Priority`，将优先级设为高于 `Player Radius Interaction Bound` 条目的数值。**
+2143	例如，`Blocking Bounds` 页面优先级为 0，就将包含 `Spoken` 条目的页面设为 1。
+2144	此时序列应如下图所示：
+2146	这个示例在玩家远离 NPC 时中断交互。
+2148	本教程需要先通过 [Entity Extension](https://docs.typewritermc.com/docs/creating-stories/entity-extension) 创建一个 NPC。
+2149	**待补充**
+2150	原文尚未提供这部分教程，请稍后查看。
+2211	变量有 2 种配置方式：
+2538	[`Basic Extension`](https://docs.typewritermc.com/adapters/BasicAdapter) 提供了多种事实，[`extensions`](https://docs.typewritermc.com/adapters) 还可以增加更多可用的事实。
+3050	**平台兼容性**
+3051	Typewriter 仅适用于 **Paper** 服务端，不支持 Spigot 或 Bukkit 服务端。
+3053	按以下步骤在 Paper Minecraft 服务器上安装 Typewriter。
+3055	通过[此 Modrinth 链接](https://modrinth.com/plugin/typewriter/version/0.8.0)下载**最新版本**。
+3056	将下载的插件放入服务器的 `plugins` 文件夹。
+3058	Typewriter 需要安装额外的依赖插件才能正常运行。
+3059	下载 Typewriter 的依赖 [PacketEvents](https://modrinth.com/plugin/packetevents/versions?l=paper)，放入 `plugins` 目录。
+3060	确认未安装 [InteractiveChat](https://www.spigotmc.org/resources/interactivechat-show-items-inventory-in-chat-custom-chat-keywords-bungee-velocity-support.75870/) 或 [CustomNamePlates](https://polymart.org/resource/customnameplates.2543)（3.0.15 或更低版本）；这些插件可能与 Typewriter 冲突。
+3062	Typewriter 提供多种扩展，其中必须安装 `BasicExtension`。
+3063	通过[此 Modrinth 链接](https://modrinth.com/plugin/typewriter/version/0.8.0)，从**最新版本**中下载最新的 `BasicExtension`，放入 `plugins/Typewriter/extensions` 文件夹。
+3064	可用扩展的完整列表见[扩展](https://docs.typewritermc.com/adapters)。
+3065	全部组件放好后，重启 Minecraft 服务器，完成 Typewriter 安装。
+3066	**版本不匹配**
+3069	**外部服务器服务商**
+3070	Typewriter 的网页面板**不兼容**部分外部服务器服务商，包括 **Minehut**、**Aternos** 和 **Apex**。这些服务商通常不支持多个端口，但可以尝试联系其客服申请开放额外端口。
+3071	如果无法开放额外端口，Typewriter 的其他功能仍可使用；也可以在本地搭建安装了 Typewriter 的服务器。
+3072	需要进一步帮助时，可在 [Discord](https://discord.gg/HtbKyuDDBw) 提问。
+3073	**资源占用**
+3074	网页面板和 WebSocket 会占用服务器资源，建议将面板放在开发服务器上，而非正式服务器。
+3075	安装插件后，继续配置网页面板。
+3076	网页面板至少需要额外开放两个端口，端口号可以修改。
+3077	默认端口为 `8080` 和 `9092`。
+3078	按以下步骤启用网页面板：
+3080	打开 `plugins/Typewriter/config.yml` 文件。
+3081	将配置改为以下内容：
+3082	plugins/Typewriter/config.yml
+3083	用 [portchecker](https://portchecker.co/) 检查端口是否开放。如果没有开放，请自行开放端口，或联系服务器服务商处理。
+3084	重启服务器，完成安装。
+3086	连接网页面板的步骤如下：
+3087	在游戏中执行 `/typewriter connect`，获取网页面板的访问链接。
+3089	用浏览器打开链接。
+3091	连接成功后，就可以在网页面板中创建和配置任务、NPC 对话等内容，也可以查看、编辑服务器已有的玩家交互。
+3093	遇到问题时，可查看[疑难解答](https://docs.typewritermc.com/docs/troubleshooting)中的常见问题处理方法。
+3094	如果仍有问题，可在 [Discord](https://discord.gg/HtbKyuDDBw) 求助。
+3095	按照[交互教程](https://docs.typewritermc.com/docs/creating-stories/interactions)创建第一个交互。如有疑问，可在 [Discord](https://discord.gg/HtbKyuDDBw) 提问。

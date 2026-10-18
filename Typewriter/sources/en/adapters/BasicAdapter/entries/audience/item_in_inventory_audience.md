@@ -1,0 +1,23 @@
+# Item In Inventory Audience
+
+The `Item In Inventory Audience` entry filters an audience based on if they have a specific item in their inventory.
+
+## How could this be used? {#how-could-this-be-used}
+
+This could show a boss bar or sidebar based on if a player has a specific item in their inventory.
+
+## Fields {#fields}
+
+## Children
+
+Required List
+
+## Item
+
+Required
+
+The item to check for in the inventory.
+
+## Inverted
+
+Required

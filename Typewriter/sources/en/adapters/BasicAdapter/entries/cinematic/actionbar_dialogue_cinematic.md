@@ -1,0 +1,33 @@
+# Action Bar Dialogue Cinematic
+
+The `Action Bar Dialogue Cinematic` is a cinematic that shows a dialogue in the action bar.
+You can specify the speaker and the dialogue.
+
+## How could this be used? {#how-could-this-be-used}
+
+This cinematic is useful to display dialogue in combination with a camera path.
+As the dialogue is displayed in the action bar, the player can still move around and look at the camera path.
+
+## Fields {#fields}
+
+## Criteria
+
+Inherited List
+
+A list of facts that must be met by the player before this entry can be triggered.
+
+## Speaker
+
+Required
+
+The speaker of the dialogue
+
+## Segments
+
+Required List Segment
+
+Segments are time frames in a cinematic. During a segment can take actions or display information.  
+
+**info**
+
+Segments cannot overlap. If you need overlapping segments, create a new entry.

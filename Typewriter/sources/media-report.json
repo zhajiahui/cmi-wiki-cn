@@ -1,0 +1,1582 @@
+[
+  {
+    "path": "/adapters",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/action/add_potion_effect",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/action/apply_velocity",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/action/cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/action/console_run_command",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/action/delayed_action",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/action/drop_item",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/action/firework",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/action/give_item",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/action/group_trigger_action",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/action/play_sound",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/action/player_run_command",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/action/random_trigger",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/action/remove_item",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/action/send_message",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/action/set_block",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/action/set_item",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/action/show_title",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/action/simple_action",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/action/spawn_particles",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/action/stop_sound",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/action/switch_server_action",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/action/teleport",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/action/track_quest",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/audience/boss_bar",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/audience/cinematic_audience",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/audience/closest_group_member_path_stream",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/audience/criteria_audience",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/audience/cron_audience",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/audience/direct_location_path_stream",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/audience/game_time_audience",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/audience/group_members_path_stream",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/audience/holding_item_audience",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/audience/item_in_inventory_audience",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/audience/item_in_slot_audience",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/audience/location_objectives_path_stream",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/audience/looping_cinematic_audience",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/audience/sidebar",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/audience/simple_lines",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/audience/tab_list_header_footer",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/audience/timer_audience",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/audience/trigger_audience",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/cinematic/actionbar_dialogue_cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/cinematic/blinding_cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/cinematic/camera_cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/cinematic/cinematic_console_command",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/cinematic/cinematic_player_command",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/cinematic/particle_cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/cinematic/potion_effect_cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/cinematic/pumpkin_hat_cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/cinematic/random_actionbar_dialogue_cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/cinematic/random_spoken_dialogue_cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/cinematic/random_subtitle_dialogue_cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/cinematic/screen_shake_cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/cinematic/set_fake_block_cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/cinematic/sound_cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/cinematic/spoken_dialogue_cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/cinematic/subtitle_dialogue_cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/cinematic/title_cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/cinematic/trigger_sequence_cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/dialogue/message",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/dialogue/option",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/dialogue/random_message",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/dialogue/random_spoken",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/dialogue/spoken",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/event/craft_item_event",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/event/fire_trigger_event",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/event/on_block_break",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/event/on_detect_command_ran",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/event/on_fish",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/event/on_interact_with_block",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/event/on_item_pickup",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/event/on_message_contains_text",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/event/on_place_block",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/event/on_player_death",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/event/on_player_hit_entity",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/event/on_player_join",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/event/on_player_kill_entity",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/event/on_player_kill_player",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/event/on_player_near_location",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/event/on_player_quit",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/event/on_run_command",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/fact/countdown_fact",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/fact/cron_fact",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/fact/in_audience_fact",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/fact/in_cinematic_fact",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/fact/inventory_item_count_fact",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/fact/item_holding_fact",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/fact/item_in_slot_fact",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/fact/number_placeholder",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/fact/permanent_fact",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/fact/quest_status_fact",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/fact/session_fact",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/fact/timed_fact",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/fact/value_placeholder",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/group/global_group",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/group/player_group",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/group/world_group",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/quest",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/quest/completable_objective",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/quest/location_objective",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/quest/objective",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/quest/objective_lines",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/quest/quest_complete_event",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/quest/quest_start_event",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/quest/quest_status_update_event",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/quest/tracked_objective_audience",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/quest/tracked_quest_audience",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/sound/custom_sound",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/static/base_road_network",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/static/self_speaker",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/BasicAdapter/entries/static/simple_speaker",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/CitizensAdapter",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/CitizensAdapter/entries/cinematic/reference_npc_cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/CitizensAdapter/entries/cinematic/self_npc_cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/CitizensAdapter/entries/entity/reference_npc",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/CitizensAdapter/entries/event/on_npc_interact",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/CombatLogXAdapter",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/CombatLogXAdapter/entries/event/on_player_enter_combat",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/CombatLogXAdapter/entries/event/on_player_exit_combat",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/CombatLogXAdapter/entries/fact/combat_fact",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/activity/audience_activity",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/activity/game_time_activity",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/activity/in_dialogue_activity",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/activity/look_close_activity",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/activity/path_activity",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/activity/patrol_activity",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/activity/player_close_by_activity",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/activity/random_look_activity",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/activity/target_location_activity",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/activity/timed_activity",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/activity/trigger_activity",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/audience/direct_entity_instance_path_stream",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/cinematic/entity_cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/data/ageable_data",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/data/arrow_count_data",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/data/cat_variant_data",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/data/chested_horse_chest_meta",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/data/collar_color_data",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/data/custom_name_data",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/data/dancing_data",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/data/glowing_effect_data",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/data/horse_variant_dat",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/data/llama_carpet_color_data",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/data/llama_variant_data",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/data/marker_data",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/data/on_fire_data",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/data/parrot_color_data",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/data/pose_data",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/data/potion_effect_color_data",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/data/puff_state_data",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/data/rabbit_type_data",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/data/saddled_data",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/data/size_data",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/data/skin_data",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/data/small_data",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/data/villager_data",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/allay_instance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/cat_instance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/chicken_instance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/cow_instance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/enderman_instance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/frog_instance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/hit_box_definition",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/hoglin_instance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/husk_instance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/interaction_indicator_definition",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/iron_golem_instance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/item_display_instance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/magma_cube_instance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/named_entity_definition",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/npc_instance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/piglin_brute_instance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/piglin_instance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/player_instance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/self_npc_definition",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/skeleton_instance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/slime_instance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/stacked_entity_definition",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/text_display_instance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/villager_instance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/warden_instance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/witch_instance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/entity/zombie_instance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/event/entity_interact_event",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/instance/group_advanced_entity_instance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/instance/individual_advanced_entity_instance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/instance/shared_advanced_entity_instance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/quest/interact_entity_objective",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/EntityAdapter/entries/quest/interact_entity_objectives_path_stream",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/FancyNpcsAdapter",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/FancyNpcsAdapter/entries/cinematic/fancy_reference_npc_cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/FancyNpcsAdapter/entries/cinematic/fancy_self_npc_cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/FancyNpcsAdapter/entries/entity/fancy_reference_npc",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/FancyNpcsAdapter/entries/event/fancy_on_npc_interact",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/MythicMobsAdapter",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/MythicMobsAdapter/entries/action/despawn_mythicmobs_mob",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/MythicMobsAdapter/entries/action/execute_mythicmob_skill",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/MythicMobsAdapter/entries/action/spawn_mythicmobs_mob",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/MythicMobsAdapter/entries/cinematic/mythicmob_cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/MythicMobsAdapter/entries/cinematic/mythicskill_cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/MythicMobsAdapter/entries/event/mythicmobs_interact_event",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/MythicMobsAdapter/entries/event/on_mythic_mob_die",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/MythicMobsAdapter/entries/fact/mythic_mob_count_fact",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/RPGRegionsAdapter",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/RPGRegionsAdapter/entries/action/discover_rpg_region",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/RPGRegionsAdapter/entries/event/on_discover_rpg_region",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/RPGRegionsAdapter/entries/event/on_enter_rpg_region",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/RPGRegionsAdapter/entries/fact/in_rpg_region_fact",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/SuperiorSkyblockAdapter",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/action/island_bank_deposit",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/action/island_bank_withdraw",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/action/island_disband",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/action/island_set_biome",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/action/island_set_border_size",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/action/island_set_member_limit",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/event/on_island_create",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/event/on_island_disband",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/event/on_island_invite",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/event/on_island_join",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/event/on_island_upgrade",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/event/on_mission_complete",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/fact/island_fact",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/SuperiorSkyblockAdapter/entries/group/island_group",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/VaultAdapter",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/VaultAdapter/entries/action/deposit_balance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/VaultAdapter/entries/action/set_prefix",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/VaultAdapter/entries/action/withdraw_balance",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/VaultAdapter/entries/fact/balance_fact",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/VaultAdapter/entries/fact/permission_fact",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/VaultAdapter/entries/group/balance_audience",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/VaultAdapter/entries/group/permission_group",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/WorldGuardAdapter",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/WorldGuardAdapter/entries/audience/region_audience",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/WorldGuardAdapter/entries/event/on_enter_region",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/WorldGuardAdapter/entries/event/on_exit_region",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/WorldGuardAdapter/entries/fact/in_region_fact",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/WorldGuardAdapter/entries/group/region_group",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/ZNPCsPlusAdapter",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/ZNPCsPlusAdapter/entries/cinematic/znpc_reference_npc_cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/ZNPCsPlusAdapter/entries/cinematic/znpc_self_npc_cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/ZNPCsPlusAdapter/entries/entity/znpc_reference_npc",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/adapters/ZNPCsPlusAdapter/entries/event/znpc_on_npc_interact",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions/api-changes",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions/api-changes/0.5",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions/api-changes/0.6",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions/api-changes/0.7",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions/api-changes/0.8",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions/entries",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions/entries/cinematic",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions/entries/manifest/audience",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions/entries/manifest/audience_filter",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions/entries/manifest/audience_single_filter",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions/entries/placeholder",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions/entries/static/artifact",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions/entries/static/asset",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions/entries/static/sound_id",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions/entries/static/sound_source",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions/entries/static/speaker",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions/entries/static/variable",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions/entries/trigger/action",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions/entries/trigger/dialogue",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions/entries/trigger/event",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions/getting_started",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions/initializers",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions/interactions",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions/interactions/bound",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions/querying",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/develop/extensions/triggering",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/concepts",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/concepts/Audience",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/concepts/Manifest",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/creating-stories/advanced-interactions",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/creating-stories/advanced-interactions/custom-commands",
+    "videos": 1,
+    "example_displays": 1
+  },
+  {
+    "path": "/docs/creating-stories/advanced-interactions/interaction-bounds",
+    "videos": 2,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/creating-stories/advanced-interactions/interaction-bounds/option-bound",
+    "videos": 1,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/creating-stories/advanced-interactions/interaction-context",
+    "videos": 2,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/creating-stories/cinematics",
+    "videos": 2,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/creating-stories/cinematics/dialogue",
+    "videos": 1,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/creating-stories/cinematics/entities",
+    "videos": 4,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/creating-stories/cinematics/first-join",
+    "videos": 1,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/creating-stories/cinematics/skippable-cinematics",
+    "videos": 1,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/creating-stories/cinematics/world-specific",
+    "videos": 1,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/creating-stories/entity-extension",
+    "videos": 2,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/creating-stories/entity-extension/activities",
+    "videos": 1,
+    "example_displays": 1
+  },
+  {
+    "path": "/docs/creating-stories/entity-extension/conditional-showing",
+    "videos": 1,
+    "example_displays": 1
+  },
+  {
+    "path": "/docs/creating-stories/entity-extension/interacting",
+    "videos": 1,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/creating-stories/facts",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/creating-stories/interactions",
+    "videos": 3,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/creating-stories/interactions/conditional-dialogue",
+    "videos": 1,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/creating-stories/interactions/dynamic-variables",
+    "videos": 1,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/creating-stories/interactions/items",
+    "videos": 2,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/creating-stories/interactions/options",
+    "videos": 1,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/creating-stories/questing",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/creating-stories/questing/displaying_quests",
+    "videos": 0,
+    "example_displays": 2
+  },
+  {
+    "path": "/docs/creating-stories/questing/kill-zombie-objective",
+    "videos": 1,
+    "example_displays": 2
+  },
+  {
+    "path": "/docs/creating-stories/questing/talk-objective",
+    "videos": 1,
+    "example_displays": 2
+  },
+  {
+    "path": "/docs/creating-stories/road-network",
+    "videos": 8,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/getting-started",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/getting-started/installation",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/getting-started/layout",
+    "videos": 1,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/helpful-features/chapters",
+    "videos": 1,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/helpful-features/commands",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/helpful-features/placeholderapi",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/helpful-features/shortcuts",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/helpful-features/snippets",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/home",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/troubleshooting",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/troubleshooting/extensions",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/troubleshooting/packetevent",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/troubleshooting/playitgg",
+    "videos": 0,
+    "example_displays": 0
+  },
+  {
+    "path": "/docs/troubleshooting/ports",
+    "videos": 0,
+    "example_displays": 0
+  }
+]
