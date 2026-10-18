@@ -39,7 +39,7 @@ source_version: 0.8.0
 
 仅支持返回数字或布尔值的占位符！
 如果你想使用返回字符串的占位符，
-请改用[数值占位符事实](value_placeholder.md)。
+请改用[值占位符事实](value_placeholder.md)。
 
 可以使用[`PlaceholderApi`](https://github.com/PlaceholderAPI/PlaceholderAPI/wiki)中的占位符。例如，你可以使用`%player_name%`作为玩家名称。
 

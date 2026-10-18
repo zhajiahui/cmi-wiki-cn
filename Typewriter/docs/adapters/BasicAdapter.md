@@ -136,7 +136,7 @@ Basic Adapter 包含 Typewriter 所需的基础条目。
 |[任务状态事实](BasicAdapter/entries/fact/quest_status_fact.md)|特定任务的状态 |
 |[会话事实](BasicAdapter/entries/fact/session_fact.md)|保存到玩家退出服务器为止 |
 |[限时事实](BasicAdapter/entries/fact/timed_fact.md)|保存指定的持续时间，例如 20 分钟 |
-|[数值占位符事实](BasicAdapter/entries/fact/value_placeholder.md)|占位符值的事实 |
+|[值占位符事实](BasicAdapter/entries/fact/value_placeholder.md)|占位符值的事实 |
 
 ### 组 {#groups}
 

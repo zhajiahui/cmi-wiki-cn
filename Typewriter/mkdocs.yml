@@ -178,7 +178,7 @@ nav:
         - 任务状态事实: adapters/BasicAdapter/entries/fact/quest_status_fact.md
         - 会话事实: adapters/BasicAdapter/entries/fact/session_fact.md
         - 限时事实: adapters/BasicAdapter/entries/fact/timed_fact.md
-        - 数值占位符事实: adapters/BasicAdapter/entries/fact/value_placeholder.md
+        - 值占位符事实: adapters/BasicAdapter/entries/fact/value_placeholder.md
       - 组:
         - 全局组: adapters/BasicAdapter/entries/group/global_group.md
         - 玩家组: adapters/BasicAdapter/entries/group/player_group.md

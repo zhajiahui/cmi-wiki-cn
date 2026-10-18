@@ -1,10 +1,10 @@
 ---
-title: 数值占位符事实（Value Placeholder Fact）
+title: 值占位符事实（Value Placeholder Fact）
 source: https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/value_placeholder
 source_version: 0.8.0
 ---
 
-# 数值占位符事实（Value Placeholder Fact）
+# 值占位符事实（Value Placeholder Fact）
 
 根据占位符计算得出的[事实](../../../../docs/creating-stories/facts.md)。
 该占位符在读取事实时进行评估，并且可以返回任何内容。

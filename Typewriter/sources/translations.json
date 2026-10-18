@@ -557,7 +557,7 @@
   {
     "id": 111,
     "source": "| [Value Placeholder Fact](https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/value_placeholder) | Fact for a placeholder value |",
-    "zh": "|[数值占位符事实](https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/value_placeholder)|占位符值的事实 |"
+    "zh": "|[值占位符事实](https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/value_placeholder)|占位符值的事实 |"
   },
   {
     "id": 112,
@@ -3467,7 +3467,7 @@
   {
     "id": 693,
     "source": "use the [ValuePlaceholderFactEntry](https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/value_placeholder) instead.",
-    "zh": "请改用[数值占位符事实](https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/value_placeholder)。"
+    "zh": "请改用[值占位符事实](https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/value_placeholder)。"
   },
   {
     "id": 694,
@@ -3577,7 +3577,7 @@
   {
     "id": 715,
     "source": "Value Placeholder Fact",
-    "zh": "数值占位符事实"
+    "zh": "值占位符事实"
   },
   {
     "id": 716,

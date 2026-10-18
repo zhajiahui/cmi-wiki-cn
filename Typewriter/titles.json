@@ -381,7 +381,7 @@
   },
   "/adapters/BasicAdapter/entries/fact/value_placeholder": {
     "en": "Value Placeholder Fact",
-    "zh": "数值占位符事实"
+    "zh": "值占位符事实"
   },
   "/adapters/BasicAdapter/entries/group/global_group": {
     "en": "Global Group",

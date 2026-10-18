@@ -855,7 +855,7 @@
     "translation_review": "terminology-and-technical-content-checked"
   },
   {
-    "title": "数值占位符事实（Value Placeholder Fact）",
+    "title": "值占位符事实（Value Placeholder Fact）",
     "source": "https://docs.typewritermc.com/adapters/BasicAdapter/entries/fact/value_placeholder",
     "source_path": "/adapters/BasicAdapter/entries/fact/value_placeholder",
     "file": "adapters/BasicAdapter/entries/fact/value_placeholder.md",
