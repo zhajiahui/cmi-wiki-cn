@@ -1,0 +1,37 @@
+{
+  "name": "MMOItems",
+  "version": "6.10.1-SNAPSHOT",
+  "website": "www.phoenixdevt.fr",
+  "depend": [
+    "MythicLib"
+  ],
+  "softdepend": [
+    "WorldGuard",
+    "Residence",
+    "BossShopPro",
+    "MMOCore",
+    "MMOProfiles",
+    "MythicMobs",
+    "PlaceholderAPI",
+    "Vault",
+    "Denizen",
+    "MythicEnchants"
+  ],
+  "authors": "Indyuce",
+  "commands": [
+    "mmoitems",
+    "updateitem"
+  ],
+  "permissions": [
+    "mmoitems.admin",
+    "mmoitems.update",
+    "mmoitems.edit.op",
+    "mmoitems.bypass.item",
+    "mmoitems.bypass.ability",
+    "mmoitems.bypass.class",
+    "mmoitems.bypass.soulbound",
+    "mmoitems.bypass.level",
+    "mmoitems.update-notify",
+    "mmoitems.soulbound"
+  ]
+}

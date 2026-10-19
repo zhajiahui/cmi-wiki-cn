@@ -1,0 +1,540 @@
+---
+title: item/sword.yml
+source_kind: imported-configuration
+translation_review: reviewed
+source_file: item/sword.yml
+source_version: 6.10.1-SNAPSHOT
+---
+
+# item/sword.yml
+
+文件：`item/sword.yml`。版本：`6.10.1-SNAPSHOT`。
+
+随包物品或内容配置。
+
+## `LONG_SWORD` { #long_sword }
+
+```yaml title="item/sword.yml · LONG_SWORD"
+LONG_SWORD:
+  base:
+    material: IRON_SWORD
+    name: "&f长剑"
+    attack-speed: 1.6
+    attack-damage:
+      base: 6
+      scale: 1.2
+      spread: 0.1
+      max-spread: 0.3
+    required-level:
+      base: 0
+      scale: 1
+    element:
+      fire:
+        damage: 10
+  modifiers:
+    sharp:
+      chance: 0.5
+    fiery:
+      chance: 0.5
+```
+
+## `CUTLASS` { #cutlass }
+
+```yaml title="item/sword.yml · CUTLASS"
+CUTLASS:
+  base:
+    material: IRON_SWORD
+    attack-damage:
+      base: 7.0
+      spread: 0.04
+      max-spread: 0.13
+    attack-speed:
+      base: 1.7
+      spread: 0.02
+      max-spread: 0.05
+    lore:
+    - "&7比铁剑略好。"
+    required-level: 3.0
+    tier: COMMON
+    name: "&f锋利弯刀"
+    max-durability: 300.0
+```
+
+## `FALCON_BLADE` { #falcon_blade }
+
+```yaml title="item/sword.yml · FALCON_BLADE"
+FALCON_BLADE:
+  base:
+    material: GOLDEN_SWORD
+    required-level: 10.0
+    attack-damage:
+      base: 8.0
+      spread: 0.04
+      max-spread: 0.11
+      maxSpread: 0.11
+    attack-speed:
+      base: 1.8
+      spread: 0.03
+      max-spread: 0.1
+    critical-strike-chance:
+      base: 60.0
+      spread: 0.05
+      max-spread: 0.14
+    gem-sockets:
+    - Blue
+    - Green
+    ability:
+      on-hit:
+        type: LIFE_ENDER
+        mode: ATTACK
+        damage:
+          base: 10.0
+          scale: 1
+          spread: 0.1
+          max-spread: 0.2
+    unbreakable: true
+    perm-effects:
+      SPEED: 1
+    disable-enchanting: true
+    tier: EPIC
+    crafting:
+      shaped:
+        '1':
+        - AIR MATERIAL.EPIC_WEAPON_ESSENCE AIR
+        - MATERIAL.EPIC_WEAPON_ESSENCE GOLDEN_SWORD MATERIAL.EPIC_WEAPON_ESSENCE
+        - AIR MATERIAL.EPIC_WEAPON_ESSENCE AIR
+    disable-repairing: true
+    name: "&e猎隼之刃"
+    upgrade:
+      workbench: false
+    hide-enchants: true
+```
+
+## `KATANA` { #katana }
+
+```yaml title="item/sword.yml · KATANA"
+KATANA:
+  base:
+    material: IRON_SWORD
+    attack-damage: 7.0
+    lore:
+    - "&7&o一把锋利 & 轻巧的剑，"
+    - "&7&o出自拥有百年经验的"
+    - "&7&o锻造大师之手。"
+    attack-speed: 2.0
+    tier: RARE
+    movement-speed: 0.02
+    critical-strike-chance: 10.0
+    name: "&f武士刀"
+    max-durability: 800.0
+```
+
+## `SOULSTEALER` { #soulstealer }
+
+```yaml title="item/sword.yml · SOULSTEALER"
+SOULSTEALER:
+  base:
+    material: IRON_SWORD
+    enchants:
+      unbreaking: 9
+    name: "&c噬魂者"
+    attack-damage:
+      base: 10.0
+      spread: 10.0
+      max-spread: 0.03
+      scale: 10.0
+      maxSpread: 10.0
+    attack-speed:
+      base: 1.65
+      spread: 0.01
+      max-spread: 0.03
+    mana-cost: 2.0
+    critical-strike-chance: 30.0
+    max-health: 2.0
+    required-level: 10.0
+    ability:
+      ability1:
+        type: VAMPIRISM
+        mode: ATTACK
+        cooldown: 7.0
+    crafting:
+      shaped:
+        '1':
+        - MISCELLANEOUS.HUMAN_SOUL MISCELLANEOUS.HUMAN_SOUL MISCELLANEOUS.HUMAN_SOUL
+        - MISCELLANEOUS.HUMAN_SOUL SWORD.SILVER_SWORD MISCELLANEOUS.HUMAN_SOUL
+        - MISCELLANEOUS.HUMAN_SOUL MISCELLANEOUS.HUMAN_SOUL MISCELLANEOUS.HUMAN_SOUL
+    lore:
+    - "&7将造成伤害的 &c10%&7"
+    - "&7转化为生命值。"
+```
+
+## `STEEL_SWORD` { #steel_sword }
+
+```yaml title="item/sword.yml · STEEL_SWORD"
+STEEL_SWORD:
+  base:
+    material: IRON_SWORD
+    name: "&f钢剑"
+    attack-damage:
+      base: 6.5
+      spread: 0.02
+      max-spread: 0.07
+    attack-speed:
+      base: 1.625
+      spread: 0.006
+      max-spread: 0.02
+    lore:
+    - "&7可以升级。"
+    required-level: 6.0
+    upgrade:
+      template: weapon-default
+```
+
+## `SILVER_SWORD` { #silver_sword }
+
+```yaml title="item/sword.yml · SILVER_SWORD"
+SILVER_SWORD:
+  base:
+    material: IRON_SWORD
+    name: "&f银剑"
+    attack-damage: 6.0
+    attack-speed: 1.6
+    lore:
+    - "&7可以升级。"
+    required-level: 4.0
+    crafting:
+      shaped:
+        '1':
+        - AIR MATERIAL.SILVER_INGOT AIR
+        - AIR MATERIAL.SILVER_INGOT AIR
+        - AIR STICK AIR
+        '2':
+        - MATERIAL.SILVER_INGOT AIR AIR
+        - MATERIAL.SILVER_INGOT AIR AIR
+        - STICK AIR AIR
+        '3':
+        - AIR AIR MATERIAL.SILVER_INGOT
+        - AIR AIR MATERIAL.SILVER_INGOT
+        - AIR AIR STICK
+```
+
+## `AMETHYST_SWORD` { #amethyst_sword }
+
+```yaml title="item/sword.yml · AMETHYST_SWORD"
+AMETHYST_SWORD:
+  base:
+    material: IRON_SWORD
+    name: "§9§l§o紫水晶剑"
+    lore:
+      - "§d一种充满魔力的材料"
+      - "§d让这把剑与众不同。"
+    enchants:
+      sharpness: 3.0
+    max-durability: 2200.0
+    item-particles:
+      type: DOUBLE_RINGS
+      particle: REDSTONE
+      color:
+        red: 128
+        green: 0
+        blue: 128
+    attack-damage:
+      base: 30.0
+      scale: 0.08
+      spread: 0.1
+      max-spread: 0.15
+    critical-strike-chance:
+      base: 4.0
+      spread: 0.1
+      max-spread: 0.3
+    critical-strike-power:
+      base: 15.0
+      scale: 0.1
+      spread: 0.1
+      max-spread: 0.3
+    required-level: 50.0
+    tier: LEGENDARY
+    magic-damage:
+      base: 60.0
+      scale: 0.15
+      spread: 0.15
+      max-spread: 0.25
+    parry-rating:
+      base: 10.0
+      spread: 0.1
+      max-spread: 0.2
+    parry-cooldown-reduction:
+      base: 15.0
+      spread: 0.04
+      max-spread: 0.08
+    weapon-damage:
+      base: 15.0
+      scale: 0.04
+      spread: 0.09
+      max-spread: 0.16
+    element:
+      earth:
+        damage:
+          base: 10.0
+          scale: 0.0
+          spread: 0.02
+          max-spread: 0.3
+      water:
+        damage:
+          base: 20.0
+          scale: 0.0
+          spread: 0.02
+          max-spread: 0.3
+    perm-effects:
+      REGENERATION: 1.0
+    ability:
+      ability1:
+        type: GRAND_HEAL
+        mode: RIGHT_CLICK
+        mana: 5.0
+        cooldown: 20.0
+        heal: 60.0
+        radius: 8.0
+    crafting:
+      supershaped:
+        '1':
+          input:
+            - v AIR 0 1..|v amethyst_block - 1.0..|v diamond_block - 1.0..|v amethyst_block
+              - 1.0..|v AIR 0 1..
+            - v amethyst_shard - 1.0..|v amethyst_block - 1.0..|v nether_star - 1.0..|v
+              amethyst_block - 1.0..|v amethyst_shard - 1.0..
+            - v AIR 0 1..|v amethyst_block - 1.0..|v diamond_block - 1.0..|v amethyst_block
+              - 1.0..|v AIR 0 1..
+            - v AIR 0 1..|v stick - 1.0..|v blaze_rod - 1.0..|v stick - 1.0..|v AIR
+              0 1..
+            - v AIR 0 1..|v AIR 0 1..|v blaze_rod - 1.0..|v AIR 0 1..|v AIR 0 1..
+      shaped:
+        '1':
+          input:
+            - v amethyst_block - 1.0..|v nether_star - 1.0..|v amethyst_block - 1.0..
+            - v amethyst_block - 1.0..|v amethyst_shard - 1.0..|v amethyst_block - 1.0..
+            - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+    attack-speed: 1.6
+```
+
+## `FROZEN_BLADE` { #frozen_blade }
+
+```yaml title="item/sword.yml · FROZEN_BLADE"
+FROZEN_BLADE:
+  base:
+    material: DIAMOND_SWORD
+    lore:
+      - "§b以极寒之冰制成，"
+      - "§b永远不会融化。"
+    max-durability: 15000.0
+    tier: MYTHICAL
+    name: "§b§l永冻之刃"
+    weapon-damage:
+      base: 30.0
+      scale: 0.1
+      spread: 0.1
+      max-spread: 0.25
+    attack-damage:
+      base: 70.0
+      scale: 0.15
+      spread: 0.1
+      max-spread: 0.2
+    stamina-cost: 12.0
+    attack-speed: 1.6
+    critical-strike-chance:
+      base: 5.0
+      scale: 0.05
+      spread: 0.2
+      max-spread: 0.4
+    critical-strike-power:
+      base: 25.0
+      scale: 0.1
+      spread: 0.15
+      max-spread: 0.25
+    parry-rating:
+      base: 30.0
+      spread: 0.1
+      max-spread: 0.4
+    required-level: 70.0
+    element:
+      ice:
+        damage:
+          base: 60.0
+          scale: 0.0
+          spread: 0.1
+          max-spread: 0.2
+    gem-sockets:
+      - Blue
+      - Blue
+    ability:
+      ability1:
+        type: FROZEN_AURA
+        mode: RIGHT_CLICK
+        duration: 8.0
+        cooldown: 12.0
+        amplifier: 2.0
+        radius: 10.0
+    magic-damage:
+      base: 25.0
+      spread: 0.25
+      max-spread: 0.4
+    upgrade:
+      reference: weapon-default
+    disable-death-drop: true
+    two-handed: true
+    movement-speed: -0.01
+```
+
+## `OMNIELEMENTAL_SWORD` { #omnielemental_sword }
+
+```yaml title="item/sword.yml · OMNIELEMENTAL_SWORD"
+OMNIELEMENTAL_SWORD:
+  base:
+    material: IRON_SWORD
+    name: "§c§l全§6§l§e§l§a§l§2§l元§3§l§9§l§b§l§f§l素§e§l§a§l§6§l之§c§l§6§l§e§l§a§l剑§2§l§3§l"
+    attack-damage:
+      base: 30.0
+      scale: 0.12
+      spread: 0.1
+      max-spread: 0.2
+    attack-speed: 1.6
+    required-level: 34.0
+    magic-damage:
+      base: 70.0
+      scale: 0.08
+      spread: 0.08
+      max-spread: 0.15
+    tier: VERY_RARE
+    gem-sockets:
+      - Uncolored
+      - Uncolored
+      - Uncolored
+    ability:
+      ability1:
+        type: FIREBOLT
+        mode: RIGHT_CLICK
+        damage: 15.0
+        ignite: 3.0
+        cooldown: 5.0
+      ability2:
+        type: ICE_CRYSTAL
+        mode: RIGHT_CLICK
+        damage: 3.0
+        cooldown: 5.0
+        amplifier: 2.0
+        duration: 3.0
+      ability4:
+        type: CURSED_BEAM
+        duration: 3.0
+        cooldown: 5.0
+        damage: 12.0
+        mode: RIGHT_CLICK
+      ability3:
+        type: HOLY_MISSILE
+        duration: 4.0
+        mode: RIGHT_CLICK
+        damage: 5.0
+        cooldown: 5.0
+    element:
+      darkness:
+        damage: 25.0
+      lightness:
+        damage: 25.0
+      fire:
+        damage: 25.0
+      ice:
+        damage: 25.0
+    lore:
+      - "§7何必将自己局限于一种元素？"
+    hide-enchants: true
+    enchants:
+      luck_of_the_sea: 1.0
+```
+
+## `YANISDARK_SWORD` { #yanisdark_sword }
+
+```yaml title="item/sword.yml · YANISDARK_SWORD"
+YANISDARK_SWORD:
+  base:
+    material: GOLDEN_SWORD
+    name: "§e§lYanisDark 之剑"
+    magic-damage: 25.0
+    attack-damage: 12.0
+    attack-speed: 1.6
+    critical-strike-chance:
+      base: 5.0
+      scale: 0.1
+      spread: 0.1
+      max-spread: 0.2
+    critical-strike-power:
+      base: 5.0
+      scale: 0.1
+      spread: 0.1
+      max-spread: 0.2
+    required-level: 10.0
+    enchants:
+      fortune: 5.0
+      looting: 5.0
+    additional-experience: 30.0
+    element:
+      lightness:
+        damage: 30.0
+    gem-sockets:
+      - Yellow
+    tier: RARE
+    lore:
+      - "§e这是一份特别的礼物！"
+      - "§2它不会损坏！"
+    unbreakable: true
+```
+
+## `TOOLTIP_COPPER_SWORD` { #tooltip_copper_sword }
+
+```yaml title="item/sword.yml · TOOLTIP_COPPER_SWORD"
+TOOLTIP_COPPER_SWORD:
+  base:
+    material: WOODEN_SWORD
+    name: "铜短剑"
+    attack-damage: 10.0
+    attack-speed: 1.6
+    tooltip: COPPER
+    element:
+      fire:
+        damage: 3.0
+    required-class:
+      - Warrior
+```
+
+## `TOOLTIP_SILVER_SWORD` { #tooltip_silver_sword }
+
+```yaml title="item/sword.yml · TOOLTIP_SILVER_SWORD"
+TOOLTIP_SILVER_SWORD:
+  base:
+    material: IRON_SWORD
+    name: "银短剑"
+    attack-damage: 10.0
+    attack-speed: 1.6
+    tooltip: SILVER
+    element:
+      fire:
+        damage: 3.0
+    required-class:
+      - Warrior
+```
+
+## `TOOLTIP_GOLD_SWORD` { #tooltip_gold_sword }
+
+```yaml title="item/sword.yml · TOOLTIP_GOLD_SWORD"
+TOOLTIP_GOLD_SWORD:
+  base:
+    material: GOLDEN_SWORD
+    name: "金短剑"
+    attack-damage: 10.0
+    attack-speed: 1.6
+    tooltip: GOLD
+    element:
+      fire:
+        damage: 3.0
+    required-class:
+      - Warrior
+```

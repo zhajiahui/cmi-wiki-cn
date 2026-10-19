@@ -1,0 +1,7 @@
+site_name: LuckPerms 中文资料
+nav:
+- 插件说明: index.md
+- 配置文件（5.5.71）:
+  - 配置索引: configuration/index.md
+  - config.yml: configuration/config.md
+  - contexts.json: configuration/contexts.md

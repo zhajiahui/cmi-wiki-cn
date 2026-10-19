@@ -1,0 +1,18 @@
+{
+  "project": "ProtocolLib",
+  "version": "5.5.0-SNAPSHOT-d89a5de",
+  "source_date": "2026-10-19",
+  "source_kind": "user-supplied-configuration-examples",
+  "index": true,
+  "files": [
+    {
+      "name": "config.yml",
+      "page": "configuration/config.md",
+      "language": "yaml",
+      "description": "主配置。",
+      "code": "global:\n  # 自动版本更新器的设置。\n  auto updater:\n    notify: true\n    download: false\n    \n    # 下载新更新前的等待时间，单位：秒。\n    delay: 43200 # 12 小时\n \n  metrics: true\n\n  # 向拥有 protocol.info 权限的玩家显示某些警告。\n  chat warnings: true\n  \n  # 自动编译结构修改器。\n  background compiler: true\n  \n  # 对指定的 Minecraft 版本禁用版本检查。请先备份世界！\n  ignore version check: \n\n  # 是否启用 filter 命令。\n  debug: false\n  \n  # 是否为每条警告输出堆栈跟踪。\n  detailed error: false\n  \n  # filter 命令使用的引擎。\n  script engine: JavaScript\n  \n  suppressed reports:",
+      "redacted_paths": [],
+      "source_sha256": "00585e6f466756b7ce641d3a0590cd19c8377aa6bfc6e347ef09191c3feca389"
+    }
+  ]
+}

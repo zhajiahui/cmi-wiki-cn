@@ -1,0 +1,35 @@
+{
+  "name": "CMI",
+  "version": "9.8.10.4",
+  "website": "https://www.spigotmc.org/resources/content-management-interface.3742/",
+  "depend": [
+    "CMILib"
+  ],
+  "softdepend": [],
+  "authors": "Zrips",
+  "commands": [
+    "cmi"
+  ],
+  "permissions": [
+    "cmi.command",
+    "cmi.deathlocation",
+    "cmi.buttonteleport",
+    "cmi.invedit",
+    "cmi.enderedit",
+    "cmi.elytra",
+    "cmi.chorusteleport",
+    "cmi.safeteleport",
+    "cmi.permisiononerror",
+    "cmi.bossbar.hpbar",
+    "cmi.egginteract.*",
+    "cmi.command.ctext",
+    "cmi.command.kit",
+    "cmi.command.warp.showlist",
+    "cmi.command.checkban.seereason",
+    "cmi.command.mail.send",
+    "cmi.command.mail.read",
+    "cmi.command.mail.clear",
+    "cmi.openshulker.edit",
+    "cmi.command.itemlore.modification"
+  ]
+}

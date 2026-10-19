@@ -1,0 +1,41 @@
+[
+  {
+    "file": "configuration/config.md",
+    "title": "config.json",
+    "source_kind": "imported-configuration",
+    "source_sha256": "45a6b5b17aa0fcc35e6c2c845eed94338429297099b8199a080ed241d770f8cd",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "_header"
+        ],
+        "id": "_header",
+        "source_line": 1,
+        "text": "",
+        "block": 0,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "backgroundProfiler"
+        ],
+        "id": "backgroundprofiler",
+        "source_line": 2,
+        "text": "",
+        "block": 0,
+        "line": 3,
+        "heading": false
+      }
+    ]
+  },
+  {
+    "file": "configuration/index.md",
+    "title": "配置文件",
+    "source_kind": "imported-configuration",
+    "source_sha256": "45a6b5b17aa0fcc35e6c2c845eed94338429297099b8199a080ed241d770f8cd",
+    "translation_review": "reviewed",
+    "anchors": []
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "name": "ProtocolLib",
+  "version": "5.5.0-SNAPSHOT-d89a5de",
+  "website": null,
+  "depend": [],
+  "softdepend": [],
+  "authors": [
+    "dmulloy2"
+  ],
+  "commands": [],
+  "permissions": [
+    "protocol.*",
+    "protocol.admin",
+    "protocol.info"
+  ]
+}

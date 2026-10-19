@@ -1,0 +1,17 @@
+{
+  "name": "packetevents",
+  "version": "2.14.0",
+  "website": null,
+  "depend": [],
+  "softdepend": [
+    "ProtocolLib",
+    "ProtocolSupport",
+    "ViaVersion",
+    "ViaBackwards",
+    "ViaRewind",
+    "Geyser-Spigot"
+  ],
+  "authors": "retrooper",
+  "commands": [],
+  "permissions": []
+}

@@ -25,6 +25,11 @@ vm.runInContext(fs.readFileSync(path.join(workers, worker), 'utf8'), context, {f
   await listener({data: {type: 0, data: {...data, options: {suggest: true}}}});
   if (messages.pop()?.type !== 1) throw new Error('Worker did not become ready');
   const queries = [
+    ['resource-pack.hosting.simple_self_host.server_address', 'itemsadder/configuration/config/#'],
+    ['Inventory_Control.Group_Bazookas.Sounds_Exceeded', 'crackshot/configuration/general/#'],
+    ['websocket.auth', 'typewriter/configuration/config/#'],
+    ['blacklist.logging.database.dsn', 'worldguard/configuration/config/#'],
+    ['storage-method', 'luckperms/configuration/config/#'],
     ['Afk.AutoAfkCmds', 'configuration/afk/'],
     ['EnchantExtractionFail', 'configuration/scavenge/'],
     ['DataBaseInfo.yml', 'configuration/'],

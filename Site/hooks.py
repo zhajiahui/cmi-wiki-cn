@@ -2,6 +2,7 @@
 from pathlib import Path
 from urllib.parse import urlsplit
 import json
+from functools import lru_cache
 import posixpath
 import yaml
 import jieba
@@ -14,7 +15,17 @@ ROOT=BASE.parent
 DOCS=BASE/'docs'
 TRACKING=BASE/'.cache/assembled-files.json'
 PHOENIX_PROJECTS=[('Phoenix','phoenix/'),('MMOItems','mmoitems/'),('MMOCore','mmocore/'),('MMOInventory','mmoinventory/'),('MMOProfiles','mmoprofiles/'),('MythicLib','mythiclib/'),('BountyHunters','bounty-hunters/'),('Contracts','contracts/')]
-PROJECTS=[('CMI',''),('Residence','residence/'),('Typewriter','typewriter/')]+PHOENIX_PROJECTS
+PLUGIN_GROUPS={
+    '基础组件与权限':['CMILib','LuckPerms','PlaceholderAPI','ProtocolLib','packetevents','Vault','LoneLibs'],
+    '世界、NPC 与保护':['Citizens','Multiverse-Core','WorldEdit','WorldGuard'],
+    '物品、属性与战斗':['AttributePlus','CrackShot','CrackShotX','ItemsAdder','MythicMobs','NeigeItems'],
+    '性能与统计':['spark','bStats','pStats'],
+}
+PLUGIN_PROJECTS=[('Plugins','plugins/')]+[(name,name.lower()+'/') for names in PLUGIN_GROUPS.values() for name in names]
+PROJECTS=[('CMI',''),('Residence','residence/'),('Typewriter','typewriter/')]+PHOENIX_PROJECTS+PLUGIN_PROJECTS
+DISPLAY_NAMES={'Plugins':'插件与配置'}
+PROJECT_TAB={name:'Phoenix' for name,_ in PHOENIX_PROJECTS}
+PROJECT_TAB.update({name:'插件与配置' for name,_ in PLUGIN_PROJECTS})
 SHARED={'assets/wiki.css','assets/logo.svg'}
 
 def prefix_nav(items,prefix):
@@ -25,13 +36,15 @@ def on_config(config):
     source_dirs=[ROOT/project for project,_ in PROJECTS]+[BASE]
     if output==ROOT or any(output.is_relative_to(source.resolve()) for source in source_dirs):
         raise ValueError('Build output overlaps a source project directory.')
-    expected=set();nav=[];phoenix_nav=[];phoenix_notes=[]
+    configuration_pages.cache_clear()
+    expected=set();nav=[];phoenix_nav=[];phoenix_notes=[];plugin_nav={}
     for project,prefix in PROJECTS:
         source_root=ROOT/project/'docs'
         project_config=yaml.safe_load((ROOT/project/'mkdocs.yml').read_text(encoding='utf-8'))
         project_nav=prefix_nav(project_config['nav'],prefix)
         if project=='Phoenix':phoenix_nav.extend(project_nav[:1]);phoenix_notes.extend(project_nav[1:])
         elif (project,prefix) in PHOENIX_PROJECTS:phoenix_nav.append({project:project_nav})
+        elif (project,prefix) in PLUGIN_PROJECTS:plugin_nav[project]=project_nav
         else:nav.append({project:project_nav})
         for source in source_root.rglob('*'):
             if not source.is_file():continue
@@ -44,7 +57,7 @@ def on_config(config):
                 original=source.read_text(encoding='utf-8')
                 header,body=original[4:].split('\n---\n',1)
                 meta=yaml.safe_load(header)
-                meta['tags']=[project]
+                meta['tags']=[DISPLAY_NAMES.get(project,project)]
                 meta['edit_url']=f'https://github.com/zhajiahui/cmi-wiki-cn/edit/main/{project}/docs/{relative}'
                 content=('---\n'+yaml.safe_dump(meta,allow_unicode=True,sort_keys=False)+'---\n'+body).encode('utf-8')
             else:content=source.read_bytes()
@@ -58,20 +71,29 @@ def on_config(config):
     TRACKING.parent.mkdir(exist_ok=True)
     TRACKING.write_text(json.dumps(sorted(expected),ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     nav.append({'Phoenix':phoenix_nav+[{'站点说明':phoenix_notes}]})
+    nav.append({'插件与配置':plugin_nav['Plugins']+[{label:[{name:plugin_nav[name]} for name in names]} for label,names in PLUGIN_GROUPS.items()]})
     config.nav=nav
     return config
 
 TABLE_PAGES={'residence/permissions.md':'permission-','residence/flags.md':'flag-'}
 TABLE_PAGES.update({prefix+'general/permissions.md':'permission-' for project,prefix in PHOENIX_PROJECTS if project in {'MMOItems','MMOCore','MMOInventory','MMOProfiles','BountyHunters'}})
 
-CONFIGURATION_MANIFEST=ROOT/'CMI/sources/configuration-manifest.json'
-
+@lru_cache(maxsize=1)
 def configuration_pages():
-    return {row['file']:row for row in json.loads(CONFIGURATION_MANIFEST.read_text(encoding='utf-8'))}
+    pages={}
+    for project,prefix in PROJECTS:
+        for filename in ('configuration-manifest.json','imported-configuration-manifest.json'):
+            source=ROOT/project/'sources'/filename
+            if not source.is_file():continue
+            for row in json.loads(source.read_text(encoding='utf-8')):
+                address=prefix+row['file']
+                if address in pages:raise ValueError('Duplicate configuration page: '+address)
+                pages[address]={**row,'project':project}
+    return pages
 
 def on_page_content(html,*,page,config,files):
     prefix=TABLE_PAGES.get(page.file.src_uri)
-    configuration=configuration_pages().get(page.file.src_uri) if page.file.src_uri.startswith('configuration/') else None
+    configuration=configuration_pages().get(page.file.src_uri)
     if not prefix and not configuration and '<video ' not in html:return html
     soup=BeautifulSoup(html,'html.parser')
     if configuration:
@@ -115,7 +137,7 @@ def on_post_build(config):
     for item in index['docs']:
         if '#' not in item['location']:
             project=next((project for project,prefix in PROJECTS if prefix and urlsplit(item['location']).path.startswith(prefix)),'CMI')
-            label=project+' · '
+            label=DISPLAY_NAMES.get(project,project)+' · '
             if not item['title'].startswith(label):item['title']=label+item['title']
     # Give every permission and flag its own result and a matching table-row anchor.
     for source in TABLE_PAGES:
@@ -137,7 +159,7 @@ def on_post_build(config):
             if item['heading']:continue
             name='.'.join(item['path'])
             description='\u200b'.join(jieba.cut(item['text']))
-            index['docs'].append({'location':relative+'#'+item['id'],'title':'CMI · '+name,'text':'<p><code>'+escape(name)+'</code> '+escape(description)+'</p>','tags':['CMI']})
+            index['docs'].append({'location':relative+'#'+item['id'],'title':configuration['project']+' · '+name,'text':'<p><code>'+escape(name)+'</code> '+escape(description)+'</p>','tags':[configuration['project']]})
     path.write_text(json.dumps(index,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
     fix_chinese_search(config.site_dir)
 

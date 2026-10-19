@@ -1,0 +1,12 @@
+{
+  "name": "WorldEdit",
+  "version": "7.4.6+7648-00664b0",
+  "website": "https://enginehub.org/worldedit",
+  "depend": [],
+  "softdepend": [
+    "Vault"
+  ],
+  "authors": "EngineHub",
+  "commands": [],
+  "permissions": []
+}

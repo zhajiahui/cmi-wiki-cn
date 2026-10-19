@@ -1,0 +1,21 @@
+{
+  "name": "Multiverse-Core",
+  "version": "5.8.1",
+  "website": "https://modrinth.com/plugin/multiverse-core",
+  "depend": [],
+  "softdepend": [
+    "Vault",
+    "PlaceholderAPI"
+  ],
+  "authors": [
+    "dumptruckman",
+    "Rigby",
+    "fernferret",
+    "lithium3141",
+    "main--",
+    "benwoo1110",
+    "Zax71"
+  ],
+  "commands": [],
+  "permissions": []
+}

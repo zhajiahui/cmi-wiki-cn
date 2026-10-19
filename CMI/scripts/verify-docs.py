@@ -26,7 +26,9 @@ def navfiles(items):
             else:
                 yield value
 nav = list(navfiles(config['nav']))
-if set(nav) != {r['file'] for r in manifest + configuration_manifest}:
+imported_path = BASE / 'sources/imported-configuration-manifest.json'
+imported_manifest = json.loads(imported_path.read_text('utf-8')) if imported_path.is_file() else []
+if set(nav) != {r['file'] for r in manifest + configuration_manifest + imported_manifest}:
     errors.append('Navigation does not cover exactly the translated pages')
 if len(nav) != len(set(nav)):
     errors.append('Duplicate navigation entries')

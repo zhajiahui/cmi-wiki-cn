@@ -1,0 +1,15 @@
+site_name: WorldGuard 中文资料
+nav:
+- 插件说明: index.md
+- 配置文件（7.0.17+2370-e42d8bc）:
+  - 配置索引: configuration/index.md
+  - config.yml: configuration/config.md
+  - 各世界配置（worlds/）:
+    - world/config.yml: configuration/worlds/world/config.md
+    - world/blacklist.txt: configuration/worlds/world/blacklist.md
+    - example_world/config.yml: configuration/worlds/example_world/config.md
+    - example_world/blacklist.txt: configuration/worlds/example_world/blacklist.md
+    - world_the_end/config.yml: configuration/worlds/world_the_end/config.md
+    - world_the_end/blacklist.txt: configuration/worlds/world_the_end/blacklist.md
+    - world_nether/config.yml: configuration/worlds/world_nether/config.md
+    - world_nether/blacklist.txt: configuration/worlds/world_nether/blacklist.md

@@ -1,0 +1,19 @@
+{
+  "name": "Vault",
+  "version": "1.7.3-b131",
+  "website": "https://dev.bukkit.org/projects/vault",
+  "depend": [],
+  "softdepend": [],
+  "authors": [
+    "cereal",
+    "Sleaker",
+    "mung3r"
+  ],
+  "commands": [
+    "vault-info",
+    "vault-convert"
+  ],
+  "permissions": [
+    "vault.admin"
+  ]
+}

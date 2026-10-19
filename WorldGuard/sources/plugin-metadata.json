@@ -1,0 +1,12 @@
+{
+  "name": "WorldGuard",
+  "version": "7.0.17+2370-e42d8bc",
+  "website": null,
+  "depend": [
+    "WorldEdit"
+  ],
+  "softdepend": [],
+  "authors": [],
+  "commands": [],
+  "permissions": []
+}

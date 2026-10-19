@@ -64,6 +64,8 @@ nav:
 - 前言: index.md
 - 开始使用:
   - 首次运行: first-run.md
+- 随包文本:
+  - CustomText/rules.txt: configuration/rules.md
 - 配置文件:
   - 文件目录: configuration/index.md
   - 主配置（config.yml）: configuration/main.md

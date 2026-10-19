@@ -1,0 +1,18 @@
+site_name: ItemsAdder 中文资料
+nav:
+- 插件说明: index.md
+- 配置文件（4.0.18）:
+  - 配置索引: configuration/index.md
+  - config.yml: configuration/config.md
+  - ia_gui.yml: configuration/ia_gui.md
+  - 语言文件（lang/）:
+    - en.yml: configuration/lang/en.md
+  - 内容包（contents/）:
+    - _iainternal/configs/dictionaries/zh_cn.yml: configuration/contents/_iainternal/configs/dictionaries/zh_cn.md
+    - _iainternal/configs/dictionaries/en.yml: configuration/contents/_iainternal/configs/dictionaries/en.md
+    - _iainternal/configs/guis.yml: configuration/contents/_iainternal/configs/guis.md
+    - _iainternal/configs/lang_overwrite/dyed.yml: configuration/contents/_iainternal/configs/lang_overwrite/dyed.md
+    - _iainternal/configs/lang_overwrite/merchant.yml: configuration/contents/_iainternal/configs/lang_overwrite/merchant.md
+    - _iainternal/configs/huds/hud_cooldown.yml: configuration/contents/_iainternal/configs/huds/hud_cooldown.md
+    - _iainternal/configs/icons.yml: configuration/contents/_iainternal/configs/icons.md
+    - regular_arms/configs/regular_arms.yml: configuration/contents/regular_arms/configs/regular_arms.md

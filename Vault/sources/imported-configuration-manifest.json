@@ -1,0 +1,30 @@
+[
+  {
+    "file": "configuration/config.md",
+    "title": "config.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "f07563b9fe52652ecd7c24379229d318f7eb6a6a0b601265c29ede74e17e39f8",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "update-check"
+        ],
+        "id": "update-check",
+        "source_line": 0,
+        "text": "",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      }
+    ]
+  },
+  {
+    "file": "configuration/index.md",
+    "title": "配置文件",
+    "source_kind": "imported-configuration",
+    "source_sha256": "f07563b9fe52652ecd7c24379229d318f7eb6a6a0b601265c29ede74e17e39f8",
+    "translation_review": "reviewed",
+    "anchors": []
+  }
+]

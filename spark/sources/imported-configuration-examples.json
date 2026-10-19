@@ -1,0 +1,18 @@
+{
+  "project": "spark",
+  "version": "随包未标明版本",
+  "source_date": "2026-10-19",
+  "source_kind": "user-supplied-configuration-examples",
+  "index": true,
+  "files": [
+    {
+      "name": "config.json",
+      "page": "configuration/config.md",
+      "language": "json",
+      "description": "主配置。",
+      "code": "{\n  \"_header\": \"spark 配置文件 - https://spark.lucko.me/docs/Configuration\",\n  \"backgroundProfiler\": true\n}",
+      "redacted_paths": [],
+      "source_sha256": "992ba9f3a4a7ce3de112eb95575328956fdc3ce6781c455ebce7b23db7e7da42"
+    }
+  ]
+}

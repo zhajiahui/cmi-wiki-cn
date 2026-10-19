@@ -85,5 +85,67 @@ nav:
 - 归档文档:
   - 剑与武器属性示例: archive/mi-stat-config-fmt.md
   - 自定义方块（归档）: archive/new-custom-blocks.md
+- 配置文件（6.10.1-SNAPSHOT）:
+  - 配置索引: configuration/index.md
+  - custom-stats.yml: configuration/custom-stats.md
+  - gen-templates.yml: configuration/gen-templates.md
+  - item-types.yml: configuration/item-types.md
+  - config.yml: configuration/config.md
+  - upgrade-templates.yml: configuration/upgrade-templates.md
+  - drops.yml: configuration/drops.md
+  - item-sets.yml: configuration/item-sets.md
+  - item-tiers.yml: configuration/item-tiers.md
+  - 属性修饰（modifiers/）:
+    - example_modifiers.yml: configuration/modifiers/example_modifiers.md
+  - 语言文件（language/）:
+    - abilities.yml: configuration/language/abilities.md
+    - potion-effects.yml: configuration/language/potion-effects.md
+    - lore-format.yml: configuration/language/lore-format.md
+    - stats.yml: configuration/language/stats.md
+    - attack-effects.yml: configuration/language/attack-effects.md
+    - messages.yml: configuration/language/messages.md
+    - crafting-stations.yml: configuration/language/crafting-stations.md
+  - 物品（item/）:
+    - miscellaneous.yml: configuration/item/miscellaneous.md
+    - off_catalyst.yml: configuration/item/off_catalyst.md
+    - catalyst.yml: configuration/item/catalyst.md
+    - halberd.yml: configuration/item/halberd.md
+    - bow.yml: configuration/item/bow.md
+    - shield.yml: configuration/item/shield.md
+    - thrusting_sword.yml: configuration/item/thrusting_sword.md
+    - material.yml: configuration/item/material.md
+    - greatsword.yml: configuration/item/greatsword.md
+    - musket.yml: configuration/item/musket.md
+    - gem_stone.yml: configuration/item/gem_stone.md
+    - greataxe.yml: configuration/item/greataxe.md
+    - ornament.yml: configuration/item/ornament.md
+    - greatstaff.yml: configuration/item/greatstaff.md
+    - ring.yml: configuration/item/ring.md
+    - consumable.yml: configuration/item/consumable.md
+    - greathammer.yml: configuration/item/greathammer.md
+    - tool.yml: configuration/item/tool.md
+    - lance.yml: configuration/item/lance.md
+    - long_sword.yml: configuration/item/long_sword.md
+    - armor.yml: configuration/item/armor.md
+    - sword.yml: configuration/item/sword.md
+    - staff.yml: configuration/item/staff.md
+    - crossbow.yml: configuration/item/crossbow.md
+    - gauntlet.yml: configuration/item/gauntlet.md
+    - wand.yml: configuration/item/wand.md
+    - spear.yml: configuration/item/spear.md
+    - katana.yml: configuration/item/katana.md
+    - axe.yml: configuration/item/axe.md
+    - tome.yml: configuration/item/tome.md
+    - block.yml: configuration/item/block.md
+    - dagger.yml: configuration/item/dagger.md
+    - hammer.yml: configuration/item/hammer.md
+    - talisman.yml: configuration/item/talisman.md
+    - whip.yml: configuration/item/whip.md
+  - 工作台（crafting-stations/）:
+    - mythical-forge.yml: configuration/crafting-stations/mythical-forge.md
+    - arcane-forge.yml: configuration/crafting-stations/arcane-forge.md
+    - steel-crafting-station.yml: configuration/crafting-stations/steel-crafting-station.md
+  - 提示框（tooltips/）:
+    - example_tooltips.yml: configuration/tooltips/example_tooltips.md
 docs_dir: docs
 site_dir: .cache/site

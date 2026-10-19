@@ -1,0 +1,2166 @@
+[
+  {
+    "file": "configuration/worlds/world/config.md",
+    "title": "worlds/world/config.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "2afb0d5fe065fd785c61dd6b76d2e85a9687b32e6f54ff1f53e8e4ae7afa7351",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "regions"
+        ],
+        "id": "regions",
+        "source_line": 11,
+        "text": "\nWorldGuard 世界配置文件\n\n这是世界配置文件。在此文件中添加的配置只会\n影响当前世界。如果此文件中没有任何配置，\n则会继承主配置文件中的设置。\n\n如果下方显示 {}，表示此文件中没有任何配置项。\n删除 {}，然后添加自己的配置项。\n",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "regions",
+          "titles-always-use-default-times"
+        ],
+        "id": "regionstitles-always-use-default-times",
+        "source_line": 12,
+        "text": "",
+        "block": 0,
+        "line": 13,
+        "heading": false
+      }
+    ]
+  },
+  {
+    "file": "configuration/worlds/world/blacklist.md",
+    "title": "worlds/world/blacklist.txt",
+    "source_kind": "imported-configuration",
+    "source_sha256": "2afb0d5fe065fd785c61dd6b76d2e85a9687b32e6f54ff1f53e8e4ae7afa7351",
+    "translation_review": "reviewed",
+    "anchors": []
+  },
+  {
+    "file": "configuration/worlds/example_world/config.md",
+    "title": "worlds/example_world/config.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "2afb0d5fe065fd785c61dd6b76d2e85a9687b32e6f54ff1f53e8e4ae7afa7351",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "regions"
+        ],
+        "id": "regions",
+        "source_line": 11,
+        "text": "\nWorldGuard 世界配置文件\n\n这是世界配置文件。在此文件中添加的配置只会\n影响当前世界。如果此文件中没有任何配置，\n则会继承主配置文件中的设置。\n\n如果下方显示 {}，表示此文件中没有任何配置项。\n删除 {}，然后添加自己的配置项。\n",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "regions",
+          "titles-always-use-default-times"
+        ],
+        "id": "regionstitles-always-use-default-times",
+        "source_line": 12,
+        "text": "",
+        "block": 0,
+        "line": 13,
+        "heading": false
+      }
+    ]
+  },
+  {
+    "file": "configuration/worlds/example_world/blacklist.md",
+    "title": "worlds/example_world/blacklist.txt",
+    "source_kind": "imported-configuration",
+    "source_sha256": "2afb0d5fe065fd785c61dd6b76d2e85a9687b32e6f54ff1f53e8e4ae7afa7351",
+    "translation_review": "reviewed",
+    "anchors": []
+  },
+  {
+    "file": "configuration/worlds/world_the_end/config.md",
+    "title": "worlds/world_the_end/config.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "2afb0d5fe065fd785c61dd6b76d2e85a9687b32e6f54ff1f53e8e4ae7afa7351",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "regions"
+        ],
+        "id": "regions",
+        "source_line": 11,
+        "text": "\nWorldGuard 世界配置文件\n\n这是世界配置文件。在此文件中添加的配置只会\n影响当前世界。如果此文件中没有任何配置，\n则会继承主配置文件中的设置。\n\n如果下方显示 {}，表示此文件中没有任何配置项。\n删除 {}，然后添加自己的配置项。\n",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "regions",
+          "titles-always-use-default-times"
+        ],
+        "id": "regionstitles-always-use-default-times",
+        "source_line": 12,
+        "text": "",
+        "block": 0,
+        "line": 13,
+        "heading": false
+      }
+    ]
+  },
+  {
+    "file": "configuration/worlds/world_the_end/blacklist.md",
+    "title": "worlds/world_the_end/blacklist.txt",
+    "source_kind": "imported-configuration",
+    "source_sha256": "2afb0d5fe065fd785c61dd6b76d2e85a9687b32e6f54ff1f53e8e4ae7afa7351",
+    "translation_review": "reviewed",
+    "anchors": []
+  },
+  {
+    "file": "configuration/worlds/world_nether/config.md",
+    "title": "worlds/world_nether/config.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "2afb0d5fe065fd785c61dd6b76d2e85a9687b32e6f54ff1f53e8e4ae7afa7351",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "regions"
+        ],
+        "id": "regions",
+        "source_line": 11,
+        "text": "\nWorldGuard 世界配置文件\n\n这是世界配置文件。在此文件中添加的配置只会\n影响当前世界。如果此文件中没有任何配置，\n则会继承主配置文件中的设置。\n\n如果下方显示 {}，表示此文件中没有任何配置项。\n删除 {}，然后添加自己的配置项。\n",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "regions",
+          "titles-always-use-default-times"
+        ],
+        "id": "regionstitles-always-use-default-times",
+        "source_line": 12,
+        "text": "",
+        "block": 0,
+        "line": 13,
+        "heading": false
+      }
+    ]
+  },
+  {
+    "file": "configuration/worlds/world_nether/blacklist.md",
+    "title": "worlds/world_nether/blacklist.txt",
+    "source_kind": "imported-configuration",
+    "source_sha256": "2afb0d5fe065fd785c61dd6b76d2e85a9687b32e6f54ff1f53e8e4ae7afa7351",
+    "translation_review": "reviewed",
+    "anchors": []
+  },
+  {
+    "file": "configuration/config.md",
+    "title": "config.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "2afb0d5fe065fd785c61dd6b76d2e85a9687b32e6f54ff1f53e8e4ae7afa7351",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "regions"
+        ],
+        "id": "regions",
+        "source_line": 0,
+        "text": "",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "regions",
+          "uuid-migration"
+        ],
+        "id": "regionsuuid-migration",
+        "source_line": 1,
+        "text": "",
+        "block": 0,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "regions",
+          "uuid-migration",
+          "perform-on-next-start"
+        ],
+        "id": "regionsuuid-migrationperform-on-next-start",
+        "source_line": 2,
+        "text": "",
+        "block": 0,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "regions",
+          "uuid-migration",
+          "keep-names-that-lack-uuids"
+        ],
+        "id": "regionsuuid-migrationkeep-names-that-lack-uuids",
+        "source_line": 3,
+        "text": "",
+        "block": 0,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "regions",
+          "use-creature-spawn-event"
+        ],
+        "id": "regionsuse-creature-spawn-event",
+        "source_line": 4,
+        "text": "",
+        "block": 0,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "regions",
+          "disable-bypass-by-default"
+        ],
+        "id": "regionsdisable-bypass-by-default",
+        "source_line": 5,
+        "text": "",
+        "block": 0,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "regions",
+          "announce-bypass-status"
+        ],
+        "id": "regionsannounce-bypass-status",
+        "source_line": 6,
+        "text": "",
+        "block": 0,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "regions",
+          "use-paper-entity-origin"
+        ],
+        "id": "regionsuse-paper-entity-origin",
+        "source_line": 7,
+        "text": "",
+        "block": 0,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "regions",
+          "enable"
+        ],
+        "id": "regionsenable",
+        "source_line": 8,
+        "text": "",
+        "block": 0,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "regions",
+          "invincibility-removes-mobs"
+        ],
+        "id": "regionsinvincibility-removes-mobs",
+        "source_line": 9,
+        "text": "",
+        "block": 0,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "regions",
+          "cancel-chat-without-recipients"
+        ],
+        "id": "regionscancel-chat-without-recipients",
+        "source_line": 10,
+        "text": "",
+        "block": 0,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "regions",
+          "nether-portal-protection"
+        ],
+        "id": "regionsnether-portal-protection",
+        "source_line": 11,
+        "text": "",
+        "block": 0,
+        "line": 12,
+        "heading": false
+      },
+      {
+        "path": [
+          "regions",
+          "fake-player-build-override"
+        ],
+        "id": "regionsfake-player-build-override",
+        "source_line": 12,
+        "text": "",
+        "block": 0,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "regions",
+          "explosion-flags-block-entity-damage"
+        ],
+        "id": "regionsexplosion-flags-block-entity-damage",
+        "source_line": 13,
+        "text": "",
+        "block": 0,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "regions",
+          "high-frequency-flags"
+        ],
+        "id": "regionshigh-frequency-flags",
+        "source_line": 14,
+        "text": "",
+        "block": 0,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "regions",
+          "protect-against-liquid-flow"
+        ],
+        "id": "regionsprotect-against-liquid-flow",
+        "source_line": 15,
+        "text": "",
+        "block": 0,
+        "line": 16,
+        "heading": false
+      },
+      {
+        "path": [
+          "regions",
+          "wand"
+        ],
+        "id": "regionswand",
+        "source_line": 16,
+        "text": "",
+        "block": 0,
+        "line": 17,
+        "heading": false
+      },
+      {
+        "path": [
+          "regions",
+          "max-claim-volume"
+        ],
+        "id": "regionsmax-claim-volume",
+        "source_line": 17,
+        "text": "",
+        "block": 0,
+        "line": 18,
+        "heading": false
+      },
+      {
+        "path": [
+          "regions",
+          "claim-only-inside-existing-regions"
+        ],
+        "id": "regionsclaim-only-inside-existing-regions",
+        "source_line": 18,
+        "text": "",
+        "block": 0,
+        "line": 19,
+        "heading": false
+      },
+      {
+        "path": [
+          "regions",
+          "set-parent-on-claim"
+        ],
+        "id": "regionsset-parent-on-claim",
+        "source_line": 19,
+        "text": "",
+        "block": 0,
+        "line": 20,
+        "heading": false
+      },
+      {
+        "path": [
+          "regions",
+          "location-flags-only-inside-regions"
+        ],
+        "id": "regionslocation-flags-only-inside-regions",
+        "source_line": 20,
+        "text": "",
+        "block": 0,
+        "line": 21,
+        "heading": false
+      },
+      {
+        "path": [
+          "regions",
+          "max-region-count-per-player"
+        ],
+        "id": "regionsmax-region-count-per-player",
+        "source_line": 21,
+        "text": "",
+        "block": 0,
+        "line": 22,
+        "heading": false
+      },
+      {
+        "path": [
+          "regions",
+          "max-region-count-per-player",
+          "default"
+        ],
+        "id": "regionsmax-region-count-per-playerdefault",
+        "source_line": 22,
+        "text": "",
+        "block": 0,
+        "line": 23,
+        "heading": false
+      },
+      {
+        "path": [
+          "auto-invincible"
+        ],
+        "id": "auto-invincible",
+        "source_line": 23,
+        "text": "",
+        "block": 1,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "auto-invincible-group"
+        ],
+        "id": "auto-invincible-group",
+        "source_line": 24,
+        "text": "",
+        "block": 2,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "auto-no-drowning-group"
+        ],
+        "id": "auto-no-drowning-group",
+        "source_line": 25,
+        "text": "",
+        "block": 3,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "use-player-move-event"
+        ],
+        "id": "use-player-move-event",
+        "source_line": 26,
+        "text": "",
+        "block": 4,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "use-player-teleports"
+        ],
+        "id": "use-player-teleports",
+        "source_line": 27,
+        "text": "",
+        "block": 5,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "use-particle-effects"
+        ],
+        "id": "use-particle-effects",
+        "source_line": 28,
+        "text": "",
+        "block": 6,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "disable-permission-cache"
+        ],
+        "id": "disable-permission-cache",
+        "source_line": 29,
+        "text": "",
+        "block": 7,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "security"
+        ],
+        "id": "security",
+        "source_line": 30,
+        "text": "",
+        "block": 8,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "security",
+          "deop-everyone-on-join"
+        ],
+        "id": "securitydeop-everyone-on-join",
+        "source_line": 31,
+        "text": "",
+        "block": 8,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "security",
+          "block-in-game-op-command"
+        ],
+        "id": "securityblock-in-game-op-command",
+        "source_line": 32,
+        "text": "",
+        "block": 8,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "security",
+          "host-keys-allow-forge-clients"
+        ],
+        "id": "securityhost-keys-allow-forge-clients",
+        "source_line": 33,
+        "text": "",
+        "block": 8,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "host-keys"
+        ],
+        "id": "host-keys",
+        "source_line": 34,
+        "text": "",
+        "block": 9,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "summary-on-start"
+        ],
+        "id": "summary-on-start",
+        "source_line": 35,
+        "text": "",
+        "block": 10,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "op-permissions"
+        ],
+        "id": "op-permissions",
+        "source_line": 36,
+        "text": "",
+        "block": 11,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "build-permission-nodes"
+        ],
+        "id": "build-permission-nodes",
+        "source_line": 37,
+        "text": "",
+        "block": 12,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "build-permission-nodes",
+          "enable"
+        ],
+        "id": "build-permission-nodesenable",
+        "source_line": 38,
+        "text": "",
+        "block": 12,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "build-permission-nodes",
+          "deny-message"
+        ],
+        "id": "build-permission-nodesdeny-message",
+        "source_line": 39,
+        "text": "",
+        "block": 12,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "event-handling"
+        ],
+        "id": "event-handling",
+        "source_line": 40,
+        "text": "",
+        "block": 13,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "event-handling",
+          "block-entity-spawns-with-untraceable-cause"
+        ],
+        "id": "event-handlingblock-entity-spawns-with-untraceable-cause",
+        "source_line": 41,
+        "text": "",
+        "block": 13,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "event-handling",
+          "interaction-whitelist"
+        ],
+        "id": "event-handlinginteraction-whitelist",
+        "source_line": 42,
+        "text": "",
+        "block": 13,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "event-handling",
+          "emit-block-use-at-feet"
+        ],
+        "id": "event-handlingemit-block-use-at-feet",
+        "source_line": 43,
+        "text": "",
+        "block": 13,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "event-handling",
+          "ignore-hopper-item-move-events"
+        ],
+        "id": "event-handlingignore-hopper-item-move-events",
+        "source_line": 44,
+        "text": "",
+        "block": 13,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "event-handling",
+          "break-hoppers-on-denied-move"
+        ],
+        "id": "event-handlingbreak-hoppers-on-denied-move",
+        "source_line": 45,
+        "text": "",
+        "block": 13,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "protection"
+        ],
+        "id": "protection",
+        "source_line": 46,
+        "text": "",
+        "block": 14,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "protection",
+          "item-durability"
+        ],
+        "id": "protectionitem-durability",
+        "source_line": 47,
+        "text": "",
+        "block": 14,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "protection",
+          "remove-infinite-stacks"
+        ],
+        "id": "protectionremove-infinite-stacks",
+        "source_line": 48,
+        "text": "",
+        "block": 14,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "protection",
+          "disable-xp-orb-drops"
+        ],
+        "id": "protectiondisable-xp-orb-drops",
+        "source_line": 49,
+        "text": "",
+        "block": 14,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "protection",
+          "use-max-priority-association"
+        ],
+        "id": "protectionuse-max-priority-association",
+        "source_line": 50,
+        "text": "",
+        "block": 14,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "gameplay"
+        ],
+        "id": "gameplay",
+        "source_line": 51,
+        "text": "",
+        "block": 15,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "gameplay",
+          "block-potions"
+        ],
+        "id": "gameplayblock-potions",
+        "source_line": 52,
+        "text": "",
+        "block": 15,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "gameplay",
+          "block-potions-overly-reliably"
+        ],
+        "id": "gameplayblock-potions-overly-reliably",
+        "source_line": 53,
+        "text": "",
+        "block": 15,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "gameplay",
+          "disable-conduit-effects"
+        ],
+        "id": "gameplaydisable-conduit-effects",
+        "source_line": 54,
+        "text": "",
+        "block": 15,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "default"
+        ],
+        "id": "default",
+        "source_line": 55,
+        "text": "",
+        "block": 16,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "default",
+          "pumpkin-scuba"
+        ],
+        "id": "defaultpumpkin-scuba",
+        "source_line": 56,
+        "text": "",
+        "block": 16,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "default",
+          "disable-health-regain"
+        ],
+        "id": "defaultdisable-health-regain",
+        "source_line": 57,
+        "text": "",
+        "block": 16,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "physics"
+        ],
+        "id": "physics",
+        "source_line": 58,
+        "text": "",
+        "block": 17,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "physics",
+          "no-physics-gravel"
+        ],
+        "id": "physicsno-physics-gravel",
+        "source_line": 59,
+        "text": "",
+        "block": 17,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "physics",
+          "no-physics-sand"
+        ],
+        "id": "physicsno-physics-sand",
+        "source_line": 60,
+        "text": "",
+        "block": 17,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "physics",
+          "vine-like-rope-ladders"
+        ],
+        "id": "physicsvine-like-rope-ladders",
+        "source_line": 61,
+        "text": "",
+        "block": 17,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "physics",
+          "allow-portal-anywhere"
+        ],
+        "id": "physicsallow-portal-anywhere",
+        "source_line": 62,
+        "text": "",
+        "block": 17,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "physics",
+          "disable-water-damage-blocks"
+        ],
+        "id": "physicsdisable-water-damage-blocks",
+        "source_line": 63,
+        "text": "",
+        "block": 17,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "ignition"
+        ],
+        "id": "ignition",
+        "source_line": 64,
+        "text": "",
+        "block": 18,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "ignition",
+          "block-tnt"
+        ],
+        "id": "ignitionblock-tnt",
+        "source_line": 65,
+        "text": "",
+        "block": 18,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "ignition",
+          "block-tnt-block-damage"
+        ],
+        "id": "ignitionblock-tnt-block-damage",
+        "source_line": 66,
+        "text": "",
+        "block": 18,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "ignition",
+          "block-lighter"
+        ],
+        "id": "ignitionblock-lighter",
+        "source_line": 67,
+        "text": "",
+        "block": 18,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "fire"
+        ],
+        "id": "fire",
+        "source_line": 68,
+        "text": "",
+        "block": 19,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "fire",
+          "disable-lava-fire-spread"
+        ],
+        "id": "firedisable-lava-fire-spread",
+        "source_line": 69,
+        "text": "",
+        "block": 19,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "fire",
+          "disable-all-fire-spread"
+        ],
+        "id": "firedisable-all-fire-spread",
+        "source_line": 70,
+        "text": "",
+        "block": 19,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "fire",
+          "disable-fire-spread-blocks"
+        ],
+        "id": "firedisable-fire-spread-blocks",
+        "source_line": 71,
+        "text": "",
+        "block": 19,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "fire",
+          "lava-spread-blocks"
+        ],
+        "id": "firelava-spread-blocks",
+        "source_line": 72,
+        "text": "",
+        "block": 19,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "mobs"
+        ],
+        "id": "mobs",
+        "source_line": 73,
+        "text": "",
+        "block": 20,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "mobs",
+          "block-creeper-explosions"
+        ],
+        "id": "mobsblock-creeper-explosions",
+        "source_line": 74,
+        "text": "",
+        "block": 20,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "mobs",
+          "block-creeper-block-damage"
+        ],
+        "id": "mobsblock-creeper-block-damage",
+        "source_line": 75,
+        "text": "",
+        "block": 20,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "mobs",
+          "block-wither-explosions"
+        ],
+        "id": "mobsblock-wither-explosions",
+        "source_line": 76,
+        "text": "",
+        "block": 20,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "mobs",
+          "block-wither-block-damage"
+        ],
+        "id": "mobsblock-wither-block-damage",
+        "source_line": 77,
+        "text": "",
+        "block": 20,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "mobs",
+          "block-wither-skull-explosions"
+        ],
+        "id": "mobsblock-wither-skull-explosions",
+        "source_line": 78,
+        "text": "",
+        "block": 20,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "mobs",
+          "block-wither-skull-block-damage"
+        ],
+        "id": "mobsblock-wither-skull-block-damage",
+        "source_line": 79,
+        "text": "",
+        "block": 20,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "mobs",
+          "block-enderdragon-block-damage"
+        ],
+        "id": "mobsblock-enderdragon-block-damage",
+        "source_line": 80,
+        "text": "",
+        "block": 20,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "mobs",
+          "block-enderdragon-portal-creation"
+        ],
+        "id": "mobsblock-enderdragon-portal-creation",
+        "source_line": 81,
+        "text": "",
+        "block": 20,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "mobs",
+          "block-fireball-explosions"
+        ],
+        "id": "mobsblock-fireball-explosions",
+        "source_line": 82,
+        "text": "",
+        "block": 20,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "mobs",
+          "block-fireball-block-damage"
+        ],
+        "id": "mobsblock-fireball-block-damage",
+        "source_line": 83,
+        "text": "",
+        "block": 20,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "mobs",
+          "block-windcharge-explosions"
+        ],
+        "id": "mobsblock-windcharge-explosions",
+        "source_line": 84,
+        "text": "",
+        "block": 20,
+        "line": 12,
+        "heading": false
+      },
+      {
+        "path": [
+          "mobs",
+          "anti-wolf-dumbness"
+        ],
+        "id": "mobsanti-wolf-dumbness",
+        "source_line": 85,
+        "text": "",
+        "block": 20,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "mobs",
+          "allow-tamed-spawns"
+        ],
+        "id": "mobsallow-tamed-spawns",
+        "source_line": 86,
+        "text": "",
+        "block": 20,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "mobs",
+          "disable-enderman-griefing"
+        ],
+        "id": "mobsdisable-enderman-griefing",
+        "source_line": 87,
+        "text": "",
+        "block": 20,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "mobs",
+          "disable-snowman-trails"
+        ],
+        "id": "mobsdisable-snowman-trails",
+        "source_line": 88,
+        "text": "",
+        "block": 20,
+        "line": 16,
+        "heading": false
+      },
+      {
+        "path": [
+          "mobs",
+          "block-painting-destroy"
+        ],
+        "id": "mobsblock-painting-destroy",
+        "source_line": 89,
+        "text": "",
+        "block": 20,
+        "line": 17,
+        "heading": false
+      },
+      {
+        "path": [
+          "mobs",
+          "block-item-frame-destroy"
+        ],
+        "id": "mobsblock-item-frame-destroy",
+        "source_line": 90,
+        "text": "",
+        "block": 20,
+        "line": 18,
+        "heading": false
+      },
+      {
+        "path": [
+          "mobs",
+          "block-armor-stand-destroy"
+        ],
+        "id": "mobsblock-armor-stand-destroy",
+        "source_line": 91,
+        "text": "",
+        "block": 20,
+        "line": 19,
+        "heading": false
+      },
+      {
+        "path": [
+          "mobs",
+          "block-plugin-spawning"
+        ],
+        "id": "mobsblock-plugin-spawning",
+        "source_line": 92,
+        "text": "",
+        "block": 20,
+        "line": 20,
+        "heading": false
+      },
+      {
+        "path": [
+          "mobs",
+          "block-above-ground-slimes"
+        ],
+        "id": "mobsblock-above-ground-slimes",
+        "source_line": 93,
+        "text": "",
+        "block": 20,
+        "line": 21,
+        "heading": false
+      },
+      {
+        "path": [
+          "mobs",
+          "block-other-explosions"
+        ],
+        "id": "mobsblock-other-explosions",
+        "source_line": 94,
+        "text": "",
+        "block": 20,
+        "line": 22,
+        "heading": false
+      },
+      {
+        "path": [
+          "mobs",
+          "block-zombie-door-destruction"
+        ],
+        "id": "mobsblock-zombie-door-destruction",
+        "source_line": 95,
+        "text": "",
+        "block": 20,
+        "line": 23,
+        "heading": false
+      },
+      {
+        "path": [
+          "mobs",
+          "block-vehicle-entry"
+        ],
+        "id": "mobsblock-vehicle-entry",
+        "source_line": 96,
+        "text": "",
+        "block": 20,
+        "line": 24,
+        "heading": false
+      },
+      {
+        "path": [
+          "mobs",
+          "block-creature-spawn"
+        ],
+        "id": "mobsblock-creature-spawn",
+        "source_line": 97,
+        "text": "",
+        "block": 20,
+        "line": 25,
+        "heading": false
+      },
+      {
+        "path": [
+          "player-damage"
+        ],
+        "id": "player-damage",
+        "source_line": 98,
+        "text": "",
+        "block": 21,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "player-damage",
+          "disable-fall-damage"
+        ],
+        "id": "player-damagedisable-fall-damage",
+        "source_line": 99,
+        "text": "",
+        "block": 21,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "player-damage",
+          "disable-lava-damage"
+        ],
+        "id": "player-damagedisable-lava-damage",
+        "source_line": 100,
+        "text": "",
+        "block": 21,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "player-damage",
+          "disable-fire-damage"
+        ],
+        "id": "player-damagedisable-fire-damage",
+        "source_line": 101,
+        "text": "",
+        "block": 21,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "player-damage",
+          "disable-lightning-damage"
+        ],
+        "id": "player-damagedisable-lightning-damage",
+        "source_line": 102,
+        "text": "",
+        "block": 21,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "player-damage",
+          "disable-drowning-damage"
+        ],
+        "id": "player-damagedisable-drowning-damage",
+        "source_line": 103,
+        "text": "",
+        "block": 21,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "player-damage",
+          "disable-suffocation-damage"
+        ],
+        "id": "player-damagedisable-suffocation-damage",
+        "source_line": 104,
+        "text": "",
+        "block": 21,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "player-damage",
+          "disable-contact-damage"
+        ],
+        "id": "player-damagedisable-contact-damage",
+        "source_line": 105,
+        "text": "",
+        "block": 21,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "player-damage",
+          "teleport-on-suffocation"
+        ],
+        "id": "player-damageteleport-on-suffocation",
+        "source_line": 106,
+        "text": "",
+        "block": 21,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "player-damage",
+          "disable-void-damage"
+        ],
+        "id": "player-damagedisable-void-damage",
+        "source_line": 107,
+        "text": "",
+        "block": 21,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "player-damage",
+          "teleport-on-void-falling"
+        ],
+        "id": "player-damageteleport-on-void-falling",
+        "source_line": 108,
+        "text": "",
+        "block": 21,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "player-damage",
+          "reset-fall-on-void-teleport"
+        ],
+        "id": "player-damagereset-fall-on-void-teleport",
+        "source_line": 109,
+        "text": "",
+        "block": 21,
+        "line": 12,
+        "heading": false
+      },
+      {
+        "path": [
+          "player-damage",
+          "disable-explosion-damage"
+        ],
+        "id": "player-damagedisable-explosion-damage",
+        "source_line": 110,
+        "text": "",
+        "block": 21,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "player-damage",
+          "disable-mob-damage"
+        ],
+        "id": "player-damagedisable-mob-damage",
+        "source_line": 111,
+        "text": "",
+        "block": 21,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "player-damage",
+          "disable-death-messages"
+        ],
+        "id": "player-damagedisable-death-messages",
+        "source_line": 112,
+        "text": "",
+        "block": 21,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "crops"
+        ],
+        "id": "crops",
+        "source_line": 113,
+        "text": "",
+        "block": 22,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "crops",
+          "disable-creature-trampling"
+        ],
+        "id": "cropsdisable-creature-trampling",
+        "source_line": 114,
+        "text": "",
+        "block": 22,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "crops",
+          "disable-player-trampling"
+        ],
+        "id": "cropsdisable-player-trampling",
+        "source_line": 115,
+        "text": "",
+        "block": 22,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "turtle-egg"
+        ],
+        "id": "turtle-egg",
+        "source_line": 116,
+        "text": "",
+        "block": 23,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "turtle-egg",
+          "disable-creature-trampling"
+        ],
+        "id": "turtle-eggdisable-creature-trampling",
+        "source_line": 117,
+        "text": "",
+        "block": 23,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "turtle-egg",
+          "disable-player-trampling"
+        ],
+        "id": "turtle-eggdisable-player-trampling",
+        "source_line": 118,
+        "text": "",
+        "block": 23,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "sniffer-egg"
+        ],
+        "id": "sniffer-egg",
+        "source_line": 119,
+        "text": "",
+        "block": 24,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "sniffer-egg",
+          "disable-creature-trampling"
+        ],
+        "id": "sniffer-eggdisable-creature-trampling",
+        "source_line": 120,
+        "text": "",
+        "block": 24,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "sniffer-egg",
+          "disable-player-trampling"
+        ],
+        "id": "sniffer-eggdisable-player-trampling",
+        "source_line": 121,
+        "text": "",
+        "block": 24,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "weather"
+        ],
+        "id": "weather",
+        "source_line": 122,
+        "text": "",
+        "block": 25,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "weather",
+          "prevent-lightning-strike-blocks"
+        ],
+        "id": "weatherprevent-lightning-strike-blocks",
+        "source_line": 123,
+        "text": "",
+        "block": 25,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "weather",
+          "disable-lightning-strike-fire"
+        ],
+        "id": "weatherdisable-lightning-strike-fire",
+        "source_line": 124,
+        "text": "",
+        "block": 25,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "weather",
+          "disable-thunderstorm"
+        ],
+        "id": "weatherdisable-thunderstorm",
+        "source_line": 125,
+        "text": "",
+        "block": 25,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "weather",
+          "disable-weather"
+        ],
+        "id": "weatherdisable-weather",
+        "source_line": 126,
+        "text": "",
+        "block": 25,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "weather",
+          "disable-pig-zombification"
+        ],
+        "id": "weatherdisable-pig-zombification",
+        "source_line": 127,
+        "text": "",
+        "block": 25,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "weather",
+          "disable-villager-witchification"
+        ],
+        "id": "weatherdisable-villager-witchification",
+        "source_line": 128,
+        "text": "",
+        "block": 25,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "weather",
+          "disable-powered-creepers"
+        ],
+        "id": "weatherdisable-powered-creepers",
+        "source_line": 129,
+        "text": "",
+        "block": 25,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "weather",
+          "always-raining"
+        ],
+        "id": "weatheralways-raining",
+        "source_line": 130,
+        "text": "",
+        "block": 25,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "weather",
+          "always-thundering"
+        ],
+        "id": "weatheralways-thundering",
+        "source_line": 131,
+        "text": "",
+        "block": 25,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "dynamics"
+        ],
+        "id": "dynamics",
+        "source_line": 132,
+        "text": "",
+        "block": 26,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "dynamics",
+          "disable-mushroom-spread"
+        ],
+        "id": "dynamicsdisable-mushroom-spread",
+        "source_line": 133,
+        "text": "",
+        "block": 26,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "dynamics",
+          "disable-ice-melting"
+        ],
+        "id": "dynamicsdisable-ice-melting",
+        "source_line": 134,
+        "text": "",
+        "block": 26,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "dynamics",
+          "disable-snow-melting"
+        ],
+        "id": "dynamicsdisable-snow-melting",
+        "source_line": 135,
+        "text": "",
+        "block": 26,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "dynamics",
+          "disable-snow-formation"
+        ],
+        "id": "dynamicsdisable-snow-formation",
+        "source_line": 136,
+        "text": "",
+        "block": 26,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "dynamics",
+          "disable-ice-formation"
+        ],
+        "id": "dynamicsdisable-ice-formation",
+        "source_line": 137,
+        "text": "",
+        "block": 26,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "dynamics",
+          "disable-leaf-decay"
+        ],
+        "id": "dynamicsdisable-leaf-decay",
+        "source_line": 138,
+        "text": "",
+        "block": 26,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "dynamics",
+          "disable-grass-growth"
+        ],
+        "id": "dynamicsdisable-grass-growth",
+        "source_line": 139,
+        "text": "",
+        "block": 26,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "dynamics",
+          "disable-mycelium-spread"
+        ],
+        "id": "dynamicsdisable-mycelium-spread",
+        "source_line": 140,
+        "text": "",
+        "block": 26,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "dynamics",
+          "disable-vine-growth"
+        ],
+        "id": "dynamicsdisable-vine-growth",
+        "source_line": 141,
+        "text": "",
+        "block": 26,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "dynamics",
+          "disable-rock-growth"
+        ],
+        "id": "dynamicsdisable-rock-growth",
+        "source_line": 142,
+        "text": "",
+        "block": 26,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "dynamics",
+          "disable-sculk-growth"
+        ],
+        "id": "dynamicsdisable-sculk-growth",
+        "source_line": 143,
+        "text": "",
+        "block": 26,
+        "line": 12,
+        "heading": false
+      },
+      {
+        "path": [
+          "dynamics",
+          "disable-crop-growth"
+        ],
+        "id": "dynamicsdisable-crop-growth",
+        "source_line": 144,
+        "text": "",
+        "block": 26,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "dynamics",
+          "disable-soil-dehydration"
+        ],
+        "id": "dynamicsdisable-soil-dehydration",
+        "source_line": 145,
+        "text": "",
+        "block": 26,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "dynamics",
+          "disable-soil-moisture-change"
+        ],
+        "id": "dynamicsdisable-soil-moisture-change",
+        "source_line": 146,
+        "text": "",
+        "block": 26,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "dynamics",
+          "disable-coral-block-fade"
+        ],
+        "id": "dynamicsdisable-coral-block-fade",
+        "source_line": 147,
+        "text": "",
+        "block": 26,
+        "line": 16,
+        "heading": false
+      },
+      {
+        "path": [
+          "dynamics",
+          "disable-copper-block-fade"
+        ],
+        "id": "dynamicsdisable-copper-block-fade",
+        "source_line": 148,
+        "text": "",
+        "block": 26,
+        "line": 17,
+        "heading": false
+      },
+      {
+        "path": [
+          "dynamics",
+          "snow-fall-blocks"
+        ],
+        "id": "dynamicssnow-fall-blocks",
+        "source_line": 149,
+        "text": "",
+        "block": 26,
+        "line": 18,
+        "heading": false
+      },
+      {
+        "path": [
+          "blacklist"
+        ],
+        "id": "blacklist",
+        "source_line": 150,
+        "text": "",
+        "block": 27,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "blacklist",
+          "use-as-whitelist"
+        ],
+        "id": "blacklistuse-as-whitelist",
+        "source_line": 151,
+        "text": "",
+        "block": 27,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "blacklist",
+          "logging"
+        ],
+        "id": "blacklistlogging",
+        "source_line": 152,
+        "text": "",
+        "block": 27,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "blacklist",
+          "logging",
+          "console"
+        ],
+        "id": "blacklistloggingconsole",
+        "source_line": 153,
+        "text": "",
+        "block": 27,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "blacklist",
+          "logging",
+          "console",
+          "enable"
+        ],
+        "id": "blacklistloggingconsoleenable",
+        "source_line": 154,
+        "text": "",
+        "block": 27,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "blacklist",
+          "logging",
+          "database"
+        ],
+        "id": "blacklistloggingdatabase",
+        "source_line": 155,
+        "text": "",
+        "block": 27,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "blacklist",
+          "logging",
+          "database",
+          "enable"
+        ],
+        "id": "blacklistloggingdatabaseenable",
+        "source_line": 156,
+        "text": "",
+        "block": 27,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "blacklist",
+          "logging",
+          "database",
+          "dsn"
+        ],
+        "id": "blacklistloggingdatabasedsn",
+        "source_line": 157,
+        "text": "",
+        "block": 27,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "blacklist",
+          "logging",
+          "database",
+          "user"
+        ],
+        "id": "blacklistloggingdatabaseuser",
+        "source_line": 158,
+        "text": "",
+        "block": 27,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "blacklist",
+          "logging",
+          "database",
+          "pass"
+        ],
+        "id": "blacklistloggingdatabasepass",
+        "source_line": 159,
+        "text": "",
+        "block": 27,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "blacklist",
+          "logging",
+          "database",
+          "table"
+        ],
+        "id": "blacklistloggingdatabasetable",
+        "source_line": 160,
+        "text": "",
+        "block": 27,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "blacklist",
+          "logging",
+          "file"
+        ],
+        "id": "blacklistloggingfile",
+        "source_line": 161,
+        "text": "",
+        "block": 27,
+        "line": 12,
+        "heading": false
+      },
+      {
+        "path": [
+          "blacklist",
+          "logging",
+          "file",
+          "enable"
+        ],
+        "id": "blacklistloggingfileenable",
+        "source_line": 162,
+        "text": "",
+        "block": 27,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "blacklist",
+          "logging",
+          "file",
+          "path"
+        ],
+        "id": "blacklistloggingfilepath",
+        "source_line": 163,
+        "text": "",
+        "block": 27,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "blacklist",
+          "logging",
+          "file",
+          "open-files"
+        ],
+        "id": "blacklistloggingfileopen-files",
+        "source_line": 164,
+        "text": "",
+        "block": 27,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "custom-metrics-charts"
+        ],
+        "id": "custom-metrics-charts",
+        "source_line": 165,
+        "text": "",
+        "block": 28,
+        "line": 1,
+        "heading": true
+      }
+    ]
+  },
+  {
+    "file": "configuration/index.md",
+    "title": "配置文件",
+    "source_kind": "imported-configuration",
+    "source_sha256": "2afb0d5fe065fd785c61dd6b76d2e85a9687b32e6f54ff1f53e8e4ae7afa7351",
+    "translation_review": "reviewed",
+    "anchors": []
+  }
+]

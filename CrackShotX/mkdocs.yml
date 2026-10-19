@@ -1,0 +1,9 @@
+site_name: CrackShotX 中文资料
+nav:
+- 插件说明: index.md
+- 配置文件（1.1.0）:
+  - 配置索引: configuration/index.md
+  - config.yml: configuration/config.md
+  - 语言文件（lang/）:
+    - en_US.yml: configuration/lang/en_us.md
+    - zh_CN.yml: configuration/lang/zh_cn.md

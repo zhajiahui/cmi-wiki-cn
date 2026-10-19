@@ -1,0 +1,25 @@
+{
+  "project": "Typewriter",
+  "version": "0.9.0-beta-177",
+  "source_date": "2026-10-19",
+  "source_kind": "user-supplied-configuration-examples",
+  "index": true,
+  "files": [
+    {
+      "name": "config.yml",
+      "page": "configuration/config.md",
+      "language": "yaml",
+      "description": "主配置。",
+      "code": "# 是否启用网页面板和 WebSocket。\nenabled: true\npanel:\n  enabled: true\n  # 网页面板使用的端口，请确保该端口已开放。\n  port: 28080\nwebsocket:\n  # WebSocket 服务使用的端口，请确保该端口已开放。\n  port: 29092\n  # 连接时使用的身份验证方式。不清楚用途时请保持默认。\n  # 可用值：none（不建议）、session\n  auth: session\n# 服务器的主机地址，请改为你的服务器 IP。\nhostname: \"HOST\"\n",
+      "redacted_paths": [
+        {
+          "path": [
+            "hostname"
+          ],
+          "placeholder": "HOST"
+        }
+      ],
+      "source_sha256": "cefe9e767b4565daabf4b1258d5514e5f342ba0efb73126517c992330d5c57e0"
+    }
+  ]
+}

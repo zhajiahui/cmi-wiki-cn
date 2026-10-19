@@ -1,0 +1,260 @@
+---
+title: item/axe.yml
+source_kind: imported-configuration
+translation_review: reviewed
+source_file: item/axe.yml
+source_version: 6.10.1-SNAPSHOT
+---
+
+# item/axe.yml
+
+文件：`item/axe.yml`。版本：`6.10.1-SNAPSHOT`。
+
+随包物品或内容配置。
+
+## `EXECUTIONER_AXE` { #executioner_axe }
+
+```yaml title="item/axe.yml · EXECUTIONER_AXE"
+EXECUTIONER_AXE:
+  base:
+    material: IRON_AXE
+    name: "§c刽子手之斧"
+    disable-enchanting: true
+    disable-repairing: true
+    disable-interaction: true
+    lore:
+      - "§7一把只用于"
+      - "§7战斗的斧，无法§c附魔§7。"
+    attack-damage:
+      base: 17.0
+      scale: 0.1
+      spread: 0.1
+      max-spread: 0.2
+    attack-speed: 1.0
+    required-level: 10.0
+    stamina-cost: 2.0
+    weapon-damage:
+      base: 10.0
+      scale: 0.05
+      spread: 0.1
+      max-spread: 0.2
+    tier: RARE
+    physical-damage: 25.0
+    crafting:
+      shaped:
+        '1':
+          input:
+            - v AIR 0 1..|v iron_block - 1.0..|v diamond - 1.0..
+            - v AIR 0 1..|v stick - 1.0..|v iron_ingot - 1.0..
+            - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+    max-durability: 3150.0
+    required-class:
+      - Warrior
+    ability:
+      ability1:
+        type: EARTHQUAKE
+        duration: 2.0
+        cooldown: 6.0
+        damage: 8.0
+        amplifier: 1.0
+        mode: RIGHT_CLICK
+```
+
+## `UNDEAD_SLAYER` { #undead_slayer }
+
+```yaml title="item/axe.yml · UNDEAD_SLAYER"
+UNDEAD_SLAYER:
+  base:
+    material: NETHERITE_AXE
+    name: "§4§l§k||| §c§l亡灵杀手 §4§l§k|||"
+    undead-damage: 350.0
+    attack-damage: 7.0
+    required-level: 15.0
+    pve-damage: 50.0
+    critical-strike-chance: 30.0
+    critical-strike-power:
+      base: 60.0
+      scale: 0.02
+      spread: 0.1
+      max-spread: 0.2
+    max-durability: 9800.0
+    element:
+      darkness:
+        damage: 25.0
+    upgrade: { }
+    gem-sockets:
+      - Red
+      - Red
+    lore:
+      - "§c献给那些不惧"
+      - "§c与冥界打交道的人。"
+    ability:
+      ability1:
+        type: CURSED_BEAM
+        mode: RIGHT_CLICK
+        duration: 5.0
+        damage: 10.0
+        cooldown: 9.0
+    tier: EPIC
+    physical-damage: 10.0
+    enchants:
+      smite: 3.0
+    attack-speed: 1.1
+    movement-speed: -0.02
+```
+
+## `BUTCHER_AXE` { #butcher_axe }
+
+```yaml title="item/axe.yml · BUTCHER_AXE"
+BUTCHER_AXE:
+  base:
+    material: IRON_AXE
+    name: "&c屠夫&f之斧"
+    tier: UNCOMMON
+    critical-strike-chance: 5.0
+    critical-strike-power: 248.0
+    attack-damage: 6.0
+    attack-speed: 0.7
+    ability:
+      right-click:
+        type: CIRCULAR_SLASH
+        mode: RIGHT_CLICK
+        knockback: 3.0
+        cooldown: 39.0
+        damage: 6.0
+    element:
+      ice:
+        damage: 3.2
+    gem-sockets:
+      - Uncolored
+    crafting:
+      shaped:
+        '2':
+          - AIR IRON_BLOCK IRON_BLOCK
+          - AIR STICK IRON_BLOCK
+          - AIR STICK AIR
+        '1':
+          - IRON_BLOCK IRON_BLOCK AIR
+          - IRON_BLOCK STICK AIR
+          - AIR STICK AIR
+```
+
+## `BONE_CRACKER` { #bone_cracker }
+
+```yaml title="item/axe.yml · BONE_CRACKER"
+BONE_CRACKER:
+  base:
+    material: STONE_AXE
+    disable-repairing: true
+    disable-enchanting: true
+    unbreakable: false
+    two-handed: true
+    tier: COMMON
+    armor-toughness: 2.0
+    gem-sockets:
+      - Uncolored
+    name: "&f碎骨者"
+    attack-damage:
+      base: 11.0
+      spread: 0.027
+      max-spread: 0.083
+    attack-speed:
+      base: 0.45
+      spread: 0.033
+      max-spread: 0.01
+    required-level: 4.0
+    durability:
+      base: 55.0
+      spread: 0.15
+      max-spread: 0.45
+```
+
+## `SKULL_BREAKER` { #skull_breaker }
+
+```yaml title="item/axe.yml · SKULL_BREAKER"
+SKULL_BREAKER:
+  base:
+    material: IRON_AXE
+    attack-damage:
+      base: 17.0
+      spread: 0.019
+      max-spread: 0.056
+    attack-speed:
+      base: 0.35
+      spread: 0.042
+      max-spread: 0.13
+    name: "&f&l碎颅者"
+    tier: COMMON
+    two-handed: true
+    movement-speed: -0.02
+    lore:
+      - "&7它巨大的刀刃会使目标&c减速&7，"
+      - "&7在砸向目标头颅时触发。"
+    required-level: 9.0
+    required-class:
+      - Brute
+      - Warrior
+```
+
+## `SILVER_AXE` { #silver_axe }
+
+```yaml title="item/axe.yml · SILVER_AXE"
+SILVER_AXE:
+  base:
+    material: IRON_AXE
+    custom-model-data: 1.0
+    name: "&f银斧"
+    attack-damage:
+      base: 9.5
+      spread: 0.017
+      max-spread: 0.05
+    attack-speed:
+      base: 0.95
+      spread: 0.017
+      max-spread: 0.05
+    critical-strike-chance:
+      base: 6.0
+      spread: 0.05
+      max-spread: 0.14
+    ability:
+      ability1:
+        type: CIRCULAR_SLASH
+        damage: 6.0
+        cooldown: 20.0
+        mode: SHIFT_RIGHT_CLICK
+    lore:
+      - "&7每隔 &c20 &7秒，潜行并"
+      - "&7右键点击可施展毁灭性的"
+      - "&7回旋斩，造成 &c6 &7点伤害"
+      - "&7并击退附近的目标。"
+    crafting:
+      shaped:
+        '2':
+          - AIR MATERIAL.SILVER_INGOT MATERIAL.SILVER_INGOT
+          - AIR STICK MATERIAL.SILVER_INGOT
+          - AIR STICK AIR
+        '1':
+          - MATERIAL.SILVER_INGOT MATERIAL.SILVER_INGOT AIR
+          - MATERIAL.SILVER_INGOT STICK AIR
+          - AIR STICK AIR
+```
+
+## `THE_UNBREAKABLE` { #the_unbreakable }
+
+```yaml title="item/axe.yml · THE_UNBREAKABLE"
+THE_UNBREAKABLE:
+  base:
+    material: IRON_AXE
+    name: "不朽者"
+    unbreakable: true
+    attack-damage: 12.0
+    lore:
+      - "&7&o无法附魔或重铸"
+    attack-speed: 0.9
+    two-handed: true
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smithing: true
+    tier: RARE
+    stamina-cost: 3.0
+```

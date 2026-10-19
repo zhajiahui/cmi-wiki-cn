@@ -25,7 +25,9 @@ for project in sorted({p['project'] for p in pages}):
  manifest=json.loads((ROOT/project/'sources/manifest.json').read_text(encoding='utf-8'))
  if {p['key'] for p in source}!={p['source_key'] for p in manifest}:errors.append('Missing source pages: '+project)
  nav=list(navfiles(yaml.safe_load((ROOT/project/'mkdocs.yml').read_text(encoding='utf-8'))['nav']))
- if len(nav)!=len(set(nav)) or set(nav)!={p['file'] for p in manifest}:errors.append('Navigation coverage mismatch: '+project)
+ extra_path=ROOT/project/'sources/imported-configuration-manifest.json'
+ extra=json.loads(extra_path.read_text('utf-8')) if extra_path.is_file() else []
+ if len(nav)!=len(set(nav)) or set(nav)!={p['file'] for p in manifest+extra}:errors.append('Navigation coverage mismatch: '+project)
  counts[project]=len(manifest)
 for p in pages:
  root=ROOT/p['project'];name=p['project']+'/'+p['file'];original=(root/p['html']).read_bytes()

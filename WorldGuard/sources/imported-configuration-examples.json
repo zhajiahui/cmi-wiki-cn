@@ -1,0 +1,118 @@
+{
+  "project": "WorldGuard",
+  "version": "7.0.17+2370-e42d8bc",
+  "source_date": "2026-10-19",
+  "source_kind": "user-supplied-configuration-examples",
+  "index": true,
+  "files": [
+    {
+      "name": "worlds/world/config.yml",
+      "page": "configuration/worlds/world/config.md",
+      "language": "yaml",
+      "description": "主配置。",
+      "code": "#\n# WorldGuard 世界配置文件\n#\n# 这是世界配置文件。在此文件中添加的配置只会\n# 影响当前世界。如果此文件中没有任何配置，\n# 则会继承主配置文件中的设置。\n#\n# 如果下方显示 {}，表示此文件中没有任何配置项。\n# 删除 {}，然后添加自己的配置项。\n#\n\nregions:\n    titles-always-use-default-times: true\n",
+      "redacted_paths": [],
+      "source_sha256": "6548f4ee2d30e3e41db3b2b4744b1fd39ff8ec18485d895b4e322e7394d56ee8"
+    },
+    {
+      "name": "worlds/world/blacklist.txt",
+      "page": "configuration/worlds/world/blacklist.md",
+      "language": "text",
+      "description": "方块与物品黑名单。",
+      "code": "#\n# WorldGuard 黑名单\n#\n# 黑名单可用于禁止特定操作，以及禁止使用特定方块和物品。\n# 选择一组“要影响的物品”和一组“要执行的动作”。\n#\n###############################################################################\n#\n# 禁止挖掘和放置某些矿石的示例：\n# [coal_ore,gold_ore,iron_ore]\n# on-break=deny,log,kick\n# on-place=deny,tell\n#\n# 可检测的事件：\n# - on-break（此类型的方块即将被破坏时）\n# - on-destroy-with（破坏方块时玩家手持的物品或方块）\n# - on-place（放置方块时）\n# - on-use（使用打火石、水桶等物品时）\n# - on-interact（使用门、箱子等方块时）\n# - on-drop（物品从玩家背包中被丢出时）\n# - on-acquire（物品通过某种方式进入玩家背包时）\n# - on-equip（物品被装备到玩家的盔甲栏时）\n#      注意：由于 Bukkit API 的不足，on-equip 的保护范围会超出实际需要。\n# - on-dispense（发射器即将发射物品时）\n#\n# 动作（供事件使用）：\n# - deny（完全阻止，用于黑名单模式）\n# - allow（用于白名单模式）\n# - notify（通知拥有 'worldguard.notify' 权限的管理员）\n# - log（记录到控制台、文件或数据库）\n# - tell（告知玩家此操作不被允许）\n# - kick（踢出玩家）\n# - ban（封禁玩家）\n#\n# 选项：\n# - ignore-groups（不受影响的组，以逗号分隔）\n# - ignore-perms（拥有这些权限的玩家不受影响，以逗号分隔；可以\n#   自行定义权限！）\n# - comment（写给自己的备注，执行 'log' 和 'notify' 时会显示）\n# - message（可选，用于替代默认提示显示给玩家的消息；%s 为物品名称）\n#\n###############################################################################\n#\n# 更多信息参见：\n# https://worldguard.enginehub.org/en/latest/blacklist/\n#\n###############################################################################\n#\n# 下面是一些示例。\n# 请记住：行首带有 # 的行会被忽略。\n#\n\n# 禁用岩浆桶\n#[lava_bucket]\n#ignore-perms=my.own.madeup.permission\n#ignore-groups=admins,mods\n#on-use=deny,tell\n\n# 禁用某些矿石\n#[coal_ore,gold_ore,iron_ore]\n#ignore-groups=admins,mods\n#on-break=notify,deny,log\n",
+      "redacted_paths": [],
+      "source_sha256": "60ef01520d777529afc66d08e2cab3af839f9c0ecb4ea092a70eb98b5e940906"
+    },
+    {
+      "name": "worlds/example_world/config.yml",
+      "page": "configuration/worlds/example_world/config.md",
+      "language": "yaml",
+      "description": "主配置。",
+      "code": "#\n# WorldGuard 世界配置文件\n#\n# 这是世界配置文件。在此文件中添加的配置只会\n# 影响当前世界。如果此文件中没有任何配置，\n# 则会继承主配置文件中的设置。\n#\n# 如果下方显示 {}，表示此文件中没有任何配置项。\n# 删除 {}，然后添加自己的配置项。\n#\n\nregions:\n    titles-always-use-default-times: true\n",
+      "redacted_paths": [],
+      "source_sha256": "6548f4ee2d30e3e41db3b2b4744b1fd39ff8ec18485d895b4e322e7394d56ee8"
+    },
+    {
+      "name": "worlds/example_world/blacklist.txt",
+      "page": "configuration/worlds/example_world/blacklist.md",
+      "language": "text",
+      "description": "方块与物品黑名单。",
+      "code": "#\n# WorldGuard 黑名单\n#\n# 黑名单可用于禁止特定操作，以及禁止使用特定方块和物品。\n# 选择一组“要影响的物品”和一组“要执行的动作”。\n#\n###############################################################################\n#\n# 禁止挖掘和放置某些矿石的示例：\n# [coal_ore,gold_ore,iron_ore]\n# on-break=deny,log,kick\n# on-place=deny,tell\n#\n# 可检测的事件：\n# - on-break（此类型的方块即将被破坏时）\n# - on-destroy-with（破坏方块时玩家手持的物品或方块）\n# - on-place（放置方块时）\n# - on-use（使用打火石、水桶等物品时）\n# - on-interact（使用门、箱子等方块时）\n# - on-drop（物品从玩家背包中被丢出时）\n# - on-acquire（物品通过某种方式进入玩家背包时）\n# - on-equip（物品被装备到玩家的盔甲栏时）\n#      注意：由于 Bukkit API 的不足，on-equip 的保护范围会超出实际需要。\n# - on-dispense（发射器即将发射物品时）\n#\n# 动作（供事件使用）：\n# - deny（完全阻止，用于黑名单模式）\n# - allow（用于白名单模式）\n# - notify（通知拥有 'worldguard.notify' 权限的管理员）\n# - log（记录到控制台、文件或数据库）\n# - tell（告知玩家此操作不被允许）\n# - kick（踢出玩家）\n# - ban（封禁玩家）\n#\n# 选项：\n# - ignore-groups（不受影响的组，以逗号分隔）\n# - ignore-perms（拥有这些权限的玩家不受影响，以逗号分隔；可以\n#   自行定义权限！）\n# - comment（写给自己的备注，执行 'log' 和 'notify' 时会显示）\n# - message（可选，用于替代默认提示显示给玩家的消息；%s 为物品名称）\n#\n###############################################################################\n#\n# 更多信息参见：\n# https://worldguard.enginehub.org/en/latest/blacklist/\n#\n###############################################################################\n#\n# 下面是一些示例。\n# 请记住：行首带有 # 的行会被忽略。\n#\n\n# 禁用岩浆桶\n#[lava_bucket]\n#ignore-perms=my.own.madeup.permission\n#ignore-groups=admins,mods\n#on-use=deny,tell\n\n# 禁用某些矿石\n#[coal_ore,gold_ore,iron_ore]\n#ignore-groups=admins,mods\n#on-break=notify,deny,log\n",
+      "redacted_paths": [],
+      "source_sha256": "60ef01520d777529afc66d08e2cab3af839f9c0ecb4ea092a70eb98b5e940906"
+    },
+    {
+      "name": "worlds/world_the_end/config.yml",
+      "page": "configuration/worlds/world_the_end/config.md",
+      "language": "yaml",
+      "description": "主配置。",
+      "code": "#\n# WorldGuard 世界配置文件\n#\n# 这是世界配置文件。在此文件中添加的配置只会\n# 影响当前世界。如果此文件中没有任何配置，\n# 则会继承主配置文件中的设置。\n#\n# 如果下方显示 {}，表示此文件中没有任何配置项。\n# 删除 {}，然后添加自己的配置项。\n#\n\nregions:\n    titles-always-use-default-times: true\n",
+      "redacted_paths": [],
+      "source_sha256": "6548f4ee2d30e3e41db3b2b4744b1fd39ff8ec18485d895b4e322e7394d56ee8"
+    },
+    {
+      "name": "worlds/world_the_end/blacklist.txt",
+      "page": "configuration/worlds/world_the_end/blacklist.md",
+      "language": "text",
+      "description": "方块与物品黑名单。",
+      "code": "#\n# WorldGuard 黑名单\n#\n# 黑名单可用于禁止特定操作，以及禁止使用特定方块和物品。\n# 选择一组“要影响的物品”和一组“要执行的动作”。\n#\n###############################################################################\n#\n# 禁止挖掘和放置某些矿石的示例：\n# [coal_ore,gold_ore,iron_ore]\n# on-break=deny,log,kick\n# on-place=deny,tell\n#\n# 可检测的事件：\n# - on-break（此类型的方块即将被破坏时）\n# - on-destroy-with（破坏方块时玩家手持的物品或方块）\n# - on-place（放置方块时）\n# - on-use（使用打火石、水桶等物品时）\n# - on-interact（使用门、箱子等方块时）\n# - on-drop（物品从玩家背包中被丢出时）\n# - on-acquire（物品通过某种方式进入玩家背包时）\n# - on-equip（物品被装备到玩家的盔甲栏时）\n#      注意：由于 Bukkit API 的不足，on-equip 的保护范围会超出实际需要。\n# - on-dispense（发射器即将发射物品时）\n#\n# 动作（供事件使用）：\n# - deny（完全阻止，用于黑名单模式）\n# - allow（用于白名单模式）\n# - notify（通知拥有 'worldguard.notify' 权限的管理员）\n# - log（记录到控制台、文件或数据库）\n# - tell（告知玩家此操作不被允许）\n# - kick（踢出玩家）\n# - ban（封禁玩家）\n#\n# 选项：\n# - ignore-groups（不受影响的组，以逗号分隔）\n# - ignore-perms（拥有这些权限的玩家不受影响，以逗号分隔；可以\n#   自行定义权限！）\n# - comment（写给自己的备注，执行 'log' 和 'notify' 时会显示）\n# - message（可选，用于替代默认提示显示给玩家的消息；%s 为物品名称）\n#\n###############################################################################\n#\n# 更多信息参见：\n# https://worldguard.enginehub.org/en/latest/blacklist/\n#\n###############################################################################\n#\n# 下面是一些示例。\n# 请记住：行首带有 # 的行会被忽略。\n#\n\n# 禁用岩浆桶\n#[lava_bucket]\n#ignore-perms=my.own.madeup.permission\n#ignore-groups=admins,mods\n#on-use=deny,tell\n\n# 禁用某些矿石\n#[coal_ore,gold_ore,iron_ore]\n#ignore-groups=admins,mods\n#on-break=notify,deny,log\n",
+      "redacted_paths": [],
+      "source_sha256": "60ef01520d777529afc66d08e2cab3af839f9c0ecb4ea092a70eb98b5e940906"
+    },
+    {
+      "name": "worlds/world_nether/config.yml",
+      "page": "configuration/worlds/world_nether/config.md",
+      "language": "yaml",
+      "description": "主配置。",
+      "code": "#\n# WorldGuard 世界配置文件\n#\n# 这是世界配置文件。在此文件中添加的配置只会\n# 影响当前世界。如果此文件中没有任何配置，\n# 则会继承主配置文件中的设置。\n#\n# 如果下方显示 {}，表示此文件中没有任何配置项。\n# 删除 {}，然后添加自己的配置项。\n#\n\nregions:\n    titles-always-use-default-times: true\n",
+      "redacted_paths": [],
+      "source_sha256": "6548f4ee2d30e3e41db3b2b4744b1fd39ff8ec18485d895b4e322e7394d56ee8"
+    },
+    {
+      "name": "worlds/world_nether/blacklist.txt",
+      "page": "configuration/worlds/world_nether/blacklist.md",
+      "language": "text",
+      "description": "方块与物品黑名单。",
+      "code": "#\n# WorldGuard 黑名单\n#\n# 黑名单可用于禁止特定操作，以及禁止使用特定方块和物品。\n# 选择一组“要影响的物品”和一组“要执行的动作”。\n#\n###############################################################################\n#\n# 禁止挖掘和放置某些矿石的示例：\n# [coal_ore,gold_ore,iron_ore]\n# on-break=deny,log,kick\n# on-place=deny,tell\n#\n# 可检测的事件：\n# - on-break（此类型的方块即将被破坏时）\n# - on-destroy-with（破坏方块时玩家手持的物品或方块）\n# - on-place（放置方块时）\n# - on-use（使用打火石、水桶等物品时）\n# - on-interact（使用门、箱子等方块时）\n# - on-drop（物品从玩家背包中被丢出时）\n# - on-acquire（物品通过某种方式进入玩家背包时）\n# - on-equip（物品被装备到玩家的盔甲栏时）\n#      注意：由于 Bukkit API 的不足，on-equip 的保护范围会超出实际需要。\n# - on-dispense（发射器即将发射物品时）\n#\n# 动作（供事件使用）：\n# - deny（完全阻止，用于黑名单模式）\n# - allow（用于白名单模式）\n# - notify（通知拥有 'worldguard.notify' 权限的管理员）\n# - log（记录到控制台、文件或数据库）\n# - tell（告知玩家此操作不被允许）\n# - kick（踢出玩家）\n# - ban（封禁玩家）\n#\n# 选项：\n# - ignore-groups（不受影响的组，以逗号分隔）\n# - ignore-perms（拥有这些权限的玩家不受影响，以逗号分隔；可以\n#   自行定义权限！）\n# - comment（写给自己的备注，执行 'log' 和 'notify' 时会显示）\n# - message（可选，用于替代默认提示显示给玩家的消息；%s 为物品名称）\n#\n###############################################################################\n#\n# 更多信息参见：\n# https://worldguard.enginehub.org/en/latest/blacklist/\n#\n###############################################################################\n#\n# 下面是一些示例。\n# 请记住：行首带有 # 的行会被忽略。\n#\n\n# 禁用岩浆桶\n#[lava_bucket]\n#ignore-perms=my.own.madeup.permission\n#ignore-groups=admins,mods\n#on-use=deny,tell\n\n# 禁用某些矿石\n#[coal_ore,gold_ore,iron_ore]\n#ignore-groups=admins,mods\n#on-break=notify,deny,log\n",
+      "redacted_paths": [],
+      "source_sha256": "60ef01520d777529afc66d08e2cab3af839f9c0ecb4ea092a70eb98b5e940906"
+    },
+    {
+      "name": "config.yml",
+      "page": "configuration/config.md",
+      "language": "yaml",
+      "description": "主配置。",
+      "code": "regions:\n    uuid-migration:\n        perform-on-next-start: false\n        keep-names-that-lack-uuids: true\n    use-creature-spawn-event: true\n    disable-bypass-by-default: false\n    announce-bypass-status: false\n    use-paper-entity-origin: false\n    enable: true\n    invincibility-removes-mobs: false\n    cancel-chat-without-recipients: true\n    nether-portal-protection: true\n    fake-player-build-override: true\n    explosion-flags-block-entity-damage: true\n    high-frequency-flags: false\n    protect-against-liquid-flow: false\n    wand: minecraft:leather\n    max-claim-volume: 30000\n    claim-only-inside-existing-regions: false\n    set-parent-on-claim: ''\n    location-flags-only-inside-regions: false\n    max-region-count-per-player:\n        default: 7\nauto-invincible: false\nauto-invincible-group: false\nauto-no-drowning-group: false\nuse-player-move-event: true\nuse-player-teleports: true\nuse-particle-effects: true\ndisable-permission-cache: false\nsecurity:\n    deop-everyone-on-join: false\n    block-in-game-op-command: false\n    host-keys-allow-forge-clients: false\nhost-keys: {}\nsummary-on-start: true\nop-permissions: true\nbuild-permission-nodes:\n    enable: false\n    deny-message: \"&e你没有在这里执行此操作的权限。\"\nevent-handling:\n    block-entity-spawns-with-untraceable-cause: false\n    interaction-whitelist: []\n    emit-block-use-at-feet: []\n    ignore-hopper-item-move-events: false\n    break-hoppers-on-denied-move: true\nprotection:\n    item-durability: true\n    remove-infinite-stacks: false\n    disable-xp-orb-drops: false\n    use-max-priority-association: false\ngameplay:\n    block-potions: []\n    block-potions-overly-reliably: false\n    disable-conduit-effects: false\ndefault:\n    pumpkin-scuba: false\n    disable-health-regain: false\nphysics:\n    no-physics-gravel: false\n    no-physics-sand: false\n    vine-like-rope-ladders: false\n    allow-portal-anywhere: false\n    disable-water-damage-blocks: []\nignition:\n    block-tnt: false\n    block-tnt-block-damage: false\n    block-lighter: false\nfire:\n    disable-lava-fire-spread: false\n    disable-all-fire-spread: false\n    disable-fire-spread-blocks: []\n    lava-spread-blocks: []\nmobs:\n    block-creeper-explosions: false\n    block-creeper-block-damage: false\n    block-wither-explosions: false\n    block-wither-block-damage: false\n    block-wither-skull-explosions: false\n    block-wither-skull-block-damage: false\n    block-enderdragon-block-damage: false\n    block-enderdragon-portal-creation: false\n    block-fireball-explosions: false\n    block-fireball-block-damage: false\n    block-windcharge-explosions: false\n    anti-wolf-dumbness: false\n    allow-tamed-spawns: true\n    disable-enderman-griefing: false\n    disable-snowman-trails: false\n    block-painting-destroy: false\n    block-item-frame-destroy: false\n    block-armor-stand-destroy: false\n    block-plugin-spawning: true\n    block-above-ground-slimes: false\n    block-other-explosions: false\n    block-zombie-door-destruction: false\n    block-vehicle-entry: false\n    block-creature-spawn: []\nplayer-damage:\n    disable-fall-damage: false\n    disable-lava-damage: false\n    disable-fire-damage: false\n    disable-lightning-damage: false\n    disable-drowning-damage: false\n    disable-suffocation-damage: false\n    disable-contact-damage: false\n    teleport-on-suffocation: false\n    disable-void-damage: false\n    teleport-on-void-falling: false\n    reset-fall-on-void-teleport: false\n    disable-explosion-damage: false\n    disable-mob-damage: false\n    disable-death-messages: false\ncrops:\n    disable-creature-trampling: false\n    disable-player-trampling: false\nturtle-egg:\n    disable-creature-trampling: false\n    disable-player-trampling: false\nsniffer-egg:\n    disable-creature-trampling: false\n    disable-player-trampling: false\nweather:\n    prevent-lightning-strike-blocks: []\n    disable-lightning-strike-fire: false\n    disable-thunderstorm: false\n    disable-weather: false\n    disable-pig-zombification: false\n    disable-villager-witchification: false\n    disable-powered-creepers: false\n    always-raining: false\n    always-thundering: false\ndynamics:\n    disable-mushroom-spread: false\n    disable-ice-melting: false\n    disable-snow-melting: false\n    disable-snow-formation: false\n    disable-ice-formation: false\n    disable-leaf-decay: false\n    disable-grass-growth: false\n    disable-mycelium-spread: false\n    disable-vine-growth: false\n    disable-rock-growth: false\n    disable-sculk-growth: false\n    disable-crop-growth: false\n    disable-soil-dehydration: false\n    disable-soil-moisture-change: false\n    disable-coral-block-fade: false\n    disable-copper-block-fade: false\n    snow-fall-blocks: []\nblacklist:\n    use-as-whitelist: false\n    logging:\n        console:\n            enable: true\n        database:\n            enable: false\n            dsn: \"jdbc:mysql://HOST/DATABASE\"\n            user: \"USERNAME\"\n            pass: ''\n            table: \"TABLE_NAME\"\n        file:\n            enable: false\n            path: worldguard/logs/%Y-%m-%d.log\n            open-files: 10\ncustom-metrics-charts: true\n",
+      "redacted_paths": [
+        {
+          "path": [
+            "blacklist",
+            "logging",
+            "database",
+            "dsn"
+          ],
+          "placeholder": "jdbc:mysql://HOST/DATABASE"
+        },
+        {
+          "path": [
+            "blacklist",
+            "logging",
+            "database",
+            "user"
+          ],
+          "placeholder": "USERNAME"
+        },
+        {
+          "path": [
+            "blacklist",
+            "logging",
+            "database",
+            "table"
+          ],
+          "placeholder": "TABLE_NAME"
+        }
+      ],
+      "source_sha256": "e8f5945443d7e529f3b3899b8f73e5cef1f28add4362edd72a297b5e33c630ff"
+    }
+  ]
+}

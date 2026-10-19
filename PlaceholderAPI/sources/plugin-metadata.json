@@ -1,0 +1,34 @@
+{
+  "name": "PlaceholderAPI",
+  "version": "2.12.3",
+  "website": null,
+  "depend": [],
+  "softdepend": [],
+  "authors": "HelpChat",
+  "commands": [
+    "placeholderapi"
+  ],
+  "permissions": [
+    "placeholderapi.*",
+    "placeholderapi.admin",
+    "placeholderapi.ecloud.*",
+    "placeholderapi.help",
+    "placeholderapi.info",
+    "placeholderapi.list",
+    "placeholderapi.ecloud",
+    "placeholderapi.parse",
+    "placeholderapi.reload",
+    "placeholderapi.version",
+    "placeholderapi.register",
+    "placeholderapi.unregister",
+    "placeholderapi.updatenotify",
+    "placeholderapi.ecloud.info",
+    "placeholderapi.ecloud.list",
+    "placeholderapi.ecloud.clear",
+    "placeholderapi.ecloud.status",
+    "placeholderapi.ecloud.update",
+    "placeholderapi.ecloud.refresh",
+    "placeholderapi.ecloud.download",
+    "placeholderapi.ecloud.placeholders"
+  ]
+}

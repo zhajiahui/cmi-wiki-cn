@@ -1,0 +1,2151 @@
+[
+  {
+    "file": "configuration/config.md",
+    "title": "config.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "b1f019cd136e54fdf173abfdfbaf8cfc0c3fb8a058f19bd3d0ebf5f64985e298",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "npc"
+        ],
+        "id": "npc",
+        "source_line": 2,
+        "text": "Citizens 配置",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "npc",
+          "always-use-name-holograms"
+        ],
+        "id": "npcalways-use-name-holograms",
+        "source_line": 4,
+        "text": "始终使用全息文字显示名称，而不只在使用十六进制颜色或占位符时使用",
+        "block": 0,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "default"
+        ],
+        "id": "npcdefault",
+        "source_line": 5,
+        "text": "",
+        "block": 0,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "default",
+          "bossbar-view-range"
+        ],
+        "id": "npcdefaultbossbar-view-range",
+        "source_line": 7,
+        "text": "Boss 血条的默认范围，单位为方块",
+        "block": 0,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "default",
+          "block-breaker-radius"
+        ],
+        "id": "npcdefaultblock-breaker-radius",
+        "source_line": 10,
+        "text": "破坏方块时使用的默认半径，单位为方块\n大于 0 时，NPC 会寻路到与目标方块相距此距离的位置",
+        "block": 0,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "default",
+          "waypoints"
+        ],
+        "id": "npcdefaultwaypoints",
+        "source_line": 11,
+        "text": "",
+        "block": 0,
+        "line": 12,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "default",
+          "waypoints",
+          "cache-paths"
+        ],
+        "id": "npcdefaultwaypointscache-paths",
+        "source_line": 14,
+        "text": "是否默认缓存 /npc path 的路径\n可省去重复使用的固定路径的寻路过程",
+        "block": 0,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "default",
+          "look-close"
+        ],
+        "id": "npcdefaultlook-close",
+        "source_line": 15,
+        "text": "",
+        "block": 0,
+        "line": 16,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "default",
+          "look-close",
+          "enabled"
+        ],
+        "id": "npcdefaultlook-closeenabled",
+        "source_line": 17,
+        "text": "是否默认启用注视附近玩家",
+        "block": 0,
+        "line": 17,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "default",
+          "look-close",
+          "range"
+        ],
+        "id": "npcdefaultlook-closerange",
+        "source_line": 19,
+        "text": "注视附近玩家的默认范围，单位为方块",
+        "block": 0,
+        "line": 19,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "default",
+          "look-close",
+          "random-look-enabled"
+        ],
+        "id": "npcdefaultlook-closerandom-look-enabled",
+        "source_line": 21,
+        "text": "是否默认启用随机注视",
+        "block": 0,
+        "line": 21,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "default",
+          "look-close",
+          "random-look-delay"
+        ],
+        "id": "npcdefaultlook-closerandom-look-delay",
+        "source_line": 23,
+        "text": "随机注视的默认间隔",
+        "block": 0,
+        "line": 23,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "default",
+          "look-close",
+          "realistic-looking"
+        ],
+        "id": "npcdefaultlook-closerealistic-looking",
+        "source_line": 25,
+        "text": "注视玩家时是否默认检查视线是否被遮挡",
+        "block": 0,
+        "line": 25,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "default",
+          "look-close",
+          "disable-while-navigating"
+        ],
+        "id": "npcdefaultlook-closedisable-while-navigating",
+        "source_line": 27,
+        "text": "寻路时是否禁用注视附近玩家",
+        "block": 0,
+        "line": 27,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "default",
+          "talk-close"
+        ],
+        "id": "npcdefaulttalk-close",
+        "source_line": 28,
+        "text": "",
+        "block": 0,
+        "line": 29,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "default",
+          "talk-close",
+          "random-talker"
+        ],
+        "id": "npcdefaulttalk-closerandom-talker",
+        "source_line": 30,
+        "text": "是否默认与附近玩家交谈",
+        "block": 0,
+        "line": 30,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "default",
+          "talk-close",
+          "enabled"
+        ],
+        "id": "npcdefaulttalk-closeenabled",
+        "source_line": 31,
+        "text": "",
+        "block": 0,
+        "line": 32,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "default",
+          "talk-close",
+          "range"
+        ],
+        "id": "npcdefaulttalk-closerange",
+        "source_line": 33,
+        "text": "与附近玩家交谈的默认范围，单位为方块",
+        "block": 0,
+        "line": 33,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "default",
+          "talk-close",
+          "text"
+        ],
+        "id": "npcdefaulttalk-closetext",
+        "source_line": 34,
+        "text": "",
+        "block": 0,
+        "line": 35,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "default",
+          "spawn-invincibility-duration"
+        ],
+        "id": "npcdefaultspawn-invincibility-duration",
+        "source_line": 37,
+        "text": "实体生成后的默认无敌时长，Minecraft 默认值为 20 tick",
+        "block": 0,
+        "line": 37,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "default",
+          "npc-cost"
+        ],
+        "id": "npcdefaultnpc-cost",
+        "source_line": 39,
+        "text": "创建 NPC 的默认费用",
+        "block": 0,
+        "line": 39,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "default",
+          "reset-yaw-on-spawn"
+        ],
+        "id": "npcdefaultreset-yaw-on-spawn",
+        "source_line": 42,
+        "text": "生成时是否重置 NPC 的水平朝向（yaw）\n由于 Minecraft 的限制，目前通过挥臂动画实现",
+        "block": 0,
+        "line": 41,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "default",
+          "enable-scoreboard-teams"
+        ],
+        "id": "npcdefaultenable-scoreboard-teams",
+        "source_line": 43,
+        "text": "",
+        "block": 0,
+        "line": 44,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "chat"
+        ],
+        "id": "npcchat",
+        "source_line": 44,
+        "text": "",
+        "block": 0,
+        "line": 45,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "chat",
+          "options"
+        ],
+        "id": "npcchatoptions",
+        "source_line": 45,
+        "text": "",
+        "block": 0,
+        "line": 46,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "chat",
+          "options",
+          "bystanders-hear-targeted-chat"
+        ],
+        "id": "npcchatoptionsbystanders-hear-targeted-chat",
+        "source_line": 47,
+        "text": "即使文本是对特定玩家说的，附近玩家是否也能听到",
+        "block": 0,
+        "line": 47,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "chat",
+          "options",
+          "max-number-of-targets-to-show"
+        ],
+        "id": "npcchatoptionsmax-number-of-targets-to-show",
+        "source_line": 49,
+        "text": "向旁观者显示的目标名称数量",
+        "block": 0,
+        "line": 49,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "chat",
+          "options",
+          "multiple-targets-format"
+        ],
+        "id": "npcchatoptionsmultiple-targets-format",
+        "source_line": 50,
+        "text": "",
+        "block": 0,
+        "line": 51,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "chat",
+          "options",
+          "range"
+        ],
+        "id": "npcchatoptionsrange",
+        "source_line": 52,
+        "text": "附近玩家的范围，单位为方块",
+        "block": 0,
+        "line": 52,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "chat",
+          "options",
+          "talk-to-npcs"
+        ],
+        "id": "npcchatoptionstalk-to-npcs",
+        "source_line": 54,
+        "text": "是否在与玩家交谈之外，也与 NPC 交谈（从而让旁观者也能听到）",
+        "block": 0,
+        "line": 54,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "chat",
+          "format"
+        ],
+        "id": "npcchatformat",
+        "source_line": 55,
+        "text": "",
+        "block": 0,
+        "line": 56,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "chat",
+          "format",
+          "no-targets"
+        ],
+        "id": "npcchatformatno-targets",
+        "source_line": 57,
+        "text": "默认文本格式（支持占位符）",
+        "block": 0,
+        "line": 57,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "chat",
+          "format",
+          "with-target-to-bystanders"
+        ],
+        "id": "npcchatformatwith-target-to-bystanders",
+        "source_line": 59,
+        "text": "附近玩家看到的默认文本格式（支持占位符）",
+        "block": 0,
+        "line": 59,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "chat",
+          "format",
+          "to-target"
+        ],
+        "id": "npcchatformatto-target",
+        "source_line": 61,
+        "text": "面向指定对象的文本的默认格式（支持占位符）",
+        "block": 0,
+        "line": 61,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "chat",
+          "format",
+          "with-targets-to-bystanders"
+        ],
+        "id": "npcchatformatwith-targets-to-bystanders",
+        "source_line": 63,
+        "text": "附近玩家看到的默认文本格式（支持占位符）",
+        "block": 0,
+        "line": 63,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "pathfinding"
+        ],
+        "id": "npcpathfinding",
+        "source_line": 64,
+        "text": "",
+        "block": 1,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "pathfinding",
+          "citizens"
+        ],
+        "id": "npcpathfindingcitizens",
+        "source_line": 65,
+        "text": "",
+        "block": 1,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "pathfinding",
+          "citizens",
+          "blocks-per-tick"
+        ],
+        "id": "npcpathfindingcitizensblocks-per-tick",
+        "source_line": 67,
+        "text": "每 tick 进行寻路计算的方块数量",
+        "block": 1,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "pathfinding",
+          "citizens",
+          "async-chunk-cache-expiry"
+        ],
+        "id": "npcpathfindingcitizensasync-chunk-cache-expiry",
+        "source_line": 70,
+        "text": "异步寻路使用的区块在内存中的保留时长。\n如果预计区块会在寻路期间频繁变化，请减小此值；如果区块很少变化，可增大此值，但会占用更多内存。",
+        "block": 1,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "pathfinding",
+          "citizens",
+          "check-bounding-boxes"
+        ],
+        "id": "npcpathfindingcitizenscheck-bounding-boxes",
+        "source_line": 72,
+        "text": "寻路时是否检查碰撞箱，例如穿过栅栏间隙、门内或其他半格空间时",
+        "block": 1,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "pathfinding",
+          "citizens",
+          "experimental-jumps"
+        ],
+        "id": "npcpathfindingcitizensexperimental-jumps",
+        "source_line": 75,
+        "text": "寻路时是否模拟跳跃；会增加寻路的 CPU 开销。\n推荐使用异步寻路器。目前仍为实验性功能。",
+        "block": 1,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "pathfinding",
+          "citizens",
+          "maximum-search-blocks"
+        ],
+        "id": "npcpathfindingcitizensmaximum-search-blocks",
+        "source_line": 77,
+        "text": "寻路时最多检查的方块数量",
+        "block": 1,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "pathfinding",
+          "citizens",
+          "open-doors"
+        ],
+        "id": "npcpathfindingcitizensopen-doors",
+        "source_line": 79,
+        "text": "寻路时是否开门（也应在通过后关门）",
+        "block": 1,
+        "line": 16,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "pathfinding",
+          "debug-paths"
+        ],
+        "id": "npcpathfindingdebug-paths",
+        "source_line": 81,
+        "text": "通过显示虚假的目标方块调试寻路",
+        "block": 1,
+        "line": 18,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "pathfinding",
+          "default-destination-teleport-margin"
+        ],
+        "id": "npcpathfindingdefault-destination-teleport-margin",
+        "source_line": 84,
+        "text": "NPC 距离目的地达到此默认距离时，会直接传送到目的地，单位为方块\n适用于需要精确到达目的地的情况",
+        "block": 1,
+        "line": 20,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "pathfinding",
+          "default-distance-margin"
+        ],
+        "id": "npcpathfindingdefault-distance-margin",
+        "source_line": 87,
+        "text": "NPC 移动到距离路径终点多远时视为路径已走完，默认移动距离以方块为单位\n注意：这与 path-distance-margin 指定的寻路距离不同",
+        "block": 1,
+        "line": 23,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "pathfinding",
+          "default-path-distance-margin"
+        ],
+        "id": "npcpathfindingdefault-path-distance-margin",
+        "source_line": 91,
+        "text": "NPC 判定寻路完成时使用的默认寻路距离，单位为方块\n注意：这与 distance-margin 指定的移动距离不同\n如果想尝试精确寻路到目标目的地，请设为 0",
+        "block": 1,
+        "line": 26,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "pathfinding",
+          "update-path-rate"
+        ],
+        "id": "npcpathfindingupdate-path-rate",
+        "source_line": 93,
+        "text": "目标为实体等动态目标时，重新寻路的间隔",
+        "block": 1,
+        "line": 30,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "pathfinding",
+          "default-range-blocks"
+        ],
+        "id": "npcpathfindingdefault-range-blocks",
+        "source_line": 96,
+        "text": "默认寻路范围，单位为方块\n为避免卡顿，不宜设得过高；可尝试将路径分成较短的路段进行寻路",
+        "block": 1,
+        "line": 32,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "pathfinding",
+          "default-stationary-duration"
+        ],
+        "id": "npcpathfindingdefault-stationary-duration",
+        "source_line": 98,
+        "text": "NPC 在同一位置停留多久后，会判定自身卡住且寻路失败的默认时长",
+        "block": 1,
+        "line": 35,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "pathfinding",
+          "straight-line-targeting-distance"
+        ],
+        "id": "npcpathfindingstraight-line-targeting-distance",
+        "source_line": 101,
+        "text": "NPC 在距离目标多远时会停止寻路，改为直接朝目标行走，单位为方块\n目前仅适用于实体等动态目标",
+        "block": 1,
+        "line": 37,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "pathfinding",
+          "default-stuck-action"
+        ],
+        "id": "npcpathfindingdefault-stuck-action",
+        "source_line": 104,
+        "text": "NPC 找不到路径或在同一方块中停留过久时，默认执行的动作\n支持的选项为：'teleport to destination' 或 'none'",
+        "block": 1,
+        "line": 40,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "pathfinding",
+          "minecraft"
+        ],
+        "id": "npcpathfindingminecraft",
+        "source_line": 105,
+        "text": "",
+        "block": 1,
+        "line": 43,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "pathfinding",
+          "minecraft",
+          "disable-fallback-navigation"
+        ],
+        "id": "npcpathfindingminecraftdisable-fallback-navigation",
+        "source_line": 108,
+        "text": "寻路到某个方块时，如果找不到直达路径，Minecraft 会选择一个“足够接近”的位置\n默认禁用",
+        "block": 1,
+        "line": 44,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "pathfinding",
+          "minecraft",
+          "maximum-search-blocks"
+        ],
+        "id": "npcpathfindingminecraftmaximum-search-blocks",
+        "source_line": 110,
+        "text": "寻路时最多检查的方块数量",
+        "block": 1,
+        "line": 47,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "pathfinding",
+          "attack-range"
+        ],
+        "id": "npcpathfindingattack-range",
+        "source_line": 112,
+        "text": "开始攻击目标前的距离范围，单位为方块",
+        "block": 1,
+        "line": 49,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "pathfinding",
+          "allowed-fall-distance"
+        ],
+        "id": "npcpathfindingallowed-fall-distance",
+        "source_line": 114,
+        "text": "寻路时默认允许的最大下落距离；设为 -1 使用默认值",
+        "block": 1,
+        "line": 51,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "pathfinding",
+          "pathfinder-type"
+        ],
+        "id": "npcpathfindingpathfinder-type",
+        "source_line": 118,
+        "text": "寻路器类型。\n可选值：CITIZENS、CITIZENS_ASYNC 或 MINECRAFT。\nCITIZENS_ASYNC 是速度更快的新选项，但需要多个处理器核心和更多内存。",
+        "block": 1,
+        "line": 53,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "controllable"
+        ],
+        "id": "npccontrollable",
+        "source_line": 119,
+        "text": "",
+        "block": 1,
+        "line": 57,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "controllable",
+          "ground-direction-modifier"
+        ],
+        "id": "npccontrollableground-direction-modifier",
+        "source_line": 121,
+        "text": "在地面上控制 NPC 时，移动速度的提升百分比",
+        "block": 1,
+        "line": 58,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "controllable",
+          "max-flying-speed"
+        ],
+        "id": "npccontrollablemax-flying-speed",
+        "source_line": 123,
+        "text": "可操控 NPC 能达到的最大飞行速度，使用 Minecraft 速度单位",
+        "block": 1,
+        "line": 60,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "controllable",
+          "max-ground-speed"
+        ],
+        "id": "npccontrollablemax-ground-speed",
+        "source_line": 125,
+        "text": "可操控 NPC 能达到的最大速度，使用 Minecraft 速度单位",
+        "block": 1,
+        "line": 62,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "controllable",
+          "use-boat-controls"
+        ],
+        "id": "npccontrollableuse-boat-controls",
+        "source_line": 127,
+        "text": "是否通过移动操作改变载具方向，而不是使用侧移操作",
+        "block": 1,
+        "line": 64,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "hologram"
+        ],
+        "id": "npchologram",
+        "source_line": 128,
+        "text": "",
+        "block": 1,
+        "line": 66,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "hologram",
+          "default-renderer"
+        ],
+        "id": "npchologramdefault-renderer",
+        "source_line": 136,
+        "text": "全息文字的默认渲染方式，必须为以下选项之一：\ninteraction - 需要 1.19+，相比 display 更接近原生名称标签的效果\ndisplay - 支持不同颜色的背景\ndisplay_vehicle - 将 display 实体作为乘客附在 NPC 上\nareaeffectcloud - 最稳妥的选项\narmorstand - 稳妥程度仅次于上一项，客户端上存在碰撞箱\narmorstand_vehicle - 将盔甲架作为乘客附在 NPC 上，仅适用于名称标签",
+        "block": 1,
+        "line": 67,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "hologram",
+          "default-renderer-settings"
+        ],
+        "id": "npchologramdefault-renderer-settings",
+        "source_line": 137,
+        "text": "",
+        "block": 1,
+        "line": 75,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "hologram",
+          "default-renderer-settings",
+          "seeThrough"
+        ],
+        "id": "npchologramdefault-renderer-settingsseethrough",
+        "source_line": 138,
+        "text": "",
+        "block": 1,
+        "line": 76,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "hologram",
+          "default-renderer-settings",
+          "shadowed"
+        ],
+        "id": "npchologramdefault-renderer-settingsshadowed",
+        "source_line": 139,
+        "text": "",
+        "block": 1,
+        "line": 77,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "hologram",
+          "default-renderer-settings",
+          "billboard"
+        ],
+        "id": "npchologramdefault-renderer-settingsbillboard",
+        "source_line": 140,
+        "text": "",
+        "block": 1,
+        "line": 78,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "hologram",
+          "default-renderer-settings",
+          "interpolationDelay"
+        ],
+        "id": "npchologramdefault-renderer-settingsinterpolationdelay",
+        "source_line": 141,
+        "text": "",
+        "block": 1,
+        "line": 79,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "hologram",
+          "default-renderer-settings",
+          "interpolationDuration"
+        ],
+        "id": "npchologramdefault-renderer-settingsinterpolationduration",
+        "source_line": 142,
+        "text": "",
+        "block": 1,
+        "line": 80,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "hologram",
+          "default-line-height"
+        ],
+        "id": "npchologramdefault-line-height",
+        "source_line": 144,
+        "text": "全息文字各行之间的默认间距",
+        "block": 1,
+        "line": 81,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "hologram",
+          "always-update-position"
+        ],
+        "id": "npchologramalways-update-position",
+        "source_line": 146,
+        "text": "是否始终每 tick 更新全息文字的位置",
+        "block": 1,
+        "line": 83,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "hologram",
+          "update-rate"
+        ],
+        "id": "npchologramupdate-rate",
+        "source_line": 148,
+        "text": "更新全息名称的间隔（包括占位符）",
+        "block": 1,
+        "line": 85,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "limits"
+        ],
+        "id": "npclimits",
+        "source_line": 149,
+        "text": "",
+        "block": 1,
+        "line": 87,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "limits",
+          "default-limit"
+        ],
+        "id": "npclimitsdefault-limit",
+        "source_line": 151,
+        "text": "单个玩家默认最多可拥有的 NPC 数量（授予 citizens ignore-limits 权限可跳过此检查）",
+        "block": 1,
+        "line": 88,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "limits",
+          "max-permission-checks"
+        ],
+        "id": "npclimitsmax-permission-checks",
+        "source_line": 154,
+        "text": "创建 NPC 时要检查的权限数量\n仅在通过权限设置的数量上限大于此值时才需修改",
+        "block": 1,
+        "line": 90,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "text"
+        ],
+        "id": "npctext",
+        "source_line": 155,
+        "text": "",
+        "block": 1,
+        "line": 93,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "text",
+          "default-random-text-delay-max"
+        ],
+        "id": "npctextdefault-random-text-delay-max",
+        "source_line": 157,
+        "text": "与玩家交谈的默认最大间隔",
+        "block": 1,
+        "line": 94,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "text",
+          "default-random-text-delay-min"
+        ],
+        "id": "npctextdefault-random-text-delay-min",
+        "source_line": 159,
+        "text": "与玩家交谈的默认最小间隔",
+        "block": 1,
+        "line": 96,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "text",
+          "speech-bubble-duration"
+        ],
+        "id": "npctextspeech-bubble-duration",
+        "source_line": 161,
+        "text": "对话气泡的默认显示时长",
+        "block": 1,
+        "line": 98,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "text",
+          "talk-item"
+        ],
+        "id": "npctexttalk-item",
+        "source_line": 163,
+        "text": "用于交谈的物品过滤条件",
+        "block": 1,
+        "line": 100,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "tablist"
+        ],
+        "id": "npctablist",
+        "source_line": 164,
+        "text": "",
+        "block": 2,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "tablist",
+          "disable"
+        ],
+        "id": "npctablistdisable",
+        "source_line": 166,
+        "text": "是否从 Tab 玩家列表中移除 NPC",
+        "block": 2,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "tablist",
+          "remove-packet-delay"
+        ],
+        "id": "npctablistremove-packet-delay",
+        "source_line": 168,
+        "text": "发送 Tab 玩家列表移除数据包前的等待时长",
+        "block": 2,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "follow"
+        ],
+        "id": "npcfollow",
+        "source_line": 169,
+        "text": "",
+        "block": 2,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "follow",
+          "teleport-across-worlds"
+        ],
+        "id": "npcfollowteleport-across-worlds",
+        "source_line": 171,
+        "text": "/npc follow 是否通过跨世界传送跟随目标",
+        "block": 2,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "skins"
+        ],
+        "id": "npcskins",
+        "source_line": 172,
+        "text": "",
+        "block": 2,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "skins",
+          "player-join-update-delay"
+        ],
+        "id": "npcskinsplayer-join-update-delay",
+        "source_line": 174,
+        "text": "向刚加入的玩家发送皮肤前的等待时长",
+        "block": 2,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "skins",
+          "max-retries"
+        ],
+        "id": "npcskinsmax-retries",
+        "source_line": 176,
+        "text": "尝试加载 NPC 皮肤的次数（由于 Minecraft 会限制皮肤请求频率，通常不应少于 5 次",
+        "block": 2,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "skins",
+          "try-fetch-default-skin"
+        ],
+        "id": "npcskinstry-fetch-default-skin",
+        "source_line": 179,
+        "text": "是否尝试为所有新建 NPC 查找对应的玩家皮肤\n如果设为 false，创建名为 Dinnerbone 的 NPC 时，该 NPC 会使用默认皮肤（steve/alex 等），而不会尝试获取 Dinnerbone 的皮肤",
+        "block": 2,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "skins",
+          "retry-delay"
+        ],
+        "id": "npcskinsretry-delay",
+        "source_line": 181,
+        "text": "再次尝试皮肤请求前的等待时长（通常是因为 Mojang 限制了请求频率）",
+        "block": 2,
+        "line": 18,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "skins",
+          "rotation-update-degrees"
+        ],
+        "id": "npcskinsrotation-update-degrees",
+        "source_line": 182,
+        "text": "",
+        "block": 2,
+        "line": 20,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "skins",
+          "use-latest-by-default"
+        ],
+        "id": "npcskinsuse-latest-by-default",
+        "source_line": 184,
+        "text": "是否每隔一段时间从 Minecraft 获取新皮肤",
+        "block": 2,
+        "line": 21,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "skins",
+          "view-distance"
+        ],
+        "id": "npcskinsview-distance",
+        "source_line": 186,
+        "text": "可视距离，单位为方块",
+        "block": 2,
+        "line": 23,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "skins",
+          "placeholder-update-frequency"
+        ],
+        "id": "npcskinsplaceholder-update-frequency",
+        "source_line": 188,
+        "text": "皮肤占位符的更新间隔",
+        "block": 2,
+        "line": 25,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "chunks"
+        ],
+        "id": "npcchunks",
+        "source_line": 189,
+        "text": "",
+        "block": 2,
+        "line": 27,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "chunks",
+          "always-keep-loaded"
+        ],
+        "id": "npcchunksalways-keep-loaded",
+        "source_line": 191,
+        "text": "是否保持 NPC 所在区块加载",
+        "block": 2,
+        "line": 28,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "commands"
+        ],
+        "id": "npccommands",
+        "source_line": 192,
+        "text": "",
+        "block": 2,
+        "line": 30,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "commands",
+          "global-cooldown"
+        ],
+        "id": "npccommandsglobal-cooldown",
+        "source_line": 194,
+        "text": "命令再次可用前的全局冷却时间，必须以秒为单位",
+        "block": 2,
+        "line": 31,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "commands",
+          "error-messages"
+        ],
+        "id": "npccommandserror-messages",
+        "source_line": 195,
+        "text": "",
+        "block": 2,
+        "line": 33,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "commands",
+          "error-messages",
+          "global-maximum-times-used"
+        ],
+        "id": "npccommandserror-messagesglobal-maximum-times-used",
+        "source_line": 196,
+        "text": "",
+        "block": 2,
+        "line": 34,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "commands",
+          "error-messages",
+          "maximum-times-used"
+        ],
+        "id": "npccommandserror-messagesmaximum-times-used",
+        "source_line": 197,
+        "text": "",
+        "block": 2,
+        "line": 35,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "commands",
+          "error-messages",
+          "missing-item"
+        ],
+        "id": "npccommandserror-messagesmissing-item",
+        "source_line": 198,
+        "text": "",
+        "block": 2,
+        "line": 36,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "commands",
+          "error-messages",
+          "no-permission"
+        ],
+        "id": "npccommandserror-messagesno-permission",
+        "source_line": 199,
+        "text": "",
+        "block": 2,
+        "line": 37,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "commands",
+          "error-messages",
+          "not-enough-experience"
+        ],
+        "id": "npccommandserror-messagesnot-enough-experience",
+        "source_line": 200,
+        "text": "",
+        "block": 2,
+        "line": 38,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "commands",
+          "error-messages",
+          "not-enough-money"
+        ],
+        "id": "npccommandserror-messagesnot-enough-money",
+        "source_line": 201,
+        "text": "",
+        "block": 2,
+        "line": 39,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "commands",
+          "error-messages",
+          "on-cooldown"
+        ],
+        "id": "npccommandserror-messageson-cooldown",
+        "source_line": 202,
+        "text": "",
+        "block": 2,
+        "line": 40,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "commands",
+          "error-messages",
+          "on-global-cooldown"
+        ],
+        "id": "npccommandserror-messageson-global-cooldown",
+        "source_line": 203,
+        "text": "",
+        "block": 2,
+        "line": 41,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "movement"
+        ],
+        "id": "npcmovement",
+        "source_line": 204,
+        "text": "",
+        "block": 2,
+        "line": 42,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "movement",
+          "water-speed-modifier"
+        ],
+        "id": "npcmovementwater-speed-modifier",
+        "source_line": 206,
+        "text": "在水中时移动速度的提升百分比",
+        "block": 2,
+        "line": 43,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "use-packet-holograms"
+        ],
+        "id": "npcuse-packet-holograms",
+        "source_line": 208,
+        "text": "使用数据包 NPC 显示名称全息文字（实验性功能）",
+        "block": 2,
+        "line": 45,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "packets"
+        ],
+        "id": "npcpackets",
+        "source_line": 209,
+        "text": "",
+        "block": 2,
+        "line": 47,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "packets",
+          "update-delay"
+        ],
+        "id": "npcpacketsupdate-delay",
+        "source_line": 210,
+        "text": "",
+        "block": 2,
+        "line": 48,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "player"
+        ],
+        "id": "npcplayer",
+        "source_line": 211,
+        "text": "",
+        "block": 2,
+        "line": 49,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "player",
+          "remove-from-list"
+        ],
+        "id": "npcplayerremove-from-list",
+        "source_line": 213,
+        "text": "是否从 Java 的玩家列表中移除 NPC",
+        "block": 2,
+        "line": 50,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "selection"
+        ],
+        "id": "npcselection",
+        "source_line": 214,
+        "text": "",
+        "block": 2,
+        "line": 52,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "selection",
+          "item"
+        ],
+        "id": "npcselectionitem",
+        "source_line": 216,
+        "text": "选中 NPC 时默认需要手持的物品",
+        "block": 2,
+        "line": 53,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "selection",
+          "message"
+        ],
+        "id": "npcselectionmessage",
+        "source_line": 217,
+        "text": "",
+        "block": 2,
+        "line": 55,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "server-ownership"
+        ],
+        "id": "npcserver-ownership",
+        "source_line": 219,
+        "text": "是否由服务器拥有 NPC，而非由各个玩家拥有",
+        "block": 2,
+        "line": 56,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "shops"
+        ],
+        "id": "npcshops",
+        "source_line": 220,
+        "text": "",
+        "block": 2,
+        "line": 58,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "shops",
+          "default-item"
+        ],
+        "id": "npcshopsdefault-item",
+        "source_line": 221,
+        "text": "",
+        "block": 2,
+        "line": 59,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "shops",
+          "default-item",
+          "max-repeats-on-shift-click"
+        ],
+        "id": "npcshopsdefault-itemmax-repeats-on-shift-click",
+        "source_line": 222,
+        "text": "",
+        "block": 2,
+        "line": 60,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "shops",
+          "default-item",
+          "result-message"
+        ],
+        "id": "npcshopsdefault-itemresult-message",
+        "source_line": 223,
+        "text": "",
+        "block": 2,
+        "line": 61,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "shops",
+          "default-item",
+          "already-purchased-message"
+        ],
+        "id": "npcshopsdefault-itemalready-purchased-message",
+        "source_line": 224,
+        "text": "",
+        "block": 2,
+        "line": 62,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "shops",
+          "default-item",
+          "lore"
+        ],
+        "id": "npcshopsdefault-itemlore",
+        "source_line": 225,
+        "text": "",
+        "block": 2,
+        "line": 63,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "shops",
+          "default-item",
+          "name"
+        ],
+        "id": "npcshopsdefault-itemname",
+        "source_line": 226,
+        "text": "",
+        "block": 2,
+        "line": 64,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "shops",
+          "default-item",
+          "times-purchasable"
+        ],
+        "id": "npcshopsdefault-itemtimes-purchasable",
+        "source_line": 227,
+        "text": "",
+        "block": 2,
+        "line": 65,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "shops",
+          "default-item",
+          "cost-message"
+        ],
+        "id": "npcshopsdefault-itemcost-message",
+        "source_line": 228,
+        "text": "",
+        "block": 2,
+        "line": 66,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "shops",
+          "default-item",
+          "click-to-confirm-message"
+        ],
+        "id": "npcshopsdefault-itemclick-to-confirm-message",
+        "source_line": 229,
+        "text": "",
+        "block": 2,
+        "line": 67,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "shops",
+          "global-view-permission"
+        ],
+        "id": "npcshopsglobal-view-permission",
+        "source_line": 232,
+        "text": "玩家查看任意 NPC 商店所需的全局查看权限\n默认为空（不需要权限）。",
+        "block": 2,
+        "line": 68,
+        "heading": false
+      },
+      {
+        "path": [
+          "npc",
+          "shops",
+          "add-default-item-description"
+        ],
+        "id": "npcshopsadd-default-item-description",
+        "source_line": 234,
+        "text": "是否默认为所有商店物品添加默认物品描述占位符。",
+        "block": 2,
+        "line": 71,
+        "heading": false
+      },
+      {
+        "path": [
+          "general"
+        ],
+        "id": "general",
+        "source_line": 235,
+        "text": "",
+        "block": 3,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "general",
+          "authlib"
+        ],
+        "id": "generalauthlib",
+        "source_line": 236,
+        "text": "",
+        "block": 3,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "general",
+          "authlib",
+          "profile-url"
+        ],
+        "id": "generalauthlibprofile-url",
+        "source_line": 238,
+        "text": "使用此 URL 查找 gameprofiles",
+        "block": 3,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "general",
+          "debug-file"
+        ],
+        "id": "generaldebug-file",
+        "source_line": 240,
+        "text": "将 Citizens 的调试输出发送到指定文件",
+        "block": 3,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "general",
+          "debug-mode"
+        ],
+        "id": "generaldebug-mode",
+        "source_line": 242,
+        "text": "启用 Citizens 调试",
+        "block": 3,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "general",
+          "wait-for-entity-spawn"
+        ],
+        "id": "generalwait-for-entity-spawn",
+        "source_line": 245,
+        "text": "只有在区块从磁盘加载完成后才会生成实体\n默认等待区块加载一秒；如果磁盘较慢，可增大此值",
+        "block": 3,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "general",
+          "color-scheme"
+        ],
+        "id": "generalcolor-scheme",
+        "source_line": 246,
+        "text": "",
+        "block": 3,
+        "line": 12,
+        "heading": false
+      },
+      {
+        "path": [
+          "general",
+          "color-scheme",
+          "message-error"
+        ],
+        "id": "generalcolor-schememessage-error",
+        "source_line": 247,
+        "text": "",
+        "block": 3,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "general",
+          "color-scheme",
+          "message-highlight"
+        ],
+        "id": "generalcolor-schememessage-highlight",
+        "source_line": 248,
+        "text": "",
+        "block": 3,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "general",
+          "color-scheme",
+          "message"
+        ],
+        "id": "generalcolor-schememessage",
+        "source_line": 249,
+        "text": "",
+        "block": 3,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "general",
+          "translation"
+        ],
+        "id": "generaltranslation",
+        "source_line": 250,
+        "text": "",
+        "block": 3,
+        "line": 16,
+        "heading": false
+      },
+      {
+        "path": [
+          "general",
+          "translation",
+          "locale"
+        ],
+        "id": "generaltranslationlocale",
+        "source_line": 252,
+        "text": "控制翻译文件，默认使用系统语言；如果需要英语，请设为 'en'",
+        "block": 3,
+        "line": 17,
+        "heading": false
+      },
+      {
+        "path": [
+          "general",
+          "reset-formatting-on-color-change"
+        ],
+        "id": "generalreset-formatting-on-color-change",
+        "source_line": 255,
+        "text": "颜色改变时是否重置文本格式。\n模拟旧版颜色代码的行为。",
+        "block": 3,
+        "line": 19,
+        "heading": false
+      },
+      {
+        "path": [
+          "general",
+          "resource-pack-path"
+        ],
+        "id": "generalresource-pack-path",
+        "source_line": 257,
+        "text": "保存资源包的路径",
+        "block": 3,
+        "line": 22,
+        "heading": false
+      },
+      {
+        "path": [
+          "general",
+          "reload-warning-enabled"
+        ],
+        "id": "generalreload-warning-enabled",
+        "source_line": 258,
+        "text": "",
+        "block": 3,
+        "line": 24,
+        "heading": false
+      },
+      {
+        "path": [
+          "advanced"
+        ],
+        "id": "advanced",
+        "source_line": 259,
+        "text": "",
+        "block": 4,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "advanced",
+          "check-minecraft-version"
+        ],
+        "id": "advancedcheck-minecraft-version",
+        "source_line": 261,
+        "text": "是否检查 Minecraft 版本兼容性（请勿修改）",
+        "block": 4,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "storage"
+        ],
+        "id": "storage",
+        "source_line": 262,
+        "text": "",
+        "block": 5,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "storage",
+          "save-task-frequency"
+        ],
+        "id": "storagesave-task-frequency",
+        "source_line": 264,
+        "text": "将 NPC 保存到磁盘的间隔",
+        "block": 5,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "storage",
+          "file"
+        ],
+        "id": "storagefile",
+        "source_line": 265,
+        "text": "",
+        "block": 5,
+        "line": 4,
+        "heading": false
+      }
+    ]
+  },
+  {
+    "file": "configuration/templates/citizens/templates.md",
+    "title": "templates/citizens/templates.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "b1f019cd136e54fdf173abfdfbaf8cfc0c3fb8a058f19bd3d0ebf5f64985e298",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "example"
+        ],
+        "id": "example",
+        "source_line": 0,
+        "text": "",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "example",
+          "commands"
+        ],
+        "id": "examplecommands",
+        "source_line": 1,
+        "text": "",
+        "block": 0,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "example",
+          "commands",
+          "on_template_apply"
+        ],
+        "id": "examplecommandson_template_apply",
+        "source_line": 2,
+        "text": "",
+        "block": 0,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "behavior_tree_example"
+        ],
+        "id": "behavior_tree_example",
+        "source_line": 5,
+        "text": "",
+        "block": 1,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "behavior_tree_example",
+          "traits"
+        ],
+        "id": "behavior_tree_exampletraits",
+        "source_line": 6,
+        "text": "",
+        "block": 1,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "behavior_tree_example",
+          "traits",
+          "0",
+          "name"
+        ],
+        "id": "behavior_tree_exampletraits0name",
+        "source_line": 8,
+        "text": "",
+        "block": 1,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "behavior_tree_example",
+          "traits",
+          "0",
+          "tree"
+        ],
+        "id": "behavior_tree_exampletraits0tree",
+        "source_line": 9,
+        "text": "",
+        "block": 1,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "behavior_tree_example",
+          "traits",
+          "0",
+          "tree",
+          "sequence"
+        ],
+        "id": "behavior_tree_exampletraits0treesequence",
+        "source_line": 10,
+        "text": "",
+        "block": 1,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "behavior_tree_example",
+          "traits",
+          "0",
+          "tree",
+          "sequence",
+          "0",
+          "if `npc.spawned`"
+        ],
+        "id": "behavior_tree_exampletraits0treesequence0if-npcspawned",
+        "source_line": 11,
+        "text": "",
+        "block": 1,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "behavior_tree_example",
+          "traits",
+          "0",
+          "tree",
+          "sequence",
+          "0",
+          "if `npc.spawned`",
+          "1",
+          "loop `memory.get('patrol_count', 0) < 3`"
+        ],
+        "id": "behavior_tree_exampletraits0treesequence0if-npcspawned1loop-memorygetpatrol_count-0-3",
+        "source_line": 13,
+        "text": "",
+        "block": 1,
+        "line": 9,
+        "heading": false
+      }
+    ]
+  },
+  {
+    "file": "configuration/index.md",
+    "title": "配置文件",
+    "source_kind": "imported-configuration",
+    "source_sha256": "b1f019cd136e54fdf173abfdfbaf8cfc0c3fb8a058f19bd3d0ebf5f64985e298",
+    "translation_review": "reviewed",
+    "anchors": []
+  }
+]

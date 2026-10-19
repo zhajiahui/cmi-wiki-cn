@@ -1,0 +1,31 @@
+{
+  "project": "bStats",
+  "version": "随包未标明版本",
+  "source_date": "2026-10-19",
+  "source_kind": "user-supplied-configuration-examples",
+  "index": true,
+  "files": [
+    {
+      "name": "config.yml",
+      "page": "configuration/config.md",
+      "language": "yaml",
+      "description": "主配置。",
+      "code": "enabled: true\nserverUuid: \"00000000-0000-0000-0000-000000000000\"\nlogFailedRequests: false\nserverUUID: \"00000000-0000-0000-0000-000000000000\"\nlogSentData: false\nlogResponseStatusText: false\n",
+      "redacted_paths": [
+        {
+          "path": [
+            "serverUuid"
+          ],
+          "placeholder": "00000000-0000-0000-0000-000000000000"
+        },
+        {
+          "path": [
+            "serverUUID"
+          ],
+          "placeholder": "00000000-0000-0000-0000-000000000000"
+        }
+      ],
+      "source_sha256": "200eda5c7b4b79bbb5325721cf396a27930dfce5c6078a487a27be7110b11ade"
+    }
+  ]
+}

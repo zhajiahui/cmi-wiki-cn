@@ -1,0 +1,6 @@
+site_name: ProtocolLib 中文资料
+nav:
+- 插件说明: index.md
+- 配置文件（5.5.0-SNAPSHOT-d89a5de）:
+  - 配置索引: configuration/index.md
+  - config.yml: configuration/config.md

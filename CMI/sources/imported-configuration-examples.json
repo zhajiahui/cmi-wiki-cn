@@ -1,0 +1,18 @@
+{
+  "project": "CMI",
+  "version": "9.8.10.4",
+  "source_date": "2026-10-19",
+  "source_kind": "user-supplied-configuration-examples",
+  "index": false,
+  "files": [
+    {
+      "name": "CustomText/rules.txt",
+      "page": "configuration/rules.md",
+      "language": "text",
+      "description": "自定义文本示例。",
+      "code": "<AutoPage>\n&6玩家规则：\n&61. &e禁止恶意破坏\n&62. &e禁止刷屏\n&63. &e禁止发广告\n&64. &e禁止骂人或持续说脏话\n&65. &e禁止恶意捉弄他人或挑起骂战\n&66. &e禁止使用被禁用的物品（Tekkit 规则）\n&67. &e禁止索要 OP、等级或物品\n&68. &e尊重所有玩家\n&69. &e服从管理团队，他们说了算\n&610. &e禁止发表种族歧视或性别歧视言论。\n&611. &e禁止使用模组或作弊工具\n&612. &e禁止发送全大写消息\n&614. &e禁止建造 1x1 柱子\n&613. &e禁止在出生点附近建造\n<NextPage>\n&6版主／管理员规则：\n&61. 负责任地使用授予你的建筑师／版主权限\n&62. 不要为其他玩家生成方块或物品\n&63. 交易时，只买卖通过正常方式获得的物品\n&64. 帮助其他玩家建造时，只能使用通过正常方式获得的物品和方块\n&65. 禁止滥用权限\n",
+      "redacted_paths": [],
+      "source_sha256": "d8dc298cacbe474e45f96fbfefba557dbd97fc440ab512517ac097299057bdd6"
+    }
+  ]
+}

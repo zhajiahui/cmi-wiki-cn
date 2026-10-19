@@ -1,0 +1,456 @@
+---
+title: attribute.yml
+source_kind: imported-configuration
+translation_review: reviewed
+source_file: attribute.yml
+source_version: 3.3.3.6
+---
+
+# attribute.yml
+
+文件：`attribute.yml`。版本：`3.3.3.6`。
+
+随包配置。
+
+## `options` { #options }
+
+```yaml title="attribute.yml · options"
+options:
+  lang: zh_CN
+```
+
+## `attribute` { #attribute }
+
+```yaml title="attribute.yml · attribute（1/3）"
+# 通过插件API新注册的属性也会在此生成相对应节点的配置项
+attribute:
+  # 属性名
+  key:
+    # 攻击与防御类属性
+    attackOrDefense:
+      attack: 物理伤害
+      real_attack: 真实伤害
+      crit: 暴击几率
+      fire: 燃烧几率
+      frozen: 冰冻几率
+      lightning: 雷击几率
+      vampire: 吸血几率
+      armor: 护甲值
+      defense: 物理防御
+      dodge: 闪避几率
+      reflection: 反弹几率
+      remote_immune: 箭伤免疫率
+      testAttribute: 测试脚本属性
+    # 更新类属性(即属性刷新时触发)
+    update:
+      health: 生命力
+      moving: 移速加成
+      restore_ratio: 百分比恢复
+    # 运行类属性(即每隔几秒触发一次)
+    runtime: {}
+    # 其他类属性
+    other:
+      pve_attack: PVE伤害
+      pvp_attack: PVP伤害
+      crit_damage_resist: 暴伤抵抗
+      crit_dodge: 暴击闪避
+      crit_rate: 暴伤倍率
+      crit_resist: 暴击抵抗
+      fire_damage: 燃烧伤害
+      frozen_intensity: 冰冻强度
+      lightning_damage: 雷击伤害
+      vampire_dodge: 吸血闪避
+      vampire_rate: 吸血倍率
+      vampire_resist: 吸血抵抗
+      see_through: 护甲穿透
+      sunder_armor: 破甲几率
+      pve_defense: PVE防御
+      pvp_defense: PVP防御
+      hit: 命中几率
+      reflection_rate: 反弹倍率
+      accumulate_addition: 蓄力加成
+      accumulate_disturb: 蓄力干扰
+      exp_addition: 经验加成
+      restore: 生命恢复
+      shield_block: 盾牌格挡率
+      break_shield: 破盾几率
+      shoot_speed: 箭矢速度
+      shoot_spread: 箭术精准
+      shoot_through: 箭矢穿透率
+      summon_intensity: 召唤强度
+  # 优先级
+  priority:
+    attackOrDefense:
+      attack: 1
+      real_attack: 7
+      crit: 8
+      fire: 10
+      frozen: 11
+      lightning: 3
+      vampire: 4
+      armor: 6
+      defense: 5
+      dodge: 0
+      reflection: 9
+      remote_immune: 1
+      testAttribute: 103
+    update:
+      health: 100
+      moving: 101
+      restore_ratio: 53
+    runtime: {}
+```
+
+```yaml title="attribute.yml · attribute（2/3）"
+attribute:
+  # 属性值生效限制 (超过部分的属性值不生效,但还是可以读取并通过stats查看)
+  value:
+    attack: -1.0
+    other:
+      pve_attack: -1.0
+      pvp_attack: -1.0
+      crit_damage_resist: -1.0
+      crit_dodge: -1.0
+      crit_rate: -1.0
+      crit_resist: -1.0
+      fire_damage: -1.0
+      frozen_intensity: -1.0
+      lightning_damage: -1.0
+      vampire_dodge: -1.0
+      vampire_rate: -1.0
+      vampire_resist: -1.0
+      see_through: -1.0
+      sunder_armor: -1.0
+      pve_defense: -1.0
+      pvp_defense: -1.0
+      hit: -1.0
+      reflection_rate: -1.0
+      accumulate_addition: -1.0
+      accumulate_disturb: -1.0
+      exp_addition: -1.0
+      restore: -1.0
+      shield_block: -1.0
+      break_shield: -1.0
+      shoot_speed: -1.0
+      shoot_spread: -1.0
+      shoot_through: -1.0
+      summon_intensity: -1.0
+    attackOrDefense:
+      real_attack: -1.0
+      attack: -1.0
+      crit: -1.0
+      fire: -1.0
+      frozen: -1.0
+      lightning: -1.0
+      vampire: -1.0
+      armor: -1.0
+      defense: -1.0
+      dodge: -1.0
+      reflection: -1.0
+      remote_immune: -1.0
+      testAttribute: -1.0
+    update:
+      health: -1.0
+      moving: -1.0
+      restore_ratio: -1.0
+  # 战斗力
+  combatPower:
+    attackOrDefense:
+      attack: 1.0
+      real_attack: 5.0
+      crit: 10.0
+      fire: 3.0
+      frozen: 5.0
+      lightning: 10.0
+      vampire: 5.0
+      armor: 1.0
+      defense: 1.0
+      dodge: 3.0
+      reflection: 5.0
+      remote_immune: 5.0
+      testAttribute: 5.0
+    update:
+      health: 5.0
+      moving: 5.0
+      restore_ratio: 2.5
+    runtime: {}
+    other:
+      pve_attack: 1.0
+      pvp_attack: 1.0
+      crit_damage_resist: 1.0
+      crit_dodge: 10.0
+      crit_rate: 5.0
+      crit_resist: 10.0
+      fire_damage: 3.0
+      frozen_intensity: 1.5
+      lightning_damage: 5.0
+      vampire_dodge: 5.0
+      vampire_rate: 3.0
+      vampire_resist: 5.0
+      see_through: 1.0
+      sunder_armor: 1.0
+      pve_defense: 1.0
+      pvp_defense: 1.0
+      hit: 3.0
+      reflection_rate: 3.0
+      accumulate_addition: 10.0
+      accumulate_disturb: 10.0
+      exp_addition: 3.0
+      restore: 2.5
+      shield_block: 5.0
+      break_shield: 5.0
+      shoot_speed: 5.0
+      shoot_spread: 5.0
+      shoot_through: 5.0
+      summon_intensity: 10.0
+```
+
+```yaml title="attribute.yml · attribute（3/3）"
+attribute:
+  # 属性公式
+  # {attackerAttack} 当前 被攻击者 所受伤害(受优先级影响)
+  # {entityAttack} 当前 攻击者 所受伤害(受优先级影响)(例如反弹伤害)
+  # {value} 取得对应属性值
+  # {entityA:属性名} 取得攻击者的对应属性值
+  # {entityB:属性名} 取得被攻击者的对应属性值
+  formula:
+    crit: '{attackerAttack}*({entityA:暴伤倍率}-{entityB:暴伤抵抗})/100'
+    fire: '{entityA:燃烧伤害}'
+    frozen: ({entityB:移速加成}+50)*{entityA:冰冻强度}/100
+    lightning: '{entityA:雷击伤害}'
+    moving: '{value}/500'
+  # 消息
+  message:
+    # 变量说明
+    # {attacker} 攻击者名称
+    # {entity} 被攻击者名称
+    # {attackerDamage} 此次事件 被攻击者 所受最终伤害
+    # {entityDamage} 此次事件 攻击者 所受最终伤害(例如反弹伤害)
+    # {属性变量} 此次事件该属性所造成的属性值 (例 {attack})
+    attack:
+    - 对 {entityB} 造成 {attackerDamage} 点伤害,穿透伤害 {see_through}
+    - '{entityA} 对你造成 {attackerDamage} 点伤害'
+    crit:
+    - '&c暴击!&f 对 {entityB} 额外造成 {crit} 点暴击伤害,最终伤害 {attackerDamage}'
+    - '&c暴击!&f {entityA} 对你额外造成 {crit} 点暴击伤害,最终伤害 {attackerDamage}'
+    fire:
+    - '&6&l燃烧! &f额外造成 {fire} 点燃烧伤害!'
+    - '&6&l燃烧! &f对方对你额外造成 {fire} 点燃烧伤害!'
+    frozen:
+    - 你降低了对方 {frozen} 点移动速度,持续 3 秒!
+    - 对方降低了你 {frozen} 点移动速度,持续 3 秒!
+    lightning:
+    - '&1&l雷击! &f额外造成 {lightning} 点雷击伤害!'
+    - '&1&l雷击! &f对方对你额外造成 {lightning} 点雷击伤害!'
+    vampire:
+    - '&c吸血!&f 吸取并对 {entityB} 的 {vampire} 点生命力伤害!'
+    - '&c吸血!&f 你被 {entityA} 吸取并造成 {vampire} 点生命力伤害!'
+    defense:
+    - X
+    - 你抵消了来自 {entityA} 的 {defense} 点伤害,最终于伤害 {attackerDamage}
+    dodge:
+    - '{entityB} 闪避了你的攻击'
+    - 你避开了 {entityA} 的攻击
+    reflection:
+    - 对方反弹了 {reflection} 点伤害给你.
+    - 你反弹了 {reflection} 点伤害给对方!
+    remote_immune:
+    - 对方免疫了你此次远程伤害!
+    - 你免疫了对方此处远程伤害!
+    testAttribute:
+    - 测试属性伤害 {testAttribute}
+    - 受到测试属性 {testAttribute}
+  # 特别提醒:
+  # 除 other 类属性外的所有属性点支持在这增加提示消息
+  # 节点名格式固定为属性变量名,例如
+  # armor:
+  #  - "对方抵消了你百分之 {armor} 点伤害!"
+  #  - "你抵消了对方百分之 {armor} 点伤害!"
+  # 属性全息提示 (需开启 hologramMessage 功能)
+  # 前置 HolographicDisplays
+  hologram:
+    attack: 造成 {attackerDamage} 点物理伤害
+  # defense: "抵消 {defense} 点伤害"
+  # 属性变量: "内容"
+  options:
+    # 冰冻属性持续时间
+    frozenTime: 3
+    # 玩家闪避冷却间隔,每多少秒内仅允许闪避一次
+    dodgeCooling: 0.0
+    # 吸血属性触发时额外造成吸血伤害(伤害等同吸血量)
+    vampireDamage: true
+    # 默认移动速度
+    defaultMoving: 0.25
+    # 默认生命力
+    # 注意,处于安全考虑,插件系统会强制给予玩家10点生命血量,此次配置可设为0值,但玩家血量会强制为 10 点。
+    # 所以默认生命力是此处 (配置值+10) 例如 90.0 则 90.0+10.0 = 100.0 血量。
+    defaultHealth: 90.0
+    # 是否将生命心数锁定为两排
+    # 关闭该项可解决生命上限提升时受到的伤害抖动问题
+    # 关闭该项后上限提升的同时,生命心数也会变多(建议配合龙核、萌芽覆盖掉,不然挡屏甚至卡住客户端)
+    healthScale: true
+    # RUNTIME类属性的运行间隔(秒)
+    runtimeAttributeTime: 5.0
+    # 生命力恢复间隔(秒)
+    healthRestoreTime: 10.0
+    # 是否开启 HolographicDisplays 全息功能
+    hologramMessage: false
+    # 防御系数(即 (PVE防御+PVP防御+防御力属性生效值的和) * 系数值)
+    defenseCoefficient: 1.0
+    # 攻击系数(即 (PVE攻击+PVP攻击+攻击力属性生效值的和) * 系数值)
+    attackCoefficient: 1.0
+```
+
+## `setting` { #setting }
+
+```yaml title="attribute.yml · setting（1/2）"
+# null
+setting:
+  # 百分比读取属性格式的标志符
+  # 例如 "物理伤害: +100 (%)"
+  percentageReadMark: (%)
+  # 限制属性加载包含下列其中描述的物品(会影响AttributeAPI附属加载属性)
+  limit-attribute-descriptions:
+  - 使物品属性失效
+  # 禁止某行包含列表内字符的描述行加载属性
+  limit-line-attribute-load:
+  - §f来源
+  # 限制包含下列其中描述的物品在原版装备槽位中被加载属性(不会影响AttributeAPI附属加载属性)
+  limit-slot-attribute-descriptions:
+  - 无法在装备槽位中使用
+  # 限制属性加载的世界
+  limit-attribute-worlds:
+  - test_world
+  # 加载指定NBT标签内属性列表
+  attribute-nbt-list:
+  - attribute_tag
+  # 加载物品属性时,根据物品名修正物品对应属性的最大值
+  attribute-max-value-corrector:
+    对应的物品名: 战力评价=1000.0;属性名=200.0
+  # 加载属性源时,根据属性源名修正属性源中对应属性的最大值
+  # HAND/OFF_HAND/FEET/LEGS/CHEST/HEAD(SYSTEM) 对应原版槽位属性源名称
+  attribute-max-value-corrector-source:
+    护手槽: 战力评价=1000.0;属性名=200.0
+  # 权限限制
+  # 支持多个权限，例如 "职业: 剑士/法师/牧师" 只需要满足其一即可
+  permission:
+    split: /
+    key: 职业
+  # 装备等级限制
+  level: 装备等级
+  # 装备等级限制标签,等级来源变量
+  level-placeholder: '%player_level%'
+  # 装备类型
+  # 例如 [装备类型: 双持]
+  equipmentType:
+    lore: 装备类型
+    list:
+    - 双持
+    - 主手
+    - 副手
+    - 头盔
+    - 衣服
+    - 裤子
+    - 鞋子
+```
+
+```yaml title="attribute.yml · setting（2/2）"
+setting:
+  options:
+    # 仅启用插件属性伤害 (关闭后 {attack} {overAttack} 也会附上其他插件的伤害数值)
+    pluginDamage: false
+    # 原版伤害 (pluginDamage 为 true 时,此处默认 false)
+    defaultDamage: true
+    # 原版护甲 (1.9+功能 原版护甲为百分比抵消伤害，会影响插件伤害的准确性，默认关闭)
+    defaultArmor: true
+    # 开启后装备等级限制将根据玩家职业等级进行判断
+    skillLevel: false
+    # 关闭后 SkillAPI 插件造成的技能伤害将不处理进行属性处理
+    # 3.3.0.1 版本过时,可使用 skill-options 内配置项
+    skillDamage: true
+    # 关闭后  Magic 插件造成的技能伤害将不处理进行属性处理
+    # 3.3.0.1 版本过时,可使用 skill-options 内配置项
+    magicDamage: true
+    # 技能兼容项
+    # 开启对应类型属性处理兼容后 SkillAPI/Magic 技能伤害将附上对应类型的属性处理
+    skill-options:
+      # 攻击类属性兼容
+      attack-attribute: true
+      # 防御类属性兼容
+      defense-attribute: true
+      # 限制属性生效
+      # 在该列表内的属性触发技能伤害时不会生效处理
+      prohibit-attribute: []
+    #  - "闪避几率"
+    # 物品攻击检测
+    attackDetection:
+      # 禁止物品左键攻击
+      left-click:
+      - BOW
+      # 远程伤害
+      # 只有在下列列表内的物品类型远程攻击才有伤害
+      remote:
+      - BOW
+      # 跳过 SkillAPI 技能伤害检测
+      skill-damage-skip: true
+      # 跳过 Magic 技能伤害检测
+      magic-damage-skip: true
+      # 被禁止时是否提示玩家
+      message-enable: true
+      enable: true
+    mechanism:
+      # 支持版本: 1.9+
+      # 蓄力伤害机制(近战&远程都会受到影响)
+      accumulateDamage: false
+      # 支持版本: 1.9+
+      # 盾牌格挡机制
+      shield:
+        enable: true
+        # right 开启后盾牌就不再格挡,也不会冷却
+        right: false
+        # right 为 false 时启用盾牌格挡冷却机制
+        cd: 10
+      # 支持版本 1.8? 1.9+
+      # 弓箭机制
+      shoot:
+        # 弓箭属性计算公式均为 "属性值/100"
+        enable: false
+        # 蓄力影响
+        # 拉满则可以打出满射速的箭,如果没拉满则按力道削弱速度
+        # 拉满精准度会提高,没拉满精准度则会降低,精准度不会超过 默认值+属性加成
+        force: true
+        # 默认箭飞行速度 (数值越大速度越快)
+        speed: 2.0
+        # 默认箭飞行偏离 (数值越大偏离越大)
+        spread: 3.0
+        # 穿透 1.14+ 版本支持,其他版本爬
+        through:
+          # 是否启用
+          enable: false
+          # 穿透次数 (箭术穿透触发时穿透实体次数)
+          amount: 3
+      # MythicMobs 测试版本 4.7.2
+      # MythicMobs 召唤继承
+      # 召唤的怪物会继承召唤者的某些属性
+      summon:
+        enable: false
+        # 可继承的怪物名字必须包含以下内容
+        string: '[召唤]'
+        # 可继承的属性,不在列表内的属性不继承
+        attribute:
+        - 物理伤害
+      # 触发器 ~onSignal:AttributePlus
+      # 兼容 MythicMobs 触发器 Signal 信号接收此次处理属性值列表
+      # 如果此次触发的属性处理不包括下面变量值属性则不触发该信号
+      mythic-signal:
+      - attackerDamage
+    entityAttribute:
+      # 实体属性刷新过滤
+      filter:
+        # 原版怪物是否刷新时加载属性 (建议关闭,开启后所有为 LivingEntity 实体都会刷新属性)
+        originalMonster: false
+        # 当 originalMonster 为 false 时启动
+        # 怪物名包含下列字符才刷新属性
+        list:
+        - '[怪物]'
+```

@@ -1,0 +1,34 @@
+{
+  "name": "MythicMobs",
+  "version": "5.13.0-SNAPSHOT-1abf9862",
+  "website": null,
+  "depend": [],
+  "softdepend": [
+    "Multiverse-Core",
+    "Heroes",
+    "PhatLoots",
+    "Vault",
+    "MagicSpells",
+    "MiniaturePets",
+    "LibsDisguises",
+    "WorldGuard",
+    "Holograms",
+    "HolographicDisplays",
+    "PlaceholderAPI",
+    "PlotSquared",
+    "Residence"
+  ],
+  "authors": "Lumine",
+  "commands": [
+    "mythicmobs",
+    "mythicmobsmenu",
+    "spawnmob",
+    "pins",
+    "addpin"
+  ],
+  "permissions": [
+    "mythicmobs.admin",
+    "mythicmobs.reload",
+    "mythicmobs.signal"
+  ]
+}

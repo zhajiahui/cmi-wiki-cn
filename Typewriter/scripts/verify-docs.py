@@ -16,7 +16,9 @@ def navfiles(items):
             if isinstance(value,list):yield from navfiles(value)
             else:yield value
 nav=list(navfiles(yaml.safe_load((BASE/'mkdocs.yml').read_text(encoding='utf-8'))['nav']))
-if len(nav)!=len(set(nav)) or set(nav)!={p['file'] for p in manifest}:errors.append('Navigation coverage mismatch')
+extra_path=BASE/'sources/imported-configuration-manifest.json'
+extra=json.loads(extra_path.read_text('utf-8')) if extra_path.is_file() else []
+if len(nav)!=len(set(nav)) or set(nav)!={p['file'] for p in manifest+extra}:errors.append('Navigation coverage mismatch')
 for item in translations:
     source=item['source'];zh=item['zh'];original=Counter(re.findall(r'`([^`]+)`',source));output=Counter(re.findall(r'`([^`]+)`',zh))
     if original-output:errors.append('Inline token changed: '+str(item['id'])+': '+str(list((original-output).elements())))

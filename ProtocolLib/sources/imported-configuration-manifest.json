@@ -1,0 +1,177 @@
+[
+  {
+    "file": "configuration/config.md",
+    "title": "config.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "07626bbe8acd140717ab9bf6f42cdfd9209a3e9ab7e673eb189a04386c327182",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "global"
+        ],
+        "id": "global",
+        "source_line": 0,
+        "text": "",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "global",
+          "auto updater"
+        ],
+        "id": "globalauto-updater",
+        "source_line": 2,
+        "text": "自动版本更新器的设置。",
+        "block": 0,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "global",
+          "auto updater",
+          "notify"
+        ],
+        "id": "globalauto-updaternotify",
+        "source_line": 3,
+        "text": "",
+        "block": 0,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "global",
+          "auto updater",
+          "download"
+        ],
+        "id": "globalauto-updaterdownload",
+        "source_line": 4,
+        "text": "",
+        "block": 0,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "global",
+          "auto updater",
+          "delay"
+        ],
+        "id": "globalauto-updaterdelay",
+        "source_line": 7,
+        "text": "下载新更新前的等待时间，单位：秒。",
+        "block": 0,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "global",
+          "metrics"
+        ],
+        "id": "globalmetrics",
+        "source_line": 9,
+        "text": "",
+        "block": 0,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "global",
+          "chat warnings"
+        ],
+        "id": "globalchat-warnings",
+        "source_line": 12,
+        "text": "向拥有 protocol.info 权限的玩家显示某些警告。",
+        "block": 0,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "global",
+          "background compiler"
+        ],
+        "id": "globalbackground-compiler",
+        "source_line": 15,
+        "text": "自动编译结构修改器。",
+        "block": 0,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "global",
+          "ignore version check"
+        ],
+        "id": "globalignore-version-check",
+        "source_line": 18,
+        "text": "对指定的 Minecraft 版本禁用版本检查。请先备份世界！",
+        "block": 0,
+        "line": 17,
+        "heading": false
+      },
+      {
+        "path": [
+          "global",
+          "debug"
+        ],
+        "id": "globaldebug",
+        "source_line": 21,
+        "text": "是否启用 filter 命令。",
+        "block": 0,
+        "line": 20,
+        "heading": false
+      },
+      {
+        "path": [
+          "global",
+          "detailed error"
+        ],
+        "id": "globaldetailed-error",
+        "source_line": 24,
+        "text": "是否为每条警告输出堆栈跟踪。",
+        "block": 0,
+        "line": 23,
+        "heading": false
+      },
+      {
+        "path": [
+          "global",
+          "script engine"
+        ],
+        "id": "globalscript-engine",
+        "source_line": 27,
+        "text": "filter 命令使用的引擎。",
+        "block": 0,
+        "line": 26,
+        "heading": false
+      },
+      {
+        "path": [
+          "global",
+          "suppressed reports"
+        ],
+        "id": "globalsuppressed-reports",
+        "source_line": 29,
+        "text": "",
+        "block": 0,
+        "line": 29,
+        "heading": false
+      }
+    ]
+  },
+  {
+    "file": "configuration/index.md",
+    "title": "配置文件",
+    "source_kind": "imported-configuration",
+    "source_sha256": "07626bbe8acd140717ab9bf6f42cdfd9209a3e9ab7e673eb189a04386c327182",
+    "translation_review": "reviewed",
+    "anchors": []
+  }
+]

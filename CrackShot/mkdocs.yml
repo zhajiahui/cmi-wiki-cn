@@ -1,0 +1,14 @@
+site_name: CrackShot 中文资料
+nav:
+- 插件说明: index.md
+- 配置文件（0.98.13-x6）:
+  - 配置索引: configuration/index.md
+  - general.yml: configuration/general.md
+  - messages.yml: configuration/messages.md
+  - 语言文件（lang/）:
+    - en_US.yml: configuration/lang/en_us.md
+    - zh_CN.yml: configuration/lang/zh_cn.md
+  - weapons（weapons/）:
+    - defaultAttachments.yml: configuration/weapons/defaultattachments.md
+    - defaultWeapons.yml: configuration/weapons/defaultweapons.md
+    - defaultExplosives.yml: configuration/weapons/defaultexplosives.md

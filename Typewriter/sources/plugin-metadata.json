@@ -1,0 +1,12 @@
+{
+  "name": "Typewriter",
+  "version": "0.9.0-beta-177",
+  "website": "https://docs.typewritermc.com",
+  "depend": [],
+  "softdepend": [],
+  "authors": [
+    "gabber235"
+  ],
+  "commands": [],
+  "permissions": []
+}

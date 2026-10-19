@@ -1,0 +1,15 @@
+{
+  "name": "CMILib",
+  "version": "1.6.0.1",
+  "website": "https://www.spigotmc.org/resources/cmilib.87610/",
+  "depend": [],
+  "softdepend": [
+    "PlaceholderAPI",
+    "MVdWPlaceholderAPI"
+  ],
+  "authors": "Zrips",
+  "commands": [
+    "cmil"
+  ],
+  "permissions": []
+}

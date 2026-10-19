@@ -1,0 +1,25 @@
+{
+  "project": "pStats",
+  "version": "随包未标明版本",
+  "source_date": "2026-10-19",
+  "source_kind": "user-supplied-configuration-examples",
+  "index": true,
+  "files": [
+    {
+      "name": "config.yml",
+      "page": "configuration/config.md",
+      "language": "yaml",
+      "description": "主配置。",
+      "code": "# pStats 会为插件作者收集一些数据，例如有多少服务器正在使用其插件。\n# 为支持他们的工作，不应禁用此功能。\n# 此功能对服务器性能几乎没有影响！\n# 访问 https://pstats.devs.beer/ 了解更多 :)\n\nenabled: true\nserverUuid: \"00000000-0000-0000-0000-000000000000\"\nlogFailedRequests: false\nlogSentData: false\nlogResponseStatusText: false\n",
+      "redacted_paths": [
+        {
+          "path": [
+            "serverUuid"
+          ],
+          "placeholder": "00000000-0000-0000-0000-000000000000"
+        }
+      ],
+      "source_sha256": "1caab0221ff1321847a403eb36d68e46b8f468f250779cc57663a9e66c10a1fe"
+    }
+  ]
+}

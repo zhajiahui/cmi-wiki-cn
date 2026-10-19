@@ -1,0 +1,215 @@
+---
+title: item/wand.yml
+source_kind: imported-configuration
+translation_review: reviewed
+source_file: item/wand.yml
+source_version: 6.10.1-SNAPSHOT
+---
+
+# item/wand.yml
+
+文件：`item/wand.yml`。版本：`6.10.1-SNAPSHOT`。
+
+随包物品或内容配置。
+
+## `OAK_WAND` { #oak_wand }
+
+```yaml title="item/wand.yml · OAK_WAND"
+OAK_WAND:
+  base:
+    material: STICK
+    name: "&f<wood> 魔杖"
+    required-level: 1.0
+    range: 20.0
+    attack-damage:
+      base: 3.5
+      spread: 0.1
+      max-spread: 0.3
+    attack-speed:
+      base: 1.15
+      spread: 0.04
+      max-spread: 0.12
+    critical-strike-chance:
+      base: 9.0
+      spread: 0.03
+      max-spread: 0.1
+    ability:
+      right-click:
+        type: SPARKLE
+        mode: RIGHT_CLICK
+        damage: 3.0
+        cooldown: 15.0
+```
+
+## `BLAZE_WAND` { #blaze_wand }
+
+```yaml title="item/wand.yml · BLAZE_WAND"
+BLAZE_WAND:
+  base:
+    material: BLAZE_ROD
+    hide-enchants: true
+    enchants:
+      unbreaking: 1
+    required-level: 38.0
+    attack-damage:
+      base: 14.0
+      spread: 0.11
+      scale: 0.04
+    attack-speed: 1.5
+    critical-strike-chance:
+      base: 5.0
+      scale: 0.04
+      spread: 0.06
+    range: 28.0
+    tier: LEGENDARY
+    perm-effects:
+      FIRE_RESISTANCE: 1
+    ability:
+      right-click:
+        type: FIREBOLT
+        mode: RIGHT_CLICK
+        damage: 5.0
+        ignite: 3.0
+        cooldown: 10.0
+      ability1:
+        type: BURNING_HANDS
+        mode: SHIFT_RIGHT_CLICK
+        duration: 3.0
+        damage: 4.0
+        cooldown: 5.0
+    gem-sockets:
+      - Nether
+      - Nether
+    name: "&c&l烈焰魔杖"
+    disable-crafting: true
+    lore:
+      - "§e啊，没错，真烫。"
+    crafting:
+      shaped:
+        '1':
+          input:
+            - v nether_star - 1.0..|v magma_cream - 1.0..|v nether_star - 1.0..
+            - v AIR 0 1..|v blaze_rod - 1.0..|v AIR 0 1..
+            - v AIR 0 1..|v blaze_rod - 1.0..|v AIR 0 1..
+    staff-spirit: NETHER_SPIRIT
+    critical-strike-power:
+      base: 12.1
+      scale: 0.04
+      spread: 0.06
+    undead-damage:
+      base: 60.0
+      scale: 0.1
+      spread: 0.19
+```
+
+## `COSMOS_WAND` { #cosmos_wand }
+
+```yaml title="item/wand.yml · COSMOS_WAND"
+COSMOS_WAND:
+  base:
+    material: STICK
+    gem-sockets:
+      - Blue
+    staff-spirit: VOID_SPIRIT
+    attack-speed: 1.9
+    crafting:
+      shapeless:
+        '1':
+          input:
+            - m catalyst perfect_ender_pearl 1.0..
+            - v nether_star - 1.0..
+            - m catalyst enchanted_shulker_shell 1.0..
+            - v AIR - 1.0..
+            - v stick - 1.0..
+            - v AIR - 1.0..
+            - v AIR - 1.0..
+            - v stick - 1.0..
+            - v AIR - 1.0..
+    unbreakable: true
+    tier: EPIC
+    magic-damage:
+      base: 35.0
+      spread: 0.05
+      max-spread: 0.19
+    attack-damage:
+      base: 5.0
+      scale: 0.14
+      spread: 0.04
+      max-spread: 0.08
+    range: 20.0
+    ability:
+      ability2:
+        type: LIFE_ENDER
+        mode: SHIFT_RIGHT_CLICK
+        damage: 15.0
+        knockback: 1.5
+        cooldown: 14.0
+        radius: 5.0
+      ability1:
+        type: BLINK
+        timer: 1.0
+        range: 45.0
+        mode: RIGHT_CLICK
+        cooldown: 8.0
+    lore:
+      - "§b§l§o\"群星属于你！\""
+    name: "§5§l宇宙魔杖"
+    upgrade:
+      max: 10
+      template: weapon-default
+    critical-strike-chance:
+      base: 10.0
+      scale: 0.02
+      spread: 0.15
+      max-spread: 0.26
+    critical-strike-power:
+      base: 6.0
+      scale: 0.02
+      spread: 0.15
+      max-spread: 0.26
+    required-level: 14.0
+```
+
+## `SPELLCASTER_WAND` { #spellcaster_wand }
+
+```yaml title="item/wand.yml · SPELLCASTER_WAND"
+SPELLCASTER_WAND:
+  base:
+    material: STICK
+    name: "§d施法者魔杖"
+    required-level: 1.0
+    required-class:
+      - Mage
+    range: 16.0
+    attack-damage:
+      base: 6.0
+      scale: 0.1
+      spread: 0.1
+      max-spread: 0.2
+    attack-speed: 1.4
+    critical-strike-chance:
+      base: 6.0
+      spread: 0.1
+      max-spread: 0.15
+    critical-strike-power:
+      base: 12.0
+      spread: 0.1
+      max-spread: 0.15
+    magic-damage:
+      base: 15.0
+      scale: 0.1
+      spread: 0.08
+      max-spread: 0.12
+    tier: UNCOMMON
+    element:
+      water:
+        damage:
+          base: 20.0
+          scale: 0.0
+          spread: 0.2
+          max-spread: 0.3
+    mana-cost: 3.0
+    set: SPELLCASTER
+    lore:
+      - "§7§o\"你是个巫师，哈利。\""
+```

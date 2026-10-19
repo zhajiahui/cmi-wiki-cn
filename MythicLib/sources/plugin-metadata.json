@@ -1,0 +1,26 @@
+{
+  "name": "MythicLib",
+  "version": "1.7.1-SNAPSHOT",
+  "website": "www.phoenixdevt.fr",
+  "depend": [],
+  "softdepend": [
+    "WorldGuard",
+    "Residence",
+    "MythicMobs",
+    "PlaceholderAPI",
+    "Fabled",
+    "AureliumSkills",
+    "AuraSkills"
+  ],
+  "authors": "Indyuce",
+  "commands": [
+    "mythiclib"
+  ],
+  "permissions": [
+    "mythiclib.admin",
+    "mythiclib.mythiclib.command.healthscale",
+    "mythiclib.tempstat",
+    "mythiclib.superworkbench",
+    "mythiclib.megaworkbench"
+  ]
+}

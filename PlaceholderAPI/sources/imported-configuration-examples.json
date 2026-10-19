@@ -1,0 +1,18 @@
+{
+  "project": "PlaceholderAPI",
+  "version": "2.12.3",
+  "source_date": "2026-10-19",
+  "source_kind": "user-supplied-configuration-examples",
+  "index": true,
+  "files": [
+    {
+      "name": "config.yml",
+      "page": "configuration/config.md",
+      "language": "yaml",
+      "description": "主配置。",
+      "code": "# PlaceholderAPI\n# 版本：2.12.3\n# 作者：extended_clip\n# 贡献者：https://github.com/PlaceholderAPI/PlaceholderAPI/graphs/contributors\n# 问题反馈：https://github.com/PlaceholderAPI/PlaceholderAPI/issues\n# 扩展：https://placeholderapi.com/ecloud\n# Wiki：https://wiki.placeholderapi.com/\n# Discord：https://helpch.at/discord\n# 如果使用组件替换功能的插件出现性能问题，或显示效果不太正常，\n# 可将 use_adventure_provided_replacer 改为 true，切换到 adventure 自身提供的替换器。\n# 此插件默认不提供任何占位符。\n# 下载占位符：/papi ecloud\ncheck_updates: true\ncloud_enabled: true\ncloud_sorting: \"name\"\nboolean:\n  'true': 'yes'\n  'false': 'no'\ndate_format: MM/dd/yy HH:mm:ss\ndetect_malicious_expansions: true\nuse_adventure_provided_replacer: false\ndebug: false\n",
+      "redacted_paths": [],
+      "source_sha256": "2e58100cfba0248c5129b0fd916e4a293a183b98d32ad6739522a67fde27c849"
+    }
+  ]
+}

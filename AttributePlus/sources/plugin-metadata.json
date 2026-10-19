@@ -1,0 +1,22 @@
+{
+  "name": "AttributePlus",
+  "version": "3.3.3.6",
+  "website": null,
+  "depend": [
+    "PlaceholderAPI"
+  ],
+  "softdepend": [
+    "MythicMobs",
+    "MythicLib",
+    "CMI",
+    "CMILib",
+    "CMIEInjector",
+    "SkillAPI",
+    "HolographicDisplays"
+  ],
+  "authors": [
+    "Nanmuis"
+  ],
+  "commands": [],
+  "permissions": []
+}

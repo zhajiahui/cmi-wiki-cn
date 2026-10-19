@@ -1,0 +1,29 @@
+{
+  "name": "CrackShotX",
+  "version": "1.1.0",
+  "website": null,
+  "depend": [
+    "CrackShot"
+  ],
+  "softdepend": [
+    "ProtocolLib",
+    "packetevents",
+    "MythicMobs",
+    "AttributePlus",
+    "NeigeItems",
+    "PlaceholderAPI",
+    "WorldGuard",
+    "WorldEdit"
+  ],
+  "authors": [],
+  "commands": [
+    "csx"
+  ],
+  "permissions": [
+    "crackshotx.admin",
+    "crackshotx.panel",
+    "crackshotx.panel.others",
+    "crackshotx.panel.history",
+    "crackshotx.bypass.region"
+  ]
+}

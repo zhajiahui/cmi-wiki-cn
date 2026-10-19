@@ -1,0 +1,23 @@
+{
+  "name": "CrackShot",
+  "version": "0.98.13-x6",
+  "website": "http://dev.bukkit.org/server-mods/crackshot/",
+  "depend": [],
+  "softdepend": [],
+  "authors": "Shampaggon",
+  "commands": [
+    "crackshot"
+  ],
+  "permissions": [
+    "crackshot.*",
+    "crackshot.reloadplugin",
+    "crackshot.list",
+    "crackshot.give.all",
+    "crackshot.get.all",
+    "crackshot.use.all",
+    "crackshot.craft.all",
+    "crackshot.buy.all",
+    "crackshot.shops.all",
+    "crackshot.bypass.all"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "project": "CMILib",
+  "version": "1.6.0.1",
+  "source_date": "2026-10-19",
+  "source_kind": "user-supplied-configuration-examples",
+  "index": true,
+  "files": [
+    {
+      "name": "config.yml",
+      "page": "configuration/config.md",
+      "language": "yaml",
+      "description": "主配置。",
+      "code": "# 要使用的语言文件。\nLanguage: EN\n# 是否从 GitHub 仓库自动下载默认语言文件。\n# 如果使用 EN，或已经配置好所用语言且无需下载其他语言，可以禁用此项。\nLanguageDownload: true\n# 启用后，插件会尝试自动将 CMILib 更新到最新版本。\nAutoUpdate: false\nExploitPatcher:\n  Placeholders:\n    blocked:\n      # 默认屏蔽 PAPI 的 %checkitem_...% 占位符，以避免其可能引发的严重问题。\n      # 仅在已有专门的防护措施时才关闭此项。\n      checkItem: true\nSkins:\n  # 从 Mojang 在线服务器更新皮肤信息的间隔，单位：分钟。\n  # 请注意，服务器每分钟只能发送 1 次请求，因此应设置合理的间隔，例如一小时或更久。\n  # 例如，设为 1 小时后，只有玩家已有皮肤信息超过 1 小时，才会更新该玩家的皮肤信息。\n  # 此操作仅在玩家加入服务器或手动更换皮肤时触发。\n  SkinUpdateTimer: 1320\n  # 向 Mojang 服务器发送请求的间隔，单位：分钟。\n  # 此项用于限制一定时间内的请求数量，避免可能出现的请求过于密集。\n  SkinRequestFrequency: 10\nGlobalGui:\n  # GUI 的空白格需要填充时使用的物品类型。\n  EmptyField: BLACK_STAINED_GLASS_PANE\n  Pages:\n    # 界面中“上一页”按钮的图标。\n    Previous: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdhZWU5YTc1YmYwZGY3ODk3MTgzMDE1Y2NhMGIyYTdkNzU1YzYzMzg4ZmYwMTc1MmQ1ZjQ0MTlmYzY0NSJ9fX0=\n    # 界面中“下一页”按钮的图标。\n    Next: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjgyYWQxYjljYjRkZDIxMjU5YzBkNzVhYTMxNWZmMzg5YzNjZWY3NTJiZTM5NDkzMzgxNjRiYWM4NGE5NmUifX19\n    # 界面中“信息”按钮的图标。\n    Middle: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmEyYWZhN2JiMDYzYWMxZmYzYmJlMDhkMmM1NThhN2RmMmUyYmFjZGYxNWRhYzJhNjQ2NjJkYzQwZjhmZGJhZCJ9fX0=\n  # 界面中“关闭”按钮的图标。\n  Close: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzM4YWIxNDU3NDdiNGJkMDljZTAzNTQzNTQ5NDhjZTY5ZmY2ZjQxZDllMDk4YzY4NDhiODBlMTg3ZTkxOSJ9fX0=\n  # 界面中“信息”按钮的图标。\n  Info: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjcwNWZkOTRhMGM0MzE5MjdmYjRlNjM5YjBmY2ZiNDk3MTdlNDEyMjg1YTAyYjQzOWUwMTEyZGEyMmIyZTJlYyJ9fX0=\nSpawners:\n  # 使用 spawner:random 变量时可供选择的刷怪笼列表。\n  mysterySpawners:\n  - skeleton\n  - zombie\n  - silverfish\n  - panda\n  - fox\nRMCCommands:\n  # 启用后，使用 rmc 命令时会(在可行的情况下)附上所执行的具体命令。\n  ConsoleLog: true\nImages:\n  # 用于构成图像区域的字符。\n  # 此处不支持颜色代码。\n  # 由于部分图像已经缓存，此设置在服务器重启后才会完全生效。\n  Filler: ⬛\n  # 用于填充图像空白区域的字符。\n  # 此处支持颜色代码。\n  EmptyFiller: '&7_|'\nColors:\n  # 启用后，除 {#f6f6f6} 和 {#red} 外，插件还会尝试识别 #f6f6f6 或 #ff6 等简写的十六进制颜色代码。\n  # 请注意，这会增加额外的检查；简写格式不支持渐变或颜色名称，这两种情况仍需使用较完整的格式。\n  OfficialHex: true\n  # 启用后，除 {#f6f6f6} 和 {#red} 外，插件还会尝试识别 &#f6f6f6 或 &#ff6 等特殊格式的十六进制颜色代码。\n  # 请注意，这会增加额外的检查；特殊格式不支持渐变或颜色名称，这两种情况仍需使用较完整的格式。\n  QuirkyHex: true\n  # 定义语言文件使用的全局聊天颜色。\n  # 此项可让你同时修改多处颜色。\n  Global:\n    # 使用 {gcp} 引用此颜色。默认值：{#gold}\n    # 普通文本使用的主要颜色。\n    Primary: '{#gold}'\n    # 使用 {gcs} 引用此颜色。默认值：{#yellow}\n    # 通常用于变量和占位符。\n    Secondary: '{#yellow}'\n    # 使用 {gcw} 引用此颜色。默认值：{#FF7357}\n    # 用于提示命令用法有误，通常不如错误提示重要。\n    Warning: '{#FF7357}'\n    # 使用 {gcn} 引用此颜色。默认值：{#gray}\n    # 较为中性的颜色，用于无需引起过多注意的文本。\n    Neutral: '{#gray}'\n    # 使用 {gcu} 引用此颜色。默认值：{#59C959}\n    # 表示正面结果的颜色，例如创建家传送点记录。\n    Uplift: '{#59C959}'\n    # 使用 {gcd} 引用此颜色。默认值：{#E89280}\n    # 表示负面结果的颜色，例如移除家传送点记录。\n    Downlift: '{#E89280}'\n    # 使用 {gce} 引用此颜色。默认值：{#red}\n    # 用于提示严重错误。\n    Error: '{#red}'\n",
+      "redacted_paths": [],
+      "source_sha256": "c4c00b133401de230e9257f7308e7bd033e23fc6cf5737a8a6d1cad38820c2cc"
+    }
+  ]
+}

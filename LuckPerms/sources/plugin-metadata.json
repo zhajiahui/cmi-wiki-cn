@@ -1,0 +1,15 @@
+{
+  "name": "LuckPerms",
+  "version": "5.5.71",
+  "website": "https://luckperms.net",
+  "depend": [],
+  "softdepend": [
+    "LilyPad-Connect",
+    "ViaVersion"
+  ],
+  "authors": "Luck",
+  "commands": [
+    "luckperms"
+  ],
+  "permissions": []
+}

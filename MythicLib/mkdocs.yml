@@ -96,5 +96,21 @@ nav:
   - 教程: scripts/tutorials.md
   - 创建自定义技能: skills/custom.md
   - 技能: skills.md
+- 配置文件（1.7.1-SNAPSHOT）:
+  - 配置索引: configuration/index.md
+  - config.yml: configuration/config.md
+  - triggers.yml: configuration/triggers.md
+  - stats.yml: configuration/stats.md
+  - mitigation_types.yml: configuration/mitigation_types.md
+  - elements.yml: configuration/elements.md
+  - indicators.yml: configuration/indicators.md
+  - on_hit_effects.yml: configuration/on_hit_effects.md
+  - commands.yml: configuration/commands.md
+  - 脚本（script/）:
+    - mmoitems_scripts.yml: configuration/script/mmoitems_scripts.md
+    - mitigation_types.yml: configuration/script/mitigation_types.md
+    - example_skills.yml: configuration/script/example_skills.md
+    - on_hit_effects.yml: configuration/script/on_hit_effects.md
+    - elemental_attacks.yml: configuration/script/elemental_attacks.md
 docs_dir: docs
 site_dir: .cache/site

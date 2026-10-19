@@ -1,0 +1,2659 @@
+[
+  {
+    "file": "configuration/lang/en_us.md",
+    "title": "lang/en_US.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "25264120f6d8a80da754d37bb62b0f9ff432e63aeed98c7a2402af4f4608be14",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "Command.No_Permission"
+        ],
+        "id": "commandno_permission",
+        "source_line": 4,
+        "text": "服主可在此修改消息；删除条目后，会使用内置英文文本。\n保留 <name> 占位符；支持 & 颜色代码。\n/csx 命令发送者：没有权限",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Command.Unknown"
+        ],
+        "id": "commandunknown",
+        "source_line": 6,
+        "text": "/csx 命令发送者：未知子命令",
+        "block": 1,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Command.Reloaded"
+        ],
+        "id": "commandreloaded",
+        "source_line": 8,
+        "text": "/csx reload 命令发送者：已重载",
+        "block": 2,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Command.Header"
+        ],
+        "id": "commandheader",
+        "source_line": 10,
+        "text": "/csx 命令发送者：状态信息的首行",
+        "block": 3,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Command.Status_Title"
+        ],
+        "id": "commandstatus_title",
+        "source_line": 12,
+        "text": "/csx 命令发送者：功能列表标题",
+        "block": 4,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Command.Status_Enabled"
+        ],
+        "id": "commandstatus_enabled",
+        "source_line": 14,
+        "text": "/csx 命令发送者：已启用的功能",
+        "block": 5,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Command.Status_Disabled"
+        ],
+        "id": "commandstatus_disabled",
+        "source_line": 16,
+        "text": "/csx 命令发送者：已关闭的功能及原因",
+        "block": 6,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Module.Visual_Fix.Name"
+        ],
+        "id": "modulevisual_fixname",
+        "source_line": 18,
+        "text": "/csx 与控制台：功能名称",
+        "block": 7,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Module.Visual_Fix.Detail"
+        ],
+        "id": "modulevisual_fixdetail",
+        "source_line": 20,
+        "text": "/csx 与控制台：显示修正功能使用的数据包库",
+        "block": 8,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Reason.Disabled_In_Config"
+        ],
+        "id": "reasondisabled_in_config",
+        "source_line": 22,
+        "text": "/csx 与控制台：功能未启用的原因（在 config.yml 中关闭）",
+        "block": 9,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Reason.No_Packet_Library"
+        ],
+        "id": "reasonno_packet_library",
+        "source_line": 24,
+        "text": "/csx 与控制台：功能未启用的原因（未安装数据包库）",
+        "block": 10,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Reason.Library_Not_Found"
+        ],
+        "id": "reasonlibrary_not_found",
+        "source_line": 26,
+        "text": "/csx 与控制台：功能未启用的原因（未安装配置指定的数据包库）",
+        "block": 11,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Reason.Protocol_Not_Affected"
+        ],
+        "id": "reasonprotocol_not_affected",
+        "source_line": 28,
+        "text": "/csx 与控制台：功能未启用的原因（此服务端版本无需修正）",
+        "block": 12,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Reason.Unknown_Version"
+        ],
+        "id": "reasonunknown_version",
+        "source_line": 30,
+        "text": "/csx 与控制台：功能未启用的原因（无法识别服务端版本）",
+        "block": 13,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Reason.Failed"
+        ],
+        "id": "reasonfailed",
+        "source_line": 32,
+        "text": "/csx 与控制台：功能未启用的原因（启动失败）",
+        "block": 14,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Console.Module_Enabled"
+        ],
+        "id": "consolemodule_enabled",
+        "source_line": 34,
+        "text": "控制台：启动或重载时已启用某项功能",
+        "block": 15,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Console.Module_Disabled"
+        ],
+        "id": "consolemodule_disabled",
+        "source_line": 36,
+        "text": "控制台：启动或重载时某项功能仍未启用",
+        "block": 16,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Title"
+        ],
+        "id": "paneltitle",
+        "source_line": 39,
+        "text": "面板：武器页面标题",
+        "block": 17,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Players_Title"
+        ],
+        "id": "panelplayers_title",
+        "source_line": 41,
+        "text": "面板：接收玩家页面标题",
+        "block": 18,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.History_Title"
+        ],
+        "id": "panelhistory_title",
+        "source_line": 43,
+        "text": "面板：历史记录页面标题",
+        "block": 19,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Prev"
+        ],
+        "id": "panelprev",
+        "source_line": 45,
+        "text": "面板：翻页按钮",
+        "block": 20,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Next"
+        ],
+        "id": "panelnext",
+        "source_line": 47,
+        "text": "面板：翻页按钮",
+        "block": 21,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Category.Name"
+        ],
+        "id": "panelcategoryname",
+        "source_line": 49,
+        "text": "面板：分类按钮",
+        "block": 22,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Category.All"
+        ],
+        "id": "panelcategoryall",
+        "source_line": 51,
+        "text": "面板：分类按钮中的“全部”",
+        "block": 23,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Category.Lore"
+        ],
+        "id": "panelcategorylore",
+        "source_line": 53,
+        "text": "面板：分类按钮提示",
+        "block": 24,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Search.Name"
+        ],
+        "id": "panelsearchname",
+        "source_line": 55,
+        "text": "面板：搜索按钮",
+        "block": 25,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Search.Lore_Idle"
+        ],
+        "id": "panelsearchlore_idle",
+        "source_line": 57,
+        "text": "面板：搜索按钮提示（未在搜索）",
+        "block": 26,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Search.Lore_Active"
+        ],
+        "id": "panelsearchlore_active",
+        "source_line": 59,
+        "text": "面板：搜索按钮提示（正在搜索）",
+        "block": 27,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Target.Name"
+        ],
+        "id": "paneltargetname",
+        "source_line": 61,
+        "text": "面板：接收玩家按钮",
+        "block": 28,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Target.Self"
+        ],
+        "id": "paneltargetself",
+        "source_line": 63,
+        "text": "面板：接收玩家按钮中的“自己”",
+        "block": 29,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Target.Many"
+        ],
+        "id": "paneltargetmany",
+        "source_line": 65,
+        "text": "面板：接收玩家按钮中的人数",
+        "block": 30,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Target.Lore"
+        ],
+        "id": "paneltargetlore",
+        "source_line": 67,
+        "text": "面板：接收玩家按钮提示",
+        "block": 31,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Info.Name"
+        ],
+        "id": "panelinfoname",
+        "source_line": 69,
+        "text": "面板：武器数量",
+        "block": 32,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Multi.Name_On"
+        ],
+        "id": "panelmultiname_on",
+        "source_line": 71,
+        "text": "面板：多选按钮（已开启）",
+        "block": 33,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Multi.Name_Off"
+        ],
+        "id": "panelmultiname_off",
+        "source_line": 73,
+        "text": "面板：多选按钮（已关闭）",
+        "block": 34,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Multi.Lore"
+        ],
+        "id": "panelmultilore",
+        "source_line": 75,
+        "text": "面板：多选按钮提示",
+        "block": 35,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Give_Selected"
+        ],
+        "id": "panelgive_selected",
+        "source_line": 77,
+        "text": "面板：多选模式中的发放按钮",
+        "block": 36,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Revoke.Name"
+        ],
+        "id": "panelrevokename",
+        "source_line": 79,
+        "text": "面板：撤回按钮",
+        "block": 37,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Revoke.Lore_Last"
+        ],
+        "id": "panelrevokelore_last",
+        "source_line": 81,
+        "text": "面板：撤回按钮提示（有可撤回的物品）",
+        "block": 38,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Revoke.Lore_None"
+        ],
+        "id": "panelrevokelore_none",
+        "source_line": 83,
+        "text": "面板：撤回按钮提示（尚未发放物品）",
+        "block": 39,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Weapon.Lore"
+        ],
+        "id": "panelweaponlore",
+        "source_line": 85,
+        "text": "面板：武器图标提示",
+        "block": 40,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Weapon.Lore_Pick"
+        ],
+        "id": "panelweaponlore_pick",
+        "source_line": 87,
+        "text": "面板：多选模式下的武器图标提示（未选中）",
+        "block": 41,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Weapon.Lore_Picked"
+        ],
+        "id": "panelweaponlore_picked",
+        "source_line": 89,
+        "text": "面板：多选模式下的武器图标提示（已选中）",
+        "block": 42,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Players.Self"
+        ],
+        "id": "panelplayersself",
+        "source_line": 91,
+        "text": "面板：接收玩家页面中的“仅自己”按钮",
+        "block": 43,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Players.Done"
+        ],
+        "id": "panelplayersdone",
+        "source_line": 93,
+        "text": "面板：接收玩家页面中的“完成”按钮",
+        "block": 44,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Players.Picked"
+        ],
+        "id": "panelplayerspicked",
+        "source_line": 95,
+        "text": "面板：接收玩家页面中已选中的玩家",
+        "block": 45,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.History.Entry"
+        ],
+        "id": "panelhistoryentry",
+        "source_line": 97,
+        "text": "面板：历史记录页面中的一条记录",
+        "block": 46,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.History.Lore"
+        ],
+        "id": "panelhistorylore",
+        "source_line": 99,
+        "text": "面板：记录提示（可撤回）",
+        "block": 47,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.History.Lore_Revoked"
+        ],
+        "id": "panelhistorylore_revoked",
+        "source_line": 101,
+        "text": "面板：记录提示（已撤回）",
+        "block": 48,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Search_Prompt"
+        ],
+        "id": "panelsearch_prompt",
+        "source_line": 103,
+        "text": "面板使用者：点击搜索后，等待输入关键词",
+        "block": 49,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Search_Cancelled"
+        ],
+        "id": "panelsearch_cancelled",
+        "source_line": 105,
+        "text": "面板使用者：已取消搜索",
+        "block": 50,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Search_None"
+        ],
+        "id": "panelsearch_none",
+        "source_line": 107,
+        "text": "面板使用者：未找到结果",
+        "block": 51,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Given"
+        ],
+        "id": "panelgiven",
+        "source_line": 109,
+        "text": "发放者：武器已发放",
+        "block": 52,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Given_Partial"
+        ],
+        "id": "panelgiven_partial",
+        "source_line": 111,
+        "text": "发放者：接收玩家的物品栏已满，只发放了部分物品",
+        "block": 53,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Revoke_Confirm"
+        ],
+        "id": "panelrevoke_confirm",
+        "source_line": 113,
+        "text": "撤回者：再次点击确认",
+        "block": 54,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Revoked"
+        ],
+        "id": "panelrevoked",
+        "source_line": 115,
+        "text": "撤回者：撤回完成",
+        "block": 55,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Revoke_Offline"
+        ],
+        "id": "panelrevoke_offline",
+        "source_line": 117,
+        "text": "撤回者：接收玩家已离线，未取回其物品",
+        "block": 56,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Revoke_None"
+        ],
+        "id": "panelrevoke_none",
+        "source_line": 119,
+        "text": "撤回者：没有可撤回的物品",
+        "block": 57,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Revoke_Done"
+        ],
+        "id": "panelrevoke_done",
+        "source_line": 121,
+        "text": "撤回者：此记录已撤回",
+        "block": 58,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Revoke_Not_Found"
+        ],
+        "id": "panelrevoke_not_found",
+        "source_line": 123,
+        "text": "撤回者：没有此编号的记录",
+        "block": 59,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.No_Weapon"
+        ],
+        "id": "panelno_weapon",
+        "source_line": 125,
+        "text": "发放者：未知武器名称",
+        "block": 60,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.No_Player"
+        ],
+        "id": "panelno_player",
+        "source_line": 127,
+        "text": "发放者：玩家不在线",
+        "block": 61,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.No_Others"
+        ],
+        "id": "panelno_others",
+        "source_line": 129,
+        "text": "发放者：没有向其他玩家发放物品的权限",
+        "block": 62,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Players_Only"
+        ],
+        "id": "panelplayers_only",
+        "source_line": 131,
+        "text": "控制台：执行了 /csx panel 等仅限玩家的命令",
+        "block": 63,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.History_Line"
+        ],
+        "id": "panelhistory_line",
+        "source_line": 133,
+        "text": "/csx history 命令发送者：一条记录",
+        "block": 64,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.History_Revoked"
+        ],
+        "id": "panelhistory_revoked",
+        "source_line": 135,
+        "text": "/csx history 命令发送者：记录后面的“已撤回”标记",
+        "block": 65,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.History_Empty"
+        ],
+        "id": "panelhistory_empty",
+        "source_line": 137,
+        "text": "/csx history 命令发送者：暂无记录",
+        "block": 66,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Module.Panel.Name"
+        ],
+        "id": "modulepanelname",
+        "source_line": 139,
+        "text": "/csx 与控制台：功能名称",
+        "block": 67,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Log.Give"
+        ],
+        "id": "panelloggive",
+        "source_line": 141,
+        "text": "历史记录与审计日志：“发放”操作",
+        "block": 68,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Log.Revoke"
+        ],
+        "id": "panellogrevoke",
+        "source_line": 143,
+        "text": "历史记录与审计日志：“撤回”操作",
+        "block": 69,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Log.Console"
+        ],
+        "id": "panellogconsole",
+        "source_line": 145,
+        "text": "历史记录与审计日志：操作人为控制台",
+        "block": 70,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Log.Many"
+        ],
+        "id": "panellogmany",
+        "source_line": 147,
+        "text": "历史记录与审计日志：接收玩家较多时显示“及其他 N 人”",
+        "block": 71,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Usage_Give"
+        ],
+        "id": "panelusage_give",
+        "source_line": 149,
+        "text": "/csx give 命令发送者：用法错误",
+        "block": 72,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Usage_Revoke"
+        ],
+        "id": "panelusage_revoke",
+        "source_line": 151,
+        "text": "/csx revoke 命令发送者：用法错误",
+        "block": 73,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Usage_History"
+        ],
+        "id": "panelusage_history",
+        "source_line": 153,
+        "text": "/csx history 命令发送者：用法错误",
+        "block": 74,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Console.Panel_Write_Failed"
+        ],
+        "id": "consolepanel_write_failed",
+        "source_line": 155,
+        "text": "控制台：历史记录或审计日志写入失败",
+        "block": 75,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Module.MythicMobs.Name"
+        ],
+        "id": "modulemythicmobsname",
+        "source_line": 157,
+        "text": "/csx 与控制台：功能名称",
+        "block": 76,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Module.MythicMobs.Detail"
+        ],
+        "id": "modulemythicmobsdetail",
+        "source_line": 159,
+        "text": "/csx 与控制台：当前使用的 MythicMobs 版本",
+        "block": 77,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "MythicMobs.Unknown_Weapon"
+        ],
+        "id": "mythicmobsunknown_weapon",
+        "source_line": 161,
+        "text": "控制台：生物掉落配置指定了不存在的武器",
+        "block": 78,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "MythicMobs.Bad_Multiplier"
+        ],
+        "id": "mythicmobsbad_multiplier",
+        "source_line": 163,
+        "text": "控制台：生物的武器伤害倍率无效",
+        "block": 79,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Reason.Plugin_Not_Found"
+        ],
+        "id": "reasonplugin_not_found",
+        "source_line": 165,
+        "text": "/csx 与控制台：功能未启用的原因（未安装插件）",
+        "block": 80,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Reason.Plugin_Version"
+        ],
+        "id": "reasonplugin_version",
+        "source_line": 167,
+        "text": "/csx 与控制台：功能未启用的原因（插件版本不受支持）",
+        "block": 81,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Reason.Mythic_Not_Registered"
+        ],
+        "id": "reasonmythic_not_registered",
+        "source_line": 169,
+        "text": "/csx 与控制台：功能未启用的原因（未注册掉落与条件）",
+        "block": 82,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Module.AttributePlus.Name"
+        ],
+        "id": "moduleattributeplusname",
+        "source_line": 172,
+        "text": "/csx 与控制台：功能名称",
+        "block": 83,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Module.AttributePlus.Detail"
+        ],
+        "id": "moduleattributeplusdetail",
+        "source_line": 174,
+        "text": "/csx 与控制台：当前使用的 AttributePlus 版本",
+        "block": 84,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "AttributePlus.Version_Untested"
+        ],
+        "id": "attributeplusversion_untested",
+        "source_line": 176,
+        "text": "控制台：未经测试的 AttributePlus 版本",
+        "block": 85,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "AttributePlus.Internal_Changed"
+        ],
+        "id": "attributeplusinternal_changed",
+        "source_line": 178,
+        "text": "控制台：AttributePlus 内部结构发生变化",
+        "block": 86,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Module.NeigeItems.Name"
+        ],
+        "id": "moduleneigeitemsname",
+        "source_line": 180,
+        "text": "/csx 与控制台：功能名称",
+        "block": 87,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Module.NeigeItems.Detail"
+        ],
+        "id": "moduleneigeitemsdetail",
+        "source_line": 182,
+        "text": "/csx 与控制台：NeigeItems 版本及绑定的枪械和弹药数量",
+        "block": 88,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "NeigeItems.Unknown_Item"
+        ],
+        "id": "neigeitemsunknown_item",
+        "source_line": 184,
+        "text": "控制台：绑定指定的物品不存在",
+        "block": 89,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "NeigeItems.Unknown_Weapon"
+        ],
+        "id": "neigeitemsunknown_weapon",
+        "source_line": 186,
+        "text": "控制台：绑定指定的武器不存在",
+        "block": 90,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "NeigeItems.Duplicate_Item"
+        ],
+        "id": "neigeitemsduplicate_item",
+        "source_line": 188,
+        "text": "控制台：同一物品被重复绑定",
+        "block": 91,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Module.PlaceholderAPI.Name"
+        ],
+        "id": "moduleplaceholderapiname",
+        "source_line": 190,
+        "text": "/csx 与控制台：功能名称",
+        "block": 92,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Module.WorldGuard.Name"
+        ],
+        "id": "moduleworldguardname",
+        "source_line": 192,
+        "text": "/csx 与控制台：功能名称",
+        "block": 93,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Module.WorldGuard.Detail"
+        ],
+        "id": "moduleworldguarddetail",
+        "source_line": 194,
+        "text": "/csx 与控制台：当前使用的 WorldGuard 版本",
+        "block": 94,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Region.Shoot_Denied"
+        ],
+        "id": "regionshoot_denied",
+        "source_line": 196,
+        "text": "玩家：在禁止射击的区域内开枪",
+        "block": 95,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Region.Weapon_Denied"
+        ],
+        "id": "regionweapon_denied",
+        "source_line": 198,
+        "text": "玩家：使用此区域不允许的武器",
+        "block": 96,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Region.Place_Denied"
+        ],
+        "id": "regionplace_denied",
+        "source_line": 200,
+        "text": "玩家：在禁止放置的区域内放置地雷或 C4",
+        "block": 97,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Console.Language_Invalid"
+        ],
+        "id": "consolelanguage_invalid",
+        "source_line": 203,
+        "text": "控制台：config.yml 中的 Language 无效",
+        "block": 98,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Console.Config_Failed_Startup"
+        ],
+        "id": "consoleconfig_failed_startup",
+        "source_line": 205,
+        "text": "控制台：启动时无法读取 config.yml",
+        "block": 99,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Console.Config_Failed_Reload"
+        ],
+        "id": "consoleconfig_failed_reload",
+        "source_line": 207,
+        "text": "控制台：重载时无法读取 config.yml",
+        "block": 100,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Command.Reload_Failed"
+        ],
+        "id": "commandreload_failed",
+        "source_line": 209,
+        "text": "/csx reload 命令发送者：配置无法读取，未重载",
+        "block": 101,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Reason.Unknown_Library"
+        ],
+        "id": "reasonunknown_library",
+        "source_line": 211,
+        "text": "/csx 与控制台：功能未启用的原因（config.yml 中的数据包库未知）",
+        "block": 102,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Reason.Placeholder_Taken"
+        ],
+        "id": "reasonplaceholder_taken",
+        "source_line": 213,
+        "text": "/csx 与控制台：功能未启用的原因（占位符前缀已被占用）",
+        "block": 103,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Reason.Flags_Not_Registered"
+        ],
+        "id": "reasonflags_not_registered",
+        "source_line": 215,
+        "text": "/csx 与控制台：功能未启用的原因（未注册区域标志）",
+        "block": 104,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Reason.Flag_Conflict"
+        ],
+        "id": "reasonflag_conflict",
+        "source_line": 217,
+        "text": "/csx 与控制台：功能未启用的原因（同名区域标志已存在）",
+        "block": 105,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "NeigeItems.Version_Untested"
+        ],
+        "id": "neigeitemsversion_untested",
+        "source_line": 219,
+        "text": "控制台：未经测试的 NeigeItems 版本",
+        "block": 106,
+        "line": 1,
+        "heading": true
+      }
+    ]
+  },
+  {
+    "file": "configuration/lang/zh_cn.md",
+    "title": "lang/zh_CN.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "25264120f6d8a80da754d37bb62b0f9ff432e63aeed98c7a2402af4f4608be14",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "Command.No_Permission"
+        ],
+        "id": "commandno_permission",
+        "source_line": 4,
+        "text": "CrackShotX 的中文文字。服主可以直接改这里；删掉的条目会用插件自带的中文。\n尖括号里的 <名称> 会换成实际内容，照原样保留；可以用 & 颜色代码。\n执行 /csx 的人：没有权限",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Command.Unknown"
+        ],
+        "id": "commandunknown",
+        "source_line": 6,
+        "text": "执行 /csx 的人：子命令写错",
+        "block": 1,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Command.Reloaded"
+        ],
+        "id": "commandreloaded",
+        "source_line": 8,
+        "text": "执行 /csx reload 的人：重载成功",
+        "block": 2,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Command.Header"
+        ],
+        "id": "commandheader",
+        "source_line": 10,
+        "text": "执行 /csx 的人：状态的第一行",
+        "block": 3,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Command.Status_Title"
+        ],
+        "id": "commandstatus_title",
+        "source_line": 12,
+        "text": "执行 /csx 的人：功能列表的标题",
+        "block": 4,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Command.Status_Enabled"
+        ],
+        "id": "commandstatus_enabled",
+        "source_line": 14,
+        "text": "执行 /csx 的人：已启用的功能",
+        "block": 5,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Command.Status_Disabled"
+        ],
+        "id": "commandstatus_disabled",
+        "source_line": 16,
+        "text": "执行 /csx 的人：没启用的功能和原因",
+        "block": 6,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Module.Visual_Fix.Name"
+        ],
+        "id": "modulevisual_fixname",
+        "source_line": 18,
+        "text": "/csx 和控制台：功能名",
+        "block": 7,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Module.Visual_Fix.Detail"
+        ],
+        "id": "modulevisual_fixdetail",
+        "source_line": 20,
+        "text": "/csx 和控制台：弹道视觉修复用的是哪个发包库",
+        "block": 8,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Reason.Disabled_In_Config"
+        ],
+        "id": "reasondisabled_in_config",
+        "source_line": 22,
+        "text": "/csx 和控制台：没启用的原因（config.yml 里关了）",
+        "block": 9,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Reason.No_Packet_Library"
+        ],
+        "id": "reasonno_packet_library",
+        "source_line": 24,
+        "text": "/csx 和控制台：没启用的原因（没装发包库）",
+        "block": 10,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Reason.Library_Not_Found"
+        ],
+        "id": "reasonlibrary_not_found",
+        "source_line": 26,
+        "text": "/csx 和控制台：没启用的原因（指定的发包库没装）",
+        "block": 11,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Reason.Protocol_Not_Affected"
+        ],
+        "id": "reasonprotocol_not_affected",
+        "source_line": 28,
+        "text": "/csx 和控制台：没启用的原因（这个服务端版本用不着修）",
+        "block": 12,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Reason.Unknown_Version"
+        ],
+        "id": "reasonunknown_version",
+        "source_line": 30,
+        "text": "/csx 和控制台：没启用的原因（认不出服务端版本）",
+        "block": 13,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Reason.Failed"
+        ],
+        "id": "reasonfailed",
+        "source_line": 32,
+        "text": "/csx 和控制台：没启用的原因（启动时出错）",
+        "block": 14,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Console.Module_Enabled"
+        ],
+        "id": "consolemodule_enabled",
+        "source_line": 34,
+        "text": "控制台：启动或重载时，一个功能启用了",
+        "block": 15,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Console.Module_Disabled"
+        ],
+        "id": "consolemodule_disabled",
+        "source_line": 36,
+        "text": "控制台：启动或重载时，一个功能没启用",
+        "block": 16,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Title"
+        ],
+        "id": "paneltitle",
+        "source_line": 39,
+        "text": "面板：武器页的标题",
+        "block": 17,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Players_Title"
+        ],
+        "id": "panelplayers_title",
+        "source_line": 41,
+        "text": "面板：选发给谁那一页的标题",
+        "block": 18,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.History_Title"
+        ],
+        "id": "panelhistory_title",
+        "source_line": 43,
+        "text": "面板：发放记录页的标题",
+        "block": 19,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Prev"
+        ],
+        "id": "panelprev",
+        "source_line": 45,
+        "text": "面板：翻页按钮",
+        "block": 20,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Next"
+        ],
+        "id": "panelnext",
+        "source_line": 47,
+        "text": "面板：翻页按钮",
+        "block": 21,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Category.Name"
+        ],
+        "id": "panelcategoryname",
+        "source_line": 49,
+        "text": "面板：分类按钮",
+        "block": 22,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Category.All"
+        ],
+        "id": "panelcategoryall",
+        "source_line": 51,
+        "text": "面板：分类按钮上的\"全部\"",
+        "block": 23,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Category.Lore"
+        ],
+        "id": "panelcategorylore",
+        "source_line": 53,
+        "text": "面板：分类按钮的说明",
+        "block": 24,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Search.Name"
+        ],
+        "id": "panelsearchname",
+        "source_line": 55,
+        "text": "面板：搜索按钮",
+        "block": 25,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Search.Lore_Idle"
+        ],
+        "id": "panelsearchlore_idle",
+        "source_line": 57,
+        "text": "面板：搜索按钮的说明（还没搜）",
+        "block": 26,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Search.Lore_Active"
+        ],
+        "id": "panelsearchlore_active",
+        "source_line": 59,
+        "text": "面板：搜索按钮的说明（正在搜）",
+        "block": 27,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Target.Name"
+        ],
+        "id": "paneltargetname",
+        "source_line": 61,
+        "text": "面板：发给谁按钮",
+        "block": 28,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Target.Self"
+        ],
+        "id": "paneltargetself",
+        "source_line": 63,
+        "text": "面板：发给谁按钮上的\"自己\"",
+        "block": 29,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Target.Many"
+        ],
+        "id": "paneltargetmany",
+        "source_line": 65,
+        "text": "面板：发给谁按钮上的人数",
+        "block": 30,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Target.Lore"
+        ],
+        "id": "paneltargetlore",
+        "source_line": 67,
+        "text": "面板：发给谁按钮的说明",
+        "block": 31,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Info.Name"
+        ],
+        "id": "panelinfoname",
+        "source_line": 69,
+        "text": "面板：武器总数",
+        "block": 32,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Multi.Name_On"
+        ],
+        "id": "panelmultiname_on",
+        "source_line": 71,
+        "text": "面板：多选按钮（开）",
+        "block": 33,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Multi.Name_Off"
+        ],
+        "id": "panelmultiname_off",
+        "source_line": 73,
+        "text": "面板：多选按钮（关）",
+        "block": 34,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Multi.Lore"
+        ],
+        "id": "panelmultilore",
+        "source_line": 75,
+        "text": "面板：多选按钮的说明",
+        "block": 35,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Give_Selected"
+        ],
+        "id": "panelgive_selected",
+        "source_line": 77,
+        "text": "面板：多选时一起发的按钮",
+        "block": 36,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Revoke.Name"
+        ],
+        "id": "panelrevokename",
+        "source_line": 79,
+        "text": "面板：撤回按钮",
+        "block": 37,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Revoke.Lore_Last"
+        ],
+        "id": "panelrevokelore_last",
+        "source_line": 81,
+        "text": "面板：撤回按钮的说明（有能撤回的）",
+        "block": 38,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Revoke.Lore_None"
+        ],
+        "id": "panelrevokelore_none",
+        "source_line": 83,
+        "text": "面板：撤回按钮的说明（还没发过）",
+        "block": 39,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Weapon.Lore"
+        ],
+        "id": "panelweaponlore",
+        "source_line": 85,
+        "text": "面板：武器图标的说明",
+        "block": 40,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Weapon.Lore_Pick"
+        ],
+        "id": "panelweaponlore_pick",
+        "source_line": 87,
+        "text": "面板：多选时武器图标的说明（没勾）",
+        "block": 41,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Weapon.Lore_Picked"
+        ],
+        "id": "panelweaponlore_picked",
+        "source_line": 89,
+        "text": "面板：多选时武器图标的说明（已勾）",
+        "block": 42,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Players.Self"
+        ],
+        "id": "panelplayersself",
+        "source_line": 91,
+        "text": "面板：选人页的\"只发给自己\"按钮",
+        "block": 43,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Players.Done"
+        ],
+        "id": "panelplayersdone",
+        "source_line": 93,
+        "text": "面板：选人页的\"选好了\"按钮",
+        "block": 44,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Players.Picked"
+        ],
+        "id": "panelplayerspicked",
+        "source_line": 95,
+        "text": "面板：选人页里已选中的玩家",
+        "block": 45,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.History.Entry"
+        ],
+        "id": "panelhistoryentry",
+        "source_line": 97,
+        "text": "面板：发放记录页的一条记录",
+        "block": 46,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.History.Lore"
+        ],
+        "id": "panelhistorylore",
+        "source_line": 99,
+        "text": "面板：一条记录的说明（还能撤回）",
+        "block": 47,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.History.Lore_Revoked"
+        ],
+        "id": "panelhistorylore_revoked",
+        "source_line": 101,
+        "text": "面板：一条记录的说明（已经撤回）",
+        "block": 48,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Search_Prompt"
+        ],
+        "id": "panelsearch_prompt",
+        "source_line": 103,
+        "text": "用面板的人：点了搜索，等着输入关键词",
+        "block": 49,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Search_Cancelled"
+        ],
+        "id": "panelsearch_cancelled",
+        "source_line": 105,
+        "text": "用面板的人：没有搜索",
+        "block": 50,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Search_None"
+        ],
+        "id": "panelsearch_none",
+        "source_line": 107,
+        "text": "用面板的人：没搜到",
+        "block": 51,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Given"
+        ],
+        "id": "panelgiven",
+        "source_line": 109,
+        "text": "发枪的人：发出去了",
+        "block": 52,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Given_Partial"
+        ],
+        "id": "panelgiven_partial",
+        "source_line": 111,
+        "text": "发枪的人：对方背包放不下，只给了一部分",
+        "block": 53,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Revoke_Confirm"
+        ],
+        "id": "panelrevoke_confirm",
+        "source_line": 113,
+        "text": "撤回的人：再点一次确认",
+        "block": 54,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Revoked"
+        ],
+        "id": "panelrevoked",
+        "source_line": 115,
+        "text": "撤回的人：撤回完成",
+        "block": 55,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Revoke_Offline"
+        ],
+        "id": "panelrevoke_offline",
+        "source_line": 117,
+        "text": "撤回的人：对方不在线，给这名玩家的那份没收回",
+        "block": 56,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Revoke_None"
+        ],
+        "id": "panelrevoke_none",
+        "source_line": 119,
+        "text": "撤回的人：没有能撤回的记录",
+        "block": 57,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Revoke_Done"
+        ],
+        "id": "panelrevoke_done",
+        "source_line": 121,
+        "text": "撤回的人：这一次已经撤回过",
+        "block": 58,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Revoke_Not_Found"
+        ],
+        "id": "panelrevoke_not_found",
+        "source_line": 123,
+        "text": "撤回的人：编号写错",
+        "block": 59,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.No_Weapon"
+        ],
+        "id": "panelno_weapon",
+        "source_line": 125,
+        "text": "发枪的人：武器名写错",
+        "block": 60,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.No_Player"
+        ],
+        "id": "panelno_player",
+        "source_line": 127,
+        "text": "发枪的人：玩家不在线",
+        "block": 61,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.No_Others"
+        ],
+        "id": "panelno_others",
+        "source_line": 129,
+        "text": "发枪的人：没有发给别人的权限",
+        "block": 62,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Players_Only"
+        ],
+        "id": "panelplayers_only",
+        "source_line": 131,
+        "text": "控制台：执行了只有玩家能用的命令（比如 /csx panel）",
+        "block": 63,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.History_Line"
+        ],
+        "id": "panelhistory_line",
+        "source_line": 133,
+        "text": "执行 /csx history 的人：一条记录",
+        "block": 64,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.History_Revoked"
+        ],
+        "id": "panelhistory_revoked",
+        "source_line": 135,
+        "text": "执行 /csx history 的人：记录后面的\"已撤回\"",
+        "block": 65,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.History_Empty"
+        ],
+        "id": "panelhistory_empty",
+        "source_line": 137,
+        "text": "执行 /csx history 的人：还没有记录",
+        "block": 66,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Module.Panel.Name"
+        ],
+        "id": "modulepanelname",
+        "source_line": 139,
+        "text": "/csx 和控制台：功能名",
+        "block": 67,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Log.Give"
+        ],
+        "id": "panelloggive",
+        "source_line": 141,
+        "text": "发放记录和审计日志：操作是\"发放\"",
+        "block": 68,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Log.Revoke"
+        ],
+        "id": "panellogrevoke",
+        "source_line": 143,
+        "text": "发放记录和审计日志：操作是\"撤回\"",
+        "block": 69,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Log.Console"
+        ],
+        "id": "panellogconsole",
+        "source_line": 145,
+        "text": "发放记录和审计日志：操作人是控制台",
+        "block": 70,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Log.Many"
+        ],
+        "id": "panellogmany",
+        "source_line": 147,
+        "text": "发放记录和审计日志：发给很多人时的\"等几人\"",
+        "block": 71,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Usage_Give"
+        ],
+        "id": "panelusage_give",
+        "source_line": 149,
+        "text": "执行 /csx give 的人：写法不对",
+        "block": 72,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Usage_Revoke"
+        ],
+        "id": "panelusage_revoke",
+        "source_line": 151,
+        "text": "执行 /csx revoke 的人：写法不对",
+        "block": 73,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel.Usage_History"
+        ],
+        "id": "panelusage_history",
+        "source_line": 153,
+        "text": "执行 /csx history 的人：写法不对",
+        "block": 74,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Console.Panel_Write_Failed"
+        ],
+        "id": "consolepanel_write_failed",
+        "source_line": 155,
+        "text": "控制台：发放记录或审计日志写不进去",
+        "block": 75,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Module.MythicMobs.Name"
+        ],
+        "id": "modulemythicmobsname",
+        "source_line": 157,
+        "text": "/csx 和控制台：功能名",
+        "block": 76,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Module.MythicMobs.Detail"
+        ],
+        "id": "modulemythicmobsdetail",
+        "source_line": 159,
+        "text": "/csx 和控制台：用的 MythicMobs 版本",
+        "block": 77,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "MythicMobs.Unknown_Weapon"
+        ],
+        "id": "mythicmobsunknown_weapon",
+        "source_line": 161,
+        "text": "控制台：怪物掉落里的武器名找不到",
+        "block": 78,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "MythicMobs.Bad_Multiplier"
+        ],
+        "id": "mythicmobsbad_multiplier",
+        "source_line": 163,
+        "text": "控制台：怪物的武器伤害倍率写错",
+        "block": 79,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Reason.Plugin_Not_Found"
+        ],
+        "id": "reasonplugin_not_found",
+        "source_line": 165,
+        "text": "/csx 和控制台：没启用的原因（没装对应的插件）",
+        "block": 80,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Reason.Plugin_Version"
+        ],
+        "id": "reasonplugin_version",
+        "source_line": 167,
+        "text": "/csx 和控制台：没启用的原因（对应插件的版本不对）",
+        "block": 81,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Reason.Mythic_Not_Registered"
+        ],
+        "id": "reasonmythic_not_registered",
+        "source_line": 169,
+        "text": "/csx 和控制台：没启用的原因（掉落和条件没登记上）",
+        "block": 82,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Module.AttributePlus.Name"
+        ],
+        "id": "moduleattributeplusname",
+        "source_line": 172,
+        "text": "/csx 和控制台：功能名",
+        "block": 83,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Module.AttributePlus.Detail"
+        ],
+        "id": "moduleattributeplusdetail",
+        "source_line": 174,
+        "text": "/csx 和控制台：用的 AttributePlus 版本",
+        "block": 84,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "AttributePlus.Version_Untested"
+        ],
+        "id": "attributeplusversion_untested",
+        "source_line": 176,
+        "text": "控制台：AttributePlus 的版本没验证过",
+        "block": 85,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "AttributePlus.Internal_Changed"
+        ],
+        "id": "attributeplusinternal_changed",
+        "source_line": 178,
+        "text": "控制台：AttributePlus 内部的接口变了",
+        "block": 86,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Module.NeigeItems.Name"
+        ],
+        "id": "moduleneigeitemsname",
+        "source_line": 180,
+        "text": "/csx 和控制台：功能名",
+        "block": 87,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Module.NeigeItems.Detail"
+        ],
+        "id": "moduleneigeitemsdetail",
+        "source_line": 182,
+        "text": "/csx 和控制台：用的 NeigeItems 版本和绑定了几种枪、几种弹药",
+        "block": 88,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "NeigeItems.Unknown_Item"
+        ],
+        "id": "neigeitemsunknown_item",
+        "source_line": 184,
+        "text": "控制台：绑定里的物品 ID 找不到",
+        "block": 89,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "NeigeItems.Unknown_Weapon"
+        ],
+        "id": "neigeitemsunknown_weapon",
+        "source_line": 186,
+        "text": "控制台：绑定里的武器名找不到",
+        "block": 90,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "NeigeItems.Duplicate_Item"
+        ],
+        "id": "neigeitemsduplicate_item",
+        "source_line": 188,
+        "text": "控制台：同一件物品绑了两次",
+        "block": 91,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Module.PlaceholderAPI.Name"
+        ],
+        "id": "moduleplaceholderapiname",
+        "source_line": 190,
+        "text": "/csx 和控制台：功能名",
+        "block": 92,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Module.WorldGuard.Name"
+        ],
+        "id": "moduleworldguardname",
+        "source_line": 192,
+        "text": "/csx 和控制台：功能名",
+        "block": 93,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Module.WorldGuard.Detail"
+        ],
+        "id": "moduleworldguarddetail",
+        "source_line": 194,
+        "text": "/csx 和控制台：用的 WorldGuard 版本",
+        "block": 94,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Region.Shoot_Denied"
+        ],
+        "id": "regionshoot_denied",
+        "source_line": 196,
+        "text": "玩家：在禁枪的区域里开枪",
+        "block": 95,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Region.Weapon_Denied"
+        ],
+        "id": "regionweapon_denied",
+        "source_line": 198,
+        "text": "玩家：在不让用这把枪的区域里开枪",
+        "block": 96,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Region.Place_Denied"
+        ],
+        "id": "regionplace_denied",
+        "source_line": 200,
+        "text": "玩家：在不让放的区域里放地雷或遥控炸药",
+        "block": 97,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Console.Language_Invalid"
+        ],
+        "id": "consolelanguage_invalid",
+        "source_line": 203,
+        "text": "控制台：config.yml 的 Language 写错",
+        "block": 98,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Console.Config_Failed_Startup"
+        ],
+        "id": "consoleconfig_failed_startup",
+        "source_line": 205,
+        "text": "控制台：启动时 config.yml 读不出来",
+        "block": 99,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Console.Config_Failed_Reload"
+        ],
+        "id": "consoleconfig_failed_reload",
+        "source_line": 207,
+        "text": "控制台：重载时 config.yml 读不出来",
+        "block": 100,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Command.Reload_Failed"
+        ],
+        "id": "commandreload_failed",
+        "source_line": 209,
+        "text": "执行 /csx reload 的人：配置读不出来，没有重载",
+        "block": 101,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Reason.Unknown_Library"
+        ],
+        "id": "reasonunknown_library",
+        "source_line": 211,
+        "text": "/csx 和控制台：没启用的原因（发包库写错）",
+        "block": 102,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Reason.Placeholder_Taken"
+        ],
+        "id": "reasonplaceholder_taken",
+        "source_line": 213,
+        "text": "/csx 和控制台：没启用的原因（变量名被别的插件占了）",
+        "block": 103,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Reason.Flags_Not_Registered"
+        ],
+        "id": "reasonflags_not_registered",
+        "source_line": 215,
+        "text": "/csx 和控制台：没启用的原因（区域标志没注册上）",
+        "block": 104,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Reason.Flag_Conflict"
+        ],
+        "id": "reasonflag_conflict",
+        "source_line": 217,
+        "text": "/csx 和控制台：没启用的原因（区域标志重名）",
+        "block": 105,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "NeigeItems.Version_Untested"
+        ],
+        "id": "neigeitemsversion_untested",
+        "source_line": 219,
+        "text": "控制台：NeigeItems 的版本没验证过",
+        "block": 106,
+        "line": 1,
+        "heading": true
+      }
+    ]
+  },
+  {
+    "file": "configuration/config.md",
+    "title": "config.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "25264120f6d8a80da754d37bb62b0f9ff432e63aeed98c7a2402af4f4608be14",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "Language"
+        ],
+        "id": "language",
+        "source_line": 4,
+        "text": "CrackShotX 配置文件\n改完以后用 /csx reload 生效。\n提示使用的语言：zh_CN（简体中文）或 en_US（英文）。",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Visual_Fix"
+        ],
+        "id": "visual_fix",
+        "source_line": 11,
+        "text": "弹道视觉修复\n弹丸速度很高时（武器配置里的 Projectile_Speed 大于 39），玩家看到的弹道会向一侧弯，\n实际命中并不受影响。开启后弹道看起来是直的。\n需要服务器装有 PacketEvents 或 ProtocolLib 其中一个。\n1.21.9 及以后的版本本身没有这个问题，会自动跳过。",
+        "block": 1,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Visual_Fix",
+          "Enable"
+        ],
+        "id": "visual_fixenable",
+        "source_line": 12,
+        "text": "",
+        "block": 1,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "Visual_Fix",
+          "Packet_Library"
+        ],
+        "id": "visual_fixpacket_library",
+        "source_line": 14,
+        "text": "用哪个发包库：auto（自动，两个都装了就用 PacketEvents）、PacketEvents、ProtocolLib",
+        "block": 1,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "Panel"
+        ],
+        "id": "panel",
+        "source_line": 16,
+        "text": "",
+        "block": 2,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Panel",
+          "Enable"
+        ],
+        "id": "panelenable",
+        "source_line": 17,
+        "text": "",
+        "block": 2,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "Panel",
+          "Audit_Log"
+        ],
+        "id": "panelaudit_log",
+        "source_line": 19,
+        "text": "把每次发放和撤回记到 plugins/CrackShotX/logs/ 下",
+        "block": 2,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "MythicMobs"
+        ],
+        "id": "mythicmobs",
+        "source_line": 22,
+        "text": "MythicMobs 对接：怪物掉落里能写枪，技能条件能认枪，能按怪物调武器伤害。只支持 MythicMobs 5.x。",
+        "block": 3,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "MythicMobs",
+          "Enable"
+        ],
+        "id": "mythicmobsenable",
+        "source_line": 23,
+        "text": "",
+        "block": 3,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "AttributePlus"
+        ],
+        "id": "attributeplus",
+        "source_line": 28,
+        "text": "AttributePlus 对接：枪的伤害吃 AttributePlus 的属性（物理伤害、暴击、吸血、防御、闪避这些）。只支持 AttributePlus 3.3.3.6。\n想让两个插件互不干扰，把 Weapon_Damage 改成 false，不要关 Enable：\n关掉 Enable 会回到两个插件各管各的样子，爆炸类武器会多打出一截伤害、莫名其妙地吸血。",
+        "block": 4,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "AttributePlus",
+          "Enable"
+        ],
+        "id": "attributeplusenable",
+        "source_line": 29,
+        "text": "",
+        "block": 4,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "AttributePlus",
+          "Weapon_Damage"
+        ],
+        "id": "attributeplusweapon_damage",
+        "source_line": 31,
+        "text": "武器伤害进不进 AttributePlus 的属性计算。关掉以后枪只按 CrackShot 自己的伤害打",
+        "block": 4,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "AttributePlus",
+          "Excluded_Weapons"
+        ],
+        "id": "attributeplusexcluded_weapons",
+        "source_line": 33,
+        "text": "不进属性计算的武器，填内部名，比如 [Bazooka, Grenade]",
+        "block": 4,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "NeigeItems"
+        ],
+        "id": "neigeitems",
+        "source_line": 36,
+        "text": "NeigeItems 对接：NeigeItems 的物品能当 CrackShot 的枪和弹药。按物品 ID 认，随机出来的名字和说明不影响开火。\n验证过的是 NeigeItems 1.21.174。",
+        "block": 5,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "NeigeItems",
+          "Enable"
+        ],
+        "id": "neigeitemsenable",
+        "source_line": 37,
+        "text": "",
+        "block": 5,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "NeigeItems",
+          "Weapons"
+        ],
+        "id": "neigeitemsweapons",
+        "source_line": 39,
+        "text": "哪些 NeigeItems 物品是枪：左边是 NeigeItems 的物品 ID，右边是 CrackShot 的武器名。去掉下面的 # 照着写",
+        "block": 5,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "NeigeItems",
+          "Ammo"
+        ],
+        "id": "neigeitemsammo",
+        "source_line": 43,
+        "text": "Legend_Rifle: AK-47\n哪些 NeigeItems 物品是弹药：左边是 CrackShot 的武器名，下面列能给它当弹药的物品 ID，可以写多个。\n一发子弹扣弹药一点耐久；没有耐久就扣一次使用次数；两样都没有就扣一个。什么时候扣，照这把枪本来的配置",
+        "block": 5,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "PlaceholderAPI"
+        ],
+        "id": "placeholderapi",
+        "source_line": 49,
+        "text": "AK-47:\n    - Rifle_Magazine\nPlaceholderAPI 对接：计分板、聊天这些插件能用 %crackshot_ammo% 这类变量显示玩家手里的枪；\n反过来，CrackShot 发给玩家的文字里也能写别的插件的变量。全部变量见使用说明。",
+        "block": 6,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "PlaceholderAPI",
+          "Enable"
+        ],
+        "id": "placeholderapienable",
+        "source_line": 50,
+        "text": "",
+        "block": 6,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "PlaceholderAPI",
+          "Parse_Messages"
+        ],
+        "id": "placeholderapiparse_messages",
+        "source_line": 52,
+        "text": "解析 CrackShot 发给玩家的提示、武器的消息、武器执行的命令里的变量。物品的名字和说明不解析",
+        "block": 6,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "WorldGuard"
+        ],
+        "id": "worldguard",
+        "source_line": 57,
+        "text": "WorldGuard 对接：用区域标志规定哪里不能开枪、不受武器伤害、不能炸、不能放地雷，以及能用哪些枪。\n标志用 WorldGuard 的命令设置，比如 /rg flag spawn crackshot-shoot deny。只支持 WorldGuard 7.x。\n管理员也受这些标志限制，要让某人不受限制，给 crackshotx.bypass.region 权限。",
+        "block": 7,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "WorldGuard",
+          "Enable"
+        ],
+        "id": "worldguardenable",
+        "source_line": 58,
+        "text": "",
+        "block": 7,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "WorldGuard",
+          "Message_Cooldown"
+        ],
+        "id": "worldguardmessage_cooldown",
+        "source_line": 60,
+        "text": "同一名玩家多久提示一次“这里不能开枪”，单位是秒",
+        "block": 7,
+        "line": 6,
+        "heading": false
+      }
+    ]
+  },
+  {
+    "file": "configuration/index.md",
+    "title": "配置文件",
+    "source_kind": "imported-configuration",
+    "source_sha256": "25264120f6d8a80da754d37bb62b0f9ff432e63aeed98c7a2402af4f4608be14",
+    "translation_review": "reviewed",
+    "anchors": []
+  }
+]

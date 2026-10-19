@@ -1,0 +1,111 @@
+[
+  {
+    "file": "configuration/config.md",
+    "title": "config.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "ed84a5fc0bf1b4919b7f1f4244a8f3c8c1c8d7bbdf7512e5065cf6b54896b09d",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "enabled"
+        ],
+        "id": "enabled",
+        "source_line": 1,
+        "text": "是否启用网页面板和 WebSocket。",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "panel"
+        ],
+        "id": "panel",
+        "source_line": 2,
+        "text": "",
+        "block": 1,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "panel",
+          "enabled"
+        ],
+        "id": "panelenabled",
+        "source_line": 3,
+        "text": "",
+        "block": 1,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "panel",
+          "port"
+        ],
+        "id": "panelport",
+        "source_line": 5,
+        "text": "网页面板使用的端口，请确保该端口已开放。",
+        "block": 1,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "websocket"
+        ],
+        "id": "websocket",
+        "source_line": 6,
+        "text": "",
+        "block": 2,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "websocket",
+          "port"
+        ],
+        "id": "websocketport",
+        "source_line": 8,
+        "text": "WebSocket 服务使用的端口，请确保该端口已开放。",
+        "block": 2,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "websocket",
+          "auth"
+        ],
+        "id": "websocketauth",
+        "source_line": 11,
+        "text": "连接时使用的身份验证方式。不清楚用途时请保持默认。\n可用值：none（不建议）、session",
+        "block": 2,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "hostname"
+        ],
+        "id": "hostname",
+        "source_line": 13,
+        "text": "服务器的主机地址，请改为你的服务器 IP。",
+        "block": 3,
+        "line": 1,
+        "heading": true
+      }
+    ]
+  },
+  {
+    "file": "configuration/index.md",
+    "title": "配置文件",
+    "source_kind": "imported-configuration",
+    "source_sha256": "ed84a5fc0bf1b4919b7f1f4244a8f3c8c1c8d7bbdf7512e5065cf6b54896b09d",
+    "translation_review": "reviewed",
+    "anchors": []
+  }
+]

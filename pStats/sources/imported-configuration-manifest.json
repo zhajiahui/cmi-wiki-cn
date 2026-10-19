@@ -1,0 +1,74 @@
+[
+  {
+    "file": "configuration/config.md",
+    "title": "config.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "f16c3f71243979b4f3e129a822fcd44405141b061a5a9c366f422c5be05fdb92",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "enabled"
+        ],
+        "id": "enabled",
+        "source_line": 5,
+        "text": "pStats 会为插件作者收集一些数据，例如有多少服务器正在使用其插件。\n为支持他们的工作，不应禁用此功能。\n此功能对服务器性能几乎没有影响！\n访问 https://pstats.devs.beer/ 了解更多 :)",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "serverUuid"
+        ],
+        "id": "serveruuid",
+        "source_line": 6,
+        "text": "",
+        "block": 1,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "logFailedRequests"
+        ],
+        "id": "logfailedrequests",
+        "source_line": 7,
+        "text": "",
+        "block": 2,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "logSentData"
+        ],
+        "id": "logsentdata",
+        "source_line": 8,
+        "text": "",
+        "block": 3,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "logResponseStatusText"
+        ],
+        "id": "logresponsestatustext",
+        "source_line": 9,
+        "text": "",
+        "block": 4,
+        "line": 1,
+        "heading": true
+      }
+    ]
+  },
+  {
+    "file": "configuration/index.md",
+    "title": "配置文件",
+    "source_kind": "imported-configuration",
+    "source_sha256": "f16c3f71243979b4f3e129a822fcd44405141b061a5a9c366f422c5be05fdb92",
+    "translation_review": "reviewed",
+    "anchors": []
+  }
+]

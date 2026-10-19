@@ -1,12 +1,12 @@
 site_name: Minecraft 插件中文 Wiki
-site_description: Minecraft 插件中文文档：CMI、Residence、Typewriter 与 Phoenix 系列。
+site_description: CMI、Residence、Typewriter、Phoenix 系列及常用插件的中文文档与配置说明。
 site_url: https://zhajiahui.github.io/cmi-wiki-cn/
 repo_url: https://github.com/zhajiahui/cmi-wiki-cn
 repo_name: zhajiahui/cmi-wiki-cn
 edit_uri: edit/main/
 use_directory_urls: true
 exclude_docs: ''
-copyright: CMI、Residence、Typewriter 与 Phoenix 系列原文与资源归原作者所有。
+copyright: 各插件原文与资源归各自作者所有。
 dev_addr: 127.0.0.1:8000
 watch:
 - ../CMI/docs
@@ -31,6 +31,48 @@ watch:
 - ../BountyHunters/mkdocs.yml
 - ../Contracts/docs
 - ../Contracts/mkdocs.yml
+- ../Plugins/docs
+- ../Plugins/mkdocs.yml
+- ../CMILib/docs
+- ../CMILib/mkdocs.yml
+- ../LuckPerms/docs
+- ../LuckPerms/mkdocs.yml
+- ../PlaceholderAPI/docs
+- ../PlaceholderAPI/mkdocs.yml
+- ../ProtocolLib/docs
+- ../ProtocolLib/mkdocs.yml
+- ../packetevents/docs
+- ../packetevents/mkdocs.yml
+- ../Vault/docs
+- ../Vault/mkdocs.yml
+- ../LoneLibs/docs
+- ../LoneLibs/mkdocs.yml
+- ../Citizens/docs
+- ../Citizens/mkdocs.yml
+- ../Multiverse-Core/docs
+- ../Multiverse-Core/mkdocs.yml
+- ../WorldEdit/docs
+- ../WorldEdit/mkdocs.yml
+- ../WorldGuard/docs
+- ../WorldGuard/mkdocs.yml
+- ../AttributePlus/docs
+- ../AttributePlus/mkdocs.yml
+- ../CrackShot/docs
+- ../CrackShot/mkdocs.yml
+- ../CrackShotX/docs
+- ../CrackShotX/mkdocs.yml
+- ../ItemsAdder/docs
+- ../ItemsAdder/mkdocs.yml
+- ../MythicMobs/docs
+- ../MythicMobs/mkdocs.yml
+- ../NeigeItems/docs
+- ../NeigeItems/mkdocs.yml
+- ../spark/docs
+- ../spark/mkdocs.yml
+- ../bStats/docs
+- ../bStats/mkdocs.yml
+- ../pStats/docs
+- ../pStats/mkdocs.yml
 theme:
   name: material
   language: zh

@@ -1,0 +1,18 @@
+{
+  "project": "Vault",
+  "version": "1.7.3-b131",
+  "source_date": "2026-10-19",
+  "source_kind": "user-supplied-configuration-examples",
+  "index": true,
+  "files": [
+    {
+      "name": "config.yml",
+      "page": "configuration/config.md",
+      "language": "yaml",
+      "description": "主配置。",
+      "code": "update-check: true\n",
+      "redacted_paths": [],
+      "source_sha256": "9648981b41b71acc33b0ce877e9f661215d6bf42819d82b0f7ed6ba34ef0d367"
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+[
+  {
+    "file": "configuration/config.md",
+    "title": "config.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "c3f610bc8edcf79ececee1ce711a75f368dde0264de94a9844119d34c0dfb0e3",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "Language"
+        ],
+        "id": "language",
+        "source_line": 1,
+        "text": "要使用的语言文件。",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "LanguageDownload"
+        ],
+        "id": "languagedownload",
+        "source_line": 4,
+        "text": "是否从 GitHub 仓库自动下载默认语言文件。\n如果使用 EN，或已经配置好所用语言且无需下载其他语言，可以禁用此项。",
+        "block": 1,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "AutoUpdate"
+        ],
+        "id": "autoupdate",
+        "source_line": 6,
+        "text": "启用后，插件会尝试自动将 CMILib 更新到最新版本。",
+        "block": 2,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "ExploitPatcher"
+        ],
+        "id": "exploitpatcher",
+        "source_line": 7,
+        "text": "",
+        "block": 3,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "ExploitPatcher",
+          "Placeholders"
+        ],
+        "id": "exploitpatcherplaceholders",
+        "source_line": 8,
+        "text": "",
+        "block": 3,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExploitPatcher",
+          "Placeholders",
+          "blocked"
+        ],
+        "id": "exploitpatcherplaceholdersblocked",
+        "source_line": 9,
+        "text": "",
+        "block": 3,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExploitPatcher",
+          "Placeholders",
+          "blocked",
+          "checkItem"
+        ],
+        "id": "exploitpatcherplaceholdersblockedcheckitem",
+        "source_line": 12,
+        "text": "默认屏蔽 PAPI 的 %checkitem_...% 占位符，以避免其可能引发的严重问题。\n仅在已有专门的防护措施时才关闭此项。",
+        "block": 3,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "Skins"
+        ],
+        "id": "skins",
+        "source_line": 13,
+        "text": "",
+        "block": 4,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Skins",
+          "SkinUpdateTimer"
+        ],
+        "id": "skinsskinupdatetimer",
+        "source_line": 18,
+        "text": "从 Mojang 在线服务器更新皮肤信息的间隔，单位：分钟。\n请注意，服务器每分钟只能发送 1 次请求，因此应设置合理的间隔，例如一小时或更久。\n例如，设为 1 小时后，只有玩家已有皮肤信息超过 1 小时，才会更新该玩家的皮肤信息。\n此操作仅在玩家加入服务器或手动更换皮肤时触发。",
+        "block": 4,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "Skins",
+          "SkinRequestFrequency"
+        ],
+        "id": "skinsskinrequestfrequency",
+        "source_line": 21,
+        "text": "向 Mojang 服务器发送请求的间隔，单位：分钟。\n此项用于限制一定时间内的请求数量，避免可能出现的请求过于密集。",
+        "block": 4,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "GlobalGui"
+        ],
+        "id": "globalgui",
+        "source_line": 22,
+        "text": "",
+        "block": 5,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "GlobalGui",
+          "EmptyField"
+        ],
+        "id": "globalguiemptyfield",
+        "source_line": 24,
+        "text": "GUI 的空白格需要填充时使用的物品类型。",
+        "block": 5,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "GlobalGui",
+          "Pages"
+        ],
+        "id": "globalguipages",
+        "source_line": 25,
+        "text": "",
+        "block": 5,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "GlobalGui",
+          "Pages",
+          "Previous"
+        ],
+        "id": "globalguipagesprevious",
+        "source_line": 27,
+        "text": "界面中“上一页”按钮的图标。",
+        "block": 5,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "GlobalGui",
+          "Pages",
+          "Next"
+        ],
+        "id": "globalguipagesnext",
+        "source_line": 29,
+        "text": "界面中“下一页”按钮的图标。",
+        "block": 5,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "GlobalGui",
+          "Pages",
+          "Middle"
+        ],
+        "id": "globalguipagesmiddle",
+        "source_line": 31,
+        "text": "界面中“信息”按钮的图标。",
+        "block": 5,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "GlobalGui",
+          "Close"
+        ],
+        "id": "globalguiclose",
+        "source_line": 33,
+        "text": "界面中“关闭”按钮的图标。",
+        "block": 5,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "GlobalGui",
+          "Info"
+        ],
+        "id": "globalguiinfo",
+        "source_line": 35,
+        "text": "界面中“信息”按钮的图标。",
+        "block": 5,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "Spawners"
+        ],
+        "id": "spawners",
+        "source_line": 36,
+        "text": "",
+        "block": 6,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Spawners",
+          "mysterySpawners"
+        ],
+        "id": "spawnersmysteryspawners",
+        "source_line": 38,
+        "text": "使用 spawner:random 变量时可供选择的刷怪笼列表。",
+        "block": 6,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "RMCCommands"
+        ],
+        "id": "rmccommands",
+        "source_line": 44,
+        "text": "",
+        "block": 7,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "RMCCommands",
+          "ConsoleLog"
+        ],
+        "id": "rmccommandsconsolelog",
+        "source_line": 46,
+        "text": "启用后，使用 rmc 命令时会(在可行的情况下)附上所执行的具体命令。",
+        "block": 7,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "Images"
+        ],
+        "id": "images",
+        "source_line": 47,
+        "text": "",
+        "block": 8,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Images",
+          "Filler"
+        ],
+        "id": "imagesfiller",
+        "source_line": 51,
+        "text": "用于构成图像区域的字符。\n此处不支持颜色代码。\n由于部分图像已经缓存，此设置在服务器重启后才会完全生效。",
+        "block": 8,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "Images",
+          "EmptyFiller"
+        ],
+        "id": "imagesemptyfiller",
+        "source_line": 54,
+        "text": "用于填充图像空白区域的字符。\n此处支持颜色代码。",
+        "block": 8,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "Colors"
+        ],
+        "id": "colors",
+        "source_line": 55,
+        "text": "",
+        "block": 9,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Colors",
+          "OfficialHex"
+        ],
+        "id": "colorsofficialhex",
+        "source_line": 58,
+        "text": "启用后，除 {#f6f6f6} 和 {#red} 外，插件还会尝试识别 #f6f6f6 或 #ff6 等简写的十六进制颜色代码。\n请注意，这会增加额外的检查；简写格式不支持渐变或颜色名称，这两种情况仍需使用较完整的格式。",
+        "block": 9,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "Colors",
+          "QuirkyHex"
+        ],
+        "id": "colorsquirkyhex",
+        "source_line": 61,
+        "text": "启用后，除 {#f6f6f6} 和 {#red} 外，插件还会尝试识别 &#f6f6f6 或 &#ff6 等特殊格式的十六进制颜色代码。\n请注意，这会增加额外的检查；特殊格式不支持渐变或颜色名称，这两种情况仍需使用较完整的格式。",
+        "block": 9,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "Colors",
+          "Global"
+        ],
+        "id": "colorsglobal",
+        "source_line": 64,
+        "text": "定义语言文件使用的全局聊天颜色。\n此项可让你同时修改多处颜色。",
+        "block": 9,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "Colors",
+          "Global",
+          "Primary"
+        ],
+        "id": "colorsglobalprimary",
+        "source_line": 67,
+        "text": "使用 {gcp} 引用此颜色。默认值：{#gold}\n普通文本使用的主要颜色。",
+        "block": 9,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "Colors",
+          "Global",
+          "Secondary"
+        ],
+        "id": "colorsglobalsecondary",
+        "source_line": 70,
+        "text": "使用 {gcs} 引用此颜色。默认值：{#yellow}\n通常用于变量和占位符。",
+        "block": 9,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "Colors",
+          "Global",
+          "Warning"
+        ],
+        "id": "colorsglobalwarning",
+        "source_line": 73,
+        "text": "使用 {gcw} 引用此颜色。默认值：{#FF7357}\n用于提示命令用法有误，通常不如错误提示重要。",
+        "block": 9,
+        "line": 17,
+        "heading": false
+      },
+      {
+        "path": [
+          "Colors",
+          "Global",
+          "Neutral"
+        ],
+        "id": "colorsglobalneutral",
+        "source_line": 76,
+        "text": "使用 {gcn} 引用此颜色。默认值：{#gray}\n较为中性的颜色，用于无需引起过多注意的文本。",
+        "block": 9,
+        "line": 20,
+        "heading": false
+      },
+      {
+        "path": [
+          "Colors",
+          "Global",
+          "Uplift"
+        ],
+        "id": "colorsglobaluplift",
+        "source_line": 79,
+        "text": "使用 {gcu} 引用此颜色。默认值：{#59C959}\n表示正面结果的颜色，例如创建家传送点记录。",
+        "block": 9,
+        "line": 23,
+        "heading": false
+      },
+      {
+        "path": [
+          "Colors",
+          "Global",
+          "Downlift"
+        ],
+        "id": "colorsglobaldownlift",
+        "source_line": 82,
+        "text": "使用 {gcd} 引用此颜色。默认值：{#E89280}\n表示负面结果的颜色，例如移除家传送点记录。",
+        "block": 9,
+        "line": 26,
+        "heading": false
+      },
+      {
+        "path": [
+          "Colors",
+          "Global",
+          "Error"
+        ],
+        "id": "colorsglobalerror",
+        "source_line": 85,
+        "text": "使用 {gce} 引用此颜色。默认值：{#red}\n用于提示严重错误。",
+        "block": 9,
+        "line": 29,
+        "heading": false
+      }
+    ]
+  },
+  {
+    "file": "configuration/index.md",
+    "title": "配置文件",
+    "source_kind": "imported-configuration",
+    "source_sha256": "c3f610bc8edcf79ececee1ce711a75f368dde0264de94a9844119d34c0dfb0e3",
+    "translation_review": "reviewed",
+    "anchors": []
+  }
+]

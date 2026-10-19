@@ -1,0 +1,5822 @@
+[
+  {
+    "file": "configuration/lang/zh_cn.md",
+    "title": "lang/zh_CN.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "28f3a75216800963d7cdf794347452377e0c0c38a0076f61c7e73021922845e6",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "mechanism_shield"
+        ],
+        "id": "mechanism_shield",
+        "source_line": 0,
+        "text": "",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "equipment_level"
+        ],
+        "id": "equipment_level",
+        "source_line": 1,
+        "text": "",
+        "block": 1,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "equipment_permission"
+        ],
+        "id": "equipment_permission",
+        "source_line": 2,
+        "text": "",
+        "block": 2,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "equipment_slot"
+        ],
+        "id": "equipment_slot",
+        "source_line": 3,
+        "text": "",
+        "block": 3,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "equipment_condition"
+        ],
+        "id": "equipment_condition",
+        "source_line": 4,
+        "text": "",
+        "block": 4,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "equipment_slot_type"
+        ],
+        "id": "equipment_slot_type",
+        "source_line": 6,
+        "text": "",
+        "block": 5,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "equipment_professional"
+        ],
+        "id": "equipment_professional",
+        "source_line": 7,
+        "text": "",
+        "block": 6,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "equipment_level_not_meet"
+        ],
+        "id": "equipment_level_not_meet",
+        "source_line": 8,
+        "text": "",
+        "block": 7,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "equipment_level_scope_not_meet"
+        ],
+        "id": "equipment_level_scope_not_meet",
+        "source_line": 9,
+        "text": "",
+        "block": 8,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "attack_item_left"
+        ],
+        "id": "attack_item_left",
+        "source_line": 11,
+        "text": "",
+        "block": 9,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "attack_item_remote"
+        ],
+        "id": "attack_item_remote",
+        "source_line": 12,
+        "text": "",
+        "block": 10,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "skillapi_exp_addition"
+        ],
+        "id": "skillapi_exp_addition",
+        "source_line": 14,
+        "text": "",
+        "block": 11,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "stats_head"
+        ],
+        "id": "stats_head",
+        "source_line": 17,
+        "text": "书本界面的属性统计相关内容",
+        "block": 12,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "stats_attack"
+        ],
+        "id": "stats_attack",
+        "source_line": 18,
+        "text": "",
+        "block": 13,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "stats_defense"
+        ],
+        "id": "stats_defense",
+        "source_line": 19,
+        "text": "",
+        "block": 14,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "stats_other"
+        ],
+        "id": "stats_other",
+        "source_line": 20,
+        "text": "",
+        "block": 15,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "stats_info"
+        ],
+        "id": "stats_info",
+        "source_line": 21,
+        "text": "",
+        "block": 16,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "attack"
+        ],
+        "id": "attack",
+        "source_line": 28,
+        "text": "默认生成的属性标签，修改属性名等请前往 attribute.yml\n没什么需要请不要修改这里",
+        "block": 17,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "pvp_attack"
+        ],
+        "id": "pvp_attack",
+        "source_line": 29,
+        "text": "",
+        "block": 18,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "pve_attack"
+        ],
+        "id": "pve_attack",
+        "source_line": 30,
+        "text": "",
+        "block": 19,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "accumulate_addition"
+        ],
+        "id": "accumulate_addition",
+        "source_line": 31,
+        "text": "",
+        "block": 20,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "accumulate_disturb"
+        ],
+        "id": "accumulate_disturb",
+        "source_line": 32,
+        "text": "",
+        "block": 21,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "defense"
+        ],
+        "id": "defense",
+        "source_line": 33,
+        "text": "",
+        "block": 22,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "pvp_defense"
+        ],
+        "id": "pvp_defense",
+        "source_line": 34,
+        "text": "",
+        "block": 23,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "pve_defense"
+        ],
+        "id": "pve_defense",
+        "source_line": 35,
+        "text": "",
+        "block": 24,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "health"
+        ],
+        "id": "health",
+        "source_line": 36,
+        "text": "",
+        "block": 25,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "armor"
+        ],
+        "id": "armor",
+        "source_line": 37,
+        "text": "",
+        "block": 26,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "restore"
+        ],
+        "id": "restore",
+        "source_line": 38,
+        "text": "",
+        "block": 27,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "restore_ratio"
+        ],
+        "id": "restore_ratio",
+        "source_line": 39,
+        "text": "",
+        "block": 28,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "crit"
+        ],
+        "id": "crit",
+        "source_line": 40,
+        "text": "",
+        "block": 29,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "crit_rate"
+        ],
+        "id": "crit_rate",
+        "source_line": 41,
+        "text": "",
+        "block": 30,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "crit_resist"
+        ],
+        "id": "crit_resist",
+        "source_line": 42,
+        "text": "",
+        "block": 31,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "crit_damage_resist"
+        ],
+        "id": "crit_damage_resist",
+        "source_line": 43,
+        "text": "",
+        "block": 32,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "crit_dodge"
+        ],
+        "id": "crit_dodge",
+        "source_line": 44,
+        "text": "",
+        "block": 33,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "vampire"
+        ],
+        "id": "vampire",
+        "source_line": 45,
+        "text": "",
+        "block": 34,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "vampire_rate"
+        ],
+        "id": "vampire_rate",
+        "source_line": 46,
+        "text": "",
+        "block": 35,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "vampire_resist"
+        ],
+        "id": "vampire_resist",
+        "source_line": 47,
+        "text": "",
+        "block": 36,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "vampire_dodge"
+        ],
+        "id": "vampire_dodge",
+        "source_line": 48,
+        "text": "",
+        "block": 37,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "reflection"
+        ],
+        "id": "reflection",
+        "source_line": 49,
+        "text": "",
+        "block": 38,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "reflection_rate"
+        ],
+        "id": "reflection_rate",
+        "source_line": 50,
+        "text": "",
+        "block": 39,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "fire"
+        ],
+        "id": "fire",
+        "source_line": 51,
+        "text": "",
+        "block": 40,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "fire_damage"
+        ],
+        "id": "fire_damage",
+        "source_line": 52,
+        "text": "",
+        "block": 41,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "dodge"
+        ],
+        "id": "dodge",
+        "source_line": 53,
+        "text": "",
+        "block": 42,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "hit"
+        ],
+        "id": "hit",
+        "source_line": 54,
+        "text": "",
+        "block": 43,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "frozen"
+        ],
+        "id": "frozen",
+        "source_line": 55,
+        "text": "",
+        "block": 44,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "frozen_intensity"
+        ],
+        "id": "frozen_intensity",
+        "source_line": 56,
+        "text": "",
+        "block": 45,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "moving"
+        ],
+        "id": "moving",
+        "source_line": 57,
+        "text": "",
+        "block": 46,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "exp_addition"
+        ],
+        "id": "exp_addition",
+        "source_line": 58,
+        "text": "",
+        "block": 47,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "lightning"
+        ],
+        "id": "lightning",
+        "source_line": 59,
+        "text": "",
+        "block": 48,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "lightning_damage"
+        ],
+        "id": "lightning_damage",
+        "source_line": 60,
+        "text": "",
+        "block": 49,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "real_attack"
+        ],
+        "id": "real_attack",
+        "source_line": 61,
+        "text": "",
+        "block": 50,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "sunder_armor"
+        ],
+        "id": "sunder_armor",
+        "source_line": 62,
+        "text": "",
+        "block": 51,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "see_through"
+        ],
+        "id": "see_through",
+        "source_line": 63,
+        "text": "",
+        "block": 52,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "summon_intensity"
+        ],
+        "id": "summon_intensity",
+        "source_line": 64,
+        "text": "",
+        "block": 53,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "shoot_speed"
+        ],
+        "id": "shoot_speed",
+        "source_line": 65,
+        "text": "",
+        "block": 54,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "shoot_spread"
+        ],
+        "id": "shoot_spread",
+        "source_line": 66,
+        "text": "",
+        "block": 55,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "shoot_through"
+        ],
+        "id": "shoot_through",
+        "source_line": 67,
+        "text": "",
+        "block": 56,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "break_shield"
+        ],
+        "id": "break_shield",
+        "source_line": 68,
+        "text": "",
+        "block": 57,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "shield_block"
+        ],
+        "id": "shield_block",
+        "source_line": 69,
+        "text": "",
+        "block": 58,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "remote_immune"
+        ],
+        "id": "remote_immune",
+        "source_line": 70,
+        "text": "",
+        "block": 59,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "shoot_attribute"
+        ],
+        "id": "shoot_attribute",
+        "source_line": 72,
+        "text": "",
+        "block": 60,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "attribute_read_conflict"
+        ],
+        "id": "attribute_read_conflict",
+        "source_line": 74,
+        "text": "",
+        "block": 61,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "register"
+        ],
+        "id": "register",
+        "source_line": 81,
+        "text": "",
+        "block": 62,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "register_external_attribute"
+        ],
+        "id": "register_external_attribute",
+        "source_line": 82,
+        "text": "",
+        "block": 63,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "register_external_attribute_over"
+        ],
+        "id": "register_external_attribute_over",
+        "source_line": 83,
+        "text": "",
+        "block": 64,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "attribute_register"
+        ],
+        "id": "attribute_register",
+        "source_line": 84,
+        "text": "",
+        "block": 65,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "priority_attribute_register"
+        ],
+        "id": "priority_attribute_register",
+        "source_line": 85,
+        "text": "",
+        "block": 66,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "attribute_close"
+        ],
+        "id": "attribute_close",
+        "source_line": 86,
+        "text": "",
+        "block": 67,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "attribute_enable_killer"
+        ],
+        "id": "attribute_enable_killer",
+        "source_line": 87,
+        "text": "",
+        "block": 68,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "attribute_custom_unknown"
+        ],
+        "id": "attribute_custom_unknown",
+        "source_line": 88,
+        "text": "",
+        "block": 69,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "attribute_custom_error"
+        ],
+        "id": "attribute_custom_error",
+        "source_line": 89,
+        "text": "",
+        "block": 70,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "register_custom_trigger"
+        ],
+        "id": "register_custom_trigger",
+        "source_line": 90,
+        "text": "",
+        "block": 71,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "read_register"
+        ],
+        "id": "read_register",
+        "source_line": 92,
+        "text": "",
+        "block": 72,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "read_unregister"
+        ],
+        "id": "read_unregister",
+        "source_line": 93,
+        "text": "",
+        "block": 73,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "script_register"
+        ],
+        "id": "script_register",
+        "source_line": 95,
+        "text": "",
+        "block": 74,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "script_register_over"
+        ],
+        "id": "script_register_over",
+        "source_line": 96,
+        "text": "",
+        "block": 75,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "script_register_error"
+        ],
+        "id": "script_register_error",
+        "source_line": 97,
+        "text": "",
+        "block": 76,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "script_register_error_text"
+        ],
+        "id": "script_register_error_text",
+        "source_line": 98,
+        "text": "",
+        "block": 77,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "script_exception"
+        ],
+        "id": "script_exception",
+        "source_line": 99,
+        "text": "",
+        "block": 78,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "standby_script_tool"
+        ],
+        "id": "standby_script_tool",
+        "source_line": 100,
+        "text": "",
+        "block": 79,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "plugin_reload"
+        ],
+        "id": "plugin_reload",
+        "source_line": 102,
+        "text": "",
+        "block": 80,
+        "line": 1,
+        "heading": true
+      }
+    ]
+  },
+  {
+    "file": "configuration/kether.md",
+    "title": "kether.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "28f3a75216800963d7cdf794347452377e0c0c38a0076f61c7e73021922845e6",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "load-error"
+        ],
+        "id": "load-error",
+        "source_line": 0,
+        "text": "",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "load-error",
+          "fail"
+        ],
+        "id": "load-errorfail",
+        "source_line": 1,
+        "text": "",
+        "block": 0,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "load-error",
+          "string-not-close"
+        ],
+        "id": "load-errorstring-not-close",
+        "source_line": 2,
+        "text": "",
+        "block": 0,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "load-error",
+          "not-match"
+        ],
+        "id": "load-errornot-match",
+        "source_line": 3,
+        "text": "",
+        "block": 0,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "load-error",
+          "unknown-action"
+        ],
+        "id": "load-errorunknown-action",
+        "source_line": 4,
+        "text": "",
+        "block": 0,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "load-error",
+          "not-duration"
+        ],
+        "id": "load-errornot-duration",
+        "source_line": 5,
+        "text": "",
+        "block": 0,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "load-error",
+          "eof"
+        ],
+        "id": "load-erroreof",
+        "source_line": 6,
+        "text": "",
+        "block": 0,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "load-error",
+          "block-error"
+        ],
+        "id": "load-errorblock-error",
+        "source_line": 7,
+        "text": "",
+        "block": 0,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "load-error",
+          "unhandled"
+        ],
+        "id": "load-errorunhandled",
+        "source_line": 8,
+        "text": "",
+        "block": 0,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "load-error",
+          "not-symbol"
+        ],
+        "id": "load-errornot-symbol",
+        "source_line": 9,
+        "text": "",
+        "block": 0,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "load-error",
+          "not-command-sender"
+        ],
+        "id": "load-errornot-command-sender",
+        "source_line": 10,
+        "text": "",
+        "block": 0,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "load-error",
+          "not-event-operator"
+        ],
+        "id": "load-errornot-event-operator",
+        "source_line": 11,
+        "text": "",
+        "block": 0,
+        "line": 12,
+        "heading": false
+      },
+      {
+        "path": [
+          "load-error",
+          "not-event"
+        ],
+        "id": "load-errornot-event",
+        "source_line": 12,
+        "text": "",
+        "block": 0,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "load-error",
+          "not-player-operator"
+        ],
+        "id": "load-errornot-player-operator",
+        "source_line": 13,
+        "text": "",
+        "block": 0,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "load-error",
+          "not-material"
+        ],
+        "id": "load-errornot-material",
+        "source_line": 14,
+        "text": "",
+        "block": 0,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "load-error",
+          "custom"
+        ],
+        "id": "load-errorcustom",
+        "source_line": 15,
+        "text": "",
+        "block": 0,
+        "line": 16,
+        "heading": false
+      }
+    ]
+  },
+  {
+    "file": "configuration/datasource.md",
+    "title": "datasource.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "28f3a75216800963d7cdf794347452377e0c0c38a0076f61c7e73021922845e6",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "DefaultSettings"
+        ],
+        "id": "defaultsettings",
+        "source_line": 2,
+        "text": "HikariCP 的默认设置适用于大多数部署环境，通常无需额外调整。\nhttps://github.com/brettwooldridge/HikariCP#gear-configuration-knobs-baby",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "DefaultSettings",
+          "DriverClassName"
+        ],
+        "id": "defaultsettingsdriverclassname",
+        "source_line": 6,
+        "text": "HikariCP 会尝试让 DriverManager 根据 jdbcUrl 识别驱动，\n但部分旧驱动还需要指定 driverClassName。\n除非出现明确提示“找不到驱动”的错误，否则省略此项。默认值：none",
+        "block": 0,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "DefaultSettings",
+          "AutoCommit"
+        ],
+        "id": "defaultsettingsautocommit",
+        "source_line": 9,
+        "text": "从连接池取出的连接默认是否自动提交事务。\n此项为布尔值。默认值：true",
+        "block": 0,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "DefaultSettings",
+          "MinimumIdle"
+        ],
+        "id": "defaultsettingsminimumidle",
+        "source_line": 15,
+        "text": "HikariCP 尝试在连接池中保留的最少空闲连接数。\n空闲连接数低于此值，且总连接数低于 maximumPoolSize 时，\nHikariCP 会尽可能快速补充连接。\n不过，为获得更好的性能并及时应对突发请求，建议不设置此值，让 HikariCP 使用固定大小的连接池。\n默认值：与 maximumPoolSize 相同",
+        "block": 0,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "DefaultSettings",
+          "MaximumPoolSize"
+        ],
+        "id": "defaultsettingsmaximumpoolsize",
+        "source_line": 21,
+        "text": "连接池允许的最大连接数，包括空闲连接和正在使用的连接。\n此值基本决定了与后端数据库建立的实际连接数上限。\n应根据实际运行环境选择合理的值。\n连接池达到此大小且没有空闲连接时，getConnection() 最多阻塞 connectionTimeout 毫秒，随后超时。\n请查阅连接池大小的相关说明。默认值：10",
+        "block": 0,
+        "line": 17,
+        "heading": false
+      },
+      {
+        "path": [
+          "DefaultSettings",
+          "ValidationTimeout"
+        ],
+        "id": "defaultsettingsvalidationtimeout",
+        "source_line": 24,
+        "text": "检测连接是否仍然可用时允许等待的最长时间。\n必须小于 connectionTimeout。最小允许值为 250 ms。默认值：5000",
+        "block": 0,
+        "line": 23,
+        "heading": false
+      },
+      {
+        "path": [
+          "DefaultSettings",
+          "ConnectionTimeout"
+        ],
+        "id": "defaultsettingsconnectiontimeout",
+        "source_line": 28,
+        "text": "客户端从连接池获取连接时，最多等待多少毫秒。\n超过此时长仍无可用连接时，抛出 SQLException。\n最小允许值为 250 ms。默认值：30000（30 秒）",
+        "block": 0,
+        "line": 26,
+        "heading": false
+      },
+      {
+        "path": [
+          "DefaultSettings",
+          "IdleTimeout"
+        ],
+        "id": "defaultsettingsidletimeout",
+        "source_line": 36,
+        "text": "连接在池中最多可保持空闲多久。\n仅当 minimumIdle 小于 maximumPoolSize 时生效。\n连接数已降至 minimumIdle 时，不再移除空闲连接。\n实际移除时间可能比此值晚，最大偏差为 +30 秒，平均偏差为 +15 秒。\n不会在达到此空闲时长前移除连接。\n设为 0，永不因空闲而移除连接。\n最小允许值为 10000ms（10 秒）。默认值：600000（10 分钟）",
+        "block": 0,
+        "line": 30,
+        "heading": false
+      },
+      {
+        "path": [
+          "DefaultSettings",
+          "MaxLifetime"
+        ],
+        "id": "defaultsettingsmaxlifetime",
+        "source_line": 43,
+        "text": "池中连接的最长存活时间。\n正在使用的连接不会被移除；归还并关闭后才会移出连接池。\n各连接的存活时间会略微错开，避免大量连接同时失效。\n强烈建议设置此值，且应比数据库或基础设施施加的连接时限短几秒。\n设为 0 表示不限制存活时间，但仍受 idleTimeout 影响。\n最小允许值为 30000ms（30 秒）。默认值：1800000（30 分钟）",
+        "block": 0,
+        "line": 38,
+        "heading": false
+      },
+      {
+        "path": [
+          "DefaultSettings",
+          "KeepaliveTime"
+        ],
+        "id": "defaultsettingskeepalivetime",
+        "source_line": 47,
+        "text": "池中连接的保活检查间隔。正在使用的连接不会\n由保活线程检测，只有空闲连接才会接受检测。\nkeepaliveTimeMs：通过定期检查连接是否可用来维持连接。单位为毫秒，默认值为 0（关闭）。",
+        "block": 0,
+        "line": 45,
+        "heading": false
+      },
+      {
+        "path": [
+          "DefaultSettings",
+          "ConnectionTestQuery"
+        ],
+        "id": "defaultsettingsconnectiontestquery",
+        "source_line": 52,
+        "text": "驱动支持 JDBC4 时，强烈建议不设置此项。\n此项用于不支持 JDBC4 Connection.isValid() API 的旧驱动。\n从池中交出连接前执行的查询，用于确认与数据库的连接仍然有效。\n建议先不设置此项运行连接池；驱动不兼容 JDBC4 时，HikariCP 会记录错误。默认值：~",
+        "block": 0,
+        "line": 49,
+        "heading": false
+      },
+      {
+        "path": [
+          "DefaultSettings",
+          "DataSourceProperty"
+        ],
+        "id": "defaultsettingsdatasourceproperty",
+        "source_line": 57,
+        "text": "MySQL 配置\n以下是为提高 MySQL 性能而推荐的一些设置。\nMySQL 还有许多性能选项，建议一并查阅，根据应用需求调整。\nhttp://dev.mysql.com/doc/connector-j/en/connector-j-reference-configuration-properties.html",
+        "block": 0,
+        "line": 54,
+        "heading": false
+      },
+      {
+        "path": [
+          "DefaultSettings",
+          "DataSourceProperty",
+          "prepStmtCacheSize"
+        ],
+        "id": "defaultsettingsdatasourcepropertyprepstmtcachesize",
+        "source_line": 60,
+        "text": "MySQL 驱动为每条连接缓存的预处理语句数量。\n默认值 25 较为保守。建议设置为 250-500。",
+        "block": 0,
+        "line": 59,
+        "heading": false
+      },
+      {
+        "path": [
+          "DefaultSettings",
+          "DataSourceProperty",
+          "prepStmtCacheSqlLimit"
+        ],
+        "id": "defaultsettingsdatasourcepropertyprepstmtcachesqllimit",
+        "source_line": 64,
+        "text": "驱动允许缓存的预处理 SQL 语句的最大长度。MySQL 默认值为 256。\n根据原作者的经验，尤其是使用 Hibernate 等 ORM 框架时，生成的语句往往远长于此默认值。\n建议值为 2048。",
+        "block": 0,
+        "line": 62,
+        "heading": false
+      },
+      {
+        "path": [
+          "DefaultSettings",
+          "DataSourceProperty",
+          "cachePrepStmts"
+        ],
+        "id": "defaultsettingsdatasourcepropertycacheprepstmts",
+        "source_line": 67,
+        "text": "缓存默认关闭；未启用缓存时，上面的两项参数均不生效。\n必须将此项设为 true。",
+        "block": 0,
+        "line": 66,
+        "heading": false
+      },
+      {
+        "path": [
+          "DefaultSettings",
+          "DataSourceProperty",
+          "useServerPrepStmts"
+        ],
+        "id": "defaultsettingsdatasourcepropertyuseserverprepstmts",
+        "source_line": 70,
+        "text": "较新版本的 MySQL 支持服务端预处理语句，可显著提高性能。\n将此项设为 true。",
+        "block": 0,
+        "line": 69,
+        "heading": false
+      }
+    ]
+  },
+  {
+    "file": "configuration/config.md",
+    "title": "config.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "28f3a75216800963d7cdf794347452377e0c0c38a0076f61c7e73021922845e6",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "player-attribute-init-delay"
+        ],
+        "id": "player-attribute-init-delay",
+        "source_line": 2,
+        "text": "玩家登录时属性初始化延迟(20=1秒)\n初始化时会同步生命&刷新玩家属性,并触发 AttrPlayerInitializeEvent 玩家初始化事件(3.3.1.2)",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "player-original-health-clear"
+        ],
+        "id": "player-original-health-clear",
+        "source_line": 7,
+        "text": "部分服务器可能会出现玩家生命力异常多出20点\n具体可以使用 ap health player-name 来查看一个玩家身上的生命数据来源\n开启后每次更新玩家生命力时会检测是否存在非 AttributePlus 所增加的生命力并清除",
+        "block": 1,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "attribute-custom-formula"
+        ],
+        "id": "attribute-custom-formula",
+        "source_line": 10,
+        "text": "属性自定义计算公式(关闭后 attribute.yml 中 formula 将失效)",
+        "block": 2,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "async-handle-task"
+        ],
+        "id": "async-handle-task",
+        "source_line": 14,
+        "text": "异步处理API任务\n高版本因为某些缘故无法使用异步操作一些内容，所以需要关闭",
+        "block": 3,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "check-packets"
+        ],
+        "id": "check-packets",
+        "source_line": 17,
+        "text": "异常数据包检测",
+        "block": 4,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "check-packets",
+          "fast-close"
+        ],
+        "id": "check-packetsfast-close",
+        "source_line": 19,
+        "text": "快速关闭",
+        "block": 4,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "check-packets",
+          "fast-toggle"
+        ],
+        "id": "check-packetsfast-toggle",
+        "source_line": 21,
+        "text": "快速切换",
+        "block": 4,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "check-packets",
+          "fast-interact"
+        ],
+        "id": "check-packetsfast-interact",
+        "source_line": 23,
+        "text": "快速交互",
+        "block": 4,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "database-store-module"
+        ],
+        "id": "database-store-module",
+        "source_line": 27,
+        "text": "储存模块(关闭后持久化属性、自定义读取格式 cache-placeholder 变量数据储存将失效)",
+        "block": 5,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "sql"
+        ],
+        "id": "sql",
+        "source_line": 31,
+        "text": "数据储存设置\n用于储存玩家离线时的生命力并在登录服务器时恢复\n修复部分服务器玩家满血退出重登不满血问题",
+        "block": 6,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "sql",
+          "enable"
+        ],
+        "id": "sqlenable",
+        "source_line": 33,
+        "text": "关闭则将数据储存至本地",
+        "block": 6,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "sql",
+          "host"
+        ],
+        "id": "sqlhost",
+        "source_line": 34,
+        "text": "",
+        "block": 6,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "sql",
+          "port"
+        ],
+        "id": "sqlport",
+        "source_line": 35,
+        "text": "",
+        "block": 6,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "sql",
+          "user"
+        ],
+        "id": "sqluser",
+        "source_line": 36,
+        "text": "",
+        "block": 6,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "sql",
+          "password"
+        ],
+        "id": "sqlpassword",
+        "source_line": 37,
+        "text": "",
+        "block": 6,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "sql",
+          "database"
+        ],
+        "id": "sqldatabase",
+        "source_line": 38,
+        "text": "",
+        "block": 6,
+        "line": 11,
+        "heading": false
+      }
+    ]
+  },
+  {
+    "file": "configuration/script.md",
+    "title": "script.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "28f3a75216800963d7cdf794347452377e0c0c38a0076f61c7e73021922845e6",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "scriptTools"
+        ],
+        "id": "scripttools",
+        "source_line": 1,
+        "text": "自定义脚本工具类",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "scriptTools",
+          "Utils"
+        ],
+        "id": "scripttoolsutils",
+        "source_line": 2,
+        "text": "",
+        "block": 0,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "scriptTools",
+          "AttributeAPI"
+        ],
+        "id": "scripttoolsattributeapi",
+        "source_line": 3,
+        "text": "",
+        "block": 0,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "scriptTools",
+          "PresetTaskAPI"
+        ],
+        "id": "scripttoolspresettaskapi",
+        "source_line": 4,
+        "text": "",
+        "block": 0,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "scriptTools",
+          "Bukkit"
+        ],
+        "id": "scripttoolsbukkit",
+        "source_line": 5,
+        "text": "",
+        "block": 0,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "scriptTools",
+          "EntityType"
+        ],
+        "id": "scripttoolsentitytype",
+        "source_line": 6,
+        "text": "",
+        "block": 0,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "scriptTools",
+          "Arrays"
+        ],
+        "id": "scripttoolsarrays",
+        "source_line": 7,
+        "text": "",
+        "block": 0,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "scriptTools",
+          "Data"
+        ],
+        "id": "scripttoolsdata",
+        "source_line": 8,
+        "text": "",
+        "block": 0,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "dynamic-custom-trigger"
+        ],
+        "id": "dynamic-custom-trigger",
+        "source_line": 17,
+        "text": "SkillAPI 扩展API\n\"SkillAPI\": \"com.sucy.skill.SkillAPI\"\n\"SkillExtensionAPI\": \"org.serverct.ersha.listener.manager.skill.SkillExtensionAPI\"\n动态注册自定义属性触发器\n注册后的触发器可用于JS写自定义脚本属性\nCUSTOM类型: https://ersha.gitbook.io/attributeplus-pro/shu-xing-jiao-ben/shou-ba-shou-jiao-ni-xie-shu-xing-jiao-ben/update-lei-xing-1",
+        "block": 1,
+        "line": 1,
+        "heading": true
+      }
+    ]
+  },
+  {
+    "file": "configuration/stats.md",
+    "title": "stats.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "28f3a75216800963d7cdf794347452377e0c0c38a0076f61c7e73021922845e6",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "options"
+        ],
+        "id": "options",
+        "source_line": 2,
+        "text": "BOOK 则通过书本方式展示属性内容 (1.9+)\nGUI 则通过箱子界面展示属性内容 (1.7+)",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "gui"
+        ],
+        "id": "gui",
+        "source_line": 4,
+        "text": "",
+        "block": 1,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "gui",
+          "title"
+        ],
+        "id": "guititle",
+        "source_line": 5,
+        "text": "",
+        "block": 1,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "gui",
+          "size"
+        ],
+        "id": "guisize",
+        "source_line": 7,
+        "text": "选择界面大小 (必须为 9 的倍数,最高 54)",
+        "block": 1,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "gui",
+          "list"
+        ],
+        "id": "guilist",
+        "source_line": 9,
+        "text": "可以自由创建新的位置,但节点名不可以相同",
+        "block": 1,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "gui",
+          "list",
+          "border"
+        ],
+        "id": "guilistborder",
+        "source_line": 10,
+        "text": "",
+        "block": 1,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "gui",
+          "list",
+          "border",
+          "type"
+        ],
+        "id": "guilistbordertype",
+        "source_line": 13,
+        "text": "类型 1.12及以下版本  http://docs.zoyn.top/bukkitapi/1.12.2/\n类型 1.13+ https://bukkit.windit.net/javadoc/org/bukkit/Material.html",
+        "block": 1,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "gui",
+          "list",
+          "border",
+          "slots"
+        ],
+        "id": "guilistborderslots",
+        "source_line": 14,
+        "text": "",
+        "block": 1,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "gui",
+          "list",
+          "border",
+          "name"
+        ],
+        "id": "guilistbordername",
+        "source_line": 15,
+        "text": "",
+        "block": 1,
+        "line": 12,
+        "heading": false
+      },
+      {
+        "path": [
+          "gui",
+          "list",
+          "info"
+        ],
+        "id": "guilistinfo",
+        "source_line": 16,
+        "text": "",
+        "block": 1,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "gui",
+          "list",
+          "info",
+          "type"
+        ],
+        "id": "guilistinfotype",
+        "source_line": 17,
+        "text": "",
+        "block": 1,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "gui",
+          "list",
+          "info",
+          "slot"
+        ],
+        "id": "guilistinfoslot",
+        "source_line": 18,
+        "text": "",
+        "block": 1,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "gui",
+          "list",
+          "info",
+          "name"
+        ],
+        "id": "guilistinfoname",
+        "source_line": 19,
+        "text": "",
+        "block": 1,
+        "line": 16,
+        "heading": false
+      },
+      {
+        "path": [
+          "gui",
+          "list",
+          "info",
+          "lore"
+        ],
+        "id": "guilistinfolore",
+        "source_line": 20,
+        "text": "",
+        "block": 1,
+        "line": 17,
+        "heading": false
+      },
+      {
+        "path": [
+          "gui",
+          "list",
+          "attack"
+        ],
+        "id": "guilistattack",
+        "source_line": 22,
+        "text": "",
+        "block": 1,
+        "line": 19,
+        "heading": false
+      },
+      {
+        "path": [
+          "gui",
+          "list",
+          "attack",
+          "type"
+        ],
+        "id": "guilistattacktype",
+        "source_line": 23,
+        "text": "",
+        "block": 1,
+        "line": 20,
+        "heading": false
+      },
+      {
+        "path": [
+          "gui",
+          "list",
+          "attack",
+          "slot"
+        ],
+        "id": "guilistattackslot",
+        "source_line": 24,
+        "text": "",
+        "block": 1,
+        "line": 21,
+        "heading": false
+      },
+      {
+        "path": [
+          "gui",
+          "list",
+          "attack",
+          "name"
+        ],
+        "id": "guilistattackname",
+        "source_line": 25,
+        "text": "",
+        "block": 1,
+        "line": 22,
+        "heading": false
+      },
+      {
+        "path": [
+          "gui",
+          "list",
+          "attack",
+          "lore"
+        ],
+        "id": "guilistattacklore",
+        "source_line": 26,
+        "text": "",
+        "block": 1,
+        "line": 23,
+        "heading": false
+      },
+      {
+        "path": [
+          "gui",
+          "list",
+          "defense"
+        ],
+        "id": "guilistdefense",
+        "source_line": 48,
+        "text": "",
+        "block": 1,
+        "line": 45,
+        "heading": false
+      },
+      {
+        "path": [
+          "gui",
+          "list",
+          "defense",
+          "type"
+        ],
+        "id": "guilistdefensetype",
+        "source_line": 49,
+        "text": "",
+        "block": 1,
+        "line": 46,
+        "heading": false
+      },
+      {
+        "path": [
+          "gui",
+          "list",
+          "defense",
+          "slot"
+        ],
+        "id": "guilistdefenseslot",
+        "source_line": 50,
+        "text": "",
+        "block": 1,
+        "line": 47,
+        "heading": false
+      },
+      {
+        "path": [
+          "gui",
+          "list",
+          "defense",
+          "name"
+        ],
+        "id": "guilistdefensename",
+        "source_line": 51,
+        "text": "",
+        "block": 1,
+        "line": 48,
+        "heading": false
+      },
+      {
+        "path": [
+          "gui",
+          "list",
+          "defense",
+          "lore"
+        ],
+        "id": "guilistdefenselore",
+        "source_line": 52,
+        "text": "",
+        "block": 1,
+        "line": 49,
+        "heading": false
+      },
+      {
+        "path": [
+          "gui",
+          "list",
+          "other"
+        ],
+        "id": "guilistother",
+        "source_line": 67,
+        "text": "",
+        "block": 1,
+        "line": 64,
+        "heading": false
+      },
+      {
+        "path": [
+          "gui",
+          "list",
+          "other",
+          "type"
+        ],
+        "id": "guilistothertype",
+        "source_line": 68,
+        "text": "",
+        "block": 1,
+        "line": 65,
+        "heading": false
+      },
+      {
+        "path": [
+          "gui",
+          "list",
+          "other",
+          "slot"
+        ],
+        "id": "guilistotherslot",
+        "source_line": 69,
+        "text": "",
+        "block": 1,
+        "line": 66,
+        "heading": false
+      },
+      {
+        "path": [
+          "gui",
+          "list",
+          "other",
+          "name"
+        ],
+        "id": "guilistothername",
+        "source_line": 70,
+        "text": "",
+        "block": 1,
+        "line": 67,
+        "heading": false
+      },
+      {
+        "path": [
+          "gui",
+          "list",
+          "other",
+          "lore"
+        ],
+        "id": "guilistotherlore",
+        "source_line": 71,
+        "text": "",
+        "block": 1,
+        "line": 68,
+        "heading": false
+      },
+      {
+        "path": [
+          "book"
+        ],
+        "id": "book",
+        "source_line": 87,
+        "text": "",
+        "block": 2,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "book",
+          "attack"
+        ],
+        "id": "bookattack",
+        "source_line": 88,
+        "text": "",
+        "block": 2,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "book",
+          "defense"
+        ],
+        "id": "bookdefense",
+        "source_line": 111,
+        "text": "",
+        "block": 2,
+        "line": 24,
+        "heading": false
+      },
+      {
+        "path": [
+          "book",
+          "other"
+        ],
+        "id": "bookother",
+        "source_line": 127,
+        "text": "",
+        "block": 2,
+        "line": 40,
+        "heading": false
+      }
+    ]
+  },
+  {
+    "file": "configuration/format.md",
+    "title": "format.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "28f3a75216800963d7cdf794347452377e0c0c38a0076f61c7e73021922845e6",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "original-logic-format"
+        ],
+        "id": "original-logic-format",
+        "source_line": 6,
+        "text": "本配置正则私有占位符\n@$ = \\$ (请不要直接在配置内使用 \\$ 否则报错)\n@value = ([ +-]{0,9}[0-9]?[0-9.+-]+) 正则式(获取数值)\n是否使用旧版处理方式\n旧版本属性读取格式,读取逻辑算法 (性能较差)",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "attribute-read-format"
+        ],
+        "id": "attribute-read-format",
+        "source_line": 11,
+        "text": "读取格式 (正则匹配)\n读取根据 @value 所在位置内的值,可以是 \"100,-100,100-1000\"\n读取优先级从上往下依次读取,当数值被读取到则不继续往下",
+        "block": 1,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "condition-read-format"
+        ],
+        "id": "condition-read-format",
+        "source_line": 21,
+        "text": "规则标签正则匹配\n读取根据 @value 所在位置内的值",
+        "block": 2,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "condition-read-format",
+          "level"
+        ],
+        "id": "condition-read-formatlevel",
+        "source_line": 24,
+        "text": "装备等级: 10 (至少大于等于)\n装备等级: 10-100 (等级需在该范围内)",
+        "block": 2,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "condition-read-format",
+          "professional"
+        ],
+        "id": "condition-read-formatprofessional",
+        "source_line": 28,
+        "text": "职业: 剑士 (需拥有剑士权限)\n职业: 剑士/骑士 (需拥有任意一个权限)",
+        "block": 2,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "condition-read-format",
+          "equipment-type"
+        ],
+        "id": "condition-read-formatequipment-type",
+        "source_line": 34,
+        "text": "装备类型: 主手 (需穿戴至主手)\n装备类型: 主手/副手 (可穿戴在主手或副手)",
+        "block": 2,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "custom-condition-component"
+        ],
+        "id": "custom-condition-component",
+        "source_line": 40,
+        "text": "自定义规则标签",
+        "block": 3,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "custom-condition-component",
+          "example"
+        ],
+        "id": "custom-condition-componentexample",
+        "source_line": 41,
+        "text": "",
+        "block": 3,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "custom-condition-component",
+          "example",
+          "key"
+        ],
+        "id": "custom-condition-componentexamplekey",
+        "source_line": 43,
+        "text": "添加至物品的标签",
+        "block": 3,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "custom-condition-component",
+          "example",
+          "formats"
+        ],
+        "id": "custom-condition-componentexampleformats",
+        "source_line": 45,
+        "text": "读取格式",
+        "block": 3,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "custom-condition-component",
+          "example",
+          "conditions"
+        ],
+        "id": "custom-condition-componentexampleconditions",
+        "source_line": 51,
+        "text": "{value_0-N} 代表获取到的值(未处理过的数据)\n{value_min_0-N} 表示获取到的最小值\n{value_max_0-N} 表示获取到的最大值,如果非范围值格式则返回 none\n{..._0-N} 0-N 每个对应上方 formats 配置的 @value 或 (.*?)",
+        "block": 3,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "custom-condition-component",
+          "example",
+          "message"
+        ],
+        "id": "custom-condition-componentexamplemessage",
+        "source_line": 55,
+        "text": "不满足时的提示",
+        "block": 3,
+        "line": 16,
+        "heading": false
+      },
+      {
+        "path": [
+          "cache-placeholder"
+        ],
+        "id": "cache-placeholder",
+        "source_line": 59,
+        "text": "如果 custom-condition-component 配置项内\n使用 AttributePlus 自带的变量时,需将变量配置进来",
+        "block": 4,
+        "line": 1,
+        "heading": true
+      }
+    ]
+  },
+  {
+    "file": "configuration/attribute.md",
+    "title": "attribute.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "28f3a75216800963d7cdf794347452377e0c0c38a0076f61c7e73021922845e6",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "options"
+        ],
+        "id": "options",
+        "source_line": 0,
+        "text": "",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "options",
+          "lang"
+        ],
+        "id": "optionslang",
+        "source_line": 1,
+        "text": "",
+        "block": 0,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute"
+        ],
+        "id": "attribute",
+        "source_line": 3,
+        "text": "通过插件API新注册的属性也会在此生成相对应节点的配置项",
+        "block": 1,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "attribute",
+          "key"
+        ],
+        "id": "attributekey",
+        "source_line": 5,
+        "text": "属性名",
+        "block": 1,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "attackOrDefense"
+        ],
+        "id": "attributekeyattackordefense",
+        "source_line": 7,
+        "text": "攻击与防御类属性",
+        "block": 1,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "attackOrDefense",
+          "attack"
+        ],
+        "id": "attributekeyattackordefenseattack",
+        "source_line": 8,
+        "text": "",
+        "block": 1,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "attackOrDefense",
+          "real_attack"
+        ],
+        "id": "attributekeyattackordefensereal_attack",
+        "source_line": 9,
+        "text": "",
+        "block": 1,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "attackOrDefense",
+          "crit"
+        ],
+        "id": "attributekeyattackordefensecrit",
+        "source_line": 10,
+        "text": "",
+        "block": 1,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "attackOrDefense",
+          "fire"
+        ],
+        "id": "attributekeyattackordefensefire",
+        "source_line": 11,
+        "text": "",
+        "block": 1,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "attackOrDefense",
+          "frozen"
+        ],
+        "id": "attributekeyattackordefensefrozen",
+        "source_line": 12,
+        "text": "",
+        "block": 1,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "attackOrDefense",
+          "lightning"
+        ],
+        "id": "attributekeyattackordefenselightning",
+        "source_line": 13,
+        "text": "",
+        "block": 1,
+        "line": 12,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "attackOrDefense",
+          "vampire"
+        ],
+        "id": "attributekeyattackordefensevampire",
+        "source_line": 14,
+        "text": "",
+        "block": 1,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "attackOrDefense",
+          "armor"
+        ],
+        "id": "attributekeyattackordefensearmor",
+        "source_line": 15,
+        "text": "",
+        "block": 1,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "attackOrDefense",
+          "defense"
+        ],
+        "id": "attributekeyattackordefensedefense",
+        "source_line": 16,
+        "text": "",
+        "block": 1,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "attackOrDefense",
+          "dodge"
+        ],
+        "id": "attributekeyattackordefensedodge",
+        "source_line": 17,
+        "text": "",
+        "block": 1,
+        "line": 16,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "attackOrDefense",
+          "reflection"
+        ],
+        "id": "attributekeyattackordefensereflection",
+        "source_line": 18,
+        "text": "",
+        "block": 1,
+        "line": 17,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "attackOrDefense",
+          "remote_immune"
+        ],
+        "id": "attributekeyattackordefenseremote_immune",
+        "source_line": 19,
+        "text": "",
+        "block": 1,
+        "line": 18,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "attackOrDefense",
+          "testAttribute"
+        ],
+        "id": "attributekeyattackordefensetestattribute",
+        "source_line": 20,
+        "text": "",
+        "block": 1,
+        "line": 19,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "update"
+        ],
+        "id": "attributekeyupdate",
+        "source_line": 22,
+        "text": "更新类属性(即属性刷新时触发)",
+        "block": 1,
+        "line": 20,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "update",
+          "health"
+        ],
+        "id": "attributekeyupdatehealth",
+        "source_line": 23,
+        "text": "",
+        "block": 1,
+        "line": 22,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "update",
+          "moving"
+        ],
+        "id": "attributekeyupdatemoving",
+        "source_line": 24,
+        "text": "",
+        "block": 1,
+        "line": 23,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "update",
+          "restore_ratio"
+        ],
+        "id": "attributekeyupdaterestore_ratio",
+        "source_line": 25,
+        "text": "",
+        "block": 1,
+        "line": 24,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "runtime"
+        ],
+        "id": "attributekeyruntime",
+        "source_line": 27,
+        "text": "运行类属性(即每隔几秒触发一次)",
+        "block": 1,
+        "line": 25,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other"
+        ],
+        "id": "attributekeyother",
+        "source_line": 29,
+        "text": "其他类属性",
+        "block": 1,
+        "line": 27,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "pve_attack"
+        ],
+        "id": "attributekeyotherpve_attack",
+        "source_line": 30,
+        "text": "",
+        "block": 1,
+        "line": 29,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "pvp_attack"
+        ],
+        "id": "attributekeyotherpvp_attack",
+        "source_line": 31,
+        "text": "",
+        "block": 1,
+        "line": 30,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "crit_damage_resist"
+        ],
+        "id": "attributekeyothercrit_damage_resist",
+        "source_line": 32,
+        "text": "",
+        "block": 1,
+        "line": 31,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "crit_dodge"
+        ],
+        "id": "attributekeyothercrit_dodge",
+        "source_line": 33,
+        "text": "",
+        "block": 1,
+        "line": 32,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "crit_rate"
+        ],
+        "id": "attributekeyothercrit_rate",
+        "source_line": 34,
+        "text": "",
+        "block": 1,
+        "line": 33,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "crit_resist"
+        ],
+        "id": "attributekeyothercrit_resist",
+        "source_line": 35,
+        "text": "",
+        "block": 1,
+        "line": 34,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "fire_damage"
+        ],
+        "id": "attributekeyotherfire_damage",
+        "source_line": 36,
+        "text": "",
+        "block": 1,
+        "line": 35,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "frozen_intensity"
+        ],
+        "id": "attributekeyotherfrozen_intensity",
+        "source_line": 37,
+        "text": "",
+        "block": 1,
+        "line": 36,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "lightning_damage"
+        ],
+        "id": "attributekeyotherlightning_damage",
+        "source_line": 38,
+        "text": "",
+        "block": 1,
+        "line": 37,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "vampire_dodge"
+        ],
+        "id": "attributekeyothervampire_dodge",
+        "source_line": 39,
+        "text": "",
+        "block": 1,
+        "line": 38,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "vampire_rate"
+        ],
+        "id": "attributekeyothervampire_rate",
+        "source_line": 40,
+        "text": "",
+        "block": 1,
+        "line": 39,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "vampire_resist"
+        ],
+        "id": "attributekeyothervampire_resist",
+        "source_line": 41,
+        "text": "",
+        "block": 1,
+        "line": 40,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "see_through"
+        ],
+        "id": "attributekeyothersee_through",
+        "source_line": 42,
+        "text": "",
+        "block": 1,
+        "line": 41,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "sunder_armor"
+        ],
+        "id": "attributekeyothersunder_armor",
+        "source_line": 43,
+        "text": "",
+        "block": 1,
+        "line": 42,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "pve_defense"
+        ],
+        "id": "attributekeyotherpve_defense",
+        "source_line": 44,
+        "text": "",
+        "block": 1,
+        "line": 43,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "pvp_defense"
+        ],
+        "id": "attributekeyotherpvp_defense",
+        "source_line": 45,
+        "text": "",
+        "block": 1,
+        "line": 44,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "hit"
+        ],
+        "id": "attributekeyotherhit",
+        "source_line": 46,
+        "text": "",
+        "block": 1,
+        "line": 45,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "reflection_rate"
+        ],
+        "id": "attributekeyotherreflection_rate",
+        "source_line": 47,
+        "text": "",
+        "block": 1,
+        "line": 46,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "accumulate_addition"
+        ],
+        "id": "attributekeyotheraccumulate_addition",
+        "source_line": 48,
+        "text": "",
+        "block": 1,
+        "line": 47,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "accumulate_disturb"
+        ],
+        "id": "attributekeyotheraccumulate_disturb",
+        "source_line": 49,
+        "text": "",
+        "block": 1,
+        "line": 48,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "exp_addition"
+        ],
+        "id": "attributekeyotherexp_addition",
+        "source_line": 50,
+        "text": "",
+        "block": 1,
+        "line": 49,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "restore"
+        ],
+        "id": "attributekeyotherrestore",
+        "source_line": 51,
+        "text": "",
+        "block": 1,
+        "line": 50,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "shield_block"
+        ],
+        "id": "attributekeyothershield_block",
+        "source_line": 52,
+        "text": "",
+        "block": 1,
+        "line": 51,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "break_shield"
+        ],
+        "id": "attributekeyotherbreak_shield",
+        "source_line": 53,
+        "text": "",
+        "block": 1,
+        "line": 52,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "shoot_speed"
+        ],
+        "id": "attributekeyothershoot_speed",
+        "source_line": 54,
+        "text": "",
+        "block": 1,
+        "line": 53,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "shoot_spread"
+        ],
+        "id": "attributekeyothershoot_spread",
+        "source_line": 55,
+        "text": "",
+        "block": 1,
+        "line": 54,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "shoot_through"
+        ],
+        "id": "attributekeyothershoot_through",
+        "source_line": 56,
+        "text": "",
+        "block": 1,
+        "line": 55,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "key",
+          "other",
+          "summon_intensity"
+        ],
+        "id": "attributekeyothersummon_intensity",
+        "source_line": 57,
+        "text": "",
+        "block": 1,
+        "line": 56,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "priority"
+        ],
+        "id": "attributepriority",
+        "source_line": 59,
+        "text": "优先级",
+        "block": 1,
+        "line": 57,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "priority",
+          "attackOrDefense"
+        ],
+        "id": "attributepriorityattackordefense",
+        "source_line": 60,
+        "text": "",
+        "block": 1,
+        "line": 59,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "priority",
+          "attackOrDefense",
+          "attack"
+        ],
+        "id": "attributepriorityattackordefenseattack",
+        "source_line": 61,
+        "text": "",
+        "block": 1,
+        "line": 60,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "priority",
+          "attackOrDefense",
+          "real_attack"
+        ],
+        "id": "attributepriorityattackordefensereal_attack",
+        "source_line": 62,
+        "text": "",
+        "block": 1,
+        "line": 61,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "priority",
+          "attackOrDefense",
+          "crit"
+        ],
+        "id": "attributepriorityattackordefensecrit",
+        "source_line": 63,
+        "text": "",
+        "block": 1,
+        "line": 62,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "priority",
+          "attackOrDefense",
+          "fire"
+        ],
+        "id": "attributepriorityattackordefensefire",
+        "source_line": 64,
+        "text": "",
+        "block": 1,
+        "line": 63,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "priority",
+          "attackOrDefense",
+          "frozen"
+        ],
+        "id": "attributepriorityattackordefensefrozen",
+        "source_line": 65,
+        "text": "",
+        "block": 1,
+        "line": 64,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "priority",
+          "attackOrDefense",
+          "lightning"
+        ],
+        "id": "attributepriorityattackordefenselightning",
+        "source_line": 66,
+        "text": "",
+        "block": 1,
+        "line": 65,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "priority",
+          "attackOrDefense",
+          "vampire"
+        ],
+        "id": "attributepriorityattackordefensevampire",
+        "source_line": 67,
+        "text": "",
+        "block": 1,
+        "line": 66,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "priority",
+          "attackOrDefense",
+          "armor"
+        ],
+        "id": "attributepriorityattackordefensearmor",
+        "source_line": 68,
+        "text": "",
+        "block": 1,
+        "line": 67,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "priority",
+          "attackOrDefense",
+          "defense"
+        ],
+        "id": "attributepriorityattackordefensedefense",
+        "source_line": 69,
+        "text": "",
+        "block": 1,
+        "line": 68,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "priority",
+          "attackOrDefense",
+          "dodge"
+        ],
+        "id": "attributepriorityattackordefensedodge",
+        "source_line": 70,
+        "text": "",
+        "block": 1,
+        "line": 69,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "priority",
+          "attackOrDefense",
+          "reflection"
+        ],
+        "id": "attributepriorityattackordefensereflection",
+        "source_line": 71,
+        "text": "",
+        "block": 1,
+        "line": 70,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "priority",
+          "attackOrDefense",
+          "remote_immune"
+        ],
+        "id": "attributepriorityattackordefenseremote_immune",
+        "source_line": 72,
+        "text": "",
+        "block": 1,
+        "line": 71,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "priority",
+          "attackOrDefense",
+          "testAttribute"
+        ],
+        "id": "attributepriorityattackordefensetestattribute",
+        "source_line": 73,
+        "text": "",
+        "block": 1,
+        "line": 72,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "priority",
+          "update"
+        ],
+        "id": "attributepriorityupdate",
+        "source_line": 74,
+        "text": "",
+        "block": 1,
+        "line": 73,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "priority",
+          "update",
+          "health"
+        ],
+        "id": "attributepriorityupdatehealth",
+        "source_line": 75,
+        "text": "",
+        "block": 1,
+        "line": 74,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "priority",
+          "update",
+          "moving"
+        ],
+        "id": "attributepriorityupdatemoving",
+        "source_line": 76,
+        "text": "",
+        "block": 1,
+        "line": 75,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "priority",
+          "update",
+          "restore_ratio"
+        ],
+        "id": "attributepriorityupdaterestore_ratio",
+        "source_line": 77,
+        "text": "",
+        "block": 1,
+        "line": 76,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "priority",
+          "runtime"
+        ],
+        "id": "attributepriorityruntime",
+        "source_line": 78,
+        "text": "",
+        "block": 1,
+        "line": 77,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value"
+        ],
+        "id": "attributevalue",
+        "source_line": 80,
+        "text": "属性值生效限制 (超过部分的属性值不生效,但还是可以读取并通过stats查看)",
+        "block": 2,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "attack"
+        ],
+        "id": "attributevalueattack",
+        "source_line": 81,
+        "text": "",
+        "block": 2,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other"
+        ],
+        "id": "attributevalueother",
+        "source_line": 82,
+        "text": "",
+        "block": 2,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "pve_attack"
+        ],
+        "id": "attributevalueotherpve_attack",
+        "source_line": 83,
+        "text": "",
+        "block": 2,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "pvp_attack"
+        ],
+        "id": "attributevalueotherpvp_attack",
+        "source_line": 84,
+        "text": "",
+        "block": 2,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "crit_damage_resist"
+        ],
+        "id": "attributevalueothercrit_damage_resist",
+        "source_line": 85,
+        "text": "",
+        "block": 2,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "crit_dodge"
+        ],
+        "id": "attributevalueothercrit_dodge",
+        "source_line": 86,
+        "text": "",
+        "block": 2,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "crit_rate"
+        ],
+        "id": "attributevalueothercrit_rate",
+        "source_line": 87,
+        "text": "",
+        "block": 2,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "crit_resist"
+        ],
+        "id": "attributevalueothercrit_resist",
+        "source_line": 88,
+        "text": "",
+        "block": 2,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "fire_damage"
+        ],
+        "id": "attributevalueotherfire_damage",
+        "source_line": 89,
+        "text": "",
+        "block": 2,
+        "line": 12,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "frozen_intensity"
+        ],
+        "id": "attributevalueotherfrozen_intensity",
+        "source_line": 90,
+        "text": "",
+        "block": 2,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "lightning_damage"
+        ],
+        "id": "attributevalueotherlightning_damage",
+        "source_line": 91,
+        "text": "",
+        "block": 2,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "vampire_dodge"
+        ],
+        "id": "attributevalueothervampire_dodge",
+        "source_line": 92,
+        "text": "",
+        "block": 2,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "vampire_rate"
+        ],
+        "id": "attributevalueothervampire_rate",
+        "source_line": 93,
+        "text": "",
+        "block": 2,
+        "line": 16,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "vampire_resist"
+        ],
+        "id": "attributevalueothervampire_resist",
+        "source_line": 94,
+        "text": "",
+        "block": 2,
+        "line": 17,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "see_through"
+        ],
+        "id": "attributevalueothersee_through",
+        "source_line": 95,
+        "text": "",
+        "block": 2,
+        "line": 18,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "sunder_armor"
+        ],
+        "id": "attributevalueothersunder_armor",
+        "source_line": 96,
+        "text": "",
+        "block": 2,
+        "line": 19,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "pve_defense"
+        ],
+        "id": "attributevalueotherpve_defense",
+        "source_line": 97,
+        "text": "",
+        "block": 2,
+        "line": 20,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "pvp_defense"
+        ],
+        "id": "attributevalueotherpvp_defense",
+        "source_line": 98,
+        "text": "",
+        "block": 2,
+        "line": 21,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "hit"
+        ],
+        "id": "attributevalueotherhit",
+        "source_line": 99,
+        "text": "",
+        "block": 2,
+        "line": 22,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "reflection_rate"
+        ],
+        "id": "attributevalueotherreflection_rate",
+        "source_line": 100,
+        "text": "",
+        "block": 2,
+        "line": 23,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "accumulate_addition"
+        ],
+        "id": "attributevalueotheraccumulate_addition",
+        "source_line": 101,
+        "text": "",
+        "block": 2,
+        "line": 24,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "accumulate_disturb"
+        ],
+        "id": "attributevalueotheraccumulate_disturb",
+        "source_line": 102,
+        "text": "",
+        "block": 2,
+        "line": 25,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "exp_addition"
+        ],
+        "id": "attributevalueotherexp_addition",
+        "source_line": 103,
+        "text": "",
+        "block": 2,
+        "line": 26,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "restore"
+        ],
+        "id": "attributevalueotherrestore",
+        "source_line": 104,
+        "text": "",
+        "block": 2,
+        "line": 27,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "shield_block"
+        ],
+        "id": "attributevalueothershield_block",
+        "source_line": 105,
+        "text": "",
+        "block": 2,
+        "line": 28,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "break_shield"
+        ],
+        "id": "attributevalueotherbreak_shield",
+        "source_line": 106,
+        "text": "",
+        "block": 2,
+        "line": 29,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "shoot_speed"
+        ],
+        "id": "attributevalueothershoot_speed",
+        "source_line": 107,
+        "text": "",
+        "block": 2,
+        "line": 30,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "shoot_spread"
+        ],
+        "id": "attributevalueothershoot_spread",
+        "source_line": 108,
+        "text": "",
+        "block": 2,
+        "line": 31,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "shoot_through"
+        ],
+        "id": "attributevalueothershoot_through",
+        "source_line": 109,
+        "text": "",
+        "block": 2,
+        "line": 32,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "other",
+          "summon_intensity"
+        ],
+        "id": "attributevalueothersummon_intensity",
+        "source_line": 110,
+        "text": "",
+        "block": 2,
+        "line": 33,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "attackOrDefense"
+        ],
+        "id": "attributevalueattackordefense",
+        "source_line": 111,
+        "text": "",
+        "block": 2,
+        "line": 34,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "attackOrDefense",
+          "real_attack"
+        ],
+        "id": "attributevalueattackordefensereal_attack",
+        "source_line": 112,
+        "text": "",
+        "block": 2,
+        "line": 35,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "attackOrDefense",
+          "attack"
+        ],
+        "id": "attributevalueattackordefenseattack",
+        "source_line": 113,
+        "text": "",
+        "block": 2,
+        "line": 36,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "attackOrDefense",
+          "crit"
+        ],
+        "id": "attributevalueattackordefensecrit",
+        "source_line": 114,
+        "text": "",
+        "block": 2,
+        "line": 37,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "attackOrDefense",
+          "fire"
+        ],
+        "id": "attributevalueattackordefensefire",
+        "source_line": 115,
+        "text": "",
+        "block": 2,
+        "line": 38,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "attackOrDefense",
+          "frozen"
+        ],
+        "id": "attributevalueattackordefensefrozen",
+        "source_line": 116,
+        "text": "",
+        "block": 2,
+        "line": 39,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "attackOrDefense",
+          "lightning"
+        ],
+        "id": "attributevalueattackordefenselightning",
+        "source_line": 117,
+        "text": "",
+        "block": 2,
+        "line": 40,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "attackOrDefense",
+          "vampire"
+        ],
+        "id": "attributevalueattackordefensevampire",
+        "source_line": 118,
+        "text": "",
+        "block": 2,
+        "line": 41,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "attackOrDefense",
+          "armor"
+        ],
+        "id": "attributevalueattackordefensearmor",
+        "source_line": 119,
+        "text": "",
+        "block": 2,
+        "line": 42,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "attackOrDefense",
+          "defense"
+        ],
+        "id": "attributevalueattackordefensedefense",
+        "source_line": 120,
+        "text": "",
+        "block": 2,
+        "line": 43,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "attackOrDefense",
+          "dodge"
+        ],
+        "id": "attributevalueattackordefensedodge",
+        "source_line": 121,
+        "text": "",
+        "block": 2,
+        "line": 44,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "attackOrDefense",
+          "reflection"
+        ],
+        "id": "attributevalueattackordefensereflection",
+        "source_line": 122,
+        "text": "",
+        "block": 2,
+        "line": 45,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "attackOrDefense",
+          "remote_immune"
+        ],
+        "id": "attributevalueattackordefenseremote_immune",
+        "source_line": 123,
+        "text": "",
+        "block": 2,
+        "line": 46,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "attackOrDefense",
+          "testAttribute"
+        ],
+        "id": "attributevalueattackordefensetestattribute",
+        "source_line": 124,
+        "text": "",
+        "block": 2,
+        "line": 47,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "update"
+        ],
+        "id": "attributevalueupdate",
+        "source_line": 125,
+        "text": "",
+        "block": 2,
+        "line": 48,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "update",
+          "health"
+        ],
+        "id": "attributevalueupdatehealth",
+        "source_line": 126,
+        "text": "",
+        "block": 2,
+        "line": 49,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "update",
+          "moving"
+        ],
+        "id": "attributevalueupdatemoving",
+        "source_line": 127,
+        "text": "",
+        "block": 2,
+        "line": 50,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "value",
+          "update",
+          "restore_ratio"
+        ],
+        "id": "attributevalueupdaterestore_ratio",
+        "source_line": 128,
+        "text": "",
+        "block": 2,
+        "line": 51,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower"
+        ],
+        "id": "attributecombatpower",
+        "source_line": 130,
+        "text": "战斗力",
+        "block": 2,
+        "line": 52,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "attackOrDefense"
+        ],
+        "id": "attributecombatpowerattackordefense",
+        "source_line": 131,
+        "text": "",
+        "block": 2,
+        "line": 54,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "attackOrDefense",
+          "attack"
+        ],
+        "id": "attributecombatpowerattackordefenseattack",
+        "source_line": 132,
+        "text": "",
+        "block": 2,
+        "line": 55,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "attackOrDefense",
+          "real_attack"
+        ],
+        "id": "attributecombatpowerattackordefensereal_attack",
+        "source_line": 133,
+        "text": "",
+        "block": 2,
+        "line": 56,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "attackOrDefense",
+          "crit"
+        ],
+        "id": "attributecombatpowerattackordefensecrit",
+        "source_line": 134,
+        "text": "",
+        "block": 2,
+        "line": 57,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "attackOrDefense",
+          "fire"
+        ],
+        "id": "attributecombatpowerattackordefensefire",
+        "source_line": 135,
+        "text": "",
+        "block": 2,
+        "line": 58,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "attackOrDefense",
+          "frozen"
+        ],
+        "id": "attributecombatpowerattackordefensefrozen",
+        "source_line": 136,
+        "text": "",
+        "block": 2,
+        "line": 59,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "attackOrDefense",
+          "lightning"
+        ],
+        "id": "attributecombatpowerattackordefenselightning",
+        "source_line": 137,
+        "text": "",
+        "block": 2,
+        "line": 60,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "attackOrDefense",
+          "vampire"
+        ],
+        "id": "attributecombatpowerattackordefensevampire",
+        "source_line": 138,
+        "text": "",
+        "block": 2,
+        "line": 61,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "attackOrDefense",
+          "armor"
+        ],
+        "id": "attributecombatpowerattackordefensearmor",
+        "source_line": 139,
+        "text": "",
+        "block": 2,
+        "line": 62,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "attackOrDefense",
+          "defense"
+        ],
+        "id": "attributecombatpowerattackordefensedefense",
+        "source_line": 140,
+        "text": "",
+        "block": 2,
+        "line": 63,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "attackOrDefense",
+          "dodge"
+        ],
+        "id": "attributecombatpowerattackordefensedodge",
+        "source_line": 141,
+        "text": "",
+        "block": 2,
+        "line": 64,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "attackOrDefense",
+          "reflection"
+        ],
+        "id": "attributecombatpowerattackordefensereflection",
+        "source_line": 142,
+        "text": "",
+        "block": 2,
+        "line": 65,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "attackOrDefense",
+          "remote_immune"
+        ],
+        "id": "attributecombatpowerattackordefenseremote_immune",
+        "source_line": 143,
+        "text": "",
+        "block": 2,
+        "line": 66,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "attackOrDefense",
+          "testAttribute"
+        ],
+        "id": "attributecombatpowerattackordefensetestattribute",
+        "source_line": 144,
+        "text": "",
+        "block": 2,
+        "line": 67,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "update"
+        ],
+        "id": "attributecombatpowerupdate",
+        "source_line": 145,
+        "text": "",
+        "block": 2,
+        "line": 68,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "update",
+          "health"
+        ],
+        "id": "attributecombatpowerupdatehealth",
+        "source_line": 146,
+        "text": "",
+        "block": 2,
+        "line": 69,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "update",
+          "moving"
+        ],
+        "id": "attributecombatpowerupdatemoving",
+        "source_line": 147,
+        "text": "",
+        "block": 2,
+        "line": 70,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "update",
+          "restore_ratio"
+        ],
+        "id": "attributecombatpowerupdaterestore_ratio",
+        "source_line": 148,
+        "text": "",
+        "block": 2,
+        "line": 71,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "runtime"
+        ],
+        "id": "attributecombatpowerruntime",
+        "source_line": 149,
+        "text": "",
+        "block": 2,
+        "line": 72,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other"
+        ],
+        "id": "attributecombatpowerother",
+        "source_line": 150,
+        "text": "",
+        "block": 2,
+        "line": 73,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "pve_attack"
+        ],
+        "id": "attributecombatpowerotherpve_attack",
+        "source_line": 151,
+        "text": "",
+        "block": 2,
+        "line": 74,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "pvp_attack"
+        ],
+        "id": "attributecombatpowerotherpvp_attack",
+        "source_line": 152,
+        "text": "",
+        "block": 2,
+        "line": 75,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "crit_damage_resist"
+        ],
+        "id": "attributecombatpowerothercrit_damage_resist",
+        "source_line": 153,
+        "text": "",
+        "block": 2,
+        "line": 76,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "crit_dodge"
+        ],
+        "id": "attributecombatpowerothercrit_dodge",
+        "source_line": 154,
+        "text": "",
+        "block": 2,
+        "line": 77,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "crit_rate"
+        ],
+        "id": "attributecombatpowerothercrit_rate",
+        "source_line": 155,
+        "text": "",
+        "block": 2,
+        "line": 78,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "crit_resist"
+        ],
+        "id": "attributecombatpowerothercrit_resist",
+        "source_line": 156,
+        "text": "",
+        "block": 2,
+        "line": 79,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "fire_damage"
+        ],
+        "id": "attributecombatpowerotherfire_damage",
+        "source_line": 157,
+        "text": "",
+        "block": 2,
+        "line": 80,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "frozen_intensity"
+        ],
+        "id": "attributecombatpowerotherfrozen_intensity",
+        "source_line": 158,
+        "text": "",
+        "block": 2,
+        "line": 81,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "lightning_damage"
+        ],
+        "id": "attributecombatpowerotherlightning_damage",
+        "source_line": 159,
+        "text": "",
+        "block": 2,
+        "line": 82,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "vampire_dodge"
+        ],
+        "id": "attributecombatpowerothervampire_dodge",
+        "source_line": 160,
+        "text": "",
+        "block": 2,
+        "line": 83,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "vampire_rate"
+        ],
+        "id": "attributecombatpowerothervampire_rate",
+        "source_line": 161,
+        "text": "",
+        "block": 2,
+        "line": 84,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "vampire_resist"
+        ],
+        "id": "attributecombatpowerothervampire_resist",
+        "source_line": 162,
+        "text": "",
+        "block": 2,
+        "line": 85,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "see_through"
+        ],
+        "id": "attributecombatpowerothersee_through",
+        "source_line": 163,
+        "text": "",
+        "block": 2,
+        "line": 86,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "sunder_armor"
+        ],
+        "id": "attributecombatpowerothersunder_armor",
+        "source_line": 164,
+        "text": "",
+        "block": 2,
+        "line": 87,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "pve_defense"
+        ],
+        "id": "attributecombatpowerotherpve_defense",
+        "source_line": 165,
+        "text": "",
+        "block": 2,
+        "line": 88,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "pvp_defense"
+        ],
+        "id": "attributecombatpowerotherpvp_defense",
+        "source_line": 166,
+        "text": "",
+        "block": 2,
+        "line": 89,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "hit"
+        ],
+        "id": "attributecombatpowerotherhit",
+        "source_line": 167,
+        "text": "",
+        "block": 2,
+        "line": 90,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "reflection_rate"
+        ],
+        "id": "attributecombatpowerotherreflection_rate",
+        "source_line": 168,
+        "text": "",
+        "block": 2,
+        "line": 91,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "accumulate_addition"
+        ],
+        "id": "attributecombatpowerotheraccumulate_addition",
+        "source_line": 169,
+        "text": "",
+        "block": 2,
+        "line": 92,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "accumulate_disturb"
+        ],
+        "id": "attributecombatpowerotheraccumulate_disturb",
+        "source_line": 170,
+        "text": "",
+        "block": 2,
+        "line": 93,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "exp_addition"
+        ],
+        "id": "attributecombatpowerotherexp_addition",
+        "source_line": 171,
+        "text": "",
+        "block": 2,
+        "line": 94,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "restore"
+        ],
+        "id": "attributecombatpowerotherrestore",
+        "source_line": 172,
+        "text": "",
+        "block": 2,
+        "line": 95,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "shield_block"
+        ],
+        "id": "attributecombatpowerothershield_block",
+        "source_line": 173,
+        "text": "",
+        "block": 2,
+        "line": 96,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "break_shield"
+        ],
+        "id": "attributecombatpowerotherbreak_shield",
+        "source_line": 174,
+        "text": "",
+        "block": 2,
+        "line": 97,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "shoot_speed"
+        ],
+        "id": "attributecombatpowerothershoot_speed",
+        "source_line": 175,
+        "text": "",
+        "block": 2,
+        "line": 98,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "shoot_spread"
+        ],
+        "id": "attributecombatpowerothershoot_spread",
+        "source_line": 176,
+        "text": "",
+        "block": 2,
+        "line": 99,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "shoot_through"
+        ],
+        "id": "attributecombatpowerothershoot_through",
+        "source_line": 177,
+        "text": "",
+        "block": 2,
+        "line": 100,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "combatPower",
+          "other",
+          "summon_intensity"
+        ],
+        "id": "attributecombatpowerothersummon_intensity",
+        "source_line": 178,
+        "text": "",
+        "block": 2,
+        "line": 101,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "formula"
+        ],
+        "id": "attributeformula",
+        "source_line": 185,
+        "text": "属性公式\n{attackerAttack} 当前 被攻击者 所受伤害(受优先级影响)\n{entityAttack} 当前 攻击者 所受伤害(受优先级影响)(例如反弹伤害)\n{value} 取得对应属性值\n{entityA:属性名} 取得攻击者的对应属性值\n{entityB:属性名} 取得被攻击者的对应属性值",
+        "block": 3,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "formula",
+          "crit"
+        ],
+        "id": "attributeformulacrit",
+        "source_line": 186,
+        "text": "",
+        "block": 3,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "formula",
+          "fire"
+        ],
+        "id": "attributeformulafire",
+        "source_line": 187,
+        "text": "",
+        "block": 3,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "formula",
+          "frozen"
+        ],
+        "id": "attributeformulafrozen",
+        "source_line": 188,
+        "text": "",
+        "block": 3,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "formula",
+          "lightning"
+        ],
+        "id": "attributeformulalightning",
+        "source_line": 189,
+        "text": "",
+        "block": 3,
+        "line": 12,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "formula",
+          "moving"
+        ],
+        "id": "attributeformulamoving",
+        "source_line": 190,
+        "text": "",
+        "block": 3,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "message"
+        ],
+        "id": "attributemessage",
+        "source_line": 192,
+        "text": "消息",
+        "block": 3,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "message",
+          "attack"
+        ],
+        "id": "attributemessageattack",
+        "source_line": 199,
+        "text": "变量说明\n{attacker} 攻击者名称\n{entity} 被攻击者名称\n{attackerDamage} 此次事件 被攻击者 所受最终伤害\n{entityDamage} 此次事件 攻击者 所受最终伤害(例如反弹伤害)\n{属性变量} 此次事件该属性所造成的属性值 (例 {attack})",
+        "block": 3,
+        "line": 16,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "message",
+          "crit"
+        ],
+        "id": "attributemessagecrit",
+        "source_line": 202,
+        "text": "",
+        "block": 3,
+        "line": 25,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "message",
+          "fire"
+        ],
+        "id": "attributemessagefire",
+        "source_line": 205,
+        "text": "",
+        "block": 3,
+        "line": 28,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "message",
+          "frozen"
+        ],
+        "id": "attributemessagefrozen",
+        "source_line": 208,
+        "text": "",
+        "block": 3,
+        "line": 31,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "message",
+          "lightning"
+        ],
+        "id": "attributemessagelightning",
+        "source_line": 211,
+        "text": "",
+        "block": 3,
+        "line": 34,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "message",
+          "vampire"
+        ],
+        "id": "attributemessagevampire",
+        "source_line": 214,
+        "text": "",
+        "block": 3,
+        "line": 37,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "message",
+          "defense"
+        ],
+        "id": "attributemessagedefense",
+        "source_line": 217,
+        "text": "",
+        "block": 3,
+        "line": 40,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "message",
+          "dodge"
+        ],
+        "id": "attributemessagedodge",
+        "source_line": 220,
+        "text": "",
+        "block": 3,
+        "line": 43,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "message",
+          "reflection"
+        ],
+        "id": "attributemessagereflection",
+        "source_line": 223,
+        "text": "",
+        "block": 3,
+        "line": 46,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "message",
+          "remote_immune"
+        ],
+        "id": "attributemessageremote_immune",
+        "source_line": 226,
+        "text": "",
+        "block": 3,
+        "line": 49,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "message",
+          "testAttribute"
+        ],
+        "id": "attributemessagetestattribute",
+        "source_line": 229,
+        "text": "",
+        "block": 3,
+        "line": 52,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "hologram"
+        ],
+        "id": "attributehologram",
+        "source_line": 240,
+        "text": "特别提醒:\n除 other 类属性外的所有属性点支持在这增加提示消息\n节点名格式固定为属性变量名,例如\narmor:\n - \"对方抵消了你百分之 {armor} 点伤害!\"\n - \"你抵消了对方百分之 {armor} 点伤害!\"\n属性全息提示 (需开启 hologramMessage 功能)\n前置 HolographicDisplays",
+        "block": 3,
+        "line": 55,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "hologram",
+          "attack"
+        ],
+        "id": "attributehologramattack",
+        "source_line": 241,
+        "text": "",
+        "block": 3,
+        "line": 64,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "options"
+        ],
+        "id": "attributeoptions",
+        "source_line": 244,
+        "text": "defense: \"抵消 {defense} 点伤害\"\n属性变量: \"内容\"",
+        "block": 3,
+        "line": 65,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "options",
+          "frozenTime"
+        ],
+        "id": "attributeoptionsfrozentime",
+        "source_line": 246,
+        "text": "冰冻属性持续时间",
+        "block": 3,
+        "line": 68,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "options",
+          "dodgeCooling"
+        ],
+        "id": "attributeoptionsdodgecooling",
+        "source_line": 248,
+        "text": "玩家闪避冷却间隔,每多少秒内仅允许闪避一次",
+        "block": 3,
+        "line": 70,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "options",
+          "vampireDamage"
+        ],
+        "id": "attributeoptionsvampiredamage",
+        "source_line": 250,
+        "text": "吸血属性触发时额外造成吸血伤害(伤害等同吸血量)",
+        "block": 3,
+        "line": 72,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "options",
+          "defaultMoving"
+        ],
+        "id": "attributeoptionsdefaultmoving",
+        "source_line": 252,
+        "text": "默认移动速度",
+        "block": 3,
+        "line": 74,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "options",
+          "defaultHealth"
+        ],
+        "id": "attributeoptionsdefaulthealth",
+        "source_line": 256,
+        "text": "默认生命力\n注意,处于安全考虑,插件系统会强制给予玩家10点生命血量,此次配置可设为0值,但玩家血量会强制为 10 点。\n所以默认生命力是此处 (配置值+10) 例如 90.0 则 90.0+10.0 = 100.0 血量。",
+        "block": 3,
+        "line": 76,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "options",
+          "healthScale"
+        ],
+        "id": "attributeoptionshealthscale",
+        "source_line": 260,
+        "text": "是否将生命心数锁定为两排\n关闭该项可解决生命上限提升时受到的伤害抖动问题\n关闭该项后上限提升的同时,生命心数也会变多(建议配合龙核、萌芽覆盖掉,不然挡屏甚至卡住客户端)",
+        "block": 3,
+        "line": 80,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "options",
+          "runtimeAttributeTime"
+        ],
+        "id": "attributeoptionsruntimeattributetime",
+        "source_line": 262,
+        "text": "RUNTIME类属性的运行间隔(秒)",
+        "block": 3,
+        "line": 84,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "options",
+          "healthRestoreTime"
+        ],
+        "id": "attributeoptionshealthrestoretime",
+        "source_line": 264,
+        "text": "生命力恢复间隔(秒)",
+        "block": 3,
+        "line": 86,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "options",
+          "hologramMessage"
+        ],
+        "id": "attributeoptionshologrammessage",
+        "source_line": 266,
+        "text": "是否开启 HolographicDisplays 全息功能",
+        "block": 3,
+        "line": 88,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "options",
+          "defenseCoefficient"
+        ],
+        "id": "attributeoptionsdefensecoefficient",
+        "source_line": 268,
+        "text": "防御系数(即 (PVE防御+PVP防御+防御力属性生效值的和) * 系数值)",
+        "block": 3,
+        "line": 90,
+        "heading": false
+      },
+      {
+        "path": [
+          "attribute",
+          "options",
+          "attackCoefficient"
+        ],
+        "id": "attributeoptionsattackcoefficient",
+        "source_line": 270,
+        "text": "攻击系数(即 (PVE攻击+PVP攻击+攻击力属性生效值的和) * 系数值)",
+        "block": 3,
+        "line": 92,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting"
+        ],
+        "id": "setting",
+        "source_line": 272,
+        "text": "null",
+        "block": 4,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "setting",
+          "percentageReadMark"
+        ],
+        "id": "settingpercentagereadmark",
+        "source_line": 275,
+        "text": "百分比读取属性格式的标志符\n例如 \"物理伤害: +100 (%)\"",
+        "block": 4,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "limit-attribute-descriptions"
+        ],
+        "id": "settinglimit-attribute-descriptions",
+        "source_line": 277,
+        "text": "限制属性加载包含下列其中描述的物品(会影响AttributeAPI附属加载属性)",
+        "block": 4,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "limit-line-attribute-load"
+        ],
+        "id": "settinglimit-line-attribute-load",
+        "source_line": 280,
+        "text": "禁止某行包含列表内字符的描述行加载属性",
+        "block": 4,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "limit-slot-attribute-descriptions"
+        ],
+        "id": "settinglimit-slot-attribute-descriptions",
+        "source_line": 283,
+        "text": "限制包含下列其中描述的物品在原版装备槽位中被加载属性(不会影响AttributeAPI附属加载属性)",
+        "block": 4,
+        "line": 12,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "limit-attribute-worlds"
+        ],
+        "id": "settinglimit-attribute-worlds",
+        "source_line": 286,
+        "text": "限制属性加载的世界",
+        "block": 4,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "attribute-nbt-list"
+        ],
+        "id": "settingattribute-nbt-list",
+        "source_line": 289,
+        "text": "加载指定NBT标签内属性列表",
+        "block": 4,
+        "line": 18,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "attribute-max-value-corrector"
+        ],
+        "id": "settingattribute-max-value-corrector",
+        "source_line": 292,
+        "text": "加载物品属性时,根据物品名修正物品对应属性的最大值",
+        "block": 4,
+        "line": 21,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "attribute-max-value-corrector",
+          "对应的物品名"
+        ],
+        "id": "settingattribute-max-value-corrector对应的物品名",
+        "source_line": 293,
+        "text": "",
+        "block": 4,
+        "line": 23,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "attribute-max-value-corrector-source"
+        ],
+        "id": "settingattribute-max-value-corrector-source",
+        "source_line": 296,
+        "text": "加载属性源时,根据属性源名修正属性源中对应属性的最大值\nHAND/OFF_HAND/FEET/LEGS/CHEST/HEAD(SYSTEM) 对应原版槽位属性源名称",
+        "block": 4,
+        "line": 24,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "attribute-max-value-corrector-source",
+          "护手槽"
+        ],
+        "id": "settingattribute-max-value-corrector-source护手槽",
+        "source_line": 297,
+        "text": "",
+        "block": 4,
+        "line": 27,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "permission"
+        ],
+        "id": "settingpermission",
+        "source_line": 300,
+        "text": "权限限制\n支持多个权限，例如 \"职业: 剑士/法师/牧师\" 只需要满足其一即可",
+        "block": 4,
+        "line": 28,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "permission",
+          "split"
+        ],
+        "id": "settingpermissionsplit",
+        "source_line": 301,
+        "text": "",
+        "block": 4,
+        "line": 31,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "permission",
+          "key"
+        ],
+        "id": "settingpermissionkey",
+        "source_line": 302,
+        "text": "",
+        "block": 4,
+        "line": 32,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "level"
+        ],
+        "id": "settinglevel",
+        "source_line": 304,
+        "text": "装备等级限制",
+        "block": 4,
+        "line": 33,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "level-placeholder"
+        ],
+        "id": "settinglevel-placeholder",
+        "source_line": 306,
+        "text": "装备等级限制标签,等级来源变量",
+        "block": 4,
+        "line": 35,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "equipmentType"
+        ],
+        "id": "settingequipmenttype",
+        "source_line": 309,
+        "text": "装备类型\n例如 [装备类型: 双持]",
+        "block": 4,
+        "line": 37,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "equipmentType",
+          "lore"
+        ],
+        "id": "settingequipmenttypelore",
+        "source_line": 310,
+        "text": "",
+        "block": 4,
+        "line": 40,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "equipmentType",
+          "list"
+        ],
+        "id": "settingequipmenttypelist",
+        "source_line": 311,
+        "text": "",
+        "block": 4,
+        "line": 41,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options"
+        ],
+        "id": "settingoptions",
+        "source_line": 319,
+        "text": "",
+        "block": 5,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "pluginDamage"
+        ],
+        "id": "settingoptionsplugindamage",
+        "source_line": 321,
+        "text": "仅启用插件属性伤害 (关闭后 {attack} {overAttack} 也会附上其他插件的伤害数值)",
+        "block": 5,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "defaultDamage"
+        ],
+        "id": "settingoptionsdefaultdamage",
+        "source_line": 323,
+        "text": "原版伤害 (pluginDamage 为 true 时,此处默认 false)",
+        "block": 5,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "defaultArmor"
+        ],
+        "id": "settingoptionsdefaultarmor",
+        "source_line": 325,
+        "text": "原版护甲 (1.9+功能 原版护甲为百分比抵消伤害，会影响插件伤害的准确性，默认关闭)",
+        "block": 5,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "skillLevel"
+        ],
+        "id": "settingoptionsskilllevel",
+        "source_line": 327,
+        "text": "开启后装备等级限制将根据玩家职业等级进行判断",
+        "block": 5,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "skillDamage"
+        ],
+        "id": "settingoptionsskilldamage",
+        "source_line": 330,
+        "text": "关闭后 SkillAPI 插件造成的技能伤害将不处理进行属性处理\n3.3.0.1 版本过时,可使用 skill-options 内配置项",
+        "block": 5,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "magicDamage"
+        ],
+        "id": "settingoptionsmagicdamage",
+        "source_line": 333,
+        "text": "关闭后  Magic 插件造成的技能伤害将不处理进行属性处理\n3.3.0.1 版本过时,可使用 skill-options 内配置项",
+        "block": 5,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "skill-options"
+        ],
+        "id": "settingoptionsskill-options",
+        "source_line": 336,
+        "text": "技能兼容项\n开启对应类型属性处理兼容后 SkillAPI/Magic 技能伤害将附上对应类型的属性处理",
+        "block": 5,
+        "line": 17,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "skill-options",
+          "attack-attribute"
+        ],
+        "id": "settingoptionsskill-optionsattack-attribute",
+        "source_line": 338,
+        "text": "攻击类属性兼容",
+        "block": 5,
+        "line": 20,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "skill-options",
+          "defense-attribute"
+        ],
+        "id": "settingoptionsskill-optionsdefense-attribute",
+        "source_line": 340,
+        "text": "防御类属性兼容",
+        "block": 5,
+        "line": 22,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "skill-options",
+          "prohibit-attribute"
+        ],
+        "id": "settingoptionsskill-optionsprohibit-attribute",
+        "source_line": 343,
+        "text": "限制属性生效\n在该列表内的属性触发技能伤害时不会生效处理",
+        "block": 5,
+        "line": 24,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "attackDetection"
+        ],
+        "id": "settingoptionsattackdetection",
+        "source_line": 346,
+        "text": " - \"闪避几率\"\n物品攻击检测",
+        "block": 5,
+        "line": 27,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "attackDetection",
+          "left-click"
+        ],
+        "id": "settingoptionsattackdetectionleft-click",
+        "source_line": 348,
+        "text": "禁止物品左键攻击",
+        "block": 5,
+        "line": 30,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "attackDetection",
+          "remote"
+        ],
+        "id": "settingoptionsattackdetectionremote",
+        "source_line": 352,
+        "text": "远程伤害\n只有在下列列表内的物品类型远程攻击才有伤害",
+        "block": 5,
+        "line": 33,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "attackDetection",
+          "skill-damage-skip"
+        ],
+        "id": "settingoptionsattackdetectionskill-damage-skip",
+        "source_line": 355,
+        "text": "跳过 SkillAPI 技能伤害检测",
+        "block": 5,
+        "line": 37,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "attackDetection",
+          "magic-damage-skip"
+        ],
+        "id": "settingoptionsattackdetectionmagic-damage-skip",
+        "source_line": 357,
+        "text": "跳过 Magic 技能伤害检测",
+        "block": 5,
+        "line": 39,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "attackDetection",
+          "message-enable"
+        ],
+        "id": "settingoptionsattackdetectionmessage-enable",
+        "source_line": 359,
+        "text": "被禁止时是否提示玩家",
+        "block": 5,
+        "line": 41,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "attackDetection",
+          "enable"
+        ],
+        "id": "settingoptionsattackdetectionenable",
+        "source_line": 360,
+        "text": "",
+        "block": 5,
+        "line": 43,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "mechanism"
+        ],
+        "id": "settingoptionsmechanism",
+        "source_line": 361,
+        "text": "",
+        "block": 5,
+        "line": 44,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "mechanism",
+          "accumulateDamage"
+        ],
+        "id": "settingoptionsmechanismaccumulatedamage",
+        "source_line": 364,
+        "text": "支持版本: 1.9+\n蓄力伤害机制(近战&远程都会受到影响)",
+        "block": 5,
+        "line": 45,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "mechanism",
+          "shield"
+        ],
+        "id": "settingoptionsmechanismshield",
+        "source_line": 367,
+        "text": "支持版本: 1.9+\n盾牌格挡机制",
+        "block": 5,
+        "line": 48,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "mechanism",
+          "shield",
+          "enable"
+        ],
+        "id": "settingoptionsmechanismshieldenable",
+        "source_line": 368,
+        "text": "",
+        "block": 5,
+        "line": 51,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "mechanism",
+          "shield",
+          "right"
+        ],
+        "id": "settingoptionsmechanismshieldright",
+        "source_line": 370,
+        "text": "right 开启后盾牌就不再格挡,也不会冷却",
+        "block": 5,
+        "line": 52,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "mechanism",
+          "shield",
+          "cd"
+        ],
+        "id": "settingoptionsmechanismshieldcd",
+        "source_line": 372,
+        "text": "right 为 false 时启用盾牌格挡冷却机制",
+        "block": 5,
+        "line": 54,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "mechanism",
+          "shoot"
+        ],
+        "id": "settingoptionsmechanismshoot",
+        "source_line": 375,
+        "text": "支持版本 1.8? 1.9+\n弓箭机制",
+        "block": 5,
+        "line": 56,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "mechanism",
+          "shoot",
+          "enable"
+        ],
+        "id": "settingoptionsmechanismshootenable",
+        "source_line": 377,
+        "text": "弓箭属性计算公式均为 \"属性值/100\"",
+        "block": 5,
+        "line": 59,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "mechanism",
+          "shoot",
+          "force"
+        ],
+        "id": "settingoptionsmechanismshootforce",
+        "source_line": 381,
+        "text": "蓄力影响\n拉满则可以打出满射速的箭,如果没拉满则按力道削弱速度\n拉满精准度会提高,没拉满精准度则会降低,精准度不会超过 默认值+属性加成",
+        "block": 5,
+        "line": 61,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "mechanism",
+          "shoot",
+          "speed"
+        ],
+        "id": "settingoptionsmechanismshootspeed",
+        "source_line": 383,
+        "text": "默认箭飞行速度 (数值越大速度越快)",
+        "block": 5,
+        "line": 65,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "mechanism",
+          "shoot",
+          "spread"
+        ],
+        "id": "settingoptionsmechanismshootspread",
+        "source_line": 385,
+        "text": "默认箭飞行偏离 (数值越大偏离越大)",
+        "block": 5,
+        "line": 67,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "mechanism",
+          "shoot",
+          "through"
+        ],
+        "id": "settingoptionsmechanismshootthrough",
+        "source_line": 387,
+        "text": "穿透 1.14+ 版本支持,其他版本爬",
+        "block": 5,
+        "line": 69,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "mechanism",
+          "shoot",
+          "through",
+          "enable"
+        ],
+        "id": "settingoptionsmechanismshootthroughenable",
+        "source_line": 389,
+        "text": "是否启用",
+        "block": 5,
+        "line": 71,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "mechanism",
+          "shoot",
+          "through",
+          "amount"
+        ],
+        "id": "settingoptionsmechanismshootthroughamount",
+        "source_line": 391,
+        "text": "穿透次数 (箭术穿透触发时穿透实体次数)",
+        "block": 5,
+        "line": 73,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "mechanism",
+          "summon"
+        ],
+        "id": "settingoptionsmechanismsummon",
+        "source_line": 395,
+        "text": "MythicMobs 测试版本 4.7.2\nMythicMobs 召唤继承\n召唤的怪物会继承召唤者的某些属性",
+        "block": 5,
+        "line": 75,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "mechanism",
+          "summon",
+          "enable"
+        ],
+        "id": "settingoptionsmechanismsummonenable",
+        "source_line": 396,
+        "text": "",
+        "block": 5,
+        "line": 79,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "mechanism",
+          "summon",
+          "string"
+        ],
+        "id": "settingoptionsmechanismsummonstring",
+        "source_line": 398,
+        "text": "可继承的怪物名字必须包含以下内容",
+        "block": 5,
+        "line": 80,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "mechanism",
+          "summon",
+          "attribute"
+        ],
+        "id": "settingoptionsmechanismsummonattribute",
+        "source_line": 400,
+        "text": "可继承的属性,不在列表内的属性不继承",
+        "block": 5,
+        "line": 82,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "mechanism",
+          "mythic-signal"
+        ],
+        "id": "settingoptionsmechanismmythic-signal",
+        "source_line": 405,
+        "text": "触发器 ~onSignal:AttributePlus\n兼容 MythicMobs 触发器 Signal 信号接收此次处理属性值列表\n如果此次触发的属性处理不包括下面变量值属性则不触发该信号",
+        "block": 5,
+        "line": 85,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "entityAttribute"
+        ],
+        "id": "settingoptionsentityattribute",
+        "source_line": 407,
+        "text": "",
+        "block": 5,
+        "line": 90,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "entityAttribute",
+          "filter"
+        ],
+        "id": "settingoptionsentityattributefilter",
+        "source_line": 409,
+        "text": "实体属性刷新过滤",
+        "block": 5,
+        "line": 91,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "entityAttribute",
+          "filter",
+          "originalMonster"
+        ],
+        "id": "settingoptionsentityattributefilteroriginalmonster",
+        "source_line": 411,
+        "text": "原版怪物是否刷新时加载属性 (建议关闭,开启后所有为 LivingEntity 实体都会刷新属性)",
+        "block": 5,
+        "line": 93,
+        "heading": false
+      },
+      {
+        "path": [
+          "setting",
+          "options",
+          "entityAttribute",
+          "filter",
+          "list"
+        ],
+        "id": "settingoptionsentityattributefilterlist",
+        "source_line": 414,
+        "text": "当 originalMonster 为 false 时启动\n怪物名包含下列字符才刷新属性",
+        "block": 5,
+        "line": 95,
+        "heading": false
+      }
+    ]
+  },
+  {
+    "file": "configuration/script/example.md",
+    "title": "script/example.js",
+    "source_kind": "imported-configuration",
+    "source_sha256": "28f3a75216800963d7cdf794347452377e0c0c38a0076f61c7e73021922845e6",
+    "translation_review": "reviewed",
+    "anchors": []
+  },
+  {
+    "file": "configuration/index.md",
+    "title": "配置文件",
+    "source_kind": "imported-configuration",
+    "source_sha256": "28f3a75216800963d7cdf794347452377e0c0c38a0076f61c7e73021922845e6",
+    "translation_review": "reviewed",
+    "anchors": []
+  }
+]

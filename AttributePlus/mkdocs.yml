@@ -1,0 +1,16 @@
+site_name: AttributePlus 中文资料
+nav:
+- 插件说明: index.md
+- 配置文件（3.3.3.6）:
+  - 配置索引: configuration/index.md
+  - kether.yml: configuration/kether.md
+  - datasource.yml: configuration/datasource.md
+  - config.yml: configuration/config.md
+  - script.yml: configuration/script.md
+  - stats.yml: configuration/stats.md
+  - format.yml: configuration/format.md
+  - attribute.yml: configuration/attribute.md
+  - 语言文件（lang/）:
+    - zh_CN.yml: configuration/lang/zh_cn.md
+  - 脚本（script/）:
+    - example.js: configuration/script/example.md

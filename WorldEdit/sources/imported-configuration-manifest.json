@@ -1,0 +1,643 @@
+[
+  {
+    "file": "configuration/config.md",
+    "title": "config.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "1f0db57436e55ed30fa593451f9d6dfeae345e45c4940e73ca2ec0b66645eca3",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "limits"
+        ],
+        "id": "limits",
+        "source_line": 18,
+        "text": "\nWorldEdit 配置文件\n\n编辑本文件时请注意：\n- 不要使用制表符。必须使用空格，否则 Bukkit 会报告\n  错误。如果使用 Notepad++ 等编辑器（推荐 Windows\n  用户使用），必须将其设为 \"replace tabs with spaces\"（用空格替换制表符）。\n  可在 Settings > Preferences > Language Menu 中修改此设置。\n- 不要删除缩进。缩进用于将某些配置项归入对应的\n  分类，例如将 \"max-blocks-changed\" 放在 \"limits\"\n  分类中。\n- 如果想在将此文件交给 WorldEdit 使用前检查格式，\n  请将其内容粘贴到 http://yaml-online-parser.appspot.com/\n  并检查是否出现 \"ERROR:\"。\n- 以 # 开头的行是注释，会被忽略。\n- 如果想允许使用方块，请将 \"disallowed-blocks\" 改为 []。\n",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "limits",
+          "max-blocks-changed"
+        ],
+        "id": "limitsmax-blocks-changed",
+        "source_line": 19,
+        "text": "",
+        "block": 0,
+        "line": 20,
+        "heading": false
+      },
+      {
+        "path": [
+          "limits",
+          "max-blocks-changed",
+          "default"
+        ],
+        "id": "limitsmax-blocks-changeddefault",
+        "source_line": 20,
+        "text": "",
+        "block": 0,
+        "line": 21,
+        "heading": false
+      },
+      {
+        "path": [
+          "limits",
+          "max-blocks-changed",
+          "maximum"
+        ],
+        "id": "limitsmax-blocks-changedmaximum",
+        "source_line": 21,
+        "text": "",
+        "block": 0,
+        "line": 22,
+        "heading": false
+      },
+      {
+        "path": [
+          "limits",
+          "vertical-height"
+        ],
+        "id": "limitsvertical-height",
+        "source_line": 22,
+        "text": "",
+        "block": 0,
+        "line": 23,
+        "heading": false
+      },
+      {
+        "path": [
+          "limits",
+          "vertical-height",
+          "default"
+        ],
+        "id": "limitsvertical-heightdefault",
+        "source_line": 23,
+        "text": "",
+        "block": 0,
+        "line": 24,
+        "heading": false
+      },
+      {
+        "path": [
+          "limits",
+          "max-polygonal-points"
+        ],
+        "id": "limitsmax-polygonal-points",
+        "source_line": 24,
+        "text": "",
+        "block": 0,
+        "line": 25,
+        "heading": false
+      },
+      {
+        "path": [
+          "limits",
+          "max-polygonal-points",
+          "default"
+        ],
+        "id": "limitsmax-polygonal-pointsdefault",
+        "source_line": 25,
+        "text": "",
+        "block": 0,
+        "line": 26,
+        "heading": false
+      },
+      {
+        "path": [
+          "limits",
+          "max-polygonal-points",
+          "maximum"
+        ],
+        "id": "limitsmax-polygonal-pointsmaximum",
+        "source_line": 26,
+        "text": "",
+        "block": 0,
+        "line": 27,
+        "heading": false
+      },
+      {
+        "path": [
+          "limits",
+          "max-radius"
+        ],
+        "id": "limitsmax-radius",
+        "source_line": 27,
+        "text": "",
+        "block": 0,
+        "line": 28,
+        "heading": false
+      },
+      {
+        "path": [
+          "limits",
+          "max-super-pickaxe-size"
+        ],
+        "id": "limitsmax-super-pickaxe-size",
+        "source_line": 28,
+        "text": "",
+        "block": 0,
+        "line": 29,
+        "heading": false
+      },
+      {
+        "path": [
+          "limits",
+          "max-brush-radius"
+        ],
+        "id": "limitsmax-brush-radius",
+        "source_line": 29,
+        "text": "",
+        "block": 0,
+        "line": 30,
+        "heading": false
+      },
+      {
+        "path": [
+          "limits",
+          "butcher-radius"
+        ],
+        "id": "limitsbutcher-radius",
+        "source_line": 30,
+        "text": "",
+        "block": 0,
+        "line": 31,
+        "heading": false
+      },
+      {
+        "path": [
+          "limits",
+          "butcher-radius",
+          "default"
+        ],
+        "id": "limitsbutcher-radiusdefault",
+        "source_line": 31,
+        "text": "",
+        "block": 0,
+        "line": 32,
+        "heading": false
+      },
+      {
+        "path": [
+          "limits",
+          "butcher-radius",
+          "maximum"
+        ],
+        "id": "limitsbutcher-radiusmaximum",
+        "source_line": 32,
+        "text": "",
+        "block": 0,
+        "line": 33,
+        "heading": false
+      },
+      {
+        "path": [
+          "limits",
+          "disallowed-blocks"
+        ],
+        "id": "limitsdisallowed-blocks",
+        "source_line": 33,
+        "text": "",
+        "block": 0,
+        "line": 34,
+        "heading": false
+      },
+      {
+        "path": [
+          "use-inventory"
+        ],
+        "id": "use-inventory",
+        "source_line": 95,
+        "text": "",
+        "block": 1,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "use-inventory",
+          "enable"
+        ],
+        "id": "use-inventoryenable",
+        "source_line": 96,
+        "text": "",
+        "block": 1,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "use-inventory",
+          "allow-override"
+        ],
+        "id": "use-inventoryallow-override",
+        "source_line": 97,
+        "text": "",
+        "block": 1,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "use-inventory",
+          "creative-mode-overrides"
+        ],
+        "id": "use-inventorycreative-mode-overrides",
+        "source_line": 98,
+        "text": "",
+        "block": 1,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "logging"
+        ],
+        "id": "logging",
+        "source_line": 100,
+        "text": "",
+        "block": 2,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "logging",
+          "log-commands"
+        ],
+        "id": "logginglog-commands",
+        "source_line": 101,
+        "text": "",
+        "block": 2,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "logging",
+          "file"
+        ],
+        "id": "loggingfile",
+        "source_line": 102,
+        "text": "",
+        "block": 2,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "logging",
+          "format"
+        ],
+        "id": "loggingformat",
+        "source_line": 113,
+        "text": "自定义日志消息的格式。使用 Java 通用格式字符串（java.util.Formatter），参数如下：\n  1$ : date - 表示日志记录中事件发生时间的 Date 对象。\n  2$ : source - 表示调用者的字符串；若无法获取，则使用日志记录器的名称。\n  3$ : logger - 日志记录器的名称。\n  4$ : level - 日志级别。\n  5$ : message - Formatter.formatMessage(LogRecord) 方法返回的格式化日志消息。它使用 java.text 格式，而不使用 java.util.Formatter 的格式参数。\n  6$ : thrown - 表示与日志记录关联的 throwable 及其堆栈回溯的字符串，回溯以换行符开头；若不存在，则为空字符串。\n详情参见：\n  https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html\n  https://docs.oracle.com/javase/8/docs/api/java/util/logging/SimpleFormatter.html#format-java.util.logging.LogRecord-",
+        "block": 2,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "super-pickaxe"
+        ],
+        "id": "super-pickaxe",
+        "source_line": 115,
+        "text": "",
+        "block": 3,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "super-pickaxe",
+          "drop-items"
+        ],
+        "id": "super-pickaxedrop-items",
+        "source_line": 116,
+        "text": "",
+        "block": 3,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "super-pickaxe",
+          "many-drop-items"
+        ],
+        "id": "super-pickaxemany-drop-items",
+        "source_line": 117,
+        "text": "",
+        "block": 3,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "snapshots"
+        ],
+        "id": "snapshots",
+        "source_line": 119,
+        "text": "",
+        "block": 4,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "snapshots",
+          "directory"
+        ],
+        "id": "snapshotsdirectory",
+        "source_line": 120,
+        "text": "",
+        "block": 4,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "navigation-wand"
+        ],
+        "id": "navigation-wand",
+        "source_line": 122,
+        "text": "",
+        "block": 5,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "navigation-wand",
+          "item"
+        ],
+        "id": "navigation-wanditem",
+        "source_line": 123,
+        "text": "",
+        "block": 5,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "navigation-wand",
+          "max-distance"
+        ],
+        "id": "navigation-wandmax-distance",
+        "source_line": 124,
+        "text": "",
+        "block": 5,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "scripting"
+        ],
+        "id": "scripting",
+        "source_line": 126,
+        "text": "",
+        "block": 6,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "scripting",
+          "timeout"
+        ],
+        "id": "scriptingtimeout",
+        "source_line": 127,
+        "text": "",
+        "block": 6,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "scripting",
+          "dir"
+        ],
+        "id": "scriptingdir",
+        "source_line": 128,
+        "text": "",
+        "block": 6,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "saving"
+        ],
+        "id": "saving",
+        "source_line": 130,
+        "text": "",
+        "block": 7,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "saving",
+          "dir"
+        ],
+        "id": "savingdir",
+        "source_line": 131,
+        "text": "",
+        "block": 7,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "files"
+        ],
+        "id": "files",
+        "source_line": 133,
+        "text": "",
+        "block": 8,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "files",
+          "allow-symbolic-links"
+        ],
+        "id": "filesallow-symbolic-links",
+        "source_line": 134,
+        "text": "",
+        "block": 8,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "history"
+        ],
+        "id": "history",
+        "source_line": 136,
+        "text": "",
+        "block": 9,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "history",
+          "size"
+        ],
+        "id": "historysize",
+        "source_line": 137,
+        "text": "",
+        "block": 9,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "history",
+          "expiration"
+        ],
+        "id": "historyexpiration",
+        "source_line": 138,
+        "text": "",
+        "block": 9,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "calculation"
+        ],
+        "id": "calculation",
+        "source_line": 140,
+        "text": "",
+        "block": 10,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "calculation",
+          "timeout"
+        ],
+        "id": "calculationtimeout",
+        "source_line": 141,
+        "text": "",
+        "block": 10,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "debugging"
+        ],
+        "id": "debugging",
+        "source_line": 143,
+        "text": "",
+        "block": 11,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "debugging",
+          "trace-unflushed-sessions"
+        ],
+        "id": "debuggingtrace-unflushed-sessions",
+        "source_line": 144,
+        "text": "",
+        "block": 11,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "wand-item"
+        ],
+        "id": "wand-item",
+        "source_line": 146,
+        "text": "",
+        "block": 12,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "shell-save-type"
+        ],
+        "id": "shell-save-type",
+        "source_line": 147,
+        "text": "",
+        "block": 13,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "no-op-permissions"
+        ],
+        "id": "no-op-permissions",
+        "source_line": 148,
+        "text": "",
+        "block": 14,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "debug"
+        ],
+        "id": "debug",
+        "source_line": 149,
+        "text": "",
+        "block": 15,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "show-help-on-first-use"
+        ],
+        "id": "show-help-on-first-use",
+        "source_line": 150,
+        "text": "",
+        "block": 16,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "server-side-cui"
+        ],
+        "id": "server-side-cui",
+        "source_line": 151,
+        "text": "",
+        "block": 17,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "command-block-support"
+        ],
+        "id": "command-block-support",
+        "source_line": 152,
+        "text": "",
+        "block": 18,
+        "line": 1,
+        "heading": true
+      }
+    ]
+  },
+  {
+    "file": "configuration/index.md",
+    "title": "配置文件",
+    "source_kind": "imported-configuration",
+    "source_sha256": "1f0db57436e55ed30fa593451f9d6dfeae345e45c4940e73ca2ec0b66645eca3",
+    "translation_review": "reviewed",
+    "anchors": []
+  }
+]

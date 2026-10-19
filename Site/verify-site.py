@@ -5,7 +5,7 @@ import json
 import sys
 from html.parser import HTMLParser
 import os
-from hooks import PROJECTS, PHOENIX_PROJECTS, TABLE_PAGES
+from hooks import PROJECTS, PHOENIX_PROJECTS, PLUGIN_PROJECTS, PROJECT_TAB, DISPLAY_NAMES, TABLE_PAGES, configuration_pages
 ROOT=Path(__file__).resolve().parent.parent
 SITE=ROOT/'.cache/site'
 SITE_ROOT=SITE.resolve()
@@ -14,11 +14,12 @@ errors=[]
 def page_manifest(project):
     source=ROOT/project/'sources'
     rows=json.loads((source/'manifest.json').read_text(encoding='utf-8'))
-    if project=='CMI':
-        rows+=json.loads((source/'configuration-manifest.json').read_text(encoding='utf-8'))
+    for name in ('configuration-manifest.json','imported-configuration-manifest.json'):
+        path=source/name
+        if path.is_file():rows+=json.loads(path.read_text(encoding='utf-8'))
     return rows
 
-tab_addresses={base+'index.html':('Phoenix' if (project,base) in PHOENIX_PROJECTS else project) for project,base in PROJECTS}
+tab_addresses={base+'index.html':PROJECT_TAB.get(project,project) for project,base in PROJECTS}
 class DocumentFacts(HTMLParser):
     """Read links, anchors and tab labels without constructing a full page DOM."""
     def __init__(self):
@@ -83,7 +84,7 @@ for name,base in PROJECTS:
     items=[row for row in search['docs'] if '#' not in row['location'] and (row['location'].startswith(base) if base else not row['location'].startswith(tuple(prefix for _,prefix in PROJECTS if prefix)))]
     expected=page_manifest(name)
     if len(items)!=len(expected):errors.append('Search page coverage mismatch: '+name)
-    if any(not item['title'].startswith(name+' · ') or name not in item.get('tags',[]) for item in items):errors.append('Search project labels missing: '+name)
+    if any(not item['title'].startswith(DISPLAY_NAMES.get(name,name)+' · ') or DISPLAY_NAMES.get(name,name) not in item.get('tags',[]) for item in items):errors.append('Search project labels missing: '+name)
     project_pages[name]=len(items)
 table_entries=[row for row in search['docs'] if row['location'].startswith(tuple(source.removesuffix('.md')+'/#'+anchor for source,anchor in TABLE_PAGES.items()))]
 residence_entries=[row for row in table_entries if row['location'].startswith('residence/')]
@@ -92,11 +93,11 @@ for item in table_entries:
     parts=urlsplit(item['location'])
     target=(SITE/parts.path/'index.html').resolve()
     if unquote(parts.fragment) not in anchors[target]:errors.append('Search table-row anchor missing: '+item['location'])
-configuration_entries={item['location']:item for item in search['docs'] if item['location'].startswith('configuration/')}
+configuration_entries={item['location']:item for item in search['docs']}
 configuration_fields=0
-for page in json.loads((ROOT/'CMI/sources/configuration-manifest.json').read_text(encoding='utf-8')):
-    relative=page['file'].removesuffix('.md')+'/'
-    if page['file'].endswith('/index.md'):relative=page['file'].removesuffix('index.md')
+for source,page in configuration_pages().items():
+    relative=source.removesuffix('.md')+'/'
+    if source.endswith('/index.md'):relative=source.removesuffix('index.md')
     target=(SITE/relative/'index.html').resolve()
     for item in page.get('anchors',[]):
         if item['id'] not in anchors[target]:errors.append('Configuration field anchor missing: '+relative+'#'+item['id'])
@@ -105,7 +106,7 @@ for page in json.loads((ROOT/'CMI/sources/configuration-manifest.json').read_tex
             if relative+'#'+item['id'] not in configuration_entries:errors.append('Configuration field not searchable: '+relative+'#'+item['id'])
 for address,project in tab_addresses.items():
     tabs,active=page_tabs[(SITE/address).resolve()]
-    if tabs!=['CMI','Residence','Typewriter','Phoenix']:errors.append('Expected four top-level tabs: '+address)
+    if tabs!=['CMI','Residence','Typewriter','Phoenix','插件与配置']:errors.append('Top-level tabs differ: '+address)
     if active!=project:errors.append('Wrong active project tab: '+address)
 print(json.dumps({'html_pages':len(html_files),'local_references':checked,'search_entries':len(search['docs']),'table_row_entries':len(table_entries),'configuration_fields':configuration_fields,'project_pages':project_pages,'errors':errors},ensure_ascii=False,indent=2))
 if errors:sys.exit(1)

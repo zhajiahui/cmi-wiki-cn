@@ -1,0 +1,15 @@
+{
+  "name": "LoneLibs",
+  "version": "1.0.65",
+  "website": null,
+  "depend": [],
+  "softdepend": [
+    "ViaVersion"
+  ],
+  "authors": [
+    "LoneDev",
+    "others"
+  ],
+  "commands": [],
+  "permissions": []
+}

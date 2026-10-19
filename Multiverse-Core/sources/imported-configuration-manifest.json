@@ -1,0 +1,1853 @@
+[
+  {
+    "file": "configuration/anchors.md",
+    "title": "anchors.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "6ee49fbce6ac7a0e62c24aad202d92425cfaab3dfdfd288869f1cf7bbc56d0b5",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "anchors"
+        ],
+        "id": "anchors",
+        "source_line": 0,
+        "text": "",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      }
+    ]
+  },
+  {
+    "file": "configuration/config.md",
+    "title": "config.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "6ee49fbce6ac7a0e62c24aad202d92425cfaab3dfdfd288869f1cf7bbc56d0b5",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "world"
+        ],
+        "id": "world",
+        "source_line": 18,
+        "text": "\n                                                                                                 #\n                   █▀▄▀█ █░█ █░░ ▀█▀ █ █░█ █▀▀ █▀█ █▀ █▀▀   █▀▀ █▀█ █▀█ █▀▀                      #\n                   █░▀░█ █▄█ █▄▄ ░█░ █ ▀▄▀ ██▄ █▀▄ ▄█ ██▄   █▄▄ █▄█ █▀▄ ██▄                      #\n                                                                                                 #\n                                                                                                 #\n   Wiki：       https://mvplugins.org/core/                                                      #\n   DISCORD：    https://discord.gg/NZtfKky                                                       #\n   问题反馈：   https://github.com/Multiverse/Multiverse-Core/issues                             #\n   捐赠：       https://github.com/sponsors/Multiverse                                           #\n                                                                                                 #\n                                                                                                 #\n   新选项会自动添加到本文件。如果在服务器运行期间手动修改了本文件，                               #\n   请执行 `/mv reload` 命令。                                                                   #\n                                                                                                 #\n",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "world",
+          "auto-import-default-worlds"
+        ],
+        "id": "worldauto-import-default-worlds",
+        "source_line": 22,
+        "text": "启用后，Multiverse 会在启用或重载时自动导入 server.properties 中\n`level-name` 指定的默认世界。如果服务器创建了下界和\n末地，也会一并导入。",
+        "block": 0,
+        "line": 20,
+        "heading": false
+      },
+      {
+        "path": [
+          "world",
+          "auto-import-3rd-party-worlds"
+        ],
+        "id": "worldauto-import-3rd-party-worlds",
+        "source_line": 26,
+        "text": "启用后，Multiverse 会在启动或重载时导入其他插件创建的\n所有其他世界。",
+        "block": 0,
+        "line": 24,
+        "heading": false
+      },
+      {
+        "path": [
+          "world",
+          "enforce-access"
+        ],
+        "id": "worldenforce-access",
+        "source_line": 32,
+        "text": "此设置用于阻止玩家进入没有访问权限的世界。\n设为 false 时，玩家可以进入任意世界。\n设为 true 时，玩家只能进入自己拥有\n`mv.access.<worldname>` 权限的世界。",
+        "block": 0,
+        "line": 28,
+        "heading": false
+      },
+      {
+        "path": [
+          "world",
+          "enforce-gamemode"
+        ],
+        "id": "worldenforce-gamemode",
+        "source_line": 37,
+        "text": "设置 Multiverse 是否在玩家切换世界时强制切换游戏模式。\n启用后，玩家会被强制切换为所进入世界的游戏模式，除非拥有\n`mv.bypass.gamemode.<worldname>` 权限。",
+        "block": 0,
+        "line": 34,
+        "heading": false
+      },
+      {
+        "path": [
+          "world",
+          "enforce-flight"
+        ],
+        "id": "worldenforce-flight",
+        "source_line": 42,
+        "text": "设置 Multiverse 是否对各世界统一强制应用飞行能力设置。\n如果希望由其他插件管理玩家的飞行能力，请禁用此项。\n禁用后，世界属性 `allow-flight` 将不再生效。",
+        "block": 0,
+        "line": 39,
+        "heading": false
+      },
+      {
+        "path": [
+          "world",
+          "gamemode-and-flight-enforce-delay"
+        ],
+        "id": "worldgamemode-and-flight-enforce-delay",
+        "source_line": 47,
+        "text": "设置切换世界后，Multiverse 强制应用游戏模式和飞行能力设置前的延迟，单位为 tick。\n如果遇到其他插件覆盖游戏模式或飞行能力的问题，请增大此值。\n也可以设为 0，在世界切换事件中立即应用。",
+        "block": 0,
+        "line": 44,
+        "heading": false
+      },
+      {
+        "path": [
+          "world",
+          "apply-entity-spawn-rate"
+        ],
+        "id": "worldapply-entity-spawn-rate",
+        "source_line": 53,
+        "text": "设置 Multiverse 是否应用 worlds.yml 中各世界的实体 `tick-rate` 配置。\n禁用后，将忽略 worlds.yml 中的 `tick-rate` 配置。\n如果希望由 paper-world.yml 或其他插件管理各世界的实体生成频率，请禁用此项。\n!!!注意：此设置仅在服务器重启后生效！",
+        "block": 0,
+        "line": 49,
+        "heading": false
+      },
+      {
+        "path": [
+          "world",
+          "apply-entity-spawn-limit"
+        ],
+        "id": "worldapply-entity-spawn-limit",
+        "source_line": 59,
+        "text": "设置 Multiverse 是否在加载世界时应用该世界的实体 `spawn-limit` 配置。\n禁用后，将忽略 worlds.yml 中的 `spawn-limit` 配置。\n如果希望由 paper-world.yml 或其他插件管理各世界的实体数量上限，请禁用此项。\n!!!注意：此设置仅在服务器重启后生效！",
+        "block": 0,
+        "line": 55,
+        "heading": false
+      },
+      {
+        "path": [
+          "world",
+          "auto-purge-entities"
+        ],
+        "id": "worldauto-purge-entities",
+        "source_line": 62,
+        "text": "设置 Multiverse 是否在世界加载时，根据该世界的实体生成配置清除实体。",
+        "block": 0,
+        "line": 61,
+        "heading": false
+      },
+      {
+        "path": [
+          "world",
+          "world-name-format"
+        ],
+        "id": "worldworld-name-format",
+        "source_line": 66,
+        "text": "世界名称的格式，供 Multiverse 自动识别由主世界、下界和末地组成的世界组。\n用于 default-respawn-in-overworld，也可能用于其他功能。",
+        "block": 0,
+        "line": 64,
+        "heading": false
+      },
+      {
+        "path": [
+          "world",
+          "world-name-format",
+          "nether"
+        ],
+        "id": "worldworld-name-formatnether",
+        "source_line": 67,
+        "text": "",
+        "block": 0,
+        "line": 68,
+        "heading": false
+      },
+      {
+        "path": [
+          "world",
+          "world-name-format",
+          "end"
+        ],
+        "id": "worldworld-name-formatend",
+        "source_line": 68,
+        "text": "",
+        "block": 0,
+        "line": 69,
+        "heading": false
+      },
+      {
+        "path": [
+          "world",
+          "warn-alias-conflicts"
+        ],
+        "id": "worldwarn-alias-conflicts",
+        "source_line": 73,
+        "text": "设置 Multiverse 是否在添加世界或修改别名时，对重复别名发出警告。\n虽然不强制要求，但强烈建议避免多个世界使用相同别名，也应避免\n别名与其他世界的名称相同，以免在列出世界和使用命令选择世界时产生混淆。",
+        "block": 0,
+        "line": 70,
+        "heading": false
+      },
+      {
+        "path": [
+          "teleport"
+        ],
+        "id": "teleport",
+        "source_line": 76,
+        "text": "",
+        "block": 1,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "teleport",
+          "use-finer-teleport-permissions"
+        ],
+        "id": "teleportuse-finer-teleport-permissions",
+        "source_line": 87,
+        "text": "设置 Multiverse 是否使用更细分的传送权限。\n----\n/mvtp 和 /mvspawn 命令使用的新细分传送权限：\n  - 对于指定的传送类型：`multiverse.teleport.<self|other>.<type>.<target>`\n  - 对于指定世界的出生点：`multiverse.core.spawn.<self|other>.<worldname>`\n例如，设置 `multiverse.teleport.self.w.world2` 后，Multiverse 将只允许该玩家传送到 world2。\n----\n设为 false 时使用旧版权限：\n  - 对于传送目的地：`multiverse.teleport.<self|other>.<type>`\n  - 对于出生点：`multiverse.core.spawn.<self|other>`",
+        "block": 1,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "teleport",
+          "passenger-mode"
+        ],
+        "id": "teleportpassenger-mode",
+        "source_line": 101,
+        "text": "配置实体传送时如何处理乘客和载具。此配置\n仅适用于 /mvtp、join-destination 和 first-spawn-override，不影响其他插件或命令\n触发的任何传送。\n========= 可用选项：=========\n  default: 由服务器处理乘客和载具。在 papermc 1.21.10+ 上，默认全部保留。\n                                                       在较早的版本上，跨世界时会全部解除骑乘关系。\n  dismount_passengers: 传送前解除该实体与其乘客的骑乘关系。\n  dismount_vehicle: 传送前解除该实体与其载具的骑乘关系。\n  dismount_all: 传送前解除该实体与所有乘客及载具的骑乘关系。\n  retain_passengers: 乘客会与该实体一同传送。\n  retain_vehicle: 载具会与该实体一同传送。\n  retain_all: 所有乘客和载具都会与该实体一同传送。",
+        "block": 1,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "teleport",
+          "concurrent-teleport-limit"
+        ],
+        "id": "teleportconcurrent-teleport-limit",
+        "source_line": 104,
+        "text": "设置 `/mv teleport` 命令一次最多可传送的玩家数量",
+        "block": 1,
+        "line": 27,
+        "heading": false
+      },
+      {
+        "path": [
+          "teleport",
+          "teleport-intercept"
+        ],
+        "id": "teleportteleport-intercept",
+        "source_line": 109,
+        "text": "设为 true 时，Multiverse 会对所有传送强制检查访问权限，\n包括其他插件触发的传送。只有与其他负责传送的插件\n发生冲突时，才应禁用此项。",
+        "block": 1,
+        "line": 30,
+        "heading": false
+      },
+      {
+        "path": [
+          "teleport",
+          "safe-location-horizontal-search-radius"
+        ],
+        "id": "teleportsafe-location-horizontal-search-radius",
+        "source_line": 114,
+        "text": "设置查找安全传送位置时的水平搜索半径（x 轴和 z 轴）。\n增大此值会扩大搜索范围，但会增加性能开销。\n设为 0 可禁用。",
+        "block": 1,
+        "line": 35,
+        "heading": false
+      },
+      {
+        "path": [
+          "teleport",
+          "safe-location-vertical-search-radius"
+        ],
+        "id": "teleportsafe-location-vertical-search-radius",
+        "source_line": 119,
+        "text": "设置查找安全传送位置时的垂直搜索半径（y 轴）。\n增大此值会扩大搜索范围，但会增加性能开销。\n设为 0 可禁用。",
+        "block": 1,
+        "line": 40,
+        "heading": false
+      },
+      {
+        "path": [
+          "spawn"
+        ],
+        "id": "spawn",
+        "source_line": 122,
+        "text": "",
+        "block": 2,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "spawn",
+          "first-spawn-override"
+        ],
+        "id": "spawnfirst-spawn-override",
+        "source_line": 126,
+        "text": "设置 Multiverse 是否覆盖玩家首次加入服务器时的生成位置。\n如果需要每次登录都在固定位置生成，请参见下方的 `join-destination` 选项。\n禁用后，默认使用 server.properties 中的设置。",
+        "block": 2,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "spawn",
+          "first-spawn-location"
+        ],
+        "id": "spawnfirst-spawn-location",
+        "source_line": 130,
+        "text": "设置 Multiverse 为首次加入服务器的玩家使用的生成世界。\n仅当 first-spawn-override 设为 true 时生效。",
+        "block": 2,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "spawn",
+          "enable-join-destination"
+        ],
+        "id": "spawnenable-join-destination",
+        "source_line": 134,
+        "text": "启用后，可为玩家设置每次加入服务器时的固定生成位置。\n另请参见下方的 `join-destination` 选项。",
+        "block": 2,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "spawn",
+          "join-destination"
+        ],
+        "id": "spawnjoin-destination",
+        "source_line": 138,
+        "text": "设置 Multiverse 为玩家每次登录使用的生成目的地。\n将上方的 enable-join-destination 设为 false 可禁用",
+        "block": 2,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "spawn",
+          "default-respawn-in-overworld"
+        ],
+        "id": "spawndefault-respawn-in-overworld",
+        "source_line": 148,
+        "text": "仅当玩家死亡时所在世界未设置 `respawn-world` 属性，\n且玩家未设置床或重生锚时生效。\n----\n启用后，玩家在下界或末地死亡时会在主世界重生，与原版行为一致。\n自动选择哪个主世界，由上方的 `world-name-format` 配置部分决定。\n此选项优先于 `default-respawn-within-same-world` 选项。\n----\n如果希望由其他插件处理重生，或不想使用此原版行为，请设为 false。",
+        "block": 2,
+        "line": 18,
+        "heading": false
+      },
+      {
+        "path": [
+          "spawn",
+          "default-respawn-within-same-world"
+        ],
+        "id": "spawndefault-respawn-within-same-world",
+        "source_line": 161,
+        "text": "仅当玩家死亡时所在世界未设置 `respawn-world` 属性，\n且玩家未设置床或重生锚时生效。\n----\n启用后，玩家会在死亡时所在的同一个世界重生。\n如果 /spawnpoint 设置的位置已在该世界内，且禁用了 `enforce-respawn-at-world-spawn`，\nMultiverse 会使用该生成位置；否则使用玩家死亡时所在世界的世界出生点。\n----\n可使用命令 `/mv modify <worldname> set respawn-world <worldname>` 设置 `respawn-world` 属性\n可使用命令 `/mv modify <worldname> reset respawn-world` 重置 `respawn-world` 属性\n----\n如果希望由其他插件处理重生，请设为 false。",
+        "block": 2,
+        "line": 28,
+        "heading": false
+      },
+      {
+        "path": [
+          "spawn",
+          "enforce-respawn-at-world-spawn"
+        ],
+        "id": "spawnenforce-respawn-at-world-spawn",
+        "source_line": 167,
+        "text": "启用后，玩家始终会在计算得出的重生世界的世界出生点重生，\n除非玩家已设置床或重生锚，且分别启用了对应的 `bed-respawn` 或 `anchor-spawn`。\n----\n如果希望使用 /spawnpoint 等自定义生成位置，而不是世界出生点，请设为 false。",
+        "block": 2,
+        "line": 41,
+        "heading": false
+      },
+      {
+        "path": [
+          "portal"
+        ],
+        "id": "portal",
+        "source_line": 170,
+        "text": "",
+        "block": 3,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "portal",
+          "use-custom-portal-search"
+        ],
+        "id": "portaluse-custom-portal-search",
+        "source_line": 173,
+        "text": "设置 Multiverse 是否接管 Bukkit 默认的传送门搜索半径。\n设为 false 时，由 Bukkit 自行决定搜索半径。",
+        "block": 3,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "portal",
+          "custom-portal-search-radius"
+        ],
+        "id": "portalcustom-portal-search-radius",
+        "source_line": 177,
+        "text": "设置 Multiverse 查找传送门时使用的搜索半径。\n仅当 use-custom-portal-search 设为 true 时生效。",
+        "block": 3,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "messaging"
+        ],
+        "id": "messaging",
+        "source_line": 180,
+        "text": "",
+        "block": 4,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "messaging",
+          "enable-chat-prefix"
+        ],
+        "id": "messagingenable-chat-prefix",
+        "source_line": 183,
+        "text": "设置 Multiverse 是否在聊天消息前添加世界名称前缀。\n如果希望由其他插件处理聊天格式，请将此项设为 false。",
+        "block": 4,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "messaging",
+          "chat-prefix-format"
+        ],
+        "id": "messagingchat-prefix-format",
+        "source_line": 187,
+        "text": "设置 Multiverse 在聊天消息前添加世界名称前缀时使用的格式。\n仅当 enable-chat-prefix 设为 true 时生效。",
+        "block": 4,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "messaging",
+          "register-papi-hook"
+        ],
+        "id": "messagingregister-papi-hook",
+        "source_line": 191,
+        "text": "设置 Multiverse 是否注册 PlaceholderAPI 对接。\n仅在已安装 PlaceholderAPI 时生效。",
+        "block": 4,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "messaging",
+          "warn-invalid-papi-format"
+        ],
+        "id": "messagingwarn-invalid-papi-format",
+        "source_line": 195,
+        "text": "设置 Multiverse 是否针对无效的 PlaceholderAPI 格式发出警告。\n仅在已安装 PlaceholderAPI 时生效，且只适用于 multiverse 占位符。",
+        "block": 4,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "messaging",
+          "invalid-papi-format-returns-blank"
+        ],
+        "id": "messaginginvalid-papi-format-returns-blank",
+        "source_line": 200,
+        "text": "默认情况下，格式无效时会返回原始占位符字符串。\n设置 Multiverse 是否将格式无效的 PlaceholderAPI 占位符显示为空白。\n仅在已安装 PlaceholderAPI 时生效，且只适用于 multiverse 占位符。",
+        "block": 4,
+        "line": 17,
+        "heading": false
+      },
+      {
+        "path": [
+          "messaging",
+          "default-locale"
+        ],
+        "id": "messagingdefault-locale",
+        "source_line": 203,
+        "text": "设置 Multiverse 使用的默认语言。",
+        "block": 4,
+        "line": 22,
+        "heading": false
+      },
+      {
+        "path": [
+          "messaging",
+          "per-player-locale"
+        ],
+        "id": "messagingper-player-locale",
+        "source_line": 207,
+        "text": "设置 Multiverse 是否使用玩家客户端所选的语言。\n如果玩家的语言没有对应译文，则改用上方设置的默认语言。",
+        "block": 4,
+        "line": 25,
+        "heading": false
+      },
+      {
+        "path": [
+          "command"
+        ],
+        "id": "command",
+        "source_line": 210,
+        "text": "",
+        "block": 5,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "command",
+          "resolve-alias-name"
+        ],
+        "id": "commandresolve-alias-name",
+        "source_line": 214,
+        "text": "设为 true 时，Multiverse 会在命令和目的地中按世界别名识别世界。\n仍然接受普通世界名称。\n如果多个世界的别名相同，将使用找到的第一个世界。",
+        "block": 5,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "command",
+          "simplified-destination-tab-completion"
+        ],
+        "id": "commandsimplified-destination-tab-completion",
+        "source_line": 219,
+        "text": "设为 true 时，Multiverse 只会在 Tab 补全中提示简单目的地格式。\n这表示只提示世界名称，不提示 `e:worldname:x,y,z` 或 `p:playername` 等其他目的地类型。\n注意：这不会阻止玩家使用这些目的地；是否可用由权限控制。",
+        "block": 5,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "command",
+          "confirm-mode"
+        ],
+        "id": "commandconfirm-mode",
+        "source_line": 227,
+        "text": "设置执行危险操作前是否需要使用 `/mv confirm` 确认。\n  enable: 需要执行 `/mv confirm`。\n  player_only: 仅在玩家执行命令时需要执行 `/mv confirm`。\n  disable_command_blocks: 命令方块无需执行 `/mv confirm`。\n  disable_console: 控制台无需执行 `/mv confirm`。\n  disable: 无需执行 `/mv confirm`。",
+        "block": 5,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "command",
+          "use-confirm-otp"
+        ],
+        "id": "commanduse-confirm-otp",
+        "source_line": 231,
+        "text": "设为 true 时，`/mv confirm` 会附带一个 3 位随机数字，必须输入该数字才能确认命令。\n例如：`/mv confirm 726`",
+        "block": 5,
+        "line": 19,
+        "heading": false
+      },
+      {
+        "path": [
+          "command",
+          "confirm-timeout"
+        ],
+        "id": "commandconfirm-timeout",
+        "source_line": 234,
+        "text": "`/mv confirm` 的超时时间，单位为秒",
+        "block": 5,
+        "line": 23,
+        "heading": false
+      },
+      {
+        "path": [
+          "command",
+          "show-legacy-aliases"
+        ],
+        "id": "commandshow-legacy-aliases",
+        "source_line": 239,
+        "text": "设为 true 时，Tab 补全会显示旧版命令别名。\n这些是 `/mvclone` 等 mv4 旧版别名；它们会与 `/mv clone` 一起显示，使 Tab 补全列表显得拥挤。\n!!!注意：此设置仅在服务器重启后生效！",
+        "block": 5,
+        "line": 26,
+        "heading": false
+      },
+      {
+        "path": [
+          "event-priority"
+        ],
+        "id": "event-priority",
+        "source_line": 242,
+        "text": "",
+        "block": 6,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "event-priority",
+          "player-portal"
+        ],
+        "id": "event-priorityplayer-portal",
+        "source_line": 250,
+        "text": "以下配置用于修改 Bukkit 的某些事件的 EventPriority。\n只有需要让 Multiverse 的事件处理结果覆盖其他插件，或希望\n其他插件的处理结果覆盖 Multiverse 时，才应修改。\n----\n!!!注意：此设置仅在服务器重启后生效！\n设置 PlayerPortalEvent 的优先级。",
+        "block": 6,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "event-priority",
+          "player-respawn"
+        ],
+        "id": "event-priorityplayer-respawn",
+        "source_line": 253,
+        "text": "设置 PlayerRespawnEvent 的优先级。",
+        "block": 6,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "event-priority",
+          "player-spawn-location"
+        ],
+        "id": "event-priorityplayer-spawn-location",
+        "source_line": 256,
+        "text": "设置 PlayerSpawnLocationEvent 的优先级。",
+        "block": 6,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "event-priority",
+          "player-teleport"
+        ],
+        "id": "event-priorityplayer-teleport",
+        "source_line": 259,
+        "text": "设置 PlayerTeleportEvent 的优先级。",
+        "block": 6,
+        "line": 16,
+        "heading": false
+      },
+      {
+        "path": [
+          "event-priority",
+          "player-changed-world"
+        ],
+        "id": "event-priorityplayer-changed-world",
+        "source_line": 262,
+        "text": "设置 PlayerChangedWorldEvent 的优先级。",
+        "block": 6,
+        "line": 19,
+        "heading": false
+      },
+      {
+        "path": [
+          "misc"
+        ],
+        "id": "misc",
+        "source_line": 265,
+        "text": "",
+        "block": 7,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "misc",
+          "bukkit-yml-path"
+        ],
+        "id": "miscbukkit-yml-path",
+        "source_line": 268,
+        "text": "如果通过启动参数 `--bukkit-settings` 为 bukkit.yml 文件指定了自定义路径，请修改此项。\n注意：此配置项需要重启服务器才能生效。",
+        "block": 7,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "misc",
+          "server-properties-path"
+        ],
+        "id": "miscserver-properties-path",
+        "source_line": 272,
+        "text": "如果通过启动参数 `--config` 为 server.properties 文件指定了自定义路径，请修改此项。\n注意：此配置项需要重启服务器才能生效。",
+        "block": 7,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "misc",
+          "auto-detect-generator-plugins"
+        ],
+        "id": "miscauto-detect-generator-plugins",
+        "source_line": 277,
+        "text": "启用后，Multiverse 会尝试自动检测服务器上已安装的世界生成器插件。\n此选项只影响 `/mv create` 命令的 Tab 补全和 `/mv generators` 命令的输出。\n禁用此项不会影响世界生成器插件本身的使用。",
+        "block": 7,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "misc",
+          "global-debug"
+        ],
+        "id": "miscglobal-debug",
+        "source_line": 286,
+        "text": "此调试选项用于帮助排查 Multiverse 问题。\n如果遇到 Multiverse 问题，请将此项设为 3，然后将日志发布到 pastebin.com\n除此之外，无需修改，除非 Wiki 页面或开发者要求这样做。\n  0 = 关闭，不输出调试消息\n  1 = fine\n  2 = finer\n  3 = finest",
+        "block": 7,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "misc",
+          "debug-permissions"
+        ],
+        "id": "miscdebug-permissions",
+        "source_line": 290,
+        "text": "设置控制台是否记录所有 Multiverse 插件进行的每次权限检查。\n仅当上方的 'global-debug' 设为 1 或更高时生效。",
+        "block": 7,
+        "line": 23,
+        "heading": false
+      },
+      {
+        "path": [
+          "misc",
+          "silent-start"
+        ],
+        "id": "miscsilent-start",
+        "source_line": 293,
+        "text": "设为 true 时，将不再显示启动时的控制台消息。",
+        "block": 7,
+        "line": 27,
+        "heading": false
+      },
+      {
+        "path": [
+          "misc",
+          "show-donation-message"
+        ],
+        "id": "miscshow-donation-message",
+        "source_line": 297,
+        "text": "如果不想捐赠，可将此项设为 false，Multiverse 就会停止提醒。\n如果想捐赠，这是我们的 GitHub Sponsors 页面：https://github.com/sponsors/Multiverse",
+        "block": 7,
+        "line": 30,
+        "heading": false
+      },
+      {
+        "path": [
+          "version"
+        ],
+        "id": "version",
+        "source_line": 302,
+        "text": "此项仅用于标识配置版本号，以便我们了解你使用的配置版本。\n请勿修改此值",
+        "block": 8,
+        "line": 1,
+        "heading": true
+      }
+    ]
+  },
+  {
+    "file": "configuration/worlds.md",
+    "title": "worlds.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "6ee49fbce6ac7a0e62c24aad202d92425cfaab3dfdfd288869f1cf7bbc56d0b5",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "minecraft:overworld"
+        ],
+        "id": "minecraftoverworld",
+        "source_line": 0,
+        "text": "",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "adjust-spawn"
+        ],
+        "id": "minecraftoverworldadjust-spawn",
+        "source_line": 1,
+        "text": "",
+        "block": 0,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "alias"
+        ],
+        "id": "minecraftoverworldalias",
+        "source_line": 2,
+        "text": "",
+        "block": 0,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "allow-advancement-grant"
+        ],
+        "id": "minecraftoverworldallow-advancement-grant",
+        "source_line": 3,
+        "text": "",
+        "block": 0,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "allow-flight"
+        ],
+        "id": "minecraftoverworldallow-flight",
+        "source_line": 4,
+        "text": "",
+        "block": 0,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "allow-weather"
+        ],
+        "id": "minecraftoverworldallow-weather",
+        "source_line": 5,
+        "text": "",
+        "block": 0,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "anchor-respawn"
+        ],
+        "id": "minecraftoverworldanchor-respawn",
+        "source_line": 6,
+        "text": "",
+        "block": 0,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "auto-heal"
+        ],
+        "id": "minecraftoverworldauto-heal",
+        "source_line": 7,
+        "text": "",
+        "block": 0,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "auto-load"
+        ],
+        "id": "minecraftoverworldauto-load",
+        "source_line": 8,
+        "text": "",
+        "block": 0,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "bed-respawn"
+        ],
+        "id": "minecraftoverworldbed-respawn",
+        "source_line": 9,
+        "text": "",
+        "block": 0,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "biome"
+        ],
+        "id": "minecraftoverworldbiome",
+        "source_line": 10,
+        "text": "",
+        "block": 0,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "difficulty"
+        ],
+        "id": "minecraftoverworlddifficulty",
+        "source_line": 11,
+        "text": "",
+        "block": 0,
+        "line": 12,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "entry-fee"
+        ],
+        "id": "minecraftoverworldentry-fee",
+        "source_line": 12,
+        "text": "",
+        "block": 0,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "entry-fee",
+          "enabled"
+        ],
+        "id": "minecraftoverworldentry-feeenabled",
+        "source_line": 13,
+        "text": "",
+        "block": 0,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "entry-fee",
+          "amount"
+        ],
+        "id": "minecraftoverworldentry-feeamount",
+        "source_line": 14,
+        "text": "",
+        "block": 0,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "entry-fee",
+          "currency"
+        ],
+        "id": "minecraftoverworldentry-feecurrency",
+        "source_line": 15,
+        "text": "",
+        "block": 0,
+        "line": 16,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "gamemode"
+        ],
+        "id": "minecraftoverworldgamemode",
+        "source_line": 16,
+        "text": "",
+        "block": 0,
+        "line": 17,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "generator"
+        ],
+        "id": "minecraftoverworldgenerator",
+        "source_line": 17,
+        "text": "",
+        "block": 0,
+        "line": 18,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "hidden"
+        ],
+        "id": "minecraftoverworldhidden",
+        "source_line": 18,
+        "text": "",
+        "block": 0,
+        "line": 19,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "hunger"
+        ],
+        "id": "minecraftoverworldhunger",
+        "source_line": 19,
+        "text": "",
+        "block": 0,
+        "line": 20,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "keep-spawn-in-memory"
+        ],
+        "id": "minecraftoverworldkeep-spawn-in-memory",
+        "source_line": 20,
+        "text": "",
+        "block": 0,
+        "line": 21,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "meta"
+        ],
+        "id": "minecraftoverworldmeta",
+        "source_line": 21,
+        "text": "",
+        "block": 0,
+        "line": 22,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "player-limit"
+        ],
+        "id": "minecraftoverworldplayer-limit",
+        "source_line": 22,
+        "text": "",
+        "block": 0,
+        "line": 23,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "portal-form"
+        ],
+        "id": "minecraftoverworldportal-form",
+        "source_line": 23,
+        "text": "",
+        "block": 0,
+        "line": 24,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "pvp"
+        ],
+        "id": "minecraftoverworldpvp",
+        "source_line": 24,
+        "text": "",
+        "block": 0,
+        "line": 25,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "respawn-world"
+        ],
+        "id": "minecraftoverworldrespawn-world",
+        "source_line": 25,
+        "text": "",
+        "block": 0,
+        "line": 26,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "scale"
+        ],
+        "id": "minecraftoverworldscale",
+        "source_line": 26,
+        "text": "",
+        "block": 0,
+        "line": 27,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawn-location"
+        ],
+        "id": "minecraftoverworldspawn-location",
+        "source_line": 27,
+        "text": "",
+        "block": 0,
+        "line": 28,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawn-location",
+          "=="
+        ],
+        "id": "minecraftoverworldspawn-location_1",
+        "source_line": 28,
+        "text": "",
+        "block": 0,
+        "line": 29,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawn-location",
+          "x"
+        ],
+        "id": "minecraftoverworldspawn-locationx",
+        "source_line": 29,
+        "text": "",
+        "block": 0,
+        "line": 30,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawn-location",
+          "y"
+        ],
+        "id": "minecraftoverworldspawn-locationy",
+        "source_line": 30,
+        "text": "",
+        "block": 0,
+        "line": 31,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawn-location",
+          "z"
+        ],
+        "id": "minecraftoverworldspawn-locationz",
+        "source_line": 31,
+        "text": "",
+        "block": 0,
+        "line": 32,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawn-location",
+          "pitch"
+        ],
+        "id": "minecraftoverworldspawn-locationpitch",
+        "source_line": 32,
+        "text": "",
+        "block": 0,
+        "line": 33,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawn-location",
+          "yaw"
+        ],
+        "id": "minecraftoverworldspawn-locationyaw",
+        "source_line": 33,
+        "text": "",
+        "block": 0,
+        "line": 34,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning"
+        ],
+        "id": "minecraftoverworldspawning",
+        "source_line": 34,
+        "text": "",
+        "block": 0,
+        "line": 35,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "monster"
+        ],
+        "id": "minecraftoverworldspawningmonster",
+        "source_line": 35,
+        "text": "",
+        "block": 0,
+        "line": 36,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "monster",
+          "spawn"
+        ],
+        "id": "minecraftoverworldspawningmonsterspawn",
+        "source_line": 36,
+        "text": "",
+        "block": 0,
+        "line": 37,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "monster",
+          "tick-rate"
+        ],
+        "id": "minecraftoverworldspawningmonstertick-rate",
+        "source_line": 37,
+        "text": "",
+        "block": 0,
+        "line": 38,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "monster",
+          "spawn-limit"
+        ],
+        "id": "minecraftoverworldspawningmonsterspawn-limit",
+        "source_line": 38,
+        "text": "",
+        "block": 0,
+        "line": 39,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "monster",
+          "exceptions"
+        ],
+        "id": "minecraftoverworldspawningmonsterexceptions",
+        "source_line": 39,
+        "text": "",
+        "block": 0,
+        "line": 40,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "animal"
+        ],
+        "id": "minecraftoverworldspawninganimal",
+        "source_line": 40,
+        "text": "",
+        "block": 0,
+        "line": 41,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "animal",
+          "spawn"
+        ],
+        "id": "minecraftoverworldspawninganimalspawn",
+        "source_line": 41,
+        "text": "",
+        "block": 0,
+        "line": 42,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "animal",
+          "tick-rate"
+        ],
+        "id": "minecraftoverworldspawninganimaltick-rate",
+        "source_line": 42,
+        "text": "",
+        "block": 0,
+        "line": 43,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "animal",
+          "spawn-limit"
+        ],
+        "id": "minecraftoverworldspawninganimalspawn-limit",
+        "source_line": 43,
+        "text": "",
+        "block": 0,
+        "line": 44,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "animal",
+          "exceptions"
+        ],
+        "id": "minecraftoverworldspawninganimalexceptions",
+        "source_line": 44,
+        "text": "",
+        "block": 0,
+        "line": 45,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "water_animal"
+        ],
+        "id": "minecraftoverworldspawningwater_animal",
+        "source_line": 45,
+        "text": "",
+        "block": 0,
+        "line": 46,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "water_animal",
+          "spawn"
+        ],
+        "id": "minecraftoverworldspawningwater_animalspawn",
+        "source_line": 46,
+        "text": "",
+        "block": 0,
+        "line": 47,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "water_animal",
+          "tick-rate"
+        ],
+        "id": "minecraftoverworldspawningwater_animaltick-rate",
+        "source_line": 47,
+        "text": "",
+        "block": 0,
+        "line": 48,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "water_animal",
+          "spawn-limit"
+        ],
+        "id": "minecraftoverworldspawningwater_animalspawn-limit",
+        "source_line": 48,
+        "text": "",
+        "block": 0,
+        "line": 49,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "water_animal",
+          "exceptions"
+        ],
+        "id": "minecraftoverworldspawningwater_animalexceptions",
+        "source_line": 49,
+        "text": "",
+        "block": 0,
+        "line": 50,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "water_ambient"
+        ],
+        "id": "minecraftoverworldspawningwater_ambient",
+        "source_line": 50,
+        "text": "",
+        "block": 0,
+        "line": 51,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "water_ambient",
+          "spawn"
+        ],
+        "id": "minecraftoverworldspawningwater_ambientspawn",
+        "source_line": 51,
+        "text": "",
+        "block": 0,
+        "line": 52,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "water_ambient",
+          "tick-rate"
+        ],
+        "id": "minecraftoverworldspawningwater_ambienttick-rate",
+        "source_line": 52,
+        "text": "",
+        "block": 0,
+        "line": 53,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "water_ambient",
+          "spawn-limit"
+        ],
+        "id": "minecraftoverworldspawningwater_ambientspawn-limit",
+        "source_line": 53,
+        "text": "",
+        "block": 0,
+        "line": 54,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "water_ambient",
+          "exceptions"
+        ],
+        "id": "minecraftoverworldspawningwater_ambientexceptions",
+        "source_line": 54,
+        "text": "",
+        "block": 0,
+        "line": 55,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "water_underground_creature"
+        ],
+        "id": "minecraftoverworldspawningwater_underground_creature",
+        "source_line": 55,
+        "text": "",
+        "block": 0,
+        "line": 56,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "water_underground_creature",
+          "spawn"
+        ],
+        "id": "minecraftoverworldspawningwater_underground_creaturespawn",
+        "source_line": 56,
+        "text": "",
+        "block": 0,
+        "line": 57,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "water_underground_creature",
+          "tick-rate"
+        ],
+        "id": "minecraftoverworldspawningwater_underground_creaturetick-rate",
+        "source_line": 57,
+        "text": "",
+        "block": 0,
+        "line": 58,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "water_underground_creature",
+          "spawn-limit"
+        ],
+        "id": "minecraftoverworldspawningwater_underground_creaturespawn-limit",
+        "source_line": 58,
+        "text": "",
+        "block": 0,
+        "line": 59,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "water_underground_creature",
+          "exceptions"
+        ],
+        "id": "minecraftoverworldspawningwater_underground_creatureexceptions",
+        "source_line": 59,
+        "text": "",
+        "block": 0,
+        "line": 60,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "ambient"
+        ],
+        "id": "minecraftoverworldspawningambient",
+        "source_line": 60,
+        "text": "",
+        "block": 0,
+        "line": 61,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "ambient",
+          "spawn"
+        ],
+        "id": "minecraftoverworldspawningambientspawn",
+        "source_line": 61,
+        "text": "",
+        "block": 0,
+        "line": 62,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "ambient",
+          "tick-rate"
+        ],
+        "id": "minecraftoverworldspawningambienttick-rate",
+        "source_line": 62,
+        "text": "",
+        "block": 0,
+        "line": 63,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "ambient",
+          "spawn-limit"
+        ],
+        "id": "minecraftoverworldspawningambientspawn-limit",
+        "source_line": 63,
+        "text": "",
+        "block": 0,
+        "line": 64,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "ambient",
+          "exceptions"
+        ],
+        "id": "minecraftoverworldspawningambientexceptions",
+        "source_line": 64,
+        "text": "",
+        "block": 0,
+        "line": 65,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "axolotl"
+        ],
+        "id": "minecraftoverworldspawningaxolotl",
+        "source_line": 65,
+        "text": "",
+        "block": 0,
+        "line": 66,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "axolotl",
+          "spawn"
+        ],
+        "id": "minecraftoverworldspawningaxolotlspawn",
+        "source_line": 66,
+        "text": "",
+        "block": 0,
+        "line": 67,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "axolotl",
+          "tick-rate"
+        ],
+        "id": "minecraftoverworldspawningaxolotltick-rate",
+        "source_line": 67,
+        "text": "",
+        "block": 0,
+        "line": 68,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "axolotl",
+          "spawn-limit"
+        ],
+        "id": "minecraftoverworldspawningaxolotlspawn-limit",
+        "source_line": 68,
+        "text": "",
+        "block": 0,
+        "line": 69,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "axolotl",
+          "exceptions"
+        ],
+        "id": "minecraftoverworldspawningaxolotlexceptions",
+        "source_line": 69,
+        "text": "",
+        "block": 0,
+        "line": 70,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "misc"
+        ],
+        "id": "minecraftoverworldspawningmisc",
+        "source_line": 70,
+        "text": "",
+        "block": 0,
+        "line": 71,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "misc",
+          "spawn"
+        ],
+        "id": "minecraftoverworldspawningmiscspawn",
+        "source_line": 71,
+        "text": "",
+        "block": 0,
+        "line": 72,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "misc",
+          "tick-rate"
+        ],
+        "id": "minecraftoverworldspawningmisctick-rate",
+        "source_line": 72,
+        "text": "",
+        "block": 0,
+        "line": 73,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "misc",
+          "spawn-limit"
+        ],
+        "id": "minecraftoverworldspawningmiscspawn-limit",
+        "source_line": 73,
+        "text": "",
+        "block": 0,
+        "line": 74,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "spawning",
+          "misc",
+          "exceptions"
+        ],
+        "id": "minecraftoverworldspawningmiscexceptions",
+        "source_line": 74,
+        "text": "",
+        "block": 0,
+        "line": 75,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "world-blacklist"
+        ],
+        "id": "minecraftoverworldworld-blacklist",
+        "source_line": 75,
+        "text": "",
+        "block": 0,
+        "line": 76,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "read-only"
+        ],
+        "id": "minecraftoverworldread-only",
+        "source_line": 76,
+        "text": "",
+        "block": 0,
+        "line": 77,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "read-only",
+          "environment"
+        ],
+        "id": "minecraftoverworldread-onlyenvironment",
+        "source_line": 77,
+        "text": "",
+        "block": 0,
+        "line": 78,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "read-only",
+          "generator-settings"
+        ],
+        "id": "minecraftoverworldread-onlygenerator-settings",
+        "source_line": 78,
+        "text": "",
+        "block": 0,
+        "line": 79,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "read-only",
+          "legacy-world-name"
+        ],
+        "id": "minecraftoverworldread-onlylegacy-world-name",
+        "source_line": 79,
+        "text": "",
+        "block": 0,
+        "line": 80,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "read-only",
+          "seed"
+        ],
+        "id": "minecraftoverworldread-onlyseed",
+        "source_line": 80,
+        "text": "",
+        "block": 0,
+        "line": 81,
+        "heading": false
+      },
+      {
+        "path": [
+          "minecraft:overworld",
+          "version"
+        ],
+        "id": "minecraftoverworldversion",
+        "source_line": 81,
+        "text": "",
+        "block": 0,
+        "line": 82,
+        "heading": false
+      }
+    ]
+  },
+  {
+    "file": "configuration/index.md",
+    "title": "配置文件",
+    "source_kind": "imported-configuration",
+    "source_sha256": "6ee49fbce6ac7a0e62c24aad202d92425cfaab3dfdfd288869f1cf7bbc56d0b5",
+    "translation_review": "reviewed",
+    "anchors": []
+  }
+]

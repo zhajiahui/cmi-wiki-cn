@@ -1,0 +1,114 @@
+---
+title: item/musket.yml
+source_kind: imported-configuration
+translation_review: reviewed
+source_file: item/musket.yml
+source_version: 6.10.1-SNAPSHOT
+---
+
+# item/musket.yml
+
+文件：`item/musket.yml`。版本：`6.10.1-SNAPSHOT`。
+
+随包物品或内容配置。
+
+## `MAKESHIFT_MUSKET` { #makeshift_musket }
+
+```yaml title="item/musket.yml · MAKESHIFT_MUSKET"
+MAKESHIFT_MUSKET:
+  base:
+    material: IRON_HORSE_ARMOR
+    name: "§f简易火枪"
+    lore:
+      - "§7一把无需弹药的实用火枪。"
+      - "§e很适合狩猎怪物。"
+    crafting:
+      shaped:
+        '1':
+          input:
+            - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+            - v iron_ingot - 1.0..|v iron_ingot - 1.0..|v copper_block - 1.0..
+            - v iron_nugget - 1.0..|v AIR 0 1..|v copper_ingot - 1.0..
+    critical-strike-chance:
+      base: 15.0
+      scale: 0.05
+      spread: 0.15
+      max-spread: 0.3
+    critical-strike-power:
+      base: 40.0
+      scale: 0.05
+      spread: 0.15
+      max-spread: 0.3
+    required-level: 8.0
+    attack-speed: 1.4
+    range: 48.0
+    weapon-damage:
+      base: 20.0
+      scale: 0.1
+      spread: 0.1
+      max-spread: 0.2
+    tier: RARE
+    pve-damage: 100.0
+    attack-damage:
+      base: 12.0
+      scale: 0.1
+      spread: 0.1
+      max-spread: 0.2
+    knockback: 0.15
+    recoil: 0.1
+    two-handed: true
+    max-durability: 1350.0
+```
+
+## `SNIPER_RIFLE` { #sniper_rifle }
+
+```yaml title="item/musket.yml · SNIPER_RIFLE"
+SNIPER_RIFLE:
+  base:
+    material: DIAMOND_HORSE_ARMOR
+    name: "§b§l狙击步枪"
+    max-durability: 6000.0
+    lore:
+      - "§b在你需要极高精度时使用。"
+    disable-interaction: true
+    range: 160.0
+    attack-damage:
+      base: 30.0
+      scale: 0.15
+      spread: 0.1
+      max-spread: 0.2
+    critical-strike-chance:
+      base: 30.0
+      spread: 0.15
+      max-spread: 0.3
+    critical-strike-power:
+      base: 60.0
+      spread: 0.15
+      max-spread: 0.3
+    required-level: 35.0
+    weapon-damage:
+      base: 10.0
+      scale: 0.05
+      spread: 0.05
+      max-spread: 0.1
+    projectile-damage:
+      base: 10.0
+      scale: 0.05
+      spread: 0.1
+      max-spread: 0.2
+    tier: EPIC
+    gem-sockets:
+      - Cyan
+      - Cyan
+    ability:
+      ability1:
+        type: STUN
+        mode: ATTACK
+        cooldown: 5.0
+        duration: 2.0
+    attack-speed: 0.9
+    knockback: 0.25
+    recoil: 0.01
+    displayed-type: "枪械"
+    movement-speed: -0.05
+```

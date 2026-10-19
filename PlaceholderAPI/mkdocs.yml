@@ -1,0 +1,6 @@
+site_name: PlaceholderAPI 中文资料
+nav:
+- 插件说明: index.md
+- 配置文件（2.12.3）:
+  - 配置索引: configuration/index.md
+  - config.yml: configuration/config.md

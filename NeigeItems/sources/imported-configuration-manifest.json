@@ -1,0 +1,8591 @@
+[
+  {
+    "file": "configuration/config.md",
+    "title": "config.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "f936d43eceadf4a2c3dadf575600d8e6581c124f4bc0b3f48a44faa33b98b201",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "Language"
+        ],
+        "id": "language",
+        "source_line": 0,
+        "text": "",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Main"
+        ],
+        "id": "main",
+        "source_line": 1,
+        "text": "",
+        "block": 1,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Main",
+          "MMItemsPath"
+        ],
+        "id": "mainmmitemspath",
+        "source_line": 3,
+        "text": "MM物品默认保存路径",
+        "block": 1,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "Main",
+          "Debug"
+        ],
+        "id": "maindebug",
+        "source_line": 5,
+        "text": "是否开启debug模式",
+        "block": 1,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "Main",
+          "UpdateCheck"
+        ],
+        "id": "mainupdatecheck",
+        "source_line": 7,
+        "text": "是否开启更新检查",
+        "block": 1,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "Main",
+          "NewDataFormat"
+        ],
+        "id": "mainnewdataformat",
+        "source_line": 11,
+        "text": "是否启用新的物品数据保存模式\n启用后新旧物品将无法重叠, 正常情况下只会对物品生成速度产生负面影响\n简单来讲这个选项不是给正常用户用的, 不要开",
+        "block": 1,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages"
+        ],
+        "id": "messages",
+        "source_line": 12,
+        "text": "",
+        "block": 2,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Messages",
+          "type"
+        ],
+        "id": "messagestype",
+        "source_line": 14,
+        "text": "一些消息的提示类型",
+        "block": 2,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "type",
+          "givePackMessage"
+        ],
+        "id": "messagestypegivepackmessage",
+        "source_line": 17,
+        "text": "Pack/Items\n给予物品包是发送物品包提示还是发送所有物品提示",
+        "block": 2,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "invalidPlayer"
+        ],
+        "id": "messagesinvalidplayer",
+        "source_line": 19,
+        "text": "玩家不在线提示",
+        "block": 2,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "successInfo"
+        ],
+        "id": "messagessuccessinfo",
+        "source_line": 21,
+        "text": "给予成功提示",
+        "block": 2,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "givenInfo"
+        ],
+        "id": "messagesgiveninfo",
+        "source_line": 23,
+        "text": "被给予成功提示",
+        "block": 2,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "successPackInfo"
+        ],
+        "id": "messagessuccesspackinfo",
+        "source_line": 25,
+        "text": "给予物品包成功提示",
+        "block": 2,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "givenPackInfo"
+        ],
+        "id": "messagesgivenpackinfo",
+        "source_line": 27,
+        "text": "被给予物品包成功提示",
+        "block": 2,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "dropSuccessInfo"
+        ],
+        "id": "messagesdropsuccessinfo",
+        "source_line": 29,
+        "text": "掉落成功提示",
+        "block": 2,
+        "line": 17,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "dropPackSuccessInfo"
+        ],
+        "id": "messagesdroppacksuccessinfo",
+        "source_line": 31,
+        "text": "掉落物品包成功提示",
+        "block": 2,
+        "line": 19,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "unknownItem"
+        ],
+        "id": "messagesunknownitem",
+        "source_line": 33,
+        "text": "未知物品提示",
+        "block": 2,
+        "line": 21,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "unknownItemPack"
+        ],
+        "id": "messagesunknownitempack",
+        "source_line": 35,
+        "text": "未知物品包提示",
+        "block": 2,
+        "line": 23,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "existedKey"
+        ],
+        "id": "messagesexistedkey",
+        "source_line": 37,
+        "text": "对应ID物品已存在提示",
+        "block": 2,
+        "line": 25,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "onlyPlayer"
+        ],
+        "id": "messagesonlyplayer",
+        "source_line": 39,
+        "text": "错误发送者提示",
+        "block": 2,
+        "line": 27,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "successSaveInfo"
+        ],
+        "id": "messagessuccesssaveinfo",
+        "source_line": 41,
+        "text": "保存成功提示",
+        "block": 2,
+        "line": 29,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "mmImportSuccessInfo"
+        ],
+        "id": "messagesmmimportsuccessinfo",
+        "source_line": 43,
+        "text": "MM物品转换完毕提示",
+        "block": 2,
+        "line": 31,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "itemExpirationMessage"
+        ],
+        "id": "messagesitemexpirationmessage",
+        "source_line": 45,
+        "text": "物品到期删除提示",
+        "block": 2,
+        "line": 33,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "airItem"
+        ],
+        "id": "messagesairitem",
+        "source_line": 47,
+        "text": "不要保存空气提示",
+        "block": 2,
+        "line": 35,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "invalidAmount"
+        ],
+        "id": "messagesinvalidamount",
+        "source_line": 49,
+        "text": "输入无效数字提示",
+        "block": 2,
+        "line": 37,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "invalidWorld"
+        ],
+        "id": "messagesinvalidworld",
+        "source_line": 51,
+        "text": "输入无效世界提示",
+        "block": 2,
+        "line": 39,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "invalidLocation"
+        ],
+        "id": "messagesinvalidlocation",
+        "source_line": 53,
+        "text": "输入无效坐标提示",
+        "block": 2,
+        "line": 41,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "insufficientPermissions"
+        ],
+        "id": "messagesinsufficientpermissions",
+        "source_line": 55,
+        "text": "权限不足提示",
+        "block": 2,
+        "line": 43,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "reloadedMessage"
+        ],
+        "id": "messagesreloadedmessage",
+        "source_line": 57,
+        "text": "重载完毕提示",
+        "block": 2,
+        "line": 45,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "invalidNBT"
+        ],
+        "id": "messagesinvalidnbt",
+        "source_line": 59,
+        "text": "无效NBT提示",
+        "block": 2,
+        "line": 47,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "equipFailed"
+        ],
+        "id": "messagesequipfailed",
+        "source_line": 61,
+        "text": "MM生物穿戴物品失败提示",
+        "block": 2,
+        "line": 49,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "invalidItem"
+        ],
+        "id": "messagesinvaliditem",
+        "source_line": 63,
+        "text": "错误物品提示",
+        "block": 2,
+        "line": 51,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "failureInfo"
+        ],
+        "id": "messagesfailureinfo",
+        "source_line": 65,
+        "text": "给予失败提示",
+        "block": 2,
+        "line": 53,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "invalidPlugin"
+        ],
+        "id": "messagesinvalidplugin",
+        "source_line": 67,
+        "text": "缺少前置插件提示",
+        "block": 2,
+        "line": 55,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "invalidMaterial"
+        ],
+        "id": "messagesinvalidmaterial",
+        "source_line": 69,
+        "text": "未知物品材质提示",
+        "block": 2,
+        "line": 57,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "invalidParser"
+        ],
+        "id": "messagesinvalidparser",
+        "source_line": 71,
+        "text": "未知解析对象提示",
+        "block": 2,
+        "line": 59,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "itemCooldown"
+        ],
+        "id": "messagesitemcooldown",
+        "source_line": 73,
+        "text": "物品冷却提示",
+        "block": 2,
+        "line": 61,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "clickGiveMessage"
+        ],
+        "id": "messagesclickgivemessage",
+        "source_line": 75,
+        "text": "物品列表内, 点击获取物品提示",
+        "block": 2,
+        "line": 63,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "invalidOwnerMessage"
+        ],
+        "id": "messagesinvalidownermessage",
+        "source_line": 77,
+        "text": "掉落物归属提示信息",
+        "block": 2,
+        "line": 65,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "invalidScript"
+        ],
+        "id": "messagesinvalidscript",
+        "source_line": 79,
+        "text": "脚本出错提示信息",
+        "block": 2,
+        "line": 67,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "expansionError"
+        ],
+        "id": "messagesexpansionerror",
+        "source_line": 81,
+        "text": "执行扩展出错提示信息",
+        "block": 2,
+        "line": 69,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "brokenItem"
+        ],
+        "id": "messagesbrokenitem",
+        "source_line": 83,
+        "text": "物品耐久耗尽提示信息",
+        "block": 2,
+        "line": 71,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "legacyItemUpdateMessage"
+        ],
+        "id": "messageslegacyitemupdatemessage",
+        "source_line": 85,
+        "text": "物品更新提示信息",
+        "block": 2,
+        "line": 73,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "buildExpansionMessage"
+        ],
+        "id": "messagesbuildexpansionmessage",
+        "source_line": 87,
+        "text": "扩展构建插件提示信息",
+        "block": 2,
+        "line": 75,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "invalidMMItem"
+        ],
+        "id": "messagesinvalidmmitem",
+        "source_line": 89,
+        "text": "一键保存MM物品时, MM物品生成时出现错误的提示信息",
+        "block": 2,
+        "line": 77,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "invalidRoundingMode"
+        ],
+        "id": "messagesinvalidroundingmode",
+        "source_line": 91,
+        "text": "计算节点输入无效的取整模式时的提示信息",
+        "block": 2,
+        "line": 79,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "invalidFormula"
+        ],
+        "id": "messagesinvalidformula",
+        "source_line": 93,
+        "text": "计算节点输入无法计算的数学公式时的提示信息",
+        "block": 2,
+        "line": 81,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "findNewVersion"
+        ],
+        "id": "messagesfindnewversion",
+        "source_line": 95,
+        "text": "检查更新发现新版本的提示",
+        "block": 2,
+        "line": 83,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "updateLink"
+        ],
+        "id": "messagesupdatelink",
+        "source_line": 97,
+        "text": "更新链接提示",
+        "block": 2,
+        "line": 85,
+        "heading": false
+      },
+      {
+        "path": [
+          "Messages",
+          "invalidFunction"
+        ],
+        "id": "messagesinvalidfunction",
+        "source_line": 99,
+        "text": "输入无效function提示",
+        "block": 2,
+        "line": 87,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help"
+        ],
+        "id": "help",
+        "source_line": 100,
+        "text": "",
+        "block": 3,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Help",
+          "prefix"
+        ],
+        "id": "helpprefix",
+        "source_line": 101,
+        "text": "",
+        "block": 3,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "suffix"
+        ],
+        "id": "helpsuffix",
+        "source_line": 104,
+        "text": "",
+        "block": 3,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "amount"
+        ],
+        "id": "helpamount",
+        "source_line": 105,
+        "text": "",
+        "block": 3,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "format"
+        ],
+        "id": "helpformat",
+        "source_line": 106,
+        "text": "",
+        "block": 3,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "prev"
+        ],
+        "id": "helpprev",
+        "source_line": 107,
+        "text": "",
+        "block": 3,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "next"
+        ],
+        "id": "helpnext",
+        "source_line": 108,
+        "text": "",
+        "block": 3,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands"
+        ],
+        "id": "helpcommands",
+        "source_line": 109,
+        "text": "",
+        "block": 3,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "action"
+        ],
+        "id": "helpcommandsaction",
+        "source_line": 110,
+        "text": "",
+        "block": 3,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "action",
+          "command"
+        ],
+        "id": "helpcommandsactioncommand",
+        "source_line": 111,
+        "text": "",
+        "block": 3,
+        "line": 12,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "action",
+          "description"
+        ],
+        "id": "helpcommandsactiondescription",
+        "source_line": 112,
+        "text": "",
+        "block": 3,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "function"
+        ],
+        "id": "helpcommandsfunction",
+        "source_line": 113,
+        "text": "",
+        "block": 3,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "function",
+          "command"
+        ],
+        "id": "helpcommandsfunctioncommand",
+        "source_line": 114,
+        "text": "",
+        "block": 3,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "function",
+          "description"
+        ],
+        "id": "helpcommandsfunctiondescription",
+        "source_line": 115,
+        "text": "",
+        "block": 3,
+        "line": 16,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "parse"
+        ],
+        "id": "helpcommandsparse",
+        "source_line": 116,
+        "text": "",
+        "block": 3,
+        "line": 17,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "parse",
+          "command"
+        ],
+        "id": "helpcommandsparsecommand",
+        "source_line": 117,
+        "text": "",
+        "block": 3,
+        "line": 18,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "parse",
+          "description"
+        ],
+        "id": "helpcommandsparsedescription",
+        "source_line": 118,
+        "text": "",
+        "block": 3,
+        "line": 19,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "edithand"
+        ],
+        "id": "helpcommandsedithand",
+        "source_line": 119,
+        "text": "",
+        "block": 3,
+        "line": 20,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "edithand",
+          "command"
+        ],
+        "id": "helpcommandsedithandcommand",
+        "source_line": 120,
+        "text": "",
+        "block": 3,
+        "line": 21,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "edithand",
+          "description"
+        ],
+        "id": "helpcommandsedithanddescription",
+        "source_line": 121,
+        "text": "",
+        "block": 3,
+        "line": 22,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "editoffhand"
+        ],
+        "id": "helpcommandseditoffhand",
+        "source_line": 122,
+        "text": "",
+        "block": 3,
+        "line": 23,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "editoffhand",
+          "command"
+        ],
+        "id": "helpcommandseditoffhandcommand",
+        "source_line": 123,
+        "text": "",
+        "block": 3,
+        "line": 24,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "editoffhand",
+          "description"
+        ],
+        "id": "helpcommandseditoffhanddescription",
+        "source_line": 124,
+        "text": "",
+        "block": 3,
+        "line": 25,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "editslot"
+        ],
+        "id": "helpcommandseditslot",
+        "source_line": 125,
+        "text": "",
+        "block": 3,
+        "line": 26,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "editslot",
+          "command"
+        ],
+        "id": "helpcommandseditslotcommand",
+        "source_line": 126,
+        "text": "",
+        "block": 3,
+        "line": 27,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "editslot",
+          "description"
+        ],
+        "id": "helpcommandseditslotdescription",
+        "source_line": 127,
+        "text": "",
+        "block": 3,
+        "line": 28,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "itemNBT"
+        ],
+        "id": "helpcommandsitemnbt",
+        "source_line": 128,
+        "text": "",
+        "block": 3,
+        "line": 29,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "itemNBT",
+          "command"
+        ],
+        "id": "helpcommandsitemnbtcommand",
+        "source_line": 129,
+        "text": "",
+        "block": 3,
+        "line": 30,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "itemNBT",
+          "description"
+        ],
+        "id": "helpcommandsitemnbtdescription",
+        "source_line": 130,
+        "text": "",
+        "block": 3,
+        "line": 31,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "list"
+        ],
+        "id": "helpcommandslist",
+        "source_line": 131,
+        "text": "",
+        "block": 3,
+        "line": 32,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "list",
+          "command"
+        ],
+        "id": "helpcommandslistcommand",
+        "source_line": 132,
+        "text": "",
+        "block": 3,
+        "line": 33,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "list",
+          "description"
+        ],
+        "id": "helpcommandslistdescription",
+        "source_line": 133,
+        "text": "",
+        "block": 3,
+        "line": 34,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "search"
+        ],
+        "id": "helpcommandssearch",
+        "source_line": 134,
+        "text": "",
+        "block": 3,
+        "line": 35,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "search",
+          "command"
+        ],
+        "id": "helpcommandssearchcommand",
+        "source_line": 135,
+        "text": "",
+        "block": 3,
+        "line": 36,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "search",
+          "description"
+        ],
+        "id": "helpcommandssearchdescription",
+        "source_line": 136,
+        "text": "",
+        "block": 3,
+        "line": 37,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "searchPrefix"
+        ],
+        "id": "helpcommandssearchprefix",
+        "source_line": 137,
+        "text": "",
+        "block": 3,
+        "line": 38,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "searchPrefix",
+          "command"
+        ],
+        "id": "helpcommandssearchprefixcommand",
+        "source_line": 138,
+        "text": "",
+        "block": 3,
+        "line": 39,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "searchPrefix",
+          "description"
+        ],
+        "id": "helpcommandssearchprefixdescription",
+        "source_line": 139,
+        "text": "",
+        "block": 3,
+        "line": 40,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "searchSuffix"
+        ],
+        "id": "helpcommandssearchsuffix",
+        "source_line": 140,
+        "text": "",
+        "block": 3,
+        "line": 41,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "searchSuffix",
+          "command"
+        ],
+        "id": "helpcommandssearchsuffixcommand",
+        "source_line": 141,
+        "text": "",
+        "block": 3,
+        "line": 42,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "searchSuffix",
+          "description"
+        ],
+        "id": "helpcommandssearchsuffixdescription",
+        "source_line": 142,
+        "text": "",
+        "block": 3,
+        "line": 43,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "get"
+        ],
+        "id": "helpcommandsget",
+        "source_line": 143,
+        "text": "",
+        "block": 3,
+        "line": 44,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "get",
+          "command"
+        ],
+        "id": "helpcommandsgetcommand",
+        "source_line": 144,
+        "text": "",
+        "block": 3,
+        "line": 45,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "get",
+          "description"
+        ],
+        "id": "helpcommandsgetdescription",
+        "source_line": 145,
+        "text": "",
+        "block": 3,
+        "line": 46,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "give"
+        ],
+        "id": "helpcommandsgive",
+        "source_line": 146,
+        "text": "",
+        "block": 3,
+        "line": 47,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "give",
+          "command"
+        ],
+        "id": "helpcommandsgivecommand",
+        "source_line": 147,
+        "text": "",
+        "block": 3,
+        "line": 48,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "give",
+          "description"
+        ],
+        "id": "helpcommandsgivedescription",
+        "source_line": 148,
+        "text": "",
+        "block": 3,
+        "line": 49,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "givePack"
+        ],
+        "id": "helpcommandsgivepack",
+        "source_line": 149,
+        "text": "",
+        "block": 3,
+        "line": 50,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "givePack",
+          "command"
+        ],
+        "id": "helpcommandsgivepackcommand",
+        "source_line": 150,
+        "text": "",
+        "block": 3,
+        "line": 51,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "givePack",
+          "description"
+        ],
+        "id": "helpcommandsgivepackdescription",
+        "source_line": 151,
+        "text": "",
+        "block": 3,
+        "line": 52,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "giveAll"
+        ],
+        "id": "helpcommandsgiveall",
+        "source_line": 152,
+        "text": "",
+        "block": 3,
+        "line": 53,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "giveAll",
+          "command"
+        ],
+        "id": "helpcommandsgiveallcommand",
+        "source_line": 153,
+        "text": "",
+        "block": 3,
+        "line": 54,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "giveAll",
+          "description"
+        ],
+        "id": "helpcommandsgivealldescription",
+        "source_line": 154,
+        "text": "",
+        "block": 3,
+        "line": 55,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "givePackAll"
+        ],
+        "id": "helpcommandsgivepackall",
+        "source_line": 155,
+        "text": "",
+        "block": 3,
+        "line": 56,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "givePackAll",
+          "command"
+        ],
+        "id": "helpcommandsgivepackallcommand",
+        "source_line": 156,
+        "text": "",
+        "block": 3,
+        "line": 57,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "givePackAll",
+          "description"
+        ],
+        "id": "helpcommandsgivepackalldescription",
+        "source_line": 157,
+        "text": "",
+        "block": 3,
+        "line": 58,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "drop"
+        ],
+        "id": "helpcommandsdrop",
+        "source_line": 158,
+        "text": "",
+        "block": 3,
+        "line": 59,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "drop",
+          "command"
+        ],
+        "id": "helpcommandsdropcommand",
+        "source_line": 159,
+        "text": "",
+        "block": 3,
+        "line": 60,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "drop",
+          "description"
+        ],
+        "id": "helpcommandsdropdescription",
+        "source_line": 160,
+        "text": "",
+        "block": 3,
+        "line": 61,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "dropPack"
+        ],
+        "id": "helpcommandsdroppack",
+        "source_line": 161,
+        "text": "",
+        "block": 3,
+        "line": 62,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "dropPack",
+          "command"
+        ],
+        "id": "helpcommandsdroppackcommand",
+        "source_line": 162,
+        "text": "",
+        "block": 3,
+        "line": 63,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "dropPack",
+          "description"
+        ],
+        "id": "helpcommandsdroppackdescription",
+        "source_line": 163,
+        "text": "",
+        "block": 3,
+        "line": 64,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "save"
+        ],
+        "id": "helpcommandssave",
+        "source_line": 164,
+        "text": "",
+        "block": 3,
+        "line": 65,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "save",
+          "command"
+        ],
+        "id": "helpcommandssavecommand",
+        "source_line": 165,
+        "text": "",
+        "block": 3,
+        "line": 66,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "save",
+          "description"
+        ],
+        "id": "helpcommandssavedescription",
+        "source_line": 166,
+        "text": "",
+        "block": 3,
+        "line": 67,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "cover"
+        ],
+        "id": "helpcommandscover",
+        "source_line": 167,
+        "text": "",
+        "block": 3,
+        "line": 68,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "cover",
+          "command"
+        ],
+        "id": "helpcommandscovercommand",
+        "source_line": 168,
+        "text": "",
+        "block": 3,
+        "line": 69,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "cover",
+          "description"
+        ],
+        "id": "helpcommandscoverdescription",
+        "source_line": 169,
+        "text": "",
+        "block": 3,
+        "line": 70,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "mm load"
+        ],
+        "id": "helpcommandsmm-load",
+        "source_line": 170,
+        "text": "",
+        "block": 3,
+        "line": 71,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "mm load",
+          "command"
+        ],
+        "id": "helpcommandsmm-loadcommand",
+        "source_line": 171,
+        "text": "",
+        "block": 3,
+        "line": 72,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "mm load",
+          "description"
+        ],
+        "id": "helpcommandsmm-loaddescription",
+        "source_line": 172,
+        "text": "",
+        "block": 3,
+        "line": 73,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "mm cover"
+        ],
+        "id": "helpcommandsmm-cover",
+        "source_line": 173,
+        "text": "",
+        "block": 3,
+        "line": 74,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "mm cover",
+          "command"
+        ],
+        "id": "helpcommandsmm-covercommand",
+        "source_line": 174,
+        "text": "",
+        "block": 3,
+        "line": 75,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "mm cover",
+          "description"
+        ],
+        "id": "helpcommandsmm-coverdescription",
+        "source_line": 175,
+        "text": "",
+        "block": 3,
+        "line": 76,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "mm loadAll"
+        ],
+        "id": "helpcommandsmm-loadall",
+        "source_line": 176,
+        "text": "",
+        "block": 3,
+        "line": 77,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "mm loadAll",
+          "command"
+        ],
+        "id": "helpcommandsmm-loadallcommand",
+        "source_line": 177,
+        "text": "",
+        "block": 3,
+        "line": 78,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "mm loadAll",
+          "description"
+        ],
+        "id": "helpcommandsmm-loadalldescription",
+        "source_line": 178,
+        "text": "",
+        "block": 3,
+        "line": 79,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "mm get"
+        ],
+        "id": "helpcommandsmm-get",
+        "source_line": 179,
+        "text": "",
+        "block": 3,
+        "line": 80,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "mm get",
+          "command"
+        ],
+        "id": "helpcommandsmm-getcommand",
+        "source_line": 180,
+        "text": "",
+        "block": 3,
+        "line": 81,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "mm get",
+          "description"
+        ],
+        "id": "helpcommandsmm-getdescription",
+        "source_line": 181,
+        "text": "",
+        "block": 3,
+        "line": 82,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "mm give"
+        ],
+        "id": "helpcommandsmm-give",
+        "source_line": 182,
+        "text": "",
+        "block": 3,
+        "line": 83,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "mm give",
+          "command"
+        ],
+        "id": "helpcommandsmm-givecommand",
+        "source_line": 183,
+        "text": "",
+        "block": 3,
+        "line": 84,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "mm give",
+          "description"
+        ],
+        "id": "helpcommandsmm-givedescription",
+        "source_line": 184,
+        "text": "",
+        "block": 3,
+        "line": 85,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "mm giveAll"
+        ],
+        "id": "helpcommandsmm-giveall",
+        "source_line": 185,
+        "text": "",
+        "block": 3,
+        "line": 86,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "mm giveAll",
+          "command"
+        ],
+        "id": "helpcommandsmm-giveallcommand",
+        "source_line": 186,
+        "text": "",
+        "block": 3,
+        "line": 87,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "mm giveAll",
+          "description"
+        ],
+        "id": "helpcommandsmm-givealldescription",
+        "source_line": 187,
+        "text": "",
+        "block": 3,
+        "line": 88,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "reload"
+        ],
+        "id": "helpcommandsreload",
+        "source_line": 188,
+        "text": "",
+        "block": 3,
+        "line": 89,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "reload",
+          "command"
+        ],
+        "id": "helpcommandsreloadcommand",
+        "source_line": 189,
+        "text": "",
+        "block": 3,
+        "line": 90,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "reload",
+          "description"
+        ],
+        "id": "helpcommandsreloaddescription",
+        "source_line": 190,
+        "text": "",
+        "block": 3,
+        "line": 91,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "help"
+        ],
+        "id": "helpcommandshelp",
+        "source_line": 191,
+        "text": "",
+        "block": 3,
+        "line": 92,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "help",
+          "command"
+        ],
+        "id": "helpcommandshelpcommand",
+        "source_line": 192,
+        "text": "",
+        "block": 3,
+        "line": 93,
+        "heading": false
+      },
+      {
+        "path": [
+          "Help",
+          "commands",
+          "help",
+          "description"
+        ],
+        "id": "helpcommandshelpdescription",
+        "source_line": 193,
+        "text": "",
+        "block": 3,
+        "line": 94,
+        "heading": false
+      },
+      {
+        "path": [
+          "ItemList"
+        ],
+        "id": "itemlist",
+        "source_line": 195,
+        "text": "物品列表格式",
+        "block": 4,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "ItemList",
+          "Prefix"
+        ],
+        "id": "itemlistprefix",
+        "source_line": 196,
+        "text": "",
+        "block": 4,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "ItemList",
+          "Suffix"
+        ],
+        "id": "itemlistsuffix",
+        "source_line": 197,
+        "text": "",
+        "block": 4,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "ItemList",
+          "ItemAmount"
+        ],
+        "id": "itemlistitemamount",
+        "source_line": 198,
+        "text": "",
+        "block": 4,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "ItemList",
+          "ItemFormat"
+        ],
+        "id": "itemlistitemformat",
+        "source_line": 199,
+        "text": "",
+        "block": 4,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "ItemList",
+          "Prev"
+        ],
+        "id": "itemlistprev",
+        "source_line": 200,
+        "text": "",
+        "block": 4,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "ItemList",
+          "Next"
+        ],
+        "id": "itemlistnext",
+        "source_line": 201,
+        "text": "",
+        "block": 4,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "ItemOwner"
+        ],
+        "id": "itemowner",
+        "source_line": 203,
+        "text": "物品拥有者提示信息显示方式",
+        "block": 5,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "ItemOwner",
+          "removeNBTWhenGive"
+        ],
+        "id": "itemownerremovenbtwhengive",
+        "source_line": 204,
+        "text": "",
+        "block": 5,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "ItemOwner",
+          "messageType"
+        ],
+        "id": "itemownermessagetype",
+        "source_line": 206,
+        "text": "actionbar / message",
+        "block": 5,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "ItemColor"
+        ],
+        "id": "itemcolor",
+        "source_line": 208,
+        "text": "掉落物颜色实现方式(protocol对应protocollib发包, vanilla为原版实现)",
+        "block": 6,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "ItemColor",
+          "type"
+        ],
+        "id": "itemcolortype",
+        "source_line": 210,
+        "text": "protocol / vanilla",
+        "block": 6,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "ItemAction"
+        ],
+        "id": "itemaction",
+        "source_line": 211,
+        "text": "",
+        "block": 7,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "ItemAction",
+          "upgrade"
+        ],
+        "id": "itemactionupgrade",
+        "source_line": 213,
+        "text": "是否将1.6以下版本的ItemAction配置转换为1.7版本格式",
+        "block": 7,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "ItemAction",
+          "comboInterval"
+        ],
+        "id": "itemactioncombointerval",
+        "source_line": 215,
+        "text": "连击间隔(ms)",
+        "block": 7,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "ItemAction",
+          "resetCooldownWhenPlayerQuit"
+        ],
+        "id": "itemactionresetcooldownwhenplayerquit",
+        "source_line": 216,
+        "text": "",
+        "block": 7,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "ItemPlaceholder"
+        ],
+        "id": "itemplaceholder",
+        "source_line": 217,
+        "text": "",
+        "block": 8,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "ItemPlaceholder",
+          "enable"
+        ],
+        "id": "itemplaceholderenable",
+        "source_line": 219,
+        "text": "是否开启物品变量功能(更改后需重启服务器)",
+        "block": 8,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "ItemDurability"
+        ],
+        "id": "itemdurability",
+        "source_line": 220,
+        "text": "",
+        "block": 9,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "ItemDurability",
+          "forceSync"
+        ],
+        "id": "itemdurabilityforcesync",
+        "source_line": 222,
+        "text": "物品自定义耐久百分比与原版耐久百分比对不上的时候强制进行同步修正",
+        "block": 9,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "ItemCheck"
+        ],
+        "id": "itemcheck",
+        "source_line": 223,
+        "text": "",
+        "block": 10,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "ItemCheck",
+          "checkInventory"
+        ],
+        "id": "itemcheckcheckinventory",
+        "source_line": 225,
+        "text": "玩家打开容器界面时是否检测其中的物品是否过期及是否需要更新",
+        "block": 10,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "Papi"
+        ],
+        "id": "papi",
+        "source_line": 226,
+        "text": "",
+        "block": 11,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Papi",
+          "enableJs"
+        ],
+        "id": "papienablejs",
+        "source_line": 228,
+        "text": "是否开启papi变量中有关js解析的部分",
+        "block": 11,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "Papi",
+          "enableRegex"
+        ],
+        "id": "papienableregex",
+        "source_line": 230,
+        "text": "是否开启papi变量中有关正则解析的部分",
+        "block": 11,
+        "line": 4,
+        "heading": false
+      }
+    ]
+  },
+  {
+    "file": "configuration/scripts/examplescript.md",
+    "title": "Scripts/ExampleScript.js",
+    "source_kind": "imported-configuration",
+    "source_sha256": "f936d43eceadf4a2c3dadf575600d8e6581c124f4bc0b3f48a44faa33b98b201",
+    "translation_review": "reviewed",
+    "anchors": []
+  },
+  {
+    "file": "configuration/scripts/itemtime.md",
+    "title": "Scripts/ItemTime.js",
+    "source_kind": "imported-configuration",
+    "source_sha256": "f936d43eceadf4a2c3dadf575600d8e6581c124f4bc0b3f48a44faa33b98b201",
+    "translation_review": "reviewed",
+    "anchors": []
+  },
+  {
+    "file": "configuration/functions/examplefunction.md",
+    "title": "Functions/ExampleFunction.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "f936d43eceadf4a2c3dadf575600d8e6581c124f4bc0b3f48a44faa33b98b201",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "test0"
+        ],
+        "id": "test0",
+        "source_line": 0,
+        "text": "",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "test1"
+        ],
+        "id": "test1",
+        "source_line": 1,
+        "text": "",
+        "block": 1,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "test2"
+        ],
+        "id": "test2",
+        "source_line": 3,
+        "text": "",
+        "block": 2,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "test2",
+          "condition"
+        ],
+        "id": "test2condition",
+        "source_line": 4,
+        "text": "",
+        "block": 2,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "test2",
+          "actions"
+        ],
+        "id": "test2actions",
+        "source_line": 5,
+        "text": "",
+        "block": 2,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "test3"
+        ],
+        "id": "test3",
+        "source_line": 6,
+        "text": "",
+        "block": 3,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "test3",
+          "0",
+          "condition"
+        ],
+        "id": "test30condition",
+        "source_line": 7,
+        "text": "",
+        "block": 3,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "test3",
+          "0",
+          "actions"
+        ],
+        "id": "test30actions",
+        "source_line": 8,
+        "text": "",
+        "block": 3,
+        "line": 3,
+        "heading": false
+      }
+    ]
+  },
+  {
+    "file": "configuration/itemactions/lottery_box.md",
+    "title": "ItemActions/lottery_box.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "f936d43eceadf4a2c3dadf575600d8e6581c124f4bc0b3f48a44faa33b98b201",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "TARGET"
+        ],
+        "id": "target",
+        "source_line": 0,
+        "text": "",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "TARGET",
+          "beclicked"
+        ],
+        "id": "targetbeclicked",
+        "source_line": 1,
+        "text": "",
+        "block": 0,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "TARGET",
+          "beclicked",
+          "cooldown"
+        ],
+        "id": "targetbeclickedcooldown",
+        "source_line": 3,
+        "text": "其他点击也会触发 beclicked，设为 0 避免冷却妨碍左键移动。",
+        "block": 0,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "TARGET",
+          "beclicked",
+          "consume"
+        ],
+        "id": "targetbeclickedconsume",
+        "source_line": 4,
+        "text": "",
+        "block": 0,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "TARGET",
+          "beclicked",
+          "consume",
+          "pre"
+        ],
+        "id": "targetbeclickedconsumepre",
+        "source_line": 5,
+        "text": "",
+        "block": 0,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "TARGET",
+          "beclicked",
+          "consume",
+          "condition"
+        ],
+        "id": "targetbeclickedconsumecondition",
+        "source_line": 16,
+        "text": "",
+        "block": 0,
+        "line": 17,
+        "heading": false
+      },
+      {
+        "path": [
+          "TARGET",
+          "beclicked",
+          "consume",
+          "amount"
+        ],
+        "id": "targetbeclickedconsumeamount",
+        "source_line": 17,
+        "text": "",
+        "block": 0,
+        "line": 18,
+        "heading": false
+      },
+      {
+        "path": [
+          "TARGET",
+          "beclicked",
+          "consume",
+          "deny"
+        ],
+        "id": "targetbeclickedconsumedeny",
+        "source_line": 18,
+        "text": "",
+        "block": 0,
+        "line": 19,
+        "heading": false
+      },
+      {
+        "path": [
+          "TARGET",
+          "beclicked",
+          "consume",
+          "deny",
+          "0",
+          "condition"
+        ],
+        "id": "targetbeclickedconsumedeny0condition",
+        "source_line": 19,
+        "text": "",
+        "block": 0,
+        "line": 20,
+        "heading": false
+      },
+      {
+        "path": [
+          "TARGET",
+          "beclicked",
+          "consume",
+          "deny",
+          "0",
+          "actions"
+        ],
+        "id": "targetbeclickedconsumedeny0actions",
+        "source_line": 20,
+        "text": "",
+        "block": 0,
+        "line": 21,
+        "heading": false
+      },
+      {
+        "path": [
+          "TARGET",
+          "beclicked",
+          "sync"
+        ],
+        "id": "targetbeclickedsync",
+        "source_line": 23,
+        "text": "同步执行扣除后的抽奖及发奖。",
+        "block": 0,
+        "line": 23,
+        "heading": false
+      }
+    ]
+  },
+  {
+    "file": "configuration/itemactions/exampleaction.md",
+    "title": "ItemActions/ExampleAction.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "f936d43eceadf4a2c3dadf575600d8e6581c124f4bc0b3f48a44faa33b98b201",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "ExampleItem2"
+        ],
+        "id": "exampleitem2",
+        "source_line": 0,
+        "text": "",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "ExampleItem2",
+          "left"
+        ],
+        "id": "exampleitem2left",
+        "source_line": 2,
+        "text": "左键触发",
+        "block": 0,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem2",
+          "left",
+          "actions"
+        ],
+        "id": "exampleitem2leftactions",
+        "source_line": 4,
+        "text": "动作内容",
+        "block": 0,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem2",
+          "left",
+          "actions",
+          "1",
+          "condition"
+        ],
+        "id": "exampleitem2leftactions1condition",
+        "source_line": 8,
+        "text": "当前这条动作的执行条件",
+        "block": 0,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem2",
+          "left",
+          "actions",
+          "1",
+          "actions"
+        ],
+        "id": "exampleitem2leftactions1actions",
+        "source_line": 10,
+        "text": "满足条件后执行的动作",
+        "block": 0,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem2",
+          "left",
+          "actions",
+          "1",
+          "deny"
+        ],
+        "id": "exampleitem2leftactions1deny",
+        "source_line": 16,
+        "text": "不满足条件时执行的动作",
+        "block": 0,
+        "line": 16,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem2",
+          "left",
+          "sync"
+        ],
+        "id": "exampleitem2leftsync",
+        "source_line": 35,
+        "text": "一句话概括: 不想看的话, 优先使用\"sync\", 别用\"actions\"\n\n从实际功能而言, “sync”与\"actions\"没有区别.\n区别在于, \"sync\"下的所有内容都是同步解析, 同步触发的\n\n即: 所有非线程安全的行为都应该在\"sync\"下进行\n比如: 检测玩家是否拥有某个物品, 然后通过指令扣除\n模拟情境: 你将A物品配置为\"满足 papi(\"%checkitem_amount_mat:stone%\") >= 1 时, 扣除一个石头, 给予100元\"\n         如果你将这些动作配置到\"actions\"下, 那么可能出现:\n         判断玩家确实拥有大于等于1个石头, 然后玩家将石头丢出背包\n         后面扣除石头时, 因为玩家没有足够的石头, 扣除操作相当于失效\n         之后给予100元的行为却仍然执行, 玩家就成功在不消耗石头的情况下获得了100元\n         因此这些行为应该配置于\"sync\"下, 而非\"actions\"\n\n注: \"sync\"下所有动作同步触发, 但这不代表\"actions\"下所有内容异步触发.\n    所有基础物品动作都作了相关判断, 比如takeHealth, takeFood, takeLevel等行为,\n    都会挪到主线程实施, 避免出现线程安全问题",
+        "block": 0,
+        "line": 19,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem3"
+        ],
+        "id": "exampleitem3",
+        "source_line": 37,
+        "text": "",
+        "block": 1,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "ExampleItem3",
+          "left"
+        ],
+        "id": "exampleitem3left",
+        "source_line": 39,
+        "text": "左键触发",
+        "block": 1,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem3",
+          "left",
+          "cooldown"
+        ],
+        "id": "exampleitem3leftcooldown",
+        "source_line": 41,
+        "text": "冷却时间(单位是ms)",
+        "block": 1,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem3",
+          "left",
+          "group"
+        ],
+        "id": "exampleitem3leftgroup",
+        "source_line": 43,
+        "text": "冷却组, 同一冷却组的物品共享冷却时间",
+        "block": 1,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem3",
+          "left",
+          "consume"
+        ],
+        "id": "exampleitem3leftconsume",
+        "source_line": 45,
+        "text": "消耗选项",
+        "block": 1,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem3",
+          "left",
+          "consume",
+          "condition"
+        ],
+        "id": "exampleitem3leftconsumecondition",
+        "source_line": 47,
+        "text": "物品消耗条件",
+        "block": 1,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem3",
+          "left",
+          "consume",
+          "amount"
+        ],
+        "id": "exampleitem3leftconsumeamount",
+        "source_line": 49,
+        "text": "每次消耗物品数量",
+        "block": 1,
+        "line": 12,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem3",
+          "left",
+          "consume",
+          "deny"
+        ],
+        "id": "exampleitem3leftconsumedeny",
+        "source_line": 51,
+        "text": "不满足条件时执行的动作",
+        "block": 1,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem3",
+          "left",
+          "sync"
+        ],
+        "id": "exampleitem3leftsync",
+        "source_line": 54,
+        "text": "动作内容",
+        "block": 1,
+        "line": 17,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem4"
+        ],
+        "id": "exampleitem4",
+        "source_line": 57,
+        "text": "",
+        "block": 2,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "ExampleItem4",
+          "all"
+        ],
+        "id": "exampleitem4all",
+        "source_line": 58,
+        "text": "",
+        "block": 2,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem4",
+          "all",
+          "consume"
+        ],
+        "id": "exampleitem4allconsume",
+        "source_line": 59,
+        "text": "",
+        "block": 2,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem4",
+          "all",
+          "consume",
+          "amount"
+        ],
+        "id": "exampleitem4allconsumeamount",
+        "source_line": 60,
+        "text": "",
+        "block": 2,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem4",
+          "all",
+          "sync"
+        ],
+        "id": "exampleitem4allsync",
+        "source_line": 61,
+        "text": "",
+        "block": 2,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "ActionTest"
+        ],
+        "id": "actiontest",
+        "source_line": 64,
+        "text": "",
+        "block": 3,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "ActionTest",
+          "all"
+        ],
+        "id": "actiontestall",
+        "source_line": 65,
+        "text": "",
+        "block": 3,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "ActionTest",
+          "all",
+          "sync"
+        ],
+        "id": "actiontestallsync",
+        "source_line": 66,
+        "text": "",
+        "block": 3,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "ActionTest",
+          "all",
+          "sync",
+          "condition"
+        ],
+        "id": "actiontestallsynccondition",
+        "source_line": 68,
+        "text": "检测test1这条NBT的值是否等于\"666\"",
+        "block": 3,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "ActionTest",
+          "all",
+          "sync",
+          "actions"
+        ],
+        "id": "actiontestallsyncactions",
+        "source_line": 69,
+        "text": "",
+        "block": 3,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "EatTest1"
+        ],
+        "id": "eattest1",
+        "source_line": 74,
+        "text": "",
+        "block": 4,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "EatTest1",
+          "eat"
+        ],
+        "id": "eattest1eat",
+        "source_line": 75,
+        "text": "",
+        "block": 4,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "EatTest1",
+          "eat",
+          "sync"
+        ],
+        "id": "eattest1eatsync",
+        "source_line": 76,
+        "text": "",
+        "block": 4,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "EatTest2"
+        ],
+        "id": "eattest2",
+        "source_line": 79,
+        "text": "",
+        "block": 5,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "EatTest2",
+          "eat"
+        ],
+        "id": "eattest2eat",
+        "source_line": 80,
+        "text": "",
+        "block": 5,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "EatTest2",
+          "eat",
+          "consume"
+        ],
+        "id": "eattest2eatconsume",
+        "source_line": 81,
+        "text": "",
+        "block": 5,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "EatTest2",
+          "eat",
+          "consume",
+          "amount"
+        ],
+        "id": "eattest2eatconsumeamount",
+        "source_line": 82,
+        "text": "",
+        "block": 5,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "EatTest2",
+          "eat",
+          "sync"
+        ],
+        "id": "eattest2eatsync",
+        "source_line": 83,
+        "text": "",
+        "block": 5,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "DropTest1"
+        ],
+        "id": "droptest1",
+        "source_line": 86,
+        "text": "",
+        "block": 6,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "DropTest1",
+          "drop"
+        ],
+        "id": "droptest1drop",
+        "source_line": 87,
+        "text": "",
+        "block": 6,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "DropTest1",
+          "drop",
+          "sync"
+        ],
+        "id": "droptest1dropsync",
+        "source_line": 88,
+        "text": "",
+        "block": 6,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "DropTest2"
+        ],
+        "id": "droptest2",
+        "source_line": 90,
+        "text": "",
+        "block": 7,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "DropTest2",
+          "drop"
+        ],
+        "id": "droptest2drop",
+        "source_line": 91,
+        "text": "",
+        "block": 7,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "DropTest2",
+          "drop",
+          "consume"
+        ],
+        "id": "droptest2dropconsume",
+        "source_line": 92,
+        "text": "",
+        "block": 7,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "DropTest2",
+          "drop",
+          "consume",
+          "amount"
+        ],
+        "id": "droptest2dropconsumeamount",
+        "source_line": 93,
+        "text": "",
+        "block": 7,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "DropTest2",
+          "drop",
+          "sync"
+        ],
+        "id": "droptest2dropsync",
+        "source_line": 94,
+        "text": "",
+        "block": 7,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "CustomAction"
+        ],
+        "id": "customaction",
+        "source_line": 96,
+        "text": "",
+        "block": 8,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "CustomAction",
+          "all"
+        ],
+        "id": "customactionall",
+        "source_line": 97,
+        "text": "",
+        "block": 8,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "CustomAction",
+          "all",
+          "sync"
+        ],
+        "id": "customactionallsync",
+        "source_line": 98,
+        "text": "",
+        "block": 8,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "ComboTest"
+        ],
+        "id": "combotest",
+        "source_line": 100,
+        "text": "",
+        "block": 9,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "ComboTest",
+          "left"
+        ],
+        "id": "combotestleft",
+        "source_line": 101,
+        "text": "",
+        "block": 9,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "ComboTest",
+          "left",
+          "cooldown"
+        ],
+        "id": "combotestleftcooldown",
+        "source_line": 102,
+        "text": "",
+        "block": 9,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "ComboTest",
+          "left",
+          "sync"
+        ],
+        "id": "combotestleftsync",
+        "source_line": 103,
+        "text": "",
+        "block": 9,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "ComboTest",
+          "left",
+          "sync",
+          "1",
+          "condition"
+        ],
+        "id": "combotestleftsync1condition",
+        "source_line": 107,
+        "text": "检测ComboTest组是否完成了left-right-left连击",
+        "block": 9,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "ComboTest",
+          "left",
+          "sync",
+          "1",
+          "actions"
+        ],
+        "id": "combotestleftsync1actions",
+        "source_line": 108,
+        "text": "",
+        "block": 9,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "ComboTest",
+          "left",
+          "sync",
+          "1",
+          "deny"
+        ],
+        "id": "combotestleftsync1deny",
+        "source_line": 113,
+        "text": "",
+        "block": 9,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "ComboTest",
+          "left",
+          "sync",
+          "1",
+          "deny",
+          "condition"
+        ],
+        "id": "combotestleftsync1denycondition",
+        "source_line": 115,
+        "text": "检测ComboTest组是否完成了left连击",
+        "block": 9,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "ComboTest",
+          "left",
+          "sync",
+          "1",
+          "deny",
+          "actions"
+        ],
+        "id": "combotestleftsync1denyactions",
+        "source_line": 116,
+        "text": "",
+        "block": 9,
+        "line": 17,
+        "heading": false
+      },
+      {
+        "path": [
+          "ComboTest",
+          "right"
+        ],
+        "id": "combotestright",
+        "source_line": 119,
+        "text": "",
+        "block": 9,
+        "line": 20,
+        "heading": false
+      },
+      {
+        "path": [
+          "ComboTest",
+          "right",
+          "cooldown"
+        ],
+        "id": "combotestrightcooldown",
+        "source_line": 120,
+        "text": "",
+        "block": 9,
+        "line": 21,
+        "heading": false
+      },
+      {
+        "path": [
+          "ComboTest",
+          "right",
+          "sync"
+        ],
+        "id": "combotestrightsync",
+        "source_line": 121,
+        "text": "",
+        "block": 9,
+        "line": 22,
+        "heading": false
+      },
+      {
+        "path": [
+          "ComboTest",
+          "right",
+          "sync",
+          "1",
+          "condition"
+        ],
+        "id": "combotestrightsync1condition",
+        "source_line": 125,
+        "text": "检测ComboTest组是否完成了left-right连击",
+        "block": 9,
+        "line": 25,
+        "heading": false
+      },
+      {
+        "path": [
+          "ComboTest",
+          "right",
+          "sync",
+          "1",
+          "actions"
+        ],
+        "id": "combotestrightsync1actions",
+        "source_line": 126,
+        "text": "",
+        "block": 9,
+        "line": 27,
+        "heading": false
+      }
+    ]
+  },
+  {
+    "file": "configuration/globalsections/examplesection.md",
+    "title": "GlobalSections/ExampleSection.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "f936d43eceadf4a2c3dadf575600d8e6581c124f4bc0b3f48a44faa33b98b201",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "global-strings-1"
+        ],
+        "id": "global-strings-1",
+        "source_line": 0,
+        "text": "",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "global-strings-1",
+          "type"
+        ],
+        "id": "global-strings-1type",
+        "source_line": 2,
+        "text": "随机字符节点",
+        "block": 0,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "global-strings-1",
+          "values"
+        ],
+        "id": "global-strings-1values",
+        "source_line": 3,
+        "text": "",
+        "block": 0,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "global-number-1"
+        ],
+        "id": "global-number-1",
+        "source_line": 6,
+        "text": "",
+        "block": 1,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "global-number-1",
+          "type"
+        ],
+        "id": "global-number-1type",
+        "source_line": 8,
+        "text": "随机数节点",
+        "block": 1,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "global-number-1",
+          "min"
+        ],
+        "id": "global-number-1min",
+        "source_line": 10,
+        "text": "随机数最小值",
+        "block": 1,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "global-number-1",
+          "max"
+        ],
+        "id": "global-number-1max",
+        "source_line": 12,
+        "text": "随机数最大值",
+        "block": 1,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "global-number-1",
+          "fixed"
+        ],
+        "id": "global-number-1fixed",
+        "source_line": 14,
+        "text": "小数保留位数",
+        "block": 1,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "global-calculation-1"
+        ],
+        "id": "global-calculation-1",
+        "source_line": 15,
+        "text": "",
+        "block": 2,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "global-calculation-1",
+          "type"
+        ],
+        "id": "global-calculation-1type",
+        "source_line": 17,
+        "text": "公式节点",
+        "block": 2,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "global-calculation-1",
+          "formula"
+        ],
+        "id": "global-calculation-1formula",
+        "source_line": 19,
+        "text": "计算公式",
+        "block": 2,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "global-calculation-1",
+          "min"
+        ],
+        "id": "global-calculation-1min",
+        "source_line": 21,
+        "text": "公式结果最小值",
+        "block": 2,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "global-calculation-1",
+          "max"
+        ],
+        "id": "global-calculation-1max",
+        "source_line": 23,
+        "text": "公式结果最大值",
+        "block": 2,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "global-calculation-1",
+          "fixed"
+        ],
+        "id": "global-calculation-1fixed",
+        "source_line": 25,
+        "text": "小数保留位数",
+        "block": 2,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "global-weight-1"
+        ],
+        "id": "global-weight-1",
+        "source_line": 26,
+        "text": "",
+        "block": 3,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "global-weight-1",
+          "type"
+        ],
+        "id": "global-weight-1type",
+        "source_line": 28,
+        "text": "权重字符串节点",
+        "block": 3,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "global-weight-1",
+          "values"
+        ],
+        "id": "global-weight-1values",
+        "source_line": 29,
+        "text": "",
+        "block": 3,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "global-js-1"
+        ],
+        "id": "global-js-1",
+        "source_line": 33,
+        "text": "",
+        "block": 4,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "global-js-1",
+          "type"
+        ],
+        "id": "global-js-1type",
+        "source_line": 35,
+        "text": "JavaScript节点",
+        "block": 4,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "global-js-1",
+          "path"
+        ],
+        "id": "global-js-1path",
+        "source_line": 37,
+        "text": "脚本路径",
+        "block": 4,
+        "line": 4,
+        "heading": false
+      }
+    ]
+  },
+  {
+    "file": "configuration/itempacks/exampleitempack.md",
+    "title": "ItemPacks/ExampleItemPack.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "f936d43eceadf4a2c3dadf575600d8e6581c124f4bc0b3f48a44faa33b98b201",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "Example1"
+        ],
+        "id": "example1",
+        "source_line": 0,
+        "text": "",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Example1",
+          "Items"
+        ],
+        "id": "example1items",
+        "source_line": 1,
+        "text": "",
+        "block": 0,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "Example1",
+          "FancyDrop"
+        ],
+        "id": "example1fancydrop",
+        "source_line": 6,
+        "text": "",
+        "block": 0,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "Example1",
+          "FancyDrop",
+          "offset"
+        ],
+        "id": "example1fancydropoffset",
+        "source_line": 8,
+        "text": "偏移量",
+        "block": 0,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "Example1",
+          "FancyDrop",
+          "offset",
+          "x"
+        ],
+        "id": "example1fancydropoffsetx",
+        "source_line": 10,
+        "text": "横向偏移量(或随机最小偏移量-随机最大偏移量)",
+        "block": 0,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "Example1",
+          "FancyDrop",
+          "offset",
+          "y"
+        ],
+        "id": "example1fancydropoffsety",
+        "source_line": 12,
+        "text": "纵向偏移量(或随机最小偏移量-随机最大偏移量)",
+        "block": 0,
+        "line": 12,
+        "heading": false
+      },
+      {
+        "path": [
+          "Example1",
+          "FancyDrop",
+          "angle"
+        ],
+        "id": "example1fancydropangle",
+        "source_line": 13,
+        "text": "",
+        "block": 0,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "Example1",
+          "FancyDrop",
+          "angle",
+          "type"
+        ],
+        "id": "example1fancydropangletype",
+        "source_line": 15,
+        "text": "抛射类型(round/random)",
+        "block": 0,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "Example2"
+        ],
+        "id": "example2",
+        "source_line": 16,
+        "text": "",
+        "block": 1,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "Example2",
+          "Items"
+        ],
+        "id": "example2items",
+        "source_line": 17,
+        "text": "",
+        "block": 1,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "Example2",
+          "FancyDrop"
+        ],
+        "id": "example2fancydrop",
+        "source_line": 19,
+        "text": "",
+        "block": 1,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "Example2",
+          "FancyDrop",
+          "offset"
+        ],
+        "id": "example2fancydropoffset",
+        "source_line": 20,
+        "text": "",
+        "block": 1,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "Example2",
+          "FancyDrop",
+          "offset",
+          "x"
+        ],
+        "id": "example2fancydropoffsetx",
+        "source_line": 21,
+        "text": "",
+        "block": 1,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "Example2",
+          "FancyDrop",
+          "offset",
+          "y"
+        ],
+        "id": "example2fancydropoffsety",
+        "source_line": 22,
+        "text": "",
+        "block": 1,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "Example2",
+          "FancyDrop",
+          "angle"
+        ],
+        "id": "example2fancydropangle",
+        "source_line": 23,
+        "text": "",
+        "block": 1,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "Example2",
+          "FancyDrop",
+          "angle",
+          "type"
+        ],
+        "id": "example2fancydropangletype",
+        "source_line": 24,
+        "text": "",
+        "block": 1,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "Example2",
+          "globalsections"
+        ],
+        "id": "example2globalsections",
+        "source_line": 26,
+        "text": "引用的全局节点",
+        "block": 1,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "Example2",
+          "sections"
+        ],
+        "id": "example2sections",
+        "source_line": 32,
+        "text": "物品私有节点",
+        "block": 1,
+        "line": 16,
+        "heading": false
+      },
+      {
+        "path": [
+          "Example2",
+          "sections",
+          "test"
+        ],
+        "id": "example2sectionstest",
+        "source_line": 33,
+        "text": "",
+        "block": 1,
+        "line": 18,
+        "heading": false
+      },
+      {
+        "path": [
+          "Example2",
+          "sections",
+          "test",
+          "type"
+        ],
+        "id": "example2sectionstesttype",
+        "source_line": 34,
+        "text": "",
+        "block": 1,
+        "line": 19,
+        "heading": false
+      },
+      {
+        "path": [
+          "Example2",
+          "sections",
+          "test",
+          "values"
+        ],
+        "id": "example2sectionstestvalues",
+        "source_line": 35,
+        "text": "",
+        "block": 1,
+        "line": 20,
+        "heading": false
+      }
+    ]
+  },
+  {
+    "file": "configuration/items/lottery_box.md",
+    "title": "Items/lottery_box.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "f936d43eceadf4a2c3dadf575600d8e6581c124f4bc0b3f48a44faa33b98b201",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "TARGET"
+        ],
+        "id": "target",
+        "source_line": 1,
+        "text": "物品 ID 为 TARGET；修改 ID 时请同步修改 ItemActions 文件的顶级键。",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "TARGET",
+          "material"
+        ],
+        "id": "targetmaterial",
+        "source_line": 2,
+        "text": "",
+        "block": 0,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "TARGET",
+          "name"
+        ],
+        "id": "targetname",
+        "source_line": 3,
+        "text": "",
+        "block": 0,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "TARGET",
+          "lore"
+        ],
+        "id": "targetlore",
+        "source_line": 4,
+        "text": "",
+        "block": 0,
+        "line": 5,
+        "heading": false
+      }
+    ]
+  },
+  {
+    "file": "configuration/items/exampleitem.md",
+    "title": "Items/ExampleItem.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "f936d43eceadf4a2c3dadf575600d8e6581c124f4bc0b3f48a44faa33b98b201",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "ExampleItem"
+        ],
+        "id": "exampleitem",
+        "source_line": 0,
+        "text": "",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "material"
+        ],
+        "id": "exampleitemmaterial",
+        "source_line": 2,
+        "text": "物品材质",
+        "block": 0,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "custommodeldata"
+        ],
+        "id": "exampleitemcustommodeldata",
+        "source_line": 4,
+        "text": "物品CustomModelData(适用于1.14+)",
+        "block": 0,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "damage"
+        ],
+        "id": "exampleitemdamage",
+        "source_line": 6,
+        "text": "物品损伤值",
+        "block": 0,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "name"
+        ],
+        "id": "exampleitemname",
+        "source_line": 8,
+        "text": "物品名",
+        "block": 0,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "lore"
+        ],
+        "id": "exampleitemlore",
+        "source_line": 10,
+        "text": "物品Lore",
+        "block": 0,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "enchantments"
+        ],
+        "id": "exampleitemenchantments",
+        "source_line": 32,
+        "text": "物品附魔",
+        "block": 0,
+        "line": 32,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "enchantments",
+          "ARROW_DAMAGE"
+        ],
+        "id": "exampleitemenchantmentsarrow_damage",
+        "source_line": 33,
+        "text": "",
+        "block": 0,
+        "line": 34,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "enchantments",
+          "ARROW_KNOCKBACK"
+        ],
+        "id": "exampleitemenchantmentsarrow_knockback",
+        "source_line": 34,
+        "text": "",
+        "block": 0,
+        "line": 35,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "hideflags"
+        ],
+        "id": "exampleitemhideflags",
+        "source_line": 36,
+        "text": "物品隐藏标识",
+        "block": 0,
+        "line": 36,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "color"
+        ],
+        "id": "exampleitemcolor",
+        "source_line": 40,
+        "text": "物品颜色(适用于药水/皮革装备)",
+        "block": 0,
+        "line": 40,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "options"
+        ],
+        "id": "exampleitemoptions",
+        "source_line": 42,
+        "text": "额外选项",
+        "block": 0,
+        "line": 42,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "options",
+          "charge"
+        ],
+        "id": "exampleitemoptionscharge",
+        "source_line": 43,
+        "text": "",
+        "block": 0,
+        "line": 44,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "options",
+          "color"
+        ],
+        "id": "exampleitemoptionscolor",
+        "source_line": 44,
+        "text": "",
+        "block": 0,
+        "line": 45,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "nbt"
+        ],
+        "id": "exampleitemnbt",
+        "source_line": 46,
+        "text": "物品NBT",
+        "block": 0,
+        "line": 46,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "nbt",
+          "<strings::文本1_文本2_文本3_文本4>"
+        ],
+        "id": "exampleitemnbtstrings文本1_文本2_文本3_文本4",
+        "source_line": 48,
+        "text": "NBT中也可以随机调用节点",
+        "block": 0,
+        "line": 48,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "nbt",
+          "AttributeModifiers"
+        ],
+        "id": "exampleitemnbtattributemodifiers",
+        "source_line": 50,
+        "text": "可以在NBT中编辑物品的原版属性",
+        "block": 0,
+        "line": 50,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "nbt",
+          "AttributeModifiers",
+          "0",
+          "Amount"
+        ],
+        "id": "exampleitemnbtattributemodifiers0amount",
+        "source_line": 51,
+        "text": "",
+        "block": 0,
+        "line": 52,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "nbt",
+          "AttributeModifiers",
+          "0",
+          "AttributeName"
+        ],
+        "id": "exampleitemnbtattributemodifiers0attributename",
+        "source_line": 52,
+        "text": "",
+        "block": 0,
+        "line": 53,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "nbt",
+          "AttributeModifiers",
+          "0",
+          "Operation"
+        ],
+        "id": "exampleitemnbtattributemodifiers0operation",
+        "source_line": 53,
+        "text": "",
+        "block": 0,
+        "line": 54,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "nbt",
+          "AttributeModifiers",
+          "0",
+          "UUID"
+        ],
+        "id": "exampleitemnbtattributemodifiers0uuid",
+        "source_line": 54,
+        "text": "",
+        "block": 0,
+        "line": 55,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "nbt",
+          "AttributeModifiers",
+          "0",
+          "Name"
+        ],
+        "id": "exampleitemnbtattributemodifiers0name",
+        "source_line": 59,
+        "text": "",
+        "block": 0,
+        "line": 60,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "globalsections"
+        ],
+        "id": "exampleitemglobalsections",
+        "source_line": 61,
+        "text": "引用的全局节点",
+        "block": 0,
+        "line": 61,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections"
+        ],
+        "id": "exampleitemsections",
+        "source_line": 67,
+        "text": "物品私有节点",
+        "block": 0,
+        "line": 67,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "simple-1"
+        ],
+        "id": "exampleitemsectionssimple-1",
+        "source_line": 68,
+        "text": "",
+        "block": 0,
+        "line": 69,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "strings-1"
+        ],
+        "id": "exampleitemsectionsstrings-1",
+        "source_line": 69,
+        "text": "",
+        "block": 0,
+        "line": 70,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "strings-1",
+          "type"
+        ],
+        "id": "exampleitemsectionsstrings-1type",
+        "source_line": 70,
+        "text": "",
+        "block": 0,
+        "line": 71,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "strings-1",
+          "values"
+        ],
+        "id": "exampleitemsectionsstrings-1values",
+        "source_line": 71,
+        "text": "",
+        "block": 0,
+        "line": 72,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "number-1"
+        ],
+        "id": "exampleitemsectionsnumber-1",
+        "source_line": 74,
+        "text": "",
+        "block": 0,
+        "line": 75,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "number-1",
+          "type"
+        ],
+        "id": "exampleitemsectionsnumber-1type",
+        "source_line": 75,
+        "text": "",
+        "block": 0,
+        "line": 76,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "number-1",
+          "min"
+        ],
+        "id": "exampleitemsectionsnumber-1min",
+        "source_line": 76,
+        "text": "",
+        "block": 0,
+        "line": 77,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "number-1",
+          "max"
+        ],
+        "id": "exampleitemsectionsnumber-1max",
+        "source_line": 77,
+        "text": "",
+        "block": 0,
+        "line": 78,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "number-1",
+          "fixed"
+        ],
+        "id": "exampleitemsectionsnumber-1fixed",
+        "source_line": 78,
+        "text": "",
+        "block": 0,
+        "line": 79,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "calculation-1"
+        ],
+        "id": "exampleitemsectionscalculation-1",
+        "source_line": 79,
+        "text": "",
+        "block": 0,
+        "line": 80,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "calculation-1",
+          "type"
+        ],
+        "id": "exampleitemsectionscalculation-1type",
+        "source_line": 80,
+        "text": "",
+        "block": 0,
+        "line": 81,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "calculation-1",
+          "formula"
+        ],
+        "id": "exampleitemsectionscalculation-1formula",
+        "source_line": 81,
+        "text": "",
+        "block": 0,
+        "line": 82,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "calculation-1",
+          "min"
+        ],
+        "id": "exampleitemsectionscalculation-1min",
+        "source_line": 82,
+        "text": "",
+        "block": 0,
+        "line": 83,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "calculation-1",
+          "max"
+        ],
+        "id": "exampleitemsectionscalculation-1max",
+        "source_line": 83,
+        "text": "",
+        "block": 0,
+        "line": 84,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "calculation-1",
+          "fixed"
+        ],
+        "id": "exampleitemsectionscalculation-1fixed",
+        "source_line": 84,
+        "text": "",
+        "block": 0,
+        "line": 85,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "weight-1"
+        ],
+        "id": "exampleitemsectionsweight-1",
+        "source_line": 85,
+        "text": "",
+        "block": 0,
+        "line": 86,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "weight-1",
+          "type"
+        ],
+        "id": "exampleitemsectionsweight-1type",
+        "source_line": 86,
+        "text": "",
+        "block": 0,
+        "line": 87,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "weight-1",
+          "values"
+        ],
+        "id": "exampleitemsectionsweight-1values",
+        "source_line": 87,
+        "text": "",
+        "block": 0,
+        "line": 88,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "js-1"
+        ],
+        "id": "exampleitemsectionsjs-1",
+        "source_line": 90,
+        "text": "",
+        "block": 0,
+        "line": 91,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "js-1",
+          "type"
+        ],
+        "id": "exampleitemsectionsjs-1type",
+        "source_line": 91,
+        "text": "",
+        "block": 0,
+        "line": 92,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "js-1",
+          "path"
+        ],
+        "id": "exampleitemsectionsjs-1path",
+        "source_line": 92,
+        "text": "",
+        "block": 0,
+        "line": 93,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "papiString-1"
+        ],
+        "id": "exampleitemsectionspapistring-1",
+        "source_line": 93,
+        "text": "",
+        "block": 0,
+        "line": 94,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "papiString-1",
+          "type"
+        ],
+        "id": "exampleitemsectionspapistring-1type",
+        "source_line": 94,
+        "text": "",
+        "block": 0,
+        "line": 95,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "papiString-1",
+          "values"
+        ],
+        "id": "exampleitemsectionspapistring-1values",
+        "source_line": 95,
+        "text": "",
+        "block": 0,
+        "line": 96,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "papiString-2"
+        ],
+        "id": "exampleitemsectionspapistring-2",
+        "source_line": 97,
+        "text": "",
+        "block": 0,
+        "line": 98,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "papiString-2",
+          "type"
+        ],
+        "id": "exampleitemsectionspapistring-2type",
+        "source_line": 98,
+        "text": "",
+        "block": 0,
+        "line": 99,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem",
+          "sections",
+          "papiString-2",
+          "values"
+        ],
+        "id": "exampleitemsectionspapistring-2values",
+        "source_line": 99,
+        "text": "",
+        "block": 0,
+        "line": 100,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem2"
+        ],
+        "id": "exampleitem2",
+        "source_line": 101,
+        "text": "",
+        "block": 1,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "ExampleItem2",
+          "material"
+        ],
+        "id": "exampleitem2material",
+        "source_line": 102,
+        "text": "",
+        "block": 1,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem3"
+        ],
+        "id": "exampleitem3",
+        "source_line": 103,
+        "text": "",
+        "block": 2,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "ExampleItem3",
+          "material"
+        ],
+        "id": "exampleitem3material",
+        "source_line": 104,
+        "text": "",
+        "block": 2,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem4"
+        ],
+        "id": "exampleitem4",
+        "source_line": 105,
+        "text": "",
+        "block": 3,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "ExampleItem4",
+          "material"
+        ],
+        "id": "exampleitem4material",
+        "source_line": 106,
+        "text": "",
+        "block": 3,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem4",
+          "name"
+        ],
+        "id": "exampleitem4name",
+        "source_line": 107,
+        "text": "",
+        "block": 3,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem4",
+          "lore"
+        ],
+        "id": "exampleitem4lore",
+        "source_line": 108,
+        "text": "",
+        "block": 3,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem4",
+          "options"
+        ],
+        "id": "exampleitem4options",
+        "source_line": 110,
+        "text": "",
+        "block": 3,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "ExampleItem4",
+          "options",
+          "charge"
+        ],
+        "id": "exampleitem4optionscharge",
+        "source_line": 111,
+        "text": "",
+        "block": 3,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "CheckTest"
+        ],
+        "id": "checktest",
+        "source_line": 114,
+        "text": "Check节点测试",
+        "block": 4,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "CheckTest",
+          "material"
+        ],
+        "id": "checktestmaterial",
+        "source_line": 115,
+        "text": "",
+        "block": 4,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "CheckTest",
+          "name"
+        ],
+        "id": "checktestname",
+        "source_line": 116,
+        "text": "",
+        "block": 4,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "CheckTest",
+          "sections"
+        ],
+        "id": "checktestsections",
+        "source_line": 117,
+        "text": "",
+        "block": 4,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "CheckTest",
+          "sections",
+          "test"
+        ],
+        "id": "checktestsectionstest",
+        "source_line": 119,
+        "text": "待检查的节点, 随机返回test1, test2, test3中的一个值",
+        "block": 4,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "CheckTest",
+          "sections",
+          "test",
+          "type"
+        ],
+        "id": "checktestsectionstesttype",
+        "source_line": 120,
+        "text": "",
+        "block": 4,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "CheckTest",
+          "sections",
+          "test",
+          "values"
+        ],
+        "id": "checktestsectionstestvalues",
+        "source_line": 121,
+        "text": "",
+        "block": 4,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "CheckTest",
+          "sections",
+          "check"
+        ],
+        "id": "checktestsectionscheck",
+        "source_line": 125,
+        "text": "",
+        "block": 4,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "CheckTest",
+          "sections",
+          "check",
+          "type"
+        ],
+        "id": "checktestsectionschecktype",
+        "source_line": 126,
+        "text": "",
+        "block": 4,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "CheckTest",
+          "sections",
+          "check",
+          "value"
+        ],
+        "id": "checktestsectionscheckvalue",
+        "source_line": 128,
+        "text": "待检查的值",
+        "block": 4,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "CheckTest",
+          "sections",
+          "check",
+          "actions"
+        ],
+        "id": "checktestsectionscheckactions",
+        "source_line": 131,
+        "text": "执行动作\n条件中默认导入了value",
+        "block": 4,
+        "line": 17,
+        "heading": false
+      },
+      {
+        "path": [
+          "CheckTest",
+          "sections",
+          "check",
+          "actions",
+          "0",
+          "condition"
+        ],
+        "id": "checktestsectionscheckactions0condition",
+        "source_line": 133,
+        "text": "如果value为test1",
+        "block": 4,
+        "line": 20,
+        "heading": false
+      },
+      {
+        "path": [
+          "CheckTest",
+          "sections",
+          "check",
+          "actions",
+          "0",
+          "actions"
+        ],
+        "id": "checktestsectionscheckactions0actions",
+        "source_line": 135,
+        "text": "通知玩家",
+        "block": 4,
+        "line": 22,
+        "heading": false
+      },
+      {
+        "path": [
+          "CheckTest",
+          "sections",
+          "check",
+          "actions",
+          "1",
+          "condition"
+        ],
+        "id": "checktestsectionscheckactions1condition",
+        "source_line": 139,
+        "text": "",
+        "block": 4,
+        "line": 27,
+        "heading": false
+      },
+      {
+        "path": [
+          "CheckTest",
+          "sections",
+          "check",
+          "actions",
+          "1",
+          "actions"
+        ],
+        "id": "checktestsectionscheckactions1actions",
+        "source_line": 140,
+        "text": "",
+        "block": 4,
+        "line": 28,
+        "heading": false
+      },
+      {
+        "path": [
+          "CheckTest",
+          "sections",
+          "check",
+          "actions",
+          "2",
+          "condition"
+        ],
+        "id": "checktestsectionscheckactions2condition",
+        "source_line": 143,
+        "text": "",
+        "block": 4,
+        "line": 31,
+        "heading": false
+      },
+      {
+        "path": [
+          "CheckTest",
+          "sections",
+          "check",
+          "actions",
+          "2",
+          "actions"
+        ],
+        "id": "checktestsectionscheckactions2actions",
+        "source_line": 144,
+        "text": "",
+        "block": 4,
+        "line": 32,
+        "heading": false
+      },
+      {
+        "path": [
+          "WhenTest"
+        ],
+        "id": "whentest",
+        "source_line": 148,
+        "text": "",
+        "block": 5,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "WhenTest",
+          "material"
+        ],
+        "id": "whentestmaterial",
+        "source_line": 149,
+        "text": "",
+        "block": 5,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "WhenTest",
+          "name"
+        ],
+        "id": "whentestname",
+        "source_line": 150,
+        "text": "",
+        "block": 5,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "WhenTest",
+          "sections"
+        ],
+        "id": "whentestsections",
+        "source_line": 151,
+        "text": "",
+        "block": 5,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "WhenTest",
+          "sections",
+          "test"
+        ],
+        "id": "whentestsectionstest",
+        "source_line": 152,
+        "text": "",
+        "block": 5,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "WhenTest",
+          "sections",
+          "when"
+        ],
+        "id": "whentestsectionswhen",
+        "source_line": 153,
+        "text": "",
+        "block": 5,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "WhenTest",
+          "sections",
+          "when",
+          "type"
+        ],
+        "id": "whentestsectionswhentype",
+        "source_line": 154,
+        "text": "",
+        "block": 5,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "WhenTest",
+          "sections",
+          "when",
+          "value"
+        ],
+        "id": "whentestsectionswhenvalue",
+        "source_line": 155,
+        "text": "",
+        "block": 5,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "WhenTest",
+          "sections",
+          "when",
+          "conditions"
+        ],
+        "id": "whentestsectionswhenconditions",
+        "source_line": 156,
+        "text": "",
+        "block": 5,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "WhenTest",
+          "sections",
+          "when",
+          "conditions",
+          "0",
+          "condition"
+        ],
+        "id": "whentestsectionswhenconditions0condition",
+        "source_line": 157,
+        "text": "",
+        "block": 5,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "WhenTest",
+          "sections",
+          "when",
+          "conditions",
+          "0",
+          "result"
+        ],
+        "id": "whentestsectionswhenconditions0result",
+        "source_line": 158,
+        "text": "",
+        "block": 5,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "WhenTest",
+          "sections",
+          "when",
+          "conditions",
+          "1",
+          "condition"
+        ],
+        "id": "whentestsectionswhenconditions1condition",
+        "source_line": 159,
+        "text": "",
+        "block": 5,
+        "line": 12,
+        "heading": false
+      },
+      {
+        "path": [
+          "WhenTest",
+          "sections",
+          "when",
+          "conditions",
+          "1",
+          "result"
+        ],
+        "id": "whentestsectionswhenconditions1result",
+        "source_line": 160,
+        "text": "",
+        "block": 5,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "WhenTest",
+          "sections",
+          "when",
+          "conditions",
+          "2",
+          "condition"
+        ],
+        "id": "whentestsectionswhenconditions2condition",
+        "source_line": 161,
+        "text": "",
+        "block": 5,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "WhenTest",
+          "sections",
+          "when",
+          "conditions",
+          "2",
+          "result"
+        ],
+        "id": "whentestsectionswhenconditions2result",
+        "source_line": 162,
+        "text": "",
+        "block": 5,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "WhenTest",
+          "sections",
+          "when",
+          "conditions",
+          "3",
+          "condition"
+        ],
+        "id": "whentestsectionswhenconditions3condition",
+        "source_line": 163,
+        "text": "",
+        "block": 5,
+        "line": 16,
+        "heading": false
+      },
+      {
+        "path": [
+          "WhenTest",
+          "sections",
+          "when",
+          "conditions",
+          "3",
+          "result"
+        ],
+        "id": "whentestsectionswhenconditions3result",
+        "source_line": 164,
+        "text": "",
+        "block": 5,
+        "line": 17,
+        "heading": false
+      },
+      {
+        "path": [
+          "WhenTest",
+          "sections",
+          "when",
+          "conditions",
+          "4",
+          "condition"
+        ],
+        "id": "whentestsectionswhenconditions4condition",
+        "source_line": 165,
+        "text": "",
+        "block": 5,
+        "line": 18,
+        "heading": false
+      },
+      {
+        "path": [
+          "WhenTest",
+          "sections",
+          "when",
+          "conditions",
+          "4",
+          "result"
+        ],
+        "id": "whentestsectionswhenconditions4result",
+        "source_line": 166,
+        "text": "",
+        "block": 5,
+        "line": 19,
+        "heading": false
+      },
+      {
+        "path": [
+          "WhenTest",
+          "sections",
+          "when",
+          "conditions",
+          "5",
+          "condition"
+        ],
+        "id": "whentestsectionswhenconditions5condition",
+        "source_line": 167,
+        "text": "",
+        "block": 5,
+        "line": 20,
+        "heading": false
+      },
+      {
+        "path": [
+          "WhenTest",
+          "sections",
+          "when",
+          "conditions",
+          "5",
+          "result"
+        ],
+        "id": "whentestsectionswhenconditions5result",
+        "source_line": 168,
+        "text": "",
+        "block": 5,
+        "line": 21,
+        "heading": false
+      },
+      {
+        "path": [
+          "ComboTest"
+        ],
+        "id": "combotest",
+        "source_line": 170,
+        "text": "",
+        "block": 6,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "ComboTest",
+          "material"
+        ],
+        "id": "combotestmaterial",
+        "source_line": 171,
+        "text": "",
+        "block": 6,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "template1"
+        ],
+        "id": "template1",
+        "source_line": 174,
+        "text": "一个测试模板",
+        "block": 7,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "template1",
+          "material"
+        ],
+        "id": "template1material",
+        "source_line": 175,
+        "text": "",
+        "block": 7,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "template1",
+          "lore"
+        ],
+        "id": "template1lore",
+        "source_line": 176,
+        "text": "",
+        "block": 7,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "template1",
+          "nbt"
+        ],
+        "id": "template1nbt",
+        "source_line": 178,
+        "text": "",
+        "block": 7,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "template1",
+          "nbt",
+          "MMOITEMS_ATTACK_DAMAGE"
+        ],
+        "id": "template1nbtmmoitems_attack_damage",
+        "source_line": 179,
+        "text": "",
+        "block": 7,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "template2"
+        ],
+        "id": "template2",
+        "source_line": 181,
+        "text": "一个测试模板",
+        "block": 8,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "template2",
+          "material"
+        ],
+        "id": "template2material",
+        "source_line": 182,
+        "text": "",
+        "block": 8,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "TemplateItem1"
+        ],
+        "id": "templateitem1",
+        "source_line": 185,
+        "text": "一个全局继承测试, 它继承了\"template1\"的所有内容",
+        "block": 9,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "TemplateItem1",
+          "inherit"
+        ],
+        "id": "templateitem1inherit",
+        "source_line": 186,
+        "text": "",
+        "block": 9,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "TemplateItem1",
+          "name"
+        ],
+        "id": "templateitem1name",
+        "source_line": 187,
+        "text": "",
+        "block": 9,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "TemplateItem1",
+          "sections"
+        ],
+        "id": "templateitem1sections",
+        "source_line": 188,
+        "text": "",
+        "block": 9,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "TemplateItem1",
+          "sections",
+          "damage"
+        ],
+        "id": "templateitem1sectionsdamage",
+        "source_line": 189,
+        "text": "",
+        "block": 9,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "TemplateItem2"
+        ],
+        "id": "templateitem2",
+        "source_line": 191,
+        "text": "一个部分继承测试, 它继承了\"template1\"的lore, 以及\"template2\"的material",
+        "block": 10,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "TemplateItem2",
+          "inherit"
+        ],
+        "id": "templateitem2inherit",
+        "source_line": 192,
+        "text": "",
+        "block": 10,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "TemplateItem2",
+          "inherit",
+          "lore"
+        ],
+        "id": "templateitem2inheritlore",
+        "source_line": 193,
+        "text": "",
+        "block": 10,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "TemplateItem2",
+          "inherit",
+          "material"
+        ],
+        "id": "templateitem2inheritmaterial",
+        "source_line": 194,
+        "text": "",
+        "block": 10,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "TemplateItem2",
+          "name"
+        ],
+        "id": "templateitem2name",
+        "source_line": 195,
+        "text": "",
+        "block": 10,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "TemplateItem2",
+          "sections"
+        ],
+        "id": "templateitem2sections",
+        "source_line": 196,
+        "text": "",
+        "block": 10,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "TemplateItem2",
+          "sections",
+          "damage"
+        ],
+        "id": "templateitem2sectionsdamage",
+        "source_line": 197,
+        "text": "",
+        "block": 10,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "TemplateItem3"
+        ],
+        "id": "templateitem3",
+        "source_line": 199,
+        "text": "一个顺序继承测试, 它将按顺序进行节点继承. 先继承\"template1\"的所有内容，再继承\"template2\"的所有内容",
+        "block": 11,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "TemplateItem3",
+          "inherit"
+        ],
+        "id": "templateitem3inherit",
+        "source_line": 200,
+        "text": "",
+        "block": 11,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "TemplateItem3",
+          "name"
+        ],
+        "id": "templateitem3name",
+        "source_line": 203,
+        "text": "",
+        "block": 11,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "TemplateItem3",
+          "sections"
+        ],
+        "id": "templateitem3sections",
+        "source_line": 204,
+        "text": "",
+        "block": 11,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "TemplateItem3",
+          "sections",
+          "damage"
+        ],
+        "id": "templateitem3sectionsdamage",
+        "source_line": 205,
+        "text": "",
+        "block": 11,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "InheritSectionTest"
+        ],
+        "id": "inheritsectiontest",
+        "source_line": 208,
+        "text": "继承节点测试",
+        "block": 12,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "InheritSectionTest",
+          "material"
+        ],
+        "id": "inheritsectiontestmaterial",
+        "source_line": 209,
+        "text": "",
+        "block": 12,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "InheritSectionTest",
+          "lore"
+        ],
+        "id": "inheritsectiontestlore",
+        "source_line": 210,
+        "text": "",
+        "block": 12,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "InheritSectionTest",
+          "sections"
+        ],
+        "id": "inheritsectiontestsections",
+        "source_line": 214,
+        "text": "",
+        "block": 12,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "InheritSectionTest",
+          "sections",
+          "templateTest"
+        ],
+        "id": "inheritsectiontestsectionstemplatetest",
+        "source_line": 215,
+        "text": "",
+        "block": 12,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "InheritSectionTest",
+          "sections",
+          "inheritTest"
+        ],
+        "id": "inheritsectiontestsectionsinherittest",
+        "source_line": 216,
+        "text": "",
+        "block": 12,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "InheritSectionTest",
+          "sections",
+          "inheritTest",
+          "type"
+        ],
+        "id": "inheritsectiontestsectionsinherittesttype",
+        "source_line": 217,
+        "text": "",
+        "block": 12,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "InheritSectionTest",
+          "sections",
+          "inheritTest",
+          "template"
+        ],
+        "id": "inheritsectiontestsectionsinherittesttemplate",
+        "source_line": 218,
+        "text": "",
+        "block": 12,
+        "line": 12,
+        "heading": false
+      },
+      {
+        "path": [
+          "GradientTest"
+        ],
+        "id": "gradienttest",
+        "source_line": 220,
+        "text": "",
+        "block": 13,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "GradientTest",
+          "material"
+        ],
+        "id": "gradienttestmaterial",
+        "source_line": 221,
+        "text": "",
+        "block": 13,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "GradientTest",
+          "lore"
+        ],
+        "id": "gradienttestlore",
+        "source_line": 222,
+        "text": "",
+        "block": 13,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "GradientTest",
+          "sections"
+        ],
+        "id": "gradienttestsections",
+        "source_line": 225,
+        "text": "",
+        "block": 13,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "GradientTest",
+          "sections",
+          "test1"
+        ],
+        "id": "gradienttestsectionstest1",
+        "source_line": 226,
+        "text": "",
+        "block": 13,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "GradientTest",
+          "sections",
+          "test2"
+        ],
+        "id": "gradienttestsectionstest2",
+        "source_line": 227,
+        "text": "",
+        "block": 13,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "GradientTest",
+          "sections",
+          "test2",
+          "type"
+        ],
+        "id": "gradienttestsectionstest2type",
+        "source_line": 228,
+        "text": "",
+        "block": 13,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "GradientTest",
+          "sections",
+          "test2",
+          "colorStart"
+        ],
+        "id": "gradienttestsectionstest2colorstart",
+        "source_line": 229,
+        "text": "",
+        "block": 13,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "GradientTest",
+          "sections",
+          "test2",
+          "colorEnd"
+        ],
+        "id": "gradienttestsectionstest2colorend",
+        "source_line": 230,
+        "text": "",
+        "block": 13,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "GradientTest",
+          "sections",
+          "test2",
+          "step"
+        ],
+        "id": "gradienttestsectionstest2step",
+        "source_line": 231,
+        "text": "",
+        "block": 13,
+        "line": 12,
+        "heading": false
+      },
+      {
+        "path": [
+          "GradientTest",
+          "sections",
+          "test2",
+          "text"
+        ],
+        "id": "gradienttestsectionstest2text",
+        "source_line": 232,
+        "text": "",
+        "block": 13,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "ActionTest"
+        ],
+        "id": "actiontest",
+        "source_line": 235,
+        "text": "物品动作测试",
+        "block": 14,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "ActionTest",
+          "material"
+        ],
+        "id": "actiontestmaterial",
+        "source_line": 236,
+        "text": "",
+        "block": 14,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "ActionTest",
+          "name"
+        ],
+        "id": "actiontestname",
+        "source_line": 237,
+        "text": "",
+        "block": 14,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "ActionTest",
+          "nbt"
+        ],
+        "id": "actiontestnbt",
+        "source_line": 238,
+        "text": "",
+        "block": 14,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "ActionTest",
+          "nbt",
+          "test1"
+        ],
+        "id": "actiontestnbttest1",
+        "source_line": 239,
+        "text": "",
+        "block": 14,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "ActionTest",
+          "nbt",
+          "test2"
+        ],
+        "id": "actiontestnbttest2",
+        "source_line": 240,
+        "text": "",
+        "block": 14,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "ActionTest",
+          "nbt",
+          "test2",
+          "test3"
+        ],
+        "id": "actiontestnbttest2test3",
+        "source_line": 241,
+        "text": "",
+        "block": 14,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "ActionTest",
+          "sections"
+        ],
+        "id": "actiontestsections",
+        "source_line": 242,
+        "text": "",
+        "block": 14,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "ActionTest",
+          "sections",
+          "test"
+        ],
+        "id": "actiontestsectionstest",
+        "source_line": 243,
+        "text": "",
+        "block": 14,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "CustomSection"
+        ],
+        "id": "customsection",
+        "source_line": 246,
+        "text": "自定义节点测试",
+        "block": 15,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "CustomSection",
+          "material"
+        ],
+        "id": "customsectionmaterial",
+        "source_line": 247,
+        "text": "",
+        "block": 15,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "CustomSection",
+          "lore"
+        ],
+        "id": "customsectionlore",
+        "source_line": 248,
+        "text": "",
+        "block": 15,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "CustomSection",
+          "sections"
+        ],
+        "id": "customsectionsections",
+        "source_line": 251,
+        "text": "",
+        "block": 15,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "CustomSection",
+          "sections",
+          "test-1"
+        ],
+        "id": "customsectionsectionstest-1",
+        "source_line": 252,
+        "text": "",
+        "block": 15,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "CustomSection",
+          "sections",
+          "test-1",
+          "type"
+        ],
+        "id": "customsectionsectionstest-1type",
+        "source_line": 253,
+        "text": "",
+        "block": 15,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "CustomSection",
+          "sections",
+          "test-1",
+          "values"
+        ],
+        "id": "customsectionsectionstest-1values",
+        "source_line": 254,
+        "text": "",
+        "block": 15,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "EatTest1"
+        ],
+        "id": "eattest1",
+        "source_line": 261,
+        "text": "物品动作Eat触发器测试",
+        "block": 16,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "EatTest1",
+          "material"
+        ],
+        "id": "eattest1material",
+        "source_line": 262,
+        "text": "",
+        "block": 16,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "EatTest2"
+        ],
+        "id": "eattest2",
+        "source_line": 263,
+        "text": "",
+        "block": 17,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "EatTest2",
+          "material"
+        ],
+        "id": "eattest2material",
+        "source_line": 264,
+        "text": "",
+        "block": 17,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "EatTest2",
+          "options"
+        ],
+        "id": "eattest2options",
+        "source_line": 265,
+        "text": "",
+        "block": 17,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "EatTest2",
+          "options",
+          "charge"
+        ],
+        "id": "eattest2optionscharge",
+        "source_line": 266,
+        "text": "",
+        "block": 17,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "DropTest1"
+        ],
+        "id": "droptest1",
+        "source_line": 269,
+        "text": "物品动作Drop触发器测试",
+        "block": 18,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "DropTest1",
+          "material"
+        ],
+        "id": "droptest1material",
+        "source_line": 270,
+        "text": "",
+        "block": 18,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "DropTest2"
+        ],
+        "id": "droptest2",
+        "source_line": 271,
+        "text": "",
+        "block": 19,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "DropTest2",
+          "material"
+        ],
+        "id": "droptest2material",
+        "source_line": 272,
+        "text": "",
+        "block": 19,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "DropTest2",
+          "options"
+        ],
+        "id": "droptest2options",
+        "source_line": 273,
+        "text": "",
+        "block": 19,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "DropTest2",
+          "options",
+          "charge"
+        ],
+        "id": "droptest2optionscharge",
+        "source_line": 274,
+        "text": "",
+        "block": 19,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "OwnerTest"
+        ],
+        "id": "ownertest",
+        "source_line": 277,
+        "text": "Owner功能测试",
+        "block": 20,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "OwnerTest",
+          "material"
+        ],
+        "id": "ownertestmaterial",
+        "source_line": 278,
+        "text": "",
+        "block": 20,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "OwnerTest",
+          "name"
+        ],
+        "id": "ownertestname",
+        "source_line": 279,
+        "text": "",
+        "block": 20,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "OwnerTest",
+          "options"
+        ],
+        "id": "ownertestoptions",
+        "source_line": 280,
+        "text": "",
+        "block": 20,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "OwnerTest",
+          "options",
+          "owner"
+        ],
+        "id": "ownertestoptionsowner",
+        "source_line": 285,
+        "text": "通过/ni drop或击杀MM怪物掉落该物品, 该物品首次拾取只能由Neige完成\n你可以在此处填写<papi::player_name>, 这样就是谁击杀就属于谁了\n首次拾取后将不再有掉落物归属效果\n服务器重启后效果重置(掉了, 关服了, 再次开服, 谁都能捡)",
+        "block": 20,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "CustomAction"
+        ],
+        "id": "customaction",
+        "source_line": 288,
+        "text": "自定义动作测试",
+        "block": 21,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "CustomAction",
+          "material"
+        ],
+        "id": "customactionmaterial",
+        "source_line": 289,
+        "text": "",
+        "block": 21,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "ItemTimeTest"
+        ],
+        "id": "itemtimetest",
+        "source_line": 292,
+        "text": "物品时限测试",
+        "block": 22,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "ItemTimeTest",
+          "material"
+        ],
+        "id": "itemtimetestmaterial",
+        "source_line": 293,
+        "text": "",
+        "block": 22,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "ItemTimeTest",
+          "name"
+        ],
+        "id": "itemtimetestname",
+        "source_line": 294,
+        "text": "",
+        "block": 22,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "ItemTimeTest",
+          "options"
+        ],
+        "id": "itemtimetestoptions",
+        "source_line": 295,
+        "text": "",
+        "block": 22,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "ItemTimeTest",
+          "options",
+          "itemtime"
+        ],
+        "id": "itemtimetestoptionsitemtime",
+        "source_line": 296,
+        "text": "",
+        "block": 22,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "ItemTimeTest",
+          "sections"
+        ],
+        "id": "itemtimetestsections",
+        "source_line": 297,
+        "text": "",
+        "block": 22,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "ItemTimeTest",
+          "sections",
+          "itemtime"
+        ],
+        "id": "itemtimetestsectionsitemtime",
+        "source_line": 298,
+        "text": "",
+        "block": 22,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest1"
+        ],
+        "id": "jointest1",
+        "source_line": 301,
+        "text": "join节点测试",
+        "block": 23,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "JoinTest1",
+          "material"
+        ],
+        "id": "jointest1material",
+        "source_line": 302,
+        "text": "",
+        "block": 23,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest1",
+          "lore"
+        ],
+        "id": "jointest1lore",
+        "source_line": 303,
+        "text": "",
+        "block": 23,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest1",
+          "sections"
+        ],
+        "id": "jointest1sections",
+        "source_line": 306,
+        "text": "",
+        "block": 23,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest1",
+          "sections",
+          "test"
+        ],
+        "id": "jointest1sectionstest",
+        "source_line": 307,
+        "text": "",
+        "block": 23,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest1",
+          "sections",
+          "test",
+          "type"
+        ],
+        "id": "jointest1sectionstesttype",
+        "source_line": 308,
+        "text": "",
+        "block": 23,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest1",
+          "sections",
+          "test",
+          "list"
+        ],
+        "id": "jointest1sectionstestlist",
+        "source_line": 310,
+        "text": "待操作的列表",
+        "block": 23,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest2"
+        ],
+        "id": "jointest2",
+        "source_line": 316,
+        "text": "",
+        "block": 24,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "JoinTest2",
+          "material"
+        ],
+        "id": "jointest2material",
+        "source_line": 317,
+        "text": "",
+        "block": 24,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest2",
+          "lore"
+        ],
+        "id": "jointest2lore",
+        "source_line": 318,
+        "text": "",
+        "block": 24,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest2",
+          "sections"
+        ],
+        "id": "jointest2sections",
+        "source_line": 321,
+        "text": "",
+        "block": 24,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest2",
+          "sections",
+          "test"
+        ],
+        "id": "jointest2sectionstest",
+        "source_line": 322,
+        "text": "",
+        "block": 24,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest2",
+          "sections",
+          "test",
+          "type"
+        ],
+        "id": "jointest2sectionstesttype",
+        "source_line": 323,
+        "text": "",
+        "block": 24,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest2",
+          "sections",
+          "test",
+          "list"
+        ],
+        "id": "jointest2sectionstestlist",
+        "source_line": 324,
+        "text": "",
+        "block": 24,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest2",
+          "sections",
+          "test",
+          "separator"
+        ],
+        "id": "jointest2sectionstestseparator",
+        "source_line": 331,
+        "text": "分隔符(默认为\", )",
+        "block": 24,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest3"
+        ],
+        "id": "jointest3",
+        "source_line": 332,
+        "text": "",
+        "block": 25,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "JoinTest3",
+          "material"
+        ],
+        "id": "jointest3material",
+        "source_line": 333,
+        "text": "",
+        "block": 25,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest3",
+          "lore"
+        ],
+        "id": "jointest3lore",
+        "source_line": 334,
+        "text": "",
+        "block": 25,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest3",
+          "sections"
+        ],
+        "id": "jointest3sections",
+        "source_line": 337,
+        "text": "",
+        "block": 25,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest3",
+          "sections",
+          "test"
+        ],
+        "id": "jointest3sectionstest",
+        "source_line": 338,
+        "text": "",
+        "block": 25,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest3",
+          "sections",
+          "test",
+          "type"
+        ],
+        "id": "jointest3sectionstesttype",
+        "source_line": 339,
+        "text": "",
+        "block": 25,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest3",
+          "sections",
+          "test",
+          "list"
+        ],
+        "id": "jointest3sectionstestlist",
+        "source_line": 340,
+        "text": "",
+        "block": 25,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest3",
+          "sections",
+          "test",
+          "prefix"
+        ],
+        "id": "jointest3sectionstestprefix",
+        "source_line": 347,
+        "text": "前缀",
+        "block": 25,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest3",
+          "sections",
+          "test",
+          "postfix"
+        ],
+        "id": "jointest3sectionstestpostfix",
+        "source_line": 349,
+        "text": "后缀",
+        "block": 25,
+        "line": 17,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest4"
+        ],
+        "id": "jointest4",
+        "source_line": 350,
+        "text": "",
+        "block": 26,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "JoinTest4",
+          "material"
+        ],
+        "id": "jointest4material",
+        "source_line": 351,
+        "text": "",
+        "block": 26,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest4",
+          "lore"
+        ],
+        "id": "jointest4lore",
+        "source_line": 352,
+        "text": "",
+        "block": 26,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest4",
+          "sections"
+        ],
+        "id": "jointest4sections",
+        "source_line": 355,
+        "text": "",
+        "block": 26,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest4",
+          "sections",
+          "test"
+        ],
+        "id": "jointest4sectionstest",
+        "source_line": 356,
+        "text": "",
+        "block": 26,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest4",
+          "sections",
+          "test",
+          "type"
+        ],
+        "id": "jointest4sectionstesttype",
+        "source_line": 357,
+        "text": "",
+        "block": 26,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest4",
+          "sections",
+          "test",
+          "list"
+        ],
+        "id": "jointest4sectionstestlist",
+        "source_line": 358,
+        "text": "",
+        "block": 26,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest4",
+          "sections",
+          "test",
+          "limit"
+        ],
+        "id": "jointest4sectionstestlimit",
+        "source_line": 365,
+        "text": "限制长度",
+        "block": 26,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest5"
+        ],
+        "id": "jointest5",
+        "source_line": 366,
+        "text": "",
+        "block": 27,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "JoinTest5",
+          "material"
+        ],
+        "id": "jointest5material",
+        "source_line": 367,
+        "text": "",
+        "block": 27,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest5",
+          "lore"
+        ],
+        "id": "jointest5lore",
+        "source_line": 368,
+        "text": "",
+        "block": 27,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest5",
+          "sections"
+        ],
+        "id": "jointest5sections",
+        "source_line": 371,
+        "text": "",
+        "block": 27,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest5",
+          "sections",
+          "test"
+        ],
+        "id": "jointest5sectionstest",
+        "source_line": 372,
+        "text": "",
+        "block": 27,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest5",
+          "sections",
+          "test",
+          "type"
+        ],
+        "id": "jointest5sectionstesttype",
+        "source_line": 373,
+        "text": "",
+        "block": 27,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest5",
+          "sections",
+          "test",
+          "list"
+        ],
+        "id": "jointest5sectionstestlist",
+        "source_line": 374,
+        "text": "",
+        "block": 27,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest5",
+          "sections",
+          "test",
+          "limit"
+        ],
+        "id": "jointest5sectionstestlimit",
+        "source_line": 380,
+        "text": "",
+        "block": 27,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest5",
+          "sections",
+          "test",
+          "truncated"
+        ],
+        "id": "jointest5sectionstesttruncated",
+        "source_line": 382,
+        "text": "超过长度的部分用该符号代替",
+        "block": 27,
+        "line": 16,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest6"
+        ],
+        "id": "jointest6",
+        "source_line": 383,
+        "text": "",
+        "block": 28,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "JoinTest6",
+          "material"
+        ],
+        "id": "jointest6material",
+        "source_line": 384,
+        "text": "",
+        "block": 28,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest6",
+          "lore"
+        ],
+        "id": "jointest6lore",
+        "source_line": 385,
+        "text": "",
+        "block": 28,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest6",
+          "sections"
+        ],
+        "id": "jointest6sections",
+        "source_line": 388,
+        "text": "",
+        "block": 28,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest6",
+          "sections",
+          "test"
+        ],
+        "id": "jointest6sectionstest",
+        "source_line": 389,
+        "text": "",
+        "block": 28,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest6",
+          "sections",
+          "test",
+          "type"
+        ],
+        "id": "jointest6sectionstesttype",
+        "source_line": 390,
+        "text": "",
+        "block": 28,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest6",
+          "sections",
+          "test",
+          "list"
+        ],
+        "id": "jointest6sectionstestlist",
+        "source_line": 391,
+        "text": "",
+        "block": 28,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest6",
+          "sections",
+          "test",
+          "transform"
+        ],
+        "id": "jointest6sectionstesttransform",
+        "source_line": 403,
+        "text": "对列表中的每个元素进行一定操作\nthis.it代表当前元素\nthis.index代表当前序号(0代表第一个, 1代表第二个, 以此类推)\nthis.player代表玩家\nthis.vars(String string)用于解析节点\nList<String> this.list代表节点中的list",
+        "block": 28,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest7"
+        ],
+        "id": "jointest7",
+        "source_line": 406,
+        "text": "",
+        "block": 29,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "JoinTest7",
+          "material"
+        ],
+        "id": "jointest7material",
+        "source_line": 407,
+        "text": "",
+        "block": 29,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest7",
+          "lore"
+        ],
+        "id": "jointest7lore",
+        "source_line": 408,
+        "text": "",
+        "block": 29,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest7",
+          "sections"
+        ],
+        "id": "jointest7sections",
+        "source_line": 418,
+        "text": "",
+        "block": 29,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest7",
+          "sections",
+          "test"
+        ],
+        "id": "jointest7sectionstest",
+        "source_line": 419,
+        "text": "",
+        "block": 29,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest7",
+          "sections",
+          "test",
+          "type"
+        ],
+        "id": "jointest7sectionstesttype",
+        "source_line": 420,
+        "text": "",
+        "block": 29,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest7",
+          "sections",
+          "test",
+          "list"
+        ],
+        "id": "jointest7sectionstestlist",
+        "source_line": 421,
+        "text": "",
+        "block": 29,
+        "line": 16,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest7",
+          "sections",
+          "test",
+          "separator"
+        ],
+        "id": "jointest7sectionstestseparator",
+        "source_line": 427,
+        "text": "像下面这样写分隔符、前缀和后缀\n即可达到调用多行lore的效果",
+        "block": 29,
+        "line": 20,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest7",
+          "sections",
+          "test",
+          "prefix"
+        ],
+        "id": "jointest7sectionstestprefix",
+        "source_line": 428,
+        "text": "",
+        "block": 29,
+        "line": 23,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest7",
+          "sections",
+          "test",
+          "postfix"
+        ],
+        "id": "jointest7sectionstestpostfix",
+        "source_line": 429,
+        "text": "",
+        "block": 29,
+        "line": 24,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest8"
+        ],
+        "id": "jointest8",
+        "source_line": 431,
+        "text": "等概率不重复词条",
+        "block": 30,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "JoinTest8",
+          "material"
+        ],
+        "id": "jointest8material",
+        "source_line": 432,
+        "text": "",
+        "block": 30,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest8",
+          "lore"
+        ],
+        "id": "jointest8lore",
+        "source_line": 433,
+        "text": "",
+        "block": 30,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest8",
+          "sections"
+        ],
+        "id": "jointest8sections",
+        "source_line": 436,
+        "text": "",
+        "block": 30,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest8",
+          "sections",
+          "test"
+        ],
+        "id": "jointest8sectionstest",
+        "source_line": 437,
+        "text": "",
+        "block": 30,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest8",
+          "sections",
+          "test",
+          "type"
+        ],
+        "id": "jointest8sectionstesttype",
+        "source_line": 438,
+        "text": "",
+        "block": 30,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest8",
+          "sections",
+          "test",
+          "list"
+        ],
+        "id": "jointest8sectionstestlist",
+        "source_line": 439,
+        "text": "",
+        "block": 30,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest8",
+          "sections",
+          "test",
+          "limit"
+        ],
+        "id": "jointest8sectionstestlimit",
+        "source_line": 449,
+        "text": "限制最多出3条",
+        "block": 30,
+        "line": 19,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest8",
+          "sections",
+          "test",
+          "shuffled"
+        ],
+        "id": "jointest8sectionstestshuffled",
+        "source_line": 451,
+        "text": "是否打乱顺序",
+        "block": 30,
+        "line": 21,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest8",
+          "sections",
+          "test",
+          "separator"
+        ],
+        "id": "jointest8sectionstestseparator",
+        "source_line": 454,
+        "text": "像下面这样写分隔符、前缀和后缀\n即可达到调用多行lore的效果",
+        "block": 30,
+        "line": 23,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest8",
+          "sections",
+          "test",
+          "prefix"
+        ],
+        "id": "jointest8sectionstestprefix",
+        "source_line": 455,
+        "text": "",
+        "block": 30,
+        "line": 26,
+        "heading": false
+      },
+      {
+        "path": [
+          "JoinTest8",
+          "sections",
+          "test",
+          "postfix"
+        ],
+        "id": "jointest8sectionstestpostfix",
+        "source_line": 456,
+        "text": "",
+        "block": 30,
+        "line": 27,
+        "heading": false
+      },
+      {
+        "path": [
+          "GaussianTest"
+        ],
+        "id": "gaussiantest",
+        "source_line": 457,
+        "text": "",
+        "block": 31,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "GaussianTest",
+          "material"
+        ],
+        "id": "gaussiantestmaterial",
+        "source_line": 458,
+        "text": "",
+        "block": 31,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "GaussianTest",
+          "lore"
+        ],
+        "id": "gaussiantestlore",
+        "source_line": 459,
+        "text": "",
+        "block": 31,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "GaussianTest",
+          "sections"
+        ],
+        "id": "gaussiantestsections",
+        "source_line": 463,
+        "text": "",
+        "block": 31,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "GaussianTest",
+          "sections",
+          "test"
+        ],
+        "id": "gaussiantestsectionstest",
+        "source_line": 464,
+        "text": "",
+        "block": 31,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "GaussianTest",
+          "sections",
+          "test",
+          "type"
+        ],
+        "id": "gaussiantestsectionstesttype",
+        "source_line": 465,
+        "text": "",
+        "block": 31,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "GaussianTest",
+          "sections",
+          "test",
+          "base"
+        ],
+        "id": "gaussiantestsectionstestbase",
+        "source_line": 467,
+        "text": "基础数值",
+        "block": 31,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "GaussianTest",
+          "sections",
+          "test",
+          "spread"
+        ],
+        "id": "gaussiantestsectionstestspread",
+        "source_line": 469,
+        "text": "浮动单位",
+        "block": 31,
+        "line": 12,
+        "heading": false
+      },
+      {
+        "path": [
+          "GaussianTest",
+          "sections",
+          "test",
+          "maxSpread"
+        ],
+        "id": "gaussiantestsectionstestmaxspread",
+        "source_line": 471,
+        "text": "浮动范围上限",
+        "block": 31,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "GaussianTest",
+          "sections",
+          "test",
+          "fixed"
+        ],
+        "id": "gaussiantestsectionstestfixed",
+        "source_line": 473,
+        "text": "取整位数(默认为1)",
+        "block": 31,
+        "line": 16,
+        "heading": false
+      },
+      {
+        "path": [
+          "GaussianTest",
+          "sections",
+          "test",
+          "min"
+        ],
+        "id": "gaussiantestsectionstestmin",
+        "source_line": 475,
+        "text": "数值下限",
+        "block": 31,
+        "line": 18,
+        "heading": false
+      },
+      {
+        "path": [
+          "GaussianTest",
+          "sections",
+          "test",
+          "max"
+        ],
+        "id": "gaussiantestsectionstestmax",
+        "source_line": 477,
+        "text": "数值上限",
+        "block": 31,
+        "line": 20,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest1"
+        ],
+        "id": "repeattest1",
+        "source_line": 479,
+        "text": "不使用js的操作形式",
+        "block": 32,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "RepeatTest1",
+          "material"
+        ],
+        "id": "repeattest1material",
+        "source_line": 480,
+        "text": "",
+        "block": 32,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest1",
+          "lore"
+        ],
+        "id": "repeattest1lore",
+        "source_line": 481,
+        "text": "",
+        "block": 32,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest1",
+          "sections"
+        ],
+        "id": "repeattest1sections",
+        "source_line": 484,
+        "text": "",
+        "block": 32,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest1",
+          "sections",
+          "repeat1"
+        ],
+        "id": "repeattest1sectionsrepeat1",
+        "source_line": 485,
+        "text": "",
+        "block": 32,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest1",
+          "sections",
+          "repeat1",
+          "type"
+        ],
+        "id": "repeattest1sectionsrepeat1type",
+        "source_line": 486,
+        "text": "",
+        "block": 32,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest1",
+          "sections",
+          "repeat1",
+          "content"
+        ],
+        "id": "repeattest1sectionsrepeat1content",
+        "source_line": 487,
+        "text": "",
+        "block": 32,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest1",
+          "sections",
+          "repeat1",
+          "repeat"
+        ],
+        "id": "repeattest1sectionsrepeat1repeat",
+        "source_line": 488,
+        "text": "",
+        "block": 32,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest1",
+          "sections",
+          "repeat2"
+        ],
+        "id": "repeattest1sectionsrepeat2",
+        "source_line": 489,
+        "text": "",
+        "block": 32,
+        "line": 12,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest1",
+          "sections",
+          "repeat2",
+          "type"
+        ],
+        "id": "repeattest1sectionsrepeat2type",
+        "source_line": 490,
+        "text": "",
+        "block": 32,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest1",
+          "sections",
+          "repeat2",
+          "content"
+        ],
+        "id": "repeattest1sectionsrepeat2content",
+        "source_line": 491,
+        "text": "",
+        "block": 32,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest1",
+          "sections",
+          "repeat2",
+          "repeat"
+        ],
+        "id": "repeattest1sectionsrepeat2repeat",
+        "source_line": 492,
+        "text": "",
+        "block": 32,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest1",
+          "sections",
+          "number"
+        ],
+        "id": "repeattest1sectionsnumber",
+        "source_line": 493,
+        "text": "",
+        "block": 32,
+        "line": 16,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest1",
+          "sections",
+          "number",
+          "type"
+        ],
+        "id": "repeattest1sectionsnumbertype",
+        "source_line": 494,
+        "text": "",
+        "block": 32,
+        "line": 17,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest1",
+          "sections",
+          "number",
+          "min"
+        ],
+        "id": "repeattest1sectionsnumbermin",
+        "source_line": 495,
+        "text": "",
+        "block": 32,
+        "line": 18,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest1",
+          "sections",
+          "number",
+          "max"
+        ],
+        "id": "repeattest1sectionsnumbermax",
+        "source_line": 496,
+        "text": "",
+        "block": 32,
+        "line": 19,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest1",
+          "sections",
+          "number",
+          "fixed"
+        ],
+        "id": "repeattest1sectionsnumberfixed",
+        "source_line": 497,
+        "text": "",
+        "block": 32,
+        "line": 20,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest2"
+        ],
+        "id": "repeattest2",
+        "source_line": 499,
+        "text": "使用js的操作形式",
+        "block": 33,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "RepeatTest2",
+          "material"
+        ],
+        "id": "repeattest2material",
+        "source_line": 500,
+        "text": "",
+        "block": 33,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest2",
+          "lore"
+        ],
+        "id": "repeattest2lore",
+        "source_line": 501,
+        "text": "",
+        "block": 33,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest2",
+          "sections"
+        ],
+        "id": "repeattest2sections",
+        "source_line": 504,
+        "text": "",
+        "block": 33,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest2",
+          "sections",
+          "repeat"
+        ],
+        "id": "repeattest2sectionsrepeat",
+        "source_line": 505,
+        "text": "",
+        "block": 33,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest2",
+          "sections",
+          "repeat",
+          "type"
+        ],
+        "id": "repeattest2sectionsrepeattype",
+        "source_line": 506,
+        "text": "",
+        "block": 33,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest2",
+          "sections",
+          "repeat",
+          "content"
+        ],
+        "id": "repeattest2sectionsrepeatcontent",
+        "source_line": 507,
+        "text": "",
+        "block": 33,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest2",
+          "sections",
+          "repeat",
+          "repeat"
+        ],
+        "id": "repeattest2sectionsrepeatrepeat",
+        "source_line": 508,
+        "text": "",
+        "block": 33,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest2",
+          "sections",
+          "repeat",
+          "prefix"
+        ],
+        "id": "repeattest2sectionsrepeatprefix",
+        "source_line": 509,
+        "text": "",
+        "block": 33,
+        "line": 12,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest2",
+          "sections",
+          "repeat",
+          "transform"
+        ],
+        "id": "repeattest2sectionsrepeattransform",
+        "source_line": 515,
+        "text": "对列表中的每个元素进行一定操作\nthis.it代表content\nthis.index代表当前序号(0代表第一个, 1代表第二个, 以此类推)\nthis.player代表玩家\nthis.vars(String string)用于解析节点",
+        "block": 33,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest2",
+          "sections",
+          "number"
+        ],
+        "id": "repeattest2sectionsnumber",
+        "source_line": 521,
+        "text": "",
+        "block": 33,
+        "line": 24,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest2",
+          "sections",
+          "number",
+          "type"
+        ],
+        "id": "repeattest2sectionsnumbertype",
+        "source_line": 522,
+        "text": "",
+        "block": 33,
+        "line": 25,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest2",
+          "sections",
+          "number",
+          "min"
+        ],
+        "id": "repeattest2sectionsnumbermin",
+        "source_line": 523,
+        "text": "",
+        "block": 33,
+        "line": 26,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest2",
+          "sections",
+          "number",
+          "max"
+        ],
+        "id": "repeattest2sectionsnumbermax",
+        "source_line": 524,
+        "text": "",
+        "block": 33,
+        "line": 27,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest2",
+          "sections",
+          "number",
+          "fixed"
+        ],
+        "id": "repeattest2sectionsnumberfixed",
+        "source_line": 525,
+        "text": "",
+        "block": 33,
+        "line": 28,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest3"
+        ],
+        "id": "repeattest3",
+        "source_line": 526,
+        "text": "",
+        "block": 34,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "RepeatTest3",
+          "material"
+        ],
+        "id": "repeattest3material",
+        "source_line": 527,
+        "text": "",
+        "block": 34,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest3",
+          "lore"
+        ],
+        "id": "repeattest3lore",
+        "source_line": 528,
+        "text": "",
+        "block": 34,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest3",
+          "sections"
+        ],
+        "id": "repeattest3sections",
+        "source_line": 531,
+        "text": "",
+        "block": 34,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest3",
+          "sections",
+          "repeat"
+        ],
+        "id": "repeattest3sectionsrepeat",
+        "source_line": 532,
+        "text": "",
+        "block": 34,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest3",
+          "sections",
+          "repeat",
+          "type"
+        ],
+        "id": "repeattest3sectionsrepeattype",
+        "source_line": 533,
+        "text": "",
+        "block": 34,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest3",
+          "sections",
+          "repeat",
+          "content"
+        ],
+        "id": "repeattest3sectionsrepeatcontent",
+        "source_line": 534,
+        "text": "",
+        "block": 34,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest3",
+          "sections",
+          "repeat",
+          "repeat"
+        ],
+        "id": "repeattest3sectionsrepeatrepeat",
+        "source_line": 535,
+        "text": "",
+        "block": 34,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest3",
+          "sections",
+          "repeat",
+          "separator"
+        ],
+        "id": "repeattest3sectionsrepeatseparator",
+        "source_line": 538,
+        "text": "像下面这样写分隔符、前缀和后缀\n即可达到调用多行lore的效果",
+        "block": 34,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest3",
+          "sections",
+          "repeat",
+          "prefix"
+        ],
+        "id": "repeattest3sectionsrepeatprefix",
+        "source_line": 539,
+        "text": "",
+        "block": 34,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest3",
+          "sections",
+          "repeat",
+          "postfix"
+        ],
+        "id": "repeattest3sectionsrepeatpostfix",
+        "source_line": 540,
+        "text": "",
+        "block": 34,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest4"
+        ],
+        "id": "repeattest4",
+        "source_line": 541,
+        "text": "",
+        "block": 35,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "RepeatTest4",
+          "material"
+        ],
+        "id": "repeattest4material",
+        "source_line": 542,
+        "text": "",
+        "block": 35,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest4",
+          "lore"
+        ],
+        "id": "repeattest4lore",
+        "source_line": 543,
+        "text": "",
+        "block": 35,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest4",
+          "sections"
+        ],
+        "id": "repeattest4sections",
+        "source_line": 546,
+        "text": "",
+        "block": 35,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest4",
+          "sections",
+          "repeat"
+        ],
+        "id": "repeattest4sectionsrepeat",
+        "source_line": 547,
+        "text": "",
+        "block": 35,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest4",
+          "sections",
+          "repeat",
+          "type"
+        ],
+        "id": "repeattest4sectionsrepeattype",
+        "source_line": 548,
+        "text": "",
+        "block": 35,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest4",
+          "sections",
+          "repeat",
+          "content"
+        ],
+        "id": "repeattest4sectionsrepeatcontent",
+        "source_line": 549,
+        "text": "",
+        "block": 35,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest4",
+          "sections",
+          "repeat",
+          "repeat"
+        ],
+        "id": "repeattest4sectionsrepeatrepeat",
+        "source_line": 550,
+        "text": "",
+        "block": 35,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "RepeatTest4",
+          "sections",
+          "repeat",
+          "separator"
+        ],
+        "id": "repeattest4sectionsrepeatseparator",
+        "source_line": 551,
+        "text": "",
+        "block": 35,
+        "line": 11,
+        "heading": false
+      },
+      {
+        "path": [
+          "WeightJoinTest"
+        ],
+        "id": "weightjointest",
+        "source_line": 553,
+        "text": "",
+        "block": 36,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "WeightJoinTest",
+          "material"
+        ],
+        "id": "weightjointestmaterial",
+        "source_line": 554,
+        "text": "",
+        "block": 36,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "WeightJoinTest",
+          "lore"
+        ],
+        "id": "weightjointestlore",
+        "source_line": 555,
+        "text": "",
+        "block": 36,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "WeightJoinTest",
+          "sections"
+        ],
+        "id": "weightjointestsections",
+        "source_line": 557,
+        "text": "",
+        "block": 36,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "WeightJoinTest",
+          "sections",
+          "test"
+        ],
+        "id": "weightjointestsectionstest",
+        "source_line": 558,
+        "text": "",
+        "block": 36,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "WeightJoinTest",
+          "sections",
+          "test",
+          "type"
+        ],
+        "id": "weightjointestsectionstesttype",
+        "source_line": 559,
+        "text": "",
+        "block": 36,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "WeightJoinTest",
+          "sections",
+          "test",
+          "list"
+        ],
+        "id": "weightjointestsectionstestlist",
+        "source_line": 560,
+        "text": "",
+        "block": 36,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "WeightJoinTest",
+          "sections",
+          "test",
+          "amount"
+        ],
+        "id": "weightjointestsectionstestamount",
+        "source_line": 571,
+        "text": "选取3条",
+        "block": 36,
+        "line": 18,
+        "heading": false
+      },
+      {
+        "path": [
+          "WeightJoinTest",
+          "sections",
+          "test",
+          "shuffled"
+        ],
+        "id": "weightjointestsectionstestshuffled",
+        "source_line": 573,
+        "text": "是否打乱顺序",
+        "block": 36,
+        "line": 20,
+        "heading": false
+      },
+      {
+        "path": [
+          "WeightJoinTest",
+          "sections",
+          "test",
+          "separator"
+        ],
+        "id": "weightjointestsectionstestseparator",
+        "source_line": 576,
+        "text": "像下面这样写分隔符、前缀和后缀\n即可达到调用多行lore的效果",
+        "block": 36,
+        "line": 22,
+        "heading": false
+      },
+      {
+        "path": [
+          "WeightJoinTest",
+          "sections",
+          "test",
+          "prefix"
+        ],
+        "id": "weightjointestsectionstestprefix",
+        "source_line": 577,
+        "text": "",
+        "block": 36,
+        "line": 25,
+        "heading": false
+      },
+      {
+        "path": [
+          "WeightJoinTest",
+          "sections",
+          "test",
+          "postfix"
+        ],
+        "id": "weightjointestsectionstestpostfix",
+        "source_line": 578,
+        "text": "",
+        "block": 36,
+        "line": 26,
+        "heading": false
+      },
+      {
+        "path": [
+          "WeightDeclareTest"
+        ],
+        "id": "weightdeclaretest",
+        "source_line": 580,
+        "text": "",
+        "block": 37,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "WeightDeclareTest",
+          "material"
+        ],
+        "id": "weightdeclaretestmaterial",
+        "source_line": 581,
+        "text": "",
+        "block": 37,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "WeightDeclareTest",
+          "lore"
+        ],
+        "id": "weightdeclaretestlore",
+        "source_line": 582,
+        "text": "",
+        "block": 37,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "WeightDeclareTest",
+          "sections"
+        ],
+        "id": "weightdeclaretestsections",
+        "source_line": 591,
+        "text": "",
+        "block": 37,
+        "line": 12,
+        "heading": false
+      },
+      {
+        "path": [
+          "WeightDeclareTest",
+          "sections",
+          "test"
+        ],
+        "id": "weightdeclaretestsectionstest",
+        "source_line": 592,
+        "text": "",
+        "block": 37,
+        "line": 13,
+        "heading": false
+      },
+      {
+        "path": [
+          "WeightDeclareTest",
+          "sections",
+          "test",
+          "type"
+        ],
+        "id": "weightdeclaretestsectionstesttype",
+        "source_line": 593,
+        "text": "",
+        "block": 37,
+        "line": 14,
+        "heading": false
+      },
+      {
+        "path": [
+          "WeightDeclareTest",
+          "sections",
+          "test",
+          "key"
+        ],
+        "id": "weightdeclaretestsectionstestkey",
+        "source_line": 594,
+        "text": "",
+        "block": 37,
+        "line": 15,
+        "heading": false
+      },
+      {
+        "path": [
+          "WeightDeclareTest",
+          "sections",
+          "test",
+          "list"
+        ],
+        "id": "weightdeclaretestsectionstestlist",
+        "source_line": 595,
+        "text": "",
+        "block": 37,
+        "line": 16,
+        "heading": false
+      },
+      {
+        "path": [
+          "WeightDeclareTest",
+          "sections",
+          "test",
+          "amount"
+        ],
+        "id": "weightdeclaretestsectionstestamount",
+        "source_line": 605,
+        "text": "选取3条",
+        "block": 37,
+        "line": 25,
+        "heading": false
+      },
+      {
+        "path": [
+          "WeightDeclareTest",
+          "sections",
+          "test",
+          "shuffled"
+        ],
+        "id": "weightdeclaretestsectionstestshuffled",
+        "source_line": 607,
+        "text": "是否打乱顺序",
+        "block": 37,
+        "line": 27,
+        "heading": false
+      },
+      {
+        "path": [
+          "WeightDeclareTest",
+          "sections",
+          "test",
+          "putelse"
+        ],
+        "id": "weightdeclaretestsectionstestputelse",
+        "source_line": 609,
+        "text": "是否记录未选中的值",
+        "block": 37,
+        "line": 29,
+        "heading": false
+      },
+      {
+        "path": [
+          "DurabilityTest1"
+        ],
+        "id": "durabilitytest1",
+        "source_line": 611,
+        "text": "",
+        "block": 38,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "DurabilityTest1",
+          "material"
+        ],
+        "id": "durabilitytest1material",
+        "source_line": 612,
+        "text": "",
+        "block": 38,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "DurabilityTest1",
+          "name"
+        ],
+        "id": "durabilitytest1name",
+        "source_line": 614,
+        "text": "发包显示(创造模式不解析)",
+        "block": 38,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "DurabilityTest1",
+          "lore"
+        ],
+        "id": "durabilitytest1lore",
+        "source_line": 615,
+        "text": "",
+        "block": 38,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "DurabilityTest1",
+          "options"
+        ],
+        "id": "durabilitytest1options",
+        "source_line": 617,
+        "text": "",
+        "block": 38,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "DurabilityTest1",
+          "options",
+          "durability"
+        ],
+        "id": "durabilitytest1optionsdurability",
+        "source_line": 619,
+        "text": "不填写maxdurability则默认最大耐久等于耐久",
+        "block": 38,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "DurabilityTest2"
+        ],
+        "id": "durabilitytest2",
+        "source_line": 621,
+        "text": "手持火焰弹右键点燃TNT时触发",
+        "block": 39,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "DurabilityTest2",
+          "material"
+        ],
+        "id": "durabilitytest2material",
+        "source_line": 623,
+        "text": "1.12.2版本应该改成FIREBALL(即火焰弹)",
+        "block": 39,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "DurabilityTest2",
+          "name"
+        ],
+        "id": "durabilitytest2name",
+        "source_line": 624,
+        "text": "",
+        "block": 39,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "DurabilityTest2",
+          "lore"
+        ],
+        "id": "durabilitytest2lore",
+        "source_line": 625,
+        "text": "",
+        "block": 39,
+        "line": 6,
+        "heading": false
+      },
+      {
+        "path": [
+          "DurabilityTest2",
+          "options"
+        ],
+        "id": "durabilitytest2options",
+        "source_line": 627,
+        "text": "",
+        "block": 39,
+        "line": 8,
+        "heading": false
+      },
+      {
+        "path": [
+          "DurabilityTest2",
+          "options",
+          "durability"
+        ],
+        "id": "durabilitytest2optionsdurability",
+        "source_line": 628,
+        "text": "",
+        "block": 39,
+        "line": 9,
+        "heading": false
+      },
+      {
+        "path": [
+          "DurabilityTest2",
+          "options",
+          "itembreak"
+        ],
+        "id": "durabilitytest2optionsitembreak",
+        "source_line": 630,
+        "text": "耐久耗尽后物品不损坏",
+        "block": 39,
+        "line": 10,
+        "heading": false
+      },
+      {
+        "path": [
+          "DurabilityTest3"
+        ],
+        "id": "durabilitytest3",
+        "source_line": 631,
+        "text": "",
+        "block": 40,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "DurabilityTest3",
+          "material"
+        ],
+        "id": "durabilitytest3material",
+        "source_line": 632,
+        "text": "",
+        "block": 40,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "DurabilityTest3",
+          "name"
+        ],
+        "id": "durabilitytest3name",
+        "source_line": 633,
+        "text": "",
+        "block": 40,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "DurabilityTest3",
+          "options"
+        ],
+        "id": "durabilitytest3options",
+        "source_line": 634,
+        "text": "",
+        "block": 40,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "DurabilityTest3",
+          "options",
+          "durability"
+        ],
+        "id": "durabilitytest3optionsdurability",
+        "source_line": 636,
+        "text": "耐久",
+        "block": 40,
+        "line": 5,
+        "heading": false
+      },
+      {
+        "path": [
+          "DurabilityTest3",
+          "options",
+          "maxdurability"
+        ],
+        "id": "durabilitytest3optionsmaxdurability",
+        "source_line": 638,
+        "text": "最大耐久",
+        "block": 40,
+        "line": 7,
+        "heading": false
+      },
+      {
+        "path": [
+          "DurabilityTest4"
+        ],
+        "id": "durabilitytest4",
+        "source_line": 639,
+        "text": "",
+        "block": 41,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "DurabilityTest4",
+          "material"
+        ],
+        "id": "durabilitytest4material",
+        "source_line": 640,
+        "text": "",
+        "block": 41,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "DurabilityTest4",
+          "name"
+        ],
+        "id": "durabilitytest4name",
+        "source_line": 641,
+        "text": "",
+        "block": 41,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "DurabilityTest4",
+          "options"
+        ],
+        "id": "durabilitytest4options",
+        "source_line": 642,
+        "text": "",
+        "block": 41,
+        "line": 4,
+        "heading": false
+      },
+      {
+        "path": [
+          "DurabilityTest4",
+          "options",
+          "durability"
+        ],
+        "id": "durabilitytest4optionsdurability",
+        "source_line": 643,
+        "text": "",
+        "block": 41,
+        "line": 5,
+        "heading": false
+      }
+    ]
+  },
+  {
+    "file": "configuration/expansions/customaction.md",
+    "title": "Expansions/CustomAction.js",
+    "source_kind": "imported-configuration",
+    "source_sha256": "f936d43eceadf4a2c3dadf575600d8e6581c124f4bc0b3f48a44faa33b98b201",
+    "translation_review": "reviewed",
+    "anchors": []
+  },
+  {
+    "file": "configuration/expansions/customsection.md",
+    "title": "Expansions/CustomSection.js",
+    "source_kind": "imported-configuration",
+    "source_sha256": "f936d43eceadf4a2c3dadf575600d8e6581c124f4bc0b3f48a44faa33b98b201",
+    "translation_review": "reviewed",
+    "anchors": []
+  },
+  {
+    "file": "configuration/expansions/defaultsection.md",
+    "title": "Expansions/DefaultSection.js",
+    "source_kind": "imported-configuration",
+    "source_sha256": "f936d43eceadf4a2c3dadf575600d8e6581c124f4bc0b3f48a44faa33b98b201",
+    "translation_review": "reviewed",
+    "anchors": []
+  },
+  {
+    "file": "configuration/expansions/exampleexpansion.md",
+    "title": "Expansions/ExampleExpansion.js",
+    "source_kind": "imported-configuration",
+    "source_sha256": "f936d43eceadf4a2c3dadf575600d8e6581c124f4bc0b3f48a44faa33b98b201",
+    "translation_review": "reviewed",
+    "anchors": []
+  },
+  {
+    "file": "configuration/expansions/customitemeditor.md",
+    "title": "Expansions/CustomItemEditor.js",
+    "source_kind": "imported-configuration",
+    "source_sha256": "f936d43eceadf4a2c3dadf575600d8e6581c124f4bc0b3f48a44faa33b98b201",
+    "translation_review": "reviewed",
+    "anchors": []
+  },
+  {
+    "file": "configuration/index.md",
+    "title": "配置文件",
+    "source_kind": "imported-configuration",
+    "source_sha256": "f936d43eceadf4a2c3dadf575600d8e6581c124f4bc0b3f48a44faa33b98b201",
+    "translation_review": "reviewed",
+    "anchors": []
+  }
+]

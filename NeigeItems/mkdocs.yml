@@ -1,0 +1,27 @@
+site_name: NeigeItems 中文资料
+nav:
+- 插件说明: index.md
+- 配置文件（1.22.0）:
+  - 配置索引: configuration/index.md
+  - config.yml: configuration/config.md
+  - 脚本（Scripts/）:
+    - ExampleScript.js: configuration/scripts/examplescript.md
+    - ItemTime.js: configuration/scripts/itemtime.md
+  - 函数（Functions/）:
+    - ExampleFunction.yml: configuration/functions/examplefunction.md
+  - 物品动作（ItemActions/）:
+    - lottery_box.yml: configuration/itemactions/lottery_box.md
+    - ExampleAction.yml: configuration/itemactions/exampleaction.md
+  - GlobalSections（GlobalSections/）:
+    - ExampleSection.yml: configuration/globalsections/examplesection.md
+  - 物品包（ItemPacks/）:
+    - ExampleItemPack.yml: configuration/itempacks/exampleitempack.md
+  - 物品（Items/）:
+    - lottery_box.yml: configuration/items/lottery_box.md
+    - ExampleItem.yml: configuration/items/exampleitem.md
+  - 扩展脚本（Expansions/）:
+    - CustomAction.js: configuration/expansions/customaction.md
+    - CustomSection.js: configuration/expansions/customsection.md
+    - DefaultSection.js: configuration/expansions/defaultsection.md
+    - ExampleExpansion.js: configuration/expansions/exampleexpansion.md
+    - CustomItemEditor.js: configuration/expansions/customitemeditor.md

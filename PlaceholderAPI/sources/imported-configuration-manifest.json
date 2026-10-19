@@ -1,0 +1,131 @@
+[
+  {
+    "file": "configuration/config.md",
+    "title": "config.yml",
+    "source_kind": "imported-configuration",
+    "source_sha256": "3bdc852908ebc3cda7f3cb456594782c3b5e77f44d8884d04f3532ef7a1a0312",
+    "translation_review": "reviewed",
+    "anchors": [
+      {
+        "path": [
+          "check_updates"
+        ],
+        "id": "check_updates",
+        "source_line": 12,
+        "text": "PlaceholderAPI\n版本：2.12.3\n作者：extended_clip\n贡献者：https://github.com/PlaceholderAPI/PlaceholderAPI/graphs/contributors\n问题反馈：https://github.com/PlaceholderAPI/PlaceholderAPI/issues\n扩展：https://placeholderapi.com/ecloud\nWiki：https://wiki.placeholderapi.com/\nDiscord：https://helpch.at/discord\n如果使用组件替换功能的插件出现性能问题，或显示效果不太正常，\n可将 use_adventure_provided_replacer 改为 true，切换到 adventure 自身提供的替换器。\n此插件默认不提供任何占位符。\n下载占位符：/papi ecloud",
+        "block": 0,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "cloud_enabled"
+        ],
+        "id": "cloud_enabled",
+        "source_line": 13,
+        "text": "",
+        "block": 1,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "cloud_sorting"
+        ],
+        "id": "cloud_sorting",
+        "source_line": 14,
+        "text": "",
+        "block": 2,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "boolean"
+        ],
+        "id": "boolean",
+        "source_line": 15,
+        "text": "",
+        "block": 3,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "boolean",
+          "true"
+        ],
+        "id": "booleantrue",
+        "source_line": 16,
+        "text": "",
+        "block": 3,
+        "line": 2,
+        "heading": false
+      },
+      {
+        "path": [
+          "boolean",
+          "false"
+        ],
+        "id": "booleanfalse",
+        "source_line": 17,
+        "text": "",
+        "block": 3,
+        "line": 3,
+        "heading": false
+      },
+      {
+        "path": [
+          "date_format"
+        ],
+        "id": "date_format",
+        "source_line": 18,
+        "text": "",
+        "block": 4,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "detect_malicious_expansions"
+        ],
+        "id": "detect_malicious_expansions",
+        "source_line": 19,
+        "text": "",
+        "block": 5,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "use_adventure_provided_replacer"
+        ],
+        "id": "use_adventure_provided_replacer",
+        "source_line": 20,
+        "text": "",
+        "block": 6,
+        "line": 1,
+        "heading": true
+      },
+      {
+        "path": [
+          "debug"
+        ],
+        "id": "debug",
+        "source_line": 21,
+        "text": "",
+        "block": 7,
+        "line": 1,
+        "heading": true
+      }
+    ]
+  },
+  {
+    "file": "configuration/index.md",
+    "title": "配置文件",
+    "source_kind": "imported-configuration",
+    "source_sha256": "3bdc852908ebc3cda7f3cb456594782c3b5e77f44d8884d04f3532ef7a1a0312",
+    "translation_review": "reviewed",
+    "anchors": []
+  }
+]

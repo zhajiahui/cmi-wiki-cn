@@ -1,0 +1,29 @@
+site_name: MythicMobs 中文资料
+nav:
+- 插件说明: index.md
+- 配置文件（5.13.0-SNAPSHOT-1abf9862）:
+  - 配置索引: configuration/index.md
+  - placeholders.yml: configuration/placeholders.md
+  - stats.yml: configuration/stats.md
+  - 技能（skills/）:
+    - ExampleSkills.yml: configuration/skills/exampleskills.md
+  - 掉落表（droptables/）:
+    - ExampleDropTables.yml: configuration/droptables/exampledroptables.md
+  - 分类配置（config/）:
+    - lang/en-us/mythicmobs.json: configuration/config/lang/en-us/mythicmobs.md
+    - config-spawning.yml: configuration/config/config-spawning.md
+    - config-general.yml: configuration/config/config-general.md
+    - config-items.yml: configuration/config/config-items.md
+    - config-skills.yml: configuration/config/config-skills.md
+    - config-mobs.yml: configuration/config/config-mobs.md
+  - 随机生成（randomspawns/）:
+    - ExampleRandomSpawns.yml: configuration/randomspawns/examplerandomspawns.md
+  - 物品（items/）:
+    - ExampleItems.yml: configuration/items/exampleitems.md
+  - 生物（mobs/）:
+    - ExampleMobs.yml: configuration/mobs/examplemobs.md
+    - VanillaMobs.yml: configuration/mobs/vanillamobs.md
+  - 对话框（dialogs/）:
+    - ExampleDialogs.yml: configuration/dialogs/exampledialogs.md
+  - 物品（Items/）:
+    - 1.yml: configuration/items/1.md
