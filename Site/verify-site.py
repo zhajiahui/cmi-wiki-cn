@@ -92,9 +92,20 @@ for item in table_entries:
     parts=urlsplit(item['location'])
     target=(SITE/parts.path/'index.html').resolve()
     if unquote(parts.fragment) not in anchors[target]:errors.append('Search table-row anchor missing: '+item['location'])
+configuration_entries={item['location']:item for item in search['docs'] if item['location'].startswith('configuration/')}
+configuration_fields=0
+for page in json.loads((ROOT/'CMI/sources/configuration-manifest.json').read_text(encoding='utf-8')):
+    relative=page['file'].removesuffix('.md')+'/'
+    if page['file'].endswith('/index.md'):relative=page['file'].removesuffix('index.md')
+    target=(SITE/relative/'index.html').resolve()
+    for item in page.get('anchors',[]):
+        if item['id'] not in anchors[target]:errors.append('Configuration field anchor missing: '+relative+'#'+item['id'])
+        if not item['heading']:
+            configuration_fields+=1
+            if relative+'#'+item['id'] not in configuration_entries:errors.append('Configuration field not searchable: '+relative+'#'+item['id'])
 for address,project in tab_addresses.items():
     tabs,active=page_tabs[(SITE/address).resolve()]
     if tabs!=['CMI','Residence','Typewriter','Phoenix']:errors.append('Expected four top-level tabs: '+address)
     if active!=project:errors.append('Wrong active project tab: '+address)
-print(json.dumps({'html_pages':len(html_files),'local_references':checked,'search_entries':len(search['docs']),'table_row_entries':len(table_entries),'project_pages':project_pages,'errors':errors},ensure_ascii=False,indent=2))
+print(json.dumps({'html_pages':len(html_files),'local_references':checked,'search_entries':len(search['docs']),'table_row_entries':len(table_entries),'configuration_fields':configuration_fields,'project_pages':project_pages,'errors':errors},ensure_ascii=False,indent=2))
 if errors:sys.exit(1)

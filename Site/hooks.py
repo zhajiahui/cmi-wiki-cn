@@ -64,10 +64,30 @@ def on_config(config):
 TABLE_PAGES={'residence/permissions.md':'permission-','residence/flags.md':'flag-'}
 TABLE_PAGES.update({prefix+'general/permissions.md':'permission-' for project,prefix in PHOENIX_PROJECTS if project in {'MMOItems','MMOCore','MMOInventory','MMOProfiles','BountyHunters'}})
 
+CONFIGURATION_MANIFEST=ROOT/'CMI/sources/configuration-manifest.json'
+
+def configuration_pages():
+    return {row['file']:row for row in json.loads(CONFIGURATION_MANIFEST.read_text(encoding='utf-8'))}
+
 def on_page_content(html,*,page,config,files):
     prefix=TABLE_PAGES.get(page.file.src_uri)
-    if not prefix and '<video ' not in html:return html
+    configuration=configuration_pages().get(page.file.src_uri) if page.file.src_uri.startswith('configuration/') else None
+    if not prefix and not configuration and '<video ' not in html:return html
     soup=BeautifulSoup(html,'html.parser')
+    if configuration:
+        article=soup.new_tag('div')
+        article['class']='cmi-configuration'
+        for node in list(soup.contents):article.append(node.extract())
+        soup.append(article)
+        blocks=article.select('div.highlight pre code')
+        for item in configuration.get('anchors',[]):
+            if item['heading']:continue
+            line=blocks[item['block']].find('a',id=lambda value:value and value.endswith('-'+str(item['line'])))
+            if line is None:raise ValueError('Configuration code anchor missing: '+'.'.join(item['path']))
+            # Material treats span[id] as line wrappers; use an empty anchor instead.
+            anchor=soup.new_tag('a',id=item['id'])
+            anchor['class']='config-key-anchor'
+            line.insert_before(anchor)
     # MkDocs rewrites Markdown image URLs, but leaves raw video attributes alone.
     for media in soup.find_all(['video','source']):
         for attr in ['src','poster']:
@@ -110,6 +130,14 @@ def on_post_build(config):
             description=cells[1].get_text(' ',strip=True)
             segmented='\u200b'.join(jieba.cut(description))
             index['docs'].append({'location':relative+'#'+row['id'],'title':project+' · '+name,'text':'<p><code>'+escape(name)+'</code> '+escape(segmented)+'</p>','tags':[project]})
+    # Keep individual configuration fields searchable after moving prose into YAML comments.
+    for source,configuration in configuration_pages().items():
+        relative=source.removesuffix('index.md') if source.endswith('/index.md') else source.removesuffix('.md')+'/'
+        for item in configuration.get('anchors',[]):
+            if item['heading']:continue
+            name='.'.join(item['path'])
+            description='\u200b'.join(jieba.cut(item['text']))
+            index['docs'].append({'location':relative+'#'+item['id'],'title':'CMI · '+name,'text':'<p><code>'+escape(name)+'</code> '+escape(description)+'</p>','tags':['CMI']})
     path.write_text(json.dumps(index,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
     fix_chinese_search(config.site_dir)
 

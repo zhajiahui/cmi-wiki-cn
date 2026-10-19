@@ -1,21 +1,21 @@
 ---
 title: 配置文件
-source_kind: configuration-comments
+source_kind: configuration-examples
 translation_review: reviewed
 ---
 
 # 配置文件
 
-本节翻译 2026-10-19 提供的 CMI 配置注释，保留配置项名称和注释中的示例。原包未标明 CMI 版本。
+配置文件按原有 YAML 层级展示，中文注释与对应配置项放在一起。代码块右上角可复制当前片段。
 
-页面按文件和配置项排列，不展示服务器的实际设置值。
+示例整理自 2026-10-19 提供的配置，原包未标明 CMI 版本。连接信息、玩家标识和世界示例使用占位符；具体设置以服务器本地文件为准。
 
-| 文件 | 注释说明 |
+| 文件 | 配置内容 |
 | --- | --- |
 | `config.yml` | [主配置](main.md) |
 | `CustomAlias/CustomAlias.yml` | [自定义别名](customalias.md) |
-| `Dialogs/ExampleFirst.yml` | 原文件没有注释，示例中的显示文字已在本地覆盖包中汉化 |
-| `Dialogs/ExampleSecond.yml` | 原文件没有注释，示例中的显示文字已在本地覆盖包中汉化 |
+| `Dialogs/ExampleFirst.yml` | [示例对话一](examplefirst.md) |
+| `Dialogs/ExampleSecond.yml` | [示例对话二](examplesecond.md) |
 | `Kits/Kits.yml` | [礼包](kits.md) |
 | `Settings/Afk.yml` | [暂离与闲置](afk.md) |
 | `Settings/Alias.yml` | [命令别名](alias.md) |
@@ -32,7 +32,7 @@ translation_review: reviewed
 | `Settings/Homes.yml` | [家](homes.md) |
 | `Settings/Modules.yml` | [功能模块](modules.md) |
 | `Settings/ParticleEffects.yml` | [粒子效果](particleeffects.md) |
-| `Settings/PlayTimeRewards.yml` | 原文件为空 |
+| `Settings/PlayTimeRewards.yml` | [在线时长奖励](playtimerewards.md) |
 | `Settings/RandomTeleportations.yml` | [随机传送](randomteleportations.md) |
 | `Settings/Ranks.yml` | [自动晋级](ranks.md) |
 | `Settings/Scavenge.yml` | [物品分解](scavenge.md) |

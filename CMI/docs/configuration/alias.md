@@ -1,6 +1,6 @@
 ---
 title: 命令别名（Alias.yml）
-source_kind: configuration-comments
+source_kind: configuration-examples
 translation_review: reviewed
 source_file: Settings/Alias.yml
 ---
@@ -9,1946 +9,1499 @@ source_file: Settings/Alias.yml
 
 文件：`plugins/CMI/Settings/Alias.yml`
 
-来源：用户提供的配置文件；本文仅收录原注释的中文翻译。
-
-## `Alias`
-
-此插件使用的命令别名。例如返回出生点的原命令为 /cmi spawn<br>
-启用相应别名后，可用 /spawn 返回已设置的出生点<br>
-若与其他插件冲突，在此关闭对应别名，再执行 /cmi reload<br>
-注释显示使用下一行别名时实际执行的命令<br>
-True/false 表示启用或关闭别名<br>
-注意！若要创建预设以外的自定义别名，请在游戏内使用 /cmi aliaseditor<br>
-此文件不接受新增自定义别名；自定义别名使用另一个独立文件
-
-### `Alias.actionbarmsg`
-
-```text
-/cmi actionbarmsg $1-
-```
-
-### `Alias.afk`
-
-```text
-/cmi afk $1-
-```
-
-### `Alias.afkcheck`
-
-```text
-/cmi afkcheck $1-
-```
-
-### `Alias.air`
-
-```text
-/cmi air $1-
-```
-
-### `Alias.alert`
-
-```text
-/cmi alert $1-
-```
-
-### `Alias.aliaseditor`
-
-```text
-/cmi aliaseditor $1-
-```
-
-### `Alias.anvil`
-
-```text
-/cmi anvil $1-
-```
-
-### `Alias.anvilrepaircost`
-
-```text
-/cmi anvilrepaircost $1-
-```
-
-### `Alias.armoreffect`
-
-```text
-/cmi armoreffect $1-
-```
-
-### `Alias.armorstand`
-
-```text
-/cmi armorstand $1-
-```
-
-### `Alias.attachcommand`
-
-```text
-/cmi attachcommand $1-
-```
-
-### `Alias.autorecharge`
-
-```text
-/cmi autorecharge $1-
-```
-
-### `Alias.back`
-
-```text
-/cmi back $1-
-```
-
-### `Alias.balance`
-
-```text
-/cmi balance $1-
-```
-
-### `Alias.baltop`
-
-```text
-/cmi baltop $1-
-```
-
-### `Alias.ban`
-
-```text
-/cmi ban $1-
-```
-
-### `Alias.banlist`
-
-```text
-/cmi banlist $1-
-```
-
-### `Alias.bbroadcast`
-
-```text
-/cmi bbroadcast $1-
-```
-
-### `Alias.blockcycling`
-
-```text
-/cmi blockcycling $1-
-```
-
-### `Alias.blockinfo`
-
-```text
-/cmi blockinfo $1-
-```
-
-### `Alias.blocknbt`
-
-```text
-/cmi blocknbt $1-
-```
-
-### `Alias.book`
-
-```text
-/cmi book $1-
-```
-
-### `Alias.bossbarmsg`
-
-```text
-/cmi bossbarmsg $1-
-```
-
-### `Alias.broadcast`
-
-```text
-/cmi broadcast $1-
-```
-
-### `Alias.burn`
-
-```text
-/cmi burn $1-
-```
-
-### `Alias.cartographytable`
-
-```text
-/cmi cartographytable $1-
-```
-
-### `Alias.charges`
-
-```text
-/cmi charges $1-
-```
-
-### `Alias.chat`
-
-```text
-/cmi chat $1-
-```
-
-### `Alias.chatcolor`
-
-```text
-/cmi chatcolor $1-
-```
-
-### `Alias.chatdelete`
-
-```text
-/cmi chatdelete $1-
-```
-
-### `Alias.checkaccount`
-
-```text
-/cmi checkaccount $1-
-```
-
-### `Alias.checkban`
-
-```text
-/cmi checkban $1-
-```
-
-### `Alias.checkcommand`
-
-```text
-/cmi checkcommand $1-
-```
-
-### `Alias.checkexp`
-
-```text
-/cmi checkexp $1-
-```
-
-### `Alias.checkperm`
-
-```text
-/cmi checkperm $1-
-```
-
-### `Alias.cheque`
-
-```text
-/cmi cheque $1-
-```
-
-### `Alias.clear`
-
-```text
-/cmi clear $1-
-```
-
-### `Alias.clearchat`
-
-```text
-/cmi clearchat $1-
-```
-
-### `Alias.clearender`
-
-```text
-/cmi clearender $1-
-```
-
-### `Alias.colorlimits`
-
-```text
-/cmi colorlimits $1-
-```
-
-### `Alias.colorpicker`
-
-```text
-/cmi colorpicker $1-
-```
-
-### `Alias.colors`
-
-```text
-/cmi colors $1-
-```
-
-### `Alias.compass`
-
-```text
-/cmi compass $1-
-```
-
-### `Alias.condense`
-
-```text
-/cmi condense $1-
-```
-
-### `Alias.counter`
-
-```text
-/cmi counter $1-
-```
-
-### `Alias.cplaytime`
-
-```text
-/cmi cplaytime $1-
-```
-
-### `Alias.ctellraw`
-
-```text
-/cmi ctellraw $1-
-```
-
-### `Alias.ctext`
-
-```text
-/cmi ctext $1-
-```
-
-### `Alias.cuff`
-
-```text
-/cmi cuff $1-
-```
-
-### `Alias.uncuff`
-
-```text
-/cmi cuff false $1-
-```
-
-### `Alias.customrecipe`
-
-```text
-/cmi customrecipe $1-
-```
-
-### `Alias.database`
-
-```text
-/cmi database $1-
-```
-
-### `Alias.dback`
-
-```text
-/cmi dback $1-
-```
-
-### `Alias.dialogs`
-
-```text
-/cmi dialogs $1-
-```
-
-### `Alias.disableenchant`
-
-```text
-/cmi disableenchant $1-
-```
-
-### `Alias.dispose`
-
-```text
-/cmi dispose $1-
-```
-
-### `Alias.distance`
-
-```text
-/cmi distance $1-
-```
-
-### `Alias.donate`
-
-```text
-/cmi donate $1-
-```
-
-### `Alias.down`
-
-```text
-/cmi down $1-
-```
-
-### `Alias.dsign`
-
-```text
-/cmi dsign $1-
-```
-
-### `Alias.dye`
-
-```text
-/cmi dye $1-
-```
-
-### `Alias.editctext`
-
-```text
-/cmi editctext $1-
-```
-
-### `Alias.editlocale`
-
-```text
-/cmi editlocale $1-
-```
-
-### `Alias.editplaytime`
-
-```text
-/cmi editplaytime $1-
-```
-
-### `Alias.editwarnings`
-
-```text
-/cmi editwarnings $1-
-```
-
-### `Alias.editwarp`
-
-```text
-/cmi editwarp $1-
-```
-
-### `Alias.effect`
-
-```text
-/cmi effect $1-
-```
-
-### `Alias.emojipicker`
-
-```text
-/cmi emojipicker $1-
-```
-
-### `Alias.enchant`
-
-```text
-/cmi enchant $1-
-```
-
-### `Alias.ender`
-
-```text
-/cmi ender $1-
-```
-
-### `Alias.endgateway`
-
-```text
-/cmi endgateway $1-
-```
-
-### `Alias.entityinfo`
-
-```text
-/cmi entityinfo $1-
-```
-
-### `Alias.entitynbt`
-
-```text
-/cmi entitynbt $1-
-```
-
-### `Alias.exp`
-
-```text
-/cmi exp $1-
-```
-
-### `Alias.ext`
-
-```text
-/cmi ext $1-
-```
-
-### `Alias.falldistance`
-
-```text
-/cmi falldistance $1-
-```
-
-### `Alias.feed`
-
-```text
-/cmi feed $1-
-```
-
-### `Alias.findbiome`
-
-```text
-/cmi findbiome $1-
-```
-
-### `Alias.fixchunk`
-
-```text
-/cmi fixchunk $1-
-```
-
-### `Alias.flightcharge`
-
-```text
-/cmi flightcharge $1-
-```
-
-### `Alias.recharge`
-
-```text
-/cmi flightcharge recharge $1-
-```
-
-### `Alias.fly`
-
-```text
-/cmi fly $1-
-```
-
-### `Alias.flyc`
-
-```text
-/cmi flyc $1-
-```
-
-### `Alias.flyspeed`
-
-```text
-/cmi flyspeed $1-
-```
-
-### `Alias.gamerule`
-
-```text
-/cmi gamerule $1-
-```
-
-### `Alias.generateworth`
-
-```text
-/cmi generateworth $1-
-```
-
-### `Alias.getbook`
-
-```text
-/cmi getbook $1-
-```
-
-### `Alias.giftpet`
-
-```text
-/cmi giftpet $1-
-```
-
-### `Alias.give`
-
-```text
-/cmi give $1-
-```
-
-### `Alias.giveall`
-
-```text
-/cmi giveall $1-
-```
-
-### `Alias.glow`
-
-```text
-/cmi glow $1-
-```
-
-### `Alias.gm`
-
-```text
-/cmi gm $1-
-```
-
-### `Alias.gmc`
-
-```text
-/cmi gm creative $1-
-```
-
-### `Alias.gms`
-
-```text
-/cmi gm survival $1-
-```
-
-### `Alias.gmsp`
-
-```text
-/cmi gm spectator $1-
-```
-
-### `Alias.gma`
-
-```text
-/cmi gm adventure $1-
-```
-
-### `Alias.god`
-
-```text
-/cmi god $1-
-```
-
-### `Alias.grindstone`
-
-```text
-/cmi grindstone $1-
-```
-
-### `Alias.groundclean`
-
-```text
-/cmi groundclean $1-
-```
-
-### `Alias.haspermission`
-
-```text
-/cmi haspermission $1-
-```
-
-### `Alias.hat`
-
-```text
-/cmi hat $1-
-```
-
-### `Alias.head`
-
-```text
-/cmi head $1-
-```
-
-### `Alias.heal`
-
-```text
-/cmi heal $1-
-```
-
-### `Alias.helpop`
-
-```text
-/cmi helpop $1-
-```
-
-### `Alias.hideflags`
-
-```text
-/cmi hideflags $1-
-```
-
-### `Alias.hologram`
-
-```text
-/cmi hologram $1-
-```
-
-### `Alias.hologrampages`
-
-```text
-/cmi hologrampages $1-
-```
-
-### `Alias.home`
-
-```text
-/cmi home $1-
-```
-
-### `Alias.homes`
-
-```text
-/cmi homes $1-
-```
-
-### `Alias.hunger`
-
-```text
-/cmi hunger $1-
-```
-
-### `Alias.ic`
-
-```text
-/cmi ic $1-
-```
-
-### `Alias.ifoffline`
-
-```text
-/cmi ifoffline $1-
-```
-
-### `Alias.ifonline`
-
-```text
-/cmi ifonline $1-
-```
-
-### `Alias.ignore`
-
-```text
-/cmi ignore $1-
-```
-
-### `Alias.importfrom`
-
-```text
-/cmi importfrom $1-
-```
-
-### `Alias.importoldusers`
-
-```text
-/cmi importoldusers $1-
-```
-
-### `Alias.info`
-
-```text
-/cmi info $1-
-```
-
-### `Alias.inv`
-
-```text
-/cmi inv $1-
-```
-
-### `Alias.invcheck`
-
-```text
-/cmi invcheck $1-
-```
-
-### `Alias.invlist`
-
-```text
-/cmi invlist $1-
-```
-
-### `Alias.invload`
-
-```text
-/cmi invload $1-
-```
-
-### `Alias.invremove`
-
-```text
-/cmi invremove $1-
-```
-
-### `Alias.invremoveall`
-
-```text
-/cmi invremoveall $1-
-```
-
-### `Alias.invsave`
-
-```text
-/cmi invsave $1-
-```
-
-### `Alias.ipban`
-
-```text
-/cmi ipban $1-
-```
-
-### `Alias.ipbanlist`
-
-```text
-/cmi ipbanlist $1-
-```
-
-### `Alias.item`
-
-```text
-/cmi item $1-
-```
-
-### `Alias.itemcmdata`
-
-```text
-/cmi itemcmdata $1-
-```
-
-### `Alias.itemframe`
-
-```text
-/cmi itemframe $1-
-```
-
-### `Alias.iteminfo`
-
-```text
-/cmi iteminfo $1-
-```
-
-### `Alias.itemlore`
-
-```text
-/cmi itemlore $1-
-```
-
-### `Alias.itemname`
-
-```text
-/cmi itemname $1-
-```
-
-### `Alias.itemnbt`
-
-```text
-/cmi itemnbt $1-
-```
-
-### `Alias.jail`
-
-```text
-/cmi jail $1-
-```
-
-### `Alias.jailedit`
-
-```text
-/cmi jailedit $1-
-```
-
-### `Alias.jaillist`
-
-```text
-/cmi jaillist $1-
-```
-
-### `Alias.jump`
-
-```text
-/cmi jump $1-
-```
-
-### `Alias.kick`
-
-```text
-/cmi kick $1-
-```
-
-### `Alias.kill`
-
-```text
-/cmi kill $1-
-```
-
-### `Alias.killall`
-
-```text
-/cmi killall $1-
-```
-
-### `Alias.kit`
-
-```text
-/cmi kit $1-
-```
-
-### `Alias.kitpreview`
-
-```text
-/cmi kit -preview $1-
-```
-
-### `Alias.kitopen`
-
-```text
-/cmi kit -open $1-
-```
-
-### `Alias.kitcdreset`
-
-```text
-/cmi kitcdreset $1-
-```
-
-### `Alias.kiteditor`
-
-```text
-/cmi kiteditor $1-
-```
-
-### `Alias.kitusagereset`
-
-```text
-/cmi kitusagereset $1-
-```
-
-### `Alias.lastonline`
-
-```text
-/cmi lastonline $1-
-```
-
-### `Alias.launch`
-
-```text
-/cmi launch $1-
-```
-
-### `Alias.lfix`
-
-```text
-/cmi lfix $1-
-```
-
-### `Alias.list`
-
-```text
-/cmi list $1-
-```
-
-### `Alias.lockip`
-
-```text
-/cmi lockip $1-
-```
-
-### `Alias.loom`
-
-```text
-/cmi loom $1-
-```
-
-### `Alias.mail`
-
-```text
-/cmi mail $1-
-```
-
-### `Alias.mailall`
-
-```text
-/cmi mailall $1-
-```
-
-### `Alias.maintenance`
-
-```text
-/cmi maintenance $1-
-```
-
-### `Alias.maxhp`
-
-```text
-/cmi maxhp $1-
-```
-
-### `Alias.maxplayers`
-
-```text
-/cmi maxplayers $1-
-```
-
-### `Alias.me`
-
-```text
-/cmi me $1-
-```
-
-### `Alias.merchant`
-
-```text
-/cmi merchant $1-
-```
-
-### `Alias.migratedatabase`
-
-```text
-/cmi migratedatabase $1-
-```
-
-### `Alias.mirror`
-
-```text
-/cmi mirror $1-
-```
-
-### `Alias.mobhead`
-
-```text
-/cmi mobhead $1-
-```
-
-### `Alias.money`
-
-```text
-/cmi money $1-
-```
-
-### `Alias.more`
-
-```text
-/cmi more $1-
-```
-
-### `Alias.msg`
-
-```text
-/cmi msg $1-
-```
-
-### `Alias.mute`
-
-```text
-/cmi mute $1-
-```
-
-### `Alias.mutechat`
-
-```text
-/cmi mutechat $1-
-```
-
-### `Alias.nameplate`
-
-```text
-/cmi nameplate $1-
-```
-
-### `Alias.near`
-
-```text
-/cmi near $1-
-```
-
-### `Alias.nick`
-
-```text
-/cmi nick $1-
-```
-
-### `Alias.notarget`
-
-```text
-/cmi notarget $1-
-```
-
-### `Alias.note`
-
-```text
-/cmi note $1-
-```
-
-### `Alias.openbook`
-
-```text
-/cmi openbook $1-
-```
-
-### `Alias.oplist`
-
-```text
-/cmi oplist $1-
-```
-
-### `Alias.options`
-
-```text
-/cmi options $1-
-```
-
-### `Alias.panimation`
-
-```text
-/cmi panimation $1-
-```
-
-### `Alias.particlepicker`
-
-```text
-/cmi particlepicker $1-
-```
-
-### `Alias.patrol`
-
-```text
-/cmi patrol $1-
-```
-
-### `Alias.pay`
-
-```text
-/cmi pay $1-
-```
-
-### `Alias.ping`
-
-```text
-/cmi ping $1-
-```
-
-### `Alias.placeholders`
-
-```text
-/cmi placeholders $1-
-```
-
-### `Alias.playercollision`
-
-```text
-/cmi playercollision $1-
-```
-
-### `Alias.playtime`
-
-```text
-/cmi playtime $1-
-```
-
-### `Alias.playtimetop`
-
-```text
-/cmi playtimetop $1-
-```
-
-### `Alias.point`
-
-```text
-/cmi point $1-
-```
-
-### `Alias.portals`
-
-```text
-/cmi portals $1-
-```
-
-### `Alias.pos`
-
-```text
-/cmi pos $1-
-```
-
-### `Alias.preview`
-
-```text
-/cmi preview $1-
-```
-
-### `Alias.prewards`
-
-```text
-/cmi prewards $1-
-```
-
-### `Alias.ptime`
-
-```text
-/cmi ptime $1-
-```
-
-### `Alias.purge`
-
-```text
-/cmi purge $1-
-```
-
-### `Alias.pweather`
-
-```text
-/cmi pweather $1-
-```
-
-### `Alias.rankdown`
-
-```text
-/cmi rankdown $1-
-```
-
-### `Alias.rankinfo`
-
-```text
-/cmi rankinfo $1-
-```
-
-### `Alias.ranklist`
-
-```text
-/cmi ranklist $1-
-```
-
-### `Alias.rankset`
-
-```text
-/cmi rankset $1-
-```
-
-### `Alias.rankup`
-
-```text
-/cmi rankup $1-
-```
-
-### `Alias.realname`
-
-```text
-/cmi realname $1-
-```
-
-### `Alias.recipe`
-
-```text
-/cmi recipe $1-
-```
-
-### `Alias.releasepet`
-
-```text
-/cmi releasepet $1-
-```
-
-### `Alias.reload`
-
-```text
-/cmi reload $1-
-```
-
-### `Alias.removehome`
-
-```text
-/cmi removehome $1-
-```
-
-### `Alias.removeuser`
-
-```text
-/cmi removeuser $1-
-```
-
-### `Alias.removewarp`
-
-```text
-/cmi removewarp $1-
-```
-
-### `Alias.repair`
-
-```text
-/cmi repair $1-
-```
-
-### `Alias.repaircost`
-
-```text
-/cmi repaircost $1-
-```
-
-### `Alias.replaceblock`
-
-```text
-/cmi replaceblock $1-
-```
-
-### `Alias.reply`
-
-```text
-/cmi reply $1-
-```
-
-### `Alias.resetback`
-
-```text
-/cmi resetback $1-
-```
-
-### `Alias.resetdbfields`
-
-```text
-/cmi resetdbfields $1-
-```
-
-### `Alias.ride`
-
-```text
-/cmi ride $1-
-```
-
-### `Alias.rt`
-
-```text
-/cmi rt $1-
-```
-
-### `Alias.sameip`
-
-```text
-/cmi sameip $1-
-```
-
-### `Alias.saturation`
-
-```text
-/cmi saturation $1-
-```
-
-### `Alias.saveall`
-
-```text
-/cmi saveall $1-
-```
-
-### `Alias.saveditems`
-
-```text
-/cmi saveditems $1-
-```
-
-### `Alias.sc`
-
-```text
-/cmi sc $1-
-```
-
-### `Alias.scale`
-
-```text
-/cmi scale $1-
-```
-
-### `Alias.scan`
-
-```text
-/cmi scan $1-
-```
-
-### `Alias.scavenge`
-
-```text
-/cmi scavenge $1-
-```
-
-### `Alias.schedule`
-
-```text
-/cmi schedule $1-
-```
-
-### `Alias.se`
-
-```text
-/cmi se $1-
-```
-
-### `Alias.search`
-
-```text
-/cmi search $1-
-```
-
-### `Alias.seen`
-
-```text
-/cmi seen $1-
-```
-
-### `Alias.select`
-
-```text
-/cmi select $1-
-```
-
-### `Alias.sell`
-
-```text
-/cmi sell $1-
-```
-
-### `Alias.sendall`
-
-```text
-/cmi sendall $1-
-```
-
-### `Alias.server`
-
-```text
-/cmi server $1-
-```
-
-### `Alias.serverlinks`
-
-```text
-/cmi serverlinks $1-
-```
-
-### `Alias.serverlist`
-
-```text
-/cmi serverlist $1-
-```
-
-### `Alias.servertime`
-
-```text
-/cmi servertime $1-
-```
-
-### `Alias.setenchantworth`
-
-```text
-/cmi setenchantworth $1-
-```
-
-### `Alias.setfirstspawn`
-
-```text
-/cmi setfirstspawn $1-
-```
-
-### `Alias.sethome`
-
-```text
-/cmi sethome $1-
-```
-
-### `Alias.setmotd`
-
-```text
-/cmi setmotd $1-
-```
-
-### `Alias.setrt`
-
-```text
-/cmi setrt $1-
-```
-
-### `Alias.setspawn`
-
-```text
-/cmi setspawn $1-
-```
-
-### `Alias.setwarp`
-
-```text
-/cmi setwarp $1-
-```
-
-### `Alias.setworth`
-
-```text
-/cmi setworth $1-
-```
-
-### `Alias.shadowmute`
-
-```text
-/cmi shadowmute $1-
-```
-
-### `Alias.shakeitoff`
-
-```text
-/cmi shakeitoff $1-
-```
-
-### `Alias.shoot`
-
-```text
-/cmi shoot $1-
-```
-
-### `Alias.silence`
-
-```text
-/cmi silence $1-
-```
-
-### `Alias.silentchest`
-
-```text
-/cmi silentchest $1-
-```
-
-### `Alias.sit`
-
-```text
-/cmi sit $1-
-```
-
-### `Alias.skin`
-
-```text
-/cmi skin $1-
-```
-
-### `Alias.smite`
-
-```text
-/cmi smite $1-
-```
-
-### `Alias.smithingtable`
-
-```text
-/cmi smithingtable $1-
-```
-
-### `Alias.solve`
-
-```text
-/cmi solve $1-
-```
-
-### `Alias.sound`
-
-```text
-/cmi sound $1-
-```
-
-### `Alias.spawn`
-
-```text
-/cmi spawn $1-
-```
-
-### `Alias.spawner`
-
-```text
-/cmi spawner $1-
-```
-
-### `Alias.spawnereditor`
-
-```text
-/cmi spawnereditor $1-
-```
-
-### `Alias.spawnmob`
-
-```text
-/cmi spawnmob $1-
-```
-
-### `Alias.speed`
-
-```text
-/cmi speed $1-
-```
-
-### `Alias.staffmsg`
-
-```text
-/cmi staffmsg $1-
-```
-
-### `Alias.stats`
-
-```text
-/cmi stats $1-
-```
-
-### `Alias.statsedit`
-
-```text
-/cmi statsedit $1-
-```
-
-### `Alias.status`
-
-```text
-/cmi status $1-
-```
-
-### `Alias.stonecutter`
-
-```text
-/cmi stonecutter $1-
-```
-
-### `Alias.sudo`
-
-```text
-/cmi sudo $1-
-```
-
-### `Alias.suicide`
-
-```text
-/cmi suicide $1-
-```
-
-### `Alias.switchplayerdata`
-
-```text
-/cmi switchplayerdata $1-
-```
-
-### `Alias.tablistupdate`
-
-```text
-/cmi tablistupdate $1-
-```
-
-### `Alias.tempban`
-
-```text
-/cmi tempban $1-
-```
-
-### `Alias.tempipban`
-
-```text
-/cmi tempipban $1-
-```
-
-### `Alias.tfly`
-
-```text
-/cmi tfly $1-
-```
-
-### `Alias.tgod`
-
-```text
-/cmi tgod $1-
-```
-
-### `Alias.time`
-
-```text
-/cmi time $1-
-```
-
-### `Alias.day`
-
-```text
-/cmi time day $1-
-```
-
-### `Alias.night`
-
-```text
-/cmi time night $1-
-```
-
-### `Alias.morning`
-
-```text
-/cmi time morning $1-
-```
-
-### `Alias.dusk`
-
-```text
-/cmi time dusk $1-
-```
-
-### `Alias.titlemsg`
-
-```text
-/cmi titlemsg $1-
-```
-
-### `Alias.toast`
-
-```text
-/cmi toast $1-
-```
-
-### `Alias.top`
-
-```text
-/cmi top $1-
-```
-
-### `Alias.tp`
-
-```text
-/cmi tp $1-
-```
-
-### `Alias.tpa`
-
-```text
-/cmi tpa $1-
-```
-
-### `Alias.tpaall`
-
-```text
-/cmi tpaall $1-
-```
-
-### `Alias.tpaccept`
-
-```text
-/cmi tpaccept $1-
-```
-
-### `Alias.tpahere`
-
-```text
-/cmi tpahere $1-
-```
-
-### `Alias.tpall`
-
-```text
-/cmi tpall $1-
-```
-
-### `Alias.tpallworld`
-
-```text
-/cmi tpallworld $1-
-```
-
-### `Alias.tpbypass`
-
-```text
-/cmi tpbypass $1-
-```
-
-### `Alias.tpdeny`
-
-```text
-/cmi tpdeny $1-
-```
-
-### `Alias.tphere`
-
-```text
-/cmi tphere $1-
-```
-
-### `Alias.tpo`
-
-```text
-/cmi tpo $1-
-```
-
-### `Alias.tpohere`
-
-```text
-/cmi tpohere $1-
-```
-
-### `Alias.tpopos`
-
-```text
-/cmi tpopos $1-
-```
-
-### `Alias.tppos`
-
-```text
-/cmi tppos $1-
-```
-
-### `Alias.tps`
-
-```text
-/cmi tps $1-
-```
-
-### `Alias.tree`
-
-```text
-/cmi tree $1-
-```
-
-### `Alias.trim`
-
-```text
-/cmi trim $1-
-```
-
-### `Alias.unban`
-
-```text
-/cmi unban $1-
-```
-
-### `Alias.unbreakable`
-
-```text
-/cmi unbreakable $1-
-```
-
-### `Alias.uncondense`
-
-```text
-/cmi uncondense $1-
-```
-
-### `Alias.unjail`
-
-```text
-/cmi unjail $1-
-```
-
-### `Alias.unloadchunks`
-
-```text
-/cmi unloadchunks $1-
-```
-
-### `Alias.unmute`
-
-```text
-/cmi unmute $1-
-```
-
-### `Alias.unmutechat`
-
-```text
-/cmi unmutechat $1-
-```
-
-### `Alias.usermeta`
-
-```text
-/cmi usermeta $1-
-```
-
-### `Alias.util`
-
-```text
-/cmi util $1-
-```
-
-### `Alias.vanish`
-
-```text
-/cmi vanish $1-
-```
-
-### `Alias.vanishedit`
-
-```text
-/cmi vanishedit $1-
-```
-
-### `Alias.version`
-
-```text
-/cmi version $1-
-```
-
-### `Alias.viewdistance`
-
-```text
-/cmi viewdistance $1-
-```
-
-### `Alias.voteedit`
-
-```text
-/cmi voteedit $1-
-```
-
-### `Alias.votes`
-
-```text
-/cmi votes $1-
-```
-
-### `Alias.votetop`
-
-```text
-/cmi votetop $1-
-```
-
-### `Alias.walkspeed`
-
-```text
-/cmi walkspeed $1-
-```
-
-### `Alias.warn`
-
-```text
-/cmi warn $1-
-```
-
-### `Alias.warnings`
-
-```text
-/cmi warnings $1-
-```
-
-### `Alias.warp`
-
-```text
-/cmi warp $1-
-```
-
-### `Alias.warpgroups`
-
-```text
-/cmi warpgroups $1-
-```
-
-### `Alias.weather`
-
-```text
-/cmi weather $1-
-```
-
-### `Alias.sun`
-
-```text
-/cmi weather sun $1-
-```
-
-### `Alias.rain`
-
-```text
-/cmi weather rain $1-
-```
-
-### `Alias.storm`
-
-```text
-/cmi weather storm $1-
-```
-
-### `Alias.workbench`
-
-```text
-/cmi workbench $1-
-```
-
-### `Alias.world`
-
-```text
-/cmi world $1-
-```
-
-### `Alias.worth`
-
-```text
-/cmi worth $1-
-```
-
-### `Alias.worthlist`
-
-```text
-/cmi worthlist $1-
+## `Alias` { #alias }
+
+```yaml title="Alias.yml · Alias（1/15）"
+# 此插件使用的命令别名。例如返回出生点的原命令为 /cmi spawn
+# 启用相应别名后，可用 /spawn 返回已设置的出生点
+# 若与其他插件冲突，在此关闭对应别名，再执行 /cmi reload
+# 注释显示使用下一行别名时实际执行的命令
+# True/false 表示启用或关闭别名
+#
+# 注意！若要创建预设以外的自定义别名，请在游戏内使用 /cmi aliaseditor
+# 此文件不接受新增自定义别名；自定义别名使用另一个独立文件
+
+Alias:
+  # /cmi actionbarmsg $1-
+  actionbarmsg:
+    Enabled: true
+    Tab: true
+  # /cmi afk $1-
+  afk:
+    Enabled: true
+    Tab: true
+  # /cmi afkcheck $1-
+  afkcheck:
+    Enabled: true
+    Tab: true
+  # /cmi air $1-
+  air:
+    Enabled: true
+    Tab: true
+  # /cmi alert $1-
+  alert:
+    Enabled: true
+    Tab: true
+  # /cmi aliaseditor $1-
+  aliaseditor:
+    Enabled: true
+    Tab: true
+  # /cmi anvil $1-
+  anvil:
+    Enabled: true
+    Tab: true
+  # /cmi anvilrepaircost $1-
+  anvilrepaircost:
+    Enabled: true
+    Tab: true
+  # /cmi armoreffect $1-
+  armoreffect:
+    Enabled: true
+    Tab: true
+  # /cmi armorstand $1-
+  armorstand:
+    Enabled: true
+    Tab: true
+  # /cmi attachcommand $1-
+  attachcommand:
+    Enabled: true
+    Tab: true
+  powertool:
+    Enabled: true
+    Tab: true
+  # /cmi autorecharge $1-
+  autorecharge:
+    Enabled: true
+    Tab: true
+  # /cmi back $1-
+  back:
+    Enabled: true
+    Tab: true
+  cback:
+    Enabled: false
+    Tab: true
+  # /cmi balance $1-
+  balance:
+    Enabled: true
+    Tab: true
+  bal:
+    Enabled: false
+    Tab: true
+  # /cmi baltop $1-
+  baltop:
+    Enabled: true
+    Tab: true
+  # /cmi ban $1-
+  ban:
+    Enabled: true
+    Tab: true
+  # /cmi banlist $1-
+  banlist:
+    Enabled: true
+    Tab: true
+  # /cmi bbroadcast $1-
+  bbroadcast:
+    Enabled: true
+    Tab: true
+  # /cmi blockcycling $1-
+  blockcycling:
+    Enabled: true
+    Tab: true
+  # /cmi blockinfo $1-
+  blockinfo:
+    Enabled: true
+    Tab: true
+```
+
+```yaml title="Alias.yml · Alias（2/15）"
+Alias:
+  # /cmi blocknbt $1-
+  blocknbt:
+    Enabled: true
+    Tab: true
+  # /cmi book $1-
+  book:
+    Enabled: true
+    Tab: true
+  # /cmi bossbarmsg $1-
+  bossbarmsg:
+    Enabled: true
+    Tab: true
+  # /cmi broadcast $1-
+  broadcast:
+    Enabled: true
+    Tab: true
+  bc:
+    Enabled: false
+    Tab: true
+  # /cmi burn $1-
+  burn:
+    Enabled: true
+    Tab: true
+  # /cmi cartographytable $1-
+  cartographytable:
+    Enabled: true
+    Tab: true
+  # /cmi charges $1-
+  charges:
+    Enabled: true
+    Tab: true
+  # /cmi chat $1-
+  chat:
+    Enabled: true
+    Tab: true
+  # /cmi chatcolor $1-
+  chatcolor:
+    Enabled: true
+    Tab: true
+  # /cmi chatdelete $1-
+  chatdelete:
+    Enabled: true
+    Tab: true
+  # /cmi checkaccount $1-
+  checkaccount:
+    Enabled: true
+    Tab: true
+  # /cmi checkban $1-
+  checkban:
+    Enabled: true
+    Tab: true
+  # /cmi checkcommand $1-
+  checkcommand:
+    Enabled: true
+    Tab: true
+  # /cmi checkexp $1-
+  checkexp:
+    Enabled: true
+    Tab: true
+  # /cmi checkperm $1-
+  checkperm:
+    Enabled: true
+    Tab: true
+  # /cmi cheque $1-
+  cheque:
+    Enabled: true
+    Tab: true
+  # /cmi clear $1-
+  clear:
+    Enabled: true
+    Tab: true
+  ci:
+    Enabled: false
+    Tab: true
+  # /cmi clearchat $1-
+  clearchat:
+    Enabled: true
+    Tab: true
+  cc:
+    Enabled: false
+    Tab: true
+  # /cmi clearender $1-
+  clearender:
+    Enabled: true
+    Tab: true
+  # /cmi colorlimits $1-
+  colorlimits:
+    Enabled: true
+    Tab: true
+  # /cmi colorpicker $1-
+  colorpicker:
+    Enabled: true
+    Tab: true
+  # /cmi colors $1-
+  colors:
+    Enabled: true
+    Tab: true
+```
+
+```yaml title="Alias.yml · Alias（3/15）"
+Alias:
+  # /cmi compass $1-
+  compass:
+    Enabled: true
+    Tab: true
+  # /cmi condense $1-
+  condense:
+    Enabled: true
+    Tab: true
+  compact:
+    Enabled: false
+    Tab: true
+  # /cmi counter $1-
+  counter:
+    Enabled: true
+    Tab: true
+  # /cmi cplaytime $1-
+  cplaytime:
+    Enabled: true
+    Tab: true
+  # /cmi ctellraw $1-
+  ctellraw:
+    Enabled: true
+    Tab: true
+  # /cmi ctext $1-
+  ctext:
+    Enabled: true
+    Tab: true
+  # /cmi cuff $1-
+  cuff:
+    Enabled: true
+    Tab: true
+  # /cmi cuff false $1-
+  uncuff:
+    Enabled: true
+    Tab: true
+  freeze:
+    Enabled: false
+    Tab: true
+  # /cmi customrecipe $1-
+  customrecipe:
+    Enabled: true
+    Tab: true
+  # /cmi database $1-
+  database:
+    Enabled: true
+    Tab: true
+  # /cmi dback $1-
+  dback:
+    Enabled: true
+    Tab: true
+  # /cmi dialogs $1-
+  dialogs:
+    Enabled: true
+    Tab: true
+  # /cmi disableenchant $1-
+  disableenchant:
+    Enabled: true
+    Tab: true
+  # /cmi dispose $1-
+  dispose:
+    Enabled: true
+    Tab: true
+  trash:
+    Enabled: false
+    Tab: true
+  # /cmi distance $1-
+  distance:
+    Enabled: true
+    Tab: true
+  # /cmi donate $1-
+  donate:
+    Enabled: true
+    Tab: true
+  # /cmi down $1-
+  down:
+    Enabled: true
+    Tab: true
+  # /cmi dsign $1-
+  dsign:
+    Enabled: true
+    Tab: true
+  # /cmi dye $1-
+  dye:
+    Enabled: true
+    Tab: true
+  # /cmi editctext $1-
+  editctext:
+    Enabled: true
+    Tab: true
+  # /cmi editlocale $1-
+  editlocale:
+    Enabled: true
+    Tab: true
+  # /cmi editplaytime $1-
+  editplaytime:
+    Enabled: true
+    Tab: true
+```
+
+```yaml title="Alias.yml · Alias（4/15）"
+Alias:
+  # /cmi editwarnings $1-
+  editwarnings:
+    Enabled: true
+    Tab: true
+  # /cmi editwarp $1-
+  editwarp:
+    Enabled: true
+    Tab: true
+  # /cmi effect $1-
+  effect:
+    Enabled: true
+    Tab: true
+  # /cmi emojipicker $1-
+  emojipicker:
+    Enabled: true
+    Tab: true
+  # /cmi enchant $1-
+  enchant:
+    Enabled: true
+    Tab: true
+  # /cmi ender $1-
+  ender:
+    Enabled: true
+    Tab: true
+  ce:
+    Enabled: false
+    Tab: true
+  ec:
+    Enabled: false
+    Tab: true
+  cend:
+    Enabled: false
+    Tab: true
+  enderchest:
+    Enabled: false
+    Tab: true
+  oe:
+    Enabled: false
+    Tab: true
+  echest:
+    Enabled: false
+    Tab: true
+  # /cmi endgateway $1-
+  endgateway:
+    Enabled: true
+    Tab: true
+  # /cmi entityinfo $1-
+  entityinfo:
+    Enabled: true
+    Tab: true
+  # /cmi entitynbt $1-
+  entitynbt:
+    Enabled: true
+    Tab: true
+  # /cmi exp $1-
+  exp:
+    Enabled: true
+    Tab: true
+  # /cmi ext $1-
+  ext:
+    Enabled: true
+    Tab: true
+  # /cmi falldistance $1-
+  falldistance:
+    Enabled: true
+    Tab: true
+  # /cmi feed $1-
+  feed:
+    Enabled: true
+    Tab: true
+  # /cmi findbiome $1-
+  findbiome:
+    Enabled: true
+    Tab: true
+  # /cmi fixchunk $1-
+  fixchunk:
+    Enabled: true
+    Tab: true
+  # /cmi flightcharge $1-
+  flightcharge:
+    Enabled: true
+    Tab: true
+  # /cmi flightcharge recharge $1-
+  recharge:
+    Enabled: true
+    Tab: true
+  fcharge:
+    Enabled: true
+    Tab: true
+  # /cmi fly $1-
+  fly:
+    Enabled: true
+    Tab: true
+  # /cmi flyc $1-
+  flyc:
+    Enabled: true
+    Tab: true
+```
+
+```yaml title="Alias.yml · Alias（5/15）"
+Alias:
+  # /cmi flyspeed $1-
+  flyspeed:
+    Enabled: true
+    Tab: true
+  fspeed:
+    Enabled: false
+    Tab: true
+  # /cmi gamerule $1-
+  gamerule:
+    Enabled: true
+    Tab: true
+  # /cmi generateworth $1-
+  generateworth:
+    Enabled: true
+    Tab: true
+  # /cmi getbook $1-
+  getbook:
+    Enabled: true
+    Tab: true
+  # /cmi giftpet $1-
+  giftpet:
+    Enabled: true
+    Tab: true
+  # /cmi give $1-
+  give:
+    Enabled: true
+    Tab: true
+  # /cmi giveall $1-
+  giveall:
+    Enabled: true
+    Tab: true
+  # /cmi glow $1-
+  glow:
+    Enabled: true
+    Tab: true
+  # /cmi gm $1-
+  gm:
+    Enabled: true
+    Tab: true
+  gamemode:
+    Enabled: false
+    Tab: true
+  # /cmi gm creative $1-
+  gmc:
+    Enabled: false
+    Tab: true
+  # /cmi gm survival $1-
+  gms:
+    Enabled: false
+    Tab: true
+  # /cmi gm spectator $1-
+  gmsp:
+    Enabled: false
+    Tab: true
+  # /cmi gm adventure $1-
+  gma:
+    Enabled: false
+    Tab: true
+  # /cmi god $1-
+  god:
+    Enabled: true
+    Tab: true
+  # /cmi grindstone $1-
+  grindstone:
+    Enabled: true
+    Tab: true
+  # /cmi groundclean $1-
+  groundclean:
+    Enabled: true
+    Tab: true
+  # /cmi haspermission $1-
+  haspermission:
+    Enabled: true
+    Tab: true
+  # /cmi hat $1-
+  hat:
+    Enabled: true
+    Tab: true
+  # /cmi head $1-
+  head:
+    Enabled: true
+    Tab: true
+  # /cmi heal $1-
+  heal:
+    Enabled: true
+    Tab: true
+  # /cmi helpop $1-
+  helpop:
+    Enabled: true
+    Tab: true
+  # /cmi hideflags $1-
+  hideflags:
+    Enabled: true
+    Tab: true
+  # /cmi hologram $1-
+  hologram:
+    Enabled: true
+    Tab: true
+```
+
+```yaml title="Alias.yml · Alias（6/15）"
+Alias:
+  # /cmi hologrampages $1-
+  hologrampages:
+    Enabled: true
+    Tab: true
+  # /cmi home $1-
+  home:
+    Enabled: true
+    Tab: true
+  # /cmi homes $1-
+  homes:
+    Enabled: true
+    Tab: true
+  # /cmi hunger $1-
+  hunger:
+    Enabled: true
+    Tab: true
+  # /cmi ic $1-
+  ic:
+    Enabled: true
+    Tab: true
+  # /cmi ifoffline $1-
+  ifoffline:
+    Enabled: true
+    Tab: true
+  # /cmi ifonline $1-
+  ifonline:
+    Enabled: true
+    Tab: true
+  # /cmi ignore $1-
+  ignore:
+    Enabled: true
+    Tab: true
+  ignorelist:
+    Enabled: true
+    Tab: true
+  # /cmi importfrom $1-
+  importfrom:
+    Enabled: true
+    Tab: true
+  # /cmi importoldusers $1-
+  importoldusers:
+    Enabled: true
+    Tab: true
+  # /cmi info $1-
+  info:
+    Enabled: true
+    Tab: true
+  whois:
+    Enabled: false
+    Tab: true
+  # /cmi inv $1-
+  inv:
+    Enabled: true
+    Tab: true
+  cinv:
+    Enabled: false
+    Tab: true
+  invsee:
+    Enabled: false
+    Tab: true
+  oi:
+    Enabled: false
+    Tab: true
+  # /cmi invcheck $1-
+  invcheck:
+    Enabled: true
+    Tab: true
+  # /cmi invlist $1-
+  invlist:
+    Enabled: true
+    Tab: true
+  # /cmi invload $1-
+  invload:
+    Enabled: true
+    Tab: true
+  # /cmi invremove $1-
+  invremove:
+    Enabled: true
+    Tab: true
+  # /cmi invremoveall $1-
+  invremoveall:
+    Enabled: true
+    Tab: true
+  # /cmi invsave $1-
+  invsave:
+    Enabled: true
+    Tab: true
+  # /cmi ipban $1-
+  ipban:
+    Enabled: true
+    Tab: true
+  # /cmi ipbanlist $1-
+  ipbanlist:
+    Enabled: true
+    Tab: true
+  # /cmi item $1-
+  item:
+    Enabled: true
+    Tab: true
+```
+
+```yaml title="Alias.yml · Alias（7/15）"
+Alias:
+  i:
+    Enabled: false
+    Tab: true
+  # /cmi itemcmdata $1-
+  itemcmdata:
+    Enabled: true
+    Tab: true
+  # /cmi itemframe $1-
+  itemframe:
+    Enabled: true
+    Tab: true
+  # /cmi iteminfo $1-
+  iteminfo:
+    Enabled: true
+    Tab: true
+  # /cmi itemlore $1-
+  itemlore:
+    Enabled: true
+    Tab: true
+  ilore:
+    Enabled: true
+    Tab: true
+  # /cmi itemname $1-
+  itemname:
+    Enabled: true
+    Tab: true
+  iname:
+    Enabled: true
+    Tab: true
+  rename:
+    Enabled: false
+    Tab: true
+  # /cmi itemnbt $1-
+  itemnbt:
+    Enabled: true
+    Tab: true
+  # /cmi jail $1-
+  jail:
+    Enabled: true
+    Tab: true
+  # /cmi jailedit $1-
+  jailedit:
+    Enabled: true
+    Tab: true
+  # /cmi jaillist $1-
+  jaillist:
+    Enabled: true
+    Tab: true
+  # /cmi jump $1-
+  jump:
+    Enabled: true
+    Tab: true
+  # /cmi kick $1-
+  kick:
+    Enabled: true
+    Tab: true
+  # /cmi kill $1-
+  kill:
+    Enabled: true
+    Tab: true
+  # /cmi killall $1-
+  killall:
+    Enabled: true
+    Tab: true
+  # /cmi kit $1-
+  kit:
+    Enabled: true
+    Tab: true
+  kits:
+    Enabled: false
+    Tab: true
+  # /cmi kit -preview $1-
+  kitpreview:
+    Enabled: true
+    Tab: true
+  # /cmi kit -open $1-
+  kitopen:
+    Enabled: true
+    Tab: true
+  # /cmi kitcdreset $1-
+  kitcdreset:
+    Enabled: true
+    Tab: true
+  # /cmi kiteditor $1-
+  kiteditor:
+    Enabled: true
+    Tab: true
+  # /cmi kitusagereset $1-
+  kitusagereset:
+    Enabled: true
+    Tab: true
+  # /cmi lastonline $1-
+  lastonline:
+    Enabled: true
+    Tab: true
+  # /cmi launch $1-
+  launch:
+    Enabled: true
+    Tab: true
+```
+
+```yaml title="Alias.yml · Alias（8/15）"
+Alias:
+  # /cmi lfix $1-
+  lfix:
+    Enabled: true
+    Tab: true
+  # /cmi list $1-
+  list:
+    Enabled: true
+    Tab: true
+  # /cmi lockip $1-
+  lockip:
+    Enabled: true
+    Tab: true
+  # /cmi loom $1-
+  loom:
+    Enabled: true
+    Tab: true
+  # /cmi mail $1-
+  mail:
+    Enabled: true
+    Tab: true
+  # /cmi mailall $1-
+  mailall:
+    Enabled: true
+    Tab: true
+  # /cmi maintenance $1-
+  maintenance:
+    Enabled: true
+    Tab: true
+  # /cmi maxhp $1-
+  maxhp:
+    Enabled: true
+    Tab: true
+  # /cmi maxplayers $1-
+  maxplayers:
+    Enabled: true
+    Tab: true
+  # /cmi me $1-
+  me:
+    Enabled: true
+    Tab: true
+  # /cmi merchant $1-
+  merchant:
+    Enabled: true
+    Tab: true
+  # /cmi migratedatabase $1-
+  migratedatabase:
+    Enabled: true
+    Tab: true
+  # /cmi mirror $1-
+  mirror:
+    Enabled: true
+    Tab: true
+  # /cmi mobhead $1-
+  mobhead:
+    Enabled: true
+    Tab: true
+  # /cmi money $1-
+  money:
+    Enabled: true
+    Tab: true
+  # /cmi more $1-
+  more:
+    Enabled: true
+    Tab: true
+  # /cmi msg $1-
+  msg:
+    Enabled: true
+    Tab: true
+  w:
+    Enabled: false
+    Tab: true
+  # /cmi mute $1-
+  mute:
+    Enabled: true
+    Tab: true
+  # /cmi mutechat $1-
+  mutechat:
+    Enabled: true
+    Tab: true
+  # /cmi nameplate $1-
+  nameplate:
+    Enabled: true
+    Tab: true
+  # /cmi near $1-
+  near:
+    Enabled: true
+    Tab: true
+  # /cmi nick $1-
+  nick:
+    Enabled: true
+    Tab: true
+  # /cmi notarget $1-
+  notarget:
+    Enabled: true
+    Tab: true
+  # /cmi note $1-
+  note:
+    Enabled: true
+    Tab: true
+```
+
+```yaml title="Alias.yml · Alias（9/15）"
+Alias:
+  # /cmi openbook $1-
+  openbook:
+    Enabled: true
+    Tab: true
+  # /cmi oplist $1-
+  oplist:
+    Enabled: true
+    Tab: true
+  # /cmi options $1-
+  options:
+    Enabled: true
+    Tab: true
+  # /cmi panimation $1-
+  panimation:
+    Enabled: true
+    Tab: true
+  # /cmi particlepicker $1-
+  particlepicker:
+    Enabled: true
+    Tab: true
+  # /cmi patrol $1-
+  patrol:
+    Enabled: true
+    Tab: true
+  # /cmi pay $1-
+  pay:
+    Enabled: true
+    Tab: true
+  # /cmi ping $1-
+  ping:
+    Enabled: true
+    Tab: true
+  # /cmi placeholders $1-
+  placeholders:
+    Enabled: true
+    Tab: true
+  # /cmi playercollision $1-
+  playercollision:
+    Enabled: true
+    Tab: true
+  # /cmi playtime $1-
+  playtime:
+    Enabled: true
+    Tab: true
+  # /cmi playtimetop $1-
+  playtimetop:
+    Enabled: true
+    Tab: true
+  # /cmi point $1-
+  point:
+    Enabled: true
+    Tab: true
+  # /cmi portals $1-
+  portals:
+    Enabled: true
+    Tab: true
+  # /cmi pos $1-
+  pos:
+    Enabled: true
+    Tab: true
+  # /cmi preview $1-
+  preview:
+    Enabled: true
+    Tab: true
+  # /cmi prewards $1-
+  prewards:
+    Enabled: true
+    Tab: true
+  # /cmi ptime $1-
+  ptime:
+    Enabled: true
+    Tab: true
+  # /cmi purge $1-
+  purge:
+    Enabled: true
+    Tab: true
+  # /cmi pweather $1-
+  pweather:
+    Enabled: true
+    Tab: true
+  # /cmi rankdown $1-
+  rankdown:
+    Enabled: true
+    Tab: true
+  # /cmi rankinfo $1-
+  rankinfo:
+    Enabled: true
+    Tab: true
+  # /cmi ranklist $1-
+  ranklist:
+    Enabled: true
+    Tab: true
+  # /cmi rankset $1-
+  rankset:
+    Enabled: true
+    Tab: true
+  # /cmi rankup $1-
+  rankup:
+    Enabled: true
+    Tab: true
+```
+
+```yaml title="Alias.yml · Alias（10/15）"
+Alias:
+  # /cmi realname $1-
+  realname:
+    Enabled: true
+    Tab: true
+  # /cmi recipe $1-
+  recipe:
+    Enabled: true
+    Tab: true
+  # /cmi releasepet $1-
+  releasepet:
+    Enabled: true
+    Tab: true
+  # /cmi reload $1-
+  reload:
+    Enabled: false
+    Tab: true
+  # /cmi removehome $1-
+  removehome:
+    Enabled: true
+    Tab: true
+  delhome:
+    Enabled: false
+    Tab: true
+  # /cmi removeuser $1-
+  removeuser:
+    Enabled: true
+    Tab: true
+  # /cmi removewarp $1-
+  removewarp:
+    Enabled: true
+    Tab: true
+  delwarp:
+    Enabled: false
+    Tab: true
+  # /cmi repair $1-
+  repair:
+    Enabled: true
+    Tab: true
+  # /cmi repaircost $1-
+  repaircost:
+    Enabled: true
+    Tab: true
+  # /cmi replaceblock $1-
+  replaceblock:
+    Enabled: true
+    Tab: true
+  # /cmi reply $1-
+  reply:
+    Enabled: true
+    Tab: true
+  r:
+    Enabled: false
+    Tab: true
+  # /cmi resetback $1-
+  resetback:
+    Enabled: true
+    Tab: true
+  rback:
+    Enabled: false
+    Tab: true
+  # /cmi resetdbfields $1-
+  resetdbfields:
+    Enabled: true
+    Tab: true
+  # /cmi ride $1-
+  ride:
+    Enabled: true
+    Tab: true
+  # /cmi rt $1-
+  rt:
+    Enabled: true
+    Tab: true
+  rtp:
+    Enabled: false
+    Tab: true
+  # /cmi sameip $1-
+  sameip:
+    Enabled: true
+    Tab: true
+  # /cmi saturation $1-
+  saturation:
+    Enabled: true
+    Tab: true
+  # /cmi saveall $1-
+  saveall:
+    Enabled: true
+    Tab: true
+  # /cmi saveditems $1-
+  saveditems:
+    Enabled: true
+    Tab: true
+  # /cmi sc $1-
+  sc:
+    Enabled: true
+    Tab: true
+  scopy:
+    Enabled: true
+    Tab: true
+```
+
+```yaml title="Alias.yml · Alias（11/15）"
+Alias:
+  # /cmi scale $1-
+  scale:
+    Enabled: true
+    Tab: true
+  # /cmi scan $1-
+  scan:
+    Enabled: true
+    Tab: true
+  # /cmi scavenge $1-
+  scavenge:
+    Enabled: true
+    Tab: true
+  salvage:
+    Enabled: false
+    Tab: true
+  recycle:
+    Enabled: false
+    Tab: true
+  # /cmi schedule $1-
+  schedule:
+    Enabled: true
+    Tab: true
+  # /cmi se $1-
+  se:
+    Enabled: true
+    Tab: true
+  # /cmi search $1-
+  search:
+    Enabled: true
+    Tab: true
+  # /cmi seen $1-
+  seen:
+    Enabled: true
+    Tab: true
+  # /cmi select $1-
+  select:
+    Enabled: true
+    Tab: true
+  # /cmi sell $1-
+  sell:
+    Enabled: true
+    Tab: true
+  # /cmi sendall $1-
+  sendall:
+    Enabled: true
+    Tab: true
+  # /cmi server $1-
+  server:
+    Enabled: true
+    Tab: true
+  # /cmi serverlinks $1-
+  serverlinks:
+    Enabled: true
+    Tab: true
+  # /cmi serverlist $1-
+  serverlist:
+    Enabled: true
+    Tab: true
+  # /cmi servertime $1-
+  servertime:
+    Enabled: true
+    Tab: true
+  # /cmi setenchantworth $1-
+  setenchantworth:
+    Enabled: true
+    Tab: true
+  # /cmi setfirstspawn $1-
+  setfirstspawn:
+    Enabled: true
+    Tab: true
+  # /cmi sethome $1-
+  sethome:
+    Enabled: true
+    Tab: true
+  # /cmi setmotd $1-
+  setmotd:
+    Enabled: true
+    Tab: true
+  # /cmi setrt $1-
+  setrt:
+    Enabled: true
+    Tab: true
+  # /cmi setspawn $1-
+  setspawn:
+    Enabled: true
+    Tab: true
+  # /cmi setwarp $1-
+  setwarp:
+    Enabled: true
+    Tab: true
+  # /cmi setworth $1-
+  setworth:
+    Enabled: true
+    Tab: true
+  # /cmi shadowmute $1-
+  shadowmute:
+    Enabled: true
+    Tab: true
+```
+
+```yaml title="Alias.yml · Alias（12/15）"
+Alias:
+  # /cmi shakeitoff $1-
+  shakeitoff:
+    Enabled: true
+    Tab: true
+  # /cmi shoot $1-
+  shoot:
+    Enabled: true
+    Tab: true
+  # /cmi silence $1-
+  silence:
+    Enabled: true
+    Tab: true
+  # /cmi silentchest $1-
+  silentchest:
+    Enabled: true
+    Tab: true
+  # /cmi sit $1-
+  sit:
+    Enabled: true
+    Tab: true
+  # /cmi skin $1-
+  skin:
+    Enabled: true
+    Tab: true
+  # /cmi smite $1-
+  smite:
+    Enabled: true
+    Tab: true
+  lightning:
+    Enabled: false
+    Tab: true
+  thor:
+    Enabled: false
+    Tab: true
+  # /cmi smithingtable $1-
+  smithingtable:
+    Enabled: true
+    Tab: true
+  # /cmi solve $1-
+  solve:
+    Enabled: true
+    Tab: true
+  # /cmi sound $1-
+  sound:
+    Enabled: true
+    Tab: true
+  # /cmi spawn $1-
+  spawn:
+    Enabled: true
+    Tab: true
+  # /cmi spawner $1-
+  spawner:
+    Enabled: true
+    Tab: true
+  # /cmi spawnereditor $1-
+  spawnereditor:
+    Enabled: true
+    Tab: true
+  # /cmi spawnmob $1-
+  spawnmob:
+    Enabled: true
+    Tab: true
+  # /cmi speed $1-
+  speed:
+    Enabled: true
+    Tab: true
+  # /cmi staffmsg $1-
+  staffmsg:
+    Enabled: true
+    Tab: true
+  # /cmi stats $1-
+  stats:
+    Enabled: true
+    Tab: true
+  # /cmi statsedit $1-
+  statsedit:
+    Enabled: true
+    Tab: true
+  # /cmi status $1-
+  status:
+    Enabled: true
+    Tab: true
+  gc:
+    Enabled: false
+    Tab: true
+  lag:
+    Enabled: true
+    Tab: true
+  # /cmi stonecutter $1-
+  stonecutter:
+    Enabled: true
+    Tab: true
+  # /cmi sudo $1-
+  sudo:
+    Enabled: true
+    Tab: true
+  # /cmi suicide $1-
+  suicide:
+    Enabled: true
+    Tab: true
+```
+
+```yaml title="Alias.yml · Alias（13/15）"
+Alias:
+  # /cmi switchplayerdata $1-
+  switchplayerdata:
+    Enabled: true
+    Tab: true
+  # /cmi tablistupdate $1-
+  tablistupdate:
+    Enabled: true
+    Tab: true
+  # /cmi tempban $1-
+  tempban:
+    Enabled: true
+    Tab: true
+  # /cmi tempipban $1-
+  tempipban:
+    Enabled: true
+    Tab: true
+  # /cmi tfly $1-
+  tfly:
+    Enabled: true
+    Tab: true
+  # /cmi tgod $1-
+  tgod:
+    Enabled: true
+    Tab: true
+  # /cmi time $1-
+  time:
+    Enabled: true
+    Tab: true
+  # /cmi time day $1-
+  day:
+    Enabled: true
+    Tab: true
+  # /cmi time night $1-
+  night:
+    Enabled: true
+    Tab: true
+  # /cmi time morning $1-
+  morning:
+    Enabled: true
+    Tab: true
+  # /cmi time dusk $1-
+  dusk:
+    Enabled: true
+    Tab: true
+  # /cmi titlemsg $1-
+  titlemsg:
+    Enabled: true
+    Tab: true
+  # /cmi toast $1-
+  toast:
+    Enabled: true
+    Tab: true
+  # /cmi top $1-
+  top:
+    Enabled: true
+    Tab: true
+  # /cmi tp $1-
+  tp:
+    Enabled: true
+    Tab: true
+  # /cmi tpa $1-
+  tpa:
+    Enabled: true
+    Tab: true
+  # /cmi tpaall $1-
+  tpaall:
+    Enabled: true
+    Tab: true
+  # /cmi tpaccept $1-
+  tpaccept:
+    Enabled: true
+    Tab: true
+  # /cmi tpahere $1-
+  tpahere:
+    Enabled: true
+    Tab: true
+  # /cmi tpall $1-
+  tpall:
+    Enabled: true
+    Tab: true
+  # /cmi tpallworld $1-
+  tpallworld:
+    Enabled: true
+    Tab: true
+  # /cmi tpbypass $1-
+  tpbypass:
+    Enabled: true
+    Tab: true
+  # /cmi tpdeny $1-
+  tpdeny:
+    Enabled: true
+    Tab: true
+  # /cmi tphere $1-
+  tphere:
+    Enabled: true
+    Tab: true
+  # /cmi tpo $1-
+  tpo:
+    Enabled: true
+    Tab: true
+```
+
+```yaml title="Alias.yml · Alias（14/15）"
+Alias:
+  # /cmi tpohere $1-
+  tpohere:
+    Enabled: true
+    Tab: true
+  # /cmi tpopos $1-
+  tpopos:
+    Enabled: true
+    Tab: true
+  # /cmi tppos $1-
+  tppos:
+    Enabled: true
+    Tab: true
+  # /cmi tps $1-
+  tps:
+    Enabled: true
+    Tab: true
+  # /cmi tree $1-
+  tree:
+    Enabled: true
+    Tab: true
+  # /cmi trim $1-
+  trim:
+    Enabled: true
+    Tab: true
+  # /cmi unban $1-
+  unban:
+    Enabled: true
+    Tab: true
+  # /cmi unbreakable $1-
+  unbreakable:
+    Enabled: true
+    Tab: true
+  # /cmi uncondense $1-
+  uncondense:
+    Enabled: true
+    Tab: true
+  # /cmi unjail $1-
+  unjail:
+    Enabled: true
+    Tab: true
+  # /cmi unloadchunks $1-
+  unloadchunks:
+    Enabled: true
+    Tab: true
+  # /cmi unmute $1-
+  unmute:
+    Enabled: true
+    Tab: true
+  # /cmi unmutechat $1-
+  unmutechat:
+    Enabled: true
+    Tab: true
+  # /cmi usermeta $1-
+  usermeta:
+    Enabled: true
+    Tab: true
+  # /cmi util $1-
+  util:
+    Enabled: true
+    Tab: true
+  # /cmi vanish $1-
+  vanish:
+    Enabled: true
+    Tab: true
+  v:
+    Enabled: false
+    Tab: true
+  # /cmi vanishedit $1-
+  vanishedit:
+    Enabled: true
+    Tab: true
+  # /cmi version $1-
+  version:
+    Enabled: false
+    Tab: true
+  # /cmi viewdistance $1-
+  viewdistance:
+    Enabled: true
+    Tab: true
+  # /cmi voteedit $1-
+  voteedit:
+    Enabled: true
+    Tab: true
+  # /cmi votes $1-
+  votes:
+    Enabled: true
+    Tab: true
+  # /cmi votetop $1-
+  votetop:
+    Enabled: true
+    Tab: true
+  # /cmi walkspeed $1-
+  walkspeed:
+    Enabled: true
+    Tab: true
+  wspeed:
+    Enabled: false
+    Tab: true
+```
+
+```yaml title="Alias.yml · Alias（15/15）"
+Alias:
+  # /cmi warn $1-
+  warn:
+    Enabled: true
+    Tab: true
+  # /cmi warnings $1-
+  warnings:
+    Enabled: true
+    Tab: true
+  # /cmi warp $1-
+  warp:
+    Enabled: true
+    Tab: true
+  warps:
+    Enabled: false
+    Tab: true
+  # /cmi warpgroups $1-
+  warpgroups:
+    Enabled: true
+    Tab: true
+  # /cmi weather $1-
+  weather:
+    Enabled: true
+    Tab: true
+  # /cmi weather sun $1-
+  sun:
+    Enabled: true
+    Tab: true
+  # /cmi weather rain $1-
+  rain:
+    Enabled: true
+    Tab: true
+  # /cmi weather storm $1-
+  storm:
+    Enabled: true
+    Tab: true
+  # /cmi workbench $1-
+  workbench:
+    Enabled: true
+    Tab: true
+  wb:
+    Enabled: false
+    Tab: true
+  craft:
+    Enabled: false
+    Tab: true
+  # /cmi world $1-
+  world:
+    Enabled: true
+    Tab: true
+  # /cmi worth $1-
+  worth:
+    Enabled: true
+    Tab: true
+  # /cmi worthlist $1-
+  worthlist:
+    Enabled: true
+    Tab: true
 ```

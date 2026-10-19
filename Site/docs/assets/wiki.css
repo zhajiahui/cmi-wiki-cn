@@ -37,3 +37,22 @@
 .tw-status-controls button:hover {border-color:var(--md-accent-fg-color);color:var(--md-accent-fg-color);}
 .tw-status-controls button:focus-visible {outline:2px solid var(--md-accent-fg-color);outline-offset:2px;}
 .tw-status-editor[data-state=completed] {border-color:#2e7d32;}
+
+/* Annotated CMI configuration examples. */
+.cmi-configuration .highlight { border:1px solid var(--md-default-fg-color--lightest); border-radius:.5rem; overflow:hidden; margin:1rem 0 1.6rem; }
+.cmi-configuration .highlight pre { margin:0; }
+.cmi-configuration .highlight pre>code { padding:1rem 1.2rem; font-size:.72rem; line-height:1.8; }
+.cmi-configuration .highlight .filename { font-family:var(--md-code-font); font-size:.68rem; border-bottom:1px solid var(--md-default-fg-color--lightest); }
+.cmi-configuration .highlight .c1 { color:var(--md-default-fg-color--light); }
+.cmi-configuration .md-code__button { opacity:1; border:1px solid var(--md-default-fg-color--lightest); border-radius:.25rem; color:var(--md-default-fg-color--light); }
+[data-md-color-scheme="slate"] .cmi-configuration .highlight pre,
+[data-md-color-scheme="slate"] .cmi-configuration .highlight code { background:#151516; }
+[data-md-color-scheme="slate"] .cmi-configuration .highlight .filename { background:#1d1d20; }
+[data-md-color-scheme="slate"] .cmi-configuration .highlight .nt { color:#86efac; }
+[data-md-color-scheme="slate"] .cmi-configuration .highlight .s,
+[data-md-color-scheme="slate"] .cmi-configuration .highlight .s1,
+[data-md-color-scheme="slate"] .cmi-configuration .highlight .s2,
+[data-md-color-scheme="slate"] .cmi-configuration .highlight .l { color:#93c5fd; }
+[data-md-color-scheme="slate"] .cmi-configuration .highlight .c1 { color:#8b949e; }
+.config-key-anchor { scroll-margin-top:8rem; }
+@media(max-width:600px){ .cmi-configuration .highlight pre>code {padding:.85rem;font-size:.66rem;} }

@@ -8,6 +8,7 @@ import json
 import re
 import sys
 import markdown
+import yaml
 from bs4 import BeautifulSoup
 
 BASE = Path(__file__).resolve().parents[1]
@@ -16,6 +17,7 @@ spec = importlib.util.spec_from_file_location('render_configuration', BASE / 'sc
 renderer = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(renderer)
 data = json.loads(SOURCE.read_text(encoding='utf-8'))
+examples = json.loads((BASE / 'sources/configuration-examples.json').read_text(encoding='utf-8'))
 manifest = json.loads((BASE / 'sources/configuration-manifest.json').read_text(encoding='utf-8'))
 errors = []
 units = {row['id']: row for row in data['units']}
@@ -34,10 +36,37 @@ for identity, row in units.items():
         errors.append(f'Configuration identifier lost: {identity}: {dict(missing)}')
     if identity not in number_equivalents and Counter(re.findall(r'\d+(?:\.\d+)?', row['source'])) != Counter(re.findall(r'\d+(?:\.\d+)?', row['translation'])):
         errors.append(f'Configuration number changed: {identity}')
-expected = renderer.render_pages(data)
+expected, expected_manifest = renderer.render_documents(data, examples)
+if manifest != expected_manifest:
+    errors.append('Configuration anchors or source hashes differ from the rendered examples')
 if {row['file'] for row in manifest} != set(expected):
     errors.append('Configuration manifest coverage mismatch')
 digest = hashlib.sha256(SOURCE.read_text(encoding='utf-8').encode('utf-8')).hexdigest()
+templates = {entry['name']: entry for entry in examples['files']}
+if set(templates) != {entry['name'] for entry in data['files']}:
+    errors.append('Configuration YAML file coverage mismatch')
+database_example = yaml.safe_load(templates['Settings/DataBaseInfo.yml']['yaml'])
+for field, placeholder in {'username': 'USERNAME', 'password': 'PASSWORD', 'hostname': 'HOST', 'database': 'DATABASE', 'tablePrefix': 'TABLE_PREFIX'}.items():
+    if database_example['mysql'][field] != placeholder:
+        errors.append('Public database example must use a placeholder: ' + field)
+code_blocks = 0
+for entry in data['files']:
+    text = templates[entry['name']]['yaml']
+    sections = renderer.yaml_sections(text)
+    # Removing repeated parent keys must recover every source line in its original order.
+    recovered = []
+    for section in sections:
+        recovered.extend(section['text'].splitlines()[section['prefix']:])
+        try:
+            yaml.safe_load(section['text'])
+        except yaml.YAMLError:
+            errors.append('Invalid YAML display section: ' + entry['name'])
+    if [line for line in recovered if line.strip()] != [line for line in text.splitlines() if line.strip()]:
+        errors.append('YAML display sections lost or reordered content: ' + entry['name'])
+    comment_counts = Counter(match.group(1) for line in text.splitlines() if (match := re.match(r'^\s*#+ ?(.*)$', line)))
+    required = Counter(units[identity]['translation'] for block in entry['blocks'] for identity in block['units'])
+    if required - comment_counts:
+        errors.append('Reviewed comments missing from YAML: ' + entry['name'])
 for row in manifest:
     path = BASE / 'docs' / row['file']
     if row.get('source_sha256') != digest or row.get('translation_review') != 'reviewed':
@@ -46,7 +75,9 @@ for row in manifest:
         errors.append('Configuration page differs from reviewed comments: ' + row['file'])
         continue
     text = path.read_text(encoding='utf-8').split('\n---\n', 1)[1]
-    rendered = BeautifulSoup(markdown.markdown(text, extensions=['fenced_code', 'tables']), 'html.parser')
+    blocks = re.findall(r'^```yaml[^\n]*\n(.*?)^```', text, re.M | re.S)
+    code_blocks += len(blocks)
+    rendered = BeautifulSoup(markdown.markdown(text, extensions=['pymdownx.superfences', 'tables', 'attr_list']), 'html.parser')
     for link in rendered.find_all('a', href=True):
         url = link['href']
         parts = urlsplit(url)
@@ -55,7 +86,7 @@ for row in manifest:
         target = (path.parent / unquote(parts.path)).resolve()
         if not target.is_relative_to((BASE / 'docs').resolve()) or not target.is_file():
             errors.append('Broken configuration link: ' + row['file'] + ': ' + url)
-report = {'configuration_files': len(data['files']), 'unique_source_comments': len(units), 'configuration_pages': len(manifest), 'errors': errors}
+report = {'configuration_files': len(data['files']), 'unique_source_comments': len(units), 'configuration_pages': len(manifest), 'annotated_yaml_blocks': code_blocks, 'configuration_key_anchors': sum(len(row['anchors']) for row in manifest), 'errors': errors}
 print(json.dumps(report, ensure_ascii=False, indent=2))
 if errors:
     sys.exit(1)
