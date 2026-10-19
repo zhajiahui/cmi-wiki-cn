@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="en" data-accent-color="violet" data-content_root="../">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Configuration - WorldGuard 7.0 documentation</title><link rel="index" title="Index" href="../genindex/" /><link rel="search" title="Search" href="../search/" /><link rel="next" title="Host Keys" href="../host-keys/" /><link rel="prev" title="Installation" href="../install/" /><script>
+    function setColorMode(t){let e=document.documentElement;e.setAttribute("data-color-mode",t);let a=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t;"auto"===t&&(s=a?"dark":"light"),"light"===s?(e.classList.remove("dark"),e.classList.add("light")):(e.classList.remove("light"),e.classList.add("dark"))}
+    setColorMode(localStorage._theme||"auto");
+  </script><link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=ad592e98" />
+    <link rel="stylesheet" type="text/css" href="../_static/shibuya.css?v=44020203" />
+    <link media="print" rel="stylesheet" type="text/css" href="../_static/print.css?v=20ff2c19" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=d0922fbb" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sy-f-text: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+  --sy-f-heading: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+}
+</style>
+    <meta property="og:type" content="website"/><meta property="og:title" content="Configuration"/>
+    <meta name="twitter:card" content="summary"/>
+  <script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="worldguard" /><meta name="readthedocs-version-slug" content="latest" /><meta name="readthedocs-resolver-filename" content="/config/" /><meta name="readthedocs-http-status" content="200" /></head>
+<body><div class="sy-head">
+  <div class="sy-head-blur"></div>
+  <div class="sy-head-inner sy-container mx-auto">
+    <a class="sy-head-brand" href="../">
+      
+      
+      <strong>WorldGuard</strong>
+    </a>
+    <div class="sy-head-nav" id="head-nav">
+      <nav class="sy-head-links" data-align=left><ul><li class="link">
+          <a href="https://enginehub.org">
+            <span>Developed by EngineHub</span><i class="i-lucide external-link"></i></a>
+        </li><li class="link">
+          <a href="https://github.com/sponsors/EngineHub?o=esb">
+            <span><iconify-icon icon='simple-icons:githubsponsors' style='color: #db61a2;'></iconify-icon> Sponsored by users like you!</span><i class="i-lucide external-link"></i></a>
+        </li></ul></nav>
+      <div class="sy-head-extra flex items-center print:hidden"><form class="searchbox flex items-center" action="../search/" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <kbd>/</kbd>
+</form><div class="sy-head-socials">
+  <a href="https://github.com/EngineHub/WorldGuard" aria-label="GitHub">
+    <iconify-icon icon="simple-icons:github"></iconify-icon>
+  </a>
+  <a href="https://discord.gg/enginehub" aria-label="Discord">
+    <iconify-icon icon="simple-icons:discord"></iconify-icon>
+  </a></div></div>
+    </div>
+    <div class="sy-head-actions flex items-center shrink-0 print:hidden"><button class="js-theme theme-switch flex items-center"
+data-aria-auto="Switch to light color mode"
+data-aria-light="Switch to dark color mode"
+data-aria-dark="Switch to auto color mode">
+<i class="i-lucide theme-icon"></i>
+</button><button class="md:hidden flex items-center js-menu" aria-label="Menu" type="button" aria-controls="head-nav" aria-expanded="false">
+        <div class="hamburger">
+          <span class="hamburger_1"></span>
+          <span class="hamburger_2"></span>
+          <span class="hamburger_3"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="sy-page sy-container flex mx-auto">
+  <aside id="lside" class="sy-lside md:w-72 md:shrink-0 print:hidden">
+    <div class="sy-lside-inner md:sticky">
+      <div class="sy-scrollbar p-6">
+        <div class="globaltoc" data-expand-depth="2"><ul class="current">
+<li class="toctree-l1 _expand"><a class="reference internal" href="../install/">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Configuration</a><ul>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../host-keys/">Host Keys</a></li>
+</ul>
+</li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../permissions/">Permissions</a><ul>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../build-perms/">Build Permissions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../commands/">Commands</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../blacklist/">Blacklist</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../regions/">Regions</a><ul>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../regions/quick-start/">Quick Start</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../regions/wand/">Region Wand</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../regions/flags/">Region Flags</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../regions/priorities/">Priority and Inheritance</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../regions/global-region/">Global Region</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../regions/commands/">Region Commands</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../regions/claiming/">Claiming</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../regions/storage/">Storage Drivers</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../regions/scope/">What&#8217;s Protected?</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../regions/common-scenarios/">Common Scenarios</a></li>
+</ul>
+</li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../chest-protection/">Chest Protection</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../developer/">WorldGuard API</a><ul>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../developer/dependency/">As a Dependency</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../developer/regions/">Working with Regions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developer/regions/managers/">Managers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developer/regions/protected-region/">Regions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developer/regions/custom-flags/">Custom Flags and Session Handlers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developer/regions/spatial-queries/">Spatial Queries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developer/regions/flag-calculation/">Flag Calculation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developer/regions/protection-query/">Querying Protection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developer/regions/events/">Region Events</a></li>
+</ul>
+</li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../developer/native-objects/">From Bukkit Objects</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../developer/internal-apis/">Internal APIs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../advanced/">Advanced Topics</a><ul>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../advanced/event-logging/">Event Logging</a></li>
+</ul>
+</li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../faq/">Common Questions</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../support/">Getting Help</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../source-code/">Source Code</a></li>
+</ul>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="lside-overlay js-menu" role="button" aria-label="Close left sidebar" aria-controls="lside" aria-expanded="false"></div>
+  <aside id="rside" class="sy-rside pb-3 w-64 shrink-0 order-last">
+    <button class="rside-close js-menu xl:hidden" aria-label="Close Table of Contents" type="button" aria-controls="rside" aria-expanded="false">
+      <i class="i-lucide close"></i>
+    </button>
+    <div class="sy-scrollbar sy-rside-inner px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4"><div class="localtoc"><h3>On this page</h3><ul>
+<li><a class="reference internal" href="#configuration-files">Configuration Files</a></li>
+<li><a class="reference internal" href="#settings">Settings</a><ul>
+<li><a class="reference internal" href="#security">security.*</a></li>
+<li><a class="reference internal" href="#build-permission-nodes">build-permission-nodes.*</a></li>
+<li><a class="reference internal" href="#event-handling">event-handling.*</a></li>
+<li><a class="reference internal" href="#protection">protection.*</a></li>
+<li><a class="reference internal" href="#gameplay">gameplay.*</a></li>
+<li><a class="reference internal" href="#simulation-sponge">simulation.sponge.*</a></li>
+<li><a class="reference internal" href="#default">default.*</a></li>
+<li><a class="reference internal" href="#physics">physics.*</a></li>
+<li><a class="reference internal" href="#ignition">ignition.*</a></li>
+<li><a class="reference internal" href="#fire">fire.*</a></li>
+<li><a class="reference internal" href="#mobs">mobs.*</a></li>
+<li><a class="reference internal" href="#player-damage">player-damage.*</a></li>
+<li><a class="reference internal" href="#crops">crops.*</a></li>
+<li><a class="reference internal" href="#turtle-egg">turtle-egg.*</a></li>
+<li><a class="reference internal" href="#sniffer-egg">sniffer-egg.*</a></li>
+<li><a class="reference internal" href="#weather">weather.*</a></li>
+<li><a class="reference internal" href="#dynamics">dynamics.*</a></li>
+<li><a class="reference internal" href="#chest-protection">chest-protection.*</a></li>
+<li><a class="reference internal" href="#blacklist">blacklist.*</a></li>
+<li><a class="reference internal" href="#blacklist-logging">blacklist.logging.*</a></li>
+<li><a class="reference internal" href="#regions">regions.*</a></li>
+<li><a class="reference internal" href="#regions-uuid-migration">regions.uuid-migration.*</a></li>
+<li><a class="reference internal" href="#regions-sql">regions.sql.*</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#subpages">Subpages</a></li>
+</ul>
+</div><div class="edit-this-page">
+  <a href="https://github.com/EngineHub/WorldGuardDocs/blob/master/source/config.rst">Edit this page</a>
+</div></div>
+  </aside>
+  <div class="rside-overlay js-menu" role="button" aria-label="Close Table of Contents" aria-controls="rside" aria-expanded="false"></div>
+  <main class="sy-main w-full max-sm:max-w-full print:pt-6">
+<div class="sy-breadcrumbs" role="navigation">
+  <div class="sy-breadcrumbs-inner flex items-center">
+    <div class="md:hidden mr-3">
+      <button class="js-menu" aria-label="Menu" type="button" aria-controls="lside" aria-expanded="false">
+        <i class="i-lucide menu"></i>
+      </button>
+    </div>
+    <ol class="flex-1" itemscope itemtype="https://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="../"><span itemprop="name">WorldGuard</span></a>
+        <span>/</span>
+        <meta itemprop="position" content="1" />
+      </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <strong itemprop="name">Configuration</strong>
+        <meta itemprop="position" content="2" />
+      </li></ol>
+    <div class="xl:hidden ml-1">
+      <button class="js-menu" aria-label="Show table of contents" type="button" aria-controls="rside"
+        aria-expanded="false">
+        <i class="i-lucide outdent"></i>
+      </button>
+    </div>
+  </div>
+</div><div class="flex flex-col break-words justify-between">
+      <div class="relative min-w-0 max-w-6xl px-6 pb-6 pt-8 xl:px-12">
+  <div class="copy-page-wrapper relative pb-4 lg:absolute lg:top-8 lg:right-6 xl:right-12">
+  <div id="copy-page-trigger">
+    <button
+      type="button"
+      class="js-copy px-3 py-1 inline-flex items-center gap-1"
+      data-url="https://raw.githubusercontent.com/EngineHub/WorldGuardDocs/refs/heads/master/source/config.rst.txt"
+    >
+      <i class="i-lucide" data-icon="copy"></i>
+      <span>Copy page</span>
+    </button>
+    <button class="js-menu px-2 py-1" type="button" aria-label="More actions"
+      aria-haspopup="menu" aria-expanded="false" aria-controls="copy-page-content">
+      <i class="i-lucide chevron-down"></i>
+    </button>
+  </div>
+  <div id="copy-page-content" role="menu" aria-orientation="vertical" aria-hidden="true">
+    <div role="presentation">
+      <div class="flex flex-col" role="group">
+        <button class="js-copy" type="button" role="menuitem"
+          data-url="https://raw.githubusercontent.com/EngineHub/WorldGuardDocs/refs/heads/master/source/config.rst.txt">
+          <span class="iconify-icon">
+            <i class="i-lucide" data-icon="copy"></i>
+          </span>
+          <span>Copy page</span>
+        </button>
+        <a role="menuitem" href="https://raw.githubusercontent.com/EngineHub/WorldGuardDocs/refs/heads/master/source/config.rst.txt" target="_blank" rel="nofollow"><iconify-icon icon="bi:code-slash"></iconify-icon>
+            <span>View Source</span></a><a role="menuitem" href="https://chatgpt.com/?hints=search&q=Read%20https%3A//raw.githubusercontent.com/EngineHub/WorldGuardDocs/refs/heads/master/source/config.rst.txt%20so%20I%20can%20ask%20questions%20about%20it." target="_blank" rel="nofollow">
+          <iconify-icon icon="bi:openai"></iconify-icon>
+          <span>Open in ChatGPT</span>
+        </a><a role="menuitem" href="https://claude.ai/new?q=Read%20https%3A//raw.githubusercontent.com/EngineHub/WorldGuardDocs/refs/heads/master/source/config.rst.txt%20so%20I%20can%20ask%20questions%20about%20it." target="_blank" rel="nofollow">
+          <iconify-icon icon="bi:claude"></iconify-icon>
+          <span>Open in Claude</span>
+        </a></div>
+    </div>
+  </div>
+</div><article class="yue" role="main">
+          <section id="configuration">
+<h1>Configuration<a class="headerlink" href="#configuration" title="Link to this heading">¶</a></h1>
+<p>Many of WorldGuard’s features exist as configuration options (potion blocking, scuba mode with pumpkins, etc.). Every configuration option available is listed on this page.</p>
+<section id="configuration-files">
+<h2>Configuration Files<a class="headerlink" href="#configuration-files" title="Link to this heading">¶</a></h2>
+<p>Once you have run your server with WorldGuard installed, you will find the main configuration file inside the <strong>plugins/WorldGuard</strong> folder:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">config.yml</span></code></p></li>
+</ul>
+<p>Then for every world, you will find per-world configuration files:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">worlds/world/config.yml</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">worlds/world_nether/config.yml</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">worlds/mining_world/config.yml</span></code></p></li>
+</ul>
+<p>If you open up the per-world configuration files, they will be nearly empty. When you wish to override a setting, you would copy it into the world’s configuration file.</p>
+<aside class="topic">
+<p class="topic-title">Example: Making a configuration option per-world</p>
+<p>In the main configuration file, you may have set <code class="docutils literal notranslate"><span class="pre">block-creeper-block-damage</span></code> to true:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="n">mobs</span><span class="p">:</span>
+</span><span data-line="2">    <span class="n">block</span><span class="o">-</span><span class="n">creeper</span><span class="o">-</span><span class="n">explosions</span><span class="p">:</span> <span class="n">false</span>
+</span><span data-line="3">    <span class="n">block</span><span class="o">-</span><span class="n">creeper</span><span class="o">-</span><span class="n">block</span><span class="o">-</span><span class="n">damage</span><span class="p">:</span> <span class="n">true</span>
+</span><span data-line="4">    <span class="n">block</span><span class="o">-</span><span class="n">wither</span><span class="o">-</span><span class="n">explosions</span><span class="p">:</span> <span class="n">false</span>
+</span></pre></div>
+</div>
+<p>But you want to set it to <code class="docutils literal notranslate"><span class="pre">false</span></code> in your nether world. Open up <code class="docutils literal notranslate"><span class="pre">worlds/world_nether/config.yml</span></code> and replace the file with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="n">mobs</span><span class="p">:</span>
+</span><span data-line="2">    <span class="n">block</span><span class="o">-</span><span class="n">creeper</span><span class="o">-</span><span class="n">block</span><span class="o">-</span><span class="n">damage</span><span class="p">:</span> <span class="n">false</span>
+</span></pre></div>
+</div>
+<p>Only the relevant line, as well as any parent sections, needs to be copied over.</p>
+</aside>
+</section>
+<section id="settings">
+<h2>Settings<a class="headerlink" href="#settings" title="Link to this heading">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These options are presented here as a reference, but you should change a desired option by first finding it in <code class="docutils literal notranslate"><span class="pre">config.yml</span></code> because some settings may need to be nested under another setting.</p>
+</div>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.5%" />
+<col style="width: 10.6%" />
+<col style="width: 63.8%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Setting</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>op-permissions</p></td>
+<td><p>TRUE</p></td>
+<td><p>Whether players with op should be given all permissions for WorldGuard, even if the permissions plugin in use does not provide permission for ops.</p></td>
+</tr>
+<tr class="row-odd"><td><p>summary-on-start</p></td>
+<td><p>TRUE</p></td>
+<td><p>Show summary information about WG’s settings for each world on server start. This is pretty noisy and it should be disabled if you have many worlds.</p></td>
+</tr>
+<tr class="row-even"><td><p>auto-invincible</p></td>
+<td><p>FALSE</p></td>
+<td><p>Give players with the <code class="docutils literal notranslate"><span class="pre">worldguard.auto-invincible</span></code> permission invincibility mode on join.</p></td>
+</tr>
+<tr class="row-odd"><td><p>auto-invincible-group</p></td>
+<td><p>FALSE</p></td>
+<td><p>Give players in the <code class="docutils literal notranslate"><span class="pre">wg-invincible</span></code> permission group invincibility mode on join.</p></td>
+</tr>
+<tr class="row-even"><td><p>auto-no-drowning-group</p></td>
+<td><p>FALSE</p></td>
+<td><p>Give players in the <code class="docutils literal notranslate"><span class="pre">wg-amphibious</span></code> permission group water breathing mode on join.</p></td>
+</tr>
+<tr class="row-odd"><td><p>use-player-move-event</p></td>
+<td><p>TRUE</p></td>
+<td><p>Whether WorldGuard should use (a little) more CPU to handle features that require tracking player movement. This must be on to use healing, feeding, greeting, and some other <a class="reference internal" href="../regions/flags/"><span class="doc">Region Flags</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>use-player-teleports</p></td>
+<td><p>TRUE</p></td>
+<td><p>Whether teleport events should be considered when tracking player movement. This should always be on if you are using the player move event and any of the flags that require that.</p></td>
+</tr>
+<tr class="row-odd"><td><p>use-particle-effects</p></td>
+<td><p>TRUE</p></td>
+<td><p>Whether WorldGuard should display particle effects when an action is cancelled.</p></td>
+</tr>
+<tr class="row-even"><td><p>disable-permission-cache</p></td>
+<td><p>FALSE</p></td>
+<td><p>WorldGuard caches certain permission checks to improve performance with slower permission plugins. If you encounter issues with slow permission updates when using a modern permissions plugin, try setting this option to <code class="docutils literal notranslate"><span class="pre">TRUE</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>custom-metrics-charts</p></td>
+<td><p>TRUE</p></td>
+<td><p>Reports some additional statistics to <a class="reference external" href="https://bstats.org/plugin/bukkit/WorldGuard/3283">bStats</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>host-keys</p></td>
+<td></td>
+<td><p>A list of hostnames that players must connect from. See <a class="reference internal" href="../host-keys/"><span class="doc">Host Keys</span></a>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="security">
+<h3>security.*<a class="headerlink" href="#security" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.5%" />
+<col style="width: 10.6%" />
+<col style="width: 63.8%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Setting</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>deop-everyone-on-join</p></td>
+<td><p>FALSE</p></td>
+<td><p>Clear op status from all players that join.</p></td>
+</tr>
+<tr class="row-odd"><td><p>block-in-game-op-command</p></td>
+<td><p>FALSE</p></td>
+<td><p>Block the /op command from being used in-game.</p></td>
+</tr>
+<tr class="row-even"><td><p>host-keys-allow-forge-clients</p></td>
+<td><p>FALSE</p></td>
+<td><p>Allow players using Forge to join when using <a class="reference internal" href="../host-keys/"><span class="doc">Host Keys</span></a>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="build-permission-nodes">
+<h3>build-permission-nodes.*<a class="headerlink" href="#build-permission-nodes" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.5%" />
+<col style="width: 10.6%" />
+<col style="width: 63.8%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Setting</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>enable</p></td>
+<td><p>FALSE</p></td>
+<td><p>A feature that lets you block building based on giving players the proper permissions. See <a class="reference internal" href="../build-perms/"><span class="doc">Build Permissions</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>deny-message</p></td>
+<td><p>&amp;eSorry, but you are not permitted to do that here.</p></td>
+<td><p>Concerning build permissions, this is the message that is sent when permission is denied. If a message is not set, a default one is used.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="event-handling">
+<h3>event-handling.*<a class="headerlink" href="#event-handling" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.5%" />
+<col style="width: 10.6%" />
+<col style="width: 63.8%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Setting</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>block-entity-spawns-with-untraceable-cause</p></td>
+<td><p>FALSE</p></td>
+<td><p>As Bukkit does not always tell plugins the exact reason that an entity was spawned, it may be possible for a player to bypass protection to spawn an entity (such as with a spawn egg). This option blocks cases where the true cause cannot be determined. It is recommended that this option is left off because the number of cases where the cause is not known is quite large.</p></td>
+</tr>
+<tr class="row-odd"><td><p>interaction-whitelist</p></td>
+<td><p>[]</p></td>
+<td><p>A list of block types that should not be protected. For example, if chests were added to this list, then they would never be protected with <a class="reference internal" href="../regions/"><span class="doc">region protection</span></a>. This setting is useful primarily when non-vanilla functionality is present (game features added by other plugins or mods) and you don’t want it blocked.</p></td>
+</tr>
+<tr class="row-even"><td><p>emit-block-use-at-feet</p></td>
+<td><p>[]</p></td>
+<td><p>A list of items that, if used, will also require that the player have the permission to <em>theoretically</em> modify the block at his or her feet. This setting is useful primarily when there is some item from some plugin or mod that uses a projectile (that affects the world) but does not test permission with WorldGuard. However, this is not a proper solution because the player can still stand in an area where they have permission and shoot <em>into</em> the desired area.</p></td>
+</tr>
+<tr class="row-odd"><td><p>ignore-hopper-item-move-events</p></td>
+<td><p>FALSE</p></td>
+<td><p>Disable protections relating to hoppers moving items to and from containers. This can be set to true to slightly improve performance if your server has many hoppers, but be warned that it will allow hoppers outside regions to pull items from inside regions if they are close enough to the border.</p></td>
+</tr>
+<tr class="row-even"><td><p>break-hoppers-on-denied-move</p></td>
+<td><p>TRUE</p></td>
+<td><p>If a hopper attempts to pull an item and is denied (as long as the previous config setting is false), WorldGuard will break the hopper block to prevent it from continuously attempting to pull items.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="topic">
+<p class="topic-title">Example: Disabling protection on workbenches</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">interaction-whitelist</span></code> option can be used:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="n">interaction</span><span class="o">-</span><span class="n">whitelist</span><span class="p">:</span> <span class="p">[</span><span class="n">workbench</span><span class="p">]</span>
+</span></pre></div>
+</div>
+</aside>
+</section>
+<section id="protection">
+<h3>protection.*<a class="headerlink" href="#protection" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.5%" />
+<col style="width: 10.6%" />
+<col style="width: 63.8%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Setting</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>item-durability</p></td>
+<td><p>TRUE</p></td>
+<td><p>Set to <code class="docutils literal notranslate"><span class="pre">false</span></code> to have items never break.</p></td>
+</tr>
+<tr class="row-odd"><td><p>remove-infinite-stacks</p></td>
+<td><p>FALSE</p></td>
+<td><p>Remove items with ‘infinite’ stack sizes, which is essentially any stack size less than 0 (which is the result of a number overflowing the maximum and wrapping into the negatives).</p></td>
+</tr>
+<tr class="row-even"><td><p>disable-xp-orb-drops</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether to disable XP orb drops.</p></td>
+</tr>
+<tr class="row-odd"><td><p>use-max-priority-association</p></td>
+<td><p>FALSE</p></td>
+<td><p>Wheter or not non-player associables, such as pistons, are only members of the regions with the highest priorities in which they are in. If set to <code class="docutils literal notranslate"><span class="pre">false</span></code>, non-player associables are members of all regions in which they are in, which means that pistons, for example, can push blocks from inside a region outwards into a surrounding region (unless there is only a protected <a class="reference internal" href="../regions/global-region/"><span class="doc">Global Region</span></a> outside). If set to <code class="docutils literal notranslate"><span class="pre">true</span></code>, pistons, for example, cannot push blocks from inside a region outwards into a surrounding protected region with a lower priority.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="gameplay">
+<h3>gameplay.*<a class="headerlink" href="#gameplay" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.5%" />
+<col style="width: 10.6%" />
+<col style="width: 63.8%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Setting</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>block-potions</p></td>
+<td><p>[]</p></td>
+<td><p>A list of potion types that cannot be used. The list of possible potion types can be <a class="reference external" href="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html">found in Bukkit</a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>block-potions-overly-reliably</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether WorldGuard should try extra hard to block the list of potions mentioned in <cite>block-potions</cite>. This is generally not needed and enabling this may block more than you want.</p></td>
+</tr>
+<tr class="row-even"><td><p>disable-conduit-effects</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether WorldGuard should disable effects from conduits.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="topic">
+<p class="topic-title">Example: Blocking the use of night vision and speed potions</p>
+<p>The names <a class="reference external" href="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html">found in Bukkit</a> are used:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="n">block</span><span class="o">-</span><span class="n">potions</span><span class="p">:</span> <span class="p">[</span><span class="n">night_vision</span><span class="p">,</span> <span class="n">speed</span><span class="p">]</span>
+</span></pre></div>
+</div>
+</aside>
+</section>
+<section id="simulation-sponge">
+<h3>simulation.sponge.*<a class="headerlink" href="#simulation-sponge" title="Link to this heading">¶</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>These settings are not included in the config by default. This feature is deprecated and marked for removal in a future version.</p>
+</div>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.5%" />
+<col style="width: 10.6%" />
+<col style="width: 63.8%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Setting</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>enable</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether to simulate sponge blocks similar to the way they worked in Minecraft Classic. Between the introduction of survival Minecraft and Minecraft 1.8 (several years), sponges did not work, but this setting is now obsolete and its use is no longer recommended.</p></td>
+</tr>
+<tr class="row-odd"><td><p>radius</p></td>
+<td><p>3</p></td>
+<td><p>The radius of the sponge’s action.</p></td>
+</tr>
+<tr class="row-even"><td><p>redstone</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether Redstone can control the simulated Sponge blocks.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="default">
+<h3>default.*<a class="headerlink" href="#default" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.5%" />
+<col style="width: 10.6%" />
+<col style="width: 63.8%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Setting</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>pumpkin-scuba</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether players with pumpkins (but not Jack o’ Lanterns) in their helmet slot will have water breathing.</p></td>
+</tr>
+<tr class="row-odd"><td><p>disable-health-regain</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether automatic health regeneration should be disabled.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="physics">
+<h3>physics.*<a class="headerlink" href="#physics" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.5%" />
+<col style="width: 10.6%" />
+<col style="width: 63.8%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Setting</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>no-physics-gravel</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether gravel should not fall.</p></td>
+</tr>
+<tr class="row-odd"><td><p>no-physics-sand</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether sand should not fall.</p></td>
+</tr>
+<tr class="row-even"><td><p>vine-like-rope-ladders</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether ladders will work like vines in that they won’t break as long as the top most ladder block is in a valid location (it’s on a wall).</p></td>
+</tr>
+<tr class="row-odd"><td><p>allow-portal-anywhere</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether portal blocks can be placed in invalid locations.</p></td>
+</tr>
+<tr class="row-even"><td><p>disable-water-damage-blocks</p></td>
+<td><p>[]</p></td>
+<td><p>A list of block types that will not be broken by water.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="topic">
+<p class="topic-title">Example: Preventing Redstone and Redstone torches from being damanged by water</p>
+<p>Material names are from <a class="reference external" href="https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html">Bukkit’s Material list</a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="n">physics</span><span class="p">:</span>
+</span><span data-line="2">    <span class="n">disable</span><span class="o">-</span><span class="n">water</span><span class="o">-</span><span class="n">damage</span><span class="o">-</span><span class="n">blocks</span><span class="p">:</span> <span class="p">[</span><span class="n">redstone_wire</span><span class="p">,</span> <span class="n">redstone_torch</span><span class="p">]</span>
+</span></pre></div>
+</div>
+</aside>
+</section>
+<section id="ignition">
+<h3>ignition.*<a class="headerlink" href="#ignition" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.5%" />
+<col style="width: 10.6%" />
+<col style="width: 63.8%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Setting</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>block-tnt</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the detonation of TNT should be blocked.</p></td>
+</tr>
+<tr class="row-odd"><td><p>block-tnt-block-damage</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether TNT should do no block damage.</p></td>
+</tr>
+<tr class="row-even"><td><p>block-lighter</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the use of flint and steel should be disabled.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="fire">
+<h3>fire.*<a class="headerlink" href="#fire" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.5%" />
+<col style="width: 10.6%" />
+<col style="width: 63.8%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Setting</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>disable-lava-fire-spread</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether lava should be able to create fires.</p></td>
+</tr>
+<tr class="row-odd"><td><p>disable-all-fire-spread</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether fire can spread.</p></td>
+</tr>
+<tr class="row-even"><td><p>disable-fire-spread-blocks</p></td>
+<td><p>[]</p></td>
+<td><p>A list of block types that fire cannot spread to, or at least damage.</p></td>
+</tr>
+<tr class="row-odd"><td><p>lava-spread-blocks</p></td>
+<td><p>[]</p></td>
+<td><p>If set (as a list of block types), the only blocks on which lava could flow on (other than air) would be the ones in the list.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="mobs">
+<h3>mobs.*<a class="headerlink" href="#mobs" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.5%" />
+<col style="width: 10.6%" />
+<col style="width: 63.8%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Setting</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>block-creeper-explosions</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the effects of Creeper explosions should be disabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p>block-creeper-block-damage</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether block damage caused by Creeper explosions should be disabled.</p></td>
+</tr>
+<tr class="row-even"><td><p>block-wither-explosions</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the effects of Wither explosions should be disabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p>block-wither-block-damage</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether block damage caused by Wither explosions should be disabled.</p></td>
+</tr>
+<tr class="row-even"><td><p>block-wither-skull-explosions</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the effects of Wither skulls should be disabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p>block-wither-skull-block-damage</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether block damage caused by Wither skulls should be disabled.</p></td>
+</tr>
+<tr class="row-even"><td><p>block-enderdragon-block-damage</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether block damage caused by Enderdragons should be disabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p>block-enderdragon-portal-creation</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the ability of the Enderdragon to create a portal should be disabed.</p></td>
+</tr>
+<tr class="row-even"><td><p>block-fireball-explosions</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the effects of fireball explosions should be disabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p>block-fireball-block-damage</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether block damage caused by fireball block damage should be disabled.</p></td>
+</tr>
+<tr class="row-even"><td><p>anti-wolf-dumbness</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the wolf should be invincible in a number of situations, including, but not limited to, walking into lava and getting stuck. When wolves were first introduced into the game, Minecraft had very poor path finding and so wolves would frequently walk into lava or fire. However, as the AI of helper mobs in Minecraft have still much to improve, this setting may still prove to be useful.</p></td>
+</tr>
+<tr class="row-odd"><td><p>allow-tamed-spawns</p></td>
+<td><p>TRUE</p></td>
+<td><p>Whether tamable mobs (wolves, horses, cats, etc.) should be spawnable.</p></td>
+</tr>
+<tr class="row-even"><td><p>disable-enderman-griefing</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the ability of Endermen to pick up and place blocks should be disabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p>disable-snowman-trails</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the feature of snowmen placing snow trails should be disabled.</p></td>
+</tr>
+<tr class="row-even"><td><p>block-painting-destroy</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the ability of mobs to break paintings should be disabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p>block-item-frame-destroy</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the ability of mobs to break item frames should be disabled.</p></td>
+</tr>
+<tr class="row-even"><td><p>block-armor-stand-destroy</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the ability of mobs to break armor stands should be disabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p>block-plugin-spawning</p></td>
+<td><p>TRUE</p></td>
+<td><p>Whether mobs spawned by plugins should be blocked when needed to apply some of these configuration options or to protect areas of the world.</p></td>
+</tr>
+<tr class="row-even"><td><p>block-above-ground-slimes</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether slimes spawning above ground should be disabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p>block-other-explosions</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether miscellaneous explosions should be disabled.</p></td>
+</tr>
+<tr class="row-even"><td><p>block-zombie-door-destruction</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the ability for zombies to break doors should be disabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p>block-vehicle-entry</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether mobs should be blocked from entering vehicles.</p></td>
+</tr>
+<tr class="row-even"><td><p>block-creature-spawn</p></td>
+<td><p>[]</p></td>
+<td><p>A list of entity types that should not spawn.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="player-damage">
+<h3>player-damage.*<a class="headerlink" href="#player-damage" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.5%" />
+<col style="width: 10.6%" />
+<col style="width: 63.8%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Setting</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>disable-fall-damage</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether fall damage should be disabled for players.</p></td>
+</tr>
+<tr class="row-odd"><td><p>disable-lava-damage</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether lava damage should be disabled for players.</p></td>
+</tr>
+<tr class="row-even"><td><p>disable-fire-damage</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether fire damage should be disabled for players.</p></td>
+</tr>
+<tr class="row-odd"><td><p>disable-lightning-damage</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether lightning damage should be disabled for players.</p></td>
+</tr>
+<tr class="row-even"><td><p>disable-drowning-damage</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether drowning damage should be disabled for players.</p></td>
+</tr>
+<tr class="row-odd"><td><p>disable-suffocation-damage</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether suffocation damage should be disabled for players.</p></td>
+</tr>
+<tr class="row-even"><td><p>disable-contact-damage</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether contact damage (cacti, etc.) should be disabled for players.</p></td>
+</tr>
+<tr class="row-odd"><td><p>teleport-on-suffocation</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether players should be teleported to a safe location (if found, and which is usually up) when they are suffocating. This feature potentially allows players to cross vertical barriers.</p></td>
+</tr>
+<tr class="row-even"><td><p>disable-void-damage</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether void damage (falling into the bottom of the world) should be disabled for players.</p></td>
+</tr>
+<tr class="row-odd"><td><p>teleport-on-void-falling</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether players should be teleported to a safe location (if found) when they are falling into the void. This feature potentially allows players to enter areas that they normally may not be able to go.</p></td>
+</tr>
+<tr class="row-even"><td><p>reset-fall-on-void-teleport</p></td>
+<td><p>FALSE</p></td>
+<td><p>Resets fall distance on void teleporting. Leaving this off will likely let the player die of fall damage (though their items will not be in the void, at least).</p></td>
+</tr>
+<tr class="row-odd"><td><p>disable-explosion-damage</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether explosion damage should be disabled for players.</p></td>
+</tr>
+<tr class="row-even"><td><p>disable-mob-damage</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether damage from mobs should be disabled for players.</p></td>
+</tr>
+<tr class="row-odd"><td><p>disable-death-messages</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether death messages for players should be disabled.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="crops">
+<h3>crops.*<a class="headerlink" href="#crops" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.5%" />
+<col style="width: 10.6%" />
+<col style="width: 63.8%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Setting</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>disable-creature-trampling</p></td>
+<td><p>FALSE</p></td>
+<td><p>Disable the trampling of farmland by creatures.</p></td>
+</tr>
+<tr class="row-odd"><td><p>disable-player-trampling</p></td>
+<td><p>FALSE</p></td>
+<td><p>Disable the trampling of farmland by players.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="turtle-egg">
+<h3>turtle-egg.*<a class="headerlink" href="#turtle-egg" title="Link to this heading">¶</a></h3>
+<p>Same options as the crops section, but for turtle eggs.</p>
+</section>
+<section id="sniffer-egg">
+<h3>sniffer-egg.*<a class="headerlink" href="#sniffer-egg" title="Link to this heading">¶</a></h3>
+<p>Same options as the crops section, but for sniffer eggs.</p>
+</section>
+<section id="weather">
+<h3>weather.*<a class="headerlink" href="#weather" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.5%" />
+<col style="width: 10.6%" />
+<col style="width: 63.8%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Setting</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>prevent-lightning-strike-blocks</p></td>
+<td><p>[]</p></td>
+<td><p>A list of block types where lightning should not be able to strike.</p></td>
+</tr>
+<tr class="row-odd"><td><p>disable-lightning-strike-fire</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether fire caused by lightning should be blocked.</p></td>
+</tr>
+<tr class="row-even"><td><p>disable-thunderstorm</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether thunderstorms should never start.</p></td>
+</tr>
+<tr class="row-odd"><td><p>disable-weather</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether weather events (including thunderstorms) should never start.</p></td>
+</tr>
+<tr class="row-even"><td><p>disable-pig-zombification</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the “zombification” of pigs when they are struck by lightning should be disabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p>disable-villager-witchification</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the “witchification” of villagers when they are struck by lightning should be disabed.</p></td>
+</tr>
+<tr class="row-even"><td><p>disable-powered-creepers</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the possibility of creepers becoming powered when they are struck by lightning should be disabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p>always-raining</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether it should always be raining or snowing.</p></td>
+</tr>
+<tr class="row-even"><td><p>always-thundering</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether it should always be thundering.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="dynamics">
+<h3>dynamics.*<a class="headerlink" href="#dynamics" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.5%" />
+<col style="width: 10.6%" />
+<col style="width: 63.8%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Setting</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>disable-mushroom-spread</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the spread of mushrooms should be disabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p>disable-ice-melting</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the melting of ice should be disabled.</p></td>
+</tr>
+<tr class="row-even"><td><p>disable-snow-melting</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the melting of snow should be disabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p>disable-snow-formation</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the formation of snow should be disabled.</p></td>
+</tr>
+<tr class="row-even"><td><p>disable-ice-formation</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the formation of ice should be disabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p>disable-leaf-decay</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the decay of leaves should be disabled.</p></td>
+</tr>
+<tr class="row-even"><td><p>disable-grass-growth</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the growth of grass should be disabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p>disable-mycelium-spread</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the spread of mycelium should be disabled.</p></td>
+</tr>
+<tr class="row-even"><td><p>disable-vine-growth</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the growth of vines and kelp should be disabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p>disable-rock-growth</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the growth of rocks such as dripstones should be disabled.</p></td>
+</tr>
+<tr class="row-even"><td><p>disable-sculk-growth</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the growth of sculk should be disabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p>disable-crop-growth</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the growth of wheat, carrots, melons, etc should be disabled.</p></td>
+</tr>
+<tr class="row-even"><td><p>disable-soil-dehydration</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the dehydration of soil should be disabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p>disable-coral-block-fade</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether coral should remain alive when not in water.</p></td>
+</tr>
+<tr class="row-even"><td><p>disable-copper-block-fade</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the oxidation of copper blocks should be disabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p>snow-fall-blocks</p></td>
+<td><p>[]</p></td>
+<td><p>If set (as a list of block types), the only blocks on which snow can fall on would be the ones in the list.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="chest-protection">
+<h3>chest-protection.*<a class="headerlink" href="#chest-protection" title="Link to this heading">¶</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>These settings are not included in the config by default. Sign-based chest protection is deprecated and marked for removal in a future version. See <a class="reference internal" href="../chest-protection/"><span class="doc">Chest Protection</span></a> for details.</p>
+</div>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.5%" />
+<col style="width: 10.6%" />
+<col style="width: 63.8%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Setting</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>enable</p></td>
+<td><p>FALSE</p></td>
+<td><p>Enables <a class="reference internal" href="../chest-protection/"><span class="doc">Chest Protection</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>disable-off-check</p></td>
+<td><p>TRUE</p></td>
+<td><p>Even if chest protection is off, WorldGuard will block the creation of signs with <code class="docutils literal notranslate"><span class="pre">[Lock]</span></code> on them so that if chest protection is later enabled, players cannot have preemptively lock chests that they did not own to begin with. This option, if set to <code class="docutils literal notranslate"><span class="pre">true</span></code>, disables this check when chest protection is off.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="blacklist">
+<h3>blacklist.*<a class="headerlink" href="#blacklist" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.5%" />
+<col style="width: 10.6%" />
+<col style="width: 63.8%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Setting</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>use-as-whitelist</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether the purpose of the blacklist should be inverted, where the only things that can be done are the ones that are denied on the blacklist.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="blacklist-logging">
+<h3>blacklist.logging.*<a class="headerlink" href="#blacklist-logging" title="Link to this heading">¶</a></h3>
+<p>These settings determine what the “log” action in the <a class="reference internal" href="../blacklist/"><span class="doc">Blacklist</span></a> does. Several logging targets can be enabled simultaneously.</p>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 21.1%" />
+<col style="width: 39.5%" />
+<col style="width: 39.5%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Setting</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>console:</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><blockquote>
+<div><p>enable</p>
+</div></blockquote>
+</td>
+<td><p>TRUE</p></td>
+<td><p>Whether logging to the console should be enabled.</p></td>
+</tr>
+<tr class="row-even"><td><p>database:</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><blockquote>
+<div><p>enable</p>
+</div></blockquote>
+</td>
+<td><p>FALSE</p></td>
+<td><p>Whether logging to a database should be enabled.</p></td>
+</tr>
+<tr class="row-even"><td><blockquote>
+<div><p>dsn</p>
+</div></blockquote>
+</td>
+<td><p><code class="docutils literal notranslate"><span class="pre">jdbc:mysql://localhost:3306/minecraft</span></code></p></td>
+<td><p>The connection string for the database. <code class="docutils literal notranslate"><span class="pre">minecraft</span></code> in the default is the name of the database.</p></td>
+</tr>
+<tr class="row-odd"><td><blockquote>
+<div><p>user</p>
+</div></blockquote>
+</td>
+<td><p>root</p></td>
+<td><p>The username to connect to the database with.</p></td>
+</tr>
+<tr class="row-even"><td><blockquote>
+<div><p>pass</p>
+</div></blockquote>
+</td>
+<td></td>
+<td><p>The password to connect to the database with.</p></td>
+</tr>
+<tr class="row-odd"><td><blockquote>
+<div><p>table</p>
+</div></blockquote>
+</td>
+<td><p>blacklist_events</p></td>
+<td><p>The table to use.</p></td>
+</tr>
+<tr class="row-even"><td><p>file:</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><blockquote>
+<div><p>enable</p>
+</div></blockquote>
+</td>
+<td><p>FALSE</p></td>
+<td><p>Whether logging to files should be enabled.</p></td>
+</tr>
+<tr class="row-even"><td><blockquote>
+<div><p>path</p>
+</div></blockquote>
+</td>
+<td><p>worldguard/logs/%Y-%m-%d.log</p></td>
+<td><p>The pattern for the log files.</p></td>
+</tr>
+<tr class="row-odd"><td><blockquote>
+<div><p>open-files</p>
+</div></blockquote>
+</td>
+<td><p>10</p></td>
+<td><p>The maximum number of file handles to have open at once (file handles with the operating system).</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="regions">
+<h3>regions.*<a class="headerlink" href="#regions" title="Link to this heading">¶</a></h3>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>You cannot override <code class="docutils literal notranslate"><span class="pre">use-creature-spawn-event</span></code> per-world.</p>
+</div>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 36.7%" />
+<col style="width: 10.2%" />
+<col style="width: 53.1%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Setting</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>wand</p></td>
+<td><p>minecraft:leather</p></td>
+<td><p>The ID of the item that is used to right click a block to inspect the regions affecting it. By default, this item is cow leather. Before, it was string but Minecraft added a use for string.</p></td>
+</tr>
+<tr class="row-odd"><td><p>disable-bypass-by-default</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether bypass permissions are disabled by default.</p></td>
+</tr>
+<tr class="row-even"><td><p>announce-bypass-status</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether a hint for <code class="docutils literal notranslate"><span class="pre">/region</span> <span class="pre">bypass</span></code> should be displayed at login.</p></td>
+</tr>
+<tr class="row-odd"><td><p>invincibility-removes-mobs</p></td>
+<td><p>FALSE</p></td>
+<td><p>If enabled, if a player is attacked while they are invincible due to the invincibility <a class="reference internal" href="../regions/flags/"><span class="doc">region flag</span></a>, then the attacking mob is removed from the world.</p></td>
+</tr>
+<tr class="row-even"><td><p>fake-player-build-override</p></td>
+<td><p>TRUE</p></td>
+<td><p>Whether players with a name that start with <code class="docutils literal notranslate"><span class="pre">[</span></code> and end with <code class="docutils literal notranslate"><span class="pre">]</span></code> should bypass all protection. This is only the case with third-party plugins and mods that use ‘fake players’ in lieu of firing the proper events.</p></td>
+</tr>
+<tr class="row-odd"><td><p>explosion-flags-block-entity-damage</p></td>
+<td><p>TRUE</p></td>
+<td><p>Whether the various <code class="docutils literal notranslate"><span class="pre">-explosion</span></code> <a class="reference internal" href="../regions/flags/"><span class="doc">region flags</span></a> should also disable entity damage when enabled.</p></td>
+</tr>
+<tr class="row-even"><td><p>high-frequency-flags</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether to handle frequently occurring events such as fire spread or fluid flow in regards to <a class="reference internal" href="../regions/flags/"><span class="doc">region flags</span></a> (such as <code class="docutils literal notranslate"><span class="pre">fire-spread</span></code>, <code class="docutils literal notranslate"><span class="pre">water-flow</span></code>, and <code class="docutils literal notranslate"><span class="pre">lava-flow</span></code>). This is disabled by default because those mentioned flags are rarely used and this setting may result in a performance impact in certain scenarios (many, many players and many, many regions).</p></td>
+</tr>
+<tr class="row-odd"><td><p>protect-against-liquid-flow</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether fluid flows between regions should be blocked. This prevents one player from griefing another by having lava or water flow into the other player’s region. This setting must be enabled in tandem with <code class="docutils literal notranslate"><span class="pre">high-frequency-flags</span></code> for it to take effect.</p></td>
+</tr>
+<tr class="row-even"><td><p>use-paper-entity-origin</p></td>
+<td><p>FALSE</p></td>
+<td><p>When on a <a class="reference external" href="https://papermc.io">Paper server</a>, this option will treat entities as members of the region where they spawned, not where they currently are. This will automatically prevent mobs that wander into regions from accidentally destroying it. (Note that this is separate from mobs that are targetting players in regions - that is still dependent on the player’s permission, not the mob’s.)</p></td>
+</tr>
+<tr class="row-odd"><td><p>max-claim-volume</p></td>
+<td><p>30000</p></td>
+<td><p>The maximum number of blocks in a region that can be claimed with <a class="reference internal" href="../regions/claiming/"><span class="doc">self-serve region claiming</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>claim-only-inside-existing-regions</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether players can only claim within existing regions.</p></td>
+</tr>
+<tr class="row-odd"><td><p>cancel-chat-without-recipients</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether chat messages without recipients (for example when all online players are in regions where <code class="docutils literal notranslate"><span class="pre">receive-chat</span></code> is set to <code class="docutils literal notranslate"><span class="pre">deny</span></code>) should be cancelled. Turning this on may prevent external chat sinks (e.g. a Discord bridge plugin) from showing these messages.</p></td>
+</tr>
+<tr class="row-even"><td><p>nether-portal-protection</p></td>
+<td><p>TRUE</p></td>
+<td><p>Whether any portal travel that might lead to portal creation in a protected area should be blocked.</p></td>
+</tr>
+<tr class="row-odd"><td><p>set-parent-on-claim</p></td>
+<td></td>
+<td><p>A region ID that newly created regions with <a class="reference internal" href="../regions/claiming/"><span class="doc">self-serve region claiming</span></a> automatically get assigned as <a class="reference external" href="../regions/priorities/#inheritance">parent</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>location-flags-only-inside-regions</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether locations for location-type <a class="reference internal" href="../regions/flags/"><span class="doc">Region Flags</span></a> have to be whithin the corresponding region.</p></td>
+</tr>
+<tr class="row-odd"><td><p>titles-always-use-default-times</p></td>
+<td><p>TRUE</p></td>
+<td><p>Set this to true if you use greeting/farewell titles and another plugin makes the titles disappear too quickly.</p></td>
+</tr>
+<tr class="row-even"><td><p>max-region-count-per-player:</p></td>
+<td></td>
+<td><p>The maximum number of regions that can be claimed by a player (via <a class="reference internal" href="../regions/claiming/"><span class="doc">self-serve region claiming</span></a>). This setting can differ per permission-group if new entries are added below (like for ‘default’). ‘default’ is the default limit. If a player is a member of several groups that are listed, then the player receives the highest limit.</p></td>
+</tr>
+<tr class="row-odd"><td><blockquote>
+<div><p>default</p>
+</div></blockquote>
+</td>
+<td><p>7</p></td>
+<td><p>(See above.)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="topic">
+<p class="topic-title">Example: Setting different region count limits per group</p>
+<p>Each permission group is given its own entry:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="nb">max</span><span class="o">-</span><span class="n">region</span><span class="o">-</span><span class="n">count</span><span class="o">-</span><span class="n">per</span><span class="o">-</span><span class="n">player</span><span class="p">:</span>
+</span><span data-line="2">    <span class="n">default</span><span class="p">:</span> <span class="mi">7</span>
+</span><span data-line="3">    <span class="n">builders</span><span class="p">:</span> <span class="mi">20</span>
+</span><span data-line="4">    <span class="n">moderators</span><span class="p">:</span> <span class="mi">40</span>
+</span></pre></div>
+</div>
+</aside>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>There are also some additional settings in this category, but we do not recommend changing them:</p>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 36.7%" />
+<col style="width: 10.2%" />
+<col style="width: 53.1%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Setting</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>enable</p></td>
+<td><p>TRUE</p></td>
+<td><p>Whether support for defining regions should be enabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p>use-creature-spawn-event</p></td>
+<td><p>TRUE</p></td>
+<td><p>Whether the creature move event should be handled for applying some mob-related <a class="reference internal" href="../regions/flags/"><span class="doc">region flags</span></a>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="regions-uuid-migration">
+<h3>regions.uuid-migration.*<a class="headerlink" href="#regions-uuid-migration" title="Link to this heading">¶</a></h3>
+<p>These settings are used to migrate from old versions of WorldGuard and Minecraft. In the past, Minecraft accounts were identified purely by their name, but around the end of Minecraft 1.7, Minecraft moved to a system where players were (internally) identified by “UUIDs” and players <em>could change their names</em>. However, all older configuration files still referred to players by their name, so the following settings enable the conversion to UUID on server start for one time (the setting is automatically disabled).</p>
+<p>UUID migration can be run repeatedly (with repeated changing of the setting) and it will only convert names that have not yet been converted to UUIDs. If there are no names to convert, then nothing will happen.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>You cannot override these settings per-world.</p>
+</div>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.5%" />
+<col style="width: 10.6%" />
+<col style="width: 63.8%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Setting</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>perform-on-next-start</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether UUID migration should be performed on next server start (once). If the configuration file does not yet have this setting, WorldGuard will assume its value is <code class="docutils literal notranslate"><span class="pre">true</span></code>, perform the conversion, then set the setting to <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>keep-names-that-lack-uuids</p></td>
+<td><p>TRUE</p></td>
+<td><p>Sometimes, a name that was added to a region does not actually exist. This option keeps names that can’t be converted in the region data so that they can later be removed or re-converted (by adjusting the settings in this section to re-run the conversion).</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="regions-sql">
+<h3>regions.sql.*<a class="headerlink" href="#regions-sql" title="Link to this heading">¶</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>These settings are not included in the config by default. SQL support for WorldGuard region storage is deprecated and marked for removal in a future version. Please migrate to YAML storage. See <a class="reference internal" href="../regions/storage/"><span class="doc">Storage Drivers</span></a> for more information.</p>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>You cannot override these settings per-world.</p>
+</div>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 21.1%" />
+<col style="width: 39.5%" />
+<col style="width: 39.5%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Setting</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>use</p></td>
+<td><p>FALSE</p></td>
+<td><p>Whether MySQL should be used to store data (see <a class="reference internal" href="../regions/storage/"><span class="doc">Storage Drivers</span></a>).</p></td>
+</tr>
+<tr class="row-odd"><td><p>dsn</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">jdbc:mysql://localhost/worldguard</span></code></p></td>
+<td><p>The connection string for the database. <code class="docutils literal notranslate"><span class="pre">worldguard</span></code> in the default is the name of the database.</p></td>
+</tr>
+<tr class="row-even"><td><p>username</p></td>
+<td><p>worldguard</p></td>
+<td><p>The username to connect to the database with.</p></td>
+</tr>
+<tr class="row-odd"><td><p>password</p></td>
+<td><p>worldguard</p></td>
+<td><p>The password to connect to the database with.</p></td>
+</tr>
+<tr class="row-even"><td><p>table-prefix</p></td>
+<td></td>
+<td><p>The table prefix.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="subpages">
+<h2>Subpages<a class="headerlink" href="#subpages" title="Link to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../host-keys/">Host Keys</a></li>
+</ul>
+</div>
+</section>
+</section>
+
+        </article><button class="back-to-top" type="button">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+  </svg>
+  <span>Back to top</span>
+</button><div class="navigation flex print:hidden"><div class="navigation-prev">
+    <a href="../install/">
+      <i class="i-lucide chevron-left"></i>
+      <div class="page-info">
+        <span>Previous</span><div class="title">Installation</div></div>
+    </a>
+  </div><div class="navigation-next">
+    <a href="../host-keys/">
+      <div class="page-info">
+        <span>Next</span>
+        <div class="title">Host Keys</div>
+      </div>
+      <i class="i-lucide chevron-right"></i>
+    </a>
+  </div></div><div class="sponsorbox">
+    <div class="sponsor apexhosting">
+        <a href="https://billing.apexminecrafthosting.com/aff.php?aff=3108">
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 750 150" style="enable-background:new 0 0 750 150;" xml:space="preserve">
+            <style type="text/css">
+                .st0{fill:var(--sponsor-logo-color);}
+                .st1{display:none;}
+            </style>
+            <g id="Layer_1_1_">
+                <g>
+                    <path id="XMLID_29_" class="st0" d="M352.5,71.7c0,11.8-0.1,23.5,0.1,35.3c0.1,4.5-1.6,7.1-5.7,9c-16.5,7.3-32.9,15-49.5,22.1
+                        c-2.5,1.1-6.4,0.9-9-0.2c-17.1-7.4-34-15.2-51-22.8c-3.5-1.6-4-4.7-4-8c0-7.6,0-15.2,0-22.8c0-15.6,0-31.3,0-46.9
+                        c0-7.3,0.9-8.5,7.6-10.7c15.2-5,30.3-10.1,45.7-14.6c4-1.2,8.9-1.2,12.9,0c15.2,4.5,30.2,9.8,45.2,14.8c6.3,2.1,7.5,3.7,7.6,10.6
+                        C352.5,48.7,352.5,60.2,352.5,71.7L352.5,71.7z M247.7,44.9c0,19.6,0,38.5,0.1,57.3c0,1,1.1,2.4,2.1,2.9
+                        c7.6,3.6,15.2,7.1,22.9,10.6c4.5,2,9,4,13.8,6.1c0-19.7,0-38.8-0.1-57.8c0-0.8-0.8-2.1-1.5-2.5C272.9,56,260.7,50.6,247.7,44.9z
+                        M339,44.6c-12.3,5.7-23.8,11.1-35.3,16.3c-2.2,1-2.9,2.2-2.9,4.6c0.1,16.6,0.1,33.2,0.1,49.8c0,1.7,0,5.3,0,5.3s-0.1,0.3,0.1,0.4
+                        s24.9-10.9,36.6-16.2c0.7-0.3,1.4-1.7,1.4-2.6C339.1,83.3,339.1,64.4,339,44.6z M260.6,35c0,0.1,21.8,10,32.4,14.7
+                        c0.6,0.3,1.6,0.2,2.3-0.1c10.1-4.6,20.1-9.3,31.3-14.4c-9.2-3-17.3-5.8-25.4-8.3c-3-0.9-6.4-2.7-9.1-1.9
+                        C281.7,27.6,260.6,34.8,260.6,35z"/>
+                    <path id="XMLID_15_" class="st0" d="M171.1,63.2c-7.2,0-14.2,0-21.4,0c0,2.6,0,4.7,0,7.3c6.1,0,12,0,18.1,0c0,3.9,0,7.3,0,11.2
+                        c-5.9,0-11.8,0-18.1,0c0,2.9,0,5.3,0,8.2c7.4,0,14.7,0,22.3,0c0,3.8,0,7.1,0,10.8c-12.1,0-24.3,0-36.9,0c0-16,0-32.1,0-48.5
+                        c11.9,0,23.8,0,36,0C171.1,55.7,171.1,59.2,171.1,63.2z"/>
+                    <path id="XMLID_27_" class="st0" d="M102.7,86c0,5,0,9.7,0,14.7c-4.9,0-9.5,0-14.3,0c0-14.6,0-48.5,0-48.5s15.9-1.9,29.8,1.3
+                        c8.1,1.4,11.5,8.3,10.8,17.6c-0.7,7.8-5.9,13.2-13.8,14.1C111.3,85.6,107.3,85.7,102.7,86z M102.8,74.6c2.5,0,3.9,0,5.9-0.1
+                        c2.2,0,4.1-0.3,5.5-2.6c0.9-1.5,0.8-4.7-0.2-6.1c-1.5-3.7-11.2-2.4-11.2-2.4S102.8,70.5,102.8,74.6z"/>
+                    <path id="XMLID_10_" class="st0" d="M191.9,75.6c-4.6-7.6-9.2-15.2-14.2-23.4c-0.1-0.1,16.1,0,16.1,0s4.9,9.2,6.6,12.5
+                        c1.7-3.2,6.8-12.5,6.8-12.5h16c0,0-10,15.7-15,23.5c4.9,8.1,15,25,15,25h-15.7c0,0-5.6-9.4-7.7-13.4c-1.5,2.8-4,7.5-4,7.5l-3,5.9
+                        c0,0-16.5,0.1-16.4,0C181.7,92,186.8,83.8,191.9,75.6z"/>
+                    <path id="XMLID_25_" class="st0" d="M49.1,100.5c0,0-9,0-13.8,0C40.7,84,46,67.9,51.4,51.6c4.3,0,14-0.1,14.6-0.1
+                        c0,0,0.8,1.9,0.9,2.4c5.1,15,15,45.9,15,46.5c-4.6,0-14,0-14,0l-1.4-5.8l-15.1-0.3L49.1,100.5z M59.1,67.8c-0.3,0-0.6,0-1,0
+                        c-1.4,5.4-2.7,10.7-4.1,16.3c3.4,0,6.3,0,9.4,0C61.9,78.3,60.5,73,59.1,67.8z"/>
+                    <path id="XMLID_3_" class="st0" d="M102.8,74.6"/>
+                    <g>
+                        <path class="st0" d="M364,52h15v17h16.4V52h15.1v48.7h-15.1V81h-16.4v19.7h-15V52z"/>
+                        <path class="st0" d="M418.7,76.4c0-7.9,2.2-14.1,6.6-18.6c4.4-4.4,10.6-6.6,18.5-6.6c8.1,0,14.3,2.2,18.7,6.5s6.6,10.4,6.6,18.3
+                            c0,5.7-1,10.4-2.9,14c-1.9,3.6-4.7,6.5-8.3,8.5s-8.1,3-13.5,3c-5.5,0-10-0.9-13.6-2.6c-3.6-1.7-6.5-4.5-8.7-8.3
+                            C419.8,86.8,418.7,82.1,418.7,76.4z M433.8,76.4c0,4.9,0.9,8.4,2.7,10.6c1.8,2.1,4.3,3.2,7.5,3.2c3.2,0,5.7-1.1,7.5-3.2
+                            c1.8-2.1,2.7-5.9,2.7-11.3c0-4.6-0.9-7.9-2.8-10c-1.8-2.1-4.4-3.2-7.5-3.2c-3,0-5.5,1.1-7.3,3.2
+                            C434.7,67.9,433.8,71.5,433.8,76.4z"/>
+                        <path class="st0" d="M474.6,84.6l14.3-0.9c0.3,2.3,0.9,4.1,1.9,5.3c1.5,2,3.8,3,6.6,3c2.1,0,3.8-0.5,5-1.5c1.2-1,1.7-2.2,1.7-3.5
+                            c0-1.3-0.6-2.4-1.7-3.4c-1.1-1-3.7-1.9-7.7-2.8c-6.6-1.5-11.3-3.5-14.1-5.9c-2.8-2.5-4.2-5.6-4.2-9.4c0-2.5,0.7-4.9,2.2-7.1
+                            c1.4-2.2,3.6-4,6.5-5.2c2.9-1.3,6.9-1.9,12-1.9c6.2,0,11,1.2,14.2,3.5c3.3,2.3,5.2,6,5.8,11L503,66.5c-0.4-2.2-1.2-3.8-2.4-4.8
+                            c-1.2-1-2.9-1.5-5-1.5c-1.7,0-3.1,0.4-4,1.1c-0.9,0.7-1.3,1.6-1.3,2.7c0,0.8,0.4,1.5,1.1,2.1c0.7,0.6,2.4,1.2,5,1.8
+                            c6.6,1.4,11.3,2.9,14.1,4.3c2.8,1.5,4.9,3.2,6.2,5.4c1.3,2.1,1.9,4.5,1.9,7.2c0,3.1-0.9,6-2.6,8.6c-1.7,2.6-4.1,4.6-7.2,6
+                            c-3.1,1.4-7,2-11.7,2c-8.3,0-14-1.6-17.2-4.8S475.1,89.5,474.6,84.6z"/>
+                        <path class="st0" d="M523,52h45.7v12h-15.3v36.7h-15V64H523V52z"/>
+                        <path class="st0" d="M576.1,52h15.1v48.7h-15.1V52z"/>
+                        <path class="st0" d="M602,52h14l18.3,26.9V52h14.2v48.7h-14.2L616.2,74v26.7H602V52z"/>
+                        <path class="st0" d="M683.1,83.1V72.9h23.2v20.8c-4.4,3-8.4,5.1-11.8,6.2s-7.5,1.6-12.2,1.6c-5.8,0-10.5-1-14.1-3
+                            c-3.6-2-6.5-4.9-8.5-8.8c-2-3.9-3-8.4-3-13.4c0-5.3,1.1-9.9,3.3-13.9c2.2-3.9,5.4-6.9,9.6-8.9c3.3-1.6,7.7-2.4,13.3-2.4
+                            c5.4,0,9.4,0.5,12.1,1.5c2.7,1,4.9,2.5,6.6,4.5c1.8,2,3.1,4.6,4,7.8l-14.5,2.6c-0.6-1.8-1.6-3.2-3-4.2c-1.4-1-3.2-1.5-5.5-1.5
+                            c-3.3,0-5.9,1.1-7.9,3.4s-2.9,5.9-2.9,10.9c0,5.3,1,9,3,11.3c2,2.3,4.7,3.4,8.3,3.4c1.7,0,3.3-0.2,4.8-0.7
+                            c1.5-0.5,3.3-1.3,5.2-2.5v-4.6H683.1z"/>
+                    </g>
+                </g>
+            </g>
+            <g id="Layer_2_1_" class="st1">
+            </g>
+            </svg>
+            <p>We recommend ApexHosting!</p>
+        </a>
+    </div>
+</div></div>
+    </div>
+  </main>
+</div>
+<footer class="sy-foot">
+  <div class="sy-foot-inner sy-container mx-auto">
+    <div class="sy-foot-reserved md:flex justify-between items-center">
+      <div class="sy-foot-copyright"><p>2015-2026, WorldGuard Team</p>
+  
+  <p>
+    Made with
+    
+    <a href="https://www.sphinx-doc.org/">Sphinx</a> and
+    
+    <a href="https://shibuya.lepture.com">Shibuya theme</a>.
+  </p>
+</div>
+      <div class="sy-foot-socials">
+<a href="https://github.com/EngineHub/WorldGuard" aria-label="GitHub">
+  <iconify-icon icon="simple-icons:github"></iconify-icon>
+</a>
+<a href="https://discord.gg/enginehub" aria-label="Discord">
+  <iconify-icon icon="simple-icons:discord"></iconify-icon>
+</a></div>
+    </div>
+  </div>
+</footer>
+      <script src="../_static/documentation_options.js?v=618d875b"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../_static/shibuya.js?v=cac61aee"></script></body>
+</html>

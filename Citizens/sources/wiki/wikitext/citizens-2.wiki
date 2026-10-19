@@ -1,0 +1,4 @@
+Next generation version of Citizens being developed, currently in indev.
+
+See also: [https://github.com/aPunch/Citizens2 Citizens2 on github]
+[[Category:Wiki]]

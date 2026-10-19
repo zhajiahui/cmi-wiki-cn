@@ -1,0 +1,68 @@
+
+# MMOItems
+
+Download **MMOItems** [here](https://www.spigotmc.org/resources/mmoitems-premium.39267/)
+
+### Here you can download the example package shown in this tutorial
+
+
+## Known limitations
+
+
+## Connect an MMOItem to an ItemsAdder item
+
+### Use the command /mmoitems browse
+
+![](<../../../.gitbook/assets/mmoitems_013.png>)
+
+### Create a new MMOItem
+
+![](<../../../.gitbook/assets/mmoitems_007.png>)
+
+![](<../../../.gitbook/assets/mmoitems_010.png>)
+
+### Add all the attributes you want, for example magic damage etc
+
+![](<../../../.gitbook/assets/mmoitems_012.png>)
+
+### MMOItem preview inside /mmoitems browse
+
+![](<../../../.gitbook/assets/mmoitems_011.png>)
+
+### Create your .yml file as usual and add all the properties for the ItemsAdder item
+
+`ItemsAdder/contents/mmoitems_example/configs/example.yml`
+
+As you can see I set a new attribute called **`mmoitem`** and also **`type`** and **`id`**.\
+These are used to **connect** the **two items**.
+
+```yaml
+info:
+  namespace: mmoitems_example
+items:
+  test:
+    display_name: ""
+    permission: example_item
+    mmoitem:
+      type: SWORD
+      id: TEST
+    resource:
+      material: DIAMOND_SWORD
+      generate: true
+      textures:
+      - item/test.png
+    durability:
+      max_custom_durability: 1324
+```
+
+### Create your .png texture as usual
+
+`ItemsAdder/contents/mmoitems_example/resourcepack/mmoitems_example/textures/item/test.png`
+
+### Get the item
+
+Use the command `/iaget mmoitems_example:test` to get your finished item
+
+![](../../../.gitbook/assets/mmoitems_008.png)
+
+![](<../../../.gitbook/assets/mmoitems_009.png>)

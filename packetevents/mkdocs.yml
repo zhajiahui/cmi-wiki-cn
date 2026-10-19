@@ -1,3 +1,9 @@
 site_name: packetevents 中文资料
 nav:
 - 插件说明: index.md
+- 插件 Wiki:
+  - PacketEvents 是什么？: wiki/index.md
+  - 前置知识: wiki/introduction/prerequisites.md
+  - 嵌入依赖的问题: wiki/introduction/the-problem-of-bundling.md
+  - 常见问题: wiki/faq.md
+  - PacketEvents 项目说明: wiki/readme.md

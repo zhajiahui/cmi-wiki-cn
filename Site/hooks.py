@@ -1,9 +1,10 @@
 """Assemble the independent plugin documentation projects for one MkDocs site."""
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import urlsplit, unquote
 import json
 from functools import lru_cache
 import posixpath
+import re
 import yaml
 import jieba
 from bs4 import BeautifulSoup
@@ -110,13 +111,6 @@ def on_page_content(html,*,page,config,files):
             anchor=soup.new_tag('a',id=item['id'])
             anchor['class']='config-key-anchor'
             line.insert_before(anchor)
-    # MkDocs rewrites Markdown image URLs, but leaves raw video attributes alone.
-    for media in soup.find_all(['video','source']):
-        for attr in ['src','poster']:
-            value=media.get(attr)
-            if not value or urlsplit(value).scheme or value.startswith('/'):continue
-            target=posixpath.normpath(posixpath.join(posixpath.dirname(page.file.src_uri),value))
-            media[attr]=get_relative_url(target,page.url)
     if not prefix:return str(soup)
     for row in soup.select('table tbody tr'):
         first=row.find('td')
@@ -128,7 +122,28 @@ def on_page_content(html,*,page,config,files):
 
 def on_page_markdown(markdown,*,page,config,files):
     page.edit_url=page.meta['edit_url']
-    return markdown
+    # Native Wiki HTML links bypass MkDocs' Markdown link rewriting. Resolve them
+    # against the source page before directory URLs add another path component.
+    saved=[]
+    def keep(match):
+        saved.append(match[0]);return 'WIKILITERAL'+str(len(saved)-1)+'END'
+    text=re.sub(r'^([ \t]*(?:>\s*)?)(`{3,}|~{3,})[^\n]*\n[\s\S]*?^\1\2\s*$',keep,markdown,flags=re.M)
+    text=re.sub(r'<pre\b[^>]*>[\s\S]*?</pre>',keep,text,flags=re.I)
+    text=re.sub(r'(?<!`)(`{1,2})([^`\n]+)\1(?!`)',keep,text)
+    def rewrite_tag(match):
+        def rewrite_attribute(attribute):
+            value=attribute[3];parts=urlsplit(value)
+            if parts.scheme or parts.netloc or not parts.path or parts.path.startswith('/'):return attribute[0]
+            source=posixpath.normpath(posixpath.join(posixpath.dirname(page.file.src_uri),unquote(parts.path)))
+            target=files.get_file_from_path(source)
+            if target is None:return attribute[0]
+            value=get_relative_url(target.url,page.url)
+            if parts.query:value+='?'+parts.query
+            if parts.fragment:value+='#'+parts.fragment
+            return attribute[1]+'='+attribute[2]+value+attribute[2]
+        return re.sub(r'\b(href|src|poster)=("|\')(.*?)\2',rewrite_attribute,match[0])
+    text=re.sub(r'<(?:a|img|video|source|audio|iframe)\b[^>]*>',rewrite_tag,text,flags=re.I)
+    return re.sub(r'WIKILITERAL(\d+)END',lambda match:saved[int(match[1])],text)
 
 @event_priority(-100)
 def on_post_build(config):
@@ -160,6 +175,17 @@ def on_post_build(config):
             name='.'.join(item['path'])
             description='\u200b'.join(jieba.cut(item['text']))
             index['docs'].append({'location':relative+'#'+item['id'],'title':configuration['project']+' · '+name,'text':'<p><code>'+escape(name)+'</code> '+escape(description)+'</p>','tags':[configuration['project']]})
+    # Some upstream pages repeat an explicit heading ID. Lunr combines their
+    # positions but retains only the last position table, which breaks highlighting.
+    # Keep one search document for each real destination and retain both texts.
+    unique_docs={}
+    for item in index['docs']:
+        location=item['location']
+        if location not in unique_docs:unique_docs[location]=item;continue
+        previous=unique_docs[location]
+        if item.get('text') and item['text']!=previous.get('text'):previous['text']=previous.get('text','')+'\n'+item['text']
+        previous['tags']=list(dict.fromkeys(previous.get('tags',[])+item.get('tags',[])))
+    index['docs']=list(unique_docs.values())
     path.write_text(json.dumps(index,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
     fix_chinese_search(config.site_dir)
 

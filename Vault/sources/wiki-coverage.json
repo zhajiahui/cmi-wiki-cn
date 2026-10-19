@@ -1,0 +1,172 @@
+{
+  "project": "Vault",
+  "snapshot": {
+    "date": "2026-10-19",
+    "timezone": "Asia/Taipei",
+    "manifest_generated_at": "2026-10-19T15:53:03.048Z"
+  },
+  "version": {
+    "supplied_component_version": "1.7.3-b131",
+    "repository_revision": "460cb21c6215433da526192720de40b6662f5f99"
+  },
+  "scope": "全部已发现官方非 API 文档；纯 API/SDK 接口参考排除，混合页面仅按列明片段排除。",
+  "candidate_urls": [
+    "https://github.com/MilkBowl/Vault/blob/460cb21c6215433da526192720de40b6662f5f99/README.md",
+    "https://dev.bukkit.org/projects/vault",
+    "https://dev.bukkit.org/projects/vault/pages/using-vault",
+    "https://github.com/MilkBowl/Vault/wiki/Home",
+    "https://github.com/MilkBowl/Vault/wiki/%23-An-editable-page-for-some-reason",
+    "https://github.com/MilkBowl/Vault/wiki/Official-Vault-MC-Server-!",
+    "https://github.com/MilkBowl/Vault/wiki/_Footer",
+    "https://milkbowl.github.io/VaultAPI/"
+  ],
+  "candidates": [
+    {
+      "url": "https://github.com/MilkBowl/Vault/blob/460cb21c6215433da526192720de40b6662f5f99/README.md",
+      "status": "translated",
+      "file": "wiki/readme.md",
+      "source_file": "sources/wiki/original/readme.md",
+      "source_sha256": "29579c7be382cc638c9c7f7d631b1b8662c9a365022d574b50662d1df2f672f0"
+    },
+    {
+      "url": "https://dev.bukkit.org/projects/vault",
+      "status": "translated",
+      "file": "wiki/plugin-page.md",
+      "source_file": "sources/wiki/original/plugin-page.md",
+      "source_sha256": "5d726d1d0d819ee1fda75640e5ff8c7d04cbfb6a98b807609ce58c8dc5d82732",
+      "excluded_api_sections": [
+        {
+          "url": "https://dev.bukkit.org/projects/vault",
+          "scope": "sections_only",
+          "reason": "仅排除 Java 接口接入和 Maven 仓库参考；配置、权限、支持项、统计字段和退出说明已全译。",
+          "sections": [
+            "Linking Vault",
+            "Repository Information for Maven Projects"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://dev.bukkit.org/projects/vault/pages/using-vault",
+      "status": "translated",
+      "file": "wiki/using-vault.md",
+      "source_file": "sources/wiki/original/using-vault.md",
+      "source_sha256": "99509911a666710b5c4579b8263eeecf420c5d74d9c57db5cf58ec753904a29e"
+    },
+    {
+      "url": "https://github.com/MilkBowl/Vault/wiki/Home",
+      "status": "unavailable",
+      "reason": "HTTP 页面可读，但当前仅为欢迎语、留言或第三方服务器广告，未构成可确认的官方使用文档。",
+      "source_file": "sources/wiki/original/wiki-home.md",
+      "http_status": 200,
+      "source_sha256": "ee574c66fa8f1dc698acf768c3404e167913fcbe21ce5cf2b39d08cd2e4ddd49"
+    },
+    {
+      "url": "https://github.com/MilkBowl/Vault/wiki/%23-An-editable-page-for-some-reason",
+      "status": "unavailable",
+      "reason": "HTTP 页面可读，但当前仅为欢迎语、留言或第三方服务器广告，未构成可确认的官方使用文档。",
+      "source_file": "sources/wiki/original/wiki-editable-page.md",
+      "http_status": 200,
+      "source_sha256": "23ece45fbf11366300a6fb868d07abf021512fe0cc59f8c46d7148802c2eafbb"
+    },
+    {
+      "url": "https://github.com/MilkBowl/Vault/wiki/Official-Vault-MC-Server-!",
+      "status": "unavailable",
+      "reason": "HTTP 页面可读，但当前仅为欢迎语、留言或第三方服务器广告，未构成可确认的官方使用文档。",
+      "source_file": "sources/wiki/original/wiki-server.md",
+      "http_status": 200,
+      "source_sha256": "372435cac6756494b4124d8870ac8b5335c9988bfd7660eed27bca2b724074d9"
+    },
+    {
+      "url": "https://github.com/MilkBowl/Vault/wiki/_Footer",
+      "status": "unavailable",
+      "reason": "HTTP 页面可读，但当前仅为欢迎语、留言或第三方服务器广告，未构成可确认的官方使用文档。",
+      "source_file": "sources/wiki/original/wiki-footer.md",
+      "http_status": 200,
+      "source_sha256": "876f3f59d88ee6788348d30c9d3e988a8e29fa0bea80b0fc3c0faee282918741"
+    },
+    {
+      "url": "https://milkbowl.github.io/VaultAPI/",
+      "status": "excluded_api",
+      "reason": "VaultAPI JavaDoc 接口参考目录，按目录整体排除。"
+    }
+  ],
+  "excluded_api": [
+    {
+      "url": "https://milkbowl.github.io/VaultAPI/",
+      "status": "excluded_api",
+      "reason": "VaultAPI JavaDoc 接口参考目录，按目录整体排除。"
+    },
+    {
+      "url": "https://dev.bukkit.org/projects/vault",
+      "scope": "sections_only",
+      "reason": "仅排除 Java 接口接入和 Maven 仓库参考；配置、权限、支持项、统计字段和退出说明已全译。",
+      "sections": [
+        "Linking Vault",
+        "Repository Information for Maven Projects"
+      ]
+    }
+  ],
+  "unavailable": [
+    {
+      "url": "https://github.com/MilkBowl/Vault/wiki/Home",
+      "status": "unavailable",
+      "reason": "HTTP 页面可读，但当前仅为欢迎语、留言或第三方服务器广告，未构成可确认的官方使用文档。",
+      "source_file": "sources/wiki/original/wiki-home.md",
+      "http_status": 200,
+      "source_sha256": "ee574c66fa8f1dc698acf768c3404e167913fcbe21ce5cf2b39d08cd2e4ddd49"
+    },
+    {
+      "url": "https://github.com/MilkBowl/Vault/wiki/%23-An-editable-page-for-some-reason",
+      "status": "unavailable",
+      "reason": "HTTP 页面可读，但当前仅为欢迎语、留言或第三方服务器广告，未构成可确认的官方使用文档。",
+      "source_file": "sources/wiki/original/wiki-editable-page.md",
+      "http_status": 200,
+      "source_sha256": "23ece45fbf11366300a6fb868d07abf021512fe0cc59f8c46d7148802c2eafbb"
+    },
+    {
+      "url": "https://github.com/MilkBowl/Vault/wiki/Official-Vault-MC-Server-!",
+      "status": "unavailable",
+      "reason": "HTTP 页面可读，但当前仅为欢迎语、留言或第三方服务器广告，未构成可确认的官方使用文档。",
+      "source_file": "sources/wiki/original/wiki-server.md",
+      "http_status": 200,
+      "source_sha256": "372435cac6756494b4124d8870ac8b5335c9988bfd7660eed27bca2b724074d9"
+    },
+    {
+      "url": "https://github.com/MilkBowl/Vault/wiki/_Footer",
+      "status": "unavailable",
+      "reason": "HTTP 页面可读，但当前仅为欢迎语、留言或第三方服务器广告，未构成可确认的官方使用文档。",
+      "source_file": "sources/wiki/original/wiki-footer.md",
+      "http_status": 200,
+      "source_sha256": "876f3f59d88ee6788348d30c9d3e988a8e29fa0bea80b0fc3c0faee282918741"
+    }
+  ],
+  "actual_page_count": 3,
+  "translated_pages": 3,
+  "untranslated_available_non_api_pages": 0,
+  "all_discovered_candidates_classified": true,
+  "independent_wiki_found": true,
+  "assets": {
+    "ledger": "sources/wiki/assets.json",
+    "archived_source_entries": 1,
+    "unique_local_files": 1,
+    "unavailable": []
+  },
+  "validation": {
+    "status": "failed",
+    "report": "sources/wiki/validation.json",
+    "verbatim_code_blocks": 0,
+    "protected_inline_tokens": 0,
+    "source_table_rows": 60,
+    "translated_table_rows": 60,
+    "pages": 3,
+    "native_asset_files": 1,
+    "local_image_references": 1,
+    "errors": [
+      "Broken local reference docs\\wiki\\plugin-page.md -> /linkout?remoteUrl=http%253a%252f%252fmilkbowl.github.io%252fVaultAPI",
+      "Broken local reference docs\\wiki\\using-vault.md -> /linkout?remoteUrl=http%253a%252f%252fforums.getspout.org%252fthreads%252fmech-econ-spoutshops-a-visual-shop-plugin-sp988-cb1611.460%252f",
+      "Broken local reference docs\\wiki\\using-vault.md -> /linkout?remoteUrl=http%253a%252f%252fforum.thedgtl.net%252fviewtopic.php%253ff%253d4%2526t%253d5"
+    ],
+    "warnings": []
+  }
+}

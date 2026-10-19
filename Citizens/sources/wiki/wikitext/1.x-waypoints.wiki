@@ -1,0 +1,39 @@
+{{NoSupport}}
+Waypoints give life to your NPCs. You can make your NPCs patrol buildings and more!
+
+== Waypoint Commands ==
+'''[]''' - Mandatory
+<br>'''()''' - Optional
+
+'''Command''' - command's syntax
+<br>'''Args Description''' - description of the command's arguments
+<br>'''Require Selected''' - whether the command requires an NPC to be selected
+<br>'''Require Ownership''' - whether the commands requires you to be the owner of the NPC
+<br>'''Permission''' - command's permission node
+<br>'''Description''' - short description of the command
+
+{| class="wikitable" style="text-align: center;"
+! style="width: 250px;" | Command
+! style="width: 200px;" | Args Description
+! style="width: 150px;" | Require Selected
+! style="width: 150px;" | Require Ownership
+! style="width: 170px;" | Permission
+! Description
+|-
+| /npc path
+| ''None''
+| true
+| true
+| citizens.waypoints.edit
+| Start editing an NPC's waypoints
+|-
+| /waypoints modifier [type]
+| ''type'' - modifier type to add to an NPC's waypoints
+| true
+| true
+| citizens.waypoints.modifer.(type) (replace type with the modifier type's name)
+| Add a modifier to an NPC's waypoints
+|}
+
+{{NavBox}}
+[[Category:Citizens1]]

@@ -1,0 +1,53 @@
+
+# Head
+
+
+You can specify a bone to be marked as the head, and rotate it automatically when the base entity AI rotates its head.
+
+## Setup
+
+### Configure the head bone
+
+Open your `.iaentitymodel` model file with **Blockbench**.
+
+Select the base bone of the head.
+
+![](../../.gitbook/assets/head_004.png)
+
+Right click on the bone and select "**Bone Config**"
+
+![](<../../.gitbook/assets/head_006.png>)
+
+Check the "**Head**" option and press "**Confirm**".\
+You can also decide max angles for X and Y rotation.
+
+![](<../../.gitbook/assets/head_005.png>)
+
+The head bone is now marked as the head, as you can see (the smiley face is the head bone).
+
+![](<../../.gitbook/assets/head_007.png>)
+
+### Eyes height
+
+Height of the eyes of the entity, used for head look calculations. Default: `1.62`.\
+You can set it in the `.yml` configuration file of the entity once exported.
+
+Example:
+
+```yaml
+info:
+  namespace: vanillaex
+entities:
+  happy_creeper:
+    model_folder: entity/happy_creeper
+    type: WOLF
+    can_sun_burn: false
+    eyes_height: 0.25
+```
+
+### Done
+
+Now you have to export the model as usual.
+
+[advanced-method.md](/adding-content/entities/advanced-method.md)
+

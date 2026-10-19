@@ -5,3 +5,6 @@
 *.jpeg binary
 *.gif binary
 *.webp binary
+
+# Native Wiki media keep the downloaded bytes for source hash checks.
+**/docs/wiki/assets/** -text

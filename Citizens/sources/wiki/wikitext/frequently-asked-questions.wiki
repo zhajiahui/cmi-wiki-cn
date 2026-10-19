@@ -1,0 +1,240 @@
+This page contains frequently asked questions regarding the Citizens project. You should always check here before submitting an issue, asking on Discord, or posting on the forum thread. Your queries could very well have already been answered here.
+
+
+=First of All=
+
+If the answer to your question isn't on here, ask on [https://discord.gg/Q6pZGSR Discord] in the #citizens channel (create a thread for your question).
+
+
+=Errors=
+
+
+
+==Why isn't Citizens working on my server?==
+Citizens is an advanced plugin and requires a current build of Spigot to work.
+
+If you are getting NoClassDefFound, ClassNotFoundException, or FieldNotFound errors, ensure that you have the correct sub-version of Spigot. (That is the latest version, within a minecraft version, like 1.15.2 instead of 1.15 or 1.15.1). And that you have a relatively recent primary version of Spigot/Minecraft (that is, a version that came out within the past few years).
+
+Otherwise, ask on [https://discord.gg/Q6pZGSR Discord here], or submit an issue [http://issues.citizensnpcs.co here].
+
+==Why can't my users hear my NPCs?==
+Make sure you give them the proper permissions. Users will need <code>citizens.npc.talk</code> to hear NPCs by clicking or talk-close. See [[Permissions]].
+
+==I can't right-click to select an NPC==
+By default you must be holding a stick to right-click-select a NPC. The item can be changed in the [[Configuration]]. Use <code>'*'</code> to not require any item.
+
+==There's a "0 health" line below my NPC's names==
+
+This is a "below_name" scoreboard. It was not created by Citizens.
+
+It was most likely created by another plugin (such as "TAB"). Contact that plugin's support for details on how to avoid this problem (if the plugin is "TAB", there is a config option under "belowname"->"enabled" which you can set to "false" to disable this feature of that plugin, see [https://github.com/NEZNAMY/TAB/wiki/Feature-guide:-Belowname here for their documentation about it]).
+
+These scoreboards are also sometimes created by staff using vanilla <code>/scoreboard</code> commands. If so, simply remove the below_name scoreboard using that command.
+
+==Why are NPCs showing up in the tablist?==
+
+UPDATE: As of 1.19.3, this is no longer an issue (with the exception of using ViaVersion with mixed server/client version).
+
+When Minecraft 1.7 added UUIDs and a new skin system, some servers used it to dynamically customize player skins. Mojang was unhappy about this, and so in 1.7.6 made very strict player entity validation requirements. One of these requirements is that any player entity that spawns must be in the tablist at the time it's spawned. Unfortunately, this means Citizens NPCs must appear momentarily in the tablist when they spawn into view. For the sake of not having constant tablist space-waste, we've made the NPCs disappear again from the tablist as quickly as possible (a fraction of a second).
+
+The first, and simplest option to completely avoid this is, of course: don't have player-type NPCs. Use villagers or armor stands or any other mob-type. These other types won't show up in the tab list at all.
+
+If you wish to avoid that flashing with player NPCs, the only viable way is to simply fill the tab-list so completely that NPCs would be past the edge of it and thus not visible. Some tab-list plugins fill the screen with blank slots and/or information messages wherever space isn't used by real players. Any tab list like that should in theory automatically avoid the flicker effect.
+
+If you're not interesting in running such a plugin, the only other option is to simply ignore the flashing. It's not actually particularly noticeable to players - in addition to of course just being a very short brief flash, seeing that flash at all requires you be actively moving at the edge of render-distance from an NPC with the Tab key held down, which isn't something most players do very often.
+
+Note: intentionally adding NPCs persistently to the tablist is forbidden, as Mojang considers the tablist to be the line for a "fake player" being too believable. Bypassing this system to fake having real players in your tablist is not recommended in any way by the Citizens and team and may cause Mojang to take action against your server.
+
+==I have a free server (Aternos, Minehut, ...) but there's problems==
+
+Free servers won't work well. They generally restrict servers so heavily that bugs occur and cannot be resolved.
+
+Please either get a legitimate server (a VPS or Dedicated Server from a reputable server company like "OVH"), or if you cannot afford that, instead simply homehost.
+
+"Homehosting" is when you run the Spigot server on your home PC (desktop or laptop). Not only is this possible, it is actually *better* than free hosts in most cases, as it gives you the freedom and control you need to run a problem-free minecraft server, and the only real limitation is that you have to keep your home PC running for the minecraft server to stay up.
+
+==My PlaceholderAPI Placeholder Works In Chat, But Not On An NPC==
+
+Many PAPI placeholders are designed to require a player link - for example, obviously, <code>%player_name%</code> requires a player be linked to know which name to show. When you use a command, you are linked, so that placeholder would show your own name. When a placeholder is on an NPC, it is parsed in a global context - meaning, there is no player link. So <code>%player_name%</code> would not know which player to give a name from, and thus fail.
+
+You can test whether this applies to a placeholder in PAPI by typing <code>/papi parse --null %your_placeholder%</code>... the "--null" tells it to parse without a player context. (NOTE: If PAPI gives an error like "unknown player", you might just need to [https://ci.extendedclip.com/job/PlaceholderAPI/ Update] - this feature was added in PAPI 2.11.2).
+
+While many placeholders make it obvious whether they require a player link or not, some plugins have placeholders that just always require a player link even when the placeholder doesn't actually change based on who's parsing it. Those cases should be considered a bug in whatever plugin the placeholder came from, and you should ask the developer of that plugin to fix the problem.
+
+==My NPCs Have Names Like CIT-abc Instead Of Their Actual Names==
+
+If your NPC's name is longer than 16 characters, Citizens hides the default nameplate and then spawns a hologram in its place. Hiding nameplates works by setting a scoreboard team with nameplates for that team set to hidden, and the NPC added to that team. Unfortunately, due to the way Minecraft implements scoreboard teams, NPCs must be added based on their name rather than their UUID or actual object.  The hidden default nameplate gets a generated value like "CIT-abc" with the NPC's UUID to ensure it can be uniquely added to a scoreboard team.
+
+If this generated name is visible, it means the scoreboard team to hide the name is broken. This generally shouldn't happen, as the teams are generated through packets directly sent to the player. If they're being blocked, that means some external plugin (or even a plugin on a proxy like Bungee/Velocity) is overriding or blocking the team settings.
+
+If this is happening, the main thing to do is check for a [[Plugin_Conflict]]. View that page for information on how to test for one and what to do once you found the plugin at fault.
+
+
+
+
+
+
+
+=How To=
+
+
+
+==Can I change what skin an NPC has, separately from its name?==
+Yes, via <code>/npc skin</code>. For a detailed explanation, see the [[Skins]] page.
+
+==How do I make an NPC run a command when a player clicks it?==
+
+Via <code>/npc command</code> Refer to [[NPC_Commands]] for details.
+
+==My NPCs Aren't Standing On Exactly Their Path Destination==
+
+If you set an NPC to move to a location, and it stopped a few blocks short... well, that's normal. Pathfinding is not perfectly precise, and also doesn't always know what you intended. For example, when you select a block, it will navigate to the corner of that block, not the center. It also has a margin for when to stop - if the margin is too small, the NPC can potentially overshoot and have to turn around and try to find the spot again. Generally, the faster the NPC is moving, the higher the margin needs to be.
+
+You can tweak the margins and other pathfinder settings for an NPC with <code>/npc help pathopt</code>. You'll notice differences in movement behavior depending on whether <code>new-finder</code> is true or false, and also depending on each of the margin related values. Tweak things until you find something you like.
+
+<s>If you really really really need it to get to the exact decimal perfect coordinates, you'll have to write a script using Denizen or similar, that teleports the NPC after pathfinding ends.</s> In modern Citizens, you can edit your <code>config.yml</code> to configure the <code>destination-teleport-margin</code> to a non-zero margin to automatically enable teleporting.
+
+=="Hi, I'm npc" keeps appearing after I removed text from an NPC==
+
+Once you use <code>/npc text</code>, that adds the '''text trait''', which will stay until you use <code>/trait text</code> to remove it. Clearing the list of lines from the NPC will not on its own remove the text trait, you must explicitly remove the trait.
+
+==How Do I Set Up An NPC As A Shop?==
+
+Many users want to use NPCs to provide a shop. The key point to realize when figuring out how to do this is: the NPC is just the thing you click to open the shop, and doesn't really need to do much more than that. Thus, there are four different options for how to proceed:
+
+A: In the future <code>/npc shop</code> will function. At time of writing, it's just a placeholder experiment.
+
+B: You can use [[NPC_Commands]] to add a click command to an NPC, where the command is a shop command from any given shop plugin (search Spigot resources for options).
+
+C: You can use a shop plugin with native Citizens integration, such as dtlTraders.
+
+D: You can build your own shop system and directly integrate it with NPCs by writing a [https://guide.denizenscript.com/ Denizen Script].
+
+==How Do I Make An NPC Wander Around Like A Mob?==
+
+You can use <code>/wp provider wander</code>, which sets the NPCs pathfinder to wander mode. After that, you can use <code>/npc path</code> to configure wander settings such as region limits.
+
+
+
+=Questions=
+
+
+
+==How Many NPCs Can I Spawn Before My Server Lags?==
+
+'''Short answer:''' there isn't an answer, just try spawning some and see how it goes.
+
+'''Long answer:''' Server performance is dependent on a *lot* of factors.
+
+First, obviously - the hardware ... faster CPUs can handle more processing, more RAM can handle more of the world being loaded, etc.
+
+Second... well, what's actually happening. An NPC that's running around the world is going to use more CPU power than an NPC that's sitting still. An NPC that is configured to keep chunks loaded will use more RAM than an NPC that wasn't. An NPC that is in your main hub is going to be loaded and spawned and active all the time, but an NPC that's three thousand blocks out in the middle of the forest will almost never be spawned or processing.
+
+While you can follow this line of logic to keep things under control, where your actual limits are is something you can only know by hitting those limits. You can quantify measurements of lag using a Java profiler/sampler (note: do NOT use the "timings" system in Spigot/Paper... if you don't have a profiler, [https://www.spigotmc.org/resources/spark.57242/ Spark] is a fairly basic sampler but very easy to install on a minecraft server).
+
+
+==Why is my NPC teleporting when its supposed to be walking?==
+
+When you set an NPC on a path, and it just teleports to the destination, that means it failed to find a path.
+
+This most commonly happens when the destination is simply too far away - the default path range is 25, you can alter this via <code>/npc pathrange 50</code> (or any other value), up to 100. If you need to go farther than 100 blocks away, consider setting multiple points in between along the way.
+
+The other reason this can happen is a path simply being impossible - walls in the way, holes in the floor, etc. In such cases, of course, add a way through.
+
+In some cases a path can become accidentally blocked off by blocks like carpets, slabs, gates, etc. if the pathfinder doesn't understand them. If this is the case, make sure to enable the new-finder and new-finder-open-doors in the Citizens config.
+
+If you want the NPC to instead simply not move when a path is impossible, use <code>/wp disableteleport</code>.
+
+
+
+
+
+
+
+
+
+
+
+
+
+=API=
+
+
+
+==How Do I Make NPCs Remove When The Server Shuts Down?==
+
+In short: rather than removing the NPCs at shutdown as may be your first inclination, instead simply disable them from saving.
+
+To do this, you can create a custom NPC registry for your plugin to store temporary NPCs in.
+
+Sample code for how to do this:
+
+<pre>
+    public final NPCRegistry registry = CitizensAPI.createAnonymousNPCRegistry(new MemoryNPCDataStore());
+
+    public void yourMethod() {
+        registry.createNPC(EntityType.PLAYER, "Bob");
+    }
+</pre>
+
+
+
+==How Do I Track My Custom NPC?==
+
+We get a lot of questions from new API users regarding assigning NPC ids, tracking NPC ids, should you use ids or uuids, etc.
+
+The answer to basically all such questions is: er, well, don't! Your custom data or behavior associated with an NPC should be assigned via a trait! Check out [[API#Creating_a_Trait]] for more information.
+
+==More API Topics==
+Most API-related questions are answered via the [[API]] page.
+
+
+
+
+
+
+
+=Historical=
+
+
+
+===How Do I Add Multiple Lines To An NPC's Name?===
+
+<s>An entity name in minecraft only has one line. You can, however, just spawn multiple entities to form the name.
+
+The easiest way to do this is to just download any holograms plugin, and place holograms above the NPC to make those 'additional lines'.
+
+If you don't want to download a new plugin for that, just spawn armor stands entities with gravity=false, marker=true, visible=false, and the name set to the additional line.</s>
+
+In modern builds you can now just use <code>/npc hologram</code> for this.
+
+
+===NPC names are capped at only 16 characters! Or, '/npc name' won't work!===
+
+<s>One of the most common plugin conflicts with Citizens is caused by scoreboard plugins.
+
+This can cause problems such as: NPC names being capped at 16 characters (rather than the normal 48), <code>/npc name</code> not toggling nameplate visibility properly, or other scoreboard-related functionality failing.
+
+This can by caused by any form of scoreboard-related plugin, such as those that add a sidebar (like Featherboard does), edit player nametags, add custom below_name lines, or similar.
+
+This is not an unavoidable problem, it's instead caused by a mistake many scoreboard plugins make. If interested, you can read the technical details of this mistake at [[Plugin_Conflict]].
+
+The fix for users, however, is simple: Either report the issue to the developer of your scoreboard plugin, or switch to a non-broken scoreboard plugin (if you want a sidebar, consider [https://forum.denizenscript.com/viewtopic.php?f=13&t=147 the Magic Sidebar script]).</s>
+
+This was fixed in a recent version.
+
+===How do I upgrade from old versions to Citizens 2.0?===
+See the [[Installation]] page.
+
+===How do I get more NPC types?===
+NPC types are now called "traits". These are no longer built-in JARs that you place in the ''/plugins/Citizens/types'' directory. You must download each individual character and place it in the ''/plugins'' folder.
+
+You can find out more about traits on the [[Characters]] page, or learn how to make your own on the [[API]] page.
+
+==See Also==
+[[Configuration]]
+<br>[[Commands]]
+<br>[[Permissions]]
+
+{{NavBox}}
+[[Category:Usage]]

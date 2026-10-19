@@ -1,0 +1,107 @@
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://meta.denizenscript.com/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+<h1>BattleNight</h1>
+<pre>
+	<player.bn.class>						-> Name of player's chosen battle class
+	<player.bn.inbattle>					-> True/false is player in a battle?
+
+	<battle.arena>							-> Name of arena current battle is taking place in
+	<battle.inprogress>						-> True/false is a battle taking place?
+	<battle.timeremaining>					-> Time remaining for current battle to end
+</pre>
+<h1>Factions</h1>
+<pre>
+	<player.faction> 						-> The player's faction, as a dFaction
+
+    // Note the 's' in 'factions' for these tags!
+	<player.factions.role> 		            -> Role of player within their faction
+	<player.factions.title> 			    -> Title of player within their faction
+	<player.factions.power> 				-> Player's power
+
+	<faction@facName.balance> 			    -> Balance of specified faction
+	<faction@facName.home> 				    -> Location of specified factions's spawn point
+	<faction@facName.isopen> 			    -> True/false is specified faction open?
+	<faction@facName.ispeaceful> 		    -> True/false is specified faction peaceful?
+	<faction@facName.ispermanent>           -> True/false is specified faction permanent?
+	<faction@facName.leader> 		    	-> Name of specified faction's leader
+	<faction@facName.playercount> 	        -> Amount of players within specified faction
+	<faction@facName.power> 			    -> Amount of specified faction's power
+	<faction@facName.relation[<faction>]>	-> Evaluates to enemies, allies, or neutral with another faction
+	<faction@facName.size> 			        -> Amount of land specified faction has claimed
+</pre>
+
+<h1>mcMMO</h1>
+<pre>
+	<player.mcmmo.level>					-> Overall skill level of player
+	<player.mcmmo.level[<skill>]>			-> Skill level of a specific skill
+	<player.mcmmo.party>					-> Name of player's party
+	<player.mcmmo.rank>						-> Overall mctop player ranking
+	<player.mcmmo.rank[<skill>]>			-> Rank of player in a specific skill
+	<player.mcmmo.xp[<skill>]>				-> Amount of player's xp for a skill
+	<player.mcmmo.xp[<skill>].tonextlevel>	-> XP required for player to advance to skill's next level
+
+	<party[party_name].leader>				-> Name of the specified party's leader
+    <party[<party>].playercount>            -> The number of players in the specified party
+
+</pre>
+<h1>Towny</h1>
+<pre>
+	<player.town> 							-> The player's town, as a dTown
+    <player.nation> 						-> The player's nation, as a dNation
+
+	<town@townName.balance> 				-> Balance of specified town
+	<town@townName.board> 				    -> Board message of specified town
+	<town@townName.isopen> 				    -> True/false is specified town open?
+	<town@townName.ispublic> 				-> True/false is specified town public?
+	<town@townName.mayor>                   -> Name of specified town's mayor
+	<town@townName.nation> 				    -> Nation specified town belongs to
+	<town@townName.playercount> 			-> Population size of specified town
+	<town@townName.size> 					-> Amount of land specified town has claimed
+	<town@townName.spawn> 			    	-> Location of specified town's spawn point
+	<town@townName.tag> 					-> Tag of specified town
+	<town@townName.taxes> 			    	-> Tax amount of specified town
+
+	<nation@natName.balance> 				-> Balance of specified nation
+	<nation@natName.capital> 				-> Name of specified nation's capital town
+	<nation@natName.king> 			    	-> Name of specified nation's king
+	<nation@natName.isneutral> 		    	-> True/false is nation neutral?
+	<nation@natName.playercount> 			-> Amount of players within specified nation
+	<nation@natName.relation[<nation>]>	    -> Evaluates to enemies, allies, or neutral with another nation
+	<nation@natName.tag> 					-> Tag of specified nation
+	<nation@natName.taxes> 			    	-> Tax amount of specified nation
+	<nation@natName.towncount> 		    	-> Amount of towns within specified nation
+
+	<l@location.town>		                -> Town that has claimed specified location
+
+</pre>
+<h1>Jobs</h1>
+<pre>
+    <player.jobs[<jobName>]>                -> The dJob of that player's specified job
+    <player.jobs[<jobName>].xp>             -> Current XP of the player in a certain job
+    <player.jobs[<jobName>].xp.max>         -> The maximum XP the player can have in a certain job
+    <player.jobs[<jobName>].xp.level>       -> Current level for a certain job
+
+    <job@jobName.description>               -> Job description
+    <job@jobName.name>                      -> The name of a job
+    <job@jobName.name.short>                -> The shortened name of a job
+    <job@jobName.color>                     -> The name of the chat color of the job
+</pre>

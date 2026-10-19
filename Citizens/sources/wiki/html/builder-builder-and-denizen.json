@@ -1,0 +1,33 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Builder/Builder and Denizen",
+    "pageid": 253,
+    "revid": 4764,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>Examples of things to do combining Denizen and Builder\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Continuous_Rebuilding\">Continuous Rebuilding</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Builder/Builder_and_Denizen&amp;action=edit&amp;section=1\" title=\"Edit section: Continuous Rebuilding\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>If you want a builder to look busy and continuously rebuild and destroy a schematic, you would use a setup like this.\n</p><p>Create a Task script in any yml file the denizen scripts folder like the following.\n</p>\n<pre>---- script.yml ----\nRebuild:\n  Type: Task\n  Script:\n    - execute as_npc \"builder &lt;npc.id&gt; build excavate oncomplete:Rebuild\"\n</pre>\n<p>Now create a builder, load the desired schematic, set an origin, and call <i>/builder build oncomplete:Rebuild</i>\n</p><p>The builder will build the schematic, and then run the task, which will build it again with the <i>excavate</i> option that will tear it down first, and the cycle will continue forever.\n</p><p>You can use this script for as many builders/schematics you want without having to change anything.\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145819\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.005 seconds\nReal time usage: 0.006 seconds\nPreprocessor visited node count: 6/1000000\nRevision size: 826/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 145/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 8547c5e5-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Continuous Rebuilding",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Builder/Builder_and_Denizen",
+        "byteoffset": 56,
+        "anchor": "Continuous_Rebuilding",
+        "linkAnchor": "Continuous_Rebuilding"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+
+# Blockbench Errors
+
+## Strange errors
+
+Sometimes you may encounter unknown errors.
+
+In order to avoid these issues you should avoid opening many custom projects in Blockbench at the same time, since the ItemsAdder tool is in beta. This will be addressed in the future.
+
+## "Scale out of bounds" error
+
+![](<../.gitbook/assets/common-errors_004.png>)
+
+In order to fix this you have to open the **ItemsAdder Entity** settings and set [Max Scaling](/adding-content/entities/advanced-method.md#configuring-the-model).
+
+![](<../.gitbook/assets/common-errors_003.png>)

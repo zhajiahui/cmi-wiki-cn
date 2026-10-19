@@ -1,0 +1,323 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "1.x/Quests.yml",
+    "pageid": 24,
+    "revid": 1345,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><table class=\"wikitable\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"1\" style=\"width: 100%; background-color:#F75D59; font-size: 32px; padding: 15px;\"><b>Not Supported!</b>\n</th></tr>\n<tr>\n<td style=\"font-size: 16px;\">This page is about Citizens 1.x, while the current version is Citizens 2.0.2. This page's content may be outdated, and shouldn't be trusted as being correct. See this page's talk page for more information. If you were looking for the 2.0.2 equivalent of this page, try <a href=\"/index.php?title=Quests.yml&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Quests.yml (page does not exist)\">Quests.yml</a>. If you feel this message was displayed in error, please contact an administrator.\n</td></tr></tbody></table>\n<p><br />\n<br />\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Quests.yml\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Quests.yml</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-2\"><a href=\"#Example_structure\"><span class=\"tocnumber\">1.1</span> <span class=\"toctext\">Example structure</span></a></li>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Example_Quest\"><span class=\"tocnumber\">1.2</span> <span class=\"toctext\">Example Quest</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Quest_Nodes\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Quest Nodes</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#Title\"><span class=\"tocnumber\">2.1</span> <span class=\"toctext\">Title</span></a></li>\n<li class=\"toclevel-2 tocsection-6\"><a href=\"#Texts\"><span class=\"tocnumber\">2.2</span> <span class=\"toctext\">Texts</span></a></li>\n<li class=\"toclevel-2 tocsection-7\"><a href=\"#Repeats\"><span class=\"tocnumber\">2.3</span> <span class=\"toctext\">Repeats</span></a></li>\n<li class=\"toclevel-2 tocsection-8\"><a href=\"#Delay\"><span class=\"tocnumber\">2.4</span> <span class=\"toctext\">Delay</span></a></li>\n<li class=\"toclevel-2 tocsection-9\"><a href=\"#Requirements\"><span class=\"tocnumber\">2.5</span> <span class=\"toctext\">Requirements</span></a></li>\n<li class=\"toclevel-2 tocsection-10\"><a href=\"#Initial\"><span class=\"tocnumber\">2.6</span> <span class=\"toctext\">Initial</span></a></li>\n<li class=\"toclevel-2 tocsection-11\"><a href=\"#Rewards\"><span class=\"tocnumber\">2.7</span> <span class=\"toctext\">Rewards</span></a></li>\n<li class=\"toclevel-2 tocsection-12\"><a href=\"#Objectives\"><span class=\"tocnumber\">2.8</span> <span class=\"toctext\">Objectives</span></a>\n<ul>\n<li class=\"toclevel-3 tocsection-13\"><a href=\"#Basic_objective_structure\"><span class=\"tocnumber\">2.8.1</span> <span class=\"toctext\">Basic objective structure</span></a></li>\n<li class=\"toclevel-3 tocsection-14\"><a href=\"#Breakdown_of_an_objective\"><span class=\"tocnumber\">2.8.2</span> <span class=\"toctext\">Breakdown of an objective</span></a></li>\n<li class=\"toclevel-3 tocsection-15\"><a href=\"#A_reward_inside_a_sub-objective\"><span class=\"tocnumber\">2.8.3</span> <span class=\"toctext\">A reward inside a sub-objective</span></a></li>\n</ul>\n</li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-16\"><a href=\"#See_also\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">See also</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading1\"><h1 id=\"Quests.yml\">Quests.yml</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Quests.yml&amp;action=edit&amp;section=1\" title=\"Edit section: Quests.yml\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Quests are defined in the quests.yml file located in plugins/Citizens, one after another. Because of the power and flexibility of the quest system, it can be a bit of a finicky beast.  Pay special attention to spacing and the use of special characters. Quests.yml should pass any YAML parser without any errors. Most problems that arise from setting up quests is result of invalid formatting.\n</p><p>Tool: [<a rel=\"nofollow\" class=\"external text\" href=\"http://yaml-online-parser.appspot.com/\">YAML Parser</a>] allows the contents of your .yml file to be pasted into the left box. If formatted incorrectly, parse errors will show in the right panel indicating the problem.\n</p><p>Quests.yml is reloaded when using /citizens reload.\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Example_structure\">Example structure</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Quests.yml&amp;action=edit&amp;section=2\" title=\"Edit section: Example structure\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Quests consist of different parts, as explained by this page. This is the basic flow of most quests, though not all nodes are required.\n</p>\n<pre>\"Title\":\n    texts:\n    repeats:\n    delay:\n    requirements:\n    initial:\n    objectives:\n    rewards:   \n</pre>\n<p>Note: Other arguments and nodes are required for sections for a complete quest. This is just an outline. More information, in depth below:\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Example_Quest\">Example Quest</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Quests.yml&amp;action=edit&amp;section=3\" title=\"Edit section: Example Quest\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>The quest below takes advantage of multiple objectives, delays, message formatting, and multiple rewards. Check out <a href=\"/1.x/More_Example_Quests\" title=\"1.x/More Example Quests\">1.x/More Example Quests</a>.\n</p>\n<pre>\n\n# NPC Quest Slime Slaying initiated by NPC Theo (22).\n\n\"Slime Slaying\":\n    texts:\n        description: \"&lt;Theo&gt; The best way to take care of those slimes is to slay\n            &lt;br&gt;them with a sword. We have a bit of overcrowding, as you can\n            &lt;br&gt;see.. would you be willing you help our small city?\n            &lt;br&gt;&amp;6Quest: &lt;g&gt;The Slime Slayer, Part 1\n            &lt;br&gt;&amp;6Objective: Destroy 12 slimes.\"\n        acceptance: \"&lt;Theo&gt; Great! You are truly a friend! Our small \n            &lt;br&gt;city has a lot to offer, so stick around. \n            &lt;delay=60&gt;&lt;Theo&gt; HAHAHA... get it? &lt;g&gt;STICK&amp;f around? HAH HAH HAH!\n            &lt;delay=80&gt;&amp;6Quest: &lt;g&gt;The Slime Slayer, Part 1 &amp;6started!\n            &lt;delay=40&gt;&lt;g&gt;Remember, you can use &amp;6/quest status &lt;g&gt;to check your progress.\"\n        completion: \"&lt;Theo&gt; Wow! You've taken care of the slimes already?\n            &lt;br&gt;We really appreciate the help!\n            &lt;br&gt;&amp;6Quest: You have recieved 100 bucks for your effort. Sweet!\n            &lt;br&gt;&lt;Theo&gt; Don't bounce outta here too soon.\n            &lt;delay=40&gt;&lt;Theo&gt; HAHA.. get it? &lt;g&gt;BOUNCE&amp;f? Oh.. HAH HAH!\"\n    repeats: -1\n    objectives:\n        '0':\n            '0':\n                type: hunt\n                string: 'slime'\n                amount: 12\n                message: \"&amp;6Quest: A dozen slimes down. That wasn't so hard. \n                    &lt;delay=120&gt;&amp;fPerhaps you should see if &lt;g&gt;Theo &amp;frequires any additional help?\"\n            '1':\n                type: delivery\n                materialid: 341 # Slimeballs\n                amount: 6\n                npcdestination: 22\n                optional: True # Optional sub-objective triggers only if you bring slimeballs\n                               # before the other objective is complete. \n                message: \"&amp;6Quest: Slimeballs delivered.\n                    &lt;delay=50&gt;&lt;Theo&gt; Oh, what's this? \n                    &lt;delay=20&gt;&lt;Theo&gt; OH! Slimeballs, Yes! You can keep what you find, but I \n                    &lt;br&gt;appreciate the gesture! Take this -- perhaps it will help you\n                    &lt;br&gt;become a more efficient slime slayer! \n                    &lt;br&gt;&lt;Theo&gt;What have you got to l-ooze?\n                    &lt;delay=40&gt;&lt;Theo&gt; HAHA. Get it? L-&lt;g&gt;OOOOZE&amp;f? HAHAHA \n                    &lt;delay=20&gt;&amp;6Quest: You have received a bow and some arrows! Nice!\"\n                rewards:\n                    '0':\n                         type: item\n                         id: 261  # Bow\n                         amount: 1\n                    '1':\n                         type: item\n                         id: 262  # Arrows\n                         amount: 64\n    rewards:\n        '0':\n            type: money\n            money: 100\n</pre>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"Quest_Nodes\">Quest Nodes</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Quests.yml&amp;action=edit&amp;section=4\" title=\"Edit section: Quest Nodes\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Title\">Title</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Quests.yml&amp;action=edit&amp;section=5\" title=\"Edit section: Title\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Required.\n</p><p>Each root node in that file is a quest name. In the default quest.yml the two example quests are 'example' and 'example2'. This identification is what you will use in-game to identify each quest.\n</p><p>The title is the very first line of the quest, in quotes, followed by colon. If one word, quotes are not necessary.\n</p>\n<pre>\"Title of quest\": </pre>\n<p>Example: The command required in game to assign the quest to a quester utilizes this title.\n</p>\n<pre>/quester assign Title of quest </pre>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Texts\">Texts</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Quests.yml&amp;action=edit&amp;section=6\" title=\"Edit section: Texts\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Required.\n</p><p>Inside the quest, there are three required texts: description, acceptance, and completion. \n</p><p>The description is sent to the player when being given the option to accept the quest.  The acceptance is sent to the player when they accept the quest, and the completion when they finish.\n</p>\n<pre>texts:\n    description: \"Description text.\"\n    acceptance: \"Acceptance text.\"\n    completion: \"Completion text.\"</pre>\n<p>Default text is white.  Special character combinations can be used for formatting text.  See: <a href=\"/1.x/Message_Formatting\" title=\"1.x/Message Formatting\">1.x/Message Formatting</a> and <a href=\"/index.php?title=1.x/Quest_Text_Formatting_Tips&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"1.x/Quest Text Formatting Tips (page does not exist)\">1.x/Quest Text Formatting Tips</a>\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Repeats\">Repeats</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Quests.yml&amp;action=edit&amp;section=7\" title=\"Edit section: Repeats\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Optional. If not set, default is 0.\n</p><p>The repeats: option allows you to set a limit for the number of times you can repeat the quest.\n</p>\n<pre>repeats: 6    # Quest can be repeated 6 times.  </pre>\n<p>Use -1 for unlimited repeats, 0 for no repeats.\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Delay\">Delay</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Quests.yml&amp;action=edit&amp;section=8\" title=\"Edit section: Delay\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Optional. Default, if not set, is 0.\n</p><p>The delay: option allows you to specify the time (in minutes) before one is allowed to retake the quest.\n</p>\n<pre>delay: 10     # Allows the quest, if allowed, to be repeated 10 minutes after completing it.</pre>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Requirements\">Requirements</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Quests.yml&amp;action=edit&amp;section=9\" title=\"Edit section: Requirements\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Optional.\n</p><p>The requirements: node checks for conditions before allowing a player to take a quest.  Requirements types can be item, quest, time, money, health, rank, or permission.\n</p><p>See also:  <a href=\"/1.x/List_of_Requirement_node_types\" title=\"1.x/List of Requirement node types\">1.x/List of Requirement node types</a>\n</p><p><i>- Note by aufdemrand: need to double check each type to confirm they work.  I know for sure quest, money &amp; item work. I am assuming on the others.</i>\n</p>\n<pre>requirements:\n    '0':\n        type: item    # Requires item(s) when accepting.\n        id: 15        # iron_ore\n        amount: 15   \n        take: true    # take the 15 iron_ore, set to false to leave items on player.\n    '1':\n        type: quest   # Requires a quest be completed prior.\n        quest: \"example1\"\n</pre>\n<p>You may have multiple requirements, or just one.\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Initial\">Initial</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Quests.yml&amp;action=edit&amp;section=10\" title=\"Edit section: Initial\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>- Note: Requires Citizens 1.1.4 or higher.\n</p><p>Optional.\n</p><p>The initial: node will trigger once conditions have been met allowing a player to take a quest. Many practical uses can be used for this, but among some of those may be:\n</p>\n<ul><li>Giving the player some gear to start a quest.</li>\n<li>Giving an item to the player that is used in a quest.</li>\n<li>Giving special rank or permission to a player.</li>\n<li>Performing server commands.</li>\n<li>Spawning NPC bodyguards to assist the questee.</li></ul>\n<p>Initial types can be item, quest, time, money, health, rank, or permission.\n</p><p>See also: <a href=\"/1.x/List_of_Initial_node_types\" title=\"1.x/List of Initial node types\">1.x/List of Initial node types</a>\n</p><p><i>- Note by aufdemrand: need to double check each type to confirm they work.  I know for sure money &amp; item work. I am assuming on the others.</i>\n</p>\n<pre>initial:\n    '0':\n        type: item     # Gives an item when conditions are met.\n        id: 268        # wooden_sword\n        amount: 1   \n        take: false    # Optional. By default, take: is false.\n</pre>\n<p>You may have multiple entries, or just one.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Rewards\">Rewards</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Quests.yml&amp;action=edit&amp;section=11\" title=\"Edit section: Rewards\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Optional.\n</p><p>The rewards: node is used to tell the quester what to reward the player with when conditions are met.  If all the objectives are completed, the rewards: node is triggered.  \n</p><p>See also:  <a href=\"/1.x/List_of_Rewards_node_types\" title=\"1.x/List of Rewards node types\">1.x/List of Rewards node types</a>\n</p>\n<pre>rewards:\n    '0':\n        type: item    # Rewards an item\n        id: 15        # iron_ore\n        amount: 30\n    '1':\n        type: quest   # Rewards a quest.  This quest will start immediately.\n        quest: \"Part II\"\n</pre>\n<p>You may have multiple rewards, or just one.  Rewards can also be subset into objectives to reward the player as objectives are completed. The format is the same.\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Objectives\">Objectives</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Quests.yml&amp;action=edit&amp;section=12\" title=\"Edit section: Objectives\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>This section is the meat of the quest file.  Objectives tell the quester what needs to be accomplished in order to complete the quest. Available objectives include hunt, deliver, destroy, and more.  They can be used together to make quests as simple, or as detailed as you want.\n</p><p>See also:  <a href=\"/1.x/List_of_Objective_node_types\" title=\"1.x/List of Objective node types\">1.x/List of Objective node types</a>\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Basic_objective_structure\">Basic objective structure</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Quests.yml&amp;action=edit&amp;section=13\" title=\"Edit section: Basic objective structure\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Objectives are made of sub-objectives. In the below example, for the quest to be complete, objective 0 would have to have 3 sub-objectives complete before the player can attempt to complete objective 1. The quest would be complete when the sub-objective in objective 1 is complete.  \n</p>\n<pre>    objectives:\n        '0':\n            '0':\n                type:\n            '1':\n                type:\n            '2':\n                type:\n        '1':\n            '0':\n                type:\n</pre>\n<p>If your quest has merely one objective, it must still be nested as a sub-objective. Example below:\n</p>\n<pre>    objectives:\n        '0':\n            '0':\n                type:\n</pre>\n<p><i>Note: The above 2 examples are only an outline of the objective structure. There are more nodes that need to be defined in order for a successful quest. Keep reading.</i>\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Breakdown_of_an_objective\">Breakdown of an objective</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Quests.yml&amp;action=edit&amp;section=14\" title=\"Edit section: Breakdown of an objective\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Sub-objectives contain types and their nodes. With the <a href=\"/1.x/List_of_Objective_node_types\" title=\"1.x/List of Objective node types\">1.x/List of Objective node types</a>, you can use various types to control the flow of the quest. Here's an example that uses a hunt objective and a delivery objective. Sub-objectives can be completed in any order.\n</p>\n<pre>'0':\n    '0':\n        type: hunt          # Type set to hunt objective\n        string: zombie     # Type of monster to hunt is set to Zombie.\n        amount: 2           # Amount of monsters required to hunt.\n        optional: False     # Quest sub-objective is required to complete the quest.\n        message: \"Pesky zombies slaughtered.\"    # Message displayed when sub-objective is completed.\n    '1':\n        type: delivery      # Type of second sub-objective set to delivery.\n        materialid: 341     # Slimeballs.\n        amount: 6           # 6 items must be on hand to complete sub-objective.\n        npcdestination: 2   # NPC # that the items must be taken to.\n        optional: True      # Sub-objective not required, is optional.\n        message: \"Slimeballs delivered.\"    # Message displayed when second sub-objective is completed.\n</pre>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"A_reward_inside_a_sub-objective\">A reward inside a sub-objective</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Quests.yml&amp;action=edit&amp;section=15\" title=\"Edit section: A reward inside a sub-objective\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>As mentioned in the rewards node section, rewards can also trigger at the completion of a sub-objective.  They should be nested inside the sub-objective like the example following:\n</p>\n<pre>'0':\n&#160; &#160; type: move distance     # Player must move specified amount of blocks\n&#160; &#160; amount: 6               # 6 blocks to be exact\n&#160; &#160; optional: False\n&#160; &#160; message: \"You received a bow and some arrows! Sweet!\"\n&#160; &#160; rewards:\n&#160; &#160; &#160; &#160; '0':\n&#160; &#160; &#160; &#160; &#160; &#160; &#160;type: item     # Reward type set to item\n&#160; &#160; &#160; &#160; &#160; &#160; &#160;id: 261        #  Bow\n&#160; &#160; &#160; &#160; &#160; &#160; &#160;amount: 1\n&#160; &#160; &#160; &#160; '1':\n&#160; &#160; &#160; &#160; &#160; &#160; &#160;type: item     # Second reward type also an item\n&#160; &#160; &#160; &#160; &#160; &#160; &#160;id: 262        # Arrow\n&#160; &#160; &#160; &#160; &#160; &#160; &#160;amount: 64     # 1 stack</pre>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Quests.yml&amp;action=edit&amp;section=16\" title=\"Edit section: See also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><a href=\"/index.php?title=Basic_Example_Quests&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Basic Example Quests (page does not exist)\">Basic Example Quests</a> are very basic quests from start to finish, all commented. <br />\n<a href=\"/index.php?title=A_Two-Part_Example_Quest&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"A Two-Part Example Quest (page does not exist)\">A Two-Part Example Quest</a> explores a two-part quest among two different NPCs. <br />\n<a href=\"/index.php?title=More_example_quests&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"More example quests (page does not exist)\">More example quests</a> will have a variety of quests, mostly ready to copy/paste into your world. <i>Some variables may need to be changed.</i> <br />\n<a href=\"/index.php?title=Questing_Cook-Book&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Questing Cook-Book (page does not exist)\">Questing Cook-Book</a> will contain copy &amp; paste snippets nearly-ready to be combined.\n</p><p><a href=\"/index.php?title=Advanced_Questing_Ideas&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Advanced Questing Ideas (page does not exist)\">Advanced Questing Ideas</a> will explore the use of other plugins to supplement Citizens.\n</p>\n<div class=\"padded\" style=\"font-size: 12px; padding: 5px\">\n<table class=\"wikitable collapsible collapsed\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Usage\" title=\"Category:Usage\">Usage</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Installation\" title=\"Installation\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Frequently_Asked_Questions\" title=\"Frequently Asked Questions\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Editors\" title=\"Editors\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Characters\" title=\"Characters\">Characters</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/API\" title=\"API\">API</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32;\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Configuration\" title=\"Category:Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Configuration\" title=\"Configuration\">Configuration</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Data_Storage\" title=\"Data Storage\">Data Storage</a>\n</td></tr></tbody></table>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145803\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.054 seconds\nReal time usage: 0.079 seconds\nPreprocessor visited node count: 149/1000000\nRevision size: 11840/2097152 bytes\nPost‐expand include size: 2427/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 4/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 5909/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   26.900      1 -total\n 63.85%   17.177      1 Template:NoSupport\n 32.43%    8.724      2 Template:Version2F\n 32.24%    8.672      1 Template:NavBox\n 15.16%    4.078      1 Template:Version2\n 13.78%    3.706     10 Template:·\n-->\n\n<!-- Render ID 7bbe5de5-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "1.x/List of Initial node types"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "1.x/List of Objective node types"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "1.x/List of Requirement node types"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "1.x/List of Rewards node types"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "1.x/Message Formatting"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "1.x/More Example Quests"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "API"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Configuration"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Data Storage"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Editors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Text Syntax"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      },
+      {
+        "ns": 0,
+        "*": "Quests.yml"
+      },
+      {
+        "ns": 0,
+        "*": "1.x/Quest Text Formatting Tips"
+      },
+      {
+        "ns": 0,
+        "*": "Basic Example Quests"
+      },
+      {
+        "ns": 0,
+        "*": "A Two-Part Example Quest"
+      },
+      {
+        "ns": 0,
+        "*": "More example quests"
+      },
+      {
+        "ns": 0,
+        "*": "Questing Cook-Book"
+      },
+      {
+        "ns": 0,
+        "*": "Advanced Questing Ideas"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Configuration"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Usage"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Quests.yml",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "1.x/Quests.yml",
+        "byteoffset": 24,
+        "anchor": "Quests.yml",
+        "linkAnchor": "Quests.yml"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Example structure",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "1.x/Quests.yml",
+        "byteoffset": 712,
+        "anchor": "Example_structure",
+        "linkAnchor": "Example_structure"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Example Quest",
+        "number": "1.2",
+        "index": "3",
+        "fromtitle": "1.x/Quests.yml",
+        "byteoffset": 1135,
+        "anchor": "Example_Quest",
+        "linkAnchor": "Example_Quest"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Quest Nodes",
+        "number": "2",
+        "index": "4",
+        "fromtitle": "1.x/Quests.yml",
+        "byteoffset": 4020,
+        "anchor": "Quest_Nodes",
+        "linkAnchor": "Quest_Nodes"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Title",
+        "number": "2.1",
+        "index": "5",
+        "fromtitle": "1.x/Quests.yml",
+        "byteoffset": 4037,
+        "anchor": "Title",
+        "linkAnchor": "Title"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Texts",
+        "number": "2.2",
+        "index": "6",
+        "fromtitle": "1.x/Quests.yml",
+        "byteoffset": 4544,
+        "anchor": "Texts",
+        "linkAnchor": "Texts"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Repeats",
+        "number": "2.3",
+        "index": "7",
+        "fromtitle": "1.x/Quests.yml",
+        "byteoffset": 5139,
+        "anchor": "Repeats",
+        "linkAnchor": "Repeats"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Delay",
+        "number": "2.4",
+        "index": "8",
+        "fromtitle": "1.x/Quests.yml",
+        "byteoffset": 5399,
+        "anchor": "Delay",
+        "linkAnchor": "Delay"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Requirements",
+        "number": "2.5",
+        "index": "9",
+        "fromtitle": "1.x/Quests.yml",
+        "byteoffset": 5662,
+        "anchor": "Requirements",
+        "linkAnchor": "Requirements"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Initial",
+        "number": "2.6",
+        "index": "10",
+        "fromtitle": "1.x/Quests.yml",
+        "byteoffset": 6447,
+        "anchor": "Initial",
+        "linkAnchor": "Initial"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Rewards",
+        "number": "2.7",
+        "index": "11",
+        "fromtitle": "1.x/Quests.yml",
+        "byteoffset": 7452,
+        "anchor": "Rewards",
+        "linkAnchor": "Rewards"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Objectives",
+        "number": "2.8",
+        "index": "12",
+        "fromtitle": "1.x/Quests.yml",
+        "byteoffset": 8098,
+        "anchor": "Objectives",
+        "linkAnchor": "Objectives"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Basic objective structure",
+        "number": "2.8.1",
+        "index": "13",
+        "fromtitle": "1.x/Quests.yml",
+        "byteoffset": 8446,
+        "anchor": "Basic_objective_structure",
+        "linkAnchor": "Basic_objective_structure"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Breakdown of an objective",
+        "number": "2.8.2",
+        "index": "14",
+        "fromtitle": "1.x/Quests.yml",
+        "byteoffset": 9332,
+        "anchor": "Breakdown_of_an_objective",
+        "linkAnchor": "Breakdown_of_an_objective"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "A reward inside a sub-objective",
+        "number": "2.8.3",
+        "index": "15",
+        "fromtitle": "1.x/Quests.yml",
+        "byteoffset": 10501,
+        "anchor": "A_reward_inside_a_sub-objective",
+        "linkAnchor": "A_reward_inside_a_sub-objective"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "See also",
+        "number": "3",
+        "index": "16",
+        "fromtitle": "1.x/Quests.yml",
+        "byteoffset": 11232,
+        "anchor": "See_also",
+        "linkAnchor": "See_also"
+      }
+    ],
+    "showtoc": ""
+  }
+}

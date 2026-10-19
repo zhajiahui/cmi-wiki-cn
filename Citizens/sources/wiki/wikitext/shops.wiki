@@ -1,0 +1,82 @@
+Citizens has built-in support for basic GUI shops.
+
+== Getting Started ==
+Type <code>/npc shop edit</code> to open the NPC's shop.
+You can also create a named shop by typing <code>/npc shop edit NAMEHERE</code>. Named shops can be shared by any NPC.
+
+You will see basic configuration settings including editing the type of shop from buy to sell to command shops, setting the permission required to view the shop, and whether to open the shop on right click.
+
+Here you can see the settings screen from left to right:
+
+[[File:Shop Settings.png|frameless]]
+
+You can edit the permission required to view the shop, the shop items, the shop title, whether to open this shop on right click and the type of shop (explained later).
+
+After clicking on the edit shop button for example you can see the following screen. Edit the shop title in the anvil menu and click on the paper to change the title!
+
+[[File:Edit Shop Screen.png|frameless]]
+
+== Editing pages ==
+You probably want to create a shop page. Click on the feather icon to start editing individual pages. 
+
+In this screen, you can drop an item onto the page slots to put it into the shop. 
+
+[[File:Edit Shop Items.png|frameless]]
+
+This will be the item that's displayed in your shop. You can also edit the next page slots by using shift-click.
+
+== Editing items ==
+Once in the editing item screen, you can set a '''cost''' (on the top left) and a '''result''' (on the top right). Note that a result item must be set or else the item will just sit in the shop looking pretty.
+
+
+[[File:Edit Item Screen.png|frameless]]
+
+There's some buttons at the bottom to edit various things like purchase message, click to confirm, max purchases etc. 
+Please note: the green emerald block must be clicked to save the item when you're done.
+
+Next, let's add a cost and a result. I have some sand and I want to set up a trade from one sand to three sticks.
+
+First, I click on the item cost chest button at the top left.
+
+[[File:Item Cost .png|frameless]]
+
+Just drag and drop an item anywhere in the top screen to set it as a cost. I do the same thing for the item result (3 sticks). You can see the preview of the cost and result by hovering over the icons.
+
+[[File:Item Result preview.png|frameless]]
+[[File:Item Display Preview.png|frameless]]
+
+I also set the shop to show on right click using the following setting.
+
+[[File:Shop Show on right click.png|frameless]]
+
+Here's the final resulting shop and I can easily trade for some sticks.
+
+[[File:Shop Result 1.png|frameless]]
+[[File:Shop Result 2.png|frameless]]
+
+== Changing the shop type ==
+You can change the shop type in the shop settings. Currently, this lets you change the number of chest rows your shop will show and also make it into a trader shop i.e. display as a villager trader GUI.
+
+Using the above demo, let's see what the trader shop looks like. First, I set the shop to a trader shop.
+
+[[File:Shop type set.png|frameless]]
+
+Now we can see the final result. 
+
+[[File:Trader shop.png|frameless]]
+
+Note that the result of the trade is shown as the display item, not the stick result. 
+
+== Advanced topics ==
+Citizens has a <cost> and <result> placeholder that you can put into the display item description to automatically show the cost and result. 
+
+=== Component Comparison Filter ===
+By default, Citizens checks that item costs are '''exactly''' the same including NBT/component tags, except for amount. You can change this by adding a component comparison filter. For example, the filter 'enchantments' would only check that two item enchantments are the same, even if they had other components that were different. You can see a printout of an item's components by using /npc debug -i with the item held in hand.
+
+=== Condition cost / result ===
+This enables dynamic costs using placeholders and more. Some documentation about this is here (subject to change): [[Behaviors]]
+
+For example, you might use <code>papi('player_leaderboard_placeholder') < 5</code>
+
+=== Requests ===
+If you would like more info here on a particular shop feature, please ask on Discord.

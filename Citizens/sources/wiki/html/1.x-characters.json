@@ -1,0 +1,145 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "1.x/Characters",
+    "pageid": 38,
+    "revid": 1311,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><table class=\"wikitable\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"1\" style=\"width: 100%; background-color:#F75D59; font-size: 32px; padding: 15px;\"><b>Not Supported!</b>\n</th></tr>\n<tr>\n<td style=\"font-size: 16px;\">This page is about Citizens 1.x, while the current version is Citizens 2.0.2. This page's content may be outdated, and shouldn't be trusted as being correct. See this page's talk page for more information. If you were looking for the 2.0.2 equivalent of this page, try <a href=\"/Characters\" title=\"Characters\">Characters</a>. If you feel this message was displayed in error, please contact an administrator.\n</td></tr></tbody></table>\n<p>Having a basic NPC is cool, but you may want it to utilize one of our character types.\n</p><p>To change an NPC's type, use the command /toggle [type]. Replace [type] with the NPC type that you want to toggle your NPC to become. \n</p>\n<pre>/toggle healer</pre>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Character_JARs\">Character JARs</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Characters&amp;action=edit&amp;section=1\" title=\"Edit section: Character JARs\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>It is imperative that you have the NPC type's .jar file in your plugins/Citizens/types directory. If not, you won't be able to toggle an NPC to become that type. When updating Citizens, you must update your character types as well.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Character_Types\">Character Types</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Characters&amp;action=edit&amp;section=2\" title=\"Edit section: Character Types\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Toggleable Types (These types can be toggled):\n<br />\n</p>\n<ul><li><a href=\"/1.x/Blacksmith\" title=\"1.x/Blacksmith\">1.x/Blacksmiths</a> can repair items, for a cost.</li>\n<li><a href=\"/1.x/Guard\" title=\"1.x/Guard\">1.x/Guards</a> be bouncers, soldiers, or bodyguards.</li>\n<li><a href=\"/1.x/Healer\" title=\"1.x/Healer\">1.x/Healers</a> can provide a health boost when you run out of food.</li>\n<li><a href=\"/1.x/Quester\" title=\"1.x/Quester\">1.x/Questers</a> are perhaps the most powerful, featuring a robust questing system.</li>\n<li><a href=\"/1.x/Trader\" title=\"1.x/Trader\">1.x/Traders</a> provide a unique way for your players to buy and sell goods.</li>\n<li><a href=\"/1.x/Wizard\" title=\"1.x/Wizard\">1.x/Wizards</a> can do magical tasks.</li></ul>\n<p><br />\nMob Types (These types can automatically spawn):\n<br />\n</p>\n<ul><li><a href=\"/1.x/Evil_NPCs\" title=\"1.x/Evil NPCs\">1.x/Evil NPCs</a> can spawn alongside your servers' other mobs.</li></ul>\n<div class=\"padded\" style=\"font-size: 12px; padding: 5px\">\n<table class=\"wikitable collapsible collapsed\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Usage\" title=\"Category:Usage\">Usage</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Installation\" title=\"Installation\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Frequently_Asked_Questions\" title=\"Frequently Asked Questions\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Editors\" title=\"Editors\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Characters\" title=\"Characters\">Characters</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/API\" title=\"API\">API</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32;\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Configuration\" title=\"Category:Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Configuration\" title=\"Configuration\">Configuration</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Data_Storage\" title=\"Data Storage\">Data Storage</a>\n</td></tr></tbody></table>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145808\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.032 seconds\nReal time usage: 0.081 seconds\nPreprocessor visited node count: 33/1000000\nRevision size: 1133/2097152 bytes\nPost‐expand include size: 2427/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 4/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 25/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   32.736      1 -total\n 50.09%   16.396      1 Template:NoSupport\n 48.77%   15.966      1 Template:NavBox\n 33.36%   10.922      2 Template:Version2F\n 18.24%    5.970     10 Template:·\n 13.80%    4.519      1 Template:Version2\n-->\n\n<!-- Render ID 7eb94e67-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "1.x/Blacksmith"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "1.x/Evil NPCs"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "1.x/Guard"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "1.x/Healer"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "1.x/Quester"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "1.x/Trader"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "1.x/Wizard"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "API"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Configuration"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Data Storage"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Editors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Text Syntax"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Configuration"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Usage"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Character JARs",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "1.x/Characters",
+        "byteoffset": 265,
+        "anchor": "Character_JARs",
+        "linkAnchor": "Character_JARs"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Character Types",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "1.x/Characters",
+        "byteoffset": 518,
+        "anchor": "Character_Types",
+        "linkAnchor": "Character_Types"
+      }
+    ]
+  }
+}

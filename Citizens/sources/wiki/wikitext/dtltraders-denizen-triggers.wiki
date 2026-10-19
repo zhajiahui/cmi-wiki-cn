@@ -1,0 +1,26 @@
+== Introduction ==
+=== Current triggers ===
+So far there are 3 denizen triggers (version 1.9.6), but we will add some more and also extend their functionality. 
+Each trigger is called when the player made a successful trader (sold/bought) items. 
+
+Also each trigger adds automatically to each player the ''TransactionItem'' flag with the item bought/sold. This behavior will change in the release version. 
+
+=== Incoming features ===
+Each trigger will lookup for ''Predefined flags'', which you can use to get the transaction Result (SUCCESS/NOMONEY/NOSPACE/LIMIT), item that was used in the transaction and its amount. ''(any suggestions are welcome)''
+
+Maybe i will also add a way to manage the trader event, letting you to cancel the ongoing trade, change the price, change the amount, but this is only a early concept so 10% it will be added.
+
+To let the triggers set the flags you need set their value to <set>
+
+Supported flags that will be set by the trigger it self.
+# TransactionItem:<set>
+# TransactionItemAmount:<set>
+# TransactionResult:<set>
+
+Triggers that will be added are listed here
+# TransactionCanceled (called when a player closes the trader window, or when the ''TRADER_TRANSACTION CANCEL'' command was executed)
+
+Each trigger is disabled by default so you need to toggle them to use.
+
+=== Sample ===
+Here is a short sample how to use these triggers and '''Trader patterns''' to create a simple ''discount trigger'', based of how many ''Diamonds'' the trader sold. [http://scripts.citizensnpcs.com/view/lm66cf Sample].

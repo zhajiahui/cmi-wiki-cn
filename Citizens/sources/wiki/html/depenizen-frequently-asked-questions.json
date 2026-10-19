@@ -1,0 +1,73 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Depenizen/Frequently Asked Questions",
+    "pageid": 337,
+    "revid": 5398,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://meta.denizenscript.com/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br /><br /><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1\"><a href=\"#What_is_Depenizen?\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">What is Depenizen?</span></a></li>\n<li class=\"toclevel-1\"><a href=\"#How_do_I_install_Depenizen?\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">How do I install Depenizen?</span></a></li>\n<li class=\"toclevel-1\"><a href=\"#What_plugins_does_Depenizen_currently_support?\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">What plugins does Depenizen currently support?</span></a></li>\n<li class=\"toclevel-1\"><a href=\"#Can_I_request_a_new_plugin_be_supported_by_Depenizen?\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Can I request a new plugin be supported by Depenizen?</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"What_is_Depenizen?\"><span id=\"What_is_Depenizen.3F\"></span>What is Depenizen?</h2></div>\n<p>Depenizen is a simple plugin that does exactly what its name implies: adds external plugin dependencies to Denizen. It adds commands, tags, events, etc for use with other plugins (such as mcMMO, Factions, and Towny) into Denizen, so you can control everything that goes on and maximize the RPG feel you want for your server.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"How_do_I_install_Depenizen?\"><span id=\"How_do_I_install_Depenizen.3F\"></span>How do I install Depenizen?</h2></div>\n<ol>\n  <li><a href=\"/Installation\" title=\"Installation\">Install Citizens 2</a>\n  </li><li>Download the latest development version of <a rel=\"nofollow\" class=\"external text\" href=\"http://ci.citizensnpcs.co/job/Denizen/lastSuccessfulBuild/\">Denizen</a>.\n  </li><li>Download the latest development version of <a rel=\"nofollow\" class=\"external text\" href=\"http://ci.citizensnpcs.co/job/Depenizen/lastSuccessfulBuild/\">Depenizen</a>.\n  </li><li>Place the plugins in your plugins folder and restart your server.\n</li></ol>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"What_plugins_does_Depenizen_currently_support?\"><span id=\"What_plugins_does_Depenizen_currently_support.3F\"></span>What plugins does Depenizen currently support?</h2></div>\n<p>You can find a list of all supported plugins <a href=\"/index.php?title=Supported_Plugins&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Supported Plugins (page does not exist)\">here</a>.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Can_I_request_a_new_plugin_be_supported_by_Depenizen?\"><span id=\"Can_I_request_a_new_plugin_be_supported_by_Depenizen.3F\"></span>Can I request a new plugin be supported by Depenizen?</h2></div>\n<p>Sure, just ask us on the GitHub issues page <a rel=\"nofollow\" class=\"external text\" href=\"https://github.com/DenizenScript/Depenizen/issues\">here</a>. Be sure to include the plugin name, a link to the BukkitDev page, and details about what commands, tags, or events you want implemented into Depenizen. We'll get back to you as soon as possible.\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145900\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.021 seconds\nReal time usage: 0.034 seconds\nPreprocessor visited node count: 1/1000000\nRevision size: 2010/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 1/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 9db7e064-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "*": "Supported Plugins"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "What is Depenizen?",
+        "number": "1",
+        "index": "",
+        "byteoffset": null,
+        "anchor": "What_is_Depenizen?",
+        "linkAnchor": "What_is_Depenizen?"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "How do I install Depenizen?",
+        "number": "2",
+        "index": "",
+        "byteoffset": null,
+        "anchor": "How_do_I_install_Depenizen?",
+        "linkAnchor": "How_do_I_install_Depenizen?"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "What plugins does Depenizen currently support?",
+        "number": "3",
+        "index": "",
+        "byteoffset": null,
+        "anchor": "What_plugins_does_Depenizen_currently_support?",
+        "linkAnchor": "What_plugins_does_Depenizen_currently_support?"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Can I request a new plugin be supported by Depenizen?",
+        "number": "4",
+        "index": "",
+        "byteoffset": null,
+        "anchor": "Can_I_request_a_new_plugin_be_supported_by_Depenizen?",
+        "linkAnchor": "Can_I_request_a_new_plugin_be_supported_by_Depenizen?"
+      }
+    ],
+    "showtoc": ""
+  }
+}

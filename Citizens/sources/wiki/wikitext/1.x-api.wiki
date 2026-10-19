@@ -1,0 +1,49 @@
+{{NoSupport}}
+== JavaDocs ==
+Our API documentation can be found [http://jd.citizensnpcs.net here]. For a basic guide on hooking into Citizens, see below.
+
+== Using the Citizens API ==
+Hooking into Citizens is the same as hooking into any other Bukkit plugin like PermissionsBukkit or iConomy. Add the latest version of Citizens.jar to your build path. Then, add this code to your onEnable in the main class:
+
+<pre>
+
+public void onEnable() {
+    PluginManager pm = getServer().getPluginManager();
+    Plugin test = pm.getPlugin("Citizens");
+    if (test != null) {
+        System.out.println("Successfully hooked into Citizens!");
+    } else {
+        System.out.println("Citizens isn't loaded.");
+        // disable your plugin because Citizens was not loaded
+        pm.disablePlugin(this);
+    }
+}
+</pre>
+
+Now, to actually use the methods that Citizens has to offer, add the following import to your code:
+
+<pre>import net.citizensnpcs.api.CitizensManager;</pre>
+
+For specifics on the methods CitizensManager has, see our JavaDocs. For now, here is a basic example of how to use the class.
+
+<pre>
+//checks if the passed Bukkit entity is an NPC
+public void checkNPC(Entity entity) {
+    if(CitizensManager.isNPC(entity)) {
+        Bukkit.getServer().broadcastMessage(CitizensManager.get(entity).getStrippedName() + " is an NPC!");
+    }
+}
+</pre>
+
+The last step is to make sure Citizens loads before your plugin. If it doesn't, your plugin will throw some nasty console errors. Add this line to your plugin.yml:
+
+<pre>soft-depend: [Citizens]</pre>
+== Creating an NPC type ==
+To create an NPC type, you need two things - a class extending CitizensNPCType, and a class extending CitizensNPC.
+You'll also need to create a file called 'type.info' (essentially like a plugin.yml), and place that in the root of your JAR. The type.info should contain a main: setting that points to the class extending CitizensNPCType.
+
+Now, place your compiled JAR into the plugins/Citizens/types folder - and you're done!
+Caveats: due to Bukkit restrictions, Citizens cannot register new commands for you.
+
+{{NavBox}}
+[[Category:Citizens1]]

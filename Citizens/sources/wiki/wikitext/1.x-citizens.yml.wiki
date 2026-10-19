@@ -1,0 +1,69 @@
+{{NoSupport}}
+== citizens.yml ==
+<pre>
+range:
+    #number of blocks a player needs to be near an NPC in order for the NPC to look at the player
+    look: 5
+    #range a pathing NPC looks within while searching for entities to target
+    pathfinding: 16.0
+items:
+    #items used to select an NPC with, '*' means all, ''DO NOT remove single quotes''
+    select-items: '*'
+    #items used to make an NPC talk, leave a trailing comma
+    talk-items: 340,
+ticks:
+    #1 server tick = 1/20 of a second
+    saving:
+        #whether to save settings/properties often
+        save-often: true
+        #
+        use-task: true
+        #delay between each save-task save
+        delay: 72000
+    pathing:
+        #maximum amount of ticks an NPC can remain stationary while pathing
+        max-stationary: -1
+        #maximum amount of ticks an NPC can path for
+        max-pathing: -1
+    waypoints:
+        #amount of ticks to pause an NPC if right-clicked while pathing
+        right-click-pause: 70
+economy:
+    #if you have NPC types on your server, more settings will generate here
+    prices:
+        #price for creating a basic NPC (with /npc create)
+        basic:
+            creation: 100
+    #whether or not to use an economy plugin, if false, above economy settings are ignored
+    use-economy: true
+general:
+    defaults:
+        #default setting for whether an NPC looks at a player when close
+        enable-following: true
+        #default setting for whether an NPC talks when a player is close
+        talk-when-close: false
+    #whether to select and execute an NPC type's right-click option at the same time (i.e. select and teleport at the same time)
+    quick-select: false
+    #whether to print debug messages to the console
+    debug-mode: false
+    colors:
+        #whether to use an NPC's nameplate color as their color in chat
+        use-npc-colours: true
+        #the color to use as an NPC's chat color if ''use-npc-colours'' is false
+        npc-colour: f
+    #whether to notify those with the 'citizens.admin.notifyupdates' of any Citizens update
+    notify-updates: true
+    chat:
+        #character used to have spaces in NPC names
+        space-char: /
+        #message that is sent when an NPC is selected
+        selection-message: <g>You selected <y><npc><g> (ID <y><npcid><g>).
+        #default text of an NPC, leave a trailing semi-colon
+        default-text: Hello.;How are you today?;Having a nice day?;Good weather today.;Stop hitting me!;I'm bored.;
+        #message that is sent when an NPC is created
+        creation-message: <g>The NPC <y><npc><g> was born!
+        #message format used for when an NPC speaks
+        format: '[%name%]: '</pre>
+
+{{NavBox}}
+[[Category:Citizens1]]

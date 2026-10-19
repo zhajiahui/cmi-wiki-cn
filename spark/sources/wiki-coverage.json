@@ -1,0 +1,233 @@
+{
+  "project": "spark",
+  "snapshot": {
+    "date": "2026-10-19",
+    "timezone": "Asia/Taipei",
+    "manifest_generated_at": "2026-10-19T15:53:03.018Z"
+  },
+  "version": {
+    "docs_revision": "07dc48b059e25731294c9ca6f713c358dfabb8fc",
+    "project_readme": "master snapshot",
+    "supplied_component_version": null
+  },
+  "scope": "全部已发现官方非 API 文档；纯 API/SDK 接口参考排除，混合页面仅按列明片段排除。",
+  "candidate_urls": [
+    "https://spark.lucko.me/docs/",
+    "https://spark.lucko.me/docs/Installation",
+    "https://spark.lucko.me/docs/Command-Usage",
+    "https://spark.lucko.me/docs/Using-the-viewer",
+    "https://spark.lucko.me/docs/Configuration",
+    "https://spark.lucko.me/docs/Standalone-Agent",
+    "https://spark.lucko.me/docs/guides/Finding-lag-spikes",
+    "https://spark.lucko.me/docs/guides/The-tick-loop",
+    "https://spark.lucko.me/docs/guides/TPS-and-MSPT",
+    "https://spark.lucko.me/docs/misc/spark-vs-others",
+    "https://spark.lucko.me/docs/misc/Using-async-profiler",
+    "https://spark.lucko.me/docs/misc/About-spark-metrics",
+    "https://spark.lucko.me/docs/misc/Placeholders",
+    "https://spark.lucko.me/docs/misc/Info-points",
+    "https://spark.lucko.me/docs/misc/Java-agent-warning",
+    "https://spark.lucko.me/docs/misc/Credits",
+    "https://spark.lucko.me/",
+    "https://github.com/lucko/spark/blob/master/README.md",
+    "https://spark.lucko.me/docs/Developer-API",
+    "https://spark.lucko.me/docs/misc/Raw-spark-data"
+  ],
+  "candidates": [
+    {
+      "url": "https://spark.lucko.me/docs/",
+      "status": "translated",
+      "file": "wiki/home.md",
+      "source_file": "sources/wiki/original/home.md",
+      "source_sha256": "9d1bce34c399d8e8261453c569a4cffcef2ab04d0d5bebd5c745d8ea31771670"
+    },
+    {
+      "url": "https://spark.lucko.me/docs/Installation",
+      "status": "translated",
+      "file": "wiki/install.md",
+      "source_file": "sources/wiki/original/install.md",
+      "source_sha256": "379525be01318817ccefb103f9dc62f2718e7e72bdf29ff2152e8092692963f7"
+    },
+    {
+      "url": "https://spark.lucko.me/docs/Command-Usage",
+      "status": "translated",
+      "file": "wiki/commands.md",
+      "source_file": "sources/wiki/original/commands.md",
+      "source_sha256": "4d1af3fc651a36d226fe3fa5f34fdb111f78d04fa04ac144bca3ef14d15fc466"
+    },
+    {
+      "url": "https://spark.lucko.me/docs/Using-the-viewer",
+      "status": "translated",
+      "file": "wiki/using-the-viewer.md",
+      "source_file": "sources/wiki/original/using-the-viewer.md",
+      "source_sha256": "bc5da187088f53dc387c17eac3f566c335c62ddb8555b99a438574474801f912"
+    },
+    {
+      "url": "https://spark.lucko.me/docs/Configuration",
+      "status": "translated",
+      "file": "wiki/configuration.md",
+      "source_file": "sources/wiki/original/configuration.md",
+      "source_sha256": "d4688b2d0879defdddea36e5ab61913f1f9e8acc0728adaba6c59a8aa8fcd7bd"
+    },
+    {
+      "url": "https://spark.lucko.me/docs/Standalone-Agent",
+      "status": "translated",
+      "file": "wiki/standalone.md",
+      "source_file": "sources/wiki/original/standalone.md",
+      "source_sha256": "ce04ab56417492f2de4d044317311d1f96197a03842453de79f7cc986e991439"
+    },
+    {
+      "url": "https://spark.lucko.me/docs/guides/Finding-lag-spikes",
+      "status": "translated",
+      "file": "wiki/guides/finding-lag-spikes.md",
+      "source_file": "sources/wiki/original/guides/finding-lag-spikes.md",
+      "source_sha256": "af00117622072c16bfb51457691d0673bfad2b4692a8fecaac212f5dcf1789b3"
+    },
+    {
+      "url": "https://spark.lucko.me/docs/guides/The-tick-loop",
+      "status": "translated",
+      "file": "wiki/guides/tick-loop.md",
+      "source_file": "sources/wiki/original/guides/tick-loop.md",
+      "source_sha256": "afaec3fb8cc4a6e3e53b4f8c7d7de2f32b19870387cd8d6873eccb394c193ecc"
+    },
+    {
+      "url": "https://spark.lucko.me/docs/guides/TPS-and-MSPT",
+      "status": "translated",
+      "file": "wiki/guides/tps-and-mspt.md",
+      "source_file": "sources/wiki/original/guides/tps-and-mspt.md",
+      "source_sha256": "e78c4f13d26e3911a9caa38974e10b013383d6017306e7bcae330ca4496d3e2f"
+    },
+    {
+      "url": "https://spark.lucko.me/docs/misc/spark-vs-others",
+      "status": "translated",
+      "file": "wiki/misc/spark-vs-others.md",
+      "source_file": "sources/wiki/original/misc/spark-vs-others.md",
+      "source_sha256": "9fa410247feea3c2b204e996e412ce084e0bcbdfc9edaeff192c327b2b917722"
+    },
+    {
+      "url": "https://spark.lucko.me/docs/misc/Using-async-profiler",
+      "status": "translated",
+      "file": "wiki/misc/using-async-profiler.md",
+      "source_file": "sources/wiki/original/misc/using-async-profiler.md",
+      "source_sha256": "d633e05db64ad46c3b23bc9588b2a0fe88d41a11a02d63655e979cc7465a2aaa"
+    },
+    {
+      "url": "https://spark.lucko.me/docs/misc/About-spark-metrics",
+      "status": "translated",
+      "file": "wiki/misc/spark-metrics.md",
+      "source_file": "sources/wiki/original/misc/spark-metrics.md",
+      "source_sha256": "da83839c7c1d7266b68a56bbd2ccb306b6996bf5e669122719327acdaa95f49a"
+    },
+    {
+      "url": "https://spark.lucko.me/docs/misc/Placeholders",
+      "status": "translated",
+      "file": "wiki/misc/placeholders.md",
+      "source_file": "sources/wiki/original/misc/placeholders.md",
+      "source_sha256": "729db68e2e6cf0034922864cc1a821c08e0f509f6793257e88f05b58660ee40b"
+    },
+    {
+      "url": "https://spark.lucko.me/docs/misc/Info-points",
+      "status": "translated",
+      "file": "wiki/misc/info-points.md",
+      "source_file": "sources/wiki/original/misc/info-points.md",
+      "source_sha256": "9a2ee0ef58a86cd20948742c31913b47dd5b0acf5944cc803772aad33feb40ee"
+    },
+    {
+      "url": "https://spark.lucko.me/docs/misc/Java-agent-warning",
+      "status": "translated",
+      "file": "wiki/misc/java-agent-warning.md",
+      "source_file": "sources/wiki/original/misc/java-agent-warning.md",
+      "source_sha256": "02c7ad1b10f1e0caec9b82b68a4d98c4c83d3a605ba77721313f7e4229dcec96"
+    },
+    {
+      "url": "https://spark.lucko.me/docs/misc/Credits",
+      "status": "translated",
+      "file": "wiki/misc/credits.md",
+      "source_file": "sources/wiki/original/misc/credits.md",
+      "source_sha256": "814493aeb3417c63d45a4b1cfacac2560517299b98185ca23f179a10bdd51ff1"
+    },
+    {
+      "url": "https://spark.lucko.me/",
+      "status": "translated",
+      "file": "wiki/project-home.md",
+      "source_file": "sources/wiki/original/project-home.md",
+      "source_sha256": "3bc29ca8381863cf43c1fb8ea30164278b5023a6f849fa2b724aff4dab32c2a8"
+    },
+    {
+      "url": "https://github.com/lucko/spark/blob/master/README.md",
+      "status": "translated",
+      "file": "wiki/project-readme.md",
+      "source_file": "sources/wiki/original/project-readme.md",
+      "source_sha256": "b791f7b56da43f35fbddcbcc4535fdc3ee108e28271588a5d7bbad836adda828"
+    },
+    {
+      "url": "https://spark.lucko.me/docs/Developer-API",
+      "status": "excluded_api",
+      "reason": "开发者 API 接口、事件和代码示例。",
+      "source_file": "sources/wiki/original/developer-api.md",
+      "availability_evidence": "原文包含在已固定提交的官方文档仓库快照中",
+      "source_sha256": "4b59df53323884feaad12d42e1acc938431a825ce94f47a744e9db1ee342f79e"
+    },
+    {
+      "url": "https://spark.lucko.me/docs/misc/Raw-spark-data",
+      "status": "excluded_api",
+      "reason": "JSON/HTTP 端点、JSONPath 参数、Protobuf 模式和解析示例，属于数据 API/格式接口参考。",
+      "source_file": "sources/wiki/original/misc/spark-raw-data.md",
+      "availability_evidence": "原文包含在已固定提交的官方文档仓库快照中",
+      "source_sha256": "c94695ca06032e525642f045afd46a27fd3b9147c1b8b9ccc2768fba3dfe7d8f"
+    }
+  ],
+  "excluded_api": [
+    {
+      "url": "https://spark.lucko.me/docs/Developer-API",
+      "status": "excluded_api",
+      "reason": "开发者 API 接口、事件和代码示例。",
+      "source_file": "sources/wiki/original/developer-api.md",
+      "availability_evidence": "原文包含在已固定提交的官方文档仓库快照中",
+      "source_sha256": "4b59df53323884feaad12d42e1acc938431a825ce94f47a744e9db1ee342f79e"
+    },
+    {
+      "url": "https://spark.lucko.me/docs/misc/Raw-spark-data",
+      "status": "excluded_api",
+      "reason": "JSON/HTTP 端点、JSONPath 参数、Protobuf 模式和解析示例，属于数据 API/格式接口参考。",
+      "source_file": "sources/wiki/original/misc/spark-raw-data.md",
+      "availability_evidence": "原文包含在已固定提交的官方文档仓库快照中",
+      "source_sha256": "c94695ca06032e525642f045afd46a27fd3b9147c1b8b9ccc2768fba3dfe7d8f"
+    }
+  ],
+  "unavailable": [],
+  "actual_page_count": 18,
+  "translated_pages": 18,
+  "untranslated_available_non_api_pages": 0,
+  "all_discovered_candidates_classified": true,
+  "independent_wiki_found": true,
+  "assets": {
+    "ledger": "sources/wiki/assets.json",
+    "archived_source_entries": 23,
+    "unique_local_files": 23,
+    "unavailable": []
+  },
+  "validation": {
+    "status": "failed",
+    "report": "sources/wiki/validation.json",
+    "verbatim_code_blocks": 43,
+    "protected_inline_tokens": 171,
+    "source_table_rows": 49,
+    "translated_table_rows": 49,
+    "pages": 18,
+    "native_asset_files": 23,
+    "local_image_references": 25,
+    "errors": [
+      "Code blocks changed wiki/misc/info-points.md {'source': 5, 'target': 5, 'missing': ['- thread: Server thread\\n  description: >\\n    The main server thread that the game loop is executed o']}",
+      "Duplicate HTML anchors wiki/project-readme.md"
+    ],
+    "warnings": [
+      {
+        "file": "wiki/using-the-viewer.md",
+        "numeric_review": [
+          "100"
+        ]
+      }
+    ]
+  }
+}

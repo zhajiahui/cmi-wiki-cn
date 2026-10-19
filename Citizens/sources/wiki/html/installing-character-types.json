@@ -1,0 +1,21 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Installing Character Types",
+    "pageid": 102,
+    "revid": 1041,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>Installing character types varies from type to type, but it generally follows this pattern.\n</p>\n<ol><li>Shutdown your server</li>\n<li>Download the character type's jar into your plugins folder</li>\n<li>Start up your server, then shut it down again</li>\n<li>Edit any necessary configuration files for that character type</li>\n<li>Turn the server back on</li>\n<li>???</li>\n<li>Profit.</li></ol>\n<p>See the individual character's wiki page for specific details on that type's installation.\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145845\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.010 seconds\nReal time usage: 0.020 seconds\nPreprocessor visited node count: 1/1000000\nRevision size: 449/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 1/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 94c70ee5-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": []
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "1.x/Mobs.yml",
+    "pageid": 37,
+    "revid": 677,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><table class=\"wikitable\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"1\" style=\"width: 100%; background-color:#F75D59; font-size: 32px; padding: 15px;\"><b>Not Supported!</b>\n</th></tr>\n<tr>\n<td style=\"font-size: 16px;\">This page is about Citizens 1.x, while the current version is Citizens 2.0.2. This page's content may be outdated, and shouldn't be trusted as being correct. See this page's talk page for more information. If you were looking for the 2.0.2 equivalent of this page, try <a href=\"/index.php?title=Mobs.yml&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Mobs.yml (page does not exist)\">Mobs.yml</a>. If you feel this message was displayed in error, please contact an administrator.\n</td></tr></tbody></table>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"Mobs.yml\">Mobs.yml</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Mobs.yml&amp;action=edit&amp;section=1\" title=\"Edit section: Mobs.yml\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>The mobs.yml controls Mob type <a href=\"/Characters\" title=\"Characters\">Characters</a>. Currently, the only mob character are <a href=\"/index.php?title=Evil_NPCs&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Evil NPCs (page does not exist)\">Evil NPCs</a>. The general: node controls all mobs.  The evil: node controls <a href=\"/index.php?title=Evil_NPCs&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Evil NPCs (page does not exist)\">Evil NPCs</a>.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Example_mobs.yml\">Example mobs.yml</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Mobs.yml&amp;action=edit&amp;section=2\" title=\"Edit section: Example mobs.yml\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<pre>general:\n  spawn:\n    delay: 1  # Aufdemrand: Need to confirm whether this is ticks or minutes.\n\nevil:\n  spawn:\n    max: 10\n    chance: 100\n    spawn: true\n\n  items:\n    tame-item: 377 \n    drops: 264,265,266,\n\n  misc:\n    tame-chance: 50\n    names: Bandit,Thief,\n    health: 20\n    failed-tame-messages: The blaze powder fails to calm your subject.;POOF! Nothing.\n</pre>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Related_Permissions\">Related Permissions</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Mobs.yml&amp;action=edit&amp;section=3\" title=\"Edit section: Related Permissions\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>See <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> for information on how to use permissions.  The listed permission nodes below relate to Mobs.yml and Evil NPCs.\n</p>\n<pre>citizens.evils.immune   # Those with this node will not be attacked by Evil NPCs</pre>\n<div class=\"padded\" style=\"font-size: 12px; padding: 5px\">\n<table class=\"wikitable collapsible collapsed\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Usage\" title=\"Category:Usage\">Usage</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Installation\" title=\"Installation\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Frequently_Asked_Questions\" title=\"Frequently Asked Questions\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Editors\" title=\"Editors\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Characters\" title=\"Characters\">Characters</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/API\" title=\"API\">API</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32;\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Configuration\" title=\"Category:Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Configuration\" title=\"Configuration\">Configuration</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Data_Storage\" title=\"Data Storage\">Data Storage</a>\n</td></tr></tbody></table>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145808\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.034 seconds\nReal time usage: 0.054 seconds\nPreprocessor visited node count: 42/1000000\nRevision size: 889/2097152 bytes\nPost‐expand include size: 2423/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 4/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 468/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   18.911      1 -total\n 50.76%    9.599      1 Template:NoSupport\n 46.93%    8.874      1 Template:NavBox\n 30.52%    5.772      2 Template:Version2F\n 23.17%    4.382     10 Template:·\n 15.42%    2.917      1 Template:Version2\n-->\n\n<!-- Render ID 7eb94e63-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "API"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Configuration"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Data Storage"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Editors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Text Syntax"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      },
+      {
+        "ns": 0,
+        "*": "Mobs.yml"
+      },
+      {
+        "ns": 0,
+        "*": "Evil NPCs"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Configuration"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Usage"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Mobs.yml",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "1.x/Mobs.yml",
+        "byteoffset": 14,
+        "anchor": "Mobs.yml",
+        "linkAnchor": "Mobs.yml"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Example mobs.yml",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "1.x/Mobs.yml",
+        "byteoffset": 204,
+        "anchor": "Example_mobs.yml",
+        "linkAnchor": "Example_mobs.yml"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Related Permissions",
+        "number": "1.2",
+        "index": "3",
+        "fromtitle": "1.x/Mobs.yml",
+        "byteoffset": 605,
+        "anchor": "Related_Permissions",
+        "linkAnchor": "Related_Permissions"
+      }
+    ]
+  }
+}

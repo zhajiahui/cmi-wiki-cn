@@ -1,0 +1,38 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "1.x/More Example Quests",
+    "pageid": 51,
+    "revid": 981,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><table class=\"wikitable\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"1\" style=\"width: 100%; background-color:#F75D59; font-size: 32px; padding: 15px;\"><b>Not Supported!</b>\n</th></tr>\n<tr>\n<td style=\"font-size: 16px;\">This page is about Citizens 1.x, while the current version is Citizens 2.0.2. This page's content may be outdated, and shouldn't be trusted as being correct. See this page's talk page for more information. If you were looking for the 2.0.2 equivalent of this page, try <a href=\"/index.php?title=More_Example_Quests&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"More Example Quests (page does not exist)\">More Example Quests</a>. If you feel this message was displayed in error, please contact an administrator.\n</td></tr></tbody></table>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"Slime_Slaying\">Slime Slaying</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/More_Example_Quests&amp;action=edit&amp;section=1\" title=\"Edit section: Slime Slaying\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<pre>\n\n# NPC Quest Slime Slaying initiated by NPC Theo (22).\n\n\"Slime Slaying\":\n    texts:\n        description: \"&lt;Theo&gt; The best way to take care of those slimes is to slay\n            &lt;br&gt;them with a sword. We have a bit of overcrowding, as you can\n            &lt;br&gt;see.. would you be willing you help our small city?\n            &lt;br&gt;&amp;6Quest: &lt;g&gt;The Slime Slayer, Part 1\n            &lt;br&gt;&amp;6Objective: Destroy 12 slimes.\"\n        acceptance: \"&lt;Theo&gt; Great! You are truly a friend! Our small \n            &lt;br&gt;city has a lot to offer, so stick around. \n            &lt;delay=60&gt;&lt;Theo&gt; HAHAHA... get it? &lt;g&gt;STICK&amp;f around? HAH HAH HAH!\n            &lt;delay=80&gt;&amp;6Quest: &lt;g&gt;The Slime Slayer, Part 1 &amp;6started!\n            &lt;delay=40&gt;&lt;g&gt;Remember, you can use &amp;6/quest status &lt;g&gt;to check your progress.\"\n        completion: \"&lt;Theo&gt; Wow! You've taken care of the slimes already?\n            &lt;br&gt;We really appreciate the help!\n            &lt;br&gt;&amp;6Quest: You have recieved 100 bucks for your effort. Sweet!\n            &lt;br&gt;&lt;Theo&gt; Don't bounce outta here too soon.\n            &lt;delay=40&gt;&lt;Theo&gt; HAHA.. get it? &lt;g&gt;BOUNCE&amp;f? Oh.. HAH HAH!\"\n    repeats: -1\n    objectives:\n        '0':\n            '0':\n                type: hunt\n                string: 'slime'\n                amount: 12\n                message: \"&amp;6Quest: A dozen slimes down. That wasn't so hard. \n                    &lt;delay=120&gt;&amp;fPerhaps you should see if &lt;g&gt;Theo &amp;frequires any additional help?\"\n            '1':\n                type: delivery\n                materialid: 341 # Slimeballs\n                amount: 6\n                npcdestination: 22\n                optional: True # Optional sub-objective triggers only if you bring slimeballs\n                               # before the other objective is complete. \n                message: \"&amp;6Quest: Slimeballs delivered.\n                    &lt;delay=50&gt;&lt;Theo&gt; Oh, what's this? \n                    &lt;delay=20&gt;&lt;Theo&gt; OH! Slimeballs, Yes! You can keep what you find, but I \n                    &lt;br&gt;appreciate the gesture! Take this -- perhaps it will help you\n                    &lt;br&gt;become a more efficient slime slayer! \n                    &lt;br&gt;&lt;Theo&gt;What have you got to l-ooze?\n                    &lt;delay=40&gt;&lt;Theo&gt; HAHA. Get it? L-&lt;g&gt;OOOOZE&amp;f? HAHAHA \n                    &lt;delay=20&gt;&amp;6Quest: You have received a bow and some arrows! Nice!\"\n                rewards:\n                    '0':\n                         type: item\n                         id: 261  # Bow\n                         amount: 1\n                    '1':\n                         type: item\n                         id: 262  # Arrows\n                         amount: 64\n    rewards:\n        '0':\n            type: money\n            money: 100\n</pre>\n<!-- \nNewPP limit report\nCached time: 20261019145811\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.024 seconds\nReal time usage: 0.038 seconds\nPreprocessor visited node count: 15/1000000\nRevision size: 2773/2097152 bytes\nPost‐expand include size: 643/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 4/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2945/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   11.873      1 Template:NoSupport\n100.00%   11.873      1 -total\n 62.05%    7.367      2 Template:Version2F\n 30.73%    3.648      1 Template:Version2\n-->\n\n<!-- Render ID 808311e8-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "*": "More Example Quests"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Slime Slaying",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "1.x/More_Example_Quests",
+        "byteoffset": 14,
+        "anchor": "Slime_Slaying",
+        "linkAnchor": "Slime_Slaying"
+      }
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://meta.denizenscript.com/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+These scripts use all the powerful features of Denizen to do some really cool things. 
+__TOC__
+
+==== Maggie's Magic Shop ====
+Maggie sells magic odds and ends. This set of scripts simulates a vendor. She will greet the player, offer her wares, and check for the proper amount of money. This is a great example of how to use Flags.
+[[File:Maggie Choice Debug.png|right|thumb|300px|Maggie's Script: What would you like to buy?]]
+[[File:Maggie Buying Feathers.png|right|thumb|300px|Maggie's Script: Buying Feathers game screen]]
+[[File:Maggie Feather Debug.png|right|thumb|300px|Maggie's Script: Buying Feathers debug screen]]
+<pre>
+# Maggie sells some magic items for money.
+# Version 1.1
+
+# ASSIGNMENTS
+#
+#  Maggie:
+#    Interact Scripts:
+#    - 0 Magic Shop
+#    - 10 ^Magic Shop Not Enough Money
+#    - 20 ^Magic Shop Feathers
+#    - 20 ^Magic Shop Dust
+    
+# MAGGIES MAGIC SHOP.YML ----
+
+'Magic Shop':
+  Type: Interact
+  Requirements:
+    Mode: None
+  Steps:
+    1:
+      Proximity Trigger:
+        Script:
+        - CHAT 'Welcome to my shop! Have a look around!'
+      Click Trigger:
+        Script:
+        - CHAT 'What would you like to buy?'
+        - HINT
+      Chat Trigger:
+        1:
+          Trigger: I would like to buy some /feathers/
+          Script:
+          - CHAT 'Great! Feathers are 20 coins.'
+          - ^NARRATE 'Right click to purchase some feathers.'
+          - FLAG 'MAGICSHOPITEM:FEATHER' 'DURATION:15'
+        2:
+          Trigger: I would like to buy some /glowstone dust/
+          Script:
+          - CHAT 'Great! Glowstone dust is 50 coins.'
+          - ^NARRATE 'Right click to purchase some glowstone dust.'
+          - FLAG 'MAGICSHOPITEM:DUST' 'DURATION:15'
+        3:
+          Trigger: I would like to buy some /*/
+          Script:
+          - CHAT "Ah! Sorry, I don't sell any of that!"
+
+          
+'Magic Shop Not Enough Money':
+  Type: Interact
+  Requirements:
+    Mode: All
+    List:
+    - FLAGGED 'MAGICSHOPITEM'
+  Steps:
+    1:
+      Click Trigger:
+        Script:
+        - ^NARRATE "Erm... seems you don't have enough money."
+        - RESET 'FLAG:MAGICSHOPITEM'
+
+        
+'Magic Shop Feathers':
+  Type: Interact
+  Requirements:
+    Mode: All
+    List:
+    - FLAGGED 'MAGICSHOPITEM:FEATHER'
+    - MONEY 20
+  Steps:
+    1:
+      Click Trigger:
+        Script:
+        - ^TAKE MONEY QTY:20
+        - ^GIVE FEATHER QTY:10
+        - CHAT 'Thanks! Here are your feathers.'  
+        - NARRATE 'You bought 10 Feathers for 20 coins! Sweet!'
+        - NARRATE 'Right click again to buy some more.'
+
+        
+'Magic Shop Dust':
+  Type: Interact
+  Requirements:
+    Mode: All
+    List:
+    - FLAGGED 'MAGICSHOPITEM:DUST'
+    - MONEY 50
+  Steps:
+    1:
+      Click Trigger:
+        Script:
+        - ^TAKE MONEY QTY:50
+        - ^GIVE GLOWSTONE_DUST QTY:10
+        - CHAT "Thanks! Here's your dust."
+        - NARRATE 'You bought 10 Glowstone Dust for 50 coins! Sweet!'
+        - NARRATE 'Right click again to buy some more.'
+</pre>
+
+==To Do==
+
+[[Category:Denizen 0.7]]

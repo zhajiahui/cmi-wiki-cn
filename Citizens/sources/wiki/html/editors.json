@@ -1,0 +1,183 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Editors",
+    "pageid": 131,
+    "revid": 5017,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>Editors are used to further edit NPCs in easy ways. These are things considered too complex to require just commands to edit. In all editors, you must type the associated command once to enter the editor, and again to exit it. <b>You can only be in one editor at a time.</b>\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Text_Editor\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Text Editor</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Waypoint_Editor\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Waypoint Editor</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Equipment_Editor\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Equipment Editor</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Generic\"><span class=\"tocnumber\">3.1</span> <span class=\"toctext\">Generic</span></a></li>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#Humans_(regular_NPCs)\"><span class=\"tocnumber\">3.2</span> <span class=\"toctext\">Humans (regular NPCs)</span></a></li>\n<li class=\"toclevel-2 tocsection-6\"><a href=\"#Endermen\"><span class=\"tocnumber\">3.3</span> <span class=\"toctext\">Endermen</span></a></li>\n<li class=\"toclevel-2 tocsection-7\"><a href=\"#Sheep\"><span class=\"tocnumber\">3.4</span> <span class=\"toctext\">Sheep</span></a></li>\n<li class=\"toclevel-2 tocsection-8\"><a href=\"#Pigs\"><span class=\"tocnumber\">3.5</span> <span class=\"toctext\">Pigs</span></a></li>\n<li class=\"toclevel-2 tocsection-9\"><a href=\"#Clientside_Issues\"><span class=\"tocnumber\">3.6</span> <span class=\"toctext\">Clientside Issues</span></a></li>\n</ul>\n</li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Text_Editor\">Text Editor</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Editors&amp;action=edit&amp;section=1\" title=\"Edit section: Text Editor\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Command: /npc text\n<br /><br />\nEditing a NPC's text is simple. Follow the in-game directions to add, edit, and remove text from NPCs. A NPC being a \"random-talker\" means that it will repeat random phrases from its list of text. If \"random\" is false, it will loop through the text linearly. Changing its close-talker setting by typing \"close\" will toggle whether a NPC talks when a player comes within 5 blocks. If close is false, the NPC will only talk when it is clicked with the configurable talk-item. If close is true, it will only talk when a player comes near.\n</p><p><b>Note that players need the citizens.npc.talk permission to hear NPCs!</b>\n</p><p>Important note: Type 'exit' in chat to close the editor!\n</p><p>Also see <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a>\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Waypoint_Editor\">Waypoint Editor</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Editors&amp;action=edit&amp;section=2\" title=\"Edit section: Waypoint Editor\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Command: /npc path\n<br /><br /><br />\nSee the <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> page for more information.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Equipment_Editor\">Equipment Editor</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Editors&amp;action=edit&amp;section=3\" title=\"Edit section: Equipment Editor\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Command: /npc equip\n<br /><br /><br />\nEquipment is things like armor, held-items, and other visible features on NPCs. Only some NPC types can have their equipment edited.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Generic\">Generic</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Editors&amp;action=edit&amp;section=4\" title=\"Edit section: Generic\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>With the new mob equipment updating in 1.4.5, any mobs not listed here will default to the Human equipping style. Note that the equipment may not display properly on all mobs as some do not support it.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Humans_(regular_NPCs)\"><span id=\"Humans_.28regular_NPCs.29\"></span>Humans (regular NPCs)</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Editors&amp;action=edit&amp;section=5\" title=\"Edit section: Humans (regular NPCs)\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Human NPCs can have their armor and held item modified. To give armor to a NPC, right-click one with armor in your hand. The armor is placed on the NPC's body. Any item or armor that was previously on a NPC will be removed and dropped to the ground. To place armor in a NPC's hand, <i>crouch</i> and right-click. To clear all items, right-click the NPC with no items in your hand.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Endermen\">Endermen</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Editors&amp;action=edit&amp;section=6\" title=\"Edit section: Endermen\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Enderman NPCs can have their carried material modified. The only valid materials that an enderman can hold are blocks - most items do not appear on the client. Note that certain \"utility\" blocks such as sign posts, silverfish blocks, etc. <i>do not</i> appear on the client either. Click with no items in your hand to remove blocks from the enderman NPC.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Sheep\">Sheep</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Editors&amp;action=edit&amp;section=7\" title=\"Edit section: Sheep\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Sheep NPCs can have their wool color and sheared status modified. To shear, right-click with shears like your normally would. To un-shear a sheep NPC, click it with the shears again. To change the wool color, click the sheep NPC with dye. Clicking with anything but dye in your hand will turn the sheep NPC white and drop the dye on the ground.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Pigs\">Pigs</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Editors&amp;action=edit&amp;section=8\" title=\"Edit section: Pigs\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Pig NPCs can have saddles added and removed from them. Simply right-click the pig NPC with a saddle in hand. Clicking with any other item in your hand will remove the saddle from the pig NPC.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Clientside_Issues\">Clientside Issues</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Editors&amp;action=edit&amp;section=9\" title=\"Edit section: Clientside Issues\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>There are known clientside issues with some equipment editors. If you are experiencing an issue, it is likely clientside. Try relogging and if necessary restarting your server. If you still think the issue is present, report an issue <a rel=\"nofollow\" class=\"external text\" href=\"http://issues.citizensnpcs.net\">here</a>.\n</p>\n<div class=\"padded\" style=\"font-size: 12px; padding: 5px\">\n<table class=\"wikitable collapsible collapsed\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Usage\" title=\"Category:Usage\">Usage</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Installation\" title=\"Installation\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Frequently_Asked_Questions\" title=\"Frequently Asked Questions\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a class=\"mw-selflink selflink\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Characters\" title=\"Characters\">Characters</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/API\" title=\"API\">API</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32;\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Configuration\" title=\"Category:Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Configuration\" title=\"Configuration\">Configuration</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Data_Storage\" title=\"Data Storage\">Data Storage</a>\n</td></tr></tbody></table>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145845\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.021 seconds\nReal time usage: 0.025 seconds\nPreprocessor visited node count: 42/1000000\nRevision size: 3169/2097152 bytes\nPost‐expand include size: 1802/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    7.847      1 Template:NavBox\n100.00%    7.847      1 -total\n 41.83%    3.283     10 Template:·\n-->\n\n<!-- Render ID 94c70ee7-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "API"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Configuration"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Data Storage"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Text Syntax"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Configuration"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Usage"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Text Editor",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Editors",
+        "byteoffset": 275,
+        "anchor": "Text_Editor",
+        "linkAnchor": "Text_Editor"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Waypoint Editor",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Editors",
+        "byteoffset": 1017,
+        "anchor": "Waypoint_Editor",
+        "linkAnchor": "Waypoint_Editor"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Equipment Editor",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "Editors",
+        "byteoffset": 1119,
+        "anchor": "Equipment_Editor",
+        "linkAnchor": "Equipment_Editor"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Generic",
+        "number": "3.1",
+        "index": "4",
+        "fromtitle": "Editors",
+        "byteoffset": 1307,
+        "anchor": "Generic",
+        "linkAnchor": "Generic"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Humans (regular NPCs)",
+        "number": "3.2",
+        "index": "5",
+        "fromtitle": "Editors",
+        "byteoffset": 1524,
+        "anchor": "Humans_(regular_NPCs)",
+        "linkAnchor": "Humans_(regular_NPCs)"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Endermen",
+        "number": "3.3",
+        "index": "6",
+        "fromtitle": "Editors",
+        "byteoffset": 1931,
+        "anchor": "Endermen",
+        "linkAnchor": "Endermen"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Sheep",
+        "number": "3.4",
+        "index": "7",
+        "fromtitle": "Editors",
+        "byteoffset": 2299,
+        "anchor": "Sheep",
+        "linkAnchor": "Sheep"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Pigs",
+        "number": "3.5",
+        "index": "8",
+        "fromtitle": "Editors",
+        "byteoffset": 2657,
+        "anchor": "Pigs",
+        "linkAnchor": "Pigs"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Clientside Issues",
+        "number": "3.6",
+        "index": "9",
+        "fromtitle": "Editors",
+        "byteoffset": 2861,
+        "anchor": "Clientside_Issues",
+        "linkAnchor": "Clientside_Issues"
+      }
+    ],
+    "showtoc": ""
+  }
+}

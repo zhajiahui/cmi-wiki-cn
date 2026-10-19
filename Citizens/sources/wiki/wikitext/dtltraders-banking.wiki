@@ -1,0 +1,12 @@
+Going to update this page soon!
+== Navigation ==
+{| class="wikitable" style="text-align: center; width: 500px"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="2" | '''DtlTraders'''
+|-
+| Usage || | [http://wiki.citizensnpcs.com/DtlTraders/managing Managing] | [http://wiki.citizensnpcs.com/DtlTraders/trading Trading] | [http://wiki.citizensnpcs.com/DtlTraders/banking Banking] <!-- | [http://wiki.citizensnpcs.com/DtlTraders/patterns Patterns] -->
+|-
+| Configuration || | [http://wiki.citizensnpcs.com/DtlTraders/config Configuration] | [http://wiki.citizensnpcs.com/DtlTraders/Commands Commands] | [http://wiki.citizensnpcs.com/DtlTraders/permissions Permissions] | [http://wiki.citizensnpcs.com/DtlTraders/locale Locale] 
+|-
+| Types || | [http://wiki.citizensnpcs.com/DtlTraders/traders Traders] | [http://wiki.citizensnpcs.com/DtlTraders/bankers Bankers] <!--| [http://wiki.citizensnpcs.com/DtlTraders/auctionhouse Auction House] | [http://wiki.citizensnpcs.com/DtlTraders/wallets Wallets]-->
+|}

@@ -1,0 +1,105 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Permissions",
+    "pageid": 96,
+    "revid": 5367,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><div class=\"mw-heading mw-heading2\"><h2 id=\"Citizens_2.0.x_Permissions\">Citizens 2.0.x Permissions</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Permissions&amp;action=edit&amp;section=1\" title=\"Edit section: Citizens 2.0.x Permissions\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>This page may be outdated: double check the plugin.yml at <a rel=\"nofollow\" class=\"external free\" href=\"https://github.com/CitizensDev/Citizens2/blob/master/main/src/main/resources/plugin.yml\">https://github.com/CitizensDev/Citizens2/blob/master/main/src/main/resources/plugin.yml</a> for up-to-date permissions\n</p><p>Default on all permissions is OP\n</p>\n<ul><li>citizens.admin.*\n<ul><li>citizens.admin <span style=\"background: white; color: blue\">This allows players to edit 'server' owned NPCs</span></li>\n<li>citizens.admin.avoid-limits   <span style=\"background: white; color: blue\">Allows user to create any number of NPCs</span></li></ul></li>\n<li>citizens.help   <span style=\"background: white; color: blue\">/citizens help</span></li>\n<li>citizens.npc.*:\n<ul><li>citizens.npc.age <span style=\"background: white; color: blue\">/npc age</span></li>\n<li>citizens.npc.position.assume <span style=\"background: white; color: blue\">/npc age</span></li>\n<li>citizens.npc.behaviour <span style=\"background: white; color: blue\">/npc behaviour</span></li>\n<li>citizens.npc.create <span style=\"background: white; color: blue\">/npc create</span></li>\n<li>citizens.npc.create.[mobtype or *] <span style=\"background: white; color: blue\">/npc create [mobtype]</span></li>\n<li>citizens.npc.controllable <span style=\"background: white; color: blue\">/npc controllable</span></li>\n<li>citizens.npc.copy <span style=\"background: white; color: blue\">/npc copy</span></li>\n<li>citizens.npc.despawn <span style=\"background: white; color: blue\">/npc despawn</span></li>\n<li>citizens.npc.edit.*\n<ul><li>citizens.npc.edit.equip <span style=\"background: white; color: blue\">/npc equip</span></li>\n<li>citizens.npc.edit.path <span style=\"background: white; color: blue\">/npc path</span></li></ul></li>\n<li>citizens.npc.help <span style=\"background: white; color: blue\">/npc help</span></li>\n<li>citizens.npc.limit.# <span style=\"background: white; color: blue\">Limit this player to creating # number of NPCs (works with 1-100</span></li>\n<li>citizens.npc.list <span style=\"background: white; color: blue\">/npc list</span></li>\n<li>citizens.npc.lookclose <span style=\"background: white; color: blue\">/npc lookclose</span></li>\n<li>citizens.npc.moveto <span style=\"background: white; color: blue\">/npc moveto</span></li>\n<li>citizens.npc.owner <span style=\"background: white; color: blue\">/npc owner</span></li>\n<li>citizens.npc.path <span style=\"background: white; color: blue\">/npc path</span></li>\n<li>citizens.npc.power <span style=\"background: white; color: blue\">/npc power</span></li>\n<li>citizens.npc.profession <span style=\"background: white; color: blue\">/npc profession</span></li>\n<li>citizens.npc.remove <span style=\"background: white; color: blue\">/npc remove</span></li>\n<li>citizens.npc.remove.all <span style=\"background: white; color: blue\">/npc removeall</span></li>\n<li>citizens.npc.rename <span style=\"background: white; color: blue\">/npc rename</span></li>\n<li>citizens.npc.select <span style=\"background: white; color: blue\">/npc select</span></li>\n<li>citizens.npc.spawn <span style=\"background: white; color: blue\">/npc spawn</span></li>\n<li>citizens.npc.speed <span style=\"background: white; color: blue\">/npc speed</span></li>\n<li>citizens.npc.talk <span style=\"background: white; color: blue\"> Hear NPCs by click or walking near with talk-close</span></li>\n<li>citizens.npc.text <span style=\"background: white; color: blue\">/npc text</span></li>\n<li>citizens.npc.trait.*\n<ul><li>citizens.npc.trait <span style=\"background: white; color: blue\">/trait</span></li>\n<li>citizens.npc.trait-configure</li>\n<li>citizens.npc.trait-configure.*</li>\n<li>citizens.npc.tp <span style=\"background: white; color: blue\">/npc tp</span></li>\n<li>citizens.npc.tphere <span style=\"background: white; color: blue\">/npc tphere</span></li></ul></li></ul></li></ul>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Character_Permissions\">Character Permissions</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Permissions&amp;action=edit&amp;section=2\" title=\"Edit section: Character Permissions\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>See the appropriate <a href=\"/Characters\" title=\"Characters\">Characters</a> page for character-specific permission nodes.\n</p>\n<div class=\"padded\" style=\"font-size: 12px; padding: 5px\">\n<table class=\"wikitable collapsible collapsed\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Usage\" title=\"Category:Usage\">Usage</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Installation\" title=\"Installation\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Frequently_Asked_Questions\" title=\"Frequently Asked Questions\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Editors\" title=\"Editors\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Characters\" title=\"Characters\">Characters</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/API\" title=\"API\">API</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32;\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Configuration\" title=\"Category:Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Configuration\" title=\"Configuration\">Configuration</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a class=\"mw-selflink selflink\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Data_Storage\" title=\"Data Storage\">Data Storage</a>\n</td></tr></tbody></table>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145906\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.041 seconds\nReal time usage: 0.049 seconds\nPreprocessor visited node count: 348/1000000\nRevision size: 2540/2097152 bytes\nPost‐expand include size: 4040/2097152 bytes\nTemplate argument size: 819/2097152 bytes\nHighest expansion depth: 3/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   21.342      1 -total\n 52.38%   11.178      1 Template:NavBox\n 32.68%    6.974     33 Template:Color\n 18.40%    3.926     10 Template:·\n-->\n\n<!-- Render ID a14b6765-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "API"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Configuration"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Data Storage"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Editors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Text Syntax"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Configuration"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Usage"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Citizens 2.0.x Permissions",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Permissions",
+        "byteoffset": 0,
+        "anchor": "Citizens_2.0.x_Permissions",
+        "linkAnchor": "Citizens_2.0.x_Permissions"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Character Permissions",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Permissions",
+        "byteoffset": 2395,
+        "anchor": "Character_Permissions",
+        "linkAnchor": "Character_Permissions"
+      }
+    ]
+  }
+}

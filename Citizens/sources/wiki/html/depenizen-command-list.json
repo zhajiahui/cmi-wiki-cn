@@ -1,0 +1,63 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Depenizen/Command-List",
+    "pageid": 342,
+    "revid": 5388,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://meta.denizenscript.com/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br /><br /><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p>NOTE: As of 0.8, all Denizen commands allow a player:&lt;name&gt; and/or npc:&lt;id&gt; argument.\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1\"><a href=\"#BattleNight\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">BattleNight</span></a></li>\n<li class=\"toclevel-1\"><a href=\"#mcMMO\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">mcMMO</span></a></li>\n<li class=\"toclevel-1\"><a href=\"#Towny\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Towny</span></a></li>\n<li class=\"toclevel-1\"><a href=\"#Jobs\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Jobs</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading1\"><h1 id=\"BattleNight\">BattleNight</h1></div>\n<pre>\t- bn add\n\t- bn kick\n\t- bn start\n\t- bn end\n</pre>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"mcMMO\">mcMMO</h1></div>\n<pre>\t- mcmmo add [levels/xp] (skill:&lt;skill&gt;) (party:&lt;party&gt;)\n\t- mcmmo remove [levels/xp] (skill:&lt;skill&gt;) (party:&lt;party&gt;)\n\t- mcmmo set [levels/xp/xprate/vampirism/hardcore/leader] (skill:&lt;skill&gt;) (party:&lt;party&gt;) (state:{toggle}/true/false)\n</pre>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"Towny\">Towny</h1></div>\n<pre>\t- towny add [resident/money/town/nation/townblock/bonus/plot/outpost] (&lt;town&gt;) (&lt;location&gt;) (&lt;nation&gt;) (qty:&lt;#&gt;)\n\t- towny remove [resident/money/town/nation/townblock/plot/outpost] (&lt;town&gt;) (&lt;location&gt;) (&lt;nation&gt;) (qty:&lt;#&gt;)\n\t- towny set [name:&lt;name&gt;/capital/open/public/mayor/surname/title/rank/board/war/maxsize/taxes/tag/spawn/perm/relation] (state:{toggle}/true/false) (&lt;town&gt;) (&lt;nation&gt;)\n</pre>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"Jobs\">Jobs</h1></div>\n<pre>\t- jobs promote [&lt;job&gt;] [&lt;#&gt;]\n\t- jobs demote [&lt;job&gt;] [&lt;#&gt;]\n\t- jobs join [&lt;job&gt;]\n\t- jobs quit [&lt;job&gt;]\n</pre>\n<!-- \nNewPP limit report\nCached time: 20261019145901\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.018 seconds\nReal time usage: 0.030 seconds\nPreprocessor visited node count: 13/1000000\nRevision size: 1660/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 958/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 9e5076e5-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "BattleNight",
+        "number": "1",
+        "index": "",
+        "byteoffset": null,
+        "anchor": "BattleNight",
+        "linkAnchor": "BattleNight"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "mcMMO",
+        "number": "2",
+        "index": "",
+        "byteoffset": null,
+        "anchor": "mcMMO",
+        "linkAnchor": "mcMMO"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Towny",
+        "number": "3",
+        "index": "",
+        "byteoffset": null,
+        "anchor": "Towny",
+        "linkAnchor": "Towny"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Jobs",
+        "number": "4",
+        "index": "",
+        "byteoffset": null,
+        "anchor": "Jobs",
+        "linkAnchor": "Jobs"
+      }
+    ],
+    "showtoc": ""
+  }
+}

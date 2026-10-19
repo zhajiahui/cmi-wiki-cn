@@ -1,0 +1,456 @@
+{
+  "snapshot": "2026-10-19",
+  "version": "1.22.0 @ 8791487eeec1866b30f45c34a60fbc0e738c9ecf",
+  "scope": "完整官方 Wiki 非 API 范围；仅排除纯 API 接口参考；混合页面的教程与使用示例完整保留",
+  "candidate_urls": [
+    "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/README.md",
+    "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Expansions/CustomAction.js",
+    "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Expansions/CustomItemEditor.js",
+    "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Expansions/CustomSection.js",
+    "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Expansions/DefaultSection.js",
+    "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Expansions/ExampleExpansion.js",
+    "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Functions/ExampleFunction.yml",
+    "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/GlobalSections/ExampleSection.yml",
+    "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/ItemActions/ExampleAction.yml",
+    "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/ItemPacks/ExampleItemPack.yml",
+    "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Items/ExampleItem.yml",
+    "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Scripts/ExampleScript.js",
+    "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Scripts/ItemTime.js",
+    "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/config.yml",
+    "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/plugin.yml",
+    "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/JavaScriptLib/lib.js",
+    "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/README.md#development",
+    "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/README.md#api",
+    "https://ankhorg.github.io/NeigeItems-Kotlin/",
+    "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/README.md#L7"
+  ],
+  "candidates": [
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/README.md",
+      "title": "官方公开说明（非 API 部分）",
+      "status": "translated",
+      "file": "wiki/public-readme.md",
+      "source_file": "sources/wiki/original/README.md",
+      "source_sha256": "274d1a13de58e173be2e7dfc4500a94abd3b1404c5992bba40cc77da1caa064b",
+      "material": "public-readme-non-api",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Expansions/CustomAction.js",
+      "title": "自定义动作示例",
+      "status": "translated",
+      "file": "wiki/public-examples/Expansions/CustomAction.js.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/Expansions/CustomAction.js.md",
+      "source_sha256": "d65dca98f4b47c717ef0bb181056dbbab0aa247d43031cb45b0f8c6c59ba97df",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Expansions/CustomItemEditor.js",
+      "title": "自定义物品编辑函数示例",
+      "status": "translated",
+      "file": "wiki/public-examples/Expansions/CustomItemEditor.js.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/Expansions/CustomItemEditor.js.md",
+      "source_sha256": "a844fa139fb0a51e9b110fb30b47eddb6af49db4f782b6844adb98d990bcd2ed",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Expansions/CustomSection.js",
+      "title": "自定义节点示例",
+      "status": "translated",
+      "file": "wiki/public-examples/Expansions/CustomSection.js.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/Expansions/CustomSection.js.md",
+      "source_sha256": "eb564336906530faf739e015b56a65134ff47798f2de10483d278a47051006fb",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Expansions/DefaultSection.js",
+      "title": "默认节点扩展",
+      "status": "translated",
+      "file": "wiki/public-examples/Expansions/DefaultSection.js.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/Expansions/DefaultSection.js.md",
+      "source_sha256": "5071cb8850bae03c1bca11db2f7f1a2d538f85631dfaf31520b5e774442415b8",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Expansions/ExampleExpansion.js",
+      "title": "扩展示例",
+      "status": "translated",
+      "file": "wiki/public-examples/Expansions/ExampleExpansion.js.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/Expansions/ExampleExpansion.js.md",
+      "source_sha256": "3f508b304006dd61f08b94560762e2df0722c1b3a086f5483380ad366da9e49a",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Functions/ExampleFunction.yml",
+      "title": "动作组示例",
+      "status": "translated",
+      "file": "wiki/public-examples/Functions/ExampleFunction.yml.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/Functions/ExampleFunction.yml.md",
+      "source_sha256": "1b3c2dd53eb366021b551f40542b1cf17c56fe468ba7b31bb3a7700b71b5e748",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/GlobalSections/ExampleSection.yml",
+      "title": "全局节点示例",
+      "status": "translated",
+      "file": "wiki/public-examples/GlobalSections/ExampleSection.yml.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/GlobalSections/ExampleSection.yml.md",
+      "source_sha256": "301923afa3908ba2d71f8def9819a45fd3aff5c1365ff7f13f9d7452499616a3",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/ItemActions/ExampleAction.yml",
+      "title": "物品动作示例",
+      "status": "translated",
+      "file": "wiki/public-examples/ItemActions/ExampleAction.yml.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/ItemActions/ExampleAction.yml.md",
+      "source_sha256": "26cb843db0076e6fcf34132b7ac083e4a11e7eaeccfdd654c2c4e711436bb368",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/ItemPacks/ExampleItemPack.yml",
+      "title": "物品包示例",
+      "status": "translated",
+      "file": "wiki/public-examples/ItemPacks/ExampleItemPack.yml.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/ItemPacks/ExampleItemPack.yml.md",
+      "source_sha256": "2b10a76ecd01bbab27ed3c6c4ae32768aa0037f1206b6813781c7d6f212ccdf8",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Items/ExampleItem.yml",
+      "title": "物品示例",
+      "status": "translated",
+      "file": "wiki/public-examples/Items/ExampleItem.yml.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/Items/ExampleItem.yml.md",
+      "source_sha256": "f4df922eacf56aa95fe58b2516a00994b4478ece49e4229c7427dfb4e7f04542",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Scripts/ExampleScript.js",
+      "title": "脚本示例",
+      "status": "translated",
+      "file": "wiki/public-examples/Scripts/ExampleScript.js.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/Scripts/ExampleScript.js.md",
+      "source_sha256": "67ae768bc7d756d5b2783dceb54a085ac0f297a8e4fcef8b8f097e53292dc559",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Scripts/ItemTime.js",
+      "title": "物品时间脚本",
+      "status": "translated",
+      "file": "wiki/public-examples/Scripts/ItemTime.js.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/Scripts/ItemTime.js.md",
+      "source_sha256": "f5552aafc98512568465b5032dfd33f44e044a5102dcccc8a9d8d9182a062017",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/config.yml",
+      "title": "公开默认配置与完整中文帮助",
+      "status": "translated",
+      "file": "wiki/public-examples/config.yml.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/config.yml.md",
+      "source_sha256": "0d0c3da015e00d20df3b350bc344d3b9aa809db22c909d7cfdd5b442ecebfe99",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/plugin.yml",
+      "title": "插件描述模板",
+      "status": "translated",
+      "file": "wiki/public-examples/plugin.yml.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/plugin.yml.md",
+      "source_sha256": "abe3a6c93c31e57520f29ece0ee38f81646b79fbbdd1fc2e2c232d867820173a",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/JavaScriptLib/lib.js",
+      "title": "JavaScript 脚本工具库",
+      "status": "translated",
+      "file": "wiki/public-examples/JavaScriptLib/lib.js.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/JavaScriptLib/lib.js.md",
+      "source_sha256": "0a54b737445527dd27bd85eb8095d32e847c2b955e0c4c5e0da0c09d7cf7fdfb",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/README.md#development",
+      "title": "README Development",
+      "status": "excluded_api",
+      "reason": "开发者依赖接入配置。"
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/README.md#api",
+      "title": "README API",
+      "status": "excluded_api",
+      "reason": "Java API 函数及插件接入接口示例；与用户配置示例分开。"
+    },
+    {
+      "url": "https://ankhorg.github.io/NeigeItems-Kotlin/",
+      "title": "Javadoc",
+      "status": "excluded_api",
+      "reason": "官方 README 指向的 Java 接口参考站。"
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/README.md#L7",
+      "title": "完整官方 Wiki（付费入口声明，未提供公开目录 URL）",
+      "status": "unavailable",
+      "reason": "当前主分支与 1.22.0 README 均明确标注 Wiki 付费；公开仓库无用户 Wiki 导航或目录，无法枚举付费墙后的页面。",
+      "enumeration_complete": false,
+      "private_material_used": false
+    }
+  ],
+  "translated": [
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/README.md",
+      "title": "官方公开说明（非 API 部分）",
+      "status": "translated",
+      "file": "wiki/public-readme.md",
+      "source_file": "sources/wiki/original/README.md",
+      "source_sha256": "274d1a13de58e173be2e7dfc4500a94abd3b1404c5992bba40cc77da1caa064b",
+      "material": "public-readme-non-api",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Expansions/CustomAction.js",
+      "title": "自定义动作示例",
+      "status": "translated",
+      "file": "wiki/public-examples/Expansions/CustomAction.js.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/Expansions/CustomAction.js.md",
+      "source_sha256": "d65dca98f4b47c717ef0bb181056dbbab0aa247d43031cb45b0f8c6c59ba97df",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Expansions/CustomItemEditor.js",
+      "title": "自定义物品编辑函数示例",
+      "status": "translated",
+      "file": "wiki/public-examples/Expansions/CustomItemEditor.js.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/Expansions/CustomItemEditor.js.md",
+      "source_sha256": "a844fa139fb0a51e9b110fb30b47eddb6af49db4f782b6844adb98d990bcd2ed",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Expansions/CustomSection.js",
+      "title": "自定义节点示例",
+      "status": "translated",
+      "file": "wiki/public-examples/Expansions/CustomSection.js.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/Expansions/CustomSection.js.md",
+      "source_sha256": "eb564336906530faf739e015b56a65134ff47798f2de10483d278a47051006fb",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Expansions/DefaultSection.js",
+      "title": "默认节点扩展",
+      "status": "translated",
+      "file": "wiki/public-examples/Expansions/DefaultSection.js.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/Expansions/DefaultSection.js.md",
+      "source_sha256": "5071cb8850bae03c1bca11db2f7f1a2d538f85631dfaf31520b5e774442415b8",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Expansions/ExampleExpansion.js",
+      "title": "扩展示例",
+      "status": "translated",
+      "file": "wiki/public-examples/Expansions/ExampleExpansion.js.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/Expansions/ExampleExpansion.js.md",
+      "source_sha256": "3f508b304006dd61f08b94560762e2df0722c1b3a086f5483380ad366da9e49a",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Functions/ExampleFunction.yml",
+      "title": "动作组示例",
+      "status": "translated",
+      "file": "wiki/public-examples/Functions/ExampleFunction.yml.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/Functions/ExampleFunction.yml.md",
+      "source_sha256": "1b3c2dd53eb366021b551f40542b1cf17c56fe468ba7b31bb3a7700b71b5e748",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/GlobalSections/ExampleSection.yml",
+      "title": "全局节点示例",
+      "status": "translated",
+      "file": "wiki/public-examples/GlobalSections/ExampleSection.yml.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/GlobalSections/ExampleSection.yml.md",
+      "source_sha256": "301923afa3908ba2d71f8def9819a45fd3aff5c1365ff7f13f9d7452499616a3",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/ItemActions/ExampleAction.yml",
+      "title": "物品动作示例",
+      "status": "translated",
+      "file": "wiki/public-examples/ItemActions/ExampleAction.yml.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/ItemActions/ExampleAction.yml.md",
+      "source_sha256": "26cb843db0076e6fcf34132b7ac083e4a11e7eaeccfdd654c2c4e711436bb368",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/ItemPacks/ExampleItemPack.yml",
+      "title": "物品包示例",
+      "status": "translated",
+      "file": "wiki/public-examples/ItemPacks/ExampleItemPack.yml.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/ItemPacks/ExampleItemPack.yml.md",
+      "source_sha256": "2b10a76ecd01bbab27ed3c6c4ae32768aa0037f1206b6813781c7d6f212ccdf8",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Items/ExampleItem.yml",
+      "title": "物品示例",
+      "status": "translated",
+      "file": "wiki/public-examples/Items/ExampleItem.yml.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/Items/ExampleItem.yml.md",
+      "source_sha256": "f4df922eacf56aa95fe58b2516a00994b4478ece49e4229c7427dfb4e7f04542",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Scripts/ExampleScript.js",
+      "title": "脚本示例",
+      "status": "translated",
+      "file": "wiki/public-examples/Scripts/ExampleScript.js.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/Scripts/ExampleScript.js.md",
+      "source_sha256": "67ae768bc7d756d5b2783dceb54a085ac0f297a8e4fcef8b8f097e53292dc559",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/Scripts/ItemTime.js",
+      "title": "物品时间脚本",
+      "status": "translated",
+      "file": "wiki/public-examples/Scripts/ItemTime.js.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/Scripts/ItemTime.js.md",
+      "source_sha256": "f5552aafc98512568465b5032dfd33f44e044a5102dcccc8a9d8d9182a062017",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/config.yml",
+      "title": "公开默认配置与完整中文帮助",
+      "status": "translated",
+      "file": "wiki/public-examples/config.yml.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/config.yml.md",
+      "source_sha256": "0d0c3da015e00d20df3b350bc344d3b9aa809db22c909d7cfdd5b442ecebfe99",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/plugin.yml",
+      "title": "插件描述模板",
+      "status": "translated",
+      "file": "wiki/public-examples/plugin.yml.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/plugin.yml.md",
+      "source_sha256": "abe3a6c93c31e57520f29ece0ee38f81646b79fbbdd1fc2e2c232d867820173a",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/src/main/resources/JavaScriptLib/lib.js",
+      "title": "JavaScript 脚本工具库",
+      "status": "translated",
+      "file": "wiki/public-examples/JavaScriptLib/lib.js.md",
+      "source_file": "sources/wiki/original/repository/src/main/resources/JavaScriptLib/lib.js.md",
+      "source_sha256": "0a54b737445527dd27bd85eb8095d32e847c2b955e0c4c5e0da0c09d7cf7fdfb",
+      "material": "public-bundled-file",
+      "counts_as_full_wiki": false
+    }
+  ],
+  "excluded_api": [
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/README.md#development",
+      "title": "README Development",
+      "status": "excluded_api",
+      "reason": "开发者依赖接入配置。"
+    },
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/README.md#api",
+      "title": "README API",
+      "status": "excluded_api",
+      "reason": "Java API 函数及插件接入接口示例；与用户配置示例分开。"
+    },
+    {
+      "url": "https://ankhorg.github.io/NeigeItems-Kotlin/",
+      "title": "Javadoc",
+      "status": "excluded_api",
+      "reason": "官方 README 指向的 Java 接口参考站。"
+    }
+  ],
+  "unavailable": [
+    {
+      "url": "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/README.md#L7",
+      "title": "完整官方 Wiki（付费入口声明，未提供公开目录 URL）",
+      "status": "unavailable",
+      "reason": "当前主分支与 1.22.0 README 均明确标注 Wiki 付费；公开仓库无用户 Wiki 导航或目录，无法枚举付费墙后的页面。",
+      "enumeration_complete": false,
+      "private_material_used": false
+    }
+  ],
+  "candidate_count": 20,
+  "page_count": 16,
+  "translated_page_count": 16,
+  "excluded_api_count": 3,
+  "unavailable_count": 1,
+  "assets": [
+    {
+      "file": "docs/wiki/assets/bstats-NeigeItems.svg",
+      "source_url": "https://bstats.org/signatures/bukkit/NeigeItems.svg",
+      "original_markdown_url": "https://bstats.org/signatures/bukkit/NeigeItems.svg",
+      "sha256": "3902e20fa82f7b2d7ac11f62256c68f5278a784f718f6754ecd1bcf45a33f283",
+      "bytes": 120035,
+      "pages": [
+        "README.md"
+      ]
+    }
+  ],
+  "enumeration_complete": false,
+  "public_repository_inventory_complete": true,
+  "public_materials_complete": true,
+  "available_non_api_complete": false,
+  "full_wiki_available": false,
+  "full_wiki_page_count": null,
+  "public_material_page_count": 16,
+  "source_language": "zh-CN",
+  "discovery_sources": [
+    "https://github.com/ankhorg/NeigeItems-Kotlin",
+    "https://github.com/ankhorg/NeigeItems-Kotlin/wiki",
+    "https://github.com/ankhorg/NeigeItems-Kotlin/blob/1.22.0/README.md"
+  ],
+  "current_branch": "main",
+  "current_commit": "8791487eeec1866b30f45c34a60fbc0e738c9ecf",
+  "private_material_used": false,
+  "paid_wall_bypassed": false,
+  "processing": "仅收录当前官方公开 README 非 API 段落与全部完整随包示例/配置/脚本工具库；不以此替代付费 Wiki。",
+  "validation": {
+    "checked_at": "2026-10-19",
+    "report": "sources/wiki/validation/report.json",
+    "checks": [
+      "frontmatter",
+      "source_sha256_utf8_lf",
+      "candidate_status_partition",
+      "manifest_navigation_consistency",
+      "protected_code_and_inline_tokens",
+      "local_links_and_anchors",
+      "native_asset_hashes"
+    ],
+    "game_runtime_tested": false
+  }
+}

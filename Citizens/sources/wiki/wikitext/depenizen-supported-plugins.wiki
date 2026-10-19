@@ -1,0 +1,31 @@
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://meta.denizenscript.com/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+<h1>Currently Supported Plugins</h1>
+
+* [[Depenizen/BattleNight|BattleNight]]
+* Factions
+* mcMMO
+* Towny
+* Votifier
+* Jobs
+
+If you would like another plugin to be supported, please [https://github.com/Morphan1/Depenizen/issues create a request] detailing the plugin name, where to find it, and what features are desired.

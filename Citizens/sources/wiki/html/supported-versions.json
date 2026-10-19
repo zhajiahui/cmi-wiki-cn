@@ -1,0 +1,150 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Supported Versions",
+    "pageid": 379,
+    "revid": 5645,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>If you were sent to this page, you are:\n</p>\n<ul><li>Having trouble getting Citizens to run</li>\n<li>Asking for help while being on an unsupported Minecraft version</li>\n<li>Asking for help related to a possible bug, but are on an unsupported or limited supported Minecraft version</li>\n<li>Unable to update because of a plugin that does not support the latest patch version</li></ul>\n<p>This page explains what you can and should do, while also providing other helpful tools, to help you maintain your server. \n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Running_a_server_requires_maintenance\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Running a server requires maintenance</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Which_Versions_does_Citizens_support?\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Which Versions does Citizens support?</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#What_to_do?\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">What to do?</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Having_trouble_getting_Citizens_to_run\"><span class=\"tocnumber\">3.1</span> <span class=\"toctext\">Having trouble getting Citizens to run</span></a></li>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#Unable_to_update_because_of_a_plugin_that_does_not_support_the_latest_patch_version\"><span class=\"tocnumber\">3.2</span> <span class=\"toctext\">Unable to update because of a plugin that does not support the latest patch version</span></a></li>\n<li class=\"toclevel-2 tocsection-6\"><a href=\"#Asking_for_help_on_an_unsupported_Minecraft_version\"><span class=\"tocnumber\">3.3</span> <span class=\"toctext\">Asking for help on an unsupported Minecraft version</span></a></li>\n<li class=\"toclevel-2 tocsection-7\"><a href=\"#Reporting_a_potential_bug,_but_on_an_unsupported_Minecraft_version\"><span class=\"tocnumber\">3.4</span> <span class=\"toctext\">Reporting a potential bug, but on an unsupported Minecraft version</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-8\"><a href=\"#How_to_update_a_Minecraft_server\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">How to update a Minecraft server</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-9\"><a href=\"#Have_a_backup_on_hand\"><span class=\"tocnumber\">4.1</span> <span class=\"toctext\">Have a backup on hand</span></a></li>\n<li class=\"toclevel-2 tocsection-10\"><a href=\"#Test_the_update_locally_on_your_computer\"><span class=\"tocnumber\">4.2</span> <span class=\"toctext\">Test the update locally on your computer</span></a></li>\n<li class=\"toclevel-2 tocsection-11\"><a href=\"#Proceed_to_update_your_production_server\"><span class=\"tocnumber\">4.3</span> <span class=\"toctext\">Proceed to update your production server</span></a></li>\n</ul>\n</li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Running_a_server_requires_maintenance\">Running a server requires maintenance</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Supported_Versions&amp;action=edit&amp;section=1\" title=\"Edit section: Running a server requires maintenance\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>We know that running a Minecraft server can be rewarding and fun, but unfortunately it also requires work to maintain, even if you purchase a setup. \nIt's crucial to keep your server updated, because new versions come with security patches, bugfixes, and features for players. \n</p><p>For instance, the <a rel=\"nofollow\" class=\"external text\" href=\"https://en.wikipedia.org/wiki/Log4Shell\">Log4Shell</a> exploit demonstrates how outdated versions can leave servers vulnerable to severe security threats.\n</p><p>Regular backups are essential to ensure the safety of your Minecraft server's data.\nA simple way to make them is to .zip or .tar your Minecraft server and download it with a FTP client from your servers host. If you’re looking for more advanced tools, you might consider using BorgBackup. It allows you to make backups automatically for free.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Which_Versions_does_Citizens_support?\"><span id=\"Which_Versions_does_Citizens_support.3F\"></span>Which Versions does Citizens support?</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Supported_Versions&amp;action=edit&amp;section=2\" title=\"Edit section: Which Versions does Citizens support?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Citizens supports multiple versions of Minecraft, but due to Spigot file size limits, limited development time, and security risks and bugs that come with older Minecraft versions, the actively supported versions change over time. \n</p><p>As a general rule of thumb, only the latest patch version of each of the three most recent Minecraft major releases is fully supported. For example in Minecraft 1.20, the latest patch version is 1.20.6 and so the latest version of Citizens will only work with Minecraft Version 1.20.6, not 1.20 or 1.20.4.\n</p><p>However, the exact versions may vary based on their usage data from bStats or Spigot file size limitations. This means that in some cases, a version may be skipped. For example, Citizens may support versions 1.19.4, 1.21.4, 1.22.1 and dropping support for 1.20.6 instead of 1.19.4, due to low usage or technical constraints.\n</p><p>Some versions receive only limited support, meaning we will answer basic questions but cannot fix bugs or add feature requests on these specific versions, and the latest Citizens version will not run on them. On older versions that are not supported, we won't provide any assistance until you move to a supported version. If you are on 1.8 see <a href=\"/Minecraft_1.8\" title=\"Minecraft 1.8\">Minecraft 1.8</a>.\n</p><p>When Minecraft releases a new update, we provide limited support for the previous version for a short period. For example, if the latest version is 1.21.4, we may still offer limited support for 1.21.3.\n</p><p>You can find the latest Citizens dev build <a rel=\"nofollow\" class=\"external text\" href=\"https://ci.citizensnpcs.co/job/citizens2/\">here</a>. If you are looking for older builds you can find links to them in the #news channel on our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord</a>. Be aware that you might be end up entirely on your own and lose the chance of getting support.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"What_to_do?\"><span id=\"What_to_do.3F\"></span>What to do?</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Supported_Versions&amp;action=edit&amp;section=3\" title=\"Edit section: What to do?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Having_trouble_getting_Citizens_to_run\">Having trouble getting Citizens to run</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Supported_Versions&amp;action=edit&amp;section=4\" title=\"Edit section: Having trouble getting Citizens to run\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>If you have trouble getting Citizens to run, you probably noticed a line like\n</p>\n<pre>Error occurred while enabling Citizens v2.0.37-SNAPSHOT (build 3648) (Is it up to date?)</pre>\n<p>in your latest.log file. This line usually means that either your Minecraft version or Citizens is not up to date.\nIn this case you need to <a rel=\"nofollow\" class=\"external text\" href=\"https://wiki.citizensnpcs.co/Supported_Versions#How_to_update_a_Minecraft_server\">update your Minecraft server</a>. We know that this can be difficult, especially if you just set your server up or purchased a setup. However, server maintenance is critical as explained above.\n</p><p>If you host your server on a free host and have trouble updating your server, please see <a rel=\"nofollow\" class=\"external text\" href=\"https://wiki.citizensnpcs.co/Frequently_Asked_Questions#I_have_a_free_server_(Aternos,_Minehut,_...)_but_there&#39;s_problems\">this</a>.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Unable_to_update_because_of_a_plugin_that_does_not_support_the_latest_patch_version\">Unable to update because of a plugin that does not support the latest patch version</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Supported_Versions&amp;action=edit&amp;section=5\" title=\"Edit section: Unable to update because of a plugin that does not support the latest patch version\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Sometimes, a plugin you rely on may prevent you from updating your server. This can happen when the plugin is not maintained anymore, a Minecraft update happened with complex changes that require more time and work for the plugins developer, or the maintenance of the plugin is community driven.\n</p><p>Verify if the plugin is still being maintained. The plugin's author may have discontinued development. Look for updates on the plugin's official website, official Discord, or Spigot/Hangar page. If the plugin has not been updated in the past year, it's likely no longer maintained. If the plugin is no longer maintained, consider finding an alternative that offers similar functionality and is actively supported and update your server.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Asking_for_help_on_an_unsupported_Minecraft_version\">Asking for help on an unsupported Minecraft version</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Supported_Versions&amp;action=edit&amp;section=6\" title=\"Edit section: Asking for help on an unsupported Minecraft version\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>As earlier explained Citizens does not support all versions of Minecraft. If you are on an outdated version, we unfortunately cannot provide support for it.\n</p><p>Please update your Minecraft server to a version that we fully support.\nOnce you’ve updated your server, feel free to reach out to us for help!\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Reporting_a_potential_bug,_but_on_an_unsupported_Minecraft_version\"><span id=\"Reporting_a_potential_bug.2C_but_on_an_unsupported_Minecraft_version\"></span>Reporting a potential bug, but on an unsupported Minecraft version</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Supported_Versions&amp;action=edit&amp;section=7\" title=\"Edit section: Reporting a potential bug, but on an unsupported Minecraft version\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>If you're encountering a bug on an unsupported or limited supported version, especially on the latest Minecraft major release, the issue may have already been fixed in the latest Citizens version. So please update your Minecraft server to a patch version that we support.\n</p><p>If you cannot update because a Plugin prevents you from it because it does not support this version yet or you are using Paper and the latest version is not stable yet, it's not a problem! \n</p><p>Please help us by attempting to replicate the behavior on a local test server on the latest patch version. If you can successfully replicate the issue, provide your latest.log from the updated server and tell us the steps to reproduce this issue, so we can troubleshoot further.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"How_to_update_a_Minecraft_server\">How to update a Minecraft server</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Supported_Versions&amp;action=edit&amp;section=8\" title=\"Edit section: How to update a Minecraft server\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Updating a Minecraft server is a simple straightforward process, but it’s crucial to approach it carefully to avoid running into issues. The following explanation covers the basic process.\n</p>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"Have_a_backup_on_hand\">Have a backup on hand</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Supported_Versions&amp;action=edit&amp;section=9\" title=\"Edit section: Have a backup on hand\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Before making any changes, make sure you have a working backup of your server. Just in case something unpredictable happens and you need to restore it.\n</p>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"Test_the_update_locally_on_your_computer\">Test the update locally on your computer</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Supported_Versions&amp;action=edit&amp;section=10\" title=\"Edit section: Test the update locally on your computer\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Perform a dry run by downloading and running your server locally on your computer and updating it. To do that, you need to:\n</p>\n<ul><li>Replace the server's .jar file and any plugin .jar file with the updated version you have downloaded from the related plugins page.</li>\n<li>Start your server and check the logs for errors and warnings.</li>\n<li>Log in to your local server and test important things that must work.</li></ul>\n<p>If you don’t see issues coming up, you are likely good to update.\n</p><p>If you encounter issues:\n</p>\n<ul><li>Check the related plugin's official page or support channels for news.</li>\n<li>Look for help on the plugin's Discord server, if any exists.</li></ul>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"Proceed_to_update_your_production_server\">Proceed to update your production server</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Supported_Versions&amp;action=edit&amp;section=11\" title=\"Edit section: Proceed to update your production server\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Once you're confident with your local tests, proceed with updating your production server.\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145919\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.028 seconds\nReal time usage: 0.041 seconds\nPreprocessor visited node count: 39/1000000\nRevision size: 7250/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 99/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID a90b0be4-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Minecraft 1.8"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "3",
+        "line": "Running a server requires maintenance",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Supported_Versions",
+        "byteoffset": 470,
+        "anchor": "Running_a_server_requires_maintenance",
+        "linkAnchor": "Running_a_server_requires_maintenance"
+      },
+      {
+        "toclevel": 1,
+        "level": "3",
+        "line": "Which Versions does Citizens support?",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Supported_Versions",
+        "byteoffset": 1311,
+        "anchor": "Which_Versions_does_Citizens_support?",
+        "linkAnchor": "Which_Versions_does_Citizens_support?"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "What to do?",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "Supported_Versions",
+        "byteoffset": 3124,
+        "anchor": "What_to_do?",
+        "linkAnchor": "What_to_do?"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Having trouble getting Citizens to run",
+        "number": "3.1",
+        "index": "4",
+        "fromtitle": "Supported_Versions",
+        "byteoffset": 3142,
+        "anchor": "Having_trouble_getting_Citizens_to_run",
+        "linkAnchor": "Having_trouble_getting_Citizens_to_run"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Unable to update because of a plugin that does not support the latest patch version",
+        "number": "3.2",
+        "index": "5",
+        "fromtitle": "Supported_Versions",
+        "byteoffset": 4003,
+        "anchor": "Unable_to_update_because_of_a_plugin_that_does_not_support_the_latest_patch_version",
+        "linkAnchor": "Unable_to_update_because_of_a_plugin_that_does_not_support_the_latest_patch_version"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Asking for help on an unsupported Minecraft version",
+        "number": "3.3",
+        "index": "6",
+        "fromtitle": "Supported_Versions",
+        "byteoffset": 4830,
+        "anchor": "Asking_for_help_on_an_unsupported_Minecraft_version",
+        "linkAnchor": "Asking_for_help_on_an_unsupported_Minecraft_version"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Reporting a potential bug, but on an unsupported Minecraft version",
+        "number": "3.4",
+        "index": "7",
+        "fromtitle": "Supported_Versions",
+        "byteoffset": 5193,
+        "anchor": "Reporting_a_potential_bug,_but_on_an_unsupported_Minecraft_version",
+        "linkAnchor": "Reporting_a_potential_bug,_but_on_an_unsupported_Minecraft_version"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "How to update a Minecraft server",
+        "number": "4",
+        "index": "8",
+        "fromtitle": "Supported_Versions",
+        "byteoffset": 6012,
+        "anchor": "How_to_update_a_Minecraft_server",
+        "linkAnchor": "How_to_update_a_Minecraft_server"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "Have a backup on hand",
+        "number": "4.1",
+        "index": "9",
+        "fromtitle": "Supported_Versions",
+        "byteoffset": 6241,
+        "anchor": "Have_a_backup_on_hand",
+        "linkAnchor": "Have_a_backup_on_hand"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "Test the update locally on your computer",
+        "number": "4.2",
+        "index": "10",
+        "fromtitle": "Supported_Versions",
+        "byteoffset": 6426,
+        "anchor": "Test_the_update_locally_on_your_computer",
+        "linkAnchor": "Test_the_update_locally_on_your_computer"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "Proceed to update your production server",
+        "number": "4.3",
+        "index": "11",
+        "fromtitle": "Supported_Versions",
+        "byteoffset": 7101,
+        "anchor": "Proceed_to_update_your_production_server",
+        "linkAnchor": "Proceed_to_update_your_production_server"
+      }
+    ],
+    "showtoc": ""
+  }
+}

@@ -1,0 +1,12 @@
+{{NoSupport}}
+Citizens is configured with a few YAML files. Configuration files will generate automatically when you first install Citizens. If a file is missing a setting, it will automatically generate.
+
+== Configuration files ==
+
+[[citizens.yml]] control the core components of Citizens.<br>
+[[mobs.yml]] contain configuration nodes for [[Evil NPCs]].<br>
+[[npc_profiles.yml]] contain information about toggleable [[Characters]].<br>
+[[quests.yml]] contain your quest files for [[Quester]]s.
+
+{{NavBox}}
+[[Category:Citizens1]]

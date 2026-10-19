@@ -1,0 +1,19 @@
+---
+title: "我找不到任何矿物/矿石"
+source_url: "https://wiki.itemsadder.com/faq/i-cant-find-any-mineral-ore"
+source_kind: "official-wiki"
+translation_review: "reviewed"
+source_version: "official-wiki snapshot 2026-10-19; master@4c214199685f4380ac0f7be0ab9f77415a033921"
+---
+
+
+# 我找不到任何矿物/矿石
+
+## 常见原因可能是：
+
+* 你在一个**预生成的世界**中寻找矿石。\
+  矿石只会在安装 ItemsAdder 后生成的新区块中生成。\
+  这与原版 Minecraft 的工作方式完全相同。更新游戏时，旧区块中不会生成新矿石。
+* 你在**出生点**附近寻找矿石。请尝试**传送到远离出生点的地方**
+* 你在一个自定义名称的世界中寻找矿石。\
+  你必须在文件 `contents/iasurvival/configs/ores/worlds_populators_1_18.yml` 中为**每个矿石**配置添加世界名称。

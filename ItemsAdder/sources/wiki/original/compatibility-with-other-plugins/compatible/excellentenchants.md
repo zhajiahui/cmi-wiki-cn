@@ -1,0 +1,37 @@
+# ExcellentEnchants
+
+[Download here](https://www.spigotmc.org/resources/goldenenchants-%E2%80%A2-more-vanilla-like-enchantments-1-14-1-16.61693/)
+
+(previously known as **GoldenEnchants**)
+
+## How to use enchants
+
+This is an example configuration for an ItemsAdder custom item enchant.
+
+Warning: enchants won't be shown on the item lore, it's a "bug" of the other plugin.
+
+<mark style="color:green;">The effect will still work!</mark>
+
+So you should write the lore on your own.
+
+```yaml
+  ruby_pickaxe:
+    display_name: display-name-ruby_pickaxe
+    permission: ruby_pickaxe
+    resource:
+      material: DIAMOND_PICKAXE
+      generate: true
+      textures:
+      - item/ruby_pickaxe.png
+    enchants:
+    - tunnel:1
+```
+
+In this case I set `tunnel` enchant with level 1.
+
+You might have to also specify the namespace of the enchant. It should be `excellentenchants`.\
+So for example: `excellentenchants:tunnel:1`.
+
+Refer to the plugin tutorials:
+
+

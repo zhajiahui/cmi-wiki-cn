@@ -1,0 +1,188 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Cracks",
+    "pageid": 355,
+    "revid": 5502,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#This_Page\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">This Page</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Common_Misunderstandings\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Common Misunderstandings</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#&quot;Premium&quot;\"><span class=\"tocnumber\">2.1</span> <span class=\"toctext\">\"Premium\"</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#&quot;But_Offline_Is_A_Built-In_Feature&quot;\"><span class=\"tocnumber\">2.2</span> <span class=\"toctext\">\"But Offline Is A Built-In Feature\"</span></a></li>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#&quot;But_I_Need_It_To_Test_Multiple_Players&quot;\"><span class=\"tocnumber\">2.3</span> <span class=\"toctext\">\"But I Need It To Test Multiple Players\"</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-6\"><a href=\"#Legality\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Legality</span></a></li>\n<li class=\"toclevel-1 tocsection-7\"><a href=\"#Safety_Warning\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Safety Warning</span></a></li>\n<li class=\"toclevel-1 tocsection-8\"><a href=\"#Cracked_Servers_Are_Limited\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">Cracked Servers Are Limited</span></a></li>\n<li class=\"toclevel-1 tocsection-9\"><a href=\"#Supportability\"><span class=\"tocnumber\">6</span> <span class=\"toctext\">Supportability</span></a></li>\n<li class=\"toclevel-1 tocsection-10\"><a href=\"#Consequences_Of_Offline-Mode\"><span class=\"tocnumber\">7</span> <span class=\"toctext\">Consequences Of Offline-Mode</span></a></li>\n<li class=\"toclevel-1 tocsection-11\"><a href=\"#General_Risks_of_an_Offline-Mode_Server\"><span class=\"tocnumber\">8</span> <span class=\"toctext\">General Risks of an Offline-Mode Server</span></a></li>\n<li class=\"toclevel-1 tocsection-12\"><a href=\"#How_To_Do_It_Right\"><span class=\"tocnumber\">9</span> <span class=\"toctext\">How To Do It Right</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-13\"><a href=\"#Bungee\"><span class=\"tocnumber\">9.1</span> <span class=\"toctext\">Bungee</span></a></li>\n<li class=\"toclevel-2 tocsection-14\"><a href=\"#Velocity\"><span class=\"tocnumber\">9.2</span> <span class=\"toctext\">Velocity</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-15\"><a href=\"#Historical_Geyser_Note\"><span class=\"tocnumber\">10</span> <span class=\"toctext\">Historical Geyser Note</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"This_Page\">This Page</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Cracks&amp;action=edit&amp;section=1\" title=\"Edit section: This Page\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>If you were sent to this page, you are running:\n</p>\n<ul><li>A <b>cracked version of Minecraft</b></li>\n<li>A server that supports users of Minecraft cracks</li>\n<li>Or a server running in <b>offline-mode</b> for any given reason.</li>\n<li>This is also sometimes used as a reference for cracked plugins, and most (though not all) of the contents on this page still apply.</li></ul>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Common_Misunderstandings\">Common Misunderstandings</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Cracks&amp;action=edit&amp;section=2\" title=\"Edit section: Common Misunderstandings\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"&quot;Premium&quot;\"><span id=\".22Premium.22\"></span>\"Premium\"</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Cracks&amp;action=edit&amp;section=3\" title=\"Edit section: &quot;Premium&quot;\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>It is important to be aware that there is no such thing as a \"<b>premium</b>\" Minecraft account.\n</p><p>You either have an account (a validly registered and purchased Mojang account) or you don't.\n</p><p>If you do not have an account and are still playing Minecraft, you are running a cracked client.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"&quot;But_Offline_Is_A_Built-In_Feature&quot;\"><span id=\".22But_Offline_Is_A_Built-In_Feature.22\"></span>\"But Offline Is A Built-In Feature\"</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Cracks&amp;action=edit&amp;section=4\" title=\"Edit section: &quot;But Offline Is A Built-In Feature&quot;\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Some users claim that offline mode can't be illegal because it's a built-in feature.\n</p><p>This is a simple misunderstanding: Offline mode indeed isn't illegal... but using offline mode to allow cracked copies of minecraft to join your server <b>is</b>.\n</p><p>The actual purpose of the <code>online-mode=false</code> is exactly what it says on the tin and nothing more: when you don't have internet access. Offline mode is so you can play minecraft on LAN while offline.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"&quot;But_I_Need_It_To_Test_Multiple_Players&quot;\"><span id=\".22But_I_Need_It_To_Test_Multiple_Players.22\"></span>\"But I Need It To Test Multiple Players\"</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Cracks&amp;action=edit&amp;section=5\" title=\"Edit section: &quot;But I Need It To Test Multiple Players&quot;\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Some users claim that they've downloaded a crack to test some plugin or script with multiple players.\n</p><p>Downloading cracks is downloading cracks. Running cracked is running cracked. There isn't an excuse. You're still risking malware, you're still committing a crime.\n</p><p>Your options for testing are:\n</p>\n<ul><li>A: Buy a second account if you really need to test on your own.</li>\n<li>B: Use an NPC or similar where possible.</li>\n<li>C: Just... ask somebody to come help you test. If you're able to find people to play on a server, you should definitely also be able to find people willing to help test. Just poke a friend and ask them to open minecraft and sit idle on your test server.</li></ul>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Legality\">Legality</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Cracks&amp;action=edit&amp;section=6\" title=\"Edit section: Legality\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Minecraft cracks are <b>illegal software piracy</b>.\n</p><p>Creating, downloading, using, possessing, or distributing a Minecraft crack is a <b>crime</b>.\n</p><p>You should never download, use, or distribute illegal software.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Safety_Warning\">Safety Warning</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Cracks&amp;action=edit&amp;section=7\" title=\"Edit section: Safety Warning\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>It is well known that most Minecraft cracks contain <b>malware</b> (which, in general, is common for most pirated software).\n</p><p>Your computer may be at risk or have been infected with malware if you install or have installed a Minecraft crack.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Cracked_Servers_Are_Limited\">Cracked Servers Are Limited</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Cracks&amp;action=edit&amp;section=8\" title=\"Edit section: Cracked Servers Are Limited\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>An important limitation of both cracked clients and offline-mode servers is reduced and/or altered functionality.\n</p><p>Cracked clients and offline-mode servers <i>cannot access</i> some functionality of Minecraft that is available in legitimate installations.\n</p><p>As such, <i>even if</i> we chose to support offline-mode servers, we would be <i>unable</i> to.\n</p><p>Many errors and strange behaviors result from hosting an offline-mode server, and often do not appear on online-mode servers at all.\n</p><p>As a result, issues on offline-mode servers cannot be addressed in the same way we can address issues found on online-mode servers.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Supportability\">Supportability</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Cracks&amp;action=edit&amp;section=9\" title=\"Edit section: Supportability\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>While generally <b>plugins can run and will work</b> for the most part, <b>we cannot and will not give support for offline-mode</b> servers in any issues pages, forum threads, chatrooms, or other support lines.\n</p><p>For Discord, we are explicitly forbidden from providing support to cracked servers per the <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.com/guidelines\">Discord Guidelines</a>: <code>Do not distribute or provide access to content involving the hacking, cracking, or distribution of stolen goods, pirated content, or accounts. This includes sharing or selling game cheats or hacks.</code> If you run a cracked minecraft server that has a community on Discord, that community may also be violation of this Discord platform rule.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Consequences_Of_Offline-Mode\">Consequences Of Offline-Mode</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Cracks&amp;action=edit&amp;section=10\" title=\"Edit section: Consequences Of Offline-Mode\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Be aware as well that having a server that was in offline mode even momentarily and then changed to online mode after can have lasting consequences, making it dangerous to do things like \"just quickly change to offline to test something\".\n</p><p>If you are running an offline mode server and are going to fix that, the best way to reduce risk of trouble here is to delete player data (stored in a folder labeled \"playerdata\" within each world).\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"General_Risks_of_an_Offline-Mode_Server\">General Risks of an Offline-Mode Server</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Cracks&amp;action=edit&amp;section=11\" title=\"Edit section: General Risks of an Offline-Mode Server\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Alongside to the technical support warnings, it should be noted that offline-mode servers are open to attacks that aren't possible on online-mode servers, such as fake player flooding attacks and banned users returning under a different username (sometimes with a different IP address as well).\n</p><p>Additionally, attacks that are possible on both offline and online mode servers, such as DDoS attacks, are more common on offline-mode servers(in part due to lower fear of consequences from angry players), and in some cases even more easily done (from the lack of official Minecraft safety systems like the account authenticator, as well as availability of things that simply don't work correctly in offline mode).\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"How_To_Do_It_Right\">How To Do It Right</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Cracks&amp;action=edit&amp;section=12\" title=\"Edit section: How To Do It Right\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Your server should <b>always</b> be in online-mode (this is a setting within your <code>server.properties</code> file, there should be a line that reads <code>online-mode=true</code>).\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Bungee\">Bungee</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Cracks&amp;action=edit&amp;section=13\" title=\"Edit section: Bungee\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>The only case when offline-mode can be used on a server is when Bungee is in use. Bungee is a proxy that has its own online-mode functionality, which should be enabled, and your server should have all ports other than the Bungee port blocked by a firewall (otherwise the Bungee online-mode functionality can be bypassed and broken). Additionally, ensure the <code>bungeecord</code> setting in <code>spigot.yml</code> is set to true.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Velocity\">Velocity</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Cracks&amp;action=edit&amp;section=14\" title=\"Edit section: Velocity\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Velocity proxies work the same as Bungee as explained above, only change is instead of 'bungeecord' in 'spigot.yml' you need to enable <code>velocity: enabled:</code> in <code>config/paper-global.yml</code>\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Historical_Geyser_Note\">Historical Geyser Note</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Cracks&amp;action=edit&amp;section=15\" title=\"Edit section: Historical Geyser Note\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><s>Special Extra Note on Geyser and \"Floodgate\"\n</s></p><p><s>Geyser is server software that enables Minecraft: Bedrock Edition players to join Minecraft: Java Edition servers. \"Floodgate\" is an extension to Geyser that removes the requirement to own a legitimate Java Edition account. Despite both games being \"Minecraft\", they are two different games sold separately, at different prices, under different license agreements. As such, \"Floodgate\" is technically a form of cracked software. If you want Bedrock/Java crossplay through Geyser, you must use standard Geyser with its requirement that Bedrock players still use their Java Edition account login.\n</s></p><p><s>See also the <a rel=\"nofollow\" class=\"external text\" href=\"https://help.minecraft.net/hc/en-us/articles/360050865492-JAVA-Account-Migration-FAQ\">Minecraft Bedrock/Java FAQ Page</a> which says \"DOES HAVING A MICROSOFT ACCOUNT ENABLE ME TO PLAY WITH MY FRIENDS ON OTHER PLATFORMS? No. If you play Java Edition, you can still only play with other players who have Java Edition.\"\n</s></p><p><s>Many in the community, us included, really hope that Mojang will one day close the separation and allow both Java and Bedrock players to freely crossplay without restriction. Until they officially enable this, you will have to have specifically a valid Java Edition account to player on Java servers.</s>\n</p><p><i>EDIT</i>: While the above still holds true, recent changes to available licensing and continued lack of clear information from Mojang means we will no longer enforce this is a rule in our support channels until/unless Mojang takes action to enforce it themselves, or announces clear intent to.\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145843\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.020 seconds\nReal time usage: 0.021 seconds\nPreprocessor visited node count: 44/1000000\nRevision size: 7474/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 9395e1e3-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "This Page",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Cracks",
+        "byteoffset": 0,
+        "anchor": "This_Page",
+        "linkAnchor": "This_Page"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Common Misunderstandings",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Cracks",
+        "byteoffset": 350,
+        "anchor": "Common_Misunderstandings",
+        "linkAnchor": "Common_Misunderstandings"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "\"Premium\"",
+        "number": "2.1",
+        "index": "3",
+        "fromtitle": "Cracks",
+        "byteoffset": 380,
+        "anchor": "\"Premium\"",
+        "linkAnchor": "\"Premium\""
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "\"But Offline Is A Built-In Feature\"",
+        "number": "2.2",
+        "index": "4",
+        "fromtitle": "Cracks",
+        "byteoffset": 686,
+        "anchor": "\"But_Offline_Is_A_Built-In_Feature\"",
+        "linkAnchor": "\"But_Offline_Is_A_Built-In_Feature\""
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "\"But I Need It To Test Multiple Players\"",
+        "number": "2.3",
+        "index": "5",
+        "fromtitle": "Cracks",
+        "byteoffset": 1190,
+        "anchor": "\"But_I_Need_It_To_Test_Multiple_Players\"",
+        "linkAnchor": "\"But_I_Need_It_To_Test_Multiple_Players\""
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Legality",
+        "number": "3",
+        "index": "6",
+        "fromtitle": "Cracks",
+        "byteoffset": 1903,
+        "anchor": "Legality",
+        "linkAnchor": "Legality"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Safety Warning",
+        "number": "4",
+        "index": "7",
+        "fromtitle": "Cracks",
+        "byteoffset": 2130,
+        "anchor": "Safety_Warning",
+        "linkAnchor": "Safety_Warning"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Cracked Servers Are Limited",
+        "number": "5",
+        "index": "8",
+        "fromtitle": "Cracks",
+        "byteoffset": 2392,
+        "anchor": "Cracked_Servers_Are_Limited",
+        "linkAnchor": "Cracked_Servers_Are_Limited"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Supportability",
+        "number": "6",
+        "index": "9",
+        "fromtitle": "Cracks",
+        "byteoffset": 3037,
+        "anchor": "Supportability",
+        "linkAnchor": "Supportability"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Consequences Of Offline-Mode",
+        "number": "7",
+        "index": "10",
+        "fromtitle": "Cracks",
+        "byteoffset": 3762,
+        "anchor": "Consequences_Of_Offline-Mode",
+        "linkAnchor": "Consequences_Of_Offline-Mode"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "General Risks of an Offline-Mode Server",
+        "number": "8",
+        "index": "11",
+        "fromtitle": "Cracks",
+        "byteoffset": 4236,
+        "anchor": "General_Risks_of_an_Offline-Mode_Server",
+        "linkAnchor": "General_Risks_of_an_Offline-Mode_Server"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "How To Do It Right",
+        "number": "9",
+        "index": "12",
+        "fromtitle": "Cracks",
+        "byteoffset": 4993,
+        "anchor": "How_To_Do_It_Right",
+        "linkAnchor": "How_To_Do_It_Right"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Bungee",
+        "number": "9.1",
+        "index": "13",
+        "fromtitle": "Cracks",
+        "byteoffset": 5202,
+        "anchor": "Bungee",
+        "linkAnchor": "Bungee"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Velocity",
+        "number": "9.2",
+        "index": "14",
+        "fromtitle": "Cracks",
+        "byteoffset": 5650,
+        "anchor": "Velocity",
+        "linkAnchor": "Velocity"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Historical Geyser Note",
+        "number": "10",
+        "index": "15",
+        "fromtitle": "Cracks",
+        "byteoffset": 5874,
+        "anchor": "Historical_Geyser_Note",
+        "linkAnchor": "Historical_Geyser_Note"
+      }
+    ],
+    "showtoc": ""
+  }
+}

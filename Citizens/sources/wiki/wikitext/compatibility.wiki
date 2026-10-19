@@ -1,0 +1,22 @@
+Known Compatibility issues with Citizens 2.0.4
+
+*Citizens requires CraftBukkit 1.4.5+
+*Setting pvp=false may break left clicking on NPCs as this is treated as attacking the NPC and the event will not fire.
+*The spawning of hostile-mob-type NPCs may be prevented under the following circumstances:
+**There is a plugin preventing spawns with a HIGHEST priority, Plugin List:
+***Essentials WILL prevent npc spawn
+***WorldGuard WILL NOT prevent npc spawn
+***MultiVerse WILL NOT prevent npc spawn
+
+*Authme may throw console errors trying to hook into citizens2.
+*PvPToggle may throw console errors trying to hook into citizens2.
+*TeleportSuite may throw console errors looking for NPCs.
+*HomeSpawnPlus may prevent right-click selection with a stick.
+*APIPlus may prevent all right-clicking
+*PopulationDensity/GriefPrevention may interfere with the spawning of NPCs on server start and may duplicate them on /reload. 
+*[http://dev.bukkit.org/server-mods/heroes/ Heroes] has known issues with player-type NPCs. Please do not send them tickets, we are trying to work with Kainzo to fix this.
+*CityScape uses the /npc command. Use /npc2 to run citizens2 commands if both plugins are installed.
+
+
+{{NavBox}}
+[[Category:Usage]]

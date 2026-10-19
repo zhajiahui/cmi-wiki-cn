@@ -1,0 +1,89 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "DtlTraders/locale",
+    "pageid": 242,
+    "revid": 4144,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Locale_incoming_with_version_2.5\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Locale incoming with version 2.5</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-2\"><a href=\"#General_changes\"><span class=\"tocnumber\">1.1</span> <span class=\"toctext\">General changes</span></a></li>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Updating\"><span class=\"tocnumber\">1.2</span> <span class=\"toctext\">Updating</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Latest_build_changes\"><span class=\"tocnumber\">1.3</span> <span class=\"toctext\">Latest build changes</span></a></li>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#Release_locale_file_(atm_latest_build_version)\"><span class=\"tocnumber\">1.4</span> <span class=\"toctext\">Release locale file (atm latest build version)</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-6\"><a href=\"#Navigation\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Navigation</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Locale_incoming_with_version_2.5\">Locale incoming with version 2.5</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/locale&amp;action=edit&amp;section=1\" title=\"Edit section: Locale incoming with version 2.5\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"General_changes\">General changes</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/locale&amp;action=edit&amp;section=2\" title=\"Edit section: General changes\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>In generally the whole locale system was changed. \nThat allowed me to create a self updating locale, so if you are running the plugin in the default english version you don't need anymore to matter about the locale, its going to update itself if needed&#160;:)\n</p><p>Also translating the locale should be easier, every key is now named in a much obvious way :P\nDecreased the amount of keywords but from up now there are more messages in the locale\n</p>\n<ol><li>all old messages where renamed, so the are much more obvious</li>\n<li>many keywords where removed</li>\n<li>added lores to the locale file</li></ol>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Updating\">Updating</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/locale&amp;action=edit&amp;section=3\" title=\"Edit section: Updating\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>When a locale is going to update itself, it will <b>backup</b> all old messages into a <b>backup</b> tree within the same locale file, so no messages are going vanish with a update. \nHowever if a locale is going to be updated several the backup form the previous update is lost.\n</p><p>Also when creating a <b>translated locale</b>, always keep in mind to set the <b>ver</b> tag for the version you are creating the locale\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Latest_build_changes\">Latest build changes</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/locale&amp;action=edit&amp;section=4\" title=\"Edit section: Latest build changes\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>This file tells the updater what changes to apply to outdated locale files.\nDepending if the <b>new</b> key exists in a definition, it will <b>add</b> or <b>change</b> the given locale entry.\n</p><p>example:\n</p>\n<pre>  player-trader:\n    keyword: Player Trader\n    new: trader-player\n</pre>\n<p>will look for the <b>player-trader</b> keyword, save it into the backup tree and add a new key with the name in <b>new</b> with the given value.\n</p><p>This file is going to be cleared with any next build after a release version. \n</p>\n<pre>messages: \n  denizen-item-hint:\n    message: '{item}: {price}'\n  trader-transaction-success: \n    message: ^6You {action} ^3{amount} ^6for ^3{price}\n  error-argument-invalid:\n    message: '^6Invalid argument was supplied: ^3{argument}'\n  plugin-command-message: \n    message: '^6== dtlTraders ^3{version} ^6=='\n  error-npc-not-selected:\n    message: '^6You did not selected any trader'\n  wallet-balance: \n    message: '^6Wallet balance: ^3{amount}'\n  wallet-deposit: \n    message: ^6Deposited ^3{amount} \n  wallet-deposit-fail: \n    message: 'You dont have enought money' \n  wallet-withdraw: \n    message: ^6Withdrawed ^3{amount} \n  wallet-withdraw-fail: \n    message: '^6Is there enough money to withdraw from this wallet?' \n  wallet-invalid: \n    message: ^6You can not use this command on this wallet type\n  pattern-save-success: \n    message: ^6Successfuly created ^3{pattern} ^6pattern\n  pattern-save-fail-exists: \n    message: ^6This pattern already exists {pattern}\n  error-command-invalid: \n    message: '^6This command is invalid'\n  banker-created: \n    message: '^6You created a new banker: {banker}'\n  trader-created:\n    message: '^6You created a new trader: {trader}'\nkeywords: \n  bought:\n    keyword: Bought\n  sold: \n    keyword: Sold\n  type: \n    keyword: Type\n  server-trader:\n    keyword: Server Trader\n    new: trader-server\n  player-trader:\n    keyword: Player Trader\n    new: trader-player\n  market-trader:\n    keyword: Market Trader\n    new: trader-market\n  banker-type: \n    keyword: Banker type\n  banker-private: \n    keyword: Private Banker\n  banker-money:\n    keyword: Money Banker\nlores: \n  manage-price: \n    name: ^r^6Price management\n    lore:\n    - ^7Click to toggle price managing\n  manage-buy-limit: \n    name: ^r^6Buy limit management\n    lore:\n    - ^7Allows to set amounts you \n    - ^7want to buy from players\n</pre>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Release_locale_file_(atm_latest_build_version)\"><span id=\"Release_locale_file_.28atm_latest_build_version.29\"></span>Release locale file (atm latest build version)</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/locale&amp;action=edit&amp;section=5\" title=\"Edit section: Release locale file (atm latest build version)\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<pre>ver: 1.0.5\nmessages:\n  plugin-reload: ^6Successfuly reloaded ^3dtlTraders\n  plugin-command-message: '^6== dtlTraders ^3{version} ^6=='\n  error-nopermission: ^6You dont have permissions to do this\n  error-nopermission-creative: ^6You dont have permissions to do this while in ^3creative mode\n  error-command-invalid: '^6This command is invalid'\n  error-argument-missing: '^6Argument is missing: {argument}'\n  error-argument-invalid: '^6Invalid argument was supplied: ^3{argument}'\n  error-npc-not-selected: '^6You did not selected any trader'\n  trader-manage-toggle: ^6Toggled ^3{mode} ^6management\n  trader-created: '^6You created a new trader: {trader}'\n  trader-stock-item-select: ^6Item selected\n  trader-stock-item-add: ^6Item added\n  trader-stock-item-update: ^6Item updated\n  trader-stock-item-remove: ^6Item removed\n  trader-transaction-success: ^3You bought/sold an item\n  trader-transaction-failed-limit: ^6Limit for that item has been reached\n  trader-transaction-failed-inventory: ^6You dont got enough place in your inventory\n  trader-transaction-failed-money: ^6Someone does not have enough money\n  managermode-enabled: ^6Manager mode enabled for ^3{npc}\n  managermode-disabled: ^6Manager mode disabled for ^3{npc}\n  wallet-balance: '^6Wallet balance: ^3{amount}'\n  wallet-deposit: ^6Deposited ^3{amount} \n  wallet-deposit-fail: 'You dont have enought money' \n  wallet-withdraw: ^6Withdrawed ^3{amount} \n  wallet-withdraw-fail: '^6Is there enough money to withdraw from this wallet?' \n  wallet-invalid: ^6You can not use this command on this wallet type\n  pattern-save-success: ^6Successfuly created ^3{pattern} ^6pattern\n  pattern-save-fail-exists: ^6This pattern already exists ^3{pattern}\n  banker-created: '^6You created a new banker: {banker}'\n  banker-tab-switch: ^6Switched to ^3{tab}\n  banker-deposit-success: ^6Item deposited\n  banker-withdraw-success: ^6Item withdrawed \n  banker-tab-buy-success: ^6Bought a new tab\n  banker-tab-select-item: ^6Select a new tab item\n  banker-tab-select-item-success: ^6New item was set\n  banker-tab-select-item-canceled: ^6Selecting was aborted\n  denizen-item-hint: '{item}: {price}'\n  key-change: '^6Changed {key}: ^3{value}'\n  key-value: '^6{key}: ^3{value}'\nkeywords:\n  manage-global-limit: Global limit\n  manage-player-limit: Player Limit\n  manage-stock: Stock\n  manage-price: Price\n  price: Price\n  owner: Owner\n  wallet: Wallet\n  stack-price: Stack price\n  enabled: Enabled\n  disabled: Disabled\n  tab-price: Tab price\n  trader-type: Trader type\n  trader-server: Server Trader\n  trader-player: Player Trader\n  trader-market: Market Trader\n  banker-type: Banker type\n  banker-private: Private Banker\n  banker-money: Money Banker\nlores:\n  player-inventory:\n    lore:\n    - '^7Unit price: ^6{unit}'\n    - '^7Stack price: ^6{stack}'\n    - ^7Click to sell\n  trader-inventory-sell:\n    lore:\n    - '^7Price: ^6{price}'\n    - ^7Click to buy\n  trader-inventory-buy:\n    lore:\n    - '^7Price: ^6{price}'\n  sell-tab:\n    name: ^r^6Sell stock\n    lore:\n    - ^7Click to switch to buy stock\n  buy-tab:\n    name: ^r^6Buy stock\n    lore:\n    - ^7Click to switch to sell stock\n  manage-price: \n    name: ^r^6Price management\n    lore:\n    - ^7Click to toggle price managing\n  manage-global-limit: \n    name: ^r^6Global limit management\n    lore:\n    - ^7Click to toggle global limit managing\n  manage-player-limit: \n    name: ^r^6Player limit management\n    lore:\n    - ^7Click to toggle player limit managing\n  manage-buy-limit: \n    name: ^r^6Buy limit management\n    lore:\n    - ^7Allows to set amounts you \n    - ^7want to buy from players\n  return: \n    name: ^r^6Return\n    lore:\n    - ^7Return to stock management\n  amounts-return: \n    name: 'Back to stock'\n</pre>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Navigation\">Navigation</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/locale&amp;action=edit&amp;section=6\" title=\"Edit section: Navigation\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<table class=\"wikitable\" style=\"text-align: center; width: 500px\">\n\n<tbody><tr>\n<th style=\"width: 100%; background-color:#ADD8E6\" colspan=\"2\"><b>DtlTraders</b>\n</th></tr>\n<tr>\n<td>Configuration</td>\n<td><a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/DtlTraders/Commands\">Commands</a> | <a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/DtlTraders/permissions\">Permissions</a> | <a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/DtlTraders/locale\">Locale</a>\n</td></tr>\n<tr>\n<td>Usage</td>\n<td><a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/DtlTraders/patterns\">Patterns</a>\n</td></tr>\n<tr>\n<td>Types</td>\n<td>\n</td></tr>\n<tr>\n<td>Denizen Support</td>\n<td>\n</td></tr></tbody></table>\n<p><br />\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145853\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.015 seconds\nReal time usage: 0.025 seconds\nPreprocessor visited node count: 32/1000000\nRevision size: 9375/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 5661/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 998bc2e5-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Locale incoming with version 2.5",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "DtlTraders/locale",
+        "byteoffset": 0,
+        "anchor": "Locale_incoming_with_version_2.5",
+        "linkAnchor": "Locale_incoming_with_version_2.5"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "General changes",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "DtlTraders/locale",
+        "byteoffset": 40,
+        "anchor": "General_changes",
+        "linkAnchor": "General_changes"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Updating",
+        "number": "1.2",
+        "index": "3",
+        "fromtitle": "DtlTraders/locale",
+        "byteoffset": 631,
+        "anchor": "Updating",
+        "linkAnchor": "Updating"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Latest build changes",
+        "number": "1.3",
+        "index": "4",
+        "fromtitle": "DtlTraders/locale",
+        "byteoffset": 1063,
+        "anchor": "Latest_build_changes",
+        "linkAnchor": "Latest_build_changes"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Release locale file (atm latest build version)",
+        "number": "1.4",
+        "index": "5",
+        "fromtitle": "DtlTraders/locale",
+        "byteoffset": 3456,
+        "anchor": "Release_locale_file_(atm_latest_build_version)",
+        "linkAnchor": "Release_locale_file_(atm_latest_build_version)"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Navigation",
+        "number": "2",
+        "index": "6",
+        "fromtitle": "DtlTraders/locale",
+        "byteoffset": 7238,
+        "anchor": "Navigation",
+        "linkAnchor": "Navigation"
+      }
+    ],
+    "showtoc": ""
+  }
+}

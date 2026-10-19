@@ -1,0 +1,7 @@
+## If you are seeing this page...
+
+That probably means that you were on the old Citizens wikia. We've repetitively asked Wikia to remove that wiki, simply because it's **old**, **outdated'**, and nowadays just flat out **wrong**. They've banned most of us from editing it because we post on it that it is outdated, and this is apparently "vandalism" according to their staff. You were redirected here because you followed a link on that wikia,
+
+## Why am I here?
+
+The old wiki is wrong. Almost everything on it is incorrect. You were sent here so we could warn you of the dangers of using Wikia.

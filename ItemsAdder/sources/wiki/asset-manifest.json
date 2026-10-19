@@ -1,0 +1,4058 @@
+[
+  {
+    "reference": "animated-titles_002.png",
+    "file": "wiki/assets/d06dda49a629c2dcf8d1.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animated-titles_002.png",
+    "sha256": "d06dda49a629c2dcf8d1999645d6f97ddb7ef204ba5e61be943ceeb39254e0fd",
+    "bytes": 91285,
+    "used_by": [
+      "adding-content/animated-titles.md"
+    ]
+  },
+  {
+    "reference": "https://github.com/user-attachments/assets/db9c84da-c30c-40c4-a53d-7850ebd3ad8b",
+    "file": "wiki/assets/e745175d06726cf4509d.png",
+    "source_url": "https://github.com/user-attachments/assets/db9c84da-c30c-40c4-a53d-7850ebd3ad8b",
+    "sha256": "e745175d06726cf4509d683f7a385785d5404ab323295a0fbabe3f9797fe632a",
+    "bytes": 609451,
+    "used_by": [
+      "adding-content/blocks/directional-blocks.md"
+    ]
+  },
+  {
+    "reference": "https://github.com/user-attachments/assets/c4c6c501-a1fa-4cd1-a2de-67c3ad5d626a",
+    "file": "wiki/assets/70a590621ae49a535957.png",
+    "source_url": "https://github.com/user-attachments/assets/c4c6c501-a1fa-4cd1-a2de-67c3ad5d626a",
+    "sha256": "70a590621ae49a53595786aad29b000d82afa070cdda2455cd17fa2b1beaabdb",
+    "bytes": 133052,
+    "used_by": [
+      "adding-content/blocks/directional-blocks.md"
+    ]
+  },
+  {
+    "reference": "https://github.com/user-attachments/assets/c097ac52-80ba-4daf-865b-7726ad3e8b87",
+    "file": "wiki/assets/9998ea71a498b851e2f0.png",
+    "source_url": "https://github.com/user-attachments/assets/c097ac52-80ba-4daf-865b-7726ad3e8b87",
+    "sha256": "9998ea71a498b851e2f03ea370d74da59cae878630234805b69f94a6b4477bd0",
+    "bytes": 618380,
+    "used_by": [
+      "adding-content/blocks/directional-blocks.md"
+    ]
+  },
+  {
+    "reference": "liquids_002.png",
+    "file": "wiki/assets/2099c0ec1cba1ef63bd1.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/liquids_002.png",
+    "sha256": "2099c0ec1cba1ef63bd185b92f75ab9aa9a5964d794ee7887efaf7ea93481b85",
+    "bytes": 41594,
+    "used_by": [
+      "adding-content/blocks/liquids.md"
+    ]
+  },
+  {
+    "reference": "transparent-block_002.png",
+    "file": "wiki/assets/ca47f9a9b15cbc98001d.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/transparent-block_002.png",
+    "sha256": "ca47f9a9b15cbc98001d4df5e8c6535225a9e6d58d89920e2efbb9266ff635c4",
+    "bytes": 44203,
+    "used_by": [
+      "adding-content/blocks/transparent-block.md"
+    ]
+  },
+  {
+    "reference": "turn-block-on-off_003.png",
+    "file": "wiki/assets/6a648190a2948b0e0bd2.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/turn-block-on-off_003.png",
+    "sha256": "6a648190a2948b0e0bd22af43e4eb67c4a600de0e32d912ef55e7bba3bbde952",
+    "bytes": 20726,
+    "used_by": [
+      "adding-content/blocks/turn-block-on-off.md"
+    ]
+  },
+  {
+    "reference": "turn-block-on-off_004.png",
+    "file": "wiki/assets/2ea4aa4b366f1a0461da.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/turn-block-on-off_004.png",
+    "sha256": "2ea4aa4b366f1a0461da4debe21cae639dc2da8e80fb8c179332b5953bb105dd",
+    "bytes": 19418,
+    "used_by": [
+      "adding-content/blocks/turn-block-on-off.md"
+    ]
+  },
+  {
+    "reference": "variants_002.png",
+    "file": "wiki/assets/a3851bf4b222517bdc31.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/variants_002.png",
+    "sha256": "a3851bf4b222517bdc318fcc72924e17b2f0dea6fc07350c602ad1abb12edf4b",
+    "bytes": 500971,
+    "used_by": [
+      "adding-content/blocks/variants.md"
+    ]
+  },
+  {
+    "reference": "colored-items_003.png",
+    "file": "wiki/assets/067c12191454bdca2293.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/colored-items_003.png",
+    "sha256": "067c12191454bdca22930ca3b0fc31c19dbd96b72026b7c44d4c4af21a84e417",
+    "bytes": 341,
+    "used_by": [
+      "adding-content/colored-items.md"
+    ]
+  },
+  {
+    "reference": "colored-items_002.png",
+    "file": "wiki/assets/1db0c0d3113709d60680.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/colored-items_002.png",
+    "sha256": "1db0c0d3113709d6068085fdbaad0152ddd07caf180c8bc3e5973e52d5c8e09c",
+    "bytes": 81243,
+    "used_by": [
+      "adding-content/colored-items.md"
+    ]
+  },
+  {
+    "reference": "colored-models_006.png",
+    "file": "wiki/assets/9bd6ef91dd45cac39b6e.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/colored-models_006.png",
+    "sha256": "9bd6ef91dd45cac39b6e8cc418f053273d9727c5b9541612eb93d06ba4aaf349",
+    "bytes": 59281,
+    "used_by": [
+      "adding-content/colored-models.md"
+    ]
+  },
+  {
+    "reference": "colored-models_008.png",
+    "file": "wiki/assets/059e43d33c16c22a5f19.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/colored-models_008.png",
+    "sha256": "059e43d33c16c22a5f19c2662b5fa200f26badeeceb357e0252796c937a3e776",
+    "bytes": 25710,
+    "used_by": [
+      "adding-content/colored-models.md"
+    ]
+  },
+  {
+    "reference": "colored-models_009.png",
+    "file": "wiki/assets/67e0f9391df26b15d00c.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/colored-models_009.png",
+    "sha256": "67e0f9391df26b15d00cb62e719a579946c874b534f35bcf8ada6f029fa636b0",
+    "bytes": 7425,
+    "used_by": [
+      "adding-content/colored-models.md"
+    ]
+  },
+  {
+    "reference": "colored-models_010.png",
+    "file": "wiki/assets/0f99e3a91e3f2955a1b1.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/colored-models_010.png",
+    "sha256": "0f99e3a91e3f2955a1b1561546befb53e5073f80d6471f6326c346d0775a3129",
+    "bytes": 7058,
+    "used_by": [
+      "adding-content/colored-models.md"
+    ]
+  },
+  {
+    "reference": "colored-models_011.png",
+    "file": "wiki/assets/e5bed9fa63b53f045683.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/colored-models_011.png",
+    "sha256": "e5bed9fa63b53f045683fbe3869cfeb56d9bbeae9ed73ca816ddce55e6f59acc",
+    "bytes": 4318,
+    "used_by": [
+      "adding-content/colored-models.md"
+    ]
+  },
+  {
+    "reference": "colored-models_007.png",
+    "file": "wiki/assets/d613a9ff59f22ad2a188.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/colored-models_007.png",
+    "sha256": "d613a9ff59f22ad2a1880f2864a09107ed881ddbbec4f49818be5cb3f7297f34",
+    "bytes": 41659,
+    "used_by": [
+      "adding-content/colored-models.md"
+    ]
+  },
+  {
+    "reference": "crops_008.png",
+    "file": "wiki/assets/4df3d934bb2a7577eaaf.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/crops_008.png",
+    "sha256": "4df3d934bb2a7577eaafa22896d77dda698726dc7b79697cf5e4b929639a4fd4",
+    "bytes": 2325,
+    "used_by": [
+      "adding-content/crops.md"
+    ]
+  },
+  {
+    "reference": "crops_006.png",
+    "file": "wiki/assets/a19e043273bdb5a3332b.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/crops_006.png",
+    "sha256": "a19e043273bdb5a3332bb38d97b2cdeb0aea7ba252605006d9797d1e9c14e872",
+    "bytes": 5148,
+    "used_by": [
+      "adding-content/crops.md"
+    ]
+  },
+  {
+    "reference": "crops_005.png",
+    "file": "wiki/assets/a79b3e2c2dd499e118e6.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/crops_005.png",
+    "sha256": "a79b3e2c2dd499e118e6f1103bc60313b92ce803d977b4acaf2214fb79f283c9",
+    "bytes": 11573,
+    "used_by": [
+      "adding-content/crops.md"
+    ]
+  },
+  {
+    "reference": "crops_007.png",
+    "file": "wiki/assets/772eed619f524346ad82.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/crops_007.png",
+    "sha256": "772eed619f524346ad826b7dfc025414acc9eff8e66ba7d218aee04a728936a9",
+    "bytes": 220,
+    "used_by": [
+      "adding-content/crops.md"
+    ]
+  },
+  {
+    "reference": "crops_004.png",
+    "file": "wiki/assets/54b69f99b253a5d993e5.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/crops_004.png",
+    "sha256": "54b69f99b253a5d993e5d20c0bd0b7322a38d3b814ea3fb6db897cc46530ca56",
+    "bytes": 61697,
+    "used_by": [
+      "adding-content/crops.md"
+    ]
+  },
+  {
+    "reference": "entities_004.png",
+    "file": "wiki/assets/b0c4f003714b2d1a0754.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/entities_004.png",
+    "sha256": "b0c4f003714b2d1a0754d2b7e08f6b9ba8015c7462c008567acfb2dc52694e8a",
+    "bytes": 15918,
+    "used_by": [
+      "adding-content/entities.md",
+      "adding-content/player-emotes.md"
+    ]
+  },
+  {
+    "reference": "entities_003.png",
+    "file": "wiki/assets/56ee7ec4b8749512d162.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/entities_003.png",
+    "sha256": "56ee7ec4b8749512d162e3d43e41d30f97630907afe97c7c5b2648b70e24eb3f",
+    "bytes": 28238,
+    "used_by": [
+      "adding-content/entities.md"
+    ]
+  },
+  {
+    "reference": "advanced-method_015.png",
+    "file": "wiki/assets/f7d5b5bf5d474e7b7936.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/advanced-method_015.png",
+    "sha256": "f7d5b5bf5d474e7b7936e76df608ec2fd0dd1af6c72504e0872cb857e86b2ef8",
+    "bytes": 18253,
+    "used_by": [
+      "adding-content/entities/advanced-method.md"
+    ]
+  },
+  {
+    "reference": "advanced-method_025.png",
+    "file": "wiki/assets/ffa09808d322a5725361.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/advanced-method_025.png",
+    "sha256": "ffa09808d322a572536197e2a1d74e93da3a46de10d00257508d79a5bb5ed849",
+    "bytes": 4467,
+    "used_by": [
+      "adding-content/entities/advanced-method.md"
+    ]
+  },
+  {
+    "reference": "advanced-method_020.png",
+    "file": "wiki/assets/922f8106eec0d3cab448.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/advanced-method_020.png",
+    "sha256": "922f8106eec0d3cab4489b941887fa22fa28e9de7a2df7386d2d9e397420982e",
+    "bytes": 7022,
+    "used_by": [
+      "adding-content/entities/advanced-method.md"
+    ]
+  },
+  {
+    "reference": "advanced-method_021.png",
+    "file": "wiki/assets/1bfde0e3b876ad5be2f3.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/advanced-method_021.png",
+    "sha256": "1bfde0e3b876ad5be2f300fbab27b05f060163aee60afb0e0bd92acb7fad31df",
+    "bytes": 6459,
+    "used_by": [
+      "adding-content/entities/advanced-method.md"
+    ]
+  },
+  {
+    "reference": "advanced-method_014.png",
+    "file": "wiki/assets/43355bc54be04f43980f.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/advanced-method_014.png",
+    "sha256": "43355bc54be04f43980fbec4a98bbd32c265148e91d700b5108d4c8126c2c6db",
+    "bytes": 22104,
+    "used_by": [
+      "adding-content/entities/advanced-method.md"
+    ]
+  },
+  {
+    "reference": "advanced-method_012.png",
+    "file": "wiki/assets/08cc5e1f938b1c7fd839.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/advanced-method_012.png",
+    "sha256": "08cc5e1f938b1c7fd8395a45f4720ae8dd826eaf7e8a85138c1a615eddb52e8b",
+    "bytes": 29573,
+    "used_by": [
+      "adding-content/entities/advanced-method.md"
+    ]
+  },
+  {
+    "reference": "advanced-method_017.png",
+    "file": "wiki/assets/ff63f0be7b2b1eb05fd1.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/advanced-method_017.png",
+    "sha256": "ff63f0be7b2b1eb05fd105126b263157faeaf6f065267aac51316ddfb4c0a343",
+    "bytes": 10711,
+    "used_by": [
+      "adding-content/entities/advanced-method.md"
+    ]
+  },
+  {
+    "reference": "advanced-method_022.png",
+    "file": "wiki/assets/e6431ccd82dae821f7d7.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/advanced-method_022.png",
+    "sha256": "e6431ccd82dae821f7d73fc9512f04e807115091413701f5d973472b0a7aa739",
+    "bytes": 5355,
+    "used_by": [
+      "adding-content/entities/advanced-method.md"
+    ]
+  },
+  {
+    "reference": "advanced-method_026.png",
+    "file": "wiki/assets/535b094ef5a3e5e54204.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/advanced-method_026.png",
+    "sha256": "535b094ef5a3e5e5420421668b466016eb4d9965f3554bba66407d5b6b8b498c",
+    "bytes": 3752,
+    "used_by": [
+      "adding-content/entities/advanced-method.md"
+    ]
+  },
+  {
+    "reference": "advanced-method_013.png",
+    "file": "wiki/assets/f130a629161930f92547.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/advanced-method_013.png",
+    "sha256": "f130a629161930f9254761522dc876396f2f2093e17b6936badafddcd43bfdc1",
+    "bytes": 28639,
+    "used_by": [
+      "adding-content/entities/advanced-method.md"
+    ]
+  },
+  {
+    "reference": "advanced-method_016.png",
+    "file": "wiki/assets/a0c21111f185ca31b019.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/advanced-method_016.png",
+    "sha256": "a0c21111f185ca31b0194488453a3c5478348b609b330b57eec38b3a7c97f9da",
+    "bytes": 13637,
+    "used_by": [
+      "adding-content/entities/advanced-method.md"
+    ]
+  },
+  {
+    "reference": "advanced-method_024.png",
+    "file": "wiki/assets/0b2f5b7770a6138e6a87.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/advanced-method_024.png",
+    "sha256": "0b2f5b7770a6138e6a8735779fdaea8768c73d61a0bb4c58234e7b8ecabf4027",
+    "bytes": 1260,
+    "used_by": [
+      "adding-content/entities/advanced-method.md"
+    ]
+  },
+  {
+    "reference": "advanced-method_018.png",
+    "file": "wiki/assets/e96feab19c35cfa7725c.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/advanced-method_018.png",
+    "sha256": "e96feab19c35cfa7725c01295fb8c738dc7a17f6d79a8aad45d07d7a544bde9f",
+    "bytes": 8715,
+    "used_by": [
+      "adding-content/entities/advanced-method.md"
+    ]
+  },
+  {
+    "reference": "advanced-method_028.png",
+    "file": "wiki/assets/321d9037c24302f5949c.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/advanced-method_028.png",
+    "sha256": "321d9037c24302f5949cb2ecdfec3b7ed27e7489052591fdd49e18c4dfdb6aa4",
+    "bytes": 4556,
+    "used_by": [
+      "adding-content/entities/advanced-method.md"
+    ]
+  },
+  {
+    "reference": "advanced-method_023.png",
+    "file": "wiki/assets/07bc203a497b8c460f6d.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/advanced-method_023.png",
+    "sha256": "07bc203a497b8c460f6dd9af4bf8738bc0b827ba8850230f05b9f705dccd1fa5",
+    "bytes": 3990,
+    "used_by": [
+      "adding-content/entities/advanced-method.md"
+    ]
+  },
+  {
+    "reference": "advanced-method_019.png",
+    "file": "wiki/assets/87c97026884fa69de62c.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/advanced-method_019.png",
+    "sha256": "87c97026884fa69de62cd72c223169d25a872a1de829a43c442a1a71317e07f9",
+    "bytes": 8638,
+    "used_by": [
+      "adding-content/entities/advanced-method.md"
+    ]
+  },
+  {
+    "reference": "advanced-method_027.png",
+    "file": "wiki/assets/511a9e6090fd61fc4788.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/advanced-method_027.png",
+    "sha256": "511a9e6090fd61fc4788cc6234464fa0a0de22847b20fd5f9be1da5f73bb9453",
+    "bytes": 1072,
+    "used_by": [
+      "adding-content/entities/advanced-method.md",
+      "adding-content/player-emotes/animations.md"
+    ]
+  },
+  {
+    "reference": "animations_016.png",
+    "file": "wiki/assets/d8b2d7ade32dd3e4d288.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animations_016.png",
+    "sha256": "d8b2d7ade32dd3e4d288bc35c01968f017289b64094b5ff4c86819d6a5fa2b66",
+    "bytes": 17520,
+    "used_by": [
+      "adding-content/entities/animations.md"
+    ]
+  },
+  {
+    "reference": "citizens_004.webp",
+    "file": "wiki/assets/64e1b24c8b7828f29972.webp",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/citizens_004.webp",
+    "sha256": "64e1b24c8b7828f2997218a82e5742b6768163ef67d6582e027718cb8aa3ee83",
+    "bytes": 10358,
+    "used_by": [
+      "adding-content/entities/citizens.md"
+    ]
+  },
+  {
+    "reference": "citizens_003.webp",
+    "file": "wiki/assets/7c90bb6cf684a22c0856.webp",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/citizens_003.webp",
+    "sha256": "7c90bb6cf684a22c08562b61807765bacd68d00e0a818d9175fdb954b9b705c1",
+    "bytes": 14286,
+    "used_by": [
+      "adding-content/entities/citizens.md"
+    ]
+  },
+  {
+    "reference": "custom-skin_002.png",
+    "file": "wiki/assets/bfc38f515b59f90d3a2e.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/custom-skin_002.png",
+    "sha256": "bfc38f515b59f90d3a2e3bb1c344ec2d3e5c8ccc9948bbc3818e9b6ee65582f7",
+    "bytes": 33912,
+    "used_by": [
+      "adding-content/entities/custom-skin.md"
+    ]
+  },
+  {
+    "reference": "hands-equipment_006.png",
+    "file": "wiki/assets/398b9a8f2916a8e3cb77.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/hands-equipment_006.png",
+    "sha256": "398b9a8f2916a8e3cb779af6184cb53e176cf7e1fd8884dc0df27a14bcc76f45",
+    "bytes": 29289,
+    "used_by": [
+      "adding-content/entities/hands-equipment.md"
+    ]
+  },
+  {
+    "reference": "hands-equipment_010.png",
+    "file": "wiki/assets/42e13a4196bed16c2ea1.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/hands-equipment_010.png",
+    "sha256": "42e13a4196bed16c2ea196989b82770160e1b5ce4c2b34cf9a414f1e005aac6b",
+    "bytes": 3346,
+    "used_by": [
+      "adding-content/entities/hands-equipment.md"
+    ]
+  },
+  {
+    "reference": "hands-equipment_008.png",
+    "file": "wiki/assets/c1c61f72de5ffa7dccfb.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/hands-equipment_008.png",
+    "sha256": "c1c61f72de5ffa7dccfbf361cfb2de13c672c00ca2c40b96c4190526f135e3b6",
+    "bytes": 8993,
+    "used_by": [
+      "adding-content/entities/hands-equipment.md"
+    ]
+  },
+  {
+    "reference": "hands-equipment_009.png",
+    "file": "wiki/assets/8418e71fb85272a51741.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/hands-equipment_009.png",
+    "sha256": "8418e71fb85272a517418e3bfb647f7a0dbddff7e82c7796784eee61d4538f6a",
+    "bytes": 4047,
+    "used_by": [
+      "adding-content/entities/hands-equipment.md"
+    ]
+  },
+  {
+    "reference": "hands-equipment_011.png",
+    "file": "wiki/assets/a1ca4d306032dcd45cbd.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/hands-equipment_011.png",
+    "sha256": "a1ca4d306032dcd45cbde79cb069444595821c5b81a57be249b35c7a707f39f6",
+    "bytes": 4260,
+    "used_by": [
+      "adding-content/entities/hands-equipment.md"
+    ]
+  },
+  {
+    "reference": "hands-equipment_007.png",
+    "file": "wiki/assets/984d74dde6f7e8cd7ff9.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/hands-equipment_007.png",
+    "sha256": "984d74dde6f7e8cd7ff936e13497693b7c9f46749e5054691844137a5e622fdb",
+    "bytes": 13063,
+    "used_by": [
+      "adding-content/entities/hands-equipment.md"
+    ]
+  },
+  {
+    "reference": "hands-equipment_005.png",
+    "file": "wiki/assets/a06897c299cb81c5e5b3.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/hands-equipment_005.png",
+    "sha256": "a06897c299cb81c5e5b36936c8118878ca0adfe4fb4d3514528ca2cfb1cf5e99",
+    "bytes": 41068,
+    "used_by": [
+      "adding-content/entities/hands-equipment.md"
+    ]
+  },
+  {
+    "reference": "head_004.png",
+    "file": "wiki/assets/bdfaae60d0b71715d21f.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/head_004.png",
+    "sha256": "bdfaae60d0b71715d21fe1ee46250b1e53fe3c5da14fe5a902606383e66623ae",
+    "bytes": 42996,
+    "used_by": [
+      "adding-content/entities/head.md"
+    ]
+  },
+  {
+    "reference": "head_006.png",
+    "file": "wiki/assets/517ffaa21949b754682c.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/head_006.png",
+    "sha256": "517ffaa21949b754682cf01ce493b0fabc1974f21a13f51817ebc7fa435b101b",
+    "bytes": 6833,
+    "used_by": [
+      "adding-content/entities/head.md"
+    ]
+  },
+  {
+    "reference": "head_005.png",
+    "file": "wiki/assets/c4e94453d42787947d1f.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/head_005.png",
+    "sha256": "c4e94453d42787947d1f5817d28b06275aaf55b8e877945af071d4d93962e4b8",
+    "bytes": 10856,
+    "used_by": [
+      "adding-content/entities/head.md"
+    ]
+  },
+  {
+    "reference": "head_007.png",
+    "file": "wiki/assets/740b5ae2e78ac193030b.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/head_007.png",
+    "sha256": "740b5ae2e78ac193030b47484a142f93fa407dc28d293111cfca79f6748d2ab9",
+    "bytes": 3002,
+    "used_by": [
+      "adding-content/entities/head.md"
+    ]
+  },
+  {
+    "reference": "hitbox_007.png",
+    "file": "wiki/assets/6ce05589066d624ade16.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/hitbox_007.png",
+    "sha256": "6ce05589066d624ade1695ba85f872c82591902061ef0d46dd4c90c57455ebbf",
+    "bytes": 4810,
+    "used_by": [
+      "adding-content/entities/hitbox.md"
+    ]
+  },
+  {
+    "reference": "hitbox_004.png",
+    "file": "wiki/assets/5932b5f88c9815bbfbd4.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/hitbox_004.png",
+    "sha256": "5932b5f88c9815bbfbd42a99a9061a944aab8500c2be96005f105cf133665c00",
+    "bytes": 37144,
+    "used_by": [
+      "adding-content/entities/hitbox.md"
+    ]
+  },
+  {
+    "reference": "hitbox_008.png",
+    "file": "wiki/assets/a7c4bb94815fcb4e3b5b.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/hitbox_008.png",
+    "sha256": "a7c4bb94815fcb4e3b5b2da139590e791be871cf14bb7113aaf30f98866d88ab",
+    "bytes": 1476,
+    "used_by": [
+      "adding-content/entities/hitbox.md"
+    ]
+  },
+  {
+    "reference": "hitbox_006.png",
+    "file": "wiki/assets/dbd2c9d872ff60affd61.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/hitbox_006.png",
+    "sha256": "dbd2c9d872ff60affd61bd47ffb26c842ecf6f63f3b6f2c80a0511c97e27dd90",
+    "bytes": 6721,
+    "used_by": [
+      "adding-content/entities/hitbox.md"
+    ]
+  },
+  {
+    "reference": "hitbox_005.png",
+    "file": "wiki/assets/242568436af32550a8fa.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/hitbox_005.png",
+    "sha256": "242568436af32550a8fa8aad8f2a8dd7d89e53e902dbe376ca483efb5128611c",
+    "bytes": 6944,
+    "used_by": [
+      "adding-content/entities/hitbox.md"
+    ]
+  },
+  {
+    "reference": "mount_012.png",
+    "file": "wiki/assets/cc95c94c8d5e08dfdc08.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/mount_012.png",
+    "sha256": "cc95c94c8d5e08dfdc084564761f7353f10814df48573ed2aa3c3881e1a4afb5",
+    "bytes": 6379,
+    "used_by": [
+      "adding-content/entities/mount.md"
+    ]
+  },
+  {
+    "reference": "mount_011.png",
+    "file": "wiki/assets/a5597dd4d3e2d3ece843.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/mount_011.png",
+    "sha256": "a5597dd4d3e2d3ece8438962bd6ccc107437e38d7db2592f1c0c1854e7c944cf",
+    "bytes": 8843,
+    "used_by": [
+      "adding-content/entities/mount.md"
+    ]
+  },
+  {
+    "reference": "mount_006.png",
+    "file": "wiki/assets/b741c256ada415c762cb.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/mount_006.png",
+    "sha256": "b741c256ada415c762cb579de7fe5afed3e106214c06f34443c8ff4f27ddf68d",
+    "bytes": 4232,
+    "used_by": [
+      "adding-content/entities/mount.md"
+    ]
+  },
+  {
+    "reference": "mount_007.png",
+    "file": "wiki/assets/64279207bb7586c25ca0.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/mount_007.png",
+    "sha256": "64279207bb7586c25ca0cf1f164653ac90620120e20e45ac6c38b4b67340d9b2",
+    "bytes": 2044,
+    "used_by": [
+      "adding-content/entities/mount.md"
+    ]
+  },
+  {
+    "reference": "mount_010.png",
+    "file": "wiki/assets/001a35ad05ec86c8ddd3.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/mount_010.png",
+    "sha256": "001a35ad05ec86c8ddd31ab518a99940bd15296b4c861433b9bb2f9ef82d66f3",
+    "bytes": 19806,
+    "used_by": [
+      "adding-content/entities/mount.md"
+    ]
+  },
+  {
+    "reference": "mount_008.png",
+    "file": "wiki/assets/70762cc1b26cae13c96e.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/mount_008.png",
+    "sha256": "70762cc1b26cae13c96e2468ce6846690530d3df9d458b6c357c5bc709fcfd6c",
+    "bytes": 22976,
+    "used_by": [
+      "adding-content/entities/mount.md"
+    ]
+  },
+  {
+    "reference": "mount_009.png",
+    "file": "wiki/assets/934889efa13704cc9899.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/mount_009.png",
+    "sha256": "934889efa13704cc98990992090074f6e4a486cf86f0d7212887be264d872e80",
+    "bytes": 22324,
+    "used_by": [
+      "adding-content/entities/mount.md"
+    ]
+  },
+  {
+    "reference": "particles_006.png",
+    "file": "wiki/assets/2806e86401b0678f4a55.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/particles_006.png",
+    "sha256": "2806e86401b0678f4a55183d25c940ac36f3db27056a62e4a1fd5dbf37cda971",
+    "bytes": 1217,
+    "used_by": [
+      "adding-content/entities/particles.md",
+      "adding-content/player-emotes/particles.md"
+    ]
+  },
+  {
+    "reference": "particles_014.png",
+    "file": "wiki/assets/cc07576bba86a8033079.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/particles_014.png",
+    "sha256": "cc07576bba86a8033079e65984546db9d7b9f211b5a22704ef3728e9b4dd9b77",
+    "bytes": 5518,
+    "used_by": [
+      "adding-content/entities/particles.md",
+      "adding-content/player-emotes/particles.md"
+    ]
+  },
+  {
+    "reference": "particles_009.png",
+    "file": "wiki/assets/09937114f957d29fa3fa.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/particles_009.png",
+    "sha256": "09937114f957d29fa3fa2389b291cf3b628224452235fc5ce6494c9a3fc1d07a",
+    "bytes": 2153,
+    "used_by": [
+      "adding-content/entities/particles.md",
+      "adding-content/player-emotes/particles.md"
+    ]
+  },
+  {
+    "reference": "particles_010.png",
+    "file": "wiki/assets/f81138cdb795aaabfcc3.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/particles_010.png",
+    "sha256": "f81138cdb795aaabfcc3763ffb1617121353ef2f9ddf7ba60bf0bff3fa68d713",
+    "bytes": 33752,
+    "used_by": [
+      "adding-content/entities/particles.md"
+    ]
+  },
+  {
+    "reference": "particles_007.png",
+    "file": "wiki/assets/8bd9d23eb61260625a60.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/particles_007.png",
+    "sha256": "8bd9d23eb61260625a60201adcdeab53802c62a6659d4d848e9ce035c1459a89",
+    "bytes": 1625,
+    "used_by": [
+      "adding-content/entities/particles.md",
+      "adding-content/entities/sounds.md",
+      "adding-content/player-emotes/particles.md",
+      "adding-content/player-emotes/sounds.md"
+    ]
+  },
+  {
+    "reference": "particles_013.png",
+    "file": "wiki/assets/5c2903c31d4dedd9cd27.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/particles_013.png",
+    "sha256": "5c2903c31d4dedd9cd272a8ccbb839a18b8ca7ba7aa4f279a8559d5f90730d7c",
+    "bytes": 8705,
+    "used_by": [
+      "adding-content/entities/particles.md",
+      "adding-content/entities/sounds.md",
+      "adding-content/player-emotes/particles.md",
+      "adding-content/player-emotes/sounds.md"
+    ]
+  },
+  {
+    "reference": "particles_008.png",
+    "file": "wiki/assets/800e05aac27985460c61.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/particles_008.png",
+    "sha256": "800e05aac27985460c615cdb5b13cc3dd7a7574053e1dec8b3be638259d2c445",
+    "bytes": 4338,
+    "used_by": [
+      "adding-content/entities/particles.md",
+      "adding-content/player-emotes/particles.md"
+    ]
+  },
+  {
+    "reference": "particles_012.png",
+    "file": "wiki/assets/d0b1aece7ca57c373015.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/particles_012.png",
+    "sha256": "d0b1aece7ca57c373015d56f4b89755ee96f0ab6d9ac60c4e338e73a93e4b89b",
+    "bytes": 12864,
+    "used_by": [
+      "adding-content/entities/particles.md",
+      "adding-content/player-emotes/particles.md"
+    ]
+  },
+  {
+    "reference": "sounds_004.png",
+    "file": "wiki/assets/8f0f164dd6f6d9c4927e.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/sounds_004.png",
+    "sha256": "8f0f164dd6f6d9c4927ebce8d4a493597e1e4e9e20bae602a51d1617ab6a360d",
+    "bytes": 24833,
+    "used_by": [
+      "adding-content/entities/sounds.md"
+    ]
+  },
+  {
+    "reference": "sounds_003.png",
+    "file": "wiki/assets/2e37713eaf3036dbe929.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/sounds_003.png",
+    "sha256": "2e37713eaf3036dbe929133001fed966a5461368c10e54527bf2b682517d310e",
+    "bytes": 4574,
+    "used_by": [
+      "adding-content/entities/sounds.md",
+      "adding-content/player-emotes/sounds.md"
+    ]
+  },
+  {
+    "reference": "sounds_005.png",
+    "file": "wiki/assets/f9da06e70c390e848689.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/sounds_005.png",
+    "sha256": "f9da06e70c390e848689e9e62c9b0948adf9e5b06faa1a48061ac80f3ea0df88",
+    "bytes": 5353,
+    "used_by": [
+      "adding-content/entities/sounds.md",
+      "adding-content/player-emotes/sounds.md"
+    ]
+  },
+  {
+    "reference": "emojis_010.png",
+    "file": "wiki/assets/5f59255d8d5f8e62b22f.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/emojis_010.png",
+    "sha256": "5f59255d8d5f8e62b22f207375a71a54ee799cb69b28f2b114af59c2233989b3",
+    "bytes": 1347,
+    "used_by": [
+      "adding-content/font-images/emojis.md"
+    ]
+  },
+  {
+    "reference": "emojis_006.png",
+    "file": "wiki/assets/45d212cff252437d0f47.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/emojis_006.png",
+    "sha256": "45d212cff252437d0f4771c43f6bbcdf4ab7b0a885a6e977c5380acaf7fc4b50",
+    "bytes": 22895,
+    "used_by": [
+      "adding-content/font-images/emojis.md"
+    ]
+  },
+  {
+    "reference": "emojis_011.png",
+    "file": "wiki/assets/53da9855d18b11ef1735.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/emojis_011.png",
+    "sha256": "53da9855d18b11ef1735ea2a977c80d9e37c0b0a7bc66b2be0f1f2c62f4bbe9c",
+    "bytes": 2244,
+    "used_by": [
+      "adding-content/font-images/emojis.md"
+    ]
+  },
+  {
+    "reference": "emojis_012.png",
+    "file": "wiki/assets/0e2c9c447184af0c67cb.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/emojis_012.png",
+    "sha256": "0e2c9c447184af0c67cb511f8384854e02d6a2c00f248aa56f88480870f40b9d",
+    "bytes": 1087,
+    "used_by": [
+      "adding-content/font-images/emojis.md"
+    ]
+  },
+  {
+    "reference": "emojis_005.png",
+    "file": "wiki/assets/59707f02ff94549f9851.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/emojis_005.png",
+    "sha256": "59707f02ff94549f98516c6da8de9c45b7e1354687ae2efbea404233da0b8ba2",
+    "bytes": 5881,
+    "used_by": [
+      "adding-content/font-images/emojis.md"
+    ]
+  },
+  {
+    "reference": "emojis_009.png",
+    "file": "wiki/assets/6331b3aff4b8ff36ad64.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/emojis_009.png",
+    "sha256": "6331b3aff4b8ff36ad643e948f196c388c161ffa69e4de89062439efebd8fb3c",
+    "bytes": 16123,
+    "used_by": [
+      "adding-content/font-images/emojis.md"
+    ]
+  },
+  {
+    "reference": "emojis_008.png",
+    "file": "wiki/assets/3cd00897f458aafe9f69.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/emojis_008.png",
+    "sha256": "3cd00897f458aafe9f699e6a945888381b1a1754e60dd6fa05aa9369fd666ca6",
+    "bytes": 18209,
+    "used_by": [
+      "adding-content/font-images/emojis.md"
+    ]
+  },
+  {
+    "reference": "emojis_007.png",
+    "file": "wiki/assets/e25aee07e26ec1f2e365.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/emojis_007.png",
+    "sha256": "e25aee07e26ec1f2e3655bab2174b82de29775f5eb65c81313ea6d5c2231d6fc",
+    "bytes": 18746,
+    "used_by": [
+      "adding-content/font-images/emojis.md"
+    ]
+  },
+  {
+    "reference": "font-images_005.png",
+    "file": "wiki/assets/da6e0b8b9a2811c02d05.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/font-images_005.png",
+    "sha256": "da6e0b8b9a2811c02d05029235e5c4a2ac278149932bf96eb518c843e455b0a7",
+    "bytes": 3801,
+    "used_by": [
+      "adding-content/font-images/font-images.md"
+    ]
+  },
+  {
+    "reference": "font-images_003.png",
+    "file": "wiki/assets/769b00e04c2abd3b189d.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/font-images_003.png",
+    "sha256": "769b00e04c2abd3b189d2ff7606ad7e1cbebc81346f32a194cb8a1d471eeca66",
+    "bytes": 26063,
+    "used_by": [
+      "adding-content/font-images/font-images.md"
+    ]
+  },
+  {
+    "reference": "font-images_004.png",
+    "file": "wiki/assets/30bca593246796d4ea96.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/font-images_004.png",
+    "sha256": "30bca593246796d4ea96311f5a52c1eb8446903c1a913a0e2c8c3e5576466f84",
+    "bytes": 6926,
+    "used_by": [
+      "adding-content/font-images/font-images.md"
+    ]
+  },
+  {
+    "reference": "font_004.png",
+    "file": "wiki/assets/4e602d9a43ade848c763.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/font_004.png",
+    "sha256": "4e602d9a43ade848c763ace58a1816c8be9e0e9f6809447f6da14da0789ad2bf",
+    "bytes": 4890,
+    "used_by": [
+      "adding-content/font-images/font.md"
+    ]
+  },
+  {
+    "reference": "font_003.png",
+    "file": "wiki/assets/d718494d55075df72b59.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/font_003.png",
+    "sha256": "d718494d55075df72b59ff5bd22fb9b890e972258f065c77e848defa650e43df",
+    "bytes": 7912,
+    "used_by": [
+      "adding-content/font-images/font.md"
+    ]
+  },
+  {
+    "reference": "guis_004.png",
+    "file": "wiki/assets/7e20f80160ad7b1a96b1.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/guis_004.png",
+    "sha256": "7e20f80160ad7b1a96b16038298483efdd23d1a98b8ee4675d00871bb5d343dd",
+    "bytes": 15624,
+    "used_by": [
+      "adding-content/font-images/guis.md"
+    ]
+  },
+  {
+    "reference": "https://i.imgur.com/wuFEAoZ.gif",
+    "file": "wiki/assets/51c3dce30776e552d3e0.gif",
+    "source_url": "https://i.imgur.com/wuFEAoZ.gif",
+    "sha256": "51c3dce30776e552d3e027b1a6f59f285d39f29032c95d9c669e580f945b5fd6",
+    "bytes": 398403,
+    "used_by": [
+      "adding-content/font-images/guis.md"
+    ]
+  },
+  {
+    "reference": "guis_003.png",
+    "file": "wiki/assets/a56365a0b37f765b828f.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/guis_003.png",
+    "sha256": "a56365a0b37f765b828f3ce5f1f29da3f48a4082e7185bf4ffa3a1cb009bb2d8",
+    "bytes": 19304,
+    "used_by": [
+      "adding-content/font-images/guis.md"
+    ]
+  },
+  {
+    "reference": "huds_001.png",
+    "file": "wiki/assets/f44fd6bbffc531d10c52.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/huds_001.png",
+    "sha256": "f44fd6bbffc531d10c52303556291a83b3467823ae4445e8dfb66ffd44cc0242",
+    "bytes": 4449,
+    "used_by": [
+      "adding-content/font-images/huds.md"
+    ]
+  },
+  {
+    "reference": "custom-hud-advanced_004.webp",
+    "file": "wiki/assets/a4075602170d1a307c4b.webp",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/custom-hud-advanced_004.webp",
+    "sha256": "a4075602170d1a307c4b1155186318c79853f5fb2c048c882889f0b626e5ff03",
+    "bytes": 4577708,
+    "used_by": [
+      "adding-content/font-images/huds/creating-huds/custom-hud-advanced.md"
+    ]
+  },
+  {
+    "reference": "custom-hud-advanced_003.webp",
+    "file": "wiki/assets/dec90ef21748742b9d4f.webp",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/custom-hud-advanced_003.webp",
+    "sha256": "dec90ef21748742b9d4fd9ddfdd34b483e50c1494bfcc11ea4284a75e02698cd",
+    "bytes": 1191546,
+    "used_by": [
+      "adding-content/font-images/huds/creating-huds/custom-hud-advanced.md"
+    ]
+  },
+  {
+    "reference": "frames-hud_003.png",
+    "file": "wiki/assets/0100267965e337b86d15.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/frames-hud_003.png",
+    "sha256": "0100267965e337b86d15b1af8871300e89a30f3207a5da58c3755ae8672daedf",
+    "bytes": 1678,
+    "used_by": [
+      "adding-content/font-images/huds/creating-huds/frames-hud.md"
+    ]
+  },
+  {
+    "reference": "frames-hud_002.png",
+    "file": "wiki/assets/8bf0ee9438a227aa961b.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/frames-hud_002.png",
+    "sha256": "8bf0ee9438a227aa961b61e329a97be86804249d8a790a2b5c1328707188a10c",
+    "bytes": 10199,
+    "used_by": [
+      "adding-content/font-images/huds/creating-huds/frames-hud.md"
+    ]
+  },
+  {
+    "reference": "frames-hud_004.png",
+    "file": "wiki/assets/8215f1bfbb64f34d2086.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/frames-hud_004.png",
+    "sha256": "8215f1bfbb64f34d2086bebaed780954e051d832b012d4531d5d3175832586bd",
+    "bytes": 4413,
+    "used_by": [
+      "adding-content/font-images/huds/creating-huds/frames-hud.md"
+    ]
+  },
+  {
+    "reference": "status-hud_002.png",
+    "file": "wiki/assets/ea4225e8c6b53aac97a9.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/status-hud_002.png",
+    "sha256": "ea4225e8c6b53aac97a911f1151ebc8738f83e95c7605341bb031b02fd1cde39",
+    "bytes": 1508,
+    "used_by": [
+      "adding-content/font-images/huds/creating-huds/status-hud.md"
+    ]
+  },
+  {
+    "reference": "status-hud_001.png",
+    "file": "wiki/assets/9299de35d5cc6d11883a.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/status-hud_001.png",
+    "sha256": "9299de35d5cc6d11883ab3c5e036e3aaa29bcd57dd52d8da7d8d81e5575ae7a8",
+    "bytes": 1988,
+    "used_by": [
+      "adding-content/font-images/huds/creating-huds/status-hud.md"
+    ]
+  },
+  {
+    "reference": "ranks-prefixes_016.png",
+    "file": "wiki/assets/2ffb1d6f7614f4022191.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/ranks-prefixes_016.png",
+    "sha256": "2ffb1d6f7614f40221918724094e9ce35380dfa102b7d289c0b9121b62cfb444",
+    "bytes": 5768,
+    "used_by": [
+      "adding-content/font-images/ranks-prefixes.md"
+    ]
+  },
+  {
+    "reference": "ranks-prefixes_017.png",
+    "file": "wiki/assets/3d23514eb78b376d4c40.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/ranks-prefixes_017.png",
+    "sha256": "3d23514eb78b376d4c402c4b03f2cf8ce227b5d34c9f18f6df82576f6a98c84f",
+    "bytes": 5592,
+    "used_by": [
+      "adding-content/font-images/ranks-prefixes.md"
+    ]
+  },
+  {
+    "reference": "ranks-prefixes_013.png",
+    "file": "wiki/assets/d821d3064a264a8cece7.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/ranks-prefixes_013.png",
+    "sha256": "d821d3064a264a8cece72013528240d17cd485ebcb3caabbff119e9b41445810",
+    "bytes": 10914,
+    "used_by": [
+      "adding-content/font-images/ranks-prefixes.md"
+    ]
+  },
+  {
+    "reference": "ranks-prefixes_012.png",
+    "file": "wiki/assets/c55ad158f7b1af3b60bc.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/ranks-prefixes_012.png",
+    "sha256": "c55ad158f7b1af3b60bc47dc585e11f47e6c1cd8cc68bc3cb8519e03f891add8",
+    "bytes": 15863,
+    "used_by": [
+      "adding-content/font-images/ranks-prefixes.md"
+    ]
+  },
+  {
+    "reference": "ranks-prefixes_018.png",
+    "file": "wiki/assets/9f14d45a7c6482e59f40.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/ranks-prefixes_018.png",
+    "sha256": "9f14d45a7c6482e59f400d370c2422b5e256bbad50cce974ab3aa765f48b0c66",
+    "bytes": 5094,
+    "used_by": [
+      "adding-content/font-images/ranks-prefixes.md"
+    ]
+  },
+  {
+    "reference": "ranks-prefixes_014.png",
+    "file": "wiki/assets/10b4276221643c0e58e0.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/ranks-prefixes_014.png",
+    "sha256": "10b4276221643c0e58e03507a06cd9e0069f40d4944856918a856ec51e74896d",
+    "bytes": 10209,
+    "used_by": [
+      "adding-content/font-images/ranks-prefixes.md"
+    ]
+  },
+  {
+    "reference": "ranks-prefixes_015.png",
+    "file": "wiki/assets/69a96f56775b7764d97a.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/ranks-prefixes_015.png",
+    "sha256": "69a96f56775b7764d97ae5f65a707aad28ded299ae0ee959664dc718d4e368f9",
+    "bytes": 8787,
+    "used_by": [
+      "adding-content/font-images/ranks-prefixes.md"
+    ]
+  },
+  {
+    "reference": "ranks-prefixes_009.png",
+    "file": "wiki/assets/e36d8979c9aa506909e1.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/ranks-prefixes_009.png",
+    "sha256": "e36d8979c9aa506909e1a9491e369b41f701cb45027f228a2abd2697711c4220",
+    "bytes": 4771,
+    "used_by": [
+      "adding-content/font-images/ranks-prefixes.md"
+    ]
+  },
+  {
+    "reference": "ranks-prefixes_011.png",
+    "file": "wiki/assets/c66134367f19ec1c806c.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/ranks-prefixes_011.png",
+    "sha256": "c66134367f19ec1c806c7f8aa3262cac887e1e99e6b797e793df7f0a970aa732",
+    "bytes": 34915,
+    "used_by": [
+      "adding-content/font-images/ranks-prefixes.md"
+    ]
+  },
+  {
+    "reference": "ranks-prefixes_010.png",
+    "file": "wiki/assets/8b58ea005bfe089804f8.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/ranks-prefixes_010.png",
+    "sha256": "8b58ea005bfe089804f847d810791036a6a3136a34bcdc8e385fa4a7081c6885",
+    "bytes": 4582,
+    "used_by": [
+      "adding-content/font-images/ranks-prefixes.md"
+    ]
+  },
+  {
+    "reference": "furnitures_009.png",
+    "file": "wiki/assets/5a4a1b5e625940fb40b6.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/furnitures_009.png",
+    "sha256": "5a4a1b5e625940fb40b6b764e1bb3596c4ecdea5c7f7517a6476d7923341269f",
+    "bytes": 38915,
+    "used_by": [
+      "adding-content/furnitures.md"
+    ]
+  },
+  {
+    "reference": "furnitures_010.png",
+    "file": "wiki/assets/b4075434e1d385ca6df0.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/furnitures_010.png",
+    "sha256": "b4075434e1d385ca6df0b7aca9686ae050eeea5eb9468e1eabf15d1c90df1c23",
+    "bytes": 35131,
+    "used_by": [
+      "adding-content/furnitures.md"
+    ]
+  },
+  {
+    "reference": "furnitures_007.png",
+    "file": "wiki/assets/9f45c90eb3303a11b306.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/furnitures_007.png",
+    "sha256": "9f45c90eb3303a11b306baced59c8302f7a49ade6859b0f8e8c7e64b67a0bef5",
+    "bytes": 42034,
+    "used_by": [
+      "adding-content/furnitures.md"
+    ]
+  },
+  {
+    "reference": "furnitures_011.png",
+    "file": "wiki/assets/8e67eec289ccddf37c9c.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/furnitures_011.png",
+    "sha256": "8e67eec289ccddf37c9c07a12a7a69f4f13bf973a2ab183c1b20157f2fb82375",
+    "bytes": 29065,
+    "used_by": [
+      "adding-content/furnitures.md"
+    ]
+  },
+  {
+    "reference": "furnitures_008.png",
+    "file": "wiki/assets/cdf393aa423009d108e8.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/furnitures_008.png",
+    "sha256": "cdf393aa423009d108e84333098e72b17a05e173ebb94ffe70496691bc5343cf",
+    "bytes": 41596,
+    "used_by": [
+      "adding-content/furnitures.md"
+    ]
+  },
+  {
+    "reference": "furnitures_012.png",
+    "file": "wiki/assets/28d54bdaf19215ffc133.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/furnitures_012.png",
+    "sha256": "28d54bdaf19215ffc133d379d73847b9f30630f0af8061be24a255518714ea2a",
+    "bytes": 38369,
+    "used_by": [
+      "adding-content/furnitures.md"
+    ]
+  },
+  {
+    "reference": "example_017.png",
+    "file": "wiki/assets/ac274eae27fc328012bd.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/example_017.png",
+    "sha256": "ac274eae27fc328012bd0f3c46cd276bb92b1558c65853da9316ab79c68be61a",
+    "bytes": 4541,
+    "used_by": [
+      "adding-content/furnitures/example.md",
+      "adding-content/furnitures/model.md"
+    ]
+  },
+  {
+    "reference": "example_014.png",
+    "file": "wiki/assets/0e91aa6e541c7fe1eb13.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/example_014.png",
+    "sha256": "0e91aa6e541c7fe1eb13f01185fcccf38b8febf978207c0bf29281baf099c569",
+    "bytes": 16471,
+    "used_by": [
+      "adding-content/furnitures/example.md",
+      "adding-content/furnitures/model.md"
+    ]
+  },
+  {
+    "reference": "example_011.png",
+    "file": "wiki/assets/71fa1d7a95d0f81b53f7.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/example_011.png",
+    "sha256": "71fa1d7a95d0f81b53f78e81482a3fe5edbdc9a013d696936a140cde72adca64",
+    "bytes": 47507,
+    "used_by": [
+      "adding-content/furnitures/example.md"
+    ]
+  },
+  {
+    "reference": "example_013.png",
+    "file": "wiki/assets/9f7db7bcdc26b02e5de0.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/example_013.png",
+    "sha256": "9f7db7bcdc26b02e5de04bf9a99636a1fef146c2930d04c1e4b5e81de618fffc",
+    "bytes": 17808,
+    "used_by": [
+      "adding-content/furnitures/example.md",
+      "adding-content/furnitures/model.md"
+    ]
+  },
+  {
+    "reference": "example_016.png",
+    "file": "wiki/assets/5c283f9f4021283d3d78.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/example_016.png",
+    "sha256": "5c283f9f4021283d3d78c1eb222ec7af9cf4306d4bf27e3547c91c33fbb8d3c8",
+    "bytes": 6263,
+    "used_by": [
+      "adding-content/furnitures/example.md",
+      "adding-content/furnitures/model.md"
+    ]
+  },
+  {
+    "reference": "example_015.png",
+    "file": "wiki/assets/cc1753cacba3e0efffe4.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/example_015.png",
+    "sha256": "cc1753cacba3e0efffe41056e560ae441b38ed100cd7b50c5fb0535518524cb7",
+    "bytes": 15701,
+    "used_by": [
+      "adding-content/furnitures/example.md",
+      "adding-content/furnitures/model.md"
+    ]
+  },
+  {
+    "reference": "example_012.png",
+    "file": "wiki/assets/b703da411eb8cdef398e.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/example_012.png",
+    "sha256": "b703da411eb8cdef398e59181640f452dd7acdac212a883003baea873537320a",
+    "bytes": 23697,
+    "used_by": [
+      "adding-content/furnitures/example.md",
+      "adding-content/furnitures/model.md"
+    ]
+  },
+  {
+    "reference": "example_001.png",
+    "file": "wiki/assets/bdb18f891c42882f4bbd.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/example_001.png",
+    "sha256": "bdb18f891c42882f4bbd465b8d1ca08107de633269c7542bd6f8734f79837d79",
+    "bytes": 68115,
+    "used_by": [
+      "adding-content/furnitures/example.md"
+    ]
+  },
+  {
+    "reference": "example_002.png",
+    "file": "wiki/assets/ddaf9aeadc5e2945958f.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/example_002.png",
+    "sha256": "ddaf9aeadc5e2945958ff3559116f9b0b7512207e25d3a5a705207bb9bb9e08a",
+    "bytes": 57900,
+    "used_by": [
+      "adding-content/furnitures/example.md"
+    ]
+  },
+  {
+    "reference": "furniture-complex_010.png",
+    "file": "wiki/assets/b6a04462096f211b375e.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/furniture-complex_010.png",
+    "sha256": "b6a04462096f211b375ef06a6944e15b486701f9493e386647da53f35c008400",
+    "bytes": 18076,
+    "used_by": [
+      "adding-content/furnitures/furniture-complex.md"
+    ]
+  },
+  {
+    "reference": "furniture-complex_017.png",
+    "file": "wiki/assets/3c5302b77e49cf33c9db.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/furniture-complex_017.png",
+    "sha256": "3c5302b77e49cf33c9db2984726c1ce727d28ac312259d4b2f726c8eab4a4011",
+    "bytes": 3649,
+    "used_by": [
+      "adding-content/furnitures/furniture-complex.md"
+    ]
+  },
+  {
+    "reference": "furniture-complex_009.png",
+    "file": "wiki/assets/d57f7cc11f4da2db574c.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/furniture-complex_009.png",
+    "sha256": "d57f7cc11f4da2db574ca483b8aaebe5c58536a54d80393f2f99bbd14bf31876",
+    "bytes": 25147,
+    "used_by": [
+      "adding-content/furnitures/furniture-complex.md"
+    ]
+  },
+  {
+    "reference": "furniture-complex_012.png",
+    "file": "wiki/assets/49ee2d197b911f94202b.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/furniture-complex_012.png",
+    "sha256": "49ee2d197b911f94202b9639e1779af80d4d88ab3226a4a5e3c95f7f656de57e",
+    "bytes": 13158,
+    "used_by": [
+      "adding-content/furnitures/furniture-complex.md"
+    ]
+  },
+  {
+    "reference": "furniture-complex_016.png",
+    "file": "wiki/assets/87f13e9bae9356830f6b.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/furniture-complex_016.png",
+    "sha256": "87f13e9bae9356830f6bf09a577abc2caeea2ff86756b3e65238661ae1fa11fa",
+    "bytes": 6605,
+    "used_by": [
+      "adding-content/furnitures/furniture-complex.md"
+    ]
+  },
+  {
+    "reference": "furniture-complex_015.png",
+    "file": "wiki/assets/bec7a16c9e1f25d323f0.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/furniture-complex_015.png",
+    "sha256": "bec7a16c9e1f25d323f04b3ed4ee1dbac52eafd144aa9f3655a7b462362b53ca",
+    "bytes": 6871,
+    "used_by": [
+      "adding-content/furnitures/furniture-complex.md"
+    ]
+  },
+  {
+    "reference": "furniture-complex_013.png",
+    "file": "wiki/assets/ecd44858b0a787de356b.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/furniture-complex_013.png",
+    "sha256": "ecd44858b0a787de356b64dcb73d283765d40c9889556a83a263c9c7e5ceb34d",
+    "bytes": 8675,
+    "used_by": [
+      "adding-content/furnitures/furniture-complex.md"
+    ]
+  },
+  {
+    "reference": "furniture-complex_014.png",
+    "file": "wiki/assets/9889f2d98118b10aab47.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/furniture-complex_014.png",
+    "sha256": "9889f2d98118b10aab478c0e57933dcc355b46345a727cea744b2a0e11ba606f",
+    "bytes": 7606,
+    "used_by": [
+      "adding-content/furnitures/furniture-complex.md"
+    ]
+  },
+  {
+    "reference": "furniture-complex_020.png",
+    "file": "wiki/assets/4c5cb8ecbe25e69b995b.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/furniture-complex_020.png",
+    "sha256": "4c5cb8ecbe25e69b995bf00cdbc25e5495b3df6ee854fd39b89378bdbab35f41",
+    "bytes": 3937,
+    "used_by": [
+      "adding-content/furnitures/furniture-complex.md"
+    ]
+  },
+  {
+    "reference": "furniture-complex_011.png",
+    "file": "wiki/assets/4384366df3cbd6728891.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/furniture-complex_011.png",
+    "sha256": "4384366df3cbd67288915382ba94b58902b12dd4331bceb63ed2e281116081ee",
+    "bytes": 13491,
+    "used_by": [
+      "adding-content/furnitures/furniture-complex.md"
+    ]
+  },
+  {
+    "reference": "furniture-complex_018.png",
+    "file": "wiki/assets/ca0a8383c01034a5a31f.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/furniture-complex_018.png",
+    "sha256": "ca0a8383c01034a5a31f11d037fcb831ec5965c7d3f5d65f205f20b68f1f9633",
+    "bytes": 569,
+    "used_by": [
+      "adding-content/furnitures/furniture-complex.md"
+    ]
+  },
+  {
+    "reference": "furniture-complex_019.png",
+    "file": "wiki/assets/7355b0efbb7cb491e5b5.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/furniture-complex_019.png",
+    "sha256": "7355b0efbb7cb491e5b5e46bbe2f29417b0131c35cb786f56a2e0152430dd1cb",
+    "bytes": 4712,
+    "used_by": [
+      "adding-content/furnitures/furniture-complex.md"
+    ]
+  },
+  {
+    "reference": "furniture-complex_002.webp",
+    "file": "wiki/assets/aad9191a9a7a6e2afefb.webp",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/furniture-complex_002.webp",
+    "sha256": "aad9191a9a7a6e2afefbc4a1baed94246211c1f6fdc7cc1f473e1a0e9a07462b",
+    "bytes": 1041500,
+    "used_by": [
+      "adding-content/furnitures/furniture-complex.md"
+    ]
+  },
+  {
+    "reference": "furniture-size_002.png",
+    "file": "wiki/assets/c47b95334d21db504695.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/furniture-size_002.png",
+    "sha256": "c47b95334d21db504695a2679633767a9c9314fde2cb06836b1c667c1820fcc4",
+    "bytes": 27537,
+    "used_by": [
+      "adding-content/furnitures/furniture-size.md"
+    ]
+  },
+  {
+    "reference": "furniture-size_003.png",
+    "file": "wiki/assets/876b068c703da1f063f5.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/furniture-size_003.png",
+    "sha256": "876b068c703da1f063f50f1bb58da8852ccd64599014c721e0637c3b4853cd80",
+    "bytes": 3668,
+    "used_by": [
+      "adding-content/furnitures/furniture-size.md"
+    ]
+  },
+  {
+    "reference": "furniture-size_004.png",
+    "file": "wiki/assets/e5a319fd3909c91505e4.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/furniture-size_004.png",
+    "sha256": "e5a319fd3909c91505e42aab4acfd14b7010862eaed9d952e3ff0bb95032f79e",
+    "bytes": 3742,
+    "used_by": [
+      "adding-content/furnitures/furniture-size.md"
+    ]
+  },
+  {
+    "reference": "model_003.png",
+    "file": "wiki/assets/c750cf37a9a449f18cd1.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/model_003.png",
+    "sha256": "c750cf37a9a449f18cd1e00b995ad383fe2de332997362e7ceae9f25bbf48216",
+    "bytes": 524128,
+    "used_by": [
+      "adding-content/furnitures/model.md"
+    ]
+  },
+  {
+    "reference": "model_004.png",
+    "file": "wiki/assets/ff681d90f28929e9592d.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/model_004.png",
+    "sha256": "ff681d90f28929e9592df31c7d3d25266cee0fb2a8a50f682d7f874c038cd60d",
+    "bytes": 22254,
+    "used_by": [
+      "adding-content/furnitures/model.md"
+    ]
+  },
+  {
+    "reference": "transparent-furniture_002.png",
+    "file": "wiki/assets/9121f7a027db4c13b5b6.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/transparent-furniture_002.png",
+    "sha256": "9121f7a027db4c13b5b69f216f22145b7de8e330f4639de93274d977410d8452",
+    "bytes": 32907,
+    "used_by": [
+      "adding-content/furnitures/transparent-furniture.md"
+    ]
+  },
+  {
+    "reference": "animated-3d-items_016.png",
+    "file": "wiki/assets/b22df1d5c5ede0e88d48.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animated-3d-items_016.png",
+    "sha256": "b22df1d5c5ede0e88d4843825466df83713ab84aa8403c2cb3fdeb24d735c653",
+    "bytes": 4824,
+    "used_by": [
+      "adding-content/items/animated-3d-items.md"
+    ]
+  },
+  {
+    "reference": "animated-3d-items_009.png",
+    "file": "wiki/assets/cf535ba9f0af33bf9f57.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animated-3d-items_009.png",
+    "sha256": "cf535ba9f0af33bf9f579aac3fc3b494e60f6d02f840ff26bb324e2718978794",
+    "bytes": 43257,
+    "used_by": [
+      "adding-content/items/animated-3d-items.md"
+    ]
+  },
+  {
+    "reference": "animated-3d-items_012.png",
+    "file": "wiki/assets/2475d63204fcf01d1564.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animated-3d-items_012.png",
+    "sha256": "2475d63204fcf01d1564dd2d718a7a680a911ae4292084e70322c3c687fd336e",
+    "bytes": 10070,
+    "used_by": [
+      "adding-content/items/animated-3d-items.md"
+    ]
+  },
+  {
+    "reference": "animated-3d-items_019.png",
+    "file": "wiki/assets/a9876a5c4149d4d9d023.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animated-3d-items_019.png",
+    "sha256": "a9876a5c4149d4d9d0231427af2b97a8a34f9993f52740707ecf2b02a6d350eb",
+    "bytes": 1279,
+    "used_by": [
+      "adding-content/items/animated-3d-items.md"
+    ]
+  },
+  {
+    "reference": "animated-3d-items_010.png",
+    "file": "wiki/assets/3f4ed6060a533f510e80.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animated-3d-items_010.png",
+    "sha256": "3f4ed6060a533f510e80e522c3b14481680be04db03da622f484ad2a9b3e7c85",
+    "bytes": 23299,
+    "used_by": [
+      "adding-content/items/animated-3d-items.md"
+    ]
+  },
+  {
+    "reference": "animated-3d-items_011.png",
+    "file": "wiki/assets/4c8015c4874e33eb9a76.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animated-3d-items_011.png",
+    "sha256": "4c8015c4874e33eb9a76671bf1afe2fe2a261c464e924c0761308ba61e2438f9",
+    "bytes": 13472,
+    "used_by": [
+      "adding-content/items/animated-3d-items.md"
+    ]
+  },
+  {
+    "reference": "animated-3d-items_023.png",
+    "file": "wiki/assets/d259408fe1a98baceab1.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animated-3d-items_023.png",
+    "sha256": "d259408fe1a98baceab12319382b0dcf45e87518d3d9880bc9f2af1cdd67ff5e",
+    "bytes": 2522,
+    "used_by": [
+      "adding-content/items/animated-3d-items.md"
+    ]
+  },
+  {
+    "reference": "animated-3d-items_020.png",
+    "file": "wiki/assets/d4f7d2fbed6baf33662a.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animated-3d-items_020.png",
+    "sha256": "d4f7d2fbed6baf33662af729dc186cd88e55cb2512ca0289f46c6b2a1578df2a",
+    "bytes": 3820,
+    "used_by": [
+      "adding-content/items/animated-3d-items.md"
+    ]
+  },
+  {
+    "reference": "animated-3d-items_014.png",
+    "file": "wiki/assets/20936739e5095f4225bb.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animated-3d-items_014.png",
+    "sha256": "20936739e5095f4225bb4f42046e9ab6087a137754076171cc8daa70970371d4",
+    "bytes": 6151,
+    "used_by": [
+      "adding-content/items/animated-3d-items.md"
+    ]
+  },
+  {
+    "reference": "animated-3d-items_013.png",
+    "file": "wiki/assets/8dcf126568895af4b186.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animated-3d-items_013.png",
+    "sha256": "8dcf126568895af4b1866051c5ff843adccff1c3f76afcbebd403e18e9ab20da",
+    "bytes": 9955,
+    "used_by": [
+      "adding-content/items/animated-3d-items.md"
+    ]
+  },
+  {
+    "reference": "animated-3d-items_021.png",
+    "file": "wiki/assets/b9e72b03394ce5167144.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animated-3d-items_021.png",
+    "sha256": "b9e72b03394ce51671444927e8fce993c5a457ad008b617fb8440b1a12e2947f",
+    "bytes": 4633,
+    "used_by": [
+      "adding-content/items/animated-3d-items.md"
+    ]
+  },
+  {
+    "reference": "animated-3d-items_017.png",
+    "file": "wiki/assets/a212e58198deb05ae6fa.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animated-3d-items_017.png",
+    "sha256": "a212e58198deb05ae6fad2567161740d148b69f2d223cdc5b001006a89ed59f2",
+    "bytes": 4369,
+    "used_by": [
+      "adding-content/items/animated-3d-items.md"
+    ]
+  },
+  {
+    "reference": "animated-3d-items_022.png",
+    "file": "wiki/assets/473380dc968caef76423.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animated-3d-items_022.png",
+    "sha256": "473380dc968caef7642395eaa565b7761f4e284d0176c4a37b07c1547657f740",
+    "bytes": 2054,
+    "used_by": [
+      "adding-content/items/animated-3d-items.md"
+    ]
+  },
+  {
+    "reference": "animated-3d-items_018.png",
+    "file": "wiki/assets/840a8b9fd9b275b15244.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animated-3d-items_018.png",
+    "sha256": "840a8b9fd9b275b1524416c291265113a7ac3f0d16a8cc692491a963f5898f4c",
+    "bytes": 2853,
+    "used_by": [
+      "adding-content/items/animated-3d-items.md"
+    ]
+  },
+  {
+    "reference": "https://i.imgur.com/zslbD0G.gif",
+    "file": "wiki/assets/44311252c9e8ba6304bd.gif",
+    "source_url": "https://i.imgur.com/zslbD0G.gif",
+    "sha256": "44311252c9e8ba6304bd1567dea82aa7dc9824513bf97885a7b15a6bbcb2fda7",
+    "bytes": 72882,
+    "used_by": [
+      "adding-content/items/animated-3d-items.md"
+    ]
+  },
+  {
+    "reference": "animated-3d-items_015.png",
+    "file": "wiki/assets/3d51b62b0202bdd95314.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animated-3d-items_015.png",
+    "sha256": "3d51b62b0202bdd953145f38cb05964ea18e295f70d2cc4586aff41fa308a2ce",
+    "bytes": 5620,
+    "used_by": [
+      "adding-content/items/animated-3d-items.md"
+    ]
+  },
+  {
+    "reference": "armors_005.png",
+    "file": "wiki/assets/3009ce8bdc7ac70320dc.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/armors_005.png",
+    "sha256": "3009ce8bdc7ac70320dc6efef96878aa27dcd5c191b061845fdf351d6cbb480a",
+    "bytes": 1293,
+    "used_by": [
+      "adding-content/items/armors.md"
+    ]
+  },
+  {
+    "reference": "armors_009.png",
+    "file": "wiki/assets/df3d2351fee25a94f7df.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/armors_009.png",
+    "sha256": "df3d2351fee25a94f7df01e2d451756dd8d82376575061f2a7732b9bb61f833f",
+    "bytes": 4506,
+    "used_by": [
+      "adding-content/items/armors.md"
+    ]
+  },
+  {
+    "reference": "armors_006.png",
+    "file": "wiki/assets/104b849f1cf69e9977bc.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/armors_006.png",
+    "sha256": "104b849f1cf69e9977bc9e1d95c5770a0e528750cae64d01f6fd11521f1a50a9",
+    "bytes": 10905,
+    "used_by": [
+      "adding-content/items/armors.md"
+    ]
+  },
+  {
+    "reference": "armors_007.png",
+    "file": "wiki/assets/be5e3763928969b06014.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/armors_007.png",
+    "sha256": "be5e3763928969b06014a4b046219c25d6738a46a2e45d6423cdc2c195055c17",
+    "bytes": 8483,
+    "used_by": [
+      "adding-content/items/armors.md"
+    ]
+  },
+  {
+    "reference": "armors_008.png",
+    "file": "wiki/assets/9e1a342b616f701e1545.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/armors_008.png",
+    "sha256": "9e1a342b616f701e15457e9b074998805cbad80447820f6887acaf63b0261602",
+    "bytes": 699,
+    "used_by": [
+      "adding-content/items/armors.md"
+    ]
+  },
+  {
+    "reference": "armors_002.webp",
+    "file": "wiki/assets/88b762762892aae48c25.webp",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/armors_002.webp",
+    "sha256": "88b762762892aae48c253d7e3167fcf2cbb05e25ec6527fdc25eeb01b46a9354",
+    "bytes": 426100,
+    "used_by": [
+      "adding-content/items/armors.md"
+    ]
+  },
+  {
+    "reference": "armors_010.png",
+    "file": "wiki/assets/8c28e9c8fe97547bfeb2.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/armors_010.png",
+    "sha256": "8c28e9c8fe97547bfeb25e053e708ef80996582003168bf610b91b522afeff0a",
+    "bytes": 1216,
+    "used_by": [
+      "adding-content/items/armors.md"
+    ]
+  },
+  {
+    "reference": "armors_011.png",
+    "file": "wiki/assets/582d310eff9e09912160.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/armors_011.png",
+    "sha256": "582d310eff9e0991216067aba7dffed05bdbf4cdb43c6940eabb34d427f2e833",
+    "bytes": 560,
+    "used_by": [
+      "adding-content/items/armors.md"
+    ]
+  },
+  {
+    "reference": "armors_004.png",
+    "file": "wiki/assets/bffee527b04240cb8a7c.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/armors_004.png",
+    "sha256": "bffee527b04240cb8a7cde086e4aaeb591d969ae64d690cbcceed347ee662dc7",
+    "bytes": 552,
+    "used_by": [
+      "adding-content/items/armors.md"
+    ]
+  },
+  {
+    "reference": "armors_003.png",
+    "file": "wiki/assets/f1a245143ebd8bc7bf24.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/armors_003.png",
+    "sha256": "f1a245143ebd8bc7bf24008b444294b500185624d3a6c2e94c9ff224d1da40ce",
+    "bytes": 8877,
+    "used_by": [
+      "adding-content/items/armors.md"
+    ]
+  },
+  {
+    "reference": "bow_006.webp",
+    "file": "wiki/assets/ec0d81cdece21945237e.webp",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/bow_006.webp",
+    "sha256": "ec0d81cdece21945237e9a9781c294a75aaea270aae27899b2bd4f9d449e66ec",
+    "bytes": 1149754,
+    "used_by": [
+      "adding-content/items/bow.md",
+      "plugin-usage/beginners/my-first-bow.md"
+    ]
+  },
+  {
+    "reference": "bow_004.webp",
+    "file": "wiki/assets/b89e2743a6b0c73d7a62.webp",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/bow_004.webp",
+    "sha256": "b89e2743a6b0c73d7a62ba1f98af794010fcb02747e2cab735a81e723b10a379",
+    "bytes": 661012,
+    "used_by": [
+      "adding-content/items/bow.md"
+    ]
+  },
+  {
+    "reference": "bow_002.png",
+    "file": "wiki/assets/9f0ec91981f7a752798c.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/bow_002.png",
+    "sha256": "9f0ec91981f7a752798c5276efd4b7fa38554a713e6bb9dfe8509577444f2aae",
+    "bytes": 1156,
+    "used_by": [
+      "adding-content/items/bow.md"
+    ]
+  },
+  {
+    "reference": "bow_001.png",
+    "file": "wiki/assets/4b772dcbb3dc3e7939ba.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/bow_001.png",
+    "sha256": "4b772dcbb3dc3e7939ba2e2785d01c605beb0025b7a78e0362b8a0479460415e",
+    "bytes": 954,
+    "used_by": [
+      "adding-content/items/bow.md"
+    ]
+  },
+  {
+    "reference": "bow_005.webp",
+    "file": "wiki/assets/7bf1537c03e63f910e63.webp",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/bow_005.webp",
+    "sha256": "7bf1537c03e63f910e6390e9aacf58dcdd4cc1acf7a6f8d88e081cbf1caa722a",
+    "bytes": 1282146,
+    "used_by": [
+      "adding-content/items/bow.md"
+    ]
+  },
+  {
+    "reference": "2d-icon_002.png",
+    "file": "wiki/assets/6e6901dd636bee0575b4.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/2d-icon_002.png",
+    "sha256": "6e6901dd636bee0575b44f043535bb02410f7c76dc20540eedc2373dc454da4d",
+    "bytes": 61208,
+    "used_by": [
+      "adding-content/items/item-properties/2d-icon.md"
+    ]
+  },
+  {
+    "reference": "actions_002.png",
+    "file": "wiki/assets/ff53b9f0aaaad2387c81.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/actions_002.png",
+    "sha256": "ff53b9f0aaaad2387c81ba02d1b3b65bff6b8b312b963d0db74d08be0696e2cb",
+    "bytes": 9716,
+    "used_by": [
+      "adding-content/items/item-properties/actions.md"
+    ]
+  },
+  {
+    "reference": "actions_003.png",
+    "file": "wiki/assets/6ae1b498d29bdda75929.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/actions_003.png",
+    "sha256": "6ae1b498d29bdda759295304b2d2930fd08f4a9741a715cb5efe0a71ff766448",
+    "bytes": 3877,
+    "used_by": [
+      "adding-content/items/item-properties/actions.md"
+    ]
+  },
+  {
+    "reference": "actions_004.png",
+    "file": "wiki/assets/fd785135928d77590ed2.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/actions_004.png",
+    "sha256": "fd785135928d77590ed2dd9d686c5c249e9e8a4df875e11a398705a98f0761a1",
+    "bytes": 788,
+    "used_by": [
+      "adding-content/items/item-properties/actions.md"
+    ]
+  },
+  {
+    "reference": "basic_003.png",
+    "file": "wiki/assets/0ba9dd0a9c16139c4c03.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/basic_003.png",
+    "sha256": "0ba9dd0a9c16139c4c030c40c3dcf1b6df74bebd07e4e7b9614180edd7101bd1",
+    "bytes": 1953,
+    "used_by": [
+      "adding-content/items/item-properties/basic.md"
+    ]
+  },
+  {
+    "reference": "basic_002.png",
+    "file": "wiki/assets/5b7ae1401b0a268cf2d4.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/basic_002.png",
+    "sha256": "5b7ae1401b0a268cf2d4e0aa21eaa1c55e1acdd307012152c8091b64edbe17d2",
+    "bytes": 8975,
+    "used_by": [
+      "adding-content/items/item-properties/basic.md"
+    ]
+  },
+  {
+    "reference": "item-tooltip_002.png",
+    "file": "wiki/assets/2f240d68c88c73a34dc5.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/item-tooltip_002.png",
+    "sha256": "2f240d68c88c73a34dc5bfc10ee192288344ecdcf0459f5847ba18a7c9d31bb0",
+    "bytes": 1486,
+    "used_by": [
+      "adding-content/items/item-properties/item-tooltip.md"
+    ]
+  },
+  {
+    "reference": "item-tooltip_001.png",
+    "file": "wiki/assets/bf0fbe541f32e97ae598.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/item-tooltip_001.png",
+    "sha256": "bf0fbe541f32e97ae5984f9e7b3a01070ece8c357220acef4612dc7fb92d6f6d",
+    "bytes": 2055,
+    "used_by": [
+      "adding-content/items/item-properties/item-tooltip.md"
+    ]
+  },
+  {
+    "reference": "https://i.imgur.com/eA7iz50.gif",
+    "file": "wiki/assets/acca8c00e7db47445820.gif",
+    "source_url": "https://i.imgur.com/eA7iz50.gif",
+    "sha256": "acca8c00e7db474458208276b6ae5c74d197130f00ff34115df9e57752dfc1c7",
+    "bytes": 548267,
+    "used_by": [
+      "adding-content/items/item-properties/item-tooltip.md"
+    ]
+  },
+  {
+    "reference": "light-emission_008.png",
+    "file": "wiki/assets/ece85e5b041d123d13f9.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/light-emission_008.png",
+    "sha256": "ece85e5b041d123d13f964c728c757425f7848df300226438e3aa8d82b09f80f",
+    "bytes": 726,
+    "used_by": [
+      "adding-content/items/item-properties/light-emission.md"
+    ]
+  },
+  {
+    "reference": "light-emission_010.png",
+    "file": "wiki/assets/0ac6985aaa2b79e86daf.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/light-emission_010.png",
+    "sha256": "0ac6985aaa2b79e86daf57d0be3acbed97b32c230144cb54ac96beac86b7e9b0",
+    "bytes": 3825,
+    "used_by": [
+      "adding-content/items/item-properties/light-emission.md"
+    ]
+  },
+  {
+    "reference": "light-emission_016.png",
+    "file": "wiki/assets/6e7602b30b4eeb03945d.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/light-emission_016.png",
+    "sha256": "6e7602b30b4eeb03945d6114d1d33a023df6e3a2e8196e04ed4af8d937a162f4",
+    "bytes": 17656,
+    "used_by": [
+      "adding-content/items/item-properties/light-emission.md"
+    ]
+  },
+  {
+    "reference": "light-emission_014.png",
+    "file": "wiki/assets/b9e512cb9fec981e7eb7.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/light-emission_014.png",
+    "sha256": "b9e512cb9fec981e7eb73aa49bb6fe71c5aa7c0443bfaca2404f0c0352abc761",
+    "bytes": 20077,
+    "used_by": [
+      "adding-content/items/item-properties/light-emission.md"
+    ]
+  },
+  {
+    "reference": "light-emission_015.png",
+    "file": "wiki/assets/b1903c726a14e566c0d6.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/light-emission_015.png",
+    "sha256": "b1903c726a14e566c0d6ff2f7a17fd8a9841d1d5f852e017f8d8140a1e3e0f10",
+    "bytes": 17819,
+    "used_by": [
+      "adding-content/items/item-properties/light-emission.md"
+    ]
+  },
+  {
+    "reference": "light-emission_018.png",
+    "file": "wiki/assets/b368e9fd5803dda17bd9.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/light-emission_018.png",
+    "sha256": "b368e9fd5803dda17bd9cf54239c3d300ae5479a173bbb261633a8dd4f3436a0",
+    "bytes": 8225,
+    "used_by": [
+      "adding-content/items/item-properties/light-emission.md"
+    ]
+  },
+  {
+    "reference": "light-emission_012.png",
+    "file": "wiki/assets/6219acea4421db307957.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/light-emission_012.png",
+    "sha256": "6219acea4421db3079578581fe3033e6af1269edfbd15e716e2cf78465cab9b6",
+    "bytes": 1102,
+    "used_by": [
+      "adding-content/items/item-properties/light-emission.md"
+    ]
+  },
+  {
+    "reference": "light-emission_011.png",
+    "file": "wiki/assets/0227bccee4041229cb85.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/light-emission_011.png",
+    "sha256": "0227bccee4041229cb857dbd7dde96f8edb5c6f913f28969850dbf0d6b58c546",
+    "bytes": 1942,
+    "used_by": [
+      "adding-content/items/item-properties/light-emission.md"
+    ]
+  },
+  {
+    "reference": "light-emission_007.png",
+    "file": "wiki/assets/1f5ed50309355704d664.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/light-emission_007.png",
+    "sha256": "1f5ed50309355704d6645db7220ac530dea78216ffd9e75c2ecb9650ec895552",
+    "bytes": 1695,
+    "used_by": [
+      "adding-content/items/item-properties/light-emission.md"
+    ]
+  },
+  {
+    "reference": "light-emission_009.png",
+    "file": "wiki/assets/c938dde7da5050161e1f.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/light-emission_009.png",
+    "sha256": "c938dde7da5050161e1f7a03765e63e8a2ef56d6f3e729cabd6f3c69850b5ade",
+    "bytes": 3887,
+    "used_by": [
+      "adding-content/items/item-properties/light-emission.md"
+    ]
+  },
+  {
+    "reference": "light-emission_013.png",
+    "file": "wiki/assets/dc7b4883be53460c542e.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/light-emission_013.png",
+    "sha256": "dc7b4883be53460c542e09a25b3ad5a885d061924658e4a34a801c3f01881dbf",
+    "bytes": 41775,
+    "used_by": [
+      "adding-content/items/item-properties/light-emission.md"
+    ]
+  },
+  {
+    "reference": "light-emission_017.png",
+    "file": "wiki/assets/90e6f27d9aae19ece6c1.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/light-emission_017.png",
+    "sha256": "90e6f27d9aae19ece6c165cee8aae13b320359042fc256e5b552d1ac29d75418",
+    "bytes": 13203,
+    "used_by": [
+      "adding-content/items/item-properties/light-emission.md"
+    ]
+  },
+  {
+    "reference": "bundle_002.png",
+    "file": "wiki/assets/e138e104380a81c2e7ee.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/bundle_002.png",
+    "sha256": "e138e104380a81c2e7ee61e3cbdd1f700e79b078618e6c4c123638252b6220b8",
+    "bytes": 1148,
+    "used_by": [
+      "adding-content/items/other-items-examples/bundle.md"
+    ]
+  },
+  {
+    "reference": "bundle_001.png",
+    "file": "wiki/assets/c9f250c908f7228ff28f.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/bundle_001.png",
+    "sha256": "c9f250c908f7228ff28fcc9f1dca263b541716cfcfbd8c7082eb5cf35b78cf8b",
+    "bytes": 1213,
+    "used_by": [
+      "adding-content/items/other-items-examples/bundle.md"
+    ]
+  },
+  {
+    "reference": "spear_2-move-the-spear-to-the-center_001.png",
+    "file": "wiki/assets/9e8b3c8a8b832c9fc10d.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/spear_2-move-the-spear-to-the-center_001.png",
+    "sha256": "9e8b3c8a8b832c9fc10da4ae77a3ccbea7d12ae218f9e9c3efb63a7d180af700",
+    "bytes": 94450,
+    "used_by": [
+      "adding-content/items/spear.md"
+    ]
+  },
+  {
+    "reference": "spear_3-set-the-in-hand-view_002.png",
+    "file": "wiki/assets/a66a0d740637e7739429.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/spear_3-set-the-in-hand-view_002.png",
+    "sha256": "a66a0d740637e7739429b815a689f54e2308bf4f02cd679d766313bb1c02e8ff",
+    "bytes": 80898,
+    "used_by": [
+      "adding-content/items/spear.md"
+    ]
+  },
+  {
+    "reference": "tridents_005.png",
+    "file": "wiki/assets/c8d6483e35769ad58fec.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/tridents_005.png",
+    "sha256": "c8d6483e35769ad58fec7e53970c546a46c867f450d56a8d44b58207fe2be0db",
+    "bytes": 25347,
+    "used_by": [
+      "adding-content/items/tridents.md"
+    ]
+  },
+  {
+    "reference": "tridents_004.png",
+    "file": "wiki/assets/901c622c9c05f5d0b557.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/tridents_004.png",
+    "sha256": "901c622c9c05f5d0b557fc57546ea1d6d11a2a08c4322a3f131583a8a8d53019",
+    "bytes": 46653,
+    "used_by": [
+      "adding-content/items/tridents.md"
+    ]
+  },
+  {
+    "reference": "tridents_002.png",
+    "file": "wiki/assets/286fd350d845b8928392.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/tridents_002.png",
+    "sha256": "286fd350d845b8928392dd1963b915f0ef36c8a86bead45805f894665cc00c2a",
+    "bytes": 18902,
+    "used_by": [
+      "adding-content/items/tridents.md"
+    ]
+  },
+  {
+    "reference": "tridents_003.png",
+    "file": "wiki/assets/e763cbd4bc99d949d7e8.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/tridents_003.png",
+    "sha256": "e763cbd4bc99d949d7e887bef451fa8a30e00bc53392f66a670b882a344fc4e2",
+    "bytes": 28044,
+    "used_by": [
+      "adding-content/items/tridents.md"
+    ]
+  },
+  {
+    "reference": "writable-book_004.png",
+    "file": "wiki/assets/4c5f00e697bf59a3fcb8.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/writable-book_004.png",
+    "sha256": "4c5f00e697bf59a3fcb8b81e72a19986187b8742b0456b2eaefd6f63286a7ddf",
+    "bytes": 42403,
+    "used_by": [
+      "adding-content/items/writable-book.md"
+    ]
+  },
+  {
+    "reference": "writable-book_003.png",
+    "file": "wiki/assets/4351e7133dcd7c1f08c3.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/writable-book_003.png",
+    "sha256": "4351e7133dcd7c1f08c3bc9294610d71bed1327b049215a097ce8a2197ac1469",
+    "bytes": 55458,
+    "used_by": [
+      "adding-content/items/writable-book.md"
+    ]
+  },
+  {
+    "reference": "player-emotes_006.png",
+    "file": "wiki/assets/bc791426649ea34175f1.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/player-emotes_006.png",
+    "sha256": "bc791426649ea34175f1411aa8956eb5f777f233e99d446a175c57739b3cdb3a",
+    "bytes": 6393,
+    "used_by": [
+      "adding-content/player-emotes.md"
+    ]
+  },
+  {
+    "reference": "player-emotes_005.png",
+    "file": "wiki/assets/0da61f59c594f5eed501.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/player-emotes_005.png",
+    "sha256": "0da61f59c594f5eed50185c64acfc4c910a34a982cfc65730cb045f510601b30",
+    "bytes": 11427,
+    "used_by": [
+      "adding-content/player-emotes.md"
+    ]
+  },
+  {
+    "reference": "player-emotes_004.png",
+    "file": "wiki/assets/1aa463425d9cf5e73656.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/player-emotes_004.png",
+    "sha256": "1aa463425d9cf5e73656f2ba8c087ba619430ef0420983f9f94b289f561e287f",
+    "bytes": 3638,
+    "used_by": [
+      "adding-content/player-emotes.md"
+    ]
+  },
+  {
+    "reference": "player-emotes_003.png",
+    "file": "wiki/assets/e877ef7831b2a700878b.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/player-emotes_003.png",
+    "sha256": "e877ef7831b2a700878b39911f48cb86ea3c26ec9a803152009179c53f6b0b40",
+    "bytes": 2740,
+    "used_by": [
+      "adding-content/player-emotes.md"
+    ]
+  },
+  {
+    "reference": "animations_026.png",
+    "file": "wiki/assets/8111f8a9c211841cb061.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animations_026.png",
+    "sha256": "8111f8a9c211841cb0613d01c346ec9b8741c1f380938533df0bc2dec3b543fd",
+    "bytes": 21882,
+    "used_by": [
+      "adding-content/player-emotes/animations.md"
+    ]
+  },
+  {
+    "reference": "animations_027.png",
+    "file": "wiki/assets/da3d1de8ca1d9cdaac71.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animations_027.png",
+    "sha256": "da3d1de8ca1d9cdaac712406da7ee1edc3f685db977a7c50de8e6bfbbcdd700e",
+    "bytes": 10838,
+    "used_by": [
+      "adding-content/player-emotes/animations.md"
+    ]
+  },
+  {
+    "reference": "animations_028.png",
+    "file": "wiki/assets/46d3566aeffc974af245.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animations_028.png",
+    "sha256": "46d3566aeffc974af2452c1b168f1b0009d321afd6594f6cc2f141f177a52a53",
+    "bytes": 3851,
+    "used_by": [
+      "adding-content/player-emotes/animations.md"
+    ]
+  },
+  {
+    "reference": "animations_012.png",
+    "file": "wiki/assets/c99e6d8ce49057372c70.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animations_012.png",
+    "sha256": "c99e6d8ce49057372c7058147b12186f4f93b6a1f0ca0934968355071f4f8483",
+    "bytes": 50878,
+    "used_by": [
+      "adding-content/player-emotes/animations.md"
+    ]
+  },
+  {
+    "reference": "animations_020.png",
+    "file": "wiki/assets/0a616956a3502d4eb700.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animations_020.png",
+    "sha256": "0a616956a3502d4eb700418ae6bfaaabb508bdd3a299f8cb6c9e060c446eef14",
+    "bytes": 8025,
+    "used_by": [
+      "adding-content/player-emotes/animations.md"
+    ]
+  },
+  {
+    "reference": "animations_021.png",
+    "file": "wiki/assets/96e9f36c07c130c4e8dc.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animations_021.png",
+    "sha256": "96e9f36c07c130c4e8dc5d37b661c03e29be158752def631b1967537f2056624",
+    "bytes": 7559,
+    "used_by": [
+      "adding-content/player-emotes/animations.md"
+    ]
+  },
+  {
+    "reference": "animations_030.png",
+    "file": "wiki/assets/e1b66f551fb5a025cfcb.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animations_030.png",
+    "sha256": "e1b66f551fb5a025cfcbd88cc588e1055864d6d1ea4f0966cf237d4f6b26361c",
+    "bytes": 4559,
+    "used_by": [
+      "adding-content/player-emotes/animations.md"
+    ]
+  },
+  {
+    "reference": "animations_022.png",
+    "file": "wiki/assets/170492ca24489653a68b.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animations_022.png",
+    "sha256": "170492ca24489653a68b02a97a42e1e0240b43880a77361f1ca04b8f97a4527a",
+    "bytes": 6426,
+    "used_by": [
+      "adding-content/player-emotes/animations.md"
+    ]
+  },
+  {
+    "reference": "animations_023.png",
+    "file": "wiki/assets/85ee1ea1aa34bc577130.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animations_023.png",
+    "sha256": "85ee1ea1aa34bc5771307a5849cdbd68aa021fa063ad8675395ecfaabada3c37",
+    "bytes": 8795,
+    "used_by": [
+      "adding-content/player-emotes/animations.md"
+    ]
+  },
+  {
+    "reference": "animations_024.png",
+    "file": "wiki/assets/a96f366e1d8efd81a7f7.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animations_024.png",
+    "sha256": "a96f366e1d8efd81a7f7d34e16f5914e9ebf01b21cd4a284c34fdfaa813e5b7e",
+    "bytes": 28705,
+    "used_by": [
+      "adding-content/player-emotes/animations.md"
+    ]
+  },
+  {
+    "reference": "animations_025.png",
+    "file": "wiki/assets/c89f546a3413e64ec68b.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animations_025.png",
+    "sha256": "c89f546a3413e64ec68b18a49a1f6097a6a6d541a6764304dd5f005fef8919d5",
+    "bytes": 52294,
+    "used_by": [
+      "adding-content/player-emotes/animations.md"
+    ]
+  },
+  {
+    "reference": "animations_018.png",
+    "file": "wiki/assets/1a38bb78c52910d99d45.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animations_018.png",
+    "sha256": "1a38bb78c52910d99d455487a6288735821d93a352fb1eca48995e79f6bee67c",
+    "bytes": 12691,
+    "used_by": [
+      "adding-content/player-emotes/animations.md"
+    ]
+  },
+  {
+    "reference": "animations_014.png",
+    "file": "wiki/assets/c9abeec1b4ed2cfac6b7.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animations_014.png",
+    "sha256": "c9abeec1b4ed2cfac6b77edbc5bf43e546e074ddae815be5c3605742157f91d5",
+    "bytes": 43377,
+    "used_by": [
+      "adding-content/player-emotes/animations.md"
+    ]
+  },
+  {
+    "reference": "animations_017.png",
+    "file": "wiki/assets/fcc1f6855e25b2ddf48a.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animations_017.png",
+    "sha256": "fcc1f6855e25b2ddf48a24e9f031b08ba2f5defb1b7af01365ddf91e23bde218",
+    "bytes": 13909,
+    "used_by": [
+      "adding-content/player-emotes/animations.md"
+    ]
+  },
+  {
+    "reference": "animations_013.png",
+    "file": "wiki/assets/3ca087a20a414ca035a6.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animations_013.png",
+    "sha256": "3ca087a20a414ca035a647b31d9110577bf7e0d8c4c9c5ceded43b3c0d0e8d9f",
+    "bytes": 46768,
+    "used_by": [
+      "adding-content/player-emotes/animations.md"
+    ]
+  },
+  {
+    "reference": "animations_019.png",
+    "file": "wiki/assets/7301b79487bf3dbfd6a8.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animations_019.png",
+    "sha256": "7301b79487bf3dbfd6a876e625084a7706cef6db096c4f51a3d40cbe81230904",
+    "bytes": 8514,
+    "used_by": [
+      "adding-content/player-emotes/animations.md"
+    ]
+  },
+  {
+    "reference": "animations_015.png",
+    "file": "wiki/assets/90ea037d0b4563ebc60c.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animations_015.png",
+    "sha256": "90ea037d0b4563ebc60c9f25f7c45326f5a3746087ba977d8bac2c84d2380b30",
+    "bytes": 25958,
+    "used_by": [
+      "adding-content/player-emotes/animations.md"
+    ]
+  },
+  {
+    "reference": "animations_029.png",
+    "file": "wiki/assets/b8b26bb35c6e12063b3b.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animations_029.png",
+    "sha256": "b8b26bb35c6e12063b3b6e4d9cc8599ad9b1207356541b776fee617a88c6422f",
+    "bytes": 2692,
+    "used_by": [
+      "adding-content/player-emotes/animations.md"
+    ]
+  },
+  {
+    "reference": "particles_011.png",
+    "file": "wiki/assets/30702bed415d7f11c06d.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/particles_011.png",
+    "sha256": "30702bed415d7f11c06d9a4e468bd3a767baa70703b1e314c702d86b831ad82e",
+    "bytes": 15085,
+    "used_by": [
+      "adding-content/player-emotes/particles.md",
+      "adding-content/player-emotes/sounds.md"
+    ]
+  },
+  {
+    "reference": "mythicmobs_002.png",
+    "file": "wiki/assets/bc229fb02feb578aeb61.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/mythicmobs_002.png",
+    "sha256": "bc229fb02feb578aeb6198a7740e47641b60812c9d4a2335ed7af0f717f047a9",
+    "bytes": 17900,
+    "used_by": [
+      "adding-content/player-emotes/spawning/mythicmobs.md"
+    ]
+  },
+  {
+    "reference": "mythicmobs_002.webp",
+    "file": "wiki/assets/2d188c5b113108d5e911.webp",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/mythicmobs_002.webp",
+    "sha256": "2d188c5b113108d5e91189617d32d2082ba1cf6bf2e9dcdf7269668764387bbe",
+    "bytes": 21310,
+    "used_by": [
+      "adding-content/player-emotes/spawning/mythicmobs.md"
+    ]
+  },
+  {
+    "reference": "crafting_005.png",
+    "file": "wiki/assets/675d2b71a47c70e4f900.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/crafting_005.png",
+    "sha256": "675d2b71a47c70e4f9007089c845e5e6b1aa0dd5931329c3fa1b816cd5c7c26b",
+    "bytes": 2309,
+    "used_by": [
+      "adding-content/recipes/crafting.md"
+    ]
+  },
+  {
+    "reference": "crafting_006.png",
+    "file": "wiki/assets/ad472be5fba44a6efffd.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/crafting_006.png",
+    "sha256": "ad472be5fba44a6efffda6f65399df7022012c9d721abf208de4ef1b5a2f8507",
+    "bytes": 1477,
+    "used_by": [
+      "adding-content/recipes/crafting.md"
+    ]
+  },
+  {
+    "reference": "crafting_004.png",
+    "file": "wiki/assets/9e272fe972e6eb970bab.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/crafting_004.png",
+    "sha256": "9e272fe972e6eb970babbfff5783268451c0abd16fa5b66f16ebde609b50a615",
+    "bytes": 1535,
+    "used_by": [
+      "adding-content/recipes/crafting.md"
+    ]
+  },
+  {
+    "reference": "crafting_003.png",
+    "file": "wiki/assets/0c52364e1e1d2a00cf48.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/crafting_003.png",
+    "sha256": "0c52364e1e1d2a00cf48c2b5d7df326b161b88e852efda67cadd5e881d8510a0",
+    "bytes": 949,
+    "used_by": [
+      "adding-content/recipes/crafting.md"
+    ]
+  },
+  {
+    "reference": "crafting_002.png",
+    "file": "wiki/assets/60cadd1743b8306980db.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/crafting_002.png",
+    "sha256": "60cadd1743b8306980dbcd4066beb68e2e1a97a8e255859f1c3a92a277f8ef1a",
+    "bytes": 1072,
+    "used_by": [
+      "adding-content/recipes/crafting.md"
+    ]
+  },
+  {
+    "reference": "crafting_001.png",
+    "file": "wiki/assets/59d4246dd447a4f3cbd2.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/crafting_001.png",
+    "sha256": "59d4246dd447a4f3cbd226914ca2499d12eefba33d64922513985cb71e15c04d",
+    "bytes": 1128,
+    "used_by": [
+      "adding-content/recipes/crafting.md"
+    ]
+  },
+  {
+    "reference": "smithing_001.png",
+    "file": "wiki/assets/c725147840cb11985667.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/smithing_001.png",
+    "sha256": "c725147840cb11985667a81056edf88c6123dd0c96c68d785a88e4dbce311f9c",
+    "bytes": 1055,
+    "used_by": [
+      "adding-content/recipes/smithing.md"
+    ]
+  },
+  {
+    "reference": "text-effects-1-17_001.png",
+    "file": "wiki/assets/000cdc2d570e18db11bf.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/text-effects-1-17_001.png",
+    "sha256": "000cdc2d570e18db11bfbe4bc09d7dfd3cc2e9ebe502998ebf65bf1318c5fef3",
+    "bytes": 729,
+    "used_by": [
+      "adding-content/text-effects-1.17+.md"
+    ]
+  },
+  {
+    "reference": "text-effects-1-17_019.webp",
+    "file": "wiki/assets/120cc67dbcf4bc5e529d.webp",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/text-effects-1-17_019.webp",
+    "sha256": "120cc67dbcf4bc5e529de51eee04ad919b6084b16813f317cc9d86da1caa796b",
+    "bytes": 600730,
+    "used_by": [
+      "adding-content/text-effects-1.17+.md"
+    ]
+  },
+  {
+    "reference": "text-effects-1-17_003.png",
+    "file": "wiki/assets/f430fee1af875cae2abe.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/text-effects-1-17_003.png",
+    "sha256": "f430fee1af875cae2abe02a8e7af29c442deb0e3a97c56c8f503eb638b39bcb3",
+    "bytes": 1568,
+    "used_by": [
+      "adding-content/text-effects-1.17+.md"
+    ]
+  },
+  {
+    "reference": "text-effects-1-17_002.png",
+    "file": "wiki/assets/308fa468e68e4a818965.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/text-effects-1-17_002.png",
+    "sha256": "308fa468e68e4a818965de93171c08779a6ee5e49640bd29e02839f942b62d47",
+    "bytes": 2293,
+    "used_by": [
+      "adding-content/text-effects-1.17+.md"
+    ]
+  },
+  {
+    "reference": "text-effects-1-17_017.webp",
+    "file": "wiki/assets/2ee45fb48c84d2cfa3ef.webp",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/text-effects-1-17_017.webp",
+    "sha256": "2ee45fb48c84d2cfa3ef011b8b72b49cdbc593645d93e96a5f7d0e31ae9b34ae",
+    "bytes": 66258,
+    "used_by": [
+      "adding-content/text-effects-1.17+.md"
+    ]
+  },
+  {
+    "reference": "text-effects-1-17_022.webp",
+    "file": "wiki/assets/791e5b34a4b990618a70.webp",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/text-effects-1-17_022.webp",
+    "sha256": "791e5b34a4b990618a70baf1883a1ebec4c13457de3e506447bedf0055f98ffb",
+    "bytes": 99752,
+    "used_by": [
+      "adding-content/text-effects-1.17+.md"
+    ]
+  },
+  {
+    "reference": "text-effects-1-17_023.webp",
+    "file": "wiki/assets/069f39dcc05a182132a9.webp",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/text-effects-1-17_023.webp",
+    "sha256": "069f39dcc05a182132a91a8408923cd33895f98276685b4009314f4c8c1e96dc",
+    "bytes": 24876,
+    "used_by": [
+      "adding-content/text-effects-1.17+.md"
+    ]
+  },
+  {
+    "reference": "text-effects-1-17_014.webp",
+    "file": "wiki/assets/f77861a97c3a45614759.webp",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/text-effects-1-17_014.webp",
+    "sha256": "f77861a97c3a45614759362f6c066843bfc0960fb6a2ef649804c43a3843d9c8",
+    "bytes": 422410,
+    "used_by": [
+      "adding-content/text-effects-1.17+.md"
+    ]
+  },
+  {
+    "reference": "text-effects-1-17_015.webp",
+    "file": "wiki/assets/a6835ced21e8782d1fff.webp",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/text-effects-1-17_015.webp",
+    "sha256": "a6835ced21e8782d1fffb3ac7dbda7a41ac304fee960f637d2cc977b28f17afa",
+    "bytes": 62594,
+    "used_by": [
+      "adding-content/text-effects-1.17+.md"
+    ]
+  },
+  {
+    "reference": "text-effects-1-17_013.webp",
+    "file": "wiki/assets/357f096a93643d5e9de1.webp",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/text-effects-1-17_013.webp",
+    "sha256": "357f096a93643d5e9de1e202a40aa12efda6e44e3164955c327631bf584cb1fd",
+    "bytes": 259106,
+    "used_by": [
+      "adding-content/text-effects-1.17+.md"
+    ]
+  },
+  {
+    "reference": "text-effects-1-17_021.webp",
+    "file": "wiki/assets/c1f50806f6de35e85ab1.webp",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/text-effects-1-17_021.webp",
+    "sha256": "c1f50806f6de35e85ab1221027329376967802ea60c61ffcb05839704570f365",
+    "bytes": 401556,
+    "used_by": [
+      "adding-content/text-effects-1.17+.md"
+    ]
+  },
+  {
+    "reference": "text-effects-1-17_020.webp",
+    "file": "wiki/assets/868e224c21bbecd5e97c.webp",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/text-effects-1-17_020.webp",
+    "sha256": "868e224c21bbecd5e97ce8127ceb46e3557094abdb361fc21d290e635d956af8",
+    "bytes": 656590,
+    "used_by": [
+      "adding-content/text-effects-1.17+.md"
+    ]
+  },
+  {
+    "reference": "text-effects-1-17_012.webp",
+    "file": "wiki/assets/97871ec7e7224d86eabb.webp",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/text-effects-1-17_012.webp",
+    "sha256": "97871ec7e7224d86eabb44778a2634439e8903fbe2d9b331e0410ae7096392f8",
+    "bytes": 17688,
+    "used_by": [
+      "adding-content/text-effects-1.17+.md"
+    ]
+  },
+  {
+    "reference": "text-effects-1-17_018.webp",
+    "file": "wiki/assets/e9ec3f5e784af4564d57.webp",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/text-effects-1-17_018.webp",
+    "sha256": "e9ec3f5e784af4564d577b9e9bea3f6c51cb6ae68c28dabadbf2e649ddbacacf",
+    "bytes": 94024,
+    "used_by": [
+      "adding-content/text-effects-1.17+.md"
+    ]
+  },
+  {
+    "reference": "text-effects-1-17_004.png",
+    "file": "wiki/assets/45d88aab569ceb90593f.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/text-effects-1-17_004.png",
+    "sha256": "45d88aab569ceb90593f4758349b88b19c7aea9e43f355dd3851f10decdfd410",
+    "bytes": 2401,
+    "used_by": [
+      "adding-content/text-effects-1.17+.md"
+    ]
+  },
+  {
+    "reference": "text-effects-1-17_016.webp",
+    "file": "wiki/assets/6b0c7bc5a4d37e115e27.webp",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/text-effects-1-17_016.webp",
+    "sha256": "6b0c7bc5a4d37e115e2705f2b8231a638a1b3fcf7860c2b5de1ce84f92d47c42",
+    "bytes": 128726,
+    "used_by": [
+      "adding-content/text-effects-1.17+.md"
+    ]
+  },
+  {
+    "reference": "cave-decorators_002.png",
+    "file": "wiki/assets/443282d72a8131fda455.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/cave-decorators_002.png",
+    "sha256": "443282d72a8131fda4553a85762a9a68f693eaf5c25320f4ab885898340eb39d",
+    "bytes": 174578,
+    "used_by": [
+      "adding-content/world-generation/cave-decorators.md"
+    ]
+  },
+  {
+    "reference": "surface-populators_002.png",
+    "file": "wiki/assets/e6c29267230846208d20.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/surface-populators_002.png",
+    "sha256": "e6c29267230846208d201e7330a614c36a0e07050d8b489542bd6e8ad5efc4f7",
+    "bytes": 97999,
+    "used_by": [
+      "adding-content/world-generation/surface-populators.md"
+    ]
+  },
+  {
+    "reference": "surface-populators_003.png",
+    "file": "wiki/assets/ae900ed128b048e0548c.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/surface-populators_003.png",
+    "sha256": "ae900ed128b048e0548cf2017c56ec58a719e7ef559a9d81c68070de4217b190",
+    "bytes": 32039,
+    "used_by": [
+      "adding-content/world-generation/surface-populators.md"
+    ]
+  },
+  {
+    "reference": "surface-populators_004.png",
+    "file": "wiki/assets/d379ab2dbc3ae4b446eb.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/surface-populators_004.png",
+    "sha256": "d379ab2dbc3ae4b446eba279dc97b9bda4bf8295f707b9413a5e2f53f32f8d2e",
+    "bytes": 4526,
+    "used_by": [
+      "adding-content/world-generation/surface-populators.md"
+    ]
+  },
+  {
+    "reference": "trees-populators_002.png",
+    "file": "wiki/assets/5abf960319b895d3ceb0.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/trees-populators_002.png",
+    "sha256": "5abf960319b895d3ceb0119a15ae8d7ef5fdc6274a02f255229928167f51adba",
+    "bytes": 401755,
+    "used_by": [
+      "adding-content/world-generation/trees-populators.md"
+    ]
+  },
+  {
+    "reference": "animatedscoreboard_001.png",
+    "file": "wiki/assets/5f239a61af3bd66675b8.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/animatedscoreboard_001.png",
+    "sha256": "5f239a61af3bd66675b82282649e26d0f4de737b75282fdfb03477e3aab32cbd",
+    "bytes": 4248,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/animatedscoreboard.md"
+    ]
+  },
+  {
+    "reference": "https://files.gitbook.com/v0/b/gitbook-legacy-files/o/assets%2F-M28TcKgSDvuFN510qye%2F-MhOfUmIRJYMhFZM2AQy%2F-MhOgJ6DpHjDR8dc9NYc%2Fimmagine.png?alt=media&token=1a5efcc3-27a5-49b4-80c9-c98ebcb197d2",
+    "file": "wiki/assets/7014530ac7e8c4e59a0f.png",
+    "source_url": "https://files.gitbook.com/v0/b/gitbook-legacy-files/o/assets%2F-M28TcKgSDvuFN510qye%2F-MhOfUmIRJYMhFZM2AQy%2F-MhOgJ6DpHjDR8dc9NYc%2Fimmagine.png?alt=media&token=1a5efcc3-27a5-49b4-80c9-c98ebcb197d2",
+    "sha256": "7014530ac7e8c4e59a0f0393c1f23111654f550853e3f11ae2e1b0bb0ac7690f",
+    "bytes": 70432,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/animatedscoreboard.md"
+    ]
+  },
+  {
+    "reference": "https://files.gitbook.com/v0/b/gitbook-legacy-files/o/assets%2F-M28TcKgSDvuFN510qye%2F-MhOfUmIRJYMhFZM2AQy%2F-MhOg9VxfKvE2ZGZ3QE6%2Fimmagine.png?alt=media&token=c4ee2fd0-2aa9-46e2-a8dd-0025dcc64f7e",
+    "file": "wiki/assets/9ed2f7f7ced41d585aa0.png",
+    "source_url": "https://files.gitbook.com/v0/b/gitbook-legacy-files/o/assets%2F-M28TcKgSDvuFN510qye%2F-MhOfUmIRJYMhFZM2AQy%2F-MhOg9VxfKvE2ZGZ3QE6%2Fimmagine.png?alt=media&token=c4ee2fd0-2aa9-46e2-a8dd-0025dcc64f7e",
+    "sha256": "9ed2f7f7ced41d585aa0dc72e4a08ee3592d1d62df01a12a6e10546c273fdd61",
+    "bytes": 22499,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/animatedscoreboard.md"
+    ]
+  },
+  {
+    "reference": "chatcontrol-red_001.png",
+    "file": "wiki/assets/d0660d60cd8a857eb90d.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/chatcontrol-red_001.png",
+    "sha256": "d0660d60cd8a857eb90df8105313da5669fc85c31e597294ef38943c7916df5b",
+    "bytes": 2040,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/chatcontrol-red.md"
+    ]
+  },
+  {
+    "reference": "https://github.com/LoneDev6/Wiki-ItemsAdder/assets/114158743/9af34ddf-2ad4-40f0-9b14-c77125e57a3b",
+    "file": "wiki/assets/3786d53d8505e93fa4f6.png",
+    "source_url": "https://github.com/LoneDev6/Wiki-ItemsAdder/assets/114158743/9af34ddf-2ad4-40f0-9b14-c77125e57a3b",
+    "sha256": "3786d53d8505e93fa4f6509f7a12bd78817355f424335bd8022c0229577d87f4",
+    "bytes": 25517,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/deluxemenu.md"
+    ]
+  },
+  {
+    "reference": "executableitems_001.png",
+    "file": "wiki/assets/7b1b476756def4469155.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/executableitems_001.png",
+    "sha256": "7b1b476756def4469155a89a4e3264b9cc1bdc1a705bb66c1151f6558d0cd0bf",
+    "bytes": 4144,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/executableitems.md"
+    ]
+  },
+  {
+    "reference": "hmccosmetics_002.png",
+    "file": "wiki/assets/504bc61547c9c6cb5de9.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/hmccosmetics_002.png",
+    "sha256": "504bc61547c9c6cb5de9f73c8ba819dea3604a3f7e8509acdc8ac1ab8dd3389f",
+    "bytes": 60562,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/hmccosmetics.md"
+    ]
+  },
+  {
+    "reference": "holographic-displays_003.png",
+    "file": "wiki/assets/793a9d60a17950e34317.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/holographic-displays_003.png",
+    "sha256": "793a9d60a17950e34317a3a8ec7dc45c47bc1073bf4a42339a028c498d580ac2",
+    "bytes": 44336,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/holographic-displays.md"
+    ]
+  },
+  {
+    "reference": "holographic-displays_004.png",
+    "file": "wiki/assets/4e8ce3b5a52585528755.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/holographic-displays_004.png",
+    "sha256": "4e8ce3b5a525855287558ca0cf10b2a040cf0c5e4f6f0f7e57902fc6db929a7d",
+    "bytes": 10495,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/holographic-displays.md"
+    ]
+  },
+  {
+    "reference": "iris_003.png",
+    "file": "wiki/assets/da5e0ab28764c0fc8a5d.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/iris_003.png",
+    "sha256": "da5e0ab28764c0fc8a5da93a8a743e7e4f19e0bd57b851a20e3d7539570af97d",
+    "bytes": 389506,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/iris.md"
+    ]
+  },
+  {
+    "reference": "iris_004.png",
+    "file": "wiki/assets/da53d497ac4720dbe5a5.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/iris_004.png",
+    "sha256": "da53d497ac4720dbe5a5ddfa62180ab421fa60b6e72e2b41a18ff32f74d77c11",
+    "bytes": 32377,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/iris.md"
+    ]
+  },
+  {
+    "reference": "mimic_001.png",
+    "file": "wiki/assets/6d3680a97ab916e116ea.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/mimic_001.png",
+    "sha256": "6d3680a97ab916e116ea9cd0b3408ffe3f4b5d39c65f8e64343d31558213ed4d",
+    "bytes": 1919,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/mimic.md"
+    ]
+  },
+  {
+    "reference": "mmoitems_013.png",
+    "file": "wiki/assets/acafc5511ecaf77a9751.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/mmoitems_013.png",
+    "sha256": "acafc5511ecaf77a9751c598dace5755b8aac812c7610123575e183d0ca46102",
+    "bytes": 6743,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/mmoitems.md"
+    ]
+  },
+  {
+    "reference": "mmoitems_007.png",
+    "file": "wiki/assets/fe392675fbdd248c5608.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/mmoitems_007.png",
+    "sha256": "fe392675fbdd248c56082a803b1821a20b8971e983dea4fbb553775e9aeab02e",
+    "bytes": 3192,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/mmoitems.md"
+    ]
+  },
+  {
+    "reference": "mmoitems_010.png",
+    "file": "wiki/assets/0708043484cbf7f35efc.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/mmoitems_010.png",
+    "sha256": "0708043484cbf7f35efc00e69e3d8b19693969b0aeac23809a500cc8f454e278",
+    "bytes": 12394,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/mmoitems.md"
+    ]
+  },
+  {
+    "reference": "mmoitems_012.png",
+    "file": "wiki/assets/5f27fdbd2b26ab791ab9.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/mmoitems_012.png",
+    "sha256": "5f27fdbd2b26ab791ab965b3cdce15c3d25d26d4a581ba1071eb5973de90d1dd",
+    "bytes": 7906,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/mmoitems.md"
+    ]
+  },
+  {
+    "reference": "mmoitems_011.png",
+    "file": "wiki/assets/dfb4607ba129fcbf4d8a.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/mmoitems_011.png",
+    "sha256": "dfb4607ba129fcbf4d8add7f955b3284fbf3df07205c7a71b054915321faf774",
+    "bytes": 11740,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/mmoitems.md"
+    ]
+  },
+  {
+    "reference": "mmoitems_008.png",
+    "file": "wiki/assets/d5c76c008f8531e12d96.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/mmoitems_008.png",
+    "sha256": "d5c76c008f8531e12d96361d9a2b74a2ff40332960e92cc39d3099cb40b4d918",
+    "bytes": 51824,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/mmoitems.md"
+    ]
+  },
+  {
+    "reference": "mmoitems_009.png",
+    "file": "wiki/assets/317fb6b25713704012e3.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/mmoitems_009.png",
+    "sha256": "317fb6b25713704012e378280e2ea4ed638b4b9fb5aadeb8f869d11f85ebf59d",
+    "bytes": 16678,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/mmoitems.md"
+    ]
+  },
+  {
+    "reference": "modelengine_002.png",
+    "file": "wiki/assets/2c8f05affce930e1ff83.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/modelengine_002.png",
+    "sha256": "2c8f05affce930e1ff8316b5745889f295b1e3b883c66478116184dc620a3be1",
+    "bytes": 60506,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/modelengine.md"
+    ]
+  },
+  {
+    "reference": "realisticworldgenerator_002.png",
+    "file": "wiki/assets/fc41d811a824d44f6f5b.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/realisticworldgenerator_002.png",
+    "sha256": "fc41d811a824d44f6f5be5fb7f3bb31c196c45ada42771ad313600e6370fc844",
+    "bytes": 375413,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/realisticworldgenerator.md"
+    ]
+  },
+  {
+    "reference": "rpgbank_002.png",
+    "file": "wiki/assets/e3c62f59ca8dfb047233.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/rpgbank_002.png",
+    "sha256": "e3c62f59ca8dfb0472333a0787431ef65d0098d8352acd70a45410a33a40ba47",
+    "bytes": 13336,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/rpgbank.md"
+    ]
+  },
+  {
+    "reference": "rpginventory_002.png",
+    "file": "wiki/assets/81181983107aa0e6892d.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/rpginventory_002.png",
+    "sha256": "81181983107aa0e6892d26648abef755dc191a5c33adb6dd4fe86baa79573d65",
+    "bytes": 9771,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/rpginventory.md"
+    ]
+  },
+  {
+    "reference": "scoreboard_006.png",
+    "file": "wiki/assets/7fd90a542c8fde19619f.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/scoreboard_006.png",
+    "sha256": "7fd90a542c8fde19619fc3c98fafd70e335f7c47b5678c13c688ba62697e19dc",
+    "bytes": 11731,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/scoreboard.md"
+    ]
+  },
+  {
+    "reference": "scoreboard_004.png",
+    "file": "wiki/assets/8b0c26b201390e212990.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/scoreboard_004.png",
+    "sha256": "8b0c26b201390e212990c44e170ee8a0926ec5e14218ea3cf709474ec1145d91",
+    "bytes": 37449,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/scoreboard.md"
+    ]
+  },
+  {
+    "reference": "scoreboard_005.png",
+    "file": "wiki/assets/ffeb9000ca4388561db9.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/scoreboard_005.png",
+    "sha256": "ffeb9000ca4388561db92adc6d899d52b05c08b935797adb63f06ce39a78854b",
+    "bytes": 16302,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/scoreboard.md"
+    ]
+  },
+  {
+    "reference": "slimefun4_002.png",
+    "file": "wiki/assets/ee9683285d692384ed79.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/slimefun4_002.png",
+    "sha256": "ee9683285d692384ed799e52fdae87a62667a1fc5609b3dd9459a644d77538f5",
+    "bytes": 50030,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/slimefun4.md"
+    ]
+  },
+  {
+    "reference": "wailat_001.png",
+    "file": "wiki/assets/85993fcdd87b2d47b3bb.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/wailat_001.png",
+    "sha256": "85993fcdd87b2d47b3bbabd10ac0e8f154b0e8397021537879dd2bfe1518714d",
+    "bytes": 225812,
+    "used_by": [
+      "compatibility-with-other-plugins/compatible/wailat.md"
+    ]
+  },
+  {
+    "reference": "edit-the-english-wiki_012.png",
+    "file": "wiki/assets/11c6c6695b6b82af47d7.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/edit-the-english-wiki_012.png",
+    "sha256": "11c6c6695b6b82af47d7c6f62cf6638a24c112279486c9554b73dfd2dd7456f0",
+    "bytes": 14761,
+    "used_by": [
+      "contribute/edit-the-english-wiki.md",
+      "contribute/translate-this-wiki.md"
+    ]
+  },
+  {
+    "reference": "edit-the-english-wiki_011.png",
+    "file": "wiki/assets/bda16da81f1e66886575.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/edit-the-english-wiki_011.png",
+    "sha256": "bda16da81f1e668865755fcede24cf45488b2b5d751e98b6d24a4f2d55dca6fc",
+    "bytes": 19658,
+    "used_by": [
+      "contribute/edit-the-english-wiki.md"
+    ]
+  },
+  {
+    "reference": "edit-the-english-wiki_009.png",
+    "file": "wiki/assets/64cd7db57303b2d105ac.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/edit-the-english-wiki_009.png",
+    "sha256": "64cd7db57303b2d105acfd56913d25a039e386ea584bee9503ef5c593f0dda86",
+    "bytes": 31743,
+    "used_by": [
+      "contribute/edit-the-english-wiki.md"
+    ]
+  },
+  {
+    "reference": "edit-the-english-wiki_008.png",
+    "file": "wiki/assets/5594ab5be44cdb6c8896.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/edit-the-english-wiki_008.png",
+    "sha256": "5594ab5be44cdb6c88964d56c72e33871159d4d181705ece2e5c62b97f2446b5",
+    "bytes": 63023,
+    "used_by": [
+      "contribute/edit-the-english-wiki.md"
+    ]
+  },
+  {
+    "reference": "edit-the-english-wiki_010.png",
+    "file": "wiki/assets/0c3c8f1e6fa2c2c2a952.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/edit-the-english-wiki_010.png",
+    "sha256": "0c3c8f1e6fa2c2c2a952a0184aebba5feea777bed6c2c444a1bcab38d0618ba8",
+    "bytes": 21797,
+    "used_by": [
+      "contribute/edit-the-english-wiki.md",
+      "contribute/translate-this-wiki.md"
+    ]
+  },
+  {
+    "reference": "edit-the-english-wiki_013.png",
+    "file": "wiki/assets/60fbfc1d00dac261a614.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/edit-the-english-wiki_013.png",
+    "sha256": "60fbfc1d00dac261a6146989711ec9d22f2a626873702a2b68f1eff59245bb5a",
+    "bytes": 7698,
+    "used_by": [
+      "contribute/edit-the-english-wiki.md"
+    ]
+  },
+  {
+    "reference": "edit-the-english-wiki_014.png",
+    "file": "wiki/assets/2f1f5e79df3cc2a9198c.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/edit-the-english-wiki_014.png",
+    "sha256": "2f1f5e79df3cc2a9198c189c16e4ae7dd9edbc4350ba991217cdcb3044a809c0",
+    "bytes": 6420,
+    "used_by": [
+      "contribute/edit-the-english-wiki.md",
+      "contribute/translate-this-wiki.md"
+    ]
+  },
+  {
+    "reference": "preview-wiki-changes_004.png",
+    "file": "wiki/assets/931ad0c1fded76340c02.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/preview-wiki-changes_004.png",
+    "sha256": "931ad0c1fded76340c02e20770fa85bb894995db828ded6da182942aaaefb5d6",
+    "bytes": 10841,
+    "used_by": [
+      "contribute/preview-wiki-changes.md"
+    ]
+  },
+  {
+    "reference": "preview-wiki-changes_003.png",
+    "file": "wiki/assets/78bf1f95ea7c682047dc.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/preview-wiki-changes_003.png",
+    "sha256": "78bf1f95ea7c682047dc06676514cf697fee256e195dbae5463f1ab61f29cc76",
+    "bytes": 11953,
+    "used_by": [
+      "contribute/preview-wiki-changes.md"
+    ]
+  },
+  {
+    "reference": "translate-this-wiki_004.png",
+    "file": "wiki/assets/0ea2d64ae9664d716c40.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/translate-this-wiki_004.png",
+    "sha256": "0ea2d64ae9664d716c40b61ea7bf59bdb375a4b4515f87be67be553950bcacd5",
+    "bytes": 1610,
+    "used_by": [
+      "contribute/translate-this-wiki.md"
+    ]
+  },
+  {
+    "reference": "translate-this-wiki_007.png",
+    "file": "wiki/assets/cc467a5b2eaa048866d6.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/translate-this-wiki_007.png",
+    "sha256": "cc467a5b2eaa048866d6ee0cb300994326c1aedbb30bf3d5d2bfd0e69e3e1f4c",
+    "bytes": 20410,
+    "used_by": [
+      "contribute/translate-this-wiki.md"
+    ]
+  },
+  {
+    "reference": "translate-this-wiki_006.png",
+    "file": "wiki/assets/84905aaaa6398975950e.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/translate-this-wiki_006.png",
+    "sha256": "84905aaaa6398975950ec77d85e986e8a4fef205f8b514571adbe74392cd5415",
+    "bytes": 24013,
+    "used_by": [
+      "contribute/translate-this-wiki.md"
+    ]
+  },
+  {
+    "reference": "translate-this-wiki_005.png",
+    "file": "wiki/assets/f7955c29e3b00f54f286.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/translate-this-wiki_005.png",
+    "sha256": "f7955c29e3b00f54f2862077365e4c12059e885674f54691cdb6aec2c08a71ef",
+    "bytes": 24163,
+    "used_by": [
+      "contribute/translate-this-wiki.md"
+    ]
+  },
+  {
+    "reference": "branding_002.png",
+    "file": "wiki/assets/782c2e186528d9201152.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/branding_002.png",
+    "sha256": "782c2e186528d920115232e245461cc5db43220cb11e3678bb89e024f568a81a",
+    "bytes": 10708,
+    "used_by": [
+      "developers/branding.md"
+    ]
+  },
+  {
+    "reference": "branding_003.png",
+    "file": "wiki/assets/4f9d46aa04c10ca0275f.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/branding_003.png",
+    "sha256": "4f9d46aa04c10ca0275ff66df36786619f0b0975f41cd77aed0a1548498dac82",
+    "bytes": 84526,
+    "used_by": [
+      "developers/branding.md"
+    ]
+  },
+  {
+    "reference": "branding_004.png",
+    "file": "wiki/assets/d0b06d07c62e74f90c29.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/branding_004.png",
+    "sha256": "d0b06d07c62e74f90c29de058d6550bfe99fc8b498aea73d25678eec6d62f755",
+    "bytes": 33817,
+    "used_by": [
+      "developers/branding.md"
+    ]
+  },
+  {
+    "reference": "1-21-5-remove-inventory-highlight-slot_002.png",
+    "file": "wiki/assets/56148e6e91cc0a2a826e.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/1-21-5-remove-inventory-highlight-slot_002.png",
+    "sha256": "56148e6e91cc0a2a826e76aa83735aff05bd511b3dbd67027556e800b8357b1b",
+    "bytes": 38766,
+    "used_by": [
+      "faq/1.21.5+-remove-inventory-highlight-slot.md"
+    ]
+  },
+  {
+    "reference": "armor-glow-outline-bug_001.png",
+    "file": "wiki/assets/f62d6ff0c304b4397948.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/armor-glow-outline-bug_001.png",
+    "sha256": "f62d6ff0c304b4397948532d193e622c50778eb5d8c699b6a7967417aa9de51f",
+    "bytes": 17683,
+    "used_by": [
+      "faq/armors-issues/armor-glow-outline-bug.md"
+    ]
+  },
+  {
+    "reference": "armors-animation-and-emission-not-working_001.png",
+    "file": "wiki/assets/131ca796db8a23f5ce44.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/armors-animation-and-emission-not-working_001.png",
+    "sha256": "131ca796db8a23f5ce44d63749b4707965ad0816e1c0cb8040aa49986ab861c6",
+    "bytes": 3382,
+    "used_by": [
+      "faq/armors-issues/armors-animation-and-emission-not-working.md"
+    ]
+  },
+  {
+    "reference": "armors-textures-not-working-with-shaders-mod_002.png",
+    "file": "wiki/assets/b3986188399b05a58b17.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/armors-textures-not-working-with-shaders-mod_002.png",
+    "sha256": "b3986188399b05a58b171ce6a22c6fed681502aadec175c7c5eff07214edd537",
+    "bytes": 783175,
+    "used_by": [
+      "faq/armors-issues/armors-textures-not-working-with-shaders-mod.md"
+    ]
+  },
+  {
+    "reference": "armors-textures-not-working-with-shaders-mod_003.png",
+    "file": "wiki/assets/4540133f798f61bb8019.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/armors-textures-not-working-with-shaders-mod_003.png",
+    "sha256": "4540133f798f61bb8019b6e55d5db9d59b5afc3417808271add0309c664e45fa",
+    "bytes": 445025,
+    "used_by": [
+      "faq/armors-issues/armors-textures-not-working-with-shaders-mod.md"
+    ]
+  },
+  {
+    "reference": "leather-armor-texture-overwritten_002.png",
+    "file": "wiki/assets/738192f5d32274dfc3cb.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/leather-armor-texture-overwritten_002.png",
+    "sha256": "738192f5d32274dfc3cb7a859a517b2164935cd730494761fbce70f6d44d45ce",
+    "bytes": 7149,
+    "used_by": [
+      "faq/armors-issues/leather-armor-texture-overwritten.md"
+    ]
+  },
+  {
+    "reference": "single-resourcepack-bungeecord_002.png",
+    "file": "wiki/assets/406baac601dae4104e1d.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/single-resourcepack-bungeecord_002.png",
+    "sha256": "406baac601dae4104e1dbb185d4bd4696930aeea412a8aa0d04e1c95edf12e0f",
+    "bytes": 72775,
+    "used_by": [
+      "faq/bungeecord-velocity/single-resourcepack-bungeecord.md"
+    ]
+  },
+  {
+    "reference": "common-errors_004.png",
+    "file": "wiki/assets/e9a9cdae38db6625f8c1.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/common-errors_004.png",
+    "sha256": "e9a9cdae38db6625f8c132de36bf69c09923ae856acce456beb027dfb40844d2",
+    "bytes": 5056,
+    "used_by": [
+      "faq/common-errors.md"
+    ]
+  },
+  {
+    "reference": "common-errors_003.png",
+    "file": "wiki/assets/7c84b61cb9b3f2526210.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/common-errors_003.png",
+    "sha256": "7c84b61cb9b3f2526210d3a2a2ac00acb38b248470ce5c2418451a191410b448",
+    "bytes": 9040,
+    "used_by": [
+      "faq/common-errors.md"
+    ]
+  },
+  {
+    "reference": "emotes-issues_013.png",
+    "file": "wiki/assets/37d510772822bc72d4fd.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/emotes-issues_013.png",
+    "sha256": "37d510772822bc72d4fdab95853afafa877d2a68d178821670fcc9e6ec9ae26c",
+    "bytes": 21370,
+    "used_by": [
+      "faq/emotes-issues.md"
+    ]
+  },
+  {
+    "reference": "emotes-issues_012.png",
+    "file": "wiki/assets/18dabecf5729300613c6.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/emotes-issues_012.png",
+    "sha256": "18dabecf5729300613c6d5e3e168aa7db140350f00c1b347c02e900b9729ed1c",
+    "bytes": 31793,
+    "used_by": [
+      "faq/emotes-issues.md"
+    ]
+  },
+  {
+    "reference": "emotes-issues_014.png",
+    "file": "wiki/assets/d9209754b691e63ba989.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/emotes-issues_014.png",
+    "sha256": "d9209754b691e63ba989f6a07a978d3977f15fe0cf9e91b95a0acdca8cc2a28f",
+    "bytes": 10230,
+    "used_by": [
+      "faq/emotes-issues.md"
+    ]
+  },
+  {
+    "reference": "emotes-issues_009.png",
+    "file": "wiki/assets/dace34b0f928bdb8da88.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/emotes-issues_009.png",
+    "sha256": "dace34b0f928bdb8da88718542b6aaa07681abe18bfda7034b2e2e41b87ab69e",
+    "bytes": 87054,
+    "used_by": [
+      "faq/emotes-issues.md"
+    ]
+  },
+  {
+    "reference": "emotes-issues_010.png",
+    "file": "wiki/assets/edd2057ef3cf522eceb4.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/emotes-issues_010.png",
+    "sha256": "edd2057ef3cf522eceb47d2a078c85c074967a0150b6cdbd9f9ca2fb0efabf31",
+    "bytes": 82474,
+    "used_by": [
+      "faq/emotes-issues.md"
+    ]
+  },
+  {
+    "reference": "emotes-issues_008.png",
+    "file": "wiki/assets/df1d1b0ddd46fcbc060e.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/emotes-issues_008.png",
+    "sha256": "df1d1b0ddd46fcbc060e85ed5e99121c00ce092b39e1ab1fc0d7a7197be576fa",
+    "bytes": 225088,
+    "used_by": [
+      "faq/emotes-issues.md"
+    ]
+  },
+  {
+    "reference": "emotes-issues_011.png",
+    "file": "wiki/assets/34c3dfa1e007477d76a8.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/emotes-issues_011.png",
+    "sha256": "34c3dfa1e007477d76a822bcac634c5c35164d24343ddbf7c7de19e0eb65221d",
+    "bytes": 59521,
+    "used_by": [
+      "faq/emotes-issues.md"
+    ]
+  },
+  {
+    "reference": "emotes-with-more-joins_002.png",
+    "file": "wiki/assets/f67c0fc54af70294cdc1.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/emotes-with-more-joins_002.png",
+    "sha256": "f67c0fc54af70294cdc1a71b5a289d2c4c69b1058c8fc38c2f953168121368e5",
+    "bytes": 35262,
+    "used_by": [
+      "faq/emotes-with-more-joins.md"
+    ]
+  },
+  {
+    "reference": "failed-to-download-minecraft-assets_003.png",
+    "file": "wiki/assets/7b83b52bc5b73a6ff11e.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/failed-to-download-minecraft-assets_003.png",
+    "sha256": "7b83b52bc5b73a6ff11e0828449b23e8f4705e08b1ac8b74e56c77e07763ff35",
+    "bytes": 3309,
+    "used_by": [
+      "faq/failed-to-download-minecraft-assets.md"
+    ]
+  },
+  {
+    "reference": "failed-to-download-minecraft-assets_002.png",
+    "file": "wiki/assets/be3a3169b013935aa820.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/failed-to-download-minecraft-assets_002.png",
+    "sha256": "be3a3169b013935aa820917b097fbcec3eadb0d578beccfe161cd17275d62e30",
+    "bytes": 7089,
+    "used_by": [
+      "faq/failed-to-download-minecraft-assets.md"
+    ]
+  },
+  {
+    "reference": "fill-thirst-mana-bar_001.png",
+    "file": "wiki/assets/28de373ab36ec4dd889b.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/fill-thirst-mana-bar_001.png",
+    "sha256": "28de373ab36ec4dd889b5dd44e505ec72c9185881aae7ea713e0fdcd8c4e1eda",
+    "bytes": 663,
+    "used_by": [
+      "faq/fill-thirst-mana-bar.md"
+    ]
+  },
+  {
+    "reference": "fill-thirst-mana-bar_002.png",
+    "file": "wiki/assets/5cc4d25770c093964c53.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/fill-thirst-mana-bar_002.png",
+    "sha256": "5cc4d25770c093964c53a47d666b3c105fab65a606a0f834aa9b81d2077cc0e3",
+    "bytes": 830,
+    "used_by": [
+      "faq/fill-thirst-mana-bar.md"
+    ]
+  },
+  {
+    "reference": "glitched-blocks_002.png",
+    "file": "wiki/assets/450f68f54960dde6552f.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/glitched-blocks_002.png",
+    "sha256": "450f68f54960dde6552ff44f139a6b7d674df4a4e851fe5c84c663920e4d4c15",
+    "bytes": 432768,
+    "used_by": [
+      "faq/glitched-blocks.md"
+    ]
+  },
+  {
+    "reference": "graphics-and-item-model-on-1-21-3-and-lower_001.png",
+    "file": "wiki/assets/553e2ed84b4afc15bf0f.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/graphics-and-item-model-on-1-21-3-and-lower_001.png",
+    "sha256": "553e2ed84b4afc15bf0fc693f30252f9487c80a235ce4c8e2640986e319d06e3",
+    "bytes": 780,
+    "used_by": [
+      "faq/graphics-and-item_model-on-1.21.3-and-lower.md"
+    ]
+  },
+  {
+    "reference": "i-see-crisp-textures-far-away_002.png",
+    "file": "wiki/assets/fd7f6d404a3e8d366614.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/i-see-crisp-textures-far-away_002.png",
+    "sha256": "fd7f6d404a3e8d366614fe04f9deaf786fc8d78373585809d83e9a3778b3220a",
+    "bytes": 17335,
+    "used_by": [
+      "faq/i-see-crisp-textures-far-away.md"
+    ]
+  },
+  {
+    "reference": "identify-why-textures-are-not-shown_003.png",
+    "file": "wiki/assets/746693d3710f089515d1.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/identify-why-textures-are-not-shown_003.png",
+    "sha256": "746693d3710f089515d1c77b6f8a1080011deecd88473b7b477ac74049dad666",
+    "bytes": 10050,
+    "used_by": [
+      "faq/identify-why-textures-are-not-shown.md"
+    ]
+  },
+  {
+    "reference": "identify-why-textures-are-not-shown_004.png",
+    "file": "wiki/assets/37f940cfa2b5123a4523.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/identify-why-textures-are-not-shown_004.png",
+    "sha256": "37f940cfa2b5123a45237db84f57c2529c755a072cbaa718cc9589950d31a643",
+    "bytes": 8147,
+    "used_by": [
+      "faq/identify-why-textures-are-not-shown.md"
+    ]
+  },
+  {
+    "reference": "itemsadder-v4_002.png",
+    "file": "wiki/assets/5097156d4c09a4803ff5.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/itemsadder-v4_002.png",
+    "sha256": "5097156d4c09a4803ff5b54c42295ef1ed2655b4064a5f3fd71f7931ecbc5345",
+    "bytes": 5687,
+    "used_by": [
+      "faq/itemsadder-v4.md"
+    ]
+  },
+  {
+    "reference": "liquids-issues_007.png",
+    "file": "wiki/assets/38affd6dcdfec59473b5.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/liquids-issues_007.png",
+    "sha256": "38affd6dcdfec59473b5ab1479b64556292fccbfa5e28cce71f2aab70eafc61a",
+    "bytes": 55194,
+    "used_by": [
+      "faq/liquids-issues.md"
+    ]
+  },
+  {
+    "reference": "liquids-issues_004.png",
+    "file": "wiki/assets/c1c9422ac4e18871743d.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/liquids-issues_004.png",
+    "sha256": "c1c9422ac4e18871743d279dff322ae1af2321698be4d009eef1816993ea5f75",
+    "bytes": 266993,
+    "used_by": [
+      "faq/liquids-issues.md"
+    ]
+  },
+  {
+    "reference": "liquids-issues_005.png",
+    "file": "wiki/assets/7b771014e916e2a7ac28.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/liquids-issues_005.png",
+    "sha256": "7b771014e916e2a7ac288f2ee47febbbff98b993a7d4f6a335000ad419d75f47",
+    "bytes": 15965,
+    "used_by": [
+      "faq/liquids-issues.md"
+    ]
+  },
+  {
+    "reference": "liquids-issues_006.png",
+    "file": "wiki/assets/1f32b16ce74b6cfce027.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/liquids-issues_006.png",
+    "sha256": "1f32b16ce74b6cfce027a6b09e91a93425434417bedeee65f081e52ab5b9c043",
+    "bytes": 7607,
+    "used_by": [
+      "faq/liquids-issues.md"
+    ]
+  },
+  {
+    "reference": "modelengine-vs-itemsadder_005.png",
+    "file": "wiki/assets/212c59156c2d717fdb95.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/modelengine-vs-itemsadder_005.png",
+    "sha256": "212c59156c2d717fdb95fbc27bf275dc2648a48a81f73afcb89b8af1f278882d",
+    "bytes": 5893,
+    "used_by": [
+      "faq/modelengine-vs-itemsadder.md"
+    ]
+  },
+  {
+    "reference": "modelengine-vs-itemsadder_004.png",
+    "file": "wiki/assets/61706b7cfe41b25b0b96.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/modelengine-vs-itemsadder_004.png",
+    "sha256": "61706b7cfe41b25b0b96bde8143d901b2df292d8189423ebc3ca6c105be13acb",
+    "bytes": 13544,
+    "used_by": [
+      "faq/modelengine-vs-itemsadder.md"
+    ]
+  },
+  {
+    "reference": "modelengine-vs-itemsadder_003.png",
+    "file": "wiki/assets/8d641577eca4a494bb6f.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/modelengine-vs-itemsadder_003.png",
+    "sha256": "8d641577eca4a494bb6f29035c6d55c26c783a648463432db6d008d7bdfd609e",
+    "bytes": 3736,
+    "used_by": [
+      "faq/modelengine-vs-itemsadder.md"
+    ]
+  },
+  {
+    "reference": "placed-heads-texture-glitched_002.png",
+    "file": "wiki/assets/271f6f96a078f084f04f.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/placed-heads-texture-glitched_002.png",
+    "sha256": "271f6f96a078f084f04fb0df642387e223dc4be3c2fc13616ff1e12e4478c8e8",
+    "bytes": 244625,
+    "used_by": [
+      "faq/placed-heads-texture-glitched.md"
+    ]
+  },
+  {
+    "reference": "recipes-book-problems_001.png",
+    "file": "wiki/assets/3c3cb8d2fe8cd8a2aadf.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/recipes-book-problems_001.png",
+    "sha256": "3c3cb8d2fe8cd8a2aadf617326e166d5f39f7e0c990dd8f0cbc7b1aa9c6df4e4",
+    "bytes": 1146,
+    "used_by": [
+      "faq/recipes-book-problems.md"
+    ]
+  },
+  {
+    "reference": "recipes-book-problems_002.png",
+    "file": "wiki/assets/33bf96217964ed7b32a4.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/recipes-book-problems_002.png",
+    "sha256": "33bf96217964ed7b32a4c9fc658f95aeb679b4165182fcb1cf6842d65d2f6cea",
+    "bytes": 259,
+    "used_by": [
+      "faq/recipes-book-problems.md"
+    ]
+  },
+  {
+    "reference": "bulk-colorize-images_001.png",
+    "file": "wiki/assets/e4b7641070e2c15870a4.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/bulk-colorize-images_001.png",
+    "sha256": "e4b7641070e2c15870a476cfabbd7cfd8b49a591d382693ce4a810f14fb031b2",
+    "bytes": 1931,
+    "used_by": [
+      "other/bulk-colorize-images.md"
+    ]
+  },
+  {
+    "reference": "bulk-colorize-images_002.png",
+    "file": "wiki/assets/35f596d0a112c19fe432.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/bulk-colorize-images_002.png",
+    "sha256": "35f596d0a112c19fe43209bf4f07ca999e860077e56203402d5b883eba50fafa",
+    "bytes": 3294,
+    "used_by": [
+      "other/bulk-colorize-images.md"
+    ]
+  },
+  {
+    "reference": "custom-player-stats_001.png",
+    "file": "wiki/assets/1ad9de0cd0273b0829d7.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/custom-player-stats_001.png",
+    "sha256": "1ad9de0cd0273b0829d709cf52768fcd86aa57f45bdd09bf47df26671b8f3b9e",
+    "bytes": 3184,
+    "used_by": [
+      "other/custom-player-stats.md"
+    ]
+  },
+  {
+    "reference": "custom-player-stats_002.png",
+    "file": "wiki/assets/9c008f37c56c7ad44525.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/custom-player-stats_002.png",
+    "sha256": "9c008f37c56c7ad44525607fd0ffd08084961e848dfb410135f005cfb94ad7fc",
+    "bytes": 3148,
+    "used_by": [
+      "other/custom-player-stats.md"
+    ]
+  },
+  {
+    "reference": "hide-scoreboard-numbers-1-17_001.png",
+    "file": "wiki/assets/2a020d53214aa709555c.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/hide-scoreboard-numbers-1-17_001.png",
+    "sha256": "2a020d53214aa709555ca0d5b5fbe022d31c0c7491685ce93fe19716b1147ea2",
+    "bytes": 2434,
+    "used_by": [
+      "other/hide-scoreboard-numbers-1.17+.md"
+    ]
+  },
+  {
+    "reference": "hide-scoreboard-numbers-1-17_002.png",
+    "file": "wiki/assets/d41277232313b0532fdd.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/hide-scoreboard-numbers-1-17_002.png",
+    "sha256": "d41277232313b0532fdd452e5f1aadfd181d509bd833d14de0521427a791fe2e",
+    "bytes": 1727,
+    "used_by": [
+      "other/hide-scoreboard-numbers-1.17+.md"
+    ]
+  },
+  {
+    "reference": "minecraft-hosting_002.webp",
+    "file": "wiki/assets/ba28759157355df02731.webp",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/minecraft-hosting_002.webp",
+    "sha256": "ba28759157355df0273142a8d39246cbeec90db664419ca21627c7084c013ce4",
+    "bytes": 1674032,
+    "used_by": [
+      "other/minecraft-hosting.md"
+    ]
+  },
+  {
+    "reference": "configs-and-resourcepack_002.png",
+    "file": "wiki/assets/4123feed38e8fda35477.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/configs-and-resourcepack_002.png",
+    "sha256": "4123feed38e8fda35477bf2f5d8bd93ab5e69a8f049c73a497be493e9987eeab",
+    "bytes": 12474,
+    "used_by": [
+      "plugin-usage/beginners/configs-and-resourcepack.md"
+    ]
+  },
+  {
+    "reference": "configs-and-resourcepack_003.png",
+    "file": "wiki/assets/346b5892f71657c72748.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/configs-and-resourcepack_003.png",
+    "sha256": "346b5892f71657c72748719967cf4752061e1333f51f175a7da32f6135dec100",
+    "bytes": 1152,
+    "used_by": [
+      "plugin-usage/beginners/configs-and-resourcepack.md"
+    ]
+  },
+  {
+    "reference": "files-editor_003.png",
+    "file": "wiki/assets/47b4c631c891b9ea05db.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/files-editor_003.png",
+    "sha256": "47b4c631c891b9ea05db7fa674c966644b1891d1e2b3c0fe3e40505047aa4514",
+    "bytes": 23736,
+    "used_by": [
+      "plugin-usage/beginners/files-editor.md"
+    ]
+  },
+  {
+    "reference": "files-editor_004.png",
+    "file": "wiki/assets/f2befc44d8bc104c67c4.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/files-editor_004.png",
+    "sha256": "f2befc44d8bc104c67c47fe5e66fe06448d3bb7df25ec5296172ab263a34d098",
+    "bytes": 6786,
+    "used_by": [
+      "plugin-usage/beginners/files-editor.md"
+    ]
+  },
+  {
+    "reference": "files-editor_005.png",
+    "file": "wiki/assets/cc5029fe12f473958101.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/files-editor_005.png",
+    "sha256": "cc5029fe12f4739581010932f0ea6a4c3f5a776062cb6b7b665f3ce34fca3b73",
+    "bytes": 1479,
+    "used_by": [
+      "plugin-usage/beginners/files-editor.md"
+    ]
+  },
+  {
+    "reference": "files-editor_006.png",
+    "file": "wiki/assets/e1942988cdb4d4d97792.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/files-editor_006.png",
+    "sha256": "e1942988cdb4d4d97792cca7576539409c3bed07d2ad852a4ec3f498073e059c",
+    "bytes": 3296,
+    "used_by": [
+      "plugin-usage/beginners/files-editor.md"
+    ]
+  },
+  {
+    "reference": "my-first-block_006.png",
+    "file": "wiki/assets/326ffa3a2bbff2736be0.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/my-first-block_006.png",
+    "sha256": "326ffa3a2bbff2736be05aeb794e9ff794c0a4edf195851cabc3381f47678242",
+    "bytes": 1826,
+    "used_by": [
+      "plugin-usage/beginners/my-first-block.md"
+    ]
+  },
+  {
+    "reference": "my-first-block_005.png",
+    "file": "wiki/assets/403c695a600a022d6ca7.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/my-first-block_005.png",
+    "sha256": "403c695a600a022d6ca72ab000d4574cd8c6c5059f22b69f25968860d6d4e448",
+    "bytes": 12399,
+    "used_by": [
+      "plugin-usage/beginners/my-first-block.md"
+    ]
+  },
+  {
+    "reference": "my-first-block_003.png",
+    "file": "wiki/assets/f36694cc2cdef70fd57b.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/my-first-block_003.png",
+    "sha256": "f36694cc2cdef70fd57b26f07ed1347bce9b2ff4a496ebeb22489bc20923f2ea",
+    "bytes": 2409,
+    "used_by": [
+      "plugin-usage/beginners/my-first-block.md"
+    ]
+  },
+  {
+    "reference": "my-first-block_004.png",
+    "file": "wiki/assets/e97b550fef4f418a5c38.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/my-first-block_004.png",
+    "sha256": "e97b550fef4f418a5c387ceaa760c77eb9dc52b0b81ed87e8137f7d64b19d67c",
+    "bytes": 16608,
+    "used_by": [
+      "plugin-usage/beginners/my-first-block.md"
+    ]
+  },
+  {
+    "reference": "my-first-bow_001.png",
+    "file": "wiki/assets/3e0d3e8088017bb2cb4d.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/my-first-bow_001.png",
+    "sha256": "3e0d3e8088017bb2cb4df88a3f3342459e2ec1aaf676b4a89e7974f811f2064c",
+    "bytes": 1038,
+    "used_by": [
+      "plugin-usage/beginners/my-first-bow.md"
+    ]
+  },
+  {
+    "reference": "my-first-bow_002.webp",
+    "file": "wiki/assets/6cdc950fd9f98a072a0f.webp",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/my-first-bow_002.webp",
+    "sha256": "6cdc950fd9f98a072a0f419e549288ed20770cf529d9e05202a352301bfc4abd",
+    "bytes": 49420,
+    "used_by": [
+      "plugin-usage/beginners/my-first-bow.md"
+    ]
+  },
+  {
+    "reference": "my-first-bow_003.png",
+    "file": "wiki/assets/14b5622704adf34c5119.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/my-first-bow_003.png",
+    "sha256": "14b5622704adf34c511930afff994f800e50a8e253f3b91f16d2452f96826514",
+    "bytes": 1063,
+    "used_by": [
+      "plugin-usage/beginners/my-first-bow.md"
+    ]
+  },
+  {
+    "reference": "my-first-bow_002.png",
+    "file": "wiki/assets/843b429926513033f6d3.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/my-first-bow_002.png",
+    "sha256": "843b429926513033f6d3924c9627a90d96bf6195fb3f8e80c4198367ebec584d",
+    "bytes": 3515,
+    "used_by": [
+      "plugin-usage/beginners/my-first-bow.md"
+    ]
+  },
+  {
+    "reference": "my-first-bow_004.png",
+    "file": "wiki/assets/9b274c34a5a369e73923.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/my-first-bow_004.png",
+    "sha256": "9b274c34a5a369e7392300b0d933e47d6f0ba989254c8773570487f372b650cd",
+    "bytes": 1057,
+    "used_by": [
+      "plugin-usage/beginners/my-first-bow.md"
+    ]
+  },
+  {
+    "reference": "my-first-bow_003.webp",
+    "file": "wiki/assets/bda9be472eaa9a422a0b.webp",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/my-first-bow_003.webp",
+    "sha256": "bda9be472eaa9a422a0b4f06c0f891fbb3f5fe7af05c2baadfc8be8fdcab7a68",
+    "bytes": 51896,
+    "used_by": [
+      "plugin-usage/beginners/my-first-bow.md"
+    ]
+  },
+  {
+    "reference": "sword_002.png",
+    "file": "wiki/assets/3d00d44df164fe05b881.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/sword_002.png",
+    "sha256": "3d00d44df164fe05b881c9718880239a1bdf8cb34786ca8da46c64df38cca74e",
+    "bytes": 884,
+    "used_by": [
+      "plugin-usage/beginners/sword.md"
+    ]
+  },
+  {
+    "reference": "sword_003.png",
+    "file": "wiki/assets/1ab0af5104c4651fe70f.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/sword_003.png",
+    "sha256": "1ab0af5104c4651fe70fd4ba9b8e2d3e1d0b3e75bfb44697329b78868f326f8d",
+    "bytes": 3847,
+    "used_by": [
+      "plugin-usage/beginners/sword.md"
+    ]
+  },
+  {
+    "reference": "sword_004.png",
+    "file": "wiki/assets/497a06a80aa6f00f3466.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/sword_004.png",
+    "sha256": "497a06a80aa6f00f346614320e157e2bc16e23507e5b75dfdf4047ca8d181b74",
+    "bytes": 25454,
+    "used_by": [
+      "plugin-usage/beginners/sword.md"
+    ]
+  },
+  {
+    "reference": "text-formatting_005.png",
+    "file": "wiki/assets/eb6de510aafd835c8564.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/text-formatting_005.png",
+    "sha256": "eb6de510aafd835c8564a07147fac21aa6aa8d29124bc0d56cf8beb9dae1927f",
+    "bytes": 4564,
+    "used_by": [
+      "plugin-usage/beginners/text-formatting.md"
+    ]
+  },
+  {
+    "reference": "text-formatting_007.png",
+    "file": "wiki/assets/2c89a675ddc5887533a7.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/text-formatting_007.png",
+    "sha256": "2c89a675ddc5887533a757494f0c78b321b753703a8d94cf03a0256ed0ed59bf",
+    "bytes": 7004,
+    "used_by": [
+      "plugin-usage/beginners/text-formatting.md"
+    ]
+  },
+  {
+    "reference": "text-formatting_006.png",
+    "file": "wiki/assets/c2a9cc94188e7f8fab01.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/text-formatting_006.png",
+    "sha256": "c2a9cc94188e7f8fab01df0d0bdde9c7cbb69bec21bd8863f49f60c57ef5974e",
+    "bytes": 50005,
+    "used_by": [
+      "plugin-usage/beginners/text-formatting.md"
+    ]
+  },
+  {
+    "reference": "text-formatting_004.png",
+    "file": "wiki/assets/252f8aca563c4dbb219e.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/text-formatting_004.png",
+    "sha256": "252f8aca563c4dbb219ea7df3d7ef7263a535d13879cc5330826f915e8ee3382",
+    "bytes": 846,
+    "used_by": [
+      "plugin-usage/beginners/text-formatting.md"
+    ]
+  },
+  {
+    "reference": "text-formatting_003.png",
+    "file": "wiki/assets/d700e8cb21ce834275f3.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/text-formatting_003.png",
+    "sha256": "d700e8cb21ce834275f32572522e400fcde97875851115414ec2257e888fc665",
+    "bytes": 1677,
+    "used_by": [
+      "plugin-usage/beginners/text-formatting.md"
+    ]
+  },
+  {
+    "reference": "first-install_001.apng",
+    "file": "wiki/assets/87dd4a3314f2ce1f0a51.apng",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/first-install_001.apng",
+    "sha256": "87dd4a3314f2ce1f0a5119522edd89ffbd933832b861b714d0936a162015448c",
+    "bytes": 448344,
+    "used_by": [
+      "plugin-usage/first-install.md"
+    ]
+  },
+  {
+    "reference": "first-install_001.png",
+    "file": "wiki/assets/346d38a85c01061c17e7.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/first-install_001.png",
+    "sha256": "346d38a85c01061c17e77b2732f72ceb568b0fca41fdaee748b96d4ae01578d1",
+    "bytes": 2921,
+    "used_by": [
+      "plugin-usage/first-install.md"
+    ]
+  },
+  {
+    "reference": "first-install_002.png",
+    "file": "wiki/assets/1f25a1d86563bc9a28ef.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/first-install_002.png",
+    "sha256": "1f25a1d86563bc9a28ef52b02cd190c55bcfdd70870c27fc413d8fa7cda570dc",
+    "bytes": 2715,
+    "used_by": [
+      "plugin-usage/first-install.md"
+    ]
+  },
+  {
+    "reference": "iaimage_001.png",
+    "file": "wiki/assets/af69ee6c42541abebb5f.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/iaimage_001.png",
+    "sha256": "af69ee6c42541abebb5f79121104d36376cc07a3aed74436e46103547c3b800d",
+    "bytes": 7902,
+    "used_by": [
+      "plugin-usage/plugin-configuration/commands/iaimage.md"
+    ]
+  },
+  {
+    "reference": "iaimage_002.png",
+    "file": "wiki/assets/f7a17ca5e1284b90c7a4.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/iaimage_002.png",
+    "sha256": "f7a17ca5e1284b90c7a43aaaa8ca545f83aa23574c83053c4b8af72a8d5a2fe3",
+    "bytes": 10807,
+    "used_by": [
+      "plugin-usage/plugin-configuration/commands/iaimage.md"
+    ]
+  },
+  {
+    "reference": "iarename_001.png",
+    "file": "wiki/assets/0d06240e70bf840db0ad.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/iarename_001.png",
+    "sha256": "0d06240e70bf840db0ade3d35f918fc43320a945d0833aa29e90de8b87529305",
+    "bytes": 1018,
+    "used_by": [
+      "plugin-usage/plugin-configuration/commands/iarename.md"
+    ]
+  },
+  {
+    "reference": "dropbox_003.png",
+    "file": "wiki/assets/de10cf195c89ee99493c.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/dropbox_003.png",
+    "sha256": "de10cf195c89ee99493c9b378e074f12430c38f58034fa226ca191bf1b9ef60e",
+    "bytes": 2975,
+    "used_by": [
+      "plugin-usage/plugin-configuration/resourcepack-hosting/dropbox.md"
+    ]
+  },
+  {
+    "reference": "dropbox_002.png",
+    "file": "wiki/assets/3b11b135d423195d5157.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/dropbox_002.png",
+    "sha256": "3b11b135d423195d5157a72c55f2ab1ebee06b4760a877a841c683ea2e661ea6",
+    "bytes": 6318,
+    "used_by": [
+      "plugin-usage/plugin-configuration/resourcepack-hosting/dropbox.md"
+    ]
+  },
+  {
+    "reference": "google-drive_009.png",
+    "file": "wiki/assets/5838cbb8c7382f85ecb9.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/google-drive_009.png",
+    "sha256": "5838cbb8c7382f85ecb95315ea1861195f3921b136ed61ac800567aed70b1f36",
+    "bytes": 7846,
+    "used_by": [
+      "plugin-usage/plugin-configuration/resourcepack-hosting/google-drive.md"
+    ]
+  },
+  {
+    "reference": "google-drive_006.png",
+    "file": "wiki/assets/62d08118d5dea9101431.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/google-drive_006.png",
+    "sha256": "62d08118d5dea91014318ffe4bcd94f64d25c9a0f7e108bf7e0e5d4c48b3d581",
+    "bytes": 23224,
+    "used_by": [
+      "plugin-usage/plugin-configuration/resourcepack-hosting/google-drive.md"
+    ]
+  },
+  {
+    "reference": "google-drive_007.png",
+    "file": "wiki/assets/cd8fa229b0c5966e656c.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/google-drive_007.png",
+    "sha256": "cd8fa229b0c5966e656c33c0b284845b1d66789d0aa8a4ec4bdebd20a9eb8b82",
+    "bytes": 21599,
+    "used_by": [
+      "plugin-usage/plugin-configuration/resourcepack-hosting/google-drive.md"
+    ]
+  },
+  {
+    "reference": "google-drive_010.png",
+    "file": "wiki/assets/eff4cc9224ab19996325.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/google-drive_010.png",
+    "sha256": "eff4cc9224ab199963258c139816ec5d9e6056040004fda07cc1c663e2d12609",
+    "bytes": 5047,
+    "used_by": [
+      "plugin-usage/plugin-configuration/resourcepack-hosting/google-drive.md"
+    ]
+  },
+  {
+    "reference": "google-drive_008.png",
+    "file": "wiki/assets/c7e6522ef2a6b46fe845.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/google-drive_008.png",
+    "sha256": "c7e6522ef2a6b46fe84592e323c0fbcb9acfd518951db6686f6cf434a3592f2a",
+    "bytes": 9838,
+    "used_by": [
+      "plugin-usage/plugin-configuration/resourcepack-hosting/google-drive.md"
+    ]
+  },
+  {
+    "reference": "google-drive_011.png",
+    "file": "wiki/assets/8fade41c8fca2512f272.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/google-drive_011.png",
+    "sha256": "8fade41c8fca2512f27241f1de895cfd7743834046533378f1876fc9fa0f38cd",
+    "bytes": 849,
+    "used_by": [
+      "plugin-usage/plugin-configuration/resourcepack-hosting/google-drive.md"
+    ]
+  },
+  {
+    "reference": "lobfile_003.png",
+    "file": "wiki/assets/64fa88cc500c5614952f.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/lobfile_003.png",
+    "sha256": "64fa88cc500c5614952f7c728821f95394774c53fb9ac6d7e8a3ec2aacf6aabe",
+    "bytes": 5965,
+    "used_by": [
+      "plugin-usage/plugin-configuration/resourcepack-hosting/lobfile.md"
+    ]
+  },
+  {
+    "reference": "lobfile_002.png",
+    "file": "wiki/assets/cb32fc518c70139b7618.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/lobfile_002.png",
+    "sha256": "cb32fc518c70139b76185bc72e666de63e42560dd7830fedb47df4fc0f1e76d8",
+    "bytes": 1335,
+    "used_by": [
+      "plugin-usage/plugin-configuration/resourcepack-hosting/lobfile.md"
+    ]
+  },
+  {
+    "reference": "onedrive_006.png",
+    "file": "wiki/assets/e70605fc8f9cbf467ef0.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/onedrive_006.png",
+    "sha256": "e70605fc8f9cbf467ef0eee3fc241ccb5c63c24bfd2b3deb94188bf69df71a30",
+    "bytes": 34831,
+    "used_by": [
+      "plugin-usage/plugin-configuration/resourcepack-hosting/onedrive.md"
+    ]
+  },
+  {
+    "reference": "onedrive_005.png",
+    "file": "wiki/assets/fd9516e6b5841f29dd33.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/onedrive_005.png",
+    "sha256": "fd9516e6b5841f29dd33ed33c214f105281231adf7183065e9d94e1a19ca908f",
+    "bytes": 41151,
+    "used_by": [
+      "plugin-usage/plugin-configuration/resourcepack-hosting/onedrive.md"
+    ]
+  },
+  {
+    "reference": "onedrive_004.png",
+    "file": "wiki/assets/f9ee03a5786e3e081d13.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/onedrive_004.png",
+    "sha256": "f9ee03a5786e3e081d134a3b750381e869db77f274c8eabebe3300429cf5c78a",
+    "bytes": 101795,
+    "used_by": [
+      "plugin-usage/plugin-configuration/resourcepack-hosting/onedrive.md"
+    ]
+  },
+  {
+    "reference": "self-hosting_015.png",
+    "file": "wiki/assets/0cea2ee43d444864dcf7.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/self-hosting_015.png",
+    "sha256": "0cea2ee43d444864dcf77aac8417673a96dec639ac500e78e31c80ec0c563302",
+    "bytes": 10586,
+    "used_by": [
+      "plugin-usage/plugin-configuration/resourcepack-hosting/self-hosting.md"
+    ]
+  },
+  {
+    "reference": "self-hosting_009.png",
+    "file": "wiki/assets/2ec337235d51a19c16be.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/self-hosting_009.png",
+    "sha256": "2ec337235d51a19c16be9d9ef50f4c63300117bb8273ea7850cdd8242b67908c",
+    "bytes": 3288,
+    "used_by": [
+      "plugin-usage/plugin-configuration/resourcepack-hosting/self-hosting.md"
+    ]
+  },
+  {
+    "reference": "self-hosting_016.png",
+    "file": "wiki/assets/5aaa550009928b0b928f.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/self-hosting_016.png",
+    "sha256": "5aaa550009928b0b928f87f3867314ecde389c92065b12af3e3850c4792bbc10",
+    "bytes": 5045,
+    "used_by": [
+      "plugin-usage/plugin-configuration/resourcepack-hosting/self-hosting.md"
+    ]
+  },
+  {
+    "reference": "self-hosting_013.png",
+    "file": "wiki/assets/595a4e532eac6c914c68.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/self-hosting_013.png",
+    "sha256": "595a4e532eac6c914c6853664174672091f3adc776f01dac2d4eb7080c8b03ab",
+    "bytes": 12392,
+    "used_by": [
+      "plugin-usage/plugin-configuration/resourcepack-hosting/self-hosting.md"
+    ]
+  },
+  {
+    "reference": "self-hosting_010.png",
+    "file": "wiki/assets/ed4093f5ba01b524f2d6.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/self-hosting_010.png",
+    "sha256": "ed4093f5ba01b524f2d688c74f7b3118939f7c41521c3c0e79ab41f5519306dc",
+    "bytes": 29129,
+    "used_by": [
+      "plugin-usage/plugin-configuration/resourcepack-hosting/self-hosting.md"
+    ]
+  },
+  {
+    "reference": "self-hosting_008.png",
+    "file": "wiki/assets/ea3ac16cf61df1896c19.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/self-hosting_008.png",
+    "sha256": "ea3ac16cf61df1896c19e21a6556c8f8f3d74a41bc66cbd3522c416e4e3b7ae3",
+    "bytes": 2800,
+    "used_by": [
+      "plugin-usage/plugin-configuration/resourcepack-hosting/self-hosting.md"
+    ]
+  },
+  {
+    "reference": "self-hosting_014.png",
+    "file": "wiki/assets/7f679ff197573dd56e8d.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/self-hosting_014.png",
+    "sha256": "7f679ff197573dd56e8d88e5402331c820c69c496c7cf9a148d55be4b5ea52a7",
+    "bytes": 11091,
+    "used_by": [
+      "plugin-usage/plugin-configuration/resourcepack-hosting/self-hosting.md"
+    ]
+  },
+  {
+    "reference": "self-hosting_012.png",
+    "file": "wiki/assets/d04c3e7ce9b18d7b544d.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/self-hosting_012.png",
+    "sha256": "d04c3e7ce9b18d7b544d08d146194f54c73131ad00e11ba1e086327103a6b397",
+    "bytes": 15381,
+    "used_by": [
+      "plugin-usage/plugin-configuration/resourcepack-hosting/self-hosting.md"
+    ]
+  },
+  {
+    "reference": "self-hosting_011.png",
+    "file": "wiki/assets/9f52c17993e602ebe3cb.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/self-hosting_011.png",
+    "sha256": "9f52c17993e602ebe3cb2f0e1d7c21bc20ae4f311bd76f731c1ae8408c50b856",
+    "bytes": 22230,
+    "used_by": [
+      "plugin-usage/plugin-configuration/resourcepack-hosting/self-hosting.md"
+    ]
+  },
+  {
+    "reference": "resourcepack-prompt-message-1-17_002.png",
+    "file": "wiki/assets/39be7198a88167ea8741.png",
+    "source_url": "https://raw.githubusercontent.com/LoneDev6/Wiki-ItemsAdder/4c214199685f4380ac0f7be0ab9f77415a033921/.gitbook/assets/resourcepack-prompt-message-1-17_002.png",
+    "sha256": "39be7198a88167ea87417d6d1c5b6e73324e8c8db8a7e4944570ecd704682b4a",
+    "bytes": 18295,
+    "used_by": [
+      "plugin-usage/plugin-configuration/resourcepack-prompt-message-1.17+.md"
+    ]
+  }
+]

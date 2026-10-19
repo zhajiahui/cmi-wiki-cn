@@ -1,0 +1,276 @@
+{
+  "project": "Multiverse-Core",
+  "version": "5.8.1",
+  "snapshot": {
+    "at": "2026-10-19T14:57:54.668677+00:00",
+    "index_url": "https://github.com/Multiverse/multiverse-web/tree/d571cd29a391ce3affe2a21d9f68c4c275a6f33e",
+    "commit": "d571cd29a391ce3affe2a21d9f68c4c275a6f33e",
+    "method": "Official sidebar core.js and mv5.js + complete frozen repository route directory; Core and shared MV5 upgrade/release pages"
+  },
+  "discovered_urls": [
+    "https://mvplugins.org/core/",
+    "https://mvplugins.org/core/fundamentals/basic-usage/",
+    "https://mvplugins.org/core/fundamentals/commands-usage/",
+    "https://mvplugins.org/core/fundamentals/installation/",
+    "https://mvplugins.org/core/fundamentals/permissions-setup/",
+    "https://mvplugins.org/core/fundamentals/world-properties/",
+    "https://mvplugins.org/core/how-to/customise-locales/",
+    "https://mvplugins.org/core/how-to/customise-world-creation/",
+    "https://mvplugins.org/core/how-to/manage-anchors/",
+    "https://mvplugins.org/core/how-to/setup-entry-fee/",
+    "https://mvplugins.org/core/how-to/world-meta/",
+    "https://mvplugins.org/core/reference/configuration-file/",
+    "https://mvplugins.org/core/reference/custom-generator-plugins/",
+    "https://mvplugins.org/core/reference/destinations/",
+    "https://mvplugins.org/core/reference/faq/",
+    "https://mvplugins.org/core/reference/permissions-list/",
+    "https://mvplugins.org/core/reference/placeholders/",
+    "https://mvplugins.org/mv5/",
+    "https://mvplugins.org/mv5/welcome/command-changes/",
+    "https://mvplugins.org/mv5/welcome/incompatible-plugins/",
+    "https://mvplugins.org/mv5/welcome/upgrading/",
+    "https://mvplugins.org/mv5/whats-new/multiverse-core/",
+    "https://mvplugins.org/core/developers/api-usage/",
+    "https://mvplugins.org/core/developers/developer-api-starter/"
+  ],
+  "pages": [
+    {
+      "url": "https://mvplugins.org/core/",
+      "title": "Multiverse-Core",
+      "status": "translated",
+      "file": "wiki/core.md",
+      "source_file": "sources/wiki/original/core.md",
+      "source_sha256": "173c731ed277a270c920017cdc2e589d768229e74a49530401f3f5b24068f1ff",
+      "repository_file": "src/routes/core/+page.md"
+    },
+    {
+      "url": "https://mvplugins.org/core/fundamentals/basic-usage/",
+      "title": "Basics Usage",
+      "status": "translated",
+      "file": "wiki/core-fundamentals-basic-usage.md",
+      "source_file": "sources/wiki/original/core-fundamentals-basic-usage.md",
+      "source_sha256": "cf23fbc63b08e1e9c273d0554ad58b75597976dceea13ee5ca5a4678261b6dab",
+      "repository_file": "src/routes/core/fundamentals/basic-usage/+page.md"
+    },
+    {
+      "url": "https://mvplugins.org/core/fundamentals/commands-usage/",
+      "title": "Commands Usage",
+      "status": "translated",
+      "file": "wiki/core-fundamentals-commands-usage.md",
+      "source_file": "sources/wiki/original/core-fundamentals-commands-usage.md",
+      "source_sha256": "739ea98cd1421d11c41bd42b3028c28ace1d2dff466936bdf88425145d0e1374",
+      "repository_file": "src/routes/core/fundamentals/commands-usage/+page.md"
+    },
+    {
+      "url": "https://mvplugins.org/core/fundamentals/installation/",
+      "title": "Installation",
+      "status": "translated",
+      "file": "wiki/core-fundamentals-installation.md",
+      "source_file": "sources/wiki/original/core-fundamentals-installation.md",
+      "source_sha256": "1d3509848cbd8dd6fe82e3ff9aa39671f46f45124b8bd11efe61b554a8b28c6e",
+      "repository_file": "src/routes/core/fundamentals/installation/+page.md"
+    },
+    {
+      "url": "https://mvplugins.org/core/fundamentals/permissions-setup/",
+      "title": "Permissions Setup",
+      "status": "translated",
+      "file": "wiki/core-fundamentals-permissions-setup.md",
+      "source_file": "sources/wiki/original/core-fundamentals-permissions-setup.md",
+      "source_sha256": "458111553a22d31773dbfdb7c9b24f1ff5f244f423371ba06bccabc845385c38",
+      "repository_file": "src/routes/core/fundamentals/permissions-setup/+page.md"
+    },
+    {
+      "url": "https://mvplugins.org/core/fundamentals/world-properties/",
+      "title": "World Properties",
+      "status": "translated",
+      "file": "wiki/core-fundamentals-world-properties.md",
+      "source_file": "sources/wiki/original/core-fundamentals-world-properties.md",
+      "source_sha256": "e9f234a1ef2ead3bdb4868615384c6ee6d843838194899d126a71b0966a429a0",
+      "repository_file": "src/routes/core/fundamentals/world-properties/+page.md"
+    },
+    {
+      "url": "https://mvplugins.org/core/how-to/customise-locales/",
+      "title": "Customise Locale Messages",
+      "status": "translated",
+      "file": "wiki/core-how-to-customise-locales.md",
+      "source_file": "sources/wiki/original/core-how-to-customise-locales.md",
+      "source_sha256": "f78c96ca65d07571b507de9225f4b7eda13cbcc3e24a5bf818f0ef59c8a6e060",
+      "repository_file": "src/routes/core/how-to/customise-locales/+page.md"
+    },
+    {
+      "url": "https://mvplugins.org/core/how-to/customise-world-creation/",
+      "title": "Customise World Creation",
+      "status": "translated",
+      "file": "wiki/core-how-to-customise-world-creation.md",
+      "source_file": "sources/wiki/original/core-how-to-customise-world-creation.md",
+      "source_sha256": "ef75edd4ffb7ea98de07d1c5dc485ff1fdd7988f3c79c04ffd452070e266bebe",
+      "repository_file": "src/routes/core/how-to/customise-world-creation/+page.md"
+    },
+    {
+      "url": "https://mvplugins.org/core/how-to/manage-anchors/",
+      "title": "Anchors",
+      "status": "translated",
+      "file": "wiki/core-how-to-manage-anchors.md",
+      "source_file": "sources/wiki/original/core-how-to-manage-anchors.md",
+      "source_sha256": "b80d82ce0a6509e4c7c680e3ce9e12fd1345bef3d0a3e8a28680068231d8d58d",
+      "repository_file": "src/routes/core/how-to/manage-anchors/+page.md"
+    },
+    {
+      "url": "https://mvplugins.org/core/how-to/setup-entry-fee/",
+      "title": "Currency",
+      "status": "translated",
+      "file": "wiki/core-how-to-setup-entry-fee.md",
+      "source_file": "sources/wiki/original/core-how-to-setup-entry-fee.md",
+      "source_sha256": "f47b95beef1e34c00df642357343d49b78498cb38d1a07a11da98a1822046c61",
+      "repository_file": "src/routes/core/how-to/setup-entry-fee/+page.md"
+    },
+    {
+      "url": "https://mvplugins.org/core/how-to/world-meta/",
+      "title": "World Meta",
+      "status": "translated",
+      "file": "wiki/core-how-to-world-meta.md",
+      "source_file": "sources/wiki/original/core-how-to-world-meta.md",
+      "source_sha256": "41710d0ff9715c234b365f79628943d83773b05a49b04ebe9700075f5f75be09",
+      "repository_file": "src/routes/core/how-to/world-meta/+page.md"
+    },
+    {
+      "url": "https://mvplugins.org/core/reference/configuration-file/",
+      "title": "Configuration File",
+      "status": "translated",
+      "file": "wiki/core-reference-configuration-file.md",
+      "source_file": "sources/wiki/original/core-reference-configuration-file.md",
+      "source_sha256": "adc5a9772147d06decc92d66ce47314c9824ebf57724ff599a8865614baba871",
+      "repository_file": "src/routes/core/reference/configuration-file/+page.md"
+    },
+    {
+      "url": "https://mvplugins.org/core/reference/custom-generator-plugins/",
+      "title": "Custom Generator Plugins",
+      "status": "translated",
+      "file": "wiki/core-reference-custom-generator-plugins.md",
+      "source_file": "sources/wiki/original/core-reference-custom-generator-plugins.md",
+      "source_sha256": "991cb2f3f248df9a7a88a8f9fea1937f3957aebd40b90b64cce3b6f5d8db5e30",
+      "repository_file": "src/routes/core/reference/custom-generator-plugins/+page.md"
+    },
+    {
+      "url": "https://mvplugins.org/core/reference/destinations/",
+      "title": "Destinations",
+      "status": "translated",
+      "file": "wiki/core-reference-destinations.md",
+      "source_file": "sources/wiki/original/core-reference-destinations.md",
+      "source_sha256": "8e49307e2c95a7c50f01780f3a3837f90b820af929ef2c3acc2b8af83678e5e0",
+      "repository_file": "src/routes/core/reference/destinations/+page.md"
+    },
+    {
+      "url": "https://mvplugins.org/core/reference/faq/",
+      "title": "FAQs",
+      "status": "translated",
+      "file": "wiki/core-reference-faq.md",
+      "source_file": "sources/wiki/original/core-reference-faq.md",
+      "source_sha256": "c483de0ec986d1c6063be9f39fdf0e7bf1e3688783765eb618d5f4af0e614ef0",
+      "repository_file": "src/routes/core/reference/faq/+page.md"
+    },
+    {
+      "url": "https://mvplugins.org/core/reference/permissions-list/",
+      "title": "All Multiverse-Core Permissions",
+      "status": "translated",
+      "file": "wiki/core-reference-permissions-list.md",
+      "source_file": "sources/wiki/original/core-reference-permissions-list.md",
+      "source_sha256": "3bdc7e47299d4c274402ca55e2e47ee7e1ea1b8eb72e31d22897c07461bc5e1f",
+      "repository_file": "src/routes/core/reference/permissions-list/+page.md"
+    },
+    {
+      "url": "https://mvplugins.org/core/reference/placeholders/",
+      "title": "Placeholders",
+      "status": "translated",
+      "file": "wiki/core-reference-placeholders.md",
+      "source_file": "sources/wiki/original/core-reference-placeholders.md",
+      "source_sha256": "74e4150bdfb2ef58116d33ac6a419acf26b7bbbe89a510538bf863eac79b569a",
+      "repository_file": "src/routes/core/reference/placeholders/+page.md"
+    },
+    {
+      "url": "https://mvplugins.org/mv5/",
+      "title": "Say Hi to MV5!",
+      "status": "translated",
+      "file": "wiki/mv5.md",
+      "source_file": "sources/wiki/original/mv5.md",
+      "source_sha256": "1f78d4e456747222cafe0db2454e904571d7c0d8712f6455f6ac7f9e5100f703",
+      "repository_file": "src/routes/mv5/+page.md"
+    },
+    {
+      "url": "https://mvplugins.org/mv5/welcome/command-changes/",
+      "title": "Command Changes",
+      "status": "translated",
+      "file": "wiki/mv5-welcome-command-changes.md",
+      "source_file": "sources/wiki/original/mv5-welcome-command-changes.md",
+      "source_sha256": "b33e7e5248257bc66ea7f90381a4087fdfc0cbe8897475baf7df336242a8a3e2",
+      "repository_file": "src/routes/mv5/welcome/command-changes/+page.md"
+    },
+    {
+      "url": "https://mvplugins.org/mv5/welcome/incompatible-plugins/",
+      "title": "Incompatible Plugins",
+      "status": "translated",
+      "file": "wiki/mv5-welcome-incompatible-plugins.md",
+      "source_file": "sources/wiki/original/mv5-welcome-incompatible-plugins.md",
+      "source_sha256": "fc94233afcfbc10afca1637cd2351e729f5888d518675021e7a6895a735e86af",
+      "repository_file": "src/routes/mv5/welcome/incompatible-plugins/+page.md"
+    },
+    {
+      "url": "https://mvplugins.org/mv5/welcome/upgrading/",
+      "title": "Upgrade Guide",
+      "status": "translated",
+      "file": "wiki/mv5-welcome-upgrading.md",
+      "source_file": "sources/wiki/original/mv5-welcome-upgrading.md",
+      "source_sha256": "17e819b65068d5571844a52a6906f030f290efd8c0d95e099e85d050d67adcd3",
+      "repository_file": "src/routes/mv5/welcome/upgrading/+page.md"
+    },
+    {
+      "url": "https://mvplugins.org/mv5/whats-new/multiverse-core/",
+      "title": "Multiverse Core Changelog",
+      "status": "translated",
+      "file": "wiki/mv5-whats-new-multiverse-core.md",
+      "source_file": "sources/wiki/original/mv5-whats-new-multiverse-core.md",
+      "source_sha256": "70c4dec5fd4be2b1951cdbd6e80b3a79c03b990280f7afe6611d6269353b1ede",
+      "repository_file": "src/routes/mv5/whats-new/multiverse-core/+page.md"
+    },
+    {
+      "url": "https://mvplugins.org/core/developers/api-usage/",
+      "title": "API Usages",
+      "status": "excluded_api",
+      "reason": "Developer API and SDK integration reference"
+    },
+    {
+      "url": "https://mvplugins.org/core/developers/developer-api-starter/",
+      "title": "Developer API Starter",
+      "status": "excluded_api",
+      "reason": "Developer API and SDK integration reference"
+    }
+  ],
+  "excluded_api": [
+    {
+      "url": "https://mvplugins.org/core/developers/api-usage/",
+      "title": "API Usages",
+      "status": "excluded_api",
+      "reason": "Developer API and SDK integration reference"
+    },
+    {
+      "url": "https://mvplugins.org/core/developers/developer-api-starter/",
+      "title": "Developer API Starter",
+      "status": "excluded_api",
+      "reason": "Developer API and SDK integration reference"
+    }
+  ],
+  "unavailable": [],
+  "counts": {
+    "discovered": 24,
+    "directory_pages": 24,
+    "translated": 22,
+    "excluded_api": 2
+  },
+  "assets": {
+    "total": 18,
+    "saved": 18,
+    "unavailable": 0,
+    "manifest": "sources/wiki/assets-manifest.json"
+  },
+  "scope_note": "Core docs plus shared MV5 migration pages; separate Inventories/Portals/NetherPortals/SignPortals manuals remain external"
+}

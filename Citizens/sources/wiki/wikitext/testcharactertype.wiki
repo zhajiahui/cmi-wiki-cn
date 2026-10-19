@@ -1,0 +1,11 @@
+{{ExternalType}} {{CharacterType
+| PICTURE      = Test Character.png
+| NAME         = Test Character
+| AUTHOR       = [[User:AgentKid|AgentKid]]
+| VERSION      = 1.0
+| CITIZENSBUILD  = 2.0
+| DEVSTATUS    = InDev
+| DOWNLOADLINK = http://dev.bukkit.org/server-mods/TestCharacter/1/Character.jar
+| BUKKITDEVLINK  = http://dev.bukkit.org/server-mods/TestCharacter/
+| DESCRIPTION  = AgentKid is amazing.
+}}

@@ -1,0 +1,44 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Changelog",
+    "pageid": 234,
+    "revid": 3039,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><div class=\"mw-heading mw-heading2\"><h2 id=\"2.0.1\">2.0.1</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Changelog&amp;action=edit&amp;section=1\" title=\"Edit section: 2.0.1\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ul><li>Fixed</li></ul>\n<p>Various console errors\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"2.0\">2.0</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Changelog&amp;action=edit&amp;section=2\" title=\"Edit section: 2.0\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ul><li>Added</li>\n<li>Changed</li></ul>\n<p>Rewrote Citizens backend.\nNew API for developers\nMob NPCs\nTrait system - controllable NPCs, etc.\n</p>\n<ul><li>Fixed</li></ul>\n<!-- \nNewPP limit report\nCached time: 20261019145819\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.004 seconds\nReal time usage: 0.005 seconds\nPreprocessor visited node count: 5/1000000\nRevision size: 177/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 8547c5e4-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "2.0.1",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Changelog",
+        "byteoffset": 0,
+        "anchor": "2.0.1",
+        "linkAnchor": "2.0.1"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "2.0",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Changelog",
+        "byteoffset": 44,
+        "anchor": "2.0",
+        "linkAnchor": "2.0"
+      }
+    ]
+  }
+}

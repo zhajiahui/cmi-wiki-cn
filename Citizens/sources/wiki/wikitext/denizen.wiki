@@ -1,0 +1,98 @@
+<div class="infobox" style="width: 295; font-size: 12px; background: #FFFFFF; float: right; border: 1px solid #CCCCCC; margin-left:2.5em; padding: 9px;">
+{{Box|
+BORDER = #ccc|
+BACKGROUND = #aaa|
+WIDTH = 275|
+ALIGN = RIGHT|
+ICON = |
+HEADING = ''' ''' |
+CONTENT = [[image:denizen.png|center]]
+<div class="padded" style="padding: 19px; font-family:camingodos-web; font-size:110%;">
+
+'''Denizen''' is an extension for Citizens that allows scripting of NPCs to handle tasks, quests, player interaction and more! It operates as a full-featured Minecraft server scripting system!
+
+'''Current version:''' 1.x.x Release
+
+'''Original Creator:''' aufdemrand
+
+'''Head of Development:''' mcmonkey
+
+'''Previous developers:''' David Cernat, Jeebiss, Morphan1, Xenmai, Mergu
+
+'''Source:''' [https://github.com/DenizenScript/Denizen-For-Bukkit Github]
+
+'''Spigot Release:''' [https://www.spigotmc.org/resources/denizen.21039/ Spigot]
+
+'''Latest release build:''' [http://ci.citizensnpcs.co/view/All/job/Denizen/ 1.x.x Builds]
+
+'''Latest developmental build:''' [http://ci.citizensnpcs.co/view/All/job/Denizen_Developmental/ 1.x.x Dev Builds]
+
+'''Citizens build:''' [http://ci.citizensnpcs.co/job/Citizens2/ 2.x.x]
+
+'''Support tickets:''' [http://github.com/DenizenScript/Denizen-For-Bukkit/issues/ Tickets on Github]
+
+'''Discord:''' [https://discord.gg/Q6pZGSR Denizen Discord]
+
+'''Thank you:''' A lot of people have stepped forward to help out with Denizen, and that's awesome! Special thanks to everyone who has beta tested, and a huge amount to these people: fullwall, AgentKid, aPunch, Instinx, tenowg, groggluebutt, Wreyth, jrbudda, spidi, ... the list could go on!
+<br>
+}} 
+</div>
+</div>
+
+<div style="padding:10px; font-family:camingodos-web; font-size:110%;">
+[[image:Denizen-Logo-Large.png|center]]
+
+<s>This Wiki should be regarded as a quick reference guide / learning tool for Denizen.</s>
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://one.denizenscript.com/denizen/cmds/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://one.denizenscript.com/denizen/cmds/denizen/vids Tutorial Videos] on youtube or the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+<br><br><br>
+<s><span style="font-family:natalya-alternate-one; font-size:750%; margin-right:-7px; margin-left:-10px;">D</span>enizen is a powerful engine to write your own plugins via scripting. It is also a great way to add complex interactive role-playing NPCs to your server. Denizen NPCs use scripts with steps and events to interact with the player and world. Imagine interactive gate-keepers, magical wizards, experience trainers, bankers, talking townspeople and more! They can be used in thousands of different ways, from tutorials, to questing, to administrating... your imagination is just about the limit! Denizen uses its own YAML-based scripting language which is designed to be easily read and edited by hand.
+
+
+
+===Table of Contents===
+
+# [[Denizen/Introduction|Introduction]]
+# [[Denizen/Types of Scripts|Types of Scripts]]
+# [[Denizen/Triggers|NPC Interact Script Triggers]]
+# [[Denizen/Commands|Commands]]
+# [[Denizen/Replaceable Tags|Replaceable Tags]]
+# [[Denizen/Additional_Traits|Additional Traits]]
+# [[Denizen/Script_Samples|Script Samples]]
+# [[Denizen/Other|Other Pages]]
+
+
+
+<div style="padding:10px; font-family:camingodos-web; font-size:110%;">
+
+===How it works=== 
+Denizen is an extension of Citizens2 that adds an incredible amount of interactivity and automation to NPCs and Players with some of these major features:
+
+* '''The Script Engine''' carries out and sends all the commands to be executed in an orderly and predictable fashion; this is the backbone of Denizen. There's not much to see on the outside, this is the interworkings of Denizen, but rest assured that this is high performance machine behind the scenes!
+* '''Assignment and Interact Scripts''' are the meat of Denizen, allowing Players and NPCs to interact with each other and the world. These are highly customizable with 20+ requirement types, 90+ script commands, and thousands of different ways to use them together. This with the Denizen Script Engine also allows commands to help control the rest of Denizen with script flow commands and such.
+* '''Task Scripts''' are simple scripts that can be carried out in a variety of different ways. These can be used along side any other script types, but perhaps the most powerful way to use them is by allowing your plugin to utilize them, if you're a developer, or using other plugins that harness the ability to run a Denizen Task Script as well.
+* '''World Scripts''' are scripts that call Denizen commands when random things happen throughout the world - anything, even down to a player mining a block, and a separate script for them picking up the item it dropped! With the power of world scripts, a skilled user could make entire server plugins using nothing but Denizen scripts!
+* '''Listeners''' are currently in an 'experimental phase', but are already allowing control over minecraft and bukkit events like nothing other. This already allows scripts to keep track of and assign 'quest-like' objectives, such as a 'kill quest', if you're familiar with the C1 Quester. But whereas many quest plugins are limited to this feature alone, Denizen, of course, allows you to use this in addition and along side the rest of the plugin, making room for extremely dynamic and intricate 'quest scripts'.
+* '''Flag System''' is the key to Denizen being dynamic. An intricate, yet easy to learn 'Flag/Variable' system has been implemented into Denizen to help keep track of events, items, numbers, players, and more. The new Flag System is still getting more powerful each and every day... it's the key to a spectacular script is sure to have a flag or two.
+* '''Extensible Commands/Requirements/Activities and more''' make it easy to add-on to Denizen with very little Java knowledge. This also makes it extremely easy to let users utilize your plugin with script commands. Denizen also has API Events to use.
+* '''Denizen Debugger''' is an extremely friendly and informative way to test out scripts and interactions. Commands, events, and interactions are all logged in an easy to read format to show the exact progression of a script and its surroundings. No more guessing! Less headaches!
+* '''A note on YML''' Most of the time when a server owner uses YML, they edit an existing configuration. In Denizen, it is required to frequently *add* additional content. Be careful of your spacing, and never use tabs. You can use ChatBots in [https://discord.gg/Q6pZGSR our Discord group] to check your YML files or you can use [http://yaml-online-parser.appspot.com/ this online YAML parser.] (The ChatBots do much more, as well! Just go into [https://discord.gg/Q6pZGSR our Discord group] and type '''!help''')
+* '''An additional note on YAML''' Denizen no longer users pure YAML, but rather its own custom parsing code. The YAML parsers available are not perfect, only the ChatBot on IRC, mentioned above, currently has a '''!dScript''' checker.
+
+
+
+Seem overwhelming? Stop! Start small! Denizen is easy, Denizen is simple. But. Denizen is hard, Denizen is complex. Simply put: Denizen is what you make it! Our advice? Start small, and build upon what you have. Read the wiki articles, watch the youtube videos, test our your scripts, and test out some of the sample scripts! Before you know it, you'll be a Denizen poweruser, drunken with power, just like us!</s>
+</div>
+
+(Legacy 0.7 wiki found [http://wiki.citizensnpcs.co/Denizen/0.7 here])
+
+[[Category:Denizen]]

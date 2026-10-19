@@ -1,0 +1,234 @@
+[
+  {
+    "file": "wiki/Commands-and-Permissions.md",
+    "title": "命令与权限",
+    "source_url": "https://github.com/Shampaggon/CrackShot/wiki/Commands-and-Permissions",
+    "source_file": "sources/wiki/original/Commands-and-Permissions.md",
+    "source_sha256": "7c4115970ba695237537bca6d43f0fe02648eba252860435d51b6bf03171dffb",
+    "translation_review": "reviewed",
+    "translated_display_blocks": [
+      {
+        "index": 1,
+        "source_sha256": "e2157160b3ab685c7f2f98353d95e35557bd1d83647e1c48be57ef6e04c04e94",
+        "translation_sha256": "1a03cf28294c6658b8eaae78bfe9b5080ea0b077d1e23926febe609ba7fe54dd",
+        "reason": "命令与说明对照列表：只译命令后的说明，命令和参数保留。",
+        "protected_tokens": [
+          "/shot",
+          "/shot config reload",
+          "/shot get <weapon> <amount>",
+          "/shot give <user> <weapon> <amount>",
+          "/shot list <page>",
+          "/shot list all",
+          "/shot reload",
+          "<amount>",
+          "<page>",
+          "<user>",
+          "<weapon>"
+        ]
+      },
+      {
+        "index": 2,
+        "source_sha256": "1170672859d184cdab0f0c0b4ec3a63c005bdb6e6b955588856dab09627315c9",
+        "translation_sha256": "bb8c2c4cc439379d962d644dcada6b6e6311239b60db557b2d0187b3e97b69d0",
+        "reason": "权限与说明对照列表：只译权限后的说明，节点保留。",
+        "protected_tokens": [
+          "<weapon>",
+          "crackshot.buy.<weapon>",
+          "crackshot.buy.all",
+          "crackshot.bypass.<weapon>",
+          "crackshot.bypass.all",
+          "crackshot.craft.<weapon>",
+          "crackshot.craft.all",
+          "crackshot.get.<weapon>",
+          "crackshot.get.all",
+          "crackshot.give.<weapon>",
+          "crackshot.give.all",
+          "crackshot.list",
+          "crackshot.reloadplugin",
+          "crackshot.shops.<weapon>",
+          "crackshot.shops.all",
+          "crackshot.use.<weapon>",
+          "crackshot.use.all"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "wiki/Default-Weapons.md",
+    "title": "默认武器",
+    "source_url": "https://github.com/Shampaggon/CrackShot/wiki/Default-Weapons",
+    "source_file": "sources/wiki/original/Default-Weapons.md",
+    "source_sha256": "7d0590c6549c2e3d7f2de88f69c6b0d4942482e7e0c9e56e7d2964f8827cd41f",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/Frequently-Asked-Questions.md",
+    "title": "常见问题",
+    "source_url": "https://github.com/Shampaggon/CrackShot/wiki/Frequently-Asked-Questions",
+    "source_file": "sources/wiki/original/Frequently-Asked-Questions.md",
+    "source_sha256": "7d373aaff1379219a2ec0d701bef3d4c6b706342f07c1c05de0f0f6fbc9d897c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/Home.md",
+    "title": "CrackShot Wiki 首页",
+    "source_url": "https://github.com/Shampaggon/CrackShot/wiki/Home",
+    "source_file": "sources/wiki/original/Home.md",
+    "source_sha256": "9b812773879f8ef45ca4bd8472058f0429d8f999e2883d7b6fab1b6f53ee3e55",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/Installation.md",
+    "title": "安装",
+    "source_url": "https://github.com/Shampaggon/CrackShot/wiki/Installation",
+    "source_file": "sources/wiki/original/Installation.md",
+    "source_sha256": "2577841bf58cc579a97ee4ae0eb6f0908c9f1458e114420a73548d938f9d2f97",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/List-of-Accepted-Mobs.md",
+    "title": "可用生物类型",
+    "source_url": "https://github.com/Shampaggon/CrackShot/wiki/List-of-Accepted-Mobs",
+    "source_file": "sources/wiki/original/List-of-Accepted-Mobs.md",
+    "source_sha256": "ff0f47d5809b064d706ad3f14b2e3b3c9734f45d82c6401aaf45b37708761b7a",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/List-of-Accepted-Sounds.md",
+    "title": "可用声音",
+    "source_url": "https://github.com/Shampaggon/CrackShot/wiki/List-of-Accepted-Sounds",
+    "source_file": "sources/wiki/original/List-of-Accepted-Sounds.md",
+    "source_sha256": "39c3be5f64e54846900dec02e12b350479583cfc73614f5c7575d1178dd97842",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/List-of-Modules.md",
+    "title": "完整模块列表",
+    "source_url": "https://github.com/Shampaggon/CrackShot/wiki/List-of-Modules",
+    "source_file": "sources/wiki/original/List-of-Modules.md",
+    "source_sha256": "099650f203bc2f56f3e53dc337d352626d3e4e00a568bb93cf7e87d7febdb033",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/The-Complete-Guide-to-CrackShot.md",
+    "title": "CrackShot 完整指南",
+    "source_url": "https://github.com/Shampaggon/CrackShot/wiki/The-Complete-Guide-to-CrackShot",
+    "source_file": "sources/wiki/original/The-Complete-Guide-to-CrackShot.md",
+    "source_sha256": "0c73c5dd49de6913edf4b0566734440be5138deb77abe570984bb448f3146057",
+    "translation_review": "reviewed",
+    "translated_display_blocks": [
+      {
+        "index": 0,
+        "source_sha256": "df8bacae2b36f39e7ab049a7b3513601191aca86610d2291015a513d1e05ced4",
+        "translation_sha256": "02e994296d20f4231da9c9548f2655cacb1565f0ed02352506d014db443e8377",
+        "reason": "占位符与说明对照列表：只译解释文字，占位符保留。",
+        "protected_tokens": [
+          "<damage>",
+          "<flight>",
+          "<shooter>",
+          "<victim>"
+        ]
+      },
+      {
+        "index": 1,
+        "source_sha256": "b9cc7a780e2d462da96b96af75b11f381d4cf188af88c2fe39551dd0bc578fe6",
+        "translation_sha256": "677b10826ed921a4a835df0eac549c7a1d5be137ca213c843251928ed46a7f8b",
+        "reason": "颜色与格式代码对照列表：只译颜色及格式名称，代码保留。",
+        "protected_tokens": [
+          "&0",
+          "&1",
+          "&2",
+          "&3",
+          "&4",
+          "&5",
+          "&6",
+          "&7",
+          "&8",
+          "&9",
+          "&a",
+          "&b",
+          "&c",
+          "&d",
+          "&e",
+          "&f",
+          "&k",
+          "&l",
+          "&m",
+          "&n",
+          "&o",
+          "&r"
+        ]
+      },
+      {
+        "index": 5,
+        "source_sha256": "1b4cd79556be016027cc86c4d2c749060b7152a0776bfc5c4a8028e6883b9869",
+        "translation_sha256": "4545c54eb7ead4c2eb32be15880fa5c6ace4606099fa3adc6e52b81b85356c38",
+        "reason": "枚举列表只译首行标题，全部附魔标识保留。",
+        "protected_tokens": [
+          "ARROW_DAMAGE",
+          "ARROW_FIRE",
+          "ARROW_INFINITE",
+          "ARROW_KNOCKBACK",
+          "DAMAGE_ALL",
+          "DAMAGE_ARTHROPODS",
+          "DAMAGE_UNDEAD",
+          "DIG_SPEED",
+          "DURABILITY",
+          "FIRE_ASPECT",
+          "KNOCKBACK",
+          "LOOT_BONUS_BLOCKS",
+          "LOOT_BONUS_MOBS",
+          "OXYGEN",
+          "PROTECTION_ENVIRONMENTAL",
+          "PROTECTION_EXPLOSIONS",
+          "PROTECTION_FALL",
+          "PROTECTION_FIRE",
+          "PROTECTION_PROJECTILE",
+          "SILK_TOUCH",
+          "THORNS",
+          "WATER_WORKER"
+        ]
+      },
+      {
+        "index": 9,
+        "source_sha256": "f5ff3548219434f6c8b4c87736e3bd5744cc82fb704516cc8808dc1a21699921",
+        "translation_sha256": "d52d3e9b69d263a228b65387ea4ab6fb1b2b1ce05a94e55d5dd1986b7442cb0b",
+        "reason": "射速数据表只译列名，全部数值保留。",
+        "protected_tokens": [
+          "1",
+          "10",
+          "1020",
+          "1080",
+          "11",
+          "1140",
+          "12",
+          "1200",
+          "13",
+          "14",
+          "15",
+          "16",
+          "2",
+          "3",
+          "300",
+          "360",
+          "4",
+          "420",
+          "480",
+          "5",
+          "540",
+          "6",
+          "600",
+          "660",
+          "7",
+          "720",
+          "780",
+          "8",
+          "840",
+          "9",
+          "900",
+          "960"
+        ]
+      }
+    ]
+  }
+]

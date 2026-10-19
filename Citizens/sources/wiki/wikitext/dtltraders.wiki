@@ -1,0 +1,124 @@
+<div class="infobox" style="width: 295; font-size: 12px; background: #FFFFFF; float: right; border: 1px solid #CCC; margin-left:2.5em; padding: 9px;">
+{{Box|
+BORDER = #CCC|
+BACKGROUND = #80aaff|
+WIDTH = 275|
+ALIGN = RIGHT|
+ICON = [[File:dtlTraders.png|450px]] |
+HEADING = ''' <span style="font-size:150%; line-height: 1.31em;"><font color="#80aaff"><center>dtlTraders</center></font></span> ''' |
+CONTENT = 
+<div class="padded" style="padding: 19px; font-family:camingodos-web, Helvetica; font-size:110%;">
+
+''' dtlTraders ''' was created to easily setup admin shops for your server.
+Make and manage your shops with a GUI. Seriously, no hassle with configs and commands ;)
+
+''' Original license: ''' MIT License
+
+''' Version: ''' 3.0.8
+
+''' Author: ''' Dandielo
+
+''' Status: ''' Abandoned.
+
+''' Source: ''' Original source code can be found on [https://github.com/Dandielo/dtlTraders GitHub]
+
+</div>
+}} 
+</div>
+
+
+== About ==
+
+<span style="font-size:200%; line-height: 1.31em;"><font color="red"><center>This page is outdated, an external author maintains a fork on [https://www.spigotmc.org/resources/dtltraders.35890/ Spigot], they provide support on [https://discord.gg/fyabsMF Discord]</center></font></span>
+
+'''dtlTraders''' was a trait for Citizens2 allowing to use NPCs as merchants. 
+
+Creating a basic trader and managing his stock is really easy, you need to know only one simple command (/trait trader) and all other things are achieved by using the provided '''GUI'''. 
+
+However you are not forced to use the trader interface if you don't want to, this plugin comes along with a bunch of commands, and a templating feature called '''patterns''', this allows you to create, change, extend, merge shops in any way you want! 
+You can also manage items and prices in shops using permissions, allowing you to change the shop content depending when a player has the required permission!
+
+Also if you want you can translate each end-user part of the plugin into your language, as a result, this plugin also comes along with ready and built in translations into some languages. 
+
+== Features ==
+
+All working features, you can use with version '''3.0.8'''
+
+* '''Selling''' items to players
+* '''Buying''' items from players
+* Easy adding, editing and removing items from a trader stock
+* Easy price setting mechanism
+* Allowing to open and set a '''sub-inventory''' with more specific amount choices for items
+* Prices set can apply to a unit or to the whole stack
+* Prices are calculated always for each added amount ''(in the sub-inventory)'' automatically and on the fly
+* Supporting '''ALL custom items''' the bukkit API provides!
+* Supporting '''4 attribute modifiers''' described [http://minecraft.gamepedia.com/Attribute here]!
+* A lot of '''settings''', you can change to fit your needs
+* A '''advanced translation system''' allowing almost everything to translate! 
+* Patterns allowing to '''setup traders even faster and permissions specific'''!
+* Pattern system along with the '''default-pattern''' allows to create shops using '''just one command'''!!!
+* The plugin has it's own API allowing to create custom Trader types and item attributes!
+* Much more incoming!
+
+
+== Getting started ==
+
+To get this plugin working you will need to get the following plugins:
+* '''Citizens2''' 
+* '''Vault'''
+* Vault supported economy plugin, like '''''BOSEconomy, Fe'''''
+* Vault supported permission plugin, like '''''PermissionEx, Groupmanager'''''
+
+After you got all of them you can just simply put the '''dtlTradersx.x.x.jar''' into the plugin directory and start using this plugin.
+
+For the most basic setup you need only to know one command, '''/trader create <name>''' that creates a trader or simply create an NPC and add the '''/trait trader''' to it.
+
+
+== How to: ==
+
+Here are a bunch of helpful tutorials and links that can you help setting up a trader. You can also find here information about the advanced setup of this plugin. 
+
+If you lack some information you can always send US a mail to support@4Creation.pro
+
+=== Basic setup ===
+
+This [http://wiki.citizensnpcs.co/DtlTraders/basics tutorial] shows how to create a trader from scratch, how to add, edit and remove items. 
+It shows you how to set prices, manage stock item flags and how to use the '''multiple amounts''' feature. 
+
+I will also describe some config values, how they affect the game and '''in-game management''' of a trader and also which of them are trader specific.
+
+=== Configuration ===
+
+http://wiki.citizensnpcs.co/DtlTraders/config
+
+=== Commands and Permissions ===
+
+http://wiki.citizensnpcs.co/DtlTraders/Commands
+
+http://wiki.citizensnpcs.co/DtlTraders/permissions
+
+=== Language and translations ===
+
+=== Advanced setup ===
+
+=== Patterns ===
+
+=== Extending === 
+
+== Credits and thanks ==
+
+<!--
+
+{| class="wikitable" style="text-align: center; width: 500px"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="2" | '''DtlTraders'''
+|-
+| Configuration || | [http://wiki.citizensnpcs.co/DtlTraders/config Configuration] | [http://wiki.citizensnpcs.co/DtlTraders/Commands Commands] | [http://wiki.citizensnpcs.co/DtlTraders/permissions Permissions] | [http://wiki.citizensnpcs.co/DtlTraders/locale Locale] 
+|-
+| Usage ||| [http://wiki.citizensnpcs.co/DtlTraders/managing Managing] | [http://wiki.citizensnpcs.co/DtlTraders/trading Trading] | [http://wiki.citizensnpcs.co/DtlTraders/banking Banking] |[http://wiki.citizensnpcs.co/DtlTraders/patterns Patterns]
+|-
+| Types || | [http://wiki.citizensnpcs.co/DtlTraders/traders Traders] | [http://wiki.citizensnpcs.co/DtlTraders/bankers Bankers] <!--| [http://wiki.citizensnpcs.co/DtlTraders/auctionhouse Auction House] | [http://wiki.citizensnpcs.co/DtlTraders/wallets Wallets]
+|-
+| Denizen Support || | [http://wiki.citizensnpcs.co/DtlTraders/denizen/commands Commands] <!--| [http://wiki.citizensnpcs.co/DtlTraders/denizen/triggers Triggers] 
+|}
+-->

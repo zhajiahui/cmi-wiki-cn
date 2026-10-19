@@ -1,0 +1,5 @@
+Quester from Citizens1 has been discontinued. There are a few great options that will do everything Quester did and more:
+*[[Denizen]] can be used for scripting interactions and events, giving a high level of control over player 'questing', among many other interesting things.
+*[http://www.theminequest.com/ MineQuest] is an external plugin that can be used with Citizens 2 NPCs. See [http://www.theminequest.com/threads/rpg-minequest-citizens-2-0-0-cb-1-2-5-r5-1.72/ here]
+*[http://dev.bukkit.org/server-mods/quests/ Quests] By Blackvein is an external plugin that can be used with Citizens 2 NPCs, this offers similar functionality to Citizens1 Quester.
+*[http://dev.bukkit.org/server-mods/quester/ Quester] An external plugin that can be used with Citizens 2 NPCs.

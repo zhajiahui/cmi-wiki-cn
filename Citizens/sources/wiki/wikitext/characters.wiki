@@ -1,0 +1,31 @@
+Characters are addons that use the [[API|Citizens API]] to add functionality to existing NPCs. Download and install their plugin JAR into the ''/plugins'' directory.
+
+Citizens NPCs can contain multiple traits at the same time. See [[Multiple Traits]]
+
+==Suggested Addons==
+
+There is no guarantee of any of these still being available/updated. If you would like to be added to the list please message the team on Discord.
+
+There are also many addons available outside of the wiki.
+
+{| class="wikitable" style="width: 80%"
+! colspan=4 | Characters
+|-
+! style="width: 15%" | Name
+! style="width: 15%" | Developer 
+! style="width: 55%" | Description
+|-
+| [[Builder]] || jrbudda/mcmonkey || Build schematics, block by block.
+|-
+| [[Denizen]] ||  [[User:mcmonkey|mcmonkey]]  || Scripting engine that supports advanced and easy control of NPCs.
+|-
+| [[DtlTraders|DtlTraders]] || dandielo || Another trader character.
+|-
+| [[Quests]] || Various || Links to Quest options for Citizens 2.
+|-
+| [[Sentinel]] || [[User:mcmonkey|mcmonkey]]  || Sentinel combat NPCs.
+|-
+|}
+
+{{NavBox}}
+[[Category:Usage]]

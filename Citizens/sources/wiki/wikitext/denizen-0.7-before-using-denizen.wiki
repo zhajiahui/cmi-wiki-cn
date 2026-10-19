@@ -1,0 +1,110 @@
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://one.denizenscript.com/denizen/cmds/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://one.denizenscript.com/denizen/cmds/denizen/vids Tutorial Videos] on youtube or the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+
+<s>
+
+<div style="font-family:camingodos-web;">
+<div style="float:right;margin-left:2.0em; padding:10px; font-family:camingodos-web; font-size:110%; ">__TOC__</div>
+
+<div style="margin-right:2.0em; margin-top:35px; padding:10px; font-family:camingodos-web; font-size:110%;">
+<span style="font-family:natalya-alternate-one; font-size:650%; margin-right:-7px; margin-left:-10px;">W</span>elcome to Denizen! Grand adventure awaits, but let's get the basics out of the way first. On this page you will find instructions for installing Denizen, description of what the various files are used for, and a brief overview of what this is all about.
+</div>
+
+===Getting Started===
+<div style="margin-right:2.0em; padding:10px; font-family:camingodos-web; font-size:110%;">Denizen is in BETA! Expect a few bugs here and there! If you are having problems, [[Denizen/0.7/In_Game_Commands#Debug_Mode|<code>/denizen debug</code>]] is your friend! We're always willing to help out in [irc://irc.esper.net #denizen-dev on EsperNET] as well. If you do come across any errors beyond bad command syntax, please  report them to the [http://www.github.com/aufdemrand/Denizen/issues Github Issues page for Denizens].
+
+Denizen is not a drag-and-go type of plugin. In fact, Denizen won't do anything unless you assign and define scripts to NPCs. It's highly customizable. With the new [http://scripts.citizensnpcs.com|Script Repository] in development, we hope there will be a wide array of par-baked scripts that you can easily download and customize to your server, but perhaps the most exciting part of Denizen is the ability to write your own scripts. In order to write awesome scripts, you will probably need to read the entirety of this wiki page and think outside the box! Someone is always around IRC to help out and provide suggestions, but please don't ask about the basics unless you have consulted here first.
+
+Some Denizen commands and requirements '''REQUIRE''' you to have other plugins, such as [http://dev.bukkit.org/server-mods/vault/ Vault], installed with a compatible Permissions System and and Economy System. If the commands deals with money or permissions, chances are you will need Vault in order to utilize it. We're also getting ready to release command/requirement packs for Heroes and mcMMO, so stay tuned!
+
+The easiest way to use Denizen for the first time is to download the [[Denizen/0.7/Start-up kit|Start-up Kit]]. This includes the default config file, sample scripts, and sample assignments to get you started. It is still recommended that you read as much of the wiki as you can take in to properly utilize Denizen's power and flexibility.
+</div>
+
+
+=== Down and dirty ===
+<div style="margin-right:2.0em; padding:10px; font-family:camingodos-web; font-size:110%;">
+By now, you probably just want to see how to add custom content, right? Here's a quick, down-and-dirty walk-through to get your first custom NPC up and going. First you should have the [[Denizen/0.7/Start-up kit|Start-up Kit]], or at least an existing assignments.yml and script.yml. These are the files that you will be adding to in this walkthrough. Remember: The files should be placed in your server folder so that it resembles the format mentioned in [[#File Structure|File Structure]]. Once everything is in place, start up your server.
+
+
+'''1:''' Make a NPC by using C2 commands to create a new NPC, and assign a trait. We will use Notch in this example. See also: [[Commands|/NPC Commands]]. 
+<pre>/npc create Notch --trait denizen</pre>
+Note: You could alternatively use <tt>/trait denizen</tt> if working with an existing NPC.
+
+
+'''2:''' Create a script for Notch. See also: [[Denizen/0.7/Writing_Scripts|Writing Denizen Scripts]]. <br>
+Create a new file in <tt>plugins/Denizen/scripts/</tt> named <tt>Notch Cookies.yml</tt>. Next, copy the contents of the small script below. This script gives a small random greeting to Notch with an 'easter egg' surprise if you know the secret word.
+
+<pre>
+'Notch Greeting':
+  Type: Interact
+  Requirements:
+    Mode: None
+  Steps:
+    1:
+      Click Trigger:
+        Script:
+        - RANDOM 3
+        - CHAT 'I Like Cookies!'
+        - CHAT 'MMmm.. cookies are my favorite!'
+        - CHAT 'Cocoa and Wheat make me freak!'
+      Chat Trigger:
+        1:
+          Trigger: 'I love /cookie/s!'
+          Script: 
+          - CHAT 'Me too!'
+          - EMOTE 'gives <PLAYER> some cookies.'
+          - GIVE COOKIE QTY:6
+          - ZAP 2
+    2:
+      Click Trigger:
+        Script:
+        - CHAT 'How were the cookies?'
+</pre>
+
+
+'''3:''' Assign notch some scripts. See also: [[Denizen/0.7/Assigning_Scripts|Assigning Denizen Scripts]]. <br>
+Open your assignments.yml. If none exists, create it in your <tt>/plugins/Denizen</tt> folder. Insert the following into your YML file. If <tt>Denizens:</tt> is not at the top of this document, create it.
+
+<pre>
+Denizens:
+  # ...
+    # ...
+  Notch:
+    Interact Scripts:
+    - 10 Notch Greeting
+    Texts:
+      No Click Trigger: Stop poking me!
+      Denizen Unavailable: Sorry! Busy eating cookies!
+      No Chat Trigger: I only understand cookies.
+</pre>
+
+This text gives Notch some simple messages for specified circumstances. It also assigns the Notch Cookies script that we just wrote in the section above.
+
+
+'''4:''' Reload Denizen. See also: [[Denizen/0.7/In_Game_Commands#Denizen_Reload|Denizen Reload]]. <br>
+This will ensure that the information has taken. First, in the console or your minecraft client, type <tt>/denizen reload</tt>. This will reload assignments.yml, config.yml, saves.yml, re-concantenate scripts, and perform some cleaning up of objects and such. This is a good time to check the console for any errors. If found, head on over to [[Denizen/0.7/Troubleshooting|Troubleshooting]].
+
+
+'''5:''' Check Denizen NPC status. See also: [[Denizen/0.7/In_Game_Commands#Info-Click|Info-Click]]. <br>
+Info-Click your Denizen NPC by crouching and right-clicking it. This will output a couple of pages of information showing Citizens2 NPC stats, current Interact scripts, Trigger status, Bookmarks, and more. In the case of our example, Notch should have a single entry under Interact Scripts for <tt>Notch Cookies</tt>.
+
+
+'''6:''' Click on Notch! Play out the script. It's that easy! Go up to Notch and chat 'cookie' for the super secret special surprise.
+
+
+''Note:'' This seems like as good of time as any to mention that if any interact script you are using have a 'proximity', 'location', or 'damage trigger', these must be turned on, per NPC. They are off by default as to keep performance as high as possible. See [[Denizen/0.7/In_Game_Commands|In Game Commands]] for more info.
+
+Ready to dive deeper? start with either [[Denizen/0.7/Interact_Scripts]] or [[Denizen/0.7/Activity_Scripts]]
+</div>
+</div>
+
+[[Category:Denizen 0.7]]</s>

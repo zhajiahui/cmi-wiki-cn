@@ -1,6 +1,1001 @@
 site_name: MythicMobs 中文资料
 nav:
 - 插件说明: index.md
+- 插件 Wiki:
+  - 附属插件: wiki/add-ons.md
+  - 过场动画: wiki/cinematics.md
+  - 命令与权限: wiki/commands-and-permissions.md
+  - 兼容插件: wiki/compatible-plugins.md
+  - 配置: wiki/configuration.md
+  - 自定义菜单: wiki/custom-menus.md
+  - 对话框: wiki/dialogs.md
+  - 常见问题: wiki/faq.md
+  - 首页: wiki/home.md
+  - 文档目录: wiki/index.md
+  - Model Engine: wiki/model-engine.md
+  - 内容包: wiki/packs.md
+  - 标记点: wiki/pins.md
+  - 付费版功能: wiki/premium-features.md
+  - 随机生成: wiki/random-spawns.md
+  - 刷怪点: wiki/spawners.md
+  - 属性: wiki/stats.md
+  - 原版生物覆盖: wiki/vanilla-overrides.md
+  - 更新记录:
+    - 2.0.X 更新记录: wiki/changelogs/2.0.x_changelogs.md
+    - 2.1.X 更新记录: wiki/changelogs/2.1.x_changelogs.md
+    - 2.2.X 更新记录: wiki/changelogs/2.2.x_changelogs.md
+    - 2.3.X 更新记录: wiki/changelogs/2.3.x_changelogs.md
+    - 2.4.X 更新记录: wiki/changelogs/2.4.x_changelogs.md
+    - 2.5.X 更新记录: wiki/changelogs/2.5.x_changelogs.md
+    - 4.0.X 更新记录: wiki/changelogs/4.0.x_changelogs.md
+    - 4.1.X 更新记录: wiki/changelogs/4.1.x_changelogs.md
+    - 4.10.X 更新记录: wiki/changelogs/4.10.x_changelogs.md
+    - 4.11.X 更新记录: wiki/changelogs/4.11.x_changelogs.md
+    - 4.12.X 更新记录: wiki/changelogs/4.12.x_changelogs.md
+    - 4.13.X 更新记录: wiki/changelogs/4.13.x_changelogs.md
+    - 4.14.X 更新记录: wiki/changelogs/4.14.x_changelogs.md
+    - 4.2.X 更新记录: wiki/changelogs/4.2.x_changelogs.md
+    - 4.3.X 更新记录: wiki/changelogs/4.3.x_changelogs.md
+    - 4.4.X 更新记录: wiki/changelogs/4.4.x_changelogs.md
+    - 4.5.X 更新记录: wiki/changelogs/4.5.x_changelogs.md
+    - 4.6.X 更新记录: wiki/changelogs/4.6.x_changelogs.md
+    - 4.7.X 更新记录: wiki/changelogs/4.7.x_changelogs.md
+    - 4.8.X 更新记录: wiki/changelogs/4.8.x_changelogs.md
+    - 4.9.X 更新记录: wiki/changelogs/4.9.x_changelogs.md
+    - 5.0.X 更新记录: wiki/changelogs/5.0.x_changelogs.md
+    - 5.1.X 更新记录: wiki/changelogs/5.1.x_changelogs.md
+    - 5.2.X 更新记录: wiki/changelogs/5.2.x_changelogs.md
+    - 5.3.X 更新记录: wiki/changelogs/5.3.x_changelogs.md
+    - 5.4.X 更新记录: wiki/changelogs/5.4.x_changelogs.md
+    - 5.5.X 更新记录: wiki/changelogs/5.5.x_changelogs.md
+    - 5.6.X 更新记录: wiki/changelogs/5.6.x_changelogs.md
+    - 5.7.X 更新记录: wiki/changelogs/5.7.x_changelogs.md
+    - 5.8.X 更新记录: wiki/changelogs/5.8.x_changelogs.md
+    - 5.9.X 更新记录: wiki/changelogs/5.9.x_changelogs.md
+    - 更新记录: wiki/changelogs/changelogs.md
+    - 2.0 之前的更新记录: wiki/changelogs/pre-2.0_changelogs.md
+  - 配置:
+    - 配置: wiki/config.md
+    - 通用配置: wiki/config/config-general.md
+    - 物品配置: wiki/config/config-items.md
+    - 生物配置: wiki/config/config-mobs.md
+    - 技能配置: wiki/config/config-skills.md
+    - 生成配置: wiki/config/config-spawning.md
+  - 掉落物:
+    - 掉落物: wiki/drops/drops.md
+    - 掉落表: wiki/drops/droptables.md
+    - 花式掉落: wiki/drops/fancydrops.md
+    - 掉落类型:
+      - 命令: wiki/drops/droptypes/command.md
+      - 物品变量: wiki/drops/droptypes/itemvariable.md
+      - mcMMO 经验: wiki/drops/droptypes/mcmmoexp.md
+      - 金钱: wiki/drops/droptypes/money.md
+      - Mythic 物品: wiki/drops/droptypes/mythicitem.md
+      - Mythic 生物: wiki/drops/droptypes/mythicmob.md
+      - PhatLoot: wiki/drops/droptypes/phatloot.md
+      - SkillAPI 经验: wiki/drops/droptypes/skillapiexp.md
+      - 原版战利品表: wiki/drops/droptypes/vanillaloottable.md
+  - 枚举参考:
+    - 形状: wiki/enum/shape.md
+  - 示例:
+    - 常用示例: wiki/examples/common-examples.md
+    - 消耗品技能: wiki/examples/consumable-skills.md
+    - 伤害法术: wiki/examples/damagespells.md
+    - 食物: wiki/examples/foods.md
+    - 生物示例: wiki/examples/mob-examples.md
+    - 药水: wiki/examples/potions.md
+  - 使用指南:
+    - 使用指南: wiki/guides.md
+    - （补充）文本编辑器: wiki/guides/-extra--text-editors.md
+    - （补充）Wiki 阅读提示: wiki/guides/-extra--wiki-tips.md
+    - （步骤 1）理解各个术语: wiki/guides/-step-1--understanding-the-different-terms.md
+    - （步骤 2）文件与目录: wiki/guides/-step-2--files-and-directories.md
+    - （步骤 3）创建第一个生物: wiki/guides/-step-3--creating-your-first-mob.md
+    - （步骤 4）基础命令: wiki/guides/-step-4--essential-commands.md
+    - （步骤 5）补充说明: wiki/guides/-step-5--extra-notes.md
+    - 取消事件: wiki/guides/cancelling-events.md
+    - 生命值显示: wiki/guides/health-displays.md
+    - 限制使用次数的技能: wiki/guides/limited-use-skills.md
+    - 制作 NPC: wiki/guides/making-an-npc.md
+    - 生成消息: wiki/guides/spawn-message.md
+    - 配置第一个随机生成: wiki/guides/your-first-random-spawn.md
+  - 物品:
+    - 物品属性: wiki/items/attributes.md
+    - 旗帜图案层: wiki/items/banner-layers.md
+    - 附魔: wiki/items/enchantments.md
+    - 烟花: wiki/items/firework.md
+    - 物品匹配器: wiki/items/item-matcher.md
+    - 物品: wiki/items/items.md
+    - 物品选项: wiki/items/options.md
+    - 药水: wiki/items/potions.md
+  - 生物:
+    - Boss 血条: wiki/mobs/bossbar.md
+    - 自定义 AI: wiki/mobs/custom-ai.md
+    - 伤害修正: wiki/mobs/damagemodifiers.md
+    - 伪装: wiki/mobs/disguises.md
+    - 显示选项: wiki/mobs/displayoptions.md
+    - 装备: wiki/mobs/equipment.md
+    - 阵营: wiki/mobs/factions.md
+    - 免疫表: wiki/mobs/immunitytables.md
+    - 击杀消息: wiki/mobs/killmessages.md
+    - 等级: wiki/mobs/levels.md
+    - 假人选项: wiki/mobs/mannequinoptions.md
+    - 生物选项: wiki/mobs/options.md
+    - 强度: wiki/mobs/power.md
+    - 模板: wiki/mobs/templates.md
+    - 仇恨表: wiki/mobs/threattables.md
+    - 生物类型: wiki/mobs/types.md
+    - AI:
+      - AI 行为:
+        - Arrowattack: wiki/mobs/ai/goals/arrowattack.md
+        - Arrow Attack Conditional: wiki/mobs/ai/goals/arrowattackconditional.md
+        - Bowattack: wiki/mobs/ai/goals/bowattack.md
+        - Bow Attack Conditional: wiki/mobs/ai/goals/bowattackconditional.md
+        - Break Door: wiki/mobs/ai/goals/breakdoor.md
+        - Breed: wiki/mobs/ai/goals/breed.md
+        - Creeper Swell: wiki/mobs/ai/goals/creeperswell.md
+        - Crossbowattack: wiki/mobs/ai/goals/crossbowattack.md
+        - Crossbow Attack Conditional: wiki/mobs/ai/goals/crossbowattackconditional.md
+        - Do Nothing: wiki/mobs/ai/goals/donothing.md
+        - Eat Grass: wiki/mobs/ai/goals/eatgrass.md
+        - Fleeconditional: wiki/mobs/ai/goals/fleeconditional.md
+        - Fleefaction: wiki/mobs/ai/goals/fleefaction.md
+        - Fleegolems: wiki/mobs/ai/goals/fleegolems.md
+        - Fleeplayers: wiki/mobs/ai/goals/fleeplayers.md
+        - Fleesun: wiki/mobs/ai/goals/fleesun.md
+        - Fleevillagers: wiki/mobs/ai/goals/fleevillagers.md
+        - Fleewolf: wiki/mobs/ai/goals/fleewolf.md
+        - Float: wiki/mobs/ai/goals/float.md
+        - Follow Route: wiki/mobs/ai/goals/followroute.md
+        - Go To Location: wiki/mobs/ai/goals/gotolocation.md
+        - Go To Location Conditional: wiki/mobs/ai/goals/gotolocationconditional.md
+        - Go To Owner: wiki/mobs/ai/goals/gotoowner.md
+        - Go To Parent: wiki/mobs/ai/goals/gotoparent.md
+        - Gotospawn: wiki/mobs/ai/goals/gotospawn.md
+        - Horrified: wiki/mobs/ai/goals/horrified.md
+        - Leapattarget: wiki/mobs/ai/goals/leapattarget.md
+        - Lookatplayers: wiki/mobs/ai/goals/lookatplayers.md
+        - Look At Target: wiki/mobs/ai/goals/lookattarget.md
+        - Meleeattack: wiki/mobs/ai/goals/meleeattack.md
+        - Melee Attack Conditional: wiki/mobs/ai/goals/meleeattackconditional.md
+        - Movethroughvillage: wiki/mobs/ai/goals/movethroughvillage.md
+        - Movetoblock: wiki/mobs/ai/goals/movetoblock.md
+        - Movetolava: wiki/mobs/ai/goals/movetolava.md
+        - Move Towards Restriction: wiki/mobs/ai/goals/movetowardsrestriction.md
+        - Move Towards Target: wiki/mobs/ai/goals/movetowardstarget.md
+        - Move Towards Target Conditional: wiki/mobs/ai/goals/movetowardstargetconditional.md
+        - Movetowater: wiki/mobs/ai/goals/movetowater.md
+        - Move Within Distance Of Target: wiki/mobs/ai/goals/movewithindistanceoftarget.md
+        - Move Within Distance Of Target Conditional: wiki/mobs/ai/goals/movewithindistanceoftargetconditional.md
+        - Open Door: wiki/mobs/ai/goals/opendoor.md
+        - Panic: wiki/mobs/ai/goals/panic.md
+        - Patrol: wiki/mobs/ai/goals/patrol.md
+        - Random Fly: wiki/mobs/ai/goals/randomfly.md
+        - Random Look Around: wiki/mobs/ai/goals/randomlookaround.md
+        - Random Nod: wiki/mobs/ai/goals/randomnod.md
+        - Random Stroll: wiki/mobs/ai/goals/randomstroll.md
+        - Restrict Sun: wiki/mobs/ai/goals/restrictsun.md
+        - Spider Attack: wiki/mobs/ai/goals/spiderattack.md
+        - Zombie Attack: wiki/mobs/ai/goals/zombieattack.md
+      - AI 目标:
+        - Hurt By Target: wiki/mobs/ai/targets/hurtbytarget.md
+        - Irongolems: wiki/mobs/ai/targets/irongolems.md
+        - Monsters: wiki/mobs/ai/targets/monsters.md
+        - Nearestconditionaltarget: wiki/mobs/ai/targets/nearestconditionaltarget.md
+        - Nearest Other Faction: wiki/mobs/ai/targets/nearestotherfaction.md
+        - Nearest Other Faction Monsters: wiki/mobs/ai/targets/nearestotherfactionmonsters.md
+        - Owner Attacker: wiki/mobs/ai/targets/ownerattacker.md
+        - Owner Target: wiki/mobs/ai/targets/ownertarget.md
+        - Parent Hurt By: wiki/mobs/ai/targets/parenthurtby.md
+        - Parent Target: wiki/mobs/ai/targets/parenttarget.md
+        - Players: wiki/mobs/ai/targets/players.md
+        - Specificfaction: wiki/mobs/ai/targets/specificfaction.md
+        - Specificfactionmonsters: wiki/mobs/ai/targets/specificfactionmonsters.md
+        - Villagers: wiki/mobs/ai/targets/villagers.md
+    - 生物:
+      - 生物: wiki/mobs/mobs.md
+      - 不稳定的实体类型: wiki/mobs/mobs/unstable-entity-types.md
+  - 技能:
+    - 进阶用法与技巧: wiki/skills/advanced-user-guides-and-techniques.md
+    - 接收对象: wiki/skills/audience.md
+    - 动态元技能: wiki/skills/dynamic-metaskills.md
+    - 装备槽位: wiki/skills/equipslot.md
+    - 内联条件: wiki/skills/inline-conditions.md
+    - 刻内调度: wiki/skills/intratick-scheduling.md
+    - 数学运算: wiki/skills/math.md
+    - 元技能: wiki/skills/metaskills.md
+    - 占位符解析: wiki/skills/placeholder-parsing.md
+    - 技能命令: wiki/skills/skill-commands.md
+    - 技能: wiki/skills/skills.md
+    - 技能树: wiki/skills/skilltrees.md
+    - 变量: wiki/skills/variables.md
+    - 条件:
+      - 条件: wiki/skills/conditions.md
+      - Altitude: wiki/skills/conditions/altitude.md
+      - Biome: wiki/skills/conditions/biome.md
+      - Biometype: wiki/skills/conditions/biometype.md
+      - Blocking: wiki/skills/conditions/blocking.md
+      - Blocktype: wiki/skills/conditions/blocktype.md
+      - Block Type In Radius: wiki/skills/conditions/blocktypeinradius.md
+      - Bounding Boxes Overlap: wiki/skills/conditions/boundingboxesoverlap.md
+      - Bowtension: wiki/skills/conditions/bowtension.md
+      - Burning: wiki/skills/conditions/burning.md
+      - Chance: wiki/skills/conditions/chance.md
+      - Charged: wiki/skills/conditions/charged.md
+      - Children: wiki/skills/conditions/children.md
+      - Color: wiki/skills/conditions/color.md
+      - Compare Values: wiki/skills/conditions/comparevalues.md
+      - Crouching: wiki/skills/conditions/crouching.md
+      - Cuboid: wiki/skills/conditions/cuboid.md
+      - Damage Amount: wiki/skills/conditions/damageamount.md
+      - Damage Cause: wiki/skills/conditions/damagecause.md
+      - Damagetag: wiki/skills/conditions/damagetag.md
+      - Dawn: wiki/skills/conditions/dawn.md
+      - Day: wiki/skills/conditions/day.md
+      - Dimension: wiki/skills/conditions/dimension.md
+      - Directionalvelocity: wiki/skills/conditions/directionalvelocity.md
+      - Distance: wiki/skills/conditions/distance.md
+      - Distance From Location: wiki/skills/conditions/distancefromlocation.md
+      - Distance From Pin: wiki/skills/conditions/distancefrompin.md
+      - Distancefromspawn: wiki/skills/conditions/distancefromspawn.md
+      - Distancefromtrackedlocation: wiki/skills/conditions/distancefromtrackedlocation.md
+      - Dusk: wiki/skills/conditions/dusk.md
+      - Enchanting Experience: wiki/skills/conditions/enchantingexperience.md
+      - Enchanting Level: wiki/skills/conditions/enchantinglevel.md
+      - Ender Dragon Alive: wiki/skills/conditions/enderdragonalive.md
+      - Ender Dragon Phase: wiki/skills/conditions/enderdragonphase.md
+      - Entity Item Is Similar: wiki/skills/conditions/entityitemissimilar.md
+      - Entity Item Type: wiki/skills/conditions/entityitemtype.md
+      - Entity Material Type: wiki/skills/conditions/entitymaterialtype.md
+      - Entitytype: wiki/skills/conditions/entitytype.md
+      - Faction: wiki/skills/conditions/faction.md
+      - Fallspeed: wiki/skills/conditions/fallspeed.md
+      - Fieldofview: wiki/skills/conditions/fieldofview.md
+      - Food Level: wiki/skills/conditions/foodlevel.md
+      - Food Saturation: wiki/skills/conditions/foodsaturation.md
+      - Gamemode: wiki/skills/conditions/gamemode.md
+      - Gliding: wiki/skills/conditions/gliding.md
+      - Globalscore: wiki/skills/conditions/globalscore.md
+      - Hasai: wiki/skills/conditions/hasai.md
+      - Hasaura: wiki/skills/conditions/hasaura.md
+      - Hasaurastacks: wiki/skills/conditions/hasaurastacks.md
+      - Has Aura Type: wiki/skills/conditions/hasauratype.md
+      - Hascurrency: wiki/skills/conditions/hascurrency.md
+      - Has Dialog Open: wiki/skills/conditions/hasdialogopen.md
+      - Has Enchantment: wiki/skills/conditions/hasenchantment.md
+      - Has Free Inventory Slot: wiki/skills/conditions/hasfreeinventoryslot.md
+      - Hasgravity: wiki/skills/conditions/hasgravity.md
+      - Has Item: wiki/skills/conditions/hasitem.md
+      - Has Offhand: wiki/skills/conditions/hasoffhand.md
+      - Hasowner: wiki/skills/conditions/hasowner.md
+      - Hasparent: wiki/skills/conditions/hasparent.md
+      - Has Passenger: wiki/skills/conditions/haspassenger.md
+      - Haspermission: wiki/skills/conditions/haspermission.md
+      - Haspotioneffect: wiki/skills/conditions/haspotioneffect.md
+      - Hastag: wiki/skills/conditions/hastag.md
+      - Health: wiki/skills/conditions/health.md
+      - Health Percent: wiki/skills/conditions/healthpercent.md
+      - Height: wiki/skills/conditions/height.md
+      - Heightabove: wiki/skills/conditions/heightabove.md
+      - Heightbelow: wiki/skills/conditions/heightbelow.md
+      - Holding: wiki/skills/conditions/holding.md
+      - In Bounds: wiki/skills/conditions/inbounds.md
+      - In Claim: wiki/skills/conditions/inclaim.md
+      - Incombat: wiki/skills/conditions/incombat.md
+      - In Pin Region: wiki/skills/conditions/inpinregion.md
+      - Inside: wiki/skills/conditions/inside.md
+      - Isbaby: wiki/skills/conditions/isbaby.md
+      - Is Cancelled: wiki/skills/conditions/iscancelled.md
+      - Iscaster: wiki/skills/conditions/iscaster.md
+      - Ischild: wiki/skills/conditions/ischild.md
+      - Is Climbing: wiki/skills/conditions/isclimbing.md
+      - Is Creeper Primed: wiki/skills/conditions/iscreeperprimed.md
+      - Isflying: wiki/skills/conditions/isflying.md
+      - Isfrozen: wiki/skills/conditions/isfrozen.md
+      - Is In Cinematic: wiki/skills/conditions/isincinematic.md
+      - Is In Survival Mode: wiki/skills/conditions/isinsurvivalmode.md
+      - Is Invulnerable: wiki/skills/conditions/isinvulnerable.md
+      - Isleashed: wiki/skills/conditions/isleashed.md
+      - Isliving: wiki/skills/conditions/isliving.md
+      - Ismonster: wiki/skills/conditions/ismonster.md
+      - Ismythicmob: wiki/skills/conditions/ismythicmob.md
+      - Is Parent: wiki/skills/conditions/isparent.md
+      - Is Parent Alive: wiki/skills/conditions/isparentalive.md
+      - Isplayer: wiki/skills/conditions/isplayer.md
+      - Is Raider Patrol Leader: wiki/skills/conditions/israiderpatrolleader.md
+      - Is Saddled: wiki/skills/conditions/issaddled.md
+      - Is Sibling: wiki/skills/conditions/issibling.md
+      - Is Skill: wiki/skills/conditions/isskill.md
+      - Is Tamed: wiki/skills/conditions/istamed.md
+      - Is Using Spyglass: wiki/skills/conditions/isusingspyglass.md
+      - Item Group On Cooldown: wiki/skills/conditions/itemgrouponcooldown.md
+      - Itemissimilar: wiki/skills/conditions/itemissimilar.md
+      - Itemrecharging: wiki/skills/conditions/itemrecharging.md
+      - Item Type: wiki/skills/conditions/itemtype.md
+      - Lastdamagecause: wiki/skills/conditions/lastdamagecause.md
+      - Lastsignal: wiki/skills/conditions/lastsignal.md
+      - Level: wiki/skills/conditions/level.md
+      - Lightlevel: wiki/skills/conditions/lightlevel.md
+      - Lightlevelfromblocks: wiki/skills/conditions/lightlevelfromblocks.md
+      - Lineofsight: wiki/skills/conditions/lineofsight.md
+      - Lineofsightfromorigin: wiki/skills/conditions/lineofsightfromorigin.md
+      - Living In Radius: wiki/skills/conditions/livinginradius.md
+      - Localdifficulty: wiki/skills/conditions/localdifficulty.md
+      - Looking At: wiki/skills/conditions/lookingat.md
+      - Lunarphase: wiki/skills/conditions/lunarphase.md
+      - Material Is On Cooldown: wiki/skills/conditions/materialisoncooldown.md
+      - Metaskill Condition: wiki/skills/conditions/metaskillcondition.md
+      - Mobsinchunk: wiki/skills/conditions/mobsinchunk.md
+      - Mobsinradius: wiki/skills/conditions/mobsinradius.md
+      - Mobsinworld: wiki/skills/conditions/mobsinworld.md
+      - Mobsize: wiki/skills/conditions/mobsize.md
+      - Mobs Near Origin: wiki/skills/conditions/mobsnearorigin.md
+      - Moist: wiki/skills/conditions/moist.md
+      - Moisturelevel: wiki/skills/conditions/moisturelevel.md
+      - Motionx: wiki/skills/conditions/motionx.md
+      - Motiony: wiki/skills/conditions/motiony.md
+      - Motionz: wiki/skills/conditions/motionz.md
+      - Mounted: wiki/skills/conditions/mounted.md
+      - Moving: wiki/skills/conditions/moving.md
+      - Mythicmobtype: wiki/skills/conditions/mythicmobtype.md
+      - Mythic Pack: wiki/skills/conditions/mythicpack.md
+      - Mythic Pack Version: wiki/skills/conditions/mythicpackversion.md
+      - Mythic Pack Version Greater: wiki/skills/conditions/mythicpackversiongreater.md
+      - Name: wiki/skills/conditions/name.md
+      - Nearclaim: wiki/skills/conditions/nearclaim.md
+      - Night: wiki/skills/conditions/night.md
+      - Notinregion: wiki/skills/conditions/notinregion.md
+      - Offgcd: wiki/skills/conditions/offgcd.md
+      - Onblock: wiki/skills/conditions/onblock.md
+      - Onground: wiki/skills/conditions/onground.md
+      - Origin Distance From Pin: wiki/skills/conditions/origindistancefrompin.md
+      - Origin Location: wiki/skills/conditions/originlocation.md
+      - Outside: wiki/skills/conditions/outside.md
+      - Owner: wiki/skills/conditions/owner.md
+      - Ownerisonline: wiki/skills/conditions/ownerisonline.md
+      - Pitch: wiki/skills/conditions/pitch.md
+      - Playerkills: wiki/skills/conditions/playerkills.md
+      - Playernotwithin: wiki/skills/conditions/playernotwithin.md
+      - Playersinradius: wiki/skills/conditions/playersinradius.md
+      - Playersinworld: wiki/skills/conditions/playersinworld.md
+      - Playersonline: wiki/skills/conditions/playersonline.md
+      - Playerwithin: wiki/skills/conditions/playerwithin.md
+      - Plugin: wiki/skills/conditions/plugin.md
+      - Premium: wiki/skills/conditions/premium.md
+      - Projectile Has Ended: wiki/skills/conditions/projectilehasended.md
+      - Raining: wiki/skills/conditions/raining.md
+      - Region: wiki/skills/conditions/region.md
+      - Samefaction: wiki/skills/conditions/samefaction.md
+      - Score: wiki/skills/conditions/score.md
+      - Server Is Paper: wiki/skills/conditions/serverispaper.md
+      - Servernmsversion: wiki/skills/conditions/servernmsversion.md
+      - Server Version: wiki/skills/conditions/serverversion.md
+      - Server Version After Or Equal: wiki/skills/conditions/serverversionafterorequal.md
+      - Server Version Before: wiki/skills/conditions/serverversionbefore.md
+      - Size: wiki/skills/conditions/size.md
+      - Skilloncooldown: wiki/skills/conditions/skilloncooldown.md
+      - Skylightlevel: wiki/skills/conditions/skylightlevel.md
+      - Spawn Reason: wiki/skills/conditions/spawnreason.md
+      - Sprinting: wiki/skills/conditions/sprinting.md
+      - Stance: wiki/skills/conditions/stance.md
+      - StatDamageModifier: wiki/skills/conditions/statdamagemodifier.md
+      - String Empty: wiki/skills/conditions/stringempty.md
+      - Stringequals: wiki/skills/conditions/stringequals.md
+      - String Not Empty: wiki/skills/conditions/stringnotempty.md
+      - Structure: wiki/skills/conditions/structure.md
+      - Sunny: wiki/skills/conditions/sunny.md
+      - Targetinlineofsight: wiki/skills/conditions/targetinlineofsight.md
+      - Targetnotinlineofsight: wiki/skills/conditions/targetnotinlineofsight.md
+      - Targetnotwithin: wiki/skills/conditions/targetnotwithin.md
+      - Targets: wiki/skills/conditions/targets.md
+      - Targetwithin: wiki/skills/conditions/targetwithin.md
+      - Template Type: wiki/skills/conditions/templatetype.md
+      - Thundering: wiki/skills/conditions/thundering.md
+      - Trigger Block Type: wiki/skills/conditions/triggerblocktype.md
+      - Trigger Item Type: wiki/skills/conditions/triggeritemtype.md
+      - Variable Contains: wiki/skills/conditions/variablecontains.md
+      - Variableequals: wiki/skills/conditions/variableequals.md
+      - Variableinrange: wiki/skills/conditions/variableinrange.md
+      - Variableisset: wiki/skills/conditions/variableisset.md
+      - Vehicleisdead: wiki/skills/conditions/vehicleisdead.md
+      - Velocity: wiki/skills/conditions/velocity.md
+      - Wearing: wiki/skills/conditions/wearing.md
+      - World: wiki/skills/conditions/world.md
+      - Worldtime: wiki/skills/conditions/worldtime.md
+      - Xdiff: wiki/skills/conditions/xdiff.md
+      - Yaw: wiki/skills/conditions/yaw.md
+      - Ydiff: wiki/skills/conditions/ydiff.md
+      - Zdiff: wiki/skills/conditions/zdiff.md
+    - 技能机制:
+      - 技能机制: wiki/skills/mechanics.md
+      - Activatespawner: wiki/skills/mechanics/activatespawner.md
+      - Addtag: wiki/skills/mechanics/addtag.md
+      - Add Trade: wiki/skills/mechanics/addtrade.md
+      - Animatearmorstand: wiki/skills/mechanics/animatearmorstand.md
+      - Arm Animation: wiki/skills/mechanics/armanimation.md
+      - Arrowvolley: wiki/skills/mechanics/arrowvolley.md
+      - Atom: wiki/skills/mechanics/atom.md
+      - Attribute: wiki/skills/mechanics/attribute.md
+      - Attribute Modifier: wiki/skills/mechanics/attributemodifier.md
+      - Aura: wiki/skills/mechanics/aura.md
+      - Auraremove: wiki/skills/mechanics/auraremove.md
+      - Barcreate: wiki/skills/mechanics/barcreate.md
+      - Barremove: wiki/skills/mechanics/barremove.md
+      - Barset: wiki/skills/mechanics/barset.md
+      - Basedamage: wiki/skills/mechanics/basedamage.md
+      - Beam: wiki/skills/mechanics/beam.md
+      - Blackscreen: wiki/skills/mechanics/blackscreen.md
+      - Blockdestabilize: wiki/skills/mechanics/blockdestabilize.md
+      - Block Mask: wiki/skills/mechanics/blockmask.md
+      - Blockphysics: wiki/skills/mechanics/blockphysics.md
+      - Block Unmask: wiki/skills/mechanics/blockunmask.md
+      - Block Wave: wiki/skills/mechanics/blockwave.md
+      - Bloody Screen: wiki/skills/mechanics/bloodyscreen.md
+      - Bonemeal: wiki/skills/mechanics/bonemeal.md
+      - Bossborder: wiki/skills/mechanics/bossborder.md
+      - Bouncy: wiki/skills/mechanics/bouncy.md
+      - Breakblock: wiki/skills/mechanics/breakblock.md
+      - Break Block And Give Item: wiki/skills/mechanics/breakblockandgiveitem.md
+      - Cancelevent: wiki/skills/mechanics/cancelevent.md
+      - Cancel Skill: wiki/skills/mechanics/cancelskill.md
+      - Cast: wiki/skills/mechanics/cast.md
+      - Chain: wiki/skills/mechanics/chain.md
+      - Chainmissile: wiki/skills/mechanics/chainmissile.md
+      - Cinematic Camera: wiki/skills/mechanics/cinematiccamera.md
+      - Cinematic Cancel: wiki/skills/mechanics/cinematiccancel.md
+      - Clear Experience: wiki/skills/mechanics/clearexperience.md
+      - Clear Experience Levels: wiki/skills/mechanics/clearexperiencelevels.md
+      - Clear Target: wiki/skills/mechanics/cleartarget.md
+      - Clearthreat: wiki/skills/mechanics/clearthreat.md
+      - Close Dialog: wiki/skills/mechanics/closedialog.md
+      - Closeinventory: wiki/skills/mechanics/closeinventory.md
+      - 命令: wiki/skills/mechanics/command.md
+      - Consume: wiki/skills/mechanics/consume.md
+      - Consumeslot: wiki/skills/mechanics/consumeslot.md
+      - Currencygive: wiki/skills/mechanics/currencygive.md
+      - Currencytake: wiki/skills/mechanics/currencytake.md
+      - Damage: wiki/skills/mechanics/damage.md
+      - Decapitate: wiki/skills/mechanics/decapitate.md
+      - Delay: wiki/skills/mechanics/delay.md
+      - Determine Condition: wiki/skills/mechanics/determinecondition.md
+      - Directional Velocity: wiki/skills/mechanics/directionalvelocity.md
+      - Disengage: wiki/skills/mechanics/disengage.md
+      - Disguise: wiki/skills/mechanics/disguise.md
+      - Disguise Modify: wiki/skills/mechanics/disguisemodify.md
+      - Disguisetarget: wiki/skills/mechanics/disguisetarget.md
+      - Dismount: wiki/skills/mechanics/dismount.md
+      - Display Transformation: wiki/skills/mechanics/displaytransformation.md
+      - Doppleganger: wiki/skills/mechanics/doppleganger.md
+      - Dropitem: wiki/skills/mechanics/dropitem.md
+      - Ejectpassenger: wiki/skills/mechanics/ejectpassenger.md
+      - Ender: wiki/skills/mechanics/ender.md
+      - Ender Beam: wiki/skills/mechanics/enderbeam.md
+      - Ender Dragon Reset Crystals: wiki/skills/mechanics/enderdragonresetcrystals.md
+      - Ender Dragon Set Phase: wiki/skills/mechanics/enderdragonsetphase.md
+      - Ender Dragon Set Respawn Phase: wiki/skills/mechanics/enderdragonsetrespawnphase.md
+      - Ender Dragon Spawn Portal: wiki/skills/mechanics/enderdragonspawnportal.md
+      - Endprojectile: wiki/skills/mechanics/endprojectile.md
+      - Equip: wiki/skills/mechanics/equip.md
+      - Equipcopy: wiki/skills/mechanics/equipcopy.md
+      - Explosion: wiki/skills/mechanics/explosion.md
+      - Extinguish: wiki/skills/mechanics/extinguish.md
+      - Fake Explosion: wiki/skills/mechanics/fakeexplosion.md
+      - Fake Lightning: wiki/skills/mechanics/fakelightning.md
+      - Fawepaste: wiki/skills/mechanics/fawepaste.md
+      - Fear: wiki/skills/mechanics/fear.md
+      - Feed: wiki/skills/mechanics/feed.md
+      - Fill Chest: wiki/skills/mechanics/fillchest.md
+      - 烟花: wiki/skills/mechanics/firework.md
+      - Flames: wiki/skills/mechanics/flames.md
+      - Fly: wiki/skills/mechanics/fly.md
+      - Follow Path: wiki/skills/mechanics/followpath.md
+      - Forcepull: wiki/skills/mechanics/forcepull.md
+      - For Each: wiki/skills/mechanics/foreach.md
+      - For Each Pin: wiki/skills/mechanics/foreachpin.md
+      - For Each Value: wiki/skills/mechanics/foreachvalue.md
+      - Form Line: wiki/skills/mechanics/formline.md
+      - Freeze: wiki/skills/mechanics/freeze.md
+      - Geyser: wiki/skills/mechanics/geyser.md
+      - Give Experience Levels: wiki/skills/mechanics/giveexperiencelevels.md
+      - Giveitem: wiki/skills/mechanics/giveitem.md
+      - Giveitemfromslot: wiki/skills/mechanics/giveitemfromslot.md
+      - Giveitemfromtarget: wiki/skills/mechanics/giveitemfromtarget.md
+      - Globalcooldown: wiki/skills/mechanics/globalcooldown.md
+      - Glow: wiki/skills/mechanics/glow.md
+      - Goat Ram: wiki/skills/mechanics/goatram.md
+      - Goto: wiki/skills/mechanics/goto.md
+      - Guardianbeam: wiki/skills/mechanics/guardianbeam.md
+      - Heal: wiki/skills/mechanics/heal.md
+      - Healpercent: wiki/skills/mechanics/healpercent.md
+      - Hide: wiki/skills/mechanics/hide.md
+      - Hit: wiki/skills/mechanics/hit.md
+      - Hologram: wiki/skills/mechanics/hologram.md
+      - Ignite: wiki/skills/mechanics/ignite.md
+      - Itemspray: wiki/skills/mechanics/itemspray.md
+      - Jsonmessage: wiki/skills/mechanics/jsonmessage.md
+      - Jump: wiki/skills/mechanics/jump.md
+      - Leap: wiki/skills/mechanics/leap.md
+      - Lightning: wiki/skills/mechanics/lightning.md
+      - Log: wiki/skills/mechanics/log.md
+      - Look: wiki/skills/mechanics/look.md
+      - Lunge: wiki/skills/mechanics/lunge.md
+      - Match Rotation: wiki/skills/mechanics/matchrotation.md
+      - Message: wiki/skills/mechanics/message.md
+      - Missile: wiki/skills/mechanics/missile.md
+      - Modify Damage: wiki/skills/mechanics/modifydamage.md
+      - Modifyglobalscore: wiki/skills/mechanics/modifyglobalscore.md
+      - Modifymobscore: wiki/skills/mechanics/modifymobscore.md
+      - Modifyprojectile: wiki/skills/mechanics/modifyprojectile.md
+      - Modifyscore: wiki/skills/mechanics/modifyscore.md
+      - Modifytargetscore: wiki/skills/mechanics/modifytargetscore.md
+      - Mount: wiki/skills/mechanics/mount.md
+      - Mountme: wiki/skills/mechanics/mountme.md
+      - Mounttarget: wiki/skills/mechanics/mounttarget.md
+      - Move Pin: wiki/skills/mechanics/movepin.md
+      - On Attack: wiki/skills/mechanics/onattack.md
+      - Onblockbreak: wiki/skills/mechanics/onblockbreak.md
+      - Onblockplace: wiki/skills/mechanics/onblockplace.md
+      - On Chat: wiki/skills/mechanics/onchat.md
+      - On Damaged: wiki/skills/mechanics/ondamaged.md
+      - Ondeath: wiki/skills/mechanics/ondeath.md
+      - Oninteract: wiki/skills/mechanics/oninteract.md
+      - Onjump: wiki/skills/mechanics/onjump.md
+      - On Key Press: wiki/skills/mechanics/onkeypress.md
+      - On Key Release: wiki/skills/mechanics/onkeyrelease.md
+      - Onshoot: wiki/skills/mechanics/onshoot.md
+      - Onswing: wiki/skills/mechanics/onswing.md
+      - Open Custom Menu: wiki/skills/mechanics/opencustommenu.md
+      - Open Trades: wiki/skills/mechanics/opentrades.md
+      - Orbital: wiki/skills/mechanics/orbital.md
+      - Oxygen: wiki/skills/mechanics/oxygen.md
+      - Particle Box: wiki/skills/mechanics/particlebox.md
+      - Particle Equation: wiki/skills/mechanics/particleequation.md
+      - Particle Line: wiki/skills/mechanics/particleline.md
+      - Particle Line Helix: wiki/skills/mechanics/particlelinehelix.md
+      - Particle Line Ring: wiki/skills/mechanics/particlelinering.md
+      - Particle Orbital: wiki/skills/mechanics/particleorbital.md
+      - Particle Ring: wiki/skills/mechanics/particlering.md
+      - Particle Sphere: wiki/skills/mechanics/particlesphere.md
+      - Particle Tornado: wiki/skills/mechanics/particletornado.md
+      - Percentdamage: wiki/skills/mechanics/percentdamage.md
+      - Pickupitem: wiki/skills/mechanics/pickupitem.md
+      - Play Animation: wiki/skills/mechanics/playanimation.md
+      - Play Block Break Sound: wiki/skills/mechanics/playblockbreaksound.md
+      - Play Block Fall Sound: wiki/skills/mechanics/playblockfallsound.md
+      - Play Block Hit Sound: wiki/skills/mechanics/playblockhitsound.md
+      - Play Block Place Sound: wiki/skills/mechanics/playblockplacesound.md
+      - Play Block Step Sound: wiki/skills/mechanics/playblockstepsound.md
+      - Polygon: wiki/skills/mechanics/polygon.md
+      - Posearmorstand: wiki/skills/mechanics/posearmorstand.md
+      - Potion: wiki/skills/mechanics/potion.md
+      - Potionclear: wiki/skills/mechanics/potionclear.md
+      - Print Parent Tree: wiki/skills/mechanics/printparenttree.md
+      - Prison: wiki/skills/mechanics/prison.md
+      - Projectile: wiki/skills/mechanics/projectile.md
+      - Projectile Velocity: wiki/skills/mechanics/projectilevelocity.md
+      - Propel: wiki/skills/mechanics/propel.md
+      - Pull: wiki/skills/mechanics/pull.md
+      - Push Block: wiki/skills/mechanics/pushblock.md
+      - Pushbutton: wiki/skills/mechanics/pushbutton.md
+      - Rally: wiki/skills/mechanics/rally.md
+      - Randommessage: wiki/skills/mechanics/randommessage.md
+      - Randomskill: wiki/skills/mechanics/randomskill.md
+      - Raytrace: wiki/skills/mechanics/raytrace.md
+      - Raytraceto: wiki/skills/mechanics/raytraceto.md
+      - Recoil: wiki/skills/mechanics/recoil.md
+      - Remount: wiki/skills/mechanics/remount.md
+      - Remove: wiki/skills/mechanics/remove.md
+      - Removehelditem: wiki/skills/mechanics/removehelditem.md
+      - Removeowner: wiki/skills/mechanics/removeowner.md
+      - Removetag: wiki/skills/mechanics/removetag.md
+      - Reset A I: wiki/skills/mechanics/resetai.md
+      - Rotate Towards: wiki/skills/mechanics/rotatetowards.md
+      - Runaigoalselector: wiki/skills/mechanics/runaigoalselector.md
+      - Runaitargetselector: wiki/skills/mechanics/runaitargetselector.md
+      - Saddle: wiki/skills/mechanics/saddle.md
+      - Sendactionmessage: wiki/skills/mechanics/sendactionmessage.md
+      - Sendresourcepack: wiki/skills/mechanics/sendresourcepack.md
+      - Send Title: wiki/skills/mechanics/sendtitle.md
+      - Sendtoast: wiki/skills/mechanics/sendtoast.md
+      - Setai: wiki/skills/mechanics/setai.md
+      - Set Block Open: wiki/skills/mechanics/setblockopen.md
+      - Setblocktype: wiki/skills/mechanics/setblocktype.md
+      - Set Chunk Force Loaded: wiki/skills/mechanics/setchunkforceloaded.md
+      - Setcollidable: wiki/skills/mechanics/setcollidable.md
+      - Set Custom Menu Button: wiki/skills/mechanics/setcustommenubutton.md
+      - Set Display Entity Item: wiki/skills/mechanics/setdisplayentityitem.md
+      - Set Dragon Podium: wiki/skills/mechanics/setdragonpodium.md
+      - Set Faction: wiki/skills/mechanics/setfaction.md
+      - Set Flying: wiki/skills/mechanics/setflying.md
+      - Setgamemode: wiki/skills/mechanics/setgamemode.md
+      - Setgliding: wiki/skills/mechanics/setgliding.md
+      - Setglobalscore: wiki/skills/mechanics/setglobalscore.md
+      - Setgravity: wiki/skills/mechanics/setgravity.md
+      - Sethealth: wiki/skills/mechanics/sethealth.md
+      - Set Interaction Size: wiki/skills/mechanics/setinteractionsize.md
+      - Set Item Group Cooldown: wiki/skills/mechanics/setitemgroupcooldown.md
+      - Setleashholder: wiki/skills/mechanics/setleashholder.md
+      - Setlevel: wiki/skills/mechanics/setlevel.md
+      - Setmaterialcooldown: wiki/skills/mechanics/setmaterialcooldown.md
+      - Setmaxhealth: wiki/skills/mechanics/setmaxhealth.md
+      - Setmobcolor: wiki/skills/mechanics/setmobcolor.md
+      - Setmobscore: wiki/skills/mechanics/setmobscore.md
+      - Setname: wiki/skills/mechanics/setname.md
+      - Setnodamageticks: wiki/skills/mechanics/setnodamageticks.md
+      - Setowner: wiki/skills/mechanics/setowner.md
+      - Set Parent: wiki/skills/mechanics/setparent.md
+      - Set Pathfinding Malus: wiki/skills/mechanics/setpathfindingmalus.md
+      - Set Pitch: wiki/skills/mechanics/setpitch.md
+      - Set Pose: wiki/skills/mechanics/setpose.md
+      - Setprojectilebulletmodel: wiki/skills/mechanics/setprojectilebulletmodel.md
+      - Set Projectile Direction: wiki/skills/mechanics/setprojectiledirection.md
+      - Set Raider Can Join Raid: wiki/skills/mechanics/setraidercanjoinraid.md
+      - Setraiderpatrolblock: wiki/skills/mechanics/setraiderpatrolblock.md
+      - Setraiderpatrolleader: wiki/skills/mechanics/setraiderpatrolleader.md
+      - Setrotation: wiki/skills/mechanics/setrotation.md
+      - Setscore: wiki/skills/mechanics/setscore.md
+      - Setskillcooldown: wiki/skills/mechanics/setskillcooldown.md
+      - Setspeed: wiki/skills/mechanics/setspeed.md
+      - Setstance: wiki/skills/mechanics/setstance.md
+      - Settarget: wiki/skills/mechanics/settarget.md
+      - Settargetscore: wiki/skills/mechanics/settargetscore.md
+      - Set Text Display: wiki/skills/mechanics/settextdisplay.md
+      - Settonguetarget: wiki/skills/mechanics/settonguetarget.md
+      - Setvariable: wiki/skills/mechanics/setvariable.md
+      - Setvariablelocation: wiki/skills/mechanics/setvariablelocation.md
+      - Shield: wiki/skills/mechanics/shield.md
+      - Shieldbreak: wiki/skills/mechanics/shieldbreak.md
+      - Shieldpercent: wiki/skills/mechanics/shieldpercent.md
+      - Shoot: wiki/skills/mechanics/shoot.md
+      - Shootfireball: wiki/skills/mechanics/shootfireball.md
+      - Shootpotion: wiki/skills/mechanics/shootpotion.md
+      - Shootshulkerbullet: wiki/skills/mechanics/shootshulkerbullet.md
+      - Shootskull: wiki/skills/mechanics/shootskull.md
+      - Show Dialog: wiki/skills/mechanics/showdialog.md
+      - Showentity: wiki/skills/mechanics/showentity.md
+      - Signal: wiki/skills/mechanics/signal.md
+      - Skill: wiki/skills/mechanics/skill.md
+      - Skybox: wiki/skills/mechanics/skybox.md
+      - Slash: wiki/skills/mechanics/slash.md
+      - Smoke: wiki/skills/mechanics/smoke.md
+      - Smoke Swirl: wiki/skills/mechanics/smokeswirl.md
+      - Sound: wiki/skills/mechanics/sound.md
+      - Speak: wiki/skills/mechanics/speak.md
+      - Spin: wiki/skills/mechanics/spin.md
+      - Spring: wiki/skills/mechanics/spring.md
+      - Stat Aura: wiki/skills/mechanics/stataura.md
+      - Steal Item: wiki/skills/mechanics/stealitem.md
+      - Stop Sound: wiki/skills/mechanics/stopsound.md
+      - Stopusingitem: wiki/skills/mechanics/stopusingitem.md
+      - Stun: wiki/skills/mechanics/stun.md
+      - Sudo Skill: wiki/skills/mechanics/sudoskill.md
+      - Suicide: wiki/skills/mechanics/suicide.md
+      - Summon: wiki/skills/mechanics/summon.md
+      - Summonareaeffectcloud: wiki/skills/mechanics/summonareaeffectcloud.md
+      - Summon Falling Block: wiki/skills/mechanics/summonfallingblock.md
+      - Summonpassenger: wiki/skills/mechanics/summonpassenger.md
+      - Swap: wiki/skills/mechanics/swap.md
+      - Swing Offhand: wiki/skills/mechanics/swingoffhand.md
+      - Switch: wiki/skills/mechanics/switch.md
+      - Take Experience Levels: wiki/skills/mechanics/takeexperiencelevels.md
+      - Takeitem: wiki/skills/mechanics/takeitem.md
+      - Taunt: wiki/skills/mechanics/taunt.md
+      - Teleport: wiki/skills/mechanics/teleport.md
+      - Teleportin: wiki/skills/mechanics/teleportin.md
+      - Teleportto: wiki/skills/mechanics/teleportto.md
+      - Teleporty: wiki/skills/mechanics/teleporty.md
+      - Terminable: wiki/skills/mechanics/terminable.md
+      - Threat: wiki/skills/mechanics/threat.md
+      - Throw: wiki/skills/mechanics/throw.md
+      - Thunder Level: wiki/skills/mechanics/thunderlevel.md
+      - Time: wiki/skills/mechanics/time.md
+      - Togglelever: wiki/skills/mechanics/togglelever.md
+      - Toggle Piston: wiki/skills/mechanics/togglepiston.md
+      - Togglesitting: wiki/skills/mechanics/togglesitting.md
+      - Totem: wiki/skills/mechanics/totem.md
+      - Totem Of Undying: wiki/skills/mechanics/totemofundying.md
+      - Tracklocation: wiki/skills/mechanics/tracklocation.md
+      - Undisguise: wiki/skills/mechanics/undisguise.md
+      - Undopaste: wiki/skills/mechanics/undopaste.md
+      - Variableadd: wiki/skills/mechanics/variableadd.md
+      - Variablemath: wiki/skills/mechanics/variablemath.md
+      - Variable Move: wiki/skills/mechanics/variablemove.md
+      - Variableskill: wiki/skills/mechanics/variableskill.md
+      - Variablesubtract: wiki/skills/mechanics/variablesubtract.md
+      - Variableunset: wiki/skills/mechanics/variableunset.md
+      - Velocity: wiki/skills/mechanics/velocity.md
+      - Volley: wiki/skills/mechanics/volley.md
+      - Wait: wiki/skills/mechanics/wait.md
+      - Weather: wiki/skills/mechanics/weather.md
+      - Wolfsit: wiki/skills/mechanics/wolfsit.md
+      - World Edit Replace: wiki/skills/mechanics/worldeditreplace.md
+      - auracomponents:
+        - Chunk Load: wiki/skills/mechanics/auracomponents/chunkload.md
+        - Fear: wiki/skills/mechanics/auracomponents/fear.md
+        - Fly: wiki/skills/mechanics/auracomponents/fly.md
+        - Glow: wiki/skills/mechanics/auracomponents/glow.md
+        - On Attack: wiki/skills/mechanics/auracomponents/onattack.md
+        - On Block Break: wiki/skills/mechanics/auracomponents/onblockbreak.md
+        - On Block Place: wiki/skills/mechanics/auracomponents/onblockplace.md
+        - On Chat: wiki/skills/mechanics/auracomponents/onchat.md
+        - On Damaged: wiki/skills/mechanics/auracomponents/ondamaged.md
+        - On Death: wiki/skills/mechanics/auracomponents/ondeath.md
+        - On Input: wiki/skills/mechanics/auracomponents/oninput.md
+        - On Interact: wiki/skills/mechanics/auracomponents/oninteract.md
+        - On Shoot: wiki/skills/mechanics/auracomponents/onshoot.md
+        - On Swing: wiki/skills/mechanics/auracomponents/onswing.md
+        - Projectile Rebound: wiki/skills/mechanics/auracomponents/projectilerebound.md
+        - Stat: wiki/skills/mechanics/auracomponents/stat.md
+        - Stun: wiki/skills/mechanics/auracomponents/stun.md
+      - particle:
+        - Particle: wiki/skills/mechanics/particle.md
+        - particle-types:
+          - Particle Types: wiki/skills/mechanics/particle/particle-types.md
+          - Angry Villager: wiki/skills/mechanics/particle/particle-types/angry_villager.md
+          - Ash: wiki/skills/mechanics/particle/particle-types/ash.md
+          - Barrier: wiki/skills/mechanics/particle/particle-types/barrier.md
+          - Block: wiki/skills/mechanics/particle/particle-types/block.md
+          - Block Crumble: wiki/skills/mechanics/particle/particle-types/block_crumble.md
+          - Block Dust: wiki/skills/mechanics/particle/particle-types/block_dust.md
+          - Block Marker: wiki/skills/mechanics/particle/particle-types/block_marker.md
+          - Bubble: wiki/skills/mechanics/particle/particle-types/bubble.md
+          - Bubble Column Up: wiki/skills/mechanics/particle/particle-types/bubble_column_up.md
+          - Bubble Pop: wiki/skills/mechanics/particle/particle-types/bubble_pop.md
+          - Campfire Cosy Smoke: wiki/skills/mechanics/particle/particle-types/campfire_cosy_smoke.md
+          - Campfire Signal Smoke: wiki/skills/mechanics/particle/particle-types/campfire_signal_smoke.md
+          - Cherry Leaves: wiki/skills/mechanics/particle/particle-types/cherry_leaves.md
+          - Cloud: wiki/skills/mechanics/particle/particle-types/cloud.md
+          - Composter: wiki/skills/mechanics/particle/particle-types/composter.md
+          - Copper Fire Flame: wiki/skills/mechanics/particle/particle-types/copper_fire_flame.md
+          - Crimson Spore: wiki/skills/mechanics/particle/particle-types/crimson_spore.md
+          - Crit: wiki/skills/mechanics/particle/particle-types/crit.md
+          - Current Down: wiki/skills/mechanics/particle/particle-types/current_down.md
+          - Damage Indicator: wiki/skills/mechanics/particle/particle-types/damage_indicator.md
+          - Dolphin: wiki/skills/mechanics/particle/particle-types/dolphin.md
+          - Dragon Breath: wiki/skills/mechanics/particle/particle-types/dragon_breath.md
+          - Dripping Dripstone Lava: wiki/skills/mechanics/particle/particle-types/dripping_dripstone_lava.md
+          - Dripping Dripstone Water: wiki/skills/mechanics/particle/particle-types/dripping_dripstone_water.md
+          - Dripping Honey: wiki/skills/mechanics/particle/particle-types/dripping_honey.md
+          - Dripping Lava: wiki/skills/mechanics/particle/particle-types/dripping_lava.md
+          - Dripping Obsidian Tear: wiki/skills/mechanics/particle/particle-types/dripping_obsidian_tear.md
+          - Dripping Water: wiki/skills/mechanics/particle/particle-types/dripping_water.md
+          - Dust: wiki/skills/mechanics/particle/particle-types/dust.md
+          - Dust Color Transition: wiki/skills/mechanics/particle/particle-types/dust_color_transition.md
+          - Dust Pillar: wiki/skills/mechanics/particle/particle-types/dust_pillar.md
+          - Dust Plume: wiki/skills/mechanics/particle/particle-types/dust_plume.md
+          - Effect: wiki/skills/mechanics/particle/particle-types/effect.md
+          - Egg Crack: wiki/skills/mechanics/particle/particle-types/egg_crack.md
+          - Elder Guardian: wiki/skills/mechanics/particle/particle-types/elder_guardian.md
+          - Electric Spark: wiki/skills/mechanics/particle/particle-types/electric_spark.md
+          - Enchant: wiki/skills/mechanics/particle/particle-types/enchant.md
+          - Enchanted Hit: wiki/skills/mechanics/particle/particle-types/enchanted_hit.md
+          - End Rod: wiki/skills/mechanics/particle/particle-types/end_rod.md
+          - Entity Effect: wiki/skills/mechanics/particle/particle-types/entity_effect.md
+          - Explosion: wiki/skills/mechanics/particle/particle-types/explosion.md
+          - Explosion Emitter: wiki/skills/mechanics/particle/particle-types/explosion_emitter.md
+          - Falling Dripstone Lava: wiki/skills/mechanics/particle/particle-types/falling_dripstone_lava.md
+          - Falling Dripstone Water: wiki/skills/mechanics/particle/particle-types/falling_dripstone_water.md
+          - Falling Dust: wiki/skills/mechanics/particle/particle-types/falling_dust.md
+          - Falling Honey: wiki/skills/mechanics/particle/particle-types/falling_honey.md
+          - Falling Lava: wiki/skills/mechanics/particle/particle-types/falling_lava.md
+          - Falling Nectar: wiki/skills/mechanics/particle/particle-types/falling_nectar.md
+          - Falling Obsidian Tear: wiki/skills/mechanics/particle/particle-types/falling_obsidian_tear.md
+          - Falling Spore Blossom: wiki/skills/mechanics/particle/particle-types/falling_spore_blossom.md
+          - Falling Water: wiki/skills/mechanics/particle/particle-types/falling_water.md
+          - Firefly: wiki/skills/mechanics/particle/particle-types/firefly.md
+          - 烟花: wiki/skills/mechanics/particle/particle-types/firework.md
+          - Fishing: wiki/skills/mechanics/particle/particle-types/fishing.md
+          - Flame: wiki/skills/mechanics/particle/particle-types/flame.md
+          - Flash: wiki/skills/mechanics/particle/particle-types/flash.md
+          - Glow: wiki/skills/mechanics/particle/particle-types/glow.md
+          - Glow Squid Ink: wiki/skills/mechanics/particle/particle-types/glow_squid_ink.md
+          - Gust: wiki/skills/mechanics/particle/particle-types/gust.md
+          - Gust Emitter Large: wiki/skills/mechanics/particle/particle-types/gust_emitter_large.md
+          - Gust Emitter Small: wiki/skills/mechanics/particle/particle-types/gust_emitter_small.md
+          - Happy Villager: wiki/skills/mechanics/particle/particle-types/happy_villager.md
+          - Heart: wiki/skills/mechanics/particle/particle-types/heart.md
+          - Infested: wiki/skills/mechanics/particle/particle-types/infested.md
+          - Instant Effect: wiki/skills/mechanics/particle/particle-types/instant_effect.md
+          - Item: wiki/skills/mechanics/particle/particle-types/item.md
+          - Item Slime: wiki/skills/mechanics/particle/particle-types/item_slime.md
+          - Item Snowball: wiki/skills/mechanics/particle/particle-types/item_snowball.md
+          - Landing Honey: wiki/skills/mechanics/particle/particle-types/landing_honey.md
+          - Landing Lava: wiki/skills/mechanics/particle/particle-types/landing_lava.md
+          - Landing Obsidian Tear: wiki/skills/mechanics/particle/particle-types/landing_obsidian_tear.md
+          - Large Smoke: wiki/skills/mechanics/particle/particle-types/large_smoke.md
+          - Lava: wiki/skills/mechanics/particle/particle-types/lava.md
+          - Light: wiki/skills/mechanics/particle/particle-types/light.md
+          - Mycelium: wiki/skills/mechanics/particle/particle-types/mycelium.md
+          - Nautilus: wiki/skills/mechanics/particle/particle-types/nautilus.md
+          - Note: wiki/skills/mechanics/particle/particle-types/note.md
+          - Ominous Spawning: wiki/skills/mechanics/particle/particle-types/ominous_spawning.md
+          - Pale Oak Leaves: wiki/skills/mechanics/particle/particle-types/pale_oak_leaves.md
+          - Poof: wiki/skills/mechanics/particle/particle-types/poof.md
+          - Portal: wiki/skills/mechanics/particle/particle-types/portal.md
+          - Raid Omen: wiki/skills/mechanics/particle/particle-types/raid_omen.md
+          - Rain: wiki/skills/mechanics/particle/particle-types/rain.md
+          - Reverse Portal: wiki/skills/mechanics/particle/particle-types/reverse_portal.md
+          - Scrape: wiki/skills/mechanics/particle/particle-types/scrape.md
+          - Sculk Charge: wiki/skills/mechanics/particle/particle-types/sculk_charge.md
+          - Sculk Charge Pop: wiki/skills/mechanics/particle/particle-types/sculk_charge_pop.md
+          - Sculk Soul: wiki/skills/mechanics/particle/particle-types/sculk_soul.md
+          - Shriek: wiki/skills/mechanics/particle/particle-types/shriek.md
+          - Small Flame: wiki/skills/mechanics/particle/particle-types/small_flame.md
+          - Small Gust: wiki/skills/mechanics/particle/particle-types/small_gust.md
+          - Smoke: wiki/skills/mechanics/particle/particle-types/smoke.md
+          - Sneeze: wiki/skills/mechanics/particle/particle-types/sneeze.md
+          - Snowflake: wiki/skills/mechanics/particle/particle-types/snowflake.md
+          - Sonic Boom: wiki/skills/mechanics/particle/particle-types/sonic_boom.md
+          - Soul: wiki/skills/mechanics/particle/particle-types/soul.md
+          - Soul Fire Flame: wiki/skills/mechanics/particle/particle-types/soul_fire_flame.md
+          - Spell Mob Ambient: wiki/skills/mechanics/particle/particle-types/spell_mob_ambient.md
+          - Spit: wiki/skills/mechanics/particle/particle-types/spit.md
+          - Splash: wiki/skills/mechanics/particle/particle-types/splash.md
+          - Spore Blossom Air: wiki/skills/mechanics/particle/particle-types/spore_blossom_air.md
+          - Squid Ink: wiki/skills/mechanics/particle/particle-types/squid_ink.md
+          - Suspended Depth: wiki/skills/mechanics/particle/particle-types/suspended_depth.md
+          - Sweep Attack: wiki/skills/mechanics/particle/particle-types/sweep_attack.md
+          - Tinted Leaves: wiki/skills/mechanics/particle/particle-types/tinted_leaves.md
+          - Totem Of Undying: wiki/skills/mechanics/particle/particle-types/totem_of_undying.md
+          - Trail: wiki/skills/mechanics/particle/particle-types/trail.md
+          - Trial Omen: wiki/skills/mechanics/particle/particle-types/trial_omen.md
+          - Trial Spawner Detection: wiki/skills/mechanics/particle/particle-types/trial_spawner_detection.md
+          - Trial Spawner Detection Ominous: wiki/skills/mechanics/particle/particle-types/trial_spawner_detection_ominous.md
+          - Underwater: wiki/skills/mechanics/particle/particle-types/underwater.md
+          - Vault Connection: wiki/skills/mechanics/particle/particle-types/vault_connection.md
+          - Vibration: wiki/skills/mechanics/particle/particle-types/vibration.md
+          - Warped Spore: wiki/skills/mechanics/particle/particle-types/warped_spore.md
+          - Wax Off: wiki/skills/mechanics/particle/particle-types/wax_off.md
+          - Wax On: wiki/skills/mechanics/particle/particle-types/wax_on.md
+          - White Ash: wiki/skills/mechanics/particle/particle-types/white_ash.md
+          - White Smoke: wiki/skills/mechanics/particle/particle-types/white_smoke.md
+          - Witch: wiki/skills/mechanics/particle/particle-types/witch.md
+    - 占位符:
+      - 占位符: wiki/skills/placeholders.md
+      - 元占位符: wiki/skills/placeholders/meta-placeholders.md
+      - 作用域占位符表: wiki/skills/placeholders/scoped-placeholder-table.md
+    - 标签:
+      - 技能机制标签: wiki/skills/tags/mechanic-tags.md
+    - 目标选择器:
+      - 目标选择器: wiki/skills/targeters.md
+      - Blocks In Chunk: wiki/skills/targeters/blocksinchunk.md
+      - Blocks In Pin Region: wiki/skills/targeters/blocksinpinregion.md
+      - Blocks In Radius: wiki/skills/targeters/blocksinradius.md
+      - Blocks Near Origin: wiki/skills/targeters/blocksnearorigin.md
+      - Block Vein: wiki/skills/targeters/blockvein.md
+      - Bound: wiki/skills/targeters/bound.md
+      - Caster Spawn Location: wiki/skills/targeters/casterspawnlocation.md
+      - Children: wiki/skills/targeters/children.md
+      - Chunks In W E Region: wiki/skills/targeters/chunksinweregion.md
+      - Cone: wiki/skills/targeters/cone.md
+      - Entities In Radius: wiki/skills/targeters/entitiesinradius.md
+      - Entities In Ring: wiki/skills/targeters/entitiesinring.md
+      - Entities In Ring Near Origin: wiki/skills/targeters/entitiesinringnearorigin.md
+      - Entities Near Origin: wiki/skills/targeters/entitiesnearorigin.md
+      - Escape Location: wiki/skills/targeters/escapelocation.md
+      - Father: wiki/skills/targeters/father.md
+      - Floor Of Targets: wiki/skills/targeters/flooroftargets.md
+      - Forward: wiki/skills/targeters/forward.md
+      - Forward Wall: wiki/skills/targeters/forwardwall.md
+      - Highest Block: wiki/skills/targeters/highestblock.md
+      - Interaction Last Attacker: wiki/skills/targeters/interactionlastattacker.md
+      - Interaction Last Interact: wiki/skills/targeters/interactionlastinteract.md
+      - Items In Radius: wiki/skills/targeters/itemsinradius.md
+      - Items Near Origin: wiki/skills/targeters/itemsnearorigin.md
+      - Line: wiki/skills/targeters/line.md
+      - Living In Cone: wiki/skills/targeters/livingincone.md
+      - Living In Line: wiki/skills/targeters/livinginline.md
+      - Living In World: wiki/skills/targeters/livinginworld.md
+      - Living Near Target Location: wiki/skills/targeters/livingneartargetlocation.md
+      - Location: wiki/skills/targeters/location.md
+      - Locations Of Targets: wiki/skills/targeters/locationsoftargets.md
+      - Mobs In Radius: wiki/skills/targeters/mobsinradius.md
+      - Mobs Near Origin: wiki/skills/targeters/mobsnearorigin.md
+      - Mother: wiki/skills/targeters/mother.md
+      - Mount: wiki/skills/targeters/mount.md
+      - Nearest Player: wiki/skills/targeters/nearestplayer.md
+      - Nearest Structure: wiki/skills/targeters/neareststructure.md
+      - None: wiki/skills/targeters/none.md
+      - Not Living Near Origin: wiki/skills/targeters/notlivingnearorigin.md
+      - Obstructing Block: wiki/skills/targeters/obstructingblock.md
+      - Origin: wiki/skills/targeters/origin.md
+      - Owner: wiki/skills/targeters/owner.md
+      - Ownerlocation: wiki/skills/targeters/ownerlocation.md
+      - Parent: wiki/skills/targeters/parent.md
+      - Parent Location: wiki/skills/targeters/parentlocation.md
+      - Passenger: wiki/skills/targeters/passenger.md
+      - Pin: wiki/skills/targeters/pin.md
+      - Player By Name: wiki/skills/targeters/playerbyname.md
+      - Player Location By Name: wiki/skills/targeters/playerlocationbyname.md
+      - Player Locations In Radius: wiki/skills/targeters/playerlocationsinradius.md
+      - Players In Radius: wiki/skills/targeters/playersinradius.md
+      - Players In Ring: wiki/skills/targeters/playersinring.md
+      - Players In World: wiki/skills/targeters/playersinworld.md
+      - Players Near Origin: wiki/skills/targeters/playersnearorigin.md
+      - Players Near Target Locations: wiki/skills/targeters/playersneartargetlocations.md
+      - Players On Server: wiki/skills/targeters/playersonserver.md
+      - Projectile Forward: wiki/skills/targeters/projectileforward.md
+      - Random Locations Near Caster: wiki/skills/targeters/randomlocationsnearcaster.md
+      - Random Locations Near Origin: wiki/skills/targeters/randomlocationsnearorigin.md
+      - Random Locations Near Targets: wiki/skills/targeters/randomlocationsneartargets.md
+      - Random Ring Point: wiki/skills/targeters/randomringpoint.md
+      - Random Threat Target: wiki/skills/targeters/randomthreattarget.md
+      - Random Threat Target Location: wiki/skills/targeters/randomthreattargetlocation.md
+      - Rectangle: wiki/skills/targeters/rectangle.md
+      - Region: wiki/skills/targeters/region.md
+      - Ring: wiki/skills/targeters/ring.md
+      - Ring Around Origin: wiki/skills/targeters/ringaroundorigin.md
+      - Self: wiki/skills/targeters/self.md
+      - Self Eye Location: wiki/skills/targeters/selfeyelocation.md
+      - Self Location: wiki/skills/targeters/selflocation.md
+      - Siblings: wiki/skills/targeters/siblings.md
+      - 刷怪点: wiki/skills/targeters/spawners.md
+      - Spawn Location: wiki/skills/targeters/spawnlocation.md
+      - Sphere: wiki/skills/targeters/sphere.md
+      - Target: wiki/skills/targeters/target.md
+      - Target Block: wiki/skills/targeters/targetblock.md
+      - Targeted Location: wiki/skills/targeters/targetedlocation.md
+      - Targeted Target: wiki/skills/targeters/targetedtarget.md
+      - Target Location: wiki/skills/targeters/targetlocation.md
+      - Target Predicted Location: wiki/skills/targeters/targetpredictedlocation.md
+      - Threat Table: wiki/skills/targeters/threattable.md
+      - Threat Table Players: wiki/skills/targeters/threattableplayers.md
+      - Tracked Location: wiki/skills/targeters/trackedlocation.md
+      - Tracked Players: wiki/skills/targeters/trackedplayers.md
+      - Trigger: wiki/skills/targeters/trigger.md
+      - Trigger Location: wiki/skills/targeters/triggerlocation.md
+      - Unique Identifier: wiki/skills/targeters/uniqueidentifier.md
+      - Variable Location: wiki/skills/targeters/variablelocation.md
+      - Vehicle: wiki/skills/targeters/vehicle.md
+      - Wolf Owner: wiki/skills/targeters/wolfowner.md
+    - 触发器:
+      - 触发器: wiki/skills/triggers.md
+      - On Attack: wiki/skills/triggers/onattack.md
+      - On Bow Hit: wiki/skills/triggers/onbowhit.md
+      - On Breed: wiki/skills/triggers/onbreed.md
+      - On Bucket: wiki/skills/triggers/onbucket.md
+      - Onchangetarget: wiki/skills/triggers/onchangetarget.md
+      - Onchangeworld: wiki/skills/triggers/onchangeworld.md
+      - On Cinematic End: wiki/skills/triggers/oncinematicend.md
+      - On Cinematic Start: wiki/skills/triggers/oncinematicstart.md
+      - On Combat: wiki/skills/triggers/oncombat.md
+      - Oncreepercharge: wiki/skills/triggers/oncreepercharge.md
+      - On Damaged: wiki/skills/triggers/ondamaged.md
+      - On Death: wiki/skills/triggers/ondeath.md
+      - Ondespawn: wiki/skills/triggers/ondespawn.md
+      - On Dismounted: wiki/skills/triggers/ondismounted.md
+      - Ondropcombat: wiki/skills/triggers/ondropcombat.md
+      - On Enter Bounds: wiki/skills/triggers/onenterbounds.md
+      - Onentercombat: wiki/skills/triggers/onentercombat.md
+      - On Exit Bounds: wiki/skills/triggers/onexitbounds.md
+      - Onexplode: wiki/skills/triggers/onexplode.md
+      - On Hear: wiki/skills/triggers/onhear.md
+      - Oninteract: wiki/skills/triggers/oninteract.md
+      - On Load: wiki/skills/triggers/onload.md
+      - On Player Enter: wiki/skills/triggers/onplayerenter.md
+      - On Player Exit: wiki/skills/triggers/onplayerexit.md
+      - Onplayerkill: wiki/skills/triggers/onplayerkill.md
+      - Onprime: wiki/skills/triggers/onprime.md
+      - On Projectile Hit: wiki/skills/triggers/onprojectilehit.md
+      - On Projectile Land: wiki/skills/triggers/onprojectileland.md
+      - Onready: wiki/skills/triggers/onready.md
+      - On Shoot: wiki/skills/triggers/onshoot.md
+      - Onsignal: wiki/skills/triggers/onsignal.md
+      - Onskilldamage: wiki/skills/triggers/onskilldamage.md
+      - On Spawn: wiki/skills/triggers/onspawn.md
+      - Onspawnorload: wiki/skills/triggers/onspawnorload.md
+      - Ontame: wiki/skills/triggers/ontame.md
+      - Onteleport: wiki/skills/triggers/onteleport.md
+      - On Timer: wiki/skills/triggers/ontimer.md
+      - Ontrade: wiki/skills/triggers/ontrade.md
+  - 排错:
+    - Model Engine 模型消失: wiki/troubleshooting/modelengine-model-vanishes.md
+    - 随机生成排错: wiki/troubleshooting/randomspawns.md
+    - 排错: wiki/troubleshooting/troubleshooting.md
+  - Wiki 编辑资料:
+    - 技能机制示例: wiki/wiki-editors-resources/examplemechanic.md
+    - 测试页面: wiki/wiki-editors-resources/test-page.md
+    - Wiki 编辑资料: wiki/wiki-editors-resources/wiki-editors-resources.md
 - 配置文件（5.13.0-SNAPSHOT-1abf9862）:
   - 配置索引: configuration/index.md
   - placeholders.yml: configuration/placeholders.md

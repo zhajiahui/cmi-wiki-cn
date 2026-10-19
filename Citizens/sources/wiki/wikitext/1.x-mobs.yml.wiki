@@ -1,0 +1,37 @@
+{{NoSupport}}
+=Mobs.yml=
+
+The mobs.yml controls Mob type [[Characters]]. Currently, the only mob character are [[Evil NPCs]]. The general: node controls all mobs.  The evil: node controls [[Evil NPCs]].
+
+==Example mobs.yml==
+
+<pre>
+general:
+  spawn:
+    delay: 1  # Aufdemrand: Need to confirm whether this is ticks or minutes.
+
+evil:
+  spawn:
+    max: 10
+    chance: 100
+    spawn: true
+
+  items:
+    tame-item: 377 
+    drops: 264,265,266,
+
+  misc:
+    tame-chance: 50
+    names: Bandit,Thief,
+    health: 20
+    failed-tame-messages: The blaze powder fails to calm your subject.;POOF! Nothing.
+</pre>
+
+==Related Permissions==
+
+See [[Permissions]] for information on how to use permissions.  The listed permission nodes below relate to Mobs.yml and Evil NPCs.
+
+<pre>citizens.evils.immune   # Those with this node will not be attacked by Evil NPCs</pre>
+
+{{NavBox}}
+[[Category:Citizens1]]

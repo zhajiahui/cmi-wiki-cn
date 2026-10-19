@@ -1,0 +1,28 @@
+
+'''Postal''' is a Citizens2 Based Postal System
+
+{{Trait
+| PICTURE      = Postal.png
+| AUTHOR      = mcfacilitator
+| NAME         = Postal
+| VERSION    = See http://dev.bukkit.org/server-mods/postal/
+| CITIZENSBUILD  = 
+| DEVSTATUS    = indev
+| DEPENDS     =  None required.
+| DOWNLOADLINK  = http://dev.bukkit.org/server-mods/postal/
+
+| DESCRIPTION  = Citizens-based postal system.
+}}
+
+== Getting Started ==
+
+{|
+{{#ev:youtube|U_lKzVNQMzc|}} 
+|}
+
+Install citizens2
+
+Copy va_postal to the plugins directory.
+
+See: 
+http://dev.bukkit.org/server-mods/postal/

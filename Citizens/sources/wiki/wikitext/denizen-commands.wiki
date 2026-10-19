@@ -1,0 +1,584 @@
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://meta.denizenscript.com/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+
+__TOC__
+
+==List of commands==
+
+<s><big><div style="color:red">Denizen is continuously being updated. This page shows only basic script commands (We will try to update the page when something changes)!</div></big>
+
+===Entity===
+
+{{Denizen Command
+|cast|<nowiki>[effect] (duration:#{60s}) (power:#{1}) (target(s):npc|player|n@<npc.id>|p@<player.name>|entity_name)</nowiki>
+|Gives a potion effect to a target, which can be a player, an NPC or another entity. All valid potion effect names are found [http://jd.bukkit.org/rb/apidocs/org/bukkit/potion/PotionEffectType.html here].
+
+If you do not choose a target, the potion effect is given to the player talking to this NPC. You can use more targets at once by putting them between <nowiki>|</nowiki> characters.
+
+You can choose the effect's duration, which is 60 seconds by default, and its power, which is 1 by default. Often, a power of 3 is the most you can have for a potion effect, and a value greater than that will not do anything.
+
+
+'''Examples'''
+<pre>
+- cast blindness power:3 duration:7
+</pre>
+
+In the above example, the player talking to this NPC will be blinded strongly for 7 seconds.
+
+<pre>
+- cast regeneration power:1 duration:10 target:p@<npc.owner>
+</pre>
+
+In this example, the NPC will give a weak regeneration effect to its owner for 10 seconds.
+
+}}
+
+===Item===
+
+===NPC===
+
+
+{{Denizen Command
+|assignment|<nowiki>[{set}|remove] (script:name)</nowiki>
+|Sets or removes an assignment for the NPC. If set or remove aren't specified, it will set by default.
+
+
+'''Examples'''
+<pre>
+- assignment set "script:Evil Wizard"
+- assignment remove
+- assignment "script:Pet Cat"
+</pre>
+}}
+
+
+{{Denizen Command
+|attack|(stop)
+|Makes the NPC attack or stop attacking the player.
+
+
+'''Examples'''
+<pre>
+- attack
+- attack stop
+</pre>
+}}
+
+
+
+{{Denizen Command
+|chat|<nowiki>["<text>"] (no_target/targets:<entity>|...)</nowiki>
+|Sends a message from this NPC to the player.
+
+If a different NPC's ID is chosen in the npcid argument, the message is sent from that NPC. The message can also be sent to a different player or even to another NPC if you use the target argument.
+
+
+'''Examples'''
+<pre>
+- chat "It's nice to see you again, <player.name>."
+- chat "I would like to introduce you to <player.name>." target:n@7
+- chat "Bob, do you know <player.name>?" target:p@Bob
+- chat npcid:9 "Our enemy is giving orders to his companion." target:p@Bob
+</pre>
+}}
+
+
+{{Denizen Command
+|follow|(stop)
+|Makes the NPC follow or stop following the player.
+
+
+'''Examples'''
+<pre>
+- follow
+- follow stop
+</pre>
+}}
+
+
+{{Denizen Command
+|look|[location:x,y,z,world]
+|Makes the NPC look towards a certain location.
+
+
+'''Examples'''
+<pre>
+- look location:300,60,500,world
+- look location:<player.location>
+- look location:<anchor:Lever>
+</pre>
+}}
+
+
+{{Denizen Command
+|shoot|[entity:name] (ride) (burn) (explode) (location:x,y,z,world) (script:name)
+|Makes the NPC shoot out an entity. All valid entity names are found [http://jd.bukkit.org/rb/apidocs/org/bukkit/entity/EntityType.html here].
+
+Entities can be shot towards a location. If no location is specified, they will be shot in the direction the NPC is looking. You can also choose a script that will be run when the entity reaches the location.
+
+Moreover, you can use the ride argument to ride an entity, the burn one to set it on fire, and the explode one to have it explode once it reaches the location or gets stuck.
+
+'''Examples'''
+<pre>
+- shoot entity:zombie
+- shoot entity:arrow location:<player.location>
+- shoot entity:fireball location:<player.location> "script:Shoot Another Fireball"
+- shoot entity:minecart ride location:<anchor:Rollercoaster>
+- shoot entity:cow ride burn explode location:<anchor:Hill> "script:Bovine Destruction"
+</pre>
+}}
+
+{{Denizen Command
+|sit|<nowiki>(sit|stand) (location:x,y,z,world)</nowiki>
+|Makes the NPC sit or stand at a location.
+
+
+'''Examples'''
+<pre>
+- sit location:300,65,300,world
+- sit location:<anchor:Chair>
+- stand
+</pre>
+}}
+
+
+
+{{Denizen Command
+|trigger|[name:chat/click/damage/proximity] (state:true/false) (cooldown:<#.#>) (radius:<#>)
+|Enables or disables an interact trigger.
+
+Use this command to enable or disable an interact trigger, usually in the [http://wiki.citizensnpcs.com/Denizen/Types_of_Scripts#Assignment_Script assignment script].
+
+'''Examples'''
+<pre>
+- trigger name:chat state:true
+- trigger name:proximity statue:true radius:10
+</pre>
+}}
+
+===Player===
+
+
+
+{{Denizen Command
+|feed|<nowiki>(amt:#) (target:npc|{player})</nowiki>
+|Fills the player's food bar, or this NPC's food bar if the NPC is specified as the target. An amount can also be set by which the player or NPC will be fed. A completely full food bar has an amount of 20. Thus, an amount of 1 is half a shank in the food bar.
+
+
+'''Examples'''
+<pre>
+- feed
+- feed amt:15 target:npc
+</pre>
+}}
+
+
+{{Denizen Command
+|heal|<nowiki>(amt:#) (target:npc|{player})</nowiki>
+|Fills the player's health bar, or this NPC's health bar if the NPC is specified as the target. An amount can also be set by which the player or NPC will be healed. A completely full health bar has an amount of 20. Thus, an amount of 1 is half a heart in the health bar.
+
+
+'''Examples'''
+<pre>
+- heal
+- heal amt:7 target:npc
+</pre>
+}}
+
+
+{{Denizen Command
+|narrate|["narration text"] (player:name)
+|Sends a message to this player, or to another player if one is specified.
+
+
+'''Examples'''
+<pre>
+- narrate "A musty odor hangs in the air and you can hear the distant sound of trickling sewer water."
+- narrate player:Bob "<player.name> has been hired to track you down!"
+</pre>
+}}
+
+
+
+===Script flow===
+
+
+{{Denizen Command
+|anchor|<nowiki>[id:name] [assume|add|remove|walkto|walknear] (range:#)</nowiki>
+|Assumes, Adds, Removes and orders an NPC to walkto or to walknear an anchor that has been specified using the Citizens 2 npc command 
+"/npc anchor" Allows for dynamic specified pathing based on predefined points. Allows for a specified range in which the NPC in question 
+can walk to an anchor point.
+
+
+'''Examples'''
+<pre>
+A command having an NPC assume an Anchor:
+- anchor id:postoffice assume range:20
+-------------------------------------
+Two commands demonstrating how one may add an anchor based on the NPC's location:
+- Chat "Wow <player.name>, Now that I've walked to this location I am going to create an anchor point at this location so 
+  I can walk back here later."
+- anchor id:example_anchor add
+-------------------------------------
+Two commands demonstrating how one may remove a specified anchor via an NPC"
+- chat "You know <player.name>, I actually don't think I'll ever need to return here again, I will delete this anchor point"
+- anchor id:example_anchor remove
+-------------------------------------
+An example of a command for an NPC to walk towards a specified anchor point. Walkto has the NPC walk directly to the point; 
+whereas Walknear has the npc be less precise when walking to the point:
+- anchor id:Treasure_Chest walkto range:30
+- anchor id:Wheat_Fields walknear
+</pre>
+}}
+
+
+{{Denizen Command
+|queue|(queue:<id>) [clear/pause/resume/delay:<#>]
+'''WARNING THIS COMMAND IS DEPRECATED, ALL SCRIPTWRITERS SHOULD NOW USE THE QUEUE COMMAND'''
+|Empties a queue of all the commands in it that haven't been executed. If no queue name is specified, the current queue is emptied. You can also use the queue argument more than once to specify more queues to empty.
+
+Use this command to stop a script from another script or a script from an action.
+
+'''Examples'''
+<pre>
+- queue queue:magicalattacks clear
+</pre>
+}}
+
+
+
+{{Denizen Command
+|cooldown|<nowiki>(duration:#{60s}) (global|player:name{attached player}) (script:name)</nowiki>
+|Makes this script not get executed again by this player for a duration of time, which is 60 seconds by default.
+
+You can also make the script not get executed for another player, or make it unavailable globally, and you can also choose another script instead of this one.
+
+
+'''Examples'''
+<pre>
+- cooldown
+- cooldown duration:30s player:Bob "script:Offer Quest"
+</pre>
+}}
+
+{{Denizen Command
+|define|[<id>] [<value>]
+|Similar to a flag, this command sets a global variable to any value that can later be called back anywhere by using %id%.
+
+
+'''Examples'''
+<pre>
+- define "lastplayer" "<player.name>"
+- define "player_<player.name>'s_home" "<player.location>"
+- announce "%lastplayer% set their home at %player_<player.name>'s_home%! Go raid it!"
+</pre>
+}}
+
+{{Denizen Command
+|determine|["value"]
+|This command only works together with the [[Denizen/Replaceable Tags#procedure|procedure]] replaceable tag. It is put in the procedure script run by the tag and sets the tag's value to anything you choose. It is generally used as the result of an [[#if|if]] command or together with the [[#random|random]] command.
+
+
+'''Examples'''
+<pre>
+- if <player.name> == "Bob" determine "Bobby"
+- if <flag.p:Enemy> == "Galerion" determine "the fearsome Galerion"
+  else if <flag.p:Enemy> == "Narkon" determine "the evil Narkon"
+</pre>
+}}
+
+
+{{Denizen Command
+|disengage|(npcid:#)
+|Stops an [[#engage|engage]] command used formerly on this NPC. If the npcid is specified, a different NPC can be disengaged.
+
+
+'''Examples'''
+<pre>
+- disengage
+- disengage npcid:8
+</pre>
+}}
+
+
+{{Denizen Command
+|engage|(duration:#) (npcid:#)
+|Temporarily deactivates this NPC's triggers, making it impossible for players to interact with it for the chosen duration or until the [[#disengage|disengage]] command is used on it. If the npcid is specified, a different NPC can be engaged.
+
+
+'''Examples'''
+<pre>
+- engage
+- engage duration:40s npcid:7
+</pre>
+}}
+
+{{Denizen Command
+|fail|(script:script_name{attached script}) (player:name)
+|Adds 1 to the number of times this script or another script has been failed by this player, or by another player if one is specified. You can then check the times a script has been failed using the [[Denizen/Script Requirements#script|script]] requirement.
+
+
+'''Examples'''
+<pre>
+- fail
+- fail "script:Defend the Castle" player:Bob
+</pre>
+}}
+
+
+
+{{Denizen Command
+|finish|(script:script_name{attached script}") (player:name)
+|Adds 1 to the number of times this script or another script has been finished by this player, or by another player if one is specified. You can then check the times a script has been finished using the [[Denizen/Script Requirements#script|script]] requirement.
+
+
+'''Examples'''
+<pre>
+- finish
+- finish "script:Siege the Castle" player:Bob
+</pre>
+}}
+
+
+{{Denizen Command
+|flag|<nowiki>({player}|npc|global) [name([#])](:action)[:value] (duration:#)</nowiki>
+|Sets the value of a flag, a variable that can be checked elsewhere in this script and in other scripts by using [[Denizen/Replaceable Tags#Flags|flag replaceable tags]] or the [[Denizen/Script Requirements#flagged|flagged requirement]].
+
+A flag can be placed on the player, the NPC or globally. Flags placed on a player only apply to that player, and flags placed on an NPC only apply to that individual NPC based on its ID, so NPCs with the same name have different flags because they have different IDs. However, a global flag applies to the entire server and can easily be read from any script.
+
+If a flag's type (player, npc or global) is not specified, the flag is placed on the player by default, and if a value for the flag is not specified, the value is "true" by default.
+
+For more info, [[Denizen/Commands/Flag|click here]].
+
+'''Examples'''
+<pre>
+- flag "Finished Baker's Quest"
+- flag global "Skeleton Invasion Ended"
+</pre>
+}}
+
+{{Denizen Command
+|if|<nowiki>[<value>] (!)(<operator> <value>) (&&/|| ...) [<commands>] (else <commands>)</nowiki>
+|Compares one value to another and if the outcome is true, the commands inside the 'if' statement will be run and no more comparables will be checked. If it is false, the next 'else if', if there is one, will be compared, and if that is true, the commands in that 'else if' will be run and no more comparables will be checked. This will continue happening until the script either runs out of comparables or reaches an 'else', in which case the commands inside the 'else' will be run and the script will continue.
+
+For more info, [[Denizen/Commands/If|click here]].
+
+'''Examples'''
+<pre>
+- if "<player.inventory.contains[1]> announce "Hahaha! <player.name> has no stone!"
+- if <player.name> == "davidcernat" execute as_server "ban <player.name>"
+- if <context.message.contains[Bob]> announce "<player.name> said Bob! Smite them!"
+  else if <player.name.contains[Bob]> announce "<player.name>'s name contains Bob! Smite them!"
+  else {
+    - announce "No mention of Bob can be found. Proceeding with life..."
+    - run Life delay:0s
+  }
+</pre>
+}}
+
+{{Denizen Command
+|log|<nowiki>[<text>] (type:severe/info/warning/fine/finer/finest) [file:<name>]</nowiki>
+|Logs whatever text you want into a file inside the main server folder. If the file doesn't exist, it will create it.
+
+
+'''Examples'''
+<pre>
+- log "Something happened!" "file:Denizen.log"
+- log "Bob punched Joe!" "file:logs/DenizenLog.txt"
+</pre>
+}}
+
+
+{{Denizen Command
+|random|[#]
+|Runs a single one out of a number of commands, chosen at random.
+
+
+'''Examples'''
+<pre>
+- random 3
+- chat "One."
+- chat "Two."
+- chat "Three."
+</pre>
+
+In the above example, only one of the three chat commands will be run.
+
+<pre>
+- random 2
+- chat "One."
+- chat "Two."
+- chat "Three."
+</pre>
+
+In this example, either "One" or "Two" will be displayed, but "Three" will always be displayed.
+
+<pre>
+- random 3
+- attack
+- chat "Get out of here!"
+- runtask "script:Call Reinforcements"
+</pre>
+
+Here, the NPC will either attack the player, tell the player to leave, or run a script in which it calls for reinforcements.
+}}
+
+
+
+===Server===
+
+
+{{Denizen Command
+|announce|["announcement text"] (to_ops)
+|Sends a message to every player on the server. If the to_ops argument is used, the message is sent only to operators.
+
+
+'''Examples'''
+<pre>
+- announce "The skeleton invasion has ended."
+- announce "<player.name> has joined the blue team!"
+- announce to_ops "<player.name> is requesting help from operators."
+</pre>
+}}
+
+{{Denizen Command
+|chunkload|<nowiki>({add}|remove|removeall) [location:x,y,z,world] (duration:{-1s})</nowiki>
+|Loads the chunk of the location as specified into the server memory so that it does not despawn. NPCs do not stay spawned if a chunk
+despawns. As such this command is useful for ensuring a NPC spawn and do what it ought to regardless if a player is around to keep
+the chunk that that NPC is in, spawned. This command allows for adding of a chunk to memory by specifying a block location within a chunk, removing a chunk loaded to memory by also specifying a location within the chunk, as well as the ability to remove all chunks
+currently loaded into server memory by this command (removeall). Additionally a duration can be set in which a chunk loaded into memory
+will automatically despawn; the default is set to -1 meaning the chunk will stay loaded until the chunkload command is used again
+to remove it from memory.
+
+'''This does not create nor delete new or already generated chunks of terrain it merely brings it into memory for the server so that
+an NPC may spawn regardless if someone is around'''
+
+'''Examples'''
+<pre>
+- chunkload add location:1000,64,1000,world duration:-1s
+- chunkload add location:323,4,745,creative_world duration:10m
+- chunkload remove location: 1000,64,1000,world
+- chunkload removeall
+</pre>
+}}
+
+
+{{Denizen Command
+|execute|<nowiki>[as_player|as_op|as_npc|as_server] ["Bukkit command"]</nowiki>
+|Executes a Bukkit command on behalf of the player (as_player), the player as an operator (as_op), the NPC as an operator (as_npc), or the server (as_server).
+
+Any Bukkit command that you can use in the server console or in the chat with a slash works here. You can thus use the execute command to make NPCs that act as interfaces for other plugins.
+
+
+'''Examples'''
+<pre>
+- execute as_player "home"
+- execute as_op "gamemode 1"
+- execute as_npc "spawnmob zombie 3"
+- execute as_server "jail <player.name>"
+</pre>
+}}
+
+
+===World===
+
+{{Denizen Command
+|animatechest|<nowiki>[location:x,y,z,world] ({open}|close) (sound:{true}|false)</nowiki>
+|Causes a chest located at the specified coordinates to animate as either open or closed; defaults to open if not specified. Allows for the animated chest to play the "open chest" sound (true) or to open silently (false); defaults to true. '''There must be a chest located at the coordinates, this command does not spawn a chest.'''
+
+'''Examples'''
+<pre>
+- animatechest location:1000,63,1000,world open sound:true
+- animatechest location:100,74,777,world close sound:false
+</pre>
+}}
+
+{{Denizen Command
+|copyblock|<nowiki>[location:x,y,z,world] [to:x,y,z,world]</nowiki>
+|Simply copies whatever type of block is at one location and essentially pastes it at another defined location.
+
+'''Examples'''
+<pre>
+- copyblock location:204,68,12,world to:55,64,100,castle_world
+</pre>
+}}
+
+{{Denizen Command
+|displayitem|<nowiki>[item_name|remove] [location:x,y,z,world] (duration:#)</nowiki>
+|Has the server create a "Phantom Item" at the specified location which will remain there until removed. The Phantom Item
+only appears to the player and cannot be picked up by the player. Currently the "Duration:#" setting is unreliable and as such 
+players should expect to have to use the "- displayitem remove" command if they wish to remove the displayed item.
+
+'''Examples'''
+<pre>
+- displayitem 10 location:77,64,2453,world duration:20s
+- displayitem Stick location:<player.location>
+- displayitem remove location:77,64,2453,world
+- displayitem remove location:<player.location>
+</pre>
+}}
+
+{{Denizen Command
+|drop|<nowiki>[item:#(:#)|item:material(:#)|xp] (qty:#{1}) (location:x,y,z,world)</nowiki>
+|Drops an item or some experience at a location, in a certain quantity (which is 1 if not specified). You can choose either the item's ID or its material. All block and item IDs are found [http://www.minecraftwiki.net/wiki/Data_values here] and all valid material names are found [http://jd.bukkit.org/rb/apidocs/org/bukkit/Material.html here].
+
+The ID or material can also be followed by a [http://www.minecraftwiki.net/wiki/Data_values#Data special data value] for the item, so you can - for instance - drop a specific kind of wood or color of wool.
+
+'''Examples'''
+<pre>
+- drop item:38 location:500,63,500,world
+- drop item:diamond qty:5 location:<anchor:Treasury>
+- drop xp qty:30 location:<anchor:Altar>
+- drop item:wood:3 qty:30 location:<anchor:Jungle>
+</pre>
+}}
+
+
+{{Denizen Command
+|strike|(no_damage) [location:x,y,z,world]
+|Makes lightning strike a location, optionally without causing any damage.
+
+
+'''Examples'''
+<pre>
+- strike location:200,73,200,world
+- strike location:<player.location>
+- strike no_damage location:<anchor:Mountaintop>
+</pre>
+}}
+
+
+{{Denizen Command
+|switch|<nowiki>[location:x,y,z,world] (state:[{toggle}|on|off]) (duration:#)</nowiki>
+|Changes the state of the lever, stone button, stone plate, wood plate, wooden door, iron door or trap door at the specified location. By default the state is toggled from on/open to off/closed and back again, but you can choose to set the state just to on or off. You can also specify a duration for which the state will remain like that.
+
+
+'''Examples'''
+<pre>
+- switch location:500,45,700,world
+- switch state:on location:<anchor:Secret Lever> duration:30
+</pre>
+}}
+
+= Creating your own Denizen command =
+Aufdemrand made a tutorial for the 0.9 version of Denizen on how to create a new command for denizen.
+Check it out here: [https://www.youtube.com/watch?v=Sd7zoWT24Xw Denizen 0.9 Command Tutorial].</s>

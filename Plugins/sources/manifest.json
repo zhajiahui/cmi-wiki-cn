@@ -4,5 +4,11 @@
     "title": "插件与配置",
     "source_kind": "plugin-catalogue",
     "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki-coverage.md",
+    "title": "Wiki 收录范围",
+    "source_kind": "translation-inventory",
+    "translation_review": "reviewed"
   }
 ]

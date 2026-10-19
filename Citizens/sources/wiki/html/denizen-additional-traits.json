@@ -1,0 +1,78 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Denizen/Additional Traits",
+    "pageid": 335,
+    "revid": 5358,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://one.denizenscript.com/denizen/cmds/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://one.denizenscript.com/denizen/cmds/denizen/vids\">Tutorial Videos</a> on youtube or the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br /><br /><br />\n</p><p><br />\n<s>\nYou can add even further Denizen features by enabling various traits.\n</s></p><p><s>You can add traits by simply selecting the NPC and doing doing\n</s></p><s><pre>/trait &lt;traitname&gt;</pre></s><s><p>EG\n</p></s><s><pre>/trait mobprox</pre></s><s><p>And use the same command again to remove them\n</p></s><s><div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Mobprox_Trait\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Mobprox Trait</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-2\"><a href=\"#Mobprox_Actions\"><span class=\"tocnumber\">1.1</span> <span class=\"toctext\">Mobprox Actions</span></a></li>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Mobprox_Tags\"><span class=\"tocnumber\">1.2</span> <span class=\"toctext\">Mobprox Tags</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Mobprox_Flags\"><span class=\"tocnumber\">1.3</span> <span class=\"toctext\">Mobprox Flags</span></a></li>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#Mobprox_Example\"><span class=\"tocnumber\">1.4</span> <span class=\"toctext\">Mobprox Example</span></a></li>\n</ul>\n</li>\n</ul>\n</div>\n</s><s><div class=\"mw-heading mw-heading1\"><h1 id=\"Mobprox_Trait\">Mobprox Trait</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Additional_Traits&amp;action=edit&amp;section=1\" title=\"Edit section: Mobprox Trait\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><p>Mobprox is short for \"Mob Proximity\". It enables a <a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/Denizen/Triggers#Proximity_Trigger\">proximity trigger</a>-like functionality, but for mobs instead of players.\n</p><p>When the trait is assigned, it is assumed the NPC has a Denizen script assigned.\n</p></s><s><div class=\"mw-heading mw-heading2\"><h2 id=\"Mobprox_Actions\">Mobprox Actions</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Additional_Traits&amp;action=edit&amp;section=2\" title=\"Edit section: Mobprox Actions\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><p>The mobprox trait will fire the following actions on the Denizen script:\n</p></s><s><pre>on mob enter proximity:\non mob exit proximity:\non mob move proximity:\non &lt;mobname&gt; enter proximity:\non &lt;mobname&gt; exit proximity:\non &lt;mobname&gt; move proximity:\n</pre></s><s><p>\"mob\" actions fire whenever <b>any</b> mob does the action.\n</p><p>&lt;mobname&gt; actions fire whenever <b>a specific mob</b> does the action.\n</p><p>&lt;mobname&gt; is the name of the mob, EG \"zombie\" or \"creeper\".\n</p><p>\"enter\" actions fire when a mob walks into range. It will fire again if the mob walks out and back in.\n</p><p>\"exit\" actions fire when a mob leaves range. It will fire again if the mob walks in and back out.\n</p><p>\"move\" actions fire whenever a mob has been in range and continues to be in range. It doesn't necessarily mean the mob actually moved.\n</p><p><br />\nNote that the actions don't run instantly, it can take up to 2 seconds before they are called. (Usually a bit faster)\n</p><p>Also note that sometimes several actions will be called all at almost the same time, if there are multiple entities in range.\n</p></s><s><div class=\"mw-heading mw-heading2\"><h2 id=\"Mobprox_Tags\">Mobprox Tags</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Additional_Traits&amp;action=edit&amp;section=3\" title=\"Edit section: Mobprox Tags\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><p>In each action, you can use the <a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/Denizen/Replaceable_Tags\">Replaceable Tag</a> \"&lt;context.entity&gt;\" (With the &lt;&gt; included, quotes aren't needed) to refer to the mob in question.\n</p><p>You can check for matching details with an if command using the tag, like\n</p></s><s><pre>- if &lt;context.entity.entity_type&gt; == \"creeper\" CommandHere\n</pre></s><s><p>or similar.\n</p><p>One tag that's very useful with the mobprox trait is &lt;entity.can_see[&lt;entity&gt;]&gt; - you can use this to check if the entity is visible to the NPC by doing:\n</p></s><s><pre>- if &lt;npc.can_see[&lt;context.entity&gt;]&gt; CommandHere\n</pre></s><s><div class=\"mw-heading mw-heading2\"><h2 id=\"Mobprox_Flags\">Mobprox Flags</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Additional_Traits&amp;action=edit&amp;section=4\" title=\"Edit section: Mobprox Flags\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><p>Additionally, you can modify the mobprox behavior using NPC flags:\n</p><p>MobProx Range:\n</p></s><s><ul><li>Flag name is \"mobprox_range\"</li>\n<li>Set to 10 by default</li>\n<li>Can be any integer number, but it's recommended you don't exceed 100</li>\n<li>Keep in mind, this is cubic range, not spherical range. Meaning, if the range is 10, and the mob is 9 blocks left and 9 blocks forward, it's still considered to be in range.</li></ul></s><s><p>Whether to accept NPC mobs as mobprox triggers:\n</p></s><s><ul><li>flag name is \"mobprox_acceptnpcs\"</li>\n<li>Set to false by default</li>\n<li>Can be true or false. True means NPC mobs or real mobs will fire the mobprox actions, false means only real non-NPC mobs will fire the mobprox actions.</li>\n<li>Keep in mind, if you want NPCs to interact when they get near each other, there's better ways to do it than mobprox actions. Only set this true if you want NPC mobs treated exactly the same as real mobs.</li></ul></s><s><p>MobProx action fire timing:\n</p></s><s><ul><li>Flag name is \"mobprox_timer\"</li>\n<li>Set to 4 by default</li>\n<li>Can be any integer number, but between 1 and 10 is recommended.</li>\n<li>Keep in mind, 1 means fire actions every half second, 2 means every second, 4 means every two seconds, and so on.</li></ul></s><s><div class=\"mw-heading mw-heading2\"><h2 id=\"Mobprox_Example\">Mobprox Example</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Additional_Traits&amp;action=edit&amp;section=5\" title=\"Edit section: Mobprox Example\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><p>For an example, create an NPC and assign the script below using \"/npc assign --set mobproxexample\" then enable the trait with \"/trait mobprox\"\n</p></s><s><pre>'mobproxexample':\n    type: assignment\n    actions:\n        on assignment:\n        - flag npc mobprox_range:20\n        - flag npc mobprox_acceptnpcs:false\n        - trigger name:click state:true\n        on mob enter proximity:\n        - if &lt;context.entity.entity_type&gt;&#160;!= \"creeper\" {\n          - announce \"&lt;&amp;7&gt;[&lt;npc.name&gt;]&lt;&amp;2&gt; Here's a mob! It's a &lt;context.entity.entity_type&gt;!\"\n          - if &lt;context.entity.can_see[&lt;npc&gt;]&gt; == false\n            announce \"&lt;&amp;7&gt;[&lt;npc.name&gt;]&lt;&amp;2&gt; I can't see it though &lt;&amp;co&gt;(\"\n          }\n        on mob exit proximity:\n        - if &lt;context.entity.entity_type&gt;&#160;!= \"creeper\"\n          announce \"&lt;&amp;7&gt;[&lt;npc.name&gt;]&lt;&amp;2&gt; Goodbye, &lt;context.entity.entity_type&gt;!\"\n        on creeper enter proximity:\n        - announce \"&lt;&amp;7&gt;[&lt;npc.name&gt;]&lt;&amp;2&gt; Aahh! Creeper! Die creeper!\"\n        on creeper exit proximity:\n        - announce \"&lt;&amp;7&gt;[&lt;npc.name&gt;]&lt;&amp;2&gt; Oh good, the creeper's gone!\"\n        on creeper move proximity:\n        # Note: don't use player-type npc. or player. can_see, always use context.entity.can_see\n        # Due to a bug in Bukkit\n        - if &lt;context.entity.can_see[&lt;npc&gt;]&gt; == true {\n          - announce \"&lt;&amp;7&gt;[&lt;npc.name&gt;]&lt;&amp;2&gt; I cast lightning on you, creeper!\"\n          - strike &lt;context.entity.location&gt;\n          }\n    interact scripts:\n    - 10 mobproxexample_interact\n\nmobproxexample_interact:\n    type: interact\n    steps:\n        1:\n            click trigger:\n                script:\n                - chat target:&lt;player&gt; \"Hello, I'm a mob researcher! I'm looking for interesting mobs to classify!\"\n                - chat target:&lt;player&gt; \"But I'm deathly afraid of creepers! Luckily a wizard taught me a spell to cast lightning!\"</pre></s><s></s><p><s></s>\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145840\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.028 seconds\nReal time usage: 0.054 seconds\nPreprocessor visited node count: 43/1000000\nRevision size: 5999/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2262/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 91cc1e67-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Mobprox Trait",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Denizen/Additional_Traits",
+        "byteoffset": 1030,
+        "anchor": "Mobprox_Trait",
+        "linkAnchor": "Mobprox_Trait"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Mobprox Actions",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "Denizen/Additional_Traits",
+        "byteoffset": 1320,
+        "anchor": "Mobprox_Actions",
+        "linkAnchor": "Mobprox_Actions"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Mobprox Tags",
+        "number": "1.2",
+        "index": "3",
+        "fromtitle": "Denizen/Additional_Traits",
+        "byteoffset": 2380,
+        "anchor": "Mobprox_Tags",
+        "linkAnchor": "Mobprox_Tags"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Mobprox Flags",
+        "number": "1.3",
+        "index": "4",
+        "fromtitle": "Denizen/Additional_Traits",
+        "byteoffset": 2999,
+        "anchor": "Mobprox_Flags",
+        "linkAnchor": "Mobprox_Flags"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Mobprox Example",
+        "number": "1.4",
+        "index": "5",
+        "fromtitle": "Denizen/Additional_Traits",
+        "byteoffset": 4143,
+        "anchor": "Mobprox_Example",
+        "linkAnchor": "Mobprox_Example"
+      }
+    ],
+    "showtoc": ""
+  }
+}

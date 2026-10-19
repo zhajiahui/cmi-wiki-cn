@@ -1,0 +1,18 @@
+name: ${name}
+main: ${group}.${name}
+version: ${version}
+
+authors:
+  - 'Neige'
+
+softdepend:
+  - 'ProtocolLib'
+  - 'PlaceholderAPI'
+  - 'MythicMobs'
+  - 'Oraxen'
+  - 'Vault'
+  - 'MagicGem'
+  - 'ItemsAdder'
+
+api-version: 1.13
+folia-supported: true

@@ -1,0 +1,142 @@
+
+# Light Emission
+
+This feature requires Minecraft client 1.21.2 or greater.
+
+## Items
+
+This won't really emit light, it's only a glowing effect. This is a limitation of the game.
+
+In the future I might find a clean way to implement smooth light that moves with the player, but for now there is not feasible solution.
+
+Create your texture.
+
+<figure><img src="../../../.gitbook/assets/light-emission_008.png" alt=""><figcaption></figcaption></figure>
+
+Create a new `Java Block/Item` model in **Blockbench**.
+
+Note: In this case I set `Parent Model` to `item/paper` to inherit the `display` properties (how it's shown in hand, on ground etc.).
+
+<figure><img src="../../../.gitbook/assets/light-emission_010.png" alt=""><figcaption></figcaption></figure>
+
+Create your model. For example you can extrude the texture like I did.
+
+<figure><img src="../../../.gitbook/assets/light-emission_016.png" alt=""><figcaption></figcaption></figure>
+
+Adjust the model in the center.
+
+<figure><img src="../../../.gitbook/assets/light-emission_014.png" alt=""><figcaption></figcaption></figure>
+
+Select all the cubes (press `CTRL+A`), right click and set the desired light level.
+
+<figure><img src="../../../.gitbook/assets/light-emission_015.png" alt=""><figcaption></figcaption></figure>
+
+Save the file: `contents/test/models/block/test_light_emission_item.json`
+
+Create the configuration.
+
+**Old method**
+
+```yaml
+info:
+  namespace: test
+items:
+  test_light_emission_item:
+    name: test_light_emission_item
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/test_light_emission_item
+```
+
+**New modern method (1.21.4+)**
+
+```yaml
+info:
+  namespace: test
+items:
+  test_light_emission_item:
+    name: test_light_emission_item
+    graphics:
+      model: item/test_light_emission_item
+```
+
+<figure><img src="../../../.gitbook/assets/light-emission_018.png" alt=""><figcaption></figcaption></figure>
+
+## Blocks
+
+You must use `REAL_TRANSPARENT` block type if you want to make only a part of the block glowing and not all the block.
+
+This happens because the game doesn't support transparency in `REAL` blocks.
+
+If you do not want to use `REAL_TRANSPARENT` you can create a block with a single layer which will all be glowing.
+
+Create your texture.
+
+<figure><img src="../../../.gitbook/assets/light-emission_012.png" alt=""><figcaption></figcaption></figure>
+
+Separate the glowing layer from the base layer into two images.
+
+`contents/test/textures/block/test_light_emission.png`
+
+<figure><img src="../../../.gitbook/assets/light-emission_011.png" alt=""><figcaption></figcaption></figure>
+
+`contents/test/textures/block/test_light_emission2.png`
+
+<figure><img src="../../../.gitbook/assets/light-emission_007.png" alt=""><figcaption></figcaption></figure>
+
+Create a new `Java Block/Item` model in **Blockbench**.
+
+<figure><img src="../../../.gitbook/assets/light-emission_009.png" alt=""><figcaption></figcaption></figure>
+
+Create two cubes, one for the base and one for the glowing layer.
+
+Assign the two textures to the two different layers by drag and drop into the cubes.
+
+Right click the glowing layer and set the desired light level.
+
+<div><figure><img src="../../../.gitbook/assets/light-emission_013.png" alt=""><figcaption></figcaption></figure></div>
+
+Save the file: `contents/test/models/block/test_light_emission.json`
+
+Create the configuration.
+
+**Old method**
+
+```yaml
+info:
+  namespace: test
+items:
+  test_light_emission:
+    name: test_light_emission
+    resource:
+      material: PAPER
+      generate: false
+      model_path: block/test_light_emission
+    behaviours:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          hardness: 1
+
+```
+
+**New modern method (1.21.4+)**
+
+```yaml
+info:
+  namespace: test
+items:
+  test_light_emission:
+    name: test_light_emission
+    graphics:
+      model: block/test_light_emission
+    behaviours:
+      block:
+        placed_model:
+          type: REAL_TRANSPARENT
+          hardness: 1
+
+```
+
+<figure><img src="../../../.gitbook/assets/light-emission_017.png" alt=""><figcaption></figcaption></figure>

@@ -1,6 +1,59 @@
 site_name: LuckPerms 中文资料
 nav:
 - 插件说明: index.md
+- 插件 Wiki:
+  - Wiki 首页: wiki/home.md
+  - 安装与入门:
+    - 单服务器安装: wiki/installation.md
+    - 多服务器安装: wiki/network-installation.md
+    - 开始使用: wiki/usage.md
+    - 存储类型: wiki/storage-types.md
+    - 配置: wiki/configuration.md
+    - 常见问题: wiki/faq.md
+    - Hytale: wiki/hytale.md
+  - 命令与权限:
+    - 命令用法: wiki/command-usage.md
+    - 常规命令: wiki/general-commands.md
+    - 用户命令: wiki/user-commands.md
+    - 权限组命令: wiki/group-commands.md
+    - 权限命令: wiki/permission-commands.md
+    - 父级命令: wiki/parent-commands.md
+    - 元数据命令: wiki/meta-commands.md
+    - 晋升路线命令: wiki/track-commands.md
+    - 日志命令: wiki/log-commands.md
+    - 权限列表: wiki/permissions.md
+  - 功能:
+    - 网页编辑器: wiki/web-editor.md
+    - 上下文: wiki/context.md
+    - 权重: wiki/weight.md
+    - 前缀、后缀与元数据: wiki/prefixes-suffixes-meta.md
+    - 详细权限检查日志: wiki/verbose.md
+    - 晋升路线: wiki/tracks.md
+    - 默认权限组: wiki/default-groups.md
+  - 操作指南:
+    - 服务器之间同步数据: wiki/syncing-data-between-servers.md
+    - 存储系统排错: wiki/storage-system-errors.md
+    - 迁移: wiki/migration.md
+    - 切换存储类型: wiki/switching-storage-types.md
+    - 批量编辑: wiki/bulk-editing.md
+    - 前缀与后缀叠加: wiki/prefix-suffix-stacking.md
+    - 扩展: wiki/extensions.md
+    - 基于参数的命令权限: wiki/argument-based-command-permissions.md
+  - 开发与部署:
+    - 独立应用与 REST API: wiki/standalone-and-rest-api.md
+    - 参与贡献: wiki/contributing.md
+  - 参考:
+    - 高级权限设置: wiki/advanced-setup.md
+    - 网页编辑器技术细节: wiki/web-editor-technical-details.md
+    - 自行托管网页界面: wiki/self-hosting-the-web-interfaces.md
+    - 从 v4 升级到 v5: wiki/upgrading-from-v4-to-v5.md
+    - 从 GroupManager 或 PermissionsEx 迁移: wiki/migrating-from-groupmanager-or-permissionsex.md
+  - 项目信息:
+    - 为什么选择 LuckPerms: wiki/why-luckperms.md
+    - 鸣谢与许可证: wiki/credits.md
+    - 语言与翻译: wiki/locale-and-translations.md
+    - 占位符: wiki/placeholders.md
+    - 外部连接: wiki/external-connections.md
 - 配置文件（5.5.71）:
   - 配置索引: configuration/index.md
   - config.yml: configuration/config.md

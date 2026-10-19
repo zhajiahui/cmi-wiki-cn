@@ -1,0 +1,242 @@
+== Locale incoming with version 2.5 ==
+
+=== General changes ===
+In generally the whole locale system was changed. 
+That allowed me to create a self updating locale, so if you are running the plugin in the default english version you don't need anymore to matter about the locale, its going to update itself if needed :)
+
+Also translating the locale should be easier, every key is now named in a much obvious way :P
+Decreased the amount of keywords but from up now there are more messages in the locale
+
+# all old messages where renamed, so the are much more obvious
+# many keywords where removed
+# added lores to the locale file
+
+
+=== Updating === 
+When a locale is going to update itself, it will '''backup''' all old messages into a '''backup''' tree within the same locale file, so no messages are going vanish with a update. 
+However if a locale is going to be updated several the backup form the previous update is lost.
+
+Also when creating a '''translated locale''', always keep in mind to set the '''ver''' tag for the version you are creating the locale
+
+=== Latest build changes ===
+
+This file tells the updater what changes to apply to outdated locale files.
+Depending if the '''new''' key exists in a definition, it will '''add''' or '''change''' the given locale entry.
+
+example:
+<pre>
+  player-trader:
+    keyword: Player Trader
+    new: trader-player
+</pre>
+will look for the '''player-trader''' keyword, save it into the backup tree and add a new key with the name in '''new''' with the given value.
+
+This file is going to be cleared with any next build after a release version. 
+
+<pre>
+messages: 
+  denizen-item-hint:
+    message: '{item}: {price}'
+  trader-transaction-success: 
+    message: ^6You {action} ^3{amount} ^6for ^3{price}
+  error-argument-invalid:
+    message: '^6Invalid argument was supplied: ^3{argument}'
+  plugin-command-message: 
+    message: '^6== dtlTraders ^3{version} ^6=='
+  error-npc-not-selected:
+    message: '^6You did not selected any trader'
+  wallet-balance: 
+    message: '^6Wallet balance: ^3{amount}'
+  wallet-deposit: 
+    message: ^6Deposited ^3{amount} 
+  wallet-deposit-fail: 
+    message: 'You dont have enought money' 
+  wallet-withdraw: 
+    message: ^6Withdrawed ^3{amount} 
+  wallet-withdraw-fail: 
+    message: '^6Is there enough money to withdraw from this wallet?' 
+  wallet-invalid: 
+    message: ^6You can not use this command on this wallet type
+  pattern-save-success: 
+    message: ^6Successfuly created ^3{pattern} ^6pattern
+  pattern-save-fail-exists: 
+    message: ^6This pattern already exists {pattern}
+  error-command-invalid: 
+    message: '^6This command is invalid'
+  banker-created: 
+    message: '^6You created a new banker: {banker}'
+  trader-created:
+    message: '^6You created a new trader: {trader}'
+keywords: 
+  bought:
+    keyword: Bought
+  sold: 
+    keyword: Sold
+  type: 
+    keyword: Type
+  server-trader:
+    keyword: Server Trader
+    new: trader-server
+  player-trader:
+    keyword: Player Trader
+    new: trader-player
+  market-trader:
+    keyword: Market Trader
+    new: trader-market
+  banker-type: 
+    keyword: Banker type
+  banker-private: 
+    keyword: Private Banker
+  banker-money:
+    keyword: Money Banker
+lores: 
+  manage-price: 
+    name: ^r^6Price management
+    lore:
+    - ^7Click to toggle price managing
+  manage-buy-limit: 
+    name: ^r^6Buy limit management
+    lore:
+    - ^7Allows to set amounts you 
+    - ^7want to buy from players
+</pre>
+
+=== Release locale file (atm latest build version) ===
+
+<pre>
+ver: 1.0.5
+messages:
+  plugin-reload: ^6Successfuly reloaded ^3dtlTraders
+  plugin-command-message: '^6== dtlTraders ^3{version} ^6=='
+  error-nopermission: ^6You dont have permissions to do this
+  error-nopermission-creative: ^6You dont have permissions to do this while in ^3creative mode
+  error-command-invalid: '^6This command is invalid'
+  error-argument-missing: '^6Argument is missing: {argument}'
+  error-argument-invalid: '^6Invalid argument was supplied: ^3{argument}'
+  error-npc-not-selected: '^6You did not selected any trader'
+  trader-manage-toggle: ^6Toggled ^3{mode} ^6management
+  trader-created: '^6You created a new trader: {trader}'
+  trader-stock-item-select: ^6Item selected
+  trader-stock-item-add: ^6Item added
+  trader-stock-item-update: ^6Item updated
+  trader-stock-item-remove: ^6Item removed
+  trader-transaction-success: ^3You bought/sold an item
+  trader-transaction-failed-limit: ^6Limit for that item has been reached
+  trader-transaction-failed-inventory: ^6You dont got enough place in your inventory
+  trader-transaction-failed-money: ^6Someone does not have enough money
+  managermode-enabled: ^6Manager mode enabled for ^3{npc}
+  managermode-disabled: ^6Manager mode disabled for ^3{npc}
+  wallet-balance: '^6Wallet balance: ^3{amount}'
+  wallet-deposit: ^6Deposited ^3{amount} 
+  wallet-deposit-fail: 'You dont have enought money' 
+  wallet-withdraw: ^6Withdrawed ^3{amount} 
+  wallet-withdraw-fail: '^6Is there enough money to withdraw from this wallet?' 
+  wallet-invalid: ^6You can not use this command on this wallet type
+  pattern-save-success: ^6Successfuly created ^3{pattern} ^6pattern
+  pattern-save-fail-exists: ^6This pattern already exists ^3{pattern}
+  banker-created: '^6You created a new banker: {banker}'
+  banker-tab-switch: ^6Switched to ^3{tab}
+  banker-deposit-success: ^6Item deposited
+  banker-withdraw-success: ^6Item withdrawed 
+  banker-tab-buy-success: ^6Bought a new tab
+  banker-tab-select-item: ^6Select a new tab item
+  banker-tab-select-item-success: ^6New item was set
+  banker-tab-select-item-canceled: ^6Selecting was aborted
+  denizen-item-hint: '{item}: {price}'
+  key-change: '^6Changed {key}: ^3{value}'
+  key-value: '^6{key}: ^3{value}'
+keywords:
+  manage-global-limit: Global limit
+  manage-player-limit: Player Limit
+  manage-stock: Stock
+  manage-price: Price
+  price: Price
+  owner: Owner
+  wallet: Wallet
+  stack-price: Stack price
+  enabled: Enabled
+  disabled: Disabled
+  tab-price: Tab price
+  trader-type: Trader type
+  trader-server: Server Trader
+  trader-player: Player Trader
+  trader-market: Market Trader
+  banker-type: Banker type
+  banker-private: Private Banker
+  banker-money: Money Banker
+lores:
+  player-inventory:
+    lore:
+    - '^7Unit price: ^6{unit}'
+    - '^7Stack price: ^6{stack}'
+    - ^7Click to sell
+  trader-inventory-sell:
+    lore:
+    - '^7Price: ^6{price}'
+    - ^7Click to buy
+  trader-inventory-buy:
+    lore:
+    - '^7Price: ^6{price}'
+  sell-tab:
+    name: ^r^6Sell stock
+    lore:
+    - ^7Click to switch to buy stock
+  buy-tab:
+    name: ^r^6Buy stock
+    lore:
+    - ^7Click to switch to sell stock
+  manage-price: 
+    name: ^r^6Price management
+    lore:
+    - ^7Click to toggle price managing
+  manage-global-limit: 
+    name: ^r^6Global limit management
+    lore:
+    - ^7Click to toggle global limit managing
+  manage-player-limit: 
+    name: ^r^6Player limit management
+    lore:
+    - ^7Click to toggle player limit managing
+  manage-buy-limit: 
+    name: ^r^6Buy limit management
+    lore:
+    - ^7Allows to set amounts you 
+    - ^7want to buy from players
+  return: 
+    name: ^r^6Return
+    lore:
+    - ^7Return to stock management
+  amounts-return: 
+    name: 'Back to stock'
+</pre>
+
+== Navigation ==
+{| class="wikitable" style="text-align: center; width: 500px"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="2" | '''DtlTraders'''
+|-
+| Configuration || <!--| [http://wiki.citizensnpcs.com/DtlTraders/config Configuration] -->| [http://wiki.citizensnpcs.com/DtlTraders/Commands Commands] | [http://wiki.citizensnpcs.com/DtlTraders/permissions Permissions] | [http://wiki.citizensnpcs.com/DtlTraders/locale Locale] 
+|-
+| Usage || <!--| [http://wiki.citizensnpcs.com/DtlTraders/managing Managing] | [http://wiki.citizensnpcs.com/DtlTraders/trading Trading] | [http://wiki.citizensnpcs.com/DtlTraders/banking Banking] |--> [http://wiki.citizensnpcs.com/DtlTraders/patterns Patterns]
+|-
+| Types || <!--| [http://wiki.citizensnpcs.com/DtlTraders/traders Traders] | [http://wiki.citizensnpcs.com/DtlTraders/bankers Bankers] <!--| [http://wiki.citizensnpcs.com/DtlTraders/auctionhouse Auction House] | [http://wiki.citizensnpcs.com/DtlTraders/wallets Wallets]-->
+|-
+| Denizen Support || <!--| [http://wiki.citizensnpcs.com/DtlTraders/denizen/commands Commands] | [http://wiki.citizensnpcs.com/DtlTraders/denizen/triggers Triggers] -->
+|}
+
+
+<!--
+
+== Navigation ==
+{| class="wikitable" style="text-align: center; width: 500px"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="2" | '''DtlTraders'''
+|-
+| Usage || | [http://wiki.citizensnpcs.com/DtlTraders/managing Managing] | [http://wiki.citizensnpcs.com/DtlTraders/trading Trading] | [http://wiki.citizensnpcs.com/DtlTraders/banking Banking]  | [http://wiki.citizensnpcs.com/DtlTraders/patterns Patterns] 
+|-
+| Configuration || | [http://wiki.citizensnpcs.com/DtlTraders/config Configuration] | [http://wiki.citizensnpcs.com/DtlTraders/Commands Commands] | [http://wiki.citizensnpcs.com/DtlTraders/permissions Permissions] | [http://wiki.citizensnpcs.com/DtlTraders/locale Locale] 
+|-
+| Types || | [http://wiki.citizensnpcs.com/DtlTraders/traders Traders] | [http://wiki.citizensnpcs.com/DtlTraders/bankers Bankers] | [http://wiki.citizensnpcs.com/DtlTraders/auctionhouse Auction House] | [http://wiki.citizensnpcs.com/DtlTraders/wallets Wallets]
+|}
+
+-->

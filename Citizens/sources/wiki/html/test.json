@@ -1,0 +1,21 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Test",
+    "pageid": 141,
+    "revid": 1975,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\">\n{{#if:|\n<table style=\"margin:auto; border-collapse:collapse; border-style:none; background-color:transparent; &#123;&#123; #if:\">\n<tbody><tr>\n<td>border: 1px solid #AAAAAA;\n<p>}}\" class=\"cquote\"\n</p>\n</td>\n<td>width=\"20\" valign=\"top\" style=\"color:#B2B7F2;font-size:{{#switch:20px\n</td>\n<td>10px=20px\n</td>\n<td>30px=60px\n</td>\n<td>40px=80px\n</td>\n<td>50px=100px\n</td>\n<td>60px=120px\n</td>\n<td>“\n</td>\n<td valign=\"top\" style=\"padding:4px 10px;\">quote text\n</td>\n<td>width=\"20\" valign=\"bottom\" style=\"color:#B2B7F2;font-size:{{#switch:20px\n</td>\n<td>10px=20px\n</td>\n<td>30px=60px\n</td>\n<td>40px=80px\n</td>\n<td>50px=100px\n</td>\n<td>60px=120px\n</td>\n<td>”\n</td></tr><tr>\n<td colspan=\"3\" style=\"padding-right: 4%\">{{#if:|<p style=\"font-size:smaller;text-align: right\"><cite style=\"font-style:normal;\">—{{{4}}}{{#if:|, {{{5}}}}}</cite></p>}}\n<p>}}\n</p>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20261019145909\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.018 seconds\nReal time usage: 0.028 seconds\nPreprocessor visited node count: 29/1000000\nRevision size: 21/2097152 bytes\nPost‐expand include size: 888/2097152 bytes\nTemplate argument size: 10/2097152 bytes\nHighest expansion depth: 4/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   20.450      1 Template:CQuote\n100.00%   20.450      1 -total\n-->\n\n<!-- Render ID a3152ae3-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": []
+  }
+}

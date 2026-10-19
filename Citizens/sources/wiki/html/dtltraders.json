@@ -1,0 +1,157 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "DtlTraders",
+    "pageid": 212,
+    "revid": 5516,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><div class=\"infobox\" style=\"width: 295; font-size: 12px; background: #FFFFFF; float: right; border: 1px solid #CCC; margin-left:2.5em; padding: 9px;\">\n<table width=\"275\" style=\"border: 0; background-color: #ffffff\" cellpadding=\"0\" cellspacing=\"3\">\n<tbody><tr>\n<td style=\"width: 275; vertical-align: top; border:1px solid #CCC; background-color: #ffffff\">\n<div style=\"background-color:#80aaff; font-size:1px; height:8px; border-bottom:1px solid #CCC;\"></div>\n<div style=\"float:right; margin:8px; margin-top:5px\"><span typeof=\"mw:File\"><a href=\"/File:DtlTraders.png\" class=\"mw-file-description\"><img src=\"/images/d/de/DtlTraders.png\" decoding=\"async\" width=\"450\" height=\"285\" class=\"mw-file-element\" /></a></span></div>\n<div style=\"padding:0.5em 0.3em 0.3em 0.3em; margin:0; text-indent:0.1em; font-weight: bold; border-bottom:1px solid #aaaaaa;\"><b> <span style=\"font-size:150%; line-height: 1.31em;\"><font color=\"#80aaff\"><center>dtlTraders</center></font></span> </b></div>\n<div style=\"font-size:100%; padding:3px\">\n<table cellpadding=\"0\" cellspacing=\"3\" width=\"100%\">\n<tbody><tr>\n<td align=\"left\" valign=\"top\" width=\"100%\">\n<div class=\"padded\" style=\"padding: 19px; font-family:camingodos-web, Helvetica; font-size:110%;\">\n<p><b> dtlTraders </b> was created to easily setup admin shops for your server.\nMake and manage your shops with a GUI. Seriously, no hassle with configs and commands&#160;;)\n</p><p><b> Original license: </b> MIT License\n</p><p><b> Version: </b> 3.0.8\n</p><p><b> Author: </b> Dandielo\n</p><p><b> Status: </b> Abandoned.\n</p><p><b> Source: </b> Original source code can be found on <a rel=\"nofollow\" class=\"external text\" href=\"https://github.com/Dandielo/dtlTraders\">GitHub</a>\n</p>\n</div>\n</td></tr></tbody></table>\n</div>\n</td></tr></tbody></table>\n</div>\n<p><br />\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#About\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">About</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Features\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Features</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Getting_started\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Getting started</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#How_to:\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">How to:</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#Basic_setup\"><span class=\"tocnumber\">4.1</span> <span class=\"toctext\">Basic setup</span></a></li>\n<li class=\"toclevel-2 tocsection-6\"><a href=\"#Configuration\"><span class=\"tocnumber\">4.2</span> <span class=\"toctext\">Configuration</span></a></li>\n<li class=\"toclevel-2 tocsection-7\"><a href=\"#Commands_and_Permissions\"><span class=\"tocnumber\">4.3</span> <span class=\"toctext\">Commands and Permissions</span></a></li>\n<li class=\"toclevel-2 tocsection-8\"><a href=\"#Language_and_translations\"><span class=\"tocnumber\">4.4</span> <span class=\"toctext\">Language and translations</span></a></li>\n<li class=\"toclevel-2 tocsection-9\"><a href=\"#Advanced_setup\"><span class=\"tocnumber\">4.5</span> <span class=\"toctext\">Advanced setup</span></a></li>\n<li class=\"toclevel-2 tocsection-10\"><a href=\"#Patterns\"><span class=\"tocnumber\">4.6</span> <span class=\"toctext\">Patterns</span></a></li>\n<li class=\"toclevel-2 tocsection-11\"><a href=\"#Extending\"><span class=\"tocnumber\">4.7</span> <span class=\"toctext\">Extending</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-12\"><a href=\"#Credits_and_thanks\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">Credits and thanks</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"About\">About</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders&amp;action=edit&amp;section=1\" title=\"Edit section: About\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<span style=\"font-size:200%; line-height: 1.31em;\"><font color=\"red\"><center>This page is outdated, an external author maintains a fork on <a rel=\"nofollow\" class=\"external text\" href=\"https://www.spigotmc.org/resources/dtltraders.35890/\">Spigot</a>, they provide support on <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/fyabsMF\">Discord</a></center></font></span>\n<p><b>dtlTraders</b> was a trait for Citizens2 allowing to use NPCs as merchants. \n</p><p>Creating a basic trader and managing his stock is really easy, you need to know only one simple command (/trait trader) and all other things are achieved by using the provided <b>GUI</b>. \n</p><p>However you are not forced to use the trader interface if you don't want to, this plugin comes along with a bunch of commands, and a templating feature called <b>patterns</b>, this allows you to create, change, extend, merge shops in any way you want! \nYou can also manage items and prices in shops using permissions, allowing you to change the shop content depending when a player has the required permission!\n</p><p>Also if you want you can translate each end-user part of the plugin into your language, as a result, this plugin also comes along with ready and built in translations into some languages. \n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Features\">Features</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders&amp;action=edit&amp;section=2\" title=\"Edit section: Features\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>All working features, you can use with version <b>3.0.8</b>\n</p>\n<ul><li><b>Selling</b> items to players</li>\n<li><b>Buying</b> items from players</li>\n<li>Easy adding, editing and removing items from a trader stock</li>\n<li>Easy price setting mechanism</li>\n<li>Allowing to open and set a <b>sub-inventory</b> with more specific amount choices for items</li>\n<li>Prices set can apply to a unit or to the whole stack</li>\n<li>Prices are calculated always for each added amount <i>(in the sub-inventory)</i> automatically and on the fly</li>\n<li>Supporting <b>ALL custom items</b> the bukkit API provides!</li>\n<li>Supporting <b>4 attribute modifiers</b> described <a rel=\"nofollow\" class=\"external text\" href=\"http://minecraft.gamepedia.com/Attribute\">here</a>!</li>\n<li>A lot of <b>settings</b>, you can change to fit your needs</li>\n<li>A <b>advanced translation system</b> allowing almost everything to translate!</li>\n<li>Patterns allowing to <b>setup traders even faster and permissions specific</b>!</li>\n<li>Pattern system along with the <b>default-pattern</b> allows to create shops using <b>just one command</b>!!!</li>\n<li>The plugin has it's own API allowing to create custom Trader types and item attributes!</li>\n<li>Much more incoming!</li></ul>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Getting_started\">Getting started</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders&amp;action=edit&amp;section=3\" title=\"Edit section: Getting started\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>To get this plugin working you will need to get the following plugins:\n</p>\n<ul><li><b>Citizens2</b></li>\n<li><b>Vault</b></li>\n<li>Vault supported economy plugin, like <i><b>BOSEconomy, Fe</b></i></li>\n<li>Vault supported permission plugin, like <i><b>PermissionEx, Groupmanager</b></i></li></ul>\n<p>After you got all of them you can just simply put the <b>dtlTradersx.x.x.jar</b> into the plugin directory and start using this plugin.\n</p><p>For the most basic setup you need only to know one command, <b>/trader create &lt;name&gt;</b> that creates a trader or simply create an NPC and add the <b>/trait trader</b> to it.\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"How_to:\">How to:</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders&amp;action=edit&amp;section=4\" title=\"Edit section: How to:\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Here are a bunch of helpful tutorials and links that can you help setting up a trader. You can also find here information about the advanced setup of this plugin. \n</p><p>If you lack some information you can always send US a mail to support@4Creation.pro\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Basic_setup\">Basic setup</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders&amp;action=edit&amp;section=5\" title=\"Edit section: Basic setup\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>This <a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.co/DtlTraders/basics\">tutorial</a> shows how to create a trader from scratch, how to add, edit and remove items. \nIt shows you how to set prices, manage stock item flags and how to use the <b>multiple amounts</b> feature. \n</p><p>I will also describe some config values, how they affect the game and <b>in-game management</b> of a trader and also which of them are trader specific.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Configuration\">Configuration</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders&amp;action=edit&amp;section=6\" title=\"Edit section: Configuration\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><a rel=\"nofollow\" class=\"external free\" href=\"http://wiki.citizensnpcs.co/DtlTraders/config\">http://wiki.citizensnpcs.co/DtlTraders/config</a>\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Commands_and_Permissions\">Commands and Permissions</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders&amp;action=edit&amp;section=7\" title=\"Edit section: Commands and Permissions\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><a rel=\"nofollow\" class=\"external free\" href=\"http://wiki.citizensnpcs.co/DtlTraders/Commands\">http://wiki.citizensnpcs.co/DtlTraders/Commands</a>\n</p><p><a rel=\"nofollow\" class=\"external free\" href=\"http://wiki.citizensnpcs.co/DtlTraders/permissions\">http://wiki.citizensnpcs.co/DtlTraders/permissions</a>\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Language_and_translations\">Language and translations</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders&amp;action=edit&amp;section=8\" title=\"Edit section: Language and translations\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Advanced_setup\">Advanced setup</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders&amp;action=edit&amp;section=9\" title=\"Edit section: Advanced setup\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Patterns\">Patterns</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders&amp;action=edit&amp;section=10\" title=\"Edit section: Patterns\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Extending\">Extending</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders&amp;action=edit&amp;section=11\" title=\"Edit section: Extending\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Credits_and_thanks\">Credits and thanks</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders&amp;action=edit&amp;section=12\" title=\"Edit section: Credits and thanks\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<!-- \nNewPP limit report\nCached time: 20261019145850\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.041 seconds\nReal time usage: 0.055 seconds\nPreprocessor visited node count: 61/1000000\nRevision size: 5891/2097152 bytes\nPost‐expand include size: 1265/2097152 bytes\nTemplate argument size: 663/2097152 bytes\nHighest expansion depth: 3/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    4.456      1 Template:Box\n100.00%    4.456      1 -total\n-->\n\n<!-- Render ID 97c1ff64-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [
+      "DtlTraders.png"
+    ],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "About",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "DtlTraders",
+        "byteoffset": 913,
+        "anchor": "About",
+        "linkAnchor": "About"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Features",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "DtlTraders",
+        "byteoffset": 2083,
+        "anchor": "Features",
+        "linkAnchor": "Features"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Getting started",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "DtlTraders",
+        "byteoffset": 3181,
+        "anchor": "Getting_started",
+        "linkAnchor": "Getting_started"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "How to:",
+        "number": "4",
+        "index": "4",
+        "fromtitle": "DtlTraders",
+        "byteoffset": 3763,
+        "anchor": "How_to:",
+        "linkAnchor": "How_to:"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Basic setup",
+        "number": "4.1",
+        "index": "5",
+        "fromtitle": "DtlTraders",
+        "byteoffset": 4028,
+        "anchor": "Basic_setup",
+        "linkAnchor": "Basic_setup"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Configuration",
+        "number": "4.2",
+        "index": "6",
+        "fromtitle": "DtlTraders",
+        "byteoffset": 4451,
+        "anchor": "Configuration",
+        "linkAnchor": "Configuration"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Commands and Permissions",
+        "number": "4.3",
+        "index": "7",
+        "fromtitle": "DtlTraders",
+        "byteoffset": 4521,
+        "anchor": "Commands_and_Permissions",
+        "linkAnchor": "Commands_and_Permissions"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Language and translations",
+        "number": "4.4",
+        "index": "8",
+        "fromtitle": "DtlTraders",
+        "byteoffset": 4656,
+        "anchor": "Language_and_translations",
+        "linkAnchor": "Language_and_translations"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Advanced setup",
+        "number": "4.5",
+        "index": "9",
+        "fromtitle": "DtlTraders",
+        "byteoffset": 4691,
+        "anchor": "Advanced_setup",
+        "linkAnchor": "Advanced_setup"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Patterns",
+        "number": "4.6",
+        "index": "10",
+        "fromtitle": "DtlTraders",
+        "byteoffset": 4715,
+        "anchor": "Patterns",
+        "linkAnchor": "Patterns"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Extending",
+        "number": "4.7",
+        "index": "11",
+        "fromtitle": "DtlTraders",
+        "byteoffset": 4733,
+        "anchor": "Extending",
+        "linkAnchor": "Extending"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Credits and thanks",
+        "number": "5",
+        "index": "12",
+        "fromtitle": "DtlTraders",
+        "byteoffset": 4753,
+        "anchor": "Credits_and_thanks",
+        "linkAnchor": "Credits_and_thanks"
+      }
+    ],
+    "showtoc": ""
+  }
+}

@@ -1,0 +1,93 @@
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://meta.denizenscript.com/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+<s>== In-Game Commands ==
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+Denizen has some in-game commands that help manage Denizen NPCs and scripts. Some commands will require additional knowledge of other parts of Denizen, but I've included this first to get them out of the way. Note: There are NO commands for Players using Denizens. Commands are intended for OP use only. These are to be used in addition with all the core [[Commands|C2 NPC commands]], so you should know those as well. 
+</div>
+
+==== Denizen NPC Creation ====
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+Creating a Denizen NPC is easy! Simply use the core C2 commands as such:
+<pre>/npc create 'Name of NPC'
+/trait denizen
+
+or
+
+/npc create 'Name of NPC' --trait denizen
+</pre>
+
+That's it! You can, of course, use any of the core C2 commands to change the mob-type and other traits, which are referenced in the [[Commands|Citizens2 command page]]. Baby Chicken Denizens? Totally cool! Charged Creeper Denizens? Even cooler!
+</div>
+
+==== Info-Click ====
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+<pre>/denizen info</pre>
+The best way to get information about your Denizen NPC is to use Info-Click. If you are OP, simply crouch-right click an NPC to get a list of NPC stats, script assignments, block bookmarks, texts, and trigger statuses. This information can also be reached by selecting an NPC (C2 Core Function, usually by right-clicking with a Stick), and using the <tt>/denizen info</tt> command.
+</div>
+
+==== Debug Mode ====
+[[File:Maggie Choice Debug.png|right|thumb|200px|A sample debug screen.]]
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+<pre>/denizen debug
+/denizen stacktrace</pre>
+
+I've done my best to catch errors and output them in a friendly and informative matter. This can be enabled by using <tt>/denizen debug</tt>. It is recommended that you use this if you get unpredictable behavior from your scripts. If you are running into a problem that seems to beyond bad command syntax, I may ask you to use the <tt>/denizen stacktrace</tt> command in conjuntion with debug mode. This will enable stacktraces for serious errors which help me find the location of problems in the code.
+</div>
+
+==== Trigger Toggles ====
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+<pre>/denizen trigger list
+/denizen trigger toggle [trigger_name]</pre>
+
+Upon creation, Denizens come with Click and Chat triggers turned on. To toggle or check the status of other triggers, use these commands. You can also see trigger status in Info-Click.</div>
+
+==== Script Assignment ====
+{{color|red|white|Not current implemented, must be done manually. See [[Denizen/0.7/Assignments|Assignments]]}}
+<del><div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+<pre>/denizen assign [#] [(^)Name of Script]
+/denizen remove [Name of Script]
+/denizen list</pre>
+
+Script assignment can always be done by hand (which is what I personally prefer) by simply editing the assignments.yml and using a <tt>/denizen reload</tt>, but if you would rather use in-game commands, they are provided. Scripts assignments require a priority and a script name. You can also use a '^' at the beginning of the script name to indicate an Overlay Script Assignment. This is all covered in the Assignments section.s are covered further down in the document.
+</div></del>
+
+==== Bookmark Creation ====
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+<pre>/denizen bookmark block [name]
+/denizen bookmark location [name]
+/denizen bookmark remove [name]
+/denizen bookmark list</pre>
+
+Bookmarks are 'saved locations' for your Denizen to reference in Scripts. There are currently two types: Location Bookmarks and Block Bookmarks. Bookmarks are an easier way to handle locations, since X Y and Z coordinates can get out of hand very easily. You can always check which bookmarks a Denizen NPC has by using Info-Click, or by selecting a Denizen NPC and typing <tt>/denizen bookmark list</tt>.
+
+===== Block Bookmarks =====
+Block bookmarks are created by first selecting a Denizen you wish to assign the bookmark to, then by pointing your crosshairs to a block and typing <tt>/denizen bookmark block [name]</tt>. Remember, names should only be one word and are case-sensitive. Commands such as CHANGE, and SWITCH require block bookmarks. The POWERED requirement also requires a block bookmark. When listing bookmarks you can easily see the Material of the block as well as if it is currently powered by redstone. Possible Scenario: Need to check the status of a redstone torch in your script? Easy! Create a block bookmark at that location and use the POWERED [bookmark] requirement to base script interaction on the status of the torch. Any block that can be powered can be used.
+
+===== Location Bookmarks =====
+Location bookmarks store the X,Y and Z coordinates as well as the Pitch/Yaw of the Player are useful in a couple different ways. First, they store an exact X,Y,Z Location that can be utilized with commands such as TELEPORT, SPAWN, and WALKTO. The second set of information in a Location bookmarks is the Pitch and Yaw, which can be useful with the LOOK command. Upon creation, the location, pitch, and yaw of the Player is the information that is stored. Possible Scenario: Need a Denizen to look at a clue? Easy! Create a Location bookmark while looking at the spot, then use LOOK [bookmark] to have the NPC Denizen look in the same direction.
+
+Location bookmarks are also used to define the 'Trigger: node' in Location Triggers.
+</div>
+
+[[Category:Denizen 0.7]]</s>

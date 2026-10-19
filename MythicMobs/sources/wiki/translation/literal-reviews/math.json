@@ -1,0 +1,68 @@
+[
+  {
+    "file": "wiki/skills/math.md",
+    "part_index": 61,
+    "source": "Multiplication",
+    "translation": "乘法"
+  },
+  {
+    "file": "wiki/skills/math.md",
+    "part_index": 68,
+    "source": "Division",
+    "translation": "除法"
+  },
+  {
+    "file": "wiki/skills/math.md",
+    "part_index": 75,
+    "source": "Power",
+    "translation": "乘方"
+  },
+  {
+    "file": "wiki/skills/math.md",
+    "part_index": 82,
+    "source": "Remainder",
+    "translation": "余数"
+  },
+  {
+    "file": "wiki/skills/math.md",
+    "part_index": 130,
+    "source": "Equals",
+    "translation": "等于"
+  },
+  {
+    "file": "wiki/skills/math.md",
+    "part_index": 186,
+    "source": "cosine",
+    "translation": "余弦"
+  },
+  {
+    "file": "wiki/skills/math.md",
+    "part_index": 226,
+    "source": "secant",
+    "translation": "正割"
+  },
+  {
+    "file": "wiki/skills/math.md",
+    "part_index": 236,
+    "source": "sine",
+    "translation": "正弦"
+  },
+  {
+    "file": "wiki/skills/math.md",
+    "part_index": 251,
+    "source": "tangent",
+    "translation": "正切"
+  },
+  {
+    "file": "wiki/skills/math.md",
+    "part_index": 276,
+    "source": "minimum",
+    "translation": "最小值"
+  },
+  {
+    "file": "wiki/skills/math.md",
+    "part_index": 281,
+    "source": "maximum",
+    "translation": "最大值"
+  }
+]

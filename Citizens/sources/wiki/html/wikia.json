@@ -1,0 +1,44 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Wikia",
+    "pageid": 135,
+    "revid": 1295,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><div class=\"mw-heading mw-heading2\"><h2 id=\"If_you_are_seeing_this_page...\">If you are seeing this page...</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Wikia&amp;action=edit&amp;section=1\" title=\"Edit section: If you are seeing this page...\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>That probably means that you were on the old Citizens wikia. We've repetitively asked Wikia to remove that wiki, simply because it's <b>old</b>, <b>outdated'</b>, and nowadays just flat out <b>wrong</b>. They've banned most of us from editing it because we post on it that it is outdated, and this is apparently \"vandalism\" according to their staff. You were redirected here because you followed a link on that wikia,\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Why_am_I_here?\"><span id=\"Why_am_I_here.3F\"></span>Why am I here?</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Wikia&amp;action=edit&amp;section=2\" title=\"Edit section: Why am I here?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>The old wiki is wrong. Almost everything on it is incorrect. You were sent here so we could warn you of the dangers of using Wikia.\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145908\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.006 seconds\nReal time usage: 0.007 seconds\nPreprocessor visited node count: 5/1000000\nRevision size: 600/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID a27c9463-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "If you are seeing this page...",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Wikia",
+        "byteoffset": 0,
+        "anchor": "If_you_are_seeing_this_page...",
+        "linkAnchor": "If_you_are_seeing_this_page..."
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Why am I here?",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Wikia",
+        "byteoffset": 450,
+        "anchor": "Why_am_I_here?",
+        "linkAnchor": "Why_am_I_here?"
+      }
+    ]
+  }
+}

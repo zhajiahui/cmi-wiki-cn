@@ -1,0 +1,430 @@
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://one.denizenscript.com/denizen/cmds/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://one.denizenscript.com/denizen/cmds/denizen/vids Tutorial Videos] on youtube or the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+<br><br><br>
+
+
+__TOC__
+
+==Flags==
+
+<s>{| class="wikitable" width="100%" border="1"
+|-
+| width="30%" | <flag.g:flag_name>
+| Returns the value of a flag attached to the server. NOTE: In 0.9, it's more preferred to use <server.flag[flag_name]>
+|-
+| <flag.n:flag_name>
+| Returns the value of a flag attached to the current NPC. NOTE: In 0.9, it's more preferred to use <npc.flag[flag_name]>
+|-
+| <flag.p:flag_name>
+| Returns the value of a flag attached to the current player. NOTE: In 0.9, it's more preferred to use <player.flag[flag_name]>
+|-
+|<player[player_name].flag[flag_name]>
+|Returns the value of a flag for another player.
+|-
+|<player.flag[flag_name]>.isexpired>
+|Returns true or false if the duration of a flag has expired.
+|}
+
+==Location==
+All location tags require coordinates. You can have tags in the brackets [] or you can specify exact locations by yourself. For example, you could use <pre><location[<npc.location>].biome.temperature></pre> to get the temperature at the NPC's location.
+
+{| class="wikitable" width="100%" border="1"
+|-
+| width="30%" | <location[x,y,z,world].biome.formatted>
+| The formatted name of the biome at coordinates.
+|-
+| <location[x,y,z,world].biome.humidity>
+| The current humidity at the coordinates.
+|-
+| <location[x,y,z,world].biome.temperature>
+| The current temperature at the coordinates.
+|-
+| <location[x,y,z,world].distance[x,y,z,world]>
+| The distance between 2 coordinates.
+|-
+| <location[x,y,z,world].formatted>
+| The coordinates in an easier-to-read format.
+|-
+| <location[x,y,z,world].is_liquid>
+| Whether or not the block at the coordinates are a liquid. Can be true or false.
+|-
+| <location[x,y,z,world].light>
+| The light level at the coordinates.
+|}
+
+==NPC==
+NOTE: You can reference an NPC other than the one in the current script by using <npc[npc_id]>... So for example, <npc[2].id> (which would be completely useless) would return '2'.
+
+{| class="wikitable" width="100%" border="1"
+|-
+| width="30%" | <npc.flag[flag_name]>
+| Returns the value of a flag attached to an NPC.
+|-
+| <npc.id>
+| The ID number of the NPC.
+|-
+| <npc.location>
+| The coordinates of the NPC. [x,y,z,world]
+|-
+| <npc.location.previous_location>
+| The last location the NPC was at.
+|-
+| <npc.location.standing_on>
+| The Bukkit block name that the NPC is standing on.
+|-
+| <npc.location.standing_on_display>
+| The formatted block name that the NPC is standing on.
+|-
+| <npc.location.world>
+| The name of the world the NPC is in.
+|-
+| <npc.location.world_spawn>
+| The coordinates of the spawn of the world that the NPC is currently in.
+|-
+| <npc.location.x>
+| The x coordinate the NPC is at.
+|-
+| <npc.location.y>
+| The y coordinate the NPC is at.
+|-
+| <npc.location.z>
+| The z coordinate the NPC is at.
+|-
+| <npc.name>
+| The NPC's name.
+|-
+| <npc.name.nickname>
+| The NPC's nickname.
+|-
+| <npc.owner>
+| The owner of the NPC.
+|}
+
+==Player==
+NOTE: You can reference a player other than the one in the current script by using <player[player_name]>... So for example, <player[Morphan1].name> (which would be completely useless) would return 'Morphan1'.
+{{Denizen Replaceable
+|<player.name>|The player's name.
+}}
+{| class="wikitable" width="100%" border="1"
+|-
+| width="30%" | <player.chat_history>
+| Last message the player sent.
+|-
+| <player.chat_history[X]>
+| Message the player sent X times ago.
+|-
+| <player.equipment.boots>
+| The Bukkit name for the boots the player is wearing. Can also be used for chestplate, leggings, and helmet.
+|-
+| <player.equipment.boots.formatted>
+| The formatted name for the boots the player is wearing. Can also be used for chestplate, leggings, and helmet.
+|-
+| <player.flag[flag_name]>
+| Returns the value of a flag attached to a player.
+|-
+| <player.health>
+| The player's health, 1-20. Each number is half of a heart.
+|-
+| <player.health.formatted>
+| The player's formatted health. Can be healthy, scraped, injured, seriously wounded, and dying.
+|-
+| <player.health.percentage>
+| The player's health as a percentage.
+|-
+| <player.inventory.contains.display[display_name]>
+| Checks if the player's inventory contains an item with a name chosen on an anvil. You can also add .qty[X] to check if the player has an X amount of the item. Can be true or false.
+|-
+| <player.inventory.contains[item_id]>
+| Checks if the player's inventory contains an item. You can also add .qty[X] to check if the player has an X amount of the item. Can be true or false.
+|-
+| <player.food_level>
+| The player's food level, 1-20. Each number is half of a thing-on-the-hunger-bar.
+|-
+| <player.food_level.formatted>
+| The player's formatted food level. Can be healthy, parched, hungry, and famished.
+|-
+| <player.food_level.percentage>
+| The player's food level as a percentage.
+|-
+| <player.group[group_name]>
+| Checks if the player is in a group via Vault. Can be true or false.
+|-
+| <player.group[group_name].global>>
+| Checks if the player is in a global group via Vault. Can be true or false.
+|-
+| <player.item_in_hand.enchantments>
+| List of enchantments on item in player's hand.
+|-
+| <player.item_in_hand.enchantments_with_level>
+| List of enchantments and their levels on item in player's hand.
+|-
+| <player.item_in_hand.enchantments_with_level_only>
+| List of levels of enchantments on item in player's hand.
+|-
+| <player.item_in_hand>
+| Contains all details of the item in the player's hand.
+|-
+| <player.item_in_hand.data>
+| The material data of the item the player is holding.
+|-
+| <player.item_in_hand.display>
+| The name chosen on an anvil for the item the player is holding.
+|-
+| <player.item_in_hand.durability>
+| The durability of the item the player is holding.
+|-
+| <player.item_in_hand.id>
+| The ID of the block or item the player is holding. All block and item IDs are found [http://www.minecraftwiki.net/wiki/Data_values here].
+|-
+| <player.item_in_hand.lore>
+| List of lore on item in the player's hand.
+|-
+| <player.item_in_hand.max_stack>
+| The maximum amount you can have in one inventory slot of the item the player is holding.
+|-
+| <player.item_in_hand.material>
+| Bukkit material name of the item in the player's hand.
+|-
+| <player.item_in_hand.material.formatted>
+| Formatted material name of the item in the player's hand.
+|-
+| <player.item_in_hand.qty>
+| The current amount of the inventory slot of the item the player is holding.
+|-
+| <player.is_banned>
+| Whether the player is banned. Can be true or false.
+|-
+| <player.is_online>
+| Whether the player is online. Can be true or false.
+|-
+| <player.is_op>
+| Whether the player is an operator. Can be true or false.
+|-
+| <player.location>
+| The coordinates of the player. [x,y,z,world]
+|-
+| <player.location.bed_spawn>
+| The coordinates of the last bed the player slept in, if any.
+|-
+| <player.location.cursor_on[X]>
+| The location of the block the player's cursor is on, within X range.
+|-
+| <player.location.standing_on>
+| The Bukkit block name that the player is standing on.
+|-
+| <player.location.standing_on.formatted>
+| The formatted block name that the player is standing on.
+|-
+| <player.location.world>
+| The name of the world the player is in.
+|-
+| <player.location.world_spawn>
+| The coordinates of the spawn of the world that the player is currently in.
+|-
+| <player.location.x>
+| The x coordinate the player is at.
+|-
+| <player.location.y>
+| The y coordinate the player is at.
+|-
+| <player.location.z>
+| The z coordinate the player is at.
+|-
+| <player.money>
+| The amount of money in this player's account. Requires Vault and an economy plugin.
+|-
+| <player.name>
+| The player's name.
+|-
+| <player.name.display>
+| The player's display name. (The one that shows in chat.)
+|-
+| <player.mcmmo.level[skill_name]>
+| The player's current level for an McMMO skill.
+|-
+| <player.money>
+| How much money the player has, as a number. (0.0, 1.5, 2.25, etc.)
+|-
+| <player.money.asint>
+| How much money the player has, as an integer. (0, 1, 2, etc.)
+|-
+| <player.money.currency>
+| The currency set in this server's economy plugin.
+|-
+| <player.money.currency.plural>
+| The currency set in this server's economy plugin, in its plural form.
+
+Examples: Dollars, pounds, coins
+|-
+| <player.money.currency.singular>
+| The currency set in this server's economy plugin, in its singular form.
+
+Examples: Dollar, pound, coin
+|-
+| <player.script[script_name].failed>
+| Checks if the player has failed a script. Can be true or false.
+|-
+| <player.script[script_name].finished>
+| Checks if the player has finished a script. Can be true or false.
+|-
+| <player.time>
+| The player's time in ticks, from 0 to 23999. For a quick view of what different tick values mean in real life hours, look [http://media-mcw.cursecdn.com/b/bc/Day_Night_Clock_24h.png here].
+|-
+| <player.time.period>
+| The time period for this player. Can be "day" or "night".
+|-
+| <player.xp>
+| The total experience of a player.
+|-
+| <player.xp.level>
+| The current experience level of a player.
+|-
+| <player.weather>
+| The current weather in this player's world. Is "storming" if there's a storm, "sunny" if the weather is clear and it's daytime, and "clear" if the weather is clear and it's nighttime.
+|}
+
+==Util==
+
+{| class="wikitable" width="100%" border="1"
+|-
+| width="30%" | <util.random.int[1].to[50]>
+| Returns a random number between the lower bound (first number) and upper bound (second number).
+|-
+| width="30%" | <util.random.uuid>
+| Returns a random "uuid" useful for starting new queues.
+|-
+| width="30%" | <util.substr[string]>
+| Returns a substring of a string.
+|-
+|}
+
+==Math Tags==
+Math tags are a useful part of Denizen that, as the name implies, allows you to perform mathematical operations internally.
+
+Here's the general syntax, with spaces for readability. (You shouldn't include spaces in your actual script. If you must, put it in "quotes")
+<pre>
+<m: firstThing + secondThing> 
+//Now, all together,
+<m:firstThing+secondThing>
+</pre>
+Of course, + isn't the only mathematical operator that can be used. You can also use:
+
+Minus and Modulus: (- and %)
+
+Divide and Multiply: (/ and *)
+
+==Text==
+
+===Colors===
+
+{{Denizen Replaceable
+|<player.name>|The player's name.
+}}
+
+{| class="wikitable" width="25%" border="1"
+|-
+| width="60%" | <aqua>
+| style="background-color:#55FFFF" |
+|-
+| <black>
+| style="background-color:black" |
+|-
+| <blue>
+| style="background-color:#5555FF" |
+|-
+| <dark_aqua>
+| style="background-color:#00AAAA" |
+|-
+| <dark_blue>
+| style="background-color:#0000AA" |
+|-
+| <dark_gray>
+| style="background-color:#555555" |
+|-
+| <dark_green>
+| style="background-color:#00AA00" |
+|-
+| <dark_purple>
+| style="background-color:#AA00AA" |
+|-
+| <dark_red>
+| style="background-color:#AA0000" |
+|-
+| <gold>
+| style="background-color:#FFAA00" |
+|-
+| <gray>
+| style="background-color:#AAAAAA" |
+|-
+| <green>
+| style="background-color:#55FF55" |
+|-
+| <light_purple>
+| style="background-color:#FF55FF" |
+|-
+| <red>
+| style="background-color:#FF5555" |
+|-
+| <white>
+| style="background-color:white" |
+|-
+| <yellow>
+| style="background-color:#FFFF55" |
+|}
+
+===Special Characters===
+
+{{Denizen Replaceable
+|<player.name>|The player's name.
+}}
+
+{| class="wikitable" width="25%" border="1"
+|-
+| width="60%" | <&nl>
+| NewLine 
+|-
+| <&cm> 
+| , 
+|-
+| <&ss> 
+| § 
+|-
+| <&sq> 
+| ' 
+|-
+| <&dq> 
+| " 
+|-
+| <&co> 
+| : 
+|-
+| <&rb> 
+| ] 
+|-
+| <&lb> 
+| [
+|-
+| <&rc> 
+| } 
+|-
+| <&lc> 
+| {
+|-
+| <&ns> 
+| #
+|-
+|}
+
+==Pssst...==
+http://pastebin.com/KBADLinZ<br>
+Here is a summary of them :)<br>
+-Jeebs</s>

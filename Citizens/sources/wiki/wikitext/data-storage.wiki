@@ -1,0 +1,55 @@
+Data storage in Citizens2 is handled in one of two ways: [[#Saves.yml|YAML flatfile]] or a NBT file.
+
+==saves.yml==
+''saves.yml'' is used by default to store all data on created NPCs.
+
+===Structure===
+Mouseover to view info:
+ <nowiki></nowiki># Citizens NPC Storage
+ <nowiki></nowiki>{{H:title|The NPC block. All NPC specifics go here|npc:}}
+   {{H:title|The NPC's ID|'0':}}
+    {{H:title|The name of the NPC. Displayed above head for regular NPCs.|name: My_First_NPC}}
+    {{H:title|Traits block. All specifics about the NPC are located here.|traits:}}
+      {{H:title|Age block. Age specific settings are stored here.|age:}}
+        {{H:title|What is the NPC's current age?|age: 0}}
+        {{H:title|Will the NPC age over time?|locked: true}}
+      {{H:title|Should the NPC be spawned on server startup?|spawned: true}}
+      {{H:title|Type of NPC. Either PLAYER or the mob type|type: PLAYER}}
+      {{H:title|Owner of the NPC. Can be set to "server".|owner: Steve}}
+      {{H:title|Should the NPC look at the player when he comes near it?|lookclose: true}}
+      {{H:title|Location block. Stores the location of the NPC|location:}}
+        {{H:title|World that the NPC is located in|world: world}}
+        {{H:title|X coordinate of the NPC|x: '92.65002360423462'}}
+        {{H:title|Y coordinate of the NPC|y: '3.0'}}
+        {{H:title|Z coordinate of the NPC|z: '-264.5621058817138'}}
+        {{H:title|Yaw (direction the NPC is looking) of the NPC in degrees|yaw: '87.90003967285156'}}
+        {{H:title|Pitch (height the NPC is looking) of the NPC in degrees|pitch: '21.14999008178711'}}
+      {{H:title|Text block. Stores information about the NPC's text.|text:}}
+        {{H:title|Should the NPC talk when a player gets near it?|talk-close: true}}
+        {{H:title|Should the NPC talk randomly?|random-talker: true}}
+        {{H:title|First line of the NPC's chat.|0: Hello, there. I'm My_First_NPC.}}
+      {{H:title|Waypoints block|waypoints:}}
+        {{H:title|Linear type of waypoints|linear:}}
+          {{H:title|Points section of the linear block|points:}}
+            {{H:title|Waypoint number|'0':}}
+              {{H:title|Waypoint location block|location:}}
+                {{H:title|World of the waypoint|world: MyWorld}}
+                {{H:title|X coordinate of the waypoint|x: 60}}
+                {{H:title|Y coordinate of the waypoint|y: 64}}
+                {{H:title|Z coordinate of the waypoint|z: 80}}
+                {{H:title|Pitch of the waypoint|pitch: 90}}
+                {{H:title|Yaw of the waypoint|yaw: 0}}
+              {{H:title|How long to wait at this point|delay: 0}}
+            {{H:title|Waypoint number|'1':}}
+              {{H:title|Waypoint location block|location:}}
+                {{H:title|World of the waypoint|world: MyWorld}}
+                {{H:title|X coordinate of the waypoint|x: 65}}
+                {{H:title|Y coordinate of the waypoint|y: 64}}
+                {{H:title|Z coordinate of the waypoint|z: 82}}
+                {{H:title|Pitch of the waypoint|pitch: 45}}
+                {{H:title|Yaw of the waypoint|yaw: 0}}
+              {{H:title|How long to wait at this point|delay: 0}}
+        {{H:title|Which pathfinder code do we use? (probably linear)|provider: linear}}
+
+{{NavBox}}
+[[Category:Configuration]]

@@ -1,0 +1,33 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Denizen/0.7/Replaceables.8",
+    "pageid": 270,
+    "revid": 5393,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://meta.denizenscript.com/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br /><br /><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p>\n<div style=\"margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;\">\n<p>Replaceable data tags can be used to dynamically put flags and values inside texts and commands.\n</p>\n</div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Flag_Replaceables\">Flag Replaceables</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Replaceables.8&amp;action=edit&amp;section=1\" title=\"Edit section: Flag Replaceables\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<table class=\"wikitable\">\n\n<tbody><tr>\n<th>&lt;PLAYER.NAME&gt;</th>\n<th>Gets the bukkit Player Name\n</th></tr>\n<tr>\n<td>&lt;PLAYER.NAME.DISPLAY&gt;</td>\n<td>Gets the Player Name with Prefixes and colors, if specified\n</td></tr>\n<tr>\n<td>&lt;PLAYER.NAME.PLIST&gt;</td>\n<td>Gets the Player Name that is listed in the Player List\n</td></tr></tbody></table>\n<table class=\"wikitable\">\n\n<tbody><tr>\n<th>&lt;PLAYER.LOCATION&gt;</th>\n<th>Gets the Player's current location, formatted for dscript.\n</th></tr>\n<tr>\n<td>&lt;PLAYER.LOCATION.FORMATTED&gt;</td>\n<td>Gets a text-friendly formatted version of the Player's current location\n</td></tr>\n<tr>\n<td>&lt;PLAYER.LOCATION.STANDING_ON&gt;</td>\n<td>Gets the name of the block that the Player is currently standing on\n</td></tr>\n<tr>\n<td>&lt;PLAYER.LOCATION.WORLD&gt;</td>\n<td>Gets the name of the world the Player is currently in.\n</td></tr>\n<tr>\n<td>&lt;PLAYER.LOCATION.WORLD_SPAWN&gt;</td>\n<td>Gets the Player's current world's spawn location, formatted for dscript\n</td></tr>\n<tr>\n<td>&lt;PLAYER.LOCATION.BED_SPAWN&gt;</td>\n<td>Gets the Player's current bed spawn location, formatted for dscript.\n</td></tr></tbody></table>\n<table class=\"wikitable\">\n\n<tbody><tr>\n<th>&lt;PLAYER.HEALTH&gt;</th>\n<th>Gets the Player's current health.\n</th></tr>\n<tr>\n<td>&lt;PLAYER.HEALTH.FORMATTED&gt;</td>\n<td>Gets a text-friendly representation of the Player's health, by dividing max-health by current-health.\n</td></tr>\n<tr>\n<td>&lt;PLAYER.HEALTH.FORMATTED.#&gt;</td>\n<td>Same, except specifies max-health instead of relying on bukkit's p.getMaxHealth().\n</td></tr>\n<tr>\n<td>&lt;PLAYER.HEALTH.PERCENTAGE&gt;</td>\n<td>Gets the percentage of the Player's health.\n</td></tr>\n<tr>\n<td>&lt;PLAYER.HEALTH.PERCENTAGE.#&gt;</td>\n<td>Same, except specifies max-health instead of relying on bukkit's p.getMaxHealth().\n</td></tr></tbody></table>\n<table class=\"wikitable\">\n\n<tbody><tr>\n<th>&lt;PLAYER.FOOD_LEVEL&gt;</th>\n<th>Gets the Player's current food level.\n</th></tr>\n<tr>\n<td>&lt;PLAYER.FOOD_LEVEL.FORMATTED&gt;</td>\n<td>Gets a text-friendly representation of the Player's food level.\n</td></tr>\n<tr>\n<td>&lt;PLAYER.FOOD_LEVEL.FORMATTED.#&gt;</td>\n<td>Same, except specifies max-food level.\n</td></tr>\n<tr>\n<td>&lt;PLAYER.FOOD_LEVEL.PERCENTAGE&gt;</td>\n<td>Gets the percentage of the Player's food level.\n</td></tr>\n<tr>\n<td>&lt;PLAYER.FOOD_LEVEL.PERCENTAGE.#&gt;</td>\n<td>Same, except specifies max-food level.\n</td></tr></tbody></table>\n<table class=\"wikitable\">\n\n<tbody><tr>\n<th>&lt;PLAYER.XP&gt;</th>\n<th>Gets the percentage of progress towards the next level.\n</th></tr>\n<tr>\n<td>&lt;PLAYER.XP.TO_LEVEL&gt;</td>\n<td>Gets the number of XP until the next level for a Player.\n</td></tr>\n<tr>\n<td>&lt;PLAYER.XP.TOTAL&gt;</td>\n<td>Gets the total amount of XP that the Player currently has.\n</td></tr>\n<tr>\n<td>&lt;PLAYER.XP.LEVEL&gt;</td>\n<td>Gets the Player's current XP Level.\n</td></tr>\n</tbody></table>\n<!-- \nNewPP limit report\nCached time: 20261019145834\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.021 seconds\nReal time usage: 0.030 seconds\nPreprocessor visited node count: 3/1000000\nRevision size: 3089/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 8e389764-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "3",
+        "line": "Flag Replaceables",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Denizen/0.7/Replaceables.8",
+        "byteoffset": 878,
+        "anchor": "Flag_Replaceables",
+        "linkAnchor": "Flag_Replaceables"
+      }
+    ]
+  }
+}

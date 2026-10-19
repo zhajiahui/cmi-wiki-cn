@@ -1,0 +1,146 @@
+[
+  {
+    "source_url": "https://worldedit.enginehub.org/en/latest/_images/cuboid.png",
+    "file": "wiki/assets/d84ee71cb357-cuboid.png",
+    "sha256": "d322fde4d460a82fceda580cc61c4e8596f3818583a9526a1d9441d5385e3118",
+    "bytes": 2313,
+    "content_type": "image/png",
+    "status": 200
+  },
+  {
+    "source_url": "https://worldedit.enginehub.org/en/latest/_images/cuboid-dark.png",
+    "file": "wiki/assets/4bd5168c152f-cuboid-dark.png",
+    "sha256": "b1215c64dd779bf1ffdbdf7547671e906003c26da13b69facd42a7f590dc7103",
+    "bytes": 2297,
+    "content_type": "image/png",
+    "status": 200
+  },
+  {
+    "source_url": "https://worldedit.enginehub.org/en/latest/_images/copypasta.png",
+    "file": "wiki/assets/33c75fb5cd84-copypasta.png",
+    "sha256": "19055f1448df2a99cc51dc70279eb82a7f93b04182c5c9dc54794d721d361005",
+    "bytes": 2165,
+    "content_type": "image/png",
+    "status": 200
+  },
+  {
+    "source_url": "https://worldedit.enginehub.org/en/latest/_images/rotate.png",
+    "file": "wiki/assets/23fd7bf68e9a-rotate.png",
+    "sha256": "36c377a9a092dcb74e8d63e6264a1a7d3bb787757601d548c717d44a8fbc0e3c",
+    "bytes": 2650,
+    "content_type": "image/png",
+    "status": 200
+  },
+  {
+    "source_url": "https://worldedit.enginehub.org/en/latest/_images/flip.png",
+    "file": "wiki/assets/13afe8c8bf21-flip.png",
+    "sha256": "279672001b4abffacee7a3b2127628275f658b3d09ae17806ed29664fd675fa7",
+    "bytes": 2771,
+    "content_type": "image/png",
+    "status": 200
+  },
+  {
+    "source_url": "https://worldedit.enginehub.org/en/latest/_images/clipboard.png",
+    "file": "wiki/assets/267d2572c9d0-clipboard.png",
+    "sha256": "0f69fddec2ed94842948a48273cd129932c2091fc5f57a47d5922d925d34ed50",
+    "bytes": 22674,
+    "content_type": "image/png",
+    "status": 200
+  },
+  {
+    "source_url": "https://worldedit.enginehub.org/en/latest/_images/clipboard_replace.png",
+    "file": "wiki/assets/3b0ac7b7a5bb-clipboard_replace.png",
+    "sha256": "891e2ba1b7f2d2bb9f687f6abef100ec232ded042f21b9536126e3325587afcb",
+    "bytes": 641286,
+    "content_type": "image/png",
+    "status": 200
+  },
+  {
+    "source_url": "https://worldedit.enginehub.org/en/latest/_images/stack_bridge.jpg",
+    "file": "wiki/assets/321e0632870e-stack_bridge.jpg",
+    "sha256": "03f4788b07fb0f6f01ff5b9ddb20a3e77438c27647bfb4892f9958445029dcf1",
+    "bytes": 128652,
+    "content_type": "image/jpeg",
+    "status": 200
+  },
+  {
+    "source_url": "https://worldedit.enginehub.org/en/latest/_images/stack_tunnel.jpg",
+    "file": "wiki/assets/e95e261dc1e0-stack_tunnel.jpg",
+    "sha256": "2cc7a7c599d6da3732d9c24b6c492101df871976a6af3254739678f53b1c37fe",
+    "bytes": 147436,
+    "content_type": "image/jpeg",
+    "status": 200
+  },
+  {
+    "source_url": "https://worldedit.enginehub.org/en/latest/_images/naturalize.jpg",
+    "file": "wiki/assets/c434767697f5-naturalize.jpg",
+    "sha256": "de8937bb8cf62badc871539f16c75080a6444b596c96c0fa73e42f16e70745dd",
+    "bytes": 87169,
+    "content_type": "image/jpeg",
+    "status": 200
+  },
+  {
+    "source_url": "https://worldedit.enginehub.org/en/latest/_images/expand_up.png",
+    "file": "wiki/assets/192a93303050-expand_up.png",
+    "sha256": "ce510cd8eb2f9146be25ef6602e9ce13e467eaad8f8283a9ad3472bacaa3158e",
+    "bytes": 2042,
+    "content_type": "image/png",
+    "status": 200
+  },
+  {
+    "source_url": "https://worldedit.enginehub.org/en/latest/_images/expand_up-dark.png",
+    "file": "wiki/assets/a01943dd28d8-expand_up-dark.png",
+    "sha256": "84a302148bc79225231bccd86a05bda03833ced5f4d391c4c922c7dfa1241c19",
+    "bytes": 2026,
+    "content_type": "image/png",
+    "status": 200
+  },
+  {
+    "source_url": "https://worldedit.enginehub.org/en/latest/_images/contract_down.png",
+    "file": "wiki/assets/bcd5efe83a00-contract_down.png",
+    "sha256": "80d3334d26e5648e22a5f6f588e26d671ceca1a720c10a84b7837112ff2c0d4e",
+    "bytes": 2028,
+    "content_type": "image/png",
+    "status": 200
+  },
+  {
+    "source_url": "https://worldedit.enginehub.org/en/latest/_images/contract_down-dark.png",
+    "file": "wiki/assets/ef3d83da4ebf-contract_down-dark.png",
+    "sha256": "114d8f4f2933afb1598a80df855e41ea6590622c5af4f4fb106598c759fde9ac",
+    "bytes": 2016,
+    "content_type": "image/png",
+    "status": 200
+  },
+  {
+    "source_url": "https://worldedit.enginehub.org/en/latest/_images/folder.png",
+    "file": "wiki/assets/ac4862224dfa-folder.png",
+    "sha256": "22c98b25c1717b0e130d089fa8018f734e83215c4aff045f1cf4afaaa0ab0f3f",
+    "bytes": 370,
+    "content_type": "image/png",
+    "status": 200
+  },
+  {
+    "source_url": "https://worldedit.enginehub.org/en/latest/_images/zip.png",
+    "file": "wiki/assets/19f16f6bd87c-zip.png",
+    "sha256": "813b4ef9158610cfafaab8517e9942d448676f535328a018cc785df735f43e81",
+    "bytes": 546,
+    "content_type": "image/png",
+    "status": 200
+  },
+  {
+    "source_url": "https://worldedit.enginehub.org/en/latest/_images/fill_pond.png",
+    "file": "wiki/assets/2595db2f7509-fill_pond.png",
+    "sha256": "1a677ebb80da4c1f83b27780b1f84412963ba03b79ad1755ca3b173d387da149",
+    "bytes": 67602,
+    "content_type": "image/png",
+    "status": 200
+  },
+  {
+    "source_url": "https://worldedit.enginehub.org/en/latest/_images/snow.jpg",
+    "file": "wiki/assets/f0f7b6898474-snow.jpg",
+    "sha256": "1a3aba9f0a49e15e28c84f32c2a669d47e93ea9338349e530547a6e1a001f8d8",
+    "bytes": 57901,
+    "content_type": "image/jpeg",
+    "status": 200
+  }
+]

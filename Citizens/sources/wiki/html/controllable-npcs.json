@@ -1,0 +1,21 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Controllable NPCs",
+    "pageid": 326,
+    "revid": 5152,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>Controllable NPCs are created using the /npc controllable command. For tricky to mount mob types like the EnderDragon, the <code>/npc mount</code> command puts you on the NPC. Otherwise, right click to mount an NPC and sneak + right click while riding to get off.\n</p><p>Land mobs are controlled using the standard movement controls. Sneak + left click to jump.\nAir mobs move towards your cursor.\n</p><p>To toggle between land and air you can use <code>/traitc controllable -g</code> for ground and -f for flying.\n</p><p>Controllable NPCs also respect your NPC's speed, so you can use /npc speed 2 to go faster while mounted.\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145837\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.012 seconds\nReal time usage: 0.025 seconds\nPreprocessor visited node count: 1/1000000\nRevision size: 607/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 1/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 90025ae8-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": []
+  }
+}

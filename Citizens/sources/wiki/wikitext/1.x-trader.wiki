@@ -1,0 +1,66 @@
+{{NoSupport}}
+'''Traders''' allow trading of items for virtual currency. The trader can both buy and sell items to the player, and uses an intuitive interface to facilitate this. '''Warning:''' may be exploitable under lag until bukkit creates inventory events.
+
+== Permissions ==
+To stock a trader, one requires the permission 'citizens.trader.modify.stock'. To trade with the trader, give users the permissions 'citizens.trader.use.trade'.
+
+==Commands==
+Commands specific for use with traders.
+
+{| class="wikitable collapsible collapsed" style="text-align: center; width: 100%"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="3" | '''Trader Commands'''
+|-
+! style="width: 250px;" | Command
+! style="width: 200px;" | Args Description
+! style="width: 150px;" | Require Selected
+! style="width: 150px;" | Require Ownership
+! style="width: 170px;" | Permission
+! Description
+|-
+| /trader help
+| ''None''
+| false
+| false
+| citizens.trader.use.help
+| View the help page for traders
+|-
+| /npc money (give/take) (amount)
+| ''give/take'' - whether to give or take money from a trader <br>''amount'' - amount to give or take
+| true
+| true
+| citizens.citizens.trader.modify.money to modify; citizens.trader.use.showmoney to view the current balance
+| Control a trader's balance
+|-
+| /trader list [buy/sell]
+| ''buy/sell'' - whether to display the buy or sell list
+| true
+| false
+| citizens.trader.use.list
+| View a trader's buying/selling list
+|-
+| /trader unlimited
+| ''None''
+| true
+| true
+| citizens.trader.modify.unlimited
+| Toggle a trader as having an unlimited stock
+|-
+| /trader buy/sell [item] [price]
+| ''item'' - item to add to the list <br>''price'' - price of the item being added
+| true
+| true
+| citizens.trader.modify.stock
+| Change the stock of a trader
+|-
+| /trader clear [buy/sell]
+| ''buy/sell'' - whether to clear the buy or sell list
+| true
+| true
+| citizens.trader.modify.clearstock
+| Clear the stock of a trader
+|}
+
+
+{{NavBox}}
+[[Category:Citizens1]]

@@ -1,0 +1,429 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Frequently Asked Questions",
+    "pageid": 84,
+    "revid": 5517,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>This page contains frequently asked questions regarding the Citizens project. You should always check here before submitting an issue, asking on Discord, or posting on the forum thread. Your queries could very well have already been answered here.\n</p><p><br />\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#First_of_All\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">First of All</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Errors\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Errors</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Why_isn&#39;t_Citizens_working_on_my_server?\"><span class=\"tocnumber\">2.1</span> <span class=\"toctext\">Why isn't Citizens working on my server?</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Why_can&#39;t_my_users_hear_my_NPCs?\"><span class=\"tocnumber\">2.2</span> <span class=\"toctext\">Why can't my users hear my NPCs?</span></a></li>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#I_can&#39;t_right-click_to_select_an_NPC\"><span class=\"tocnumber\">2.3</span> <span class=\"toctext\">I can't right-click to select an NPC</span></a></li>\n<li class=\"toclevel-2 tocsection-6\"><a href=\"#There&#39;s_a_&quot;0_health&quot;_line_below_my_NPC&#39;s_names\"><span class=\"tocnumber\">2.4</span> <span class=\"toctext\">There's a \"0 health\" line below my NPC's names</span></a></li>\n<li class=\"toclevel-2 tocsection-7\"><a href=\"#Why_are_NPCs_showing_up_in_the_tablist?\"><span class=\"tocnumber\">2.5</span> <span class=\"toctext\">Why are NPCs showing up in the tablist?</span></a></li>\n<li class=\"toclevel-2 tocsection-8\"><a href=\"#I_have_a_free_server_(Aternos,_Minehut,_...)_but_there&#39;s_problems\"><span class=\"tocnumber\">2.6</span> <span class=\"toctext\">I have a free server (Aternos, Minehut, ...) but there's problems</span></a></li>\n<li class=\"toclevel-2 tocsection-9\"><a href=\"#My_PlaceholderAPI_Placeholder_Works_In_Chat,_But_Not_On_An_NPC\"><span class=\"tocnumber\">2.7</span> <span class=\"toctext\">My PlaceholderAPI Placeholder Works In Chat, But Not On An NPC</span></a></li>\n<li class=\"toclevel-2 tocsection-10\"><a href=\"#My_NPCs_Have_Names_Like_CIT-abc_Instead_Of_Their_Actual_Names\"><span class=\"tocnumber\">2.8</span> <span class=\"toctext\">My NPCs Have Names Like CIT-abc Instead Of Their Actual Names</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-11\"><a href=\"#How_To\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">How To</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-12\"><a href=\"#Can_I_change_what_skin_an_NPC_has,_separately_from_its_name?\"><span class=\"tocnumber\">3.1</span> <span class=\"toctext\">Can I change what skin an NPC has, separately from its name?</span></a></li>\n<li class=\"toclevel-2 tocsection-13\"><a href=\"#How_do_I_make_an_NPC_run_a_command_when_a_player_clicks_it?\"><span class=\"tocnumber\">3.2</span> <span class=\"toctext\">How do I make an NPC run a command when a player clicks it?</span></a></li>\n<li class=\"toclevel-2 tocsection-14\"><a href=\"#My_NPCs_Aren&#39;t_Standing_On_Exactly_Their_Path_Destination\"><span class=\"tocnumber\">3.3</span> <span class=\"toctext\">My NPCs Aren't Standing On Exactly Their Path Destination</span></a></li>\n<li class=\"toclevel-2 tocsection-15\"><a href=\"#&quot;Hi,_I&#39;m_npc&quot;_keeps_appearing_after_I_removed_text_from_an_NPC\"><span class=\"tocnumber\">3.4</span> <span class=\"toctext\">\"Hi, I'm npc\" keeps appearing after I removed text from an NPC</span></a></li>\n<li class=\"toclevel-2 tocsection-16\"><a href=\"#How_Do_I_Set_Up_An_NPC_As_A_Shop?\"><span class=\"tocnumber\">3.5</span> <span class=\"toctext\">How Do I Set Up An NPC As A Shop?</span></a></li>\n<li class=\"toclevel-2 tocsection-17\"><a href=\"#How_Do_I_Make_An_NPC_Wander_Around_Like_A_Mob?\"><span class=\"tocnumber\">3.6</span> <span class=\"toctext\">How Do I Make An NPC Wander Around Like A Mob?</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-18\"><a href=\"#Questions\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Questions</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-19\"><a href=\"#How_Many_NPCs_Can_I_Spawn_Before_My_Server_Lags?\"><span class=\"tocnumber\">4.1</span> <span class=\"toctext\">How Many NPCs Can I Spawn Before My Server Lags?</span></a></li>\n<li class=\"toclevel-2 tocsection-20\"><a href=\"#Why_is_my_NPC_teleporting_when_its_supposed_to_be_walking?\"><span class=\"tocnumber\">4.2</span> <span class=\"toctext\">Why is my NPC teleporting when its supposed to be walking?</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-21\"><a href=\"#API\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">API</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-22\"><a href=\"#How_Do_I_Make_NPCs_Remove_When_The_Server_Shuts_Down?\"><span class=\"tocnumber\">5.1</span> <span class=\"toctext\">How Do I Make NPCs Remove When The Server Shuts Down?</span></a></li>\n<li class=\"toclevel-2 tocsection-23\"><a href=\"#How_Do_I_Track_My_Custom_NPC?\"><span class=\"tocnumber\">5.2</span> <span class=\"toctext\">How Do I Track My Custom NPC?</span></a></li>\n<li class=\"toclevel-2 tocsection-24\"><a href=\"#More_API_Topics\"><span class=\"tocnumber\">5.3</span> <span class=\"toctext\">More API Topics</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-25\"><a href=\"#Historical\"><span class=\"tocnumber\">6</span> <span class=\"toctext\">Historical</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-26\"><a href=\"#How_Do_I_Add_Multiple_Lines_To_An_NPC&#39;s_Name?\"><span class=\"tocnumber\">6.1</span> <span class=\"toctext\">How Do I Add Multiple Lines To An NPC's Name?</span></a></li>\n<li class=\"toclevel-2 tocsection-27\"><a href=\"#NPC_names_are_capped_at_only_16_characters!_Or,_&#39;/npc_name&#39;_won&#39;t_work!\"><span class=\"tocnumber\">6.2</span> <span class=\"toctext\">NPC names are capped at only 16 characters! Or, '/npc name' won't work!</span></a></li>\n<li class=\"toclevel-2 tocsection-28\"><a href=\"#How_do_I_upgrade_from_old_versions_to_Citizens_2.0?\"><span class=\"tocnumber\">6.3</span> <span class=\"toctext\">How do I upgrade from old versions to Citizens 2.0?</span></a></li>\n<li class=\"toclevel-2 tocsection-29\"><a href=\"#How_do_I_get_more_NPC_types?\"><span class=\"tocnumber\">6.4</span> <span class=\"toctext\">How do I get more NPC types?</span></a></li>\n<li class=\"toclevel-2 tocsection-30\"><a href=\"#See_Also\"><span class=\"tocnumber\">6.5</span> <span class=\"toctext\">See Also</span></a></li>\n</ul>\n</li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading1\"><h1 id=\"First_of_All\">First of All</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=1\" title=\"Edit section: First of All\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>If the answer to your question isn't on here, ask on <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord</a> in the #citizens channel (create a thread for your question).\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"Errors\">Errors</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=2\" title=\"Edit section: Errors\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Why_isn't_Citizens_working_on_my_server?\"><span id=\"Why_isn.27t_Citizens_working_on_my_server.3F\"></span>Why isn't Citizens working on my server?</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=3\" title=\"Edit section: Why isn&#39;t Citizens working on my server?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Citizens is an advanced plugin and requires a current build of Spigot to work.\n</p><p>If you are getting NoClassDefFound, ClassNotFoundException, or FieldNotFound errors, ensure that you have the correct sub-version of Spigot. (That is the latest version, within a minecraft version, like 1.15.2 instead of 1.15 or 1.15.1). And that you have a relatively recent primary version of Spigot/Minecraft (that is, a version that came out within the past few years).\n</p><p>Otherwise, ask on <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord here</a>, or submit an issue <a rel=\"nofollow\" class=\"external text\" href=\"http://issues.citizensnpcs.co\">here</a>.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Why_can't_my_users_hear_my_NPCs?\"><span id=\"Why_can.27t_my_users_hear_my_NPCs.3F\"></span>Why can't my users hear my NPCs?</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=4\" title=\"Edit section: Why can&#39;t my users hear my NPCs?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Make sure you give them the proper permissions. Users will need <code>citizens.npc.talk</code> to hear NPCs by clicking or talk-close. See <a href=\"/Permissions\" title=\"Permissions\">Permissions</a>.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"I_can't_right-click_to_select_an_NPC\"><span id=\"I_can.27t_right-click_to_select_an_NPC\"></span>I can't right-click to select an NPC</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=5\" title=\"Edit section: I can&#39;t right-click to select an NPC\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>By default you must be holding a stick to right-click-select a NPC. The item can be changed in the <a href=\"/Configuration\" title=\"Configuration\">Configuration</a>. Use <code>'*'</code> to not require any item.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"There's_a_&quot;0_health&quot;_line_below_my_NPC's_names\"><span id=\"There.27s_a_.220_health.22_line_below_my_NPC.27s_names\"></span>There's a \"0 health\" line below my NPC's names</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=6\" title=\"Edit section: There&#39;s a &quot;0 health&quot; line below my NPC&#39;s names\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>This is a \"below_name\" scoreboard. It was not created by Citizens.\n</p><p>It was most likely created by another plugin (such as \"TAB\"). Contact that plugin's support for details on how to avoid this problem (if the plugin is \"TAB\", there is a config option under \"belowname\"-&gt;\"enabled\" which you can set to \"false\" to disable this feature of that plugin, see <a rel=\"nofollow\" class=\"external text\" href=\"https://github.com/NEZNAMY/TAB/wiki/Feature-guide:-Belowname\">here for their documentation about it</a>).\n</p><p>These scoreboards are also sometimes created by staff using vanilla <code>/scoreboard</code> commands. If so, simply remove the below_name scoreboard using that command.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Why_are_NPCs_showing_up_in_the_tablist?\"><span id=\"Why_are_NPCs_showing_up_in_the_tablist.3F\"></span>Why are NPCs showing up in the tablist?</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=7\" title=\"Edit section: Why are NPCs showing up in the tablist?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>UPDATE: As of 1.19.3, this is no longer an issue (with the exception of using ViaVersion with mixed server/client version).\n</p><p>When Minecraft 1.7 added UUIDs and a new skin system, some servers used it to dynamically customize player skins. Mojang was unhappy about this, and so in 1.7.6 made very strict player entity validation requirements. One of these requirements is that any player entity that spawns must be in the tablist at the time it's spawned. Unfortunately, this means Citizens NPCs must appear momentarily in the tablist when they spawn into view. For the sake of not having constant tablist space-waste, we've made the NPCs disappear again from the tablist as quickly as possible (a fraction of a second).\n</p><p>The first, and simplest option to completely avoid this is, of course: don't have player-type NPCs. Use villagers or armor stands or any other mob-type. These other types won't show up in the tab list at all.\n</p><p>If you wish to avoid that flashing with player NPCs, the only viable way is to simply fill the tab-list so completely that NPCs would be past the edge of it and thus not visible. Some tab-list plugins fill the screen with blank slots and/or information messages wherever space isn't used by real players. Any tab list like that should in theory automatically avoid the flicker effect.\n</p><p>If you're not interesting in running such a plugin, the only other option is to simply ignore the flashing. It's not actually particularly noticeable to players - in addition to of course just being a very short brief flash, seeing that flash at all requires you be actively moving at the edge of render-distance from an NPC with the Tab key held down, which isn't something most players do very often.\n</p><p>Note: intentionally adding NPCs persistently to the tablist is forbidden, as Mojang considers the tablist to be the line for a \"fake player\" being too believable. Bypassing this system to fake having real players in your tablist is not recommended in any way by the Citizens and team and may cause Mojang to take action against your server.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"I_have_a_free_server_(Aternos,_Minehut,_...)_but_there's_problems\"><span id=\"I_have_a_free_server_.28Aternos.2C_Minehut.2C_....29_but_there.27s_problems\"></span>I have a free server (Aternos, Minehut, ...) but there's problems</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=8\" title=\"Edit section: I have a free server (Aternos, Minehut, ...) but there&#39;s problems\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Free servers won't work well. They generally restrict servers so heavily that bugs occur and cannot be resolved.\n</p><p>Please either get a legitimate server (a VPS or Dedicated Server from a reputable server company like \"OVH\"), or if you cannot afford that, instead simply homehost.\n</p><p>\"Homehosting\" is when you run the Spigot server on your home PC (desktop or laptop). Not only is this possible, it is actually *better* than free hosts in most cases, as it gives you the freedom and control you need to run a problem-free minecraft server, and the only real limitation is that you have to keep your home PC running for the minecraft server to stay up.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"My_PlaceholderAPI_Placeholder_Works_In_Chat,_But_Not_On_An_NPC\"><span id=\"My_PlaceholderAPI_Placeholder_Works_In_Chat.2C_But_Not_On_An_NPC\"></span>My PlaceholderAPI Placeholder Works In Chat, But Not On An NPC</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=9\" title=\"Edit section: My PlaceholderAPI Placeholder Works In Chat, But Not On An NPC\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Many PAPI placeholders are designed to require a player link - for example, obviously, <code>%player_name%</code> requires a player be linked to know which name to show. When you use a command, you are linked, so that placeholder would show your own name. When a placeholder is on an NPC, it is parsed in a global context - meaning, there is no player link. So <code>%player_name%</code> would not know which player to give a name from, and thus fail.\n</p><p>You can test whether this applies to a placeholder in PAPI by typing <code>/papi parse --null %your_placeholder%</code>... the \"--null\" tells it to parse without a player context. (NOTE: If PAPI gives an error like \"unknown player\", you might just need to <a rel=\"nofollow\" class=\"external text\" href=\"https://ci.extendedclip.com/job/PlaceholderAPI/\">Update</a> - this feature was added in PAPI 2.11.2).\n</p><p>While many placeholders make it obvious whether they require a player link or not, some plugins have placeholders that just always require a player link even when the placeholder doesn't actually change based on who's parsing it. Those cases should be considered a bug in whatever plugin the placeholder came from, and you should ask the developer of that plugin to fix the problem.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"My_NPCs_Have_Names_Like_CIT-abc_Instead_Of_Their_Actual_Names\">My NPCs Have Names Like CIT-abc Instead Of Their Actual Names</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=10\" title=\"Edit section: My NPCs Have Names Like CIT-abc Instead Of Their Actual Names\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>If your NPC's name is longer than 16 characters, Citizens hides the default nameplate and then spawns a hologram in its place. Hiding nameplates works by setting a scoreboard team with nameplates for that team set to hidden, and the NPC added to that team. Unfortunately, due to the way Minecraft implements scoreboard teams, NPCs must be added based on their name rather than their UUID or actual object.  The hidden default nameplate gets a generated value like \"CIT-abc\" with the NPC's UUID to ensure it can be uniquely added to a scoreboard team.\n</p><p>If this generated name is visible, it means the scoreboard team to hide the name is broken. This generally shouldn't happen, as the teams are generated through packets directly sent to the player. If they're being blocked, that means some external plugin (or even a plugin on a proxy like Bungee/Velocity) is overriding or blocking the team settings.\n</p><p>If this is happening, the main thing to do is check for a <a href=\"/Plugin_Conflict\" title=\"Plugin Conflict\">Plugin_Conflict</a>. View that page for information on how to test for one and what to do once you found the plugin at fault.\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"How_To\">How To</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=11\" title=\"Edit section: How To\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Can_I_change_what_skin_an_NPC_has,_separately_from_its_name?\"><span id=\"Can_I_change_what_skin_an_NPC_has.2C_separately_from_its_name.3F\"></span>Can I change what skin an NPC has, separately from its name?</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=12\" title=\"Edit section: Can I change what skin an NPC has, separately from its name?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Yes, via <code>/npc skin</code>. For a detailed explanation, see the <a href=\"/Skins\" title=\"Skins\">Skins</a> page.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"How_do_I_make_an_NPC_run_a_command_when_a_player_clicks_it?\"><span id=\"How_do_I_make_an_NPC_run_a_command_when_a_player_clicks_it.3F\"></span>How do I make an NPC run a command when a player clicks it?</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=13\" title=\"Edit section: How do I make an NPC run a command when a player clicks it?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Via <code>/npc command</code> Refer to <a href=\"/NPC_Commands\" title=\"NPC Commands\">NPC_Commands</a> for details.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"My_NPCs_Aren't_Standing_On_Exactly_Their_Path_Destination\"><span id=\"My_NPCs_Aren.27t_Standing_On_Exactly_Their_Path_Destination\"></span>My NPCs Aren't Standing On Exactly Their Path Destination</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=14\" title=\"Edit section: My NPCs Aren&#39;t Standing On Exactly Their Path Destination\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>If you set an NPC to move to a location, and it stopped a few blocks short... well, that's normal. Pathfinding is not perfectly precise, and also doesn't always know what you intended. For example, when you select a block, it will navigate to the corner of that block, not the center. It also has a margin for when to stop - if the margin is too small, the NPC can potentially overshoot and have to turn around and try to find the spot again. Generally, the faster the NPC is moving, the higher the margin needs to be.\n</p><p>You can tweak the margins and other pathfinder settings for an NPC with <code>/npc help pathopt</code>. You'll notice differences in movement behavior depending on whether <code>new-finder</code> is true or false, and also depending on each of the margin related values. Tweak things until you find something you like.\n</p><p><s>If you really really really need it to get to the exact decimal perfect coordinates, you'll have to write a script using Denizen or similar, that teleports the NPC after pathfinding ends.</s> In modern Citizens, you can edit your <code>config.yml</code> to configure the <code>destination-teleport-margin</code> to a non-zero margin to automatically enable teleporting.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"&quot;Hi,_I'm_npc&quot;_keeps_appearing_after_I_removed_text_from_an_NPC\"><span id=\".22Hi.2C_I.27m_npc.22_keeps_appearing_after_I_removed_text_from_an_NPC\"></span>\"Hi, I'm npc\" keeps appearing after I removed text from an NPC</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=15\" title=\"Edit section: &quot;Hi, I&#39;m npc&quot; keeps appearing after I removed text from an NPC\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Once you use <code>/npc text</code>, that adds the <b>text trait</b>, which will stay until you use <code>/trait text</code> to remove it. Clearing the list of lines from the NPC will not on its own remove the text trait, you must explicitly remove the trait.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"How_Do_I_Set_Up_An_NPC_As_A_Shop?\"><span id=\"How_Do_I_Set_Up_An_NPC_As_A_Shop.3F\"></span>How Do I Set Up An NPC As A Shop?</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=16\" title=\"Edit section: How Do I Set Up An NPC As A Shop?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Many users want to use NPCs to provide a shop. The key point to realize when figuring out how to do this is: the NPC is just the thing you click to open the shop, and doesn't really need to do much more than that. Thus, there are four different options for how to proceed:\n</p><p>A: In the future <code>/npc shop</code> will function. At time of writing, it's just a placeholder experiment.\n</p><p>B: You can use <a href=\"/NPC_Commands\" title=\"NPC Commands\">NPC_Commands</a> to add a click command to an NPC, where the command is a shop command from any given shop plugin (search Spigot resources for options).\n</p><p>C: You can use a shop plugin with native Citizens integration, such as dtlTraders.\n</p><p>D: You can build your own shop system and directly integrate it with NPCs by writing a <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Denizen Script</a>.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"How_Do_I_Make_An_NPC_Wander_Around_Like_A_Mob?\"><span id=\"How_Do_I_Make_An_NPC_Wander_Around_Like_A_Mob.3F\"></span>How Do I Make An NPC Wander Around Like A Mob?</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=17\" title=\"Edit section: How Do I Make An NPC Wander Around Like A Mob?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>You can use <code>/wp provider wander</code>, which sets the NPCs pathfinder to wander mode. After that, you can use <code>/npc path</code> to configure wander settings such as region limits.\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"Questions\">Questions</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=18\" title=\"Edit section: Questions\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"How_Many_NPCs_Can_I_Spawn_Before_My_Server_Lags?\"><span id=\"How_Many_NPCs_Can_I_Spawn_Before_My_Server_Lags.3F\"></span>How Many NPCs Can I Spawn Before My Server Lags?</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=19\" title=\"Edit section: How Many NPCs Can I Spawn Before My Server Lags?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><b>Short answer:</b> there isn't an answer, just try spawning some and see how it goes.\n</p><p><b>Long answer:</b> Server performance is dependent on a *lot* of factors.\n</p><p>First, obviously - the hardware ... faster CPUs can handle more processing, more RAM can handle more of the world being loaded, etc.\n</p><p>Second... well, what's actually happening. An NPC that's running around the world is going to use more CPU power than an NPC that's sitting still. An NPC that is configured to keep chunks loaded will use more RAM than an NPC that wasn't. An NPC that is in your main hub is going to be loaded and spawned and active all the time, but an NPC that's three thousand blocks out in the middle of the forest will almost never be spawned or processing.\n</p><p>While you can follow this line of logic to keep things under control, where your actual limits are is something you can only know by hitting those limits. You can quantify measurements of lag using a Java profiler/sampler (note: do NOT use the \"timings\" system in Spigot/Paper... if you don't have a profiler, <a rel=\"nofollow\" class=\"external text\" href=\"https://www.spigotmc.org/resources/spark.57242/\">Spark</a> is a fairly basic sampler but very easy to install on a minecraft server).\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Why_is_my_NPC_teleporting_when_its_supposed_to_be_walking?\"><span id=\"Why_is_my_NPC_teleporting_when_its_supposed_to_be_walking.3F\"></span>Why is my NPC teleporting when its supposed to be walking?</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=20\" title=\"Edit section: Why is my NPC teleporting when its supposed to be walking?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>When you set an NPC on a path, and it just teleports to the destination, that means it failed to find a path.\n</p><p>This most commonly happens when the destination is simply too far away - the default path range is 25, you can alter this via <code>/npc pathrange 50</code> (or any other value), up to 100. If you need to go farther than 100 blocks away, consider setting multiple points in between along the way.\n</p><p>The other reason this can happen is a path simply being impossible - walls in the way, holes in the floor, etc. In such cases, of course, add a way through.\n</p><p>In some cases a path can become accidentally blocked off by blocks like carpets, slabs, gates, etc. if the pathfinder doesn't understand them. If this is the case, make sure to enable the new-finder and new-finder-open-doors in the Citizens config.\n</p><p>If you want the NPC to instead simply not move when a path is impossible, use <code>/wp disableteleport</code>.\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"API\">API</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=21\" title=\"Edit section: API\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"How_Do_I_Make_NPCs_Remove_When_The_Server_Shuts_Down?\"><span id=\"How_Do_I_Make_NPCs_Remove_When_The_Server_Shuts_Down.3F\"></span>How Do I Make NPCs Remove When The Server Shuts Down?</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=22\" title=\"Edit section: How Do I Make NPCs Remove When The Server Shuts Down?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>In short: rather than removing the NPCs at shutdown as may be your first inclination, instead simply disable them from saving.\n</p><p>To do this, you can create a custom NPC registry for your plugin to store temporary NPCs in.\n</p><p>Sample code for how to do this:\n</p>\n<pre>    public final NPCRegistry registry = CitizensAPI.createAnonymousNPCRegistry(new MemoryNPCDataStore());\n\n    public void yourMethod() {\n        registry.createNPC(EntityType.PLAYER, \"Bob\");\n    }\n</pre>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"How_Do_I_Track_My_Custom_NPC?\"><span id=\"How_Do_I_Track_My_Custom_NPC.3F\"></span>How Do I Track My Custom NPC?</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=23\" title=\"Edit section: How Do I Track My Custom NPC?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>We get a lot of questions from new API users regarding assigning NPC ids, tracking NPC ids, should you use ids or uuids, etc.\n</p><p>The answer to basically all such questions is: er, well, don't! Your custom data or behavior associated with an NPC should be assigned via a trait! Check out <a href=\"/API#Creating_a_Trait\" title=\"API\">API#Creating_a_Trait</a> for more information.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"More_API_Topics\">More API Topics</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=24\" title=\"Edit section: More API Topics\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Most API-related questions are answered via the <a href=\"/API\" title=\"API\">API</a> page.\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"Historical\">Historical</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=25\" title=\"Edit section: Historical\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"How_Do_I_Add_Multiple_Lines_To_An_NPC's_Name?\"><span id=\"How_Do_I_Add_Multiple_Lines_To_An_NPC.27s_Name.3F\"></span>How Do I Add Multiple Lines To An NPC's Name?</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=26\" title=\"Edit section: How Do I Add Multiple Lines To An NPC&#39;s Name?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><s>An entity name in minecraft only has one line. You can, however, just spawn multiple entities to form the name.\n</s></p><p><s>The easiest way to do this is to just download any holograms plugin, and place holograms above the NPC to make those 'additional lines'.\n</s></p><p><s>If you don't want to download a new plugin for that, just spawn armor stands entities with gravity=false, marker=true, visible=false, and the name set to the additional line.</s>\n</p><p>In modern builds you can now just use <code>/npc hologram</code> for this.\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"NPC_names_are_capped_at_only_16_characters!_Or,_'/npc_name'_won't_work!\"><span id=\"NPC_names_are_capped_at_only_16_characters.21_Or.2C_.27.2Fnpc_name.27_won.27t_work.21\"></span>NPC names are capped at only 16 characters! Or, '/npc name' won't work!</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=27\" title=\"Edit section: NPC names are capped at only 16 characters! Or, &#39;/npc name&#39; won&#39;t work!\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><s>One of the most common plugin conflicts with Citizens is caused by scoreboard plugins.\n</s></p><p><s>This can cause problems such as: NPC names being capped at 16 characters (rather than the normal 48), <code>/npc name</code> not toggling nameplate visibility properly, or other scoreboard-related functionality failing.\n</s></p><p><s>This can by caused by any form of scoreboard-related plugin, such as those that add a sidebar (like Featherboard does), edit player nametags, add custom below_name lines, or similar.\n</s></p><p><s>This is not an unavoidable problem, it's instead caused by a mistake many scoreboard plugins make. If interested, you can read the technical details of this mistake at <a href=\"/Plugin_Conflict\" title=\"Plugin Conflict\">Plugin_Conflict</a>.\n</s></p><p><s>The fix for users, however, is simple: Either report the issue to the developer of your scoreboard plugin, or switch to a non-broken scoreboard plugin (if you want a sidebar, consider <a rel=\"nofollow\" class=\"external text\" href=\"https://forum.denizenscript.com/viewtopic.php?f=13&amp;t=147\">the Magic Sidebar script</a>).</s>\n</p><p>This was fixed in a recent version.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"How_do_I_upgrade_from_old_versions_to_Citizens_2.0?\"><span id=\"How_do_I_upgrade_from_old_versions_to_Citizens_2.0.3F\"></span>How do I upgrade from old versions to Citizens 2.0?</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=28\" title=\"Edit section: How do I upgrade from old versions to Citizens 2.0?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>See the <a href=\"/Installation\" title=\"Installation\">Installation</a> page.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"How_do_I_get_more_NPC_types?\"><span id=\"How_do_I_get_more_NPC_types.3F\"></span>How do I get more NPC types?</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=29\" title=\"Edit section: How do I get more NPC types?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>NPC types are now called \"traits\". These are no longer built-in JARs that you place in the <i>/plugins/Citizens/types</i> directory. You must download each individual character and place it in the <i>/plugins</i> folder.\n</p><p>You can find out more about traits on the <a href=\"/Characters\" title=\"Characters\">Characters</a> page, or learn how to make your own on the <a href=\"/API\" title=\"API\">API</a> page.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_Also\">See Also</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Frequently_Asked_Questions&amp;action=edit&amp;section=30\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><a href=\"/Configuration\" title=\"Configuration\">Configuration</a>\n<br /><a href=\"/Commands\" title=\"Commands\">Commands</a>\n<br /><a href=\"/Permissions\" title=\"Permissions\">Permissions</a>\n</p>\n<div class=\"padded\" style=\"font-size: 12px; padding: 5px\">\n<table class=\"wikitable collapsible collapsed\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Usage\" title=\"Category:Usage\">Usage</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Installation\" title=\"Installation\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a class=\"mw-selflink selflink\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Editors\" title=\"Editors\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Characters\" title=\"Characters\">Characters</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/API\" title=\"API\">API</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32;\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Configuration\" title=\"Category:Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Configuration\" title=\"Configuration\">Configuration</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Data_Storage\" title=\"Data Storage\">Data Storage</a>\n</td></tr></tbody></table>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145843\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.050 seconds\nReal time usage: 0.054 seconds\nPreprocessor visited node count: 120/1000000\nRevision size: 15815/2097152 bytes\nPost‐expand include size: 1802/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 210/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    7.867      1 Template:NavBox\n100.00%    7.867      1 -total\n 43.02%    3.384     10 Template:·\n-->\n\n<!-- Render ID 9395e1e5-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "API"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Configuration"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Data Storage"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Editors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "NPC Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Plugin Conflict"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Skins"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Text Syntax"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Configuration"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Usage"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "First of All",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 250,
+        "anchor": "First_of_All",
+        "linkAnchor": "First_of_All"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Errors",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 420,
+        "anchor": "Errors",
+        "linkAnchor": "Errors"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Why isn't Citizens working on my server?",
+        "number": "2.1",
+        "index": "3",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 432,
+        "anchor": "Why_isn't_Citizens_working_on_my_server?",
+        "linkAnchor": "Why_isn't_Citizens_working_on_my_server?"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Why can't my users hear my NPCs?",
+        "number": "2.2",
+        "index": "4",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 1051,
+        "anchor": "Why_can't_my_users_hear_my_NPCs?",
+        "linkAnchor": "Why_can't_my_users_hear_my_NPCs?"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "I can't right-click to select an NPC",
+        "number": "2.3",
+        "index": "5",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 1245,
+        "anchor": "I_can't_right-click_to_select_an_NPC",
+        "linkAnchor": "I_can't_right-click_to_select_an_NPC"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "There's a \"0 health\" line below my NPC's names",
+        "number": "2.4",
+        "index": "6",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 1451,
+        "anchor": "There's_a_\"0_health\"_line_below_my_NPC's_names",
+        "linkAnchor": "There's_a_\"0_health\"_line_below_my_NPC's_names"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Why are NPCs showing up in the tablist?",
+        "number": "2.5",
+        "index": "7",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 2131,
+        "anchor": "Why_are_NPCs_showing_up_in_the_tablist?",
+        "linkAnchor": "Why_are_NPCs_showing_up_in_the_tablist?"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "I have a free server (Aternos, Minehut, ...) but there's problems",
+        "number": "2.6",
+        "index": "8",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 4239,
+        "anchor": "I_have_a_free_server_(Aternos,_Minehut,_...)_but_there's_problems",
+        "linkAnchor": "I_have_a_free_server_(Aternos,_Minehut,_...)_but_there's_problems"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "My PlaceholderAPI Placeholder Works In Chat, But Not On An NPC",
+        "number": "2.7",
+        "index": "9",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 4959,
+        "anchor": "My_PlaceholderAPI_Placeholder_Works_In_Chat,_But_Not_On_An_NPC",
+        "linkAnchor": "My_PlaceholderAPI_Placeholder_Works_In_Chat,_But_Not_On_An_NPC"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "My NPCs Have Names Like CIT-abc Instead Of Their Actual Names",
+        "number": "2.8",
+        "index": "10",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 6220,
+        "anchor": "My_NPCs_Have_Names_Like_CIT-abc_Instead_Of_Their_Actual_Names",
+        "linkAnchor": "My_NPCs_Have_Names_Like_CIT-abc_Instead_Of_Their_Actual_Names"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "How To",
+        "number": "3",
+        "index": "11",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 7382,
+        "anchor": "How_To",
+        "linkAnchor": "How_To"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Can I change what skin an NPC has, separately from its name?",
+        "number": "3.1",
+        "index": "12",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 7394,
+        "anchor": "Can_I_change_what_skin_an_NPC_has,_separately_from_its_name?",
+        "linkAnchor": "Can_I_change_what_skin_an_NPC_has,_separately_from_its_name?"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "How do I make an NPC run a command when a player clicks it?",
+        "number": "3.2",
+        "index": "13",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 7545,
+        "anchor": "How_do_I_make_an_NPC_run_a_command_when_a_player_clicks_it?",
+        "linkAnchor": "How_do_I_make_an_NPC_run_a_command_when_a_player_clicks_it?"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "My NPCs Aren't Standing On Exactly Their Path Destination",
+        "number": "3.3",
+        "index": "14",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 7680,
+        "anchor": "My_NPCs_Aren't_Standing_On_Exactly_Their_Path_Destination",
+        "linkAnchor": "My_NPCs_Aren't_Standing_On_Exactly_Their_Path_Destination"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "\"Hi, I'm npc\" keeps appearing after I removed text from an NPC",
+        "number": "3.4",
+        "index": "15",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 8957,
+        "anchor": "\"Hi,_I'm_npc\"_keeps_appearing_after_I_removed_text_from_an_NPC",
+        "linkAnchor": "\"Hi,_I'm_npc\"_keeps_appearing_after_I_removed_text_from_an_NPC"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "How Do I Set Up An NPC As A Shop?",
+        "number": "3.5",
+        "index": "16",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 9285,
+        "anchor": "How_Do_I_Set_Up_An_NPC_As_A_Shop?",
+        "linkAnchor": "How_Do_I_Set_Up_An_NPC_As_A_Shop?"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "How Do I Make An NPC Wander Around Like A Mob?",
+        "number": "3.6",
+        "index": "17",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 10102,
+        "anchor": "How_Do_I_Make_An_NPC_Wander_Around_Like_A_Mob?",
+        "linkAnchor": "How_Do_I_Make_An_NPC_Wander_Around_Like_A_Mob?"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Questions",
+        "number": "4",
+        "index": "18",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 10349,
+        "anchor": "Questions",
+        "linkAnchor": "Questions"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "How Many NPCs Can I Spawn Before My Server Lags?",
+        "number": "4.1",
+        "index": "19",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 10364,
+        "anchor": "How_Many_NPCs_Can_I_Spawn_Before_My_Server_Lags?",
+        "linkAnchor": "How_Many_NPCs_Can_I_Spawn_Before_My_Server_Lags?"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Why is my NPC teleporting when its supposed to be walking?",
+        "number": "4.2",
+        "index": "20",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 11604,
+        "anchor": "Why_is_my_NPC_teleporting_when_its_supposed_to_be_walking?",
+        "linkAnchor": "Why_is_my_NPC_teleporting_when_its_supposed_to_be_walking?"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "API",
+        "number": "5",
+        "index": "21",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 12610,
+        "anchor": "API",
+        "linkAnchor": "API"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "How Do I Make NPCs Remove When The Server Shuts Down?",
+        "number": "5.1",
+        "index": "22",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 12619,
+        "anchor": "How_Do_I_Make_NPCs_Remove_When_The_Server_Shuts_Down?",
+        "linkAnchor": "How_Do_I_Make_NPCs_Remove_When_The_Server_Shuts_Down?"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "How Do I Track My Custom NPC?",
+        "number": "5.2",
+        "index": "23",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 13147,
+        "anchor": "How_Do_I_Track_My_Custom_NPC?",
+        "linkAnchor": "How_Do_I_Track_My_Custom_NPC?"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "More API Topics",
+        "number": "5.3",
+        "index": "24",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 13515,
+        "anchor": "More_API_Topics",
+        "linkAnchor": "More_API_Topics"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Historical",
+        "number": "6",
+        "index": "25",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 13604,
+        "anchor": "Historical",
+        "linkAnchor": "Historical"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "How Do I Add Multiple Lines To An NPC's Name?",
+        "number": "6.1",
+        "index": "26",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 13620,
+        "anchor": "How_Do_I_Add_Multiple_Lines_To_An_NPC's_Name?",
+        "linkAnchor": "How_Do_I_Add_Multiple_Lines_To_An_NPC's_Name?"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "NPC names are capped at only 16 characters! Or, '/npc name' won't work!",
+        "number": "6.2",
+        "index": "27",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 14184,
+        "anchor": "NPC_names_are_capped_at_only_16_characters!_Or,_'/npc_name'_won't_work!",
+        "linkAnchor": "NPC_names_are_capped_at_only_16_characters!_Or,_'/npc_name'_won't_work!"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "How do I upgrade from old versions to Citizens 2.0?",
+        "number": "6.3",
+        "index": "28",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 15261,
+        "anchor": "How_do_I_upgrade_from_old_versions_to_Citizens_2.0?",
+        "linkAnchor": "How_do_I_upgrade_from_old_versions_to_Citizens_2.0?"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "How do I get more NPC types?",
+        "number": "6.4",
+        "index": "29",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 15351,
+        "anchor": "How_do_I_get_more_NPC_types?",
+        "linkAnchor": "How_do_I_get_more_NPC_types?"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "See Also",
+        "number": "6.5",
+        "index": "30",
+        "fromtitle": "Frequently_Asked_Questions",
+        "byteoffset": 15717,
+        "anchor": "See_Also",
+        "linkAnchor": "See_Also"
+      }
+    ],
+    "showtoc": ""
+  }
+}

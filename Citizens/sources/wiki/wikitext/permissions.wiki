@@ -1,0 +1,50 @@
+==Citizens 2.0.x Permissions==
+This page may be outdated: double check the plugin.yml at https://github.com/CitizensDev/Citizens2/blob/master/main/src/main/resources/plugin.yml for up-to-date permissions
+
+Default on all permissions is OP
+
+*citizens.admin.* 
+**citizens.admin {{color|blue|white|This allows players to edit 'server' owned NPCs}}
+**citizens.admin.avoid-limits   {{color|blue|white|Allows user to create any number of NPCs}}
+*citizens.help   {{color|blue|white|/citizens help}}
+*citizens.npc.*:
+**citizens.npc.age {{color|blue|white|/npc age}}
+**citizens.npc.position.assume {{color|blue|white|/npc age}}
+**citizens.npc.behaviour {{color|blue|white|/npc behaviour}}
+**citizens.npc.create {{color|blue|white|/npc create}}
+**citizens.npc.create.[mobtype or *] {{color|blue|white|/npc create [mobtype]}}
+**citizens.npc.controllable {{color|blue|white|/npc controllable}}
+**citizens.npc.copy {{color|blue|white|/npc copy}}
+**citizens.npc.despawn {{color|blue|white|/npc despawn}}
+**citizens.npc.edit.*
+***citizens.npc.edit.equip {{color|blue|white|/npc equip}}
+***citizens.npc.edit.path {{color|blue|white|/npc path}}
+**citizens.npc.help {{color|blue|white|/npc help}}
+**citizens.npc.limit.# {{color|blue|white|Limit this player to creating # number of NPCs (works with 1-100}}
+**citizens.npc.list {{color|blue|white|/npc list}}
+**citizens.npc.lookclose {{color|blue|white|/npc lookclose}}
+**citizens.npc.moveto {{color|blue|white|/npc moveto}}
+**citizens.npc.owner {{color|blue|white|/npc owner}}
+**citizens.npc.path {{color|blue|white|/npc path}}
+**citizens.npc.power {{color|blue|white|/npc power}}
+**citizens.npc.profession {{color|blue|white|/npc profession}}
+**citizens.npc.remove {{color|blue|white|/npc remove}}
+**citizens.npc.remove.all {{color|blue|white|/npc removeall}}
+**citizens.npc.rename {{color|blue|white|/npc rename}}
+**citizens.npc.select {{color|blue|white|/npc select}}
+**citizens.npc.spawn {{color|blue|white|/npc spawn}}
+**citizens.npc.speed {{color|blue|white|/npc speed}}
+**citizens.npc.talk {{color|blue|white| Hear NPCs by click or walking near with talk-close}}
+**citizens.npc.text {{color|blue|white|/npc text}}
+**citizens.npc.trait.*
+***citizens.npc.trait {{color|blue|white|/trait}}
+***citizens.npc.trait-configure
+***citizens.npc.trait-configure.*
+***citizens.npc.tp {{color|blue|white|/npc tp}}
+***citizens.npc.tphere {{color|blue|white|/npc tphere}}
+
+==Character Permissions==
+See the appropriate [[Characters]] page for character-specific permission nodes.
+
+{{NavBox}}
+[[Category:Configuration]]

@@ -1,0 +1,203 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "1.x/Guard",
+    "pageid": 8,
+    "revid": 1635,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><table class=\"wikitable\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"1\" style=\"width: 100%; background-color:#F75D59; font-size: 32px; padding: 15px;\"><b>Not Supported!</b>\n</th></tr>\n<tr>\n<td style=\"font-size: 16px;\">This page is about Citizens 1.x, while the current version is Citizens 2.0.2. This page's content may be outdated, and shouldn't be trusted as being correct. See this page's talk page for more information. If you were looking for the 2.0.2 equivalent of this page, try <a href=\"/index.php?title=Guard&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Guard (page does not exist)\">Guard</a>. If you feel this message was displayed in error, please contact an administrator.\n</td></tr></tbody></table>\n<p><b>Guards</b> perform protection, attacking enemy mobs and/or players. They can be hurt by others, so will die (and respawn). You can set a guard to follow you or to patrol an area.\n</p><p><br />\n</p><p><br />\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Configuration_Nodes\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Configuration Nodes</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Commands\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Commands</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Flags\"><span class=\"tocnumber\">2.1</span> <span class=\"toctext\">Flags</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Usage\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Usage</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#Flags_2\"><span class=\"tocnumber\">3.1</span> <span class=\"toctext\">Flags</span></a></li>\n<li class=\"toclevel-2 tocsection-6\"><a href=\"#Types\"><span class=\"tocnumber\">3.2</span> <span class=\"toctext\">Types</span></a>\n<ul>\n<li class=\"toclevel-3 tocsection-7\"><a href=\"#Bouncers\"><span class=\"tocnumber\">3.2.1</span> <span class=\"toctext\">Bouncers</span></a></li>\n<li class=\"toclevel-3 tocsection-8\"><a href=\"#Bodyguards\"><span class=\"tocnumber\">3.2.2</span> <span class=\"toctext\">Bodyguards</span></a></li>\n<li class=\"toclevel-3 tocsection-9\"><a href=\"#Soldiers\"><span class=\"tocnumber\">3.2.3</span> <span class=\"toctext\">Soldiers</span></a></li>\n</ul>\n</li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-10\"><a href=\"#Future\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Future</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Configuration_Nodes\">Configuration Nodes</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Guard&amp;action=edit&amp;section=1\" title=\"Edit section: Configuration Nodes\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>These nodes can be found in <i>citizens.yml</i>. They deal mostly with the default configuration for Guards.\n</p>\n<table class=\"wikitable collapsible collapsed\" style=\"text-align: center; width: 100%\">\n\n<tbody><tr>\n<th style=\"width: 100%; background-color:#ADD8E6\" colspan=\"3\"><b>Guard Configuration</b>\n</th></tr>\n<tr>\n<th style=\"width: 250px;\">Setting\n</th>\n<th style=\"width: 200px;\">Default Value\n</th>\n<th>Description\n</th></tr>\n<tr>\n<td>guards.default-bouncer-protection-radius\n</td>\n<td>10\n</td>\n<td>The default protection radius for guard bouncers (measured in blocks).\n</td></tr>\n<tr>\n<td>guards.respawn-delay\n</td>\n<td>100\n</td>\n<td>How many ticks after a guard's death before it should respawn.\n</td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Commands\">Commands</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Guard&amp;action=edit&amp;section=2\" title=\"Edit section: Commands\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Commands that are specific to use with Guards\n</p>\n<table class=\"wikitable collapsible collapsed\" style=\"text-align: center; width: 100%\">\n\n<tbody><tr>\n<th style=\"width: 100%; background-color:#ADD8E6\" colspan=\"3\"><b>Guard Commands</b>\n</th></tr>\n<tr>\n<th style=\"width: 250px;\">Command\n</th>\n<th style=\"width: 200px;\">Args Description\n</th>\n<th style=\"width: 150px;\">Require Selected\n</th>\n<th style=\"width: 150px;\">Require Ownership\n</th>\n<th style=\"width: 170px;\">Permission\n</th>\n<th>Description\n</th></tr>\n<tr>\n<td>/guard help\n</td>\n<td><i>None</i>\n</td>\n<td>false\n</td>\n<td>false\n</td>\n<td>citizens.guard.use.help\n</td>\n<td>View the help page for guards\n</td></tr>\n<tr>\n<td>/guard [type]\n</td>\n<td><i>type</i> - type to set a guard as, available options are 'bouncer', 'soldier' and 'bodyguard'\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.guard.modify.type\n</td>\n<td>Change the guard's type\n</td></tr>\n<tr>\n<td>/guard flags [-g,m,p] (page)\n</td>\n<td><i>-g,-m,-p</i> - flag type to view <br /><i>page</i> - page number\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.guard.use.flags\n</td>\n<td>View currently set flags\n</td></tr>\n<tr>\n<td>/guard addflag (priority) [target] (-a,g,m,p)\n</td>\n<td><i>priority</i> - priority of the flag <br /><i>target</i> - name of the entry to add to the flags list <br /><i>-a,-g,-m,-p</i> - flag type to set the target as\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.guard.modify.flags\n</td>\n<td>Add/modify flags\n</td></tr>\n<tr>\n<td>/guard delflag [target] [-p,m,g] (-a)\n</td>\n<td><i>target</i> - name of the entry to remove from the flags list <br /><i>-p,-m,-g</i> - flag type of the target that is being removed <br /><i>-a</i> - whether to remove all of the flag type specified\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.guard.modify.flags\n</td>\n<td>Delete a flag\n</td></tr>\n<tr>\n<td>/guard radius [radius]\n</td>\n<td><i>radius</i> - number of blocks to set the guard's radius as\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.guard.modify.radius\n</td>\n<td>Modify a bouncer's protection radius\n</td></tr>\n<tr>\n<td>/guard aggro\n</td>\n<td><i>None</i>\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.guard.modify.aggro\n</td>\n<td>Toggle a guard's aggressiveness\n</td></tr></tbody></table>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Flags\">Flags</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Guard&amp;action=edit&amp;section=3\" title=\"Edit section: Flags\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><b>-p</b> - player\n<br /><b>-m</b> - mob\n<br /><b>-g</b> - permission group (supports PermissionsBukkit, bPermissions, and PermissionsEx)\n<br /><b>-a</b> - all\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Usage\">Usage</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Guard&amp;action=edit&amp;section=4\" title=\"Edit section: Usage\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Flags_2\">Flags</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Guard&amp;action=edit&amp;section=5\" title=\"Edit section: Flags\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Flags are the core features of guards. They define which entities should be targeted (or not targeted) by the guard, and are created by using the /guard addflag command. Flags can target monsters, players, and groups. The group targeting feature is only available with PermissionsBukkit. \n</p><p>Flags are by default blacklists - however, whitelists are also possible. By using '-' as the first character of a target, the flag is designated as a whitelist flag. For example, 'fullwall' is a blacklist target, while '-fullwall' is a whitelist target.\n</p><p>Flags can also take a priority, ranging from 1-20, where lower numbers give a higher priority. Essentially, when faced with two targets, the guard will attack the entity with the higher priority. If more than one target has the highest priority found, the guard will attack the entity closest to it. This features is mainly for advanced configuration of guards, and priority will default to 1.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Types\">Types</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Guard&amp;action=edit&amp;section=6\" title=\"Edit section: Types\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>So far, guards can be toggled to two types - bodyguards, and bouncers.\n</p>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"Bouncers\">Bouncers</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Guard&amp;action=edit&amp;section=7\" title=\"Edit section: Bouncers\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Bouncers are primarily area protection guards. They will stand still, protecting the radius from configured flags. When an enemy is defeated, they will path back to their base point. If an enemy moves out of the protection radius, the guard will stop targeting them (and teleport back if necessary).\n</p>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"Bodyguards\">Bodyguards</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Guard&amp;action=edit&amp;section=8\" title=\"Edit section: Bodyguards\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Bodyguards are for personal protection, and will follow you around, protecting you as necessary. They will actively seek out configured flags, until they come outside the protection radius, whereupon they will teleport to you.\n</p>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"Soldiers\">Soldiers</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Guard&amp;action=edit&amp;section=9\" title=\"Edit section: Soldiers\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Note: only available post-1.1.2.\nSoldiers are essentially commandable guards. Players can select soldiers they own and command them to attack players, mobs and move to blocks.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Future\">Future</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Guard&amp;action=edit&amp;section=10\" title=\"Edit section: Future\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>An inventory hotbar, for weapon switching and healing.\nPerhaps more guarding types.\n</p>\n<div class=\"padded\" style=\"font-size: 12px; padding: 5px\">\n<table class=\"wikitable collapsible collapsed\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Usage\" title=\"Category:Usage\">Usage</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Installation\" title=\"Installation\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Frequently_Asked_Questions\" title=\"Frequently Asked Questions\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Editors\" title=\"Editors\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Characters\" title=\"Characters\">Characters</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/API\" title=\"API\">API</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32;\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Configuration\" title=\"Category:Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Configuration\" title=\"Configuration\">Configuration</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Data_Storage\" title=\"Data Storage\">Data Storage</a>\n</td></tr></tbody></table>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145752\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.053 seconds\nReal time usage: 0.132 seconds\nPreprocessor visited node count: 52/1000000\nRevision size: 4678/2097152 bytes\nPost‐expand include size: 2417/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 4/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   50.252      1 -total\n 68.65%   34.496      1 Template:NavBox\n 30.82%   15.489      1 Template:NoSupport\n 17.69%    8.892      2 Template:Version2F\n 14.00%    7.036     10 Template:·\n  8.62%    4.330      1 Template:Version2\n-->\n\n<!-- Render ID 752fe668-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "API"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Configuration"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Data Storage"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Editors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Text Syntax"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      },
+      {
+        "ns": 0,
+        "*": "Guard"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Configuration"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Usage"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Configuration Nodes",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "1.x/Guard",
+        "byteoffset": 199,
+        "anchor": "Configuration_Nodes",
+        "linkAnchor": "Configuration_Nodes"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Commands",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "1.x/Guard",
+        "byteoffset": 822,
+        "anchor": "Commands",
+        "linkAnchor": "Commands"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Flags",
+        "number": "2.1",
+        "index": "3",
+        "fromtitle": "1.x/Guard",
+        "byteoffset": 2563,
+        "anchor": "Flags",
+        "linkAnchor": "Flags"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Usage",
+        "number": "3",
+        "index": "4",
+        "fromtitle": "1.x/Guard",
+        "byteoffset": 2728,
+        "anchor": "Usage",
+        "linkAnchor": "Usage"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Flags",
+        "number": "3.1",
+        "index": "5",
+        "fromtitle": "1.x/Guard",
+        "byteoffset": 2741,
+        "anchor": "Flags_2",
+        "linkAnchor": "Flags_2"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Types",
+        "number": "3.2",
+        "index": "6",
+        "fromtitle": "1.x/Guard",
+        "byteoffset": 3696,
+        "anchor": "Types",
+        "linkAnchor": "Types"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Bouncers",
+        "number": "3.2.1",
+        "index": "7",
+        "fromtitle": "1.x/Guard",
+        "byteoffset": 3782,
+        "anchor": "Bouncers",
+        "linkAnchor": "Bouncers"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Bodyguards",
+        "number": "3.2.2",
+        "index": "8",
+        "fromtitle": "1.x/Guard",
+        "byteoffset": 4102,
+        "anchor": "Bodyguards",
+        "linkAnchor": "Bodyguards"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Soldiers",
+        "number": "3.2.3",
+        "index": "9",
+        "fromtitle": "1.x/Guard",
+        "byteoffset": 4351,
+        "anchor": "Soldiers",
+        "linkAnchor": "Soldiers"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Future",
+        "number": "4",
+        "index": "10",
+        "fromtitle": "1.x/Guard",
+        "byteoffset": 4547,
+        "anchor": "Future",
+        "linkAnchor": "Future"
+      }
+    ],
+    "showtoc": ""
+  }
+}

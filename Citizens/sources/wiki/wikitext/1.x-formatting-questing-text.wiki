@@ -1,0 +1,12 @@
+{{NoSupport}}
+''This page under development.  Stay tuned.''
+
+Quest messages are either in the description,  completion, or acceptance fields of the text nodes, or inside of a message field in either the reward or objective nodes.  These messages do not come from any npc in particular.  You can use the &x bukkit color codes inside of the messages.  Also, you can use the following special replacement codes:
+<pre>
+<br> - Linebreak
+<y>  - (yellow?)
+<g>  - (green?)
+<player> - (player name?  Does this work? aufdemrand: No, it does not work for messages.  It does work for commands...)
+(... there may be more... )
+</pre>
+[[Category:Citizens1]]

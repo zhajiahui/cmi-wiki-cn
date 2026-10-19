@@ -1,0 +1,565 @@
+= Behaviors =
+
+The Behaviors system allows NPCs to run AI behaviors defined in YAML format. Behaviors can be simple actions like walking or waiting, or complex sequences with conditions, loops, and parallel execution.
+
+== Tree Structure ==
+
+All behavior trees start with a <code>tree:</code> root node:
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+tree:
+  sequence:
+    - behavior_name arg1 arg2
+    - another_behavior
+</pre>}}
+
+== Built-in Types ==
+
+=== sequence ===
+
+Runs children in order until one fails.
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+tree:
+  sequence:
+    - say "First"
+    - wait 1s
+    - say "Second"
+</pre>}}
+
+=== selector / random ===
+
+Runs one sub-behavior at random. 
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+tree:
+  selector:
+    - sequence:
+        - if `player_nearby`:
+            - say "I see you!"
+    - wander radius=15
+</pre>}}
+
+=== parallel ===
+Runs multiple behaviors at the same time.
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+tree:
+  parallel:
+    - wander radius=10 pathfind=true
+    - sequence:
+        - wait 5s
+        - say "Still wandering..."
+</pre>}}
+
+=== loop [condition] ===
+
+Runs the children in sequence if the condition is true.
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+tree:
+  loop `memory.get('counter', 0) < 5`:
+    - say "Count is {memory.get('counter', 0)}"
+    - set counter `memory.get('counter', 0) + 1`
+    - wait 1s
+</pre>}}
+
+=== if [condition] / else ===
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+tree:
+  sequence:
+    - if `memory.has('greeted')`:
+        - say "Welcome back!"
+      else:
+        - say "Nice to meet you!"
+        - set greeted true
+</pre>}}
+
+=== invert ===
+
+Inverts the success or failure of its child.
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+tree:
+  invert:
+    - fail
+</pre>}}
+
+=== timeout [duration] ===
+
+If the child doesn't complete within the specified duration, it fails.
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+tree:
+  timeout 5s:
+    - walkto 500 64 500
+</pre>}}
+
+=== eval [language] ===
+
+Evaluates multiple expressions. 
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+tree:
+  eval:
+    - memory.set('x', 100)
+    - memory.set('y', 64)
+    - memory.set('z', 200)
+</pre>}}
+
+Or with a specific language (javascript, molang):
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+tree:
+  eval molang:
+    - v.test = 5
+    - v.result = v.test * 2
+</pre>}}
+
+=== Movement ===
+
+==== walkto ====
+
+Walks to specified coordinates.
+
+'''Inline usage:'''
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+- walkto 100 64 200 speed=1.5 range=50
+</pre>}}
+
+'''Named parameters:'''
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+- walkto:
+    x: 100
+    y: 64
+    z: 200
+    speed: 1.5
+    range: 50
+    distance_margin: 2
+</pre>}}
+
+'''Parameters:'''
+* <code>x</code>, <code>y</code>, <code>z</code> - Target coordinates (required)
+* <code>speed</code> - Movement speed multiplier (optional)
+* <code>range</code> - Maximum pathfinding range (optional)
+* <code>distance_margin</code> / <code>margin</code> - How close in blocks to get to target (optional)
+
+==== wander ====
+
+Random wandering within a radius.
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+- wander radius=10 pathfind=true
+</pre>}}
+
+'''Parameters:'''
+* <code>radius</code> - Wander radius in blocks (default: 10)
+* <code>pathfind</code> - Whether to use pathfinding (default: true)
+
+==== look ====
+
+Makes the NPC look at specific coordinates.
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+- look 100 64 200
+</pre>}}
+
+'''Parameters:'''
+* <code>x</code>, <code>y</code>, <code>z</code> - Target coordinates (required)
+
+==== teleport ====
+
+Teleports the NPC to coordinates.
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+- teleport 100 64 200
+- teleport 100 64 200 world_name
+</pre>}}
+
+'''Parameters:'''
+* <code>x</code>, <code>y</code>, <code>z</code> - Target coordinates (required)
+* <code>world</code> - World name (optional, defaults to current world)
+
+=== Timing ===
+
+==== wait ====
+
+Waits for a specified duration.
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+- wait 3s      # 3 seconds
+- wait 100t    # 100 ticks
+- wait 2m      # 2 minutes
+</pre>}}
+
+'''Duration formats:'''
+* <code>s</code> - seconds
+* <code>t</code> - ticks
+* <code>m</code> - minutes
+* Can also use expressions: <code>wait `some_expression`</code>
+
+==== wait_until ====
+
+Waits until a condition becomes true.
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+- wait_until `player.distance < 10`
+</pre>}}
+
+==== cooldown ====
+
+Rate limits behaviors. Only succeeds if enough time has passed since the last time it was run.
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+- cooldown greeting 30s
+- say "Hello there!"
+</pre>}}
+
+'''Parameters:'''
+* <code>key</code> - Cooldown identifier (required)
+* <code>duration</code> - Cooldown duration (default: 1s)
+
+=== Memory Management ===
+
+==== set ====
+
+Sets a memory variable.
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+- set counter 5
+- set name "Bob"
+- set calculated `10 * 5`
+</pre>}}
+
+'''Parameters:'''
+* <code>key</code> - Variable name (required)
+* <code>value</code> - Value to set (required, can be expression)
+
+==== forget ====
+
+Removes a memory variable.
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+- forget counter
+</pre>}}
+
+==== clear_memory ====
+
+Clears all memory variables.
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+- clear_memory
+</pre>}}
+
+=== Communication ===
+
+==== say ====
+
+Makes the NPC say a message to nearby players.
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+- say "Hello, world!"
+- say `"Player count: " + player.count`
+</pre>}}
+
+==== emit_signal ====
+
+Emits a signal.
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+- emit_signal "start_patrol"
+</pre>}}
+
+==== emit_signal_to ====
+
+Emits a signal to a specific NPC by ID or UUID.
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+- emit_signal_to 123 "alert"
+- emit_signal_to "uuid-string" "alert"
+</pre>}}
+
+'''Parameters:'''
+* <code>npc</code> - NPC ID or UUID (required)
+* <code>signal</code> - Signal name (required)
+
+==== emit_global_signal ====
+
+Emits a signal that all NPCs receive.
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+- emit_global_signal "server_restart_warning"
+</pre>}}
+
+==== wait_for_signal ====
+
+Waits until a signal is received.
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+- wait_for_signal "start_patrol"
+- say "Signal received!"
+</pre>}}
+
+=== World Interaction ===
+
+==== break_block ====
+
+Breaks a block realistically using the NPC's held item at the specified coordinates.
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+- break_block 100 64 200 radius=3
+</pre>}}
+
+'''Parameters:'''
+* <code>x</code>, <code>y</code>, <code>z</code> - Block coordinates (required)
+* <code>radius</code> - Maximum distance in blocks to break from (default: 3)
+
+=== Control Flow ===
+
+==== succeed ====
+
+Always returns SUCCESS.
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+- succeed
+</pre>}}
+
+==== fail ====
+
+Always returns FAILURE.
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+- fail
+</pre>}}
+
+
+==== repeat ====
+
+Repeats a specified number of times.
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+- repeat 5:
+    - say "Counting..."
+    - wait 1s
+</pre>}}
+
+'''Parameters:'''
+* <code>count</code> - Number of repetitions (default: 1)
+
+== Special Syntax ==
+
+=== Command Execution ===
+
+Lines starting with <code>/</code> are executed as commands:
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+tree:
+  sequence:
+    - /npc speak "Hello from command!"
+    - /say This is a server command
+</pre>}}
+
+=== Expression Evaluation ===
+
+Lines starting with backtick (<code>`</code>) are evaluated as expressions:
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+tree:
+  sequence:
+    - `inv.add(item.json('{"material":"DIAMOND","amount":64}'))`
+    - `memory.set('flag', true)`
+</pre>}}
+
+== Expression System ==
+
+The behavior tree system integrates with the Expression Registry for dynamic values.
+
+=== Expression Syntax ===
+
+Expressions can be used in several ways:
+
+'''Inline in conditions:'''
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+- if `memory.get('counter') < 10`:
+    - say "Counter is low"
+</pre>}}
+
+'''In parameter values:'''
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+- walkto `npc.location.x + 10` `npc.location.y` `npc.location.z`
+</pre>}}
+
+'''In text:'''
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+- say "Counter value: {memory.get('counter')}"
+</pre>}}
+
+'''Standalone evaluation:'''
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+- `memory.set('result', 10 * 5)`
+</pre>}}
+
+== Memory System ==
+
+The memory system provides persistent storage across behavior executions.
+
+=== Usage ===
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+tree:
+  sequence:
+    - set visited_waypoint_1 true
+    - set visit_count `memory.get('visit_count', 0) + 1`
+    - if `memory.has('greeted')`:
+        - say "Welcome back! Visit #{memory.get('visit_count')}"
+      else:
+        - say "First visit!"
+        - set greeted true
+    - forget temporary_flag
+</pre>}}
+
+=== Memory Methods ===
+
+* <code>memory.set(key, value)</code> - Set a value
+* <code>memory.get(key, default)</code> - Get a value with optional default
+* <code>memory.has(key)</code> - Check if key exists
+* <code>memory.remove(key)</code> - Remove a key
+* <code>memory.clear()</code> - Clear all memory
+
+Memory is automatically saved and loaded with the NPC.
+
+== Complete Examples ==
+
+=== Basic Patrol ===
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+tree:
+  sequence:
+    - set patrol_started true
+    - loop `memory.get('patrol_count', 0) < 3`:
+        - walkto `npc.location.x + 10` `npc.location.y` `npc.location.z`
+        - wait 2s
+        - cooldown speak 10s
+        - say "Patrolling area {memory.get('patrol_count', 0)}"
+        - walkto `npc.location.x - 10` `npc.location.y` `npc.location.z`
+        - set patrol_count `memory.get('patrol_count', 0) + 1`
+    - say "Patrol complete!"
+    - forget patrol_count
+</pre>}}
+
+=== Signal Coordination ===
+
+'''Guard NPC:'''
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+tree:
+  sequence:
+    - wait_for_signal "intruder_alert"
+    - say "Intruder detected! Responding!"
+    - walkto `signal.data.x` `signal.data.y` `signal.data.z`
+    - emit_global_signal "area_secured"
+</pre>}}
+
+'''Lookout NPC:'''
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+tree:
+  sequence:
+    - if `player.distance < 10`:
+        - cooldown alert 60s
+        - emit_global_signal "intruder_alert"
+        - say "Alert! Intruder spotted!"
+</pre>}}
+
+=== Conditional Greeter ===
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+tree:
+  sequence:
+    - if `memory.has('greeted')`:
+        - say "Welcome back!"
+      else:
+        - sequence:
+            - say "Nice to meet you!"
+            - set greeted true
+    - cooldown greet 10s
+    - wait 2s
+    - say "Have a nice day!"
+</pre>}}
+
+=== Resource Gathering ===
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+tree:
+  sequence:
+    - set gathered 0
+    - loop `memory.get('gathered', 0) < 5`:
+        - wander radius=20 pathfind=true
+        - wait 5s
+        - break_block `npc.location.x` `npc.location.y - 1` `npc.location.z`
+        - set gathered `memory.get('gathered', 0) + 1`
+        - say "Gathered {memory.get('gathered')} resources"
+    - say "Resource gathering complete!"
+    - teleport 0 64 0
+</pre>}}
+
+== Loading Behavior Trees ==
+
+=== External File ===
+
+You can load trees from external files in the <code>behaviors/</code> directory.
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+traits:
+  - name: behavior
+    tree: patrol_behavior.yml
+</pre>}}
+
+The behaviors will be loaded from <code>plugins/Citizens/behaviors/patrol_behavior.yml</code>
+
+=== Template System ===
+Behavior trees can be included in templates:
+
+{{codebox|height=200px|width=100%||<pre lang="yaml">
+greeter:
+  traits:
+    - name: behavior
+      tree:
+        sequence:
+          - cooldown greet 10s
+          - say "Hello there, traveler!"
+          - wait 2s
+</pre>}}
+
+== API ==
+
+=== Registering Custom Behaviors ===
+
+Register custom behaviors with the BehaviorRegistry:
+
+{{codebox|height=200px|width=100%||<pre lang="java">
+registry.registerBehavior("my_behavior", (params, context) -> {
+    String arg = context.getArgOrParam(0, "param_name", params, "default");
+    ExpressionValue argHolder = registry.getExpressionRegistry().parseValue(arg);
+
+    return new InstantBehavior() {
+        @Override
+        public void reset() {
+        }
+
+        @Override
+        public BehaviorStatus run() {
+            NPC npc = context.getNPC();
+            // Your behavior logic here
+            return BehaviorStatus.SUCCESS;
+        }
+
+        @Override
+        public boolean shouldExecute() {
+            return true;
+        }
+    };
+});
+</pre>}}
+
+=== Custom Expression Languages ===
+
+Register custom expression engines with the ExpressionRegistry for domain-specific languages.

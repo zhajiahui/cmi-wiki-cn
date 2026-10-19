@@ -1,0 +1,482 @@
+Read below for detailed command documentation. For more info on per-type commands and permissions, see its corresponding page.
+
+'''[]''' - Mandatory
+<br>'''()''' - Optional
+
+'''Command''' - command's syntax
+<br>'''Args Description''' - description of the command's arguments
+<br>'''Require Selected''' - whether the command requires an NPC to be selected
+<br>'''Require Ownership''' - whether the commands requires you to be the owner of the NPC
+<br>'''Require Mob Types''' - whether the command requires an NPC to be a certain mob type(s)
+<br>'''Permission''' - command's permission node
+<br>'''Description''' - short description of the command
+
+== Commands not listed here ==
+
+'''There are quite a few commands that are not listed here, mainly for reasons of maintenance order (the wiki isn't updated all that often, but the actual commands list is updated regularly.)'''
+'''<br>To see the list of commands on your current version of Citizens, simply type <code>/npc help</code> in-game. You can use <code>/npc help 2</code> to view page 2, and so on (switch 2 to any page number).'''
+<br>To see information on a specific command, you can use <code>/npc help create</code> in-game. Change the "create" to any other command name (the example will show help for the <code>/npc create</code> command).
+<br>
+<br>Some commands have documentation elsewhere:
+* /npc skin - [[Skins]]
+<br>
+<br>There are also many commands that are added by other traits. see [[Characters]]
+
+== Adding Click Commands ==
+
+If you're looking for a way to add automatically ran commands when you click an NPC, that's explained at [[NPC_Commands]].
+
+== Admin Commands ==
+Commands used for administration of Citizens.
+
+{| class="wikitable collapsible" style="text-align: center; width: 100%"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="3" | '''Admin Commands'''
+|-
+! style="width: 250px;" | Command !! style="width: 170px;" | Permission !! Description
+|-
+| /citizens || citizens.admin || Show basic plugin information
+|-
+| /citizens reload || citizens.admin || Reload Citizens
+|-
+| /citizens save || citizens.admin || Save NPCs and configuration
+|}
+
+== Help Commands ==
+Commands used in-game to show the help screen.
+
+{| class="wikitable collapsible" style="text-align: center; width: 100%"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="6" | '''Help Commands'''
+|-
+! style="width: 250px;" | Command !! style="width: 200px;" | Arguments !! style="width: 170px;" | Permission !! Description
+|-
+| /citizens help || ''(Page)'' - Page number to display || citizens.help || Show Citizens help menu
+|-
+| /npc help || ''(Page)'' - Page number to display || citizens.npc.help || Show NPC help menu
+|-
+| /trait help || ''(Page)'' - Page number to display || citizens.trait.help || Show trait help menu
+|-
+| /template help || ''(Page)'' - Page number to display || citizens.templates.help || Show template help menu
+|- 
+| /waypoints help || ''(Page)'' - Page number to display || citizens.waypoints.help || Show waypoints help menu
+|}
+
+== NPC Commands ==
+General commands used for all NPCs.
+
+{| class="wikitable collapsible" style="text-align: center; width: 100%"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="7" | '''NPC Commands'''
+|-
+! style="width: 200px;" | Command !! style="width: 400px;" | Arguments !! Description
+{{#!:
+|-
+| /npc  || <code>None</code>  || None
+|-
+| /npc activationrange || <code>[range]</code>  || Sets the activation range
+|-
+| /npc age || <code>[age] (-l(ock))</code>  || Can only be used on entities that can become babies. Use the '''-l''' flag to lock age over time (note: relogs may be required to see this).
+|-
+| /npc aggressive || <code>[true&#124;false] (-t(emporary))</code>  || Sets the aggressive status of the entity
+|-
+| /npc ai || <code>(true&#124;false)</code>  || Sets whether the NPC should use vanilla AI
+|-
+| /npc allay || <code>(-d(ancing))</code>  || Sets allay modifiers
+|-
+| /npc anchor || <code>(--save [name]&#124;--assume [name]&#124;--remove [name]) (-a) (-c)</code>  || Manages the NPC&#39;s location anchor(s)
+|-
+| /npc areaeffectcloud || <code>--color [color] --duration [duration] --radius [radius] --radius_per_tick [radius] --particle [particle]</code>  || None
+|-
+| /npc armadillo || <code>--state [state]</code>  || None
+|-
+| /npc armorstand || <code>--visible [visible] --small [small] --marker [marker] --gravity [gravity] --arms [arms] --baseplate [baseplate] --(head&#124;body&#124;leftarm&#124;leftleg&#124;rightarm&#124;rightleg)pose [angle x,y,z]</code>  || Edit armorstand properties
+|-
+| /npc attribute || <code>[attribute] [value]</code>  || Set various NPC attributes
+|-
+| /npc axolotl || <code>(-d) (--variant variant)</code>  || Sets axolotl modifiers
+|-
+| /npc bat || <code>--awake [awake]</code>  || Set bat modifiers
+|-
+| /npc bee || <code>(-s/-n) --anger anger</code>  || Sets bee modifiers
+|-
+| /npc behavior || <code>[file.yml]</code>  || Manages behavior trees
+|-
+| /npc boat || <code>--type [type]</code>  || Sets boat modifiers
+|-
+| /npc bossbar || <code>--style [style] --color [color] --title [title] --visible [visible] --viewpermission [permission] --flags [flags] --track [health &#124; placeholder] --range [range]</code>  || Edit bossbar properties
+|-
+| /npc breakblock || <code>--location [x,y,z] --radius [radius]</code>  || None
+|-
+| /npc camel || <code>(--pose pose)</code>  || Sets camel modifiers
+|-
+| /npc cat || <code>(-s/-n/-l) --type type --ccolor collar color</code>  || Sets cat modifiers
+|-
+| /npc chicken || <code>(--variant variant)</code>  || Manage chicken modifiers
+|-
+| /npc chunkload || <code>(-t(emporary))</code>  || Toggle the NPC forcing chunks to stay loaded
+|-
+| /npc collidable || <code>--fluids [true&#124;false]</code>  || Toggles an NPC&#39;s collidability
+|-
+| /npc command || <code>(add [command] &#124; execute [player UUID] [hand] &#124; remove [id&#124;all] &#124; permissions [permissions] (duration) &#124; sequential &#124; cycle &#124; random &#124; forgetplayer (uuid) &#124; clearerror [type] (name&#124;uuid) &#124; errormsg [type] [msg] &#124; persistsequence [true&#124;false] &#124; cost [cost] (id) &#124; expcost [cost] (id) &#124; itemcost (id)) (-s(hift)) (-l[eft]/-r[ight]) (-p[layer] -o[p]), --cooldown --gcooldown [seconds] --delay [ticks] --permissions [perms] --n [max # of uses] --gn [max # of global uses]</code>  || 
+Use the '''-l''' flag to make the command run on left click, '''-r''' on right click (default).
+'''execute''' triggers assigned commands as if a player clicked the npc.
+Set the per-player cooldown before the command can be used again using '''--cooldown''' (in '''seconds''').
+Set the server-wide cooldown in seconds using '''--gcooldown'''.
+'''--delay''' will wait the specified amount in '''ticks''' before executing the command.
+'''--permissions''' will set the command to require specific permissions (separate multiple with commas).
+'''--n''' will only let the player run the command that number of times.
+Use '''-o''' to temporarily execute the command as an op and '''-p''' to run the command as the clicking player instead of the server.
+Use '''-n''' to run the command as the NPC instead of the clicking player. Must be a player type NPC.
+To give the player temporary permissions instead of op, use '''/npc command permissions'''.
+Set the cost of each click with '''/npc command cost/expcost/itemcost'''.
+Commands can be executed one by one instead of all at once by using '''/npc command sequential''' or '''/npc command cycle'''.
+|-
+| /npc configgui || <code>None</code>  || Display NPC configuration GUI
+|-
+| /npc controllable || <code>(-m(ount),-o(wner required)) (--controls [controls]) (--enabled [true&#124;false])</code>  || Toggles whether the NPC can be ridden and controlled
+|-
+| /npc copier || <code>None</code>  || Toggle the NPC copier
+|-
+| /npc coppergolem || <code>(--weatherstate state) (--weatheringtick tick)</code>  || Controls copper golem modifiers
+|-
+| /npc copy || <code>(--name newname)</code>  || Copies an NPC
+|-
+| /npc cow || <code>(--variant variant)</code>  || Manage cow modifiers
+|-
+| /npc create || <code>[name] ((-b(aby),u(nspawned),s(ilent),t(emporary),c(enter),p(acket)) --at [x,y,z,world] --type [type] --item (item) --trait [&#39;trait1, trait2...&#39;] --model [model name] --nameplate [true&#124;false&#124;hover] --temporaryduration [duration] --registry [registry name]</code>  || Create a new NPC
+|-
+| /npc debug || <code>-p(aths) -n(avigation) -i(tem in hand)</code>  || Display debugging information
+|-
+| /npc deselect || <code>None</code>  || Deselect currently selected NPC
+|-
+| /npc despawn || <code>(id)</code>  || Despawn a NPC
+|-
+| /npc disguise || <code>--type [type]</code>  || Manages entity disguises
+|-
+| /npc display || <code>--billboard [billboard] --brightness [blockLight,skyLight] --interpolationdelay [delay] --interpolationduration [duration] --height [height] --width [width] --scale [x,y,z] --viewrange [range] --leftrotation [x,y,z,w] --rightrotation [x,y,z,w] --offset [x,y,z]</code>  || Set various display entity modifiers
+|-
+| /npc drops || <code>None</code>  || Edit an NPC&#39;s drops
+|-
+| /npc endercrystal || <code>-b(ottom)</code>  || Edit endercrystal modifiers
+|-
+| /npc enderdragon || <code>--phase [phase] --destroywalls [true&#124;false]</code>  || Sets enderdragon modifiers
+|-
+| /npc enderman || <code>-a(ngry)</code>  || Set enderman modifiers
+|-
+| /npc entitypose || <code>[pose]</code>  || Control entity pose
+|-
+| /npc equip || <code>None</code>  || Toggle the equipment editor
+|-
+| /npc eval || <code>[expression]</code>  || None
+|-
+| /npc flyable || <code>(true&#124;false)</code>  || Toggles or sets an NPC&#39;s flyable status
+|-
+| /npc follow || <code>(player name&#124;NPC id) (-p[rotect]) (--margin [margin]) (--enable [boolean])</code>  || Toggles NPC following you
+|-
+| /npc forcefield || <code>--width [width] --height [height] --strength [strength] --vertical-strength [vertical strength]</code>  || Creates a forcefield which pushes players close to the NPC away
+|-
+| /npc fox || <code>--type type --sleeping [true&#124;false] --sitting [true&#124;false] --crouching [true&#124;false] --interested [true&#124;false] --pouncing [true&#124;false] --faceplanted [true&#124;false]</code>  || Sets fox modifiers
+|-
+| /npc frog || <code>(--variant variant)</code>  || Sets frog modifiers
+|-
+| /npc gamemode || <code>[gamemode]</code>  || Changes the gamemode
+|-
+| /npc glowing || <code>--color [minecraft chat color]</code>  || Toggles an NPC&#39;s glowing status
+|-
+| /npc goat || <code>-l(eft) -r(ight) -n(either) -b(oth) horn</code>  || Sets goat modifiers
+|-
+| /npc gravity || <code>None</code>  || Toggles gravity
+|-
+| /npc hitbox || <code>--scale [scale] --width/height [value] --offset [x,y,z]</code>  || Sets the NPC hitbox
+|-
+| /npc hologram || <code>add [text] (--duration [duration]) &#124; insert [line #] [text] &#124; set [line #] [text] &#124; remove [line #] &#124; edit_npc [template &#124; name &#124; line #] &#124; clear &#124; lineheight [height] &#124; viewrange [range] &#124; margintop [line #] [margin] &#124; marginbottom [line #] [margin]</code>  || Controls NPC hologram text
+|-
+| /npc home || <code>--location [loc] --delay [delay] --distance [distance] -h(ere) -p(athfind) -t(eleport)</code>  || Controls home location
+|-
+| /npc horse || <code>(--color color) (--type type) (--style style) (-cbt)</code>  || Use the -c flag to make the NPC have a chest, or the -b flag to stop them from having a chest.
+|-
+| /npc hurt || <code>[damage]</code>  || Damages the NPC
+|-
+| /npc id || <code>None</code>  || Sends the selected NPC&#39;s ID to the sender
+|-
+| /npc inventory || <code>(player name/uuid)</code>  || Show&#39;s an NPC&#39;s inventory
+|-
+| /npc item || <code>[item] (-h(and))</code>  || Sets the NPC&#39;s item
+|-
+| /npc itemdisplay || <code>--transform [transform]</code>  || None
+|-
+| /npc itemframe || <code>--visible [true&#124;false] --fixed [true&#124;false] --rotation [rotation] --item [item] --face [face]</code>  || Sets itemframe modifiers
+|-
+| /npc jump || <code>None</code>  || Makes the NPC jump
+|-
+| /npc knockback || <code>(--explicit true&#124;false)</code>  || Toggle NPC knockback
+|-
+| /npc leashable || <code>None</code>  || Toggles leashability
+|-
+| /npc list || <code>(page) ((-a) --owner (owner) --type (type) --char (char) --registry (name))</code>  || List NPCs
+|-
+| /npc llama || <code>(--color color) (--strength strength)</code>  || Sets llama modifiers
+|-
+| /npc lookclose || <code>--range [range] --filter [filter] -r[ealistic looking] --randomlook [true&#124;false] --perplayer [true&#124;false] --randomswitchtargets [true&#124;false] --randompitchrange [min,max] --randomyawrange [min,max] --disablewhennavigating [true&#124;false] --targetnpcs [true&#124;false]</code>  || Toggle whether a NPC will look when a player is near
+|-
+| /npc mannequin || <code>--hide_description [true&#124;false] --immovable [true&#124;false] --description [description] --main_hand [LEFT&#124;RIGHT] --skin_patch_type [type] --skin_patch_body [location] --skin_patch_cape [location] --skin_patch_elytra [location]</code>  || None
+|-
+| /npc metadata || <code>set&#124;get&#124;remove [key] (value) (-t(emporary))</code>  || Manages NPC metadata
+|-
+| /npc minecart || <code>(--offset offset)</code>  || Sets minecart item
+|-
+| /npc mirror || <code>--name [true&#124;false] --equipment [true&#124;false]</code>  || Controls mirroring of NPC skins and more
+|-
+| /npc model || <code>[name]</code>  || None
+|-
+| /npc modelanimate || <code>[start&#124;stop&#124;clear] (name) (speed)</code>  || None
+|-
+| /npc mount || <code>(--onnpc &lt;npc id&#124;uuid&gt;) (-d(ismount)) (-c(ancel))</code>  || Mounts a controllable NPC
+|-
+| /npc moveto || <code>x:y:z:world &#124; x y z world</code>  || Teleports a NPC to a given location
+|-
+| /npc mushroomcow || <code>(--variant [variant])</code>  || Sets mushroom cow modifiers
+|-
+| /npc name || <code>(-h(over))</code>  || Toggle nameplate visibility, or only show names on hover
+|-
+| /npc ocelot || <code>(--type type) (-s(itting), -n(ot sitting))</code>  || Set the ocelot type of an NPC and whether it is sitting
+|-
+| /npc owner || <code>[uuid&#124;SERVER]</code>  || Set the owner of an NPC
+|-
+| /npc packet || <code>--enabled [true&#124;false]</code>  || Controls packet NPC settings
+|-
+| /npc painting || <code>(--art art)</code>  || Set painting modifiers
+|-
+| /npc panda || <code>--gene (main gene) --hiddengene (hidden gene) -e(ating) -s(itting) -n (sneezing) -r(olling)</code>  || Sets panda modifiers
+|-
+| /npc panimate || <code>[animation]</code>  || Plays a player animation
+|-
+| /npc parrot || <code>(--variant variant)</code>  || Sets parrot modifiers
+|-
+| /npc passive || <code>(--set [true&#124;false])</code>  || Sets whether an NPC damages other entities or not
+|-
+| /npc path || <code>None</code>  || Toggle the waypoint editor
+|-
+| /npc pathopt || <code>--avoid-teleporting [true&#124;false] --avoid-water [true&#124;false] --attack-delay-duration [duration] --destination-teleport-margin [margin] --open-doors [true&#124;false] --path-range [range] --stationary-ticks [ticks] --attack-range [range] --distance-margin [margin] --path-distance-margin [margin] --pathfinder-type [CITIZENS&#124;MINECRAFT] --falling-distance [distance]</code>  || Sets an NPC&#39;s pathfinding options
+|-
+| /npc pathto || <code>me &#124; here &#124; cursor &#124; [x] [y] [z] (--margin [distance margin]) (-s[traight line])</code>  || Starts pathfinding to a certain location
+|-
+| /npc pausepathfinding || <code>--onrightclick [true&#124;false] --when-player-within [range in blocks] --pauseduration [duration] --lockoutduration [duration]</code>  || Sets pathfinding pause
+|-
+| /npc phantom || <code>(--size size)</code>  || Sets phantom modifiers
+|-
+| /npc pickupitems || <code>(--set [true&#124;false])</code>  || Allow NPC to pick up items
+|-
+| /npc pig || <code>(--variant variant)</code>  || Manage pig modifiers
+|-
+| /npc piglin || <code>(--dancing [true&#124;false])</code>  || Sets piglin modifiers
+|-
+| /npc playerfilter || <code>-a(llowlist) -e(mpty) -d(enylist) --add [uuid] --remove [uuid] --addpermission [permission] --removepermission [permission] --addgroup [group] --removegroup [group] -c(lear) --applywithin [blocks range]</code>  || Manages the NPC&#39;s player filter
+|-
+| /npc playerlist || <code>(-a(dd),r(emove))</code>  || Sets whether the NPC is put in the playerlist
+|-
+| /npc playsound || <code>[sound] (category) (volume) (pitch) (--to [player]) (--at x:y:z:world)</code>  || Plays a sound at the NPC&#39;s location
+|-
+| /npc polarbear || <code>(-r)</code>  || Sets polarbear modifiers
+|-
+| /npc pose || <code>(--save [name] (-d) &#124; --mirror [name] (-d) &#124; --assume [name] &#124; --remove [name] &#124; --default [name]) (--yaw yaw) (--pitch pitch) (-a)</code>  || Manage NPC poses
+|-
+| /npc potioneffect || <code>[add&#124;remove&#124;list] (--name [name] or -t for temporary) (--type [type]) (--duration [duration]) (--amplifier [amplifier]) (--icon [icon])</code>  || None
+|-
+| /npc powered || <code>(--set true&#124;false)</code>  || Toggle a creeper NPC as powered
+|-
+| /npc pufferfish || <code>(--state state)</code>  || Sets pufferfish modifiers
+|-
+| /npc rabbittype || <code>[type]</code>  || Set the NPC&#39;s rabbit type
+|-
+| /npc remove || <code>(all&#124;id&#124;name&#124; --owner [owner] &#124; --eid [entity uuid] &#124; --world [world])</code>  || Remove a NPC
+|-
+| /npc rename || <code>[name]</code>  || Rename a NPC
+|-
+| /npc respawn || <code>[delay]</code>  || Sets an NPC&#39;s respawn delay
+|-
+| /npc rotate || <code>(--towards [x,y,z]) (--toentity [name&#124;uuid&#124;me]) (--body [yaw]) (--head [yaw]) (--pitch [pitch]) (-s(mooth))</code>  || Rotate NPC
+|-
+| /npc rotationsettings || <code>[linear&#124;immediate] (--link_body) (--head_only) (--max_pitch_per_tick) (--max_yaw_per_tick) (--pitch_range) (--yaw_range)</code>  || Controls various head and body rotation settings for the NPC.
+Currently NPCs look using simple Minecraft-style rotation where the head/body move a certain amount of degrees per tick towards the target
+Accepts the following flags:
+'''--link_body''': whether the head and body rotation should be linked directly
+'''--head_only''': whether only the head should 
+'''--max_yaw_per_tick''': how many degrees to change yaw per tick (defaults to 40)
+'''--max_pitch_per_tick''': how many degrees to change pitch per tick (defaults to 10)
+'''--pitch_range''': the range of possible pitches to take (defaults to -180,180)
+'''--yaw_range''': the range of possible yaws to take (defaults to -180,180)
+|-
+| /npc scaledmaxhealth || <code>[health]</code>  || Controls the max health of an NPC, can use large numbers.
+|-
+| /npc select || <code>[id&#124;name] (--range range) (--registry [name])</code>  || Select a NPC with the given ID or name
+|-
+| /npc setequipment || <code>(-c(osmetic)) [slot] [item]</code>  || Sets equipment via commands
+|-
+| /npc sheep || <code>(--color [color]) (--sheared [sheared])</code>  || Sets sheep modifiers
+|-
+| /npc shop || <code>(edit&#124;show&#124;delete&#124;copyfrom) (name) (new_name)</code>  || NPC shop edit/show
+|-
+| /npc showshop || <code>(name)</code>  || NPC shop show
+|-
+| /npc shulker || <code>(--peek [peek] --color [color])</code>  || Sets shulker modifiers
+|-
+| /npc sitting || <code>(--explicit [true&#124;false]) (--at [at])</code>  || Sets the NPC sitting
+|-
+| /npc skin || <code>(-e(xport) -c(lear) -l(atest) -s(kull) -b(edrock)) [name] (or --url [url] --file [file] (-s(lim)) or -t [uuid/name] [data] [signature])</code>  || Sets an NPC&#39;s skin name. Use -l to set the skin to always update to the latest
+|-
+| /npc skinlayers || <code>(--cape [true&#124;false]) (--hat [true&#124;false]) (--jacket [true&#124;false]) (--sleeves [true&#124;false]) (--pants [true&#124;false])</code>  || Sets an NPC&#39;s skin layers visibility
+|-
+| /npc slimesize || <code>[size]</code>  || None
+|-
+| /npc sniffer || <code>(--state [state])</code>  || Sets sniffer modifiers
+|-
+| /npc snowman || <code>(-d[erp]) (-f[orm snow])</code>  || Sets snowman modifiers
+|-
+| /npc sound || <code>(--death [death sound&#124;d]) (--ambient [ambient sound&#124;d]) (--hurt [hurt sound&#124;d]) (-n(one)/-s(ilent)) (-d(efault))</code>  || Sets an NPC&#39;s played sounds
+|-
+| /npc spawn || <code>(id&#124;name) -l(oad chunks)</code>  || Spawn an existing NPC
+|-
+| /npc speak || <code>[message] --bubble [duration] --target [npcid&#124;player name] --range (range to look for entities to speak to in blocks)</code>  || Says a message from the NPC
+|-
+| /npc spectate || <code>(-r(eset))</code>  || None
+|-
+| /npc speed || <code>[speed]</code>  || Sets the movement speed of an NPC as a percentage
+|-
+| /npc spellcaster || <code>(--spell spell)</code>  || Sets spellcaster modifiers
+|-
+| /npc swim || <code>(--set [true&#124;false])</code>  || Sets an NPC to swim or not
+|-
+| /npc target || <code>[name&#124;UUID] (-a[ggressive]) (-c[ancel])</code>  || Target a given entity
+|-
+| /npc targetable || <code>None</code>  || Toggles an NPC&#39;s targetability
+|-
+| /npc text || <code>None</code>  || Toggle the text editor
+|-
+| /npc textdisplay || <code>--shadowed [true&#124;false] --seethrough [true&#124;false] --line_width [width] --text [text]</code>  || None
+|-
+| /npc tp || <code>(-e(xact))</code>  || Teleport in front of an NPC
+|-
+| /npc tphere || <code>(cursor) -c(enter) -f(ront)</code>  || Teleport a NPC to your location
+|-
+| /npc tpto || <code>[player name&#124;npc id] [player name&#124;npc id]</code>  || Teleport an NPC or player to another NPC or player
+|-
+| /npc trackingrange || <code>[range]</code>  || Sets the tracking range
+|-
+| /npc tropicalfish || <code>(--body color) (--pattern pattern) (--patterncolor color)</code>  || Sets tropical fish modifiers
+|-
+| /npc type || <code>[type]</code>  || Sets an NPC&#39;s entity type
+|-
+| /npc undo || <code>(all)</code>  || Undoes the last action (currently only create/remove supported)
+|-
+| /npc useitem || <code>(-o(ffhand))</code>  || Sets an NPC to  be using their held items
+|-
+| /npc vex || <code>(--charging [charging])</code>  || Set vex modifiers
+|-
+| /npc villager || <code>(--level level) (--type type) (--profession profession) -s(hake head)</code>  || Sets villager modifiers
+|-
+| /npc vulnerable || <code>(-t(emporary))</code>  || Toggles an NPC&#39;s vulnerability
+|-
+| /npc wander || <code>(add x y z world) &#124; (worldguardregion [region]) &#124; (xyrange [xrange] [yrange])</code>  || Sets the NPC to wander around
+|-
+| /npc warden || <code>dig&#124;emerge&#124;roar&#124;anger [entity uuid/player name] [anger]</code>  || Sets warden modifiers
+|-
+| /npc wither || <code>(--invulnerable [true&#124;false]) (--invulnerable-ticks [ticks]) (--arrow-shield [true&#124;false])</code>  || Sets wither modifiers
+|-
+| /npc wolf || <code>(-s(itting) a(ngry) t(amed) i(nterested)) --collar [hex rgb color&#124;name] --variant [variant]</code>  || Sets wolf modifiers
+|-
+|/trait || <code>[trait1] [trait2] ... [traitN]</code> - A list of [[Characters|Traits]] to apply || Adds the [[Characters|trait type]] to the NPC. NPCs can have multiple traits. Example: <code> /trait sentinel</code>
+}}
+|}
+
+== Denizen-added commands ==
+
+The following <code>/npc</code> commands are added by [https://denizenscript.com/ Denizen] (as copied from <code>/npc help</code>).
+[https://guide.denizenscript.com/guides/background/download-denizen.html Denizen can be downloaded from here.]
+
+{| class="wikitable collapsible" style="text-align: center; width: 100%"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="7" | '''Denizen /NPC Commands'''
+|-
+! style="width: 200px;" | Command !! style="width: 400px;" | Arguments !! Description
+{{#!:
+|-
+| /npc mirrorskin || None || Makes the NPC mirror the skin of the player looking at it.
+|-
+| /npc mirrorname || None || Makes the NPC mirror the name of the player looking at it.
+|-
+| /npc mirrorequip || None || Makes the NPC mirror the equipment of the player looking at it.
+|-
+| /npc stand || None || Makes the NPC stand.
+|-
+| /npc pushable || ''-t (-r) (--delay #)'' || Makes an NPC pushable.
+|-
+| /npc constant || ''--set/remove name --value constant value'' || Views/adds/removes NPC string constants.
+|-
+| /npc assignment || ''--set assignment_name (-r)'' || Controls the assignment for an NPC.
+|-
+| /npc trigger || ''[trigger name] [(--cooldown [seconds])/(--radius [radius])/(-t)]'' || Controls the various triggers for an NPC.
+|-
+| /npc nickname || ''[--set nickname]'' || Gives the NPC a nickname, used with a Denizen-compatible Speech Engine.
+|-
+| /npc sit || ''(--location x,y,z,world) (--anchor anchor_name) (-c)'' || Makes the NPC sit.
+|-
+| /npc sleep || ''(--location x,y,z,world) (--anchor anchor_name)'' || Makes the NPC sleep.
+|-
+| /npc sneak || None || Makes the NPC crouch.
+|-
+| /npc wakeup || None || Makes the NPC wake up.
+|-
+| /npc fish || ''(--location x,y,z,world) (--anchor anchor_name) (-c)'' || Makes the NPC fish, casting at the given location.
+|-
+| /npc stopfishing || None || Makes the NPC stop fishing.
+|-
+| /npc invisible || None || Turns the NPC invisible.
+|-
+| /npc health || ''--set # (-r)'' || Sets the max health for an NPC.
+}}
+|}
+
+== Waypoint commands ==
+Permissions are of the format "citizens.waypoints.xx", like "citizens.waypoints.disableteleport" for the "disableteleport" command.
+{| class="wikitable collapsible" style="text-align: center; width: 100%"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="7" | '''Waypoint Commands'''
+|-
+! style="width: 200px;" | Command !! style="width: 400px;" | Arguments !! Description
+|-
+| /waypoints add || <code>[x] [y] [z] (world) (--index idx)</code>  || Adds a waypoint at a point
+|-
+| /waypoints disableteleport || <code>disableteleport</code>   || Disables teleportation when stuck
+|-
+| /waypoints hpa || <code>hpa</code>  || None
+|-
+| /waypoints provider || <code>[provider name]</code>  || Sets the current waypoint provider
+|-
+| /waypoints remove || <code>(x y z world) (--index idx)</code> || Adds a waypoint at a point
+|-
+|}
+
+== Template commands ==
+{| class="wikitable collapsible" style="text-align: center; width: 100%"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="7" | '''Template Commands'''
+|-
+! style="width: 200px;" | Command !! style="width: 400px;" | Arguments !! style="width: 50px;" | Permission !! Description
+|-
+| /template apply || <code>(template namespace:)[template name]</code>  || citizens.templates.apply || Applies a template to the selected NPC
+|-
+| /template generate || <code>(template namespace:)[name]</code>  || citizens.templates.generate || Generate a template from the selected NPC
+|-
+| /template list || <code>list</code>  || citizens.templates.list || Lists available templates
+|-
+|}
+
+==See Also==
+[[Characters]]
+<br>[[Text Syntax]]
+<br>[[Waypoints]]
+
+{{NavBox}}
+[[Category:Usage]]

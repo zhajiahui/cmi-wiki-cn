@@ -1,0 +1,136 @@
+
+This tutorial will show you how to create an '''Admin shop''' like trader, how to change his stock and what you should be aware of when managing a trader. I will show you some exceptions and behavior connected with the '''manager mode''' and it's '''sub-modes'''. I'll also show you how to change the configuration to help you set up prices.  
+
+== Creating a trader ==
+
+You can create a trader in 2 different ways, first one is using the '''/trader create <name>''' command, or the trait assignment command from citizens '''/trait trader'''.
+
+When you should use these command? 
+Generally the '''create''' command create a new NPC with the given name, ready to be edited with the next click, whereas the '''trait''' command should be used on existing NPCs, so if you got, lets say, a NPC walking a long path you don't need to set his path from scratch.
+
+
+Lets create a new trader so we can manage him not being afraid of any mistakes. 
+
+Lets create a trader with the name '''Chef Otto''', we will also make '''Otto''' to have his title in a golden color. 
+
+<code>/trader create &6Chef &rOtto</code> 
+
+As you see we use the '''&''' character to tell that the next number or character is a color code, where '''&6''' means '''''gold''''' and '''&r''' is used to '''reset any formating''', so only the ''title'' has a color. All color codes are listed [|here].
+
+
+After that command we have our npc standing before us, and we got three messages:
+
+<code style="font-family: Helvetica">
+'''You created a new trader: <span style="color:orange">Chef</span> Otto'''<br/>
+'''Manager mode enabled for: <span style="color:orange">Chef</span> Otto'''<br/>
+'''<span style="color:blue">Sell Stock</span> managing toggled'''
+</code>
+
+
+Every time you '''create a new trader''' with this command it '''switches automatically to manager mode''' for you and '''unlocks the sell stock'''. Unlocking the stock allows to change the content. 
+
+Now we only need to '''right click''' on the trader and get to the next section in this tutorial :)
+
+
+=== First opening and manager mode introduction ===
+
+Opening the trader first time, just after creating him, will look like a empty chest with just one '''yellow''' wool on the bottom. Now we can just simply drag each item we want to sell to players into the inventory. You can any item you want, this plugin supports all items with all custom properties.
+
+: ---
+: For example lets put a '''cookie''' and '''bread''' into the stock.
+: ---
+
+After you have added all items you want to sell just simply click the yellow wool. It will '''lock''' the stock, saving all items and updating old ones, and switch to the general management section. 
+
+Now you got 4 different wools on the bottom, with options ''(from left to right)'':
+# '''Stock unlocking''' - allows to change the content and its layout
+# '''Limit management''' - still not added
+# '''Price management''' - allows to set prices to items in stock
+# '''Stock switching''' - shows the current stock and upon clicking switches to the other stock, this button is visible always (except unlocked stock)
+
+
+=== Add, edit and remove items ===
+
+Notice that the slot position of each item has not changed, so where you put the item it will stay there.
+Always when you want to change items in the stock you need to do it when the stock is unlocked. 
+
+You can add and remove items just dragging them in or out of the traders inventory, the only additional thing you can do here is to move items to different slots. 
+
+'''Important!''' Do not change then amount you want to sell in this '''section''', or all settings and prices will be lost for that item. How to do this will be discussed later.
+
+
+:---
+:So we got a '''cookie''' and '''bread''' in our stock
+:Lets say we have forgot that we want also to sell some '''stew''' to players. So we need to unlock the stock, add the item and lock the stock back.
+:---
+
+=== Setting prices ===
+
+Managing prices is also done by just clicking on items, but you can do this using commands too. But for now I'll explain how to do this with the GUI. 
+
+When an item does not have any price it will have show the price set to '''none''', such items are shown but players cant buy or sell these items to a trader, like there are not existing in the stock. This will prevent to accidentally give items for free to players, if you forgot to set the price. You can also use this feature to make a small info desk just adding items with prepared descriptions to the trader. Clicking the trader will open the stock with these items. 
+
+Clicking on a item with an '''empty''' cursor will also show it's current value.
+
+
+But how to change the price? Pretty simple, just take any item from your inventory, for example a '''pickaxe''', after you got that item in your cursor, '''left click''' with it on any item in the stock, you will notice a chat message telling you whats the new price for that item.
+
+:But adding by 1 is hilarious! It would take ages to set a price of 10000!!
+
+
+So lets introduce some rules:
+# '''left clicking''' an item '''always''' increases the price
+# '''right clicking''' an item '''always''' decreases the price, the price wont get below '''0.00''' what is equal to '''free item'''.
+# Each item has a value of 1, except special blocks defined in the config.
+# Special blocks, with different values have a description showing the value of the block, for example, clicking with a block of stone would change the price by '''10000'''
+# If the item you are using to change the price can be stacked, the price change is calculated this way: '''''block value''''' * '''''stack amount'''''
+
+
+To show you how this works here are some examples (with the default config): 
+* '''3 blocks of wool''' => 1 * 3 = 3
+* '''1 pickaxe''' => 1 * 1 = 1
+* '''10 blocks of cobblestone''' => 10 * 100 = 1000
+* '''23 blocks of dirt''' => 0.01 * 23 = 0.23
+
+
+default special blocks:
+# '''dirt''' = 0.01
+# '''wood''' = 0.1
+# '''log''' = 10
+# '''cobblestone''' = 100
+# '''stone''' = 10000
+
+
+:---
+:Now lets set prices for our items, '''apple''' = 2.12, '''bread''' = 5.30, '''stew''' = 8.99 and click the '''back''' button.
+:---
+
+=== Multiple amounts ===
+
+This management section allows to make buying items for players a bit easier. Consider a situation when a player want to buy 64 loafs of bread, clicking 64 times on that item would make him go mad, how we fix this? We could add the same item to the stock and set the price for it, but this would need to use a new slot and sometimes we want to sell a lot of items and this approach would waste slots. 
+
+So what shall we do?
+
+
+To resole this issue there is a feature that allows to open a '''sub-inventory''' that contains custom amounts of the item sold. To open that '''sub-inventory''' you just need to '''shift left click''' the item you want to configure. 
+
+Now when we got that window open you can notice that at the first slot is the amount you added to the stock, and here you can change the items base amount, not loosing any configuration set to the item. 
+
+Adding any other amount here will automatically enable the '''sub-inventory''' for each player. From up now '''left-clicking''' the item will always open the sub-inventory and '''right clicking''' will use the base amount for the transaction, so if a player just wants to buy the base amount he don't need to open the sub-inventory. 
+
+
+'''Note!''' If you add for example 10 apples to the amount inventory of a pickaxe, it will just read the amount and add it to the configuration allowing to sell 10 pickaxes, the plugin will add them in stacks of 1 as because the '''max stack amount''' for any tool is equal to '''1''', so it needs 10 free slots to buy this item. From build #411 or #3 (new project)
+
+
+:---
+:So as because our players love to eat apples lets add them some additional amounts 10, 16, 20, 32 and 64, and click the '''back''' button.
+:---
+
+=== StackPrice and NoStack flags ===
+
+Besides the '''Multiple amounts''' feature there are two flags that can be set or removed from a item in the traders stock. 
+
+The '''Stack Price''' flag changes the way the price for an item is calculated, by default if you set the price of '''1''' to a stack of 5 items, it will cost '''5''', but with the stack price flag, the whole price set in manager mode is set to the stack, so '''5 items for 1'''. 
+
+
+The '''No Stack''' flag is curently disabled

@@ -1,0 +1,130 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Shops",
+    "pageid": 365,
+    "revid": 5680,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>Citizens has built-in support for basic GUI shops.\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Getting_Started\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Getting Started</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Editing_pages\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Editing pages</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Editing_items\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Editing items</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Changing_the_shop_type\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Changing the shop type</span></a></li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#Advanced_topics\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">Advanced topics</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-6\"><a href=\"#Component_Comparison_Filter\"><span class=\"tocnumber\">5.1</span> <span class=\"toctext\">Component Comparison Filter</span></a></li>\n<li class=\"toclevel-2 tocsection-7\"><a href=\"#Condition_cost_/_result\"><span class=\"tocnumber\">5.2</span> <span class=\"toctext\">Condition cost / result</span></a></li>\n<li class=\"toclevel-2 tocsection-8\"><a href=\"#Requests\"><span class=\"tocnumber\">5.3</span> <span class=\"toctext\">Requests</span></a></li>\n</ul>\n</li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Getting_Started\">Getting Started</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Shops&amp;action=edit&amp;section=1\" title=\"Edit section: Getting Started\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Type <code>/npc shop edit</code> to open the NPC's shop.\nYou can also create a named shop by typing <code>/npc shop edit NAMEHERE</code>. Named shops can be shared by any NPC.\n</p><p>You will see basic configuration settings including editing the type of shop from buy to sell to command shops, setting the permission required to view the shop, and whether to open the shop on right click.\n</p><p>Here you can see the settings screen from left to right:\n</p><p><span class=\"mw-default-size\" typeof=\"mw:File/Frameless\"><a href=\"/File:Shop_Settings.png\" class=\"mw-file-description\"><img src=\"/images/2/2a/Shop_Settings.png\" decoding=\"async\" width=\"250\" height=\"183\" class=\"mw-file-element\" /></a></span>\n</p><p>You can edit the permission required to view the shop, the shop items, the shop title, whether to open this shop on right click and the type of shop (explained later).\n</p><p>After clicking on the edit shop button for example you can see the following screen. Edit the shop title in the anvil menu and click on the paper to change the title!\n</p><p><span class=\"mw-default-size\" typeof=\"mw:File/Frameless\"><a href=\"/File:Edit_Shop_Screen.png\" class=\"mw-file-description\"><img src=\"/images/9/99/Edit_Shop_Screen.png\" decoding=\"async\" width=\"250\" height=\"185\" class=\"mw-file-element\" /></a></span>\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Editing_pages\">Editing pages</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Shops&amp;action=edit&amp;section=2\" title=\"Edit section: Editing pages\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>You probably want to create a shop page. Click on the feather icon to start editing individual pages. \n</p><p>In this screen, you can drop an item onto the page slots to put it into the shop. \n</p><p><span class=\"mw-default-size\" typeof=\"mw:File/Frameless\"><a href=\"/File:Edit_Shop_Items.png\" class=\"mw-file-description\"><img src=\"/images/e/e9/Edit_Shop_Items.png\" decoding=\"async\" width=\"250\" height=\"289\" class=\"mw-file-element\" /></a></span>\n</p><p>This will be the item that's displayed in your shop. You can also edit the next page slots by using shift-click.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Editing_items\">Editing items</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Shops&amp;action=edit&amp;section=3\" title=\"Edit section: Editing items\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Once in the editing item screen, you can set a <b>cost</b> (on the top left) and a <b>result</b> (on the top right). Note that a result item must be set or else the item will just sit in the shop looking pretty.\n</p><p><br />\n<span class=\"mw-default-size\" typeof=\"mw:File/Frameless\"><a href=\"/File:Edit_Item_Screen.png\" class=\"mw-file-description\"><img src=\"/images/6/6f/Edit_Item_Screen.png\" decoding=\"async\" width=\"250\" height=\"313\" class=\"mw-file-element\" /></a></span>\n</p><p>There's some buttons at the bottom to edit various things like purchase message, click to confirm, max purchases etc. \nPlease note: the green emerald block must be clicked to save the item when you're done.\n</p><p>Next, let's add a cost and a result. I have some sand and I want to set up a trade from one sand to three sticks.\n</p><p>First, I click on the item cost chest button at the top left.\n</p><p><span class=\"mw-default-size\" typeof=\"mw:File/Frameless\"><a href=\"/File:Item_Cost_.png\" class=\"mw-file-description\"><img src=\"/images/6/60/Item_Cost_.png\" decoding=\"async\" width=\"250\" height=\"263\" class=\"mw-file-element\" /></a></span>\n</p><p>Just drag and drop an item anywhere in the top screen to set it as a cost. I do the same thing for the item result (3 sticks). You can see the preview of the cost and result by hovering over the icons.\n</p><p><span class=\"mw-default-size\" typeof=\"mw:File/Frameless\"><a href=\"/File:Item_Result_preview.png\" class=\"mw-file-description\"><img src=\"/images/4/40/Item_Result_preview.png\" decoding=\"async\" width=\"250\" height=\"311\" class=\"mw-file-element\" /></a></span>\n<span class=\"mw-default-size\" typeof=\"mw:File/Frameless\"><a href=\"/File:Item_Display_Preview.png\" class=\"mw-file-description\"><img src=\"/images/d/d8/Item_Display_Preview.png\" decoding=\"async\" width=\"250\" height=\"314\" class=\"mw-file-element\" /></a></span>\n</p><p>I also set the shop to show on right click using the following setting.\n</p><p><span class=\"mw-default-size\" typeof=\"mw:File/Frameless\"><a href=\"/File:Shop_Show_on_right_click.png\" class=\"mw-file-description\"><img src=\"/images/a/ac/Shop_Show_on_right_click.png\" decoding=\"async\" width=\"250\" height=\"125\" class=\"mw-file-element\" /></a></span>\n</p><p>Here's the final resulting shop and I can easily trade for some sticks.\n</p><p><span class=\"mw-default-size\" typeof=\"mw:File/Frameless\"><a href=\"/File:Shop_Result_1.png\" class=\"mw-file-description\"><img src=\"/images/9/9c/Shop_Result_1.png\" decoding=\"async\" width=\"250\" height=\"289\" class=\"mw-file-element\" /></a></span>\n<span class=\"mw-default-size\" typeof=\"mw:File/Frameless\"><a href=\"/File:Shop_Result_2.png\" class=\"mw-file-description\"><img src=\"/images/f/f4/Shop_Result_2.png\" decoding=\"async\" width=\"250\" height=\"290\" class=\"mw-file-element\" /></a></span>\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Changing_the_shop_type\">Changing the shop type</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Shops&amp;action=edit&amp;section=4\" title=\"Edit section: Changing the shop type\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>You can change the shop type in the shop settings. Currently, this lets you change the number of chest rows your shop will show and also make it into a trader shop i.e. display as a villager trader GUI.\n</p><p>Using the above demo, let's see what the trader shop looks like. First, I set the shop to a trader shop.\n</p><p><span class=\"mw-default-size\" typeof=\"mw:File/Frameless\"><a href=\"/File:Shop_type_set.png\" class=\"mw-file-description\"><img src=\"/images/b/b4/Shop_type_set.png\" decoding=\"async\" width=\"250\" height=\"213\" class=\"mw-file-element\" /></a></span>\n</p><p>Now we can see the final result. \n</p><p><span class=\"mw-default-size\" typeof=\"mw:File/Frameless\"><a href=\"/File:Trader_shop.png\" class=\"mw-file-description\"><img src=\"/images/4/49/Trader_shop.png\" decoding=\"async\" width=\"250\" height=\"152\" class=\"mw-file-element\" /></a></span>\n</p><p>Note that the result of the trade is shown as the display item, not the stick result. \n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Advanced_topics\">Advanced topics</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Shops&amp;action=edit&amp;section=5\" title=\"Edit section: Advanced topics\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Citizens has a &lt;cost&gt; and &lt;result&gt; placeholder that you can put into the display item description to automatically show the cost and result. \n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Component_Comparison_Filter\">Component Comparison Filter</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Shops&amp;action=edit&amp;section=6\" title=\"Edit section: Component Comparison Filter\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>By default, Citizens checks that item costs are <b>exactly</b> the same including NBT/component tags, except for amount. You can change this by adding a component comparison filter. For example, the filter 'enchantments' would only check that two item enchantments are the same, even if they had other components that were different. You can see a printout of an item's components by using /npc debug -i with the item held in hand.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Condition_cost_/_result\"><span id=\"Condition_cost_.2F_result\"></span>Condition cost / result</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Shops&amp;action=edit&amp;section=7\" title=\"Edit section: Condition cost / result\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>This enables dynamic costs using placeholders and more. Some documentation about this is here (subject to change): <a href=\"/Behaviors\" title=\"Behaviors\">Behaviors</a>\n</p><p>For example, you might use <code>papi('player_leaderboard_placeholder') &lt; 5</code>\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Requests\">Requests</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Shops&amp;action=edit&amp;section=8\" title=\"Edit section: Requests\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>If you would like more info here on a particular shop feature, please ask on Discord.\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145918\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.070 seconds\nReal time usage: 0.109 seconds\nPreprocessor visited node count: 37/1000000\nRevision size: 4067/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID a8727564-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Behaviors"
+      }
+    ],
+    "images": [
+      "Shop_Settings.png",
+      "Edit_Shop_Screen.png",
+      "Edit_Shop_Items.png",
+      "Edit_Item_Screen.png",
+      "Item_Cost_.png",
+      "Item_Result_preview.png",
+      "Item_Display_Preview.png",
+      "Shop_Show_on_right_click.png",
+      "Shop_Result_1.png",
+      "Shop_Result_2.png",
+      "Shop_type_set.png",
+      "Trader_shop.png"
+    ],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Getting Started",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Shops",
+        "byteoffset": 52,
+        "anchor": "Getting_Started",
+        "linkAnchor": "Getting_Started"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Editing pages",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Shops",
+        "byteoffset": 933,
+        "anchor": "Editing_pages",
+        "linkAnchor": "Editing_pages"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Editing items",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "Shops",
+        "byteoffset": 1295,
+        "anchor": "Editing_items",
+        "linkAnchor": "Editing_items"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Changing the shop type",
+        "number": "4",
+        "index": "4",
+        "fromtitle": "Shops",
+        "byteoffset": 2550,
+        "anchor": "Changing_the_shop_type",
+        "linkAnchor": "Changing_the_shop_type"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Advanced topics",
+        "number": "5",
+        "index": "5",
+        "fromtitle": "Shops",
+        "byteoffset": 3086,
+        "anchor": "Advanced_topics",
+        "linkAnchor": "Advanced_topics"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Component Comparison Filter",
+        "number": "5.1",
+        "index": "6",
+        "fromtitle": "Shops",
+        "byteoffset": 3251,
+        "anchor": "Component_Comparison_Filter",
+        "linkAnchor": "Component_Comparison_Filter"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Condition cost / result",
+        "number": "5.2",
+        "index": "7",
+        "fromtitle": "Shops",
+        "byteoffset": 3719,
+        "anchor": "Condition_cost_/_result",
+        "linkAnchor": "Condition_cost_/_result"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Requests",
+        "number": "5.3",
+        "index": "8",
+        "fromtitle": "Shops",
+        "byteoffset": 3965,
+        "anchor": "Requests",
+        "linkAnchor": "Requests"
+      }
+    ],
+    "showtoc": ""
+  }
+}

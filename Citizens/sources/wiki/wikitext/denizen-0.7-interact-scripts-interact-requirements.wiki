@@ -1,0 +1,189 @@
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://meta.denizenscript.com/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+== Requirements ==
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+Requirements set criteria for your scripts to check against. They provide a powerful way to have a variety of interaction possibilities with Denizen NPCs. Imagine NPCs that will offer you some fish when hungry, or a shopkeeper that can sell you goods. These are two of many things made possible with the use of Requirements.
+
+Note: Requirements from 0.6 are in-tact for 0.7, but will now be referred to as 'Legacy Requirements'. They will be slowly replaced with new commands that will override functionality. The new systems allows for improved tolerence better debugging, as well as make it easy for other plugin programmers to extend Denizen. Just a heads up. This page will keep you informed of any changes.
+
+<code>[] indicates required field, () indicates an optional field, | indicates alternative usage.</code>
+
+Click on any requirement to get more information and example usages.
+</div>
+
+===Player===
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+
+{{Denizen Requirement Type Color|ivory|
+[[Interact_Script_Requirements#Durability|DURABILITY]]
+| &nbsp;&nbsp;<nowiki>[> or < or =] [# or %]</nowiki>
+}}
+
+{{Denizen Requirement Type Color|ivory|
+[[Interact_Script_Requirements#Holding|HOLDING]]
+| &nbsp;&nbsp;<nowiki>[ITEM_NAME or #:#] (Quantity)</nowiki>
+}}
+
+{{Denizen Requirement Type Color|ivory|
+[[Interact_Script_Requirements#Hunger|HUNGER]]
+| &nbsp;&nbsp;<nowiki>[Full or Hungry or Starving]</nowiki>
+}}
+
+{{Denizen Requirement Type Color|ivory|
+[[Interact_Script_Requirements#Item|ITEM]]
+| &nbsp;&nbsp;<nowiki>[ITEM_NAME or #:#] (Quantity)</nowiki>
+}}
+
+{{Denizen Requirement Type Color|ivory|
+[[Interact_Script_Requirements#Level|LEVEL]]
+| &nbsp;&nbsp;<nowiki>[# or higher]&nbsp;&nbsp;OR&nbsp;&nbsp;LEVEL&nbsp;&nbsp;[At least this Level #]&nbsp;&nbsp;[No more than this Level #]</nowiki>
+}}
+
+{{Denizen Requirement Type Color|ivory|
+[[Interact_Script_Requirements#Name|NAME]]
+| &nbsp;&nbsp;<nowiki>[Player Name]&nbsp;&nbsp;(Player Name)&nbsp;&nbsp;(Player Name) ...</nowiki>
+}}
+
+{{Denizen Requirement Type Color|ivory|
+[[Interact_Script_Requirements#Owner|OWNER]]
+| &nbsp;&nbsp;
+}}
+
+{{Denizen Requirement Type Color|ivory|
+[[Interact_Script_Requirements#Potioneffect|POTIONEFFECT]]
+| &nbsp;&nbsp;<nowiki>[POTION_TYPE]</nowiki>
+}}
+
+{{Denizen Requirement Type Color|ivory|
+[[Interact_Script_Requirements#Sneaking|SNEAKING]]
+| &nbsp;&nbsp;
+}}
+
+{{Denizen Requirement Type Color|ivory|
+[[Interact_Script_Requirements#Wearing|WEARING]]
+| &nbsp;&nbsp;<nowiki>[ITEM_NAME or #:#]</nowiki>
+}}
+</div>
+
+===World===
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+{{Denizen Requirement Type Color|aliceblue|
+[[Interact_Script_Requirements#Isliquid|ISLIQUID]]
+| &nbsp;&nbsp;<nowiki>[BOOKMARK:Block Bookmark]</nowiki>
+}}
+
+{{Denizen Requirement Type Color|aliceblue|
+[[Interact_Script_Requirements#Ispowered|ISPOWERED]]
+| &nbsp;&nbsp;<nowiki>[BOOKMARK:Block Bookmark]</nowiki>
+}}
+
+{{Denizen Requirement Type Color|aliceblue|
+[[Interact_Script_Requirements#Precipitating|PRECIPITATING]]
+| &nbsp;&nbsp;
+}}
+
+{{Denizen Requirement Type Color|aliceblue|
+[[Interact_Script_Requirements#Stormy|STORMY]]
+| &nbsp;&nbsp;
+}}
+
+{{Denizen Requirement Type Color|aliceblue|
+[[Interact_Script_Requirements#Sunny|SUNNY]]
+| &nbsp;&nbsp;
+}}
+
+{{Denizen Requirement Type Color|aliceblue|
+[[Interact_Script_Requirements#Time|TIME]]
+| &nbsp;&nbsp;<nowiki>[Day or Night or Dusk or Dawn or TIME 0-23999] </nowiki>
+}}
+
+{{Denizen Requirement Type Color|aliceblue|
+[[Interact_Script_Requirements#World|WORLD]]
+| &nbsp;&nbsp;<nowiki>[World Name]&nbsp;&nbsp;(World Name)&nbsp;&nbsp;(World Name) ...</nowiki>
+}}
+</div>
+
+===Script===
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+{{Denizen Requirement Type Color|mintcream|
+[[Interact_Script_Requirements#Activity|ACTIVITY]]
+| &nbsp;&nbsp;[Name of Activity]
+}}
+
+{{Denizen Requirement Type Color|mintcream|
+[[Interact_Script_Requirements#Failed|FAILED]]
+| &nbsp;&nbsp;<nowiki>(# of times)&nbsp;&nbsp;[Script Name]</nowiki>
+}}
+
+{{Denizen Requirement Type Color|mintcream|
+[[Interact_Script_Requirements#Finished|FINISHED]]
+| &nbsp;&nbsp;<nowiki>(# of times)&nbsp;&nbsp;[Script Name]</nowiki>
+}}
+
+{{Denizen Requirement Type Color|mintcream|
+[[Interact_Script_Requirements#Flagged|FLAGGED]]
+| &nbsp;&nbsp; [FlagName:FlagValue or FlagName] (EXACTLY) (PLAYER or DENIZEN or GLOBAL)
+}}
+
+{{Denizen Requirement Type Color|mintcream|
+[[Interact_Script_Requirements#Script|SCRIPT]]
+| &nbsp;&nbsp; [FINISHED or FAILED or STEP] (STEP:#) (QTY:#) (EXACTLY) [SCRIPT:scriptname]
+}}
+</div>
+
+===Permission/Economy===
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+These requirements only work if you have Vault installed and a compatible permissions/economy plugin.
+
+{{Denizen Requirement Type Color|whitesmoke|
+[[Interact_Script_Requirements#Group|GROUP]]
+| &nbsp;&nbsp;<nowiki>[Group Name]&nbsp;&nbsp;(Group Name)&nbsp;&nbsp;(Group Name) ...</nowiki>
+}}
+
+{{Denizen Requirement Type Color|whitesmoke|
+[[Interact_Script_Requirements#Money|MONEY]]
+| &nbsp;&nbsp;[Quantity]
+}}
+
+{{Denizen Requirement Type Color|whitesmoke|
+[[Interact_Script_Requirements#Permission|PERMISSION]]
+| &nbsp;&nbsp;[permission.node]
+}}
+</div>
+
+===Negative Requirements ===
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+Requirements can also be 'negative' requirements. In the Requirements List, just place a '-' in front of the requirement to inverse its logic. For example, 'HOLDING IRON_SWORD' would require the player to be holding an Iron Sword. '-HOLDING IRON_SWORD' would require the player to NOT be holding an Iron Sword. All requirements have a negative alternative, even ones whose function may overlap, such as '-WEATHER Precipitating' and 'WEATHER Sunny', which technically do the same thing. If anything, it can add to script readability. The negative requirement '-' should not be confused with the 'list item -' with a trailing space in front of each Requirement in the List, as that is standard YAML list format. See below:
+
+<code>
+  Requirements:
+    Mode: All
+    List:
+    - -TIME Night
+    - -MONEY 1000000
+    - -STORMY
+</code>
+
+Negative requirements can completely change the original example around. In this 'revised' example, for this script to trigger, time needs to be day, the weather in the current world must NOT be storming, and the player have less than 1000000 units of currency on them.
+</div>
+
+[[Category:Denizen 0.7]]

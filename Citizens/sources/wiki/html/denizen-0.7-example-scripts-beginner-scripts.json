@@ -1,0 +1,177 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Denizen/0.7/Example Scripts/Beginner Scripts",
+    "pageid": 201,
+    "revid": 5382,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://meta.denizenscript.com/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br /><br /><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p>\n<s></s><div style=\"font-family:camingodos-web;\"><s>\n<div style=\"float:right;margin-left:2.0em; padding:10px; font-family:camingodos-web; font-size:110%;\"><div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Denizen_Basics\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Denizen Basics</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-2\"><a href=\"#The_Click_and_Damage_Triggers\"><span class=\"tocnumber\">1.1</span> <span class=\"toctext\">The Click and Damage Triggers</span></a></li>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#The_Chat_and_Proximity_Triggers\"><span class=\"tocnumber\">1.2</span> <span class=\"toctext\">The Chat and Proximity Triggers</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Simple,_random_conversations\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Simple, random conversations</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#A_conversation_with_RANDOM\"><span class=\"tocnumber\">2.1</span> <span class=\"toctext\">A conversation with RANDOM</span></a></li>\n<li class=\"toclevel-2 tocsection-6\"><a href=\"#A_conversation_with_ZAP_RANDOM\"><span class=\"tocnumber\">2.2</span> <span class=\"toctext\">A conversation with ZAP RANDOM</span></a></li>\n<li class=\"toclevel-2 tocsection-7\"><a href=\"#Notch&#39;s_Cookies\"><span class=\"tocnumber\">2.3</span> <span class=\"toctext\">Notch's Cookies</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-8\"><a href=\"#Multiple_Scripts_&amp;_Requirements\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Multiple Scripts &amp; Requirements</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-9\"><a href=\"#A_Simple_Multiple_Requirement_Script\"><span class=\"tocnumber\">3.1</span> <span class=\"toctext\">A Simple Multiple Requirement Script</span></a></li>\n<li class=\"toclevel-2 tocsection-10\"><a href=\"#Script_sequencing_with_the_SCRIPT_requirement\"><span class=\"tocnumber\">3.2</span> <span class=\"toctext\">Script sequencing with the SCRIPT requirement</span></a></li>\n<li class=\"toclevel-2 tocsection-11\"><a href=\"#Script_sequencing_with_FLAGS\"><span class=\"tocnumber\">3.3</span> <span class=\"toctext\">Script sequencing with FLAGS</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-12\"><a href=\"#Basic_Repeatable_Fetch_Quest\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Basic Repeatable Fetch Quest</span></a></li>\n<li class=\"toclevel-1 tocsection-13\"><a href=\"#Basic_Unrepeatable_Fetch_Quest\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">Basic Unrepeatable Fetch Quest</span></a></li>\n<li class=\"toclevel-1 tocsection-14\"><a href=\"#The_Race\"><span class=\"tocnumber\">6</span> <span class=\"toctext\">The Race</span></a></li>\n</ul>\n</div>\n</div>\n<div style=\"margin-right:2.0em; margin-top:35px; padding:10px; font-family:camingodos-web; font-size:110%;\">\n<p><span style=\"font-family:natalya-alternate-one; font-size:650%; margin-right:-7px; margin-left:-10px;\">S</span>ometimes the best way to learn is by looking at some examples. The following beginner scripts use basic denizen commands and requirements to provide some nice basic functionality for your Denizens.\n<br /><br />\n</p>\n<div style=\"padding:20px; font-family:camingodos-web; font-size:110%; background-color:#EEDDEE; border-style:dotted; border-width:1px; width:55%; font-weight:500;\">Example scripts are provided with both the assignments and the scripts in the same box. Be sure and put the text in the correct file in your plugins folder.\n<ul><li>Assignments should always be appended to plugins\\Denizen\\assignments.yml</li>\n<li>Scripts can be placed in any .yml file in the plugins\\Denizen\\scripts\\ directory. Remember: You can have multiple scripts per file!</li></ul>\n</div>\n<p><br /><br />\nand now... the scripts!\n</p>\n</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Denizen_Basics\">Denizen Basics</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Example_Scripts/Beginner_Scripts&amp;action=edit&amp;section=1\" title=\"Edit section: Denizen Basics\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div style=\"margin-right:2.0em; padding:10px; font-family:camingodos-web; font-size:110%;\">\n<p>Though Denizen can be very advanced, it can perform very simple tasks, as well. Most of the basics can be covered with a QUICK SCRIPT. Check out these examples.\n</p>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"The_Click_and_Damage_Triggers\">The Click and Damage Triggers</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Example_Scripts/Beginner_Scripts&amp;action=edit&amp;section=2\" title=\"Edit section: The Click and Damage Triggers\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Clicking on a Denizen NPC can activates the Click Trigger or Damage Trigger, depending on which buttom was pressed. This is probably the easiest and most straight-forward way to interact with a NPC. Be sure to turn on the Damage Trigger! (Use /denizen trigger toggle damage)\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:850px; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> Right click to speak, left click hurts!</div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:850px; height:250px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\">{{{2}}}</div></td></tr></tbody></table>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"The_Chat_and_Proximity_Triggers\">The Chat and Proximity Triggers</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Example_Scripts/Beginner_Scripts&amp;action=edit&amp;section=3\" title=\"Edit section: The Chat and Proximity Triggers\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>The two remaining Quick Script triggers are the Chat and Proximity Triggers. Chat will catch any text said near the Denizen NPC and intercept it. The Player's text is directed towards the NPC and the NPC can respond back. Proximity is triggered when the Player comes into a specified range. (Note: Proximity is not enabled by default, so select the NPC you desire to have the Prox. Trigger and type /denizen trigger toggle proximity)\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:850px; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> The worst therapist ever.</div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:850px; height:250px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\">{{{2}}}</div></td></tr></tbody></table>\n</div>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Simple,_random_conversations\"><span id=\"Simple.2C_random_conversations\"></span>Simple, random conversations</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Example_Scripts/Beginner_Scripts&amp;action=edit&amp;section=4\" title=\"Edit section: Simple, random conversations\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div style=\"margin-right:2.0em; padding:10px; font-family:camingodos-web; font-size:110%;\">\n<p>A great way to provide some nice immersion into your world is as simple as a basic interaction with a Denizen NPC outputting a random response. There are a couple different ways this can be done, as provided in the examples below. Since this concept is simple, it can be done with a Quick Script as well as an Interact Script.\n</p>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"A_conversation_with_RANDOM\">A conversation with RANDOM</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Example_Scripts/Beginner_Scripts&amp;action=edit&amp;section=5\" title=\"Edit section: A conversation with RANDOM\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:850px; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> Quick Script conversation with the RANDOM command.</div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:850px; height:250px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\">{{{2}}}</div></td></tr></tbody></table>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"A_conversation_with_ZAP_RANDOM\">A conversation with ZAP RANDOM</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Example_Scripts/Beginner_Scripts&amp;action=edit&amp;section=6\" title=\"Edit section: A conversation with ZAP RANDOM\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:850px; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> Interact Script conversation with the ZAP command.</div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:850px; height:250px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\">{{{2}}}</div></td></tr></tbody></table>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"Notch's_Cookies\"><span id=\"Notch.27s_Cookies\"></span>Notch's Cookies</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Example_Scripts/Beginner_Scripts&amp;action=edit&amp;section=7\" title=\"Edit section: Notch&#39;s Cookies\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:850px; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> Notch loves cookies, and RANDOM chat.</div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:850px; height:250px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\">{{{2}}}</div></td></tr></tbody></table>\n</div>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Multiple_Scripts_&amp;_Requirements\"><span id=\"Multiple_Scripts_.26_Requirements\"></span>Multiple Scripts &amp; Requirements</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Example_Scripts/Beginner_Scripts&amp;action=edit&amp;section=8\" title=\"Edit section: Multiple Scripts &amp; Requirements\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</s><div style=\"margin-right:2.0em; padding:10px; font-family:camingodos-web; font-size:110%;\"><s>\n<p>Random chat is nice, but controlling the flow of conversation and events is just as important. One of the best features of Denizen's Interact Scripts is the requirements system, which can be used to control multiple scripts. Imagine NPCs greeting players based on weather, or having conversations only when on a quest. For further understanding, you should check out [Denizen/Script Assignments#Multiple Scripts], but take these examples below to get a basic understanding.\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"A_Simple_Multiple_Requirement_Script\">A Simple Multiple Requirement Script</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Example_Scripts/Beginner_Scripts&amp;action=edit&amp;section=9\" title=\"Edit section: A Simple Multiple Requirement Script\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:850px; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> Two scripts are better than one.</div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:850px; height:250px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\">{{{2}}}</div></td></tr></tbody></table>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"Script_sequencing_with_the_SCRIPT_requirement\">Script sequencing with the SCRIPT requirement</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Example_Scripts/Beginner_Scripts&amp;action=edit&amp;section=10\" title=\"Edit section: Script sequencing with the SCRIPT requirement\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Another good way to control the flow of multiple scripts is by using the SCRIPT requirement, which can check if the player has completed or failed scripts. Since 'Quest, part 2' requires the completion of 'Quest, part 1', the player will be forced to complete the scripts in an order set forth by the arguments in the requirement.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:850px; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> You must do them in order!</div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:850px; height:250px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\">{{{2}}}</div></td></tr></tbody></table>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"Script_sequencing_with_FLAGS\">Script sequencing with FLAGS</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Example_Scripts/Beginner_Scripts&amp;action=edit&amp;section=11\" title=\"Edit section: Script sequencing with FLAGS\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>This script is more of an intermediate script, but shows how flags can be used to control sequence of a script. In this example, multiple NPCs are part of this karma example. Note: Scottie's Script/Jason's Script/etc. are not shown, and aren't necessarily important to this example, but it is assumed that the player collects karma from these characters, somehow, <b>one at a time</b>.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:850px; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> A sample 'Karma' reward system.</div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:850px; height:250px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\">{{{2}}}</div></td></tr></tbody></table>\n<p><br />\n</p><p><br />\n</p><p><br />\n</p>\n<table class=\"wikitable collapsible collapsed\">\n<tbody><tr>\n<th>Joe the Builder Script and Assignment\n</th></tr>\n<tr>\n<td><pre>---- assignments.yml ----\nDenizens:                         \n  'Steve':    #This is the name of the Denizen               \n    Interact Scripts: #These are the assigned interact scripts. The number before the script is the priority.                      \n      - 0 Regular Joe\n      - 10 ^Joe the Builder  \n\n\n---- script.yml ----\n'Regular Joe':\n  Type: Interact   \n  Requirements:  #There is no list of requirements, so this script can always be picked. That's why we assign it with low priority.\n    Mode: None\n  Steps:\n    1:\n      Click Trigger:\n        Script:  #This sends a basic message to the interacting player.\n        - CHAT \"Hello &lt;PLAYER&gt;! I supply builders only!\"   \n      Proximity Trigger:\n        Script:  #This sends a basic message to the player when he walks near.\n        - CHAT \"Hello &lt;PLAYER&gt;! Welcome to &lt;WORLD&gt;!\"  \n        \n'Joe the Builder':\n  Type: Interact   \n  Requirements:\n    Mode: All\n    List: #Here we check if the player has this permission. If he does, this script is selected because it is higher priority.\n    - PERMISSION modifyworld.*   \n  Steps:\n    1:\n      Click Trigger:\n        Script:\n        - ENGAGE   \n        #Engage prevents all interaction with this NPC until DISENGAGE is called.\n        - CHAT \"Hello &lt;PLAYER&gt; the Builder! Take this shovel!\"\n        - GIVE WOOD_SPADE\n        - WAIT 1       \n        - CHAT \"If you have any questions, just say 'help'\"\n        - FINISH \n        #This increments the number of times this script (Joe The Builder) has been completed by this player.\n        - DISENGAGE  \n        #This sets the NPC Interactable again.\n      Chat Trigger: #There can be multiple entries under a Chat Trigger or Location Trigger node. Hence the 1: on the next line.\n        1:\n          Trigger: I need some /help/\n          Script:\n           - CHAT \"Press 'e' to open your inventory, and drag the shovel to your item bar\"\n           - CHAT \"Press the number 1-9 to select the shovel, then start digging!\"\n</pre>\n</td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Basic_Repeatable_Fetch_Quest\">Basic Repeatable Fetch Quest</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Example_Scripts/Beginner_Scripts&amp;action=edit&amp;section=12\" title=\"Edit section: Basic Repeatable Fetch Quest\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Here is the fastest way to do a repeatable 'fetch' quest. Useful for custom crafting-type NPCs. Once the player agrees to help, he can turn in the items as often as he wants to receive the reward.\n</p>\n<table class=\"wikitable collapsible collapsed\">\n<tbody><tr>\n<th>Basic Repeatable Fetch Quest\n</th></tr>\n<tr>\n<td><pre>#--- assignments.yml ----\nDenizens:\n John Q QuestGiver:\n   Interact Scripts:\n     - 0 StartFetch\n     - 1 EndFetch\n\n#--- RepeatableFetchQuest.yml ----\n     \nStartQuest:\n  Type: Interact\n  Requirements:\n    Mode: None\n  Steps:\n     1:\n      Click Trigger:\n        Script:\n        - CHAT \"Hey, you there!\"\n        - CHAT \"I have a special request of you!\"\n        - CHAT \"Will you help me?\"\n      Chat Trigger:\n         1:\n          Trigger: /Yes/. I will.\n          Script:\n          #Tell the player what to do.\n          - CHAT \"I need you to bring me some thing. For testing!\"\n          - WAIT 1\n          - CHAT \"I need: 1 Iron Block, 1 Feather, and 3 Eggs.\"\n          - WAIT 1\n          - CHAT \"Come back when you have them and I will reward you!\"\n          #Set this script as finished, so we know they're on the quest\n          - FINISH\n          #set this script to step 2. So the player gets the hint message.\n          - ZAP\n         2:\n          Trigger: /No/. I will not.\n          Script:\n          - CHAT \"Are you sure? OK. maybe later?\"\n    2:\n      Click Trigger:\n        Script:\n        - CHAT \"Come back you have 1 Iron Block, 1 Feather, and 3 Eggs!\"\n\n\nEndFetch:\n  Type: Trigger   \n  Requirements:\n    Mode: All\n    List: #Here we check if they are on the quest and have the items.\n    - FINISHED StartQuest\n    - ITEM 42 1\n    - ITEM 288 1\n    - ITEM 344 3\n  Steps:\n    '1':\n      Click Trigger:\n        Script:\n        #Engage is used to keep the player from clicking twice.\n        - ENGAGE\n        - TAKE 42 QTY:1\n        - TAKE 288 QTY:1\n        - TAKE 344 QTY:3\n        - CHAT \"Thank you so much! Here, take this as a reward!\"\n        - GIVE 133 QTY:1\n        - WAIT 1\n        - CHAT \"Bring me those items again, and I'll give you another!\"       \n        #Always disengagae after an Engage\n        - DISENGAGE\n</pre>\n</td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Basic_Unrepeatable_Fetch_Quest\">Basic Unrepeatable Fetch Quest</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Example_Scripts/Beginner_Scripts&amp;action=edit&amp;section=13\" title=\"Edit section: Basic Unrepeatable Fetch Quest\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>By adding 3 lines to the script above, it becomes un-repeatable.\n</p>\n<table class=\"wikitable collapsible collapsed\">\n<tbody><tr>\n<th>Basic Repeatable Fetch Quest\n</th></tr>\n<tr>\n<td><pre>#--- assignments.yml ----\nDenizens:\n John Q QuestGiver:\n   Interact Scripts:\n     - 0 StartFetch\n     - 1 EndFetch\n\n#--- UnRepeatableFetchQuest.yml ----\n     \nStartQuest:\n  Type: Interact\n  Requirements:\n    Mode: None\n  Steps:\n     1:\n      Click Trigger:\n        Script:\n        - CHAT \"Hey, you there!\"\n        - CHAT \"I have a special request of you!\"\n        - CHAT \"Will you help me?\"\n      Chat Trigger:\n         1:\n          Trigger: /Yes/. I will.\n          Script:\n          - CHAT \"I need you to bring me some thing. For testing!\"\n          - WAIT 1\n          - CHAT \"I need: 1 Iron Block, 1 Feather, and 3 Eggs.\"\n          - WAIT 1\n          - CHAT \"Come back when you have them and I will reward you!\"\n          - FINISH\n          - ZAP\n         2:\n          Trigger: /No/. I will not.\n          Script:\n          - CHAT \"Are you sure? OK. maybe later?\"\n    2:\n      Click Trigger:\n        Script:\n        - CHAT \"Come back you have 1 Iron Block, 1 Feather, and 3 Eggs!\"\n    3:\n      Click Trigger:\n        Script:\n        - CHAT \"Thanks for the help before!\"\n\n\nEndFetch:\n  Type: Interact   \n  Requirements:\n    Mode: All\n    List: #Here we check if they are on the quest and have the items, and haven't completed this yet.\n    - FINISHED StartQuest\n    - -FINISHED EndFetch\n    - ITEM 42 1\n    - ITEM 288 1\n    - ITEM 344 3\n  Steps:\n    '1':\n      Click Trigger:\n        Script:\n        - ENGAGE\n        - TAKE 42 QTY:1\n        - TAKE 288 QTY:1\n        - TAKE 344 QTY:3\n        - CHAT \"Thank you so much! Here, take this as a reward!\"\n        - GIVE 133 QTY:1\n        - WAIT 1\n        - CHAT \"Tbanks so much! see you around!\"  \n        #This handy command will move the first script to Step 3.\n        - ZAP 3 SCRIPT:StartFetch\n        #Mark this script as completed.\n        - FINISH\n        - DISENGAGE\n</pre>\n</td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"The_Race\">The Race</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Example_Scripts/Beginner_Scripts&amp;action=edit&amp;section=14\" title=\"Edit section: The Race\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Coach wants you to RUN, BOY! This script uses a TASK script and a Location trigger to make a timed race for the player. Good example of ZAP and RUNTASK/CANCELTASK command usage. Be sure and define a Location Bookmark called 'theTree' using the <code> /denizen bookmark location </code> command.  Be sure to turn on the Location Trigger for this NPC! (Use /denizen trigger toggle location)\n</p>\n<table class=\"wikitable collapsible collapsed\">\n<tbody><tr>\n<th>Joe the Builder Script and Assignment\n</th></tr>\n<tr>\n<td>\n<pre>---- assignments.yml----\nDenizens:\n  Coach:\n    Interact Scripts:\n      - 0 Coaches Race\n    \n\n---- Scripts.yml -----\n\n'RaceEnd': \n  Type: Task    \n  Script:       \n  - NARRATE \"%%cTimes Up!\"\n  - ZAP 'SCRIPT:Coaches Race' 3\n  \n\"Coaches Race\":\n  Type: Interact   \n  Requirements:\n    Mode: All\n    List:\n     - -FINISHED Coaches Race\n  Steps:\n    1:\n      Click Trigger:\n        Script:\n          - CHAT \"Think you're fast, sonny-jim?\"\n          - CHAT \"Lets see how fast you are. Run up that hill, around the tree, and back in 15 seconds, if you can!\"\n          - WAIT 1\n          - CHAT \"On your mark, get set, go!\"\n          - RUNTASK SCRIPT:RaceEnd DELAY:15\n          - ZAP 2\n    2:\n      Location Trigger:\n         1:\n           Trigger: theTree\n           Script: \n            - ZAP 4\n      Click Trigger:\n        Script:\n          - CANCELTASK RaceEnd\n          - CHAT \"Trying to cheat eh?, you have to go around the tree!, try again later, slowpoke!\"\n          - ZAP 1\n    3:\n      Click Trigger:\n        Script:\n          - CHAT \"Aww too slow!, go run some laps and try again!\"\n          - ZAP 1\n    4:\n      Click Trigger:\n        Script:\n          - CANCELTASK RaceEnd\n          - CHAT \"Woo, you are quick! Good job!\"\n          - GIVE MONEY QTY:1000\n          - FINISH\n</pre>\n</td></tr></tbody></table></s></div></div>\n<!-- \nNewPP limit report\nCached time: 20261019145830\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.048 seconds\nReal time usage: 0.060 seconds\nPreprocessor visited node count: 172/1000000\nRevision size: 19351/2097152 bytes\nPost‐expand include size: 4058/2097152 bytes\nTemplate argument size: 330/2097152 bytes\nHighest expansion depth: 3/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 6978/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    7.156      1 -total\n 85.23%    6.099      8 Template:Codebox\n-->\n\n<!-- Render ID 8bd63d63-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Denizen Basics",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Denizen/0.7/Example_Scripts/Beginner_Scripts",
+        "byteoffset": 1857,
+        "anchor": "Denizen_Basics",
+        "linkAnchor": "Denizen_Basics"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "The Click and Damage Triggers",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "Denizen/0.7/Example_Scripts/Beginner_Scripts",
+        "byteoffset": 2130,
+        "anchor": "The_Click_and_Damage_Triggers",
+        "linkAnchor": "The_Click_and_Damage_Triggers"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "The Chat and Proximity Triggers",
+        "number": "1.2",
+        "index": "3",
+        "fromtitle": "Denizen/0.7/Example_Scripts/Beginner_Scripts",
+        "byteoffset": 3074,
+        "anchor": "The_Chat_and_Proximity_Triggers",
+        "linkAnchor": "The_Chat_and_Proximity_Triggers"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Simple, random conversations",
+        "number": "2",
+        "index": "4",
+        "fromtitle": "Denizen/0.7/Example_Scripts/Beginner_Scripts",
+        "byteoffset": 4153,
+        "anchor": "Simple,_random_conversations",
+        "linkAnchor": "Simple,_random_conversations"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "A conversation with RANDOM",
+        "number": "2.1",
+        "index": "5",
+        "fromtitle": "Denizen/0.7/Example_Scripts/Beginner_Scripts",
+        "byteoffset": 4606,
+        "anchor": "A_conversation_with_RANDOM",
+        "linkAnchor": "A_conversation_with_RANDOM"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "A conversation with ZAP RANDOM",
+        "number": "2.2",
+        "index": "6",
+        "fromtitle": "Denizen/0.7/Example_Scripts/Beginner_Scripts",
+        "byteoffset": 5138,
+        "anchor": "A_conversation_with_ZAP_RANDOM",
+        "linkAnchor": "A_conversation_with_ZAP_RANDOM"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "Notch's Cookies",
+        "number": "2.3",
+        "index": "7",
+        "fromtitle": "Denizen/0.7/Example_Scripts/Beginner_Scripts",
+        "byteoffset": 5909,
+        "anchor": "Notch's_Cookies",
+        "linkAnchor": "Notch's_Cookies"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Multiple Scripts &amp; Requirements",
+        "number": "3",
+        "index": "8",
+        "fromtitle": "Denizen/0.7/Example_Scripts/Beginner_Scripts",
+        "byteoffset": 6910,
+        "anchor": "Multiple_Scripts_&_Requirements",
+        "linkAnchor": "Multiple_Scripts_&_Requirements"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "A Simple Multiple Requirement Script",
+        "number": "3.1",
+        "index": "9",
+        "fromtitle": "Denizen/0.7/Example_Scripts/Beginner_Scripts",
+        "byteoffset": 7514,
+        "anchor": "A_Simple_Multiple_Requirement_Script",
+        "linkAnchor": "A_Simple_Multiple_Requirement_Script"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "Script sequencing with the SCRIPT requirement",
+        "number": "3.2",
+        "index": "10",
+        "fromtitle": "Denizen/0.7/Example_Scripts/Beginner_Scripts",
+        "byteoffset": 8282,
+        "anchor": "Script_sequencing_with_the_SCRIPT_requirement",
+        "linkAnchor": "Script_sequencing_with_the_SCRIPT_requirement"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "Script sequencing with FLAGS",
+        "number": "3.3",
+        "index": "11",
+        "fromtitle": "Denizen/0.7/Example_Scripts/Beginner_Scripts",
+        "byteoffset": 9560,
+        "anchor": "Script_sequencing_with_FLAGS",
+        "linkAnchor": "Script_sequencing_with_FLAGS"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Basic Repeatable Fetch Quest",
+        "number": "4",
+        "index": "12",
+        "fromtitle": "Denizen/0.7/Example_Scripts/Beginner_Scripts",
+        "byteoffset": 13357,
+        "anchor": "Basic_Repeatable_Fetch_Quest",
+        "linkAnchor": "Basic_Repeatable_Fetch_Quest"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Basic Unrepeatable Fetch Quest",
+        "number": "5",
+        "index": "13",
+        "fromtitle": "Denizen/0.7/Example_Scripts/Beginner_Scripts",
+        "byteoffset": 15519,
+        "anchor": "Basic_Unrepeatable_Fetch_Quest",
+        "linkAnchor": "Basic_Unrepeatable_Fetch_Quest"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "The Race",
+        "number": "6",
+        "index": "14",
+        "fromtitle": "Denizen/0.7/Example_Scripts/Beginner_Scripts",
+        "byteoffset": 17536,
+        "anchor": "The_Race",
+        "linkAnchor": "The_Race"
+      }
+    ],
+    "showtoc": ""
+  }
+}

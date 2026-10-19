@@ -1,0 +1,122 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "DtlTraders/managing",
+    "pageid": 239,
+    "revid": 3148,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Introduction\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Introduction</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Server_trader\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Server trader</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Features\"><span class=\"tocnumber\">2.1</span> <span class=\"toctext\">Features</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Stock_managing\"><span class=\"tocnumber\">2.2</span> <span class=\"toctext\">Stock managing</span></a></li>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#Price_managing\"><span class=\"tocnumber\">2.3</span> <span class=\"toctext\">Price managing</span></a></li>\n<li class=\"toclevel-2 tocsection-6\"><a href=\"#Stack_price\"><span class=\"tocnumber\">2.4</span> <span class=\"toctext\">Stack price</span></a></li>\n<li class=\"toclevel-2 tocsection-7\"><a href=\"#Global_limits\"><span class=\"tocnumber\">2.5</span> <span class=\"toctext\">Global limits</span></a></li>\n<li class=\"toclevel-2 tocsection-8\"><a href=\"#Player_Limits\"><span class=\"tocnumber\">2.6</span> <span class=\"toctext\">Player Limits</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-9\"><a href=\"#Navigation\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Navigation</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Introduction\">Introduction</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/managing&amp;action=edit&amp;section=1\" title=\"Edit section: Introduction\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Managing a trader is in essence changing its variables. Several aspects of npc traders can be controlled in this way. Managing differs between each trader type, because each has its own function and they don't work in the same way.\n</p><p>So far only basic commands have been adeed, but far more will be included in a future update. At this time it is not possible to fully manage a trader using only commands. \n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Server_trader\">Server trader</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/managing&amp;action=edit&amp;section=2\" title=\"Edit section: Server trader\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"Features\">Features</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/managing&amp;action=edit&amp;section=3\" title=\"Edit section: Features\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ol><li>buy and sell tabs (max 51 slots each)</li>\n<li>global limits</li>\n<li>player limits (currently not working, will be fixed in a future update)</li>\n<li>prices can be set per item or per item stack</li>\n<li>items can be sold in several customizable stack sizes</li>\n<li>six different wallets types</li></ol>\n<div style=\"width:100%;border-top: solid 1px silver\"></div>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"Stock_managing\">Stock managing</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/managing&amp;action=edit&amp;section=4\" title=\"Edit section: Stock managing\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><b>Adding an item</b>\n<br />\nTo add an item into a <i>server trader's</i> stock just drag and drop the item from your inventory. That's it.<br />\nThe buy/sell tab layout is saved after every change so items will always appear in the slots they were added to. This allows you to arrange the offered goods in any way you want.<br />\n<br />\n<b>Editing an item</b>\n<br />\nIf you want to relocate an item that is already in the trader's stock just drag it to a new location. Item iformation is retained, the only thing that will change is it's position.<br />\n<br />\n<b>Removing an item</b>\n<br />\nTo remove an item so it can no longer be sold/bought simply drag and drop it to your inventory.<br />\n<br />\n<b>Switching between the sell and buy tabs</b><br />\nIn the lower right corner of the trader's inventory are several differently colored wool blocks (this can be changed to anything you want in the config file). The rightmost one switches between selling and buying items. A message will appear when you successfully switch tabs.\n</p>\n<div style=\"width:100%;border-top: solid 1px silver\"></div>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"Price_managing\">Price managing</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/managing&amp;action=edit&amp;section=5\" title=\"Edit section: Price managing\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><b>Enabling the price managment</b><br />\nAdded items don't have a price assigned to them. To be able to set it you have to click the black wool (the middle one if changed to something else). To exit the price edit mode simply click it again.<br />\n<br />\n<b>Checking the current price</b><br />\nTo see an item's current price just click it with an <b>empty</b> cursor.<br />\n<br />\n<b>Changing the price</b><br />\nChange in the price value is dependent on:\n</p>\n<ol><li><b>type of interaction</b>\n<ol><li>right click decreases the price</li>\n<li>left click increases the price</li></ol></li>\n<li><b>item used</b>\n<ol><li>wood counts as * 0.01</li>\n<li>log counts as * 0.1</li>\n<li>dirt counts as * 10</li>\n<li>cobblestone counts as * 100</li>\n<li>items not listed above count as * 1</li></ol></li></ol>\n<p>Examples:\n</p>\n<pre>   A single click with a block of drit increases the price by 10\n   Ten clicks with a block of soul sand increase the price by 10\n   One right click with 10 blocks of dirt deacreases the price by 100 \n</pre>\n<p><b>Price patterns (will be added in ver 2.0)</b>\n</p><p>Price patterns let you create several pricing profiles and quickly switch between them. Additionally with a pricing pattern active adding any item included in the profile will automatically set it's price. You can still change the price manually.\n</p>\n<div style=\"width:100%;border-top: solid 1px silver\"></div>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"Stack_price\">Stack price</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/managing&amp;action=edit&amp;section=6\" title=\"Edit section: Stack price\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>To easily set the desired price when selling multiple items at once you can turn on the stack price setting. Usually you just set the price of a single item and it gets multiplied by the number of items in the stack. The above option gives you direct control over the final price so you don't have to use fractions when you want to set the price to a specific number.  \n</p><p>To apply the price to the whole stack instead of a single item just <b>right click</b> the item.\n</p><p><b><i>Warning</i></b>: Stack price and amount selection menu cannot be used together. This will be changed in the near future.\n</p>\n<div style=\"width:100%;border-top: solid 1px silver\"></div>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"Global_limits\">Global limits</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/managing&amp;action=edit&amp;section=7\" title=\"Edit section: Global limits\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Limits are used to control how many items can be bought in a given time frame. Buying an item decreases the limit counter and when it reaches zero the item is no longer offered. When a set amount of time has passed the limit counter resets back to its original value and the item can be bought again.\n</p><p>To place limits on the number of offered items click the blue wool\n</p>\n<ol><li>right click lowers the limit</li>\n<li>left click raises the limit</li>\n<li>shift right click decreases the time it takes for the limit to reset</li>\n<li>shift left click increases the time it takes for the limit to reset</li></ol>\n<div style=\"width:100%;border-top: solid 1px silver\"></div>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"Player_Limits\">Player Limits</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/managing&amp;action=edit&amp;section=8\" title=\"Edit section: Player Limits\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Player limits work the same as above. The only difference is that the limit is applied individualy per player instead of a global effect.\n</p><p>Player limits are not implemented at this time.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Navigation\">Navigation</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/managing&amp;action=edit&amp;section=9\" title=\"Edit section: Navigation\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<table class=\"wikitable\" style=\"text-align: center; width: 500px\">\n\n<tbody><tr>\n<th style=\"width: 100%; background-color:#ADD8E6\" colspan=\"2\"><b>DtlTraders</b>\n</th></tr>\n<tr>\n<td>Usage</td>\n<td><a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/DtlTraders/managing\">Managing</a> | <a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/DtlTraders/trading\">Trading</a> | <a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/DtlTraders/banking\">Banking</a>\n</td></tr>\n<tr>\n<td>Configuration</td>\n<td><a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/DtlTraders/config\">Configuration</a> | <a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/DtlTraders/Commands\">Commands</a> | <a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/DtlTraders/permissions\">Permissions</a> | <a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/DtlTraders/locale\">Locale</a>\n</td></tr>\n<tr>\n<td>Types</td>\n<td><a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/DtlTraders/traders\">Traders</a> | <a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/DtlTraders/bankers\">Bankers</a>\n</td></tr></tbody></table>\n<!-- \nNewPP limit report\nCached time: 20261019145852\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.015 seconds\nReal time usage: 0.016 seconds\nPreprocessor visited node count: 26/1000000\nRevision size: 5735/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 98f32c63-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Introduction",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "DtlTraders/managing",
+        "byteoffset": 0,
+        "anchor": "Introduction",
+        "linkAnchor": "Introduction"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Server trader",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "DtlTraders/managing",
+        "byteoffset": 425,
+        "anchor": "Server_trader",
+        "linkAnchor": "Server_trader"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "Features",
+        "number": "2.1",
+        "index": "3",
+        "fromtitle": "DtlTraders/managing",
+        "byteoffset": 445,
+        "anchor": "Features",
+        "linkAnchor": "Features"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "Stock managing",
+        "number": "2.2",
+        "index": "4",
+        "fromtitle": "DtlTraders/managing",
+        "byteoffset": 787,
+        "anchor": "Stock_managing",
+        "linkAnchor": "Stock_managing"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "Price managing",
+        "number": "2.3",
+        "index": "5",
+        "fromtitle": "DtlTraders/managing",
+        "byteoffset": 1903,
+        "anchor": "Price_managing",
+        "linkAnchor": "Price_managing"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "Stack price",
+        "number": "2.4",
+        "index": "6",
+        "fromtitle": "DtlTraders/managing",
+        "byteoffset": 3211,
+        "anchor": "Stack_price",
+        "linkAnchor": "Stack_price"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "Global limits",
+        "number": "2.5",
+        "index": "7",
+        "fromtitle": "DtlTraders/managing",
+        "byteoffset": 3887,
+        "anchor": "Global_limits",
+        "linkAnchor": "Global_limits"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "Player Limits",
+        "number": "2.6",
+        "index": "8",
+        "fromtitle": "DtlTraders/managing",
+        "byteoffset": 4546,
+        "anchor": "Player_Limits",
+        "linkAnchor": "Player_Limits"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Navigation",
+        "number": "3",
+        "index": "9",
+        "fromtitle": "DtlTraders/managing",
+        "byteoffset": 4757,
+        "anchor": "Navigation",
+        "linkAnchor": "Navigation"
+      }
+    ],
+    "showtoc": ""
+  }
+}

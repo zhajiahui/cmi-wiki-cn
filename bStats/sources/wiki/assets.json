@@ -1,0 +1,70 @@
+[
+  {
+    "source_url": "https://bstats.org/_app/immutable/assets/gamehosting-gradient.DsibRZuC.png",
+    "resolved_url": "https://bstats.org/_app/immutable/assets/gamehosting-gradient.DsibRZuC.png",
+    "source_pages": [
+      "https://bstats.org/"
+    ],
+    "rendered_urls": [
+      "/_app/immutable/assets/gamehosting-gradient.DsibRZuC.png"
+    ],
+    "file": "wiki/assets/eb0f07330ec9-gamehosting-gradient.DsibRZuC.png",
+    "sha256": "eb0f07330ec9a03b689ccaf7ad30a3587430445249dda0341a5408c384f0e9da",
+    "size_bytes": 203971,
+    "media_type": "image/png",
+    "status": "archived",
+    "native_bytes_preserved": true,
+    "width": 2000,
+    "height": 2000
+  },
+  {
+    "source_url": "source-inline-data:f2a05030557295f337e3d66bb0bb2c9a872511c992ce4adc0ce99bb8863e44ad",
+    "resolved_url": "source-inline-data:f2a05030557295f337e3d66bb0bb2c9a872511c992ce4adc0ce99bb8863e44ad",
+    "source_pages": [
+      "https://bstats.org/"
+    ],
+    "rendered_urls": [
+      "data:image/svg+xml,%3csvg%20width='98'%20height='96'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M48.854%200C21.839%200%200%2022%200%2049.217c0%2021.756%2013.993%2040.172%2033.405%2046.69%202.427.49%203.316-1.059%203.316-2.362%200-1.141-.08-5.052-.08-9.127-13.59%202.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015%204.934.326%207.523%205.052%207.523%205.052%204.367%207.496%2011.404%205.378%2014.235%204.074.404-3.178%201.699-5.378%203.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283%200-5.378%201.94-9.778%205.014-13.2-.485-1.222-2.184-6.275.486-13.038%200%200%204.125-1.304%2013.426%205.052a46.97%2046.97%200%200%201%2012.214-1.63c4.125%200%208.33.571%2012.213%201.63%209.302-6.356%2013.427-5.052%2013.427-5.052%202.67%206.763.97%2011.816.485%2013.038%203.155%203.422%205.015%207.822%205.015%2013.2%200%2018.905-11.404%2023.06-22.324%2024.283%201.78%201.548%203.316%204.481%203.316%209.126%200%206.6-.08%2011.897-.08%2013.526%200%201.304.89%202.853%203.316%202.364%2019.412-6.52%2033.405-24.935%2033.405-46.691C97.707%2022%2075.788%200%2048.854%200z'%20fill='%2324292f'/%3e%3c/svg%3e"
+    ],
+    "file": "wiki/assets/f2a050305572-inline.svg",
+    "sha256": "f2a05030557295f337e3d66bb0bb2c9a872511c992ce4adc0ce99bb8863e44ad",
+    "size_bytes": 963,
+    "media_type": "image/svg+xml",
+    "status": "archived",
+    "native_bytes_preserved": true
+  },
+  {
+    "source_url": "source-inline-data:b35e6350064f49b6ad71689267bce20ae8ef63eb7169614171b1f5b6f10613b8",
+    "resolved_url": "source-inline-data:b35e6350064f49b6ad71689267bce20ae8ef63eb7169614171b1f5b6f10613b8",
+    "source_pages": [
+      "https://bstats.org/"
+    ],
+    "rendered_urls": [
+      "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='Discord-Logo'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20126.644%2096'%3e%3cdefs%3e%3cstyle%3e.cls-1{fill:%23fff;}%3c/style%3e%3c/defs%3e%3cpath%20id='Discord-Symbol-White'%20class='cls-1'%20d='M81.15,0c-1.2376,2.1973-2.3489,4.4704-3.3591,6.794-9.5975-1.4396-19.3718-1.4396-28.9945,0-.985-2.3236-2.1216-4.5967-3.3591-6.794-9.0166,1.5407-17.8059,4.2431-26.1405,8.0568C2.779,32.5304-1.6914,56.3725.5312,79.8863c9.6732,7.1476,20.5083,12.603,32.0505,16.0884,2.6014-3.4854,4.8998-7.1981,6.8698-11.0623-3.738-1.3891-7.3497-3.1318-10.8098-5.1523.9092-.6567,1.7932-1.3386,2.6519-1.9953,20.281,9.547,43.7696,9.547,64.0758,0,.8587.7072,1.7427,1.3891,2.6519,1.9953-3.4601,2.0457-7.0718,3.7632-10.835,5.1776,1.97,3.8642,4.2683,7.5769,6.8698,11.0623,11.5419-3.4854,22.3769-8.9156,32.0509-16.0631,2.626-27.2771-4.496-50.9172-18.817-71.8548C98.9811,4.2684,90.1918,1.5659,81.1752.0505l-.0252-.0505ZM42.2802,65.4144c-6.2383,0-11.4159-5.6575-11.4159-12.6535s4.9755-12.6788,11.3907-12.6788,11.5169,5.708,11.4159,12.6788c-.101,6.9708-5.026,12.6535-11.3907,12.6535ZM84.3576,65.4144c-6.2637,0-11.3907-5.6575-11.3907-12.6535s4.9755-12.6788,11.3907-12.6788,11.4917,5.708,11.3906,12.6788c-.101,6.9708-5.026,12.6535-11.3906,12.6535Z'/%3e%3c/svg%3e"
+    ],
+    "file": "wiki/assets/b35e6350064f-inline.svg",
+    "sha256": "b35e6350064f49b6ad71689267bce20ae8ef63eb7169614171b1f5b6f10613b8",
+    "size_bytes": 1237,
+    "media_type": "image/svg+xml",
+    "status": "archived",
+    "native_bytes_preserved": true
+  },
+  {
+    "source_url": "https://bstats.org/_app/immutable/assets/gamehosting-white.CSM-CU_A.png",
+    "resolved_url": "https://bstats.org/_app/immutable/assets/gamehosting-white.CSM-CU_A.png",
+    "source_pages": [
+      "https://bstats.org/"
+    ],
+    "rendered_urls": [
+      "/_app/immutable/assets/gamehosting-white.CSM-CU_A.png"
+    ],
+    "file": "wiki/assets/91db014c7e04-gamehosting-white.CSM-CU_A.png",
+    "sha256": "91db014c7e04c5576384694786877d309c3839ff583e0368a9211afd4078cc93",
+    "size_bytes": 86530,
+    "media_type": "image/png",
+    "status": "archived",
+    "native_bytes_preserved": true,
+    "width": 2000,
+    "height": 2000
+  }
+]

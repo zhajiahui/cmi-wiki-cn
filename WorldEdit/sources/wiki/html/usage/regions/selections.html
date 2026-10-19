@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en" data-accent-color="violet" data-content_root="../../../">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Selection - WorldEdit 7.4 documentation</title><link rel="index" title="Index" href="../../../genindex/" /><link rel="search" title="Search" href="../../../search/" /><link rel="next" title="Region Operations" href="../regionops/" /><link rel="prev" title="Regions" href="../" />
+      <link rel="canonical" href="https://worldedit.enginehub.org/en/latest/usage/regions/selections/" /><script>
+    function setColorMode(t){let e=document.documentElement;e.setAttribute("data-color-mode",t);let a=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t;"auto"===t&&(s=a?"dark":"light"),"light"===s?(e.classList.remove("dark"),e.classList.add("light")):(e.classList.remove("light"),e.classList.add("dark"))}
+    setColorMode(localStorage._theme||"auto");
+  </script><link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=ad592e98" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/shibuya.css?v=2ceb65ce" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/icons.css?v=ff96e03d" />
+    <link media="print" rel="stylesheet" type="text/css" href="../../../_static/print.css?v=20ff2c19" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=55f29028" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sy-f-text: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+  --sy-f-heading: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+}
+</style>
+    
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://worldedit.enginehub.org/en/latest/usage/regions/selections/"/>
+  <meta property="og:title" content="Selection"/>
+    <meta name="twitter:card" content="summary"/>
+  <script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="worldedit" /><meta name="readthedocs-version-slug" content="latest" /><meta name="readthedocs-resolver-filename" content="/usage/regions/selections/" /><meta name="readthedocs-http-status" content="200" /></head>
+<body><div class="sy-head">
+  <div class="sy-head-blur"></div>
+  <div class="sy-head-inner sy-container mx-auto">
+    <a class="sy-head-brand" href="../../../">
+      
+      
+      <strong>WorldEdit</strong>
+    </a>
+    <div class="sy-head-nav" id="head-nav">
+      <nav class="sy-head-links" data-align=left><ul><li class="link">
+          <a href="https://enginehub.org">
+            <span>Developed by EngineHub</span><i class="i-lucide external-link"></i></a>
+        </li><li class="link">
+          <a href="https://github.com/sponsors/EngineHub?o=esb">
+            <span><iconify-icon icon='simple-icons:githubsponsors' style='color: #db61a2;'></iconify-icon> Sponsored by users like you!</span><i class="i-lucide external-link"></i></a>
+        </li></ul></nav>
+      <div class="sy-head-extra flex items-center print:hidden"><form class="searchbox flex items-center" action="../../../search/" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <kbd>/</kbd>
+</form><div class="sy-head-socials">
+  <a href="https://github.com/EngineHub/WorldEdit" aria-label="GitHub">
+    <iconify-icon icon="simple-icons:github"></iconify-icon>
+  </a>
+  <a href="https://discord.gg/enginehub" aria-label="Discord">
+    <iconify-icon icon="simple-icons:discord"></iconify-icon>
+  </a></div></div>
+    </div>
+    <div class="sy-head-actions flex items-center shrink-0 print:hidden"><button class="js-theme theme-switch flex items-center"
+data-aria-auto="Switch to light color mode"
+data-aria-light="Switch to dark color mode"
+data-aria-dark="Switch to auto color mode">
+<i class="i-lucide theme-icon"></i>
+</button><button class="md:hidden flex items-center js-menu" aria-label="Menu" type="button" aria-controls="head-nav" aria-expanded="false">
+        <div class="hamburger">
+          <span class="hamburger_1"></span>
+          <span class="hamburger_2"></span>
+          <span class="hamburger_3"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="sy-page sy-container flex mx-auto">
+  <aside id="lside" class="sy-lside md:w-72 md:shrink-0 print:hidden">
+    <div class="sy-lside-inner md:sticky">
+      <div class="sy-scrollbar p-6">
+        <div class="globaltoc" data-expand-depth="2"><ul class="current">
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../install/">Installation</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../quickstart/">Quick Start</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../config/">Configuration</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../permissions/">Permissions</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../commands/">Commands</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../">Usage</a><ul class="current">
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../general/">General</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../general/history/">History</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../general/sessions/">Sessions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../general/patterns/">Patterns</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../general/masks/">Masks</a></li>
+</ul>
+</li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../navigation/">Navigation</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../">Regions</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Selection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../regionops/">Region Operations</a></li>
+</ul>
+</li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../clipboard/">Clipboard</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../generation/">Generation</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../tools/tools/">Tools</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../tools/brushes/">Brushes</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../utilities/">Utilities</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../snapshots/">Snapshots</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../other/">Other</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../other/expressions/">Expression Syntax</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../other/craftscripts/">CraftScripts</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../api/">Developer API</a><ul>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../../api/concepts/">API Concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/actors/">Actors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/local-sessions/">Local Sessions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/blocks/">Blocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/patterns-and-masks/">Patterns and Masks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/extents/">Extents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/regions/">Regions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/registries/">Registries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/edit-sessions/">Edit Sessions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/adapters/">Adapters</a></li>
+</ul>
+</li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../../api/examples/">API Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/examples/clipboard/">Clipboard Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/examples/clipboard/#schematic-examples">Schematic Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/examples/local-sessions/">LocalSession Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../../api/internal-apis/">Internal APIs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../faq/">Common Questions</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../support/">Getting Help</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../localisation/">Localisation</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../source-code/">Source Code</a></li>
+</ul>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="lside-overlay js-menu" role="button" aria-label="Close left sidebar" aria-controls="lside" aria-expanded="false"></div>
+  <aside id="rside" class="sy-rside pb-3 w-64 shrink-0 order-last">
+    <button class="rside-close js-menu xl:hidden" aria-label="Close Table of Contents" type="button" aria-controls="rside" aria-expanded="false">
+      <i class="i-lucide close"></i>
+    </button>
+    <div class="sy-scrollbar sy-rside-inner px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4"><div class="localtoc"><h3>On this page</h3><ul>
+<li><a class="reference internal" href="#want-to-see-selection-lines">Want to see selection lines?</a></li>
+<li><a class="reference internal" href="#selecting-cuboids">Selecting Cuboids</a><ul>
+<li><a class="reference internal" href="#selecting-with-the-wand">Selecting with the wand</a></li>
+<li><a class="reference internal" href="#selecting-at-your-own-location">Selecting at your own location</a></li>
+<li><a class="reference internal" href="#selecting-a-specific-location">Selecting a specific location</a></li>
+<li><a class="reference internal" href="#selecting-with-your-crosshair">Selecting with your crosshair</a></li>
+<li><a class="reference internal" href="#selecting-the-current-chunk">Selecting the current chunk</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#adjusting-the-selection">Adjusting the selection</a><ul>
+<li><a class="reference internal" href="#expanding-the-selection">Expanding the selection</a></li>
+<li><a class="reference internal" href="#contracting-the-selection">Contracting the selection</a></li>
+<li><a class="reference internal" href="#inset-and-outset">Inset and Outset</a></li>
+<li><a class="reference internal" href="#trimming-the-selection">Trimming the selection</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#selection-information">Selection Information</a><ul>
+<li><a class="reference internal" href="#getting-selection-size">Getting selection size</a></li>
+<li><a class="reference internal" href="#counting-block-frequency">Counting block frequency</a></li>
+<li><a class="reference internal" href="#finding-the-block-distribution">Finding the block distribution</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#selection-modes">Selection Modes</a></li>
+</ul>
+</div><div class="edit-this-page">
+  <a href="https://github.com/EngineHub/WorldEditDocs/blob/master/source/usage/regions/selections.rst">Edit this page</a>
+</div></div>
+  </aside>
+  <div class="rside-overlay js-menu" role="button" aria-label="Close Table of Contents" aria-controls="rside" aria-expanded="false"></div>
+  <main class="sy-main w-full max-sm:max-w-full print:pt-6">
+<div class="sy-breadcrumbs" role="navigation">
+  <div class="sy-breadcrumbs-inner flex items-center">
+    <div class="md:hidden mr-3">
+      <button class="js-menu" aria-label="Menu" type="button" aria-controls="lside" aria-expanded="false">
+        <i class="i-lucide menu"></i>
+      </button>
+    </div>
+    <ol class="flex-1" itemscope itemtype="https://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="../../../"><span itemprop="name">WorldEdit</span></a>
+        <span>/</span>
+        <meta itemprop="position" content="1" />
+      </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="../../"><span itemprop="name">Usage</span></a>
+        <span>/</span>
+        <meta itemprop="position" content="2" />
+      </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="../"><span itemprop="name">Regions</span></a>
+        <span>/</span>
+        <meta itemprop="position" content="3" />
+      </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <strong itemprop="name">Selection</strong>
+        <meta itemprop="position" content="4" />
+      </li></ol>
+    <div class="xl:hidden ml-1">
+      <button class="js-menu" aria-label="Show table of contents" type="button" aria-controls="rside"
+        aria-expanded="false">
+        <i class="i-lucide outdent"></i>
+      </button>
+    </div>
+  </div>
+</div><div class="flex flex-col break-words justify-between">
+      <div class="relative min-w-0 max-w-6xl px-6 pb-6 pt-8 xl:px-12">
+  <div class="copy-page-wrapper relative pb-4 lg:absolute lg:top-8 lg:right-6 xl:right-12">
+  <div id="copy-page-trigger">
+    <button
+      type="button"
+      class="js-copy px-3 py-1 inline-flex items-center gap-1"
+      data-url="https://worldedit.enginehub.org/en/latest/_sources/usage/regions/selections.rst.txt"
+    >
+      <i class="i-lucide" data-icon="copy"></i>
+      <span>Copy page</span>
+    </button>
+    <button class="js-menu px-2 py-1" type="button" aria-label="More actions"
+      aria-haspopup="menu" aria-expanded="false" aria-controls="copy-page-content">
+      <i class="i-lucide chevron-down"></i>
+    </button>
+  </div>
+  <div id="copy-page-content" role="menu" aria-orientation="vertical" aria-hidden="true">
+    <div role="presentation">
+      <div class="flex flex-col" role="group">
+        <button class="js-copy" type="button" role="menuitem"
+          data-url="https://worldedit.enginehub.org/en/latest/_sources/usage/regions/selections.rst.txt">
+          <span class="iconify-icon">
+            <i class="i-lucide" data-icon="copy"></i>
+          </span>
+          <span>Copy page</span>
+        </button>
+        <a role="menuitem" href="https://worldedit.enginehub.org/en/latest/_sources/usage/regions/selections.rst.txt" target="_blank" rel="nofollow"><iconify-icon icon="bi:code-slash"></iconify-icon>
+            <span>View Source</span></a><a role="menuitem" href="https://chatgpt.com/?hints=search&q=Read%20https%3A//worldedit.enginehub.org/en/latest/_sources/usage/regions/selections.rst.txt%20so%20I%20can%20ask%20questions%20about%20it." target="_blank" rel="nofollow">
+          <iconify-icon icon="bi:openai"></iconify-icon>
+          <span>Open in ChatGPT</span>
+        </a><a role="menuitem" href="https://claude.ai/new?q=Read%20https%3A//worldedit.enginehub.org/en/latest/_sources/usage/regions/selections.rst.txt%20so%20I%20can%20ask%20questions%20about%20it." target="_blank" rel="nofollow">
+          <iconify-icon icon="bi:claude"></iconify-icon>
+          <span>Open in Claude</span>
+        </a></div>
+    </div>
+  </div>
+</div><article class="yue" role="main">
+          <section id="selection">
+<h1>Selection<a class="headerlink" href="#selection" title="Link to this heading">#</a></h1>
+<p>A fundamental part of WorldEdit is working with a selection or region. For example, if you wanted to replace all the glass blocks inside a square area with dirt, you would have to tell WorldEdit where this square is. WorldEdit gives you several ways to select a region for editing, this section will introduce you to selecting regions and show you what you can do with them.</p>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#want-to-see-selection-lines" id="id1">Want to see selection lines?</a></p></li>
+<li><p><a class="reference internal" href="#selecting-cuboids" id="id2">Selecting Cuboids</a></p></li>
+<li><p><a class="reference internal" href="#adjusting-the-selection" id="id3">Adjusting the selection</a></p></li>
+<li><p><a class="reference internal" href="#selection-information" id="id4">Selection Information</a></p></li>
+<li><p><a class="reference internal" href="#selection-modes" id="id5">Selection Modes</a></p></li>
+</ul>
+</nav>
+
+        <div style="text-align: center" class="sphinx_youtube-embed no-print">
+            <iframe width="640" height="360" style="margin-bottom: 25px" src="https://www.youtube.com/embed/dfhgsFNXVnU" frameborder="0" allowfullscreen="1">&nbsp;</iframe>
+        </div>
+    <section id="want-to-see-selection-lines">
+<h2>Want to see selection lines?<a class="headerlink" href="#want-to-see-selection-lines" title="Link to this heading">#</a></h2>
+<p>To see lines showing your selection, you can either:</p>
+<ol class="arabic simple">
+<li><p>Access a limited version of the selection outlines server-side via the <code class="docutils literal notranslate"><span class="pre">//drawsel</span></code> command. It works only for cuboid selections that are not larger than 48x48x48 (or 32x32x32 on older versions), and you have to be in creative mode. These limitations are due to how structure blocks have worked in Minecraft for a long time.</p></li>
+<li><p>Use a third party client-side mod, e.g. <a class="reference external" href="https://modrinth.com/mod/worldedit-cui">WorldEdit CUI (Fabric)</a>. Note that this mod requires Fabric, so you will have to install it at first.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you would like to use an older version of Minecraft (1.12 or earlier), in addition to downloading an older WorldEdit (version 6), you may also need the old <a class="reference external" href="https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/1292886-worldeditcui">WorldEditCUI mod by Mumfrey</a>. Note that this mod requires LiteLoader (installation instructions on that page) instead.</p>
+</div>
+</section>
+<section id="selecting-cuboids">
+<h2>Selecting Cuboids<a class="headerlink" href="#selecting-cuboids" title="Link to this heading">#</a></h2>
+<p>WorldEdit allows you to select <strong>cuboids</strong> (think a 3D rectangle) by choosing two points at two corners of the cuboid. The diagram below indicates how two points can form a cuboid. The cuboids you select can only be aligned to the world (they cannot be rotated at an angle).</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can also select other shapes such as 2D polygons, ellipsoids, spheres, cylinders, and more. Information on these other selection modes is described later in this page.</p>
+</div>
+<figure class="light-only align-center">
+<img alt="../../../_images/cuboid.png" src="../../../_images/cuboid.png" />
+</figure>
+<figure class="dark-only align-center">
+<img alt="../../../_images/cuboid-dark.png" src="../../../_images/cuboid-dark.png" />
+</figure>
+<p>There are several different ways of choosing these two points and you can mix and match.</p>
+<section id="selecting-with-the-wand">
+<h3>Selecting with the wand<a class="headerlink" href="#selecting-with-the-wand" title="Link to this heading">#</a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//wand
+</span></pre></div>
+</div>
+<p>The most intuitive way to select a region is by using wand. To get the wand, use <code class="docutils literal notranslate"><span class="pre">//wand</span></code> (it is, by default, a wooden axe). <strong>Left clicking</strong> a block with the wand marks that block as the first corner of the cuboid you wish to select. A <strong>right-click</strong> chooses the second corner.</p>
+<p>You can bind the selection wand to a different item either by changing the <a class="reference internal" href="../../../config/"><span class="doc">configuration</span></a> or using the <code class="docutils literal notranslate"><span class="pre">/tool</span> <span class="pre">selwand</span></code> command. In this regard, it is a <a class="reference internal" href="../../tools/tools/"><span class="doc">tool</span></a>.</p>
+</section>
+<section id="selecting-at-your-own-location">
+<h3>Selecting at your own location<a class="headerlink" href="#selecting-at-your-own-location" title="Link to this heading">#</a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//pos1
+</span><span data-line="2">//pos2
+</span></pre></div>
+</div>
+<p>These commands set the first and second corners to the block above the one that you are standing on. Generally the wand suffices for most tasks and you likely will not need to use this. This is useful if you are flying in mid-air and don’t have blocks you can click with the wand.</p>
+</section>
+<section id="selecting-a-specific-location">
+<h3>Selecting a specific location<a class="headerlink" href="#selecting-a-specific-location" title="Link to this heading">#</a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//pos1 x,y,z
+</span><span data-line="2">//pos2 x,y,z
+</span></pre></div>
+</div>
+<p>These commands set the first and second corners to the block specified by the given coordinates. This is useful for when you have pre-calculated specific coordinates that you want to manipulate.</p>
+</section>
+<section id="selecting-with-your-crosshair">
+<h3>Selecting with your crosshair<a class="headerlink" href="#selecting-with-your-crosshair" title="Link to this heading">#</a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//hpos1
+</span><span data-line="2">//hpos2
+</span></pre></div>
+</div>
+<p>These commands set the first and second corners to the block that you are looking at. This allows you to select points from far away and make particularly large cuboid regions with ease.</p>
+</section>
+<section id="selecting-the-current-chunk">
+<h3>Selecting the current chunk<a class="headerlink" href="#selecting-the-current-chunk" title="Link to this heading">#</a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//chunk
+</span></pre></div>
+</div>
+<p>This command selects all the blocks in the chunk that you are standing in. Chunks are 16 by 16 and are 256 blocks high.
+Using <code class="docutils literal notranslate"><span class="pre">//chunk</span> <span class="pre">-s</span></code> instead will select <em>all</em> chunks that your current selection intersects.</p>
+</section>
+</section>
+<section id="adjusting-the-selection">
+<h2>Adjusting the selection<a class="headerlink" href="#adjusting-the-selection" title="Link to this heading">#</a></h2>
+<section id="expanding-the-selection">
+<h3>Expanding the selection<a class="headerlink" href="#expanding-the-selection" title="Link to this heading">#</a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//expand &lt;amount&gt; [direction]
+</span><span data-line="2">//expand &lt;amount&gt; &lt;reverse-amount&gt; [direction]
+</span><span data-line="3">//expand vert
+</span></pre></div>
+</div>
+<p>This command allows you to easily enlarge a region in several different ways:</p>
+<ul class="simple">
+<li><p>By specifying a direction</p></li>
+<li><p>By looking in the direction (only for cardinal directions)</p></li>
+<li><p>To the sky and to bedrock (using <code class="docutils literal notranslate"><span class="pre">vert</span></code>)</p></li>
+</ul>
+<p>To specify a direction, use “N”, “S”, “W”, “E”, “U” (for up), or “D” (for down) for the direction. If you want to merely look in the direction, either use “me” for the direction or don’t enter a direction parameter.</p>
+<p>You can also specify relative directions like “F” (forward, same as “me”), “B” (back), “L” (left), “R” (right) which will go be relative to the direction you are facing.</p>
+<p>You can also specify multiple directions separated by commas to expand in multiple directions at once, such as <code class="docutils literal notranslate"><span class="pre">//expand</span> <span class="pre">10</span> <span class="pre">n,w</span></code>.</p>
+<p>You can specify two numbers and the region will be expanded in two opposite directions simultaneously.</p>
+<aside class="topic">
+<p class="topic-title">Example: Expanding upwards</p>
+<figure class="light-only align-right">
+<img alt="../../../_images/expand_up.png" src="../../../_images/expand_up.png" />
+</figure>
+<figure class="dark-only align-right">
+<img alt="../../../_images/expand_up-dark.png" src="../../../_images/expand_up-dark.png" />
+</figure>
+<p>For example, if you used <code class="docutils literal notranslate"><span class="pre">//expand</span> <span class="pre">10</span> <span class="pre">up</span></code>, the selection would grow larger at the top as shown.</p>
+</aside>
+</section>
+<section id="contracting-the-selection">
+<h3>Contracting the selection<a class="headerlink" href="#contracting-the-selection" title="Link to this heading">#</a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//contract &lt;amount&gt; [direction]
+</span><span data-line="2">//contract &lt;amount&gt; &lt;reverse-amount&gt; [direction]
+</span></pre></div>
+</div>
+<p>This command works similarly to <code class="docutils literal notranslate"><span class="pre">//expand</span></code>, but instead contract.</p>
+<aside class="topic">
+<p class="topic-title">Example: Contracting downwards</p>
+<figure class="light-only align-right">
+<img alt="../../../_images/contract_down.png" src="../../../_images/contract_down.png" />
+</figure>
+<figure class="dark-only align-right">
+<img alt="../../../_images/contract_down-dark.png" src="../../../_images/contract_down-dark.png" />
+</figure>
+<p>Which way would the selection contract? If you used <code class="docutils literal notranslate"><span class="pre">//contract</span> <span class="pre">10</span> <span class="pre">down</span></code>, then the selection would shrink from the top.</p>
+</aside>
+</section>
+<section id="inset-and-outset">
+<h3>Inset and Outset<a class="headerlink" href="#inset-and-outset" title="Link to this heading">#</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you want to expand or contract in all directions at once (or just horizontal or vertical directions), you can use the <code class="docutils literal notranslate"><span class="pre">//outset</span></code> and <code class="docutils literal notranslate"><span class="pre">//inset</span></code> commands. For example, <code class="docutils literal notranslate"><span class="pre">//outset</span> <span class="pre">-v</span> <span class="pre">5</span></code> will expand your selection vertically (both up and down) 5 blocks each, while <code class="docutils literal notranslate"><span class="pre">//inset</span> <span class="pre">-h</span> <span class="pre">5</span></code> will contract your selection horizontally (north, west, south, and east) 5 blocks each. Leaving out the <code class="docutils literal notranslate"><span class="pre">v</span></code> or <code class="docutils literal notranslate"><span class="pre">h</span></code> will work in all 6 directions.</p>
+</div>
+</section>
+<section id="trimming-the-selection">
+<h3>Trimming the selection<a class="headerlink" href="#trimming-the-selection" title="Link to this heading">#</a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//trim [mask]
+</span></pre></div>
+</div>
+<p>This command minimises the selection to the smallest size necessary to still fit all blocks that match the given mask. When no mask is specified, it will trim the selection to fit non-air blocks as if it were using the <code class="docutils literal notranslate"><span class="pre">#existing</span></code> mask.</p>
+</section>
+</section>
+<section id="selection-information">
+<h2>Selection Information<a class="headerlink" href="#selection-information" title="Link to this heading">#</a></h2>
+<p>WorldEdit also provides you with commands for getting information about the area you have selected.</p>
+<section id="getting-selection-size">
+<h3>Getting selection size<a class="headerlink" href="#getting-selection-size" title="Link to this heading">#</a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//size [-c]
+</span></pre></div>
+</div>
+<p>Gets the area and dimensions of your selection.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">-c</span></code> flag will instead measure your clipboard size instead of your selection.</p>
+</section>
+<section id="counting-block-frequency">
+<h3>Counting block frequency<a class="headerlink" href="#counting-block-frequency" title="Link to this heading">#</a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//count &lt;mask&gt;
+</span></pre></div>
+</div>
+<p>Counts the number of blocks in your selection which match the mask.</p>
+</section>
+<section id="finding-the-block-distribution">
+<h3>Finding the block distribution<a class="headerlink" href="#finding-the-block-distribution" title="Link to this heading">#</a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//distr [-cd]
+</span></pre></div>
+</div>
+<p>Shows the block distribution in the selection area.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">-c</span></code> flag operates on your clipboard instead of your selection.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">-d</span></code> flag separates by block states instead of just types.</p>
+<aside class="topic">
+<p class="topic-title">Example: Block distribution output</p>
+<p>Only by block type:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">75      (52.083%) Air (minecraft:air)
+</span><span data-line="2">41      (28.472%) Grass Block (minecraft:grass_block)
+</span><span data-line="3">18      (12.500%) Rose Bush (minecraft:rose_bush)
+</span><span data-line="4">5       (3.472%) Grass (minecraft:grass)
+</span></pre></div>
+</div>
+<p>Separating by states:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">75      (52.083%) Air (minecraft:air)
+</span><span data-line="2">41      (28.472%) Grass Block (minecraft:grass_block[snowy=false])
+</span><span data-line="3">9       (6.250%) Rose Bush (minecraft:rose_bush[half=upper])
+</span><span data-line="4">9       (6.250%) Rose Bush (minecraft:rose_bush[half=lower])
+</span><span data-line="5">5       (3.472%) Grass (minecraft:grass)
+</span></pre></div>
+</div>
+</aside>
+</section>
+</section>
+<section id="selection-modes">
+<h2>Selection Modes<a class="headerlink" href="#selection-modes" title="Link to this heading">#</a></h2>
+<p>Using the <code class="docutils literal notranslate"><span class="pre">//sel</span> <span class="pre">&lt;mode&gt;</span></code> command allows you to change between different shapes. It is recommended to install the CUI mod when using more complex shapes so you can visualize what you’re selecting.</p>
+<aside class="topic">
+<p class="topic-title"><code class="docutils literal notranslate"><span class="pre">//sel</span> <span class="pre">cuboid</span></code></p>
+<p>The standard cuboid selection mode, described above.</p>
+</aside>
+<aside class="topic">
+<p class="topic-title"><code class="docutils literal notranslate"><span class="pre">//sel</span> <span class="pre">extend</span></code></p>
+<p>Left-click to select first point. All subsequent points are selected by right-clicking. Every right-click will extend the cuboid selection to encompass the new point.</p>
+</aside>
+<aside class="topic">
+<p class="topic-title"><code class="docutils literal notranslate"><span class="pre">//sel</span> <span class="pre">poly</span></code></p>
+<p>Left-click to select first point. All subsequent points are selected by right-clicking. Every right-click will add an additional point. The top and bottom will always encompass your highest and lowest selected points.</p>
+</aside>
+<aside class="topic">
+<p class="topic-title"><code class="docutils literal notranslate"><span class="pre">//sel</span> <span class="pre">ellipsoid</span></code></p>
+<p>Left-click to choose center, right-click to extend. You can control the radii along the x, y, and z planes individually depending on where you click.</p>
+</aside>
+<aside class="topic">
+<p class="topic-title"><code class="docutils literal notranslate"><span class="pre">//sel</span> <span class="pre">sphere</span></code></p>
+<p>Left-click to select center, right-click to extend. Selection will always be a sphere from the first point which has a radius to the second point.</p>
+</aside>
+<aside class="topic">
+<p class="topic-title"><code class="docutils literal notranslate"><span class="pre">//sel</span> <span class="pre">cyl</span></code></p>
+<p>Left-click to choose center, right click to extend. You can control the x and z radii, while the height will always encompass your highest and lowest points.</p>
+</aside>
+<aside class="topic">
+<p class="topic-title"><code class="docutils literal notranslate"><span class="pre">//sel</span> <span class="pre">convex</span></code></p>
+<p>Left-click to select first point. All subsequent points are selected by right clicking. The selection is a convex hull encompassing all your selected points.</p>
+</aside>
+</section>
+</section>
+
+        </article><button class="back-to-top" type="button">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+  </svg>
+  <span>Back to top</span>
+</button><div class="navigation flex print:hidden"><div class="navigation-prev">
+    <a href="../">
+      <i class="i-lucide chevron-left"></i>
+      <div class="page-info">
+        <span>Previous</span><div class="title">Regions</div></div>
+    </a>
+  </div><div class="navigation-next">
+    <a href="../regionops/">
+      <div class="page-info">
+        <span>Next</span>
+        <div class="title">Region Operations</div>
+      </div>
+      <i class="i-lucide chevron-right"></i>
+    </a>
+  </div></div><div class="sponsorbox">
+    <div class="sponsor apexhosting">
+        <a href="https://billing.apexminecrafthosting.com/aff.php?aff=3108">
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 750 150" style="enable-background:new 0 0 750 150;" xml:space="preserve">
+            <style type="text/css">
+                .st0{fill:var(--sponsor-logo-color);}
+                .st1{display:none;}
+            </style>
+            <g id="Layer_1_1_">
+                <g>
+                    <path id="XMLID_29_" class="st0" d="M352.5,71.7c0,11.8-0.1,23.5,0.1,35.3c0.1,4.5-1.6,7.1-5.7,9c-16.5,7.3-32.9,15-49.5,22.1
+                        c-2.5,1.1-6.4,0.9-9-0.2c-17.1-7.4-34-15.2-51-22.8c-3.5-1.6-4-4.7-4-8c0-7.6,0-15.2,0-22.8c0-15.6,0-31.3,0-46.9
+                        c0-7.3,0.9-8.5,7.6-10.7c15.2-5,30.3-10.1,45.7-14.6c4-1.2,8.9-1.2,12.9,0c15.2,4.5,30.2,9.8,45.2,14.8c6.3,2.1,7.5,3.7,7.6,10.6
+                        C352.5,48.7,352.5,60.2,352.5,71.7L352.5,71.7z M247.7,44.9c0,19.6,0,38.5,0.1,57.3c0,1,1.1,2.4,2.1,2.9
+                        c7.6,3.6,15.2,7.1,22.9,10.6c4.5,2,9,4,13.8,6.1c0-19.7,0-38.8-0.1-57.8c0-0.8-0.8-2.1-1.5-2.5C272.9,56,260.7,50.6,247.7,44.9z
+                        M339,44.6c-12.3,5.7-23.8,11.1-35.3,16.3c-2.2,1-2.9,2.2-2.9,4.6c0.1,16.6,0.1,33.2,0.1,49.8c0,1.7,0,5.3,0,5.3s-0.1,0.3,0.1,0.4
+                        s24.9-10.9,36.6-16.2c0.7-0.3,1.4-1.7,1.4-2.6C339.1,83.3,339.1,64.4,339,44.6z M260.6,35c0,0.1,21.8,10,32.4,14.7
+                        c0.6,0.3,1.6,0.2,2.3-0.1c10.1-4.6,20.1-9.3,31.3-14.4c-9.2-3-17.3-5.8-25.4-8.3c-3-0.9-6.4-2.7-9.1-1.9
+                        C281.7,27.6,260.6,34.8,260.6,35z"/>
+                    <path id="XMLID_15_" class="st0" d="M171.1,63.2c-7.2,0-14.2,0-21.4,0c0,2.6,0,4.7,0,7.3c6.1,0,12,0,18.1,0c0,3.9,0,7.3,0,11.2
+                        c-5.9,0-11.8,0-18.1,0c0,2.9,0,5.3,0,8.2c7.4,0,14.7,0,22.3,0c0,3.8,0,7.1,0,10.8c-12.1,0-24.3,0-36.9,0c0-16,0-32.1,0-48.5
+                        c11.9,0,23.8,0,36,0C171.1,55.7,171.1,59.2,171.1,63.2z"/>
+                    <path id="XMLID_27_" class="st0" d="M102.7,86c0,5,0,9.7,0,14.7c-4.9,0-9.5,0-14.3,0c0-14.6,0-48.5,0-48.5s15.9-1.9,29.8,1.3
+                        c8.1,1.4,11.5,8.3,10.8,17.6c-0.7,7.8-5.9,13.2-13.8,14.1C111.3,85.6,107.3,85.7,102.7,86z M102.8,74.6c2.5,0,3.9,0,5.9-0.1
+                        c2.2,0,4.1-0.3,5.5-2.6c0.9-1.5,0.8-4.7-0.2-6.1c-1.5-3.7-11.2-2.4-11.2-2.4S102.8,70.5,102.8,74.6z"/>
+                    <path id="XMLID_10_" class="st0" d="M191.9,75.6c-4.6-7.6-9.2-15.2-14.2-23.4c-0.1-0.1,16.1,0,16.1,0s4.9,9.2,6.6,12.5
+                        c1.7-3.2,6.8-12.5,6.8-12.5h16c0,0-10,15.7-15,23.5c4.9,8.1,15,25,15,25h-15.7c0,0-5.6-9.4-7.7-13.4c-1.5,2.8-4,7.5-4,7.5l-3,5.9
+                        c0,0-16.5,0.1-16.4,0C181.7,92,186.8,83.8,191.9,75.6z"/>
+                    <path id="XMLID_25_" class="st0" d="M49.1,100.5c0,0-9,0-13.8,0C40.7,84,46,67.9,51.4,51.6c4.3,0,14-0.1,14.6-0.1
+                        c0,0,0.8,1.9,0.9,2.4c5.1,15,15,45.9,15,46.5c-4.6,0-14,0-14,0l-1.4-5.8l-15.1-0.3L49.1,100.5z M59.1,67.8c-0.3,0-0.6,0-1,0
+                        c-1.4,5.4-2.7,10.7-4.1,16.3c3.4,0,6.3,0,9.4,0C61.9,78.3,60.5,73,59.1,67.8z"/>
+                    <path id="XMLID_3_" class="st0" d="M102.8,74.6"/>
+                    <g>
+                        <path class="st0" d="M364,52h15v17h16.4V52h15.1v48.7h-15.1V81h-16.4v19.7h-15V52z"/>
+                        <path class="st0" d="M418.7,76.4c0-7.9,2.2-14.1,6.6-18.6c4.4-4.4,10.6-6.6,18.5-6.6c8.1,0,14.3,2.2,18.7,6.5s6.6,10.4,6.6,18.3
+                            c0,5.7-1,10.4-2.9,14c-1.9,3.6-4.7,6.5-8.3,8.5s-8.1,3-13.5,3c-5.5,0-10-0.9-13.6-2.6c-3.6-1.7-6.5-4.5-8.7-8.3
+                            C419.8,86.8,418.7,82.1,418.7,76.4z M433.8,76.4c0,4.9,0.9,8.4,2.7,10.6c1.8,2.1,4.3,3.2,7.5,3.2c3.2,0,5.7-1.1,7.5-3.2
+                            c1.8-2.1,2.7-5.9,2.7-11.3c0-4.6-0.9-7.9-2.8-10c-1.8-2.1-4.4-3.2-7.5-3.2c-3,0-5.5,1.1-7.3,3.2
+                            C434.7,67.9,433.8,71.5,433.8,76.4z"/>
+                        <path class="st0" d="M474.6,84.6l14.3-0.9c0.3,2.3,0.9,4.1,1.9,5.3c1.5,2,3.8,3,6.6,3c2.1,0,3.8-0.5,5-1.5c1.2-1,1.7-2.2,1.7-3.5
+                            c0-1.3-0.6-2.4-1.7-3.4c-1.1-1-3.7-1.9-7.7-2.8c-6.6-1.5-11.3-3.5-14.1-5.9c-2.8-2.5-4.2-5.6-4.2-9.4c0-2.5,0.7-4.9,2.2-7.1
+                            c1.4-2.2,3.6-4,6.5-5.2c2.9-1.3,6.9-1.9,12-1.9c6.2,0,11,1.2,14.2,3.5c3.3,2.3,5.2,6,5.8,11L503,66.5c-0.4-2.2-1.2-3.8-2.4-4.8
+                            c-1.2-1-2.9-1.5-5-1.5c-1.7,0-3.1,0.4-4,1.1c-0.9,0.7-1.3,1.6-1.3,2.7c0,0.8,0.4,1.5,1.1,2.1c0.7,0.6,2.4,1.2,5,1.8
+                            c6.6,1.4,11.3,2.9,14.1,4.3c2.8,1.5,4.9,3.2,6.2,5.4c1.3,2.1,1.9,4.5,1.9,7.2c0,3.1-0.9,6-2.6,8.6c-1.7,2.6-4.1,4.6-7.2,6
+                            c-3.1,1.4-7,2-11.7,2c-8.3,0-14-1.6-17.2-4.8S475.1,89.5,474.6,84.6z"/>
+                        <path class="st0" d="M523,52h45.7v12h-15.3v36.7h-15V64H523V52z"/>
+                        <path class="st0" d="M576.1,52h15.1v48.7h-15.1V52z"/>
+                        <path class="st0" d="M602,52h14l18.3,26.9V52h14.2v48.7h-14.2L616.2,74v26.7H602V52z"/>
+                        <path class="st0" d="M683.1,83.1V72.9h23.2v20.8c-4.4,3-8.4,5.1-11.8,6.2s-7.5,1.6-12.2,1.6c-5.8,0-10.5-1-14.1-3
+                            c-3.6-2-6.5-4.9-8.5-8.8c-2-3.9-3-8.4-3-13.4c0-5.3,1.1-9.9,3.3-13.9c2.2-3.9,5.4-6.9,9.6-8.9c3.3-1.6,7.7-2.4,13.3-2.4
+                            c5.4,0,9.4,0.5,12.1,1.5c2.7,1,4.9,2.5,6.6,4.5c1.8,2,3.1,4.6,4,7.8l-14.5,2.6c-0.6-1.8-1.6-3.2-3-4.2c-1.4-1-3.2-1.5-5.5-1.5
+                            c-3.3,0-5.9,1.1-7.9,3.4s-2.9,5.9-2.9,10.9c0,5.3,1,9,3,11.3c2,2.3,4.7,3.4,8.3,3.4c1.7,0,3.3-0.2,4.8-0.7
+                            c1.5-0.5,3.3-1.3,5.2-2.5v-4.6H683.1z"/>
+                    </g>
+                </g>
+            </g>
+            <g id="Layer_2_1_" class="st1">
+            </g>
+            </svg>
+            <p>We recommend ApexHosting!</p>
+        </a>
+    </div>
+</div></div>
+    </div>
+  </main>
+</div>
+<footer class="sy-foot">
+  <div class="sy-foot-inner sy-container mx-auto">
+    <div class="sy-foot-reserved md:flex justify-between items-center">
+      <div class="sy-foot-copyright"><p>2015-2026, WorldEdit Team</p>
+  
+  <p>
+    Made with
+    
+    <a href="https://www.sphinx-doc.org/">Sphinx</a> and
+    
+    <a href="https://shibuya.lepture.com">Shibuya theme</a>.
+  </p>
+</div>
+      <div class="sy-foot-socials">
+  <a href="https://github.com/EngineHub/WorldEdit" aria-label="GitHub">
+    <iconify-icon icon="simple-icons:github"></iconify-icon>
+  </a>
+  <a href="https://discord.gg/enginehub" aria-label="Discord">
+    <iconify-icon icon="simple-icons:discord"></iconify-icon>
+  </a></div>
+    </div>
+  </div>
+</footer>
+      <script src="../../../_static/documentation_options.js?v=2a957733"></script>
+      <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../../../_static/shibuya.js?v=50760d75"></script></body>
+</html>

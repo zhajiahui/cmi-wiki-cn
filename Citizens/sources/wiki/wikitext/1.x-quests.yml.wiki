@@ -1,0 +1,310 @@
+{{NoSupport}}
+<br>
+<br>
+= Quests.yml =
+
+Quests are defined in the quests.yml file located in plugins/Citizens, one after another. Because of the power and flexibility of the quest system, it can be a bit of a finicky beast.  Pay special attention to spacing and the use of special characters. Quests.yml should pass any YAML parser without any errors. Most problems that arise from setting up quests is result of invalid formatting.
+
+Tool: [[http://yaml-online-parser.appspot.com/ YAML Parser]] allows the contents of your .yml file to be pasted into the left box. If formatted incorrectly, parse errors will show in the right panel indicating the problem.
+
+Quests.yml is reloaded when using /citizens reload.
+
+
+== Example structure ==
+
+Quests consist of different parts, as explained by this page. This is the basic flow of most quests, though not all nodes are required.
+
+<pre>"Title":
+    texts:
+    repeats:
+    delay:
+    requirements:
+    initial:
+    objectives:
+    rewards:   
+</pre>
+
+Note: Other arguments and nodes are required for sections for a complete quest. This is just an outline. More information, in depth below:
+
+
+== Example Quest==
+
+The quest below takes advantage of multiple objectives, delays, message formatting, and multiple rewards. Check out [[1.x/More Example Quests]].
+
+<pre>
+
+# NPC Quest Slime Slaying initiated by NPC Theo (22).
+
+"Slime Slaying":
+    texts:
+        description: "<Theo> The best way to take care of those slimes is to slay
+            <br>them with a sword. We have a bit of overcrowding, as you can
+            <br>see.. would you be willing you help our small city?
+            <br>&6Quest: <g>The Slime Slayer, Part 1
+            <br>&6Objective: Destroy 12 slimes."
+        acceptance: "<Theo> Great! You are truly a friend! Our small 
+            <br>city has a lot to offer, so stick around. 
+            <delay=60><Theo> HAHAHA... get it? <g>STICK&f around? HAH HAH HAH!
+            <delay=80>&6Quest: <g>The Slime Slayer, Part 1 &6started!
+            <delay=40><g>Remember, you can use &6/quest status <g>to check your progress."
+        completion: "<Theo> Wow! You've taken care of the slimes already?
+            <br>We really appreciate the help!
+            <br>&6Quest: You have recieved 100 bucks for your effort. Sweet!
+            <br><Theo> Don't bounce outta here too soon.
+            <delay=40><Theo> HAHA.. get it? <g>BOUNCE&f? Oh.. HAH HAH!"
+    repeats: -1
+    objectives:
+        '0':
+            '0':
+                type: hunt
+                string: 'slime'
+                amount: 12
+                message: "&6Quest: A dozen slimes down. That wasn't so hard. 
+                    <delay=120>&fPerhaps you should see if <g>Theo &frequires any additional help?"
+            '1':
+                type: delivery
+                materialid: 341 # Slimeballs
+                amount: 6
+                npcdestination: 22
+                optional: True # Optional sub-objective triggers only if you bring slimeballs
+                               # before the other objective is complete. 
+                message: "&6Quest: Slimeballs delivered.
+                    <delay=50><Theo> Oh, what's this? 
+                    <delay=20><Theo> OH! Slimeballs, Yes! You can keep what you find, but I 
+                    <br>appreciate the gesture! Take this -- perhaps it will help you
+                    <br>become a more efficient slime slayer! 
+                    <br><Theo>What have you got to l-ooze?
+                    <delay=40><Theo> HAHA. Get it? L-<g>OOOOZE&f? HAHAHA 
+                    <delay=20>&6Quest: You have received a bow and some arrows! Nice!"
+                rewards:
+                    '0':
+                         type: item
+                         id: 261  # Bow
+                         amount: 1
+                    '1':
+                         type: item
+                         id: 262  # Arrows
+                         amount: 64
+    rewards:
+        '0':
+            type: money
+            money: 100
+</pre>
+
+= Quest Nodes =
+
+== Title ==
+
+Required.
+
+Each root node in that file is a quest name. In the default quest.yml the two example quests are 'example' and 'example2'. This identification is what you will use in-game to identify each quest.
+
+The title is the very first line of the quest, in quotes, followed by colon. If one word, quotes are not necessary.
+
+<pre>"Title of quest": </pre>
+
+Example: The command required in game to assign the quest to a quester utilizes this title.
+
+<pre>/quester assign Title of quest </pre>
+
+
+== Texts ==
+
+Required.
+
+Inside the quest, there are three required texts: description, acceptance, and completion. 
+
+The description is sent to the player when being given the option to accept the quest.  The acceptance is sent to the player when they accept the quest, and the completion when they finish.
+
+<pre>texts:
+    description: "Description text."
+    acceptance: "Acceptance text."
+    completion: "Completion text."</pre>
+
+Default text is white.  Special character combinations can be used for formatting text.  See: [[1.x/Message Formatting]] and [[1.x/Quest Text Formatting Tips]]
+
+== Repeats ==
+
+Optional. If not set, default is 0.
+
+The repeats: option allows you to set a limit for the number of times you can repeat the quest.
+
+<pre>repeats: 6    # Quest can be repeated 6 times.  </pre>
+
+Use -1 for unlimited repeats, 0 for no repeats.
+
+
+== Delay ==
+
+Optional. Default, if not set, is 0.
+
+The delay: option allows you to specify the time (in minutes) before one is allowed to retake the quest.
+
+<pre>delay: 10     # Allows the quest, if allowed, to be repeated 10 minutes after completing it.</pre>
+
+
+== Requirements == 
+
+Optional.
+
+The requirements: node checks for conditions before allowing a player to take a quest.  Requirements types can be item, quest, time, money, health, rank, or permission.
+
+See also:  [[1.x/List of Requirement node types]]
+
+''- Note by aufdemrand: need to double check each type to confirm they work.  I know for sure quest, money & item work. I am assuming on the others.''
+
+<pre>requirements:
+    '0':
+        type: item    # Requires item(s) when accepting.
+        id: 15        # iron_ore
+        amount: 15   
+        take: true    # take the 15 iron_ore, set to false to leave items on player.
+    '1':
+        type: quest   # Requires a quest be completed prior.
+        quest: "example1"
+</pre>
+
+You may have multiple requirements, or just one.
+
+
+== Initial == 
+
+- Note: Requires Citizens 1.1.4 or higher.
+
+Optional.
+
+The initial: node will trigger once conditions have been met allowing a player to take a quest. Many practical uses can be used for this, but among some of those may be:
+
+* Giving the player some gear to start a quest.
+* Giving an item to the player that is used in a quest.
+* Giving special rank or permission to a player.
+* Performing server commands.
+* Spawning NPC bodyguards to assist the questee.
+
+Initial types can be item, quest, time, money, health, rank, or permission.
+
+See also: [[1.x/List of Initial node types]]
+
+''- Note by aufdemrand: need to double check each type to confirm they work.  I know for sure money & item work. I am assuming on the others.''
+
+<pre>initial:
+    '0':
+        type: item     # Gives an item when conditions are met.
+        id: 268        # wooden_sword
+        amount: 1   
+        take: false    # Optional. By default, take: is false.
+</pre>
+
+You may have multiple entries, or just one.
+
+== Rewards ==
+
+Optional.
+
+The rewards: node is used to tell the quester what to reward the player with when conditions are met.  If all the objectives are completed, the rewards: node is triggered.  
+
+See also:  [[1.x/List of Rewards node types]]
+
+<pre>rewards:
+    '0':
+        type: item    # Rewards an item
+        id: 15        # iron_ore
+        amount: 30
+    '1':
+        type: quest   # Rewards a quest.  This quest will start immediately.
+        quest: "Part II"
+</pre>
+
+You may have multiple rewards, or just one.  Rewards can also be subset into objectives to reward the player as objectives are completed. The format is the same.
+
+
+== Objectives ==
+
+This section is the meat of the quest file.  Objectives tell the quester what needs to be accomplished in order to complete the quest. Available objectives include hunt, deliver, destroy, and more.  They can be used together to make quests as simple, or as detailed as you want.
+
+See also:  [[1.x/List of Objective node types]]
+
+
+=== Basic objective structure ===
+
+Objectives are made of sub-objectives. In the below example, for the quest to be complete, objective 0 would have to have 3 sub-objectives complete before the player can attempt to complete objective 1. The quest would be complete when the sub-objective in objective 1 is complete.  
+
+<pre>
+    objectives:
+        '0':
+            '0':
+                type:
+            '1':
+                type:
+            '2':
+                type:
+        '1':
+            '0':
+                type:
+</pre>
+ 
+If your quest has merely one objective, it must still be nested as a sub-objective. Example below:
+
+<pre>
+    objectives:
+        '0':
+            '0':
+                type:
+</pre>
+
+''Note: The above 2 examples are only an outline of the objective structure. There are more nodes that need to be defined in order for a successful quest. Keep reading.
+
+
+=== Breakdown of an objective ===
+
+Sub-objectives contain types and their nodes. With the [[1.x/List of Objective node types]], you can use various types to control the flow of the quest. Here's an example that uses a hunt objective and a delivery objective. Sub-objectives can be completed in any order.
+
+<pre>
+'0':
+    '0':
+        type: hunt          # Type set to hunt objective
+        string: zombie     # Type of monster to hunt is set to Zombie.
+        amount: 2           # Amount of monsters required to hunt.
+        optional: False     # Quest sub-objective is required to complete the quest.
+        message: "Pesky zombies slaughtered."    # Message displayed when sub-objective is completed.
+    '1':
+        type: delivery      # Type of second sub-objective set to delivery.
+        materialid: 341     # Slimeballs.
+        amount: 6           # 6 items must be on hand to complete sub-objective.
+        npcdestination: 2   # NPC # that the items must be taken to.
+        optional: True      # Sub-objective not required, is optional.
+        message: "Slimeballs delivered."    # Message displayed when second sub-objective is completed.
+</pre>
+
+
+=== A reward inside a sub-objective ===
+
+As mentioned in the rewards node section, rewards can also trigger at the completion of a sub-objective.  They should be nested inside the sub-objective like the example following:
+
+<pre>'0':
+    type: move distance     # Player must move specified amount of blocks
+    amount: 6               # 6 blocks to be exact
+    optional: False
+    message: "You received a bow and some arrows! Sweet!"
+    rewards:
+        '0':
+             type: item     # Reward type set to item
+             id: 261        #  Bow
+             amount: 1
+        '1':
+             type: item     # Second reward type also an item
+             id: 262        # Arrow
+             amount: 64     # 1 stack</pre>
+
+
+= See also =
+
+[[Basic Example Quests]] are very basic quests from start to finish, all commented. <br>
+[[A Two-Part Example Quest]] explores a two-part quest among two different NPCs. <br>
+[[More example quests]] will have a variety of quests, mostly ready to copy/paste into your world. ''Some variables may need to be changed.'' <br>
+[[Questing Cook-Book]] will contain copy & paste snippets nearly-ready to be combined.
+
+[[Advanced Questing Ideas]] will explore the use of other plugins to supplement Citizens.
+
+{{NavBox}}
+[[Category:Citizens1]]

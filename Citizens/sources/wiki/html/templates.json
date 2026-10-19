@@ -1,0 +1,67 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Templates",
+    "pageid": 378,
+    "revid": 5660,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>Templates are a simple way to share NPC configuration across NPCs and servers.\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Layout\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Layout</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Example\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Example</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Other_commands\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Other commands</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Reference\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Reference</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Layout\">Layout</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Templates&amp;action=edit&amp;section=1\" title=\"Edit section: Layout\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Templates are stored in the plugins/Citizens/templates folder.\n</p><p>Each template consists of a <b>namespace</b> or a folder to group related templates together and a bunch of template files.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Example\">Example</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Templates&amp;action=edit&amp;section=2\" title=\"Edit section: Example\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Let's build a quick example.\n</p><p>Make a folder called plugins/Citizens/templates/awesometemplates. \n</p><p>Inside this, create a .yml file. This can have any file name - the file name is just for helping you organise complicated templates. Let's call the first one info.yml.\n</p><p>Inside info.yml, put the following template:\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:98%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:98%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">towninfo:\n    yaml_replace:\n        replacements:\n            name: Town Crier\n            traits:\n                type: VILLAGER\n        override: true\n    commands:\n        on_spawn:\n            - say --range 5 Hello!\n</pre>\n</div></td></tr></tbody></table>\n<p>This creates a template with the namespace <i>awesometemplates</i> and the template name <i>towninfo</i>. We can reference this in game with the combined key <i>awesometemplates:towninfo</i> or by just the template name <i>towninfo</i>. If there could be duplicate template names in different namespaces, then use the full reference.\n</p><p>\nNow, we can create an NPC with our desired template using </p><pre>/npc create NPC --templates awesometemplates:towninfo</pre>\n<p>You should see a new villager NPC called Town Crier appear that broadcasts the message Hello! every time it spawns.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Other_commands\">Other commands</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Templates&amp;action=edit&amp;section=3\" title=\"Edit section: Other commands\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>You can generate a copy of another NPC's save data directly using for example /template generate awesometemplates:towninfocopy. This will save it into a file called towninfocopy.yml. \n</p><p>You can apply a template to an existing NPC by using /template apply awesometemplates:towninfo.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Reference\">Reference</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Templates&amp;action=edit&amp;section=4\" title=\"Edit section: Reference\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Command events\n</p>\n<ul><li>on_spawn (when the NPC spawns)</li>\n<li>on_template_apply (when the template is applied)</li></ul>\n<!-- \nNewPP limit report\nCached time: 20261019145919\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.014 seconds\nReal time usage: 0.016 seconds\nPreprocessor visited node count: 36/1000000\nRevision size: 1872/2097152 bytes\nPost‐expand include size: 492/2097152 bytes\nTemplate argument size: 43/2097152 bytes\nHighest expansion depth: 4/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 308/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    4.792      1 Template:Codebox\n100.00%    4.792      1 -total\n-->\n\n<!-- Render ID a90b0be3-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Layout",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Templates",
+        "byteoffset": 80,
+        "anchor": "Layout",
+        "linkAnchor": "Layout"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Example",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Templates",
+        "byteoffset": 281,
+        "anchor": "Example",
+        "linkAnchor": "Example"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Other commands",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "Templates",
+        "byteoffset": 1455,
+        "anchor": "Other_commands",
+        "linkAnchor": "Other_commands"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Reference",
+        "number": "4",
+        "index": "4",
+        "fromtitle": "Templates",
+        "byteoffset": 1758,
+        "anchor": "Reference",
+        "linkAnchor": "Reference"
+      }
+    ],
+    "showtoc": ""
+  }
+}

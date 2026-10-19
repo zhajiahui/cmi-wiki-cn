@@ -1,0 +1,48 @@
+[
+  {
+    "file": "wiki/home.md",
+    "title": "CMILib 官方说明与下载",
+    "source_url": "https://www.zrips.net/cmilib/",
+    "source_file": "sources/wiki/original/home.md",
+    "source_sha256": "a07cb4c6b9710835063ff51f693ef193828915c20b72953ab19244094763f85d",
+    "translation_review": "reviewed",
+    "source_exclusions": [
+      {
+        "start_line": 3,
+        "end_line": 22,
+        "reason": "API/SDK 接入参考；具体排除范围见 wiki-coverage.json"
+      }
+    ]
+  },
+  {
+    "file": "wiki/faq.md",
+    "title": "常见问题",
+    "source_url": "https://www.zrips.net/cmilib/faq/",
+    "source_file": "sources/wiki/original/faq.md",
+    "source_sha256": "b410aea77900038fd93b837751d5d38c4669bc08a4f126cef4db0ebf2342ece6",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/readme.md",
+    "title": "CMILib 安装、更新与支持",
+    "source_url": "https://github.com/Zrips/CMILib/blob/master/README.md",
+    "source_file": "sources/wiki/original/readme.md",
+    "source_sha256": "4e5ecf677475512da8d8e37ba5d57f2fcca7be0874955314bfa7c51949285ae0",
+    "translation_review": "reviewed",
+    "source_exclusions": [
+      {
+        "start_line": 63,
+        "end_line": 98,
+        "reason": "API/SDK 接入参考；具体排除范围见 wiki-coverage.json"
+      }
+    ]
+  },
+  {
+    "file": "wiki/plugin-page.md",
+    "title": "CMILib 官方发布页",
+    "source_url": "https://www.spigotmc.org/resources/cmilib.87610/",
+    "source_file": "sources/wiki/original/plugin-page.md",
+    "source_sha256": "5d044d58b74c902f9bfdb5713937f56f0fff6a6184aac8664b35df1e46229c66",
+    "translation_review": "reviewed"
+  }
+]

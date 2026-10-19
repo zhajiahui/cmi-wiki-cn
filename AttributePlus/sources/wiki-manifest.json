@@ -1,0 +1,322 @@
+[
+  {
+    "file": "wiki/master.md",
+    "title": "AttributePlus",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/master",
+    "source_file": "sources/wiki/original/master.md",
+    "source_sha256": "33d97d841afa08f630e74884ddd969583c8bb273aba272bdaf79399dd7988c49",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/cha-jian-pei-zhi.md",
+    "title": "插件相关",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/cha-jian-pei-zhi",
+    "source_file": "sources/wiki/original/cha-jian-pei-zhi.md",
+    "source_sha256": "4ca1ce3d4e33645333c33c57c1eab4aad3533d5b68ff2504761a653bdbbb1808",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/cha-jian-pei-zhi/gao-ban-ben-wu-pin-wen-ti.md",
+    "title": "高版本物品问题",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/cha-jian-pei-zhi/gao-ban-ben-wu-pin-wen-ti",
+    "source_file": "sources/wiki/original/cha-jian-pei-zhi/gao-ban-ben-wu-pin-wen-ti.md",
+    "source_sha256": "6b72aaeecf7adf823200fe586623d978cd87cd90b5036ef359a4ad01abb326b7",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/cha-jian-pei-zhi/pei-zhi.md",
+    "title": "配置",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/cha-jian-pei-zhi/pei-zhi",
+    "source_file": "sources/wiki/original/cha-jian-pei-zhi/pei-zhi.md",
+    "source_sha256": "4f6a9dad4cc1b4d97508547898d79aaae7677c71dbb81f50c684eaaeef6d4eb5",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/cha-jian-pei-zhi/pei-zhi/attribute.yml.md",
+    "title": "attribute.yml",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/cha-jian-pei-zhi/pei-zhi/attribute.yml",
+    "source_file": "sources/wiki/original/cha-jian-pei-zhi/pei-zhi/attribute.yml.md",
+    "source_sha256": "a756fdd250f28b4a74c0e9390380f3a2065c53a705c87190e2fba0b30dfd1340",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/cha-jian-pei-zhi/pei-zhi/stats.yml.md",
+    "title": "stats.yml",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/cha-jian-pei-zhi/pei-zhi/stats.yml",
+    "source_file": "sources/wiki/original/cha-jian-pei-zhi/pei-zhi/stats.yml.md",
+    "source_sha256": "eef8df8e73b4f2646efc41c9af44604b474255b99d3de34b2d0c56bfdd3847e6",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/cha-jian-pei-zhi/pei-zhi/script.yml.md",
+    "title": "script.yml",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/cha-jian-pei-zhi/pei-zhi/script.yml",
+    "source_file": "sources/wiki/original/cha-jian-pei-zhi/pei-zhi/script.yml.md",
+    "source_sha256": "84db736fbba327104dc9d89c2a73bdae58f26addb67776f9c172b72ef2236951",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/cha-jian-pei-zhi/yu-yan.md",
+    "title": "语言",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/cha-jian-pei-zhi/yu-yan",
+    "source_file": "sources/wiki/original/cha-jian-pei-zhi/yu-yan.md",
+    "source_sha256": "36d310ba7fb0c4bf4fd58cad05ef49d2484291eb488539716aceb293f29963cd",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/shu-xing-xiang-guan.md",
+    "title": "属性相关",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/shu-xing-xiang-guan",
+    "source_file": "sources/wiki/original/shu-xing-xiang-guan.md",
+    "source_sha256": "b0f058d04ff63a08d9082bc1367ea07e112924227856f46eef5129be5a5bd89e",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/shu-xing-xiang-guan/you-xian-ji.md",
+    "title": "优先级 / 战斗力 / 公式 / 消息",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/shu-xing-xiang-guan/you-xian-ji",
+    "source_file": "sources/wiki/original/shu-xing-xiang-guan/you-xian-ji.md",
+    "source_sha256": "589e5094663f001f4a5033db4f46a710d49a321293fca6aac685bbab54932c69",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/shu-xing-xiang-guan/mythicmobs-shu-xing-xiang-guan.md",
+    "title": "MythicMobs 属性相关",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/shu-xing-xiang-guan/mythicmobs-shu-xing-xiang-guan",
+    "source_file": "sources/wiki/original/shu-xing-xiang-guan/mythicmobs-shu-xing-xiang-guan.md",
+    "source_sha256": "ecb88cb322d53d6863a8ffee68e4382f95fd38318a741df00aa6919babda7b44",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/du-qu-xiang-guan.md",
+    "title": "读取相关",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/du-qu-xiang-guan",
+    "source_file": "sources/wiki/original/du-qu-xiang-guan.md",
+    "source_sha256": "19ca9589a1e203c2ca3cc83f20eb2ebaef15170616fef30a02fa60a34510f902",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/du-qu-xiang-guan/guo-lv-fu-xiang-guan.md",
+    "title": "过滤符相关",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/du-qu-xiang-guan/guo-lv-fu-xiang-guan",
+    "source_file": "sources/wiki/original/du-qu-xiang-guan/guo-lv-fu-xiang-guan.md",
+    "source_sha256": "2eea0e49d6fb1f92a326636b96ae98ec0aa6d93d59ea8e99bc45d67013823eef",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/du-qu-xiang-guan/zhuang-bei-tiao-jian-biao-qian.md",
+    "title": "装备条件标签",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/du-qu-xiang-guan/zhuang-bei-tiao-jian-biao-qian",
+    "source_file": "sources/wiki/original/du-qu-xiang-guan/zhuang-bei-tiao-jian-biao-qian.md",
+    "source_sha256": "4e30f6f443f3728c4d9c977478ebc41cbd28c541716bdc9c6ed5b006cbf8e1c9",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/du-qu-xiang-guan/nbt-shu-xing-jia-zai.md",
+    "title": "NBT属性加载",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/du-qu-xiang-guan/nbt-shu-xing-jia-zai",
+    "source_file": "sources/wiki/original/du-qu-xiang-guan/nbt-shu-xing-jia-zai.md",
+    "source_sha256": "62fb18a2f6a53417c4b11f0a451a0964bcac07937c5e2323a8bc86a25bb3fa8a",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/du-qu-xiang-guan/zi-ding-yi-tiao-jian-biao-qian.md",
+    "title": "自定义条件标签",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/du-qu-xiang-guan/zi-ding-yi-tiao-jian-biao-qian",
+    "source_file": "sources/wiki/original/du-qu-xiang-guan/zi-ding-yi-tiao-jian-biao-qian.md",
+    "source_sha256": "88c08b324a88590ef88e6d978cd34ea0db87f41eece18c76a60423f8e93563f1",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/du-qu-xiang-guan/xin-du-qu-ge-shi-xiang-guan-3.3.0.7.md",
+    "title": "新读取格式相关 (>=3.3.0.7)",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/du-qu-xiang-guan/xin-du-qu-ge-shi-xiang-guan-3.3.0.7",
+    "source_file": "sources/wiki/original/du-qu-xiang-guan/xin-du-qu-ge-shi-xiang-guan-3.3.0.7.md",
+    "source_sha256": "69e718783496c3c6602dee396d8693e693e0ca52506cf784644f6973602558bb",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/du-qu-xiang-guan/shu-xing-du-qu-ge-shi.md",
+    "title": "旧读取格式相关 (<=3.3.0.6)",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/du-qu-xiang-guan/shu-xing-du-qu-ge-shi",
+    "source_file": "sources/wiki/original/du-qu-xiang-guan/shu-xing-du-qu-ge-shi.md",
+    "source_sha256": "8b0ab531c77e12a16f88f857022a2803dd59d7e94b76080ec76fbff9f5b691ca",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/du-qu-xiang-guan/shu-xing-du-qu-tiao-jian.md",
+    "title": "属性内嵌条件格式",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/du-qu-xiang-guan/shu-xing-du-qu-tiao-jian",
+    "source_file": "sources/wiki/original/du-qu-xiang-guan/shu-xing-du-qu-tiao-jian.md",
+    "source_sha256": "952667185be7c3365eb30ad53fd8477137207415a750bf23d52450165e5996da",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/du-qu-xiang-guan/bai-fen-bi-shu-xing-du-qu-ge-shi.md",
+    "title": "属性百分比读取格式",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/du-qu-xiang-guan/bai-fen-bi-shu-xing-du-qu-ge-shi",
+    "source_file": "sources/wiki/original/du-qu-xiang-guan/bai-fen-bi-shu-xing-du-qu-ge-shi.md",
+    "source_sha256": "c5d1aececb5acfa2e6fc6eaa6549931c01e5eccf4629decf7df944cd9992cef7",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/ji-zhi-xiang-guan.md",
+    "title": "机制相关",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/ji-zhi-xiang-guan",
+    "source_file": "sources/wiki/original/ji-zhi-xiang-guan.md",
+    "source_sha256": "2595f0f97e90d950a6aed5302efd2b9b7cf5eec16d2141ef44770a52b6fd9f9e",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/ji-zhi-xiang-guan/xu-li-ji-zhi.md",
+    "title": "蓄力机制",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/ji-zhi-xiang-guan/xu-li-ji-zhi",
+    "source_file": "sources/wiki/original/ji-zhi-xiang-guan/xu-li-ji-zhi.md",
+    "source_sha256": "0816ad2855d312553cab193e8fcedb913d92d99036f5bfd0d594a2e1005e4fb8",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/ji-zhi-xiang-guan/dun-pai-ji-zhi.md",
+    "title": "盾牌机制",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/ji-zhi-xiang-guan/dun-pai-ji-zhi",
+    "source_file": "sources/wiki/original/ji-zhi-xiang-guan/dun-pai-ji-zhi.md",
+    "source_sha256": "b7997032e0303b97df34a040f013930da39d69ed73fa377c725920a5f54352e6",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/ji-zhi-xiang-guan/gong-jian-ji-zhi.md",
+    "title": "弓箭机制",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/ji-zhi-xiang-guan/gong-jian-ji-zhi",
+    "source_file": "sources/wiki/original/ji-zhi-xiang-guan/gong-jian-ji-zhi.md",
+    "source_sha256": "0175ad2bbaf9a71c5b589dc1ddc223fbaf6de8cbdfb77a1d147a9268a77bc817",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/ji-zhi-xiang-guan/zhao-huan-ji-zhi.md",
+    "title": "召唤机制",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/ji-zhi-xiang-guan/zhao-huan-ji-zhi",
+    "source_file": "sources/wiki/original/ji-zhi-xiang-guan/zhao-huan-ji-zhi.md",
+    "source_sha256": "acfa70f136bc6544ec29fcbbb68810dc1ddbe2606a9b3cdf88a57a10792d098d",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/shu-xing-jiao-ben.md",
+    "title": "属性脚本",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/shu-xing-jiao-ben",
+    "source_file": "sources/wiki/original/shu-xing-jiao-ben.md",
+    "source_sha256": "31dc7fe9e70ae73ffc8f17e9f3b345d34a10be36718bb973d6d0b59cc153c59b",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/shu-xing-jiao-ben/shu-xing-lei-xing.md",
+    "title": "属性类型",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/shu-xing-jiao-ben/shu-xing-lei-xing",
+    "source_file": "sources/wiki/original/shu-xing-jiao-ben/shu-xing-lei-xing.md",
+    "source_sha256": "3629b607cf34cd128146cb194928afb8b1940bf9ec5c33c654818f889dc2ab89",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/shu-xing-jiao-ben/shou-ba-shou-jiao-ni-xie-shu-xing-jiao-ben.md",
+    "title": "脚本教学",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/shu-xing-jiao-ben/shou-ba-shou-jiao-ni-xie-shu-xing-jiao-ben",
+    "source_file": "sources/wiki/original/shu-xing-jiao-ben/shou-ba-shou-jiao-ni-xie-shu-xing-jiao-ben.md",
+    "source_sha256": "827fbd7addb10890c4066514b888602021f9aac29203a59957c6511c272db6ba",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/shu-xing-jiao-ben/shou-ba-shou-jiao-ni-xie-shu-xing-jiao-ben/runtime-lei-xing.md",
+    "title": "RUNTIME 类型",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/shu-xing-jiao-ben/shou-ba-shou-jiao-ni-xie-shu-xing-jiao-ben/runtime-lei-xing",
+    "source_file": "sources/wiki/original/shu-xing-jiao-ben/shou-ba-shou-jiao-ni-xie-shu-xing-jiao-ben/runtime-lei-xing.md",
+    "source_sha256": "2bee326f6894a915a9dbcb784efd02a7f12cbb320b72bccaf4ed4b1456bf1821",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/shu-xing-jiao-ben/shou-ba-shou-jiao-ni-xie-shu-xing-jiao-ben/update-lei-xing.md",
+    "title": "UPDATE 类型",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/shu-xing-jiao-ben/shou-ba-shou-jiao-ni-xie-shu-xing-jiao-ben/update-lei-xing",
+    "source_file": "sources/wiki/original/shu-xing-jiao-ben/shou-ba-shou-jiao-ni-xie-shu-xing-jiao-ben/update-lei-xing.md",
+    "source_sha256": "0f7c9256ea89c791970a58702748d8fd0baa9fec8e83861987edf8cd7557dd52",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/shu-xing-jiao-ben/shou-ba-shou-jiao-ni-xie-shu-xing-jiao-ben/update-lei-xing-1.md",
+    "title": "CUSTOM 类型",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/shu-xing-jiao-ben/shou-ba-shou-jiao-ni-xie-shu-xing-jiao-ben/update-lei-xing-1",
+    "source_file": "sources/wiki/original/shu-xing-jiao-ben/shou-ba-shou-jiao-ni-xie-shu-xing-jiao-ben/update-lei-xing-1.md",
+    "source_sha256": "7bfd43012324206aa3f56bffa942678b2970c29cc24ebc4f67bbd9215e7eab99",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/shu-xing-jiao-ben/shou-ba-shou-jiao-ni-xie-shu-xing-jiao-ben/runtime-lei-xing-1.md",
+    "title": "KILLER 类型",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/shu-xing-jiao-ben/shou-ba-shou-jiao-ni-xie-shu-xing-jiao-ben/runtime-lei-xing-1",
+    "source_file": "sources/wiki/original/shu-xing-jiao-ben/shou-ba-shou-jiao-ni-xie-shu-xing-jiao-ben/runtime-lei-xing-1.md",
+    "source_sha256": "d3f78db9a251f8f8bb531b33e475139d1e90d1de41bea20d6dcf47cfc990bbe7",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/shu-xing-jiao-ben/shou-ba-shou-jiao-ni-xie-shu-xing-jiao-ben/attributeapi.runentitytask.md",
+    "title": "延迟触发任务",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/shu-xing-jiao-ben/shou-ba-shou-jiao-ni-xie-shu-xing-jiao-ben/attributeapi.runentitytask",
+    "source_file": "sources/wiki/original/shu-xing-jiao-ben/shou-ba-shou-jiao-ni-xie-shu-xing-jiao-ben/attributeapi.runentitytask.md",
+    "source_sha256": "a74916f9fe5e0fd690c4a9f9e6f1dafa6bac78126f01e97d80ed3d2806215a18",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/shu-xing-jiao-ben/chang-jian-wen-ti.md",
+    "title": "常见问题",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/shu-xing-jiao-ben/chang-jian-wen-ti",
+    "source_file": "sources/wiki/original/shu-xing-jiao-ben/chang-jian-wen-ti.md",
+    "source_sha256": "b9515ed32469c79c49f7593bcb91ae8f9a1841a81f7202f97bdfc84afbf7f651",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/kai-fa-wen-dang/api-1.md",
+    "title": "Counter 计数器",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/kai-fa-wen-dang/api-1",
+    "source_file": "sources/wiki/original/kai-fa-wen-dang/api-1.md",
+    "source_sha256": "71499648b0b95e4a7b1bee04e532d9249e462546607b67976236fe912dc24564",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/kai-fa-wen-dang/attributecomponent/shou-ba-shou-jiao-ni-xie-shu-xing.md",
+    "title": "Example",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/kai-fa-wen-dang/attributecomponent/shou-ba-shou-jiao-ni-xie-shu-xing",
+    "source_file": "sources/wiki/original/kai-fa-wen-dang/attributecomponent/shou-ba-shou-jiao-ni-xie-shu-xing.md",
+    "source_sha256": "e9f7add431dccbdea4138e698d36f63d69b4a0a78fcdb50153723a8a7f32e126",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/kai-fa-wen-dang/descriptionlinecondition.md",
+    "title": "CustomTriggerComponent",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/kai-fa-wen-dang/descriptionlinecondition",
+    "source_file": "sources/wiki/original/kai-fa-wen-dang/descriptionlinecondition.md",
+    "source_sha256": "2a8f23f56495b8710d3337b1fa6f03de4429a9a51b117752d0a8dadf951f608d",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/kai-fa-wen-dang/descriptionlinecondition-1.md",
+    "title": "EmbeddedCondition",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/kai-fa-wen-dang/descriptionlinecondition-1",
+    "source_file": "sources/wiki/original/kai-fa-wen-dang/descriptionlinecondition-1.md",
+    "source_sha256": "b10f0bba6ec1a7c9edb9ff6d0fa09e4188c15dd758ed27bfbf0957b3f3a8d9d4",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/kai-fa-wen-dang/readcomponent/shou-ba-shou-jiao-ni-xie-xin-de-du-qu-fang-shi.md",
+    "title": "教学",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/kai-fa-wen-dang/readcomponent/shou-ba-shou-jiao-ni-xie-xin-de-du-qu-fang-shi",
+    "source_file": "sources/wiki/original/kai-fa-wen-dang/readcomponent/shou-ba-shou-jiao-ni-xie-xin-de-du-qu-fang-shi.md",
+    "source_sha256": "ee7644c1397f0bb9fcb9ea1101798394e72b173c6b1e96b18c0ef256da565f5c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/geng-xin-ji-lu.md",
+    "title": "更新记录",
+    "source_url": "https://ersha.gitbook.io/attributeplus-pro/geng-xin-ji-lu",
+    "source_file": "sources/wiki/original/geng-xin-ji-lu.md",
+    "source_sha256": "76264e3c943ab0554b1c9be2c91ec2987c4344a43d19ece619955ad17bc4fbdf",
+    "translation_review": "reviewed"
+  }
+]

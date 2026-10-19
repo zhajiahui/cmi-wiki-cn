@@ -1,0 +1,38 @@
+[
+  {
+    "source_url": "https://www.zrips.net/wp-content/uploads/2021/01/CMILLogo.png",
+    "resolved_url": "https://www.zrips.net/wp-content/uploads/2021/01/CMILLogo.png",
+    "source_pages": [
+      "https://www.zrips.net/cmilib/"
+    ],
+    "rendered_urls": [
+      "https://www.zrips.net/wp-content/uploads/2021/01/CMILLogo.png"
+    ],
+    "file": "wiki/assets/1dff60337ec6-CMILLogo.png",
+    "sha256": "1dff60337ec6255c25518da45a168de719d9e2a13472f5567c1769a70b2d4c53",
+    "size_bytes": 27385,
+    "media_type": "image/png",
+    "status": "archived",
+    "native_bytes_preserved": true,
+    "width": 450,
+    "height": 252
+  },
+  {
+    "source_url": "https://proxy.spigotmc.org/5cfe54f9a3372c925485d3afce410c93bfef0ab4/687474703a2f2f7777772e7a726970732e6e65742f77702d636f6e74656e742f75706c6f6164732f323032312f30312f434d494c4c6f676f2e706e67",
+    "resolved_url": "https://www.zrips.net/wp-content/uploads/2021/01/CMILLogo.png",
+    "source_pages": [
+      "https://www.spigotmc.org/resources/cmilib.87610/"
+    ],
+    "rendered_urls": [
+      "//proxy.spigotmc.org/5cfe54f9a3372c925485d3afce410c93bfef0ab4/687474703a2f2f7777772e7a726970732e6e65742f77702d636f6e74656e742f75706c6f6164732f323032312f30312f434d494c4c6f676f2e706e67"
+    ],
+    "file": "wiki/assets/1dff60337ec6-CMILLogo.png",
+    "sha256": "1dff60337ec6255c25518da45a168de719d9e2a13472f5567c1769a70b2d4c53",
+    "size_bytes": 27385,
+    "media_type": "image/png",
+    "status": "archived",
+    "native_bytes_preserved": true,
+    "width": 450,
+    "height": 252
+  }
+]

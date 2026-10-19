@@ -1,0 +1,21 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Denizen/0.7/Color Codes",
+    "pageid": 208,
+    "revid": 5403,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://meta.denizenscript.com/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br /><br /><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p>Denizen provides several different options to colorize text. The follow characters, combined with a color code will change the color or format of text\n</p>\n<pre>§# - the standard minecraft color marker.\n\\u00167# - an alternate way to make a §\n%%# - A denizen replacement for §, more compatible with various text encoding schemes, and easier to type&#160;;)\nNote: If using SpoutPlugin/Spoutcraft, you can also use &amp;#\n</pre>\n<p>The format codes available are\n</p>\n<pre>0 \tBlack\n1 \tDark Blue\n2 \tDark Green\n3 \tDark Aqua\n4 \tDark Red\n5 \tDark Purple\n6 \tGold\n7 \tGray\n8 \tDark Gray\n9 \tBlue\nA \tGreen\nB \tAqua\nC \tRed\nD \tLight Purple\nE \tYellow\nF \tWhite\nK \tMagic\nL \tBold\nM \tStrike through\nN \tUnderline\nO \tItalic\nR \tReset \n</pre>\n<p>Examples:\n</p>\n<pre>- CHAT \"§aThis text is red.\"\n- CHAT \"%%aThis text is green.\"\n- NARRATE \"%%nThis is underlined but&#160;%%rThis is not.\"\n</pre>\n<!-- \nNewPP limit report\nCached time: 20261019145832\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.017 seconds\nReal time usage: 0.029 seconds\nPreprocessor visited node count: 10/1000000\nRevision size: 1527/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 645/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 8d076a65-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": []
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "source_url": "https://proxy.spigotmc.org/9c91d77a0b024afc1d12d1caa95038bcb209d4b8/68747470733a2f2f7777772e70617970616c6f626a656374732e636f6d2f656e5f55532f692f62746e2f62746e5f646f6e61746543435f4c472e676966",
+    "resolved_url": "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif",
+    "source_pages": [
+      "https://www.spigotmc.org/resources/protocollib.1997/"
+    ],
+    "rendered_urls": [
+      "//proxy.spigotmc.org/9c91d77a0b024afc1d12d1caa95038bcb209d4b8/68747470733a2f2f7777772e70617970616c6f626a656374732e636f6d2f656e5f55532f692f62746e2f62746e5f646f6e61746543435f4c472e676966"
+    ],
+    "file": "wiki/assets/ee1c4cfd1b18-btn_donateCC_LG.gif",
+    "sha256": "ee1c4cfd1b1818743cf6930452dee0e56aa4709359e06ded6052d1e7abb14474",
+    "size_bytes": 3098,
+    "media_type": "image/gif",
+    "status": "archived",
+    "native_bytes_preserved": true,
+    "width": 147,
+    "height": 47
+  },
+  {
+    "source_url": "https://www.spigotmc.org/styles/default/xenforo/clear.png",
+    "resolved_url": "https://www.spigotmc.org/styles/default/xenforo/clear.png",
+    "source_pages": [
+      "https://www.spigotmc.org/resources/protocollib.1997/"
+    ],
+    "rendered_urls": [
+      "styles/default/xenforo/clear.png"
+    ],
+    "file": "wiki/assets/2d83803637e9-clear.png",
+    "sha256": "2d83803637e91ea8a6e593362c6f6f5b02f0fb1cba2a3f3b47923f8fffaf0ad7",
+    "size_bytes": 71,
+    "media_type": "image/png",
+    "status": "archived",
+    "native_bytes_preserved": true,
+    "width": 1,
+    "height": 1
+  }
+]

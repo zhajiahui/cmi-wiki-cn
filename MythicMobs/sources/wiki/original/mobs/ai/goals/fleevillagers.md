@@ -1,0 +1,27 @@
+# Fleevillagers
+
+## Description {#description}
+
+Causes the mob to flee from villagers.
+
+## Attributes {#attributes}
+
+| Attribute | Aliases | Description | Default |
+| --- | --- | --- | --- |
+| distance | d | The distance for villagers to be from the mob itself | 16 |
+| speed | s | The speed at which to flee | 1.2 |
+| safespeed | ss | The speed at which to flee once a safe distance (50 blocks) away | 1 |
+
+## Examples {#examples}
+
+```yaml
+ExampleMob:
+  Type: ZOMBIE
+  AIGoalSelectors:
+    - clear
+    - fleevillagers{d=10;s=2;ss=1}
+```
+
+## Aliases {#aliases}
+
+- runfromvillagers

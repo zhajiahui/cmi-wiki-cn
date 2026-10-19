@@ -1,0 +1,81 @@
+{{NoSupport}}
+'''Blacksmiths''' repair your tools and armor. Right-clicking a blacksmith will repair your item-in-hand if it is repairable. An item is "repairable" if it contains a durability (i.e. pickaxe, shears, armor, etc.).
+
+See below for more information.
+
+== Configuration Nodes ==
+These nodes can be found in ''citizens.yml''. They are for configuration of the use of blacksmiths.
+
+{| class="wikitable collapsible collapsed" style="text-align: center; width: 100%"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="3" | '''Configuration Settings'''
+|-
+! style="width: 250px;" | Setting
+! style="width: 200px;" | Default Value
+! Description
+|-
+| economy.prices.blacksmith.armorrepair.(material)
+| varies
+| Base values for armor material repair, used in equation to determine the cost of an armor repair
+|-
+| economy.prices.blacksmith.toolrepair.(material)
+| varies
+| Base values for tool material repair, used in equation to determine the cost of a tool repair
+|}
+
+== Commands ==
+Commands specifically dealing with Blacksmiths
+
+{| class="wikitable collapsible collapsed" style="text-align: center; width: 100%"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="5" | '''Blacksmith Commands'''
+|-
+! style="width: 250px;" | Command
+! style="width: 150px;" | Require Selected
+! style="width: 150px;" | Require Ownership
+! style="width: 170px;" | Permission
+! Description
+|-
+| /blacksmith help
+| false
+| false
+| citizens.blacksmith.use.help
+| View the help page for blacksmiths
+|-
+| /blacksmith status
+| true
+| true
+| citizens.blacksmith.use.status
+| View the cost and durability remaining of your item-in-hand
+|}
+
+== Other Permissions ==
+Permissions specific to the use/creation of blacksmiths.
+
+{| class="wikitable collapsible collapsed" style="text-align: center; width: 100%"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="3" | '''Blacksmith Permissions'''
+|-
+! style="width: 250px;" | Permission
+! style="width: 500px;" | Description
+|-
+| citizens.blacksmith.use.repair
+| Ability to right-click a blacksmith to repair an items
+|}
+
+== Calculating the Cost of an Item Repair ==
+Blacksmiths charge for an item repair based on this equation:
+
+<pre>(maxItemDurability - currentItemDurability) * basePrice</pre>
+
+'''maxItemDurability:''' The maximum uses that an item has
+
+'''currentItemDurability:''' An item's total uses
+
+'''basePrice:''' price specified in citizens.yml
+
+== Future ==
+* Cooldowns between each repair
+
+{{NavBox}}
+[[Category:Citizens1]]

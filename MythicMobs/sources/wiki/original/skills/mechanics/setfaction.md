@@ -1,0 +1,20 @@
+# Set Faction
+
+## Description {#description}
+
+Sets or changes the target mob's faction.
+
+## Attributes {#attributes}
+
+| Attribute | Aliases | Description | Default |
+| --- | --- | --- | --- |
+| faction | f | The name of the faction to apply to the mob |  |
+
+## Examples {#examples}
+
+Sets the faction of the mob to "Hostile" when the mob spawns.
+
+```yaml
+  Skills:
+  - setFaction{faction=Hostile} @self ~onSpawn
+```

@@ -1,0 +1,72 @@
+{
+  "snapshot": "2026-10-19",
+  "version": "随包 1.1.0；官方来源对应关系未确认",
+  "scope": "完整官方 Wiki 非 API 范围；仅排除纯 API 接口参考；混合页面的教程与使用示例完整保留",
+  "candidate_urls": [],
+  "candidates": [
+    {
+      "url": null,
+      "title": "CrackShotX 1.1.0 对应官方 Wiki",
+      "status": "unavailable",
+      "reason": "随包描述缺少作者/官网，公开检索未取得对应官方导航、sitemap 或仓库；未确认旧文档版本归属，内部页面总数未知。",
+      "version": "1.1.0",
+      "enumeration_complete": false,
+      "evidence": [
+        "sources/overview-sources.md",
+        "sources/wiki/discovery/version-evidence.json",
+        "sources/wiki/discovery/search-log.json"
+      ]
+    }
+  ],
+  "translated": [],
+  "excluded_api": [],
+  "unavailable": [
+    {
+      "url": null,
+      "title": "CrackShotX 1.1.0 对应官方 Wiki",
+      "status": "unavailable",
+      "reason": "随包描述缺少作者/官网，公开检索未取得对应官方导航、sitemap 或仓库；未确认旧文档版本归属，内部页面总数未知。",
+      "version": "1.1.0",
+      "enumeration_complete": false,
+      "evidence": [
+        "sources/overview-sources.md",
+        "sources/wiki/discovery/version-evidence.json",
+        "sources/wiki/discovery/search-log.json"
+      ]
+    }
+  ],
+  "candidate_count": 1,
+  "page_count": 0,
+  "translated_page_count": 0,
+  "excluded_api_count": 0,
+  "unavailable_count": 1,
+  "assets": [],
+  "enumeration_complete": false,
+  "available_non_api_complete": false,
+  "full_wiki_available": false,
+  "discovery_sources": [
+    "https://github.com/search?q=CrackShotX+in%3Aname&type=repositories",
+    "https://github.com/search?q=%22CrackShotX%22+in%3Areadme&type=repositories",
+    "https://github.com/search?q=%22CrackShotX%22+%221.1.0%22&type=code",
+    "https://github.com/search?q=%22crackshotx.panel.history%22&type=code",
+    "https://github.com/search?q=%22CrackShotX%22&type=code",
+    "https://www.spigotmc.org/search/1/?q=CrackShotX&o=relevance",
+    "https://www.bing.com/search?q=%22CrackShotX%22"
+  ],
+  "legacy_wiki_included": false,
+  "unknown_page_count": true,
+  "validation": {
+    "checked_at": "2026-10-19",
+    "report": "sources/wiki/validation/report.json",
+    "checks": [
+      "frontmatter",
+      "source_sha256_utf8_lf",
+      "candidate_status_partition",
+      "manifest_navigation_consistency",
+      "protected_code_and_inline_tokens",
+      "local_links_and_anchors",
+      "native_asset_hashes"
+    ],
+    "game_runtime_tested": false
+  }
+}

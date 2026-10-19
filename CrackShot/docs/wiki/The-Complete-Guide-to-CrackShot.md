@@ -1,0 +1,1940 @@
+---
+title: "CrackShot 完整指南"
+source_url: "https://github.com/Shampaggon/CrackShot/wiki/The-Complete-Guide-to-CrackShot"
+source_kind: "official-wiki"
+translation_review: "reviewed"
+source_version: "Shampaggon/CrackShot Wiki @ d132397f9b52a5274dba87443ad0ebcde369a0a0；2026-10-19 快照；与 0.98.13-x6 的对应关系未确认"
+---
+
+<a id="table-of-contents"></a>
+
+## **░ 目录** <a id="table_contents"></a>
+
+<a id="other-pages"></a>
+
+### 其他页面
+* [安装 CrackShot](Installation.md)
+* [命令与权限](Commands-and-Permissions.md)
+* [完整模块列表](List-of-Modules.md)
+* [默认武器](Default-Weapons.md)
+* [声音类型](List-of-Accepted-Sounds.md)
+* [生物类型](List-of-Accepted-Mobs.md)
+* [接入 CrackShot](https://github.com/Shampaggon/CrackShot/wiki/Hooking-into-CrackShot)
+* [常见问题](Frequently-Asked-Questions.md)
+
+<a id="getting-started"></a>
+
+### 入门
+* [入门](#getting)
+* [模块与节点](#modules)
+* [武器文件夹](#modules)
+* [物品 ID](#itemID)
+* [数值使用整数](#intsplz)
+* [延迟说明](#delay)
+* [伤害说明](#damage)
+* [自定义声音](#sounds)
+* [特殊变量](#variables)
+* [颜色代码](#colors)
+* [多个值](#stacks)
+
+### 模块
+* [武器标识名](#title)
+* [物品信息](#item_info)
+* [射击](#shooting)
+* [潜行](#sneak)
+* [全自动射击](#spray_and_pray)
+* [点射](#burst)
+* [弹药](#ammo)
+* [装填](#reload)
+* [枪械动作](#firearm)
+* [瞄准镜与机械瞄具](#scope)
+* [防暴盾](#shield)
+* [木牌商店](#stores)
+* [合成配方](#crafting)
+* [区域检查](#regions)
+* [自定义死亡消息](#death_messages)
+* [爆头](#headshot)
+* [背刺](#backstabs)
+* [暴击](#Cr1TiKaL)
+* [召唤实体](#entity)
+* [根据飞行时间调整伤害](#flight_time)
+* [空袭](#airstrikes)
+* [爆炸装置](#devices)
+* [集束炸弹](#cluster)
+* [弹片](#shrapnel)
+* [爆炸](#kaboom)
+* [闪电](#lightning)
+* [药水效果](#potions)
+* [粒子效果](#particles)
+* [烟花](#fireworks)
+* [特殊能力](#abilities)
+* [命中事件](#hit_events)
+* [其他选项](#extras)
+
+<a id="getting-started-1"></a>
+
+## **░ 入门** <a id="getting"></a>
+本页适合按需查阅！从头到尾阅读所有模块，就像读字典一样。建议先试用[_默认提供的武器_](Default-Weapons.md)，查看[_完整模块列表_](List-of-Modules.md)，再通过[_目录_](#table_contents)跳转到想使用的模块。
+
+<a id="modules-and-nodes"></a>
+
+#### **模块与节点** <a id="modules"></a>
+为了让配置保持整洁，可以删除用不到的模块或节点。  
+删除后的模块和节点不会参与处理，就是这么简单。
+
+还需要记住：
+
+* 需要_数值_的节点，未填写时默认为 `0`。
+* 需要 _true 或 false_ 的节点，未填写时默认为 `false`。
+
+因此，像 `Right_Click_To_Shoot: false` 或 `Explosion_Delay: 0` 这样的节点可以直接删除。
+
+<a id="weapons-folder"></a>
+
+#### **武器文件夹** <a id="folder"></a>
+_CrackShot_ 会加载 `weapons` 文件夹中能找到的所有配置文件，文件名没有限制。默认的 _defaultWeapons.yml_ 和 _defaultExplosives.yml_ 展示了如何在一个文件中配置多把武器。你也可以把_全部_武器放进同一个文件。有人喜欢每把武器单独一个文件，也有人喜欢放在一起，可以按自己的习惯整理。
+
+注意：如果武器文件夹为空，_CrackShot_ 会自动重新生成三个默认配置文件：_defaultWeapons.yml_、_defaultExplosives.yml_ 和 _defaultAttachments.yml_。
+
+<a id="item-ids"></a>
+
+#### **物品 ID** <a id="itemID"></a>
+不确定某种物品的 ID？作者常查阅[_这个网站_](http://www.minecraftinfo.com/IDList.htm)。这个网站会随新增内容更新，因此基本上_始终_保持最新。
+
+注意：部分节点支持_附加数据值_。例如，`98~2` 表示_裂纹石砖_的物品 ID。
+
+> **Minecraft 1.13 及以上版本**应使用_名称_代替_数字_，因为较新的方块或物品可能没有数字 ID。物品名称可查阅[_这个网站_](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html)。例如，_裂纹石砖_的物品 ID（名称形式）为 `CRACKED_STONE_BRICKS`。
+
+<a id="integers-for-values"></a>
+
+#### **数值使用整数** <a id="intsplz"></a>
+节点需要数值时，通常必须填写_整数_。也就是说，支持 `5` 或 `32`，不支持 `0.024` 或 `1.243`。只有**部分**节点支持小数，例如子弹散布。
+
+补充：在不支持小数的节点中填入小数会怎样？电脑不会爆炸；这个值只会被视为_零_，不会参与处理。
+
+<a id="delays-for-dummies"></a>
+
+#### **延迟说明** <a id="delay"></a>
+配置中的_所有延迟_均以_刻（tick）_为单位，20 刻等于 1 秒。
+
+小测验：120 刻等于多少秒？如果你的答案不是 6 秒，可能就有问题了……
+
+<a id="damage-for-dummies"></a>
+
+#### **伤害说明** <a id="damage"></a>
+节点涉及_伤害_时，请记住 2 点伤害等于_一颗心_。换句话说，满血玩家承受 20 点伤害就会死亡。
+
+<a id="customizable-sounds"></a>
+
+#### **自定义声音** <a id="sounds"></a>
+_所有声音_均使用格式：`SOUND-VOLUME-PITCH-DELAY`。
+* `SOUND` 是声音类型。
+* `VOLUME` 是 0-1 之间的值，决定声音大小。大于 1 的值会扩大声音的**传播范围**。
+* `PITCH` 是 0-2 之间的值，决定音高。
+* `DELAY` 是播放声音前的延迟，单位为刻。
+
+默认情况下，声音的 `PITCH` 和 `VOLUME` 均为 1。  
+可查看[_完整声音列表_](List-of-Accepted-Sounds.md)，选择合适的声音。
+
+<a id="strings--special-variables"></a>
+
+#### **字符串 | 特殊变量** <a id="variables"></a>
+除非另有说明，_所有字符串_都可以使用以下四个特殊变量，交互时会自动替换为相应的值。
+
+    <shooter> - 替换为射击者的名称。
+    <victim> - 替换为受击者的名称。
+    <damage> - 替换为造成的总伤害。
+    <flight> - 替换为弹射物的总飞行时间。
+
+示例：某把武器在 `Hit_Events:` 模块中配置了 `Message_Shooter: "You shot <victim> for <damage> damage! Your name is <shooter>!"`。名为 _MrDerp_ 的玩家用它射中另一位玩家 _Bieber_，造成 20 点伤害。_MrDerp_ 收到的消息为："You shot Bieber for 20 damage! Your name is MrDerp!"。
+
+<a id="strings--color-codes"></a>
+
+#### **字符串 | 颜色代码** <a id="colors"></a>
+配置中的_所有字符串_都支持_颜色代码_ `&<?>`，可以按需使用。
+
+注意：字符串中使用颜色代码时，整个字符串**必须**用引号括起来！例如，`Message_Victim: "&eWhy, hello there."` 可以使用，`Message_Victim: &eWhy, hello there.` 则不行。
+
+    代码    效果
+
+    &0      黑色
+	&1      深蓝色
+	&2      深绿色
+	&3      深青色
+	&4      深红色
+	&5      紫色
+	&6      金色
+	&7      灰色
+	&8      深灰色
+	&9      蓝色
+	&a      绿色
+	&b      青色
+	&c      红色
+	&d      淡紫色
+	&e      黄色
+	&f      白色
+    &k      随机字符
+    &l      粗体
+    &m      删除线
+    &n      下划线
+    &o      斜体
+    &r      重置
+
+<a id="stackable-values"></a>
+
+#### **多个值** <a id="stacks"></a>
+在下方示例中，你可能会看到这样的 `(...)`：
+* `Sounds_Acquired: <sound>,(...)`
+* `Firework_Player_Shoot: <firework>,(...)`
+* `Make_Victim_Run_Commmand: <command>|(...)`
+
+`(...)` 初看可能有些奇怪，它只表示这里可以_叠加填写_，也就是支持_多个值_。
+
+示例：
+* `Sounds_Acquired: <sound1>,<sound2>,<sound3>`
+* `Firework_Player_Shoot: <firework1>,<firework2>`
+* `Make_Victim_Run_Commmand: <command1>|<command2>|<command3>`
+
+以上写法都有效。请特别留意各项要求的_分隔符_；除非另有说明，通常为 `,` 或 `|`。
+
+<a id="weapon-title"></a>
+
+## **░ 武器标识名** <a id="title"></a>
+    My_Little_Friend:
+这是使用 `/shot get <weapon>` 生成物品时填写的名称，也是权限 `crackshot.<action>.<weapon>` 中使用的名称，并会显示在 `/shot list` 调出的列表中。它必须_唯一_，**不得**包含空格，而且始终必须是_每把_武器的第一个节点。
+
+示例：输入 `/shot get my_little_friend` 可生成上面的武器。相应地，使用这把武器的权限节点为 `crackshot.use.my_little_friend`。
+
+<a id="item-information"></a>
+
+## **░ 物品信息** <a id="item_info"></a>
+    Item_Information:
+        Item_Name: <name>
+        Item_Type: <itemID> OR <itemID~data>
+        Item_Lore: <line1>|<line2>|<line3>|<line4> ... |<line9001>
+        Inventory_Control: <group>,(...)
+        Melee_Mode: <true/false>
+        Melee_Attachment: <weapon title>
+        Attachments:
+            Type: <main> OR <accessory>
+            Info: <weapon title>
+            Toggle_Delay: <ticks>
+            Sounds_Toggle: <sound>,(...)
+        Enchantment_To_Check: <ENCHANTMENT-LEVEL>
+        Skip_Name_Check: <true/false>
+        Sounds_Acquired: <sound>,(...)
+        Remove_Unused_Tag: <true/false>
+        Hidden_From_List: <true/false>
+
+#### Item_Name:
+物品的_显示名称_，也就是玩家选中物品时看到的名称。
+
+示例：使用_黄色_的[颜色代码](#colors) `&e`，可以给物品名称上色：`"&eA yellow display name"`。
+
+#### Item_Type:
+物品类型的 [_ID_](#itemID)。例如，要把物品设为_骨头_，可填写 `Item_Type: 352`。
+
+注意：支持附加数据值。使用波浪号（~）分隔主值和附加值即可。例如，要使用_粉红色染料_，可填写 `Item_Type: 351~9`。
+
+> 重要：使用_方块物品_时，填写的附加数据值必须有效，否则 _Bukkit_ 会将其设为零。_方块物品_指 ID 为 1-255 的物品。示例：
+
+> * `Item_Type: 98~2` - 98:2 是_裂纹石砖_，因此有效。
+> * `Item_Type: 98~66` - 98:66 不存在，因此无效，_Bukkit_ 会将物品改为 98:0。
+> * `Item_Type: 104~23` - 104:23 不存在，因此无效，_Bukkit_ 会将物品改为 104:0。
+> * `Item_Type: 294~23` - 这是有效的。294 **不是**方块物品，因此附加数据值可以任意填写！
+
+> 为_方块物品_填写无效的附加数据值，会导致武器在使用时无法正常工作。
+
+#### Item_Lore:
+物品的描述，也就是玩家将鼠标移到物品上时看到的内容。使用竖线 `|` 表示换行。
+
+示例：`Item_Name: "&eThis is line one.|&eThis is line two.|&eThis is line three."`
+
+#### Inventory_Control:
+_Inventory Control_（物品栏控制）用于限制快捷栏中某类武器的数量；超过限制时武器就无法使用，避免玩家携带一整套武器来回切换。
+
+此节点表示武器所属的分组，可以有多个。需配合 _general.yml_ 配置文件中的 *Inventory_Control* 部分使用。
+
+示例：名为 _Peacekeeper_ 的武器配置了 `Inventory_Control: primary_weapons`。在 _general.yml_ 的 *Inventory_Control* 部分配置：
+
+        primary_weapons:
+            Limit: 2
+            Message_Exceeded: "&eYou cannot have more than two primary weapons in the hot bar!"
+            Sounds_Exceeded: LAVA_POP-1-1-0
+
+这表示快捷栏中属于 *primary_weapons* 分组的武器不超过两把时，_Peacekeeper_ 才能使用。声音和消息均为可选项。
+
+#### Melee_Mode:
+设为 true 后，**使用这把武器近战击中实体，等同于使用这把武器发射的弹射物击中实体**。请牢记这句话，并据此自行判断哪些节点不再适用。
+
+启用近战模式后：
+* 武器不再发射任何弹射物。
+* 武器可以作为其他武器的近战附件。
+* 武器仍支持 Ammo 和 Reload 模块，但不支持 Firearm_Action 模块。每次_命中_都会消耗弹药。
+* *Delay_Between_Shots* 节点表示武器两次命中目标之间的间隔。
+* 爆头会被忽略，因为近战攻击无法检测爆头。
+* *Damage_Based_On_Flight_Time* 模块会被忽略，因为此时_没有_弹射物。
+
+若要制作更复杂的近战武器，例如限制每次_挥动_的间隔或制作电锯，可考虑改用 _energy_ 弹射物类型。
+
+补充：使用 *Melee_Mode* 或 *Melee_Attachment* 的武器，也可以作为普通附件（`Type: accessory`）使用。
+
+#### Melee_Attachment:
+表示近战武器的[标识名](#title)。使用此节点，可以让当前武器继承_另一把_武器的近战属性。指定的武器必须是有效的近战武器，也就是配置了 `Melee_Mode: true`。
+
+还不太清楚？可参考默认武器 [Python](Default-Weapons.md#python-revolver-w-tactical-knife) 和 [Tactical Knife（近战附件）](Default-Weapons.md#tactical-knife-melee-attachment)。
+
+#### Attachments:
+主武器（配置了 `Type: main` 的武器）会使用 `Info:` 节点指定的附件。右键可切换到附件；如果配置了 `Right_Click_To_Shoot: true`，则使用左键切换。因此，这类武器无法正常使用_瞄准_或_双持_。
+
+附件（配置了 `Type: accessory` 的武器）在 *Item_Information* 模块中只需要 _Attachments_ 部分的节点。附件无法通过 list 和 get 命令取得，也不支持 *Explosive_Devices* 和 *Firearm_Action* 模块。但它们_可以_搭配使用 *Firearm_Action* 模块的主武器。
+
+还不太清楚？可参考默认武器 [Carbine（主武器）](Default-Weapons.md#carbine-assault-rifle-w-grenade-launcher) 和 [M320（附件）](Default-Weapons.md#m320-attachment---grenade-launcher)。
+
+* **Type:**
+    * 武器要使用附件时，将此项设为 `main`，并在 _Info_ 节点填写附件的[武器标识名](#title)。如果武器_本身就是_附件，则设为 `accessory`。
+* **Info:**
+    * 仅在武器配置了 `Type: main` 时使用此项，表示主武器所用附件的[标识名](#title)。
+* **Toggle_Delay:**
+    * 玩家切换武器后，必须等待的[延迟](#delay)，单位为刻。等待结束后才可以射击或再次切换。
+* **Sounds_Toggle:**
+    * 切换武器时播放的[声音](#sounds)。
+
+#### Enchantment_To_Check:
+拥有指定附魔、且 [物品 ID](#itemID) 也相符的所有物品，都会转换成这把武器。
+
+示例：名为 _Chuck Norris_ 的武器配置了 `Enchantment_To_Check: DAMAGE_ALL-2` 和 `Item_Type: 352`。任何物品 ID 为 352、_同时_拥有 2 级锋利（DAMAGE_ALL）附魔的物品，都会在交互时自动转换成 _Chuck Norris_。
+
+    附魔列表：
+    
+    ARROW_DAMAGE
+    ARROW_FIRE
+    ARROW_INFINITE
+    ARROW_KNOCKBACK
+    DAMAGE_ALL
+    DAMAGE_ARTHROPODS
+    DAMAGE_UNDEAD
+    DIG_SPEED
+    DURABILITY
+    FIRE_ASPECT
+    KNOCKBACK
+    LOOT_BONUS_BLOCKS
+    LOOT_BONUS_MOBS
+    OXYGEN
+    PROTECTION_ENVIRONMENTAL
+    PROTECTION_EXPLOSIONS
+    PROTECTION_FALL
+    PROTECTION_FIRE
+    PROTECTION_PROJECTILE
+    SILK_TOUCH
+    THORNS
+    WATER_WORKER
+
+#### Skip_Name_Check:
+设为 `true` 后，所有与 `Item_Type` 中 [物品 ID](#itemID) 相符的物品，都会转换成这把武器。
+
+示例：名为 _Fishy_ 的武器配置了 `Item_Type: 349~7` 和 `Skip_Name_Check: true`。任何 [ID](#itemID) 为 349:7 的物品都会自动转换成 _Fishy_。
+
+注意：尽量使用_未被使用的_附加数据值，避免普通物品被转换。例如，通常不宜配置 `Item_Type: 264` 和 `Skip_Name_Check: true`，因为所有_钻石_（ID: 264）都会转换成这把武器。
+
+> 重要：使用此节点时，不建议在 Item_Type 中填写_方块物品_或_耐久物品_。_方块物品_指 ID 为 1-255 的物品；_耐久物品_指具有耐久度的物品，例如工具和盔甲。
+
+#### Sounds_Acquired:
+玩家通过 `/shot get` _生成_这件物品，或通过木牌商店购买它时播放的[声音](#sounds)。
+
+#### Remove_Unused_Tag:
+设为 true 后，会从武器物品名称中移除未使用的标签 `«×»`。
+
+注意：使用 [Firearm_Action](#firearm) 模块的武器无法移除该标签。
+
+#### Hidden_From_List:
+设为 true 后，武器会从 `/shot list` 显示的列表中隐藏。
+
+## **░ 射击** <a id="shooting"></a>
+    Shooting:
+        Disable: <true/false>
+        Dual_Wield: <true/false>
+        Right_Click_To_Shoot: <true/false>
+        Cancel_Left_Click_Block_Damage: <true/false>
+        Cancel_Right_Click_Interactions: <true/false>
+        Delay_Between_Shots: <ticks>
+        Recoil_Amount: <amount>
+        Projectile_Amount: <amount>
+        Projectile_Type: <snowball/arrow/egg/grenade/flare/fireball/witherskull/energy/splash>
+        Projectile_Subtype: <itemID> OR <itemID~data> OR <energy info> OR <true/false>
+        Remove_Arrows_On_Impact: <true/false>
+        Remove_Bullet_Drop: <true/false>
+        Removal_Or_Drag_Delay: <delay-removal>
+        Projectile_Speed: <amount>
+        Projectile_Damage: <amount>
+        Projectile_Flames: <true/false>
+        Projectile_Incendiary:
+            Enable: <true/false>
+            Duration: <ticks>
+        Bullet_Spread: <amount>
+        Reset_Fall_Distance: <true/false>
+        Sounds_Projectile: <sound>,(...)
+        Sounds_Shoot: <sound>,(...)
+
+#### Disable:
+设为 true 后，会完全禁用射击。通常只有将武器改为[防暴盾](#shield)或某种[爆炸装置](#devices)时，才需要禁用射击。
+
+#### Dual_Wield:
+设为 true 后，武器会进入_双持_状态，即左右手各持一把。左键发射左手武器，右键发射右手武器，两把武器可以同时射击。
+
+注意：设为 true 后，`Right_Click_To_Shoot:` 节点会被忽略，`Scope` 和 `Firearm_Action:` 模块也会被忽略。
+
+#### Right_Click_To_Shoot:
+默认使用左键射击、右键使用机械瞄具（放大视野）。启用此项会交换这两个按键。
+
+注意：通常只有全自动武器才使用右键射击，因为按住右键会反复射击，按住左键则不会。
+
+#### Cancel_Left_Click_Block_Damage:
+玩家射击时频繁点击，可能误破坏方块。设为 `true` 后，会取消使用这把武器造成的所有方块破坏进度。
+
+#### Cancel_Right_Click_Interactions:
+使用右键射击或瞄准时，玩家可能误触按钮、门等。如果武器是方块或矿车，还可能误将它_放置_出来。设为 `true` 后，会取消这把武器的所有右键交互。
+
+#### Delay_Between_Shots:
+玩家再次射击前必须等待的[延迟](#delay)，单位为刻。
+
+#### Recoil_Amount:
+每次射击将射击者向后推动的力度。负值会将玩家向_前_拉动，可以自行发挥用途。
+
+注意：配置 `Recoil_Amount: 40` 并竖直向下射击，足以让玩家腾空相当长一段时间。建议使用 1-10 之间的值，也可以自行尝试。
+
+#### Projectile_Amount:
+每次射击发射的弹射物数量。霰弹枪通常使用大于一的值。
+
+#### Projectile_Type:
+可以填写以下九种值：`snowball`、`egg`、`arrow`、`grenade`、`flare`、`fireball`、`witherskull`、`energy`、`splash`。
+
+* _雪球_很适合作为普通弹射物。
+* _鸡蛋_与雪球同样适用。CrackShot 武器发射的鸡蛋不会生成小鸡。
+* _箭_与雪球同样适用。使用箭时，可以考虑启用 *Remove_Arrows_On_Impact* 节点。
+* _手榴弹_以掉落物形式投出，在指定时间后爆炸，**不会**在撞击时爆炸。手榴弹_爆炸_时，会使用 `Explosions:` 和 `Lightning:` 模块中的设置。
+* _信号弹_与手榴弹类似，但不会爆炸，而是在一段时间后[_呼叫空袭_](#airstrikes)。
+* _火球_沿近似直线飞行，撞击时爆炸。爆炸效果由 `Explosions:` 模块中的设置决定。将 *Projectile_Subtype* 设为 true，可以防止弹射物被反弹。
+* _凋灵之首_与火球完全相同，区别在于被其他弹射物击中时不会爆炸。由于 _Bukkit_ 的一个错误，凋灵之首直接命中敌人时，可能在反作弊插件中触发一次 "Reach" 违规提示；除提示造成干扰外，没有其他影响。
+* _喷溅药水_是投掷后命中喷溅范围内全部敌人的药水。这种弹射物不支持 `Headshot` 或 `Damage_Based_On_Flight_Time` 模块。在 *Projectile_Subtype* 中填写有效的喷溅药水，可以改变喷溅效果的颜色，且只改变喷溅颜色。
+
+注意，`fireball` 和 `witherskull` 的弹道始终无法完全精确，`Bullet_Spread:` 节点对它们的作用也有限。
+
+**Energy（能量）**  
+_Energy_ 是一种高级弹射物类型，会命中玩家前方指定_长方体范围_内的所有敌人，可以把它理解为一道**巨大的激光束**。  
+
+在 *Projectile_Subtype* 中，需要定义大小（`RADIUS`）、以_方块_为单位的射程（`RANGE`）、停止前可穿透的方块数量（`WALLS`），以及停止前可穿透的目标数量（`VICTIMS`）。
+
+使用 `energy` 弹射物类型时，*Projectile_Subtype* 节点采用以下格式：
+* `Projectile_Subtype: RANGE-RADIUS-WALLS-VICTIMS`
+
+注意：
+* `WALLS` 可填写 `NONE` 来完全禁用穿墙，或填写 `ALL` 来穿透路径上的所有方块；也可以直接填写数量。
+* `VICTIMS` 可填写 `0` 来穿透所有目标；也可以直接填写数量。
+
+此类型可以模拟电锯等近战武器、喷火器等范围武器，以及能够穿透多个敌人或多层墙壁的高穿透武器。
+
+#### Projectile_Subtype:
+只有 `Projectile_Type:` 设为 `grenade`、`flare`、`fireball`、`energy` 或 `splash` 时，才需要填写此项。
+
+* 对于 `grenade` 和 `flare`：此项表示投出的掉落物的[物品 ID](#itemID)。
+* 对于 `splash`：（可选）此项表示投出的喷溅药水的[物品 ID](#itemID)。它只改变喷溅效果的_颜色_，且必须是有效的喷溅药水。
+* 对于 `fireball`：（可选）设为 **true** 后，火球无法被反弹。
+* 对于 `energy`：此项表示武器发射 _energy_ 类型弹射物所需的信息。
+
+注意：支持附加数据值，使用波浪号（~）分隔主值和附加值即可。例如，要使用_红色羊毛_，可填写 `Item_Type: 35~14`。
+
+#### Remove_Arrows_On_Impact:
+`Projectile_Type:` 设为 `arrow` 时，箭会在撞击后_立即_移除。尤其是将机枪设为发射箭时，这样可以避免满地都是箭。
+
+#### Remove_Bullet_Drop:
+设为 true 后，发射的弹射物会沿_直线_飞行，不受重力影响。仅影响 `snowball`、`egg` 和 `arrow`。
+
+注意：由于 Minecraft 的显示错误，启用此项后，低速弹射物可能看起来会在空中_弹跳_，高速弹射物则可能看起来偏离发射方向。
+
+#### Removal_Or_Drag_Delay:
+弹射物被_移除_（`true`）或_减速_（`false`）前的[延迟](#delay)，单位为刻。  
+弹射物被_减速_时，速度会大幅降低。
+
+示例：
+* `Removal_Or_Drag_Delay: 4-true` 会在 4 刻后_移除_弹射物。
+* `Removal_Or_Drag_Delay: 3-false` 会在 3 刻后使弹射物大幅_减速_。
+
+#### Projectile_Speed:
+弹射物的发射速度，建议使用 0-40 之间的值。由于 Minecraft 的显示错误，速度超过 40 后，弹道会开始出现_扭曲_；超过 100 后，看起来可能就像进入了另一个维度。
+
+#### Projectile_Damage:
+每颗子弹造成的[伤害](#damage)。
+
+#### Projectile_Flames:
+设为 true 后，弹射物会显示燃烧效果。仅影响 `snowball`、`egg`、`arrow` 和 `splash`。
+
+#### Projectile_Incendiary:
+燃烧弹射物会点燃受击者。将 `Enable:` 设为 `true`，并提供[持续时间](#delay)，决定受击者燃烧多久。
+
+#### Bullet_Spread:
+请记住，这里表示_散布_，而不是_精度_。数值越接近 0，弹射物越精准。_建议使用 0-10 之间的值。_ 超过 10 时，子弹可能看起来就像从枪管后面飞出、打在自己脸上。
+
+注意：此节点支持**小数**，例如 _2.354_、_0.22556_ 或 _3.5_。
+
+#### Reset_Fall_Distance:
+有些枪械的后坐力很大，甚至可以用来缓冲下落。此节点正是用于这种情况。设为 `true` 后，每次发射这把武器，都会清除射击者累计的摔落伤害。
+
+也就是说，你可以跳下悬崖，在_即将_落地前朝脚下开枪，从而活下来。
+
+#### Sounds_Projectile:
+弹射物播放的[声音](#sounds)，例如用来制作会发出哔声的手榴弹。
+
+#### Sounds_Shoot:
+每次发射武器时播放的[声音](#sounds)。
+
+## **░ 潜行** <a id="sneak"></a>
+    Sneak:
+        Enable: <true/false>
+        No_Recoil: <true/false>
+        Bullet_Spread: <amount>
+        Sneak_Before_Shooting: <true/false>
+
+#### Enable:
+是否启用与潜行相关的设置。
+
+#### No_Recoil:
+设为 `true` 后，玩家潜行时不会受到后坐力影响，也就是不会被后坐力向后（或向前）推动。
+
+<a id="bullet_spread-1"></a>
+
+#### Bullet_Spread:
+潜行时发射的弹射物散布。
+
+注意：此节点支持**小数**，例如 _2.354_、_0.22556_ 或 _3.5_。
+
+补充：在 _Left 4 Dead 2_ 等游戏中，多数武器无法使用瞄具。玩家需要蹲下射击才能提高精度，此节点正是为这种用法提供的。
+
+#### Sneak_Before_Shooting:
+设为 `true` 后，玩家必须通过潜行_蹲下_才能射击。在空中潜行不算。
+
+<a id="fully-automatic"></a>
+
+## **░ 全自动射击** <a id="spray_and_pray"></a>
+    Fully_Automatic:
+        Enable: <true/false>
+        Fire_Rate: <fire-rate>
+
+<a id="enable-1"></a>
+
+#### Enable:
+启用后，将武器限制为特定射速。强烈建议搭配启用 [Right_Click_To_Shoot](#right_click_to_shoot)。这是因为在 _Minecraft_ 中，按住右键可以连续射击，按住左键则不行。
+
+使用此模块必须满足：
+* 禁用 [Burstfire](#burst) 模块。
+* 删除 [Delay_Between_Shots](#delay_between_shots) 节点，或将其设为 `1` 或 `0`。
+* [Fire_Rate](#fire_rate) 的值必须为 1-16。
+
+示例：参见[默认 AK-47](Default-Weapons.md#ak-47-assault-rifle)。
+
+#### Fire_Rate:
+使用 `1-16` 之间的值决定武器射速，对应每分钟发射的弹数。
+
+        射速值       每分钟发射弹数（RPM）
+        
+        1            300
+        2            360
+        3            420
+        4            480
+        5            540
+        6            600
+        7            660
+        8            720
+        9            780
+        10           840
+        11           900
+        12           960
+        13           1020
+        14           1080
+        15           1140
+        16           1200
+
+注意：配置 `Fire_Rate: 16` 时，武器每[刻](#delay)射击一次，即每秒 20 发，这是 Minecraft 中_能达到的最高_射速。
+
+<a id="burst-fire"></a>
+
+## **░ 点射** <a id="burst"></a>
+    Burstfire:
+        Enable: <true/false>
+        Shots_Per_Burst: <amount>
+        Delay_Between_Shots_In_Burst: <ticks>
+
+<a id="enable-2"></a>
+
+#### Enable:
+启用后，_一次_扣动扳机可以连续发射多次。
+
+注意：此模块与 [Fully_Automatic](#spray_and_pray) 模块无法同时使用。
+
+#### Shots_Per_Burst:
+每轮点射发射的次数。
+
+#### Delay_Between_Shots_In_Burst:
+每轮点射中各次射击之间的[延迟](#delay)。
+
+<a id="ammunition"></a>
+
+## **░ 弹药** <a id="ammo"></a>
+    Ammo:
+        Enable: <true/false>
+        Ammo_Item_ID: <itemID> OR <itemID~data>
+        Ammo_Name_Check: <name>
+        Take_Ammo_Per_Shot: <true/false>
+        Sounds_Out_Of_Ammo: <sound>,(...)
+        Sounds_Shoot_With_No_Ammo: <sound>,(...)
+
+<a id="enable-3"></a>
+
+#### Enable:
+是否启用弹药检查。
+
+#### Ammo_Item_ID:
+用作弹药的物品类型 [ID](#itemID)。
+
+注意：支持附加数据值。例如，要使用_粉红色染料_，可填写 `Ammo_Item_ID: 351~9`。
+
+#### Ammo_Name_Check:
+（可选）用作弹药的物品名称。
+
+示例：某把武器配置了 `Ammo_Item_ID: 264`、`Ammo_Name_Check: "&eGun Ammo"` 和 `Take_Ammo_Per_Shot: true`。每次射击都会从射击者背包中取走 1 颗名为 _&eGun Ammo_ 的_钻石_，其中 "&e" 为黄色的[颜色代码](#colors)。
+
+注意：名称中包含指定文字的物品也会被接受。沿用上例，每次射击也可能取走 1 颗名为 _Chocolate **&eGun Ammo** With Cream_ 的_钻石_。
+
+#### Take_Ammo_Per_Shot:
+是否在每次射击后从射击者背包中扣除弹药。
+
+示例：某把武器配置了 `Ammo_Item_ID: 264` 和 `Take_Ammo_Per_Shot: true`。`264` 是_钻石_的 [ID](#itemID)，每次射击会从射击者背包中取走 1 颗_钻石_。如果射击者没有钻石，武器就无法发射。
+
+#### Sounds_Out_Of_Ammo:
+最后一份弹药被发射时立即播放的[声音](#sounds)。也就是说，玩家_背包_中指定的弹药耗尽时，就会播放这些声音。
+
+#### Sounds_Shoot_With_No_Ammo:
+玩家没有弹药却尝试射击时播放的[声音](#sounds)。
+
+示例：玩家背包里没有弹药，仍尝试射击时，会听到此声音。
+
+<a id="reloading"></a>
+
+## **░ 装填** <a id="reload"></a>
+    Reload:
+        Enable: <true/false>
+        Reload_With_Mouse: <true/false>
+        Starting_Amount: <amount>
+        Reload_Amount: <amount>
+        Reload_Bullets_Individually: <true/false>
+        Take_Ammo_On_Reload: <true/false>
+        Take_Ammo_As_Magazine: <true/false>
+        Reload_Duration: <ticks>
+        Reload_Shoot_Delay: <ticks>
+        Destroy_When_Empty: <true/false>
+        Sounds_Out_Of_Ammo: <sound>,(...)
+        Sounds_Reloading: <sound>,(...)
+        Dual_Wield:
+            Single_Reload_Duration:
+            Sounds_Single_Reload:
+            Sounds_Shoot_With_No_Ammo:
+
+<a id="enable-4"></a>
+
+#### Enable:
+是否为这把武器启用装填。启用此节点后：
+
+* 使用 `Q`（或你设置的丢弃物品键）装填，除非配置了 `Reload_With_Mouse: true`。
+* 可以从背包中拖出武器，正常丢弃。
+* 可以使用 `/shot reload` 命令装填武器。
+
+#### Reload_With_Mouse:
+设为 true 后，使用左键或右键装填，具体取决于哪个鼠标键用于射击。`Q`（或你设置的丢弃物品键）不再用于装填，可以正常丢弃武器。
+
+#### Starting_Amount:
+武器首次生成时带有的弹药数量。例如，*Reload_Amount* 设为 30，*Starting_Amount* 设为 15，武器生成时就有 15/30 的弹药。
+
+此节点为可选项。未填写时，武器生成时会装满弹药。
+
+#### Reload_Amount:
+此值决定武器的_弹匣容量_，也就是武器在需要装填前能装入并发射多少颗子弹，以及装填后恢复多少颗子弹。
+
+示例：_Call of Duty 4_ 中的 AK-47 弹匣容量为 30 发。要复现这把武器，应将 `Reload_Amount:` 设为 `30`。
+
+#### Reload_Bullets_Individually:
+设为 `true` 后，会逐颗装填子弹。通常用于霰弹枪、栓动步枪、左轮手枪等。
+
+#### Take_Ammo_On_Reload:
+类似于 `Ammo` 模块中的 `Take_Ammo_Per_Shot` 节点。设为 `true` 后，会在装填时从射击者背包中扣除弹药。
+
+注意：此节点依赖 `Ammo` 模块中提供的信息。
+
+#### Take_Ammo_As_Magazine:
+类似于 `Ammo` 模块中的 `Take_Ammo_Per_Shot` 节点。设为 `true` 后，每次装填会从玩家背包中取走一个物品（“弹匣”）。如果武器处于_双持_状态，完整装填会消耗两个弹匣，因为一共有两把枪。
+
+注意：此节点依赖 `Ammo` 模块中提供的信息。
+
+#### Reload_Duration:
+完整装填武器所需的时间，单位为[刻](#delay)。
+
+#### Reload_Shoot_Delay:
+装填成功完成_后_，玩家再次射击前需等待的时间，单位为[刻](#delay)。
+
+#### Destroy_When_Empty:
+设为 true 后，武器无法装填，并会在弹药显示数值降至 0 时自行销毁。
+
+<a id="sounds_out_of_ammo-1"></a>
+
+#### Sounds_Out_Of_Ammo:
+武器的弹药显示数值降至 0 时立即播放的[声音](#sounds)。
+
+注意：请勿与 `Ammo:` 模块中的 `Sounds_Out_Of_Ammo:` 混淆，后者是在玩家_背包_中的实体弹药耗尽时播放声音。
+
+#### Sounds_Reloading:
+武器装填时播放的[声音](#sounds)。
+
+<a id="dual_wield-1"></a>
+
+#### Dual_Wield:
+_双持_武器的装填存在特殊情况。例如，两把武器都空了，当然需要同时装填；如果只有一把空了，就只需要装填这一把，所需时间会明显少于同时装填两把。
+
+* **Single_Reload_Duration:**
+    * 装填其中一把武器所需的时间，单位为[刻](#delay)。
+* **Sounds_Single_Reload:**
+    * 只装填一把武器时播放的[声音](#sounds)。
+* **Sounds_Shoot_With_No_Ammo:**
+    * 玩家尝试发射其中一把没有弹药的武器时播放的[声音](#sounds)。
+
+<a id="firearm-actions"></a>
+
+## **░ 枪械动作** <a id="firearm"></a>
+    Firearm_Action:
+        Type: <slide/bolt/lever/pump/break/revolver>
+        Open_Duration: <ticks>
+        Close_Duration: <ticks>
+        Close_Shoot_Delay: <ticks>
+        Reload_Open_Delay: <ticks>
+        Reload_Close_Delay: <ticks>
+        Sound_Open: <sound>,(...)
+        Sound_Close: <sound>,(...)
+
+#### Type:
+填写以下六种可用值之一。枪械动作不是必填项。
+
+* `slide`
+    * 引入_滑套机构_或_拉机柄_。武器具有两个状态：解锁 `■` 和锁定 `□`。弹药耗尽时，枪机会锁定在后方 `■ ➙ □`。要再次射击，除了装填，还必须让枪机回到原位 `□ ➙ ■`。
+
+* `bolt` 或 `lever`
+    * 栓动或杠杆式动作。武器具有三个状态：膛内有子弹 `■`、膛内有弹壳 `□`、膛内为空 `_`。每次发射子弹后，枪栓或杠杆会打开再关闭，将新的一发子弹送入弹膛。此外，只有枪栓或杠杆处于_打开_状态 `_` 时才能装填。
+
+* `pump`
+    * 泵动。与 `bolt` 和 `lever` 完全相同，但装填时无需先打开武器 `_`。适合霰弹枪，因为装填时基本上是将霰弹直接塞进枪内。
+
+* `break` 或 `revolver`
+    * 装填时必须先打开武器 `□`，装填完成后再关闭 `■`。适合折管式霰弹枪、榴弹发射器（“noob-tubes”）和左轮手枪。
+
+注意：选择 _pump_、_bolt_ 或 _lever_ 时，会用 `Open_Duration`、`Close_Duration` 和 `Close_Shoot_Delay` 中的[延迟](#delay)决定射速，_代替_ `Delay_Between_Shots:` 中的值。
+
+#### Open_Duration:
+枪栓、杠杆、泵动机构等打开所需的[时间](#delay)。
+
+注意：采用 _HK slap_（拍击拉机柄）装填方式时，`slide` 武器也_可以_使用此节点。
+
+#### Close_Duration:
+枪栓、杠杆、泵动机构、滑套等关闭所需的[时间](#delay)。
+
+#### Close_Shoot_Delay:
+枪栓、杠杆、泵动机构或滑套关闭_后_，武器再次射击前的[延迟](#delay)。
+
+#### Reload_Open_Delay:
+（可选）武器准备好 `■ ➙ □` _之后_，开始[装填](#reload)前的[延迟](#delay)。
+
+#### Reload_Close_Delay:
+（可选）成功[装填](#reload)_之后_，开始关闭武器 `□ ➙ ■` 前的[延迟](#delay)。
+
+#### Sound_Open:
+相应机构打开时播放的[声音](#sounds)。
+
+#### Sound_Close:
+相应机构关闭时播放的[声音](#sounds)。
+
+## **░ 瞄准镜** <a id="scope"></a>
+    Scope:
+        Enable: <true/false>
+        Night_Vision: <true/false>
+        Zoom_Amount: <amount>
+        Zoom_Bullet_Spread: <amount>
+        Zoom_Before_Shooting: <true/false>
+        Sounds_Toggle_Zoom: <sound>,(...)
+
+<a id="enable-5"></a>
+
+#### Enable:
+是否为武器启用瞄准镜或机械瞄具。
+
+#### Night_Vision:
+瞄准镜是否具有夜视功能。
+
+#### Zoom_Amount:
+瞄准镜的放大程度，建议使用 1-5 之间的值。
+
+#### Zoom_Bullet_Spread:
+瞄准时发射弹射物的散布。
+
+注意：此节点支持**小数**，例如 _2.354_、_0.22556_ 或 _3.5_。
+
+#### Zoom_Before_Shooting:
+设为 `true` 后，玩家_只有_进入瞄准状态才能射击。
+
+#### Sounds_Toggle_Zoom:
+玩家进入瞄准状态时播放的[声音](#sounds)。
+
+<a id="riot-shields"></a>
+
+## **░ 防暴盾** <a id="shield"></a>
+    Riot_Shield:
+        Enable: <true/false>
+        Do_Not_Block_Projectiles: <true/false>
+        Do_Not_Block_Melee_Attacks: <true/false>
+        Durability_Based_On_Damage: <true/false>
+        Durability_Loss_Per_Hit: <amount>
+        Forcefield_Mode: <true/false>
+        Only_Works_While_Blocking: <true/false>
+        Sounds_Blocked: <sound>,(...)
+        Sounds_Break: <sound>,(...)
+
+<a id="enable-6"></a>
+
+#### Enable:
+设为 `true` 后，允许使用防暴盾。防暴盾能在特定条件下完全阻挡某些攻击。
+
+#### Do_Not_Block_Projectiles:
+设为 `true` 后，举盾时不会阻挡远程攻击。
+
+#### Do_Not_Block_Melee_Attacks:
+设为 `true` 后，举盾时不会阻挡近战攻击。
+
+#### Durability_Based_On_Damage:
+设为 `true` 后，`Durability_Loss_Per_Hit:` 会根据玩家挡下的[伤害](#damage)计算耐久消耗。
+
+示例：玩家持有一面配置了 `Durability_Loss_Per_Hit: 10` 和 `Durability_Based_On_Damage: true` 的盾牌，成功挡下 4 点伤害。盾牌会扣除 `4X10` 点耐久。
+
+#### Durability_Loss_Per_Hit:
+盾牌每次_被击中_或每挡下_一点伤害_时扣除的耐久，具体取决于 `Durability_Based_On_Damage` 是否为 `true`。
+
+#### Forcefield_Mode:
+设为 `true` 后，举起的防暴盾会阻挡来自所有方向的攻击，包括玩家背后的攻击，玩家不再需要面对攻击来源。
+
+#### Only_Works_While_Blocking:
+设为 `true` 后，防暴盾只有在玩家_格挡_时才会阻挡攻击。Minecraft 1.8 中，手持剑按右键进行格挡；Minecraft 1.9 及以上版本中，手持盾牌按右键进行格挡。
+
+#### Sounds_Blocked:
+盾牌成功挡下攻击时播放的[声音](#sounds)。
+
+#### Sounds_Break:
+盾牌耐久耗尽并损坏时播放的[声音](#sounds)。
+
+<a id="weapon-stores"></a>
+
+## **░ 武器商店** <a id="stores"></a>
+    SignShops:
+        Enable: <true/false>
+        Price: <itemID-amount> OR <itemID~data-amount>
+        Sign_Gun_ID: <unique number>
+
+<a id="enable-7"></a>
+
+#### Enable:
+是否允许创建这把武器的商店并从中购买。
+
+#### Price:
+指定完成交易所需的[物品类型](#itemID)和数量。支持附加数据值，例如 `351~9-5` 表示 5 个_粉红色染料_。
+
+示例：名为 `Volleyball` 的武器配置了 `Price: 266-12`。`266` 是_金锭_的 [ID](#itemID)，因此从商店购买一个 `Volleyball` 需要 12 个_金锭_。
+
+#### Sign_Gun_ID:
+必须是 1-999 之间的_唯一_数字。配置中不同武器的 `Sign_Gun_ID:` 值不得重复。
+
+<a id="setting-up-a-store"></a>
+
+#### 创建商店：
+放置一块木牌，在第一行输入 `[CS]<number>`，其中 `<number>` 是武器的 `Sign_Gun_ID:` 值（1 到 999 之间）。只要第一行正确，且玩家拥有创建商店的权限，完成木牌编辑后就会收到 `Shop successfully created` 消息。第 2、3、4 行可以填写_任意内容_。
+
+注意：创造模式玩家无法从商店购买。移除商店木牌时，必须处于创造模式，并拥有相应权限：`crackshot.store.<weapon>/all`。
+
+![alt text](assets/e4f7187e92a014fc.png "Before")
+
+这块木牌会使用[默认武器](Default-Weapons.md) _Type 95_ 中配置的商店。注意，"&e" 是_黄色_的[颜色代码](#colors)。只有安装了处理彩色木牌的插件，才能为木牌上的文字上色。
+
+![alt text](assets/b6fa9b32406fd642.png "After")
+
+创建成功后，最终效果如上图。
+
+<a id="custom-crafting-recipes"></a>
+
+## **░ 自定义合成配方** <a id="crafting"></a>
+    Crafting:
+        Enable: <true/false>
+        Quantity: <amount>
+        Shaped: <true/false>
+        Ingredients: <ingredients>
+
+<a id="enable-8"></a>
+
+#### Enable:
+设为 `true` 后，允许按自定义配方合成武器。请记住，玩家仍需拥有 `crackshot.craft.<weapon>` 权限才能合成。
+
+#### Quantity:
+此合成配方的_产出_数量，默认为 1。
+
+#### Shaped:
+物品是否必须放在指定位置才能合成（有序配方），还是可以任意摆放（无序配方）？若为 `Shaped: true`，则_必须_提供全部 9 个值。
+
+#### Ingredients:
+合成材料，分别指定每个格子（1-9）中的[物品](#itemID)。
+
+![alt text](assets/5fcd6eef0c12f0c3.png "Custom crafting recipe")
+
+示例 1：假设此配方的 `Shaped:` 为 `true`。**30** 是_蜘蛛网_的[_物品 ID_](#itemID)，**98~2** 是_裂纹石砖_的[_物品 ID_](#itemID)。上图对应的配方为 `Ingredients: 30,0,98~2,0,30,0,98~2,98~2,30`。因为是_有序_配方，必须提供全部 9 个值。空格子的值为 `0`。
+
+![alt text](assets/dc0a6233690d7ee1.png "Custom crafting recipe")
+
+示例 2：假设此配方的 `Shaped:` 为 `false`。上图对应的配方为 `Ingredients: 30,30,1`。因为是_无序_配方，不需要提供全部 9 个值，物品在合成网格中的顺序也**不**影响结果。因此，`Ingredients: 1,30,30`、`Ingredients: 30,30,1` 和 `Ingredients: 30,1,30` 等写法完全相同。
+
+<a id="advanced-usage"></a>
+
+#### 进阶用法：
+若要将 _CrackShot_ 武器作为合成材料，需要使用_附加数据值_。例如：
+
+    Hunting_Rifle:
+        Item_Information:
+            Item_Type: 280~1
+    
+    Hunting_Rifle_Part:
+        Item_Information:
+            Item_Type: 280~2
+    
+    Uber_Hunting_Rifle:
+        Item_Information:
+            Item_Type: 280~3
+        Crafting:
+            Enable: true
+            Shaped: false
+            Ingredients: 280~1,280~2
+
+根据上面的简化示例，可以使用 *Hunting_Rifle_Part* 和 *Hunting_Rifle* 合成一把 *Uber_Hunting_Rifle*。
+
+⚠ 注意：使用附加数据值区分武器时，应避免使用_方块物品_（除非你清楚其行为）和_耐久物品_。这些物品类型的说明见指南的[_物品信息_](#item_info)部分。
+
+<a id="region-checks"></a>
+
+## **░ 区域检查** <a id="regions"></a>
+    Region_Check:
+        Enable: <true/false>
+        World_And_Coordinates: <worldname,X1,Y1,Z1,X2,Y2,Z2,blacklist>|(...)
+        Message_Of_Denial: <message>
+
+<a id="enable-9"></a>
+
+#### Enable:
+设为 true 后，只有玩家或弹射物位于指定区域内或区域外时，**武器及其弹射物**才会生效。适合将武器使用范围限制在特定竞技场中。
+
+说明：未通过区域检查的武器无法使用，其_弹射物_同样不会生效。例如，从受限区域外发射一发 _Bazooka_ 或投掷一枚 _Grenade_，若弹射物落入受限区域，就不会爆炸。
+
+注意：使用 *Break_Blocks* 节点的弹射物，无法破坏受限区域内的方块。
+
+#### World_And_Coordinates:
+先填写世界名称，通常为世界文件夹名，例如末地通常是 world_the_end。然后填写第 1 点和第 2 点的 X,Y,Z 坐标，最后用 _true_ 或 _false_ 指定该区域是否为黑名单。可以用竖线 `|` 分隔，指定_多个区域_。
+
+注意：支持 `-356.217` 之类的_小数_，但不建议使用。黑名单和白名单区域重叠时，黑名单区域优先。
+
+示例：
+* `World_And_Coordinates: world,0,0,0,200,200,200,true` - 区域黑名单。武器在指定区域内无法使用，区域外可以使用。
+* `World_And_Coordinates: world,0,0,0,200,200,200,false` - 区域白名单。武器只能在指定区域内使用，区域外无法使用。
+* `World_And_Coordinates: world,0,0,0,200,200,200` - 与上例相同。如果未为 `blacklist` 填写 true 或 false，默认为 _false_，即区域白名单。
+
+#### Message_Of_Denial:
+玩家被拒绝使用时收到的消息。**不**支持任何[变量](#variables)。
+
+<a id="custom-death-messages"></a>
+
+## **░ 自定义死亡消息** <a id="death_messages"></a>
+    Custom_Death_Message:
+        Normal: <message>
+        H̶e̶a̶d̶s̶h̶o̶t̶:̶
+
+#### Normal:
+受击者被这把武器击杀时，向全服广播的消息。这类消息**不**支持 `<flight>` 和 `<damage>` 变量。
+
+#### Headshot: {#field-headshot}
+此功能尚未加入，计划用于在受击者被爆头击杀时广播另一条消息。
+
+<a id="headshots"></a>
+
+## **░ 爆头** <a id="headshot"></a>
+    Headshot:
+        Enable: <true/false>
+        Bonus_Damage: <amount>
+        Message_Shooter: <message>
+        Message_Victim: <message>
+        Sounds_Shooter: <sound>,(...)
+        Sounds_Victim: <sound>,(...)
+
+<a id="enable-10"></a>
+
+#### Enable:
+是否启用爆头判定。仅适用于_弹射物_。
+
+#### Bonus_Damage:
+爆头额外造成的[伤害](#damage)。
+
+#### Message_Shooter:
+造成爆头时，射击者收到的[消息](#variables)。
+
+#### Message_Victim:
+遭到爆头时，受击者收到的[消息](#variables)。
+
+#### Sounds_Shooter:
+造成爆头时，在射击者处播放的[声音](#sounds)。
+
+#### Sounds_Victim:
+遭到爆头时，在受击者处播放的[声音](#sounds)。
+
+## **░ 背刺** <a id="backstabs"></a>
+    Backstab:
+        Enable: <true/false>
+        Bonus_Damage: <amount>
+        Message_Shooter: <message>
+        Message_Victim: <message>
+        Sounds_Shooter: <sound>,(...)
+        Sounds_Victim: <sound>,(...)
+
+<a id="enable-11"></a>
+
+#### Enable:
+是否启用背刺判定。适用于_弹射物_和启用了_近战模式_的武器。
+
+<a id="bonus_damage-1"></a>
+
+#### Bonus_Damage:
+从背后射中实体时额外造成的[伤害](#damage)。
+
+<a id="message_shooter-1"></a>
+
+#### Message_Shooter:
+造成背刺时，射击者收到的[消息](#variables)。
+
+<a id="message_victim-1"></a>
+
+#### Message_Victim:
+遭到背刺时，受击者收到的[消息](#variables)。
+
+<a id="sounds_shooter-1"></a>
+
+#### Sounds_Shooter:
+造成背刺时，在射击者处播放的[声音](#sounds)。
+
+<a id="sounds_victim-1"></a>
+
+#### Sounds_Victim:
+遭到背刺时，在受击者处播放的[声音](#sounds)。
+
+<a id="critical-hits"></a>
+
+## **░ 暴击** <a id="Cr1TiKaL"></a>
+    Critical_Hits:
+        Enable: <true/false>
+        Bonus_Damage: <amount>
+        Chance: <percentage>
+        Message_Shooter: <message>
+        Message_Victim: <message>
+        Sounds_Shooter: <sound>,(...)
+        Sounds_Victim: <sound>,(...)
+
+<a id="enable-12"></a>
+
+#### Enable:
+是否启用暴击判定。适用于_弹射物_和启用了_近战模式_的武器。
+
+<a id="bonus_damage-2"></a>
+
+#### Bonus_Damage:
+暴击额外造成的[伤害](#damage)。
+
+#### Chance:
+射击者触发暴击的百分比概率。必须为 1-100 之间的值，100 表示 100% 成功触发。
+
+示例：`Chance: 25` 表示武器有 25% 的概率触发暴击。
+
+<a id="message_shooter-2"></a>
+
+#### Message_Shooter:
+造成暴击时，射击者收到的[消息](#variables)。
+
+<a id="message_victim-2"></a>
+
+#### Message_Victim:
+遭到暴击时，受击者收到的[消息](#variables)。
+
+<a id="sounds_shooter-2"></a>
+
+#### Sounds_Shooter:
+造成暴击时，在射击者处播放的[声音](#sounds)。
+
+<a id="sounds_victim-2"></a>
+
+#### Sounds_Victim:
+遭到暴击时，在受击者处播放的[声音](#sounds)。
+
+<a id="summon-entities"></a>
+
+## **░ 召唤实体** <a id="entity"></a>
+    Spawn_Entity_On_Hit:
+        Enable: <true/false>
+        Chance: <percentage>
+        Mob_Name: <name>
+        EntityType_Baby_Explode_Amount: <entity-baby-explode-amount>,(...)
+        Make_Entities_Target_Victim: <true/false>
+        Timed_Death: <ticks>
+        Entity_Disable_Drops: <true/false>
+        Message_Shooter: <message>
+        Message_Victim: <message>
+
+<a id="enable-13"></a>
+
+#### Enable:
+是否在以下情况下生成实体：
+* 武器发射的弹射物击中敌人。
+* 武器引起的爆炸对敌人造成伤害。
+
+<a id="chance-1"></a>
+
+#### Chance:
+命中敌人时生成实体的百分比概率。必须为 1-100 之间的值，100 表示 100% 成功生成。
+
+#### Mob_Name:
+生成的生物名称。此节点为可选项。
+
+#### EntityType_Baby_Explode_Amount:
+依次填写[实体类型](List-of-Accepted-Mobs.md)、是否为幼体、是否在死亡时爆炸，以及数量。可以用逗号 `,` 分隔，生成多种实体。
+
+示例：`EntityType_Baby_Explode_Amount: PIG-TRUE-TRUE-4` 会生成 4 只死亡时爆炸的幼年猪。
+
+注意：死亡时爆炸的实体会产生半径为 2 的爆炸，相当于 TNT 的一半。此外，将_苦力怕_的 _baby_ 设为 _true_，会将其变成_闪电苦力怕_。
+
+补充：_僵尸_和_僵尸猪人_都有幼年形态。
+
+#### Make_Entities_Target_Victim:
+此节点_已弃用_，可能导致生物陷入地面。设为 `true` 时，会尝试让生成的实体以受击者为攻击目标。
+
+#### Timed_Death:
+生成的实体在死亡前存活的时间，单位为刻。
+
+#### Entity_Disable_Drops:
+设为 `true` 后，生成的实体死亡时不会掉落物品或经验球。
+
+<a id="message_shooter-3"></a>
+
+#### Message_Shooter:
+成功在受击者位置生成实体时，射击者收到的[消息](#variables)。
+
+<a id="message_victim-3"></a>
+
+#### Message_Victim:
+成功生成实体时，受击者收到的[消息](#variables)。
+
+<a id="flight-time"></a>
+
+## **░ 飞行时间** <a id="flight_time"></a>
+    Damage_Based_On_Flight_Time:
+        Enable: <true/false>
+        Bonus_Damage_Per_Tick: <amount>
+        Minimum_Damage: <amount>
+        Maximum_Damage: <amount>
+
+<a id="enable-14"></a>
+
+#### Enable:
+计算对受击者造成的总伤害时，是否考虑弹射物的飞行时间。
+
+用途：可以让弹射物在空中停留越久，造成的伤害越高，以减少玩家贴脸射击。将 `Bonus_Damage_Per_Tick:` 设为负数，并且不为 `Minimum_Damage` 填写数值，可以大幅限制武器射程，很适合近距离霰弹枪。
+
+#### Bonus_Damage_Per_Tick:
+弹射物每飞行一刻，在命中目标时增加的[伤害](#damage)。可以设为负数，使弹射物在空中停留越久，伤害越低。
+
+#### Minimum_Damage:
+弹射物的额外[伤害](#damage)必须超过的最低门槛；未超过时不会附加任何额外伤害。
+
+示例：武器配置了 `Minimum_Damage: 10` 和 `Bonus_Damage_Per_Tick: 2`。弹射物飞行 4 刻后命中敌人，期间累计了 8 点额外伤害。因为 8 低于最低伤害 10，最终不会增加额外伤害。
+
+#### Maximum_Damage:
+弹射物最多可以增加或减少的额外[伤害](#damage)。
+
+示例：武器配置了 `Maximum_Damage: 5` 和 `Bonus_Damage_Per_Tick: 2`。弹射物飞行 4 刻后命中敌人，期间累计了 8 点额外伤害。因为 8 超过上限 5，最终只增加 5 点额外伤害。
+
+注意：如果 `Bonus_Damage_Per_Tick` 为负数，此节点也可以限制最多_扣除_的伤害！例如，配置 `Maximum_Damage: -4` 和 `Bonus_Damage_Per_Tick: -1`，会使弹射物每在空中飞行一刻就减少 1 点伤害，持续到第 4 刻为止。
+
+## **░ 空袭** <a id="airstrikes"></a>
+    Airstrikes:
+        Enable: <true/false>
+        Flare_Activation_Delay: <ticks>
+        Particle_Call_Airstrike: <particle-effect>,(...)
+        Message_Call_Airstrike: <message>
+        Block_Type: <itemID> OR <itemID~data>
+        Area: <amount>
+        Distance_Between_Bombs: <amount>
+        Height_Dropped: <amount>
+        Vertical_Variation: <amount>
+        Horizontal_Variation: <amount>
+        Multiple_Strikes:
+            Enable: <true/false>
+            Number_Of_Strikes: <amount>
+            Delay_Between_Strikes: <ticks>
+        Sounds_Airstrike: <sound>,(...)
+
+<a id="enable-15"></a>
+
+#### Enable:
+设为 `true` 后，普通弹射物（雪球、鸡蛋、箭）击中玩家，或投出的 `flare` 被激活时，会呼叫一次空袭。
+
+#### Flare_Activation_Delay:
+`Projectile_Type:` 设为 `flare` 时，此项表示投出的信号弹呼叫空袭前的[延迟](#delay)，单位为刻。
+
+#### Particle_Call_Airstrike:
+投出的信号弹或弹射物呼叫空袭时产生的[粒子效果](#particles)。粒子效果的格式详见 [Particles](#particles) 模块。
+
+#### Message_Call_Airstrike:
+呼叫空袭时，_空袭呼叫者_收到的消息。此节点只支持 `<shooter>` 这一个[特殊变量](#variables)，表示空袭呼叫者。
+
+#### Block_Type:
+空投炸弹的[_物品 ID_](#itemID)，必须是_方块_。支持附加数据值。
+
+示例：将 `Block_Type:` 设为 `35~4`，空袭就会投下_黄色羊毛_作为炸弹。
+
+#### Area:
+空袭会投下按特定尺寸排列的_正方形炸弹阵列_。此节点表示该阵列的范围。
+
+将 `Area:` 设为 `5`，每次空袭就会投下 `5 X 5 = 25` 枚炸弹；将 `Area:` 设为 `2` 则为 `2 X 2 = 4` 枚，以此类推。
+
+#### Distance_Between_Bombs:
+炸弹之间的距离，单位为方块。
+
+示例：设为 `0` 会将所有炸弹挤在同一处；设为 `4` 会让每枚炸弹之间相隔四格。
+
+#### Height_Dropped:
+投放炸弹的高度，_相对于_呼叫点计算，单位为方块。
+
+示例：设为 `100 `，会在信号弹或弹射物激活位置上方 100 格处生成炸弹。
+
+#### Vertical_Variation:
+炸弹之间在竖直方向上的随机变化幅度，单位为方块，用于让空袭更随机。
+
+#### Horizontal_Variation:
+炸弹之间在水平方向上的随机变化幅度，单位为方块，用于让空袭更随机。
+
+#### Multiple_Strikes:
+* _Enable:_ - 是否进行_多轮_空袭。
+* *Number_Of_Strikes:* - 空袭轮数。
+* *Delay_Between_Strikes:* - 两轮空袭之间的[延迟](#delay)，单位为刻。
+
+#### Sounds_Airstrike:
+每次呼叫空袭时播放的[声音](#sounds)。
+
+<a id="explosive-devices"></a>
+
+## **░ 爆炸装置** <a id="devices"></a>
+    Explosive_Devices:
+        Enable: <true/false>
+        Device_Type: <landmine> OR <remote> OR <trap> OR <itembomb>
+        Device_Info: <information>
+        Sounds_Deploy: <sound>,(...)
+        Remote_Bypass_Regions: <true/false>
+        Message_Disarm: <message>
+        Message_Trigger_Placer: <message>
+        Message_Trigger_Victim: <message>
+        Sounds_Alert_Placer: <sound>,(...)
+        Sounds_Trigger: <sound>,(...)
+
+<a id="enable-16"></a>
+
+#### Enable:
+设为 `true` 后，武器会变为爆炸装置。不同类型的操作如下：
+
+* _landmines_（地雷）：射击操作会放置一枚地雷。
+
+* _remote-detonated explosives_（遥控炸弹）：射击操作会放置一个可爆炸的生物头颅。
+
+* _trap_（陷阱）：具有以下特征的物品：
+    * 放入发射器后，触发发射器就会爆炸。
+    * 放入箱子后，打开箱子就会爆炸。
+    * 丢在地上后，被捡起就会爆炸。
+    * 放入物品展示框后，踩踏 4 格内的压力板就会爆炸。
+    * **所有者无法触发自己的陷阱**。
+
+* _item bombs_（物品炸弹）：射击操作会投出一枚物品炸弹。
+
+注意：此模块从 _Explosions_ 模块读取设置，以决定爆炸的效果。
+
+#### Device_Type:
+目前支持以下 4 个值：
+
+* _landmine_：放置一辆接触敌人时会爆炸的矿车。这些地雷会_永久_保留，服务器重启后仍然有效，被弹射物击中也会爆炸。只要放置者当时_在线_，就会执行友军伤害检查，使地雷能在 _Factions_、_PVPArena_ 等其他插件管理的环境中区分敌人与队友。地雷可用于守卫私人领地，是否致命取决于你的配置。
+
+* _remote_：放置一个可爆炸的生物头颅（Steve），可以从_任何_世界、地图上的_任何_位置遥控引爆。此类型有友军伤害检查：敌人尝试破坏装置会引爆它，队友则完全无法破坏。放置者自己破坏装置时，会将其解除。装置继承 *Item_Information* 模块的 *Item_Type* 所指定物品的放置属性，因此务必使用可放置的方块！**兼容 Ammo 模块和 One_Time_Use 节点。**
+
+* _trap_：打开装有该物品的箱子、从发射器射出该物品，或由敌人捡起该物品时，就会爆炸。玩家必须先_激活_陷阱，为其指定所有者，陷阱才会生效。所有者无法触发自己的陷阱。与其他装置一样，只要所有者当时在线，就会执行友军伤害检查；队友捡起该物品或打开装有它的箱子时，不会触发装置。注意，从发射器发射陷阱时，陷阱永远不会耗尽。
+    * 压力板地雷：_trap_ 有一种独特用法，将其放入物品展示框后，4 格范围内的所有压力板在被踩踏时都会引发爆炸。
+
+* _itembomb_：投出一件可以从_任何_世界、地图上的_任何_位置遥控引爆的物品。投掷者_离开服务器_时，其投出的物品炸弹会消失。服务器重启后，所有物品炸弹都会移除。**兼容 Ammo 模块和 One_Time_Use 节点。**
+
+#### Device_Info:
+此节点的值随装置类型而变化：
+
+* _landmine_：格式为 `<itemID-minecartType>`。
+    * `itemID` 表示_引信_（矿车上的乘客）的[_物品 ID_](#itemID)。所有地雷都必须携带有效引信，因此此值必填。支持附加数据值，例如 _35_ 表示_羊毛_，_35~6_ 表示_粉红色羊毛_。
+    * `minecartType` 表示矿车类型。目前支持 MINECART、MINECART_CHEST、MINECART_FURNACE、MINECART_HOPPER、MINECART_MOB_SPAWNER 和 MINECART_TNT。此设置仅建议插件开发者使用，因为其他矿车类型的固有行为不会被禁用。
+
+* _remote_：格式为 `Amount-UniqueID-Headname`。
+    * `Amount` 决定武器最多能管理多少个遥控炸弹。
+    * `UniqueID` 必须恰好为两个字符，并且对这把武器_唯一_；其他 `remote` 类型武器不得使用相同值。`UniqueID` 可以包含数字和英文字母。字母不区分大小写，`1A` 与 `1a` 相同。
+    * `Headname` 是生物头颅被触发后使用的玩家名称。无法指定触发_前_的头颅玩家名称，它始终是 _Steve_ 的头颅。
+
+* _trap_：格式为 `Chest-Pickup-DispenserAndPressurePlate-Reusable-NoItemDespawn`，每一项均填写 _true_ 或 _false_。
+    * `Chest` - 装有此物品的箱子被_打开_时，是否触发陷阱。
+    * `Pickup` - 掉落物被捡起时，是否触发陷阱。
+    * `DispenserAndPressurePlate` - 物品从发射器射出，或放有陷阱的物品展示框四格内的压力板被触发时，是否触发陷阱。
+    * `Reusable` - 设为 _true_ 后，陷阱_永远_不会耗尽，例如同一个掉落物可以触发多次。
+    * `NoItemDespawn` - 设为 _true_ 后，掉落物_永远_不会自然消失，适合由掉落物陷阱构成的雷区。
+
+* _itembomb_：格式为 `Amount,Speed,Before,After`。
+    * `Amount` 决定玩家最多可以投出多少枚物品炸弹。即使玩家持有多件相同的 `itembomb` 武器，也无法超过此限制！
+    * `Speed` 决定物品炸弹投出的速度。
+    * `Before` 表示物品炸弹未激活时的[_物品 ID_](#itemID)，支持附加数据值。
+    * `After` 表示物品炸弹被触发后的[_物品 ID_](#itemID)，支持附加数据值。
+
+示例：
+* *Device_Type* 设为 `remote` 时，填写 `4-T7-Notch`，会创建一种最多可放置并保存 4 个炸弹的装置，炸弹激活后会变成 Notch 的头颅。
+* *Device_Type* 设为 `itembomb` 时，填写 `2,10,159,159~14`，会创建一种最多投出 2 枚物品炸弹、投掷速度为 10 的装置。这些炸弹平时显示为_白色染色黏土_（159），被触发后显示为_红色染色黏土_（159:14）。
+
+#### Sounds_Deploy:
+部署装置时播放的[声音](#sounds)，具体为：
+
+* _landmine_：放置地雷时播放。
+
+* _remote_：放置可爆炸的生物头颅时播放。
+
+* _trap_：玩家首次激活装置时播放。
+
+* _itembomb_：投出物品炸弹时播放。
+
+#### Remote_Bypass_Regions:
+仅用于 `remote` 类型装置。设为 `true` 后，会绕过所有区域保护插件，允许在_任何位置_放置和移除遥控炸弹。
+
+#### Message_Disarm:
+仅用于 `remote` 类型装置。表示装置_放置者_破坏并解除自己放置的装置时收到的消息，不支持任何[特殊变量](#variables)。
+
+#### Message_Trigger_Placer:
+装置被触发时，_放置者_收到的消息。支持除 `<flight>` 和 `<damage>` 外的所有[特殊变量](#variables)。
+
+#### Message_Trigger_Victim:
+受击者触发爆炸装置时收到的消息，例如撞上地雷、破坏他人的遥控炸弹，或打开装有诡雷的箱子时。支持除 `<flight>` 和 `<damage>` 外的所有[特殊变量](#variables)。
+
+#### Sounds_Alert_Placer:
+装置被触发时，_装置所有者_听到的[声音](#sounds)，具体为：
+
+* _landmine_：敌人触发地雷时播放，提醒放置者可能有人中招。
+
+* _remote_：放置者手动激活遥控炸弹，或有人尝试破坏炸弹使其爆炸时播放。
+
+* _trap_：玩家打开装有诡雷的箱子、受击者踩到物品展示框诡雷四格内的压力板，或玩家捡起诡雷物品时播放。
+
+* _itembomb_：投掷者激活物品炸弹时播放。
+
+#### Sounds_Trigger:
+装置被触发时，由装置发出的[声音](#sounds)，具体为：
+
+* _landmine_：敌人触发地雷时，由地雷发出。
+
+* _remote_：放置者手动激活炸弹，或敌人尝试破坏炸弹时，由炸弹发出。
+
+* _trap_：敌人打开装有陷阱的箱子、捡起诡雷物品、踩到物品展示框诡雷四格内的压力板，或陷阱从发射器射出时，由陷阱发出。
+
+* _remote_：投掷者激活物品炸弹时，由物品炸弹发出。
+
+<a id="cluster-bombs"></a>
+
+## **░ 集束炸弹** <a id="cluster"></a>
+    Cluster_Bombs:
+        Enable: <true/false>
+        Bomblet_Type: <itemID> OR <itemID~data>
+        Delay_Before_Split: <ticks>
+        Number_Of_Splits: <amount>
+        Number_Of_Bomblets: <amount>
+        Speed_Of_Bomblets: <amount>
+        Delay_Before_Detonation: <ticks>
+        Detonation_Delay_Variation: <ticks>
+        Particle_Release: <particle-effect>,(...)
+        Sounds_Release: <sound>,(...)
+
+<a id="enable-17"></a>
+
+#### Enable:
+设为 `true` 后，武器引起的_所有_爆炸都会释放集束炸弹，但[_空袭_](#airstrikes)引起的爆炸除外。子炸弹的爆炸效果由 _Explosions_ 模块决定。
+
+说明：此模块适用于地雷、遥控装置、手榴弹、诡雷等一切会爆炸的装置，只有空袭例外。为什么空袭不行？因为若空袭中的每枚炸弹都继续分裂并释放子炸弹，电脑可能会不堪重负。
+
+#### Bomblet_Type:
+释放的子炸弹的[_物品 ID_](#itemID)，支持附加数据值。
+
+#### Delay_Before_Split:
+集束炸弹_分裂_并释放子炸弹前的[延迟](#delay)，单位为刻。
+
+#### Number_Of_Splits:
+集束炸弹的分裂次数。
+
+注意：释放的子炸弹总数按 *Number_Of_Bomblets* 的 *Number_Of_Splits* 次方计算。因此，`Number_Of_Splits` 为 6、`Number_Of_Bomblets` 为 5 时，总共会产生 15,625（5⁶）枚子炸弹及其爆炸！
+
+为避免产生过量爆炸，CrackShot 会拒绝总计释放超过 1000 枚子炸弹的集束炸弹配置。
+
+#### Number_Of_Bomblets:
+单枚集束炸弹释放的子炸弹数量。
+
+#### Speed_Of_Bomblets:
+释放的子炸弹的速度。数值越高，子炸弹离释放点飞得越远。
+
+#### Delay_Before_Detonation:
+释放的子炸弹_爆炸_前的延迟。
+
+说明：集束炸弹**不**使用 `Explosions` 模块中的 `Explosion_Delay:` 节点。
+
+#### Detonation_Delay_Variation:
+如果不希望所有子炸弹同时爆炸，可以用此节点指定延迟的随机变化幅度，让爆炸时间更加随机。
+
+示例：`Delay_Before_Detonation:` 设为 40（2 秒），`Detonation_Delay_Variation:` 设为 20（1 秒），则子炸弹会在 2±1 秒后爆炸。
+
+#### Particle_Release:
+集束炸弹_分裂_并释放子炸弹时产生的[粒子效果](#particles)。粒子效果格式详见 [Particles](#particles) 模块。
+
+#### Sounds_Release:
+集束炸弹_分裂_并释放子炸弹时播放的[声音](#sounds)。
+
+## **░ 弹片** <a id="shrapnel"></a>
+    Shrapnel:
+        Enable: <true/false>
+        Block_Type: <itemID> OR <itemID~data>
+        Amount: <amount>
+        Speed: <amount>
+        Place_Blocks: <true/false>
+
+<a id="enable-18"></a>
+
+#### Enable:
+设为 `true` 后，武器引起的_所有_爆炸都会释放作为“弹片”的方块。
+
+<a id="block_type-1"></a>
+
+#### Block_Type:
+掉落炸弹的[_物品 ID_](#itemID)，必须是_方块_。支持附加数据值。
+
+示例：将 `Block_Type:` 设为 `35~4`，就会使用_黄色羊毛_作为弹片。
+
+#### Amount:
+释放的弹片数量。请与其他选项一样，使用_适当_的数值。
+
+#### Speed:
+释放的弹片速度。数值越大，弹片离爆炸点飞得越远。
+
+#### Place_Blocks:
+设为 `true` 后，弹片方块会在落地时自行放置。如果想让爆炸散布水、岩浆、火等，可以使用此节点。
+
+<a id="explosions"></a>
+
+## **░ 爆炸** <a id="kaboom"></a>
+    Explosions:
+        Enable: <true/false>
+        Knockback: <amount>
+        Ignite_Victims: <ticks>
+        Damage_Multiplier: <percentage>
+        Enable_Friendly_Fire: <true/false>
+        Enable_Owner_Immunity: <true/false>
+        Explosion_No_Damage: <true/false>
+        Explosion_Potion_Effect: <potioneffect>,(...)
+        Explosion_No_Grief: <true/false>
+        Explosion_Radius: <amount>
+        Explosion_Incendiary: <true/false>
+        Explosion_Delay: <ticks>
+        On_Impact_With_Anything: <true/false>
+        Projectile_Activation_Time: <ticks>
+        Message_Shooter: <message>
+        Message_Victim: <message>
+        Sounds_Shooter: <sound>,(...)
+        Sounds_Victim: <sound>,(...)
+        Sounds_Explode: <sound>,(...)
+
+<a id="enable-19"></a>
+
+#### Enable:
+设为 `true` 后，为武器启用爆炸。此模块适用于_所有_弹射物类型、空袭、集束炸弹和[爆炸装置](#devices)。
+
+注意：这些爆炸兼容 WorldGuard、Factions、Towny 等所有区域保护插件。弹射物落入禁止爆炸的区域时，爆炸_会被_取消。
+
+★ _CrackShot_ 的爆炸具有完善的友军伤害检查，你的爆炸不会伤害队友。
+
+#### Knockback:
+填写一个数值，决定爆炸的击退力度。支持负数。
+
+示例：设为 `-10` 会产生_向内爆炸_的效果，将所有目标拉向中心。
+
+#### Ignite_Victims:
+值大于零时，爆炸会点燃受击者。填写[持续时间](#delay)，决定燃烧多久。
+
+注意：请勿与 `Explosion_Incendiary:` 混淆，后者会在_被破坏的_方块处生火。
+
+#### Damage_Multiplier:
+爆炸伤害乘以的百分比。
+
+示例：`50` 表示一半伤害（50%），`200` 表示双倍伤害（200%）。注意，将此项设为 `0`（0%）无法_完全_消除爆炸伤害。
+
+#### Enable_Friendly_Fire:
+设为 `true` 后，爆炸会伤害队友。在 _MobArena_、_PVP Arena_ 等插件管理的团队竞技场中，通常应保持 `false`，避免误杀队友。
+
+注意：**非常不建议**设为 `true`，这可能导致爆炸忽略 `Explosions:` 模块中的大部分设置。
+
+#### Enable_Owner_Immunity:
+设为 `true` 后，射击者（_引起_爆炸的人）不会受到爆炸伤害，也不会受到爆炸附带的药水效果（如果有配置）。
+
+#### Explosion_No_Damage:
+设为 `true` 后，爆炸不造成任何伤害。适合_闪光弹_、_毒气弹_等只施加药水效果、不造成伤害的战术手榴弹。
+
+#### Explosion_Potion_Effect:
+对完全暴露于爆炸中的受击者施加的药水效果；躲在障碍物后的敌人不会受到影响。药水效果的设置详见[药水效果](#potions)部分，也可以参考[默认武器](Default-Weapons.md) _Flashbang_。
+
+#### Explosion_No_Grief:
+设为 `true` 后，爆炸**不会**破坏任何方块、画、物品展示框或掉落物。
+
+#### Explosion_Radius:
+爆炸半径。为避免范围过大，半径上限为 20。
+
+注意：TNT 的爆炸半径为 4。建议使用 1 到 10 之间的值。
+
+#### Explosion_Incendiary:
+`Explosion_No_Grief:` 为 `false` 时，将此项设为 `true` 会在部分被破坏的方块处生火。如果想在_不破坏_方块的情况下点火，可考虑使用 [Shrapnel](#shrapnel) 模块。
+
+注意：请勿与 `Ignite_Victims:` 混淆，后者会点燃受击者。
+
+#### Explosion_Delay:
+实际爆炸发生前的[延迟](#delay)，单位为刻。普通弹射物可以用它制作黏性手榴弹，在命中受击者一段时间后爆炸。对于 `grenade`，此延迟则决定手榴弹投出后_何时_爆炸。
+
+#### On_Impact_With_Anything:
+默认情况下，弹射物只有命中活体实体才会引发爆炸。设为 `true` 后，撞到_任何东西_都会爆炸，包括方块和实体。此节点**不**适用于手榴弹。
+
+#### Projectile_Activation_Time:
+弹射物必须在空中飞行多长[时间](#delay)后，才会进入撞击引爆状态，单位为刻。
+
+补充：_Call of Duty_ 等 FPS 游戏中的榴弹发射器发射榴弹后，需要先在空中飞行一段时间，才会在撞击时爆炸。直接朝脚下发射**不会**引发爆炸。
+
+<a id="message_shooter-4"></a>
+
+#### Message_Shooter:
+爆炸对实体造成伤害时，射击者收到的[消息](#variables)。此节点支持 `<shooter>` 和 `<victim>` 两个[特殊变量](#variables)。
+
+<a id="message_victim-4"></a>
+
+#### Message_Victim:
+受击者受到爆炸伤害时收到的[消息](#variables)。此节点支持 `<shooter>` 和 `<victim>` 两个[特殊变量](#variables)。
+
+<a id="sounds_shooter-3"></a>
+
+#### Sounds_Shooter:
+每当爆炸对实体造成伤害时，射击者听到的[声音](#sounds)，适合用作_命中提示_音。
+
+<a id="sounds_victim-3"></a>
+
+#### Sounds_Victim:
+受击者受到爆炸伤害时听到的[声音](#sounds)。
+
+补充：[默认武器](Default-Weapons.md) _Flashbang_ 使用此节点模拟巨大爆炸后的耳鸣。
+
+#### Sounds_Explode:
+爆炸发生时播放的[声音](#sounds)。
+
+注意：这**不会**替换 TNT 爆炸声，只是在原有声音之外额外播放。
+
+## **░ 闪电** <a id="lightning"></a>
+    Lightning:
+        Enable: <true/false>
+        No_Damage: <true/false>
+        On_Impact_With_Anything: <true/false>
+
+<a id="enable-20"></a>
+
+#### Enable:
+是否在弹射物撞击时，于其所在位置落雷。
+
+注意：此模块兼容 `grenade` 弹射物类型！启用后，手榴弹会在引爆时使用此模块。
+
+#### No_Damage:
+是否让闪电不造成伤害。
+
+<a id="on_impact_with_anything-1"></a>
+
+#### On_Impact_With_Anything:
+默认情况下，弹射物只有撞到活体实体时才会引发雷击。设为 `true` 后，撞到_任何东西_都会引发雷击，包括方块和实体。
+
+注意：除非武器只能在受控环境中使用，否则不建议设为 `true`，因为大多数区域保护插件在某些区域并不会阻止闪电。这样可能导致玩家即使在安全区内也能用闪电互相击杀。
+
+<a id="potion-effects"></a>
+
+## **░ 药水效果** <a id="potions"></a>
+    Potion_Effects:
+        Activation: <head,back,crit,hit,shoot,reload>
+        Potion_Effect_Shooter: <POTIONTYPE-DURATION-LEVEL>,(...)
+        Potion_Effect_Victim: <POTIONTYPE-DURATION-LEVEL>,(...)
+
+<a id="list-of-accepted-values-for-potion-type"></a>
+
+#### potion-type 可用值列表：
+    ABSORPTION
+    BLINDNESS
+    CONFUSION
+    DAMAGE_RESISTANCE
+    FAST_DIGGING
+    FIRE_RESISTANCE
+    HARM
+    HEAL
+    HEALTH_BOOST
+    HUNGER
+    INCREASE_DAMAGE
+    INVISIBILITY
+    JUMP
+    NIGHT_VISION
+    POISON
+    REGENERATION
+    SATURATION
+    SLOW
+    SLOW_DIGGING
+    SPEED
+    WATER_BREATHING
+    WEAKNESS
+    WITHER
+
+#### Activation:
+指定施加药水效果的触发事件。`head` 表示爆头，`back` 表示背刺，`crit` 表示暴击，`hit` 表示普通命中，`shoot` 表示每次射击，`reload` 表示每次装填。
+
+示例：武器配置了 `Activation: back,crit`，就只会在射击者造成背刺或暴击时施加药水效果。
+
+#### Potion_Effect_Shooter:
+触发时给予_射击者_的药水效果。依次填写药水类型、以[刻](#delay)为单位的持续时间，以及效果等级。
+
+示例：`Potion_Effect_Victim: SLOW-1200-3,BLINDNESS-60-1` 表示受击者获得持续 60 秒的_缓慢 III_ 和持续 3 秒的_失明 I_。
+
+#### Potion_Effect_Victim:
+触发时给予_受击者_的药水效果。用法与 `Potion_Effect_Shooter:` 相同。
+
+<a id="particle-effects"></a>
+
+## **░ 粒子效果** <a id="particles"></a>
+    Particles:
+        Enable: <true/false>
+        Particle_Player_Shoot: <particle-effect>,(...)
+        Particle_Terrain: <true/false>
+        Particle_Impact_Anything: <particle-effect>,(...)
+        Particle_Hit: <particle-effect>,(...)
+        Particle_Headshot: <particle-effect>,(...)
+        Particle_Critical: <particle-effect>,(...)
+        Particle_Backstab: <particle-effect>,(...)
+
+<a id="formatting-your-desired-particle-effect"></a>
+
+#### 粒子效果格式：
+可以选择 6 种粒子效果，格式如下。
+
+`smoke` - 产生一团烟雾。
+
+`lightning` - 在你的位置落雷。它只是一种_效果_，**不**造成伤害。
+
+`explosion` - 在你的位置产生一个小型“爆炸”。它只是一种_效果_，**不**造成伤害。
+
+`potion_splash-<number>` - 在玩家位置产生喷溅药水破碎效果，填写的数字决定喷溅颜色。
+
+`block_break-<blockID>` 在玩家位置产生方块破坏粒子，方块类型由填写的 ID 决定。
+
+`flames-<amount>` - 在玩家位置产生_刷怪笼_火焰。数量可以填写任意数字，不会造成可见差异。
+
+示例：配置了 `Particle_Player_Shoot: flames-10,smoke,block_break-55` 的武器，会在每次射击时产生火焰、烟雾和_红石线_的方块破坏粒子。
+
+<a id="enable-21"></a>
+
+#### Enable:
+是否启用粒子效果。
+
+#### Particle_Player_Shoot:
+射击时在玩家处生成的粒子效果。
+
+#### Particle_Terrain:
+设为 `true` 后，弹射物（箭、雪球或鸡蛋）击中方块时，会根据其_方块类型_产生_方块破坏_粒子，让弹射物看起来像是在破坏地形。
+
+#### Particle_Hit:
+命中时在受击者处生成的粒子效果。
+
+#### Particle_Impact_Anything:
+在撞击点生成的粒子效果。请勿与 `Particle_Hit:` 混淆，后者只在弹射物命中实体时触发。
+
+#### Particle_Headshot:
+造成爆头时在受击者处生成的粒子效果。
+
+#### Particle_Critical:
+造成暴击时在受击者处生成的粒子效果。
+
+#### Particle_Backstab:
+造成背刺时在受击者处生成的粒子效果。
+
+## **░ 烟花** <a id="fireworks"></a>
+    Fireworks:
+        Enable: <true/false>
+        Firework_Player_Shoot: <firework>,(...)
+        Firework_Explode: <firework>,(...)
+        Firework_Hit: <firework>,(...)
+        Firework_Headshot: <firework>,(...)
+        Firework_Critical: <firework>,(...)
+        Firework_Backstab: <firework>,(...)
+
+<a id="formatting-firework-effects"></a>
+
+#### 烟花效果格式：
+所有烟花均使用格式：`TYPE-TRAIL-FLICKER-R-G-B`。
+
+先填写_烟花类型_，可以是 `BALL`、`BALL_LARGE`、`BURST`、`CREEPER` 或 `STAR`；然后用 `true` 或 `false` 指定是否启用_拖尾_和_闪烁_；最后为 R、G、B 分别填写 0-255 之间的值，决定烟花效果的颜色。
+
+示例：`Firework_Headshot: CREEPER-TRUE-TRUE-255-128-64` 会创建一个橙色、苦力怕形状、带拖尾和闪烁效果的烟花。
+
+<a id="enable-22"></a>
+
+#### Enable:
+是否启用烟花。弹射物命中受击者或玩家射击时，都可以生成烟花。
+
+#### Firework_Player_Shoot:
+射击时在玩家处生成的烟花效果。
+
+#### Firework_Explode:
+爆炸时生成的烟花效果。
+
+#### Firework_Hit:
+命中时在受击者处生成的烟花效果。
+
+#### Firework_Headshot:
+造成爆头时在受击者处生成的烟花效果。
+
+#### Firework_Critical:
+造成暴击时在受击者处生成的烟花效果。
+
+#### Firework_Backstab:
+造成背刺时在受击者处生成的烟花效果。
+
+## **░ 特殊能力** <a id="abilities"></a>
+    Abilities:
+        Super_Effective: <entity-multiplier>,(...)
+        Death_No_Drop: <true/false>
+        Bonus_Drops: <itemID>,(...)
+        Reset_Hit_Cooldown: <true/false>
+        Knockback: <amount>
+        No_Fall_Damage: <true/false>
+        No_Vertical_Recoil: <true/false>
+        Hurt_Effect: <true/false>
+        Jetpack_Mode: <true/false>
+        Break_Blocks: <whitelist-block1,block2,block3,(...)>
+
+#### Super_Effective:
+此节点用于增加或减少对玩家及特定生物造成的伤害，影响整把武器，也包括它引起的爆炸。倍率支持_小数_。
+
+可用实体类型如下，与[这个列表](List-of-Accepted-Mobs.md)不同；后者只用于 *Spawn_Entity_On_Hit* 模块：
+
+    Bat
+    Blaze
+    Cave_Spider
+    Chicken
+    Cow
+    Creeper
+    Ender_Dragon
+    Enderman
+    Ghast
+    Giant
+    Horse
+    Iron_Golem
+    Magma_Cube
+    Mushroom_Cow
+    Ocelot
+    Pig
+    Pig_Zombie
+    Player
+    Sheep
+    Silverfish
+    Skeleton
+    Slime
+    Snowman
+    Spider
+    Squid
+    Villager
+    Witch
+    Wither
+    Wolf
+    Zombie
+
+用法示例：`Super_Effective: PLAYER-0,WITHER-4,ZOMBIE-0.75` 会使武器对玩家不造成伤害，对_凋灵_首领造成四倍伤害，对_僵尸_造成 75% 伤害。
+
+#### Death_No_Drop:
+设为 `true` 后，玩家死亡时武器**不会**掉落，重生后仍会留在背包中。适合难以获得的武器，让玩家不容易丢失它们。
+
+说明：这只防止武器在玩家死亡时掉落。仍可正常丢弃、放入箱子等。
+
+#### Bonus_Drops:
+使用此武器击杀生物，会使其掉落指定的[物品](#itemID)。额外掉落只适用于生物，不适用于玩家。
+
+用途：可以配合 MobArena 等竞技场插件，制作 _Nazi Zombies_ 风格的竞技场。玩家击杀僵尸获得金锭，再通过武器商店购买更好的武器。
+
+示例：配置了 `Bonus_Drops: 264,98,352` 的武器，会让受击者死亡时掉落一颗钻石、一块石砖和一根骨头。
+
+#### Reset_Hit_Cooldown:
+这是一个很实用的能力。实体被击中后会短暂无敌，避免在一秒内受到过多次攻击。设为 `true` 会重置这段临时无敌时间。若为 `false`，高射速武器或霰弹枪等一次发射多个弹射物的武器，效果会受到影响。
+
+多数枪械都需要此能力，尤其是依赖多个弹射物同时命中敌人的霰弹枪。
+
+<a id="knockback-1"></a>
+
+#### Knockback:
+受击者被武器射中时受到的击退力度。建议使用 0-10 之间的值；设为 10 时，敌人可能转眼就被击退到视野之外。也支持负数，会将受击者向你_拉近_。
+
+#### No_Fall_Damage:
+设为 `true` 后，落地时持有这把武器的玩家**不会**受到摔落伤害。
+
+#### No_Vertical_Recoil:
+设为 `true` 后，武器后坐力在竖直方向上的分量会被清除，玩家只会被向后或向前推动，不会被向上或向下推动。
+
+#### Hurt_Effect:
+设为 `true` 后，玩家每次使用武器都会出现_受伤效果_。适合高伤害的单发武器；但用于高射速全自动武器时，可能让人头晕。
+
+#### Jetpack_Mode:
+设为 `true` 后，武器后坐力只会将玩家向上或向下推动。适合升到高处，但不太适合移动，因为空中的移动速度非常慢。
+
+提示：要制作真正的_喷气推进_效果，不要使用此节点，直接给武器设置负后坐力即可。
+
+#### Break_Blocks:
+此节点使弹射物破坏命中的方块，但 _CrackShot_ 内置 [Region_Check](#regions) 模块保护的方块除外。仅适用于箭、雪球和鸡蛋。
+
+格式：`<whitelist-blockID,(...)>`
+
+为 `whitelist` 填写 `true` 或 `false`。设为 true 时，弹射物会破坏所有未列出的方块；设为 false 时，只会破坏列出的方块。可以填写任意数量的[方块 ID](#itemID)。
+
+示例：
+* `Break_Blocks: false-18,20,102` 会使弹射物破坏所有_树叶_ `18`、_玻璃_ `20` 和_玻璃板_ `102`。
+* `Break_Blocks: true-1,12` 会使弹射物破坏除_石头_ `1` 和_沙子_ `12` 外的_所有方块_。
+
+支持附加数据值，例如 `160~4` 表示_黄色染色玻璃板_。
+
+兼容性：外部插件可以记录并回滚此功能破坏的方块，例如 [LogBlock](http://dev.bukkit.org/bukkit-plugins/logblock/)、[MobArena](http://dev.bukkit.org/bukkit-plugins/mobarena/) 和 [Minigames](http://dev.bukkit.org/bukkit-plugins/minigames/)。
+
+<a id="hit-events"></a>
+
+## **░ 命中事件** <a id="hit_events"></a>
+    Hit_Events:
+        Enable: <true/false>
+        Message_Shooter: <message>
+        Message_Victim: <message>
+        Sounds_Impact: <sound>,(...)
+        Sounds_Shooter: <sound>,(...)
+        Sounds_Victim: <sound>,(...)
+
+<a id="enable-23"></a>
+
+#### Enable:
+普通命中时，是否向射击者或受击者显示消息、播放声音。仅适用于_弹射物_。
+
+注意：应_适量_使用此模块，否则可能使射击者或受击者被消息刷屏，或反复听到不合适的声音。例如，_Semtex_ 黏性手榴弹命中并“黏住”敌人时，可以通知射击者已成功黏住目标。作者也会播放轻柔的“thoonk”声来模拟_命中提示_，表示命中了实体。
+
+<a id="message_shooter-5"></a>
+
+#### Message_Shooter:
+命中敌人时，射击者收到的[消息](#variables)。
+
+<a id="message_victim-5"></a>
+
+#### Message_Victim:
+被击中时，受击者收到的[消息](#variables)。
+
+#### Sounds_Impact:
+弹射物撞到任意表面时，在其所在位置播放的[声音](#sounds)，不论撞到的是方块还是实体。
+
+<a id="sounds_shooter-4"></a>
+
+#### Sounds_Shooter:
+命中敌人时，在射击者位置播放的[声音](#sounds)。
+
+<a id="sounds_victim-4"></a>
+
+#### Sounds_Victim:
+被击中时，在受击者位置播放的[声音](#sounds)。
+
+## **░ 其他选项** <a id="extras"></a>
+    Extras:
+        One_Time_Use: <true/false>
+        Disable_Underwater: <true/false>
+        Make_Victim_Run_Commmand: <command>|(...)
+        Make_Victim_Speak: <message>
+        Run_Console_Command: <command>|(...)
+        Run_Command:
+            - <command>
+            - (...)
+
+#### One_Time_Use:
+很适合手榴弹等武器。设为 `true` 后，每次使用武器，都会从玩家手中扣除一个。对于普通枪械，设为 `true` 会使武器开一枪后就销毁。
+
+对于 **remote** 类型和 **itembomb** 类型的爆炸装置，设为 `true` 会：
+* 阻止装置在每次引爆后恢复弹药；并且
+* 在弹药耗尽时销毁装置。
+
+示例：_MrDerp_ 手持 6 枚将 `One_Time_Use:` 设为 `true` 的 _Frag Grenades_，右键投出一枚后，就剩下 5 枚。
+
+#### Disable_Underwater:
+设为 `true` 且玩家浸在水中时，武器会被禁用。玩家_不在_水中时，武器仍可使用。注意，这不会在玩家入水时把武器_损坏_。
+
+#### Make_Victim_Run_Commmand:
+让受击者在被击中时执行命令。**不要**填写斜杠 `/`，并用引号 `"` 包住命令。支持[特殊变量](#variables)。
+
+示例：`Make_Victim_Run_Commmand: "clear|me I'm getting out of here|quit"` 会让受击者在被击中时依次执行 `/clear`、`/me I'm getting out of here` 和 `/quit`。
+
+#### Make_Victim_Speak:
+让受击者在被击中时说话。支持[特殊变量](#variables)。
+
+示例：`Make_Victim_Speak: "Ow. <shooter> just shot me!"` 会让受击者在被击中时说出 "Ow. (shooter's name) just shot me!"。
+
+#### Run_Console_Command:
+武器成功伤害受击者时执行控制台命令。用法与 `Make_Victim_Run_Commmand:` 相同，但命令由控制台执行。支持[特殊变量](#variables)。
+
+示例：配置了 `Run_Console_Command: "ban <victim> You've been slapped with the Ban Hammer!"` 的武器，会封禁被这把武器射中的任何人。
+
+#### Run_Command:
+武器射击时执行命令。**不要**填写斜杠 `/`，并且_始终_用引号 `"` 包住每条命令。以 `@` 开头的命令会作为_控制台命令_执行。只支持 `<shooter>` 这个[特殊变量](#variables)。
+
+**示例 1：单条命令**
+
+        Run_Command:
+            - "me is running a command"
+
+每次发射这把武器时，射击者都会执行 `/me is running a command`。
+
+**示例 2：单条控制台命令**
+
+        Run_Command:
+            - "@kick <shooter>"
+
+名为 _Doge_ 的玩家发射这把武器时，控制台会执行 `kick Doge`。
+
+**示例 3：多条命令**
+
+        Run_Command:
+            - "command_1"
+            - "command_2"
+            - "@console_command_1"
+            - "@console_command_2"
+
+每次发射这把武器时，射击者会执行 `/command_1` 和 `/command_2`，控制台会执行 `console_command_1` 和 `console_command_2`。可以按需列出任意数量的命令。

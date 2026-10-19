@@ -1,0 +1,31 @@
+If you've been sent to this page, you're having trouble with a plugin feature and a helper suspects it is caused by a '''Plugin Conflict'''.
+
+This page documents what that is and what to do about it.
+
+==What is a Plugin Conflict?==
+
+A plugin conflict means that you have an issue in one plugin e.g. Citizens or Denizen but it is likely caused by some other plugin on your server.
+
+For example, when multiple plugins rely on the same internal Minecraft features, or in some cases when an external plugin is making calls to the first plugin's API that shouldn't be happening (eg some plugin is telling Citizens to remove all villager NPCs without you knowing).
+
+==What do I do about it?==
+
+===Step 1: Identify the fault===
+
+First, you have to find out what plugin is causing the problem.
+
+You may be able to narrow it down - eg, when Citizens is not able to control the scoreboard properly (leading to CIT-132392 names), you can start by disabling scoreboard plugins like TAB.
+
+If you only have a few plugins that need to be tested, you can test 1-by-1: remove a suspected plugin, restart your server, and test the issue. If the issue is gone, that plugin was at fault.
+
+If you have a lot of plugins to test, use a binary search: remove half of your plugins and test like that. If the issue is gone, the issue is in the half you removed. Otherwise, try without the other half. Once you know which half it's in, you can then try removing another half of your plugins, and repeat this strategy until you have just 1 plugin at fault.
+
+You may benefit from a local test server. Start with just Citizens or Denizen and see if the issue occurs. If the issue is gone, start transferring plugins and configurations one-by-one from your main server until it breaks again.
+
+===Step 2: Deal with the conflicting plugin===
+
+If you've tried every test and even with a blank default server running just the at-issue plugin you still have the issue, you can come back and report that information. Ideally include a full copy of your log file on this test server to help us replicate the issue ourselves (so we can fix it).
+
+If you've identified a specific plugin at fault,
+* Tell us what plugin was at fault, and any other relevant information you may have gathered
+* In some cases we may be able to just deal with it from there, other times we'll ask you to report the issue to the developer of the plugin at fault. In those cases, we encourage you to tell the relevant developer that you spoke with us and sent you there, and ideally report the issue on a public location (such as a Spigot forum topic, or a GitHub issues page) and link us to the public post you made, so we can work with that developer to solve the issue for you.

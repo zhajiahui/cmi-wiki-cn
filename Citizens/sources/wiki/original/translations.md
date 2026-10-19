@@ -1,0 +1,25 @@
+The newest releases of Citizens2 is fully translatable into many languages. Server owners can easily choose which language they want Citizens messages to be displayed in, as long as a translation into that language has been completed.
+
+To set Citizens to a different language on your server, just open "plugins\Citizens\config.yml" and change "locale: en" (under general: translations: ). Set the "en" to the locale (ISO code) of the language you want to switch to, for instance "de" for German.
+
+You can also edit the messages for any language on your server by opening that language's file in Citizens\lang\
+
+## Available translations
+
+Currently, Citizens has been translated into the following languages:
+
+- French (fr) by leagris
+- German (de) by SpaceEmotion
+- Dutch (nl) by sjoerdtim
+
+We thank our translators, and we welcome translations for other languages.
+
+## So how do I make my own?
+
+To get started with a new translation, make a copy of the messages_en.properties file and change its filename to use a new locale, for instance messages_it.properties for Italian. Translate the strings inside this file, and you're done!
+
+## How do language files work?
+
+Language files are a collection of sentences ('strings') in a properties file. They allow Citizens to request a string for a specific action based on a key, such as citizens.notifications.enabled. Each language file contains a locale in its name - that is, the ISO code of the language it's for. As an example, the language file for English is called "messages_en.properties"
+
+By default, Citizens will use the system locale for translations, but will use the general.translation.locale setting from Citizens' config.yml if it's present.

@@ -1,0 +1,35 @@
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://meta.denizenscript.com/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+<!-- Forced to use Wiki link formatting... Other than that, try to use HTML -->
+<h2>What is Depenizen?</h2>
+Depenizen is a simple plugin that does exactly what its name implies: adds external plugin dependencies to Denizen. It adds commands, tags, events, etc for use with other plugins (such as mcMMO, Factions, and Towny) into Denizen, so you can control everything that goes on and maximize the RPG feel you want for your server.
+<h2>How do I install Depenizen?</h2>
+<ol>
+  <li>[[Installation|Install Citizens 2]]
+  <li>Download the latest development version of [http://ci.citizensnpcs.co/job/Denizen/lastSuccessfulBuild/ Denizen].
+  <li>Download the latest development version of [http://ci.citizensnpcs.co/job/Depenizen/lastSuccessfulBuild/ Depenizen].
+  <li>Place the plugins in your plugins folder and restart your server.
+</ol>
+<h2>What plugins does Depenizen currently support?</h2>
+You can find a list of all supported plugins [[Supported Plugins|here]].
+<h2>Can I request a new plugin be supported by Depenizen?</h2>
+Sure, just ask us on the GitHub issues page [https://github.com/DenizenScript/Depenizen/issues here]. Be sure to include the plugin name, a link to the BukkitDev page, and details about what commands, tags, or events you want implemented into Depenizen. We'll get back to you as soon as possible.

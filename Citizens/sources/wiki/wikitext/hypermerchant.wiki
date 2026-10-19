@@ -1,0 +1,95 @@
+== HyperMerchant ==
+
+[http://dev.bukkit.org/bukkit-plugins/hypermerchant/ HyperMerchant] is a merchant npc for use with HyperConomy shops.
+
+Features include:
+
+* An easy to use Inventory based GUI for your players to buy and sell from your HyperConomy shops.
+
+* Should work nicely with HyperConomy shop permissions.
+
+* Toggleable Merchant off-duty mode. Close any store temporarily with a simple command.
+
+* Simple commands to change NPC Greeting, Farewell, Off-Duty, and Deny Service/No Permission messages.
+
+
+Much of the information on this page may not be up to date. Please visit the HyperMerchant bukkitdev page for the latest info.
+
+==== Where to get latest version ====
+
+HyperMerchant 1.57-dev is the latest release on [http://dev.bukkit.org/bukkit-plugins/hypermerchant/ bukkitdev]. It is compatible with Bukkit/Spigot 1.8.
+
+The [http://ci.citizensnpcs.co/job/HyperMerchant/ latest dev build] is available at the CI server. 
+
+
+There is a [http://dev.bukkit.org/bukkit-plugins/hypermerchant/pages/compatibility/ compatibility guide] for other versions of Bukkit.
+
+
+==== How to install ====
+Make sure you have a compatible version of HyperConomy installed.
+
+Save the HyperMerchant.jar into your plugin folder
+
+==== How to use ====
+
+# Have a HyperConomy shop already set up.
+# Create an npc: /create npc my_shopkeeper
+# Assign npc the hypermerchant trait: /trait hypermerchant
+# Assign npc to the shop: /hmerchant setshop shop-name
+
+That is it. You can now open that shop's menu by interacting with my_shopkeeper.
+
+Alternately, you can open the shop's menu using the /shopmenu or /remotemenu commands
+
+There is a short video demonstrating most of the plugin functionality at [http://dev.bukkit.org/bukkit-plugins/hypermerchant/ bukkitdev].
+
+
+==== Other npc commands ====
+* /'''hmerchant''' ''offduty''    - toggle npc off-duty mode.
+* /'''hmerchant''' ''greeting'' Hi, welcome to my shop.   --- assign what npc will say when clicked upon.
+* /'''hmerchant''' ''farewell'' Thanks for the money, dude!   --- assign what npc will say when store menu is closed.
+* /'''hmerchant''' ''closed'' Sorry, im on my lunch break.    --- assign what npc will say when set to off-duty mode.
+* /'''hmerchant''' ''deny'' You are not permitted to shop here.    --- assign what npc will say if player doesn't have proper permissions.
+* /'''hmerchant''' ''setshop'' shop_name_here   --- assign what shop's inventory is displayed when npc is clicked on. The npc does not have to be inside the shop or even in the same world as the shop.
+
+The above commands all operate upon the currently selected npc, unless the --id flag is specified:
+
+* /'''hmerchant''' ''greeting'' Hi, welcome to my shop. ''--id'' 71
+or
+* /'''hmerchant''' ''--id'' 71 ''greeting'' Hi, welcome to my shop.
+
+
+==== HyperMerchant also includes the following conveniance commands: ====
+* /'''remotemenu''' ''[shopname]''    - open a shop's menu from anywhere.
+* /'''shopmenu'''    - open the menu of the shop you are standing in.
+* /'''rslist'''    - list the names of all stores that can be accessed with /remotemenu command.
+* /'''onduty'''    - Toggle whether a player shop owner is open for business.
+
+
+
+==== Other features: ====
+Players who own a shop can be clicked on by players who wish to do business with them.
+Shop owners can  use the /onduty command to disable this functionality, and it can be disabled in the config.yml file.
+You can limit shop owners to only doing business while inside their shop.
+
+
+permissions:
+   hypermerchant.*:
+      description: Gives access to all HyperMerchant commands
+      children:
+         hypermerchant.menu: true
+         hypermerchant.remote: true
+         hypermerchant.npc: true
+         hypermerchant.manage: true
+   hypermerchant.menu:
+      description: Allow use of the /shopmenu command.
+      default: true
+   hypermerchant.npc:
+      description: Allow interaction with hypermerchant npc.
+      default: true
+   hypermerchant.remote:
+      description: Allow use of the /remotemenu command.
+      default: op
+   hypermerchant.manage:
+      description: Allow use of the /hmerchant command.
+      default: op

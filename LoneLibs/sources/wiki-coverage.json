@@ -1,0 +1,110 @@
+{
+  "project": "LoneLibs",
+  "snapshot": {
+    "date": "2026-10-19",
+    "timezone": "Asia/Taipei",
+    "manifest_generated_at": "2026-10-19T15:53:03.098Z"
+  },
+  "version": {
+    "supplied_component_version": "1.0.65"
+  },
+  "scope": "全部已发现官方非 API 文档；纯 API/SDK 接口参考排除，混合页面仅按列明片段排除。",
+  "candidate_urls": [
+    "https://www.spigotmc.org/resources/outdated-lonelibs.75974/",
+    "https://github.com/JavaPlugins/LoneLibs/blob/master/README.md"
+  ],
+  "candidates": [
+    {
+      "url": "https://www.spigotmc.org/resources/outdated-lonelibs.75974/",
+      "status": "translated",
+      "file": "wiki/plugin-page.md",
+      "source_file": "sources/wiki/original/plugin-page.md",
+      "source_sha256": "765d1e756edae7cefb024c66ece3a363290d89f54946db743d8f7d46ed5fbb16"
+    },
+    {
+      "url": "https://github.com/JavaPlugins/LoneLibs/blob/master/README.md",
+      "status": "translated",
+      "file": "wiki/readme.md",
+      "source_file": "sources/wiki/original/readme.md",
+      "source_sha256": "64679ae07cfcb7769ff59d02a3c5763df5d98ae48ba59910366acb6323611456",
+      "excluded_api_sections": [
+        {
+          "url": "https://github.com/JavaPlugins/LoneLibs/blob/master/README.md",
+          "scope": "sections_only",
+          "reason": "仅排除 API Maven 依赖接入示例；弃用说明和完整所含库清单已译。",
+          "sections": [
+            "This API requires LoneLibs to be added to your dependencies. 及两个 XML 代码块"
+          ]
+        }
+      ]
+    }
+  ],
+  "excluded_api": [
+    {
+      "url": "https://github.com/JavaPlugins/LoneLibs/blob/master/README.md",
+      "scope": "sections_only",
+      "reason": "仅排除 API Maven 依赖接入示例；弃用说明和完整所含库清单已译。",
+      "sections": [
+        "This API requires LoneLibs to be added to your dependencies. 及两个 XML 代码块"
+      ]
+    }
+  ],
+  "unavailable": [],
+  "actual_page_count": 2,
+  "translated_pages": 2,
+  "untranslated_available_non_api_pages": 0,
+  "all_discovered_candidates_classified": true,
+  "independent_wiki_found": false,
+  "assets": {
+    "ledger": "sources/wiki/assets.json",
+    "archived_source_entries": 0,
+    "unique_local_files": 0,
+    "unavailable": [
+      {
+        "source_url": "https://proxy.spigotmc.org/327220809a0bdd5b08d13722a2346c61d2cad2cf/68747470733a2f2f7073746174732e646576732e626565722f7369676e6174757265732f62756b6b69742f4c6f6e654c6962732e737667",
+        "source_pages": [
+          "https://www.spigotmc.org/resources/outdated-lonelibs.75974/"
+        ],
+        "rendered_urls": [
+          "//proxy.spigotmc.org/327220809a0bdd5b08d13722a2346c61d2cad2cf/68747470733a2f2f7073746174732e646576732e626565722f7369676e6174757265732f62756b6b69742f4c6f6e654c6962732e737667"
+        ],
+        "status": "unavailable",
+        "error": "404 Client Error: Not Found for url: https://proxy.spigotmc.org/327220809a0bdd5b08d13722a2346c61d2cad2cf/68747470733a2f2f7073746174732e646576732e626565722f7369676e6174757265732f62756b6b69742f4c6f6e654c6962732e737667"
+      },
+      {
+        "source_url": "https://proxy.spigotmc.org/b3ab04fb2787f07ee931fac7ee8ef562e6999e5d/687474703a2f2f612e646576732e626565722f7669736974732d737069676f742d6c6f6e656c696273",
+        "source_pages": [
+          "https://www.spigotmc.org/resources/outdated-lonelibs.75974/"
+        ],
+        "rendered_urls": [
+          "//proxy.spigotmc.org/b3ab04fb2787f07ee931fac7ee8ef562e6999e5d/687474703a2f2f612e646576732e626565722f7669736974732d737069676f742d6c6f6e656c696273"
+        ],
+        "status": "unavailable",
+        "error": "HTTPConnectionPool(host='127.0.0.1', port=7890): Read timed out. (read timeout=15)"
+      }
+    ]
+  },
+  "validation": {
+    "status": "failed",
+    "report": "sources/wiki/validation.json",
+    "verbatim_code_blocks": 0,
+    "protected_inline_tokens": 0,
+    "source_table_rows": 0,
+    "translated_table_rows": 0,
+    "pages": 2,
+    "errors": [
+      "Duplicate HTML anchors wiki/readme.md"
+    ],
+    "warnings": [
+      {
+        "asset_unavailable": "https://proxy.spigotmc.org/327220809a0bdd5b08d13722a2346c61d2cad2cf/68747470733a2f2f7073746174732e646576732e626565722f7369676e6174757265732f62756b6b69742f4c6f6e654c6962732e737667",
+        "error": "404 Client Error: Not Found for url: https://proxy.spigotmc.org/327220809a0bdd5b08d13722a2346c61d2cad2cf/68747470733a2f2f7073746174732e646576732e626565722f7369676e6174757265732f62756b6b69742f4c6f6e654c6962732e737667"
+      },
+      {
+        "asset_unavailable": "https://proxy.spigotmc.org/b3ab04fb2787f07ee931fac7ee8ef562e6999e5d/687474703a2f2f612e646576732e626565722f7669736974732d737069676f742d6c6f6e656c696273",
+        "error": "HTTPConnectionPool(host='127.0.0.1', port=7890): Read timed out. (read timeout=15)"
+      }
+    ]
+  },
+  "documentation_structure": "无独立 Wiki；两份正式项目说明。"
+}

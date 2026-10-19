@@ -1,0 +1,15 @@
+{
+  "project": "WorldGuard",
+  "pages": 26,
+  "code_blocks": 115,
+  "inline_tokens": 391,
+  "assets": 0,
+  "errors": [],
+  "asset_and_link_checks": {
+    "pages": 26,
+    "assets": 0,
+    "local_links": 179,
+    "local_images": 0,
+    "errors": []
+  }
+}

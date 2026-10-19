@@ -1,0 +1,53 @@
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://meta.denizenscript.com/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+
+{{Denizen Command Color 2|aliceblue|
+WANDER
+| (RADIUS:#) (DELAY:#) (SPEED:#) (FILTER:#:#,#:#..) (BOOKMARK:BookmarkName)
+| Causes the Denizen to wander aimlessly. Many options to dictate range and area.
+Modifiers:
+*RADIUS: Radius within which to wander.
+*DELAY: The time, in seconds, between movements.
+*SPEED: The walking speed while wandering.
+*FILTER: The block ids or names the Denizen is allowed to wander to
+*BOOKMARK: A location bookmark around which to wander
+'''Example Usages'''
+<pre>
+   - 1 WANDER DELAY:12 RADIUS:10 SPEED:.75 FILTER:COBBLESTONE,GRAVEL,5
+</pre>
+}}
+
+{{Denizen Command Color 2|aliceblue|
+TASK 
+|[SCRIPT:ScriptNAme] (REPEATS:#) (DELAY:#) (DURATION:#) 
+| Runs a [[Denizen/0.7/Task_Scripts|Task Script]] repeatedly.
+Modifiers:
+*SCRIPT: The Task script to run. Note that there will be no "player" associated with this script so some commands will not work.
+*REPEATS: The number of times to repeat the TASK. By default the scripts runs repeatedly until a new activity is assigned.
+*DELAY: The number of seconds to wait between repeats.
+*DURATION: The number of seconds to pause other activities while the task runs.
+'''Example Usages'''
+   - 1 TASK SCRIPT:WalkHome REPEATS:0
+   - 1 TASK SCRIPT:ComplainAboutThings DELAY:10 DURATION:1
+}}
+
+[[Category:Denizen 0.7]]

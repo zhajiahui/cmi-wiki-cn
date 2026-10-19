@@ -1,0 +1,2872 @@
+{
+  "project": "Citizens",
+  "version": "2.0.43-SNAPSHOT (build 4210)",
+  "snapshot": {
+    "at": "2026-10-19T15:08:41.713262+00:00",
+    "index_url": "https://wiki.citizensnpcs.co/api.php?action=query&list=allpages&aplimit=max&format=json",
+    "commit": null,
+    "method": "MediaWiki allpages in namespaces 0,4,12,14 + per-page fixed revisions + parsed article links"
+  },
+  "discovered_urls": [
+    "https://wiki.citizensnpcs.co/1.x",
+    "https://wiki.citizensnpcs.co/1.x/Basic_Example_Quests",
+    "https://wiki.citizensnpcs.co/1.x/Blacksmith",
+    "https://wiki.citizensnpcs.co/1.x/Characters",
+    "https://wiki.citizensnpcs.co/1.x/Citizens.yml",
+    "https://wiki.citizensnpcs.co/1.x/Commands_and_Permissions",
+    "https://wiki.citizensnpcs.co/1.x/Configuration",
+    "https://wiki.citizensnpcs.co/1.x/Evil_NPCs",
+    "https://wiki.citizensnpcs.co/1.x/Formatting_Questing_Text",
+    "https://wiki.citizensnpcs.co/1.x/Frequently_Asked_Questions",
+    "https://wiki.citizensnpcs.co/1.x/Guard",
+    "https://wiki.citizensnpcs.co/1.x/Healer",
+    "https://wiki.citizensnpcs.co/1.x/Installing",
+    "https://wiki.citizensnpcs.co/1.x/List_of_Initial_node_types",
+    "https://wiki.citizensnpcs.co/1.x/List_of_Objective_node_types",
+    "https://wiki.citizensnpcs.co/1.x/List_of_Requirement_node_types",
+    "https://wiki.citizensnpcs.co/1.x/List_of_Rewards_node_types",
+    "https://wiki.citizensnpcs.co/1.x/Message_Formatting",
+    "https://wiki.citizensnpcs.co/1.x/Mobs.yml",
+    "https://wiki.citizensnpcs.co/1.x/More_Example_Quests",
+    "https://wiki.citizensnpcs.co/1.x/Npc-profiles.yml",
+    "https://wiki.citizensnpcs.co/1.x/Permissions",
+    "https://wiki.citizensnpcs.co/1.x/Quester",
+    "https://wiki.citizensnpcs.co/1.x/Quests.yml",
+    "https://wiki.citizensnpcs.co/1.x/Quick_Start",
+    "https://wiki.citizensnpcs.co/1.x/Trader",
+    "https://wiki.citizensnpcs.co/1.x/Waypoints",
+    "https://wiki.citizensnpcs.co/1.x/Wizard",
+    "https://wiki.citizensnpcs.co/A_message_to_Wikia",
+    "https://wiki.citizensnpcs.co/Adventures",
+    "https://wiki.citizensnpcs.co/Alchemist",
+    "https://wiki.citizensnpcs.co/Behaviors",
+    "https://wiki.citizensnpcs.co/Blacksmith",
+    "https://wiki.citizensnpcs.co/Builder",
+    "https://wiki.citizensnpcs.co/Builder/Builder_and_Denizen",
+    "https://wiki.citizensnpcs.co/Builder/Configuration",
+    "https://wiki.citizensnpcs.co/Category:Characters",
+    "https://wiki.citizensnpcs.co/Category:Citizens1",
+    "https://wiki.citizensnpcs.co/Category:Configuration",
+    "https://wiki.citizensnpcs.co/Category:Templates",
+    "https://wiki.citizensnpcs.co/Category:Usage",
+    "https://wiki.citizensnpcs.co/Changelog",
+    "https://wiki.citizensnpcs.co/Characters",
+    "https://wiki.citizensnpcs.co/Cititrader/Permissions",
+    "https://wiki.citizensnpcs.co/CitiTraders",
+    "https://wiki.citizensnpcs.co/Citizens_2",
+    "https://wiki.citizensnpcs.co/Citizens_IRC",
+    "https://wiki.citizensnpcs.co/Citizens_Wiki",
+    "https://wiki.citizensnpcs.co/Citizens_Wiki:Copyrights",
+    "https://wiki.citizensnpcs.co/Citizens.yml",
+    "https://wiki.citizensnpcs.co/CitizensUI",
+    "https://wiki.citizensnpcs.co/Color_Codes",
+    "https://wiki.citizensnpcs.co/Commands",
+    "https://wiki.citizensnpcs.co/Compatibility",
+    "https://wiki.citizensnpcs.co/Config.yml",
+    "https://wiki.citizensnpcs.co/Configuration",
+    "https://wiki.citizensnpcs.co/Controllable_NPCs",
+    "https://wiki.citizensnpcs.co/Costs",
+    "https://wiki.citizensnpcs.co/Cracks",
+    "https://wiki.citizensnpcs.co/Data_Storage",
+    "https://wiki.citizensnpcs.co/Denizen",
+    "https://wiki.citizensnpcs.co/Denizen_changelog",
+    "https://wiki.citizensnpcs.co/Denizen/0.6",
+    "https://wiki.citizensnpcs.co/Denizen/0.7",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Activity_Scripts",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Activity_Scripts/Activities",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Assignments",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Before_Using_Denizen",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Bonus_Content/Pictures",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Color_Codes",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/config.yml",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Example_Scripts/Advanced_Scripts",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Example_Scripts/Beginner_Scripts",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/File_Structure",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/In_Game_Commands",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Interact_Scripts",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Interact_Scripts/Commands",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Interact_Scripts/Interact_Requirements",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Interact_Scripts/Triggers",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Interact_Scritps/Custom_Commands",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Migration",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Replaceables",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Replaceables.8",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Start-up_kit",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Task_Scripts",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Troubleshooting",
+    "https://wiki.citizensnpcs.co/Denizen/0.8/Interact_Scripts/Commands",
+    "https://wiki.citizensnpcs.co/Denizen/Additional_Traits",
+    "https://wiki.citizensnpcs.co/Denizen/Commands",
+    "https://wiki.citizensnpcs.co/Denizen/Commands/Animate",
+    "https://wiki.citizensnpcs.co/Denizen/Commands/Flag",
+    "https://wiki.citizensnpcs.co/Denizen/dIRCBot",
+    "https://wiki.citizensnpcs.co/Denizen/Introduction",
+    "https://wiki.citizensnpcs.co/Denizen/Notepad++",
+    "https://wiki.citizensnpcs.co/Denizen/Replaceable_Tags",
+    "https://wiki.citizensnpcs.co/Denizen/Requirements",
+    "https://wiki.citizensnpcs.co/Denizen/Script_Commands",
+    "https://wiki.citizensnpcs.co/Denizen/Script_Samples",
+    "https://wiki.citizensnpcs.co/Denizen/Subplugins",
+    "https://wiki.citizensnpcs.co/Denizen/Triggers",
+    "https://wiki.citizensnpcs.co/Denizen/Types_of_Scripts",
+    "https://wiki.citizensnpcs.co/DenizenTemp",
+    "https://wiki.citizensnpcs.co/Depenizen",
+    "https://wiki.citizensnpcs.co/Depenizen/BattleNight",
+    "https://wiki.citizensnpcs.co/Depenizen/Command-List",
+    "https://wiki.citizensnpcs.co/Depenizen/Frequently_Asked_Questions",
+    "https://wiki.citizensnpcs.co/Depenizen/Supported-Plugins",
+    "https://wiki.citizensnpcs.co/Depenizen/Tag-List",
+    "https://wiki.citizensnpcs.co/Dialog_Examples",
+    "https://wiki.citizensnpcs.co/Dialog_Reference",
+    "https://wiki.citizensnpcs.co/Dialog_Tutorial",
+    "https://wiki.citizensnpcs.co/Downloads",
+    "https://wiki.citizensnpcs.co/DtlTraders",
+    "https://wiki.citizensnpcs.co/DtlTraders/bankers",
+    "https://wiki.citizensnpcs.co/DtlTraders/banking",
+    "https://wiki.citizensnpcs.co/DtlTraders/basics",
+    "https://wiki.citizensnpcs.co/DtlTraders/Commands",
+    "https://wiki.citizensnpcs.co/DtlTraders/config",
+    "https://wiki.citizensnpcs.co/DtlTraders/denizen/commands",
+    "https://wiki.citizensnpcs.co/DtlTraders/denizen/support",
+    "https://wiki.citizensnpcs.co/DtlTraders/denizen/triggers",
+    "https://wiki.citizensnpcs.co/DtlTraders/locale",
+    "https://wiki.citizensnpcs.co/DtlTraders/managing",
+    "https://wiki.citizensnpcs.co/DtlTraders/patterns",
+    "https://wiki.citizensnpcs.co/DtlTraders/permissions",
+    "https://wiki.citizensnpcs.co/DtlTraders/traders",
+    "https://wiki.citizensnpcs.co/DtlTraders/trading",
+    "https://wiki.citizensnpcs.co/DtlTraders/wallets",
+    "https://wiki.citizensnpcs.co/Editors",
+    "https://wiki.citizensnpcs.co/Frequently_Asked_Questions",
+    "https://wiki.citizensnpcs.co/Help:Contents",
+    "https://wiki.citizensnpcs.co/HyperMerchant",
+    "https://wiki.citizensnpcs.co/Installation",
+    "https://wiki.citizensnpcs.co/Installing_Character_Types",
+    "https://wiki.citizensnpcs.co/IRC_Rules",
+    "https://wiki.citizensnpcs.co/ITEM_NAME",
+    "https://wiki.citizensnpcs.co/Limits",
+    "https://wiki.citizensnpcs.co/Logs",
+    "https://wiki.citizensnpcs.co/Main_Page",
+    "https://wiki.citizensnpcs.co/MinecartMania",
+    "https://wiki.citizensnpcs.co/Minecraft_1.8",
+    "https://wiki.citizensnpcs.co/MoxieNPC",
+    "https://wiki.citizensnpcs.co/Multiple_Traits",
+    "https://wiki.citizensnpcs.co/News",
+    "https://wiki.citizensnpcs.co/NPC_Commands",
+    "https://wiki.citizensnpcs.co/Parrot",
+    "https://wiki.citizensnpcs.co/Permissions",
+    "https://wiki.citizensnpcs.co/Plugin_Conflict",
+    "https://wiki.citizensnpcs.co/Postal",
+    "https://wiki.citizensnpcs.co/Quests",
+    "https://wiki.citizensnpcs.co/Race_Reference",
+    "https://wiki.citizensnpcs.co/Replaceables",
+    "https://wiki.citizensnpcs.co/Scripting",
+    "https://wiki.citizensnpcs.co/Sentinel",
+    "https://wiki.citizensnpcs.co/Sentry",
+    "https://wiki.citizensnpcs.co/Sentry/Builder_and_Denizen",
+    "https://wiki.citizensnpcs.co/Sentry/Configuration",
+    "https://wiki.citizensnpcs.co/Sentry/Permissions",
+    "https://wiki.citizensnpcs.co/Sentry/Sentry_and_Denizen",
+    "https://wiki.citizensnpcs.co/Shops",
+    "https://wiki.citizensnpcs.co/Skins",
+    "https://wiki.citizensnpcs.co/SpoutPlugin",
+    "https://wiki.citizensnpcs.co/Supported_Versions",
+    "https://wiki.citizensnpcs.co/Templates",
+    "https://wiki.citizensnpcs.co/Test",
+    "https://wiki.citizensnpcs.co/Text_Syntax",
+    "https://wiki.citizensnpcs.co/TODO",
+    "https://wiki.citizensnpcs.co/Trader",
+    "https://wiki.citizensnpcs.co/Traders",
+    "https://wiki.citizensnpcs.co/Traits",
+    "https://wiki.citizensnpcs.co/Translations",
+    "https://wiki.citizensnpcs.co/Troubleshooting",
+    "https://wiki.citizensnpcs.co/Tutorials",
+    "https://wiki.citizensnpcs.co/Types",
+    "https://wiki.citizensnpcs.co/UltraTrader",
+    "https://wiki.citizensnpcs.co/Versions",
+    "https://wiki.citizensnpcs.co/Waypoints",
+    "https://wiki.citizensnpcs.co/Wikia",
+    "https://wiki.citizensnpcs.co/YAML",
+    "https://wiki.citizensnpcs.co/1.x/API",
+    "https://wiki.citizensnpcs.co/API",
+    "https://wiki.citizensnpcs.co/Citizens_Wiki/CitizensUI",
+    "https://wiki.citizensnpcs.co/Custom_Denizen_Commands",
+    "https://wiki.citizensnpcs.co/Denizen_API",
+    "https://wiki.citizensnpcs.co/Denizen_API_Command_Template",
+    "https://wiki.citizensnpcs.co/Denizen_config.yml",
+    "https://wiki.citizensnpcs.co/Denizen_temp",
+    "https://wiki.citizensnpcs.co/Denizen/",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Getting_Started",
+    "https://wiki.citizensnpcs.co/Denizen/Quick_Guide_to_Using_Denizen",
+    "https://wiki.citizensnpcs.co/TestCharacterType",
+    "https://wiki.citizensnpcs.co/Basic_Example_Quests",
+    "https://wiki.citizensnpcs.co/Commands_and_Permissions",
+    "https://wiki.citizensnpcs.co/Mobs.yml",
+    "https://wiki.citizensnpcs.co/Evil_NPCs",
+    "https://wiki.citizensnpcs.co/Npc_profiles.yml",
+    "https://wiki.citizensnpcs.co/Quests.yml",
+    "https://wiki.citizensnpcs.co/Quester",
+    "https://wiki.citizensnpcs.co/Formatting_Questing_Text",
+    "https://wiki.citizensnpcs.co/Guard",
+    "https://wiki.citizensnpcs.co/Healer",
+    "https://wiki.citizensnpcs.co/Installing",
+    "https://wiki.citizensnpcs.co/List_of_Initial_node_types",
+    "https://wiki.citizensnpcs.co/List_of_Objective_node_types",
+    "https://wiki.citizensnpcs.co/List_of_Requirement_node_types",
+    "https://wiki.citizensnpcs.co/Notes_from_aufdemrand",
+    "https://wiki.citizensnpcs.co/List_of_Rewards_node_types",
+    "https://wiki.citizensnpcs.co/Message_Formatting",
+    "https://wiki.citizensnpcs.co/More_Example_Quests",
+    "https://wiki.citizensnpcs.co/Npc-profiles.yml",
+    "https://wiki.citizensnpcs.co/1.x/Quest_Text_Formatting_Tips",
+    "https://wiki.citizensnpcs.co/A_Two-Part_Example_Quest",
+    "https://wiki.citizensnpcs.co/More_example_quests",
+    "https://wiki.citizensnpcs.co/Questing_Cook-Book",
+    "https://wiki.citizensnpcs.co/Advanced_Questing_Ideas",
+    "https://wiki.citizensnpcs.co/Quick_Start",
+    "https://wiki.citizensnpcs.co/Wizard",
+    "https://wiki.citizensnpcs.co/Denizen_Actions",
+    "https://wiki.citizensnpcs.co/Interact_Script_Requirements",
+    "https://wiki.citizensnpcs.co/Denizen/Color_Codes",
+    "https://wiki.citizensnpcs.co/Denizen/Interact_Scripts",
+    "https://wiki.citizensnpcs.co/Denizen/Interact_Scripts/Interact_Requirements",
+    "https://wiki.citizensnpcs.co/Denizen/Example_Scripts/Advanced_Scripts",
+    "https://wiki.citizensnpcs.co/Denizen/config.yml",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Writing_Scripts",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Assigning_Scripts",
+    "https://wiki.citizensnpcs.co/Denizen/Interact_Scripts/Triggers",
+    "https://wiki.citizensnpcs.co/Denizen/Activity_Scripts/Activities",
+    "https://wiki.citizensnpcs.co/Location_Bookmark",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Interact_Scripts/Custom_Interact_Requirements",
+    "https://wiki.citizensnpcs.co/Denizen/In_Game_Commands",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Flags",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Listeners",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Interact_Scripts/Custom_Requirements",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Interact_Scripts/Custom_Triggers",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Activity_Scripts/Custom_Activities",
+    "https://wiki.citizensnpcs.co/Denizen/0.7/Activity_Scripts/Event_API",
+    "https://wiki.citizensnpcs.co/Denizen/Assignments",
+    "https://wiki.citizensnpcs.co/Denizen/Commands/If",
+    "https://wiki.citizensnpcs.co/Denizen/Script_Requirements",
+    "https://wiki.citizensnpcs.co/Denizen/Other",
+    "https://wiki.citizensnpcs.co/Supported_Plugins",
+    "https://wiki.citizensnpcs.co/Wallet",
+    "https://wiki.citizensnpcs.co/Activities",
+    "https://wiki.citizensnpcs.co/Click_Triggers",
+    "https://wiki.citizensnpcs.co/Denizen/Replaceables"
+  ],
+  "pages": [
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x",
+      "title": "1.x",
+      "status": "translated",
+      "file": "wiki/1.x.md",
+      "source_file": "sources/wiki/original/1.x.md",
+      "source_sha256": "571bed5cd782578c986a8dbe8757dc8d4abbb7ba740ca25ae0c2da1a72c913cc",
+      "revision": 1129,
+      "revision_timestamp": "2012-03-12T18:07:40Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/Basic_Example_Quests",
+      "title": "1.x/Basic Example Quests",
+      "status": "translated",
+      "file": "wiki/1.x-basic-example-quests.md",
+      "source_file": "sources/wiki/original/1.x-basic-example-quests.md",
+      "source_sha256": "bf7a0a385cfc4139def054ab56084a8e0d12ebe3130daa331ca19c17dac802e4",
+      "revision": 694,
+      "revision_timestamp": "2012-02-19T12:22:00Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/Blacksmith",
+      "title": "1.x/Blacksmith",
+      "status": "translated",
+      "file": "wiki/1.x-blacksmith.md",
+      "source_file": "sources/wiki/original/1.x-blacksmith.md",
+      "source_sha256": "109ebf737a6fc225500d076f5cb5399dc4dd3e61f56e13ea9d03729830020387",
+      "revision": 687,
+      "revision_timestamp": "2012-02-19T12:19:40Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/Characters",
+      "title": "1.x/Characters",
+      "status": "translated",
+      "file": "wiki/1.x-characters.md",
+      "source_file": "sources/wiki/original/1.x-characters.md",
+      "source_sha256": "80c9c9f2d2413794d689dd5679a090ac611bbab54576ac6eb14cdcc1559938b9",
+      "revision": 1311,
+      "revision_timestamp": "2012-05-01T13:48:27Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/Citizens.yml",
+      "title": "1.x/Citizens.yml",
+      "status": "translated",
+      "file": "wiki/1.x-citizens.yml.md",
+      "source_file": "sources/wiki/original/1.x-citizens.yml.md",
+      "source_sha256": "928c4d520be599bf1aa233c8e809520d2e48f3fb0493859050ca0f0965957703",
+      "revision": 675,
+      "revision_timestamp": "2012-02-19T12:14:59Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/Commands_and_Permissions",
+      "title": "1.x/Commands and Permissions",
+      "status": "translated",
+      "file": "wiki/1.x-commands-and-permissions.md",
+      "source_file": "sources/wiki/original/1.x-commands-and-permissions.md",
+      "source_sha256": "5bae2fd09fe3af23f329c9af969778a4ff6c1dd118d1e13766a44e1a8506dee1",
+      "revision": 1014,
+      "revision_timestamp": "2012-03-01T00:49:57Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/Configuration",
+      "title": "1.x/Configuration",
+      "status": "translated",
+      "file": "wiki/1.x-configuration.md",
+      "source_file": "sources/wiki/original/1.x-configuration.md",
+      "source_sha256": "e388d0c484ac0e2eb2c9cc7760c4384bd6db0b139bf4eb03af730733982bb50d",
+      "revision": 674,
+      "revision_timestamp": "2012-02-19T12:14:50Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/Evil_NPCs",
+      "title": "1.x/Evil NPCs",
+      "status": "translated",
+      "file": "wiki/1.x-evil-npcs.md",
+      "source_file": "sources/wiki/original/1.x-evil-npcs.md",
+      "source_sha256": "751812194cb187dcfe122c01312f7a243f61a4f14838f4e014b85b503695fced",
+      "revision": 689,
+      "revision_timestamp": "2012-02-19T12:20:01Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/Formatting_Questing_Text",
+      "title": "1.x/Formatting Questing Text",
+      "status": "translated",
+      "file": "wiki/1.x-formatting-questing-text.md",
+      "source_file": "sources/wiki/original/1.x-formatting-questing-text.md",
+      "source_sha256": "ab6592003bc259c673d5a38fbdff7fee94f9a696679779a712eac905fd704e02",
+      "revision": 982,
+      "revision_timestamp": "2012-02-28T14:45:45Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/Frequently_Asked_Questions",
+      "title": "1.x/Frequently Asked Questions",
+      "status": "translated",
+      "file": "wiki/1.x-frequently-asked-questions.md",
+      "source_file": "sources/wiki/original/1.x-frequently-asked-questions.md",
+      "source_sha256": "32124c22f555634cab7e204eeb2317e67e832b87f40bff43d8fdfe58ccf0e854",
+      "revision": 983,
+      "revision_timestamp": "2012-02-28T14:46:49Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/Guard",
+      "title": "1.x/Guard",
+      "status": "translated",
+      "file": "wiki/1.x-guard.md",
+      "source_file": "sources/wiki/original/1.x-guard.md",
+      "source_sha256": "546fd63aaf6f37cfa9e41dff4253ff2c93dafc8f5701929dcb3b9b3da2501c7c",
+      "revision": 1635,
+      "revision_timestamp": "2012-07-18T20:52:05Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/Healer",
+      "title": "1.x/Healer",
+      "status": "translated",
+      "file": "wiki/1.x-healer.md",
+      "source_file": "sources/wiki/original/1.x-healer.md",
+      "source_sha256": "ea6f88cf972c4212e8e2fe14dce2c43bbf09ee6a361d1141bbd8aef6ae5c110e",
+      "revision": 683,
+      "revision_timestamp": "2012-02-19T12:18:52Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/Installing",
+      "title": "1.x/Installing",
+      "status": "translated",
+      "file": "wiki/1.x-installing.md",
+      "source_file": "sources/wiki/original/1.x-installing.md",
+      "source_sha256": "25a540c1c68f13aefc865b0fdc480ae4a6a39e70e91e125e877e6ac820b706ff",
+      "revision": 665,
+      "revision_timestamp": "2012-02-19T12:12:56Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/List_of_Initial_node_types",
+      "title": "1.x/List of Initial node types",
+      "status": "translated",
+      "file": "wiki/1.x-list-of-initial-node-types.md",
+      "source_file": "sources/wiki/original/1.x-list-of-initial-node-types.md",
+      "source_sha256": "c1ae1469515b5e341c0f55fd5cfe72bc6b6cbddcb387eaed9e519dd1daac53fb",
+      "revision": 690,
+      "revision_timestamp": "2012-02-19T12:20:25Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/List_of_Objective_node_types",
+      "title": "1.x/List of Objective node types",
+      "status": "translated",
+      "file": "wiki/1.x-list-of-objective-node-types.md",
+      "source_file": "sources/wiki/original/1.x-list-of-objective-node-types.md",
+      "source_sha256": "2ef19afc44efc6e53913040ae210e67168795380ff2bf61d0d93d564e1514310",
+      "revision": 1290,
+      "revision_timestamp": "2012-04-25T19:19:26Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/List_of_Requirement_node_types",
+      "title": "1.x/List of Requirement node types",
+      "status": "translated",
+      "file": "wiki/1.x-list-of-requirement-node-types.md",
+      "source_file": "sources/wiki/original/1.x-list-of-requirement-node-types.md",
+      "source_sha256": "f28e31a4f5110df054816fa864760779fc29f837b2a5672fb6ef36a9a95fc651",
+      "revision": 692,
+      "revision_timestamp": "2012-02-19T12:20:47Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/List_of_Rewards_node_types",
+      "title": "1.x/List of Rewards node types",
+      "status": "translated",
+      "file": "wiki/1.x-list-of-rewards-node-types.md",
+      "source_file": "sources/wiki/original/1.x-list-of-rewards-node-types.md",
+      "source_sha256": "22bc0e983eb74e0db14742f1af51d47bf858b62a97deefe1e4298bd27b5b6a9d",
+      "revision": 697,
+      "revision_timestamp": "2012-02-19T12:27:19Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/Message_Formatting",
+      "title": "1.x/Message Formatting",
+      "status": "translated",
+      "file": "wiki/1.x-message-formatting.md",
+      "source_file": "sources/wiki/original/1.x-message-formatting.md",
+      "source_sha256": "be2fc29daa2e2da2dd45ee115097425219c17eccfee445f4c320c2fa85599f2d",
+      "revision": 669,
+      "revision_timestamp": "2012-02-19T12:13:36Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/Mobs.yml",
+      "title": "1.x/Mobs.yml",
+      "status": "translated",
+      "file": "wiki/1.x-mobs.yml.md",
+      "source_file": "sources/wiki/original/1.x-mobs.yml.md",
+      "source_sha256": "a6c47041fee4d1d7b134f2ab45106155185e185f87ad5cbb884587e5a08452d7",
+      "revision": 677,
+      "revision_timestamp": "2012-02-19T12:15:17Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/More_Example_Quests",
+      "title": "1.x/More Example Quests",
+      "status": "translated",
+      "file": "wiki/1.x-more-example-quests.md",
+      "source_file": "sources/wiki/original/1.x-more-example-quests.md",
+      "source_sha256": "9a5cf9541147de0035385f547164e82b03cfbf2dc10dd007026bf3da36e37fa9",
+      "revision": 981,
+      "revision_timestamp": "2012-02-28T14:44:55Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/Npc-profiles.yml",
+      "title": "1.x/Npc-profiles.yml",
+      "status": "translated",
+      "file": "wiki/1.x-npc-profiles.yml.md",
+      "source_file": "sources/wiki/original/1.x-npc-profiles.yml.md",
+      "source_sha256": "6e2126e3457acd58d80a2f632e14f1b67d8ce30cc8b7ee3848ddd65a6da217f2",
+      "revision": 680,
+      "revision_timestamp": "2012-02-19T12:15:43Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/Permissions",
+      "title": "1.x/Permissions",
+      "status": "translated",
+      "file": "wiki/1.x-permissions.md",
+      "source_file": "sources/wiki/original/1.x-permissions.md",
+      "source_sha256": "660f5c2ac5f611a3242e1e5ff543e3a309f0518bb8e47142f20cac41f3902d5b",
+      "revision": 681,
+      "revision_timestamp": "2012-02-19T12:15:55Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/Quester",
+      "title": "1.x/Quester",
+      "status": "translated",
+      "file": "wiki/1.x-quester.md",
+      "source_file": "sources/wiki/original/1.x-quester.md",
+      "source_sha256": "2b4a7b97219a246a63889efda7d325821e1274c30a24ad3de045cb9050f46a41",
+      "revision": 1314,
+      "revision_timestamp": "2012-05-01T13:49:46Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/Quests.yml",
+      "title": "1.x/Quests.yml",
+      "status": "translated",
+      "file": "wiki/1.x-quests.yml.md",
+      "source_file": "sources/wiki/original/1.x-quests.yml.md",
+      "source_sha256": "c07777a7b7105112b6452df14a046a7791ee16b0a09469da9ee708cf63ab0a31",
+      "revision": 1345,
+      "revision_timestamp": "2012-05-11T02:57:11Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/Quick_Start",
+      "title": "1.x/Quick Start",
+      "status": "translated",
+      "file": "wiki/1.x-quick-start.md",
+      "source_file": "sources/wiki/original/1.x-quick-start.md",
+      "source_sha256": "f52672c35f6f73457a85050383faa8fde1fe3633007f7cb963e365a5a117bbd9",
+      "revision": 979,
+      "revision_timestamp": "2012-02-28T14:42:46Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/Trader",
+      "title": "1.x/Trader",
+      "status": "translated",
+      "file": "wiki/1.x-trader.md",
+      "source_file": "sources/wiki/original/1.x-trader.md",
+      "source_sha256": "fcc94ff0c4f7b66677d8d2bc6f8a7a2a11130a71e475012aec791ff74cc97447",
+      "revision": 1480,
+      "revision_timestamp": "2012-05-23T05:57:14Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/Waypoints",
+      "title": "1.x/Waypoints",
+      "status": "translated",
+      "file": "wiki/1.x-waypoints.md",
+      "source_file": "sources/wiki/original/1.x-waypoints.md",
+      "source_sha256": "fa8c8e06de26c1dead3df035e1a67c2908c455b89eb3e24519a267732111c4cf",
+      "revision": 671,
+      "revision_timestamp": "2012-02-19T12:13:49Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/Wizard",
+      "title": "1.x/Wizard",
+      "status": "translated",
+      "file": "wiki/1.x-wizard.md",
+      "source_file": "sources/wiki/original/1.x-wizard.md",
+      "source_sha256": "012a55f7f343d59b39846370df946fb79f2fe4c5098bafb25ba348f07bd3f6f2",
+      "revision": 1198,
+      "revision_timestamp": "2012-04-19T23:22:42Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/A_message_to_Wikia",
+      "title": "A message to Wikia",
+      "status": "translated",
+      "file": "wiki/a-message-to-wikia.md",
+      "source_file": "sources/wiki/original/a-message-to-wikia.md",
+      "source_sha256": "acd2b6a0f212bd96b6faa909f876ad4f65201512b90a7aeac57e79b61010f657",
+      "revision": 1317,
+      "revision_timestamp": "2012-05-02T13:16:08Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Adventures",
+      "title": "Adventures",
+      "status": "translated",
+      "file": "wiki/adventures.md",
+      "source_file": "sources/wiki/original/adventures.md",
+      "source_sha256": "43ff19c39b37aa1d86256ef74d51ee2ffcc8a4548a98516ed810085cc6c214c2",
+      "revision": 4785,
+      "revision_timestamp": "2013-08-26T06:27:22Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Alchemist",
+      "title": "Alchemist",
+      "status": "translated",
+      "file": "wiki/alchemist.md",
+      "source_file": "sources/wiki/original/alchemist.md",
+      "source_sha256": "062eab8f1c4085ce2a9ea4c09c417c3ff528eb9cd85252b8fadf765a8345e1d0",
+      "revision": 4825,
+      "revision_timestamp": "2013-09-19T05:42:46Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Behaviors",
+      "title": "Behaviors",
+      "status": "translated",
+      "file": "wiki/behaviors.md",
+      "source_file": "sources/wiki/original/behaviors.md",
+      "source_sha256": "b13f26b0acc0d99b1483e1a99b7ffd1f4aa3a87b45c83e9eb32430fc943f3b4f",
+      "revision": 5665,
+      "revision_timestamp": "2025-12-01T18:55:48Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Blacksmith",
+      "title": "Blacksmith",
+      "status": "translated",
+      "file": "wiki/blacksmith.md",
+      "source_file": "sources/wiki/original/blacksmith.md",
+      "source_sha256": "58a30798e8f32cf85615d1b17972aa62ec66a06b98adab0f28d3ccba58abb811",
+      "revision": 5143,
+      "revision_timestamp": "2018-10-12T19:06:32Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Builder",
+      "title": "Builder",
+      "status": "translated",
+      "file": "wiki/builder.md",
+      "source_file": "sources/wiki/original/builder.md",
+      "source_sha256": "4ef5f32ace9d5e149049025abe6df0ce7285ea6480c5e6c0ab51a0cc1b9d326a",
+      "revision": 5343,
+      "revision_timestamp": "2021-02-01T21:24:35Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Builder/Builder_and_Denizen",
+      "title": "Builder/Builder and Denizen",
+      "status": "translated",
+      "file": "wiki/builder-builder-and-denizen.md",
+      "source_file": "sources/wiki/original/builder-builder-and-denizen.md",
+      "source_sha256": "eda0230934d11999bf46a45956851638b7a7b52e3a7031c537a6a42553ae4cfa",
+      "revision": 4764,
+      "revision_timestamp": "2013-08-09T02:10:59Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Builder/Configuration",
+      "title": "Builder/Configuration",
+      "status": "translated",
+      "file": "wiki/builder-configuration.md",
+      "source_file": "sources/wiki/original/builder-configuration.md",
+      "source_sha256": "de1ff529361ec48091e2ffcc170d62abd6f0ee2f1c72a3eec9b82e629dcefe58",
+      "revision": 4593,
+      "revision_timestamp": "2013-05-13T04:13:33Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Category:Characters",
+      "title": "Category:Characters",
+      "status": "translated",
+      "file": "wiki/category-characters.md",
+      "source_file": "sources/wiki/original/category-characters.md",
+      "source_sha256": "0ff220dbd9c1d82febe5cd379eb9deeca2f910dc6b1dff198c6509b06906b081",
+      "revision": 862,
+      "revision_timestamp": "2012-02-24T01:29:37Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Category:Citizens1",
+      "title": "Category:Citizens1",
+      "status": "translated",
+      "file": "wiki/category-citizens1.md",
+      "source_file": "sources/wiki/original/category-citizens1.md",
+      "source_sha256": "8a4f656fb36af3e629323ad63531077a885cd814472a1e8de61c29c9903cdb4b",
+      "revision": 819,
+      "revision_timestamp": "2012-02-21T18:54:30Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Category:Configuration",
+      "title": "Category:Configuration",
+      "status": "translated",
+      "file": "wiki/category-configuration.md",
+      "source_file": "sources/wiki/original/category-configuration.md",
+      "source_sha256": "99f6721c5256eadb434a2f2089fac34f208483c942e3473ddd7410e42dd444f2",
+      "revision": 1978,
+      "revision_timestamp": "2012-08-08T21:04:49Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Category:Templates",
+      "title": "Category:Templates",
+      "status": "translated",
+      "file": "wiki/category-templates.md",
+      "source_file": "sources/wiki/original/category-templates.md",
+      "source_sha256": "c051f1f7796c5de18c9e17f22862acebd4dcea8d264d9d0080a82538cd70a553",
+      "revision": 1070,
+      "revision_timestamp": "2012-03-05T14:52:10Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Category:Usage",
+      "title": "Category:Usage",
+      "status": "translated",
+      "file": "wiki/category-usage.md",
+      "source_file": "sources/wiki/original/category-usage.md",
+      "source_sha256": "48ba52b614c1d2a11b83dc80c98116a0cc6215a346a6e4ddd2c029f9f0aa3c76",
+      "revision": 1055,
+      "revision_timestamp": "2012-03-02T23:29:28Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Changelog",
+      "title": "Changelog",
+      "status": "translated",
+      "file": "wiki/changelog.md",
+      "source_file": "sources/wiki/original/changelog.md",
+      "source_sha256": "e3b6a5c7e8d02b41074dc2063ed10296099c0a2f0b08303125034d92541b21f5",
+      "revision": 3039,
+      "revision_timestamp": "2012-09-07T08:58:30Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Characters",
+      "title": "Characters",
+      "status": "translated",
+      "file": "wiki/characters.md",
+      "source_file": "sources/wiki/original/characters.md",
+      "source_sha256": "e5cd891bbc61cc105d7a40cbca85efa35be2ad1d37b348612f603668b68c3de5",
+      "revision": 5558,
+      "revision_timestamp": "2023-07-05T15:08:34Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Cititrader/Permissions",
+      "title": "Cititrader/Permissions",
+      "status": "translated",
+      "file": "wiki/cititrader-permissions.md",
+      "source_file": "sources/wiki/original/cititrader-permissions.md",
+      "source_sha256": "53828f641bd70f39e48e994973f8067c45bbce13f1bc1a56eff6c16d552de69c",
+      "revision": 3367,
+      "revision_timestamp": "2012-09-14T09:04:40Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/CitiTraders",
+      "title": "CitiTraders",
+      "status": "translated",
+      "file": "wiki/cititraders.md",
+      "source_file": "sources/wiki/original/cititraders.md",
+      "source_sha256": "133f11195f7f80b7e6e958ccdac1ee13fa1733050094edaf1ee26cdce7d1525c",
+      "revision": 4007,
+      "revision_timestamp": "2013-01-21T18:44:46Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Citizens_2",
+      "title": "Citizens 2",
+      "status": "translated",
+      "file": "wiki/citizens-2.md",
+      "source_file": "sources/wiki/original/citizens-2.md",
+      "source_sha256": "7b43b2fc01c1b60fc99f058016857a8d00af915f9383e657609d817f54387731",
+      "revision": 1044,
+      "revision_timestamp": "2012-03-02T18:36:13Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Citizens_IRC",
+      "title": "Citizens IRC",
+      "status": "translated",
+      "file": "wiki/citizens-irc.md",
+      "source_file": "sources/wiki/original/citizens-irc.md",
+      "source_sha256": "b2f6f892fba6a37cd1e7df0d85fd3f2add464ee6648ddc4255b42eade8c4ec35",
+      "revision": 5156,
+      "revision_timestamp": "2018-12-06T12:39:15Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Citizens_Wiki",
+      "title": "Citizens Wiki",
+      "status": "translated",
+      "file": "wiki/citizens-wiki.md",
+      "source_file": "sources/wiki/original/citizens-wiki.md",
+      "source_sha256": "8494509f0d97887d902a9e629b18e5d382e772b450e73a22e762f8de0be7c79b",
+      "revision": 5538,
+      "revision_timestamp": "2023-04-19T18:17:21Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Citizens_Wiki:Copyrights",
+      "title": "Citizens Wiki:Copyrights",
+      "status": "translated",
+      "file": "wiki/citizens-wiki-copyrights.md",
+      "source_file": "sources/wiki/original/citizens-wiki-copyrights.md",
+      "source_sha256": "f4a015b003951815a6b362d2c3c2f715202e87794a04b429fbfd05ee72fc58ed",
+      "revision": 818,
+      "revision_timestamp": "2012-02-21T18:52:28Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Citizens.yml",
+      "title": "Citizens.yml",
+      "status": "translated",
+      "file": "wiki/citizens.yml.md",
+      "source_file": "sources/wiki/original/citizens.yml.md",
+      "source_sha256": "4b84d1038b450196e1637aef3dd5852b37aa84ac75a6921d42365f1179448d2e",
+      "revision": 716,
+      "revision_timestamp": "2012-02-19T12:58:55Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/CitizensUI",
+      "title": "CitizensUI",
+      "status": "translated",
+      "file": "wiki/citizensui.md",
+      "source_file": "sources/wiki/original/citizensui.md",
+      "source_sha256": "4afc89ccf250714e953b0596fc6c347758cecbff4bda6af4fafc205029bedb85",
+      "revision": 3510,
+      "revision_timestamp": "2012-09-20T22:19:44Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Color_Codes",
+      "title": "Color Codes",
+      "status": "translated",
+      "file": "wiki/color-codes.md",
+      "source_file": "sources/wiki/original/color-codes.md",
+      "source_sha256": "66715d66591021fcb41e836f6c6134414abdcea3ed92ffc9e6ab404169a55a35",
+      "revision": 2661,
+      "revision_timestamp": "2012-08-21T19:36:37Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Commands",
+      "title": "Commands",
+      "status": "translated",
+      "file": "wiki/commands.md",
+      "source_file": "sources/wiki/original/commands.md",
+      "source_sha256": "f2f73f2968ccbe73e450c3b251d20b9233de1764fd15e795705d3cb2f9a03754",
+      "revision": 5677,
+      "revision_timestamp": "2026-04-09T16:43:23Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Compatibility",
+      "title": "Compatibility",
+      "status": "translated",
+      "file": "wiki/compatibility.md",
+      "source_file": "sources/wiki/original/compatibility.md",
+      "source_sha256": "61082e5c437db735fd74009350817e38c9dce950479c4c42c9580d302fa0ac23",
+      "revision": 3858,
+      "revision_timestamp": "2012-12-16T08:06:36Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Config.yml",
+      "title": "Config.yml",
+      "status": "translated",
+      "file": "wiki/config.yml.md",
+      "source_file": "sources/wiki/original/config.yml.md",
+      "source_sha256": "42f67dc73feca6b6fe79ba57463bde565ae30c2a132d0d8037e73a81275c7dd6",
+      "revision": 715,
+      "revision_timestamp": "2012-02-19T12:58:28Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Configuration",
+      "title": "Configuration",
+      "status": "translated",
+      "file": "wiki/configuration.md",
+      "source_file": "sources/wiki/original/configuration.md",
+      "source_sha256": "bd2ce902be4e67903612ea374252bc1baa6f551aca87885bab2bdcd70e6ca9f7",
+      "revision": 5511,
+      "revision_timestamp": "2022-12-15T16:28:51Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Controllable_NPCs",
+      "title": "Controllable NPCs",
+      "status": "translated",
+      "file": "wiki/controllable-npcs.md",
+      "source_file": "sources/wiki/original/controllable-npcs.md",
+      "source_sha256": "9c5721ab6f9884ea3566d36d1adf52aeabe409c067860132f98cfba46309edd2",
+      "revision": 5152,
+      "revision_timestamp": "2018-11-25T03:17:57Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Costs",
+      "title": "Costs",
+      "status": "translated",
+      "file": "wiki/costs.md",
+      "source_file": "sources/wiki/original/costs.md",
+      "source_sha256": "bf16b7567095272b5b3d0ee4cc51d9f57c3afb24d5b78c2a7caaa1e597871bf4",
+      "revision": 2976,
+      "revision_timestamp": "2012-09-03T20:55:14Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Cracks",
+      "title": "Cracks",
+      "status": "translated",
+      "file": "wiki/cracks.md",
+      "source_file": "sources/wiki/original/cracks.md",
+      "source_sha256": "65d355c58d93529b698c3ca3f645af72f14aa06b3cf5da031401e9869895f2fe",
+      "revision": 5502,
+      "revision_timestamp": "2022-10-14T17:56:43Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Data_Storage",
+      "title": "Data Storage",
+      "status": "translated",
+      "file": "wiki/data-storage.md",
+      "source_file": "sources/wiki/original/data-storage.md",
+      "source_sha256": "c0a2959a5706684d87bc4859475ea3c557e919f544a0c86fd994282ef39e9c7b",
+      "revision": 4949,
+      "revision_timestamp": "2014-01-23T09:48:19Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen",
+      "title": "Denizen",
+      "status": "translated",
+      "file": "wiki/denizen.md",
+      "source_file": "sources/wiki/original/denizen.md",
+      "source_sha256": "0cc2df7c85b3534869e55abe82710614903bd1069b625f653dda8d8c2fa497f7",
+      "revision": 5220,
+      "revision_timestamp": "2020-03-24T16:02:39Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen_changelog",
+      "title": "Denizen changelog",
+      "status": "translated",
+      "file": "wiki/denizen-changelog.md",
+      "source_file": "sources/wiki/original/denizen-changelog.md",
+      "source_sha256": "997c6d5aa34c28dbed77ef066c4c597a8910864ca208af40594c3f5ecaab01fa",
+      "revision": 5400,
+      "revision_timestamp": "2021-09-03T19:03:56Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.6",
+      "title": "Denizen/0.6",
+      "status": "translated",
+      "file": "wiki/denizen-0.6.md",
+      "source_file": "sources/wiki/original/denizen-0.6.md",
+      "source_sha256": "23e2048986f2d25d5683dbd93fc6143cdf605a58c7200a690d01b62dcf591993",
+      "revision": 5380,
+      "revision_timestamp": "2021-09-03T18:57:09Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7",
+      "title": "Denizen/0.7",
+      "status": "translated",
+      "file": "wiki/denizen-0.7.md",
+      "source_file": "sources/wiki/original/denizen-0.7.md",
+      "source_sha256": "d7817533c0fe5d3ae4ec15e28ea2d7fa5aca840469291b07ca6c4c463344416b",
+      "revision": 5228,
+      "revision_timestamp": "2020-03-24T16:07:08Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Activity_Scripts",
+      "title": "Denizen/0.7/Activity Scripts",
+      "status": "translated",
+      "file": "wiki/denizen-0.7-activity-scripts.md",
+      "source_file": "sources/wiki/original/denizen-0.7-activity-scripts.md",
+      "source_sha256": "b56463169711f91d067d1f02d20157d5574c5d77ac3247686dbe796feeef1dd8",
+      "revision": 5242,
+      "revision_timestamp": "2020-03-24T16:12:50Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Activity_Scripts/Activities",
+      "title": "Denizen/0.7/Activity Scripts/Activities",
+      "status": "translated",
+      "file": "wiki/denizen-0.7-activity-scripts-activities.md",
+      "source_file": "sources/wiki/original/denizen-0.7-activity-scripts-activities.md",
+      "source_sha256": "86ad3789b04e7b658d08d8f512ee23d39477c84bdeda8e14c1d7a775f98298df",
+      "revision": 5379,
+      "revision_timestamp": "2021-09-03T18:56:55Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Assignments",
+      "title": "Denizen/0.7/Assignments",
+      "status": "translated",
+      "file": "wiki/denizen-0.7-assignments.md",
+      "source_file": "sources/wiki/original/denizen-0.7-assignments.md",
+      "source_sha256": "974a9491c77ad23738d58da7b04630039a1b900274765629efa4ff3769a044b0",
+      "revision": 5241,
+      "revision_timestamp": "2020-03-24T16:12:39Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Before_Using_Denizen",
+      "title": "Denizen/0.7/Before Using Denizen",
+      "status": "translated",
+      "file": "wiki/denizen-0.7-before-using-denizen.md",
+      "source_file": "sources/wiki/original/denizen-0.7-before-using-denizen.md",
+      "source_sha256": "e0c17cba9c89184e576b490f145e667eb23b4a7f2b49969fe14b324a63371b58",
+      "revision": 5232,
+      "revision_timestamp": "2020-03-24T16:10:19Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Bonus_Content/Pictures",
+      "title": "Denizen/0.7/Bonus Content/Pictures",
+      "status": "translated",
+      "file": "wiki/denizen-0.7-bonus-content-pictures.md",
+      "source_file": "sources/wiki/original/denizen-0.7-bonus-content-pictures.md",
+      "source_sha256": "4efae2c7fc528480ad324dc85695792a2c6dc66b0cf80e6a1d0ab23c291c8dcc",
+      "revision": 5381,
+      "revision_timestamp": "2021-09-03T18:57:38Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Color_Codes",
+      "title": "Denizen/0.7/Color Codes",
+      "status": "translated",
+      "file": "wiki/denizen-0.7-color-codes.md",
+      "source_file": "sources/wiki/original/denizen-0.7-color-codes.md",
+      "source_sha256": "96dba1e8412395d0a2e9f8ba881382cffc7a2cf7b1234d86b0c51850e90d132f",
+      "revision": 5403,
+      "revision_timestamp": "2021-09-03T19:04:28Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/config.yml",
+      "title": "Denizen/0.7/config.yml",
+      "status": "translated",
+      "file": "wiki/denizen-0.7-config.yml.md",
+      "source_file": "sources/wiki/original/denizen-0.7-config.yml.md",
+      "source_sha256": "4cd4fdd5e4ca369fca79f56511204cf271c59c84d60d3a60a400b01368e4a3da",
+      "revision": 5385,
+      "revision_timestamp": "2021-09-03T18:58:12Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Example_Scripts/Advanced_Scripts",
+      "title": "Denizen/0.7/Example Scripts/Advanced Scripts",
+      "status": "translated",
+      "file": "wiki/denizen-0.7-example-scripts-advanced-scripts.md",
+      "source_file": "sources/wiki/original/denizen-0.7-example-scripts-advanced-scripts.md",
+      "source_sha256": "3001a846736b3f4d0b6712fe9eeaaeb3ad5b6a7ec80bf3cc6961339a320f4d76",
+      "revision": 5390,
+      "revision_timestamp": "2021-09-03T19:02:29Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Example_Scripts/Beginner_Scripts",
+      "title": "Denizen/0.7/Example Scripts/Beginner Scripts",
+      "status": "translated",
+      "file": "wiki/denizen-0.7-example-scripts-beginner-scripts.md",
+      "source_file": "sources/wiki/original/denizen-0.7-example-scripts-beginner-scripts.md",
+      "source_sha256": "10976a16800cdaf4cabde8b7e3978a34be5599cb70c0d8cc92428726a751dd5f",
+      "revision": 5382,
+      "revision_timestamp": "2021-09-03T18:57:49Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/File_Structure",
+      "title": "Denizen/0.7/File Structure",
+      "status": "translated",
+      "file": "wiki/denizen-0.7-file-structure.md",
+      "source_file": "sources/wiki/original/denizen-0.7-file-structure.md",
+      "source_sha256": "d6e998982810fac17e1bc971f8d80dfad07b552786134ac51743cf1b970fc3b8",
+      "revision": 5235,
+      "revision_timestamp": "2020-03-24T16:11:12Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/In_Game_Commands",
+      "title": "Denizen/0.7/In Game Commands",
+      "status": "translated",
+      "file": "wiki/denizen-0.7-in-game-commands.md",
+      "source_file": "sources/wiki/original/denizen-0.7-in-game-commands.md",
+      "source_sha256": "1152642739fcbb88a93a871cf795263c58ddf7e079006565495d1af6de8f32b5",
+      "revision": 5383,
+      "revision_timestamp": "2021-09-03T18:57:55Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Interact_Scripts",
+      "title": "Denizen/0.7/Interact Scripts",
+      "status": "translated",
+      "file": "wiki/denizen-0.7-interact-scripts.md",
+      "source_file": "sources/wiki/original/denizen-0.7-interact-scripts.md",
+      "source_sha256": "ce71f717d4434cba89a2005de7f5bb4d9ef4bd6825f67dc12011e009a1fa4293",
+      "revision": 5238,
+      "revision_timestamp": "2020-03-24T16:11:52Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Interact_Scripts/Commands",
+      "title": "Denizen/0.7/Interact Scripts/Commands",
+      "status": "translated",
+      "file": "wiki/denizen-0.7-interact-scripts-commands.md",
+      "source_file": "sources/wiki/original/denizen-0.7-interact-scripts-commands.md",
+      "source_sha256": "ea982458f8372e35e3d560976478df2b7650ef7da3a495950938de28b791634a",
+      "revision": 5391,
+      "revision_timestamp": "2021-09-03T19:02:37Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Interact_Scripts/Interact_Requirements",
+      "title": "Denizen/0.7/Interact Scripts/Interact Requirements",
+      "status": "translated",
+      "file": "wiki/denizen-0.7-interact-scripts-interact-requirements.md",
+      "source_file": "sources/wiki/original/denizen-0.7-interact-scripts-interact-requirements.md",
+      "source_sha256": "b67d97158aabbdb909c6f362379aad1dee850d878e77da4a079942b52fb0b1f5",
+      "revision": 5378,
+      "revision_timestamp": "2021-09-03T18:56:47Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Interact_Scripts/Triggers",
+      "title": "Denizen/0.7/Interact Scripts/Triggers",
+      "status": "translated",
+      "file": "wiki/denizen-0.7-interact-scripts-triggers.md",
+      "source_file": "sources/wiki/original/denizen-0.7-interact-scripts-triggers.md",
+      "source_sha256": "c83a267c37573fd01041ab5eb742db26d64c74beccebb16ebdb7c48b627e8fca",
+      "revision": 5402,
+      "revision_timestamp": "2021-09-03T19:04:21Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Interact_Scritps/Custom_Commands",
+      "title": "Denizen/0.7/Interact Scritps/Custom Commands",
+      "status": "translated",
+      "file": "wiki/denizen-0.7-interact-scritps-custom-commands.md",
+      "source_file": "sources/wiki/original/denizen-0.7-interact-scritps-custom-commands.md",
+      "source_sha256": "b89c4f71da7733de0533918b0944ddc052b229e0c64454e20ca3eacbdb6ca867",
+      "revision": 5392,
+      "revision_timestamp": "2021-09-03T19:02:42Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Migration",
+      "title": "Denizen/0.7/Migration",
+      "status": "translated",
+      "file": "wiki/denizen-0.7-migration.md",
+      "source_file": "sources/wiki/original/denizen-0.7-migration.md",
+      "source_sha256": "76976f039d827f94e608e79768586675fc92a896726fceee6e53270102868b05",
+      "revision": 5384,
+      "revision_timestamp": "2021-09-03T18:58:03Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Replaceables",
+      "title": "Denizen/0.7/Replaceables",
+      "status": "translated",
+      "file": "wiki/denizen-0.7-replaceables.md",
+      "source_file": "sources/wiki/original/denizen-0.7-replaceables.md",
+      "source_sha256": "6573854d346729e929d7f458e4974b9b5cf5a27713e1ae7e5949e0a413806e2d",
+      "revision": 5240,
+      "revision_timestamp": "2020-03-24T16:12:22Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Replaceables.8",
+      "title": "Denizen/0.7/Replaceables.8",
+      "status": "translated",
+      "file": "wiki/denizen-0.7-replaceables.8.md",
+      "source_file": "sources/wiki/original/denizen-0.7-replaceables.8.md",
+      "source_sha256": "4915a194258200d135e013648a1aa252a3c12eb99ba3f1aab67cce1730ab09dd",
+      "revision": 5393,
+      "revision_timestamp": "2021-09-03T19:02:47Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Start-up_kit",
+      "title": "Denizen/0.7/Start-up kit",
+      "status": "translated",
+      "file": "wiki/denizen-0.7-start-up-kit.md",
+      "source_file": "sources/wiki/original/denizen-0.7-start-up-kit.md",
+      "source_sha256": "265656723eb6a1640e260487403cfc08ee9d34d73e819797412f7b4760ce6357",
+      "revision": 5377,
+      "revision_timestamp": "2021-09-03T18:56:40Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Task_Scripts",
+      "title": "Denizen/0.7/Task Scripts",
+      "status": "translated",
+      "file": "wiki/denizen-0.7-task-scripts.md",
+      "source_file": "sources/wiki/original/denizen-0.7-task-scripts.md",
+      "source_sha256": "c252927ee79d0d842674e28dcc3f93596747c9669c5cedbecaaedf452bd16c79",
+      "revision": 5239,
+      "revision_timestamp": "2020-03-24T16:12:00Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Troubleshooting",
+      "title": "Denizen/0.7/Troubleshooting",
+      "status": "translated",
+      "file": "wiki/denizen-0.7-troubleshooting.md",
+      "source_file": "sources/wiki/original/denizen-0.7-troubleshooting.md",
+      "source_sha256": "c27f6566c5b3d92ccfc330ce28c67b3b1048af50aa8e82e77dff02edf09f45ba",
+      "revision": 5233,
+      "revision_timestamp": "2020-03-24T16:10:33Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.8/Interact_Scripts/Commands",
+      "title": "Denizen/0.8/Interact Scripts/Commands",
+      "status": "translated",
+      "file": "wiki/denizen-0.8-interact-scripts-commands.md",
+      "source_file": "sources/wiki/original/denizen-0.8-interact-scripts-commands.md",
+      "source_sha256": "9050b70acae1140654cd162581419769922824741936e52df1f94a5c84dd9b76",
+      "revision": 5401,
+      "revision_timestamp": "2021-09-03T19:04:14Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Additional_Traits",
+      "title": "Denizen/Additional Traits",
+      "status": "translated",
+      "file": "wiki/denizen-additional-traits.md",
+      "source_file": "sources/wiki/original/denizen-additional-traits.md",
+      "source_sha256": "6e94d707f0d268957cbc546274b0e097a0f0fd1db74ff5b8bec038b525654931",
+      "revision": 5358,
+      "revision_timestamp": "2021-03-08T15:17:03Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Commands",
+      "title": "Denizen/Commands",
+      "status": "translated",
+      "file": "wiki/denizen-commands.md",
+      "source_file": "sources/wiki/original/denizen-commands.md",
+      "source_sha256": "4719fb2f1b0125ede505b42ad35c1c077b9903e4a3b7320a2e5ef7197e164666",
+      "revision": 5375,
+      "revision_timestamp": "2021-09-03T18:56:07Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Commands/Animate",
+      "title": "Denizen/Commands/Animate",
+      "status": "translated",
+      "file": "wiki/denizen-commands-animate.md",
+      "source_file": "sources/wiki/original/denizen-commands-animate.md",
+      "source_sha256": "2c7a5ab974c9a3dd21012a1fb5330533248d0e41122387a4d0bb0358ddcea3fe",
+      "revision": 5227,
+      "revision_timestamp": "2020-03-24T16:06:02Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Commands/Flag",
+      "title": "Denizen/Commands/Flag",
+      "status": "translated",
+      "file": "wiki/denizen-commands-flag.md",
+      "source_file": "sources/wiki/original/denizen-commands-flag.md",
+      "source_sha256": "08ee4f21c6c5877bd5736a0c564feeea2e0577ad8e66f36766606dadacc30edb",
+      "revision": 5394,
+      "revision_timestamp": "2021-09-03T19:03:03Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/dIRCBot",
+      "title": "Denizen/dIRCBot",
+      "status": "translated",
+      "file": "wiki/denizen-dircbot.md",
+      "source_file": "sources/wiki/original/denizen-dircbot.md",
+      "source_sha256": "0b9cd7e4097906ddf4c3e8d5b9c96bff6931306fc7458b295757d2a260bdedfa",
+      "revision": 5094,
+      "revision_timestamp": "2016-08-26T15:13:33Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Introduction",
+      "title": "Denizen/Introduction",
+      "status": "translated",
+      "file": "wiki/denizen-introduction.md",
+      "source_file": "sources/wiki/original/denizen-introduction.md",
+      "source_sha256": "ba3a87a598c086dd8f89aeb11ad575f35ea7671cf88f61b8141bdccd3fa35baa",
+      "revision": 5221,
+      "revision_timestamp": "2020-03-24T16:03:32Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Notepad++",
+      "title": "Denizen/Notepad++",
+      "status": "translated",
+      "file": "wiki/denizen-notepad.md",
+      "source_file": "sources/wiki/original/denizen-notepad.md",
+      "source_sha256": "f68e149b59adcbe4227fcbdd2f11fff0cf44cf50ea507c961bd72e48ac7ff514",
+      "revision": 5395,
+      "revision_timestamp": "2021-09-03T19:03:11Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Replaceable_Tags",
+      "title": "Denizen/Replaceable Tags",
+      "status": "translated",
+      "file": "wiki/denizen-replaceable-tags.md",
+      "source_file": "sources/wiki/original/denizen-replaceable-tags.md",
+      "source_sha256": "41875936a6743309d6352c9757d5dfb06eaeb56b138e28507490ba60abc0fb81",
+      "revision": 5225,
+      "revision_timestamp": "2020-03-24T16:04:42Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Requirements",
+      "title": "Denizen/Requirements",
+      "status": "translated",
+      "file": "wiki/denizen-requirements.md",
+      "source_file": "sources/wiki/original/denizen-requirements.md",
+      "source_sha256": "9d06856df0b7bf33d38ea72b1a938d9369997598f0cd16c6ae05c854bf76ffd4",
+      "revision": 5386,
+      "revision_timestamp": "2021-09-03T18:58:27Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Script_Commands",
+      "title": "Denizen/Script Commands",
+      "status": "translated",
+      "file": "wiki/denizen-script-commands.md",
+      "source_file": "sources/wiki/original/denizen-script-commands.md",
+      "source_sha256": "bc618d7100c0ae9e52c36242fdf4f1b9a60eda3dbe920d66634d870557f843c3",
+      "revision": 4608,
+      "revision_timestamp": "2013-06-15T13:23:28Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Script_Samples",
+      "title": "Denizen/Script Samples",
+      "status": "translated",
+      "file": "wiki/denizen-script-samples.md",
+      "source_file": "sources/wiki/original/denizen-script-samples.md",
+      "source_sha256": "ce849744cf5c3dec84299b3c06b081913e9932a25fb9568c5b424914d27a6145",
+      "revision": 5226,
+      "revision_timestamp": "2020-03-24T16:05:20Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Subplugins",
+      "title": "Denizen/Subplugins",
+      "status": "translated",
+      "file": "wiki/denizen-subplugins.md",
+      "source_file": "sources/wiki/original/denizen-subplugins.md",
+      "source_sha256": "ef2a4309f9abf083d15ec86bf3a5f231b1fdb569f36ed8d12db55f99fd213216",
+      "revision": 5387,
+      "revision_timestamp": "2021-09-03T18:58:36Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Triggers",
+      "title": "Denizen/Triggers",
+      "status": "translated",
+      "file": "wiki/denizen-triggers.md",
+      "source_file": "sources/wiki/original/denizen-triggers.md",
+      "source_sha256": "2b8f8bb971c1c5b3292ee0288dab75e5c29e3cd1035f551095a5b8a8af955053",
+      "revision": 5223,
+      "revision_timestamp": "2020-03-24T16:04:08Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Types_of_Scripts",
+      "title": "Denizen/Types of Scripts",
+      "status": "translated",
+      "file": "wiki/denizen-types-of-scripts.md",
+      "source_file": "sources/wiki/original/denizen-types-of-scripts.md",
+      "source_sha256": "60187dabf8bbfa8db91e82801a49ca8fb705d085c9c47f524cd1a6977b9260ea",
+      "revision": 5222,
+      "revision_timestamp": "2020-03-24T16:03:51Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/DenizenTemp",
+      "title": "DenizenTemp",
+      "status": "translated",
+      "file": "wiki/denizentemp.md",
+      "source_file": "sources/wiki/original/denizentemp.md",
+      "source_sha256": "0c517ccd1da7157b73003231216f42a0ef1e9648a06ecd0d2ce33e742bc9dbd0",
+      "revision": 5146,
+      "revision_timestamp": "2018-10-24T20:19:39Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Depenizen",
+      "title": "Depenizen",
+      "status": "translated",
+      "file": "wiki/depenizen.md",
+      "source_file": "sources/wiki/original/depenizen.md",
+      "source_sha256": "dcfa9a6a36f4d97bb47913a7a43cd2e8abaf581aa6b58a7f5a5c2239c9b14ced",
+      "revision": 5399,
+      "revision_timestamp": "2021-09-03T19:03:42Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Depenizen/BattleNight",
+      "title": "Depenizen/BattleNight",
+      "status": "translated",
+      "file": "wiki/depenizen-battlenight.md",
+      "source_file": "sources/wiki/original/depenizen-battlenight.md",
+      "source_sha256": "6a4cd85909582fe7eec559f28a07f076241f308d05744ad9b7b2b035685c6fbf",
+      "revision": 5396,
+      "revision_timestamp": "2021-09-03T19:03:21Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Depenizen/Command-List",
+      "title": "Depenizen/Command-List",
+      "status": "translated",
+      "file": "wiki/depenizen-command-list.md",
+      "source_file": "sources/wiki/original/depenizen-command-list.md",
+      "source_sha256": "2bade7a84855998326f2ae75aa41df3350c08fa57d2c7171dcc4a2b3fc96b124",
+      "revision": 5388,
+      "revision_timestamp": "2021-09-03T18:59:36Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Depenizen/Frequently_Asked_Questions",
+      "title": "Depenizen/Frequently Asked Questions",
+      "status": "translated",
+      "file": "wiki/depenizen-frequently-asked-questions.md",
+      "source_file": "sources/wiki/original/depenizen-frequently-asked-questions.md",
+      "source_sha256": "71c61276a413f596ff0a64a7f586932ab958e0ee8753775f6cebb233f3398bea",
+      "revision": 5398,
+      "revision_timestamp": "2021-09-03T19:03:35Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Depenizen/Supported-Plugins",
+      "title": "Depenizen/Supported-Plugins",
+      "status": "translated",
+      "file": "wiki/depenizen-supported-plugins.md",
+      "source_file": "sources/wiki/original/depenizen-supported-plugins.md",
+      "source_sha256": "5cfd4cb47cd1dc06007b5cf396910c196850a3dcd5e3b1985d708882c9215750",
+      "revision": 5397,
+      "revision_timestamp": "2021-09-03T19:03:27Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Depenizen/Tag-List",
+      "title": "Depenizen/Tag-List",
+      "status": "translated",
+      "file": "wiki/depenizen-tag-list.md",
+      "source_file": "sources/wiki/original/depenizen-tag-list.md",
+      "source_sha256": "7f76bc818dc9f21ccd92e61f5db9a2e82e78307e1ffb60bfd3d77e125a0950ab",
+      "revision": 5389,
+      "revision_timestamp": "2021-09-03T18:59:43Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Dialog_Examples",
+      "title": "Dialog Examples",
+      "status": "translated",
+      "file": "wiki/dialog-examples.md",
+      "source_file": "sources/wiki/original/dialog-examples.md",
+      "source_sha256": "a062a4d1e195b2f8798d1008c2d48bb118a311156f19df129810a1e4e5154454",
+      "revision": 4040,
+      "revision_timestamp": "2013-01-30T04:35:13Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Dialog_Reference",
+      "title": "Dialog Reference",
+      "status": "translated",
+      "file": "wiki/dialog-reference.md",
+      "source_file": "sources/wiki/original/dialog-reference.md",
+      "source_sha256": "e247d788241133b6e85c80bcab1cdbff182ee83bf92c5a096fcb3782db16a765",
+      "revision": 5005,
+      "revision_timestamp": "2014-09-15T07:11:33Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Dialog_Tutorial",
+      "title": "Dialog Tutorial",
+      "status": "translated",
+      "file": "wiki/dialog-tutorial.md",
+      "source_file": "sources/wiki/original/dialog-tutorial.md",
+      "source_sha256": "608e5b5a67f172b03b4fd3276bb85bdf3b340e3e4ce093562da005b7fbb896c5",
+      "revision": 4319,
+      "revision_timestamp": "2013-02-14T15:27:47Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Downloads",
+      "title": "Downloads",
+      "status": "translated",
+      "file": "wiki/downloads.md",
+      "source_file": "sources/wiki/original/downloads.md",
+      "source_sha256": "e24b223d622930549d34313469e3a3dd16862eb451162615688bf53c5590f0d0",
+      "revision": 5453,
+      "revision_timestamp": "2022-03-08T21:20:32Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/DtlTraders",
+      "title": "DtlTraders",
+      "status": "translated",
+      "file": "wiki/dtltraders.md",
+      "source_file": "sources/wiki/original/dtltraders.md",
+      "source_sha256": "088d91b6bb018509e567e8910d87ed717bbe6f470e1d98d9ea86c39718d05057",
+      "revision": 5516,
+      "revision_timestamp": "2022-12-16T12:29:52Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/DtlTraders/bankers",
+      "title": "DtlTraders/bankers",
+      "status": "translated",
+      "file": "wiki/dtltraders-bankers.md",
+      "source_file": "sources/wiki/original/dtltraders-bankers.md",
+      "source_sha256": "cac3b01531bd50e75b37920cf4b3c48a081bbca65cf0f58811fe9e690a125060",
+      "revision": 3145,
+      "revision_timestamp": "2012-09-11T07:15:58Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/DtlTraders/banking",
+      "title": "DtlTraders/banking",
+      "status": "translated",
+      "file": "wiki/dtltraders-banking.md",
+      "source_file": "sources/wiki/original/dtltraders-banking.md",
+      "source_sha256": "cac3b01531bd50e75b37920cf4b3c48a081bbca65cf0f58811fe9e690a125060",
+      "revision": 3139,
+      "revision_timestamp": "2012-09-11T07:12:46Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/DtlTraders/basics",
+      "title": "DtlTraders/basics",
+      "status": "translated",
+      "file": "wiki/dtltraders-basics.md",
+      "source_file": "sources/wiki/original/dtltraders-basics.md",
+      "source_sha256": "04b297391e81e5e8cbdbd8efc5554fc3658d1cef56838fa248d6f8250bf00747",
+      "revision": 4956,
+      "revision_timestamp": "2014-02-06T00:30:49Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/DtlTraders/Commands",
+      "title": "DtlTraders/Commands",
+      "status": "translated",
+      "file": "wiki/dtltraders-commands.md",
+      "source_file": "sources/wiki/original/dtltraders-commands.md",
+      "source_sha256": "a6cabdd2c20a61ee9dc97fc058bffbd495da40d86d32cb57c42139057951ed89",
+      "revision": 4887,
+      "revision_timestamp": "2013-10-31T01:41:01Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/DtlTraders/config",
+      "title": "DtlTraders/config",
+      "status": "translated",
+      "file": "wiki/dtltraders-config.md",
+      "source_file": "sources/wiki/original/dtltraders-config.md",
+      "source_sha256": "4c7253c601788dd1307953d68e11823ad8d75bdd77c2dcbe29ec69a5dfc9242d",
+      "revision": 4963,
+      "revision_timestamp": "2014-02-06T01:36:15Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/DtlTraders/denizen/commands",
+      "title": "DtlTraders/denizen/commands",
+      "status": "translated",
+      "file": "wiki/dtltraders-denizen-commands.md",
+      "source_file": "sources/wiki/original/dtltraders-denizen-commands.md",
+      "source_sha256": "b7b9ef6cc0fa580651aeedccb6d2e1b7f57fad0edf8cf9e9113034086f5c1cd2",
+      "revision": 4148,
+      "revision_timestamp": "2013-02-05T22:56:41Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/DtlTraders/denizen/support",
+      "title": "DtlTraders/denizen/support",
+      "status": "translated",
+      "file": "wiki/dtltraders-denizen-support.md",
+      "source_file": "sources/wiki/original/dtltraders-denizen-support.md",
+      "source_sha256": "793ac7df17b85f0f94790830b2d3f540e86b9f9447854a570c54cfba5502e90c",
+      "revision": 4147,
+      "revision_timestamp": "2013-02-05T22:56:41Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/DtlTraders/denizen/triggers",
+      "title": "DtlTraders/denizen/triggers",
+      "status": "translated",
+      "file": "wiki/dtltraders-denizen-triggers.md",
+      "source_file": "sources/wiki/original/dtltraders-denizen-triggers.md",
+      "source_sha256": "90fb473a99db10f4ad70247224a0f5a143041b85339110cd4ba6a552e63baf5f",
+      "revision": 3426,
+      "revision_timestamp": "2012-09-17T12:15:43Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/DtlTraders/locale",
+      "title": "DtlTraders/locale",
+      "status": "translated",
+      "file": "wiki/dtltraders-locale.md",
+      "source_file": "sources/wiki/original/dtltraders-locale.md",
+      "source_sha256": "b828b2f80d2a5a7af2852d8d1b80f0a6f138dd102d2a99f4ca240b2ad7916fa3",
+      "revision": 4144,
+      "revision_timestamp": "2013-02-05T22:49:50Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/DtlTraders/managing",
+      "title": "DtlTraders/managing",
+      "status": "translated",
+      "file": "wiki/dtltraders-managing.md",
+      "source_file": "sources/wiki/original/dtltraders-managing.md",
+      "source_sha256": "b483583b9e86c17957538d0fbdeff5e31b6ec0875b44c2ba37ad11b4e54810de",
+      "revision": 3148,
+      "revision_timestamp": "2012-09-11T09:30:26Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/DtlTraders/patterns",
+      "title": "DtlTraders/patterns",
+      "status": "translated",
+      "file": "wiki/dtltraders-patterns.md",
+      "source_file": "sources/wiki/original/dtltraders-patterns.md",
+      "source_sha256": "b5d89bb696b50f395164519a17352fcc2892133d585297b303f3d1ea814fe1ab",
+      "revision": 4604,
+      "revision_timestamp": "2013-06-03T16:45:26Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/DtlTraders/permissions",
+      "title": "DtlTraders/permissions",
+      "status": "translated",
+      "file": "wiki/dtltraders-permissions.md",
+      "source_file": "sources/wiki/original/dtltraders-permissions.md",
+      "source_sha256": "88373be4ab933e9efa9788f00896c1883d949016cc2fd9c6e2f5df94538caf48",
+      "revision": 4942,
+      "revision_timestamp": "2014-01-15T10:38:12Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/DtlTraders/traders",
+      "title": "DtlTraders/traders",
+      "status": "translated",
+      "file": "wiki/dtltraders-traders.md",
+      "source_file": "sources/wiki/original/dtltraders-traders.md",
+      "source_sha256": "cac3b01531bd50e75b37920cf4b3c48a081bbca65cf0f58811fe9e690a125060",
+      "revision": 3144,
+      "revision_timestamp": "2012-09-11T07:15:44Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/DtlTraders/trading",
+      "title": "DtlTraders/trading",
+      "status": "translated",
+      "file": "wiki/dtltraders-trading.md",
+      "source_file": "sources/wiki/original/dtltraders-trading.md",
+      "source_sha256": "8e91508cc75b5ec267c0f4fbe2a685d8e640a5624562d35ead7d7a67bf6e9d8c",
+      "revision": 3120,
+      "revision_timestamp": "2012-09-10T11:20:32Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/DtlTraders/wallets",
+      "title": "DtlTraders/wallets",
+      "status": "translated",
+      "file": "wiki/dtltraders-wallets.md",
+      "source_file": "sources/wiki/original/dtltraders-wallets.md",
+      "source_sha256": "6bdba153a099e5cb61fc62fad265fbbe6358f72c064157ac2d1c9dc13d97f566",
+      "revision": 3978,
+      "revision_timestamp": "2013-01-09T11:15:24Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Editors",
+      "title": "Editors",
+      "status": "translated",
+      "file": "wiki/editors.md",
+      "source_file": "sources/wiki/original/editors.md",
+      "source_sha256": "1deb2976a8c7df03d825f50d9b76d5251be8528daaff66f92faf9f0d976762f6",
+      "revision": 5017,
+      "revision_timestamp": "2014-11-19T04:22:59Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Frequently_Asked_Questions",
+      "title": "Frequently Asked Questions",
+      "status": "translated",
+      "file": "wiki/frequently-asked-questions.md",
+      "source_file": "sources/wiki/original/frequently-asked-questions.md",
+      "source_sha256": "dd13650516a6aba1b08bdca2b96fd7b4940a31e59599958b8d936263857ab996",
+      "revision": 5517,
+      "revision_timestamp": "2022-12-17T02:29:46Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Help:Contents",
+      "title": "Help:Contents",
+      "status": "translated",
+      "file": "wiki/help-contents.md",
+      "source_file": "sources/wiki/original/help-contents.md",
+      "source_sha256": "06bdc8dfc0f4478145abcd28390a980231365a7f964c28d8206bb81108c7a4ac",
+      "revision": 285,
+      "revision_timestamp": "2012-01-27T06:19:58Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/HyperMerchant",
+      "title": "HyperMerchant",
+      "status": "translated",
+      "file": "wiki/hypermerchant.md",
+      "source_file": "sources/wiki/original/hypermerchant.md",
+      "source_sha256": "a956e65ecf50638ce83aa7faa2ddca6b8c1cf7bf81e620a57e7b5d34b5dc111d",
+      "revision": 5037,
+      "revision_timestamp": "2015-02-08T10:42:31Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Installation",
+      "title": "Installation",
+      "status": "translated",
+      "file": "wiki/installation.md",
+      "source_file": "sources/wiki/original/installation.md",
+      "source_sha256": "a7de23c384e6f5dc74ca246bacb734e50c16674b2fb93639627ec60503a8f4e7",
+      "revision": 5450,
+      "revision_timestamp": "2022-03-08T21:17:41Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Installing_Character_Types",
+      "title": "Installing Character Types",
+      "status": "translated",
+      "file": "wiki/installing-character-types.md",
+      "source_file": "sources/wiki/original/installing-character-types.md",
+      "source_sha256": "45d68eae452ab01a4e02f40b491a775b231ce8eb6f5e3c025fe935c187ced90a",
+      "revision": 1041,
+      "revision_timestamp": "2012-03-02T18:33:04Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/IRC_Rules",
+      "title": "IRC Rules",
+      "status": "translated",
+      "file": "wiki/irc-rules.md",
+      "source_file": "sources/wiki/original/irc-rules.md",
+      "source_sha256": "b689129949b4549b3c2fcc2ae6b3266bee88d22957125d1e729f6e93f878f27e",
+      "revision": 3352,
+      "revision_timestamp": "2012-09-14T04:12:29Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/ITEM_NAME",
+      "title": "ITEM NAME",
+      "status": "translated",
+      "file": "wiki/item-name.md",
+      "source_file": "sources/wiki/original/item-name.md",
+      "source_sha256": "99ce655cdf5827c850dbce97fcdc206312fda43735ab927adbac7fb4a7426afd",
+      "revision": 1204,
+      "revision_timestamp": "2012-04-20T00:34:55Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Limits",
+      "title": "Limits",
+      "status": "translated",
+      "file": "wiki/limits.md",
+      "source_file": "sources/wiki/original/limits.md",
+      "source_sha256": "c8803a4650faec755bcd439cf29ef411c8c058516e60508eea0ffb1ad36acdbb",
+      "revision": 2970,
+      "revision_timestamp": "2012-09-03T20:35:16Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Logs",
+      "title": "Logs",
+      "status": "translated",
+      "file": "wiki/logs.md",
+      "source_file": "sources/wiki/original/logs.md",
+      "source_sha256": "e705cf2649352877158b6ab2bf5d17893870412132f961cefeabd3babb5bb744",
+      "revision": 5469,
+      "revision_timestamp": "2022-05-13T01:09:51Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Main_Page",
+      "title": "Main Page",
+      "status": "translated",
+      "file": "wiki/main-page.md",
+      "source_file": "sources/wiki/original/main-page.md",
+      "source_sha256": "c424d0de3af39a7ffdc4713edb94532b4d433944c404b38a545b4bdd51fbe76c",
+      "revision": 1024,
+      "revision_timestamp": "2012-03-02T17:28:48Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/MinecartMania",
+      "title": "MinecartMania",
+      "status": "translated",
+      "file": "wiki/minecartmania.md",
+      "source_file": "sources/wiki/original/minecartmania.md",
+      "source_sha256": "3308e187c8f5425a9e7cc1ceb6aa64925c5be16ce5d69f9ddd6b6227dfa028af",
+      "revision": 4566,
+      "revision_timestamp": "2013-04-16T18:38:28Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Minecraft_1.8",
+      "title": "Minecraft 1.8",
+      "status": "translated",
+      "file": "wiki/minecraft-1.8.md",
+      "source_file": "sources/wiki/original/minecraft-1.8.md",
+      "source_sha256": "eb84160bba6f11badc09319fe44a413ed394d92546e0d0b5750e557c6e28a69d",
+      "revision": 5577,
+      "revision_timestamp": "2024-07-31T13:12:21Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/MoxieNPC",
+      "title": "MoxieNPC",
+      "status": "translated",
+      "file": "wiki/moxienpc.md",
+      "source_file": "sources/wiki/original/moxienpc.md",
+      "source_sha256": "d3e8fdd33929f84a001855fcf67cffe5d10eb9153c15d360d3edcd84f478d608",
+      "revision": 4462,
+      "revision_timestamp": "2013-02-22T11:51:56Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Multiple_Traits",
+      "title": "Multiple Traits",
+      "status": "translated",
+      "file": "wiki/multiple-traits.md",
+      "source_file": "sources/wiki/original/multiple-traits.md",
+      "source_sha256": "0d9b7349a9c5d23449b8dfac04963f7b327680bc8bc2212bf061f3fdb9959bdd",
+      "revision": 1989,
+      "revision_timestamp": "2012-08-08T22:37:17Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/News",
+      "title": "News",
+      "status": "translated",
+      "file": "wiki/news.md",
+      "source_file": "sources/wiki/original/news.md",
+      "source_sha256": "e2bc961659a461a8608f6ab8c11aeda9b66a54ec24177cf5875cf5d4b3b1d9ff",
+      "revision": 3636,
+      "revision_timestamp": "2012-10-04T12:20:44Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/NPC_Commands",
+      "title": "NPC Commands",
+      "status": "translated",
+      "file": "wiki/npc-commands.md",
+      "source_file": "sources/wiki/original/npc-commands.md",
+      "source_sha256": "29eff5f1895b3710be29f042563719989e6fd28bbc6ac4a8d9eef378204bcc28",
+      "revision": 5546,
+      "revision_timestamp": "2023-04-20T13:33:08Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Parrot",
+      "title": "Parrot",
+      "status": "translated",
+      "file": "wiki/parrot.md",
+      "source_file": "sources/wiki/original/parrot.md",
+      "source_sha256": "c675d1ae7334b94a8d7bbfbd777b11ef9ea38a6a564c3b1ba9efc71af2bd53fc",
+      "revision": 1515,
+      "revision_timestamp": "2012-06-01T01:20:35Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Permissions",
+      "title": "Permissions",
+      "status": "translated",
+      "file": "wiki/permissions.md",
+      "source_file": "sources/wiki/original/permissions.md",
+      "source_sha256": "27c8e54c4c1d584f2ec438168fae1f3806d3f9fd268965382079040b386b46fe",
+      "revision": 5367,
+      "revision_timestamp": "2021-07-14T16:18:37Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Plugin_Conflict",
+      "title": "Plugin Conflict",
+      "status": "translated",
+      "file": "wiki/plugin-conflict.md",
+      "source_file": "sources/wiki/original/plugin-conflict.md",
+      "source_sha256": "cf72d90be44827d0b31817cd0bf6fe2bffdc183a10533339be2c4e2f22831da1",
+      "revision": 5555,
+      "revision_timestamp": "2023-04-26T10:19:01Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Postal",
+      "title": "Postal",
+      "status": "translated",
+      "file": "wiki/postal.md",
+      "source_file": "sources/wiki/original/postal.md",
+      "source_sha256": "4ea68f2de8ae1f1481e8ace8693f8ba42d80eb6c937884282a9fb352fb511e2f",
+      "revision": 5370,
+      "revision_timestamp": "2021-07-31T14:56:15Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Quests",
+      "title": "Quests",
+      "status": "translated",
+      "file": "wiki/quests.md",
+      "source_file": "sources/wiki/original/quests.md",
+      "source_sha256": "9f9974f555e1874c02f877675b965be193b92a78c5a55c8ec667610aed22cca6",
+      "revision": 3948,
+      "revision_timestamp": "2012-12-31T03:38:33Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Race_Reference",
+      "title": "Race Reference",
+      "status": "translated",
+      "file": "wiki/race-reference.md",
+      "source_file": "sources/wiki/original/race-reference.md",
+      "source_sha256": "8186c9c918a492132623f16e385a0aa5fc12d36290b80f64fee8c21084396e45",
+      "revision": 4679,
+      "revision_timestamp": "2013-07-14T00:40:05Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Replaceables",
+      "title": "Replaceables",
+      "status": "translated",
+      "file": "wiki/replaceables.md",
+      "source_file": "sources/wiki/original/replaceables.md",
+      "source_sha256": "fb0217a06c083fd338c0d342c3782b7a1136173da9b1b0415a953e69b7905331",
+      "revision": 3694,
+      "revision_timestamp": "2012-10-12T17:28:12Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Scripting",
+      "title": "Scripting",
+      "status": "translated",
+      "file": "wiki/scripting.md",
+      "source_file": "sources/wiki/original/scripting.md",
+      "source_sha256": "042c646d7bf382dfe6a3bd7327bc106f14e802501ecd2b4dc2cfbbb1bff19e7b",
+      "revision": 5404,
+      "revision_timestamp": "2021-09-03T19:16:38Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Sentinel",
+      "title": "Sentinel",
+      "status": "translated",
+      "file": "wiki/sentinel.md",
+      "source_file": "sources/wiki/original/sentinel.md",
+      "source_sha256": "1161076fd76363f2586fcc6f186b47701149e70e8dca45b4fc2b933e6f0fc0da",
+      "revision": 5117,
+      "revision_timestamp": "2017-09-01T12:37:31Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Sentry",
+      "title": "Sentry",
+      "status": "translated",
+      "file": "wiki/sentry.md",
+      "source_file": "sources/wiki/original/sentry.md",
+      "source_sha256": "585667ca472ed4355f122ead537d0266b192081e0a3d6c97feff7da5b59abaac",
+      "revision": 5413,
+      "revision_timestamp": "2021-10-11T18:49:30Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Sentry/Builder_and_Denizen",
+      "title": "Sentry/Builder and Denizen",
+      "status": "translated",
+      "file": "wiki/sentry-builder-and-denizen.md",
+      "source_file": "sources/wiki/original/sentry-builder-and-denizen.md",
+      "source_sha256": "b1f70e0bed4e67b94da6714a3e4356be9c3b3e152a675aff82f7c70c5391e2c2",
+      "revision": 3732,
+      "revision_timestamp": "2012-10-15T19:30:58Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Sentry/Configuration",
+      "title": "Sentry/Configuration",
+      "status": "translated",
+      "file": "wiki/sentry-configuration.md",
+      "source_file": "sources/wiki/original/sentry-configuration.md",
+      "source_sha256": "518370b1121ba453d7b2c3daec1cc4a0b819f949c3e66f55e0e12d56923fbfce",
+      "revision": 4639,
+      "revision_timestamp": "2013-07-03T03:15:56Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Sentry/Permissions",
+      "title": "Sentry/Permissions",
+      "status": "translated",
+      "file": "wiki/sentry-permissions.md",
+      "source_file": "sources/wiki/original/sentry-permissions.md",
+      "source_sha256": "a10286b19adf5f9284287b29bc356cba6c56f8e6666fadc3c931ad058bc53507",
+      "revision": 4585,
+      "revision_timestamp": "2013-05-07T08:10:47Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Sentry/Sentry_and_Denizen",
+      "title": "Sentry/Sentry and Denizen",
+      "status": "translated",
+      "file": "wiki/sentry-sentry-and-denizen.md",
+      "source_file": "sources/wiki/original/sentry-sentry-and-denizen.md",
+      "source_sha256": "90c741c86fb6bbacf28d1cd451ccfdf410f9d8ffec74152c142ba243023fc45d",
+      "revision": 5411,
+      "revision_timestamp": "2021-10-11T18:49:00Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Shops",
+      "title": "Shops",
+      "status": "translated",
+      "file": "wiki/shops.md",
+      "source_file": "sources/wiki/original/shops.md",
+      "source_sha256": "c334f3a6c6e0b9cf6047b87cdafc129eb5c49a3a84c2ce871fbc7a1c9cc68e6d",
+      "revision": 5680,
+      "revision_timestamp": "2026-04-18T05:52:39Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Skins",
+      "title": "Skins",
+      "status": "translated",
+      "file": "wiki/skins.md",
+      "source_file": "sources/wiki/original/skins.md",
+      "source_sha256": "92c4be5a3154fe3d75eb333efaf0ae814bb08a6a9cc02aa7472e6872985ea332",
+      "revision": 5467,
+      "revision_timestamp": "2022-04-29T13:24:20Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/SpoutPlugin",
+      "title": "SpoutPlugin",
+      "status": "translated",
+      "file": "wiki/spoutplugin.md",
+      "source_file": "sources/wiki/original/spoutplugin.md",
+      "source_sha256": "5765863259ec1e74afdf0f5e521b3008e29871e7a14139b337fbc56edc64481e",
+      "revision": 3962,
+      "revision_timestamp": "2013-01-08T13:50:21Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Supported_Versions",
+      "title": "Supported Versions",
+      "status": "translated",
+      "file": "wiki/supported-versions.md",
+      "source_file": "sources/wiki/original/supported-versions.md",
+      "source_sha256": "c9c70db5f3fcaa889ebd7123cc3528e7c949c67076165791556460e38fc97547",
+      "revision": 5645,
+      "revision_timestamp": "2025-02-15T23:01:46Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Templates",
+      "title": "Templates",
+      "status": "translated",
+      "file": "wiki/templates.md",
+      "source_file": "sources/wiki/original/templates.md",
+      "source_sha256": "e5a2038664afc132a3b1f1cfe0afda0e2aa9fec59310a9450a2b23bd2eb11575",
+      "revision": 5660,
+      "revision_timestamp": "2025-10-28T03:30:36Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Test",
+      "title": "Test",
+      "status": "translated",
+      "file": "wiki/test.md",
+      "source_file": "sources/wiki/original/test.md",
+      "source_sha256": "745c1e63f63f75d3fdde191b2bf0bc423bd15305e5880824bcfe48a93ee77093",
+      "revision": 1975,
+      "revision_timestamp": "2012-08-08T18:32:10Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Text_Syntax",
+      "title": "Text Syntax",
+      "status": "translated",
+      "file": "wiki/text-syntax.md",
+      "source_file": "sources/wiki/original/text-syntax.md",
+      "source_sha256": "a2200d3918bf64b98fef0c2ebef0880e7421970b9d3bfbddd38b5a39f3c9118f",
+      "revision": 5500,
+      "revision_timestamp": "2022-10-06T00:45:47Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/TODO",
+      "title": "TODO",
+      "status": "translated",
+      "file": "wiki/todo.md",
+      "source_file": "sources/wiki/original/todo.md",
+      "source_sha256": "c7c50c8aa91225785692a5487838a797583194b6e44f7347ed988154fe92279e",
+      "revision": 3800,
+      "revision_timestamp": "2012-11-04T04:46:34Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Trader",
+      "title": "Trader",
+      "status": "translated",
+      "file": "wiki/trader.md",
+      "source_file": "sources/wiki/original/trader.md",
+      "source_sha256": "d2d704f7d70f48c63ea68e4758910c0faa89c1ceae74a5086d1c05b98495e1a6",
+      "revision": 1787,
+      "revision_timestamp": "2012-08-06T02:09:49Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Traders",
+      "title": "Traders",
+      "status": "translated",
+      "file": "wiki/traders.md",
+      "source_file": "sources/wiki/original/traders.md",
+      "source_sha256": "b4b16d8ba5ac747dfb02dcf62fb84e68a4601e130ab0de3eff75d6669f669850",
+      "revision": 1788,
+      "revision_timestamp": "2012-08-06T02:10:14Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Traits",
+      "title": "Traits",
+      "status": "translated",
+      "file": "wiki/traits.md",
+      "source_file": "sources/wiki/original/traits.md",
+      "source_sha256": "815b60945a6969004be2059221dcc51f16666591356c46ede7b09b25ea3d344c",
+      "revision": 2823,
+      "revision_timestamp": "2012-08-31T10:07:55Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Translations",
+      "title": "Translations",
+      "status": "translated",
+      "file": "wiki/translations.md",
+      "source_file": "sources/wiki/original/translations.md",
+      "source_sha256": "a8b043f4559df6f623fb052049098a8a7f2952d02652e3695d634497afb5661b",
+      "revision": 5553,
+      "revision_timestamp": "2023-04-20T13:41:38Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Troubleshooting",
+      "title": "Troubleshooting",
+      "status": "translated",
+      "file": "wiki/troubleshooting.md",
+      "source_file": "sources/wiki/original/troubleshooting.md",
+      "source_sha256": "4c44a2fe11b37eeb6c38e1f2d93b6cbabfa98b4d1a7f62bb6b881dd85ed58f7f",
+      "revision": 5455,
+      "revision_timestamp": "2022-03-08T21:24:14Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Tutorials",
+      "title": "Tutorials",
+      "status": "translated",
+      "file": "wiki/tutorials.md",
+      "source_file": "sources/wiki/original/tutorials.md",
+      "source_sha256": "f1371514bf37fce37527b080fda709c17ba164df60d1bba5d310b0709d64bdbd",
+      "revision": 3804,
+      "revision_timestamp": "2012-11-11T04:21:15Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Types",
+      "title": "Types",
+      "status": "translated",
+      "file": "wiki/types.md",
+      "source_file": "sources/wiki/original/types.md",
+      "source_sha256": "f254e7b2c07295ac9b99f142e8a64ad122237a80c2a047bf0100d24d30a1ff15",
+      "revision": 5191,
+      "revision_timestamp": "2019-10-03T02:35:45Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/UltraTrader",
+      "title": "UltraTrader",
+      "status": "translated",
+      "file": "wiki/ultratrader.md",
+      "source_file": "sources/wiki/original/ultratrader.md",
+      "source_sha256": "efce40c0e613ae826c0a03d6d553737ba20a97095adfb19ada3222138868293f",
+      "revision": 4876,
+      "revision_timestamp": "2013-10-25T18:56:03Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Versions",
+      "title": "Versions",
+      "status": "translated",
+      "file": "wiki/versions.md",
+      "source_file": "sources/wiki/original/versions.md",
+      "source_sha256": "84ff7220cf4473f63cf08d99bd36d9feea841e12ff2473470dac3796767b8c39",
+      "revision": 5585,
+      "revision_timestamp": "2024-09-28T15:11:55Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Waypoints",
+      "title": "Waypoints",
+      "status": "translated",
+      "file": "wiki/waypoints.md",
+      "source_file": "sources/wiki/original/waypoints.md",
+      "source_sha256": "825ca078f2eb038a9db5f71d40ccdf6b7c552d5569e3542809734e58ab654a33",
+      "revision": 5550,
+      "revision_timestamp": "2023-04-20T13:39:48Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Wikia",
+      "title": "Wikia",
+      "status": "translated",
+      "file": "wiki/wikia.md",
+      "source_file": "sources/wiki/original/wikia.md",
+      "source_sha256": "c922770f69a37ba56e428093d4ceec3ff8013a24ed395ae75b9fb0ee418bd53c",
+      "revision": 1295,
+      "revision_timestamp": "2012-04-26T20:52:04Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/YAML",
+      "title": "YAML",
+      "status": "translated",
+      "file": "wiki/yaml.md",
+      "source_file": "sources/wiki/original/yaml.md",
+      "source_sha256": "f5acbbeb5414218d2007cd858dd2978c44f22daef328e85a58f6a5d18b09790b",
+      "revision": 2405,
+      "revision_timestamp": "2012-08-17T04:15:17Z"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/API",
+      "title": "1.x/API",
+      "status": "excluded_api",
+      "reason": "API/SDK integration reference or Java trait example"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/API",
+      "title": "API",
+      "status": "excluded_api",
+      "reason": "API/SDK integration reference or Java trait example"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Citizens_Wiki/CitizensUI",
+      "title": "Citizens Wiki/CitizensUI",
+      "status": "unavailable",
+      "reason": "Official page exists but its current revision has no body"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Custom_Denizen_Commands",
+      "title": "Custom Denizen Commands",
+      "status": "unavailable",
+      "reason": "Official page exists but its current revision has no body"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen_API",
+      "title": "Denizen API",
+      "status": "excluded_api",
+      "reason": "API/SDK integration reference or Java trait example"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen_API_Command_Template",
+      "title": "Denizen API Command Template",
+      "status": "excluded_api",
+      "reason": "API/SDK integration reference or Java trait example"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen_config.yml",
+      "title": "Denizen config.yml",
+      "status": "unavailable",
+      "reason": "Official page exists but its current revision has no body"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen_temp",
+      "title": "Denizen temp",
+      "status": "unavailable",
+      "reason": "Official page exists but its current revision has no body"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/",
+      "title": "Denizen/",
+      "status": "unavailable",
+      "reason": "Official body unavailable"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Getting_Started",
+      "title": "Denizen/0.7/Getting Started",
+      "status": "unavailable",
+      "reason": "Official page exists but its current revision has no body"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Quick_Guide_to_Using_Denizen",
+      "title": "Denizen/Quick Guide to Using Denizen",
+      "status": "unavailable",
+      "reason": "Official page exists but its current revision has no body"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/TestCharacterType",
+      "title": "TestCharacterType",
+      "status": "excluded_api",
+      "reason": "API/SDK integration reference or Java trait example"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Basic_Example_Quests",
+      "title": "Basic Example Quests",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Commands_and_Permissions",
+      "title": "Commands and Permissions",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Mobs.yml",
+      "title": "Mobs.yml",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Evil_NPCs",
+      "title": "Evil NPCs",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Npc_profiles.yml",
+      "title": "Npc profiles.yml",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Quests.yml",
+      "title": "Quests.yml",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Quester",
+      "title": "Quester",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Formatting_Questing_Text",
+      "title": "Formatting Questing Text",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Guard",
+      "title": "Guard",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Healer",
+      "title": "Healer",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Installing",
+      "title": "Installing",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/List_of_Initial_node_types",
+      "title": "List of Initial node types",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/List_of_Objective_node_types",
+      "title": "List of Objective node types",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/List_of_Requirement_node_types",
+      "title": "List of Requirement node types",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Notes_from_aufdemrand",
+      "title": "Notes from aufdemrand",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/List_of_Rewards_node_types",
+      "title": "List of Rewards node types",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Message_Formatting",
+      "title": "Message Formatting",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/More_Example_Quests",
+      "title": "More Example Quests",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Npc-profiles.yml",
+      "title": "Npc-profiles.yml",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/Quest_Text_Formatting_Tips",
+      "title": "1.x/Quest Text Formatting Tips",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/A_Two-Part_Example_Quest",
+      "title": "A Two-Part Example Quest",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/More_example_quests",
+      "title": "More example quests",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Questing_Cook-Book",
+      "title": "Questing Cook-Book",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Advanced_Questing_Ideas",
+      "title": "Advanced Questing Ideas",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Quick_Start",
+      "title": "Quick Start",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Wizard",
+      "title": "Wizard",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen_Actions",
+      "title": "Denizen Actions",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Interact_Script_Requirements",
+      "title": "Interact Script Requirements",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Color_Codes",
+      "title": "Denizen/Color Codes",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Interact_Scripts",
+      "title": "Denizen/Interact Scripts",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Interact_Scripts/Interact_Requirements",
+      "title": "Denizen/Interact Scripts/Interact Requirements",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Example_Scripts/Advanced_Scripts",
+      "title": "Denizen/Example Scripts/Advanced Scripts",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/config.yml",
+      "title": "Denizen/config.yml",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Writing_Scripts",
+      "title": "Denizen/0.7/Writing Scripts",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Assigning_Scripts",
+      "title": "Denizen/0.7/Assigning Scripts",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Interact_Scripts/Triggers",
+      "title": "Denizen/Interact Scripts/Triggers",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Activity_Scripts/Activities",
+      "title": "Denizen/Activity Scripts/Activities",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Location_Bookmark",
+      "title": "Location Bookmark",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Interact_Scripts/Custom_Interact_Requirements",
+      "title": "Denizen/0.7/Interact Scripts/Custom Interact Requirements",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/In_Game_Commands",
+      "title": "Denizen/In Game Commands",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Flags",
+      "title": "Denizen/0.7/Flags",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Listeners",
+      "title": "Denizen/0.7/Listeners",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Interact_Scripts/Custom_Requirements",
+      "title": "Denizen/0.7/Interact Scripts/Custom Requirements",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Interact_Scripts/Custom_Triggers",
+      "title": "Denizen/0.7/Interact Scripts/Custom Triggers",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Activity_Scripts/Custom_Activities",
+      "title": "Denizen/0.7/Activity Scripts/Custom Activities",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Activity_Scripts/Event_API",
+      "title": "Denizen/0.7/Activity Scripts/Event API",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Assignments",
+      "title": "Denizen/Assignments",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Commands/If",
+      "title": "Denizen/Commands/If",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Script_Requirements",
+      "title": "Denizen/Script Requirements",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Other",
+      "title": "Denizen/Other",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Supported_Plugins",
+      "title": "Supported Plugins",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Wallet",
+      "title": "Wallet",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Activities",
+      "title": "Activities",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Click_Triggers",
+      "title": "Click Triggers",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Replaceables",
+      "title": "Denizen/Replaceables",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    }
+  ],
+  "excluded_api": [
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/API",
+      "title": "1.x/API",
+      "status": "excluded_api",
+      "reason": "API/SDK integration reference or Java trait example"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/API",
+      "title": "API",
+      "status": "excluded_api",
+      "reason": "API/SDK integration reference or Java trait example"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen_API",
+      "title": "Denizen API",
+      "status": "excluded_api",
+      "reason": "API/SDK integration reference or Java trait example"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen_API_Command_Template",
+      "title": "Denizen API Command Template",
+      "status": "excluded_api",
+      "reason": "API/SDK integration reference or Java trait example"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/TestCharacterType",
+      "title": "TestCharacterType",
+      "status": "excluded_api",
+      "reason": "API/SDK integration reference or Java trait example"
+    }
+  ],
+  "unavailable": [
+    {
+      "url": "https://wiki.citizensnpcs.co/Citizens_Wiki/CitizensUI",
+      "title": "Citizens Wiki/CitizensUI",
+      "status": "unavailable",
+      "reason": "Official page exists but its current revision has no body"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Custom_Denizen_Commands",
+      "title": "Custom Denizen Commands",
+      "status": "unavailable",
+      "reason": "Official page exists but its current revision has no body"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen_config.yml",
+      "title": "Denizen config.yml",
+      "status": "unavailable",
+      "reason": "Official page exists but its current revision has no body"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen_temp",
+      "title": "Denizen temp",
+      "status": "unavailable",
+      "reason": "Official page exists but its current revision has no body"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/",
+      "title": "Denizen/",
+      "status": "unavailable",
+      "reason": "Official body unavailable"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Getting_Started",
+      "title": "Denizen/0.7/Getting Started",
+      "status": "unavailable",
+      "reason": "Official page exists but its current revision has no body"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Quick_Guide_to_Using_Denizen",
+      "title": "Denizen/Quick Guide to Using Denizen",
+      "status": "unavailable",
+      "reason": "Official page exists but its current revision has no body"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Basic_Example_Quests",
+      "title": "Basic Example Quests",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Commands_and_Permissions",
+      "title": "Commands and Permissions",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Mobs.yml",
+      "title": "Mobs.yml",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Evil_NPCs",
+      "title": "Evil NPCs",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Npc_profiles.yml",
+      "title": "Npc profiles.yml",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Quests.yml",
+      "title": "Quests.yml",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Quester",
+      "title": "Quester",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Formatting_Questing_Text",
+      "title": "Formatting Questing Text",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Guard",
+      "title": "Guard",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Healer",
+      "title": "Healer",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Installing",
+      "title": "Installing",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/List_of_Initial_node_types",
+      "title": "List of Initial node types",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/List_of_Objective_node_types",
+      "title": "List of Objective node types",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/List_of_Requirement_node_types",
+      "title": "List of Requirement node types",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Notes_from_aufdemrand",
+      "title": "Notes from aufdemrand",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/List_of_Rewards_node_types",
+      "title": "List of Rewards node types",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Message_Formatting",
+      "title": "Message Formatting",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/More_Example_Quests",
+      "title": "More Example Quests",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Npc-profiles.yml",
+      "title": "Npc-profiles.yml",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/1.x/Quest_Text_Formatting_Tips",
+      "title": "1.x/Quest Text Formatting Tips",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/A_Two-Part_Example_Quest",
+      "title": "A Two-Part Example Quest",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/More_example_quests",
+      "title": "More example quests",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Questing_Cook-Book",
+      "title": "Questing Cook-Book",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Advanced_Questing_Ideas",
+      "title": "Advanced Questing Ideas",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Quick_Start",
+      "title": "Quick Start",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Wizard",
+      "title": "Wizard",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen_Actions",
+      "title": "Denizen Actions",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Interact_Script_Requirements",
+      "title": "Interact Script Requirements",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Color_Codes",
+      "title": "Denizen/Color Codes",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Interact_Scripts",
+      "title": "Denizen/Interact Scripts",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Interact_Scripts/Interact_Requirements",
+      "title": "Denizen/Interact Scripts/Interact Requirements",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Example_Scripts/Advanced_Scripts",
+      "title": "Denizen/Example Scripts/Advanced Scripts",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/config.yml",
+      "title": "Denizen/config.yml",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Writing_Scripts",
+      "title": "Denizen/0.7/Writing Scripts",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Assigning_Scripts",
+      "title": "Denizen/0.7/Assigning Scripts",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Interact_Scripts/Triggers",
+      "title": "Denizen/Interact Scripts/Triggers",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Activity_Scripts/Activities",
+      "title": "Denizen/Activity Scripts/Activities",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Location_Bookmark",
+      "title": "Location Bookmark",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Interact_Scripts/Custom_Interact_Requirements",
+      "title": "Denizen/0.7/Interact Scripts/Custom Interact Requirements",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/In_Game_Commands",
+      "title": "Denizen/In Game Commands",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Flags",
+      "title": "Denizen/0.7/Flags",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Listeners",
+      "title": "Denizen/0.7/Listeners",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Interact_Scripts/Custom_Requirements",
+      "title": "Denizen/0.7/Interact Scripts/Custom Requirements",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Interact_Scripts/Custom_Triggers",
+      "title": "Denizen/0.7/Interact Scripts/Custom Triggers",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Activity_Scripts/Custom_Activities",
+      "title": "Denizen/0.7/Activity Scripts/Custom Activities",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/0.7/Activity_Scripts/Event_API",
+      "title": "Denizen/0.7/Activity Scripts/Event API",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Assignments",
+      "title": "Denizen/Assignments",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Commands/If",
+      "title": "Denizen/Commands/If",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Script_Requirements",
+      "title": "Denizen/Script Requirements",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Other",
+      "title": "Denizen/Other",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Supported_Plugins",
+      "title": "Supported Plugins",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Wallet",
+      "title": "Wallet",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Activities",
+      "title": "Activities",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Click_Triggers",
+      "title": "Click Triggers",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    },
+    {
+      "url": "https://wiki.citizensnpcs.co/Denizen/Replaceables",
+      "title": "Denizen/Replaceables",
+      "status": "unavailable",
+      "reason": "Official page link is a red link: target absent from the official page directory and parse response has no exists flag"
+    }
+  ],
+  "counts": {
+    "discovered": 246,
+    "directory_pages": 191,
+    "translated": 179,
+    "excluded_api": 5,
+    "unavailable": 62
+  },
+  "assets": {
+    "total": 41,
+    "saved": 37,
+    "unavailable": 4,
+    "manifest": "sources/wiki/assets-manifest.json"
+  },
+  "scope_note": "All main articles, historical versions, official-hosted addon usage, category indexes, Help and Copyright pages; empty pages and red links recorded without fabricated text"
+}

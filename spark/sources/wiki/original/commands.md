@@ -1,0 +1,163 @@
+---
+id: Command-Usage
+title: Command Usage
+---
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+    faBook,
+    faHeartbeat,
+    faMemory,
+    faMicrochip,
+} from '@fortawesome/free-solid-svg-icons';
+
+:::note
+
+`/sparkb`, `/sparkv`, and `/sparkc` must be used instead of `/spark` on BungeeCord, Velocity and Forge/Fabric client installations respectively.
+
+:::
+
+## <FontAwesomeIcon icon={faMicrochip} /> Profiler
+
+### `/spark profiler`
+
+The `profiler` subcommand is used to control the spark profiler.
+
+Requires the permission `spark` or `spark.profiler`.
+
+If the profiler is already running in the background, run:
+* `/spark profiler open` to **open** the profiler viewer page without stopping the profiler.
+* `/spark profiler stop` to **stop** the profiler and view the results.
+* `/spark profiler cancel` to **cancel** the profiler stop it without uploading the results.
+
+For basic operation, run:
+* `/spark profiler start` to **start** the profiler in the default operation mode.
+* `/spark profiler stop` to **stop** the profiler and view the results.
+* `/spark profiler info` to check the current **status** of the profiler.
+
+There are some additional flags which can be used to customize the behaviour of the profiler. You can use:
+* `/spark profiler start --timeout <seconds>` to start the profiler and **automatically stop** it after x seconds.
+* `/spark profiler start --thread *` to start the profiler and track **all threads**.
+* `/spark profiler start --alloc` to start the profiler and profile memory allocations (memory pressure) instead of CPU usage.
+
+<details>
+<summary>Advanced Usage Arguments</summary>
+<div>
+
+#### Execution Profiler
+
+* `/spark profiler start --interval <milliseconds>` to start the profiler and sample at the given interval (default is 4)
+* `/spark profiler start --thread *` to start the profiler and track all threads.
+* `/spark profiler start --thread <thread name>` to start the profiler and only track specific threads.
+* `/spark profiler start --thread <thread name pattern> --regex` to start the profiler and only track threads matching the given regex.
+* `/spark profiler start --only-ticks-over <milliseconds>` to start the profiler, but only record samples from ticks which take longer than the given duration.
+* `/spark profiler start --combine-all` to start the profiler but combine all threads under one root node.
+* `/spark profiler start --not-combined` to start the profiler but disable grouping threads from a thread pool together.
+* `/spark profiler start --ignore-sleeping` to start the profiler, but only record samples from threads that aren't in a 'sleeping' state.
+* `/spark profiler start --force-java-sampler` to start the profiler and force usage of the Java sampler, instead of the async one.
+* `/spark profiler stop --comment <comment>` to stop the profiler and include the specified comment in the viewer.
+* `/spark profiler stop --save-to-file` to save profile to file under the config directory instead of uploading it.
+
+#### Allocation Profiler
+
+* `/spark profiler start --alloc --alloc-live-only` to start the memory allocation profiler, only retaining stats for objects that haven't been garbage collected by the end of the profile
+* `/spark profiler start --alloc --interval <bytes>` to start the memory allocation profiler and sample at the given rate in bytes (default is `524287` aka *512 KB*)
+
+</div>
+</details>
+
+<br />
+
+## <FontAwesomeIcon icon={faHeartbeat} /> Health
+
+### `/spark health`
+The `health` subcommand generates a health report for the server, including TPS, CPU, Memory and Disk Usage.
+
+Requires the permission `spark` or `spark.health`.
+
+To generate a health report and open it in the viewer, you can use:
+* `/spark health` to open the report in a "live dashboard" mode, where the data will automatically update every 10 seconds.
+* `/spark health upload` to upload a static health report which does not automatically update.
+
+To generate a health report and print it to the console, you can use:
+* `/spark health show` for a basic report.
+* `/spark health show --memory` to include additional information about the JVMs memory usage.
+* `/spark health show --network` to include additional information about the system network usage.
+
+___
+### `/spark ping`
+The `ping` subcommand prints information about average (or specific) player ping round trip times.
+
+You can use:
+* `/spark ping` to view information about the average pings across all players.
+* `/spark ping --player <username>` to view a specific players current ping RTT.
+
+Requires the permission `spark` or `spark.ping`.
+
+___
+### `/spark tps`
+The `tps` subcommand prints information about the servers TPS (ticks per second) rate and CPU usage.
+
+Requires the permission `spark` or `spark.tps`.
+
+___
+### `/spark tickmonitor`
+The `tickmonitor` subcommand controls the tick monitoring system.
+
+Requires the permission `spark` or `spark.tickmonitor`.
+
+Simply running the command without any extra flags will toggle the system on and off.
+
+You can use:
+* `/spark tickmonitor --threshold <percent>` to start the tick monitor, only reporting ticks which exceed a percentage increase from the average tick duration.
+* `/spark tickmonitor --threshold-tick <milliseconds>` to start the tick monitor, only reporting ticks which exceed the given duration in milliseconds.
+* `/spark tickmonitor --without-gc` to start the tick monitor, and disable reports about GC activity.
+
+<br />
+
+## <FontAwesomeIcon icon={faMemory} /> Memory
+
+### `/spark gc`
+The `gc` subcommand prints information about the servers GC (garbage collection) history.
+
+Requires the permission `spark` or `spark.gc`.
+
+___
+### `/spark gcmonitor`
+The `gcmonitor` subcommand controls the GC (garbage collection) monitoring system.
+
+Requires the permission `spark` or `spark.gcmonitor`.
+
+Simply running the command will toggle the system on and off.
+
+___
+### `/spark heapsummary`
+The `heapsummary` subcommand generates a new memory (heap) dump summary and upload it to the viewer.
+
+Requires the permission `spark` or `spark.heapsummary`.
+
+You can use:
+* `/spark heapsummary --run-gc-before` to suggest that the JVM runs the garbage collector before the heap summary is generated. (*deprecated*)
+
+___
+### `/spark heapdump`
+The `heapdump` subcommand generates a new heapdump (.hprof snapshot) file and saves to the disk.
+
+Requires the permission `spark` or `spark.heapdump`.
+
+You can use:
+* `/spark heapdump --compress <type>` to specify that the heapdump should be compressed using the given type. The supported types are gzip, xz and lzma.
+* `/spark heapdump --include-non-live` to specify that "non-live" objects (objects that are not reachable and are eligible for garbage collection) should be included. (*deprecated*)
+* `/spark heapdump --run-gc-before` to suggest that the JVM runs the garbage collector before the heap dump is generated. (*deprecated*)
+
+<br />
+
+## <FontAwesomeIcon icon={faBook} /> Misc
+
+### `/spark activity`
+The `activity` subcommand prints information about recent activity performed by spark.
+
+Requires the permission `spark` or `spark.activity`.
+
+You can use:
+* `/spark activity --page <page no>` to view a specific page.

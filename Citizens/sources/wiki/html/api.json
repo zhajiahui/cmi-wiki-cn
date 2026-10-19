@@ -1,0 +1,238 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "API",
+    "pageid": 85,
+    "revid": 5646,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>Citizens has an extensive API for working with NPCs. Make sure you always are using an up-to-date build of the CitizensAPI to ensure that your plugin works with the latest release of Citizens.\n</p><p>Javadocs can be found at <a rel=\"nofollow\" class=\"external free\" href=\"https://jd.citizensnpcs.co\">https://jd.citizensnpcs.co</a>\n</p><p><b>IF YOU HAVE TROUBLE USING THE API</b> please speak to us on GitHub at <a rel=\"nofollow\" class=\"external free\" href=\"https://github.com/CitizensDev/Citizens2/issues\">https://github.com/CitizensDev/Citizens2/issues</a> OR on Discord at <a rel=\"nofollow\" class=\"external free\" href=\"https://discord.gg/Q6pZGSR\">https://discord.gg/Q6pZGSR</a>\n</p>\n<div class=\"infobox\" style=\"width: 295; font-size: 12px; background: #FFFFFF; float: right; border: 1px solid #CCCCCC; margin-left:0.5em; padding: 9px;\">\n<table width=\"275\" style=\"border: 0; background-color: #ffffff\" cellpadding=\"0\" cellspacing=\"3\">\n<tbody><tr>\n<td style=\"width: 275; vertical-align: top; border:1px solid #ccc; background-color: #ffffff\">\n<div style=\"background-color:#aaa; font-size:1px; height:8px; border-bottom:1px solid #ccc;\"></div>\n<div style=\"float:right; margin:8px; margin-top:5px\"></div>\n<div style=\"padding:0.5em 0.3em 0.3em 0.3em; margin:0; text-indent:0.1em; font-weight: bold; border-bottom:1px solid #aaaaaa;\"><b> </b></div>\n<div style=\"font-size:100%; padding:3px\">\n<table cellpadding=\"0\" cellspacing=\"3\" width=\"100%\">\n<tbody><tr>\n<td align=\"left\" valign=\"top\" width=\"100%\">\n<p><b> </b>\n</p>\n<div class=\"padded\" style=\"padding: 19px\">\n<p><b>Current Release Download:</b> <a rel=\"nofollow\" class=\"external text\" href=\"https://ci.citizensnpcs.co/\">Jenkins</a>\n</p><p><b>Developmental Builds:</b> <a rel=\"nofollow\" class=\"external text\" href=\"https://ci.citizensnpcs.co/job/CitizensAPI/\">Jenkins</a>\n</p><p><b>Documentation:</b> <a rel=\"nofollow\" class=\"external text\" href=\"https://jd.citizensnpcs.co/\">JavaDocs</a>\n</p><p><b>Source:</b> <a rel=\"nofollow\" class=\"external text\" href=\"https://github.com/CitizensDev/CitizensAPI\">Github</a>\n</p>\n</div></td></tr></tbody></table>\n</div>\n</td></tr></tbody></table>\n</div>\n\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Linking_Properly_In_Java\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Linking Properly In Java</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-2\"><a href=\"#Common_Mistakes\"><span class=\"tocnumber\">1.1</span> <span class=\"toctext\">Common Mistakes</span></a></li>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Gradle\"><span class=\"tocnumber\">1.2</span> <span class=\"toctext\">Gradle</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Hooking_Into_Citizens\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Hooking Into Citizens</span></a></li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#Creating_an_NPC\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Creating an NPC</span></a></li>\n<li class=\"toclevel-1 tocsection-6\"><a href=\"#Checking_if_an_entity_is_a_Citizens_NPC\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Checking if an entity is a Citizens NPC</span></a></li>\n<li class=\"toclevel-1 tocsection-7\"><a href=\"#Making_an_NPC_Move\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">Making an NPC Move</span></a></li>\n<li class=\"toclevel-1 tocsection-8\"><a href=\"#Creating_a_Trait\"><span class=\"tocnumber\">6</span> <span class=\"toctext\">Creating a Trait</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-9\"><a href=\"#Dos_and_Don&#39;ts\"><span class=\"tocnumber\">6.1</span> <span class=\"toctext\">Dos and Don'ts</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-10\"><a href=\"#Default_Traits\"><span class=\"tocnumber\">7</span> <span class=\"toctext\">Default Traits</span></a></li>\n<li class=\"toclevel-1 tocsection-11\"><a href=\"#NPC_Events\"><span class=\"tocnumber\">8</span> <span class=\"toctext\">NPC Events</span></a></li>\n<li class=\"toclevel-1 tocsection-12\"><a href=\"#Using_the_AI_API\"><span class=\"tocnumber\">9</span> <span class=\"toctext\">Using the AI API</span></a></li>\n<li class=\"toclevel-1 tocsection-13\"><a href=\"#Using_the_Persistence_API\"><span class=\"tocnumber\">10</span> <span class=\"toctext\">Using the Persistence API</span></a></li>\n<li class=\"toclevel-1 tocsection-14\"><a href=\"#See_Also\"><span class=\"tocnumber\">11</span> <span class=\"toctext\">See Also</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Linking_Properly_In_Java\">Linking Properly In Java</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=API&amp;action=edit&amp;section=1\" title=\"Edit section: Linking Properly In Java\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Citizens is built using Maven. Your plugin that links to Citizens should be using Maven as well.\n</p><p>For Maven users: your <code>pom.xml</code> should include this repository:\n</p>\n<pre>    &lt;repository&gt;\n        &lt;id&gt;citizens-repo&lt;/id&gt;\n        &lt;url&gt;https://maven.citizensnpcs.co/repo&lt;/url&gt;\n    &lt;/repository&gt;\n</pre>\n<p>and this dependency (EXACTLY AS WRITTEN WITH SCOPE SET TO PROVIDED NOT COMPILE):\n</p>\n<pre>    &lt;dependency&gt;\n        &lt;groupId&gt;net.citizensnpcs&lt;/groupId&gt;\n        &lt;artifactId&gt;citizens-main&lt;/artifactId&gt;\n        &lt;version&gt;2.0.35-SNAPSHOT&lt;/version&gt;\n        &lt;type&gt;jar&lt;/type&gt;\n        &lt;scope&gt;provided&lt;/scope&gt;\n        &lt;exclusions&gt;\n            &lt;exclusion&gt;\n                &lt;groupId&gt;*&lt;/groupId&gt;\n                &lt;artifactId&gt;*&lt;/artifactId&gt;\n            &lt;/exclusion&gt;\n        &lt;/exclusions&gt;\n    &lt;/dependency&gt;\n</pre>\n<p>And replace the version with the current version of Citizens (check <a rel=\"nofollow\" class=\"external text\" href=\"https://maven.citizensnpcs.co/#/repo/net/citizensnpcs/citizens-main\">the repo if unsure</a>), for example <code>2.0.35-SNAPSHOT</code> (but with the version numbers changed to the relevant version).\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Common_Mistakes\">Common Mistakes</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=API&amp;action=edit&amp;section=2\" title=\"Edit section: Common Mistakes\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ol><li><b>Using \"citizensapi\" as the artifact</b> - this is missing many important traits and classes that the plugin contains. The <b>citizens-main</b> module includes the API and plugin classes.</li>\n<li><b>Using \"citizens\" as the artifact</b> - this no longer works</li>\n<li><b>Not updating the version</b> - latest version is almost always the best one to go with. Older versions lack new features and classes you might need.</li>\n<li><b>Not keeping literal <code>-SNAPSHOT</code></b> - it looks like a fill in spot, but it's not. Use that word exactly like that.</li>\n<li><b>Forgetting the <code>provided</code> scope</b> - the scope is important! If it's unset or set incorrectly, your project will build but not work properly on server.</li>\n<li><b>Using maven shade</b> - many users seem to accidentally enable the maven Shade plugin without understanding what it does. If you have the shade plugin and you're not confident exactly why, you probably don't need it. If you are intentionally using shade, please make sure that you do not shade Citizens into your plugin (do not use <code>compile</code> scope).</li>\n<li><b>Leaving off the exclusions</b> - this is a new recommendation (Sept 2022), the <b>exclusions</b> option makes the maven build much faster by informing maven that you don't need to download a separate copy of any of Citizens' upstream artifacts.</li></ol>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Gradle\">Gradle</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=API&amp;action=edit&amp;section=3\" title=\"Edit section: Gradle\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Some users prefer gradle. We don't use gradle for Citizens, so our references and support for it may be incomplete.\n</p><p>In short: same config as with Maven, but reformatted to how the gradle file expects it.\n</p><p>You should link the same repo. Something like:\n</p>\n<pre>    maven {\n        name = 'citizens-repo'\n        url = 'https://maven.citizensnpcs.co/repo'\n    }\n</pre>\n<p>And add a dependency like this (with the version updated of course):\n</p>\n<pre>dependencies {\n    compileOnly('net.citizensnpcs:citizens-main:2.0.35-SNAPSHOT') {\n        exclude group: '*', module: '*'\n    }\n}\n</pre>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Hooking_Into_Citizens\">Hooking Into Citizens</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=API&amp;action=edit&amp;section=4\" title=\"Edit section: Hooking Into Citizens\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Hooking into Citizens is as simple as adding the line\n</p>\n<pre>depend: [Citizens]\n# or \nsoftdepend: [Citizens]\n</pre>\n<p>into your plugin.yml. \n</p><p>Next, wait for CitizensEnableEvent or CitizensLoadEvent before using Citizens via the CitizensAPI class. This gives you access to the global NPCRegistry for NPCs, as well as the TraitFactory which allows trait registration. If Citizens is not loaded or you didn't wait for CitizensEnableEvent, all CitizensAPI.* methods will return null.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Creating_an_NPC\">Creating an NPC</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=API&amp;action=edit&amp;section=5\" title=\"Edit section: Creating an NPC\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>The simplest way to create an NPC is to use an NPCRegistry, which manages the storage and creation of NPCs. The default registry is given by CitizensAPI.getNPCRegistry(), and you can create new ones with different storage methods by calling other CitizensAPI methods. A Player NPC with name \"fullwall\" could then be created like this:\n</p><p><code>\nNPC npc = CitizensAPI.getNPCRegistry().createNPC(EntityType.PLAYER, \"fullwall\");\nnpc.spawn(location);\n</code>\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Checking_if_an_entity_is_a_Citizens_NPC\">Checking if an entity is a Citizens NPC</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=API&amp;action=edit&amp;section=6\" title=\"Edit section: Checking if an entity is a Citizens NPC\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Citizens NPCs will have the \"NPC\" Entity metadata set to true. <code>boolean isCitizensNPC = entity.hasMetadata(\"NPC\");</code> This method doesn't even require a dependency on Citizens, as it works entirely through Spigot!\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Making_an_NPC_Move\">Making an NPC Move</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=API&amp;action=edit&amp;section=7\" title=\"Edit section: Making an NPC Move\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Want to make an NPC pathfind to a location? <code>npc.getNavigator().setTarget(yourLocation);</code>\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Creating_a_Trait\">Creating a Trait</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=API&amp;action=edit&amp;section=8\" title=\"Edit section: Creating a Trait\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Traits are persistent, attachable objects that are linked to an NPC and provide specific functionality. This can be anything from custom AI to a simple talking trait.\n</p><p>To register a trait, we use the <b>TraitFactory</b> class. This controls registration for your custom traits.\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:98%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:98%; height:500px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"java\">//This is your trait that will be applied to a npc using the /trait mytraitname command. Each NPC gets its own instance of this class.\n//the Trait class has a reference to the attached NPC class through the protected field 'npc' or getNPC().\n//The Trait class also implements Listener so you can add EventHandlers directly to your trait.\n@TraitName(\"mytraitname\")\npublic class MyTrait extends Trait {\n\tpublic MyTrait() {\n\t\tsuper(\"mytraitname\");\n\t\tplugin = JavaPlugin.getPlugin(MyPlugin.class);\n\t}\n\n\tMyPlugin plugin = null;\n\n\tboolean SomeSetting = false;\n        \n        // see the 'Persistence API' section\n        @Persist(\"mysettingname\") boolean automaticallyPersistedSetting = false;\n\n\t// Here you should load up any values you have previously saved (optional). \n        // This does NOT get called when applying the trait for the first time, only loading onto an existing npc at server start.\n        // This is called AFTER onAttach so you can load defaults in onAttach and they will be overridden here.\n        // This is called BEFORE onSpawn, npc.getEntity() will return null.\n\tpublic void load(DataKey key) {\n\t\tSomeSetting = key.getBoolean(\"SomeSetting\", false);\n\t}\n\n\t// Save settings for this NPC (optional). These values will be persisted to the Citizens saves file\n\tpublic void save(DataKey key) {\n\t\tkey.setBoolean(\"SomeSetting\",SomeSetting);\n\t}\n\n        // An example event handler. All traits will be registered automatically as Spigot event Listeners\n\t@EventHandler\n\tpublic void click(net.citizensnpcs.api.event.NPCRightClickEvent event){\n\t\t//Handle a click on a NPC. The event has a getNPC() method. \n\t\t//Be sure to check event.getNPC() == this.getNPC() so you only handle clicks on this NPC!\n\t\t\n\t}\n      \n        // Called every tick\n        @Override\n        public void run() {\n        }\n\n\t//Run code when your trait is attached to a NPC. \n        //This is called BEFORE onSpawn, so npc.getEntity() will return null\n        //This would be a good place to load configurable defaults for new NPCs.\n\t@Override\n\tpublic void onAttach() {\n\t\tplugin.getServer().getLogger().info(npc.getName() + \"has been assigned MyTrait!\");\n\t}\n\n        // Run code when the NPC is despawned. This is called before the entity actually despawns so npc.getEntity() is still valid.\n\t@Override\n\tpublic void onDespawn() {\n        }\n\n\t//Run code when the NPC is spawned. Note that npc.getEntity() will be null until this method is called.\n        //This is called AFTER onAttach and AFTER Load when the server is started.\n\t@Override\n\tpublic void onSpawn() {\n\n\t}\n\n        //run code when the NPC is removed. Use this to tear down any repeating tasks.\n\t@Override\n\tpublic void onRemove() {\n        }\n\n}\n\n//This is your Spigot plugin class. Use it to hook your trait into Citizens and handle any commands.\npublic class MyPlugin extends org.bukkit.plugin.java.JavaPlugin {\n\n        public void onEnable() {\n        // check if Citizens is present and enabled.\n        if (getServer().getPluginManager().getPlugin(\"Citizens\") == null\n                || !getServer().getPluginManager().getPlugin(\"Citizens\").isEnabled()) {\n            getLogger().log(Level.SEVERE, \"Citizens 2.0 not found or not enabled\");\n        } else {\n            // Register your trait with Citizens.\n            net.citizensnpcs.api.CitizensAPI.getTraitFactory()\n                    .registerTrait(net.citizensnpcs.api.trait.TraitInfo.create(MyTrait.class));\n            Bukkit.getServer().getPluginManager().registerEvents(new Listener() {\n                @EventHandler\n                public void onCitizensEnable(CitizensEnableEvent ev) {\n                    NPC npc = CitizensAPI.getNPCRegistry().createNPC(EntityType.PLAYER, \"Dinnerbone\");\n                    npc.spawn(yourlocationhere);\n                }\n            }, this);\n        }\n    }\n}\n\n</pre>\n</div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Dos_and_Don'ts\"><span id=\"Dos_and_Don.27ts\"></span>Dos and Don'ts</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=API&amp;action=edit&amp;section=9\" title=\"Edit section: Dos and Don&#39;ts\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><b><span style=\"background: white; color: green\">DO</span></b>\n</p>\n<ul><li>Use Spigot Entity API with npc.getEntity()</li>\n<li>Create a separate event Listener class if you expect there to be many trait instances. This may help performance with frequently called events.</li>\n<li>Honor npc.isProtected() If this is true the NPC should be 'invulnerable' to normal damaging effects.</li>\n<li>Use CitizensAPI.getNPCRegistry().isNPC() to check if an entity is a NPC. Real players and player-type NPCs will both return true for instanceof Player.</li></ul>\n<p><b><span style=\"background: white; color: red\">DON'T</span></b>\n</p>\n<ul><li>Attempt to access npc.getEntity() from within traits until onSpawn() has been called or npc.isSpawned() returns true.</li>\n<li>Change anything in npc.getNavigator().getDefaultParams() unless you're sure you want a global change. Use the localParams() instead <i>after</i> setting a navigation target.</li>\n<li>Assume a NPC is a Player. Mob types have some important differences.</li></ul>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Default_Traits\">Default Traits</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=API&amp;action=edit&amp;section=10\" title=\"Edit section: Default Traits\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Citizens comes by default with Traits for its built-in commands. You can see these Traits in the JavaDocs <a rel=\"nofollow\" class=\"external free\" href=\"https://jd.citizensnpcs.co/net/citizensnpcs/api/trait/trait/package-summary.html\">https://jd.citizensnpcs.co/net/citizensnpcs/api/trait/trait/package-summary.html</a> and also in the Citizens2 GitHub <a rel=\"nofollow\" class=\"external free\" href=\"https://github.com/CitizensDev/Citizens2/tree/master/main/src/main/java/net/citizensnpcs/trait\">https://github.com/CitizensDev/Citizens2/tree/master/main/src/main/java/net/citizensnpcs/trait</a>.\n</p><p>For example, you might add a piece of armor to an NPC using\n</p>\n<pre>npc.getOrAddTrait(Equipment.class).set(EquipmentSlot.BOOTS, new ItemStack(Material.LEATHER_BOOTS, 1));\n</pre>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"NPC_Events\">NPC Events</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=API&amp;action=edit&amp;section=11\" title=\"Edit section: NPC Events\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Citizens implements its own Listeners and will call new NPC-specific versions of many common events. This saves Trait developers the trouble of finding their npcs from the normal event entities. The event object these events provide are just like their Spigot counterparts with the addition of the getNPC() method.\n</p><p>See the [<a rel=\"nofollow\" class=\"external text\" href=\"http://jd.citizensnpcs.co/\">Javadocs</a>] for a full list.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Using_the_AI_API\">Using the AI API</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=API&amp;action=edit&amp;section=12\" title=\"Edit section: Using the AI API\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>The AI API of Citizens can be broken down into two parts - <i>GoalController</i> and <i>Navigator</i>.\n</p><p>A <i>Goal</i> is a repeatable, abstract unit of work that can be performed by an NPC. For example, moving to a different location or attacking an enemy until it dies. It can be registered with a GoalController with a priority (higher is more important). The highest priority goal which can be executed will be prioritised. NPC contains getDefaultGoalController() for this purpose.\n</p><p>The GoalSelector allows for the dynamic selection of sub-goals and the concurrent execution of many sub-goals, and can stop execution at any time.\n</p><p>To add a new Goa, plugins should use Behavior interface which is a <a rel=\"nofollow\" class=\"external text\" href=\"https://en.wikipedia.org/wiki/Behavior_tree_(artificial_intelligence,_robotics_and_control)\">behavior tree</a> approach. Available node types are listed in the <a rel=\"nofollow\" class=\"external text\" href=\"https://jd.citizensnpcs.co/net/citizensnpcs/api/ai/tree/package-summary.html\">javadocs</a>.\n</p><p>Here is some suggested code for a new leaf Behavior node.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:98%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:98%; height:500px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"java\"> public class MyBehavior extends BehaviorGoalAdapter {\n     private Object state; \n     public void reset() {\n         state = null;\n         // this method can be called at any time if another goal is selected\n     }\n     public BehaviorStatus run() {\n         if(!npcIsCool()) {\n             return BehaviorStatus.FAILURE;\n         } else if (npcIsAwesome()) {\n             return BehaviorStatus.SUCCESS; \n         } else if (npcNeedsCool()) {\n             new AccumulateCoolBehavior().run(); // easily run other behavior inline\n             return BehaviorStatus.RUNNING;\n         }\n     }\n     public boolean shouldExecute() {\n         if (npcIsCool()) { \n             return true;\n         }\n         return false;\n     } \n }\n</pre>\n</div></td></tr></tbody></table>\n<p>You can compose behaviors using code like the following example:\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:98%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:98%; height:300px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"java\"> public void setupTree(NPC npc) {\n     npc.getGoalController().addGoal(Sequence.createSequence(new MyBehavior(), new MyAccumulateBehavior(), new MyParallelBehavior()));\n\n     // A more complicated example\n     npc.getGoalController().addGoal(Sequence.createSequence(\n              new IfElse(() -&gt; npc.isCool(), \n                  TimerDecorator.tickLimiter(new MyLongRunningBehavior(), 100), \n                  new MyElseBehavior()),\n              new MyParallelBehavior()\n     ));\n }\n</pre>\n</div></td></tr></tbody></table>\n<p>The second important class is <i><a rel=\"nofollow\" class=\"external text\" href=\"https://jd.citizensnpcs.co/net/citizensnpcs/api/ai/Navigator.html\">Navigator</a></i>. This enables pathfinding to a destination location or entity over time. The target should be set once only, not every tick. You can listen to the following navigation events to control the pathfinding flow:\n</p>\n<ul><li>NavigationBeginEvent</li>\n<li>NavigationCancelEvent</li>\n<li>NavigationCompleteEvent</li>\n<li>NavigationEvent</li>\n<li>NavigationReplaceEvent</li></ul>\n<p>You can also use the <a rel=\"nofollow\" class=\"external text\" href=\"https://jd.citizensnpcs.co/net/citizensnpcs/api/ai/NavigatorParameters.html\">NavigatorParameters</a> class to customise various aspects of pathfinding. The Navigator has two sets of parameters; \"default\", which are persisted over the lifetime of the NPC, and \"local\", which is a copy of the default parameters created when a pathfinding target is set.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:98%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:98%; height:300px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"java\"> public void setPathfindingTarget(NPC npc, Location location) {\n     npc.getNavigator().getDefaultParameters().speedModifier(1.1); // 110% speed by default.\n     npc.getNavigator().setTarget(location);\n     npc.getNavigator().getLocalParameters().speedModifier(1.2); // 120% speed for this pathfinding target only\n }\n</pre>\n</div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Using_the_Persistence_API\">Using the Persistence API</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=API&amp;action=edit&amp;section=13\" title=\"Edit section: Using the Persistence API\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Sometimes, traits can store a lot of simple variables such as primitives, Strings, Locations, and others. Saving/loading them via the trait API can be a little bit of overkill.\n</p><p>Citizens provides a simple Persistence API to automatically save and load these variables using DataKeys. The key to this API is the @Persist annotation. Sample code is provided below.\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> Example</div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:300px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"java\"> public class MyTrait extends Trait {\n     // logic omitted.\n\n    @Persist boolean myVariable = false; // the default value of @Persist saves the value under the field name (in this case, 'myVariable').\n    \n    @Persist(\"newkey\") int intVariable = 11; // this saves the value under 'newkey'. The default value of the variable has been set to 11 - this will be used when loading if the key doesn't exist.\n\n    @Persist(value=\"newkey\", required=true) String required; // if the value under 'newkey' doesn't exist, then the trait will fail to load.\n }\n</pre></div></td></tr></tbody></table>\n<p>More advanced use of the API can be found in the @DelegatePersistence annotation. This allows complex types such as Locations to be saved and loaded with finer grained control. These types can be given default delegates by calling PersistenceLoader#registerPersistDelegate(Persister) - Location has a built in Persister for convenience.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:98%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:98%; height:500px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"java\"> public class MyTrait extends Trait {\n     // logic omitted.\n\n    @Persist \n    @DelegatePersistence(ExplicitComplexTypePersister.class) // explicit delegation\n    ComplexType myComplexType;\n\n    @Persist ComplexType implicitComplexType; // implicit delegation\n    static {\n        PersistenceLoader.registerPersistDelegate(ImplicitComplexTypePersister.class);\n    }\n }\n \n public class ExplicitComplexTypePersister implements Persister {\n     public Object create(DataKey root) {\n         return new ComplexType(root.getInteger(\"complexstructures\"));\n     }\n     public void save(Object instance, DataKey root) {\n         ComplexType real = (ComplexType) instance; // guaranteed cast - will always succeed.\n         root.setInteger(\"complexstructures\", real.getComplexStructure());\n     }\n }\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_Also\">See Also</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=API&amp;action=edit&amp;section=14\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><a href=\"/Characters\" title=\"Characters\">Characters</a>\n</p>\n<div class=\"padded\" style=\"font-size: 12px; padding: 5px\">\n<table class=\"wikitable collapsible collapsed\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Usage\" title=\"Category:Usage\">Usage</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Installation\" title=\"Installation\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Frequently_Asked_Questions\" title=\"Frequently Asked Questions\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Editors\" title=\"Editors\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Characters\" title=\"Characters\">Characters</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a class=\"mw-selflink selflink\">API</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32;\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Configuration\" title=\"Category:Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Configuration\" title=\"Configuration\">Configuration</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Data_Storage\" title=\"Data Storage\">Data Storage</a>\n</td></tr></tbody></table>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145814\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.073 seconds\nReal time usage: 0.133 seconds\nPreprocessor visited node count: 240/1000000\nRevision size: 17272/2097152 bytes\nPost‐expand include size: 5831/2097152 bytes\nTemplate argument size: 647/2097152 bytes\nHighest expansion depth: 4/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 7849/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   68.395      1 -total\n 66.96%   45.800      6 Template:Codebox\n 14.56%    9.959      1 Template:NavBox\n  8.70%    5.952      2 Template:Color\n  6.53%    4.465      1 Template:Box\n  6.16%    4.212     10 Template:·\n-->\n\n<!-- Render ID 824cd563-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Configuration"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Data Storage"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Editors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Text Syntax"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Configuration"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Usage"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Linking Properly In Java",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "API",
+        "byteoffset": 1025,
+        "anchor": "Linking_Properly_In_Java",
+        "linkAnchor": "Linking_Properly_In_Java"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Common Mistakes",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "API",
+        "byteoffset": 2119,
+        "anchor": "Common_Mistakes",
+        "linkAnchor": "Common_Mistakes"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Gradle",
+        "number": "1.2",
+        "index": "3",
+        "fromtitle": "API",
+        "byteoffset": 3461,
+        "anchor": "Gradle",
+        "linkAnchor": "Gradle"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Hooking Into Citizens",
+        "number": "2",
+        "index": "4",
+        "fromtitle": "API",
+        "byteoffset": 4055,
+        "anchor": "Hooking_Into_Citizens",
+        "linkAnchor": "Hooking_Into_Citizens"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Creating an NPC",
+        "number": "3",
+        "index": "5",
+        "fromtitle": "API",
+        "byteoffset": 4561,
+        "anchor": "Creating_an_NPC",
+        "linkAnchor": "Creating_an_NPC"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Checking if an entity is a Citizens NPC",
+        "number": "4",
+        "index": "6",
+        "fromtitle": "API",
+        "byteoffset": 5036,
+        "anchor": "Checking_if_an_entity_is_a_Citizens_NPC",
+        "linkAnchor": "Checking_if_an_entity_is_a_Citizens_NPC"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Making an NPC Move",
+        "number": "5",
+        "index": "7",
+        "fromtitle": "API",
+        "byteoffset": 5304,
+        "anchor": "Making_an_NPC_Move",
+        "linkAnchor": "Making_an_NPC_Move"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Creating a Trait",
+        "number": "6",
+        "index": "8",
+        "fromtitle": "API",
+        "byteoffset": 5430,
+        "anchor": "Creating_a_Trait",
+        "linkAnchor": "Creating_a_Trait"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Dos and Don'ts",
+        "number": "6.1",
+        "index": "9",
+        "fromtitle": "API",
+        "byteoffset": 9603,
+        "anchor": "Dos_and_Don'ts",
+        "linkAnchor": "Dos_and_Don'ts"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Default Traits",
+        "number": "7",
+        "index": "10",
+        "fromtitle": "API",
+        "byteoffset": 10500,
+        "anchor": "Default_Traits",
+        "linkAnchor": "Default_Traits"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "NPC Events",
+        "number": "8",
+        "index": "11",
+        "fromtitle": "API",
+        "byteoffset": 11001,
+        "anchor": "NPC_Events",
+        "linkAnchor": "NPC_Events"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Using the AI API",
+        "number": "9",
+        "index": "12",
+        "fromtitle": "API",
+        "byteoffset": 11398,
+        "anchor": "Using_the_AI_API",
+        "linkAnchor": "Using_the_AI_API"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Using the Persistence API",
+        "number": "10",
+        "index": "13",
+        "fromtitle": "API",
+        "byteoffset": 15009,
+        "anchor": "Using_the_Persistence_API",
+        "linkAnchor": "Using_the_Persistence_API"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "See Also",
+        "number": "11",
+        "index": "14",
+        "fromtitle": "API",
+        "byteoffset": 17214,
+        "anchor": "See_Also",
+        "linkAnchor": "See_Also"
+      }
+    ],
+    "showtoc": ""
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Denizen/0.7/Troubleshooting",
+    "pageid": 187,
+    "revid": 5233,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://one.denizenscript.com/denizen/cmds/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://one.denizenscript.com/denizen/cmds/denizen/vids\">Tutorial Videos</a> on youtube or the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br />\n<s>\n</s></p><s><div style=\"font-family:camingodos-web; font-size:100%;\">\n<div style=\"float:right;margin-left:2.0em; padding:10px; font-family:camingodos-web; font-size:110%;\"><div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Assignments_not_working?\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Assignments not working?</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Trigger_not_working?\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Trigger not working?</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Script_not_working_as_intended?\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Script not working as intended?</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Still_having_problems,_what_now?\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Still having problems, what now?</span></a></li>\n</ul>\n</div>\n</div>\n<div style=\"margin-right:2.0em; margin-top:35px; padding:10px; font-family:camingodos-web; font-size:110%;\">\n<p><span style=\"font-family:natalya-alternate-one; font-size:650%; margin-right:-7px; margin-left:-10px;\">D</span>enizen can seem a bit complicated at first, especially when you don't know what to look for when something isn't working exactly like you want. Luckily, if you are having problems, there are several tools available to help you.\n</p>\n</div>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Assignments_not_working?\"><span id=\"Assignments_not_working.3F\"></span>Assignments not working?</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Troubleshooting&amp;action=edit&amp;section=1\" title=\"Edit section: Assignments not working?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div style=\"margin-right:2.0em; padding:10px; font-family:camingodos-web; font-size:110%;\">\n<p>To check assignments on a Denizen use <tt>/denizen info</tt> with the NPC selected to make sure assignments have taken. This also shows other great information, such as bookmarks and activities. If you are the NPC's owner you can also sneak and right click to view this info. See: <a href=\"/Denizen/0.7/In_Game_Commands#Info-Click\" title=\"Denizen/0.7/In Game Commands\">Info-Click</a>\n</p><p>If assignments are not showing up, ensure that your <tt>assignments.yml</tt> is properly formatted, you've saved your assignments.yml, and you've used <tt>/denizen reload</tt>. Also check spelling of the Denizen NPCs name. This is case-sensitive! See: <a href=\"/Denizen/0.7/In_Game_Commands#Denizen_Reload\" title=\"Denizen/0.7/In Game Commands\">Reload Command</a>\n</p>\n</div>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Trigger_not_working?\"><span id=\"Trigger_not_working.3F\"></span>Trigger not working?</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Troubleshooting&amp;action=edit&amp;section=2\" title=\"Edit section: Trigger not working?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div style=\"margin-right:2.0em; padding:10px; font-family:camingodos-web; font-size:110%;\">Denizen NPCs, by default, have only their Click Trigger and Chat Triggers enabled. Use <tt>/denizen trigger list</tt> to see the status of the triggers for your NPC. Red means disabled. See:  <a href=\"/Denizen/0.7/In_Game_Commands#Trigger_Toggles\" title=\"Denizen/0.7/In Game Commands\">Trigger Command</a>\n<p><br />\nYou may also have a plugin conflict. If you suspect this, try disabling all plugins except Permissions, Citizens2, and Denizen to see if the problem persists.\n</p>\n</div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Script_not_working_as_intended?\"><span id=\"Script_not_working_as_intended.3F\"></span>Script not working as intended?</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Troubleshooting&amp;action=edit&amp;section=3\" title=\"Edit section: Script not working as intended?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div style=\"margin-right:2.0em; padding:10px; font-family:camingodos-web; font-size:110%;\">Turn on <tt>/denizen debug</tt> and check the information being sent to the console when your script runs. There's likely some information in there that can be used to track down the problem, whether it be failed requirements, incorrect flow logic, syntax, or simply a spelling mistake. See:  <a href=\"/index.php?title=Denizen/In_Game_Commands&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Denizen/In Game Commands (page does not exist)\">Debug Mode Command</a>\n</div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Still_having_problems,_what_now?\"><span id=\"Still_having_problems.2C_what_now.3F\"></span>Still having problems, what now?</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Troubleshooting&amp;action=edit&amp;section=4\" title=\"Edit section: Still having problems, what now?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div style=\"margin-right:2.0em; padding:10px; font-family:camingodos-web; font-size:110%;\">If you are still having problems check your console messages for errors, especially at start up. Any kind of error, from any plugin, may lead to problems. Take this opportunity again to triple-check spacing in your script. If all else fails join us on <a rel=\"nofollow\" class=\"external text\" href=\"http://webchat.esper.net/?channels=denizen-dev\">EsperNet in #denizen-dev</a>.\n</div>\n</div></s><s></s><p><s></s>\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145824\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.024 seconds\nReal time usage: 0.048 seconds\nPreprocessor visited node count: 16/1000000\nRevision size: 3734/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 8842b667-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen/0.7/In Game Commands"
+      },
+      {
+        "ns": 0,
+        "*": "Denizen/In Game Commands"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "3",
+        "line": "Assignments not working?",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Denizen/0.7/Troubleshooting",
+        "byteoffset": 1405,
+        "anchor": "Assignments_not_working?",
+        "linkAnchor": "Assignments_not_working?"
+      },
+      {
+        "toclevel": 1,
+        "level": "3",
+        "line": "Trigger not working?",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Denizen/0.7/Troubleshooting",
+        "byteoffset": 2191,
+        "anchor": "Trigger_not_working?",
+        "linkAnchor": "Trigger_not_working?"
+      },
+      {
+        "toclevel": 1,
+        "level": "3",
+        "line": "Script not working as intended?",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "Denizen/0.7/Troubleshooting",
+        "byteoffset": 2740,
+        "anchor": "Script_not_working_as_intended?",
+        "linkAnchor": "Script_not_working_as_intended?"
+      },
+      {
+        "toclevel": 1,
+        "level": "3",
+        "line": "Still having problems, what now?",
+        "number": "4",
+        "index": "4",
+        "fromtitle": "Denizen/0.7/Troubleshooting",
+        "byteoffset": 3231,
+        "anchor": "Still_having_problems,_what_now?",
+        "linkAnchor": "Still_having_problems,_what_now?"
+      }
+    ],
+    "showtoc": ""
+  }
+}

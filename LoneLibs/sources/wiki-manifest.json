@@ -1,0 +1,25 @@
+[
+  {
+    "file": "wiki/plugin-page.md",
+    "title": "LoneLibs 官方发布说明",
+    "source_url": "https://www.spigotmc.org/resources/outdated-lonelibs.75974/",
+    "source_file": "sources/wiki/original/plugin-page.md",
+    "source_sha256": "765d1e756edae7cefb024c66ece3a363290d89f54946db743d8f7d46ed5fbb16",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/readme.md",
+    "title": "LoneLibs 仓库说明",
+    "source_url": "https://github.com/JavaPlugins/LoneLibs/blob/master/README.md",
+    "source_file": "sources/wiki/original/readme.md",
+    "source_sha256": "64679ae07cfcb7769ff59d02a3c5763df5d98ae48ba59910366acb6323611456",
+    "translation_review": "reviewed",
+    "source_exclusions": [
+      {
+        "start_line": 6,
+        "end_line": 22,
+        "reason": "API/SDK 接入参考；具体排除范围见 wiki-coverage.json"
+      }
+    ]
+  }
+]

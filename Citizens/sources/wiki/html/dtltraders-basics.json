@@ -1,0 +1,89 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "DtlTraders/basics",
+    "pageid": 346,
+    "revid": 4956,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>This tutorial will show you how to create an <b>Admin shop</b> like trader, how to change his stock and what you should be aware of when managing a trader. I will show you some exceptions and behavior connected with the <b>manager mode</b> and it's <b>sub-modes</b>. I'll also show you how to change the configuration to help you set up prices.  \n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Creating_a_trader\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Creating a trader</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-2\"><a href=\"#First_opening_and_manager_mode_introduction\"><span class=\"tocnumber\">1.1</span> <span class=\"toctext\">First opening and manager mode introduction</span></a></li>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Add,_edit_and_remove_items\"><span class=\"tocnumber\">1.2</span> <span class=\"toctext\">Add, edit and remove items</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Setting_prices\"><span class=\"tocnumber\">1.3</span> <span class=\"toctext\">Setting prices</span></a></li>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#Multiple_amounts\"><span class=\"tocnumber\">1.4</span> <span class=\"toctext\">Multiple amounts</span></a></li>\n<li class=\"toclevel-2 tocsection-6\"><a href=\"#StackPrice_and_NoStack_flags\"><span class=\"tocnumber\">1.5</span> <span class=\"toctext\">StackPrice and NoStack flags</span></a></li>\n</ul>\n</li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Creating_a_trader\">Creating a trader</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/basics&amp;action=edit&amp;section=1\" title=\"Edit section: Creating a trader\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>You can create a trader in 2 different ways, first one is using the <b>/trader create &lt;name&gt;</b> command, or the trait assignment command from citizens <b>/trait trader</b>.\n</p><p>When you should use these command? \nGenerally the <b>create</b> command create a new NPC with the given name, ready to be edited with the next click, whereas the <b>trait</b> command should be used on existing NPCs, so if you got, lets say, a NPC walking a long path you don't need to set his path from scratch.\n</p><p><br />\nLets create a new trader so we can manage him not being afraid of any mistakes. \n</p><p>Lets create a trader with the name <b>Chef Otto</b>, we will also make <b>Otto</b> to have his title in a golden color. \n</p><p><code>/trader create &amp;6Chef &amp;rOtto</code> \n</p><p>As you see we use the <b>&amp;</b> character to tell that the next number or character is a color code, where <b>&amp;6</b> means <i><b>gold</b></i> and <b>&amp;r</b> is used to <b>reset any formating</b>, so only the <i>title</i> has a color. All color codes are listed [|here].\n</p><p><br />\nAfter that command we have our npc standing before us, and we got three messages:\n</p><p><code style=\"font-family: Helvetica\">\n<b>You created a new trader: <span style=\"color:orange\">Chef</span> Otto</b><br />\n<b>Manager mode enabled for: <span style=\"color:orange\">Chef</span> Otto</b><br />\n<b><span style=\"color:blue\">Sell Stock</span> managing toggled</b>\n</code>\n</p><p><br />\nEvery time you <b>create a new trader</b> with this command it <b>switches automatically to manager mode</b> for you and <b>unlocks the sell stock</b>. Unlocking the stock allows to change the content. \n</p><p>Now we only need to <b>right click</b> on the trader and get to the next section in this tutorial&#160;:)\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"First_opening_and_manager_mode_introduction\">First opening and manager mode introduction</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/basics&amp;action=edit&amp;section=2\" title=\"Edit section: First opening and manager mode introduction\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Opening the trader first time, just after creating him, will look like a empty chest with just one <b>yellow</b> wool on the bottom. Now we can just simply drag each item we want to sell to players into the inventory. You can any item you want, this plugin supports all items with all custom properties.\n</p>\n<dl><dd>---</dd>\n<dd>For example lets put a <b>cookie</b> and <b>bread</b> into the stock.</dd>\n<dd>---</dd></dl>\n<p>After you have added all items you want to sell just simply click the yellow wool. It will <b>lock</b> the stock, saving all items and updating old ones, and switch to the general management section. \n</p><p>Now you got 4 different wools on the bottom, with options <i>(from left to right)</i>:\n</p>\n<ol><li><b>Stock unlocking</b> - allows to change the content and its layout</li>\n<li><b>Limit management</b> - still not added</li>\n<li><b>Price management</b> - allows to set prices to items in stock</li>\n<li><b>Stock switching</b> - shows the current stock and upon clicking switches to the other stock, this button is visible always (except unlocked stock)</li></ol>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Add,_edit_and_remove_items\"><span id=\"Add.2C_edit_and_remove_items\"></span>Add, edit and remove items</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/basics&amp;action=edit&amp;section=3\" title=\"Edit section: Add, edit and remove items\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Notice that the slot position of each item has not changed, so where you put the item it will stay there.\nAlways when you want to change items in the stock you need to do it when the stock is unlocked. \n</p><p>You can add and remove items just dragging them in or out of the traders inventory, the only additional thing you can do here is to move items to different slots. \n</p><p><b>Important!</b> Do not change then amount you want to sell in this <b>section</b>, or all settings and prices will be lost for that item. How to do this will be discussed later.\n</p><p><br />\n</p>\n<dl><dd>---</dd>\n<dd>So we got a <b>cookie</b> and <b>bread</b> in our stock</dd>\n<dd>Lets say we have forgot that we want also to sell some <b>stew</b> to players. So we need to unlock the stock, add the item and lock the stock back.</dd>\n<dd>---</dd></dl>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Setting_prices\">Setting prices</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/basics&amp;action=edit&amp;section=4\" title=\"Edit section: Setting prices\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Managing prices is also done by just clicking on items, but you can do this using commands too. But for now I'll explain how to do this with the GUI. \n</p><p>When an item does not have any price it will have show the price set to <b>none</b>, such items are shown but players cant buy or sell these items to a trader, like there are not existing in the stock. This will prevent to accidentally give items for free to players, if you forgot to set the price. You can also use this feature to make a small info desk just adding items with prepared descriptions to the trader. Clicking the trader will open the stock with these items. \n</p><p>Clicking on a item with an <b>empty</b> cursor will also show it's current value.\n</p><p><br />\nBut how to change the price? Pretty simple, just take any item from your inventory, for example a <b>pickaxe</b>, after you got that item in your cursor, <b>left click</b> with it on any item in the stock, you will notice a chat message telling you whats the new price for that item.\n</p>\n<dl><dd>But adding by 1 is hilarious! It would take ages to set a price of 10000!!</dd></dl>\n<p><br />\nSo lets introduce some rules:\n</p>\n<ol><li><b>left clicking</b> an item <b>always</b> increases the price</li>\n<li><b>right clicking</b> an item <b>always</b> decreases the price, the price wont get below <b>0.00</b> what is equal to <b>free item</b>.</li>\n<li>Each item has a value of 1, except special blocks defined in the config.</li>\n<li>Special blocks, with different values have a description showing the value of the block, for example, clicking with a block of stone would change the price by <b>10000</b></li>\n<li>If the item you are using to change the price can be stacked, the price change is calculated this way: <i><b>block value</b></i> * <i><b>stack amount</b></i></li></ol>\n<p><br />\nTo show you how this works here are some examples (with the default config): \n</p>\n<ul><li><b>3 blocks of wool</b> =&gt; 1 * 3 = 3</li>\n<li><b>1 pickaxe</b> =&gt; 1 * 1 = 1</li>\n<li><b>10 blocks of cobblestone</b> =&gt; 10 * 100 = 1000</li>\n<li><b>23 blocks of dirt</b> =&gt; 0.01 * 23 = 0.23</li></ul>\n<p><br />\ndefault special blocks:\n</p>\n<ol><li><b>dirt</b> = 0.01</li>\n<li><b>wood</b> = 0.1</li>\n<li><b>log</b> = 10</li>\n<li><b>cobblestone</b> = 100</li>\n<li><b>stone</b> = 10000</li></ol>\n<p><br />\n</p>\n<dl><dd>---</dd>\n<dd>Now lets set prices for our items, <b>apple</b> = 2.12, <b>bread</b> = 5.30, <b>stew</b> = 8.99 and click the <b>back</b> button.</dd>\n<dd>---</dd></dl>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Multiple_amounts\">Multiple amounts</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/basics&amp;action=edit&amp;section=5\" title=\"Edit section: Multiple amounts\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>This management section allows to make buying items for players a bit easier. Consider a situation when a player want to buy 64 loafs of bread, clicking 64 times on that item would make him go mad, how we fix this? We could add the same item to the stock and set the price for it, but this would need to use a new slot and sometimes we want to sell a lot of items and this approach would waste slots. \n</p><p>So what shall we do?\n</p><p><br />\nTo resole this issue there is a feature that allows to open a <b>sub-inventory</b> that contains custom amounts of the item sold. To open that <b>sub-inventory</b> you just need to <b>shift left click</b> the item you want to configure. \n</p><p>Now when we got that window open you can notice that at the first slot is the amount you added to the stock, and here you can change the items base amount, not loosing any configuration set to the item. \n</p><p>Adding any other amount here will automatically enable the <b>sub-inventory</b> for each player. From up now <b>left-clicking</b> the item will always open the sub-inventory and <b>right clicking</b> will use the base amount for the transaction, so if a player just wants to buy the base amount he don't need to open the sub-inventory. \n</p><p><br />\n<b>Note!</b> If you add for example 10 apples to the amount inventory of a pickaxe, it will just read the amount and add it to the configuration allowing to sell 10 pickaxes, the plugin will add them in stacks of 1 as because the <b>max stack amount</b> for any tool is equal to <b>1</b>, so it needs 10 free slots to buy this item. From build #411 or #3 (new project)\n</p><p><br />\n</p>\n<dl><dd>---</dd>\n<dd>So as because our players love to eat apples lets add them some additional amounts 10, 16, 20, 32 and 64, and click the <b>back</b> button.</dd>\n<dd>---</dd></dl>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"StackPrice_and_NoStack_flags\">StackPrice and NoStack flags</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/basics&amp;action=edit&amp;section=6\" title=\"Edit section: StackPrice and NoStack flags\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Besides the <b>Multiple amounts</b> feature there are two flags that can be set or removed from a item in the traders stock. \n</p><p>The <b>Stack Price</b> flag changes the way the price for an item is calculated, by default if you set the price of <b>1</b> to a stack of 5 items, it will cost <b>5</b>, but with the stack price flag, the whole price set in manager mode is set to the stack, so <b>5 items for 1</b>. \n</p><p><br />\nThe <b>No Stack</b> flag is curently disabled\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145902\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.031 seconds\nReal time usage: 0.045 seconds\nPreprocessor visited node count: 18/1000000\nRevision size: 8359/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 9ee90d63-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Creating a trader",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "DtlTraders/basics",
+        "byteoffset": 346,
+        "anchor": "Creating_a_trader",
+        "linkAnchor": "Creating_a_trader"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "First opening and manager mode introduction",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "DtlTraders/basics",
+        "byteoffset": 2023,
+        "anchor": "First_opening_and_manager_mode_introduction",
+        "linkAnchor": "First_opening_and_manager_mode_introduction"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Add, edit and remove items",
+        "number": "1.2",
+        "index": "3",
+        "fromtitle": "DtlTraders/basics",
+        "byteoffset": 3080,
+        "anchor": "Add,_edit_and_remove_items",
+        "linkAnchor": "Add,_edit_and_remove_items"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Setting prices",
+        "number": "1.3",
+        "index": "4",
+        "fromtitle": "DtlTraders/basics",
+        "byteoffset": 3880,
+        "anchor": "Setting_prices",
+        "linkAnchor": "Setting_prices"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Multiple amounts",
+        "number": "1.4",
+        "index": "5",
+        "fromtitle": "DtlTraders/basics",
+        "byteoffset": 6120,
+        "anchor": "Multiple_amounts",
+        "linkAnchor": "Multiple_amounts"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "StackPrice and NoStack flags",
+        "number": "1.5",
+        "index": "6",
+        "fromtitle": "DtlTraders/basics",
+        "byteoffset": 7868,
+        "anchor": "StackPrice_and_NoStack_flags",
+        "linkAnchor": "StackPrice_and_NoStack_flags"
+      }
+    ],
+    "showtoc": ""
+  }
+}

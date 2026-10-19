@@ -1,0 +1,110 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Denizen/0.7/Interact Scripts/Triggers",
+    "pageid": 199,
+    "revid": 5402,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://meta.denizenscript.com/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br /><br /><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p>Denizen Triggers trigger from interaction with Denizens. They are defined in the Steps: node of an Interact Script.\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Trigger_Types\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Trigger Types</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-2\"><a href=\"#Right_Click\"><span class=\"tocnumber\">1.1</span> <span class=\"toctext\">Right Click</span></a></li>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Attack_/_Left_Click\"><span class=\"tocnumber\">1.2</span> <span class=\"toctext\">Attack / Left Click</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Proximity\"><span class=\"tocnumber\">1.3</span> <span class=\"toctext\">Proximity</span></a></li>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#Chat\"><span class=\"tocnumber\">1.4</span> <span class=\"toctext\">Chat</span></a></li>\n<li class=\"toclevel-2 tocsection-6\"><a href=\"#Locations\"><span class=\"tocnumber\">1.5</span> <span class=\"toctext\">Locations</span></a></li>\n<li class=\"toclevel-2 tocsection-7\"><a href=\"#Player_Death\"><span class=\"tocnumber\">1.6</span> <span class=\"toctext\">Player Death</span></a></li>\n</ul>\n</li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Trigger_Types\">Trigger Types</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Interact_Scripts/Triggers&amp;action=edit&amp;section=1\" title=\"Edit section: Trigger Types\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div style=\"margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;\">\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Right_Click\">Right Click</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Interact_Scripts/Triggers&amp;action=edit&amp;section=2\" title=\"Edit section: Right Click\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ul><li><b>Click Trigger</b>s activate when the Denizen is right-clicked.</li></ul>\n<pre>Click Trigger:\n  Script:\n  - CHAT \"Teehee, that tickles!\"\n  - EMOTE \"giggles\"\n</pre>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Attack_/_Left_Click\"><span id=\"Attack_.2F_Left_Click\"></span>Attack / Left Click</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Interact_Scripts/Triggers&amp;action=edit&amp;section=3\" title=\"Edit section: Attack / Left Click\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ul><li><b>Damage Trigger</b>s activate when the Denizen is left-clicked. If the Denizen has Damage Triggers disabled, this will count as a Click Trigger.</li></ul>\n<pre>Damage Trigger:\n  Script:\n  - CHAT \"OUCH, You'll pay for that!\"\n  - STRIKE &lt;PLAYER&gt;\n</pre>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Proximity\">Proximity</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Interact_Scripts/Triggers&amp;action=edit&amp;section=4\" title=\"Edit section: Proximity\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ul><li><b>Proximity Trigger</b>s activate when a player walks close to the Denizen.</li></ul>\n<pre>Proximity Trigger:\n  Script:\n  - CHAT 'Eek! get away, you smell bad, &lt;PLAYER&gt;.'\n</pre>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Chat\">Chat</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Interact_Scripts/Triggers&amp;action=edit&amp;section=5\" title=\"Edit section: Chat\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ul><li><b>Chat Trigger</b>s activate when players chat with Denizens. Players' chat within the configurable range will be directed to the Denizen instead of global chat. Chat also follows the configuration setting. a single chat trigger entry can handle multiple words, see below:</li></ul>\n<pre>Chat Trigger:\n  '1':\n    Trigger: The word needed to /Trigger/ is inside slashes, this whole sentence will appear to be said by the player\n    Script:\n    - CHAT \"Good to know!\"\n  '2':\n    Trigger: A chat trigger can also catch on any word not otherwise caught using /*/. \n    Script:\n    - CHAT \"I don't know what you mean, &lt;PLAYER&gt;!\"\n</pre>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Locations\">Locations</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Interact_Scripts/Triggers&amp;action=edit&amp;section=6\" title=\"Edit section: Locations\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ul><li><b>Location Trigger</b>s activate when players walk near a <a href=\"/index.php?title=Location_Bookmark&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Location Bookmark (page does not exist)\">Location Bookmark</a>. Like chat triggers, multiple locations can be defined in one Location Trigger. They are similar in format to Chat Triggers in the fact that there can be multiple Locations per trigger entry.</li></ul>\n<pre>Location Trigger:\n  '1':\n    Trigger: TreasureRoom\n    Script:\n    - TELEPORT BOOKMARK:Jail\n  '2':\n    Trigger: BedRoom\n    Script:\n    - NARRATE 'You enter the bedroom of the dead man, looking for clues'\n</pre>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Player_Death\">Player Death</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Interact_Scripts/Triggers&amp;action=edit&amp;section=7\" title=\"Edit section: Player Death\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ul><li><b>Playerdeath triggers</b> activate when a Player dies. This trigger is disabled by default. The Trigger: node can be used to define the radius within which the player must die for the Denizen to see it. If the Trigger: is set to -1 the Denizen will attempt to handle any player deaths on the current world.</li></ul>\n<pre>  Playerdeath Trigger:\n    Radius: 50\n    Script:\n    - SHOUT \"HA HA! &lt;PLAYER&gt; died!\"\n\n</pre>\n<p><br />\n</p><p>For a full list of Commands, see <a href=\"/Denizen/0.7/Interact_Scripts/Commands\" title=\"Denizen/0.7/Interact Scripts/Commands\">Commands</a>\n</p></div>\n<!-- \nNewPP limit report\nCached time: 20261019145829\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.022 seconds\nReal time usage: 0.033 seconds\nPreprocessor visited node count: 50/1000000\nRevision size: 3243/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 966/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 8b3da6e5-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen/0.7/Interact Scripts/Commands"
+      },
+      {
+        "ns": 0,
+        "*": "Location Bookmark"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Trigger Types",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Denizen/0.7/Interact_Scripts/Triggers",
+        "byteoffset": 802,
+        "anchor": "Trigger_Types",
+        "linkAnchor": "Trigger_Types"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Right Click",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "Denizen/0.7/Interact_Scripts/Triggers",
+        "byteoffset": 910,
+        "anchor": "Right_Click",
+        "linkAnchor": "Right_Click"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Attack / Left Click",
+        "number": "1.2",
+        "index": "3",
+        "fromtitle": "Denizen/0.7/Interact_Scripts/Triggers",
+        "byteoffset": 1088,
+        "anchor": "Attack_/_Left_Click",
+        "linkAnchor": "Attack_/_Left_Click"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Proximity",
+        "number": "1.3",
+        "index": "4",
+        "fromtitle": "Denizen/0.7/Interact_Scripts/Triggers",
+        "byteoffset": 1361,
+        "anchor": "Proximity",
+        "linkAnchor": "Proximity"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Chat",
+        "number": "1.4",
+        "index": "5",
+        "fromtitle": "Denizen/0.7/Interact_Scripts/Triggers",
+        "byteoffset": 1551,
+        "anchor": "Chat",
+        "linkAnchor": "Chat"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Locations",
+        "number": "1.5",
+        "index": "6",
+        "fromtitle": "Denizen/0.7/Interact_Scripts/Triggers",
+        "byteoffset": 2189,
+        "anchor": "Locations",
+        "linkAnchor": "Locations"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Player Death",
+        "number": "1.6",
+        "index": "7",
+        "fromtitle": "Denizen/0.7/Interact_Scripts/Triggers",
+        "byteoffset": 2700,
+        "anchor": "Player_Death",
+        "linkAnchor": "Player_Death"
+      }
+    ],
+    "showtoc": ""
+  }
+}

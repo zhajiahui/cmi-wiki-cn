@@ -1,0 +1,55 @@
+<div class="infobox" style="width: 295; font-size: 12px; background: #FFFFFF; float: right; border: 1px solid #CCCCCC; margin-left:2.5em; padding: 9px;">
+{{Box|
+BORDER = #ccc|
+BACKGROUND = #aaa|
+WIDTH = 275|
+ALIGN = RIGHT|
+ICON = |
+HEADING = ''' ''' |
+CONTENT = [[image:Moxienpclogo.jpg|frameless|center|260px|image]]
+<div class="padded" style="padding: 19px; font-family:camingodos-web; font-size:110%;">
+
+'''MoxieNPC''' is an extension to MoxieSkills to allow servers to sell abilities and skills XP to their players.
+
+'''Current Version:''' 1.5 Release
+
+'''Developers:''' x3nec
+
+'''Source:''' [https://github.com/x3nec/MoxieNPC Github]
+
+'''Latest Build:''' [http://dev.bukkit.org/server-mods/moxienpc/files/3-moxie-npc-v1-5/ BukkitDev]
+
+'''Support tickets:''' [http://dev.bukkit.org/server-mods/moxienpc/tickets/ Tickets on BukkitDev]
+
+'''Thanks to:''' aufdemrand for this info box thing!
+<br>
+
+}} 
+</div>
+</div>
+
+[[image:Moxienpclogo.jpg|center|800px|image]]
+
+=== What Is It? ===
+
+MoxieNPC is an extension to [http://dev.bukkit.org/server-mods/moxieskills MoxieSkills] that allows admins to set up NPC shops instead of the sign shops. In order for this plugin to operate, you need to have [http://dev.bukkit.org/server-mods/citizens Citizens 2.0] and [http://dev.bukkit.org/server-mods/moxieskills MoxieSkills] running on your server.
+
+----
+
+=== How To Use It ===
+
+MoxieNPC is not a standalone plugin - it is a character trait extending from Citizens 2.0. Therefore, in order to use it, you must first create an NPC, and then do '/trait moxienpc'. Once that is done, you can continue with the instructions below.
+
+* To sell abilities to players, the ability must have purchasable set to true in the abilities.yml file (for MoxieSkills|RPG) 
+* To sell XP to a player, the skill must be spelled correctly. N.B. Remember that the cost you specify is for 1 XP only.
+* In order to see how to use MoxieNPCs, just type /mnpc in game with the MoxieNPC selected by Citizens, it's that easy!
+* The MoxieNPCs are conversable, so players just have to right click them and instructions are given!
+
+----
+
+=== Permissions ===
+
+   moxienpc.usenpc.ability - Buy abilities from the NPC shop.
+   moxienpc.makenpc.ability - Add abilities to sell at NPC shop.
+   moxienpc.usenpc.xp - Buy skills XP from the NPC shop.
+   moxienpc.makenpc.xp - Add skills XP to sell at NPC shop.

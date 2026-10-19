@@ -1,0 +1,9 @@
+- "ProtocolLib Wiki": "wiki/home.md"
+- "ProtocolLib 官方服主说明": "wiki/plugin-page.md"
+- "常见错误": "wiki/common-errors.md"
+- "ProtocolLib 项目说明与构建": "wiki/readme.md"
+- "旧版 Bukkit 文档":
+  - "默认配置文件（旧版文档）": "wiki/bukkit-configuration.md"
+  - "屏蔽警告（旧版文档）": "wiki/bukkit-suppress-warnings.md"
+  - "性能计时系统（旧版文档）": "wiki/bukkit-timings.md"
+  - "捐赠者（旧版文档）": "wiki/bukkit-main-donators.md"

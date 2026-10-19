@@ -1,0 +1,257 @@
+{
+  "snapshot": "2026-10-19",
+  "version": "官方 Wiki @ d132397f9b52a5274dba87443ad0ebcde369a0a0；与随包 0.98.13-x6 的对应关系未确认",
+  "scope": "完整官方 Wiki 非 API 范围；仅排除纯 API 接口参考；混合页面的教程与使用示例完整保留",
+  "candidate_urls": [
+    "https://github.com/Shampaggon/CrackShot/wiki/Commands-and-Permissions",
+    "https://github.com/Shampaggon/CrackShot/wiki/Default-Weapons",
+    "https://github.com/Shampaggon/CrackShot/wiki/Frequently-Asked-Questions",
+    "https://github.com/Shampaggon/CrackShot/wiki/Home",
+    "https://github.com/Shampaggon/CrackShot/wiki/Hooking-into-CrackShot",
+    "https://github.com/Shampaggon/CrackShot/wiki/Installation",
+    "https://github.com/Shampaggon/CrackShot/wiki/List-of-Accepted-Mobs",
+    "https://github.com/Shampaggon/CrackShot/wiki/List-of-Accepted-Sounds",
+    "https://github.com/Shampaggon/CrackShot/wiki/List-of-Modules",
+    "https://github.com/Shampaggon/CrackShot/wiki/The-Complete-Guide-to-CrackShot"
+  ],
+  "candidates": [
+    {
+      "url": "https://github.com/Shampaggon/CrackShot/wiki/Commands-and-Permissions",
+      "title": "命令与权限",
+      "status": "translated",
+      "file": "wiki/Commands-and-Permissions.md",
+      "source_file": "sources/wiki/original/Commands-and-Permissions.md",
+      "source_sha256": "7c4115970ba695237537bca6d43f0fe02648eba252860435d51b6bf03171dffb"
+    },
+    {
+      "url": "https://github.com/Shampaggon/CrackShot/wiki/Default-Weapons",
+      "title": "默认武器",
+      "status": "translated",
+      "file": "wiki/Default-Weapons.md",
+      "source_file": "sources/wiki/original/Default-Weapons.md",
+      "source_sha256": "7d0590c6549c2e3d7f2de88f69c6b0d4942482e7e0c9e56e7d2964f8827cd41f"
+    },
+    {
+      "url": "https://github.com/Shampaggon/CrackShot/wiki/Frequently-Asked-Questions",
+      "title": "常见问题",
+      "status": "translated",
+      "file": "wiki/Frequently-Asked-Questions.md",
+      "source_file": "sources/wiki/original/Frequently-Asked-Questions.md",
+      "source_sha256": "7d373aaff1379219a2ec0d701bef3d4c6b706342f07c1c05de0f0f6fbc9d897c"
+    },
+    {
+      "url": "https://github.com/Shampaggon/CrackShot/wiki/Home",
+      "title": "CrackShot Wiki 首页",
+      "status": "translated",
+      "file": "wiki/Home.md",
+      "source_file": "sources/wiki/original/Home.md",
+      "source_sha256": "9b812773879f8ef45ca4bd8472058f0429d8f999e2883d7b6fab1b6f53ee3e55"
+    },
+    {
+      "url": "https://github.com/Shampaggon/CrackShot/wiki/Hooking-into-CrackShot",
+      "title": "接入 CrackShot（开发接口参考）",
+      "status": "excluded_api",
+      "reason": "CSUtility 函数、参数、返回值及 Bukkit 事件接口参考；普通配置、命令、权限和 FAQ 全文保留。",
+      "source_file": "sources/wiki/original/Hooking-into-CrackShot.md",
+      "source_sha256": "94401afb5744f8ab2f12f4901aad641f2529ca3611b6a8e107caabd6966d56ac"
+    },
+    {
+      "url": "https://github.com/Shampaggon/CrackShot/wiki/Installation",
+      "title": "安装",
+      "status": "translated",
+      "file": "wiki/Installation.md",
+      "source_file": "sources/wiki/original/Installation.md",
+      "source_sha256": "2577841bf58cc579a97ee4ae0eb6f0908c9f1458e114420a73548d938f9d2f97"
+    },
+    {
+      "url": "https://github.com/Shampaggon/CrackShot/wiki/List-of-Accepted-Mobs",
+      "title": "可用生物类型",
+      "status": "translated",
+      "file": "wiki/List-of-Accepted-Mobs.md",
+      "source_file": "sources/wiki/original/List-of-Accepted-Mobs.md",
+      "source_sha256": "ff0f47d5809b064d706ad3f14b2e3b3c9734f45d82c6401aaf45b37708761b7a"
+    },
+    {
+      "url": "https://github.com/Shampaggon/CrackShot/wiki/List-of-Accepted-Sounds",
+      "title": "可用声音",
+      "status": "translated",
+      "file": "wiki/List-of-Accepted-Sounds.md",
+      "source_file": "sources/wiki/original/List-of-Accepted-Sounds.md",
+      "source_sha256": "39c3be5f64e54846900dec02e12b350479583cfc73614f5c7575d1178dd97842"
+    },
+    {
+      "url": "https://github.com/Shampaggon/CrackShot/wiki/List-of-Modules",
+      "title": "完整模块列表",
+      "status": "translated",
+      "file": "wiki/List-of-Modules.md",
+      "source_file": "sources/wiki/original/List-of-Modules.md",
+      "source_sha256": "099650f203bc2f56f3e53dc337d352626d3e4e00a568bb93cf7e87d7febdb033"
+    },
+    {
+      "url": "https://github.com/Shampaggon/CrackShot/wiki/The-Complete-Guide-to-CrackShot",
+      "title": "CrackShot 完整指南",
+      "status": "translated",
+      "file": "wiki/The-Complete-Guide-to-CrackShot.md",
+      "source_file": "sources/wiki/original/The-Complete-Guide-to-CrackShot.md",
+      "source_sha256": "0c73c5dd49de6913edf4b0566734440be5138deb77abe570984bb448f3146057"
+    }
+  ],
+  "translated": [
+    {
+      "url": "https://github.com/Shampaggon/CrackShot/wiki/Commands-and-Permissions",
+      "title": "命令与权限",
+      "status": "translated",
+      "file": "wiki/Commands-and-Permissions.md",
+      "source_file": "sources/wiki/original/Commands-and-Permissions.md",
+      "source_sha256": "7c4115970ba695237537bca6d43f0fe02648eba252860435d51b6bf03171dffb"
+    },
+    {
+      "url": "https://github.com/Shampaggon/CrackShot/wiki/Default-Weapons",
+      "title": "默认武器",
+      "status": "translated",
+      "file": "wiki/Default-Weapons.md",
+      "source_file": "sources/wiki/original/Default-Weapons.md",
+      "source_sha256": "7d0590c6549c2e3d7f2de88f69c6b0d4942482e7e0c9e56e7d2964f8827cd41f"
+    },
+    {
+      "url": "https://github.com/Shampaggon/CrackShot/wiki/Frequently-Asked-Questions",
+      "title": "常见问题",
+      "status": "translated",
+      "file": "wiki/Frequently-Asked-Questions.md",
+      "source_file": "sources/wiki/original/Frequently-Asked-Questions.md",
+      "source_sha256": "7d373aaff1379219a2ec0d701bef3d4c6b706342f07c1c05de0f0f6fbc9d897c"
+    },
+    {
+      "url": "https://github.com/Shampaggon/CrackShot/wiki/Home",
+      "title": "CrackShot Wiki 首页",
+      "status": "translated",
+      "file": "wiki/Home.md",
+      "source_file": "sources/wiki/original/Home.md",
+      "source_sha256": "9b812773879f8ef45ca4bd8472058f0429d8f999e2883d7b6fab1b6f53ee3e55"
+    },
+    {
+      "url": "https://github.com/Shampaggon/CrackShot/wiki/Installation",
+      "title": "安装",
+      "status": "translated",
+      "file": "wiki/Installation.md",
+      "source_file": "sources/wiki/original/Installation.md",
+      "source_sha256": "2577841bf58cc579a97ee4ae0eb6f0908c9f1458e114420a73548d938f9d2f97"
+    },
+    {
+      "url": "https://github.com/Shampaggon/CrackShot/wiki/List-of-Accepted-Mobs",
+      "title": "可用生物类型",
+      "status": "translated",
+      "file": "wiki/List-of-Accepted-Mobs.md",
+      "source_file": "sources/wiki/original/List-of-Accepted-Mobs.md",
+      "source_sha256": "ff0f47d5809b064d706ad3f14b2e3b3c9734f45d82c6401aaf45b37708761b7a"
+    },
+    {
+      "url": "https://github.com/Shampaggon/CrackShot/wiki/List-of-Accepted-Sounds",
+      "title": "可用声音",
+      "status": "translated",
+      "file": "wiki/List-of-Accepted-Sounds.md",
+      "source_file": "sources/wiki/original/List-of-Accepted-Sounds.md",
+      "source_sha256": "39c3be5f64e54846900dec02e12b350479583cfc73614f5c7575d1178dd97842"
+    },
+    {
+      "url": "https://github.com/Shampaggon/CrackShot/wiki/List-of-Modules",
+      "title": "完整模块列表",
+      "status": "translated",
+      "file": "wiki/List-of-Modules.md",
+      "source_file": "sources/wiki/original/List-of-Modules.md",
+      "source_sha256": "099650f203bc2f56f3e53dc337d352626d3e4e00a568bb93cf7e87d7febdb033"
+    },
+    {
+      "url": "https://github.com/Shampaggon/CrackShot/wiki/The-Complete-Guide-to-CrackShot",
+      "title": "CrackShot 完整指南",
+      "status": "translated",
+      "file": "wiki/The-Complete-Guide-to-CrackShot.md",
+      "source_file": "sources/wiki/original/The-Complete-Guide-to-CrackShot.md",
+      "source_sha256": "0c73c5dd49de6913edf4b0566734440be5138deb77abe570984bb448f3146057"
+    }
+  ],
+  "excluded_api": [
+    {
+      "url": "https://github.com/Shampaggon/CrackShot/wiki/Hooking-into-CrackShot",
+      "title": "接入 CrackShot（开发接口参考）",
+      "status": "excluded_api",
+      "reason": "CSUtility 函数、参数、返回值及 Bukkit 事件接口参考；普通配置、命令、权限和 FAQ 全文保留。",
+      "source_file": "sources/wiki/original/Hooking-into-CrackShot.md",
+      "source_sha256": "94401afb5744f8ab2f12f4901aad641f2529ca3611b6a8e107caabd6966d56ac"
+    }
+  ],
+  "unavailable": [],
+  "candidate_count": 10,
+  "page_count": 9,
+  "translated_page_count": 9,
+  "excluded_api_count": 1,
+  "unavailable_count": 0,
+  "assets": [
+    {
+      "file": "docs/wiki/assets/e4f7187e92a014fc.png",
+      "source_url": "http://i.imgur.com/1Zz1dJG.png",
+      "original_markdown_url": "http://i.imgur.com/1Zz1dJG.png",
+      "sha256": "00ca8c6114f01b93d05068084e72e6a58b1aaea5ab8c9cf5f21163010ebc0163",
+      "bytes": 2400,
+      "pages": [
+        "The-Complete-Guide-to-CrackShot.md"
+      ]
+    },
+    {
+      "file": "docs/wiki/assets/b6fa9b32406fd642.png",
+      "source_url": "http://i.imgur.com/vN7zFQi.png",
+      "original_markdown_url": "http://i.imgur.com/vN7zFQi.png",
+      "sha256": "486cb96b83a56375337b0ed174f32855c79e691ede74c556ac6b0806a5c958e2",
+      "bytes": 2384,
+      "pages": [
+        "The-Complete-Guide-to-CrackShot.md"
+      ]
+    },
+    {
+      "file": "docs/wiki/assets/5fcd6eef0c12f0c3.png",
+      "source_url": "http://i.imgur.com/Lwz1O73.png",
+      "original_markdown_url": "http://i.imgur.com/Lwz1O73.png",
+      "sha256": "b5e051739c30c5a68acae7777656a55a1e69ebe12533cdf48e8f2af71fcb1a75",
+      "bytes": 2605,
+      "pages": [
+        "The-Complete-Guide-to-CrackShot.md"
+      ]
+    },
+    {
+      "file": "docs/wiki/assets/dc0a6233690d7ee1.png",
+      "source_url": "http://i.imgur.com/oRISnnD.png",
+      "original_markdown_url": "http://i.imgur.com/oRISnnD.png",
+      "sha256": "33a845331982ad81ea00f90090d1fda6dbd9c092d42ea1fa976624777b1d6a25",
+      "bytes": 1793,
+      "pages": [
+        "The-Complete-Guide-to-CrackShot.md"
+      ]
+    }
+  ],
+  "bundled_version": "0.98.13-x6",
+  "enumeration_complete": true,
+  "available_non_api_complete": true,
+  "upstream_wiki_commit": "d132397f9b52a5274dba87443ad0ebcde369a0a0",
+  "discovery_sources": [
+    "https://github.com/Shampaggon/CrackShot/wiki",
+    "https://github.com/Shampaggon/CrackShot.wiki.git"
+  ],
+  "guide_source_lines": 1750,
+  "guide_source_characters": 98533,
+  "source_language": "en",
+  "processing": "九个非 API 页面全文翻译；所有默认武器配置、声音和生物标识逐项保留。",
+  "validation": {
+    "checked_at": "2026-10-19",
+    "report": "sources/wiki/validation/report.json",
+    "checks": [
+      "frontmatter",
+      "source_sha256_utf8_lf",
+      "candidate_status_partition",
+      "manifest_navigation_consistency",
+      "protected_code_and_inline_tokens",
+      "local_links_and_anchors",
+      "native_asset_hashes"
+    ],
+    "game_runtime_tested": false
+  }
+}

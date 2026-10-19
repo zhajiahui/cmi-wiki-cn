@@ -1,0 +1,72 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Denizen/0.7/Start-up kit",
+    "pageid": 211,
+    "revid": 5377,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://meta.denizenscript.com/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br /><br /><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p>\n<div style=\"font-family:camingodos-web;\">\n<div style=\"float:right;margin-left:2.0em; padding:10px; font-family:camingodos-web; font-size:110%;\"><div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Download_the_Kit\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Download the Kit</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Download\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Download</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#How_to_use\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">How to use</span></a></li>\n</ul>\n</div>\n</div>\n<div style=\"margin-right:2.0em; margin-top:35px; padding:10px; font-family:camingodos-web; font-size:110%;\">\n<p><span style=\"font-family:natalya-alternate-one; font-size:650%; margin-right:-7px; margin-left:-10px;\">B</span>y default, Denizen comes as a clean install. One easy way to get up and going is to install the start-up-kit as explained here. You may want to first check out the step-by-step the <a href=\"/Denizen/0.7/Before_Using_Denizen#Down_and_dirty\" title=\"Denizen/0.7/Before Using Denizen\">Getting Started: Down and Dirty</a> section, which walks through installing a sample script and assignment. This start-up kit attempts to go into a little bit more detail with some pre-loaded content.\n</p>\n</div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Download_the_Kit\">Download the Kit</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Start-up_kit&amp;action=edit&amp;section=1\" title=\"Edit section: Download the Kit\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>The start-up contains everything you need to get going with Denizen quickly. Inside the zip file you will find a folder called 'Denizen'. Extract this folder to your /plugins/ directory. Make sure you have the latest Denizen jar installed, then start your server or call \n</p>\n<pre>/denizen reload\n</pre>\n<p>The kit contains:\n</p>\n<ul><li>A pre-configured <a href=\"/Denizen/0.7/config.yml\" title=\"Denizen/0.7/config.yml\">config.yml</a></li>\n<li>A pre-configured assignments.yml for 2 NPCs (Steve and Jill)</li>\n<li>A file with 2 Interact Scripts (Steve Scripts.yml)</li>\n<li>A file with 2 Activity Scripts (Activity Scripts.yml)</li></ul>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Download\">Download</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Start-up_kit&amp;action=edit&amp;section=2\" title=\"Edit section: Download\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><b><a rel=\"nofollow\" class=\"external text\" href=\"https://github.com/downloads/jrbudda/Denizen/Start-up%20Kit%200.74.zip\">Download Here</a></b>\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"How_to_use\">How to use</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Start-up_kit&amp;action=edit&amp;section=3\" title=\"Edit section: How to use\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>The kit defines assignments for 2 NPCs. One named 'Steve' and one named 'Jill'.\nTo make an NPC use the /npc create command.\n</p>\n<pre>/npc create Steve --trait denizen\n</pre>\n<p>Steve is now ready to go. Likewise to make Jill:\n</p>\n<pre> /npc create Jill --trait denizen\n</pre>\n<p><br />\nThe assignments are done by Name so these Denizens are now fully functional. To test, call /denizen info. You should see the assigned scripts and activities as defined in the assignments.yml.\n</p><p>To begin learning, open the scripts or assignments file in a good text editor like notepad++ see <a href=\"/YAML\" title=\"YAML\">YAML</a>\nThe files are commented to help you get started.\n</p></div>\n<!-- \nNewPP limit report\nCached time: 20261019145832\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.019 seconds\nReal time usage: 0.033 seconds\nPreprocessor visited node count: 11/1000000\nRevision size: 2802/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 8d076a66-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen/0.7/Before Using Denizen"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen/0.7/config.yml"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "YAML"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "3",
+        "line": "Download the Kit",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Denizen/0.7/Start-up_kit",
+        "byteoffset": 1503,
+        "anchor": "Download_the_Kit",
+        "linkAnchor": "Download_the_Kit"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Download",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Denizen/0.7/Start-up_kit",
+        "byteoffset": 2064,
+        "anchor": "Download",
+        "linkAnchor": "Download"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "How to use",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "Denizen/0.7/Start-up_kit",
+        "byteoffset": 2168,
+        "anchor": "How_to_use",
+        "linkAnchor": "How_to_use"
+      }
+    ],
+    "showtoc": ""
+  }
+}

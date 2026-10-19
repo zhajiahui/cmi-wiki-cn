@@ -1,0 +1,45 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "A message to Wikia",
+    "pageid": 134,
+    "revid": 1317,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>While we recognize Wikia's need for a policy of no-vandalism, your continued efforts to keep the old citizens wikia are only causing us harm. As a plugin for Bukkit, the Citizens wiki is intended primarily for information purposes, and is not the basis for a community-centered wiki, and will only ever be updated by the developers or vandals, hence the decision to move away from wikia. The old page is <b>very</b> unlikely to ever be adopted and is at this point just misinforming users and taking up wikia's time/energy keeping it open. The developers and staff of CitizensNPCs continually get spammed with people who have recieved misinformation through the wikia, on which CitizensNPCs specifically posted a message saying that it was no longer kept up-to-date. Yet even after the creators of CitizensNPCs have shut down the wiki, Wikia feels that it needs to be kept alive. It is at this point not only <b>outdated</b>, but flat out <b>wrong</b>, and this is only causing us more trouble. We, as part of the Citizens Team, ask that wikia permanently take down the Citizens_Wiki located at <a rel=\"nofollow\" class=\"external free\" href=\"http://citizens.wikia.com/\">http://citizens.wikia.com/</a>. Thank you for your time in reading this.\n<br /><br />Signed, <a href=\"/User:AgentKid\" title=\"User:AgentKid\">AgentKid</a> 16:26, 26 April 2012 (EDT)\n<br /><br />Signed, <a href=\"/User:Aufdemrand\" title=\"User:Aufdemrand\">aufdemrand</a> 16:32, 26 April 2012 (EDT)\n<br /><br />Signed, <a href=\"/User:NeonMaster\" title=\"User:NeonMaster\">NeonMaster</a> 16:14, 27 April 2012 (EDT)\n<br /><br />Signed, <a href=\"/index.php?title=User:Fullwall&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Fullwall (page does not exist)\">fullwall</a> 04:44, 28 April 2012 (EDT)\n<br /><br />Signed, <a href=\"/index.php?title=User:APunch&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:APunch (page does not exist)\">APunch</a> 10:37, 28 April 2012 (EDT)\n</p><p>Please reply with email to agentkid20@gmail.com\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145816\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.017 seconds\nReal time usage: 0.030 seconds\nPreprocessor visited node count: 1/1000000\nRevision size: 1563/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 1/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 837e0264-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 2,
+        "exists": "",
+        "*": "User:AgentKid"
+      },
+      {
+        "ns": 2,
+        "exists": "",
+        "*": "User:Aufdemrand"
+      },
+      {
+        "ns": 2,
+        "exists": "",
+        "*": "User:NeonMaster"
+      },
+      {
+        "ns": 2,
+        "*": "User:Fullwall"
+      },
+      {
+        "ns": 2,
+        "*": "User:APunch"
+      }
+    ],
+    "images": [],
+    "sections": []
+  }
+}

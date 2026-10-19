@@ -1,0 +1,74 @@
+Cititrader will automatically permissions for ops, below I will explain what every permission does.
+{{Denizen Requiremnt Type Color|ivory|
+[[Interact_Script_Requirements#Name|traders.command.*]]
+| Grants access to all trader commands ['''Default''': op]
+}}
+{{Denizen Requiremnt Type Color|ivory|
+[[Interact_Script_Requirements#Name|traders.command.create]]
+| Can create traders using /trader create ['''Default''': op]
+}}
+{{Denizen Requiremnt Type Color|ivory|
+[[Interact_Script_Requirements#Name|traders.command.sellprice]]
+| Can set sale prices of traders ['''Default''': op]
+}}
+{{Denizen Requiremnt Type Color|ivory|
+[[Interact_Script_Requirements#Name|traders.command.buyprice]]
+| Can set purchase orders ['''Default''': op]
+}}
+{{Denizen Requiremnt Type Color|ivory|
+[[Interact_Script_Requirements#Name|traders.command.setwallet]]
+| Set an npc's wallet type ['''Default''': op]
+}}
+{{Denizen Requiremnt Type Color|ivory|
+[[Interact_Script_Requirements#Name|traders.command.wallet]]
+| Give/take from an npc wallet. ['''Default''': op]
+}}
+{{Denizen Requiremnt Type Color|ivory|
+[[Interact_Script_Requirements#Name|traders.command.disable]]
+| Allows a player to disable an NPC (Close the Shop)['''Default''': op]
+}}
+{{Denizen Requiremnt Type Color|ivory|
+[[Interact_Script_Requirements#Name|traders.command.enable]]
+| Allows a player to enable an NPC (Open the Shop)['''Default''': op]
+}}
+{{Denizen Requiremnt Type Color|ivory|
+[[Interact_Script_Requirements#Name|traders.command.cancel]]
+| Allows a player to cancel out of any transaction or status of an Trader NPC ['''Default''': true]
+}}
+{{Denizen Requiremnt Type Color|ivory|
+[[Interact_Script_Requirements#Name|traders.command.link]]
+| Allows a player to link an NPC to use their price lists. ['''Default''': op]
+}}
+{{Denizen Requiremnt Type Color|ivory|
+[[Interact_Script_Requirements#Name|traders.command.unlink]]
+| Allows a player to unlink an NPC['''Default''': op]
+}}
+{{Denizen Requiremnt Type Color|ivory|
+[[Interact_Script_Requirements#Name|traders.command.linkchest]]
+| Allows a player to link a chest to an NPC ['''Default''': op]
+}}
+{{Denizen Requiremnt Type Color|ivory|
+[[Interact_Script_Requirements#Name|traders.command.unlinkchest]]
+| Allows a player to unlink a chest to an NPC ['''Default''': op]
+}}
+=== Individual Wallet Permissions ===
+{{Denizen Requiremnt Type Color|ivory|
+[[Interact_Script_Requirements#Name|traders.wallet.private]]
+| Allows user to set traders to use their own private wallet. ['''Default''': user]
+}}
+{{Denizen Requiremnt Type Color|ivory|
+[[Interact_Script_Requirements#Name|traders.wallet.owner]]
+| Allows user to set traders to use their owner's bank wallet. ['''Default''': user]
+}}
+{{Denizen Requiremnt Type Color|ivory|
+[[Interact_Script_Requirements#Name|traders.wallet.bank]]
+| Allows user to set traders to use a bank account (ECONOMY PLUGIN MUST SUPPORT BANKS, USER MUST OWN BANK ACCOUNT). ['''Default''': user ]
+}}
+{{Denizen Requiremnt Type Color|ivory|
+[[Interact_Script_Requirements#Name|traders.wallet.admin]]
+| Allows the user to set trader to ADMIN, unlimited money and items. ['''Default''': op]
+}}
+{{Denizen Requiremnt Type Color|ivory|
+[[Interact_Script_Requirements#Name|traders.wallet.town_bank]]
+| Allows the user to set trader to use Town Bank (REQUIRES TOWNY PLUGIN, YOU NEED TO OWN THE NPC AND BE MAYOR OR ASSISTANT OF TOWN). ['''Default''': op]
+}}

@@ -1,0 +1,100 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Denizen API Command Template",
+    "pageid": 156,
+    "revid": 5376,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://meta.denizenscript.com/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br /><br /><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Custom_Commands\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Custom Commands</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#YourCommand_extends_AbstractCommand\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">YourCommand extends AbstractCommand</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Example_Command\"><span class=\"tocnumber\">2.1</span> <span class=\"toctext\">Example Command</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Command_Template\"><span class=\"tocnumber\">2.2</span> <span class=\"toctext\">Command Template</span></a></li>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#The_ScriptEntry_object\"><span class=\"tocnumber\">2.3</span> <span class=\"toctext\">The ScriptEntry object</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-6\"><a href=\"#Registering_your_command\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Registering your command</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-7\"><a href=\"#Example_code\"><span class=\"tocnumber\">3.1</span> <span class=\"toctext\">Example code</span></a></li>\n</ul>\n</li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Custom_Commands\">Custom Commands</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen_API_Command_Template&amp;action=edit&amp;section=1\" title=\"Edit section: Custom Commands\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div style=\"margin-right:2.0em; padding:10px\">\n<p>Denizen is extensible! In addition to Triggers and Requirements(soon!), an API is being provided to help you make custom Script Commands in your project! Have a neat idea for a command? Have a better way to STRIKE a player? (MEGASTRIKE command, anybody?)\n</p><p>Keep reading!\n</p>\n</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"YourCommand_extends_AbstractCommand\">YourCommand extends AbstractCommand</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen_API_Command_Template&amp;action=edit&amp;section=2\" title=\"Edit section: YourCommand extends AbstractCommand\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div style=\"margin-right:2.0em; padding:10px\">\n<p>The first thing you need is a custom command class that extends the Denizen AbstractTrigger. This contains the method called when it's time for your command to be executed. This is called every-single-time a script contains your command.\n</p>\n</div>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"Example_Command\">Example Command</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen_API_Command_Template&amp;action=edit&amp;section=3\" title=\"Edit section: Example Command\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div style=\"margin-right:2.0em; padding:10px\">\n<p>Sometimes the easiest way to work is to see an actual example. View a copy of the STRIKE command on Pastie.org for a very simple command. For examples, you can always check <a rel=\"nofollow\" class=\"external text\" href=\"https://github.com/aufdemrand/Denizen/tree/master/src/main/java/net/aufdemrand/denizen/commands/core\">Core Denizen Commands</a>.\n</p>\n</div>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"Command_Template\">Command Template</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen_API_Command_Template&amp;action=edit&amp;section=4\" title=\"Edit section: Command Template\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div style=\"margin-right:2.0em; padding:10px\">\n<p><a rel=\"nofollow\" class=\"external text\" href=\"http://pastie.org/4368657\">View a command template copy on Pastie.org</a> for a copy/paste of the skeleton of a custom denizen commmand.\n</p>\n</div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"The_ScriptEntry_object\">The ScriptEntry object</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen_API_Command_Template&amp;action=edit&amp;section=5\" title=\"Edit section: The ScriptEntry object\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div style=\"margin-right:2.0em; padding:10px\">\n<p>When Denizen reads scripts, each line is turned into a SciptScript object that contains the command, the arguments, and various other data and objects, as described below. Your command is an extension of this AbstractCommand class, and each time your command is called in for execution, it's this class that is executed and handled a ScriptEntry. How your Command uses the ScriptEntry information is of course, up to you.\n</p><p>The Denizen ScriptEngine and Executer construct and fill a ScriptEntry with information that can be used in your command. Below is a list of methods you can use against the scriptEntry sent to your commands execute method.\n</p>\n<table class=\"wikitable\" border=\"1\" width=\"80%\">\n\n<tbody><tr>\n<th width=\"30%\"><div style=\"padding: 10px; text-align: left; font-size: 120%;\">getCommand()</div>\n</th>\n<td><div style=\"padding: 10px; text-align: left; font-size: 100%;\">String value of the name of the command</div>\n</td></tr>\n<tr>\n<td colspan=\"2\"><div style=\"padding: 10px; text-align: left; font-size: 100%;\">Used by default in alerting the user when denizen is in debug mode, if the template is used. Also could be useful if your command module contains instructions for more than one command. You can register multiple commands to your module, as discussed later in this document.</div>\n</td></tr></tbody></table>\n<table class=\"wikitable\" border=\"1\" width=\"80%\">\n\n<tbody><tr>\n<th width=\"30%\"><div style=\"padding: 10px; text-align: left; font-size: 120%;\">arguments()</div>\n</th>\n<td><div style=\"padding: 10px; text-align: left; font-size: 100%;\">String[] value of the arguments used in the script</div>\n</td></tr>\n<tr>\n<td colspan=\"2\"><div style=\"padding: 10px; text-align: left; font-size: 100%;\">This is the output of Denizen's argBuilder method. It splits the command arguments up with spaces and quotes. For instance: <code>arg1 arg2 'argument 3' \"argument 4\" would return a string array with a size of 4.</code></div><code>\n</code></td></tr></tbody></table>\n<table class=\"wikitable\" border=\"1\" width=\"80%\">\n\n<tbody><tr>\n<th width=\"30%\"><div style=\"padding: 10px; text-align: left; font-size: 120%;\">arguments()</div>\n</th>\n<td><div style=\"padding: 10px; text-align: left; font-size: 100%;\">String[] value of the arguments used in the script</div>\n</td></tr>\n<tr>\n<td colspan=\"2\"><div style=\"padding: 10px; text-align: left; font-size: 100%;\">This is the output of Denizen's argBuilder method. It splits the command arguments up with spaces and quotes. For instance: <code>arg1 arg2 'this is argument 3' \"and that's argument 4\" would return a string array with a size of 4. Note argument 4, which handles an argument using a single quote. Hint: Double quotes around the argument, and vice-versa.</code></div><code>\n</code></td></tr></tbody></table>\n<table class=\"wikitable\" border=\"1\" width=\"80%\">\n\n<tbody><tr>\n<th width=\"30%\"><div style=\"padding: 10px; text-align: left; font-size: 120%;\">sendingQueue()</div>\n</th>\n<td><div style=\"padding: 10px; text-align: left; font-size: 100%;\">QueueType of either QueueType.TRIGGER, QueueType.TASK, or QueueType.ACTIVITY</div>\n</td></tr>\n<tr>\n<td colspan=\"2\"><div style=\"padding: 10px; text-align: left; font-size: 100%;\">Denizen's Script Engine contains a method called runQeues which sends the ScriptEntries off to the executer. During this process, it stores which queue the command was called from. Can be used in advanced situations. Typically, if called by an Interact Script, this contains QueueType.TRIGGER.</div>\n</td></tr></tbody></table>\n<table class=\"wikitable\" border=\"1\" width=\"80%\">\n\n<tbody><tr>\n<th width=\"30%\"><div style=\"padding: 10px; text-align: left; font-size: 120%;\">getScript()</div>\n</th>\n<td><div style=\"padding: 10px; text-align: left; font-size: 100%;\">String value of the script name</div>\n</td></tr>\n<tr>\n<td colspan=\"2\"><div style=\"padding: 10px; text-align: left; font-size: 100%;\">Could be useful if storing information about a Script. For example, Denizen's FINISH command takes this information for granted if no script is otherwise indicated in the arguments.</div>\n</td></tr></tbody></table>\n<table class=\"wikitable\" border=\"1\" width=\"80%\">\n\n<tbody><tr>\n<th width=\"30%\"><div style=\"padding: 10px; text-align: left; font-size: 120%;\">getStep()</div>\n</th>\n<td><div style=\"padding: 10px; text-align: left; font-size: 100%;\">Integer value of the script's step</div>\n</td></tr>\n<tr>\n<td colspan=\"2\"><div style=\"padding: 10px; text-align: left; font-size: 100%;\">Could be used similarly to getScript(). The ZAP command uses this information to know which step to proceed to.</div>\n</td></tr></tbody></table>\n<table class=\"wikitable\" border=\"1\" width=\"80%\">\n\n<tbody><tr>\n<th width=\"30%\"><div style=\"padding: 10px; text-align: left; font-size: 120%;\">getPlayer()</div>\n</th>\n<td><div style=\"padding: 10px; text-align: left; font-size: 100%;\">Player object of the script triggerer</div>\n</td></tr>\n<tr>\n<td colspan=\"2\"><div style=\"padding: 10px; text-align: left; font-size: 100%;\">Pretty straight forward. The bukkit Player object can get all kinds of information about the player.</div>\n</td></tr></tbody></table>\n<table class=\"wikitable\" border=\"1\" width=\"80%\">\n\n<tbody><tr>\n<th width=\"30%\"><div style=\"padding: 10px; text-align: left; font-size: 120%;\">getDenizen()</div>\n</th>\n<td><div style=\"padding: 10px; text-align: left; font-size: 100%;\">DenizenNPC object of the script triggeree</div>\n</td></tr>\n<tr>\n<td colspan=\"2\"><div style=\"padding: 10px; text-align: left; font-size: 100%;\">DenizenNPC makes it easy to work with the Denizen that has been interacted with. Good example: LOOK command.</div>\n</td></tr></tbody></table>\n<table class=\"wikitable\" border=\"1\" width=\"80%\">\n\n<tbody><tr>\n<th width=\"30%\"><div style=\"padding: 10px; text-align: left; font-size: 120%;\">getInitiatedTime()</div>\n</th>\n<td><div style=\"padding: 10px; text-align: left; font-size: 100%;\">Long value of System.currentTimeMillis()</div>\n</td></tr>\n<tr>\n<td colspan=\"2\"><div style=\"padding: 10px; text-align: left; font-size: 100%;\">Contains a <code>Long System.currentTimeMillis()</code> of the system time in which it was sent to your Command for processing which you can use to check against.</div>\n</td></tr></tbody></table>\n<table class=\"wikitable\" border=\"1\" width=\"80%\">\n\n<tbody><tr>\n<th width=\"30%\"><div style=\"padding: 10px; text-align: left; font-size: 120%;\">setDelayedTime()</div>\n</th>\n<td><div style=\"padding: 10px; text-align: left; font-size: 100%;\">should be a Long value in the format of System.currentTimeMillis()</div>\n</td></tr>\n<tr>\n<td colspan=\"2\"><div style=\"padding: 10px; text-align: left; font-size: 100%;\">Advanced usage. See the DELAY command for an example.</div>\n</td></tr></tbody></table>\n<table class=\"wikitable\" border=\"1\" width=\"80%\">\n\n<tbody><tr>\n<th width=\"30%\"><div style=\"padding: 10px; text-align: left; font-size: 120%;\">getDelayedTime()</div>\n</th>\n<td><div style=\"padding: 10px; text-align: left; font-size: 100%;\">Long value that was set with setDelayedTime()</div>\n</td></tr>\n<tr>\n<td colspan=\"2\"><div style=\"padding: 10px; text-align: left; font-size: 100%;\">Advanced usage. Again, see the DELAY command for an example. If not set with setDelayedTime(), this is null by default.</div>\n</td></tr></tbody></table>\n<table class=\"wikitable\" border=\"1\" width=\"80%\">\n\n<tbody><tr>\n<th width=\"30%\"><div style=\"padding: 10px; text-align: left; font-size: 120%;\">getTexts()</div>\n</th>\n<td><div style=\"padding: 10px; text-align: left; font-size: 100%;\">String[2] of text sent by a Trigger</div>\n</td></tr>\n<tr>\n<td colspan=\"2\"><div style=\"padding: 10px; text-align: left; font-size: 100%;\">Vanilla Denizen will use this to store information sent to/from a Chat Trigger. Element [0] contains the text typed by the Player when the script was triggered, and element [1] contains the text as set in the Trigger: node of the script.</div>\n</td></tr></tbody></table>\n</div>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Registering_your_command\">Registering your command</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen_API_Command_Template&amp;action=edit&amp;section=6\" title=\"Edit section: Registering your command\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div style=\"margin-right:2.0em; padding:10px\">\n<p>In order for Denizen to use your command, it needs to be registered. This could probably be done in your plugin's onEnable() method.\n</p>\n</div>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"Example_code\">Example code</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen_API_Command_Template&amp;action=edit&amp;section=7\" title=\"Edit section: Example code\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div style=\"margin-right:2.0em; padding:10px\">\n<p>You can also see a <a rel=\"nofollow\" class=\"external text\" href=\"http://pastie.org/4369286\">formatted version on Pastie.org</a>.\n</p>\n<pre>/*\n * Sets up my plugin on start of the craftbukkit server.\t\n */\n\npublic MyCommand myCommand = new MyCommand();\n\n@Override\npublic void onEnable() {\n   getLogger().info(\"Enabling my plugin!\");\n   \n   try {\n       myCommand.registerAs(\"CUSTOM_COMMAND\");\n   } catch (ActivationException e) {\n       plugin.getLogger().log(Level.SEVERE, \"Oh no! Activation Exception!\");\n       e.printStackTrace();\n   }\n}\n</pre></div>\n<!-- \nNewPP limit report\nCached time: 20261019145848\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.042 seconds\nReal time usage: 0.054 seconds\nPreprocessor visited node count: 180/1000000\nRevision size: 6774/2097152 bytes\nPost‐expand include size: 6519/2097152 bytes\nTemplate argument size: 2895/2097152 bytes\nHighest expansion depth: 3/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 413/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    7.067      1 -total\n 84.79%    5.992     12 Template:ScriptEntry\n-->\n\n<!-- Render ID 9690d267-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Custom Commands",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Denizen_API_Command_Template",
+        "byteoffset": 685,
+        "anchor": "Custom_Commands",
+        "linkAnchor": "Custom_Commands"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "YourCommand extends AbstractCommand",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Denizen_API_Command_Template",
+        "byteoffset": 1033,
+        "anchor": "YourCommand_extends_AbstractCommand",
+        "linkAnchor": "YourCommand_extends_AbstractCommand"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "Example Command",
+        "number": "2.1",
+        "index": "3",
+        "fromtitle": "Denizen_API_Command_Template",
+        "byteoffset": 1368,
+        "anchor": "Example_Command",
+        "linkAnchor": "Example_Command"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "Command Template",
+        "number": "2.2",
+        "index": "4",
+        "fromtitle": "Denizen_API_Command_Template",
+        "byteoffset": 1748,
+        "anchor": "Command_Template",
+        "linkAnchor": "Command_Template"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "The ScriptEntry object",
+        "number": "2.3",
+        "index": "5",
+        "fromtitle": "Denizen_API_Command_Template",
+        "byteoffset": 1964,
+        "anchor": "The_ScriptEntry_object",
+        "linkAnchor": "The_ScriptEntry_object"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Registering your command",
+        "number": "3",
+        "index": "6",
+        "fromtitle": "Denizen_API_Command_Template",
+        "byteoffset": 5991,
+        "anchor": "Registering_your_command",
+        "linkAnchor": "Registering_your_command"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "Example code",
+        "number": "3.1",
+        "index": "7",
+        "fromtitle": "Denizen_API_Command_Template",
+        "byteoffset": 6210,
+        "anchor": "Example_code",
+        "linkAnchor": "Example_code"
+      }
+    ],
+    "showtoc": ""
+  }
+}

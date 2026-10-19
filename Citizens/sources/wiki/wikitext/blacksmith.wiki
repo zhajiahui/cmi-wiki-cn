@@ -1,0 +1,195 @@
+{{Trait
+| PICTURE      = Blacksmith.png
+| AUTHOR      = aPunch
+| NAME         = Blacksmith
+| VERSION    = ???
+| CITIZENSBUILD  = 2.0.x
+| DEVSTATUS    = InDev
+| DEPENDS = Vault, and an economy system
+| DOWNLOADLINK  = http://ci.citizensnpcs.co/view/Add-ons/job/Blacksmith/
+| DESCRIPTION  = Heavily Customizable Tool and Armor Reforging
+}}
+
+Blacksmith is a Citizens 2.0 character trait that gives Citizens NPCs the ability to:
+*Repair weapons, tools, and armor for a fee.
+
+Most up-to-date source code available here: https://github.com/mcmonkey4eva/Blacksmith
+
+==Updates==
+v1.13 10/12/2018
+* HurricanKai is missing, so mcmonkey has performed minimalist updates, now available here https://github.com/mcmonkey4eva/Blacksmith
+
+??? ?/?/2017
+* Now maintained by HurricanKai, compat with minecraft 1.12 as of this message. See github for commit logs. https://github.com/HurricanKai/Blacksmith
+
+??? 2/17/2015
+* update to latest everything.
+
+v1.3 8/5/2013
+* Fix blacksmith not returning items.
+
+v1.2 8/15/2012
+*Added price-per-durability-point option on a per-item basis.
+*dded session timeout if player asks for price and does not reforge item.
+*Fixed Random-enchant algorithm.
+
+v1.1 8/8/2012
+*Compatible with 1.3.1 builds of C2
+
+==How to Use==
+==Installation==
+*Install Citizens 2
+*Place Blacksmith.jar file in /plugins directory. 
+*Start Server
+*Create NPC and give the Blacksmith trait.
+ /npc create Smithy --trait blacksmith 
+or
+ /npc create Smithy
+ /trait blacksmith 
+
+===General Information===
+Blacksmiths have a variety of settings that can be per-NPC or global. The settings under "defaults" in the configuration file are the default settings that a blacksmith will be given when it is created. You can override these settings by using the commands from the Commands section below. You can even configure which items a blacksmith is able to reforge in-game using commands. By default, a blacksmith is able to reforge all items.
+
+===Interaction===
+Interacting with a blacksmith is simple:
+*Right click the NPC with a tool or armor in your hand. It will tell you the price that it costs to reforge it. 
+*Right click again within 10 seconds and the blacksmith will begin reforging the item.
+**Depending on the configuration, the reforging has a chance to enchant or damage an item.
+
+==Prices==
+Prices are determined by the damage of an item, the number and type of enchantments, and the prices defined in the configuration file. Basically, the formula for determining the price of a reforge is ''basePrice + durabilityRemaining + enchantments''.
+
+===Base Price===
+The default base price for a reforge is the ''base-prices.default'' value in the configuration file. To add new base prices for each individual item, add the item to the config file under ''base-prices''
+
+===Durability===
+Durability is the amount of damage that an item has taken. Generally, the more damaged an item is, the cheaper it will be to reforge. Trying to reforge an item with no damage will be significantly more expensive. The price per durability point is ''price-per-durability-point.default'' in the configuration. Per-item values may be set by adding to this section.
+
+These are the items names to use with custom base and per-durability-point prices.
+
+<div class="toccolours mw-collapsible mw-collapsed" style="width:150px">
+'''Valid Items'''
+<div class="mw-collapsible-content">
+wood-pickaxe
+<br>wood-spade
+<br>wood-hoe
+<br>wood-sword
+<br>wood-axe
+<br>stone-pickaxe
+<br>stone-spade
+<br>stone-hoe
+<br>stone-sword
+<br>stone-axe
+<br>gold-pickaxe
+<br>gold-spade
+<br>gold-hoe
+<br>gold-sword
+<br>gold-axe
+<br>iron-pickaxe
+<br>iron-spade
+<br>iron-hoe
+<br>iron-sword
+<br>iron-axe
+<br>diamond-pickaxe
+<br>diamond-spade
+<br>diamond-hoe
+<br>diamond-axe
+<br>bow
+<br>flint-and-steel
+<br>fishing-rod
+<br>shears
+<br>leather-helmet
+<br>leather-chestplate
+<br>leather-leggings
+<br>leather-boots
+<br>chainmail-helmet
+<br>chainmail-chestplate
+<br>chainmail-leggings
+<br>chainmail-boots
+<br>gold-helmet
+<br>gold-chestplate
+<br>gold-leggings
+<br>gold-boots
+<br>iron-helmet
+<br>iron-chestplate
+<br>iron-leggings
+<br>iron-boots
+<br>diamond-helmet
+<br>diamond-chestplate
+<br>diamond-leggings
+diamond-boots</div></div>
+
+Example:
+<pre>
+base-prices:
+  default: 10
+  diamond-sword: 45
+price-per-durability-point:
+  default: 1
+  diamond-sword: 3
+</pre>
+
+===Enchantments===
+The price of reforging an item with enchantments is more expensive than one without any. For each enchantment, an amount is added to the total price based on the "enchantment-modifier" and the level of the enchantment. Enchantment modifiers can be configured in the configuration file by adding the enchantment name and a value within the ''enchantment-modifiers'' section. The default modifier, ''enchantment-modifiers.default'', is used if the enchantment name is not found. Here are valid, case-sensitive names for enchantment modifiers:
+
+* ''arrow-damage'' - Provides extra damage when shooting arrows from bows
+* ''arrow-fire'' - Sets entities on fire when hit by arrows shot from a bow
+* ''arrow-infinite'' - Provides infinite arrows when shooting a bow
+* ''arrow-knockback'' - Provides a knockback when an entity is hit by an arrow from a bow
+* ''damage-all'' - Increases damage against all targets
+* ''damage-arthropods'' - Increases damage against arthropod targets
+* ''damage-undead'' - Increases damage against undead targets
+* ''dig-speed'' - Increases the rate at which you mine/dig
+* ''durability'' - Decreases the rate at which a tool looses durability
+* ''fire-aspect'' - When attacking a target, has a chance to set them on fire
+* ''knockback'' - All damage to other targets will knock them back when hit
+* ''loot-bonus-blocks'' - Provides a chance of gaining extra loot when destroying blocks
+* ''loot-bonus-mobs'' - Provides a chance of gaining extra loot when killing monsters
+* ''oxygen'' - Decreases the rate of air loss whilst underwater
+* ''protection-environmental'' - Provides protection against environmental damage
+* ''protection-explosions'' - Provides protection against explosive damage
+* ''protection-fall'' - Provides protection against fall damage
+* ''protection-fire'' - Provides protection against fire damage
+* ''protection-projectile'' - Provides protection against projectile damage
+* ''silk-touch'' - Allows blocks to drop themselves instead of fragments (for example, stone instead of cobblestone)
+* ''water-worker'' - Increases the speed at which a player may mine underwater
+
+==Permissions==
+If you want a player to be able to use a blacksmith, give them the 
+*''blacksmith.reforge'' permission node.
+
+==Configuration==
+The configuration file for Blacksmiths is found in ''/plugins/Blacksmith/config.yml'' and is generated automatically when not present.
+===Default Configuration===
+The blacksmith config.yml contains the default settings for '''new''' blacksmiths. All of these options can be changed on existing blacksmiths in the Citizens/saves.yml.
+Mouseover each section to view it's description. All settings under ''defaults'' can be overriden by individual blacksmiths in the Citizens 2 saves.yml.
+ <nowiki></nowiki># Blacksmith Configuration
+ <nowiki></nowiki>{{H:title|Base-prices block|base-prices:}}
+  {{H:title|Default base price. This will be used if per-item base prices are not specified.|default: 10}}
+ <nowiki></nowiki>{{H:title|price-per-durability-point block|price-per-durability-point:}}
+  {{H:title|Default price-per-durability-point. This will be used if per-item price-per-durability-point is not specified.|default: 1}}
+ <nowiki></nowiki>{{H:title|Default settings block, most can be changed per-NPC|defaults:}}
+  {{H:title|Messages block. All messages that are sent to the player involving the blacksmith|messages:}}
+    {{H:title|Message sent to the player(s) when the blacksmith is already working on something|busy-with-player: <c>I'm busy at the moment. Come back later!}}
+    {{H:title|Message sent to the player who gave the blacksmith the item it is working on|busy-with-reforge: <c>I'm working on it. Be patient!}}
+    {{H:title|Message sent to the player during the cool down period|cooldown-not-expired: <c>You've already had your chance! Give me a break!}}
+    {{H:title|Message sent to the player to confirm they want to reforge the item|cost: <nowiki><e>It will cost <a><price> <e>to reforge that <a><item><e></nowiki>! Click again to reforge!}}
+    {{H:title|Message sent to the player when the reforge fails|fail-reforge: <nowiki><c></nowiki>Whoops! Didn't mean to do that! Maybe next time?}}
+    {{H:title|Message sent to the player when they don't have enough money to complete the reforge|insufficient-funds: <nowiki><c></nowiki>You don't have enough money to reforge that item!}}
+    {{H:title|Message sent to the player when they try to reforge an invalid item|invalid-item: <nowiki><c></nowiki>I'm sorry, but I don't know how to reforge that!}}
+    {{H:title|Message sent to the player when the reforge starts|start-reforge: <nowiki><e></nowiki>Ok, let's see what I can do...}}
+    {{H:title|Message sent to the player when the reforge is successful|successful-reforge: <nowiki><a></nowiki>There you go! All better!}}
+  {{H:title|Drops the reforged item on the ground instead of giving it to the player|drop-item: true}}
+  {{H:title|The percent chance of the reforge failing|percent-chance-to-fail-reforge: 10}}
+  {{H:title|The percent chance of the reforge adding extra enchantments|percent-chance-for-extra-enchantments: 5}}
+  {{H:title|Maximum amount of enchantments that an item can have|maximum-enchantments: 3}}
+  {{H:title|Delays block. Determines delays for blacksmith usage|delays-in-seconds:}}
+    {{H:title|Maximum time it will take to reforge an item|maximum: 30}}
+    {{H:title|Minimum time it will take to reforge an item|minimum: 5}}
+    {{H:title|Time the player has to wait after reforging something before trying again|reforge-cooldown: 60}}
+ <nowiki></nowiki>{{H:title|Enchantment modifiers block|enchantment-modifiers:}}
+  {{H:title|Default enchantment modifier. This will be used if per-enchantment modifiers are not specified.|default: 5}}
+
+[[Category:Characters]]
+
+{{NavBox}}

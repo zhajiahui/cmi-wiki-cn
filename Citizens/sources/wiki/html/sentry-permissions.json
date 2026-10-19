@@ -1,0 +1,21 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Sentry/Permissions",
+    "pageid": 186,
+    "revid": 4585,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p><b>NPCs can be treated like players by many other plugins, anti-pvp plugins may interfere with Sentry!</b>\n</p><p>These are the permissions for /sentry commands\n</p><p>Default access is Op.\n</p><p>sentry.*\n</p>\n<dl><dd>sentry.spawn</dd>\n<dd>sentry.guard</dd>\n<dd>sentry.equip</dd>\n<dd>sentry.info</dd>\n<dd>sentry.warning</dd>\n<dd>sentry.greeting</dd>\n<dd>sentry.target</dd>\n<dd>sentry.ignore</dd>\n<dd>sentry.stats.*\n<dl><dd>sentry.stats.strength</dd>\n<dd>sentry.stats.armor</dd>\n<dd>sentry.stats.speed</dd>\n<dd>sentry.stats.nightvision</dd>\n<dd>sentry.stats.respawn</dd>\n<dd>sentry.stats.health</dd>\n<dd>sentry.stats.attackrate</dd>\n<dd>sentry.stats.healrate</dd>\n<dd>sentry.stats.range</dd>\n<dd>sentry.stats.warningrange</dd></dl></dd>\n<dd>sentry.options.*\n<dl><dd>sentry.options.invincible</dd>\n<dd>sentry.options.retaliate</dd>\n<dd>sentry.options.drops</dd>\n<dd>sentry.options.killdrops</dd>\n<dd>sentry.options.criticals</dd>\n<dd>sentry.options.friendlyfire</dd></dl></dd></dl>\n<!-- \nNewPP limit report\nCached time: 20261019145911\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.011 seconds\nReal time usage: 0.023 seconds\nPreprocessor visited node count: 1/1000000\nRevision size: 734/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 1/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID a44657e6-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": []
+  }
+}

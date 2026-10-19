@@ -1,0 +1,17 @@
+NPCs can be given Waypoints to pathfind between.
+
+Waypoints are created by a Waypoint Provider. You can change providers using the /waypoint provider [provider] command.
+
+The current Providers are:
+
+Linear (default) - Sends the NPC to each stored waypoint in sequence.
+
+Wander - The NPC wanders around randomly. 
+
+Guided - The waypoints are split into destination waypoints and helper waypoints. Destination waypoints are chosen randomly and pathed to using the helper waypoints as a guide. Useful for say patrolling NPCs in a city where you want them to roughly stick to the roads.
+
+== Waypoint triggers ==
+For the linear and guided waypoint provider, triggers can be added to pause the NPC at certain waypoints, change their speed or say something at a waypoint. More information can be found by typing 'triggers' in the waypoint editor.
+
+{{NavBox}}
+[[Category:Configuration]]

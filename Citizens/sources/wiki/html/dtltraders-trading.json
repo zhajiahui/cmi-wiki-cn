@@ -1,0 +1,67 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "DtlTraders/trading",
+    "pageid": 240,
+    "revid": 3120,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Using_the_trader\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Using the trader</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Buy_menu\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Buy menu</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Sell_menu\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Sell menu</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Navigation\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Navigation</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Using_the_trader\">Using the trader</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/trading&amp;action=edit&amp;section=1\" title=\"Edit section: Using the trader\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ol><li>With an empty hand right click the NPC</li>\n<li>To toggle between buying/selling click the lime/cyan wool in the lower right corner.</li></ol>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Buy_menu\">Buy menu</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/trading&amp;action=edit&amp;section=2\" title=\"Edit section: Buy menu\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ol><li>Clicking once on an item shows the price or brings up the amount selection menu.</li>\n<li>Clicking the item a second time buys it.<br /></li></ol>\n<p><br />\nWhen in the amount selection menu you can click the red wool to go back to the trader's main inventory.<br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Sell_menu\">Sell menu</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/trading&amp;action=edit&amp;section=3\" title=\"Edit section: Sell menu\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ol><li>Clicking once on an item shows how much you will get for it.</li>\n<li>Clicking the item a second time sells it.</li></ol>\n<p><br />\n<b>Note:</b> NPCs will not buy anything unless you set up the accepted items and their prices.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Navigation\">Navigation</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/trading&amp;action=edit&amp;section=4\" title=\"Edit section: Navigation\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<table class=\"wikitable\" style=\"text-align: center; width: 500px\">\n\n<tbody><tr>\n<th style=\"width: 100%; background-color:#ADD8E6\" colspan=\"2\"><b>DtlTraders</b>\n</th></tr>\n<tr>\n<td>Usage</td>\n<td><a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/DtlTraders/managing\">Managing</a> | <a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/DtlTraders/trading\">Trading</a> | <a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/DtlTraders/banking\">Banking</a>\n</td></tr>\n<tr>\n<td>Configuration</td>\n<td><a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/DtlTraders/config\">Configuration</a> | <a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/DtlTraders/Commands\">Commands</a> | <a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/DtlTraders/permissions\">Permissions</a> | <a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/DtlTraders/locale\">Locale</a>\n</td></tr>\n<tr>\n<td>Types</td>\n<td><a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/DtlTraders/traders\">Traders</a> | <a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/DtlTraders/bankers\">Bankers</a>\n</td></tr></tbody></table>\n<!-- \nNewPP limit report\nCached time: 20261019145853\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.011 seconds\nReal time usage: 0.013 seconds\nPreprocessor visited node count: 11/1000000\nRevision size: 1615/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 998bc2e3-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Using the trader",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "DtlTraders/trading",
+        "byteoffset": 0,
+        "anchor": "Using_the_trader",
+        "linkAnchor": "Using_the_trader"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Buy menu",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "DtlTraders/trading",
+        "byteoffset": 152,
+        "anchor": "Buy_menu",
+        "linkAnchor": "Buy_menu"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Sell menu",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "DtlTraders/trading",
+        "byteoffset": 414,
+        "anchor": "Sell_menu",
+        "linkAnchor": "Sell_menu"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Navigation",
+        "number": "4",
+        "index": "4",
+        "fromtitle": "DtlTraders/trading",
+        "byteoffset": 637,
+        "anchor": "Navigation",
+        "linkAnchor": "Navigation"
+      }
+    ],
+    "showtoc": ""
+  }
+}

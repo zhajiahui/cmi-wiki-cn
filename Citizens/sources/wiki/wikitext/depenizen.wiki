@@ -1,0 +1,42 @@
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://meta.denizenscript.com/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+<center><h1><nowiki>Depenizen: Dependencies for Denizen!</nowiki></h1></center>
+
+Welcome to the Depenizen Project! What is Depenizen all about?
+
+Depenizen is a simple plugin that does exactly what its name implies: adds external plugin dependencies to Denizen.
+
+Head on over to our [[Depenizen/Frequently Asked Questions|FAQ page]] for more information!
+
+[https://github.com/DenizenScript/Depenizen Depenizen Github]
+
+[http://ci.citizensnpcs.co/view/All/job/Depenizen/ Development builds download]
+
+
+<h2>Depenizen V0.2</h2>
+If you used 0.1, you might notice that some tags were broken when updating to the latest builds. This was intentional, and mostly unavoidable in terms of the new Denizen 0.9 system, which is geared toward more object oriented systems. For example, previously in Denizen, using '''<player>''' would return the player's name. Now, it will return a dPlayer, represented by "'''p@'''", followed by the player's name. That being said, a tag such as '''<player.faction>''' will no longer return the faction name. To do that, you must now use '''<player.faction.name>'''.
+
+Other tags, such as '''<player.town.ismayor>''', which would return whether or not the player is the mayor of his/her town, make no sense in this system. Instead, you should use '''- if <player.town.mayor> == <player>'''
+
+...
+
+[[Depenizen/Tag-List|List Of Depenizen Tags]] /// [[Depenizen/Command-List|List of Depenizen Commands]] /// [[Depenizen/Supported-Plugins|List of Depenizen's Supported Plugins]]

@@ -1,0 +1,36 @@
+{{NoSupport}}
+'''Evil NPCs''' are the most misunderstood of all Citizens NPC types. Upon seeing you, they will attack. Tame these poor creatures by right-clicking them with the configurable tame-item. Once tamed, they can be toggled to become any NPC type. They just want to fit in! Evil NPCs can be controlled with the evil: node in [[mobs.yml]].
+
+Evil NPCs are included in the core of Citizens and thus so do not require an additional types JAR.
+
+== Configuration Nodes ==
+These nodes can be found in [[mobs.yml]].
+
+<pre>evil:
+  spawn:
+    spawn: true   # Whether to spawn evil NPCs. Default is false.
+    max: 5        # Number of NPCs to spawn. Default is 2.
+    chance: 100   # Chance of NPSs spawning after delay: node setting in mobs.yml.
+
+  items:
+    tame-item: 377          # Blaze Powder 
+    drops: 260,357,2256,    # List of possible drops for an evil NPC.
+                            # Note: Leave a trailing comma.
+
+  misc:
+    tame-chance: 50           # Percentage chance Evil NPC will be tamed 
+                              # by right-clicking with tame-item.
+    names: Bandit,Herobrine,  # Names of the Evil NPCs.
+                              # Note: Leave a trailing comma.
+    health: 20                # For reference, standard player health is 20
+    failed-tame-messages: The blaze powder fails to calm your subject.;POOF! Nothing.
+</pre>
+
+==Related Permissions==
+
+See [[Permissions]] for information on how to use permissions.  The listed permission nodes below relate to Mobs.yml and Evil NPCs.
+
+<pre>citizens.evils.immune   # Those with this node will not be attacked by Evil NPCs</pre>
+
+{{NavBox}}
+[[Category:Citizens1]]

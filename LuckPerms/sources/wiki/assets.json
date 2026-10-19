@@ -1,0 +1,317 @@
+[
+  {
+    "file": "wiki/assets/context-1.gif",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/context-1.gif",
+    "native_sha256": "d1e4e393dde08d264c3408d5f2d3001ea9c75ca51090887e9ee45fca81d48cea",
+    "bytes": 275225,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/contributing-1.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/contributing-1.png",
+    "native_sha256": "08d0853acbb338d61c90502939d3179bfce377d7d9bf5a7ae2c029c84f8391bb",
+    "bytes": 167710,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/credits-yourkit.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/credits-yourkit.png",
+    "native_sha256": "2357e7df0372d8f833df56cf69ee536cb03b1393353878ef121305ad8409f065",
+    "bytes": 2183,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/credits-jprofiler.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/credits-jprofiler.png",
+    "native_sha256": "000ec780ae8fc49f15d99fbe6416eb4409ed4e652e93db70297f934be51f8225",
+    "bytes": 2055,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/hytale-chat-1.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/hytale-chat-1.png",
+    "native_sha256": "b8f21d3aa8a892f06c0e98c2b1b8313a58fbf822de52c729b45d6a4c5bc994dd",
+    "bytes": 34817,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/hytale-chat-2.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/hytale-chat-2.png",
+    "native_sha256": "e26ec84a7be5557737b3c09e6c8b2dd4e024766d0179c84158f3fef4e9919b76",
+    "bytes": 36638,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/hytale-chat-3.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/hytale-chat-3.png",
+    "native_sha256": "71308ff1c1aa7f25340a2d0a733441d083908cfcf366e934753508ffe81c338a",
+    "bytes": 47020,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/installation-1.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/installation-1.png",
+    "native_sha256": "fdc2d5a9b650a0fad2b0ddcf6e8f2bc55b47298a3f0b0e4613bd676a699150e7",
+    "bytes": 78639,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/installation-2.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/installation-2.png",
+    "native_sha256": "bbf84b2b2017a03b8c308857442f85b0795fdb1b0b93abbe0926a84a03bc24a5",
+    "bytes": 24290,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/installation-3.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/installation-3.png",
+    "native_sha256": "b5ac0908d3ccbff79e8af3139b0835314ba011234ad40ea3e5f4de317c0c758e",
+    "bytes": 99392,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/installation-4.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/installation-4.png",
+    "native_sha256": "28b32cd009c7e2b3f056212cc6e0c712a28bfbcd5adf117c840b1c08eea7435c",
+    "bytes": 81332,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/installation-5.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/installation-5.png",
+    "native_sha256": "f2bcc0a3cc24249e6c98f24a5c7bd8b988daf1bcded7ced67067d525faa5add7",
+    "bytes": 26047,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/installation-6.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/installation-6.png",
+    "native_sha256": "f90d3c388b1cc59ac70783afd6b9d955e20953ebe6e8f91ec796f3c6108113e3",
+    "bytes": 19681,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/installation-7.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/installation-7.png",
+    "native_sha256": "71008bdda48f76929b8fc2ef52b7a85ad06545091012b9ee19a71705372ff525",
+    "bytes": 22378,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/installation-8.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/installation-8.png",
+    "native_sha256": "7a5a10d025e0d4a436a16cce18cd2ea2cad2d9cceb4afedba7559d8cf31ab225",
+    "bytes": 71530,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/installation-9.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/installation-9.png",
+    "native_sha256": "9fdaaf1e87426c213ab86cbf604c27664ca11b53e8a8149944daf06de9a14444",
+    "bytes": 83013,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/standalone-1.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/standalone-1.png",
+    "native_sha256": "f1510a40a8592e7280ee50202cf85a89e9d5704d6e3785df54ff22e2d4cf6c5a",
+    "bytes": 96725,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/usage-1.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/usage-1.png",
+    "native_sha256": "0ee46faf3abc1193c38aeb8abfbb96bf1c03d14499cd29e95749bb1ed8fe2880",
+    "bytes": 4050,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/usage-2.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/usage-2.png",
+    "native_sha256": "1215ad5c86da4ee4c80fecfe8d046e5f6ab56c9ed704bb4c6e00aa4d59d2b21c",
+    "bytes": 3126,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/usage-3.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/usage-3.png",
+    "native_sha256": "239e35ba7155b48b6134aa9611064d836a4db3fdd07b1fec1d1da0a2d253b6aa",
+    "bytes": 7659,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/usage-4.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/usage-4.png",
+    "native_sha256": "7ec0ae09bc742478ecf3875fa4a8c8f8da78c47d395b9bdc7a6372e61c21d064",
+    "bytes": 8429,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/usage-5.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/usage-5.png",
+    "native_sha256": "de58532820a76e9391b04bd61f546c9fa02d4f9f999ec6e32ce3f0a1173c083d",
+    "bytes": 6451,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/usage-6.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/usage-6.png",
+    "native_sha256": "bbdc9222a90c488e8c286c00f2d5bb65c8ab9def1f6aaedb2e966280e8aebe9a",
+    "bytes": 4547,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/usage-7.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/usage-7.png",
+    "native_sha256": "36a519a90f751f6bca4accc941807566b4f89c4066e55afbc6666728f07bf916",
+    "bytes": 4185,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/usage-8.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/usage-8.png",
+    "native_sha256": "8f33503d4b9c3079c413124f57d639c7529fb1f8423bd653579bcca5443a467e",
+    "bytes": 3966,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/usage-9.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/usage-9.png",
+    "native_sha256": "e72e2a01e116ccdd3c49b15083568683ab60ae7eb82a51c270682169cc09cd8c",
+    "bytes": 7135,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/usage-10.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/usage-10.png",
+    "native_sha256": "17575bb32cd34948a78f837cbb910fa2270130eba323722b292f318c91bf701f",
+    "bytes": 4071,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/whyluckperms-2.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/whyluckperms-2.png",
+    "native_sha256": "9b131490ccc622e2a24c250fe2a434325b829da5fdcb9cf0322cd8d786059b54",
+    "bytes": 35168,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/whyluckperms-1.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/whyluckperms-1.png",
+    "native_sha256": "42169981903f3985462aa075cab0eb3aeff6d4bb070cdbd6bf6f489e01d40d4d",
+    "bytes": 22246,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/usage-inheritance-1.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/usage-inheritance-1.png",
+    "native_sha256": "95bca279011854d997da9a93a03e1e73939afa5c954d79b374e3ecda50da3abf",
+    "bytes": 66912,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/verbose-1.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/verbose-1.png",
+    "native_sha256": "9b131490ccc622e2a24c250fe2a434325b829da5fdcb9cf0322cd8d786059b54",
+    "bytes": 35168,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/verbose-2.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/verbose-2.png",
+    "native_sha256": "b75c8d7bbd8bf8623845037a5bdd7bb2d2e79fcfa1a27b8ed6cf470f91cf9749",
+    "bytes": 46777,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/webeditor-technical-1.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/webeditor-technical-1.png",
+    "native_sha256": "4919d72bd77d13db347d1d70ba930d423d2983a6bfd8730a127c3146974ff23a",
+    "bytes": 186988,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/webeditor-technical-2.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/webeditor-technical-2.png",
+    "native_sha256": "db134af8023c19268e2ea3d067cd42d90929534571057b40014d938a649c7457",
+    "bytes": 64910,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/webeditor-technical-3.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/webeditor-technical-3.png",
+    "native_sha256": "7b3d8e8b3db1191d8659198e22fadcfe546b3f67721fb0a02efa52730db6e0bd",
+    "bytes": 91773,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/webeditor-1.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/webeditor-1.png",
+    "native_sha256": "b06929c52a2b45c2f9d2ca60a70fe003a5150f2b21f2f30b716d16c075131b85",
+    "bytes": 15178,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/webeditor-2.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/webeditor-2.png",
+    "native_sha256": "157ebaf70d205950fad0d30ef1c90959caa5a1c7a154649ea97b5373be4536a2",
+    "bytes": 6217,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/webeditor-3.gif",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/webeditor-3.gif",
+    "native_sha256": "4e6cc22ba2cbace9802a4b9e4e3dab55b5eedf397aa7bf82f28d1f4e8a5e0be6",
+    "bytes": 58933,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/webeditor-4.gif",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/webeditor-4.gif",
+    "native_sha256": "c44b4d294765cfe6f87899068be95d5d48b6de86807dfefca6c2c472ac238880",
+    "bytes": 200929,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/webeditor-5.gif",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/webeditor-5.gif",
+    "native_sha256": "8c79957207eb94a3c73ad8d5c865be417b45e7b2fcd131e7993fac97dc1f8a6c",
+    "bytes": 597970,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/webeditor-6.gif",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/webeditor-6.gif",
+    "native_sha256": "d5134b796b52dda21fe36192b0616084610aa7c3c282a8baf2371ba5373e0874",
+    "bytes": 364219,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/webeditor-7.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/webeditor-7.png",
+    "native_sha256": "0e71a6316f523168512950d95a65e34c43834aecec4926df6c833ccc63edcce1",
+    "bytes": 17658,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/whyluckperms-3.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/whyluckperms-3.png",
+    "native_sha256": "51fbdfb52832282f5052ceea7b5932eef927856a4941d72b540117fabab7945e",
+    "bytes": 36470,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/whyluckperms-4.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/whyluckperms-4.png",
+    "native_sha256": "cdf023b966836da035a6cf459572f75dade33886cff91b907de84f43d3f01a08",
+    "bytes": 39013,
+    "status": "available"
+  },
+  {
+    "file": "wiki/assets/whyluckperms-5.png",
+    "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/whyluckperms-5.png",
+    "native_sha256": "2c7ba75ad6ad0aa64d8d767e8f46466c0d26c8c27f06e7ca48e546113e16d145",
+    "bytes": 9853,
+    "status": "available"
+  }
+]

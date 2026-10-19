@@ -1,0 +1,133 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Denizen/Replaceable Tags",
+    "pageid": 308,
+    "revid": 5225,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://one.denizenscript.com/denizen/cmds/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://one.denizenscript.com/denizen/cmds/denizen/vids\">Tutorial Videos</a> on youtube or the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br /><br /><br />\n</p><p><br />\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Flags\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Flags</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Location\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Location</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#NPC\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">NPC</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Player\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Player</span></a></li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#Util\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">Util</span></a></li>\n<li class=\"toclevel-1 tocsection-6\"><a href=\"#Math_Tags\"><span class=\"tocnumber\">6</span> <span class=\"toctext\">Math Tags</span></a></li>\n<li class=\"toclevel-1 tocsection-7\"><a href=\"#Text\"><span class=\"tocnumber\">7</span> <span class=\"toctext\">Text</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-8\"><a href=\"#Colors\"><span class=\"tocnumber\">7.1</span> <span class=\"toctext\">Colors</span></a></li>\n<li class=\"toclevel-2 tocsection-9\"><a href=\"#Special_Characters\"><span class=\"tocnumber\">7.2</span> <span class=\"toctext\">Special Characters</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-10\"><a href=\"#Pssst...\"><span class=\"tocnumber\">8</span> <span class=\"toctext\">Pssst...</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Flags\">Flags</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Replaceable_Tags&amp;action=edit&amp;section=1\" title=\"Edit section: Flags\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><s>{| class=\"wikitable\" width=\"100%\" border=\"1\"\n|-\n| width=\"30%\" | &lt;flag.g:flag_name&gt;\n| Returns the value of a flag attached to the server. NOTE: In 0.9, it's more preferred to use &lt;server.flag[flag_name]&gt;\n|-\n| &lt;flag.n:flag_name&gt;\n| Returns the value of a flag attached to the current NPC. NOTE: In 0.9, it's more preferred to use &lt;npc.flag[flag_name]&gt;\n|-\n| &lt;flag.p:flag_name&gt;\n| Returns the value of a flag attached to the current player. NOTE: In 0.9, it's more preferred to use &lt;player.flag[flag_name]&gt;\n|-\n|&lt;player[player_name].flag[flag_name]&gt;\n|Returns the value of a flag for another player.\n|-\n|&lt;player.flag[flag_name]&gt;.isexpired&gt;\n|Returns true or false if the duration of a flag has expired.\n|}\n</s></p><s><div class=\"mw-heading mw-heading2\"><h2 id=\"Location\">Location</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Replaceable_Tags&amp;action=edit&amp;section=2\" title=\"Edit section: Location\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><p><s>\nAll location tags require coordinates. You can have tags in the brackets [] or you can specify exact locations by yourself. For example, you could use </s></p><s><pre>&lt;location[&lt;npc.location&gt;].biome.temperature&gt;</pre></s><p><s> to get the temperature at the NPC's location.\n</s></p><s><table class=\"wikitable\" width=\"100%\" border=\"1\">\n\n<tbody><tr>\n<td width=\"30%\">&lt;location[x,y,z,world].biome.formatted&gt;\n</td>\n<td>The formatted name of the biome at coordinates.\n</td></tr>\n<tr>\n<td>&lt;location[x,y,z,world].biome.humidity&gt;\n</td>\n<td>The current humidity at the coordinates.\n</td></tr>\n<tr>\n<td>&lt;location[x,y,z,world].biome.temperature&gt;\n</td>\n<td>The current temperature at the coordinates.\n</td></tr>\n<tr>\n<td>&lt;location[x,y,z,world].distance[x,y,z,world]&gt;\n</td>\n<td>The distance between 2 coordinates.\n</td></tr>\n<tr>\n<td>&lt;location[x,y,z,world].formatted&gt;\n</td>\n<td>The coordinates in an easier-to-read format.\n</td></tr>\n<tr>\n<td>&lt;location[x,y,z,world].is_liquid&gt;\n</td>\n<td>Whether or not the block at the coordinates are a liquid. Can be true or false.\n</td></tr>\n<tr>\n<td>&lt;location[x,y,z,world].light&gt;\n</td>\n<td>The light level at the coordinates.\n</td></tr></tbody></table></s><s><div class=\"mw-heading mw-heading2\"><h2 id=\"NPC\">NPC</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Replaceable_Tags&amp;action=edit&amp;section=3\" title=\"Edit section: NPC\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><p>NOTE: You can reference an NPC other than the one in the current script by using &lt;npc[npc_id]&gt;... So for example, &lt;npc[2].id&gt; (which would be completely useless) would return '2'.\n</p></s><s><table class=\"wikitable\" width=\"100%\" border=\"1\">\n\n<tbody><tr>\n<td width=\"30%\">&lt;npc.flag[flag_name]&gt;\n</td>\n<td>Returns the value of a flag attached to an NPC.\n</td></tr>\n<tr>\n<td>&lt;npc.id&gt;\n</td>\n<td>The ID number of the NPC.\n</td></tr>\n<tr>\n<td>&lt;npc.location&gt;\n</td>\n<td>The coordinates of the NPC. [x,y,z,world]\n</td></tr>\n<tr>\n<td>&lt;npc.location.previous_location&gt;\n</td>\n<td>The last location the NPC was at.\n</td></tr>\n<tr>\n<td>&lt;npc.location.standing_on&gt;\n</td>\n<td>The Bukkit block name that the NPC is standing on.\n</td></tr>\n<tr>\n<td>&lt;npc.location.standing_on_display&gt;\n</td>\n<td>The formatted block name that the NPC is standing on.\n</td></tr>\n<tr>\n<td>&lt;npc.location.world&gt;\n</td>\n<td>The name of the world the NPC is in.\n</td></tr>\n<tr>\n<td>&lt;npc.location.world_spawn&gt;\n</td>\n<td>The coordinates of the spawn of the world that the NPC is currently in.\n</td></tr>\n<tr>\n<td>&lt;npc.location.x&gt;\n</td>\n<td>The x coordinate the NPC is at.\n</td></tr>\n<tr>\n<td>&lt;npc.location.y&gt;\n</td>\n<td>The y coordinate the NPC is at.\n</td></tr>\n<tr>\n<td>&lt;npc.location.z&gt;\n</td>\n<td>The z coordinate the NPC is at.\n</td></tr>\n<tr>\n<td>&lt;npc.name&gt;\n</td>\n<td>The NPC's name.\n</td></tr>\n<tr>\n<td>&lt;npc.name.nickname&gt;\n</td>\n<td>The NPC's nickname.\n</td></tr>\n<tr>\n<td>&lt;npc.owner&gt;\n</td>\n<td>The owner of the NPC.\n</td></tr></tbody></table></s><s><div class=\"mw-heading mw-heading2\"><h2 id=\"Player\">Player</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Replaceable_Tags&amp;action=edit&amp;section=4\" title=\"Edit section: Player\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><p>NOTE: You can reference a player other than the one in the current script by using &lt;player[player_name]&gt;... So for example, &lt;player[Morphan1].name&gt; (which would be completely useless) would return 'Morphan1'.\n</p></s><s><table class=\"wikitable\" width=\"100%\" border=\"1\">\n\n<tbody><tr>\n<td width=\"30%\">&lt;player.chat_history&gt;\n</td>\n<td>Last message the player sent.\n</td></tr>\n<tr>\n<td>&lt;player.chat_history[X]&gt;\n</td>\n<td>Message the player sent X times ago.\n</td></tr>\n<tr>\n<td>&lt;player.equipment.boots&gt;\n</td>\n<td>The Bukkit name for the boots the player is wearing. Can also be used for chestplate, leggings, and helmet.\n</td></tr>\n<tr>\n<td>&lt;player.equipment.boots.formatted&gt;\n</td>\n<td>The formatted name for the boots the player is wearing. Can also be used for chestplate, leggings, and helmet.\n</td></tr>\n<tr>\n<td>&lt;player.flag[flag_name]&gt;\n</td>\n<td>Returns the value of a flag attached to a player.\n</td></tr>\n<tr>\n<td>&lt;player.health&gt;\n</td>\n<td>The player's health, 1-20. Each number is half of a heart.\n</td></tr>\n<tr>\n<td>&lt;player.health.formatted&gt;\n</td>\n<td>The player's formatted health. Can be healthy, scraped, injured, seriously wounded, and dying.\n</td></tr>\n<tr>\n<td>&lt;player.health.percentage&gt;\n</td>\n<td>The player's health as a percentage.\n</td></tr>\n<tr>\n<td>&lt;player.inventory.contains.display[display_name]&gt;\n</td>\n<td>Checks if the player's inventory contains an item with a name chosen on an anvil. You can also add .qty[X] to check if the player has an X amount of the item. Can be true or false.\n</td></tr>\n<tr>\n<td>&lt;player.inventory.contains[item_id]&gt;\n</td>\n<td>Checks if the player's inventory contains an item. You can also add .qty[X] to check if the player has an X amount of the item. Can be true or false.\n</td></tr>\n<tr>\n<td>&lt;player.food_level&gt;\n</td>\n<td>The player's food level, 1-20. Each number is half of a thing-on-the-hunger-bar.\n</td></tr>\n<tr>\n<td>&lt;player.food_level.formatted&gt;\n</td>\n<td>The player's formatted food level. Can be healthy, parched, hungry, and famished.\n</td></tr>\n<tr>\n<td>&lt;player.food_level.percentage&gt;\n</td>\n<td>The player's food level as a percentage.\n</td></tr>\n<tr>\n<td>&lt;player.group[group_name]&gt;\n</td>\n<td>Checks if the player is in a group via Vault. Can be true or false.\n</td></tr>\n<tr>\n<td>&lt;player.group[group_name].global&gt;&gt;\n</td>\n<td>Checks if the player is in a global group via Vault. Can be true or false.\n</td></tr>\n<tr>\n<td>&lt;player.item_in_hand.enchantments&gt;\n</td>\n<td>List of enchantments on item in player's hand.\n</td></tr>\n<tr>\n<td>&lt;player.item_in_hand.enchantments_with_level&gt;\n</td>\n<td>List of enchantments and their levels on item in player's hand.\n</td></tr>\n<tr>\n<td>&lt;player.item_in_hand.enchantments_with_level_only&gt;\n</td>\n<td>List of levels of enchantments on item in player's hand.\n</td></tr>\n<tr>\n<td>&lt;player.item_in_hand&gt;\n</td>\n<td>Contains all details of the item in the player's hand.\n</td></tr>\n<tr>\n<td>&lt;player.item_in_hand.data&gt;\n</td>\n<td>The material data of the item the player is holding.\n</td></tr>\n<tr>\n<td>&lt;player.item_in_hand.display&gt;\n</td>\n<td>The name chosen on an anvil for the item the player is holding.\n</td></tr>\n<tr>\n<td>&lt;player.item_in_hand.durability&gt;\n</td>\n<td>The durability of the item the player is holding.\n</td></tr>\n<tr>\n<td>&lt;player.item_in_hand.id&gt;\n</td>\n<td>The ID of the block or item the player is holding. All block and item IDs are found <a rel=\"nofollow\" class=\"external text\" href=\"http://www.minecraftwiki.net/wiki/Data_values\">here</a>.\n</td></tr>\n<tr>\n<td>&lt;player.item_in_hand.lore&gt;\n</td>\n<td>List of lore on item in the player's hand.\n</td></tr>\n<tr>\n<td>&lt;player.item_in_hand.max_stack&gt;\n</td>\n<td>The maximum amount you can have in one inventory slot of the item the player is holding.\n</td></tr>\n<tr>\n<td>&lt;player.item_in_hand.material&gt;\n</td>\n<td>Bukkit material name of the item in the player's hand.\n</td></tr>\n<tr>\n<td>&lt;player.item_in_hand.material.formatted&gt;\n</td>\n<td>Formatted material name of the item in the player's hand.\n</td></tr>\n<tr>\n<td>&lt;player.item_in_hand.qty&gt;\n</td>\n<td>The current amount of the inventory slot of the item the player is holding.\n</td></tr>\n<tr>\n<td>&lt;player.is_banned&gt;\n</td>\n<td>Whether the player is banned. Can be true or false.\n</td></tr>\n<tr>\n<td>&lt;player.is_online&gt;\n</td>\n<td>Whether the player is online. Can be true or false.\n</td></tr>\n<tr>\n<td>&lt;player.is_op&gt;\n</td>\n<td>Whether the player is an operator. Can be true or false.\n</td></tr>\n<tr>\n<td>&lt;player.location&gt;\n</td>\n<td>The coordinates of the player. [x,y,z,world]\n</td></tr>\n<tr>\n<td>&lt;player.location.bed_spawn&gt;\n</td>\n<td>The coordinates of the last bed the player slept in, if any.\n</td></tr>\n<tr>\n<td>&lt;player.location.cursor_on[X]&gt;\n</td>\n<td>The location of the block the player's cursor is on, within X range.\n</td></tr>\n<tr>\n<td>&lt;player.location.standing_on&gt;\n</td>\n<td>The Bukkit block name that the player is standing on.\n</td></tr>\n<tr>\n<td>&lt;player.location.standing_on.formatted&gt;\n</td>\n<td>The formatted block name that the player is standing on.\n</td></tr>\n<tr>\n<td>&lt;player.location.world&gt;\n</td>\n<td>The name of the world the player is in.\n</td></tr>\n<tr>\n<td>&lt;player.location.world_spawn&gt;\n</td>\n<td>The coordinates of the spawn of the world that the player is currently in.\n</td></tr>\n<tr>\n<td>&lt;player.location.x&gt;\n</td>\n<td>The x coordinate the player is at.\n</td></tr>\n<tr>\n<td>&lt;player.location.y&gt;\n</td>\n<td>The y coordinate the player is at.\n</td></tr>\n<tr>\n<td>&lt;player.location.z&gt;\n</td>\n<td>The z coordinate the player is at.\n</td></tr>\n<tr>\n<td>&lt;player.money&gt;\n</td>\n<td>The amount of money in this player's account. Requires Vault and an economy plugin.\n</td></tr>\n<tr>\n<td>&lt;player.name&gt;\n</td>\n<td>The player's name.\n</td></tr>\n<tr>\n<td>&lt;player.name.display&gt;\n</td>\n<td>The player's display name. (The one that shows in chat.)\n</td></tr>\n<tr>\n<td>&lt;player.mcmmo.level[skill_name]&gt;\n</td>\n<td>The player's current level for an McMMO skill.\n</td></tr>\n<tr>\n<td>&lt;player.money&gt;\n</td>\n<td>How much money the player has, as a number. (0.0, 1.5, 2.25, etc.)\n</td></tr>\n<tr>\n<td>&lt;player.money.asint&gt;\n</td>\n<td>How much money the player has, as an integer. (0, 1, 2, etc.)\n</td></tr>\n<tr>\n<td>&lt;player.money.currency&gt;\n</td>\n<td>The currency set in this server's economy plugin.\n</td></tr>\n<tr>\n<td>&lt;player.money.currency.plural&gt;\n</td>\n<td>The currency set in this server's economy plugin, in its plural form.\n<p>Examples: Dollars, pounds, coins\n</p>\n</td></tr>\n<tr>\n<td>&lt;player.money.currency.singular&gt;\n</td>\n<td>The currency set in this server's economy plugin, in its singular form.\n<p>Examples: Dollar, pound, coin\n</p>\n</td></tr>\n<tr>\n<td>&lt;player.script[script_name].failed&gt;\n</td>\n<td>Checks if the player has failed a script. Can be true or false.\n</td></tr>\n<tr>\n<td>&lt;player.script[script_name].finished&gt;\n</td>\n<td>Checks if the player has finished a script. Can be true or false.\n</td></tr>\n<tr>\n<td>&lt;player.time&gt;\n</td>\n<td>The player's time in ticks, from 0 to 23999. For a quick view of what different tick values mean in real life hours, look <a rel=\"nofollow\" class=\"external text\" href=\"http://media-mcw.cursecdn.com/b/bc/Day_Night_Clock_24h.png\">here</a>.\n</td></tr>\n<tr>\n<td>&lt;player.time.period&gt;\n</td>\n<td>The time period for this player. Can be \"day\" or \"night\".\n</td></tr>\n<tr>\n<td>&lt;player.xp&gt;\n</td>\n<td>The total experience of a player.\n</td></tr>\n<tr>\n<td>&lt;player.xp.level&gt;\n</td>\n<td>The current experience level of a player.\n</td></tr>\n<tr>\n<td>&lt;player.weather&gt;\n</td>\n<td>The current weather in this player's world. Is \"storming\" if there's a storm, \"sunny\" if the weather is clear and it's daytime, and \"clear\" if the weather is clear and it's nighttime.\n</td></tr></tbody></table></s><s><div class=\"mw-heading mw-heading2\"><h2 id=\"Util\">Util</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Replaceable_Tags&amp;action=edit&amp;section=5\" title=\"Edit section: Util\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><table class=\"wikitable\" width=\"100%\" border=\"1\">\n\n<tbody><tr>\n<td width=\"30%\">&lt;util.random.int[1].to[50]&gt;\n</td>\n<td>Returns a random number between the lower bound (first number) and upper bound (second number).\n</td></tr>\n<tr>\n<td width=\"30%\">&lt;util.random.uuid&gt;\n</td>\n<td>Returns a random \"uuid\" useful for starting new queues.\n</td></tr>\n<tr>\n<td width=\"30%\">&lt;util.substr[string]&gt;\n</td>\n<td>Returns a substring of a string.\n</td></tr>\n</tbody></table></s><s><div class=\"mw-heading mw-heading2\"><h2 id=\"Math_Tags\">Math Tags</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Replaceable_Tags&amp;action=edit&amp;section=6\" title=\"Edit section: Math Tags\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><p>Math tags are a useful part of Denizen that, as the name implies, allows you to perform mathematical operations internally.\n</p><p>Here's the general syntax, with spaces for readability. (You shouldn't include spaces in your actual script. If you must, put it in \"quotes\")\n</p></s><s><pre>&lt;m: firstThing + secondThing&gt; \n//Now, all together,\n&lt;m:firstThing+secondThing&gt;\n</pre></s><s><p>Of course, + isn't the only mathematical operator that can be used. You can also use:\n</p><p>Minus and Modulus: (- and&#160;%)\n</p><p>Divide and Multiply: (/ and *)\n</p></s><s><div class=\"mw-heading mw-heading2\"><h2 id=\"Text\">Text</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Replaceable_Tags&amp;action=edit&amp;section=7\" title=\"Edit section: Text\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><div class=\"mw-heading mw-heading3\"><h3 id=\"Colors\">Colors</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Replaceable_Tags&amp;action=edit&amp;section=8\" title=\"Edit section: Colors\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><table class=\"wikitable\" width=\"25%\" border=\"1\">\n\n<tbody><tr>\n<td width=\"60%\">&lt;aqua&gt;\n</td>\n<td style=\"background-color:#55FFFF\">\n</td></tr>\n<tr>\n<td>&lt;black&gt;\n</td>\n<td style=\"background-color:black\">\n</td></tr>\n<tr>\n<td>&lt;blue&gt;\n</td>\n<td style=\"background-color:#5555FF\">\n</td></tr>\n<tr>\n<td>&lt;dark_aqua&gt;\n</td>\n<td style=\"background-color:#00AAAA\">\n</td></tr>\n<tr>\n<td>&lt;dark_blue&gt;\n</td>\n<td style=\"background-color:#0000AA\">\n</td></tr>\n<tr>\n<td>&lt;dark_gray&gt;\n</td>\n<td style=\"background-color:#555555\">\n</td></tr>\n<tr>\n<td>&lt;dark_green&gt;\n</td>\n<td style=\"background-color:#00AA00\">\n</td></tr>\n<tr>\n<td>&lt;dark_purple&gt;\n</td>\n<td style=\"background-color:#AA00AA\">\n</td></tr>\n<tr>\n<td>&lt;dark_red&gt;\n</td>\n<td style=\"background-color:#AA0000\">\n</td></tr>\n<tr>\n<td>&lt;gold&gt;\n</td>\n<td style=\"background-color:#FFAA00\">\n</td></tr>\n<tr>\n<td>&lt;gray&gt;\n</td>\n<td style=\"background-color:#AAAAAA\">\n</td></tr>\n<tr>\n<td>&lt;green&gt;\n</td>\n<td style=\"background-color:#55FF55\">\n</td></tr>\n<tr>\n<td>&lt;light_purple&gt;\n</td>\n<td style=\"background-color:#FF55FF\">\n</td></tr>\n<tr>\n<td>&lt;red&gt;\n</td>\n<td style=\"background-color:#FF5555\">\n</td></tr>\n<tr>\n<td>&lt;white&gt;\n</td>\n<td style=\"background-color:white\">\n</td></tr>\n<tr>\n<td>&lt;yellow&gt;\n</td>\n<td style=\"background-color:#FFFF55\">\n</td></tr></tbody></table></s><s><div class=\"mw-heading mw-heading3\"><h3 id=\"Special_Characters\">Special Characters</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Replaceable_Tags&amp;action=edit&amp;section=9\" title=\"Edit section: Special Characters\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><table class=\"wikitable\" width=\"25%\" border=\"1\">\n\n<tbody><tr>\n<td width=\"60%\">&lt;&amp;nl&gt;\n</td>\n<td>NewLine\n</td></tr>\n<tr>\n<td>&lt;&amp;cm&gt;\n</td>\n<td>,\n</td></tr>\n<tr>\n<td>&lt;&amp;ss&gt;\n</td>\n<td>§\n</td></tr>\n<tr>\n<td>&lt;&amp;sq&gt;\n</td>\n<td>'\n</td></tr>\n<tr>\n<td>&lt;&amp;dq&gt;\n</td>\n<td>\"\n</td></tr>\n<tr>\n<td>&lt;&amp;co&gt;\n</td>\n<td>:\n</td></tr>\n<tr>\n<td>&lt;&amp;rb&gt;\n</td>\n<td>]\n</td></tr>\n<tr>\n<td>&lt;&amp;lb&gt;\n</td>\n<td>[\n</td></tr>\n<tr>\n<td>&lt;&amp;rc&gt;\n</td>\n<td>}\n</td></tr>\n<tr>\n<td>&lt;&amp;lc&gt;\n</td>\n<td>{\n</td></tr>\n<tr>\n<td>&lt;&amp;ns&gt;\n</td>\n<td>#\n</td></tr>\n</tbody></table></s><s><div class=\"mw-heading mw-heading2\"><h2 id=\"Pssst...\">Pssst...</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Replaceable_Tags&amp;action=edit&amp;section=10\" title=\"Edit section: Pssst...\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s></s><p><s><a rel=\"nofollow\" class=\"external free\" href=\"http://pastebin.com/KBADLinZ\">http://pastebin.com/KBADLinZ</a><br />\nHere is a summary of them&#160;:)<br />\n-Jeebs</s>\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145837\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.058 seconds\nReal time usage: 0.078 seconds\nPreprocessor visited node count: 52/1000000\nRevision size: 12156/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 170/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    7.215      1 -total\n 92.59%    6.680      3 Template:Denizen_Replaceable\n-->\n\n<!-- Render ID 90025ae4-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Flags",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Denizen/Replaceable_Tags",
+        "byteoffset": 791,
+        "anchor": "Flags",
+        "linkAnchor": "Flags"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Location",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Denizen/Replaceable_Tags",
+        "byteoffset": 1503,
+        "anchor": "Location",
+        "linkAnchor": "Location"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "NPC",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "Denizen/Replaceable_Tags",
+        "byteoffset": 2477,
+        "anchor": "NPC",
+        "linkAnchor": "NPC"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Player",
+        "number": "4",
+        "index": "4",
+        "fromtitle": "Denizen/Replaceable_Tags",
+        "byteoffset": 3628,
+        "anchor": "Player",
+        "linkAnchor": "Player"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Util",
+        "number": "5",
+        "index": "5",
+        "fromtitle": "Denizen/Replaceable_Tags",
+        "byteoffset": 9855,
+        "anchor": "Util",
+        "linkAnchor": "Util"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Math Tags",
+        "number": "6",
+        "index": "6",
+        "fromtitle": "Denizen/Replaceable_Tags",
+        "byteoffset": 10234,
+        "anchor": "Math_Tags",
+        "linkAnchor": "Math_Tags"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Text",
+        "number": "7",
+        "index": "7",
+        "fromtitle": "Denizen/Replaceable_Tags",
+        "byteoffset": 10756,
+        "anchor": "Text",
+        "linkAnchor": "Text"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Colors",
+        "number": "7.1",
+        "index": "8",
+        "fromtitle": "Denizen/Replaceable_Tags",
+        "byteoffset": 10766,
+        "anchor": "Colors",
+        "linkAnchor": "Colors"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Special Characters",
+        "number": "7.2",
+        "index": "9",
+        "fromtitle": "Denizen/Replaceable_Tags",
+        "byteoffset": 11726,
+        "anchor": "Special_Characters",
+        "linkAnchor": "Special_Characters"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Pssst...",
+        "number": "8",
+        "index": "10",
+        "fromtitle": "Denizen/Replaceable_Tags",
+        "byteoffset": 12066,
+        "anchor": "Pssst...",
+        "linkAnchor": "Pssst..."
+      }
+    ],
+    "showtoc": ""
+  }
+}

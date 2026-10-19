@@ -1,0 +1,55 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "DtlTraders/permissions",
+    "pageid": 238,
+    "revid": 4942,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>Permissions reference for dtlTraders v3\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Basic\">Basic</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/permissions&amp;action=edit&amp;section=1\" title=\"Edit section: Basic\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Soon\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Pattern\">Pattern</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/permissions&amp;action=edit&amp;section=2\" title=\"Edit section: Pattern\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Soon\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Planned\">Planned</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/permissions&amp;action=edit&amp;section=3\" title=\"Edit section: Planned\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Soon\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145851\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.005 seconds\nReal time usage: 0.006 seconds\nPreprocessor visited node count: 9/1000000\nRevision size: 100/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 985a95e3-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Basic",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "DtlTraders/permissions",
+        "byteoffset": 41,
+        "anchor": "Basic",
+        "linkAnchor": "Basic"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Pattern",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "DtlTraders/permissions",
+        "byteoffset": 60,
+        "anchor": "Pattern",
+        "linkAnchor": "Pattern"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Planned",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "DtlTraders/permissions",
+        "byteoffset": 81,
+        "anchor": "Planned",
+        "linkAnchor": "Planned"
+      }
+    ]
+  }
+}

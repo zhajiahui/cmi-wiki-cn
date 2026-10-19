@@ -1,0 +1,234 @@
+[
+  {
+    "file": "wiki/commands.md",
+    "title": "命令",
+    "source_url": "https://worldedit.enginehub.org/en/latest/commands/",
+    "source_file": "sources/wiki/original/commands.md",
+    "source_sha256": "d0f1a61997121941f0925046b430a4459222a05a04623fdea75fb8e51797d2ee",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/config.md",
+    "title": "配置",
+    "source_url": "https://worldedit.enginehub.org/en/latest/config/",
+    "source_file": "sources/wiki/original/config.md",
+    "source_sha256": "093485e68f5fff2f5b47d05e163d53630cb98d82d42baf30dc4004a9bba0871c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq.md",
+    "title": "常见问题",
+    "source_url": "https://worldedit.enginehub.org/en/latest/faq/",
+    "source_file": "sources/wiki/original/faq.md",
+    "source_sha256": "8e3320fa95b3e1715dfdd12157938a6b056d55b8bbde088f78f85112228a9d41",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/index.md",
+    "title": "WorldEdit 文档",
+    "source_url": "https://worldedit.enginehub.org/en/latest/",
+    "source_file": "sources/wiki/original/index.md",
+    "source_sha256": "50cd52b463298240306af95e5302d466ca9516134534bccc0441cbdf0b296b69",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/install.md",
+    "title": "安装",
+    "source_url": "https://worldedit.enginehub.org/en/latest/install/",
+    "source_file": "sources/wiki/original/install.md",
+    "source_sha256": "553108de99eee96fd933c9fb9b4f08bac1d41a35a68fc95675de3ecbfd2ac76b",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/localisation.md",
+    "title": "本地化",
+    "source_url": "https://worldedit.enginehub.org/en/latest/localisation/",
+    "source_file": "sources/wiki/original/localisation.md",
+    "source_sha256": "b9e8f4515cd39b35e585b54123d4eac8d8075a672ab43fc2c26e3f6d9c234f2b",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/permissions.md",
+    "title": "权限",
+    "source_url": "https://worldedit.enginehub.org/en/latest/permissions/",
+    "source_file": "sources/wiki/original/permissions.md",
+    "source_sha256": "c52f31896a9290446c5a58f229624a2fc0188e7163f9c6447d3bb1faa2876974",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/quickstart.md",
+    "title": "快速入门",
+    "source_url": "https://worldedit.enginehub.org/en/latest/quickstart/",
+    "source_file": "sources/wiki/original/quickstart.md",
+    "source_sha256": "de1710a3948103053432c492c0ae4487f8e4cd0c32af75ef3ae7af1cb0e63301",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/source-code.md",
+    "title": "源代码",
+    "source_url": "https://worldedit.enginehub.org/en/latest/source-code/",
+    "source_file": "sources/wiki/original/source-code.md",
+    "source_sha256": "51db942a217fd02907c2d6d6594e6bdb288baa5c5fd92af6d142e6488224dc29",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/support.md",
+    "title": "获取帮助",
+    "source_url": "https://worldedit.enginehub.org/en/latest/support/",
+    "source_file": "sources/wiki/original/support.md",
+    "source_sha256": "7074cf6460cdfd5eaeef43e4f03486ae511c3cf437a3dff6eeccf92ca5ac78aa",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/usage/clipboard.md",
+    "title": "剪贴板",
+    "source_url": "https://worldedit.enginehub.org/en/latest/usage/clipboard/",
+    "source_file": "sources/wiki/original/usage/clipboard.md",
+    "source_sha256": "8e4652977957a2254db3fa1add640ee9101137929cb437cb1a913dc989716f15",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/usage/general/history.md",
+    "title": "操作历史",
+    "source_url": "https://worldedit.enginehub.org/en/latest/usage/general/history/",
+    "source_file": "sources/wiki/original/usage/general/history.md",
+    "source_sha256": "d3964c155914bc98761de39016fdaa044527e20ec9040159c9b08a608d4cd32c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/usage/general/index.md",
+    "title": "常规",
+    "source_url": "https://worldedit.enginehub.org/en/latest/usage/general/",
+    "source_file": "sources/wiki/original/usage/general/index.md",
+    "source_sha256": "0aa38da080d396673303b3a0e68812ae907863299fa1e79c3a1fb2c27d5df809",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/usage/general/masks.md",
+    "title": "蒙版",
+    "source_url": "https://worldedit.enginehub.org/en/latest/usage/general/masks/",
+    "source_file": "sources/wiki/original/usage/general/masks.md",
+    "source_sha256": "75266eb167c5d9cac58cba88ce516e31a03045dd0aa2253767acfadc937b5658",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/usage/general/patterns.md",
+    "title": "方块模式",
+    "source_url": "https://worldedit.enginehub.org/en/latest/usage/general/patterns/",
+    "source_file": "sources/wiki/original/usage/general/patterns.md",
+    "source_sha256": "3dcda907b520a067c423c4e626885770ba85ef840c399d830a32b288fa5e4daf",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/usage/general/sessions.md",
+    "title": "会话",
+    "source_url": "https://worldedit.enginehub.org/en/latest/usage/general/sessions/",
+    "source_file": "sources/wiki/original/usage/general/sessions.md",
+    "source_sha256": "ed914a1d29bf6c449e1e9ff3aba6f6f9057e4245d8a9d6d56092fdd394e306fa",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/usage/generation.md",
+    "title": "生成",
+    "source_url": "https://worldedit.enginehub.org/en/latest/usage/generation/",
+    "source_file": "sources/wiki/original/usage/generation.md",
+    "source_sha256": "9a0bd897015fceca9a3819dd0f57432ffd5daa651a736a063519b72256541b08",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/usage/index.md",
+    "title": "用法",
+    "source_url": "https://worldedit.enginehub.org/en/latest/usage/",
+    "source_file": "sources/wiki/original/usage/index.md",
+    "source_sha256": "6bc7efacdc9ce551bb0eed975d35331b207e88c36b49b354f21c2bdfe70d0ff0",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/usage/navigation.md",
+    "title": "移动",
+    "source_url": "https://worldedit.enginehub.org/en/latest/usage/navigation/",
+    "source_file": "sources/wiki/original/usage/navigation.md",
+    "source_sha256": "8b0260adaf7601508d218717fb652441e4be596b57d9ae0e572e1b1386679f6e",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/usage/other/craftscripts.md",
+    "title": "CraftScripts",
+    "source_url": "https://worldedit.enginehub.org/en/latest/usage/other/craftscripts/",
+    "source_file": "sources/wiki/original/usage/other/craftscripts.md",
+    "source_sha256": "4341def2962ca087e499134dc4cc5232eb5928a157b2c8fdacae6f3cb3731b23",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/usage/other/expressions.md",
+    "title": "表达式语法",
+    "source_url": "https://worldedit.enginehub.org/en/latest/usage/other/expressions/",
+    "source_file": "sources/wiki/original/usage/other/expressions.md",
+    "source_sha256": "3f709c19fb31e6c30bef5dcd3492072c8c0a0a27b2794651f3fec0a076ea36ae",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/usage/other/index.md",
+    "title": "其他",
+    "source_url": "https://worldedit.enginehub.org/en/latest/usage/other/",
+    "source_file": "sources/wiki/original/usage/other/index.md",
+    "source_sha256": "78ef748b6701a827504197b349c5b404b88f98365cc7bc9e8829a8c1d9a0d21f",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/usage/regions/index.md",
+    "title": "选区",
+    "source_url": "https://worldedit.enginehub.org/en/latest/usage/regions/",
+    "source_file": "sources/wiki/original/usage/regions/index.md",
+    "source_sha256": "67443f4faf76b826ba840703bbb96e9bd37e3b785581d67c88277d5813e70651",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/usage/regions/regionops.md",
+    "title": "选区操作",
+    "source_url": "https://worldedit.enginehub.org/en/latest/usage/regions/regionops/",
+    "source_file": "sources/wiki/original/usage/regions/regionops.md",
+    "source_sha256": "8c31ee45cd95ed665b273bf1ed8e5a49e805462ea3a499b8e42b0c3708153a66",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/usage/regions/selections.md",
+    "title": "选区",
+    "source_url": "https://worldedit.enginehub.org/en/latest/usage/regions/selections/",
+    "source_file": "sources/wiki/original/usage/regions/selections.md",
+    "source_sha256": "5a6bd9a9b7f3e4e4c2ee58e83481045de507984ed581ba9eed01360798dd0bce",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/usage/snapshots.md",
+    "title": "备份快照",
+    "source_url": "https://worldedit.enginehub.org/en/latest/usage/snapshots/",
+    "source_file": "sources/wiki/original/usage/snapshots.md",
+    "source_sha256": "bae9dcb9043b132e6c3ccd5ca4d998000134b29d74342bb9696316d3dd108d54",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/usage/tools/brushes.md",
+    "title": "笔刷",
+    "source_url": "https://worldedit.enginehub.org/en/latest/usage/tools/brushes/",
+    "source_file": "sources/wiki/original/usage/tools/brushes.md",
+    "source_sha256": "d3aafe67aeb6c432534a5878880437eefa8d067edaf7d673d7260ddb9fcccbe8",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/usage/tools/tools.md",
+    "title": "工具",
+    "source_url": "https://worldedit.enginehub.org/en/latest/usage/tools/tools/",
+    "source_file": "sources/wiki/original/usage/tools/tools.md",
+    "source_sha256": "04ddd987429b2f577cba3b42a9527bb46644289853e8f2fa303cb8da51428b90",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/usage/utilities.md",
+    "title": "实用工具",
+    "source_url": "https://worldedit.enginehub.org/en/latest/usage/utilities/",
+    "source_file": "sources/wiki/original/usage/utilities.md",
+    "source_sha256": "1ffcb73e511d1975bd9026d2ef01ee5044ff2b089a070a57c2b5233e46c96a0f",
+    "translation_review": "reviewed"
+  }
+]

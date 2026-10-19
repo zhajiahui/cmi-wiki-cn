@@ -1,6 +1,29 @@
 site_name: Multiverse-Core 中文资料
 nav:
 - 插件说明: index.md
+- 插件 Wiki:
+  - Multiverse-Core 官方 Wiki: wiki/core.md
+  - 基础用法: wiki/core-fundamentals-basic-usage.md
+  - 命令用法: wiki/core-fundamentals-commands-usage.md
+  - 安装: wiki/core-fundamentals-installation.md
+  - 权限设置: wiki/core-fundamentals-permissions-setup.md
+  - 世界属性: wiki/core-fundamentals-world-properties.md
+  - 自定义语言消息: wiki/core-how-to-customise-locales.md
+  - 自定义世界创建: wiki/core-how-to-customise-world-creation.md
+  - 传送锚点: wiki/core-how-to-manage-anchors.md
+  - 世界入场费: wiki/core-how-to-setup-entry-fee.md
+  - 世界元数据: wiki/core-how-to-world-meta.md
+  - 配置文件: wiki/core-reference-configuration-file.md
+  - 自定义生成器插件: wiki/core-reference-custom-generator-plugins.md
+  - 传送目的地: wiki/core-reference-destinations.md
+  - 常见问题: wiki/core-reference-faq.md
+  - Multiverse-Core 权限清单: wiki/core-reference-permissions-list.md
+  - 占位符: wiki/core-reference-placeholders.md
+  - 你好，MV5！: wiki/mv5.md
+  - MV5 命令变化: wiki/mv5-welcome-command-changes.md
+  - 不兼容的插件: wiki/mv5-welcome-incompatible-plugins.md
+  - MV5 升级指南: wiki/mv5-welcome-upgrading.md
+  - Multiverse-Core 更新日志: wiki/mv5-whats-new-multiverse-core.md
 - 配置文件（5.8.1）:
   - 配置索引: configuration/index.md
   - anchors.yml: configuration/anchors.md

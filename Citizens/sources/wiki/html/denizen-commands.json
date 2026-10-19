@@ -1,0 +1,515 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Denizen/Commands",
+    "pageid": 307,
+    "revid": 5375,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://meta.denizenscript.com/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br /><br /><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#List_of_commands\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">List of commands</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-2\"><a href=\"#Entity\"><span class=\"tocnumber\">1.1</span> <span class=\"toctext\">Entity</span></a>\n<ul>\n<li class=\"toclevel-3\"><a href=\"#cast\"><span class=\"tocnumber\">1.1.1</span> <span class=\"toctext\">cast</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Item\"><span class=\"tocnumber\">1.2</span> <span class=\"toctext\">Item</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#NPC\"><span class=\"tocnumber\">1.3</span> <span class=\"toctext\">NPC</span></a>\n<ul>\n<li class=\"toclevel-3\"><a href=\"#assignment\"><span class=\"tocnumber\">1.3.1</span> <span class=\"toctext\">assignment</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#attack\"><span class=\"tocnumber\">1.3.2</span> <span class=\"toctext\">attack</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#chat\"><span class=\"tocnumber\">1.3.3</span> <span class=\"toctext\">chat</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#follow\"><span class=\"tocnumber\">1.3.4</span> <span class=\"toctext\">follow</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#look\"><span class=\"tocnumber\">1.3.5</span> <span class=\"toctext\">look</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#shoot\"><span class=\"tocnumber\">1.3.6</span> <span class=\"toctext\">shoot</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#sit\"><span class=\"tocnumber\">1.3.7</span> <span class=\"toctext\">sit</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#trigger\"><span class=\"tocnumber\">1.3.8</span> <span class=\"toctext\">trigger</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#Player\"><span class=\"tocnumber\">1.4</span> <span class=\"toctext\">Player</span></a>\n<ul>\n<li class=\"toclevel-3\"><a href=\"#feed\"><span class=\"tocnumber\">1.4.1</span> <span class=\"toctext\">feed</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#heal\"><span class=\"tocnumber\">1.4.2</span> <span class=\"toctext\">heal</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#narrate\"><span class=\"tocnumber\">1.4.3</span> <span class=\"toctext\">narrate</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-2 tocsection-6\"><a href=\"#Script_flow\"><span class=\"tocnumber\">1.5</span> <span class=\"toctext\">Script flow</span></a>\n<ul>\n<li class=\"toclevel-3\"><a href=\"#anchor\"><span class=\"tocnumber\">1.5.1</span> <span class=\"toctext\">anchor</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#queue\"><span class=\"tocnumber\">1.5.2</span> <span class=\"toctext\">queue</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#cooldown\"><span class=\"tocnumber\">1.5.3</span> <span class=\"toctext\">cooldown</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#define\"><span class=\"tocnumber\">1.5.4</span> <span class=\"toctext\">define</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#determine\"><span class=\"tocnumber\">1.5.5</span> <span class=\"toctext\">determine</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#disengage\"><span class=\"tocnumber\">1.5.6</span> <span class=\"toctext\">disengage</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#engage\"><span class=\"tocnumber\">1.5.7</span> <span class=\"toctext\">engage</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#fail\"><span class=\"tocnumber\">1.5.8</span> <span class=\"toctext\">fail</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#finish\"><span class=\"tocnumber\">1.5.9</span> <span class=\"toctext\">finish</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#flag\"><span class=\"tocnumber\">1.5.10</span> <span class=\"toctext\">flag</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#if\"><span class=\"tocnumber\">1.5.11</span> <span class=\"toctext\">if</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#log\"><span class=\"tocnumber\">1.5.12</span> <span class=\"toctext\">log</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#random\"><span class=\"tocnumber\">1.5.13</span> <span class=\"toctext\">random</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-2 tocsection-7\"><a href=\"#Server\"><span class=\"tocnumber\">1.6</span> <span class=\"toctext\">Server</span></a>\n<ul>\n<li class=\"toclevel-3\"><a href=\"#announce\"><span class=\"tocnumber\">1.6.1</span> <span class=\"toctext\">announce</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#chunkload\"><span class=\"tocnumber\">1.6.2</span> <span class=\"toctext\">chunkload</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#execute\"><span class=\"tocnumber\">1.6.3</span> <span class=\"toctext\">execute</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-2 tocsection-8\"><a href=\"#World\"><span class=\"tocnumber\">1.7</span> <span class=\"toctext\">World</span></a>\n<ul>\n<li class=\"toclevel-3\"><a href=\"#animatechest\"><span class=\"tocnumber\">1.7.1</span> <span class=\"toctext\">animatechest</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#copyblock\"><span class=\"tocnumber\">1.7.2</span> <span class=\"toctext\">copyblock</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#displayitem\"><span class=\"tocnumber\">1.7.3</span> <span class=\"toctext\">displayitem</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#drop\"><span class=\"tocnumber\">1.7.4</span> <span class=\"toctext\">drop</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#strike\"><span class=\"tocnumber\">1.7.5</span> <span class=\"toctext\">strike</span></a></li>\n<li class=\"toclevel-3\"><a href=\"#switch\"><span class=\"tocnumber\">1.7.6</span> <span class=\"toctext\">switch</span></a></li>\n</ul>\n</li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-9\"><a href=\"#Creating_your_own_Denizen_command\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Creating your own Denizen command</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"List_of_commands\">List of commands</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Commands&amp;action=edit&amp;section=1\" title=\"Edit section: List of commands\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<s><big><div style=\"color:red\">Denizen is continuously being updated. This page shows only basic script commands (We will try to update the page when something changes)!</div></big></s><s><div class=\"mw-heading mw-heading3\"><h3 id=\"Entity\">Entity</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Commands&amp;action=edit&amp;section=2\" title=\"Edit section: Entity\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><p><span id=\"cast\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"cast\">cast</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: cast\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">cast\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">[effect] (duration:#{60s}) (power:#{1}) (target(s):npc|player|n@&lt;npc.id&gt;|p@&lt;player.name&gt;|entity_name)\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Gives a potion effect to a target, which can be a player, an NPC or another entity. All valid potion effect names are found <a rel=\"nofollow\" class=\"external text\" href=\"http://jd.bukkit.org/rb/apidocs/org/bukkit/potion/PotionEffectType.html\">here</a>.\n<p>If you do not choose a target, the potion effect is given to the player talking to this NPC. You can use more targets at once by putting them between | characters.\n</p><p>You can choose the effect's duration, which is 60 seconds by default, and its power, which is 1 by default. Often, a power of 3 is the most you can have for a potion effect, and a value greater than that will not do anything.\n</p><p><br />\n<b>Examples</b>\n</p>\n<pre>- cast blindness power:3 duration:7\n</pre>\n<p>In the above example, the player talking to this NPC will be blinded strongly for 7 seconds.\n</p>\n<pre>- cast regeneration power:1 duration:10 target:p@&lt;npc.owner&gt;\n</pre>\n<p>In this example, the NPC will give a weak regeneration effect to its owner for 10 seconds.\n</p><p><br /> \n</p>\n</td></tr></tbody></table></s><s><div class=\"mw-heading mw-heading3\"><h3 id=\"Item\">Item</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Commands&amp;action=edit&amp;section=3\" title=\"Edit section: Item\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><div class=\"mw-heading mw-heading3\"><h3 id=\"NPC\">NPC</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Commands&amp;action=edit&amp;section=4\" title=\"Edit section: NPC\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><p><span id=\"assignment\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"assignment\">assignment</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: assignment\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">assignment\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">[{set}|remove] (script:name)\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Sets or removes an assignment for the NPC. If set or remove aren't specified, it will set by default.\n<p><br />\n<b>Examples</b>\n</p>\n<pre>- assignment set \"script:Evil Wizard\"\n- assignment remove\n- assignment \"script:Pet Cat\"\n</pre>\n</td></tr></tbody></table></s><s><p><br />\n<span id=\"attack\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"attack\">attack</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: attack\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">attack\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">(stop)\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Makes the NPC attack or stop attacking the player.\n<p><br />\n<b>Examples</b>\n</p>\n<pre>- attack\n- attack stop\n</pre>\n</td></tr></tbody></table></s><s><p><br />\n</p><p><span id=\"chat\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"chat\">chat</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: chat\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">chat\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">[\"&lt;text&gt;\"] (no_target/targets:&lt;entity&gt;|...)\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Sends a message from this NPC to the player.\n<p>If a different NPC's ID is chosen in the npcid argument, the message is sent from that NPC. The message can also be sent to a different player or even to another NPC if you use the target argument.\n</p><p><br />\n<b>Examples</b>\n</p>\n<pre>- chat \"It's nice to see you again, &lt;player.name&gt;.\"\n- chat \"I would like to introduce you to &lt;player.name&gt;.\" target:n@7\n- chat \"Bob, do you know &lt;player.name&gt;?\" target:p@Bob\n- chat npcid:9 \"Our enemy is giving orders to his companion.\" target:p@Bob\n</pre>\n</td></tr></tbody></table></s><s><p><br />\n<span id=\"follow\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"follow\">follow</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: follow\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">follow\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">(stop)\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Makes the NPC follow or stop following the player.\n<p><br />\n<b>Examples</b>\n</p>\n<pre>- follow\n- follow stop\n</pre>\n</td></tr></tbody></table></s><s><p><br />\n<span id=\"look\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"look\">look</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: look\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">look\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">[location:x,y,z,world]\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Makes the NPC look towards a certain location.\n<p><br />\n<b>Examples</b>\n</p>\n<pre>- look location:300,60,500,world\n- look location:&lt;player.location&gt;\n- look location:&lt;anchor:Lever&gt;\n</pre>\n</td></tr></tbody></table></s><s><p><br />\n<span id=\"shoot\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"shoot\">shoot</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: shoot\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">shoot\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">[entity:name] (ride) (burn) (explode) (location:x,y,z,world) (script:name)\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Makes the NPC shoot out an entity. All valid entity names are found <a rel=\"nofollow\" class=\"external text\" href=\"http://jd.bukkit.org/rb/apidocs/org/bukkit/entity/EntityType.html\">here</a>.\n<p>Entities can be shot towards a location. If no location is specified, they will be shot in the direction the NPC is looking. You can also choose a script that will be run when the entity reaches the location.\n</p><p>Moreover, you can use the ride argument to ride an entity, the burn one to set it on fire, and the explode one to have it explode once it reaches the location or gets stuck.\n</p><p><b>Examples</b>\n</p>\n<pre>- shoot entity:zombie\n- shoot entity:arrow location:&lt;player.location&gt;\n- shoot entity:fireball location:&lt;player.location&gt; \"script:Shoot Another Fireball\"\n- shoot entity:minecart ride location:&lt;anchor:Rollercoaster&gt;\n- shoot entity:cow ride burn explode location:&lt;anchor:Hill&gt; \"script:Bovine Destruction\"\n</pre>\n</td></tr></tbody></table></s><s><p><span id=\"sit\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"sit\">sit</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: sit\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">sit\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">(sit|stand) (location:x,y,z,world)\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Makes the NPC sit or stand at a location.\n<p><br />\n<b>Examples</b>\n</p>\n<pre>- sit location:300,65,300,world\n- sit location:&lt;anchor:Chair&gt;\n- stand\n</pre>\n</td></tr></tbody></table></s><s><p><br />\n</p><p><span id=\"trigger\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"trigger\">trigger</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: trigger\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">trigger\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">[name:chat/click/damage/proximity] (state:true/false) (cooldown:&lt;#.#&gt;) (radius:&lt;#&gt;)\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Enables or disables an interact trigger.\n<p>Use this command to enable or disable an interact trigger, usually in the <a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/Denizen/Types_of_Scripts#Assignment_Script\">assignment script</a>.\n</p><p><b>Examples</b>\n</p>\n<pre>- trigger name:chat state:true\n- trigger name:proximity statue:true radius:10\n</pre>\n</td></tr></tbody></table></s><s><div class=\"mw-heading mw-heading3\"><h3 id=\"Player\">Player</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Commands&amp;action=edit&amp;section=5\" title=\"Edit section: Player\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><p><span id=\"feed\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"feed\">feed</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: feed\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">feed\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">(amt:#) (target:npc|{player})\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Fills the player's food bar, or this NPC's food bar if the NPC is specified as the target. An amount can also be set by which the player or NPC will be fed. A completely full food bar has an amount of 20. Thus, an amount of 1 is half a shank in the food bar.\n<p><br />\n<b>Examples</b>\n</p>\n<pre>- feed\n- feed amt:15 target:npc\n</pre>\n</td></tr></tbody></table></s><s><p><br />\n<span id=\"heal\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"heal\">heal</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: heal\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">heal\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">(amt:#) (target:npc|{player})\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Fills the player's health bar, or this NPC's health bar if the NPC is specified as the target. An amount can also be set by which the player or NPC will be healed. A completely full health bar has an amount of 20. Thus, an amount of 1 is half a heart in the health bar.\n<p><br />\n<b>Examples</b>\n</p>\n<pre>- heal\n- heal amt:7 target:npc\n</pre>\n</td></tr></tbody></table></s><s><p><br />\n<span id=\"narrate\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"narrate\">narrate</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: narrate\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">narrate\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">[\"narration text\"] (player:name)\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Sends a message to this player, or to another player if one is specified.\n<p><br />\n<b>Examples</b>\n</p>\n<pre>- narrate \"A musty odor hangs in the air and you can hear the distant sound of trickling sewer water.\"\n- narrate player:Bob \"&lt;player.name&gt; has been hired to track you down!\"\n</pre>\n</td></tr></tbody></table></s><s><p><br />\n</p></s><s><div class=\"mw-heading mw-heading3\"><h3 id=\"Script_flow\">Script flow</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Commands&amp;action=edit&amp;section=6\" title=\"Edit section: Script flow\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><p><span id=\"anchor\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"anchor\">anchor</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: anchor\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">anchor\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">[id:name] [assume|add|remove|walkto|walknear] (range:#)\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Assumes, Adds, Removes and orders an NPC to walkto or to walknear an anchor that has been specified using the Citizens 2 npc command\n<p>\"/npc anchor\" Allows for dynamic specified pathing based on predefined points. Allows for a specified range in which the NPC in question \ncan walk to an anchor point.\n</p><p><br />\n<b>Examples</b>\n</p>\n<pre>A command having an NPC assume an Anchor:\n- anchor id:postoffice assume range:20\n-------------------------------------\nTwo commands demonstrating how one may add an anchor based on the NPC's location:\n- Chat \"Wow &lt;player.name&gt;, Now that I've walked to this location I am going to create an anchor point at this location so \n  I can walk back here later.\"\n- anchor id:example_anchor add\n-------------------------------------\nTwo commands demonstrating how one may remove a specified anchor via an NPC\"\n- chat \"You know &lt;player.name&gt;, I actually don't think I'll ever need to return here again, I will delete this anchor point\"\n- anchor id:example_anchor remove\n-------------------------------------\nAn example of a command for an NPC to walk towards a specified anchor point. Walkto has the NPC walk directly to the point; \nwhereas Walknear has the npc be less precise when walking to the point:\n- anchor id:Treasure_Chest walkto range:30\n- anchor id:Wheat_Fields walknear\n</pre>\n</td></tr></tbody></table></s><s><p><br />\n<span id=\"queue\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"queue\">queue</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: queue\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">queue\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">(queue:&lt;id&gt;) [clear/pause/resume/delay:&lt;#&gt;]\n<p><b>WARNING THIS COMMAND IS DEPRECATED, ALL SCRIPTWRITERS SHOULD NOW USE THE QUEUE COMMAND</b>\n</p>\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Empties a queue of all the commands in it that haven't been executed. If no queue name is specified, the current queue is emptied. You can also use the queue argument more than once to specify more queues to empty.\n<p>Use this command to stop a script from another script or a script from an action.\n</p><p><b>Examples</b>\n</p>\n<pre>- queue queue:magicalattacks clear\n</pre>\n</td></tr></tbody></table></s><s><p><br />\n</p><p><span id=\"cooldown\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"cooldown\">cooldown</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: cooldown\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">cooldown\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">(duration:#{60s}) (global|player:name{attached player}) (script:name)\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Makes this script not get executed again by this player for a duration of time, which is 60 seconds by default.\n<p>You can also make the script not get executed for another player, or make it unavailable globally, and you can also choose another script instead of this one.\n</p><p><br />\n<b>Examples</b>\n</p>\n<pre>- cooldown\n- cooldown duration:30s player:Bob \"script:Offer Quest\"\n</pre>\n</td></tr></tbody></table></s><s><p><span id=\"define\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"define\">define</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: define\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">define\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">[&lt;id&gt;] [&lt;value&gt;]\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Similar to a flag, this command sets a global variable to any value that can later be called back anywhere by using %id%.\n<p><br />\n<b>Examples</b>\n</p>\n<pre>- define \"lastplayer\" \"&lt;player.name&gt;\"\n- define \"player_&lt;player.name&gt;'s_home\" \"&lt;player.location&gt;\"\n- announce \"%lastplayer% set their home at %player_&lt;player.name&gt;'s_home%! Go raid it!\"\n</pre>\n</td></tr></tbody></table></s><s><p><span id=\"determine\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"determine\">determine</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: determine\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">determine\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">[\"value\"]\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">This command only works together with the <a href=\"/Denizen/Replaceable_Tags#procedure\" title=\"Denizen/Replaceable Tags\">procedure</a> replaceable tag. It is put in the procedure script run by the tag and sets the tag's value to anything you choose. It is generally used as the result of an <a href=\"#if\">if</a> command or together with the <a href=\"#random\">random</a> command.\n<p><br />\n<b>Examples</b>\n</p>\n<pre>- if &lt;player.name&gt; == \"Bob\" determine \"Bobby\"\n- if &lt;flag.p:Enemy&gt; == \"Galerion\" determine \"the fearsome Galerion\"\n  else if &lt;flag.p:Enemy&gt; == \"Narkon\" determine \"the evil Narkon\"\n</pre>\n</td></tr></tbody></table></s><s><p><br />\n<span id=\"disengage\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"disengage\">disengage</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: disengage\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">disengage\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">(npcid:#)\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Stops an <a href=\"#engage\">engage</a> command used formerly on this NPC. If the npcid is specified, a different NPC can be disengaged.\n<p><br />\n<b>Examples</b>\n</p>\n<pre>- disengage\n- disengage npcid:8\n</pre>\n</td></tr></tbody></table></s><s><p><br />\n<span id=\"engage\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"engage\">engage</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: engage\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">engage\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">(duration:#) (npcid:#)\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Temporarily deactivates this NPC's triggers, making it impossible for players to interact with it for the chosen duration or until the <a href=\"#disengage\">disengage</a> command is used on it. If the npcid is specified, a different NPC can be engaged.\n<p><br />\n<b>Examples</b>\n</p>\n<pre>- engage\n- engage duration:40s npcid:7\n</pre>\n</td></tr></tbody></table></s><s><p><span id=\"fail\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"fail\">fail</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: fail\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">fail\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">(script:script_name{attached script}) (player:name)\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Adds 1 to the number of times this script or another script has been failed by this player, or by another player if one is specified. You can then check the times a script has been failed using the <a href=\"/index.php?title=Denizen/Script_Requirements&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Denizen/Script Requirements (page does not exist)\">script</a> requirement.\n<p><br />\n<b>Examples</b>\n</p>\n<pre>- fail\n- fail \"script:Defend the Castle\" player:Bob\n</pre>\n</td></tr></tbody></table></s><s><p><br />\n</p><p><span id=\"finish\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"finish\">finish</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: finish\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">finish\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">(script:script_name{attached script}\") (player:name)\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Adds 1 to the number of times this script or another script has been finished by this player, or by another player if one is specified. You can then check the times a script has been finished using the <a href=\"/index.php?title=Denizen/Script_Requirements&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Denizen/Script Requirements (page does not exist)\">script</a> requirement.\n<p><br />\n<b>Examples</b>\n</p>\n<pre>- finish\n- finish \"script:Siege the Castle\" player:Bob\n</pre>\n</td></tr></tbody></table></s><s><p><br />\n<span id=\"flag\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"flag\">flag</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: flag\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">flag\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">({player}|npc|global) [name([#])](:action)[:value] (duration:#)\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Sets the value of a flag, a variable that can be checked elsewhere in this script and in other scripts by using <a href=\"/Denizen/Replaceable_Tags#Flags\" title=\"Denizen/Replaceable Tags\">flag replaceable tags</a> or the <a href=\"/index.php?title=Denizen/Script_Requirements&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Denizen/Script Requirements (page does not exist)\">flagged requirement</a>.\n<p>A flag can be placed on the player, the NPC or globally. Flags placed on a player only apply to that player, and flags placed on an NPC only apply to that individual NPC based on its ID, so NPCs with the same name have different flags because they have different IDs. However, a global flag applies to the entire server and can easily be read from any script.\n</p><p>If a flag's type (player, npc or global) is not specified, the flag is placed on the player by default, and if a value for the flag is not specified, the value is \"true\" by default.\n</p><p>For more info, <a href=\"/Denizen/Commands/Flag\" title=\"Denizen/Commands/Flag\">click here</a>.\n</p><p><b>Examples</b>\n</p>\n<pre>- flag \"Finished Baker's Quest\"\n- flag global \"Skeleton Invasion Ended\"\n</pre>\n</td></tr></tbody></table></s><s><p><span id=\"if\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"if\">if</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: if\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">if\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">[&lt;value&gt;] (!)(&lt;operator&gt; &lt;value&gt;) (&amp;&amp;/|| ...) [&lt;commands&gt;] (else &lt;commands&gt;)\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Compares one value to another and if the outcome is true, the commands inside the 'if' statement will be run and no more comparables will be checked. If it is false, the next 'else if', if there is one, will be compared, and if that is true, the commands in that 'else if' will be run and no more comparables will be checked. This will continue happening until the script either runs out of comparables or reaches an 'else', in which case the commands inside the 'else' will be run and the script will continue.\n<p>For more info, <a href=\"/index.php?title=Denizen/Commands/If&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Denizen/Commands/If (page does not exist)\">click here</a>.\n</p><p><b>Examples</b>\n</p>\n<pre>- if \"&lt;player.inventory.contains[1]&gt; announce \"Hahaha! &lt;player.name&gt; has no stone!\"\n- if &lt;player.name&gt; == \"davidcernat\" execute as_server \"ban &lt;player.name&gt;\"\n- if &lt;context.message.contains[Bob]&gt; announce \"&lt;player.name&gt; said Bob! Smite them!\"\n  else if &lt;player.name.contains[Bob]&gt; announce \"&lt;player.name&gt;'s name contains Bob! Smite them!\"\n  else {\n    - announce \"No mention of Bob can be found. Proceeding with life...\"\n    - run Life delay:0s\n  }\n</pre>\n</td></tr></tbody></table></s><s><p><span id=\"log\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"log\">log</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: log\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">log\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">[&lt;text&gt;] (type:severe/info/warning/fine/finer/finest) [file:&lt;name&gt;]\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Logs whatever text you want into a file inside the main server folder. If the file doesn't exist, it will create it.\n<p><br />\n<b>Examples</b>\n</p>\n<pre>- log \"Something happened!\" \"file:Denizen.log\"\n- log \"Bob punched Joe!\" \"file:logs/DenizenLog.txt\"\n</pre>\n</td></tr></tbody></table></s><s><p><br />\n<span id=\"random\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"random\">random</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: random\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">random\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">[#]\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Runs a single one out of a number of commands, chosen at random.\n<p><br />\n<b>Examples</b>\n</p>\n<pre>- random 3\n- chat \"One.\"\n- chat \"Two.\"\n- chat \"Three.\"\n</pre>\n<p>In the above example, only one of the three chat commands will be run.\n</p>\n<pre>- random 2\n- chat \"One.\"\n- chat \"Two.\"\n- chat \"Three.\"\n</pre>\n<p>In this example, either \"One\" or \"Two\" will be displayed, but \"Three\" will always be displayed.\n</p>\n<pre>- random 3\n- attack\n- chat \"Get out of here!\"\n- runtask \"script:Call Reinforcements\"\n</pre>\n<p>Here, the NPC will either attack the player, tell the player to leave, or run a script in which it calls for reinforcements.\n</p>\n</td></tr></tbody></table></s><s><p><br />\n</p></s><s><div class=\"mw-heading mw-heading3\"><h3 id=\"Server\">Server</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Commands&amp;action=edit&amp;section=7\" title=\"Edit section: Server\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><p><span id=\"announce\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"announce\">announce</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: announce\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">announce\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">[\"announcement text\"] (to_ops)\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Sends a message to every player on the server. If the to_ops argument is used, the message is sent only to operators.\n<p><br />\n<b>Examples</b>\n</p>\n<pre>- announce \"The skeleton invasion has ended.\"\n- announce \"&lt;player.name&gt; has joined the blue team!\"\n- announce to_ops \"&lt;player.name&gt; is requesting help from operators.\"\n</pre>\n</td></tr></tbody></table></s><s><p><span id=\"chunkload\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"chunkload\">chunkload</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: chunkload\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">chunkload\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">({add}|remove|removeall) [location:x,y,z,world] (duration:{-1s})\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Loads the chunk of the location as specified into the server memory so that it does not despawn. NPCs do not stay spawned if a chunk\n<p>despawns. As such this command is useful for ensuring a NPC spawn and do what it ought to regardless if a player is around to keep\nthe chunk that that NPC is in, spawned. This command allows for adding of a chunk to memory by specifying a block location within a chunk, removing a chunk loaded to memory by also specifying a location within the chunk, as well as the ability to remove all chunks\ncurrently loaded into server memory by this command (removeall). Additionally a duration can be set in which a chunk loaded into memory\nwill automatically despawn; the default is set to -1 meaning the chunk will stay loaded until the chunkload command is used again\nto remove it from memory.\n</p><p><b>This does not create nor delete new or already generated chunks of terrain it merely brings it into memory for the server so that</b>\nan NPC may spawn regardless if someone is around<b></b>\n</p><p><b>Examples</b>\n</p>\n<pre>- chunkload add location:1000,64,1000,world duration:-1s\n- chunkload add location:323,4,745,creative_world duration:10m\n- chunkload remove location: 1000,64,1000,world\n- chunkload removeall\n</pre>\n</td></tr></tbody></table></s><s><p><br />\n<span id=\"execute\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"execute\">execute</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: execute\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">execute\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">[as_player|as_op|as_npc|as_server] [\"Bukkit command\"]\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Executes a Bukkit command on behalf of the player (as_player), the player as an operator (as_op), the NPC as an operator (as_npc), or the server (as_server).\n<p>Any Bukkit command that you can use in the server console or in the chat with a slash works here. You can thus use the execute command to make NPCs that act as interfaces for other plugins.\n</p><p><br />\n<b>Examples</b>\n</p>\n<pre>- execute as_player \"home\"\n- execute as_op \"gamemode 1\"\n- execute as_npc \"spawnmob zombie 3\"\n- execute as_server \"jail &lt;player.name&gt;\"\n</pre>\n</td></tr></tbody></table></s><s><p><br />\n</p></s><s><div class=\"mw-heading mw-heading3\"><h3 id=\"World\">World</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Commands&amp;action=edit&amp;section=8\" title=\"Edit section: World\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><p><span id=\"animatechest\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"animatechest\">animatechest</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: animatechest\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">animatechest\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">[location:x,y,z,world] ({open}|close) (sound:{true}|false)\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Causes a chest located at the specified coordinates to animate as either open or closed; defaults to open if not specified. Allows for the animated chest to play the \"open chest\" sound (true) or to open silently (false); defaults to true. <b>There must be a chest located at the coordinates, this command does not spawn a chest.</b>\n<p><b>Examples</b>\n</p>\n<pre>- animatechest location:1000,63,1000,world open sound:true\n- animatechest location:100,74,777,world close sound:false\n</pre>\n</td></tr></tbody></table></s><s><p><span id=\"copyblock\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"copyblock\">copyblock</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: copyblock\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">copyblock\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">[location:x,y,z,world] [to:x,y,z,world]\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Simply copies whatever type of block is at one location and essentially pastes it at another defined location.\n<p><b>Examples</b>\n</p>\n<pre>- copyblock location:204,68,12,world to:55,64,100,castle_world\n</pre>\n</td></tr></tbody></table></s><s><p><span id=\"displayitem\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"displayitem\">displayitem</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: displayitem\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">displayitem\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">[item_name|remove] [location:x,y,z,world] (duration:#)\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Has the server create a \"Phantom Item\" at the specified location which will remain there until removed. The Phantom Item\n<p>only appears to the player and cannot be picked up by the player. Currently the \"Duration:#\" setting is unreliable and as such \nplayers should expect to have to use the \"- displayitem remove\" command if they wish to remove the displayed item.\n</p><p><b>Examples</b>\n</p>\n<pre>- displayitem 10 location:77,64,2453,world duration:20s\n- displayitem Stick location:&lt;player.location&gt;\n- displayitem remove location:77,64,2453,world\n- displayitem remove location:&lt;player.location&gt;\n</pre>\n</td></tr></tbody></table></s><s><p><span id=\"drop\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"drop\">drop</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: drop\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">drop\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">[item:#(:#)|item:material(:#)|xp] (qty:#{1}) (location:x,y,z,world)\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Drops an item or some experience at a location, in a certain quantity (which is 1 if not specified). You can choose either the item's ID or its material. All block and item IDs are found <a rel=\"nofollow\" class=\"external text\" href=\"http://www.minecraftwiki.net/wiki/Data_values\">here</a> and all valid material names are found <a rel=\"nofollow\" class=\"external text\" href=\"http://jd.bukkit.org/rb/apidocs/org/bukkit/Material.html\">here</a>.\n<p>The ID or material can also be followed by a <a rel=\"nofollow\" class=\"external text\" href=\"http://www.minecraftwiki.net/wiki/Data_values#Data\">special data value</a> for the item, so you can - for instance - drop a specific kind of wood or color of wool.\n</p><p><b>Examples</b>\n</p>\n<pre>- drop item:38 location:500,63,500,world\n- drop item:diamond qty:5 location:&lt;anchor:Treasury&gt;\n- drop xp qty:30 location:&lt;anchor:Altar&gt;\n- drop item:wood:3 qty:30 location:&lt;anchor:Jungle&gt;\n</pre>\n</td></tr></tbody></table></s><s><p><br />\n<span id=\"strike\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"strike\">strike</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: strike\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">strike\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">(no_damage) [location:x,y,z,world]\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Makes lightning strike a location, optionally without causing any damage.\n<p><br />\n<b>Examples</b>\n</p>\n<pre>- strike location:200,73,200,world\n- strike location:&lt;player.location&gt;\n- strike no_damage location:&lt;anchor:Mountaintop&gt;\n</pre>\n</td></tr></tbody></table></s><s><p><br />\n<span id=\"switch\"></span>\n</p></s><s><div style=\"display: none;\">\n<div class=\"mw-heading mw-heading4\"><h4 id=\"switch\">switch</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Template:Denizen_Command&amp;action=edit&amp;section=T-1\" title=\"Edit section: switch\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n</div></s><s><table class=\"wikitable\" width=\"100%\" style=\"font-family:courier-new; font-size:1.1em;\">\n<tbody><tr>\n<th scope=\"col\" align=\"center\">switch\n</th>\n<th scope=\"col\" width=\"90%\" align=\"left\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2em;\">[location:x,y,z,world] (state:[{toggle}|on|off]) (duration:#)\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"padding-top:1.5em; padding-bottom:1.5em; padding-left:2.2em; padding-right:2.2em;\">Changes the state of the lever, stone button, stone plate, wood plate, wooden door, iron door or trap door at the specified location. By default the state is toggled from on/open to off/closed and back again, but you can choose to set the state just to on or off. You can also specify a duration for which the state will remain like that.\n<p><br />\n<b>Examples</b>\n</p>\n<pre>- switch location:500,45,700,world\n- switch state:on location:&lt;anchor:Secret Lever&gt; duration:30\n</pre>\n</td></tr></tbody></table></s><s><div class=\"mw-heading mw-heading1\"><h1 id=\"Creating_your_own_Denizen_command\">Creating your own Denizen command</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Commands&amp;action=edit&amp;section=9\" title=\"Edit section: Creating your own Denizen command\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s></s><p><s>Aufdemrand made a tutorial for the 0.9 version of Denizen on how to create a new command for denizen.\nCheck it out here: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.youtube.com/watch?v=Sd7zoWT24Xw\">Denizen 0.9 Command Tutorial</a>.</s>\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145837\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.112 seconds\nReal time usage: 0.127 seconds\nPreprocessor visited node count: 637/1000000\nRevision size: 20251/2097152 bytes\nPost‐expand include size: 28542/2097152 bytes\nTemplate argument size: 13622/2097152 bytes\nHighest expansion depth: 4/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 6708/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   14.878      1 -total\n 77.07%   11.467     34 Template:Denizen_Command\n-->\n\n<!-- Render ID 90025ae3-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen/Commands/Flag"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen/Replaceable Tags"
+      },
+      {
+        "ns": 0,
+        "*": "Denizen/Script Requirements"
+      },
+      {
+        "ns": 0,
+        "*": "Denizen/Commands/If"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "List of commands",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Denizen/Commands",
+        "byteoffset": 695,
+        "anchor": "List_of_commands",
+        "linkAnchor": "List_of_commands"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Entity",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "Denizen/Commands",
+        "byteoffset": 900,
+        "anchor": "Entity",
+        "linkAnchor": "Entity"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "cast",
+        "number": "1.1.1",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "cast",
+        "linkAnchor": "cast"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Item",
+        "number": "1.2",
+        "index": "3",
+        "fromtitle": "Denizen/Commands",
+        "byteoffset": 2003,
+        "anchor": "Item",
+        "linkAnchor": "Item"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "NPC",
+        "number": "1.3",
+        "index": "4",
+        "fromtitle": "Denizen/Commands",
+        "byteoffset": 2015,
+        "anchor": "NPC",
+        "linkAnchor": "NPC"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "assignment",
+        "number": "1.3.1",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "assignment",
+        "linkAnchor": "assignment"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "attack",
+        "number": "1.3.2",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "attack",
+        "linkAnchor": "attack"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "chat",
+        "number": "1.3.3",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "chat",
+        "linkAnchor": "chat"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "follow",
+        "number": "1.3.4",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "follow",
+        "linkAnchor": "follow"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "look",
+        "number": "1.3.5",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "look",
+        "linkAnchor": "look"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "shoot",
+        "number": "1.3.6",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "shoot",
+        "linkAnchor": "shoot"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "sit",
+        "number": "1.3.7",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "sit",
+        "linkAnchor": "sit"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "trigger",
+        "number": "1.3.8",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "trigger",
+        "linkAnchor": "trigger"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Player",
+        "number": "1.4",
+        "index": "5",
+        "fromtitle": "Denizen/Commands",
+        "byteoffset": 5077,
+        "anchor": "Player",
+        "linkAnchor": "Player"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "feed",
+        "number": "1.4.1",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "feed",
+        "linkAnchor": "feed"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "heal",
+        "number": "1.4.2",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "heal",
+        "linkAnchor": "heal"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "narrate",
+        "number": "1.4.3",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "narrate",
+        "linkAnchor": "narrate"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Script flow",
+        "number": "1.5",
+        "index": "6",
+        "fromtitle": "Denizen/Commands",
+        "byteoffset": 6244,
+        "anchor": "Script_flow",
+        "linkAnchor": "Script_flow"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "anchor",
+        "number": "1.5.1",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "anchor",
+        "linkAnchor": "anchor"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "queue",
+        "number": "1.5.2",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "queue",
+        "linkAnchor": "queue"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "cooldown",
+        "number": "1.5.3",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "cooldown",
+        "linkAnchor": "cooldown"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "define",
+        "number": "1.5.4",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "define",
+        "linkAnchor": "define"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "determine",
+        "number": "1.5.5",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "determine",
+        "linkAnchor": "determine"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "disengage",
+        "number": "1.5.6",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "disengage",
+        "linkAnchor": "disengage"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "engage",
+        "number": "1.5.7",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "engage",
+        "linkAnchor": "engage"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "fail",
+        "number": "1.5.8",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "fail",
+        "linkAnchor": "fail"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "finish",
+        "number": "1.5.9",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "finish",
+        "linkAnchor": "finish"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "flag",
+        "number": "1.5.10",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "flag",
+        "linkAnchor": "flag"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "if",
+        "number": "1.5.11",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "if",
+        "linkAnchor": "if"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "log",
+        "number": "1.5.12",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "log",
+        "linkAnchor": "log"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "random",
+        "number": "1.5.13",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "random",
+        "linkAnchor": "random"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Server",
+        "number": "1.6",
+        "index": "7",
+        "fromtitle": "Denizen/Commands",
+        "byteoffset": 14313,
+        "anchor": "Server",
+        "linkAnchor": "Server"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "announce",
+        "number": "1.6.1",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "announce",
+        "linkAnchor": "announce"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "chunkload",
+        "number": "1.6.2",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "chunkload",
+        "linkAnchor": "chunkload"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "execute",
+        "number": "1.6.3",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "execute",
+        "linkAnchor": "execute"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "World",
+        "number": "1.7",
+        "index": "8",
+        "fromtitle": "Denizen/Commands",
+        "byteoffset": 16668,
+        "anchor": "World",
+        "linkAnchor": "World"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "animatechest",
+        "number": "1.7.1",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "animatechest",
+        "linkAnchor": "animatechest"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "copyblock",
+        "number": "1.7.2",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "copyblock",
+        "linkAnchor": "copyblock"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "displayitem",
+        "number": "1.7.3",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "displayitem",
+        "linkAnchor": "displayitem"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "drop",
+        "number": "1.7.4",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "drop",
+        "linkAnchor": "drop"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "strike",
+        "number": "1.7.5",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "strike",
+        "linkAnchor": "strike"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "switch",
+        "number": "1.7.6",
+        "index": "T-1",
+        "fromtitle": "Template:Denizen_Command",
+        "byteoffset": null,
+        "anchor": "switch",
+        "linkAnchor": "switch"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Creating your own Denizen command",
+        "number": "2",
+        "index": "9",
+        "fromtitle": "Denizen/Commands",
+        "byteoffset": 20013,
+        "anchor": "Creating_your_own_Denizen_command",
+        "linkAnchor": "Creating_your_own_Denizen_command"
+      }
+    ],
+    "showtoc": ""
+  }
+}

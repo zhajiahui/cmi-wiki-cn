@@ -95,6 +95,7 @@ theme:
   features:
   - navigation.tabs
   - navigation.tabs.sticky
+  - navigation.prune
   - navigation.tracking
   - navigation.top
   - navigation.footer

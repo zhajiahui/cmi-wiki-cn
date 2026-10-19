@@ -1,0 +1,210 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Tutorials",
+    "pageid": 267,
+    "revid": 3804,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>Welcome to the tutorials section, here you'll be able to find detailed video instruction on the Citizens 2 core plugin, and all the character traits.\n</p><p><b>Updates</b>:\n</p><p>11/10/2012\n</p>\n<ul><li>Added Introduction to Citizens 2, Parts 1 and 2</li>\n<li>Added Sentry Part 1</li>\n<li>Added DtlTrader Part 1</li>\n<li>Added CitiTrader Part 1</li></ul>\n<p><br />\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Citizens_2_Core\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Citizens 2 Core</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-2\"><a href=\"#Basic\"><span class=\"tocnumber\">1.1</span> <span class=\"toctext\">Basic</span></a></li>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Advanced\"><span class=\"tocnumber\">1.2</span> <span class=\"toctext\">Advanced</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Alchemist\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Alchemist</span></a></li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#Blacksmith\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Blacksmith</span></a></li>\n<li class=\"toclevel-1 tocsection-6\"><a href=\"#Builder\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Builder</span></a></li>\n<li class=\"toclevel-1 tocsection-7\"><a href=\"#CitiTrader\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">CitiTrader</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-8\"><a href=\"#Basic_2\"><span class=\"tocnumber\">5.1</span> <span class=\"toctext\">Basic</span></a></li>\n<li class=\"toclevel-2 tocsection-9\"><a href=\"#Advanced_2\"><span class=\"tocnumber\">5.2</span> <span class=\"toctext\">Advanced</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-10\"><a href=\"#Denizen\"><span class=\"tocnumber\">6</span> <span class=\"toctext\">Denizen</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-11\"><a href=\"#Basic_3\"><span class=\"tocnumber\">6.1</span> <span class=\"toctext\">Basic</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-12\"><a href=\"#DtlTrader\"><span class=\"tocnumber\">7</span> <span class=\"toctext\">DtlTrader</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-13\"><a href=\"#Basic_4\"><span class=\"tocnumber\">7.1</span> <span class=\"toctext\">Basic</span></a></li>\n<li class=\"toclevel-2 tocsection-14\"><a href=\"#Advanced_3\"><span class=\"tocnumber\">7.2</span> <span class=\"toctext\">Advanced</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-15\"><a href=\"#Sentry\"><span class=\"tocnumber\">8</span> <span class=\"toctext\">Sentry</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-16\"><a href=\"#Basic_5\"><span class=\"tocnumber\">8.1</span> <span class=\"toctext\">Basic</span></a></li>\n<li class=\"toclevel-2 tocsection-17\"><a href=\"#Advanced_4\"><span class=\"tocnumber\">8.2</span> <span class=\"toctext\">Advanced</span></a></li>\n</ul>\n</li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Citizens_2_Core\">Citizens 2 Core</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Tutorials&amp;action=edit&amp;section=1\" title=\"Edit section: Citizens 2 Core\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Basic\">Basic</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Tutorials&amp;action=edit&amp;section=2\" title=\"Edit section: Basic\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Part 1 - In this video we will cover the basics of Citizens NPCs, their features and the commands of the core plugin.\n(Be sure to check the videos description for any relevant links)\n</p>\n<figure class=\"embedvideo\" data-service=\"youtube\" data-iframeconfig=\"{&quot;width&quot;:480,&quot;height&quot;:270,&quot;src&quot;:&quot;https://www.youtube-nocookie.com/embed/_2FXC-z3g5E?autoplay=1&quot;}\" style=\"width:480px\">\n\t<div class=\"embedvideo-wrapper\" style=\"height:270px\"><div class=\"embedvideo-consent\" data-show-privacy-notice=\"1\">\n\t<div class=\"embedvideo-overlay\">\n\t\t<div class=\"embedvideo-loader\" role=\"button\">\n\t\t\t<div class=\"embedvideo-loader__fakeButton\">Load video</div>\n\t\t\t<div class=\"embedvideo-loader__footer\">\n\t\t\t\t<div class=\"embedvideo-loader__service\">YouTube</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"embedvideo-privacyNotice hidden\">\n\t\t\t<div class=\"embedvideo-privacyNotice__content\">YouTube might collect personal data. <a href=\"https://www.youtube.com/howyoutubeworks/user-settings/privacy/\" rel=\"nofollow,noopener\" target=\"_blank\" class=\"embedvideo-privacyNotice__link\">Privacy Policy</a></div>\n\t\t\t<div class=\"embedvideo-privacyNotice__buttons\">\n<p>\t\t\t\t<button class=\"embedvideo-privacyNotice__continue\">Continue</button>\n\t\t\t\t<button class=\"embedvideo-privacyNotice__dismiss\">Dismiss</button>\n</p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div></div>\n</figure>\n<p>Part 2 - In this video we will cover configuration and related server-side files for the NPCs, as well as a short demo using everything we've learned so far.\n(Be sure to check the videos description for any relevant links)\n</p>\n<figure class=\"embedvideo\" data-service=\"youtube\" data-iframeconfig=\"{&quot;width&quot;:480,&quot;height&quot;:270,&quot;src&quot;:&quot;https://www.youtube-nocookie.com/embed/E_kdNXQlDn4?autoplay=1&quot;}\" style=\"width:480px\">\n\t<div class=\"embedvideo-wrapper\" style=\"height:270px\"><div class=\"embedvideo-consent\" data-show-privacy-notice=\"1\">\n\t<div class=\"embedvideo-overlay\">\n\t\t<div class=\"embedvideo-loader\" role=\"button\">\n\t\t\t<div class=\"embedvideo-loader__fakeButton\">Load video</div>\n\t\t\t<div class=\"embedvideo-loader__footer\">\n\t\t\t\t<div class=\"embedvideo-loader__service\">YouTube</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"embedvideo-privacyNotice hidden\">\n\t\t\t<div class=\"embedvideo-privacyNotice__content\">YouTube might collect personal data. <a href=\"https://www.youtube.com/howyoutubeworks/user-settings/privacy/\" rel=\"nofollow,noopener\" target=\"_blank\" class=\"embedvideo-privacyNotice__link\">Privacy Policy</a></div>\n\t\t\t<div class=\"embedvideo-privacyNotice__buttons\">\n<p>\t\t\t\t<button class=\"embedvideo-privacyNotice__continue\">Continue</button>\n\t\t\t\t<button class=\"embedvideo-privacyNotice__dismiss\">Dismiss</button>\n</p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div></div>\n</figure>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Advanced\">Advanced</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Tutorials&amp;action=edit&amp;section=3\" title=\"Edit section: Advanced\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Coming soon\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Alchemist\">Alchemist</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Tutorials&amp;action=edit&amp;section=4\" title=\"Edit section: Alchemist\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Coming soon\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Blacksmith\">Blacksmith</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Tutorials&amp;action=edit&amp;section=5\" title=\"Edit section: Blacksmith\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Coming soon\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Builder\">Builder</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Tutorials&amp;action=edit&amp;section=6\" title=\"Edit section: Builder\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Coming soon\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"CitiTrader\">CitiTrader</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Tutorials&amp;action=edit&amp;section=7\" title=\"Edit section: CitiTrader\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Basic_2\">Basic</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Tutorials&amp;action=edit&amp;section=8\" title=\"Edit section: Basic\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>This is a tutorial video overview on how to use the Citizens2 NPC character: CitiTrader. In this video we go over basic setup.\n</p>\n<figure class=\"embedvideo\" data-service=\"youtube\" data-iframeconfig=\"{&quot;width&quot;:480,&quot;height&quot;:270,&quot;src&quot;:&quot;https://www.youtube-nocookie.com/embed/kGC9dQ6J1jM?autoplay=1&quot;}\" style=\"width:480px\">\n\t<div class=\"embedvideo-wrapper\" style=\"height:270px\"><div class=\"embedvideo-consent\" data-show-privacy-notice=\"1\">\n\t<div class=\"embedvideo-overlay\">\n\t\t<div class=\"embedvideo-loader\" role=\"button\">\n\t\t\t<div class=\"embedvideo-loader__fakeButton\">Load video</div>\n\t\t\t<div class=\"embedvideo-loader__footer\">\n\t\t\t\t<div class=\"embedvideo-loader__service\">YouTube</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"embedvideo-privacyNotice hidden\">\n\t\t\t<div class=\"embedvideo-privacyNotice__content\">YouTube might collect personal data. <a href=\"https://www.youtube.com/howyoutubeworks/user-settings/privacy/\" rel=\"nofollow,noopener\" target=\"_blank\" class=\"embedvideo-privacyNotice__link\">Privacy Policy</a></div>\n\t\t\t<div class=\"embedvideo-privacyNotice__buttons\">\n<p>\t\t\t\t<button class=\"embedvideo-privacyNotice__continue\">Continue</button>\n\t\t\t\t<button class=\"embedvideo-privacyNotice__dismiss\">Dismiss</button>\n</p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div></div>\n</figure>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Advanced_2\">Advanced</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Tutorials&amp;action=edit&amp;section=9\" title=\"Edit section: Advanced\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Coming soon\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Denizen\">Denizen</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Tutorials&amp;action=edit&amp;section=10\" title=\"Edit section: Denizen\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Basic_3\">Basic</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Tutorials&amp;action=edit&amp;section=11\" title=\"Edit section: Basic\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Coming soon\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"DtlTrader\">DtlTrader</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Tutorials&amp;action=edit&amp;section=12\" title=\"Edit section: DtlTrader\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Basic_4\">Basic</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Tutorials&amp;action=edit&amp;section=13\" title=\"Edit section: Basic\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>This is a tutorial video overview on how to use the Citizens2 NPC character: DtlTraders. In this video we go over 'server traders', and basic setup.\n</p>\n<figure class=\"embedvideo\" data-service=\"youtube\" data-iframeconfig=\"{&quot;width&quot;:480,&quot;height&quot;:270,&quot;src&quot;:&quot;https://www.youtube-nocookie.com/embed/PHQZE94GG88?autoplay=1&quot;}\" style=\"width:480px\">\n\t<div class=\"embedvideo-wrapper\" style=\"height:270px\"><div class=\"embedvideo-consent\" data-show-privacy-notice=\"1\">\n\t<div class=\"embedvideo-overlay\">\n\t\t<div class=\"embedvideo-loader\" role=\"button\">\n\t\t\t<div class=\"embedvideo-loader__fakeButton\">Load video</div>\n\t\t\t<div class=\"embedvideo-loader__footer\">\n\t\t\t\t<div class=\"embedvideo-loader__service\">YouTube</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"embedvideo-privacyNotice hidden\">\n\t\t\t<div class=\"embedvideo-privacyNotice__content\">YouTube might collect personal data. <a href=\"https://www.youtube.com/howyoutubeworks/user-settings/privacy/\" rel=\"nofollow,noopener\" target=\"_blank\" class=\"embedvideo-privacyNotice__link\">Privacy Policy</a></div>\n\t\t\t<div class=\"embedvideo-privacyNotice__buttons\">\n<p>\t\t\t\t<button class=\"embedvideo-privacyNotice__continue\">Continue</button>\n\t\t\t\t<button class=\"embedvideo-privacyNotice__dismiss\">Dismiss</button>\n</p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div></div>\n</figure>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Advanced_3\">Advanced</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Tutorials&amp;action=edit&amp;section=14\" title=\"Edit section: Advanced\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Coming soon\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Sentry\">Sentry</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Tutorials&amp;action=edit&amp;section=15\" title=\"Edit section: Sentry\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Basic_5\">Basic</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Tutorials&amp;action=edit&amp;section=16\" title=\"Edit section: Basic\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>In this video we will cover Sentry, a combat oriented NPC character who can kill, be killed, defend etc., players, monsters, and permission groups. Completely configurable, and stackable with other character traits like Denizen. \n</p>\n<figure class=\"embedvideo\" data-service=\"youtube\" data-iframeconfig=\"{&quot;width&quot;:480,&quot;height&quot;:270,&quot;src&quot;:&quot;https://www.youtube-nocookie.com/embed/jAD5wJ4Brfg?autoplay=1&quot;}\" style=\"width:480px\">\n\t<div class=\"embedvideo-wrapper\" style=\"height:270px\"><div class=\"embedvideo-consent\" data-show-privacy-notice=\"1\">\n\t<div class=\"embedvideo-overlay\">\n\t\t<div class=\"embedvideo-loader\" role=\"button\">\n\t\t\t<div class=\"embedvideo-loader__fakeButton\">Load video</div>\n\t\t\t<div class=\"embedvideo-loader__footer\">\n\t\t\t\t<div class=\"embedvideo-loader__service\">YouTube</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"embedvideo-privacyNotice hidden\">\n\t\t\t<div class=\"embedvideo-privacyNotice__content\">YouTube might collect personal data. <a href=\"https://www.youtube.com/howyoutubeworks/user-settings/privacy/\" rel=\"nofollow,noopener\" target=\"_blank\" class=\"embedvideo-privacyNotice__link\">Privacy Policy</a></div>\n\t\t\t<div class=\"embedvideo-privacyNotice__buttons\">\n<p>\t\t\t\t<button class=\"embedvideo-privacyNotice__continue\">Continue</button>\n\t\t\t\t<button class=\"embedvideo-privacyNotice__dismiss\">Dismiss</button>\n</p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div></div>\n</figure>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Advanced_4\">Advanced</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Tutorials&amp;action=edit&amp;section=17\" title=\"Edit section: Advanced\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Coming soon\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145916\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.038 seconds\nReal time usage: 0.052 seconds\nPreprocessor visited node count: 81/1000000\nRevision size: 1724/2097152 bytes\nPost‐expand include size: 130/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 5625/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID a7414863-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Citizens 2 Core",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Tutorials",
+        "byteoffset": 303,
+        "anchor": "Citizens_2_Core",
+        "linkAnchor": "Citizens_2_Core"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Basic",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "Tutorials",
+        "byteoffset": 323,
+        "anchor": "Basic",
+        "linkAnchor": "Basic"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Advanced",
+        "number": "1.2",
+        "index": "3",
+        "fromtitle": "Tutorials",
+        "byteoffset": 806,
+        "anchor": "Advanced",
+        "linkAnchor": "Advanced"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Alchemist",
+        "number": "2",
+        "index": "4",
+        "fromtitle": "Tutorials",
+        "byteoffset": 838,
+        "anchor": "Alchemist",
+        "linkAnchor": "Alchemist"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Blacksmith",
+        "number": "3",
+        "index": "5",
+        "fromtitle": "Tutorials",
+        "byteoffset": 866,
+        "anchor": "Blacksmith",
+        "linkAnchor": "Blacksmith"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Builder",
+        "number": "4",
+        "index": "6",
+        "fromtitle": "Tutorials",
+        "byteoffset": 895,
+        "anchor": "Builder",
+        "linkAnchor": "Builder"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "CitiTrader",
+        "number": "5",
+        "index": "7",
+        "fromtitle": "Tutorials",
+        "byteoffset": 921,
+        "anchor": "CitiTrader",
+        "linkAnchor": "CitiTrader"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Basic",
+        "number": "5.1",
+        "index": "8",
+        "fromtitle": "Tutorials",
+        "byteoffset": 936,
+        "anchor": "Basic_2",
+        "linkAnchor": "Basic_2"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Advanced",
+        "number": "5.2",
+        "index": "9",
+        "fromtitle": "Tutorials",
+        "byteoffset": 1108,
+        "anchor": "Advanced_2",
+        "linkAnchor": "Advanced_2"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Denizen",
+        "number": "6",
+        "index": "10",
+        "fromtitle": "Tutorials",
+        "byteoffset": 1137,
+        "anchor": "Denizen",
+        "linkAnchor": "Denizen"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Basic",
+        "number": "6.1",
+        "index": "11",
+        "fromtitle": "Tutorials",
+        "byteoffset": 1149,
+        "anchor": "Basic_3",
+        "linkAnchor": "Basic_3"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "DtlTrader",
+        "number": "7",
+        "index": "12",
+        "fromtitle": "Tutorials",
+        "byteoffset": 1175,
+        "anchor": "DtlTrader",
+        "linkAnchor": "DtlTrader"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Basic",
+        "number": "7.1",
+        "index": "13",
+        "fromtitle": "Tutorials",
+        "byteoffset": 1189,
+        "anchor": "Basic_4",
+        "linkAnchor": "Basic_4"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Advanced",
+        "number": "7.2",
+        "index": "14",
+        "fromtitle": "Tutorials",
+        "byteoffset": 1383,
+        "anchor": "Advanced_3",
+        "linkAnchor": "Advanced_3"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Sentry",
+        "number": "8",
+        "index": "15",
+        "fromtitle": "Tutorials",
+        "byteoffset": 1412,
+        "anchor": "Sentry",
+        "linkAnchor": "Sentry"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Basic",
+        "number": "8.1",
+        "index": "16",
+        "fromtitle": "Tutorials",
+        "byteoffset": 1423,
+        "anchor": "Basic_5",
+        "linkAnchor": "Basic_5"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Advanced",
+        "number": "8.2",
+        "index": "17",
+        "fromtitle": "Tutorials",
+        "byteoffset": 1698,
+        "anchor": "Advanced_4",
+        "linkAnchor": "Advanced_4"
+      }
+    ],
+    "showtoc": ""
+  }
+}

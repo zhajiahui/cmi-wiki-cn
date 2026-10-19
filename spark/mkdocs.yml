@@ -1,6 +1,27 @@
 site_name: spark 中文资料
 nav:
 - 插件说明: index.md
+- 插件 Wiki:
+  - spark 文档: wiki/home.md
+  - 安装: wiki/install.md
+  - 命令用法: wiki/commands.md
+  - 使用查看器: wiki/using-the-viewer.md
+  - 配置: wiki/configuration.md
+  - 独立 Agent: wiki/standalone.md
+  - 性能诊断指南:
+    - 查找卡顿尖峰的原因: wiki/guides/finding-lag-spikes.md
+    - 游戏刻循环: wiki/guides/tick-loop.md
+    - TPS 与 MSPT: wiki/guides/tps-and-mspt.md
+  - 其他说明:
+    - spark 与其他工具的比较: wiki/misc/spark-vs-others.md
+    - 使用 async-profiler 引擎: wiki/misc/using-async-profiler.md
+    - 关于 spark 指标: wiki/misc/spark-metrics.md
+    - 占位符: wiki/misc/placeholders.md
+    - 信息提示点: wiki/misc/info-points.md
+    - Java agent 警告: wiki/misc/java-agent-warning.md
+    - 致谢: wiki/misc/credits.md
+  - spark 功能与在线查看器: wiki/project-home.md
+  - spark 项目说明: wiki/project-readme.md
 - 配置文件（随包未标明版本）:
   - 配置索引: configuration/index.md
   - config.json: configuration/config.md

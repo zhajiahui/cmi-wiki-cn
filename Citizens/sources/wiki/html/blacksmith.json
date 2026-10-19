@@ -1,0 +1,223 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Blacksmith",
+    "pageid": 87,
+    "revid": 5143,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><div style=\"width:35%; float:right; border-style:solid;border-width:3px\">\n<center>\n<p><span class=\"mw-default-size\" typeof=\"mw:File\"><a href=\"/File:Blacksmith.png\" class=\"mw-file-description\"><img src=\"/images/b/be/Blacksmith.png\" decoding=\"async\" width=\"235\" height=\"70\" class=\"mw-file-element\" /></a></span><br /><br /><b>Blacksmith</b>\n</p>\n</center>\n<p><br />\n</p>\n<div style=\"font-size:100%; padding:3px\">\n<table cellpadding=\"0\" cellspacing=\"3\" width=\"100%\">\n\n<tbody><tr>\n<td align=\"left\" valign=\"top\" width=\"150\"><b>Author</b>\n</td>\n<td>aPunch\n</td></tr>\n<tr>\n<td><b>Version</b>\n</td>\n<td>???\n</td></tr>\n<tr>\n<td><b>Citizens build</b>\n</td>\n<td>2.0.x\n</td></tr>\n<tr>\n<td><b>Other dependencies</b>\n</td>\n<td>Vault, and an economy system\n</td></tr>\n<tr>\n<td><b>Download</b>\n</td>\n<td><a rel=\"nofollow\" class=\"external text\" href=\"http://ci.citizensnpcs.co/view/Add-ons/job/Blacksmith/\">Link</a>\n</td></tr>\n<tr>\n<td colspan=\"2\"><div style=\"border-top:1px solid #aaaaaa;\"><b>Description:</b> Heavily Customizable Tool and Armor Reforging</div>\n</td></tr></tbody></table>\n</div>\n</div>\n<p>Blacksmith is a Citizens 2.0 character trait that gives Citizens NPCs the ability to:\n</p>\n<ul><li>Repair weapons, tools, and armor for a fee.</li></ul>\n<p>Most up-to-date source code available here: <a rel=\"nofollow\" class=\"external free\" href=\"https://github.com/mcmonkey4eva/Blacksmith\">https://github.com/mcmonkey4eva/Blacksmith</a>\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Updates\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Updates</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#How_to_Use\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">How to Use</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Installation\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Installation</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#General_Information\"><span class=\"tocnumber\">3.1</span> <span class=\"toctext\">General Information</span></a></li>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#Interaction\"><span class=\"tocnumber\">3.2</span> <span class=\"toctext\">Interaction</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-6\"><a href=\"#Prices\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Prices</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-7\"><a href=\"#Base_Price\"><span class=\"tocnumber\">4.1</span> <span class=\"toctext\">Base Price</span></a></li>\n<li class=\"toclevel-2 tocsection-8\"><a href=\"#Durability\"><span class=\"tocnumber\">4.2</span> <span class=\"toctext\">Durability</span></a></li>\n<li class=\"toclevel-2 tocsection-9\"><a href=\"#Enchantments\"><span class=\"tocnumber\">4.3</span> <span class=\"toctext\">Enchantments</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-10\"><a href=\"#Permissions\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">Permissions</span></a></li>\n<li class=\"toclevel-1 tocsection-11\"><a href=\"#Configuration\"><span class=\"tocnumber\">6</span> <span class=\"toctext\">Configuration</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-12\"><a href=\"#Default_Configuration\"><span class=\"tocnumber\">6.1</span> <span class=\"toctext\">Default Configuration</span></a></li>\n</ul>\n</li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Updates\">Updates</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Blacksmith&amp;action=edit&amp;section=1\" title=\"Edit section: Updates\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>v1.13 10/12/2018\n</p>\n<ul><li>HurricanKai is missing, so mcmonkey has performed minimalist updates, now available here <a rel=\"nofollow\" class=\"external free\" href=\"https://github.com/mcmonkey4eva/Blacksmith\">https://github.com/mcmonkey4eva/Blacksmith</a></li></ul>\n<p>???&#160;?/?/2017\n</p>\n<ul><li>Now maintained by HurricanKai, compat with minecraft 1.12 as of this message. See github for commit logs. <a rel=\"nofollow\" class=\"external free\" href=\"https://github.com/HurricanKai/Blacksmith\">https://github.com/HurricanKai/Blacksmith</a></li></ul>\n<p>??? 2/17/2015\n</p>\n<ul><li>update to latest everything.</li></ul>\n<p>v1.3 8/5/2013\n</p>\n<ul><li>Fix blacksmith not returning items.</li></ul>\n<p>v1.2 8/15/2012\n</p>\n<ul><li>Added price-per-durability-point option on a per-item basis.</li>\n<li>dded session timeout if player asks for price and does not reforge item.</li>\n<li>Fixed Random-enchant algorithm.</li></ul>\n<p>v1.1 8/8/2012\n</p>\n<ul><li>Compatible with 1.3.1 builds of C2</li></ul>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"How_to_Use\">How to Use</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Blacksmith&amp;action=edit&amp;section=2\" title=\"Edit section: How to Use\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Installation\">Installation</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Blacksmith&amp;action=edit&amp;section=3\" title=\"Edit section: Installation\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ul><li>Install Citizens 2</li>\n<li>Place Blacksmith.jar file in /plugins directory.</li>\n<li>Start Server</li>\n<li>Create NPC and give the Blacksmith trait.</li></ul>\n<pre>/npc create Smithy --trait blacksmith \n</pre>\n<p>or\n</p>\n<pre>/npc create Smithy\n/trait blacksmith \n</pre>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"General_Information\">General Information</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Blacksmith&amp;action=edit&amp;section=4\" title=\"Edit section: General Information\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Blacksmiths have a variety of settings that can be per-NPC or global. The settings under \"defaults\" in the configuration file are the default settings that a blacksmith will be given when it is created. You can override these settings by using the commands from the Commands section below. You can even configure which items a blacksmith is able to reforge in-game using commands. By default, a blacksmith is able to reforge all items.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Interaction\">Interaction</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Blacksmith&amp;action=edit&amp;section=5\" title=\"Edit section: Interaction\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Interacting with a blacksmith is simple:\n</p>\n<ul><li>Right click the NPC with a tool or armor in your hand. It will tell you the price that it costs to reforge it.</li>\n<li>Right click again within 10 seconds and the blacksmith will begin reforging the item.\n<ul><li>Depending on the configuration, the reforging has a chance to enchant or damage an item.</li></ul></li></ul>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Prices\">Prices</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Blacksmith&amp;action=edit&amp;section=6\" title=\"Edit section: Prices\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Prices are determined by the damage of an item, the number and type of enchantments, and the prices defined in the configuration file. Basically, the formula for determining the price of a reforge is <i>basePrice + durabilityRemaining + enchantments</i>.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Base_Price\">Base Price</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Blacksmith&amp;action=edit&amp;section=7\" title=\"Edit section: Base Price\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>The default base price for a reforge is the <i>base-prices.default</i> value in the configuration file. To add new base prices for each individual item, add the item to the config file under <i>base-prices</i>\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Durability\">Durability</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Blacksmith&amp;action=edit&amp;section=8\" title=\"Edit section: Durability\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Durability is the amount of damage that an item has taken. Generally, the more damaged an item is, the cheaper it will be to reforge. Trying to reforge an item with no damage will be significantly more expensive. The price per durability point is <i>price-per-durability-point.default</i> in the configuration. Per-item values may be set by adding to this section.\n</p><p>These are the items names to use with custom base and per-durability-point prices.\n</p>\n<div class=\"toccolours mw-collapsible mw-collapsed\" style=\"width:150px\">\n<p><b>Valid Items</b>\n</p>\n<div class=\"mw-collapsible-content\">\n<p>wood-pickaxe\n<br />wood-spade\n<br />wood-hoe\n<br />wood-sword\n<br />wood-axe\n<br />stone-pickaxe\n<br />stone-spade\n<br />stone-hoe\n<br />stone-sword\n<br />stone-axe\n<br />gold-pickaxe\n<br />gold-spade\n<br />gold-hoe\n<br />gold-sword\n<br />gold-axe\n<br />iron-pickaxe\n<br />iron-spade\n<br />iron-hoe\n<br />iron-sword\n<br />iron-axe\n<br />diamond-pickaxe\n<br />diamond-spade\n<br />diamond-hoe\n<br />diamond-axe\n<br />bow\n<br />flint-and-steel\n<br />fishing-rod\n<br />shears\n<br />leather-helmet\n<br />leather-chestplate\n<br />leather-leggings\n<br />leather-boots\n<br />chainmail-helmet\n<br />chainmail-chestplate\n<br />chainmail-leggings\n<br />chainmail-boots\n<br />gold-helmet\n<br />gold-chestplate\n<br />gold-leggings\n<br />gold-boots\n<br />iron-helmet\n<br />iron-chestplate\n<br />iron-leggings\n<br />iron-boots\n<br />diamond-helmet\n<br />diamond-chestplate\n<br />diamond-leggings\n</p>\ndiamond-boots</div></div>\n<p>Example:\n</p>\n<pre>base-prices:\n  default: 10\n  diamond-sword: 45\nprice-per-durability-point:\n  default: 1\n  diamond-sword: 3\n</pre>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Enchantments\">Enchantments</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Blacksmith&amp;action=edit&amp;section=9\" title=\"Edit section: Enchantments\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>The price of reforging an item with enchantments is more expensive than one without any. For each enchantment, an amount is added to the total price based on the \"enchantment-modifier\" and the level of the enchantment. Enchantment modifiers can be configured in the configuration file by adding the enchantment name and a value within the <i>enchantment-modifiers</i> section. The default modifier, <i>enchantment-modifiers.default</i>, is used if the enchantment name is not found. Here are valid, case-sensitive names for enchantment modifiers:\n</p>\n<ul><li><i>arrow-damage</i> - Provides extra damage when shooting arrows from bows</li>\n<li><i>arrow-fire</i> - Sets entities on fire when hit by arrows shot from a bow</li>\n<li><i>arrow-infinite</i> - Provides infinite arrows when shooting a bow</li>\n<li><i>arrow-knockback</i> - Provides a knockback when an entity is hit by an arrow from a bow</li>\n<li><i>damage-all</i> - Increases damage against all targets</li>\n<li><i>damage-arthropods</i> - Increases damage against arthropod targets</li>\n<li><i>damage-undead</i> - Increases damage against undead targets</li>\n<li><i>dig-speed</i> - Increases the rate at which you mine/dig</li>\n<li><i>durability</i> - Decreases the rate at which a tool looses durability</li>\n<li><i>fire-aspect</i> - When attacking a target, has a chance to set them on fire</li>\n<li><i>knockback</i> - All damage to other targets will knock them back when hit</li>\n<li><i>loot-bonus-blocks</i> - Provides a chance of gaining extra loot when destroying blocks</li>\n<li><i>loot-bonus-mobs</i> - Provides a chance of gaining extra loot when killing monsters</li>\n<li><i>oxygen</i> - Decreases the rate of air loss whilst underwater</li>\n<li><i>protection-environmental</i> - Provides protection against environmental damage</li>\n<li><i>protection-explosions</i> - Provides protection against explosive damage</li>\n<li><i>protection-fall</i> - Provides protection against fall damage</li>\n<li><i>protection-fire</i> - Provides protection against fire damage</li>\n<li><i>protection-projectile</i> - Provides protection against projectile damage</li>\n<li><i>silk-touch</i> - Allows blocks to drop themselves instead of fragments (for example, stone instead of cobblestone)</li>\n<li><i>water-worker</i> - Increases the speed at which a player may mine underwater</li></ul>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Permissions\">Permissions</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Blacksmith&amp;action=edit&amp;section=10\" title=\"Edit section: Permissions\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>If you want a player to be able to use a blacksmith, give them the \n</p>\n<ul><li><i>blacksmith.reforge</i> permission node.</li></ul>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Configuration\">Configuration</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Blacksmith&amp;action=edit&amp;section=11\" title=\"Edit section: Configuration\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>The configuration file for Blacksmiths is found in <i>/plugins/Blacksmith/config.yml</i> and is generated automatically when not present.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Default_Configuration\">Default Configuration</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Blacksmith&amp;action=edit&amp;section=12\" title=\"Edit section: Default Configuration\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>The blacksmith config.yml contains the default settings for <b>new</b> blacksmiths. All of these options can be changed on existing blacksmiths in the Citizens/saves.yml.\nMouseover each section to view it's description. All settings under <i>defaults</i> can be overriden by individual blacksmiths in the Citizens 2 saves.yml.\n</p>\n<pre># Blacksmith Configuration\n<span title=\"Base-prices block\" class=\"help\">base-prices:</span>\n <span title=\"Default base price. This will be used if per-item base prices are not specified.\" class=\"help\">default: 10</span>\n<span title=\"price-per-durability-point block\" class=\"help\">price-per-durability-point:</span>\n <span title=\"Default price-per-durability-point. This will be used if per-item price-per-durability-point is not specified.\" class=\"help\">default: 1</span>\n<span title=\"Default settings block, most can be changed per-NPC\" class=\"help\">defaults:</span>\n <span title=\"Messages block. All messages that are sent to the player involving the blacksmith\" class=\"help\">messages:</span>\n   <span title=\"Message sent to the player(s) when the blacksmith is already working on something\" class=\"help\">busy-with-player: &lt;c&gt;I'm busy at the moment. Come back later!</span>\n   <span title=\"Message sent to the player who gave the blacksmith the item it is working on\" class=\"help\">busy-with-reforge: &lt;c&gt;I'm working on it. Be patient!</span>\n   <span title=\"Message sent to the player during the cool down period\" class=\"help\">cooldown-not-expired: &lt;c&gt;You've already had your chance! Give me a break!</span>\n   <span title=\"Message sent to the player to confirm they want to reforge the item\" class=\"help\">cost: &lt;e&gt;It will cost &lt;a&gt;&lt;price&gt; &lt;e&gt;to reforge that &lt;a&gt;&lt;item&gt;&lt;e&gt;! Click again to reforge!</span>\n   <span title=\"Message sent to the player when the reforge fails\" class=\"help\">fail-reforge: &lt;c&gt;Whoops! Didn't mean to do that! Maybe next time?</span>\n   <span title=\"Message sent to the player when they don&#39;t have enough money to complete the reforge\" class=\"help\">insufficient-funds: &lt;c&gt;You don't have enough money to reforge that item!</span>\n   <span title=\"Message sent to the player when they try to reforge an invalid item\" class=\"help\">invalid-item: &lt;c&gt;I'm sorry, but I don't know how to reforge that!</span>\n   <span title=\"Message sent to the player when the reforge starts\" class=\"help\">start-reforge: &lt;e&gt;Ok, let's see what I can do...</span>\n   <span title=\"Message sent to the player when the reforge is successful\" class=\"help\">successful-reforge: &lt;a&gt;There you go! All better!</span>\n <span title=\"Drops the reforged item on the ground instead of giving it to the player\" class=\"help\">drop-item: true</span>\n <span title=\"The percent chance of the reforge failing\" class=\"help\">percent-chance-to-fail-reforge: 10</span>\n <span title=\"The percent chance of the reforge adding extra enchantments\" class=\"help\">percent-chance-for-extra-enchantments: 5</span>\n <span title=\"Maximum amount of enchantments that an item can have\" class=\"help\">maximum-enchantments: 3</span>\n <span title=\"Delays block. Determines delays for blacksmith usage\" class=\"help\">delays-in-seconds:</span>\n   <span title=\"Maximum time it will take to reforge an item\" class=\"help\">maximum: 30</span>\n   <span title=\"Minimum time it will take to reforge an item\" class=\"help\">minimum: 5</span>\n   <span title=\"Time the player has to wait after reforging something before trying again\" class=\"help\">reforge-cooldown: 60</span>\n<span title=\"Enchantment modifiers block\" class=\"help\">enchantment-modifiers:</span>\n <span title=\"Default enchantment modifier. This will be used if per-enchantment modifiers are not specified.\" class=\"help\">default: 5</span>\n</pre>\n<div class=\"padded\" style=\"font-size: 12px; padding: 5px\">\n<table class=\"wikitable collapsible collapsed\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Usage\" title=\"Category:Usage\">Usage</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Installation\" title=\"Installation\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Frequently_Asked_Questions\" title=\"Frequently Asked Questions\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Editors\" title=\"Editors\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Characters\" title=\"Characters\">Characters</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/API\" title=\"API\">API</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32;\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Configuration\" title=\"Category:Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Configuration\" title=\"Configuration\">Configuration</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Data_Storage\" title=\"Data Storage\">Data Storage</a>\n</td></tr></tbody></table>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145814\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.102 seconds\nReal time usage: 0.145 seconds\nPreprocessor visited node count: 315/1000000\nRevision size: 10112/2097152 bytes\nPost‐expand include size: 7108/2097152 bytes\nTemplate argument size: 2665/2097152 bytes\nHighest expansion depth: 4/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 264/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   74.300      1 -total\n 46.86%   34.816     25 Template:H:title\n 10.25%    7.616      1 Template:NavBox\n  4.90%    3.641      1 Template:Trait\n  4.31%    3.204     10 Template:·\n-->\n\n<!-- Render ID 824cd566-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "API"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Configuration"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Data Storage"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Editors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Text Syntax"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Configuration"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Usage"
+      }
+    ],
+    "images": [
+      "Blacksmith.png"
+    ],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Updates",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Blacksmith",
+        "byteoffset": 559,
+        "anchor": "Updates",
+        "linkAnchor": "Updates"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "How to Use",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Blacksmith",
+        "byteoffset": 1222,
+        "anchor": "How_to_Use",
+        "linkAnchor": "How_to_Use"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Installation",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "Blacksmith",
+        "byteoffset": 1237,
+        "anchor": "Installation",
+        "linkAnchor": "Installation"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "General Information",
+        "number": "3.1",
+        "index": "4",
+        "fromtitle": "Blacksmith",
+        "byteoffset": 1466,
+        "anchor": "General_Information",
+        "linkAnchor": "General_Information"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Interaction",
+        "number": "3.2",
+        "index": "5",
+        "fromtitle": "Blacksmith",
+        "byteoffset": 1929,
+        "anchor": "Interaction",
+        "linkAnchor": "Interaction"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Prices",
+        "number": "4",
+        "index": "6",
+        "fromtitle": "Blacksmith",
+        "byteoffset": 2280,
+        "anchor": "Prices",
+        "linkAnchor": "Prices"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Base Price",
+        "number": "4.1",
+        "index": "7",
+        "fromtitle": "Blacksmith",
+        "byteoffset": 2544,
+        "anchor": "Base_Price",
+        "linkAnchor": "Base_Price"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Durability",
+        "number": "4.2",
+        "index": "8",
+        "fromtitle": "Blacksmith",
+        "byteoffset": 2766,
+        "anchor": "Durability",
+        "linkAnchor": "Durability"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Enchantments",
+        "number": "4.3",
+        "index": "9",
+        "fromtitle": "Blacksmith",
+        "byteoffset": 4304,
+        "anchor": "Enchantments",
+        "linkAnchor": "Enchantments"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Permissions",
+        "number": "5",
+        "index": "10",
+        "fromtitle": "Blacksmith",
+        "byteoffset": 6442,
+        "anchor": "Permissions",
+        "linkAnchor": "Permissions"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Configuration",
+        "number": "6",
+        "index": "11",
+        "fromtitle": "Blacksmith",
+        "byteoffset": 6568,
+        "anchor": "Configuration",
+        "linkAnchor": "Configuration"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Default Configuration",
+        "number": "6.1",
+        "index": "12",
+        "fromtitle": "Blacksmith",
+        "byteoffset": 6721,
+        "anchor": "Default_Configuration",
+        "linkAnchor": "Default_Configuration"
+      }
+    ],
+    "showtoc": ""
+  }
+}

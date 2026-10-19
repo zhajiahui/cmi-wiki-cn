@@ -1,0 +1,448 @@
+[
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/0/09/CheckLog.png",
+    "pages": [
+      "logs"
+    ],
+    "file": "docs/wiki/assets/ebef943cd59c-CheckLog.png",
+    "status": "saved",
+    "sha256": "b9823ba4d43ca8dfeafbf982b2da4615ba059c4bc9a02f0d7f11f6799b8a96a0",
+    "bytes": 49982,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/0/09/StormcallersLogo.png",
+    "pages": [
+      "sentry"
+    ],
+    "file": "docs/wiki/assets/c5fd25a69bc5-StormcallersLogo.png",
+    "status": "saved",
+    "sha256": "0c9e7971cf68f6ab12e10fcc44c6e616d853c76ecd5aa97c33a53df5d6c62de8",
+    "bytes": 770264,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/1/14/Builder.png",
+    "pages": [
+      "builder"
+    ],
+    "file": "docs/wiki/assets/4f270eb49ef3-Builder.png",
+    "status": "saved",
+    "sha256": "26294fe257879299a12bb4f8c2024242cf1d856021f9bd9f937b1c747e8698d6",
+    "bytes": 53979,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/1/1d/PyromancersLogo.png",
+    "pages": [
+      "sentry"
+    ],
+    "file": "docs/wiki/assets/11fb02bb2e2b-PyromancersLogo.png",
+    "status": "saved",
+    "sha256": "089346a4c9548575c7eca381dc63e4ef34696b9c9aa5a7417e64666966e9a6ea",
+    "bytes": 625022,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/2/2a/Shop_Settings.png",
+    "pages": [
+      "shops"
+    ],
+    "file": "docs/wiki/assets/50bf754ced26-Shop_Settings.png",
+    "status": "saved",
+    "sha256": "f94cabc009abb76225c8b25b4d06a0aa8772047dacb68c2068b5bd15701b479b",
+    "bytes": 8305,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/3/30/Denizen-Logo-Large.png",
+    "pages": [
+      "denizen",
+      "denizen-0.7"
+    ],
+    "file": "docs/wiki/assets/294c24060a9e-Denizen-Logo-Large.png",
+    "status": "saved",
+    "sha256": "df0257d43d87779e89bb3a09005fb3cf8b35fdd0b102c6c3b86a79fa0f629968",
+    "bytes": 33092,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/4/40/Item_Result_preview.png",
+    "pages": [
+      "shops"
+    ],
+    "file": "docs/wiki/assets/d6a1cb30bca3-Item_Result_preview.png",
+    "status": "saved",
+    "sha256": "05b1423fd51e3af9689a20e9d37babd763d15f5d391c1b13c0ac58229aa96f64",
+    "bytes": 28903,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/4/47/Denizen.png",
+    "pages": [
+      "denizen-0.6"
+    ],
+    "file": "docs/wiki/assets/2d980f38bc28-Denizen.png",
+    "status": "saved",
+    "sha256": "31b8ee5c287bbb3c9b2ad12726225256143f32d3feb2cb168e49bbeba55d196c",
+    "bytes": 13910,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/4/49/Trader_shop.png",
+    "pages": [
+      "shops"
+    ],
+    "file": "docs/wiki/assets/b5d893594dac-Trader_shop.png",
+    "status": "saved",
+    "sha256": "bec9ebf340feb0a088916c94620460a50d82985be8e46e85774421cde5f274f0",
+    "bytes": 12759,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/5/5b/Alchemist.png",
+    "pages": [
+      "alchemist"
+    ],
+    "file": "docs/wiki/assets/2c66e6ccf806-Alchemist.png",
+    "status": "saved",
+    "sha256": "c3257fed32911b47676bfeb4fdf47ab9e7f389b9b48bbda373176c982c475a9f",
+    "bytes": 16222,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/5/5f/Script_Repository.png",
+    "pages": [
+      "denizen-0.6"
+    ],
+    "file": "docs/wiki/assets/8fc494ea0fc5-Script_Repository.png",
+    "status": "saved",
+    "sha256": "a82cd80a3e313b7e242a9461e6b07ef01bd465a9bf7c51046f7280cdaa339685",
+    "bytes": 12667,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/6/60/Item_Cost_.png",
+    "pages": [
+      "shops"
+    ],
+    "file": "docs/wiki/assets/a1ef0592555a-Item_Cost_.png",
+    "status": "saved",
+    "sha256": "659117b5a63389dd63406ca3eea2e699eaeb72fedfcc2c786cc7401e808cad69",
+    "bytes": 9197,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/6/6f/Edit_Item_Screen.png",
+    "pages": [
+      "shops"
+    ],
+    "file": "docs/wiki/assets/c143f84c894c-Edit_Item_Screen.png",
+    "status": "saved",
+    "sha256": "18d305c6c3d9bf9e3a643fb6efaf6e2a83c14dd35dcde0ad265ad13bf56e1d4e",
+    "bytes": 23809,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/8/87/ArchersLogo.png",
+    "pages": [
+      "sentry"
+    ],
+    "file": "docs/wiki/assets/11568759e46c-ArchersLogo.png",
+    "status": "saved",
+    "sha256": "c09d7c1434e675df46a593058b4d929fcf92682b2af78c80109e44113450f169",
+    "bytes": 382009,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/8/89/Maggie_Choice_Debug.png",
+    "pages": [
+      "denizen-0.7-example-scripts-advanced-scripts",
+      "denizen-0.7-in-game-commands"
+    ],
+    "file": "docs/wiki/assets/4cc05749f803-Maggie_Choice_Debug.png",
+    "status": "saved",
+    "sha256": "302c524a2b93dba1ef25f68748cc2e60f94dbb21adefa254ce832332f1569364",
+    "bytes": 32824,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/8/8d/Postal.png",
+    "pages": [
+      "postal"
+    ],
+    "file": "docs/wiki/assets/25418203b285-Postal.png",
+    "status": "saved",
+    "sha256": "53375169328ae6caa29b91d676c3fa7e94899c49b5823bcd9ce4bcb9c708445a",
+    "bytes": 7493,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/9/92/Sentinel_Header_Gif.gif",
+    "pages": [
+      "sentinel"
+    ],
+    "file": "docs/wiki/assets/b3fa7f479796-Sentinel_Header_Gif.gif",
+    "status": "saved",
+    "sha256": "1ce27062a3035276fe5966a4d6201848934dc6d831b011953f5565dd023f4280",
+    "bytes": 931373,
+    "content_type": "image/gif"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/9/99/Edit_Shop_Screen.png",
+    "pages": [
+      "shops"
+    ],
+    "file": "docs/wiki/assets/95af797d7ea9-Edit_Shop_Screen.png",
+    "status": "saved",
+    "sha256": "0acd75a82f2782898e78e794291b53e5fb49a71272accf4e9f7e7460b7291c53",
+    "bytes": 27612,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/9/9c/Shop_Result_1.png",
+    "pages": [
+      "shops"
+    ],
+    "file": "docs/wiki/assets/e4b0dd39bc0e-Shop_Result_1.png",
+    "status": "saved",
+    "sha256": "5e9cb922a23736d8110480601a5ab277083262a4b9eca42cd19dc470ed2d1022",
+    "bytes": 8078,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/a/ac/Shop_Show_on_right_click.png",
+    "pages": [
+      "shops"
+    ],
+    "file": "docs/wiki/assets/360fcfbd2a9d-Shop_Show_on_right_click.png",
+    "status": "saved",
+    "sha256": "d8901030659ce8620607d63fbca782ea5f71bada2ce7bc720a12878dd1356320",
+    "bytes": 39849,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/b/b4/Shop_type_set.png",
+    "pages": [
+      "shops"
+    ],
+    "file": "docs/wiki/assets/08d38ea696a6-Shop_type_set.png",
+    "status": "saved",
+    "sha256": "770f512cc0b6109d27578b285b9a467496e3be74c9fbecf5aed673bfdda2dee3",
+    "bytes": 8398,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/b/be/Blacksmith.png",
+    "pages": [
+      "blacksmith"
+    ],
+    "file": "docs/wiki/assets/1ac6365c1033-Blacksmith.png",
+    "status": "saved",
+    "sha256": "a7cf1539d2046db28679c54ed12e3f674c40124c3705a81ab80043258d79a0d0",
+    "bytes": 16136,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/c/c2/Figure_1_-_Denizen_file_structure.png",
+    "pages": [
+      "denizen-0.6",
+      "denizen-0.7-file-structure"
+    ],
+    "file": "docs/wiki/assets/58c77bc5a9e6-Figure_1_-_Denizen_file_structure.png",
+    "status": "saved",
+    "sha256": "1b5d7b898446e1833ae9becdc00f3c4f8225ea7c33805dd069e83dd031e2e42e",
+    "bytes": 23769,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/c/c3/Maggie_Buying_Feathers.png",
+    "pages": [
+      "denizen-0.7-example-scripts-advanced-scripts"
+    ],
+    "file": "docs/wiki/assets/6625867c1488-Maggie_Buying_Feathers.png",
+    "status": "saved",
+    "sha256": "d3a26391ad42ba4c4b9360db711d432b8ccddd1eda2f5bc29cae9a961f3667e6",
+    "bytes": 364930,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/c/cd/WitchDoctors.png",
+    "pages": [
+      "sentry"
+    ],
+    "file": "docs/wiki/assets/bfda0ff3807c-WitchDoctors.png",
+    "status": "saved",
+    "sha256": "b300853ce2f2d10e2939bae04725a362e1c316c79f6d8ce881e82b3d688a9d51",
+    "bytes": 670522,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/d/d0/Moxienpclogo.jpg",
+    "pages": [
+      "moxienpc"
+    ],
+    "file": "docs/wiki/assets/16dde4772496-Moxienpclogo.jpg",
+    "status": "saved",
+    "sha256": "e46e0681037619c8c2b4e6e76fc845da3bc26af2a405da431566b70464e4c31d",
+    "bytes": 123436,
+    "content_type": "image/jpeg"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/d/d8/Item_Display_Preview.png",
+    "pages": [
+      "shops"
+    ],
+    "file": "docs/wiki/assets/87477416bbb5-Item_Display_Preview.png",
+    "status": "saved",
+    "sha256": "97abedefbc762a825af10cbc0e8bebd37fc9c56fb8981dec08394a7e9153f2a9",
+    "bytes": 26536,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/d/dc/Tenowgs_850_Denizens.png",
+    "pages": [
+      "denizen-0.7-bonus-content-pictures"
+    ],
+    "file": "docs/wiki/assets/1d5a5c95e39d-Tenowgs_850_Denizens.png",
+    "status": "saved",
+    "sha256": "30b1542e885338da9f54281bf9e6d33e0828bf604db0c86263054bdc1382706f",
+    "bytes": 333598,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/d/de/Maggie_Feather_Debug.png",
+    "pages": [
+      "denizen-0.7-example-scripts-advanced-scripts"
+    ],
+    "file": "docs/wiki/assets/e10648a2853b-Maggie_Feather_Debug.png",
+    "status": "saved",
+    "sha256": "477afd1b97d5290ee694a1a16e30cd67d1e47de266464c739c084dac68dffd78",
+    "bytes": 38478,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/e/e5/Sentry.png",
+    "pages": [
+      "sentry"
+    ],
+    "file": "docs/wiki/assets/a52ba55b79ab-Sentry.png",
+    "status": "saved",
+    "sha256": "23cbb6fa1b3ff967d9bc46e8f76ba02aa7a0617de6dcf883971892a568a307d9",
+    "bytes": 18639,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/e/e9/Edit_Shop_Items.png",
+    "pages": [
+      "shops"
+    ],
+    "file": "docs/wiki/assets/6fc63ff7310c-Edit_Shop_Items.png",
+    "status": "saved",
+    "sha256": "37cb4d97aaf1444ccfe2514e04cd08434d9256e9d2d6bef06b1eda09ee562ba9",
+    "bytes": 6045,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/f/f4/Shop_Result_2.png",
+    "pages": [
+      "shops"
+    ],
+    "file": "docs/wiki/assets/2f1c80d8e67c-Shop_Result_2.png",
+    "status": "saved",
+    "sha256": "c708fc6ead417a27c86aed39069ee6060bff081eba118b32da315fa91e7afafe",
+    "bytes": 7534,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/f/fd/KnightSentry.png",
+    "pages": [
+      "sentry"
+    ],
+    "file": "docs/wiki/assets/a79df9f98801-KnightSentry.png",
+    "status": "saved",
+    "sha256": "460e7225ccdba9cb90674b13c6fe26018d2a49739e644c3f3132fff4fe36abaf",
+    "bytes": 506059,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/File:CitizensUI.png",
+    "pages": [
+      "citizensui"
+    ],
+    "status": "unavailable",
+    "reason": "Official MediaWiki imageinfo has no original file for this declared image name"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/File:Http://i.imgur.com/pahiSQf.png",
+    "pages": [
+      "denizen-notepad"
+    ],
+    "status": "unavailable",
+    "reason": "Official MediaWiki imageinfo has no original file for this declared image name"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/File:Http://i.imgur.com/w8o7v4u.png",
+    "pages": [
+      "denizen-notepad"
+    ],
+    "status": "unavailable",
+    "reason": "Official MediaWiki imageinfo has no original file for this declared image name"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/File:Mimic.png",
+    "pages": [
+      "parrot"
+    ],
+    "status": "unavailable",
+    "reason": "Official MediaWiki imageinfo has no original file for this declared image name"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/9/92/CitizensUI1.png",
+    "pages": [
+      "citizensui"
+    ],
+    "file": "docs/wiki/assets/d16a6a57d166-CitizensUI1.png",
+    "status": "saved",
+    "sha256": "0e11a4813dd0831093471b5df0f81ce535ec0b105345da5d1f79e702b3a6365d",
+    "bytes": 68306,
+    "content_type": "image/png",
+    "official_image_sha1": "8326e1f252e4993b14a2d98c37786416bfdac6c7"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/e/e8/CitizneUI2.png",
+    "pages": [
+      "citizensui"
+    ],
+    "file": "docs/wiki/assets/4392b79e511a-CitizneUI2.png",
+    "status": "saved",
+    "sha256": "c10e8e6f600f80511ecdb9ae752601cd8f96961b483b4d26806691123f7410d0",
+    "bytes": 49657,
+    "content_type": "image/png",
+    "official_image_sha1": "102a8d8eb2012104cbc5306acfed6f105475f2e4"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/d/de/DtlTraders.png",
+    "pages": [
+      "dtltraders"
+    ],
+    "file": "docs/wiki/assets/2b2168db0e21-DtlTraders.png",
+    "status": "saved",
+    "sha256": "39bb2fe6ab4c5133378731aa971e149904d506e1bc60c44735c2037c3d040c34",
+    "bytes": 107764,
+    "content_type": "image/png",
+    "official_image_sha1": "b758a5c445c796367421afa74f42b925d161d185"
+  },
+  {
+    "source_url": "https://wiki.citizensnpcs.co/images/1/1b/Wordmark.png",
+    "pages": [
+      "citizens-wiki"
+    ],
+    "file": "docs/wiki/assets/92776946a8d7-Wordmark.png",
+    "status": "saved",
+    "sha256": "28eac6694cec3d9091c98f326c55c153b226322f5638b38669973703e43ccbb6",
+    "bytes": 14776,
+    "content_type": "image/png",
+    "official_image_sha1": "4ff8b5701e43aa443725df143d1e3a353635fa70"
+  }
+]

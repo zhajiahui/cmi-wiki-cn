@@ -1,0 +1,87 @@
+[File:CitizensUI.png](https://wiki.citizensnpcs.co/index.php?title=Special:Upload&wpDestFile=CitizensUI.png "File:CitizensUI.png")  
+  
+**CitizensUI**
+
+|  |  |
+| --- | --- |
+| **Author** | jrbudda |
+| **Version** | 0.8.0 |
+| **Citizens build** | 2.0 dev build #318 |
+| **Other dependencies** | Citizens 2 at least. |
+| **Download** | [Link](https://github.com/jrbudda/CitizensUI/downloads) |
+| **Description:** CitizensUI is a .NET graphical user interface for the minecraft/bukkit plugin Citizens2 and associated character plugins. | |
+
+CitizensUI is a .NET graphical user interface for the minecraft/bukkit plugin Citizens2 and associated character plugins.
+
+Features:
+
+- No YAML to deal with!
+- Create, Edit, Copy and Delete Citizens 2.0 NPCs from outside the game.
+- Edit Citizens 2.0 [traits](https://wiki.citizensnpcs.co/Characters "Characters") [Sentry](https://wiki.citizensnpcs.co/Sentry "Sentry"), [Denizen](https://wiki.citizensnpcs.co/Denizen "Denizen") and [CitiTraders](https://wiki.citizensnpcs.co/CitiTraders "CitiTraders") options.
+- Create and Edit [Denizen](https://wiki.citizensnpcs.co/Denizen "Denizen") scripts and assignments.
+  - Pick your requirements, commands, items, colors, and scripts from convient drop-down lists.
+  - Add large blocks of text with color to denizen scripts, with optional waits between lines.
+
+|  |  |
+| --- | --- |
+|  |  |
+
+## ChangeLog
+
+- 9/4/2012 (0.8.0) Full support for Denizen Activity Scripts and assignments. Fixed a bunch of UI quirks. Support for latest Cititraders.
+- 9/2/2012 (0.7.4.2) Change text encoding to support extended characters... maybe. Use previous build if you experience problems and let me know.
+- 9/2/2012 (0.7.4.1) Major updates to the Basic panel, support for new formats in Citizens release. Support for Cititraders 'owner-only' mode. Bugfixes
+- 8/28/2012: Syntax updates for Denizen commands and requirements. Added Default Activity field. Updates for latest Sentry.
+- 8/17/2012: Bugfixes and preliminary support for Denizen Activities. v0.7.3.2
+- 8/5/2012: CitizensUI now supports Sentry. v0.7.2
+- 8/1/2012: CitizensUI now supports CitiTraders. v0.7.1
+- 7/29/2012: CitizensUI 0.7 is currently compatible only with citizens2 build 249+ and Denizen build 223+
+
+## Compatibility
+
+If your files were created using versions of citizens2 older than 223, Citizens UI WILL convert them for you to the new file format.
+
+Download the supported plugins here:
+
+- [Citizens2](http://ci.citizensnpcs.net/job/Citizens2/)
+- [Denizen](https://wiki.citizensnpcs.co/Denizen "Denizen")
+- [CitiTraders](https://wiki.citizensnpcs.co/CitiTraders "CitiTraders")
+- [Sentry](https://wiki.citizensnpcs.co/Sentry "Sentry")
+
+## Installation
+
+To install:
+
+- You will need .NET framework 3.5. Typically this means Windows but [Mono](http://www.mono-project.com/Main_Page) may be able to run it on other platforms.
+- Open the latest zip file from the [downloads](#top) page
+- Extract the contents to the directory of your choice.
+- Run the CitizensUI.exe
+- The first time you run the program, it will prompt you to select your minecraft server 'plugins' directory.
+- Click Load and it will load the data from the Citizens saves.yml, and the Denizen assignments.yml and all the files in the Denizen scripts folder.
+
+Add and edit to your heart's delight.
+
+When done, click save, this will backup and then overwrite the previously existing files.
+
+Reload your citizens and denizen from the server. Any new NPCs you created will have to be spawned to set their location.
+
+## Options
+
+Denizen scripts can be saved in 3 ways:
+
+- 1 file per script.
+- 1 file per NPC. This will also make a single file for unassigned and multi-assigned scripts.
+- 1 file containing all scripts. This is the default.
+
+## Known Limitations
+
+- Script Command and Requiremnt data is not verified for syntax. The proper syntax for each command is shown, it is up to you to format the data correctly.
+- Alchemist and Blacksmith not fully supported yet.
+- Cannot edit npc location or waypoints.
+- Does not load or list denizen Bookmarks
+
+## Issues
+
+Please report issues [on github](https://github.com/jrbudda/CitizensUI/issues)
+
+[Donate to jrbudda](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=JVBJLN5HJJS52&lc=US&item_name=jrbudda&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)

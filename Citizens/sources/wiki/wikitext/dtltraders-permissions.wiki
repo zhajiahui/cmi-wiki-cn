@@ -1,0 +1,13 @@
+Permissions reference for dtlTraders v3
+
+== Basic ==
+
+Soon
+
+== Pattern ==
+
+Soon
+
+== Planned ==
+
+Soon

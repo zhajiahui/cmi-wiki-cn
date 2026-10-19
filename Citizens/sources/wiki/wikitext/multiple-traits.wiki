@@ -1,0 +1,20 @@
+All Citizens 2.0 behavior is dictated by Traits.
+
+Traits can be applied to the NPCs and will handle events and interaction in specific ways.
+
+The cool thing is a NPC can have multiple traits assigned to it. Including multiple [[Characters|Character]] Traits.
+
+An example is the [[Wallet]] Trait. This trait allows the NPC to have and use economy money. This Trait is useless by itself but works when the NPC is also assigned the [[Denizen]] or [[Trader]] trait.
+
+[[Characters]] are really just complicated Traits.
+
+Assigning multiple [[Characters]] traits can lead to powerful results, but also potential conflicts. 
+
+NPCs with the [[Denizen]] trait should use the commands for that trait to turn on and off specific interactions that may cause conflict.
+
+For example if you want to make a [[Blacksmith]] that wanders throughout the town using Denizen [[Activities]] to dictate his movement, you would want to turn off [[Click Triggers]] in the [[Denizen]] Trait so that right-clicking the [[Blacksmith]] would perform the proper [[Blacksmith]] commands and not trigger any [[Denizen]] scripts.
+
+
+Using the command
+:'''/trait [traitname]
+Will toggle the trait on and off for the selected NPC.

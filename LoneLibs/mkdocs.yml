@@ -1,3 +1,6 @@
 site_name: LoneLibs 中文资料
 nav:
 - 插件说明: index.md
+- 插件 Wiki:
+  - LoneLibs 官方发布说明: wiki/plugin-page.md
+  - LoneLibs 仓库说明: wiki/readme.md

@@ -1,0 +1,47 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "News",
+    "pageid": 93,
+    "revid": 3636,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><ul><li>Oct 4, 2012: Wiki updated from 1.19.1 to 1.19.2</li>\n<li>Sep 1, 2012: Citizens 2.0 has been released.</li>\n<li>Aug 24, 2012: CitizensNPCs.net has moved to CitizensNPCs.com, and the <a rel=\"nofollow\" class=\"external text\" href=\"http://citizensnpcs.com/converter/\">Converter</a> now supports <a href=\"/CitiTraders\" title=\"CitiTraders\">CitiTraders</a>.</li>\n<li>Aug 6, 2012: Citizens2 now has <a href=\"/Scripting\" title=\"Scripting\">Scripting support</a>!</li>\n<li>July 30, 2012: Dear <a href=\"/User:NeonMaster\" title=\"User:NeonMaster\">master of the nyan cats</a>, I have updated the wiki.</li>\n<li>May 2, 2012: Moved some stuff around on the wiki, fixed some bugs, sent <a href=\"/A_message_to_Wikia\" title=\"A message to Wikia\">A message to Wikia</a> to a Wikia staff member.</li>\n<li>Feb 19, 2012: Citizens documentation moved to <a href=\"/Category:Citizens1\" title=\"Category:Citizens1\">1.x subpages</a>, transition to Citizens2 begins!</li>\n<li>Feb 16, 2012: <a rel=\"nofollow\" class=\"external text\" href=\"http://ci.citizensnpcs.net\">Jenkins</a> is back!</li>\n<li>Feb 13, 2012: 1.1.6 has been released.  Several bugs fixed, new KillNPC quest objective added.</li>\n<li>Jan 30, 2012: <del>Our Jenkins site is currently not uploading the most recent builds. You must use our BukkitDev page to get the 1.1.5 download.</del> See above.</li>\n<li>Jan 30, 2012: 1.1.5 has been released for use with the new RB 1.1 R3.</li></ul>\n\n<!-- \nNewPP limit report\nCached time: 20261019145843\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.015 seconds\nReal time usage: 0.027 seconds\nPreprocessor visited node count: 1/1000000\nRevision size: 1081/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 1/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 9395e1e4-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "A message to Wikia"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "CitiTraders"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Scripting"
+      },
+      {
+        "ns": 2,
+        "exists": "",
+        "*": "User:NeonMaster"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Citizens1"
+      }
+    ],
+    "images": [],
+    "sections": []
+  }
+}

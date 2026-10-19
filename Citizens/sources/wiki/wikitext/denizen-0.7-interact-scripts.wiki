@@ -1,0 +1,231 @@
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://one.denizenscript.com/denizen/cmds/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://one.denizenscript.com/denizen/cmds/denizen/vids Tutorial Videos] on youtube or the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+
+<s>
+== Interact Scripts ==
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+
+Scripts are defined in the plugins/Denizen/scripts/ folder. Any .yml file in that directory will be loaded into Denizen. For example purposes on this website, reference to script.yml is made, but again, jimbobjoe.yml or 'skeeter the cat.yml' would work just the same..
+</div>
+
+
+==== General layout of an Interact Script ====
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+This small 'outline' below shows the general layout of an Interact Script. Remember: SPACING is INCREDIBLY important with YML. If you are receiving a <code>SnakeYML</code> error in your console when working with any YML file, 99% of the time it is because of bad spacing or a missing ':' colon. YAML tutorials can be intimidating, but [http://ess.khhq.net/wiki/YAML_Tutorial this small tutorial] on the Essentials wiki is pretty useful for basic YAML, which is the extent of which Denizens uses.
+
+<pre>
+'Name of script':   # Name Node
+  Type: Interact    # Type Node
+  Requirements:     # Requirements Node
+    Mode: ...
+    List: 
+    - ...
+    - ...
+  Steps:            # Steps Node
+   1:               # Step Node
+    Some Trigger:   # Trigger Node
+      Trigger: ...
+      Script:     # Script Node
+        - ...
+        - ...
+     Another Trigger:
+      Script:
+        - ...
+        - ...
+</pre>
+
+For information on what goes in Requirements and Steps, keep reading. What is show above is just a an outline of the correct spacing, not a valid script! Let's take a look at a few small scripts, below.
+</div>
+
+==== A few small scripts ====
+
+...just to get a small look of some basic ways to use scripts. The rest of this document will go into detail about the specifics of each part. Some of the functionality described may require additional reading.
+
+This scripts below is a neat little way to leave a hint. Upon a Player coming into proximity, this script will trigger the NPC looking at a target while holding a small conversation with the player.
+<pre>
+"A Hint in the Sky":
+  Type: Interact   
+  Requirements:
+    Mode: None
+  Steps:
+    1:
+      Proximity Trigger:
+        Script:
+        - ^COOLDOWN 15
+        - LOOK CLOSE
+        - ^CHAT "Look up there! What could that possibly be used for?"
+        - LOOK BOOKMARK:upthere DURATION:10
+        - WAIT 1
+        - CHAT "If only I could figure out how to make it, I can't find any stairs!"
+</pre>
+
+
+Below is a script for a nice fellow who will help an adventurer out in the night-time. Keep in mind that Interact Scripts only define one set of rules for a Denizen NPC... player-interaction. Imagine this next script combined with some activities that make the Denizen NPC scope out and wander an area in some woods.
+
+<pre>
+"Night-time Helper":
+  Type: Interact
+  Requirements:
+    Mode: All
+    List:
+    - TIME NIGHT
+  Steps:
+    1:
+      Click Trigger:
+        Script:
+        - ^ZAP DURATION:60
+        - ENGAGE DURATION: 5
+        - LOOK CLOSE DURATION:5
+        - CHAT "It's dark out here, man!"
+        - CHAT "You really gotta watch out for those Zombies... they're all over the place!"
+    2:
+      Click Trigger:
+        Script:
+        - ^COOLDOWN 3600
+        - LOOK CLOSE DURATION:5
+        - CHAT "You again, eh? Hey man.. you need some torches?"
+        - WAIT 1
+        - GIVE TORCH QTY:12
+</pre>
+
+
+Scripts can also start a story-line of adventures, all activated by scripts working together, thanks to the FLAG, FAIL, and FINISH commands. This small script below could be the start of a Quest, with two different outcomes, if utilized properly.
+
+==== Name Node ====
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+This node is pretty self-explanatory, but here are some things to keep in mind.
+* Names, just like nodes are case-sensitive! <code>'This script name'</code> is different than <code>'THIS SCRIPT NAME'</code>.
+* Names that contain spaces should have single or double quotes around it. ie: <code>"This script":</code> or <code>'This script':</code> is acceptable.
+* If the name includes a single quote in it, you must use double quotes around it, or 'escape' the quote with another quote. ie: <code>"John's Script":</code> or <code>'John<nowiki>''</nowiki>s Script':</code>
+</div>
+
+
+==== Type Node ====
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+Let's Denizen and you to easily know the type of script. For interact scripts, as explained in this section, use <code>TYPE: INTERACT</code>. For reference, there are also TASK scripts and ACTIVITY scripts, which are covered in their appropriate sections.
+</div>
+
+
+==== Requirements Node ====
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+This node sets the rules for the player to qualify for the script. There are a couple different options that you should know when using requirements. For example:
+
+<code>
+  Requirements:
+    Mode: All
+    List:
+    - TIME Night
+    - MONEY 1000000
+    - STORMY
+</code>
+
+This would be a difficult script to obtain, for sure. To trigger, the time must be night-time, the player would need one million units of currency, and the weather must be storming, but it shows the flexibility of requirements. First is the 'Mode'. Currently there are three different types. Second is the requirement type, with arguments if applicable.
+</code>
+
+
+===== Requirements Mode =====
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+<code>[] indicates required field.</code>
+
+{{Denizen Requirement Type Color |white|
+ALL
+| &nbsp;&nbsp;Requires all requirements listed to be met.
+}}
+{{Denizen Requirement Type Color |white|
+ANY #
+| &nbsp;&nbsp;Requires the specified number of requirements to be met out of the total of requirements.
+}}
+{{Denizen Requirement Type Color |white|
+NONE
+| &nbsp;&nbsp;No requirements need to be met. There is also no need to have a <tt>LIST</tt> node if using <tt>NONE</tt>.
+}}
+</div>
+
+=====Requirements=====
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+Denizen has a large assortment of Requirements at your disposal. For a complete list, and information on those requirements,
+see: [[Denizen/0.7/Interact Scripts/Interact Requirements]]
+
+Remember, requirements are also easily extensible by plugin programmers, or maybe even you!<br>
+See: [[Denizen/0.7/Interact Scripts/Custom Interact Requirements]]
+
+</div>
+
+
+==== Steps Node ====
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+Each script can have multiple steps, each with multiple triggers. A player can only ever be on 1 step for a script. When a script is selected to run, a query is made to the Denizen saves to see if the Player has completed any steps. If no entry is found, the player starts on Step 1. 
+
+Here's an example of s script making good use of steps. Note the ZAP command is what moves a player from one step to the next, it is NOT automatic!
+
+<pre>
+'Welcome to Harbortown':
+  Type: Interact
+  Requirements:
+    Mode: NONE
+  Steps:
+    '1':
+      Click Trigger:
+        Script:
+        - CHAT "What's your name, stranger?"
+      Chat Trigger:
+        '1':
+          Trigger: My name is /<PLAYER>/.
+          Script:
+          - CHAT "Ah ha, your name sounds familiar!"
+          - CHAT "Are you from around this area?"
+          - ZAP
+    '2':
+      Click Trigger:
+        Script:
+        - HINT
+      Chat Trigger:
+        '1':
+          Trigger: /Yes/, I grew up in Harbortown!
+          Script:
+          - CHAT "I thought so, welcome back! 
+            Have you heard about Tom the Taylor? 
+            Isn't that just horrible?"
+          - ZAP 3 
+        '2':
+          Trigger: /No/, you must be mistaken. 
+          Script:
+          - CHAT "Oh, sorry about that." 
+          - CHAT "Hey, if you're looking for some work, 
+            Bill the Baker is understaffed! 
+            This is the bakery's busy season."
+          - ZAP 4
+    '3':
+      Click Trigger:
+        Script:
+        - CHAT "I wonder if Tom the Taylor is doing any better."
+        - NARRATE "Perhaps you should check on Tom the Taylor."
+    '4':
+      Click Trigger:
+        Script:
+        - CHAT "Oh, nice to see you again <PLAYER>!"
+        - CHAT "Have you stopped by the bakery?"
+</pre>
+
+</div>
+
+*For a list of the available Triggers see [[Denizen/0.7/Interact_Scripts/Triggers|Triggers]]
+*For a list of the available Commands see [[Denizen/0.7/Interact_Scripts/Commands|Commands]]
+
+==Assigning==
+See [[Denizen/0.7/Assignments#Interact_Assignment]]
+
+
+
+</div>
+
+[[Category:Denizen 0.7]]</s>

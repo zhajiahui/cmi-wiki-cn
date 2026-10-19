@@ -1,0 +1,36 @@
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://meta.denizenscript.com/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+<div style="margin-right:2.0em; padding:10px; margin-top:30px; font-family:camingodos-web; font-size:110%;">
+<span style="font-family:natalya-alternate-one; font-size:650%; margin-right:-7px; margin-left:-10px;">J</span>ust for fun, here's some pictures we've come across from our users.
+
+
+
+[[File:Tenowgs 850 Denizens.png|thumb|400px|850 Denizen NPCs Wandering on a 7x7 platform. Taken by tenowg.]]
+==== 850 Wandering Denizens ====
+
+<p>
+850 Denizen NPCs using an Activity Script with the WANDER command on a 7x7 platform. The server maintained 20TPS, though it did use a bit of CPU. Taken by tenowg.<br>
+<br>
+<tt><nowiki><tenowg> was going to try for 1000 but my fingers got tired</nowiki></tt>
+</p>
+
+[[Category:Denizen 0.7]]

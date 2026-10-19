@@ -1,0 +1,183 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Dialog Reference",
+    "pageid": 301,
+    "revid": 5005,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Syntax\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Syntax</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-2\"><a href=\"#Values\"><span class=\"tocnumber\">1.1</span> <span class=\"toctext\">Values</span></a></li>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Rule_syntax\"><span class=\"tocnumber\">1.2</span> <span class=\"toctext\">Rule syntax</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Statement_syntax\"><span class=\"tocnumber\">1.3</span> <span class=\"toctext\">Statement syntax</span></a></li>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#Random_syntax\"><span class=\"tocnumber\">1.4</span> <span class=\"toctext\">Random syntax</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-6\"><a href=\"#Events\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Events</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-7\"><a href=\"#Standard_variables_available\"><span class=\"tocnumber\">2.1</span> <span class=\"toctext\">Standard variables available</span></a></li>\n<li class=\"toclevel-2 tocsection-8\"><a href=\"#onchat\"><span class=\"tocnumber\">2.2</span> <span class=\"toctext\">onchat</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-9\"><a href=\"#Statements\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Statements</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-10\"><a href=\"#Remember\"><span class=\"tocnumber\">3.1</span> <span class=\"toctext\">Remember</span></a></li>\n<li class=\"toclevel-2 tocsection-11\"><a href=\"#Forget\"><span class=\"tocnumber\">3.2</span> <span class=\"toctext\">Forget</span></a></li>\n<li class=\"toclevel-2 tocsection-12\"><a href=\"#Say\"><span class=\"tocnumber\">3.3</span> <span class=\"toctext\">Say</span></a></li>\n<li class=\"toclevel-2 tocsection-13\"><a href=\"#Code\"><span class=\"tocnumber\">3.4</span> <span class=\"toctext\">Code</span></a></li>\n<li class=\"toclevel-2 tocsection-14\"><a href=\"#Denizen_Script\"><span class=\"tocnumber\">3.5</span> <span class=\"toctext\">Denizen Script</span></a></li>\n</ul>\n</li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Syntax\">Syntax</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Dialog_Reference&amp;action=edit&amp;section=1\" title=\"Edit section: Syntax\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Values\">Values</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Dialog_Reference&amp;action=edit&amp;section=2\" title=\"Edit section: Values\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<pre>10, 1.02, 123 - number\n\"test\" - text\n\"${message}\" - text with query value inside\n$message - query value\n[10, 12, 12...] - list of values\n{\"key\"&#160;: value, \"key2\"&#160;: value...} - dictionary\n</pre>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Rule_syntax\">Rule syntax</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Dialog_Reference&amp;action=edit&amp;section=3\" title=\"Edit section: Rule syntax\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<pre>rule rulename {\n   criteria events=\"any\"...;\n   // statements here\n}\n</pre>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Statement_syntax\">Statement syntax</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Dialog_Reference&amp;action=edit&amp;section=4\" title=\"Edit section: Statement syntax\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<pre>rule example {\n    // criteria\n    say \"example\", $sender; // arguments can be without names\n    say message:\"example\", target:$sender; // or all named to prevent ambiguity\n    say \"example\", target:$sender; // or only some named\n}\n</pre>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Random_syntax\">Random syntax</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Dialog_Reference&amp;action=edit&amp;section=5\" title=\"Edit section: Random syntax\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<pre>response example {\n    random {\n        say \"Hi\", \"p:fullwall\"&#160;: 0.5;\n        say \"Hi2\", \"p:fullwall\"&#160;: 0.3;\n    }\n}\n</pre>\n<p>Each statement is checked for the given probability; if the check fails, it moves on to the next one. Once a successful check is reached, the statement is executed and no more are checked.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Events\">Events</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Dialog_Reference&amp;action=edit&amp;section=6\" title=\"Edit section: Events\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading5\"><h5 id=\"Standard_variables_available\">Standard variables available</h5><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Dialog_Reference&amp;action=edit&amp;section=7\" title=\"Edit section: Standard variables available\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ul><li><i>Entity under some root name</i></li></ul>\n<pre>root.health&#160;: entity's current health\nroot.maxhealth&#160;: entity's max health\nroot.type&#160;: entity type\nroot.location.x&#160;: x \nroot.location.y&#160;: y \nroot.location.z&#160;: z \nroot.location.pitch&#160;: pitch \nroot.location.yaw&#160;: yaw \nroot.location.world&#160;: world\n</pre>\n<ul><li><i>Player under some root name</i></li></ul>\n<pre>root.name&#160;: name\n</pre>\n<div class=\"mw-heading mw-heading5\"><h5 id=\"onchat\">onchat</h5><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Dialog_Reference&amp;action=edit&amp;section=8\" title=\"Edit section: onchat\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<pre>message&#160;: the message involved in the event\nsender&#160;: the sender\n</pre>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Statements\">Statements</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Dialog_Reference&amp;action=edit&amp;section=9\" title=\"Edit section: Statements\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ul><li>[] - required argument</li>\n<li>() - optional argument</li>\n<li>... - repeated argument</li>\n<li>Arguments can be given without explicit keys, and will be parsed in order of required and then optional arguments.</li></ul>\n<div class=\"mw-heading mw-heading5\"><h5 id=\"Remember\">Remember</h5><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Dialog_Reference&amp;action=edit&amp;section=10\" title=\"Edit section: Remember\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<pre>remember [$fact:value (10ns|ms|s|m|h|d (expiration time)) (-p (persistent)), ($fact2:value ...)];\n</pre>\n<div class=\"mw-heading mw-heading5\"><h5 id=\"Forget\">Forget</h5><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Dialog_Reference&amp;action=edit&amp;section=11\" title=\"Edit section: Forget\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<pre>forget [memory:\"factname\" | [\"factname1\", \"factname2\"...]];\n</pre>\n<div class=\"mw-heading mw-heading5\"><h5 id=\"Say\">Say</h5><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Dialog_Reference&amp;action=edit&amp;section=12\" title=\"Edit section: Say\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<pre>say [message:\"message\"], [target:\"p:playername\"|\"n:npcid\"|\"broadcast\"|\"log\"|fact of type 'Player'];\n</pre>\n<div class=\"mw-heading mw-heading5\"><h5 id=\"Code\">Code</h5><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Dialog_Reference&amp;action=edit&amp;section=13\" title=\"Edit section: Code\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<pre>java|js|py|lua|rb|clj|scala [code:\"code\"]\n</pre>\n<p>Evaluates raw code based on input. Note: JS is built into Java, but all others require additional programs. Eg. rb requires installing JRuby, scala requires installing scala, etc.\nJava evaluation is done within a run() method of an anonymous runnable class. Only org.bukkit imports can be unprefixed; message fullwall if you want more to be automatically imported.\n</p>\n<div class=\"mw-heading mw-heading5\"><h5 id=\"Denizen_Script\">Denizen Script</h5><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Dialog_Reference&amp;action=edit&amp;section=14\" title=\"Edit section: Denizen Script\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<pre>dtask [name:\"script name\"], [player:query player | \"playername\"], (denizen:query NPC or Denizen | \"denizen ID\" | denizen ID as number)\ndtask [name:\"script name\"], [denizen:query NPC or Denizen | \"denizen ID\" | denizen ID as number], (player:query player | \"playername\")\n</pre>\n<p>Requires <a href=\"/Denizen\" title=\"Denizen\">Denizen</a> 0.8 to be installed.\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145858\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.015 seconds\nReal time usage: 0.017 seconds\nPreprocessor visited node count: 41/1000000\nRevision size: 2661/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 9c86b363-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Syntax",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Dialog_Reference",
+        "byteoffset": 0,
+        "anchor": "Syntax",
+        "linkAnchor": "Syntax"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Values",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "Dialog_Reference",
+        "byteoffset": 11,
+        "anchor": "Values",
+        "linkAnchor": "Values"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Rule syntax",
+        "number": "1.2",
+        "index": "3",
+        "fromtitle": "Dialog_Reference",
+        "byteoffset": 216,
+        "anchor": "Rule_syntax",
+        "linkAnchor": "Rule_syntax"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Statement syntax",
+        "number": "1.3",
+        "index": "4",
+        "fromtitle": "Dialog_Reference",
+        "byteoffset": 307,
+        "anchor": "Statement_syntax",
+        "linkAnchor": "Statement_syntax"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Random syntax",
+        "number": "1.4",
+        "index": "5",
+        "fromtitle": "Dialog_Reference",
+        "byteoffset": 569,
+        "anchor": "Random_syntax",
+        "linkAnchor": "Random_syntax"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Events",
+        "number": "2",
+        "index": "6",
+        "fromtitle": "Dialog_Reference",
+        "byteoffset": 902,
+        "anchor": "Events",
+        "linkAnchor": "Events"
+      },
+      {
+        "toclevel": 2,
+        "level": "5",
+        "line": "Standard variables available",
+        "number": "2.1",
+        "index": "7",
+        "fromtitle": "Dialog_Reference",
+        "byteoffset": 913,
+        "anchor": "Standard_variables_available",
+        "linkAnchor": "Standard_variables_available"
+      },
+      {
+        "toclevel": 2,
+        "level": "5",
+        "line": "onchat",
+        "number": "2.2",
+        "index": "8",
+        "fromtitle": "Dialog_Reference",
+        "byteoffset": 1292,
+        "anchor": "onchat",
+        "linkAnchor": "onchat"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Statements",
+        "number": "3",
+        "index": "9",
+        "fromtitle": "Dialog_Reference",
+        "byteoffset": 1376,
+        "anchor": "Statements",
+        "linkAnchor": "Statements"
+      },
+      {
+        "toclevel": 2,
+        "level": "5",
+        "line": "Remember",
+        "number": "3.1",
+        "index": "10",
+        "fromtitle": "Dialog_Reference",
+        "byteoffset": 1585,
+        "anchor": "Remember",
+        "linkAnchor": "Remember"
+      },
+      {
+        "toclevel": 2,
+        "level": "5",
+        "line": "Forget",
+        "number": "3.2",
+        "index": "11",
+        "fromtitle": "Dialog_Reference",
+        "byteoffset": 1704,
+        "anchor": "Forget",
+        "linkAnchor": "Forget"
+      },
+      {
+        "toclevel": 2,
+        "level": "5",
+        "line": "Say",
+        "number": "3.3",
+        "index": "12",
+        "fromtitle": "Dialog_Reference",
+        "byteoffset": 1783,
+        "anchor": "Say",
+        "linkAnchor": "Say"
+      },
+      {
+        "toclevel": 2,
+        "level": "5",
+        "line": "Code",
+        "number": "3.4",
+        "index": "13",
+        "fromtitle": "Dialog_Reference",
+        "byteoffset": 1899,
+        "anchor": "Code",
+        "linkAnchor": "Code"
+      },
+      {
+        "toclevel": 2,
+        "level": "5",
+        "line": "Denizen Script",
+        "number": "3.5",
+        "index": "14",
+        "fromtitle": "Dialog_Reference",
+        "byteoffset": 2323,
+        "anchor": "Denizen_Script",
+        "linkAnchor": "Denizen_Script"
+      }
+    ],
+    "showtoc": ""
+  }
+}

@@ -1,0 +1,189 @@
+{{NoSupport}}
+'''Wizards''' are the most versatile NPC type. They perform 5 different tasks: storm-toggling, teleportation, command-execution, mob-spawning, and time-changing. You can set a wizard up to get drained of mana or set it to unlimited mana. You interact with a wizard by left and right-clicking it with the interact-item (default is a feather). If a wizard's mana isn't at the maximum level, it will regenerate every 6000 server ticks (can be changed in ''citizens.yml'').
+
+== Configuration Nodes ==
+These nodes can be found in ''citizens.yml''. They deal with the configuration of wizards.
+
+{| class="wikitable collapsible collapsed" style="text-align: center; width: 100%"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="3" | '''Configuration Nodes'''
+|-
+! style="width: 250px;" | Setting
+! style="width: 200px;" | Default Value
+! Description
+|-
+| economy.prices.wizard.creation
+| 100
+| Amount that is charged when an NPC is toggled to a wizard for the first time
+|-
+| economy.prices.wizard.(mode)
+| 100
+| Amount that is charged each time a player uses the specific mode
+|-
+| wizards.mana-costs.(mode)
+| 5
+| Amount of mana that is drained from a wizard when a mode is used
+|-
+| wizards.max-locations
+| 10
+| Maximum locations that a wizard can have at once
+|-
+| wizards.max-mana
+| 100
+| Maximum mana that a wizard can have
+|-
+| wizards.interact-item
+| 288
+| ID of the item that a player must use to interact with a wizard
+|-
+| wizards.regen-mana
+| true
+| Whether to regenerate mana
+|-
+| wizards.regen-rate
+| 6000
+| Ticks between each mana-regen (1 server tick = 1/20 of a second)
+|-
+| wizards.regen-item
+| 348
+| ID of the item that a player can use to manually regenerate mana
+|}
+
+== Commands ==
+Commands that are specific to wizards.
+
+{| class="wikitable collapsible collapsed" style="text-align: center; width: 100%"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="7" | '''Wizard Commands'''
+|-
+! style="width: 250px;" | Command
+! style="width: 200px;" | Args Description
+! style="width: 150px;" | Require Selected
+! style="width: 150px;" | Require Ownership
+! style="width: 150px;" | Required Mode
+! style="width: 170px;" | Permission
+! Description
+|-
+| /wizard help
+| ''None''
+| false
+| false
+| ''None''
+| citizens.wizard.use.help
+| View the help page for wizards
+|-
+| /wizard status
+| ''None''
+| true
+| true
+| ''None''
+| citizens.wizard.use.status
+| View the current mode and mana of a wizard
+|-
+| /wizard unlimited
+| ''None''
+| true
+| true
+| ''None''
+| citizens.wizard.modify.unlimited
+| Toggle a wizard's mana as unlimited
+|-
+| /wizard mode [mode]
+| ''mode'' - mode to set a wizard to
+| true
+| true
+| ''None''
+| citizens.wizard.modify.mode
+| Change a wizard's mode
+|-
+| /wizard locations
+| ''None''
+| true
+| true
+| teleport
+| citizens.wizard.use.locations
+| View a wizard's locations
+|-
+| /wizard addloc [location]
+| ''location'' - name of the location to add
+| true
+| true
+| teleport
+| citizens.wizard.modify.addloc
+| Add your current location to a wizard's locations
+|-
+| /wizard removeloc [location]
+| ''location'' - name of the location to remove
+| true
+| true
+| teleport
+| citizens.wizard.modify.removeloc
+| Add your current location to a wizard's locations
+|-
+| /wizard command [command]
+| ''command'' - name of command to add, split with spaces for multiple arguments
+| true
+| true
+| command
+| citizens.wizard.modify.command
+| Set a wizard's command to execute
+|}
+
+== Wizard Modes ==
+All modes require the interact-item to be in your hand in order for it to work. You can also change the amount of mana that each mode drains from a wizard in ''citizens.yml''.
+
+'''Mode''' - name of the mode, use this when changing the wizard's mode with ''/wizard mode''
+<br>'''Description''' - short description of the mode
+
+{| class="wikitable collapsible collapsed" style="text-align: center; width: 100%"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="2" | '''Wizard Modes'''
+|-
+! style="width: 250px;" | Mode
+! Description
+|-
+| teleport
+| Ability to teleport to various locations. You can add and remove locations using ''/wizard addloc'' and ''/wizard removeloc''. Left-click to cycle through locations, right-click to teleport.
+|-
+| storm
+| Ability to toggle a storm in your world. Right-click to toggle a storm.
+|-
+| command
+| Ability to execute commands. Set a command to execute using the ''/wizard command'' command. Right-click to execute the command. (Note: A player must have permission to use the command for it to work)
+|-
+| time
+| Ability to change the time in your world. There are 4 time settings that you can cycle through by left-clicking: morning, day, afternoon, and night. Right-click to change the time.
+|-
+| spawn
+| Ability to spawn mobs at your location. Left-click to cycle through mobs (all Minecraft mobs are supported). Right-click to spawn the mob.
+|}
+
+== Other Permissions ==
+
+'''Permission''' - permission node
+<br>'''Description''' - description of permission node
+
+{| class="wikitable collapsible collapsed" style="text-align: center; width: 100%"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="3" | '''Wizard Permissions'''
+|-
+! style="width: 250px;" | Permission
+! style="width: 500px;" | Description
+|-
+| citizens.wizard.use.interact
+| Ability to interact with a wizard
+|}
+
+== Future ==
+
+* Cooldowns for all modes
+
+== FAQ ==
+'''Why can't I use wizards? I have all of the correct permissions!'''
+<br>Make sure you are using the wizard interact-item (configurable in ''citizens.yml'', default is feather).
+
+'''Why isn't my wizard working when I left-click him! I am sure that I am using the correct interact-item.'''
+<br>Left-clicking a wizard does not work in areas where PvP is disabled. Make sure your wizard is not in one of those areas and that PvP is set to true for your world. This is a Bukkit bug.
+
+{{NavBox}}
+[[Category:Citizens1]]

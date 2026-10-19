@@ -1,0 +1,100 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Versions",
+    "pageid": 348,
+    "revid": 5585,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p><b>IT IS VERY STRONGLY RECOMMENDED THAT YOU ALWAYS RUN THE LATEST MINECRAFT VERSION, AND LATEST CITIZENS VERSION. SUPPORT IS NOT POSSIBLE IF YOU ARE RUNNING AN OLD VERSION OF CITIZENS.</b>\n</p><p>Citizens supports multiple versions of Minecraft. Due to Spigot filesize limitations, the actively supported versions change over time. It does not support <i>every</i> version of Minecraft, just some.\n</p><p>For each Minecraft version 1.xx.y, only the <b>latest</b> Minecraft patch-version is supported. For example in Minecraft 1.18, the latest patch version is 1.18.2 and so the latest version of Citizens will only work with Minecraft Version 1.18.2, not 1.18 or 1.18.1. \n</p><p>Minecraft 1.8.8 support is special since it is so old and is discussed separately here: <a href=\"/Minecraft_1.8\" title=\"Minecraft 1.8\">Minecraft 1.8 Servers</a>\n</p><p>Citizens' currently supported Minecraft version list is available here<a rel=\"nofollow\" class=\"external autonumber\" href=\"https://www.spigotmc.org/resources/citizens.13811/updates\">[1]</a>.\n</p><p>Sentinel and Denizen only support the 3-4 recent major Minecraft updates e.g. 1.17.1, 1.18.2, 1.19.4. They do not support 1.8.8.\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Historical_Versions_Listing\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Historical Versions Listing</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-2\"><a href=\"#Historical_Citizens_Versions\"><span class=\"tocnumber\">1.1</span> <span class=\"toctext\">Historical Citizens Versions</span></a></li>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Historical_Denizen_Versions\"><span class=\"tocnumber\">1.2</span> <span class=\"toctext\">Historical Denizen Versions</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Historical_Depenizen_Versions\"><span class=\"tocnumber\">1.3</span> <span class=\"toctext\">Historical Depenizen Versions</span></a></li>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#Historical_Sentinel_Versions\"><span class=\"tocnumber\">1.4</span> <span class=\"toctext\">Historical Sentinel Versions</span></a></li>\n<li class=\"toclevel-2 tocsection-6\"><a href=\"#Historical_Sentry_Versions\"><span class=\"tocnumber\">1.5</span> <span class=\"toctext\">Historical Sentry Versions</span></a></li>\n</ul>\n</li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Historical_Versions_Listing\">Historical Versions Listing</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Versions&amp;action=edit&amp;section=1\" title=\"Edit section: Historical Versions Listing\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>The below lists contain versions of projects from before multi-version compatibility was in use. \n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Historical_Citizens_Versions\">Historical Citizens Versions</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Versions&amp;action=edit&amp;section=2\" title=\"Edit section: Historical Citizens Versions\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><b>Warning: These are all unsupportable.</b>\n</p><p>- 1371 1.9.4 <a rel=\"nofollow\" class=\"external autonumber\" href=\"http://ci.citizensnpcs.co/job/Citizens2/1371/\">[2]</a>\n</p><p>- 1362 1.9 and 1.9.2 <a rel=\"nofollow\" class=\"external autonumber\" href=\"http://ci.citizensnpcs.co/job/Citizens2/1362/\">[3]</a>\n</p><p>- 1166 1.7.10<a rel=\"nofollow\" class=\"external autonumber\" href=\"http://ci.citizensnpcs.co/job/Citizens2/1166/\">[4]</a>\n</p><p>- 1142 1.7.9<a rel=\"nofollow\" class=\"external autonumber\" href=\"http://ci.citizensnpcs.co/job/Citizens2/1142\">[5]</a>\n</p><p>- 1114 1.7.5<a rel=\"nofollow\" class=\"external autonumber\" href=\"http://ci.citizensnpcs.co/job/Citizens2/1114\">[6]</a>\n</p><p>- 1098 1.7.2<a rel=\"nofollow\" class=\"external autonumber\" href=\"http://ci.citizensnpcs.co/job/Citizens2/1098\">[7]</a>\n</p><p>- Cauldron 1.7.2 (Not officially supported): <a rel=\"nofollow\" class=\"external free\" href=\"https://www.dropbox.com/s/mcm7g1gmyb6f820/citizens-2.0.11-1.7.2-Cauldron-B1.jar\">https://www.dropbox.com/s/mcm7g1gmyb6f820/citizens-2.0.11-1.7.2-Cauldron-B1.jar</a>\n</p><p>- Cauldron 1.7.10 (Not officially supported): <a rel=\"nofollow\" class=\"external free\" href=\"https://www.dropbox.com/s/sn4451lffuvr8o0/citizens-2.0.13-1.7.10-Cauldron-B2.jar\">https://www.dropbox.com/s/sn4451lffuvr8o0/citizens-2.0.13-1.7.10-Cauldron-B2.jar</a>\n</p><p>1.6.4 <a rel=\"nofollow\" class=\"external text\" href=\"http://ci.citizensnpcs.co/job/Citizens2/1021\">2.0.10 1021</a>\n</p><p>1.6.2 after 2812 <a rel=\"nofollow\" class=\"external text\" href=\"http://ci.citizensnpcs.co/job/Citizens2/977\">2.0.9 977</a>\n</p><p>1.6.2 before 2812 <a rel=\"nofollow\" class=\"external text\" href=\"http://ci.citizensnpcs.co/job/Citizens2/890\">2.0.9 890</a>\n</p><p>1.6.1 <a rel=\"nofollow\" class=\"external text\" href=\"http://ci.citizensnpcs.co/job/Citizens2/881/\">2.0.9 881</a>\n</p><p>1.5.2 <a rel=\"nofollow\" class=\"external text\" href=\"http://ci.citizensnpcs.co/job/Citizens2/817\">2.0.8 817</a>\n</p><p>1.5.1 <a rel=\"nofollow\" class=\"external text\" href=\"http://ci.citizensnpcs.co/job/Citizens2/799/\">2.0.8 799</a>\n</p><p>1.5.0 <a rel=\"nofollow\" class=\"external text\" href=\"http://ci.citizensnpcs.co/job/Citizens2/778/\">2.0.8 778</a>\n</p><p>1.4.7 builds 2607-2644 <a rel=\"nofollow\" class=\"external text\" href=\"http://ci.citizensnpcs.co/job/Citizens2/763/\">2.0.7 763</a>\n</p><p>1.4.7 builds 2601 - 2607 <a rel=\"nofollow\" class=\"external text\" href=\"http://ci.citizensnpcs.co/job/Citizens2/667/\">2.0.7 667 </a>\n</p><p>1.4.6 <a rel=\"nofollow\" class=\"external text\" href=\"http://ci.citizensnpcs.co/job/Citizens2/662/\">2.0.6 662</a>\n</p><p>1.4.5 <a rel=\"nofollow\" class=\"external text\" href=\"http://ci.citizensnpcs.co/job/Citizens2/639/\">2.0.5 639</a>\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Historical_Denizen_Versions\">Historical Denizen Versions</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Versions&amp;action=edit&amp;section=3\" title=\"Edit section: Historical Denizen Versions\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><b>Warning: These are all unsupportable.</b>\n</p><p>If you use Spigot 1.14.4 or 1.15.2, the latest release that supports these versions is here: <a rel=\"nofollow\" class=\"external autonumber\" href=\"https://ci.citizensnpcs.co/job/Denizen/1760/artifact/target/Denizen-1.2.3-b1760-REL.jar\">[8]</a>\n</p><p>If you use Spigot 1.13.2, the latest release that supports that version is here: <a rel=\"nofollow\" class=\"external autonumber\" href=\"https://ci.citizensnpcs.co/job/Denizen/1723/artifact/target/Denizen-1.1.8-b1723-REL.jar\">[9]</a>\n</p><p>If you use Spigot 1.12.2, the latest release that supports that version is here: <a rel=\"nofollow\" class=\"external autonumber\" href=\"https://ci.citizensnpcs.co/job/Denizen/1712/artifact/target/Denizen-1.1.4-b1712-REL.jar\">[10]</a>\n</p><p>If you use Spigot 1.8.8, 1.9.4, 1.10.2, or 1.11.2, the last release that supports these versions is here: <a rel=\"nofollow\" class=\"external autonumber\" href=\"https://ci.citizensnpcs.co/job/Denizen/1670/artifact/target/Denizen-1.0.3-b1670-REL.jar\">[11]</a>\n</p><p>1617 1.9.4<a rel=\"nofollow\" class=\"external autonumber\" href=\"http://ci.citizensnpcs.co/job/Denizen/1617/\">[12]</a>\n</p><p>1616 1.9 and 1.9.2<a rel=\"nofollow\" class=\"external autonumber\" href=\"http://ci.citizensnpcs.co/job/Denizen/1616/\">[13]</a>\n</p><p>1610 1.8.8<a rel=\"nofollow\" class=\"external autonumber\" href=\"http://ci.citizensnpcs.co/job/Denizen/1610/\">[14]</a>\n</p><p>1575 1.8.3<a rel=\"nofollow\" class=\"external autonumber\" href=\"http://ci.citizensnpcs.co/job/Denizen/1574/\">[15]</a>\n</p><p>1544 1.7.10<a rel=\"nofollow\" class=\"external autonumber\" href=\"http://ci.citizensnpcs.co/job/Denizen/1544/\">[16]</a>\n</p><p>1483 1.7.9<a rel=\"nofollow\" class=\"external autonumber\" href=\"http://ci.citizensnpcs.co/job/Denizen/1483\">[17]</a>\n</p><p>1467 1.7.5<a rel=\"nofollow\" class=\"external autonumber\" href=\"http://ci.citizensnpcs.co/job/Denizen/1467\">[18]</a>\n</p><p>1460 1.7.2<a rel=\"nofollow\" class=\"external autonumber\" href=\"http://ci.citizensnpcs.co/job/Denizen/1460\">[19]</a>\n</p><p>- For evener older servers, <a rel=\"nofollow\" class=\"external autonumber\" href=\"https://dl.dropboxusercontent.com/u/54130586/denizen-0.9.6-VERSIONLESS.jar\">[20]</a> &lt;- 'versionless' 0.9.6 jar. Not officially supported.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Historical_Depenizen_Versions\">Historical Depenizen Versions</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Versions&amp;action=edit&amp;section=4\" title=\"Edit section: Historical Depenizen Versions\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><b>Warning: These are all unsupportable.</b>\n</p><p><a rel=\"nofollow\" class=\"external text\" href=\"http://ci.citizensnpcs.co/job/Depenizen/227/\">Build #227 for MC 1.7.10</a>\n</p><p><a rel=\"nofollow\" class=\"external text\" href=\"http://ci.citizensnpcs.co/job/Depenizen/191/\">Build #191 for MC 1.7.9</a>\n</p><p><a rel=\"nofollow\" class=\"external text\" href=\"http://ci.citizensnpcs.co/job/Depenizen/189/\">Build #189 for MC 1.7.5</a>\n</p><p><a rel=\"nofollow\" class=\"external text\" href=\"http://ci.citizensnpcs.co/job/Depenizen/187/\">Build #187 for MC 1.7.2</a>\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Historical_Sentinel_Versions\">Historical Sentinel Versions</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Versions&amp;action=edit&amp;section=5\" title=\"Edit section: Historical Sentinel Versions\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><s>69 1.10<a rel=\"nofollow\" class=\"external autonumber\" href=\"http://ci.citizensnpcs.co/job/Sentinel/69/\">[21]</a>\n</s></p><p><s>40 1.9.4<a rel=\"nofollow\" class=\"external autonumber\" href=\"http://ci.citizensnpcs.co/job/Sentinel/40/\">[22]</a>\n</s></p><p><s>36 1.9 and 1.9.2<a rel=\"nofollow\" class=\"external autonumber\" href=\"http://ci.citizensnpcs.co/job/Sentinel/36/\">[23]</a></s>\n</p><p>Use latest dev builds!\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Historical_Sentry_Versions\">Historical Sentry Versions</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Versions&amp;action=edit&amp;section=6\" title=\"Edit section: Historical Sentry Versions\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><b>WARNING: SENTRY IS OUTDATED. USE SENTINEL INSTEAD.</b>\n</p><p><s>Latest Sentry builds are always available here<a rel=\"nofollow\" class=\"external autonumber\" href=\"http://ci.citizensnpcs.co/job/Sentry/\">[24]</a>\n</s></p><p><s>Previous version list <a href=\"/Sentry#Updates\" title=\"Sentry\">Available here</a></s>\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145917\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.033 seconds\nReal time usage: 0.042 seconds\nPreprocessor visited node count: 19/1000000\nRevision size: 4921/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID a7d9dee3-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Minecraft 1.8"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Sentry"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Historical Versions Listing",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Versions",
+        "byteoffset": 1048,
+        "anchor": "Historical_Versions_Listing",
+        "linkAnchor": "Historical_Versions_Listing"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Historical Citizens Versions",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "Versions",
+        "byteoffset": 1179,
+        "anchor": "Historical_Citizens_Versions",
+        "linkAnchor": "Historical_Citizens_Versions"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Historical Denizen Versions",
+        "number": "1.2",
+        "index": "3",
+        "fromtitle": "Versions",
+        "byteoffset": 2650,
+        "anchor": "Historical_Denizen_Versions",
+        "linkAnchor": "Historical_Denizen_Versions"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Historical Depenizen Versions",
+        "number": "1.3",
+        "index": "4",
+        "fromtitle": "Versions",
+        "byteoffset": 4076,
+        "anchor": "Historical_Depenizen_Versions",
+        "linkAnchor": "Historical_Depenizen_Versions"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Historical Sentinel Versions",
+        "number": "1.4",
+        "index": "5",
+        "fromtitle": "Versions",
+        "byteoffset": 4446,
+        "anchor": "Historical_Sentinel_Versions",
+        "linkAnchor": "Historical_Sentinel_Versions"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Historical Sentry Versions",
+        "number": "1.5",
+        "index": "6",
+        "fromtitle": "Versions",
+        "byteoffset": 4681,
+        "anchor": "Historical_Sentry_Versions",
+        "linkAnchor": "Historical_Sentry_Versions"
+      }
+    ],
+    "showtoc": ""
+  }
+}

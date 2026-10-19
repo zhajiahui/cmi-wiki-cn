@@ -14,7 +14,7 @@ errors=[]
 def page_manifest(project):
     source=ROOT/project/'sources'
     rows=json.loads((source/'manifest.json').read_text(encoding='utf-8'))
-    for name in ('configuration-manifest.json','imported-configuration-manifest.json'):
+    for name in ('configuration-manifest.json','imported-configuration-manifest.json','wiki-manifest.json'):
         path=source/name
         if path.is_file():rows+=json.loads(path.read_text(encoding='utf-8'))
     return rows

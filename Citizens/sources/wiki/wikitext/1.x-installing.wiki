@@ -1,0 +1,31 @@
+{{NoSupport}}
+How to download and install the Citizens plugin to your Bukkit server.
+
+===New Installation===
+# Go to the [http://dev.bukkit.org/server-mods/citizens/ BukkitDev Citizens page] and click Download in the top corner.
+# Click Download again to download the latest Citizens package. Save the zip to your plugins folder
+# Extract the contents of the zip package to the plugins folder. You should end up with Citizens.jar and a folder called Citizens
+# Start the server how you normally would to generate the [[configuration]] files. Then shut it down again
+# Edit the [[configuration]] files to your personal preferences.
+# Start the server as you normally would.
+# Give your players permissions. See the [[Commands and Permissions]] page for detailed node information.
+# ???
+# Profit.
+
+Problems? See [[Troubleshooting]].
+
+=== Updating from 1.1.x ===
+
+# Stop your server
+# Unzip the download obtained at Bukkit-Dev.
+# Overwrite Citizens.jar and each Character Type .JAR file.
+# Start your server. Enjoy!
+
+Problems? See [[Troubleshooting]].
+
+=== Updating from earlier versions ===
+
+It is recommended when updating from early versions of Citizens that you start from scratch, however, old quest files and configuration files may still be valid.  New .JAR files should be overwritten over old versions
+
+{{NavBox}}
+[[Category:Citizens1]]

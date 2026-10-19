@@ -1,0 +1,237 @@
+<div class="infobox" style="width: 295; font-size: 12px; background: #FFFFFF; float: right; border: 1px solid #CCCCCC; margin-left:2.5em; padding: 9px;">
+{{Box|
+BORDER = #ccc|
+BACKGROUND = #aaa|
+WIDTH = 275|
+ALIGN = RIGHT|
+ICON = |
+HEADING = ''' ''' |
+CONTENT = [[image:denizen.png|center]]
+<div class="padded" style="padding: 19px; font-family:camingodos-web; font-size:110%;">
+
+'''Denizen''' is an extension for Citizens that allows scripting of NPCs to handle tasks, quests, player interaction and more! 
+
+'''Current Version:''' 0.7.6 Pre-release BETA
+
+'''Developers:''' aufdemrand
+
+'''Source:''' [https://github.com/aufdemrand/Denizen Github]
+
+'''Development Builds:''' [http://jenkins.citizensnpcs.com/job/Denizen/ Jenkins]
+
+'''Latest Developmental Build:''' [http://ci.citizensnpcs.com/job/Denizen/lastSuccessfulBuild/ {{Version2}}]
+
+'''Support tickets:''' [http://github.com/aufdemrand/Denizen/issues/ Tickets on Github], but please read the entirety of this document first.
+
+'''Donate:''' A lot of man hours has been put into Denizen. Your donations add a lot to the project and are always welcome! Your donations will probably help remodel my house and feed my kids. :) 
+[https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=jeremy%2eschroeder%40gmail%2ecom&lc=US&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted Donate to aufdemrand] Don't forget to donate to the Citizens2 project as well, as none of this would be possible without that!
+
+'''Thank You:''' A lot of people have stepped forward to help out with Denizen, and that's awesome! Special thanks to everyone who has beta tested, and a huge to these people: fullwall, AgentKid, aPunch, NeonMaster, Instinx, tenowg, groggluebutt, Wreyth, jrbudda, spidi, the list could go on!
+
+'''CitizensUI:''' For a GUI interface, check out [[CitizensUI]] by jrbudda which provides an interface for Citizens NPCs as well as managing scripts and other NPC types.
+<br>
+
+}} 
+</div>
+</div>
+
+<div style="padding:10px; font-family:camingodos-web; font-size:110%;">
+[[image:Denizen-Logo-Large.png|center]]
+
+{{#ev:youtube|oKTe8-joBUI|305|right|A small glimpse of Denizen.}}
+
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://one.denizenscript.com/denizen/cmds/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://one.denizenscript.com/denizen/cmds/denizen/vids Tutorial Videos] on youtube or the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+
+
+<span style="font-size:110%">{{color|red|yellow|This is the old Wiki for Denizen 0.7.6! Information found here does not apply to later versions of Denizen.}}</span>
+<s>
+<br><br><br>
+<span style="font-family:natalya-alternate-one; font-size:750%; margin-right:-7px; margin-left:-10px;">D</span>enizen is a great way to add [http://en.wikipedia.org/wiki/MUD MUD-style] RPG Citizens to your server. Denizen NPCs use mini scripts with steps and events to interact with the player and world. Imagine interactive gate-keepers, magical wizards, experience trainers, bankers, talking townspeople and more! They can be used in thousands of different ways, from tutorials, to questing, to administrating.. your imagination is just about the limit! Though Denizen uses Scripting, it is not to be confused with [[Scripting|Citizens2 Core Scripting]] which utilizes JavaScript and other major scripting languages to implement Goals. Instead, Denizen uses its own YML 'scripting language' which is designed to be easily read and edited by hand.
+
+<br><br>
+<div style="padding:20px; font-family:camingodos-web; font-size:110%; background-color:#EEDDEE; border-style:dotted; border-width:1px; width:55%; font-weight:500;">If you are coming from Denizen 0.6, we've attempted to compile a [[Denizen/0.7/Migration|list for helping with migration]] for users upgrading who need a brief on what needs to be changed to become compatible.
+</div>
+</div>
+
+
+<div style="padding:10px; font-family:camingodos-web; font-size:110%;">
+===How it works===
+Denizen is an extension of Citizens2 that adds an incredible amount of interactivity and automation to NPCs and Players with some of these major features:
+
+* '''The Script Engine''' carries out and sends all the commands to be executed in an orderly and predictable fashion; this is the backbone of Denizen. Currently has 3 queues, one for the Player, one for Denizen, and one for Tasks. There's not much to see on the outside, this is the interworkings of Denizen, but rest assured that this is high performance machine behind the scenes!
+* '''Interact Scripts''' are the meat of Denizen, allowing Players and NPCs to interact with each other and the world. These are highly customizable with 20+ requirement types, 40+ script commands, and thousands of different ways to use them together. This with the Denizen Script Engine also allows commands to help control the rest of Denizen with script flow commands and such.
+* '''Activity Scripts''' are exciting. Imagine Johnny Appleseed planting trees, on his own, or simple villagers wandering around and socializing. Activities, of course, work with the rest of Denizen's other functions and features, allowing hundreds of ways to use Activities to add automation and liveliness to your world. 
+* '''Activity Scheduler''' takes Activity Scripts one step further, allowing Denizen NPCs to have daily schedules, based on the Minecraft day, to allow certain functionality to different times of the day. This also enables certain Script Commands to be executed and carried out, as well.
+* '''Task Scripts''' are simple scripts that can be carried out in a variety of different ways. These can be used along side both Activity and Interact Scripts, but perhaps the most powerful way to use them is by allowing your plugin to utilize them, if you're a developer, or using other plugins that harness the ability to run a Denizen Task Script as well.
+* '''Listeners''' are currently in an 'experimental phase', but are already allowing control over minecraft and bukkit events like nothing other. This already allows scripts to keep track of and assign 'quest-like' objectives, such as a 'kill quest', if you're familiar with the C1 Quester. But whereas many quest plugins are limited to this feature alone, Denizen, of course, allows you to use this in addition and along side the rest of the plugin, making room for extremely dynamic and intricate 'quest scripts'.
+* '''Flag System''' is the key to Denizen being dynamic. An intricate, yet easy to learn 'Flag/Variable' system has been implemented into Denizen to help keep track of events, items, numbers, players, and more. The new Flag System is still getting more powerful each and every day.. it's the key to a spectacular script is sure to have a flag or two.
+* '''Extensible Commands/Requirements/Activities and more''' make it easy to add-on to Denizen with very little Java knowledge. This also makes it extremely easy to let users utilize your plugin with script commands. Denizen also has API Events to use.
+* '''Denizen Debugger'''' is an extremely friendly and informative way to test out scripts and interactions. Commands, events, and interactions are all logged in an easy to read format to show the exact progression of a script and its surroundings. No more guessing! Less headaches!
+
+
+Seem overwhelming? Stop! Start small! Denizen is easy, Denizen is simple. But. Denizen is hard, Denizen is complex. Simply put: Denizen is what you make it! Our advice? Start small, and build upon what you have. Read the wiki articles, watch the youtube videos, test our your scripts, and test out some of the sample scripts! Before you know it, you'll be a Denizen poweruser, drunken with power, just like us!
+</div>
+
+
+<div style="margin-right:2.0em; padding:10px; font-family:camingodos-web; border-style:none; font-size:110%; font-weight:500;width:100%;border-width:0px;">
+
+=Denizen=
+If you are new to Denizen, see [[Denizen/0.7/Before Using Denizen|Before Using Denizen: Getting Started]]. 
+<br>If you are having problems getting a script working please see [[Denizen/0.7/Troubleshooting|Troubleshooting]].<br>
+If you're hooked, we recommend you read all the sections in order and try out some sample scripts!
+</div>
+{|class="wikitable" style="text-align: left; border-color:white; border-style:none; vertical-align: text-top; background-color:white;"
+|- style="vertical-align:top;"
+| style="width: 60%;" |
+<div style="vertical-align: text-top; padding:16px; border-style:none; border-color:white;font-family:camingodos-web; font-size:110%; font-weight:500;width:85%;border-width:0px;">
+===Table of Contents===
+
+# [[Denizen/0.7/Before Using Denizen|Before Using Denizen & Getting Started]]
+#* [[Denizen/0.7/Start-up kit|The Start-up Kit]]
+# [[Denizen/0.7/Troubleshooting|Denizen Troubleshooting]]
+# [[Denizen/0.7/File_Structure|The File Structure]]
+#* [[Denizen/0.7/config.yml|Default config.yml]]
+# [[Denizen/0.7/In Game Commands|In Game and Console Commands]]
+# Writing Scripts
+#* [[Denizen/0.7/Interact Scripts|Introduction to Interact Scripts]]
+#** [[Denizen/0.7/Interact Scripts/Triggers|Interact Triggers]]
+#** [[Denizen/0.7/Interact Scripts/Interact Requirements|Interact Script Requirements]]
+#** [[Denizen/0.7/Interact Scripts/Commands|Script Commands]]
+#* [[Denizen/0.7/Task Scripts|Task Scripts and the Task Queue]]
+#* [[Denizen/0.7/Activity Scripts|Activity Scripts and the Scheduler]]
+#** [[Denizen/0.7/Activity Scripts/Activities|Activities and Goals]]
+# [[Denizen/0.7/Assignments|Assigning Scripts]]
+# [[Denizen/0.7/Flags|Denizen Flag System]] 
+# [[Denizen/0.7/Replaceables|Replaceable Data Tags]]
+# [[Denizen/0.7/Listeners|Denizen Listeners and Events]]
+# Examples
+#* [[Denizen/0.7/Example Scripts/Beginner Scripts|Beginner Scripts]]
+#* [[Denizen/0.7/Example Scripts/Advanced Scripts|Advanced Scripts]]
+#* [[Sentry/Sentry and Denizen|Denizen and Sentry]]
+#* [[Sentry/Builder and Denizen|Denizen and Builder]]
+# Extending Denizen
+#* [[Denizen/0.7/Interact Scritps/Custom_Commands|Extending Custom Commands]]
+#* [[Denizen/0.7/Interact Scripts/Custom_Requirements|Extending Custom Requirements]]
+#* [[Denizen/0.7/Interact Scripts/Custom_Triggers|Extending Custom Triggers]]
+#* [[Denizen/0.7/Activity Scripts/Custom_Activities|Extending Custom Activities]]
+#* [[Denizen/0.7/Activity Scripts/Event_API|Utilizing Denizen Event API]]
+# Bonus Content
+#* [[Denizen/0.7/Bonus Content/Pictures|Denizen Bonus Pictures]]
+</div>
+| style="width: 40%;" |
+
+<div style="padding:16px; vertical-align: text-top;border-color:white; border-style:none; font-family:camingodos-web; font-size:110%; font-weight:500;width:95%;border-width:0px;">
+
+===Sample Scripts===
+
+[[Denizen/0.7/Example_Scripts/Beginner_Scripts#Denizen_Basics|Denizen Basics]]
+* [[Denizen/0.7/Example_Scripts/Beginner_Scripts#Denizen_Basics|The Click and Damage Triggers]]
+* [[Denizen/0.7/Example_Scripts/Beginner_Scripts#Denizen_Basics|The Chat and Proximity Triggers]]
+[[Denizen/0.7/Example_Scripts/Beginner_Scripts#Simple,_random_conversations|Simple, random conversations]]
+* [[Denizen/0.7/Example_Scripts/Beginner_Scripts#A_conversation_with_RANDOM|A conversation with RANDOM]]
+* [[Denizen/0.7/Example_Scripts/Beginner_Scripts#A_conversation_with_ZAP_RANDOM|A conversation with ZAP RANDOM]]
+* [[Denizen/0.7/Example_Scripts/Beginner_Scripts#The_server_rules|The Server Rules]]
+* [[Denizen/0.7/Example_Scripts/Beginner_Scripts#Simple_Bank_teller|Simple Bank Teller]]
+* [[Denizen/0.7/Example_Scripts/Beginner_Scripts#Advanced_Bank_teller|Advanced Bank Teller]]
+
+</div>
+| style="width: 20%;" |
+
+<div style="padding:16px; vertical-align: text-top;border-color:white; border-style:none; font-family:camingodos-web; font-size:110%; font-weight:500;width:95%;">
+
+===Index===
+
+If you are having problems getting a script working please see [[Denizen/0.7/Troubleshooting|Denizen/Troubleshooting]].
+</div>
+|}
+
+=== Change Log ===
+<div style="margin-right:2.0em; padding:10px; font-family:camingodos-web; font-size:110%;">
+Here's what's changed!
+
+
+'''0.7.5 BETA build #455'''
+
+* {{color|red|white|'''New!'''}} OWNER requirement will require ownership of the NPC interacting. Could be used for 'command interfaces' that only the owner can access.
+
+* {{color|red|white|'''New!'''}} SNEAKING requirement requires the player be crouched when clicking. Careful on conflict with info-click for ops! Info-click can be disabled in the config.
+
+* {{color|red|white|'''New!'''}} Queue-time flag replacement can let you dynamically use flag data in a script entry. For example: - GIVE <FLAG:ExampleItemFlag> QTY:<FLAG:ExampleQtyFlag>
+
+* {{color|red|white|'''Experimental!'''}} Denizen NPCs now have their own Command Queue, and a TASK activity. This allows NPC's to use the activity scheduler to do tasks at certain times of the day.
+
+* {{color|red|white|'''Experimental!'''}} LISTEN command implemented, KILL type implemented. Return of the 'Quester'. More types coming soon. Example usage: - LISTEN KILL ID:UniqueId TYPE:ENTITY NAME:ZOMBIE QTY:5 SCRIPT:FinishIt would require the player to kill 5 zombies. When completed, it will run the task script 'FinishIt'.
+
+* {{color|red|white|'''New!'''}} Use <*> to use Chat Trigger text in EXECUTE or talk commands.
+
+* {{color|red|white|'''New!'''}} Use <*> in FLAG command to remember player input. Example usage: - FLAG PLAYER_RESPONSE:<*>
+
+
+'''0.7.5 BETA build #440:'''
+
+* {{color|red|white|'''New!'''}} API Events make extending Denizen more powerful than ever!
+
+* {{color|red|white|'''New!'''}} RUNTASK/CANCELTASK allows delayed tasks to be set, and cancelled.
+
+* {{color|red|white|'''New!'''}} HOLD command can change what a Denizen NPC is wielding.
+
+* {{color|red|white|'''New!'''}} Replaceable data for dynamically putting flags into texts!
+
+* {{color|red|white|'''New!'''}} ISLIQUID requirement can sense if a block bookmark is solid, or liquid.
+
+* {{color|red|white|'''New!'''}} IF command can evaluate a FLAG and run a TASK script.
+
+
+'''0.7 BETA builds #125 - #280:'''
+
+* {{color|red|white|'''Updated!'''}} Less bugs! We're still in beta, but there has been some major code cleanup!
+
+* {{color|red|white|'''New!'''}} Triggers, Commands, Requirements and Activities are now extensible by plugin programmers. See: [http://wiki.citizensnpcs.net/Custom_Denizen_Commands Custom Denizen Commands on the Citizens2 Wiki]. Documentation coming soon!
+
+* {{color|red|white|'''New!'''}} [[#Debug_Mode|Debug Mode]] will let you see the logic of interaction and script execution to help you find problems in scripts faster than ever. I'm striving to make this as informational and clean as possible to help you test your scripts and get good feedback on behavior.
+
+* {{color|red|white|'''New!'''}} [[#Info-click|Info-Click]] lets you see Denizen stats and specifics, such as script assignments, trigger status, activity schedule and associated bookmarks with just a crouch and a click. Requires OP.. use this!
+
+* {{color|red|white|'''New!'''}} [[#Proximity_Trigger|Proximity Triggers]] can trigger a script when a Player comes near. The most requested trigger type I got during the previous betas.
+
+* {{color|red|white|'''New!'''}} [[#Location_Trigger|Location Triggers]] can trigger a script when a Player walks over a Location Bookmark. This is kind of like a PLAYERTASK LOCATION, but better! :)
+
+* {{color|red|white|'''New!'''}} [[#Damage_Trigger|Damage Triggers]] separate the left and right clicks for more control over interaction. Look forward to a whole new set of commands to go along with this!
+
+* {{color|red|white|'''New!'''}} [[Denizen/Assignments#Overlay_Assignment_Mode|Script 'Overlay' Assignment]] mode is a whole new way to assign a script. Less copying/pasting when working with multiple scripts, not to mention more control! If you're an advanced script-user, this is for you!
+
+* {{color|red|white|'''New!'''}} [[#Interact Script Commands|ANNOUNCE command]] can make global server announcements.
+
+* {{color|red|white|'''New!'''}} [[#Interact Script Commands|RANDOM command]] will leave command execution to chance. Duck-duck-goose.
+
+* {{color|red|white|'''New!'''}} [[#Interact Script Commands|HINT command]] will hint to the Player acceptable Chat Triggers for the current step and script. Language support coming soon!
+
+* {{color|red|white|'''New!'''}} [[#Interact Script Commands|FLAG command]] lets you set 'flags', on players to store progress, important information, or other variables that can be used with the FLAG requirement. This is HUGE!
+
+* {{color|red|white|'''New!'''}} [[#Requirement Types|FLAG requirement]] can require special flags and values to be set in order to be eligible for a script. Again, this is HUGE!
+
+* {{color|red|white|'''New!'''}} [[#Requirement Types|POWERED requirement]] can check if a block bookmark has redstone power. Great idea, instinx!
+
+* {{color|red|white|'''New!'''}} The activity engine has been implemented which will allow your Denizen to do things on their own. There's a whole lot more to this concept, but you can try out the new WANDER activity in all its glory. This thing is cool, and customizable!
+
+* {{color|red|white|'''New!'''}} [[#In-game_Commands|In-game commands]] now let you easily manage triggers, bookmarks, and debug info.
+
+* {{color|red|white|'''Updated!'''}} Extended/unified command syntax for almost every existing command. Once you get over the pain of upgrading, you will drop a jaw at the new capabilities!
+
+<br>
+You can see more at the full [https://github.com/aufdemrand/Denizen/commits/master Denizen Changelog].
+</div>
+
+__NOTOC__
+
+[[Category:Denizen 0.7]]</s>

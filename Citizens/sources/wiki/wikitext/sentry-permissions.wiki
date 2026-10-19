@@ -1,0 +1,33 @@
+'''NPCs can be treated like players by many other plugins, anti-pvp plugins may interfere with Sentry!
+
+These are the permissions for /sentry commands
+
+Default access is Op.
+
+sentry.*
+:sentry.spawn
+:sentry.guard
+:sentry.equip
+:sentry.info
+:sentry.warning
+:sentry.greeting
+:sentry.target
+:sentry.ignore
+:sentry.stats.*
+::sentry.stats.strength
+::sentry.stats.armor
+::sentry.stats.speed
+::sentry.stats.nightvision
+::sentry.stats.respawn
+::sentry.stats.health
+::sentry.stats.attackrate
+::sentry.stats.healrate
+::sentry.stats.range
+::sentry.stats.warningrange
+:sentry.options.*
+::sentry.options.invincible
+::sentry.options.retaliate
+::sentry.options.drops
+::sentry.options.killdrops
+::sentry.options.criticals
+::sentry.options.friendlyfire

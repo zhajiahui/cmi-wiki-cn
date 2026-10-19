@@ -1,0 +1,125 @@
+{{NoSupport}}
+'''Guards''' perform protection, attacking enemy mobs and/or players. They can be hurt by others, so will die (and respawn). You can set a guard to follow you or to patrol an area.
+
+
+
+
+== Configuration Nodes ==
+These nodes can be found in ''citizens.yml''. They deal mostly with the default configuration for Guards.
+
+{| class="wikitable collapsible collapsed" style="text-align: center; width: 100%"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="3" | '''Guard Configuration'''
+|-
+! style="width: 250px;" | Setting
+! style="width: 200px;" | Default Value
+! Description
+|-
+| guards.default-bouncer-protection-radius
+| 10
+| The default protection radius for guard bouncers (measured in blocks).
+|-
+| guards.respawn-delay
+| 100
+| How many ticks after a guard's death before it should respawn.
+|}
+
+== Commands ==
+Commands that are specific to use with Guards
+
+{| class="wikitable collapsible collapsed" style="text-align: center; width: 100%"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="3" | '''Guard Commands'''
+|-
+! style="width: 250px;" | Command
+! style="width: 200px;" | Args Description
+! style="width: 150px;" | Require Selected
+! style="width: 150px;" | Require Ownership
+! style="width: 170px;" | Permission
+! Description
+|-
+| /guard help
+| ''None''
+| false
+| false
+| citizens.guard.use.help
+| View the help page for guards
+|-
+| /guard [type]
+| ''type'' - type to set a guard as, available options are 'bouncer', 'soldier' and 'bodyguard'
+| true
+| true
+| citizens.guard.modify.type
+| Change the guard's type
+|-
+| /guard flags [-g,m,p] (page)
+| ''-g,-m,-p'' - flag type to view <br>''page'' - page number
+| true
+| true
+| citizens.guard.use.flags
+| View currently set flags
+|-
+| /guard addflag (priority) [target] (-a,g,m,p)
+| ''priority'' - priority of the flag <br>''target'' - name of the entry to add to the flags list <br>''-a,-g,-m,-p'' - flag type to set the target as
+| true
+| true
+| citizens.guard.modify.flags
+| Add/modify flags
+|-
+| /guard delflag [target] [-p,m,g] (-a)
+| ''target'' - name of the entry to remove from the flags list <br>''-p,-m,-g'' - flag type of the target that is being removed <br>''-a'' - whether to remove all of the flag type specified
+| true
+| true
+| citizens.guard.modify.flags
+| Delete a flag
+|-
+| /guard radius [radius]
+| ''radius'' - number of blocks to set the guard's radius as
+| true
+| true
+| citizens.guard.modify.radius
+| Modify a bouncer's protection radius
+|-
+| /guard aggro
+| ''None''
+| true
+| true
+| citizens.guard.modify.aggro
+| Toggle a guard's aggressiveness
+|}
+
+=== Flags ===
+'''-p''' - player
+<br>'''-m''' - mob
+<br>'''-g''' - permission group (supports PermissionsBukkit, bPermissions, and PermissionsEx)
+<br>'''-a''' - all
+
+== Usage ==
+
+=== Flags ===
+
+Flags are the core features of guards. They define which entities should be targeted (or not targeted) by the guard, and are created by using the /guard addflag command. Flags can target monsters, players, and groups. The group targeting feature is only available with PermissionsBukkit. 
+
+Flags are by default blacklists - however, whitelists are also possible. By using '-' as the first character of a target, the flag is designated as a whitelist flag. For example, 'fullwall' is a blacklist target, while '-fullwall' is a whitelist target.
+
+Flags can also take a priority, ranging from 1-20, where lower numbers give a higher priority. Essentially, when faced with two targets, the guard will attack the entity with the higher priority. If more than one target has the highest priority found, the guard will attack the entity closest to it. This features is mainly for advanced configuration of guards, and priority will default to 1.
+
+=== Types ===
+So far, guards can be toggled to two types - bodyguards, and bouncers.
+
+==== Bouncers ====
+Bouncers are primarily area protection guards. They will stand still, protecting the radius from configured flags. When an enemy is defeated, they will path back to their base point. If an enemy moves out of the protection radius, the guard will stop targeting them (and teleport back if necessary).
+
+==== Bodyguards ====
+Bodyguards are for personal protection, and will follow you around, protecting you as necessary. They will actively seek out configured flags, until they come outside the protection radius, whereupon they will teleport to you.
+
+==== Soldiers ====
+Note: only available post-1.1.2.
+Soldiers are essentially commandable guards. Players can select soldiers they own and command them to attack players, mobs and move to blocks.
+
+== Future ==
+An inventory hotbar, for weapon switching and healing.
+Perhaps more guarding types.
+
+{{NavBox}}
+[[Category:Citizens1]]

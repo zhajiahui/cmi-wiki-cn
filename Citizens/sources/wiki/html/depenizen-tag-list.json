@@ -1,0 +1,73 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Depenizen/Tag-List",
+    "pageid": 341,
+    "revid": 5389,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://meta.denizenscript.com/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br /><br /><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1\"><a href=\"#BattleNight\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">BattleNight</span></a></li>\n<li class=\"toclevel-1\"><a href=\"#Factions\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Factions</span></a></li>\n<li class=\"toclevel-1\"><a href=\"#mcMMO\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">mcMMO</span></a></li>\n<li class=\"toclevel-1\"><a href=\"#Towny\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Towny</span></a></li>\n<li class=\"toclevel-1\"><a href=\"#Jobs\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">Jobs</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading1\"><h1 id=\"BattleNight\">BattleNight</h1></div>\n<pre>\t&lt;player.bn.class&gt;\t\t\t\t\t\t-&gt; Name of player's chosen battle class\n\t&lt;player.bn.inbattle&gt;\t\t\t\t\t-&gt; True/false is player in a battle?\n\n\t&lt;battle.arena&gt;\t\t\t\t\t\t\t-&gt; Name of arena current battle is taking place in\n\t&lt;battle.inprogress&gt;\t\t\t\t\t\t-&gt; True/false is a battle taking place?\n\t&lt;battle.timeremaining&gt;\t\t\t\t\t-&gt; Time remaining for current battle to end\n</pre>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"Factions\">Factions</h1></div>\n<pre>\t&lt;player.faction&gt; \t\t\t\t\t\t-&gt; The player's faction, as a dFaction\n\n    // Note the 's' in 'factions' for these tags!\n\t&lt;player.factions.role&gt; \t\t            -&gt; Role of player within their faction\n\t&lt;player.factions.title&gt; \t\t\t    -&gt; Title of player within their faction\n\t&lt;player.factions.power&gt; \t\t\t\t-&gt; Player's power\n\n\t&lt;faction@facName.balance&gt; \t\t\t    -&gt; Balance of specified faction\n\t&lt;faction@facName.home&gt; \t\t\t\t    -&gt; Location of specified factions's spawn point\n\t&lt;faction@facName.isopen&gt; \t\t\t    -&gt; True/false is specified faction open?\n\t&lt;faction@facName.ispeaceful&gt; \t\t    -&gt; True/false is specified faction peaceful?\n\t&lt;faction@facName.ispermanent&gt;           -&gt; True/false is specified faction permanent?\n\t&lt;faction@facName.leader&gt; \t\t    \t-&gt; Name of specified faction's leader\n\t&lt;faction@facName.playercount&gt; \t        -&gt; Amount of players within specified faction\n\t&lt;faction@facName.power&gt; \t\t\t    -&gt; Amount of specified faction's power\n\t&lt;faction@facName.relation[&lt;faction&gt;]&gt;\t-&gt; Evaluates to enemies, allies, or neutral with another faction\n\t&lt;faction@facName.size&gt; \t\t\t        -&gt; Amount of land specified faction has claimed\n</pre>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"mcMMO\">mcMMO</h1></div>\n<pre>\t&lt;player.mcmmo.level&gt;\t\t\t\t\t-&gt; Overall skill level of player\n\t&lt;player.mcmmo.level[&lt;skill&gt;]&gt;\t\t\t-&gt; Skill level of a specific skill\n\t&lt;player.mcmmo.party&gt;\t\t\t\t\t-&gt; Name of player's party\n\t&lt;player.mcmmo.rank&gt;\t\t\t\t\t\t-&gt; Overall mctop player ranking\n\t&lt;player.mcmmo.rank[&lt;skill&gt;]&gt;\t\t\t-&gt; Rank of player in a specific skill\n\t&lt;player.mcmmo.xp[&lt;skill&gt;]&gt;\t\t\t\t-&gt; Amount of player's xp for a skill\n\t&lt;player.mcmmo.xp[&lt;skill&gt;].tonextlevel&gt;\t-&gt; XP required for player to advance to skill's next level\n\n\t&lt;party[party_name].leader&gt;\t\t\t\t-&gt; Name of the specified party's leader\n    &lt;party[&lt;party&gt;].playercount&gt;            -&gt; The number of players in the specified party\n\n</pre>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"Towny\">Towny</h1></div>\n<pre>\t&lt;player.town&gt; \t\t\t\t\t\t\t-&gt; The player's town, as a dTown\n    &lt;player.nation&gt; \t\t\t\t\t\t-&gt; The player's nation, as a dNation\n\n\t&lt;town@townName.balance&gt; \t\t\t\t-&gt; Balance of specified town\n\t&lt;town@townName.board&gt; \t\t\t\t    -&gt; Board message of specified town\n\t&lt;town@townName.isopen&gt; \t\t\t\t    -&gt; True/false is specified town open?\n\t&lt;town@townName.ispublic&gt; \t\t\t\t-&gt; True/false is specified town public?\n\t&lt;town@townName.mayor&gt;                   -&gt; Name of specified town's mayor\n\t&lt;town@townName.nation&gt; \t\t\t\t    -&gt; Nation specified town belongs to\n\t&lt;town@townName.playercount&gt; \t\t\t-&gt; Population size of specified town\n\t&lt;town@townName.size&gt; \t\t\t\t\t-&gt; Amount of land specified town has claimed\n\t&lt;town@townName.spawn&gt; \t\t\t    \t-&gt; Location of specified town's spawn point\n\t&lt;town@townName.tag&gt; \t\t\t\t\t-&gt; Tag of specified town\n\t&lt;town@townName.taxes&gt; \t\t\t    \t-&gt; Tax amount of specified town\n\n\t&lt;nation@natName.balance&gt; \t\t\t\t-&gt; Balance of specified nation\n\t&lt;nation@natName.capital&gt; \t\t\t\t-&gt; Name of specified nation's capital town\n\t&lt;nation@natName.king&gt; \t\t\t    \t-&gt; Name of specified nation's king\n\t&lt;nation@natName.isneutral&gt; \t\t    \t-&gt; True/false is nation neutral?\n\t&lt;nation@natName.playercount&gt; \t\t\t-&gt; Amount of players within specified nation\n\t&lt;nation@natName.relation[&lt;nation&gt;]&gt;\t    -&gt; Evaluates to enemies, allies, or neutral with another nation\n\t&lt;nation@natName.tag&gt; \t\t\t\t\t-&gt; Tag of specified nation\n\t&lt;nation@natName.taxes&gt; \t\t\t    \t-&gt; Tax amount of specified nation\n\t&lt;nation@natName.towncount&gt; \t\t    \t-&gt; Amount of towns within specified nation\n\n\t&lt;l@location.town&gt;\t\t                -&gt; Town that has claimed specified location\n\n</pre>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"Jobs\">Jobs</h1></div>\n<pre>    &lt;player.jobs[&lt;jobName&gt;]&gt;                -&gt; The dJob of that player's specified job\n    &lt;player.jobs[&lt;jobName&gt;].xp&gt;             -&gt; Current XP of the player in a certain job\n    &lt;player.jobs[&lt;jobName&gt;].xp.max&gt;         -&gt; The maximum XP the player can have in a certain job\n    &lt;player.jobs[&lt;jobName&gt;].xp.level&gt;       -&gt; Current level for a certain job\n\n    &lt;job@jobName.description&gt;               -&gt; Job description\n    &lt;job@jobName.name&gt;                      -&gt; The name of a job\n    &lt;job@jobName.name.short&gt;                -&gt; The shortened name of a job\n    &lt;job@jobName.color&gt;                     -&gt; The name of the chat color of the job\n</pre>\n<!-- \nNewPP limit report\nCached time: 20261019145901\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.021 seconds\nReal time usage: 0.038 seconds\nPreprocessor visited node count: 16/1000000\nRevision size: 5156/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 4980/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 9e5076e3-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "BattleNight",
+        "number": "1",
+        "index": "",
+        "byteoffset": null,
+        "anchor": "BattleNight",
+        "linkAnchor": "BattleNight"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Factions",
+        "number": "2",
+        "index": "",
+        "byteoffset": null,
+        "anchor": "Factions",
+        "linkAnchor": "Factions"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "mcMMO",
+        "number": "3",
+        "index": "",
+        "byteoffset": null,
+        "anchor": "mcMMO",
+        "linkAnchor": "mcMMO"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Towny",
+        "number": "4",
+        "index": "",
+        "byteoffset": null,
+        "anchor": "Towny",
+        "linkAnchor": "Towny"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Jobs",
+        "number": "5",
+        "index": "",
+        "byteoffset": null,
+        "anchor": "Jobs",
+        "linkAnchor": "Jobs"
+      }
+    ],
+    "showtoc": ""
+  }
+}

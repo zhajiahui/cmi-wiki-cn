@@ -1,0 +1,124 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "1.x/Configuration",
+    "pageid": 2,
+    "revid": 674,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><table class=\"wikitable\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"1\" style=\"width: 100%; background-color:#F75D59; font-size: 32px; padding: 15px;\"><b>Not Supported!</b>\n</th></tr>\n<tr>\n<td style=\"font-size: 16px;\">This page is about Citizens 1.x, while the current version is Citizens 2.0.2. This page's content may be outdated, and shouldn't be trusted as being correct. See this page's talk page for more information. If you were looking for the 2.0.2 equivalent of this page, try <a href=\"/Configuration\" title=\"Configuration\">Configuration</a>. If you feel this message was displayed in error, please contact an administrator.\n</td></tr></tbody></table>\n<p>Citizens is configured with a few YAML files. Configuration files will generate automatically when you first install Citizens. If a file is missing a setting, it will automatically generate.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Configuration_files\">Configuration files</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Configuration&amp;action=edit&amp;section=1\" title=\"Edit section: Configuration files\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><a href=\"/Citizens.yml\" class=\"mw-redirect\" title=\"Citizens.yml\">citizens.yml</a> control the core components of Citizens.<br />\n<a href=\"/index.php?title=Mobs.yml&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Mobs.yml (page does not exist)\">mobs.yml</a> contain configuration nodes for <a href=\"/index.php?title=Evil_NPCs&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Evil NPCs (page does not exist)\">Evil NPCs</a>.<br />\n<a href=\"/index.php?title=Npc_profiles.yml&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Npc profiles.yml (page does not exist)\">npc_profiles.yml</a> contain information about toggleable <a href=\"/Characters\" title=\"Characters\">Characters</a>.<br />\n<a href=\"/index.php?title=Quests.yml&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Quests.yml (page does not exist)\">quests.yml</a> contain your quest files for <a href=\"/index.php?title=Quester&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Quester (page does not exist)\">Questers</a>.\n</p>\n<div class=\"padded\" style=\"font-size: 12px; padding: 5px\">\n<table class=\"wikitable collapsible collapsed\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Usage\" title=\"Category:Usage\">Usage</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Installation\" title=\"Installation\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Frequently_Asked_Questions\" title=\"Frequently Asked Questions\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Editors\" title=\"Editors\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Characters\" title=\"Characters\">Characters</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/API\" title=\"API\">API</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32;\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Configuration\" title=\"Category:Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Configuration\" title=\"Configuration\">Configuration</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Data_Storage\" title=\"Data Storage\">Data Storage</a>\n</td></tr></tbody></table>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145752\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.036 seconds\nReal time usage: 0.095 seconds\nPreprocessor visited node count: 25/1000000\nRevision size: 529/2097152 bytes\nPost‐expand include size: 2433/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 4/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   33.392      1 -total\n 51.26%   17.116      1 Template:NoSupport\n 48.34%   16.141      1 Template:NavBox\n 28.88%    9.642      2 Template:Version2F\n 17.90%    5.976     10 Template:·\n  9.81%    3.275      1 Template:Version2\n-->\n\n<!-- Render ID 752fe665-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "API"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Citizens.yml"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Configuration"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Data Storage"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Editors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Text Syntax"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      },
+      {
+        "ns": 0,
+        "*": "Mobs.yml"
+      },
+      {
+        "ns": 0,
+        "*": "Evil NPCs"
+      },
+      {
+        "ns": 0,
+        "*": "Npc profiles.yml"
+      },
+      {
+        "ns": 0,
+        "*": "Quests.yml"
+      },
+      {
+        "ns": 0,
+        "*": "Quester"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Configuration"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Usage"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Configuration files",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "1.x/Configuration",
+        "byteoffset": 206,
+        "anchor": "Configuration_files",
+        "linkAnchor": "Configuration_files"
+      }
+    ]
+  }
+}

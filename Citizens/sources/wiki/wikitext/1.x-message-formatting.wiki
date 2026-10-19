@@ -1,0 +1,38 @@
+{{NoSupport}}
+Citizens has a number of enhanced messaging features - most messages should support these features (if they don't, please tell us). 
+
+If you think of any extra features, we'd love to hear them.
+
+== General ==
+
+Messages can be coloured by using both the colour codes and names.
+
+* <[colour code]> - eg. '<1> Hello.' prints out a dark blue 'Hello.'
+* <colour name> - eg. '<gray> Hello.' - note that the names follow Bukkit's convention, with dark replaced by d ('dred' not 'dark red') and light replaced by l ('lpurple' not 'light purple'). <g> and <y> are special short cuts for green and yellow.
+
+Newlines are represented by < br> (replace leading space).
+Eg: 'This is a long < br>piece of text.' will come out as:
+'This is a long
+piece of text.'
+
+Messages can be delayed by using the <delay=ticks> tag. Remember, there are ~20 ticks in a second.
+'This is <delay=100> a piece of text.' will display 'This is ' first, then ' a piece of text.' five seconds later.
+You can use multiple <delay> tags in a single message.
+
+== Player Messages ==
+
+When a player is involved (ie. most of the time), the following features are available.
+
+* <name> - is replaced by the player's name.
+* <world> - is replaced by the name of the player's current world.
+* <h> - is replaced by the player's health.
+
+== NPC Messages ==
+
+When there is an NPC involved in the message or events surrounding the message, the following features are available.
+
+* <npc> - is replaced by the NPC's name.
+* <npcid> - is replaced by the NPC's ID.
+
+{{NavBox}}
+[[Category:Citizens1]]

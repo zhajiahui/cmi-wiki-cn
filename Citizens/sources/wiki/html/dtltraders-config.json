@@ -1,0 +1,111 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "DtlTraders/config",
+    "pageid": 236,
+    "revid": 4963,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>To be sure that everyone of you will understand the configuration file I have decided to explain each config option here, I will try to give you examples how it will affect the way you can use this plugin, and how helpful it can be if your using more advanced features. \n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Default_config_file\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Default config file</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Debug\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Debug</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Level_relations\"><span class=\"tocnumber\">2.1</span> <span class=\"toctext\">Level relations</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Locale_section\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Locale section</span></a></li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#Trader_section\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Trader section</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-6\"><a href=\"#Transactions\"><span class=\"tocnumber\">4.1</span> <span class=\"toctext\">Transactions</span></a></li>\n<li class=\"toclevel-2 tocsection-7\"><a href=\"#More_coming_soon!\"><span class=\"tocnumber\">4.2</span> <span class=\"toctext\">More coming soon!</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-8\"><a href=\"#denizen_section\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">denizen section</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Default_config_file\">Default config file</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/config&amp;action=edit&amp;section=1\" title=\"Edit section: Default config file\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<pre>debug: critical\n#locale settings\nlocale:\n  #the choosen localization to load\n  load: en\n  #should the locale updated autmaticaly, (not implemented)\n  auto-update: false\n#logging settings\nlogging:\n  #should transactions be logged? (false/FILE/SQL/WEB) , (not used at this moment)\n  log: false\n  #the foramt how transactions should be logged to FILE, (not used at this moment)\n  log-format: ''\n#statistics\nstatistics: \n  #enable or disable statistics (not implemented)\n  enabled: false\n  #metrics should be enabled? (not implemented)\n  metrics: false\n#trader types related settings\ntrader:\n  #sets if left clicking the Trader should damage him, if set to false the trader wont be damaged and the click will be handled as ManagerMode toogling\n  #when the player meets the requirements (permissions, and right-click = false)\n  #it this setting is set to true, manager modes is toggled only when sneaking \n  allow-damage: false\n  #item used to toggle between modes (air counts for anything)\n  #transaction related settings\n  transaction:\n    #sets if buying and selling should be done after clicking on a item twice in a row\n    double-click: false\n  #manager mode related settings\n  managing:\n    #the starting stock when opening a trader (buy/sell)\n    start-stock: sell\n    #right click toggling (instead of left click, which is default from 3.0+) \n    #Attention: When PvP is disabled in the world, and the NPC is Player-Type, left click may not work!\n    #if r.click toggling is enabled the item needs to be other than AIR. If not set to an item \"stick\" item will be used.\n    right-click: false\n    item: 'air'\n    #special blocks used when setting prices and limits, format =&gt; 'item_id value'\n    special-blocks:\n    - dirt 0.01\n    - wood 0.1\n    - log 10\n    - cobblestone 100\n    - stone 10000\n  #stock related settings\n  stock:\n    #default starting stock (if this stock is set and not empty!, this does not apply for player traders)\n    start-stock: 'sell'\n    #default stock size in rows, min 1, max 6 (applied on creation)\n    size: 6\n    #default stock name format, how should be the traders stock named by default, {npc} tag for npc name\n    format: '{npc}^r''s shop'\n  #wallet related settings\n  wallet:\n    #default wallet type for traders (if set to infinite player traders will use \"owner\" type instead)\n    type: 'infinite'\n    #initial wallet money on creation (does not apply for player traders)\n    money: 0.0\n  #pattern related settings\n  pattern:\n    #default patterns applied to each market and server trader uppon creation (array setting)\n    defaults: []\n    #the file where patterns are saved\n    file: 'patterns.yml'\n  #book item related settings\n  books:\n    #the file where book datas are stored\n    file: 'books.yml'\n    #how should be books stored? (file)\n    store: 'file'\n  #player trader related settings\n  player:\n    #limits of player traders per player\n    limit: 1\n    #default stock size for player traders, if set overrides the stock.size setting\n    size: 2\n    #default stock name format, how should be the traders stock named by default, {npc} tag for npc name, and {player} for the traders owner\n    #if set overrides the stock.format setting\n    format: '{npc}^r''s shop, {player}''s company'\n  #ui related settings\n  ui:\n    #item that will \"link\" to sell stock\n    sell: wool:1\n    #item that will \"link\" to buy stock\n    buy: wool:2\n    #item that will \"link\" back to a basic stock\n    back: wool:14\n    #item that will \"link\" to price managing\n    price: wool:15\n    #item that will \"link\" to limit managing\n    limit: wool:3\n    #item that will \"unlock\" the stock for eiding\n    lock: wool:4\n    #item that will \"lock\" the stock (saving all changes)\n    unlock: wool:5\n#denizen support related settings\ndenizen: []\n</pre>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Debug\">Debug</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/config&amp;action=edit&amp;section=2\" title=\"Edit section: Debug\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Plugins sometimes got a debug logger, this feature allows you and me easier bug tracking, if a bug shows up, changing this node to a lower priority value, will show more information about the plugin actions and behavior. The dtlTraders debugger got <b>six</b> logging levels, <span style=\"color:red\"><b>critical</b></span>, <span style=\"color:orange\"><b>high</b></span>, <span style=\"color:gold\"><b>normal</b></span>, <b>low</b>, <b>info</b>, <b>none</b>. \n</p><p><br />\nSetting the level to <b>none</b> will totally mute the logger, so no error will be shown when anything goes wrong (unless its really serious). \n</p><p>The <span style=\"color:red\"><b>critical</b></span> level setting shows only errors that totally break the plugin actions, so they are really rare and should be reported to the plugin dev. \n</p><p>The <span style=\"color:orange\"><b>high</b></span> level setting show errors that disturbed an action the plugin was performing, but did not changed the actions result. \n</p><p>The <span style=\"color:gold\"><b>normal</b></span> level setting shows all things that can cause more serious problems. \n</p><p>The <b>low</b> and <b>info</b> levels shows almost any information under the hood, these levels should not be used by server admins, nless you need information about the plugin behavior, the amount of data that will be sent by the logger will make the console unreadable. \n</p><p><br />\nAdditionally there are custom logging levels, but are used only for specific cases. \n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Level_relations\">Level relations</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/config&amp;action=edit&amp;section=3\" title=\"Edit section: Level relations\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<table class=\"wikitable\" style=\"\" border=\"1\">\n\n<tbody><tr>\n<th>Level\n</th>\n<th>Shows\n</th></tr>\n<tr>\n<td>None, [false, disabled]\n</td>\n<td>Nothing\n</td></tr>\n<tr>\n<td><span style=\"color:red\">Critical</span>\n</td>\n<td><span style=\"color:red\">Critical</span>\n</td></tr>\n<tr>\n<td><span style=\"color:orange\">High</span>\n</td>\n<td><span style=\"color:orange\">High</span>, <span style=\"color:red\">Critical</span>\n</td></tr>\n<tr>\n<td><span style=\"color:gold\">Normal</span>\n</td>\n<td><span style=\"color:gold\">Normal</span>, <span style=\"color:orange\">High</span>, <span style=\"color:red\">Critical</span>\n</td></tr>\n<tr>\n<td>Low\n</td>\n<td>Low, <span style=\"color:gold\">Normal</span>, <span style=\"color:orange\">High</span>, <span style=\"color:red\">Critical</span>\n</td></tr>\n<tr>\n<td>Info\n</td>\n<td>Info, Low, <span style=\"color:gold\">Normal</span>, <span style=\"color:orange\">High</span>, <span style=\"color:red\">Critical</span>\n</td></tr>\n<tr>\n<td>Custom\n</td>\n<td>Custom\n</td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Locale_section\">Locale section</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/config&amp;action=edit&amp;section=4\" title=\"Edit section: Locale section\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>This section allows you to choose what language you want to use for this plugin and if it should auto update it if a new version was found. \n</p>\n<pre>   load: en\n</pre>\n<p>This node is used to choose the language you want to use, it first looks for a file with the name <b>locale.&lt;target&gt;.yml</b> in the <b>locales</b> folder, where the <b>&lt;target&gt;</b> part is the value you set in the <b>load</b> node, so for this example it would be <b>locale.en.yml</b>\n</p><p><br />\nIt it is not present, it will try to look for that locale file in the plugins resources, if it fails to find it a second time a <b>critical</b> error is thrown, and the plugin will not work as it should.\n</p><p><br />\n</p>\n<pre>   auto-update: false\n</pre>\n<p><span style=\"color:darkcyan;font-weight:bold\">Info:</span> This node is not used!\n</p><p>Setting the <b>auto-update</b> to <b>true</b> allows to manage locale updates, if a update is found <i>(the locale version is higher)</i> for the locale you are using, it will automatically replace all lines to the newest version.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Trader_section\">Trader section</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/config&amp;action=edit&amp;section=5\" title=\"Edit section: Trader section\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>All settings in this section affects the behavior of all traders on the server, so changing any setting here will affect every trader in game, however some settings will only affect new created traders. \n</p><p><br />\n</p>\n<hr />\n<pre>   allow-damage: false\n</pre>\n<p>Allows you to change the behavior when <b>left-clicking</b> <i>(damaging)</i> a trader. When set to <b>false</b> it will disable any damage done to the trader, moreover it will check the player if he has permissions to toggle <b>manager mode</b>, unless the <b>right-click</b> setting is set to <b>true</b>. \n</p><p>If you set this setting to <b>true</b> you can damage a trader <i>(if other citizen settings allow this too)</i> and toggling <b>manager mode</b> is only possible when <b>sneaking</b>.\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Transactions\">Transactions</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/config&amp;action=edit&amp;section=6\" title=\"Edit section: Transactions\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<pre>   double-click: false\n</pre>\n<p>Changes the click behavior when buying or selling, by default if set to <b>false</b> you sell and buy items clicking once on them, if set to <b>true</b> you will need to <b>double-click</b> the item to perform any action.\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"More_coming_soon!\"><span id=\"More_coming_soon.21\"></span>More coming soon!</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/config&amp;action=edit&amp;section=7\" title=\"Edit section: More coming soon!\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"denizen_section\">denizen section</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/config&amp;action=edit&amp;section=8\" title=\"Edit section: denizen section\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<!-- \nNewPP limit report\nCached time: 20261019145850\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.016 seconds\nReal time usage: 0.017 seconds\nPreprocessor visited node count: 29/1000000\nRevision size: 8387/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3779/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 97c1ff67-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Default config file",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "DtlTraders/config",
+        "byteoffset": 272,
+        "anchor": "Default_config_file",
+        "linkAnchor": "Default_config_file"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Debug",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "DtlTraders/config",
+        "byteoffset": 4077,
+        "anchor": "Debug",
+        "linkAnchor": "Debug"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Level relations",
+        "number": "2.1",
+        "index": "3",
+        "fromtitle": "DtlTraders/config",
+        "byteoffset": 5522,
+        "anchor": "Level_relations",
+        "linkAnchor": "Level_relations"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Locale section",
+        "number": "3",
+        "index": "4",
+        "fromtitle": "DtlTraders/config",
+        "byteoffset": 6328,
+        "anchor": "Locale_section",
+        "linkAnchor": "Locale_section"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Trader section",
+        "number": "4",
+        "index": "5",
+        "fromtitle": "DtlTraders/config",
+        "byteoffset": 7328,
+        "anchor": "Trader_section",
+        "linkAnchor": "Trader_section"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Transactions",
+        "number": "4.1",
+        "index": "6",
+        "fromtitle": "DtlTraders/config",
+        "byteoffset": 8071,
+        "anchor": "Transactions",
+        "linkAnchor": "Transactions"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "More coming soon!",
+        "number": "4.2",
+        "index": "7",
+        "fromtitle": "DtlTraders/config",
+        "byteoffset": 8339,
+        "anchor": "More_coming_soon!",
+        "linkAnchor": "More_coming_soon!"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "denizen section",
+        "number": "5",
+        "index": "8",
+        "fromtitle": "DtlTraders/config",
+        "byteoffset": 8366,
+        "anchor": "denizen_section",
+        "linkAnchor": "denizen_section"
+      }
+    ],
+    "showtoc": ""
+  }
+}

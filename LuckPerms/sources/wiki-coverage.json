@@ -1,0 +1,1083 @@
+{
+  "snapshot": {
+    "repository": "https://github.com/LuckPerms/wiki",
+    "commit": "fc2919c3d5e6bfba82af31f9930273b00f08ddbf",
+    "captured_at": "2026-10-19T15:06:38.957Z",
+    "discovery": [
+      "official repository pages",
+      "official _Sidebar.md"
+    ],
+    "source_format": "original Markdown; UTF-8 LF"
+  },
+  "version": {
+    "bundled_plugin": "5.5.71",
+    "wiki": "fc2919c3d5e6bfba82af31f9930273b00f08ddbf"
+  },
+  "all_discovered_urls": [
+    "https://luckperms.net/wiki/Advanced-Setup",
+    "https://luckperms.net/wiki/Argument-based-command-permissions",
+    "https://luckperms.net/wiki/Bulk-Editing",
+    "https://luckperms.net/wiki/Command-Usage",
+    "https://luckperms.net/wiki/Configuration",
+    "https://luckperms.net/wiki/Context",
+    "https://luckperms.net/wiki/Contributing",
+    "https://luckperms.net/wiki/Credits",
+    "https://luckperms.net/wiki/Default-Groups",
+    "https://luckperms.net/wiki/Developer-API-Usage",
+    "https://luckperms.net/wiki/Developer-API",
+    "https://luckperms.net/wiki/Extensions",
+    "https://luckperms.net/wiki/External-connections",
+    "https://luckperms.net/wiki/FAQ",
+    "https://luckperms.net/wiki/General-Commands",
+    "https://luckperms.net/wiki/Group-Commands",
+    "https://luckperms.net/wiki/Home",
+    "https://luckperms.net/wiki/Hytale",
+    "https://luckperms.net/wiki/Installation",
+    "https://luckperms.net/wiki/Locale-and-Translations",
+    "https://luckperms.net/wiki/Log-Commands",
+    "https://luckperms.net/wiki/Meta-Commands",
+    "https://luckperms.net/wiki/Migrating-from-GroupManager-or-PermissionsEx",
+    "https://luckperms.net/wiki/Migration",
+    "https://luckperms.net/wiki/Network-Installation",
+    "https://luckperms.net/wiki/Parent-Commands",
+    "https://luckperms.net/wiki/Permission-Commands",
+    "https://luckperms.net/wiki/Permissions",
+    "https://luckperms.net/wiki/Placeholders",
+    "https://luckperms.net/wiki/Prefix-&-Suffix-Stacking",
+    "https://luckperms.net/wiki/Prefixes,-Suffixes-&-Meta",
+    "https://luckperms.net/wiki/Self-hosting-the-web-interfaces",
+    "https://luckperms.net/wiki/Standalone-and-REST-API",
+    "https://luckperms.net/wiki/Storage-system-errors",
+    "https://luckperms.net/wiki/Storage-types",
+    "https://luckperms.net/wiki/Switching-storage-types",
+    "https://luckperms.net/wiki/Syncing-data-between-servers",
+    "https://luckperms.net/wiki/Track-Commands",
+    "https://luckperms.net/wiki/Tracks",
+    "https://luckperms.net/wiki/Upgrading-from-v4-to-v5",
+    "https://luckperms.net/wiki/Usage",
+    "https://luckperms.net/wiki/User-Commands",
+    "https://luckperms.net/wiki/Verbose",
+    "https://luckperms.net/wiki/Web-Editor-Technical-Details",
+    "https://luckperms.net/wiki/Web-Editor",
+    "https://luckperms.net/wiki/Weight",
+    "https://luckperms.net/wiki/Why-LuckPerms"
+  ],
+  "excluded_api": [
+    {
+      "url": "https://luckperms.net/wiki/Developer-API-Usage",
+      "reason": "插件 API 接口与编程用法文档"
+    },
+    {
+      "url": "https://luckperms.net/wiki/Developer-API",
+      "reason": "插件 API 接口与编程用法文档"
+    }
+  ],
+  "unavailable": [],
+  "counts": {
+    "discovered_pages": 47,
+    "non_api_pages": 45,
+    "translated_pages": 45,
+    "excluded_api_pages": 2,
+    "unavailable_pages": 0,
+    "pending_translation_pages": 0
+  },
+  "pages": [
+    {
+      "name": "Advanced-Setup",
+      "slug": "advanced-setup",
+      "title": "高级权限设置",
+      "source_url": "https://luckperms.net/wiki/Advanced-Setup",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Advanced-Setup.md",
+      "source_file": "sources/wiki/original/advanced-setup.md",
+      "file": "wiki/advanced-setup.md",
+      "source_sha256": "6c4b74057c535a972e4466b7cad908beb4e499a0c5e1e8eec2911a2f1a26be36",
+      "source_bytes": 6821,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Argument-based-command-permissions",
+      "slug": "argument-based-command-permissions",
+      "title": "基于参数的命令权限",
+      "source_url": "https://luckperms.net/wiki/Argument-based-command-permissions",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Argument-based-command-permissions.md",
+      "source_file": "sources/wiki/original/argument-based-command-permissions.md",
+      "file": "wiki/argument-based-command-permissions.md",
+      "source_sha256": "2acf1eefb2f408c81b9f63866ae71d91751d1973c3696054ba6c687313ae5ebc",
+      "source_bytes": 12058,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Bulk-Editing",
+      "slug": "bulk-editing",
+      "title": "批量编辑",
+      "source_url": "https://luckperms.net/wiki/Bulk-Editing",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Bulk-Editing.md",
+      "source_file": "sources/wiki/original/bulk-editing.md",
+      "file": "wiki/bulk-editing.md",
+      "source_sha256": "a37661086a6d94f3780f95be08205b4186c0ca5ec2951c35ca5e8f6f9685ce99",
+      "source_bytes": 5784,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Command-Usage",
+      "slug": "command-usage",
+      "title": "命令用法",
+      "source_url": "https://luckperms.net/wiki/Command-Usage",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Command-Usage.md",
+      "source_file": "sources/wiki/original/command-usage.md",
+      "file": "wiki/command-usage.md",
+      "source_sha256": "a8d1a80ea9bb4acd5457a20824ef61be506480b914431f2e33c4cea7a7e54bad",
+      "source_bytes": 11858,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Configuration",
+      "slug": "configuration",
+      "title": "配置",
+      "source_url": "https://luckperms.net/wiki/Configuration",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Configuration.md",
+      "source_file": "sources/wiki/original/configuration.md",
+      "file": "wiki/configuration.md",
+      "source_sha256": "ae35d10c879d79c5ad3aacae9c36ebb88dc3ac2934ff548a1d1ab430655fea1d",
+      "source_bytes": 28438,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Context",
+      "slug": "context",
+      "title": "上下文",
+      "source_url": "https://luckperms.net/wiki/Context",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Context.md",
+      "source_file": "sources/wiki/original/context.md",
+      "file": "wiki/context.md",
+      "source_sha256": "bc053c3546533240fe44186c81f3525b9b53a71446caa956fb5f03e43b3c5115",
+      "source_bytes": 6932,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Contributing",
+      "slug": "contributing",
+      "title": "参与贡献",
+      "source_url": "https://luckperms.net/wiki/Contributing",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Contributing.md",
+      "source_file": "sources/wiki/original/contributing.md",
+      "file": "wiki/contributing.md",
+      "source_sha256": "b7ae135f4772a7b62d2f3b769582c27d02fdbe8a6c10dec02bb326b872d6cb46",
+      "source_bytes": 8628,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Credits",
+      "slug": "credits",
+      "title": "鸣谢与许可证",
+      "source_url": "https://luckperms.net/wiki/Credits",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Credits.md",
+      "source_file": "sources/wiki/original/credits.md",
+      "file": "wiki/credits.md",
+      "source_sha256": "a437db9dc8734d4f9c4eed6407a145c5397f7d6d2ddeb5880b5abb933a9a6785",
+      "source_bytes": 10275,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Default-Groups",
+      "slug": "default-groups",
+      "title": "默认权限组",
+      "source_url": "https://luckperms.net/wiki/Default-Groups",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Default-Groups.md",
+      "source_file": "sources/wiki/original/default-groups.md",
+      "file": "wiki/default-groups.md",
+      "source_sha256": "ea15bd27f3b55f9ca87694eedc8c60b8f8c058177baf608fda82656477fc566e",
+      "source_bytes": 2468,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Developer-API-Usage",
+      "slug": "developer-api-usage",
+      "title": "开发 API 用法",
+      "source_url": "https://luckperms.net/wiki/Developer-API-Usage",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Developer-API-Usage.md",
+      "source_file": "sources/wiki/original/developer-api-usage.md",
+      "file": "wiki/developer-api-usage.md",
+      "source_sha256": "9ffda97a1dd56d6769dc206209dd7cd66200a19a90e2bd550ec401c1f63f4722",
+      "source_bytes": 32075,
+      "status": "excluded_api",
+      "reason": "插件 API 接口与编程用法文档"
+    },
+    {
+      "name": "Developer-API",
+      "slug": "developer-api",
+      "title": "开发 API 简介",
+      "source_url": "https://luckperms.net/wiki/Developer-API",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Developer-API.md",
+      "source_file": "sources/wiki/original/developer-api.md",
+      "file": "wiki/developer-api.md",
+      "source_sha256": "acb88e90224017c7ff9d212e01843385cb2717b2ba350f6c4f3a0f8533fd9e9a",
+      "source_bytes": 9943,
+      "status": "excluded_api",
+      "reason": "插件 API 接口与编程用法文档"
+    },
+    {
+      "name": "Extensions",
+      "slug": "extensions",
+      "title": "扩展",
+      "source_url": "https://luckperms.net/wiki/Extensions",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Extensions.md",
+      "source_file": "sources/wiki/original/extensions.md",
+      "file": "wiki/extensions.md",
+      "source_sha256": "c5c7c0b51c9ebaf9e13441ac8efbd352b1d16182e9cc9ece53acde384b21e016",
+      "source_bytes": 1259,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "External-connections",
+      "slug": "external-connections",
+      "title": "外部连接",
+      "source_url": "https://luckperms.net/wiki/External-connections",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/External-connections.md",
+      "source_file": "sources/wiki/original/external-connections.md",
+      "file": "wiki/external-connections.md",
+      "source_sha256": "ca57492f3a6829763171638b741c660a77b7c097af3a8d93742f2e44630532ff",
+      "source_bytes": 5935,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "FAQ",
+      "slug": "faq",
+      "title": "常见问题",
+      "source_url": "https://luckperms.net/wiki/FAQ",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/FAQ.md",
+      "source_file": "sources/wiki/original/faq.md",
+      "file": "wiki/faq.md",
+      "source_sha256": "8f36a00baaa1716899368e36721d0a8cec081422dbc61d473ad4c160f9af849c",
+      "source_bytes": 8821,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "General-Commands",
+      "slug": "general-commands",
+      "title": "常规命令",
+      "source_url": "https://luckperms.net/wiki/General-Commands",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/General-Commands.md",
+      "source_file": "sources/wiki/original/general-commands.md",
+      "file": "wiki/general-commands.md",
+      "source_sha256": "ee0324894e3d85d066e53edd0005ab7431be1fc9cfab2a9493a30b297f7148b2",
+      "source_bytes": 10596,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Group-Commands",
+      "slug": "group-commands",
+      "title": "权限组命令",
+      "source_url": "https://luckperms.net/wiki/Group-Commands",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Group-Commands.md",
+      "source_file": "sources/wiki/original/group-commands.md",
+      "file": "wiki/group-commands.md",
+      "source_sha256": "59e15574ac1c24b48669113c7388ae0f3e6230d93a4aff3452389b332ed53d96",
+      "source_bytes": 3548,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Home",
+      "slug": "home",
+      "title": "Wiki 首页",
+      "source_url": "https://luckperms.net/wiki/Home",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Home.md",
+      "source_file": "sources/wiki/original/home.md",
+      "file": "wiki/home.md",
+      "source_sha256": "2dd9b2a593259460350a92657c856004e67d67ae89fc7dafa484dd81d9eaf189",
+      "source_bytes": 1424,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Hytale",
+      "slug": "hytale",
+      "title": "Hytale",
+      "source_url": "https://luckperms.net/wiki/Hytale",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Hytale.md",
+      "source_file": "sources/wiki/original/hytale.md",
+      "file": "wiki/hytale.md",
+      "source_sha256": "f8aacb56296b904e7ad50d87b07fcf4169441df7833164ad231d965eedfc3df2",
+      "source_bytes": 8152,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Installation",
+      "slug": "installation",
+      "title": "单服务器安装",
+      "source_url": "https://luckperms.net/wiki/Installation",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Installation.md",
+      "source_file": "sources/wiki/original/installation.md",
+      "file": "wiki/installation.md",
+      "source_sha256": "6fce8fcbaee780431344ea16f4f43301cdaa34b0409f674a0007117255c7a02a",
+      "source_bytes": 7645,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Locale-and-Translations",
+      "slug": "locale-and-translations",
+      "title": "语言与翻译",
+      "source_url": "https://luckperms.net/wiki/Locale-and-Translations",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Locale-and-Translations.md",
+      "source_file": "sources/wiki/original/locale-and-translations.md",
+      "file": "wiki/locale-and-translations.md",
+      "source_sha256": "452655485f8de1732f2c7017578ae7e9f5696f92df47ee6a9965e6ce7562fd8a",
+      "source_bytes": 1419,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Log-Commands",
+      "slug": "log-commands",
+      "title": "日志命令",
+      "source_url": "https://luckperms.net/wiki/Log-Commands",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Log-Commands.md",
+      "source_file": "sources/wiki/original/log-commands.md",
+      "file": "wiki/log-commands.md",
+      "source_sha256": "74eb06aa80b7d081c6b1de6a983a297082bf9c81b7fb61911fdb864cb32839e1",
+      "source_bytes": 2330,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Meta-Commands",
+      "slug": "meta-commands",
+      "title": "元数据命令",
+      "source_url": "https://luckperms.net/wiki/Meta-Commands",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Meta-Commands.md",
+      "source_file": "sources/wiki/original/meta-commands.md",
+      "file": "wiki/meta-commands.md",
+      "source_sha256": "f412dabf77f8bede89806ee919aec15df39a2f633cb2937f875036b16960d19a",
+      "source_bytes": 18319,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Migrating-from-GroupManager-or-PermissionsEx",
+      "slug": "migrating-from-groupmanager-or-permissionsex",
+      "title": "从 GroupManager 或 PermissionsEx 迁移",
+      "source_url": "https://luckperms.net/wiki/Migrating-from-GroupManager-or-PermissionsEx",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Migrating-from-GroupManager-or-PermissionsEx.md",
+      "source_file": "sources/wiki/original/migrating-from-groupmanager-or-permissionsex.md",
+      "file": "wiki/migrating-from-groupmanager-or-permissionsex.md",
+      "source_sha256": "0887e94d6e0a57adb52ad4d2e24a6bc1c66741d6f5326c35bf2654658764eb9d",
+      "source_bytes": 11298,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Migration",
+      "slug": "migration",
+      "title": "迁移",
+      "source_url": "https://luckperms.net/wiki/Migration",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Migration.md",
+      "source_file": "sources/wiki/original/migration.md",
+      "file": "wiki/migration.md",
+      "source_sha256": "551e4459c40d907e82a6c6bad95e68cc114a929d0b935288513ba620ba28e96a",
+      "source_bytes": 4922,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Network-Installation",
+      "slug": "network-installation",
+      "title": "多服务器安装",
+      "source_url": "https://luckperms.net/wiki/Network-Installation",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Network-Installation.md",
+      "source_file": "sources/wiki/original/network-installation.md",
+      "file": "wiki/network-installation.md",
+      "source_sha256": "7098f3d6e5080bb58a56243f158ea518a96e49851db4fb24c5c1a19b072c03f7",
+      "source_bytes": 5837,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Parent-Commands",
+      "slug": "parent-commands",
+      "title": "父级命令",
+      "source_url": "https://luckperms.net/wiki/Parent-Commands",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Parent-Commands.md",
+      "source_file": "sources/wiki/original/parent-commands.md",
+      "file": "wiki/parent-commands.md",
+      "source_sha256": "fe4f3a846fd2b13257268f1113b1d192e95866bba4650c7dbb9f9d1228c21467",
+      "source_bytes": 8061,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Permission-Commands",
+      "slug": "permission-commands",
+      "title": "权限命令",
+      "source_url": "https://luckperms.net/wiki/Permission-Commands",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Permission-Commands.md",
+      "source_file": "sources/wiki/original/permission-commands.md",
+      "file": "wiki/permission-commands.md",
+      "source_sha256": "6ddfefaf476425ac457f304a2c8e2b41aad8c9d0d9e2185b7329d0bbca8f72fe",
+      "source_bytes": 5907,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Permissions",
+      "slug": "permissions",
+      "title": "权限列表",
+      "source_url": "https://luckperms.net/wiki/Permissions",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Permissions.md",
+      "source_file": "sources/wiki/original/permissions.md",
+      "file": "wiki/permissions.md",
+      "source_sha256": "a4ad27d3e5df86c80ad93c20789439402337194cd27256998b0d43ce8ab66ed1",
+      "source_bytes": 15118,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Placeholders",
+      "slug": "placeholders",
+      "title": "占位符",
+      "source_url": "https://luckperms.net/wiki/Placeholders",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Placeholders.md",
+      "source_file": "sources/wiki/original/placeholders.md",
+      "file": "wiki/placeholders.md",
+      "source_sha256": "f83ce9aecbe1e0c6ae60b215f08e468b3eb9dab1e55158da09d25dbe70486b4d",
+      "source_bytes": 7584,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Prefix-&-Suffix-Stacking",
+      "slug": "prefix-suffix-stacking",
+      "title": "前缀与后缀叠加",
+      "source_url": "https://luckperms.net/wiki/Prefix-&-Suffix-Stacking",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Prefix-%26-Suffix-Stacking.md",
+      "source_file": "sources/wiki/original/prefix-suffix-stacking.md",
+      "file": "wiki/prefix-suffix-stacking.md",
+      "source_sha256": "f19405bf03fd47e114a344275a5c2775876aaa341ec447a0b9feac886f09ff13",
+      "source_bytes": 4087,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Prefixes,-Suffixes-&-Meta",
+      "slug": "prefixes-suffixes-meta",
+      "title": "前缀、后缀与元数据",
+      "source_url": "https://luckperms.net/wiki/Prefixes,-Suffixes-&-Meta",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Prefixes%2C-Suffixes-%26-Meta.md",
+      "source_file": "sources/wiki/original/prefixes-suffixes-meta.md",
+      "file": "wiki/prefixes-suffixes-meta.md",
+      "source_sha256": "aabcf5a18f896dee2b3a795ee46687ae5263871ceec50794d43a0c1839b12279",
+      "source_bytes": 8835,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Self-hosting-the-web-interfaces",
+      "slug": "self-hosting-the-web-interfaces",
+      "title": "自行托管网页界面",
+      "source_url": "https://luckperms.net/wiki/Self-hosting-the-web-interfaces",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Self-hosting-the-web-interfaces.md",
+      "source_file": "sources/wiki/original/self-hosting-the-web-interfaces.md",
+      "file": "wiki/self-hosting-the-web-interfaces.md",
+      "source_sha256": "5c48f90c9a3693bbf4dd2533d01fba995b1b74ce33714c019644284280234e40",
+      "source_bytes": 1837,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Standalone-and-REST-API",
+      "slug": "standalone-and-rest-api",
+      "title": "独立应用与 REST API",
+      "source_url": "https://luckperms.net/wiki/Standalone-and-REST-API",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Standalone-and-REST-API.md",
+      "source_file": "sources/wiki/original/standalone-and-rest-api.md",
+      "file": "wiki/standalone-and-rest-api.md",
+      "source_sha256": "df4eff1299437fd35b952a7917badad66509d0b8078e448658d77298a5f44197",
+      "source_bytes": 3080,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Storage-system-errors",
+      "slug": "storage-system-errors",
+      "title": "存储系统排错",
+      "source_url": "https://luckperms.net/wiki/Storage-system-errors",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Storage-system-errors.md",
+      "source_file": "sources/wiki/original/storage-system-errors.md",
+      "file": "wiki/storage-system-errors.md",
+      "source_sha256": "2d9b7ff50791fa62275b76fb4e4b7003046077832f95097d5051d7aafe0bef1a",
+      "source_bytes": 7913,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Storage-types",
+      "slug": "storage-types",
+      "title": "存储类型",
+      "source_url": "https://luckperms.net/wiki/Storage-types",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Storage-types.md",
+      "source_file": "sources/wiki/original/storage-types.md",
+      "file": "wiki/storage-types.md",
+      "source_sha256": "e3f74565cd64cc7cdc91cc56b5d0dc856cc7a7d0d1952894c933ef6ecf1a6feb",
+      "source_bytes": 7046,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Switching-storage-types",
+      "slug": "switching-storage-types",
+      "title": "切换存储类型",
+      "source_url": "https://luckperms.net/wiki/Switching-storage-types",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Switching-storage-types.md",
+      "source_file": "sources/wiki/original/switching-storage-types.md",
+      "file": "wiki/switching-storage-types.md",
+      "source_sha256": "c6355b65a89147feb281ba71ff84290a109088ce88f9837f4d5b04dc8f0b32fe",
+      "source_bytes": 1217,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Syncing-data-between-servers",
+      "slug": "syncing-data-between-servers",
+      "title": "服务器之间同步数据",
+      "source_url": "https://luckperms.net/wiki/Syncing-data-between-servers",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Syncing-data-between-servers.md",
+      "source_file": "sources/wiki/original/syncing-data-between-servers.md",
+      "file": "wiki/syncing-data-between-servers.md",
+      "source_sha256": "6abd117279240d669639e89e44e5f3d430d9f1e7e62dab45c91978497d16afc3",
+      "source_bytes": 2903,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Track-Commands",
+      "slug": "track-commands",
+      "title": "晋升路线命令",
+      "source_url": "https://luckperms.net/wiki/Track-Commands",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Track-Commands.md",
+      "source_file": "sources/wiki/original/track-commands.md",
+      "file": "wiki/track-commands.md",
+      "source_sha256": "8b5ebbe02462e298720eed9e3a5b6ad5987c2a6f50411f9905b6c584f44ee3b9",
+      "source_bytes": 2649,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Tracks",
+      "slug": "tracks",
+      "title": "晋升路线",
+      "source_url": "https://luckperms.net/wiki/Tracks",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Tracks.md",
+      "source_file": "sources/wiki/original/tracks.md",
+      "file": "wiki/tracks.md",
+      "source_sha256": "e4c204e8c87c94e59275292f95c5000f870eb244dd0be108fb21a1a6cfc10e3e",
+      "source_bytes": 1280,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Upgrading-from-v4-to-v5",
+      "slug": "upgrading-from-v4-to-v5",
+      "title": "从 v4 升级到 v5",
+      "source_url": "https://luckperms.net/wiki/Upgrading-from-v4-to-v5",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Upgrading-from-v4-to-v5.md",
+      "source_file": "sources/wiki/original/upgrading-from-v4-to-v5.md",
+      "file": "wiki/upgrading-from-v4-to-v5.md",
+      "source_sha256": "14dae574b83cd2905dc43f3dd3eefe1cad9235ad3c0e94921f22afb666f4117e",
+      "source_bytes": 1510,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Usage",
+      "slug": "usage",
+      "title": "开始使用",
+      "source_url": "https://luckperms.net/wiki/Usage",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Usage.md",
+      "source_file": "sources/wiki/original/usage.md",
+      "file": "wiki/usage.md",
+      "source_sha256": "cb39e7689ce743888687f6d05ef9b5628d6c325f7a51de8d125087918d4070b9",
+      "source_bytes": 10775,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "User-Commands",
+      "slug": "user-commands",
+      "title": "用户命令",
+      "source_url": "https://luckperms.net/wiki/User-Commands",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/User-Commands.md",
+      "source_file": "sources/wiki/original/user-commands.md",
+      "file": "wiki/user-commands.md",
+      "source_sha256": "d689b7775bc856a8220dc8c9b5629d33834ad08c3b973132e7d58ffff89dbf05",
+      "source_bytes": 3908,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Verbose",
+      "slug": "verbose",
+      "title": "详细权限检查日志",
+      "source_url": "https://luckperms.net/wiki/Verbose",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Verbose.md",
+      "source_file": "sources/wiki/original/verbose.md",
+      "file": "wiki/verbose.md",
+      "source_sha256": "d2e073a592bf99dc7ec57ffaa2c270b68a03a6ec9692cf79088ac45ddd6cbbc3",
+      "source_bytes": 3772,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Web-Editor-Technical-Details",
+      "slug": "web-editor-technical-details",
+      "title": "网页编辑器技术细节",
+      "source_url": "https://luckperms.net/wiki/Web-Editor-Technical-Details",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Web-Editor-Technical-Details.md",
+      "source_file": "sources/wiki/original/web-editor-technical-details.md",
+      "file": "wiki/web-editor-technical-details.md",
+      "source_sha256": "3e14176e3a55be420e9f0c8a0eb09a6c5348128981354b43c9f28c19d8aa0b70",
+      "source_bytes": 4715,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Web-Editor",
+      "slug": "web-editor",
+      "title": "网页编辑器",
+      "source_url": "https://luckperms.net/wiki/Web-Editor",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Web-Editor.md",
+      "source_file": "sources/wiki/original/web-editor.md",
+      "file": "wiki/web-editor.md",
+      "source_sha256": "c31f4bec9cb97e86c656ecda9ad21aeb16e978407fbd1b0aa9af2c583cde1247",
+      "source_bytes": 4912,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Weight",
+      "slug": "weight",
+      "title": "权重",
+      "source_url": "https://luckperms.net/wiki/Weight",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Weight.md",
+      "source_file": "sources/wiki/original/weight.md",
+      "file": "wiki/weight.md",
+      "source_sha256": "96fa8f5d836336ecaa7683c6381c0c3a3b2f75fc422568fefee5946935c11506",
+      "source_bytes": 2774,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    },
+    {
+      "name": "Why-LuckPerms",
+      "slug": "why-luckperms",
+      "title": "为什么选择 LuckPerms",
+      "source_url": "https://luckperms.net/wiki/Why-LuckPerms",
+      "repository_url": "https://github.com/LuckPerms/wiki/blob/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/pages/Why-LuckPerms.md",
+      "source_file": "sources/wiki/original/why-luckperms.md",
+      "file": "wiki/why-luckperms.md",
+      "source_sha256": "9a2bf9a642a1cf3ab22867def06c811fb48c06c484e9d2f14906aedb4479501c",
+      "source_bytes": 5099,
+      "status": "translated",
+      "reason": null,
+      "translation_review": "reviewed"
+    }
+  ],
+  "assets": [
+    {
+      "file": "wiki/assets/context-1.gif",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/context-1.gif",
+      "native_sha256": "d1e4e393dde08d264c3408d5f2d3001ea9c75ca51090887e9ee45fca81d48cea",
+      "bytes": 275225,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/contributing-1.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/contributing-1.png",
+      "native_sha256": "08d0853acbb338d61c90502939d3179bfce377d7d9bf5a7ae2c029c84f8391bb",
+      "bytes": 167710,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/credits-yourkit.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/credits-yourkit.png",
+      "native_sha256": "2357e7df0372d8f833df56cf69ee536cb03b1393353878ef121305ad8409f065",
+      "bytes": 2183,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/credits-jprofiler.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/credits-jprofiler.png",
+      "native_sha256": "000ec780ae8fc49f15d99fbe6416eb4409ed4e652e93db70297f934be51f8225",
+      "bytes": 2055,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/hytale-chat-1.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/hytale-chat-1.png",
+      "native_sha256": "b8f21d3aa8a892f06c0e98c2b1b8313a58fbf822de52c729b45d6a4c5bc994dd",
+      "bytes": 34817,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/hytale-chat-2.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/hytale-chat-2.png",
+      "native_sha256": "e26ec84a7be5557737b3c09e6c8b2dd4e024766d0179c84158f3fef4e9919b76",
+      "bytes": 36638,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/hytale-chat-3.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/hytale-chat-3.png",
+      "native_sha256": "71308ff1c1aa7f25340a2d0a733441d083908cfcf366e934753508ffe81c338a",
+      "bytes": 47020,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/installation-1.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/installation-1.png",
+      "native_sha256": "fdc2d5a9b650a0fad2b0ddcf6e8f2bc55b47298a3f0b0e4613bd676a699150e7",
+      "bytes": 78639,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/installation-2.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/installation-2.png",
+      "native_sha256": "bbf84b2b2017a03b8c308857442f85b0795fdb1b0b93abbe0926a84a03bc24a5",
+      "bytes": 24290,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/installation-3.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/installation-3.png",
+      "native_sha256": "b5ac0908d3ccbff79e8af3139b0835314ba011234ad40ea3e5f4de317c0c758e",
+      "bytes": 99392,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/installation-4.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/installation-4.png",
+      "native_sha256": "28b32cd009c7e2b3f056212cc6e0c712a28bfbcd5adf117c840b1c08eea7435c",
+      "bytes": 81332,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/installation-5.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/installation-5.png",
+      "native_sha256": "f2bcc0a3cc24249e6c98f24a5c7bd8b988daf1bcded7ced67067d525faa5add7",
+      "bytes": 26047,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/installation-6.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/installation-6.png",
+      "native_sha256": "f90d3c388b1cc59ac70783afd6b9d955e20953ebe6e8f91ec796f3c6108113e3",
+      "bytes": 19681,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/installation-7.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/installation-7.png",
+      "native_sha256": "71008bdda48f76929b8fc2ef52b7a85ad06545091012b9ee19a71705372ff525",
+      "bytes": 22378,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/installation-8.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/installation-8.png",
+      "native_sha256": "7a5a10d025e0d4a436a16cce18cd2ea2cad2d9cceb4afedba7559d8cf31ab225",
+      "bytes": 71530,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/installation-9.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/installation-9.png",
+      "native_sha256": "9fdaaf1e87426c213ab86cbf604c27664ca11b53e8a8149944daf06de9a14444",
+      "bytes": 83013,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/standalone-1.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/standalone-1.png",
+      "native_sha256": "f1510a40a8592e7280ee50202cf85a89e9d5704d6e3785df54ff22e2d4cf6c5a",
+      "bytes": 96725,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/usage-1.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/usage-1.png",
+      "native_sha256": "0ee46faf3abc1193c38aeb8abfbb96bf1c03d14499cd29e95749bb1ed8fe2880",
+      "bytes": 4050,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/usage-2.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/usage-2.png",
+      "native_sha256": "1215ad5c86da4ee4c80fecfe8d046e5f6ab56c9ed704bb4c6e00aa4d59d2b21c",
+      "bytes": 3126,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/usage-3.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/usage-3.png",
+      "native_sha256": "239e35ba7155b48b6134aa9611064d836a4db3fdd07b1fec1d1da0a2d253b6aa",
+      "bytes": 7659,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/usage-4.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/usage-4.png",
+      "native_sha256": "7ec0ae09bc742478ecf3875fa4a8c8f8da78c47d395b9bdc7a6372e61c21d064",
+      "bytes": 8429,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/usage-5.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/usage-5.png",
+      "native_sha256": "de58532820a76e9391b04bd61f546c9fa02d4f9f999ec6e32ce3f0a1173c083d",
+      "bytes": 6451,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/usage-6.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/usage-6.png",
+      "native_sha256": "bbdc9222a90c488e8c286c00f2d5bb65c8ab9def1f6aaedb2e966280e8aebe9a",
+      "bytes": 4547,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/usage-7.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/usage-7.png",
+      "native_sha256": "36a519a90f751f6bca4accc941807566b4f89c4066e55afbc6666728f07bf916",
+      "bytes": 4185,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/usage-8.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/usage-8.png",
+      "native_sha256": "8f33503d4b9c3079c413124f57d639c7529fb1f8423bd653579bcca5443a467e",
+      "bytes": 3966,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/usage-9.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/usage-9.png",
+      "native_sha256": "e72e2a01e116ccdd3c49b15083568683ab60ae7eb82a51c270682169cc09cd8c",
+      "bytes": 7135,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/usage-10.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/usage-10.png",
+      "native_sha256": "17575bb32cd34948a78f837cbb910fa2270130eba323722b292f318c91bf701f",
+      "bytes": 4071,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/whyluckperms-2.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/whyluckperms-2.png",
+      "native_sha256": "9b131490ccc622e2a24c250fe2a434325b829da5fdcb9cf0322cd8d786059b54",
+      "bytes": 35168,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/whyluckperms-1.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/whyluckperms-1.png",
+      "native_sha256": "42169981903f3985462aa075cab0eb3aeff6d4bb070cdbd6bf6f489e01d40d4d",
+      "bytes": 22246,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/usage-inheritance-1.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/usage-inheritance-1.png",
+      "native_sha256": "95bca279011854d997da9a93a03e1e73939afa5c954d79b374e3ecda50da3abf",
+      "bytes": 66912,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/verbose-1.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/verbose-1.png",
+      "native_sha256": "9b131490ccc622e2a24c250fe2a434325b829da5fdcb9cf0322cd8d786059b54",
+      "bytes": 35168,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/verbose-2.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/verbose-2.png",
+      "native_sha256": "b75c8d7bbd8bf8623845037a5bdd7bb2d2e79fcfa1a27b8ed6cf470f91cf9749",
+      "bytes": 46777,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/webeditor-technical-1.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/webeditor-technical-1.png",
+      "native_sha256": "4919d72bd77d13db347d1d70ba930d423d2983a6bfd8730a127c3146974ff23a",
+      "bytes": 186988,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/webeditor-technical-2.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/webeditor-technical-2.png",
+      "native_sha256": "db134af8023c19268e2ea3d067cd42d90929534571057b40014d938a649c7457",
+      "bytes": 64910,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/webeditor-technical-3.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/webeditor-technical-3.png",
+      "native_sha256": "7b3d8e8b3db1191d8659198e22fadcfe546b3f67721fb0a02efa52730db6e0bd",
+      "bytes": 91773,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/webeditor-1.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/webeditor-1.png",
+      "native_sha256": "b06929c52a2b45c2f9d2ca60a70fe003a5150f2b21f2f30b716d16c075131b85",
+      "bytes": 15178,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/webeditor-2.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/webeditor-2.png",
+      "native_sha256": "157ebaf70d205950fad0d30ef1c90959caa5a1c7a154649ea97b5373be4536a2",
+      "bytes": 6217,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/webeditor-3.gif",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/webeditor-3.gif",
+      "native_sha256": "4e6cc22ba2cbace9802a4b9e4e3dab55b5eedf397aa7bf82f28d1f4e8a5e0be6",
+      "bytes": 58933,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/webeditor-4.gif",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/webeditor-4.gif",
+      "native_sha256": "c44b4d294765cfe6f87899068be95d5d48b6de86807dfefca6c2c472ac238880",
+      "bytes": 200929,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/webeditor-5.gif",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/webeditor-5.gif",
+      "native_sha256": "8c79957207eb94a3c73ad8d5c865be417b45e7b2fcd131e7993fac97dc1f8a6c",
+      "bytes": 597970,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/webeditor-6.gif",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/webeditor-6.gif",
+      "native_sha256": "d5134b796b52dda21fe36192b0616084610aa7c3c282a8baf2371ba5373e0874",
+      "bytes": 364219,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/webeditor-7.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/webeditor-7.png",
+      "native_sha256": "0e71a6316f523168512950d95a65e34c43834aecec4926df6c833ccc63edcce1",
+      "bytes": 17658,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/whyluckperms-3.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/whyluckperms-3.png",
+      "native_sha256": "51fbdfb52832282f5052ceea7b5932eef927856a4941d72b540117fabab7945e",
+      "bytes": 36470,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/whyluckperms-4.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/whyluckperms-4.png",
+      "native_sha256": "cdf023b966836da035a6cf459572f75dade33886cff91b907de84f43d3f01a08",
+      "bytes": 39013,
+      "status": "available"
+    },
+    {
+      "file": "wiki/assets/whyluckperms-5.png",
+      "source_url": "https://github.com/LuckPerms/wiki/raw/fc2919c3d5e6bfba82af31f9930273b00f08ddbf/img/whyluckperms-5.png",
+      "native_sha256": "2c7ba75ad6ad0aa64d8d767e8f46466c0d26c8c27f06e7ca48e546113e16d145",
+      "bytes": 9853,
+      "status": "available"
+    }
+  ],
+  "completion_status": "complete",
+  "verified_at": "2026-10-19T15:31:48.576Z",
+  "validation": {
+    "script": "Site/verify-wiki.py",
+    "translated_pages": 45,
+    "errors": []
+  },
+  "navigation": {
+    "source_file": "sources/wiki/original/sidebar.md",
+    "translated_file": "sources/wiki-nav.yml",
+    "status": "translated"
+  },
+  "source_link_notes": [
+    {
+      "page": "configuration.md",
+      "target": "configuration.md#group-weight",
+      "type": "missing_fragment"
+    },
+    {
+      "page": "hytale.md",
+      "target": "hytale.md#known-caveatsissues",
+      "type": "missing_fragment"
+    }
+  ]
+}

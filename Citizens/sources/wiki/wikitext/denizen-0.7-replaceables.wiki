@@ -1,0 +1,153 @@
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://one.denizenscript.com/denizen/cmds/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://one.denizenscript.com/denizen/cmds/denizen/vids Tutorial Videos] on youtube or the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+<s>
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+Replaceable data tags can be used to dynamically put flags and values inside texts and commands.
+</div>
+
+===Flag Replaceables===
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+
+{{Denizen Replaceable Type Color|ghostwhite|
+<FLAG.PLAYER:Name:fallback> or <FLAG.P:Name:fallback>
+| The value of a FLAG set on the Player, with the optional 'fallback' being the value used if the FLAG isn't found.
+}}
+
+{{Denizen Replaceable Type Color|ghostwhite|
+<FLAG.DENIZEN:Name:fallback> or <FLAG.D:Name:fallback>
+| The value of a FLAG set on the Denizen, with the optional 'fallback' being the value used if the FLAG isn't found.
+}}
+
+{{Denizen Replaceable Type Color|ghostwhite|
+<FLAG.GLOBAL:Name:fallback> or <FLAG.G:Name:fallback>
+| The value of a FLAG set globally, with the optional 'fallback' being the value used if the FLAG isn't found.
+}}
+</div>
+
+===Chat Input Replaceable===
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+{{Denizen Replaceable Type Color|lightcyan|
+<*>
+| Contains the value of the Chat Trigger used by the Player in the Current Step. Unlike other replaceables, it can currently only be used in Speech commands and the FLAG command.
+}}
+</div>
+
+===Player Replaceables===
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+
+{{Denizen Replaceable Type Color|lavender|
+<DISPLAYNAME>
+| The display name of the Player interacting with the Denizen, i.e. the name including colors.
+}}
+
+{{Denizen Replaceable Type Color|lavender|
+<HEALTH> or <PLAYER.HEALTH>
+| The Player's health, from 0 to 20.
+}}
+
+{{Denizen Replaceable Type Color|lavender|
+<PLAYER> or <PLAYER.NAME>
+| The name of the Player.
+}}
+
+{{Denizen Replaceable Type Color|lavender|
+<PLAYER.BOOTS>
+| The MATERIAL of the boots that the Player is wearing. Is 'FALSE' if the Player is not wearing any.
+}}
+
+{{Denizen Replaceable Type Color|lavender|
+<PLAYER.CHESTPLATE>
+| The MATERIAL of the chestplate that the Player is wearing. Is 'FALSE' if the Player is not wearing any.
+}}
+
+{{Denizen Replaceable Type Color|lavender|
+<PLAYER.EXP>
+| The Player's total experience.
+}}
+
+{{Denizen Replaceable Type Color|lavender|
+<PLAYER.EXP_TO_NEXT_LEVEL>
+| The experience the Player must gain to reach the next level.
+}}
+
+{{Denizen Replaceable Type Color|lavender|
+<PLAYER.FOOD_LEVEL>
+| The Player's food level, from 0 to 20.
+}}
+
+{{Denizen Replaceable Type Color|lavender|
+<PLAYER.HELM>
+| The MATERIAL of the helm that the Player is wearing. Is 'FALSE' if the Player is not wearing any.
+}}
+
+{{Denizen Replaceable Type Color|lavender|
+<PLAYER.ITEM_IN_HAND.ID>
+| The ID of the item in the Player's hand. Is '0' if the Player's hand is empty.
+}}
+
+{{Denizen Replaceable Type Color|lavender|
+<PLAYER.ITEM_IN_HAND.MATERIAL>
+| The MATERIAL of the item in the Player's hand. Is 'AIR' if the Player's hand is empty.
+}}
+
+{{Denizen Replaceable Type Color|lavender|
+<PLAYER.ITEM_IN_HAND.NAME>
+| The name of the item in the Player's hand. Doesn't work at the moment.
+}}
+
+{{Denizen Replaceable Type Color|lavender|
+<PLAYER.ITEM_IN_HAND.QTY>
+| The quantity of the item in the Player's hand.
+}}
+
+{{Denizen Replaceable Type Color|lavender|
+<PLAYER.KILLER>
+| The name of the last killer of this Player. Doesn't work at the moment.
+}}
+
+{{Denizen Replaceable Type Color|lavender|
+<PLAYER.LEGGINGS>
+| The MATERIAL of the leggings that the Player is wearing. Is 'FALSE' if the Player is not wearing any.
+}}
+
+{{Denizen Replaceable Type Color|lavender|
+<PLAYER.MONEY>
+| The amount of money that the Player has. This replaceable will only work if you have Vault installed and a compatible permissions/economy plugin.
+}}
+
+{{Denizen Replaceable Type Color|lavender|
+<PLAYER.WORLD>
+| The name of the world the Player is in.
+}}
+</div>
+
+===Denizen Replaceables===
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+
+{{Denizen Replaceable Type Color|papayawhip|
+<NPC> or <DENIZEN.NAME>
+| The name of the Denizen.
+}}
+
+{{Denizen Replaceable Type Color|papayawhip|
+<NPCID> or <DENIZEN.NPCID>
+| The ID of the Denizen.
+}}
+
+{{Denizen Replaceable Type Color|papayawhip|
+<WORLD>
+| The name of the world the Denizen is in.
+}}
+</div>
+
+[[Category:Denizen 0.7]]
+</s>

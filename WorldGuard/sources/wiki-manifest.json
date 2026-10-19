@@ -1,0 +1,210 @@
+[
+  {
+    "file": "wiki/advanced/event-logging.md",
+    "title": "事件日志",
+    "source_url": "https://worldguard.enginehub.org/en/latest/advanced/event-logging/",
+    "source_file": "sources/wiki/original/advanced/event-logging.md",
+    "source_sha256": "416a46a0cdf9f45a0c4a6f6ccd1fc2bbf5e25bdc8c407609b909b4544259a40d",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/advanced/index.md",
+    "title": "进阶主题",
+    "source_url": "https://worldguard.enginehub.org/en/latest/advanced/",
+    "source_file": "sources/wiki/original/advanced/index.md",
+    "source_sha256": "105e19bbc8d0699e6f6be810adf3e68c91e574d16906c96ddca72a66b08c25f3",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/blacklist.md",
+    "title": "黑名单",
+    "source_url": "https://worldguard.enginehub.org/en/latest/blacklist/",
+    "source_file": "sources/wiki/original/blacklist.md",
+    "source_sha256": "9941cf21986464f2dc3edc39377fb447f1bc0da9e90c1dccc5a37d6307b23526",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/build-perms.md",
+    "title": "建造权限",
+    "source_url": "https://worldguard.enginehub.org/en/latest/build-perms/",
+    "source_file": "sources/wiki/original/build-perms.md",
+    "source_sha256": "e79ce7915c738d730b353c203e62536f14faedb09cd12d677b5540566cbb4b4e",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/chest-protection.md",
+    "title": "箱子保护",
+    "source_url": "https://worldguard.enginehub.org/en/latest/chest-protection/",
+    "source_file": "sources/wiki/original/chest-protection.md",
+    "source_sha256": "d1ef4d01cf8786b7fab155d6bc23760c68788c5dbb5452443ce0fea72698ed9f",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/commands.md",
+    "title": "命令",
+    "source_url": "https://worldguard.enginehub.org/en/latest/commands/",
+    "source_file": "sources/wiki/original/commands.md",
+    "source_sha256": "c1a2ca60a8a6220f651e1191de4ba78dadf1ddf609a0eeba781eef15962e4bb5",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/config.md",
+    "title": "配置",
+    "source_url": "https://worldguard.enginehub.org/en/latest/config/",
+    "source_file": "sources/wiki/original/config.md",
+    "source_sha256": "378252d3d30e2f6228a13dcba9906d52f8a3fb4737c3ace99e24355459a7f0d0",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq.md",
+    "title": "常见问题",
+    "source_url": "https://worldguard.enginehub.org/en/latest/faq/",
+    "source_file": "sources/wiki/original/faq.md",
+    "source_sha256": "632b19a117ed31dd26ea63bbb77e1272a459372b683d4d1feba7789c1205dd99",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/host-keys.md",
+    "title": "主机密钥",
+    "source_url": "https://worldguard.enginehub.org/en/latest/host-keys/",
+    "source_file": "sources/wiki/original/host-keys.md",
+    "source_sha256": "8ee2a6f050c10b4e547ae7a31c417cdf2ac47690b4f949d48fc33b7fa62177df",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/index.md",
+    "title": "WorldGuard 文档",
+    "source_url": "https://worldguard.enginehub.org/en/latest/",
+    "source_file": "sources/wiki/original/index.md",
+    "source_sha256": "1fa41360c857a7c87a99b7a8a3db8e7275841b0a8b17ba186b5bb43389e7061f",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/install.md",
+    "title": "安装",
+    "source_url": "https://worldguard.enginehub.org/en/latest/install/",
+    "source_file": "sources/wiki/original/install.md",
+    "source_sha256": "3cf7985738d9abc5f85ad31983938582d0775f23d6d53e65c7c4d24fc7903f68",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/permissions.md",
+    "title": "权限",
+    "source_url": "https://worldguard.enginehub.org/en/latest/permissions/",
+    "source_file": "sources/wiki/original/permissions.md",
+    "source_sha256": "37aa4e2b0aee413351148f83864619b1c37f1a6d51636d8d59380d78969c694a",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/regions/claiming.md",
+    "title": "认领区域",
+    "source_url": "https://worldguard.enginehub.org/en/latest/regions/claiming/",
+    "source_file": "sources/wiki/original/regions/claiming.md",
+    "source_sha256": "cddd565cab38bad9d2a58d2ad585ad5c798829d026cf50b15bfa11a0e6a217f1",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/regions/commands.md",
+    "title": "区域命令",
+    "source_url": "https://worldguard.enginehub.org/en/latest/regions/commands/",
+    "source_file": "sources/wiki/original/regions/commands.md",
+    "source_sha256": "fcbed9d2c857c566ace35c8260e4ceaa3f7c0e7b0e4b6de75e39c89fc6a964ba",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/regions/common-scenarios.md",
+    "title": "常见场景",
+    "source_url": "https://worldguard.enginehub.org/en/latest/regions/common-scenarios/",
+    "source_file": "sources/wiki/original/regions/common-scenarios.md",
+    "source_sha256": "01d78930576675d0695aef63c075ca31fe11b245ebf95b07947ad72c71c23ecb",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/regions/flags.md",
+    "title": "区域旗标",
+    "source_url": "https://worldguard.enginehub.org/en/latest/regions/flags/",
+    "source_file": "sources/wiki/original/regions/flags.md",
+    "source_sha256": "06924ef500e1e3babb85ebdef7884d08ed14f8b4f26f70b43b7b3e17737eb745",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/regions/global-region.md",
+    "title": "全局区域",
+    "source_url": "https://worldguard.enginehub.org/en/latest/regions/global-region/",
+    "source_file": "sources/wiki/original/regions/global-region.md",
+    "source_sha256": "5f54d25e6122907ea7d853c22f3d55d6810d05e49b1a99a03c6438241737bd82",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/regions/index.md",
+    "title": "区域",
+    "source_url": "https://worldguard.enginehub.org/en/latest/regions/",
+    "source_file": "sources/wiki/original/regions/index.md",
+    "source_sha256": "4320ba2e84ace4fba30acad2c947f106a59e1858ab18615f91ee07ceb4c23746",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/regions/priorities.md",
+    "title": "优先级与继承",
+    "source_url": "https://worldguard.enginehub.org/en/latest/regions/priorities/",
+    "source_file": "sources/wiki/original/regions/priorities.md",
+    "source_sha256": "646b94be151216e9e7e1d6f8cf8e61cfb8ad5628e9cc0ba0b899be7f33739dbf",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/regions/quick-start.md",
+    "title": "快速入门",
+    "source_url": "https://worldguard.enginehub.org/en/latest/regions/quick-start/",
+    "source_file": "sources/wiki/original/regions/quick-start.md",
+    "source_sha256": "edea293715d6f66a369e82b80a3ad79d8a1239a6d05a2888e1b1f2983f81af9d",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/regions/scope.md",
+    "title": "保护范围",
+    "source_url": "https://worldguard.enginehub.org/en/latest/regions/scope/",
+    "source_file": "sources/wiki/original/regions/scope.md",
+    "source_sha256": "10b518bb631fc517c3ebb3a03c5f6d978104351a275c5e394ddd62b44a8ef1c8",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/regions/storage.md",
+    "title": "存储驱动",
+    "source_url": "https://worldguard.enginehub.org/en/latest/regions/storage/",
+    "source_file": "sources/wiki/original/regions/storage.md",
+    "source_sha256": "25c98305b86ae7a64348c79c37118c3bc39f4004f8923c47daed1e857fac9ab0",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/regions/wand.md",
+    "title": "区域查询工具",
+    "source_url": "https://worldguard.enginehub.org/en/latest/regions/wand/",
+    "source_file": "sources/wiki/original/regions/wand.md",
+    "source_sha256": "776824580db5cecd9e5c21dc87bb13b0737dc4fc3949d3f5416847c168cbd35f",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/source-code.md",
+    "title": "源代码",
+    "source_url": "https://worldguard.enginehub.org/en/latest/source-code/",
+    "source_file": "sources/wiki/original/source-code.md",
+    "source_sha256": "e783502c698e67c063c7400fe74f3ba56a1fbc12f59355354db2ea7c9ceddb1e",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/support.md",
+    "title": "获取帮助",
+    "source_url": "https://worldguard.enginehub.org/en/latest/support/",
+    "source_file": "sources/wiki/original/support.md",
+    "source_sha256": "d6b7103ba0064de0183d5b18268d5d7e072d97798879685ed09bbb64e83aec63",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/genindex.md",
+    "title": "索引",
+    "source_url": "https://worldguard.enginehub.org/en/latest/genindex/",
+    "source_file": "sources/wiki/original/genindex.md",
+    "source_sha256": "0b93f7919cafb356e8bde08d82cefb40493b317faeedc967ef23d75950d9da60",
+    "translation_review": "reviewed"
+  }
+]

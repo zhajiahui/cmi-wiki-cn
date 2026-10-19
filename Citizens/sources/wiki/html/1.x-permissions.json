@@ -1,0 +1,148 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "1.x/Permissions",
+    "pageid": 44,
+    "revid": 681,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><table class=\"wikitable\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"1\" style=\"width: 100%; background-color:#F75D59; font-size: 32px; padding: 15px;\"><b>Not Supported!</b>\n</th></tr>\n<tr>\n<td style=\"font-size: 16px;\">This page is about Citizens 1.x, while the current version is Citizens 2.0.2. This page's content may be outdated, and shouldn't be trusted as being correct. See this page's talk page for more information. If you were looking for the 2.0.2 equivalent of this page, try <a href=\"/Permissions\" title=\"Permissions\">Permissions</a>. If you feel this message was displayed in error, please contact an administrator.\n</td></tr></tbody></table>\n<p>Permissions are essential in controlling each aspect of Citizens. You can use this to fine-tune what functionality you want your users to use. Currently Citizens only works with a SuperPerms plugin such as Permissions EX. These nodes are for use in your permissions.yml provided by your permissions plugin. Refer to your permissions system documentation for exact usage.\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Configuration_Examples\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Configuration Examples</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-2\"><a href=\"#Very_Basic_Permissions_Configuration\"><span class=\"tocnumber\">1.1</span> <span class=\"toctext\">Very Basic Permissions Configuration</span></a></li>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Basic_Permission_Example\"><span class=\"tocnumber\">1.2</span> <span class=\"toctext\">Basic Permission Example</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Advanced_Permissions\"><span class=\"tocnumber\">1.3</span> <span class=\"toctext\">Advanced Permissions</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#Complete_list_of_Permission_nodes\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Complete list of Permission nodes</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading1\"><h1 id=\"Configuration_Examples\">Configuration Examples</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Permissions&amp;action=edit&amp;section=1\" title=\"Edit section: Configuration Examples\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Very_Basic_Permissions_Configuration\">Very Basic Permissions Configuration</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Permissions&amp;action=edit&amp;section=2\" title=\"Edit section: Very Basic Permissions Configuration\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>To allow all functionality to citizens, use this permissions node.  It grants all functionality to your users. \n</p>\n<pre>citizens.*</pre>\n<p>You may also want to disable the following node as it essentially limit functionality instead of enabling it. See <a href=\"/index.php?title=Evil_NPCs&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Evil NPCs (page does not exist)\">Evil NPCs</a> for more information.\n</p>\n<pre>- citizens.evils.immune</pre>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Basic_Permission_Example\">Basic Permission Example</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Permissions&amp;action=edit&amp;section=3\" title=\"Edit section: Basic Permission Example\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Below is an example of a slightly more robust permissions setup, perfect for an RPG-style server in which 'admins' set up NPCs for players to use and interact with. This allows admins complete control over Citizens, while granting regular players only permission to interact with NPC Characters. Refer to your permissions documentation for exact formatting.\n</p>\n<pre>admins:\ncitizens.*\n\ndefault:\ncitizens.wizard.use.interact\ncitizens.quester.use.*\ncitizens.blacksmith.use.repair\ncitizens.trader.use.trade\ncitizens.healer.use.heal\n</pre>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Advanced_Permissions\">Advanced Permissions</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Permissions&amp;action=edit&amp;section=4\" title=\"Edit section: Advanced Permissions\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>There are literally thousands of way to use permissions. Below we have referenced a complete list of permission nodes that you can grant or deny to players to create specific situations only limited by your imagination.\n</p><p>For example: Players could start out with only quester permissions and use quests to grant the use of other NPC Character types through granting permissions as rewards.\n</p><p>What else? <a rel=\"nofollow\" class=\"external text\" href=\"irc://irc.esper.net\">You tell us!</a> Have fun fine-tuning!\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"Complete_list_of_Permission_nodes\">Complete list of Permission nodes</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Permissions&amp;action=edit&amp;section=5\" title=\"Edit section: Complete list of Permission nodes\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>For reference, here is a list of all the permission nodes contained in Citizens. For more detail on what each node does, refer to the appropriate sections in <a href=\"/Commands\" title=\"Commands\">Commands</a> or <a href=\"/Characters\" title=\"Characters\">Characters</a>.\n</p>\n<pre># Admin Permissions.\ncitizens.admin.info\ncitizens.admin.debug\ncitizens.admin.reload\ncitizens.admin.save\ncitizens.admin.clean\ncitizens.admin.override.setowner\ncitizens.admin.override.remove\ncitizens.admin.notifyupdates\n\n# Basic Permissions.\ncitizens.basic.create\ncitizens.basic.use.help\ncitizens.basic.use.info\ncitizens.basic.use.list\ncitizens.basic.use.select\ncitizens.basic.modify.move\ncitizens.basic.modify.moveto\ncitizens.basic.modify.copy\ncitizens.basic.modify.color\ncitizens.basic.modify.settext\ncitizens.basic.modify.addtext\ncitizens.basic.modify.equip\ncitizens.basic.modify.talkclose\ncitizens.basic.modify.lookat\ncitizens.basic.modify.remove\ncitizens.basic.modify.setowner\n\n# Basic Permissions that grant extra power.\n# Be cautious when granting these permissions.\ncitizens.basic.use.teleport\ncitizens.basic.modify.remove.all\n\n# Waypoint Permissions.\ncitizens.waypoints.edit\ncitizens.waypoints.modifier.delay\n\n# Character Toggle Permissions\ncitizens.toggle.help\ncitizens.toggle.blacksmith\ncitizens.toggle.healer\ncitizens.toggle.quester\ncitizens.toggle.wizard\ncitizens.toggle.guard\ncitizens.toggle.trader\ncitizens.toggle.all\n\n# Limits. Use one.\ncitizens.npccount.x  # Replace X with number of NPCs.\ncitizens.npccount.unlimited\n\n# Blacksmith Character. \ncitizens.blacksmith.use.help\ncitizens.blacksmith.use.status\ncitizens.blacksmith.use.repair\n\n# Guard Character.\ncitizens.guard.use.help\ncitizens.guard.modify.type\ncitizens.guard.use.flags\ncitizens.guard.modify.flags\ncitizens.guard.modify.radius\ncitizens.guard.modify.aggro\n\n# Healer Character.\ncitizens.healer.use.heal\ncitizens.healer.use.help\ncitizens.healer.use.status\ncitizens.healer.modify.levelup\n\n# Trader Character.\ncitizens.trader.use.trade\ncitizens.trader.modify.stock\ncitizens.trader.use.help\ncitizens.trader.modify.money\ncitizens.trader.use.showmoney\ncitizens.trader.use.list\ncitizens.trader.modify.unlimited\ncitizens.trader.modify.stock\ncitizens.trader.modify.clearstock\n\n# Wizard Character.\ncitizens.wizard.use.interact\ncitizens.wizard.use.help\ncitizens.wizard.use.status\ncitizens.wizard.modify.unlimited\ncitizens.wizard.modify.mode\ncitizens.wizard.use.locations\ncitizens.wizard.modify.addloc\ncitizens.wizard.modify.removeloc\ncitizens.wizard.modify.command\n\n# Quester Character.\ncitizens.quester.use.help\ncitizens.quester.modify.quests.assign\ncitizens.quester.modify.quests.remove\ncitizens.quester.use.quests.view\ncitizens.quester.use.quests.help\ncitizens.quester.use.quests.abort\ncitizens.quester.use.quests.status\n\n# Evil NPC Nodes.\ncitizens.evils.immune\n</pre>\n<div class=\"padded\" style=\"font-size: 12px; padding: 5px\">\n<table class=\"wikitable collapsible collapsed\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Usage\" title=\"Category:Usage\">Usage</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Installation\" title=\"Installation\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Frequently_Asked_Questions\" title=\"Frequently Asked Questions\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Editors\" title=\"Editors\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Characters\" title=\"Characters\">Characters</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/API\" title=\"API\">API</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32;\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Configuration\" title=\"Category:Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Configuration\" title=\"Configuration\">Configuration</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Data_Storage\" title=\"Data Storage\">Data Storage</a>\n</td></tr></tbody></table>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145811\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.038 seconds\nReal time usage: 0.060 seconds\nPreprocessor visited node count: 56/1000000\nRevision size: 4646/2097152 bytes\nPost‐expand include size: 2429/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 4/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2770/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   21.798      1 -total\n 66.13%   14.416      1 Template:NoSupport\n 44.17%    9.628      2 Template:Version2F\n 31.78%    6.927      1 Template:NavBox\n 17.25%    3.760      1 Template:Version2\n 14.33%    3.124     10 Template:·\n-->\n\n<!-- Render ID 808311e5-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "API"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Configuration"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Data Storage"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Editors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Text Syntax"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      },
+      {
+        "ns": 0,
+        "*": "Evil NPCs"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Configuration"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Usage"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Configuration Examples",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "1.x/Permissions",
+        "byteoffset": 386,
+        "anchor": "Configuration_Examples",
+        "linkAnchor": "Configuration_Examples"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Very Basic Permissions Configuration",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "1.x/Permissions",
+        "byteoffset": 415,
+        "anchor": "Very_Basic_Permissions_Configuration",
+        "linkAnchor": "Very_Basic_Permissions_Configuration"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Basic Permission Example",
+        "number": "1.2",
+        "index": "3",
+        "fromtitle": "1.x/Permissions",
+        "byteoffset": 783,
+        "anchor": "Basic_Permission_Example",
+        "linkAnchor": "Basic_Permission_Example"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Advanced Permissions",
+        "number": "1.3",
+        "index": "4",
+        "fromtitle": "1.x/Permissions",
+        "byteoffset": 1352,
+        "anchor": "Advanced_Permissions",
+        "linkAnchor": "Advanced_Permissions"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Complete list of Permission nodes",
+        "number": "2",
+        "index": "5",
+        "fromtitle": "1.x/Permissions",
+        "byteoffset": 1841,
+        "anchor": "Complete_list_of_Permission_nodes",
+        "linkAnchor": "Complete_list_of_Permission_nodes"
+      }
+    ],
+    "showtoc": ""
+  }
+}

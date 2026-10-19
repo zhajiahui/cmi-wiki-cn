@@ -1,6 +1,10 @@
 site_name: Vault 中文资料
 nav:
 - 插件说明: index.md
+- 插件 Wiki:
+  - Vault 安装与项目说明: wiki/readme.md
+  - Vault 官方使用说明: wiki/plugin-page.md
+  - 使用 Vault 的插件（历史列表）: wiki/using-vault.md
 - 配置文件（1.7.3-b131）:
   - 配置索引: configuration/index.md
   - config.yml: configuration/config.md

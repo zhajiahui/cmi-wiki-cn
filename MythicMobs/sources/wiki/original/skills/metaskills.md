@@ -1,0 +1,578 @@
+As seen in the [Skills](https://wiki.mythiccraft.io/mythicmobs/Skills/Skills) wiki page, it is possible to execute mechanics from a mob via the syntax
+
+```yaml
+- mechanic{argument=value} @[targeter] ~on[trigger] [health_modifier] [chance]
+```
+
+But this approach is not suitable if one wanted to "group together" multiple mechanics and, in general, make more advanced behaviors for the mob. This can be solved via the use of the Metaskills.
+
+Table of Contents:
+
+1. [What is a Metaskill?](https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills#what-is-a-metaskill)
+2. [Breaking Down the Metaskills Configuration](https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills#breaking-down-the-metaskills-configuration)
+   1. [Internal SkillName](https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills#internal-skillname)
+   2. [CancelIfNoTargets](https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills#cancelifnotargets)
+   3. [Hidden](https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills#hidden)
+   4. [Conditions](https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills#conditions)
+   5. [TargetConditions](https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills#targetconditions)
+   6. [TriggerConditions](https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills#triggerconditions)
+   7. [FailedConditionsSkill](https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills#failedconditionsskill)
+   8. [Cooldown](https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills#cooldown)
+   9. [OnCooldownSkill](https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills#oncooldownskill)
+   10. [Skill](https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills#skill)
+   11. [Skills](https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills#skills)
+3. [Targets Inheritance and Override](https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills#targets-inheritance-and-override)
+   1. [Inheritance](https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills#inheritance)
+   2. [Override](https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills#override)
+   3. [Subsequent Metaskills Executions](https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills#subsequent-metaskills-executions)
+   4. [Targets Filtering](https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills#targets-filtering)
+   5. [Meta Targeters](https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills#meta-targeters)
+4. [Inline Metaskills](https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills#inline-metaskills)
+   1. [Examples](https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills#examples)
+5. [Skill Parameters [Premium Feature]](https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills#skill-parameters-premium-feature)
+   1. [Reserved Parameter Names](https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills#reserved-parameter-names)
+6. [Custom Commands](https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills#custom-commands)
+
+# What is a Metaskill? {#what-is-a-metaskill}
+
+A Metaskill is, in essence, a list of mechanics to execute once the metaskill is called via a [Meta Mechanic](https://wiki.mythiccraft.io/mythicmobs/Skills/Mechanics#meta-mechanics).  
+**They are located in `../plugins/MythicMobs/Skills` inside `.yml` files**, just like their mobs counterpart.
+
+The syntax of a Metaskill is the following:
+
+```yaml
+internal_skillname:
+  CancelIfNoTargets: [true/false]
+  Hidden: [true/false]
+  Conditions:
+  - condition1
+  - condition2
+  TargetConditions:
+  - condition3
+  - condition4
+  TriggerConditions:
+  - condition5
+  - condition6
+  FailedConditionsSkill: [the metaskill to executed if the conditions did not check]
+  Cooldown: [seconds]
+  OnCooldownSkill: [the metaskill to execute if this one is on cooldown]
+  Skill: [an additional metaskill to execute asynchronously from this one]
+  Skills:
+  - mechanic1
+  - mechanic2
+```
+
+Once you have a metaskill configured, you can use a [Meta Mechanic](https://wiki.mythiccraft.io/mythicmobs/Skills/Mechanics#meta-mechanics), such as [Skill](https://wiki.mythiccraft.io/mythicmobs/skills/mechanics/skill), to execute the Metaskill either from a mob or a metaskill:
+
+```yaml
+#MOB FILE
+ExampleMob:
+  Type: ZOMBIE
+  Skills:
+  - skill{s=internal_skillname} @self ~onInteract
+```
+
+Please note that only the `internal_skillname` element is required. For instance, you could make a Metaskill with only skills, only a cooldown, or only some Conditions.
+
+In the following paragraphs it will be explained what every element in there does, and how to use it.
+There are also a couple of pertinent [Examples](https://wiki.mythiccraft.io/mythicmobs/examples/Common-Examples#skills) if you want to see a more practical usage.
+
+# Breaking Down the Metaskills Configuration {#breaking-down-the-metaskills-configuration}
+
+## Internal SkillName {#internal-skillname}
+
+It's the string that will identify the metaskill inside mythicmobs, exactly how the [Internal Name] works for mobs.
+
+A valid Internal SkillName must be unique (aka, there cannot exists two skills that shares the skillname) and not containt any space character.
+
+If you want to execute a specific metaskill in any way, you will have to use its Internal SkillName in some way
+
+## CancelIfNoTargets {#cancelifnotargets}
+
+If the metaskill should cancel its execution if no eligible targets are provided to it.  
+Defaults to `true`.
+
+## Hidden {#hidden}
+
+If the metaskill should be left out of command suggestions, such as the ones for `/mm test cast`. Useful for
+internal skills that are only ever called by other skills. The skill stays fully usable by its Internal SkillName.
+Defaults to `false`.
+
+```yaml
+my_utility_skill:
+  Hidden: true
+  Skills:
+  - message{m="Registered, but not suggested by /mm test cast"}
+```
+
+## Conditions {#conditions}
+
+The [Conditions](https://wiki.mythiccraft.io/mythicmobs/Skills/conditions) of the metaskill. Those conditions evaluates the caster of the metaskill.
+
+Depending on the [Condition Action](https://wiki.mythiccraft.io/mythicmobs/Skills/conditions#condition-actions) used in each condition, different behaviors can occur: read the relevant wiki page for more info
+
+## TargetConditions {#targetconditions}
+
+The Target [Conditions](https://wiki.mythiccraft.io/mythicmobs/Skills/conditions) of the metaskill. Those conditions evaluates the inherited target of the metaskill, it being either an entity ot a location.
+
+Depending on the [Condition Action](https://wiki.mythiccraft.io/mythicmobs/Skills/conditions#condition-actions) used in each condition, different behaviors can occur: read the relevant wiki page for more info
+
+## TriggerConditions {#triggerconditions}
+
+The Trigger [Conditions](https://wiki.mythiccraft.io/mythicmobs/Skills/conditions) of the metaskill. Those conditions evaluates the entity that triggered the [skilltree](https://wiki.mythiccraft.io/mythicmobs/Skills/SkillTrees). This entity can also be targeted via the [@Trigger](https://wiki.mythiccraft.io/mythicmobs/Skills/Triggers#the-trigger-targeter) targeter
+
+Depending on the [Condition Action](https://wiki.mythiccraft.io/mythicmobs/Skills/conditions#condition-actions) used in each condition, different behaviors can occur: read the relevant wiki page for more info
+
+## FailedConditionsSkill {#failedconditionsskill}
+
+> Alias: `OnFailSkill`
+> The Metaskill to be executed if the conditions do not check
+
+```yaml
+ExampleSkill:
+  Conditions:
+  - day true
+  OnFailSkill: ExampleSkill2
+
+ExampleSkill2:
+  Skills:
+  - message{m="So, well, it appears it's not daytime then."} @World
+```
+
+Or, alternatively, this is also possible
+
+```yaml
+ExampleSkill:
+  Conditions:
+  - day true
+  OnFailSkill:
+  - message{m="Oh my, it still isn't daytime?"} @World
+  - message{m="That's quite the problem!"} @World
+```
+
+## Cooldown {#cooldown}
+
+The Cooldown is the time, in seconds, that must elapse between executions of the metaskill for the same caster.
+
+For instance:
+
+```yaml
+ExampleCooldownSkill:
+  Cooldown: 10
+  Skills:
+  - ignite @self
+```
+
+The `ExampleCooldownSkill` metaskill will only be able to be triggered once every 10 seconds by the same caster.
+
+A cooldown can be:
+
+- **tested against** via the [SkillOnCooldown](https://wiki.mythiccraft.io/mythicmobs/conditions/skilloncooldown) condition
+- **fetched** via the [<caster.skill.[skill_name].cooldown>](https://wiki.mythiccraft.io/mythicmobs/Skills/Placeholders#caster-placeholders) placeholder
+- **set** via the [SetSkillCooldown](https://wiki.mythiccraft.io/mythicmobs/skills/mechanics/setskillcooldown) mechanic.
+
+## OnCooldownSkill {#oncooldownskill}
+
+If the Metaskill is triggered while on cooldown, the skill specified here will be casted instead.
+
+For instance, in this example:
+
+```yaml
+FirstSkill:
+  Cooldown: 10
+  OnCooldownSkill: SecondSkill
+  Skills:
+  - command{c="say First"}
+
+SecondSkill:
+  Cooldown: 5
+  OnCooldownSkill: ThirdSkill
+  Skills:
+  - command{c="say Second"}
+
+ThirdSkill:
+  Skills:
+  - command{c="say Third"}
+```
+
+Casting FirstSkill normally would result in "First" being written in chat. Executing it again while still on cooldown would write "Second" in chat, and executing it another time while both FirstSkill and SecondSkill are on cooldown would result in "Third" being written in chat.
+
+You can also define a list of mechanics to be executed instead of another metaskill
+
+```yaml
+  OnCooldownSkills:
+  - s{s=entity.village.no}
+  - particle{p=VILLAGER_ANGRY;y=1.5}
+```
+
+## Skill {#skill}
+
+To not be confused with [Skills](https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills#skills). This option allows the metaskill to execute the mechanics of another metaskill once triggered.
+
+```yaml
+example1:
+  Conditions:
+  - night true
+  Skills:
+  - setvariable{var=skill.test;val=0} @self
+  - message{m=1} @self
+  - message{m=2} @self
+  - delay 20
+  - message{m=3} @self
+
+example2:
+  Skill: example1
+  Skills:
+  - message{m="test2 - <skill.var.test>"} @self
+  - message{m=4} @self
+```
+
+The behavior of this execution is very specific:
+
+- The other metaskill's mechanics are executed before that of the current metaskill's [Skills](https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills#skills)
+- The other metaskill's conditions and cooldown are ignored, if present
+- Every mechanic is executed in the same [Skilltree](https://wiki.mythiccraft.io/mythicmobs/Skills/SkillTrees)
+
+So, in essence, the above example is the equivalent of
+
+```yaml
+example2:
+  Skills:
+  - skill{s=example1}
+  - message{m="test2 - <skill.var.test>"} @self
+  - message{m=4} @self
+```
+
+With the only difference being the disregard of example1's cooldown and conditions
+
+## Skills {#skills}
+
+The true core of a metaskill. It's the list of the mechanics that will be executed by the metaskill once triggered. Other [Meta Mechanic](https://wiki.mythiccraft.io/mythicmobs/Skills/Mechanics#meta-mechanics)s can be used in here, allowing the Metaskill to trigger other ones.
+
+```yaml
+ExampleSkill:
+  Skills:
+  - message{m="Hello there!"}
+  - skill{s=ExampleSkill_2}
+
+ExampleSkill_2:
+  Skills:
+  - message{m="How are you doing?"}
+```
+
+Delays can also be used here, allowing the user to set a delay for every mechanic in the list after the delay mechanic is used.
+
+```yaml
+ExampleSkill:
+  Skills:
+  - message{m="Message 1"}
+  - delay 20
+  - message{m="Message 2"}
+```
+
+The skills are normally executed from the first on the list to the last one. If a [Meta Mechanic](https://wiki.mythiccraft.io/mythicmobs/Skills/Mechanics#meta-mechanics) is used, its mechanics will be executed before the mechanics of the original Metaskill resume execution. If a delay is present inside the called Metaskill, the mechanics of the original Metaskill resume execution, and the mechanics present in the called metaskill are executed after the delay
+
+![](https://i.imgur.com/ZiHWeBQ.png)
+
+> In this image, an example of the above behavior is shown. If we execute `ExampleSkill_First`, the mechanics will be executed in the order of their numeration, from mechanic1 to mechanic9, with a delay of 20 ticks between mechanic7, mechanic8 and mechanic9
+
+# Targets Inheritance and Override {#targets-inheritance-and-override}
+
+A peculiarity of Metaskills is their ability to "remember" the targets that were passed to it by the [Meta Mechanic](https://wiki.mythiccraft.io/mythicmobs/Skills/Mechanics#meta-mechanics) that called it. This behavior can have many uses and applications.
+
+## Inheritance {#inheritance}
+
+Mechanics inside the Metaskill that do not have a targeter of their own will then **Inherit** those targets, and target them.
+
+```yaml
+#MOB FILE
+ExampleMob:
+  Type: ZOMBIE
+  Skills:
+  - skill{s=ExampleSkill} @PIR{r=10} ~onInteract
+```
+
+```yaml
+#SKILL FILE
+ExampleSkill:
+  Skills:
+  - ignite
+```
+
+In this example, the `ignite` mechanic has no targeter, so it "inherits" the one that was used in the metaskill and target those entities instead, making it ignite all players in a 10 blocks radius.
+
+## Override {#override}
+
+Meanwhile, if a targeter *is* specified inside a Metaskill, we say that the original targeter is **Overridden**, and the new targeter is used instead
+
+```yaml
+#MOB FILE
+ExampleMob:
+  Type: ZOMBIE
+  Skills:
+  - skill{s=ExampleSkill} @PIR{r=10} ~onInteract
+```
+
+```yaml
+#SKILL FILE
+ExampleSkill:
+  Skills:
+  - ignite
+  - message{m="Why are you so close?"} @NearestPlayer{r=1}
+```
+
+In this example, all players will still be ignited, but only the closest player to the mob in a one block radius will receive the message
+
+## Subsequent Metaskills Executions {#subsequent-metaskills-executions}
+
+When you are calling a metaskill from another metaskill, it is still quite possible to not specify a targeter to it, and it will inherit the targets that the calling metaskill also inherited.
+
+```yaml
+#MOB FILE
+ExampleMob:
+  Type: ZOMBIE
+  Skills:
+  - skill{s=ExampleSkill} @PIR{r=10} ~onInteract
+```
+
+```yaml
+#SKILL FILE
+ExampleSkill:
+  Skills:
+  - skill{s=Example_Ignite}
+  - skill{s=Example_Message} @NearestPlayer{r=1}
+
+Example_Ignite:
+  Skills:
+  - ignite
+
+Example_Message:
+  Skills:
+  - message{m="Why are you so close?"}
+```
+
+By executing this skill, you will obtain the same results you obtained in the [previus example](https://wiki.mythiccraft.io/mythicmobs/Skills/Metaskills#override)
+
+## Targets Filtering {#targets-filtering}
+
+Another great application of target inheritance is the possibility of filtering out the inherited targets across multiple metaskills, using the Metaskill's TargetConditions.
+
+```yaml
+#MOB FILE
+ExampleMob:
+  Type: ZOMBIE
+  Skills:
+  - skill{s=ExampleSkill_1} @PIR{r=10} ~onInteract
+```
+
+```yaml
+ExampleSkill_1:
+  Skills:
+  - message{m="Hello there!"}
+  - delay 1
+  - skill{s=ExampleSkill_2}
+
+ExampleSkill_2:
+  TargetConditions:
+  - distance{d=<5} true
+  Skills:
+  - message{m="...You are pretty close, aren't you?"}
+  - delay 1
+  - skill{s=ExampleSkill_3}
+
+ExampleSkill_3:
+  TargetConditions:
+  - distance{d=<1} true
+  Skills:
+  - message{m="AHHHHHH, GET AWAY FROM ME!"}
+  - throw{v=10;vy=2}
+```
+
+The above skill will show a message to all the players in a 10 blocks radius, then show another message to those, among them, that are closer than 5 blocks. After that, it will show a third message and push away every player closer than one block.
+
+And now, for a more counter-intuitive example:
+
+```yaml
+#MOB FILE
+ExampleMob:
+  Type: ZOMBIE
+  Skills:
+  - skill{s=ExampleSkill_1} @PIR{r=10} ~onInteract
+```
+
+```yaml
+ExampleSkill_1:
+  Skills:
+  - message{m="Hello there!"}
+  - delay 100
+  - skill{s=ExampleSkill_2}
+
+ExampleSkill_2:
+  TargetConditions:
+  - distance{d=>10} true
+  Skills:
+  - message{m="...You truly don't like me, don't you?"}
+  - delay 20
+  - message{m="Don't worry, it's fine."}
+  - delay 20
+  - message{m="I'm used to it."}
+  - delay 20
+  - message{m="T.T"}
+```
+
+In this instance, the mob will first send a message to every player in a 10 blocks radius, and then, 5 seconds later, it will send additional messages to those, among them, that have moved to be more than 10 blocks away in the meantime
+
+## Meta Targeters {#meta-targeters}
+
+Another relevant topic is that of [Meta Targeter](https://wiki.mythiccraft.io/mythicmobs/Skills/Targeters#special-targeters)s. Those are targeters that, simply put, will evaluate what the inherited targets are and, based on that, return other appropriate targets themselves.
+
+```yaml
+#MOB FILE
+ExampleMob:
+  Type: ZOMBIE
+  Skills:
+  - skill{s=ExampleSkill} @PIR{r=10} ~onInteract
+```
+
+```yaml
+ExampleSkill:
+  Skills:
+  - effect:particles @Line{r=0.2}
+```
+
+The example above, for instance, will generate a line of particles between the caster and the players in a 10 blocks radius. Had the targeter not been `@PIR` but another one, the line would have been generated between the caster and the targeter used.
+
+# Inline Metaskills {#inline-metaskills}
+
+Metaskills can also be written with a specific inline syntax, without the need to create another Metaskill entirely.
+
+Metaskills written this way lose the access to all the fields a normal one has (Conditions, OnCooldownSkill etc.) and different methods are needed to obtain similar results to them (using the `cooldown` [universal attribute] instead of the Cooldown field).
+
+Mechanics inside a Inline Metaskill cannot be commented out in a ordinary way in order to disable them, as that would cause the whole Metaskill to stop working. Characters such as `<#>` or `<&nm>` must be used before the mechanic in order to obtain the same effect.
+
+The Inline Metaskill syntax can be used everywhere a normal Metaskill internal name would be expected inside of Metamechanics.
+
+## Examples {#examples}
+
+```yaml
+ExampleMob:
+  Type: ZOMBIE
+  Skills:
+  - skill{s=[
+    - message{m="Feeling cold? Don't you worry!"}
+    - delay 40
+    - ignite
+    ]} @trigger ~onInteract
+```
+
+> In this example you can see both the syntax to write a inline metaskill and some of the features of a normal Metaskill (target inheritance, use of delays) being used
+
+---
+
+```yaml
+  Skills:
+  - skill{s=[
+    - message{m="Hello there! A pleasure to meet you!"}
+    - setvariable{var=skill.examplename;type=STRING;val=<target.name>}
+    - skill{s=[
+      - message{m="OHI, OHI! WHO IS THAT GUY OVER THERE NAMED <skill.var.examplename>?!?"}
+      ]} @Owner
+    ]} @target
+```
+
+> In this example you can see how Inline Metaskills can be nested and how they share the same [skilltree](https://wiki.mythiccraft.io/mythicmobs/Skills/SkillTrees), enabling them to use skill scoped variables
+
+---
+
+```yaml
+  Skills:
+  - skill{branch=true;s=[
+    - message{m="1"}
+    <#>- message{m="2"}
+    - message{m="3"}
+    ];executeafterdeath=true} @trigger
+```
+
+> In this example you can see how to comment out a mechanic from a Inline Metaskill, and how normal attributes can be normally used in the calling Metamechanic
+
+# Skill Parameters [Premium Feature] {#skill-parameters-premium-feature}
+
+Skill parameters are a feature allowing you to more easily create generic skills and pass parameters to them from other skills. If that sounds confusing, here's an example!
+
+Currently most people have a lot similar damage skills that are just tweaked a bit for all their different mobs for slight variances in damage, but they do basically the same thing otherwise.
+
+**The old way of doing it:**
+
+```yaml
+#SKILL FILE
+ShadowDamage20:
+  Skills:
+  - damage{amount=20}
+  - some shadowy effect
+
+#MOB FILE
+Mob1:
+  Skills:
+  - skill{s=ShadowDamage20} ~onAttack
+```
+
+**With Skill Parameters, we can combine these all into a single skill! The new way:**
+
+```yaml
+#SKILL FILE
+ShadowDamage:
+  Skills:
+  - damage{amount=<skill.damage>}
+
+#MOB FILE
+Mob1:
+  Skills:
+  - skill{s=ShadowDamage;damage=20} ~onAttack
+```
+
+In the example above, the skill will still deal 20 damage to the target, we've just made the skill generic so that we can change the damage however we please on any mob.  
+The "skill parameter" system will pass **any** options from the **skill/metaskill** mechanic (except options that are specific to it) down the skill tree where you can reference them later. If a later skill passes the same parameter, it will overwrite it. These can be used anywhere placeholders are supported.
+
+> Skill Parameters can be used from the [skill](https://wiki.mythiccraft.io/mythicmobs/Skills/Mechanics/skill) and [variableskill](https://wiki.mythiccraft.io/mythicmobs/Skills/Mechanics/variableskill) mechanics
+
+## Reserved Parameter Names {#reserved-parameter-names}
+
+The following names, in any casing, *cannot* be used as a skill parameter
+
+- `skill`
+- `s`
+- `meta`
+- `m`
+- `mechanics`
+- `cooldown`
+- `cd`
+- `delay`
+- `repeat`
+- `targetinterval`
+- `targeti`
+- `repeatinterval`
+- `repeati`
+- `power`
+- `powersplitbetweentargets`
+- `powersplit`
+- `splitpower`
+- `forcesync`
+- `sync`
+- `targetisorigin`
+- `sourceisorigin`
+- `castfromorigin`
+- `fromorigin`
+- `fo`
+- `origin`
+- `branch`
+- `fork`
+- `snapshotcasterstats`
+- `snapshotstats`
+- `scs`
+- `snapshottriggerstats`
+- `sts`
+- `targetcreative`
+
+# Custom Commands {#custom-commands}
+
+It is possible to use Metaskills to create [Skill Commands](https://wiki.mythiccraft.io/mythicmobs/Skills/Skill-Commands)

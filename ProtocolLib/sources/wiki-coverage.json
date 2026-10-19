@@ -1,0 +1,271 @@
+{
+  "project": "ProtocolLib",
+  "snapshot": {
+    "date": "2026-10-19",
+    "timezone": "Asia/Taipei",
+    "manifest_generated_at": "2026-10-19T15:53:03.068Z"
+  },
+  "version": {
+    "supplied_component_version": "5.5.0-SNAPSHOT-d89a5de",
+    "repository_revision": "d89a5deb3eb625b16846da57fbbb04bfdd0d031d"
+  },
+  "scope": "全部已发现官方非 API 文档；纯 API/SDK 接口参考排除，混合页面仅按列明片段排除。",
+  "candidate_urls": [
+    "https://github.com/dmulloy2/ProtocolLib/wiki",
+    "https://www.spigotmc.org/resources/protocollib.1997/",
+    "https://github.com/dmulloy2/ProtocolLib/wiki/Common-Errors",
+    "https://github.com/dmulloy2/ProtocolLib/blob/d89a5deb3eb625b16846da57fbbb04bfdd0d031d/Readme.md",
+    "https://dev.bukkit.org/projects/protocollib/pages/configuration",
+    "https://dev.bukkit.org/projects/protocollib/pages/suppress-warnings",
+    "https://dev.bukkit.org/projects/protocollib/pages/timings",
+    "https://dev.bukkit.org/projects/protocollib/pages/main/donators",
+    "https://github.com/dmulloy2/ProtocolLib/wiki/Adding-ProtocolLib-as-a-Dependency",
+    "https://github.com/dmulloy2/ProtocolLib/wiki/Packet-listeners-and-adapters",
+    "https://github.com/dmulloy2/ProtocolLib/wiki/PacketContainer",
+    "https://github.com/dmulloy2/ProtocolLib/wiki/ProtocolManager",
+    "https://dev.bukkit.org/projects/protocollib/pages/tutorial",
+    "https://dev.bukkit.org/projects/protocollib/pages/main",
+    "https://dmulloy2.net/ProtocolLib/javadoc/"
+  ],
+  "candidates": [
+    {
+      "url": "https://github.com/dmulloy2/ProtocolLib/wiki",
+      "status": "translated",
+      "file": "wiki/home.md",
+      "source_file": "sources/wiki/original/home.md",
+      "source_sha256": "08e2fd28dda2c2991888e0aa7fea3b39ad1e6209e8d5628da24bf6499cc32dfa"
+    },
+    {
+      "url": "https://www.spigotmc.org/resources/protocollib.1997/",
+      "status": "translated",
+      "file": "wiki/plugin-page.md",
+      "source_file": "sources/wiki/original/plugin-page.md",
+      "source_sha256": "09224d0a082a5c23ee638c07ad2c4d489b3f2e54a70329fdb448ff88b099771f",
+      "excluded_api_sections": [
+        {
+          "url": "https://www.spigotmc.org/resources/protocollib.1997/",
+          "scope": "sections_only",
+          "reason": "仅排除 SDK 接入、TinyProtocol 和 Maven 示例；服主正文、命令、配置和支持信息完整保留。",
+          "sections": [
+            "For developers",
+            "TinyProtocol",
+            "Maven repository"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/dmulloy2/ProtocolLib/wiki/Common-Errors",
+      "status": "translated",
+      "file": "wiki/common-errors.md",
+      "source_file": "sources/wiki/original/common-errors.md",
+      "source_sha256": "e4acd3d74ca13507a3e55cc2b7083d7dd099bc352e25861ff79ef7cb38bf013d"
+    },
+    {
+      "url": "https://github.com/dmulloy2/ProtocolLib/blob/d89a5deb3eb625b16846da57fbbb04bfdd0d031d/Readme.md",
+      "status": "translated",
+      "file": "wiki/readme.md",
+      "source_file": "sources/wiki/original/readme.md",
+      "source_sha256": "e1dc1f299e4bfc850affd82c6543ff244643d22a696505af4f08f4857606b4e9",
+      "excluded_api_sections": [
+        {
+          "url": "https://github.com/dmulloy2/ProtocolLib/blob/d89a5deb3eb625b16846da57fbbb04bfdd0d031d/Readme.md",
+          "scope": "sections_only",
+          "reason": "API 接入和数据包代码示例排除；普通说明、资源、编译与兼容性完整保留。",
+          "sections": [
+            "Using ProtocolLib",
+            "Sending packets"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://dev.bukkit.org/projects/protocollib/pages/configuration",
+      "status": "translated",
+      "file": "wiki/bukkit-configuration.md",
+      "source_file": "sources/wiki/original/bukkit-configuration.md",
+      "source_sha256": "b6da7319f7a3ee09a381f88a950253f5ea70651891d9cc3c0fa9184adfaae39a"
+    },
+    {
+      "url": "https://dev.bukkit.org/projects/protocollib/pages/suppress-warnings",
+      "status": "translated",
+      "file": "wiki/bukkit-suppress-warnings.md",
+      "source_file": "sources/wiki/original/bukkit-suppress-warnings.md",
+      "source_sha256": "f024a956b5b89d6588809769039be4fba4bca62bcf814f06730734a1bd3a8451"
+    },
+    {
+      "url": "https://dev.bukkit.org/projects/protocollib/pages/timings",
+      "status": "translated",
+      "file": "wiki/bukkit-timings.md",
+      "source_file": "sources/wiki/original/bukkit-timings.md",
+      "source_sha256": "d5f991ad60dcea4eb38dfa7998340a34c1f6338b46005da989da84c2be2cbe7e"
+    },
+    {
+      "url": "https://dev.bukkit.org/projects/protocollib/pages/main/donators",
+      "status": "translated",
+      "file": "wiki/bukkit-main-donators.md",
+      "source_file": "sources/wiki/original/bukkit-main-donators.md",
+      "source_sha256": "0f088d5f998e8fcec30eb7aa9aca4b270eaf22c8cc1f1cd03832923b7143f87a"
+    },
+    {
+      "url": "https://github.com/dmulloy2/ProtocolLib/wiki/Adding-ProtocolLib-as-a-Dependency",
+      "status": "excluded_api",
+      "reason": "插件开发依赖或 ProtocolLib API 类型、监听器及操作接口参考。",
+      "source_file": "sources/wiki/original/adding-dependency.md",
+      "http_status": 200,
+      "source_sha256": "5ed34d19c79f3250d08dcdcc7a1477b7fc61bd85ad432ad8b9367856465ebf26"
+    },
+    {
+      "url": "https://github.com/dmulloy2/ProtocolLib/wiki/Packet-listeners-and-adapters",
+      "status": "excluded_api",
+      "reason": "插件开发依赖或 ProtocolLib API 类型、监听器及操作接口参考。",
+      "source_file": "sources/wiki/original/packet-listeners.md",
+      "http_status": 200,
+      "source_sha256": "a409abc2308fc8bbe76443d1b8dae808edf8a22c5480643ac14af52cefc303e5"
+    },
+    {
+      "url": "https://github.com/dmulloy2/ProtocolLib/wiki/PacketContainer",
+      "status": "excluded_api",
+      "reason": "插件开发依赖或 ProtocolLib API 类型、监听器及操作接口参考。",
+      "source_file": "sources/wiki/original/packetcontainer.md",
+      "http_status": 200,
+      "source_sha256": "e871bc606ade51e910c1860fd5815aa707e2bfcc7131f1d25562fb788acb7316"
+    },
+    {
+      "url": "https://github.com/dmulloy2/ProtocolLib/wiki/ProtocolManager",
+      "status": "excluded_api",
+      "reason": "插件开发依赖或 ProtocolLib API 类型、监听器及操作接口参考。",
+      "source_file": "sources/wiki/original/protocolmanager.md",
+      "http_status": 200,
+      "source_sha256": "2c5c7da6faaf0eb303928654e6a113927c0c583018e2fed456ec598f47e06a21"
+    },
+    {
+      "url": "https://dev.bukkit.org/projects/protocollib/pages/tutorial",
+      "status": "excluded_api",
+      "reason": "旧版 Java API 数据包监听、读写及发送开发教程。",
+      "source_file": "sources/wiki/original/bukkit-tutorial.md",
+      "http_status": 200,
+      "source_sha256": "022fac3dc17d01f9587ea32a45f2028477a98d0de378c093c3a9a3a993c65361"
+    },
+    {
+      "url": "https://dev.bukkit.org/projects/protocollib/pages/main",
+      "status": "unavailable",
+      "reason": "官方明确说明此页自动生成并故意留空，无可翻译的使用正文。",
+      "source_file": "sources/wiki/original/bukkit-main.md",
+      "http_status": 200,
+      "source_sha256": "dd5e443d196a4d56020c7b2d47908539a7bf7a3565ce5d37a5b464c7e8e387c6"
+    },
+    {
+      "url": "https://dmulloy2.net/ProtocolLib/javadoc/",
+      "status": "excluded_api",
+      "reason": "JavaDoc API 接口参考目录，按目录整体排除。"
+    }
+  ],
+  "excluded_api": [
+    {
+      "url": "https://github.com/dmulloy2/ProtocolLib/wiki/Adding-ProtocolLib-as-a-Dependency",
+      "status": "excluded_api",
+      "reason": "插件开发依赖或 ProtocolLib API 类型、监听器及操作接口参考。",
+      "source_file": "sources/wiki/original/adding-dependency.md",
+      "http_status": 200,
+      "source_sha256": "5ed34d19c79f3250d08dcdcc7a1477b7fc61bd85ad432ad8b9367856465ebf26"
+    },
+    {
+      "url": "https://github.com/dmulloy2/ProtocolLib/wiki/Packet-listeners-and-adapters",
+      "status": "excluded_api",
+      "reason": "插件开发依赖或 ProtocolLib API 类型、监听器及操作接口参考。",
+      "source_file": "sources/wiki/original/packet-listeners.md",
+      "http_status": 200,
+      "source_sha256": "a409abc2308fc8bbe76443d1b8dae808edf8a22c5480643ac14af52cefc303e5"
+    },
+    {
+      "url": "https://github.com/dmulloy2/ProtocolLib/wiki/PacketContainer",
+      "status": "excluded_api",
+      "reason": "插件开发依赖或 ProtocolLib API 类型、监听器及操作接口参考。",
+      "source_file": "sources/wiki/original/packetcontainer.md",
+      "http_status": 200,
+      "source_sha256": "e871bc606ade51e910c1860fd5815aa707e2bfcc7131f1d25562fb788acb7316"
+    },
+    {
+      "url": "https://github.com/dmulloy2/ProtocolLib/wiki/ProtocolManager",
+      "status": "excluded_api",
+      "reason": "插件开发依赖或 ProtocolLib API 类型、监听器及操作接口参考。",
+      "source_file": "sources/wiki/original/protocolmanager.md",
+      "http_status": 200,
+      "source_sha256": "2c5c7da6faaf0eb303928654e6a113927c0c583018e2fed456ec598f47e06a21"
+    },
+    {
+      "url": "https://dev.bukkit.org/projects/protocollib/pages/tutorial",
+      "status": "excluded_api",
+      "reason": "旧版 Java API 数据包监听、读写及发送开发教程。",
+      "source_file": "sources/wiki/original/bukkit-tutorial.md",
+      "http_status": 200,
+      "source_sha256": "022fac3dc17d01f9587ea32a45f2028477a98d0de378c093c3a9a3a993c65361"
+    },
+    {
+      "url": "https://dmulloy2.net/ProtocolLib/javadoc/",
+      "status": "excluded_api",
+      "reason": "JavaDoc API 接口参考目录，按目录整体排除。"
+    },
+    {
+      "url": "https://github.com/dmulloy2/ProtocolLib/blob/d89a5deb3eb625b16846da57fbbb04bfdd0d031d/Readme.md",
+      "scope": "sections_only",
+      "reason": "API 接入和数据包代码示例排除；普通说明、资源、编译与兼容性完整保留。",
+      "sections": [
+        "Using ProtocolLib",
+        "Sending packets"
+      ]
+    },
+    {
+      "url": "https://www.spigotmc.org/resources/protocollib.1997/",
+      "scope": "sections_only",
+      "reason": "仅排除 SDK 接入、TinyProtocol 和 Maven 示例；服主正文、命令、配置和支持信息完整保留。",
+      "sections": [
+        "For developers",
+        "TinyProtocol",
+        "Maven repository"
+      ]
+    }
+  ],
+  "unavailable": [
+    {
+      "url": "https://dev.bukkit.org/projects/protocollib/pages/main",
+      "status": "unavailable",
+      "reason": "官方明确说明此页自动生成并故意留空，无可翻译的使用正文。",
+      "source_file": "sources/wiki/original/bukkit-main.md",
+      "http_status": 200,
+      "source_sha256": "dd5e443d196a4d56020c7b2d47908539a7bf7a3565ce5d37a5b464c7e8e387c6"
+    }
+  ],
+  "actual_page_count": 8,
+  "translated_pages": 8,
+  "untranslated_available_non_api_pages": 0,
+  "all_discovered_candidates_classified": true,
+  "independent_wiki_found": true,
+  "assets": {
+    "ledger": "sources/wiki/assets.json",
+    "archived_source_entries": 2,
+    "unique_local_files": 2,
+    "unavailable": []
+  },
+  "validation": {
+    "status": "passed",
+    "report": "sources/wiki/validation.json",
+    "verbatim_code_blocks": 5,
+    "protected_inline_tokens": 8,
+    "source_table_rows": 67,
+    "translated_table_rows": 67,
+    "pages": 8,
+    "native_asset_files": 2,
+    "local_image_references": 2,
+    "errors": [],
+    "warnings": [
+      {
+        "file": "wiki/plugin-page.md",
+        "numeric_review": [
+          "3"
+        ]
+      }
+    ]
+  }
+}

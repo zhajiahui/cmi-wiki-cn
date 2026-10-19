@@ -1,0 +1,72 @@
+Configuration syntax in Citizens is simple. Nodes within arrow brackets -- <code>&lt;&gt;</code> -- will be parsed and replaced if possible. Below are the available nodes that you can use. 
+
+==Chat Colors==
+Use the Chat Color characters the same as any other plugin. For example, <code>&a</code> would give you green.
+
+'''Color Reference'''
+<br>0 -- BLACK
+<br>1 -- <span style="color:#0000AA">DARK BLUE</span>
+<br>2 -- <span style="color:#00AA00">DARK GREEN</span>
+<br>3 -- <span style="color:#00AAAA">CYAN</span>
+<br>4 -- <span style="color:#AA0000">DARK RED</span>
+<br>5 -- <span style="color:#AA00AA">PURPLE</span>
+<br>6 -- <span style="color:#FFAA00">GOLD</span>
+<br>7 -- LIGHT GRAY
+<br>8 -- GRAY
+<br>9 -- <span style="color:#5555FF">BLUE</span>
+<br>a -- <span style="color:#55FF55">GREEN</span>
+<br>b -- <span style="color:#22BBBB">AQUA</span>
+<br>c -- <span style="color:#FF5555">ROSE RED</span>
+<br>d -- <span style="color:#FF55FF">LIGHT PURPLE</span>
+<br>e -- <span style="color:#AAAA11">YELLOW</span>
+<br>f -- WHITE
+
+'''Format Reference'''
+<br>k -- Obfuscated
+<br>l -- Bold
+<br>m -- Strikethrough
+<br>n -- Underline
+<br>o -- Italic
+<br>r -- Reset
+
+[https://www.digminecraft.com/lists/color_list_pc.php Alternate color/format reference page]
+
+You can also use hexadecimal colors in Minecraft 1.16+, using Spigot's syntax - <code>&x&f&f&0&0&e&e</code> or Essentials' syntax - <code>&#ff00ee</code> (both examples produce the same pink/magenta color).
+
+You can also use [https://docs.adventure.kyori.net/minimessage/format.html MiniMessage].
+
+==Special==
+
+You can use <code>&lt;br&gt;</code> to create a newline in the middle of a text line.
+
+==Other==
+There are also other nodes that you can use in configuration files. Some of these do not apply to certain configuration settings, so use with care. More will be added in the future as the need arises.
+
+===NPC Nodes===
+<code>&lt;npc&gt;</code> -- NPC's name
+<br><code>&lt;id&gt;</code> -- NPC's ID
+<br><code>&lt;owner&gt;</code> -- NPC's owner
+
+===Player Nodes===
+<br><code>&lt;player&gt;</code> -- Player's name
+<br><code>&lt;world&gt;</code> -- Player's world
+<br><code>&lt;nearest_player&gt;</code> -- Name of the player closest to the NPC
+
+===Extra Nodes===
+<br><code>&lt;random_player&gt;</code> -- Random online player name
+<br><code>&lt;random_npc&gt;</code> -- Random NPC name
+<br><code>&lt;random_npc_id&gt;</code> -- Random NPC ID
+
+==PlaceholderAPI==
+
+If you have [https://www.spigotmc.org/resources/placeholderapi.6245/ PlaceholderAPI] installed on your server, you can use PAPI placeholders on NPCs and use specific Citizens PAPI placeholders anywhere that supports PAPI.
+
+===External Placeholders on NPCs===
+You can use any PAPI Placeholders the same as you would use them elsewhere in NPC text or commands, and non-player placeholders in NPC names/holograms/etc. [https://wiki.citizensnpcs.co/Frequently_Asked_Questions#My_PlaceholderAPI_Placeholder_Works_In_Chat.2C_But_Not_On_An_NPC See the FAQ for more details on the non-player limit].
+
+===Citizens Placeholders===
+<br><code>%citizens_selected_npc_name%</code> -- the name of the NPC selected by the player.
+<br><code>%citizens_selected_npc_id%</code> -- the ID of the NPC selected by the player.
+
+{{NavBox}}
+[[Category:Configuration]]

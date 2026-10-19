@@ -1,0 +1,214 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "1.x/List of Objective node types",
+    "pageid": 23,
+    "revid": 1290,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><table class=\"wikitable\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"1\" style=\"width: 100%; background-color:#F75D59; font-size: 32px; padding: 15px;\"><b>Not Supported!</b>\n</th></tr>\n<tr>\n<td style=\"font-size: 16px;\">This page is about Citizens 1.x, while the current version is Citizens 2.0.2. This page's content may be outdated, and shouldn't be trusted as being correct. See this page's talk page for more information. If you were looking for the 2.0.2 equivalent of this page, try <a href=\"/index.php?title=List_of_Objective_node_types&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"List of Objective node types (page does not exist)\">List of Objective node types</a>. If you feel this message was displayed in error, please contact an administrator.\n</td></tr></tbody></table>\n<p>To aid with generic objective design, each objective can use one of a common set of variables: amount, leeway, string, materialid, location, item and npcdestination (destination NPC ID).\n</p><p>Each objective type may use one or more of these variables.\n</p><p>Item nodes have three sub-nodes, two that must be included and one optional.\n</p>\n<ul><li>The <i>id</i> sub-node designates the item/block ID.</li>\n<li>The <i>amount</i> sub-node specifies the item amount.</li>\n<li>The optional <i>data</i> sub-node specifies the item data value to be used.</li></ul>\n<p>Location nodes have 4 required sub-nodes, two optional.\n</p>\n<ul><li>The <i>world</i> node specifies the world name of the location.</li>\n<li>The <i>x</i>, <i>y</i>, and <i>z</i> nodes specifies the x, y, and z values.</li>\n<li>The optional <i>pitch</i>/<i>yaw</i> nodes specify the rotation (think aeroplanes) of the location.</li></ul>\n<p>Other optional nodes can be included for more functionality.  These are not required.\n</p>\n<ul><li>The <i>finishhere</i> node can instruct the quest to be completed at that step.  By default, to finish a quest, you must talk to the original quester.</li>\n<li>The <i>message</i> node will display text to the player when the objective is completed.</li>\n<li>The <i>reward</i> node is set up exactly like quest rewards, except granted when the player completes the sub-objective.</li>\n<li>The <i>optional</i> node can set an objective to be optional.  This is typically backed up with a sub-objective reward for \"side quest\" capabilities.</li></ul>\n<p><br />\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Objective_Types\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Objective Types</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-2\"><a href=\"#Build\"><span class=\"tocnumber\">1.1</span> <span class=\"toctext\">Build</span></a></li>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Chat\"><span class=\"tocnumber\">1.2</span> <span class=\"toctext\">Chat</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Location\"><span class=\"tocnumber\">1.3</span> <span class=\"toctext\">Location</span></a></li>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#Hunt\"><span class=\"tocnumber\">1.4</span> <span class=\"toctext\">Hunt</span></a></li>\n<li class=\"toclevel-2 tocsection-6\"><a href=\"#Move_Distance\"><span class=\"tocnumber\">1.5</span> <span class=\"toctext\">Move Distance</span></a></li>\n<li class=\"toclevel-2 tocsection-7\"><a href=\"#Destroy_Block\"><span class=\"tocnumber\">1.6</span> <span class=\"toctext\">Destroy Block</span></a></li>\n<li class=\"toclevel-2 tocsection-8\"><a href=\"#Delivery\"><span class=\"tocnumber\">1.7</span> <span class=\"toctext\">Delivery</span></a></li>\n<li class=\"toclevel-2 tocsection-9\"><a href=\"#Player_Combat\"><span class=\"tocnumber\">1.8</span> <span class=\"toctext\">Player Combat</span></a></li>\n<li class=\"toclevel-2 tocsection-10\"><a href=\"#KillNPC\"><span class=\"tocnumber\">1.9</span> <span class=\"toctext\">KillNPC</span></a></li>\n<li class=\"toclevel-2 tocsection-11\"><a href=\"#Collect\"><span class=\"tocnumber\">1.10</span> <span class=\"toctext\">Collect</span></a></li>\n</ul>\n</li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading1\"><h1 id=\"Objective_Types\">Objective Types</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/List_of_Objective_node_types&amp;action=edit&amp;section=1\" title=\"Edit section: Objective Types\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Below are objective types and their required flags.  Remember: Quest sub-objectives can also have other optional nodes.\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Build\">Build</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/List_of_Objective_node_types&amp;action=edit&amp;section=2\" title=\"Edit section: Build\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Build quests require the player to place a certain number of blocks.\n</p>\n<pre>'0':\n    '0':    \n        type: build      # Specifies build objective.\n        materialid: 54  # Chest. Material player is required to build.\n        amount: 1        # Number of items that must be placed.\n</pre>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Chat\">Chat</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/List_of_Objective_node_types&amp;action=edit&amp;section=3\" title=\"Edit section: Chat\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Chat quests require something to be said in chat.\n</p>\n<pre>'0':\n    '0':\n        type: chat\n        string: 'I cracked the code!'\n</pre>\n<p>Chat quests can be further extended. The string: node can be a comma-separated list of all text that can be matched. Special syntax flags are r: to match regex and c: to check if the text contains something else. For example, 'r:[0-9]' matches any 1-digit number, and 'c:hi' matches any text containing 'hi'.\n</p><p>By setting the leeway: and npcid: parameters, valid chat can be limited to a radius from an NPC.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Location\">Location</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/List_of_Objective_node_types&amp;action=edit&amp;section=4\" title=\"Edit section: Location\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Location quests (move location) require the player be within a certain range of a location.\n</p>\n<pre>'0':\n    '0':    \n        type: move location   # Specifies loaction objective.\n        location:\n            x: 150       # Coordinates of location required to visit.\n            y: 47\n            z: 420\n            world: 'world'\n        time: 10         # The time (in seconds) that the player has to stay in this location for.\n        leeway: 1        # The leeway in blocks that the player can be away from the location before finishing.\n</pre>\n<p>In previous versions the leeway in blocks was set with the amount: node. 1.1.6 on, use leeway: instead.  Additionally, in 1.1.5, location quests were broken.\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Hunt\">Hunt</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/List_of_Objective_node_types&amp;action=edit&amp;section=5\" title=\"Edit section: Hunt\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Hunt quests require the player to kill a certain number of monsters.\n</p>\n<pre>'0':\n    '0':    \n        type: hunt   # Specifies hunt objective.\n        amount: 10         # The amount of monsters the player needs to kill.\n        string: LavaSlime, PigZombie    # Requires Magma Cubes and Zombie Pigmen to be killed to count.\n                      # Using '-' as the first character makes a whitelist. '*' represents all.\n</pre>\n<p>Valid entity types are categorized and listed below:\n</p><p><b>Passive -</b>\nChicken, Cow, MushroomCow, Ozelot, Pig, Sheep, Squid, Villager\n</p><p><b>Neutral -</b>\nEnderman, Wolf, PigZombie\n</p><p><b>Hostile -</b>\nBlaze, CaveSpider, Creeper, Ghast, LavaSlime, Silverfish, Skeleton, Slime, Spider, Zombie\n</p><p><b>Utility -</b>\nSnowMan, VillagerGolem\n</p><p><b>Bosses -</b>\nEnderDragon\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Move_Distance\">Move Distance</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/List_of_Objective_node_types&amp;action=edit&amp;section=6\" title=\"Edit section: Move Distance\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Move distance quests requires the player to walk a certain number of blocks.\n</p>\n<pre>'0':\n    '0':    \n        type: move distance   # Specifies move distance objective.\n        amount: 1000         # The amount of blocks required to traverse.\n</pre>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Destroy_Block\">Destroy Block</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/List_of_Objective_node_types&amp;action=edit&amp;section=7\" title=\"Edit section: Destroy Block\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Destroy Block quests require the player to break a certain amount of blocks.\n</p>\n<pre>'0':\n    '0':    \n        type: destroy block   # Specifies hunt objective.\n        amount: 10         # The amount of blocks to break.\n        materialid: 1        # The type of block required.\n</pre>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Delivery\">Delivery</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/List_of_Objective_node_types&amp;action=edit&amp;section=8\" title=\"Edit section: Delivery\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Delivery quests require the player to 'deliver' a specified item to a specified NPC.\n</p>\n<pre>'0':\n    '0':\n        type: delivery    # Delivery Quest type\n        materialid: 341     # Slimeballs set as material to deliver.\n        amount: 6      # Quantity: 6\n        npcdestination: 22      # deliver to NPC ID\n</pre>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Player_Combat\">Player Combat</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/List_of_Objective_node_types&amp;action=edit&amp;section=9\" title=\"Edit section: Player Combat\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Combat quest (player combat) - kill a certain number of players.\n</p>\n<pre>'0':\n    '0':\n        type: player combat    # Player Combat type\n        amount: 1    # Amount of players to kill\n        string: Notch,fullwall,      # Which players should be killed. \n                # Using '-' as the first character makes a whitelist. '*' represents all. g:group represents groups.\n</pre>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"KillNPC\">KillNPC</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/List_of_Objective_node_types&amp;action=edit&amp;section=10\" title=\"Edit section: KillNPC\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>- Note: Requires Citizens 1.1.6 or higher.\n</p><p>Kill NPC quests require the player to slay a Guard NPC.  Note: EvilNPCs will be supported soon.\n</p>\n<pre>'0':\n    '0':\n        type: killNPC    # KillNPC type\n        amount: 1\n        string: Cantrell,Notch,      # Which NPCs should be killed. \n                # Using '-' as the first character makes a whitelist.  '*' represents all. NPC ID or Name can be used.\n</pre>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Collect\">Collect</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/List_of_Objective_node_types&amp;action=edit&amp;section=11\" title=\"Edit section: Collect\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Collect quest requires the player to pick up a certain number of items.\n</p>\n<pre>'0':\n    '0':    \n        type: collect   # Specifies hunt objective.\n        amount: 10         # The amount of blocks to collect.\n        materialid: 3        # The type of block required.\n</pre>\n<p>Note: For the items to register, the player has to pick them up from the ground. Materials obtained through chests/furnaces will not register.  This also opens up a possible exploit in which the player can throw down and pick up the same item to get it to count more than once. One way to protect against this would be to follow it up with a delivery quest that would require the items to be physically delivered to an NPC to check for the correct amount.\n</p>\n<div class=\"padded\" style=\"font-size: 12px; padding: 5px\">\n<table class=\"wikitable collapsible collapsed\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Usage\" title=\"Category:Usage\">Usage</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Installation\" title=\"Installation\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Frequently_Asked_Questions\" title=\"Frequently Asked Questions\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Editors\" title=\"Editors\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Characters\" title=\"Characters\">Characters</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/API\" title=\"API\">API</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32;\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Configuration\" title=\"Category:Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Configuration\" title=\"Configuration\">Configuration</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Data_Storage\" title=\"Data Storage\">Data Storage</a>\n</td></tr></tbody></table>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145803\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.053 seconds\nReal time usage: 0.072 seconds\nPreprocessor visited node count: 103/1000000\nRevision size: 6459/2097152 bytes\nPost‐expand include size: 2463/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 4/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2507/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   19.653      1 -total\n 56.30%   11.064      1 Template:NoSupport\n 39.93%    7.847      1 Template:NavBox\n 33.91%    6.664      2 Template:Version2F\n 16.47%    3.237     10 Template:·\n 15.92%    3.129      1 Template:Version2\n-->\n\n<!-- Render ID 7bbe5de4-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "API"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Configuration"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Data Storage"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Editors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Text Syntax"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      },
+      {
+        "ns": 0,
+        "*": "List of Objective node types"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Configuration"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Usage"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Objective Types",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "1.x/List_of_Objective_node_types",
+        "byteoffset": 1406,
+        "anchor": "Objective_Types",
+        "linkAnchor": "Objective_Types"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Build",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "1.x/List_of_Objective_node_types",
+        "byteoffset": 1549,
+        "anchor": "Build",
+        "linkAnchor": "Build"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Chat",
+        "number": "1.2",
+        "index": "3",
+        "fromtitle": "1.x/List_of_Objective_node_types",
+        "byteoffset": 1853,
+        "anchor": "Chat",
+        "linkAnchor": "Chat"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Location",
+        "number": "1.3",
+        "index": "4",
+        "fromtitle": "1.x/List_of_Objective_node_types",
+        "byteoffset": 2408,
+        "anchor": "Location",
+        "linkAnchor": "Location"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Hunt",
+        "number": "1.4",
+        "index": "5",
+        "fromtitle": "1.x/List_of_Objective_node_types",
+        "byteoffset": 3133,
+        "anchor": "Hunt",
+        "linkAnchor": "Hunt"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Move Distance",
+        "number": "1.5",
+        "index": "6",
+        "fromtitle": "1.x/List_of_Objective_node_types",
+        "byteoffset": 3927,
+        "anchor": "Move_Distance",
+        "linkAnchor": "Move_Distance"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Destroy Block",
+        "number": "1.6",
+        "index": "7",
+        "fromtitle": "1.x/List_of_Objective_node_types",
+        "byteoffset": 4199,
+        "anchor": "Destroy_Block",
+        "linkAnchor": "Destroy_Block"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Delivery",
+        "number": "1.7",
+        "index": "8",
+        "fromtitle": "1.x/List_of_Objective_node_types",
+        "byteoffset": 4507,
+        "anchor": "Delivery",
+        "linkAnchor": "Delivery"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Player Combat",
+        "number": "1.8",
+        "index": "9",
+        "fromtitle": "1.x/List_of_Objective_node_types",
+        "byteoffset": 4844,
+        "anchor": "Player_Combat",
+        "linkAnchor": "Player_Combat"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "KillNPC",
+        "number": "1.9",
+        "index": "10",
+        "fromtitle": "1.x/List_of_Objective_node_types",
+        "byteoffset": 5248,
+        "anchor": "KillNPC",
+        "linkAnchor": "KillNPC"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Collect",
+        "number": "1.10",
+        "index": "11",
+        "fromtitle": "1.x/List_of_Objective_node_types",
+        "byteoffset": 5677,
+        "anchor": "Collect",
+        "linkAnchor": "Collect"
+      }
+    ],
+    "showtoc": ""
+  }
+}

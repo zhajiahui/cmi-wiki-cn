@@ -1,0 +1,142 @@
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://meta.denizenscript.com/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+<br><br><br>
+
+
+
+
+[[Sentry]] is intended to be used in conjunction with Denizen for advanced interactions and scripting.
+
+__TOC__
+
+==Scripted Death==
+===Interact Triggers ===
+Sentry adds 2 new Triggers, 2 new Commands and several Actions to [[Denizen]] that can be used with Sentry-Denizens.
+
+;Npcdeath Trigger
+The Npcdeath Trigger works like any other [[Denizen]] Trigger. It is called when the Sentry-Denizen has taken enough damage to kill it. The trigger will run once for EACH Player that was involved in killing the NPC since it was last at full health. If the NPC dies to mobs or the environment the script will not run.
+
+;Npcdeathowner Trigger
+The Npcdeathowner trigger is also called when the NPC dies, but runs the trigger on the NPC's owner, if owner is an online player. This will be run no matter what the cause of death.
+
+'''One of the following commands should always be the last step of a death trigger. Otherwise the Sentry-Denizen will cease to do anything, stuck in un-death.'''
+
+=== Commands ===
+;DIE Command
+Call this when your script is done to finish off the Sentry-Denizen and despawn it.
+Note: Calling the DIE command on a non-sentry Denizen will likely throw an error.
+
+;LIVE Command
+Call this to reset a Sentry-Denizen to normal Sentry activity. Useful for mid-fight speech and 'boss stages'. This does not heal the Sentry, it will retain the health it had prior to its death-blow. use the Denizen HEAL DENIZEN command for that, if desired.
+
+Use LIVE PEACE to also cause the NPC to drop its current target.
+
+Note: Calling the LIVE command on a non-sentry Denizen will likely throw an error.
+
+Here is a full example of Npcdeath Trigger and DIE.
+
+{| class="wikitable collapsible collapsed" 
+! NpcDeath Trigger and DIE command example script.
+|-
+|<pre>
+
+GuardDeath: 
+  Type: Interact
+  Requirements: 
+    Mode: None 
+    List:
+  Steps: 
+    1: 
+      Npcdeath Trigger: 
+        script:
+          - CHAT "ARARRRRRGRGGRRH!"   
+          - DROP DIAMOND
+          - DIE
+</pre>
+|}
+
+===Actions===
+Sentry provides the following Actions that can be used for short scripts:
+* on death
+* on death by entity
+* on death by player
+* on death by CAUSE
+**Where CAUSE is [http://jd.bukkit.org/rb/apidocs/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html#enum_constant_detail|any damage cause] (i.e. on death by lava)
+* on death by LIVINGENTITY
+**Where LIVINGENTITY is the name of the entity type (i.e. on death by zombie)
+
+==Criminal System==
+
+A few [[Multiple Traits|Sentry-Denizens]] can be used to create a town criminal systems.
+
+Let's say you have an adventure server with a town called '''Hillside''', populated by shopkeepers, guards, blacksmiths, etc.
+
+Create a number of Sentry-Denizens to act as your town's police force. Set each Sentry to target a [[#Targets|GROUP]] called Hillside_Enemy.
+
+Now create a [[Denizen]] script to handle player aggression. Let's use a 3-strike system. This same script will execute for all NPCs to which it is assigned, and the player's step will be the same for each, so we can use 1 script with multiple steps, one for each strike. Here's an example:
+
+{{color|red|white|script removed as not compatible with current Denizen}}
+
+You can see we've assigned the script "Hillside_Aggression" to all NPCs named Town Guard, Shopkeeper Bob, or Mayor Steve.
+
+If a player attacks any of these NPCs, they will receive a warning message and move on to the next step, if they get to step 3, they get put in the Sentry hostile group Hillside_Enemy.
+
+:Bonus: If the shopkeeper and mayor are set as Sentries too, they will defend themselves! (turn retaliate off, so they don't attack immediately)
+
+The final step resets the script to step 1, but will not run so long as the player is a member of Hillside_Enemy. 
+
+This is just a basic example and can be expanded in any number of ways, using the commands in [[Denizen]] you could:
+
+- forgive the player after a period of time (remove the player from the hillside_enemy group) 
+
+::(You can do this automatically with PEX duration options)
+
+- Create a quest for the player to earn forgiveness.
+
+- Create hostility in other towns if harassment of Hillside continues.
+
+- etc etc etc.
+
+==Hire-able Bodyguards==
+
+
+So you're getting your butt kicked on your survival server, wouldn't it be nice to spend some of that hard-earned emerald on a dude who will watch your back for you? Now you can!
+
+Let's see how we can use [[Denizen]] to make hire-able bodyguards.
+
+'''{{color|red|white|For a Denizen 0.9 version see this http://scripts.citizensnpcs.co/view/ta8m4c}}
+
+Here we have a single NPC named 'Mercenary Leader'. Locate him somewhere convenient. Depending on your server's permission system you may need to pretend Mercenary Leader is player and grant him access to to /npc and /sentry commands. (need to test)
+
+In this simple example we've given him one script with the requirement the Player has 500 economy money. We also gave him a default text telling the player to come back when he has more. You could expand on this with another script, but it's good enough for now.
+
+If the player has the moolah, when he right clicks, the Merc will ask him if he wants a bodyguard. If the player answers yes. the NPC will use server commands to create a Sentry and assign it to the Player. In this example the Sentry's {{sentrystat|respawn}} is set to -1 meaning if the bodyguard dies, it's dead for good and the player needs to buy another one.
+
+That's all there is to it. You could expand on this in many ways:
+* Create 'template' sentries and use /npc copy to create the bodyguard instead of building a new npc from scratch. 
+* Higher prices for bodyguards with better stats.
+* Limit player to one guard at a time.
+* Give ranged or melee guards.
+* Make the bodyguard a [[Denizen]] as well and respond to player commands. (Change the name to something generic so you can pre-assign scripts)
+
+
+
+
+Something to note is that Denizen scripts are player-centric. A Sentry-Denizen will remember all the players who contributed to its death. A separate script will run for EACH player. Because of this it is best not to use the DROP command like in the example as this would drop 1 diamond per player. Use the GIVE command instead and each player will receive the reward directly.
+
+Again this is a simple example, but could be expanded:
+* Use the FLAG or FINISH command to count the number of times the player has killed this NPC
+* Spawn a super-tough boss NPC at the start of a quest that requires multiple players to take down. Each player can be flagged for helping to kill it.
+* Have a NPC give the player important quest hints when it dies.
+* Revisit the [[#Criminal System]] example and make a punishment for murder.
+
+[[Category:Denizen]]

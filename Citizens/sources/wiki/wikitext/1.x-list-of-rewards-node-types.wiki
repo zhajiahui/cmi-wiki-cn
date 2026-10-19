@@ -1,0 +1,130 @@
+{{NoSupport}}
+=Rewards node=
+The rewards node is used in [[Quests.yml]] to tell the quester what to reward the player with when conditions are met.  If all the objectives are completed, the rewards: node is triggered.  
+
+For example:
+
+<pre>rewards:
+    '0':
+        type: item    # Rewards an item
+        id: 15        # iron_ore
+        amount: 30
+    '1':
+        type: quest   # Rewards a quest.  This quest will start immediately.
+        quest: "Part II"
+</pre>
+
+You may have multiple rewards, or just one.  Rewards can also be subset into objectives to reward the player as objectives are completed. The format is the same.
+
+=Rewards Types=
+==Command==
+
+Command reward (command:) - executes a command.
+Specified by the command: node. Use <player> as a variable that will be replaced with the name of the player who is receiving the reward. Use <world> as a variable that will be replaced with the name of the world the player is currently in. Use server: true to execute the command from the console.
+
+<pre>'0':
+    type: command
+    command: give <player> 1 100
+    server: false
+</pre>
+
+
+==NPC==
+
+NPC reward (npc:) - grants an npc to a player.
+Uses a name: node to specify the name of the npc, and a comma-separated list of toggles in the types: node (eg. trader,quester,guard). Will create an NPC owned by the player who completed the quest, with a generated UID.
+
+<pre>'0':
+    type: npc
+    npcid: 1   # optional - gives the ownership of npc specified by this id to the player
+    name: 'Bill'
+    types: 'guard,trader,quester'
+    location:
+        x: 10
+        y: 10
+        z: -50
+        world: 'world'</pre>
+
+
+==Rank==
+
+Rank reward (rank) - grants a group ('rank') to a player.
+Specified by the rank: node.
+
+<pre>'0':
+    type: rank
+    rank: 'admin'</pre>
+
+
+==Permission==
+
+Permission reward (permission) - grants a permission to a player.
+Specified by the permission: node.
+
+<pre>'0':
+    type: permission
+    permission: 'quests.admin'
+</pre>
+
+
+==Quest==
+
+Quest reward (quest) - grants a quest to a player. Note that it cannot be taken away from a player.
+Specified by the quest: node.
+<pre>'0':
+    type: quest
+    quest: 'builder'</pre>
+
+''Note by aufdemrand: Need to test behavior of using the quest reward in a sub-objective reward. Will report what I find soon.''
+
+
+==Item==
+
+Item reward (item) - gives an item to a player.
+Loaded from the item: nodes.
+
+
+<pre>'0':
+    type: item
+    item:
+        id: 10
+        amount: 50
+        data: 0</pre>
+
+==Health==
+
+Health reward (health) - gives health to a player.
+Loaded from the amount: node.
+
+<pre>
+'0':
+    type: health
+    amount: 10
+</pre>
+
+
+==Money==
+
+Money reward (money) - gives money to a player.
+Loaded from the money: node.
+
+<pre>'0':
+    type: money
+    money: 100</pre>
+
+
+==Teleport==
+
+Teleport reward (teleport) - teleports a player to a location.
+Loaded from the location: node.
+
+<pre>'0':
+    type: teleport
+    location:
+        x: 10
+        y: 50
+        z: -10
+        world: 'main'</pre>
+
+{{NavBox}}
+[[Category:Citizens1]]

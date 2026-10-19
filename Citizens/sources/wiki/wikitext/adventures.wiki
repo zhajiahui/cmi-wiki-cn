@@ -1,0 +1,11 @@
+== Downloads ==
+While under development, builds are available [http://ci.citizensnpcs.co/job/Adventures here].
+== Races ==
+* [[Race Reference|Reference]]
+
+== Dialog ==
+Adventures uses a modified form of the Valve dialog system outlined in [http://www.valvesoftware.com/publications/2012/GDC2012_Ruskin_Elan_DynamicDialog.pdf this presentation]. This allows very dynamic and extensible dialog to take place.
+
+* [[Dialog Tutorial|Tutorial]]
+* [[Dialog Reference|Reference]]
+* [[Dialog Examples|Examples]]

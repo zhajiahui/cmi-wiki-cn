@@ -1,0 +1,7 @@
+[
+  {"file":"wiki/index.md","title":"PacketEvents 是什么？","source_url":"https://docs.packetevents.com/","source_file":"sources/wiki/original/index.md","source_sha256":"92712a3df17753a55f48e62ba41ba4cf24cdc14202efc6fa4dad690e1cfa2e7f","translation_review":"reviewed"},
+  {"file":"wiki/introduction/prerequisites.md","title":"前置知识","source_url":"https://docs.packetevents.com/introduction/prerequisites/","source_file":"sources/wiki/original/introduction/prerequisites.md","source_sha256":"7c79fd38586c6f53564595054375c1e9def826bafaaab99cdd85a5a82592d1ca","translation_review":"reviewed"},
+  {"file":"wiki/introduction/the-problem-of-bundling.md","title":"嵌入依赖的问题","source_url":"https://docs.packetevents.com/introduction/the-problem-of-bundling/","source_file":"sources/wiki/original/introduction/the-problem-of-bundling.md","source_sha256":"25becd433d430bed3c384c01890b742a7dbc2586446fb71a12bc404587f183d8","translation_review":"reviewed"},
+  {"file":"wiki/faq.md","title":"常见问题","source_url":"https://docs.packetevents.com/faq/","source_file":"sources/wiki/original/faq.md","source_sha256":"7d087919a47791b58f10093b21e4cbc3cd35ff76723cbf0ac63b546c91773538","translation_review":"reviewed"},
+  {"file":"wiki/readme.md","title":"PacketEvents 项目说明","source_url":"https://github.com/retrooper/packetevents/blob/7ceabaef7350e512c4b4cd88f9eb982d93f77029/README.md","source_file":"sources/wiki/original/readme.md","source_sha256":"58d537fd533b0dc15720d4ded7c2a8691289420c4c4ef088b417529c96caf992","translation_review":"reviewed"}
+]

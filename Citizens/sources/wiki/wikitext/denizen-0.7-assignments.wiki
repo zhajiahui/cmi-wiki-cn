@@ -1,0 +1,256 @@
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://one.denizenscript.com/denizen/cmds/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://one.denizenscript.com/denizen/cmds/denizen/vids Tutorial Videos] on youtube or the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+
+
+<s><div style="font-family:museo-sans; font-size:110%;">
+
+==Interact Assignment==
+Before a Denizen can run a script, it needs to be assigned first. 
+
+Assignments are defined in '''<code>plugins\Denizen\assignments.yml </code>
+
+This yaml file contains a single node called 'Denizens' and each Denizen gets its own entry under this node.
+
+Assignments must be made by hand. We recommend a good text editor like [[http://notepad-plus-plus.org/ Notepad++]]
+
+Here is a very basic example, assigning a single [[Denizen/Interact Scripts|interact script]] to a Denizen named Steve.
+
+<pre>
+---- assignments.yml ----
+Denizens:                         
+  'Steve':                        
+    Interact Scripts:                      
+    - 10 Daytime in the City  
+</pre>
+
+Let's break this down. 
+
+If you are unfamiliar with yaml, first read [[YAML|this]] and then note 'Interact Scripts:' contains a yaml '''list'''. Each item in the list is prefixed with '-'. indentation and spacing is important.
+
+This assignment will work for Denizens named <code>'Steve'</code>. {{color|red|white|Denizen NPC names are case-sensitive!}} Triggers that involve this NPC, such as a <code>'Click Trigger'</code> will now attempt to call the script named <code>'Daytime in the City'</code>. 
+
+The <code>10</code> before the name is the '''script priority''', useful when assigning multiple scripts.
+
+If you wanted to assign this same script to another NPC, you would make another entry like this:
+
+<pre>
+---- assignments.yml ----
+Denizens:                         
+  'Steve':                        
+    Interact Scripts:                      
+    - 10 Daytime in the City  
+  'Bob':                        
+    Interact Scripts:                      
+    - 10 Daytime in the City  
+</pre>
+
+Now Bob and Steve both have this one script assigned to them.
+
+
+====Multiple Scripts====
+The key to Denizens being dynamic is their ability to handle multiple scripts in different situations. Denizens can be assigned multiple interact scripts with varying requirements, changing their behavior based on player, npc, and world conditions.
+
+The important thing to remember is that:
+
+'''For each interaction with a Denizen: ONE, and only ONE script is picked to run.
+
+Which script gets picked is based on several factors: 
+* Each script's '''[[Denizen/Interact_Scripts/Interact_Requirements|Requirements]]'''
+* Each script assignment's '''priority'''
+* Which '''triggers''' are defined on the script's active step for this player. (Advanced usage, see [[#Overlay Assignment Mode]])
+
+Ignoring that last item for now, the process goes like this:
+
+Starting from highest priority and working towards the lowest, the Denizen engine checks each script's Requirements.
+The first script found that meets requirements is picked.
+
+Let's look at an example. 
+<pre>
+---- assignments.yml ----
+
+Denizens:                         
+  'Steve':                        
+    Interact Scripts:                      
+    - 0 Regular Joe
+    - 10 Joe the Builder  
+
+---- script.yml ----
+
+'Regular Joe':
+  Type: Interact   
+  Requirements:
+    Mode: None
+  Steps:
+    1:
+      Click Trigger:
+        Script:
+        - CHAT "Hello <PLAYER>! I supply builders only!"
+
+'Joe the Builder':
+  Type: Interact  
+  Requirements:
+    Mode: All
+    List:
+    - PERMISSION modifyworld.*
+  Steps:
+    1:
+      Click Trigger:
+        Script:
+        - ENGAGE
+        - CHAT "Hello <PLAYER> the Builder! Take this shovel!"
+        - GIVE WOOD_SPADE QTY:1
+        - FINISH
+        - DISENGAGE
+</pre>
+
+Denizen <code>Steve</code> has now been assigned two scripts. Upon player interaction, both scripts are checked for met requirements in order of descending priority. Since the "Regular Joe" script has NO requirements at all, it will ALWAYS get picked before scripts of lower priority. This is why you can see in this example we gave it a priority of 0.
+
+What if both scripts had a priority of 0? In that case the first script to appear in the list would get picked. It's always best to give each assigned script a different priority to avoid any confusion.
+
+====Overlay Assignment Mode====
+
+{{color|red|white|Advanced usage!}} Overlay Script Assignments are new in 0.7 and open a wide array of new possibilities with multiple script interaction. This is completely optional, and probably should be ignored if you are a first time user and instead be revisited when you start to master Denizen Scripting.
+
+Normally, requirement-matching scripts are selected to run regardless of whether or not an actual matching trigger exists. If no matching trigger exists on the active step for the player, either nothing happens or some default text is shown, depending on the type of trigger.
+
+With an Overlay Assignment, '''the defined triggers become a part of the requirements for selection.'''
+
+A script assigned with this option will '''never''' be selected for a trigger type it cannot process. This makes it easy to tack-on script assignments that only handle one trigger type, without having to mash it in to an existing script.
+
+::To assign a script as an 'Overlay', place a ^ directly in front of the script name.
+
+Example time:
+
+<pre>
+---- assignments.yml ----
+
+Denizens:                         
+  'Steve':                        
+    Interact Scripts:                      
+    - 0 Proximity Joe
+    - 10 ^Regular Joe
+    - 20 ^Joe the Builder  
+
+---- script.yml ----
+'Proximity Joe':
+  Type: Interact
+  Requirements:
+    Mode: None
+  Steps:
+    1:
+      Proximity Trigger:
+        Script:
+        - CHAT "Nice to see you, <PLAYER>!"
+
+'Regular Joe':
+  Type: Interact  
+  Requirements:
+    Mode: None
+  Steps:
+    1:
+      Click Trigger:
+        Script:
+        - CHAT "Hello <PLAYER>! I supply builders only!"
+
+'Joe the Builder':
+  Type: Trigger   
+  Requirements:
+    Mode: All
+    List:
+    - PERMISSION modifyworld.*
+  Steps:
+    1:
+      Click Trigger:
+        Script:
+        - ENGAGE
+        - CHAT "Hello <PLAYER> the Builder! Take this shovel!"
+        - GIVE WOOD_SPADE QTY:1
+        - FINISH
+        - DISENGAGE
+</pre>
+
+Here the 2 scripts from the last example will now only be selected for Click interaction, while the new 0 priority script will be selected for any interaction. 
+
+Let's see what happens in a few different scenarios.
+
+'''First Scenario'''
+Let's say a Player clicks, doesn't have the permissions 'modifyworld.*', so therefore only two scripts meet requirements: 'Regular Joe' and 'Proximity Joe'. It should be pretty obvious what happens. 'Regular Joe' has higher priority, so a Click Trigger will use that script. The Player will see "Hello Player! I supply builders only!". That's the only trigger, right? Wrong. This leads us into the next scenario.
+
+'''Second Scenario'''
+The first thing to trigger the Denizen NPC would actually be the Proximity Trigger. In a regular assignment situation, with the same permissions situation as the first scenario, 'Regular Joe' would beat out 'Proximity Joe' and since there is no Proximity Trigger in 'Regular Joe', no script would trigger. But this is an Overlay Assignment. Since there is no Proximity Trigger in the script 'Regular Joe', the next script available, 'Proximity Joe', would attempt to trigger instead. And what do we have here? A Proximity Trigger! The Player would see "Nice to see you, Player!".
+
+'''Third Scenario'''
+Player triggers a Proximity Trigger. Player has permission 'modifyworld.*', so the highest matching script is 'Joe the Builder' since it has a priority of 30. But there is no Proximity Trigger for this script, so the next script in line is checked. 'Regular Joe', of course, has no Proximity Trigger either! And since both 'Joe the Builder' and 'Regular Joe' are Overlay Assignments, we're back to 'Proximity Joe' triggering, alerting the player "Nice to see you, Player!".
+
+Do you see now the possibilities of the Denizen Script Engine? I love it!
+
+Simple stuff, right? To get your teeth wet, take a look at this additional example situation which uses FLAGS and magic :)
+[[Denizen/Example_Scripts/Advanced_Scripts|Advanced Scripts]]
+
+
+</div>
+
+==== Default Texts ====
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+
+In addition to handling the script assignments, there are also a few other things that can be declared in the Denizens node of assignments.yml. Under the text node you can define single chat lines that will be displayed for each of 3 core trigger types if there is not matching script found. Click, Damage and Chat. Additionally a message can be defined for when the Denizen is Engaged or its interaction cooldown isn't finished.
+
+Settings here override the default setting found in [[Denizen/config.yml]] for this Denizen.
+
+<pre>
+---- assignments.yml ----
+Denizens: 
+  Castle Guard: 
+    Interact Scripts: 
+      - 10 Guard Script
+      - 20 Elite Guard
+      - 30 Quest for Guard
+    Texts: 
+      No Click Trigger: Don't poke, me, <PLAYER>!
+      No Damage Trigger: Ouch! you lookin' to get smacked?
+      No Chat Trigger: Eh, what's that?
+      Denizen Unavailable: I'm busy right now.
+</pre>
+</div>
+
+==Activity Assignment==
+
+Activity scripts are assigned to Denizens much in the same way as Interact scripts.
+The difference here is for each script you must specify a Time to load the script.
+
+<pre>
+---- assignments.yml ----
+Denizens:                         
+  'Steve':                        
+    Interact Scripts:                      
+    - 10 Daytime in the City  
+    Scheduled Activities:
+    - 12:00 Wander_aimlessly
+</pre>
+
+===Default Activity===
+
+If you plan on only having one activity for your Denizen, you can use 'Default Activity:' instead of using the scheduler. When using this, the activity is set on 'Spawn'. You can also use the scheduler, which will override the default activity.
+
+<pre>
+---- assignments.yml ----
+Denizens:                         
+  'Steve':                        
+    Interact Scripts:                      
+    - 10 Daytime in the City  
+    Scheduled Activities:
+    - 12:00 Go_home
+    Default Activity: Wander_Around
+</pre>
+
+[[Category:Denizen 0.7]]
+</s>

@@ -1,0 +1,179 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Alchemist",
+    "pageid": 91,
+    "revid": 4825,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><div style=\"width:35%; float:right; border-style:solid;border-width:3px\">\n<center>\n<p><span class=\"mw-default-size\" typeof=\"mw:File\"><a href=\"/File:Alchemist.png\" class=\"mw-file-description\"><img src=\"/images/5/5b/Alchemist.png\" decoding=\"async\" width=\"235\" height=\"70\" class=\"mw-file-element\" /></a></span><br /><br /><b>Alchemist</b>\n</p>\n</center>\n<p><br />\n</p>\n<div style=\"font-size:100%; padding:3px\">\n<table cellpadding=\"0\" cellspacing=\"3\" width=\"100%\">\n\n<tbody><tr>\n<td align=\"left\" valign=\"top\" width=\"150\"><b>Author</b>\n</td>\n<td>aPunch\n</td></tr>\n<tr>\n<td><b>Version</b>\n</td>\n<td>1.1\n</td></tr>\n<tr>\n<td><b>Citizens build</b>\n</td>\n<td>2.0\n</td></tr>\n<tr>\n<td><b>Other dependencies</b>\n</td>\n<td>None\n</td></tr>\n<tr>\n<td><b>Download</b>\n</td>\n<td><a rel=\"nofollow\" class=\"external text\" href=\"http://ci.citizensnpcs.co/view/Add-ons/job/Alchemist/\">Link</a>\n</td></tr>\n<tr>\n<td colspan=\"2\"><div style=\"border-top:1px solid #aaaaaa;\"><b>Description:</b> Customizable Potion Recipes</div>\n</td></tr></tbody></table>\n</div>\n</div>\n<p>Alchemist is a Citizens 2.0 character trait that gives NPCs the ability to:\n</p>\n<ul><li>Craft potions based on pre-defined recipes.</li>\n<li>Charge a fee for their service.</li></ul>\n<p><br />\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#How_to_Use\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">How to Use</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-2\"><a href=\"#General_Information\"><span class=\"tocnumber\">1.1</span> <span class=\"toctext\">General Information</span></a></li>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Interaction\"><span class=\"tocnumber\">1.2</span> <span class=\"toctext\">Interaction</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Commands\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Commands</span></a></li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#Permissions\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Permissions</span></a></li>\n<li class=\"toclevel-1 tocsection-6\"><a href=\"#Configuration\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Configuration</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-7\"><a href=\"#Default_Configuration\"><span class=\"tocnumber\">4.1</span> <span class=\"toctext\">Default Configuration</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-8\"><a href=\"#Valid_Effects\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">Valid Effects</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"How_to_Use\">How to Use</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Alchemist&amp;action=edit&amp;section=1\" title=\"Edit section: How to Use\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"General_Information\">General Information</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Alchemist&amp;action=edit&amp;section=2\" title=\"Edit section: General Information\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Alchemists provide the ability to create custom recipes for potions. You can customize these recipes in the configuration file. A default recipe is provided as an example.\n</p><p>Keep in mind, there is no way to view an alchemist's current recipe ingredients using this plugin. This is intentional, as you, the server admin, should be allowed total freedom to decide how you display recipes. You could show the ingredients using signs, another plugin, or not at all.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Interaction\">Interaction</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Alchemist&amp;action=edit&amp;section=3\" title=\"Edit section: Interaction\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Right-clicking the alchemist with the proper ingredients will remove them from your hand and give them to the alchemist. Once the recipe has been completely fulfilled, the alchemist will drop a potion around it's location. If the user walks too far away, the alchemist will stop brewing the potion and any items that were given to it will be lost.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Commands\">Commands</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Alchemist&amp;action=edit&amp;section=4\" title=\"Edit section: Commands\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>To use alchemist commands, you must have an NPC selected and be the owner of that NPC. There are no permission nodes required for commands.\n</p>\n<table class=\"wikitable collapsible collapsed\" style=\"text-align: center; width: 100%\">\n\n<tbody><tr>\n<th style=\"width: 100%; background-color:#ADD8E6\" colspan=\"6\"><b>Alchemist Commands</b>\n</th></tr>\n<tr>\n<th style=\"width: 250px;\">Command\n</th>\n<th>Description\n</th></tr>\n<tr>\n<td>/alchemist help\n</td>\n<td>Show the help menu\n</td></tr>\n<tr>\n<td>/alchemist recipe\n</td>\n<td>Show the alchemist's current recipe\n</td></tr>\n<tr>\n<td>/alchemist recipe [name]\n</td>\n<td>Set an alchemist's current recipe.\n</td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Permissions\">Permissions</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Alchemist&amp;action=edit&amp;section=5\" title=\"Edit section: Permissions\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>To use alchemists, you only need one permission node. The permission node <i>alchemist.interact</i> allows a player to interact with an alchemist.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Configuration\">Configuration</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Alchemist&amp;action=edit&amp;section=6\" title=\"Edit section: Configuration\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>The configuration file for Alchemists is found in <i>/plugins/Alchemist/config.yml</i> and is generated automatically when not present.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Default_Configuration\">Default Configuration</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Alchemist&amp;action=edit&amp;section=7\" title=\"Edit section: Default Configuration\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Mouseover each section to view it's description.\n</p>\n<pre># Alchemist Configuration\n<span title=\"Recipes Block\" class=\"help\">recipes:</span>\n <span title=\"Name of 1st recipe\" class=\"help\">default:</span>\n   <span title=\"Result section. Defines what happens when\" class=\"help\">result:</span>\n     <span title=\"What potion effect is the result\" class=\"help\">effect: fire-resistance</span>\n     <span title=\"Duration of the effect\" class=\"help\">duration: 60</span>\n     <span title=\"Amplifies the strength of the results - Valid values are 1 and 2\" class=\"help\">amplifier: 1</span>\n     <span title=\"Whether the potion is a splash potion\" class=\"help\">splash: false</span>\n   <span title=\"Ingredients section. Defines what ingredients are needed for this potion. All have to be present\" class=\"help\">ingredients:</span>\n     <span title=\"ID of the ingredient. NOT item/block ID\" class=\"help\">'0':</span>\n       <span title=\"Name of the ingredient\" class=\"help\">name: sugar</span>\n       <span title=\"Amount required\" class=\"help\">amount: 1</span>\n     <span title=\"ID of the ingredient. NOT item/block ID\" class=\"help\">'1':</span>\n       <span title=\"Name of the ingredient\" class=\"help\">name: glass-bottle</span>\n       <span title=\"Amount required\" class=\"help\">amount: 1</span>\n     <span title=\"ID of the ingredient. NOT item/block ID\" class=\"help\">'2':</span>\n       <span title=\"Name of the ingredient\" class=\"help\">name: wool</span>\n       <span title=\"Amount required\" class=\"help\">amount: 1</span>\n       <span title=\"Data of the item/block\" class=\"help\">data: 6</span>\n<span title=\"Messages block\" class=\"help\">messages:</span>\n <span title=\"Message sent to the player when they right click on the Alchemist\" class=\"help\">initialization-message: &lt;e&gt;Hello there, &lt;player&gt;. Give me what I need and I will brew you a potion!</span>\n <span title=\"Message sent to the player if the brewing was successful\" class=\"help\">success-message: &lt;e&gt;I have combined the ingredients to concoct a potion of &lt;a&gt;&lt;potion&gt;&lt;e&gt;.</span>\n <span title=\"Message sent to the player if they are still in the cool down period\" class=\"help\">cooldown-not-expired: You've already had your turn. Come back later!</span>\n<span title=\"Time a player has to wait until they can use the alchemist again\" class=\"help\">cooldown-in-seconds: 60</span>\n</pre>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Valid_Effects\">Valid Effects</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Alchemist&amp;action=edit&amp;section=8\" title=\"Edit section: Valid Effects\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ul><li><i>speed</i> - Increases movement speed.</li>\n<li><i>slow</i> - Decreases movement speed.</li>\n<li><i>fast-digging</i> - Increases dig speed.</li>\n<li><i>slow-digging</i> - Decreases dig speed.</li>\n<li><i>increase-damage</i> - Increases damage dealt.</li>\n<li><i>heal</i> - Heals player instantly.</li>\n<li><i>harm</i> - Harms player instantly.</li>\n<li><i>jump</i> - Increases jump height.</li>\n<li><i>confusion</i> - Warps vision on player's client.</li>\n<li><i>regeneration</i> - Regenerates health.</li>\n<li><i>damage-resistance</i> - Decreases damage dealt to the player.</li>\n<li><i>fire-resistance</i> - Adds resistance to the effects of fire.</li>\n<li><i>water-breathing</i> - Allows breathing underwater.</li>\n<li><i>blindness</i> - Blinds the player.</li>\n<li><i>hunger</i> - Increases hunger.</li>\n<li><i>weakness</i> - Decreases damage dealt by player.</li>\n<li><i>poision</i> - Deals damage to player over time.</li></ul>\n<div class=\"padded\" style=\"font-size: 12px; padding: 5px\">\n<table class=\"wikitable collapsible collapsed\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Usage\" title=\"Category:Usage\">Usage</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Installation\" title=\"Installation\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Frequently_Asked_Questions\" title=\"Frequently Asked Questions\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Editors\" title=\"Editors\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Characters\" title=\"Characters\">Characters</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/API\" title=\"API\">API</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32;\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Configuration\" title=\"Category:Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Configuration\" title=\"Configuration\">Configuration</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Data_Storage\" title=\"Data Storage\">Data Storage</a>\n</td></tr></tbody></table>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145814\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.081 seconds\nReal time usage: 0.114 seconds\nPreprocessor visited node count: 318/1000000\nRevision size: 4983/2097152 bytes\nPost‐expand include size: 5643/2097152 bytes\nTemplate argument size: 1372/2097152 bytes\nHighest expansion depth: 4/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 184/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   56.925      1 -total\n 46.39%   26.407     23 Template:H:title\n 13.14%    7.481      1 Template:NavBox\n  7.52%    4.279      1 Template:Trait\n  5.61%    3.192     10 Template:·\n-->\n\n<!-- Render ID 824cd565-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "API"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Configuration"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Data Storage"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Editors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Text Syntax"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Configuration"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Usage"
+      }
+    ],
+    "images": [
+      "Alchemist.png"
+    ],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "How to Use",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Alchemist",
+        "byteoffset": 450,
+        "anchor": "How_to_Use",
+        "linkAnchor": "How_to_Use"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "General Information",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "Alchemist",
+        "byteoffset": 465,
+        "anchor": "General_Information",
+        "linkAnchor": "General_Information"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Interaction",
+        "number": "1.2",
+        "index": "3",
+        "fromtitle": "Alchemist",
+        "byteoffset": 953,
+        "anchor": "Interaction",
+        "linkAnchor": "Interaction"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Commands",
+        "number": "2",
+        "index": "4",
+        "fromtitle": "Alchemist",
+        "byteoffset": 1320,
+        "anchor": "Commands",
+        "linkAnchor": "Commands"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Permissions",
+        "number": "3",
+        "index": "5",
+        "fromtitle": "Alchemist",
+        "byteoffset": 1872,
+        "anchor": "Permissions",
+        "linkAnchor": "Permissions"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Configuration",
+        "number": "4",
+        "index": "6",
+        "fromtitle": "Alchemist",
+        "byteoffset": 2033,
+        "anchor": "Configuration",
+        "linkAnchor": "Configuration"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Default Configuration",
+        "number": "4.1",
+        "index": "7",
+        "fromtitle": "Alchemist",
+        "byteoffset": 2184,
+        "anchor": "Default_Configuration",
+        "linkAnchor": "Default_Configuration"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Valid Effects",
+        "number": "5",
+        "index": "8",
+        "fromtitle": "Alchemist",
+        "byteoffset": 4164,
+        "anchor": "Valid_Effects",
+        "linkAnchor": "Valid_Effects"
+      }
+    ],
+    "showtoc": ""
+  }
+}

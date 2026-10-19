@@ -1,0 +1,128 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Characters",
+    "pageid": 94,
+    "revid": 5558,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>Characters are addons that use the <a href=\"/API\" title=\"API\">Citizens API</a> to add functionality to existing NPCs. Download and install their plugin JAR into the <i>/plugins</i> directory.\n</p><p>Citizens NPCs can contain multiple traits at the same time. See <a href=\"/Multiple_Traits\" title=\"Multiple Traits\">Multiple Traits</a>\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Suggested_Addons\">Suggested Addons</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Characters&amp;action=edit&amp;section=1\" title=\"Edit section: Suggested Addons\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>There is no guarantee of any of these still being available/updated. If you would like to be added to the list please message the team on Discord.\n</p><p>There are also many addons available outside of the wiki.\n</p>\n<table class=\"wikitable\" style=\"width: 80%\">\n<tbody><tr>\n<th colspan=\"4\">Characters\n</th></tr>\n<tr>\n<th style=\"width: 15%\">Name\n</th>\n<th style=\"width: 15%\">Developer\n</th>\n<th style=\"width: 55%\">Description\n</th></tr>\n<tr>\n<td><a href=\"/Builder\" title=\"Builder\">Builder</a></td>\n<td>jrbudda/mcmonkey</td>\n<td>Build schematics, block by block.\n</td></tr>\n<tr>\n<td><a href=\"/Denizen\" title=\"Denizen\">Denizen</a></td>\n<td><a href=\"/index.php?title=User:Mcmonkey&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Mcmonkey (page does not exist)\">mcmonkey</a></td>\n<td>Scripting engine that supports advanced and easy control of NPCs.\n</td></tr>\n<tr>\n<td><a href=\"/DtlTraders\" title=\"DtlTraders\">DtlTraders</a></td>\n<td>dandielo</td>\n<td>Another trader character.\n</td></tr>\n<tr>\n<td><a href=\"/Quests\" title=\"Quests\">Quests</a></td>\n<td>Various</td>\n<td>Links to Quest options for Citizens 2.\n</td></tr>\n<tr>\n<td><a href=\"/Sentinel\" title=\"Sentinel\">Sentinel</a></td>\n<td><a href=\"/index.php?title=User:Mcmonkey&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Mcmonkey (page does not exist)\">mcmonkey</a></td>\n<td>Sentinel combat NPCs.\n</td></tr>\n</tbody></table>\n<div class=\"padded\" style=\"font-size: 12px; padding: 5px\">\n<table class=\"wikitable collapsible collapsed\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Usage\" title=\"Category:Usage\">Usage</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Installation\" title=\"Installation\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Frequently_Asked_Questions\" title=\"Frequently Asked Questions\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Editors\" title=\"Editors\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a class=\"mw-selflink selflink\">Characters</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/API\" title=\"API\">API</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32;\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Configuration\" title=\"Category:Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Configuration\" title=\"Configuration\">Configuration</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Data_Storage\" title=\"Data Storage\">Data Storage</a>\n</td></tr></tbody></table>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145816\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.032 seconds\nReal time usage: 0.049 seconds\nPreprocessor visited node count: 18/1000000\nRevision size: 1089/2097152 bytes\nPost‐expand include size: 1802/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    9.840      1 Template:NavBox\n100.00%    9.840      1 -total\n 45.91%    4.517     10 Template:·\n-->\n\n<!-- Render ID 837e0263-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "API"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Builder"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Configuration"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Data Storage"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "DtlTraders"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Editors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Multiple Traits"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Quests"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Sentinel"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Text Syntax"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Configuration"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Usage"
+      },
+      {
+        "ns": 2,
+        "*": "User:Mcmonkey"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Suggested Addons",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Characters",
+        "byteoffset": 252,
+        "anchor": "Suggested_Addons",
+        "linkAnchor": "Suggested_Addons"
+      }
+    ]
+  }
+}

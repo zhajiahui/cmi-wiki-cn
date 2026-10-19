@@ -1,0 +1,2 @@
+Citizens can limit the number of NPCs per person.
+See [[Configuration]] and [[Permissions]]

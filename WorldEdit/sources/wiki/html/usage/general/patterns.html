@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en" data-accent-color="violet" data-content_root="../../../">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Patterns - WorldEdit 7.4 documentation</title><link rel="index" title="Index" href="../../../genindex/" /><link rel="search" title="Search" href="../../../search/" /><link rel="next" title="Masks" href="../masks/" /><link rel="prev" title="Sessions" href="../sessions/" />
+      <link rel="canonical" href="https://worldedit.enginehub.org/en/latest/usage/general/patterns/" /><script>
+    function setColorMode(t){let e=document.documentElement;e.setAttribute("data-color-mode",t);let a=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t;"auto"===t&&(s=a?"dark":"light"),"light"===s?(e.classList.remove("dark"),e.classList.add("light")):(e.classList.remove("light"),e.classList.add("dark"))}
+    setColorMode(localStorage._theme||"auto");
+  </script><link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=ad592e98" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/shibuya.css?v=2ceb65ce" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/icons.css?v=ff96e03d" />
+    <link media="print" rel="stylesheet" type="text/css" href="../../../_static/print.css?v=20ff2c19" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=55f29028" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sy-f-text: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+  --sy-f-heading: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+}
+</style>
+    
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://worldedit.enginehub.org/en/latest/usage/general/patterns/"/>
+  <meta property="og:title" content="Patterns"/>
+    <meta name="twitter:card" content="summary"/>
+  <script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="worldedit" /><meta name="readthedocs-version-slug" content="latest" /><meta name="readthedocs-resolver-filename" content="/usage/general/patterns/" /><meta name="readthedocs-http-status" content="200" /></head>
+<body><div class="sy-head">
+  <div class="sy-head-blur"></div>
+  <div class="sy-head-inner sy-container mx-auto">
+    <a class="sy-head-brand" href="../../../">
+      
+      
+      <strong>WorldEdit</strong>
+    </a>
+    <div class="sy-head-nav" id="head-nav">
+      <nav class="sy-head-links" data-align=left><ul><li class="link">
+          <a href="https://enginehub.org">
+            <span>Developed by EngineHub</span><i class="i-lucide external-link"></i></a>
+        </li><li class="link">
+          <a href="https://github.com/sponsors/EngineHub?o=esb">
+            <span><iconify-icon icon='simple-icons:githubsponsors' style='color: #db61a2;'></iconify-icon> Sponsored by users like you!</span><i class="i-lucide external-link"></i></a>
+        </li></ul></nav>
+      <div class="sy-head-extra flex items-center print:hidden"><form class="searchbox flex items-center" action="../../../search/" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <kbd>/</kbd>
+</form><div class="sy-head-socials">
+  <a href="https://github.com/EngineHub/WorldEdit" aria-label="GitHub">
+    <iconify-icon icon="simple-icons:github"></iconify-icon>
+  </a>
+  <a href="https://discord.gg/enginehub" aria-label="Discord">
+    <iconify-icon icon="simple-icons:discord"></iconify-icon>
+  </a></div></div>
+    </div>
+    <div class="sy-head-actions flex items-center shrink-0 print:hidden"><button class="js-theme theme-switch flex items-center"
+data-aria-auto="Switch to light color mode"
+data-aria-light="Switch to dark color mode"
+data-aria-dark="Switch to auto color mode">
+<i class="i-lucide theme-icon"></i>
+</button><button class="md:hidden flex items-center js-menu" aria-label="Menu" type="button" aria-controls="head-nav" aria-expanded="false">
+        <div class="hamburger">
+          <span class="hamburger_1"></span>
+          <span class="hamburger_2"></span>
+          <span class="hamburger_3"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="sy-page sy-container flex mx-auto">
+  <aside id="lside" class="sy-lside md:w-72 md:shrink-0 print:hidden">
+    <div class="sy-lside-inner md:sticky">
+      <div class="sy-scrollbar p-6">
+        <div class="globaltoc" data-expand-depth="2"><ul class="current">
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../install/">Installation</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../quickstart/">Quick Start</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../config/">Configuration</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../permissions/">Permissions</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../commands/">Commands</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../">Usage</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../">General</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../history/">History</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sessions/">Sessions</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Patterns</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../masks/">Masks</a></li>
+</ul>
+</li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../navigation/">Navigation</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../regions/">Regions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../regions/selections/">Selection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../regions/regionops/">Region Operations</a></li>
+</ul>
+</li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../clipboard/">Clipboard</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../generation/">Generation</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../tools/tools/">Tools</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../tools/brushes/">Brushes</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../utilities/">Utilities</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../snapshots/">Snapshots</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../other/">Other</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../other/expressions/">Expression Syntax</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../other/craftscripts/">CraftScripts</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../api/">Developer API</a><ul>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../../api/concepts/">API Concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/actors/">Actors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/local-sessions/">Local Sessions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/blocks/">Blocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/patterns-and-masks/">Patterns and Masks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/extents/">Extents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/regions/">Regions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/registries/">Registries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/edit-sessions/">Edit Sessions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/adapters/">Adapters</a></li>
+</ul>
+</li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../../api/examples/">API Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/examples/clipboard/">Clipboard Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/examples/clipboard/#schematic-examples">Schematic Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/examples/local-sessions/">LocalSession Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../../api/internal-apis/">Internal APIs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../faq/">Common Questions</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../support/">Getting Help</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../localisation/">Localisation</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../source-code/">Source Code</a></li>
+</ul>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="lside-overlay js-menu" role="button" aria-label="Close left sidebar" aria-controls="lside" aria-expanded="false"></div>
+  <aside id="rside" class="sy-rside pb-3 w-64 shrink-0 order-last">
+    <button class="rside-close js-menu xl:hidden" aria-label="Close Table of Contents" type="button" aria-controls="rside" aria-expanded="false">
+      <i class="i-lucide close"></i>
+    </button>
+    <div class="sy-scrollbar sy-rside-inner px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4"><div class="localtoc"><h3>On this page</h3><ul>
+<li><a class="reference internal" href="#available-patterns">Available Patterns</a><ul>
+<li><a class="reference internal" href="#single-block-pattern">Single Block Pattern</a></li>
+<li><a class="reference internal" href="#random-pattern">Random Pattern</a></li>
+<li><a class="reference internal" href="#random-state-pattern">Random State Pattern</a></li>
+<li><a class="reference internal" href="#clipboard-pattern">Clipboard Pattern</a></li>
+<li><a class="reference internal" href="#type-or-state-applying-pattern">Type or State Applying Pattern</a></li>
+<li><a class="reference internal" href="#block-category-pattern">Block Category Pattern</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#special-block-data-syntax">Special Block Data Syntax</a><ul>
+<li><a class="reference internal" href="#sign-text">Sign Text</a></li>
+<li><a class="reference internal" href="#player-heads">Player Heads</a></li>
+<li><a class="reference internal" href="#mob-spawners">Mob Spawners</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="edit-this-page">
+  <a href="https://github.com/EngineHub/WorldEditDocs/blob/master/source/usage/general/patterns.rst">Edit this page</a>
+</div></div>
+  </aside>
+  <div class="rside-overlay js-menu" role="button" aria-label="Close Table of Contents" aria-controls="rside" aria-expanded="false"></div>
+  <main class="sy-main w-full max-sm:max-w-full print:pt-6">
+<div class="sy-breadcrumbs" role="navigation">
+  <div class="sy-breadcrumbs-inner flex items-center">
+    <div class="md:hidden mr-3">
+      <button class="js-menu" aria-label="Menu" type="button" aria-controls="lside" aria-expanded="false">
+        <i class="i-lucide menu"></i>
+      </button>
+    </div>
+    <ol class="flex-1" itemscope itemtype="https://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="../../../"><span itemprop="name">WorldEdit</span></a>
+        <span>/</span>
+        <meta itemprop="position" content="1" />
+      </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="../../"><span itemprop="name">Usage</span></a>
+        <span>/</span>
+        <meta itemprop="position" content="2" />
+      </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="../"><span itemprop="name">General</span></a>
+        <span>/</span>
+        <meta itemprop="position" content="3" />
+      </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <strong itemprop="name">Patterns</strong>
+        <meta itemprop="position" content="4" />
+      </li></ol>
+    <div class="xl:hidden ml-1">
+      <button class="js-menu" aria-label="Show table of contents" type="button" aria-controls="rside"
+        aria-expanded="false">
+        <i class="i-lucide outdent"></i>
+      </button>
+    </div>
+  </div>
+</div><div class="flex flex-col break-words justify-between">
+      <div class="relative min-w-0 max-w-6xl px-6 pb-6 pt-8 xl:px-12">
+  <div class="copy-page-wrapper relative pb-4 lg:absolute lg:top-8 lg:right-6 xl:right-12">
+  <div id="copy-page-trigger">
+    <button
+      type="button"
+      class="js-copy px-3 py-1 inline-flex items-center gap-1"
+      data-url="https://worldedit.enginehub.org/en/latest/_sources/usage/general/patterns.rst.txt"
+    >
+      <i class="i-lucide" data-icon="copy"></i>
+      <span>Copy page</span>
+    </button>
+    <button class="js-menu px-2 py-1" type="button" aria-label="More actions"
+      aria-haspopup="menu" aria-expanded="false" aria-controls="copy-page-content">
+      <i class="i-lucide chevron-down"></i>
+    </button>
+  </div>
+  <div id="copy-page-content" role="menu" aria-orientation="vertical" aria-hidden="true">
+    <div role="presentation">
+      <div class="flex flex-col" role="group">
+        <button class="js-copy" type="button" role="menuitem"
+          data-url="https://worldedit.enginehub.org/en/latest/_sources/usage/general/patterns.rst.txt">
+          <span class="iconify-icon">
+            <i class="i-lucide" data-icon="copy"></i>
+          </span>
+          <span>Copy page</span>
+        </button>
+        <a role="menuitem" href="https://worldedit.enginehub.org/en/latest/_sources/usage/general/patterns.rst.txt" target="_blank" rel="nofollow"><iconify-icon icon="bi:code-slash"></iconify-icon>
+            <span>View Source</span></a><a role="menuitem" href="https://chatgpt.com/?hints=search&q=Read%20https%3A//worldedit.enginehub.org/en/latest/_sources/usage/general/patterns.rst.txt%20so%20I%20can%20ask%20questions%20about%20it." target="_blank" rel="nofollow">
+          <iconify-icon icon="bi:openai"></iconify-icon>
+          <span>Open in ChatGPT</span>
+        </a><a role="menuitem" href="https://claude.ai/new?q=Read%20https%3A//worldedit.enginehub.org/en/latest/_sources/usage/general/patterns.rst.txt%20so%20I%20can%20ask%20questions%20about%20it." target="_blank" rel="nofollow">
+          <iconify-icon icon="bi:claude"></iconify-icon>
+          <span>Open in Claude</span>
+        </a></div>
+    </div>
+  </div>
+</div><article class="yue" role="main">
+          <section id="patterns">
+<h1>Patterns<a class="headerlink" href="#patterns" title="Link to this heading">#</a></h1>
+<p>You may have noticed (or if you haven’t yet, you soon will) that many WorldEdit <a class="reference internal" href="../../../commands/"><span class="doc">commands</span></a> take a “pattern” as a parameter. Patterns range from very simple (such as a single block - <code class="docutils literal notranslate"><span class="pre">stone</span></code>) to very complex. Patterns determine what blocks get set into the world as a command, tool, etc operates.</p>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#available-patterns" id="id1">Available Patterns</a></p>
+<ul>
+<li><p><a class="reference internal" href="#single-block-pattern" id="id2">Single Block Pattern</a></p></li>
+<li><p><a class="reference internal" href="#random-pattern" id="id3">Random Pattern</a></p></li>
+<li><p><a class="reference internal" href="#random-state-pattern" id="id4">Random State Pattern</a></p></li>
+<li><p><a class="reference internal" href="#clipboard-pattern" id="id5">Clipboard Pattern</a></p></li>
+<li><p><a class="reference internal" href="#type-or-state-applying-pattern" id="id6">Type or State Applying Pattern</a></p></li>
+<li><p><a class="reference internal" href="#block-category-pattern" id="id7">Block Category Pattern</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#special-block-data-syntax" id="id8">Special Block Data Syntax</a></p>
+<ul>
+<li><p><a class="reference internal" href="#sign-text" id="id9">Sign Text</a></p></li>
+<li><p><a class="reference internal" href="#player-heads" id="id10">Player Heads</a></p></li>
+<li><p><a class="reference internal" href="#mob-spawners" id="id11">Mob Spawners</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="available-patterns">
+<h2>Available Patterns<a class="headerlink" href="#available-patterns" title="Link to this heading">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This list may be incomplete as patterns are added to WorldEdit. In addition, our API allows other plugins to register new patterns, which will not be listed here.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Here’s a video detailing some of these patterns which were added in WorldEdit 7: <a class="reference external" href="https://www.youtube.com/watch?v=S5wCVMf3SvM">https://www.youtube.com/watch?v=S5wCVMf3SvM</a></p>
+</div>
+<section id="single-block-pattern">
+<h3>Single Block Pattern<a class="headerlink" href="#single-block-pattern" title="Link to this heading">#</a></h3>
+<p>The most basic pattern of just a single block. A block is identified by three parts: the <a class="reference external" href="https://minecraft.wiki/w/Java_Edition_data_values#IDs">block type</a>, additional <a class="reference external" href="https://minecraft.wiki/w/Block_states">block states</a>, and <a class="reference external" href="https://minecraft.wiki/w/NBT_format">nbt data</a>. These three links to the Minecraft Wiki, along with WorldEdit’s in-built tab-completion for commands, should guide you in specifying the block you want. Additional states are always appended to the type using the syntax <code class="docutils literal notranslate"><span class="pre">block_type[state1=value,state2=value,...]</span></code>. Note that when states are not specified, or if some are left out, the default values will be used for those states. NBT is written using Minecraft’s SNBT syntax, <code class="docutils literal notranslate"><span class="pre">block_type{'nbt_key':'value'}</span></code>. NBT data always comes after the block states if supplied, <code class="docutils literal notranslate"><span class="pre">block_type[property=value]{'nbt_key':'value'}</span></code>.</p>
+<p>Instead of specifying a block type directly, you can use <code class="docutils literal notranslate"><span class="pre">hand</span></code> or <code class="docutils literal notranslate"><span class="pre">offhand</span></code> to use the block held in your main hand or offhand respectively. This is useful when you already have the block you want to use in your hotbar. You can also use <code class="docutils literal notranslate"><span class="pre">pos1</span></code> to use the block at your primary selection point. See <a class="reference internal" href="../../regions/selections/#selection-modes"><span class="std std-ref">Selection Modes</span></a> for what that means for the various selection types. Only <code class="docutils literal notranslate"><span class="pre">pos1</span></code> will currently retain any state or NBT (e.g. using <code class="docutils literal notranslate"><span class="pre">hand</span></code> with a shulker box will place an empty one).</p>
+<p>The states and NBT can still be set when using these, as if it were a normal block type. A top-level merge occurs for both state and NBT, with the keys specified in the command taking precedence.</p>
+<aside class="topic">
+<p class="topic-title">Example: Single block patterns</p>
+<p>Setting a selection to stone:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//set stone
+</span></pre></div>
+</div>
+<p>Setting a selection to a note block with a specific instrument and pitch:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//set note_block[instrument=chime,note=18]
+</span></pre></div>
+</div>
+<p>Setting a selection to an oak stair block facing east with the bigger part on top:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//set oak_stairs[facing=east,half=top]
+</span></pre></div>
+</div>
+<p>Setting a selection to an oak sign that is waxed:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//set oak_sign{&#39;is_waxed&#39;:1}
+</span></pre></div>
+</div>
+<p>Setting a selection to an oak sign that is waxed and rotated:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//set oak_sign[rotation=12]{&#39;is_waxed&#39;:1}
+</span></pre></div>
+</div>
+<p>Setting a selection to the block in your main hand:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//set hand
+</span></pre></div>
+</div>
+<p>Setting a selection to the block in your main hand, applying a <code class="docutils literal notranslate"><span class="pre">facing</span></code> state override:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//set hand[facing=east]
+</span></pre></div>
+</div>
+<p>Setting a selection to the block in your offhand:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//set offhand
+</span></pre></div>
+</div>
+<p>Setting a selection to the block at pos1:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//set pos1
+</span></pre></div>
+</div>
+</aside>
+</section>
+<section id="random-pattern">
+<h3>Random Pattern<a class="headerlink" href="#random-pattern" title="Link to this heading">#</a></h3>
+<p>This pattern allows setting random blocks from any number of other patterns. The basic form is as simple as a comma-separated list of patterns, which will be chosen from evenly. You can also specify weights for each pattern with <code class="docutils literal notranslate"><span class="pre">&lt;x&gt;%&lt;pattern&gt;</span></code>.</p>
+<aside class="topic">
+<p class="topic-title">Example:: Random Patterns</p>
+<p>Setting a selection to different types of stone, equally distributed:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//set stone,diorite,andesite,granite
+</span></pre></div>
+</div>
+<p>Setting a selection to mostly red wool, with a small amount of glass (5:1 ratio, see note below):</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//set 50%red_wool,10%red_stained_glass
+</span></pre></div>
+</div>
+</aside>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Despite the percentage sign, weights need not add up to 100. They are cumulative and will be divided by the total. That is, <code class="docutils literal notranslate"><span class="pre">5%dirt,15%stone</span></code> means 25% of blocks will be dirt, and 75% will be stone. In other words, weights are relative to each other, not to 100. Because of that, the pattern <code class="docutils literal notranslate"><span class="pre">5%dirt</span></code> isn’t valid. If you only want to set 5% of blocks to dirt, you should use the <a class="reference internal" href="../masks/#random-noise-mask"><span class="std std-ref">random noise mask</span></a>.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can use any other pattern as one of the choices, not just the single block pattern. Keep reading to see more patterns…</p>
+</div>
+</section>
+<section id="random-state-pattern">
+<h3>Random State Pattern<a class="headerlink" href="#random-state-pattern" title="Link to this heading">#</a></h3>
+<p>Prefixing any block type with an asterisk (<code class="docutils literal notranslate"><span class="pre">*</span></code>) will randomly choose between all states for that block for each position.</p>
+<aside class="topic">
+<p class="topic-title">Example: Random State Pattern</p>
+<p>Setting oak logs facing in random directions:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//set *oak_log
+</span></pre></div>
+</div>
+</aside>
+</section>
+<section id="clipboard-pattern">
+<h3>Clipboard Pattern<a class="headerlink" href="#clipboard-pattern" title="Link to this heading">#</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">#clipboard</span></code> pattern will take blocks from your <a class="reference internal" href="../../clipboard/"><span class="doc">clipboard</span></a> in the same arrangement. This makes it easy to build one part of a repeating complicated pattern by hand, and then repeat it over and over. You can also offset the pattern by adding <code class="docutils literal notranslate"><span class="pre">&#64;[x,y,z]</span></code>.</p>
+<aside class="topic">
+<p class="topic-title">Example: Using the clipboard pattern</p>
+<p>Replacing <a class="reference internal" href="../masks/#existing-block-mask"><span class="std std-ref">all existing blocks</span></a> to your clipboard:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//replace #existing #clipboard
+</span></pre></div>
+</div>
+<p class="centered">
+<strong>Using the clipboard in the first image to replace a hill. Note the repeating layers.</strong></p><p><a class="reference internal" href="../../../_images/clipboard.png"><img alt="clipboard_pattern" src="../../../_images/clipboard.png" style="width: 30%;" /></a>  <a class="reference internal" href="../../../_images/clipboard_replace.png"><img alt="clipboard_replace" src="../../../_images/clipboard_replace.png" style="width: 45%;" /></a></p>
+<p>Using an offset to align the clipboard:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//set #clipboard@[2,0,1]
+</span></pre></div>
+</div>
+</aside>
+</section>
+<section id="type-or-state-applying-pattern">
+<h3>Type or State Applying Pattern<a class="headerlink" href="#type-or-state-applying-pattern" title="Link to this heading">#</a></h3>
+<p>This pattern, prefixed by <code class="docutils literal notranslate"><span class="pre">^</span></code>, lets you set the type or states of a block without modifying everything else. This pattern will, for example, allow you to change a spiral staircase from oak to acacia without having to worry about the stairs facing in different directions and so on. You can either specify a block type (to change block type but not states, where applicable), or any number of states (to only change those states, where applicable).</p>
+<aside class="topic">
+<p class="topic-title">Example: Type/State Applying Patterns</p>
+<p>Replacing all oak stairs to acacia stairs, while maintaining orientation, etc:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//replace oak_stairs ^acacia_stairs
+</span></pre></div>
+</div>
+<p>Removing the water from all waterloggable blocks:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//set ^[waterlogged=false]
+</span></pre></div>
+</div>
+<p>Doubling up all slabs:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//replace ##slabs ^[type=double]
+</span></pre></div>
+</div>
+<p>Replacing all stairs with a random selection of stairs, while maintaining orientation, etc:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//replace ##stairs ^##stairs
+</span></pre></div>
+</div>
+</aside>
+</section>
+<section id="block-category-pattern">
+<h3>Block Category Pattern<a class="headerlink" href="#block-category-pattern" title="Link to this heading">#</a></h3>
+<p>This pattern allows setting random blocks within a block category, often referred to as a “<a class="reference external" href="https://minecraft.wiki/w/Tag">tag</a>”. Tags allow grouping blocks together under a single name. Minecraft comes with many tags inbuilt (see the link) and also allows creating and modifying tags via data packs. You may already have noticed these tags being used as a <a class="reference internal" href="../masks/#block-category-mask"><span class="std std-ref">mask</span></a> in the example above (<code class="docutils literal notranslate"><span class="pre">##slabs</span></code>).</p>
+<p>The syntax for this pattern is <code class="docutils literal notranslate"><span class="pre">##&lt;tag</span> <span class="pre">name&gt;</span></code>, which will randomly choose between the default state of all blocks in the category. You can also mix this with the random state pattern (<code class="docutils literal notranslate"><span class="pre">##*&lt;tag</span> <span class="pre">name&gt;</span></code>) to use all states, not just the defaults.</p>
+<aside class="topic">
+<p class="topic-title">Example: Block Category Pattern Usage</p>
+<p>Replacing all existing blocks with rainbow wool:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//replace #existing ##wool
+</span></pre></div>
+</div>
+<p>Setting the selection to random types of slabs, both top/bottom/double, and waterlogged at random:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//set ##*slabs
+</span></pre></div>
+</div>
+</aside>
+</section>
+</section>
+<section id="special-block-data-syntax">
+<h2>Special Block Data Syntax<a class="headerlink" href="#special-block-data-syntax" title="Link to this heading">#</a></h2>
+<p>Some blocks have additional syntax for setting extra information.</p>
+<section id="sign-text">
+<h3>Sign Text<a class="headerlink" href="#sign-text" title="Link to this heading">#</a></h3>
+<p>You can set text on signs by separating it with a pipe symbol (<code class="docutils literal notranslate"><span class="pre">|</span></code>). Note that if the text has spaces, you must wrap the entire pattern in quotes <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code>.</p>
+<aside class="topic">
+<p class="topic-title">Example: Setting sign text</p>
+<p>Simple Example:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//set oak_sign|Line1|Line2
+</span></pre></div>
+</div>
+<p>With spaces and rotation:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//set &quot;oak_wall_sign[facing=north]|Hello world|Second|Third line&quot;
+</span></pre></div>
+</div>
+</aside>
+</section>
+<section id="player-heads">
+<h3>Player Heads<a class="headerlink" href="#player-heads" title="Link to this heading">#</a></h3>
+<p>You can set the skin of a player head by specifying a username after the pipe symbol.</p>
+<aside class="topic">
+<p class="topic-title">Example: Setting a skin on a head</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//set player_head|dinnerbone
+</span></pre></div>
+</div>
+</aside>
+</section>
+<section id="mob-spawners">
+<h3>Mob Spawners<a class="headerlink" href="#mob-spawners" title="Link to this heading">#</a></h3>
+<p>You can set the type of mob to be spawned (again via the pipe symbol). Note that the name of the mob must be an <a class="reference external" href="https://minecraft.wiki/w/Java_Edition_data_values#Entities">entity ID</a>. Prefixing <cite>minecraft:</cite> is optional, modded mobs must have a namespace.</p>
+<aside class="topic">
+<p class="topic-title">Example: Creating a squid spawner</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">//set spawner|squid
+</span></pre></div>
+</div>
+</aside>
+</section>
+</section>
+</section>
+
+        </article><button class="back-to-top" type="button">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+  </svg>
+  <span>Back to top</span>
+</button><div class="navigation flex print:hidden"><div class="navigation-prev">
+    <a href="../sessions/">
+      <i class="i-lucide chevron-left"></i>
+      <div class="page-info">
+        <span>Previous</span><div class="title">Sessions</div></div>
+    </a>
+  </div><div class="navigation-next">
+    <a href="../masks/">
+      <div class="page-info">
+        <span>Next</span>
+        <div class="title">Masks</div>
+      </div>
+      <i class="i-lucide chevron-right"></i>
+    </a>
+  </div></div><div class="sponsorbox">
+    <div class="sponsor apexhosting">
+        <a href="https://billing.apexminecrafthosting.com/aff.php?aff=3108">
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 750 150" style="enable-background:new 0 0 750 150;" xml:space="preserve">
+            <style type="text/css">
+                .st0{fill:var(--sponsor-logo-color);}
+                .st1{display:none;}
+            </style>
+            <g id="Layer_1_1_">
+                <g>
+                    <path id="XMLID_29_" class="st0" d="M352.5,71.7c0,11.8-0.1,23.5,0.1,35.3c0.1,4.5-1.6,7.1-5.7,9c-16.5,7.3-32.9,15-49.5,22.1
+                        c-2.5,1.1-6.4,0.9-9-0.2c-17.1-7.4-34-15.2-51-22.8c-3.5-1.6-4-4.7-4-8c0-7.6,0-15.2,0-22.8c0-15.6,0-31.3,0-46.9
+                        c0-7.3,0.9-8.5,7.6-10.7c15.2-5,30.3-10.1,45.7-14.6c4-1.2,8.9-1.2,12.9,0c15.2,4.5,30.2,9.8,45.2,14.8c6.3,2.1,7.5,3.7,7.6,10.6
+                        C352.5,48.7,352.5,60.2,352.5,71.7L352.5,71.7z M247.7,44.9c0,19.6,0,38.5,0.1,57.3c0,1,1.1,2.4,2.1,2.9
+                        c7.6,3.6,15.2,7.1,22.9,10.6c4.5,2,9,4,13.8,6.1c0-19.7,0-38.8-0.1-57.8c0-0.8-0.8-2.1-1.5-2.5C272.9,56,260.7,50.6,247.7,44.9z
+                        M339,44.6c-12.3,5.7-23.8,11.1-35.3,16.3c-2.2,1-2.9,2.2-2.9,4.6c0.1,16.6,0.1,33.2,0.1,49.8c0,1.7,0,5.3,0,5.3s-0.1,0.3,0.1,0.4
+                        s24.9-10.9,36.6-16.2c0.7-0.3,1.4-1.7,1.4-2.6C339.1,83.3,339.1,64.4,339,44.6z M260.6,35c0,0.1,21.8,10,32.4,14.7
+                        c0.6,0.3,1.6,0.2,2.3-0.1c10.1-4.6,20.1-9.3,31.3-14.4c-9.2-3-17.3-5.8-25.4-8.3c-3-0.9-6.4-2.7-9.1-1.9
+                        C281.7,27.6,260.6,34.8,260.6,35z"/>
+                    <path id="XMLID_15_" class="st0" d="M171.1,63.2c-7.2,0-14.2,0-21.4,0c0,2.6,0,4.7,0,7.3c6.1,0,12,0,18.1,0c0,3.9,0,7.3,0,11.2
+                        c-5.9,0-11.8,0-18.1,0c0,2.9,0,5.3,0,8.2c7.4,0,14.7,0,22.3,0c0,3.8,0,7.1,0,10.8c-12.1,0-24.3,0-36.9,0c0-16,0-32.1,0-48.5
+                        c11.9,0,23.8,0,36,0C171.1,55.7,171.1,59.2,171.1,63.2z"/>
+                    <path id="XMLID_27_" class="st0" d="M102.7,86c0,5,0,9.7,0,14.7c-4.9,0-9.5,0-14.3,0c0-14.6,0-48.5,0-48.5s15.9-1.9,29.8,1.3
+                        c8.1,1.4,11.5,8.3,10.8,17.6c-0.7,7.8-5.9,13.2-13.8,14.1C111.3,85.6,107.3,85.7,102.7,86z M102.8,74.6c2.5,0,3.9,0,5.9-0.1
+                        c2.2,0,4.1-0.3,5.5-2.6c0.9-1.5,0.8-4.7-0.2-6.1c-1.5-3.7-11.2-2.4-11.2-2.4S102.8,70.5,102.8,74.6z"/>
+                    <path id="XMLID_10_" class="st0" d="M191.9,75.6c-4.6-7.6-9.2-15.2-14.2-23.4c-0.1-0.1,16.1,0,16.1,0s4.9,9.2,6.6,12.5
+                        c1.7-3.2,6.8-12.5,6.8-12.5h16c0,0-10,15.7-15,23.5c4.9,8.1,15,25,15,25h-15.7c0,0-5.6-9.4-7.7-13.4c-1.5,2.8-4,7.5-4,7.5l-3,5.9
+                        c0,0-16.5,0.1-16.4,0C181.7,92,186.8,83.8,191.9,75.6z"/>
+                    <path id="XMLID_25_" class="st0" d="M49.1,100.5c0,0-9,0-13.8,0C40.7,84,46,67.9,51.4,51.6c4.3,0,14-0.1,14.6-0.1
+                        c0,0,0.8,1.9,0.9,2.4c5.1,15,15,45.9,15,46.5c-4.6,0-14,0-14,0l-1.4-5.8l-15.1-0.3L49.1,100.5z M59.1,67.8c-0.3,0-0.6,0-1,0
+                        c-1.4,5.4-2.7,10.7-4.1,16.3c3.4,0,6.3,0,9.4,0C61.9,78.3,60.5,73,59.1,67.8z"/>
+                    <path id="XMLID_3_" class="st0" d="M102.8,74.6"/>
+                    <g>
+                        <path class="st0" d="M364,52h15v17h16.4V52h15.1v48.7h-15.1V81h-16.4v19.7h-15V52z"/>
+                        <path class="st0" d="M418.7,76.4c0-7.9,2.2-14.1,6.6-18.6c4.4-4.4,10.6-6.6,18.5-6.6c8.1,0,14.3,2.2,18.7,6.5s6.6,10.4,6.6,18.3
+                            c0,5.7-1,10.4-2.9,14c-1.9,3.6-4.7,6.5-8.3,8.5s-8.1,3-13.5,3c-5.5,0-10-0.9-13.6-2.6c-3.6-1.7-6.5-4.5-8.7-8.3
+                            C419.8,86.8,418.7,82.1,418.7,76.4z M433.8,76.4c0,4.9,0.9,8.4,2.7,10.6c1.8,2.1,4.3,3.2,7.5,3.2c3.2,0,5.7-1.1,7.5-3.2
+                            c1.8-2.1,2.7-5.9,2.7-11.3c0-4.6-0.9-7.9-2.8-10c-1.8-2.1-4.4-3.2-7.5-3.2c-3,0-5.5,1.1-7.3,3.2
+                            C434.7,67.9,433.8,71.5,433.8,76.4z"/>
+                        <path class="st0" d="M474.6,84.6l14.3-0.9c0.3,2.3,0.9,4.1,1.9,5.3c1.5,2,3.8,3,6.6,3c2.1,0,3.8-0.5,5-1.5c1.2-1,1.7-2.2,1.7-3.5
+                            c0-1.3-0.6-2.4-1.7-3.4c-1.1-1-3.7-1.9-7.7-2.8c-6.6-1.5-11.3-3.5-14.1-5.9c-2.8-2.5-4.2-5.6-4.2-9.4c0-2.5,0.7-4.9,2.2-7.1
+                            c1.4-2.2,3.6-4,6.5-5.2c2.9-1.3,6.9-1.9,12-1.9c6.2,0,11,1.2,14.2,3.5c3.3,2.3,5.2,6,5.8,11L503,66.5c-0.4-2.2-1.2-3.8-2.4-4.8
+                            c-1.2-1-2.9-1.5-5-1.5c-1.7,0-3.1,0.4-4,1.1c-0.9,0.7-1.3,1.6-1.3,2.7c0,0.8,0.4,1.5,1.1,2.1c0.7,0.6,2.4,1.2,5,1.8
+                            c6.6,1.4,11.3,2.9,14.1,4.3c2.8,1.5,4.9,3.2,6.2,5.4c1.3,2.1,1.9,4.5,1.9,7.2c0,3.1-0.9,6-2.6,8.6c-1.7,2.6-4.1,4.6-7.2,6
+                            c-3.1,1.4-7,2-11.7,2c-8.3,0-14-1.6-17.2-4.8S475.1,89.5,474.6,84.6z"/>
+                        <path class="st0" d="M523,52h45.7v12h-15.3v36.7h-15V64H523V52z"/>
+                        <path class="st0" d="M576.1,52h15.1v48.7h-15.1V52z"/>
+                        <path class="st0" d="M602,52h14l18.3,26.9V52h14.2v48.7h-14.2L616.2,74v26.7H602V52z"/>
+                        <path class="st0" d="M683.1,83.1V72.9h23.2v20.8c-4.4,3-8.4,5.1-11.8,6.2s-7.5,1.6-12.2,1.6c-5.8,0-10.5-1-14.1-3
+                            c-3.6-2-6.5-4.9-8.5-8.8c-2-3.9-3-8.4-3-13.4c0-5.3,1.1-9.9,3.3-13.9c2.2-3.9,5.4-6.9,9.6-8.9c3.3-1.6,7.7-2.4,13.3-2.4
+                            c5.4,0,9.4,0.5,12.1,1.5c2.7,1,4.9,2.5,6.6,4.5c1.8,2,3.1,4.6,4,7.8l-14.5,2.6c-0.6-1.8-1.6-3.2-3-4.2c-1.4-1-3.2-1.5-5.5-1.5
+                            c-3.3,0-5.9,1.1-7.9,3.4s-2.9,5.9-2.9,10.9c0,5.3,1,9,3,11.3c2,2.3,4.7,3.4,8.3,3.4c1.7,0,3.3-0.2,4.8-0.7
+                            c1.5-0.5,3.3-1.3,5.2-2.5v-4.6H683.1z"/>
+                    </g>
+                </g>
+            </g>
+            <g id="Layer_2_1_" class="st1">
+            </g>
+            </svg>
+            <p>We recommend ApexHosting!</p>
+        </a>
+    </div>
+</div></div>
+    </div>
+  </main>
+</div>
+<footer class="sy-foot">
+  <div class="sy-foot-inner sy-container mx-auto">
+    <div class="sy-foot-reserved md:flex justify-between items-center">
+      <div class="sy-foot-copyright"><p>2015-2026, WorldEdit Team</p>
+  
+  <p>
+    Made with
+    
+    <a href="https://www.sphinx-doc.org/">Sphinx</a> and
+    
+    <a href="https://shibuya.lepture.com">Shibuya theme</a>.
+  </p>
+</div>
+      <div class="sy-foot-socials">
+  <a href="https://github.com/EngineHub/WorldEdit" aria-label="GitHub">
+    <iconify-icon icon="simple-icons:github"></iconify-icon>
+  </a>
+  <a href="https://discord.gg/enginehub" aria-label="Discord">
+    <iconify-icon icon="simple-icons:discord"></iconify-icon>
+  </a></div>
+    </div>
+  </div>
+</footer>
+      <script src="../../../_static/documentation_options.js?v=2a957733"></script>
+      <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../../../_static/shibuya.js?v=50760d75"></script></body>
+</html>

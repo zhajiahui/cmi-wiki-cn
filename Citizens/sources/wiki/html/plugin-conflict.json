@@ -1,0 +1,67 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Plugin Conflict",
+    "pageid": 354,
+    "revid": 5555,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>If you've been sent to this page, you're having trouble with a plugin feature and a helper suspects it is caused by a <b>Plugin Conflict</b>.\n</p><p>This page documents what that is and what to do about it.\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#What_is_a_Plugin_Conflict?\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">What is a Plugin Conflict?</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#What_do_I_do_about_it?\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">What do I do about it?</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Step_1:_Identify_the_fault\"><span class=\"tocnumber\">2.1</span> <span class=\"toctext\">Step 1: Identify the fault</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Step_2:_Deal_with_the_conflicting_plugin\"><span class=\"tocnumber\">2.2</span> <span class=\"toctext\">Step 2: Deal with the conflicting plugin</span></a></li>\n</ul>\n</li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"What_is_a_Plugin_Conflict?\"><span id=\"What_is_a_Plugin_Conflict.3F\"></span>What is a Plugin Conflict?</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Plugin_Conflict&amp;action=edit&amp;section=1\" title=\"Edit section: What is a Plugin Conflict?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>A plugin conflict means that you have an issue in one plugin e.g. Citizens or Denizen but it is likely caused by some other plugin on your server.\n</p><p>For example, when multiple plugins rely on the same internal Minecraft features, or in some cases when an external plugin is making calls to the first plugin's API that shouldn't be happening (eg some plugin is telling Citizens to remove all villager NPCs without you knowing).\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"What_do_I_do_about_it?\"><span id=\"What_do_I_do_about_it.3F\"></span>What do I do about it?</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Plugin_Conflict&amp;action=edit&amp;section=2\" title=\"Edit section: What do I do about it?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Step_1:_Identify_the_fault\">Step 1: Identify the fault</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Plugin_Conflict&amp;action=edit&amp;section=3\" title=\"Edit section: Step 1: Identify the fault\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>First, you have to find out what plugin is causing the problem.\n</p><p>You may be able to narrow it down - eg, when Citizens is not able to control the scoreboard properly (leading to CIT-132392 names), you can start by disabling scoreboard plugins like TAB.\n</p><p>If you only have a few plugins that need to be tested, you can test 1-by-1: remove a suspected plugin, restart your server, and test the issue. If the issue is gone, that plugin was at fault.\n</p><p>If you have a lot of plugins to test, use a binary search: remove half of your plugins and test like that. If the issue is gone, the issue is in the half you removed. Otherwise, try without the other half. Once you know which half it's in, you can then try removing another half of your plugins, and repeat this strategy until you have just 1 plugin at fault.\n</p><p>You may benefit from a local test server. Start with just Citizens or Denizen and see if the issue occurs. If the issue is gone, start transferring plugins and configurations one-by-one from your main server until it breaks again.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Step_2:_Deal_with_the_conflicting_plugin\">Step 2: Deal with the conflicting plugin</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Plugin_Conflict&amp;action=edit&amp;section=4\" title=\"Edit section: Step 2: Deal with the conflicting plugin\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>If you've tried every test and even with a blank default server running just the at-issue plugin you still have the issue, you can come back and report that information. Ideally include a full copy of your log file on this test server to help us replicate the issue ourselves (so we can fix it).\n</p><p>If you've identified a specific plugin at fault,\n</p>\n<ul><li>Tell us what plugin was at fault, and any other relevant information you may have gathered</li>\n<li>In some cases we may be able to just deal with it from there, other times we'll ask you to report the issue to the developer of the plugin at fault. In those cases, we encourage you to tell the relevant developer that you spoke with us and sent you there, and ideally report the issue on a public location (such as a Spigot forum topic, or a GitHub issues page) and link us to the public post you made, so we can work with that developer to solve the issue for you.</li></ul>\n<!-- \nNewPP limit report\nCached time: 20261019145918\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.010 seconds\nReal time usage: 0.012 seconds\nPreprocessor visited node count: 12/1000000\nRevision size: 2716/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID a8727563-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "What is a Plugin Conflict?",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Plugin_Conflict",
+        "byteoffset": 201,
+        "anchor": "What_is_a_Plugin_Conflict?",
+        "linkAnchor": "What_is_a_Plugin_Conflict?"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "What do I do about it?",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Plugin_Conflict",
+        "byteoffset": 660,
+        "anchor": "What_do_I_do_about_it?",
+        "linkAnchor": "What_do_I_do_about_it?"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Step 1: Identify the fault",
+        "number": "2.1",
+        "index": "3",
+        "fromtitle": "Plugin_Conflict",
+        "byteoffset": 688,
+        "anchor": "Step_1:_Identify_the_fault",
+        "linkAnchor": "Step_1:_Identify_the_fault"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Step 2: Deal with the conflicting plugin",
+        "number": "2.2",
+        "index": "4",
+        "fromtitle": "Plugin_Conflict",
+        "byteoffset": 1762,
+        "anchor": "Step_2:_Deal_with_the_conflicting_plugin",
+        "linkAnchor": "Step_2:_Deal_with_the_conflicting_plugin"
+      }
+    ],
+    "showtoc": ""
+  }
+}

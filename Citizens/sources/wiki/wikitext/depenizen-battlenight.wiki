@@ -1,0 +1,42 @@
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://meta.denizenscript.com/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+<h1>Denizen Commands</h1>
+The BattleNight commands are pretty straight-forward. You should remember that any Denizen command can have a "player:<player>" argument to change the specified player.
+For example, if you wanted to add a player to a battle that isn't the currently attached player, you can use "- bn add player:PlayerName"
+
+<h2>- bn add</h2>
+
+Adds a player to the current battle.
+
+<h2>- bn kick</h2>
+
+Kicks a player from the current battle.
+
+<h2>- bn start</h2>
+
+Starts a battle.
+
+<h2>- bn end</h2>
+
+Ends a battle.
+
+<h1>Tags</h1>

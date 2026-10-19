@@ -1,0 +1,15 @@
+{
+  "project": "Multiverse-Core",
+  "pages": 22,
+  "code_blocks": 111,
+  "inline_code_tokens": 963,
+  "assets": 18,
+  "coverage": {
+    "discovered": 24,
+    "directory_pages": 24,
+    "translated": 22,
+    "excluded_api": 2
+  },
+  "errors": [],
+  "warnings": []
+}

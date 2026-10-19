@@ -1,0 +1,28 @@
+{{NoSupport}}
+Having a basic NPC is cool, but you may want it to utilize one of our character types.
+
+To change an NPC's type, use the command /toggle [type]. Replace [type] with the NPC type that you want to toggle your NPC to become. 
+
+<pre>/toggle healer</pre>
+
+==Character JARs==
+
+It is imperative that you have the NPC type's .jar file in your plugins/Citizens/types directory. If not, you won't be able to toggle an NPC to become that type. When updating Citizens, you must update your character types as well.
+
+==Character Types==
+
+Toggleable Types (These types can be toggled):
+<br>
+* [[1.x/Blacksmith]]s can repair items, for a cost.
+* [[1.x/Guard]]s be bouncers, soldiers, or bodyguards.
+* [[1.x/Healer]]s can provide a health boost when you run out of food.
+* [[1.x/Quester]]s are perhaps the most powerful, featuring a robust questing system.
+* [[1.x/Trader]]s provide a unique way for your players to buy and sell goods.
+* [[1.x/Wizard]]s can do magical tasks.
+<br>
+Mob Types (These types can automatically spawn):
+<br>
+* [[1.x/Evil NPCs]] can spawn alongside your servers' other mobs.
+
+{{NavBox}}
+[[Category:Citizens1]]

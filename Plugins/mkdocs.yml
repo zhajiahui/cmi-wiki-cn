@@ -1,3 +1,4 @@
 site_name: 插件与配置
 nav:
 - 插件总览: index.md
+- Wiki 收录范围: wiki-coverage.md

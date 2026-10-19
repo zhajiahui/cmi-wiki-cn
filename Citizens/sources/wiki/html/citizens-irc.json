@@ -1,0 +1,33 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Citizens IRC",
+    "pageid": 140,
+    "revid": 5156,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p><b>The IRC is no longer in use. Use Discord instead!</b>\n</p><p>Discord is here: <a rel=\"nofollow\" class=\"external free\" href=\"https://discord.gg/Q6pZGSR\">https://discord.gg/Q6pZGSR</a>\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Old_Info\">Old Info</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Citizens_IRC&amp;action=edit&amp;section=1\" title=\"Edit section: Old Info\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>The Citizens team has a IRC chat room on esper.net. You can join this room to receive support or make suggestions.\n</p><p><a rel=\"nofollow\" class=\"external text\" href=\"http://webchat.esper.net/?channels=citizens\">Here</a> is a web-based link to the chat, or point your favorite IRC client to #citizens on irc.esper.net\n</p><p>The rules for chatting on our IRC room, #citizens, are listed below:\n</p>\n<ol><li>No spamming, advertising, or soliciting.</li>\n<li>Please don't ping the OPs unnecessarily, they are likely coding the next great feature. Don't worry, they check in regularly!</li>\n<li>Don't ask to ask, just ask any question you may have.</li>\n<li>Read through <a rel=\"nofollow\" class=\"external text\" href=\"http://workaround.org/getting-help-on-irc\">this page</a> before chatting. It has lots of good tips.</li>\n<li>Stick around when asking a question, we're busy people but will get to you as soon as possible.</li></ol>\n<!-- \nNewPP limit report\nCached time: 20261019145816\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.006 seconds\nReal time usage: 0.009 seconds\nPreprocessor visited node count: 3/1000000\nRevision size: 889/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 837e0265-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Old Info",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Citizens_IRC",
+        "byteoffset": 102,
+        "anchor": "Old_Info",
+        "linkAnchor": "Old_Info"
+      }
+    ]
+  }
+}

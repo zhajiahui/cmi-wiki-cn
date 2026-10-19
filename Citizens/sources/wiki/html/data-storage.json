@@ -1,0 +1,105 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Data Storage",
+    "pageid": 104,
+    "revid": 4949,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>Data storage in Citizens2 is handled in one of two ways: <a href=\"#Saves.yml\">YAML flatfile</a> or a NBT file.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"saves.yml\">saves.yml</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Data_Storage&amp;action=edit&amp;section=1\" title=\"Edit section: saves.yml\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><i>saves.yml</i> is used by default to store all data on created NPCs.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Structure\">Structure</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Data_Storage&amp;action=edit&amp;section=2\" title=\"Edit section: Structure\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Mouseover to view info:\n</p>\n<pre># Citizens NPC Storage\n<span title=\"The NPC block. All NPC specifics go here\" class=\"help\">npc:</span>\n  <span title=\"The NPC&#39;s ID\" class=\"help\">'0':</span>\n   <span title=\"The name of the NPC. Displayed above head for regular NPCs.\" class=\"help\">name: My_First_NPC</span>\n   <span title=\"Traits block. All specifics about the NPC are located here.\" class=\"help\">traits:</span>\n     <span title=\"Age block. Age specific settings are stored here.\" class=\"help\">age:</span>\n       <span title=\"What is the NPC&#39;s current age?\" class=\"help\">age: 0</span>\n       <span title=\"Will the NPC age over time?\" class=\"help\">locked: true</span>\n     <span title=\"Should the NPC be spawned on server startup?\" class=\"help\">spawned: true</span>\n     <span title=\"Type of NPC. Either PLAYER or the mob type\" class=\"help\">type: PLAYER</span>\n     <span title=\"Owner of the NPC. Can be set to\" class=\"help\">owner: Steve</span>\n     <span title=\"Should the NPC look at the player when he comes near it?\" class=\"help\">lookclose: true</span>\n     <span title=\"Location block. Stores the location of the NPC\" class=\"help\">location:</span>\n       <span title=\"World that the NPC is located in\" class=\"help\">world: world</span>\n       <span title=\"X coordinate of the NPC\" class=\"help\">x: '92.65002360423462'</span>\n       <span title=\"Y coordinate of the NPC\" class=\"help\">y: '3.0'</span>\n       <span title=\"Z coordinate of the NPC\" class=\"help\">z: '-264.5621058817138'</span>\n       <span title=\"Yaw (direction the NPC is looking) of the NPC in degrees\" class=\"help\">yaw: '87.90003967285156'</span>\n       <span title=\"Pitch (height the NPC is looking) of the NPC in degrees\" class=\"help\">pitch: '21.14999008178711'</span>\n     <span title=\"Text block. Stores information about the NPC&#39;s text.\" class=\"help\">text:</span>\n       <span title=\"Should the NPC talk when a player gets near it?\" class=\"help\">talk-close: true</span>\n       <span title=\"Should the NPC talk randomly?\" class=\"help\">random-talker: true</span>\n       <span title=\"First line of the NPC&#39;s chat.\" class=\"help\">0: Hello, there. I'm My_First_NPC.</span>\n     <span title=\"Waypoints block\" class=\"help\">waypoints:</span>\n       <span title=\"Linear type of waypoints\" class=\"help\">linear:</span>\n         <span title=\"Points section of the linear block\" class=\"help\">points:</span>\n           <span title=\"Waypoint number\" class=\"help\">'0':</span>\n             <span title=\"Waypoint location block\" class=\"help\">location:</span>\n               <span title=\"World of the waypoint\" class=\"help\">world: MyWorld</span>\n               <span title=\"X coordinate of the waypoint\" class=\"help\">x: 60</span>\n               <span title=\"Y coordinate of the waypoint\" class=\"help\">y: 64</span>\n               <span title=\"Z coordinate of the waypoint\" class=\"help\">z: 80</span>\n               <span title=\"Pitch of the waypoint\" class=\"help\">pitch: 90</span>\n               <span title=\"Yaw of the waypoint\" class=\"help\">yaw: 0</span>\n             <span title=\"How long to wait at this point\" class=\"help\">delay: 0</span>\n           <span title=\"Waypoint number\" class=\"help\">'1':</span>\n             <span title=\"Waypoint location block\" class=\"help\">location:</span>\n               <span title=\"World of the waypoint\" class=\"help\">world: MyWorld</span>\n               <span title=\"X coordinate of the waypoint\" class=\"help\">x: 65</span>\n               <span title=\"Y coordinate of the waypoint\" class=\"help\">y: 64</span>\n               <span title=\"Z coordinate of the waypoint\" class=\"help\">z: 82</span>\n               <span title=\"Pitch of the waypoint\" class=\"help\">pitch: 45</span>\n               <span title=\"Yaw of the waypoint\" class=\"help\">yaw: 0</span>\n             <span title=\"How long to wait at this point\" class=\"help\">delay: 0</span>\n       <span title=\"Which pathfinder code do we use? (probably linear)\" class=\"help\">provider: linear</span>\n</pre>\n<div class=\"padded\" style=\"font-size: 12px; padding: 5px\">\n<table class=\"wikitable collapsible collapsed\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Usage\" title=\"Category:Usage\">Usage</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Installation\" title=\"Installation\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Frequently_Asked_Questions\" title=\"Frequently Asked Questions\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Editors\" title=\"Editors\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Characters\" title=\"Characters\">Characters</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/API\" title=\"API\">API</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32;\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Configuration\" title=\"Category:Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Configuration\" title=\"Configuration\">Configuration</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a class=\"mw-selflink selflink\">Data Storage</a>\n</td></tr></tbody></table>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145822\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.089 seconds\nReal time usage: 0.124 seconds\nPreprocessor visited node count: 378/1000000\nRevision size: 3281/2097152 bytes\nPost‐expand include size: 7484/2097152 bytes\nTemplate argument size: 1898/2097152 bytes\nHighest expansion depth: 4/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   96.016      1 -total\n 56.09%   53.858     44 Template:H:title\n  7.72%    7.410      1 Template:NavBox\n  3.16%    3.029     10 Template:·\n-->\n\n<!-- Render ID 87118964-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "API"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Configuration"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Editors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Text Syntax"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Configuration"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Usage"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "saves.yml",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Data_Storage",
+        "byteoffset": 102,
+        "anchor": "saves.yml",
+        "linkAnchor": "saves.yml"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Structure",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "Data_Storage",
+        "byteoffset": 185,
+        "anchor": "Structure",
+        "linkAnchor": "Structure"
+      }
+    ]
+  }
+}

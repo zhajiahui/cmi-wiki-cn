@@ -1,6 +1,40 @@
 site_name: WorldEdit 中文资料
 nav:
 - 插件说明: index.md
+- 插件 Wiki:
+  - WorldEdit 文档: wiki/index.md
+  - 安装: wiki/install.md
+  - 快速入门: wiki/quickstart.md
+  - 配置: wiki/config.md
+  - 权限: wiki/permissions.md
+  - 命令: wiki/commands.md
+  - 用法:
+    - 用法: wiki/usage/index.md
+    - 常规:
+      - 常规: wiki/usage/general/index.md
+      - 操作历史: wiki/usage/general/history.md
+      - 会话: wiki/usage/general/sessions.md
+      - 方块模式: wiki/usage/general/patterns.md
+      - 蒙版: wiki/usage/general/masks.md
+    - 移动: wiki/usage/navigation.md
+    - 选区:
+      - 选区: wiki/usage/regions/index.md
+      - 选区: wiki/usage/regions/selections.md
+      - 选区操作: wiki/usage/regions/regionops.md
+    - 剪贴板: wiki/usage/clipboard.md
+    - 生成: wiki/usage/generation.md
+    - 工具: wiki/usage/tools/tools.md
+    - 笔刷: wiki/usage/tools/brushes.md
+    - 实用工具: wiki/usage/utilities.md
+    - 备份快照: wiki/usage/snapshots.md
+    - 其他:
+      - 其他: wiki/usage/other/index.md
+      - 表达式语法: wiki/usage/other/expressions.md
+      - CraftScripts: wiki/usage/other/craftscripts.md
+  - 常见问题: wiki/faq.md
+  - 获取帮助: wiki/support.md
+  - 本地化: wiki/localisation.md
+  - 源代码: wiki/source-code.md
 - 配置文件（7.4.6+7648-00664b0）:
   - 配置索引: configuration/index.md
   - config.yml: configuration/config.md

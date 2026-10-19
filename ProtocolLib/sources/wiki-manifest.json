@@ -1,0 +1,80 @@
+[
+  {
+    "file": "wiki/home.md",
+    "title": "ProtocolLib Wiki",
+    "source_url": "https://github.com/dmulloy2/ProtocolLib/wiki",
+    "source_file": "sources/wiki/original/home.md",
+    "source_sha256": "08e2fd28dda2c2991888e0aa7fea3b39ad1e6209e8d5628da24bf6499cc32dfa",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-page.md",
+    "title": "ProtocolLib 官方服主说明",
+    "source_url": "https://www.spigotmc.org/resources/protocollib.1997/",
+    "source_file": "sources/wiki/original/plugin-page.md",
+    "source_sha256": "09224d0a082a5c23ee638c07ad2c4d489b3f2e54a70329fdb448ff88b099771f",
+    "translation_review": "reviewed",
+    "source_exclusions": [
+      {
+        "start_line": 64,
+        "end_line": 101,
+        "reason": "API/SDK 接入参考；具体排除范围见 wiki-coverage.json"
+      }
+    ]
+  },
+  {
+    "file": "wiki/common-errors.md",
+    "title": "常见错误",
+    "source_url": "https://github.com/dmulloy2/ProtocolLib/wiki/Common-Errors",
+    "source_file": "sources/wiki/original/common-errors.md",
+    "source_sha256": "e4acd3d74ca13507a3e55cc2b7083d7dd099bc352e25861ff79ef7cb38bf013d",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/readme.md",
+    "title": "ProtocolLib 项目说明与构建",
+    "source_url": "https://github.com/dmulloy2/ProtocolLib/blob/d89a5deb3eb625b16846da57fbbb04bfdd0d031d/Readme.md",
+    "source_file": "sources/wiki/original/readme.md",
+    "source_sha256": "e1dc1f299e4bfc850affd82c6543ff244643d22a696505af4f08f4857606b4e9",
+    "translation_review": "reviewed",
+    "source_exclusions": [
+      {
+        "start_line": 38,
+        "end_line": 156,
+        "reason": "API/SDK 接入参考；具体排除范围见 wiki-coverage.json"
+      }
+    ]
+  },
+  {
+    "file": "wiki/bukkit-configuration.md",
+    "title": "默认配置文件（旧版文档）",
+    "source_url": "https://dev.bukkit.org/projects/protocollib/pages/configuration",
+    "source_file": "sources/wiki/original/bukkit-configuration.md",
+    "source_sha256": "b6da7319f7a3ee09a381f88a950253f5ea70651891d9cc3c0fa9184adfaae39a",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/bukkit-suppress-warnings.md",
+    "title": "屏蔽警告（旧版文档）",
+    "source_url": "https://dev.bukkit.org/projects/protocollib/pages/suppress-warnings",
+    "source_file": "sources/wiki/original/bukkit-suppress-warnings.md",
+    "source_sha256": "f024a956b5b89d6588809769039be4fba4bca62bcf814f06730734a1bd3a8451",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/bukkit-timings.md",
+    "title": "性能计时系统（旧版文档）",
+    "source_url": "https://dev.bukkit.org/projects/protocollib/pages/timings",
+    "source_file": "sources/wiki/original/bukkit-timings.md",
+    "source_sha256": "d5f991ad60dcea4eb38dfa7998340a34c1f6338b46005da989da84c2be2cbe7e",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/bukkit-main-donators.md",
+    "title": "捐赠者（旧版文档）",
+    "source_url": "https://dev.bukkit.org/projects/protocollib/pages/main/donators",
+    "source_file": "sources/wiki/original/bukkit-main-donators.md",
+    "source_sha256": "0f088d5f998e8fcec30eb7aa9aca4b270eaf22c8cc1f1cd03832923b7143f87a",
+    "translation_review": "reviewed"
+  }
+]

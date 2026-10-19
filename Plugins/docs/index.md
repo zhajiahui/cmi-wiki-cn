@@ -6,60 +6,60 @@ translation_review: reviewed
 
 # 插件与配置
 
-按插件查看说明、配置文件和前置关系。配置中的注释及可显示文字已整理为中文，代码块保留配置层级；命令、权限、配置键和占位符保持原样。
+按插件查看完整 Wiki、配置文件和前置关系。配置中的注释及可显示文字已整理为中文，代码块保留配置层级；命令、权限、配置键和占位符保持原样。
 
 本批资料来自提供的插件包，共整理 **22 个目录、181 份配置与文本文件**。表中版本读取自 JAR 声明；bStats、pStats、spark 只有配置目录，包内没有对应的独立 JAR 版本。
 
-CMI、Typewriter、MMOItems 和 MythicLib 的配置入口也列在下方，它们的官方文档仍可从原栏目进入。
+CMI、Typewriter、MMOItems 和 MythicLib 的配置入口也列在下方，它们的官方文档仍可从原栏目进入。其他主插件的 Wiki 从表中进入；各项目收录页数、API 排除和缺源项见 [Wiki 收录范围](wiki-coverage.md)。
 
 ## 已有 Wiki
 
-| 插件 | 随包版本 | 配置 | 必需前置 |
-| --- | --- | --- | --- |
-| [CMI](../index.md) | `9.8.10.4` | [27 份](../configuration/index.md) | [CMILib](../cmilib/index.md) |
-| [Typewriter](../typewriter/index.md) | `0.9.0-beta-177` | [1 份](../typewriter/configuration/index.md) | 未声明 |
-| [MMOItems](../mmoitems/index.md) | `6.10.1-SNAPSHOT` | [55 份](../mmoitems/configuration/index.md) | [MythicLib](../mythiclib/index.md) |
-| [MythicLib](../mythiclib/index.md) | `1.7.1-SNAPSHOT` | [13 份](../mythiclib/configuration/index.md) | 未声明 |
+| 插件 | 随包版本 | Wiki | 配置 | 必需前置 |
+| --- | --- | --- | --- | --- |
+| [CMI](../index.md) | `9.8.10.4` | [查看](../index.md) | [27 份](../configuration/index.md) | [CMILib](../cmilib/index.md) |
+| [Typewriter](../typewriter/index.md) | `0.9.0-beta-177` | [查看](../typewriter/index.md) | [1 份](../typewriter/configuration/index.md) | 未声明 |
+| [MMOItems](../mmoitems/index.md) | `6.10.1-SNAPSHOT` | [查看](../mmoitems/index.md) | [55 份](../mmoitems/configuration/index.md) | [MythicLib](../mythiclib/index.md) |
+| [MythicLib](../mythiclib/index.md) | `1.7.1-SNAPSHOT` | [查看](../mythiclib/index.md) | [13 份](../mythiclib/configuration/index.md) | 未声明 |
 
 ## 基础组件与权限
 
-| 插件 | 随包版本 | 配置 | 必需前置 |
-| --- | --- | --- | --- |
-| [CMILib](../cmilib/index.md) | `1.6.0.1` | [1 份](../cmilib/configuration/index.md) | 未声明 |
-| [LuckPerms](../luckperms/index.md) | `5.5.71` | [2 份](../luckperms/configuration/index.md) | 未声明 |
-| [PlaceholderAPI](../placeholderapi/index.md) | `2.12.3` | [1 份](../placeholderapi/configuration/index.md) | 未声明 |
-| [ProtocolLib](../protocollib/index.md) | `5.5.0-SNAPSHOT-d89a5de` | [1 份](../protocollib/configuration/index.md) | 未声明 |
-| [packetevents](../packetevents/index.md) | `2.14.0` | 本包无独立配置 | 未声明 |
-| [Vault](../vault/index.md) | `1.7.3-b131` | [1 份](../vault/configuration/index.md) | 未声明 |
-| [LoneLibs](../lonelibs/index.md) | `1.0.65` | 本包无独立配置 | 未声明 |
+| 插件 | 随包版本 | Wiki | 配置 | 必需前置 |
+| --- | --- | --- | --- | --- |
+| [CMILib](../cmilib/index.md) | `1.6.0.1` | [4 页](../cmilib/wiki/home.md) | [1 份](../cmilib/configuration/index.md) | 未声明 |
+| [LuckPerms](../luckperms/index.md) | `5.5.71` | [45 页](../luckperms/wiki/home.md) | [2 份](../luckperms/configuration/index.md) | 未声明 |
+| [PlaceholderAPI](../placeholderapi/index.md) | `2.12.3` | [15 页](../placeholderapi/wiki/home.md) | [1 份](../placeholderapi/configuration/index.md) | 未声明 |
+| [ProtocolLib](../protocollib/index.md) | `5.5.0-SNAPSHOT-d89a5de` | [8 页](../protocollib/wiki/home.md) | [1 份](../protocollib/configuration/index.md) | 未声明 |
+| [packetevents](../packetevents/index.md) | `2.14.0` | [5 页](../packetevents/wiki/index.md) | 本包无独立配置 | 未声明 |
+| [Vault](../vault/index.md) | `1.7.3-b131` | [3 页](../vault/wiki/readme.md) | [1 份](../vault/configuration/index.md) | 未声明 |
+| [LoneLibs](../lonelibs/index.md) | `1.0.65` | [2 页](../lonelibs/wiki/readme.md) | 本包无独立配置 | 未声明 |
 
 ## 世界、NPC 与保护
 
-| 插件 | 随包版本 | 配置 | 必需前置 |
-| --- | --- | --- | --- |
-| [Citizens](../citizens/index.md) | `2.0.43-SNAPSHOT (build 4210)` | [2 份](../citizens/configuration/index.md) | 未声明 |
-| [Multiverse-Core](../multiverse-core/index.md) | `5.8.1` | [3 份](../multiverse-core/configuration/index.md) | 未声明 |
-| [WorldEdit](../worldedit/index.md) | `7.4.6+7648-00664b0` | [1 份](../worldedit/configuration/index.md) | 未声明 |
-| [WorldGuard](../worldguard/index.md) | `7.0.17+2370-e42d8bc` | [9 份](../worldguard/configuration/index.md) | [WorldEdit](../worldedit/index.md) |
+| 插件 | 随包版本 | Wiki | 配置 | 必需前置 |
+| --- | --- | --- | --- | --- |
+| [Citizens](../citizens/index.md) | `2.0.43-SNAPSHOT (build 4210)` | [179 页](../citizens/wiki/main-page.md) | [2 份](../citizens/configuration/index.md) | 未声明 |
+| [Multiverse-Core](../multiverse-core/index.md) | `5.8.1` | [22 页](../multiverse-core/wiki/core.md) | [3 份](../multiverse-core/configuration/index.md) | 未声明 |
+| [WorldEdit](../worldedit/index.md) | `7.4.6+7648-00664b0` | [29 页](../worldedit/wiki/index.md) | [1 份](../worldedit/configuration/index.md) | 未声明 |
+| [WorldGuard](../worldguard/index.md) | `7.0.17+2370-e42d8bc` | [26 页](../worldguard/wiki/index.md) | [9 份](../worldguard/configuration/index.md) | [WorldEdit](../worldedit/index.md) |
 
 ## 物品、属性与战斗
 
-| 插件 | 随包版本 | 配置 | 必需前置 |
-| --- | --- | --- | --- |
-| [AttributePlus](../attributeplus/index.md) | `3.3.3.6` | [9 份](../attributeplus/configuration/index.md) | [PlaceholderAPI](../placeholderapi/index.md) |
-| [CrackShot](../crackshot/index.md) | `0.98.13-x6` | [7 份](../crackshot/configuration/index.md) | 未声明 |
-| [CrackShotX](../crackshotx/index.md) | `1.1.0` | [3 份](../crackshotx/configuration/index.md) | [CrackShot](../crackshot/index.md) |
-| [ItemsAdder](../itemsadder/index.md) | `4.0.18` | [11 份](../itemsadder/configuration/index.md) | [ProtocolLib](../protocollib/index.md) |
-| [MythicMobs](../mythicmobs/index.md) | `5.13.0-SNAPSHOT-1abf9862` | [16 份](../mythicmobs/configuration/index.md) | 未声明 |
-| [NeigeItems](../neigeitems/index.md) | `1.22.0` | [15 份](../neigeitems/configuration/index.md) | 未声明 |
+| 插件 | 随包版本 | Wiki | 配置 | 必需前置 |
+| --- | --- | --- | --- | --- |
+| [AttributePlus](../attributeplus/index.md) | `3.3.3.6` | [40 页](../attributeplus/wiki/master.md) | [9 份](../attributeplus/configuration/index.md) | [PlaceholderAPI](../placeholderapi/index.md) |
+| [CrackShot](../crackshot/index.md) | `0.98.13-x6` | [9 页](../crackshot/wiki/Home.md) | [7 份](../crackshot/configuration/index.md) | 未声明 |
+| [CrackShotX](../crackshotx/index.md) | `1.1.0` | 资料待确认 | [3 份](../crackshotx/configuration/index.md) | [CrackShot](../crackshot/index.md) |
+| [ItemsAdder](../itemsadder/index.md) | `4.0.18` | [304 页](../itemsadder/wiki/index.md) | [11 份](../itemsadder/configuration/index.md) | [ProtocolLib](../protocollib/index.md) |
+| [MythicMobs](../mythicmobs/index.md) | `5.13.0-SNAPSHOT-1abf9862` | [969 页](../mythicmobs/wiki/index.md) | [16 份](../mythicmobs/configuration/index.md) | 未声明 |
+| [NeigeItems](../neigeitems/index.md) | `1.22.0` | [16 份公开资料](../neigeitems/wiki/public-readme.md) | [15 份](../neigeitems/configuration/index.md) | 未声明 |
 
 ## 性能与统计
 
-| 插件 | 随包版本 | 配置 | 必需前置 |
-| --- | --- | --- | --- |
-| [spark](../spark/index.md) | `未标明` | [1 份](../spark/configuration/index.md) | 未声明 |
-| [bStats](../bstats/index.md) | `未标明` | [1 份](../bstats/configuration/index.md) | 未声明 |
-| [pStats](../pstats/index.md) | `未标明` | [1 份](../pstats/configuration/index.md) | 未声明 |
+| 插件 | 随包版本 | Wiki | 配置 | 必需前置 |
+| --- | --- | --- | --- | --- |
+| [spark](../spark/index.md) | `未标明` | [18 页](../spark/wiki/home.md) | [1 份](../spark/configuration/index.md) | 未声明 |
+| [bStats](../bstats/index.md) | `未标明` | [11 页](../bstats/wiki/home.md) | [1 份](../bstats/configuration/index.md) | 未声明 |
+| [pStats](../pstats/index.md) | `未标明` | 无独立 Wiki | [1 份](../pstats/configuration/index.md) | 未声明 |
 
 ## 前置关系
 

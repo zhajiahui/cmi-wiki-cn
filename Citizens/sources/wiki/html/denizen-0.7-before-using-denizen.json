@@ -1,0 +1,84 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Denizen/0.7/Before Using Denizen",
+    "pageid": 191,
+    "revid": 5232,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://one.denizenscript.com/denizen/cmds/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://one.denizenscript.com/denizen/cmds/denizen/vids\">Tutorial Videos</a> on youtube or the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br />\n<s>\n</s></p><s><div style=\"font-family:camingodos-web;\">\n<div style=\"float:right;margin-left:2.0em; padding:10px; font-family:camingodos-web; font-size:110%;\"><div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Getting_Started\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Getting Started</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Down_and_dirty\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Down and dirty</span></a></li>\n</ul>\n</div>\n</div>\n<div style=\"margin-right:2.0em; margin-top:35px; padding:10px; font-family:camingodos-web; font-size:110%;\">\n<p><span style=\"font-family:natalya-alternate-one; font-size:650%; margin-right:-7px; margin-left:-10px;\">W</span>elcome to Denizen! Grand adventure awaits, but let's get the basics out of the way first. On this page you will find instructions for installing Denizen, description of what the various files are used for, and a brief overview of what this is all about.\n</p>\n</div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Getting_Started\">Getting Started</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Before_Using_Denizen&amp;action=edit&amp;section=1\" title=\"Edit section: Getting Started\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div style=\"margin-right:2.0em; padding:10px; font-family:camingodos-web; font-size:110%;\">Denizen is in BETA! Expect a few bugs here and there! If you are having problems, <a href=\"/Denizen/0.7/In_Game_Commands#Debug_Mode\" title=\"Denizen/0.7/In Game Commands\"><code>/denizen debug</code></a> is your friend! We're always willing to help out in <a rel=\"nofollow\" class=\"external text\" href=\"irc://irc.esper.net\">#denizen-dev on EsperNET</a> as well. If you do come across any errors beyond bad command syntax, please  report them to the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.github.com/aufdemrand/Denizen/issues\">Github Issues page for Denizens</a>.\n<p>Denizen is not a drag-and-go type of plugin. In fact, Denizen won't do anything unless you assign and define scripts to NPCs. It's highly customizable. With the new <a rel=\"nofollow\" class=\"external text\" href=\"http://scripts.citizensnpcs.com%7CScript\">Repository</a> in development, we hope there will be a wide array of par-baked scripts that you can easily download and customize to your server, but perhaps the most exciting part of Denizen is the ability to write your own scripts. In order to write awesome scripts, you will probably need to read the entirety of this wiki page and think outside the box! Someone is always around IRC to help out and provide suggestions, but please don't ask about the basics unless you have consulted here first.\n</p><p>Some Denizen commands and requirements <b>REQUIRE</b> you to have other plugins, such as <a rel=\"nofollow\" class=\"external text\" href=\"http://dev.bukkit.org/server-mods/vault/\">Vault</a>, installed with a compatible Permissions System and and Economy System. If the commands deals with money or permissions, chances are you will need Vault in order to utilize it. We're also getting ready to release command/requirement packs for Heroes and mcMMO, so stay tuned!\n</p><p>The easiest way to use Denizen for the first time is to download the <a href=\"/Denizen/0.7/Start-up_kit\" title=\"Denizen/0.7/Start-up kit\">Start-up Kit</a>. This includes the default config file, sample scripts, and sample assignments to get you started. It is still recommended that you read as much of the wiki as you can take in to properly utilize Denizen's power and flexibility.\n</p>\n</div>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Down_and_dirty\">Down and dirty</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Before_Using_Denizen&amp;action=edit&amp;section=2\" title=\"Edit section: Down and dirty\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div style=\"margin-right:2.0em; padding:10px; font-family:camingodos-web; font-size:110%;\">\n<p>By now, you probably just want to see how to add custom content, right? Here's a quick, down-and-dirty walk-through to get your first custom NPC up and going. First you should have the <a href=\"/Denizen/0.7/Start-up_kit\" title=\"Denizen/0.7/Start-up kit\">Start-up Kit</a>, or at least an existing assignments.yml and script.yml. These are the files that you will be adding to in this walkthrough. Remember: The files should be placed in your server folder so that it resembles the format mentioned in <a href=\"#File_Structure\">File Structure</a>. Once everything is in place, start up your server.\n</p><p><br />\n<b>1:</b> Make a NPC by using C2 commands to create a new NPC, and assign a trait. We will use Notch in this example. See also: <a href=\"/Commands\" title=\"Commands\">/NPC Commands</a>. \n</p>\n<pre>/npc create Notch --trait denizen</pre>\n<p>Note: You could alternatively use <tt>/trait denizen</tt> if working with an existing NPC.\n</p><p><br />\n<b>2:</b> Create a script for Notch. See also: <a href=\"/index.php?title=Denizen/0.7/Writing_Scripts&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Denizen/0.7/Writing Scripts (page does not exist)\">Writing Denizen Scripts</a>. <br />\nCreate a new file in <tt>plugins/Denizen/scripts/</tt> named <tt>Notch Cookies.yml</tt>. Next, copy the contents of the small script below. This script gives a small random greeting to Notch with an 'easter egg' surprise if you know the secret word.\n</p>\n<pre>'Notch Greeting':\n  Type: Interact\n  Requirements:\n    Mode: None\n  Steps:\n    1:\n      Click Trigger:\n        Script:\n        - RANDOM 3\n        - CHAT 'I Like Cookies!'\n        - CHAT 'MMmm.. cookies are my favorite!'\n        - CHAT 'Cocoa and Wheat make me freak!'\n      Chat Trigger:\n        1:\n          Trigger: 'I love /cookie/s!'\n          Script: \n          - CHAT 'Me too!'\n          - EMOTE 'gives &lt;PLAYER&gt; some cookies.'\n          - GIVE COOKIE QTY:6\n          - ZAP 2\n    2:\n      Click Trigger:\n        Script:\n        - CHAT 'How were the cookies?'\n</pre>\n<p><br />\n<b>3:</b> Assign notch some scripts. See also: <a href=\"/index.php?title=Denizen/0.7/Assigning_Scripts&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Denizen/0.7/Assigning Scripts (page does not exist)\">Assigning Denizen Scripts</a>. <br />\nOpen your assignments.yml. If none exists, create it in your <tt>/plugins/Denizen</tt> folder. Insert the following into your YML file. If <tt>Denizens:</tt> is not at the top of this document, create it.\n</p>\n<pre>Denizens:\n  # ...\n    # ...\n  Notch:\n    Interact Scripts:\n    - 10 Notch Greeting\n    Texts:\n      No Click Trigger: Stop poking me!\n      Denizen Unavailable: Sorry! Busy eating cookies!\n      No Chat Trigger: I only understand cookies.\n</pre>\n<p>This text gives Notch some simple messages for specified circumstances. It also assigns the Notch Cookies script that we just wrote in the section above.\n</p><p><br />\n<b>4:</b> Reload Denizen. See also: <a href=\"/Denizen/0.7/In_Game_Commands#Denizen_Reload\" title=\"Denizen/0.7/In Game Commands\">Denizen Reload</a>. <br />\nThis will ensure that the information has taken. First, in the console or your minecraft client, type <tt>/denizen reload</tt>. This will reload assignments.yml, config.yml, saves.yml, re-concantenate scripts, and perform some cleaning up of objects and such. This is a good time to check the console for any errors. If found, head on over to <a href=\"/Denizen/0.7/Troubleshooting\" title=\"Denizen/0.7/Troubleshooting\">Troubleshooting</a>.\n</p><p><br />\n<b>5:</b> Check Denizen NPC status. See also: <a href=\"/Denizen/0.7/In_Game_Commands#Info-Click\" title=\"Denizen/0.7/In Game Commands\">Info-Click</a>. <br />\nInfo-Click your Denizen NPC by crouching and right-clicking it. This will output a couple of pages of information showing Citizens2 NPC stats, current Interact scripts, Trigger status, Bookmarks, and more. In the case of our example, Notch should have a single entry under Interact Scripts for <tt>Notch Cookies</tt>.\n</p><p><br />\n<b>6:</b> Click on Notch! Play out the script. It's that easy! Go up to Notch and chat 'cookie' for the super secret special surprise.\n</p><p><br />\n<i>Note:</i> This seems like as good of time as any to mention that if any interact script you are using have a 'proximity', 'location', or 'damage trigger', these must be turned on, per NPC. They are off by default as to keep performance as high as possible. See <a href=\"/Denizen/0.7/In_Game_Commands\" title=\"Denizen/0.7/In Game Commands\">In Game Commands</a> for more info.\n</p><p>Ready to dive deeper? start with either <a href=\"/Denizen/0.7/Interact_Scripts\" title=\"Denizen/0.7/Interact Scripts\">Denizen/0.7/Interact_Scripts</a> or <a href=\"/Denizen/0.7/Activity_Scripts\" title=\"Denizen/0.7/Activity Scripts\">Denizen/0.7/Activity_Scripts</a>\n</p>\n</div>\n</div></s>\n<!-- \nNewPP limit report\nCached time: 20261019145827\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.029 seconds\nReal time usage: 0.041 seconds\nPreprocessor visited node count: 17/1000000\nRevision size: 7585/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 877/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 8a0c79e3-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen/0.7/Activity Scripts"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen/0.7/In Game Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen/0.7/Interact Scripts"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen/0.7/Start-up kit"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen/0.7/Troubleshooting"
+      },
+      {
+        "ns": 0,
+        "*": "Denizen/0.7/Writing Scripts"
+      },
+      {
+        "ns": 0,
+        "*": "Denizen/0.7/Assigning Scripts"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "3",
+        "line": "Getting Started",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Denizen/0.7/Before_Using_Denizen",
+        "byteoffset": 1415,
+        "anchor": "Getting_Started",
+        "linkAnchor": "Getting_Started"
+      },
+      {
+        "toclevel": 1,
+        "level": "3",
+        "line": "Down and dirty",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Denizen/0.7/Before_Using_Denizen",
+        "byteoffset": 3427,
+        "anchor": "Down_and_dirty",
+        "linkAnchor": "Down_and_dirty"
+      }
+    ],
+    "showtoc": ""
+  }
+}

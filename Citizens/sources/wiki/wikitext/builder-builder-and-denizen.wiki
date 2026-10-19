@@ -1,0 +1,20 @@
+Examples of things to do combining Denizen and Builder
+
+== Continuous Rebuilding == 
+If you want a builder to look busy and continuously rebuild and destroy a schematic, you would use a setup like this.
+
+Create a Task script in any yml file the denizen scripts folder like the following.
+
+<pre>
+---- script.yml ----
+Rebuild:
+  Type: Task
+  Script:
+    - execute as_npc "builder <npc.id> build excavate oncomplete:Rebuild"
+</pre>
+
+Now create a builder, load the desired schematic, set an origin, and call ''/builder build oncomplete:Rebuild''
+
+The builder will build the schematic, and then run the task, which will build it again with the ''excavate'' option that will tear it down first, and the cycle will continue forever.
+
+You can use this script for as many builders/schematics you want without having to change anything.

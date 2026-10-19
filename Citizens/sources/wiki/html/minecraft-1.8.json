@@ -1,0 +1,95 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Minecraft 1.8",
+    "pageid": 353,
+    "revid": 5577,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>Hello, if you've been linked to this page, you're running a Minecraft 1.8 server.\n</p><p>At the time of this page being written, Minecraft 1.8 is <b>10 years old</b> (released in 2014!).\n</p><p>Servers that far outdated (while still able to run functionally, including with modern plugins) obviously cannot be supported by any reasonable development work. As such, we've prepared this page to help you get your server updated to a supportable version.\n</p><p>First, some information: <b>You can</b> run a more modern server <b>while still allowing older game clients to join</b>, and enjoying <b>older style PvP</b> if you prefer that.\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Additional_Warning\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Additional Warning</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#How_To_Update_Properly\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">How To Update Properly</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Current_Spigot_or_Paper_Jar\"><span class=\"tocnumber\">2.1</span> <span class=\"toctext\">Current Spigot or Paper Jar</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Letting_In_Older_Clients\"><span class=\"tocnumber\">2.2</span> <span class=\"toctext\">Letting In Older Clients</span></a></li>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#Legacy-Style_PvP\"><span class=\"tocnumber\">2.3</span> <span class=\"toctext\">Legacy-Style PvP</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-6\"><a href=\"#Note_If_You_Don&#39;t_Follow_This_Guide\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Note If You Don't Follow This Guide</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Additional_Warning\">Additional Warning</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Minecraft_1.8&amp;action=edit&amp;section=1\" title=\"Edit section: Additional Warning\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Minecraft 1.8.x and other similar old versions (pre-1.12) are likely vulnerable to variants of the <b>Log4Shell security vulnerability</b>, as the patches for those older versions are imperfect. Updating to a more recent version is critical for the security of you and your server.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"How_To_Update_Properly\">How To Update Properly</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Minecraft_1.8&amp;action=edit&amp;section=2\" title=\"Edit section: How To Update Properly\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Current_Spigot_or_Paper_Jar\">Current Spigot or Paper Jar</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Minecraft_1.8&amp;action=edit&amp;section=3\" title=\"Edit section: Current Spigot or Paper Jar\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>You will of course need to gather the latest Spigot or Paper version. The easiest way is to just download Paper from <a rel=\"nofollow\" class=\"external free\" href=\"https://papermc.io/downloads\">https://papermc.io/downloads</a> (Paper is a fork of Spigot that's easier to install and runs better, but is completely compatible with Spigot plugins).\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Letting_In_Older_Clients\">Letting In Older Clients</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Minecraft_1.8&amp;action=edit&amp;section=4\" title=\"Edit section: Letting In Older Clients\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>To allow older clients to connect, you can make use of a protocol plugins.\n</p>\n<ul><li>One such plugin is \"ProtocolSupport\", found here: <a rel=\"nofollow\" class=\"external free\" href=\"https://www.spigotmc.org/resources/protocolsupport.7201/\">https://www.spigotmc.org/resources/protocolsupport.7201/</a></li>\n<li>You can also consider one called \"ViaRewind\", which is an extension of the plugin \"ViaBackwards\". These are reverse-direction versions of popular plugin \"ViaVersion\". You can find this plugin here: <a rel=\"nofollow\" class=\"external free\" href=\"https://www.spigotmc.org/resources/viarewind.52109/\">https://www.spigotmc.org/resources/viarewind.52109/</a></li></ul>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Legacy-Style_PvP\">Legacy-Style PvP</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Minecraft_1.8&amp;action=edit&amp;section=5\" title=\"Edit section: Legacy-Style PvP\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>To enable older style PvP, there are various options available, such as this: <a rel=\"nofollow\" class=\"external free\" href=\"https://www.spigotmc.org/resources/oldcombatmechanics-disable-1-9-hit-cooldown.19510/\">https://www.spigotmc.org/resources/oldcombatmechanics-disable-1-9-hit-cooldown.19510/</a> or just search the Spigot resources section for \"1.8 PvP\" and pick your favorite.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Note_If_You_Don't_Follow_This_Guide\"><span id=\"Note_If_You_Don.27t_Follow_This_Guide\"></span>Note If You Don't Follow This Guide</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Minecraft_1.8&amp;action=edit&amp;section=6\" title=\"Edit section: Note If You Don&#39;t Follow This Guide\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>If you run a 1.8 Minecraft server, and do not follow this guide to update your server (instead keeping the old version), we maintained back-support for 9 years, but time has long since come, and <b>you will NOT get any support</b> from helpers with any questions/etc you may have.\n</p><p><s><b>Citizens and related plugins</b> (Sentinel, etc.) <b>all function fully in their current versions</b> (latest releases and dev <a href=\"/Versions\" title=\"Versions\">versions</a>) <b>on 1.8.8 Spigot servers</b>, however you may not have all features available (primarily those that only work in newer Minecraft versions anyway), and if something goes wrong (such as an error message appearing), there's no guarantee we can do much to help with the issue.\n</s></p><p><s><b>Denizen</b> is an exception, and does not support 1.8 any longer.</s>\n</p><p>Our plugins as of 2024 no longer work at all on such ancient versions.\n</p><p>The important thing here is that Minecraft 1.8 is <b>10+ years old</b> at this point and continuing to age, it's nonsense to run a version that old - especially when, as you can see from the information above, you don't need to run that old version on your server to get any of the popular features of 1.8 minecraft.\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145903\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.035 seconds\nReal time usage: 0.055 seconds\nPreprocessor visited node count: 18/1000000\nRevision size: 3215/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 9f81a3e5-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Versions"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Additional Warning",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Minecraft_1.8",
+        "byteoffset": 615,
+        "anchor": "Additional_Warning",
+        "linkAnchor": "Additional_Warning"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "How To Update Properly",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Minecraft_1.8",
+        "byteoffset": 923,
+        "anchor": "How_To_Update_Properly",
+        "linkAnchor": "How_To_Update_Properly"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Current Spigot or Paper Jar",
+        "number": "2.1",
+        "index": "3",
+        "fromtitle": "Minecraft_1.8",
+        "byteoffset": 953,
+        "anchor": "Current_Spigot_or_Paper_Jar",
+        "linkAnchor": "Current_Spigot_or_Paper_Jar"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Letting In Older Clients",
+        "number": "2.2",
+        "index": "4",
+        "fromtitle": "Minecraft_1.8",
+        "byteoffset": 1257,
+        "anchor": "Letting_In_Older_Clients",
+        "linkAnchor": "Letting_In_Older_Clients"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Legacy-Style PvP",
+        "number": "2.3",
+        "index": "5",
+        "fromtitle": "Minecraft_1.8",
+        "byteoffset": 1729,
+        "anchor": "Legacy-Style_PvP",
+        "linkAnchor": "Legacy-Style_PvP"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Note If You Don't Follow This Guide",
+        "number": "3",
+        "index": "6",
+        "fromtitle": "Minecraft_1.8",
+        "byteoffset": 2002,
+        "anchor": "Note_If_You_Don't_Follow_This_Guide",
+        "linkAnchor": "Note_If_You_Don't_Follow_This_Guide"
+      }
+    ],
+    "showtoc": ""
+  }
+}

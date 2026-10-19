@@ -1,0 +1,33 @@
+[
+  {
+    "file": "wiki/readme.md",
+    "title": "Vault 安装与项目说明",
+    "source_url": "https://github.com/MilkBowl/Vault/blob/460cb21c6215433da526192720de40b6662f5f99/README.md",
+    "source_file": "sources/wiki/original/readme.md",
+    "source_sha256": "29579c7be382cc638c9c7f7d631b1b8662c9a365022d574b50662d1df2f672f0",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-page.md",
+    "title": "Vault 官方使用说明",
+    "source_url": "https://dev.bukkit.org/projects/vault",
+    "source_file": "sources/wiki/original/plugin-page.md",
+    "source_sha256": "5d726d1d0d819ee1fda75640e5ff8c7d04cbfb6a98b807609ce58c8dc5d82732",
+    "translation_review": "reviewed",
+    "source_exclusions": [
+      {
+        "start_line": 55,
+        "end_line": 111,
+        "reason": "API/SDK 接入参考；具体排除范围见 wiki-coverage.json"
+      }
+    ]
+  },
+  {
+    "file": "wiki/using-vault.md",
+    "title": "使用 Vault 的插件（历史列表）",
+    "source_url": "https://dev.bukkit.org/projects/vault/pages/using-vault",
+    "source_file": "sources/wiki/original/using-vault.md",
+    "source_sha256": "99509911a666710b5c4579b8263eeecf420c5d74d9c57db5cf58ec753904a29e",
+    "translation_review": "reviewed"
+  }
+]

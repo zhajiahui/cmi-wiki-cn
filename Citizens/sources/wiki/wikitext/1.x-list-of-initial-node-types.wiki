@@ -1,0 +1,118 @@
+{{NoSupport}}
+=Initial node=
+
+The initials node is used in [[Quests.yml]] to perform actions when the quest starts. 
+
+Initials are laid out much like rewards. Here's an example:
+
+<pre>initial:
+    '0':
+        type: item     # Gives an item when conditions are met.
+        id: 268        # wooden_sword
+        amount: 1   
+        take: false    # Optional. By default, take: is false.
+</pre>
+
+You may have multiple initials.
+
+=Initial Types=
+==Command==
+
+Command node (command:) - executes a command.
+Specified by the command: node. Use <player> as a variable that will be replaced with the name of the player. Use <world> as a variable that will be replaced with the name of the world the player is currently in. Use server: true to execute the command from the console.
+
+<pre>'0':
+    type: command
+    command: give <player> 1 100
+    server: true
+</pre>
+
+
+==NPC==
+
+NPC node (npc:) - grants an npc to a player.
+Uses a name: node to specify the name of the npc, and a comma-separated list of toggles in the types: node (eg. trader,quester,guard). Will create an NPC owned by the player who started the quest, with a generated UID.
+
+<pre>'0':
+    type: npc
+    npcid: 1   # optional - gives the ownership of npc specified by this id to the player
+    name: 'Bill'
+    types: 'guard,trader,quester'
+    location:
+        x: 10
+        y: 10
+        z: -50
+        world: 'world'</pre>
+
+
+==Rank==
+
+Rank node (rank) - grants a group ('rank') to a player.
+Specified by the rank: node.
+
+<pre>'0':
+    type: rank
+    rank: 'admin'</pre>
+
+
+==Permission==
+
+Permission node (permission) - grants a permission to a player.
+Specified by the permission: node.
+
+<pre>'0':
+    type: permission
+    permission: 'quests.admin'
+</pre>
+
+
+==Item==
+
+Item node (item) - gives an item to a player.
+Loaded from the item: nodes.
+
+
+<pre>'0':
+    type: item
+    item:
+        id: 10
+        amount: 50
+        data: 0</pre>
+
+==Health==
+
+Health node (health) - gives health to a player.
+Loaded from the amount: node.
+
+<pre>
+'0':
+    type: health
+    amount: 10
+</pre>
+
+
+==Money==
+
+Money node (money) - gives money to a player.
+Loaded from the money: node.
+
+<pre>'0':
+    type: money
+    money: 100</pre>
+
+
+==Teleport==
+
+Teleport node (teleport) - teleports a player to a location.
+Loaded from the location: node.
+
+<pre>'0':
+    type: teleport
+    location:
+        x: 10
+        y: 50
+        z: -10
+        world: 'rivers'</pre>
+
+{{NavBox}}
+[[Category:Citizens1]]

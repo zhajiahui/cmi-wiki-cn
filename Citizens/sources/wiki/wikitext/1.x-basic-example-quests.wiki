@@ -1,0 +1,44 @@
+{{NoSupport}}
+==Daily Collection Quest==
+
+Written by AlaisXNeo.
+
+<pre>
+"Daily Collection":
+    texts:
+        description: "<g>Daily: <y> Collect daily materials for a reward!"   # Uses color codes to color text
+        completion: "Thanks! <g>You have gained 100 exp and 150 pavias for completing the quest."
+        acceptance: "Great! Please check the quest status to see the materials I need."
+    repeats: -1   # May be repeated an unlimited amount of times.
+    delay: 1440   # 1440 minutes is equal to 24 hours.  Cannot repeat until this amount of time.
+    objectives:
+        '0':
+            '0':
+                type: collect     # First objective is a collection quest.
+                materialid: 263   # Coal_Ore
+                amount: 10        # Must collect 10.
+                message: "That's enough coal!"
+        '1':
+            '0':                  # First objective must be complete in order to complete this objective.
+                type: collect     # Second objective also a collection quest.
+                materialid: 15    # Iron_Ore
+                amount: 5
+                message: "That's enough iron!"
+        '2':
+            '0':
+                type: collect     # Another collection objective.
+                materialid: 17    # Log
+                amount: 15
+                message: "That's enough wood!"
+    rewards:
+        '0':
+            type: money      # Rewards the player money when objectives are complete.
+            money: 150            
+        '1':
+            type: command    # Executes a command for reward
+            command: xp <player> 100    # Gives the player 100 experience 
+            server: true     # Uses console permission to execute the command.
+</pre>
+
+{{NavBox}}
+[[Category:Citizens1]]

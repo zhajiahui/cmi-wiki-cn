@@ -1,0 +1,16 @@
+__NOTOC__
+Welcome to the Citizens Wiki! {{InfoBox}}
+Citizens is a popular Minecraft server plugin that allows you to create non player characters (NPCs) to provide varied gameplay and functionality for your server such as basic statues, shopkeepers, guards, scriptable NPCs and much more.
+
+{{FNavBox}}
+
+==Features==
+* NPCs can walk, stand and talk naturally to players.
+* Easy to use [[API]] for developers that allow [[Traits]] to be built for specific functionality.
+* [[Types|Support for all mob types]] including Players, Pigs, and even non living ones like dropped items or arrow projectiles. 
+* [[Commands]] Extensive commands to customise NPCs.
+* [[Controllable NPCs|Ridable NPCs]].
+* Text editing.
+* Basic GUI shops.
+* Pathing.
+* Much more.

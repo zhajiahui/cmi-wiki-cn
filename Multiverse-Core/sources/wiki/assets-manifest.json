@@ -1,0 +1,200 @@
+[
+  {
+    "source_url": "https://img.shields.io/badge/Github%20Sponsor-Donate-pink?logo=githubsponsors",
+    "pages": [
+      "core"
+    ],
+    "file": "docs/wiki/assets/b0c4c22603c1-Github_Sponsor-Donate-pink.svg",
+    "status": "saved",
+    "sha256": "ccfcb683dbd69de9bf742ef08ba7da10429c97fd95cf300ff258c26cd0314aac",
+    "bytes": 2544,
+    "content_type": "image/svg+xml;charset=utf-8"
+  },
+  {
+    "source_url": "https://img.shields.io/badge/Open%20Collective-Donate-blue?style=flat&logo=opencollective",
+    "pages": [
+      "core"
+    ],
+    "file": "docs/wiki/assets/c88de8d2013c-Open_Collective-Donate-blue.svg",
+    "status": "saved",
+    "sha256": "76e0e2b3b30d76fe9ab81b21286dc6129622fe60527e160853a97aaf34544f7f",
+    "bytes": 1991,
+    "content_type": "image/svg+xml;charset=utf-8"
+  },
+  {
+    "source_url": "https://img.shields.io/discord/325459248047980545?label=Discord&logo=discord",
+    "pages": [
+      "core"
+    ],
+    "file": "docs/wiki/assets/d196059c8031-325459248047980545.svg",
+    "status": "saved",
+    "sha256": "c88dde9b90173b95464843132e199292839061abd3b757293bea14ded665ffca",
+    "bytes": 3234,
+    "content_type": "image/svg+xml;charset=utf-8"
+  },
+  {
+    "source_url": "https://img.shields.io/github/v/release/multiverse/multiverse-core",
+    "pages": [
+      "core"
+    ],
+    "file": "docs/wiki/assets/0db1ea896651-multiverse-core.svg",
+    "status": "saved",
+    "sha256": "680bccd101720c406fa1bd651a84e50a66911dfa4e468a851bf56ed2bfcc882a",
+    "bytes": 1290,
+    "content_type": "image/svg+xml;charset=utf-8"
+  },
+  {
+    "source_url": "https://img.shields.io/github/v/release/multiverse/multiverse-core?include_prereleases&label=Pre-release",
+    "pages": [
+      "core"
+    ],
+    "file": "docs/wiki/assets/ec82d4d943da-multiverse-core.svg",
+    "status": "saved",
+    "sha256": "ddbf781c3f10aa334a46758642926e0e73867aeeb5e7780916627e753fda8075",
+    "bytes": 1346,
+    "content_type": "image/svg+xml;charset=utf-8"
+  },
+  {
+    "source_url": "https://mvplugins.org/core/banner.png",
+    "pages": [
+      "core"
+    ],
+    "file": "docs/wiki/assets/cbddfec5133c-banner.png",
+    "status": "saved",
+    "sha256": "d9aed3e046eb38cf367d0623367ec38d4c46bd766d58d982dd74e700b638112e",
+    "bytes": 169520,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://mvplugins.org/core/basics/danger-command.png",
+    "pages": [
+      "core-fundamentals-basic-usage"
+    ],
+    "file": "docs/wiki/assets/bbba0a19b37b-danger-command.png",
+    "status": "saved",
+    "sha256": "49507151c2c7da375356502512a9a7f6d6bc8a938714e2c1c5012ce0a2d2a090",
+    "bytes": 204447,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://mvplugins.org/core/basics/import-complete.png",
+    "pages": [
+      "core-fundamentals-basic-usage"
+    ],
+    "file": "docs/wiki/assets/1823937f6b58-import-complete.png",
+    "status": "saved",
+    "sha256": "b000a6a5eb2529d4bc6cc1e48ab038b9c318da182658b0760d15d99bb42d0671",
+    "bytes": 194941,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://mvplugins.org/core/basics/import-world.png",
+    "pages": [
+      "core-fundamentals-basic-usage"
+    ],
+    "file": "docs/wiki/assets/3d4d242569f3-import-world.png",
+    "status": "saved",
+    "sha256": "a3a30dc6fe80b14a192060e93a65d2a828173d92ef188a84ea8aced18771f211",
+    "bytes": 190755,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://mvplugins.org/core/command-reference/example-world-list.png",
+    "pages": [
+      "core-fundamentals-commands-usage"
+    ],
+    "file": "docs/wiki/assets/c56e67e4035c-example-world-list.png",
+    "status": "saved",
+    "sha256": "916c0df6b6b0e73760c6f14c38b17d0cde1346372ae80c5d2e2cfb86aff11025",
+    "bytes": 2191855,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://mvplugins.org/core/command-reference/mvinfo.png",
+    "pages": [
+      "core-fundamentals-commands-usage"
+    ],
+    "file": "docs/wiki/assets/6a07680c2788-mvinfo.png",
+    "status": "saved",
+    "sha256": "dc762567e4cc96b20834a35b1514b8a742db95be294d6a42b963830da7653fef",
+    "bytes": 1348999,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://mvplugins.org/core/command-reference/mvwhoall.png",
+    "pages": [
+      "core-fundamentals-commands-usage"
+    ],
+    "file": "docs/wiki/assets/abcbd1df33b5-mvwhoall.png",
+    "status": "saved",
+    "sha256": "c6f40f3eb1960efef0241ee9dcab534b43a70bff5dbe7d4b008fd4aab391b9dd",
+    "bytes": 258933,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://mvplugins.org/core/faq/cmi_respawn.png",
+    "pages": [
+      "core-reference-faq"
+    ],
+    "file": "docs/wiki/assets/be65c4e01a68-cmi_respawn.png",
+    "status": "saved",
+    "sha256": "4c0aaa32939db0fdbb3daf054c835cb91a15d9951cd6077b67290ad5bc7499ad",
+    "bytes": 108868,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://mvplugins.org/core/how-to/customise-locales/locale-example.png",
+    "pages": [
+      "core-how-to-customise-locales"
+    ],
+    "file": "docs/wiki/assets/fc48bda396d6-locale-example.png",
+    "status": "saved",
+    "sha256": "be78278c50c1969d08c03e3a9ea4ad167137ed6aacf6f6049725ef780d876ee8",
+    "bytes": 49565,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://mvplugins.org/core/installation/folder.png",
+    "pages": [
+      "core-fundamentals-installation"
+    ],
+    "file": "docs/wiki/assets/9cd11fddbbb9-folder.png",
+    "status": "saved",
+    "sha256": "410984fa8416071de8bb8934a100ce70b58f166d9f232eaf01ae79cf39a28649",
+    "bytes": 64800,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://mvplugins.org/core/world-properties/world-with-color.png",
+    "pages": [
+      "core-fundamentals-world-properties"
+    ],
+    "file": "docs/wiki/assets/867349695ac4-world-with-color.png",
+    "status": "saved",
+    "sha256": "a736b16a7a6243144ba66f67f070ed3d63e472f0fef715da1677743b374604e4",
+    "bytes": 319937,
+    "content_type": "image/png"
+  },
+  {
+    "source_url": "https://mvplugins.org/multiverse5-long.svg",
+    "pages": [
+      "mv5"
+    ],
+    "file": "docs/wiki/assets/3bbbbccd8c29-multiverse5-long.svg",
+    "status": "saved",
+    "sha256": "c8902fe3f21d39eedc9ef91098570aad7445b42b6c7806a8e42fc33cc437a4ff",
+    "bytes": 53870,
+    "content_type": "image/svg+xml"
+  },
+  {
+    "source_url": "https://user-images.githubusercontent.com/8557785/63812440-069a6a00-c8f0-11e9-9264-29e4082ba8cd.png",
+    "pages": [
+      "core-fundamentals-commands-usage"
+    ],
+    "file": "docs/wiki/assets/e026b269c9c1-63812440-069a6a00-c8f0-11e9-9264-29e4082ba8cd.png",
+    "status": "saved",
+    "sha256": "c936c616ae622a92c35a5a58886bc3e19eb66d6fa67025f1ea9ebd13c2051745",
+    "bytes": 215472,
+    "content_type": "image/png"
+  }
+]

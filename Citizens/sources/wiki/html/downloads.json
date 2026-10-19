@@ -1,0 +1,32 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Downloads",
+    "pageid": 299,
+    "revid": 5453,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>Here you can download the proper version of Citizens 2 for your version of Spigot.\n</p><p>See <a href=\"/Installation\" title=\"Installation\">Installation</a> for further instructions.\n</p><p>See <a href=\"/Characters\" title=\"Characters\">Characters</a> for links to individual NPC types.\n</p><p><b>Spigot release builds</b>: <a rel=\"nofollow\" class=\"external free\" href=\"https://www.spigotmc.org/resources/citizens.13811/\">https://www.spigotmc.org/resources/citizens.13811/</a>\n</p><p><b>Dev builds</b>: <a rel=\"nofollow\" class=\"external free\" href=\"https://ci.citizensnpcs.co/job/Citizens2/\">https://ci.citizensnpcs.co/job/Citizens2/</a>\n</p><p><b>Historical versions list</b>: <a rel=\"nofollow\" class=\"external free\" href=\"https://wiki.citizensnpcs.co/Versions\">https://wiki.citizensnpcs.co/Versions</a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145856\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.006 seconds\nReal time usage: 0.008 seconds\nPreprocessor visited node count: 1/1000000\nRevision size: 399/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 1/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 9b558664-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      }
+    ],
+    "images": [],
+    "sections": []
+  }
+}

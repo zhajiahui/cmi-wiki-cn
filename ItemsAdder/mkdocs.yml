@@ -1,6 +1,348 @@
 site_name: ItemsAdder 中文资料
 nav:
 - 插件说明: index.md
+- 插件 Wiki:
+  - 欢迎界面: wiki/index.md
+  - 常见问题:
+    - 概述: wiki/faq.md
+    - 资源包未正确加载: wiki/faq/identify-why-textures-are-not-shown.md
+    - 插件不起作用: wiki/faq/plugin-doesnt-work.md
+    - 矩形字符: wiki/faq/rectangle-character.md
+    - 1.21.5+ 移除物品栏槽位高亮: wiki/faq/1.21.5+-remove-inventory-highlight-slot.md
+    - 1.21.11 - 模型使用了多个纹理图集（Multiple atlases used in model）: wiki/faq/multiple-atlases-used-in-model.md
+    - 盔甲问题:
+      - 概述: wiki/faq/armors-issues.md
+      - 盔甲纹理与光影模组不兼容: wiki/faq/armors-issues/armors-textures-not-working-with-shaders-mod.md
+      - 动画和发光效果不起作用: wiki/faq/armors-issues/armors-animation-and-emission-not-working.md
+      - 皮革盔甲纹理有金属质感: wiki/faq/armors-issues/leather-armor-texture-overwritten.md
+      - 盔甲发光轮廓问题: wiki/faq/armors-issues/armor-glow-outline-bug.md
+      - 盔甲 - Unable to fit - try a lower resolution resourcepack: wiki/faq/armors-issues/armor-unable-to-fit-try-a-lower-resolution-resourcepack.md
+      - 使用 PackSquash 后盔甲不起作用: wiki/faq/armors-issues/armors-not-working-packsquash.md
+    - 不播放方块粒子效果: wiki/faq/block-particles-not-playing.md
+    - Blockbench 错误: wiki/faq/common-errors.md
+    - Bungeecord / Velocity:
+      - 概述: wiki/faq/bungeecord-velocity.md
+      - 切换服务器时移除资源包: wiki/faq/bungeecord-velocity/remove-pack-on-server-change.md
+      - 在 BungeeCord 和 Velocity 上使用单个资源包: wiki/faq/bungeecord-velocity/single-resourcepack-bungeecord.md
+      - Bungeecord 单一资源包不同功能: wiki/faq/bungeecord-velocity/single-resourcepack-multiple-server.md
+    - 无法更改音符盒音高: wiki/faq/cant-change-noteblock-note.md
+    - 无法解压资源包文件: wiki/faq/cant-extract-the-resourcepack-file.md
+    - 我找不到任何矿物/矿石: wiki/faq/i-cant-find-any-mineral-ore.md
+    - 无法在家具上放置物品展示框: wiki/faq/cant-place-itemframe-on-furniture.md
+    - 无法在聊天中输入和无法移动: wiki/faq/cant-write-in-chat-and-cant-move.md
+    - Citizens NPC 不旋转头部: wiki/faq/citizens-npc-doesnt-rotate-head.md
+    - 'CompletionException: z: Stitching': wiki/faq/completionexception-z-stitching.md
+    - 我看到远处的纹理不连贯！: wiki/faq/i-see-crisp-textures-far-away.md
+    - 禁用方块: wiki/faq/disable-blocks.md
+    - 表情动作问题: wiki/faq/emotes-issues.md
+    - 🦴 表情动作与更多关节: wiki/faq/emotes-with-more-joins.md
+    - 下载 Minecraft 资源失败: wiki/faq/failed-to-download-minecraft-assets.md
+    - 无法加载所需的着色器程序（Failed to load required shader programs）: wiki/faq/failed-to-load-required-shader-programs.md
+    - Geyser: wiki/faq/geyser.md
+    - 方块显示异常: wiki/faq/glitched-blocks.md
+    - 1.21.3 及更旧版本上的 graphics 和 item\_model: wiki/faq/graphics-and-item_model-on-1.21.3-and-lower.md
+    - 无法移除家具和载具: wiki/faq/i-cant-remove-furnitures-and-vehicles.md
+    - 我看不到表情、自定义界面、HUD等: wiki/faq/i-cant-see-emoji-guis-huds-etc..md
+    - 我删除了方块，但系统仍然提示我使用了所有的ID: wiki/faq/i-removed-blocks-but-keep-saying-that-i-used-all-the-ids.md
+    - ItemsAdder v4: wiki/faq/itemsadder-v4.md
+    - 加入或传送后唱片机不播放: wiki/faq/jukeboxes-do-not-play-on-join-or-teleport.md
+    - 加入时由于飞行被踢出: wiki/faq/kick-flight-on-join.md
+    - 液体问题: wiki/faq/liquids-issues.md
+    - ModelEngine 与 ItemsAdder: wiki/faq/modelengine-vs-itemsadder.md
+    - 放置的头颅纹理出现故障: wiki/faq/placed-heads-texture-glitched.md
+    - 玩家使用了不同的协议版本: wiki/faq/player-is-using-a-different-protocol-version.md
+    - 配方书问题: wiki/faq/recipes-book-problems.md
+    - 移除默认内容: wiki/faq/removing-default-content.md
+    - 台阶、楼梯、门等: wiki/faq/slabs-stairs-tridents-elytra-etc..md
+    - 口渴/魔力条: wiki/faq/fill-thirst-mana-bar.md
+    - 🇹🇷 🇹🇷 土耳其语电脑错误: wiki/faq/turkish-computer-errors.md
+  - 与其他插件的兼容性:
+    - 概述: wiki/compatibility-with-other-plugins.md
+    - 不兼容: wiki/compatibility-with-other-plugins/not-compatible.md
+    - 兼容:
+      - 概述: wiki/compatibility-with-other-plugins/compatible.md
+      - AdditionsPlus: wiki/compatibility-with-other-plugins/compatible/additionsplus.md
+      - AdvancedEnchantments: wiki/compatibility-with-other-plugins/compatible/advancedenchantments.md
+      - AdvancedOreGen: wiki/compatibility-with-other-plugins/compatible/advancedoregen.md
+      - AnimatedScoreboard: wiki/compatibility-with-other-plugins/compatible/animatedscoreboard.md
+      - Authme: wiki/compatibility-with-other-plugins/compatible/authme.md
+      - BanItem: wiki/compatibility-with-other-plugins/compatible/banitem.md
+      - BentoBox: wiki/compatibility-with-other-plugins/compatible/bentobox.md
+      - BetonQuest: wiki/compatibility-with-other-plugins/compatible/betonquest.md
+      - BossShop: wiki/compatibility-with-other-plugins/compatible/bossshop.md
+      - ChatControl-Red: wiki/compatibility-with-other-plugins/compatible/chatcontrol-red.md
+      - Citizens: wiki/compatibility-with-other-plugins/compatible/citizens.md
+      - ClueScrolls: wiki/compatibility-with-other-plugins/compatible/cluescrolls.md
+      - CMI: wiki/compatibility-with-other-plugins/compatible/cmi.md
+      - CosmeticsCore: wiki/compatibility-with-other-plugins/compatible/cosmeticscore.md
+      - CraftEnhance: wiki/compatibility-with-other-plugins/compatible/craftenhance.md
+      - CustomCrafting: wiki/compatibility-with-other-plugins/compatible/customcrafting.md
+      - DailyShop: wiki/compatibility-with-other-plugins/compatible/dailyshop.md
+      - DecentHolograms: wiki/compatibility-with-other-plugins/compatible/decentholograms.md
+      - DeluxeMenu: wiki/compatibility-with-other-plugins/compatible/deluxemenu.md
+      - DimensionsAddons: wiki/compatibility-with-other-plugins/compatible/dimensionsaddons.md
+      - EcoArmor: wiki/compatibility-with-other-plugins/compatible/ecoarmor.md
+      - EcoEnchants: wiki/compatibility-with-other-plugins/compatible/ecoenchants.md
+      - EcoItems: wiki/compatibility-with-other-plugins/compatible/ecoitems.md
+      - EcoBosses: wiki/compatibility-with-other-plugins/compatible/ecomobs.md
+      - EpicBackpacks: wiki/compatibility-with-other-plugins/compatible/epicbackpacks.md
+      - ExcellentEnchants: wiki/compatibility-with-other-plugins/compatible/excellentenchants.md
+      - ExecutableBlocks: wiki/compatibility-with-other-plugins/compatible/executableblocks.md
+      - ExecutableItems: wiki/compatibility-with-other-plugins/compatible/executableitems.md
+      - FancyWaystones: wiki/compatibility-with-other-plugins/compatible/fancywaystones.md
+      - Graves: wiki/compatibility-with-other-plugins/compatible/graves.md
+      - GriefPreventionStickFix: wiki/compatibility-with-other-plugins/compatible/griefpreventionstickfix.md
+      - HeadsAnywhere 兼容: wiki/compatibility-with-other-plugins/compatible/headsanywhere.md
+      - HMCCosmetics: wiki/compatibility-with-other-plugins/compatible/hmccosmetics.md
+      - Holographic Displays: wiki/compatibility-with-other-plugins/compatible/holographic-displays.md
+      - HyperStones: wiki/compatibility-with-other-plugins/compatible/hyperstones.md
+      - InteractionVisualizer: wiki/compatibility-with-other-plugins/compatible/interactionvisualizer.md
+      - InteractiveChat: wiki/compatibility-with-other-plugins/compatible/interactivechat.md
+      - Iris: wiki/compatibility-with-other-plugins/compatible/iris.md
+      - ItemBridge: wiki/compatibility-with-other-plugins/compatible/itembridge.md
+      - ItemFrameShops: wiki/compatibility-with-other-plugins/compatible/itemframeshops.md
+      - JetsPrisonMines: wiki/compatibility-with-other-plugins/compatible/ore-regenerator-1.md
+      - LootChest: wiki/compatibility-with-other-plugins/compatible/lootchest.md
+      - Mimic: wiki/compatibility-with-other-plugins/compatible/mimic.md
+      - MMOItems:
+        - 概述: wiki/compatibility-with-other-plugins/compatible/mmoitems.md
+        - 修复方块问题: wiki/compatibility-with-other-plugins/compatible/mmoitems/fix-blocks-problem.md
+      - ModelEngine: wiki/compatibility-with-other-plugins/compatible/modelengine.md
+      - Mythicmobs: wiki/compatibility-with-other-plugins/compatible/mythicmobs.md
+      - Nova: wiki/compatibility-with-other-plugins/compatible/nova.md
+      - Ore Regenerator: wiki/compatibility-with-other-plugins/compatible/ore-regenerator.md
+      - Ouroboros-Mines: wiki/compatibility-with-other-plugins/compatible/ouroboros-mines.md
+      - RealisticWorldGenerator: wiki/compatibility-with-other-plugins/compatible/realisticworldgenerator.md
+      - Recipe Control: wiki/compatibility-with-other-plugins/compatible/recipe-control.md
+      - Reforges: wiki/compatibility-with-other-plugins/compatible/reforges.md
+      - RPG Chest Premium: wiki/compatibility-with-other-plugins/compatible/rpg-chest-premium.md
+      - RPGBank: wiki/compatibility-with-other-plugins/compatible/rpgbank.md
+      - RPGInventory: wiki/compatibility-with-other-plugins/compatible/rpginventory.md
+      - RPGMoney: wiki/compatibility-with-other-plugins/compatible/rpgmoney.md
+      - Scoreboard-revision: wiki/compatibility-with-other-plugins/compatible/scoreboard.md
+      - ShopGUI+: wiki/compatibility-with-other-plugins/compatible/shopgui+.md
+      - SkinsRestorer: wiki/compatibility-with-other-plugins/compatible/skinsrestorer.md
+      - Slimefun4: wiki/compatibility-with-other-plugins/compatible/slimefun4.md
+      - Space: wiki/compatibility-with-other-plugins/compatible/space.md
+      - Spartan Anti Cheat: wiki/compatibility-with-other-plugins/compatible/spartan-anti-cheat.md
+      - StatTrackers: wiki/compatibility-with-other-plugins/compatible/stattrackers.md
+      - TAB: wiki/compatibility-with-other-plugins/compatible/tab.md
+      - Talismans: wiki/compatibility-with-other-plugins/compatible/talismans.md
+      - TrMenu: wiki/compatibility-with-other-plugins/compatible/trmenu.md
+      - ValhallaMMO: wiki/compatibility-with-other-plugins/compatible/valhallammo.md
+      - ValhallaTrinkets: wiki/compatibility-with-other-plugins/compatible/valhallatrinkets.md
+      - Wailat: wiki/compatibility-with-other-plugins/compatible/wailat.md
+      - WorldEdit: wiki/compatibility-with-other-plugins/compatible/worldedit.md
+      - WorldGuard: wiki/compatibility-with-other-plugins/compatible/worldguard-flags.md
+  - 贡献:
+    - 概述: wiki/contribute.md
+    - 编辑英文 wiki: wiki/contribute/edit-the-english-wiki.md
+    - 翻译此 wiki: wiki/contribute/translate-this-wiki.md
+    - 预览更改: wiki/contribute/preview-wiki-changes.md
+  - 插件使用:
+    - 首次安装: wiki/plugin-usage/first-install.md
+    - 新手入门:
+      - 概述: wiki/plugin-usage/beginners.md
+      - 视频教程: wiki/plugin-usage/beginners/video-tutorials.md
+      - 文件编辑器: wiki/plugin-usage/beginners/files-editor.md
+      - 内容文件夹: wiki/plugin-usage/beginners/configs-and-resourcepack.md
+      - 资源包提示: wiki/plugin-usage/beginners/fast-resourcepack-tips.md
+      - 文本格式: wiki/plugin-usage/beginners/text-formatting.md
+      - 我的第一把剑: wiki/plugin-usage/beginners/sword.md
+      - 我的第一个方块: wiki/plugin-usage/beginners/my-first-block.md
+      - 我的第一把弓: wiki/plugin-usage/beginners/my-first-bow.md
+    - 插件配置:
+      - 概述: wiki/plugin-usage/plugin-configuration.md
+      - 资源包托管:
+        - 概述: wiki/plugin-usage/plugin-configuration/resourcepack-hosting.md
+        - 简易自托管: wiki/plugin-usage/plugin-configuration/resourcepack-hosting/simple-self-host.md
+        - LobFile 托管: wiki/plugin-usage/plugin-configuration/resourcepack-hosting/lobfile.md
+        - 自托管: wiki/plugin-usage/plugin-configuration/resourcepack-hosting/self-hosting.md
+        - Google Drive: wiki/plugin-usage/plugin-configuration/resourcepack-hosting/google-drive.md
+        - DropBox: wiki/plugin-usage/plugin-configuration/resourcepack-hosting/dropbox.md
+        - OneDrive: wiki/plugin-usage/plugin-configuration/resourcepack-hosting/onedrive.md
+        - 不托管: wiki/plugin-usage/plugin-configuration/resourcepack-hosting/no-host.md
+      - 命令:
+        - 概述: wiki/plugin-usage/plugin-configuration/commands.md
+        - iaconfig: wiki/plugin-usage/plugin-configuration/commands/iaconfig.md
+        - iarename: wiki/plugin-usage/plugin-configuration/commands/iarename.md
+        - iaimage: wiki/plugin-usage/plugin-configuration/commands/iaimage.md
+        - 在命令中使用原版选择器: wiki/plugin-usage/plugin-configuration/commands/use-vanilla-selectors-in-commands.md
+      - 权限: wiki/plugin-usage/plugin-configuration/permissions.md
+      - 语言: wiki/plugin-usage/plugin-configuration/languages.md
+      - 配方菜单: wiki/plugin-usage/plugin-configuration/recipes-menu.md
+      - 资源包提示信息: wiki/plugin-usage/plugin-configuration/resourcepack-prompt-message-1.17+.md
+      - 物品更新器: wiki/plugin-usage/plugin-configuration/items-updater.md
+  - 添加内容:
+    - 物品:
+      - 概述: wiki/adding-content/items.md
+      - 物品属性:
+        - 概述: wiki/adding-content/items/item-properties.md
+        - 基础属性: wiki/adding-content/items/item-properties/basic.md
+        - 权限: wiki/adding-content/items/item-properties/permission.md
+        - 资源: wiki/adding-content/items/item-properties/resource.md
+        - 事件:
+          - 概述: wiki/adding-content/items/item-properties/events.md
+          - 事件列表: wiki/adding-content/items/item-properties/events/events-list.md
+        - 动作:
+          - 概述: wiki/adding-content/items/item-properties/actions.md
+          - 动作列表: wiki/adding-content/items/item-properties/actions/actions.md
+        - 行为:
+          - 概述: wiki/adding-content/items/item-properties/behaviours.md
+          - 行为列表: wiki/adding-content/items/item-properties/behaviours/behaviours-list.md
+        - 模板与变体: wiki/adding-content/items/item-properties/templates-and-variants.md
+        - 2D 图标: wiki/adding-content/items/item-properties/2d-icon.md
+        - 发光效果: wiki/adding-content/items/item-properties/light-emission.md
+        - 物品提示框: wiki/adding-content/items/item-properties/item-tooltip.md
+        - 自定义物品 NBT: wiki/adding-content/items/item-properties/custom-item-nbt.md
+        - 组件（ItemsAdderAdditions）: wiki/adding-content/items/item-properties/components.md
+      - 1.21.4+：现代物品创建: wiki/adding-content/items/modern-items-creation.md
+      - 物品模型定义（ItemsAdderAdditions）: wiki/adding-content/items/item-model-definitions.md
+      - 消耗品: wiki/adding-content/items/consumable.md
+      - 弓: wiki/adding-content/items/bow.md
+      - 弩: wiki/adding-content/items/crossbow.md
+      - 钓鱼竿与盾牌: wiki/adding-content/items/fishing-rod-shield-bundle.md
+      - 盔甲: wiki/adding-content/items/armors.md
+      - 鞘翅: wiki/adding-content/items/elytra.md
+      - 三叉戟: wiki/adding-content/items/tridents.md
+      - 收纳袋: wiki/adding-content/items/bundle.md
+      - 长矛: wiki/adding-content/items/spear.md
+      - 燃料: wiki/adding-content/items/fuel.md
+      - 动态 3D 物品: wiki/adding-content/items/animated-3d-items.md
+      - 书与笔: wiki/adding-content/items/writable-book.md
+      - 其他物品示例:
+        - 概述: wiki/adding-content/items/other-items-examples.md
+        - 魔杖: wiki/adding-content/items/other-items-examples/magic-wand.md
+        - 收纳袋: wiki/adding-content/items/other-items-examples/bundle.md
+        - 自定义箭矢: wiki/adding-content/items/other-items-examples/custom-arrows.md
+    - 方块:
+      - 概述: wiki/adding-content/blocks.md
+      - 方块的 2D 图标: wiki/adding-content/blocks/block-2d-icon.md
+      - 方向性方块: wiki/adding-content/blocks/directional-blocks.md
+      - 透明方块: wiki/adding-content/blocks/transparent-block.md
+      - 启用自定义方块声音: wiki/adding-content/blocks/enabling-custom-blocks-sounds.md
+      - 在世界中启用/禁用自定义方块: wiki/adding-content/blocks/enable-disable-custom-blocks-in-worlds.md
+      - 手动编辑方块状态: wiki/adding-content/blocks/manual-editing-blockstates.md
+      - 变体: wiki/adding-content/blocks/variants.md
+      - 切换方块的开关状态: wiki/adding-content/blocks/turn-block-on-off.md
+      - TNT: wiki/adding-content/blocks/tnt.md
+      - 液体: wiki/adding-content/blocks/liquids.md
+      - 可堆叠方块: wiki/adding-content/blocks/stackable.md
+      - 存储方块: wiki/adding-content/blocks/storage.md
+      - 实体方块: wiki/adding-content/blocks/entity-blocks.md
+    - 家具:
+      - 概述: wiki/adding-content/furnitures.md
+      - 模型: wiki/adding-content/furnitures/model.md
+      - 家具尺寸: wiki/adding-content/furnitures/furniture-size.md
+      - 2D 家具图标: wiki/adding-content/furnitures/furniture-2d-icon.md
+      - 透明家具: wiki/adding-content/furnitures/transparent-furniture.md
+      - 椅子: wiki/adding-content/furnitures/chair.md
+      - 可连接家具: wiki/adding-content/furnitures/connectable.md
+      - 存储方块: wiki/adding-content/furnitures/storage.md
+      - 家具执行动作: wiki/adding-content/furnitures/furniture-execute-actions.md
+      - 家具权限: wiki/adding-content/furnitures/furniture-permissions.md
+      - 复杂家具: wiki/adding-content/furnitures/furniture-complex.md
+      - 示例: wiki/adding-content/furnitures/example.md
+    - 介绍:
+      - 概述: wiki/adding-content/entities.md
+      - 创建实体: wiki/adding-content/entities/advanced-method.md
+      - 动画: wiki/adding-content/entities/animations.md
+      - 骑乘: wiki/adding-content/entities/mount.md
+      - 碰撞箱: wiki/adding-content/entities/hitbox.md
+      - 头部: wiki/adding-content/entities/head.md
+      - 手持装备: wiki/adding-content/entities/hands-equipment.md
+      - 声音: wiki/adding-content/entities/sounds.md
+      - 粒子: wiki/adding-content/entities/particles.md
+      - 高级设置: wiki/adding-content/entities/advanced-settings.md
+      - 刷怪蛋: wiki/adding-content/entities/spawn-egg.md
+      - 实体随机生成: wiki/adding-content/entities/entity-random-spawn.md
+      - 事件与动作: wiki/adding-content/entities/events-and-actions.md
+      - 实体行为目标:
+        - 概述: wiki/adding-content/entities/entity-goals.md
+        - 实体行为目标列表: wiki/adding-content/entities/entity-goals/entity-goals-list.md
+      - 自定义玩家动画: wiki/adding-content/entities/custom-skin.md
+      - Citizens: wiki/adding-content/entities/citizens.md
+      - MythicMobs: wiki/adding-content/entities/mythicmobs.md
+    - 字体图片:
+      - 概述: wiki/adding-content/font-images.md
+      - 字体图片: wiki/adding-content/font-images/font-images.md
+      - 称号与前缀: wiki/adding-content/font-images/ranks-prefixes.md
+      - 表情: wiki/adding-content/font-images/emojis.md
+      - GUIs: wiki/adding-content/font-images/guis.md
+      - Font: wiki/adding-content/font-images/font.md
+      - HUDs:
+        - 概述: wiki/adding-content/font-images/huds.md
+        - 创建 HUDs:
+          - 概述: wiki/adding-content/font-images/huds/creating-huds.md
+          - 帧式 HUD: wiki/adding-content/font-images/huds/creating-huds/frames-hud.md
+          - 状态 HUD: wiki/adding-content/font-images/huds/creating-huds/status-hud.md
+          - 自定义 HUD（高级）: wiki/adding-content/font-images/huds/creating-huds/custom-hud-advanced.md
+        - 触发数值变化: wiki/adding-content/font-images/huds/trigger-value-change.md
+    - 音乐与声音:
+      - 概述: wiki/adding-content/sounds.md
+      - 音乐唱片与唱片机: wiki/adding-content/sounds/jukebox-disc.md
+      - 声音: wiki/adding-content/adding-sounds.md
+    - 配方:
+      - 概述: wiki/adding-content/recipes.md
+      - 合成: wiki/adding-content/recipes/crafting.md
+      - 烹饪: wiki/adding-content/recipes/cooking.md
+      - 营火烹饪: wiki/adding-content/recipes/campfire-cooking.md
+      - 切石机: wiki/adding-content/recipes/stonecutter.md
+      - 酿造: wiki/adding-content/recipes/brewing.md
+      - 铁砧修复: wiki/adding-content/recipes/anvil-repair.md
+      - 锻造: wiki/adding-content/recipes/smithing.md
+    - 玩家表情动作:
+      - 概述: wiki/adding-content/player-emotes.md
+      - 动画: wiki/adding-content/player-emotes/animations.md
+      - 高级属性: wiki/adding-content/player-emotes/advanced-properties.md
+      - 粒子: wiki/adding-content/player-emotes/particles.md
+      - 声音: wiki/adding-content/player-emotes/sounds.md
+      - 生成:
+        - 概述: wiki/adding-content/player-emotes/spawning.md
+        - 命令: wiki/adding-content/player-emotes/spawning/command.md
+        - Citizens: wiki/adding-content/player-emotes/spawning/citizens.md
+        - Mythicmobs: wiki/adding-content/player-emotes/spawning/mythicmobs.md
+    - 世界生成:
+      - 概述: wiki/adding-content/world-generation.md
+      - 地表生成器: wiki/adding-content/world-generation/surface-populators.md
+      - 树木生成器: wiki/adding-content/world-generation/trees-populators.md
+      - 洞穴装饰器: wiki/adding-content/world-generation/cave-decorators.md
+      - 世界生成器（矿石）: wiki/adding-content/world-generation/worlds-populators.md
+      - 家具生成器（ItemsAdderAdditions）: wiki/adding-content/world-generation/furniture-populators.md
+    - 脚本:
+      - 概述: wiki/adding-content/scripting.md
+      - Java:
+        - 概述: wiki/adding-content/scripting/java.md
+        - 自动补全: wiki/adding-content/scripting/java/autocompletion.md
+        - 调试: wiki/adding-content/scripting/java/debug.md
+        - 示例: wiki/adding-content/scripting/java/examples.md
+      - JSpp:
+        - 概述: wiki/adding-content/scripting/jspp.md
+        - 自动补全: wiki/adding-content/scripting/jspp/autocompletion.md
+        - 示例: wiki/adding-content/scripting/jspp/examples.md
+    - 自定义画（ItemsAdderAdditions）: wiki/adding-content/custom-paintings.md
+    - 自定义进度（ItemsAdderAdditions）: wiki/adding-content/advancements.md
+    - 自定义标签（ItemsAdderAdditions）: wiki/adding-content/custom-tags.md
+    - 作物: wiki/adding-content/crops.md
+    - 战利品: wiki/adding-content/loots.md
+    - 载具: wiki/adding-content/vehicles.md
+    - 染色物品: wiki/adding-content/colored-items.md
+    - 彩色模型: wiki/adding-content/colored-models.md
+    - 动画标题: wiki/adding-content/animated-titles.md
+    - 文本效果: wiki/adding-content/text-effects-1.17+.md
+    - 合并资源包: wiki/adding-content/merge-resourcepacks.md
+  - 其他:
+    - 批量着色图片: wiki/other/bulk-colorize-images.md
+    - 资源包覆盖层: wiki/other/pack-overlays.md
+    - Minecraft 服务器租赁: wiki/other/minecraft-hosting.md
+    - 自定义玩家属性: wiki/other/custom-player-stats.md
+    - 隐藏记分板背景和数字: wiki/other/hide-scoreboard-numbers-1.17+.md
+    - 保护资源包: wiki/other/resourcepack-protection.md
+    - 展示: wiki/other/videos-by-users.md
+  - 帮助:
+    - 服务条款: wiki/help/tos.md
+  - 开发者:
+    - ItemsAdder 标识: wiki/developers/branding.md
 - 配置文件（4.0.18）:
   - 配置索引: configuration/index.md
   - config.yml: configuration/config.md

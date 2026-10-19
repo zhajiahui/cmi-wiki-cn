@@ -1,0 +1,32 @@
+== Overview ==
+Wallets are a way to make the merchants seem more realistic by giving them a predefined amount of money to trade with. They also grant you better control over your server economy. In addition they are the only way players can manage account balance of the traders they created themselves.
+<br>
+== Wallet types ==
+Seven wallet types are currently supported:<br>
+<br>
+* '''infinite''' (admin only) - The trader has limitless money.
+* '''NPC''' - The trader has his own separate wallet and can't buy items unless he can afford it. The trader's owner can transfer funds between him and the trader.
+* '''owner''' - Allows the trader to directly use his owner's in-game money. Any transactions performed by the trader will affect that player's balance. 
+* '''bank''' - The trader uses a specified bank account. You must be that bank's owner to use this feature.
+
+
+<span style="color:red">IMPORTANT: </span> This wallets are no longer supported, they will be added through another plugin, sorry for this 
+* '''SimpleClans''' - The trader uses a specified clan's bank account. A clan tag has to be provided.
+* '''Factions''' - The trader uses a specified faction's bank account. A faction tag has to be provided.
+* '''Towny''' - The trader uses a specified town's bank account. A town tag has to be provided.<br>
+<br>
+== Setting the wallet type ==
+To set the wallet type use:<br>
+<br>
+/trader wallet [wallet-type] [bank-name ''OR'' clan/faction/town tag]<br>
+<br>
+When no arguments are supplied the commands returns the current wallet type.<br>
+<br>
+== Managing a wallet ==
+To manage a trader with the NPC wallet type use the following commands:<br>
+<br>
+/trader balance<br>
+/trader withdraw <amount><br>
+/trader deposit <amount> ''(a fix for this command will be included in v2.3.0 Beta)''<br>
+<br>
+Note: Commands will be executed on the currently selected NPC.

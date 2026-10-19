@@ -15,3 +15,6 @@ if result.returncode:raise SystemExit(result.returncode)
 
 result=subprocess.run([sys.executable,str(ROOT/"Site/verify-configurations.py")],cwd=ROOT)
 if result.returncode:raise SystemExit(result.returncode)
+
+result=subprocess.run([sys.executable,str(ROOT/"Site/verify-wiki.py")],cwd=ROOT)
+if result.returncode:raise SystemExit(result.returncode)

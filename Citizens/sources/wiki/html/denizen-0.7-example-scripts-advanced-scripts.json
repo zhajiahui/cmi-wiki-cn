@@ -1,0 +1,49 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Denizen/0.7/Example Scripts/Advanced Scripts",
+    "pageid": 202,
+    "revid": 5390,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://meta.denizenscript.com/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br /><br /><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p>These scripts use all the powerful features of Denizen to do some really cool things. \n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Maggie&#39;s_Magic_Shop\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Maggie's Magic Shop</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#To_Do\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">To Do</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading4\"><h4 id=\"Maggie's_Magic_Shop\"><span id=\"Maggie.27s_Magic_Shop\"></span>Maggie's Magic Shop</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Example_Scripts/Advanced_Scripts&amp;action=edit&amp;section=1\" title=\"Edit section: Maggie&#39;s Magic Shop\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Maggie sells magic odds and ends. This set of scripts simulates a vendor. She will greet the player, offer her wares, and check for the proper amount of money. This is a great example of how to use Flags.\n</p>\n<figure class=\"mw-halign-right\" typeof=\"mw:File/Thumb\"><a href=\"/File:Maggie_Choice_Debug.png\" class=\"mw-file-description\"><img src=\"/images/8/89/Maggie_Choice_Debug.png\" decoding=\"async\" width=\"300\" height=\"355\" class=\"mw-file-element\" /></a><figcaption>Maggie's Script: What would you like to buy?</figcaption></figure>\n<figure class=\"mw-halign-right\" typeof=\"mw:File/Thumb\"><a href=\"/File:Maggie_Buying_Feathers.png\" class=\"mw-file-description\"><img src=\"/images/c/c3/Maggie_Buying_Feathers.png\" decoding=\"async\" width=\"300\" height=\"190\" class=\"mw-file-element\" /></a><figcaption>Maggie's Script: Buying Feathers game screen</figcaption></figure>\n<figure class=\"mw-halign-right\" typeof=\"mw:File/Thumb\"><a href=\"/File:Maggie_Feather_Debug.png\" class=\"mw-file-description\"><img src=\"/images/d/de/Maggie_Feather_Debug.png\" decoding=\"async\" width=\"300\" height=\"420\" class=\"mw-file-element\" /></a><figcaption>Maggie's Script: Buying Feathers debug screen</figcaption></figure>\n<pre># Maggie sells some magic items for money.\n# Version 1.1\n\n# ASSIGNMENTS\n#\n#  Maggie:\n#    Interact Scripts:\n#    - 0 Magic Shop\n#    - 10 ^Magic Shop Not Enough Money\n#    - 20 ^Magic Shop Feathers\n#    - 20 ^Magic Shop Dust\n    \n# MAGGIES MAGIC SHOP.YML ----\n\n'Magic Shop':\n  Type: Interact\n  Requirements:\n    Mode: None\n  Steps:\n    1:\n      Proximity Trigger:\n        Script:\n        - CHAT 'Welcome to my shop! Have a look around!'\n      Click Trigger:\n        Script:\n        - CHAT 'What would you like to buy?'\n        - HINT\n      Chat Trigger:\n        1:\n          Trigger: I would like to buy some /feathers/\n          Script:\n          - CHAT 'Great! Feathers are 20 coins.'\n          - ^NARRATE 'Right click to purchase some feathers.'\n          - FLAG 'MAGICSHOPITEM:FEATHER' 'DURATION:15'\n        2:\n          Trigger: I would like to buy some /glowstone dust/\n          Script:\n          - CHAT 'Great! Glowstone dust is 50 coins.'\n          - ^NARRATE 'Right click to purchase some glowstone dust.'\n          - FLAG 'MAGICSHOPITEM:DUST' 'DURATION:15'\n        3:\n          Trigger: I would like to buy some /*/\n          Script:\n          - CHAT \"Ah! Sorry, I don't sell any of that!\"\n\n          \n'Magic Shop Not Enough Money':\n  Type: Interact\n  Requirements:\n    Mode: All\n    List:\n    - FLAGGED 'MAGICSHOPITEM'\n  Steps:\n    1:\n      Click Trigger:\n        Script:\n        - ^NARRATE \"Erm... seems you don't have enough money.\"\n        - RESET 'FLAG:MAGICSHOPITEM'\n\n        \n'Magic Shop Feathers':\n  Type: Interact\n  Requirements:\n    Mode: All\n    List:\n    - FLAGGED 'MAGICSHOPITEM:FEATHER'\n    - MONEY 20\n  Steps:\n    1:\n      Click Trigger:\n        Script:\n        - ^TAKE MONEY QTY:20\n        - ^GIVE FEATHER QTY:10\n        - CHAT 'Thanks! Here are your feathers.'  \n        - NARRATE 'You bought 10 Feathers for 20 coins! Sweet!'\n        - NARRATE 'Right click again to buy some more.'\n\n        \n'Magic Shop Dust':\n  Type: Interact\n  Requirements:\n    Mode: All\n    List:\n    - FLAGGED 'MAGICSHOPITEM:DUST'\n    - MONEY 50\n  Steps:\n    1:\n      Click Trigger:\n        Script:\n        - ^TAKE MONEY QTY:50\n        - ^GIVE GLOWSTONE_DUST QTY:10\n        - CHAT \"Thanks! Here's your dust.\"\n        - NARRATE 'You bought 10 Glowstone Dust for 50 coins! Sweet!'\n        - NARRATE 'Right click again to buy some more.'\n</pre>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"To_Do\">To Do</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Example_Scripts/Advanced_Scripts&amp;action=edit&amp;section=2\" title=\"Edit section: To Do\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<!-- \nNewPP limit report\nCached time: 20261019145830\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.031 seconds\nReal time usage: 0.047 seconds\nPreprocessor visited node count: 14/1000000\nRevision size: 3694/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2348/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 8bd63d65-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [
+      "Maggie_Choice_Debug.png",
+      "Maggie_Buying_Feathers.png",
+      "Maggie_Feather_Debug.png"
+    ],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "4",
+        "line": "Maggie's Magic Shop",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Denizen/0.7/Example_Scripts/Advanced_Scripts",
+        "byteoffset": 781,
+        "anchor": "Maggie's_Magic_Shop",
+        "linkAnchor": "Maggie's_Magic_Shop"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "To Do",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Denizen/0.7/Example_Scripts/Advanced_Scripts",
+        "byteoffset": 3659,
+        "anchor": "To_Do",
+        "linkAnchor": "To_Do"
+      }
+    ],
+    "showtoc": ""
+  }
+}

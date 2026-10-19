@@ -1,0 +1,628 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Behaviors",
+    "pageid": 380,
+    "revid": 5665,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Behaviors\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Behaviors</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-2\"><a href=\"#Tree_Structure\"><span class=\"tocnumber\">1.1</span> <span class=\"toctext\">Tree Structure</span></a></li>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Built-in_Types\"><span class=\"tocnumber\">1.2</span> <span class=\"toctext\">Built-in Types</span></a>\n<ul>\n<li class=\"toclevel-3 tocsection-4\"><a href=\"#sequence\"><span class=\"tocnumber\">1.2.1</span> <span class=\"toctext\">sequence</span></a></li>\n<li class=\"toclevel-3 tocsection-5\"><a href=\"#selector_/_random\"><span class=\"tocnumber\">1.2.2</span> <span class=\"toctext\">selector / random</span></a></li>\n<li class=\"toclevel-3 tocsection-6\"><a href=\"#parallel\"><span class=\"tocnumber\">1.2.3</span> <span class=\"toctext\">parallel</span></a></li>\n<li class=\"toclevel-3 tocsection-7\"><a href=\"#loop_[condition]\"><span class=\"tocnumber\">1.2.4</span> <span class=\"toctext\">loop [condition]</span></a></li>\n<li class=\"toclevel-3 tocsection-8\"><a href=\"#if_[condition]_/_else\"><span class=\"tocnumber\">1.2.5</span> <span class=\"toctext\">if [condition] / else</span></a></li>\n<li class=\"toclevel-3 tocsection-9\"><a href=\"#invert\"><span class=\"tocnumber\">1.2.6</span> <span class=\"toctext\">invert</span></a></li>\n<li class=\"toclevel-3 tocsection-10\"><a href=\"#timeout_[duration]\"><span class=\"tocnumber\">1.2.7</span> <span class=\"toctext\">timeout [duration]</span></a></li>\n<li class=\"toclevel-3 tocsection-11\"><a href=\"#eval_[language]\"><span class=\"tocnumber\">1.2.8</span> <span class=\"toctext\">eval [language]</span></a></li>\n<li class=\"toclevel-3 tocsection-12\"><a href=\"#Movement\"><span class=\"tocnumber\">1.2.9</span> <span class=\"toctext\">Movement</span></a>\n<ul>\n<li class=\"toclevel-4 tocsection-13\"><a href=\"#walkto\"><span class=\"tocnumber\">1.2.9.1</span> <span class=\"toctext\">walkto</span></a></li>\n<li class=\"toclevel-4 tocsection-14\"><a href=\"#wander\"><span class=\"tocnumber\">1.2.9.2</span> <span class=\"toctext\">wander</span></a></li>\n<li class=\"toclevel-4 tocsection-15\"><a href=\"#look\"><span class=\"tocnumber\">1.2.9.3</span> <span class=\"toctext\">look</span></a></li>\n<li class=\"toclevel-4 tocsection-16\"><a href=\"#teleport\"><span class=\"tocnumber\">1.2.9.4</span> <span class=\"toctext\">teleport</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-3 tocsection-17\"><a href=\"#Timing\"><span class=\"tocnumber\">1.2.10</span> <span class=\"toctext\">Timing</span></a>\n<ul>\n<li class=\"toclevel-4 tocsection-18\"><a href=\"#wait\"><span class=\"tocnumber\">1.2.10.1</span> <span class=\"toctext\">wait</span></a></li>\n<li class=\"toclevel-4 tocsection-19\"><a href=\"#wait_until\"><span class=\"tocnumber\">1.2.10.2</span> <span class=\"toctext\">wait_until</span></a></li>\n<li class=\"toclevel-4 tocsection-20\"><a href=\"#cooldown\"><span class=\"tocnumber\">1.2.10.3</span> <span class=\"toctext\">cooldown</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-3 tocsection-21\"><a href=\"#Memory_Management\"><span class=\"tocnumber\">1.2.11</span> <span class=\"toctext\">Memory Management</span></a>\n<ul>\n<li class=\"toclevel-4 tocsection-22\"><a href=\"#set\"><span class=\"tocnumber\">1.2.11.1</span> <span class=\"toctext\">set</span></a></li>\n<li class=\"toclevel-4 tocsection-23\"><a href=\"#forget\"><span class=\"tocnumber\">1.2.11.2</span> <span class=\"toctext\">forget</span></a></li>\n<li class=\"toclevel-4 tocsection-24\"><a href=\"#clear_memory\"><span class=\"tocnumber\">1.2.11.3</span> <span class=\"toctext\">clear_memory</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-3 tocsection-25\"><a href=\"#Communication\"><span class=\"tocnumber\">1.2.12</span> <span class=\"toctext\">Communication</span></a>\n<ul>\n<li class=\"toclevel-4 tocsection-26\"><a href=\"#say\"><span class=\"tocnumber\">1.2.12.1</span> <span class=\"toctext\">say</span></a></li>\n<li class=\"toclevel-4 tocsection-27\"><a href=\"#emit_signal\"><span class=\"tocnumber\">1.2.12.2</span> <span class=\"toctext\">emit_signal</span></a></li>\n<li class=\"toclevel-4 tocsection-28\"><a href=\"#emit_signal_to\"><span class=\"tocnumber\">1.2.12.3</span> <span class=\"toctext\">emit_signal_to</span></a></li>\n<li class=\"toclevel-4 tocsection-29\"><a href=\"#emit_global_signal\"><span class=\"tocnumber\">1.2.12.4</span> <span class=\"toctext\">emit_global_signal</span></a></li>\n<li class=\"toclevel-4 tocsection-30\"><a href=\"#wait_for_signal\"><span class=\"tocnumber\">1.2.12.5</span> <span class=\"toctext\">wait_for_signal</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-3 tocsection-31\"><a href=\"#World_Interaction\"><span class=\"tocnumber\">1.2.13</span> <span class=\"toctext\">World Interaction</span></a>\n<ul>\n<li class=\"toclevel-4 tocsection-32\"><a href=\"#break_block\"><span class=\"tocnumber\">1.2.13.1</span> <span class=\"toctext\">break_block</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-3 tocsection-33\"><a href=\"#Control_Flow\"><span class=\"tocnumber\">1.2.14</span> <span class=\"toctext\">Control Flow</span></a>\n<ul>\n<li class=\"toclevel-4 tocsection-34\"><a href=\"#succeed\"><span class=\"tocnumber\">1.2.14.1</span> <span class=\"toctext\">succeed</span></a></li>\n<li class=\"toclevel-4 tocsection-35\"><a href=\"#fail\"><span class=\"tocnumber\">1.2.14.2</span> <span class=\"toctext\">fail</span></a></li>\n<li class=\"toclevel-4 tocsection-36\"><a href=\"#repeat\"><span class=\"tocnumber\">1.2.14.3</span> <span class=\"toctext\">repeat</span></a></li>\n</ul>\n</li>\n</ul>\n</li>\n<li class=\"toclevel-2 tocsection-37\"><a href=\"#Special_Syntax\"><span class=\"tocnumber\">1.3</span> <span class=\"toctext\">Special Syntax</span></a>\n<ul>\n<li class=\"toclevel-3 tocsection-38\"><a href=\"#Command_Execution\"><span class=\"tocnumber\">1.3.1</span> <span class=\"toctext\">Command Execution</span></a></li>\n<li class=\"toclevel-3 tocsection-39\"><a href=\"#Expression_Evaluation\"><span class=\"tocnumber\">1.3.2</span> <span class=\"toctext\">Expression Evaluation</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-2 tocsection-40\"><a href=\"#Expression_System\"><span class=\"tocnumber\">1.4</span> <span class=\"toctext\">Expression System</span></a>\n<ul>\n<li class=\"toclevel-3 tocsection-41\"><a href=\"#Expression_Syntax\"><span class=\"tocnumber\">1.4.1</span> <span class=\"toctext\">Expression Syntax</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-2 tocsection-42\"><a href=\"#Memory_System\"><span class=\"tocnumber\">1.5</span> <span class=\"toctext\">Memory System</span></a>\n<ul>\n<li class=\"toclevel-3 tocsection-43\"><a href=\"#Usage\"><span class=\"tocnumber\">1.5.1</span> <span class=\"toctext\">Usage</span></a></li>\n<li class=\"toclevel-3 tocsection-44\"><a href=\"#Memory_Methods\"><span class=\"tocnumber\">1.5.2</span> <span class=\"toctext\">Memory Methods</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-2 tocsection-45\"><a href=\"#Complete_Examples\"><span class=\"tocnumber\">1.6</span> <span class=\"toctext\">Complete Examples</span></a>\n<ul>\n<li class=\"toclevel-3 tocsection-46\"><a href=\"#Basic_Patrol\"><span class=\"tocnumber\">1.6.1</span> <span class=\"toctext\">Basic Patrol</span></a></li>\n<li class=\"toclevel-3 tocsection-47\"><a href=\"#Signal_Coordination\"><span class=\"tocnumber\">1.6.2</span> <span class=\"toctext\">Signal Coordination</span></a></li>\n<li class=\"toclevel-3 tocsection-48\"><a href=\"#Conditional_Greeter\"><span class=\"tocnumber\">1.6.3</span> <span class=\"toctext\">Conditional Greeter</span></a></li>\n<li class=\"toclevel-3 tocsection-49\"><a href=\"#Resource_Gathering\"><span class=\"tocnumber\">1.6.4</span> <span class=\"toctext\">Resource Gathering</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-2 tocsection-50\"><a href=\"#Loading_Behavior_Trees\"><span class=\"tocnumber\">1.7</span> <span class=\"toctext\">Loading Behavior Trees</span></a>\n<ul>\n<li class=\"toclevel-3 tocsection-51\"><a href=\"#External_File\"><span class=\"tocnumber\">1.7.1</span> <span class=\"toctext\">External File</span></a></li>\n<li class=\"toclevel-3 tocsection-52\"><a href=\"#Template_System\"><span class=\"tocnumber\">1.7.2</span> <span class=\"toctext\">Template System</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-2 tocsection-53\"><a href=\"#API\"><span class=\"tocnumber\">1.8</span> <span class=\"toctext\">API</span></a>\n<ul>\n<li class=\"toclevel-3 tocsection-54\"><a href=\"#Registering_Custom_Behaviors\"><span class=\"tocnumber\">1.8.1</span> <span class=\"toctext\">Registering Custom Behaviors</span></a></li>\n<li class=\"toclevel-3 tocsection-55\"><a href=\"#Custom_Expression_Languages\"><span class=\"tocnumber\">1.8.2</span> <span class=\"toctext\">Custom Expression Languages</span></a></li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading1\"><h1 id=\"Behaviors\">Behaviors</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=1\" title=\"Edit section: Behaviors\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>The Behaviors system allows NPCs to run AI behaviors defined in YAML format. Behaviors can be simple actions like walking or waiting, or complex sequences with conditions, loops, and parallel execution.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Tree_Structure\">Tree Structure</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=2\" title=\"Edit section: Tree Structure\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>All behavior trees start with a <code>tree:</code> root node:\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">tree:\n  sequence:\n    - behavior_name arg1 arg2\n    - another_behavior\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Built-in_Types\">Built-in Types</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=3\" title=\"Edit section: Built-in Types\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"sequence\">sequence</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=4\" title=\"Edit section: sequence\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Runs children in order until one fails.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">tree:\n  sequence:\n    - say \"First\"\n    - wait 1s\n    - say \"Second\"\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"selector_/_random\"><span id=\"selector_.2F_random\"></span>selector / random</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=5\" title=\"Edit section: selector / random\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Runs one sub-behavior at random. \n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">tree:\n  selector:\n    - sequence:\n        - if `player_nearby`:\n            - say \"I see you!\"\n    - wander radius=15\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"parallel\">parallel</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=6\" title=\"Edit section: parallel\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Runs multiple behaviors at the same time.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">tree:\n  parallel:\n    - wander radius=10 pathfind=true\n    - sequence:\n        - wait 5s\n        - say \"Still wandering...\"\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"loop_[condition]\"><span id=\"loop_.5Bcondition.5D\"></span>loop [condition]</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=7\" title=\"Edit section: loop [condition]\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Runs the children in sequence if the condition is true.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">tree:\n  loop `memory.get('counter', 0) &lt; 5`:\n    - say \"Count is {memory.get('counter', 0)}\"\n    - set counter `memory.get('counter', 0) + 1`\n    - wait 1s\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"if_[condition]_/_else\"><span id=\"if_.5Bcondition.5D_.2F_else\"></span>if [condition] / else</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=8\" title=\"Edit section: if [condition] / else\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">tree:\n  sequence:\n    - if `memory.has('greeted')`:\n        - say \"Welcome back!\"\n      else:\n        - say \"Nice to meet you!\"\n        - set greeted true\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"invert\">invert</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=9\" title=\"Edit section: invert\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Inverts the success or failure of its child.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">tree:\n  invert:\n    - fail\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"timeout_[duration]\"><span id=\"timeout_.5Bduration.5D\"></span>timeout [duration]</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=10\" title=\"Edit section: timeout [duration]\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>If the child doesn't complete within the specified duration, it fails.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">tree:\n  timeout 5s:\n    - walkto 500 64 500\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"eval_[language]\"><span id=\"eval_.5Blanguage.5D\"></span>eval [language]</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=11\" title=\"Edit section: eval [language]\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Evaluates multiple expressions. \n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">tree:\n  eval:\n    - memory.set('x', 100)\n    - memory.set('y', 64)\n    - memory.set('z', 200)\n</pre></div></td></tr></tbody></table>\n<p>Or with a specific language (javascript, molang):\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">tree:\n  eval molang:\n    - v.test = 5\n    - v.result = v.test * 2\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Movement\">Movement</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=12\" title=\"Edit section: Movement\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"walkto\">walkto</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=13\" title=\"Edit section: walkto\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Walks to specified coordinates.\n</p><p><b>Inline usage:</b>\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">- walkto 100 64 200 speed=1.5 range=50\n</pre></div></td></tr></tbody></table>\n<p><b>Named parameters:</b>\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">- walkto:\n    x: 100\n    y: 64\n    z: 200\n    speed: 1.5\n    range: 50\n    distance_margin: 2\n</pre></div></td></tr></tbody></table>\n<p><b>Parameters:</b>\n</p>\n<ul><li><code>x</code>, <code>y</code>, <code>z</code> - Target coordinates (required)</li>\n<li><code>speed</code> - Movement speed multiplier (optional)</li>\n<li><code>range</code> - Maximum pathfinding range (optional)</li>\n<li><code>distance_margin</code> / <code>margin</code> - How close in blocks to get to target (optional)</li></ul>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"wander\">wander</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=14\" title=\"Edit section: wander\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Random wandering within a radius.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">- wander radius=10 pathfind=true\n</pre></div></td></tr></tbody></table>\n<p><b>Parameters:</b>\n</p>\n<ul><li><code>radius</code> - Wander radius in blocks (default: 10)</li>\n<li><code>pathfind</code> - Whether to use pathfinding (default: true)</li></ul>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"look\">look</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=15\" title=\"Edit section: look\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Makes the NPC look at specific coordinates.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">- look 100 64 200\n</pre></div></td></tr></tbody></table>\n<p><b>Parameters:</b>\n</p>\n<ul><li><code>x</code>, <code>y</code>, <code>z</code> - Target coordinates (required)</li></ul>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"teleport\">teleport</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=16\" title=\"Edit section: teleport\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Teleports the NPC to coordinates.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">- teleport 100 64 200\n- teleport 100 64 200 world_name\n</pre></div></td></tr></tbody></table>\n<p><b>Parameters:</b>\n</p>\n<ul><li><code>x</code>, <code>y</code>, <code>z</code> - Target coordinates (required)</li>\n<li><code>world</code> - World name (optional, defaults to current world)</li></ul>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Timing\">Timing</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=17\" title=\"Edit section: Timing\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"wait\">wait</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=18\" title=\"Edit section: wait\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Waits for a specified duration.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">- wait 3s      # 3 seconds\n- wait 100t    # 100 ticks\n- wait 2m      # 2 minutes\n</pre></div></td></tr></tbody></table>\n<p><b>Duration formats:</b>\n</p>\n<ul><li><code>s</code> - seconds</li>\n<li><code>t</code> - ticks</li>\n<li><code>m</code> - minutes</li>\n<li>Can also use expressions: <code>wait `some_expression`</code></li></ul>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"wait_until\">wait_until</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=19\" title=\"Edit section: wait_until\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Waits until a condition becomes true.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">- wait_until `player.distance &lt; 10`\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"cooldown\">cooldown</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=20\" title=\"Edit section: cooldown\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Rate limits behaviors. Only succeeds if enough time has passed since the last time it was run.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">- cooldown greeting 30s\n- say \"Hello there!\"\n</pre></div></td></tr></tbody></table>\n<p><b>Parameters:</b>\n</p>\n<ul><li><code>key</code> - Cooldown identifier (required)</li>\n<li><code>duration</code> - Cooldown duration (default: 1s)</li></ul>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Memory_Management\">Memory Management</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=21\" title=\"Edit section: Memory Management\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"set\">set</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=22\" title=\"Edit section: set\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Sets a memory variable.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">- set counter 5\n- set name \"Bob\"\n- set calculated `10 * 5`\n</pre></div></td></tr></tbody></table>\n<p><b>Parameters:</b>\n</p>\n<ul><li><code>key</code> - Variable name (required)</li>\n<li><code>value</code> - Value to set (required, can be expression)</li></ul>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"forget\">forget</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=23\" title=\"Edit section: forget\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Removes a memory variable.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">- forget counter\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"clear_memory\">clear_memory</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=24\" title=\"Edit section: clear_memory\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Clears all memory variables.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">- clear_memory\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Communication\">Communication</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=25\" title=\"Edit section: Communication\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"say\">say</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=26\" title=\"Edit section: say\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Makes the NPC say a message to nearby players.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">- say \"Hello, world!\"\n- say `\"Player count: \" + player.count`\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"emit_signal\">emit_signal</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=27\" title=\"Edit section: emit_signal\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Emits a signal.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">- emit_signal \"start_patrol\"\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"emit_signal_to\">emit_signal_to</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=28\" title=\"Edit section: emit_signal_to\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Emits a signal to a specific NPC by ID or UUID.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">- emit_signal_to 123 \"alert\"\n- emit_signal_to \"uuid-string\" \"alert\"\n</pre></div></td></tr></tbody></table>\n<p><b>Parameters:</b>\n</p>\n<ul><li><code>npc</code> - NPC ID or UUID (required)</li>\n<li><code>signal</code> - Signal name (required)</li></ul>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"emit_global_signal\">emit_global_signal</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=29\" title=\"Edit section: emit_global_signal\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Emits a signal that all NPCs receive.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">- emit_global_signal \"server_restart_warning\"\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"wait_for_signal\">wait_for_signal</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=30\" title=\"Edit section: wait_for_signal\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Waits until a signal is received.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">- wait_for_signal \"start_patrol\"\n- say \"Signal received!\"\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"World_Interaction\">World Interaction</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=31\" title=\"Edit section: World Interaction\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"break_block\">break_block</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=32\" title=\"Edit section: break_block\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Breaks a block realistically using the NPC's held item at the specified coordinates.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">- break_block 100 64 200 radius=3\n</pre></div></td></tr></tbody></table>\n<p><b>Parameters:</b>\n</p>\n<ul><li><code>x</code>, <code>y</code>, <code>z</code> - Block coordinates (required)</li>\n<li><code>radius</code> - Maximum distance in blocks to break from (default: 3)</li></ul>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Control_Flow\">Control Flow</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=33\" title=\"Edit section: Control Flow\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"succeed\">succeed</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=34\" title=\"Edit section: succeed\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Always returns SUCCESS.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">- succeed\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"fail\">fail</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=35\" title=\"Edit section: fail\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Always returns FAILURE.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">- fail\n</pre></div></td></tr></tbody></table>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"repeat\">repeat</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=36\" title=\"Edit section: repeat\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Repeats a specified number of times.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">- repeat 5:\n    - say \"Counting...\"\n    - wait 1s\n</pre></div></td></tr></tbody></table>\n<p><b>Parameters:</b>\n</p>\n<ul><li><code>count</code> - Number of repetitions (default: 1)</li></ul>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Special_Syntax\">Special Syntax</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=37\" title=\"Edit section: Special Syntax\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Command_Execution\">Command Execution</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=38\" title=\"Edit section: Command Execution\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Lines starting with <code>/</code> are executed as commands:\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">tree:\n  sequence:\n    - /npc speak \"Hello from command!\"\n    - /say This is a server command\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Expression_Evaluation\">Expression Evaluation</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=39\" title=\"Edit section: Expression Evaluation\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Lines starting with backtick (<code>`</code>) are evaluated as expressions:\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">tree:\n  sequence:\n    - `inv.add(item.json('{\"material\":\"DIAMOND\",\"amount\":64}'))`\n    - `memory.set('flag', true)`\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Expression_System\">Expression System</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=40\" title=\"Edit section: Expression System\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>The behavior tree system integrates with the Expression Registry for dynamic values.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Expression_Syntax\">Expression Syntax</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=41\" title=\"Edit section: Expression Syntax\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Expressions can be used in several ways:\n</p><p><b>Inline in conditions:</b>\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">- if `memory.get('counter') &lt; 10`:\n    - say \"Counter is low\"\n</pre></div></td></tr></tbody></table>\n<p><b>In parameter values:</b>\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">- walkto `npc.location.x + 10` `npc.location.y` `npc.location.z`\n</pre></div></td></tr></tbody></table>\n<p><b>In text:</b>\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">- say \"Counter value: {memory.get('counter')}\"\n</pre></div></td></tr></tbody></table>\n<p><b>Standalone evaluation:</b>\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">- `memory.set('result', 10 * 5)`\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Memory_System\">Memory System</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=42\" title=\"Edit section: Memory System\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>The memory system provides persistent storage across behavior executions.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Usage\">Usage</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=43\" title=\"Edit section: Usage\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">tree:\n  sequence:\n    - set visited_waypoint_1 true\n    - set visit_count `memory.get('visit_count', 0) + 1`\n    - if `memory.has('greeted')`:\n        - say \"Welcome back! Visit #{memory.get('visit_count')}\"\n      else:\n        - say \"First visit!\"\n        - set greeted true\n    - forget temporary_flag\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Memory_Methods\">Memory Methods</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=44\" title=\"Edit section: Memory Methods\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ul><li><code>memory.set(key, value)</code> - Set a value</li>\n<li><code>memory.get(key, default)</code> - Get a value with optional default</li>\n<li><code>memory.has(key)</code> - Check if key exists</li>\n<li><code>memory.remove(key)</code> - Remove a key</li>\n<li><code>memory.clear()</code> - Clear all memory</li></ul>\n<p>Memory is automatically saved and loaded with the NPC.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Complete_Examples\">Complete Examples</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=45\" title=\"Edit section: Complete Examples\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Basic_Patrol\">Basic Patrol</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=46\" title=\"Edit section: Basic Patrol\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">tree:\n  sequence:\n    - set patrol_started true\n    - loop `memory.get('patrol_count', 0) &lt; 3`:\n        - walkto `npc.location.x + 10` `npc.location.y` `npc.location.z`\n        - wait 2s\n        - cooldown speak 10s\n        - say \"Patrolling area {memory.get('patrol_count', 0)}\"\n        - walkto `npc.location.x - 10` `npc.location.y` `npc.location.z`\n        - set patrol_count `memory.get('patrol_count', 0) + 1`\n    - say \"Patrol complete!\"\n    - forget patrol_count\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Signal_Coordination\">Signal Coordination</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=47\" title=\"Edit section: Signal Coordination\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><b>Guard NPC:</b>\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">tree:\n  sequence:\n    - wait_for_signal \"intruder_alert\"\n    - say \"Intruder detected! Responding!\"\n    - walkto `signal.data.x` `signal.data.y` `signal.data.z`\n    - emit_global_signal \"area_secured\"\n</pre></div></td></tr></tbody></table>\n<p><b>Lookout NPC:</b>\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">tree:\n  sequence:\n    - if `player.distance &lt; 10`:\n        - cooldown alert 60s\n        - emit_global_signal \"intruder_alert\"\n        - say \"Alert! Intruder spotted!\"\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Conditional_Greeter\">Conditional Greeter</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=48\" title=\"Edit section: Conditional Greeter\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">tree:\n  sequence:\n    - if `memory.has('greeted')`:\n        - say \"Welcome back!\"\n      else:\n        - sequence:\n            - say \"Nice to meet you!\"\n            - set greeted true\n    - cooldown greet 10s\n    - wait 2s\n    - say \"Have a nice day!\"\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Resource_Gathering\">Resource Gathering</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=49\" title=\"Edit section: Resource Gathering\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">tree:\n  sequence:\n    - set gathered 0\n    - loop `memory.get('gathered', 0) &lt; 5`:\n        - wander radius=20 pathfind=true\n        - wait 5s\n        - break_block `npc.location.x` `npc.location.y - 1` `npc.location.z`\n        - set gathered `memory.get('gathered', 0) + 1`\n        - say \"Gathered {memory.get('gathered')} resources\"\n    - say \"Resource gathering complete!\"\n    - teleport 0 64 0\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Loading_Behavior_Trees\">Loading Behavior Trees</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=50\" title=\"Edit section: Loading Behavior Trees\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"External_File\">External File</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=51\" title=\"Edit section: External File\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>You can load trees from external files in the <code>behaviors/</code> directory.\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">traits:\n  - name: behavior\n    tree: patrol_behavior.yml\n</pre></div></td></tr></tbody></table>\n<p>The behaviors will be loaded from <code>plugins/Citizens/behaviors/patrol_behavior.yml</code>\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Template_System\">Template System</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=52\" title=\"Edit section: Template System\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Behavior trees can be included in templates:\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"yaml\">greeter:\n  traits:\n    - name: behavior\n      tree:\n        sequence:\n          - cooldown greet 10s\n          - say \"Hello there, traveler!\"\n          - wait 2s\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"API\">API</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=53\" title=\"Edit section: API\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Registering_Custom_Behaviors\">Registering Custom Behaviors</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=54\" title=\"Edit section: Registering Custom Behaviors\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Register custom behaviors with the BehaviorRegistry:\n</p><p><br />\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:100%; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> </div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:100%; height:200px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\"><pre lang=\"java\">registry.registerBehavior(\"my_behavior\", (params, context) -&gt; {\n    String arg = context.getArgOrParam(0, \"param_name\", params, \"default\");\n    ExpressionValue argHolder = registry.getExpressionRegistry().parseValue(arg);\n\n    return new InstantBehavior() {\n        @Override\n        public void reset() {\n        }\n\n        @Override\n        public BehaviorStatus run() {\n            NPC npc = context.getNPC();\n            // Your behavior logic here\n            return BehaviorStatus.SUCCESS;\n        }\n\n        @Override\n        public boolean shouldExecute() {\n            return true;\n        }\n    };\n});\n</pre></div></td></tr></tbody></table>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Custom_Expression_Languages\">Custom Expression Languages</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Behaviors&amp;action=edit&amp;section=55\" title=\"Edit section: Custom Expression Languages\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Register custom expression engines with the ExpressionRegistry for domain-specific languages.\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145821\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.124 seconds\nReal time usage: 0.128 seconds\nPreprocessor visited node count: 1019/1000000\nRevision size: 13079/2097152 bytes\nPost‐expand include size: 22185/2097152 bytes\nTemplate argument size: 1980/2097152 bytes\nHighest expansion depth: 4/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 5919/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   19.830      1 -total\n 72.01%   14.279     45 Template:Codebox\n-->\n\n<!-- Render ID 8678f2e4-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Behaviors",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Behaviors",
+        "byteoffset": 0,
+        "anchor": "Behaviors",
+        "linkAnchor": "Behaviors"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Tree Structure",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "Behaviors",
+        "byteoffset": 219,
+        "anchor": "Tree_Structure",
+        "linkAnchor": "Tree_Structure"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Built-in Types",
+        "number": "1.2",
+        "index": "3",
+        "fromtitle": "Behaviors",
+        "byteoffset": 438,
+        "anchor": "Built-in_Types",
+        "linkAnchor": "Built-in_Types"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "sequence",
+        "number": "1.2.1",
+        "index": "4",
+        "fromtitle": "Behaviors",
+        "byteoffset": 460,
+        "anchor": "sequence",
+        "linkAnchor": "sequence"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "selector / random",
+        "number": "1.2.2",
+        "index": "5",
+        "fromtitle": "Behaviors",
+        "byteoffset": 651,
+        "anchor": "selector_/_random",
+        "linkAnchor": "selector_/_random"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "parallel",
+        "number": "1.2.3",
+        "index": "6",
+        "fromtitle": "Behaviors",
+        "byteoffset": 893,
+        "anchor": "parallel",
+        "linkAnchor": "parallel"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "loop [condition]",
+        "number": "1.2.4",
+        "index": "7",
+        "fromtitle": "Behaviors",
+        "byteoffset": 1140,
+        "anchor": "loop_[condition]",
+        "linkAnchor": "loop_[condition]"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "if [condition] / else",
+        "number": "1.2.5",
+        "index": "8",
+        "fromtitle": "Behaviors",
+        "byteoffset": 1442,
+        "anchor": "if_[condition]_/_else",
+        "linkAnchor": "if_[condition]_/_else"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "invert",
+        "number": "1.2.6",
+        "index": "9",
+        "fromtitle": "Behaviors",
+        "byteoffset": 1691,
+        "anchor": "invert",
+        "linkAnchor": "invert"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "timeout [duration]",
+        "number": "1.2.7",
+        "index": "10",
+        "fromtitle": "Behaviors",
+        "byteoffset": 1843,
+        "anchor": "timeout_[duration]",
+        "linkAnchor": "timeout_[duration]"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "eval [language]",
+        "number": "1.2.8",
+        "index": "11",
+        "fromtitle": "Behaviors",
+        "byteoffset": 2050,
+        "anchor": "eval_[language]",
+        "linkAnchor": "eval_[language]"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Movement",
+        "number": "1.2.9",
+        "index": "12",
+        "fromtitle": "Behaviors",
+        "byteoffset": 2446,
+        "anchor": "Movement",
+        "linkAnchor": "Movement"
+      },
+      {
+        "toclevel": 4,
+        "level": "4",
+        "line": "walkto",
+        "number": "1.2.9.1",
+        "index": "13",
+        "fromtitle": "Behaviors",
+        "byteoffset": 2464,
+        "anchor": "walkto",
+        "linkAnchor": "walkto"
+      },
+      {
+        "toclevel": 4,
+        "level": "4",
+        "line": "wander",
+        "number": "1.2.9.2",
+        "index": "14",
+        "fromtitle": "Behaviors",
+        "byteoffset": 3141,
+        "anchor": "wander",
+        "linkAnchor": "wander"
+      },
+      {
+        "toclevel": 4,
+        "level": "4",
+        "line": "look",
+        "number": "1.2.9.3",
+        "index": "15",
+        "fromtitle": "Behaviors",
+        "byteoffset": 3440,
+        "anchor": "look",
+        "linkAnchor": "look"
+      },
+      {
+        "toclevel": 4,
+        "level": "4",
+        "line": "teleport",
+        "number": "1.2.9.4",
+        "index": "16",
+        "fromtitle": "Behaviors",
+        "byteoffset": 3682,
+        "anchor": "teleport",
+        "linkAnchor": "teleport"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Timing",
+        "number": "1.2.10",
+        "index": "17",
+        "fromtitle": "Behaviors",
+        "byteoffset": 4027,
+        "anchor": "Timing",
+        "linkAnchor": "Timing"
+      },
+      {
+        "toclevel": 4,
+        "level": "4",
+        "line": "wait",
+        "number": "1.2.10.1",
+        "index": "18",
+        "fromtitle": "Behaviors",
+        "byteoffset": 4043,
+        "anchor": "wait",
+        "linkAnchor": "wait"
+      },
+      {
+        "toclevel": 4,
+        "level": "4",
+        "line": "wait_until",
+        "number": "1.2.10.2",
+        "index": "19",
+        "fromtitle": "Behaviors",
+        "byteoffset": 4404,
+        "anchor": "wait_until",
+        "linkAnchor": "wait_until"
+      },
+      {
+        "toclevel": 4,
+        "level": "4",
+        "line": "cooldown",
+        "number": "1.2.10.3",
+        "index": "20",
+        "fromtitle": "Behaviors",
+        "byteoffset": 4564,
+        "anchor": "cooldown",
+        "linkAnchor": "cooldown"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Memory Management",
+        "number": "1.2.11",
+        "index": "21",
+        "fromtitle": "Behaviors",
+        "byteoffset": 4917,
+        "anchor": "Memory_Management",
+        "linkAnchor": "Memory_Management"
+      },
+      {
+        "toclevel": 4,
+        "level": "4",
+        "line": "set",
+        "number": "1.2.11.1",
+        "index": "22",
+        "fromtitle": "Behaviors",
+        "byteoffset": 4944,
+        "anchor": "set",
+        "linkAnchor": "set"
+      },
+      {
+        "toclevel": 4,
+        "level": "4",
+        "line": "forget",
+        "number": "1.2.11.2",
+        "index": "23",
+        "fromtitle": "Behaviors",
+        "byteoffset": 5237,
+        "anchor": "forget",
+        "linkAnchor": "forget"
+      },
+      {
+        "toclevel": 4,
+        "level": "4",
+        "line": "clear_memory",
+        "number": "1.2.11.3",
+        "index": "24",
+        "fromtitle": "Behaviors",
+        "byteoffset": 5363,
+        "anchor": "clear_memory",
+        "linkAnchor": "clear_memory"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Communication",
+        "number": "1.2.12",
+        "index": "25",
+        "fromtitle": "Behaviors",
+        "byteoffset": 5495,
+        "anchor": "Communication",
+        "linkAnchor": "Communication"
+      },
+      {
+        "toclevel": 4,
+        "level": "4",
+        "line": "say",
+        "number": "1.2.12.1",
+        "index": "26",
+        "fromtitle": "Behaviors",
+        "byteoffset": 5518,
+        "anchor": "say",
+        "linkAnchor": "say"
+      },
+      {
+        "toclevel": 4,
+        "level": "4",
+        "line": "emit_signal",
+        "number": "1.2.12.2",
+        "index": "27",
+        "fromtitle": "Behaviors",
+        "byteoffset": 5706,
+        "anchor": "emit_signal",
+        "linkAnchor": "emit_signal"
+      },
+      {
+        "toclevel": 4,
+        "level": "4",
+        "line": "emit_signal_to",
+        "number": "1.2.12.3",
+        "index": "28",
+        "fromtitle": "Behaviors",
+        "byteoffset": 5838,
+        "anchor": "emit_signal_to",
+        "linkAnchor": "emit_signal_to"
+      },
+      {
+        "toclevel": 4,
+        "level": "4",
+        "line": "emit_global_signal",
+        "number": "1.2.12.4",
+        "index": "29",
+        "fromtitle": "Behaviors",
+        "byteoffset": 6157,
+        "anchor": "emit_global_signal",
+        "linkAnchor": "emit_global_signal"
+      },
+      {
+        "toclevel": 4,
+        "level": "4",
+        "line": "wait_for_signal",
+        "number": "1.2.12.5",
+        "index": "30",
+        "fromtitle": "Behaviors",
+        "byteoffset": 6335,
+        "anchor": "wait_for_signal",
+        "linkAnchor": "wait_for_signal"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "World Interaction",
+        "number": "1.2.13",
+        "index": "31",
+        "fromtitle": "Behaviors",
+        "byteoffset": 6518,
+        "anchor": "World_Interaction",
+        "linkAnchor": "World_Interaction"
+      },
+      {
+        "toclevel": 4,
+        "level": "4",
+        "line": "break_block",
+        "number": "1.2.13.1",
+        "index": "32",
+        "fromtitle": "Behaviors",
+        "byteoffset": 6545,
+        "anchor": "break_block",
+        "linkAnchor": "break_block"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Control Flow",
+        "number": "1.2.14",
+        "index": "33",
+        "fromtitle": "Behaviors",
+        "byteoffset": 6928,
+        "anchor": "Control_Flow",
+        "linkAnchor": "Control_Flow"
+      },
+      {
+        "toclevel": 4,
+        "level": "4",
+        "line": "succeed",
+        "number": "1.2.14.1",
+        "index": "34",
+        "fromtitle": "Behaviors",
+        "byteoffset": 6950,
+        "anchor": "succeed",
+        "linkAnchor": "succeed"
+      },
+      {
+        "toclevel": 4,
+        "level": "4",
+        "line": "fail",
+        "number": "1.2.14.2",
+        "index": "35",
+        "fromtitle": "Behaviors",
+        "byteoffset": 7067,
+        "anchor": "fail",
+        "linkAnchor": "fail"
+      },
+      {
+        "toclevel": 4,
+        "level": "4",
+        "line": "repeat",
+        "number": "1.2.14.3",
+        "index": "36",
+        "fromtitle": "Behaviors",
+        "byteoffset": 7179,
+        "anchor": "repeat",
+        "linkAnchor": "repeat"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Special Syntax",
+        "number": "1.3",
+        "index": "37",
+        "fromtitle": "Behaviors",
+        "byteoffset": 7425,
+        "anchor": "Special_Syntax",
+        "linkAnchor": "Special_Syntax"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Command Execution",
+        "number": "1.3.1",
+        "index": "38",
+        "fromtitle": "Behaviors",
+        "byteoffset": 7447,
+        "anchor": "Command_Execution",
+        "linkAnchor": "Command_Execution"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Expression Evaluation",
+        "number": "1.3.2",
+        "index": "39",
+        "fromtitle": "Behaviors",
+        "byteoffset": 7692,
+        "anchor": "Expression_Evaluation",
+        "linkAnchor": "Expression_Evaluation"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Expression System",
+        "number": "1.4",
+        "index": "40",
+        "fromtitle": "Behaviors",
+        "byteoffset": 7979,
+        "anchor": "Expression_System",
+        "linkAnchor": "Expression_System"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Expression Syntax",
+        "number": "1.4.1",
+        "index": "41",
+        "fromtitle": "Behaviors",
+        "byteoffset": 8090,
+        "anchor": "Expression_Syntax",
+        "linkAnchor": "Expression_Syntax"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Memory System",
+        "number": "1.5",
+        "index": "42",
+        "fromtitle": "Behaviors",
+        "byteoffset": 8717,
+        "anchor": "Memory_System",
+        "linkAnchor": "Memory_System"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Usage",
+        "number": "1.5.1",
+        "index": "43",
+        "fromtitle": "Behaviors",
+        "byteoffset": 8813,
+        "anchor": "Usage",
+        "linkAnchor": "Usage"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Memory Methods",
+        "number": "1.5.2",
+        "index": "44",
+        "fromtitle": "Behaviors",
+        "byteoffset": 9195,
+        "anchor": "Memory_Methods",
+        "linkAnchor": "Memory_Methods"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Complete Examples",
+        "number": "1.6",
+        "index": "45",
+        "fromtitle": "Behaviors",
+        "byteoffset": 9555,
+        "anchor": "Complete_Examples",
+        "linkAnchor": "Complete_Examples"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Basic Patrol",
+        "number": "1.6.1",
+        "index": "46",
+        "fromtitle": "Behaviors",
+        "byteoffset": 9580,
+        "anchor": "Basic_Patrol",
+        "linkAnchor": "Basic_Patrol"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Signal Coordination",
+        "number": "1.6.2",
+        "index": "47",
+        "fromtitle": "Behaviors",
+        "byteoffset": 10136,
+        "anchor": "Signal_Coordination",
+        "linkAnchor": "Signal_Coordination"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Conditional Greeter",
+        "number": "1.6.3",
+        "index": "48",
+        "fromtitle": "Behaviors",
+        "byteoffset": 10695,
+        "anchor": "Conditional_Greeter",
+        "linkAnchor": "Conditional_Greeter"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Resource Gathering",
+        "number": "1.6.4",
+        "index": "49",
+        "fromtitle": "Behaviors",
+        "byteoffset": 11038,
+        "anchor": "Resource_Gathering",
+        "linkAnchor": "Resource_Gathering"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Loading Behavior Trees",
+        "number": "1.7",
+        "index": "50",
+        "fromtitle": "Behaviors",
+        "byteoffset": 11526,
+        "anchor": "Loading_Behavior_Trees",
+        "linkAnchor": "Loading_Behavior_Trees"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "External File",
+        "number": "1.7.1",
+        "index": "51",
+        "fromtitle": "Behaviors",
+        "byteoffset": 11556,
+        "anchor": "External_File",
+        "linkAnchor": "External_File"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Template System",
+        "number": "1.7.2",
+        "index": "52",
+        "fromtitle": "Behaviors",
+        "byteoffset": 11876,
+        "anchor": "Template_System",
+        "linkAnchor": "Template_System"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "API",
+        "number": "1.8",
+        "index": "53",
+        "fromtitle": "Behaviors",
+        "byteoffset": 12171,
+        "anchor": "API",
+        "linkAnchor": "API"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Registering Custom Behaviors",
+        "number": "1.8.1",
+        "index": "54",
+        "fromtitle": "Behaviors",
+        "byteoffset": 12182,
+        "anchor": "Registering_Custom_Behaviors",
+        "linkAnchor": "Registering_Custom_Behaviors"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Custom Expression Languages",
+        "number": "1.8.2",
+        "index": "55",
+        "fromtitle": "Behaviors",
+        "byteoffset": 12949,
+        "anchor": "Custom_Expression_Languages",
+        "linkAnchor": "Custom_Expression_Languages"
+      }
+    ],
+    "showtoc": ""
+  }
+}

@@ -1,6 +1,11 @@
 site_name: CMILib 中文资料
 nav:
 - 插件说明: index.md
+- 插件 Wiki:
+  - CMILib 官方说明与下载: wiki/home.md
+  - 常见问题: wiki/faq.md
+  - CMILib 安装、更新与支持: wiki/readme.md
+  - CMILib 官方发布页: wiki/plugin-page.md
 - 配置文件（1.6.0.1）:
   - 配置索引: configuration/index.md
   - config.yml: configuration/config.md

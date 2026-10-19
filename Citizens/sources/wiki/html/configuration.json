@@ -1,0 +1,94 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Configuration",
+    "pageid": 76,
+    "revid": 5511,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>Citizens configuration is handled in the file <i>/plugins/Citizens/config.yml</i>. See below for detailed information on each setting. For more information on text nodes such as &lt;npc&gt;, see the <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a> page.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Default_Configuration\">Default Configuration</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Configuration&amp;action=edit&amp;section=1\" title=\"Edit section: Default Configuration\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<pre># Citizens Configuration\n\ngeneral:\n  authlib:\n    profile-url: https://sessionserver.mojang.com/session/minecraft/profile/ # generally shouldn't be touched, but allows you to configure a custom GameProfile server for advanced users\n  debug-chunk-loads: false # for advanced debugging of when chunks are loaded and why\n  debug-file: '' # whether to log debug output to a file instead of to console\n  debug-mode: false # enables debugging mode with extra information on spawning, skin fetching, etc.\n  debug-pathfinding: false # enables pathfinding debugging which shows a visual display (yellow flowers) of where NPCs are pathfinding to\n  color-scheme:\n    message-error: &lt;red&gt; # the error message colour, default red\n    message-highlight: &lt;yelloe&gt; # the highlight colour, default yellow\n    message: &lt;green&gt; # the default message colour, default green\n  translation:\n    locale: '' # if you want to use a specific language translation such as fr_FR etc.\n  reload-warning-enabled: true # whether to require /citizens reload entered twice\nnpc:\n  always-use-name-holograms: false # whether to always use name holograms (armor stands) for nameplates rather than custom names\n  chat:\n    options:\n      bystanders-hear-targeted-chat: true \n      max-number-of-targets-to-show: 2\n      multiple-targets-format: &lt;target&gt;|, &lt;target&gt;| &amp; &lt;target&gt;| &amp; others\n      range: 5\n      max-text-range: 500\n      talk-to-npcs: true # whether to include NPCs in chat\n    format:\n      no-targets: '[&lt;npc&gt;]: &lt;text&gt;'\n      with-target-to-bystanders: '[&lt;npc&gt;] -&gt; [&lt;target&gt;]: &lt;text&gt;'\n      to-target: '[&lt;npc&gt;] -&gt; You: &lt;text&gt;'\n      with-targets-to-bystanders: '[&lt;npc&gt;] -&gt; [&lt;targets&gt;]: &lt;text&gt;'\n  pathfinding:\n    new-finder:\n      iterations-per-tick: 5000 # how many steps to run of the new pathfinder every tick. Useful when you want to spread pathfinding over multiple ticks\n      check-bounding-boxes: false # whether to check bounding boxes of entities can fit e.g. through single block gaps or fences etc\n      open-doors: false # whether to open/close doors while pathfinding\n    defaults:\n      destination-teleport-margin: -1 # teleport to the destination when below this threshold. e.g. you may want to teleport to the exact destination if &lt;2 blocks away\n    default-distance-margin: 2 # the distance from the goal to stop early while moving along a path measured in blocks squared\n    default-path-distance-margin: 1 # the distance from the goal to stop early while finding a path measured in blocks\n    update-path-rate: 20 # how often to update the path in ticks, typically for entity targeting\n    maximum-new-pathfinder-iterations: 10000 # the maximum number of blocks to search while pathfinding using the new pathfinder \n    minecraft:\n      max-fall-distance: 3 # the maximum fall distance to check while pathfinding (old pathfinder)\n    attack-range: 3.0625\n    use-new-finder: false # whether to use the built in Citizens A* pathfinder instead of Minecraft's \n    disable-mc-fallback-navigation: true # minecraft by default will try to use 'fallback' pathfinding where it returns the closest reachable block to the destination. by default try to reach the destination only.\n  default:\n    bossbar-view-range: 64 # the bossbar view range, blocks\n    look-close:\n      enabled: false\n      range: 5 # range in blocks\n      random-look-enabled: false\n      random-look-delay: 60 # delay in ticks\n      disable-while-navigating: true\n    pathfinding:\n      range: 75.0 # the maximum pathfinding range to destination in blocks\n    random-talker: true \n    realistic-looking: false # whether to check line of sight when looking close\n    stationary-ticks: -1 # how many ticks can an NPC be stuck in the same block before teleporting to the goal / performing the 'stuck action'\n    block-breaker-radius: -1 # the default radius in blocks for the NPC to pathfind to when breaking blocks\n    talk-close:\n      enabled: false\n      range: 5\n    text: # default text\n      '0': Hi, I'm &lt;npc&gt;!\n    waypoints:\n      cache-paths: false # whether to cache paths found for /npc path. eliminates pathfinding when used\n  limits:\n    default-limit: 10\n    max-permission-checks: 100 # number of permission nodes to check when using NPC limits\n    max-packet-entries: 15 \n    max-speed: 100\n  tablist:\n    disable: true # whether to keep NPCs on the tab list\n  chunks:\n    always-keep-loaded: false\n  controllable:\n    max-ground-speed: 0.5 # maximum speed while on the ground\n    use-boat-controls: true # using WASD type controls\n    ground-direction-modifier: 1.0 #&#160;% speed modifier to turning while on the ground\n  skins:\n    max-retries: -1 # maximum time to try from Mojang\n    retry-delay: 120 # delay in ticks between retries\n    rotation-update-degrees: 90.0 \n    use-latest-by-default: false # whether to always fetch new skin updates\n    view-distance: 100.0 \n    placeholder-update-frequency-ticks: 6000 # how often to update skin placeholders, in ticks\n  packets:\n    update-delay: 30 # performance option, lower = faster updates to equipment, higher = slower updates but more performance\n  selection:\n    quick-select: false \n    item: stick # selection item\n    message: &lt;b&gt;You selected &lt;a&gt;&lt;npc&gt;&lt;b&gt;!\n  player:\n    remove-from-list: true\n  server-ownership: false\n  text:\n    max-talk-cooldown: 5\n    min-talk-cooldown: 10\n    talk-item: book\n  teleport-delay: -1\n  player-scoreboard-teams:\n    enable: true\n  follow:\n    teleport-across-worlds: true # whether to teleport cross-world when /npc follow is enabled\n  commands:\n    global-delay-seconds: 1 # the global delay between click commands in seconds. set to 0 for no delay between commands\n    error-messages:\n      maximum-times-used: You have reached the maximum number of uses ({0}).\n      missing-item: Missing {1} {0}\n      no-permission: You don't have permission to do that.\n      not-enough-experience: You need at least {0} experience.\n      not-enough-money: You need at least ${0}.\n      on-cooldown: Please wait for {minutes} minutes and {seconds_over} seconds.\n      on-global-cooldown: Please wait for {minutes} minutes and {seconds_over} seconds.\nadvanced:\n  check-minecraft-version: true\neconomy:\n  npc:\n    cost: 100.0 # the cost of /npc create if using economy integration\nstorage:\n  save-task:\n    delay: 72000\n  file: saves.yml\n  type: yaml\nsubplugins:\n  folder: plugins\n\n</pre>\n<p><br />\n</p>\n<div class=\"NavFrame &#123;&#123;#if:&#124;&#124;collapsed&#125;&#125;\" style=\"border:none;\"><div class=\"NavHead\" style=\"font-weight:bold; background:transparent; text-align:center;\">old config </div>\n<div class=\"NavContent\" style=\"font-weight:normal; background-color:transparent; text-align:left;\">\n<p>Mouse over each field to see what each one is used for.\n</p>\n<pre># Citizens Configuration\n<span title=\"The NPC block. All NPC specifics go here\" class=\"help\">npc:</span>\n <span title=\"Chat specific settings\" class=\"help\">chat:</span>\n   <span title=\"Prefix that is put before all NPC dialogue lines\" class=\"help\">prefix: '[&lt;npc&gt;]: '</span>\n <span title=\"Configuration on how to select NPCs\" class=\"help\">selection:</span>\n   <span title=\"Whether to go to next task right after selecting NPC instead of having to click again\" class=\"help\">quick-select: false</span>\n   <span title=\"ID of item to use as selection tool\" class=\"help\">item: 280</span>\n   <span title=\"Message outputted to the player when they&#39;ve selected an NPC\" class=\"help\">message: &lt;b&gt;You selected &lt;a&gt;&lt;npc&gt;&lt;b&gt;!</span>\n <span title=\"Default settings for NPCs. Can be changed per-NPC via commands\" class=\"help\">default:</span>\n   <span title=\"Whether to look at the player when they come within 5 blocks\" class=\"help\">look-close: false</span>\n   <span title=\"Randomly choose line to talk instead of talking in order\" class=\"help\">random-talker: true</span>\n   <span title=\"Whether to talk when the player comes within 5 blocks\" class=\"help\">talk-close: false</span>\n <span title=\"Talk settings\" class=\"help\">talk:</span>\n   <span title=\"Maximum time before the NPC will talk again\" class=\"help\">max-cooldown: 60</span>\n   <span title=\"Minimum time before the NPC will talk again\" class=\"help\">min-cooldown: 30</span>\n   <span title=\"Item you have to right-click the NPC with for them to talk\" class=\"help\">talk-item: 340</span>\n <span title=\"Whether the server owns an NPC by default\" class=\"help\">server-ownership: false</span>\n\n<span title=\"General settings regarding Citizens\" class=\"help\">general:</span>\n <span title=\"Whether to be in debug mode or not. Prints more messages to console about Citizens.\" class=\"help\">debug-mode: false</span>\n<span title=\"Subplugin settings\" class=\"help\">subplugins:</span>\n <span title=\"The folder to load subplugins from\" class=\"help\">folder: 'plugins'</span>\n</pre>\n</div></div><p>{{#if:|}}\n</p><div class=\"padded\" style=\"font-size: 12px; padding: 5px\">\n<table class=\"wikitable collapsible collapsed\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Usage\" title=\"Category:Usage\">Usage</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Installation\" title=\"Installation\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Frequently_Asked_Questions\" title=\"Frequently Asked Questions\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Editors\" title=\"Editors\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Characters\" title=\"Characters\">Characters</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/API\" title=\"API\">API</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32;\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Configuration\" title=\"Category:Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a class=\"mw-selflink selflink\">Configuration</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Data_Storage\" title=\"Data Storage\">Data Storage</a>\n</td></tr></tbody></table>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145821\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.058 seconds\nReal time usage: 0.076 seconds\nPreprocessor visited node count: 231/1000000\nRevision size: 8391/2097152 bytes\nPost‐expand include size: 8386/2097152 bytes\nTemplate argument size: 4504/2097152 bytes\nHighest expansion depth: 6/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 6540/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   54.604      1 -total\n 84.16%   45.955      1 Template:Hidden\n 40.24%   21.972     20 Template:H:title\n 15.63%    8.534      1 Template:NavBox\n  6.19%    3.381     10 Template:·\n-->\n\n<!-- Render ID 8678f2e5-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "API"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Data Storage"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Editors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Text Syntax"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Configuration"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Usage"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Default Configuration",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Configuration",
+        "byteoffset": 213,
+        "anchor": "Default_Configuration",
+        "linkAnchor": "Default_Configuration"
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Trader",
+    "pageid": 164,
+    "revid": 1787,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><div class=\"redirectMsg\"><p>Redirect to:</p><ul class=\"redirectText\"><li><a href=\"/CitiTraders\" title=\"CitiTraders\">CitiTraders</a></li></ul></div><link rel=\"mw:PageProp/redirect\" href=\"/CitiTraders\"><p>Until we have traders of our own\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145909\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.002 seconds\nReal time usage: 0.003 seconds\nPreprocessor visited node count: 1/1000000\nRevision size: 32/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 1/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID a3152ae4-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "CitiTraders"
+      }
+    ],
+    "images": [],
+    "sections": []
+  }
+}

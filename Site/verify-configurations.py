@@ -57,6 +57,8 @@ for project,prefix in PROJECTS:
         source=base/'sources/manifest.json'
         if not source.is_file():errors.append(project+': main plugin manifest is missing');continue
         manifest=json.loads(source.read_text('utf-8'))
+        wiki_path=base/'sources/wiki-manifest.json'
+        wiki=json.loads(wiki_path.read_text('utf-8')) if wiki_path.is_file() else []
         for row in manifest:
             page=base/'docs'/row['file']
             if not page.is_file():errors.append(project+': main plugin page missing')
@@ -65,7 +67,7 @@ for project,prefix in PROJECTS:
             if primary.is_file() and row.get('source_sha256')!=hashlib.sha256(primary.read_text('utf-8').encode('utf-8')).hexdigest():errors.append(project+': overview source hash differs')
         if project!='Plugins' and not (base/'sources/overview-sources.md').is_file():errors.append(project+': primary sources missing')
         nav=list(nav_files(yaml.safe_load((base/'mkdocs.yml').read_text('utf-8'))['nav']))
-        if len(nav)!=len(set(nav)) or set(nav)!={row['file'] for row in manifest+extras}:errors.append(project+': plugin navigation coverage differs')
+        if len(nav)!=len(set(nav)) or set(nav)!={row['file'] for row in manifest+extras+wiki}:errors.append(project+': plugin navigation coverage differs')
 report=dict(imported_projects=sum((ROOT/project/'sources'/EXAMPLES_NAME).is_file() for project,_ in PROJECTS),configuration_files=file_count,configuration_pages=page_count,configuration_fields=field_count,code_blocks=block_count,public_placeholders=redaction_count,errors=errors)
 print(json.dumps(report,ensure_ascii=False,indent=2))
 if errors:sys.exit(1)

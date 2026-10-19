@@ -1,0 +1,1096 @@
+[
+  {
+    "url": "http://fs5.directupload.net/images/160306/or6m6n2s.jpg",
+    "status": "unavailable",
+    "http": 502,
+    "content_type": ""
+  },
+  {
+    "url": "http://fs5.directupload.net/images/160306/zswobuo8.jpg",
+    "status": "archived",
+    "file": "wiki/assets/9eea4bd2766607.jpg",
+    "sha256": "461a7b4bba0605d5209b35ed7446f1cef55fa1f502094f4d79e1458183a14073",
+    "bytes": 19690,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "http://fs5.directupload.net/images/160309/7irfoune.jpg",
+    "status": "archived",
+    "file": "wiki/assets/024ed8daf133be.jpg",
+    "sha256": "c850afe393393ab2cfc3c0352f092afadb2ec75034f495ca40962b71fa5aec76",
+    "bytes": 14614,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "http://fs5.directupload.net/images/160309/gjxvhpd8.jpg",
+    "status": "archived",
+    "file": "wiki/assets/8f0e0da491133a.jpg",
+    "sha256": "8c8d697e640e1638c743a0e7045534c767d38b833ad5fff8d1e8d315afb49b94",
+    "bytes": 3130,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "http://fs5.directupload.net/images/160309/u3fdf5cx.jpg",
+    "status": "archived",
+    "file": "wiki/assets/b71b70505feaf0.jpg",
+    "sha256": "f8777fbc321fd2e22985896b84d3dff46730b69e912b103e16313b7412944058",
+    "bytes": 8040,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "http://fs5.directupload.net/images/160317/ebnd74rs.jpg",
+    "status": "archived",
+    "file": "wiki/assets/ca56d75acc4414.jpg",
+    "sha256": "c09bf512333b1b6536548f680545595eda5043f41b39f995a037ee5d8e6d525e",
+    "bytes": 35151,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://example.org/",
+    "status": "unavailable",
+    "http": 200,
+    "content_type": "text/html"
+  },
+  {
+    "url": "https://i.imgur.com/0HKvAUM.png",
+    "status": "unavailable",
+    "http": 429,
+    "content_type": ""
+  },
+  {
+    "url": "https://i.imgur.com/ZiHWeBQ.png",
+    "status": "unavailable",
+    "http": 429,
+    "content_type": ""
+  },
+  {
+    "url": "https://i.imgur.com/pOPO9cI.png",
+    "status": "unavailable",
+    "http": 429,
+    "content_type": ""
+  },
+  {
+    "url": "https://i.imgur.com/yOc8Hnm.gif",
+    "status": "unavailable",
+    "http": 429,
+    "content_type": ""
+  },
+  {
+    "url": "https://img.youtube.com/vi/3rZtjFyLp3I/0.jpg",
+    "status": "archived",
+    "file": "wiki/assets/3f88c234b953da.jpg",
+    "sha256": "8c250cbf20df274b6ddfc1ef2cbb56a0f88fcc4c59eb68c0776c1c9a7e0f3480",
+    "bytes": 37655,
+    "content_type": "image/jpeg"
+  },
+  {
+    "url": "https://imgur.com/2CWpJnK.png",
+    "status": "unavailable",
+    "http": 429,
+    "content_type": "application/json"
+  },
+  {
+    "url": "https://imgur.com/Ja7mZcg.png",
+    "status": "unavailable",
+    "http": 429,
+    "content_type": "application/json"
+  },
+  {
+    "url": "https://imgur.com/OpWkcEG.png",
+    "status": "unavailable",
+    "http": 429,
+    "content_type": "application/json"
+  },
+  {
+    "url": "https://imgur.com/bHpnok7.gif",
+    "status": "unavailable",
+    "http": 429,
+    "content_type": "application/json"
+  },
+  {
+    "url": "https://imgur.com/eSmLMUL.gif",
+    "status": "unavailable",
+    "http": 429,
+    "content_type": "application/json"
+  },
+  {
+    "url": "https://imgur.com/ggCYoIB.gif",
+    "status": "unavailable",
+    "http": 429,
+    "content_type": "application/json"
+  },
+  {
+    "url": "https://imgur.com/oHIBddK.gif",
+    "status": "unavailable",
+    "http": 429,
+    "content_type": "application/json"
+  },
+  {
+    "url": "https://placehold.co/150x150?text=Missing+Image",
+    "status": "archived",
+    "file": "wiki/assets/20d4ce6d3986e6.svg",
+    "sha256": "b12a2aaddc123abad6ec1edf1159792558f9fd2ba96b6247a9d4e54a74881316",
+    "bytes": 5490,
+    "content_type": "image/svg+xml"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/ANGRY_VILLAGER.gif",
+    "status": "archived",
+    "file": "wiki/assets/59c27b8a813c13.gif",
+    "sha256": "c263de00eaef26a6580fce0913dc6a0ead4e410bd62c5dbbcfd62ee36478815b",
+    "bytes": 331377,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/ASH.gif",
+    "status": "archived",
+    "file": "wiki/assets/8813aa5cf6484b.gif",
+    "sha256": "6f762f371d1605596dfbcc09f9bc5f301cc3d6f64247792ff8695edef870dadf",
+    "bytes": 1823898,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/BARRIER.gif",
+    "status": "archived",
+    "file": "wiki/assets/f29760c921ccb2.gif",
+    "sha256": "0f7f34a0eec51e2c3e7520cfba04d5655ddb0279baf59e574417b66007e1061d",
+    "bytes": 323072,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/BLOCK.gif",
+    "status": "archived",
+    "file": "wiki/assets/f1ddb4fedbc31f.gif",
+    "sha256": "bde47a093e4dad716fe869cfc89854cdb5c1f0faaab89a2bc067e19a93267af5",
+    "bytes": 1766274,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/BLOCK_DUST.gif",
+    "status": "archived",
+    "file": "wiki/assets/db4528b1e12a93.gif",
+    "sha256": "9e74686934bf7cc9ea57a53137611ff51c616ac2eec3a5d9fe2da749292375cb",
+    "bytes": 1769552,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/BLOCK_MARKER.gif",
+    "status": "archived",
+    "file": "wiki/assets/cdc7e8ad22acad.gif",
+    "sha256": "c48c132ba3140ce28ea29a2918bb199cb1935915c7eb02877bfe60c81d0a5b85",
+    "bytes": 1576506,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/BUBBLE.gif",
+    "status": "archived",
+    "file": "wiki/assets/0865b72ca098f7.gif",
+    "sha256": "50ab461838d41d95a7c2ffda92ab0454d47b5539b069d56811fbb4bfafeb01e8",
+    "bytes": 46520,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/BUBBLE_COLUMN_UP.gif",
+    "status": "archived",
+    "file": "wiki/assets/29a98c2f3c27c1.gif",
+    "sha256": "58cbee63c9f78b5f0601b48a4ed2827929a36d4aa1ebad1865c5a3d963309c4f",
+    "bytes": 1771699,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/BUBBLE_POP.gif",
+    "status": "archived",
+    "file": "wiki/assets/be4dc9ebbebec7.gif",
+    "sha256": "efe9eb8d9dc1197e20f4d7be66deb48671257fe310867108c5323147f918056c",
+    "bytes": 1614163,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/CAMPFIRE_COSY_SMOKE.gif",
+    "status": "archived",
+    "file": "wiki/assets/83adf6a41b3a0f.gif",
+    "sha256": "30ff0adc5d98d5c3ab84617f6ba80133a294d45d82bf7ead464095076bdbb9dd",
+    "bytes": 1931308,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/CAMPFIRE_SIGNAL_SMOKE.gif",
+    "status": "archived",
+    "file": "wiki/assets/943b0827339a29.gif",
+    "sha256": "fa1df22705d52e02a7fc9bd3f7477b99011320e36ebde888658ba8ef5d494d94",
+    "bytes": 1860783,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/CHERRY_LEAVES.gif",
+    "status": "archived",
+    "file": "wiki/assets/e2a304aaaf784f.gif",
+    "sha256": "761b1c82e0cbdc61a84b154dcbeea787ce96d86a5a0131ffbb676ce839300bd5",
+    "bytes": 392634,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/CLOUD.gif",
+    "status": "archived",
+    "file": "wiki/assets/81edffb1d01408.gif",
+    "sha256": "5787586cb721db22a2110330b846c10825aaa425f6707023488097df8028863d",
+    "bytes": 564579,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/COMPOSTER.gif",
+    "status": "archived",
+    "file": "wiki/assets/2e7180bf065067.gif",
+    "sha256": "8680e609dde297dd59628a64c8d64fee107eedf7718f7c78e32974b17bd89bb8",
+    "bytes": 110169,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/CRIMSON_SPORE.gif",
+    "status": "archived",
+    "file": "wiki/assets/e80e55db30b343.gif",
+    "sha256": "103980114f878bed71edb79e7805622ae8fcf5bf2e6de6b14af6f8f82b86b9b5",
+    "bytes": 691426,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/CRIT.gif",
+    "status": "archived",
+    "file": "wiki/assets/8f9f90d4e8fdf6.gif",
+    "sha256": "5360e591db297f0c534374c722ef1f5653dacb3133b79108eb07dabeb6ce253e",
+    "bytes": 116868,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/CURRENT_DOWN.gif",
+    "status": "archived",
+    "file": "wiki/assets/861418a888f381.gif",
+    "sha256": "7ff99ccb0394a3718a3e681bc5d984e7cd7a5698ece6448229b4ca6b626c8319",
+    "bytes": 56913,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/DAMAGE_INDICATOR.gif",
+    "status": "archived",
+    "file": "wiki/assets/cbb99d422417b8.gif",
+    "sha256": "4583ddee8cf245e29278c2b9a38d2259006bad41bd165d23b31aab32eb05459e",
+    "bytes": 361318,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/DOLPHIN.gif",
+    "status": "archived",
+    "file": "wiki/assets/c2870dd6ce0113.gif",
+    "sha256": "dea323ed807afc572a1e1c90c1711c8a34cd28099f768b31174ec78864bd435a",
+    "bytes": 135099,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/DRAGON_BREATH.gif",
+    "status": "archived",
+    "file": "wiki/assets/30d6e7eceb8197.gif",
+    "sha256": "7e5364b24d97f79e03d587bdc155996cc12e1e11663a6e65ffcc8c18447e08ba",
+    "bytes": 108679,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/DRIPPING_DRIPSTONE_LAVA.gif",
+    "status": "archived",
+    "file": "wiki/assets/3fc5bfe11e34b1.gif",
+    "sha256": "3745ebdb852f0f89da752cf0ae2b128832362c921ae3e45700d9ddac6ec0099d",
+    "bytes": 1417730,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/DRIPPING_DRIPSTONE_WATER.gif",
+    "status": "archived",
+    "file": "wiki/assets/588380e72d95f1.gif",
+    "sha256": "7268764d64890f385b16f48d718518bafdebf7a8454f3cacd5fc00c524f2ab84",
+    "bytes": 1936545,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/DRIPPING_HONEY.gif",
+    "status": "archived",
+    "file": "wiki/assets/180ea8bb706cfa.gif",
+    "sha256": "3115c8cc0c1f0a75bab934b093f6006fe40ab18f293ab9db573f704244a14fa1",
+    "bytes": 2141477,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/DRIPPING_LAVA.gif",
+    "status": "archived",
+    "file": "wiki/assets/34d76e61581068.gif",
+    "sha256": "4396781c08b4cedca486a95171ee29a1ff7a4ba631584d44ab423ae650f1a865",
+    "bytes": 459327,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/DRIPPING_OBSIDIAN_TEAR.gif",
+    "status": "archived",
+    "file": "wiki/assets/de19397fc45e10.gif",
+    "sha256": "cc14bc4cc604233a996820ed353251fd198f12ba42be59cf13daeb25dccc14a4",
+    "bytes": 1760664,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/DRIPPING_WATER.gif",
+    "status": "archived",
+    "file": "wiki/assets/52cc907719b4a0.gif",
+    "sha256": "a40abd4cfd9692a796090b535cb0a3a95c6f2d5b3117306638c6eeebd2884bfb",
+    "bytes": 601390,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/DUST.gif",
+    "status": "archived",
+    "file": "wiki/assets/4f0e98c5d6e4ad.gif",
+    "sha256": "9f14365db80fb6febc9027ee8a44391b5b8bcb2d51ea24cd7430b51547662260",
+    "bytes": 225234,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/DUST_COLOR_TRANSITION.gif",
+    "status": "archived",
+    "file": "wiki/assets/4dccfb345bf27a.gif",
+    "sha256": "108f71ecc0d68c1349aab592e6f132c260b902be7962309517ddbef8eab0e919",
+    "bytes": 2146074,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/DUST_PILLAR.gif",
+    "status": "archived",
+    "file": "wiki/assets/057be3a72fc44a.gif",
+    "sha256": "c759833e8c8d65815e711e7bf1916393fd9611a21bd0eb079c7c13a2de134e5c",
+    "bytes": 221399,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/DUST_PLUME.gif",
+    "status": "archived",
+    "file": "wiki/assets/fae5a01b36eb9d.gif",
+    "sha256": "6fafe1fc863a09e6b89776f344b249ee14f7330a1c6800bef9b062bd41a6c722",
+    "bytes": 322477,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/EFFECT.gif",
+    "status": "archived",
+    "file": "wiki/assets/f0b70d383410fb.gif",
+    "sha256": "6238b368a4e4d9c8e07a7d706f736643babd50e1dd0578a6096d9cdca0a33567",
+    "bytes": 1955061,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/EGG_CRACK.gif",
+    "status": "archived",
+    "file": "wiki/assets/4690f26c795614.gif",
+    "sha256": "7ee7c8de51581d5c67deb44643b812c467206d08b44e6347ad1e2a68ac1d72c0",
+    "bytes": 241741,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/ELDER_GUARDIAN.gif",
+    "status": "archived",
+    "file": "wiki/assets/1a2926e0148e37.gif",
+    "sha256": "d70dcee87e46a3ca9f79d536c830371ef4bef41487de9b9eaa94b3749a995208",
+    "bytes": 5735331,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/ELECTRIC_SPARK.gif",
+    "status": "archived",
+    "file": "wiki/assets/191ed138a8507f.gif",
+    "sha256": "5d61983dc17d671ee25adb66c62a7cbaa741eac03723b191e3436a90325c408e",
+    "bytes": 1919769,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/ENCHANT.gif",
+    "status": "archived",
+    "file": "wiki/assets/cdc91b39281be5.gif",
+    "sha256": "703050d1134040873eed439fcecdc2605eb234e98f52f49d66fcebd3fed73217",
+    "bytes": 1876670,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/ENCHANTED_HIT.gif",
+    "status": "archived",
+    "file": "wiki/assets/7ffc697b92894c.gif",
+    "sha256": "af748fe8269d92dfb56fd9c7bd282af2eaf0b61e5a7fb26569f80a2da1060b43",
+    "bytes": 156687,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/END_ROD.gif",
+    "status": "archived",
+    "file": "wiki/assets/e52ced03b79068.gif",
+    "sha256": "44b2675a1d2c5e6f5197e52ea1c07c033d59b48e7717845d80e1ffd6e3ab57d2",
+    "bytes": 1983399,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/ENTITY_EFFECT.gif",
+    "status": "archived",
+    "file": "wiki/assets/0b03aae31f0f65.gif",
+    "sha256": "7b181134bb66d0e5380d135df7833aab6c708f931f0681756bec865fc38bd67a",
+    "bytes": 1761480,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/EXPLOSION.gif",
+    "status": "archived",
+    "file": "wiki/assets/d0b2c9444d80ea.gif",
+    "sha256": "468594d8b4c2bca6032018799dd3cda3c705430c320b2292d033135bda9f5023",
+    "bytes": 411484,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/EXPLOSION_EMITTER.gif",
+    "status": "archived",
+    "file": "wiki/assets/8033775fbf722d.gif",
+    "sha256": "756c38abd0e33fe68ce05aa8406581b96ea74281c61b096225da27f3c1d289b6",
+    "bytes": 1645192,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/FALLING_DRIPSTONE_LAVA.gif",
+    "status": "archived",
+    "file": "wiki/assets/b86eb422ade785.gif",
+    "sha256": "7d92a1c5cc2344ee13e79a6f588be5794f10326e5f21d1d8e41e21e919f090f2",
+    "bytes": 1616155,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/FALLING_DRIPSTONE_WATER.gif",
+    "status": "archived",
+    "file": "wiki/assets/cb338b633ebd17.gif",
+    "sha256": "050ef4c9973e79bd92331c71abc82927be2f5b92287a123889f8f77931c38b44",
+    "bytes": 345892,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/FALLING_DUST.gif",
+    "status": "archived",
+    "file": "wiki/assets/7dbef9df738acf.gif",
+    "sha256": "bc5d6d3c95f0db41f46d4fa72433182b11307ee97d8bcedd85a2ad882b9da3e5",
+    "bytes": 351005,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/FALLING_HONEY.gif",
+    "status": "archived",
+    "file": "wiki/assets/1694986ef4428f.gif",
+    "sha256": "fd40941fe7f1d826b4431af8b75262919df6454762acaaa3afed038b6fee48ec",
+    "bytes": 238447,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/FALLING_LAVA.gif",
+    "status": "archived",
+    "file": "wiki/assets/33970e0051e308.gif",
+    "sha256": "76c87bde64af3e5d73f904368267b4fa647473088ca7000b967325971d65cf81",
+    "bytes": 110245,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/FALLING_NECTAR.gif",
+    "status": "archived",
+    "file": "wiki/assets/b00503b17e193c.gif",
+    "sha256": "5774191f7d1d7c152df77882f8639388240997db1dcc24e3c4b0dbadaacda27d",
+    "bytes": 235673,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/FALLING_OBSIDIAN_TEAR.gif",
+    "status": "archived",
+    "file": "wiki/assets/e7120bcc9927d2.gif",
+    "sha256": "9acf31aaaa6cc3a57795e69b760f46ef080ec6b96ad12891a699b2cd66ea62c4",
+    "bytes": 205977,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/FALLING_SPORE_BLOSSOM.gif",
+    "status": "archived",
+    "file": "wiki/assets/0dab965dc6659f.gif",
+    "sha256": "d752a2d886eca9f1d2b9d53a9d54f8c3cdb39cdbf2c778d915b8110d902eed02",
+    "bytes": 261401,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/FALLING_WATER.gif",
+    "status": "archived",
+    "file": "wiki/assets/4408809f3f33dc.gif",
+    "sha256": "b8b3b4237e62fe4bf2705a59a314c048fec03fc39a4293b3e916d0a7abbf37cf",
+    "bytes": 142245,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/FIREWORK.gif",
+    "status": "archived",
+    "file": "wiki/assets/0991d9c316aa2b.gif",
+    "sha256": "f1eb20693b2637bba0bbb4f72affd00f646f3ee6af55c387c38042ade73c2f4a",
+    "bytes": 484898,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/FISHING.gif",
+    "status": "archived",
+    "file": "wiki/assets/03a9deaf116f88.gif",
+    "sha256": "e3fd2bba117c869f028c6958c995909f6aa53c7dcc430b9c27afa089e3de3202",
+    "bytes": 180088,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/FLAME.gif",
+    "status": "archived",
+    "file": "wiki/assets/1dcb8bd9a07994.gif",
+    "sha256": "9dfe6b68b9d5643b8143348f688f52e849941f0fc4d9f1512268e7351ae4e5c3",
+    "bytes": 327762,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/FLASH.gif",
+    "status": "archived",
+    "file": "wiki/assets/145d2926edeb84.gif",
+    "sha256": "943534bd52d376329ddd1ad7ce7aa923fa7b9c3a6b1c020311e0d3247fc724f9",
+    "bytes": 337231,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/GLOW.gif",
+    "status": "archived",
+    "file": "wiki/assets/f08e390183c2d4.gif",
+    "sha256": "3f60ee8243151ce60510aa3f69d8cb8ca092497dba99f30b075a0d6173bebf35",
+    "bytes": 358113,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/GLOW_SQUID_INK.gif",
+    "status": "archived",
+    "file": "wiki/assets/e649505dcdfa38.gif",
+    "sha256": "c3caca09f8b0a3fa45d04db920e919458113b6fd7d77459f0e89c42fb18750c7",
+    "bytes": 347787,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/GUST.gif",
+    "status": "archived",
+    "file": "wiki/assets/ba03eee541f117.gif",
+    "sha256": "3ce8a6790c941961d8dc1ba30b278cc60cc8408659512571c67c0effef191b35",
+    "bytes": 423903,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/GUST_EMITTER_LARGE.gif",
+    "status": "archived",
+    "file": "wiki/assets/5a9b70649838be.gif",
+    "sha256": "1d3f098f701fd413f521b6e40b615c10577a72678dacc16023c55fa67a608625",
+    "bytes": 906018,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/GUST_EMITTER_SMALL.gif",
+    "status": "archived",
+    "file": "wiki/assets/375d64e140b539.gif",
+    "sha256": "12965b83e57007eafafba2ee569af4d2fc5b6d6877b952070741e48dbc24b908",
+    "bytes": 500431,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/HAPPY_VILLAGER.gif",
+    "status": "archived",
+    "file": "wiki/assets/9ccf3eb9ebef7a.gif",
+    "sha256": "a702be4f2b624f1037e235efb09c2040c17b4a53bde8a3988327b9dacdcf3e20",
+    "bytes": 464762,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/HEART.gif",
+    "status": "archived",
+    "file": "wiki/assets/65d7b9b8ec1d9d.gif",
+    "sha256": "c25a45dc64deaea712dc0a0fe5968f608895efc4a03e295a164adf746898738b",
+    "bytes": 573960,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/INSTANT_EFFECT.gif",
+    "status": "archived",
+    "file": "wiki/assets/48e758e66a534b.gif",
+    "sha256": "4edca459623b1697dea7a3cc679b44edd5d170d4dbb23bdc3c798a3da396cd91",
+    "bytes": 1795286,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/ITEM.gif",
+    "status": "archived",
+    "file": "wiki/assets/c71783896641a7.gif",
+    "sha256": "51757dcf3696092d5436bfd954a9ca1ac6d688015d7eaf8ff2ece296aad49fb6",
+    "bytes": 1747793,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/ITEM_SLIME.gif",
+    "status": "archived",
+    "file": "wiki/assets/827cf797769719.gif",
+    "sha256": "bb9591d1443c3137092486f9b4f7cef45f0061899a29307bf5cd4b7a52f68d35",
+    "bytes": 287279,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/ITEM_SNOWBALL.gif",
+    "status": "archived",
+    "file": "wiki/assets/d6918c0db4f690.gif",
+    "sha256": "2e4d64ff6cdf273a78eb3434f0b18081b3b8efbf63e675eb14ea1bc338eb9886",
+    "bytes": 277641,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/LANDING_HONEY.gif",
+    "status": "archived",
+    "file": "wiki/assets/2b588f1f522f47.gif",
+    "sha256": "fa3b9849efb131e8d4b9a66897ece7fb89b852ff5ea063287e3448652fd3b39b",
+    "bytes": 1765002,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/LANDING_LAVA.gif",
+    "status": "archived",
+    "file": "wiki/assets/c230e4ff2831ed.gif",
+    "sha256": "200eb94f7bfc2e975c593d047b24f24bfa84c95e66766fa77b4818e7d47163f1",
+    "bytes": 1941313,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/LANDING_OBSIDIAN_TEAR.gif",
+    "status": "archived",
+    "file": "wiki/assets/e75dbac0911049.gif",
+    "sha256": "d2b7178e84c6cb011c1a285fae263f266c5b8a262edf0fd023673a078c6c9807",
+    "bytes": 1946746,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/LARGE_SMOKE.gif",
+    "status": "archived",
+    "file": "wiki/assets/b84d56fb69187b.gif",
+    "sha256": "f5fddc16936deb841221f7062a4d32633397b7593ae06661ff27b16e5b846813",
+    "bytes": 639003,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/LAVA.gif",
+    "status": "archived",
+    "file": "wiki/assets/b0a9ad4fb8725a.gif",
+    "sha256": "80936da2f6a5a78419feba697aa983ef8690ebdd087508ff1d04f5ae45d35401",
+    "bytes": 2308495,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/LIGHT.gif",
+    "status": "archived",
+    "file": "wiki/assets/bae3cb817b7f25.gif",
+    "sha256": "fa1dfbda350419517fbff4a742ee29c9fd3bc8e7d4e52daa6fb05a641b9f7a16",
+    "bytes": 307553,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/MYCELIUM.gif",
+    "status": "archived",
+    "file": "wiki/assets/c7693471c86c3d.gif",
+    "sha256": "7da6cc8d16403033b8d641443d86c0a30d4bbd7489629bda91a9542d2976c072",
+    "bytes": 1939979,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/NAUTILUS.gif",
+    "status": "archived",
+    "file": "wiki/assets/d7dca2f1e4e989.gif",
+    "sha256": "cba2ffbeb6920fe322807cb953903ce96fd26e29de6902694781efec0b2f227e",
+    "bytes": 2073295,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/NOTE.gif",
+    "status": "archived",
+    "file": "wiki/assets/2a4ee25fe721a2.gif",
+    "sha256": "167487a77d80b772ef4a832c639ecc0015ec259e28ffbf7ad26fcd09e8cbd58e",
+    "bytes": 1645447,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/OMINOUS_SPAWNING.gif",
+    "status": "archived",
+    "file": "wiki/assets/e0f7d112a54378.gif",
+    "sha256": "33072890bd025f08c5debf8ae27015b75d306c36db8efe1a4329d7c66553d3ad",
+    "bytes": 376382,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/POOF.gif",
+    "status": "archived",
+    "file": "wiki/assets/d6d0430f095ae5.gif",
+    "sha256": "0e0c64d818072555817a20d788468c652f2fad64aa882e7983526af3a425b11c",
+    "bytes": 567914,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/PORTAL.gif",
+    "status": "archived",
+    "file": "wiki/assets/84a3db0c54ae5a.gif",
+    "sha256": "18faf7f37ac42057689c848e257dca80bb605ad7e79b0b7f42fe533755542074",
+    "bytes": 1791367,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/RAID_OMEN.gif",
+    "status": "archived",
+    "file": "wiki/assets/9dcfa69d6c690e.gif",
+    "sha256": "2691ad82ef576ed904b74fcdf4ea1b98e86c164a017feb11c376cce03e79a13e",
+    "bytes": 310961,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/RAIN.gif",
+    "status": "archived",
+    "file": "wiki/assets/7e04777d3f428b.gif",
+    "sha256": "49ffeb524208e8d159ab070df41e796c3b928309305a7115fc5b8de6f66371fd",
+    "bytes": 169229,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/REVERSE_PORTAL.gif",
+    "status": "archived",
+    "file": "wiki/assets/f4d340a73e1d3f.gif",
+    "sha256": "908c55d8469c105af4a783923f30b0f2f6629f450ab40f2315a3179ba48a3c62",
+    "bytes": 297004,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/SCRAPE.gif",
+    "status": "archived",
+    "file": "wiki/assets/6ac5ad04b262b2.gif",
+    "sha256": "343af31714ab59d7cd1e2473a2a076629d2ea226f3b257c006c1307bdf3613a3",
+    "bytes": 47432,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/SCULK_CHARGE_POP.gif",
+    "status": "archived",
+    "file": "wiki/assets/e15b34d693d078.gif",
+    "sha256": "700826d7acb001833ed5d7bcc2203919f1b45f2d48da6217a65b9d34a94b0f70",
+    "bytes": 131197,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/SCULK_SOUL.gif",
+    "status": "archived",
+    "file": "wiki/assets/d4416c3b94d5c9.gif",
+    "sha256": "e7f536c4da13d0b425a2fe117e2ea683b882d7fad32073ebda8639ad54758b07",
+    "bytes": 256584,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/SHRIEK.gif",
+    "status": "archived",
+    "file": "wiki/assets/e19dac6d0ec2b4.gif",
+    "sha256": "45ebbf87b77a73b9a59e28b6ee0034fa3799ecf828bd042a2f0c07601a2ddaa2",
+    "bytes": 264900,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/SMALL_FLAME.gif",
+    "status": "archived",
+    "file": "wiki/assets/6cae568b6b2bfb.gif",
+    "sha256": "2819ae96a10f2c65446163a8e535bb21dc914dffee116705012c4d49524168b5",
+    "bytes": 229625,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/SMALL_GUST.gif",
+    "status": "archived",
+    "file": "wiki/assets/026bd163057c76.gif",
+    "sha256": "c23184f15900f60cbc6deff563c5dea1337b5755b3c8025a8262848f9a93b057",
+    "bytes": 254990,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/SMOKE.gif",
+    "status": "archived",
+    "file": "wiki/assets/b00ef75cb2c3f9.gif",
+    "sha256": "b0ae8bca42246e367b7c960852b9fca3ef48b48c3f0088763d090e1124d84ffc",
+    "bytes": 328260,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/SNEEZE.gif",
+    "status": "archived",
+    "file": "wiki/assets/2b5a8d4812238e.gif",
+    "sha256": "73e262b85088a3e6d9b7c63242ac2c7edb54cc3a7a34f91ef722f6e90ca0f019",
+    "bytes": 530372,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/SNOWFLAKE.gif",
+    "status": "archived",
+    "file": "wiki/assets/5861edba8bc5e1.gif",
+    "sha256": "b64a8f9bb6fc73e73796c7c105cb6300174ab5380f1ce20325e6d86329e940bf",
+    "bytes": 786028,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/SONIC_BOOM.gif",
+    "status": "archived",
+    "file": "wiki/assets/b2c6a0a85406dc.gif",
+    "sha256": "572e199d811a75e46d2e83d3cb0040a41a6cc4486849d142453f92292ac1a7c0",
+    "bytes": 1361927,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/SOUL.gif",
+    "status": "archived",
+    "file": "wiki/assets/c41e44ec9dcd15.gif",
+    "sha256": "6f7f276f0308295e1bd31e99db54be3f71713345346c01acbab567e0273da6e1",
+    "bytes": 1579858,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/SOUL_FIRE_FLAME.gif",
+    "status": "archived",
+    "file": "wiki/assets/b185ddc3d3fb6e.gif",
+    "sha256": "0e66fdb0ac09ddf970938d88849e962a3ea614dd11892efc9172b34032132d20",
+    "bytes": 1826558,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/SPELL_MOB_AMBIENT.gif",
+    "status": "archived",
+    "file": "wiki/assets/1f3c605fbf2b62.gif",
+    "sha256": "a57f8cb19998e2367b442d26458e6bf9b447a471d7cbb5087c92da59ac7f0c0d",
+    "bytes": 1789099,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/SPIT.gif",
+    "status": "archived",
+    "file": "wiki/assets/bd7ebe64e94d9a.gif",
+    "sha256": "13330973bfd7ad9a2331ab95518250f373433e4e462f33dbc012c05fb8cba44a",
+    "bytes": 1871968,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/SPLASH.gif",
+    "status": "archived",
+    "file": "wiki/assets/30966412c57252.gif",
+    "sha256": "5f0dfbed423774b2142449fb49372b25e29ded4a9c97ad8d740a3cfbeec24b38",
+    "bytes": 311321,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/SPORE_BLOSSOM_AIR.gif",
+    "status": "archived",
+    "file": "wiki/assets/117dd99ed09939.gif",
+    "sha256": "4ddb7172a1b456ccd0006f40308b604b33b9077310ed1f13cac5e4655ccae074",
+    "bytes": 2116555,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/SQUID_INK.gif",
+    "status": "archived",
+    "file": "wiki/assets/919c2f253b4fde.gif",
+    "sha256": "07e461275a9acb6988bbaf9ae94eda5291e6bb4d9ecc4ba139f101918ae55c6a",
+    "bytes": 1799080,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/SUSPENDED_DEPTH.gif",
+    "status": "archived",
+    "file": "wiki/assets/50fc24321bffdb.gif",
+    "sha256": "856daa5f1750f260fdf3840f5dfe279ba8d8777575b0125094e0bbae35ec48a2",
+    "bytes": 1520508,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/SWEEP_ATTACK.gif",
+    "status": "archived",
+    "file": "wiki/assets/bf30db9f088a2e.gif",
+    "sha256": "67292e2ab48275697b36064dd106f854d5cec0fd192b8639efb6a8cc791f04ba",
+    "bytes": 1573208,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/TOTEM_OF_UNDYING.gif",
+    "status": "archived",
+    "file": "wiki/assets/a11c55646d5d4c.gif",
+    "sha256": "6047256510ba406cff0bd5b30710b513f31c940df779b3613f2ff00b59500bdb",
+    "bytes": 2041506,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/TRIAL_OMEN.gif",
+    "status": "archived",
+    "file": "wiki/assets/597a951178f113.gif",
+    "sha256": "749c8ac4f96cb4edaf763a87dbbb0c76fc5f7ea5ba0353f8f8be7bb4ae3f3071",
+    "bytes": 253968,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/TRIAL_SPAWNER_DETECTION.gif",
+    "status": "archived",
+    "file": "wiki/assets/9be705d058f92c.gif",
+    "sha256": "b70dea4b7ca5d78efe6d87b0b606d624e05fbdce6c2aed804b71292203734636",
+    "bytes": 457220,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/TRIAL_SPAWNER_DETECTION_OMINOUS.gif",
+    "status": "archived",
+    "file": "wiki/assets/9de9032c224dbb.gif",
+    "sha256": "fb84d534a86487a3288b32a6f77911c7cc4a33c0bfad4d534500c2c3e52dd0d5",
+    "bytes": 325443,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/UNDERWATER.gif",
+    "status": "archived",
+    "file": "wiki/assets/62720061274391.gif",
+    "sha256": "57c4f4fb6c935c59ebc3696bf5f9b30982a5b3a9a6563ffe0e3b7080bfaafa57",
+    "bytes": 45007,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/VAULT_CONNECTION.gif",
+    "status": "archived",
+    "file": "wiki/assets/ddd6264dc8f6aa.gif",
+    "sha256": "06393f25a3c74f0053222126846fb9c2c9d2e4f99f7f16627d47c5695657df23",
+    "bytes": 278002,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/VIBRATION.gif",
+    "status": "archived",
+    "file": "wiki/assets/efa08d3264f792.gif",
+    "sha256": "870d61bf66d8087361db2371c71b5dbe8d00bc979daee56d94b02d658312f6f1",
+    "bytes": 22964,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/WARPED_SPORE.gif",
+    "status": "archived",
+    "file": "wiki/assets/67e4e0b2d5d7fd.gif",
+    "sha256": "0ce16fd79ed0c033b22f4b858f312d4f624c337dd8436dc3bb2040c7634d85a9",
+    "bytes": 604916,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/WAX_OFF.gif",
+    "status": "archived",
+    "file": "wiki/assets/57840017daf743.gif",
+    "sha256": "c4133d411a51bdd5202ce55adac25d1af9b8cfd1406c56a00fcd2f9098bd92e5",
+    "bytes": 48735,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/WAX_ON.gif",
+    "status": "archived",
+    "file": "wiki/assets/b919b3a6aa3e40.gif",
+    "sha256": "0611760a82eb916bd0a8729ee97761d71894c2b883bc2156b8b569b1823a2c68",
+    "bytes": 59980,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/WHITE_ASH.gif",
+    "status": "archived",
+    "file": "wiki/assets/6e896bbc34e5d6.gif",
+    "sha256": "14d1438f9b737c2904a36706ab72fa37567c8bd28aa9545559e68d5ec5529c39",
+    "bytes": 413808,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/WHITE_SMOKE.gif",
+    "status": "archived",
+    "file": "wiki/assets/5b9c41c5f3eca1.gif",
+    "sha256": "f75d91f079b69ec3d30241fadd22e95ede676228e9f01ce8b87b14c57b2da19b",
+    "bytes": 666626,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/Skills/Mechanics/Particle/Particle-Types/images/WITCH.gif",
+    "status": "archived",
+    "file": "wiki/assets/fe97f156a05001.gif",
+    "sha256": "cbaa2df70a663182ca986a65317546df001145b0d65dcada878bf5444731be07",
+    "bytes": 1772577,
+    "content_type": "image/gif"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/uploads/204528492902aa041447fe90880071d8/image.png",
+    "status": "archived",
+    "file": "wiki/assets/014d64a9fd599d.png",
+    "sha256": "3bb605c128c33e3a5231f403c666971903e94f7fc91d01d11c90d3313f37faf0",
+    "bytes": 113554,
+    "content_type": "image/png"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/uploads/434a50c1df7835469c9eda2819f17ad0/image.png",
+    "status": "archived",
+    "file": "wiki/assets/2decd1df5a48fa.png",
+    "sha256": "1c3dd62163d19e91b2202a42e2b95a259cd16d02da96726529718d15a71bdf9a",
+    "bytes": 18333,
+    "content_type": "image/png"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/uploads/66cd302e11d6e8fe2cc4a20b26f7f2e4/image.png",
+    "status": "archived",
+    "file": "wiki/assets/4960a38ded7ab7.png",
+    "sha256": "c8381b2f6b82fd7e9b91cd79f48c885a1bdfba79b21dd0632c4609e67d6f0b12",
+    "bytes": 6233,
+    "content_type": "image/png"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/uploads/81ec8a247b38cc3eba7daca275b46b03/2024-08-17_17.54.14.png",
+    "status": "archived",
+    "file": "wiki/assets/cf84bae283a60f.png",
+    "sha256": "cdc2c7cf3ca596db0d7549e65d6af58145a203a64fe66f055c7870fb9f2615b6",
+    "bytes": 560056,
+    "content_type": "image/png"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/uploads/91ed6d8aaa669e8ae21f8745e8ff4643/image.png",
+    "status": "archived",
+    "file": "wiki/assets/5436313bf1e788.png",
+    "sha256": "15cb70e855d0e26fa8eac88b112535bdf11636f23da9995ce3c0993701e42fbf",
+    "bytes": 9629,
+    "content_type": "image/png"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/uploads/934d66a2973c6e2cabce6d87cc0033db/left.png",
+    "status": "archived",
+    "file": "wiki/assets/e12977b9969158.png",
+    "sha256": "034bce3fb5d1e4b11592183bbf73d1b8b414faebdc9129e9220af8bef19a9726",
+    "bytes": 679675,
+    "content_type": "image/png"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/uploads/9ad97422803c3f35fbeac2e4df7f7d52/image.png",
+    "status": "archived",
+    "file": "wiki/assets/547ab2bafa0183.png",
+    "sha256": "eff53fba611f6449dea40b3bad2292e06ef03e1162ab00dc59a26dbe6233110b",
+    "bytes": 55855,
+    "content_type": "image/png"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/uploads/e9f3926c7a8d74dfb1b8fa6d2cd2d67c/image.png",
+    "status": "archived",
+    "file": "wiki/assets/25661321c43a25.png",
+    "sha256": "bf40b2c7b766d08e81f5d244ef9b103d2fc61d2b107664ed16bbbcc365dc968a",
+    "bytes": 194660,
+    "content_type": "image/png"
+  },
+  {
+    "url": "https://wiki.mythiccraft.io/_media/mythicmobs/uploads/ebf67740e7bc604db56a95cf62397030/image.png",
+    "status": "archived",
+    "file": "wiki/assets/ca5652146c4529.png",
+    "sha256": "086efc9775b7cfd1c3588f26d3ec0d283958c211df8013d8638b1d97daaa71bf",
+    "bytes": 349896,
+    "content_type": "image/png"
+  }
+]

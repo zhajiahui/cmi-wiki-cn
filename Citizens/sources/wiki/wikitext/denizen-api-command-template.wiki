@@ -1,0 +1,151 @@
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://meta.denizenscript.com/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+== Custom Commands == 
+<div style="margin-right:2.0em; padding:10px">
+Denizen is extensible! In addition to Triggers and Requirements(soon!), an API is being provided to help you make custom Script Commands in your project! Have a neat idea for a command? Have a better way to STRIKE a player? (MEGASTRIKE command, anybody?)
+
+Keep reading!
+</div>
+
+== YourCommand extends AbstractCommand ==
+<div style="margin-right:2.0em; padding:10px">
+The first thing you need is a custom command class that extends the Denizen AbstractTrigger. This contains the method called when it's time for your command to be executed. This is called every-single-time a script contains your command.
+</div>
+
+==== Example Command ====
+<div style="margin-right:2.0em; padding:10px">
+Sometimes the easiest way to work is to see an actual example. View a copy of the STRIKE command on Pastie.org for a very simple command. For examples, you can always check [https://github.com/aufdemrand/Denizen/tree/master/src/main/java/net/aufdemrand/denizen/commands/core Core Denizen Commands].
+</div>
+
+==== Command Template ====
+<div style="margin-right:2.0em; padding:10px">
+[http://pastie.org/4368657 View a command template copy on Pastie.org] for a copy/paste of the skeleton of a custom denizen commmand.
+</div>
+
+=== The ScriptEntry object ===
+<div style="margin-right:2.0em; padding:10px">
+When Denizen reads scripts, each line is turned into a SciptScript object that contains the command, the arguments, and various other data and objects, as described below. Your command is an extension of this AbstractCommand class, and each time your command is called in for execution, it's this class that is executed and handled a ScriptEntry. How your Command uses the ScriptEntry information is of course, up to you.
+
+The Denizen ScriptEngine and Executer construct and fill a ScriptEntry with information that can be used in your command. Below is a list of methods you can use against the scriptEntry sent to your commands execute method.
+
+{{ScriptEntry
+|1= getCommand()
+|2= String value of the name of the command
+|3= Used by default in alerting the user when denizen is in debug mode, if the template is used. Also could be useful if your command module contains instructions for more than one command. You can register multiple commands to your module, as discussed later in this document.
+}}
+
+{{ScriptEntry
+|1= arguments()
+|2= String[] value of the arguments used in the script
+|3= This is the output of Denizen's argBuilder method. It splits the command arguments up with spaces and quotes. For instance: <code>arg1 arg2 'argument 3' "argument 4" would return a string array with a size of 4.
+}}
+
+{{ScriptEntry
+|1= arguments()
+|2= String[] value of the arguments used in the script
+|3= This is the output of Denizen's argBuilder method. It splits the command arguments up with spaces and quotes. For instance: <code>arg1 arg2 'this is argument 3' "and that's argument 4" would return a string array with a size of 4. Note argument 4, which handles an argument using a single quote. Hint: Double quotes around the argument, and vice-versa.
+}}
+
+{{ScriptEntry
+|1= sendingQueue()
+|2= QueueType of either QueueType.TRIGGER, QueueType.TASK, or QueueType.ACTIVITY
+|3= Denizen's Script Engine contains a method called runQeues which sends the ScriptEntries off to the executer. During this process, it stores which queue the command was called from. Can be used in advanced situations. Typically, if called by an Interact Script, this contains QueueType.TRIGGER.
+}}
+
+{{ScriptEntry
+|1= getScript()
+|2= String value of the script name
+|3= Could be useful if storing information about a Script. For example, Denizen's FINISH command takes this information for granted if no script is otherwise indicated in the arguments.
+}}
+
+{{ScriptEntry
+|1= getStep() 
+|2= Integer value of the script's step
+|3= Could be used similarly to getScript(). The ZAP command uses this information to know which step to proceed to.
+}}
+
+{{ScriptEntry
+|1= getPlayer()
+|2= Player object of the script triggerer
+|3= Pretty straight forward. The bukkit Player object can get all kinds of information about the player.
+}}
+
+{{ScriptEntry
+|1= getDenizen()
+|2= DenizenNPC object of the script triggeree
+|3= DenizenNPC makes it easy to work with the Denizen that has been interacted with. Good example: LOOK command.
+}}
+
+{{ScriptEntry
+|1= getInitiatedTime()
+|2= Long value of System.currentTimeMillis()
+|3= Contains a <code>Long System.currentTimeMillis()</code> of the system time in which it was sent to your Command for processing which you can use to check against.
+}}
+
+{{ScriptEntry
+|1= setDelayedTime() 
+|2= should be a Long value in the format of System.currentTimeMillis()
+|3= Advanced usage. See the DELAY command for an example.
+}}
+
+{{ScriptEntry
+|1= getDelayedTime()
+|2= Long value that was set with setDelayedTime()
+|3= Advanced usage. Again, see the DELAY command for an example. If not set with setDelayedTime(), this is null by default.
+}}
+
+{{ScriptEntry
+|1= getTexts()
+|2= String[2] of text sent by a Trigger
+|3= Vanilla Denizen will use this to store information sent to/from a Chat Trigger. Element [0] contains the text typed by the Player when the script was triggered, and element [1] contains the text as set in the Trigger: node of the script. 
+}}
+</div>
+
+
+== Registering your command ==
+<div style="margin-right:2.0em; padding:10px">
+In order for Denizen to use your command, it needs to be registered. This could probably be done in your plugin's onEnable() method.
+</div>
+
+==== Example code ====
+<div style="margin-right:2.0em; padding:10px">
+You can also see a [http://pastie.org/4369286 formatted version on Pastie.org].
+
+<pre>
+/*
+ * Sets up my plugin on start of the craftbukkit server.	
+ */
+
+public MyCommand myCommand = new MyCommand();
+
+@Override
+public void onEnable() {
+   getLogger().info("Enabling my plugin!");
+   
+   try {
+       myCommand.registerAs("CUSTOM_COMMAND");
+   } catch (ActivationException e) {
+       plugin.getLogger().log(Level.SEVERE, "Oh no! Activation Exception!");
+       e.printStackTrace();
+   }
+}
+</pre>

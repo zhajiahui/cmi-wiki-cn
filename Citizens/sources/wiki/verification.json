@@ -1,0 +1,16 @@
+{
+  "project": "Citizens",
+  "pages": 179,
+  "code_blocks": 414,
+  "inline_code_tokens": 735,
+  "assets": 37,
+  "coverage": {
+    "discovered": 246,
+    "directory_pages": 191,
+    "translated": 179,
+    "excluded_api": 5,
+    "unavailable": 62
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,49 @@
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://meta.denizenscript.com/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+NOTE: As of 0.8, all Denizen commands allow a player:<name> and/or npc:<id> argument.
+
+<h1>BattleNight</h1>
+<pre>
+	- bn add
+	- bn kick
+	- bn start
+	- bn end
+</pre>
+<h1>mcMMO</h1>
+<pre>
+	- mcmmo add [levels/xp] (skill:<skill>) (party:<party>)
+	- mcmmo remove [levels/xp] (skill:<skill>) (party:<party>)
+	- mcmmo set [levels/xp/xprate/vampirism/hardcore/leader] (skill:<skill>) (party:<party>) (state:{toggle}/true/false)
+</pre>
+<h1>Towny</h1>
+<pre>
+	- towny add [resident/money/town/nation/townblock/bonus/plot/outpost] (<town>) (<location>) (<nation>) (qty:<#>)
+	- towny remove [resident/money/town/nation/townblock/plot/outpost] (<town>) (<location>) (<nation>) (qty:<#>)
+	- towny set [name:<name>/capital/open/public/mayor/surname/title/rank/board/war/maxsize/taxes/tag/spawn/perm/relation] (state:{toggle}/true/false) (<town>) (<nation>)
+</pre>
+<h1>Jobs</h1>
+<pre>
+	- jobs promote [<job>] [<#>]
+	- jobs demote [<job>] [<#>]
+	- jobs join [<job>]
+	- jobs quit [<job>]
+</pre>

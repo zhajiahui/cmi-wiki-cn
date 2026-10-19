@@ -1,0 +1,121 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "1.x/API",
+    "pageid": 18,
+    "revid": 673,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><table class=\"wikitable\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"1\" style=\"width: 100%; background-color:#F75D59; font-size: 32px; padding: 15px;\"><b>Not Supported!</b>\n</th></tr>\n<tr>\n<td style=\"font-size: 16px;\">This page is about Citizens 1.x, while the current version is Citizens 2.0.2. This page's content may be outdated, and shouldn't be trusted as being correct. See this page's talk page for more information. If you were looking for the 2.0.2 equivalent of this page, try <a href=\"/API\" title=\"API\">API</a>. If you feel this message was displayed in error, please contact an administrator.\n</td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"JavaDocs\">JavaDocs</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/API&amp;action=edit&amp;section=1\" title=\"Edit section: JavaDocs\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Our API documentation can be found <a rel=\"nofollow\" class=\"external text\" href=\"http://jd.citizensnpcs.net\">here</a>. For a basic guide on hooking into Citizens, see below.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Using_the_Citizens_API\">Using the Citizens API</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/API&amp;action=edit&amp;section=2\" title=\"Edit section: Using the Citizens API\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Hooking into Citizens is the same as hooking into any other Bukkit plugin like PermissionsBukkit or iConomy. Add the latest version of Citizens.jar to your build path. Then, add this code to your onEnable in the main class:\n</p>\n<pre>\n\npublic void onEnable() {\n    PluginManager pm = getServer().getPluginManager();\n    Plugin test = pm.getPlugin(\"Citizens\");\n    if (test&#160;!= null) {\n        System.out.println(\"Successfully hooked into Citizens!\");\n    } else {\n        System.out.println(\"Citizens isn't loaded.\");\n        // disable your plugin because Citizens was not loaded\n        pm.disablePlugin(this);\n    }\n}\n</pre>\n<p>Now, to actually use the methods that Citizens has to offer, add the following import to your code:\n</p>\n<pre>import net.citizensnpcs.api.CitizensManager;</pre>\n<p>For specifics on the methods CitizensManager has, see our JavaDocs. For now, here is a basic example of how to use the class.\n</p>\n<pre>//checks if the passed Bukkit entity is an NPC\npublic void checkNPC(Entity entity) {\n    if(CitizensManager.isNPC(entity)) {\n        Bukkit.getServer().broadcastMessage(CitizensManager.get(entity).getStrippedName() + \" is an NPC!\");\n    }\n}\n</pre>\n<p>The last step is to make sure Citizens loads before your plugin. If it doesn't, your plugin will throw some nasty console errors. Add this line to your plugin.yml:\n</p>\n<pre>soft-depend: [Citizens]</pre>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Creating_an_NPC_type\">Creating an NPC type</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/API&amp;action=edit&amp;section=3\" title=\"Edit section: Creating an NPC type\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>To create an NPC type, you need two things - a class extending CitizensNPCType, and a class extending CitizensNPC.\nYou'll also need to create a file called 'type.info' (essentially like a plugin.yml), and place that in the root of your JAR. The type.info should contain a main: setting that points to the class extending CitizensNPCType.\n</p><p>Now, place your compiled JAR into the plugins/Citizens/types folder - and you're done!\nCaveats: due to Bukkit restrictions, Citizens cannot register new commands for you.\n</p>\n<div class=\"padded\" style=\"font-size: 12px; padding: 5px\">\n<table class=\"wikitable collapsible collapsed\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Usage\" title=\"Category:Usage\">Usage</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Installation\" title=\"Installation\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Frequently_Asked_Questions\" title=\"Frequently Asked Questions\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Editors\" title=\"Editors\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Characters\" title=\"Characters\">Characters</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/API\" title=\"API\">API</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32;\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Configuration\" title=\"Category:Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Configuration\" title=\"Configuration\">Configuration</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Data_Storage\" title=\"Data Storage\">Data Storage</a>\n</td></tr></tbody></table>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145755\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.032 seconds\nReal time usage: 0.057 seconds\nPreprocessor visited node count: 51/1000000\nRevision size: 2119/2097152 bytes\nPost‐expand include size: 2413/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 4/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 739/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   29.903      1 -total\n 64.61%   19.319      1 Template:NoSupport\n 43.58%   13.033      2 Template:Version2F\n 31.34%    9.372      1 Template:NavBox\n 25.44%    7.608      1 Template:Version2\n 13.80%    4.127     10 Template:·\n-->\n\n<!-- Render ID 76f9a9e7-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "API"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Configuration"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Data Storage"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Editors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Text Syntax"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Configuration"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Usage"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "JavaDocs",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "1.x/API",
+        "byteoffset": 14,
+        "anchor": "JavaDocs",
+        "linkAnchor": "JavaDocs"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Using the Citizens API",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "1.x/API",
+        "byteoffset": 155,
+        "anchor": "Using_the_Citizens_API",
+        "linkAnchor": "Using_the_Citizens_API"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Creating an NPC type",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "1.x/API",
+        "byteoffset": 1548,
+        "anchor": "Creating_an_NPC_type",
+        "linkAnchor": "Creating_an_NPC_type"
+      }
+    ]
+  }
+}

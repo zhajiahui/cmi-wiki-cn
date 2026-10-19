@@ -1,0 +1,100 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "HyperMerchant",
+    "pageid": 336,
+    "revid": 5037,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#HyperMerchant\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">HyperMerchant</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-2\"><a href=\"#Where_to_get_latest_version\"><span class=\"tocnumber\">1.1</span> <span class=\"toctext\">Where to get latest version</span></a></li>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#How_to_install\"><span class=\"tocnumber\">1.2</span> <span class=\"toctext\">How to install</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#How_to_use\"><span class=\"tocnumber\">1.3</span> <span class=\"toctext\">How to use</span></a></li>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#Other_npc_commands\"><span class=\"tocnumber\">1.4</span> <span class=\"toctext\">Other npc commands</span></a></li>\n<li class=\"toclevel-2 tocsection-6\"><a href=\"#HyperMerchant_also_includes_the_following_conveniance_commands:\"><span class=\"tocnumber\">1.5</span> <span class=\"toctext\">HyperMerchant also includes the following conveniance commands:</span></a></li>\n<li class=\"toclevel-2 tocsection-7\"><a href=\"#Other_features:\"><span class=\"tocnumber\">1.6</span> <span class=\"toctext\">Other features:</span></a></li>\n</ul>\n</li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"HyperMerchant\">HyperMerchant</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=HyperMerchant&amp;action=edit&amp;section=1\" title=\"Edit section: HyperMerchant\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><a rel=\"nofollow\" class=\"external text\" href=\"http://dev.bukkit.org/bukkit-plugins/hypermerchant/\">HyperMerchant</a> is a merchant npc for use with HyperConomy shops.\n</p><p>Features include:\n</p>\n<ul><li>An easy to use Inventory based GUI for your players to buy and sell from your HyperConomy shops.</li></ul>\n<ul><li>Should work nicely with HyperConomy shop permissions.</li></ul>\n<ul><li>Toggleable Merchant off-duty mode. Close any store temporarily with a simple command.</li></ul>\n<ul><li>Simple commands to change NPC Greeting, Farewell, Off-Duty, and Deny Service/No Permission messages.</li></ul>\n<p><br />\nMuch of the information on this page may not be up to date. Please visit the HyperMerchant bukkitdev page for the latest info.\n</p>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"Where_to_get_latest_version\">Where to get latest version</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=HyperMerchant&amp;action=edit&amp;section=2\" title=\"Edit section: Where to get latest version\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>HyperMerchant 1.57-dev is the latest release on <a rel=\"nofollow\" class=\"external text\" href=\"http://dev.bukkit.org/bukkit-plugins/hypermerchant/\">bukkitdev</a>. It is compatible with Bukkit/Spigot 1.8.\n</p><p>The <a rel=\"nofollow\" class=\"external text\" href=\"http://ci.citizensnpcs.co/job/HyperMerchant/\">latest dev build</a> is available at the CI server. \n</p><p><br />\nThere is a <a rel=\"nofollow\" class=\"external text\" href=\"http://dev.bukkit.org/bukkit-plugins/hypermerchant/pages/compatibility/\">compatibility guide</a> for other versions of Bukkit.\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"How_to_install\">How to install</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=HyperMerchant&amp;action=edit&amp;section=3\" title=\"Edit section: How to install\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Make sure you have a compatible version of HyperConomy installed.\n</p><p>Save the HyperMerchant.jar into your plugin folder\n</p>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"How_to_use\">How to use</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=HyperMerchant&amp;action=edit&amp;section=4\" title=\"Edit section: How to use\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ol><li>Have a HyperConomy shop already set up.</li>\n<li>Create an npc: /create npc my_shopkeeper</li>\n<li>Assign npc the hypermerchant trait: /trait hypermerchant</li>\n<li>Assign npc to the shop: /hmerchant setshop shop-name</li></ol>\n<p>That is it. You can now open that shop's menu by interacting with my_shopkeeper.\n</p><p>Alternately, you can open the shop's menu using the /shopmenu or /remotemenu commands\n</p><p>There is a short video demonstrating most of the plugin functionality at <a rel=\"nofollow\" class=\"external text\" href=\"http://dev.bukkit.org/bukkit-plugins/hypermerchant/\">bukkitdev</a>.\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"Other_npc_commands\">Other npc commands</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=HyperMerchant&amp;action=edit&amp;section=5\" title=\"Edit section: Other npc commands\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ul><li>/<b>hmerchant</b> <i>offduty</i>    - toggle npc off-duty mode.</li>\n<li>/<b>hmerchant</b> <i>greeting</i> Hi, welcome to my shop.   --- assign what npc will say when clicked upon.</li>\n<li>/<b>hmerchant</b> <i>farewell</i> Thanks for the money, dude!   --- assign what npc will say when store menu is closed.</li>\n<li>/<b>hmerchant</b> <i>closed</i> Sorry, im on my lunch break.    --- assign what npc will say when set to off-duty mode.</li>\n<li>/<b>hmerchant</b> <i>deny</i> You are not permitted to shop here.    --- assign what npc will say if player doesn't have proper permissions.</li>\n<li>/<b>hmerchant</b> <i>setshop</i> shop_name_here   --- assign what shop's inventory is displayed when npc is clicked on. The npc does not have to be inside the shop or even in the same world as the shop.</li></ul>\n<p>The above commands all operate upon the currently selected npc, unless the --id flag is specified:\n</p>\n<ul><li>/<b>hmerchant</b> <i>greeting</i> Hi, welcome to my shop. <i>--id</i> 71</li></ul>\n<p>or\n</p>\n<ul><li>/<b>hmerchant</b> <i>--id</i> 71 <i>greeting</i> Hi, welcome to my shop.</li></ul>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"HyperMerchant_also_includes_the_following_conveniance_commands:\">HyperMerchant also includes the following conveniance commands:</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=HyperMerchant&amp;action=edit&amp;section=6\" title=\"Edit section: HyperMerchant also includes the following conveniance commands:\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ul><li>/<b>remotemenu</b> <i>[shopname]</i>    - open a shop's menu from anywhere.</li>\n<li>/<b>shopmenu</b>    - open the menu of the shop you are standing in.</li>\n<li>/<b>rslist</b>    - list the names of all stores that can be accessed with /remotemenu command.</li>\n<li>/<b>onduty</b>    - Toggle whether a player shop owner is open for business.</li></ul>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"Other_features:\">Other features:</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=HyperMerchant&amp;action=edit&amp;section=7\" title=\"Edit section: Other features:\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Players who own a shop can be clicked on by players who wish to do business with them.\nShop owners can  use the /onduty command to disable this functionality, and it can be disabled in the config.yml file.\nYou can limit shop owners to only doing business while inside their shop.\n</p><p><br />\npermissions:\n</p>\n<pre>  hypermerchant.*:\n     description: Gives access to all HyperMerchant commands\n     children:\n        hypermerchant.menu: true\n        hypermerchant.remote: true\n        hypermerchant.npc: true\n        hypermerchant.manage: true\n  hypermerchant.menu:\n     description: Allow use of the /shopmenu command.\n     default: true\n  hypermerchant.npc:\n     description: Allow interaction with hypermerchant npc.\n     default: true\n  hypermerchant.remote:\n     description: Allow use of the /remotemenu command.\n     default: op\n  hypermerchant.manage:\n     description: Allow use of the /hmerchant command.\n     default: op\n</pre>\n<!-- \nNewPP limit report\nCached time: 20261019145900\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.018 seconds\nReal time usage: 0.020 seconds\nPreprocessor visited node count: 20/1000000\nRevision size: 4114/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 9db7e063-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "HyperMerchant",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "HyperMerchant",
+        "byteoffset": 0,
+        "anchor": "HyperMerchant",
+        "linkAnchor": "HyperMerchant"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "Where to get latest version",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "HyperMerchant",
+        "byteoffset": 638,
+        "anchor": "Where_to_get_latest_version",
+        "linkAnchor": "Where_to_get_latest_version"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "How to install",
+        "number": "1.2",
+        "index": "3",
+        "fromtitle": "HyperMerchant",
+        "byteoffset": 1071,
+        "anchor": "How_to_install",
+        "linkAnchor": "How_to_install"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "How to use",
+        "number": "1.3",
+        "index": "4",
+        "fromtitle": "HyperMerchant",
+        "byteoffset": 1215,
+        "anchor": "How_to_use",
+        "linkAnchor": "How_to_use"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "Other npc commands",
+        "number": "1.4",
+        "index": "5",
+        "fromtitle": "HyperMerchant",
+        "byteoffset": 1746,
+        "anchor": "Other_npc_commands",
+        "linkAnchor": "Other_npc_commands"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "HyperMerchant also includes the following conveniance commands:",
+        "number": "1.5",
+        "index": "6",
+        "fromtitle": "HyperMerchant",
+        "byteoffset": 2761,
+        "anchor": "HyperMerchant_also_includes_the_following_conveniance_commands:",
+        "linkAnchor": "HyperMerchant_also_includes_the_following_conveniance_commands:"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "Other features:",
+        "number": "1.6",
+        "index": "7",
+        "fromtitle": "HyperMerchant",
+        "byteoffset": 3157,
+        "anchor": "Other_features:",
+        "linkAnchor": "Other_features:"
+      }
+    ],
+    "showtoc": ""
+  }
+}

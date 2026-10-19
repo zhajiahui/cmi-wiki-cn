@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en" data-accent-color="violet" data-content_root="../../../">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Expression Syntax - WorldEdit 7.4 documentation</title><link rel="index" title="Index" href="../../../genindex/" /><link rel="search" title="Search" href="../../../search/" /><link rel="next" title="CraftScripts" href="../craftscripts/" /><link rel="prev" title="Other" href="../" />
+      <link rel="canonical" href="https://worldedit.enginehub.org/en/latest/usage/other/expressions/" /><script>
+    function setColorMode(t){let e=document.documentElement;e.setAttribute("data-color-mode",t);let a=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t;"auto"===t&&(s=a?"dark":"light"),"light"===s?(e.classList.remove("dark"),e.classList.add("light")):(e.classList.remove("light"),e.classList.add("dark"))}
+    setColorMode(localStorage._theme||"auto");
+  </script><link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=ad592e98" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/shibuya.css?v=2ceb65ce" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/icons.css?v=ff96e03d" />
+    <link media="print" rel="stylesheet" type="text/css" href="../../../_static/print.css?v=20ff2c19" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=55f29028" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sy-f-text: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+  --sy-f-heading: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+}
+</style>
+    
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://worldedit.enginehub.org/en/latest/usage/other/expressions/"/>
+  <meta property="og:title" content="Expression Syntax"/>
+    <meta name="twitter:card" content="summary"/>
+  <script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="worldedit" /><meta name="readthedocs-version-slug" content="latest" /><meta name="readthedocs-resolver-filename" content="/usage/other/expressions/" /><meta name="readthedocs-http-status" content="200" /></head>
+<body><div class="sy-head">
+  <div class="sy-head-blur"></div>
+  <div class="sy-head-inner sy-container mx-auto">
+    <a class="sy-head-brand" href="../../../">
+      
+      
+      <strong>WorldEdit</strong>
+    </a>
+    <div class="sy-head-nav" id="head-nav">
+      <nav class="sy-head-links" data-align=left><ul><li class="link">
+          <a href="https://enginehub.org">
+            <span>Developed by EngineHub</span><i class="i-lucide external-link"></i></a>
+        </li><li class="link">
+          <a href="https://github.com/sponsors/EngineHub?o=esb">
+            <span><iconify-icon icon='simple-icons:githubsponsors' style='color: #db61a2;'></iconify-icon> Sponsored by users like you!</span><i class="i-lucide external-link"></i></a>
+        </li></ul></nav>
+      <div class="sy-head-extra flex items-center print:hidden"><form class="searchbox flex items-center" action="../../../search/" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <kbd>/</kbd>
+</form><div class="sy-head-socials">
+  <a href="https://github.com/EngineHub/WorldEdit" aria-label="GitHub">
+    <iconify-icon icon="simple-icons:github"></iconify-icon>
+  </a>
+  <a href="https://discord.gg/enginehub" aria-label="Discord">
+    <iconify-icon icon="simple-icons:discord"></iconify-icon>
+  </a></div></div>
+    </div>
+    <div class="sy-head-actions flex items-center shrink-0 print:hidden"><button class="js-theme theme-switch flex items-center"
+data-aria-auto="Switch to light color mode"
+data-aria-light="Switch to dark color mode"
+data-aria-dark="Switch to auto color mode">
+<i class="i-lucide theme-icon"></i>
+</button><button class="md:hidden flex items-center js-menu" aria-label="Menu" type="button" aria-controls="head-nav" aria-expanded="false">
+        <div class="hamburger">
+          <span class="hamburger_1"></span>
+          <span class="hamburger_2"></span>
+          <span class="hamburger_3"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="sy-page sy-container flex mx-auto">
+  <aside id="lside" class="sy-lside md:w-72 md:shrink-0 print:hidden">
+    <div class="sy-lside-inner md:sticky">
+      <div class="sy-scrollbar p-6">
+        <div class="globaltoc" data-expand-depth="2"><ul class="current">
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../install/">Installation</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../quickstart/">Quick Start</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../config/">Configuration</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../permissions/">Permissions</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../commands/">Commands</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../">Usage</a><ul class="current">
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../general/">General</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../general/history/">History</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../general/sessions/">Sessions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../general/patterns/">Patterns</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../general/masks/">Masks</a></li>
+</ul>
+</li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../navigation/">Navigation</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../regions/">Regions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../regions/selections/">Selection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../regions/regionops/">Region Operations</a></li>
+</ul>
+</li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../clipboard/">Clipboard</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../generation/">Generation</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../tools/tools/">Tools</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../tools/brushes/">Brushes</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../utilities/">Utilities</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../snapshots/">Snapshots</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../">Other</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Expression Syntax</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../craftscripts/">CraftScripts</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../api/">Developer API</a><ul>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../../api/concepts/">API Concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/actors/">Actors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/local-sessions/">Local Sessions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/blocks/">Blocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/patterns-and-masks/">Patterns and Masks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/extents/">Extents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/regions/">Regions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/registries/">Registries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/edit-sessions/">Edit Sessions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/concepts/adapters/">Adapters</a></li>
+</ul>
+</li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../../api/examples/">API Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/examples/clipboard/">Clipboard Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/examples/clipboard/#schematic-examples">Schematic Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api/examples/local-sessions/">LocalSession Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../../api/internal-apis/">Internal APIs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../faq/">Common Questions</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../support/">Getting Help</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../localisation/">Localisation</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../../source-code/">Source Code</a></li>
+</ul>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="lside-overlay js-menu" role="button" aria-label="Close left sidebar" aria-controls="lside" aria-expanded="false"></div>
+  <aside id="rside" class="sy-rside pb-3 w-64 shrink-0 order-last">
+    <button class="rside-close js-menu xl:hidden" aria-label="Close Table of Contents" type="button" aria-controls="rside" aria-expanded="false">
+      <i class="i-lucide close"></i>
+    </button>
+    <div class="sy-scrollbar sy-rside-inner px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4"><div class="localtoc"><h3>On this page</h3><ul>
+<li><a class="reference internal" href="#operators">Operators</a><ul>
+<li><a class="reference internal" href="#binary-infix">Binary infix</a></li>
+<li><a class="reference internal" href="#prefix">Prefix</a></li>
+<li><a class="reference internal" href="#postfix">Postfix</a></li>
+<li><a class="reference internal" href="#ternary-infix">Ternary infix</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#functions">Functions</a></li>
+<li><a class="reference internal" href="#constants">Constants</a></li>
+<li><a class="reference internal" href="#block-statements">Block Statements</a></li>
+<li><a class="reference internal" href="#control-structures">Control Structures</a><ul>
+<li><a class="reference internal" href="#loops">Loops</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="edit-this-page">
+  <a href="https://github.com/EngineHub/WorldEditDocs/blob/master/source/usage/other/expressions.rst">Edit this page</a>
+</div></div>
+  </aside>
+  <div class="rside-overlay js-menu" role="button" aria-label="Close Table of Contents" aria-controls="rside" aria-expanded="false"></div>
+  <main class="sy-main w-full max-sm:max-w-full print:pt-6">
+<div class="sy-breadcrumbs" role="navigation">
+  <div class="sy-breadcrumbs-inner flex items-center">
+    <div class="md:hidden mr-3">
+      <button class="js-menu" aria-label="Menu" type="button" aria-controls="lside" aria-expanded="false">
+        <i class="i-lucide menu"></i>
+      </button>
+    </div>
+    <ol class="flex-1" itemscope itemtype="https://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="../../../"><span itemprop="name">WorldEdit</span></a>
+        <span>/</span>
+        <meta itemprop="position" content="1" />
+      </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="../../"><span itemprop="name">Usage</span></a>
+        <span>/</span>
+        <meta itemprop="position" content="2" />
+      </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="../"><span itemprop="name">Other</span></a>
+        <span>/</span>
+        <meta itemprop="position" content="3" />
+      </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <strong itemprop="name">Expression Syntax</strong>
+        <meta itemprop="position" content="4" />
+      </li></ol>
+    <div class="xl:hidden ml-1">
+      <button class="js-menu" aria-label="Show table of contents" type="button" aria-controls="rside"
+        aria-expanded="false">
+        <i class="i-lucide outdent"></i>
+      </button>
+    </div>
+  </div>
+</div><div class="flex flex-col break-words justify-between">
+      <div class="relative min-w-0 max-w-6xl px-6 pb-6 pt-8 xl:px-12">
+  <div class="copy-page-wrapper relative pb-4 lg:absolute lg:top-8 lg:right-6 xl:right-12">
+  <div id="copy-page-trigger">
+    <button
+      type="button"
+      class="js-copy px-3 py-1 inline-flex items-center gap-1"
+      data-url="https://worldedit.enginehub.org/en/latest/_sources/usage/other/expressions.rst.txt"
+    >
+      <i class="i-lucide" data-icon="copy"></i>
+      <span>Copy page</span>
+    </button>
+    <button class="js-menu px-2 py-1" type="button" aria-label="More actions"
+      aria-haspopup="menu" aria-expanded="false" aria-controls="copy-page-content">
+      <i class="i-lucide chevron-down"></i>
+    </button>
+  </div>
+  <div id="copy-page-content" role="menu" aria-orientation="vertical" aria-hidden="true">
+    <div role="presentation">
+      <div class="flex flex-col" role="group">
+        <button class="js-copy" type="button" role="menuitem"
+          data-url="https://worldedit.enginehub.org/en/latest/_sources/usage/other/expressions.rst.txt">
+          <span class="iconify-icon">
+            <i class="i-lucide" data-icon="copy"></i>
+          </span>
+          <span>Copy page</span>
+        </button>
+        <a role="menuitem" href="https://worldedit.enginehub.org/en/latest/_sources/usage/other/expressions.rst.txt" target="_blank" rel="nofollow"><iconify-icon icon="bi:code-slash"></iconify-icon>
+            <span>View Source</span></a><a role="menuitem" href="https://chatgpt.com/?hints=search&q=Read%20https%3A//worldedit.enginehub.org/en/latest/_sources/usage/other/expressions.rst.txt%20so%20I%20can%20ask%20questions%20about%20it." target="_blank" rel="nofollow">
+          <iconify-icon icon="bi:openai"></iconify-icon>
+          <span>Open in ChatGPT</span>
+        </a><a role="menuitem" href="https://claude.ai/new?q=Read%20https%3A//worldedit.enginehub.org/en/latest/_sources/usage/other/expressions.rst.txt%20so%20I%20can%20ask%20questions%20about%20it." target="_blank" rel="nofollow">
+          <iconify-icon icon="bi:claude"></iconify-icon>
+          <span>Open in Claude</span>
+        </a></div>
+    </div>
+  </div>
+</div><article class="yue" role="main">
+          <section id="expression-syntax">
+<h1>Expression Syntax<a class="headerlink" href="#expression-syntax" title="Link to this heading">#</a></h1>
+<p>The WorldEdit expression parser is supposed to work like Java and related languages, with a few subtle differences:</p>
+<ul class="simple">
+<li><p>Final semicolons can be omitted in most cases.</p></li>
+<li><p>The last value in a sequence is always returned, even without a return statement.</p></li>
+<li><p>The binary infix <code class="docutils literal notranslate"><span class="pre">^</span></code> operator is a power operator instead of an xor operator and has an according priority as well.</p></li>
+<li><p>There is a postfix factorial operator (<code class="docutils literal notranslate"><span class="pre">!</span></code>).</p></li>
+<li><p>There is a binary infix near operator (<code class="docutils literal notranslate"><span class="pre">~=</span></code>).</p></li>
+<li><p>No objects :)</p></li>
+</ul>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#operators" id="id1">Operators</a></p>
+<ul>
+<li><p><a class="reference internal" href="#binary-infix" id="id2">Binary infix</a></p></li>
+<li><p><a class="reference internal" href="#prefix" id="id3">Prefix</a></p></li>
+<li><p><a class="reference internal" href="#postfix" id="id4">Postfix</a></p></li>
+<li><p><a class="reference internal" href="#ternary-infix" id="id5">Ternary infix</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#functions" id="id6">Functions</a></p></li>
+<li><p><a class="reference internal" href="#constants" id="id7">Constants</a></p></li>
+<li><p><a class="reference internal" href="#block-statements" id="id8">Block Statements</a></p></li>
+<li><p><a class="reference internal" href="#control-structures" id="id9">Control Structures</a></p>
+<ul>
+<li><p><a class="reference internal" href="#loops" id="id10">Loops</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="operators">
+<h2>Operators<a class="headerlink" href="#operators" title="Link to this heading">#</a></h2>
+<p>The expression parser uses <a class="reference external" href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html">Java’s precedence rules</a>, with the following exceptions and additions:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The binary power operator (<code class="docutils literal notranslate"><span class="pre">^</span></code>) is between priority 2 and 3</p></li>
+<li><p>The postfix factorial operator (<code class="docutils literal notranslate"><span class="pre">!</span></code>) has a priority of 2</p></li>
+<li><p>The near operator (<code class="docutils literal notranslate"><span class="pre">~=</span></code>) has a priority of 7</p></li>
+</ul>
+</div></blockquote>
+<section id="binary-infix">
+<h3>Binary infix<a class="headerlink" href="#binary-infix" title="Link to this heading">#</a></h3>
+<p>These operators are put between their two operands.</p>
+<aside class="topic">
+<p class="topic-title">Arithmetic</p>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 83.3%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">+</span></code></p></td>
+<td><p>Addition</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">-</span></code></p></td>
+<td><p>Subtraction</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">*</span></code></p></td>
+<td><p>Multiplication</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">/</span></code></p></td>
+<td><p>Division</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">%</span></code></p></td>
+<td><p>Remainder</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">^</span></code></p></td>
+<td><p>Power</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</aside>
+<aside class="topic">
+<p class="topic-title">Bitwise</p>
+<p>These operators interpret their operands as 32 bit integers and operate on their bits.</p>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 83.3%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">&lt;&lt;</span></code></p></td>
+<td><p>Left-shift</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span></code></p></td>
+<td><p>Right-shift</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</aside>
+<aside class="topic">
+<p class="topic-title">Logical</p>
+<p>These operators interpret everything greater than zero as true and everything else as false.
+They return 1 for true and 0 for false.</p>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 83.3%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">&amp;&amp;</span></code></p></td>
+<td><p>Logical and</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">||</span></code></p></td>
+<td><p>Logical or</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</aside>
+<aside class="topic">
+<p class="topic-title">Comparison</p>
+<p>These operators compare their operands and return 1 for true and 0 for false.</p>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 83.3%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">&lt;</span></code></p></td>
+<td><p>less than</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">&gt;</span></code></p></td>
+<td><p>greater than</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">&lt;=</span></code></p></td>
+<td><p>less or equal</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">&gt;=</span></code></p></td>
+<td><p>greater or equal</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">==</span></code></p></td>
+<td><p>equal</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">!=</span></code></p></td>
+<td><p>not equal</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">~=</span></code></p></td>
+<td><p>near</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</aside>
+<aside class="topic">
+<p class="topic-title">Assignment</p>
+<p>These operators require a variable on the left side.
+Using the simple assignment operator (<code class="docutils literal notranslate"><span class="pre">=</span></code>) to assign to a non-existant variable creates a temporary variable.</p>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 83.3%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">=</span></code></p></td>
+<td><p>simple assignment</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">+=</span></code></p></td>
+<td><p>addition+assignment</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">-=</span></code></p></td>
+<td><p>subtraction+assignment</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">*=</span></code></p></td>
+<td><p>multiplication+assignment</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">/=</span></code></p></td>
+<td><p>division+assignment</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">%=</span></code></p></td>
+<td><p>remainder+assignment</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">^=</span></code></p></td>
+<td><p>power+assignment</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</aside>
+</section>
+<section id="prefix">
+<h3>Prefix<a class="headerlink" href="#prefix" title="Link to this heading">#</a></h3>
+<p>These operators precede the expression they apply to.</p>
+<aside class="topic">
+<p class="topic-title">Prefix Operators</p>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 83.3%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">-x</span></code></p></td>
+<td><p>(negation)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">~x</span></code></p></td>
+<td><p>Bitwise complement (see bitwise binary operators)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">!x</span></code></p></td>
+<td><p>Logical complement (see logical binary operators)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">++x</span></code></p></td>
+<td><p>Pre-increment</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--x</span></code></p></td>
+<td><p>Pre-decrement</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</aside>
+</section>
+<section id="postfix">
+<h3>Postfix<a class="headerlink" href="#postfix" title="Link to this heading">#</a></h3>
+<p>These operators succeed the expression they apply to.</p>
+<aside class="topic">
+<p class="topic-title">Postfix Operators</p>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 83.3%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">x!</span></code></p></td>
+<td><p>Factorial</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">x++</span></code></p></td>
+<td><p>Post-increment</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">x--</span></code></p></td>
+<td><p>Post-decrement</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</aside>
+</section>
+<section id="ternary-infix">
+<h3>Ternary infix<a class="headerlink" href="#ternary-infix" title="Link to this heading">#</a></h3>
+<p>The ternary operator is used to represent a conditional expression in a compact way:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">&lt;condition&gt; ? &lt;true-branch&gt; : &lt;false-branch&gt;
+</span></pre></div>
+</div>
+<p>It works exactly like the if/else statement, except that the branches can only be single expressions.</p>
+</section>
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">Math Functions</p>
+<p>The expression parser provides the following functions from the Java Math library:</p>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 83.3%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">abs</span></code></p></td>
+<td><p>Returns the absolute value of a number.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">acos</span></code></p></td>
+<td><p>Returns the arc cosine of a value; the returned angle is in the range 0.0 through pi.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">asin</span></code></p></td>
+<td><p>Returns the arc sine of a value; the returned angle is in the range -pi/2 through pi/2.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">atan2</span></code></p></td>
+<td><p>Returns the angle theta from the conversion of rectangular coordinates (x, y) to polar coordinates (r, theta).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">atan</span></code></p></td>
+<td><p>Returns the arc tangent of a value; the returned angle is in the range -pi/2 through pi/2.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">cbrt</span></code></p></td>
+<td><p>Returns the cube root of a value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ceil</span></code></p></td>
+<td><p>Returns the smallest (closest to negative infinity) value that is greater than or equal to the argument and is equal to a mathematical integer.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">cos</span></code></p></td>
+<td><p>Returns the trigonometric cosine of an angle.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">cosh</span></code></p></td>
+<td><p>Returns the hyperbolic cosine of a value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">exp</span></code></p></td>
+<td><p>Returns Euler’s number e raised to the power of a value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">floor</span></code></p></td>
+<td><p>Returns the largest (closest to positive infinity) value that is less than or equal to the argument and is equal to a mathematical integer.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ln</span></code></p></td>
+<td><p>Returns the natural logarithm (base e) of a value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">log</span></code></p></td>
+<td><p>Returns the natural logarithm (base e) of a value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">log10</span></code></p></td>
+<td><p>Returns the base 10 logarithm (base e) of a value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">max</span></code></p></td>
+<td><p>Returns the greatest of the values. (supports 2 and 3 arguments)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">min</span></code></p></td>
+<td><p>Returns the smallest of the values. (supports 2 and 3 arguments)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">rint</span></code></p></td>
+<td><p>Returns the number that is closest in value to the argument and is equal to a mathematical integer.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">round</span></code></p></td>
+<td><p>Returns the closest number to the argument</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">sin</span></code></p></td>
+<td><p>Returns the trigonometric sine of an angle.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">sinh</span></code></p></td>
+<td><p>Returns the hyperbolic sine of a value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">sqrt</span></code></p></td>
+<td><p>Returns the correctly rounded positive square root of a value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">tan</span></code></p></td>
+<td><p>Returns the trigonometric tangent of an angle.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">tanh</span></code></p></td>
+<td><p>Returns the hyperbolic tangent of a value.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</aside>
+<aside class="topic">
+<p class="topic-title">Additional Functions</p>
+<p>Additionally, it provides the following functions:</p>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 31.8%" />
+<col style="width: 68.2%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">rotate(x,</span> <span class="pre">y,</span> <span class="pre">angle)</span></code></p></td>
+<td><p>Rotates the given coordinate pair by the given angle, in radians.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">swap(x,</span> <span class="pre">y)</span></code></p></td>
+<td><p>Swaps the contents of the 2 given variables.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">random()</span></code></p></td>
+<td><p>Returns a random positive number less than 1.0.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">randint(max)</span></code></p></td>
+<td><p>Returns a random positive integer less than max.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">perlin(seed,</span> <span class="pre">x,</span> <span class="pre">y,</span> <span class="pre">z,</span> <span class="pre">frequency,</span> <span class="pre">octaves,</span> <span class="pre">persisence)</span></code></p></td>
+<td><p>Generates perlin noise with the given parameters.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">voronoi(seed,</span> <span class="pre">x,</span> <span class="pre">y,</span> <span class="pre">z,</span> <span class="pre">frequency)</span></code></p></td>
+<td><p>Generates voronoi noise with the given parameters.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ridgedmulti(seed,</span> <span class="pre">x,</span> <span class="pre">y,</span> <span class="pre">z,</span> <span class="pre">frequency,</span> <span class="pre">octaves)</span></code></p></td>
+<td><p>Generated ridged multi fractal noise with the given parameters.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</aside>
+<aside class="topic">
+<p class="topic-title">Block Query Functions</p>
+<p>The following functions can be used to query blocks in a world in an editing context. Note that they still use legacy ID and data, so they may have undefined behaviors for new (1.13+) blocks.</p>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 38.1%" />
+<col style="width: 61.9%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">query(x,</span> <span class="pre">y,</span> <span class="pre">z,</span> <span class="pre">type,</span> <span class="pre">data)</span></code></p></td>
+<td><p>Returns true if the block at the given coordinates has the given legacy id and data value. If type or data are variables, the id and data of the block will be assigned to that variable.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">queryRel(dx,</span> <span class="pre">dy,</span> <span class="pre">dz,</span> <span class="pre">type,</span> <span class="pre">data)</span></code></p></td>
+<td><p>Like query, except with an offset from the currently evaluated block coordinates</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">queryAbs(xp,</span> <span class="pre">yp,</span> <span class="pre">zp,</span> <span class="pre">type,</span> <span class="pre">data)</span></code></p></td>
+<td><p>Like query, except with absolute world coordinates</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</aside>
+<aside class="topic">
+<p class="topic-title">Buffer Functions</p>
+<p>These functions provide access to data buffers (essentially, arrays). Two buffers are provided, one is a global shared buffer, and one is local to the expression. The function with <cite>g</cite> prepended accesses the global buffer, without the <cite>g</cite> accesses the local buffer.</p>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 38.1%" />
+<col style="width: 61.9%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">(g)megabuf(index)</span></code></p></td>
+<td><p>Returns the value of the buffer at the given index.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">(g)megabuf(index,</span> <span class="pre">value)</span></code></p></td>
+<td><p>Sets the value of the buffer at the given index.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">(g)closest(x,</span> <span class="pre">y,</span> <span class="pre">z,</span> <span class="pre">index,</span> <span class="pre">count,</span> <span class="pre">stride)</span></code></p></td>
+<td><p>Finds the index of the closest set of x,y,z values (as in, three consecutive buffer values) to the given x,y,z values within <em>count</em> iterations and <em>stride</em> space between each iteration, starting at the given index value.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</aside>
+</section>
+<section id="constants">
+<h2>Constants<a class="headerlink" href="#constants" title="Link to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">Constants</p>
+<p>The following constants are always available, and cannot be assigned.</p>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 15.8%" />
+<col style="width: 31.6%" />
+<col style="width: 52.6%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">e</span></code></p></td>
+<td><p>2.7182818284590452354</p></td>
+<td><p>The base of the natural logarithm</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">pi</span></code></p></td>
+<td><p>3.14159265358979323846</p></td>
+<td><p>The ratio between circumference and diameter of a circle</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+<td><p>1</p></td>
+<td><p>for boolean operations</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+<td><p>0</p></td>
+<td><p>for boolean operations</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</aside>
+</section>
+<section id="block-statements">
+<h2>Block Statements<a class="headerlink" href="#block-statements" title="Link to this heading">#</a></h2>
+<p>Block statements are groups of statements enclosed in braces:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">{ x=5; y=6; }
+</span></pre></div>
+</div>
+<p>They are mostly used in conjunction with control structures.</p>
+</section>
+<section id="control-structures">
+<h2>Control Structures<a class="headerlink" href="#control-structures" title="Link to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">if/else</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">if (&lt;condition&gt;) &lt;true-branch&gt;
+</span><span data-line="2">if (&lt;condition&gt;) &lt;true-branch&gt; else &lt;false-branch&gt;
+</span></pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;condition&gt;</span></code> is evaluated to decide which branch to execute.</p></li>
+<li><p>Everything greater than zero is interpreted as true and everything else as false.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;true-code&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;false-code&gt;</span></code> can either be single statements delimited with a semicolon or block statements.</p></li>
+</ul>
+<p><strong>Note:</strong> An else keyword is always associated with the last if.
+This allows elseif constructs like these:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">if (&lt;condition 1&gt;) &lt;true-code 1&gt; else if (&lt;condition 2&gt;) &lt;true-code 2&gt; else &lt;false-code&gt;
+</span></pre></div>
+</div>
+</aside>
+<section id="loops">
+<h3>Loops<a class="headerlink" href="#loops" title="Link to this heading">#</a></h3>
+<p>Loops can at most loop 256 times.</p>
+<aside class="topic">
+<p class="topic-title">while</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">while (&lt;condition&gt;) &lt;body&gt;
+</span><span data-line="2">do &lt;body&gt; while (&lt;condition&gt;);
+</span></pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;condition&gt;</span></code> is evaluated to decide whether to continue looping.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;body&gt;</span></code> can either be a single statement delimited with a semicolon or a block statement.</p></li>
+<li><p>do-while checks the condition after executing the body.</p></li>
+</ul>
+</aside>
+<aside class="topic">
+<p class="topic-title">Java/C-style for</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">for (&lt;init&gt;; &lt;condition&gt;; &lt;increment&gt;) &lt;body&gt;
+</span></pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;init&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;condition&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;increment&gt;</span></code> are single expressions.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;body&gt;</span></code> can either be a single statement delimited with a semicolon or a block statement.</p></li>
+</ul>
+<p><strong>Execution steps</strong></p>
+<p>First, <code class="docutils literal notranslate"><span class="pre">&lt;init&gt;</span></code> is evaluated once, then, each iteration follows these steps:</p>
+<ol class="arabic simple">
+<li><p>If <code class="docutils literal notranslate"><span class="pre">&lt;condition&gt;</span></code> evaluates as less than or equal to zero (i.e. false), the loop is aborted.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;body&gt;</span></code> is executed.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;increment&gt;</span></code> is executed.</p></li>
+</ol>
+</aside>
+<aside class="topic">
+<p class="topic-title">Simple for</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span data-line="1">for (&lt;counter&gt; = &lt;first&gt;, &lt;last&gt;) &lt;body&gt;
+</span></pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;counter&gt;</span></code> is a variable used to count the iterations.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;first&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;last&gt;</span></code> are single expressions.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;body&gt;</span></code> can either be a single statement delimited with a semicolon or a block statement.</p></li>
+</ul>
+<p><strong>Execution steps</strong></p>
+<p>First, an internal counter is set to <code class="docutils literal notranslate"><span class="pre">&lt;first&gt;</span></code>. Then, each iteration follows these steps:</p>
+<ol class="arabic simple">
+<li><p>If the internal counter exceeds <code class="docutils literal notranslate"><span class="pre">&lt;last&gt;</span></code>, the loop is aborted.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;counter&gt;</span></code> is set to the internal counter.</p></li>
+<li><p>&lt;body&gt; is executed.</p></li>
+<li><p>&lt;counter&gt; is incremented by 1.0.</p></li>
+</ol>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;first&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;last&gt;</span></code> are only evaluated once.</p>
+</aside>
+</section>
+</section>
+</section>
+
+        </article><button class="back-to-top" type="button">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+  </svg>
+  <span>Back to top</span>
+</button><div class="navigation flex print:hidden"><div class="navigation-prev">
+    <a href="../">
+      <i class="i-lucide chevron-left"></i>
+      <div class="page-info">
+        <span>Previous</span><div class="title">Other</div></div>
+    </a>
+  </div><div class="navigation-next">
+    <a href="../craftscripts/">
+      <div class="page-info">
+        <span>Next</span>
+        <div class="title">CraftScripts</div>
+      </div>
+      <i class="i-lucide chevron-right"></i>
+    </a>
+  </div></div><div class="sponsorbox">
+    <div class="sponsor apexhosting">
+        <a href="https://billing.apexminecrafthosting.com/aff.php?aff=3108">
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 750 150" style="enable-background:new 0 0 750 150;" xml:space="preserve">
+            <style type="text/css">
+                .st0{fill:var(--sponsor-logo-color);}
+                .st1{display:none;}
+            </style>
+            <g id="Layer_1_1_">
+                <g>
+                    <path id="XMLID_29_" class="st0" d="M352.5,71.7c0,11.8-0.1,23.5,0.1,35.3c0.1,4.5-1.6,7.1-5.7,9c-16.5,7.3-32.9,15-49.5,22.1
+                        c-2.5,1.1-6.4,0.9-9-0.2c-17.1-7.4-34-15.2-51-22.8c-3.5-1.6-4-4.7-4-8c0-7.6,0-15.2,0-22.8c0-15.6,0-31.3,0-46.9
+                        c0-7.3,0.9-8.5,7.6-10.7c15.2-5,30.3-10.1,45.7-14.6c4-1.2,8.9-1.2,12.9,0c15.2,4.5,30.2,9.8,45.2,14.8c6.3,2.1,7.5,3.7,7.6,10.6
+                        C352.5,48.7,352.5,60.2,352.5,71.7L352.5,71.7z M247.7,44.9c0,19.6,0,38.5,0.1,57.3c0,1,1.1,2.4,2.1,2.9
+                        c7.6,3.6,15.2,7.1,22.9,10.6c4.5,2,9,4,13.8,6.1c0-19.7,0-38.8-0.1-57.8c0-0.8-0.8-2.1-1.5-2.5C272.9,56,260.7,50.6,247.7,44.9z
+                        M339,44.6c-12.3,5.7-23.8,11.1-35.3,16.3c-2.2,1-2.9,2.2-2.9,4.6c0.1,16.6,0.1,33.2,0.1,49.8c0,1.7,0,5.3,0,5.3s-0.1,0.3,0.1,0.4
+                        s24.9-10.9,36.6-16.2c0.7-0.3,1.4-1.7,1.4-2.6C339.1,83.3,339.1,64.4,339,44.6z M260.6,35c0,0.1,21.8,10,32.4,14.7
+                        c0.6,0.3,1.6,0.2,2.3-0.1c10.1-4.6,20.1-9.3,31.3-14.4c-9.2-3-17.3-5.8-25.4-8.3c-3-0.9-6.4-2.7-9.1-1.9
+                        C281.7,27.6,260.6,34.8,260.6,35z"/>
+                    <path id="XMLID_15_" class="st0" d="M171.1,63.2c-7.2,0-14.2,0-21.4,0c0,2.6,0,4.7,0,7.3c6.1,0,12,0,18.1,0c0,3.9,0,7.3,0,11.2
+                        c-5.9,0-11.8,0-18.1,0c0,2.9,0,5.3,0,8.2c7.4,0,14.7,0,22.3,0c0,3.8,0,7.1,0,10.8c-12.1,0-24.3,0-36.9,0c0-16,0-32.1,0-48.5
+                        c11.9,0,23.8,0,36,0C171.1,55.7,171.1,59.2,171.1,63.2z"/>
+                    <path id="XMLID_27_" class="st0" d="M102.7,86c0,5,0,9.7,0,14.7c-4.9,0-9.5,0-14.3,0c0-14.6,0-48.5,0-48.5s15.9-1.9,29.8,1.3
+                        c8.1,1.4,11.5,8.3,10.8,17.6c-0.7,7.8-5.9,13.2-13.8,14.1C111.3,85.6,107.3,85.7,102.7,86z M102.8,74.6c2.5,0,3.9,0,5.9-0.1
+                        c2.2,0,4.1-0.3,5.5-2.6c0.9-1.5,0.8-4.7-0.2-6.1c-1.5-3.7-11.2-2.4-11.2-2.4S102.8,70.5,102.8,74.6z"/>
+                    <path id="XMLID_10_" class="st0" d="M191.9,75.6c-4.6-7.6-9.2-15.2-14.2-23.4c-0.1-0.1,16.1,0,16.1,0s4.9,9.2,6.6,12.5
+                        c1.7-3.2,6.8-12.5,6.8-12.5h16c0,0-10,15.7-15,23.5c4.9,8.1,15,25,15,25h-15.7c0,0-5.6-9.4-7.7-13.4c-1.5,2.8-4,7.5-4,7.5l-3,5.9
+                        c0,0-16.5,0.1-16.4,0C181.7,92,186.8,83.8,191.9,75.6z"/>
+                    <path id="XMLID_25_" class="st0" d="M49.1,100.5c0,0-9,0-13.8,0C40.7,84,46,67.9,51.4,51.6c4.3,0,14-0.1,14.6-0.1
+                        c0,0,0.8,1.9,0.9,2.4c5.1,15,15,45.9,15,46.5c-4.6,0-14,0-14,0l-1.4-5.8l-15.1-0.3L49.1,100.5z M59.1,67.8c-0.3,0-0.6,0-1,0
+                        c-1.4,5.4-2.7,10.7-4.1,16.3c3.4,0,6.3,0,9.4,0C61.9,78.3,60.5,73,59.1,67.8z"/>
+                    <path id="XMLID_3_" class="st0" d="M102.8,74.6"/>
+                    <g>
+                        <path class="st0" d="M364,52h15v17h16.4V52h15.1v48.7h-15.1V81h-16.4v19.7h-15V52z"/>
+                        <path class="st0" d="M418.7,76.4c0-7.9,2.2-14.1,6.6-18.6c4.4-4.4,10.6-6.6,18.5-6.6c8.1,0,14.3,2.2,18.7,6.5s6.6,10.4,6.6,18.3
+                            c0,5.7-1,10.4-2.9,14c-1.9,3.6-4.7,6.5-8.3,8.5s-8.1,3-13.5,3c-5.5,0-10-0.9-13.6-2.6c-3.6-1.7-6.5-4.5-8.7-8.3
+                            C419.8,86.8,418.7,82.1,418.7,76.4z M433.8,76.4c0,4.9,0.9,8.4,2.7,10.6c1.8,2.1,4.3,3.2,7.5,3.2c3.2,0,5.7-1.1,7.5-3.2
+                            c1.8-2.1,2.7-5.9,2.7-11.3c0-4.6-0.9-7.9-2.8-10c-1.8-2.1-4.4-3.2-7.5-3.2c-3,0-5.5,1.1-7.3,3.2
+                            C434.7,67.9,433.8,71.5,433.8,76.4z"/>
+                        <path class="st0" d="M474.6,84.6l14.3-0.9c0.3,2.3,0.9,4.1,1.9,5.3c1.5,2,3.8,3,6.6,3c2.1,0,3.8-0.5,5-1.5c1.2-1,1.7-2.2,1.7-3.5
+                            c0-1.3-0.6-2.4-1.7-3.4c-1.1-1-3.7-1.9-7.7-2.8c-6.6-1.5-11.3-3.5-14.1-5.9c-2.8-2.5-4.2-5.6-4.2-9.4c0-2.5,0.7-4.9,2.2-7.1
+                            c1.4-2.2,3.6-4,6.5-5.2c2.9-1.3,6.9-1.9,12-1.9c6.2,0,11,1.2,14.2,3.5c3.3,2.3,5.2,6,5.8,11L503,66.5c-0.4-2.2-1.2-3.8-2.4-4.8
+                            c-1.2-1-2.9-1.5-5-1.5c-1.7,0-3.1,0.4-4,1.1c-0.9,0.7-1.3,1.6-1.3,2.7c0,0.8,0.4,1.5,1.1,2.1c0.7,0.6,2.4,1.2,5,1.8
+                            c6.6,1.4,11.3,2.9,14.1,4.3c2.8,1.5,4.9,3.2,6.2,5.4c1.3,2.1,1.9,4.5,1.9,7.2c0,3.1-0.9,6-2.6,8.6c-1.7,2.6-4.1,4.6-7.2,6
+                            c-3.1,1.4-7,2-11.7,2c-8.3,0-14-1.6-17.2-4.8S475.1,89.5,474.6,84.6z"/>
+                        <path class="st0" d="M523,52h45.7v12h-15.3v36.7h-15V64H523V52z"/>
+                        <path class="st0" d="M576.1,52h15.1v48.7h-15.1V52z"/>
+                        <path class="st0" d="M602,52h14l18.3,26.9V52h14.2v48.7h-14.2L616.2,74v26.7H602V52z"/>
+                        <path class="st0" d="M683.1,83.1V72.9h23.2v20.8c-4.4,3-8.4,5.1-11.8,6.2s-7.5,1.6-12.2,1.6c-5.8,0-10.5-1-14.1-3
+                            c-3.6-2-6.5-4.9-8.5-8.8c-2-3.9-3-8.4-3-13.4c0-5.3,1.1-9.9,3.3-13.9c2.2-3.9,5.4-6.9,9.6-8.9c3.3-1.6,7.7-2.4,13.3-2.4
+                            c5.4,0,9.4,0.5,12.1,1.5c2.7,1,4.9,2.5,6.6,4.5c1.8,2,3.1,4.6,4,7.8l-14.5,2.6c-0.6-1.8-1.6-3.2-3-4.2c-1.4-1-3.2-1.5-5.5-1.5
+                            c-3.3,0-5.9,1.1-7.9,3.4s-2.9,5.9-2.9,10.9c0,5.3,1,9,3,11.3c2,2.3,4.7,3.4,8.3,3.4c1.7,0,3.3-0.2,4.8-0.7
+                            c1.5-0.5,3.3-1.3,5.2-2.5v-4.6H683.1z"/>
+                    </g>
+                </g>
+            </g>
+            <g id="Layer_2_1_" class="st1">
+            </g>
+            </svg>
+            <p>We recommend ApexHosting!</p>
+        </a>
+    </div>
+</div></div>
+    </div>
+  </main>
+</div>
+<footer class="sy-foot">
+  <div class="sy-foot-inner sy-container mx-auto">
+    <div class="sy-foot-reserved md:flex justify-between items-center">
+      <div class="sy-foot-copyright"><p>2015-2026, WorldEdit Team</p>
+  
+  <p>
+    Made with
+    
+    <a href="https://www.sphinx-doc.org/">Sphinx</a> and
+    
+    <a href="https://shibuya.lepture.com">Shibuya theme</a>.
+  </p>
+</div>
+      <div class="sy-foot-socials">
+  <a href="https://github.com/EngineHub/WorldEdit" aria-label="GitHub">
+    <iconify-icon icon="simple-icons:github"></iconify-icon>
+  </a>
+  <a href="https://discord.gg/enginehub" aria-label="Discord">
+    <iconify-icon icon="simple-icons:discord"></iconify-icon>
+  </a></div>
+    </div>
+  </div>
+</footer>
+      <script src="../../../_static/documentation_options.js?v=2a957733"></script>
+      <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../../../_static/shibuya.js?v=50760d75"></script></body>
+</html>

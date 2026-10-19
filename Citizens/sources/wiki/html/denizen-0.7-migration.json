@@ -1,0 +1,39 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Denizen/0.7/Migration",
+    "pageid": 200,
+    "revid": 5384,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://meta.denizenscript.com/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br /><br /><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n<s>==Triggers==\n</s></p><s><ul><li>0.7 introduces several new core triggers: Damage, Proximity, and Location</li>\n<li>Not all triggers are turned on by default for performance reasons. see <a href=\"/Denizen/0.7/In_Game_Commands\" title=\"Denizen/0.7/In Game Commands\">Denizen/0.7/In_Game_Commands</a> for more info.</li></ul></s><s><div class=\"mw-heading mw-heading2\"><h2 id=\"Commands\">Commands</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Migration&amp;action=edit&amp;section=1\" title=\"Edit section: Commands\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><p>All text-type commands (CHAT, NARRATE, etc) must have the text in quotes. Single or double is fine.\n</p></s><s><pre> Example: - CHAT \"Use double quotes if your text has an apostrophe, y'all.\" </pre></s><s><p>EXECUTE must also have the command and arguments in single- or double- quotes\n</p></s><s><pre> Example: - EXECUTE ASSERVER \"warp someplace\" </pre></s><s><p><br />\nGIVE and TAKE must specify the quantity with QTY:# or qty:#\n</p></s><s><pre> Example: - GIVE DIAMOND QTY:10</pre></s><s><p><br />\nRESPAWN no longer exists. Use TELEPORT instead with the DENIZEN argument, this will spawn the Denizen at the specified location.\n</p></s><s><pre> Example: - TELEPORT DENIZEN 'BOOKMARK:name' </pre></s><s><p>PLAYERTASK no longer exists. Use a Location Trigger\n</p><p>PRESS no longer exists. Use SWITCH for buttons and levers.\n</p><p>Any command that takes a bookmark must specify BOOKMARK:. Also any command that takes a bookmark can use bookmarks from other Denizens by specifying 'BOOKMARK:Denizen Name:BookmarkName'\n</p></s><s><dl><dd>If the Denizen name has a space in it the quotes are <b>required</b></dd></dl></s><s><pre> Example: - TELEPORT DENIZEN 'BOOKMARK:bob jones:bobshouse' </pre></s>\n<!-- \nNewPP limit report\nCached time: 20261019145830\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.021 seconds\nReal time usage: 0.033 seconds\nPreprocessor visited node count: 19/1000000\nRevision size: 1978/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 313/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 8bd63d64-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen/0.7/In Game Commands"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Commands",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Denizen/0.7/Migration",
+        "byteoffset": 898,
+        "anchor": "Commands",
+        "linkAnchor": "Commands"
+      }
+    ]
+  }
+}

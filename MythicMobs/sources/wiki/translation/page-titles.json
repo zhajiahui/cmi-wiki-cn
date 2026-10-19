@@ -1,0 +1,3878 @@
+{
+  "wiki/add-ons.md": {
+    "source": "Add Ons",
+    "translation": "附属插件"
+  },
+  "wiki/changelogs/2.0.x_changelogs.md": {
+    "source": "2.0.X Changelogs",
+    "translation": "2.0.X 更新记录"
+  },
+  "wiki/changelogs/2.1.x_changelogs.md": {
+    "source": "2.1.X Changelogs",
+    "translation": "2.1.X 更新记录"
+  },
+  "wiki/changelogs/2.2.x_changelogs.md": {
+    "source": "2.2.X Changelogs",
+    "translation": "2.2.X 更新记录"
+  },
+  "wiki/changelogs/2.3.x_changelogs.md": {
+    "source": "2.3.X Changelogs",
+    "translation": "2.3.X 更新记录"
+  },
+  "wiki/changelogs/2.4.x_changelogs.md": {
+    "source": "2.4.X Changelogs",
+    "translation": "2.4.X 更新记录"
+  },
+  "wiki/changelogs/2.5.x_changelogs.md": {
+    "source": "2.5.X Changelogs",
+    "translation": "2.5.X 更新记录"
+  },
+  "wiki/changelogs/4.0.x_changelogs.md": {
+    "source": "4.0.X Changelogs",
+    "translation": "4.0.X 更新记录"
+  },
+  "wiki/changelogs/4.1.x_changelogs.md": {
+    "source": "4.1.X Changelogs",
+    "translation": "4.1.X 更新记录"
+  },
+  "wiki/changelogs/4.10.x_changelogs.md": {
+    "source": "4.10.X Changelogs",
+    "translation": "4.10.X 更新记录"
+  },
+  "wiki/changelogs/4.11.x_changelogs.md": {
+    "source": "4.11.X Changelogs",
+    "translation": "4.11.X 更新记录"
+  },
+  "wiki/changelogs/4.12.x_changelogs.md": {
+    "source": "4.12.X Changelogs",
+    "translation": "4.12.X 更新记录"
+  },
+  "wiki/changelogs/4.13.x_changelogs.md": {
+    "source": "4.13.X Changelogs",
+    "translation": "4.13.X 更新记录"
+  },
+  "wiki/changelogs/4.14.x_changelogs.md": {
+    "source": "4.14.X Changelogs",
+    "translation": "4.14.X 更新记录"
+  },
+  "wiki/changelogs/4.2.x_changelogs.md": {
+    "source": "4.2.X Changelogs",
+    "translation": "4.2.X 更新记录"
+  },
+  "wiki/changelogs/4.3.x_changelogs.md": {
+    "source": "4.3.X Changelogs",
+    "translation": "4.3.X 更新记录"
+  },
+  "wiki/changelogs/4.4.x_changelogs.md": {
+    "source": "4.4.X Changelogs",
+    "translation": "4.4.X 更新记录"
+  },
+  "wiki/changelogs/4.5.x_changelogs.md": {
+    "source": "4.5.X Changelogs",
+    "translation": "4.5.X 更新记录"
+  },
+  "wiki/changelogs/4.6.x_changelogs.md": {
+    "source": "4.6.X Changelogs",
+    "translation": "4.6.X 更新记录"
+  },
+  "wiki/changelogs/4.7.x_changelogs.md": {
+    "source": "4.7.X Changelogs",
+    "translation": "4.7.X 更新记录"
+  },
+  "wiki/changelogs/4.8.x_changelogs.md": {
+    "source": "4.8.X Changelogs",
+    "translation": "4.8.X 更新记录"
+  },
+  "wiki/changelogs/4.9.x_changelogs.md": {
+    "source": "4.9.X Changelogs",
+    "translation": "4.9.X 更新记录"
+  },
+  "wiki/changelogs/5.0.x_changelogs.md": {
+    "source": "5.0.X Changelogs",
+    "translation": "5.0.X 更新记录"
+  },
+  "wiki/changelogs/5.1.x_changelogs.md": {
+    "source": "5.1.X Changelogs",
+    "translation": "5.1.X 更新记录"
+  },
+  "wiki/changelogs/5.2.x_changelogs.md": {
+    "source": "5.2.X Changelogs",
+    "translation": "5.2.X 更新记录"
+  },
+  "wiki/changelogs/5.3.x_changelogs.md": {
+    "source": "5.3.X Changelogs",
+    "translation": "5.3.X 更新记录"
+  },
+  "wiki/changelogs/5.4.x_changelogs.md": {
+    "source": "5.4.X Changelogs",
+    "translation": "5.4.X 更新记录"
+  },
+  "wiki/changelogs/5.5.x_changelogs.md": {
+    "source": "5.5.X Changelogs",
+    "translation": "5.5.X 更新记录"
+  },
+  "wiki/changelogs/5.6.x_changelogs.md": {
+    "source": "5.6.X Changelogs",
+    "translation": "5.6.X 更新记录"
+  },
+  "wiki/changelogs/5.7.x_changelogs.md": {
+    "source": "5.7.X Changelogs",
+    "translation": "5.7.X 更新记录"
+  },
+  "wiki/changelogs/5.8.x_changelogs.md": {
+    "source": "5.8.X Changelogs",
+    "translation": "5.8.X 更新记录"
+  },
+  "wiki/changelogs/5.9.x_changelogs.md": {
+    "source": "5.9.X Changelogs",
+    "translation": "5.9.X 更新记录"
+  },
+  "wiki/changelogs/changelogs.md": {
+    "source": "Changelog",
+    "translation": "更新记录"
+  },
+  "wiki/changelogs/pre-2.0_changelogs.md": {
+    "source": "Pre 2.0 Changelogs",
+    "translation": "2.0 之前的更新记录"
+  },
+  "wiki/cinematics.md": {
+    "source": "Cinematics",
+    "translation": "过场动画"
+  },
+  "wiki/commands-and-permissions.md": {
+    "source": "Commands And Permissions",
+    "translation": "命令与权限"
+  },
+  "wiki/compatible-plugins.md": {
+    "source": "Compatible Plugins",
+    "translation": "兼容插件"
+  },
+  "wiki/config.md": {
+    "source": "Config",
+    "translation": "配置"
+  },
+  "wiki/config/config-general.md": {
+    "source": "Config General",
+    "translation": "通用配置"
+  },
+  "wiki/config/config-items.md": {
+    "source": "Config Items",
+    "translation": "物品配置"
+  },
+  "wiki/config/config-mobs.md": {
+    "source": "Config Mobs",
+    "translation": "生物配置"
+  },
+  "wiki/config/config-skills.md": {
+    "source": "Config Skills",
+    "translation": "技能配置"
+  },
+  "wiki/config/config-spawning.md": {
+    "source": "Config Spawning",
+    "translation": "生成配置"
+  },
+  "wiki/configuration.md": {
+    "source": "Configuration",
+    "translation": "配置"
+  },
+  "wiki/custom-menus.md": {
+    "source": "Custom Menus",
+    "translation": "自定义菜单"
+  },
+  "wiki/dialogs.md": {
+    "source": "Dialogs",
+    "translation": "对话框"
+  },
+  "wiki/drops/drops.md": {
+    "source": "Drops",
+    "translation": "掉落物"
+  },
+  "wiki/drops/droptables.md": {
+    "source": "Drop Tables",
+    "translation": "掉落表"
+  },
+  "wiki/drops/droptypes/command.md": {
+    "source": "Command",
+    "translation": "命令"
+  },
+  "wiki/drops/droptypes/itemvariable.md": {
+    "source": "Item Variable",
+    "translation": "物品变量"
+  },
+  "wiki/drops/droptypes/mcmmoexp.md": {
+    "source": "Mc M M O Exp",
+    "translation": "mcMMO 经验"
+  },
+  "wiki/drops/droptypes/money.md": {
+    "source": "Money",
+    "translation": "金钱"
+  },
+  "wiki/drops/droptypes/mythicitem.md": {
+    "source": "Mythic Item",
+    "translation": "Mythic 物品"
+  },
+  "wiki/drops/droptypes/mythicmob.md": {
+    "source": "Mythic Mob",
+    "translation": "Mythic 生物"
+  },
+  "wiki/drops/droptypes/phatloot.md": {
+    "source": "Phat Loot",
+    "translation": "PhatLoot"
+  },
+  "wiki/drops/droptypes/skillapiexp.md": {
+    "source": "Skill A P I Exp",
+    "translation": "SkillAPI 经验"
+  },
+  "wiki/drops/droptypes/vanillaloottable.md": {
+    "source": "Vanilla Loot Table",
+    "translation": "原版战利品表"
+  },
+  "wiki/drops/fancydrops.md": {
+    "source": "Fancy Drops",
+    "translation": "花式掉落"
+  },
+  "wiki/enum/shape.md": {
+    "source": "Shape",
+    "translation": "形状"
+  },
+  "wiki/examples/common-examples.md": {
+    "source": "Common Examples",
+    "translation": "常用示例"
+  },
+  "wiki/examples/consumable-skills.md": {
+    "source": "Consumable Skills",
+    "translation": "消耗品技能"
+  },
+  "wiki/examples/damagespells.md": {
+    "source": "Damage Spells",
+    "translation": "伤害法术"
+  },
+  "wiki/examples/foods.md": {
+    "source": "Foods",
+    "translation": "食物"
+  },
+  "wiki/examples/mob-examples.md": {
+    "source": "Mob Examples",
+    "translation": "生物示例"
+  },
+  "wiki/examples/potions.md": {
+    "source": "Potions",
+    "translation": "药水"
+  },
+  "wiki/faq.md": {
+    "source": "F A Q",
+    "translation": "常见问题"
+  },
+  "wiki/guides.md": {
+    "source": "Guides",
+    "translation": "使用指南"
+  },
+  "wiki/guides/-extra--text-editors.md": {
+    "source": "( Extra) Text Editors",
+    "translation": "（补充）文本编辑器"
+  },
+  "wiki/guides/-extra--wiki-tips.md": {
+    "source": "( Extra) Wiki Tips",
+    "translation": "（补充）Wiki 阅读提示"
+  },
+  "wiki/guides/-step-1--understanding-the-different-terms.md": {
+    "source": "( Step 1) Understanding The Different Terms",
+    "translation": "（步骤 1）理解各个术语"
+  },
+  "wiki/guides/-step-2--files-and-directories.md": {
+    "source": "( Step 2) Files And Directories",
+    "translation": "（步骤 2）文件与目录"
+  },
+  "wiki/guides/-step-3--creating-your-first-mob.md": {
+    "source": "( Step 3) Creating Your First Mob",
+    "translation": "（步骤 3）创建第一个生物"
+  },
+  "wiki/guides/-step-4--essential-commands.md": {
+    "source": "( Step 4) Essential Commands",
+    "translation": "（步骤 4）基础命令"
+  },
+  "wiki/guides/-step-5--extra-notes.md": {
+    "source": "( Step 5) Extra Notes",
+    "translation": "（步骤 5）补充说明"
+  },
+  "wiki/guides/cancelling-events.md": {
+    "source": "Cancelling Events",
+    "translation": "取消事件"
+  },
+  "wiki/guides/health-displays.md": {
+    "source": "Health Displays",
+    "translation": "生命值显示"
+  },
+  "wiki/guides/limited-use-skills.md": {
+    "source": "Limited Use Skills",
+    "translation": "限制使用次数的技能"
+  },
+  "wiki/guides/making-an-npc.md": {
+    "source": "Making An N P C",
+    "translation": "制作 NPC"
+  },
+  "wiki/guides/spawn-message.md": {
+    "source": "Spawn Message",
+    "translation": "生成消息"
+  },
+  "wiki/guides/your-first-random-spawn.md": {
+    "source": "Your First Random Spawn",
+    "translation": "配置第一个随机生成"
+  },
+  "wiki/home.md": {
+    "source": "Home",
+    "translation": "首页"
+  },
+  "wiki/index.md": {
+    "source": "Home",
+    "translation": "首页"
+  },
+  "wiki/items/attributes.md": {
+    "source": "Attributes",
+    "translation": "物品属性"
+  },
+  "wiki/items/banner-layers.md": {
+    "source": "Banner Layers",
+    "translation": "旗帜图案层"
+  },
+  "wiki/items/enchantments.md": {
+    "source": "Enchantments",
+    "translation": "附魔"
+  },
+  "wiki/items/firework.md": {
+    "source": "Firework",
+    "translation": "烟花"
+  },
+  "wiki/items/item-matcher.md": {
+    "source": "Item Matcher",
+    "translation": "物品匹配器"
+  },
+  "wiki/items/items.md": {
+    "source": "Items",
+    "translation": "物品"
+  },
+  "wiki/items/options.md": {
+    "source": "Options",
+    "translation": "物品选项"
+  },
+  "wiki/items/potions.md": {
+    "source": "Potions",
+    "translation": "药水"
+  },
+  "wiki/mobs/ai/goals/arrowattack.md": {
+    "source": "Arrowattack",
+    "translation": "Arrowattack"
+  },
+  "wiki/mobs/ai/goals/arrowattackconditional.md": {
+    "source": "Arrow Attack Conditional",
+    "translation": "Arrow Attack Conditional"
+  },
+  "wiki/mobs/ai/goals/bowattack.md": {
+    "source": "Bowattack",
+    "translation": "Bowattack"
+  },
+  "wiki/mobs/ai/goals/bowattackconditional.md": {
+    "source": "Bow Attack Conditional",
+    "translation": "Bow Attack Conditional"
+  },
+  "wiki/mobs/ai/goals/breakdoor.md": {
+    "source": "Break Door",
+    "translation": "Break Door"
+  },
+  "wiki/mobs/ai/goals/breed.md": {
+    "source": "Breed",
+    "translation": "Breed"
+  },
+  "wiki/mobs/ai/goals/creeperswell.md": {
+    "source": "Creeper Swell",
+    "translation": "Creeper Swell"
+  },
+  "wiki/mobs/ai/goals/crossbowattack.md": {
+    "source": "Crossbowattack",
+    "translation": "Crossbowattack"
+  },
+  "wiki/mobs/ai/goals/crossbowattackconditional.md": {
+    "source": "Crossbow Attack Conditional",
+    "translation": "Crossbow Attack Conditional"
+  },
+  "wiki/mobs/ai/goals/donothing.md": {
+    "source": "Do Nothing",
+    "translation": "Do Nothing"
+  },
+  "wiki/mobs/ai/goals/eatgrass.md": {
+    "source": "Eat Grass",
+    "translation": "Eat Grass"
+  },
+  "wiki/mobs/ai/goals/fleeconditional.md": {
+    "source": "Fleeconditional",
+    "translation": "Fleeconditional"
+  },
+  "wiki/mobs/ai/goals/fleefaction.md": {
+    "source": "Fleefaction",
+    "translation": "Fleefaction"
+  },
+  "wiki/mobs/ai/goals/fleegolems.md": {
+    "source": "Fleegolems",
+    "translation": "Fleegolems"
+  },
+  "wiki/mobs/ai/goals/fleeplayers.md": {
+    "source": "Fleeplayers",
+    "translation": "Fleeplayers"
+  },
+  "wiki/mobs/ai/goals/fleesun.md": {
+    "source": "Fleesun",
+    "translation": "Fleesun"
+  },
+  "wiki/mobs/ai/goals/fleevillagers.md": {
+    "source": "Fleevillagers",
+    "translation": "Fleevillagers"
+  },
+  "wiki/mobs/ai/goals/fleewolf.md": {
+    "source": "Fleewolf",
+    "translation": "Fleewolf"
+  },
+  "wiki/mobs/ai/goals/float.md": {
+    "source": "Float",
+    "translation": "Float"
+  },
+  "wiki/mobs/ai/goals/followroute.md": {
+    "source": "Follow Route",
+    "translation": "Follow Route"
+  },
+  "wiki/mobs/ai/goals/gotolocation.md": {
+    "source": "Go To Location",
+    "translation": "Go To Location"
+  },
+  "wiki/mobs/ai/goals/gotolocationconditional.md": {
+    "source": "Go To Location Conditional",
+    "translation": "Go To Location Conditional"
+  },
+  "wiki/mobs/ai/goals/gotoowner.md": {
+    "source": "Go To Owner",
+    "translation": "Go To Owner"
+  },
+  "wiki/mobs/ai/goals/gotoparent.md": {
+    "source": "Go To Parent",
+    "translation": "Go To Parent"
+  },
+  "wiki/mobs/ai/goals/gotospawn.md": {
+    "source": "Gotospawn",
+    "translation": "Gotospawn"
+  },
+  "wiki/mobs/ai/goals/horrified.md": {
+    "source": "Horrified",
+    "translation": "Horrified"
+  },
+  "wiki/mobs/ai/goals/leapattarget.md": {
+    "source": "Leapattarget",
+    "translation": "Leapattarget"
+  },
+  "wiki/mobs/ai/goals/lookatplayers.md": {
+    "source": "Lookatplayers",
+    "translation": "Lookatplayers"
+  },
+  "wiki/mobs/ai/goals/lookattarget.md": {
+    "source": "Look At Target",
+    "translation": "Look At Target"
+  },
+  "wiki/mobs/ai/goals/meleeattack.md": {
+    "source": "Meleeattack",
+    "translation": "Meleeattack"
+  },
+  "wiki/mobs/ai/goals/meleeattackconditional.md": {
+    "source": "Melee Attack Conditional",
+    "translation": "Melee Attack Conditional"
+  },
+  "wiki/mobs/ai/goals/movethroughvillage.md": {
+    "source": "Movethroughvillage",
+    "translation": "Movethroughvillage"
+  },
+  "wiki/mobs/ai/goals/movetoblock.md": {
+    "source": "Movetoblock",
+    "translation": "Movetoblock"
+  },
+  "wiki/mobs/ai/goals/movetolava.md": {
+    "source": "Movetolava",
+    "translation": "Movetolava"
+  },
+  "wiki/mobs/ai/goals/movetowardsrestriction.md": {
+    "source": "Move Towards Restriction",
+    "translation": "Move Towards Restriction"
+  },
+  "wiki/mobs/ai/goals/movetowardstarget.md": {
+    "source": "Move Towards Target",
+    "translation": "Move Towards Target"
+  },
+  "wiki/mobs/ai/goals/movetowardstargetconditional.md": {
+    "source": "Move Towards Target Conditional",
+    "translation": "Move Towards Target Conditional"
+  },
+  "wiki/mobs/ai/goals/movetowater.md": {
+    "source": "Movetowater",
+    "translation": "Movetowater"
+  },
+  "wiki/mobs/ai/goals/movewithindistanceoftarget.md": {
+    "source": "Move Within Distance Of Target",
+    "translation": "Move Within Distance Of Target"
+  },
+  "wiki/mobs/ai/goals/movewithindistanceoftargetconditional.md": {
+    "source": "Move Within Distance Of Target Conditional",
+    "translation": "Move Within Distance Of Target Conditional"
+  },
+  "wiki/mobs/ai/goals/opendoor.md": {
+    "source": "Open Door",
+    "translation": "Open Door"
+  },
+  "wiki/mobs/ai/goals/panic.md": {
+    "source": "Panic",
+    "translation": "Panic"
+  },
+  "wiki/mobs/ai/goals/patrol.md": {
+    "source": "Patrol",
+    "translation": "Patrol"
+  },
+  "wiki/mobs/ai/goals/randomfly.md": {
+    "source": "Random Fly",
+    "translation": "Random Fly"
+  },
+  "wiki/mobs/ai/goals/randomlookaround.md": {
+    "source": "Random Look Around",
+    "translation": "Random Look Around"
+  },
+  "wiki/mobs/ai/goals/randomnod.md": {
+    "source": "Random Nod",
+    "translation": "Random Nod"
+  },
+  "wiki/mobs/ai/goals/randomstroll.md": {
+    "source": "Random Stroll",
+    "translation": "Random Stroll"
+  },
+  "wiki/mobs/ai/goals/restrictsun.md": {
+    "source": "Restrict Sun",
+    "translation": "Restrict Sun"
+  },
+  "wiki/mobs/ai/goals/spiderattack.md": {
+    "source": "Spider Attack",
+    "translation": "Spider Attack"
+  },
+  "wiki/mobs/ai/goals/zombieattack.md": {
+    "source": "Zombie Attack",
+    "translation": "Zombie Attack"
+  },
+  "wiki/mobs/ai/targets/hurtbytarget.md": {
+    "source": "Hurt By Target",
+    "translation": "Hurt By Target"
+  },
+  "wiki/mobs/ai/targets/irongolems.md": {
+    "source": "Irongolems",
+    "translation": "Irongolems"
+  },
+  "wiki/mobs/ai/targets/monsters.md": {
+    "source": "Monsters",
+    "translation": "Monsters"
+  },
+  "wiki/mobs/ai/targets/nearestconditionaltarget.md": {
+    "source": "Nearestconditionaltarget",
+    "translation": "Nearestconditionaltarget"
+  },
+  "wiki/mobs/ai/targets/nearestotherfaction.md": {
+    "source": "Nearest Other Faction",
+    "translation": "Nearest Other Faction"
+  },
+  "wiki/mobs/ai/targets/nearestotherfactionmonsters.md": {
+    "source": "Nearest Other Faction Monsters",
+    "translation": "Nearest Other Faction Monsters"
+  },
+  "wiki/mobs/ai/targets/ownerattacker.md": {
+    "source": "Owner Attacker",
+    "translation": "Owner Attacker"
+  },
+  "wiki/mobs/ai/targets/ownertarget.md": {
+    "source": "Owner Target",
+    "translation": "Owner Target"
+  },
+  "wiki/mobs/ai/targets/parenthurtby.md": {
+    "source": "Parent Hurt By",
+    "translation": "Parent Hurt By"
+  },
+  "wiki/mobs/ai/targets/parenttarget.md": {
+    "source": "Parent Target",
+    "translation": "Parent Target"
+  },
+  "wiki/mobs/ai/targets/players.md": {
+    "source": "Players",
+    "translation": "Players"
+  },
+  "wiki/mobs/ai/targets/specificfaction.md": {
+    "source": "Specificfaction",
+    "translation": "Specificfaction"
+  },
+  "wiki/mobs/ai/targets/specificfactionmonsters.md": {
+    "source": "Specificfactionmonsters",
+    "translation": "Specificfactionmonsters"
+  },
+  "wiki/mobs/ai/targets/villagers.md": {
+    "source": "Villagers",
+    "translation": "Villagers"
+  },
+  "wiki/mobs/bossbar.md": {
+    "source": "Boss Bar",
+    "translation": "Boss 血条"
+  },
+  "wiki/mobs/custom-ai.md": {
+    "source": "Custom A I",
+    "translation": "自定义 AI"
+  },
+  "wiki/mobs/damagemodifiers.md": {
+    "source": "Damage Modifiers",
+    "translation": "伤害修正"
+  },
+  "wiki/mobs/disguises.md": {
+    "source": "Disguises",
+    "translation": "伪装"
+  },
+  "wiki/mobs/displayoptions.md": {
+    "source": "Display Options",
+    "translation": "显示选项"
+  },
+  "wiki/mobs/equipment.md": {
+    "source": "Equipment",
+    "translation": "装备"
+  },
+  "wiki/mobs/factions.md": {
+    "source": "Factions",
+    "translation": "阵营"
+  },
+  "wiki/mobs/immunitytables.md": {
+    "source": "Immunity Tables",
+    "translation": "免疫表"
+  },
+  "wiki/mobs/killmessages.md": {
+    "source": "Kill Messages",
+    "translation": "击杀消息"
+  },
+  "wiki/mobs/levels.md": {
+    "source": "Levels",
+    "translation": "等级"
+  },
+  "wiki/mobs/mannequinoptions.md": {
+    "source": "Mannequin Options",
+    "translation": "假人选项"
+  },
+  "wiki/mobs/mobs.md": {
+    "source": "Mobs",
+    "translation": "生物"
+  },
+  "wiki/mobs/mobs/unstable-entity-types.md": {
+    "source": "Unstable Entity Types",
+    "translation": "不稳定的实体类型"
+  },
+  "wiki/mobs/options.md": {
+    "source": "Options",
+    "translation": "生物选项"
+  },
+  "wiki/mobs/power.md": {
+    "source": "Power",
+    "translation": "强度"
+  },
+  "wiki/mobs/templates.md": {
+    "source": "Templates",
+    "translation": "模板"
+  },
+  "wiki/mobs/threattables.md": {
+    "source": "Threat Tables",
+    "translation": "仇恨表"
+  },
+  "wiki/mobs/types.md": {
+    "source": "Types",
+    "translation": "生物类型"
+  },
+  "wiki/model-engine.md": {
+    "source": "Model Engine",
+    "translation": "Model Engine"
+  },
+  "wiki/packs.md": {
+    "source": "Packs",
+    "translation": "内容包"
+  },
+  "wiki/pins.md": {
+    "source": "Pins",
+    "translation": "标记点"
+  },
+  "wiki/premium-features.md": {
+    "source": "Premium Features",
+    "translation": "付费版功能"
+  },
+  "wiki/random-spawns.md": {
+    "source": "Random Spawns",
+    "translation": "随机生成"
+  },
+  "wiki/skills/advanced-user-guides-and-techniques.md": {
+    "source": "Advanced User Guides And Techniques",
+    "translation": "进阶用法与技巧"
+  },
+  "wiki/skills/audience.md": {
+    "source": "Audience",
+    "translation": "接收对象"
+  },
+  "wiki/skills/conditions.md": {
+    "source": "Conditions",
+    "translation": "条件"
+  },
+  "wiki/skills/conditions/altitude.md": {
+    "source": "Altitude",
+    "translation": "Altitude"
+  },
+  "wiki/skills/conditions/biome.md": {
+    "source": "Biome",
+    "translation": "Biome"
+  },
+  "wiki/skills/conditions/biometype.md": {
+    "source": "Biometype",
+    "translation": "Biometype"
+  },
+  "wiki/skills/conditions/blocking.md": {
+    "source": "Blocking",
+    "translation": "Blocking"
+  },
+  "wiki/skills/conditions/blocktype.md": {
+    "source": "Blocktype",
+    "translation": "Blocktype"
+  },
+  "wiki/skills/conditions/blocktypeinradius.md": {
+    "source": "Block Type In Radius",
+    "translation": "Block Type In Radius"
+  },
+  "wiki/skills/conditions/boundingboxesoverlap.md": {
+    "source": "Bounding Boxes Overlap",
+    "translation": "Bounding Boxes Overlap"
+  },
+  "wiki/skills/conditions/bowtension.md": {
+    "source": "Bowtension",
+    "translation": "Bowtension"
+  },
+  "wiki/skills/conditions/burning.md": {
+    "source": "Burning",
+    "translation": "Burning"
+  },
+  "wiki/skills/conditions/chance.md": {
+    "source": "Chance",
+    "translation": "Chance"
+  },
+  "wiki/skills/conditions/charged.md": {
+    "source": "Charged",
+    "translation": "Charged"
+  },
+  "wiki/skills/conditions/children.md": {
+    "source": "Children",
+    "translation": "Children"
+  },
+  "wiki/skills/conditions/color.md": {
+    "source": "Color",
+    "translation": "Color"
+  },
+  "wiki/skills/conditions/comparevalues.md": {
+    "source": "Compare Values",
+    "translation": "Compare Values"
+  },
+  "wiki/skills/conditions/crouching.md": {
+    "source": "Crouching",
+    "translation": "Crouching"
+  },
+  "wiki/skills/conditions/cuboid.md": {
+    "source": "Cuboid",
+    "translation": "Cuboid"
+  },
+  "wiki/skills/conditions/damageamount.md": {
+    "source": "Damage Amount",
+    "translation": "Damage Amount"
+  },
+  "wiki/skills/conditions/damagecause.md": {
+    "source": "Damage Cause",
+    "translation": "Damage Cause"
+  },
+  "wiki/skills/conditions/damagetag.md": {
+    "source": "Damagetag",
+    "translation": "Damagetag"
+  },
+  "wiki/skills/conditions/dawn.md": {
+    "source": "Dawn",
+    "translation": "Dawn"
+  },
+  "wiki/skills/conditions/day.md": {
+    "source": "Day",
+    "translation": "Day"
+  },
+  "wiki/skills/conditions/dimension.md": {
+    "source": "Dimension",
+    "translation": "Dimension"
+  },
+  "wiki/skills/conditions/directionalvelocity.md": {
+    "source": "Directionalvelocity",
+    "translation": "Directionalvelocity"
+  },
+  "wiki/skills/conditions/distance.md": {
+    "source": "Distance",
+    "translation": "Distance"
+  },
+  "wiki/skills/conditions/distancefromlocation.md": {
+    "source": "Distance From Location",
+    "translation": "Distance From Location"
+  },
+  "wiki/skills/conditions/distancefrompin.md": {
+    "source": "Distance From Pin",
+    "translation": "Distance From Pin"
+  },
+  "wiki/skills/conditions/distancefromspawn.md": {
+    "source": "Distancefromspawn",
+    "translation": "Distancefromspawn"
+  },
+  "wiki/skills/conditions/distancefromtrackedlocation.md": {
+    "source": "Distancefromtrackedlocation",
+    "translation": "Distancefromtrackedlocation"
+  },
+  "wiki/skills/conditions/dusk.md": {
+    "source": "Dusk",
+    "translation": "Dusk"
+  },
+  "wiki/skills/conditions/enchantingexperience.md": {
+    "source": "Enchanting Experience",
+    "translation": "Enchanting Experience"
+  },
+  "wiki/skills/conditions/enchantinglevel.md": {
+    "source": "Enchanting Level",
+    "translation": "Enchanting Level"
+  },
+  "wiki/skills/conditions/enderdragonalive.md": {
+    "source": "Ender Dragon Alive",
+    "translation": "Ender Dragon Alive"
+  },
+  "wiki/skills/conditions/enderdragonphase.md": {
+    "source": "Ender Dragon Phase",
+    "translation": "Ender Dragon Phase"
+  },
+  "wiki/skills/conditions/entityitemissimilar.md": {
+    "source": "Entity Item Is Similar",
+    "translation": "Entity Item Is Similar"
+  },
+  "wiki/skills/conditions/entityitemtype.md": {
+    "source": "Entity Item Type",
+    "translation": "Entity Item Type"
+  },
+  "wiki/skills/conditions/entitymaterialtype.md": {
+    "source": "Entity Material Type",
+    "translation": "Entity Material Type"
+  },
+  "wiki/skills/conditions/entitytype.md": {
+    "source": "Entitytype",
+    "translation": "Entitytype"
+  },
+  "wiki/skills/conditions/faction.md": {
+    "source": "Faction",
+    "translation": "Faction"
+  },
+  "wiki/skills/conditions/fallspeed.md": {
+    "source": "Fallspeed",
+    "translation": "Fallspeed"
+  },
+  "wiki/skills/conditions/fieldofview.md": {
+    "source": "Fieldofview",
+    "translation": "Fieldofview"
+  },
+  "wiki/skills/conditions/foodlevel.md": {
+    "source": "Food Level",
+    "translation": "Food Level"
+  },
+  "wiki/skills/conditions/foodsaturation.md": {
+    "source": "Food Saturation",
+    "translation": "Food Saturation"
+  },
+  "wiki/skills/conditions/gamemode.md": {
+    "source": "Gamemode",
+    "translation": "Gamemode"
+  },
+  "wiki/skills/conditions/gliding.md": {
+    "source": "Gliding",
+    "translation": "Gliding"
+  },
+  "wiki/skills/conditions/globalscore.md": {
+    "source": "Globalscore",
+    "translation": "Globalscore"
+  },
+  "wiki/skills/conditions/hasai.md": {
+    "source": "Hasai",
+    "translation": "Hasai"
+  },
+  "wiki/skills/conditions/hasaura.md": {
+    "source": "Hasaura",
+    "translation": "Hasaura"
+  },
+  "wiki/skills/conditions/hasaurastacks.md": {
+    "source": "Hasaurastacks",
+    "translation": "Hasaurastacks"
+  },
+  "wiki/skills/conditions/hasauratype.md": {
+    "source": "Has Aura Type",
+    "translation": "Has Aura Type"
+  },
+  "wiki/skills/conditions/hascurrency.md": {
+    "source": "Hascurrency",
+    "translation": "Hascurrency"
+  },
+  "wiki/skills/conditions/hasdialogopen.md": {
+    "source": "Has Dialog Open",
+    "translation": "Has Dialog Open"
+  },
+  "wiki/skills/conditions/hasenchantment.md": {
+    "source": "Has Enchantment",
+    "translation": "Has Enchantment"
+  },
+  "wiki/skills/conditions/hasfreeinventoryslot.md": {
+    "source": "Has Free Inventory Slot",
+    "translation": "Has Free Inventory Slot"
+  },
+  "wiki/skills/conditions/hasgravity.md": {
+    "source": "Hasgravity",
+    "translation": "Hasgravity"
+  },
+  "wiki/skills/conditions/hasitem.md": {
+    "source": "Has Item",
+    "translation": "Has Item"
+  },
+  "wiki/skills/conditions/hasoffhand.md": {
+    "source": "Has Offhand",
+    "translation": "Has Offhand"
+  },
+  "wiki/skills/conditions/hasowner.md": {
+    "source": "Hasowner",
+    "translation": "Hasowner"
+  },
+  "wiki/skills/conditions/hasparent.md": {
+    "source": "Hasparent",
+    "translation": "Hasparent"
+  },
+  "wiki/skills/conditions/haspassenger.md": {
+    "source": "Has Passenger",
+    "translation": "Has Passenger"
+  },
+  "wiki/skills/conditions/haspermission.md": {
+    "source": "Haspermission",
+    "translation": "Haspermission"
+  },
+  "wiki/skills/conditions/haspotioneffect.md": {
+    "source": "Haspotioneffect",
+    "translation": "Haspotioneffect"
+  },
+  "wiki/skills/conditions/hastag.md": {
+    "source": "Hastag",
+    "translation": "Hastag"
+  },
+  "wiki/skills/conditions/health.md": {
+    "source": "Health",
+    "translation": "Health"
+  },
+  "wiki/skills/conditions/healthpercent.md": {
+    "source": "Health Percent",
+    "translation": "Health Percent"
+  },
+  "wiki/skills/conditions/height.md": {
+    "source": "Height",
+    "translation": "Height"
+  },
+  "wiki/skills/conditions/heightabove.md": {
+    "source": "Heightabove",
+    "translation": "Heightabove"
+  },
+  "wiki/skills/conditions/heightbelow.md": {
+    "source": "Heightbelow",
+    "translation": "Heightbelow"
+  },
+  "wiki/skills/conditions/holding.md": {
+    "source": "Holding",
+    "translation": "Holding"
+  },
+  "wiki/skills/conditions/inbounds.md": {
+    "source": "In Bounds",
+    "translation": "In Bounds"
+  },
+  "wiki/skills/conditions/inclaim.md": {
+    "source": "In Claim",
+    "translation": "In Claim"
+  },
+  "wiki/skills/conditions/incombat.md": {
+    "source": "Incombat",
+    "translation": "Incombat"
+  },
+  "wiki/skills/conditions/inpinregion.md": {
+    "source": "In Pin Region",
+    "translation": "In Pin Region"
+  },
+  "wiki/skills/conditions/inside.md": {
+    "source": "Inside",
+    "translation": "Inside"
+  },
+  "wiki/skills/conditions/isbaby.md": {
+    "source": "Isbaby",
+    "translation": "Isbaby"
+  },
+  "wiki/skills/conditions/iscancelled.md": {
+    "source": "Is Cancelled",
+    "translation": "Is Cancelled"
+  },
+  "wiki/skills/conditions/iscaster.md": {
+    "source": "Iscaster",
+    "translation": "Iscaster"
+  },
+  "wiki/skills/conditions/ischild.md": {
+    "source": "Ischild",
+    "translation": "Ischild"
+  },
+  "wiki/skills/conditions/isclimbing.md": {
+    "source": "Is Climbing",
+    "translation": "Is Climbing"
+  },
+  "wiki/skills/conditions/iscreeperprimed.md": {
+    "source": "Is Creeper Primed",
+    "translation": "Is Creeper Primed"
+  },
+  "wiki/skills/conditions/isflying.md": {
+    "source": "Isflying",
+    "translation": "Isflying"
+  },
+  "wiki/skills/conditions/isfrozen.md": {
+    "source": "Isfrozen",
+    "translation": "Isfrozen"
+  },
+  "wiki/skills/conditions/isincinematic.md": {
+    "source": "Is In Cinematic",
+    "translation": "Is In Cinematic"
+  },
+  "wiki/skills/conditions/isinsurvivalmode.md": {
+    "source": "Is In Survival Mode",
+    "translation": "Is In Survival Mode"
+  },
+  "wiki/skills/conditions/isinvulnerable.md": {
+    "source": "Is Invulnerable",
+    "translation": "Is Invulnerable"
+  },
+  "wiki/skills/conditions/isleashed.md": {
+    "source": "Isleashed",
+    "translation": "Isleashed"
+  },
+  "wiki/skills/conditions/isliving.md": {
+    "source": "Isliving",
+    "translation": "Isliving"
+  },
+  "wiki/skills/conditions/ismonster.md": {
+    "source": "Ismonster",
+    "translation": "Ismonster"
+  },
+  "wiki/skills/conditions/ismythicmob.md": {
+    "source": "Ismythicmob",
+    "translation": "Ismythicmob"
+  },
+  "wiki/skills/conditions/isparent.md": {
+    "source": "Is Parent",
+    "translation": "Is Parent"
+  },
+  "wiki/skills/conditions/isparentalive.md": {
+    "source": "Is Parent Alive",
+    "translation": "Is Parent Alive"
+  },
+  "wiki/skills/conditions/isplayer.md": {
+    "source": "Isplayer",
+    "translation": "Isplayer"
+  },
+  "wiki/skills/conditions/israiderpatrolleader.md": {
+    "source": "Is Raider Patrol Leader",
+    "translation": "Is Raider Patrol Leader"
+  },
+  "wiki/skills/conditions/issaddled.md": {
+    "source": "Is Saddled",
+    "translation": "Is Saddled"
+  },
+  "wiki/skills/conditions/issibling.md": {
+    "source": "Is Sibling",
+    "translation": "Is Sibling"
+  },
+  "wiki/skills/conditions/isskill.md": {
+    "source": "Is Skill",
+    "translation": "Is Skill"
+  },
+  "wiki/skills/conditions/istamed.md": {
+    "source": "Is Tamed",
+    "translation": "Is Tamed"
+  },
+  "wiki/skills/conditions/isusingspyglass.md": {
+    "source": "Is Using Spyglass",
+    "translation": "Is Using Spyglass"
+  },
+  "wiki/skills/conditions/itemgrouponcooldown.md": {
+    "source": "Item Group On Cooldown",
+    "translation": "Item Group On Cooldown"
+  },
+  "wiki/skills/conditions/itemissimilar.md": {
+    "source": "Itemissimilar",
+    "translation": "Itemissimilar"
+  },
+  "wiki/skills/conditions/itemrecharging.md": {
+    "source": "Itemrecharging",
+    "translation": "Itemrecharging"
+  },
+  "wiki/skills/conditions/itemtype.md": {
+    "source": "Item Type",
+    "translation": "Item Type"
+  },
+  "wiki/skills/conditions/lastdamagecause.md": {
+    "source": "Lastdamagecause",
+    "translation": "Lastdamagecause"
+  },
+  "wiki/skills/conditions/lastsignal.md": {
+    "source": "Lastsignal",
+    "translation": "Lastsignal"
+  },
+  "wiki/skills/conditions/level.md": {
+    "source": "Level",
+    "translation": "Level"
+  },
+  "wiki/skills/conditions/lightlevel.md": {
+    "source": "Lightlevel",
+    "translation": "Lightlevel"
+  },
+  "wiki/skills/conditions/lightlevelfromblocks.md": {
+    "source": "Lightlevelfromblocks",
+    "translation": "Lightlevelfromblocks"
+  },
+  "wiki/skills/conditions/lineofsight.md": {
+    "source": "Lineofsight",
+    "translation": "Lineofsight"
+  },
+  "wiki/skills/conditions/lineofsightfromorigin.md": {
+    "source": "Lineofsightfromorigin",
+    "translation": "Lineofsightfromorigin"
+  },
+  "wiki/skills/conditions/livinginradius.md": {
+    "source": "Living In Radius",
+    "translation": "Living In Radius"
+  },
+  "wiki/skills/conditions/localdifficulty.md": {
+    "source": "Localdifficulty",
+    "translation": "Localdifficulty"
+  },
+  "wiki/skills/conditions/lookingat.md": {
+    "source": "Looking At",
+    "translation": "Looking At"
+  },
+  "wiki/skills/conditions/lunarphase.md": {
+    "source": "Lunarphase",
+    "translation": "Lunarphase"
+  },
+  "wiki/skills/conditions/materialisoncooldown.md": {
+    "source": "Material Is On Cooldown",
+    "translation": "Material Is On Cooldown"
+  },
+  "wiki/skills/conditions/metaskillcondition.md": {
+    "source": "Metaskill Condition",
+    "translation": "Metaskill Condition"
+  },
+  "wiki/skills/conditions/mobsinchunk.md": {
+    "source": "Mobsinchunk",
+    "translation": "Mobsinchunk"
+  },
+  "wiki/skills/conditions/mobsinradius.md": {
+    "source": "Mobsinradius",
+    "translation": "Mobsinradius"
+  },
+  "wiki/skills/conditions/mobsinworld.md": {
+    "source": "Mobsinworld",
+    "translation": "Mobsinworld"
+  },
+  "wiki/skills/conditions/mobsize.md": {
+    "source": "Mobsize",
+    "translation": "Mobsize"
+  },
+  "wiki/skills/conditions/mobsnearorigin.md": {
+    "source": "Mobs Near Origin",
+    "translation": "Mobs Near Origin"
+  },
+  "wiki/skills/conditions/moist.md": {
+    "source": "Moist",
+    "translation": "Moist"
+  },
+  "wiki/skills/conditions/moisturelevel.md": {
+    "source": "Moisturelevel",
+    "translation": "Moisturelevel"
+  },
+  "wiki/skills/conditions/motionx.md": {
+    "source": "Motionx",
+    "translation": "Motionx"
+  },
+  "wiki/skills/conditions/motiony.md": {
+    "source": "Motiony",
+    "translation": "Motiony"
+  },
+  "wiki/skills/conditions/motionz.md": {
+    "source": "Motionz",
+    "translation": "Motionz"
+  },
+  "wiki/skills/conditions/mounted.md": {
+    "source": "Mounted",
+    "translation": "Mounted"
+  },
+  "wiki/skills/conditions/moving.md": {
+    "source": "Moving",
+    "translation": "Moving"
+  },
+  "wiki/skills/conditions/mythicmobtype.md": {
+    "source": "Mythicmobtype",
+    "translation": "Mythicmobtype"
+  },
+  "wiki/skills/conditions/mythicpack.md": {
+    "source": "Mythic Pack",
+    "translation": "Mythic Pack"
+  },
+  "wiki/skills/conditions/mythicpackversion.md": {
+    "source": "Mythic Pack Version",
+    "translation": "Mythic Pack Version"
+  },
+  "wiki/skills/conditions/mythicpackversiongreater.md": {
+    "source": "Mythic Pack Version Greater",
+    "translation": "Mythic Pack Version Greater"
+  },
+  "wiki/skills/conditions/name.md": {
+    "source": "Name",
+    "translation": "Name"
+  },
+  "wiki/skills/conditions/nearclaim.md": {
+    "source": "Nearclaim",
+    "translation": "Nearclaim"
+  },
+  "wiki/skills/conditions/night.md": {
+    "source": "Night",
+    "translation": "Night"
+  },
+  "wiki/skills/conditions/notinregion.md": {
+    "source": "Notinregion",
+    "translation": "Notinregion"
+  },
+  "wiki/skills/conditions/offgcd.md": {
+    "source": "Offgcd",
+    "translation": "Offgcd"
+  },
+  "wiki/skills/conditions/onblock.md": {
+    "source": "Onblock",
+    "translation": "Onblock"
+  },
+  "wiki/skills/conditions/onground.md": {
+    "source": "Onground",
+    "translation": "Onground"
+  },
+  "wiki/skills/conditions/origindistancefrompin.md": {
+    "source": "Origin Distance From Pin",
+    "translation": "Origin Distance From Pin"
+  },
+  "wiki/skills/conditions/originlocation.md": {
+    "source": "Origin Location",
+    "translation": "Origin Location"
+  },
+  "wiki/skills/conditions/outside.md": {
+    "source": "Outside",
+    "translation": "Outside"
+  },
+  "wiki/skills/conditions/owner.md": {
+    "source": "Owner",
+    "translation": "Owner"
+  },
+  "wiki/skills/conditions/ownerisonline.md": {
+    "source": "Ownerisonline",
+    "translation": "Ownerisonline"
+  },
+  "wiki/skills/conditions/pitch.md": {
+    "source": "Pitch",
+    "translation": "Pitch"
+  },
+  "wiki/skills/conditions/playerkills.md": {
+    "source": "Playerkills",
+    "translation": "Playerkills"
+  },
+  "wiki/skills/conditions/playernotwithin.md": {
+    "source": "Playernotwithin",
+    "translation": "Playernotwithin"
+  },
+  "wiki/skills/conditions/playersinradius.md": {
+    "source": "Playersinradius",
+    "translation": "Playersinradius"
+  },
+  "wiki/skills/conditions/playersinworld.md": {
+    "source": "Playersinworld",
+    "translation": "Playersinworld"
+  },
+  "wiki/skills/conditions/playersonline.md": {
+    "source": "Playersonline",
+    "translation": "Playersonline"
+  },
+  "wiki/skills/conditions/playerwithin.md": {
+    "source": "Playerwithin",
+    "translation": "Playerwithin"
+  },
+  "wiki/skills/conditions/plugin.md": {
+    "source": "Plugin",
+    "translation": "Plugin"
+  },
+  "wiki/skills/conditions/premium.md": {
+    "source": "Premium",
+    "translation": "Premium"
+  },
+  "wiki/skills/conditions/projectilehasended.md": {
+    "source": "Projectile Has Ended",
+    "translation": "Projectile Has Ended"
+  },
+  "wiki/skills/conditions/raining.md": {
+    "source": "Raining",
+    "translation": "Raining"
+  },
+  "wiki/skills/conditions/region.md": {
+    "source": "Region",
+    "translation": "Region"
+  },
+  "wiki/skills/conditions/samefaction.md": {
+    "source": "Samefaction",
+    "translation": "Samefaction"
+  },
+  "wiki/skills/conditions/score.md": {
+    "source": "Score",
+    "translation": "Score"
+  },
+  "wiki/skills/conditions/serverispaper.md": {
+    "source": "Server Is Paper",
+    "translation": "Server Is Paper"
+  },
+  "wiki/skills/conditions/servernmsversion.md": {
+    "source": "Servernmsversion",
+    "translation": "Servernmsversion"
+  },
+  "wiki/skills/conditions/serverversion.md": {
+    "source": "Server Version",
+    "translation": "Server Version"
+  },
+  "wiki/skills/conditions/serverversionafterorequal.md": {
+    "source": "Server Version After Or Equal",
+    "translation": "Server Version After Or Equal"
+  },
+  "wiki/skills/conditions/serverversionbefore.md": {
+    "source": "Server Version Before",
+    "translation": "Server Version Before"
+  },
+  "wiki/skills/conditions/size.md": {
+    "source": "Size",
+    "translation": "Size"
+  },
+  "wiki/skills/conditions/skilloncooldown.md": {
+    "source": "Skilloncooldown",
+    "translation": "Skilloncooldown"
+  },
+  "wiki/skills/conditions/skylightlevel.md": {
+    "source": "Skylightlevel",
+    "translation": "Skylightlevel"
+  },
+  "wiki/skills/conditions/spawnreason.md": {
+    "source": "Spawn Reason",
+    "translation": "Spawn Reason"
+  },
+  "wiki/skills/conditions/sprinting.md": {
+    "source": "Sprinting",
+    "translation": "Sprinting"
+  },
+  "wiki/skills/conditions/stance.md": {
+    "source": "Stance",
+    "translation": "Stance"
+  },
+  "wiki/skills/conditions/statdamagemodifier.md": {
+    "source": "StatDamageModifier",
+    "translation": "StatDamageModifier"
+  },
+  "wiki/skills/conditions/stringempty.md": {
+    "source": "String Empty",
+    "translation": "String Empty"
+  },
+  "wiki/skills/conditions/stringequals.md": {
+    "source": "Stringequals",
+    "translation": "Stringequals"
+  },
+  "wiki/skills/conditions/stringnotempty.md": {
+    "source": "String Not Empty",
+    "translation": "String Not Empty"
+  },
+  "wiki/skills/conditions/structure.md": {
+    "source": "Structure",
+    "translation": "Structure"
+  },
+  "wiki/skills/conditions/sunny.md": {
+    "source": "Sunny",
+    "translation": "Sunny"
+  },
+  "wiki/skills/conditions/targetinlineofsight.md": {
+    "source": "Targetinlineofsight",
+    "translation": "Targetinlineofsight"
+  },
+  "wiki/skills/conditions/targetnotinlineofsight.md": {
+    "source": "Targetnotinlineofsight",
+    "translation": "Targetnotinlineofsight"
+  },
+  "wiki/skills/conditions/targetnotwithin.md": {
+    "source": "Targetnotwithin",
+    "translation": "Targetnotwithin"
+  },
+  "wiki/skills/conditions/targets.md": {
+    "source": "Targets",
+    "translation": "Targets"
+  },
+  "wiki/skills/conditions/targetwithin.md": {
+    "source": "Targetwithin",
+    "translation": "Targetwithin"
+  },
+  "wiki/skills/conditions/templatetype.md": {
+    "source": "Template Type",
+    "translation": "Template Type"
+  },
+  "wiki/skills/conditions/thundering.md": {
+    "source": "Thundering",
+    "translation": "Thundering"
+  },
+  "wiki/skills/conditions/triggerblocktype.md": {
+    "source": "Trigger Block Type",
+    "translation": "Trigger Block Type"
+  },
+  "wiki/skills/conditions/triggeritemtype.md": {
+    "source": "Trigger Item Type",
+    "translation": "Trigger Item Type"
+  },
+  "wiki/skills/conditions/variablecontains.md": {
+    "source": "Variable Contains",
+    "translation": "Variable Contains"
+  },
+  "wiki/skills/conditions/variableequals.md": {
+    "source": "Variableequals",
+    "translation": "Variableequals"
+  },
+  "wiki/skills/conditions/variableinrange.md": {
+    "source": "Variableinrange",
+    "translation": "Variableinrange"
+  },
+  "wiki/skills/conditions/variableisset.md": {
+    "source": "Variableisset",
+    "translation": "Variableisset"
+  },
+  "wiki/skills/conditions/vehicleisdead.md": {
+    "source": "Vehicleisdead",
+    "translation": "Vehicleisdead"
+  },
+  "wiki/skills/conditions/velocity.md": {
+    "source": "Velocity",
+    "translation": "Velocity"
+  },
+  "wiki/skills/conditions/wearing.md": {
+    "source": "Wearing",
+    "translation": "Wearing"
+  },
+  "wiki/skills/conditions/world.md": {
+    "source": "World",
+    "translation": "World"
+  },
+  "wiki/skills/conditions/worldtime.md": {
+    "source": "Worldtime",
+    "translation": "Worldtime"
+  },
+  "wiki/skills/conditions/xdiff.md": {
+    "source": "Xdiff",
+    "translation": "Xdiff"
+  },
+  "wiki/skills/conditions/yaw.md": {
+    "source": "Yaw",
+    "translation": "Yaw"
+  },
+  "wiki/skills/conditions/ydiff.md": {
+    "source": "Ydiff",
+    "translation": "Ydiff"
+  },
+  "wiki/skills/conditions/zdiff.md": {
+    "source": "Zdiff",
+    "translation": "Zdiff"
+  },
+  "wiki/skills/dynamic-metaskills.md": {
+    "source": "Dynamic Metaskills",
+    "translation": "动态元技能"
+  },
+  "wiki/skills/equipslot.md": {
+    "source": "Equip Slot",
+    "translation": "装备槽位"
+  },
+  "wiki/skills/inline-conditions.md": {
+    "source": "Inline Conditions",
+    "translation": "内联条件"
+  },
+  "wiki/skills/intratick-scheduling.md": {
+    "source": "Intratick Scheduling",
+    "translation": "刻内调度"
+  },
+  "wiki/skills/math.md": {
+    "source": "Math",
+    "translation": "数学运算"
+  },
+  "wiki/skills/mechanics.md": {
+    "source": "Mechanics",
+    "translation": "技能机制"
+  },
+  "wiki/skills/mechanics/activatespawner.md": {
+    "source": "Activatespawner",
+    "translation": "Activatespawner"
+  },
+  "wiki/skills/mechanics/addtag.md": {
+    "source": "Addtag",
+    "translation": "Addtag"
+  },
+  "wiki/skills/mechanics/addtrade.md": {
+    "source": "Add Trade",
+    "translation": "Add Trade"
+  },
+  "wiki/skills/mechanics/animatearmorstand.md": {
+    "source": "Animatearmorstand",
+    "translation": "Animatearmorstand"
+  },
+  "wiki/skills/mechanics/armanimation.md": {
+    "source": "Arm Animation",
+    "translation": "Arm Animation"
+  },
+  "wiki/skills/mechanics/arrowvolley.md": {
+    "source": "Arrowvolley",
+    "translation": "Arrowvolley"
+  },
+  "wiki/skills/mechanics/atom.md": {
+    "source": "Atom",
+    "translation": "Atom"
+  },
+  "wiki/skills/mechanics/attribute.md": {
+    "source": "Attribute",
+    "translation": "Attribute"
+  },
+  "wiki/skills/mechanics/attributemodifier.md": {
+    "source": "Attribute Modifier",
+    "translation": "Attribute Modifier"
+  },
+  "wiki/skills/mechanics/aura.md": {
+    "source": "Aura",
+    "translation": "Aura"
+  },
+  "wiki/skills/mechanics/auracomponents/chunkload.md": {
+    "source": "Chunk Load",
+    "translation": "Chunk Load"
+  },
+  "wiki/skills/mechanics/auracomponents/fear.md": {
+    "source": "Fear",
+    "translation": "Fear"
+  },
+  "wiki/skills/mechanics/auracomponents/fly.md": {
+    "source": "Fly",
+    "translation": "Fly"
+  },
+  "wiki/skills/mechanics/auracomponents/glow.md": {
+    "source": "Glow",
+    "translation": "Glow"
+  },
+  "wiki/skills/mechanics/auracomponents/onattack.md": {
+    "source": "On Attack",
+    "translation": "On Attack"
+  },
+  "wiki/skills/mechanics/auracomponents/onblockbreak.md": {
+    "source": "On Block Break",
+    "translation": "On Block Break"
+  },
+  "wiki/skills/mechanics/auracomponents/onblockplace.md": {
+    "source": "On Block Place",
+    "translation": "On Block Place"
+  },
+  "wiki/skills/mechanics/auracomponents/onchat.md": {
+    "source": "On Chat",
+    "translation": "On Chat"
+  },
+  "wiki/skills/mechanics/auracomponents/ondamaged.md": {
+    "source": "On Damaged",
+    "translation": "On Damaged"
+  },
+  "wiki/skills/mechanics/auracomponents/ondeath.md": {
+    "source": "On Death",
+    "translation": "On Death"
+  },
+  "wiki/skills/mechanics/auracomponents/oninput.md": {
+    "source": "On Input",
+    "translation": "On Input"
+  },
+  "wiki/skills/mechanics/auracomponents/oninteract.md": {
+    "source": "On Interact",
+    "translation": "On Interact"
+  },
+  "wiki/skills/mechanics/auracomponents/onshoot.md": {
+    "source": "On Shoot",
+    "translation": "On Shoot"
+  },
+  "wiki/skills/mechanics/auracomponents/onswing.md": {
+    "source": "On Swing",
+    "translation": "On Swing"
+  },
+  "wiki/skills/mechanics/auracomponents/projectilerebound.md": {
+    "source": "Projectile Rebound",
+    "translation": "Projectile Rebound"
+  },
+  "wiki/skills/mechanics/auracomponents/stat.md": {
+    "source": "Stat",
+    "translation": "Stat"
+  },
+  "wiki/skills/mechanics/auracomponents/stun.md": {
+    "source": "Stun",
+    "translation": "Stun"
+  },
+  "wiki/skills/mechanics/auraremove.md": {
+    "source": "Auraremove",
+    "translation": "Auraremove"
+  },
+  "wiki/skills/mechanics/barcreate.md": {
+    "source": "Barcreate",
+    "translation": "Barcreate"
+  },
+  "wiki/skills/mechanics/barremove.md": {
+    "source": "Barremove",
+    "translation": "Barremove"
+  },
+  "wiki/skills/mechanics/barset.md": {
+    "source": "Barset",
+    "translation": "Barset"
+  },
+  "wiki/skills/mechanics/basedamage.md": {
+    "source": "Basedamage",
+    "translation": "Basedamage"
+  },
+  "wiki/skills/mechanics/beam.md": {
+    "source": "Beam",
+    "translation": "Beam"
+  },
+  "wiki/skills/mechanics/blackscreen.md": {
+    "source": "Blackscreen",
+    "translation": "Blackscreen"
+  },
+  "wiki/skills/mechanics/blockdestabilize.md": {
+    "source": "Blockdestabilize",
+    "translation": "Blockdestabilize"
+  },
+  "wiki/skills/mechanics/blockmask.md": {
+    "source": "Block Mask",
+    "translation": "Block Mask"
+  },
+  "wiki/skills/mechanics/blockphysics.md": {
+    "source": "Blockphysics",
+    "translation": "Blockphysics"
+  },
+  "wiki/skills/mechanics/blockunmask.md": {
+    "source": "Block Unmask",
+    "translation": "Block Unmask"
+  },
+  "wiki/skills/mechanics/blockwave.md": {
+    "source": "Block Wave",
+    "translation": "Block Wave"
+  },
+  "wiki/skills/mechanics/bloodyscreen.md": {
+    "source": "Bloody Screen",
+    "translation": "Bloody Screen"
+  },
+  "wiki/skills/mechanics/bonemeal.md": {
+    "source": "Bonemeal",
+    "translation": "Bonemeal"
+  },
+  "wiki/skills/mechanics/bossborder.md": {
+    "source": "Bossborder",
+    "translation": "Bossborder"
+  },
+  "wiki/skills/mechanics/bouncy.md": {
+    "source": "Bouncy",
+    "translation": "Bouncy"
+  },
+  "wiki/skills/mechanics/breakblock.md": {
+    "source": "Breakblock",
+    "translation": "Breakblock"
+  },
+  "wiki/skills/mechanics/breakblockandgiveitem.md": {
+    "source": "Break Block And Give Item",
+    "translation": "Break Block And Give Item"
+  },
+  "wiki/skills/mechanics/cancelevent.md": {
+    "source": "Cancelevent",
+    "translation": "Cancelevent"
+  },
+  "wiki/skills/mechanics/cancelskill.md": {
+    "source": "Cancel Skill",
+    "translation": "Cancel Skill"
+  },
+  "wiki/skills/mechanics/cast.md": {
+    "source": "Cast",
+    "translation": "Cast"
+  },
+  "wiki/skills/mechanics/chain.md": {
+    "source": "Chain",
+    "translation": "Chain"
+  },
+  "wiki/skills/mechanics/chainmissile.md": {
+    "source": "Chainmissile",
+    "translation": "Chainmissile"
+  },
+  "wiki/skills/mechanics/cinematiccamera.md": {
+    "source": "Cinematic Camera",
+    "translation": "Cinematic Camera"
+  },
+  "wiki/skills/mechanics/cinematiccancel.md": {
+    "source": "Cinematic Cancel",
+    "translation": "Cinematic Cancel"
+  },
+  "wiki/skills/mechanics/clearexperience.md": {
+    "source": "Clear Experience",
+    "translation": "Clear Experience"
+  },
+  "wiki/skills/mechanics/clearexperiencelevels.md": {
+    "source": "Clear Experience Levels",
+    "translation": "Clear Experience Levels"
+  },
+  "wiki/skills/mechanics/cleartarget.md": {
+    "source": "Clear Target",
+    "translation": "Clear Target"
+  },
+  "wiki/skills/mechanics/clearthreat.md": {
+    "source": "Clearthreat",
+    "translation": "Clearthreat"
+  },
+  "wiki/skills/mechanics/closedialog.md": {
+    "source": "Close Dialog",
+    "translation": "Close Dialog"
+  },
+  "wiki/skills/mechanics/closeinventory.md": {
+    "source": "Closeinventory",
+    "translation": "Closeinventory"
+  },
+  "wiki/skills/mechanics/command.md": {
+    "source": "Command",
+    "translation": "命令"
+  },
+  "wiki/skills/mechanics/consume.md": {
+    "source": "Consume",
+    "translation": "Consume"
+  },
+  "wiki/skills/mechanics/consumeslot.md": {
+    "source": "Consumeslot",
+    "translation": "Consumeslot"
+  },
+  "wiki/skills/mechanics/currencygive.md": {
+    "source": "Currencygive",
+    "translation": "Currencygive"
+  },
+  "wiki/skills/mechanics/currencytake.md": {
+    "source": "Currencytake",
+    "translation": "Currencytake"
+  },
+  "wiki/skills/mechanics/damage.md": {
+    "source": "Damage",
+    "translation": "Damage"
+  },
+  "wiki/skills/mechanics/decapitate.md": {
+    "source": "Decapitate",
+    "translation": "Decapitate"
+  },
+  "wiki/skills/mechanics/delay.md": {
+    "source": "Delay",
+    "translation": "Delay"
+  },
+  "wiki/skills/mechanics/determinecondition.md": {
+    "source": "Determine Condition",
+    "translation": "Determine Condition"
+  },
+  "wiki/skills/mechanics/directionalvelocity.md": {
+    "source": "Directional Velocity",
+    "translation": "Directional Velocity"
+  },
+  "wiki/skills/mechanics/disengage.md": {
+    "source": "Disengage",
+    "translation": "Disengage"
+  },
+  "wiki/skills/mechanics/disguise.md": {
+    "source": "Disguise",
+    "translation": "Disguise"
+  },
+  "wiki/skills/mechanics/disguisemodify.md": {
+    "source": "Disguise Modify",
+    "translation": "Disguise Modify"
+  },
+  "wiki/skills/mechanics/disguisetarget.md": {
+    "source": "Disguisetarget",
+    "translation": "Disguisetarget"
+  },
+  "wiki/skills/mechanics/dismount.md": {
+    "source": "Dismount",
+    "translation": "Dismount"
+  },
+  "wiki/skills/mechanics/displaytransformation.md": {
+    "source": "Display Transformation",
+    "translation": "Display Transformation"
+  },
+  "wiki/skills/mechanics/doppleganger.md": {
+    "source": "Doppleganger",
+    "translation": "Doppleganger"
+  },
+  "wiki/skills/mechanics/dropitem.md": {
+    "source": "Dropitem",
+    "translation": "Dropitem"
+  },
+  "wiki/skills/mechanics/ejectpassenger.md": {
+    "source": "Ejectpassenger",
+    "translation": "Ejectpassenger"
+  },
+  "wiki/skills/mechanics/ender.md": {
+    "source": "Ender",
+    "translation": "Ender"
+  },
+  "wiki/skills/mechanics/enderbeam.md": {
+    "source": "Ender Beam",
+    "translation": "Ender Beam"
+  },
+  "wiki/skills/mechanics/enderdragonresetcrystals.md": {
+    "source": "Ender Dragon Reset Crystals",
+    "translation": "Ender Dragon Reset Crystals"
+  },
+  "wiki/skills/mechanics/enderdragonsetphase.md": {
+    "source": "Ender Dragon Set Phase",
+    "translation": "Ender Dragon Set Phase"
+  },
+  "wiki/skills/mechanics/enderdragonsetrespawnphase.md": {
+    "source": "Ender Dragon Set Respawn Phase",
+    "translation": "Ender Dragon Set Respawn Phase"
+  },
+  "wiki/skills/mechanics/enderdragonspawnportal.md": {
+    "source": "Ender Dragon Spawn Portal",
+    "translation": "Ender Dragon Spawn Portal"
+  },
+  "wiki/skills/mechanics/endprojectile.md": {
+    "source": "Endprojectile",
+    "translation": "Endprojectile"
+  },
+  "wiki/skills/mechanics/equip.md": {
+    "source": "Equip",
+    "translation": "Equip"
+  },
+  "wiki/skills/mechanics/equipcopy.md": {
+    "source": "Equipcopy",
+    "translation": "Equipcopy"
+  },
+  "wiki/skills/mechanics/explosion.md": {
+    "source": "Explosion",
+    "translation": "Explosion"
+  },
+  "wiki/skills/mechanics/extinguish.md": {
+    "source": "Extinguish",
+    "translation": "Extinguish"
+  },
+  "wiki/skills/mechanics/fakeexplosion.md": {
+    "source": "Fake Explosion",
+    "translation": "Fake Explosion"
+  },
+  "wiki/skills/mechanics/fakelightning.md": {
+    "source": "Fake Lightning",
+    "translation": "Fake Lightning"
+  },
+  "wiki/skills/mechanics/fawepaste.md": {
+    "source": "Fawepaste",
+    "translation": "Fawepaste"
+  },
+  "wiki/skills/mechanics/fear.md": {
+    "source": "Fear",
+    "translation": "Fear"
+  },
+  "wiki/skills/mechanics/feed.md": {
+    "source": "Feed",
+    "translation": "Feed"
+  },
+  "wiki/skills/mechanics/fillchest.md": {
+    "source": "Fill Chest",
+    "translation": "Fill Chest"
+  },
+  "wiki/skills/mechanics/firework.md": {
+    "source": "Firework",
+    "translation": "烟花"
+  },
+  "wiki/skills/mechanics/flames.md": {
+    "source": "Flames",
+    "translation": "Flames"
+  },
+  "wiki/skills/mechanics/fly.md": {
+    "source": "Fly",
+    "translation": "Fly"
+  },
+  "wiki/skills/mechanics/followpath.md": {
+    "source": "Follow Path",
+    "translation": "Follow Path"
+  },
+  "wiki/skills/mechanics/forcepull.md": {
+    "source": "Forcepull",
+    "translation": "Forcepull"
+  },
+  "wiki/skills/mechanics/foreach.md": {
+    "source": "For Each",
+    "translation": "For Each"
+  },
+  "wiki/skills/mechanics/foreachpin.md": {
+    "source": "For Each Pin",
+    "translation": "For Each Pin"
+  },
+  "wiki/skills/mechanics/foreachvalue.md": {
+    "source": "For Each Value",
+    "translation": "For Each Value"
+  },
+  "wiki/skills/mechanics/formline.md": {
+    "source": "Form Line",
+    "translation": "Form Line"
+  },
+  "wiki/skills/mechanics/freeze.md": {
+    "source": "Freeze",
+    "translation": "Freeze"
+  },
+  "wiki/skills/mechanics/geyser.md": {
+    "source": "Geyser",
+    "translation": "Geyser"
+  },
+  "wiki/skills/mechanics/giveexperiencelevels.md": {
+    "source": "Give Experience Levels",
+    "translation": "Give Experience Levels"
+  },
+  "wiki/skills/mechanics/giveitem.md": {
+    "source": "Giveitem",
+    "translation": "Giveitem"
+  },
+  "wiki/skills/mechanics/giveitemfromslot.md": {
+    "source": "Giveitemfromslot",
+    "translation": "Giveitemfromslot"
+  },
+  "wiki/skills/mechanics/giveitemfromtarget.md": {
+    "source": "Giveitemfromtarget",
+    "translation": "Giveitemfromtarget"
+  },
+  "wiki/skills/mechanics/globalcooldown.md": {
+    "source": "Globalcooldown",
+    "translation": "Globalcooldown"
+  },
+  "wiki/skills/mechanics/glow.md": {
+    "source": "Glow",
+    "translation": "Glow"
+  },
+  "wiki/skills/mechanics/goatram.md": {
+    "source": "Goat Ram",
+    "translation": "Goat Ram"
+  },
+  "wiki/skills/mechanics/goto.md": {
+    "source": "Goto",
+    "translation": "Goto"
+  },
+  "wiki/skills/mechanics/guardianbeam.md": {
+    "source": "Guardianbeam",
+    "translation": "Guardianbeam"
+  },
+  "wiki/skills/mechanics/heal.md": {
+    "source": "Heal",
+    "translation": "Heal"
+  },
+  "wiki/skills/mechanics/healpercent.md": {
+    "source": "Healpercent",
+    "translation": "Healpercent"
+  },
+  "wiki/skills/mechanics/hide.md": {
+    "source": "Hide",
+    "translation": "Hide"
+  },
+  "wiki/skills/mechanics/hit.md": {
+    "source": "Hit",
+    "translation": "Hit"
+  },
+  "wiki/skills/mechanics/hologram.md": {
+    "source": "Hologram",
+    "translation": "Hologram"
+  },
+  "wiki/skills/mechanics/ignite.md": {
+    "source": "Ignite",
+    "translation": "Ignite"
+  },
+  "wiki/skills/mechanics/itemspray.md": {
+    "source": "Itemspray",
+    "translation": "Itemspray"
+  },
+  "wiki/skills/mechanics/jsonmessage.md": {
+    "source": "Jsonmessage",
+    "translation": "Jsonmessage"
+  },
+  "wiki/skills/mechanics/jump.md": {
+    "source": "Jump",
+    "translation": "Jump"
+  },
+  "wiki/skills/mechanics/leap.md": {
+    "source": "Leap",
+    "translation": "Leap"
+  },
+  "wiki/skills/mechanics/lightning.md": {
+    "source": "Lightning",
+    "translation": "Lightning"
+  },
+  "wiki/skills/mechanics/log.md": {
+    "source": "Log",
+    "translation": "Log"
+  },
+  "wiki/skills/mechanics/look.md": {
+    "source": "Look",
+    "translation": "Look"
+  },
+  "wiki/skills/mechanics/lunge.md": {
+    "source": "Lunge",
+    "translation": "Lunge"
+  },
+  "wiki/skills/mechanics/matchrotation.md": {
+    "source": "Match Rotation",
+    "translation": "Match Rotation"
+  },
+  "wiki/skills/mechanics/message.md": {
+    "source": "Message",
+    "translation": "Message"
+  },
+  "wiki/skills/mechanics/missile.md": {
+    "source": "Missile",
+    "translation": "Missile"
+  },
+  "wiki/skills/mechanics/modifydamage.md": {
+    "source": "Modify Damage",
+    "translation": "Modify Damage"
+  },
+  "wiki/skills/mechanics/modifyglobalscore.md": {
+    "source": "Modifyglobalscore",
+    "translation": "Modifyglobalscore"
+  },
+  "wiki/skills/mechanics/modifymobscore.md": {
+    "source": "Modifymobscore",
+    "translation": "Modifymobscore"
+  },
+  "wiki/skills/mechanics/modifyprojectile.md": {
+    "source": "Modifyprojectile",
+    "translation": "Modifyprojectile"
+  },
+  "wiki/skills/mechanics/modifyscore.md": {
+    "source": "Modifyscore",
+    "translation": "Modifyscore"
+  },
+  "wiki/skills/mechanics/modifytargetscore.md": {
+    "source": "Modifytargetscore",
+    "translation": "Modifytargetscore"
+  },
+  "wiki/skills/mechanics/mount.md": {
+    "source": "Mount",
+    "translation": "Mount"
+  },
+  "wiki/skills/mechanics/mountme.md": {
+    "source": "Mountme",
+    "translation": "Mountme"
+  },
+  "wiki/skills/mechanics/mounttarget.md": {
+    "source": "Mounttarget",
+    "translation": "Mounttarget"
+  },
+  "wiki/skills/mechanics/movepin.md": {
+    "source": "Move Pin",
+    "translation": "Move Pin"
+  },
+  "wiki/skills/mechanics/onattack.md": {
+    "source": "On Attack",
+    "translation": "On Attack"
+  },
+  "wiki/skills/mechanics/onblockbreak.md": {
+    "source": "Onblockbreak",
+    "translation": "Onblockbreak"
+  },
+  "wiki/skills/mechanics/onblockplace.md": {
+    "source": "Onblockplace",
+    "translation": "Onblockplace"
+  },
+  "wiki/skills/mechanics/onchat.md": {
+    "source": "On Chat",
+    "translation": "On Chat"
+  },
+  "wiki/skills/mechanics/ondamaged.md": {
+    "source": "On Damaged",
+    "translation": "On Damaged"
+  },
+  "wiki/skills/mechanics/ondeath.md": {
+    "source": "Ondeath",
+    "translation": "Ondeath"
+  },
+  "wiki/skills/mechanics/oninteract.md": {
+    "source": "Oninteract",
+    "translation": "Oninteract"
+  },
+  "wiki/skills/mechanics/onjump.md": {
+    "source": "Onjump",
+    "translation": "Onjump"
+  },
+  "wiki/skills/mechanics/onkeypress.md": {
+    "source": "On Key Press",
+    "translation": "On Key Press"
+  },
+  "wiki/skills/mechanics/onkeyrelease.md": {
+    "source": "On Key Release",
+    "translation": "On Key Release"
+  },
+  "wiki/skills/mechanics/onshoot.md": {
+    "source": "Onshoot",
+    "translation": "Onshoot"
+  },
+  "wiki/skills/mechanics/onswing.md": {
+    "source": "Onswing",
+    "translation": "Onswing"
+  },
+  "wiki/skills/mechanics/opencustommenu.md": {
+    "source": "Open Custom Menu",
+    "translation": "Open Custom Menu"
+  },
+  "wiki/skills/mechanics/opentrades.md": {
+    "source": "Open Trades",
+    "translation": "Open Trades"
+  },
+  "wiki/skills/mechanics/orbital.md": {
+    "source": "Orbital",
+    "translation": "Orbital"
+  },
+  "wiki/skills/mechanics/oxygen.md": {
+    "source": "Oxygen",
+    "translation": "Oxygen"
+  },
+  "wiki/skills/mechanics/particle.md": {
+    "source": "Particle",
+    "translation": "Particle"
+  },
+  "wiki/skills/mechanics/particle/particle-types.md": {
+    "source": "Particle Types",
+    "translation": "Particle Types"
+  },
+  "wiki/skills/mechanics/particle/particle-types/angry_villager.md": {
+    "source": "Angry Villager",
+    "translation": "Angry Villager"
+  },
+  "wiki/skills/mechanics/particle/particle-types/ash.md": {
+    "source": "Ash",
+    "translation": "Ash"
+  },
+  "wiki/skills/mechanics/particle/particle-types/barrier.md": {
+    "source": "Barrier",
+    "translation": "Barrier"
+  },
+  "wiki/skills/mechanics/particle/particle-types/block.md": {
+    "source": "Block",
+    "translation": "Block"
+  },
+  "wiki/skills/mechanics/particle/particle-types/block_crumble.md": {
+    "source": "Block Crumble",
+    "translation": "Block Crumble"
+  },
+  "wiki/skills/mechanics/particle/particle-types/block_dust.md": {
+    "source": "Block Dust",
+    "translation": "Block Dust"
+  },
+  "wiki/skills/mechanics/particle/particle-types/block_marker.md": {
+    "source": "Block Marker",
+    "translation": "Block Marker"
+  },
+  "wiki/skills/mechanics/particle/particle-types/bubble.md": {
+    "source": "Bubble",
+    "translation": "Bubble"
+  },
+  "wiki/skills/mechanics/particle/particle-types/bubble_column_up.md": {
+    "source": "Bubble Column Up",
+    "translation": "Bubble Column Up"
+  },
+  "wiki/skills/mechanics/particle/particle-types/bubble_pop.md": {
+    "source": "Bubble Pop",
+    "translation": "Bubble Pop"
+  },
+  "wiki/skills/mechanics/particle/particle-types/campfire_cosy_smoke.md": {
+    "source": "Campfire Cosy Smoke",
+    "translation": "Campfire Cosy Smoke"
+  },
+  "wiki/skills/mechanics/particle/particle-types/campfire_signal_smoke.md": {
+    "source": "Campfire Signal Smoke",
+    "translation": "Campfire Signal Smoke"
+  },
+  "wiki/skills/mechanics/particle/particle-types/cherry_leaves.md": {
+    "source": "Cherry Leaves",
+    "translation": "Cherry Leaves"
+  },
+  "wiki/skills/mechanics/particle/particle-types/cloud.md": {
+    "source": "Cloud",
+    "translation": "Cloud"
+  },
+  "wiki/skills/mechanics/particle/particle-types/composter.md": {
+    "source": "Composter",
+    "translation": "Composter"
+  },
+  "wiki/skills/mechanics/particle/particle-types/copper_fire_flame.md": {
+    "source": "Copper Fire Flame",
+    "translation": "Copper Fire Flame"
+  },
+  "wiki/skills/mechanics/particle/particle-types/crimson_spore.md": {
+    "source": "Crimson Spore",
+    "translation": "Crimson Spore"
+  },
+  "wiki/skills/mechanics/particle/particle-types/crit.md": {
+    "source": "Crit",
+    "translation": "Crit"
+  },
+  "wiki/skills/mechanics/particle/particle-types/current_down.md": {
+    "source": "Current Down",
+    "translation": "Current Down"
+  },
+  "wiki/skills/mechanics/particle/particle-types/damage_indicator.md": {
+    "source": "Damage Indicator",
+    "translation": "Damage Indicator"
+  },
+  "wiki/skills/mechanics/particle/particle-types/dolphin.md": {
+    "source": "Dolphin",
+    "translation": "Dolphin"
+  },
+  "wiki/skills/mechanics/particle/particle-types/dragon_breath.md": {
+    "source": "Dragon Breath",
+    "translation": "Dragon Breath"
+  },
+  "wiki/skills/mechanics/particle/particle-types/dripping_dripstone_lava.md": {
+    "source": "Dripping Dripstone Lava",
+    "translation": "Dripping Dripstone Lava"
+  },
+  "wiki/skills/mechanics/particle/particle-types/dripping_dripstone_water.md": {
+    "source": "Dripping Dripstone Water",
+    "translation": "Dripping Dripstone Water"
+  },
+  "wiki/skills/mechanics/particle/particle-types/dripping_honey.md": {
+    "source": "Dripping Honey",
+    "translation": "Dripping Honey"
+  },
+  "wiki/skills/mechanics/particle/particle-types/dripping_lava.md": {
+    "source": "Dripping Lava",
+    "translation": "Dripping Lava"
+  },
+  "wiki/skills/mechanics/particle/particle-types/dripping_obsidian_tear.md": {
+    "source": "Dripping Obsidian Tear",
+    "translation": "Dripping Obsidian Tear"
+  },
+  "wiki/skills/mechanics/particle/particle-types/dripping_water.md": {
+    "source": "Dripping Water",
+    "translation": "Dripping Water"
+  },
+  "wiki/skills/mechanics/particle/particle-types/dust.md": {
+    "source": "Dust",
+    "translation": "Dust"
+  },
+  "wiki/skills/mechanics/particle/particle-types/dust_color_transition.md": {
+    "source": "Dust Color Transition",
+    "translation": "Dust Color Transition"
+  },
+  "wiki/skills/mechanics/particle/particle-types/dust_pillar.md": {
+    "source": "Dust Pillar",
+    "translation": "Dust Pillar"
+  },
+  "wiki/skills/mechanics/particle/particle-types/dust_plume.md": {
+    "source": "Dust Plume",
+    "translation": "Dust Plume"
+  },
+  "wiki/skills/mechanics/particle/particle-types/effect.md": {
+    "source": "Effect",
+    "translation": "Effect"
+  },
+  "wiki/skills/mechanics/particle/particle-types/egg_crack.md": {
+    "source": "Egg Crack",
+    "translation": "Egg Crack"
+  },
+  "wiki/skills/mechanics/particle/particle-types/elder_guardian.md": {
+    "source": "Elder Guardian",
+    "translation": "Elder Guardian"
+  },
+  "wiki/skills/mechanics/particle/particle-types/electric_spark.md": {
+    "source": "Electric Spark",
+    "translation": "Electric Spark"
+  },
+  "wiki/skills/mechanics/particle/particle-types/enchant.md": {
+    "source": "Enchant",
+    "translation": "Enchant"
+  },
+  "wiki/skills/mechanics/particle/particle-types/enchanted_hit.md": {
+    "source": "Enchanted Hit",
+    "translation": "Enchanted Hit"
+  },
+  "wiki/skills/mechanics/particle/particle-types/end_rod.md": {
+    "source": "End Rod",
+    "translation": "End Rod"
+  },
+  "wiki/skills/mechanics/particle/particle-types/entity_effect.md": {
+    "source": "Entity Effect",
+    "translation": "Entity Effect"
+  },
+  "wiki/skills/mechanics/particle/particle-types/explosion.md": {
+    "source": "Explosion",
+    "translation": "Explosion"
+  },
+  "wiki/skills/mechanics/particle/particle-types/explosion_emitter.md": {
+    "source": "Explosion Emitter",
+    "translation": "Explosion Emitter"
+  },
+  "wiki/skills/mechanics/particle/particle-types/falling_dripstone_lava.md": {
+    "source": "Falling Dripstone Lava",
+    "translation": "Falling Dripstone Lava"
+  },
+  "wiki/skills/mechanics/particle/particle-types/falling_dripstone_water.md": {
+    "source": "Falling Dripstone Water",
+    "translation": "Falling Dripstone Water"
+  },
+  "wiki/skills/mechanics/particle/particle-types/falling_dust.md": {
+    "source": "Falling Dust",
+    "translation": "Falling Dust"
+  },
+  "wiki/skills/mechanics/particle/particle-types/falling_honey.md": {
+    "source": "Falling Honey",
+    "translation": "Falling Honey"
+  },
+  "wiki/skills/mechanics/particle/particle-types/falling_lava.md": {
+    "source": "Falling Lava",
+    "translation": "Falling Lava"
+  },
+  "wiki/skills/mechanics/particle/particle-types/falling_nectar.md": {
+    "source": "Falling Nectar",
+    "translation": "Falling Nectar"
+  },
+  "wiki/skills/mechanics/particle/particle-types/falling_obsidian_tear.md": {
+    "source": "Falling Obsidian Tear",
+    "translation": "Falling Obsidian Tear"
+  },
+  "wiki/skills/mechanics/particle/particle-types/falling_spore_blossom.md": {
+    "source": "Falling Spore Blossom",
+    "translation": "Falling Spore Blossom"
+  },
+  "wiki/skills/mechanics/particle/particle-types/falling_water.md": {
+    "source": "Falling Water",
+    "translation": "Falling Water"
+  },
+  "wiki/skills/mechanics/particle/particle-types/firefly.md": {
+    "source": "Firefly",
+    "translation": "Firefly"
+  },
+  "wiki/skills/mechanics/particle/particle-types/firework.md": {
+    "source": "Firework",
+    "translation": "烟花"
+  },
+  "wiki/skills/mechanics/particle/particle-types/fishing.md": {
+    "source": "Fishing",
+    "translation": "Fishing"
+  },
+  "wiki/skills/mechanics/particle/particle-types/flame.md": {
+    "source": "Flame",
+    "translation": "Flame"
+  },
+  "wiki/skills/mechanics/particle/particle-types/flash.md": {
+    "source": "Flash",
+    "translation": "Flash"
+  },
+  "wiki/skills/mechanics/particle/particle-types/glow.md": {
+    "source": "Glow",
+    "translation": "Glow"
+  },
+  "wiki/skills/mechanics/particle/particle-types/glow_squid_ink.md": {
+    "source": "Glow Squid Ink",
+    "translation": "Glow Squid Ink"
+  },
+  "wiki/skills/mechanics/particle/particle-types/gust.md": {
+    "source": "Gust",
+    "translation": "Gust"
+  },
+  "wiki/skills/mechanics/particle/particle-types/gust_emitter_large.md": {
+    "source": "Gust Emitter Large",
+    "translation": "Gust Emitter Large"
+  },
+  "wiki/skills/mechanics/particle/particle-types/gust_emitter_small.md": {
+    "source": "Gust Emitter Small",
+    "translation": "Gust Emitter Small"
+  },
+  "wiki/skills/mechanics/particle/particle-types/happy_villager.md": {
+    "source": "Happy Villager",
+    "translation": "Happy Villager"
+  },
+  "wiki/skills/mechanics/particle/particle-types/heart.md": {
+    "source": "Heart",
+    "translation": "Heart"
+  },
+  "wiki/skills/mechanics/particle/particle-types/infested.md": {
+    "source": "Infested",
+    "translation": "Infested"
+  },
+  "wiki/skills/mechanics/particle/particle-types/instant_effect.md": {
+    "source": "Instant Effect",
+    "translation": "Instant Effect"
+  },
+  "wiki/skills/mechanics/particle/particle-types/item.md": {
+    "source": "Item",
+    "translation": "Item"
+  },
+  "wiki/skills/mechanics/particle/particle-types/item_slime.md": {
+    "source": "Item Slime",
+    "translation": "Item Slime"
+  },
+  "wiki/skills/mechanics/particle/particle-types/item_snowball.md": {
+    "source": "Item Snowball",
+    "translation": "Item Snowball"
+  },
+  "wiki/skills/mechanics/particle/particle-types/landing_honey.md": {
+    "source": "Landing Honey",
+    "translation": "Landing Honey"
+  },
+  "wiki/skills/mechanics/particle/particle-types/landing_lava.md": {
+    "source": "Landing Lava",
+    "translation": "Landing Lava"
+  },
+  "wiki/skills/mechanics/particle/particle-types/landing_obsidian_tear.md": {
+    "source": "Landing Obsidian Tear",
+    "translation": "Landing Obsidian Tear"
+  },
+  "wiki/skills/mechanics/particle/particle-types/large_smoke.md": {
+    "source": "Large Smoke",
+    "translation": "Large Smoke"
+  },
+  "wiki/skills/mechanics/particle/particle-types/lava.md": {
+    "source": "Lava",
+    "translation": "Lava"
+  },
+  "wiki/skills/mechanics/particle/particle-types/light.md": {
+    "source": "Light",
+    "translation": "Light"
+  },
+  "wiki/skills/mechanics/particle/particle-types/mycelium.md": {
+    "source": "Mycelium",
+    "translation": "Mycelium"
+  },
+  "wiki/skills/mechanics/particle/particle-types/nautilus.md": {
+    "source": "Nautilus",
+    "translation": "Nautilus"
+  },
+  "wiki/skills/mechanics/particle/particle-types/note.md": {
+    "source": "Note",
+    "translation": "Note"
+  },
+  "wiki/skills/mechanics/particle/particle-types/ominous_spawning.md": {
+    "source": "Ominous Spawning",
+    "translation": "Ominous Spawning"
+  },
+  "wiki/skills/mechanics/particle/particle-types/pale_oak_leaves.md": {
+    "source": "Pale Oak Leaves",
+    "translation": "Pale Oak Leaves"
+  },
+  "wiki/skills/mechanics/particle/particle-types/poof.md": {
+    "source": "Poof",
+    "translation": "Poof"
+  },
+  "wiki/skills/mechanics/particle/particle-types/portal.md": {
+    "source": "Portal",
+    "translation": "Portal"
+  },
+  "wiki/skills/mechanics/particle/particle-types/raid_omen.md": {
+    "source": "Raid Omen",
+    "translation": "Raid Omen"
+  },
+  "wiki/skills/mechanics/particle/particle-types/rain.md": {
+    "source": "Rain",
+    "translation": "Rain"
+  },
+  "wiki/skills/mechanics/particle/particle-types/reverse_portal.md": {
+    "source": "Reverse Portal",
+    "translation": "Reverse Portal"
+  },
+  "wiki/skills/mechanics/particle/particle-types/scrape.md": {
+    "source": "Scrape",
+    "translation": "Scrape"
+  },
+  "wiki/skills/mechanics/particle/particle-types/sculk_charge.md": {
+    "source": "Sculk Charge",
+    "translation": "Sculk Charge"
+  },
+  "wiki/skills/mechanics/particle/particle-types/sculk_charge_pop.md": {
+    "source": "Sculk Charge Pop",
+    "translation": "Sculk Charge Pop"
+  },
+  "wiki/skills/mechanics/particle/particle-types/sculk_soul.md": {
+    "source": "Sculk Soul",
+    "translation": "Sculk Soul"
+  },
+  "wiki/skills/mechanics/particle/particle-types/shriek.md": {
+    "source": "Shriek",
+    "translation": "Shriek"
+  },
+  "wiki/skills/mechanics/particle/particle-types/small_flame.md": {
+    "source": "Small Flame",
+    "translation": "Small Flame"
+  },
+  "wiki/skills/mechanics/particle/particle-types/small_gust.md": {
+    "source": "Small Gust",
+    "translation": "Small Gust"
+  },
+  "wiki/skills/mechanics/particle/particle-types/smoke.md": {
+    "source": "Smoke",
+    "translation": "Smoke"
+  },
+  "wiki/skills/mechanics/particle/particle-types/sneeze.md": {
+    "source": "Sneeze",
+    "translation": "Sneeze"
+  },
+  "wiki/skills/mechanics/particle/particle-types/snowflake.md": {
+    "source": "Snowflake",
+    "translation": "Snowflake"
+  },
+  "wiki/skills/mechanics/particle/particle-types/sonic_boom.md": {
+    "source": "Sonic Boom",
+    "translation": "Sonic Boom"
+  },
+  "wiki/skills/mechanics/particle/particle-types/soul.md": {
+    "source": "Soul",
+    "translation": "Soul"
+  },
+  "wiki/skills/mechanics/particle/particle-types/soul_fire_flame.md": {
+    "source": "Soul Fire Flame",
+    "translation": "Soul Fire Flame"
+  },
+  "wiki/skills/mechanics/particle/particle-types/spell_mob_ambient.md": {
+    "source": "Spell Mob Ambient",
+    "translation": "Spell Mob Ambient"
+  },
+  "wiki/skills/mechanics/particle/particle-types/spit.md": {
+    "source": "Spit",
+    "translation": "Spit"
+  },
+  "wiki/skills/mechanics/particle/particle-types/splash.md": {
+    "source": "Splash",
+    "translation": "Splash"
+  },
+  "wiki/skills/mechanics/particle/particle-types/spore_blossom_air.md": {
+    "source": "Spore Blossom Air",
+    "translation": "Spore Blossom Air"
+  },
+  "wiki/skills/mechanics/particle/particle-types/squid_ink.md": {
+    "source": "Squid Ink",
+    "translation": "Squid Ink"
+  },
+  "wiki/skills/mechanics/particle/particle-types/suspended_depth.md": {
+    "source": "Suspended Depth",
+    "translation": "Suspended Depth"
+  },
+  "wiki/skills/mechanics/particle/particle-types/sweep_attack.md": {
+    "source": "Sweep Attack",
+    "translation": "Sweep Attack"
+  },
+  "wiki/skills/mechanics/particle/particle-types/tinted_leaves.md": {
+    "source": "Tinted Leaves",
+    "translation": "Tinted Leaves"
+  },
+  "wiki/skills/mechanics/particle/particle-types/totem_of_undying.md": {
+    "source": "Totem Of Undying",
+    "translation": "Totem Of Undying"
+  },
+  "wiki/skills/mechanics/particle/particle-types/trail.md": {
+    "source": "Trail",
+    "translation": "Trail"
+  },
+  "wiki/skills/mechanics/particle/particle-types/trial_omen.md": {
+    "source": "Trial Omen",
+    "translation": "Trial Omen"
+  },
+  "wiki/skills/mechanics/particle/particle-types/trial_spawner_detection.md": {
+    "source": "Trial Spawner Detection",
+    "translation": "Trial Spawner Detection"
+  },
+  "wiki/skills/mechanics/particle/particle-types/trial_spawner_detection_ominous.md": {
+    "source": "Trial Spawner Detection Ominous",
+    "translation": "Trial Spawner Detection Ominous"
+  },
+  "wiki/skills/mechanics/particle/particle-types/underwater.md": {
+    "source": "Underwater",
+    "translation": "Underwater"
+  },
+  "wiki/skills/mechanics/particle/particle-types/vault_connection.md": {
+    "source": "Vault Connection",
+    "translation": "Vault Connection"
+  },
+  "wiki/skills/mechanics/particle/particle-types/vibration.md": {
+    "source": "Vibration",
+    "translation": "Vibration"
+  },
+  "wiki/skills/mechanics/particle/particle-types/warped_spore.md": {
+    "source": "Warped Spore",
+    "translation": "Warped Spore"
+  },
+  "wiki/skills/mechanics/particle/particle-types/wax_off.md": {
+    "source": "Wax Off",
+    "translation": "Wax Off"
+  },
+  "wiki/skills/mechanics/particle/particle-types/wax_on.md": {
+    "source": "Wax On",
+    "translation": "Wax On"
+  },
+  "wiki/skills/mechanics/particle/particle-types/white_ash.md": {
+    "source": "White Ash",
+    "translation": "White Ash"
+  },
+  "wiki/skills/mechanics/particle/particle-types/white_smoke.md": {
+    "source": "White Smoke",
+    "translation": "White Smoke"
+  },
+  "wiki/skills/mechanics/particle/particle-types/witch.md": {
+    "source": "Witch",
+    "translation": "Witch"
+  },
+  "wiki/skills/mechanics/particlebox.md": {
+    "source": "Particle Box",
+    "translation": "Particle Box"
+  },
+  "wiki/skills/mechanics/particleequation.md": {
+    "source": "Particle Equation",
+    "translation": "Particle Equation"
+  },
+  "wiki/skills/mechanics/particleline.md": {
+    "source": "Particle Line",
+    "translation": "Particle Line"
+  },
+  "wiki/skills/mechanics/particlelinehelix.md": {
+    "source": "Particle Line Helix",
+    "translation": "Particle Line Helix"
+  },
+  "wiki/skills/mechanics/particlelinering.md": {
+    "source": "Particle Line Ring",
+    "translation": "Particle Line Ring"
+  },
+  "wiki/skills/mechanics/particleorbital.md": {
+    "source": "Particle Orbital",
+    "translation": "Particle Orbital"
+  },
+  "wiki/skills/mechanics/particlering.md": {
+    "source": "Particle Ring",
+    "translation": "Particle Ring"
+  },
+  "wiki/skills/mechanics/particlesphere.md": {
+    "source": "Particle Sphere",
+    "translation": "Particle Sphere"
+  },
+  "wiki/skills/mechanics/particletornado.md": {
+    "source": "Particle Tornado",
+    "translation": "Particle Tornado"
+  },
+  "wiki/skills/mechanics/percentdamage.md": {
+    "source": "Percentdamage",
+    "translation": "Percentdamage"
+  },
+  "wiki/skills/mechanics/pickupitem.md": {
+    "source": "Pickupitem",
+    "translation": "Pickupitem"
+  },
+  "wiki/skills/mechanics/playanimation.md": {
+    "source": "Play Animation",
+    "translation": "Play Animation"
+  },
+  "wiki/skills/mechanics/playblockbreaksound.md": {
+    "source": "Play Block Break Sound",
+    "translation": "Play Block Break Sound"
+  },
+  "wiki/skills/mechanics/playblockfallsound.md": {
+    "source": "Play Block Fall Sound",
+    "translation": "Play Block Fall Sound"
+  },
+  "wiki/skills/mechanics/playblockhitsound.md": {
+    "source": "Play Block Hit Sound",
+    "translation": "Play Block Hit Sound"
+  },
+  "wiki/skills/mechanics/playblockplacesound.md": {
+    "source": "Play Block Place Sound",
+    "translation": "Play Block Place Sound"
+  },
+  "wiki/skills/mechanics/playblockstepsound.md": {
+    "source": "Play Block Step Sound",
+    "translation": "Play Block Step Sound"
+  },
+  "wiki/skills/mechanics/polygon.md": {
+    "source": "Polygon",
+    "translation": "Polygon"
+  },
+  "wiki/skills/mechanics/posearmorstand.md": {
+    "source": "Posearmorstand",
+    "translation": "Posearmorstand"
+  },
+  "wiki/skills/mechanics/potion.md": {
+    "source": "Potion",
+    "translation": "Potion"
+  },
+  "wiki/skills/mechanics/potionclear.md": {
+    "source": "Potionclear",
+    "translation": "Potionclear"
+  },
+  "wiki/skills/mechanics/printparenttree.md": {
+    "source": "Print Parent Tree",
+    "translation": "Print Parent Tree"
+  },
+  "wiki/skills/mechanics/prison.md": {
+    "source": "Prison",
+    "translation": "Prison"
+  },
+  "wiki/skills/mechanics/projectile.md": {
+    "source": "Projectile",
+    "translation": "Projectile"
+  },
+  "wiki/skills/mechanics/projectilevelocity.md": {
+    "source": "Projectile Velocity",
+    "translation": "Projectile Velocity"
+  },
+  "wiki/skills/mechanics/propel.md": {
+    "source": "Propel",
+    "translation": "Propel"
+  },
+  "wiki/skills/mechanics/pull.md": {
+    "source": "Pull",
+    "translation": "Pull"
+  },
+  "wiki/skills/mechanics/pushblock.md": {
+    "source": "Push Block",
+    "translation": "Push Block"
+  },
+  "wiki/skills/mechanics/pushbutton.md": {
+    "source": "Pushbutton",
+    "translation": "Pushbutton"
+  },
+  "wiki/skills/mechanics/rally.md": {
+    "source": "Rally",
+    "translation": "Rally"
+  },
+  "wiki/skills/mechanics/randommessage.md": {
+    "source": "Randommessage",
+    "translation": "Randommessage"
+  },
+  "wiki/skills/mechanics/randomskill.md": {
+    "source": "Randomskill",
+    "translation": "Randomskill"
+  },
+  "wiki/skills/mechanics/raytrace.md": {
+    "source": "Raytrace",
+    "translation": "Raytrace"
+  },
+  "wiki/skills/mechanics/raytraceto.md": {
+    "source": "Raytraceto",
+    "translation": "Raytraceto"
+  },
+  "wiki/skills/mechanics/recoil.md": {
+    "source": "Recoil",
+    "translation": "Recoil"
+  },
+  "wiki/skills/mechanics/remount.md": {
+    "source": "Remount",
+    "translation": "Remount"
+  },
+  "wiki/skills/mechanics/remove.md": {
+    "source": "Remove",
+    "translation": "Remove"
+  },
+  "wiki/skills/mechanics/removehelditem.md": {
+    "source": "Removehelditem",
+    "translation": "Removehelditem"
+  },
+  "wiki/skills/mechanics/removeowner.md": {
+    "source": "Removeowner",
+    "translation": "Removeowner"
+  },
+  "wiki/skills/mechanics/removetag.md": {
+    "source": "Removetag",
+    "translation": "Removetag"
+  },
+  "wiki/skills/mechanics/resetai.md": {
+    "source": "Reset A I",
+    "translation": "Reset A I"
+  },
+  "wiki/skills/mechanics/rotatetowards.md": {
+    "source": "Rotate Towards",
+    "translation": "Rotate Towards"
+  },
+  "wiki/skills/mechanics/runaigoalselector.md": {
+    "source": "Runaigoalselector",
+    "translation": "Runaigoalselector"
+  },
+  "wiki/skills/mechanics/runaitargetselector.md": {
+    "source": "Runaitargetselector",
+    "translation": "Runaitargetselector"
+  },
+  "wiki/skills/mechanics/saddle.md": {
+    "source": "Saddle",
+    "translation": "Saddle"
+  },
+  "wiki/skills/mechanics/sendactionmessage.md": {
+    "source": "Sendactionmessage",
+    "translation": "Sendactionmessage"
+  },
+  "wiki/skills/mechanics/sendresourcepack.md": {
+    "source": "Sendresourcepack",
+    "translation": "Sendresourcepack"
+  },
+  "wiki/skills/mechanics/sendtitle.md": {
+    "source": "Send Title",
+    "translation": "Send Title"
+  },
+  "wiki/skills/mechanics/sendtoast.md": {
+    "source": "Sendtoast",
+    "translation": "Sendtoast"
+  },
+  "wiki/skills/mechanics/setai.md": {
+    "source": "Setai",
+    "translation": "Setai"
+  },
+  "wiki/skills/mechanics/setblockopen.md": {
+    "source": "Set Block Open",
+    "translation": "Set Block Open"
+  },
+  "wiki/skills/mechanics/setblocktype.md": {
+    "source": "Setblocktype",
+    "translation": "Setblocktype"
+  },
+  "wiki/skills/mechanics/setchunkforceloaded.md": {
+    "source": "Set Chunk Force Loaded",
+    "translation": "Set Chunk Force Loaded"
+  },
+  "wiki/skills/mechanics/setcollidable.md": {
+    "source": "Setcollidable",
+    "translation": "Setcollidable"
+  },
+  "wiki/skills/mechanics/setcustommenubutton.md": {
+    "source": "Set Custom Menu Button",
+    "translation": "Set Custom Menu Button"
+  },
+  "wiki/skills/mechanics/setdisplayentityitem.md": {
+    "source": "Set Display Entity Item",
+    "translation": "Set Display Entity Item"
+  },
+  "wiki/skills/mechanics/setdragonpodium.md": {
+    "source": "Set Dragon Podium",
+    "translation": "Set Dragon Podium"
+  },
+  "wiki/skills/mechanics/setfaction.md": {
+    "source": "Set Faction",
+    "translation": "Set Faction"
+  },
+  "wiki/skills/mechanics/setflying.md": {
+    "source": "Set Flying",
+    "translation": "Set Flying"
+  },
+  "wiki/skills/mechanics/setgamemode.md": {
+    "source": "Setgamemode",
+    "translation": "Setgamemode"
+  },
+  "wiki/skills/mechanics/setgliding.md": {
+    "source": "Setgliding",
+    "translation": "Setgliding"
+  },
+  "wiki/skills/mechanics/setglobalscore.md": {
+    "source": "Setglobalscore",
+    "translation": "Setglobalscore"
+  },
+  "wiki/skills/mechanics/setgravity.md": {
+    "source": "Setgravity",
+    "translation": "Setgravity"
+  },
+  "wiki/skills/mechanics/sethealth.md": {
+    "source": "Sethealth",
+    "translation": "Sethealth"
+  },
+  "wiki/skills/mechanics/setinteractionsize.md": {
+    "source": "Set Interaction Size",
+    "translation": "Set Interaction Size"
+  },
+  "wiki/skills/mechanics/setitemgroupcooldown.md": {
+    "source": "Set Item Group Cooldown",
+    "translation": "Set Item Group Cooldown"
+  },
+  "wiki/skills/mechanics/setleashholder.md": {
+    "source": "Setleashholder",
+    "translation": "Setleashholder"
+  },
+  "wiki/skills/mechanics/setlevel.md": {
+    "source": "Setlevel",
+    "translation": "Setlevel"
+  },
+  "wiki/skills/mechanics/setmaterialcooldown.md": {
+    "source": "Setmaterialcooldown",
+    "translation": "Setmaterialcooldown"
+  },
+  "wiki/skills/mechanics/setmaxhealth.md": {
+    "source": "Setmaxhealth",
+    "translation": "Setmaxhealth"
+  },
+  "wiki/skills/mechanics/setmobcolor.md": {
+    "source": "Setmobcolor",
+    "translation": "Setmobcolor"
+  },
+  "wiki/skills/mechanics/setmobscore.md": {
+    "source": "Setmobscore",
+    "translation": "Setmobscore"
+  },
+  "wiki/skills/mechanics/setname.md": {
+    "source": "Setname",
+    "translation": "Setname"
+  },
+  "wiki/skills/mechanics/setnodamageticks.md": {
+    "source": "Setnodamageticks",
+    "translation": "Setnodamageticks"
+  },
+  "wiki/skills/mechanics/setowner.md": {
+    "source": "Setowner",
+    "translation": "Setowner"
+  },
+  "wiki/skills/mechanics/setparent.md": {
+    "source": "Set Parent",
+    "translation": "Set Parent"
+  },
+  "wiki/skills/mechanics/setpathfindingmalus.md": {
+    "source": "Set Pathfinding Malus",
+    "translation": "Set Pathfinding Malus"
+  },
+  "wiki/skills/mechanics/setpitch.md": {
+    "source": "Set Pitch",
+    "translation": "Set Pitch"
+  },
+  "wiki/skills/mechanics/setpose.md": {
+    "source": "Set Pose",
+    "translation": "Set Pose"
+  },
+  "wiki/skills/mechanics/setprojectilebulletmodel.md": {
+    "source": "Setprojectilebulletmodel",
+    "translation": "Setprojectilebulletmodel"
+  },
+  "wiki/skills/mechanics/setprojectiledirection.md": {
+    "source": "Set Projectile Direction",
+    "translation": "Set Projectile Direction"
+  },
+  "wiki/skills/mechanics/setraidercanjoinraid.md": {
+    "source": "Set Raider Can Join Raid",
+    "translation": "Set Raider Can Join Raid"
+  },
+  "wiki/skills/mechanics/setraiderpatrolblock.md": {
+    "source": "Setraiderpatrolblock",
+    "translation": "Setraiderpatrolblock"
+  },
+  "wiki/skills/mechanics/setraiderpatrolleader.md": {
+    "source": "Setraiderpatrolleader",
+    "translation": "Setraiderpatrolleader"
+  },
+  "wiki/skills/mechanics/setrotation.md": {
+    "source": "Setrotation",
+    "translation": "Setrotation"
+  },
+  "wiki/skills/mechanics/setscore.md": {
+    "source": "Setscore",
+    "translation": "Setscore"
+  },
+  "wiki/skills/mechanics/setskillcooldown.md": {
+    "source": "Setskillcooldown",
+    "translation": "Setskillcooldown"
+  },
+  "wiki/skills/mechanics/setspeed.md": {
+    "source": "Setspeed",
+    "translation": "Setspeed"
+  },
+  "wiki/skills/mechanics/setstance.md": {
+    "source": "Setstance",
+    "translation": "Setstance"
+  },
+  "wiki/skills/mechanics/settarget.md": {
+    "source": "Settarget",
+    "translation": "Settarget"
+  },
+  "wiki/skills/mechanics/settargetscore.md": {
+    "source": "Settargetscore",
+    "translation": "Settargetscore"
+  },
+  "wiki/skills/mechanics/settextdisplay.md": {
+    "source": "Set Text Display",
+    "translation": "Set Text Display"
+  },
+  "wiki/skills/mechanics/settonguetarget.md": {
+    "source": "Settonguetarget",
+    "translation": "Settonguetarget"
+  },
+  "wiki/skills/mechanics/setvariable.md": {
+    "source": "Setvariable",
+    "translation": "Setvariable"
+  },
+  "wiki/skills/mechanics/setvariablelocation.md": {
+    "source": "Setvariablelocation",
+    "translation": "Setvariablelocation"
+  },
+  "wiki/skills/mechanics/shield.md": {
+    "source": "Shield",
+    "translation": "Shield"
+  },
+  "wiki/skills/mechanics/shieldbreak.md": {
+    "source": "Shieldbreak",
+    "translation": "Shieldbreak"
+  },
+  "wiki/skills/mechanics/shieldpercent.md": {
+    "source": "Shieldpercent",
+    "translation": "Shieldpercent"
+  },
+  "wiki/skills/mechanics/shoot.md": {
+    "source": "Shoot",
+    "translation": "Shoot"
+  },
+  "wiki/skills/mechanics/shootfireball.md": {
+    "source": "Shootfireball",
+    "translation": "Shootfireball"
+  },
+  "wiki/skills/mechanics/shootpotion.md": {
+    "source": "Shootpotion",
+    "translation": "Shootpotion"
+  },
+  "wiki/skills/mechanics/shootshulkerbullet.md": {
+    "source": "Shootshulkerbullet",
+    "translation": "Shootshulkerbullet"
+  },
+  "wiki/skills/mechanics/shootskull.md": {
+    "source": "Shootskull",
+    "translation": "Shootskull"
+  },
+  "wiki/skills/mechanics/showdialog.md": {
+    "source": "Show Dialog",
+    "translation": "Show Dialog"
+  },
+  "wiki/skills/mechanics/showentity.md": {
+    "source": "Showentity",
+    "translation": "Showentity"
+  },
+  "wiki/skills/mechanics/signal.md": {
+    "source": "Signal",
+    "translation": "Signal"
+  },
+  "wiki/skills/mechanics/skill.md": {
+    "source": "Skill",
+    "translation": "Skill"
+  },
+  "wiki/skills/mechanics/skybox.md": {
+    "source": "Skybox",
+    "translation": "Skybox"
+  },
+  "wiki/skills/mechanics/slash.md": {
+    "source": "Slash",
+    "translation": "Slash"
+  },
+  "wiki/skills/mechanics/smoke.md": {
+    "source": "Smoke",
+    "translation": "Smoke"
+  },
+  "wiki/skills/mechanics/smokeswirl.md": {
+    "source": "Smoke Swirl",
+    "translation": "Smoke Swirl"
+  },
+  "wiki/skills/mechanics/sound.md": {
+    "source": "Sound",
+    "translation": "Sound"
+  },
+  "wiki/skills/mechanics/speak.md": {
+    "source": "Speak",
+    "translation": "Speak"
+  },
+  "wiki/skills/mechanics/spin.md": {
+    "source": "Spin",
+    "translation": "Spin"
+  },
+  "wiki/skills/mechanics/spring.md": {
+    "source": "Spring",
+    "translation": "Spring"
+  },
+  "wiki/skills/mechanics/stataura.md": {
+    "source": "Stat Aura",
+    "translation": "Stat Aura"
+  },
+  "wiki/skills/mechanics/stealitem.md": {
+    "source": "Steal Item",
+    "translation": "Steal Item"
+  },
+  "wiki/skills/mechanics/stopsound.md": {
+    "source": "Stop Sound",
+    "translation": "Stop Sound"
+  },
+  "wiki/skills/mechanics/stopusingitem.md": {
+    "source": "Stopusingitem",
+    "translation": "Stopusingitem"
+  },
+  "wiki/skills/mechanics/stun.md": {
+    "source": "Stun",
+    "translation": "Stun"
+  },
+  "wiki/skills/mechanics/sudoskill.md": {
+    "source": "Sudo Skill",
+    "translation": "Sudo Skill"
+  },
+  "wiki/skills/mechanics/suicide.md": {
+    "source": "Suicide",
+    "translation": "Suicide"
+  },
+  "wiki/skills/mechanics/summon.md": {
+    "source": "Summon",
+    "translation": "Summon"
+  },
+  "wiki/skills/mechanics/summonareaeffectcloud.md": {
+    "source": "Summonareaeffectcloud",
+    "translation": "Summonareaeffectcloud"
+  },
+  "wiki/skills/mechanics/summonfallingblock.md": {
+    "source": "Summon Falling Block",
+    "translation": "Summon Falling Block"
+  },
+  "wiki/skills/mechanics/summonpassenger.md": {
+    "source": "Summonpassenger",
+    "translation": "Summonpassenger"
+  },
+  "wiki/skills/mechanics/swap.md": {
+    "source": "Swap",
+    "translation": "Swap"
+  },
+  "wiki/skills/mechanics/swingoffhand.md": {
+    "source": "Swing Offhand",
+    "translation": "Swing Offhand"
+  },
+  "wiki/skills/mechanics/switch.md": {
+    "source": "Switch",
+    "translation": "Switch"
+  },
+  "wiki/skills/mechanics/takeexperiencelevels.md": {
+    "source": "Take Experience Levels",
+    "translation": "Take Experience Levels"
+  },
+  "wiki/skills/mechanics/takeitem.md": {
+    "source": "Takeitem",
+    "translation": "Takeitem"
+  },
+  "wiki/skills/mechanics/taunt.md": {
+    "source": "Taunt",
+    "translation": "Taunt"
+  },
+  "wiki/skills/mechanics/teleport.md": {
+    "source": "Teleport",
+    "translation": "Teleport"
+  },
+  "wiki/skills/mechanics/teleportin.md": {
+    "source": "Teleportin",
+    "translation": "Teleportin"
+  },
+  "wiki/skills/mechanics/teleportto.md": {
+    "source": "Teleportto",
+    "translation": "Teleportto"
+  },
+  "wiki/skills/mechanics/teleporty.md": {
+    "source": "Teleporty",
+    "translation": "Teleporty"
+  },
+  "wiki/skills/mechanics/terminable.md": {
+    "source": "Terminable",
+    "translation": "Terminable"
+  },
+  "wiki/skills/mechanics/threat.md": {
+    "source": "Threat",
+    "translation": "Threat"
+  },
+  "wiki/skills/mechanics/throw.md": {
+    "source": "Throw",
+    "translation": "Throw"
+  },
+  "wiki/skills/mechanics/thunderlevel.md": {
+    "source": "Thunder Level",
+    "translation": "Thunder Level"
+  },
+  "wiki/skills/mechanics/time.md": {
+    "source": "Time",
+    "translation": "Time"
+  },
+  "wiki/skills/mechanics/togglelever.md": {
+    "source": "Togglelever",
+    "translation": "Togglelever"
+  },
+  "wiki/skills/mechanics/togglepiston.md": {
+    "source": "Toggle Piston",
+    "translation": "Toggle Piston"
+  },
+  "wiki/skills/mechanics/togglesitting.md": {
+    "source": "Togglesitting",
+    "translation": "Togglesitting"
+  },
+  "wiki/skills/mechanics/totem.md": {
+    "source": "Totem",
+    "translation": "Totem"
+  },
+  "wiki/skills/mechanics/totemofundying.md": {
+    "source": "Totem Of Undying",
+    "translation": "Totem Of Undying"
+  },
+  "wiki/skills/mechanics/tracklocation.md": {
+    "source": "Tracklocation",
+    "translation": "Tracklocation"
+  },
+  "wiki/skills/mechanics/undisguise.md": {
+    "source": "Undisguise",
+    "translation": "Undisguise"
+  },
+  "wiki/skills/mechanics/undopaste.md": {
+    "source": "Undopaste",
+    "translation": "Undopaste"
+  },
+  "wiki/skills/mechanics/variableadd.md": {
+    "source": "Variableadd",
+    "translation": "Variableadd"
+  },
+  "wiki/skills/mechanics/variablemath.md": {
+    "source": "Variablemath",
+    "translation": "Variablemath"
+  },
+  "wiki/skills/mechanics/variablemove.md": {
+    "source": "Variable Move",
+    "translation": "Variable Move"
+  },
+  "wiki/skills/mechanics/variableskill.md": {
+    "source": "Variableskill",
+    "translation": "Variableskill"
+  },
+  "wiki/skills/mechanics/variablesubtract.md": {
+    "source": "Variablesubtract",
+    "translation": "Variablesubtract"
+  },
+  "wiki/skills/mechanics/variableunset.md": {
+    "source": "Variableunset",
+    "translation": "Variableunset"
+  },
+  "wiki/skills/mechanics/velocity.md": {
+    "source": "Velocity",
+    "translation": "Velocity"
+  },
+  "wiki/skills/mechanics/volley.md": {
+    "source": "Volley",
+    "translation": "Volley"
+  },
+  "wiki/skills/mechanics/wait.md": {
+    "source": "Wait",
+    "translation": "Wait"
+  },
+  "wiki/skills/mechanics/weather.md": {
+    "source": "Weather",
+    "translation": "Weather"
+  },
+  "wiki/skills/mechanics/wolfsit.md": {
+    "source": "Wolfsit",
+    "translation": "Wolfsit"
+  },
+  "wiki/skills/mechanics/worldeditreplace.md": {
+    "source": "World Edit Replace",
+    "translation": "World Edit Replace"
+  },
+  "wiki/skills/metaskills.md": {
+    "source": "Metaskills",
+    "translation": "元技能"
+  },
+  "wiki/skills/placeholder-parsing.md": {
+    "source": "Placeholder Parsing",
+    "translation": "占位符解析"
+  },
+  "wiki/skills/placeholders.md": {
+    "source": "Placeholders",
+    "translation": "占位符"
+  },
+  "wiki/skills/placeholders/meta-placeholders.md": {
+    "source": "Meta Placeholders",
+    "translation": "元占位符"
+  },
+  "wiki/skills/placeholders/scoped-placeholder-table.md": {
+    "source": "Scoped Placeholder Table",
+    "translation": "作用域占位符表"
+  },
+  "wiki/skills/skill-commands.md": {
+    "source": "Skill Commands",
+    "translation": "技能命令"
+  },
+  "wiki/skills/skills.md": {
+    "source": "Skills",
+    "translation": "技能"
+  },
+  "wiki/skills/skilltrees.md": {
+    "source": "Skill Trees",
+    "translation": "技能树"
+  },
+  "wiki/skills/tags/mechanic-tags.md": {
+    "source": "Mechanic Tags",
+    "translation": "技能机制标签"
+  },
+  "wiki/skills/targeters.md": {
+    "source": "Targeters",
+    "translation": "目标选择器"
+  },
+  "wiki/skills/targeters/blocksinchunk.md": {
+    "source": "Blocks In Chunk",
+    "translation": "Blocks In Chunk"
+  },
+  "wiki/skills/targeters/blocksinpinregion.md": {
+    "source": "Blocks In Pin Region",
+    "translation": "Blocks In Pin Region"
+  },
+  "wiki/skills/targeters/blocksinradius.md": {
+    "source": "Blocks In Radius",
+    "translation": "Blocks In Radius"
+  },
+  "wiki/skills/targeters/blocksnearorigin.md": {
+    "source": "Blocks Near Origin",
+    "translation": "Blocks Near Origin"
+  },
+  "wiki/skills/targeters/blockvein.md": {
+    "source": "Block Vein",
+    "translation": "Block Vein"
+  },
+  "wiki/skills/targeters/bound.md": {
+    "source": "Bound",
+    "translation": "Bound"
+  },
+  "wiki/skills/targeters/casterspawnlocation.md": {
+    "source": "Caster Spawn Location",
+    "translation": "Caster Spawn Location"
+  },
+  "wiki/skills/targeters/children.md": {
+    "source": "Children",
+    "translation": "Children"
+  },
+  "wiki/skills/targeters/chunksinweregion.md": {
+    "source": "Chunks In W E Region",
+    "translation": "Chunks In W E Region"
+  },
+  "wiki/skills/targeters/cone.md": {
+    "source": "Cone",
+    "translation": "Cone"
+  },
+  "wiki/skills/targeters/entitiesinradius.md": {
+    "source": "Entities In Radius",
+    "translation": "Entities In Radius"
+  },
+  "wiki/skills/targeters/entitiesinring.md": {
+    "source": "Entities In Ring",
+    "translation": "Entities In Ring"
+  },
+  "wiki/skills/targeters/entitiesinringnearorigin.md": {
+    "source": "Entities In Ring Near Origin",
+    "translation": "Entities In Ring Near Origin"
+  },
+  "wiki/skills/targeters/entitiesnearorigin.md": {
+    "source": "Entities Near Origin",
+    "translation": "Entities Near Origin"
+  },
+  "wiki/skills/targeters/escapelocation.md": {
+    "source": "Escape Location",
+    "translation": "Escape Location"
+  },
+  "wiki/skills/targeters/father.md": {
+    "source": "Father",
+    "translation": "Father"
+  },
+  "wiki/skills/targeters/flooroftargets.md": {
+    "source": "Floor Of Targets",
+    "translation": "Floor Of Targets"
+  },
+  "wiki/skills/targeters/forward.md": {
+    "source": "Forward",
+    "translation": "Forward"
+  },
+  "wiki/skills/targeters/forwardwall.md": {
+    "source": "Forward Wall",
+    "translation": "Forward Wall"
+  },
+  "wiki/skills/targeters/highestblock.md": {
+    "source": "Highest Block",
+    "translation": "Highest Block"
+  },
+  "wiki/skills/targeters/interactionlastattacker.md": {
+    "source": "Interaction Last Attacker",
+    "translation": "Interaction Last Attacker"
+  },
+  "wiki/skills/targeters/interactionlastinteract.md": {
+    "source": "Interaction Last Interact",
+    "translation": "Interaction Last Interact"
+  },
+  "wiki/skills/targeters/itemsinradius.md": {
+    "source": "Items In Radius",
+    "translation": "Items In Radius"
+  },
+  "wiki/skills/targeters/itemsnearorigin.md": {
+    "source": "Items Near Origin",
+    "translation": "Items Near Origin"
+  },
+  "wiki/skills/targeters/line.md": {
+    "source": "Line",
+    "translation": "Line"
+  },
+  "wiki/skills/targeters/livingincone.md": {
+    "source": "Living In Cone",
+    "translation": "Living In Cone"
+  },
+  "wiki/skills/targeters/livinginline.md": {
+    "source": "Living In Line",
+    "translation": "Living In Line"
+  },
+  "wiki/skills/targeters/livinginworld.md": {
+    "source": "Living In World",
+    "translation": "Living In World"
+  },
+  "wiki/skills/targeters/livingneartargetlocation.md": {
+    "source": "Living Near Target Location",
+    "translation": "Living Near Target Location"
+  },
+  "wiki/skills/targeters/location.md": {
+    "source": "Location",
+    "translation": "Location"
+  },
+  "wiki/skills/targeters/locationsoftargets.md": {
+    "source": "Locations Of Targets",
+    "translation": "Locations Of Targets"
+  },
+  "wiki/skills/targeters/mobsinradius.md": {
+    "source": "Mobs In Radius",
+    "translation": "Mobs In Radius"
+  },
+  "wiki/skills/targeters/mobsnearorigin.md": {
+    "source": "Mobs Near Origin",
+    "translation": "Mobs Near Origin"
+  },
+  "wiki/skills/targeters/mother.md": {
+    "source": "Mother",
+    "translation": "Mother"
+  },
+  "wiki/skills/targeters/mount.md": {
+    "source": "Mount",
+    "translation": "Mount"
+  },
+  "wiki/skills/targeters/nearestplayer.md": {
+    "source": "Nearest Player",
+    "translation": "Nearest Player"
+  },
+  "wiki/skills/targeters/neareststructure.md": {
+    "source": "Nearest Structure",
+    "translation": "Nearest Structure"
+  },
+  "wiki/skills/targeters/none.md": {
+    "source": "None",
+    "translation": "None"
+  },
+  "wiki/skills/targeters/notlivingnearorigin.md": {
+    "source": "Not Living Near Origin",
+    "translation": "Not Living Near Origin"
+  },
+  "wiki/skills/targeters/obstructingblock.md": {
+    "source": "Obstructing Block",
+    "translation": "Obstructing Block"
+  },
+  "wiki/skills/targeters/origin.md": {
+    "source": "Origin",
+    "translation": "Origin"
+  },
+  "wiki/skills/targeters/owner.md": {
+    "source": "Owner",
+    "translation": "Owner"
+  },
+  "wiki/skills/targeters/ownerlocation.md": {
+    "source": "Ownerlocation",
+    "translation": "Ownerlocation"
+  },
+  "wiki/skills/targeters/parent.md": {
+    "source": "Parent",
+    "translation": "Parent"
+  },
+  "wiki/skills/targeters/parentlocation.md": {
+    "source": "Parent Location",
+    "translation": "Parent Location"
+  },
+  "wiki/skills/targeters/passenger.md": {
+    "source": "Passenger",
+    "translation": "Passenger"
+  },
+  "wiki/skills/targeters/pin.md": {
+    "source": "Pin",
+    "translation": "Pin"
+  },
+  "wiki/skills/targeters/playerbyname.md": {
+    "source": "Player By Name",
+    "translation": "Player By Name"
+  },
+  "wiki/skills/targeters/playerlocationbyname.md": {
+    "source": "Player Location By Name",
+    "translation": "Player Location By Name"
+  },
+  "wiki/skills/targeters/playerlocationsinradius.md": {
+    "source": "Player Locations In Radius",
+    "translation": "Player Locations In Radius"
+  },
+  "wiki/skills/targeters/playersinradius.md": {
+    "source": "Players In Radius",
+    "translation": "Players In Radius"
+  },
+  "wiki/skills/targeters/playersinring.md": {
+    "source": "Players In Ring",
+    "translation": "Players In Ring"
+  },
+  "wiki/skills/targeters/playersinworld.md": {
+    "source": "Players In World",
+    "translation": "Players In World"
+  },
+  "wiki/skills/targeters/playersnearorigin.md": {
+    "source": "Players Near Origin",
+    "translation": "Players Near Origin"
+  },
+  "wiki/skills/targeters/playersneartargetlocations.md": {
+    "source": "Players Near Target Locations",
+    "translation": "Players Near Target Locations"
+  },
+  "wiki/skills/targeters/playersonserver.md": {
+    "source": "Players On Server",
+    "translation": "Players On Server"
+  },
+  "wiki/skills/targeters/projectileforward.md": {
+    "source": "Projectile Forward",
+    "translation": "Projectile Forward"
+  },
+  "wiki/skills/targeters/randomlocationsnearcaster.md": {
+    "source": "Random Locations Near Caster",
+    "translation": "Random Locations Near Caster"
+  },
+  "wiki/skills/targeters/randomlocationsnearorigin.md": {
+    "source": "Random Locations Near Origin",
+    "translation": "Random Locations Near Origin"
+  },
+  "wiki/skills/targeters/randomlocationsneartargets.md": {
+    "source": "Random Locations Near Targets",
+    "translation": "Random Locations Near Targets"
+  },
+  "wiki/skills/targeters/randomringpoint.md": {
+    "source": "Random Ring Point",
+    "translation": "Random Ring Point"
+  },
+  "wiki/skills/targeters/randomthreattarget.md": {
+    "source": "Random Threat Target",
+    "translation": "Random Threat Target"
+  },
+  "wiki/skills/targeters/randomthreattargetlocation.md": {
+    "source": "Random Threat Target Location",
+    "translation": "Random Threat Target Location"
+  },
+  "wiki/skills/targeters/rectangle.md": {
+    "source": "Rectangle",
+    "translation": "Rectangle"
+  },
+  "wiki/skills/targeters/region.md": {
+    "source": "Region",
+    "translation": "Region"
+  },
+  "wiki/skills/targeters/ring.md": {
+    "source": "Ring",
+    "translation": "Ring"
+  },
+  "wiki/skills/targeters/ringaroundorigin.md": {
+    "source": "Ring Around Origin",
+    "translation": "Ring Around Origin"
+  },
+  "wiki/skills/targeters/self.md": {
+    "source": "Self",
+    "translation": "Self"
+  },
+  "wiki/skills/targeters/selfeyelocation.md": {
+    "source": "Self Eye Location",
+    "translation": "Self Eye Location"
+  },
+  "wiki/skills/targeters/selflocation.md": {
+    "source": "Self Location",
+    "translation": "Self Location"
+  },
+  "wiki/skills/targeters/siblings.md": {
+    "source": "Siblings",
+    "translation": "Siblings"
+  },
+  "wiki/skills/targeters/spawners.md": {
+    "source": "Spawners",
+    "translation": "刷怪点"
+  },
+  "wiki/skills/targeters/spawnlocation.md": {
+    "source": "Spawn Location",
+    "translation": "Spawn Location"
+  },
+  "wiki/skills/targeters/sphere.md": {
+    "source": "Sphere",
+    "translation": "Sphere"
+  },
+  "wiki/skills/targeters/target.md": {
+    "source": "Target",
+    "translation": "Target"
+  },
+  "wiki/skills/targeters/targetblock.md": {
+    "source": "Target Block",
+    "translation": "Target Block"
+  },
+  "wiki/skills/targeters/targetedlocation.md": {
+    "source": "Targeted Location",
+    "translation": "Targeted Location"
+  },
+  "wiki/skills/targeters/targetedtarget.md": {
+    "source": "Targeted Target",
+    "translation": "Targeted Target"
+  },
+  "wiki/skills/targeters/targetlocation.md": {
+    "source": "Target Location",
+    "translation": "Target Location"
+  },
+  "wiki/skills/targeters/targetpredictedlocation.md": {
+    "source": "Target Predicted Location",
+    "translation": "Target Predicted Location"
+  },
+  "wiki/skills/targeters/threattable.md": {
+    "source": "Threat Table",
+    "translation": "Threat Table"
+  },
+  "wiki/skills/targeters/threattableplayers.md": {
+    "source": "Threat Table Players",
+    "translation": "Threat Table Players"
+  },
+  "wiki/skills/targeters/trackedlocation.md": {
+    "source": "Tracked Location",
+    "translation": "Tracked Location"
+  },
+  "wiki/skills/targeters/trackedplayers.md": {
+    "source": "Tracked Players",
+    "translation": "Tracked Players"
+  },
+  "wiki/skills/targeters/trigger.md": {
+    "source": "Trigger",
+    "translation": "Trigger"
+  },
+  "wiki/skills/targeters/triggerlocation.md": {
+    "source": "Trigger Location",
+    "translation": "Trigger Location"
+  },
+  "wiki/skills/targeters/uniqueidentifier.md": {
+    "source": "Unique Identifier",
+    "translation": "Unique Identifier"
+  },
+  "wiki/skills/targeters/variablelocation.md": {
+    "source": "Variable Location",
+    "translation": "Variable Location"
+  },
+  "wiki/skills/targeters/vehicle.md": {
+    "source": "Vehicle",
+    "translation": "Vehicle"
+  },
+  "wiki/skills/targeters/wolfowner.md": {
+    "source": "Wolf Owner",
+    "translation": "Wolf Owner"
+  },
+  "wiki/skills/triggers.md": {
+    "source": "Triggers",
+    "translation": "触发器"
+  },
+  "wiki/skills/triggers/onattack.md": {
+    "source": "On Attack",
+    "translation": "On Attack"
+  },
+  "wiki/skills/triggers/onbowhit.md": {
+    "source": "On Bow Hit",
+    "translation": "On Bow Hit"
+  },
+  "wiki/skills/triggers/onbreed.md": {
+    "source": "On Breed",
+    "translation": "On Breed"
+  },
+  "wiki/skills/triggers/onbucket.md": {
+    "source": "On Bucket",
+    "translation": "On Bucket"
+  },
+  "wiki/skills/triggers/onchangetarget.md": {
+    "source": "Onchangetarget",
+    "translation": "Onchangetarget"
+  },
+  "wiki/skills/triggers/onchangeworld.md": {
+    "source": "Onchangeworld",
+    "translation": "Onchangeworld"
+  },
+  "wiki/skills/triggers/oncinematicend.md": {
+    "source": "On Cinematic End",
+    "translation": "On Cinematic End"
+  },
+  "wiki/skills/triggers/oncinematicstart.md": {
+    "source": "On Cinematic Start",
+    "translation": "On Cinematic Start"
+  },
+  "wiki/skills/triggers/oncombat.md": {
+    "source": "On Combat",
+    "translation": "On Combat"
+  },
+  "wiki/skills/triggers/oncreepercharge.md": {
+    "source": "Oncreepercharge",
+    "translation": "Oncreepercharge"
+  },
+  "wiki/skills/triggers/ondamaged.md": {
+    "source": "On Damaged",
+    "translation": "On Damaged"
+  },
+  "wiki/skills/triggers/ondeath.md": {
+    "source": "On Death",
+    "translation": "On Death"
+  },
+  "wiki/skills/triggers/ondespawn.md": {
+    "source": "Ondespawn",
+    "translation": "Ondespawn"
+  },
+  "wiki/skills/triggers/ondismounted.md": {
+    "source": "On Dismounted",
+    "translation": "On Dismounted"
+  },
+  "wiki/skills/triggers/ondropcombat.md": {
+    "source": "Ondropcombat",
+    "translation": "Ondropcombat"
+  },
+  "wiki/skills/triggers/onenterbounds.md": {
+    "source": "On Enter Bounds",
+    "translation": "On Enter Bounds"
+  },
+  "wiki/skills/triggers/onentercombat.md": {
+    "source": "Onentercombat",
+    "translation": "Onentercombat"
+  },
+  "wiki/skills/triggers/onexitbounds.md": {
+    "source": "On Exit Bounds",
+    "translation": "On Exit Bounds"
+  },
+  "wiki/skills/triggers/onexplode.md": {
+    "source": "Onexplode",
+    "translation": "Onexplode"
+  },
+  "wiki/skills/triggers/onhear.md": {
+    "source": "On Hear",
+    "translation": "On Hear"
+  },
+  "wiki/skills/triggers/oninteract.md": {
+    "source": "Oninteract",
+    "translation": "Oninteract"
+  },
+  "wiki/skills/triggers/onload.md": {
+    "source": "On Load",
+    "translation": "On Load"
+  },
+  "wiki/skills/triggers/onplayerenter.md": {
+    "source": "On Player Enter",
+    "translation": "On Player Enter"
+  },
+  "wiki/skills/triggers/onplayerexit.md": {
+    "source": "On Player Exit",
+    "translation": "On Player Exit"
+  },
+  "wiki/skills/triggers/onplayerkill.md": {
+    "source": "Onplayerkill",
+    "translation": "Onplayerkill"
+  },
+  "wiki/skills/triggers/onprime.md": {
+    "source": "Onprime",
+    "translation": "Onprime"
+  },
+  "wiki/skills/triggers/onprojectilehit.md": {
+    "source": "On Projectile Hit",
+    "translation": "On Projectile Hit"
+  },
+  "wiki/skills/triggers/onprojectileland.md": {
+    "source": "On Projectile Land",
+    "translation": "On Projectile Land"
+  },
+  "wiki/skills/triggers/onready.md": {
+    "source": "Onready",
+    "translation": "Onready"
+  },
+  "wiki/skills/triggers/onshoot.md": {
+    "source": "On Shoot",
+    "translation": "On Shoot"
+  },
+  "wiki/skills/triggers/onsignal.md": {
+    "source": "Onsignal",
+    "translation": "Onsignal"
+  },
+  "wiki/skills/triggers/onskilldamage.md": {
+    "source": "Onskilldamage",
+    "translation": "Onskilldamage"
+  },
+  "wiki/skills/triggers/onspawn.md": {
+    "source": "On Spawn",
+    "translation": "On Spawn"
+  },
+  "wiki/skills/triggers/onspawnorload.md": {
+    "source": "Onspawnorload",
+    "translation": "Onspawnorload"
+  },
+  "wiki/skills/triggers/ontame.md": {
+    "source": "Ontame",
+    "translation": "Ontame"
+  },
+  "wiki/skills/triggers/onteleport.md": {
+    "source": "Onteleport",
+    "translation": "Onteleport"
+  },
+  "wiki/skills/triggers/ontimer.md": {
+    "source": "On Timer",
+    "translation": "On Timer"
+  },
+  "wiki/skills/triggers/ontrade.md": {
+    "source": "Ontrade",
+    "translation": "Ontrade"
+  },
+  "wiki/skills/variables.md": {
+    "source": "Variables",
+    "translation": "变量"
+  },
+  "wiki/spawners.md": {
+    "source": "Spawners",
+    "translation": "刷怪点"
+  },
+  "wiki/stats.md": {
+    "source": "Stats",
+    "translation": "属性"
+  },
+  "wiki/troubleshooting/modelengine-model-vanishes.md": {
+    "source": "Model Engine Model Vanishes",
+    "translation": "Model Engine 模型消失"
+  },
+  "wiki/troubleshooting/randomspawns.md": {
+    "source": "Random Spawns",
+    "translation": "随机生成排错"
+  },
+  "wiki/troubleshooting/troubleshooting.md": {
+    "source": "Troubleshooting",
+    "translation": "排错"
+  },
+  "wiki/vanilla-overrides.md": {
+    "source": "Vanilla Overrides",
+    "translation": "原版生物覆盖"
+  },
+  "wiki/wiki-editors-resources/examplemechanic.md": {
+    "source": "Example Mechanic",
+    "translation": "技能机制示例"
+  },
+  "wiki/wiki-editors-resources/test-page.md": {
+    "source": "Test Page",
+    "translation": "测试页面"
+  },
+  "wiki/wiki-editors-resources/wiki-editors-resources.md": {
+    "source": "Wiki Editors Resources",
+    "translation": "Wiki 编辑资料"
+  }
+}

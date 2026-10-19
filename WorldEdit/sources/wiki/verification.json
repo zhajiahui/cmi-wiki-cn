@@ -1,0 +1,15 @@
+{
+  "project": "WorldEdit",
+  "pages": 29,
+  "code_blocks": 138,
+  "inline_tokens": 1964,
+  "assets": 18,
+  "errors": [],
+  "asset_and_link_checks": {
+    "pages": 29,
+    "assets": 18,
+    "local_links": 289,
+    "local_images": 32,
+    "errors": []
+  }
+}

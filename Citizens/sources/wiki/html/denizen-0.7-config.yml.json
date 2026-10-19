@@ -1,0 +1,45 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Denizen/0.7/config.yml",
+    "pageid": 176,
+    "revid": 5385,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://meta.denizenscript.com/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br /><br /><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p>\n<s></s><div style=\"font-family:camingodos-web;\"><s>\n<div style=\"float:right;margin-left:2.0em; padding:10px; font-family:camingodos-web; font-size:110%;\"><div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Denizen_config.yml\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Denizen config.yml</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Default_config.yml\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Default config.yml</span></a></li>\n</ul>\n</div>\n</div>\n<div style=\"margin-right:2.0em; margin-top:35px; padding:10px; font-family:camingodos-web; font-size:110%;\">\n<p><span style=\"font-family:natalya-alternate-one; font-size:650%; margin-right:-7px; margin-left:-10px;\">T</span>he config.yml is where the knobs and levers are for controlling the interworkings of Denizen and its Script Engine. We've taken as many opportunities as possible to make certain that built-in functionality is as customizable as possible. This includes allowing adjustments to low-level denizen functions, such as the length of an interact_delay, to high-level things such as text formatting.\n</p>\n</div>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Denizen_config.yml\">Denizen config.yml</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/config.yml&amp;action=edit&amp;section=1\" title=\"Edit section: Denizen config.yml\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div style=\"margin-right:2.0em;padding:10px; font-family:camingodos-web; font-size:110%;\">The Denizen config.yml contains nodes to alter the default behavior and look of Denizen. \n<p>This file can be reloaded from disk to Denizen memory at any time by using /denizen reload. Some changes in the config.yml may require a restart of the server. This includes interact_delay_in_ticks, but is not limited to that config node.\n</p><p>To change the Denizen defaults:\n</p>\n<ul><li>Open config.yml located in the plugins\\Denizen\\ directory.</li>\n<li>Edit the defaults, save the file, and call /denizen reload from in-game or the console. Denizen will alert you of a successful reload.</li></ul>\n</div>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Default_config.yml\">Default config.yml</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/config.yml&amp;action=edit&amp;section=2\" title=\"Edit section: Default config.yml\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div style=\"margin-right:2.0em; margin-top:35px; padding:10px; font-family:camingodos-web; font-size:110%;\">\n<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"clear:both; width:850px; background-color: #c1ffc1; border: solid 1px #88B288;\">\n  <tbody><tr>\n    <td style=\"margin: 0px;\"><div style=\"padding: 10px; font-size: 120%;\"><b>Code:</b> Default Denizen config.yml</div></td>\n  </tr>\n  <tr>\n    <td style=\"margin: 0px;\">\n      <div style=\"padding: 10px; overflow:auto; width:850px; height:300px; background-color: #F8F8F8; border-top: 1px solid #88B288; font-size: 120%;\">{{{2}}}</div></td></tr></tbody></table>\n</div></s></div>\n<!-- \nNewPP limit report\nCached time: 20261019145824\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.025 seconds\nReal time usage: 0.047 seconds\nPreprocessor visited node count: 18/1000000\nRevision size: 6783/2097152 bytes\nPost‐expand include size: 497/2097152 bytes\nTemplate argument size: 31/2097152 bytes\nHighest expansion depth: 3/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    5.145      1 Template:Codebox\n100.00%    5.145      1 -total\n-->\n\n<!-- Render ID 8842b665-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "3",
+        "line": "Denizen config.yml",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Denizen/0.7/config.yml",
+        "byteoffset": 1471,
+        "anchor": "Denizen_config.yml",
+        "linkAnchor": "Denizen_config.yml"
+      },
+      {
+        "toclevel": 1,
+        "level": "3",
+        "line": "Default config.yml",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Denizen/0.7/config.yml",
+        "byteoffset": 2158,
+        "anchor": "Default_config.yml",
+        "linkAnchor": "Default_config.yml"
+      }
+    ],
+    "showtoc": ""
+  }
+}

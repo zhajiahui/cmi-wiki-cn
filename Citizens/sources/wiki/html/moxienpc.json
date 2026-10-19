@@ -1,0 +1,57 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "MoxieNPC",
+    "pageid": 313,
+    "revid": 4462,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><div class=\"infobox\" style=\"width: 295; font-size: 12px; background: #FFFFFF; float: right; border: 1px solid #CCCCCC; margin-left:2.5em; padding: 9px;\">\n<table width=\"275\" style=\"border: 0; background-color: #ffffff\" cellpadding=\"0\" cellspacing=\"3\">\n<tbody><tr>\n<td style=\"width: 275; vertical-align: top; border:1px solid #ccc; background-color: #ffffff\">\n<div style=\"background-color:#aaa; font-size:1px; height:8px; border-bottom:1px solid #ccc;\"></div>\n<div style=\"float:right; margin:8px; margin-top:5px\"></div>\n<div style=\"padding:0.5em 0.3em 0.3em 0.3em; margin:0; text-indent:0.1em; font-weight: bold; border-bottom:1px solid #aaaaaa;\"><b> </b></div>\n<div style=\"font-size:100%; padding:3px\">\n<table cellpadding=\"0\" cellspacing=\"3\" width=\"100%\">\n<tbody><tr>\n<td align=\"left\" valign=\"top\" width=\"100%\">\n<figure class=\"mw-halign-center\" typeof=\"mw:File/Frameless\"><a href=\"/File:Moxienpclogo.jpg\" class=\"mw-file-description\" title=\"image\"><img alt=\"image\" src=\"/images/d/d0/Moxienpclogo.jpg\" decoding=\"async\" width=\"260\" height=\"133\" class=\"mw-file-element\" /></a><figcaption>image</figcaption></figure>\n<div class=\"padded\" style=\"padding: 19px; font-family:camingodos-web; font-size:110%;\">\n<p><b>MoxieNPC</b> is an extension to MoxieSkills to allow servers to sell abilities and skills XP to their players.\n</p><p><b>Current Version:</b> 1.5 Release\n</p><p><b>Developers:</b> x3nec\n</p><p><b>Source:</b> <a rel=\"nofollow\" class=\"external text\" href=\"https://github.com/x3nec/MoxieNPC\">Github</a>\n</p><p><b>Latest Build:</b> <a rel=\"nofollow\" class=\"external text\" href=\"http://dev.bukkit.org/server-mods/moxienpc/files/3-moxie-npc-v1-5/\">BukkitDev</a>\n</p><p><b>Support tickets:</b> <a rel=\"nofollow\" class=\"external text\" href=\"http://dev.bukkit.org/server-mods/moxienpc/tickets/\">Tickets on BukkitDev</a>\n</p><p><b>Thanks to:</b> aufdemrand for this info box thing!\n<br />\n</p>\n</div></td></tr></tbody></table>\n</div>\n</td></tr></tbody></table>\n</div>\n\n<figure class=\"mw-halign-center\" typeof=\"mw:File\"><a href=\"/File:Moxienpclogo.jpg\" class=\"mw-file-description\" title=\"image\"><img alt=\"image\" src=\"/images/d/d0/Moxienpclogo.jpg\" decoding=\"async\" width=\"800\" height=\"409\" class=\"mw-file-element\" /></a><figcaption>image</figcaption></figure>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"What_Is_It?\"><span id=\"What_Is_It.3F\"></span>What Is It?</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=MoxieNPC&amp;action=edit&amp;section=1\" title=\"Edit section: What Is It?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>MoxieNPC is an extension to <a rel=\"nofollow\" class=\"external text\" href=\"http://dev.bukkit.org/server-mods/moxieskills\">MoxieSkills</a> that allows admins to set up NPC shops instead of the sign shops. In order for this plugin to operate, you need to have <a rel=\"nofollow\" class=\"external text\" href=\"http://dev.bukkit.org/server-mods/citizens\">Citizens 2.0</a> and <a rel=\"nofollow\" class=\"external text\" href=\"http://dev.bukkit.org/server-mods/moxieskills\">MoxieSkills</a> running on your server.\n</p>\n<hr />\n<div class=\"mw-heading mw-heading3\"><h3 id=\"How_To_Use_It\">How To Use It</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=MoxieNPC&amp;action=edit&amp;section=2\" title=\"Edit section: How To Use It\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>MoxieNPC is not a standalone plugin - it is a character trait extending from Citizens 2.0. Therefore, in order to use it, you must first create an NPC, and then do '/trait moxienpc'. Once that is done, you can continue with the instructions below.\n</p>\n<ul><li>To sell abilities to players, the ability must have purchasable set to true in the abilities.yml file (for MoxieSkills|RPG)</li>\n<li>To sell XP to a player, the skill must be spelled correctly. N.B. Remember that the cost you specify is for 1 XP only.</li>\n<li>In order to see how to use MoxieNPCs, just type /mnpc in game with the MoxieNPC selected by Citizens, it's that easy!</li>\n<li>The MoxieNPCs are conversable, so players just have to right click them and instructions are given!</li></ul>\n<hr />\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Permissions\">Permissions</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=MoxieNPC&amp;action=edit&amp;section=3\" title=\"Edit section: Permissions\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<pre>  moxienpc.usenpc.ability - Buy abilities from the NPC shop.\n  moxienpc.makenpc.ability - Add abilities to sell at NPC shop.\n  moxienpc.usenpc.xp - Buy skills XP from the NPC shop.\n  moxienpc.makenpc.xp - Add skills XP to sell at NPC shop.\n</pre>\n<!-- \nNewPP limit report\nCached time: 20261019145858\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.032 seconds\nReal time usage: 0.049 seconds\nPreprocessor visited node count: 35/1000000\nRevision size: 2359/2097152 bytes\nPost‐expand include size: 1261/2097152 bytes\nTemplate argument size: 659/2097152 bytes\nHighest expansion depth: 3/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    5.528      1 Template:Box\n100.00%    5.528      1 -total\n-->\n\n<!-- Render ID 9c86b366-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [
+      "Moxienpclogo.jpg"
+    ],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "3",
+        "line": "What Is It?",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "MoxieNPC",
+        "byteoffset": 964,
+        "anchor": "What_Is_It?",
+        "linkAnchor": "What_Is_It?"
+      },
+      {
+        "toclevel": 1,
+        "level": "3",
+        "line": "How To Use It",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "MoxieNPC",
+        "byteoffset": 1346,
+        "anchor": "How_To_Use_It",
+        "linkAnchor": "How_To_Use_It"
+      },
+      {
+        "toclevel": 1,
+        "level": "3",
+        "line": "Permissions",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "MoxieNPC",
+        "byteoffset": 2095,
+        "anchor": "Permissions",
+        "linkAnchor": "Permissions"
+      }
+    ]
+  }
+}

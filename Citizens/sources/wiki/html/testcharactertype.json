@@ -1,0 +1,34 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "TestCharacterType",
+    "pageid": 65,
+    "revid": 627,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><table class=\"wikitable\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"1\" style=\"width: 100%; background-color:#FBB917; font-size: 32px; padding: 15px;\"><b>External Character Type!</b>\n</th></tr>\n<tr>\n<td style=\"font-size: 16px;\">This page is about a type of NPC that is not developed supported by the Citizens development team. Don't ask for support from them, or on the forums/IRC, as we won't be able to help you. Instead, look at the BukkitDev link of the InfoBox to the right for information on how to get support for this character type.\n</td></tr></tbody></table>\n<table width=\"30%\" style=\"border: 0; background-color: #ffffff\" cellpadding=\"0\" cellspacing=\"3\" align=\"right\">\n<tbody><tr>\n<td style=\"width: 30%; vertical-align: top; border:1px solid #ccc; background-color: #ffffff\">\n<div style=\"background-color:gray; font-size:1px; height:8px; border-bottom:1px solid #ccc;\"></div>\n<div style=\"float:right; margin:8px; margin-top:5px\"></div>\n<div style=\"padding:0.5em 0.3em 0.3em 0.3em; margin:0; text-indent:0.1em; align:center; font-weight: bold; border-bottom:1px solid #aaaaaa;\"><center><span class=\"mw-default-size\" typeof=\"mw:Error mw:File\"><a href=\"/index.php?title=Special:Upload&amp;wpDestFile=Test_Character.png\" class=\"new\" title=\"File:Test Character.png\"><span class=\"mw-file-element mw-broken-media\">File:Test Character.png</span></a></span><br /><br /><b>Test Character</b></center></div>\n<div style=\"font-size:100%; padding:13px\">\n<table cellpadding=\"0\" cellspacing=\"3\" width=\"100%\">\n\n<tbody><tr>\n<td align=\"left\" valign=\"top\" width=\"150\"><b>Author</b>\n</td>\n<td><a href=\"/User:AgentKid\" title=\"User:AgentKid\">AgentKid</a>\n</td></tr>\n<tr>\n<td><b>Version</b>\n</td>\n<td>1.0\n</td></tr>\n<tr>\n<td><b>Citizens build</b>\n</td>\n<td>2.0\n</td></tr>\n<tr>\n<td><b>Development status</b>\n</td>\n<td>InDev\n</td></tr>\n<tr>\n<td><b>Download</b>\n</td>\n<td><a rel=\"nofollow\" class=\"external text\" href=\"http://dev.bukkit.org/server-mods/TestCharacter/1/Character.jar\">Link</a>\n</td></tr>\n<tr>\n<td><b>BukkitDev</b>\n</td>\n<td><a rel=\"nofollow\" class=\"external text\" href=\"http://dev.bukkit.org/server-mods/TestCharacter/\">Link</a>\n</td></tr>\n<tr>\n<td><b>Source</b>\n</td>\n<td>[{{{SOURCELINK}}} Link]\n</td></tr>\n<tr>\n<td><b>Issues</b>\n</td>\n<td>[{{{ISSUESLINK}}} Link]\n</td></tr>\n<tr>\n<td colspan=\"2\"><div style=\"border-top:1px solid #aaaaaa;\"><b>Description:</b> AgentKid is amazing.</div>\n</td></tr>\n<tr>\n<td colspan=\"2\"><div style=\"border-top:1px solid #aaaaaa;\"><center><code><a href=\"/Installing_Character_Types\" title=\"Installing Character Types\">Installing Character Types</a></code></center></div>\n</td></tr></tbody></table>\n</div>\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nCached time: 20261019145906\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.031 seconds\nReal time usage: 0.047 seconds\nPreprocessor visited node count: 34/1000000\nRevision size: 401/2097152 bytes\nPost‐expand include size: 1948/2097152 bytes\nTemplate argument size: 200/2097152 bytes\nHighest expansion depth: 3/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    9.326      1 -total\n 52.40%    4.887      1 Template:ExternalType\n 45.20%    4.215      1 Template:CharacterType\n-->\n\n<!-- Render ID a14b6763-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installing Character Types"
+      },
+      {
+        "ns": 2,
+        "exists": "",
+        "*": "User:AgentKid"
+      }
+    ],
+    "images": [
+      "Test_Character.png"
+    ],
+    "sections": []
+  }
+}

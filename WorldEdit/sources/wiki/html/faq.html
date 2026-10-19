@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" data-accent-color="violet" data-content_root="../">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Common Questions - WorldEdit 7.4 documentation</title><link rel="index" title="Index" href="../genindex/" /><link rel="search" title="Search" href="../search/" /><link rel="next" title="Getting Help" href="../support/" /><link rel="prev" title="Internal APIs" href="../api/internal-apis/" />
+      <link rel="canonical" href="https://worldedit.enginehub.org/en/latest/faq/" /><script>
+    function setColorMode(t){let e=document.documentElement;e.setAttribute("data-color-mode",t);let a=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t;"auto"===t&&(s=a?"dark":"light"),"light"===s?(e.classList.remove("dark"),e.classList.add("light")):(e.classList.remove("light"),e.classList.add("dark"))}
+    setColorMode(localStorage._theme||"auto");
+  </script><link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=ad592e98" />
+    <link rel="stylesheet" type="text/css" href="../_static/shibuya.css?v=2ceb65ce" />
+    <link rel="stylesheet" type="text/css" href="../_static/icons.css?v=ff96e03d" />
+    <link media="print" rel="stylesheet" type="text/css" href="../_static/print.css?v=20ff2c19" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=55f29028" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sy-f-text: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+  --sy-f-heading: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+}
+</style>
+    
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://worldedit.enginehub.org/en/latest/faq/"/>
+  <meta property="og:title" content="Common Questions"/>
+    <meta name="twitter:card" content="summary"/>
+  <script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="worldedit" /><meta name="readthedocs-version-slug" content="latest" /><meta name="readthedocs-resolver-filename" content="/faq/" /><meta name="readthedocs-http-status" content="200" /></head>
+<body><div class="sy-head">
+  <div class="sy-head-blur"></div>
+  <div class="sy-head-inner sy-container mx-auto">
+    <a class="sy-head-brand" href="../">
+      
+      
+      <strong>WorldEdit</strong>
+    </a>
+    <div class="sy-head-nav" id="head-nav">
+      <nav class="sy-head-links" data-align=left><ul><li class="link">
+          <a href="https://enginehub.org">
+            <span>Developed by EngineHub</span><i class="i-lucide external-link"></i></a>
+        </li><li class="link">
+          <a href="https://github.com/sponsors/EngineHub?o=esb">
+            <span><iconify-icon icon='simple-icons:githubsponsors' style='color: #db61a2;'></iconify-icon> Sponsored by users like you!</span><i class="i-lucide external-link"></i></a>
+        </li></ul></nav>
+      <div class="sy-head-extra flex items-center print:hidden"><form class="searchbox flex items-center" action="../search/" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <kbd>/</kbd>
+</form><div class="sy-head-socials">
+  <a href="https://github.com/EngineHub/WorldEdit" aria-label="GitHub">
+    <iconify-icon icon="simple-icons:github"></iconify-icon>
+  </a>
+  <a href="https://discord.gg/enginehub" aria-label="Discord">
+    <iconify-icon icon="simple-icons:discord"></iconify-icon>
+  </a></div></div>
+    </div>
+    <div class="sy-head-actions flex items-center shrink-0 print:hidden"><button class="js-theme theme-switch flex items-center"
+data-aria-auto="Switch to light color mode"
+data-aria-light="Switch to dark color mode"
+data-aria-dark="Switch to auto color mode">
+<i class="i-lucide theme-icon"></i>
+</button><button class="md:hidden flex items-center js-menu" aria-label="Menu" type="button" aria-controls="head-nav" aria-expanded="false">
+        <div class="hamburger">
+          <span class="hamburger_1"></span>
+          <span class="hamburger_2"></span>
+          <span class="hamburger_3"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="sy-page sy-container flex mx-auto">
+  <aside id="lside" class="sy-lside md:w-72 md:shrink-0 print:hidden">
+    <div class="sy-lside-inner md:sticky">
+      <div class="sy-scrollbar p-6">
+        <div class="globaltoc" data-expand-depth="2"><ul class="current">
+<li class="toctree-l1 _expand"><a class="reference internal" href="../install/">Installation</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../quickstart/">Quick Start</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../config/">Configuration</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../permissions/">Permissions</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../commands/">Commands</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../usage/">Usage</a><ul>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../usage/general/">General</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../usage/general/history/">History</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage/general/sessions/">Sessions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage/general/patterns/">Patterns</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage/general/masks/">Masks</a></li>
+</ul>
+</li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../usage/navigation/">Navigation</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../usage/regions/">Regions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../usage/regions/selections/">Selection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage/regions/regionops/">Region Operations</a></li>
+</ul>
+</li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../usage/clipboard/">Clipboard</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../usage/generation/">Generation</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../usage/tools/tools/">Tools</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../usage/tools/brushes/">Brushes</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../usage/utilities/">Utilities</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../usage/snapshots/">Snapshots</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../usage/other/">Other</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../usage/other/expressions/">Expression Syntax</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage/other/craftscripts/">CraftScripts</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../api/">Developer API</a><ul>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../api/concepts/">API Concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../api/concepts/actors/">Actors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/concepts/local-sessions/">Local Sessions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/concepts/blocks/">Blocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/concepts/patterns-and-masks/">Patterns and Masks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/concepts/extents/">Extents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/concepts/regions/">Regions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/concepts/registries/">Registries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/concepts/edit-sessions/">Edit Sessions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/concepts/adapters/">Adapters</a></li>
+</ul>
+</li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../api/examples/">API Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../api/examples/clipboard/">Clipboard Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/examples/clipboard/#schematic-examples">Schematic Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/examples/local-sessions/">LocalSession Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../api/internal-apis/">Internal APIs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Common Questions</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../support/">Getting Help</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../localisation/">Localisation</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../source-code/">Source Code</a></li>
+</ul>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="lside-overlay js-menu" role="button" aria-label="Close left sidebar" aria-controls="lside" aria-expanded="false"></div>
+  <aside id="rside" class="sy-rside pb-3 w-64 shrink-0 order-last">
+    <button class="rside-close js-menu xl:hidden" aria-label="Close Table of Contents" type="button" aria-controls="rside" aria-expanded="false">
+      <i class="i-lucide close"></i>
+    </button>
+    <div class="sy-scrollbar sy-rside-inner px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4"><div class="localtoc"><h3>On this page</h3><ul>
+<li><a class="reference internal" href="#general">General</a><ul>
+<li><a class="reference internal" href="#why-don-t-any-commands-work">Why don&#8217;t any commands work?</a></li>
+<li><a class="reference internal" href="#how-old-is-worldedit">How old is WorldEdit?</a></li>
+<li><a class="reference internal" href="#who-works-on-worldedit">Who works on WorldEdit?</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#world-editing">World-Editing</a><ul>
+<li><a class="reference internal" href="#commands-all-return-0-blocks-changed-even-though-they-should-be-changing">Commands all return &#8220;0 blocks changed&#8221; even though they should be changing.</a></li>
+<li><a class="reference internal" href="#my-server-crashes-when-i-do-large-edits-1-million-blocks-or-more">My server crashes when I do large edits (1 million blocks or more)!</a></li>
+<li><a class="reference internal" href="#my-client-crashes-when-i-do-large-edits-1-million-blocks-or-more-in-single-player">My client crashes when I do large edits (1 million blocks or more) in single-player!</a></li>
+<li><a class="reference internal" href="#how-do-i-remove-a-tool-brush-from-the-item-i-m-holding">How do I remove a tool/brush from the item I&#8217;m holding?</a></li>
+<li><a class="reference internal" href="#why-isn-t-sign-text-chest-contents-entities-etc-working">Why isn&#8217;t sign text/chest contents/entities/etc working?</a></li>
+<li><a class="reference internal" href="#when-i-select-worldedit-also-selects-1-1-1">When I select, WorldEdit also selects (-1, -1, -1)!</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="edit-this-page">
+  <a href="https://github.com/EngineHub/WorldEditDocs/blob/master/source/faq.rst">Edit this page</a>
+</div></div>
+  </aside>
+  <div class="rside-overlay js-menu" role="button" aria-label="Close Table of Contents" aria-controls="rside" aria-expanded="false"></div>
+  <main class="sy-main w-full max-sm:max-w-full print:pt-6">
+<div class="sy-breadcrumbs" role="navigation">
+  <div class="sy-breadcrumbs-inner flex items-center">
+    <div class="md:hidden mr-3">
+      <button class="js-menu" aria-label="Menu" type="button" aria-controls="lside" aria-expanded="false">
+        <i class="i-lucide menu"></i>
+      </button>
+    </div>
+    <ol class="flex-1" itemscope itemtype="https://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="../"><span itemprop="name">WorldEdit</span></a>
+        <span>/</span>
+        <meta itemprop="position" content="1" />
+      </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <strong itemprop="name">Common Questions</strong>
+        <meta itemprop="position" content="2" />
+      </li></ol>
+    <div class="xl:hidden ml-1">
+      <button class="js-menu" aria-label="Show table of contents" type="button" aria-controls="rside"
+        aria-expanded="false">
+        <i class="i-lucide outdent"></i>
+      </button>
+    </div>
+  </div>
+</div><div class="flex flex-col break-words justify-between">
+      <div class="relative min-w-0 max-w-6xl px-6 pb-6 pt-8 xl:px-12">
+  <div class="copy-page-wrapper relative pb-4 lg:absolute lg:top-8 lg:right-6 xl:right-12">
+  <div id="copy-page-trigger">
+    <button
+      type="button"
+      class="js-copy px-3 py-1 inline-flex items-center gap-1"
+      data-url="https://worldedit.enginehub.org/en/latest/_sources/faq.rst.txt"
+    >
+      <i class="i-lucide" data-icon="copy"></i>
+      <span>Copy page</span>
+    </button>
+    <button class="js-menu px-2 py-1" type="button" aria-label="More actions"
+      aria-haspopup="menu" aria-expanded="false" aria-controls="copy-page-content">
+      <i class="i-lucide chevron-down"></i>
+    </button>
+  </div>
+  <div id="copy-page-content" role="menu" aria-orientation="vertical" aria-hidden="true">
+    <div role="presentation">
+      <div class="flex flex-col" role="group">
+        <button class="js-copy" type="button" role="menuitem"
+          data-url="https://worldedit.enginehub.org/en/latest/_sources/faq.rst.txt">
+          <span class="iconify-icon">
+            <i class="i-lucide" data-icon="copy"></i>
+          </span>
+          <span>Copy page</span>
+        </button>
+        <a role="menuitem" href="https://worldedit.enginehub.org/en/latest/_sources/faq.rst.txt" target="_blank" rel="nofollow"><iconify-icon icon="bi:code-slash"></iconify-icon>
+            <span>View Source</span></a><a role="menuitem" href="https://chatgpt.com/?hints=search&q=Read%20https%3A//worldedit.enginehub.org/en/latest/_sources/faq.rst.txt%20so%20I%20can%20ask%20questions%20about%20it." target="_blank" rel="nofollow">
+          <iconify-icon icon="bi:openai"></iconify-icon>
+          <span>Open in ChatGPT</span>
+        </a><a role="menuitem" href="https://claude.ai/new?q=Read%20https%3A//worldedit.enginehub.org/en/latest/_sources/faq.rst.txt%20so%20I%20can%20ask%20questions%20about%20it." target="_blank" rel="nofollow">
+          <iconify-icon icon="bi:claude"></iconify-icon>
+          <span>Open in Claude</span>
+        </a></div>
+    </div>
+  </div>
+</div><article class="yue" role="main">
+          <section id="common-questions">
+<h1>Common Questions<a class="headerlink" href="#common-questions" title="Link to this heading">#</a></h1>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#general" id="id1">General</a></p>
+<ul>
+<li><p><a class="reference internal" href="#why-don-t-any-commands-work" id="id2">Why don’t any commands work?</a></p></li>
+<li><p><a class="reference internal" href="#how-old-is-worldedit" id="id3">How old is WorldEdit?</a></p></li>
+<li><p><a class="reference internal" href="#who-works-on-worldedit" id="id4">Who works on WorldEdit?</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#world-editing" id="id5">World-Editing</a></p>
+<ul>
+<li><p><a class="reference internal" href="#commands-all-return-0-blocks-changed-even-though-they-should-be-changing" id="id6">Commands all return “0 blocks changed” even though they should be changing.</a></p></li>
+<li><p><a class="reference internal" href="#my-server-crashes-when-i-do-large-edits-1-million-blocks-or-more" id="id7">My server crashes when I do large edits (1 million blocks or more)!</a></p></li>
+<li><p><a class="reference internal" href="#my-client-crashes-when-i-do-large-edits-1-million-blocks-or-more-in-single-player" id="id8">My client crashes when I do large edits (1 million blocks or more) in single-player!</a></p></li>
+<li><p><a class="reference internal" href="#how-do-i-remove-a-tool-brush-from-the-item-i-m-holding" id="id9">How do I remove a tool/brush from the item I’m holding?</a></p></li>
+<li><p><a class="reference internal" href="#why-isn-t-sign-text-chest-contents-entities-etc-working" id="id10">Why isn’t sign text/chest contents/entities/etc working?</a></p></li>
+<li><p><a class="reference internal" href="#when-i-select-worldedit-also-selects-1-1-1" id="id11">When I select, WorldEdit also selects (-1, -1, -1)!</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="general">
+<h2>General<a class="headerlink" href="#general" title="Link to this heading">#</a></h2>
+<section id="why-don-t-any-commands-work">
+<h3>Why don’t any commands work?<a class="headerlink" href="#why-don-t-any-commands-work" title="Link to this heading">#</a></h3>
+<p>If no commands work, it may because WorldEdit failed to start:</p>
+<ul class="simple">
+<li><p>Make sure that you are running Bukkit/Forge/Sponge/etc. A vanilla minecraft server will not load plugins/mods!</p>
+<ul>
+<li><p>You can run a command such as <code class="docutils literal notranslate"><span class="pre">version</span></code> (Bukkit), <code class="docutils literal notranslate"><span class="pre">sponge</span> <span class="pre">version</span></code> (Sponge) or <code class="docutils literal notranslate"><span class="pre">forge</span> <span class="pre">help</span></code> (Forge) to ensure your server is running proper software. In single-player, the Main Menu should have a “Mods” button (and WorldEdit should be in the list!).</p></li>
+</ul>
+</li>
+<li><p>Make sure that you have the proper version of WorldEdit for your version of Minecraft.</p></li>
+</ul>
+<p>If those solutions do not help you, you will need to look through your startup log:</p>
+<ul class="simple">
+<li><p>If you use a game server host, use its log viewer.</p></li>
+<li><p>You can also open up “latest.log” in the logs folder of your server directory. (On older versions of Minecraft, the log file was “server.log” in the root directory.)</p></li>
+</ul>
+<p>If you are unable to discover the problem from reading the server log, you can <a class="reference internal" href="../support/"><span class="doc">ask for help or submit a bug report</span></a>.</p>
+</section>
+<section id="how-old-is-worldedit">
+<h3>How old is WorldEdit?<a class="headerlink" href="#how-old-is-worldedit" title="Link to this heading">#</a></h3>
+<p>WorldEdit began in September 2010 for the “hMod” modding platform by <a class="reference external" href="http://www.sk89q.com">sk89q</a>. Later on, WorldEdit was ported to Bukkit, and eventually to Forge and other platforms.</p>
+</section>
+<section id="who-works-on-worldedit">
+<h3>Who works on WorldEdit?<a class="headerlink" href="#who-works-on-worldedit" title="Link to this heading">#</a></h3>
+<p>WorldEdit has been developed by many people, and large portions of WorldEdit include contributed code. The list of top contributors can be <a class="reference external" href="https://github.com/EngineHub/WorldEdit/graphs/contributors">found on GitHub</a>.</p>
+</section>
+</section>
+<section id="world-editing">
+<h2>World-Editing<a class="headerlink" href="#world-editing" title="Link to this heading">#</a></h2>
+<section id="commands-all-return-0-blocks-changed-even-though-they-should-be-changing">
+<h3>Commands all return “0 blocks changed” even though they should be changing.<a class="headerlink" href="#commands-all-return-0-blocks-changed-even-though-they-should-be-changing" title="Link to this heading">#</a></h3>
+<p>If you’ve previously set a global mask with <code class="docutils literal notranslate"><span class="pre">//gmask</span> <span class="pre">&lt;mask&gt;</span></code>, you’ll have to clear it again with <code class="docutils literal notranslate"><span class="pre">//gmask</span></code> so it no longer masks your edits.</p>
+</section>
+<section id="my-server-crashes-when-i-do-large-edits-1-million-blocks-or-more">
+<h3>My server crashes when I do large edits (1 million blocks or more)!<a class="headerlink" href="#my-server-crashes-when-i-do-large-edits-1-million-blocks-or-more" title="Link to this heading">#</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If your client is disconnected / timed out, these instructions will not fix that.
+At this time, WorldEdit does not attempt to keep clients connected while processing edits.
+These instructions only allow for the server to actually complete the edit.</p>
+</div>
+<p>The two most likely causes for this are either the watchdog crashing your server, or it running out of memory.</p>
+<p>Ensure that you allocate approximately 1 gigabyte (for the general server) + 2 gigabytes for every ten million blocks you are editing.
+For example, if you’re editing around 50 million blocks, divide <code class="docutils literal notranslate"><span class="pre">50</span> <span class="pre">/</span> <span class="pre">10</span></code> to get <code class="docutils literal notranslate"><span class="pre">5</span></code>, then add <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">+</span> <span class="pre">2</span> <span class="pre">*</span> <span class="pre">5</span></code> to get 11 gigabytes.
+To allocate this amount to your server, specify <code class="docutils literal notranslate"><span class="pre">-Xmx11G</span></code>. See <a class="reference external" href="https://bukkit.gamepedia.com/Setting_the_Java_Virtual_Machine_Heap_Size">these example instructions</a>
+for Bukkit/Spigot/Paper. They also apply in a similar way to NeoForge/Fabric.</p>
+<p>To fix the watchdog crashing the server, try increasing the watchdog timeout for your server. For Spigot/Paper, this
+is <code class="docutils literal notranslate"><span class="pre">timeout-time</span></code> in the <code class="docutils literal notranslate"><span class="pre">spigot.yml</span></code> file. For NeoForge/Fabric, it is <code class="docutils literal notranslate"><span class="pre">max-tick-time</span></code> in the <code class="docutils literal notranslate"><span class="pre">server.properties</span></code> file.
+This should not be needed in most cases, however, as WorldEdit already ticks the watchdog automatically.</p>
+</section>
+<section id="my-client-crashes-when-i-do-large-edits-1-million-blocks-or-more-in-single-player">
+<h3>My client crashes when I do large edits (1 million blocks or more) in single-player!<a class="headerlink" href="#my-client-crashes-when-i-do-large-edits-1-million-blocks-or-more-in-single-player" title="Link to this heading">#</a></h3>
+<p>You can use the same instructions as the server case above, but you don’t need to worry about the watchdog.
+Single-player does not use a watchdog.</p>
+</section>
+<section id="how-do-i-remove-a-tool-brush-from-the-item-i-m-holding">
+<h3>How do I remove a tool/brush from the item I’m holding?<a class="headerlink" href="#how-do-i-remove-a-tool-brush-from-the-item-i-m-holding" title="Link to this heading">#</a></h3>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">/tool</span> <span class="pre">none</span></code> or <code class="docutils literal notranslate"><span class="pre">/brush</span> <span class="pre">none</span></code> command while holding the item. These are both currently the same command, so it doesn’t matter which one you pick.</p>
+</section>
+<section id="why-isn-t-sign-text-chest-contents-entities-etc-working">
+<h3>Why isn’t sign text/chest contents/entities/etc working?<a class="headerlink" href="#why-isn-t-sign-text-chest-contents-entities-etc-working" title="Link to this heading">#</a></h3>
+<p>On all versions of WorldEdit, you need to have the <code class="docutils literal notranslate"><span class="pre">worldedit.setnbt</span></code> permission (which can be granted through OP) in order to set block entities.</p>
+<p id="bukkit-adapters">On Bukkit servers, WorldEdit has to use some version-specific adapters to get full access to many functions due to how Bukkit works. It uses these adapters for block entities (blocks that use additional data including signs, containers, etc.), entities, and some other functionality. What this generally means is that every new release of Minecraft will require you to update WorldEdit. Usually, WorldEdit will be updated quickly, and you can find new releases or experimental builds via the links on the <a class="reference internal" href="../"><span class="doc">main page</span></a>.</p>
+</section>
+<section id="when-i-select-worldedit-also-selects-1-1-1">
+<h3>When I select, WorldEdit also selects (-1, -1, -1)!<a class="headerlink" href="#when-i-select-worldedit-also-selects-1-1-1" title="Link to this heading">#</a></h3>
+<p>This is due to a conflict with the Enchantable mod by MrCrayFish, described <a class="reference external" href="https://github.com/MrCrayfish/Enchantable/issues/18">here</a>.</p>
+<p>You can either remove the mod, or use the <a class="reference internal" href="../usage/tools/tools/#long-range-wand"><span class="std std-ref">long range wand</span></a> tool.</p>
+</section>
+</section>
+</section>
+
+        </article><button class="back-to-top" type="button">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+  </svg>
+  <span>Back to top</span>
+</button><div class="navigation flex print:hidden"><div class="navigation-prev">
+    <a href="../api/internal-apis/">
+      <i class="i-lucide chevron-left"></i>
+      <div class="page-info">
+        <span>Previous</span><div class="title">Internal APIs</div></div>
+    </a>
+  </div><div class="navigation-next">
+    <a href="../support/">
+      <div class="page-info">
+        <span>Next</span>
+        <div class="title">Getting Help</div>
+      </div>
+      <i class="i-lucide chevron-right"></i>
+    </a>
+  </div></div><div class="sponsorbox">
+    <div class="sponsor apexhosting">
+        <a href="https://billing.apexminecrafthosting.com/aff.php?aff=3108">
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 750 150" style="enable-background:new 0 0 750 150;" xml:space="preserve">
+            <style type="text/css">
+                .st0{fill:var(--sponsor-logo-color);}
+                .st1{display:none;}
+            </style>
+            <g id="Layer_1_1_">
+                <g>
+                    <path id="XMLID_29_" class="st0" d="M352.5,71.7c0,11.8-0.1,23.5,0.1,35.3c0.1,4.5-1.6,7.1-5.7,9c-16.5,7.3-32.9,15-49.5,22.1
+                        c-2.5,1.1-6.4,0.9-9-0.2c-17.1-7.4-34-15.2-51-22.8c-3.5-1.6-4-4.7-4-8c0-7.6,0-15.2,0-22.8c0-15.6,0-31.3,0-46.9
+                        c0-7.3,0.9-8.5,7.6-10.7c15.2-5,30.3-10.1,45.7-14.6c4-1.2,8.9-1.2,12.9,0c15.2,4.5,30.2,9.8,45.2,14.8c6.3,2.1,7.5,3.7,7.6,10.6
+                        C352.5,48.7,352.5,60.2,352.5,71.7L352.5,71.7z M247.7,44.9c0,19.6,0,38.5,0.1,57.3c0,1,1.1,2.4,2.1,2.9
+                        c7.6,3.6,15.2,7.1,22.9,10.6c4.5,2,9,4,13.8,6.1c0-19.7,0-38.8-0.1-57.8c0-0.8-0.8-2.1-1.5-2.5C272.9,56,260.7,50.6,247.7,44.9z
+                        M339,44.6c-12.3,5.7-23.8,11.1-35.3,16.3c-2.2,1-2.9,2.2-2.9,4.6c0.1,16.6,0.1,33.2,0.1,49.8c0,1.7,0,5.3,0,5.3s-0.1,0.3,0.1,0.4
+                        s24.9-10.9,36.6-16.2c0.7-0.3,1.4-1.7,1.4-2.6C339.1,83.3,339.1,64.4,339,44.6z M260.6,35c0,0.1,21.8,10,32.4,14.7
+                        c0.6,0.3,1.6,0.2,2.3-0.1c10.1-4.6,20.1-9.3,31.3-14.4c-9.2-3-17.3-5.8-25.4-8.3c-3-0.9-6.4-2.7-9.1-1.9
+                        C281.7,27.6,260.6,34.8,260.6,35z"/>
+                    <path id="XMLID_15_" class="st0" d="M171.1,63.2c-7.2,0-14.2,0-21.4,0c0,2.6,0,4.7,0,7.3c6.1,0,12,0,18.1,0c0,3.9,0,7.3,0,11.2
+                        c-5.9,0-11.8,0-18.1,0c0,2.9,0,5.3,0,8.2c7.4,0,14.7,0,22.3,0c0,3.8,0,7.1,0,10.8c-12.1,0-24.3,0-36.9,0c0-16,0-32.1,0-48.5
+                        c11.9,0,23.8,0,36,0C171.1,55.7,171.1,59.2,171.1,63.2z"/>
+                    <path id="XMLID_27_" class="st0" d="M102.7,86c0,5,0,9.7,0,14.7c-4.9,0-9.5,0-14.3,0c0-14.6,0-48.5,0-48.5s15.9-1.9,29.8,1.3
+                        c8.1,1.4,11.5,8.3,10.8,17.6c-0.7,7.8-5.9,13.2-13.8,14.1C111.3,85.6,107.3,85.7,102.7,86z M102.8,74.6c2.5,0,3.9,0,5.9-0.1
+                        c2.2,0,4.1-0.3,5.5-2.6c0.9-1.5,0.8-4.7-0.2-6.1c-1.5-3.7-11.2-2.4-11.2-2.4S102.8,70.5,102.8,74.6z"/>
+                    <path id="XMLID_10_" class="st0" d="M191.9,75.6c-4.6-7.6-9.2-15.2-14.2-23.4c-0.1-0.1,16.1,0,16.1,0s4.9,9.2,6.6,12.5
+                        c1.7-3.2,6.8-12.5,6.8-12.5h16c0,0-10,15.7-15,23.5c4.9,8.1,15,25,15,25h-15.7c0,0-5.6-9.4-7.7-13.4c-1.5,2.8-4,7.5-4,7.5l-3,5.9
+                        c0,0-16.5,0.1-16.4,0C181.7,92,186.8,83.8,191.9,75.6z"/>
+                    <path id="XMLID_25_" class="st0" d="M49.1,100.5c0,0-9,0-13.8,0C40.7,84,46,67.9,51.4,51.6c4.3,0,14-0.1,14.6-0.1
+                        c0,0,0.8,1.9,0.9,2.4c5.1,15,15,45.9,15,46.5c-4.6,0-14,0-14,0l-1.4-5.8l-15.1-0.3L49.1,100.5z M59.1,67.8c-0.3,0-0.6,0-1,0
+                        c-1.4,5.4-2.7,10.7-4.1,16.3c3.4,0,6.3,0,9.4,0C61.9,78.3,60.5,73,59.1,67.8z"/>
+                    <path id="XMLID_3_" class="st0" d="M102.8,74.6"/>
+                    <g>
+                        <path class="st0" d="M364,52h15v17h16.4V52h15.1v48.7h-15.1V81h-16.4v19.7h-15V52z"/>
+                        <path class="st0" d="M418.7,76.4c0-7.9,2.2-14.1,6.6-18.6c4.4-4.4,10.6-6.6,18.5-6.6c8.1,0,14.3,2.2,18.7,6.5s6.6,10.4,6.6,18.3
+                            c0,5.7-1,10.4-2.9,14c-1.9,3.6-4.7,6.5-8.3,8.5s-8.1,3-13.5,3c-5.5,0-10-0.9-13.6-2.6c-3.6-1.7-6.5-4.5-8.7-8.3
+                            C419.8,86.8,418.7,82.1,418.7,76.4z M433.8,76.4c0,4.9,0.9,8.4,2.7,10.6c1.8,2.1,4.3,3.2,7.5,3.2c3.2,0,5.7-1.1,7.5-3.2
+                            c1.8-2.1,2.7-5.9,2.7-11.3c0-4.6-0.9-7.9-2.8-10c-1.8-2.1-4.4-3.2-7.5-3.2c-3,0-5.5,1.1-7.3,3.2
+                            C434.7,67.9,433.8,71.5,433.8,76.4z"/>
+                        <path class="st0" d="M474.6,84.6l14.3-0.9c0.3,2.3,0.9,4.1,1.9,5.3c1.5,2,3.8,3,6.6,3c2.1,0,3.8-0.5,5-1.5c1.2-1,1.7-2.2,1.7-3.5
+                            c0-1.3-0.6-2.4-1.7-3.4c-1.1-1-3.7-1.9-7.7-2.8c-6.6-1.5-11.3-3.5-14.1-5.9c-2.8-2.5-4.2-5.6-4.2-9.4c0-2.5,0.7-4.9,2.2-7.1
+                            c1.4-2.2,3.6-4,6.5-5.2c2.9-1.3,6.9-1.9,12-1.9c6.2,0,11,1.2,14.2,3.5c3.3,2.3,5.2,6,5.8,11L503,66.5c-0.4-2.2-1.2-3.8-2.4-4.8
+                            c-1.2-1-2.9-1.5-5-1.5c-1.7,0-3.1,0.4-4,1.1c-0.9,0.7-1.3,1.6-1.3,2.7c0,0.8,0.4,1.5,1.1,2.1c0.7,0.6,2.4,1.2,5,1.8
+                            c6.6,1.4,11.3,2.9,14.1,4.3c2.8,1.5,4.9,3.2,6.2,5.4c1.3,2.1,1.9,4.5,1.9,7.2c0,3.1-0.9,6-2.6,8.6c-1.7,2.6-4.1,4.6-7.2,6
+                            c-3.1,1.4-7,2-11.7,2c-8.3,0-14-1.6-17.2-4.8S475.1,89.5,474.6,84.6z"/>
+                        <path class="st0" d="M523,52h45.7v12h-15.3v36.7h-15V64H523V52z"/>
+                        <path class="st0" d="M576.1,52h15.1v48.7h-15.1V52z"/>
+                        <path class="st0" d="M602,52h14l18.3,26.9V52h14.2v48.7h-14.2L616.2,74v26.7H602V52z"/>
+                        <path class="st0" d="M683.1,83.1V72.9h23.2v20.8c-4.4,3-8.4,5.1-11.8,6.2s-7.5,1.6-12.2,1.6c-5.8,0-10.5-1-14.1-3
+                            c-3.6-2-6.5-4.9-8.5-8.8c-2-3.9-3-8.4-3-13.4c0-5.3,1.1-9.9,3.3-13.9c2.2-3.9,5.4-6.9,9.6-8.9c3.3-1.6,7.7-2.4,13.3-2.4
+                            c5.4,0,9.4,0.5,12.1,1.5c2.7,1,4.9,2.5,6.6,4.5c1.8,2,3.1,4.6,4,7.8l-14.5,2.6c-0.6-1.8-1.6-3.2-3-4.2c-1.4-1-3.2-1.5-5.5-1.5
+                            c-3.3,0-5.9,1.1-7.9,3.4s-2.9,5.9-2.9,10.9c0,5.3,1,9,3,11.3c2,2.3,4.7,3.4,8.3,3.4c1.7,0,3.3-0.2,4.8-0.7
+                            c1.5-0.5,3.3-1.3,5.2-2.5v-4.6H683.1z"/>
+                    </g>
+                </g>
+            </g>
+            <g id="Layer_2_1_" class="st1">
+            </g>
+            </svg>
+            <p>We recommend ApexHosting!</p>
+        </a>
+    </div>
+</div></div>
+    </div>
+  </main>
+</div>
+<footer class="sy-foot">
+  <div class="sy-foot-inner sy-container mx-auto">
+    <div class="sy-foot-reserved md:flex justify-between items-center">
+      <div class="sy-foot-copyright"><p>2015-2026, WorldEdit Team</p>
+  
+  <p>
+    Made with
+    
+    <a href="https://www.sphinx-doc.org/">Sphinx</a> and
+    
+    <a href="https://shibuya.lepture.com">Shibuya theme</a>.
+  </p>
+</div>
+      <div class="sy-foot-socials">
+  <a href="https://github.com/EngineHub/WorldEdit" aria-label="GitHub">
+    <iconify-icon icon="simple-icons:github"></iconify-icon>
+  </a>
+  <a href="https://discord.gg/enginehub" aria-label="Discord">
+    <iconify-icon icon="simple-icons:discord"></iconify-icon>
+  </a></div>
+    </div>
+  </div>
+</footer>
+      <script src="../_static/documentation_options.js?v=2a957733"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../_static/shibuya.js?v=50760d75"></script></body>
+</html>

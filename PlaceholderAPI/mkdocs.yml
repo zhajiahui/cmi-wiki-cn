@@ -1,6 +1,25 @@
 site_name: PlaceholderAPI 中文资料
 nav:
 - 插件说明: index.md
+- 插件 Wiki:
+  - Wiki 首页: wiki/home.md
+  - 用户指南:
+    - 用户指南: wiki/users.md
+    - 命令: wiki/users-commands.md
+    - 使用占位符: wiki/users-using-placeholders.md
+    - 占位符列表: wiki/users-placeholder-list.md
+    - Minecraft 占位符列表: wiki/users-placeholder-list-minecraft.md
+    - Hytale 占位符列表: wiki/users-placeholder-list-hytale.md
+    - 使用 PlaceholderAPI 的插件: wiki/users-plugins-using-placeholderapi.md
+    - 支持 PlaceholderAPI 的 Minecraft 插件: wiki/users-plugins-using-placeholderapi-minecraft.md
+    - 支持 PlaceholderAPI 的 Hytale 插件: wiki/users-plugins-using-placeholderapi-hytale.md
+  - 开发者资料:
+    - 开发者资料: wiki/developers.md
+    - Expansion Cloud: wiki/developers-expansion-cloud.md
+  - 问题排查:
+    - 常见问题排查: wiki/issues.md
+    - eCloud 连接被阻止: wiki/issues-ecloud-block.md
+    - 常见问题: wiki/faq.md
 - 配置文件（2.12.3）:
   - 配置索引: configuration/index.md
   - config.yml: configuration/config.md

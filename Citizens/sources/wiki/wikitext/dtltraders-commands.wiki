@@ -1,0 +1,43 @@
+DtlTraders strives to be as much user friendly as possible so there are only a few important commands to remember. Most tasks can be accomplished without their use.
+
+'''[]''' - Mandatory <br />
+'''()''' - Optional <br /><br />
+
+'''Command''' - command name <br />
+'''Args''' - arguments that must or may be parsed <br />
+'''Mode''' - whether the command requires to be in a certain mode <br />
+'''Description''' - short description of the command <br />
+
+
+== Commands == 
+
+<div style="width:100%;vertical-align:top">
+<div style="display:table;width:100%">
+<div style="display:table-cell;width:160px;border-right:solid 1px black"><p style="margin:0px;padding:2px 10px;"><b>Command</b></p>
+</div>
+<div style="display:table-cell;width:210px;border-right:solid 1px"><p style="margin:0px;padding:2px 10px;"><b>Args</b></p>
+</div>
+<div style="display:table-cell;width:160px;border-right:solid 1px black"><p style="margin:0px;padding:2px 10px;"><b>Mode</b></p>
+</div>
+<div style="display:table-cell;width:380px;"><p style="margin:0px;padding:2px 10px;"><b>Description</b></p>
+</div>
+</div>
+
+<!-- /trader -->
+<div style="display:table;width:100%">
+<div style="display:table-cell;width:160px;background-color: #F9F9F9;border-top:solid 1px"><!-- Cell -->
+<p style="margin:0px;padding:2px 10px"><code style="margin:0px;display:block">/trader </code></p>
+</div>
+<div style="display:table-cell;width:210px;background-color: #F9F9F9;border-top:solid 1px"><!-- Cell -->
+<p style="margin:0px;padding:2px 10px"><code style="margin:0px;display:block">no arguments</code></p>
+</div>
+<div style="display:table-cell;width:160px;background-color: #F9F9F9;border-top:solid 1px"><!-- Cell -->
+<p style="margin:0px;padding:2px 10px"><code style="margin:0px;display:block;color:green">no mode required</code></p>
+</div>
+<div style="display:table-cell;width:380px;background-color: #F9F9F9;border-top:solid 1px"><!-- Cell -->
+<p style="margin:0px;padding:2px 10px"><code style="margin:0px;display:block">shows info about the current selected trader or just the plugin version</code></p>
+</div>
+</div>
+
+
+</div>

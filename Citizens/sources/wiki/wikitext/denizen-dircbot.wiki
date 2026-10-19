@@ -1,0 +1,5 @@
+Denizen IRC Bot!
+
+source: https://github.com/DenizenScript/dIRCBot
+
+builds: http://ci.citizensnpcs.co/job/dIRCBot/

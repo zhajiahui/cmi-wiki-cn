@@ -1,0 +1,89 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Scripting",
+    "pageid": 169,
+    "revid": 5404,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#NOTICE\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">NOTICE</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Scripting_Support_in_Citizens2\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Scripting Support in Citizens2</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Behaviours\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Behaviours</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Scripting_Gotchas_and_Tips\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Scripting Gotchas and Tips</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#Javascript_(Nashorn)\"><span class=\"tocnumber\">4.1</span> <span class=\"toctext\">Javascript (Nashorn)</span></a></li>\n<li class=\"toclevel-2 tocsection-6\"><a href=\"#Javascript_(Rhino)\"><span class=\"tocnumber\">4.2</span> <span class=\"toctext\">Javascript (Rhino)</span></a></li>\n</ul>\n</li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"NOTICE\">NOTICE</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Scripting&amp;action=edit&amp;section=1\" title=\"Edit section: NOTICE\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This page refers to the legacy Javascript scripting which is no longer fully supported. The main scripting support available in modern Citizens is through <a rel=\"nofollow\" class=\"external text\" href=\"https://denizenscript.com/\">Denizen</a>.</span>\n</p><p><br />\n</p><p><br /> \n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Scripting_Support_in_Citizens2\">Scripting Support in Citizens2</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Scripting&amp;action=edit&amp;section=2\" title=\"Edit section: Scripting Support in Citizens2\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Citizens2 includes support for various scripting languages including Lua, Javascript and Python.\n</p><p>Javascript support is built into Java; additional languages can be added in through installing things such as JRuby (<a rel=\"nofollow\" class=\"external free\" href=\"http://jruby.org/\">http://jruby.org/</a>), Jython (<a rel=\"nofollow\" class=\"external free\" href=\"http://www.jython.org/\">http://www.jython.org/</a>), Kahlua (<a rel=\"nofollow\" class=\"external free\" href=\"https://github.com/krka/kahlua2\">https://github.com/krka/kahlua2</a>) and more.\n</p><p>The scripting API contains a few built in objects in the global namespace which aid in some tasks. Currently, the 'events' object allows registering event listeners for Bukkit events and a reference to the Citizens plugin object is available under 'plugin'. \n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Behaviours\">Behaviours</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Scripting&amp;action=edit&amp;section=3\" title=\"Edit section: Behaviours\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Let's see an example of how to use scripts. Scripts can be added to an NPC via the /npc script --add [scripts] command, where scripts is a list of files inside the plugins/Citizens/scripts folder to use. Scripts are differentiated by their extension -- make sure it is correct!\n</p><p>When the script file is loaded by Citizens, it will call the method 'onLoad(NPC)' - anything can be performed at this time, although the NPC will not necessarily be spawned. If the method 'run(NPC)' exists it will also be called every tick by Citizens.\n</p>\n<pre>   function leftClick(event) {\n       event.getClicker().sendMessage(\"hello from Javascript scripting!\");\n   }\n</pre>\n<pre>   function onLoad(npc) {\n       events.on(Java.type('net.citizensnpcs.api.event.NPCLeftClickEvent').class, leftClick);\n   }\n</pre>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Scripting_Gotchas_and_Tips\">Scripting Gotchas and Tips</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Scripting&amp;action=edit&amp;section=4\" title=\"Edit section: Scripting Gotchas and Tips\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Javascript_(Nashorn)\"><span id=\"Javascript_.28Nashorn.29\"></span>Javascript (Nashorn)</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Scripting&amp;action=edit&amp;section=5\" title=\"Edit section: Javascript (Nashorn)\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ul><li>Nashorn is a much faster Javascript engine only included in Java 7 and above. It is recommended to run this over the older Rhino engine.</li>\n<li>Read <a rel=\"nofollow\" class=\"external free\" href=\"https://docs.oracle.com/javase/8/docs/technotes/guides/scripting/nashorn/api.html\">https://docs.oracle.com/javase/8/docs/technotes/guides/scripting/nashorn/api.html</a> for more information on Java-Javascript connection.</li></ul>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Javascript_(Rhino)\"><span id=\"Javascript_.28Rhino.29\"></span>Javascript (Rhino)</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Scripting&amp;action=edit&amp;section=6\" title=\"Edit section: Javascript (Rhino)\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ul><li>Some code will expect the methods equals and hashcode to be implemented - a simple equals function should be used often.</li>\n<li>for.. in loops do not work with Java collections.</li>\n<li>Rhino cannot use abstract classes.</li>\n<li>You can implement Java interfaces by using new [interfacename](object), where object contains the methods implementing the interface.</li>\n<li>Use importPackage(Packages.name.space) or importClass(Packages.name.space.YourClass) to import other classes/packages. The Packages. prefix is not required if the class is in the java.util package.</li></ul>\n<!-- \nNewPP limit report\nCached time: 20261019145910\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.010 seconds\nReal time usage: 0.011 seconds\nPreprocessor visited node count: 17/1000000\nRevision size: 2650/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID a3adc163-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "NOTICE",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Scripting",
+        "byteoffset": 0,
+        "anchor": "NOTICE",
+        "linkAnchor": "NOTICE"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Scripting Support in Citizens2",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Scripting",
+        "byteoffset": 322,
+        "anchor": "Scripting_Support_in_Citizens2",
+        "linkAnchor": "Scripting_Support_in_Citizens2"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Behaviours",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "Scripting",
+        "byteoffset": 939,
+        "anchor": "Behaviours",
+        "linkAnchor": "Behaviours"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Scripting Gotchas and Tips",
+        "number": "4",
+        "index": "4",
+        "fromtitle": "Scripting",
+        "byteoffset": 1733,
+        "anchor": "Scripting_Gotchas_and_Tips",
+        "linkAnchor": "Scripting_Gotchas_and_Tips"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Javascript (Nashorn)",
+        "number": "4.1",
+        "index": "5",
+        "fromtitle": "Scripting",
+        "byteoffset": 1766,
+        "anchor": "Javascript_(Nashorn)",
+        "linkAnchor": "Javascript_(Nashorn)"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Javascript (Rhino)",
+        "number": "4.2",
+        "index": "6",
+        "fromtitle": "Scripting",
+        "byteoffset": 2076,
+        "anchor": "Javascript_(Rhino)",
+        "linkAnchor": "Javascript_(Rhino)"
+      }
+    ],
+    "showtoc": ""
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "source_url": "https://app.travis-ci.com/MilkBowl/Vault.svg?branch=master)](https://app.travis-ci.com/MilkBowl/Vault",
+    "resolved_url": "https://api.travis-ci.com/MilkBowl/Vault.svg?branch=master)%5D(https://app.travis-ci.com/MilkBowl/Vault",
+    "source_pages": [
+      "https://github.com/MilkBowl/Vault/blob/460cb21c6215433da526192720de40b6662f5f99/README.md"
+    ],
+    "rendered_urls": [
+      "https://app.travis-ci.com/MilkBowl/Vault.svg?branch=master)](https://app.travis-ci.com/MilkBowl/Vault"
+    ],
+    "file": "wiki/assets/4eb903681f04-Vault.svg",
+    "sha256": "4eb903681f04f8d1fa42710f2fc7d5c7df6f1e0aced01eb40a8a7870eba17024",
+    "size_bytes": 730,
+    "media_type": "image/svg+xml",
+    "status": "archived",
+    "native_bytes_preserved": true
+  }
+]

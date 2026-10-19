@@ -1,0 +1,207 @@
+[
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Guides/Cancelling-Events",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Skills/Inline-Conditions#conditions-triggerconditions",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Guides/Your-First-Random-Spawn",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Mobs/Mobs#internal_name",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Items/Firework",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Items/Firework#Colors",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Mobs/DisplayOptions",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Mobs/DisplayOptions#BackgroundColor",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/mobs/equipment",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Items/Items#internal_name",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Mobs/Options",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/drops/Drops#drop-tables",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Skills/Conditions",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/drops/Drops#drop-tables",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/skills/mechanics/setvariable",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Skills/Variables#special-variable-types",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/skills/mechanics/setvariable",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/skills/variables#variable_types",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Skills/Triggers#the-trigger-targeter",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/skills/Metaskills",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Skills/Placeholders#caster-placeholders",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Spawners",
+    "target": "https://wiki.mythiccraft.io/commands%20and%20permissions",
+    "reason": "原文含空格的根相对地址；保留官方根站地址并编码空格，不猜测替换目标页面"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#Examples",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#ice_damage",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#fire_resistance",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#attack_damage",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#attack_speed",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#bonus_damage",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#critical_strike_chance",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#critical_strike_damage",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#critical_strike_resilience",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#damage_reduction",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#dodge_chance",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#dodge_negation",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#dodge_negation",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#dodge_chance",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#health_regeneration",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#lifesteal_chance",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#lifesteal_power",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#movement_speed",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#parry_chance",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#parry_negation",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#parry_counterattack",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#parry_power",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#parry_negation",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#parry_chance",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#dodge_chance",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#accuracy",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#parry_chance",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Stats",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Stats#movement_speed",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  },
+  {
+    "source": "https://wiki.mythiccraft.io/mythicmobs/Vanilla-Overrides",
+    "target": "https://wiki.mythiccraft.io/mythicmobs/Mobs/Mobs#internal_name",
+    "reason": "原文片段与目标章节不对应，保留官方链接"
+  }
+]

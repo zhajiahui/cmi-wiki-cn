@@ -1,0 +1,21 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Denizen/Commands/Animate",
+    "pageid": 339,
+    "revid": 5227,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p><a rel=\"nofollow\" class=\"external free\" href=\"https://one.denizenscript.com/denizen/cmds/animate\">https://one.denizenscript.com/denizen/cmds/animate</a>\n</p><p><s>Animation list:\n</s></p><p><s>ARM_SWING (Punching)\n</s></p><p><s>CRIT (Critical Hit)\n</s></p><p><s>HURT (Injured)\n</s></p><p><s>MAGIC_CRIT (Critical Hit, caused by magic)\n</s></p><p><s>SIT (Sitting in a cart)\n</s></p><p><s>SLEEP (Sleeping on a bed)\n</s></p><p><s>SNEAK (Holding shift)\n</s></p><p><s>STOP_SITTING (Ends a sit)\n</s></p><p><s>STOP_SLEEPING (Ends a sleep)\n</s></p><p><s>STOP_SNEAKING (Ends a sneak)\n</s></p><p><s>... there might be others.</s>\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145842\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.012 seconds\nReal time usage: 0.021 seconds\nPreprocessor visited node count: 1/1000000\nRevision size: 367/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 1/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 92fd4b63-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": []
+  }
+}

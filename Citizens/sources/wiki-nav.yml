@@ -1,0 +1,186 @@
+- 首页: wiki/citizens-wiki.md
+- 用法（官方分类）:
+  - 分类：用法: wiki/category-usage.md
+  - 安装: wiki/installation.md
+  - 支持的版本: wiki/supported-versions.md
+  - 下载: wiki/downloads.md
+  - 命令: wiki/commands.md
+  - 常见问题: wiki/frequently-asked-questions.md
+  - 编辑器: wiki/editors.md
+  - 角色类型: wiki/characters.md
+  - 皮肤: wiki/skins.md
+  - 兼容性: wiki/compatibility.md
+- 配置（官方分类）:
+  - 分类：配置: wiki/category-configuration.md
+  - 配置: wiki/configuration.md
+  - 数据存储: wiki/data-storage.md
+  - 安装角色类型: wiki/installing-character-types.md
+  - 权限: wiki/permissions.md
+  - 文本语法: wiki/text-syntax.md
+  - 路径点: wiki/waypoints.md
+- NPC 功能与使用:
+  - NPC 点击命令: wiki/npc-commands.md
+  - 行为: wiki/behaviors.md
+  - 模板: wiki/templates.md
+  - 商店: wiki/shops.md
+  - NPC 类型: wiki/types.md
+  - 可操控 NPC: wiki/controllable-npcs.md
+  - 费用: wiki/costs.md
+  - 数量限制: wiki/limits.md
+  - 多个特征: wiki/multiple-traits.md
+  - 特征: wiki/traits.md
+  - 多语言翻译: wiki/translations.md
+  - 日志: wiki/logs.md
+  - 插件冲突: wiki/plugin-conflict.md
+  - 故障排查: wiki/troubleshooting.md
+  - 教程: wiki/tutorials.md
+  - 脚本: wiki/scripting.md
+  - 版本: wiki/versions.md
+  - Minecraft 1.8: wiki/minecraft-1.8.md
+  - Config.yml: wiki/config.yml.md
+  - Citizens.yml: wiki/citizens.yml.md
+  - Citizens 2: wiki/citizens-2.md
+  - 主页: wiki/main-page.md
+- 角色与附属插件:
+  - 分类：角色类型: wiki/category-characters.md
+  - Alchemist: wiki/alchemist.md
+  - Blacksmith: wiki/blacksmith.md
+  - Sentry: wiki/sentry.md
+  - Adventures: wiki/adventures.md
+  - Builder: wiki/builder.md
+  - Builder / 配置: wiki/builder-configuration.md
+  - Builder / Builder 与 Denizen: wiki/builder-builder-and-denizen.md
+  - CitizensUI: wiki/citizensui.md
+  - CitiTraders: wiki/cititraders.md
+  - Cititrader / 权限: wiki/cititrader-permissions.md
+  - Sentinel: wiki/sentinel.md
+  - Sentry / 配置: wiki/sentry-configuration.md
+  - Sentry / 权限: wiki/sentry-permissions.md
+  - Sentry / Sentry 与 Denizen: wiki/sentry-sentry-and-denizen.md
+  - Sentry / Builder 与 Denizen: wiki/sentry-builder-and-denizen.md
+  - HyperMerchant: wiki/hypermerchant.md
+  - UltraTrader: wiki/ultratrader.md
+  - MoxieNPC: wiki/moxienpc.md
+  - MinecartMania: wiki/minecartmania.md
+  - Parrot: wiki/parrot.md
+  - Postal: wiki/postal.md
+  - Quests: wiki/quests.md
+  - 种族参考: wiki/race-reference.md
+  - SpoutPlugin: wiki/spoutplugin.md
+  - 商人: wiki/trader.md
+  - 商人: wiki/traders.md
+  - DtlTraders: wiki/dtltraders.md
+  - DtlTraders / 命令: wiki/dtltraders-commands.md
+  - DtlTraders / 银行 NPC: wiki/dtltraders-bankers.md
+  - DtlTraders / 银行系统: wiki/dtltraders-banking.md
+  - DtlTraders / 基础用法: wiki/dtltraders-basics.md
+  - DtlTraders / 配置: wiki/dtltraders-config.md
+  - DtlTraders / Denizen / 命令: wiki/dtltraders-denizen-commands.md
+  - DtlTraders / Denizen / 支持: wiki/dtltraders-denizen-support.md
+  - DtlTraders / Denizen / 触发器: wiki/dtltraders-denizen-triggers.md
+  - DtlTraders / 语言: wiki/dtltraders-locale.md
+  - DtlTraders / 管理: wiki/dtltraders-managing.md
+  - DtlTraders / 模式: wiki/dtltraders-patterns.md
+  - DtlTraders / 权限: wiki/dtltraders-permissions.md
+  - DtlTraders / 商人: wiki/dtltraders-traders.md
+  - DtlTraders / 交易: wiki/dtltraders-trading.md
+  - DtlTraders / 钱包: wiki/dtltraders-wallets.md
+- Denizen 与 Depenizen 资料:
+  - 颜色代码: wiki/color-codes.md
+  - Denizen: wiki/denizen.md
+  - Denizen 更新日志: wiki/denizen-changelog.md
+  - Denizen / 0.6: wiki/denizen-0.6.md
+  - Denizen / 0.7: wiki/denizen-0.7.md
+  - Denizen / 0.7 / 活动脚本: wiki/denizen-0.7-activity-scripts.md
+  - Denizen / 0.7 / 活动脚本 / 活动: wiki/denizen-0.7-activity-scripts-activities.md
+  - Denizen / 0.7 / 脚本分配: wiki/denizen-0.7-assignments.md
+  - Denizen / 0.7 / 使用 Denizen 之前: wiki/denizen-0.7-before-using-denizen.md
+  - Denizen / 0.7 / 附加内容 / 图片: wiki/denizen-0.7-bonus-content-pictures.md
+  - Denizen / 0.7 / 颜色代码: wiki/denizen-0.7-color-codes.md
+  - Denizen / 0.7 / 脚本示例 / 高级脚本: wiki/denizen-0.7-example-scripts-advanced-scripts.md
+  - Denizen / 0.7 / 脚本示例 / 入门脚本: wiki/denizen-0.7-example-scripts-beginner-scripts.md
+  - Denizen / 0.7 / 文件结构: wiki/denizen-0.7-file-structure.md
+  - Denizen / 0.7 / 游戏内命令: wiki/denizen-0.7-in-game-commands.md
+  - Denizen / 0.7 / 交互脚本: wiki/denizen-0.7-interact-scripts.md
+  - Denizen / 0.7 / 交互脚本 / 命令: wiki/denizen-0.7-interact-scripts-commands.md
+  - Denizen / 0.7 / 交互脚本 / 交互条件: wiki/denizen-0.7-interact-scripts-interact-requirements.md
+  - Denizen / 0.7 / 交互脚本 / 触发器: wiki/denizen-0.7-interact-scripts-triggers.md
+  - Denizen / 0.7 / 交互脚本 / 自定义命令: wiki/denizen-0.7-interact-scritps-custom-commands.md
+  - Denizen / 0.7 / 迁移: wiki/denizen-0.7-migration.md
+  - Denizen / 0.7 / 可替换标签: wiki/denizen-0.7-replaceables.md
+  - Denizen / 0.7 / 可替换标签 .8: wiki/denizen-0.7-replaceables.8.md
+  - Denizen / 0.7 / 入门套件: wiki/denizen-0.7-start-up-kit.md
+  - Denizen / 0.7 / 任务脚本: wiki/denizen-0.7-task-scripts.md
+  - Denizen / 0.7 / 故障排查: wiki/denizen-0.7-troubleshooting.md
+  - Denizen / 0.7 / config.yml: wiki/denizen-0.7-config.yml.md
+  - Denizen / 0.8 / 交互脚本 / 命令: wiki/denizen-0.8-interact-scripts-commands.md
+  - Denizen / 附加特征: wiki/denizen-additional-traits.md
+  - Denizen / 命令: wiki/denizen-commands.md
+  - Denizen / 命令 / Animate 命令: wiki/denizen-commands-animate.md
+  - Denizen / 命令 / Flag 命令: wiki/denizen-commands-flag.md
+  - Denizen / 介绍: wiki/denizen-introduction.md
+  - Denizen / Notepad++: wiki/denizen-notepad.md
+  - Denizen / 可替换标签: wiki/denizen-replaceable-tags.md
+  - Denizen / 条件: wiki/denizen-requirements.md
+  - Denizen / 脚本命令: wiki/denizen-script-commands.md
+  - Denizen / 脚本示例: wiki/denizen-script-samples.md
+  - Denizen / 附属插件: wiki/denizen-subplugins.md
+  - Denizen / 触发器: wiki/denizen-triggers.md
+  - Denizen / 脚本类型: wiki/denizen-types-of-scripts.md
+  - Denizen / dIRCBot: wiki/denizen-dircbot.md
+  - DenizenTemp 临时页: wiki/denizentemp.md
+  - Depenizen: wiki/depenizen.md
+  - Depenizen / BattleNight: wiki/depenizen-battlenight.md
+  - Depenizen / 命令清单: wiki/depenizen-command-list.md
+  - Depenizen / 常见问题: wiki/depenizen-frequently-asked-questions.md
+  - Depenizen / 支持的插件: wiki/depenizen-supported-plugins.md
+  - Depenizen / 标签清单: wiki/depenizen-tag-list.md
+  - 对话示例: wiki/dialog-examples.md
+  - 对话参考: wiki/dialog-reference.md
+  - 对话教程: wiki/dialog-tutorial.md
+  - 可替换标签: wiki/replaceables.md
+  - YAML: wiki/yaml.md
+- Citizens 1.x 历史资料:
+  - 分类：Citizens 1.x: wiki/category-citizens1.md
+  - Citizens 1.x: wiki/1.x.md
+  - Citizens 1.x / 基础任务示例: wiki/1.x-basic-example-quests.md
+  - Citizens 1.x / Blacksmith: wiki/1.x-blacksmith.md
+  - Citizens 1.x / 角色类型: wiki/1.x-characters.md
+  - Citizens 1.x / Citizens.yml: wiki/1.x-citizens.yml.md
+  - Citizens 1.x / 命令与权限: wiki/1.x-commands-and-permissions.md
+  - Citizens 1.x / 配置: wiki/1.x-configuration.md
+  - Citizens 1.x / 敌对 NPC: wiki/1.x-evil-npcs.md
+  - Citizens 1.x / 任务文本格式: wiki/1.x-formatting-questing-text.md
+  - Citizens 1.x / 常见问题: wiki/1.x-frequently-asked-questions.md
+  - Citizens 1.x / 守卫: wiki/1.x-guard.md
+  - Citizens 1.x / 治疗师: wiki/1.x-healer.md
+  - Citizens 1.x / 安装: wiki/1.x-installing.md
+  - Citizens 1.x / 初始节点类型: wiki/1.x-list-of-initial-node-types.md
+  - Citizens 1.x / 目标节点类型: wiki/1.x-list-of-objective-node-types.md
+  - Citizens 1.x / 条件节点类型: wiki/1.x-list-of-requirement-node-types.md
+  - Citizens 1.x / 奖励节点类型: wiki/1.x-list-of-rewards-node-types.md
+  - Citizens 1.x / 消息格式: wiki/1.x-message-formatting.md
+  - Citizens 1.x / Mobs.yml: wiki/1.x-mobs.yml.md
+  - Citizens 1.x / 更多任务示例: wiki/1.x-more-example-quests.md
+  - Citizens 1.x / Npc-profiles.yml: wiki/1.x-npc-profiles.yml.md
+  - Citizens 1.x / 权限: wiki/1.x-permissions.md
+  - Citizens 1.x / 任务 NPC: wiki/1.x-quester.md
+  - Citizens 1.x / Quests.yml: wiki/1.x-quests.yml.md
+  - Citizens 1.x / 快速入门: wiki/1.x-quick-start.md
+  - Citizens 1.x / 商人: wiki/1.x-trader.md
+  - Citizens 1.x / 路径点: wiki/1.x-waypoints.md
+  - Citizens 1.x / 巫师: wiki/1.x-wizard.md
+- Wiki 其他资料:
+  - 致 Wikia 的说明: wiki/a-message-to-wikia.md
+  - 分类：模板: wiki/category-templates.md
+  - 更新日志: wiki/changelog.md
+  - Citizens IRC: wiki/citizens-irc.md
+  - Citizens Wiki 版权: wiki/citizens-wiki-copyrights.md
+  - Cracks: wiki/cracks.md
+  - 帮助目录: wiki/help-contents.md
+  - IRC 规则: wiki/irc-rules.md
+  - 物品名称: wiki/item-name.md
+  - 新闻: wiki/news.md
+  - 待办事项: wiki/todo.md
+  - 测试页: wiki/test.md
+  - Wikia 旧 Wiki 说明: wiki/wikia.md

@@ -1,0 +1,2434 @@
+[
+  {
+    "file": "wiki/adding-content/adding-sounds.md",
+    "title": "声音",
+    "source_url": "https://wiki.itemsadder.com/adding-content/adding-sounds",
+    "source_file": "sources/wiki/original/adding-content/adding-sounds.md",
+    "source_sha256": "9ecc6b7f78d1db10d7d56d466e912e11390feeaf48a0cc6c8c64ba9af866910a",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/advancements.md",
+    "title": "自定义进度（ItemsAdderAdditions）",
+    "source_url": "https://wiki.itemsadder.com/adding-content/advancements",
+    "source_file": "sources/wiki/original/adding-content/advancements.md",
+    "source_sha256": "ac0290fbbf268f875cb04d5dfcbedb64074594d2f4d2e8f2daba8ce48d74d8eb",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/animated-titles.md",
+    "title": "动画标题",
+    "source_url": "https://wiki.itemsadder.com/adding-content/animated-titles",
+    "source_file": "sources/wiki/original/adding-content/animated-titles.md",
+    "source_sha256": "0451a81df8ad6b625e98c189cf46bf049d6cdc1bca42fdad3b87d31bd8bdac79",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/blocks.md",
+    "title": "方块",
+    "source_url": "https://wiki.itemsadder.com/adding-content/blocks",
+    "source_file": "sources/wiki/original/adding-content/blocks.md",
+    "source_sha256": "74fe2fe5271b3ae35143d1db06010a53bf98215e088c753866077f87f2770692",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/blocks/block-2d-icon.md",
+    "title": "方块的 2D 图标",
+    "source_url": "https://wiki.itemsadder.com/adding-content/blocks/block-2d-icon",
+    "source_file": "sources/wiki/original/adding-content/blocks/block-2d-icon.md",
+    "source_sha256": "1106ecdf31df07b2e6c4058815d10c1ac7e596442d0b27c9b50016bfa99dd1a6",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/blocks/directional-blocks.md",
+    "title": "方向性方块",
+    "source_url": "https://wiki.itemsadder.com/adding-content/blocks/directional-blocks",
+    "source_file": "sources/wiki/original/adding-content/blocks/directional-blocks.md",
+    "source_sha256": "f88b8a6d5e4ca1ef926e986a7bb0b68d14256f0eeecd79e2427e29081b9645ba",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/blocks/enable-disable-custom-blocks-in-worlds.md",
+    "title": "在世界中启用/禁用自定义方块",
+    "source_url": "https://wiki.itemsadder.com/adding-content/blocks/enable-disable-custom-blocks-in-worlds",
+    "source_file": "sources/wiki/original/adding-content/blocks/enable-disable-custom-blocks-in-worlds.md",
+    "source_sha256": "441ae54092185958b4f19ed940ee1cadd7ee34ce7ba5e03608347573f6e4fc23",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/blocks/enabling-custom-blocks-sounds.md",
+    "title": "启用自定义方块声音",
+    "source_url": "https://wiki.itemsadder.com/adding-content/blocks/enabling-custom-blocks-sounds",
+    "source_file": "sources/wiki/original/adding-content/blocks/enabling-custom-blocks-sounds.md",
+    "source_sha256": "dadd173bcbdce35d38ea3a9c67438bc2596a78be6481405eb6026c6fb44388dd",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/blocks/entity-blocks.md",
+    "title": "实体方块",
+    "source_url": "https://wiki.itemsadder.com/adding-content/blocks/entity-blocks",
+    "source_file": "sources/wiki/original/adding-content/blocks/entity-blocks.md",
+    "source_sha256": "0a42e8270b30d57a6b7b53f875c7796dee80a938cabb2f765c73c8a856f65bbb",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/blocks/liquids.md",
+    "title": "液体",
+    "source_url": "https://wiki.itemsadder.com/adding-content/blocks/liquids",
+    "source_file": "sources/wiki/original/adding-content/blocks/liquids.md",
+    "source_sha256": "3af8fbfbf9b368807d8242298489efc157e66425257dd11aa264573d2580a055",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/blocks/manual-editing-blockstates.md",
+    "title": "手动编辑方块状态",
+    "source_url": "https://wiki.itemsadder.com/adding-content/blocks/manual-editing-blockstates",
+    "source_file": "sources/wiki/original/adding-content/blocks/manual-editing-blockstates.md",
+    "source_sha256": "1d008e4e95b8272eaaebc34b205101e5c6af76dd3edf478f82b87152e9bdb537",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/blocks/stackable.md",
+    "title": "可堆叠方块",
+    "source_url": "https://wiki.itemsadder.com/adding-content/blocks/stackable",
+    "source_file": "sources/wiki/original/adding-content/blocks/stackable.md",
+    "source_sha256": "4cc2b740669450b70ad70fadb9ad8431a2f47b61865b2dc512c6b03023b4c557",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/blocks/storage.md",
+    "title": "存储方块",
+    "source_url": "https://wiki.itemsadder.com/adding-content/blocks/storage",
+    "source_file": "sources/wiki/original/adding-content/blocks/storage.md",
+    "source_sha256": "a74ff2b07610c422cf37f5655f5de995a923cd8e4c9a8118e77103bdc616438e",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/blocks/tnt.md",
+    "title": "TNT",
+    "source_url": "https://wiki.itemsadder.com/adding-content/blocks/tnt",
+    "source_file": "sources/wiki/original/adding-content/blocks/tnt.md",
+    "source_sha256": "88357be6b949efecace9fa485000d6d3b245f7da3b37da459af8d687d75ed473",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/blocks/transparent-block.md",
+    "title": "透明方块",
+    "source_url": "https://wiki.itemsadder.com/adding-content/blocks/transparent-block",
+    "source_file": "sources/wiki/original/adding-content/blocks/transparent-block.md",
+    "source_sha256": "4ea57ba43ff17a2e37d184fbc4f11ea80cd51bafc8d6dc70282c36c914bef76c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/blocks/turn-block-on-off.md",
+    "title": "切换方块的开关状态",
+    "source_url": "https://wiki.itemsadder.com/adding-content/blocks/turn-block-on-off",
+    "source_file": "sources/wiki/original/adding-content/blocks/turn-block-on-off.md",
+    "source_sha256": "54dd190b7357520f08cecb663788f9476498b36fb33594877cddd63d4a358161",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/blocks/variants.md",
+    "title": "变体",
+    "source_url": "https://wiki.itemsadder.com/adding-content/blocks/variants",
+    "source_file": "sources/wiki/original/adding-content/blocks/variants.md",
+    "source_sha256": "a0e63b21977f9e38c5ec148a6cda143c7863c68e883631044496cf010166e3bc",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/colored-items.md",
+    "title": "染色物品",
+    "source_url": "https://wiki.itemsadder.com/adding-content/colored-items",
+    "source_file": "sources/wiki/original/adding-content/colored-items.md",
+    "source_sha256": "28b938f5a6b5617438295132620749ffcf4e6dd4bb843a7f8caca1a2f800548e",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/colored-models.md",
+    "title": "彩色模型",
+    "source_url": "https://wiki.itemsadder.com/adding-content/colored-models",
+    "source_file": "sources/wiki/original/adding-content/colored-models.md",
+    "source_sha256": "6332318903ac7713f90085c3eb4e3aa996c4e2b5a747064c53b1ff0fdae89e27",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/crops.md",
+    "title": "作物",
+    "source_url": "https://wiki.itemsadder.com/adding-content/crops",
+    "source_file": "sources/wiki/original/adding-content/crops.md",
+    "source_sha256": "16c8969829de633fb72afbd82e5738a93fe64461698ff2fc373aa266706a9a0d",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/custom-paintings.md",
+    "title": "自定义画（ItemsAdderAdditions）",
+    "source_url": "https://wiki.itemsadder.com/adding-content/custom-paintings",
+    "source_file": "sources/wiki/original/adding-content/custom-paintings.md",
+    "source_sha256": "da183ef46d3586d21d70cdb4cf7b28b7b5a02ff72cfb4168319728febc257bc5",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/custom-tags.md",
+    "title": "自定义标签（ItemsAdderAdditions）",
+    "source_url": "https://wiki.itemsadder.com/adding-content/custom-tags",
+    "source_file": "sources/wiki/original/adding-content/custom-tags.md",
+    "source_sha256": "089d151710206daa8ef97d16703e0d6839011b029aaba4cf3d7aa5882bd8b47f",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/entities.md",
+    "title": "介绍",
+    "source_url": "https://wiki.itemsadder.com/adding-content/entities",
+    "source_file": "sources/wiki/original/adding-content/entities.md",
+    "source_sha256": "e55ada358ab8f02e26c5adbba0158b67621f55e8140cd490c47c871ffa9a33fc",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/entities/advanced-method.md",
+    "title": "创建实体",
+    "source_url": "https://wiki.itemsadder.com/adding-content/entities/advanced-method",
+    "source_file": "sources/wiki/original/adding-content/entities/advanced-method.md",
+    "source_sha256": "cdcbd1a00ce3e07209cfb314037e9f7319c7701a135d4ac1f0c6b20186bfcd19",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/entities/advanced-settings.md",
+    "title": "高级设置",
+    "source_url": "https://wiki.itemsadder.com/adding-content/entities/advanced-settings",
+    "source_file": "sources/wiki/original/adding-content/entities/advanced-settings.md",
+    "source_sha256": "2b5941f0a93d3438fe41b256a4f462c2aa9c49beb74959798067231b7243eb54",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/entities/animations.md",
+    "title": "动画",
+    "source_url": "https://wiki.itemsadder.com/adding-content/entities/animations",
+    "source_file": "sources/wiki/original/adding-content/entities/animations.md",
+    "source_sha256": "59a131bf072a55b142c79e008c2447e58036f013a6141a874b86bc29e5abd99e",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/entities/citizens.md",
+    "title": "Citizens",
+    "source_url": "https://wiki.itemsadder.com/adding-content/entities/citizens",
+    "source_file": "sources/wiki/original/adding-content/entities/citizens.md",
+    "source_sha256": "f0ac34ffac53d50f4b8dfd9a847a3cdcd9dbf1ab42e2955af854ae4ba505adcb",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/entities/custom-skin.md",
+    "title": "自定义玩家动画",
+    "source_url": "https://wiki.itemsadder.com/adding-content/entities/custom-skin",
+    "source_file": "sources/wiki/original/adding-content/entities/custom-skin.md",
+    "source_sha256": "bb0b80dd0461c10f9f4f1d3dd0f4ebf880d2a593b1ba04e22c06e4847e15bf09",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/entities/entity-goals.md",
+    "title": "实体行为目标",
+    "source_url": "https://wiki.itemsadder.com/adding-content/entities/entity-goals",
+    "source_file": "sources/wiki/original/adding-content/entities/entity-goals.md",
+    "source_sha256": "e91a011bd92e2f766910ca5442d54181831c55f55424809551dfc35aaf5fa9fa",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/entities/entity-goals/entity-goals-list.md",
+    "title": "实体行为目标列表",
+    "source_url": "https://wiki.itemsadder.com/adding-content/entities/entity-goals/entity-goals-list",
+    "source_file": "sources/wiki/original/adding-content/entities/entity-goals/entity-goals-list.md",
+    "source_sha256": "04a746b1923501549edec81fb8595579a443350ab49ae040218f5761dde3446e",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/entities/entity-random-spawn.md",
+    "title": "实体随机生成",
+    "source_url": "https://wiki.itemsadder.com/adding-content/entities/entity-random-spawn",
+    "source_file": "sources/wiki/original/adding-content/entities/entity-random-spawn.md",
+    "source_sha256": "f76b688a6006b9c95b9628f8a29a7d4ad6d5bdbd2fd6fbc2dc1d61fce2e16eb3",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/entities/events-and-actions.md",
+    "title": "事件与动作",
+    "source_url": "https://wiki.itemsadder.com/adding-content/entities/events-and-actions",
+    "source_file": "sources/wiki/original/adding-content/entities/events-and-actions.md",
+    "source_sha256": "d7b0c1461d872cfe8eed9247a2dcfe5695c83cbf96bc194711230b46bed541c8",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/entities/hands-equipment.md",
+    "title": "手持装备",
+    "source_url": "https://wiki.itemsadder.com/adding-content/entities/hands-equipment",
+    "source_file": "sources/wiki/original/adding-content/entities/hands-equipment.md",
+    "source_sha256": "845b561d113672b6f9238fc5770e9208f5f85becedf8cc6c929b4422286a2a49",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/entities/head.md",
+    "title": "头部",
+    "source_url": "https://wiki.itemsadder.com/adding-content/entities/head",
+    "source_file": "sources/wiki/original/adding-content/entities/head.md",
+    "source_sha256": "589c8baaad95896a82cd289ea409ae83d783ccd98fb3dbce84c870ee44f5a404",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/entities/hitbox.md",
+    "title": "碰撞箱",
+    "source_url": "https://wiki.itemsadder.com/adding-content/entities/hitbox",
+    "source_file": "sources/wiki/original/adding-content/entities/hitbox.md",
+    "source_sha256": "fcb9a0aae109c059b7c445b38c9bd5bfb59eeb795e293ca532d3e8c4d19badbb",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/entities/mount.md",
+    "title": "骑乘",
+    "source_url": "https://wiki.itemsadder.com/adding-content/entities/mount",
+    "source_file": "sources/wiki/original/adding-content/entities/mount.md",
+    "source_sha256": "5ab8607e488b541bea848726207a961c4312ae985373bf6952f465180e00255c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/entities/mythicmobs.md",
+    "title": "MythicMobs",
+    "source_url": "https://wiki.itemsadder.com/adding-content/entities/mythicmobs",
+    "source_file": "sources/wiki/original/adding-content/entities/mythicmobs.md",
+    "source_sha256": "17f3a24d66f41273fd353315d9fc812225537bf0eba53ac1800d48ede6bcbedc",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/entities/particles.md",
+    "title": "粒子",
+    "source_url": "https://wiki.itemsadder.com/adding-content/entities/particles",
+    "source_file": "sources/wiki/original/adding-content/entities/particles.md",
+    "source_sha256": "9f8987dd794be6d0c8f59a4b30db727c4997fa62461c41ba7da07f5be75245ce",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/entities/sounds.md",
+    "title": "声音",
+    "source_url": "https://wiki.itemsadder.com/adding-content/entities/sounds",
+    "source_file": "sources/wiki/original/adding-content/entities/sounds.md",
+    "source_sha256": "066dcfe56fc3ae0013179a771831b8355ff06d5143da018e0a86a05f78fd907b",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/entities/spawn-egg.md",
+    "title": "刷怪蛋",
+    "source_url": "https://wiki.itemsadder.com/adding-content/entities/spawn-egg",
+    "source_file": "sources/wiki/original/adding-content/entities/spawn-egg.md",
+    "source_sha256": "e72416e93709ec39a12eb7d022704efeeec60bf9228cb1816ae1661323601982",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/font-images.md",
+    "title": "字体图片",
+    "source_url": "https://wiki.itemsadder.com/adding-content/font-images",
+    "source_file": "sources/wiki/original/adding-content/font-images.md",
+    "source_sha256": "90f191935ef716f703ff69d1811a923167fe57aee63b6253819d13a75fba02ee",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/font-images/emojis.md",
+    "title": "表情",
+    "source_url": "https://wiki.itemsadder.com/adding-content/font-images/emojis",
+    "source_file": "sources/wiki/original/adding-content/font-images/emojis.md",
+    "source_sha256": "1e0d37df8959d0812bf40d1678a1346c9854dee67fce8ea76fc5bff4b7870bf5",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/font-images/font-images.md",
+    "title": "字体图片",
+    "source_url": "https://wiki.itemsadder.com/adding-content/font-images/font-images",
+    "source_file": "sources/wiki/original/adding-content/font-images/font-images.md",
+    "source_sha256": "a7641492d7676dbea1c3e9f4b7eb691bc1f5b6e4d5d0a7712f350653c1f68203",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/font-images/font.md",
+    "title": "Font",
+    "source_url": "https://wiki.itemsadder.com/adding-content/font-images/font",
+    "source_file": "sources/wiki/original/adding-content/font-images/font.md",
+    "source_sha256": "a75bcce250085b20d40c3845f7bad650012aac966ea9ecc1e4aa2ce6311470dc",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/font-images/guis.md",
+    "title": "GUIs",
+    "source_url": "https://wiki.itemsadder.com/adding-content/font-images/guis",
+    "source_file": "sources/wiki/original/adding-content/font-images/guis.md",
+    "source_sha256": "30d25818b068f9f4444006e7cd3dc927b5f372fafcdfd30834dcae9f0642e6a3",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/font-images/huds.md",
+    "title": "HUDs",
+    "source_url": "https://wiki.itemsadder.com/adding-content/font-images/huds",
+    "source_file": "sources/wiki/original/adding-content/font-images/huds.md",
+    "source_sha256": "b4e988f202e3325987bdf20f7ca958c9b87b4ea1cc619da23c1e62687c3cae55",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/font-images/huds/creating-huds.md",
+    "title": "创建 HUDs",
+    "source_url": "https://wiki.itemsadder.com/adding-content/font-images/huds/creating-huds",
+    "source_file": "sources/wiki/original/adding-content/font-images/huds/creating-huds.md",
+    "source_sha256": "621fe16fad4ce5b36d5e9f4906ca17ad90e1a9d8c400f41ebe63f6dd8d5b6489",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/font-images/huds/creating-huds/custom-hud-advanced.md",
+    "title": "自定义 HUD（高级）",
+    "source_url": "https://wiki.itemsadder.com/adding-content/font-images/huds/creating-huds/custom-hud-advanced",
+    "source_file": "sources/wiki/original/adding-content/font-images/huds/creating-huds/custom-hud-advanced.md",
+    "source_sha256": "93d93daa3d52e31cd78362947539ac3597dfb777b2e056e2c03315bc8cb4b577",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/font-images/huds/creating-huds/frames-hud.md",
+    "title": "帧式 HUD",
+    "source_url": "https://wiki.itemsadder.com/adding-content/font-images/huds/creating-huds/frames-hud",
+    "source_file": "sources/wiki/original/adding-content/font-images/huds/creating-huds/frames-hud.md",
+    "source_sha256": "ace049896b713a152fad3463210c40c2f71184bad98672464cd22c92d7234c07",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/font-images/huds/creating-huds/status-hud.md",
+    "title": "状态 HUD",
+    "source_url": "https://wiki.itemsadder.com/adding-content/font-images/huds/creating-huds/status-hud",
+    "source_file": "sources/wiki/original/adding-content/font-images/huds/creating-huds/status-hud.md",
+    "source_sha256": "ff92ed74dabc9ee8007db2cf0d2630e1066623f86d50d34a4ec8768f3b445288",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/font-images/huds/trigger-value-change.md",
+    "title": "触发数值变化",
+    "source_url": "https://wiki.itemsadder.com/adding-content/font-images/huds/trigger-value-change",
+    "source_file": "sources/wiki/original/adding-content/font-images/huds/trigger-value-change.md",
+    "source_sha256": "3af4e918f23b1d7489ecf6268888653c80dd602378f1a459f27fc9235ed4f4c1",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/font-images/ranks-prefixes.md",
+    "title": "称号与前缀",
+    "source_url": "https://wiki.itemsadder.com/adding-content/font-images/ranks-prefixes",
+    "source_file": "sources/wiki/original/adding-content/font-images/ranks-prefixes.md",
+    "source_sha256": "1b1d734092cb74fecbdaf5d616c8ef3bbd48dbb58a5b5de148e513b69362b0fb",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/furnitures.md",
+    "title": "家具",
+    "source_url": "https://wiki.itemsadder.com/adding-content/furnitures",
+    "source_file": "sources/wiki/original/adding-content/furnitures.md",
+    "source_sha256": "1fafa26f6b3b1a84cbbe5c999e42423685b990a9a4dcd1c557c184a4e680002d",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/furnitures/chair.md",
+    "title": "椅子",
+    "source_url": "https://wiki.itemsadder.com/adding-content/furnitures/chair",
+    "source_file": "sources/wiki/original/adding-content/furnitures/chair.md",
+    "source_sha256": "519c9094aa9b9f53b9236de08cf478bcec66b0eb5deca32ad4835b5325bf5dcf",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/furnitures/connectable.md",
+    "title": "可连接家具",
+    "source_url": "https://wiki.itemsadder.com/adding-content/furnitures/connectable",
+    "source_file": "sources/wiki/original/adding-content/furnitures/connectable.md",
+    "source_sha256": "e7351d8c238e162f7c78610117e8a9e53db84f6275a7edade6e1f5ea05075168",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/furnitures/example.md",
+    "title": "示例",
+    "source_url": "https://wiki.itemsadder.com/adding-content/furnitures/example",
+    "source_file": "sources/wiki/original/adding-content/furnitures/example.md",
+    "source_sha256": "afe2d3c8f10ff997046e2f99f6c3cb2dc401430e13f8490f08d15c72a701ded5",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/furnitures/furniture-2d-icon.md",
+    "title": "2D 家具图标",
+    "source_url": "https://wiki.itemsadder.com/adding-content/furnitures/furniture-2d-icon",
+    "source_file": "sources/wiki/original/adding-content/furnitures/furniture-2d-icon.md",
+    "source_sha256": "07e5b23fd2f097ac45b3b39e2c35c26a6e9caa5cbb983e422d95c7224a6d4af1",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/furnitures/furniture-complex.md",
+    "title": "复杂家具",
+    "source_url": "https://wiki.itemsadder.com/adding-content/furnitures/furniture-complex",
+    "source_file": "sources/wiki/original/adding-content/furnitures/furniture-complex.md",
+    "source_sha256": "c274d0347b9101a97b2a3fa9cee15d5db9871b12b4f7fde0f04509490180cd42",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/furnitures/furniture-execute-actions.md",
+    "title": "家具执行动作",
+    "source_url": "https://wiki.itemsadder.com/adding-content/furnitures/furniture-execute-actions",
+    "source_file": "sources/wiki/original/adding-content/furnitures/furniture-execute-actions.md",
+    "source_sha256": "4ab67767e5a2feba20912432609243fe17470d838e7a87aa1ff223ae1ff4c71a",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/furnitures/furniture-permissions.md",
+    "title": "家具权限",
+    "source_url": "https://wiki.itemsadder.com/adding-content/furnitures/furniture-permissions",
+    "source_file": "sources/wiki/original/adding-content/furnitures/furniture-permissions.md",
+    "source_sha256": "d809ae6461df0890402dbeee25efaedb622d874b27f1a9795796a33ada1f51ef",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/furnitures/furniture-size.md",
+    "title": "家具尺寸",
+    "source_url": "https://wiki.itemsadder.com/adding-content/furnitures/furniture-size",
+    "source_file": "sources/wiki/original/adding-content/furnitures/furniture-size.md",
+    "source_sha256": "18ebfba4b228d49f59674bea9b4418433787ffdfa7d86364170e1974f7094c06",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/furnitures/model.md",
+    "title": "模型",
+    "source_url": "https://wiki.itemsadder.com/adding-content/furnitures/model",
+    "source_file": "sources/wiki/original/adding-content/furnitures/model.md",
+    "source_sha256": "01fa6a4857e899cfeda44cd92897115afad9fdc077ea3040061ff990c2d158c2",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/furnitures/storage.md",
+    "title": "存储方块",
+    "source_url": "https://wiki.itemsadder.com/adding-content/furnitures/storage",
+    "source_file": "sources/wiki/original/adding-content/furnitures/storage.md",
+    "source_sha256": "625cf07247c92647289e5985fcc7bedc679d2aef41b88010b5569c74aa8d4913",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/furnitures/transparent-furniture.md",
+    "title": "透明家具",
+    "source_url": "https://wiki.itemsadder.com/adding-content/furnitures/transparent-furniture",
+    "source_file": "sources/wiki/original/adding-content/furnitures/transparent-furniture.md",
+    "source_sha256": "0b18831a59ae5686f6ad0be6bb0d2e521e67366fc04fb29166b30276b20e5f04",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items.md",
+    "title": "物品",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items",
+    "source_file": "sources/wiki/original/adding-content/items.md",
+    "source_sha256": "41b9569fe713248374f94a3f60708440388a0bdcfaa6b427b7dfa081d7581958",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/animated-3d-items.md",
+    "title": "动态 3D 物品",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/animated-3d-items",
+    "source_file": "sources/wiki/original/adding-content/items/animated-3d-items.md",
+    "source_sha256": "29dd22318f12e688e255ce5555ef4be59841d7ce17ebf20ce160a6d3b9915c0c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/armors.md",
+    "title": "盔甲",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/armors",
+    "source_file": "sources/wiki/original/adding-content/items/armors.md",
+    "source_sha256": "0b152a11a35b61ebd14a6863ab032963909a0335f8d418f559ca14ee9fea3918",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/bow.md",
+    "title": "弓",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/bow",
+    "source_file": "sources/wiki/original/adding-content/items/bow.md",
+    "source_sha256": "b694ae3608698dccd9288a43dcc9ea405e599ed2d7a0353fbfc4a301348a4349",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/bundle.md",
+    "title": "收纳袋",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/bundle",
+    "source_file": "sources/wiki/original/adding-content/items/bundle.md",
+    "source_sha256": "962d4a60d5d78c266ac822248c143dc0d7a25f3704816835a5e6cb7623386bf3",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/consumable.md",
+    "title": "消耗品",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/consumable",
+    "source_file": "sources/wiki/original/adding-content/items/consumable.md",
+    "source_sha256": "a5960252ce721f885b0b973b554c1c895f11e488f2e79193309efc691677eecd",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/crossbow.md",
+    "title": "弩",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/crossbow",
+    "source_file": "sources/wiki/original/adding-content/items/crossbow.md",
+    "source_sha256": "d19714d4fa4b1949aa5ec15817379d3085873bd4b0767f715d5d0ca5dfff45f4",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/elytra.md",
+    "title": "鞘翅",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/elytra",
+    "source_file": "sources/wiki/original/adding-content/items/elytra.md",
+    "source_sha256": "3177fd31557baf2aec01f406e9a00006244c86e37257faaf161df2a797b49e2e",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/fishing-rod-shield-bundle.md",
+    "title": "钓鱼竿与盾牌",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/fishing-rod-shield-bundle",
+    "source_file": "sources/wiki/original/adding-content/items/fishing-rod-shield-bundle.md",
+    "source_sha256": "f5cba27067bf68b2a8a2e9a486730552f22e88589d517a2061f34189ab2f655b",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/fuel.md",
+    "title": "燃料",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/fuel",
+    "source_file": "sources/wiki/original/adding-content/items/fuel.md",
+    "source_sha256": "35ef8afb8ce1d3569bc92c1a4322f83ec73dd173019c50c2581b61cb0b23a00b",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/item-model-definitions.md",
+    "title": "物品模型定义（ItemsAdderAdditions）",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/item-model-definitions",
+    "source_file": "sources/wiki/original/adding-content/items/item-model-definitions.md",
+    "source_sha256": "ab1f8b6cbcbbf68a6be030334f6ced44ced53a0a1e3227f6d98146016bfa3ee0",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/item-properties.md",
+    "title": "物品属性",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/item-properties",
+    "source_file": "sources/wiki/original/adding-content/items/item-properties.md",
+    "source_sha256": "60464ea776f1b15e6d749a7c42f0edd2811f4896a113993ff5a8e224dea4a616",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/item-properties/2d-icon.md",
+    "title": "2D 图标",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/item-properties/2d-icon",
+    "source_file": "sources/wiki/original/adding-content/items/item-properties/2d-icon.md",
+    "source_sha256": "1035ce1070a2b5beaee56ef69489631a2a1fb360b22624e6e7c37d59e91d0ace",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/item-properties/actions.md",
+    "title": "动作",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/item-properties/actions",
+    "source_file": "sources/wiki/original/adding-content/items/item-properties/actions.md",
+    "source_sha256": "b4c24658c67d4f167e4ff78244ee3fe588582cb0d12cddf7b10b3e5754aac1ab",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/item-properties/actions/actions.md",
+    "title": "动作列表",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/item-properties/actions/actions",
+    "source_file": "sources/wiki/original/adding-content/items/item-properties/actions/actions.md",
+    "source_sha256": "1cdba4edd4f390cb4a2ee2b0cae8bdbdc5256dcd2ea3edeaaf172c4d70fd611e",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/item-properties/basic.md",
+    "title": "基础属性",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/item-properties/basic",
+    "source_file": "sources/wiki/original/adding-content/items/item-properties/basic.md",
+    "source_sha256": "f81f59b5fe2cdd420538f831f445653ca3629ce03d464c99863cdaa6579f206c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/item-properties/behaviours.md",
+    "title": "行为",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/item-properties/behaviours",
+    "source_file": "sources/wiki/original/adding-content/items/item-properties/behaviours.md",
+    "source_sha256": "ac94878cb384e77519c0edfc4412259e50fbca2b5b02eafaa65b0a038b2ad834",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/item-properties/behaviours/behaviours-list.md",
+    "title": "行为列表",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/item-properties/behaviours/behaviours-list",
+    "source_file": "sources/wiki/original/adding-content/items/item-properties/behaviours/behaviours-list.md",
+    "source_sha256": "ebb94a2201c13504d576308b960dc214ae2919c9f8239c95723f47ece5ceb32a",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/item-properties/components.md",
+    "title": "组件（ItemsAdderAdditions）",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/item-properties/components",
+    "source_file": "sources/wiki/original/adding-content/items/item-properties/components.md",
+    "source_sha256": "ae83c46bbae6e4e441e3630d6d4fc07ef9263dd90f87b2f116f470107bb818c1",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/item-properties/custom-item-nbt.md",
+    "title": "自定义物品 NBT",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/item-properties/custom-item-nbt",
+    "source_file": "sources/wiki/original/adding-content/items/item-properties/custom-item-nbt.md",
+    "source_sha256": "02d59e9153f044673a46cfa6525bfc8c13158c0640078a40861378303d716beb",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/item-properties/events.md",
+    "title": "事件",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/item-properties/events",
+    "source_file": "sources/wiki/original/adding-content/items/item-properties/events.md",
+    "source_sha256": "343c090761b34dc99790aac310f9748de9eb6ee567cfc06661ab5c91f6dd82f0",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/item-properties/events/events-list.md",
+    "title": "事件列表",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/item-properties/events/events-list",
+    "source_file": "sources/wiki/original/adding-content/items/item-properties/events/events-list.md",
+    "source_sha256": "f4ac089197245df0059c9ae88abde8036de92d30d87b678bb6d7aa8851054731",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/item-properties/item-tooltip.md",
+    "title": "物品提示框",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/item-properties/item-tooltip",
+    "source_file": "sources/wiki/original/adding-content/items/item-properties/item-tooltip.md",
+    "source_sha256": "ef0a92e6d93d5f4995a3eec3784c132ce53e7f18347feb3b36fa353c5686afe7",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/item-properties/light-emission.md",
+    "title": "发光效果",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/item-properties/light-emission",
+    "source_file": "sources/wiki/original/adding-content/items/item-properties/light-emission.md",
+    "source_sha256": "361553b3a074e5f21ab36ae40a7bbe0234f8d81f2eed7a21c8b1141dd5697e67",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/item-properties/permission.md",
+    "title": "权限",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/item-properties/permission",
+    "source_file": "sources/wiki/original/adding-content/items/item-properties/permission.md",
+    "source_sha256": "d142643160b8e59ad1d0d013f5f845bd0711f64e3df7ca274c00afdb312cb9ab",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/item-properties/resource.md",
+    "title": "资源",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/item-properties/resource",
+    "source_file": "sources/wiki/original/adding-content/items/item-properties/resource.md",
+    "source_sha256": "343b42cc4f65a3152a38a155c78177d6b44ef5993835a453a8fb9759cf9aa8dd",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/item-properties/templates-and-variants.md",
+    "title": "模板与变体",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/item-properties/templates-and-variants",
+    "source_file": "sources/wiki/original/adding-content/items/item-properties/templates-and-variants.md",
+    "source_sha256": "fc4bb3af5f311a349ec8683d008f187cc78c35ec80847e078410819caf1cc806",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/modern-items-creation.md",
+    "title": "1.21.4+：现代物品创建",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/modern-items-creation",
+    "source_file": "sources/wiki/original/adding-content/items/modern-items-creation.md",
+    "source_sha256": "7e37d072cc65517dfd98fff8904511059d56e075b96be2d52023c0ff401b5b5a",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/other-items-examples.md",
+    "title": "其他物品示例",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/other-items-examples",
+    "source_file": "sources/wiki/original/adding-content/items/other-items-examples.md",
+    "source_sha256": "c338143aa62d9c085162278c513a432b56e2496dc29c0500057313c4989e6336",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/other-items-examples/bundle.md",
+    "title": "收纳袋",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/other-items-examples/bundle",
+    "source_file": "sources/wiki/original/adding-content/items/other-items-examples/bundle.md",
+    "source_sha256": "ab6654f833306e37cdb1c41c4c513ca863b331ddf4f253150c47cd38b3865085",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/other-items-examples/custom-arrows.md",
+    "title": "自定义箭矢",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/other-items-examples/custom-arrows",
+    "source_file": "sources/wiki/original/adding-content/items/other-items-examples/custom-arrows.md",
+    "source_sha256": "45717452781bc1fad72562586f4ed220f289571dccb0f2114d86cdb319e7bba6",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/other-items-examples/magic-wand.md",
+    "title": "魔杖",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/other-items-examples/magic-wand",
+    "source_file": "sources/wiki/original/adding-content/items/other-items-examples/magic-wand.md",
+    "source_sha256": "988281af01341bd1ad581685c10836d04a6d5b31d1880c9eeb9cafa6d5654eee",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/spear.md",
+    "title": "长矛",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/spear",
+    "source_file": "sources/wiki/original/adding-content/items/spear.md",
+    "source_sha256": "eea9e5c1d5fdffdaa0c459ccb27e4faa2b33e847d87dafab8f47cbe21aa67382",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/tridents.md",
+    "title": "三叉戟",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/tridents",
+    "source_file": "sources/wiki/original/adding-content/items/tridents.md",
+    "source_sha256": "f58bbf9636aa4bb6dd525f1db0fb9a585441f1c49e288baddf8af1b02e6eac22",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/items/writable-book.md",
+    "title": "书与笔",
+    "source_url": "https://wiki.itemsadder.com/adding-content/items/writable-book",
+    "source_file": "sources/wiki/original/adding-content/items/writable-book.md",
+    "source_sha256": "c3f95b35438a49cdaf3d28dec97f70a6e4e662ac1f76afe019acb9d00b3fa3ba",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/loots.md",
+    "title": "战利品",
+    "source_url": "https://wiki.itemsadder.com/adding-content/loots",
+    "source_file": "sources/wiki/original/adding-content/loots.md",
+    "source_sha256": "53eff25e3f066f0b8f141a079529e7980972d61e041130b62c5a076dc8bc02a5",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/merge-resourcepacks.md",
+    "title": "合并资源包",
+    "source_url": "https://wiki.itemsadder.com/adding-content/merge-resourcepacks",
+    "source_file": "sources/wiki/original/adding-content/merge-resourcepacks.md",
+    "source_sha256": "76e2b1b676329dab191e196da714b590e8ad9f908206f72a2953b5ede9ec6f57",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/player-emotes.md",
+    "title": "玩家表情动作",
+    "source_url": "https://wiki.itemsadder.com/adding-content/player-emotes",
+    "source_file": "sources/wiki/original/adding-content/player-emotes.md",
+    "source_sha256": "9a28961b59259acc235a7149119e69ade2474ca8216815f1adc2be68cf0d269f",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/player-emotes/advanced-properties.md",
+    "title": "高级属性",
+    "source_url": "https://wiki.itemsadder.com/adding-content/player-emotes/advanced-properties",
+    "source_file": "sources/wiki/original/adding-content/player-emotes/advanced-properties.md",
+    "source_sha256": "607b5a0d71249323da6162404332e20ba7678bf921480f6b3c40e081dcd67ae2",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/player-emotes/animations.md",
+    "title": "动画",
+    "source_url": "https://wiki.itemsadder.com/adding-content/player-emotes/animations",
+    "source_file": "sources/wiki/original/adding-content/player-emotes/animations.md",
+    "source_sha256": "328d5d5015391b7a2f1ba5f145c05d800d87db64e5002318602cae9636cf2c46",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/player-emotes/particles.md",
+    "title": "粒子",
+    "source_url": "https://wiki.itemsadder.com/adding-content/player-emotes/particles",
+    "source_file": "sources/wiki/original/adding-content/player-emotes/particles.md",
+    "source_sha256": "41e7a54b0627b26e8f743fd557d7a91250d95e98dfd9b1a72143d560334996a5",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/player-emotes/sounds.md",
+    "title": "声音",
+    "source_url": "https://wiki.itemsadder.com/adding-content/player-emotes/sounds",
+    "source_file": "sources/wiki/original/adding-content/player-emotes/sounds.md",
+    "source_sha256": "c3794c9d23966151df743be5b99ef0e2c87b5b4c5e5c991262dd1387292e92cc",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/player-emotes/spawning.md",
+    "title": "生成",
+    "source_url": "https://wiki.itemsadder.com/adding-content/player-emotes/spawning",
+    "source_file": "sources/wiki/original/adding-content/player-emotes/spawning.md",
+    "source_sha256": "1f8c78706f55448788a030eefcbdfb37a8b2a842489d14223da9c8e9e6a0b7fe",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/player-emotes/spawning/citizens.md",
+    "title": "Citizens",
+    "source_url": "https://wiki.itemsadder.com/adding-content/player-emotes/spawning/citizens",
+    "source_file": "sources/wiki/original/adding-content/player-emotes/spawning/citizens.md",
+    "source_sha256": "97cd5476c034479e0840597bfbd002765777c183b6e6ae1e32090e894a3b73fd",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/player-emotes/spawning/command.md",
+    "title": "命令",
+    "source_url": "https://wiki.itemsadder.com/adding-content/player-emotes/spawning/command",
+    "source_file": "sources/wiki/original/adding-content/player-emotes/spawning/command.md",
+    "source_sha256": "86e31aa452dce192c29d9074bb5fb7f91b33e4f23d88801d27829351f272ff38",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/player-emotes/spawning/mythicmobs.md",
+    "title": "Mythicmobs",
+    "source_url": "https://wiki.itemsadder.com/adding-content/player-emotes/spawning/mythicmobs",
+    "source_file": "sources/wiki/original/adding-content/player-emotes/spawning/mythicmobs.md",
+    "source_sha256": "219d9ce0db0c39b946f7dd0b4f907d2063df3b7e1bb25a09e2b39e9e8128e561",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/recipes.md",
+    "title": "配方",
+    "source_url": "https://wiki.itemsadder.com/adding-content/recipes",
+    "source_file": "sources/wiki/original/adding-content/recipes.md",
+    "source_sha256": "379bd8a19bfac3aa445eda6d8a23ab543b164682b7075db564515c5abf2117d7",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/recipes/anvil-repair.md",
+    "title": "铁砧修复",
+    "source_url": "https://wiki.itemsadder.com/adding-content/recipes/anvil-repair",
+    "source_file": "sources/wiki/original/adding-content/recipes/anvil-repair.md",
+    "source_sha256": "080e9804fda249c3c0542b0801247d3d9ab00583a09c2138685b0a47464942a8",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/recipes/brewing.md",
+    "title": "酿造",
+    "source_url": "https://wiki.itemsadder.com/adding-content/recipes/brewing",
+    "source_file": "sources/wiki/original/adding-content/recipes/brewing.md",
+    "source_sha256": "60748233d3631ab2844de38e419dba9edd6ab88b687f5d39fe50d87e9fcced05",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/recipes/campfire-cooking.md",
+    "title": "营火烹饪",
+    "source_url": "https://wiki.itemsadder.com/adding-content/recipes/campfire-cooking",
+    "source_file": "sources/wiki/original/adding-content/recipes/campfire-cooking.md",
+    "source_sha256": "12bfdac1248a226747a27581f7b1b3897bb297424df94b87e7cfdc7e889cd310",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/recipes/cooking.md",
+    "title": "烹饪",
+    "source_url": "https://wiki.itemsadder.com/adding-content/recipes/cooking",
+    "source_file": "sources/wiki/original/adding-content/recipes/cooking.md",
+    "source_sha256": "03e6a6fbe6d624b32b15f163ff1730aef9e3701a59d1392345806412ff5fc25f",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/recipes/crafting.md",
+    "title": "合成",
+    "source_url": "https://wiki.itemsadder.com/adding-content/recipes/crafting",
+    "source_file": "sources/wiki/original/adding-content/recipes/crafting.md",
+    "source_sha256": "10b36f4d20efbfd5688ebfe507d569247ef1f7b0e39fe434c8fc8960be5a7e82",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/recipes/smithing.md",
+    "title": "锻造",
+    "source_url": "https://wiki.itemsadder.com/adding-content/recipes/smithing",
+    "source_file": "sources/wiki/original/adding-content/recipes/smithing.md",
+    "source_sha256": "577bd9aad7f397699d6a9ae9ecaa32c2b0e1b06ea77e730e4f91a0351ceb9b7d",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/recipes/stonecutter.md",
+    "title": "切石机",
+    "source_url": "https://wiki.itemsadder.com/adding-content/recipes/stonecutter",
+    "source_file": "sources/wiki/original/adding-content/recipes/stonecutter.md",
+    "source_sha256": "faea23068d78a5baecc0691311cb6dfd9f6ba2f133b337c790c99b284480fa77",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/scripting.md",
+    "title": "脚本",
+    "source_url": "https://wiki.itemsadder.com/adding-content/scripting",
+    "source_file": "sources/wiki/original/adding-content/scripting.md",
+    "source_sha256": "51772bc2c3057834a931b80c131d251bb31fb5f08aec95888acb75c26e7fdc44",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/scripting/java.md",
+    "title": "Java",
+    "source_url": "https://wiki.itemsadder.com/adding-content/scripting/java",
+    "source_file": "sources/wiki/original/adding-content/scripting/java.md",
+    "source_sha256": "5545970b92177610849a14e57a92a585f21780898a18fa33163f4053c7337f70",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/scripting/java/autocompletion.md",
+    "title": "自动补全",
+    "source_url": "https://wiki.itemsadder.com/adding-content/scripting/java/autocompletion",
+    "source_file": "sources/wiki/original/adding-content/scripting/java/autocompletion.md",
+    "source_sha256": "a523f4b6074c4e38f848fac0b72795329effa58fffadb8c20bb64b9092e40cbf",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/scripting/java/debug.md",
+    "title": "调试",
+    "source_url": "https://wiki.itemsadder.com/adding-content/scripting/java/debug",
+    "source_file": "sources/wiki/original/adding-content/scripting/java/debug.md",
+    "source_sha256": "9165c381c0f93075f36961c08f359404a8c9a77add12a29d6f0548514400c6f0",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/scripting/java/examples.md",
+    "title": "示例",
+    "source_url": "https://wiki.itemsadder.com/adding-content/scripting/java/examples",
+    "source_file": "sources/wiki/original/adding-content/scripting/java/examples.md",
+    "source_sha256": "db0a20ba00aec2644b09f7752eb2b9d0ce24800d4d874531ba9cbe349c294e13",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/scripting/jspp.md",
+    "title": "JSpp",
+    "source_url": "https://wiki.itemsadder.com/adding-content/scripting/jspp",
+    "source_file": "sources/wiki/original/adding-content/scripting/jspp.md",
+    "source_sha256": "51ebcf439ccc0f1682448ca4e386eaf1a16bd9da1696a7a2324362a8c5e6b781",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/scripting/jspp/autocompletion.md",
+    "title": "自动补全",
+    "source_url": "https://wiki.itemsadder.com/adding-content/scripting/jspp/autocompletion",
+    "source_file": "sources/wiki/original/adding-content/scripting/jspp/autocompletion.md",
+    "source_sha256": "00d1a2ee3fb245cbf6791b14de6cf0a8e40bc03e51ed59808934aeb8baf0075d",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/scripting/jspp/examples.md",
+    "title": "示例",
+    "source_url": "https://wiki.itemsadder.com/adding-content/scripting/jspp/examples",
+    "source_file": "sources/wiki/original/adding-content/scripting/jspp/examples.md",
+    "source_sha256": "45b0aa5fb9de2d8852d5440bd97fa80f09516fc6c5a3bfb05bd1d1616548db74",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/sounds.md",
+    "title": "音乐与声音",
+    "source_url": "https://wiki.itemsadder.com/adding-content/sounds",
+    "source_file": "sources/wiki/original/adding-content/sounds.md",
+    "source_sha256": "c9a91e032fff888eac38b611b3907315a3c72bc77bea2d3da92d8ab6d1e84404",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/sounds/jukebox-disc.md",
+    "title": "音乐唱片与唱片机",
+    "source_url": "https://wiki.itemsadder.com/adding-content/sounds/jukebox-disc",
+    "source_file": "sources/wiki/original/adding-content/sounds/jukebox-disc.md",
+    "source_sha256": "e579089b67557b595f390f9e174ba265900daa4579fbfb67c1926dd2646aa1e7",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/text-effects-1.17+.md",
+    "title": "文本效果",
+    "source_url": "https://wiki.itemsadder.com/adding-content/text-effects-1.17+",
+    "source_file": "sources/wiki/original/adding-content/text-effects-1.17+.md",
+    "source_sha256": "f31bad55cc89553dd9100437443ca711b2ee80f6e3c3b87804790d79ec530ccb",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/vehicles.md",
+    "title": "载具",
+    "source_url": "https://wiki.itemsadder.com/adding-content/vehicles",
+    "source_file": "sources/wiki/original/adding-content/vehicles.md",
+    "source_sha256": "74a49616071c17d8fb978c49466a967a346eec239e5d6db03f2dca230e3659c8",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/world-generation.md",
+    "title": "世界生成",
+    "source_url": "https://wiki.itemsadder.com/adding-content/world-generation",
+    "source_file": "sources/wiki/original/adding-content/world-generation.md",
+    "source_sha256": "62ff9fb36b6c0d8dbdcfe0e1ad7b92bbaae0598be79d50e83a37a4940be982b1",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/world-generation/cave-decorators.md",
+    "title": "洞穴装饰器",
+    "source_url": "https://wiki.itemsadder.com/adding-content/world-generation/cave-decorators",
+    "source_file": "sources/wiki/original/adding-content/world-generation/cave-decorators.md",
+    "source_sha256": "ef34f76dc1153014eca567616387b1583b704a45e45411cc5ee5239826248870",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/world-generation/furniture-populators.md",
+    "title": "家具生成器（ItemsAdderAdditions）",
+    "source_url": "https://wiki.itemsadder.com/adding-content/world-generation/furniture-populators",
+    "source_file": "sources/wiki/original/adding-content/world-generation/furniture-populators.md",
+    "source_sha256": "98aa4bb38de167920d0425abf08323bf4a25de1a3ede2f5ae2bffde296f14f67",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/world-generation/surface-populators.md",
+    "title": "地表生成器",
+    "source_url": "https://wiki.itemsadder.com/adding-content/world-generation/surface-populators",
+    "source_file": "sources/wiki/original/adding-content/world-generation/surface-populators.md",
+    "source_sha256": "6f3be0ff37a9d14ecde507278f13ce24956f31c24eaf61b3dc7e5757fa319dd2",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/world-generation/trees-populators.md",
+    "title": "树木生成器",
+    "source_url": "https://wiki.itemsadder.com/adding-content/world-generation/trees-populators",
+    "source_file": "sources/wiki/original/adding-content/world-generation/trees-populators.md",
+    "source_sha256": "d799fae8a0fcb0c42d048a2cc5618931ba9f356afd50d649acd9eaa2bbc3b72b",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/adding-content/world-generation/worlds-populators.md",
+    "title": "世界生成器（矿石）",
+    "source_url": "https://wiki.itemsadder.com/adding-content/world-generation/worlds-populators",
+    "source_file": "sources/wiki/original/adding-content/world-generation/worlds-populators.md",
+    "source_sha256": "8af4893745dfc74180861e6f34302630994fe443cc3a5b8a0897da7f72cd0585",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins.md",
+    "title": "与其他插件的兼容性",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins.md",
+    "source_sha256": "f5bbe9b5aec1e174cf76fa90b9d3c8db5e9b75ee41b81197a31a38467088e698",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible.md",
+    "title": "兼容",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible.md",
+    "source_sha256": "755c73c7eeb77e4faa54c48321bba825da8c2997ed927ca36c59b768187f442f",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/additionsplus.md",
+    "title": "AdditionsPlus",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/additionsplus",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/additionsplus.md",
+    "source_sha256": "8db858367dd036a3232bb388c39b244ea621d6e6c03e23397e5fc738474e9aa4",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/advancedenchantments.md",
+    "title": "AdvancedEnchantments",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/advancedenchantments",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/advancedenchantments.md",
+    "source_sha256": "e1b3d5cebe7532621f8bbcfc5768d5c74f0f331b6f724a0146d103c0b8d7cd3c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/advancedoregen.md",
+    "title": "AdvancedOreGen",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/advancedoregen",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/advancedoregen.md",
+    "source_sha256": "b04d77ba1a9c519ee376769ecf225e5df3e5636a2a27d30e340f13186741d7cf",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/animatedscoreboard.md",
+    "title": "AnimatedScoreboard",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/animatedscoreboard",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/animatedscoreboard.md",
+    "source_sha256": "18ad8339c1fa901e81b9676ba3b5bdb8e1b0fb75ed8de463e57e84b7ca6be16b",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/authme.md",
+    "title": "Authme",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/authme",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/authme.md",
+    "source_sha256": "82b9544e2f1941a5981586fe08b681b24bab497d14b2669f4d4eb534e44519e6",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/banitem.md",
+    "title": "BanItem",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/banitem",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/banitem.md",
+    "source_sha256": "092e310dfc8a3ff3bd1cae3235c112a6a1daab99f679e1c4d842579ac548d6de",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/bentobox.md",
+    "title": "BentoBox",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/bentobox",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/bentobox.md",
+    "source_sha256": "6560966c292487206bfd4735e95e84c0127fd305011943f8eb89969330b3e51c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/betonquest.md",
+    "title": "BetonQuest",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/betonquest",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/betonquest.md",
+    "source_sha256": "0bee0f6bc2b144b1606291228652da5dba5b46a93bd26a5a86e9752e239fd1ca",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/bossshop.md",
+    "title": "BossShop",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/bossshop",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/bossshop.md",
+    "source_sha256": "76c30013b310845ffa0a382bda79c3e24e6e2f9756d3c50ba74e7304ac5d46d8",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/chatcontrol-red.md",
+    "title": "ChatControl-Red",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/chatcontrol-red",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/chatcontrol-red.md",
+    "source_sha256": "296459f715ceb3dfd9920c818505f5fadc512db5f3d092ba49c51af8b78d39b8",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/citizens.md",
+    "title": "Citizens",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/citizens",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/citizens.md",
+    "source_sha256": "69d8737018e39a6e4a96a107436719c34ac09736b04445c6414ef1897a1ecff6",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/cluescrolls.md",
+    "title": "ClueScrolls",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/cluescrolls",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/cluescrolls.md",
+    "source_sha256": "b93a21ddf73b9d48a199503ee5e3650a7e58a35f7e742a0cb0655978cd7a2f6a",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/cmi.md",
+    "title": "CMI",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/cmi",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/cmi.md",
+    "source_sha256": "be76ef2deb025ced379f5d44d95e87728992f197673ee1b1801a307f6ea1b46d",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/cosmeticscore.md",
+    "title": "CosmeticsCore",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/cosmeticscore",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/cosmeticscore.md",
+    "source_sha256": "3f0de634b1419e790d8d87293f7df516e599d17939e43bc49e5ff54f0f3c0e29",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/craftenhance.md",
+    "title": "CraftEnhance",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/craftenhance",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/craftenhance.md",
+    "source_sha256": "7d5bc4092f8ae8c8945ac95636afeca6a628d217986447664e363600a38a3ae8",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/customcrafting.md",
+    "title": "CustomCrafting",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/customcrafting",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/customcrafting.md",
+    "source_sha256": "9ad4b62f6afc12ac50ba5da72527a332cf1cc34002752a9fcd5462810657507e",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/dailyshop.md",
+    "title": "DailyShop",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/dailyshop",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/dailyshop.md",
+    "source_sha256": "ef665839a8a7d7b0209ce3ad05ff1e96931c68d6cefd236739cddd2662533bb2",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/decentholograms.md",
+    "title": "DecentHolograms",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/decentholograms",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/decentholograms.md",
+    "source_sha256": "28b435ba78dc3d316ac3fa2c3784e9c4efe892268591bca2d717306bc56311e0",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/deluxemenu.md",
+    "title": "DeluxeMenu",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/deluxemenu",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/deluxemenu.md",
+    "source_sha256": "a2937302a989da7ebafdce2b89a6577c2a94a98627acfd5e945759b65a0ca181",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/dimensionsaddons.md",
+    "title": "DimensionsAddons",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/dimensionsaddons",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/dimensionsaddons.md",
+    "source_sha256": "e659d4a641298f94d30d645b5942e403d5dbb385a1649d310d0c6a7f0e95e454",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/ecoarmor.md",
+    "title": "EcoArmor",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/ecoarmor",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/ecoarmor.md",
+    "source_sha256": "076d82427f885151acf1b6618cbc6e15b54413f5b9f045e78509be159492f060",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/ecoenchants.md",
+    "title": "EcoEnchants",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/ecoenchants",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/ecoenchants.md",
+    "source_sha256": "fb4c93089cc9d9171409df7cb48570578fdd2188b5438662d1b1ff47c278a412",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/ecoitems.md",
+    "title": "EcoItems",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/ecoitems",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/ecoitems.md",
+    "source_sha256": "510fbbb1aef1c10c7855d0db4cb36733c7690ac16cc65f75be980b974e10a922",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/ecomobs.md",
+    "title": "EcoBosses",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/ecomobs",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/ecomobs.md",
+    "source_sha256": "fb8c9247558dd9742695be0f08f23ee57cce589956e1b4e47708733a54f46372",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/epicbackpacks.md",
+    "title": "EpicBackpacks",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/epicbackpacks",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/epicbackpacks.md",
+    "source_sha256": "88f2abd9bd24d0b258f44c11d3aecd4b1c1d9cefe358ecbbe9913918ca446014",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/excellentenchants.md",
+    "title": "ExcellentEnchants",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/excellentenchants",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/excellentenchants.md",
+    "source_sha256": "a2e56d19723f87a435d6b86443093ad9bd8ddbd03d0bc627eb6406fc1fc6bbc7",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/executableblocks.md",
+    "title": "ExecutableBlocks",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/executableblocks",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/executableblocks.md",
+    "source_sha256": "00f70498d8ac2c46315a3a7364829034f6e4360438ac101283a8e8f4a679e08d",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/executableitems.md",
+    "title": "ExecutableItems",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/executableitems",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/executableitems.md",
+    "source_sha256": "0076ae532f09187f8e5f2fbe96a94c7820e9e9d60c953de351042649b97404ad",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/fancywaystones.md",
+    "title": "FancyWaystones",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/fancywaystones",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/fancywaystones.md",
+    "source_sha256": "36436a7b6daf8c78d850fec97eece18eceb5678622fd14cb1a6c5b08af7e3c4a",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/graves.md",
+    "title": "Graves",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/graves",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/graves.md",
+    "source_sha256": "9c59dad733e9e6e8cf5365dc3e4f9374663bf901af305394a483ebb96ea8dff7",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/griefpreventionstickfix.md",
+    "title": "GriefPreventionStickFix",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/griefpreventionstickfix",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/griefpreventionstickfix.md",
+    "source_sha256": "3d7ca727ed4d091a1885383a008a20970ca90a99c4c6e38abf7fd7863ec9ec9a",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/headsanywhere.md",
+    "title": "HeadsAnywhere 兼容",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/headsanywhere",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/headsanywhere.md",
+    "source_sha256": "9a3e167d6b40964a1af7c6e0b89376268521dbbab4691a14946ecb6ab4c42cc6",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/hmccosmetics.md",
+    "title": "HMCCosmetics",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/hmccosmetics",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/hmccosmetics.md",
+    "source_sha256": "22ec4160f493fd25dcdc2928f0931385592e2a1c787e5dc5837f602f5aebe724",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/holographic-displays.md",
+    "title": "Holographic Displays",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/holographic-displays",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/holographic-displays.md",
+    "source_sha256": "a45a14f62d9f2cab5c6c1abaebfcffdd208b915dd6d08bcae0600a4219ea012e",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/hyperstones.md",
+    "title": "HyperStones",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/hyperstones",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/hyperstones.md",
+    "source_sha256": "763686aa9c8552fea198bd0a36b67bf7d50fa2e5be90ac06a1da3b12b28da210",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/interactionvisualizer.md",
+    "title": "InteractionVisualizer",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/interactionvisualizer",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/interactionvisualizer.md",
+    "source_sha256": "c7ee030b3355efc7181ce1dc10b123d229d5935bc93471e6ec124a84942e0ffc",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/interactivechat.md",
+    "title": "InteractiveChat",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/interactivechat",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/interactivechat.md",
+    "source_sha256": "1df71fde5ea6862f2118894a1c878ce6e971320c61af907a7f6163cf982306eb",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/iris.md",
+    "title": "Iris",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/iris",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/iris.md",
+    "source_sha256": "f1a58d53e55e70e1918d465fc040be1e727cd6f31deb863622e4d656a7eb6632",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/itembridge.md",
+    "title": "ItemBridge",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/itembridge",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/itembridge.md",
+    "source_sha256": "c9c463a23214c1905fbf299ad594b9088796dc6206cd5c1fa1a75bc6dfb4bef6",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/itemframeshops.md",
+    "title": "ItemFrameShops",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/itemframeshops",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/itemframeshops.md",
+    "source_sha256": "e19722e4a789a52fe6b7aa28d7620c561839d70c84399014c1b6afa09a1fecbc",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/lootchest.md",
+    "title": "LootChest",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/lootchest",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/lootchest.md",
+    "source_sha256": "f65496aefe8e501116f1c1b8ece26a33d442733b20b2793713b53344bd16c70d",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/mimic.md",
+    "title": "Mimic",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/mimic",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/mimic.md",
+    "source_sha256": "74ef5175eb15dfe162a1bb145c0484b176f6f9b2bf9b8003611d6218c0bb51e7",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/mmoitems.md",
+    "title": "MMOItems",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/mmoitems",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/mmoitems.md",
+    "source_sha256": "50b25a579ac89a33c763daf2271436558350ef1ea0b0f546f5ca0cbed74ce99a",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/mmoitems/fix-blocks-problem.md",
+    "title": "修复方块问题",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/mmoitems/fix-blocks-problem",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/mmoitems/fix-blocks-problem.md",
+    "source_sha256": "118bf6fdbd1a3da16814e097bb68b89c4c711599ae0d78029c1376c45716265e",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/modelengine.md",
+    "title": "ModelEngine",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/modelengine",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/modelengine.md",
+    "source_sha256": "c115efa55e3c6e56830194578c83a9e342788aeac3710201ad2e952e07dbfb23",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/mythicmobs.md",
+    "title": "Mythicmobs",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/mythicmobs",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/mythicmobs.md",
+    "source_sha256": "50ea5d8b9b1a156ed3c252b65a0473d917c632689805ab6d1a56dd3826e84f54",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/nova.md",
+    "title": "Nova",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/nova",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/nova.md",
+    "source_sha256": "5ebd2661cc7285bb17250e32728a677111499a457d6187b851d1ddd50e86f244",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/ore-regenerator-1.md",
+    "title": "JetsPrisonMines",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/ore-regenerator-1",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/ore-regenerator-1.md",
+    "source_sha256": "57c2cbb8f0f49b8afcb6b4d7e09c4a6e019e5479734ffe9327e8555bf7fbdb2c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/ore-regenerator.md",
+    "title": "Ore Regenerator",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/ore-regenerator",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/ore-regenerator.md",
+    "source_sha256": "a1b14e7050903d9fb393cbc43e151372eea8a3725574822f96d7669af0737c81",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/ouroboros-mines.md",
+    "title": "Ouroboros-Mines",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/ouroboros-mines",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/ouroboros-mines.md",
+    "source_sha256": "9cbb99276725b0cbf9624ad95da6e8bdaff189f531a7390706eece590ce606f6",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/realisticworldgenerator.md",
+    "title": "RealisticWorldGenerator",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/realisticworldgenerator",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/realisticworldgenerator.md",
+    "source_sha256": "148f026fa2176274bd85a82d5721bbf6f7ba2d87bf82a05f4245b8bf969eb1c5",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/recipe-control.md",
+    "title": "Recipe Control",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/recipe-control",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/recipe-control.md",
+    "source_sha256": "da9c1561b25d72c499aab8a2c40af7f1c401d54518a0ca83d3aa52dbeb94f16a",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/reforges.md",
+    "title": "Reforges",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/reforges",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/reforges.md",
+    "source_sha256": "e88682f28dfe21c10307199d8ef7327d845e4817196bf66349f5d5ece197f384",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/rpg-chest-premium.md",
+    "title": "RPG Chest Premium",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/rpg-chest-premium",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/rpg-chest-premium.md",
+    "source_sha256": "263022965d8d190be9a4e37d43d2590a75d8f5851c55356e503c7ef5ea0c01dc",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/rpgbank.md",
+    "title": "RPGBank",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/rpgbank",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/rpgbank.md",
+    "source_sha256": "7e7c3686444b6f260cf27e5f50f15ee3d4102281ea24b378f6c08759a309c8f6",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/rpginventory.md",
+    "title": "RPGInventory",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/rpginventory",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/rpginventory.md",
+    "source_sha256": "6e58cea3e46e09d48ec866612ff85058da193b8efa77786f02525ccff07353dc",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/rpgmoney.md",
+    "title": "RPGMoney",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/rpgmoney",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/rpgmoney.md",
+    "source_sha256": "906954182f1d5e5cb318695393948c555ce39351de3f150a525a2d8564eb2a83",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/scoreboard.md",
+    "title": "Scoreboard-revision",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/scoreboard",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/scoreboard.md",
+    "source_sha256": "977252b891202cb4ca137376bd862aebc4dcb701f30ca2b748e96205615cb12b",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/shopgui+.md",
+    "title": "ShopGUI+",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/shopgui+",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/shopgui+.md",
+    "source_sha256": "01e5144a490de298888cd338876f32e842531e50448397c956f8da00a3d591a8",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/skinsrestorer.md",
+    "title": "SkinsRestorer",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/skinsrestorer",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/skinsrestorer.md",
+    "source_sha256": "dfd229bd2506062930b0d319840a4ad2f9654ce4b97b415c2da41dca6311c449",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/slimefun4.md",
+    "title": "Slimefun4",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/slimefun4",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/slimefun4.md",
+    "source_sha256": "901daad3061a8a465a685a27c1e9736f317a234cbf695e6fc6a2b80d9ee5fa22",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/space.md",
+    "title": "Space",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/space",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/space.md",
+    "source_sha256": "a6fa74510438b365a46e45855110e3adb06da5dc1ae71e27a707680067ac33ad",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/spartan-anti-cheat.md",
+    "title": "Spartan Anti Cheat",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/spartan-anti-cheat",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/spartan-anti-cheat.md",
+    "source_sha256": "a5b815260c35b4175d40e21af28e4fbd1153da740c9601c64a3cb536c3ce1aea",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/stattrackers.md",
+    "title": "StatTrackers",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/stattrackers",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/stattrackers.md",
+    "source_sha256": "561fd44280ae49482b41621e523df08417cfce1c7f1ee81a46c44c3cf9dec7d3",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/tab.md",
+    "title": "TAB",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/tab",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/tab.md",
+    "source_sha256": "67f3205d1c0a0c0eb9988745b4ff16752ed3d42acaf0b15845b1599d71e2d540",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/talismans.md",
+    "title": "Talismans",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/talismans",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/talismans.md",
+    "source_sha256": "e42c6ce28dd5f23fdab3eb80af5210756465a91f114a1ce5afea83297ef0141f",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/trmenu.md",
+    "title": "TrMenu",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/trmenu",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/trmenu.md",
+    "source_sha256": "9cb02f2b046373d59efb663e52f7b8de484c73b01e5a921dc84c8361380d947d",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/valhallammo.md",
+    "title": "ValhallaMMO",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/valhallammo",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/valhallammo.md",
+    "source_sha256": "fe9b432ed6a068bc431c47b5d920cacfad1c5fed9067a4e8b3f88ab500239135",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/valhallatrinkets.md",
+    "title": "ValhallaTrinkets",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/valhallatrinkets",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/valhallatrinkets.md",
+    "source_sha256": "df3a412db12e185647d80b70e8924cd3be9869ec11cbc116b6b2493f6e04ce5a",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/wailat.md",
+    "title": "Wailat",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/wailat",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/wailat.md",
+    "source_sha256": "210fe355eb70781c6e323232482a1a7c59bd5b996e0a3a0d1d59671ca5fd5a2a",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/worldedit.md",
+    "title": "WorldEdit",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/worldedit",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/worldedit.md",
+    "source_sha256": "adab8ceeb5fece2b308e0b7bbb8f81b807fa2cdd64dc937215d91f6842932a0e",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/compatible/worldguard-flags.md",
+    "title": "WorldGuard",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/compatible/worldguard-flags",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/compatible/worldguard-flags.md",
+    "source_sha256": "6c519c173160e30573ea2f395bf6458644134780fe30a200b9223044a3950298",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/compatibility-with-other-plugins/not-compatible.md",
+    "title": "不兼容",
+    "source_url": "https://wiki.itemsadder.com/compatibility-with-other-plugins/not-compatible",
+    "source_file": "sources/wiki/original/compatibility-with-other-plugins/not-compatible.md",
+    "source_sha256": "4593073d54648199880423a38625573a400b5e037f772228077265292a277349",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/contribute.md",
+    "title": "贡献",
+    "source_url": "https://wiki.itemsadder.com/contribute",
+    "source_file": "sources/wiki/original/contribute.md",
+    "source_sha256": "3b98d7d329da0d95ef3a06a89dbfa65efb54cb41f8bd619b428a6555911ca128",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/contribute/edit-the-english-wiki.md",
+    "title": "编辑英文 wiki",
+    "source_url": "https://wiki.itemsadder.com/contribute/edit-the-english-wiki",
+    "source_file": "sources/wiki/original/contribute/edit-the-english-wiki.md",
+    "source_sha256": "ab9dce5d34cecd24586ea2ffad2c2b9247dccd1b856e7f94ac468e0857867f27",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/contribute/preview-wiki-changes.md",
+    "title": "预览更改",
+    "source_url": "https://wiki.itemsadder.com/contribute/preview-wiki-changes",
+    "source_file": "sources/wiki/original/contribute/preview-wiki-changes.md",
+    "source_sha256": "87a962f66fd1fe13cdc2d13ad756cb1ac1ae166aa133961e9c07c9ac0b672e2f",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/contribute/translate-this-wiki.md",
+    "title": "翻译此 wiki",
+    "source_url": "https://wiki.itemsadder.com/contribute/translate-this-wiki",
+    "source_file": "sources/wiki/original/contribute/translate-this-wiki.md",
+    "source_sha256": "fabe5938f8530ed1e167632406e3b1d0d59e8ed3e2aa16a72526bd930f75f09c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/developers/branding.md",
+    "title": "ItemsAdder 标识",
+    "source_url": "https://wiki.itemsadder.com/developers/branding",
+    "source_file": "sources/wiki/original/developers/branding.md",
+    "source_sha256": "d4d57b9d84b0ed27ea6cd31d3f443d3e702d0f14021f1a90a6cb1c69c7ec5947",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq.md",
+    "title": "常见问题",
+    "source_url": "https://wiki.itemsadder.com/faq",
+    "source_file": "sources/wiki/original/faq.md",
+    "source_sha256": "fc3c0c02d75595a0d68e72e795a45440583e11cd90cc06efbb1ac29c48ea8036",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/1.21.5+-remove-inventory-highlight-slot.md",
+    "title": "1.21.5+ 移除物品栏槽位高亮",
+    "source_url": "https://wiki.itemsadder.com/faq/1.21.5+-remove-inventory-highlight-slot",
+    "source_file": "sources/wiki/original/faq/1.21.5+-remove-inventory-highlight-slot.md",
+    "source_sha256": "e5231b6875787ca6f661c3d3376f18b0d73f42c27755b3d6916ef54e3897be67",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/armors-issues.md",
+    "title": "盔甲问题",
+    "source_url": "https://wiki.itemsadder.com/faq/armors-issues",
+    "source_file": "sources/wiki/original/faq/armors-issues.md",
+    "source_sha256": "13121c1b6e00cbc588c20a133bc7c9556256c44c440c304592643e761e608ced",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/armors-issues/armor-glow-outline-bug.md",
+    "title": "盔甲发光轮廓问题",
+    "source_url": "https://wiki.itemsadder.com/faq/armors-issues/armor-glow-outline-bug",
+    "source_file": "sources/wiki/original/faq/armors-issues/armor-glow-outline-bug.md",
+    "source_sha256": "61c2ee787be4350b142fa2427881dc24f8d6bbf023bf1b9c3ed5c1b39206ebd7",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/armors-issues/armor-unable-to-fit-try-a-lower-resolution-resourcepack.md",
+    "title": "盔甲 - Unable to fit - try a lower resolution resourcepack",
+    "source_url": "https://wiki.itemsadder.com/faq/armors-issues/armor-unable-to-fit-try-a-lower-resolution-resourcepack",
+    "source_file": "sources/wiki/original/faq/armors-issues/armor-unable-to-fit-try-a-lower-resolution-resourcepack.md",
+    "source_sha256": "b4733969bea41cc825f1dfa51f606be75378d89d5815ee3f6d17e3d180f3e804",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/armors-issues/armors-animation-and-emission-not-working.md",
+    "title": "动画和发光效果不起作用",
+    "source_url": "https://wiki.itemsadder.com/faq/armors-issues/armors-animation-and-emission-not-working",
+    "source_file": "sources/wiki/original/faq/armors-issues/armors-animation-and-emission-not-working.md",
+    "source_sha256": "868fdd5a8f8b3469a47b6afa94b8d3e7733f5f935813255d08e67d5776435243",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/armors-issues/armors-not-working-packsquash.md",
+    "title": "使用 PackSquash 后盔甲不起作用",
+    "source_url": "https://wiki.itemsadder.com/faq/armors-issues/armors-not-working-packsquash",
+    "source_file": "sources/wiki/original/faq/armors-issues/armors-not-working-packsquash.md",
+    "source_sha256": "edb09b7f9d50483396e16e0e7fe1dbe4d15f037a6a01a72ac866f8ef22d8c971",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/armors-issues/armors-textures-not-working-with-shaders-mod.md",
+    "title": "盔甲纹理与光影模组不兼容",
+    "source_url": "https://wiki.itemsadder.com/faq/armors-issues/armors-textures-not-working-with-shaders-mod",
+    "source_file": "sources/wiki/original/faq/armors-issues/armors-textures-not-working-with-shaders-mod.md",
+    "source_sha256": "ebb14d6ee41ea3c59efa3a884b73c2ebb1c7f1e9791e4a3ac44c0486650c0438",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/armors-issues/leather-armor-texture-overwritten.md",
+    "title": "皮革盔甲纹理有金属质感",
+    "source_url": "https://wiki.itemsadder.com/faq/armors-issues/leather-armor-texture-overwritten",
+    "source_file": "sources/wiki/original/faq/armors-issues/leather-armor-texture-overwritten.md",
+    "source_sha256": "609a160ecacdd1dfc066e7290644d2a46a870bbcb7d627d81bf91cf31e5718cd",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/block-particles-not-playing.md",
+    "title": "不播放方块粒子效果",
+    "source_url": "https://wiki.itemsadder.com/faq/block-particles-not-playing",
+    "source_file": "sources/wiki/original/faq/block-particles-not-playing.md",
+    "source_sha256": "333a5df68b2967f8b97fbae1143fa0974ac68ecbaf20f8459749b47f641cff20",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/bungeecord-velocity.md",
+    "title": "Bungeecord / Velocity",
+    "source_url": "https://wiki.itemsadder.com/faq/bungeecord-velocity",
+    "source_file": "sources/wiki/original/faq/bungeecord-velocity.md",
+    "source_sha256": "bd1ab057170a3b992888885bc22fbe1fabc487fdc4e0942106678084fd952c61",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/bungeecord-velocity/remove-pack-on-server-change.md",
+    "title": "切换服务器时移除资源包",
+    "source_url": "https://wiki.itemsadder.com/faq/bungeecord-velocity/remove-pack-on-server-change",
+    "source_file": "sources/wiki/original/faq/bungeecord-velocity/remove-pack-on-server-change.md",
+    "source_sha256": "2d393f040d36802f540db99212becfeacb8f25afe6a5600058d8b3cd4d8857d3",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/bungeecord-velocity/single-resourcepack-bungeecord.md",
+    "title": "在 BungeeCord 和 Velocity 上使用单个资源包",
+    "source_url": "https://wiki.itemsadder.com/faq/bungeecord-velocity/single-resourcepack-bungeecord",
+    "source_file": "sources/wiki/original/faq/bungeecord-velocity/single-resourcepack-bungeecord.md",
+    "source_sha256": "2b900c60493bbf4e8ef8a17c2f2916a28d12635098f80faf2fc1d35ba2c859f4",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/bungeecord-velocity/single-resourcepack-multiple-server.md",
+    "title": "Bungeecord 单一资源包不同功能",
+    "source_url": "https://wiki.itemsadder.com/faq/bungeecord-velocity/single-resourcepack-multiple-server",
+    "source_file": "sources/wiki/original/faq/bungeecord-velocity/single-resourcepack-multiple-server.md",
+    "source_sha256": "35b6fede6bd01516487251b4fd4d8308266cd4dce91379fe5063698e4e90f3d7",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/cant-change-noteblock-note.md",
+    "title": "无法更改音符盒音高",
+    "source_url": "https://wiki.itemsadder.com/faq/cant-change-noteblock-note",
+    "source_file": "sources/wiki/original/faq/cant-change-noteblock-note.md",
+    "source_sha256": "ce9187d6d94aa011b0ee771fefe63ac86c668ed9bbc5fa3c04bff713e183da3c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/cant-extract-the-resourcepack-file.md",
+    "title": "无法解压资源包文件",
+    "source_url": "https://wiki.itemsadder.com/faq/cant-extract-the-resourcepack-file",
+    "source_file": "sources/wiki/original/faq/cant-extract-the-resourcepack-file.md",
+    "source_sha256": "c7749c0aee1bbeae4f3daa2dadab2696c0c9144d00b09fda0575e8b90b9d448e",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/cant-place-itemframe-on-furniture.md",
+    "title": "无法在家具上放置物品展示框",
+    "source_url": "https://wiki.itemsadder.com/faq/cant-place-itemframe-on-furniture",
+    "source_file": "sources/wiki/original/faq/cant-place-itemframe-on-furniture.md",
+    "source_sha256": "e17a45db2dffd6c823de5cd0d032cc2de251dc1a68f0cc066d65a3e6ec248581",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/cant-write-in-chat-and-cant-move.md",
+    "title": "无法在聊天中输入和无法移动",
+    "source_url": "https://wiki.itemsadder.com/faq/cant-write-in-chat-and-cant-move",
+    "source_file": "sources/wiki/original/faq/cant-write-in-chat-and-cant-move.md",
+    "source_sha256": "53975424e7df55237f9521bfca08c1aed39e6ff46f03d14955c549980592e2d7",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/citizens-npc-doesnt-rotate-head.md",
+    "title": "Citizens NPC 不旋转头部",
+    "source_url": "https://wiki.itemsadder.com/faq/citizens-npc-doesnt-rotate-head",
+    "source_file": "sources/wiki/original/faq/citizens-npc-doesnt-rotate-head.md",
+    "source_sha256": "033e56fb9f926dcdc15b4d41741708b756fccbbee700e1047a0dafe7d64a539f",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/common-errors.md",
+    "title": "Blockbench 错误",
+    "source_url": "https://wiki.itemsadder.com/faq/common-errors",
+    "source_file": "sources/wiki/original/faq/common-errors.md",
+    "source_sha256": "38396a19585d6dae486f7983086f61f5d3d1bc6f5b7d4137a17c486718c633a3",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/completionexception-z-stitching.md",
+    "title": "CompletionException: z: Stitching",
+    "source_url": "https://wiki.itemsadder.com/faq/completionexception-z-stitching",
+    "source_file": "sources/wiki/original/faq/completionexception-z-stitching.md",
+    "source_sha256": "8eab3e97da05eef50ff34a5c5112907c6496b37f12890a6263a929ebf4f033af",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/disable-blocks.md",
+    "title": "禁用方块",
+    "source_url": "https://wiki.itemsadder.com/faq/disable-blocks",
+    "source_file": "sources/wiki/original/faq/disable-blocks.md",
+    "source_sha256": "f7eb71d6e6db6176980f2aa227436eb675c6af17b49daf0cd65a24d70ff51c69",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/emotes-issues.md",
+    "title": "表情动作问题",
+    "source_url": "https://wiki.itemsadder.com/faq/emotes-issues",
+    "source_file": "sources/wiki/original/faq/emotes-issues.md",
+    "source_sha256": "9775f142936176e1ac95b551ce172044acd1f4865f50eec189ac32b920579c33",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/emotes-with-more-joins.md",
+    "title": "🦴 表情动作与更多关节",
+    "source_url": "https://wiki.itemsadder.com/faq/emotes-with-more-joins",
+    "source_file": "sources/wiki/original/faq/emotes-with-more-joins.md",
+    "source_sha256": "53ccfcb839d62fdb8c92869bb4f62ad814414680f7c238216de6cde293efb640",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/failed-to-download-minecraft-assets.md",
+    "title": "下载 Minecraft 资源失败",
+    "source_url": "https://wiki.itemsadder.com/faq/failed-to-download-minecraft-assets",
+    "source_file": "sources/wiki/original/faq/failed-to-download-minecraft-assets.md",
+    "source_sha256": "16fe24bcf1930bcdb5b5ffb56c424007e3095aa4d57ec6beaad0f465f6bb6311",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/failed-to-load-required-shader-programs.md",
+    "title": "无法加载所需的着色器程序（Failed to load required shader programs）",
+    "source_url": "https://wiki.itemsadder.com/faq/failed-to-load-required-shader-programs",
+    "source_file": "sources/wiki/original/faq/failed-to-load-required-shader-programs.md",
+    "source_sha256": "c013d09a995d8ce6836daeaa95593311d1860f4de14425ad80040a556a18c915",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/fill-thirst-mana-bar.md",
+    "title": "口渴/魔力条",
+    "source_url": "https://wiki.itemsadder.com/faq/fill-thirst-mana-bar",
+    "source_file": "sources/wiki/original/faq/fill-thirst-mana-bar.md",
+    "source_sha256": "4a994ccdd486fde03ff4071e0047160f64ce53c90656828524266e3af4f9f7ef",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/geyser.md",
+    "title": "Geyser",
+    "source_url": "https://wiki.itemsadder.com/faq/geyser",
+    "source_file": "sources/wiki/original/faq/geyser.md",
+    "source_sha256": "ab41552ede2073b8c7b19db20c528e370b7d13d44e87531a51f544b4b6488774",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/glitched-blocks.md",
+    "title": "方块显示异常",
+    "source_url": "https://wiki.itemsadder.com/faq/glitched-blocks",
+    "source_file": "sources/wiki/original/faq/glitched-blocks.md",
+    "source_sha256": "2b6cbc4aa69dea80e3e5ac0aca640f1ceecdb1ea640af13f14a02b53e4f0c403",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/graphics-and-item_model-on-1.21.3-and-lower.md",
+    "title": "1.21.3 及更旧版本上的 graphics 和 item\\_model",
+    "source_url": "https://wiki.itemsadder.com/faq/graphics-and-item_model-on-1.21.3-and-lower",
+    "source_file": "sources/wiki/original/faq/graphics-and-item_model-on-1.21.3-and-lower.md",
+    "source_sha256": "36242189958f8f5eb1c9fb3232fdf861c30592fd87c364f861875de2d00f75b4",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/i-cant-find-any-mineral-ore.md",
+    "title": "我找不到任何矿物/矿石",
+    "source_url": "https://wiki.itemsadder.com/faq/i-cant-find-any-mineral-ore",
+    "source_file": "sources/wiki/original/faq/i-cant-find-any-mineral-ore.md",
+    "source_sha256": "fb5807fdb18c5b7ec66bc9ee3cb9946d55885314d92f6cd3edbd39c954783e08",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/i-cant-remove-furnitures-and-vehicles.md",
+    "title": "无法移除家具和载具",
+    "source_url": "https://wiki.itemsadder.com/faq/i-cant-remove-furnitures-and-vehicles",
+    "source_file": "sources/wiki/original/faq/i-cant-remove-furnitures-and-vehicles.md",
+    "source_sha256": "633d9c864095c7c369cf55799a48592a99f6d309dfa0bc1bed7cd172afe722e4",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/i-cant-see-emoji-guis-huds-etc..md",
+    "title": "我看不到表情、自定义界面、HUD等",
+    "source_url": "https://wiki.itemsadder.com/faq/i-cant-see-emoji-guis-huds-etc.",
+    "source_file": "sources/wiki/original/faq/i-cant-see-emoji-guis-huds-etc..md",
+    "source_sha256": "df446f818a3e427c3103da40cf77584a4cc453ad6b9bec67ed48b18c00807d3c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/i-removed-blocks-but-keep-saying-that-i-used-all-the-ids.md",
+    "title": "我删除了方块，但系统仍然提示我使用了所有的ID",
+    "source_url": "https://wiki.itemsadder.com/faq/i-removed-blocks-but-keep-saying-that-i-used-all-the-ids",
+    "source_file": "sources/wiki/original/faq/i-removed-blocks-but-keep-saying-that-i-used-all-the-ids.md",
+    "source_sha256": "904a0df4ce643895492b9e573a37b720232325aedb4254370b82f280a18807a8",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/i-see-crisp-textures-far-away.md",
+    "title": "我看到远处的纹理不连贯！",
+    "source_url": "https://wiki.itemsadder.com/faq/i-see-crisp-textures-far-away",
+    "source_file": "sources/wiki/original/faq/i-see-crisp-textures-far-away.md",
+    "source_sha256": "92ad66dfcf6ff9be4e185328b0ef89589c5f5949ff51347deae92d6128ddc5bd",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/identify-why-textures-are-not-shown.md",
+    "title": "资源包未正确加载",
+    "source_url": "https://wiki.itemsadder.com/faq/identify-why-textures-are-not-shown",
+    "source_file": "sources/wiki/original/faq/identify-why-textures-are-not-shown.md",
+    "source_sha256": "fe4bafbddf3263999daf6a0619a16e4b87dc7ba6ab16763214ba6964e915e6ed",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/itemsadder-v4.md",
+    "title": "ItemsAdder v4",
+    "source_url": "https://wiki.itemsadder.com/faq/itemsadder-v4",
+    "source_file": "sources/wiki/original/faq/itemsadder-v4.md",
+    "source_sha256": "c7147901093a2c5959d9b9217fe68e908e9f16b97da4bb298c7e5713962f4333",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/jukeboxes-do-not-play-on-join-or-teleport.md",
+    "title": "加入或传送后唱片机不播放",
+    "source_url": "https://wiki.itemsadder.com/faq/jukeboxes-do-not-play-on-join-or-teleport",
+    "source_file": "sources/wiki/original/faq/jukeboxes-do-not-play-on-join-or-teleport.md",
+    "source_sha256": "0aca37fadd6d060d7b13e129c93329bcf1730c107d7fb65fa9e1c03fc82abbf4",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/kick-flight-on-join.md",
+    "title": "加入时由于飞行被踢出",
+    "source_url": "https://wiki.itemsadder.com/faq/kick-flight-on-join",
+    "source_file": "sources/wiki/original/faq/kick-flight-on-join.md",
+    "source_sha256": "28ea1b385c82455f546d455f159f7c4ad9af350df2b3c3fd7aebd5a7a24aeb1a",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/liquids-issues.md",
+    "title": "液体问题",
+    "source_url": "https://wiki.itemsadder.com/faq/liquids-issues",
+    "source_file": "sources/wiki/original/faq/liquids-issues.md",
+    "source_sha256": "6bd4fdd182f2e9b7f3c59de23486fc9342723fbb6dd5e35407b9172a5f74c05c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/modelengine-vs-itemsadder.md",
+    "title": "ModelEngine 与 ItemsAdder",
+    "source_url": "https://wiki.itemsadder.com/faq/modelengine-vs-itemsadder",
+    "source_file": "sources/wiki/original/faq/modelengine-vs-itemsadder.md",
+    "source_sha256": "7434492ed0b96d27f8bf457696889d54e097b3ecc1b0413c21722e260d7add89",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/multiple-atlases-used-in-model.md",
+    "title": "1.21.11 - 模型使用了多个纹理图集（Multiple atlases used in model）",
+    "source_url": "https://wiki.itemsadder.com/faq/multiple-atlases-used-in-model",
+    "source_file": "sources/wiki/original/faq/multiple-atlases-used-in-model.md",
+    "source_sha256": "66420d6257608bed950ec6a481127e808a37f2a04d558b6556c04f0a1b5a83f5",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/placed-heads-texture-glitched.md",
+    "title": "放置的头颅纹理出现故障",
+    "source_url": "https://wiki.itemsadder.com/faq/placed-heads-texture-glitched",
+    "source_file": "sources/wiki/original/faq/placed-heads-texture-glitched.md",
+    "source_sha256": "c143a44a4c8386d5fa9969fc97cfd2b2670affe7f3889b957f7d0f8aef86abb2",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/player-is-using-a-different-protocol-version.md",
+    "title": "玩家使用了不同的协议版本",
+    "source_url": "https://wiki.itemsadder.com/faq/player-is-using-a-different-protocol-version",
+    "source_file": "sources/wiki/original/faq/player-is-using-a-different-protocol-version.md",
+    "source_sha256": "ff8300124270920157f614f35171a1126f36e517e8576ec6bca103749d69d5dd",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/plugin-doesnt-work.md",
+    "title": "插件不起作用",
+    "source_url": "https://wiki.itemsadder.com/faq/plugin-doesnt-work",
+    "source_file": "sources/wiki/original/faq/plugin-doesnt-work.md",
+    "source_sha256": "e6ddad616107ffb1b365e3e1faf94a59c65aa78ef0e5642c32d5fdca2c9b070a",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/recipes-book-problems.md",
+    "title": "配方书问题",
+    "source_url": "https://wiki.itemsadder.com/faq/recipes-book-problems",
+    "source_file": "sources/wiki/original/faq/recipes-book-problems.md",
+    "source_sha256": "ae1926bb6e47b59b8cc4a71894bd458edb36d352b4db2be77da83bffc98564ee",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/rectangle-character.md",
+    "title": "矩形字符",
+    "source_url": "https://wiki.itemsadder.com/faq/rectangle-character",
+    "source_file": "sources/wiki/original/faq/rectangle-character.md",
+    "source_sha256": "f026da81af2bab01b252e4acb44c258de4b36d3159e3db692291a54a629754c5",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/removing-default-content.md",
+    "title": "移除默认内容",
+    "source_url": "https://wiki.itemsadder.com/faq/removing-default-content",
+    "source_file": "sources/wiki/original/faq/removing-default-content.md",
+    "source_sha256": "2f2ebd90ba2f6e1da9fcef27b0ebf17f7bf8fe4838ed554b5d94edc24e0adeea",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/slabs-stairs-tridents-elytra-etc..md",
+    "title": "台阶、楼梯、门等",
+    "source_url": "https://wiki.itemsadder.com/faq/slabs-stairs-tridents-elytra-etc.",
+    "source_file": "sources/wiki/original/faq/slabs-stairs-tridents-elytra-etc..md",
+    "source_sha256": "9a7cb539f4e81eee7710fc12e5e672061b7d2d598237d1f9a40768623ecb9f21",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq/turkish-computer-errors.md",
+    "title": "🇹🇷 🇹🇷 土耳其语电脑错误",
+    "source_url": "https://wiki.itemsadder.com/faq/turkish-computer-errors",
+    "source_file": "sources/wiki/original/faq/turkish-computer-errors.md",
+    "source_sha256": "6492a51a57e9f0621e442b1da7879b861420fa3883e4c91d09f27d67c549ba75",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/help/tos.md",
+    "title": "服务条款",
+    "source_url": "https://wiki.itemsadder.com/help/tos",
+    "source_file": "sources/wiki/original/help/tos.md",
+    "source_sha256": "610c6bc2f7b2a7e244217a6d723d67aab496e93f1c6937983cfe59860b9e3023",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/index.md",
+    "title": "欢迎界面",
+    "source_url": "https://wiki.itemsadder.com/",
+    "source_file": "sources/wiki/original/index.md",
+    "source_sha256": "e67fd511554dcd121e9872a197a2dfa7adbe4f5f8d60292692a274f9f5e1ad60",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/other/bulk-colorize-images.md",
+    "title": "批量着色图片",
+    "source_url": "https://wiki.itemsadder.com/other/bulk-colorize-images",
+    "source_file": "sources/wiki/original/other/bulk-colorize-images.md",
+    "source_sha256": "7e56f11651ffb8f60e1c7762d3012b818691a949e188e50bf68d18a157af26fc",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/other/custom-player-stats.md",
+    "title": "自定义玩家属性",
+    "source_url": "https://wiki.itemsadder.com/other/custom-player-stats",
+    "source_file": "sources/wiki/original/other/custom-player-stats.md",
+    "source_sha256": "2a8cc18b37b5e61f637529dc1bcad10a1a0247a5e3d2e9954b37b695ad4b65f5",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/other/hide-scoreboard-numbers-1.17+.md",
+    "title": "隐藏记分板背景和数字",
+    "source_url": "https://wiki.itemsadder.com/other/hide-scoreboard-numbers-1.17+",
+    "source_file": "sources/wiki/original/other/hide-scoreboard-numbers-1.17+.md",
+    "source_sha256": "9d052fe0ebe553ac6a63ff961733f6a227422e47fdbf137c6d8e935d210ae1ce",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/other/minecraft-hosting.md",
+    "title": "Minecraft 服务器租赁",
+    "source_url": "https://wiki.itemsadder.com/other/minecraft-hosting",
+    "source_file": "sources/wiki/original/other/minecraft-hosting.md",
+    "source_sha256": "59e354929b0c2d7675bacc5077b357c1dacc2577b7f5cdb2f1c86b3b0c6672b9",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/other/pack-overlays.md",
+    "title": "资源包覆盖层",
+    "source_url": "https://wiki.itemsadder.com/other/pack-overlays",
+    "source_file": "sources/wiki/original/other/pack-overlays.md",
+    "source_sha256": "90f46c4d5ca748ed39c45734547d56fb469b01598726ff9a5e06a23513b48aff",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/other/resourcepack-protection.md",
+    "title": "保护资源包",
+    "source_url": "https://wiki.itemsadder.com/other/resourcepack-protection",
+    "source_file": "sources/wiki/original/other/resourcepack-protection.md",
+    "source_sha256": "119ff91c9d1b337a589b2606e0055aa3e2893d365ae6e54258392dc7b36601a3",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/other/videos-by-users.md",
+    "title": "展示",
+    "source_url": "https://wiki.itemsadder.com/other/videos-by-users",
+    "source_file": "sources/wiki/original/other/videos-by-users.md",
+    "source_sha256": "17e254d186d4d58dc74afec1bd058e29ef2cc8ef5a75c826fcab0087a6e8448f",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/beginners.md",
+    "title": "新手入门",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/beginners",
+    "source_file": "sources/wiki/original/plugin-usage/beginners.md",
+    "source_sha256": "0d73d41a4aa1abd4bd9fbcddf8e3910744cf72b35ec7b699f4ce5fd0cd50f963",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/beginners/configs-and-resourcepack.md",
+    "title": "内容文件夹",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/beginners/configs-and-resourcepack",
+    "source_file": "sources/wiki/original/plugin-usage/beginners/configs-and-resourcepack.md",
+    "source_sha256": "516a866088b97d1a4676eb768ce04f02776d9f4a0e4001c2fd498fce6f7d5c9d",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/beginners/fast-resourcepack-tips.md",
+    "title": "资源包提示",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/beginners/fast-resourcepack-tips",
+    "source_file": "sources/wiki/original/plugin-usage/beginners/fast-resourcepack-tips.md",
+    "source_sha256": "d91595be58a8d8f3239a0cbf32aacd679925f945b59505c39b261197a0d8b05d",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/beginners/files-editor.md",
+    "title": "文件编辑器",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/beginners/files-editor",
+    "source_file": "sources/wiki/original/plugin-usage/beginners/files-editor.md",
+    "source_sha256": "062c0a3475b585695fb0087f4fa05854fc6e236430dee425a32ff31c50ac5978",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/beginners/my-first-block.md",
+    "title": "我的第一个方块",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/beginners/my-first-block",
+    "source_file": "sources/wiki/original/plugin-usage/beginners/my-first-block.md",
+    "source_sha256": "91aaf738ea5ff7eff9a12e2ee76a4982cfce188f3c8713912ff7ea1b770eeb23",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/beginners/my-first-bow.md",
+    "title": "我的第一把弓",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/beginners/my-first-bow",
+    "source_file": "sources/wiki/original/plugin-usage/beginners/my-first-bow.md",
+    "source_sha256": "d91eb5105782eaf4c7976a1a28997428990a76d8f8790a4daef29728a25f3e0e",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/beginners/sword.md",
+    "title": "我的第一把剑",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/beginners/sword",
+    "source_file": "sources/wiki/original/plugin-usage/beginners/sword.md",
+    "source_sha256": "6dfda1ca75d12229113783f23bde755632e3f863753934df1c5ce58e72fcdb35",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/beginners/text-formatting.md",
+    "title": "文本格式",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/beginners/text-formatting",
+    "source_file": "sources/wiki/original/plugin-usage/beginners/text-formatting.md",
+    "source_sha256": "6577d7a396508ad96e1fafc24ec9f3edbd6fbe00fa902dd5940b22975423f74e",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/beginners/video-tutorials.md",
+    "title": "视频教程",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/beginners/video-tutorials",
+    "source_file": "sources/wiki/original/plugin-usage/beginners/video-tutorials.md",
+    "source_sha256": "7e25b8a3e1b74c9a52613adac00c2c69d853784a4a78b6303de20247d89d569c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/first-install.md",
+    "title": "首次安装",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/first-install",
+    "source_file": "sources/wiki/original/plugin-usage/first-install.md",
+    "source_sha256": "566d18855818226420bd4e81480a3db824b51d1d6688522daff08be9b6059376",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/plugin-configuration.md",
+    "title": "插件配置",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/plugin-configuration",
+    "source_file": "sources/wiki/original/plugin-usage/plugin-configuration.md",
+    "source_sha256": "5f92fca8baea4d40aae1166fa0f71b7964e8f66d0cf47279ccf3c69079d21125",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/plugin-configuration/commands.md",
+    "title": "命令",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/plugin-configuration/commands",
+    "source_file": "sources/wiki/original/plugin-usage/plugin-configuration/commands.md",
+    "source_sha256": "80d6131f230c5e565a2ca034ab7538cbe7543263c1416ac6343d131c6e4dcca2",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/plugin-configuration/commands/iaconfig.md",
+    "title": "iaconfig",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/plugin-configuration/commands/iaconfig",
+    "source_file": "sources/wiki/original/plugin-usage/plugin-configuration/commands/iaconfig.md",
+    "source_sha256": "c0573254300baaa6a4cc74bfc710f92f3651bf5c98ede85a2de24a398857c17d",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/plugin-configuration/commands/iaimage.md",
+    "title": "iaimage",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/plugin-configuration/commands/iaimage",
+    "source_file": "sources/wiki/original/plugin-usage/plugin-configuration/commands/iaimage.md",
+    "source_sha256": "014ec95af1c32da6ab3df2a85038bccd5a786457a29ba29a2c753742dd8ff2e6",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/plugin-configuration/commands/iarename.md",
+    "title": "iarename",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/plugin-configuration/commands/iarename",
+    "source_file": "sources/wiki/original/plugin-usage/plugin-configuration/commands/iarename.md",
+    "source_sha256": "7a74f7509149e4dc4ea9a1366293cde96bd962c0003e67957a29778aa9d9b319",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/plugin-configuration/commands/use-vanilla-selectors-in-commands.md",
+    "title": "在命令中使用原版选择器",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/plugin-configuration/commands/use-vanilla-selectors-in-commands",
+    "source_file": "sources/wiki/original/plugin-usage/plugin-configuration/commands/use-vanilla-selectors-in-commands.md",
+    "source_sha256": "b3a2f90d7b620637f2629f876d2f59a69cc81fa2153cccb8621b82f191e786b3",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/plugin-configuration/items-updater.md",
+    "title": "物品更新器",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/plugin-configuration/items-updater",
+    "source_file": "sources/wiki/original/plugin-usage/plugin-configuration/items-updater.md",
+    "source_sha256": "aa3d00719265b97b7742e3bfaebe4a9e2d235157c98b308af552ec4c1a49c294",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/plugin-configuration/languages.md",
+    "title": "语言",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/plugin-configuration/languages",
+    "source_file": "sources/wiki/original/plugin-usage/plugin-configuration/languages.md",
+    "source_sha256": "e74e1b6c91e317590676a0d088aada91ec03ef605c834f50000949fe9af61fb0",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/plugin-configuration/permissions.md",
+    "title": "权限",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/plugin-configuration/permissions",
+    "source_file": "sources/wiki/original/plugin-usage/plugin-configuration/permissions.md",
+    "source_sha256": "73679428231a8fb4db3db98f756bc3ceefd8abe034060a01be87c9971af293e8",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/plugin-configuration/recipes-menu.md",
+    "title": "配方菜单",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/plugin-configuration/recipes-menu",
+    "source_file": "sources/wiki/original/plugin-usage/plugin-configuration/recipes-menu.md",
+    "source_sha256": "9ec719c6e80ca7411a160b0187e2291d5a3b3a623e0cd2c7f39a7849c78dceda",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/plugin-configuration/resourcepack-hosting.md",
+    "title": "资源包托管",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/plugin-configuration/resourcepack-hosting",
+    "source_file": "sources/wiki/original/plugin-usage/plugin-configuration/resourcepack-hosting.md",
+    "source_sha256": "b888ff2538cb38f0160eb31d859a9dcb7c72a344bd5409b9739f60f3618b3b7f",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/plugin-configuration/resourcepack-hosting/dropbox.md",
+    "title": "DropBox",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/plugin-configuration/resourcepack-hosting/dropbox",
+    "source_file": "sources/wiki/original/plugin-usage/plugin-configuration/resourcepack-hosting/dropbox.md",
+    "source_sha256": "928993ea622ab237bd970649add6073dcc4f7df5fd0a77c1013e0f6e91001bc5",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/plugin-configuration/resourcepack-hosting/google-drive.md",
+    "title": "Google Drive",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/plugin-configuration/resourcepack-hosting/google-drive",
+    "source_file": "sources/wiki/original/plugin-usage/plugin-configuration/resourcepack-hosting/google-drive.md",
+    "source_sha256": "8d01c6cde2b3291bfbf7ce335c771a6219bc10e0eacadfeb32fdd463b28f5454",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/plugin-configuration/resourcepack-hosting/lobfile.md",
+    "title": "LobFile 托管",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/plugin-configuration/resourcepack-hosting/lobfile",
+    "source_file": "sources/wiki/original/plugin-usage/plugin-configuration/resourcepack-hosting/lobfile.md",
+    "source_sha256": "9252539a7fad5093d7dad651a5bb9643631f0e824705c0db6772915feede1b4c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/plugin-configuration/resourcepack-hosting/no-host.md",
+    "title": "不托管",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/plugin-configuration/resourcepack-hosting/no-host",
+    "source_file": "sources/wiki/original/plugin-usage/plugin-configuration/resourcepack-hosting/no-host.md",
+    "source_sha256": "0a460180880fee97175e61963114c749553bd79f037f4975928df21c16585bdc",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/plugin-configuration/resourcepack-hosting/onedrive.md",
+    "title": "OneDrive",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/plugin-configuration/resourcepack-hosting/onedrive",
+    "source_file": "sources/wiki/original/plugin-usage/plugin-configuration/resourcepack-hosting/onedrive.md",
+    "source_sha256": "198757569ed1475025f742e2da6e9de1b65d0af17d06b011824c4d283544bca0",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/plugin-configuration/resourcepack-hosting/self-hosting.md",
+    "title": "自托管",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/plugin-configuration/resourcepack-hosting/self-hosting",
+    "source_file": "sources/wiki/original/plugin-usage/plugin-configuration/resourcepack-hosting/self-hosting.md",
+    "source_sha256": "88091a772e9a2920d25b284cd247246efd86c25cfd46c26bef0ce70396952a56",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/plugin-configuration/resourcepack-hosting/simple-self-host.md",
+    "title": "简易自托管",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/plugin-configuration/resourcepack-hosting/simple-self-host",
+    "source_file": "sources/wiki/original/plugin-usage/plugin-configuration/resourcepack-hosting/simple-self-host.md",
+    "source_sha256": "288fda94e4c8f086c96ade7177e493dbe2cd812ffcbba7464468dc3ada531efd",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/plugin-usage/plugin-configuration/resourcepack-prompt-message-1.17+.md",
+    "title": "资源包提示信息",
+    "source_url": "https://wiki.itemsadder.com/plugin-usage/plugin-configuration/resourcepack-prompt-message-1.17+",
+    "source_file": "sources/wiki/original/plugin-usage/plugin-configuration/resourcepack-prompt-message-1.17+.md",
+    "source_sha256": "e412586d5d8aa825ae74dd4c9f4a987e56f2b90008751d5eb3a2a2ffce6ef71f",
+    "translation_review": "reviewed"
+  }
+]

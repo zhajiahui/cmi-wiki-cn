@@ -1,0 +1,53 @@
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://meta.denizenscript.com/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+
+<s>==Triggers==
+*0.7 introduces several new core triggers: Damage, Proximity, and Location
+*Not all triggers are turned on by default for performance reasons. see [[Denizen/0.7/In_Game_Commands]] for more info.
+
+==Commands==
+
+All text-type commands (CHAT, NARRATE, etc) must have the text in quotes. Single or double is fine.
+
+<pre> Example: - CHAT "Use double quotes if your text has an apostrophe, y'all." </pre>
+
+EXECUTE must also have the command and arguments in single- or double- quotes
+
+<pre> Example: - EXECUTE ASSERVER "warp someplace" </pre>
+
+
+GIVE and TAKE must specify the quantity with QTY:# or qty:#
+
+<pre> Example: - GIVE DIAMOND QTY:10</pre>
+
+
+RESPAWN no longer exists. Use TELEPORT instead with the DENIZEN argument, this will spawn the Denizen at the specified location.
+
+<pre> Example: - TELEPORT DENIZEN 'BOOKMARK:name' </pre>
+
+PLAYERTASK no longer exists. Use a Location Trigger
+
+PRESS no longer exists. Use SWITCH for buttons and levers.
+
+Any command that takes a bookmark must specify BOOKMARK:. Also any command that takes a bookmark can use bookmarks from other Denizens by specifying 'BOOKMARK:Denizen Name:BookmarkName'
+:If the Denizen name has a space in it the quotes are '''required'''
+<pre> Example: - TELEPORT DENIZEN 'BOOKMARK:bob jones:bobshouse' </pre></s>

@@ -1,0 +1,54 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Multiple Traits",
+    "pageid": 177,
+    "revid": 1989,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>All Citizens 2.0 behavior is dictated by Traits.\n</p><p>Traits can be applied to the NPCs and will handle events and interaction in specific ways.\n</p><p>The cool thing is a NPC can have multiple traits assigned to it. Including multiple <a href=\"/Characters\" title=\"Characters\">Character</a> Traits.\n</p><p>An example is the <a href=\"/index.php?title=Wallet&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Wallet (page does not exist)\">Wallet</a> Trait. This trait allows the NPC to have and use economy money. This Trait is useless by itself but works when the NPC is also assigned the <a href=\"/Denizen\" title=\"Denizen\">Denizen</a> or <a href=\"/Trader\" class=\"mw-redirect\" title=\"Trader\">Trader</a> trait.\n</p><p><a href=\"/Characters\" title=\"Characters\">Characters</a> are really just complicated Traits.\n</p><p>Assigning multiple <a href=\"/Characters\" title=\"Characters\">Characters</a> traits can lead to powerful results, but also potential conflicts. \n</p><p>NPCs with the <a href=\"/Denizen\" title=\"Denizen\">Denizen</a> trait should use the commands for that trait to turn on and off specific interactions that may cause conflict.\n</p><p>For example if you want to make a <a href=\"/Blacksmith\" title=\"Blacksmith\">Blacksmith</a> that wanders throughout the town using Denizen <a href=\"/index.php?title=Activities&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Activities (page does not exist)\">Activities</a> to dictate his movement, you would want to turn off <a href=\"/index.php?title=Click_Triggers&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Click Triggers (page does not exist)\">Click Triggers</a> in the <a href=\"/Denizen\" title=\"Denizen\">Denizen</a> Trait so that right-clicking the <a href=\"/Blacksmith\" title=\"Blacksmith\">Blacksmith</a> would perform the proper <a href=\"/Blacksmith\" title=\"Blacksmith\">Blacksmith</a> commands and not trigger any <a href=\"/Denizen\" title=\"Denizen\">Denizen</a> scripts.\n</p><p><br />\nUsing the command\n</p>\n<dl><dd><b>/trait [traitname]</b></dd></dl>\n<p>Will toggle the trait on and off for the selected NPC.\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145850\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.018 seconds\nReal time usage: 0.030 seconds\nPreprocessor visited node count: 1/1000000\nRevision size: 1192/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 1/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 97c1ff63-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Blacksmith"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Trader"
+      },
+      {
+        "ns": 0,
+        "*": "Wallet"
+      },
+      {
+        "ns": 0,
+        "*": "Activities"
+      },
+      {
+        "ns": 0,
+        "*": "Click Triggers"
+      }
+    ],
+    "images": [],
+    "sections": []
+  }
+}

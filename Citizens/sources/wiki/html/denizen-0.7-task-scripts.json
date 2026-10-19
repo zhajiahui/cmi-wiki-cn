@@ -1,0 +1,62 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Denizen/0.7/Task Scripts",
+    "pageid": 195,
+    "revid": 5239,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://one.denizenscript.com/denizen/cmds/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://one.denizenscript.com/denizen/cmds/denizen/vids\">Tutorial Videos</a> on youtube or the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p>\n<s><div style=\"margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;\">\n<p>Task scripts are just a simple list of <a href=\"/Denizen/0.7/Interact_Scripts/Commands\" title=\"Denizen/0.7/Interact Scripts/Commands\">Script Commands</a>. They can be called by the RUNTASK command, the IF command, or the TASK activity. They are useful for creating a set of commands that is used in multiple places.\n</p>\n</div></s><s><div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#General_layout\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">General layout</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Using_the_RUNTASK_command\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Using the RUNTASK command</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Using_the_TASK_Activity\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Using the TASK Activity</span></a></li>\n</ul>\n</div>\n</s><s><div class=\"mw-heading mw-heading4\"><h4 id=\"General_layout\">General layout</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Task_Scripts&amp;action=edit&amp;section=1\" title=\"Edit section: General layout\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><div style=\"margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;\">\n<pre>'Name of script':  \n  Type: Task    \n  Script:        \n  - COMMAND1\n  - COMMAND2\n  - etc...\n</pre>\n</div></s><s><div class=\"mw-heading mw-heading4\"><h4 id=\"Using_the_RUNTASK_command\">Using the RUNTASK command</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Task_Scripts&amp;action=edit&amp;section=2\" title=\"Edit section: Using the RUNTASK command\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><div style=\"margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;\"> \n<p>Imagine a scenario where you'd like to check a single outcome from multiple sources. Say, for instance, you have multiple 'quests' that all have the same outcome. You could check the completion for each quest, or, you could have all the quests call a Task Script and check against that.\n</p><p>This is a very basic example for something that can in theory be very complex. Imagination, hoooo!\n</p>\n<pre>'Apple Reward': \n  Type: Task    \n  Script:       \n  - NARRATE \"You've received some APPLES. Nice!\"\n  - GIVE APPLE QTY:10\n  - FINISH\n\n'Apple Quest 1':\n  Type: Interact\n  Requirements:\n    Mode: All\n    List:\n    - -FINISHED Apple Reward\n  Steps:\n    '1':\n      Click Trigger:\n        Script:\n        - CHAT \"Welcome to my house, have some apples!\"\n        - RUNTASK 'SCRIPT:Apple Reward'\n  \n'Apple Quest 2':\n  Type: Interact\n  Requirements:\n    Mode: All\n    List:\n    - -FINISHED Apple Reward\n  Steps:\n    '1':\n      Click Trigger:\n        Script:\n        - CHAT \"Welcome to my orchard, have some apples!\"\n        - RUNTASK 'SCRIPT:Apple Reward'\n</pre>\n</div></s><s><div class=\"mw-heading mw-heading4\"><h4 id=\"Using_the_TASK_Activity\">Using the TASK Activity</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Task_Scripts&amp;action=edit&amp;section=3\" title=\"Edit section: Using the TASK Activity\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><p>This is a special case, as Activities occur without a player. Therefor any commands that require a Player will not function in a Task Script called from the activity.\nMany script commands have a DENIZEN modifier to run the command on the NPC instead of the Player, and these should always be used when calling a Task Script from the TASK Activity.\n</p></s><s><pre>WalkHome: \n  Type: Task    \n  Script:       \n  - CHAT NOPLAYER \"Welp.. time to head home!\"\n  - WALKTO BOOKMARK:Home\n\nGoHomeActivity:\n  Type: Activity\n  Requirements:\n    Mode: None\n  Activities:\n    List:\n    - 1 TASK SCRIPT:WalkHome REPEATS:0\n  </pre></s>\n<!-- \nNewPP limit report\nCached time: 20261019145827\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.019 seconds\nReal time usage: 0.035 seconds\nPreprocessor visited node count: 23/1000000\nRevision size: 3209/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1021/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 8a0c79e5-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen/0.7/Interact Scripts/Commands"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "4",
+        "line": "General layout",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Denizen/0.7/Task_Scripts",
+        "byteoffset": 1134,
+        "anchor": "General_layout",
+        "linkAnchor": "General_layout"
+      },
+      {
+        "toclevel": 1,
+        "level": "4",
+        "line": "Using the RUNTASK command",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Denizen/0.7/Task_Scripts",
+        "byteoffset": 1360,
+        "anchor": "Using_the_RUNTASK_command",
+        "linkAnchor": "Using_the_RUNTASK_command"
+      },
+      {
+        "toclevel": 1,
+        "level": "4",
+        "line": "Using the TASK Activity",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "Denizen/0.7/Task_Scripts",
+        "byteoffset": 2540,
+        "anchor": "Using_the_TASK_Activity",
+        "linkAnchor": "Using_the_TASK_Activity"
+      }
+    ],
+    "showtoc": ""
+  }
+}

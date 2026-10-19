@@ -1,0 +1,85 @@
+{
+  "project": "pStats",
+  "snapshot": {
+    "date": "2026-10-19",
+    "timezone": "Asia/Taipei",
+    "manifest_generated_at": "2026-10-19T15:53:03.135Z"
+  },
+  "version": {
+    "supplied_sdk_version": null,
+    "frontend_asset": "index-D_QVsYIR.js"
+  },
+  "scope": "全部已发现官方非 API 文档；纯 API/SDK 接口参考排除，混合页面仅按列明片段排除。",
+  "candidate_urls": [
+    "https://pstats.devs.beer/",
+    "https://pstats.devs.beer/sitemap.xml"
+  ],
+  "candidates": [
+    {
+      "url": "https://pstats.devs.beer/",
+      "status": "unavailable",
+      "reason": "HTTP 200 的统计前端，不是 Wiki。已检查首页 HTML 和公开 JS 路由，未发现独立文档、安装配置手册、命令或帮助目录。",
+      "source_file": "sources/wiki/discovery/00.html",
+      "http_status": 200,
+      "source_sha256": "132b8f6824b6a1f56ab1617faa6b3052c096b26813abcb7dd5122a1b90cc6fcc"
+    },
+    {
+      "url": "https://pstats.devs.beer/sitemap.xml",
+      "status": "unavailable",
+      "reason": "HTTP 404，未提供文档站点地图。",
+      "source_file": "sources/wiki/discovery/02.xml",
+      "http_status": 404,
+      "source_sha256": "d04070663c4992eedba4c1342b6f1003377a030d648e2459a052e24987c0c80c"
+    }
+  ],
+  "excluded_api": [],
+  "unavailable": [
+    {
+      "url": "https://pstats.devs.beer/",
+      "status": "unavailable",
+      "reason": "HTTP 200 的统计前端，不是 Wiki。已检查首页 HTML 和公开 JS 路由，未发现独立文档、安装配置手册、命令或帮助目录。",
+      "source_file": "sources/wiki/discovery/00.html",
+      "http_status": 200,
+      "source_sha256": "132b8f6824b6a1f56ab1617faa6b3052c096b26813abcb7dd5122a1b90cc6fcc"
+    },
+    {
+      "url": "https://pstats.devs.beer/sitemap.xml",
+      "status": "unavailable",
+      "reason": "HTTP 404，未提供文档站点地图。",
+      "source_file": "sources/wiki/discovery/02.xml",
+      "http_status": 404,
+      "source_sha256": "d04070663c4992eedba4c1342b6f1003377a030d648e2459a052e24987c0c80c"
+    }
+  ],
+  "actual_page_count": 0,
+  "translated_pages": 0,
+  "untranslated_available_non_api_pages": 0,
+  "all_discovered_candidates_classified": true,
+  "independent_wiki_found": false,
+  "assets": {
+    "ledger": "sources/wiki/assets.json",
+    "archived_source_entries": 0,
+    "unique_local_files": 0,
+    "unavailable": []
+  },
+  "validation": {
+    "status": "passed",
+    "report": "sources/wiki/validation.json",
+    "errors": [],
+    "warnings": []
+  },
+  "documentation_structure": "统计前端；未发现独立官方文档。",
+  "frontend_routes_observed": [
+    "/",
+    "plugins",
+    "plugins/:slug",
+    "admin/login",
+    "admin",
+    "audit",
+    "mock",
+    "plugins/:pluginId",
+    "security",
+    "users",
+    "*"
+  ]
+}

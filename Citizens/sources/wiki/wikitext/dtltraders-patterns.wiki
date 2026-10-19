@@ -1,0 +1,516 @@
+== '''NOTICE''' ==
+Patterns have not been implemented into vr. 3.0 yet!
+
+== Overview ==
+
+Every pattern is saved in the ''patterns.yml'' file located in the plugin's main folder. (plugins/DtlCitizensTrader)<br /> You can change the directory in the configuration file.
+
+
+There are 2 types of patterns:
+
+- ''Pricing patterns''<br>
+Sets item prices and pricing tiers.
+
+- ''Item patterns''<br>
+Will add certain items to the trader's stock, also has item tiers.
+
+
+Incoming a third pattern type with 2.6 (long way to it):
+
+- ''random patterns'' 
+Those will allow to set maximum items a trader can have showd in stock (like 10 of 20), also set timeouts, "spawn chance", amount and price chances that will be used on each item when it's timeout passed.
+
+
+All patterns are based on one syntax that is used to build item scripts. Those scripts are used by each pattern type, just each pattern type uses it in another way.
+
+== Item syntax ==
+
+This sound horrible, I know, but it's best way to explain it in two words :D 
+
+Every item within a pattern is build up by some keywords and flags you may use, many options you can't achieve with a basic trader setup are here allowed, but you need to be careful.
+
+=== Keywords ===
+
+<div style="width:100%;vertical-align:top">
+<div style="display:table;width:100%">
+<div style="display:table-cell;width:160px;border-right:solid 1px black"><p style="margin:0px;padding:2px 10px;"><b>Item setting</b></p>
+</div>
+<div style="display:table-cell;width:110px;border-right:solid 1px"><p style="margin:0px;padding:2px 10px;"><b>Keyword</b></p>
+</div>
+<div style="display:table-cell;width:220px;border-right:solid 1px"><p style="margin:0px;padding:2px 10px;"><b>Price pattern</b></p>
+</div>
+<div style="display:table-cell;width:280px;border-right:solid 1px black"><p style="margin:0px;padding:2px 10px;"><b>Item pattern</b></p>
+</div>
+<div style="display:table-cell;width:120px;"><p style="margin:0px;padding:2px 10px;"><b>Example</b></p>
+</div>
+</div>
+
+<!-- base -->
+<div style="display:table;width:100%">
+<div style="display:table-cell;width:160px;background-color: #F9F9F9;border-top:solid 1px"><!-- Cell -->
+<p style="margin:0px;padding:2px 10px"><code style="margin:0px;display:block">ID and data</code></p>
+</div>
+<div style="display:table-cell;width:110px;background-color: #F9F9F9;border-top:solid 1px"><!-- Cell -->
+<p style="margin:0px;padding:2px 10px"><code style="margin:0px;display:block">id[:data]</code></p>
+</div>
+<div style="display:table-cell;width:220px;background-color: #F9F9F9;border-top:solid 1px"><!-- Cell -->
+<p style="margin:0px;padding:2px 10px"><code style="margin:0px;display:block;">Looks for items with the given id and/or data, <b>priority: 130</b></code></p>
+</div>
+<div style="display:table-cell;width:280px;background-color: #F9F9F9;border-top:solid 1px"><!-- Cell -->
+<p style="margin:0px;padding:2px 10px"><code style="margin:0px;display:block;">Sets the item id, and when set also the data <b>default: required!</b></code></p>
+</div>
+<div style="display:table-cell;width:120px;background-color: #F9F9F9;border-top:solid 1px"><!-- Cell -->
+<p style="margin:0px;padding:2px 10px"><code style="margin:0px;display:block">wool:14</code></p>
+</div>
+</div>
+
+<!-- name -->
+<div style="display:table;width:100%">
+<div style="display:table-cell;width:160px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Name</code></p>
+</div>
+<div style="display:table-cell;width:110px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">n</code></p>
+</div>
+<div style="display:table-cell;width:220px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">matches the item by the given name, <strong>priority: 300</strong></code></p>
+</div>
+<div style="display:table-cell;width:280px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Sets the item name, <b>default: nothing</b></code></p>
+</div>
+<div style="display:table-cell;width:120px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">n:A Item</code></p>
+</div>
+</div>
+
+<!-- amount -->
+<div style="display:table;width:100%">
+<div style="display:table-cell;width:160px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px;padding:2px 10px"><code style="margin:0px;display:block">Item amount</code></p>
+</div>
+<div style="display:table-cell;width:110px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px;padding:2px 10px"><code style="margin:0px;display:block">a</code></p>
+</div>
+<div style="display:table-cell;width:220px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px;padding:2px 10px"><code style="margin:0px;display:block;">Looks for items with the given amount, <b>priority: 5</b></code></p>
+</div>
+<div style="display:table-cell;width:280px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px;padding:2px 10px"><code style="margin:0px;display:block;">Sets one or more amounts for an item, <b>default: 1</b></code></p>
+</div>
+<div style="display:table-cell;width:120px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px;padding:2px 10px"><code style="margin:0px;display:block">a:1,2,4</code></p>
+</div>
+</div>
+
+<!-- durability -->
+<div style="display:table;width:100%">
+<div style="display:table-cell;width:160px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Durability</code></p>
+</div>
+<div style="display:table-cell;width:110px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">d</code></p>
+</div>
+<div style="display:table-cell;width:220px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Looks for items with the given or higher durability, <b>priority: 45</b></code></p>
+</div>
+<div style="display:table-cell;width:280px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Sets the items durability, <b>default: 0</b></code></p>
+</div>
+<div style="display:table-cell;width:120px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">d:22</code></p>
+</div>
+</div>
+
+<!-- tier -->
+<div style="display:table;width:100%">
+<div style="display:table-cell;width:160px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Tier</code></p>
+</div>
+<div style="display:table-cell;width:110px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">t</code></p>
+</div>
+<div style="display:table-cell;width:220px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Matches items only in the given <strong>item</strong> tier, <b>priority: 25</b></code></p>
+</div>
+<div style="display:table-cell;width:280px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">not used</code></p>
+</div>
+<div style="display:table-cell;width:120px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">t:vip_tier</code></p>
+</div>
+</div>
+
+<!-- color -->
+<div style="display:table;width:100%">
+<div style="display:table-cell;width:160px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Color</code></p>
+</div>
+<div style="display:table-cell;width:110px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">c</code></p>
+</div>
+<div style="display:table-cell;width:220px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">matches by the given color, <strong>priority: 5</strong>, <strong>leather armor only</strong></code></p>
+</div>
+<div style="display:table-cell;width:280px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Sets the color for a leather armor item. Uses RGB values separated by <strong>^</strong>, <strong>leather armor only</strong></code></p>
+</div>
+<div style="display:table-cell;width:120px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">c:255^210^24</code></p>
+</div>
+</div>
+
+<!-- enchantment -->
+<div style="display:table;width:100%">
+<div style="display:table-cell;width:160px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Enchants</code></p>
+</div>
+<div style="display:table-cell;width:110px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">e</code></p>
+</div>
+<div style="display:table-cell;width:220px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Checks if the item has the same enchants, <strong>priority: 5</strong></code></p>
+</div>
+<div style="display:table-cell;width:280px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Sets enchantments for an item, <b>default: none</b></code></p>
+</div>
+<div style="display:table-cell;width:120px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">e:smite/3</code></p>
+</div>
+</div>
+
+<!-- Stored enchants -->
+<div style="display:table;width:100%">
+<div style="display:table-cell;width:160px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Stored enchants</code></p>
+</div>
+<div style="display:table-cell;width:110px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">se</code></p>
+</div>
+<div style="display:table-cell;width:220px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Checks if the item has the same stored enchants, <strong>priority: 5</strong></code></p>
+</div>
+<div style="display:table-cell;width:280px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Sets enchantments for a enchanted book item, <b>default: none</b>, <strong>enchanted book only</strong></code></p>
+</div>
+<div style="display:table-cell;width:120px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">se:smite/7</code></p>
+</div>
+</div>
+
+<!-- price -->
+<div style="display:table;width:100%">
+<div style="display:table-cell;width:160px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Price</code></p>
+</div>
+<div style="display:table-cell;width:110px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">p</code></p>
+</div>
+<div style="display:table-cell;width:220px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Sets the price for each matching item, overriding lower priority matches</code></p>
+</div>
+<div style="display:table-cell;width:280px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Sets the price for the given item, <b>default: pattern price</b></code></p>
+</div>
+<div style="display:table-cell;width:120px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">p:12.22</code></p>
+</div>
+</div>
+
+<!-- multiplier -->
+<div style="display:table;width:100%">
+<div style="display:table-cell;width:160px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Multiplier</code></p>
+</div>
+<div style="display:table-cell;width:110px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">m</code></p>
+</div>
+<div style="display:table-cell;width:220px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Sets the multiplier for each matching item, overriding lower priority matches</code></p>
+</div>
+<div style="display:table-cell;width:280px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Sets the multiplier for the given item, <b>default: pattern multiplier</b></code></p>
+</div>
+<div style="display:table-cell;width:120px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">m:0.9</code></p>
+</div>
+</div>
+
+<!-- fireworks -->
+<div style="display:table;width:100%">
+<div style="display:table-cell;width:160px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Firework</code></p>
+</div>
+<div style="display:table-cell;width:110px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">f</code></p>
+</div>
+<div style="display:table-cell;width:220px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">not used</code></p>
+</div>
+<div style="display:table-cell;width:280px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Sets firework data for a firework item, <strong>firework only</strong></code></p>
+</div>
+<div style="display:table-cell;width:120px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">---</code></p>
+</div>
+</div>
+
+<!-- global limit -->
+<div style="display:table;width:100%">
+<div style="display:table-cell;width:160px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Global limit</code></p>
+</div>
+<div style="display:table-cell;width:110px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">gl</code></p>
+</div>
+<div style="display:table-cell;width:220px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">not used</code></p>
+</div>
+<div style="display:table-cell;width:280px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Sets a limit for this item, <strong>default: none</strong></code></p>
+</div>
+<div style="display:table-cell;width:120px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">gl:limit/timeout</code></p>
+</div>
+</div>
+
+<!-- player limit -->
+<div style="display:table;width:100%">
+<div style="display:table-cell;width:160px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Player limit</code></p>
+</div>
+<div style="display:table-cell;width:110px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">pl</code></p>
+</div>
+<div style="display:table-cell;width:220px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">not used</code></p>
+</div>
+<div style="display:table-cell;width:280px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Sets a limit for each player for this item, <strong>default: none</strong></code></p>
+</div>
+<div style="display:table-cell;width:120px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">pl:limit/timeout</code></p>
+</div>
+</div>
+
+<!-- Slot -->
+<div style="display:table;width:100%">
+<div style="display:table-cell;width:160px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Slot</code></p>
+</div>
+<div style="display:table-cell;width:110px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">s</code></p>
+</div>
+<div style="display:table-cell;width:220px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Not used</code></p>
+</div>
+<div style="display:table-cell;width:280px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">Sets the slot for the item, <b>default: first empty</b></code></p>
+</div>
+<div style="display:table-cell;width:120px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px"><code style="padding: 5px 10px;display:block">s:22</code></p>
+</div>
+</div>
+
+</div>
+
+----
+
+
+
+=== Flags ===
+
+<div style="width:100%;vertical-align:top">
+<div style="display:table;width:100%">
+<div style="display:table-cell;width:160px;border-right:solid 1px black"><p style="margin:0px;padding:2px 10px;"><b>Item flag</b></p>
+</div>
+<div style="display:table-cell;width:110px;border-right:solid 1px"><p style="margin:0px;padding:2px 10px;"><b>flag</b></p>
+</div>
+<div style="display:table-cell;width:620px;border-right:solid 1px black"><p style="margin:0px;padding:2px 10px;"><b>Item pattern</b></p>
+</div>
+</div>
+
+<!-- lore -->
+<div style="display:table;width:100%">
+<div style="display:table-cell;width:160px;background-color: #F9F9F9;border-top:solid 1px"><!-- Cell -->
+<p style="margin:0px;padding:2px 10px"><code style="margin:0px;display:block">Item Lore</code></p>
+</div>
+<div style="display:table-cell;width:110px;background-color: #F9F9F9;border-top:solid 1px"><!-- Cell -->
+<p style="margin:0px;padding:2px 10px"><code style="margin:0px;display:block">lore</code></p>
+</div>
+<div style="display:table-cell;width:620px;background-color: #F9F9F9;border-top:solid 1px"><!-- Cell -->
+<p style="margin:0px;padding:2px 10px"><code style="margin:0px;display:block;">This flag allows you to add lores to your item. It needs always to be set on the end of a item definition and needs to end with <strong>:</strong>. If used always supply a lore. How it should look like will be shown later.</code></p>
+</div>
+</div>
+
+<!-- stack price -->
+<div style="display:table;width:100%">
+<div style="display:table-cell;width:160px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px;padding:2px 10px"><code style="margin:0px;display:block">Stack price</code></p>
+</div>
+<div style="display:table-cell;width:110px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px;padding:2px 10px"><code style="margin:0px;display:block">sp</code></p>
+</div>
+<div style="display:table-cell;width:620px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px;padding:2px 10px"><code style="margin:0px;display:block;">The price calculated for this item, is always applied to the whole stack, not to each item. <strong>example: </strong> price = 3$ | amount = 2 | without sp: 2*3$ = 6$ | with sp: 3$, so 1.5$ for each </code></p>
+</div>
+</div>
+
+<!-- Pattern multiplier -->
+<div style="display:table;width:100%">
+<div style="display:table-cell;width:160px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px;padding:2px 10px"><code style="margin:0px;display:block">Pattern multiplier</code></p>
+</div>
+<div style="display:table-cell;width:110px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px;padding:2px 10px"><code style="margin:0px;display:block"><strong>pm</strong> or <strong>!pm</strong></code></p>
+</div>
+<div style="display:table-cell;width:620px;background-color: #F9F9F9;border-top:dashed 1px red"><!-- Cell -->
+<p style="margin:0px;padding:2px 10px"><code style="margin:0px;display:block;">Forces to use or to ignore pattern multiplier matches</code></p>
+</div>
+</div>
+
+</div>
+
+----
+
+
+
+=== Basic syntax ===
+
+----
+
+==== All patterns ====
+
+Each patterns starts with a name, that you will use in-game to assign them to your traders. That name may be as long as you wish, just you should only use letters, numbers and use this character `'''_'''` instead of a whitespace.
+
+Also each pattern from up now needs to have a type specified, so the pattern loader knows how to read it. 
+So far there are only 2 types, '''price''', and '''item'''. I think it's obvious.
+
+Beside the type node all patterns got 3 additional nodes: "all", "sell", "buy". These nodes applies entries either to both sell and buy stocks, or just to one of them. 
+
+
+Empty pattern example:
+
+<code>
+  pattern_name:
+    type: pattern_type
+    all:
+    - ...
+    sell:
+    - ...
+    buy:
+    - ...
+</code>
+
+<hr />
+
+Each entry in a pattern has the same syntax that looks like this and it should be always done like this:
+
+<code>id[:data] [keywords...] [flags...] [n:...]  [lore:]</code>
+
+As in the example best way is to set after the ID all keywords then flags. 
+
+
+There are two exceptions in this rule. 
+
+The '''name''' keyword is best used on the end because you don't need to worry about that it will interpret any other keyword or flag as a item name part. But if you want you don't need to set it on the end just '''remember to always add two spaces''' after the item name. ''(the example shows that with the '''lore''' flag)''
+
+The '''lore''' flag needs always to be on the end, it's a '''YAML''' syntax requirement, that will allow us to add lores easily to the item. 
+
+
+It's really simple to add items to a pattern, just need type their name or ID, and data if needed, all other values got their default values or behavior, so you don't need to be afraid that you may forget to set something for an item and it will break the pattern.  
+
+<strong>Examples:</strong>
+
+<code>wool:14</code> - will add to the traders stock a red wool block.
+
+<code>wool s:3 n:My white wool</code> - will add to the traders stock a wool block, at slot 3 named '''My white wool'''.
+
+<code>276 d:80% e:smite/2 p:1000</code> - will add to the traders stock a diamond sword, with smite level 2, price 1000 and durability 80%.
+
+
+
+==== Price patterns ====
+
+Generally a price pattern allows you to set prices and multipliers for items a trader has in stock. Each item entry in a price pattern is considered as a matching pattern, this is going to be used to match items the trader has in stock and set their prices and multipliers. 
+
+Each match may have another priority, with the rule: the greater priority wins. 
+
+Easies and most common used are these patterns as a global price file. So you setup all prices for each item in-game, and just add this pattern to each Trader. Now the only thing you need to do is to add items to his stock and thats it. No more price setting :P Prices are going to be set automatically for each player.
+
+Because there is also the possibility to create '''tiers''' in these patterns, you may create vip groups that have lower prices (easily done by setting just the multiplier for a tier). To apply prices from a tier, the player needs to have a permission to '''"use"''' that tier. 
+
+
+Lets say we go a price pattern for all items in-game (going to name this "global-prices" from up now), and we want to set the multiplier to '''0.9''' for all of them except logs:
+
+<code>
+  - ...
+  // because we just set the multiplier, it will be set for all items in this pattern, priority match is equal to 0
+  - m:0.9
+  // here we add additional information to match items with id 17 (logs), and because this match is higher (equals 130), it will override the 0.9 global multiplier for logs
+  - 17 m:1.0
+</code>
+
+
+
+Another price pattern example:
+  
+<code>
+  price_pattern:
+    type: price
+    all:
+    - m:1.0
+    - dirt p:0.55
+    - wool p:4.42 
+    sell:
+    - m:1.0
+    - log p:3.33
+    - wool m:1.1
+    buy:
+    - wool m:0.9
+</code>
+  
+This pattern will set buy and sell prices for dirt and wool blocks, and just sell price for logs. We also told the pattern to use for all items a multiplier of '''1.0''', except for wool, that got a multiplier while selling (to a player) '''1.1''', and selling to a trader is like '''0.9''' of the base price. 
+  
+Only this allows you for much more possibilities than the old system :P
+
+
+===== Tiers =====
+
+
+
+===== Tier tags (whats the difference?) =====
+
+
+
+===== Advanced matching =====
+
+
+
+===== Matching informations =====
+
+What tags and item information can be matched can be found in the table on the beginning, there is also information provided, how does the priority grows when a specific keyword is used.
+
+As because this is not the release version there are going to be many changes to the matching system. Any ideas are always welcome :) 
+
+==== Item patterns ====
+
+
+Soon.
+
+
+===== Lores =====
+
+Soon :)
+
+== Navigation ==
+
+{| class="wikitable" style="text-align: center; width: 500px"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="2" | '''DtlTraders'''
+|-
+| Configuration || | <!--[http://wiki.citizensnpcs.com/DtlTraders/config Configuration] |--> [http://wiki.citizensnpcs.com/DtlTraders/Commands Commands] | [http://wiki.citizensnpcs.com/DtlTraders/permissions Permissions] <!--| [http://wiki.citizensnpcs.com/DtlTraders/locale Locale] -->
+|-
+| Usage || | <!--[http://wiki.citizensnpcs.com/DtlTraders/managing Managing] | [http://wiki.citizensnpcs.com/DtlTraders/trading Trading] | [http://wiki.citizensnpcs.com/DtlTraders/banking Banking] | -->[http://wiki.citizensnpcs.com/DtlTraders/patterns Patterns]
+|-
+| Types || | <!--[http://wiki.citizensnpcs.com/DtlTraders/traders Traders] | [http://wiki.citizensnpcs.com/DtlTraders/bankers Bankers] | [http://wiki.citizensnpcs.com/DtlTraders/auctionhouse Auction House] | [http://wiki.citizensnpcs.com/DtlTraders/wallets Wallets]-->
+|}

@@ -1,0 +1,43 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "1.x/Quick Start",
+    "pageid": 55,
+    "revid": 979,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><table class=\"wikitable\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"1\" style=\"width: 100%; background-color:#F75D59; font-size: 32px; padding: 15px;\"><b>Not Supported!</b>\n</th></tr>\n<tr>\n<td style=\"font-size: 16px;\">This page is about Citizens 1.x, while the current version is Citizens 2.0.2. This page's content may be outdated, and shouldn't be trusted as being correct. See this page's talk page for more information. If you were looking for the 2.0.2 equivalent of this page, try <a href=\"/index.php?title=Quick_Start&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Quick Start (page does not exist)\">Quick Start</a>. If you feel this message was displayed in error, please contact an administrator.\n</td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Creating_your_first_NPC\">Creating your first NPC</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Quick_Start&amp;action=edit&amp;section=1\" title=\"Edit section: Creating your first NPC\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>It is important to read the <a href=\"/Commands\" title=\"Commands\">Commands</a> page for an in-depth look at all of the commands you can use to customize your NPCs. For now, here is a basic guide on how to setup an NPC.\n</p><p><br />\nType <i>/npc create [name]</i>. Replace <i>[name]</i> with the name of your NPC. Optionally, you can add text to your NPC. To do this, simply add words after the name of the NPC. Example:\n</p>\n<pre>/npc create Notch I like cookies!</pre>\n<p>That's it! Of course there are various other things that you can do with basic NPCs as shown in <a href=\"/Commands\" title=\"Commands\">Commands</a>.\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145811\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.024 seconds\nReal time usage: 0.037 seconds\nPreprocessor visited node count: 15/1000000\nRevision size: 590/2097152 bytes\nPost‐expand include size: 627/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 4/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 44/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   10.945      1 Template:NoSupport\n100.00%   10.945      1 -total\n 63.60%    6.961      2 Template:Version2F\n 28.36%    3.104      1 Template:Version2\n-->\n\n<!-- Render ID 808311e7-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "*": "Quick Start"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Creating your first NPC",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "1.x/Quick_Start",
+        "byteoffset": 14,
+        "anchor": "Creating_your_first_NPC",
+        "linkAnchor": "Creating_your_first_NPC"
+      }
+    ]
+  }
+}

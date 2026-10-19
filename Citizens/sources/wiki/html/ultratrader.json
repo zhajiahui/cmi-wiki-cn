@@ -1,0 +1,67 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "UltraTrader",
+    "pageid": 345,
+    "revid": 4876,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><div class=\"infobox\" style=\"width: 295; font-size: 12px; background: #FFFFFF; float: right; border: 1px solid #CCCCCC; margin-left:2.5em; padding: 9px;\">\n<table width=\"275\" style=\"border: 0; background-color: #ffffff\" cellpadding=\"0\" cellspacing=\"3\">\n<tbody><tr>\n<td style=\"width: 275; vertical-align: top; border:1px solid #ccc; background-color: #ffffff\">\n<div style=\"background-color:#aaa; font-size:1px; height:8px; border-bottom:1px solid #ccc;\"></div>\n<div style=\"float:right; margin:8px; margin-top:5px\"></div>\n<div style=\"padding:0.5em 0.3em 0.3em 0.3em; margin:0; text-indent:0.1em; font-weight: bold; border-bottom:1px solid #aaaaaa;\"><b> UltraTrader </b></div>\n<div style=\"font-size:100%; padding:3px\">\n<table cellpadding=\"0\" cellspacing=\"3\" width=\"100%\">\n<tbody><tr>\n<td align=\"left\" valign=\"top\" width=\"100%\">\n<div class=\"padded\" style=\"padding: 19px; font-family:camingodos-web; font-size:110%;\">\n<p><b>UltraTrader</b> is an extension that uses Citizens 2 to create interactive shops.\n</p><p><b>Current version:</b> 0.3 Beta\n</p><p><b>Creator and lead developer:</b> tenowg\n</p><p><b>Assistant developers:</b> None Yet\n</p><p><b>Source:</b> <a rel=\"nofollow\" class=\"external text\" href=\"https://github.com/DemgelOpenSource/UltraTrader/\">Github</a>\n</p><p><b>Documentation:</b> <a rel=\"nofollow\" class=\"external text\" href=\"http://ultratrader.thedemgel.com\">WebSite</a>\n</p><p><b>Latest developmental build:</b> <a rel=\"nofollow\" class=\"external text\" href=\"https://tenowg.ci.cloudbees.com/job/UltraTrader/\">0.3 Beta Builds</a>\n</p><p><b>Citizens build:</b> <a rel=\"nofollow\" class=\"external text\" href=\"http://ci.citizensnpcs.co/job/Citizens2/\">2.0.10 </a>\n</p><p><b>Support tickets:</b> <a rel=\"nofollow\" class=\"external text\" href=\"http://github.com/DemgelOpenSource/UltraTrader/issues/\">Tickets on Github</a>\n</p><p><b>IRC:</b> <a rel=\"nofollow\" class=\"external text\" href=\"http://webchat.esper.net/?nick=random_ultratrader_...&amp;channels=ultratrader&amp;prompt=1\">#ultratrader on esper.net</a>\n</p><p><b>Donate:</b> Note: Add a link for donations\n<br />\n</p>\n</div></td></tr></tbody></table>\n</div>\n</td></tr></tbody></table>\n</div>\n\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#UltraTrader\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">UltraTrader</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-2\"><a href=\"#BETA_Ultratrader\"><span class=\"tocnumber\">1.1</span> <span class=\"toctext\">BETA Ultratrader</span></a></li>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Documentation\"><span class=\"tocnumber\">1.2</span> <span class=\"toctext\">Documentation</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Key_Feature\"><span class=\"tocnumber\">1.3</span> <span class=\"toctext\">Key Feature</span></a></li>\n</ul>\n</li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading1\"><h1 id=\"UltraTrader\">UltraTrader</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=UltraTrader&amp;action=edit&amp;section=1\" title=\"Edit section: UltraTrader\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>UltraTrader is a replacement for the Loved but Lost CitiTrader plugin, written completely from scratch with 100% new code, easier to read, easier to expand on, and just plain better than before.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"BETA_Ultratrader\">BETA Ultratrader</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=UltraTrader&amp;action=edit&amp;section=2\" title=\"Edit section: BETA Ultratrader\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Ultratrader is still currently in Beta, and I feel is not fully ready for production servers as some (not many left) features are not working or implemented yet. There are still bugs to find. Should you choose to test UltraTrader for me, please let me know if you find any Bugs (I have already killed 4 duplication bugs, these are very high priority for me, mostly within 30 minutes of me getting the report)\n</p><p>It is probably best to use the Development link download instead of using the Bukkit link, as Bukkit does seem to take some time to approve of Uploads/Downloads.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Documentation\">Documentation</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=UltraTrader&amp;action=edit&amp;section=3\" title=\"Edit section: Documentation\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Most documentation can be found on the website at: <a rel=\"nofollow\" class=\"external free\" href=\"http://ultratrader.thedemgel.com\">http://ultratrader.thedemgel.com</a>\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Key_Feature\">Key Feature</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=UltraTrader&amp;action=edit&amp;section=4\" title=\"Edit section: Key Feature\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ul><li>Item Shops - Shops can sell items to link to them from anywhere (optional) (almost working)</li>\n<li>NPC shops</li>\n<li>Multiple locations for each shop - Shops are not stored with NPCs any longer, so multiple NPCs/Items can link to the same shop.</li>\n<li>ALMOST NO COMMANDS, other than setting up an NPC and/or creating a shop from scratch, there are no commands, only a menu system that is used to gather input with guided text.</li></ul>\n<!-- \nNewPP limit report\nCached time: 20261019145916\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.020 seconds\nReal time usage: 0.029 seconds\nPreprocessor visited node count: 37/1000000\nRevision size: 2511/2097152 bytes\nPost‐expand include size: 1512/2097152 bytes\nTemplate argument size: 910/2097152 bytes\nHighest expansion depth: 3/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    4.243      1 Template:Box\n100.00%    4.243      1 -total\n-->\n\n<!-- Render ID a7414865-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "UltraTrader",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "UltraTrader",
+        "byteoffset": 1168,
+        "anchor": "UltraTrader",
+        "linkAnchor": "UltraTrader"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "BETA Ultratrader",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "UltraTrader",
+        "byteoffset": 1380,
+        "anchor": "BETA_Ultratrader",
+        "linkAnchor": "BETA_Ultratrader"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Documentation",
+        "number": "1.2",
+        "index": "3",
+        "fromtitle": "UltraTrader",
+        "byteoffset": 1976,
+        "anchor": "Documentation",
+        "linkAnchor": "Documentation"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Key Feature",
+        "number": "1.3",
+        "index": "4",
+        "fromtitle": "UltraTrader",
+        "byteoffset": 2081,
+        "anchor": "Key_Feature",
+        "linkAnchor": "Key_Feature"
+      }
+    ],
+    "showtoc": ""
+  }
+}

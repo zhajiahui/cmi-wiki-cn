@@ -1,0 +1,476 @@
+[
+  {
+    "file": "wiki/changelogs/2.0.x_changelogs.md",
+    "part_index": 517,
+    "source": "Spawners",
+    "translation": "刷怪点"
+  },
+  {
+    "file": "wiki/changelogs/2.1.x_changelogs.md",
+    "part_index": 411,
+    "source": "Spawners",
+    "translation": "刷怪点"
+  },
+  {
+    "file": "wiki/changelogs/4.13.x_changelogs.md",
+    "part_index": 345,
+    "source": "Spawners",
+    "translation": "刷怪点"
+  },
+  {
+    "file": "wiki/changelogs/4.3.x_changelogs.md",
+    "part_index": 362,
+    "source": "Spawners",
+    "translation": "刷怪点"
+  },
+  {
+    "file": "wiki/changelogs/4.9.x_changelogs.md",
+    "part_index": 435,
+    "source": "Added",
+    "translation": "新增"
+  },
+  {
+    "file": "wiki/changelogs/4.9.x_changelogs.md",
+    "part_index": 479,
+    "source": "Spawners",
+    "translation": "刷怪点"
+  },
+  {
+    "file": "wiki/changelogs/5.4.x_changelogs.md",
+    "part_index": 82,
+    "source": "Spawners",
+    "translation": "刷怪点"
+  },
+  {
+    "file": "wiki/changelogs/5.4.x_changelogs.md",
+    "part_index": 393,
+    "source": "null (not checked)",
+    "translation": "null（不检查）"
+  },
+  {
+    "file": "wiki/changelogs/5.4.x_changelogs.md",
+    "part_index": 407,
+    "source": "null (not checked)",
+    "translation": "null（不检查）"
+  },
+  {
+    "file": "wiki/changelogs/5.4.x_changelogs.md",
+    "part_index": 421,
+    "source": "null (not checked)",
+    "translation": "null（不检查）"
+  },
+  {
+    "file": "wiki/changelogs/5.4.x_changelogs.md",
+    "part_index": 526,
+    "source": "Spawners",
+    "translation": "刷怪点"
+  },
+  {
+    "file": "wiki/changelogs/5.8.x_changelogs.md",
+    "part_index": 157,
+    "source": "**`Note: This update includes various optimizations, new mechanics, improvements, bug fixes, and additional API features. Please report any issues you find by opening an Issue or letting us know in the appropriate Discord channel.`**",
+    "translation": "**注意：此次更新包含多项优化、新机制、改进、问题修复和新增 API 功能。发现任何问题时，请创建 Issue，或在适当的 Discord 频道告知我们。**\n\n**`Note: This update includes various optimizations, new mechanics, improvements, bug fixes, and additional API features. Please report any issues you find by opening an Issue or letting us know in the appropriate Discord channel.`**"
+  },
+  {
+    "file": "wiki/changelogs/pre-2.0_changelogs.md",
+    "part_index": 226,
+    "source": "Spawners",
+    "translation": "刷怪点"
+  },
+  {
+    "file": "wiki/changelogs/pre-2.0_changelogs.md",
+    "part_index": 516,
+    "source": "Spawners",
+    "translation": "刷怪点"
+  },
+  {
+    "file": "wiki/changelogs/pre-2.0_changelogs.md",
+    "part_index": 610,
+    "source": "Spawners",
+    "translation": "刷怪点"
+  },
+  {
+    "file": "wiki/changelogs/pre-2.0_changelogs.md",
+    "part_index": 2647,
+    "source": "Locations",
+    "translation": "位置"
+  },
+  {
+    "file": "wiki/changelogs/pre-2.0_changelogs.md",
+    "part_index": 2656,
+    "source": "Timers",
+    "translation": "定时器"
+  },
+  {
+    "file": "wiki/examples/damagespells.md",
+    "part_index": 9,
+    "source": "Basic",
+    "translation": "基础"
+  },
+  {
+    "file": "wiki/examples/damagespells.md",
+    "part_index": 31,
+    "source": "Basic",
+    "translation": "基础"
+  },
+  {
+    "file": "wiki/examples/damagespells.md",
+    "part_index": 53,
+    "source": "Basic",
+    "translation": "基础"
+  },
+  {
+    "file": "wiki/examples/damagespells.md",
+    "part_index": 75,
+    "source": "Basic",
+    "translation": "基础"
+  },
+  {
+    "file": "wiki/examples/damagespells.md",
+    "part_index": 97,
+    "source": "Basic",
+    "translation": "基础"
+  },
+  {
+    "file": "wiki/examples/damagespells.md",
+    "part_index": 119,
+    "source": "Basic",
+    "translation": "基础"
+  },
+  {
+    "file": "wiki/examples/damagespells.md",
+    "part_index": 151,
+    "source": "Basic",
+    "translation": "基础"
+  },
+  {
+    "file": "wiki/examples/damagespells.md",
+    "part_index": 173,
+    "source": "Basic",
+    "translation": "基础"
+  },
+  {
+    "file": "wiki/examples/damagespells.md",
+    "part_index": 195,
+    "source": "Basic",
+    "translation": "基础"
+  },
+  {
+    "file": "wiki/faq.md",
+    "part_index": 1,
+    "source": "F A Q",
+    "translation": "常见问题"
+  },
+  {
+    "file": "wiki/guides/-step-1--understanding-the-different-terms.md",
+    "part_index": 141,
+    "source": "default value",
+    "translation": "默认值"
+  },
+  {
+    "file": "wiki/guides/-step-1--understanding-the-different-terms.md",
+    "part_index": 150,
+    "source": "default value",
+    "translation": "默认值"
+  },
+  {
+    "file": "wiki/guides/-step-1--understanding-the-different-terms.md",
+    "part_index": 159,
+    "source": "default value",
+    "translation": "默认值"
+  },
+  {
+    "file": "wiki/guides/-step-1--understanding-the-different-terms.md",
+    "part_index": 211,
+    "source": "Spawners",
+    "translation": "刷怪点"
+  },
+  {
+    "file": "wiki/items/items.md",
+    "part_index": 773,
+    "source": "Optional",
+    "translation": "可选"
+  },
+  {
+    "file": "wiki/items/items.md",
+    "part_index": 780,
+    "source": "Optional",
+    "translation": "可选"
+  },
+  {
+    "file": "wiki/items/items.md",
+    "part_index": 821,
+    "source": "Required",
+    "translation": "必填"
+  },
+  {
+    "file": "wiki/items/items.md",
+    "part_index": 988,
+    "source": "Required",
+    "translation": "必填"
+  },
+  {
+    "file": "wiki/items/items.md",
+    "part_index": 1029,
+    "source": "All damage types",
+    "translation": "所有伤害类型"
+  },
+  {
+    "file": "wiki/items/items.md",
+    "part_index": 1036,
+    "source": "Required",
+    "translation": "必填"
+  },
+  {
+    "file": "wiki/items/items.md",
+    "part_index": 1043,
+    "source": "Required",
+    "translation": "必填"
+  },
+  {
+    "file": "wiki/mobs/custom-ai.md",
+    "part_index": 510,
+    "source": "Example",
+    "translation": "示例"
+  },
+  {
+    "file": "wiki/mobs/templates.md",
+    "part_index": 257,
+    "source": "Overridden",
+    "translation": "被覆盖"
+  },
+  {
+    "file": "wiki/mobs/templates.md",
+    "part_index": 262,
+    "source": "Overridden",
+    "translation": "被覆盖"
+  },
+  {
+    "file": "wiki/mobs/templates.md",
+    "part_index": 267,
+    "source": "Overridden",
+    "translation": "被覆盖"
+  },
+  {
+    "file": "wiki/mobs/templates.md",
+    "part_index": 272,
+    "source": "Overridden",
+    "translation": "被覆盖"
+  },
+  {
+    "file": "wiki/mobs/templates.md",
+    "part_index": 277,
+    "source": "Overridden",
+    "translation": "被覆盖"
+  },
+  {
+    "file": "wiki/mobs/templates.md",
+    "part_index": 282,
+    "source": "Overridden",
+    "translation": "被覆盖"
+  },
+  {
+    "file": "wiki/mobs/templates.md",
+    "part_index": 287,
+    "source": "Overridden",
+    "translation": "被覆盖"
+  },
+  {
+    "file": "wiki/mobs/templates.md",
+    "part_index": 292,
+    "source": "Overridden",
+    "translation": "被覆盖"
+  },
+  {
+    "file": "wiki/mobs/templates.md",
+    "part_index": 317,
+    "source": "Merged",
+    "translation": "合并"
+  },
+  {
+    "file": "wiki/mobs/templates.md",
+    "part_index": 332,
+    "source": "Merged",
+    "translation": "合并"
+  },
+  {
+    "file": "wiki/mobs/templates.md",
+    "part_index": 342,
+    "source": "Overridden",
+    "translation": "被覆盖"
+  },
+  {
+    "file": "wiki/mobs/templates.md",
+    "part_index": 347,
+    "source": "Merged",
+    "translation": "合并"
+  },
+  {
+    "file": "wiki/premium-features.md",
+    "part_index": 5,
+    "source": "Premium",
+    "translation": "付费版"
+  },
+  {
+    "file": "wiki/skills/mechanics/auraremove.md",
+    "part_index": 46,
+    "source": "Max stacks",
+    "translation": "最大层数"
+  },
+  {
+    "file": "wiki/skills/mechanics/command.md",
+    "part_index": 77,
+    "source": "asTarget's value",
+    "translation": "asTarget 的值"
+  },
+  {
+    "file": "wiki/skills/mechanics/setvariable.md",
+    "part_index": 68,
+    "source": "Infinite",
+    "translation": "无限"
+  },
+  {
+    "file": "wiki/skills/mechanics/skybox.md",
+    "part_index": 54,
+    "source": "Rainy",
+    "translation": "雨天"
+  },
+  {
+    "file": "wiki/skills/placeholders.md",
+    "part_index": 261,
+    "source": "Black",
+    "translation": "黑色"
+  },
+  {
+    "file": "wiki/skills/placeholders.md",
+    "part_index": 265,
+    "source": "Aqua",
+    "translation": "青色"
+  },
+  {
+    "file": "wiki/skills/placeholders.md",
+    "part_index": 274,
+    "source": "Red",
+    "translation": "红色"
+  },
+  {
+    "file": "wiki/skills/placeholders.md",
+    "part_index": 292,
+    "source": "Yellow",
+    "translation": "黄色"
+  },
+  {
+    "file": "wiki/skills/placeholders.md",
+    "part_index": 301,
+    "source": "White",
+    "translation": "白色"
+  },
+  {
+    "file": "wiki/skills/placeholders.md",
+    "part_index": 310,
+    "source": "Magic",
+    "translation": "混淆"
+  },
+  {
+    "file": "wiki/skills/placeholders.md",
+    "part_index": 315,
+    "source": "Gold",
+    "translation": "金色"
+  },
+  {
+    "file": "wiki/skills/placeholders.md",
+    "part_index": 319,
+    "source": "Bold",
+    "translation": "粗体"
+  },
+  {
+    "file": "wiki/skills/placeholders.md",
+    "part_index": 324,
+    "source": "Gray",
+    "translation": "灰色"
+  },
+  {
+    "file": "wiki/skills/placeholders.md",
+    "part_index": 337,
+    "source": "Underline",
+    "translation": "下划线"
+  },
+  {
+    "file": "wiki/skills/placeholders.md",
+    "part_index": 342,
+    "source": "Blue",
+    "translation": "蓝色"
+  },
+  {
+    "file": "wiki/skills/placeholders.md",
+    "part_index": 346,
+    "source": "Italic",
+    "translation": "斜体"
+  },
+  {
+    "file": "wiki/skills/placeholders.md",
+    "part_index": 351,
+    "source": "Green",
+    "translation": "绿色"
+  },
+  {
+    "file": "wiki/skills/placeholders.md",
+    "part_index": 355,
+    "source": "Reset",
+    "translation": "重置"
+  },
+  {
+    "file": "wiki/spawners.md",
+    "part_index": 1,
+    "source": "Spawners",
+    "translation": "刷怪点"
+  },
+  {
+    "file": "wiki/spawners.md",
+    "part_index": 97,
+    "source": "Creation World",
+    "translation": "创建刷怪点时所在的世界"
+  },
+  {
+    "file": "wiki/spawners.md",
+    "part_index": 115,
+    "source": "Creation Location",
+    "translation": "创建刷怪点时的位置"
+  },
+  {
+    "file": "wiki/stats.md",
+    "part_index": 452,
+    "source": "Defense",
+    "translation": "防御"
+  },
+  {
+    "file": "wiki/stats.md",
+    "part_index": 740,
+    "source": "Defense",
+    "translation": "防御"
+  },
+  {
+    "file": "wiki/wiki-editors-resources/examplemechanic.md",
+    "part_index": 56,
+    "source": "default value",
+    "translation": "默认值"
+  },
+  {
+    "file": "wiki/wiki-editors-resources/examplemechanic.md",
+    "part_index": 65,
+    "source": "default value",
+    "translation": "默认值"
+  },
+  {
+    "file": "wiki/wiki-editors-resources/examplemechanic.md",
+    "part_index": 74,
+    "source": "default value",
+    "translation": "默认值"
+  },
+  {
+    "file": "wiki/wiki-editors-resources/examplemechanic.md",
+    "part_index": 83,
+    "source": "default value",
+    "translation": "默认值"
+  }
+]

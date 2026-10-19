@@ -1,0 +1,24 @@
+[
+  {
+    "source_url": "https://proxy.spigotmc.org/327220809a0bdd5b08d13722a2346c61d2cad2cf/68747470733a2f2f7073746174732e646576732e626565722f7369676e6174757265732f62756b6b69742f4c6f6e654c6962732e737667",
+    "source_pages": [
+      "https://www.spigotmc.org/resources/outdated-lonelibs.75974/"
+    ],
+    "rendered_urls": [
+      "//proxy.spigotmc.org/327220809a0bdd5b08d13722a2346c61d2cad2cf/68747470733a2f2f7073746174732e646576732e626565722f7369676e6174757265732f62756b6b69742f4c6f6e654c6962732e737667"
+    ],
+    "status": "unavailable",
+    "error": "404 Client Error: Not Found for url: https://proxy.spigotmc.org/327220809a0bdd5b08d13722a2346c61d2cad2cf/68747470733a2f2f7073746174732e646576732e626565722f7369676e6174757265732f62756b6b69742f4c6f6e654c6962732e737667"
+  },
+  {
+    "source_url": "https://proxy.spigotmc.org/b3ab04fb2787f07ee931fac7ee8ef562e6999e5d/687474703a2f2f612e646576732e626565722f7669736974732d737069676f742d6c6f6e656c696273",
+    "source_pages": [
+      "https://www.spigotmc.org/resources/outdated-lonelibs.75974/"
+    ],
+    "rendered_urls": [
+      "//proxy.spigotmc.org/b3ab04fb2787f07ee931fac7ee8ef562e6999e5d/687474703a2f2f612e646576732e626565722f7669736974732d737069676f742d6c6f6e656c696273"
+    ],
+    "status": "unavailable",
+    "error": "HTTPConnectionPool(host='127.0.0.1', port=7890): Read timed out. (read timeout=15)"
+  }
+]

@@ -1,0 +1,78 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Denizen/Triggers",
+    "pageid": 334,
+    "revid": 5223,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://one.denizenscript.com/denizen/cmds/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://one.denizenscript.com/denizen/cmds/denizen/vids\">Tutorial Videos</a> on youtube or the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br /><br /><br />\n</p><p><br />\n<s>Triggers are what allow NPCs to react to player actions such as chatting to the NPC, clicking the NPC, attacking the NPC, or just walking near the NPC.\n</s></p><p><s><br />\n</s></p><s><div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#How_To_Make_A_trigger\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">How To Make A trigger</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Chat_Trigger\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Chat Trigger</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Click_Trigger\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Click Trigger</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Damage_Trigger\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Damage Trigger</span></a></li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#Proximity_Trigger\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">Proximity Trigger</span></a></li>\n</ul>\n</div>\n</s><s><div class=\"mw-heading mw-heading1\"><h1 id=\"How_To_Make_A_trigger\">How To Make A trigger</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Triggers&amp;action=edit&amp;section=1\" title=\"Edit section: How To Make A trigger\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><p>First, you must enable the trigger:\n</p><p>You can enable them just by running the command <a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.co/Denizen/Commands#trigger\">- Trigger</a>\n</p></s><s><pre>- trigger [name:chat/click/damage/proximity] (state:true/false) (cooldown:&lt;#.#&gt;) (radius:&lt;#&gt;)</pre></s><s><p>This is usually done in the <a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.co/Denizen/Types_of_Scripts#Assignment_Script\">assignment script - on assignment</a>, but it can be done anywhere else as well.\n</p><p>Then you must make an <a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.co/Denizen/Types_of_Scripts#Interact_Scripts\">Interact Script</a> and include the trigger to react however.\n</p><p>You can also use Assignment script actions \"on click\", \"on enter proximity\", and \"on exit proximity\".\n</p></s><s><div class=\"mw-heading mw-heading1\"><h1 id=\"Chat_Trigger\">Chat Trigger</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Triggers&amp;action=edit&amp;section=2\" title=\"Edit section: Chat Trigger\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><p>A Chat trigger is written like so:\n</p></s><s><pre>            chat Trigger:\n                '1':\n                    Trigger: \"/Hello/ there npc!\"\n                    Script:\n                    - CHAT \"Hello, &lt;player.name&gt;!\"\n                '2':\n                    Trigger: \"/Bye/ npc!\"\n                    Script:\n                    - CHAT \"Goodbye, &lt;player.name&gt;!\"\n                '3':\n                    Trigger: /REGEX:.+/\n                    Script:\n                    - CHAT \"I don't know what &lt;player.chat_history&gt; is!\"</pre></s><s><p>Any message that contains the /Message/ will activate that part of the trigger.\n</p><p>You can also include any <a rel=\"nofollow\" class=\"external text\" href=\"http://en.wikipedia.org/wiki/Regular_expression\">RegEx</a> by prefixing it with REGEX:\n</p></s><s><div class=\"mw-heading mw-heading1\"><h1 id=\"Click_Trigger\">Click Trigger</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Triggers&amp;action=edit&amp;section=3\" title=\"Edit section: Click Trigger\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><pre>            click Trigger:\n                Script:\n                - CHAT \"Hehe, that tickles!\"</pre></s><s><p>Click triggers happen when a player right-clicks an NPC.\n</p></s><s><div class=\"mw-heading mw-heading1\"><h1 id=\"Damage_Trigger\">Damage Trigger</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Triggers&amp;action=edit&amp;section=4\" title=\"Edit section: Damage Trigger\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><pre>            Damage Trigger:\n                Script:\n                - CHAT \"Ow! That hurt, &lt;player.name&gt;!\"</pre></s><s><p>Click triggers happen when a player right-clicks an NPC.\n</p></s><s><div class=\"mw-heading mw-heading1\"><h1 id=\"Proximity_Trigger\">Proximity Trigger</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Triggers&amp;action=edit&amp;section=5\" title=\"Edit section: Proximity Trigger\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><pre>            Proximity Trigger:\n                entry:\n                    Script:\n                    - CHAT \"Hello there, &lt;player.name&gt;!\n                exit:\n                    Script:\n                    - CHAT \"Goodbye, &lt;player.name&gt;!\"\n                move:\n                    Script:\n                    - CHAT \"This is optional and will spam you =D\"\n</pre></s><s></s><p><s>Proximity triggers fire when a player enters or leaves the radius defined by the - trigger command.</s>\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145840\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.023 seconds\nReal time usage: 0.037 seconds\nPreprocessor visited node count: 38/1000000\nRevision size: 3273/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1236/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 91cc1e66-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "How To Make A trigger",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Denizen/Triggers",
+        "byteoffset": 939,
+        "anchor": "How_To_Make_A_trigger",
+        "linkAnchor": "How_To_Make_A_trigger"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Chat Trigger",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Denizen/Triggers",
+        "byteoffset": 1656,
+        "anchor": "Chat_Trigger",
+        "linkAnchor": "Chat_Trigger"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Click Trigger",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "Denizen/Triggers",
+        "byteoffset": 2394,
+        "anchor": "Click_Trigger",
+        "linkAnchor": "Click_Trigger"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Damage Trigger",
+        "number": "4",
+        "index": "4",
+        "fromtitle": "Denizen/Triggers",
+        "byteoffset": 2579,
+        "anchor": "Damage_Trigger",
+        "linkAnchor": "Damage_Trigger"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Proximity Trigger",
+        "number": "5",
+        "index": "5",
+        "fromtitle": "Denizen/Triggers",
+        "byteoffset": 2776,
+        "anchor": "Proximity_Trigger",
+        "linkAnchor": "Proximity_Trigger"
+      }
+    ],
+    "showtoc": ""
+  }
+}

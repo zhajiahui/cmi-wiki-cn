@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en" data-accent-color="violet" data-content_root="../">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Commands - WorldGuard 7.0 documentation</title><link rel="index" title="Index" href="../genindex/" /><link rel="search" title="Search" href="../search/" /><link rel="next" title="Blacklist" href="../blacklist/" /><link rel="prev" title="Build Permissions" href="../build-perms/" /><script>
+    function setColorMode(t){let e=document.documentElement;e.setAttribute("data-color-mode",t);let a=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t;"auto"===t&&(s=a?"dark":"light"),"light"===s?(e.classList.remove("dark"),e.classList.add("light")):(e.classList.remove("light"),e.classList.add("dark"))}
+    setColorMode(localStorage._theme||"auto");
+  </script><link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=ad592e98" />
+    <link rel="stylesheet" type="text/css" href="../_static/shibuya.css?v=44020203" />
+    <link media="print" rel="stylesheet" type="text/css" href="../_static/print.css?v=20ff2c19" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=d0922fbb" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sy-f-text: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+  --sy-f-heading: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+}
+</style>
+    <meta property="og:type" content="website"/><meta property="og:title" content="Commands"/>
+    <meta name="twitter:card" content="summary"/>
+  <script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="worldguard" /><meta name="readthedocs-version-slug" content="latest" /><meta name="readthedocs-resolver-filename" content="/commands/" /><meta name="readthedocs-http-status" content="200" /></head>
+<body><div class="sy-head">
+  <div class="sy-head-blur"></div>
+  <div class="sy-head-inner sy-container mx-auto">
+    <a class="sy-head-brand" href="../">
+      
+      
+      <strong>WorldGuard</strong>
+    </a>
+    <div class="sy-head-nav" id="head-nav">
+      <nav class="sy-head-links" data-align=left><ul><li class="link">
+          <a href="https://enginehub.org">
+            <span>Developed by EngineHub</span><i class="i-lucide external-link"></i></a>
+        </li><li class="link">
+          <a href="https://github.com/sponsors/EngineHub?o=esb">
+            <span><iconify-icon icon='simple-icons:githubsponsors' style='color: #db61a2;'></iconify-icon> Sponsored by users like you!</span><i class="i-lucide external-link"></i></a>
+        </li></ul></nav>
+      <div class="sy-head-extra flex items-center print:hidden"><form class="searchbox flex items-center" action="../search/" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <kbd>/</kbd>
+</form><div class="sy-head-socials">
+  <a href="https://github.com/EngineHub/WorldGuard" aria-label="GitHub">
+    <iconify-icon icon="simple-icons:github"></iconify-icon>
+  </a>
+  <a href="https://discord.gg/enginehub" aria-label="Discord">
+    <iconify-icon icon="simple-icons:discord"></iconify-icon>
+  </a></div></div>
+    </div>
+    <div class="sy-head-actions flex items-center shrink-0 print:hidden"><button class="js-theme theme-switch flex items-center"
+data-aria-auto="Switch to light color mode"
+data-aria-light="Switch to dark color mode"
+data-aria-dark="Switch to auto color mode">
+<i class="i-lucide theme-icon"></i>
+</button><button class="md:hidden flex items-center js-menu" aria-label="Menu" type="button" aria-controls="head-nav" aria-expanded="false">
+        <div class="hamburger">
+          <span class="hamburger_1"></span>
+          <span class="hamburger_2"></span>
+          <span class="hamburger_3"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="sy-page sy-container flex mx-auto">
+  <aside id="lside" class="sy-lside md:w-72 md:shrink-0 print:hidden">
+    <div class="sy-lside-inner md:sticky">
+      <div class="sy-scrollbar p-6">
+        <div class="globaltoc" data-expand-depth="2"><ul class="current">
+<li class="toctree-l1 _expand"><a class="reference internal" href="../install/">Installation</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../config/">Configuration</a><ul>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../host-keys/">Host Keys</a></li>
+</ul>
+</li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../permissions/">Permissions</a><ul>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../build-perms/">Build Permissions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Commands</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../blacklist/">Blacklist</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../regions/">Regions</a><ul>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../regions/quick-start/">Quick Start</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../regions/wand/">Region Wand</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../regions/flags/">Region Flags</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../regions/priorities/">Priority and Inheritance</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../regions/global-region/">Global Region</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../regions/commands/">Region Commands</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../regions/claiming/">Claiming</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../regions/storage/">Storage Drivers</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../regions/scope/">What&#8217;s Protected?</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../regions/common-scenarios/">Common Scenarios</a></li>
+</ul>
+</li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../chest-protection/">Chest Protection</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../developer/">WorldGuard API</a><ul>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../developer/dependency/">As a Dependency</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../developer/regions/">Working with Regions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developer/regions/managers/">Managers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developer/regions/protected-region/">Regions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developer/regions/custom-flags/">Custom Flags and Session Handlers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developer/regions/spatial-queries/">Spatial Queries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developer/regions/flag-calculation/">Flag Calculation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developer/regions/protection-query/">Querying Protection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developer/regions/events/">Region Events</a></li>
+</ul>
+</li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../developer/native-objects/">From Bukkit Objects</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../developer/internal-apis/">Internal APIs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../advanced/">Advanced Topics</a><ul>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../advanced/event-logging/">Event Logging</a></li>
+</ul>
+</li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../faq/">Common Questions</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../support/">Getting Help</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../source-code/">Source Code</a></li>
+</ul>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="lside-overlay js-menu" role="button" aria-label="Close left sidebar" aria-controls="lside" aria-expanded="false"></div>
+  <aside id="rside" class="sy-rside pb-3 w-64 shrink-0 order-last">
+    <button class="rside-close js-menu xl:hidden" aria-label="Close Table of Contents" type="button" aria-controls="rside" aria-expanded="false">
+      <i class="i-lucide close"></i>
+    </button>
+    <div class="sy-scrollbar sy-rside-inner px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4"><div class="localtoc"><h3>On this page</h3><ul>
+<li><a class="reference internal" href="#gameplay">Gameplay</a><ul>
+<li><a class="reference internal" href="#selectors">Selectors</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#regions">Regions</a></li>
+<li><a class="reference internal" href="#emergency">Emergency</a></li>
+<li><a class="reference internal" href="#troubleshooting">Troubleshooting</a><ul>
+<li><a class="reference internal" href="#event-simulation">Event Simulation</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+</div><div class="edit-this-page">
+  <a href="https://github.com/EngineHub/WorldGuardDocs/blob/master/source/commands.rst">Edit this page</a>
+</div></div>
+  </aside>
+  <div class="rside-overlay js-menu" role="button" aria-label="Close Table of Contents" aria-controls="rside" aria-expanded="false"></div>
+  <main class="sy-main w-full max-sm:max-w-full print:pt-6">
+<div class="sy-breadcrumbs" role="navigation">
+  <div class="sy-breadcrumbs-inner flex items-center">
+    <div class="md:hidden mr-3">
+      <button class="js-menu" aria-label="Menu" type="button" aria-controls="lside" aria-expanded="false">
+        <i class="i-lucide menu"></i>
+      </button>
+    </div>
+    <ol class="flex-1" itemscope itemtype="https://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="../"><span itemprop="name">WorldGuard</span></a>
+        <span>/</span>
+        <meta itemprop="position" content="1" />
+      </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <strong itemprop="name">Commands</strong>
+        <meta itemprop="position" content="2" />
+      </li></ol>
+    <div class="xl:hidden ml-1">
+      <button class="js-menu" aria-label="Show table of contents" type="button" aria-controls="rside"
+        aria-expanded="false">
+        <i class="i-lucide outdent"></i>
+      </button>
+    </div>
+  </div>
+</div><div class="flex flex-col break-words justify-between">
+      <div class="relative min-w-0 max-w-6xl px-6 pb-6 pt-8 xl:px-12">
+  <div class="copy-page-wrapper relative pb-4 lg:absolute lg:top-8 lg:right-6 xl:right-12">
+  <div id="copy-page-trigger">
+    <button
+      type="button"
+      class="js-copy px-3 py-1 inline-flex items-center gap-1"
+      data-url="https://raw.githubusercontent.com/EngineHub/WorldGuardDocs/refs/heads/master/source/commands.rst.txt"
+    >
+      <i class="i-lucide" data-icon="copy"></i>
+      <span>Copy page</span>
+    </button>
+    <button class="js-menu px-2 py-1" type="button" aria-label="More actions"
+      aria-haspopup="menu" aria-expanded="false" aria-controls="copy-page-content">
+      <i class="i-lucide chevron-down"></i>
+    </button>
+  </div>
+  <div id="copy-page-content" role="menu" aria-orientation="vertical" aria-hidden="true">
+    <div role="presentation">
+      <div class="flex flex-col" role="group">
+        <button class="js-copy" type="button" role="menuitem"
+          data-url="https://raw.githubusercontent.com/EngineHub/WorldGuardDocs/refs/heads/master/source/commands.rst.txt">
+          <span class="iconify-icon">
+            <i class="i-lucide" data-icon="copy"></i>
+          </span>
+          <span>Copy page</span>
+        </button>
+        <a role="menuitem" href="https://raw.githubusercontent.com/EngineHub/WorldGuardDocs/refs/heads/master/source/commands.rst.txt" target="_blank" rel="nofollow"><iconify-icon icon="bi:code-slash"></iconify-icon>
+            <span>View Source</span></a><a role="menuitem" href="https://chatgpt.com/?hints=search&q=Read%20https%3A//raw.githubusercontent.com/EngineHub/WorldGuardDocs/refs/heads/master/source/commands.rst.txt%20so%20I%20can%20ask%20questions%20about%20it." target="_blank" rel="nofollow">
+          <iconify-icon icon="bi:openai"></iconify-icon>
+          <span>Open in ChatGPT</span>
+        </a><a role="menuitem" href="https://claude.ai/new?q=Read%20https%3A//raw.githubusercontent.com/EngineHub/WorldGuardDocs/refs/heads/master/source/commands.rst.txt%20so%20I%20can%20ask%20questions%20about%20it." target="_blank" rel="nofollow">
+          <iconify-icon icon="bi:claude"></iconify-icon>
+          <span>Open in Claude</span>
+        </a></div>
+    </div>
+  </div>
+</div><article class="yue" role="main">
+          <section id="commands">
+<h1>Commands<a class="headerlink" href="#commands" title="Link to this heading">¶</a></h1>
+<p>WorldGuard provides five categories of commands:</p>
+<ul class="simple">
+<li><p>Gameplay-related (<code class="docutils literal notranslate"><span class="pre">/god</span></code>, <code class="docutils literal notranslate"><span class="pre">/heal</span></code>, etc.)</p></li>
+<li><p>Working with <a class="reference internal" href="../regions/"><span class="doc">regions</span></a></p></li>
+<li><p>Time-sensitive emergency response</p></li>
+<li><p>Troubleshooting</p></li>
+<li><p>WorldGuard-related (version information, reloading configuration)</p></li>
+</ul>
+<p>See the <a class="reference internal" href="../permissions/"><span class="doc">permissions page</span></a> for the necessary permission nodes. Some commands come with built-in aliases, those are listed in the same row.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>When a parameter (like <code class="docutils literal notranslate"><span class="pre">&lt;player&gt;</span></code>) is surrounded by <code class="docutils literal notranslate"><span class="pre">[]</span></code>, it means that the parameter is optional. In addition, don’t put <code class="docutils literal notranslate"><span class="pre">&lt;</span></code> or <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> when entering the command.</p>
+</div>
+<section id="gameplay">
+<h2>Gameplay<a class="headerlink" href="#gameplay" title="Link to this heading">¶</a></h2>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 19.5%" />
+<col style="width: 19.5%" />
+<col style="width: 61.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Parameters</p></th>
+<th class="head"><p>Explanation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>/god</p></td>
+<td><p>[-s] [&lt;player&gt;]</p></td>
+<td><p>Give yourself or another player invicinbility. <code class="docutils literal notranslate"><span class="pre">-s</span></code> can be optionally specified to have no message emitted.</p></td>
+</tr>
+<tr class="row-odd"><td><p>/ungod</p></td>
+<td><p>[-s] [&lt;player&gt;]</p></td>
+<td><p>Remove invicinbility from yourself or another player. <code class="docutils literal notranslate"><span class="pre">-s</span></code> can be optionally specified to have no message emitted.</p></td>
+</tr>
+<tr class="row-even"><td><p>/heal</p></td>
+<td><p>[-s] [&lt;player&gt;]</p></td>
+<td><p>Heal yourself or another player. <code class="docutils literal notranslate"><span class="pre">-s</span></code> can be optionally specified to have no message emitted.</p></td>
+</tr>
+<tr class="row-odd"><td><p>/slay</p></td>
+<td><p>[-s] [&lt;player&gt;]</p></td>
+<td><p>Slay yourself or another player. <code class="docutils literal notranslate"><span class="pre">-s</span></code> can be optionally specified to have no message emitted.</p></td>
+</tr>
+<tr class="row-even"><td><p>/locate</p></td>
+<td><p>[&lt;player&gt;]</p></td>
+<td><p>Have your compass point to another player (if specified), or pointed to spawn if no player is specified.</p></td>
+</tr>
+<tr class="row-odd"><td><div class="line-block">
+<div class="line">/stack</div>
+<div class="line">/;</div>
+</div>
+</td>
+<td></td>
+<td><p>Organize your inventory and automatically stack items.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="selectors">
+<h3>Selectors<a class="headerlink" href="#selectors" title="Link to this heading">¶</a></h3>
+<p>The commands that take a player name support <em>selectors</em>, but they differ from Minecraft’s selectors which came about 3 years later.</p>
+<p>Players can be matched with:</p>
+<ul class="simple">
+<li><p>By default, players are matched if their name <em>starts with</em> the given name</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">*</span></code> to match all</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">#&lt;world&gt;</span></code> to match everyone on a certain world</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">#near</span></code> to match nearby players to the command’s user</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&#64;&lt;name&gt;</span></code> to match a player’s name exactly</p></li>
+</ul>
+</section>
+</section>
+<section id="regions">
+<h2>Regions<a class="headerlink" href="#regions" title="Link to this heading">¶</a></h2>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 19.5%" />
+<col style="width: 19.5%" />
+<col style="width: 61.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Parameters</p></th>
+<th class="head"><p>Explanation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><div class="line-block">
+<div class="line">/wg flushstates</div>
+<div class="line">/wg clearstates</div>
+</div>
+</td>
+<td><p>[&lt;player&gt;]</p></td>
+<td><p>Debugging command that clears information about players that is stored for the purpose of applying <a class="reference internal" href="../regions/flags/"><span class="doc">region flags</span></a>. For example, for the <code class="docutils literal notranslate"><span class="pre">entry</span></code> flag to work, the player’s last ‘block’ is stored every time they move, which is used to determine whether the player has entered a region. This command can be useful when a player is stuck inside or outside a region due to the <code class="docutils literal notranslate"><span class="pre">entry</span></code> or <code class="docutils literal notranslate"><span class="pre">exit</span></code> flags, especially after changes in membership, permission groups, etc. The optional player argument will reset states only for the provided player; if not supplied, all players’ flag states will be reset.</p></td>
+</tr>
+<tr class="row-odd"><td><div class="line-block">
+<div class="line">/rg bypass</div>
+<div class="line">/rg toggle-bypass</div>
+</div>
+</td>
+<td><p>[on/off]</p></td>
+<td><p>Toggles region protection bypass mode, allowing you to ignore region protections (except for PvP deny)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Additional region commands can be found in the <a class="reference internal" href="../regions/commands/"><span class="doc">regions section</span></a>.</p>
+</section>
+<section id="emergency">
+<h2>Emergency<a class="headerlink" href="#emergency" title="Link to this heading">¶</a></h2>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 19.5%" />
+<col style="width: 19.5%" />
+<col style="width: 61.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Parameters</p></th>
+<th class="head"><p>Explanation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>/stopfire</p></td>
+<td><p>[&lt;world&gt;]</p></td>
+<td><p>Immediately stop all fire spread on the current or given world.</p></td>
+</tr>
+<tr class="row-odd"><td><p>/allowfire</p></td>
+<td><p>[&lt;world&gt;]</p></td>
+<td><p>Lift the fire spread suspension.</p></td>
+</tr>
+<tr class="row-even"><td><div class="line-block">
+<div class="line">/stoplag</div>
+<div class="line">/halt-activity</div>
+<div class="line">/haltactivity</div>
+</div>
+</td>
+<td><p>[-s]</p></td>
+<td><p>Remove all entities in all worlds and enter a mode where all physics events and liquid flow events are stopped. In addition, when a chunk loads, all entities in that chunk are removed. The purpose of this command is to solve problems involving thousands of entities or items. However, when this command was added, tameable animals were not a thing and the loss of entities was not an issue, but this is no longer the case and this command should be reserved for extremely desperate occasions. <code class="docutils literal notranslate"><span class="pre">-s</span></code> can be provided to make the toggle not issue an announcement in chat.</p></td>
+</tr>
+<tr class="row-odd"><td><div class="line-block">
+<div class="line">/stoplag</div>
+<div class="line">/halt-activity</div>
+<div class="line">/haltactivity</div>
+</div>
+</td>
+<td><p>-c [-s]</p></td>
+<td><p>Disable the ‘stop lag’ mode. <code class="docutils literal notranslate"><span class="pre">-s</span></code> can be provided to make the toggle not issue an announcement in chat.</p></td>
+</tr>
+<tr class="row-even"><td><div class="line-block">
+<div class="line">/stoplag</div>
+<div class="line">/halt-activity</div>
+<div class="line">/haltactivity</div>
+</div>
+</td>
+<td><p>-i</p></td>
+<td><p>Display the status of the ‘stop lag’ mode.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="troubleshooting">
+<span id="id1"></span><h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading">¶</a></h2>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 19.5%" />
+<col style="width: 19.5%" />
+<col style="width: 61.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Parameters</p></th>
+<th class="head"><p>Explanation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>/wg report</p></td>
+<td><p>[-p]</p></td>
+<td><p>Writes a report file (placed at <code class="docutils literal notranslate"><span class="pre">plugins/WorldGuard/report.txt</span></code>) detailing information about the server setup (list of plugins, their versions, world settings) as well as WorldGuard’s configuration. This command is to easily provide information to others for support purposes. The report does not contain sensitive data. Use <code class="docutils literal notranslate"><span class="pre">-p</span></code> to also submit the report to a pastebin site and have a link generated that you can give to others.</p></td>
+</tr>
+<tr class="row-odd"><td><p>/wg profile</p></td>
+<td><p>[-p] [-i &lt;milliseconds&gt;] [-t &lt;name&gt;] [&lt;minutes&gt;]</p></td>
+<td><p>Starts profiling CPU usage of the current running server, and runs the profiler for the given duration (defaulting to 5 minutes if a duration is not specified). The profiler is based on <a class="reference external" href="https://github.com/sk89q/warmroast">WarmRoast</a>.</p>
+<p>By default, results are only collected for the main thread where the world is ‘ticked’, but <code class="docutils literal notranslate"><span class="pre">-t</span></code> can be specified to filter by a different thread name (case in-sensitive). An asterisk (<code class="docutils literal notranslate"><span class="pre">*</span></code>) can be specified instead to profile all threads (i.e. <code class="docutils literal notranslate"><span class="pre">-t</span> <span class="pre">*</span></code>). By default, the profiler uses a sampling interval of 20 milliseconds, but <code class="docutils literal notranslate"><span class="pre">-i</span></code> can be used to specify a custom interval in milliseconds between 1 and 100. Lower intervals are more accurate but more performance intensive, while larger intervals are less accurate and less performance intensive.</p>
+<p>Use <code class="docutils literal notranslate"><span class="pre">-p</span></code> to also submit the profiling result to a pastebin site and have a link generated that you can give to others. This is recommended because the output of the profiler is formatted by the pastebin site to make it readable.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>/wg stopprofile</p></td>
+<td></td>
+<td><p>Stops a currently running profiler.</p></td>
+</tr>
+<tr class="row-odd"><td><p>/wg debug testbreak</p></td>
+<td><p>[-t] [-s] &lt;player&gt;</p></td>
+<td><p>Simulates a ‘block break’ event. This is explained below.</p></td>
+</tr>
+<tr class="row-even"><td><p>/wg debug testplace</p></td>
+<td><p>[-t] [-s] &lt;player&gt;</p></td>
+<td><p>Simulates a ‘block place’ event. This is explained below.</p></td>
+</tr>
+<tr class="row-odd"><td><p>/wg debug testinteract</p></td>
+<td><p>[-t] [-s] &lt;player&gt;</p></td>
+<td><p>Simulates a ‘block interact’ event. This is explained below.</p></td>
+</tr>
+<tr class="row-even"><td><p>/wg debug testdamage</p></td>
+<td><p>[-t] [-s] &lt;player&gt;</p></td>
+<td><p>Simulates an ‘entity damage’ event (use to test PvP and PvE). This is explained below.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="event-simulation">
+<h3>Event Simulation<a class="headerlink" href="#event-simulation" title="Link to this heading">¶</a></h3>
+<p>The event simulation commands are useful if, for example, players can’t break blocks for some reason and you cannot identify the plugin causing it (without more drastic measures). Use of the <code class="docutils literal notranslate"><span class="pre">/wg</span> <span class="pre">debug</span> <span class="pre">testbreak</span></code> command would simulate the block break and record which, if any, plugins chose to block the virtual block break.</p>
+<p>In order to use the commands, a player must be provided. The player is the <em>source</em> of the event. The target of the event (i.e. the block that being “broken” or the entity that is being “attacked”), however, is from the perspective of the person running the command. However, if <code class="docutils literal notranslate"><span class="pre">-t</span></code> is specified, then the target is from the perspective of the source player. The target is whichever block or entity is in the player’s crosshair.</p>
+<p>Several plugins may be listed in the output of the command, but only the first entry matters. This is because, for example, if Plugin A blocks the action, and Plugin B, which runs afterwards, “unblocks” the action, then Plugin A has no effect. WorldGuard lists the last running plugins first.</p>
+<aside class="topic">
+<p class="topic-title">An example</p>
+<p>If you want to see why PvP seems to be blocked, have another player (who is not able to PvP) look at you and then run the command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="o">/</span><span class="n">wg</span> <span class="n">debug</span> <span class="n">testdamage</span> <span class="o">-</span><span class="n">t</span> <span class="n">other_player_name</span>
+</span></pre></div>
+</div>
+</aside>
+<p>Be aware that the tests are not entirely complete. This is because Bukkit sometimes throws <em>other</em> events for some actions. For example, when filling a bucket, Bukkit fires a <em>bucket fill event</em>, which WorldGuard currently does not provide a way to simulate. Lastly, sometimes Minecraft features (like adventure mode or the built-in spawn protection) may be at play.</p>
+<p>Use <code class="docutils literal notranslate"><span class="pre">-s</span></code> to print a stacktrace with additional information to the console.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>While the events are simulations in that Minecraft won’t place or break the block in question, plugins do act upon the events. For example, a plugin may allow you to right click specially marked signs to teleport, and simulating an interact event on a teleport sign may possibly cause the victim player to be teleported.</p>
+</div>
+</section>
+</section>
+<section id="miscellaneous">
+<h2>Miscellaneous<a class="headerlink" href="#miscellaneous" title="Link to this heading">¶</a></h2>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 19.5%" />
+<col style="width: 19.5%" />
+<col style="width: 61.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Parameters</p></th>
+<th class="head"><p>Explanation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>/wg version</p></td>
+<td></td>
+<td><p>Show WorldGuard’s version.</p></td>
+</tr>
+<tr class="row-odd"><td><p>/wg reload</p></td>
+<td></td>
+<td><p>Reload WorldGuard’s configuration, blacklist, and region data.</p></td>
+</tr>
+<tr class="row-even"><td><div class="line-block">
+<div class="line">/wg running</div>
+<div class="line">/wg queue</div>
+</div>
+</td>
+<td></td>
+<td><p>Show WorldGuard’s running tasks. An example of a running task is a UUID lookup of a player that occurs in the background.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+
+        </article><button class="back-to-top" type="button">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+  </svg>
+  <span>Back to top</span>
+</button><div class="navigation flex print:hidden"><div class="navigation-prev">
+    <a href="../build-perms/">
+      <i class="i-lucide chevron-left"></i>
+      <div class="page-info">
+        <span>Previous</span><div class="title">Build Permissions</div></div>
+    </a>
+  </div><div class="navigation-next">
+    <a href="../blacklist/">
+      <div class="page-info">
+        <span>Next</span>
+        <div class="title">Blacklist</div>
+      </div>
+      <i class="i-lucide chevron-right"></i>
+    </a>
+  </div></div><div class="sponsorbox">
+    <div class="sponsor apexhosting">
+        <a href="https://billing.apexminecrafthosting.com/aff.php?aff=3108">
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 750 150" style="enable-background:new 0 0 750 150;" xml:space="preserve">
+            <style type="text/css">
+                .st0{fill:var(--sponsor-logo-color);}
+                .st1{display:none;}
+            </style>
+            <g id="Layer_1_1_">
+                <g>
+                    <path id="XMLID_29_" class="st0" d="M352.5,71.7c0,11.8-0.1,23.5,0.1,35.3c0.1,4.5-1.6,7.1-5.7,9c-16.5,7.3-32.9,15-49.5,22.1
+                        c-2.5,1.1-6.4,0.9-9-0.2c-17.1-7.4-34-15.2-51-22.8c-3.5-1.6-4-4.7-4-8c0-7.6,0-15.2,0-22.8c0-15.6,0-31.3,0-46.9
+                        c0-7.3,0.9-8.5,7.6-10.7c15.2-5,30.3-10.1,45.7-14.6c4-1.2,8.9-1.2,12.9,0c15.2,4.5,30.2,9.8,45.2,14.8c6.3,2.1,7.5,3.7,7.6,10.6
+                        C352.5,48.7,352.5,60.2,352.5,71.7L352.5,71.7z M247.7,44.9c0,19.6,0,38.5,0.1,57.3c0,1,1.1,2.4,2.1,2.9
+                        c7.6,3.6,15.2,7.1,22.9,10.6c4.5,2,9,4,13.8,6.1c0-19.7,0-38.8-0.1-57.8c0-0.8-0.8-2.1-1.5-2.5C272.9,56,260.7,50.6,247.7,44.9z
+                        M339,44.6c-12.3,5.7-23.8,11.1-35.3,16.3c-2.2,1-2.9,2.2-2.9,4.6c0.1,16.6,0.1,33.2,0.1,49.8c0,1.7,0,5.3,0,5.3s-0.1,0.3,0.1,0.4
+                        s24.9-10.9,36.6-16.2c0.7-0.3,1.4-1.7,1.4-2.6C339.1,83.3,339.1,64.4,339,44.6z M260.6,35c0,0.1,21.8,10,32.4,14.7
+                        c0.6,0.3,1.6,0.2,2.3-0.1c10.1-4.6,20.1-9.3,31.3-14.4c-9.2-3-17.3-5.8-25.4-8.3c-3-0.9-6.4-2.7-9.1-1.9
+                        C281.7,27.6,260.6,34.8,260.6,35z"/>
+                    <path id="XMLID_15_" class="st0" d="M171.1,63.2c-7.2,0-14.2,0-21.4,0c0,2.6,0,4.7,0,7.3c6.1,0,12,0,18.1,0c0,3.9,0,7.3,0,11.2
+                        c-5.9,0-11.8,0-18.1,0c0,2.9,0,5.3,0,8.2c7.4,0,14.7,0,22.3,0c0,3.8,0,7.1,0,10.8c-12.1,0-24.3,0-36.9,0c0-16,0-32.1,0-48.5
+                        c11.9,0,23.8,0,36,0C171.1,55.7,171.1,59.2,171.1,63.2z"/>
+                    <path id="XMLID_27_" class="st0" d="M102.7,86c0,5,0,9.7,0,14.7c-4.9,0-9.5,0-14.3,0c0-14.6,0-48.5,0-48.5s15.9-1.9,29.8,1.3
+                        c8.1,1.4,11.5,8.3,10.8,17.6c-0.7,7.8-5.9,13.2-13.8,14.1C111.3,85.6,107.3,85.7,102.7,86z M102.8,74.6c2.5,0,3.9,0,5.9-0.1
+                        c2.2,0,4.1-0.3,5.5-2.6c0.9-1.5,0.8-4.7-0.2-6.1c-1.5-3.7-11.2-2.4-11.2-2.4S102.8,70.5,102.8,74.6z"/>
+                    <path id="XMLID_10_" class="st0" d="M191.9,75.6c-4.6-7.6-9.2-15.2-14.2-23.4c-0.1-0.1,16.1,0,16.1,0s4.9,9.2,6.6,12.5
+                        c1.7-3.2,6.8-12.5,6.8-12.5h16c0,0-10,15.7-15,23.5c4.9,8.1,15,25,15,25h-15.7c0,0-5.6-9.4-7.7-13.4c-1.5,2.8-4,7.5-4,7.5l-3,5.9
+                        c0,0-16.5,0.1-16.4,0C181.7,92,186.8,83.8,191.9,75.6z"/>
+                    <path id="XMLID_25_" class="st0" d="M49.1,100.5c0,0-9,0-13.8,0C40.7,84,46,67.9,51.4,51.6c4.3,0,14-0.1,14.6-0.1
+                        c0,0,0.8,1.9,0.9,2.4c5.1,15,15,45.9,15,46.5c-4.6,0-14,0-14,0l-1.4-5.8l-15.1-0.3L49.1,100.5z M59.1,67.8c-0.3,0-0.6,0-1,0
+                        c-1.4,5.4-2.7,10.7-4.1,16.3c3.4,0,6.3,0,9.4,0C61.9,78.3,60.5,73,59.1,67.8z"/>
+                    <path id="XMLID_3_" class="st0" d="M102.8,74.6"/>
+                    <g>
+                        <path class="st0" d="M364,52h15v17h16.4V52h15.1v48.7h-15.1V81h-16.4v19.7h-15V52z"/>
+                        <path class="st0" d="M418.7,76.4c0-7.9,2.2-14.1,6.6-18.6c4.4-4.4,10.6-6.6,18.5-6.6c8.1,0,14.3,2.2,18.7,6.5s6.6,10.4,6.6,18.3
+                            c0,5.7-1,10.4-2.9,14c-1.9,3.6-4.7,6.5-8.3,8.5s-8.1,3-13.5,3c-5.5,0-10-0.9-13.6-2.6c-3.6-1.7-6.5-4.5-8.7-8.3
+                            C419.8,86.8,418.7,82.1,418.7,76.4z M433.8,76.4c0,4.9,0.9,8.4,2.7,10.6c1.8,2.1,4.3,3.2,7.5,3.2c3.2,0,5.7-1.1,7.5-3.2
+                            c1.8-2.1,2.7-5.9,2.7-11.3c0-4.6-0.9-7.9-2.8-10c-1.8-2.1-4.4-3.2-7.5-3.2c-3,0-5.5,1.1-7.3,3.2
+                            C434.7,67.9,433.8,71.5,433.8,76.4z"/>
+                        <path class="st0" d="M474.6,84.6l14.3-0.9c0.3,2.3,0.9,4.1,1.9,5.3c1.5,2,3.8,3,6.6,3c2.1,0,3.8-0.5,5-1.5c1.2-1,1.7-2.2,1.7-3.5
+                            c0-1.3-0.6-2.4-1.7-3.4c-1.1-1-3.7-1.9-7.7-2.8c-6.6-1.5-11.3-3.5-14.1-5.9c-2.8-2.5-4.2-5.6-4.2-9.4c0-2.5,0.7-4.9,2.2-7.1
+                            c1.4-2.2,3.6-4,6.5-5.2c2.9-1.3,6.9-1.9,12-1.9c6.2,0,11,1.2,14.2,3.5c3.3,2.3,5.2,6,5.8,11L503,66.5c-0.4-2.2-1.2-3.8-2.4-4.8
+                            c-1.2-1-2.9-1.5-5-1.5c-1.7,0-3.1,0.4-4,1.1c-0.9,0.7-1.3,1.6-1.3,2.7c0,0.8,0.4,1.5,1.1,2.1c0.7,0.6,2.4,1.2,5,1.8
+                            c6.6,1.4,11.3,2.9,14.1,4.3c2.8,1.5,4.9,3.2,6.2,5.4c1.3,2.1,1.9,4.5,1.9,7.2c0,3.1-0.9,6-2.6,8.6c-1.7,2.6-4.1,4.6-7.2,6
+                            c-3.1,1.4-7,2-11.7,2c-8.3,0-14-1.6-17.2-4.8S475.1,89.5,474.6,84.6z"/>
+                        <path class="st0" d="M523,52h45.7v12h-15.3v36.7h-15V64H523V52z"/>
+                        <path class="st0" d="M576.1,52h15.1v48.7h-15.1V52z"/>
+                        <path class="st0" d="M602,52h14l18.3,26.9V52h14.2v48.7h-14.2L616.2,74v26.7H602V52z"/>
+                        <path class="st0" d="M683.1,83.1V72.9h23.2v20.8c-4.4,3-8.4,5.1-11.8,6.2s-7.5,1.6-12.2,1.6c-5.8,0-10.5-1-14.1-3
+                            c-3.6-2-6.5-4.9-8.5-8.8c-2-3.9-3-8.4-3-13.4c0-5.3,1.1-9.9,3.3-13.9c2.2-3.9,5.4-6.9,9.6-8.9c3.3-1.6,7.7-2.4,13.3-2.4
+                            c5.4,0,9.4,0.5,12.1,1.5c2.7,1,4.9,2.5,6.6,4.5c1.8,2,3.1,4.6,4,7.8l-14.5,2.6c-0.6-1.8-1.6-3.2-3-4.2c-1.4-1-3.2-1.5-5.5-1.5
+                            c-3.3,0-5.9,1.1-7.9,3.4s-2.9,5.9-2.9,10.9c0,5.3,1,9,3,11.3c2,2.3,4.7,3.4,8.3,3.4c1.7,0,3.3-0.2,4.8-0.7
+                            c1.5-0.5,3.3-1.3,5.2-2.5v-4.6H683.1z"/>
+                    </g>
+                </g>
+            </g>
+            <g id="Layer_2_1_" class="st1">
+            </g>
+            </svg>
+            <p>We recommend ApexHosting!</p>
+        </a>
+    </div>
+</div></div>
+    </div>
+  </main>
+</div>
+<footer class="sy-foot">
+  <div class="sy-foot-inner sy-container mx-auto">
+    <div class="sy-foot-reserved md:flex justify-between items-center">
+      <div class="sy-foot-copyright"><p>2015-2026, WorldGuard Team</p>
+  
+  <p>
+    Made with
+    
+    <a href="https://www.sphinx-doc.org/">Sphinx</a> and
+    
+    <a href="https://shibuya.lepture.com">Shibuya theme</a>.
+  </p>
+</div>
+      <div class="sy-foot-socials">
+<a href="https://github.com/EngineHub/WorldGuard" aria-label="GitHub">
+  <iconify-icon icon="simple-icons:github"></iconify-icon>
+</a>
+<a href="https://discord.gg/enginehub" aria-label="Discord">
+  <iconify-icon icon="simple-icons:discord"></iconify-icon>
+</a></div>
+    </div>
+  </div>
+</footer>
+      <script src="../_static/documentation_options.js?v=618d875b"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../_static/shibuya.js?v=cac61aee"></script></body>
+</html>

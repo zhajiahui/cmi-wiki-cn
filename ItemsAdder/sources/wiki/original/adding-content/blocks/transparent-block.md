@@ -1,0 +1,26 @@
+
+# Transparent block
+
+<div><figure><img src="../../.gitbook/assets/transparent-block_002.png" alt=""><figcaption></figcaption></figure></div>
+
+To create a transparent block you have to use `REAL_TRANSPARENT` block model type.
+
+```yaml
+info:
+  namespace: test_transparent
+items:
+  test_block_transparent:
+    enabled: true
+    display_name: test_block_transparent
+    resource:
+      generate: true
+      textures:
+        - test
+      material: PAPER
+    behaviours:
+      block:
+        placed_model:
+          type: REAL_TRANSPARENT
+        cancel_drop: false
+```
+

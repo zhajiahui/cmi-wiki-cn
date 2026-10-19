@@ -1,0 +1,171 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Citizens Wiki",
+    "pageid": 1,
+    "revid": 5538,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>Welcome to the Citizens Wiki! </p><div class=\"infobox\" style=\"float: right; margin-left:0.5em;\">\n<table width=\"300\" style=\"border: 0; background-color: #ffffff\" cellpadding=\"0\" cellspacing=\"3\">\n<tbody><tr>\n<td style=\"width: 300; vertical-align: top; border:1px solid #ccc; background-color: #ffffff\">\n<div style=\"background-color:#aaa; font-size:1px; height:8px; border-bottom:1px solid #ccc;\"></div>\n<div style=\"float:right; margin:8px; margin-top:5px\"></div>\n<div style=\"padding:0.5em 0.3em 0.3em 0.3em; margin:0; text-indent:0.1em; font-weight: bold; border-bottom:1px solid #aaaaaa;\"><b> </b></div>\n<div style=\"font-size:100%; padding:3px\">\n<table cellpadding=\"0\" cellspacing=\"3\" width=\"100%\">\n<tbody><tr>\n<td align=\"left\" valign=\"top\" width=\"100%\">\n<figure class=\"mw-default-size mw-halign-center\" typeof=\"mw:File\"><a href=\"/File:Wordmark.png\" class=\"mw-file-description\"><img src=\"/images/1/1b/Wordmark.png\" decoding=\"async\" width=\"333\" height=\"186\" class=\"mw-file-element\" /></a><figcaption></figcaption></figure>\n<div class=\"padded\" style=\"padding: 19px\">\n<p><b>Citizens</b> is a Minecraft server plugin that utilizes the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.bukkit.org/\">Bukkit API</a>. It adds various Non-Player Character (NPC) functionality. Citizens also features an easy-to-use <a href=\"/API\" title=\"API\">API</a> for plugin developers. \n</p><p><b>Downloads:</b> <a href=\"/Downloads\" title=\"Downloads\">Downloads</a>\n</p><p><b>Spigot Page:</b> <a rel=\"nofollow\" class=\"external text\" href=\"https://www.spigotmc.org/resources/citizens.13811/\">Spigot</a>\n</p><p><b>Developers:</b> fullwall\n</p><p><b>Source:</b> <a rel=\"nofollow\" class=\"external text\" href=\"https://github.com/CitizensDev/Citizens2\">Github</a>\n</p><p><b>Support tickets:</b> Ask on <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord</a> in the '#citizens' channel, or post an issue on <a rel=\"nofollow\" class=\"external text\" href=\"https://github.com/CitizensDev/Citizens2/issues\">Github</a>, but please see <a href=\"/Troubleshooting\" title=\"Troubleshooting\">Troubleshooting</a> first.\n</p><p><b>Discord:</b> <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord</a>\n</p><p><b>Donate: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.github.com/sponsors/fullwall\">fullwall</a></b>\n<br />\n</p>\n</div></td></tr></tbody></table>\n</div>\n</td></tr></tbody></table>\n</div>\n\n<p>Citizens is a popular Minecraft server plugin that allows you to create non player characters (NPCs) to provide varied gameplay and functionality for your server such as basic statues, shopkeepers, guards, scriptable NPCs and much more.\n</p>\n<div class=\"padded\">\n<table class=\"wikitable\" style=\"margin: auto\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\">Usage\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Installation\" title=\"Installation\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Frequently_Asked_Questions\" title=\"Frequently Asked Questions\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Shops\" title=\"Shops\">Shops</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Templates\" title=\"Templates\">Templates</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Editors\" title=\"Editors\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Behaviors\" title=\"Behaviors\">Behaviors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/API\" title=\"API\">API</a>\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Configuration\" title=\"Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Data_Storage\" title=\"Data Storage\">Data Storage</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Translations\" title=\"Translations\">Translations</a>\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Characters\" title=\"Characters\">Characters</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Denizen\" title=\"Denizen\">Denizen</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Sentinel\" title=\"Sentinel\">Sentinel</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/DtlTraders\" title=\"DtlTraders\">DtlTraders</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Builder\" title=\"Builder\">Builder</a>\n</td></tr>\n<tr>\n<th style=\"width: 15%\">Info\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Downloads\" title=\"Downloads\">Downloads</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord</a>\n</td></tr>\n<tr>\n<th style=\"width: 15%\">Special Information\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Minecraft_1.8\" title=\"Minecraft 1.8\">Minecraft 1.8</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Cracks\" title=\"Cracks\">Cracks</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Skins\" title=\"Skins\">Skins</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/NPC_Commands\" title=\"NPC Commands\">NPC Commands</a>\n</td></tr></tbody></table>\n</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Features\">Features</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Citizens_Wiki&amp;action=edit&amp;section=1\" title=\"Edit section: Features\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ul><li>NPCs can walk, stand and talk naturally to players.</li>\n<li>Easy to use <a href=\"/API\" title=\"API\">API</a> for developers that allow <a href=\"/Traits\" class=\"mw-redirect\" title=\"Traits\">Traits</a> to be built for specific functionality.</li>\n<li><a href=\"/Types\" title=\"Types\">Support for all mob types</a> including Players, Pigs, and even non living ones like dropped items or arrow projectiles.</li>\n<li><a href=\"/Commands\" title=\"Commands\">Commands</a> Extensive commands to customise NPCs.</li>\n<li><a href=\"/Controllable_NPCs\" title=\"Controllable NPCs\">Ridable NPCs</a>.</li>\n<li>Text editing.</li>\n<li>Basic GUI shops.</li>\n<li>Pathing.</li>\n<li>Much more.</li></ul>\n<!-- \nNewPP limit report\nCached time: 20261019145752\nCache expiry: 86400\nReduced expiry: false\nComplications: [no‐toc]\nCPU time usage: 0.054 seconds\nReal time usage: 0.102 seconds\nPreprocessor visited node count: 52/1000000\nRevision size: 748/2097152 bytes\nPost‐expand include size: 5878/2097152 bytes\nTemplate argument size: 868/2097152 bytes\nHighest expansion depth: 4/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   27.908      1 -total\n 53.86%   15.031      1 Template:FNavBox\n 45.48%   12.693      1 Template:InfoBox\n 18.89%    5.273     17 Template:·\n 18.01%    5.025      1 Template:Box\n-->\n\n<!-- Render ID 752fe667-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "API"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Behaviors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Builder"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Configuration"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Controllable NPCs"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Cracks"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Data Storage"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Downloads"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "DtlTraders"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Editors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Minecraft 1.8"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "NPC Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Sentinel"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Shops"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Skins"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Templates"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Traits"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Translations"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Troubleshooting"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Types"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      }
+    ],
+    "images": [
+      "Wordmark.png"
+    ],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Features",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Citizens_Wiki",
+        "byteoffset": 303,
+        "anchor": "Features",
+        "linkAnchor": "Features"
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+== Denizen Support ==
+
+All denizen commands/tags/triggers requires latest denizen version.
+
+===  Commands reference ===
+
+Incoming
+
+===  Tags reference ===
+
+Incoming
+
+===  Trigger/Actions reference ===
+
+Incoming
+
+=== Examples ===
+
+Incoming
+
+== Navigation ==
+{| class="wikitable" style="text-align: center; width: 500px"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="2" | '''DtlTraders'''
+|-
+| Configuration || <!--| [http://wiki.citizensnpcs.com/DtlTraders/config Configuration] -->| [http://wiki.citizensnpcs.com/DtlTraders/Commands Commands] | [http://wiki.citizensnpcs.com/DtlTraders/permissions Permissions] | [http://wiki.citizensnpcs.com/DtlTraders/locale Locale] 
+|-
+| Usage || <!--| [http://wiki.citizensnpcs.com/DtlTraders/managing Managing] | [http://wiki.citizensnpcs.com/DtlTraders/trading Trading] | [http://wiki.citizensnpcs.com/DtlTraders/banking Banking] |--> [http://wiki.citizensnpcs.com/DtlTraders/patterns Patterns]
+|-
+| Types || <!--| [http://wiki.citizensnpcs.com/DtlTraders/traders Traders] | [http://wiki.citizensnpcs.com/DtlTraders/bankers Bankers] <!--| [http://wiki.citizensnpcs.com/DtlTraders/auctionhouse Auction House] | [http://wiki.citizensnpcs.com/DtlTraders/wallets Wallets]-->
+|-
+| Denizen Support || <!--| [http://wiki.citizensnpcs.com/DtlTraders/denizen/commands Commands] | [http://wiki.citizensnpcs.com/DtlTraders/denizen/triggers Triggers] -->
+|}

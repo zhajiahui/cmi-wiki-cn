@@ -1,0 +1,25 @@
+== Using the trader ==
+
+# With an empty hand right click the NPC
+# To toggle between buying/selling click the lime/cyan wool in the lower right corner.
+== Buy menu ==
+#Clicking once on an item shows the price or brings up the amount selection menu.
+#Clicking the item a second time buys it.<br />
+<br />
+When in the amount selection menu you can click the red wool to go back to the trader's main inventory.<br />
+== Sell menu ==
+#Clicking once on an item shows how much you will get for it.
+#Clicking the item a second time sells it. 
+<br />
+'''Note:''' NPCs will not buy anything unless you set up the accepted items and their prices.
+== Navigation ==
+{| class="wikitable" style="text-align: center; width: 500px"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="2" | '''DtlTraders'''
+|-
+| Usage || | [http://wiki.citizensnpcs.com/DtlTraders/managing Managing] | [http://wiki.citizensnpcs.com/DtlTraders/trading Trading] | [http://wiki.citizensnpcs.com/DtlTraders/banking Banking] <!-- | [http://wiki.citizensnpcs.com/DtlTraders/patterns Patterns] -->
+|-
+| Configuration || | [http://wiki.citizensnpcs.com/DtlTraders/config Configuration] | [http://wiki.citizensnpcs.com/DtlTraders/Commands Commands] | [http://wiki.citizensnpcs.com/DtlTraders/permissions Permissions] | [http://wiki.citizensnpcs.com/DtlTraders/locale Locale] 
+|-
+| Types || | [http://wiki.citizensnpcs.com/DtlTraders/traders Traders] | [http://wiki.citizensnpcs.com/DtlTraders/bankers Bankers] <!--| [http://wiki.citizensnpcs.com/DtlTraders/auctionhouse Auction House] | [http://wiki.citizensnpcs.com/DtlTraders/wallets Wallets]-->
+|}

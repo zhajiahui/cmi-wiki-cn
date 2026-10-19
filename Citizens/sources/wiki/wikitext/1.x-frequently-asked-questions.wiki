@@ -1,0 +1,20 @@
+{{NoSupport}}
+This page still being updated.
+
+'''I'm getting an error regarding an NPC type(s) on startup. What should I do?'''
+<br>Make sure all of your NPC type .JAR files are in the %ROOT%/plugins/Citizens/types directory.
+
+'''Can I give my NPCs custom skins?'''
+<br>Citizens does not officially support custom skins and '''never will'''. However, for custom skins and other client-side Citizens additions, it is recommended that you use [http://forums.bukkit.org/threads/mech-fun-citizenspout-v0-0-1-give-your-npcs-unique-skins-1000-1060.32594/ CitizenSpout] by mbsuperstar1.
+
+'''How come my NPC won't talk?'''
+<br>You must be holding the configurable talk-item. You can change this item in citizens.yml under the node ''item.talk-items''. The default item is a book (ID 340).
+
+'''Why isn't the ''/toggle'' command working?'''
+<br>This is a conflict with xAuth. Use an alias: ''/tog'' or ''/t''.
+
+'''I am getting errors, and none of the developers respond to my questions in the thread. What should I do?'''
+<br>To get a response from a developer, it is key that you follow the directions in the README file that is packaged in Citizens.jar. You can also view it [https://github.com/CitizensDev/Citizens/blob/master/README here].
+
+{{NavBox}}
+[[Category:Citizens1]]

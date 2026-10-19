@@ -1,0 +1,21 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "YAML",
+    "pageid": 203,
+    "revid": 2405,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>All the scripts and configuration nodes are in YAML. Remember! Spacing is CRITICAL when dealing with YAML files. Each parent node and sibling node should follow the spacing and formatting guidelines set forth by the YAML 1.0 standard. Generally, your indents should remain consistant. In all the examples used in this guide, 2 spaces are used for indenting.  Generally, whatever you choose should be maintained through your YAML document. Remember: NO TABS are allowed in YAML files. If you are using notepad++ to edit your scripts, be sure to change the tab-&gt;space setting in Preferences&gt;LanguageMenu/Tab Settings.\n</p><p>In all the denizen YAML files, nodes are case sensitive! For example, in a script.yml, 'Scripts:' will work. 'scripts:' will not! All nodes are first letter capital, rest of the word lowercase. Scripts names follow this rule too! Also: Commands/Requirements are generally ALL UPPERCASE, but we'll get to that.\n</p><p>YAML tutorials can be intimidating, but <a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.ess3.net/wiki/YAML_Tutorial\">this small tutorial on the Essentials wiki</a> is pretty useful for basic YAML, which is the extent of which Denizens uses.\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145911\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.010 seconds\nReal time usage: 0.022 seconds\nPreprocessor visited node count: 1/1000000\nRevision size: 1129/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 1/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID a44657e5-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": []
+  }
+}

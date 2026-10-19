@@ -1,0 +1,1 @@
+New MC server : join netheria.luox.dev and the ip is play.luox.dev

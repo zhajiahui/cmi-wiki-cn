@@ -1,0 +1,91 @@
+{{NoSupport}}
+'''Questers''' allow players to go on many different types of quests. They can collect or place blocks, attack mobs, travel a certain distance, and more! Quests are fully customizable in the [[1.x/Quests.yml]] file. You can assign these quests to a quester and send your players on fun quests. See below for information on setting up a quester and customizing your quests.
+
+== Commands ==
+
+{| class="wikitable collapsible collapsed" style="text-align: center; width: 100%"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="6" | '''Quester Commands'''
+|-
+! style="width: 250px;" | Command
+! style="width: 200px;" | Args Description
+! style="width: 150px;" | Require Selected
+! style="width: 150px;" | Require Ownership
+! style="width: 170px;" | Permission
+! Description
+|-
+| /quester help
+| ''None''
+| false
+| false
+| citizens.quester.use.help
+| View the help page for questers
+|-
+| /quester assign [quest]
+| ''quest'' - name of quest to assign to a quester
+| true
+| true
+| citizens.quester.modify.quests.assign
+| Assign a quest to a quester
+|-
+| /quester remove [quest]
+| ''quest'' - quest to remove from a quester
+| true
+| true
+| citizens.quester.modify.quests.remove
+| Remove a quest from a quester
+|-
+| /quester quests (page)
+| ''page'' - page number
+| true
+| true
+| citizens.quester.use.quests.view
+| View a quester's quests
+|-
+| /quest help
+| ''None''
+| false
+| false
+| citizens.quester.use.quests.help
+| View the help page for quests
+|-
+| /quest abort
+| ''None''
+| true
+| true
+| citizens.quester.use.quests.abort
+| Abort the current quest
+|-
+| /quest completed (page)
+| ''page'' - page number
+| false
+| false
+| citizens.quester.use.quests.status
+| View completed quests
+|-
+| /quest status
+| ''None''
+| false
+| false
+| citizens.quester.use.quests.status
+| View the status of the current quest
+|}
+
+== Usage ==
+To accept a quest, go to a quester NPC. Via left clicking, you can scroll through the descriptions of each possible quest that the quester has assigned to it and that you can accept. Right click to accept the quest.
+
+Only one quest can be accepted at any time - use /quest abort to abandon the current quest.
+
+The status of the current quest can be viewed at any time via /quest status. On completion of the quest, return to the original quester NPC and right click them to finish the quest.
+== Quest Configuration ==
+
+See [[1.x/Quests.yml]] for detailed information about writing and editing quest structure.
+
+== Troubleshooting Quests.yml ==
+
+Many problems with quest files are caused by incorrectly formatted YAML.  To make sure your YAML quest file is able to be parsed correctly, this handy tool may be of help. [http://yaml-online-parser.appspot.com/ This online YAML parser] will take input syntax in the left window, and if correctly parsed, will show a result in the right side.  If errors occur, check your [[1.x/Quests.yml]] formatting and try again.
+
+When writing custom quests, check format thoroughly, especially objectives. The [[1.x/Quests.yml]] page outlines each node required by quests.
+
+{{NavBox}}
+[[Category:Citizens1]]

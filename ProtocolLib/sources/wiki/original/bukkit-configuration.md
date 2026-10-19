@@ -1,0 +1,25 @@
+Default configuration file:
+
+```
+global:
+  # Settings for the automatic version updater
+  auto updater:
+    notify: true
+    download: false
+    
+    # Number of seconds to wait until a new update is downloaded
+    delay: 43200 # 12 hours
+    # Last update time
+    last: 0
+ 
+  metrics: true
+  
+  # Automatically compile structure modifiers 
+  background compiler: true
+  
+  # Disable version checking for the given Minecraft version. Backup your world first!
+  ignore version check: 
+  
+  # Override the starting injecting method
+  injection method:
+```

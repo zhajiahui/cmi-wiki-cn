@@ -1,0 +1,44 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Race Reference",
+    "pageid": 330,
+    "revid": 4679,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><div class=\"mw-heading mw-heading2\"><h2 id=\"Creating_a_Race\">Creating a Race</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Race_Reference&amp;action=edit&amp;section=1\" title=\"Edit section: Creating a Race\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Race folders need to go in [server folder]/plugins/Adventures/races/YourRaceHere.\nEvery race needs a descriptor, or a file that tells Adventures what to load for your race. This will be info.yml OR info.js OR info.extension, where extension is an embedded Java script language such as Jython or JRuby.\n</p><p>If a scripting language is used for the info file, it will need to have a getDescriptor() method in the root namespace which returns an instance of net.citizensnpcs.adventures.race.RaceDescriptor.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"YAML_Info_File_Structure\">YAML Info File Structure</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Race_Reference&amp;action=edit&amp;section=2\" title=\"Edit section: YAML Info File Structure\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Example YAML file showing all currently available keys:\n</p>\n<pre>name: Name # required\ntribe:\n     max-size: 10 # required\n     behavior: # optional, a behavior root node (explained later)\nmembers:\n     names: # required, a list of possible names for new members to have, picked at random\n         0: Bob\n         1: SirBob\n         2: Bob2\n     types: # required, a list of possible entity types for new members to have, picked at random\n         0: CREEPER\n     behavior: # optional, a behavior root node (explained later)\ndialog:\n     allowed-rules: rule1, filename1 # comma-separated list of rules to allow (can be per-rule or per-file). Leave empty for all rules allowed.\n</pre>\n<p>The behavior root nodes are important for tribes. They are defined as a <i>decision tree</i> of behaviors, which are a single unit of work for an NPC. A tree is a way of organising data which looks similar to an upside-down tree. For a simple illustration, look <a rel=\"nofollow\" class=\"external text\" href=\"https://monk.library.illinois.edu/cic/public/analytics/decision_tree.png\">here</a>. The NPC's AI will start from the top and work its way down to a behavior.\n</p><p>There are three flow constructs that help with behavior flows: sequences, selectors, and decorators. A sequence simply executes each behavior in a list one-by-one until they are all finished. A selector picks one or more behaviors from a list based on some kind of strategy, like a random selection or a priority-based selection. A decorator <i>wraps</i> another behavior without knowing what it does, for things like stopping it after a certain amount of time, or inverting its responses, or doing something before/after it completes.\n</p><p>Finally we have the edge nodes, which are user-defined and do actual work with the NPC. This is a very powerful construct that allows complex behaviors to emerge.\n</p><p>We define this in YAML like so:\n</p>\n<pre>behavior:\n    sequence: # builds a sequence\n        sub: # omitted\n    sequence -r: # builds a sequence which retries children if they fail until the sequence is complete\n    selector: # builds a random selector\n        sub: # omitted\n        sub2: # omitted\n    selector -r: # retries children if they fail until a successful behavior completes\n    selector -p: # prioritises children\n    js filename: \"\" # loads a javascript goal at the file location under your race folder and invokes the getBehavior(Tribe, DataKey) function on it to get a Behavior instance.\n    your.package.name.ClassName: # loads the class at the given package and instantiates it to get a Behavior instance. Must have a 0-argument constructor (note that @Persist annotations from CitizensAPI will work for loading extra data).\n</pre>\n<!-- \nNewPP limit report\nCached time: 20261019145916\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.008 seconds\nReal time usage: 0.013 seconds\nPreprocessor visited node count: 5/1000000\nRevision size: 3194/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID a7414864-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Creating a Race",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Race_Reference",
+        "byteoffset": 0,
+        "anchor": "Creating_a_Race",
+        "linkAnchor": "Creating_a_Race"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "YAML Info File Structure",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Race_Reference",
+        "byteoffset": 523,
+        "anchor": "YAML_Info_File_Structure",
+        "linkAnchor": "YAML_Info_File_Structure"
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Dialog Tutorial",
+    "pageid": 300,
+    "revid": 4319,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>In this tutorial, you will learn the basics of the dialog system syntax, and the concepts involved.\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Overview\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Overview</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Rules\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Rules</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Responses\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Responses</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Writing_a_Rule\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Writing a Rule</span></a></li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#Writing_a_Response\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">Writing a Response</span></a></li>\n<li class=\"toclevel-1 tocsection-6\"><a href=\"#Writing_a_full_Dialog\"><span class=\"tocnumber\">6</span> <span class=\"toctext\">Writing a full Dialog</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Overview\">Overview</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Dialog_Tutorial&amp;action=edit&amp;section=1\" title=\"Edit section: Overview\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>First, let's look at the basic flow of a dialog program. The world of Minecraft can be broken up into a series of <i>events</i>. These are things like talking, combat, block breaks, and so on. The general flow looks kind of like this: event -&gt; listener. This isn't easy to represent in text. How do we make a nice system out of this? \n</p><p>The answer is pretty simple: think of an event as a series of facts, such as a player who was involved, their name, and so on. Each fact has a name or <i>key</i>, and a value eg. the player's name might have a key of \"name\" and a value of \"fullwall\". An event is simply a whole lot of facts about what happened. This makes it much easier to reason about in text.\n</p><p>This approach also makes it easy to associate more facts with an event; this group of facts is known as a <i>query</i>. A query can also have information about the world state, any memory that the NPC has picked up, and more.\n</p><p>Now we have a nice collection of facts - what do we do with them all? Time to introduce two new concepts: <i>rules</i> and <i>responses</i>. The final flow looks like this: event -&gt; NPC -&gt; generate facts -&gt; dialog system -&gt; rules.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Rules\">Rules</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Dialog_Tutorial&amp;action=edit&amp;section=2\" title=\"Edit section: Rules\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>A rule takes in a query and checks it against a list of criteria. If it matches, it does something. For example in a chat event, it may check if the player's name is \"fullwall\", and then say \"Hello, fullwall!\" to the player. Rules are simple, yet can be combined to create complex interactions.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Responses\">Responses</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Dialog_Tutorial&amp;action=edit&amp;section=3\" title=\"Edit section: Responses\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>A response is basically a list of commands; it has no criteria, but can be called from many different kinds of rules.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Writing_a_Rule\">Writing a Rule</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Dialog_Tutorial&amp;action=edit&amp;section=4\" title=\"Edit section: Writing a Rule\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Let's get onto the syntax. Before continuing, make sure you have Adventures downloaded and installed. Any NPC using the dialog system will need to have the dialog trait, so use /trait dialog before trying out any of these examples.\n</p><p>Here's an example rule; it doesn't too much at all.\n</p>\n<pre>rule example {\n    criteria events=any;\n}\n</pre>\n<p>This is the absolute minimum required to write a rule. We have the keyword 'rule' followed by the rule name, and the { character. { and } characters mark the start and end for Adventures. \nNext, we have a 'criteria' declaration. This tells Adventures what events the rule is listening for and what criteria it checks.\n</p>\n<pre>criteria events=\"any\";\n                ^ matches any kind of event, as a demonstration\n</pre>\n<p>Notice the semicolon (';') after the criteria statement - every line within a rule should end with one of these.\nYou can also have multiple events, separated by commas:\n</p>\n<pre>criteria events=onchat, ondamage;\n</pre>\n<p>Before we move onto more advanced examples of criteria, let's review the different types of values in dialogs. Notice that \"any\" was in quotes - this means that the value should be treated as a block of text.\n</p>\n<pre>100 - a number\n\"100\" - text containing the characters 100\n\"text\" - text\ntrue/false - yes or no value\n$sender.location.x - value is taken from the query fact \"sender.location.x\"\n\"${sender.name}\" - value is text containing the fact under sender.name\n</pre>\n<p>Now, criteria that just match the events are pretty pointless. You can also check facts from the query. Let's say that we only want to match the rule when the NPC is standing at x=100.\n</p>\n<pre>criteria events=\"any\" $npc.location.x=100;\n</pre>\n<p>What about when y is below 50?\n</p>\n<pre>criteria events=\"any\" $npc.location.x=100, $npc.location.y&lt;50;\n</pre>\n<p>What about matching a chat rule that starts with h? (note: this uses regex)\n</p>\n<pre>criteria events=\"onchat\" $message~=/h[a-zA-Z]+/\n</pre>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Writing_a_Response\">Writing a Response</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Dialog_Tutorial&amp;action=edit&amp;section=5\" title=\"Edit section: Writing a Response\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Note that many of the statements used in this section can be used in a rule, but it may be helpful to separate the logic out into a response.\n</p><p>A response is written much like a rule without a criteria statement.\n</p>\n<pre>response example {\n}\n</pre>\n<p>Let's call this response in a rule.\n</p>\n<pre>rule example {\n    criteria events=\"any\";\n    response example;\n}\n</pre>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Writing_a_full_Dialog\">Writing a full Dialog</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Dialog_Tutorial&amp;action=edit&amp;section=6\" title=\"Edit section: Writing a full Dialog\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Let's look at a classic 'Hello' example. When a player says 'Hi!' we want to reply 'Hello, (name)!'.\n</p><p>Copy and paste the text below into a new file, 'Hello.txt' inside the plugins/Adventures/dialog folder.\n</p>\n<pre>rule saidHi {\n    criteria events=onchat $message=\"Hi!\";\n    response sayHi;\n}\nresponse sayHi {\n    say message:\"Hello, ${sender.name}!\", target:$sender;\n}\n</pre>\n<!-- \nNewPP limit report\nCached time: 20261019145857\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.011 seconds\nReal time usage: 0.011 seconds\nPreprocessor visited node count: 18/1000000\nRevision size: 4333/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 9bee1ce3-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Overview",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Dialog_Tutorial",
+        "byteoffset": 101,
+        "anchor": "Overview",
+        "linkAnchor": "Overview"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Rules",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Dialog_Tutorial",
+        "byteoffset": 1258,
+        "anchor": "Rules",
+        "linkAnchor": "Rules"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Responses",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "Dialog_Tutorial",
+        "byteoffset": 1564,
+        "anchor": "Responses",
+        "linkAnchor": "Responses"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Writing a Rule",
+        "number": "4",
+        "index": "4",
+        "fromtitle": "Dialog_Tutorial",
+        "byteoffset": 1697,
+        "anchor": "Writing_a_Rule",
+        "linkAnchor": "Writing_a_Rule"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Writing a Response",
+        "number": "5",
+        "index": "5",
+        "fromtitle": "Dialog_Tutorial",
+        "byteoffset": 3573,
+        "anchor": "Writing_a_Response",
+        "linkAnchor": "Writing_a_Response"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Writing a full Dialog",
+        "number": "6",
+        "index": "6",
+        "fromtitle": "Dialog_Tutorial",
+        "byteoffset": 3939,
+        "anchor": "Writing_a_full_Dialog",
+        "linkAnchor": "Writing_a_full_Dialog"
+      }
+    ],
+    "showtoc": ""
+  }
+}

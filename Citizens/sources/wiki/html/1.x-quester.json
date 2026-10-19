@@ -1,0 +1,142 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "1.x/Quester",
+    "pageid": 10,
+    "revid": 1314,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><table class=\"wikitable\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"1\" style=\"width: 100%; background-color:#F75D59; font-size: 32px; padding: 15px;\"><b>Not Supported!</b>\n</th></tr>\n<tr>\n<td style=\"font-size: 16px;\">This page is about Citizens 1.x, while the current version is Citizens 2.0.2. This page's content may be outdated, and shouldn't be trusted as being correct. See this page's talk page for more information. If you were looking for the 2.0.2 equivalent of this page, try <a href=\"/index.php?title=Quester&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Quester (page does not exist)\">Quester</a>. If you feel this message was displayed in error, please contact an administrator.\n</td></tr></tbody></table>\n<p><b>Questers</b> allow players to go on many different types of quests. They can collect or place blocks, attack mobs, travel a certain distance, and more! Quests are fully customizable in the <a href=\"/1.x/Quests.yml\" title=\"1.x/Quests.yml\">1.x/Quests.yml</a> file. You can assign these quests to a quester and send your players on fun quests. See below for information on setting up a quester and customizing your quests.\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Commands\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Commands</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Usage\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Usage</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Quest_Configuration\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Quest Configuration</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Troubleshooting_Quests.yml\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Troubleshooting Quests.yml</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Commands\">Commands</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Quester&amp;action=edit&amp;section=1\" title=\"Edit section: Commands\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<table class=\"wikitable collapsible collapsed\" style=\"text-align: center; width: 100%\">\n\n<tbody><tr>\n<th style=\"width: 100%; background-color:#ADD8E6\" colspan=\"6\"><b>Quester Commands</b>\n</th></tr>\n<tr>\n<th style=\"width: 250px;\">Command\n</th>\n<th style=\"width: 200px;\">Args Description\n</th>\n<th style=\"width: 150px;\">Require Selected\n</th>\n<th style=\"width: 150px;\">Require Ownership\n</th>\n<th style=\"width: 170px;\">Permission\n</th>\n<th>Description\n</th></tr>\n<tr>\n<td>/quester help\n</td>\n<td><i>None</i>\n</td>\n<td>false\n</td>\n<td>false\n</td>\n<td>citizens.quester.use.help\n</td>\n<td>View the help page for questers\n</td></tr>\n<tr>\n<td>/quester assign [quest]\n</td>\n<td><i>quest</i> - name of quest to assign to a quester\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.quester.modify.quests.assign\n</td>\n<td>Assign a quest to a quester\n</td></tr>\n<tr>\n<td>/quester remove [quest]\n</td>\n<td><i>quest</i> - quest to remove from a quester\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.quester.modify.quests.remove\n</td>\n<td>Remove a quest from a quester\n</td></tr>\n<tr>\n<td>/quester quests (page)\n</td>\n<td><i>page</i> - page number\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.quester.use.quests.view\n</td>\n<td>View a quester's quests\n</td></tr>\n<tr>\n<td>/quest help\n</td>\n<td><i>None</i>\n</td>\n<td>false\n</td>\n<td>false\n</td>\n<td>citizens.quester.use.quests.help\n</td>\n<td>View the help page for quests\n</td></tr>\n<tr>\n<td>/quest abort\n</td>\n<td><i>None</i>\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.quester.use.quests.abort\n</td>\n<td>Abort the current quest\n</td></tr>\n<tr>\n<td>/quest completed (page)\n</td>\n<td><i>page</i> - page number\n</td>\n<td>false\n</td>\n<td>false\n</td>\n<td>citizens.quester.use.quests.status\n</td>\n<td>View completed quests\n</td></tr>\n<tr>\n<td>/quest status\n</td>\n<td><i>None</i>\n</td>\n<td>false\n</td>\n<td>false\n</td>\n<td>citizens.quester.use.quests.status\n</td>\n<td>View the status of the current quest\n</td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Usage\">Usage</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Quester&amp;action=edit&amp;section=2\" title=\"Edit section: Usage\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>To accept a quest, go to a quester NPC. Via left clicking, you can scroll through the descriptions of each possible quest that the quester has assigned to it and that you can accept. Right click to accept the quest.\n</p><p>Only one quest can be accepted at any time - use /quest abort to abandon the current quest.\n</p><p>The status of the current quest can be viewed at any time via /quest status. On completion of the quest, return to the original quester NPC and right click them to finish the quest.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Quest_Configuration\">Quest Configuration</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Quester&amp;action=edit&amp;section=3\" title=\"Edit section: Quest Configuration\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>See <a href=\"/1.x/Quests.yml\" title=\"1.x/Quests.yml\">1.x/Quests.yml</a> for detailed information about writing and editing quest structure.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Troubleshooting_Quests.yml\">Troubleshooting Quests.yml</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Quester&amp;action=edit&amp;section=4\" title=\"Edit section: Troubleshooting Quests.yml\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Many problems with quest files are caused by incorrectly formatted YAML.  To make sure your YAML quest file is able to be parsed correctly, this handy tool may be of help. <a rel=\"nofollow\" class=\"external text\" href=\"http://yaml-online-parser.appspot.com/\">This online YAML parser</a> will take input syntax in the left window, and if correctly parsed, will show a result in the right side.  If errors occur, check your <a href=\"/1.x/Quests.yml\" title=\"1.x/Quests.yml\">1.x/Quests.yml</a> formatting and try again.\n</p><p>When writing custom quests, check format thoroughly, especially objectives. The <a href=\"/1.x/Quests.yml\" title=\"1.x/Quests.yml\">1.x/Quests.yml</a> page outlines each node required by quests.\n</p>\n<div class=\"padded\" style=\"font-size: 12px; padding: 5px\">\n<table class=\"wikitable collapsible collapsed\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Usage\" title=\"Category:Usage\">Usage</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Installation\" title=\"Installation\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Frequently_Asked_Questions\" title=\"Frequently Asked Questions\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Editors\" title=\"Editors\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Characters\" title=\"Characters\">Characters</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/API\" title=\"API\">API</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32;\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Configuration\" title=\"Category:Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Configuration\" title=\"Configuration\">Configuration</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Data_Storage\" title=\"Data Storage\">Data Storage</a>\n</td></tr></tbody></table>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145755\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.048 seconds\nReal time usage: 0.090 seconds\nPreprocessor visited node count: 36/1000000\nRevision size: 3078/2097152 bytes\nPost‐expand include size: 2421/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 4/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   29.728      1 -total\n 59.77%   17.768      1 Template:NoSupport\n 39.64%   11.785      1 Template:NavBox\n 23.48%    6.980      2 Template:Version2F\n 12.98%    3.860     10 Template:·\n 10.46%    3.110      1 Template:Version2\n-->\n\n<!-- Render ID 76f9a9e5-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "1.x/Quests.yml"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "API"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Configuration"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Data Storage"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Editors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Text Syntax"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      },
+      {
+        "ns": 0,
+        "*": "Quester"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Configuration"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Usage"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Commands",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "1.x/Quester",
+        "byteoffset": 388,
+        "anchor": "Commands",
+        "linkAnchor": "Commands"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Usage",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "1.x/Quester",
+        "byteoffset": 1826,
+        "anchor": "Usage",
+        "linkAnchor": "Usage"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Quest Configuration",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "1.x/Quester",
+        "byteoffset": 2330,
+        "anchor": "Quest_Configuration",
+        "linkAnchor": "Quest_Configuration"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Troubleshooting Quests.yml",
+        "number": "4",
+        "index": "4",
+        "fromtitle": "1.x/Quester",
+        "byteoffset": 2449,
+        "anchor": "Troubleshooting_Quests.yml",
+        "linkAnchor": "Troubleshooting_Quests.yml"
+      }
+    ],
+    "showtoc": ""
+  }
+}

@@ -1,0 +1,25 @@
+https://one.denizenscript.com/denizen/cmds/animate
+
+<s>Animation list:
+
+ARM_SWING (Punching)
+
+CRIT (Critical Hit)
+
+HURT (Injured)
+
+MAGIC_CRIT (Critical Hit, caused by magic)
+
+SIT (Sitting in a cart)
+
+SLEEP (Sleeping on a bed)
+
+SNEAK (Holding shift)
+
+STOP_SITTING (Ends a sit)
+
+STOP_SLEEPING (Ends a sleep)
+
+STOP_SNEAKING (Ends a sneak)
+
+... there might be others.</s>

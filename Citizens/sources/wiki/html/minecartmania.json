@@ -1,0 +1,33 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "MinecartMania",
+    "pageid": 325,
+    "revid": 4566,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><div class=\"mw-heading mw-heading2\"><h2 id=\"Dev_Builds\">Dev Builds</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=MinecartMania&amp;action=edit&amp;section=1\" title=\"Edit section: Dev Builds\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<table class=\"wikitable\" border=\"1\">\n\n<tbody><tr>\n<th>Build\n</th>\n<th>Craftbukkit Version\n</th>\n<th>Link\n</th>\n<td>Comments\n</td></tr>\n<tr>\n<td>2.1.1 beta3 4/16/2013\n</td>\n<td>1.5.1\n</td>\n<td><a rel=\"nofollow\" class=\"external free\" href=\"http://www.sendspace.com/file/u1m2fh\">http://www.sendspace.com/file/u1m2fh</a>\n</td>\n<td>Add new items/blocks, fix minecarts not saving with chunks, fix chest item duplication bug\n</td></tr>\n<tr>\n<td>2.1.1 beta2 4/5/2013\n</td>\n<td>1.5.1\n</td>\n<td><a rel=\"nofollow\" class=\"external free\" href=\"http://www.sendspace.com/file/b59u3p\">http://www.sendspace.com/file/b59u3p</a>\n</td>\n<td>Fix map corruption when saving/loading chunks.\n</td></tr>\n<tr>\n<td>2.1.1 beta1 3/21/2013\n</td>\n<td>1.5.1\n</td>\n<td><a rel=\"nofollow\" class=\"external free\" href=\"http://www.sendspace.com/file/rza7od\">http://www.sendspace.com/file/rza7od</a>\n</td>\n<td>Initial compatibility with 1.5.1\n</td></tr>\n\n</tbody></table>\n<p>Report bugs at <a rel=\"nofollow\" class=\"external free\" href=\"http://dev.bukkit.org/server-mods/minecartmania-reborn/tickets/\">http://dev.bukkit.org/server-mods/minecartmania-reborn/tickets/</a>\n</p><p>Or come talk to me in IRC <a rel=\"nofollow\" class=\"external free\" href=\"http://webchat.esper.net/?channels=minecartmania\">http://webchat.esper.net/?channels=minecartmania</a>\n</p><p><br />\nThanks!\n</p><p>-jrbudda\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145858\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.007 seconds\nReal time usage: 0.007 seconds\nPreprocessor visited node count: 2/1000000\nRevision size: 681/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 9c86b367-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Dev Builds",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "MinecartMania",
+        "byteoffset": 0,
+        "anchor": "Dev_Builds",
+        "linkAnchor": "Dev_Builds"
+      }
+    ]
+  }
+}

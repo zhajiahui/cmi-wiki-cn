@@ -1,0 +1,183 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Text Syntax",
+    "pageid": 80,
+    "revid": 5500,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>Configuration syntax in Citizens is simple. Nodes within arrow brackets -- <code>&lt;&gt;</code> -- will be parsed and replaced if possible. Below are the available nodes that you can use. \n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Chat_Colors\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Chat Colors</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Special\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Special</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Other\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Other</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#NPC_Nodes\"><span class=\"tocnumber\">3.1</span> <span class=\"toctext\">NPC Nodes</span></a></li>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#Player_Nodes\"><span class=\"tocnumber\">3.2</span> <span class=\"toctext\">Player Nodes</span></a></li>\n<li class=\"toclevel-2 tocsection-6\"><a href=\"#Extra_Nodes\"><span class=\"tocnumber\">3.3</span> <span class=\"toctext\">Extra Nodes</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-7\"><a href=\"#PlaceholderAPI\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">PlaceholderAPI</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-8\"><a href=\"#External_Placeholders_on_NPCs\"><span class=\"tocnumber\">4.1</span> <span class=\"toctext\">External Placeholders on NPCs</span></a></li>\n<li class=\"toclevel-2 tocsection-9\"><a href=\"#Citizens_Placeholders\"><span class=\"tocnumber\">4.2</span> <span class=\"toctext\">Citizens Placeholders</span></a></li>\n</ul>\n</li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Chat_Colors\">Chat Colors</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Text_Syntax&amp;action=edit&amp;section=1\" title=\"Edit section: Chat Colors\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Use the Chat Color characters the same as any other plugin. For example, <code>&amp;a</code> would give you green.\n</p><p><b>Color Reference</b>\n<br />0 -- BLACK\n<br />1 -- <span style=\"color:#0000AA\">DARK BLUE</span>\n<br />2 -- <span style=\"color:#00AA00\">DARK GREEN</span>\n<br />3 -- <span style=\"color:#00AAAA\">CYAN</span>\n<br />4 -- <span style=\"color:#AA0000\">DARK RED</span>\n<br />5 -- <span style=\"color:#AA00AA\">PURPLE</span>\n<br />6 -- <span style=\"color:#FFAA00\">GOLD</span>\n<br />7 -- LIGHT GRAY\n<br />8 -- GRAY\n<br />9 -- <span style=\"color:#5555FF\">BLUE</span>\n<br />a -- <span style=\"color:#55FF55\">GREEN</span>\n<br />b -- <span style=\"color:#22BBBB\">AQUA</span>\n<br />c -- <span style=\"color:#FF5555\">ROSE RED</span>\n<br />d -- <span style=\"color:#FF55FF\">LIGHT PURPLE</span>\n<br />e -- <span style=\"color:#AAAA11\">YELLOW</span>\n<br />f -- WHITE\n</p><p><b>Format Reference</b>\n<br />k -- Obfuscated\n<br />l -- Bold\n<br />m -- Strikethrough\n<br />n -- Underline\n<br />o -- Italic\n<br />r -- Reset\n</p><p><a rel=\"nofollow\" class=\"external text\" href=\"https://www.digminecraft.com/lists/color_list_pc.php\">Alternate color/format reference page</a>\n</p><p>You can also use hexadecimal colors in Minecraft 1.16+, using Spigot's syntax - <code>&amp;x&amp;f&amp;f&amp;0&amp;0&amp;e&amp;e</code> or Essentials' syntax - <code>&amp;#ff00ee</code> (both examples produce the same pink/magenta color).\n</p><p>You can also use <a rel=\"nofollow\" class=\"external text\" href=\"https://docs.adventure.kyori.net/minimessage/format.html\">MiniMessage</a>.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Special\">Special</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Text_Syntax&amp;action=edit&amp;section=2\" title=\"Edit section: Special\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>You can use <code>&lt;br&gt;</code> to create a newline in the middle of a text line.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Other\">Other</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Text_Syntax&amp;action=edit&amp;section=3\" title=\"Edit section: Other\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>There are also other nodes that you can use in configuration files. Some of these do not apply to certain configuration settings, so use with care. More will be added in the future as the need arises.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"NPC_Nodes\">NPC Nodes</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Text_Syntax&amp;action=edit&amp;section=4\" title=\"Edit section: NPC Nodes\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><code>&lt;npc&gt;</code> -- NPC's name\n<br /><code>&lt;id&gt;</code> -- NPC's ID\n<br /><code>&lt;owner&gt;</code> -- NPC's owner\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Player_Nodes\">Player Nodes</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Text_Syntax&amp;action=edit&amp;section=5\" title=\"Edit section: Player Nodes\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><br /><code>&lt;player&gt;</code> -- Player's name\n<br /><code>&lt;world&gt;</code> -- Player's world\n<br /><code>&lt;nearest_player&gt;</code> -- Name of the player closest to the NPC\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Extra_Nodes\">Extra Nodes</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Text_Syntax&amp;action=edit&amp;section=6\" title=\"Edit section: Extra Nodes\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><br /><code>&lt;random_player&gt;</code> -- Random online player name\n<br /><code>&lt;random_npc&gt;</code> -- Random NPC name\n<br /><code>&lt;random_npc_id&gt;</code> -- Random NPC ID\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"PlaceholderAPI\">PlaceholderAPI</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Text_Syntax&amp;action=edit&amp;section=7\" title=\"Edit section: PlaceholderAPI\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>If you have <a rel=\"nofollow\" class=\"external text\" href=\"https://www.spigotmc.org/resources/placeholderapi.6245/\">PlaceholderAPI</a> installed on your server, you can use PAPI placeholders on NPCs and use specific Citizens PAPI placeholders anywhere that supports PAPI.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"External_Placeholders_on_NPCs\">External Placeholders on NPCs</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Text_Syntax&amp;action=edit&amp;section=8\" title=\"Edit section: External Placeholders on NPCs\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>You can use any PAPI Placeholders the same as you would use them elsewhere in NPC text or commands, and non-player placeholders in NPC names/holograms/etc. <a rel=\"nofollow\" class=\"external text\" href=\"https://wiki.citizensnpcs.co/Frequently_Asked_Questions#My_PlaceholderAPI_Placeholder_Works_In_Chat.2C_But_Not_On_An_NPC\">See the FAQ for more details on the non-player limit</a>.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Citizens_Placeholders\">Citizens Placeholders</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Text_Syntax&amp;action=edit&amp;section=9\" title=\"Edit section: Citizens Placeholders\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><br /><code>%citizens_selected_npc_name%</code> -- the name of the NPC selected by the player.\n<br /><code>%citizens_selected_npc_id%</code> -- the ID of the NPC selected by the player.\n</p>\n<div class=\"padded\" style=\"font-size: 12px; padding: 5px\">\n<table class=\"wikitable collapsible collapsed\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Usage\" title=\"Category:Usage\">Usage</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Installation\" title=\"Installation\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Frequently_Asked_Questions\" title=\"Frequently Asked Questions\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Editors\" title=\"Editors\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Characters\" title=\"Characters\">Characters</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/API\" title=\"API\">API</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32;\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Configuration\" title=\"Category:Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Configuration\" title=\"Configuration\">Configuration</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a class=\"mw-selflink selflink\">Text Syntax</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Data_Storage\" title=\"Data Storage\">Data Storage</a>\n</td></tr></tbody></table>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145906\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.033 seconds\nReal time usage: 0.037 seconds\nPreprocessor visited node count: 40/1000000\nRevision size: 3261/2097152 bytes\nPost‐expand include size: 1802/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    8.783      1 Template:NavBox\n100.00%    8.783      1 -total\n 41.48%    3.643     10 Template:·\n-->\n\n<!-- Render ID a14b6764-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "API"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Configuration"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Data Storage"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Editors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Configuration"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Usage"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Chat Colors",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Text_Syntax",
+        "byteoffset": 191,
+        "anchor": "Chat_Colors",
+        "linkAnchor": "Chat_Colors"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Special",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Text_Syntax",
+        "byteoffset": 1549,
+        "anchor": "Special",
+        "linkAnchor": "Special"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Other",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "Text_Syntax",
+        "byteoffset": 1649,
+        "anchor": "Other",
+        "linkAnchor": "Other"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "NPC Nodes",
+        "number": "3.1",
+        "index": "4",
+        "fromtitle": "Text_Syntax",
+        "byteoffset": 1861,
+        "anchor": "NPC_Nodes",
+        "linkAnchor": "NPC_Nodes"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Player Nodes",
+        "number": "3.2",
+        "index": "5",
+        "fromtitle": "Text_Syntax",
+        "byteoffset": 2003,
+        "anchor": "Player_Nodes",
+        "linkAnchor": "Player_Nodes"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Extra Nodes",
+        "number": "3.3",
+        "index": "6",
+        "fromtitle": "Text_Syntax",
+        "byteoffset": 2202,
+        "anchor": "Extra_Nodes",
+        "linkAnchor": "Extra_Nodes"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "PlaceholderAPI",
+        "number": "4",
+        "index": "7",
+        "fromtitle": "Text_Syntax",
+        "byteoffset": 2400,
+        "anchor": "PlaceholderAPI",
+        "linkAnchor": "PlaceholderAPI"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "External Placeholders on NPCs",
+        "number": "4.1",
+        "index": "8",
+        "fromtitle": "Text_Syntax",
+        "byteoffset": 2643,
+        "anchor": "External_Placeholders_on_NPCs",
+        "linkAnchor": "External_Placeholders_on_NPCs"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Citizens Placeholders",
+        "number": "4.2",
+        "index": "9",
+        "fromtitle": "Text_Syntax",
+        "byteoffset": 3013,
+        "anchor": "Citizens_Placeholders",
+        "linkAnchor": "Citizens_Placeholders"
+      }
+    ],
+    "showtoc": ""
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "1.x/Blacksmith",
+    "pageid": 6,
+    "revid": 687,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><table class=\"wikitable\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"1\" style=\"width: 100%; background-color:#F75D59; font-size: 32px; padding: 15px;\"><b>Not Supported!</b>\n</th></tr>\n<tr>\n<td style=\"font-size: 16px;\">This page is about Citizens 1.x, while the current version is Citizens 2.0.2. This page's content may be outdated, and shouldn't be trusted as being correct. See this page's talk page for more information. If you were looking for the 2.0.2 equivalent of this page, try <a href=\"/Blacksmith\" title=\"Blacksmith\">Blacksmith</a>. If you feel this message was displayed in error, please contact an administrator.\n</td></tr></tbody></table>\n<p><b>Blacksmiths</b> repair your tools and armor. Right-clicking a blacksmith will repair your item-in-hand if it is repairable. An item is \"repairable\" if it contains a durability (i.e. pickaxe, shears, armor, etc.).\n</p><p>See below for more information.\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Configuration_Nodes\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Configuration Nodes</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Commands\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Commands</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Other_Permissions\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Other Permissions</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Calculating_the_Cost_of_an_Item_Repair\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Calculating the Cost of an Item Repair</span></a></li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#Future\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">Future</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Configuration_Nodes\">Configuration Nodes</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Blacksmith&amp;action=edit&amp;section=1\" title=\"Edit section: Configuration Nodes\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>These nodes can be found in <i>citizens.yml</i>. They are for configuration of the use of blacksmiths.\n</p>\n<table class=\"wikitable collapsible collapsed\" style=\"text-align: center; width: 100%\">\n\n<tbody><tr>\n<th style=\"width: 100%; background-color:#ADD8E6\" colspan=\"3\"><b>Configuration Settings</b>\n</th></tr>\n<tr>\n<th style=\"width: 250px;\">Setting\n</th>\n<th style=\"width: 200px;\">Default Value\n</th>\n<th>Description\n</th></tr>\n<tr>\n<td>economy.prices.blacksmith.armorrepair.(material)\n</td>\n<td>varies\n</td>\n<td>Base values for armor material repair, used in equation to determine the cost of an armor repair\n</td></tr>\n<tr>\n<td>economy.prices.blacksmith.toolrepair.(material)\n</td>\n<td>varies\n</td>\n<td>Base values for tool material repair, used in equation to determine the cost of a tool repair\n</td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Commands\">Commands</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Blacksmith&amp;action=edit&amp;section=2\" title=\"Edit section: Commands\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Commands specifically dealing with Blacksmiths\n</p>\n<table class=\"wikitable collapsible collapsed\" style=\"text-align: center; width: 100%\">\n\n<tbody><tr>\n<th style=\"width: 100%; background-color:#ADD8E6\" colspan=\"5\"><b>Blacksmith Commands</b>\n</th></tr>\n<tr>\n<th style=\"width: 250px;\">Command\n</th>\n<th style=\"width: 150px;\">Require Selected\n</th>\n<th style=\"width: 150px;\">Require Ownership\n</th>\n<th style=\"width: 170px;\">Permission\n</th>\n<th>Description\n</th></tr>\n<tr>\n<td>/blacksmith help\n</td>\n<td>false\n</td>\n<td>false\n</td>\n<td>citizens.blacksmith.use.help\n</td>\n<td>View the help page for blacksmiths\n</td></tr>\n<tr>\n<td>/blacksmith status\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.blacksmith.use.status\n</td>\n<td>View the cost and durability remaining of your item-in-hand\n</td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Other_Permissions\">Other Permissions</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Blacksmith&amp;action=edit&amp;section=3\" title=\"Edit section: Other Permissions\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Permissions specific to the use/creation of blacksmiths.\n</p>\n<table class=\"wikitable collapsible collapsed\" style=\"text-align: center; width: 100%\">\n\n<tbody><tr>\n<th style=\"width: 100%; background-color:#ADD8E6\" colspan=\"3\"><b>Blacksmith Permissions</b>\n</th></tr>\n<tr>\n<th style=\"width: 250px;\">Permission\n</th>\n<th style=\"width: 500px;\">Description\n</th></tr>\n<tr>\n<td>citizens.blacksmith.use.repair\n</td>\n<td>Ability to right-click a blacksmith to repair an items\n</td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Calculating_the_Cost_of_an_Item_Repair\">Calculating the Cost of an Item Repair</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Blacksmith&amp;action=edit&amp;section=4\" title=\"Edit section: Calculating the Cost of an Item Repair\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Blacksmiths charge for an item repair based on this equation:\n</p>\n<pre>(maxItemDurability - currentItemDurability) * basePrice</pre>\n<p><b>maxItemDurability:</b> The maximum uses that an item has\n</p><p><b>currentItemDurability:</b> An item's total uses\n</p><p><b>basePrice:</b> price specified in citizens.yml\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Future\">Future</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Blacksmith&amp;action=edit&amp;section=5\" title=\"Edit section: Future\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ul><li>Cooldowns between each repair</li></ul>\n<div class=\"padded\" style=\"font-size: 12px; padding: 5px\">\n<table class=\"wikitable collapsible collapsed\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Usage\" title=\"Category:Usage\">Usage</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Installation\" title=\"Installation\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Frequently_Asked_Questions\" title=\"Frequently Asked Questions\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Editors\" title=\"Editors\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Characters\" title=\"Characters\">Characters</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/API\" title=\"API\">API</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32;\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Configuration\" title=\"Category:Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Configuration\" title=\"Configuration\">Configuration</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Data_Storage\" title=\"Data Storage\">Data Storage</a>\n</td></tr></tbody></table>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145752\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.034 seconds\nReal time usage: 0.066 seconds\nPreprocessor visited node count: 42/1000000\nRevision size: 2487/2097152 bytes\nPost‐expand include size: 2427/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 4/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 66/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   30.779      1 -total\n 52.23%   16.077      1 Template:NoSupport\n 46.44%   14.293      1 Template:NavBox\n 30.31%    9.329      2 Template:Version2F\n 15.30%    4.709     10 Template:·\n 12.17%    3.746      1 Template:Version2\n-->\n\n<!-- Render ID 752fe664-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "API"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Blacksmith"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Configuration"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Data Storage"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Editors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Text Syntax"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Configuration"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Usage"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Configuration Nodes",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "1.x/Blacksmith",
+        "byteoffset": 263,
+        "anchor": "Configuration_Nodes",
+        "linkAnchor": "Configuration_Nodes"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Commands",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "1.x/Blacksmith",
+        "byteoffset": 982,
+        "anchor": "Commands",
+        "linkAnchor": "Commands"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Other Permissions",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "1.x/Blacksmith",
+        "byteoffset": 1637,
+        "anchor": "Other_Permissions",
+        "linkAnchor": "Other_Permissions"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Calculating the Cost of an Item Repair",
+        "number": "4",
+        "index": "4",
+        "fromtitle": "1.x/Blacksmith",
+        "byteoffset": 2071,
+        "anchor": "Calculating_the_Cost_of_an_Item_Repair",
+        "linkAnchor": "Calculating_the_Cost_of_an_Item_Repair"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Future",
+        "number": "5",
+        "index": "5",
+        "fromtitle": "1.x/Blacksmith",
+        "byteoffset": 2408,
+        "anchor": "Future",
+        "linkAnchor": "Future"
+      }
+    ],
+    "showtoc": ""
+  }
+}

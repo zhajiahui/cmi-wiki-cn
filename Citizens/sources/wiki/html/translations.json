@@ -1,0 +1,55 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Translations",
+    "pageid": 262,
+    "revid": 5553,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>The newest releases of Citizens2 is fully translatable into many languages. Server owners can easily choose which language they want Citizens messages to be displayed in, as long as a translation into that language has been completed.\n</p><p>To set Citizens to a different language on your server, just open \"plugins\\Citizens\\config.yml\" and change \"locale: en\" (under general: translations: ). Set the \"en\" to the locale (ISO code) of the language you want to switch to, for instance \"de\" for German.\n</p><p>You can also edit the messages for any language on your server by opening that language's file in Citizens\\lang\\\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Available_translations\">Available translations</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Translations&amp;action=edit&amp;section=1\" title=\"Edit section: Available translations\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Currently, Citizens has been translated into the following languages:\n</p>\n<ul><li>French (fr) by leagris</li>\n<li>German (de) by SpaceEmotion</li>\n<li>Dutch (nl) by sjoerdtim</li></ul>\n<p>We thank our translators, and we welcome translations for other languages.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"So_how_do_I_make_my_own?\"><span id=\"So_how_do_I_make_my_own.3F\"></span>So how do I make my own?</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Translations&amp;action=edit&amp;section=2\" title=\"Edit section: So how do I make my own?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>To get started with a new translation, make a copy of the messages_en.properties file and change its filename to use a new locale, for instance messages_it.properties for Italian. Translate the strings inside this file, and you're done!\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"How_do_language_files_work?\"><span id=\"How_do_language_files_work.3F\"></span>How do language files work?</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Translations&amp;action=edit&amp;section=3\" title=\"Edit section: How do language files work?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Language files are a collection of sentences ('strings') in a properties file. They allow Citizens to request a string for a specific action based on a key, such as citizens.notifications.enabled. Each language file contains a locale in its name - that is, the ISO code of the language it's for. As an example, the language file for English is called \"messages_en.properties\"\n</p><p>By default, Citizens will use the system locale for translations, but will use the general.translation.locale setting from Citizens' config.yml if it's present.\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145914\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.015 seconds\nReal time usage: 0.042 seconds\nPreprocessor visited node count: 9/1000000\nRevision size: 1708/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID a6101b63-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Available translations",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Translations",
+        "byteoffset": 611,
+        "anchor": "Available_translations",
+        "linkAnchor": "Available_translations"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "So how do I make my own?",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Translations",
+        "byteoffset": 868,
+        "anchor": "So_how_do_I_make_my_own?",
+        "linkAnchor": "So_how_do_I_make_my_own?"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "How do language files work?",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "Translations",
+        "byteoffset": 1137,
+        "anchor": "How_do_language_files_work?",
+        "linkAnchor": "How_do_language_files_work?"
+      }
+    ]
+  }
+}

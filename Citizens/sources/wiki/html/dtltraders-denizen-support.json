@@ -1,0 +1,89 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "DtlTraders/denizen/support",
+    "pageid": 252,
+    "revid": 4147,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Denizen_Support\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Denizen Support</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-2\"><a href=\"#Commands_reference\"><span class=\"tocnumber\">1.1</span> <span class=\"toctext\">Commands reference</span></a></li>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Tags_reference\"><span class=\"tocnumber\">1.2</span> <span class=\"toctext\">Tags reference</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Trigger/Actions_reference\"><span class=\"tocnumber\">1.3</span> <span class=\"toctext\">Trigger/Actions reference</span></a></li>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#Examples\"><span class=\"tocnumber\">1.4</span> <span class=\"toctext\">Examples</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-6\"><a href=\"#Navigation\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Navigation</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Denizen_Support\">Denizen Support</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/denizen/support&amp;action=edit&amp;section=1\" title=\"Edit section: Denizen Support\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>All denizen commands/tags/triggers requires latest denizen version.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Commands_reference\">Commands reference</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/denizen/support&amp;action=edit&amp;section=2\" title=\"Edit section: Commands reference\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Incoming\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Tags_reference\">Tags reference</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/denizen/support&amp;action=edit&amp;section=3\" title=\"Edit section: Tags reference\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Incoming\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Trigger/Actions_reference\"><span id=\"Trigger.2FActions_reference\"></span>Trigger/Actions reference</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/denizen/support&amp;action=edit&amp;section=4\" title=\"Edit section: Trigger/Actions reference\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Incoming\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Examples\">Examples</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/denizen/support&amp;action=edit&amp;section=5\" title=\"Edit section: Examples\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Incoming\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Navigation\">Navigation</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/denizen/support&amp;action=edit&amp;section=6\" title=\"Edit section: Navigation\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<table class=\"wikitable\" style=\"text-align: center; width: 500px\">\n\n<tbody><tr>\n<th style=\"width: 100%; background-color:#ADD8E6\" colspan=\"2\"><b>DtlTraders</b>\n</th></tr>\n<tr>\n<td>Configuration</td>\n<td><a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/DtlTraders/Commands\">Commands</a> | <a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/DtlTraders/permissions\">Permissions</a> | <a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/DtlTraders/locale\">Locale</a>\n</td></tr>\n<tr>\n<td>Usage</td>\n<td><a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.com/DtlTraders/patterns\">Patterns</a>\n</td></tr>\n<tr>\n<td>Types</td>\n<td>\n</td></tr>\n<tr>\n<td>Denizen Support</td>\n<td>\n</td></tr></tbody></table>\n<!-- \nNewPP limit report\nCached time: 20261019145855\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.010 seconds\nReal time usage: 0.010 seconds\nPreprocessor visited node count: 17/1000000\nRevision size: 1399/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 9abcefe4-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Denizen Support",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "DtlTraders/denizen/support",
+        "byteoffset": 0,
+        "anchor": "Denizen_Support",
+        "linkAnchor": "Denizen_Support"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Commands reference",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "DtlTraders/denizen/support",
+        "byteoffset": 92,
+        "anchor": "Commands_reference",
+        "linkAnchor": "Commands_reference"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Tags reference",
+        "number": "1.2",
+        "index": "3",
+        "fromtitle": "DtlTraders/denizen/support",
+        "byteoffset": 131,
+        "anchor": "Tags_reference",
+        "linkAnchor": "Tags_reference"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Trigger/Actions reference",
+        "number": "1.3",
+        "index": "4",
+        "fromtitle": "DtlTraders/denizen/support",
+        "byteoffset": 166,
+        "anchor": "Trigger/Actions_reference",
+        "linkAnchor": "Trigger/Actions_reference"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Examples",
+        "number": "1.4",
+        "index": "5",
+        "fromtitle": "DtlTraders/denizen/support",
+        "byteoffset": 212,
+        "anchor": "Examples",
+        "linkAnchor": "Examples"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Navigation",
+        "number": "2",
+        "index": "6",
+        "fromtitle": "DtlTraders/denizen/support",
+        "byteoffset": 240,
+        "anchor": "Navigation",
+        "linkAnchor": "Navigation"
+      }
+    ],
+    "showtoc": ""
+  }
+}

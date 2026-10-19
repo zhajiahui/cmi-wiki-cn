@@ -1,0 +1,178 @@
+[
+  {
+    "file": "wiki/core.md",
+    "title": "Multiverse-Core 官方 Wiki",
+    "source_url": "https://mvplugins.org/core/",
+    "source_file": "sources/wiki/original/core.md",
+    "source_sha256": "173c731ed277a270c920017cdc2e589d768229e74a49530401f3f5b24068f1ff",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/core-fundamentals-basic-usage.md",
+    "title": "基础用法",
+    "source_url": "https://mvplugins.org/core/fundamentals/basic-usage/",
+    "source_file": "sources/wiki/original/core-fundamentals-basic-usage.md",
+    "source_sha256": "cf23fbc63b08e1e9c273d0554ad58b75597976dceea13ee5ca5a4678261b6dab",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/core-fundamentals-commands-usage.md",
+    "title": "命令用法",
+    "source_url": "https://mvplugins.org/core/fundamentals/commands-usage/",
+    "source_file": "sources/wiki/original/core-fundamentals-commands-usage.md",
+    "source_sha256": "739ea98cd1421d11c41bd42b3028c28ace1d2dff466936bdf88425145d0e1374",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/core-fundamentals-installation.md",
+    "title": "安装",
+    "source_url": "https://mvplugins.org/core/fundamentals/installation/",
+    "source_file": "sources/wiki/original/core-fundamentals-installation.md",
+    "source_sha256": "1d3509848cbd8dd6fe82e3ff9aa39671f46f45124b8bd11efe61b554a8b28c6e",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/core-fundamentals-permissions-setup.md",
+    "title": "权限设置",
+    "source_url": "https://mvplugins.org/core/fundamentals/permissions-setup/",
+    "source_file": "sources/wiki/original/core-fundamentals-permissions-setup.md",
+    "source_sha256": "458111553a22d31773dbfdb7c9b24f1ff5f244f423371ba06bccabc845385c38",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/core-fundamentals-world-properties.md",
+    "title": "世界属性",
+    "source_url": "https://mvplugins.org/core/fundamentals/world-properties/",
+    "source_file": "sources/wiki/original/core-fundamentals-world-properties.md",
+    "source_sha256": "e9f234a1ef2ead3bdb4868615384c6ee6d843838194899d126a71b0966a429a0",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/core-how-to-customise-locales.md",
+    "title": "自定义语言消息",
+    "source_url": "https://mvplugins.org/core/how-to/customise-locales/",
+    "source_file": "sources/wiki/original/core-how-to-customise-locales.md",
+    "source_sha256": "f78c96ca65d07571b507de9225f4b7eda13cbcc3e24a5bf818f0ef59c8a6e060",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/core-how-to-customise-world-creation.md",
+    "title": "自定义世界创建",
+    "source_url": "https://mvplugins.org/core/how-to/customise-world-creation/",
+    "source_file": "sources/wiki/original/core-how-to-customise-world-creation.md",
+    "source_sha256": "ef75edd4ffb7ea98de07d1c5dc485ff1fdd7988f3c79c04ffd452070e266bebe",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/core-how-to-manage-anchors.md",
+    "title": "传送锚点",
+    "source_url": "https://mvplugins.org/core/how-to/manage-anchors/",
+    "source_file": "sources/wiki/original/core-how-to-manage-anchors.md",
+    "source_sha256": "b80d82ce0a6509e4c7c680e3ce9e12fd1345bef3d0a3e8a28680068231d8d58d",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/core-how-to-setup-entry-fee.md",
+    "title": "世界入场费",
+    "source_url": "https://mvplugins.org/core/how-to/setup-entry-fee/",
+    "source_file": "sources/wiki/original/core-how-to-setup-entry-fee.md",
+    "source_sha256": "f47b95beef1e34c00df642357343d49b78498cb38d1a07a11da98a1822046c61",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/core-how-to-world-meta.md",
+    "title": "世界元数据",
+    "source_url": "https://mvplugins.org/core/how-to/world-meta/",
+    "source_file": "sources/wiki/original/core-how-to-world-meta.md",
+    "source_sha256": "41710d0ff9715c234b365f79628943d83773b05a49b04ebe9700075f5f75be09",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/core-reference-configuration-file.md",
+    "title": "配置文件",
+    "source_url": "https://mvplugins.org/core/reference/configuration-file/",
+    "source_file": "sources/wiki/original/core-reference-configuration-file.md",
+    "source_sha256": "adc5a9772147d06decc92d66ce47314c9824ebf57724ff599a8865614baba871",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/core-reference-custom-generator-plugins.md",
+    "title": "自定义生成器插件",
+    "source_url": "https://mvplugins.org/core/reference/custom-generator-plugins/",
+    "source_file": "sources/wiki/original/core-reference-custom-generator-plugins.md",
+    "source_sha256": "991cb2f3f248df9a7a88a8f9fea1937f3957aebd40b90b64cce3b6f5d8db5e30",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/core-reference-destinations.md",
+    "title": "传送目的地",
+    "source_url": "https://mvplugins.org/core/reference/destinations/",
+    "source_file": "sources/wiki/original/core-reference-destinations.md",
+    "source_sha256": "8e49307e2c95a7c50f01780f3a3837f90b820af929ef2c3acc2b8af83678e5e0",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/core-reference-faq.md",
+    "title": "常见问题",
+    "source_url": "https://mvplugins.org/core/reference/faq/",
+    "source_file": "sources/wiki/original/core-reference-faq.md",
+    "source_sha256": "c483de0ec986d1c6063be9f39fdf0e7bf1e3688783765eb618d5f4af0e614ef0",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/core-reference-permissions-list.md",
+    "title": "Multiverse-Core 权限清单",
+    "source_url": "https://mvplugins.org/core/reference/permissions-list/",
+    "source_file": "sources/wiki/original/core-reference-permissions-list.md",
+    "source_sha256": "3bdc7e47299d4c274402ca55e2e47ee7e1ea1b8eb72e31d22897c07461bc5e1f",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/core-reference-placeholders.md",
+    "title": "占位符",
+    "source_url": "https://mvplugins.org/core/reference/placeholders/",
+    "source_file": "sources/wiki/original/core-reference-placeholders.md",
+    "source_sha256": "74e4150bdfb2ef58116d33ac6a419acf26b7bbbe89a510538bf863eac79b569a",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/mv5.md",
+    "title": "你好，MV5！",
+    "source_url": "https://mvplugins.org/mv5/",
+    "source_file": "sources/wiki/original/mv5.md",
+    "source_sha256": "1f78d4e456747222cafe0db2454e904571d7c0d8712f6455f6ac7f9e5100f703",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/mv5-welcome-command-changes.md",
+    "title": "MV5 命令变化",
+    "source_url": "https://mvplugins.org/mv5/welcome/command-changes/",
+    "source_file": "sources/wiki/original/mv5-welcome-command-changes.md",
+    "source_sha256": "b33e7e5248257bc66ea7f90381a4087fdfc0cbe8897475baf7df336242a8a3e2",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/mv5-welcome-incompatible-plugins.md",
+    "title": "不兼容的插件",
+    "source_url": "https://mvplugins.org/mv5/welcome/incompatible-plugins/",
+    "source_file": "sources/wiki/original/mv5-welcome-incompatible-plugins.md",
+    "source_sha256": "fc94233afcfbc10afca1637cd2351e729f5888d518675021e7a6895a735e86af",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/mv5-welcome-upgrading.md",
+    "title": "MV5 升级指南",
+    "source_url": "https://mvplugins.org/mv5/welcome/upgrading/",
+    "source_file": "sources/wiki/original/mv5-welcome-upgrading.md",
+    "source_sha256": "17e819b65068d5571844a52a6906f030f290efd8c0d95e099e85d050d67adcd3",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/mv5-whats-new-multiverse-core.md",
+    "title": "Multiverse-Core 更新日志",
+    "source_url": "https://mvplugins.org/mv5/whats-new/multiverse-core/",
+    "source_file": "sources/wiki/original/mv5-whats-new-multiverse-core.md",
+    "source_sha256": "70c4dec5fd4be2b1951cdbd6e80b3a79c03b990280f7afe6611d6269353b1ede",
+    "translation_review": "reviewed"
+  }
+]

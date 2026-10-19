@@ -1,0 +1,287 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "CitiTraders",
+    "pageid": 162,
+    "revid": 4007,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><div style=\"width:35%; float:right; border-style:solid;border-width:3px\">\n<center>\n<p>[[File:{{{PICTURE}}}]]<br /><br /><b>CitiTraders</b>\n</p>\n</center>\n<p><br />\n</p>\n<div style=\"font-size:100%; padding:3px\">\n<table cellpadding=\"0\" cellspacing=\"3\" width=\"100%\">\n\n<tbody><tr>\n<td align=\"left\" valign=\"top\" width=\"150\"><b>Author</b>\n</td>\n<td>tehbeard, tenowg\n</td></tr>\n<tr>\n<td><b>Version</b>\n</td>\n<td>RC-5\n</td></tr>\n<tr>\n<td><b>Citizens build</b>\n</td>\n<td>2.0\n</td></tr>\n<tr>\n<td><b>Other dependencies</b>\n</td>\n<td>Citizens 2, Vault, a permissions system and an economy system.\n</td></tr>\n<tr>\n<td><b>Download</b>\n</td>\n<td><a rel=\"nofollow\" class=\"external text\" href=\"http://thedemgel.com:8080/jenkins/job/CitiTraders/Recommended/artifact/target/CitiTrader-RC-5.jar\">Link</a>\n</td></tr>\n<tr>\n<td colspan=\"2\"><div style=\"border-top:1px solid #aaaaaa;\"><b>Description:</b> Cititraders are NPCs that support interface-based trading.<br />\n<b>Issues</b>: <a rel=\"nofollow\" class=\"external text\" href=\"http://thedemgel.com:8080/jira/browse/CITITRADER\">JIRA Issues</a></div>\n</td></tr></tbody></table>\n</div>\n</div>\n<p><span style=\"font-size:110%\"><span style=\"background: yellow; color: red\"> 1-21-2013 Cititraders is currently out of date, please see <a href=\"/DtlTraders\" title=\"DtlTraders\">DtlTraders</a></span></span>\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#RELEASE_CANDIDATE\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">RELEASE CANDIDATE</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#CitiTraders\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">CitiTraders</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Installation\"><span class=\"tocnumber\">2.1</span> <span class=\"toctext\">Installation</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Commands\"><span class=\"tocnumber\">2.2</span> <span class=\"toctext\">Commands</span></a></li>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#Permissions\"><span class=\"tocnumber\">2.3</span> <span class=\"toctext\">Permissions</span></a></li>\n<li class=\"toclevel-2 tocsection-6\"><a href=\"#Creating_a_new_npc_as_a_trader\"><span class=\"tocnumber\">2.4</span> <span class=\"toctext\">Creating a new npc as a trader</span></a></li>\n<li class=\"toclevel-2 tocsection-7\"><a href=\"#Adding_trader_to_an_existing_NPC\"><span class=\"tocnumber\">2.5</span> <span class=\"toctext\">Adding trader to an existing NPC</span></a></li>\n<li class=\"toclevel-2 tocsection-8\"><a href=\"#Buying_and_Selling\"><span class=\"tocnumber\">2.6</span> <span class=\"toctext\">Buying and Selling</span></a>\n<ul>\n<li class=\"toclevel-3 tocsection-9\"><a href=\"#Accessing_the_storeroom_of_a_trader\"><span class=\"tocnumber\">2.6.1</span> <span class=\"toctext\">Accessing the storeroom of a trader</span></a></li>\n<li class=\"toclevel-3 tocsection-10\"><a href=\"#Setting_Buy/Sell_prices\"><span class=\"tocnumber\">2.6.2</span> <span class=\"toctext\">Setting Buy/Sell prices</span></a></li>\n<li class=\"toclevel-3 tocsection-11\"><a href=\"#Buy_from_a_Trader\"><span class=\"tocnumber\">2.6.3</span> <span class=\"toctext\">Buy from a Trader</span></a></li>\n<li class=\"toclevel-3 tocsection-12\"><a href=\"#Selling_to_a_Trader\"><span class=\"tocnumber\">2.6.4</span> <span class=\"toctext\">Selling to a Trader</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-2 tocsection-13\"><a href=\"#Wallets\"><span class=\"tocnumber\">2.7</span> <span class=\"toctext\">Wallets</span></a>\n<ul>\n<li class=\"toclevel-3 tocsection-14\"><a href=\"#Admin\"><span class=\"tocnumber\">2.7.1</span> <span class=\"toctext\">Admin</span></a></li>\n<li class=\"toclevel-3 tocsection-15\"><a href=\"#Private\"><span class=\"tocnumber\">2.7.2</span> <span class=\"toctext\">Private</span></a></li>\n<li class=\"toclevel-3 tocsection-16\"><a href=\"#Bank\"><span class=\"tocnumber\">2.7.3</span> <span class=\"toctext\">Bank</span></a></li>\n<li class=\"toclevel-3 tocsection-17\"><a href=\"#Owner\"><span class=\"tocnumber\">2.7.4</span> <span class=\"toctext\">Owner</span></a></li>\n<li class=\"toclevel-3 tocsection-18\"><a href=\"#Town_Bank\"><span class=\"tocnumber\">2.7.5</span> <span class=\"toctext\">Town Bank</span></a></li>\n</ul>\n</li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-19\"><a href=\"#TODO\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">TODO</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-20\"><a href=\"#Discounts\"><span class=\"tocnumber\">3.1</span> <span class=\"toctext\">Discounts</span></a></li>\n<li class=\"toclevel-2 tocsection-21\"><a href=\"#Sales_Display\"><span class=\"tocnumber\">3.2</span> <span class=\"toctext\">Sales Display</span></a></li>\n<li class=\"toclevel-2 tocsection-22\"><a href=\"#Manager/Assistants\"><span class=\"tocnumber\">3.3</span> <span class=\"toctext\">Manager/Assistants</span></a></li>\n<li class=\"toclevel-2 tocsection-23\"><a href=\"#Rewrite_Sell_To_Player\"><span class=\"tocnumber\">3.4</span> <span class=\"toctext\">Rewrite Sell To Player</span></a></li>\n</ul>\n</li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading1\"><h1 id=\"RELEASE_CANDIDATE\">RELEASE CANDIDATE</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=CitiTraders&amp;action=edit&amp;section=1\" title=\"Edit section: RELEASE CANDIDATE\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>CitiTraders is in RC, which means that while I feel that it is close to Release, it not perfect, if you see any issues, please use the issue page to let me know, but otherwise I feel that it is ALMOST bug free.\nYou can download the dev builds from here: <a rel=\"nofollow\" class=\"external text\" href=\"http://thedemgel.com:8080/jenkins/job/CitiTraders/lastSuccessfulBuild/artifact/target/CitiTrader-RC-5.jar\">Jenkins Dev Builds</a>\n</p>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"CitiTraders\">CitiTraders</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=CitiTraders&amp;action=edit&amp;section=2\" title=\"Edit section: CitiTraders\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>CitiTraders is a set of Citizens 2.0 traits that gives NPCs the ability to:\n</p>\n<ul><li>Buy and sell items for pre-set prices.</li>\n<li>Maintain an inventory.</li>\n<li>Work with Economy plugins to use bank accounts, owner accounts, or a per-npc account.</li></ul>\n<p>You can visit me on irc.esper.net in channel <a rel=\"nofollow\" class=\"external text\" href=\"irc://cititrader@irc.esper.net\">#cititrader</a> to ask questions, or make suggestions, or just to talk\n</p>\n<figure class=\"embedvideo\" data-service=\"youtube\" data-iframeconfig=\"{&quot;width&quot;:570,&quot;height&quot;:321,&quot;src&quot;:&quot;https://www.youtube-nocookie.com/embed/4NhtrE7fM0I?autoplay=1&quot;}\" style=\"width:570px\">\n\t<div class=\"embedvideo-wrapper\" style=\"height:321px\"><div class=\"embedvideo-consent\" data-show-privacy-notice=\"1\">\n\t<div class=\"embedvideo-overlay\">\n\t\t<div class=\"embedvideo-loader\" role=\"button\">\n\t\t\t<div class=\"embedvideo-loader__fakeButton\">Load video</div>\n\t\t\t<div class=\"embedvideo-loader__footer\">\n\t\t\t\t<div class=\"embedvideo-loader__service\">YouTube</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"embedvideo-privacyNotice hidden\">\n\t\t\t<div class=\"embedvideo-privacyNotice__content\">YouTube might collect personal data. <a href=\"https://www.youtube.com/howyoutubeworks/user-settings/privacy/\" rel=\"nofollow,noopener\" target=\"_blank\" class=\"embedvideo-privacyNotice__link\">Privacy Policy</a></div>\n\t\t\t<div class=\"embedvideo-privacyNotice__buttons\">\n<p>\t\t\t\t<button class=\"embedvideo-privacyNotice__continue\">Continue</button>\n\t\t\t\t<button class=\"embedvideo-privacyNotice__dismiss\">Dismiss</button>\n</p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div></div>\n</figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Installation\">Installation</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=CitiTraders&amp;action=edit&amp;section=3\" title=\"Edit section: Installation\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ul><li>Ensure you have Citizens 2, Vault, and an Economy plugin installed.</li>\n<li>Download the .jar from the link at the top of the page and place it in your /plugins folder.</li>\n<li>CitiTraders requires no configuration by itself. However it requires that you have Vault, an economy plugin that can be accessed via Vault and</li></ul>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Commands\">Commands</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=CitiTraders&amp;action=edit&amp;section=4\" title=\"Edit section: Commands\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>For a full list of commands visit by Bukkit page till I can update this Wiki\n</p><p>[<a rel=\"nofollow\" class=\"external text\" href=\"http://dev.bukkit.org/server-mods/cititraders/\">BUKKIT PAGE</a>]\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Permissions\">Permissions</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=CitiTraders&amp;action=edit&amp;section=5\" title=\"Edit section: Permissions\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><a href=\"/Cititrader/Permissions\" title=\"Cititrader/Permissions\">Permissions</a>\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Creating_a_new_npc_as_a_trader\">Creating a new npc as a trader</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=CitiTraders&amp;action=edit&amp;section=6\" title=\"Edit section: Creating a new npc as a trader\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<dl><dd><b>/trader create [NAME] -type [TYPE]</b></dd></dl>\n<p>[NAME] - Name of the NPC to create\n[TYPE] - type of NPC to create, (defaults to PLAYER if omitted)\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Adding_trader_to_an_existing_NPC\">Adding trader to an existing NPC</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=CitiTraders&amp;action=edit&amp;section=7\" title=\"Edit section: Adding trader to an existing NPC\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>To add trader functionality to existing NPCs use:\n</p>\n<dl><dd><b><code>/trait wallet</code></b></dd></dl>\n<p>and\n</p>\n<dl><dd><b><code>/trait stockroom</code></b></dd></dl>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Buying_and_Selling\">Buying and Selling</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=CitiTraders&amp;action=edit&amp;section=8\" title=\"Edit section: Buying and Selling\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>(If at any time you get stuck and a trader is not responding, close any windows and type /trader cancel)\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Accessing_the_storeroom_of_a_trader\">Accessing the storeroom of a trader</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=CitiTraders&amp;action=edit&amp;section=9\" title=\"Edit section: Accessing the storeroom of a trader\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ol><li>Get a book</li>\n<li>Hold the book</li>\n<li>Right click your trader while holding the book</li>\n<li>Place items into traders inventory</li></ol>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Setting_Buy/Sell_prices\"><span id=\"Setting_Buy.2FSell_prices\"></span>Setting Buy/Sell prices</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=CitiTraders&amp;action=edit&amp;section=10\" title=\"Edit section: Setting Buy/Sell prices\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<dl><dd><b><code>/trader sellprice &lt;amount&gt;</code></b></dd></dl>\n<p>and\n</p>\n<dl><dd><b><code>/trader buyprice &lt;amount&gt;</code></b></dd></dl>\n<p>after either of these command, right click the trader with the item in hand, this will set that items price with <b>this</b> trader. Prices are not global.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Buy_from_a_Trader\">Buy from a Trader</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=CitiTraders&amp;action=edit&amp;section=11\" title=\"Edit section: Buy from a Trader\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>To purchase goods from a trader you need to <b>Right Click</b> a trader. This will open a trade (inventory) window that lists all the different types of items the trader has on hand.\nAt this time you need to select the item you wish to purchase, <b>Left Click</b> on the item you wish to purchase, this will take you to the purchase window, here stacks of items will be made available, but only up to what the NPC has forsale. At this point you can <b>Right Click</b> to see the price of the stack, and <b>Left Click</b> to purchase the stack.\n</p><p>At any time you can click the <b>Arrow</b> to return to the item select screen.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Selling_to_a_Trader\">Selling to a Trader</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=CitiTraders&amp;action=edit&amp;section=12\" title=\"Edit section: Selling to a Trader\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>To sell to a trader first <b>Left Click</b> the trader, an inventory window will open, drag any item you want to sell to the trader to his window. Close the window. The prices will be caluculated and deposited into your account, any items he doesn't take will be dropped to the group on close.\n(This is going to be changed, Items the trader takes will be listed, and consumed on drop)\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Wallets\">Wallets</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=CitiTraders&amp;action=edit&amp;section=13\" title=\"Edit section: Wallets\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>To set a wallet you:\n</p>\n<dl><dd><b><code>/trader setwallet &lt;admin|private|bank &lt;player&gt;|owner|town_bank&gt;</code></b></dd></dl>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Admin\">Admin</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=CitiTraders&amp;action=edit&amp;section=14\" title=\"Edit section: Admin\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Setting a Wallet to admin will create an <b>ADMIN</b> shop, items will not be removed from the shop on sale, and money will be removed from players bank, but not deposited anywhere.\n</p>\n<dl><dd><b><code>/trader setwallet admin</code></b></dd></dl>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Private\">Private</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=CitiTraders&amp;action=edit&amp;section=15\" title=\"Edit section: Private\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>The NPC will hold any money that he makes, and you can withdraw the money later.\n</p>\n<dl><dd><b><code>/trader setwallet private</code></b></dd></dl>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Bank\">Bank</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=CitiTraders&amp;action=edit&amp;section=16\" title=\"Edit section: Bank\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>The NPC will use the bank account, this bank must be owned by the player that owns the NPC.\n</p>\n<dl><dd><b><code>/trader setwallet bank &lt;accountname&gt;</code></b></dd></dl>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Owner\">Owner</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=CitiTraders&amp;action=edit&amp;section=17\" title=\"Edit section: Owner\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>The NPC will use the Economy account of the Owner of the NPC\n</p>\n<dl><dd><b><code>/trader setwallet owner</code></b></dd></dl>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Town_Bank\">Town Bank</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=CitiTraders&amp;action=edit&amp;section=18\" title=\"Edit section: Town Bank\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>The NPC will use the bank account of a town (Using Towny Plugin). The Owner of the NPC that tries to assign this value must be Mayor or Assistant of the town.\n</p>\n<dl><dd><b><code>/trader setwallet town_bank</code></b></dd></dl>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"TODO\">TODO</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=CitiTraders&amp;action=edit&amp;section=19\" title=\"Edit section: TODO\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ul><li>Update this wiki</li></ul>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Discounts\">Discounts</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=CitiTraders&amp;action=edit&amp;section=20\" title=\"Edit section: Discounts\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>There will be group/player based discounts, they will be percentage based.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Sales_Display\">Sales Display</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=CitiTraders&amp;action=edit&amp;section=21\" title=\"Edit section: Sales Display\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Will be changing the way sales are displayed and handled, NPCs will list what they are buying in the inventory window, and players will drop and drop the item to the inventory, and the item will be sold immediately. (This change will trigger a release phase)\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Manager/Assistants\"><span id=\"Manager.2FAssistants\"></span>Manager/Assistants</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=CitiTraders&amp;action=edit&amp;section=22\" title=\"Edit section: Manager/Assistants\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Add Managers and Assistants to Shops, Managers and Assistants will be able stock stores, and set prices. Managers will have access to private bank, will look at adding additional banks later. They will not be able to link traders, link chests, or remove/fire NPCs, that will remain available for the owner of the Trader. This will allow for Server Admin to setup traders, and assign Manager Permissions to Players to operate a store.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Rewrite_Sell_To_Player\">Rewrite Sell To Player</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=CitiTraders&amp;action=edit&amp;section=23\" title=\"Edit section: Rewrite Sell To Player\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>More efficient and will allow for buystack\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145816\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.057 seconds\nReal time usage: 0.081 seconds\nPreprocessor visited node count: 114/1000000\nRevision size: 5950/2097152 bytes\nPost‐expand include size: 989/2097152 bytes\nTemplate argument size: 416/2097152 bytes\nHighest expansion depth: 3/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1125/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    7.950      1 -total\n 49.79%    3.958      1 Template:Color\n 47.81%    3.801      1 Template:Trait\n-->\n\n<!-- Render ID 837e0267-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Cititrader/Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "DtlTraders"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "RELEASE CANDIDATE",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "CitiTraders",
+        "byteoffset": 690,
+        "anchor": "RELEASE_CANDIDATE",
+        "linkAnchor": "RELEASE_CANDIDATE"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "CitiTraders",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "CitiTraders",
+        "byteoffset": 1093,
+        "anchor": "CitiTraders",
+        "linkAnchor": "CitiTraders"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Installation",
+        "number": "2.1",
+        "index": "3",
+        "fromtitle": "CitiTraders",
+        "byteoffset": 1519,
+        "anchor": "Installation",
+        "linkAnchor": "Installation"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Commands",
+        "number": "2.2",
+        "index": "4",
+        "fromtitle": "CitiTraders",
+        "byteoffset": 1846,
+        "anchor": "Commands",
+        "linkAnchor": "Commands"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Permissions",
+        "number": "2.3",
+        "index": "5",
+        "fromtitle": "CitiTraders",
+        "byteoffset": 2002,
+        "anchor": "Permissions",
+        "linkAnchor": "Permissions"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Creating a new npc as a trader",
+        "number": "2.4",
+        "index": "6",
+        "fromtitle": "CitiTraders",
+        "byteoffset": 2060,
+        "anchor": "Creating_a_new_npc_as_a_trader",
+        "linkAnchor": "Creating_a_new_npc_as_a_trader"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Adding trader to an existing NPC",
+        "number": "2.5",
+        "index": "7",
+        "fromtitle": "CitiTraders",
+        "byteoffset": 2237,
+        "anchor": "Adding_trader_to_an_existing_NPC",
+        "linkAnchor": "Adding_trader_to_an_existing_NPC"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Buying and Selling",
+        "number": "2.6",
+        "index": "8",
+        "fromtitle": "CitiTraders",
+        "byteoffset": 2395,
+        "anchor": "Buying_and_Selling",
+        "linkAnchor": "Buying_and_Selling"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Accessing the storeroom of a trader",
+        "number": "2.6.1",
+        "index": "9",
+        "fromtitle": "CitiTraders",
+        "byteoffset": 2527,
+        "anchor": "Accessing_the_storeroom_of_a_trader",
+        "linkAnchor": "Accessing_the_storeroom_of_a_trader"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Setting Buy/Sell prices",
+        "number": "2.6.2",
+        "index": "10",
+        "fromtitle": "CitiTraders",
+        "byteoffset": 2687,
+        "anchor": "Setting_Buy/Sell_prices",
+        "linkAnchor": "Setting_Buy/Sell_prices"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Buy from a Trader",
+        "number": "2.6.3",
+        "index": "11",
+        "fromtitle": "CitiTraders",
+        "byteoffset": 2966,
+        "anchor": "Buy_from_a_Trader",
+        "linkAnchor": "Buy_from_a_Trader"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Selling to a Trader",
+        "number": "2.6.4",
+        "index": "12",
+        "fromtitle": "CitiTraders",
+        "byteoffset": 3612,
+        "anchor": "Selling_to_a_Trader",
+        "linkAnchor": "Selling_to_a_Trader"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Wallets",
+        "number": "2.7",
+        "index": "13",
+        "fromtitle": "CitiTraders",
+        "byteoffset": 4024,
+        "anchor": "Wallets",
+        "linkAnchor": "Wallets"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Admin",
+        "number": "2.7.1",
+        "index": "14",
+        "fromtitle": "CitiTraders",
+        "byteoffset": 4140,
+        "anchor": "Admin",
+        "linkAnchor": "Admin"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Private",
+        "number": "2.7.2",
+        "index": "15",
+        "fromtitle": "CitiTraders",
+        "byteoffset": 4376,
+        "anchor": "Private",
+        "linkAnchor": "Private"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Bank",
+        "number": "2.7.3",
+        "index": "16",
+        "fromtitle": "CitiTraders",
+        "byteoffset": 4516,
+        "anchor": "Bank",
+        "linkAnchor": "Bank"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Owner",
+        "number": "2.7.4",
+        "index": "17",
+        "fromtitle": "CitiTraders",
+        "byteoffset": 4675,
+        "anchor": "Owner",
+        "linkAnchor": "Owner"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Town Bank",
+        "number": "2.7.5",
+        "index": "18",
+        "fromtitle": "CitiTraders",
+        "byteoffset": 4791,
+        "anchor": "Town_Bank",
+        "linkAnchor": "Town_Bank"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "TODO",
+        "number": "3",
+        "index": "19",
+        "fromtitle": "CitiTraders",
+        "byteoffset": 5014,
+        "anchor": "TODO",
+        "linkAnchor": "TODO"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Discounts",
+        "number": "3.1",
+        "index": "20",
+        "fromtitle": "CitiTraders",
+        "byteoffset": 5042,
+        "anchor": "Discounts",
+        "linkAnchor": "Discounts"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Sales Display",
+        "number": "3.2",
+        "index": "21",
+        "fromtitle": "CitiTraders",
+        "byteoffset": 5135,
+        "anchor": "Sales_Display",
+        "linkAnchor": "Sales_Display"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Manager/Assistants",
+        "number": "3.3",
+        "index": "22",
+        "fromtitle": "CitiTraders",
+        "byteoffset": 5416,
+        "anchor": "Manager/Assistants",
+        "linkAnchor": "Manager/Assistants"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Rewrite Sell To Player",
+        "number": "3.4",
+        "index": "23",
+        "fromtitle": "CitiTraders",
+        "byteoffset": 5877,
+        "anchor": "Rewrite_Sell_To_Player",
+        "linkAnchor": "Rewrite_Sell_To_Player"
+      }
+    ],
+    "showtoc": ""
+  }
+}

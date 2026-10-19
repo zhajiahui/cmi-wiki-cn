@@ -1,0 +1,148 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "1.x/Commands and Permissions",
+    "pageid": 13,
+    "revid": 1014,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><table class=\"wikitable\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"1\" style=\"width: 100%; background-color:#F75D59; font-size: 32px; padding: 15px;\"><b>Not Supported!</b>\n</th></tr>\n<tr>\n<td style=\"font-size: 16px;\">This page is about Citizens 1.x, while the current version is Citizens 2.0.2. This page's content may be outdated, and shouldn't be trusted as being correct. See this page's talk page for more information. If you were looking for the 2.0.2 equivalent of this page, try <a href=\"/index.php?title=Commands_and_Permissions&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Commands and Permissions (page does not exist)\">Commands and Permissions</a>. If you feel this message was displayed in error, please contact an administrator.\n</td></tr></tbody></table>\n<p>Read below for detailed command documentation. For more info on per-type commands and permissions, see its corresponding page.\n</p><p><b>[]</b> - Mandatory\n<br /><b>()</b> - Optional\n</p><p><b>Command</b> - command's syntax\n<br /><b>Args Description</b> - description of the command's arguments\n<br /><b>Require Selected</b> - whether the command requires an NPC to be selected\n<br /><b>Require Ownership</b> - whether the commands requires you to be the owner of the NPC\n<br /><b>Permission</b> - command's permission node\n<br /><b>Description</b> - short description of the command\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Admin_Commands\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Admin Commands</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#General_Commands\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">General Commands</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Waypoint_Commands\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Waypoint Commands</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Toggle_Commands\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Toggle Commands</span></a></li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#See_Also\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">See Also</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Admin_Commands\">Admin Commands</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Commands_and_Permissions&amp;action=edit&amp;section=1\" title=\"Edit section: Admin Commands\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Commands used for administration of the plugin itself, along with debug commands.\n</p>\n<table class=\"wikitable collapsible collapsed\" style=\"text-align: center; width: 100%\">\n\n<tbody><tr>\n<th style=\"width: 100%; background-color:#ADD8E6\" colspan=\"3\"><b>Admin Commands</b>\n</th></tr>\n<tr>\n<th style=\"width: 250px;\">Command\n</th>\n<th style=\"width: 170px;\">Permission\n</th>\n<th>Description\n</th></tr>\n<tr>\n<td>/citizens\n</td>\n<td>citizens.admin.info\n</td>\n<td>View general Citizens information\n</td></tr>\n<tr>\n<td>/citizens debug\n</td>\n<td>citizens.admin.debug\n</td>\n<td>Toggle debug mode, if debug is on, debug messages will print to the console\n</td></tr>\n<tr>\n<td>/citizens reload\n</td>\n<td>citizens.admin.reload\n</td>\n<td>Reload Citizens configuration files\n</td></tr>\n<tr>\n<td>/citizens save\n</td>\n<td>citizens.admin.save\n</td>\n<td>Save Citizens files\n</td></tr>\n<tr>\n<td>/citizens clean\n</td>\n<td>citizens.admin.clean\n</td>\n<td>Removes all \"ghost\" entities in your world\n</td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"General_Commands\">General Commands</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Commands_and_Permissions&amp;action=edit&amp;section=2\" title=\"Edit section: General Commands\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>General commands used for all NPCs.\n</p>\n<table class=\"wikitable collapsible collapsed\" style=\"text-align: center; width: 100%\">\n\n<tbody><tr>\n<th style=\"width: 100%; background-color:#ADD8E6\" colspan=\"6\"><b>General Commands</b>\n</th></tr>\n<tr>\n<th style=\"width: 250px;\">Command\n</th>\n<th style=\"width: 200px;\">Args Description\n</th>\n<th style=\"width: 150px;\">Require Selected\n</th>\n<th style=\"width: 150px;\">Require Ownership\n</th>\n<th style=\"width: 170px;\">Permission\n</th>\n<th>Description\n</th></tr>\n<tr>\n<td>/citizens help (page)\n</td>\n<td><i>page</i> - page to view\n</td>\n<td>false\n</td>\n<td>false\n</td>\n<td>citizens.basic.use.help\n</td>\n<td>View the help page for Citizens\n</td></tr>\n<tr>\n<td>/npc help (page)\n</td>\n<td><i>page</i> - page to view\n</td>\n<td>false\n</td>\n<td>false\n</td>\n<td>citizens.basic.use.help\n</td>\n<td>View the help page for Citizens\n</td></tr>\n<tr>\n<td>/npc\n</td>\n<td><i>None</i>\n</td>\n<td>true\n</td>\n<td>false\n</td>\n<td>citizens.basic.use.info\n</td>\n<td>View information on the selected NPC\n</td></tr>\n<tr>\n<td>/npc create [name] (text)\n</td>\n<td><i>name</i> - name of NPC <br /> <i>text</i> - text that an NPC says when right-clicked with the talk-item\n</td>\n<td>false\n</td>\n<td>false\n</td>\n<td>citizens.basic.create\n</td>\n<td>Create an NPC\n</td></tr>\n<tr>\n<td>/npc move\n</td>\n<td><i>None</i>\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.basic.modify.move\n</td>\n<td>Move an NPC to your location\n</td></tr>\n<tr>\n<td>/npc moveTo [x y z] (world pitch yaw)\n</td>\n<td><i>x y z</i> - coordinates to teleport NPC to <br /> <i>world</i> - world to teleport an NPC to <br /><i>pitch</i> - orientation of body <br /><i>yaw</i> - orientation of head\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.basic.modify.moveto\n</td>\n<td>Move an NPC to the specified location\n</td></tr>\n<tr>\n<td>/npc copy\n</td>\n<td><i>None</i>\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.basic.modify.copy\n</td>\n<td>Copy an NPC to your location (you must also meet the NPC count guidelines, see <i>citizens.npccount</i> permissions in the Other Permissions section below)\n</td></tr>\n<tr>\n<td>/npc remove (all)\n</td>\n<td><i>all</i> - Removes all NPCs\n</td>\n<td>true <i>(only for /npc remove)</i>\n</td>\n<td>true <i>(only for /npc remove)</i>\n</td>\n<td>citizens.basic.modify.remove or citizens.basic.modify.remove.all for <i>/npc remove all</i>\n</td>\n<td>Remove an NPC or all NPCs\n</td></tr>\n<tr>\n<td>/npc rename\n</td>\n<td><i>None</i>\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.basic.modify.rename\n</td>\n<td>Rename an NPC\n</td></tr>\n<tr>\n<td>/npc color &amp;[code]\n</td>\n<td><i>code</i> - Color code to change the name to\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.basic.modify.color\n</td>\n<td>Color an NPC's nameplate\n</td></tr>\n<tr>\n<td>/npc set [text]\n</td>\n<td><i>text</i> - Text to give to an NPC, split lines with <br /> tag\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.basic.modify.settext\n</td>\n<td>Set an NPC's text\n</td></tr>\n<tr>\n<td>/npc add [text]\n</td>\n<td><i>text</i> - Text to add to an NPC, split lines with <br /> tag\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.basic.modify.addtext\n</td>\n<td>Add to an NPC's text\n</td></tr>\n<tr>\n<td>/npc reset\n</td>\n<td><i>None</i>\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.basic.modify.resettext\n</td>\n<td>Remove an NPC's text\n</td></tr>\n<tr>\n<td>/npc equip\n</td>\n<td><i>None</i>\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.basic.modify.equip\n</td>\n<td>Enter equipment-edit mode\n</td></tr>\n<tr>\n<td>/npc tp\n</td>\n<td><i>None</i>\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.basic.use.teleport\n</td>\n<td>Teleport to an NPC\n</td></tr>\n<tr>\n<td>/npc talkclose\n</td>\n<td><i>None</i>\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.basic.modify.talkclose\n</td>\n<td>Toggle whether an NPC will talk when a player comes near\n</td></tr>\n<tr>\n<td>/npc lookat\n</td>\n<td><i>None</i>\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.basic.modify.lookat\n</td>\n<td>Toggle whether an NPC will turn when a player comes near\n</td></tr>\n<tr>\n<td>/npc select [id]\n</td>\n<td><i>id</i> - ID of the NPC to select\n</td>\n<td>false\n</td>\n<td>false\n</td>\n<td>citizens.basic.use.select\n</td>\n<td>Select a NPC\n</td></tr>\n<tr>\n<td>/npc setowner [player-name]\n</td>\n<td><i>player-name</i> - name of player to set the owner to\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.basic.modify.setowner\n</td>\n<td>Set the owner of an NPC\n</td></tr>\n<tr>\n<td>/npc list (name) (page)\n</td>\n<td><i>name</i> - name of player to list NPCs of, leave blank to list your own NPCs <br /> <i>page</i> - page of list to view\n</td>\n<td>false\n</td>\n<td>false\n</td>\n<td>citizens.basic.use.list\n</td>\n<td>List NPCs for yourself or another player\n</td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Waypoint_Commands\">Waypoint Commands</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Commands_and_Permissions&amp;action=edit&amp;section=3\" title=\"Edit section: Waypoint Commands\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Commands used to control NPC Waypoints.\n</p>\n<table class=\"wikitable collapsible collapsed\" style=\"text-align: center; width: 100%\">\n\n<tbody><tr>\n<th style=\"width: 100%; background-color:#ADD8E6\" colspan=\"6\"><b>Waypoint Commands</b>\n</th></tr>\n<tr>\n<th style=\"width: 250px;\">Command\n</th>\n<th style=\"width: 200px;\">Args Description\n</th>\n<th style=\"width: 150px;\">Require Selected\n</th>\n<th style=\"width: 150px;\">Require Ownership\n</th>\n<th style=\"width: 170px;\">Permission\n</th>\n<th>Description\n</th></tr>\n<tr>\n<td>/npc path\n</td>\n<td><i>None</i>\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.waypoints.edit\n</td>\n<td>Start editing an NPC's waypoints\n</td></tr>\n<tr>\n<td>/waypoints modifier [type]\n</td>\n<td><i>type</i> - modifier type to add to an NPC's waypoints\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.waypoints.modifer.(type) (replace type with the modifier type's name, see the <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> page for more info)\n</td>\n<td>Add a modifier to an NPC's waypoints\n</td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Toggle_Commands\">Toggle Commands</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Commands_and_Permissions&amp;action=edit&amp;section=4\" title=\"Edit section: Toggle Commands\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Commands used to toggle <a href=\"/Characters\" title=\"Characters\">NPC types</a>.\n</p>\n<table class=\"wikitable collapsible collapsed\" style=\"text-align: center; width: 100%\">\n\n<tbody><tr>\n<th style=\"width: 100%; background-color:#ADD8E6\" colspan=\"6\"><b>Toggle Commands</b>\n</th></tr>\n<tr>\n<th style=\"width: 250px;\">Command\n</th>\n<th style=\"width: 200px;\">Args Description\n</th>\n<th style=\"width: 150px;\">Require Selected\n</th>\n<th style=\"width: 150px;\">Require Ownership\n</th>\n<th style=\"width: 170px;\">Permission\n</th>\n<th>Description\n</th></tr>\n<tr>\n<td>/toggle help (page)\n</td>\n<td><i>page</i> - page number to view\n</td>\n<td>false\n</td>\n<td>false\n</td>\n<td>citizens.toggle.help\n</td>\n<td>View the available NPC types that you can toggle an NPC to become\n</td></tr>\n<tr>\n<td>/toggle [type]\n</td>\n<td><i>type</i> - the type you want to toggle an NPC to become\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.toggle.(type) (replace type with the NPC type)\n</td>\n<td>Toggle an NPC to become a type\n</td></tr>\n<tr>\n<td>/toggle all [on/off]\n</td>\n<td><i>on/off</i> - whether to toggle all types on or off\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.toggle.all\n</td>\n<td>Toggle all NPC types for an NPC\n</td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_Also\">See Also</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Commands_and_Permissions&amp;action=edit&amp;section=5\" title=\"Edit section: See Also\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><a href=\"/Characters\" title=\"Characters\">Characters</a>\n<a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a>\n</p><p><br />\n</p>\n<div class=\"padded\" style=\"font-size: 12px; padding: 5px\">\n<table class=\"wikitable collapsible collapsed\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Usage\" title=\"Category:Usage\">Usage</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Installation\" title=\"Installation\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Frequently_Asked_Questions\" title=\"Frequently Asked Questions\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Editors\" title=\"Editors\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Characters\" title=\"Characters\">Characters</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/API\" title=\"API\">API</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32;\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Configuration\" title=\"Category:Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Configuration\" title=\"Configuration\">Configuration</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Data_Storage\" title=\"Data Storage\">Data Storage</a>\n</td></tr></tbody></table>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145755\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.067 seconds\nReal time usage: 0.116 seconds\nPreprocessor visited node count: 39/1000000\nRevision size: 6668/2097152 bytes\nPost‐expand include size: 2455/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 4/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   37.061      1 -total\n 63.19%   23.418      1 Template:NoSupport\n 47.29%   17.527      2 Template:Version2F\n 36.26%   13.437      1 Template:NavBox\n 22.94%    8.500      1 Template:Version2\n 15.08%    5.588     10 Template:·\n-->\n\n<!-- Render ID 76f9a9e8-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "API"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Configuration"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Data Storage"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Editors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Text Syntax"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      },
+      {
+        "ns": 0,
+        "*": "Commands and Permissions"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Configuration"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Usage"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Admin Commands",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "1.x/Commands_and_Permissions",
+        "byteoffset": 567,
+        "anchor": "Admin_Commands",
+        "linkAnchor": "Admin_Commands"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "General Commands",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "1.x/Commands_and_Permissions",
+        "byteoffset": 1364,
+        "anchor": "General_Commands",
+        "linkAnchor": "General_Commands"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Waypoint Commands",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "1.x/Commands_and_Permissions",
+        "byteoffset": 4805,
+        "anchor": "Waypoint_Commands",
+        "linkAnchor": "Waypoint_Commands"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Toggle Commands",
+        "number": "4",
+        "index": "4",
+        "fromtitle": "1.x/Commands_and_Permissions",
+        "byteoffset": 5629,
+        "anchor": "Toggle_Commands",
+        "linkAnchor": "Toggle_Commands"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "See Also",
+        "number": "5",
+        "index": "5",
+        "fromtitle": "1.x/Commands_and_Permissions",
+        "byteoffset": 6591,
+        "anchor": "See_Also",
+        "linkAnchor": "See_Also"
+      }
+    ],
+    "showtoc": ""
+  }
+}

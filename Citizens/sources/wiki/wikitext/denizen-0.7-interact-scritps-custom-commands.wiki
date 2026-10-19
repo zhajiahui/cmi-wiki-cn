@@ -1,0 +1,392 @@
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://meta.denizenscript.com/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+<div style="float:right; clear:both; margin-left:2.5em; margin-bottom:2.0em">__TOC__</div>
+
+== Custom Commands == 
+<div style="margin-right:2.0em; padding:10px">
+Denizen is extensible! In addition to Triggers, Activities, and soon Requirement, an API is being provided to help you make custom Script Commands in your project! Have a neat idea for a command? Have a better way to STRIKE a player? (MEGASTRIKE command, anybody?)
+
+Keep reading!
+</div>
+
+== YourCommand extends AbstractCommand ==
+<div style="margin-right:2.0em; padding:10px">
+The first thing you need is a custom command class that extends the Denizen AbstractCommand. This contains the method called when it's time for your command to be executed. This is called every-single-time a script contains your command.
+</div>
+
+==== Example Command ====
+<div style="margin-right:2.0em; padding:10px">
+Sometimes the easiest way to work is to see an actual example. [http://pastie.org/4369453 View a copy of the STRIKE command on Pastie.org] for a very simple command, or check the code below. For more examples, you can always check [https://github.com/aufdemrand/Denizen/tree/master/src/main/java/net/aufdemrand/denizen/commands/core Core Denizen Commands].
+
+{{codebox|height=300px|STRIKE Denizen Command|<syntaxhighlight line='true' lang="java">
+
+package net.aufdemrand.denizen.commands.core;
+
+import java.util.logging.Level;
+
+import org.bukkit.Location;
+
+import net.aufdemrand.denizen.bookmarks.BookmarkHelper.BookmarkType;
+import net.aufdemrand.denizen.commands.AbstractCommand;
+import net.aufdemrand.denizen.scripts.ScriptEntry;
+import net.citizensnpcs.api.CitizensAPI;
+import net.citizensnpcs.command.exception.CommandException;
+
+/**
+ * Strikes the player (or NPC) with lightning.
+ * 
+ * @author Jeremy Schroeder
+ */
+
+public class StrikeCommand extends AbstractCommand {
+
+	/* STRIKE (DENIZEN|[Location Bookmark]|'[Denizen Name]:[Location Bookmark]') */
+
+	/* 
+	 * Arguments: [] - Required, () - Optional 
+	 * (DENIZEN) will strike the Denizen instead of the Player.
+	 *   To strike the player, simply leave this argument out.
+	 * ([Location Bookmark]|'[Denizen Name]:[Location Bookmark]')
+	 *   to specify a specific location to strike.
+	 *   
+	 * Modifiers:
+	 * (NODAMAGE) Makes the lightning non-lethal. No damage occured.
+	 * (NPCID:#) When used in conjunction with the DENIZEN argument,
+	 *   it will strike the specified Citizen. Note: Can be another
+	 *   Denizen as well.
+	 *   
+	 * Example Usage:
+	 * STRIKE
+	 * STRIKE DENIZEN 
+	 * STRIKE NODAMAGE
+	 * STRIKE 'NPCID:6' DENIZEN
+	 * 
+	 */
+
+	@Override
+	public boolean execute(ScriptEntry theEntry) throws CommandException {
+
+		/* Initialize variables */ 
+
+		Boolean isLethal = true;
+		Boolean strikePlayer = true;
+		Location strikeLocation = null;
+		
+		/* Match arguments to expected variables */
+		if (theEntry.arguments() != null) {
+			for (String thisArgument : theEntry.arguments()) {
+
+				if (plugin.debugMode) plugin.getLogger().info("Processing command " + theEntry.getCommand() + " argument: " + thisArgument);
+
+				// If argument is a modifier.
+				else if (thisArgument.toUpperCase().equals("DENIZEN")) {
+					if (plugin.debugMode) plugin.getLogger().log(Level.INFO, "...matched DENIZEN.");
+					strikePlayer = false;
+				}
+
+				// If argument is a modifier.
+				else if (thisArgument.toUpperCase().equals("NODAMAGE")) {
+					if (plugin.debugMode) plugin.getLogger().log(Level.INFO, "...matched modifier NODAMAGE.");
+							isLethal = false;
+				}
+
+				// If argument is a NPCID modifier...
+				if (thisArgument.toUpperCase().contains("NPCID:")) {
+					try {
+						if (CitizensAPI.getNPCRegistry().getById(Integer.valueOf(thisArgument.split(":")[1])) != null) {
+							strikeLocation = CitizensAPI.getNPCRegistry().getById(Integer.valueOf(thisArgument.split(":")[1])).getBukkitEntity().getLocation();
+							strikePlayer = false;
+							if (plugin.debugMode) plugin.getLogger().log(Level.INFO, "...NPCID specified.");
+						}
+					} catch (Throwable e) {
+						throw new CommandException("NPCID specified could not be matched to a Denizen.");
+					}
+				}
+				
+				// If argument is a valid bookmark, set location.
+				else if (plugin.bookmarks.exists(theEntry.getDenizen(), thisArgument)) {
+					if (plugin.debugMode) plugin.getLogger().log(Level.INFO, "...matched bookmark '" + thisArgument + "'.");
+					strikeLocation = plugin.bookmarks.get(theEntry.getDenizen(), thisArgument, BookmarkType.LOCATION);
+				} else if (thisArgument.split(":").length == 2) {
+					if (plugin.bookmarks.exists(thisArgument.split(":")[0], thisArgument.split(":")[1]))
+						if (plugin.debugMode) plugin.getLogger().log(Level.INFO, "...matched bookmark '" + thisArgument.split(":")[0] + "'.");
+					strikeLocation = plugin.bookmarks.get(thisArgument.split(":")[0], thisArgument.split(":")[1], BookmarkType.LOCATION);
+				}			
+
+				else {
+					if (plugin.debugMode) plugin.getLogger().log(Level.INFO, "...unable to match argument!");
+				}
+
+			}	
+		}
+
+		/* Execute the command. */
+
+		// If striking player...
+		if (strikePlayer) {
+			if (isLethal) theEntry.getPlayer().getWorld().strikeLightning(theEntry.getPlayer().getLocation());
+			else theEntry.getPlayer().getWorld().strikeLightningEffect(theEntry.getPlayer().getLocation());
+			return true;
+			} 
+		
+		// Not striking player...
+		else {
+			// Striking Denizen..
+			if (strikeLocation == null) {
+				if (isLethal) theEntry.getDenizen().getWorld().strikeLightning(theEntry.getPlayer().getLocation());
+				else theEntry.getDenizen().getWorld().strikeLightningEffect(theEntry.getPlayer().getLocation());
+			} 
+			// Striking Location (or specified NPCID)
+			else {
+				if (isLethal) strikeLocation.getWorld().strikeLightning(theEntry.getPlayer().getLocation());
+				else strikeLocation.getWorld().strikeLightningEffect(theEntry.getPlayer().getLocation());
+			}
+		}
+
+		return false;
+	}
+}
+}
+</syntaxhighlight>
+}}
+</div>
+
+
+==== Command Template ====
+<div style="margin-right:2.0em; padding:10px">
+Below is a command template copy for a copy/paste of the skeleton of a custom denizen commmand.
+
+{{codebox|height=300px|Denizen Command Template|<syntaxhighlight line='true' lang="java">
+package net.aufdemrand.denizen.commands.core;
+
+import org.bukkit.Location;
+
+import net.aufdemrand.denizen.commands.AbstractCommand;
+import net.aufdemrand.denizen.scripts.ScriptEntry;
+import net.citizensnpcs.command.exception.CommandException;
+
+/**
+ * Your command! 
+ * This class is a template for a Command in Denizen.
+ * 
+ * @author You!
+ */
+
+public class SampleCommand extends AbstractCommand {
+
+	/* COMMAND_NAME [TYPICAL] (ARGUMENTS) */
+
+	/* 
+	 * Arguments: [] - Required, () - Optional 
+	 * [TYPICAL] argument with a description if necessary.
+	 * (ARGUMENTS) should be clear and concise.
+	 *   
+	 * Modifiers:
+	 * (MODIFIER:VALUE) These are typically advanced usage arguments.
+	 * (DURATION:#) They should always be optional. Use standard modifiers
+	 *   already established if at all possible.
+	 *   
+	 * Example Usage:
+	 * COMMAND_NAME VALUE
+	 * COMMAND_NAME DIFFERENTVALUE OPTIONALVALUE
+	 * COMMAND_NAME ANOTHERVALUE 'MODIFIER:Show one-line examples.'
+	 * 
+	 */
+
+	@SuppressWarnings("unused") // This should be removed from your code.
+	@Override
+	// This is the method that is called when your command is ready to be executed.
+	public boolean execute(ScriptEntry theEntry) throws CommandException {
+
+		/* Initialize variables */ 
+
+	    	// Typically initialized as null and filled as needed. Remember: theEntry
+		    // contains some information passed through the execution process.
+			Boolean requiredVariable = null;
+			Location sampleBookmark = null;
+			
+		/* Match arguments to expected variables */
+		if (theEntry.arguments() != null) {
+			for (String thisArg : theEntry.arguments()) {
+				
+				// Do this routine for each argument supplied.
+				// Includes are some typical arguments. Modify/add code to handle your command needs.
+				
+				// If argument is a number.
+				if (aRegex.matchesInteger(thisArg)) {
+					// Insert code here.
+					
+					echoDebug("...number argument set to '%s'.", thisArg);
+				}
+					
+				else if (aRegex.matchesScript(thisArg)) {
+					// Insert code here.
+					
+					echoDebug("...affected script now set to '%s'.", thisArg);
+				}
+				
+				else if (aRegex.matchesDuration(thisArg)) {
+					// Insert code here.
+					
+					echoDebug("...duration set to '%s'.", thisArg);
+				}
+				
+				// If can't match to anything...
+				// This isn't always possible, depending on the arguments your 
+				// command uses, but nice if you can. Keep the users informed!
+				else {
+					echoDebug("...'%s' could not be matched!", thisArg);
+				}
+				
+			}	
+		}
+
+		/* Execute the command, if all required variables are filled. */
+		if (requiredVariable != null) {
+			
+			
+			// Execution process.
+			// Do whatever you want the command to do, here.
+			
+			
+			/* Command has sucessfully finished */
+			return true;
+		}
+			
+		// else...
+		
+		/* Error processing */
+			
+		// If processing has gotten to here, there's probably not been enough arguments, or correct
+		// arguments have not been met. Let's alert the Command Executer.
+		throw new CommandException("...not enough arguments! Usage: SAMPLECOMMAND [TYPICAL] (ARGUMENTS)");
+	}
+
+  // You can include more methods in this class if necessary. Or not. :)
+
+}
+</syntaxhighlight>
+}}
+</div>
+
+=== The ScriptEntry object ===
+<div style="margin-right:2.0em; padding:10px">
+When Denizen reads scripts, each line is turned into a SciptEntry object that contains the command, the arguments, and various other data and objects, as described below. Your command is an extension of this AbstractCommand class, and each time your command is called in for execution, it's this class that is executed and handled a ScriptEntry. How your Command uses the ScriptEntry information is of course, up to you.
+
+The Denizen ScriptEngine and Executer construct and fill a ScriptEntry with information that can be used in your command. Below is a list of methods you can use against the scriptEntry sent to your commands execute method.
+
+{{DenizenCommand
+|1= getCommand()
+|2= String value of the name of the command
+|3= Used by default in alerting the user when denizen is in debug mode, if the template is used. Also could be useful if your command module contains instructions for more than one command. You can register multiple commands to your module, as discussed later in this document.
+}}
+
+{{ScriptEntry
+|1= arguments()
+|2= String[] value of the arguments used in the script
+|3= This is the output of Denizen's argBuilder method. It splits the command arguments up with spaces and quotes. For instance: <code>arg1 arg2 'this is argument 3' "and that's argument 4"</code> would return a string array with a size of 4. Note argument 4, which handles an argument using a single quote. Hint: Double quotes around the argument, and vice-versa.
+}}
+
+{{ScriptEntry
+|1= sendingQueue()
+|2= QueueType of either QueueType.TRIGGER, QueueType.TASK, or QueueType.ACTIVITY
+|3= Denizen's Script Engine contains a method called runQeues which sends the ScriptEntries off to the executer. During this process, it stores which queue the command was called from. Can be used in advanced situations. Typically, if called by an Interact Script, this contains QueueType.TRIGGER.
+}}
+
+{{ScriptEntry
+|1= getScript()
+|2= String value of the script name
+|3= Could be useful if storing information about a Script. For example, Denizen's FINISH command takes this information for granted if no script is otherwise indicated in the arguments.
+}}
+
+{{ScriptEntry
+|1= getStep() 
+|2= Integer value of the script's step
+|3= Could be used similarly to getScript(). The ZAP command uses this information to know which step to proceed to.
+}}
+
+{{ScriptEntry
+|1= getPlayer()
+|2= Player object of the script triggerer
+|3= Pretty straight forward. The bukkit Player object can get all kinds of information about the player.
+}}
+
+{{ScriptEntry
+|1= getDenizen()
+|2= DenizenNPC object of the script triggeree
+|3= DenizenNPC makes it easy to work with the Denizen that has been interacted with. Good example: LOOK command.
+}}
+
+{{ScriptEntry
+|1= getInitiatedTime()
+|2= Long value of System.currentTimeMillis()
+|3= Contains a <code>Long System.currentTimeMillis()</code> of the system time in which it was sent to your Command for processing which you can use to check against.
+}}
+
+{{ScriptEntry
+|1= setDelayedTime() 
+|2= should be a Long value in the format of System.currentTimeMillis()
+|3= Advanced usage. See the DELAY command for an example.
+}}
+
+{{ScriptEntry
+|1= getDelayedTime()
+|2= Long value that was set with setDelayedTime()
+|3= Advanced usage. Again, see the DELAY command for an example. If not set with setDelayedTime(), this is null by default.
+}}
+
+{{ScriptEntry
+|1= getTexts()
+|2= String[2] of text sent by a Trigger
+|3= Vanilla Denizen will use this to store information sent to/from a Chat Trigger. Element [0] contains the text typed by the Player when the script was triggered, and element [1] contains the text as set in the Trigger: node of the script. 
+}}
+</div>
+
+== Registering your command ==
+<div style="margin-right:2.0em; padding:10px">
+In order for Denizen to use your command, it needs to be registered. This could probably be done in your plugin's onEnable() method.
+</div>
+
+==== Example code ====
+<div style="margin-right:2.0em; padding:10px">
+{{codebox|height=300px|Example Code for registering a Denizen Command|<syntaxhighlight line='true' lang="java">
+/*
+ * Sets up my plugin on start of the craftbukkit server.	
+ */
+
+public MyCommand myCommand = new MyCommand();
+
+@Override
+public void onEnable() {
+   getLogger().info("Enabling my plugin!");
+   
+   try {
+       myCommand.registerAs("CUSTOM_COMMAND");
+   } catch (ActivationException e) {
+       plugin.getLogger().log(Level.SEVERE, "Oh no! Activation Exception!");
+       e.printStackTrace();
+   }
+}
+</syntaxhighlight>
+}}
+
+[[Category:Denizen 0.7]]

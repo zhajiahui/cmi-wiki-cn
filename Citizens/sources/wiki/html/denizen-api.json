@@ -1,0 +1,55 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Denizen API",
+    "pageid": 153,
+    "revid": 5328,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://one.denizenscript.com/denizen/cmds/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://one.denizenscript.com/denizen/cmds/denizen/vids\">Tutorial Videos</a> on youtube or the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br /><br /><br />\n</p><p><br />\n<s>In Denizen, the Script Command system is extensible by design. It's very easy to make your own commands (and soon Requirements) extend the built-in features. On top of that, Denizen has some features available that may be of use to Plugin Developers.\n</s></p><s><div class=\"mw-heading mw-heading1\"><h1 id=\"Building_your_own_Commands\">Building your own Commands</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen_API&amp;action=edit&amp;section=1\" title=\"Edit section: Building your own Commands\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><div class=\"mw-heading mw-heading3\"><h3 id=\"The_ScriptCommand_Object\">The ScriptCommand Object</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen_API&amp;action=edit&amp;section=2\" title=\"Edit section: The ScriptCommand Object\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><p>When Denizen reads scripts, each line is turned into a SciptCommand object that contains the command, the arguments, and various other data and objects, as described below. Your command is an extension of this base Command class, and each time your command is called in for execution, it's this class that is executed and handled a ScriptCommand. How the Command uses the ScriptCommand information is of course, up to you.\n</p></s><s><div class=\"mw-heading mw-heading4\"><h4 id=\"What_a_ScriptCommand_holds\">What a ScriptCommand holds</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen_API&amp;action=edit&amp;section=3\" title=\"Edit section: What a ScriptCommand holds\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><p>ScriptCommands hold data about the situation surrounding the event that activates your command. Which type of script activates your Command, the ScriptCommand can have a multitude of information available. Keep in mind that the ScriptCommand object sent along may not have ALL this information, depending on the circumstances sent.\n</p></s><s><ul><li><code>.getCommand()</code> of course, contains a <code>String</code> of the name of your command.\n<dl><dd>Useful if your command module contains instructions for more than one command. You can register multiple commands to your module, as discussed later in this document. See the <code>ENGAGE</code> command for a useful example of utilizing this information.</dd></dl></li></ul></s><s><ul><li><code>.arguments()</code> has a <code>String[]</code> of all the arguments the player provided.\n<dl><dd>This pre-formats arguments that have used quotes, for instance, if the script command is <code>YOURCOMMAND argument1 argument2 'this is argument3'</code>, this object would have 3 items in the array.</dd></dl></li></ul></s><s><ul><li><code>.sendingQueue()</code> returns a <code>QueueType</code> of either <code>QueueType.TRIGGER</code>, <code>QueueType.TASK</code>, or <code>QueueType.ACTIVITY</code>\n<dl><dd>This contains the type of queue that sent the command. If the command was issues from a TASK script, for example, this would contain <code>QueueType.TASK</code></dd></dl></li></ul></s><s><ul><li><code>.getScript()</code> contains a <code>String</code> name of the script.</li></ul></s><s><ul><li><code>.getStep()</code> contains an <code>Integer</code> of the step of the script.\n<dl><dd>Note that if this was a <code>TASK</code> script, for example, this would be null.</dd></dl></li></ul></s><s><ul><li><code>.getTriggerType()</code> contains a <code>TriggerType</code> of the script, that is, what type of 'TRIGGER' triggered it.\n<dl><dd>This will be either <code>TriggerType.ATTACK</code>, <code>TriggerType.CLICK</code>, <code>TriggerType.CHAT</code>, <code>TriggerType.PROXIMITY</code>, <code>TriggerType.TASK</code>, or <code>TriggerType.LOCATION</code>. More types are likely to be implemented.</dd></dl></li></ul></s><s><ul><li><code>.getPlayer()</code> contains a <code>Player</code> object of the triggering Player, if triggered by a player, that is.\n<dl><dd>If triggered from a <code>ACTIVITY</code> script, this would be null.</dd></dl></li></ul></s><s><ul><li><code>.getDenizen()</code> contains a <code>NPC</code> Citizens2 object, again, if a NPC object is sent with it.\n<dl><dd>If triggered from a <code>TASK</code> script, this is null.</dd></dl></li></ul></s><s><ul><li><code>.getInitiatedTime()</code> contains a <code>Long System.currentTimeMillis()</code> of the system time in which it was sent to your Command for processing.</li></ul></s><s><ul><li><code>.getDelayedTime()</code> contains a <code>Long System.currentTimeMillis()</code> of the system time that was set by using the <code>.setDelay(Long newTime)</code>. This is null by default. Check out the <code>WAIT</code> command for a functional example of usage.</li></ul></s><s><ul><li><code>.getTexts()</code> contains a <code>String[]</code> of 2 elements.\n<dl><dd>First element, <code>.getTexts[0]</code> for example, has the 'raw text' that the player typed to initiate the command. Second element, <code>.getTexts[1]</code> contains the 'friendly text', most likely the Chat Trigger that was set in the script. As you can probaly guess, if <code>.getTriggerType()</code> isn't a <code>TriggerType.CHAT</code> this will most likely be null.</dd></dl></li></ul></s><s><p>To summarize, here's a list of methods that can be used to get information about the ScriptCommand.\n</p></s><s></s><ul><s></s><li><s><code>.getCommand()</code> <code>.arguments()</code> <code>.sendingQueue()</code> <code>.getScript()</code> <code>.getStep()</code> <code>.getTriggerType()</code> <code>.getPlayer()</code> <code>.getDenizen()</code> <code>.getInitiatedTime()</code> <code>.getDelayedTime()</code> <code>.getTexts()</code></s></li></ul>\n<!-- \nNewPP limit report\nCached time: 20261019145848\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.024 seconds\nReal time usage: 0.034 seconds\nPreprocessor visited node count: 9/1000000\nRevision size: 5227/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 9690d266-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Building your own Commands",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Denizen_API",
+        "byteoffset": 1037,
+        "anchor": "Building_your_own_Commands",
+        "linkAnchor": "Building_your_own_Commands"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "The ScriptCommand Object",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "Denizen_API",
+        "byteoffset": 1069,
+        "anchor": "The_ScriptCommand_Object",
+        "linkAnchor": "The_ScriptCommand_Object"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "What a ScriptCommand holds",
+        "number": "1.1.1",
+        "index": "3",
+        "fromtitle": "Denizen_API",
+        "byteoffset": 1527,
+        "anchor": "What_a_ScriptCommand_holds",
+        "linkAnchor": "What_a_ScriptCommand_holds"
+      }
+    ]
+  }
+}

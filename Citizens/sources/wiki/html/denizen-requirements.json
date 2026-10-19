@@ -1,0 +1,44 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Denizen/Requirements",
+    "pageid": 333,
+    "revid": 5386,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://meta.denizenscript.com/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br /><br /><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p>Requirements are no longer needed as of 0.9 thanks to the - IF { .. } command, however they are still supported to avoid breaking old scripts.\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"How_To_Use_Requirements\">How To Use Requirements</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Requirements&amp;action=edit&amp;section=1\" title=\"Edit section: How To Use Requirements\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>They are written near the top of interact scripts like so:\n</p>\n<pre>MyInteractScript:\n    Type: Interact\n    Requirements:\n        Mode: \n        List:\n        - FirstReq\n        - SecondReq etc. etc.</pre>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"List_Of_Requirements\">List Of Requirements</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Requirements&amp;action=edit&amp;section=2\" title=\"Edit section: List Of Requirements\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>enchanted, flagged, holding, ingroup, item, isliquid, money, op, owner, permission, ispowered, oxygen, procedure, script, sneaking, storming, sunny, rainy, time, inregion\n</p>\n<pre>- enchanted (iteminhand)\n- flagged [player/npc/global] [&lt;name&gt;([&lt;#&gt;])](:&lt;value&gt;)\n- holding [&lt;item&gt;] [qty:&lt;#&gt;] [exact]\n- ingroup (global) [&lt;group&gt;]\n- item [&lt;item&gt;] (qty:&lt;#&gt;)\n- isliquid [location:&lt;location&gt;]\n- money [qty:&lt;#&gt;]\n- op\n- owner\n- permission (global) [&lt;permission&gt;]\n- ispowered [location:&lt;location&gt;]\n- oxygen (range:below/equals/above) [qty:&lt;#&gt;]\n- procedure [&lt;script&gt;]\n- script [finished/failed] [script:&lt;name&gt;]\n- sneaking\n- storming (????????????????????) (This req is ill-defined)\n- sunny\n- rainy\n- time [dawn/day/dusk/night]\n- inregion [name:&lt;region&gt;]</pre>\n<!-- \nNewPP limit report\nCached time: 20261019145840\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.018 seconds\nReal time usage: 0.036 seconds\nPreprocessor visited node count: 14/1000000\nRevision size: 1836/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 812/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 91cc1e65-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "How To Use Requirements",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Denizen/Requirements",
+        "byteoffset": 830,
+        "anchor": "How_To_Use_Requirements",
+        "linkAnchor": "How_To_Use_Requirements"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "List Of Requirements",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Denizen/Requirements",
+        "byteoffset": 1064,
+        "anchor": "List_Of_Requirements",
+        "linkAnchor": "List_Of_Requirements"
+      }
+    ]
+  }
+}

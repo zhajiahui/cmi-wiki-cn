@@ -1,0 +1,348 @@
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://meta.denizenscript.com/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+Interact Script Commands are used to make the Denizen perform actions in an Interact Script. They are written in a [[YAML]] sequence under the Script node of an [[Denizen/Interact_Scripts/Triggers|Interact Trigger]]. A single entry in the sequence contains a Command and Modifiers. Some commands have no available modifiers.
+
+</div>
+
+===Syntax===
+Syntax is very important for proper execution.
+*Placing a caret ^ in front of the command name causes that command to ignore the normal 0.5 second delay between commands.
+*The command must be upper-case (i.e CHAT not chat)
+*Modifiers are not case sensitive.
+*Modifiers in '''[Brackets]''' are '''required''' for the command to execute. [A or B] means ''either'' A or B is required.
+*Modifiers in '''(Parentheses)''' are optional, and generally change the default behavior of the command.
+*Modifiers that take a value are of the form MODIFIER:VALUE. 
+**If the VALUE of the modifier contains a space, such as in the case of a NPC or script name, the whole modifier must be put in quotes.
+::Example: <code>- TELEPORT BOOKMARK:Bob:Bobshouse</code> is okay, but <code>- TELEPORT 'BOOKMARK:Bob Jones:Bobshouse'</code> requires the quotes to function properly.
+
+Example:
+<pre>
+Some Trigger:
+  Script:
+  - COMMAND1 MODIFIER1 MODIFIER2:VALUE
+  - COMMAND2 'MODIFIER1:Value With Spaces'
+  - ^COMMAND3 'This will run instantly after COMMAND2'
+</pre>
+
+===List of Commands===
+====Script Flow====
+<div style="font-family:museo-sans;">
+These commands have no external effect on the world, but can control the flow of scripts within Denizen. Though not required, and with the exception of <tt>WAIT</tt>, it is generally recommended to run these as <tt>Instant Commands</tt> to ensure smooth Script feedback to players.
+
+{{Denizen Command Color 2|mintcream|
+COOLDOWN
+|[# or DURATION:#] (GLOBAL) ('SCRIPT:Name of Script') 
+|Sets a cooldown period for this script. Defaults to the currently running script and the interacting player. Until the script has cooled down, it will not be selected to run again. Requires a number of seconds to be specified with or without the DURATION: modifier name.
+Modifiers:
+*GLOBAL makes the script unavailable to everyone, instead of just the interacting player.
+*SCRIPT: Sets the cooldown a different script.
+'''Example Usages'''
+<pre>
+- COOLDOWN 60
+- COOLDOWN GLOBAL 100
+- COOLDOWN 'SCRIPT:A Different Script' 600
+- COOLDOWN DURATION:15
+</pre>
+}}
+
+{{Denizen Command Color 2|mintcream|
+DISENGAGE
+|(NPCID:#)
+|<p>Allowed an <tt>ENGAGED</tt> Denizen to be interacted with again, the counterpart to the <tt>ENGAGE</tt> command. Can also specify the NPCID of a different Denizen</p>
+'''Example Usages'''
+<pre>
+- ENGAGE
+- (Other Commands)
+- DISENGAGE
+
+- DISENGAGE NPCID:7
+</pre>
+}}
+
+{{Denizen Command Color 2|mintcream|
+ENGAGE
+|(DURATION:#) (NPCID:#)
+| <p>Blocks player interaction from triggering the NPC. This may be useful if a long script required the player to listen or watch a series of events and you didn't want the Player to be able to interact while these commands were being taken out. Use with either a <tt>DURATION</tt> or <tt>DISENGAGE</tt>. <tt>DURATION</tt> will automatically <tt>DISENGAGE</tt> after the specified amount of seconds. If no <code>NPCID</code> is included, the Denizen triggered is used. Remember: While <tt>ENGAGED</tt>, no scripts will trigger, so be diligent in using!</p>
+'''Example Usages'''
+<pre>
+- ENGAGE
+- (Other Commands)
+- DISENGAGE
+
+- ENGAGE DURATION:12 
+- ENGAGE NPCID:2</pre>
+}}
+
+{{Denizen Command Color 2|mintcream|
+FAIL
+|('SCRIPT:Name of Script')
+| <p>Marks a script as 'Failed' to check against with the <tt>FAILED</tt> requirement. This is identical to the <tt>FINISH</tt> command, except keeps track of 'fails' instead. Again, this is kind of like a built-in flag for scripts, and acts much like a Counter, ie. You can <tt>FAIL</tt> a script multiple times and it will keep track of the total number, unless <tt>RESET</tt>. Note: A script can be both 'finished' and 'failed', the two commands work independently.</p>
+'''Example Usages'''
+<pre>- FAIL
+- FAIL 'SCRIPT:Magic Feathers'</pre>
+}}
+
+{{Denizen Command Color 2|mintcream|
+FINISH
+|('SCRIPT:Name of Script')
+| <p>Marks a script as 'Finished' to check against with the <tt>FINISHED</tt> requirement. This is kind of like a built-in flag for scripts, and acts much like a Counter, ie. You can <tt>FINISH</tt> a script multiple times and it will keep track of the total number, unless <tt>RESET</tt>.</p>
+'''Example Usages'''
+<pre>- FINISH
+- FINISH 'SCRIPT:Another Script'</pre>
+}}
+
+{{Denizen Command Color 2|mintcream|
+FLAG
+|['Flag Name' or 'Flag Name:Flag Value' or 'Flag Name:++' or 'Flag Name:--'] (PLAYER or DENIZEN or GLOBAL) (DURATION:#)
+| <p>Requires one of the above arguments. <tt>FLAG</tt> stores variables, or 'flags', by default to a Player. This can be used to keep track of information that can be check against with the FLAGGED requirement. Usage of the command is easy, and can be used in 3 different ways. A Boolean (true/false) value can be set with only a flag name. If set, the value is <tt>TRUE</tt>. When <tt>RESET</tt>, it is <tt>FALSE</tt>. <tt>FLAG</tt> can also set Integer (or number) variables, and easily increment or decrease them with the use of the <tt>++</tt> and <tt>--</tt> arguments accordingly. The command can also store a String value, see the example below. Using a <tt>DURATION</tt> will revert the value of the flag to the previous value, if during the duration the flag has not changed. Using the PLAYER modifier will set the flag on the Player (which is the default behavior). Using the DENIZEN modifier will set a flag on the Denizen instead of the Player. Using the GLOBAL modifier will set a flag independent of a Player or Denizen.</p>
+'''Example Usages'''
+<pre>- FLAG 'Sample Boolean Flag'
+- FLAG Alignment:++
+- FLAG Alignment:--
+- FLAG 'Active Item:60 Feathers'
+- FLAG WorldBossDead GLOBAL
+- FLAG HasHealingFlag DURATION:180
+</pre>
+}}
+
+{{Denizen Command Color 2|mintcream|
+IF
+|(EXACTLY) (PLAYER or DENIZEN or GLOBAL) (-)[FLAG:Name or FLAG:Name:Value] (IS_NUMBER) ['SCRIPT:Script Run When Condition Met'] (QUEUE:TRIGGER or QUEUE:TASK) (APPEND) (ELSE 'SCRIPT:Script Run When Condition Not Met')
+|Checks the value of a FLAG and runs a TASK script if the condition is met. By default the TASK script will run before the interact script continues.
+Modifiers:
+*EXACTLY - For integer flags, the IF condition is met only if the value matches exactly. By default, the condition is met if the flag's value is greater than or equal to the value it is checked against, i.e. IF 'FLAG:AGE:13' will pass for any AGE that is at least 13, but IF EXACTLY 'FLAG:AGE:13' will only pass if the AGE is 13.
+*PLAYER - Check a flag set on this Player (which is the default behavior)
+*DENIZEN - Check a DENIZEN flag set on the Denizen itself instead of a flag on this Player
+*GLOBAL - Check a GLOBAL flag instead of a flag on this Player
+*IS_NUMBER - The IF condition is met only if the value of the flag is an integer or double.
+*APPEND - Runs the TASK after this script completes, instead of before the next command.
+*QUEUE - Specify which queue to run the commands in, defaults to the executing queue type.
+*ELSE - Choose a TASK script to run when the IF condition is not met.
+'''Example Usages'''
+<pre>
+- IF FLAG:BossDead SCRIPT:Reward APPEND
+- IF EXACTLY FLAG:Stage:4 SCRIPT:Stage4Instructions
+- IF 'FLAG:AGE:13' 'SCRIPT:Meets Minimum Age' ELSE 'SCRIPT:Does Not Meet Minimum Age'
+</pre>
+}}
+
+{{Denizen Command Color 2|mintcream|
+RANDOM
+|[#]
+|Selects a single command to run from the next # lines in the script and discards the rest.
+'''Example Usages'''
+<pre>
+- CHAT "I'm going to say the name of an animal"
+- RANDOM 3
+- CHAT "Cow"
+- CHAT "Zebra"
+- CHAT "Elephant"
+- CHAT "Wasn't that fun?"
+</pre>
+}}
+
+====Server====
+
+{{Denizen Command Color 2|aliceblue|
+EXECUTE
+| [ASPLAYER or ASSERVER or ASNPC] ["command and arguments"]
+| <p>Runs a Minecraft/Bukkit command. Specifying <tt>ASPLAYER, ASSERVER, or ASNPC</tt> defines how the command should be executed. ASNPC will run the command as the Denizen interacting, temporarily granting OP privileges, if the Denizen NPC is a Human-type NPC. Running ASSERVER will run as a console command, and running ASPLAYER will simply run the command as the Player. When specifying the command and arguments, it is not necessary to use the '/' that is generally used when running commands in-game. You may also use <PLAYER>, <WORLD>, or <NPCID> as variables inside the command arguments.</p>
+'''Example Usages'''
+<pre>EXECUTE ASSERVER 'gamemode <PLAYER> 2'
+EXECUTE ASNPC 'toggledownfall'
+EXECUTE ASPLAYER 'spawn'</pre>
+}}
+
+====Speech====
+<div style="font-family:museo-sans;">
+These commands show some text to the player interacting, and usually to bystanders around. Text commands also have some auto-formatting, such as making sure no words will be cut off on long messages, and applying color codes. See: [[Color_Codes|Denizen Color Codes]]. Formatting for how NPCs and Players talk can be customized in the [[Denizen/config.yml]].
+
+*All Speech commands '''require quotes''' (single (' ') or double (" ")) around the text. If your text has an apostrophe (') in it, you '''MUST''' use double quotes (" ")!!
+
+There are various placeholders you can use to fill in specific information. The basic ones are:
+*<NPC> - The Denizens's name.
+*<PLAYER> - The interacting Player's name
+*<DISPLAYNAME> - The interacting Player's display name
+*<HEALTH> - The interacting Player's heath
+*<WORLD> - The name of the Denizen's world
+
+If you use the NOPLAYER modifier on a text command the <PLAYER>, <DISPLAYNAME> and <HEALTH> tags are not available.
+
+A list of all available placeholders can be found in [[Replaceables]].
+
+{{Denizen Command Color 2|lavender|
+ANNOUNCE 
+|['The text to announce.']
+| Sends the text as a sever announcement to all players, regardless of their place in the world. Could be especially useful for any kind of administration script.
+'''Example Usages'''
+<pre>
+- ANNOUNCE "<PLAYER> has found a secret!"
+</pre>
+}}
+
+{{Denizen Command Color 2|lavender|
+CHAT
+|["The text to chat."] (NPCID:#) (NOPLAYER)
+| Makes the Denizen talk to the player. This is the standard chat mechanism in Denizen. You can also change the NPC doing the talking by specifying a Denizen's C2 NPCID. If you would rather the Denizen NPC not speak to the Player directly, use the <tt>NOPLAYER</tt> argument.
+'''Example Usages'''
+<pre>
+- CHAT NOPLAYER "Here ye, hear ye!"
+- CHAT "Hello there, children!"
+- CHAT NPCID:6 'I only supply tools to builders!'
+</pre>
+}}
+
+{{Denizen Command Color 2|lavender|
+NARRATE
+|['The text to narrate.']
+| Makes a message appear to player without sender information.
+'''Example Usages'''
+<pre>
+- NARRATE "There is a small mailbox here."
+</pre>
+}}
+
+====Denizen Interaction====
+Denizen interaction commands are meant to help bring your Denizen to life by allowing fine control of movement and actions during scripts. These are not meant for making the Denizen do continuous movement and actions, that should instead be done via [[Denizen/Activity_Scripts/Activities|Activities]].
+
+{{Denizen Command Color 2|mintcream|
+PAUSE
+|(DURATION:#)
+|Causes the Denizen to stop any pathing or activities. Useful for keeping it in place during an interaction.
+Modifiers:
+*DURATION: 
+::Automatically RESUME after the specified number of seconds.
+'''Example Usages'''
+<pre>
+- PAUSE
+- PAUSE DURATION:30
+</pre>
+}}
+
+====World Interaction====
+
+{{Denizen Command Color 2|lightgoldenrodyellow|
+DROP
+| [ID or ID:Data or MATERIAL or MATERIAL:Data or XP] (QTY:#) (BOOKMARK:LocationBookmark)
+| Drop an item at the Denizen's location, or at a location bookmark if one is specified.
+'''Example Usages'''
+<pre>
+- DROP DIAMOND QTY:3
+- DROP 18:3 QTY:1 BOOKMARK:LargeTree
+- DROP XP QTY:10
+</pre>
+}}
+
+{{Denizen Command Color 2|lightgoldenrodyellow|
+LISTEN KILL
+|[TYPE:GROUP or TYPE:PLAYER or TYPE:ENTITY or TYPE:NPC] [NAME:Name or NPCID:#] (QTY:#) [SCRIPT:Task Script] (ID:Name)
+| This command starts the Denizen listening for the player to kill the specified number of specified targets, then runs a task script. Use the NAME:Name modifier when specifying a group name, player name, or [[Types|entity type]] (like 'ZOMBIE'). Use NPCID:# modifier when using TYPE:NPC.
+Optional Modifiers:
+*QTY: - The number things the player must kill before the script is run.
+*REGION: - The World Guard region the player must be in for the kill to count.
+'''Example Usages'''
+<pre>
+- LISTEN KILL TYPE:ENTITY NAME:ZOMBIE QTY:5 SCRIPT:ZombieReward
+- LISTEN KILL ID:BossListener TYPE:NPC NPCID:12 'SCRIPT:Kill Boss Reward'
+</pre>
+}}
+
+{{Denizen Command Color 2|lightgoldenrodyellow|
+LISTEN BLOCK
+|[TYPE:BREAK or TYPE:BUILD or TYPE:COLLECT] (QTY:#) [BLOCKS:Item Names] (REGION:WorldGuardRegion) [SCRIPT:Task Script] [ID:Name]
+| This command starts the Denizen listening for the player to interact with a given number of blocks, then runs a task scripts. 
+Optional Modifiers:
+*QTY: - The number things the player must 'do' to finish, default 1.
+*REGION: - The World Guard region the player must be in for the interaction to count.
+'''Example Usages'''
+<pre>
+- LISTEN BLOCK TYPE:BREAK BLOCKS:sand|stone|stonebrick QTY:5 SCRIPT:BlockFinished
+- LISTEN BLOCK ID:BuildListner TYPE:BUILD 'SCRIPT:Kill Boss Reward' REGION:KillRegion
+</pre>
+}}
+
+{{Denizen Command Color 2|lightgoldenrodyellow|
+SWITCH
+|[LOCATION:x,y,z,world] (STATE:ON|OFF|TOGGLE) (DURATION:#)
+| This command will activate a button, switch or pressure plate at the designated location.
+Modifiers:
+*DURATION: - Will switch the device again after the specified number of seconds.
+*STATE: - Switches the device to the position given, if TOGGLE, it switches the device to the opposite position it currently is.
+'''Example Usages'''
+<pre>
+- SWITCH LOCATION:12,134,124,world DURATION:30
+- SWITCH LOCATION:132,65,-643,world_nether STATE:OFF
+</pre>
+}}
+
+====Player Interaction====
+These commands default to affecting the interacting player. Most have modifiers to affect the executing Denizen instead.
+
+{{Denizen Command Color 2|palegreen|
+CAST
+| [SpellName] (DURATION:#) (POWER:#) (NPC:#) (PLAYER:PlayerName)
+| Gives the specified target a potion effect.  [[Alchemist#Valid_Effects | Valid potion names are the same as the Alchemist's.]] 
+Modifiers:
+*DURATION:#
+::The effect duration, in seconds. Default is 60.
+*POWER:#
+::The level of the effect, usually 1-5. Default is 1.
+*NPC:#
+::The NPC to cast the effect on, instead of the interacting player. Specify with the NPC id.
+*PLAYER:PlayerName
+::The Player to cast the effect on, instead of the interacting player.
+'''Example Usages'''
+<pre>
+- CAST SPELL:confusion DURATION:300 POWER:3
+- CAST SPELL:speed
+</pre>
+}}
+
+{{Denizen Command Color 2|palegreen|
+FEED
+|(AMOUNT:#)
+|Feeds the interacting player. Provides food and saturation.
+Modifiers:
+AMOUNT: The amount to feed. Default is 20.
+'''Example Usages'''
+<pre>
+- FEED
+- FEED 5
+</pre>
+}}
+
+{{Denizen Command Color 2|palegreen|
+HEAL
+|(DENIZEN) (AMOUNT:#)
+|Heals the interacting player.
+Modifiers:
+*DENIZEN
+::Heals the Denizen instead of the player.
+*AMOUNT:
+::The amount to heal, will not heal beyond the maximum. Defaults to a full heal if not specified.
+'''Example Usages'''
+<pre>
+- HEAL
+- HEAL DENIZEN AMOUNT:1
+</pre>
+}}

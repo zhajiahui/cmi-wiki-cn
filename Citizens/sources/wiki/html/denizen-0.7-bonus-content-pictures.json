@@ -1,0 +1,35 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Denizen/0.7/Bonus Content/Pictures",
+    "pageid": 216,
+    "revid": 5381,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://meta.denizenscript.com/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br /><br /><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p>\n<div style=\"margin-right:2.0em; padding:10px; margin-top:30px; font-family:camingodos-web; font-size:110%;\">\n<p><span style=\"font-family:natalya-alternate-one; font-size:650%; margin-right:-7px; margin-left:-10px;\">J</span>ust for fun, here's some pictures we've come across from our users.\n</p><p><br />\n</p>\n<figure typeof=\"mw:File/Thumb\"><a href=\"/File:Tenowgs_850_Denizens.png\" class=\"mw-file-description\"><img src=\"/images/d/dc/Tenowgs_850_Denizens.png\" decoding=\"async\" width=\"400\" height=\"226\" class=\"mw-file-element\" /></a><figcaption>850 Denizen NPCs Wandering on a 7x7 platform. Taken by tenowg.</figcaption></figure>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"850_Wandering_Denizens\">850 Wandering Denizens</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Bonus_Content/Pictures&amp;action=edit&amp;section=1\" title=\"Edit section: 850 Wandering Denizens\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>\n850 Denizen NPCs using an Activity Script with the WANDER command on a 7x7 platform. The server maintained 20TPS, though it did use a bit of CPU. Taken by tenowg.<br />\n<br />\n<tt>&lt;tenowg&gt; was going to try for 1000 but my fingers got tired</tt>\n</p></div>\n<!-- \nNewPP limit report\nCached time: 20261019145832\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.022 seconds\nReal time usage: 0.036 seconds\nPreprocessor visited node count: 7/1000000\nRevision size: 1411/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 65/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 8d076a68-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [
+      "Tenowgs_850_Denizens.png"
+    ],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "4",
+        "line": "850 Wandering Denizens",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Denizen/0.7/Bonus_Content/Pictures",
+        "byteoffset": 1085,
+        "anchor": "850_Wandering_Denizens",
+        "linkAnchor": "850_Wandering_Denizens"
+      }
+    ]
+  }
+}

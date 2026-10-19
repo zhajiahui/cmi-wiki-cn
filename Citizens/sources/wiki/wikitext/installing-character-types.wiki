@@ -1,0 +1,11 @@
+Installing character types varies from type to type, but it generally follows this pattern.
+# Shutdown your server
+# Download the character type's jar into your plugins folder
+# Start up your server, then shut it down again
+# Edit any necessary configuration files for that character type
+# Turn the server back on
+# ???
+# Profit.
+
+See the individual character's wiki page for specific details on that type's installation.
+[[Category:Configuration]]

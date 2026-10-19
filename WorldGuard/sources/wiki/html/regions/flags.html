@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en" data-accent-color="violet" data-content_root="../../">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Region Flags - WorldGuard 7.0 documentation</title><link rel="index" title="Index" href="../../genindex/" /><link rel="search" title="Search" href="../../search/" /><link rel="next" title="Priority and Inheritance" href="../priorities/" /><link rel="prev" title="Region Wand" href="../wand/" /><script>
+    function setColorMode(t){let e=document.documentElement;e.setAttribute("data-color-mode",t);let a=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t;"auto"===t&&(s=a?"dark":"light"),"light"===s?(e.classList.remove("dark"),e.classList.add("light")):(e.classList.remove("light"),e.classList.add("dark"))}
+    setColorMode(localStorage._theme||"auto");
+  </script><link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ad592e98" />
+    <link rel="stylesheet" type="text/css" href="../../_static/shibuya.css?v=44020203" />
+    <link media="print" rel="stylesheet" type="text/css" href="../../_static/print.css?v=20ff2c19" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=d0922fbb" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sy-f-text: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+  --sy-f-heading: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+}
+</style>
+    <meta property="og:type" content="website"/><meta property="og:title" content="Region Flags"/>
+    <meta name="twitter:card" content="summary"/>
+  <script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="worldguard" /><meta name="readthedocs-version-slug" content="latest" /><meta name="readthedocs-resolver-filename" content="/regions/flags/" /><meta name="readthedocs-http-status" content="200" /></head>
+<body><div class="sy-head">
+  <div class="sy-head-blur"></div>
+  <div class="sy-head-inner sy-container mx-auto">
+    <a class="sy-head-brand" href="../../">
+      
+      
+      <strong>WorldGuard</strong>
+    </a>
+    <div class="sy-head-nav" id="head-nav">
+      <nav class="sy-head-links" data-align=left><ul><li class="link">
+          <a href="https://enginehub.org">
+            <span>Developed by EngineHub</span><i class="i-lucide external-link"></i></a>
+        </li><li class="link">
+          <a href="https://github.com/sponsors/EngineHub?o=esb">
+            <span><iconify-icon icon='simple-icons:githubsponsors' style='color: #db61a2;'></iconify-icon> Sponsored by users like you!</span><i class="i-lucide external-link"></i></a>
+        </li></ul></nav>
+      <div class="sy-head-extra flex items-center print:hidden"><form class="searchbox flex items-center" action="../../search/" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <kbd>/</kbd>
+</form><div class="sy-head-socials">
+  <a href="https://github.com/EngineHub/WorldGuard" aria-label="GitHub">
+    <iconify-icon icon="simple-icons:github"></iconify-icon>
+  </a>
+  <a href="https://discord.gg/enginehub" aria-label="Discord">
+    <iconify-icon icon="simple-icons:discord"></iconify-icon>
+  </a></div></div>
+    </div>
+    <div class="sy-head-actions flex items-center shrink-0 print:hidden"><button class="js-theme theme-switch flex items-center"
+data-aria-auto="Switch to light color mode"
+data-aria-light="Switch to dark color mode"
+data-aria-dark="Switch to auto color mode">
+<i class="i-lucide theme-icon"></i>
+</button><button class="md:hidden flex items-center js-menu" aria-label="Menu" type="button" aria-controls="head-nav" aria-expanded="false">
+        <div class="hamburger">
+          <span class="hamburger_1"></span>
+          <span class="hamburger_2"></span>
+          <span class="hamburger_3"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="sy-page sy-container flex mx-auto">
+  <aside id="lside" class="sy-lside md:w-72 md:shrink-0 print:hidden">
+    <div class="sy-lside-inner md:sticky">
+      <div class="sy-scrollbar p-6">
+        <div class="globaltoc" data-expand-depth="2"><ul class="current">
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../install/">Installation</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../config/">Configuration</a><ul>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../host-keys/">Host Keys</a></li>
+</ul>
+</li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../permissions/">Permissions</a><ul>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../build-perms/">Build Permissions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../commands/">Commands</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../blacklist/">Blacklist</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../">Regions</a><ul class="current">
+<li class="toctree-l2 _expand"><a class="reference internal" href="../quick-start/">Quick Start</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../wand/">Region Wand</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Region Flags</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../priorities/">Priority and Inheritance</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../global-region/">Global Region</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../commands/">Region Commands</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../claiming/">Claiming</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../storage/">Storage Drivers</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../scope/">What&#8217;s Protected?</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../common-scenarios/">Common Scenarios</a></li>
+</ul>
+</li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../chest-protection/">Chest Protection</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../developer/">WorldGuard API</a><ul>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../developer/dependency/">As a Dependency</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../developer/regions/">Working with Regions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../developer/regions/managers/">Managers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developer/regions/protected-region/">Regions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developer/regions/custom-flags/">Custom Flags and Session Handlers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developer/regions/spatial-queries/">Spatial Queries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developer/regions/flag-calculation/">Flag Calculation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developer/regions/protection-query/">Querying Protection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developer/regions/events/">Region Events</a></li>
+</ul>
+</li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../developer/native-objects/">From Bukkit Objects</a></li>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../developer/internal-apis/">Internal APIs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../advanced/">Advanced Topics</a><ul>
+<li class="toctree-l2 _expand"><a class="reference internal" href="../../advanced/event-logging/">Event Logging</a></li>
+</ul>
+</li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../faq/">Common Questions</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../support/">Getting Help</a></li>
+<li class="toctree-l1 _expand"><a class="reference internal" href="../../source-code/">Source Code</a></li>
+</ul>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="lside-overlay js-menu" role="button" aria-label="Close left sidebar" aria-controls="lside" aria-expanded="false"></div>
+  <aside id="rside" class="sy-rside pb-3 w-64 shrink-0 order-last">
+    <button class="rside-close js-menu xl:hidden" aria-label="Close Table of Contents" type="button" aria-controls="rside" aria-expanded="false">
+      <i class="i-lucide close"></i>
+    </button>
+    <div class="sy-scrollbar sy-rside-inner px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4"><div class="localtoc"><h3>On this page</h3><ul>
+<li><a class="reference internal" href="#region-groups">Region Groups</a></li>
+<li><a class="reference internal" href="#types-of-flags">Types of Flags</a></li>
+<li><a class="reference internal" href="#conflicting-flags">Conflicting Flags</a></li>
+<li><a class="reference internal" href="#default-values-of-flags">Default Values of Flags</a></li>
+<li><a class="reference internal" href="#flag-listing">Flag Listing</a><ul>
+<li><a class="reference internal" href="#overrides">Overrides</a></li>
+<li><a class="reference internal" href="#protection-related">Protection-Related</a></li>
+<li><a class="reference internal" href="#mobs-fire-and-explosions">Mobs, Fire, and Explosions</a></li>
+<li><a class="reference internal" href="#natural-events">Natural Events</a></li>
+<li><a class="reference internal" href="#movement">Movement</a></li>
+<li><a class="reference internal" href="#map-making">Map Making</a></li>
+<li><a class="reference internal" href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="edit-this-page">
+  <a href="https://github.com/EngineHub/WorldGuardDocs/blob/master/source/regions/flags.rst">Edit this page</a>
+</div></div>
+  </aside>
+  <div class="rside-overlay js-menu" role="button" aria-label="Close Table of Contents" aria-controls="rside" aria-expanded="false"></div>
+  <main class="sy-main w-full max-sm:max-w-full print:pt-6">
+<div class="sy-breadcrumbs" role="navigation">
+  <div class="sy-breadcrumbs-inner flex items-center">
+    <div class="md:hidden mr-3">
+      <button class="js-menu" aria-label="Menu" type="button" aria-controls="lside" aria-expanded="false">
+        <i class="i-lucide menu"></i>
+      </button>
+    </div>
+    <ol class="flex-1" itemscope itemtype="https://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="../../"><span itemprop="name">WorldGuard</span></a>
+        <span>/</span>
+        <meta itemprop="position" content="1" />
+      </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="../"><span itemprop="name">Regions</span></a>
+        <span>/</span>
+        <meta itemprop="position" content="2" />
+      </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <strong itemprop="name">Region Flags</strong>
+        <meta itemprop="position" content="3" />
+      </li></ol>
+    <div class="xl:hidden ml-1">
+      <button class="js-menu" aria-label="Show table of contents" type="button" aria-controls="rside"
+        aria-expanded="false">
+        <i class="i-lucide outdent"></i>
+      </button>
+    </div>
+  </div>
+</div><div class="flex flex-col break-words justify-between">
+      <div class="relative min-w-0 max-w-6xl px-6 pb-6 pt-8 xl:px-12">
+  <div class="copy-page-wrapper relative pb-4 lg:absolute lg:top-8 lg:right-6 xl:right-12">
+  <div id="copy-page-trigger">
+    <button
+      type="button"
+      class="js-copy px-3 py-1 inline-flex items-center gap-1"
+      data-url="https://raw.githubusercontent.com/EngineHub/WorldGuardDocs/refs/heads/master/source/regions/flags.rst.txt"
+    >
+      <i class="i-lucide" data-icon="copy"></i>
+      <span>Copy page</span>
+    </button>
+    <button class="js-menu px-2 py-1" type="button" aria-label="More actions"
+      aria-haspopup="menu" aria-expanded="false" aria-controls="copy-page-content">
+      <i class="i-lucide chevron-down"></i>
+    </button>
+  </div>
+  <div id="copy-page-content" role="menu" aria-orientation="vertical" aria-hidden="true">
+    <div role="presentation">
+      <div class="flex flex-col" role="group">
+        <button class="js-copy" type="button" role="menuitem"
+          data-url="https://raw.githubusercontent.com/EngineHub/WorldGuardDocs/refs/heads/master/source/regions/flags.rst.txt">
+          <span class="iconify-icon">
+            <i class="i-lucide" data-icon="copy"></i>
+          </span>
+          <span>Copy page</span>
+        </button>
+        <a role="menuitem" href="https://raw.githubusercontent.com/EngineHub/WorldGuardDocs/refs/heads/master/source/regions/flags.rst.txt" target="_blank" rel="nofollow"><iconify-icon icon="bi:code-slash"></iconify-icon>
+            <span>View Source</span></a><a role="menuitem" href="https://chatgpt.com/?hints=search&q=Read%20https%3A//raw.githubusercontent.com/EngineHub/WorldGuardDocs/refs/heads/master/source/regions/flags.rst.txt%20so%20I%20can%20ask%20questions%20about%20it." target="_blank" rel="nofollow">
+          <iconify-icon icon="bi:openai"></iconify-icon>
+          <span>Open in ChatGPT</span>
+        </a><a role="menuitem" href="https://claude.ai/new?q=Read%20https%3A//raw.githubusercontent.com/EngineHub/WorldGuardDocs/refs/heads/master/source/regions/flags.rst.txt%20so%20I%20can%20ask%20questions%20about%20it." target="_blank" rel="nofollow">
+          <iconify-icon icon="bi:claude"></iconify-icon>
+          <span>Open in Claude</span>
+        </a></div>
+    </div>
+  </div>
+</div><article class="yue" role="main">
+          <section id="region-flags">
+<h1>Region Flags<a class="headerlink" href="#region-flags" title="Link to this heading">¶</a></h1>
+<p>Regions can have flags set upon it. Some uses of flags include:</p>
+<ul class="simple">
+<li><p>Blocking player versus player combat with the <code class="docutils literal notranslate"><span class="pre">pvp</span></code> flag</p></li>
+<li><p>Denying entry to a region using the <code class="docutils literal notranslate"><span class="pre">entry</span></code> flag</p></li>
+<li><p>Disabling the melting of snow using the <code class="docutils literal notranslate"><span class="pre">snow-melt</span></code> flag</p></li>
+<li><p>Blocking players within the region from receiving chat using the <code class="docutils literal notranslate"><span class="pre">receive-chat</span></code> flag</p></li>
+<li><p>Halting the growth of vines by using the <code class="docutils literal notranslate"><span class="pre">vine-growth</span></code> flag</p></li>
+</ul>
+<p>A region can have several different flags set at one time, although a certain flag can only have one value at a time. Flags are defined using the <code class="docutils literal notranslate"><span class="pre">/region</span> <span class="pre">flag</span></code> (alternatively <code class="docutils literal notranslate"><span class="pre">/rg</span> <span class="pre">flag</span></code>) command, as illustrated below for the “spawn” region and “hospital” regions:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1">/region flag spawn pvp deny
+</span><span data-line="2">/region flag spawn greeting Welcome to spawn!
+</span><span data-line="3">/rg flag hospital heal-amount 2
+</span><span data-line="4">/rg flag hospital heal-delay 1
+</span></pre></div>
+</div>
+<p>Remove a flag by not specifying a value:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="o">/</span><span class="n">rg</span> <span class="n">flag</span> <span class="n">spawn</span> <span class="n">pvp</span>
+</span></pre></div>
+</div>
+<p>List flags by using the “flags” command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="o">/</span><span class="n">rg</span> <span class="n">flags</span> <span class="n">spawn</span>
+</span></pre></div>
+</div>
+<p>The output of this command is interactive in-game. Click flag values to change them, and the arrows at the bottom to navigate through pages.</p>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#region-groups" id="id2">Region Groups</a></p></li>
+<li><p><a class="reference internal" href="#types-of-flags" id="id3">Types of Flags</a></p></li>
+<li><p><a class="reference internal" href="#conflicting-flags" id="id4">Conflicting Flags</a></p></li>
+<li><p><a class="reference internal" href="#default-values-of-flags" id="id5">Default Values of Flags</a></p></li>
+<li><p><a class="reference internal" href="#flag-listing" id="id6">Flag Listing</a></p>
+<ul>
+<li><p><a class="reference internal" href="#overrides" id="id7">Overrides</a></p></li>
+<li><p><a class="reference internal" href="#protection-related" id="id8">Protection-Related</a></p></li>
+<li><p><a class="reference internal" href="#mobs-fire-and-explosions" id="id9">Mobs, Fire, and Explosions</a></p></li>
+<li><p><a class="reference internal" href="#natural-events" id="id10">Natural Events</a></p></li>
+<li><p><a class="reference internal" href="#movement" id="id11">Movement</a></p></li>
+<li><p><a class="reference internal" href="#map-making" id="id12">Map Making</a></p></li>
+<li><p><a class="reference internal" href="#miscellaneous" id="id13">Miscellaneous</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="region-groups">
+<span id="id1"></span><h2>Region Groups<a class="headerlink" href="#region-groups" title="Link to this heading">¶</a></h2>
+<p>Sometimes, it may be desired for a flag to only apply to a certain group of players rather than everyone that should enter the region. This can be achieved by specifying an additional “region group” when defining the flag.</p>
+<p>Region groups describe the (non-)membership of players to a region. They are handled by WorldGuard internally, and are entirely unrelated to permission groups.</p>
+<p>The following region groups exist:</p>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Region Group</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>all</p></td>
+<td><p>Everyone</p></td>
+</tr>
+<tr class="row-odd"><td><p>members</p></td>
+<td><p>Members and owners of the region</p></td>
+</tr>
+<tr class="row-even"><td><p>owners</p></td>
+<td><p>Owners of the region</p></td>
+</tr>
+<tr class="row-odd"><td><p>nonmembers</p></td>
+<td><p>Everyone who <cite>isn’t</cite> an owner or member of the region</p></td>
+</tr>
+<tr class="row-even"><td><p>nonowners</p></td>
+<td><p>Everyone who <cite>isn’t</cite> an owner of the region</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The group can be specified using the <code class="docutils literal notranslate"><span class="pre">-g</span></code> marker as illustrated below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="o">/</span><span class="n">region</span> <span class="n">flag</span> <span class="n">spawn</span> <span class="o">-</span><span class="n">g</span> <span class="n">nonmembers</span> <span class="n">pvp</span> <span class="n">deny</span>
+</span></pre></div>
+</div>
+<p>It is <strong>not</strong> possible to set the same flag to different values for more than one group on the same region. If you need that functionality, consider making several regions.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When there are multiple overlapping regions, a player must be a member of the region <em>on which the flag is set</em> or <em>on one of the region’s child regions</em> (when region inheritance is involved). This is explained further in <a class="reference internal" href="../priorities/"><span class="doc">Priority and Inheritance</span></a>.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">entry</span></code> and <code class="docutils literal notranslate"><span class="pre">exit</span></code> flags default to “non-member”, meaning setting them to “deny” will prevent non-members from entering/exiting the region. The <code class="docutils literal notranslate"><span class="pre">spawn</span></code> location flag defaults to “members”, which means that only members can take advantage of it by default. The <code class="docutils literal notranslate"><span class="pre">nonplayer-protection-domains</span></code> flag has no region group. All other flags provided by WorldGuard default to “everyone”.</p>
+</div>
+</section>
+<section id="types-of-flags">
+<h2>Types of Flags<a class="headerlink" href="#types-of-flags" title="Link to this heading">¶</a></h2>
+<p>Each flag is of a certain type that determines what kind of values it may take. For example, the <code class="docutils literal notranslate"><span class="pre">heal-amount</span></code> flag is an integer flag, so you can only set integer values for it.</p>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14.3%" />
+<col style="width: 85.7%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Type</p></th>
+<th class="head"><p>Kind of values</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>state</p></td>
+<td><p>Either ‘allow’ or ‘deny’ (explained later)</p></td>
+</tr>
+<tr class="row-odd"><td><p>string</p></td>
+<td><p>Any form of text</p></td>
+</tr>
+<tr class="row-even"><td><p>integer</p></td>
+<td><p>A number that does not have decimals (5, but not 5.5)</p></td>
+</tr>
+<tr class="row-odd"><td><p>double</p></td>
+<td><p>Numbers that may have decimals (5, 5.5, 2.425)</p></td>
+</tr>
+<tr class="row-even"><td><p>location</p></td>
+<td><p>A location in a world</p></td>
+</tr>
+<tr class="row-odd"><td><p>boolean</p></td>
+<td><p>True or false</p></td>
+</tr>
+<tr class="row-even"><td><p>set</p></td>
+<td><p>A list of unique entries</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Internally, there are more types, but it should generally not be of concern.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Most string flags will accept <code class="docutils literal notranslate"><span class="pre">\n</span></code> as a newline (for example, to send multiple lines via <code class="docutils literal notranslate"><span class="pre">greeting</span></code>/<code class="docutils literal notranslate"><span class="pre">farewell</span></code>, or a title and subtitle via <code class="docutils literal notranslate"><span class="pre">greeting-title</span></code> and <code class="docutils literal notranslate"><span class="pre">farewell-title</span></code>).</p>
+<p>They may also accept color codes, either in the old style <code class="docutils literal notranslate"><span class="pre">&amp;[0-9a-f]</span></code> or <code class="docutils literal notranslate"><span class="pre">`[RrYyGgCcBbPp012w]</span></code> for dark-red, red, dark yellow, yellow, etc., and <code class="docutils literal notranslate"><span class="pre">[&amp;`][klmnox]</span></code> for obfuscated, bold, strikethrough, underline, and italic text.</p>
+<p>They may also accept some replacements, such as <code class="docutils literal notranslate"><span class="pre">%name%</span></code> for the player’s name, <code class="docutils literal notranslate"><span class="pre">%world%</span></code> for world name, <code class="docutils literal notranslate"><span class="pre">%online%</span></code> for player count, <code class="docutils literal notranslate"><span class="pre">%id%</span></code> for the player’s UUID, and <code class="docutils literal notranslate"><span class="pre">%health%</span></code> for the player’s current health.</p>
+</div>
+<aside class="topic">
+<p class="topic-title">Example: Using string formatting options</p>
+<p>Setting spawn’s <code class="docutils literal notranslate"><span class="pre">greeting-title</span></code> to a fancy welcome message:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1">/rg flag spawn greeting-title `bWelcome to spawn!\n`YEnjoy your stay in `g`n%world%`x, `C%name%`Y!
+</span></pre></div>
+</div>
+</aside>
+</section>
+<section id="conflicting-flags">
+<h2>Conflicting Flags<a class="headerlink" href="#conflicting-flags" title="Link to this heading">¶</a></h2>
+<p>Sometimes, a certain location may have multiple overlapping regions with different values for the same flag. The following rules are used to determine which values are selected:</p>
+<ul class="simple">
+<li><p>Regions will inherit the value of a flag from its parent, <strong>if</strong> the region did not have the flag set. (Note that the <code class="docutils literal notranslate"><span class="pre">build</span></code> flag is set implicitly with membership.)</p></li>
+<li><p>Higher priority regions will override lower-priority regions.</p></li>
+<li><p>The global region is considered like any other region, except it is at the lowest possible priority.</p></li>
+</ul>
+<p>However, it is still possible for there to be conflicting flag values even after that process. Imagine two different regions at the same priority, for example. At that point, the value of the flag is decided differently depending on the type of flag:</p>
+<ul class="simple">
+<li><p>For state flags, if <code class="docutils literal notranslate"><span class="pre">deny</span></code> is present, the result is <code class="docutils literal notranslate"><span class="pre">deny</span></code>. Otherwise, if <code class="docutils literal notranslate"><span class="pre">allow</span></code> is present, then the final value is <code class="docutils literal notranslate"><span class="pre">allow</span></code>.</p></li>
+<li><p>For other flags, the result is not defined. For that reason, do not, for example, set two different greeting messages in the same area with the same priority.</p></li>
+</ul>
+</section>
+<section id="default-values-of-flags">
+<h2>Default Values of Flags<a class="headerlink" href="#default-values-of-flags" title="Link to this heading">¶</a></h2>
+<p>Flags can have default values, which are used if a flag is not set for the subject’s region group on any region that affects the action. The default behavior is whichever is most sensible. For example, if <code class="docutils literal notranslate"><span class="pre">item-pickup</span></code> is not defined, WorldGuard defaults to allowing it. You can view the default values ingame by using the “flags” command as already described above. State flags can either be allowed by default, or have no default value. A rule of thumb is that protection-related flags, as listed below, have no default value, except for the <code class="docutils literal notranslate"><span class="pre">build</span></code> flag. All other state flags are usually allowed by default. The <code class="docutils literal notranslate"><span class="pre">build</span></code> flag is special. Its default value depends on the region membership of the subject and it’s always set implicitely, if it’s not set explicitely on any highest priority region that affects an action. That’s the reason why members and owners can build and non-members can’t by default. All other protection-related flags are always checked in tandem with the build flag. Thus their default behavior is the resulting value of the build flag.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Most of the time you don’t need to set any flags. You should only set flags if you want to deviate from the default values or to overwrite set flags of other regions. Specifically don’t set protection-related flags to completely protect or unprotect a region. Use membership or the <code class="docutils literal notranslate"><span class="pre">passthrough</span></code> flag instead.</p>
+</div>
+</section>
+<section id="flag-listing">
+<h2>Flag Listing<a class="headerlink" href="#flag-listing" title="Link to this heading">¶</a></h2>
+<p>Flags are broken down into categories below.</p>
+<section id="overrides">
+<span id="flag-overrides"></span><h3>Overrides<a class="headerlink" href="#overrides" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 22.2%" />
+<col style="width: 11.1%" />
+<col style="width: 66.7%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Flag</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>passthrough</p></td>
+<td><p>state</p></td>
+<td><p>This flag is short for ‘passthrough build’. It has nothing to do with movement.</p>
+<ul class="simple">
+<li><p>If not set <strong>(default)</strong>, then the region protects it area.</p></li>
+<li><p>If set to <code class="docutils literal notranslate"><span class="pre">deny</span></code>, then the region protects its area.</p></li>
+<li><p>If set to <code class="docutils literal notranslate"><span class="pre">allow</span></code>, then the region <strong>no longer</strong> protects its area.</p></li>
+</ul>
+<p>Where does the flag come into use?</p>
+<ul class="simple">
+<li><p>When you are using other flags (PvP, healing, etc.) and you don’t want to prevent building.</p></li>
+<li><p>Why not set <code class="docutils literal notranslate"><span class="pre">build</span></code> to <code class="docutils literal notranslate"><span class="pre">allow</span></code> (explained later) instead? That would override other regions and let people build!</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>nonplayer-protection-domains</p></td>
+<td><p>set of strings</p></td>
+<td><p>Non-player associables, such as pistons, are usually members of either all regions in which they are in or only of the regions with the highest priorities in which they are in, depending on the <code class="docutils literal notranslate"><span class="pre">use-max-priority-association</span></code> <a class="reference internal" href="../../config/"><span class="doc">Configuration</span></a> setting and if it is a <a class="reference internal" href="../global-region/"><span class="doc">Global Region</span></a>. Thus there can be borders between regions, such that pistons cannot move blocks from one region into another region.</p>
+<p>The borders between the regions can be removed for non-player associables by setting the <code class="docutils literal notranslate"><span class="pre">nonplayer-protection-domains</span></code> flags of these regions. This flag is a set of strings, describing the domains to which the region belongs. If a non-player associable is a member of a region, then it is also a member of another region, if there is at least one domain to which both regions belong to.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="protection-related">
+<h3>Protection-Related<a class="headerlink" href="#protection-related" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 22.2%" />
+<col style="width: 11.1%" />
+<col style="width: 66.7%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Flag</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>build</p></td>
+<td><p>state</p></td>
+<td><p>Everything:</p>
+<ul class="simple">
+<li><p>Whether blocks can be mined or placed</p></li>
+<li><p>Whether doors, levers, etc. (but not inventories) can be used</p></li>
+<li><p>Whether entities and blocks can be interacted with</p></li>
+<li><p>Whether player versus player combat is permitted</p></li>
+<li><p>Whether sleeping in a bed is permitted</p></li>
+<li><p>Whether inventories can be accessed</p></li>
+<li><p>Whether vehicles (boats, minecarts) can be placed</p></li>
+<li><p>etc.</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>interact</p></td>
+<td><p>state</p></td>
+<td><p>Everything that involves ‘using’ a block or entity:</p>
+<ul class="simple">
+<li><p>Whether doors, levers, etc. (but not inventories) can be used</p></li>
+<li><p>Whether vehicles (including animals) can be mounted</p></li>
+<li><p>etc.</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>block-break</p></td>
+<td><p>state</p></td>
+<td><p>Whether blocks can be broken</p></td>
+</tr>
+<tr class="row-odd"><td><p>block-place</p></td>
+<td><p>state</p></td>
+<td><p>Whether blocks can be placed</p></td>
+</tr>
+<tr class="row-even"><td><p>use</p></td>
+<td><p>state</p></td>
+<td><p>Whether doors, levers, etc. (but not inventories) can be used</p></td>
+</tr>
+<tr class="row-odd"><td><p>damage-animals</p></td>
+<td><p>state</p></td>
+<td><p>Whether players can harm friendly animals (cows, sheep, etc)</p></td>
+</tr>
+<tr class="row-even"><td><p>chest-access</p></td>
+<td><p>state</p></td>
+<td><p>Whether inventories can be accessed</p></td>
+</tr>
+<tr class="row-odd"><td><p>ride</p></td>
+<td><p>state</p></td>
+<td><p>Whether vehicles (including animals) can be mounted</p></td>
+</tr>
+<tr class="row-even"><td><p>pvp</p></td>
+<td><p>state</p></td>
+<td><p>Whether player versus player combat is permitted</p></td>
+</tr>
+<tr class="row-odd"><td><p>sleep</p></td>
+<td><p>state</p></td>
+<td><p>Whether sleeping in a bed is permitted</p></td>
+</tr>
+<tr class="row-even"><td><p>respawn-anchors</p></td>
+<td><p>state</p></td>
+<td><p>Whether respawn anchors can be activated</p></td>
+</tr>
+<tr class="row-odd"><td><p>tnt</p></td>
+<td><p>state</p></td>
+<td><p>Whether TNT detonation or block damage is permitted</p></td>
+</tr>
+<tr class="row-even"><td><p>vehicle-place</p></td>
+<td><p>state</p></td>
+<td><p>Whether vehicles (boats, minecarts) can be placed</p></td>
+</tr>
+<tr class="row-odd"><td><p>vehicle-destroy</p></td>
+<td><p>state</p></td>
+<td><p>Whether vehicles can be destroyed</p></td>
+</tr>
+<tr class="row-even"><td><p>lighter</p></td>
+<td><p>state</p></td>
+<td><p>Whether flint and steel or a fire charge can be used</p></td>
+</tr>
+<tr class="row-odd"><td><p>block-trampling</p></td>
+<td><p>state</p></td>
+<td><p>Whether farmland and turtle or sniffer eggs can be trampled</p></td>
+</tr>
+<tr class="row-even"><td><p>frosted-ice-form</p></td>
+<td><p>state</p></td>
+<td><p>Whether players with frost walker boots will form ice</p></td>
+</tr>
+<tr class="row-odd"><td><p>item-frame-rotation</p></td>
+<td><p>state</p></td>
+<td><p>Whether items can be rotated within item frames</p></td>
+</tr>
+<tr class="row-even"><td><p>firework-damage</p></td>
+<td><p>state</p></td>
+<td><p>Whether fireworks can deal damage to entities</p></td>
+</tr>
+<tr class="row-odd"><td><p>use-anvil</p></td>
+<td><p>state</p></td>
+<td><p>Whether anvils can be used</p></td>
+</tr>
+<tr class="row-even"><td><p>use-dripleaf</p></td>
+<td><p>state</p></td>
+<td><p>Whether dripleaf can be used</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>None of these flags are player-specific. For example, the <code class="docutils literal notranslate"><span class="pre">block-break</span></code> flag, if set to deny, <strong>prevents pistons from breaking blocks</strong>.</p>
+<p>To understand why, consider the fact that players can fling TNT into a region from outside, or a player can build an inchworm piston machine that moves into another region. While these actions were caused by a player, realistically attempting to figure which player built the TNT cannon or used it is much more difficult. However, you still want to prevent someone from blowing up spawn with a TNT cannon.</p>
+<p>Outright blocking TNT cannons or pistons is the wrong solution. Pistons and TNT cannons should be allowed in <em>some</em> cases. For example, a TNT cannon or piston inside should work <em>within</em> the region.</p>
+<p>First off, remember who can build in regions: it’s <strong>not</strong> players, it’s <strong>members</strong>. When we consider pistons or TNT, it should be no different. How does WorldGuard figure out whether a piston machine or TNT cannon is a member of a region? <strong>If it’s inside the region,</strong> of course!</p>
+<p>When you create a region, before setting any flags on it:</p>
+<ul class="simple">
+<li><p>Members may build</p></li>
+<li><p>Non-members may <strong>not</strong> build</p></li>
+</ul>
+<p>TNT cannons and pistons inside are allowed to work because they are “members.” An imaginary player, “Bobby,” who isn’t a member yet, is unable to place or break blocks. Once you add Bobby to the region, then Bobby can build.</p>
+<p>When you set the protection flags, you override this behavior. If you set <code class="docutils literal notranslate"><span class="pre">block-break</span></code> to <code class="docutils literal notranslate"><span class="pre">deny</span></code>, then even members are unable to break blocks. Bobby cannot break blocks. A TNT cannon inside cannot break blocks. A piston inside cannot break blocks. <strong>You break pistons.</strong></p>
+<p>That raises two questions:</p>
+<ul class="simple">
+<li><p><strong>How do I prevent players from placing or breaking blocks?</strong> Don’t do anything. Don’t change any flags! Remember, only members can build by default.</p></li>
+<li><p><strong>How do I change a flag to only affect players?</strong> You probably mean: how do you make a flag only affect <em>non-members</em>? Well, that’s easy: use <a class="reference internal" href="#region-groups"><span class="std std-ref">Region Groups</span></a>.</p></li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Note: If the <code class="docutils literal notranslate"><span class="pre">build</span></code> flag is set to <code class="docutils literal notranslate"><span class="pre">allow</span></code> or <code class="docutils literal notranslate"><span class="pre">deny</span></code>, it can still be overriden with a different flag (<code class="docutils literal notranslate"><span class="pre">block-break</span></code>, <code class="docutils literal notranslate"><span class="pre">interact</span></code>, etc.). The <code class="docutils literal notranslate"><span class="pre">build</span></code> flag is set implicitly with membership.</p>
+</div>
+</section>
+<section id="mobs-fire-and-explosions">
+<h3>Mobs, Fire, and Explosions<a class="headerlink" href="#mobs-fire-and-explosions" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 22.2%" />
+<col style="width: 11.1%" />
+<col style="width: 66.7%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Flag</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>creeper-explosion</p></td>
+<td><p>state</p></td>
+<td><p>Whether creeper explosions can do damage</p></td>
+</tr>
+<tr class="row-odd"><td><p>enderdragon-block-damage</p></td>
+<td><p>state</p></td>
+<td><p>Whether enderdragons can do block damage (destroy blocks)</p></td>
+</tr>
+<tr class="row-even"><td><p>ghast-fireball</p></td>
+<td><p>state</p></td>
+<td><p>Whether ghast fireballs and wither skulls can do damage</p></td>
+</tr>
+<tr class="row-odd"><td><p>other-explosion</p></td>
+<td><p>state</p></td>
+<td><p>Whether explosions can do damage</p></td>
+</tr>
+<tr class="row-even"><td><p>fire-spread</p></td>
+<td><p>state</p></td>
+<td><p>Whether fire can spread</p></td>
+</tr>
+<tr class="row-odd"><td><p>enderman-grief</p></td>
+<td><p>state</p></td>
+<td><p>Whether endermen will break/place blocks</p></td>
+</tr>
+<tr class="row-even"><td><p>snowman-trails</p></td>
+<td><p>state</p></td>
+<td><p>Whether snow golem will create snow beneath them</p></td>
+</tr>
+<tr class="row-odd"><td><p>ravager-grief</p></td>
+<td><p>state</p></td>
+<td><p>Whether ravagers will break blocks</p></td>
+</tr>
+<tr class="row-even"><td><p>mob-damage</p></td>
+<td><p>state</p></td>
+<td><p>Whether mobs can hurt players</p></td>
+</tr>
+<tr class="row-odd"><td><p>mob-spawning</p></td>
+<td><p>state</p></td>
+<td><p>Whether mobs can spawn, including ‘manually’ spawning via commands, spawn eggs, or similar methods</p></td>
+</tr>
+<tr class="row-even"><td><p>deny-spawn</p></td>
+<td><p>set of entity types</p></td>
+<td><p>A list of entity types that cannot spawn, including ‘manually’ spawning via commands, spawn eggs, or similar methods</p></td>
+</tr>
+<tr class="row-odd"><td><p>entity-painting-destroy</p></td>
+<td><p>state</p></td>
+<td><p>Whether non-player entities can destroy paintings</p></td>
+</tr>
+<tr class="row-even"><td><p>entity-item-frame-destroy</p></td>
+<td><p>state</p></td>
+<td><p>Whether non-player entities can destroy item frames</p></td>
+</tr>
+<tr class="row-odd"><td><p>wither-damage</p></td>
+<td><p>state</p></td>
+<td><p>Whether withers can do damage (with their body explosions - skull projectiles are handled by ghast-fireball as mentioned above)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="topic">
+<p class="topic-title">Example: Preventing sheep and cows from spawning at spawn</p>
+<p>The entity types must be specified:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="o">/</span><span class="n">rg</span> <span class="n">flag</span> <span class="n">spawn</span> <span class="n">deny</span><span class="o">-</span><span class="n">spawn</span> <span class="n">cow</span><span class="p">,</span><span class="n">pig</span>
+</span></pre></div>
+</div>
+</aside>
+</section>
+<section id="natural-events">
+<h3>Natural Events<a class="headerlink" href="#natural-events" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 22.2%" />
+<col style="width: 11.1%" />
+<col style="width: 66.7%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Flag</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>lava-fire</p></td>
+<td><p>state</p></td>
+<td><p>Whether lava can start fires</p></td>
+</tr>
+<tr class="row-odd"><td><p>lightning</p></td>
+<td><p>state</p></td>
+<td><p>Whether lightning can strike</p></td>
+</tr>
+<tr class="row-even"><td><p>water-flow</p></td>
+<td><p>state</p></td>
+<td><p>Whether water can flow</p></td>
+</tr>
+<tr class="row-odd"><td><p>lava-flow</p></td>
+<td><p>state</p></td>
+<td><p>Whether lava can flow</p></td>
+</tr>
+<tr class="row-even"><td><p>snow-fall</p></td>
+<td><p>state</p></td>
+<td><p>Whether snow will form tiles on the ground</p></td>
+</tr>
+<tr class="row-odd"><td><p>snow-melt</p></td>
+<td><p>state</p></td>
+<td><p>Whether snow will melt</p></td>
+</tr>
+<tr class="row-even"><td><p>ice-form</p></td>
+<td><p>state</p></td>
+<td><p>Whether ice will form</p></td>
+</tr>
+<tr class="row-odd"><td><p>ice-melt</p></td>
+<td><p>state</p></td>
+<td><p>Whether ice will melt</p></td>
+</tr>
+<tr class="row-even"><td><p>frosted-ice-melt</p></td>
+<td><p>state</p></td>
+<td><p>Whether frosted ice will melt</p></td>
+</tr>
+<tr class="row-odd"><td><p>mushroom-growth</p></td>
+<td><p>state</p></td>
+<td><p>Whether mushrooms will grow</p></td>
+</tr>
+<tr class="row-even"><td><p>leaf-decay</p></td>
+<td><p>state</p></td>
+<td><p>Whether leaves will decay</p></td>
+</tr>
+<tr class="row-odd"><td><p>grass-growth</p></td>
+<td><p>state</p></td>
+<td><p>Whether grass will grow</p></td>
+</tr>
+<tr class="row-even"><td><p>mycelium-spread</p></td>
+<td><p>state</p></td>
+<td><p>Whether mycelium will spread</p></td>
+</tr>
+<tr class="row-odd"><td><p>vine-growth</p></td>
+<td><p>state</p></td>
+<td><p>Whether vines (and kelp) will grow</p></td>
+</tr>
+<tr class="row-even"><td><p>rock-growth</p></td>
+<td><p>state</p></td>
+<td><p>Whether rocks (dripstone, etc) will grow</p></td>
+</tr>
+<tr class="row-odd"><td><p>sculk-growth</p></td>
+<td><p>state</p></td>
+<td><p>Whether sculk (sculk and sculk vines) will grow</p></td>
+</tr>
+<tr class="row-even"><td><p>crop-growth</p></td>
+<td><p>state</p></td>
+<td><p>Whether crops (wheat, potatoes, melons, etc) will grow</p></td>
+</tr>
+<tr class="row-odd"><td><p>soil-dry</p></td>
+<td><p>state</p></td>
+<td><p>Whether soil will dry</p></td>
+</tr>
+<tr class="row-even"><td><p>coral-fade</p></td>
+<td><p>state</p></td>
+<td><p>Whether coral will die when not in water</p></td>
+</tr>
+<tr class="row-odd"><td><p>copper-fade</p></td>
+<td><p>state</p></td>
+<td><p>Whether copper will fade</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">fire-spread</span></code>, <code class="docutils literal notranslate"><span class="pre">water-flow</span></code>, <code class="docutils literal notranslate"><span class="pre">lava-flow</span></code> and <code class="docutils literal notranslate"><span class="pre">lava-fire</span></code> flags require that the “high frequency flags” option be enabled in the <a class="reference internal" href="../../config/"><span class="doc">configuration</span></a>. This is because these events can be very frequent, requiring more region lookups, and potentially slowing down your server (or at least warming the server room a bit more).</p>
+</div>
+</section>
+<section id="movement">
+<h3>Movement<a class="headerlink" href="#movement" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 22.2%" />
+<col style="width: 11.1%" />
+<col style="width: 66.7%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Flag</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>entry</p></td>
+<td><p>state</p></td>
+<td><p>Whether players (by default non-members) can enter the region</p></td>
+</tr>
+<tr class="row-odd"><td><p>exit</p></td>
+<td><p>state</p></td>
+<td><p>Whether players (by default non-members) can exit the region</p></td>
+</tr>
+<tr class="row-even"><td><p>exit-via-teleport</p></td>
+<td><p>state</p></td>
+<td><p>Whether players can exit the region via teleport.</p>
+<p>This only takes effect if the player is otherwise denied exiting the region</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>exit-override</p></td>
+<td><p>boolean</p></td>
+<td><p>Whether to always allow a player to exit</p></td>
+</tr>
+<tr class="row-even"><td><p>entry-deny-message</p></td>
+<td><p>string</p></td>
+<td><p>The message issued to players that are denied entry</p></td>
+</tr>
+<tr class="row-odd"><td><p>exit-deny-message</p></td>
+<td><p>string</p></td>
+<td><p>The message issued to players that are denied exit</p></td>
+</tr>
+<tr class="row-even"><td><p>notify-enter</p></td>
+<td><p>boolean</p></td>
+<td><p>Whether players with the <code class="docutils literal notranslate"><span class="pre">worldguard.notify</span></code> permission are notified when another player enters the region</p></td>
+</tr>
+<tr class="row-odd"><td><p>notify-leave</p></td>
+<td><p>boolean</p></td>
+<td><p>Whether players with the <code class="docutils literal notranslate"><span class="pre">worldguard.notify</span></code> permission are notified when another player leaves the region</p></td>
+</tr>
+<tr class="row-even"><td><p>greeting</p></td>
+<td><p>string</p></td>
+<td><p>The message that appears in chat upon entering the region</p></td>
+</tr>
+<tr class="row-odd"><td><p>greeting-title</p></td>
+<td><p>string</p></td>
+<td><p>The title that appears upon entering the region. Including a newline (<code class="docutils literal notranslate"><span class="pre">\n</span></code>) will send a subtitle.</p></td>
+</tr>
+<tr class="row-even"><td><p>farewell</p></td>
+<td><p>string</p></td>
+<td><p>The message that appears in chat upon leaving the region</p></td>
+</tr>
+<tr class="row-odd"><td><p>farewell-title</p></td>
+<td><p>string</p></td>
+<td><p>The title that appears upon leaving the region. Including a newline (<code class="docutils literal notranslate"><span class="pre">\n</span></code>) will send a subtitle.</p></td>
+</tr>
+<tr class="row-even"><td><p>enderpearl</p></td>
+<td><p>state</p></td>
+<td><p>Whether enderpearls can be used</p></td>
+</tr>
+<tr class="row-odd"><td><p>chorus-fruit-teleport</p></td>
+<td><p>state</p></td>
+<td><p>Whether chorus fruits can be used to teleport</p></td>
+</tr>
+<tr class="row-even"><td><p>teleport</p></td>
+<td><p>location</p></td>
+<td><p>The location to teleport to when the <code class="docutils literal notranslate"><span class="pre">/region</span> <span class="pre">teleport</span></code> command is used with the region name</p></td>
+</tr>
+<tr class="row-odd"><td><p>spawn</p></td>
+<td><p>location</p></td>
+<td><p>The location to spawn or teleport to when a player (by default member) dies within the region</p></td>
+</tr>
+<tr class="row-even"><td><p>teleport-message</p></td>
+<td><p>string</p></td>
+<td><p>The message issued to players that are teleported with <code class="docutils literal notranslate"><span class="pre">/region</span> <span class="pre">teleport</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>As mentioned above, the <code class="docutils literal notranslate"><span class="pre">spawn</span></code> location flag defaults to “members”, which means that only members can take advantage of it by default. Set the region group for the flag to change this.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If overlapping regions have the same <code class="docutils literal notranslate"><span class="pre">greeting</span></code> or <code class="docutils literal notranslate"><span class="pre">farewell</span></code> flag, no message is sent when moving between these regions, e.g. if you enter one region while being in the other. This is also true, in a more general sense, of any player movement that does <em>not</em> result in the flag at the “from” and “to” locations changing.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">greeting</span></code> and <code class="docutils literal notranslate"><span class="pre">farewell</span></code> message flags require that the “use player move event” option <strong>not</strong> be disabled in the <a class="reference internal" href="../../config/"><span class="doc">configuration</span></a>.</p>
+</div>
+<aside class="topic">
+<p class="topic-title">Example: Preventing non-members of a “secret_club” region from entering it</p>
+<p>Since entry defaults to “nonmembers”, you don’t need to explicitly set it here:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="o">/</span><span class="n">rg</span> <span class="n">flag</span> <span class="n">secret_club</span> <span class="n">entry</span> <span class="n">deny</span>
+</span></pre></div>
+</div>
+</aside>
+</section>
+<section id="map-making">
+<h3>Map Making<a class="headerlink" href="#map-making" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 22.2%" />
+<col style="width: 11.1%" />
+<col style="width: 66.7%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Flag</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>item-pickup</p></td>
+<td><p>state</p></td>
+<td><p>Whether items can be picked up</p></td>
+</tr>
+<tr class="row-odd"><td><p>item-drop</p></td>
+<td><p>state</p></td>
+<td><p>Whether items can be dropped</p></td>
+</tr>
+<tr class="row-even"><td><p>exp-drops</p></td>
+<td><p>state</p></td>
+<td><p>Whether XP drops are permitted</p></td>
+</tr>
+<tr class="row-odd"><td><p>deny-message</p></td>
+<td><p>string</p></td>
+<td><p>The message issued to players that are denied an action</p></td>
+</tr>
+<tr class="row-even"><td><p>invincible</p></td>
+<td><p>state</p></td>
+<td><p>Whether players are invincible</p></td>
+</tr>
+<tr class="row-odd"><td><p>fall-damage</p></td>
+<td><p>state</p></td>
+<td><p>Whether entities receive fall damage</p></td>
+</tr>
+<tr class="row-even"><td><p>game-mode</p></td>
+<td><p>gamemode</p></td>
+<td><p>The gamemode (survival, creative, adventure) that will be applied to players that enter the region</p></td>
+</tr>
+<tr class="row-odd"><td><p>time-lock</p></td>
+<td><p>string</p></td>
+<td><p>Time of day in ticks (between 0 and 24000) that players will see the world as while in the region. Use + or - for time relative to the world time.</p></td>
+</tr>
+<tr class="row-even"><td><p>weather-lock</p></td>
+<td><p>weather</p></td>
+<td><p>Type of weather players will see when in the region. This does not affect world mechanics. Valid values are <code class="docutils literal notranslate"><span class="pre">rain</span></code> and <code class="docutils literal notranslate"><span class="pre">clear</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>natural-health-regen</p></td>
+<td><p>state</p></td>
+<td><p>Whether players should naturally regen health from being satiated or being in peaceful mode.</p></td>
+</tr>
+<tr class="row-even"><td><p>natural-hunger-drain</p></td>
+<td><p>state</p></td>
+<td><p>Whether players should naturally lose hunger due to saturation/exhaustion levels.</p></td>
+</tr>
+<tr class="row-odd"><td><p>heal-delay</p></td>
+<td><p>integer</p></td>
+<td><p>The number of seconds between heals (if <code class="docutils literal notranslate"><span class="pre">heal-amount</span></code> is set). Set to 0 to disable.</p></td>
+</tr>
+<tr class="row-even"><td><p>heal-amount</p></td>
+<td><p>integer</p></td>
+<td><p>The amount of half hearts to heal (or hurt if negative) the player at the rate of <code class="docutils literal notranslate"><span class="pre">heal-delay</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>heal-min-health</p></td>
+<td><p>double</p></td>
+<td><p>The minimum number of half hearts that damage (via <code class="docutils literal notranslate"><span class="pre">heal-amount</span></code>) will not exceed</p></td>
+</tr>
+<tr class="row-even"><td><p>heal-max-health</p></td>
+<td><p>double</p></td>
+<td><p>The maximum number of half hearts that healing (via <code class="docutils literal notranslate"><span class="pre">heal-amount</span></code>) will not exceed</p></td>
+</tr>
+<tr class="row-odd"><td><p>feed-delay</p></td>
+<td><p>integer</p></td>
+<td><p>See equivalent heal flag, except this is for food</p></td>
+</tr>
+<tr class="row-even"><td><p>feed-amount</p></td>
+<td><p>integer</p></td>
+<td><p>See equivalent heal flag, except this is for food</p></td>
+</tr>
+<tr class="row-odd"><td><p>feed-min-hunger</p></td>
+<td><p>integer</p></td>
+<td><p>See equivalent heal flag, except this is for food</p></td>
+</tr>
+<tr class="row-even"><td><p>feed-max-hunger</p></td>
+<td><p>integer</p></td>
+<td><p>See equivalent heal flag, except this is for food</p></td>
+</tr>
+<tr class="row-odd"><td><p>blocked-cmds</p></td>
+<td><p>set of strings</p></td>
+<td><p>A list of commands to block</p></td>
+</tr>
+<tr class="row-even"><td><p>allowed-cmds</p></td>
+<td><p>set of strings</p></td>
+<td><p>A list of commands to whitelist (any unallowed commands will be blocked)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The healing and feeding flags require that the “use player move event” option <strong>not</strong> be disabled in the <a class="reference internal" href="../../config/"><span class="doc">configuration</span></a>.</p>
+</div>
+<aside class="topic">
+<p class="topic-title">Example: Changing the message players receive when an action they try is blocked</p>
+<p>Set the <code class="docutils literal notranslate"><span class="pre">deny-message</span></code> flag:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1">/rg flag spawn deny-message Sorry! You are at spawn. If you want to find a place to call home, use the rail station to leave spawn.
+</span></pre></div>
+</div>
+</aside>
+<aside class="topic">
+<p class="topic-title">Example: Blocking the “/tp” and “/teleport” commands at spawn</p>
+<p>The commands in question can be blocked with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="o">/</span><span class="n">rg</span> <span class="n">flag</span> <span class="n">spawn</span> <span class="n">blocked</span><span class="o">-</span><span class="n">cmds</span> <span class="o">/</span><span class="n">tp</span><span class="p">,</span><span class="o">/</span><span class="n">teleport</span>
+</span></pre></div>
+</div>
+</aside>
+<aside class="topic">
+<p class="topic-title">Example: In a “hospital” region, heal players one heart every second up to half their health bar</p>
+<p>Without any buffs, the player’s maximum health is 20, so 10 is half of that:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="o">/</span><span class="n">rg</span> <span class="n">flag</span> <span class="n">hospital</span> <span class="n">heal</span><span class="o">-</span><span class="n">delay</span> <span class="mi">1</span>
+</span><span data-line="2"><span class="o">/</span><span class="n">rg</span> <span class="n">flag</span> <span class="n">hospital</span> <span class="n">heal</span><span class="o">-</span><span class="n">amount</span> <span class="mi">2</span>
+</span><span data-line="3"><span class="o">/</span><span class="n">rg</span> <span class="n">flag</span> <span class="n">hospital</span> <span class="n">heal</span><span class="o">-</span><span class="nb">max</span><span class="o">-</span><span class="n">health</span> <span class="mi">10</span>
+</span></pre></div>
+</div>
+</aside>
+</section>
+<section id="miscellaneous">
+<h3>Miscellaneous<a class="headerlink" href="#miscellaneous" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 22.2%" />
+<col style="width: 11.1%" />
+<col style="width: 66.7%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Flag</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>pistons</p></td>
+<td><p>state</p></td>
+<td><p>Whether pistons can be used</p></td>
+</tr>
+<tr class="row-odd"><td><p>send-chat</p></td>
+<td><p>state</p></td>
+<td><p>Whether players can send chat</p></td>
+</tr>
+<tr class="row-even"><td><p>receive-chat</p></td>
+<td><p>state</p></td>
+<td><p>Whether players can receive chat</p></td>
+</tr>
+<tr class="row-odd"><td><p>potion-splash</p></td>
+<td><p>state</p></td>
+<td><p>Whether potions can have splash effects</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>WorldGuard can only limit chat or commands on the server WorldGuard is running on. If you are using some sort of proxy that handles commands or the chat, WorldGuard won’t be able to affect that.</p>
+</div>
+</section>
+</section>
+</section>
+
+        </article><button class="back-to-top" type="button">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+  </svg>
+  <span>Back to top</span>
+</button><div class="navigation flex print:hidden"><div class="navigation-prev">
+    <a href="../wand/">
+      <i class="i-lucide chevron-left"></i>
+      <div class="page-info">
+        <span>Previous</span><div class="title">Region Wand</div></div>
+    </a>
+  </div><div class="navigation-next">
+    <a href="../priorities/">
+      <div class="page-info">
+        <span>Next</span>
+        <div class="title">Priority and Inheritance</div>
+      </div>
+      <i class="i-lucide chevron-right"></i>
+    </a>
+  </div></div><div class="sponsorbox">
+    <div class="sponsor apexhosting">
+        <a href="https://billing.apexminecrafthosting.com/aff.php?aff=3108">
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 750 150" style="enable-background:new 0 0 750 150;" xml:space="preserve">
+            <style type="text/css">
+                .st0{fill:var(--sponsor-logo-color);}
+                .st1{display:none;}
+            </style>
+            <g id="Layer_1_1_">
+                <g>
+                    <path id="XMLID_29_" class="st0" d="M352.5,71.7c0,11.8-0.1,23.5,0.1,35.3c0.1,4.5-1.6,7.1-5.7,9c-16.5,7.3-32.9,15-49.5,22.1
+                        c-2.5,1.1-6.4,0.9-9-0.2c-17.1-7.4-34-15.2-51-22.8c-3.5-1.6-4-4.7-4-8c0-7.6,0-15.2,0-22.8c0-15.6,0-31.3,0-46.9
+                        c0-7.3,0.9-8.5,7.6-10.7c15.2-5,30.3-10.1,45.7-14.6c4-1.2,8.9-1.2,12.9,0c15.2,4.5,30.2,9.8,45.2,14.8c6.3,2.1,7.5,3.7,7.6,10.6
+                        C352.5,48.7,352.5,60.2,352.5,71.7L352.5,71.7z M247.7,44.9c0,19.6,0,38.5,0.1,57.3c0,1,1.1,2.4,2.1,2.9
+                        c7.6,3.6,15.2,7.1,22.9,10.6c4.5,2,9,4,13.8,6.1c0-19.7,0-38.8-0.1-57.8c0-0.8-0.8-2.1-1.5-2.5C272.9,56,260.7,50.6,247.7,44.9z
+                        M339,44.6c-12.3,5.7-23.8,11.1-35.3,16.3c-2.2,1-2.9,2.2-2.9,4.6c0.1,16.6,0.1,33.2,0.1,49.8c0,1.7,0,5.3,0,5.3s-0.1,0.3,0.1,0.4
+                        s24.9-10.9,36.6-16.2c0.7-0.3,1.4-1.7,1.4-2.6C339.1,83.3,339.1,64.4,339,44.6z M260.6,35c0,0.1,21.8,10,32.4,14.7
+                        c0.6,0.3,1.6,0.2,2.3-0.1c10.1-4.6,20.1-9.3,31.3-14.4c-9.2-3-17.3-5.8-25.4-8.3c-3-0.9-6.4-2.7-9.1-1.9
+                        C281.7,27.6,260.6,34.8,260.6,35z"/>
+                    <path id="XMLID_15_" class="st0" d="M171.1,63.2c-7.2,0-14.2,0-21.4,0c0,2.6,0,4.7,0,7.3c6.1,0,12,0,18.1,0c0,3.9,0,7.3,0,11.2
+                        c-5.9,0-11.8,0-18.1,0c0,2.9,0,5.3,0,8.2c7.4,0,14.7,0,22.3,0c0,3.8,0,7.1,0,10.8c-12.1,0-24.3,0-36.9,0c0-16,0-32.1,0-48.5
+                        c11.9,0,23.8,0,36,0C171.1,55.7,171.1,59.2,171.1,63.2z"/>
+                    <path id="XMLID_27_" class="st0" d="M102.7,86c0,5,0,9.7,0,14.7c-4.9,0-9.5,0-14.3,0c0-14.6,0-48.5,0-48.5s15.9-1.9,29.8,1.3
+                        c8.1,1.4,11.5,8.3,10.8,17.6c-0.7,7.8-5.9,13.2-13.8,14.1C111.3,85.6,107.3,85.7,102.7,86z M102.8,74.6c2.5,0,3.9,0,5.9-0.1
+                        c2.2,0,4.1-0.3,5.5-2.6c0.9-1.5,0.8-4.7-0.2-6.1c-1.5-3.7-11.2-2.4-11.2-2.4S102.8,70.5,102.8,74.6z"/>
+                    <path id="XMLID_10_" class="st0" d="M191.9,75.6c-4.6-7.6-9.2-15.2-14.2-23.4c-0.1-0.1,16.1,0,16.1,0s4.9,9.2,6.6,12.5
+                        c1.7-3.2,6.8-12.5,6.8-12.5h16c0,0-10,15.7-15,23.5c4.9,8.1,15,25,15,25h-15.7c0,0-5.6-9.4-7.7-13.4c-1.5,2.8-4,7.5-4,7.5l-3,5.9
+                        c0,0-16.5,0.1-16.4,0C181.7,92,186.8,83.8,191.9,75.6z"/>
+                    <path id="XMLID_25_" class="st0" d="M49.1,100.5c0,0-9,0-13.8,0C40.7,84,46,67.9,51.4,51.6c4.3,0,14-0.1,14.6-0.1
+                        c0,0,0.8,1.9,0.9,2.4c5.1,15,15,45.9,15,46.5c-4.6,0-14,0-14,0l-1.4-5.8l-15.1-0.3L49.1,100.5z M59.1,67.8c-0.3,0-0.6,0-1,0
+                        c-1.4,5.4-2.7,10.7-4.1,16.3c3.4,0,6.3,0,9.4,0C61.9,78.3,60.5,73,59.1,67.8z"/>
+                    <path id="XMLID_3_" class="st0" d="M102.8,74.6"/>
+                    <g>
+                        <path class="st0" d="M364,52h15v17h16.4V52h15.1v48.7h-15.1V81h-16.4v19.7h-15V52z"/>
+                        <path class="st0" d="M418.7,76.4c0-7.9,2.2-14.1,6.6-18.6c4.4-4.4,10.6-6.6,18.5-6.6c8.1,0,14.3,2.2,18.7,6.5s6.6,10.4,6.6,18.3
+                            c0,5.7-1,10.4-2.9,14c-1.9,3.6-4.7,6.5-8.3,8.5s-8.1,3-13.5,3c-5.5,0-10-0.9-13.6-2.6c-3.6-1.7-6.5-4.5-8.7-8.3
+                            C419.8,86.8,418.7,82.1,418.7,76.4z M433.8,76.4c0,4.9,0.9,8.4,2.7,10.6c1.8,2.1,4.3,3.2,7.5,3.2c3.2,0,5.7-1.1,7.5-3.2
+                            c1.8-2.1,2.7-5.9,2.7-11.3c0-4.6-0.9-7.9-2.8-10c-1.8-2.1-4.4-3.2-7.5-3.2c-3,0-5.5,1.1-7.3,3.2
+                            C434.7,67.9,433.8,71.5,433.8,76.4z"/>
+                        <path class="st0" d="M474.6,84.6l14.3-0.9c0.3,2.3,0.9,4.1,1.9,5.3c1.5,2,3.8,3,6.6,3c2.1,0,3.8-0.5,5-1.5c1.2-1,1.7-2.2,1.7-3.5
+                            c0-1.3-0.6-2.4-1.7-3.4c-1.1-1-3.7-1.9-7.7-2.8c-6.6-1.5-11.3-3.5-14.1-5.9c-2.8-2.5-4.2-5.6-4.2-9.4c0-2.5,0.7-4.9,2.2-7.1
+                            c1.4-2.2,3.6-4,6.5-5.2c2.9-1.3,6.9-1.9,12-1.9c6.2,0,11,1.2,14.2,3.5c3.3,2.3,5.2,6,5.8,11L503,66.5c-0.4-2.2-1.2-3.8-2.4-4.8
+                            c-1.2-1-2.9-1.5-5-1.5c-1.7,0-3.1,0.4-4,1.1c-0.9,0.7-1.3,1.6-1.3,2.7c0,0.8,0.4,1.5,1.1,2.1c0.7,0.6,2.4,1.2,5,1.8
+                            c6.6,1.4,11.3,2.9,14.1,4.3c2.8,1.5,4.9,3.2,6.2,5.4c1.3,2.1,1.9,4.5,1.9,7.2c0,3.1-0.9,6-2.6,8.6c-1.7,2.6-4.1,4.6-7.2,6
+                            c-3.1,1.4-7,2-11.7,2c-8.3,0-14-1.6-17.2-4.8S475.1,89.5,474.6,84.6z"/>
+                        <path class="st0" d="M523,52h45.7v12h-15.3v36.7h-15V64H523V52z"/>
+                        <path class="st0" d="M576.1,52h15.1v48.7h-15.1V52z"/>
+                        <path class="st0" d="M602,52h14l18.3,26.9V52h14.2v48.7h-14.2L616.2,74v26.7H602V52z"/>
+                        <path class="st0" d="M683.1,83.1V72.9h23.2v20.8c-4.4,3-8.4,5.1-11.8,6.2s-7.5,1.6-12.2,1.6c-5.8,0-10.5-1-14.1-3
+                            c-3.6-2-6.5-4.9-8.5-8.8c-2-3.9-3-8.4-3-13.4c0-5.3,1.1-9.9,3.3-13.9c2.2-3.9,5.4-6.9,9.6-8.9c3.3-1.6,7.7-2.4,13.3-2.4
+                            c5.4,0,9.4,0.5,12.1,1.5c2.7,1,4.9,2.5,6.6,4.5c1.8,2,3.1,4.6,4,7.8l-14.5,2.6c-0.6-1.8-1.6-3.2-3-4.2c-1.4-1-3.2-1.5-5.5-1.5
+                            c-3.3,0-5.9,1.1-7.9,3.4s-2.9,5.9-2.9,10.9c0,5.3,1,9,3,11.3c2,2.3,4.7,3.4,8.3,3.4c1.7,0,3.3-0.2,4.8-0.7
+                            c1.5-0.5,3.3-1.3,5.2-2.5v-4.6H683.1z"/>
+                    </g>
+                </g>
+            </g>
+            <g id="Layer_2_1_" class="st1">
+            </g>
+            </svg>
+            <p>We recommend ApexHosting!</p>
+        </a>
+    </div>
+</div></div>
+    </div>
+  </main>
+</div>
+<footer class="sy-foot">
+  <div class="sy-foot-inner sy-container mx-auto">
+    <div class="sy-foot-reserved md:flex justify-between items-center">
+      <div class="sy-foot-copyright"><p>2015-2026, WorldGuard Team</p>
+  
+  <p>
+    Made with
+    
+    <a href="https://www.sphinx-doc.org/">Sphinx</a> and
+    
+    <a href="https://shibuya.lepture.com">Shibuya theme</a>.
+  </p>
+</div>
+      <div class="sy-foot-socials">
+<a href="https://github.com/EngineHub/WorldGuard" aria-label="GitHub">
+  <iconify-icon icon="simple-icons:github"></iconify-icon>
+</a>
+<a href="https://discord.gg/enginehub" aria-label="Discord">
+  <iconify-icon icon="simple-icons:discord"></iconify-icon>
+</a></div>
+    </div>
+  </div>
+</footer>
+      <script src="../../_static/documentation_options.js?v=618d875b"></script>
+      <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../../_static/shibuya.js?v=cac61aee"></script></body>
+</html>

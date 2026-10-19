@@ -1,0 +1,2 @@
+All items in this category relate to the configuration of Citizens2. These items are the items that should also be placed in the <nowiki>{{NavBox}}</nowiki>.
+{{NavBox}}

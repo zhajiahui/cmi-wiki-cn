@@ -1,0 +1,134 @@
+[
+  {
+    "file": "wiki/home.md",
+    "title": "bStats 插件统计服务",
+    "source_url": "https://bstats.org/",
+    "source_file": "sources/wiki/original/home.md",
+    "source_sha256": "1e175431a4a8000e07ef1771e53c2e4bca11e8d125d12ae91d5db7109a5d6c1b",
+    "translation_review": "reviewed",
+    "source_exclusions": [
+      {
+        "start_line": 49,
+        "end_line": 65,
+        "reason": "API/SDK 接入参考；具体排除范围见 wiki-coverage.json"
+      }
+    ]
+  },
+  {
+    "file": "wiki/getting-started.md",
+    "title": "文档目录",
+    "source_url": "https://bstats.org/docs",
+    "source_file": "sources/wiki/original/getting-started.md",
+    "source_sha256": "aa84ade87c00dca5ab3840beece30707f3c67251b99818c97a7f2fa7971349ee",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/server-owners.md",
+    "title": "服主说明",
+    "source_url": "https://bstats.org/docs/server-owners",
+    "source_file": "sources/wiki/original/server-owners.md",
+    "source_sha256": "b2cd8779a2e813881e5caa308476110387630b2f91c03bcac52f4a71428d36e9",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/troubleshooting.md",
+    "title": "排错指南",
+    "source_url": "https://bstats.org/docs/troubleshooting",
+    "source_file": "sources/wiki/original/troubleshooting.md",
+    "source_sha256": "1e409b0b1a22025a5730506986155b26e88bc5d2918807b9a39f56e5bbf00ba5",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq.md",
+    "title": "常见问题",
+    "source_url": "https://bstats.org/faq",
+    "source_file": "sources/wiki/original/faq.md",
+    "source_sha256": "0a2bdb16d277a25f7d1a866f4f2126841b14d4275eaee343b0b85ead124137ba",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/custom-charts.md",
+    "title": "自定义图表",
+    "source_url": "https://bstats.org/docs/custom-charts",
+    "source_file": "sources/wiki/original/custom-charts.md",
+    "source_sha256": "ba7ba1f0b292587652763bbd09648883f4ea660aa3cf225f8e547d410414c169",
+    "translation_review": "reviewed",
+    "source_exclusions": [
+      {
+        "start_line": 28,
+        "end_line": 33,
+        "reason": "Java/PHP API 实现示例，按 coverage 的片段排除清单处理"
+      },
+      {
+        "start_line": 43,
+        "end_line": 55,
+        "reason": "Java/PHP API 实现示例，按 coverage 的片段排除清单处理"
+      },
+      {
+        "start_line": 71,
+        "end_line": 93,
+        "reason": "Java/PHP API 实现示例，按 coverage 的片段排除清单处理"
+      },
+      {
+        "start_line": 121,
+        "end_line": 128,
+        "reason": "Java/PHP API 实现示例，按 coverage 的片段排除清单处理"
+      },
+      {
+        "start_line": 138,
+        "end_line": 146,
+        "reason": "Java/PHP API 实现示例，按 coverage 的片段排除清单处理"
+      },
+      {
+        "start_line": 163,
+        "end_line": 171,
+        "reason": "Java/PHP API 实现示例，按 coverage 的片段排除清单处理"
+      },
+      {
+        "start_line": 181,
+        "end_line": 190,
+        "reason": "Java/PHP API 实现示例，按 coverage 的片段排除清单处理"
+      }
+    ]
+  },
+  {
+    "file": "wiki/readme.md",
+    "title": "bStats 仓库与本地运行",
+    "source_url": "https://github.com/Bastian/bStats/blob/master/README.md",
+    "source_file": "sources/wiki/original/readme.md",
+    "source_sha256": "433fb1676433d4516a4d944cfbeb7c4331af43534d3eafd06913b853527b3072",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/terms-of-use.md",
+    "title": "使用条款",
+    "source_url": "https://bstats.org/terms-of-use",
+    "source_file": "sources/wiki/original/terms-of-use.md",
+    "source_sha256": "bd76a7a1cea39704de36e4eb85264b25378926f725957044f26d3e4c57c8bda1",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/privacy-policy.md",
+    "title": "隐私政策",
+    "source_url": "https://bstats.org/privacy-policy",
+    "source_file": "sources/wiki/original/privacy-policy.md",
+    "source_sha256": "c5db746cdb17f6116ca65ba778c3f94b22e3884269f14ae8ccd7b09fef21f79d",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/imprint.md",
+    "title": "网站法律信息",
+    "source_url": "https://bstats.org/imprint",
+    "source_file": "sources/wiki/original/imprint.md",
+    "source_sha256": "88855c81006302c27aeb5149086aa7bcc62f6f0747dd6eb7663a45834c4df0fa",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/credits.md",
+    "title": "人员与合作伙伴",
+    "source_url": "https://bstats.org/credits",
+    "source_file": "sources/wiki/original/credits.md",
+    "source_sha256": "04b1a29fe2aa3fde53460b5c5d6bf8e631f308b43cbb2980208059e6601d4a31",
+    "translation_review": "reviewed"
+  }
+]

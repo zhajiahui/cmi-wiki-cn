@@ -1,0 +1,87 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Denizen",
+    "pageid": 305,
+    "revid": 5220,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><div class=\"infobox\" style=\"width: 295; font-size: 12px; background: #FFFFFF; float: right; border: 1px solid #CCCCCC; margin-left:2.5em; padding: 9px;\">\n<table width=\"275\" style=\"border: 0; background-color: #ffffff\" cellpadding=\"0\" cellspacing=\"3\">\n<tbody><tr>\n<td style=\"width: 275; vertical-align: top; border:1px solid #ccc; background-color: #ffffff\">\n<div style=\"background-color:#aaa; font-size:1px; height:8px; border-bottom:1px solid #ccc;\"></div>\n<div style=\"float:right; margin:8px; margin-top:5px\"></div>\n<div style=\"padding:0.5em 0.3em 0.3em 0.3em; margin:0; text-indent:0.1em; font-weight: bold; border-bottom:1px solid #aaaaaa;\"><b> </b></div>\n<div style=\"font-size:100%; padding:3px\">\n<table cellpadding=\"0\" cellspacing=\"3\" width=\"100%\">\n<tbody><tr>\n<td align=\"left\" valign=\"top\" width=\"100%\">\n<figure class=\"mw-default-size mw-halign-center\" typeof=\"mw:File\"><a href=\"/File:Denizen.png\" class=\"mw-file-description\"><img src=\"/images/4/47/Denizen.png\" decoding=\"async\" width=\"296\" height=\"88\" class=\"mw-file-element\" /></a><figcaption></figcaption></figure>\n<div class=\"padded\" style=\"padding: 19px; font-family:camingodos-web; font-size:110%;\">\n<p><b>Denizen</b> is an extension for Citizens that allows scripting of NPCs to handle tasks, quests, player interaction and more! It operates as a full-featured Minecraft server scripting system!\n</p><p><b>Current version:</b> 1.x.x Release\n</p><p><b>Original Creator:</b> aufdemrand\n</p><p><b>Head of Development:</b> mcmonkey\n</p><p><b>Previous developers:</b> David Cernat, Jeebiss, Morphan1, Xenmai, Mergu\n</p><p><b>Source:</b> <a rel=\"nofollow\" class=\"external text\" href=\"https://github.com/DenizenScript/Denizen-For-Bukkit\">Github</a>\n</p><p><b>Spigot Release:</b> <a rel=\"nofollow\" class=\"external text\" href=\"https://www.spigotmc.org/resources/denizen.21039/\">Spigot</a>\n</p><p><b>Latest release build:</b> <a rel=\"nofollow\" class=\"external text\" href=\"http://ci.citizensnpcs.co/view/All/job/Denizen/\">1.x.x Builds</a>\n</p><p><b>Latest developmental build:</b> <a rel=\"nofollow\" class=\"external text\" href=\"http://ci.citizensnpcs.co/view/All/job/Denizen_Developmental/\">1.x.x Dev Builds</a>\n</p><p><b>Citizens build:</b> <a rel=\"nofollow\" class=\"external text\" href=\"http://ci.citizensnpcs.co/job/Citizens2/\">2.x.x</a>\n</p><p><b>Support tickets:</b> <a rel=\"nofollow\" class=\"external text\" href=\"http://github.com/DenizenScript/Denizen-For-Bukkit/issues/\">Tickets on Github</a>\n</p><p><b>Discord:</b> <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Denizen Discord</a>\n</p><p><b>Thank you:</b> A lot of people have stepped forward to help out with Denizen, and that's awesome! Special thanks to everyone who has beta tested, and a huge amount to these people: fullwall, AgentKid, aPunch, Instinx, tenowg, groggluebutt, Wreyth, jrbudda, spidi, ... the list could go on!\n<br />\n</p>\n</div></td></tr></tbody></table>\n</div>\n</td></tr></tbody></table>\n</div>\n\n<div style=\"padding:10px; font-family:camingodos-web; font-size:110%;\">\n<figure class=\"mw-default-size mw-halign-center\" typeof=\"mw:File\"><a href=\"/File:Denizen-Logo-Large.png\" class=\"mw-file-description\"><img src=\"/images/3/30/Denizen-Logo-Large.png\" decoding=\"async\" width=\"450\" height=\"154\" class=\"mw-file-element\" /></a><figcaption></figcaption></figure>\n<p><s>This Wiki should be regarded as a quick reference guide / learning tool for Denizen.</s>\n</p><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://one.denizenscript.com/denizen/cmds/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://one.denizenscript.com/denizen/cmds/denizen/vids\">Tutorial Videos</a> on youtube or the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br /><br /><br />\n<s><span style=\"font-family:natalya-alternate-one; font-size:750%; margin-right:-7px; margin-left:-10px;\">D</span>enizen is a powerful engine to write your own plugins via scripting. It is also a great way to add complex interactive role-playing NPCs to your server. Denizen NPCs use scripts with steps and events to interact with the player and world. Imagine interactive gate-keepers, magical wizards, experience trainers, bankers, talking townspeople and more! They can be used in thousands of different ways, from tutorials, to questing, to administrating... your imagination is just about the limit! Denizen uses its own YAML-based scripting language which is designed to be easily read and edited by hand.\n</s></p><p><s><br />\n</s></p><s>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Table_of_Contents\">Table of Contents</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen&amp;action=edit&amp;section=1\" title=\"Edit section: Table of Contents\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ol><li><a href=\"/Denizen/Introduction\" title=\"Denizen/Introduction\">Introduction</a></li>\n<li><a href=\"/Denizen/Types_of_Scripts\" title=\"Denizen/Types of Scripts\">Types of Scripts</a></li>\n<li><a href=\"/Denizen/Triggers\" title=\"Denizen/Triggers\">NPC Interact Script Triggers</a></li>\n<li><a href=\"/Denizen/Commands\" title=\"Denizen/Commands\">Commands</a></li>\n<li><a href=\"/Denizen/Replaceable_Tags\" title=\"Denizen/Replaceable Tags\">Replaceable Tags</a></li>\n<li><a href=\"/Denizen/Additional_Traits\" title=\"Denizen/Additional Traits\">Additional Traits</a></li>\n<li><a href=\"/Denizen/Script_Samples\" title=\"Denizen/Script Samples\">Script Samples</a></li>\n<li><a href=\"/index.php?title=Denizen/Other&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Denizen/Other (page does not exist)\">Other Pages</a></li></ol>\n<p><br />\n</p>\n</s><div style=\"padding:10px; font-family:camingodos-web; font-size:110%;\"><s>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"How_it_works\">How it works</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen&amp;action=edit&amp;section=2\" title=\"Edit section: How it works\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Denizen is an extension of Citizens2 that adds an incredible amount of interactivity and automation to NPCs and Players with some of these major features:\n</p>\n<ul><li><b>The Script Engine</b> carries out and sends all the commands to be executed in an orderly and predictable fashion; this is the backbone of Denizen. There's not much to see on the outside, this is the interworkings of Denizen, but rest assured that this is high performance machine behind the scenes!</li>\n<li><b>Assignment and Interact Scripts</b> are the meat of Denizen, allowing Players and NPCs to interact with each other and the world. These are highly customizable with 20+ requirement types, 90+ script commands, and thousands of different ways to use them together. This with the Denizen Script Engine also allows commands to help control the rest of Denizen with script flow commands and such.</li>\n<li><b>Task Scripts</b> are simple scripts that can be carried out in a variety of different ways. These can be used along side any other script types, but perhaps the most powerful way to use them is by allowing your plugin to utilize them, if you're a developer, or using other plugins that harness the ability to run a Denizen Task Script as well.</li>\n<li><b>World Scripts</b> are scripts that call Denizen commands when random things happen throughout the world - anything, even down to a player mining a block, and a separate script for them picking up the item it dropped! With the power of world scripts, a skilled user could make entire server plugins using nothing but Denizen scripts!</li>\n<li><b>Listeners</b> are currently in an 'experimental phase', but are already allowing control over minecraft and bukkit events like nothing other. This already allows scripts to keep track of and assign 'quest-like' objectives, such as a 'kill quest', if you're familiar with the C1 Quester. But whereas many quest plugins are limited to this feature alone, Denizen, of course, allows you to use this in addition and along side the rest of the plugin, making room for extremely dynamic and intricate 'quest scripts'.</li>\n<li><b>Flag System</b> is the key to Denizen being dynamic. An intricate, yet easy to learn 'Flag/Variable' system has been implemented into Denizen to help keep track of events, items, numbers, players, and more. The new Flag System is still getting more powerful each and every day... it's the key to a spectacular script is sure to have a flag or two.</li>\n<li><b>Extensible Commands/Requirements/Activities and more</b> make it easy to add-on to Denizen with very little Java knowledge. This also makes it extremely easy to let users utilize your plugin with script commands. Denizen also has API Events to use.</li>\n<li><b>Denizen Debugger</b> is an extremely friendly and informative way to test out scripts and interactions. Commands, events, and interactions are all logged in an easy to read format to show the exact progression of a script and its surroundings. No more guessing! Less headaches!</li>\n<li><b>A note on YML</b> Most of the time when a server owner uses YML, they edit an existing configuration. In Denizen, it is required to frequently *add* additional content. Be careful of your spacing, and never use tabs. You can use ChatBots in <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">our Discord group</a> to check your YML files or you can use <a rel=\"nofollow\" class=\"external text\" href=\"http://yaml-online-parser.appspot.com/\">this online YAML parser.</a> (The ChatBots do much more, as well! Just go into <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">our Discord group</a> and type <b>!help</b>)</li>\n<li><b>An additional note on YAML</b> Denizen no longer users pure YAML, but rather its own custom parsing code. The YAML parsers available are not perfect, only the ChatBot on IRC, mentioned above, currently has a <b>!dScript</b> checker.</li></ul>\n<p><br />\n</p></s><p><s>Seem overwhelming? Stop! Start small! Denizen is easy, Denizen is simple. But. Denizen is hard, Denizen is complex. Simply put: Denizen is what you make it! Our advice? Start small, and build upon what you have. Read the wiki articles, watch the youtube videos, test our your scripts, and test out some of the sample scripts! Before you know it, you'll be a Denizen poweruser, drunken with power, just like us!</s>\n</p>\n</div>\n<p>(Legacy 0.7 wiki found <a rel=\"nofollow\" class=\"external text\" href=\"http://wiki.citizensnpcs.co/Denizen/0.7\">here</a>)\n</p></div>\n<!-- \nNewPP limit report\nCached time: 20261019145835\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.041 seconds\nReal time usage: 0.061 seconds\nPreprocessor visited node count: 40/1000000\nRevision size: 8059/2097152 bytes\nPost‐expand include size: 2023/2097152 bytes\nTemplate argument size: 1421/2097152 bytes\nHighest expansion depth: 3/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    5.345      1 Template:Box\n100.00%    5.345      1 -total\n-->\n\n<!-- Render ID 8ed12de6-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen/Additional Traits"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen/Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen/Introduction"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen/Replaceable Tags"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen/Script Samples"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen/Triggers"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen/Types of Scripts"
+      },
+      {
+        "ns": 0,
+        "*": "Denizen/Other"
+      }
+    ],
+    "images": [
+      "Denizen.png",
+      "Denizen-Logo-Large.png"
+    ],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "3",
+        "line": "Table of Contents",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Denizen",
+        "byteoffset": 3378,
+        "anchor": "Table_of_Contents",
+        "linkAnchor": "Table_of_Contents"
+      },
+      {
+        "toclevel": 1,
+        "level": "3",
+        "line": "How it works",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Denizen",
+        "byteoffset": 3825,
+        "anchor": "How_it_works",
+        "linkAnchor": "How_it_works"
+      }
+    ]
+  }
+}

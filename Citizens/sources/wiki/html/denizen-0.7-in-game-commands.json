@@ -1,0 +1,124 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Denizen/0.7/In Game Commands",
+    "pageid": 190,
+    "revid": 5383,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://meta.denizenscript.com/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br /><br /><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><s>== In-Game Commands ==\n</s></p><s><div style=\"margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;\">\n<p>Denizen has some in-game commands that help manage Denizen NPCs and scripts. Some commands will require additional knowledge of other parts of Denizen, but I've included this first to get them out of the way. Note: There are NO commands for Players using Denizens. Commands are intended for OP use only. These are to be used in addition with all the core <a href=\"/Commands\" title=\"Commands\">C2 NPC commands</a>, so you should know those as well. \n</p>\n</div></s><s><div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Denizen_NPC_Creation\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Denizen NPC Creation</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Info-Click\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Info-Click</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Debug_Mode\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Debug Mode</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Trigger_Toggles\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Trigger Toggles</span></a></li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#Script_Assignment\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">Script Assignment</span></a></li>\n<li class=\"toclevel-1 tocsection-6\"><a href=\"#Bookmark_Creation\"><span class=\"tocnumber\">6</span> <span class=\"toctext\">Bookmark Creation</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-7\"><a href=\"#Block_Bookmarks\"><span class=\"tocnumber\">6.1</span> <span class=\"toctext\">Block Bookmarks</span></a></li>\n<li class=\"toclevel-2 tocsection-8\"><a href=\"#Location_Bookmarks\"><span class=\"tocnumber\">6.2</span> <span class=\"toctext\">Location Bookmarks</span></a></li>\n</ul>\n</li>\n</ul>\n</div>\n</s><s><div class=\"mw-heading mw-heading4\"><h4 id=\"Denizen_NPC_Creation\">Denizen NPC Creation</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/In_Game_Commands&amp;action=edit&amp;section=1\" title=\"Edit section: Denizen NPC Creation\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><div style=\"margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;\">\n<p>Creating a Denizen NPC is easy! Simply use the core C2 commands as such:\n</p>\n<pre>/npc create 'Name of NPC'\n/trait denizen\n\nor\n\n/npc create 'Name of NPC' --trait denizen\n</pre>\n<p>That's it! You can, of course, use any of the core C2 commands to change the mob-type and other traits, which are referenced in the <a href=\"/Commands\" title=\"Commands\">Citizens2 command page</a>. Baby Chicken Denizens? Totally cool! Charged Creeper Denizens? Even cooler!\n</p>\n</div></s><s><div class=\"mw-heading mw-heading4\"><h4 id=\"Info-Click\">Info-Click</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/In_Game_Commands&amp;action=edit&amp;section=2\" title=\"Edit section: Info-Click\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><div style=\"margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;\">\n<pre>/denizen info</pre>\n<p>The best way to get information about your Denizen NPC is to use Info-Click. If you are OP, simply crouch-right click an NPC to get a list of NPC stats, script assignments, block bookmarks, texts, and trigger statuses. This information can also be reached by selecting an NPC (C2 Core Function, usually by right-clicking with a Stick), and using the <tt>/denizen info</tt> command.\n</p>\n</div></s><s><div class=\"mw-heading mw-heading4\"><h4 id=\"Debug_Mode\">Debug Mode</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/In_Game_Commands&amp;action=edit&amp;section=3\" title=\"Edit section: Debug Mode\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><figure class=\"mw-halign-right\" typeof=\"mw:File/Thumb\"><a href=\"/File:Maggie_Choice_Debug.png\" class=\"mw-file-description\"><img src=\"/images/8/89/Maggie_Choice_Debug.png\" decoding=\"async\" width=\"200\" height=\"237\" class=\"mw-file-element\" /></a><figcaption>A sample debug screen.</figcaption></figure></s><s><div style=\"margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;\">\n<pre>/denizen debug\n/denizen stacktrace</pre>\n<p>I've done my best to catch errors and output them in a friendly and informative matter. This can be enabled by using <tt>/denizen debug</tt>. It is recommended that you use this if you get unpredictable behavior from your scripts. If you are running into a problem that seems to beyond bad command syntax, I may ask you to use the <tt>/denizen stacktrace</tt> command in conjuntion with debug mode. This will enable stacktraces for serious errors which help me find the location of problems in the code.\n</p>\n</div></s><s><div class=\"mw-heading mw-heading4\"><h4 id=\"Trigger_Toggles\">Trigger Toggles</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/In_Game_Commands&amp;action=edit&amp;section=4\" title=\"Edit section: Trigger Toggles\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><div style=\"margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;\">\n<pre>/denizen trigger list\n/denizen trigger toggle [trigger_name]</pre>\nUpon creation, Denizens come with Click and Chat triggers turned on. To toggle or check the status of other triggers, use these commands. You can also see trigger status in Info-Click.</div></s><s><div class=\"mw-heading mw-heading4\"><h4 id=\"Script_Assignment\">Script Assignment</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/In_Game_Commands&amp;action=edit&amp;section=5\" title=\"Edit section: Script Assignment\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><p><span style=\"background: white; color: red\">Not current implemented, must be done manually. See <a href=\"/Denizen/0.7/Assignments\" title=\"Denizen/0.7/Assignments\">Assignments</a></span>\n</p></s><s>\n<del><div style=\"margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;\">\n<pre>/denizen assign [#] [(^)Name of Script]\n/denizen remove [Name of Script]\n/denizen list</pre>\n<p>Script assignment can always be done by hand (which is what I personally prefer) by simply editing the assignments.yml and using a <tt>/denizen reload</tt>, but if you would rather use in-game commands, they are provided. Scripts assignments require a priority and a script name. You can also use a '^' at the beginning of the script name to indicate an Overlay Script Assignment. This is all covered in the Assignments section.s are covered further down in the document.\n</p>\n</div></del></s><s><div class=\"mw-heading mw-heading4\"><h4 id=\"Bookmark_Creation\">Bookmark Creation</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/In_Game_Commands&amp;action=edit&amp;section=6\" title=\"Edit section: Bookmark Creation\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><div style=\"margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;\">\n<pre>/denizen bookmark block [name]\n/denizen bookmark location [name]\n/denizen bookmark remove [name]\n/denizen bookmark list</pre>\n<p>Bookmarks are 'saved locations' for your Denizen to reference in Scripts. There are currently two types: Location Bookmarks and Block Bookmarks. Bookmarks are an easier way to handle locations, since X Y and Z coordinates can get out of hand very easily. You can always check which bookmarks a Denizen NPC has by using Info-Click, or by selecting a Denizen NPC and typing <tt>/denizen bookmark list</tt>.\n</p>\n<div class=\"mw-heading mw-heading5\"><h5 id=\"Block_Bookmarks\">Block Bookmarks</h5><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/In_Game_Commands&amp;action=edit&amp;section=7\" title=\"Edit section: Block Bookmarks\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Block bookmarks are created by first selecting a Denizen you wish to assign the bookmark to, then by pointing your crosshairs to a block and typing <tt>/denizen bookmark block [name]</tt>. Remember, names should only be one word and are case-sensitive. Commands such as CHANGE, and SWITCH require block bookmarks. The POWERED requirement also requires a block bookmark. When listing bookmarks you can easily see the Material of the block as well as if it is currently powered by redstone. Possible Scenario: Need to check the status of a redstone torch in your script? Easy! Create a block bookmark at that location and use the POWERED [bookmark] requirement to base script interaction on the status of the torch. Any block that can be powered can be used.\n</p>\n<div class=\"mw-heading mw-heading5\"><h5 id=\"Location_Bookmarks\">Location Bookmarks</h5><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/In_Game_Commands&amp;action=edit&amp;section=8\" title=\"Edit section: Location Bookmarks\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Location bookmarks store the X,Y and Z coordinates as well as the Pitch/Yaw of the Player are useful in a couple different ways. First, they store an exact X,Y,Z Location that can be utilized with commands such as TELEPORT, SPAWN, and WALKTO. The second set of information in a Location bookmarks is the Pitch and Yaw, which can be useful with the LOOK command. Upon creation, the location, pitch, and yaw of the Player is the information that is stored. Possible Scenario: Need a Denizen to look at a clue? Easy! Create a Location bookmark while looking at the spot, then use LOOK [bookmark] to have the NPC Denizen look in the same direction.\n</p><p>Location bookmarks are also used to define the 'Trigger: node' in Location Triggers.\n</p>\n</div></s>\n<!-- \nNewPP limit report\nCached time: 20261019145826\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.038 seconds\nReal time usage: 0.054 seconds\nPreprocessor visited node count: 67/1000000\nRevision size: 6476/2097152 bytes\nPost‐expand include size: 142/2097152 bytes\nTemplate argument size: 99/2097152 bytes\nHighest expansion depth: 3/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 466/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    4.461      1 Template:Color\n100.00%    4.461      1 -total\n-->\n\n<!-- Render ID 8973e363-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen/0.7/Assignments"
+      }
+    ],
+    "images": [
+      "Maggie_Choice_Debug.png"
+    ],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "4",
+        "line": "Denizen NPC Creation",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Denizen/0.7/In_Game_Commands",
+        "byteoffset": 1229,
+        "anchor": "Denizen_NPC_Creation",
+        "linkAnchor": "Denizen_NPC_Creation"
+      },
+      {
+        "toclevel": 1,
+        "level": "4",
+        "line": "Info-Click",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Denizen/0.7/In_Game_Commands",
+        "byteoffset": 1775,
+        "anchor": "Info-Click",
+        "linkAnchor": "Info-Click"
+      },
+      {
+        "toclevel": 1,
+        "level": "4",
+        "line": "Debug Mode",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "Denizen/0.7/In_Game_Commands",
+        "byteoffset": 2299,
+        "anchor": "Debug_Mode",
+        "linkAnchor": "Debug_Mode"
+      },
+      {
+        "toclevel": 1,
+        "level": "4",
+        "line": "Trigger Toggles",
+        "number": "4",
+        "index": "4",
+        "fromtitle": "Denizen/0.7/In_Game_Commands",
+        "byteoffset": 3041,
+        "anchor": "Trigger_Toggles",
+        "linkAnchor": "Trigger_Toggles"
+      },
+      {
+        "toclevel": 1,
+        "level": "4",
+        "line": "Script Assignment",
+        "number": "5",
+        "index": "5",
+        "fromtitle": "Denizen/0.7/In_Game_Commands",
+        "byteoffset": 3420,
+        "anchor": "Script_Assignment",
+        "linkAnchor": "Script_Assignment"
+      },
+      {
+        "toclevel": 1,
+        "level": "4",
+        "line": "Bookmark Creation",
+        "number": "6",
+        "index": "6",
+        "fromtitle": "Denizen/0.7/In_Game_Commands",
+        "byteoffset": 4238,
+        "anchor": "Bookmark_Creation",
+        "linkAnchor": "Bookmark_Creation"
+      },
+      {
+        "toclevel": 2,
+        "level": "5",
+        "line": "Block Bookmarks",
+        "number": "6.1",
+        "index": "7",
+        "fromtitle": "Denizen/0.7/In_Game_Commands",
+        "byteoffset": 4892,
+        "anchor": "Block_Bookmarks",
+        "linkAnchor": "Block_Bookmarks"
+      },
+      {
+        "toclevel": 2,
+        "level": "5",
+        "line": "Location Bookmarks",
+        "number": "6.2",
+        "index": "8",
+        "fromtitle": "Denizen/0.7/In_Game_Commands",
+        "byteoffset": 5678,
+        "anchor": "Location_Bookmarks",
+        "linkAnchor": "Location_Bookmarks"
+      }
+    ],
+    "showtoc": ""
+  }
+}

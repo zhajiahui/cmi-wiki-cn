@@ -1,0 +1,159 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "1.x/Wizard",
+    "pageid": 12,
+    "revid": 1198,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><table class=\"wikitable\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"1\" style=\"width: 100%; background-color:#F75D59; font-size: 32px; padding: 15px;\"><b>Not Supported!</b>\n</th></tr>\n<tr>\n<td style=\"font-size: 16px;\">This page is about Citizens 1.x, while the current version is Citizens 2.0.2. This page's content may be outdated, and shouldn't be trusted as being correct. See this page's talk page for more information. If you were looking for the 2.0.2 equivalent of this page, try <a href=\"/index.php?title=Wizard&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Wizard (page does not exist)\">Wizard</a>. If you feel this message was displayed in error, please contact an administrator.\n</td></tr></tbody></table>\n<p><b>Wizards</b> are the most versatile NPC type. They perform 5 different tasks: storm-toggling, teleportation, command-execution, mob-spawning, and time-changing. You can set a wizard up to get drained of mana or set it to unlimited mana. You interact with a wizard by left and right-clicking it with the interact-item (default is a feather). If a wizard's mana isn't at the maximum level, it will regenerate every 6000 server ticks (can be changed in <i>citizens.yml</i>).\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Configuration_Nodes\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Configuration Nodes</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Commands\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Commands</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Wizard_Modes\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Wizard Modes</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Other_Permissions\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Other Permissions</span></a></li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#Future\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">Future</span></a></li>\n<li class=\"toclevel-1 tocsection-6\"><a href=\"#FAQ\"><span class=\"tocnumber\">6</span> <span class=\"toctext\">FAQ</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Configuration_Nodes\">Configuration Nodes</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Wizard&amp;action=edit&amp;section=1\" title=\"Edit section: Configuration Nodes\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>These nodes can be found in <i>citizens.yml</i>. They deal with the configuration of wizards.\n</p>\n<table class=\"wikitable collapsible collapsed\" style=\"text-align: center; width: 100%\">\n\n<tbody><tr>\n<th style=\"width: 100%; background-color:#ADD8E6\" colspan=\"3\"><b>Configuration Nodes</b>\n</th></tr>\n<tr>\n<th style=\"width: 250px;\">Setting\n</th>\n<th style=\"width: 200px;\">Default Value\n</th>\n<th>Description\n</th></tr>\n<tr>\n<td>economy.prices.wizard.creation\n</td>\n<td>100\n</td>\n<td>Amount that is charged when an NPC is toggled to a wizard for the first time\n</td></tr>\n<tr>\n<td>economy.prices.wizard.(mode)\n</td>\n<td>100\n</td>\n<td>Amount that is charged each time a player uses the specific mode\n</td></tr>\n<tr>\n<td>wizards.mana-costs.(mode)\n</td>\n<td>5\n</td>\n<td>Amount of mana that is drained from a wizard when a mode is used\n</td></tr>\n<tr>\n<td>wizards.max-locations\n</td>\n<td>10\n</td>\n<td>Maximum locations that a wizard can have at once\n</td></tr>\n<tr>\n<td>wizards.max-mana\n</td>\n<td>100\n</td>\n<td>Maximum mana that a wizard can have\n</td></tr>\n<tr>\n<td>wizards.interact-item\n</td>\n<td>288\n</td>\n<td>ID of the item that a player must use to interact with a wizard\n</td></tr>\n<tr>\n<td>wizards.regen-mana\n</td>\n<td>true\n</td>\n<td>Whether to regenerate mana\n</td></tr>\n<tr>\n<td>wizards.regen-rate\n</td>\n<td>6000\n</td>\n<td>Ticks between each mana-regen (1 server tick = 1/20 of a second)\n</td></tr>\n<tr>\n<td>wizards.regen-item\n</td>\n<td>348\n</td>\n<td>ID of the item that a player can use to manually regenerate mana\n</td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Commands\">Commands</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Wizard&amp;action=edit&amp;section=2\" title=\"Edit section: Commands\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Commands that are specific to wizards.\n</p>\n<table class=\"wikitable collapsible collapsed\" style=\"text-align: center; width: 100%\">\n\n<tbody><tr>\n<th style=\"width: 100%; background-color:#ADD8E6\" colspan=\"7\"><b>Wizard Commands</b>\n</th></tr>\n<tr>\n<th style=\"width: 250px;\">Command\n</th>\n<th style=\"width: 200px;\">Args Description\n</th>\n<th style=\"width: 150px;\">Require Selected\n</th>\n<th style=\"width: 150px;\">Require Ownership\n</th>\n<th style=\"width: 150px;\">Required Mode\n</th>\n<th style=\"width: 170px;\">Permission\n</th>\n<th>Description\n</th></tr>\n<tr>\n<td>/wizard help\n</td>\n<td><i>None</i>\n</td>\n<td>false\n</td>\n<td>false\n</td>\n<td><i>None</i>\n</td>\n<td>citizens.wizard.use.help\n</td>\n<td>View the help page for wizards\n</td></tr>\n<tr>\n<td>/wizard status\n</td>\n<td><i>None</i>\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td><i>None</i>\n</td>\n<td>citizens.wizard.use.status\n</td>\n<td>View the current mode and mana of a wizard\n</td></tr>\n<tr>\n<td>/wizard unlimited\n</td>\n<td><i>None</i>\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td><i>None</i>\n</td>\n<td>citizens.wizard.modify.unlimited\n</td>\n<td>Toggle a wizard's mana as unlimited\n</td></tr>\n<tr>\n<td>/wizard mode [mode]\n</td>\n<td><i>mode</i> - mode to set a wizard to\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td><i>None</i>\n</td>\n<td>citizens.wizard.modify.mode\n</td>\n<td>Change a wizard's mode\n</td></tr>\n<tr>\n<td>/wizard locations\n</td>\n<td><i>None</i>\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>teleport\n</td>\n<td>citizens.wizard.use.locations\n</td>\n<td>View a wizard's locations\n</td></tr>\n<tr>\n<td>/wizard addloc [location]\n</td>\n<td><i>location</i> - name of the location to add\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>teleport\n</td>\n<td>citizens.wizard.modify.addloc\n</td>\n<td>Add your current location to a wizard's locations\n</td></tr>\n<tr>\n<td>/wizard removeloc [location]\n</td>\n<td><i>location</i> - name of the location to remove\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>teleport\n</td>\n<td>citizens.wizard.modify.removeloc\n</td>\n<td>Add your current location to a wizard's locations\n</td></tr>\n<tr>\n<td>/wizard command [command]\n</td>\n<td><i>command</i> - name of command to add, split with spaces for multiple arguments\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>command\n</td>\n<td>citizens.wizard.modify.command\n</td>\n<td>Set a wizard's command to execute\n</td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Wizard_Modes\">Wizard Modes</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Wizard&amp;action=edit&amp;section=3\" title=\"Edit section: Wizard Modes\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>All modes require the interact-item to be in your hand in order for it to work. You can also change the amount of mana that each mode drains from a wizard in <i>citizens.yml</i>.\n</p><p><b>Mode</b> - name of the mode, use this when changing the wizard's mode with <i>/wizard mode</i>\n<br /><b>Description</b> - short description of the mode\n</p>\n<table class=\"wikitable collapsible collapsed\" style=\"text-align: center; width: 100%\">\n\n<tbody><tr>\n<th style=\"width: 100%; background-color:#ADD8E6\" colspan=\"2\"><b>Wizard Modes</b>\n</th></tr>\n<tr>\n<th style=\"width: 250px;\">Mode\n</th>\n<th>Description\n</th></tr>\n<tr>\n<td>teleport\n</td>\n<td>Ability to teleport to various locations. You can add and remove locations using <i>/wizard addloc</i> and <i>/wizard removeloc</i>. Left-click to cycle through locations, right-click to teleport.\n</td></tr>\n<tr>\n<td>storm\n</td>\n<td>Ability to toggle a storm in your world. Right-click to toggle a storm.\n</td></tr>\n<tr>\n<td>command\n</td>\n<td>Ability to execute commands. Set a command to execute using the <i>/wizard command</i> command. Right-click to execute the command. (Note: A player must have permission to use the command for it to work)\n</td></tr>\n<tr>\n<td>time\n</td>\n<td>Ability to change the time in your world. There are 4 time settings that you can cycle through by left-clicking: morning, day, afternoon, and night. Right-click to change the time.\n</td></tr>\n<tr>\n<td>spawn\n</td>\n<td>Ability to spawn mobs at your location. Left-click to cycle through mobs (all Minecraft mobs are supported). Right-click to spawn the mob.\n</td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Other_Permissions\">Other Permissions</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Wizard&amp;action=edit&amp;section=4\" title=\"Edit section: Other Permissions\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><b>Permission</b> - permission node\n<br /><b>Description</b> - description of permission node\n</p>\n<table class=\"wikitable collapsible collapsed\" style=\"text-align: center; width: 100%\">\n\n<tbody><tr>\n<th style=\"width: 100%; background-color:#ADD8E6\" colspan=\"3\"><b>Wizard Permissions</b>\n</th></tr>\n<tr>\n<th style=\"width: 250px;\">Permission\n</th>\n<th style=\"width: 500px;\">Description\n</th></tr>\n<tr>\n<td>citizens.wizard.use.interact\n</td>\n<td>Ability to interact with a wizard\n</td></tr></tbody></table>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Future\">Future</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Wizard&amp;action=edit&amp;section=5\" title=\"Edit section: Future\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ul><li>Cooldowns for all modes</li></ul>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"FAQ\">FAQ</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Wizard&amp;action=edit&amp;section=6\" title=\"Edit section: FAQ\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><b>Why can't I use wizards? I have all of the correct permissions!</b>\n<br />Make sure you are using the wizard interact-item (configurable in <i>citizens.yml</i>, default is feather).\n</p><p><b>Why isn't my wizard working when I left-click him! I am sure that I am using the correct interact-item.</b>\n<br />Left-clicking a wizard does not work in areas where PvP is disabled. Make sure your wizard is not in one of those areas and that PvP is set to true for your world. This is a Bukkit bug.\n</p>\n<div class=\"padded\" style=\"font-size: 12px; padding: 5px\">\n<table class=\"wikitable collapsible collapsed\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Usage\" title=\"Category:Usage\">Usage</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Installation\" title=\"Installation\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Frequently_Asked_Questions\" title=\"Frequently Asked Questions\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Editors\" title=\"Editors\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Characters\" title=\"Characters\">Characters</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/API\" title=\"API\">API</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32;\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Configuration\" title=\"Category:Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Configuration\" title=\"Configuration\">Configuration</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Data_Storage\" title=\"Data Storage\">Data Storage</a>\n</td></tr></tbody></table>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145755\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.057 seconds\nReal time usage: 0.092 seconds\nPreprocessor visited node count: 40/1000000\nRevision size: 5838/2097152 bytes\nPost‐expand include size: 2419/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 4/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   20.218      1 -total\n 56.98%   11.520      1 Template:NoSupport\n 41.95%    8.482      1 Template:NavBox\n 36.17%    7.312      2 Template:Version2F\n 22.37%    4.523     10 Template:·\n 17.17%    3.472      1 Template:Version2\n-->\n\n<!-- Render ID 76f9a9e4-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "API"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Configuration"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Data Storage"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Editors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Text Syntax"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      },
+      {
+        "ns": 0,
+        "*": "Wizard"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Configuration"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Usage"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Configuration Nodes",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "1.x/Wizard",
+        "byteoffset": 485,
+        "anchor": "Configuration_Nodes",
+        "linkAnchor": "Configuration_Nodes"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Commands",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "1.x/Wizard",
+        "byteoffset": 1705,
+        "anchor": "Commands",
+        "linkAnchor": "Commands"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Wizard Modes",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "1.x/Wizard",
+        "byteoffset": 3415,
+        "anchor": "Wizard_Modes",
+        "linkAnchor": "Wizard_Modes"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Other Permissions",
+        "number": "4",
+        "index": "4",
+        "fromtitle": "1.x/Wizard",
+        "byteoffset": 4832,
+        "anchor": "Other_Permissions",
+        "linkAnchor": "Other_Permissions"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Future",
+        "number": "5",
+        "index": "5",
+        "fromtitle": "1.x/Wizard",
+        "byteoffset": 5273,
+        "anchor": "Future",
+        "linkAnchor": "Future"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "FAQ",
+        "number": "6",
+        "index": "6",
+        "fromtitle": "1.x/Wizard",
+        "byteoffset": 5314,
+        "anchor": "FAQ",
+        "linkAnchor": "FAQ"
+      }
+    ],
+    "showtoc": ""
+  }
+}

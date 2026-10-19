@@ -12,3 +12,26 @@ Site/docs/**
 !Site/docs/assets/
 !Site/docs/assets/wiki.css
 !Site/docs/assets/logo.svg
+
+# Local reference checkouts and intermediate translation drafts.
+**/sources/wiki/official-repository/
+**/sources/wiki/chinese-reference/
+**/sources/wiki/upstream/
+**/sources/wiki/drafts/
+**/sources/wiki/drafts-v2/
+**/sources/wiki/paragraph-cache/
+**/sources/wiki/text-node-cache/
+**/sources/wiki/translation-cache/
+**/sources/wiki/translation-cache-v2/
+
+# Keep only original evidence and reviewed records from the Wiki working folders.
+**/sources/wiki/*
+!**/sources/wiki/original/
+!**/sources/wiki/html/
+!**/sources/wiki/wikitext/
+!**/sources/wiki/translation/
+!**/sources/wiki/assets.json
+!**/sources/wiki/asset-manifest.json
+!**/sources/wiki/assets-manifest.json
+!**/sources/wiki/link-issues.json
+!**/sources/wiki/verification.json

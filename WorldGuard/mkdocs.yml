@@ -1,6 +1,37 @@
 site_name: WorldGuard 中文资料
 nav:
 - 插件说明: index.md
+- 插件 Wiki:
+  - WorldGuard 文档: wiki/index.md
+  - 安装: wiki/install.md
+  - 配置:
+    - 配置: wiki/config.md
+    - 主机密钥: wiki/host-keys.md
+  - 权限:
+    - 权限: wiki/permissions.md
+    - 建造权限: wiki/build-perms.md
+  - 命令: wiki/commands.md
+  - 黑名单: wiki/blacklist.md
+  - 区域:
+    - 区域: wiki/regions/index.md
+    - 快速入门: wiki/regions/quick-start.md
+    - 区域查询工具: wiki/regions/wand.md
+    - 区域旗标: wiki/regions/flags.md
+    - 优先级与继承: wiki/regions/priorities.md
+    - 全局区域: wiki/regions/global-region.md
+    - 区域命令: wiki/regions/commands.md
+    - 认领区域: wiki/regions/claiming.md
+    - 存储驱动: wiki/regions/storage.md
+    - 保护范围: wiki/regions/scope.md
+    - 常见场景: wiki/regions/common-scenarios.md
+  - 箱子保护: wiki/chest-protection.md
+  - 进阶主题:
+    - 进阶主题: wiki/advanced/index.md
+    - 事件日志: wiki/advanced/event-logging.md
+  - 常见问题: wiki/faq.md
+  - 获取帮助: wiki/support.md
+  - 源代码: wiki/source-code.md
+  - 索引: wiki/genindex.md
 - 配置文件（7.0.17+2370-e42d8bc）:
   - 配置索引: configuration/index.md
   - config.yml: configuration/config.md

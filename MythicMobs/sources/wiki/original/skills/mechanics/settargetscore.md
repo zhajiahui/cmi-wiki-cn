@@ -1,0 +1,31 @@
+# Settargetscore
+
+## Description {#description}
+
+Modifies the a scoreboard-objective value of the specified targeter(s).
+Works exactly like the ModifyTargetScore-mechanic, but is only capeable
+of performing the **set**-action.
+
+## Attributes {#attributes}
+
+| Attribute | Aliases | Description | Default |
+| --- | --- | --- | --- |
+| objective | obj, o | Specifies the scoreboard objectiv to be changed. If the objective doesn't exist it will automatically be created by the mechanic |  |
+| value | v | The value to perform the operation with |  |
+
+## Examples {#examples}
+
+This example will track how often and whom damaged
+the casting mob in battle.
+
+```yaml
+  Skills:
+  - settargetscore{
+      objective=damagescore;
+      value=1
+      } @trigger ~onDamaged
+```
+
+## Aliases {#aliases}
+
+- sts

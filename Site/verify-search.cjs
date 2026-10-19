@@ -36,7 +36,7 @@ vm.runInContext(fs.readFileSync(path.join(workers, worker), 'utf8'), context, {f
     ['typewriter.connect', 'typewriter/docs/helpful-features/commands/'],
     ['Give Item Action', 'typewriter/adapters/BasicAdapter/entries/action/give_item/'],
     ['交互边界', 'typewriter/'],
-    ['过场动画', 'typewriter/'],
+    ['过场动画', ['typewriter/', 'mythicmobs/wiki/cinematics/']],
     ['residence.randomtp', 'residence/permissions/#permission-residence.randomtp'],
     ['cmi.command.heal.others', 'commands/'],
     ['随机传送', 'commands/rtp/'],
@@ -45,17 +45,25 @@ vm.runInContext(fs.readFileSync(path.join(workers, worker), 'utf8'), context, {f
     ['mmoprofiles.admin', 'mmoprofiles/general/permissions/#permission-mmoprofiles.admin'],
     ['bountyhunters.add', 'bounty-hunters/general/permissions/#permission-bountyhunters.add'],
     ['灵魂绑定', 'mmoitems/features/soulbound/'],
-    ['代理端档案', 'mmoprofiles/features/proxy-based/']
+    ['代理端档案', 'mmoprofiles/features/proxy-based/'],
+    ['ItemsAdder 发光效果', 'itemsadder/wiki/adding-content/items/item-properties/light-emission/', true],
+    ['Citizens NPC 点击命令', 'citizens/wiki/npc-commands/', true],
+    ['WorldEdit 选区', 'worldedit/wiki/usage/regions/', true],
+    ['WorldGuard 区域旗标', 'worldguard/wiki/regions/flags/', true],
+    ['CrackShot 完整指南', 'crackshot/wiki/The-Complete-Guide-to-CrackShot/', true],
+    ['MythicMobs 元技能', ['mythicmobs/wiki/skills/metaskills/', 'mythicmobs/wiki/skills/dynamic-metaskills/'], true]
   ];
   const results = [];
-  for (const [query, expected] of queries) {
+  for (const [query, expected, inTopResults] of queries) {
     if (process.argv[2] && query !== process.argv[2]) continue;
     await listener({data: {type: 2, data: query}});
     const response = messages.pop();
     const firstGroup = response?.data?.items?.[0] || [];
     const first = firstGroup[0];
-    if (!first?.location?.startsWith(expected)) {console.error(JSON.stringify(response.data.items.slice(0,4).map(group => group.slice(0,2).map(item => ({location:item.location,title:item.title,score:item.score}))),null,2)); throw new Error(`Unexpected first result for ${query}: ${first?.location}`);};
-    results.push({query, first: first.location, title: first.title.replace(/<[^>]*>/g, '')});
+    const candidates = inTopResults ? response.data.items.slice(0, 10).flat() : [first];
+    const matching = candidates.find(item => (Array.isArray(expected) ? expected : [expected]).some(prefix => item?.location?.startsWith(prefix)));
+    if (!matching) {console.error(JSON.stringify(response.data.items.slice(0,4).map(group => group.slice(0,2).map(item => ({location:item.location,title:item.title,score:item.score}))),null,2)); throw new Error(`Unexpected first result for ${query}: ${first?.location}`);};
+    results.push({query, first: first.location, matched: matching.location, title: first.title.replace(/<[^>]*>/g, '')});
   }
   console.log(JSON.stringify({worker, queries: results}, null, 2));
 })().catch(error => {console.error(error.message); process.exitCode = 1;});

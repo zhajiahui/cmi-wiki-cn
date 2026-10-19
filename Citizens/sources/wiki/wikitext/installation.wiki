@@ -1,0 +1,16 @@
+Installing Citizens 2.0 is easy. It is like installing any other Bukkit plugin. If you don't know how to do that, see below.
+
+==Installing Citizens 2.0==
+# Download Citizens [[Downloads|here]].
+# Place the Citizens 2.0 jar in your ''/plugins'' directory.
+# Download any desired [[Characters|Trait]] plugins and place these in the ''/plugins'' directory as well.
+# Reload or restart your server. Citizens 2 will create a plugins/Citizens folder and a config.yml file.
+# Configure Citizens to your liking with config.yml. See the [[Configuration]] page for more help.
+# Reload or restart your server.
+# Start creating and editing NPCs!
+# Be sure to set [[Permissions]] so your players can interact with NPCs.
+#*'''Note that players need the citizens.npc.talk permission to hear NPCs!'''
+
+{{NavBox}}
+
+[[Category:Usage]]

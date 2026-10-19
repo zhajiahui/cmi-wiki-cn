@@ -1,0 +1,122 @@
+[
+  {
+    "file": "wiki/home.md",
+    "title": "Wiki 首页",
+    "source_url": "https://wiki.placeholderapi.com/",
+    "source_file": "sources/wiki/original/home.md",
+    "source_sha256": "7f72f4b40e59a409a292297f850b430967974a1a78aeb606f33a9ffc2bcbf7f9",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/faq.md",
+    "title": "常见问题",
+    "source_url": "https://wiki.placeholderapi.com/faq/",
+    "source_file": "sources/wiki/original/faq.md",
+    "source_sha256": "ea2bfa900075941dd278db0cbdd2828d32df7bd218f6304eb109fb2d17e1a97e",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/developers.md",
+    "title": "开发者资料",
+    "source_url": "https://wiki.placeholderapi.com/developers/",
+    "source_file": "sources/wiki/original/developers.md",
+    "source_sha256": "a2eecdb95289184006bc82eb53432ee77e99f910a2891337fb42405b81a83841",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/developers-expansion-cloud.md",
+    "title": "Expansion Cloud",
+    "source_url": "https://wiki.placeholderapi.com/developers/expansion-cloud/",
+    "source_file": "sources/wiki/original/developers-expansion-cloud.md",
+    "source_sha256": "5492de2b53d4bc3fc2cff2fc2df6dcfc5a60e7912d0fcaaa8c90532c5e610c8a",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/issues.md",
+    "title": "常见问题排查",
+    "source_url": "https://wiki.placeholderapi.com/issues/",
+    "source_file": "sources/wiki/original/issues.md",
+    "source_sha256": "81e07bf6d97e31f1c772b6c17c9553e4755a22244314891907969b4ad59cd1cd",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/issues-ecloud-block.md",
+    "title": "eCloud 连接被阻止",
+    "source_url": "https://wiki.placeholderapi.com/issues/ecloud-block/",
+    "source_file": "sources/wiki/original/issues-ecloud-block.md",
+    "source_sha256": "8fed5977fbf88ff0ca123d7f32651fbc034817d01e8ceb2c5481d2f489a10226",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/users.md",
+    "title": "用户指南",
+    "source_url": "https://wiki.placeholderapi.com/users/",
+    "source_file": "sources/wiki/original/users.md",
+    "source_sha256": "2bdbac04dfc684ae4e789e8b95ae0eee0204e7e4645f22bea34326d7df544abc",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/users-commands.md",
+    "title": "命令",
+    "source_url": "https://wiki.placeholderapi.com/users/commands/",
+    "source_file": "sources/wiki/original/users-commands.md",
+    "source_sha256": "7d9a8a64fe671ad65baf8b29b15a4670a5dfd80a7f05ddc7457b5d9196807094",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/users-using-placeholders.md",
+    "title": "使用占位符",
+    "source_url": "https://wiki.placeholderapi.com/users/using-placeholders/",
+    "source_file": "sources/wiki/original/users-using-placeholders.md",
+    "source_sha256": "62881a6315734f033e2ffb29d3593be23c8ac75f313c50ede1d86a5345f5e3e1",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/users-placeholder-list.md",
+    "title": "占位符列表",
+    "source_url": "https://wiki.placeholderapi.com/users/placeholder-list/",
+    "source_file": "sources/wiki/original/users-placeholder-list.md",
+    "source_sha256": "fcbcdf0ce35d75f4090bf86791454d3305939c8d52cb7a0bf56808a15aa24407",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/users-placeholder-list-hytale.md",
+    "title": "Hytale 占位符列表",
+    "source_url": "https://wiki.placeholderapi.com/users/placeholder-list/hytale/",
+    "source_file": "sources/wiki/original/users-placeholder-list-hytale.md",
+    "source_sha256": "69014dc8ea9649af525eceae0b7a48c873c481bee1e64174d0dc7f56698a0424",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/users-placeholder-list-minecraft.md",
+    "title": "Minecraft 占位符列表",
+    "source_url": "https://wiki.placeholderapi.com/users/placeholder-list/minecraft/",
+    "source_file": "sources/wiki/original/users-placeholder-list-minecraft.md",
+    "source_sha256": "bdbac5e5f963d3f8c6888271d79e6508a90860f9f8f117c8e8cc31d46f925446",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/users-plugins-using-placeholderapi.md",
+    "title": "使用 PlaceholderAPI 的插件",
+    "source_url": "https://wiki.placeholderapi.com/users/plugins-using-placeholderapi/",
+    "source_file": "sources/wiki/original/users-plugins-using-placeholderapi.md",
+    "source_sha256": "7c52ca051c223d19c0e1f31550ffad57c006a1c9c776a840e547f82a4f632b53",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/users-plugins-using-placeholderapi-hytale.md",
+    "title": "支持 PlaceholderAPI 的 Hytale 插件",
+    "source_url": "https://wiki.placeholderapi.com/users/plugins-using-placeholderapi/hytale/",
+    "source_file": "sources/wiki/original/users-plugins-using-placeholderapi-hytale.md",
+    "source_sha256": "bc46646d22c37ba1c7ea2f5d103194232f1f5d50119572bfd1fc1b14d4d046d8",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "wiki/users-plugins-using-placeholderapi-minecraft.md",
+    "title": "支持 PlaceholderAPI 的 Minecraft 插件",
+    "source_url": "https://wiki.placeholderapi.com/users/plugins-using-placeholderapi/minecraft/",
+    "source_file": "sources/wiki/original/users-plugins-using-placeholderapi-minecraft.md",
+    "source_sha256": "cd0c2486b64b55ac5406370178248acc2cd3804f968e203ecf4c788fac6dc2bc",
+    "translation_review": "reviewed"
+  }
+]

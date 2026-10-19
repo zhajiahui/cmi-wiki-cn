@@ -1,0 +1,13 @@
+{{NoSupport}}
+== Creating your first NPC ==
+
+It is important to read the [[Commands]] page for an in-depth look at all of the commands you can use to customize your NPCs. For now, here is a basic guide on how to setup an NPC.
+
+
+Type ''/npc create [name]''. Replace ''[name]'' with the name of your NPC. Optionally, you can add text to your NPC. To do this, simply add words after the name of the NPC. Example:
+
+<pre>/npc create Notch I like cookies!</pre>
+
+That's it! Of course there are various other things that you can do with basic NPCs as shown in [[Commands]].
+
+[[Category:Citizens1]]

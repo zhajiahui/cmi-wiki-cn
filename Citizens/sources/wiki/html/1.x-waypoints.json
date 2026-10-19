@@ -1,0 +1,99 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "1.x/Waypoints",
+    "pageid": 14,
+    "revid": 671,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><table class=\"wikitable\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"1\" style=\"width: 100%; background-color:#F75D59; font-size: 32px; padding: 15px;\"><b>Not Supported!</b>\n</th></tr>\n<tr>\n<td style=\"font-size: 16px;\">This page is about Citizens 1.x, while the current version is Citizens 2.0.2. This page's content may be outdated, and shouldn't be trusted as being correct. See this page's talk page for more information. If you were looking for the 2.0.2 equivalent of this page, try <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a>. If you feel this message was displayed in error, please contact an administrator.\n</td></tr></tbody></table>\n<p>Waypoints give life to your NPCs. You can make your NPCs patrol buildings and more!\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Waypoint_Commands\">Waypoint Commands</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/Waypoints&amp;action=edit&amp;section=1\" title=\"Edit section: Waypoint Commands\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><b>[]</b> - Mandatory\n<br /><b>()</b> - Optional\n</p><p><b>Command</b> - command's syntax\n<br /><b>Args Description</b> - description of the command's arguments\n<br /><b>Require Selected</b> - whether the command requires an NPC to be selected\n<br /><b>Require Ownership</b> - whether the commands requires you to be the owner of the NPC\n<br /><b>Permission</b> - command's permission node\n<br /><b>Description</b> - short description of the command\n</p>\n<table class=\"wikitable\" style=\"text-align: center;\">\n<tbody><tr>\n<th style=\"width: 250px;\">Command\n</th>\n<th style=\"width: 200px;\">Args Description\n</th>\n<th style=\"width: 150px;\">Require Selected\n</th>\n<th style=\"width: 150px;\">Require Ownership\n</th>\n<th style=\"width: 170px;\">Permission\n</th>\n<th>Description\n</th></tr>\n<tr>\n<td>/npc path\n</td>\n<td><i>None</i>\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.waypoints.edit\n</td>\n<td>Start editing an NPC's waypoints\n</td></tr>\n<tr>\n<td>/waypoints modifier [type]\n</td>\n<td><i>type</i> - modifier type to add to an NPC's waypoints\n</td>\n<td>true\n</td>\n<td>true\n</td>\n<td>citizens.waypoints.modifer.(type) (replace type with the modifier type's name)\n</td>\n<td>Add a modifier to an NPC's waypoints\n</td></tr></tbody></table>\n<div class=\"padded\" style=\"font-size: 12px; padding: 5px\">\n<table class=\"wikitable collapsible collapsed\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Usage\" title=\"Category:Usage\">Usage</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Installation\" title=\"Installation\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Frequently_Asked_Questions\" title=\"Frequently Asked Questions\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Editors\" title=\"Editors\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Characters\" title=\"Characters\">Characters</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/API\" title=\"API\">API</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32;\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Configuration\" title=\"Category:Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Configuration\" title=\"Configuration\">Configuration</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Data_Storage\" title=\"Data Storage\">Data Storage</a>\n</td></tr></tbody></table>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145755\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.030 seconds\nReal time usage: 0.056 seconds\nPreprocessor visited node count: 25/1000000\nRevision size: 1172/2097152 bytes\nPost‐expand include size: 2425/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 4/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   35.084      1 -total\n 51.73%   18.150      1 Template:NoSupport\n 47.87%   16.793      1 Template:NavBox\n 38.31%   13.440      2 Template:Version2F\n 24.87%    8.726     10 Template:·\n 18.17%    6.375      1 Template:Version2\n-->\n\n<!-- Render ID 76f9a9e6-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "API"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Configuration"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Data Storage"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Editors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Text Syntax"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Configuration"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Usage"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Waypoint Commands",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "1.x/Waypoints",
+        "byteoffset": 99,
+        "anchor": "Waypoint_Commands",
+        "linkAnchor": "Waypoint_Commands"
+      }
+    ]
+  }
+}

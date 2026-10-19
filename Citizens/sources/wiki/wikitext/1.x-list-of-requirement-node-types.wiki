@@ -1,0 +1,121 @@
+{{NoSupport}}
+<br>
+=Requirements node=
+The requirements node is used in [[Quests.yml]] to tell the quester what is required for the the player before the quest can start.  If all the requirements listed in the requirements: node are met, the quest is granted. Requirements share a lot in common with rewards, as most reward types can also be used for requirements. 
+
+For example:
+
+<pre>requirements:
+    '0':
+        type: item    # Requires an item.
+        id: 371       # gold_nugget
+        amount: 30
+        take: true    # Takes the gold nuggets from the player.
+    '1':
+        type: quest   # Requires a quest to be completed prior.
+        quest: "Example Quest"
+</pre>
+
+You may have multiple requirements, or just one.  
+
+=Requirement Types=
+
+==NPC==
+
+''[[Notes from aufdemrand]]: Pretty sure this works, but needs tested to be sure.''
+
+NPC requirement (npc:) - requires an NPC to be owned by the player.
+Uses a name: node to specify the name of the npc, and a comma-separated list of toggles in the types: node (eg. trader,quester,guard). Will create an NPC owned by the player who completed the quest, with a generated UID.
+
+take: node is optional. Default is take: false.
+
+<pre>'0':
+    type: npc
+    npcid: 1   # id of npc in which to check ownership
+</pre>
+
+
+==Rank==
+
+Rank requirement (rank) - checks that a player has access to a group ('rank') provided it uses a compatible permissions system.
+Specified by the rank: node.
+
+take: node is optional. Default is take: false.
+
+<pre>'0':
+    type: rank     # Checks for rank
+    rank: 'admin'  # Quest requires admin rank
+</pre>
+
+
+==Permission==
+
+Permission requirement (permission) - checks if the player has specified permission.
+Specified by the permission: node.
+
+take: node is optional. Default is take: false.
+
+<pre>'0':
+    type: permission   # Checks for permission
+    permission: 'modifyworld.blocks.place.4' # Can user place cobblestone?
+</pre>
+
+
+==Quest==
+
+Quest requirement (quest) - checks to see if a quest has been completed. 
+Specified by the quest: node.
+
+take: node is not supported on the Quest requirement node.
+
+<pre>'0':
+    type: quest
+    quest: 'Slime Slaying I'</pre>
+
+
+==Item==
+
+Item reward (item) - checks player for specified items before starting. Items can also be taken upon quest acceptance with take=true.
+Loaded from the item: nodes.
+
+take: node is optional. Default is take: false.
+data: node is optional.
+
+<pre>'0':
+    type: item    # 
+    item:
+    id: 50
+    amount: 50</pre>
+    take: false   # Only checks for items, does not take them.
+
+
+==Health==
+
+''[[Notes from aufdemrand]]: Pretty sure this works, but needs tested to be sure.''
+
+Health reward (health) - gives health to a player.
+Loaded from the amount: node.
+
+take: node is optional. Default is take: false.
+
+<pre>
+'0':
+    type: health
+    amount: 10
+</pre>
+
+
+==Money==
+
+Money reward (money) - checks if player has a specified amount of money. Can also be used to take money on quest acceptance.
+Loaded from the money: node.
+
+take: node is optional. Default is take: false.
+
+<pre>'0':
+    type: money
+    money: 100
+    take: true  # Takes money from player </pre>
+
+{{NavBox}}
+[[Category:Citizens1]]

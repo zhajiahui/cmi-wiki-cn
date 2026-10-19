@@ -1,0 +1,53 @@
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://one.denizenscript.com/denizen/cmds/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://one.denizenscript.com/denizen/cmds/denizen/vids Tutorial Videos] on youtube or the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+
+<s>Activity Scripts contain a set of Activities.
+Activities are continuous actions the Denizen can do that give it life. Wandering, collecting wheat, mining a block, these are all possible activities.
+==== General layout of an Activity Script ====
+<div style="margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;">
+
+<pre>
+'Name of script':   # Name Node
+  Type: Activity    # Type Node
+  Requirements:     # Requirements Node
+    Mode: ...
+    List: 
+    - ...
+    - ...
+  Activities:       # Activities Node
+    List:
+     - ...
+     - ...
+</pre>
+==About==
+
+An Activity script defines a set of Activities that a Denizen can do simultaneously.
+
+Each Activity is assigned a goal priority that dictates which activity will be active at any given time. If a certain Activity cannot be done, the next lower priority Activity will be used instead.
+
+An activity Script.
+
+<pre>
+'Citizen':
+  Type: Activity
+  Requirements:
+    Mode: None
+  Activities:
+    List:
+    - 1 WANDER DELAY:12 RADIUS:10 SPEED:.75 FILTER:COBBLESTONE,GRAVEL,WOOL
+</pre>
+
+==Assigning==
+See [[Denizen/0.7/Assignments#Activity_Assignment]]
+
+[[Category:Denizen 0.7]]
+</s>

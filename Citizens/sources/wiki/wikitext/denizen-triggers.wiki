@@ -1,0 +1,81 @@
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://one.denizenscript.com/denizen/cmds/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://one.denizenscript.com/denizen/cmds/denizen/vids Tutorial Videos] on youtube or the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+<br><br><br>
+
+
+<s>Triggers are what allow NPCs to react to player actions such as chatting to the NPC, clicking the NPC, attacking the NPC, or just walking near the NPC.
+
+
+= How To Make A trigger =
+
+First, you must enable the trigger:
+
+You can enable them just by running the command [http://wiki.citizensnpcs.co/Denizen/Commands#trigger - Trigger]
+<pre>- trigger [name:chat/click/damage/proximity] (state:true/false) (cooldown:<#.#>) (radius:<#>)</pre>
+This is usually done in the [http://wiki.citizensnpcs.co/Denizen/Types_of_Scripts#Assignment_Script assignment script - on assignment], but it can be done anywhere else as well.
+
+Then you must make an [http://wiki.citizensnpcs.co/Denizen/Types_of_Scripts#Interact_Scripts Interact Script] and include the trigger to react however.
+
+You can also use Assignment script actions "on click", "on enter proximity", and "on exit proximity".
+
+= Chat Trigger =
+
+A Chat trigger is written like so:
+<pre>            chat Trigger:
+                '1':
+                    Trigger: "/Hello/ there npc!"
+                    Script:
+                    - CHAT "Hello, <player.name>!"
+                '2':
+                    Trigger: "/Bye/ npc!"
+                    Script:
+                    - CHAT "Goodbye, <player.name>!"
+                '3':
+                    Trigger: /REGEX:.+/
+                    Script:
+                    - CHAT "I don't know what <player.chat_history> is!"</pre>
+
+Any message that contains the /Message/ will activate that part of the trigger.
+
+You can also include any [http://en.wikipedia.org/wiki/Regular_expression RegEx] by prefixing it with REGEX:
+
+= Click Trigger =
+
+<pre>            click Trigger:
+                Script:
+                - CHAT "Hehe, that tickles!"</pre>
+
+Click triggers happen when a player right-clicks an NPC.
+
+= Damage Trigger =
+
+<pre>            Damage Trigger:
+                Script:
+                - CHAT "Ow! That hurt, <player.name>!"</pre>
+
+Click triggers happen when a player right-clicks an NPC.
+
+= Proximity Trigger =
+
+<pre>            Proximity Trigger:
+                entry:
+                    Script:
+                    - CHAT "Hello there, <player.name>!
+                exit:
+                    Script:
+                    - CHAT "Goodbye, <player.name>!"
+                move:
+                    Script:
+                    - CHAT "This is optional and will spam you =D"
+</pre>
+
+Proximity triggers fire when a player enters or leaves the radius defined by the - trigger command.</s>

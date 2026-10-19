@@ -1,6 +1,47 @@
 site_name: AttributePlus 中文资料
 nav:
 - 插件说明: index.md
+- 插件 Wiki:
+  - AttributePlus: wiki/master.md
+  - 插件相关: wiki/cha-jian-pei-zhi.md
+  - 高版本物品问题: wiki/cha-jian-pei-zhi/gao-ban-ben-wu-pin-wen-ti.md
+  - 配置: wiki/cha-jian-pei-zhi/pei-zhi.md
+  - attribute.yml: wiki/cha-jian-pei-zhi/pei-zhi/attribute.yml.md
+  - stats.yml: wiki/cha-jian-pei-zhi/pei-zhi/stats.yml.md
+  - script.yml: wiki/cha-jian-pei-zhi/pei-zhi/script.yml.md
+  - 语言: wiki/cha-jian-pei-zhi/yu-yan.md
+  - 属性相关: wiki/shu-xing-xiang-guan.md
+  - 优先级 / 战斗力 / 公式 / 消息: wiki/shu-xing-xiang-guan/you-xian-ji.md
+  - MythicMobs 属性相关: wiki/shu-xing-xiang-guan/mythicmobs-shu-xing-xiang-guan.md
+  - 读取相关: wiki/du-qu-xiang-guan.md
+  - 过滤符相关: wiki/du-qu-xiang-guan/guo-lv-fu-xiang-guan.md
+  - 装备条件标签: wiki/du-qu-xiang-guan/zhuang-bei-tiao-jian-biao-qian.md
+  - NBT属性加载: wiki/du-qu-xiang-guan/nbt-shu-xing-jia-zai.md
+  - 自定义条件标签: wiki/du-qu-xiang-guan/zi-ding-yi-tiao-jian-biao-qian.md
+  - 新读取格式相关 (>=3.3.0.7): wiki/du-qu-xiang-guan/xin-du-qu-ge-shi-xiang-guan-3.3.0.7.md
+  - 旧读取格式相关 (<=3.3.0.6): wiki/du-qu-xiang-guan/shu-xing-du-qu-ge-shi.md
+  - 属性内嵌条件格式: wiki/du-qu-xiang-guan/shu-xing-du-qu-tiao-jian.md
+  - 属性百分比读取格式: wiki/du-qu-xiang-guan/bai-fen-bi-shu-xing-du-qu-ge-shi.md
+  - 机制相关: wiki/ji-zhi-xiang-guan.md
+  - 蓄力机制: wiki/ji-zhi-xiang-guan/xu-li-ji-zhi.md
+  - 盾牌机制: wiki/ji-zhi-xiang-guan/dun-pai-ji-zhi.md
+  - 弓箭机制: wiki/ji-zhi-xiang-guan/gong-jian-ji-zhi.md
+  - 召唤机制: wiki/ji-zhi-xiang-guan/zhao-huan-ji-zhi.md
+  - 属性脚本: wiki/shu-xing-jiao-ben.md
+  - 属性类型: wiki/shu-xing-jiao-ben/shu-xing-lei-xing.md
+  - 脚本教学: wiki/shu-xing-jiao-ben/shou-ba-shou-jiao-ni-xie-shu-xing-jiao-ben.md
+  - RUNTIME 类型: wiki/shu-xing-jiao-ben/shou-ba-shou-jiao-ni-xie-shu-xing-jiao-ben/runtime-lei-xing.md
+  - UPDATE 类型: wiki/shu-xing-jiao-ben/shou-ba-shou-jiao-ni-xie-shu-xing-jiao-ben/update-lei-xing.md
+  - CUSTOM 类型: wiki/shu-xing-jiao-ben/shou-ba-shou-jiao-ni-xie-shu-xing-jiao-ben/update-lei-xing-1.md
+  - KILLER 类型: wiki/shu-xing-jiao-ben/shou-ba-shou-jiao-ni-xie-shu-xing-jiao-ben/runtime-lei-xing-1.md
+  - 延迟触发任务: wiki/shu-xing-jiao-ben/shou-ba-shou-jiao-ni-xie-shu-xing-jiao-ben/attributeapi.runentitytask.md
+  - 常见问题: wiki/shu-xing-jiao-ben/chang-jian-wen-ti.md
+  - Counter 计数器: wiki/kai-fa-wen-dang/api-1.md
+  - Example: wiki/kai-fa-wen-dang/attributecomponent/shou-ba-shou-jiao-ni-xie-shu-xing.md
+  - CustomTriggerComponent: wiki/kai-fa-wen-dang/descriptionlinecondition.md
+  - EmbeddedCondition: wiki/kai-fa-wen-dang/descriptionlinecondition-1.md
+  - 教学: wiki/kai-fa-wen-dang/readcomponent/shou-ba-shou-jiao-ni-xie-xin-de-du-qu-fang-shi.md
+  - 更新记录: wiki/geng-xin-ji-lu.md
 - 配置文件（3.3.3.6）:
   - 配置索引: configuration/index.md
   - kether.yml: configuration/kether.md

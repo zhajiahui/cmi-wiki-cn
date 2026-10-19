@@ -1,0 +1,218 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "1.x/List of Rewards node types",
+    "pageid": 27,
+    "revid": 697,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><table class=\"wikitable\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"1\" style=\"width: 100%; background-color:#F75D59; font-size: 32px; padding: 15px;\"><b>Not Supported!</b>\n</th></tr>\n<tr>\n<td style=\"font-size: 16px;\">This page is about Citizens 1.x, while the current version is Citizens 2.0.2. This page's content may be outdated, and shouldn't be trusted as being correct. See this page's talk page for more information. If you were looking for the 2.0.2 equivalent of this page, try <a href=\"/index.php?title=List_of_Rewards_node_types&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"List of Rewards node types (page does not exist)\">List of Rewards node types</a>. If you feel this message was displayed in error, please contact an administrator.\n</td></tr></tbody></table>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Rewards_node\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Rewards node</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Rewards_Types\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Rewards Types</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Command\"><span class=\"tocnumber\">2.1</span> <span class=\"toctext\">Command</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#NPC\"><span class=\"tocnumber\">2.2</span> <span class=\"toctext\">NPC</span></a></li>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#Rank\"><span class=\"tocnumber\">2.3</span> <span class=\"toctext\">Rank</span></a></li>\n<li class=\"toclevel-2 tocsection-6\"><a href=\"#Permission\"><span class=\"tocnumber\">2.4</span> <span class=\"toctext\">Permission</span></a></li>\n<li class=\"toclevel-2 tocsection-7\"><a href=\"#Quest\"><span class=\"tocnumber\">2.5</span> <span class=\"toctext\">Quest</span></a></li>\n<li class=\"toclevel-2 tocsection-8\"><a href=\"#Item\"><span class=\"tocnumber\">2.6</span> <span class=\"toctext\">Item</span></a></li>\n<li class=\"toclevel-2 tocsection-9\"><a href=\"#Health\"><span class=\"tocnumber\">2.7</span> <span class=\"toctext\">Health</span></a></li>\n<li class=\"toclevel-2 tocsection-10\"><a href=\"#Money\"><span class=\"tocnumber\">2.8</span> <span class=\"toctext\">Money</span></a></li>\n<li class=\"toclevel-2 tocsection-11\"><a href=\"#Teleport\"><span class=\"tocnumber\">2.9</span> <span class=\"toctext\">Teleport</span></a></li>\n</ul>\n</li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading1\"><h1 id=\"Rewards_node\">Rewards node</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/List_of_Rewards_node_types&amp;action=edit&amp;section=1\" title=\"Edit section: Rewards node\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>The rewards node is used in <a href=\"/index.php?title=Quests.yml&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Quests.yml (page does not exist)\">Quests.yml</a> to tell the quester what to reward the player with when conditions are met.  If all the objectives are completed, the rewards: node is triggered.  \n</p><p>For example:\n</p>\n<pre>rewards:\n    '0':\n        type: item    # Rewards an item\n        id: 15        # iron_ore\n        amount: 30\n    '1':\n        type: quest   # Rewards a quest.  This quest will start immediately.\n        quest: \"Part II\"\n</pre>\n<p>You may have multiple rewards, or just one.  Rewards can also be subset into objectives to reward the player as objectives are completed. The format is the same.\n</p>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"Rewards_Types\">Rewards Types</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/List_of_Rewards_node_types&amp;action=edit&amp;section=2\" title=\"Edit section: Rewards Types\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Command\">Command</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/List_of_Rewards_node_types&amp;action=edit&amp;section=3\" title=\"Edit section: Command\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Command reward (command:) - executes a command.\nSpecified by the command: node. Use &lt;player&gt; as a variable that will be replaced with the name of the player who is receiving the reward. Use &lt;world&gt; as a variable that will be replaced with the name of the world the player is currently in. Use server: true to execute the command from the console.\n</p>\n<pre>'0':\n    type: command\n    command: give &lt;player&gt; 1 100\n    server: false\n</pre>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"NPC\">NPC</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/List_of_Rewards_node_types&amp;action=edit&amp;section=4\" title=\"Edit section: NPC\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>NPC reward (npc:) - grants an npc to a player.\nUses a name: node to specify the name of the npc, and a comma-separated list of toggles in the types: node (eg. trader,quester,guard). Will create an NPC owned by the player who completed the quest, with a generated UID.\n</p>\n<pre>'0':\n    type: npc\n    npcid: 1   # optional - gives the ownership of npc specified by this id to the player\n    name: 'Bill'\n    types: 'guard,trader,quester'\n    location:\n        x: 10\n        y: 10\n        z: -50\n        world: 'world'</pre>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Rank\">Rank</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/List_of_Rewards_node_types&amp;action=edit&amp;section=5\" title=\"Edit section: Rank\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Rank reward (rank) - grants a group ('rank') to a player.\nSpecified by the rank: node.\n</p>\n<pre>'0':\n    type: rank\n    rank: 'admin'</pre>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Permission\">Permission</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/List_of_Rewards_node_types&amp;action=edit&amp;section=6\" title=\"Edit section: Permission\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Permission reward (permission) - grants a permission to a player.\nSpecified by the permission: node.\n</p>\n<pre>'0':\n    type: permission\n    permission: 'quests.admin'\n</pre>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Quest\">Quest</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/List_of_Rewards_node_types&amp;action=edit&amp;section=7\" title=\"Edit section: Quest\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Quest reward (quest) - grants a quest to a player. Note that it cannot be taken away from a player.\nSpecified by the quest: node.\n</p>\n<pre>'0':\n    type: quest\n    quest: 'builder'</pre>\n<p><i>Note by aufdemrand: Need to test behavior of using the quest reward in a sub-objective reward. Will report what I find soon.</i>\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Item\">Item</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/List_of_Rewards_node_types&amp;action=edit&amp;section=8\" title=\"Edit section: Item\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Item reward (item) - gives an item to a player.\nLoaded from the item: nodes.\n</p><p><br />\n</p>\n<pre>'0':\n    type: item\n    item:\n        id: 10\n        amount: 50\n        data: 0</pre>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Health\">Health</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/List_of_Rewards_node_types&amp;action=edit&amp;section=9\" title=\"Edit section: Health\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Health reward (health) - gives health to a player.\nLoaded from the amount: node.\n</p>\n<pre>'0':\n    type: health\n    amount: 10\n</pre>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Money\">Money</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/List_of_Rewards_node_types&amp;action=edit&amp;section=10\" title=\"Edit section: Money\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Money reward (money) - gives money to a player.\nLoaded from the money: node.\n</p>\n<pre>'0':\n    type: money\n    money: 100</pre>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Teleport\">Teleport</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=1.x/List_of_Rewards_node_types&amp;action=edit&amp;section=11\" title=\"Edit section: Teleport\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Teleport reward (teleport) - teleports a player to a location.\nLoaded from the location: node.\n</p>\n<pre>'0':\n    type: teleport\n    location:\n        x: 10\n        y: 50\n        z: -10\n        world: 'main'</pre>\n<div class=\"padded\" style=\"font-size: 12px; padding: 5px\">\n<table class=\"wikitable collapsible collapsed\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Usage\" title=\"Category:Usage\">Usage</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Installation\" title=\"Installation\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Frequently_Asked_Questions\" title=\"Frequently Asked Questions\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Editors\" title=\"Editors\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Characters\" title=\"Characters\">Characters</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/API\" title=\"API\">API</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32;\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Configuration\" title=\"Category:Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Configuration\" title=\"Configuration\">Configuration</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Data_Storage\" title=\"Data Storage\">Data Storage</a>\n</td></tr></tbody></table>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145803\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.047 seconds\nReal time usage: 0.079 seconds\nPreprocessor visited node count: 104/1000000\nRevision size: 3015/2097152 bytes\nPost‐expand include size: 2459/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 4/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1039/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   22.278      1 -total\n 58.50%   13.033      1 Template:NoSupport\n 38.98%    8.684      2 Template:Version2F\n 37.85%    8.432      1 Template:NavBox\n 23.96%    5.337      1 Template:Version2\n 15.76%    3.512     10 Template:·\n-->\n\n<!-- Render ID 7bbe5de3-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "API"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Configuration"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Data Storage"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Editors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Text Syntax"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      },
+      {
+        "ns": 0,
+        "*": "List of Rewards node types"
+      },
+      {
+        "ns": 0,
+        "*": "Quests.yml"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Configuration"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Usage"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Rewards node",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "1.x/List_of_Rewards_node_types",
+        "byteoffset": 14,
+        "anchor": "Rewards_node",
+        "linkAnchor": "Rewards_node"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Rewards Types",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "1.x/List_of_Rewards_node_types",
+        "byteoffset": 632,
+        "anchor": "Rewards_Types",
+        "linkAnchor": "Rewards_Types"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Command",
+        "number": "2.1",
+        "index": "3",
+        "fromtitle": "1.x/List_of_Rewards_node_types",
+        "byteoffset": 648,
+        "anchor": "Command",
+        "linkAnchor": "Command"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "NPC",
+        "number": "2.2",
+        "index": "4",
+        "fromtitle": "1.x/List_of_Rewards_node_types",
+        "byteoffset": 1097,
+        "anchor": "NPC",
+        "linkAnchor": "NPC"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Rank",
+        "number": "2.3",
+        "index": "5",
+        "fromtitle": "1.x/List_of_Rewards_node_types",
+        "byteoffset": 1628,
+        "anchor": "Rank",
+        "linkAnchor": "Rank"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Permission",
+        "number": "2.4",
+        "index": "6",
+        "fromtitle": "1.x/List_of_Rewards_node_types",
+        "byteoffset": 1777,
+        "anchor": "Permission",
+        "linkAnchor": "Permission"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Quest",
+        "number": "2.5",
+        "index": "7",
+        "fromtitle": "1.x/List_of_Rewards_node_types",
+        "byteoffset": 1966,
+        "anchor": "Quest",
+        "linkAnchor": "Quest"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Item",
+        "number": "2.6",
+        "index": "8",
+        "fromtitle": "1.x/List_of_Rewards_node_types",
+        "byteoffset": 2292,
+        "anchor": "Item",
+        "linkAnchor": "Item"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Health",
+        "number": "2.7",
+        "index": "9",
+        "fromtitle": "1.x/List_of_Rewards_node_types",
+        "byteoffset": 2473,
+        "anchor": "Health",
+        "linkAnchor": "Health"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Money",
+        "number": "2.8",
+        "index": "10",
+        "fromtitle": "1.x/List_of_Rewards_node_types",
+        "byteoffset": 2619,
+        "anchor": "Money",
+        "linkAnchor": "Money"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Teleport",
+        "number": "2.9",
+        "index": "11",
+        "fromtitle": "1.x/List_of_Rewards_node_types",
+        "byteoffset": 2757,
+        "anchor": "Teleport",
+        "linkAnchor": "Teleport"
+      }
+    ],
+    "showtoc": ""
+  }
+}

@@ -1,0 +1,53 @@
+<div class="infobox" style="width: 295; font-size: 12px; background: #FFFFFF; float: right; border: 1px solid #CCCCCC; margin-left:2.5em; padding: 9px;">
+{{Box|
+BORDER = #ccc|
+BACKGROUND = #aaa|
+WIDTH = 275|
+ALIGN = RIGHT|
+ICON = |
+HEADING = ''' UltraTrader ''' |
+CONTENT = 
+<div class="padded" style="padding: 19px; font-family:camingodos-web; font-size:110%;">
+
+'''UltraTrader''' is an extension that uses Citizens 2 to create interactive shops.
+
+'''Current version:''' 0.3 Beta
+
+'''Creator and lead developer:''' tenowg
+
+'''Assistant developers:''' None Yet
+
+'''Source:''' [https://github.com/DemgelOpenSource/UltraTrader/ Github]
+
+'''Documentation:''' [http://ultratrader.thedemgel.com WebSite]
+
+'''Latest developmental build:''' [https://tenowg.ci.cloudbees.com/job/UltraTrader/ 0.3 Beta Builds]
+
+'''Citizens build:''' [http://ci.citizensnpcs.co/job/Citizens2/ 2.0.10 ]
+
+'''Support tickets:''' [http://github.com/DemgelOpenSource/UltraTrader/issues/ Tickets on Github]
+
+'''IRC:''' [http://webchat.esper.net/?nick=random_ultratrader_...&channels=ultratrader&prompt=1 #ultratrader on esper.net]
+
+'''Donate:''' Note: Add a link for donations
+<br>
+}} 
+</div>
+</div>
+
+= UltraTrader =
+UltraTrader is a replacement for the Loved but Lost CitiTrader plugin, written completely from scratch with 100% new code, easier to read, easier to expand on, and just plain better than before.
+
+== BETA Ultratrader ==
+Ultratrader is still currently in Beta, and I feel is not fully ready for production servers as some (not many left) features are not working or implemented yet. There are still bugs to find. Should you choose to test UltraTrader for me, please let me know if you find any Bugs (I have already killed 4 duplication bugs, these are very high priority for me, mostly within 30 minutes of me getting the report)
+
+It is probably best to use the Development link download instead of using the Bukkit link, as Bukkit does seem to take some time to approve of Uploads/Downloads.
+
+== Documentation ==
+Most documentation can be found on the website at: http://ultratrader.thedemgel.com
+
+== Key Feature ==
+* Item Shops - Shops can sell items to link to them from anywhere (optional) (almost working)
+* NPC shops
+* Multiple locations for each shop - Shops are not stored with NPCs any longer, so multiple NPCs/Items can link to the same shop.
+* ALMOST NO COMMANDS, other than setting up an NPC and/or creating a shop from scratch, there are no commands, only a menu system that is used to gather input with guided text.

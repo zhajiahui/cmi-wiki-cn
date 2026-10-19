@@ -1,0 +1,158 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Denizen/0.7/Interact Scripts",
+    "pageid": 193,
+    "revid": 5238,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://one.denizenscript.com/denizen/cmds/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://one.denizenscript.com/denizen/cmds/denizen/vids\">Tutorial Videos</a> on youtube or the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br />\n<s>\n</s></p><s><div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Interact_Scripts\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Interact Scripts</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-2\"><a href=\"#General_layout_of_an_Interact_Script\"><span class=\"tocnumber\">1.1</span> <span class=\"toctext\">General layout of an Interact Script</span></a></li>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#A_few_small_scripts\"><span class=\"tocnumber\">1.2</span> <span class=\"toctext\">A few small scripts</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Name_Node\"><span class=\"tocnumber\">1.3</span> <span class=\"toctext\">Name Node</span></a></li>\n<li class=\"toclevel-2 tocsection-5\"><a href=\"#Type_Node\"><span class=\"tocnumber\">1.4</span> <span class=\"toctext\">Type Node</span></a></li>\n<li class=\"toclevel-2 tocsection-6\"><a href=\"#Requirements_Node\"><span class=\"tocnumber\">1.5</span> <span class=\"toctext\">Requirements Node</span></a>\n<ul>\n<li class=\"toclevel-3 tocsection-7\"><a href=\"#Requirements_Mode\"><span class=\"tocnumber\">1.5.1</span> <span class=\"toctext\">Requirements Mode</span></a></li>\n<li class=\"toclevel-3 tocsection-8\"><a href=\"#Requirements\"><span class=\"tocnumber\">1.5.2</span> <span class=\"toctext\">Requirements</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-2 tocsection-9\"><a href=\"#Steps_Node\"><span class=\"tocnumber\">1.6</span> <span class=\"toctext\">Steps Node</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-10\"><a href=\"#Assigning\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Assigning</span></a></li>\n</ul>\n</div>\n</s><s><div class=\"mw-heading mw-heading2\"><h2 id=\"Interact_Scripts\">Interact Scripts</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Interact_Scripts&amp;action=edit&amp;section=1\" title=\"Edit section: Interact Scripts\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><div style=\"margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;\">\n<p>Scripts are defined in the plugins/Denizen/scripts/ folder. Any .yml file in that directory will be loaded into Denizen. For example purposes on this website, reference to script.yml is made, but again, jimbobjoe.yml or 'skeeter the cat.yml' would work just the same..\n</p>\n</div></s><s><p><br />\n</p></s><s><div class=\"mw-heading mw-heading4\"><h4 id=\"General_layout_of_an_Interact_Script\">General layout of an Interact Script</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Interact_Scripts&amp;action=edit&amp;section=2\" title=\"Edit section: General layout of an Interact Script\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><div style=\"margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;\">\n<p>This small 'outline' below shows the general layout of an Interact Script. Remember: SPACING is INCREDIBLY important with YML. If you are receiving a <code>SnakeYML</code> error in your console when working with any YML file, 99% of the time it is because of bad spacing or a missing ':' colon. YAML tutorials can be intimidating, but <a rel=\"nofollow\" class=\"external text\" href=\"http://ess.khhq.net/wiki/YAML_Tutorial\">this small tutorial</a> on the Essentials wiki is pretty useful for basic YAML, which is the extent of which Denizens uses.\n</p>\n<pre>'Name of script':   # Name Node\n  Type: Interact    # Type Node\n  Requirements:     # Requirements Node\n    Mode: ...\n    List: \n    - ...\n    - ...\n  Steps:            # Steps Node\n   1:               # Step Node\n    Some Trigger:   # Trigger Node\n      Trigger: ...\n      Script:     # Script Node\n        - ...\n        - ...\n     Another Trigger:\n      Script:\n        - ...\n        - ...\n</pre>\n<p>For information on what goes in Requirements and Steps, keep reading. What is show above is just a an outline of the correct spacing, not a valid script! Let's take a look at a few small scripts, below.\n</p>\n</div></s><s><div class=\"mw-heading mw-heading4\"><h4 id=\"A_few_small_scripts\">A few small scripts</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Interact_Scripts&amp;action=edit&amp;section=3\" title=\"Edit section: A few small scripts\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><p>...just to get a small look of some basic ways to use scripts. The rest of this document will go into detail about the specifics of each part. Some of the functionality described may require additional reading.\n</p><p>This scripts below is a neat little way to leave a hint. Upon a Player coming into proximity, this script will trigger the NPC looking at a target while holding a small conversation with the player.\n</p></s><s><pre>\"A Hint in the Sky\":\n  Type: Interact   \n  Requirements:\n    Mode: None\n  Steps:\n    1:\n      Proximity Trigger:\n        Script:\n        - ^COOLDOWN 15\n        - LOOK CLOSE\n        - ^CHAT \"Look up there! What could that possibly be used for?\"\n        - LOOK BOOKMARK:upthere DURATION:10\n        - WAIT 1\n        - CHAT \"If only I could figure out how to make it, I can't find any stairs!\"\n</pre></s><s><p><br />\nBelow is a script for a nice fellow who will help an adventurer out in the night-time. Keep in mind that Interact Scripts only define one set of rules for a Denizen NPC... player-interaction. Imagine this next script combined with some activities that make the Denizen NPC scope out and wander an area in some woods.\n</p></s><s><pre>\"Night-time Helper\":\n  Type: Interact\n  Requirements:\n    Mode: All\n    List:\n    - TIME NIGHT\n  Steps:\n    1:\n      Click Trigger:\n        Script:\n        - ^ZAP DURATION:60\n        - ENGAGE DURATION: 5\n        - LOOK CLOSE DURATION:5\n        - CHAT \"It's dark out here, man!\"\n        - CHAT \"You really gotta watch out for those Zombies... they're all over the place!\"\n    2:\n      Click Trigger:\n        Script:\n        - ^COOLDOWN 3600\n        - LOOK CLOSE DURATION:5\n        - CHAT \"You again, eh? Hey man.. you need some torches?\"\n        - WAIT 1\n        - GIVE TORCH QTY:12\n</pre></s><s><p><br />\nScripts can also start a story-line of adventures, all activated by scripts working together, thanks to the FLAG, FAIL, and FINISH commands. This small script below could be the start of a Quest, with two different outcomes, if utilized properly.\n</p></s><s><div class=\"mw-heading mw-heading4\"><h4 id=\"Name_Node\">Name Node</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Interact_Scripts&amp;action=edit&amp;section=4\" title=\"Edit section: Name Node\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><div style=\"margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;\">\n<p>This node is pretty self-explanatory, but here are some things to keep in mind.\n</p>\n<ul><li>Names, just like nodes are case-sensitive! <code>'This script name'</code> is different than <code>'THIS SCRIPT NAME'</code>.</li>\n<li>Names that contain spaces should have single or double quotes around it. ie: <code>\"This script\":</code> or <code>'This script':</code> is acceptable.</li>\n<li>If the name includes a single quote in it, you must use double quotes around it, or 'escape' the quote with another quote. ie: <code>\"John's Script\":</code> or <code>'John''s Script':</code></li></ul>\n</div></s><s><p><br />\n</p></s><s><div class=\"mw-heading mw-heading4\"><h4 id=\"Type_Node\">Type Node</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Interact_Scripts&amp;action=edit&amp;section=5\" title=\"Edit section: Type Node\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><div style=\"margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;\">\n<p>Let's Denizen and you to easily know the type of script. For interact scripts, as explained in this section, use <code>TYPE: INTERACT</code>. For reference, there are also TASK scripts and ACTIVITY scripts, which are covered in their appropriate sections.\n</p>\n</div></s><s><p><br />\n</p></s><s><div class=\"mw-heading mw-heading4\"><h4 id=\"Requirements_Node\">Requirements Node</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Interact_Scripts&amp;action=edit&amp;section=6\" title=\"Edit section: Requirements Node\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><div style=\"margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;\">\n<p>This node sets the rules for the player to qualify for the script. There are a couple different options that you should know when using requirements. For example:\n</p><p><code>\n</code></p><code>\n<pre> Requirements:\n   Mode: All\n   List:\n   - TIME Night\n   - MONEY 1000000\n   - STORMY\n</pre>\n</code><p><code></code>\n</p><p>This would be a difficult script to obtain, for sure. To trigger, the time must be night-time, the player would need one million units of currency, and the weather must be storming, but it shows the flexibility of requirements. First is the 'Mode'. Currently there are three different types. Second is the requirement type, with arguments if applicable.\n\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading5\"><h5 id=\"Requirements_Mode\">Requirements Mode</h5><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Interact_Scripts&amp;action=edit&amp;section=7\" title=\"Edit section: Requirements Mode\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div style=\"margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;\">\n<p><code>[] indicates required field.</code>\n</p>\n<div style=\"padding:3px;\">\n<table cellpadding=\"0\" style=\"border-style:dashed; width:95%; border-width:1px; padding:6px;\">\n\n<tbody><tr>\n<td width=\"17%\"><div style=\"border-width: 1px; margin-top:4px; vertical-align:center; border-style: dotted; margin-bottom:5px; background-color:white; font-weight:400; text-align:center; font-family:droid-sans-mono; font-size:100%;\">\n<p>ALL\n</p>\n </div>\n</td>\n<td><div style=\"border-width: 0px; vertical-align:center;margin-top:4px; border-style: dotted; margin-bottom:5px; text-align:left; margin-left:10px; font-weight:500; font-family:droid-sans-mono; font-size:80%;\">  &#160;&#160;Requires all requirements listed to be met.\n </div>\n</td></tr></tbody></table>\n</div>\n<div style=\"padding:3px;\">\n<table cellpadding=\"0\" style=\"border-style:dashed; width:95%; border-width:1px; padding:6px;\">\n\n<tbody><tr>\n<td width=\"17%\"><div style=\"border-width: 1px; margin-top:4px; vertical-align:center; border-style: dotted; margin-bottom:5px; background-color:white; font-weight:400; text-align:center; font-family:droid-sans-mono; font-size:100%;\">\n<p>ANY #\n</p>\n </div>\n</td>\n<td><div style=\"border-width: 0px; vertical-align:center;margin-top:4px; border-style: dotted; margin-bottom:5px; text-align:left; margin-left:10px; font-weight:500; font-family:droid-sans-mono; font-size:80%;\">  &#160;&#160;Requires the specified number of requirements to be met out of the total of requirements.\n </div>\n</td></tr></tbody></table>\n</div>\n<div style=\"padding:3px;\">\n<table cellpadding=\"0\" style=\"border-style:dashed; width:95%; border-width:1px; padding:6px;\">\n\n<tbody><tr>\n<td width=\"17%\"><div style=\"border-width: 1px; margin-top:4px; vertical-align:center; border-style: dotted; margin-bottom:5px; background-color:white; font-weight:400; text-align:center; font-family:droid-sans-mono; font-size:100%;\">\n<p>NONE\n</p>\n </div>\n</td>\n<td><div style=\"border-width: 0px; vertical-align:center;margin-top:4px; border-style: dotted; margin-bottom:5px; text-align:left; margin-left:10px; font-weight:500; font-family:droid-sans-mono; font-size:80%;\">  &#160;&#160;No requirements need to be met. There is also no need to have a <tt>LIST</tt> node if using <tt>NONE</tt>.\n </div>\n</td></tr></tbody></table>\n</div>\n</div>\n<div class=\"mw-heading mw-heading5\"><h5 id=\"Requirements\">Requirements</h5><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Interact_Scripts&amp;action=edit&amp;section=8\" title=\"Edit section: Requirements\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div style=\"margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;\">\n<p>Denizen has a large assortment of Requirements at your disposal. For a complete list, and information on those requirements,\nsee: <a href=\"/Denizen/0.7/Interact_Scripts/Interact_Requirements\" title=\"Denizen/0.7/Interact Scripts/Interact Requirements\">Denizen/0.7/Interact Scripts/Interact Requirements</a>\n</p><p>Remember, requirements are also easily extensible by plugin programmers, or maybe even you!<br />\nSee: <a href=\"/index.php?title=Denizen/0.7/Interact_Scripts/Custom_Interact_Requirements&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Denizen/0.7/Interact Scripts/Custom Interact Requirements (page does not exist)\">Denizen/0.7/Interact Scripts/Custom Interact Requirements</a>\n</p>\n</div>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"Steps_Node\">Steps Node</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Interact_Scripts&amp;action=edit&amp;section=9\" title=\"Edit section: Steps Node\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div style=\"margin-right:2.0em; padding:10px; font-family:museo-sans; font-size:110%;\">\n<p>Each script can have multiple steps, each with multiple triggers. A player can only ever be on 1 step for a script. When a script is selected to run, a query is made to the Denizen saves to see if the Player has completed any steps. If no entry is found, the player starts on Step 1. \n</p><p>Here's an example of s script making good use of steps. Note the ZAP command is what moves a player from one step to the next, it is NOT automatic!\n</p>\n<pre>'Welcome to Harbortown':\n  Type: Interact\n  Requirements:\n    Mode: NONE\n  Steps:\n    '1':\n      Click Trigger:\n        Script:\n        - CHAT \"What's your name, stranger?\"\n      Chat Trigger:\n        '1':\n          Trigger: My name is /&lt;PLAYER&gt;/.\n          Script:\n          - CHAT \"Ah ha, your name sounds familiar!\"\n          - CHAT \"Are you from around this area?\"\n          - ZAP\n    '2':\n      Click Trigger:\n        Script:\n        - HINT\n      Chat Trigger:\n        '1':\n          Trigger: /Yes/, I grew up in Harbortown!\n          Script:\n          - CHAT \"I thought so, welcome back! \n            Have you heard about Tom the Taylor? \n            Isn't that just horrible?\"\n          - ZAP 3 \n        '2':\n          Trigger: /No/, you must be mistaken. \n          Script:\n          - CHAT \"Oh, sorry about that.\" \n          - CHAT \"Hey, if you're looking for some work, \n            Bill the Baker is understaffed! \n            This is the bakery's busy season.\"\n          - ZAP 4\n    '3':\n      Click Trigger:\n        Script:\n        - CHAT \"I wonder if Tom the Taylor is doing any better.\"\n        - NARRATE \"Perhaps you should check on Tom the Taylor.\"\n    '4':\n      Click Trigger:\n        Script:\n        - CHAT \"Oh, nice to see you again &lt;PLAYER&gt;!\"\n        - CHAT \"Have you stopped by the bakery?\"\n</pre>\n</div>\n<ul><li>For a list of the available Triggers see <a href=\"/Denizen/0.7/Interact_Scripts/Triggers\" title=\"Denizen/0.7/Interact Scripts/Triggers\">Triggers</a></li>\n<li>For a list of the available Commands see <a href=\"/Denizen/0.7/Interact_Scripts/Commands\" title=\"Denizen/0.7/Interact Scripts/Commands\">Commands</a></li></ul>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Assigning\">Assigning</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/0.7/Interact_Scripts&amp;action=edit&amp;section=10\" title=\"Edit section: Assigning\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>See <a href=\"/Denizen/0.7/Assignments#Interact_Assignment\" title=\"Denizen/0.7/Assignments\">Denizen/0.7/Assignments#Interact_Assignment</a>\n</p><p><br />\n</p>\n</div></s>\n<!-- \nNewPP limit report\nCached time: 20261019145827\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.037 seconds\nReal time usage: 0.048 seconds\nPreprocessor visited node count: 89/1000000\nRevision size: 9473/2097152 bytes\nPost‐expand include size: 2056/2097152 bytes\nTemplate argument size: 313/2097152 bytes\nHighest expansion depth: 3/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 2740/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    4.104      1 -total\n 93.17%    3.824      3 Template:Denizen_Requirement_Type_Color\n-->\n\n<!-- Render ID 8a0c79e6-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen/0.7/Assignments"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen/0.7/Interact Scripts/Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen/0.7/Interact Scripts/Interact Requirements"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen/0.7/Interact Scripts/Triggers"
+      },
+      {
+        "ns": 0,
+        "*": "Denizen/0.7/Interact Scripts/Custom Interact Requirements"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Interact Scripts",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Denizen/0.7/Interact_Scripts",
+        "byteoffset": 772,
+        "anchor": "Interact_Scripts",
+        "linkAnchor": "Interact_Scripts"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "General layout of an Interact Script",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "Denizen/0.7/Interact_Scripts",
+        "byteoffset": 1162,
+        "anchor": "General_layout_of_an_Interact_Script",
+        "linkAnchor": "General_layout_of_an_Interact_Script"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "A few small scripts",
+        "number": "1.2",
+        "index": "3",
+        "fromtitle": "Denizen/0.7/Interact_Scripts",
+        "byteoffset": 2411,
+        "anchor": "A_few_small_scripts",
+        "linkAnchor": "A_few_small_scripts"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "Name Node",
+        "number": "1.3",
+        "index": "4",
+        "fromtitle": "Denizen/0.7/Interact_Scripts",
+        "byteoffset": 4421,
+        "anchor": "Name_Node",
+        "linkAnchor": "Name_Node"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "Type Node",
+        "number": "1.4",
+        "index": "5",
+        "fromtitle": "Denizen/0.7/Interact_Scripts",
+        "byteoffset": 5109,
+        "anchor": "Type_Node",
+        "linkAnchor": "Type_Node"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "Requirements Node",
+        "number": "1.5",
+        "index": "6",
+        "fromtitle": "Denizen/0.7/Interact_Scripts",
+        "byteoffset": 5482,
+        "anchor": "Requirements_Node",
+        "linkAnchor": "Requirements_Node"
+      },
+      {
+        "toclevel": 3,
+        "level": "5",
+        "line": "Requirements Mode",
+        "number": "1.5.1",
+        "index": "7",
+        "fromtitle": "Denizen/0.7/Interact_Scripts",
+        "byteoffset": 6232,
+        "anchor": "Requirements_Mode",
+        "linkAnchor": "Requirements_Mode"
+      },
+      {
+        "toclevel": 3,
+        "level": "5",
+        "line": "Requirements",
+        "number": "1.5.2",
+        "index": "8",
+        "fromtitle": "Denizen/0.7/Interact_Scripts",
+        "byteoffset": 6831,
+        "anchor": "Requirements",
+        "linkAnchor": "Requirements"
+      },
+      {
+        "toclevel": 2,
+        "level": "4",
+        "line": "Steps Node",
+        "number": "1.6",
+        "index": "9",
+        "fromtitle": "Denizen/0.7/Interact_Scripts",
+        "byteoffset": 7301,
+        "anchor": "Steps_Node",
+        "linkAnchor": "Steps_Node"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Assigning",
+        "number": "2",
+        "index": "10",
+        "fromtitle": "Denizen/0.7/Interact_Scripts",
+        "byteoffset": 9368,
+        "anchor": "Assigning",
+        "linkAnchor": "Assigning"
+      }
+    ],
+    "showtoc": ""
+  }
+}

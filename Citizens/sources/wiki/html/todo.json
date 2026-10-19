@@ -1,0 +1,44 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "TODO",
+    "pageid": 249,
+    "revid": 3800,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><div class=\"mw-heading mw-heading2\"><h2 id=\"fullwall's_TODO_(please_add_under_your_name_if_you_modify_this)\"><span id=\"fullwall.27s_TODO_.28please_add_under_your_name_if_you_modify_this.29\"></span>fullwall's TODO (please add under your name if you modify this)</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=TODO&amp;action=edit&amp;section=1\" title=\"Edit section: fullwall&#039;s TODO (please add under your name if you modify this)\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ul><li>Make rename update in save file</li>\n<li>In-place conversion db&lt;-&gt;yml&lt;-&gt;nbt</li>\n<li>waypoints move location somehow ('draggable waypoints')</li>\n<li>Giants don't attack back</li></ul>\n<p><i>jrbudda</i>\n</p>\n<ul><li><span style=\"background: white; color: red\">Fix NPCs always looking south on load.</span> - something to do with chunks unloading. When the chunk loads, the NPC's yaw gets messed up? Although the chunk never seems to unload...</li>\n<li>/npc copy creates yaml references on sentry lists, makes them 'linked' in memory. i.e. Copy sentry A to make B, change sentry A's targets and B's changes as well.</li>\n<li>NPCs still wont pathfind if you teleport them across worlds. Respawning them across worlds works (Bukkit issue, still waiting on a fix/response)</li>\n<li>Fix /reload duplicating NPCs</li>\n<li>Giants don't move.</li>\n<li>Add call to API to get the selected NPC for a CommandSender. (have to build against citizens.jar and get the NPCSelector now)</li>\n<li>Fix stuck-teleporting instantly when using waypoints?</li>\n<li>Make an Editor for wander</li>\n<li>Work out kinks in SQL storage. Read: redo SQL storage because it's incredibly hacky</li>\n<li>Documentation.</li></ul>\n<p><i>davidcernat</i>\n</p>\n<ul><li>Please make NPCs position themselves relative to other NPCs so that they don't overlap their location or walk through them.</li>\n<li>When you attack an NPC with a bow and move quickly to the side, have the NPC path to where you are now instead of where you used to be when you shot it.</li></ul>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"User_suggestions\">User suggestions</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=TODO&amp;action=edit&amp;section=2\" title=\"Edit section: User suggestions\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<!-- \nNewPP limit report\nCached time: 20261019145913\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.009 seconds\nReal time usage: 0.011 seconds\nPreprocessor visited node count: 15/1000000\nRevision size: 1437/2097152 bytes\nPost‐expand include size: 89/2097152 bytes\nTemplate argument size: 46/2097152 bytes\nHighest expansion depth: 3/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    3.786      1 Template:Color\n100.00%    3.786      1 -total\n-->\n\n<!-- Render ID a57784e3-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "fullwall's TODO (please add under your name if you modify this)",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "TODO",
+        "byteoffset": 0,
+        "anchor": "fullwall's_TODO_(please_add_under_your_name_if_you_modify_this)",
+        "linkAnchor": "fullwall's_TODO_(please_add_under_your_name_if_you_modify_this)"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "User suggestions",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "TODO",
+        "byteoffset": 1415,
+        "anchor": "User_suggestions",
+        "linkAnchor": "User_suggestions"
+      }
+    ]
+  }
+}

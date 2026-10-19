@@ -1,0 +1,33 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Denizen/Script Samples",
+    "pageid": 344,
+    "revid": 5226,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://one.denizenscript.com/denizen/cmds/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://one.denizenscript.com/denizen/cmds/denizen/vids\">Tutorial Videos</a> on youtube or the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br /><br /><br />\n</p><p><br />\nSamples will go here, maybe!\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Checkpoint_NPC\">Checkpoint NPC</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Script_Samples&amp;action=edit&amp;section=1\" title=\"Edit section: Checkpoint NPC\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><s>View script with dScript highlighting: <a rel=\"nofollow\" class=\"external free\" href=\"http://mcmonkey.org/paste/91\">http://mcmonkey.org/paste/91</a>\n</s></p><s><pre># Simply spawn an NPC and do\n# /npc assign --set respawnmaster\n# and now you have a checkpoint NPC :D\n\n# NPC Assignment script\nrespawnmaster:\n    # Obligatory type\n    type: assignment\n    # Actions = script run when NPC-related events occur\n    actions:\n        # This one is when the NPC is assigned\n        on assignment:\n        # Enable the trigger 'Proximity' with a radius of 10 blocks\n        - trigger name:proximity state:true radius:10\n    # interact script list\n    interact scripts:\n    # The interact below\n    - 10 respawnmaster_interact\n\n# The interact script\nrespawnmaster_interact:\n    # Obligatory type\n    type: interact\n    # List the steps below\n    steps:\n        # First (Default) step\n        1:\n            # Triggers that fire when a player moves around near an NPC\n            proximity trigger:\n                # Specifically, when a player enters the radius of 10 blocks mentioned above\n                entry:\n                    # Run this script...\n                    script:\n                    # If the player's last set checkpoint was set by this NPC,\n                    # cancel the current script queue (Clear it) (Meaning, the the flag/narrate won't happen)\n                    - if &lt;player.flag[respawner]&gt; == &lt;npc.id&gt; queue clear\n                    # Add a flag on the player, named respawnpoint, set to the player's current location at the time he entered the radius\n                    - flag player respawnpoint:&lt;player.location&gt;\n                    # Add a flag on the player, named respawner, set to the ID of the NPC that set this checkpoint.\n                    - flag player respawner:&lt;npc.id&gt;\n                    # Tell the player that he has reached the checkpoint, in green\n                    - narrate \"&lt;&amp;2&gt;You reached a checkpoint!\"\n\n# World script to handle respawning\nrespawnhandler:\n    # Obligatory type\n    type: world\n    # List of world events (events not related to an NPC) that we want to run scripts for\n    events:\n        # The event that fires when a player dies and respawns\n        on player respawns:\n        # If the player doesn't have a respawn point, clear the scriptqueue, same as above, preventing the determine\n        - if &lt;player.flag[respawnpoint]&gt; == null queue clear\n        # Run the task script 'respawnnomercy' with a delay of one second\n        - run respawnnomercy delay:2s\n        # Tell the event that we want to change the outcome to the player's flagged respawn point...\n        # in this event, that changes where the player respawns\n        # Thus, the player respawns at the checkpoint set in the prox trigger above\n        - determine &lt;player.flag[respawnpoint]&gt;\n\n# A task script to prevent errors on Multiverse/whatever servers\nrespawnnomercy:\n    # Obligatory type\n    type: task\n    # Script below is the only script in a task\n    script:\n    # Teleport the player to the respawn point, in case the determine above didn't do it\n    - teleport &lt;player&gt; &lt;player.flag[respawnpoint]&gt;\n\n# Remember, when whatever quest is completed, to run this command:\n# - flag player respawnpoint:!\n# To remove the respawnpoint and allow them to respawn normally\n</pre></s>\n<!-- \nNewPP limit report\nCached time: 20261019145842\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.017 seconds\nReal time usage: 0.031 seconds\nPreprocessor visited node count: 6/1000000\nRevision size: 4064/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 3210/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 92fd4b64-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Checkpoint NPC",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Denizen/Script_Samples",
+        "byteoffset": 812,
+        "anchor": "Checkpoint_NPC",
+        "linkAnchor": "Checkpoint_NPC"
+      }
+    ]
+  }
+}

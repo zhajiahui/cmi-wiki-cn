@@ -1,0 +1,31 @@
+
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [https://meta.denizenscript.com/ Meta Documentation].
+
+If you want a full tutorial to help get you set up, check out the [https://guide.denizenscript.com/ Beginner's Guide] text website.
+
+If you need quick help, visit our [https://discord.gg/Q6pZGSR Discord group].
+
+<br><br><br>
+
+<span style="font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+Denizen supports a variety of sub-plugins and links to other plugins
+--------------------------------------------------------------------
+
+Depenizen: https://github.com/DenizenScript/Depenizen - adds support for a variety of external plugins
+
+dIRCBot: https://github.com/DenizenScript/dIRCBot - adds a working IRCBot for Denizen scripts to control
+
+dDiscordBot: https://github.com/DenizenScript/dDiscordBot - adds a working Discord bot for scripts to control
+
+Webizen: https://github.com/DenizenScript/Webizen - adds the ability to host a website from your minecraft server

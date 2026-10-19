@@ -1,0 +1,272 @@
+{{NoSupport}}
+Read below for detailed command documentation. For more info on per-type commands and permissions, see its corresponding page.
+
+'''[]''' - Mandatory
+<br>'''()''' - Optional
+
+'''Command''' - command's syntax
+<br>'''Args Description''' - description of the command's arguments
+<br>'''Require Selected''' - whether the command requires an NPC to be selected
+<br>'''Require Ownership''' - whether the commands requires you to be the owner of the NPC
+<br>'''Permission''' - command's permission node
+<br>'''Description''' - short description of the command
+
+== Admin Commands ==
+Commands used for administration of the plugin itself, along with debug commands.
+
+{| class="wikitable collapsible collapsed" style="text-align: center; width: 100%"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="3" | '''Admin Commands'''
+|-
+! style="width: 250px;" | Command
+! style="width: 170px;" | Permission
+! Description
+|-
+| /citizens
+| citizens.admin.info
+| View general Citizens information
+|-
+| /citizens debug
+| citizens.admin.debug
+| Toggle debug mode, if debug is on, debug messages will print to the console
+|-
+| /citizens reload
+| citizens.admin.reload
+| Reload Citizens configuration files
+|-
+| /citizens save
+| citizens.admin.save
+| Save Citizens files
+|-
+| /citizens clean
+| citizens.admin.clean
+| Removes all "ghost" entities in your world
+|}
+
+== General Commands ==
+General commands used for all NPCs.
+
+{| class="wikitable collapsible collapsed" style="text-align: center; width: 100%"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="6" | '''General Commands'''
+|-
+! style="width: 250px;" | Command
+! style="width: 200px;" | Args Description
+! style="width: 150px;" | Require Selected
+! style="width: 150px;" | Require Ownership
+! style="width: 170px;" | Permission
+! Description
+|-
+| /citizens help (page)
+| ''page'' - page to view
+| false
+| false
+| citizens.basic.use.help
+| View the help page for Citizens
+|-
+| /npc help (page)
+| ''page'' - page to view
+| false
+| false
+| citizens.basic.use.help
+| View the help page for Citizens
+|-
+| /npc
+| ''None''
+| true
+| false
+| citizens.basic.use.info
+| View information on the selected NPC
+|-
+| /npc create [name] (text)
+| ''name'' - name of NPC <br> ''text'' - text that an NPC says when right-clicked with the talk-item
+| false
+| false
+| citizens.basic.create
+| Create an NPC
+|-
+| /npc move
+| ''None''
+| true
+| true
+| citizens.basic.modify.move
+| Move an NPC to your location
+|-
+| /npc moveTo [x y z] (world pitch yaw)
+| ''x y z'' - coordinates to teleport NPC to <br> ''world'' - world to teleport an NPC to <br>''pitch'' - orientation of body <br>''yaw'' - orientation of head
+| true
+| true
+| citizens.basic.modify.moveto
+| Move an NPC to the specified location
+|-
+| /npc copy
+| ''None''
+| true
+| true
+| citizens.basic.modify.copy
+| Copy an NPC to your location (you must also meet the NPC count guidelines, see ''citizens.npccount'' permissions in the Other Permissions section below)
+|-
+| /npc remove (all)
+| ''all'' - Removes all NPCs
+| true ''(only for /npc remove)''
+| true ''(only for /npc remove)''
+| citizens.basic.modify.remove or citizens.basic.modify.remove.all for ''/npc remove all''
+| Remove an NPC or all NPCs
+|-
+| /npc rename
+| ''None''
+| true
+| true
+| citizens.basic.modify.rename
+| Rename an NPC
+|-
+| /npc color &[code]
+| ''code'' - Color code to change the name to
+| true
+| true
+| citizens.basic.modify.color
+| Color an NPC's nameplate
+|-
+| /npc set [text]
+| ''text'' - Text to give to an NPC, split lines with <br> tag
+| true
+| true
+| citizens.basic.modify.settext
+| Set an NPC's text
+|-
+| /npc add [text]
+| ''text'' - Text to add to an NPC, split lines with <br> tag
+| true
+| true
+| citizens.basic.modify.addtext
+| Add to an NPC's text
+|-
+| /npc reset
+| ''None''
+| true
+| true
+| citizens.basic.modify.resettext
+| Remove an NPC's text
+|-
+| /npc equip
+| ''None''
+| true
+| true
+| citizens.basic.modify.equip
+| Enter equipment-edit mode
+|-
+| /npc tp
+| ''None''
+| true
+| true
+| citizens.basic.use.teleport
+| Teleport to an NPC
+|-
+| /npc talkclose
+| ''None''
+| true
+| true
+| citizens.basic.modify.talkclose
+| Toggle whether an NPC will talk when a player comes near
+|-
+| /npc lookat
+| ''None''
+| true
+| true
+| citizens.basic.modify.lookat
+| Toggle whether an NPC will turn when a player comes near
+|-
+| /npc select [id]
+| ''id'' - ID of the NPC to select
+| false
+| false
+| citizens.basic.use.select
+| Select a NPC
+|-
+| /npc setowner [player-name]
+| ''player-name'' - name of player to set the owner to
+| true
+| true
+| citizens.basic.modify.setowner
+| Set the owner of an NPC
+|-
+| /npc list (name) (page)
+| ''name'' - name of player to list NPCs of, leave blank to list your own NPCs <br> ''page'' - page of list to view
+| false
+| false
+| citizens.basic.use.list
+| List NPCs for yourself or another player
+|}
+
+== Waypoint Commands ==
+Commands used to control NPC Waypoints.
+
+{| class="wikitable collapsible collapsed" style="text-align: center; width: 100%"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="6" | '''Waypoint Commands'''
+|-
+! style="width: 250px;" | Command
+! style="width: 200px;" | Args Description
+! style="width: 150px;" | Require Selected
+! style="width: 150px;" | Require Ownership
+! style="width: 170px;" | Permission
+! Description
+|-
+| /npc path
+| ''None''
+| true
+| true
+| citizens.waypoints.edit
+| Start editing an NPC's waypoints
+|-
+| /waypoints modifier [type]
+| ''type'' - modifier type to add to an NPC's waypoints
+| true
+| true
+| citizens.waypoints.modifer.(type) (replace type with the modifier type's name, see the [[Waypoints]] page for more info)
+| Add a modifier to an NPC's waypoints
+|}
+
+== Toggle Commands ==
+Commands used to toggle [[Characters|NPC types]].
+
+{| class="wikitable collapsible collapsed" style="text-align: center; width: 100%"
+|-
+! style="width: 100%; background-color:#ADD8E6" colspan="6" | '''Toggle Commands'''
+|-
+! style="width: 250px;" | Command
+! style="width: 200px;" | Args Description
+! style="width: 150px;" | Require Selected
+! style="width: 150px;" | Require Ownership
+! style="width: 170px;" | Permission
+! Description
+
+|-
+| /toggle help (page)
+| ''page'' - page number to view
+| false
+| false
+| citizens.toggle.help
+| View the available NPC types that you can toggle an NPC to become
+|-
+| /toggle [type]
+| ''type'' - the type you want to toggle an NPC to become
+| true
+| true
+| citizens.toggle.(type) (replace type with the NPC type)
+| Toggle an NPC to become a type
+|-
+| /toggle all [on/off]
+| ''on/off'' - whether to toggle all types on or off
+| true
+| true
+| citizens.toggle.all
+| Toggle all NPC types for an NPC
+|}
+==See Also==
+[[Characters]]
+[[Waypoints]]
+
+
+{{NavBox}}
+[[Category:Citizens1]]

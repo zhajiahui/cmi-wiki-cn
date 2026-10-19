@@ -1,0 +1,259 @@
+For more up-to-date information and full details on specific features (individual commands or tags, for example), check the [Meta Documentation](https://one.denizenscript.com/denizen/cmds/).
+
+If you want a full tutorial to help get you set up, check out the [Tutorial Videos](https://one.denizenscript.com/denizen/cmds/denizen/vids) on youtube or the [Beginner's Guide](https://guide.denizenscript.com/) text website.
+
+If you need quick help, visit our [Discord group](https://discord.gg/Q6pZGSR).
+
+This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!
+
+## OUTDATED HISTORICAL INTRO
+
+~~Denizen, powered by Citizens2 and Bukkit, is an extensive add-on pack that allows for a scriptable Minecraft experience, including enhanced NPCs, custom commands, items, world events and many other features. Inspired by MUDs, features and NPCs powered by Denizen have a unique RPG feel unmatched by any other Bukkit-only solution. Imagine interactive gate-keepers, magic spells, magical wizards, experience trainers, experience and player-stat systems, bankers that have bankers’ hours, talking townspeople, magical quests, and more! Denizen can be used in thousands of different ways, from tutorials, to gameplay, to administering --- your imagination is the limit!~~
+
+~~By sharing your scripts, you can enable the most exciting feature. Since dScript, the language that powers Denizen, is made to be easily read, users can share and tweak scripts to fit their needs with ease. Many can already be found online in the [Citizens Script Repository](http://scripts.citizensnpcs.co).~~
+
+~~While we are currently still in pre-release beta, the YAML-based dScript is becoming a fully featured core-set of features that can control your server in hundreds of ways. If that’s not enough, there’s also many ways to extend the functionality since Denizen is being programmed with a fully featured Java API in mind. With some simple Java, it’s easy to make your own dScript commands, requirements, script containers, tags, triggers, and many more. Many plugin developers are already extending their plugins with custom Denizen content for easy use with scripts, and by the time one point ‘o’ hits, we hope your plugins will take notice as well!~~
+
+<s><div class="mw-heading mw-heading1"><h1 id="Getting_Started">Getting Started</h1></div></s>
+
+~~It’s hard to find a good ‘start point’ when using Denizen, since there are many different scopes, but let’s first take a look at the basic functionality and control of Denizen provided by the use of CraftBukkit commands. Since Denizen uses the C2 command system, you may already be familiar with the system.~~
+
+<s><div class="mw-heading mw-heading2"><h2 id="How_to_use_server_commands">How to use server commands</h2></div></s>
+
+~~All commands have a ‘base_command’, a ‘command_name’ and either string values, integer values, value flags (--flag value) or non-value flags (-t). Some commands may use multiple flags at a time. Consider the examples below.~~
+
+<s><pre>/base_command command_name string value --flag value -t
+/npc trigger damage --cooldown 5 -t</pre></s>
+
+<s><pre>Note: Value flags which contain more than one word must be enclosed in quotes. 
+
+/base_command command_name --flag “multi word value” --another_flag another_value  -t -f
+/npc constant --name ‘Default Greeting Text’ --value ‘Hello, player!’</pre></s>
+
+<s><pre>Commands that provide multiple pages of feedback can include an integer number to specify page with some commands. If no number is specified, page 1 is assumed.
+
+/base_command command_name 3
+/denizen scripts 3</pre></s>
+
+<s><div class="mw-heading mw-heading2"><h2 id="Denizen_console_commands">Denizen console commands</h2></div></s>
+
+~~Denizen commands provide a way to view and configure key components of Denizen, such as version checking and script listings.~~
+
+<s><pre>/denizen version
+
+Displays the version and build information about the copy of denizen currently loaded. Will also show currently loaded ‘extensibles’.
+Usage: 
+/denizen version</pre></s>
+
+<s><pre>/denizen save
+
+Saves the contents of the ‘dScript saves’ in memory to disk as saves.yml. Useful for editing the contents while the server is running, using /denizen reload. 
+When using Denizen on a production server, there are key events that auto-save the saves.yml, so it’s encouraged that saves.yml be edited only while the server is off.  When using on a development server, server action should be brought to a minimum while editing saves.yml.
+Usage:
+/denizen save</pre></s>
+
+<s><pre>/denizen reload
+
+Reloads key disk files into memory, overwriting the copy currently in memory. Must specify which file to reload, or -a for all. Valid values are: scripts, saves, config or the -a flag.
+
+Note: When reloading the config, some values require a server-reboot to take effect.
+Usage: 
+/denizen reload scripts|saves|config|-a
+
+Example Usages:
+/denizen reload -a
+/denizen reload scripts</pre></s>
+
+<s><pre>/denizen debug
+
+Enables or disables the dBugger which can be very useful when writing and troublshooting script flow and any problems that may occur. 
+Using the -s flag will toggle stacktraces, allowing some nitty-gritty error messages to slip through for when something seriously goes on. If getting help, it’s likely that we’ll ask you to enable this and provide us with the feedback. Using the -c flag will toggle color.
+Usage: 
+/denizen debug (-c) (-s)
+
+Example Usages:
+/denizen debug
+/denizen debug -c</pre></s>
+
+<s><pre>/denizen scripts
+
+Shows a list of scripts currently loaded into Denizen. Used alone, it lists all scripts, identified by type and name. Use an integer to specify which page to view. 
+
+Using the type flag will cut down the search results to a specific type.
+Using the filter flag will limit results to a specific search string.
+Usage: 
+/denizen scripts (--filter key_word) (--type script_container_type) (#)
+
+Example Usages:
+/denizen scripts --filter ‘bob quest’ 2
+/denizen scripts --type task</pre></s>
+
+<s><pre>/denizen listener
+
+Shows a list of active listeners for a player. Use the player flag to specify a different player. Use an integer to specify a page.
+
+Using the finish flag will force-finish the listener, running the script the was specified in the original listen script command.
+Using the cancel flag will cancel the listener, effectively removing it.
+Using the report flag will output the status of the listener.
+Usage: 
+/denizen listener (--player player_name) (--finish|report|cancel listener_id)
+
+Example Usages:
+/denizen listener --report apple_quest_1
+/denizen listener --player aufdemrand 2</pre></s>
+
+<s><div class="mw-heading mw-heading2"><h2 id="NPC_console_commands">NPC console commands</h2></div></s>
+
+~~To provide add-on features seamlessly to Citizens, Denizen extends the /npc bukkit command to provide an interface with the additional traits added. Some commands listed here are core Citizens commands, provided here since they are commonly used with Denizen features. (DENIZEN! indicates new NPC commands that are available only with Denizen.)~~
+
+<s><pre>/npc create
+
+The command to create a new NPC. Must provide a string name. Can also specify a type flag which will change the EntityType of the NPC.
+ 
+Examples:
+/npc create Jack
+/npc create Henry the Great --type enderman
+/npc create Susan --type cow</pre></s>
+
+<s><pre>/npc select
+
+Selects a NPC to work with. Used alone, it will select the nearest NPC in range. A npcid may also be specified to select a specific NPC.
+ 
+Examples:
+/npc select
+/npc select 10</pre></s>
+
+<s><pre>/npc vulnerable
+
+Allows a NPC to be damaged, and killed. Also required (in most cases) when using the ‘health trait’ that is provided with Denizen. Use the -t flag to indicate the vulnerability to be temporary. When temporary, vulnerability will not persist through a restart.
+ 
+Examples:
+/npc vulnerable
+/npc vulnerable -t</pre></s>
+
+<s><pre>DENIZEN! /npc assignment
+
+Used to specify and view the current assignment of an NPC. Also adds the trigger and constants trait to the NPC. To set an assignment, use the set flag with the name of the script as a value. Remember: Only assignment-type scripts can be assigned. To view information on the current assignment, use /npc assignment. Using the -r flag will remove the current assignment.
+ 
+Examples:
+/npc assignment
+/npc assignment --set ‘town sheriff’</pre></s>
+
+<s><pre>DENIZEN! /npc trigger
+
+Controls the various settings of interact-script triggers. To specify a trigger, use a string of the name. Use in combination of the -t  flag to toggle the trigger on or off. Using the cooldown flag allows the default cooldown for a trigger to be overridden on a NPC level. Changing the cooldown in this manner only affects the selected NPC. Triggers with range settings can also be modified using the radius flag. Using /npc trigger alone displays an overview of all available triggers for the selected NPC.
+
+Examples:
+/npc trigger
+/npc trigger chat -t
+/npc trigger proximity --radius 15
+/npc trigger damage --cooldown 0.5</pre></s>
+
+<s><pre>DENIZEN! /npc constant
+
+Constants are saved strings, or ‘pre-set variables’ that can be set in either an assignment script, or specified at the NPC-level. Constants set to a NPC will override any values also found set in an assignment. With the use of the /npc constant server command, dScripts can be ‘configurable’ in-game.
+To set a constant, use the set flag with a value of the constant name, along with a value flag along with the new value of the constant. Constants can also be removed using the remove flag. Using /npc constant will show any constants currently known to the specified NPC.
+
+Examples:
+/npc constant --remove allowed_items
+/npc constant --set ‘welcome message’ --value ‘Welcome to my village!’
+
+Note: Constants are available for use within dScripts with use of a constant replaceable tag.  </pre></s>
+
+<s><pre>DENIZEN! /npc health
+
+Modifies the current and maximum health of a NPC. While being vulnerable is not required, NPCs cannot lose any health without being vulnerable. By default, NPCs are invulnerable, unable to be damaged. Using the set flag will specify a new max-health. Using the -r flag will reset the NPCs current health to max. Using /npc health with no additional arguments will provide current status.
+ 
+Examples:
+/npc health
+/npc health --set 100
+/npc health -r</pre></s>
+
+<s><pre>/npc playerlist
+
+In order for vulnerable NPCs to be attacked by Minecraft Monsters, the NPC must be added back into the Bukkit Playerlist. This treats a NPC like a Player, and should be noted that it could conflict with some external plugins. When using this feature, there may also be slightly increased overhead, so it should only be used when necessary.
+ 
+Examples:
+/npc playerlist
+
+Note: /npc playerlist only works on Player-Type NPCs.</pre></s>
+
+<s><pre>DENIZEN! /npc nickname
+
+Nicknames are NPC names on steroids. They are similar to Player display names, but also allow for a level of dynamic content to be used, since they allow the use of replaceable tags. Use the set flag to change a NPCs nickname. When used without any flags, the current nickname is shown. To remove a nickname, use the -r flag.
+
+Examples:
+/npc nickname
+/npc nickname -r
+/npc nickname --set ‘&lt;magic&gt;&lt;npc.name&gt;&lt;gold&gt;, 
+     the friendly Wizard’
+/npc nickname --set ‘&lt;npc.name&gt;, of Clan
+     &lt;flag.n:clan_name&gt;’
+
+Note: Nicknames, at this time, do not affect the ‘nameplate’ above player-type NPCs. This feature request may become possible in the future. To reference a NPCs nickname use the &lt;npc.name.nickname&gt; tag.</pre></s>
+
+<s><pre>DENIZEN! /npc pushable
+
+Moves NPCs out of the way when colliding with a Player. Default Citizens behavior is to allow clipping on NPC objects, allowing Players and NPCs to occupy the same space. Can also specify that the NPC be returnable using the -r flag. After being pushed, a returnable NPC will return to its previous location after a delay, which can be specified with the delay flag. Once the pushable trait is enabled, the actual push behavior can be toggled with the -t flag.
+ 
+Examples:
+/npc pushable
+/npc pushable -r --delay 6
+/npc pushable -t</pre></s>
+
+<s><pre>DENIZEN! /npc FISH/STOPFISHING
+
+Makes the NPC cast a fishing line to a position specified with the location flag, using the location format x,y,z,world_name, or alternatively, an anchor by using the anchor flag with the name of the anchor as the value. If you wish to make the NPC cast to the location of your cursor, use the -c flag. Using the /npc stopfishing command, the NPC will reel in its line.
+
+Examples:
+/npc fish --location 128,64,64,world
+/npc fish -c
+/npc fish --anchor chair_location
+/npc stopfishing</pre></s>
+
+<s><pre>DENIZEN! /npc SIT/STAND
+
+Puts the NPC in the sitting position. If a specific location is desired, it can be specified with the location flag, using the location format x,y,z,world_name, or alternatively, an anchor can be specified by using the anchor flag with the name of the anchor as the value. If you wish to make the NPC sit on the location of your cursor, use the -c flag. Using the /npc stand command, or initiating navigation on a NPC will make the NPC assume a standing postion.
+
+Examples:
+/npc sit --location 128,64,64,world
+/npc sit
+/npc sit --anchor chair_location
+/npc sit -c
+/npc stand</pre></s>
+
+<s><pre>DENIZEN! /npc SLEEP/WAKEUP
+
+Makes the NPC sleep on a position specified with the location flag, using the location format x,y,z,world_name, or alternatively, an anchor by using the anchor flag with the name of the anchor as the value.  When using the /npc wakeup command, the NPC will stop sleeping.
+
+Examples:
+/npc sleep --location 128,64,64,world
+/npc sleep --anchor chair_location
+/npc wakeup</pre></s>
+
+<s><pre>DENIZEN! /npc NAMEPLATE
+
+Changes the color of a NPCs nameplate. 
+
+Examples:
+/npc nameplate red</pre></s>
+
+<s><div class="mw-heading mw-heading2"><h2 id="Experimental_commands">Experimental commands</h2></div></s>
+
+~~These are some commands that are currently in Denizen that are considered ‘experimental’. Expect the syntax and usage of these commands to be changed before the final release.~~
+
+<s><pre>/dtime #
+
+To be used with the World Script ‘On Time’ event. Minecraft time 0 = 6:00 in dTime. dTime is based on a 24 hour clock.
+
+Examples:
+/dtime 6
+/dtime 23</pre></s>
+
+<s><pre>/notable add
+
+Adds a ‘notable location’ which is used throughout Denizen asa ‘location bookmark’ of sorts. Used in the World Script event ‘on walk over...’. Use the name flag to name the location.
+
+Examples:
+/notable add ‘secret spot 1’
+/notable add treasure</pre></s>

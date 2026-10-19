@@ -1,0 +1,11 @@
+- Oct 4, 2012: Wiki updated from 1.19.1 to 1.19.2
+- Sep 1, 2012: Citizens 2.0 has been released.
+- Aug 24, 2012: CitizensNPCs.net has moved to CitizensNPCs.com, and the [Converter](http://citizensnpcs.com/converter/) now supports [CitiTraders](https://wiki.citizensnpcs.co/CitiTraders "CitiTraders").
+- Aug 6, 2012: Citizens2 now has [Scripting support](https://wiki.citizensnpcs.co/Scripting "Scripting")!
+- July 30, 2012: Dear [master of the nyan cats](https://wiki.citizensnpcs.co/User:NeonMaster "User:NeonMaster"), I have updated the wiki.
+- May 2, 2012: Moved some stuff around on the wiki, fixed some bugs, sent [A message to Wikia](https://wiki.citizensnpcs.co/A_message_to_Wikia "A message to Wikia") to a Wikia staff member.
+- Feb 19, 2012: Citizens documentation moved to [1.x subpages](https://wiki.citizensnpcs.co/Category:Citizens1 "Category:Citizens1"), transition to Citizens2 begins!
+- Feb 16, 2012: [Jenkins](http://ci.citizensnpcs.net) is back!
+- Feb 13, 2012: 1.1.6 has been released. Several bugs fixed, new KillNPC quest objective added.
+- Jan 30, 2012: ~~Our Jenkins site is currently not uploading the most recent builds. You must use our BukkitDev page to get the 1.1.5 download.~~ See above.
+- Jan 30, 2012: 1.1.5 has been released for use with the new RB 1.1 R3.

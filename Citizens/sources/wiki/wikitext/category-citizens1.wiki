@@ -1,0 +1,1 @@
+Pages included in this category are outdated and probably won't do anything but break your current build of Citizens2, but will still work on 1.x. They are only here for reference.

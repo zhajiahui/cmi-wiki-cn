@@ -1,0 +1,63 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Depenizen",
+    "pageid": 338,
+    "revid": 5399,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://meta.denizenscript.com/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br /><br /><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p>\n<center><div class=\"mw-heading mw-heading1\"><h1 id=\"Depenizen:_Dependencies_for_Denizen!\"><span id=\"Depenizen:_Dependencies_for_Denizen.21\"></span>Depenizen: Dependencies for Denizen!</h1></div></center>\n<p>Welcome to the Depenizen Project! What is Depenizen all about?\n</p><p>Depenizen is a simple plugin that does exactly what its name implies: adds external plugin dependencies to Denizen.\n</p><p>Head on over to our <a href=\"/Depenizen/Frequently_Asked_Questions\" title=\"Depenizen/Frequently Asked Questions\">FAQ page</a> for more information!\n</p><p><a rel=\"nofollow\" class=\"external text\" href=\"https://github.com/DenizenScript/Depenizen\">Depenizen Github</a>\n</p><p><a rel=\"nofollow\" class=\"external text\" href=\"http://ci.citizensnpcs.co/view/All/job/Depenizen/\">Development builds download</a>\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Depenizen_V0.2\">Depenizen V0.2</h2></div>\n<p>If you used 0.1, you might notice that some tags were broken when updating to the latest builds. This was intentional, and mostly unavoidable in terms of the new Denizen 0.9 system, which is geared toward more object oriented systems. For example, previously in Denizen, using <b>&lt;player&gt;</b> would return the player's name. Now, it will return a dPlayer, represented by \"<b>p@</b>\", followed by the player's name. That being said, a tag such as <b>&lt;player.faction&gt;</b> will no longer return the faction name. To do that, you must now use <b>&lt;player.faction.name&gt;</b>.\n</p><p>Other tags, such as <b>&lt;player.town.ismayor&gt;</b>, which would return whether or not the player is the mayor of his/her town, make no sense in this system. Instead, you should use <b>- if &lt;player.town.mayor&gt; == &lt;player&gt;</b>\n</p><p>...\n</p><p><a href=\"/Depenizen/Tag-List\" title=\"Depenizen/Tag-List\">List Of Depenizen Tags</a> /// <a href=\"/Depenizen/Command-List\" title=\"Depenizen/Command-List\">List of Depenizen Commands</a> /// <a href=\"/Depenizen/Supported-Plugins\" title=\"Depenizen/Supported-Plugins\">List of Depenizen's Supported Plugins</a>\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145900\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.022 seconds\nReal time usage: 0.034 seconds\nPreprocessor visited node count: 4/1000000\nRevision size: 2179/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 72/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 9db7e065-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Depenizen/Command-List"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Depenizen/Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Depenizen/Supported-Plugins"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Depenizen/Tag-List"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Depenizen: Dependencies for Denizen!",
+        "number": "1",
+        "index": "",
+        "byteoffset": null,
+        "anchor": "Depenizen:_Dependencies_for_Denizen!",
+        "linkAnchor": "Depenizen:_Dependencies_for_Denizen!"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Depenizen V0.2",
+        "number": "1.1",
+        "index": "",
+        "byteoffset": null,
+        "anchor": "Depenizen_V0.2",
+        "linkAnchor": "Depenizen_V0.2"
+      }
+    ]
+  }
+}

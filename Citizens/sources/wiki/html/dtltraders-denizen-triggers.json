@@ -1,0 +1,67 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "DtlTraders/denizen/triggers",
+    "pageid": 254,
+    "revid": 3426,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Introduction\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Introduction</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-2\"><a href=\"#Current_triggers\"><span class=\"tocnumber\">1.1</span> <span class=\"toctext\">Current triggers</span></a></li>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Incoming_features\"><span class=\"tocnumber\">1.2</span> <span class=\"toctext\">Incoming features</span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Sample\"><span class=\"tocnumber\">1.3</span> <span class=\"toctext\">Sample</span></a></li>\n</ul>\n</li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Introduction\">Introduction</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/denizen/triggers&amp;action=edit&amp;section=1\" title=\"Edit section: Introduction\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Current_triggers\">Current triggers</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/denizen/triggers&amp;action=edit&amp;section=2\" title=\"Edit section: Current triggers\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>So far there are 3 denizen triggers (version 1.9.6), but we will add some more and also extend their functionality. \nEach trigger is called when the player made a successful trader (sold/bought) items. \n</p><p>Also each trigger adds automatically to each player the <i>TransactionItem</i> flag with the item bought/sold. This behavior will change in the release version. \n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Incoming_features\">Incoming features</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/denizen/triggers&amp;action=edit&amp;section=3\" title=\"Edit section: Incoming features\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Each trigger will lookup for <i>Predefined flags</i>, which you can use to get the transaction Result (SUCCESS/NOMONEY/NOSPACE/LIMIT), item that was used in the transaction and its amount. <i>(any suggestions are welcome)</i>\n</p><p>Maybe i will also add a way to manage the trader event, letting you to cancel the ongoing trade, change the price, change the amount, but this is only a early concept so 10% it will be added.\n</p><p>To let the triggers set the flags you need set their value to &lt;set&gt;\n</p><p>Supported flags that will be set by the trigger it self.\n</p>\n<ol><li>TransactionItem:&lt;set&gt;</li>\n<li>TransactionItemAmount:&lt;set&gt;</li>\n<li>TransactionResult:&lt;set&gt;</li></ol>\n<p>Triggers that will be added are listed here\n</p>\n<ol><li>TransactionCanceled (called when a player closes the trader window, or when the <i>TRADER_TRANSACTION CANCEL</i> command was executed)</li></ol>\n<p>Each trigger is disabled by default so you need to toggle them to use.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Sample\">Sample</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/denizen/triggers&amp;action=edit&amp;section=4\" title=\"Edit section: Sample\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Here is a short sample how to use these triggers and <b>Trader patterns</b> to create a simple <i>discount trigger</i>, based of how many <i>Diamonds</i> the trader sold. <a rel=\"nofollow\" class=\"external text\" href=\"http://scripts.citizensnpcs.com/view/lm66cf\">Sample</a>.\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145855\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.009 seconds\nReal time usage: 0.015 seconds\nPreprocessor visited node count: 11/1000000\nRevision size: 1538/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 9abcefe6-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Introduction",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "DtlTraders/denizen/triggers",
+        "byteoffset": 0,
+        "anchor": "Introduction",
+        "linkAnchor": "Introduction"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Current triggers",
+        "number": "1.1",
+        "index": "2",
+        "fromtitle": "DtlTraders/denizen/triggers",
+        "byteoffset": 19,
+        "anchor": "Current_triggers",
+        "linkAnchor": "Current_triggers"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Incoming features",
+        "number": "1.2",
+        "index": "3",
+        "fromtitle": "DtlTraders/denizen/triggers",
+        "byteoffset": 408,
+        "anchor": "Incoming_features",
+        "linkAnchor": "Incoming_features"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "Sample",
+        "number": "1.3",
+        "index": "4",
+        "fromtitle": "DtlTraders/denizen/triggers",
+        "byteoffset": 1306,
+        "anchor": "Sample",
+        "linkAnchor": "Sample"
+      }
+    ],
+    "showtoc": ""
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Denizen/Types of Scripts",
+    "pageid": 332,
+    "revid": 5222,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://one.denizenscript.com/denizen/cmds/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://one.denizenscript.com/denizen/cmds/denizen/vids\">Tutorial Videos</a> on youtube or the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br /><br /><br />\n</p><p><br />\n</p><p><s>In Denizen, there are multiple different types of scripts each made to fill a different purpose. When writing a script, you will need to use several of these, so they're important to know!\n</s></p><p><s>(Note: Page under construction! There's a lot more than just what's listed here!)\n</s></p><p><s>Types: interact, book, item, entity, task, assignment, procedure, world, format, inventory\n</s></p><p><s>Also: All the example scripts on this page work together...\n</s></p><p><s>To see them all work, add them all to your server and assign \"MyAssignmentScript\" to an NPC, then right-click it.\n</s></p><s><div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Assignment_Script\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Assignment Script</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Interact_Scripts\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Interact Scripts</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Item_Scripts\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Item Scripts</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#World_Scripts\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">World Scripts</span></a></li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#Task_Scripts\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">Task Scripts</span></a></li>\n<li class=\"toclevel-1 tocsection-6\"><a href=\"#Book_Scripts\"><span class=\"tocnumber\">6</span> <span class=\"toctext\">Book Scripts</span></a></li>\n<li class=\"toclevel-1 tocsection-7\"><a href=\"#Format_Scripts\"><span class=\"tocnumber\">7</span> <span class=\"toctext\">Format Scripts</span></a></li>\n<li class=\"toclevel-1 tocsection-8\"><a href=\"#CommandScripts\"><span class=\"tocnumber\">8</span> <span class=\"toctext\">CommandScripts</span></a></li>\n</ul>\n</div>\n</s><s><div class=\"mw-heading mw-heading1\"><h1 id=\"Assignment_Script\">Assignment Script</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Types_of_Scripts&amp;action=edit&amp;section=1\" title=\"Edit section: Assignment Script\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><pre>MyAssignmentScript:\n    type: assignment\n    actions:\n        on assignment:\n        - chat \"I has been assigned!\"\n        - trigger name:proximity state:true</pre></s><s><p>The assignment script is the first script any NPC needs - it lists everything the NPC does!\n</p><p>One of the most important uses is the \"on assignment:\" action, which is run when the script is assigned to an NPC, in which you normally enable triggers, and run other important commands.\n</p><p>You can link interact scripts by adding:\n</p></s><s><pre>    Interact Scripts:\n    - 10 MyInteractScript\n</pre></s><s><div class=\"mw-heading mw-heading1\"><h1 id=\"Interact_Scripts\">Interact Scripts</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Types_of_Scripts&amp;action=edit&amp;section=2\" title=\"Edit section: Interact Scripts\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><pre>MyInteractScript:\n    type: Interact\n    Steps:\n        '1':\n            Proximity trigger:\n                Entry:\n                    Script:\n                    - chat \"Hi there, &lt;player.name&gt;!\"\n                    - run mytask\n</pre></s><s><p>Interact scripts control what the NPC does when a player fires triggers such as proximity, click, chat, or damage.\n</p></s><s><div class=\"mw-heading mw-heading1\"><h1 id=\"Item_Scripts\">Item Scripts</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Types_of_Scripts&amp;action=edit&amp;section=3\" title=\"Edit section: Item Scripts\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><pre>myitem:\n    type: item\n    material: wool:3\n    recipe:\n    - air|air|air\n    - dirt|wool|dirt\n    - air|air|air\n</pre></s><s><p>Item scripts hold data on custom items.\n</p></s><s><div class=\"mw-heading mw-heading1\"><h1 id=\"World_Scripts\">World Scripts</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Types_of_Scripts&amp;action=edit&amp;section=4\" title=\"Edit section: World Scripts\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><pre>formatybit:\n  type: world\n  events:\n    on formattybit command:\n    - narrate format:formatdemo \"Hello, I'm a well-formatted narrate, caused by a world event '/formattybit' command!\"\n    - determine fulfilled\n</pre></s><s><p><br />\nWorld scripts run world events.\n</p></s><s><div class=\"mw-heading mw-heading1\"><h1 id=\"Task_Scripts\">Task Scripts</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Types_of_Scripts&amp;action=edit&amp;section=5\" title=\"Edit section: Task Scripts\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><pre>mytask:\n    type: task\n    script:\n    - chat \"Here, a book for you!\"\n    - give myfancybook\n</pre></s><s><p>Task scripts contain random scripts to be run by other scripts using the command - run (taskscriptname)\n</p></s><s><div class=\"mw-heading mw-heading1\"><h1 id=\"Book_Scripts\">Book Scripts</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Types_of_Scripts&amp;action=edit&amp;section=6\" title=\"Edit section: Book Scripts\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><pre>myfancybook:\n    type: book\n    title: My Fancy Book\n    author: NotNotch\n    text:\n    - This is my book. There are many like it, but this one is mine!\n    - Many &lt;n&gt;new &lt;n&gt; lines!\n    - &lt;p&gt;Paragraphs, &lt;p&gt;too!\n</pre></s><s><p>Book scripts hold information on a complex book item.\n</p><p>Each - line in the text: category is a new page.\n</p><p>After defining a book in a script, you can give it to a player in any runnable script using - give (bookname)\n</p></s><s><div class=\"mw-heading mw-heading1\"><h1 id=\"Format_Scripts\">Format Scripts</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Types_of_Scripts&amp;action=edit&amp;section=7\" title=\"Edit section: Format Scripts\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><pre>formatdemo:\n  type: format\n  format: \"&lt;&amp;f&gt;[&lt;&amp;b&gt;Message&lt;&amp;f&gt;- &lt;&amp;2&gt;&lt;text&gt;&lt;&amp;f&gt;]\"\n</pre></s><s><div class=\"mw-heading mw-heading1\"><h1 id=\"CommandScripts\">CommandScripts</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Types_of_Scripts&amp;action=edit&amp;section=8\" title=\"Edit section: CommandScripts\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div></s><s><pre>my custom command:\n  type: command\n  name: formatbit\n  script:\n  - narrate format:formatdemo \"Hello, I'm a well-formatted narrate, caused by a command script '/formatbit' command!\"\n</pre></s><s></s><p><s><br />\nWorld scripts run world events.</s>\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145840\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.028 seconds\nReal time usage: 0.039 seconds\nPreprocessor visited node count: 67/1000000\nRevision size: 3801/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1493/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 91cc1e63-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Assignment Script",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Denizen/Types_of_Scripts",
+        "byteoffset": 1327,
+        "anchor": "Assignment_Script",
+        "linkAnchor": "Assignment_Script"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Interact Scripts",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Denizen/Types_of_Scripts",
+        "byteoffset": 1907,
+        "anchor": "Interact_Scripts",
+        "linkAnchor": "Interact_Scripts"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Item Scripts",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "Denizen/Types_of_Scripts",
+        "byteoffset": 2289,
+        "anchor": "Item_Scripts",
+        "linkAnchor": "Item_Scripts"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "World Scripts",
+        "number": "4",
+        "index": "4",
+        "fromtitle": "Denizen/Types_of_Scripts",
+        "byteoffset": 2475,
+        "anchor": "World_Scripts",
+        "linkAnchor": "World_Scripts"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Task Scripts",
+        "number": "5",
+        "index": "5",
+        "fromtitle": "Denizen/Types_of_Scripts",
+        "byteoffset": 2751,
+        "anchor": "Task_Scripts",
+        "linkAnchor": "Task_Scripts"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Book Scripts",
+        "number": "6",
+        "index": "6",
+        "fromtitle": "Denizen/Types_of_Scripts",
+        "byteoffset": 2981,
+        "anchor": "Book_Scripts",
+        "linkAnchor": "Book_Scripts"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Format Scripts",
+        "number": "7",
+        "index": "7",
+        "fromtitle": "Denizen/Types_of_Scripts",
+        "byteoffset": 3440,
+        "anchor": "Format_Scripts",
+        "linkAnchor": "Format_Scripts"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "CommandScripts",
+        "number": "8",
+        "index": "8",
+        "fromtitle": "Denizen/Types_of_Scripts",
+        "byteoffset": 3550,
+        "anchor": "CommandScripts",
+        "linkAnchor": "CommandScripts"
+      }
+    ],
+    "showtoc": ""
+  }
+}

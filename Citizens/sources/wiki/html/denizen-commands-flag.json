@@ -1,0 +1,220 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Denizen/Commands/Flag",
+    "pageid": 328,
+    "revid": 5394,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>For more up-to-date information and full details on specific features (individual commands or tags, for example), check the <a rel=\"nofollow\" class=\"external text\" href=\"https://meta.denizenscript.com/\">Meta Documentation</a>.\n</p><p>If you want a full tutorial to help get you set up, check out the <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/\">Beginner's Guide</a> text website.\n</p><p>If you need quick help, visit our <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord group</a>.\n</p><p><br /><br /><br />\n</p><p><span style=\"font-family:natalya-alternate-one; font-size:300%; margin-right:-7px; margin-left:-10px;\">This wiki is outdated, please view the tutorial videos/guide, meta documentation, or Discord group (all linked above) for up-to-date information!</span>\n</p><p><br /><br /><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p><p><br />\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Introduction\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Introduction</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#The_flag_command\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">The flag command</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#The_Basics\"><span class=\"tocnumber\">2.1</span> <span class=\"toctext\">The Basics</span></a>\n<ul>\n<li class=\"toclevel-3 tocsection-4\"><a href=\"#Boolean\"><span class=\"tocnumber\">2.1.1</span> <span class=\"toctext\">Boolean</span></a></li>\n<li class=\"toclevel-3 tocsection-5\"><a href=\"#String\"><span class=\"tocnumber\">2.1.2</span> <span class=\"toctext\">String</span></a></li>\n<li class=\"toclevel-3 tocsection-6\"><a href=\"#Integer/Doubles\"><span class=\"tocnumber\">2.1.3</span> <span class=\"toctext\">Integer/Doubles</span></a></li>\n<li class=\"toclevel-3 tocsection-7\"><a href=\"#Lists\"><span class=\"tocnumber\">2.1.4</span> <span class=\"toctext\">Lists</span></a></li>\n</ul>\n</li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-8\"><a href=\"#Usage_inside_scripts\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Usage inside scripts</span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-9\"><a href=\"#Checking_if_a_flag_exists\"><span class=\"tocnumber\">3.1</span> <span class=\"toctext\">Checking if a flag exists</span></a>\n<ul>\n<li class=\"toclevel-3 tocsection-10\"><a href=\"#With_the_If_command\"><span class=\"tocnumber\">3.1.1</span> <span class=\"toctext\">With the If command</span></a></li>\n<li class=\"toclevel-3 tocsection-11\"><a href=\"#With_Requirements\"><span class=\"tocnumber\">3.1.2</span> <span class=\"toctext\">With Requirements</span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-2 tocsection-12\"><a href=\"#Mathematical_calculations\"><span class=\"tocnumber\">3.2</span> <span class=\"toctext\">Mathematical calculations</span></a>\n<ul>\n<li class=\"toclevel-3 tocsection-13\"><a href=\"#Addition\"><span class=\"tocnumber\">3.2.1</span> <span class=\"toctext\">Addition</span></a></li>\n<li class=\"toclevel-3 tocsection-14\"><a href=\"#Subtraction\"><span class=\"tocnumber\">3.2.2</span> <span class=\"toctext\">Subtraction</span></a></li>\n<li class=\"toclevel-3 tocsection-15\"><a href=\"#Multiplication\"><span class=\"tocnumber\">3.2.3</span> <span class=\"toctext\">Multiplication</span></a></li>\n<li class=\"toclevel-3 tocsection-16\"><a href=\"#Multiplication_2\"><span class=\"tocnumber\">3.2.4</span> <span class=\"toctext\">Multiplication</span></a></li>\n<li class=\"toclevel-3 tocsection-17\"><a href=\"#Mod\"><span class=\"tocnumber\">3.2.5</span> <span class=\"toctext\">Mod</span></a></li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Introduction\">Introduction</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Commands/Flag&amp;action=edit&amp;section=1\" title=\"Edit section: Introduction\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Flags are variables that can be checked anywhere in a script and in other scripts by using flag replaceable tags or the flagged requirement.\nA flag can be placed on the player, the NPC or globally. Flags placed on a player only apply to that player, and flags placed on an NPC only apply to that individual NPC based on its ID, so NPCs with the same name have different flags because they have different IDs. However, a global flag applies to the entire server and can easily be read from any script.\n</p><p>Once you set a flag, you can call it back at any time with one of the <a href=\"/Denizen/Replaceable_Tags#Flags\" title=\"Denizen/Replaceable Tags\">replaceable tags</a>.\n</p>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"The_flag_command\">The flag command</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Commands/Flag&amp;action=edit&amp;section=2\" title=\"Edit section: The flag command\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>To begin, you need to actually set a flag. You can do this by using \n</p>\n<table class=\"wikitable\" border=\"1\">\n<tbody><tr>\n<td>- flag ({player}|npc|global) [name([#])](:action)[:value] (duration:#)\n</td></tr></tbody></table>\n<p>If a flag's type (player, npc or global) is not specified, the flag is placed on the player by default, and if a value for the flag is not specified, the value is \"true\" by default.\n</p><p>...Too much for you? Let's slow it down.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"The_Basics\">The Basics</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Commands/Flag&amp;action=edit&amp;section=3\" title=\"Edit section: The Basics\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>To start using flags, you must first understand the basics. This means learning the 4 types of flags you can use: booleans, strings, integers/doubles, and lists.\n</p>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"Boolean\">Boolean</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Commands/Flag&amp;action=edit&amp;section=4\" title=\"Edit section: Boolean\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>The first, most used, most basic flag you need (besides a default flag) is a boolean flag. A boolean is a variable that represents either true or false.\n</p><p>\nYou can set a boolean flag to true by using </p><pre>- flag \"RandomFlag\"</pre><p> ...That's it. That automatically sets the flag named RandomFlag attached to the player interacting with the script as 'true'.\nYou can set it to false by simply doing </p><pre>- flag \"RandomFlag:false\"</pre>\n<p>This type of flag is helpful for 'if' statements. More information on that can be found <a href=\"/index.php?title=Denizen/Commands/If&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Denizen/Commands/If (page does not exist)\">here</a>.\n</p>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"String\">String</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Commands/Flag&amp;action=edit&amp;section=5\" title=\"Edit section: String\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Let's move forward. Probably the second most important flag you'll need on your journey is the string flag. Strings are variables that represent words or phrases that you can change at any time.\n</p><p>\nFor example, </p><pre>- flag \"RandomFlag:Blah something whatever\"</pre><p> would set the flag 'RandomFlag' on the player who's interacting with the script as 'Blah something whatever'.\n</p><p>Remember, you can also attach the flag to the NPC that the script is being run by, or the server itself by specifying 'npc' or 'global'. That will be covered in the advanced section.\n</p>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"Integer/Doubles\"><span id=\"Integer.2FDoubles\"></span>Integer/Doubles</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Commands/Flag&amp;action=edit&amp;section=6\" title=\"Edit section: Integer/Doubles\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Onto the next step... Integers and doubles! If you know a little about math, you probably already know that integers are just a fancy way of saying 'whole numbers'. In that sense, doubles are simply just numbers with decimals. (Non-whole numbers.)\n</p><p>Flags can hold numbers such as these by using something along the lines of...\n</p>\n<pre>- flag \"IntegerFlag:3\"\n- flag \"DoubleFlag:5.2\"</pre>\n<div class=\"mw-heading mw-heading4\"><h4 id=\"Lists\">Lists</h4><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Commands/Flag&amp;action=edit&amp;section=7\" title=\"Edit section: Lists\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>If you want to store a lot of objects in one place, a flag list is the way to go.\n</p><p>To do this, you can use the Flag command's add and remove functions, like so:\n</p>\n<pre>### To add to a Flag list...\n- flag \"FlagList:-&gt;:&lt;player&gt;\"\n### To remove from a Flag list...\n- flag \"FlagList:&lt;-:&lt;player&gt;\"</pre>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"Usage_inside_scripts\">Usage inside scripts</h1><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Commands/Flag&amp;action=edit&amp;section=8\" title=\"Edit section: Usage inside scripts\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Checking_if_a_flag_exists\">Checking if a flag exists</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Commands/Flag&amp;action=edit&amp;section=9\" title=\"Edit section: Checking if a flag exists\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>With the new 0.9 Development release you can now check if a flag exists.\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"With_the_If_command\">With the If command</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Commands/Flag&amp;action=edit&amp;section=10\" title=\"Edit section: With the If command\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>To do this with an If command, just check a flag against null like in the following example:\n</p>\n<pre>- if &lt;player.flag[flag_to_check]&gt; == null narrate 'flag is null!'\n  else narrate \"&lt;player.flag[flag_to_check]&gt;\"</pre>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"With_Requirements\">With Requirements</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Commands/Flag&amp;action=edit&amp;section=11\" title=\"Edit section: With Requirements\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p><b>Note: Requirements have been deprecated in favor of the If command.</b>\n</p><p>To do this with Requirements, you can use any of the following:\n</p>\n<pre>### To check if the flag EXISTS (Whether or not it has no value doesn't matter.)\n- flagged FlagName\n### To check if the flag DOES NOT EXIST (The flag must not have had a value at any point in time.)\n- -flagged FlagName\n### To check if the flag is NULL (If the flag has no value or doesn't exist.)\n- flagged FlagName:null</pre>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Mathematical_calculations\">Mathematical calculations</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Commands/Flag&amp;action=edit&amp;section=12\" title=\"Edit section: Mathematical calculations\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Number flags (Integer, Double, ...) can be used in calculations. You can either use the &lt;m: &gt; tag or add the operation directly behind the flag (examples in the different kinds of operations).\n</p>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Addition\">Addition</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Commands/Flag&amp;action=edit&amp;section=13\" title=\"Edit section: Addition\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>To add a flag and a number together, just use <code>add[]</code>.\nExample:\n</p>\n<pre>&lt;player.flag[money].add[2]&gt;</pre>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Subtraction\">Subtraction</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Commands/Flag&amp;action=edit&amp;section=14\" title=\"Edit section: Subtraction\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>To subtract the flag's value, just use <code>sub[]</code>.\nExample:\n</p>\n<pre>&lt;player.flag[money].sub[10]&gt;</pre>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Multiplication\">Multiplication</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Commands/Flag&amp;action=edit&amp;section=15\" title=\"Edit section: Multiplication\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>To multiply the value of a flag, just use <code>mul[]</code>.\nExample:\n</p>\n<pre>&lt;player.flag[money].mul[1.25]&gt;</pre>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Multiplication_2\">Multiplication</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Commands/Flag&amp;action=edit&amp;section=16\" title=\"Edit section: Multiplication\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>To divide a flag by something use <code>div[]</code>.\nExample:\n</p>\n<pre>&lt;player.flag[money].div[1.25]&gt;</pre>\n<div class=\"mw-heading mw-heading3\"><h3 id=\"Mod\">Mod</h3><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Denizen/Commands/Flag&amp;action=edit&amp;section=17\" title=\"Edit section: Mod\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Denizen allows you to mod two numbers as well! Just use <code>mod[]</code>.\nExample:\n</p>\n<pre>&lt;player.flag[money].mod[3]&gt;</pre>\n<!-- \nNewPP limit report\nCached time: 20261019145839\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.035 seconds\nReal time usage: 0.057 seconds\nPreprocessor visited node count: 111/1000000\nRevision size: 5576/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 1020/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 913387e3-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Denizen/Replaceable Tags"
+      },
+      {
+        "ns": 0,
+        "*": "Denizen/Commands/If"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Introduction",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Denizen/Commands/Flag",
+        "byteoffset": 685,
+        "anchor": "Introduction",
+        "linkAnchor": "Introduction"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "The flag command",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Denizen/Commands/Flag",
+        "byteoffset": 1330,
+        "anchor": "The_flag_command",
+        "linkAnchor": "The_flag_command"
+      },
+      {
+        "toclevel": 2,
+        "level": "3",
+        "line": "The Basics",
+        "number": "2.1",
+        "index": "3",
+        "fromtitle": "Denizen/Commands/Flag",
+        "byteoffset": 1752,
+        "anchor": "The_Basics",
+        "linkAnchor": "The_Basics"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Boolean",
+        "number": "2.1.1",
+        "index": "4",
+        "fromtitle": "Denizen/Commands/Flag",
+        "byteoffset": 1935,
+        "anchor": "Boolean",
+        "linkAnchor": "Boolean"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "String",
+        "number": "2.1.2",
+        "index": "5",
+        "fromtitle": "Denizen/Commands/Flag",
+        "byteoffset": 2510,
+        "anchor": "String",
+        "linkAnchor": "String"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Integer/Doubles",
+        "number": "2.1.3",
+        "index": "6",
+        "fromtitle": "Denizen/Commands/Flag",
+        "byteoffset": 3086,
+        "anchor": "Integer/Doubles",
+        "linkAnchor": "Integer/Doubles"
+      },
+      {
+        "toclevel": 3,
+        "level": "4",
+        "line": "Lists",
+        "number": "2.1.4",
+        "index": "7",
+        "fromtitle": "Denizen/Commands/Flag",
+        "byteoffset": 3499,
+        "anchor": "Lists",
+        "linkAnchor": "Lists"
+      },
+      {
+        "toclevel": 1,
+        "level": "1",
+        "line": "Usage inside scripts",
+        "number": "3",
+        "index": "8",
+        "fromtitle": "Denizen/Commands/Flag",
+        "byteoffset": 3812,
+        "anchor": "Usage_inside_scripts",
+        "linkAnchor": "Usage_inside_scripts"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Checking if a flag exists",
+        "number": "3.1",
+        "index": "9",
+        "fromtitle": "Denizen/Commands/Flag",
+        "byteoffset": 3838,
+        "anchor": "Checking_if_a_flag_exists",
+        "linkAnchor": "Checking_if_a_flag_exists"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "With the If command",
+        "number": "3.1.1",
+        "index": "10",
+        "fromtitle": "Denizen/Commands/Flag",
+        "byteoffset": 3944,
+        "anchor": "With_the_If_command",
+        "linkAnchor": "With_the_If_command"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "With Requirements",
+        "number": "3.1.2",
+        "index": "11",
+        "fromtitle": "Denizen/Commands/Flag",
+        "byteoffset": 4190,
+        "anchor": "With_Requirements",
+        "linkAnchor": "With_Requirements"
+      },
+      {
+        "toclevel": 2,
+        "level": "2",
+        "line": "Mathematical calculations",
+        "number": "3.2",
+        "index": "12",
+        "fromtitle": "Denizen/Commands/Flag",
+        "byteoffset": 4688,
+        "anchor": "Mathematical_calculations",
+        "linkAnchor": "Mathematical_calculations"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Addition",
+        "number": "3.2.1",
+        "index": "13",
+        "fromtitle": "Denizen/Commands/Flag",
+        "byteoffset": 4914,
+        "anchor": "Addition",
+        "linkAnchor": "Addition"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Subtraction",
+        "number": "3.2.2",
+        "index": "14",
+        "fromtitle": "Denizen/Commands/Flag",
+        "byteoffset": 5046,
+        "anchor": "Subtraction",
+        "linkAnchor": "Subtraction"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Multiplication",
+        "number": "3.2.3",
+        "index": "15",
+        "fromtitle": "Denizen/Commands/Flag",
+        "byteoffset": 5175,
+        "anchor": "Multiplication",
+        "linkAnchor": "Multiplication"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Multiplication",
+        "number": "3.2.4",
+        "index": "16",
+        "fromtitle": "Denizen/Commands/Flag",
+        "byteoffset": 5312,
+        "anchor": "Multiplication_2",
+        "linkAnchor": "Multiplication_2"
+      },
+      {
+        "toclevel": 3,
+        "level": "3",
+        "line": "Mod",
+        "number": "3.2.5",
+        "index": "17",
+        "fromtitle": "Denizen/Commands/Flag",
+        "byteoffset": 5441,
+        "anchor": "Mod",
+        "linkAnchor": "Mod"
+      }
+    ],
+    "showtoc": ""
+  }
+}

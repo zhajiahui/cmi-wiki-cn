@@ -1,0 +1,99 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Installation",
+    "pageid": 98,
+    "revid": 5450,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>Installing Citizens 2.0 is easy. It is like installing any other Bukkit plugin. If you don't know how to do that, see below.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Installing_Citizens_2.0\">Installing Citizens 2.0</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Installation&amp;action=edit&amp;section=1\" title=\"Edit section: Installing Citizens 2.0\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ol><li>Download Citizens <a href=\"/Downloads\" title=\"Downloads\">here</a>.</li>\n<li>Place the Citizens 2.0 jar in your <i>/plugins</i> directory.</li>\n<li>Download any desired <a href=\"/Characters\" title=\"Characters\">Trait</a> plugins and place these in the <i>/plugins</i> directory as well.</li>\n<li>Reload or restart your server. Citizens 2 will create a plugins/Citizens folder and a config.yml file.</li>\n<li>Configure Citizens to your liking with config.yml. See the <a href=\"/Configuration\" title=\"Configuration\">Configuration</a> page for more help.</li>\n<li>Reload or restart your server.</li>\n<li>Start creating and editing NPCs!</li>\n<li>Be sure to set <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> so your players can interact with NPCs.\n<ul><li><b>Note that players need the citizens.npc.talk permission to hear NPCs!</b></li></ul></li></ol>\n<div class=\"padded\" style=\"font-size: 12px; padding: 5px\">\n<table class=\"wikitable collapsible collapsed\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Usage\" title=\"Category:Usage\">Usage</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a class=\"mw-selflink selflink\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Frequently_Asked_Questions\" title=\"Frequently Asked Questions\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Editors\" title=\"Editors\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Characters\" title=\"Characters\">Characters</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/API\" title=\"API\">API</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32;\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Configuration\" title=\"Category:Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Configuration\" title=\"Configuration\">Configuration</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Data_Storage\" title=\"Data Storage\">Data Storage</a>\n</td></tr></tbody></table>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145845\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.015 seconds\nReal time usage: 0.020 seconds\nPreprocessor visited node count: 16/1000000\nRevision size: 816/2097152 bytes\nPost‐expand include size: 1802/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    7.821      1 Template:NavBox\n100.00%    7.821      1 -total\n 42.71%    3.340     10 Template:·\n-->\n\n<!-- Render ID 94c70ee3-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "API"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Configuration"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Data Storage"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Downloads"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Editors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Text Syntax"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Configuration"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Usage"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Installing Citizens 2.0",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Installation",
+        "byteoffset": 126,
+        "anchor": "Installing_Citizens_2.0",
+        "linkAnchor": "Installing_Citizens_2.0"
+      }
+    ]
+  }
+}

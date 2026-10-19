@@ -1,0 +1,5 @@
+All the scripts and configuration nodes are in YAML. Remember! Spacing is CRITICAL when dealing with YAML files. Each parent node and sibling node should follow the spacing and formatting guidelines set forth by the YAML 1.0 standard. Generally, your indents should remain consistant. In all the examples used in this guide, 2 spaces are used for indenting. Generally, whatever you choose should be maintained through your YAML document. Remember: NO TABS are allowed in YAML files. If you are using notepad++ to edit your scripts, be sure to change the tab->space setting in Preferences>LanguageMenu/Tab Settings.
+
+In all the denizen YAML files, nodes are case sensitive! For example, in a script.yml, 'Scripts:' will work. 'scripts:' will not! All nodes are first letter capital, rest of the word lowercase. Scripts names follow this rule too! Also: Commands/Requirements are generally ALL UPPERCASE, but we'll get to that.
+
+YAML tutorials can be intimidating, but [this small tutorial on the Essentials wiki](http://wiki.ess3.net/wiki/YAML_Tutorial) is pretty useful for basic YAML, which is the extent of which Denizens uses.

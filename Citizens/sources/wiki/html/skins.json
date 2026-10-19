@@ -1,0 +1,177 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Skins",
+    "pageid": 90,
+    "revid": 5467,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#NPC_Skins\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">NPC Skins</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#What&#39;s_the_best_way_to_set_a_custom_skin?\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">What's the best way to set a custom skin?</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Other_Options\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Other Options</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Mirroring_A_Player&#39;s_Current_Skin\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Mirroring A Player's Current Skin</span></a></li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#For_API_Users\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">For API Users</span></a></li>\n<li class=\"toclevel-1 tocsection-6\"><a href=\"#Common_Issues\"><span class=\"tocnumber\">6</span> <span class=\"toctext\">Common Issues</span></a></li>\n<li class=\"toclevel-1 tocsection-7\"><a href=\"#Technical_Info\"><span class=\"tocnumber\">7</span> <span class=\"toctext\">Technical Info</span></a></li>\n<li class=\"toclevel-1 tocsection-8\"><a href=\"#Additional_Resources\"><span class=\"tocnumber\">8</span> <span class=\"toctext\">Additional Resources</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"NPC_Skins\">NPC Skins</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Skins&amp;action=edit&amp;section=1\" title=\"Edit section: NPC Skins\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Custom NPC skins are something that many server admins have asked for ever since Citizens was first released. In recent Minecraft versions it has become possible to control an NPC's skin via the new player packet system. By default an NPC will have the default Steve or Alex skin. You can set an NPC's skin by using the <code>/npc skin [NAME]</code> command. For example, <code>/npc skin mcmonkey4eva</code>\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"What's_the_best_way_to_set_a_custom_skin?\"><span id=\"What.27s_the_best_way_to_set_a_custom_skin.3F\"></span>What's the best way to set a custom skin?</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Skins&amp;action=edit&amp;section=2\" title=\"Edit section: What&#39;s the best way to set a custom skin?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>If you want to set a custom skin (one that isn't already on a player), use <code>/npc skin --url [image]</code>. The \"[image]\" part must be filled with a valid public image direct link. \"public\" means it's on a web host (you can just use Discord or <a rel=\"nofollow\" class=\"external text\" href=\"https://imgur.com\">imgur</a> or whatever else) and \"direct\" means it's a link that ends with \".png\" containing the raw image (not a link to an album or similar. Imgur by default gives you an album link, and you have to right click -&gt; copy image URL).\n</p><p>For example: <code>/npc skin --url <a rel=\"nofollow\" class=\"external free\" href=\"https://gamepedia.cursecdn.com/minecraft_gamepedia/3/37/Steve_skin.png\">https://gamepedia.cursecdn.com/minecraft_gamepedia/3/37/Steve_skin.png</a></code>\n</p><p>Note that the <code>--url</code> feature is internally backed by <a rel=\"nofollow\" class=\"external text\" href=\"https://mineskin.org/\">Mineskin</a>, and in some cases it may be helpful to use their website directly.\n</p><p>If you want a <b>slim model</b> (aka \"Alex model\") (3-pixel wide arms instead of 4) from a URL, it might be helpful to directly upload the skin image to <a rel=\"nofollow\" class=\"external text\" href=\"https://mineskin.org/\">Mineskin</a> and use the model choice option on the page.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Other_Options\">Other Options</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Skins&amp;action=edit&amp;section=3\" title=\"Edit section: Other Options\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>You can use <code>/npc skin [NAME] -l</code> (a lowercase L) to always use the latest skin for the player (updating if the player changes their skin). If this is not set, the current skin (at time of using the command) will be retained.\n</p><p>You can use <code>/npc skin -t [uuid] [data] [signature]</code> from the console (or any large-input command sender) to set a very specific full skin blob from Mojang. If you don't know exactly what that is, just don't use it. It's a developer tool.\n</p><p>Note that some sites like <a rel=\"nofollow\" class=\"external free\" href=\"https://mineskin.org/\">https://mineskin.org/</a> let you generate values for the <code>-t</code> option.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Mirroring_A_Player's_Current_Skin\"><span id=\"Mirroring_A_Player.27s_Current_Skin\"></span>Mirroring A Player's Current Skin</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Skins&amp;action=edit&amp;section=4\" title=\"Edit section: Mirroring A Player&#39;s Current Skin\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>If you want every player to see their own current skin applied to the NPC, install <a rel=\"nofollow\" class=\"external text\" href=\"https://denizenscript.com/\">Denizen</a> and then use the command <code>/npc mirrorskin</code>. You can also have the name mirrored via <code>/npc mirrorname</code>, or mirror equipped items with <code>/npc mirrorequip</code>.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"For_API_Users\">For API Users</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Skins&amp;action=edit&amp;section=5\" title=\"Edit section: For API Users\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>If you use the Java Citizens API, you can control skins on NPCs via <code>npc.getOrAddTrait(SkinTrait.class)</code> and calling a method like <code>setSkinName</code>. Refer to the <a rel=\"nofollow\" class=\"external text\" href=\"https://jd.citizensnpcs.co/net/citizensnpcs/trait/SkinTrait.html\">SkinTrait JavaDoc</a> for more information.\n</p><p><b>Note:</b> you can't (and shouldn't) set from image or URL directly via Java API. Instead, upload your image to <a rel=\"nofollow\" class=\"external text\" href=\"https://mineskin.org/\">Mineskin</a> and save the texture+signature data (store them in a string or a config file), and set that with <code>setSkinPersistent(uniqueId, signature, texture)</code>.\n</p><p><b>Also note:</b> if you're creating a new NPC and giving it a skin, it's best to give it a skin before you call <code>spawn()</code>, as the first spawn will trigger a default skin load, which can be slow or even overwrite your custom skin. If you have set a skin prior to the spawn call, it will not try to load a default one.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Common_Issues\">Common Issues</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Skins&amp;action=edit&amp;section=6\" title=\"Edit section: Common Issues\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Many issues can cause the skin system to fail. If you are experiencing issues, please ensure the following:\n</p>\n<ul><li>You are running a fully up to date Spigot server acquired from <a rel=\"nofollow\" class=\"external free\" href=\"https://www.spigotmc.org/wiki/buildtools/\">https://www.spigotmc.org/wiki/buildtools/</a> running a supported recent version of Minecraft. (Paper also generally works). You can use <code>/version</code> to check the version of your server.</li>\n<li>You are running the latest dev version of Citizens2 from <a rel=\"nofollow\" class=\"external free\" href=\"http://ci.citizensnpcs.co/job/Citizens2/\">http://ci.citizensnpcs.co/job/Citizens2/</a> Please verify the specific build number (NOT the file version name) You can use <code>/version citizens</code> to check this build number.</li>\n<li>You have a dedicated server (not a shared hosting service!)</li>\n<li>You own your server's IP entirely (no other ports on the server are used by other minecraft servers! (Unless they're your own servers as well.))</li>\n<li>You are running your server in ONLINE MODE (offline mode servers won't work!) (note that if you're on a Bungee network, you must enable \"bungeecord: true\" to make sure the game knows it can still connect to Mojang's servers to download skins).</li>\n<li>There are no errors ANYWHERE in your current log file (<code>logs/latest.log</code>). Any errors, even if seemingly unrelated, must be fixed!</li>\n<li>You are not being rate limited by Mojang. This can occur if you've loaded too many skins recently (from player head skull items, or from the npc skin command). This can be cured by waiting a while without loading more skins in, to allow Mojang to drop the rate limit.</li>\n<li>Mojang's servers are online. Check that the <a rel=\"nofollow\" class=\"external text\" href=\"https://status.mojang.com/check\">Mojang Status Page</a> is showing greens. If skins usually work but suddenly don't for a while, it might just be the official servers are down.</li></ul>\n<p>If you have confirmed you meet all of these requirements, but are still having trouble, feel free to post an issue to <a rel=\"nofollow\" class=\"external text\" href=\"https://github.com/CitizensDev/Citizens2/issues\">GitHub</a> or ask on <a rel=\"nofollow\" class=\"external text\" href=\"https://discord.gg/Q6pZGSR\">Discord</a> with as much information as possible (At the very least, pastebin your current log file and Citizens saves.yml file)\n</p><p>Please <b>DO NOT</b> lie about any of these when requesting help. They are not to \"catch you\" or anything like that: these are listed because these requirements <b>WILL</b> cause issues if not met, and if you say you meet them but don't actually, you'll just be wasting everyone's time (including your own!).\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Technical_Info\">Technical Info</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Skins&amp;action=edit&amp;section=7\" title=\"Edit section: Technical Info\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>If you're interested in how the skin system works internally (texture/signature system), you can view an explanation of the skin-blob system <a rel=\"nofollow\" class=\"external text\" href=\"https://one.denizenscript.com/denizen/lngs/player%20entity%20skins\">here on the Denizen documentation site</a>.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Additional_Resources\">Additional Resources</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Skins&amp;action=edit&amp;section=8\" title=\"Edit section: Additional Resources\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ul><li>Here's a Denizen script to save/load skins on NPCs for if you reuse skins frequently: <a rel=\"nofollow\" class=\"external text\" href=\"https://forum.denizenscript.com/resources/npc-skin-save-load.8/\">NPC Skin Save/Load</a></li>\n<li>Mineskin has a gallery of skins you can look through: <a rel=\"nofollow\" class=\"external text\" href=\"https://mineskin.org/gallery\">Mineskin Gallery</a></li>\n<li>Here are some more skin list sites: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.minecraftskins.com/\">MinecraftSkins.com</a>, <a rel=\"nofollow\" class=\"external text\" href=\"https://www.minecraftskins.net/\">MinecraftSkins.net</a>, <a rel=\"nofollow\" class=\"external text\" href=\"https://www.planetminecraft.com/skins/\">PlanetMinecraft Skins</a></li>\n<li>Minecraft Wiki page about skins: <a rel=\"nofollow\" class=\"external text\" href=\"https://minecraft.fandom.com/wiki/Skin\">Minecraft Wiki: Skins</a></li>\n<li>Here's a Denizen script to edit player skins as easily as you can edit NPC skins: <a rel=\"nofollow\" class=\"external text\" href=\"https://forum.denizenscript.com/resources/player-skin-command.54/\">Player Skin Command</a></li></ul>\n<div class=\"padded\" style=\"font-size: 12px; padding: 5px\">\n<table class=\"wikitable collapsible collapsed\" style=\"cellpadding: 5px; text-align: center;width: 100%\">\n\n<tbody><tr>\n<th colspan=\"2\" style=\"width: 100%; background-color:#C0C0C0\">Quick Navigation\n</th></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Usage\" title=\"Category:Usage\">Usage</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Installation\" title=\"Installation\">Installation</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Frequently_Asked_Questions\" title=\"Frequently Asked Questions\">Frequently Asked Questions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Commands\" title=\"Commands\">Commands</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Editors\" title=\"Editors\">Editors</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Characters\" title=\"Characters\">Characters</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/API\" title=\"API\">API</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32;\n</td></tr>\n<tr>\n<th style=\"width: 15%\"><a href=\"/Category:Configuration\" title=\"Category:Configuration\">Configuration</a>\n</th>\n<td style=\"width: 85%\" align=\"left\"><a href=\"/Configuration\" title=\"Configuration\">Configuration</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Text_Syntax\" title=\"Text Syntax\">Text Syntax</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Permissions\" title=\"Permissions\">Permissions</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Waypoints\" title=\"Waypoints\">Waypoints</a> &#160;<span style=\"font-weight:bold;\">&#183;</span>&#32; <a href=\"/Data_Storage\" title=\"Data Storage\">Data Storage</a>\n</td></tr></tbody></table>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145906\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.032 seconds\nReal time usage: 0.051 seconds\nPreprocessor visited node count: 36/1000000\nRevision size: 6841/2097152 bytes\nPost‐expand include size: 1802/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 3/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    9.838      1 Template:NavBox\n100.00%    9.838      1 -total\n 44.42%    4.370     10 Template:·\n-->\n\n<!-- Render ID a14b6766-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "API"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Characters"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Commands"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Configuration"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Data Storage"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Editors"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Frequently Asked Questions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Installation"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Permissions"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Text Syntax"
+      },
+      {
+        "ns": 0,
+        "exists": "",
+        "*": "Waypoints"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Configuration"
+      },
+      {
+        "ns": 14,
+        "exists": "",
+        "*": "Category:Usage"
+      }
+    ],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "NPC Skins",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Skins",
+        "byteoffset": 0,
+        "anchor": "NPC_Skins",
+        "linkAnchor": "NPC_Skins"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "What's the best way to set a custom skin?",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Skins",
+        "byteoffset": 426,
+        "anchor": "What's_the_best_way_to_set_a_custom_skin?",
+        "linkAnchor": "What's_the_best_way_to_set_a_custom_skin?"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Other Options",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "Skins",
+        "byteoffset": 1485,
+        "anchor": "Other_Options",
+        "linkAnchor": "Other_Options"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Mirroring A Player's Current Skin",
+        "number": "4",
+        "index": "4",
+        "fromtitle": "Skins",
+        "byteoffset": 2099,
+        "anchor": "Mirroring_A_Player's_Current_Skin",
+        "linkAnchor": "Mirroring_A_Player's_Current_Skin"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "For API Users",
+        "number": "5",
+        "index": "5",
+        "fromtitle": "Skins",
+        "byteoffset": 2447,
+        "anchor": "For_API_Users",
+        "linkAnchor": "For_API_Users"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Common Issues",
+        "number": "6",
+        "index": "6",
+        "fromtitle": "Skins",
+        "byteoffset": 3392,
+        "anchor": "Common_Issues",
+        "linkAnchor": "Common_Issues"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Technical Info",
+        "number": "7",
+        "index": "7",
+        "fromtitle": "Skins",
+        "byteoffset": 5754,
+        "anchor": "Technical_Info",
+        "linkAnchor": "Technical_Info"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Additional Resources",
+        "number": "8",
+        "index": "8",
+        "fromtitle": "Skins",
+        "byteoffset": 6027,
+        "anchor": "Additional_Resources",
+        "linkAnchor": "Additional_Resources"
+      }
+    ],
+    "showtoc": ""
+  }
+}

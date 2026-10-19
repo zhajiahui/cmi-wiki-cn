@@ -1,0 +1,16 @@
+{
+  "750d9cc9c58cdedd2900": {
+    "source": "Targets the location of the \"origin\" or \"source\" of a meta-skill. While that is usually the casting mob, there are special cases where this is not true (such as with the Projectile Skill, where the \"origin\" is the location of the projectile).",
+    "tokens": {
+      "true": 1
+    },
+    "reason": "true 在普通英语 this is not true 中表示判断，并非配置或条件的布尔值；译为中文，不向正文添加译者说明。"
+  },
+  "3ca41b459ce1071aa1b1": {
+    "source": "The true core of a metaskill. It's the list of the mechanics that will be executed by the metaskill once triggered. Other [Meta Mechanic](ZZURL000ZZ)s can be used in here, allowing the Metaskill to trigger other ones.",
+    "tokens": {
+      "true": 1
+    },
+    "reason": "The true core 中 true 是普通英语形容词，译为“真正的”，不是配置布尔值。"
+  }
+}

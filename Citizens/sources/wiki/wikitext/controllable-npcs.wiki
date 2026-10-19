@@ -1,0 +1,8 @@
+Controllable NPCs are created using the /npc controllable command. For tricky to mount mob types like the EnderDragon, the <code>/npc mount</code> command puts you on the NPC. Otherwise, right click to mount an NPC and sneak + right click while riding to get off.
+
+Land mobs are controlled using the standard movement controls. Sneak + left click to jump.
+Air mobs move towards your cursor.
+
+To toggle between land and air you can use <code>/traitc controllable -g</code> for ground and -f for flying.
+
+Controllable NPCs also respect your NPC's speed, so you can use /npc speed 2 to go faster while mounted.

@@ -1,0 +1,80 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "Logs",
+    "pageid": 360,
+    "revid": 5469,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>This page explains some information about posting server logs to get support.\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#How_To_Post_Logs\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">How To Post Logs</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Why_Post_Logs?\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Why Post Logs?</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#What&#39;s_in_a_log?\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">What's in a log?</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Should_I_Edit_Or_Trim_The_Logs?\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Should I Edit Or Trim The Logs?</span></a></li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#Do_Logs_Contain_Private_Information?\"><span class=\"tocnumber\">5</span> <span class=\"toctext\">Do Logs Contain Private Information?</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"How_To_Post_Logs\">How To Post Logs</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Logs&amp;action=edit&amp;section=1\" title=\"Edit section: How To Post Logs\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<ul><li>Go into your server files, find the <code>logs</code> folder, and inside of that find <code>latest.log</code>.</li>\n<li>That's a simple text file, so just open it in any text editor.</li>\n<li>Copy the contents of the file.</li>\n<li>Go to <a rel=\"nofollow\" class=\"external text\" href=\"https://paste.denizenscript.com/New/Log\">The Server Log Pastebin</a> and paste in the copied data.</li>\n<li>If on Pastebin, click \"Create New Paste\". If on /Haste, click \"Server Log\" then \"Submit\".</li>\n<li>Then, copy the URL of the page you're now on, and paste that URL back into the channel or issue where you were asked to post logs.</li>\n<li>If you're on the Denizen&amp;Citizens Discord, you can use the <code>!checklog</code> command with the link you gave to automatically check the log for common issues (eg outdated plugin versions, etc) which will look like:</li></ul>\n<p><span class=\"mw-default-size\" typeof=\"mw:File\"><a href=\"/File:CheckLog.png\" class=\"mw-file-description\"><img src=\"/images/0/09/CheckLog.png\" decoding=\"async\" width=\"592\" height=\"484\" class=\"mw-file-element\" /></a></span>\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Why_Post_Logs?\"><span id=\"Why_Post_Logs.3F\"></span>Why Post Logs?</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Logs&amp;action=edit&amp;section=2\" title=\"Edit section: Why Post Logs?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>We often ask people to post their logs when a user reports an issue that is likely to related to a common issue, such as an outdated plugin or server version, or incompatibility with another plugin (for example, if NPC combat isn't working, a log will show things like WorldGuard on the server, which will often be the reason for combat is blocked).\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"What's_in_a_log?\"><span id=\"What.27s_in_a_log.3F\"></span>What's in a log?</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Logs&amp;action=edit&amp;section=3\" title=\"Edit section: What&#39;s in a log?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>A complete startup log contains the following pieces of information:\n</p>\n<ul><li>Full server version (in the above example, that's <code>CraftBukkit version git-Spigot-1a3504a-e7700ab (MC: 1.13.2)</code>)</li>\n<li>Full versions of all installed plugins (in the above example we see <code>Citizens v2.0.26-SNAPSHOT (build 1822)</code> and a few more)\n<ul><li>The Meta bot we have on our Discord will compare the server version and some plugin versions to the known current version available for download, and report how far behind (if at all) a version is.</li></ul></li>\n<li>Any error messages. It's not uncommon to find a bunch of plugins failing to load or producing error messages the first time you check your logs, if you don't review them often.\n<ul><li>Even when an error doesn't seem like it's going to be relevant to a problem, it often is. As a general rule of thumb, if you have ANY errors in your logs, those are absolute first priority to fix.</li></ul></li>\n<li>A whole lot of minor loading data that usually doesn't matter, but in those rare cases when they do, are incredibly helpful to diagnosing related issues.</li>\n<li>Commands you've entered. When your issue relates to usage of a command, having the text of that command exactly as you typed it is often helpful (often, issues arise from just typos or slight formatting mistakes!).</li></ul>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Should_I_Edit_Or_Trim_The_Logs?\"><span id=\"Should_I_Edit_Or_Trim_The_Logs.3F\"></span>Should I Edit Or Trim The Logs?</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Logs&amp;action=edit&amp;section=4\" title=\"Edit section: Should I Edit Or Trim The Logs?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>No, never edit or trim your logs. Always provide the full contents of <code>latest.log</code>, untouched.\n</p><p>If it's full of unrelated data (like hours of day-to-day minecraft server activity logs), restart your server (and join it and replicate the issue) before copying the logs.\n</p><p>Generally the startup logs (and basic issue replication where relevant) are the most important part.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Do_Logs_Contain_Private_Information?\"><span id=\"Do_Logs_Contain_Private_Information.3F\"></span>Do Logs Contain Private Information?</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=Logs&amp;action=edit&amp;section=5\" title=\"Edit section: Do Logs Contain Private Information?\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>We sometimes see users worried that their logs contain private information they might not want to post.\n</p><p>Generally speaking: <b>no, logs do not contain private information</b>.\n</p><p>If you're copying logs from a live&amp;active public server, you might have player IPs and/or chat messages in the logs, which you might prefer to be better-safe-than-sorry with (though of course: IPs are generally considered public data, and hopefully players aren't sharing secrets on a minecraft server). If this applies to you, the log pastebin linked above has an option to automatically filter out IPs or Chat when you go to make the paste. Alternately, you could <a rel=\"nofollow\" class=\"external text\" href=\"https://guide.denizenscript.com/guides/first-steps/local-test-server.html\">Start a Local Test Server</a> or restart your server to reset the latest.log to just the startup information and any quick testing you do to demonstrate a problem (if needed) without random players joining. (If you do either of these latter two options, please make sure you replicate the issue before posting the log).\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145903\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.025 seconds\nReal time usage: 0.049 seconds\nPreprocessor visited node count: 16/1000000\nRevision size: 4063/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 9f81a3e6-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [
+      "CheckLog.png"
+    ],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "How To Post Logs",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "Logs",
+        "byteoffset": 79,
+        "anchor": "How_To_Post_Logs",
+        "linkAnchor": "How_To_Post_Logs"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Why Post Logs?",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "Logs",
+        "byteoffset": 886,
+        "anchor": "Why_Post_Logs?",
+        "linkAnchor": "Why_Post_Logs?"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "What's in a log?",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "Logs",
+        "byteoffset": 1257,
+        "anchor": "What's_in_a_log?",
+        "linkAnchor": "What's_in_a_log?"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Should I Edit Or Trim The Logs?",
+        "number": "4",
+        "index": "4",
+        "fromtitle": "Logs",
+        "byteoffset": 2567,
+        "anchor": "Should_I_Edit_Or_Trim_The_Logs?",
+        "linkAnchor": "Should_I_Edit_Or_Trim_The_Logs?"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Do Logs Contain Private Information?",
+        "number": "5",
+        "index": "5",
+        "fromtitle": "Logs",
+        "byteoffset": 2987,
+        "anchor": "Do_Logs_Contain_Private_Information?",
+        "linkAnchor": "Do_Logs_Contain_Private_Information?"
+      }
+    ],
+    "showtoc": ""
+  }
+}

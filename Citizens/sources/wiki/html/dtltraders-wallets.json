@@ -1,0 +1,67 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "DtlTraders/wallets",
+    "pageid": 298,
+    "revid": 3978,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en-GB\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Overview\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Overview</span></a></li>\n<li class=\"toclevel-1 tocsection-2\"><a href=\"#Wallet_types\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Wallet types</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a href=\"#Setting_the_wallet_type\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">Setting the wallet type</span></a></li>\n<li class=\"toclevel-1 tocsection-4\"><a href=\"#Managing_a_wallet\"><span class=\"tocnumber\">4</span> <span class=\"toctext\">Managing a wallet</span></a></li>\n</ul>\n</div>\n\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Overview\">Overview</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/wallets&amp;action=edit&amp;section=1\" title=\"Edit section: Overview\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Wallets are a way to make the merchants seem more realistic by giving them a predefined amount of money to trade with. They also grant you better control over your server economy. In addition they are the only way players can manage account balance of the traders they created themselves.\n<br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Wallet_types\">Wallet types</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/wallets&amp;action=edit&amp;section=2\" title=\"Edit section: Wallet types\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>Seven wallet types are currently supported:<br />\n<br />\n</p>\n<ul><li><b>infinite</b> (admin only) - The trader has limitless money.</li>\n<li><b>NPC</b> - The trader has his own separate wallet and can't buy items unless he can afford it. The trader's owner can transfer funds between him and the trader.</li>\n<li><b>owner</b> - Allows the trader to directly use his owner's in-game money. Any transactions performed by the trader will affect that player's balance.</li>\n<li><b>bank</b> - The trader uses a specified bank account. You must be that bank's owner to use this feature.</li></ul>\n<p><br />\n<span style=\"color:red\">IMPORTANT: </span> This wallets are no longer supported, they will be added through another plugin, sorry for this \n</p>\n<ul><li><b>SimpleClans</b> - The trader uses a specified clan's bank account. A clan tag has to be provided.</li>\n<li><b>Factions</b> - The trader uses a specified faction's bank account. A faction tag has to be provided.</li>\n<li><b>Towny</b> - The trader uses a specified town's bank account. A town tag has to be provided.<br /></li></ul>\n<p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Setting_the_wallet_type\">Setting the wallet type</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/wallets&amp;action=edit&amp;section=3\" title=\"Edit section: Setting the wallet type\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>To set the wallet type use:<br />\n<br />\n/trader wallet [wallet-type] [bank-name <i>OR</i> clan/faction/town tag]<br />\n<br />\nWhen no arguments are supplied the commands returns the current wallet type.<br />\n<br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Managing_a_wallet\">Managing a wallet</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/wallets&amp;action=edit&amp;section=4\" title=\"Edit section: Managing a wallet\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<p>To manage a trader with the NPC wallet type use the following commands:<br />\n<br />\n/trader balance<br />\n/trader withdraw &lt;amount&gt;<br />\n/trader deposit &lt;amount&gt; <i>(a fix for this command will be included in v2.3.0 Beta)</i><br />\n<br />\nNote: Commands will be executed on the currently selected NPC.\n</p>\n<!-- \nNewPP limit report\nCached time: 20261019145856\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.009 seconds\nReal time usage: 0.010 seconds\nPreprocessor visited node count: 11/1000000\nRevision size: 1869/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 9b558663-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Overview",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "DtlTraders/wallets",
+        "byteoffset": 0,
+        "anchor": "Overview",
+        "linkAnchor": "Overview"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Wallet types",
+        "number": "2",
+        "index": "2",
+        "fromtitle": "DtlTraders/wallets",
+        "byteoffset": 309,
+        "anchor": "Wallet_types",
+        "linkAnchor": "Wallet_types"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Setting the wallet type",
+        "number": "3",
+        "index": "3",
+        "fromtitle": "DtlTraders/wallets",
+        "byteoffset": 1325,
+        "anchor": "Setting_the_wallet_type",
+        "linkAnchor": "Setting_the_wallet_type"
+      },
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Managing a wallet",
+        "number": "4",
+        "index": "4",
+        "fromtitle": "DtlTraders/wallets",
+        "byteoffset": 1557,
+        "anchor": "Managing_a_wallet",
+        "linkAnchor": "Managing_a_wallet"
+      }
+    ],
+    "showtoc": ""
+  }
+}

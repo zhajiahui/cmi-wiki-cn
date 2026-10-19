@@ -1,0 +1,33 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes."
+    },
+    "parse": {
+      "*": "\"prop=sections\" has been deprecated. Please use \"prop=tocdata\" instead."
+    }
+  },
+  "parse": {
+    "title": "DtlTraders/Commands",
+    "pageid": 235,
+    "revid": 4887,
+    "text": {
+      "*": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en-GB\" dir=\"ltr\"><p>DtlTraders strives to be as much user friendly as possible so there are only a few important commands to remember. Most tasks can be accomplished without their use.\n</p><p><b>[]</b> - Mandatory <br />\n<b>()</b> - Optional <br /><br />\n</p><p><b>Command</b> - command name <br />\n<b>Args</b> - arguments that must or may be parsed <br />\n<b>Mode</b> - whether the command requires to be in a certain mode <br />\n<b>Description</b> - short description of the command <br />\n</p><p><br />\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Commands\">Commands</h2><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a href=\"/index.php?title=DtlTraders/Commands&amp;action=edit&amp;section=1\" title=\"Edit section: Commands\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></div>\n<div style=\"width:100%;vertical-align:top\">\n<div style=\"display:table;width:100%\">\n<div style=\"display:table-cell;width:160px;border-right:solid 1px black\"><p style=\"margin:0px;padding:2px 10px;\"><b>Command</b></p>\n</div>\n<div style=\"display:table-cell;width:210px;border-right:solid 1px\"><p style=\"margin:0px;padding:2px 10px;\"><b>Args</b></p>\n</div>\n<div style=\"display:table-cell;width:160px;border-right:solid 1px black\"><p style=\"margin:0px;padding:2px 10px;\"><b>Mode</b></p>\n</div>\n<div style=\"display:table-cell;width:380px;\"><p style=\"margin:0px;padding:2px 10px;\"><b>Description</b></p>\n</div>\n</div>\n<div style=\"display:table;width:100%\">\n<div style=\"display:table-cell;width:160px;background-color: #F9F9F9;border-top:solid 1px\">\n<p style=\"margin:0px;padding:2px 10px\"><code style=\"margin:0px;display:block\">/trader </code></p>\n</div>\n<div style=\"display:table-cell;width:210px;background-color: #F9F9F9;border-top:solid 1px\">\n<p style=\"margin:0px;padding:2px 10px\"><code style=\"margin:0px;display:block\">no arguments</code></p>\n</div>\n<div style=\"display:table-cell;width:160px;background-color: #F9F9F9;border-top:solid 1px\">\n<p style=\"margin:0px;padding:2px 10px\"><code style=\"margin:0px;display:block;color:green\">no mode required</code></p>\n</div>\n<div style=\"display:table-cell;width:380px;background-color: #F9F9F9;border-top:solid 1px\">\n<p style=\"margin:0px;padding:2px 10px\"><code style=\"margin:0px;display:block\">shows info about the current selected trader or just the plugin version</code></p>\n</div>\n</div>\n<p><br />\n</p>\n</div>\n<!-- \nNewPP limit report\nCached time: 20261019145850\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.018 seconds\nReal time usage: 0.028 seconds\nPreprocessor visited node count: 3/1000000\nRevision size: 2082/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Render ID 97c1ff66-cbcd-11f1-a343-1649ce6f10f7 -->\n</div>"
+    },
+    "links": [],
+    "images": [],
+    "sections": [
+      {
+        "toclevel": 1,
+        "level": "2",
+        "line": "Commands",
+        "number": "1",
+        "index": "1",
+        "fromtitle": "DtlTraders/Commands",
+        "byteoffset": 456,
+        "anchor": "Commands",
+        "linkAnchor": "Commands"
+      }
+    ]
+  }
+}

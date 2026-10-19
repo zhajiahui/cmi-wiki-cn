@@ -1,0 +1,271 @@
+{
+  "project": "packetevents",
+  "snapshot": {
+    "date": "2026-10-19",
+    "timezone": "Asia/Taipei",
+    "manifest_generated_at": "2026-10-19T15:53:03.088Z"
+  },
+  "version": {
+    "supplied_component_version": "2.14.0",
+    "repository_revision": "7ceabaef7350e512c4b4cd88f9eb982d93f77029",
+    "docs_revision": "a2a91c32fe7ff913413072ab0e51fe95a36f4028"
+  },
+  "scope": "全部已发现官方非 API 文档；纯 API/SDK 接口参考排除，混合页面仅按列明片段排除。",
+  "candidate_urls": [
+    "https://docs.packetevents.com/",
+    "https://docs.packetevents.com/introduction/prerequisites/",
+    "https://docs.packetevents.com/introduction/the-problem-of-bundling/",
+    "https://docs.packetevents.com/faq/",
+    "https://github.com/retrooper/packetevents/blob/7ceabaef7350e512c4b4cd88f9eb982d93f77029/README.md",
+    "https://docs.packetevents.com/introduction/a-developers-introduction/",
+    "https://docs.packetevents.com/introduction/development-setup/",
+    "https://docs.packetevents.com/processing-and-sending/advanced-packetevents-example-combining-our-knowledge/",
+    "https://docs.packetevents.com/processing-and-sending/master/",
+    "https://docs.packetevents.com/sending-and-simulating-packets/",
+    "https://docs.packetevents.com/setup-when-bundling/a-beginners-guide-to-bundling/",
+    "https://docs.packetevents.com/setup-when-bundling/master/",
+    "https://docs.packetevents.com/setup-when-bundling/tweaking-packetevents/",
+    "https://docs.packetevents.com/404/",
+    "https://javadocs.packetevents.com/",
+    "https://docs.packetevents.com/development-setup"
+  ],
+  "candidates": [
+    {
+      "url": "https://docs.packetevents.com/",
+      "status": "translated",
+      "file": "wiki/index.md",
+      "source_file": "sources/wiki/original/index.md",
+      "source_sha256": "92712a3df17753a55f48e62ba41ba4cf24cdc14202efc6fa4dad690e1cfa2e7f"
+    },
+    {
+      "url": "https://docs.packetevents.com/introduction/prerequisites/",
+      "status": "translated",
+      "file": "wiki/introduction/prerequisites.md",
+      "source_file": "sources/wiki/original/introduction/prerequisites.md",
+      "source_sha256": "7c79fd38586c6f53564595054375c1e9def826bafaaab99cdd85a5a82592d1ca"
+    },
+    {
+      "url": "https://docs.packetevents.com/introduction/the-problem-of-bundling/",
+      "status": "translated",
+      "file": "wiki/introduction/the-problem-of-bundling.md",
+      "source_file": "sources/wiki/original/introduction/the-problem-of-bundling.md",
+      "source_sha256": "25becd433d430bed3c384c01890b742a7dbc2586446fb71a12bc404587f183d8"
+    },
+    {
+      "url": "https://docs.packetevents.com/faq/",
+      "status": "translated",
+      "file": "wiki/faq.md",
+      "source_file": "sources/wiki/original/faq.md",
+      "source_sha256": "7d087919a47791b58f10093b21e4cbc3cd35ff76723cbf0ac63b546c91773538"
+    },
+    {
+      "url": "https://github.com/retrooper/packetevents/blob/7ceabaef7350e512c4b4cd88f9eb982d93f77029/README.md",
+      "status": "translated",
+      "file": "wiki/readme.md",
+      "source_file": "sources/wiki/original/readme.md",
+      "source_sha256": "58d537fd533b0dc15720d4ded7c2a8691289420c4c4ef088b417529c96caf992"
+    },
+    {
+      "url": "https://docs.packetevents.com/introduction/a-developers-introduction/",
+      "status": "excluded_api",
+      "reason": "PacketEvents SDK 开发环境、实例生命周期、设置接口或数据包监听/发送接口参考。",
+      "source_file": "sources/wiki/original/introduction/a-developers-introduction.md",
+      "availability_evidence": "原文包含在已固定提交的官方文档仓库快照中",
+      "source_sha256": "2277c63fd530864fd2654084ee386d2849a2233f37e6462b288a524a8b198065"
+    },
+    {
+      "url": "https://docs.packetevents.com/introduction/development-setup/",
+      "status": "excluded_api",
+      "reason": "PacketEvents SDK 开发环境、实例生命周期、设置接口或数据包监听/发送接口参考。",
+      "source_file": "sources/wiki/original/introduction/development-setup.md",
+      "availability_evidence": "原文包含在已固定提交的官方文档仓库快照中",
+      "source_sha256": "0ce1a8a98b01b70c03882fc3c896944493db3d8e1c4d66e6b07050c90ec9867d"
+    },
+    {
+      "url": "https://docs.packetevents.com/processing-and-sending/advanced-packetevents-example-combining-our-knowledge/",
+      "status": "excluded_api",
+      "reason": "PacketEvents SDK 开发环境、实例生命周期、设置接口或数据包监听/发送接口参考。",
+      "source_file": "sources/wiki/original/processing-and-sending/advanced-packetevents-example-combining-our-knowledge.md",
+      "availability_evidence": "原文包含在已固定提交的官方文档仓库快照中",
+      "source_sha256": "29ef65aa1bc3dfd77f8ceb60cb551a59b5e339b2e68fa3ea80c0acbb31ea4570"
+    },
+    {
+      "url": "https://docs.packetevents.com/processing-and-sending/master/",
+      "status": "excluded_api",
+      "reason": "PacketEvents SDK 开发环境、实例生命周期、设置接口或数据包监听/发送接口参考。",
+      "source_file": "sources/wiki/original/processing-and-sending/master.md",
+      "availability_evidence": "原文包含在已固定提交的官方文档仓库快照中",
+      "source_sha256": "868dd702f0eac354d54e76cbc62b797f2be4dbd3478eb72d264bdbfb1730edb4"
+    },
+    {
+      "url": "https://docs.packetevents.com/sending-and-simulating-packets/",
+      "status": "excluded_api",
+      "reason": "PacketEvents SDK 开发环境、实例生命周期、设置接口或数据包监听/发送接口参考。",
+      "source_file": "sources/wiki/original/processing-and-sending/sending-and-simulating-packets.md",
+      "availability_evidence": "原文包含在已固定提交的官方文档仓库快照中",
+      "source_sha256": "418a3c9df00b85209b64e8b1aca05cd63b07499ecbde4449df1fc6d0ae26b137"
+    },
+    {
+      "url": "https://docs.packetevents.com/setup-when-bundling/a-beginners-guide-to-bundling/",
+      "status": "excluded_api",
+      "reason": "PacketEvents SDK 开发环境、实例生命周期、设置接口或数据包监听/发送接口参考。",
+      "source_file": "sources/wiki/original/setup-when-bundling/a-beginners-guide-to-bundling.md",
+      "availability_evidence": "原文包含在已固定提交的官方文档仓库快照中",
+      "source_sha256": "e4ff44b2e51fdd4b68fc0611c8653aa455e24b800cd45fc17f2f7876233d9b8c"
+    },
+    {
+      "url": "https://docs.packetevents.com/setup-when-bundling/master/",
+      "status": "excluded_api",
+      "reason": "PacketEvents SDK 开发环境、实例生命周期、设置接口或数据包监听/发送接口参考。",
+      "source_file": "sources/wiki/original/setup-when-bundling/master.md",
+      "availability_evidence": "原文包含在已固定提交的官方文档仓库快照中",
+      "source_sha256": "3d3b1da1f36292574d6b546cb2d37b1f7758aff8fd0259ad2b89ebb712dcba6e"
+    },
+    {
+      "url": "https://docs.packetevents.com/setup-when-bundling/tweaking-packetevents/",
+      "status": "excluded_api",
+      "reason": "PacketEvents SDK 开发环境、实例生命周期、设置接口或数据包监听/发送接口参考。",
+      "source_file": "sources/wiki/original/setup-when-bundling/tweaking-packetevents.md",
+      "availability_evidence": "原文包含在已固定提交的官方文档仓库快照中",
+      "source_sha256": "b0a71c4e3c77ad41164a65cb332074c7584eef09c6a9e3eef0f57695879ee2b1"
+    },
+    {
+      "url": "https://docs.packetevents.com/404/",
+      "status": "unavailable",
+      "reason": "仓库自定义 404 模板，不是文档章节。",
+      "source_file": "sources/wiki/original/404.md",
+      "availability_evidence": "原文包含在已固定提交的官方文档仓库快照中",
+      "source_sha256": "dad605bb76d3676b2caa96e018ec4130ef81b8a4781efd6e89d40740f751a16c"
+    },
+    {
+      "url": "https://javadocs.packetevents.com/",
+      "status": "excluded_api",
+      "reason": "JavaDoc API 参考目录，按目录整体排除。"
+    },
+    {
+      "url": "https://docs.packetevents.com/development-setup",
+      "status": "excluded_api",
+      "reason": "README 旧接入地址，已验证跳转至现行 SDK 接入页面。",
+      "source_file": "sources/wiki/html/legacy-development-setup.html",
+      "http_status": 200,
+      "replacement_url": "https://docs.packetevents.com/introduction/development-setup/",
+      "source_sha256": "bb0f6c98d7c6f155a0a41a15e8a19ef51555c65b7e99997c6d9cb45f6eb7d6c9"
+    }
+  ],
+  "excluded_api": [
+    {
+      "url": "https://docs.packetevents.com/introduction/a-developers-introduction/",
+      "status": "excluded_api",
+      "reason": "PacketEvents SDK 开发环境、实例生命周期、设置接口或数据包监听/发送接口参考。",
+      "source_file": "sources/wiki/original/introduction/a-developers-introduction.md",
+      "availability_evidence": "原文包含在已固定提交的官方文档仓库快照中",
+      "source_sha256": "2277c63fd530864fd2654084ee386d2849a2233f37e6462b288a524a8b198065"
+    },
+    {
+      "url": "https://docs.packetevents.com/introduction/development-setup/",
+      "status": "excluded_api",
+      "reason": "PacketEvents SDK 开发环境、实例生命周期、设置接口或数据包监听/发送接口参考。",
+      "source_file": "sources/wiki/original/introduction/development-setup.md",
+      "availability_evidence": "原文包含在已固定提交的官方文档仓库快照中",
+      "source_sha256": "0ce1a8a98b01b70c03882fc3c896944493db3d8e1c4d66e6b07050c90ec9867d"
+    },
+    {
+      "url": "https://docs.packetevents.com/processing-and-sending/advanced-packetevents-example-combining-our-knowledge/",
+      "status": "excluded_api",
+      "reason": "PacketEvents SDK 开发环境、实例生命周期、设置接口或数据包监听/发送接口参考。",
+      "source_file": "sources/wiki/original/processing-and-sending/advanced-packetevents-example-combining-our-knowledge.md",
+      "availability_evidence": "原文包含在已固定提交的官方文档仓库快照中",
+      "source_sha256": "29ef65aa1bc3dfd77f8ceb60cb551a59b5e339b2e68fa3ea80c0acbb31ea4570"
+    },
+    {
+      "url": "https://docs.packetevents.com/processing-and-sending/master/",
+      "status": "excluded_api",
+      "reason": "PacketEvents SDK 开发环境、实例生命周期、设置接口或数据包监听/发送接口参考。",
+      "source_file": "sources/wiki/original/processing-and-sending/master.md",
+      "availability_evidence": "原文包含在已固定提交的官方文档仓库快照中",
+      "source_sha256": "868dd702f0eac354d54e76cbc62b797f2be4dbd3478eb72d264bdbfb1730edb4"
+    },
+    {
+      "url": "https://docs.packetevents.com/sending-and-simulating-packets/",
+      "status": "excluded_api",
+      "reason": "PacketEvents SDK 开发环境、实例生命周期、设置接口或数据包监听/发送接口参考。",
+      "source_file": "sources/wiki/original/processing-and-sending/sending-and-simulating-packets.md",
+      "availability_evidence": "原文包含在已固定提交的官方文档仓库快照中",
+      "source_sha256": "418a3c9df00b85209b64e8b1aca05cd63b07499ecbde4449df1fc6d0ae26b137"
+    },
+    {
+      "url": "https://docs.packetevents.com/setup-when-bundling/a-beginners-guide-to-bundling/",
+      "status": "excluded_api",
+      "reason": "PacketEvents SDK 开发环境、实例生命周期、设置接口或数据包监听/发送接口参考。",
+      "source_file": "sources/wiki/original/setup-when-bundling/a-beginners-guide-to-bundling.md",
+      "availability_evidence": "原文包含在已固定提交的官方文档仓库快照中",
+      "source_sha256": "e4ff44b2e51fdd4b68fc0611c8653aa455e24b800cd45fc17f2f7876233d9b8c"
+    },
+    {
+      "url": "https://docs.packetevents.com/setup-when-bundling/master/",
+      "status": "excluded_api",
+      "reason": "PacketEvents SDK 开发环境、实例生命周期、设置接口或数据包监听/发送接口参考。",
+      "source_file": "sources/wiki/original/setup-when-bundling/master.md",
+      "availability_evidence": "原文包含在已固定提交的官方文档仓库快照中",
+      "source_sha256": "3d3b1da1f36292574d6b546cb2d37b1f7758aff8fd0259ad2b89ebb712dcba6e"
+    },
+    {
+      "url": "https://docs.packetevents.com/setup-when-bundling/tweaking-packetevents/",
+      "status": "excluded_api",
+      "reason": "PacketEvents SDK 开发环境、实例生命周期、设置接口或数据包监听/发送接口参考。",
+      "source_file": "sources/wiki/original/setup-when-bundling/tweaking-packetevents.md",
+      "availability_evidence": "原文包含在已固定提交的官方文档仓库快照中",
+      "source_sha256": "b0a71c4e3c77ad41164a65cb332074c7584eef09c6a9e3eef0f57695879ee2b1"
+    },
+    {
+      "url": "https://javadocs.packetevents.com/",
+      "status": "excluded_api",
+      "reason": "JavaDoc API 参考目录，按目录整体排除。"
+    },
+    {
+      "url": "https://docs.packetevents.com/development-setup",
+      "status": "excluded_api",
+      "reason": "README 旧接入地址，已验证跳转至现行 SDK 接入页面。",
+      "source_file": "sources/wiki/html/legacy-development-setup.html",
+      "http_status": 200,
+      "replacement_url": "https://docs.packetevents.com/introduction/development-setup/",
+      "source_sha256": "bb0f6c98d7c6f155a0a41a15e8a19ef51555c65b7e99997c6d9cb45f6eb7d6c9"
+    }
+  ],
+  "unavailable": [
+    {
+      "url": "https://docs.packetevents.com/404/",
+      "status": "unavailable",
+      "reason": "仓库自定义 404 模板，不是文档章节。",
+      "source_file": "sources/wiki/original/404.md",
+      "availability_evidence": "原文包含在已固定提交的官方文档仓库快照中",
+      "source_sha256": "dad605bb76d3676b2caa96e018ec4130ef81b8a4781efd6e89d40740f751a16c"
+    }
+  ],
+  "actual_page_count": 5,
+  "translated_pages": 5,
+  "untranslated_available_non_api_pages": 0,
+  "all_discovered_candidates_classified": true,
+  "independent_wiki_found": true,
+  "assets": {
+    "ledger": "sources/wiki/assets.json",
+    "archived_source_entries": 11,
+    "unique_local_files": 11,
+    "unavailable": []
+  },
+  "validation": {
+    "status": "failed",
+    "report": "sources/wiki/validation.json",
+    "verbatim_code_blocks": 0,
+    "protected_inline_tokens": 0,
+    "source_table_rows": 4,
+    "translated_table_rows": 4,
+    "pages": 5,
+    "native_asset_files": 11,
+    "local_image_references": 11,
+    "errors": [
+      "Duplicate HTML anchors wiki/readme.md"
+    ],
+    "warnings": []
+  }
+}

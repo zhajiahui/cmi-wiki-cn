@@ -1,0 +1,302 @@
+{
+  "project": "bStats",
+  "snapshot": {
+    "date": "2026-10-19",
+    "timezone": "Asia/Taipei",
+    "manifest_generated_at": "2026-10-19T15:53:03.124Z"
+  },
+  "version": {
+    "supplied_sdk_version": null,
+    "terms_last_updated": "2025/12/04",
+    "plugin_privacy_last_updated": "2025/12/04",
+    "website_privacy_last_updated": "2025/11/10"
+  },
+  "scope": "全部已发现官方非 API 文档；纯 API/SDK 接口参考排除，混合页面仅按列明片段排除。",
+  "candidate_urls": [
+    "https://bstats.org/",
+    "https://bstats.org/docs",
+    "https://bstats.org/docs/server-owners",
+    "https://bstats.org/docs/troubleshooting",
+    "https://bstats.org/faq",
+    "https://bstats.org/docs/custom-charts",
+    "https://github.com/Bastian/bStats/blob/master/README.md",
+    "https://bstats.org/terms-of-use",
+    "https://bstats.org/privacy-policy",
+    "https://bstats.org/imprint",
+    "https://bstats.org/credits",
+    "https://bstats.org/docs/rest-api",
+    "https://bstats.org/add-plugin",
+    "https://bstats.org/getting-started",
+    "https://bstats.org/getting-started/metrics-class",
+    "https://bstats.org/help/custom-charts",
+    "https://bstats.org/help/rest-api"
+  ],
+  "candidates": [
+    {
+      "url": "https://bstats.org/",
+      "status": "translated",
+      "file": "wiki/home.md",
+      "source_file": "sources/wiki/original/home.md",
+      "source_sha256": "1e175431a4a8000e07ef1771e53c2e4bca11e8d125d12ae91d5db7109a5d6c1b",
+      "excluded_api_sections": [
+        {
+          "url": "https://bstats.org/",
+          "scope": "sections_only",
+          "reason": "只排除 Metrics/SimplePie Java API 示例；其余服务说明、接入步骤、展示统计和赞助内容全译。",
+          "sections": [
+            "Example (Bukkit / Spigot) Java 代码块"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://bstats.org/docs",
+      "status": "translated",
+      "file": "wiki/getting-started.md",
+      "source_file": "sources/wiki/original/getting-started.md",
+      "source_sha256": "aa84ade87c00dca5ab3840beece30707f3c67251b99818c97a7f2fa7971349ee"
+    },
+    {
+      "url": "https://bstats.org/docs/server-owners",
+      "status": "translated",
+      "file": "wiki/server-owners.md",
+      "source_file": "sources/wiki/original/server-owners.md",
+      "source_sha256": "b2cd8779a2e813881e5caa308476110387630b2f91c03bcac52f4a71428d36e9"
+    },
+    {
+      "url": "https://bstats.org/docs/troubleshooting",
+      "status": "translated",
+      "file": "wiki/troubleshooting.md",
+      "source_file": "sources/wiki/original/troubleshooting.md",
+      "source_sha256": "1e409b0b1a22025a5730506986155b26e88bc5d2918807b9a39f56e5bbf00ba5"
+    },
+    {
+      "url": "https://bstats.org/faq",
+      "status": "translated",
+      "file": "wiki/faq.md",
+      "source_file": "sources/wiki/original/faq.md",
+      "source_sha256": "0a2bdb16d277a25f7d1a866f4f2126841b14d4275eaee343b0b85ead124137ba"
+    },
+    {
+      "url": "https://bstats.org/docs/custom-charts",
+      "status": "translated",
+      "file": "wiki/custom-charts.md",
+      "source_file": "sources/wiki/original/custom-charts.md",
+      "source_sha256": "ba7ba1f0b292587652763bbd09648883f4ea660aa3cf225f8e547d410414c169",
+      "excluded_api_sections": [
+        {
+          "url": "https://bstats.org/docs/custom-charts",
+          "scope": "sections_only",
+          "reason": "仅排除 Java/PHP API 实现示例及语言切换控件；图表用途、网站注册步骤、全部图表类型和开发状态保留。",
+          "sections": [
+            "SimplePie",
+            "AdvancedPie",
+            "DrilldownPie",
+            "SingleLineChart",
+            "MultiLineChart",
+            "SimpleBarChart",
+            "AdvancedBarChart"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/Bastian/bStats/blob/master/README.md",
+      "status": "translated",
+      "file": "wiki/readme.md",
+      "source_file": "sources/wiki/original/readme.md",
+      "source_sha256": "433fb1676433d4516a4d944cfbeb7c4331af43534d3eafd06913b853527b3072"
+    },
+    {
+      "url": "https://bstats.org/terms-of-use",
+      "status": "translated",
+      "file": "wiki/terms-of-use.md",
+      "source_file": "sources/wiki/original/terms-of-use.md",
+      "source_sha256": "bd76a7a1cea39704de36e4eb85264b25378926f725957044f26d3e4c57c8bda1"
+    },
+    {
+      "url": "https://bstats.org/privacy-policy",
+      "status": "translated",
+      "file": "wiki/privacy-policy.md",
+      "source_file": "sources/wiki/original/privacy-policy.md",
+      "source_sha256": "c5db746cdb17f6116ca65ba778c3f94b22e3884269f14ae8ccd7b09fef21f79d"
+    },
+    {
+      "url": "https://bstats.org/imprint",
+      "status": "translated",
+      "file": "wiki/imprint.md",
+      "source_file": "sources/wiki/original/imprint.md",
+      "source_sha256": "88855c81006302c27aeb5149086aa7bcc62f6f0747dd6eb7663a45834c4df0fa"
+    },
+    {
+      "url": "https://bstats.org/credits",
+      "status": "translated",
+      "file": "wiki/credits.md",
+      "source_file": "sources/wiki/original/credits.md",
+      "source_sha256": "04b1a29fe2aa3fde53460b5c5d6bf8e631f308b43cbb2980208059e6601d4a31"
+    },
+    {
+      "url": "https://bstats.org/docs/rest-api",
+      "status": "excluded_api",
+      "reason": "公开 HTTP REST API 端点与返回数据参考。",
+      "source_file": "sources/wiki/original/rest-api.md",
+      "http_status": 200,
+      "source_sha256": "56d68a92d3d4f4fbd44e27c784acf1245195056def20a2a609c250439a5ba3d7"
+    },
+    {
+      "url": "https://bstats.org/add-plugin",
+      "status": "excluded_api",
+      "reason": "六步 Metrics SDK 接入向导，主体为依赖及实例化接口；一般注册说明已在服务主页全文收录。",
+      "source_file": "sources/wiki/html/integration-wizard.html",
+      "http_status": 200,
+      "source_sha256": "8c746b6d961ebf16252dacd5b0abe8af0fdf84db55cacbc013f532acd77d3522"
+    },
+    {
+      "url": "https://bstats.org/getting-started",
+      "status": "unavailable",
+      "reason": "官方 sitemap 仍列出的旧地址，本次返回 HTTP 404；现行入口另有覆盖或明确 API 排除。",
+      "source_file": "sources/wiki/html/legacy-getting-started.html",
+      "http_status": 404,
+      "replacement_url": "https://bstats.org/docs",
+      "source_sha256": "b01e6a8fb2daa8d97fea7a765dde541c2695d2c3ec0bda85ce556e5fb53a347d"
+    },
+    {
+      "url": "https://bstats.org/getting-started/metrics-class",
+      "status": "unavailable",
+      "reason": "官方 sitemap 仍列出的旧地址，本次返回 HTTP 404；现行入口另有覆盖或明确 API 排除。",
+      "source_file": "sources/wiki/html/legacy-metrics-class.html",
+      "http_status": 404,
+      "replacement_url": "https://bstats.org/add-plugin",
+      "source_sha256": "01573b65fdc5f14d6489e96a84efd80a9f3e9e37a10ce82e415b9a030e25d20f"
+    },
+    {
+      "url": "https://bstats.org/help/custom-charts",
+      "status": "unavailable",
+      "reason": "官方 sitemap 仍列出的旧地址，本次返回 HTTP 404；现行入口另有覆盖或明确 API 排除。",
+      "source_file": "sources/wiki/html/legacy-custom-charts.html",
+      "http_status": 404,
+      "replacement_url": "https://bstats.org/docs/custom-charts",
+      "source_sha256": "d60ada2f21bc0d7896097ec8799701ee86183ee70ef4de7fe32e45c54313c929"
+    },
+    {
+      "url": "https://bstats.org/help/rest-api",
+      "status": "unavailable",
+      "reason": "官方 sitemap 仍列出的旧地址，本次返回 HTTP 404；现行入口另有覆盖或明确 API 排除。",
+      "source_file": "sources/wiki/html/legacy-rest-api.html",
+      "http_status": 404,
+      "replacement_url": "https://bstats.org/docs/rest-api",
+      "source_sha256": "0eb0563ea6435f117ede9be6fd72214db0d6d95ce4c674eba942dc2278d7fe2a"
+    }
+  ],
+  "excluded_api": [
+    {
+      "url": "https://bstats.org/docs/rest-api",
+      "status": "excluded_api",
+      "reason": "公开 HTTP REST API 端点与返回数据参考。",
+      "source_file": "sources/wiki/original/rest-api.md",
+      "http_status": 200,
+      "source_sha256": "56d68a92d3d4f4fbd44e27c784acf1245195056def20a2a609c250439a5ba3d7"
+    },
+    {
+      "url": "https://bstats.org/add-plugin",
+      "status": "excluded_api",
+      "reason": "六步 Metrics SDK 接入向导，主体为依赖及实例化接口；一般注册说明已在服务主页全文收录。",
+      "source_file": "sources/wiki/html/integration-wizard.html",
+      "http_status": 200,
+      "source_sha256": "8c746b6d961ebf16252dacd5b0abe8af0fdf84db55cacbc013f532acd77d3522"
+    },
+    {
+      "url": "https://bstats.org/",
+      "scope": "sections_only",
+      "reason": "只排除 Metrics/SimplePie Java API 示例；其余服务说明、接入步骤、展示统计和赞助内容全译。",
+      "sections": [
+        "Example (Bukkit / Spigot) Java 代码块"
+      ]
+    },
+    {
+      "url": "https://bstats.org/docs/custom-charts",
+      "scope": "sections_only",
+      "reason": "仅排除 Java/PHP API 实现示例及语言切换控件；图表用途、网站注册步骤、全部图表类型和开发状态保留。",
+      "sections": [
+        "SimplePie",
+        "AdvancedPie",
+        "DrilldownPie",
+        "SingleLineChart",
+        "MultiLineChart",
+        "SimpleBarChart",
+        "AdvancedBarChart"
+      ]
+    }
+  ],
+  "unavailable": [
+    {
+      "url": "https://bstats.org/getting-started",
+      "status": "unavailable",
+      "reason": "官方 sitemap 仍列出的旧地址，本次返回 HTTP 404；现行入口另有覆盖或明确 API 排除。",
+      "source_file": "sources/wiki/html/legacy-getting-started.html",
+      "http_status": 404,
+      "replacement_url": "https://bstats.org/docs",
+      "source_sha256": "b01e6a8fb2daa8d97fea7a765dde541c2695d2c3ec0bda85ce556e5fb53a347d"
+    },
+    {
+      "url": "https://bstats.org/getting-started/metrics-class",
+      "status": "unavailable",
+      "reason": "官方 sitemap 仍列出的旧地址，本次返回 HTTP 404；现行入口另有覆盖或明确 API 排除。",
+      "source_file": "sources/wiki/html/legacy-metrics-class.html",
+      "http_status": 404,
+      "replacement_url": "https://bstats.org/add-plugin",
+      "source_sha256": "01573b65fdc5f14d6489e96a84efd80a9f3e9e37a10ce82e415b9a030e25d20f"
+    },
+    {
+      "url": "https://bstats.org/help/custom-charts",
+      "status": "unavailable",
+      "reason": "官方 sitemap 仍列出的旧地址，本次返回 HTTP 404；现行入口另有覆盖或明确 API 排除。",
+      "source_file": "sources/wiki/html/legacy-custom-charts.html",
+      "http_status": 404,
+      "replacement_url": "https://bstats.org/docs/custom-charts",
+      "source_sha256": "d60ada2f21bc0d7896097ec8799701ee86183ee70ef4de7fe32e45c54313c929"
+    },
+    {
+      "url": "https://bstats.org/help/rest-api",
+      "status": "unavailable",
+      "reason": "官方 sitemap 仍列出的旧地址，本次返回 HTTP 404；现行入口另有覆盖或明确 API 排除。",
+      "source_file": "sources/wiki/html/legacy-rest-api.html",
+      "http_status": 404,
+      "replacement_url": "https://bstats.org/docs/rest-api",
+      "source_sha256": "0eb0563ea6435f117ede9be6fd72214db0d6d95ce4c674eba942dc2278d7fe2a"
+    }
+  ],
+  "actual_page_count": 11,
+  "translated_pages": 11,
+  "untranslated_available_non_api_pages": 0,
+  "all_discovered_candidates_classified": true,
+  "independent_wiki_found": true,
+  "assets": {
+    "ledger": "sources/wiki/assets.json",
+    "archived_source_entries": 4,
+    "unique_local_files": 4,
+    "unavailable": []
+  },
+  "validation": {
+    "status": "failed",
+    "report": "sources/wiki/validation.json",
+    "verbatim_code_blocks": 5,
+    "protected_inline_tokens": 30,
+    "source_table_rows": 0,
+    "translated_table_rows": 5,
+    "pages": 11,
+    "native_asset_files": 4,
+    "local_image_references": 4,
+    "errors": [
+      "Duplicate HTML anchors wiki/custom-charts.md"
+    ],
+    "warnings": [
+      {
+        "file": "wiki/home.md",
+        "numeric_review": [
+          "17543"
+        ]
+      }
+    ]
+  }
+}
