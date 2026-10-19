@@ -10,6 +10,14 @@ ROOT=Path(__file__).resolve().parent.parent
 SITE=ROOT/'.cache/site'
 SITE_ROOT=SITE.resolve()
 errors=[]
+
+def page_manifest(project):
+    source=ROOT/project/'sources'
+    rows=json.loads((source/'manifest.json').read_text(encoding='utf-8'))
+    if project=='CMI':
+        rows+=json.loads((source/'configuration-manifest.json').read_text(encoding='utf-8'))
+    return rows
+
 tab_addresses={base+'index.html':('Phoenix' if (project,base) in PHOENIX_PROJECTS else project) for project,base in PROJECTS}
 class DocumentFacts(HTMLParser):
     """Read links, anchors and tab labels without constructing a full page DOM."""
@@ -61,7 +69,7 @@ for path,urls in references.items():
             fragment=unquote(parts.fragment)
             if fragment not in anchors[target]:errors.append(f'Broken anchor: {path.relative_to(SITE)}: {url}')
 for project,base in PROJECTS:
-    manifest=json.loads((ROOT/project/'sources/manifest.json').read_text(encoding='utf-8'))
+    manifest=page_manifest(project)
     for row in manifest:
         file=Path(base+row['file'])
         output=(SITE/file.parent/'index.html') if file.name=='index.md' else (SITE/file.with_suffix('')/'index.html')
@@ -73,7 +81,7 @@ search=json.loads((SITE/'search/search_index.json').read_text(encoding='utf-8'))
 project_pages={}
 for name,base in PROJECTS:
     items=[row for row in search['docs'] if '#' not in row['location'] and (row['location'].startswith(base) if base else not row['location'].startswith(tuple(prefix for _,prefix in PROJECTS if prefix)))]
-    expected=json.loads((ROOT/name/'sources/manifest.json').read_text(encoding='utf-8'))
+    expected=page_manifest(name)
     if len(items)!=len(expected):errors.append('Search page coverage mismatch: '+name)
     if any(not item['title'].startswith(name+' · ') or name not in item.get('tags',[]) for item in items):errors.append('Search project labels missing: '+name)
     project_pages[name]=len(items)

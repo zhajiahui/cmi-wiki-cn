@@ -64,6 +64,31 @@ nav:
 - 前言: index.md
 - 开始使用:
   - 首次运行: first-run.md
+- 配置文件:
+  - 文件目录: configuration/index.md
+  - 主配置（config.yml）: configuration/main.md
+  - 自定义别名（CustomAlias.yml）: configuration/customalias.md
+  - 礼包（Kits.yml）: configuration/kits.md
+  - 暂离与闲置（Afk.yml）: configuration/afk.md
+  - 命令别名（Alias.yml）: configuration/alias.md
+  - 数据备份（BackUps.yml）: configuration/backups.md
+  - 聊天（Chat.yml）: configuration/chat.md
+  - 聊天过滤（ChatFilter.yml）: configuration/chatfilter.md
+  - 战斗状态（Combat.yml）: configuration/combat.md
+  - 命令费用（CommandCost.yml）: configuration/commandcost.md
+  - 自定义头颅（CustomHeads.yml）: configuration/customheads.md
+  - 数据库连接（DataBaseInfo.yml）: configuration/databaseinfo.md
+  - 死亡消息（DeathMessages.yml）: configuration/deathmessages.md
+  - 事件命令（EventCommands.yml）: configuration/eventcommands.md
+  - 事件优先级（EventPriorities.yml）: configuration/eventpriorities.md
+  - 家（Homes.yml）: configuration/homes.md
+  - 功能模块（Modules.yml）: configuration/modules.md
+  - 粒子效果（ParticleEffects.yml）: configuration/particleeffects.md
+  - 随机传送（RandomTeleportations.yml）: configuration/randomteleportations.md
+  - 自动晋级（Ranks.yml）: configuration/ranks.md
+  - 物品分解（Scavenge.yml）: configuration/scavenge.md
+  - 定时任务（Schedules.yml）: configuration/schedules.md
+  - TAB 列表（TabList.yml）: configuration/tablist.md
 - 指令:
   - 指令列表: commands.md
   - 自定义别名: commands/custom-alias.md

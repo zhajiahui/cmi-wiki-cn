@@ -25,6 +25,9 @@ vm.runInContext(fs.readFileSync(path.join(workers, worker), 'utf8'), context, {f
   await listener({data: {type: 0, data: {...data, options: {suggest: true}}}});
   if (messages.pop()?.type !== 1) throw new Error('Worker did not become ready');
   const queries = [
+    ['Afk.AutoAfkCmds', 'configuration/afk/'],
+    ['EnchantExtractionFail', 'configuration/scavenge/'],
+    ['DataBaseInfo.yml', 'configuration/'],
     ['typewriter.connect', 'typewriter/docs/helpful-features/commands/'],
     ['Give Item Action', 'typewriter/adapters/BasicAdapter/entries/action/give_item/'],
     ['交互边界', 'typewriter/'],

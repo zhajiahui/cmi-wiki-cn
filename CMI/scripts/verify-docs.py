@@ -11,6 +11,7 @@ DOCS = BASE / 'docs'
 errors = []
 rows = json.loads((BASE / 'sources/pages.json').read_text(encoding='utf-8'))
 manifest = json.loads((BASE / 'sources/manifest.json').read_text(encoding='utf-8'))
+configuration_manifest = json.loads((BASE / 'sources/configuration-manifest.json').read_text(encoding='utf-8'))
 assets = json.loads((BASE / 'sources/assets.json').read_text(encoding='utf-8'))
 expected = {r['id'] for r in rows if (BASE / 'sources/en' / f"{r['id']}.md").read_text(encoding='utf-8').strip()}
 actual = {r['source_id'] for r in manifest}
@@ -25,7 +26,7 @@ def navfiles(items):
             else:
                 yield value
 nav = list(navfiles(config['nav']))
-if set(nav) != {r['file'] for r in manifest}:
+if set(nav) != {r['file'] for r in manifest + configuration_manifest}:
     errors.append('Navigation does not cover exactly the translated pages')
 if len(nav) != len(set(nav)):
     errors.append('Duplicate navigation entries')
@@ -102,7 +103,7 @@ for url, info in assets.items():
     path = DOCS / info['file']
     if not path.exists() or hashlib.sha256(path.read_bytes()).hexdigest() != info['sha256']:
         errors.append('Asset hash mismatch: ' + info['file'])
-report = {'source_pages': len(rows), 'translated_pages': len(manifest), 'empty_source_pages': len(rows)-len(expected), 'assets': len(assets), 'verbatim_source_code_blocks': blocks, 'translated_help_blocks': translated_help_blocks, 'errors': errors}
+report = {'source_pages': len(rows), 'translated_pages': len(manifest), 'configuration_pages': len(configuration_manifest), 'empty_source_pages': len(rows)-len(expected), 'assets': len(assets), 'verbatim_source_code_blocks': blocks, 'translated_help_blocks': translated_help_blocks, 'errors': errors}
 print(json.dumps(report, ensure_ascii=False, indent=2))
 if errors:
     sys.exit(1)

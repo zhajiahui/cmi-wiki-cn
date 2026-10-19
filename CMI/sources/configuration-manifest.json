@@ -1,0 +1,170 @@
+[
+  {
+    "file": "configuration/main.md",
+    "title": "主配置（config.yml）",
+    "source_kind": "configuration-comments",
+    "source_sha256": "8e4d71d5d628b87a35b9b1c09ae78f228f8e7a5a3505388706a7de6263153a2c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "configuration/customalias.md",
+    "title": "自定义别名（CustomAlias.yml）",
+    "source_kind": "configuration-comments",
+    "source_sha256": "8e4d71d5d628b87a35b9b1c09ae78f228f8e7a5a3505388706a7de6263153a2c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "configuration/kits.md",
+    "title": "礼包（Kits.yml）",
+    "source_kind": "configuration-comments",
+    "source_sha256": "8e4d71d5d628b87a35b9b1c09ae78f228f8e7a5a3505388706a7de6263153a2c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "configuration/afk.md",
+    "title": "暂离与闲置（Afk.yml）",
+    "source_kind": "configuration-comments",
+    "source_sha256": "8e4d71d5d628b87a35b9b1c09ae78f228f8e7a5a3505388706a7de6263153a2c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "configuration/alias.md",
+    "title": "命令别名（Alias.yml）",
+    "source_kind": "configuration-comments",
+    "source_sha256": "8e4d71d5d628b87a35b9b1c09ae78f228f8e7a5a3505388706a7de6263153a2c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "configuration/backups.md",
+    "title": "数据备份（BackUps.yml）",
+    "source_kind": "configuration-comments",
+    "source_sha256": "8e4d71d5d628b87a35b9b1c09ae78f228f8e7a5a3505388706a7de6263153a2c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "configuration/chat.md",
+    "title": "聊天（Chat.yml）",
+    "source_kind": "configuration-comments",
+    "source_sha256": "8e4d71d5d628b87a35b9b1c09ae78f228f8e7a5a3505388706a7de6263153a2c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "configuration/chatfilter.md",
+    "title": "聊天过滤（ChatFilter.yml）",
+    "source_kind": "configuration-comments",
+    "source_sha256": "8e4d71d5d628b87a35b9b1c09ae78f228f8e7a5a3505388706a7de6263153a2c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "configuration/combat.md",
+    "title": "战斗状态（Combat.yml）",
+    "source_kind": "configuration-comments",
+    "source_sha256": "8e4d71d5d628b87a35b9b1c09ae78f228f8e7a5a3505388706a7de6263153a2c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "configuration/commandcost.md",
+    "title": "命令费用（CommandCost.yml）",
+    "source_kind": "configuration-comments",
+    "source_sha256": "8e4d71d5d628b87a35b9b1c09ae78f228f8e7a5a3505388706a7de6263153a2c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "configuration/customheads.md",
+    "title": "自定义头颅（CustomHeads.yml）",
+    "source_kind": "configuration-comments",
+    "source_sha256": "8e4d71d5d628b87a35b9b1c09ae78f228f8e7a5a3505388706a7de6263153a2c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "configuration/databaseinfo.md",
+    "title": "数据库连接（DataBaseInfo.yml）",
+    "source_kind": "configuration-comments",
+    "source_sha256": "8e4d71d5d628b87a35b9b1c09ae78f228f8e7a5a3505388706a7de6263153a2c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "configuration/deathmessages.md",
+    "title": "死亡消息（DeathMessages.yml）",
+    "source_kind": "configuration-comments",
+    "source_sha256": "8e4d71d5d628b87a35b9b1c09ae78f228f8e7a5a3505388706a7de6263153a2c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "configuration/eventcommands.md",
+    "title": "事件命令（EventCommands.yml）",
+    "source_kind": "configuration-comments",
+    "source_sha256": "8e4d71d5d628b87a35b9b1c09ae78f228f8e7a5a3505388706a7de6263153a2c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "configuration/eventpriorities.md",
+    "title": "事件优先级（EventPriorities.yml）",
+    "source_kind": "configuration-comments",
+    "source_sha256": "8e4d71d5d628b87a35b9b1c09ae78f228f8e7a5a3505388706a7de6263153a2c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "configuration/homes.md",
+    "title": "家（Homes.yml）",
+    "source_kind": "configuration-comments",
+    "source_sha256": "8e4d71d5d628b87a35b9b1c09ae78f228f8e7a5a3505388706a7de6263153a2c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "configuration/modules.md",
+    "title": "功能模块（Modules.yml）",
+    "source_kind": "configuration-comments",
+    "source_sha256": "8e4d71d5d628b87a35b9b1c09ae78f228f8e7a5a3505388706a7de6263153a2c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "configuration/particleeffects.md",
+    "title": "粒子效果（ParticleEffects.yml）",
+    "source_kind": "configuration-comments",
+    "source_sha256": "8e4d71d5d628b87a35b9b1c09ae78f228f8e7a5a3505388706a7de6263153a2c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "configuration/randomteleportations.md",
+    "title": "随机传送（RandomTeleportations.yml）",
+    "source_kind": "configuration-comments",
+    "source_sha256": "8e4d71d5d628b87a35b9b1c09ae78f228f8e7a5a3505388706a7de6263153a2c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "configuration/ranks.md",
+    "title": "自动晋级（Ranks.yml）",
+    "source_kind": "configuration-comments",
+    "source_sha256": "8e4d71d5d628b87a35b9b1c09ae78f228f8e7a5a3505388706a7de6263153a2c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "configuration/scavenge.md",
+    "title": "物品分解（Scavenge.yml）",
+    "source_kind": "configuration-comments",
+    "source_sha256": "8e4d71d5d628b87a35b9b1c09ae78f228f8e7a5a3505388706a7de6263153a2c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "configuration/schedules.md",
+    "title": "定时任务（Schedules.yml）",
+    "source_kind": "configuration-comments",
+    "source_sha256": "8e4d71d5d628b87a35b9b1c09ae78f228f8e7a5a3505388706a7de6263153a2c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "configuration/tablist.md",
+    "title": "TAB 列表（TabList.yml）",
+    "source_kind": "configuration-comments",
+    "source_sha256": "8e4d71d5d628b87a35b9b1c09ae78f228f8e7a5a3505388706a7de6263153a2c",
+    "translation_review": "reviewed"
+  },
+  {
+    "file": "configuration/index.md",
+    "title": "配置文件",
+    "source_kind": "configuration-comments",
+    "source_sha256": "8e4d71d5d628b87a35b9b1c09ae78f228f8e7a5a3505388706a7de6263153a2c",
+    "translation_review": "reviewed"
+  }
+]
