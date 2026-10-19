@@ -8,7 +8,7 @@ source_version: 随包未标明版本
 
 # config.yml
 
-文件：`config.yml`。版本：`随包未标明版本`。
+文件：`config.yml`。版本：`未标明`。
 
 主配置。
 

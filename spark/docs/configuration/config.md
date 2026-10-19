@@ -8,7 +8,7 @@ source_version: 随包未标明版本
 
 # config.json
 
-文件：`config.json`。版本：`随包未标明版本`。
+文件：`config.json`。版本：`未标明`。
 
 主配置。
 
